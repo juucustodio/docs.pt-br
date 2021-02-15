@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função LoadStringRCEx'
 title: Função LoadStringRCEx
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: bc789636-ca14-4f07-8f77-9305874d7495
 topic_type:
 - apiref
-ms.openlocfilehash: a05cbe985c2cfebb67756fdfb54398b36e87f441
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: d3fe4b97014e5093dd8d209a5e27bac4ed7b879f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008502"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99679869"
 ---
 # <a name="loadstringrcex-function"></a>Função LoadStringRCEx
+
 Traduz um valor HRESULT para uma mensagem de erro apropriada para a cultura especificada.  
   
  Essa função foi preterida no .NET Framework 4.  
@@ -40,6 +42,7 @@ HRESULT LoadStringRCEx (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `lcid`  
  no Um identificador de cultura. Pass-1 para `lcid` para usar a cultura padrão.  
   
@@ -58,27 +61,30 @@ HRESULT LoadStringRCEx (
  `pcwchUsed`  
  fora Um ponteiro para o comprimento da mensagem de erro.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
+
  Esse método retorna códigos de erro COM padrão, conforme definido no WinError. h, além dos valores a seguir.  
   
 |Código de retorno|Descrição|  
 |-----------------|-----------------|  
 |S_OK|O método foi concluído com êxito.|  
-|E_INVALIDARG|`szBuffer`é NULL ou `iMax` é zero (0).|  
+|E_INVALIDARG|`szBuffer` é NULL ou `iMax` é zero (0).|  
   
 ## <a name="remarks"></a>Comentários  
+
  Se o método não for concluído com êxito, `szBuffer` conterá uma cadeia de caracteres vazia.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** MSCorEE. dll  
+ **Biblioteca:** MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Globalization.CultureInfo.LCID%2A?displayProperty=nameWithType>
 - [Função LoadStringRC](loadstringrc-function.md)

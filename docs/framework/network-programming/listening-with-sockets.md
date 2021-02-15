@@ -16,14 +16,15 @@ helpviewer_keywords:
 - listening with sockets
 - Internet, sockets
 ms.assetid: 40e426cc-13db-4371-95eb-f7388bd23ebf
-ms.openlocfilehash: 0b6de67772bae397373e307ec02ce69a71b0542e
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 4249948579384ec0159ba61072126944596c8f56
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502308"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96242208"
 ---
 # <a name="listening-with-sockets"></a>Escutando com soquetes
+
 Soquetes de ouvinte ou de servidor abrem uma porta na rede e aguardam até que um cliente se conecte a essa porta. Embora existam outros protocolos e famílias de endereços de rede, este exemplo mostra como criar um serviço remoto para uma rede TCP/IP.  
   
  O endereço exclusivo de um serviço de TCP/IP é definido combinando-se o endereço IP do host com o número da porta do serviço para criar um ponto de extremidade para o serviço. A classe <xref:System.Net.Dns> fornece métodos que retornam informações sobre os endereços de rede com suporte pelo dispositivo de rede local. Quando o dispositivo de rede local tem mais de um endereço de rede ou se o sistema local dá suporte a mais de um dispositivo de rede, a classe **Dns** retorna informações sobre todos os endereços de rede e o aplicativo deve escolher o endereço adequado para o serviço. A IANA (Internet Assigned Numbers Authority) define números de porta para serviços comuns; para obter mais informações, consulte [nome do serviço e registro do número da porta do protocolo de transporte](https://www.iana.org/assignments/port-numbers). Outros serviços podem ter números de porta registrados no intervalo de 1.024 a 65.535.  
@@ -60,10 +61,10 @@ listener.Listen(100);
   
  O método **Listen** usa um único parâmetro que especifica quantas conexões pendentes para o **soquete** são permitidas antes que um erro de servidor ocupado seja retornado para o cliente em processo de conexão. Nesse caso, até 100 clientes são colocados na fila de conexão antes que uma resposta de servidor ocupado seja retornada ao cliente número 101.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Usando um soquete de servidor síncrono](using-a-synchronous-server-socket.md)
 - [Usando um soquete de servidor assíncrono](using-an-asynchronous-server-socket.md)
-- [Usando soquetes do cliente](using-client-sockets.md)
-- [Como criar um soquete](how-to-create-a-socket.md)
+- [Usando soquetes de cliente](using-client-sockets.md)
+- [Como: Criar um soquete](how-to-create-a-socket.md)
 - [Soquetes](sockets.md)

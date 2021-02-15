@@ -1,5 +1,6 @@
 ---
 title: Infelizmente, não há informações específicas sobre este erro C#
+description: Lista de possíveis recursos para erros de compilador e avisos que ainda não foram documentados.
 ms.date: 08/04/2020
 f1_keywords:
 - CS0181
@@ -477,11 +478,6 @@ f1_keywords:
 - CS8387
 - CS8388
 - CS8389
-- CS8400
-- CS8401
-- CS8403
-- CS8410
-- CS8411
 - CS8412
 - CS8413
 - CS8414
@@ -521,6 +517,7 @@ f1_keywords:
 - CS8521
 - CS8522
 - CS8523
+- CS8524
 - CS8597
 - CS8598
 - CS8600
@@ -675,13 +672,15 @@ f1_keywords:
 - CS8821
 - CS8822
 - CS8823
+- CS8824
+- CS8825
 - CS8830
 - CS8831
 - CS8846
 - CS8847
 - CS8848
 - CS8849
-- CS8850
+- CS8851
 - CS8852
 - CS8853
 - CS8854
@@ -690,6 +689,7 @@ f1_keywords:
 - CS8857
 - CS8858
 - CS8859
+- CS8860
 - CS8861
 - CS8862
 - CS8863
@@ -721,15 +721,28 @@ f1_keywords:
 - CS8889
 - CS8890
 - CS8891
+- CS8893
+- CS8894
+- CS8895
+- CS8896
+- CS8897
+- CS8898
+- CS8899
+- CS8900
+- CS8901
+- CS8902
+- CS8903
+- CS8904
+- CS9100
 helpviewer_keywords:
 - errors [C#], additional information
 ms.assetid: 48320e4a-6e17-45a6-9966-88c6ec89bd2f
-ms.openlocfilehash: 8cdcc3bb091bfa277903ecd680d8895108274243
-ms.sourcegitcommit: e0803b8975d3eb12e735a5d07637020dd6dac5ef
+ms.openlocfilehash: c16698fbbf42e0967978a3502243793835f541c5
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89271926"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99216896"
 ---
 # <a name="sorry-we-dont-have-specifics-on-this-c-error"></a>Infelizmente, não há informações específicas sobre este erro C#
 
@@ -741,11 +754,9 @@ Desculpe, mas não temos nenhuma informação específica sobre este erro. Você
  [Stack Overflow](https://stackoverflow.com/questions/tagged/c%23)  
 Fornece um site de p e r para perguntas e problemas com o Visual C#.  
 
- Veja também:  
- [Recursos adicionais para programadores de Visual C#](../getting-started/index.md)  
-  
 ## <a name="see-also"></a>Confira também
 
 - [Guia de programação C#](../programming-guide/index.md)
 - [Referência do C#](../language-reference/index.md)
 - [Fale conosco](/visualstudio/ide/feedback-options)
+- [Recursos adicionais para programadores de Visual C#](../tour-of-csharp/index.md)

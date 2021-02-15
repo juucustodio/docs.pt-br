@@ -5,16 +5,22 @@
   items:
     - name: Introdução ao Azure e ao .NET
       href: intro.md
-    - name: Ferramentas de desenvolvedor
-      href: tools.md
-    - name: Autenticação
-      href: authentication.md
-    - name: Registrando em log
-      href: logging.md
-    - name: Pacotes
-      href: packages.md
-    - name: Exemplo de SDK
-      href: /samples/dotnet/samples/azure-identity-resource-management-storage/
+    - name: Principais serviços do Azure para desenvolvedores do .NET
+      href: key-azure-services.md
+    - name: Configurar seu ambiente de desenvolvimento
+      items:
+        - name: Criar uma conta do Azure
+          href: create-azure-account.md
+        - name: Configurar o Visual Studio para o desenvolvimento do Azure (Windows)
+          href: configure-visual-studio.md
+        - name: Configurar o VS Code para o desenvolvimento do Azure (multiplataforma)
+          href: configure-vs-code.md
+        - name: Instalar a CLI do Azure
+          href: install-azure-cli.md
+        - name: Instalar ferramentas adicionais
+          href: azure-tools.md
+        - name: Lista de verificação da configuração de desenvolvimento
+          href: dotnet-dev-env-checklist.md
 - name: Migrar para o Azure
   items:
     - name: Escolher a opção de hospedagem certa do Azure
@@ -25,6 +31,20 @@
       href: ./migration/vm.md
     - name: Migrar um banco de dados do SQL Server para o Azure
       href: ./migration/sql.md
+- name: SDK do Azure para .NET
+  items:
+    - name: O que é o SDK do Azure para .NET?
+      href: ./sdk/azure-sdk-for-dotnet.md
+    - name: Autenticação
+      href: authentication.md
+    - name: Registrando em log
+      href: logging.md
+    - name: Configurar um servidor proxy
+      href: ./sdk/azure-sdk-configure-proxy.md
+    - name: Lista de pacotes
+      href: packages.md
+    - name: Exemplo de SDK
+      href: /samples/dotnet/samples/azure-identity-resource-management-storage/
 - name: Código de exemplo
   items:
     - name: Aplicativos Web e sem servidor

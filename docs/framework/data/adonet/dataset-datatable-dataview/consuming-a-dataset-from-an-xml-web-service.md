@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: consumir um conjunto de informações de um serviço Web XML'
 title: Consumir um conjunto de um DataSet de um serviço Web XML
 ms.date: 07/14/2020
 dev_langs:
 - csharp
 - vb
 ms.assetid: 9edd6b71-0fa5-4649-ae1d-ac1c12541019
-ms.openlocfilehash: e6dc32274cc3b0d7ec9d66a837a422c87fb2468b
-ms.sourcegitcommit: 3492dafceb5d4183b6b0d2f3bdf4a1abc4d5ed8c
+ms.openlocfilehash: 3c9112d259d5a6450a968ba87b33c4072f6dc44c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86416210"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725123"
 ---
 # <a name="consume-a-dataset-from-an-xml-web-service"></a>Consumir um conjunto de um DataSet de um serviço Web XML
 
@@ -191,11 +192,11 @@ O <xref:System.Data.DataSet> foi arquitetado com um design desconectado, em part
   
 3. Criar um cliente de serviço Web XML.  
   
-     Se você quiser que o Visual Studio gere a classe proxy do serviço Web para você, simplesmente crie o projeto cliente e, na janela Gerenciador de soluções, clique com o botão direito do mouse no projeto e selecione **Adicionar**  >  **referência de serviço**. Na caixa de diálogo **Adicionar referência de serviço** , selecione **avançado**e, em seguida, selecione **Adicionar referência Web**. Selecione o serviço Web na lista de serviços Web disponíveis (isso pode exigir o fornecimento do endereço do ponto de extremidade do serviço Web se o serviço Web não estiver disponível na solução atual ou no computador atual). Se você mesmo criar o proxy do Web Service XML (conforme descrito na etapa anterior), você poderá importá-lo para o código do cliente e consumir os métodos do Web Service XML.
+     Se você quiser que o Visual Studio gere a classe proxy do serviço Web para você, simplesmente crie o projeto cliente e, na janela Gerenciador de soluções, clique com o botão direito do mouse no projeto e selecione **Adicionar**  >  **referência de serviço**. Na caixa de diálogo **Adicionar referência de serviço** , selecione **avançado** e, em seguida, selecione **Adicionar referência Web**. Selecione o serviço Web na lista de serviços Web disponíveis (isso pode exigir o fornecimento do endereço do ponto de extremidade do serviço Web se o serviço Web não estiver disponível na solução atual ou no computador atual). Se você mesmo criar o proxy do Web Service XML (conforme descrito na etapa anterior), você poderá importá-lo para o código do cliente e consumir os métodos do Web Service XML.
 
      O código de exemplo a seguir importa a biblioteca de proxy, chama **GetCustomers** para obter uma lista de clientes, adiciona um novo Customer e, em seguida, retorna um **DataSet** com as atualizações para **UpdateCustomers**.  
   
-     O exemplo passa o **conjunto** de registros retornado por **DataSet. GetChanges** para **UpdateCustomers** porque apenas as linhas modificadas precisam ser passadas para **UpdateCustomers**. **UpdateCustomers** retorna o **conjunto**de dados resolvido, que você pode **mesclar** no **conjunto** de dados existente para incorporar as alterações resolvidas e as informações de erro de linha da atualização. O código a seguir pressupõe que você usou o Visual Studio para criar a referência Web e que você renomeou a referência Web para DsSample na caixa de diálogo **Adicionar referência Web** .  
+     O exemplo passa o **conjunto** de registros retornado por **DataSet. GetChanges** para **UpdateCustomers** porque apenas as linhas modificadas precisam ser passadas para **UpdateCustomers**. **UpdateCustomers** retorna o **conjunto** de dados resolvido, que você pode **mesclar** no **conjunto** de dados existente para incorporar as alterações resolvidas e as informações de erro de linha da atualização. O código a seguir pressupõe que você usou o Visual Studio para criar a referência Web e que você renomeou a referência Web para DsSample na caixa de diálogo **Adicionar referência Web** .  
   
     ```vb  
     Imports System  
@@ -263,7 +264,7 @@ O <xref:System.Data.DataSet> foi arquitetado com um design desconectado, em part
     csc client.cs -r:sample.dll -r:System.dll -r:System.Data.dll -r:System.Xml.dll -r:System.Web.Services.dll  
     ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [ADO.NET](../index.md)
 - [DataSets, DataTables e DataViews](index.md)
@@ -271,5 +272,5 @@ O <xref:System.Data.DataSet> foi arquitetado com um design desconectado, em part
 - [Populando um DataSet a partir de um DataAdapter](../populating-a-dataset-from-a-dataadapter.md)
 - [Atualizando fontes de dados com DataAdapters](../updating-data-sources-with-dataadapters.md)
 - [Parâmetros DataAdapter](../dataadapter-parameters.md)
-- [Ferramenta de linguagem de descrição de serviços Web (Wsdl.exe)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/7h3ystb6(v=vs.100))
+- [Ferramenta de linguagem de descrição de serviços Web (Wsdl.exe)](/previous-versions/dotnet/netframework-4.0/7h3ystb6(v=vs.100))
 - [Visão geral do ADO.NET](../ado-net-overview.md)

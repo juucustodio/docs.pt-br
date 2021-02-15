@@ -1,16 +1,16 @@
 ---
 ms.openlocfilehash: 92c03328414410d56a2ff5f445639757367b42c7
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420416"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96031952"
 ---
 ### <a name="processstartinfo-throws-invalidoperationexception-for-processes-you-didnt-start"></a>Process. StartInfo gera InvalidOperationException para processos que você não iniciou
 
 Ler a <xref:System.Diagnostics.Process.StartInfo?displayProperty=nameWithType> propriedade para processos que seu código não iniciou lança um <xref:System.InvalidOperationException> .
 
-#### <a name="change-description"></a>Descrição da alteração
+#### <a name="change-description"></a>Descrição das alterações
 
 Em .NET Framework, o acesso à <xref:System.Diagnostics.Process.StartInfo?displayProperty=nameWithType> propriedade para processos que seu código não iniciou retorna um <xref:System.Diagnostics.ProcessStartInfo> objeto fictício. O objeto fictício contém valores padrão para todas as suas propriedades, exceto <xref:System.Diagnostics.ProcessStartInfo.EnvironmentVariables> .
 

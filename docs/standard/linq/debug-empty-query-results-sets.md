@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: b569f0dc-425e-45a6-acbf-770fb761c981
-ms.openlocfilehash: 3320763fffe77ddd6ca4c78e77629ec0805e4290
-ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
+ms.openlocfilehash: 8fc6b1a80b183f8e2b0f80fc554a12c2657dcb55
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89552016"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557138"
 ---
 # <a name="how-to-debug-empty-query-results-sets-linq-to-xml"></a>Como depurar conjuntos de resultados de consulta vazios (LINQ to XML)
 
@@ -137,4 +137,4 @@ End of result set
 
 ## <a name="see-also"></a>Confira também
 
-- [Consultas básicas (LINQ to XML) (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)
+- [Consultas básicas (LINQ to XML) (Visual Basic)](./find-element-specific-attribute.md)

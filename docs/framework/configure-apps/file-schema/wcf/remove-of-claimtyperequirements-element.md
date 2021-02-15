@@ -1,15 +1,17 @@
 ---
-title: <remove>do <claimTypeRequirements> elemento
+description: 'Saiba mais sobre: <remove> do <claimTypeRequirements> elemento'
+title: <remove> do <claimTypeRequirements> elemento
 ms.date: 03/30/2017
 ms.assetid: 8ef05bc4-1950-4ee4-95c5-1c6a394eff7e
-ms.openlocfilehash: 84f4208d3f4581cf7e8c4455bf3f5d78f7e13b9f
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 2ec917d27966954382e5b091fd538168b48b5ffb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70399994"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786896"
 ---
-# <a name="remove-of-claimtyperequirements-element"></a>\<remove>do \<claimTypeRequirements> elemento
+# <a name="remove-of-claimtyperequirements-element"></a>\<remove> do \<claimTypeRequirements> elemento
+
 Especifica os tipos de declarações a serem removidas na credencial federada.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -22,7 +24,7 @@ Especifica os tipos de declarações a serem removidas na credencial federada.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<claimTypeRequirements>**](claimtyperequirements-for-message.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <claimTypeRequirements>
@@ -31,6 +33,7 @@ Especifica os tipos de declarações a serem removidas na credencial federada.
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -40,6 +43,7 @@ Especifica os tipos de declarações a serem removidas na credencial federada.
 |claimType|Um URI que define o tipo de uma declaração a ser removida.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  

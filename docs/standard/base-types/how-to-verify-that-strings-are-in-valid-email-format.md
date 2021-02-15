@@ -2,7 +2,6 @@
 title: Como verificar se cadeias de caracteres estão em um formato de email válido
 description: Leia um exemplo de como uma expressão regular verifica se as cadeias de caracteres estão em um formato de email válido no .NET.
 ms.date: 06/30/2020
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -10,21 +9,21 @@ helpviewer_keywords:
 - regular expressions, examples
 - user input, examples
 - Regex.IsMatch method
-- regular expressions [.NET Framework], examples
+- regular expressions [.NET], examples
 - examples [Visual Basic], strings
 - IsValidEmail
 - validation, email strings
 - input, checking
-- strings [.NET Framework], examples [Visual Basic]
-- email [.NET Framework], validating
+- strings [.NET], examples [Visual Basic]
+- email [.NET], validating
 - IsMatch method
 ms.assetid: 7536af08-4e86-4953-98a1-a8298623df92
-ms.openlocfilehash: 90e79af649727330c2afa1ccb8c64ffe34733f92
-ms.sourcegitcommit: 6d4ee46871deb9ea1e45bb5f3784474e240bbc26
+ms.openlocfilehash: 88ff326e16ede6a422e9403b71905845014c4c25
+ms.sourcegitcommit: 6d1ae17e60384f3b5953ca7b45ac859ec6d4c3a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90022942"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94982486"
 ---
 # <a name="how-to-verify-that-strings-are-in-valid-email-format"></a>Como verificar se cadeias de caracteres estão em um formato de email válido
 
@@ -57,7 +56,7 @@ Para verificar se o endereço de email é válido, o método `IsValidEmail` cham
 O nome de domínio com o caractere @ é passado para o método `DomainMapper`, que usa a classe <xref:System.Globalization.IdnMapping> para converter caracteres Unicode fora do intervalo de caracteres US-ASCII em Punycode. O método também define o sinalizador `invalid` como `True`, caso o método <xref:System.Globalization.IdnMapping.GetAscii%2A?displayProperty=nameWithType> detecte algum caractere inválido no nome do domínio. O método retorna o nome de domínio Punycode precedido pelo símbolo @ para o método `IsValidEmail`.
 
 > [!TIP]
-> É recomendável que você use o padrão de `(@)(.+)$` expressão regular simples para normalizar o domínio e, em seguida, retornar um valor indicando que ele passou ou falhou. No entanto, o exemplo neste artigo descreve como usar uma expressão regular para validar o email. Independentemente de como você valida um email, você deve sempre enviar um email de teste para o endereço para verificar se ele existe.
+> É recomendável que você use o `(@)(.+)$` padrão de expressão regular simples para normalizar o domínio e, em seguida, retornar um valor indicando que ele passou ou falhou. No entanto, o exemplo neste artigo descreve como usar uma expressão regular para validar o email. Independentemente de como você valida um email, você deve sempre enviar um email de teste para o endereço para verificar se ele existe.
 
 Em seguida, o método `IsValidEmail` chama o método <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%2CSystem.String%29?displayProperty=nameWithType> para verificar se o endereço está adequado para um padrão de expressão regular.
 
@@ -82,7 +81,7 @@ Neste exemplo, o padrão de expressão regular `^[^@\s]+@[^@\s]+\.[^@\s]+$` é i
 > [!IMPORTANT]
 > Esta expressão regular não se destina a abranger todos os aspectos de um endereço de email válido. Ele é fornecido como um exemplo para você estender conforme necessário.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-- [Expressões regulares do .NET Framework](regular-expressions.md)
+- [Expressões regulares do .NET](regular-expressions.md)
 - [Com que distância uma validação de endereço de email deve ser tomada?](https://softwareengineering.stackexchange.com/questions/78353/how-far-should-one-take-e-mail-address-validation#78363)

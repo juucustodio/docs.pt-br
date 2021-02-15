@@ -1,21 +1,24 @@
 ---
+description: 'Saiba mais sobre: como recuperar informações de conflito de membros'
 title: 'Como: recuperar informações de conflito de membro'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 7dd6829e-79a5-4480-9023-9e588cb0bf2e
-ms.openlocfilehash: 40caa07488cb40ca8e9e3eb3a570c325b92de491
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 2a33aba1a113bdfd66bdc341bfc9ae59406f2c40
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70793297"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723394"
 ---
 # <a name="how-to-retrieve-member-conflict-information"></a>Como: recuperar informações de conflito de membro
-Você pode usar a classe de <xref:System.Data.Linq.MemberChangeConflict> para recuperar informações sobre membros individuais em conflito. Nesse mesmo contexto você pode prever manipulação personalizada de conflito para qualquer membro. Para obter mais informações, [consulte simultaneidade otimista: Visão](optimistic-concurrency-overview.md)geral.  
+
+Você pode usar a classe de <xref:System.Data.Linq.MemberChangeConflict> para recuperar informações sobre membros individuais em conflito. Nesse mesmo contexto você pode prever manipulação personalizada de conflito para qualquer membro. Para obter mais informações, consulte [simultaneidade otimista: visão geral](optimistic-concurrency-overview.md).  
   
 ## <a name="example"></a>Exemplo  
+
  O código a seguir efetua iterações através de objetos de <xref:System.Data.Linq.ObjectChangeConflict> . Para cada objeto, então itera através de objetos de <xref:System.Data.Linq.MemberChangeConflict> .  
   
 > [!NOTE]
@@ -26,4 +29,4 @@ Você pode usar a classe de <xref:System.Data.Linq.MemberChangeConflict> para re
   
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Gerenciar conflitos de alterações](how-to-manage-change-conflicts.md)
+- [Como: gerenciar conflitos de alteração](how-to-manage-change-conflicts.md)

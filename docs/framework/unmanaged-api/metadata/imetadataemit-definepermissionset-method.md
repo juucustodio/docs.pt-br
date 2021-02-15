@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: IMetaDataEmit: método efinePermissionSet de:D'
 title: Método IMetaDataEmit::DefinePermissionSet
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 36cffbf7-82ca-4cf9-bf60-50ab491ac2d9
 topic_type:
 - apiref
-ms.openlocfilehash: a069e2f4ec5d4114e9504fa5a58c5066fdfd7249
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: f5c3f1466217713cb3970c805079d8f65fd429c0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008034"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784074"
 ---
 # <a name="imetadataemitdefinepermissionset-method"></a>Método IMetaDataEmit::DefinePermissionSet
+
 Cria uma definição para um conjunto de permissões com a assinatura de metadados especificada e Obtém um token para essa definição de conjunto de permissões.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -38,6 +40,7 @@ HRESULT DefinePermissionSet (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `tk`  
  no O objeto a ser decorado.  
   
@@ -54,15 +57,16 @@ HRESULT DefinePermissionSet (
  fora O token de permissão retornado.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MSCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataEmit](imetadataemit-interface.md)
 - [Interface IMetaDataEmit2](imetadataemit2-interface.md)

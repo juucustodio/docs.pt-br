@@ -11,14 +11,15 @@ helpviewer_keywords:
 - strong-named assemblies, signing files
 - key pairs for signing files
 ms.assetid: c1d2b532-1b8e-4c7a-8ac5-53b801135ec6
-ms.openlocfilehash: 8f10dab9b395640e46cb9bf3ca468b8f6bb2bc1b
-ms.sourcegitcommit: b4f8849c47c1a7145eb26ce68bc9f9976e0dbec3
+ms.openlocfilehash: bb9640bbb46683a3facf290c8157853007f4407d
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87517185"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96238438"
 ---
 # <a name="snexe-strong-name-tool"></a>Sn.exe (Ferramenta de Nome Forte)
+
 A ferramenta Nome Forte (Sn.exe) ajuda a assinar assemblies com [nomes fortes](../../standard/assembly/strong-named.md). Sn.exe oferece opções para o gerenciamento de chaves, geração de assinaturas e verificação de assinaturas.  
   
 > [!WARNING]
@@ -64,7 +65,7 @@ sn [-quiet][option [parameter(s)]]
 |`-t[p] infile`|Exibe o token da chave pública armazenada em *infile*. O conteúdo de *infile* deve ser uma chave pública gerada anteriormente com base em um arquivo de par de chaves usando **-p**.  Não use a opção **-t[p]** para extrair o token diretamente de um arquivo de par de chaves.<br /><br /> Sn.exe computa o token usando uma função de hash da chave pública. Para economizar espaço, o Common Language Runtime armazena tokens de chave pública no manifesto como parte de uma referência a outro assembly quando registra uma dependência para um assembly com um nome forte. A opção **-TP** exibe a chave pública além do token. Se o atributo <xref:System.Reflection.AssemblySignatureKeyAttribute> tiver sido aplicado ao assembly, o token será para a chave de identidade, e o nome do algoritmo de hash e a chave de identidade será exibida.<br /><br /> Essa opção não verifica a assinatura do assembly e não deve ser usada para tomar decisões de confiança.  Essa opção exibe apenas os dados brutos do token de chave pública.|  
 |`-T[p] assembly`|Exibe o token de chave pública do *assembly*. O *assembly* deve ser o nome de um arquivo que contém um manifesto do assembly.<br /><br /> Sn.exe computa o token usando uma função de hash da chave pública. Para economizar espaço, o runtime armazena tokens de chave pública no manifesto como parte de uma referência a outro assembly quando registra uma dependência para um assembly com um nome forte. A opção **-Tp** exibe a chave pública além do token. Se o atributo <xref:System.Reflection.AssemblySignatureKeyAttribute> tiver sido aplicado ao assembly, o token será para a chave de identidade, e o nome do algoritmo de hash e a chave de identidade será exibida.<br /><br /> Essa opção não verifica a assinatura do assembly e não deve ser usada para tomar decisões de confiança.  Essa opção exibe apenas os dados brutos do token de chave pública.|  
 |`-TS assembly infile`|Teste-assina o *assembly* assinado ou parcialmente assinado com o par de chaves em *INFILE*.|  
-|`-TSc assembly container`|Teste-assina o *assembly* assinado ou parcialmente assinado com o par de chaves no *contêiner*de contêiner de chave.|
+|`-TSc assembly container`|Teste-assina o *assembly* assinado ou parcialmente assinado com o par de chaves no *contêiner* de contêiner de chave.|
 |`-v assembly`|Verifica o nome forte em *assembly*, em que *assembly* é o nome de um arquivo que contém um manifesto do assembly.|  
 |`-vf assembly`|Verifica o nome forte no *assembly*. Diferente da opção **-v**, **-vf** força a verificação, mesmo que seja desabilitada usando a opção **-Vr**.|  
 |`-Vk regfile.reg assembly [userlist] [infile]`|Cria as entradas de um arquivo de registro (.reg) que é possível usar para registrar o assembly especificado ignorar a verificação. As regras de nomenclatura do assembly que se aplicam à opção **-Vr** se aplicam também a **–Vk**. Para obter informações sobre as opções *userlist* e *infile*, consulte a opção **–Vr**.|  
@@ -79,6 +80,7 @@ sn [-quiet][option [parameter(s)]]
 > Todas as opções de Sn.exe diferenciam maiúsculas de minúsculas e devem ser digitadas exatamente conforme mostrado para serem reconhecidas pela ferramenta.  
   
 ## <a name="remarks"></a>Comentários  
+
  As opções **-R** e **–Rc** são úteis com assemblies assinados com atraso. Nesse cenário, apenas a chave pública foi definida no tempo de compilação e a assinatura será realizada posteriormente, quando a chave privada será conhecida.  
   
 > [!NOTE]
@@ -87,6 +89,7 @@ sn [-quiet][option [parameter(s)]]
 A ferramenta Nome Forte pressupõe que os pares de chaves pública/privada são gerados com o identificador de algoritmo `AT_SIGNATURE`. Os pares de chaves pública/privada gerados com o algoritmo `AT_KEYEXCHANGE` geram um erro.
 
 ## <a name="examples"></a>Exemplos  
+
  O comando a seguir cria um novo par de chaves aleatório e o armazena em `keyPair.snk`.  
   
 ```console  
@@ -123,7 +126,7 @@ sn -v MyAsm.dll
 sn -d MyContainer  
 ```  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Ferramentas](index.md)
 - [Al.exe (vinculador de assembly)](al-exe-assembly-linker.md)

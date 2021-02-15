@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugThread2:: GetVolatileOSThreadID'
 title: Método ICorDebugThread2::GetVolatileOSThreadID
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: f0922545-c2cf-40c8-9ef6-ca033563e682
 topic_type:
 - apiref
-ms.openlocfilehash: e8d59d617efa7656a3034d5c5e009a46b6121cdb
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 2c198577195c9b1e4a3a74fae686e405b22120eb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83377656"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99658575"
 ---
 # <a name="icordebugthread2getvolatileosthreadid-method"></a>Método ICorDebugThread2::GetVolatileOSThreadID
+
 Obtém o identificador de thread do sistema operacional para este ICorDebugThread2.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,10 +36,12 @@ HRESULT GetVolatileOSThreadID (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pdwTid`  
  fora O identificador de thread do sistema operacional para este thread.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

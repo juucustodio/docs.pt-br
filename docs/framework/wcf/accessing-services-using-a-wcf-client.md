@@ -8,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - clients [WCF], consuming services
 ms.assetid: d780af9f-73c5-42db-9e52-077a5e4de7fe
-ms.openlocfilehash: 25446a89a0b5657d32d77e2d0d57f58f36bed71b
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: b6f5cd7217b447256f19891c2624fba857735107
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85245538"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96294866"
 ---
 # <a name="accessing-services-using-a-wcf-client"></a>Usando um cliente WCF para acessar um serviço
 
@@ -27,9 +27,10 @@ Depois de criar um serviço, a próxima etapa é criar um proxy de cliente WCF. 
 
 3. Crie uma instância do proxy do cliente WCF.
 
-O proxy do cliente WCF pode ser gerado manualmente usando a ferramenta de utilitário de metadados do modelo de serviço (SvcUtil.exe) para obter mais informações, consulte [ferramenta de utilitário de metadados ServiceModel (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md). O proxy do cliente WCF também pode ser gerado no Visual Studio usando o recurso **Adicionar referência de serviço** . Para gerar o proxy do cliente WCF usando qualquer um dos métodos, o serviço deve estar em execução. Se o serviço for auto-hospedado, você deverá executar o host. Se o serviço estiver hospedado no IIS/WAS, você não precisará fazer mais nada.
+O proxy do cliente WCF pode ser gerado manualmente usando a ferramenta de utilitário de metadados do modelo de serviço (SvcUtil.exe) para obter mais informações, consulte [ferramenta de utilitário de metadados ServiceModel (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md). O proxy do cliente WCF também pode ser gerado no Visual Studio usando o recurso **Adicionar referência de serviço**  . Para gerar o proxy do cliente WCF usando qualquer um dos métodos, o serviço deve estar em execução. Se o serviço for auto-hospedado, você deverá executar o host. Se o serviço estiver hospedado no IIS/WAS, você não precisará fazer mais nada.
 
 ## <a name="servicemodel-metadata-utility-tool"></a>Ferramenta de utilitário de metadados ServiceModel
+
  A [ferramenta de utilitário de metadados ServiceModel (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md) é uma ferramenta de linha de comando para gerar código a partir de metadados. O uso a seguir é um exemplo de um comando Svcutil.exe básico.
 
 ```console
@@ -60,6 +61,7 @@ Svcutil.exe <file1 [,file2]>
  Com o serviço em execução, clique com o botão direito do mouse no projeto que conterá o proxy do cliente WCF e selecione **Adicionar**  >  **referência de serviço**. Na **caixa de diálogo Adicionar referência de serviço**, digite a URL para o serviço que você deseja chamar e clique no botão **ir** . A caixa de diálogo exibirá uma lista de serviços disponíveis no endereço que você especificar. Clique duas vezes no serviço para ver os contratos e as operações disponíveis, especifique um namespace para o código gerado e clique no botão **OK** .
 
 ## <a name="example"></a>Exemplo
+
  O exemplo de código a seguir mostra um contrato de serviço criado para um serviço.
 
 ```csharp
@@ -151,6 +153,7 @@ End Class
 ```
 
 ## <a name="using-the-wcf-client"></a>Usando o cliente WCF
+
  Para usar o cliente WCF, crie uma instância do cliente WCF e, em seguida, chame seus métodos, conforme mostrado no código a seguir.
 
 ```csharp
@@ -190,11 +193,11 @@ Quando ocorrem esses tipos de exceções, a melhor maneira de resolver o problem
 ## <a name="see-also"></a>Veja também
 
 - [Como criar um cliente](how-to-create-a-wcf-client.md)
-- [Como acessar serviços com um contrato Duplex](./feature-details/how-to-access-services-with-a-duplex-contract.md)
-- [Como chamar operações de serviço de maneira assíncrona](./feature-details/how-to-call-wcf-service-operations-asynchronously.md)
-- [Como acessar os serviços com contratos de resposta/solicitação e unidirecionais](./feature-details/how-to-access-wcf-services-with-one-way-and-request-reply-contracts.md)
-- [Como acessar um serviço WSE 3.0](./feature-details/how-to-access-a-wse-3-0-service-with-a-wcf-client.md)
-- [Entendendo o código do cliente gerado](./feature-details/understanding-generated-client-code.md)
-- [Como melhorar o tempo de inicialização dos aplicativos do cliente WCF usando o XmlSerializer](./feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md)
-- [Especificando o comportamento em tempo de execução do cliente](specifying-client-run-time-behavior.md)
+- [Como: acessar serviços com um contrato duplex](./feature-details/how-to-access-services-with-a-duplex-contract.md)
+- [Como: chamar operações de serviço de forma assíncrona](./feature-details/how-to-call-wcf-service-operations-asynchronously.md)
+- [Como: acessar os serviços com contratos unidirecionais e de solicitação-resposta](./feature-details/how-to-access-wcf-services-with-one-way-and-request-reply-contracts.md)
+- [Como: acessar um serviço WSE 3.0](./feature-details/how-to-access-a-wse-3-0-service-with-a-wcf-client.md)
+- [Noções básicas de código de cliente gerado](./feature-details/understanding-generated-client-code.md)
+- [Como: melhorar o tempo de inicialização dos aplicativos do cliente WCF usando o XmlSerializer](./feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md)
+- [Especificando a execução do cliente- Comportamento do tempo](specifying-client-run-time-behavior.md)
 - [Configurando comportamentos do cliente](configuring-client-behaviors.md)

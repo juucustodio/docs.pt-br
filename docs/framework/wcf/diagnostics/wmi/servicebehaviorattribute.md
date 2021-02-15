@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: ServiceBehaviorAttribute'
 title: ServiceBehaviorAttribute
 ms.date: 03/30/2017
 ms.assetid: 5faa266f-587f-4e03-828d-1c7dd5acfe65
-ms.openlocfilehash: b6221e93f10b87a368bd594932a8c36ae14df8f3
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 57ffa9103523618db752b3be6d43bb16603d1728
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61957008"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99715568"
 ---
 # <a name="servicebehaviorattribute"></a>ServiceBehaviorAttribute
+
 ServiceBehaviorAttribute  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class ServiceBehaviorAttribute : Behavior  
@@ -36,25 +38,30 @@ class ServiceBehaviorAttribute : Behavior
 ```  
   
 ## <a name="methods"></a>Métodos  
- A classe ServiceBehaviorAttribute não define quaisquer métodos.  
+
+ A classe ServiceBehaviorAttribute não define nenhum método.  
   
 ## <a name="properties"></a>Propriedades  
+
  A classe ServiceBehaviorAttribute tem as seguintes propriedades:  
   
 ### <a name="automaticsessionshutdown"></a>AutomaticSessionShutdown  
- Tipo de dados: boolean  
+
+ Tipo de dados: booliano  
   
  Tipo de acesso: Somente leitura  
   
- Indica se deve fechar automaticamente uma sessão quando um cliente fechar uma sessão de saída.  
+ Indica se uma sessão será fechada automaticamente quando um cliente fechar uma sessão de saída.  
   
 ### <a name="concurrencymode"></a>ConcurrencyMode  
+
  Tipo de dados: cadeia de caracteres  
 Tipo de acesso: Somente leitura  
   
- Indica se um serviço dá suporte a um thread, vários threads ou chamadas reentrantes.  
+ Indica se um serviço dá suporte a um thread, a vários threads ou a chamadas reentrantes.  
   
 ### <a name="configurationname"></a>ConfigurationName  
+
  Tipo de dados: cadeia de caracteres  
   
  Tipo de acesso: Somente leitura  
@@ -62,20 +69,23 @@ Tipo de acesso: Somente leitura
  O nome da configuração do serviço.  
   
 ### <a name="ignoreextensiondataobject"></a>IgnoreExtensionDataObject  
- Tipo de dados: boolean  
+
+ Tipo de dados: booliano  
   
  Tipo de acesso: Somente leitura  
   
- Especifica se deve enviar dados de serialização desconhecidos em trânsito.  
+ Especifica se é para enviar dados de serialização desconhecidos para a conexão.  
   
 ### <a name="includeexceptiondetailinfaults"></a>IncludeExceptionDetailInFaults  
- Tipo de dados: boolean  
+
+ Tipo de dados: booliano  
   
  Tipo de acesso: Somente leitura  
   
- Especifica se deve incluir informações de exceção gerenciada nos detalhes das falhas SOAP retornadas aos clientes para fins de depuração.  
+ Especifica se as informações de exceção gerenciadas devem ser incluídas nos detalhes de falhas de SOAP retornadas aos clientes para fins de depuração.  
   
 ### <a name="instancecontextmode"></a>InstanceContextMode  
+
  Tipo de dados: cadeia de caracteres  
   
  Tipo de acesso: Somente leitura  
@@ -83,6 +93,7 @@ Tipo de acesso: Somente leitura
  Especifica quando um novo objeto de serviço é criado.  
   
 ### <a name="maxitemsinobjectgraph"></a>MaxItemsInObjectGraph  
+
  Tipo de dados: sint32  
   
  Tipo de acesso: Somente leitura  
@@ -90,34 +101,39 @@ Tipo de acesso: Somente leitura
  O número máximo de itens permitidos em um objeto serializado.  
   
 ### <a name="name"></a>Nome  
+
  Tipo de dados: cadeia de caracteres  
   
  Tipo de acesso: Somente leitura  
   
- O atributo de nome do serviço no WSDL.  
+ O atributo Name do serviço no WSDL.  
   
 ### <a name="namespace"></a>Namespace  
+
  Tipo de dados: cadeia de caracteres  
   
  Tipo de acesso: Somente leitura  
   
- O namespace de destino do serviço em WSDL.  
+ O namespace de destino do serviço no WSDL.  
   
 ### <a name="releaseserviceinstanceontransactioncomplete"></a>ReleaseServiceInstanceOnTransactionComplete  
- Tipo de dados: boolean  
+
+ Tipo de dados: booliano  
   
  Tipo de acesso: Somente leitura  
   
- Especifica se o objeto de serviço é reciclado quando a transação atual seja concluída.  
+ Especifica se o objeto de serviço é reciclado quando a transação atual é concluída.  
   
 ### <a name="transactionautocompleteonsessionclose"></a>TransactionAutoCompleteOnSessionClose  
- Tipo de dados: boolean  
+
+ Tipo de dados: booliano  
   
  Tipo de acesso: Somente leitura  
   
- Especifica se as transações pendentes são foi concluída quando a sessão atual é fechada.  
+ Especifica se as transações pendentes são concluídas quando a sessão atual é fechada.  
   
 ### <a name="transactionisolationlevel"></a>TransactionIsolationLevel  
+
  Tipo de dados: cadeia de caracteres  
   
  Tipo de acesso: Somente leitura  
@@ -125,32 +141,35 @@ Tipo de acesso: Somente leitura
  Especifica o nível de isolamento da transação.  
   
 ### <a name="transactiontimeout"></a>TransactionTimeout  
- Tipo de dados: datetime  
+
+ Tipo de dados: DateTime  
   
  Tipo de acesso: Somente leitura  
   
- O período dentro do qual uma transação deve ser concluída.  
+ O período no qual uma transação deve ser concluída.  
   
 ### <a name="usesynchronizationcontext"></a>UseSynchronizationContext  
- Tipo de dados: boolean  
+
+ Tipo de dados: booliano  
   
  Tipo de acesso: Somente leitura  
   
- Especifica se deve usar o contexto de sincronização atual para escolher a execução de thread.  
+ Especifica se o contexto de sincronização atual deve ser usado para escolher a execução do thread.  
   
 ### <a name="validatemustunderstand"></a>ValidateMustUnderstand  
- Tipo de dados: boolean  
+
+ Tipo de dados: booliano  
   
  Tipo de acesso: Somente leitura  
   
- Especifica se o sistema ou o aplicativo impõe o processamento do cabeçalho SOAP MustUnderstand.  
+ Especifica se o sistema ou o aplicativo impõe o processamento de cabeçalho MustUnderstand SOAP.  
   
 ## <a name="requirements"></a>Requisitos  
   
-|MOF|Declarado em Servicemodel.mof.|  
+|MOF|Declarado em ServiceModel. mof.|  
 |---------|-----------------------------------|  
-|Namespace|Definido no root\ServiceModel|  
+|Namespace|Definido em root\ServiceModel|  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.ServiceModel.ServiceBehaviorAttribute>

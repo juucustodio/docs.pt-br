@@ -1,48 +1,58 @@
 ---
-title: Criar um aplicativo de console do .NET Core usando o Visual Studio
-description: Saiba como criar um aplicativo de console .NET Core com C# ou Visual Basic usando o Visual Studio.
+title: Criar um aplicativo de console .NET usando o Visual Studio
+description: Saiba como criar um aplicativo de console .NET com C# ou Visual Basic usando o Visual Studio.
 ms.date: 06/08/2020
 dev_langs:
 - csharp
 - vb
 ms.custom: vs-dotnet
-ms.openlocfilehash: 4cd18aca4396f902268d59867760424d65ddcf6d
-ms.sourcegitcommit: b9122d1af21898eaba81e990c70fef46fef74a8d
+ms.openlocfilehash: a3a27c1baaab135108ef475d77c35d607c45fa82
+ms.sourcegitcommit: 4d5e25a46aa7cd0d29b4b9227b92987354d444c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88867627"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794795"
 ---
-# <a name="tutorial-create-a-net-core-console-application-using-visual-studio"></a>Tutorial: criar um aplicativo de console do .NET Core usando o Visual Studio
+# <a name="tutorial-create-a-net-console-application-using-visual-studio"></a>Tutorial: criar um aplicativo de console .NET usando o Visual Studio
 
-Este tutorial mostra como criar e executar um aplicativo de console do .NET Core no Visual Studio 2019.
+Este tutorial mostra como criar e executar um aplicativo de console .NET no Visual Studio 2019.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- [Visual Studio 2019 versão 16,6 ou uma versão posterior](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) com a carga de trabalho de **desenvolvimento de plataforma cruzada do .NET Core** instalada. O SDK do .NET Core 3,1 é instalado automaticamente quando você seleciona essa carga de trabalho.
+- [Visual Studio 2019 versão 16,8 ou uma versão posterior](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) com a carga de trabalho de **desenvolvimento de plataforma cruzada do .NET Core** instalada. O SDK do .NET 5,0 é instalado automaticamente quando você seleciona essa carga de trabalho.
 
-  Para obter mais informações, consulte [instalar o SDK do .NET Core com o Visual Studio](../install/sdk.md?pivots=os-windows#install-with-visual-studio).
+  Para obter mais informações, consulte [instalar o SDK do .NET com o Visual Studio](../install/windows.md#install-with-visual-studio).
 
 ## <a name="create-the-app"></a>Criar o aplicativo
 
-Crie um projeto de aplicativo de console do .NET Core chamado "HelloWorld".
+Crie um projeto de aplicativo de console .NET chamado "HelloWorld".
 
 1. Inicie o Visual Studio 2019.
 
+1. Selecione **ferramentas**  >  **Opções**  >    >  **recursos de visualização** de ambiente e, em seguida, selecione **Mostrar todos os modelos do .NET Core no novo projeto (requer reinicialização)**.
+
+   :::image type="content" source="media/with-visual-studio/dotnet-options.png" alt-text="Opção Mostrar todos os modelos do .NET":::
+
+1. Feche e reabra o Visual Studio.
+
 1. Na página inicial, escolha **criar um novo projeto**.
 
-   ![Criar um novo botão de projeto selecionado na página inicial do Visual Studio](./media/with-visual-studio/start-window.png)
+   :::image type="content" source="./media/with-visual-studio/start-window.png" alt-text="Criar um novo botão de projeto selecionado na página inicial do Visual Studio":::
 
-1. Na página **criar um novo projeto** , insira **console** na caixa de pesquisa. Em seguida, escolha **C#** ou **Visual Basic** na lista idioma e, em seguida, escolha **todas as plataformas** na lista plataforma. Escolha o modelo **aplicativo de console (.NET Core)** e, em seguida, escolha **Avançar**.
+1. Na página **criar um novo projeto** , insira **console** na caixa de pesquisa. Em seguida, escolha **C#** ou **Visual Basic** na lista idioma e, em seguida, escolha **todas as plataformas** na lista plataforma. Escolha o modelo de **aplicativo de console** e, em seguida, escolha **Avançar**.
 
-   ![Criar uma nova janela de projeto com filtros selecionados](./media/with-visual-studio/create-new-project.png)
+   :::image type="content" source="./media/with-visual-studio/create-new-project.png" alt-text="Criar uma nova janela de projeto com filtros selecionados":::
 
    > [!TIP]
-   > Se você não vir os modelos do .NET Core, provavelmente está faltando a carga de trabalho necessária. Na mensagem **não localizando o que você está procurando?** , escolha o link **instalar mais ferramentas e recursos** . O Instalador do Visual Studio é aberto. Verifique se você tem a carga de trabalho de **desenvolvimento de plataforma cruzada do .NET Core** instalada.
+   > Se você não vir os modelos .NET, provavelmente está faltando a carga de trabalho necessária. Na mensagem **não localizando o que você está procurando?** , escolha o link **instalar mais ferramentas e recursos** . O Instalador do Visual Studio é aberto. Verifique se você tem a carga de trabalho de **desenvolvimento de plataforma cruzada do .NET Core** instalada.
 
 1. No diálogo **configurar seu novo projeto** , digite **HelloWorld** na caixa **nome do projeto** . Em seguida, escolha **Criar**.
 
-   ![Configurar sua nova janela de projeto com os campos nome do projeto, local e nome da solução](./media/with-visual-studio/configure-new-project.png)
+   :::image type="content" source="./media/with-visual-studio/configure-new-project.png" alt-text="Configurar sua nova janela de projeto com os campos nome do projeto, local e nome da solução":::
+
+1. Na caixa de diálogo **informações adicionais** , selecione **.NET 5,0 (atual)** e, em seguida, selecione **criar**.
+
+   :::image type="content" source="media/with-visual-studio/additional-info.png" alt-text="Caixa de diálogo Informações adicionais":::
 
 O modelo cria um simples aplicativo “Olá, Mundo”. Ele chama o <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> método para exibir "Olá, mundo!" na janela do console.
 
@@ -77,13 +87,13 @@ End Module
 
 Se o idioma que você deseja usar não for mostrado, altere o seletor de idioma na parte superior da página.
 
-## <a name="run-the-app"></a>Executar o aplicativo
+## <a name="run-the-app"></a>Execute o aplicativo
 
 1. Pressione <kbd>Ctrl</kbd> + <kbd>F5</kbd> para executar o programa sem depuração.
 
-   Uma janela de console é aberta com o texto "Olá, Mundo!" impresso na tela e algumas informações de depuração do Visual Studio.
+   Uma janela de console é aberta com o texto "Olá, Mundo!" impresso na tela.
 
-   ![Janela de console mostrando Hello World Press any key to continue](./media/with-visual-studio/hello-world-console.png)
+   :::image type="content" source="./media/with-visual-studio/hello-world-console.png" alt-text="Janela de console mostrando Hello World Press any key to continue":::
 
 1. Pressione qualquer tecla para fechar a janela do console.
 
@@ -98,7 +108,7 @@ Aprimore o aplicativo para solicitar ao usuário seu nome e exibi-lo junto com a
 
    Esse código exibe um prompt na janela do console e aguarda até que o usuário insira uma cadeia de caracteres seguida pela tecla <kbd>Enter</kbd> . Ele armazena essa cadeia de caracteres em uma variável chamada `name` . Ele também recupera o valor da <xref:System.DateTime.Now?displayProperty=nameWithType> propriedade, que contém a hora local atual e a atribui a uma variável chamada `date` ( `currentDate` em Visual Basic). E ele exibe esses valores na janela do console. Por fim, ele exibe um prompt na janela do console e chama o <xref:System.Console.ReadKey(System.Boolean)?displayProperty=nameWithType> método para aguardar a entrada do usuário.
 
-   O `\n` ( `vbCrLf` em Visual Basic) representa um caractere de nova linha.
+   O `\n` (ou `vbCrLf` no código de Visual Basic) representa um caractere de nova linha.
 
    O cifrão ( `$` ) na frente de uma cadeia de caracteres permite que você coloque expressões como nomes de variáveis entre chaves na cadeia de caracteres. O valor da expressão é inserido na cadeia de caracteres no lugar da expressão. Essa sintaxe é conhecida como [cadeias de caracteres interpoladas](../../csharp/language-reference/tokens/interpolated.md).
 
@@ -106,13 +116,17 @@ Aprimore o aplicativo para solicitar ao usuário seu nome e exibi-lo junto com a
 
 1. Responda ao prompt digitando um nome e pressionando a tecla <kbd>Enter</kbd> .
 
-   ![Janela de console com saída de programa modificada](./media/with-visual-studio/hello-world-update.png)
+   :::image type="content" source="./media/with-visual-studio/hello-world-update.png" alt-text="Janela de console com saída de programa modificada":::
 
 1. Pressione qualquer tecla para fechar a janela do console.
 
+## <a name="additional-resources"></a>Recursos adicionais
+
+- [Versões atuais e versões de suporte a longo prazo](../releases-and-support.md#net-core-and-net-5-version-lifecycles)
+
 ## <a name="next-steps"></a>Próximas etapas
 
-Neste tutorial, você criou um aplicativo de console do .NET Core. No próximo tutorial, você depurará o aplicativo.
+Neste tutorial, você criou um aplicativo de console .NET. No próximo tutorial, você depurará o aplicativo.
 
 > [!div class="nextstepaction"]
-> [Depurar um aplicativo de console do .NET Core usando o Visual Studio](debugging-with-visual-studio.md)
+> [Depurar um aplicativo de console .NET usando o Visual Studio](debugging-with-visual-studio.md)

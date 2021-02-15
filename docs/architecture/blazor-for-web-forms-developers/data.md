@@ -5,13 +5,13 @@ author: csharpfritz
 ms.author: jefritz
 no-loc:
 - Blazor
-ms.date: 09/08/2020
-ms.openlocfilehash: 84e12f9890351fa46cd7ed0ee31db449f3c55e59
-ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
+ms.date: 11/20/2020
+ms.openlocfilehash: 66e6001cbcac612cb556e90fb86fd694ca7d1459
+ms.sourcegitcommit: 2f485e721f7f34b87856a51181b5b56624b31fd5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89515846"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96509748"
 ---
 # <a name="work-with-data"></a>Trabalhar com dados
 
@@ -29,7 +29,7 @@ ADO.NET é a abordagem de nível baixo para interagir com um banco de dados. Seu
 
 ## <a name="entity-framework"></a>Entity Framework
 
-Entity Framework (EF) é a estrutura de mapeamento relacional de objeto de software livre mantida pelo .NET Foundation. Lançado inicialmente com .NET Framework, o EF permite gerar código para as conexões de banco de dados, esquemas de armazenamento e interações. Com essa abstração, você pode se concentrar nas regras de negócios do seu aplicativo e permitir que o banco de dados seja gerenciado por um administrador de banco de dados confiável. No .NET Core, você pode usar uma versão atualizada do EF chamada EF Core. EF Core ajuda a gerar e manter as interações entre seu código e o banco de dados com uma série de comandos que estão disponíveis para você usando a `dotnet ef` ferramenta de linha de comando. Vamos dar uma olhada em alguns exemplos para ajudá-lo a trabalhar com um banco de dados.
+Entity Framework (EF) é a estrutura de mapeamento relacional de objeto de software livre mantida pelo .NET Foundation. Lançado inicialmente com .NET Framework, o EF permite gerar código para as conexões de banco de dados, esquemas de armazenamento e interações. Com essa abstração, você pode se concentrar nas regras de negócios do seu aplicativo e permitir que o banco de dados seja gerenciado por um administrador de banco de dados confiável. No .NET, você pode usar uma versão atualizada do EF chamada EF Core. EF Core ajuda a gerar e manter as interações entre seu código e o banco de dados com uma série de comandos que estão disponíveis para você usando a `dotnet ef` ferramenta de linha de comando. Vamos dar uma olhada em alguns exemplos para ajudá-lo a trabalhar com um banco de dados.
 
 ### <a name="ef-code-first"></a>Code First EF
 

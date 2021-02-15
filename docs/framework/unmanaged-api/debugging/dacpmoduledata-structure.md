@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura DacpModuleData'
 title: Estrutura DacpModuleData
 ms.date: 02/01/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: hoyosjs
 ms.author: juhoyosa
-ms.openlocfilehash: e10d1792a8dc0b57ddd121ec09854e8e1824cade
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: 376a49ab78db08e5906e8d33389cdc45fe76e81e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860806"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661565"
 ---
 # <a name="dacpmoduledata-structure"></a>Estrutura DacpModuleData
 
@@ -42,7 +43,7 @@ struct DacpModuleData
 
 ## <a name="members"></a>Membros
 
-| Membro    | Descrição                                                             |
+| Membro    | DESCRIÇÃO                                                             |
 | --------- | ----------------------------------------------------------------------- |
 | `Address` | Endereço do objeto de módulo.                                           |
 | `File`    | Um ponteiro para o arquivo executável portátil (PE).                       |
@@ -54,12 +55,13 @@ struct DacpModuleData
 Essa estrutura reside dentro do tempo de execução e não é exposta por nenhum cabeçalho ou arquivo de biblioteca. Para usá-lo, defina a estrutura conforme especificado acima.
 
 ## <a name="requirements"></a>Requisitos
+
 **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
 **Cabeçalho:** None  
 **Biblioteca:** None  
 **.NET Framework versões:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depuração](index.md)
 - [Estruturas de depuração](debugging-structures.md)

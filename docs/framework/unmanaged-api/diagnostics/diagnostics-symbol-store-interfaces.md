@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interfaces de armazenamento de símbolo de diagnóstico'
 title: Interfaces de armazenamento de símbolo de diagnóstico
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -9,17 +10,19 @@ helpviewer_keywords:
 - debugging interfaces [.NET Framework]
 - interfaces [.NET Framework debugging]
 ms.assetid: f96987d5-e6a5-478b-ac5e-302e16545cce
-ms.openlocfilehash: 34eee8c05e1c356d4c431245c6837bd2b3a89b32
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 253a6e5eaa97c91332bca62f8fc47ad2945bf741
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84504466"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800429"
 ---
 # <a name="diagnostics-symbol-store-interfaces"></a>Interfaces de armazenamento de símbolo de diagnóstico
+
 Este tópico descreve as interfaces não gerenciadas que permitem que um compilador gere informações de símbolo para uso por um depurador.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Interface IBindingDisplay](ibindingdisplay-interface.md)  
  Fornece métodos que exibem informações de associação atuais sobre o aplicativo em execução.  
   
@@ -45,7 +48,7 @@ Este tópico descreve as interfaces não gerenciadas que permitem que um compila
  Permite a definição de informações opcionais de método Async por símbolo de método. Deve ser usado com um método aberto (ou seja, entre chamadas para o [método OpenMethod](isymunmanagedwriter-openmethod-method.md)e o [método CloseMethod](isymunmanagedwriter-closemethod-method.md)).  
   
  [Interface ISymUnmanagedBinder](isymunmanagedbinder-interface.md)  
- Representa um fichário de símbolo para código não gerenciado.  
+ Representa um associador de símbolo para o código não gerenciado.  
   
  [Interface ISymUnmanagedBinder2](isymunmanagedbinder2-interface.md)  
  Representa um fichário de símbolo para código não gerenciado e estende a `ISymUnmanagedBinder` interface.  
@@ -99,13 +102,13 @@ Este tópico descreve as interfaces não gerenciadas que permitem que um compila
  Representa uma variável, como um parâmetro, uma variável local ou um campo.  
   
  [Interface ISymUnmanagedWriter](isymunmanagedwriter-interface.md)  
- Representa um gravador de símbolo e fornece métodos para definir documentos, pontos de sequência, escopos léxicos e variáveis.  
+ Representa um gravador de símbolo e fornece métodos para definir documentos, pontos de sequência, escopos lexicais e variáveis.  
   
  [Interface ISymUnmanagedWriter2](isymunmanagedwriter2-interface.md)  
- Representa um gravador de símbolo e fornece métodos para definir documentos, pontos de sequência, escopos léxicos e variáveis. Estende a `ISymUnmanagedWriter` interface.  
+ Representa um gravador de símbolo e fornece métodos para definir documentos, pontos de sequência, escopos lexicais e variáveis. Estende a `ISymUnmanagedWriter` interface.  
   
  [Interface ISymUnmanagedWriter3](isymunmanagedwriter3-interface.md)  
- Representa um gravador de símbolo e fornece métodos para definir documentos, pontos de sequência, escopos léxicos e variáveis. Estende a `ISymUnmanagedWriter` interface.  
+ Representa um gravador de símbolo e fornece métodos para definir documentos, pontos de sequência, escopos lexicais e variáveis. Estende a `ISymUnmanagedWriter` interface.  
   
  [Interface ISymUnmanagedWriter4](isymunmanagedwriter4-interface.md)  
  Interface ISymUnmanagedWriter4.  
@@ -114,6 +117,7 @@ Este tópico descreve as interfaces não gerenciadas que permitem que um compila
  Interface ISymUnmanagedWriter5.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
+
  [Enumerações de armazenamento de símbolo de diagnóstico](diagnostics-symbol-store-enumerations.md)  
   
  [Estruturas de armazenamento de símbolo de diagnóstico](diagnostics-symbol-store-structures.md)  

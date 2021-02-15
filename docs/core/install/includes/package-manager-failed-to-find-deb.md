@@ -1,21 +1,21 @@
 ---
-ms.openlocfilehash: 9d4c031eda291b0a8832c824789efdffe4084926
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 3275865cf7f4669ba7deaacea320136d02f64dda
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89132932"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99804244"
 ---
 
-Se você receber uma mensagem de erro semelhante a **não é possível localizar o pacote {NetCore-Package}** ou **alguns pacotes não puderam ser instalados**, execute os comandos a seguir.
+Se você receber uma mensagem de erro semelhante a **não é possível localizar o pacote {dotnet-Package}** ou **não foi possível instalar alguns pacotes**, execute os comandos a seguir.
 
 Há dois espaços reservados no seguinte conjunto de comandos.
 
 - `{dotnet-package}`\
-Isso representa o pacote .NET Core que você está instalando, como `aspnetcore-runtime-3.1` . Isso é usado no `sudo apt-get install` comando a seguir.
+Isso representa o pacote .NET que você está instalando, como `aspnetcore-runtime-3.1` . Isso é usado no comando a seguir `sudo apt-get install` .
 
 - `{os-version}`\
-Isso representa a versão do Linux em que você está. Isso é usado no `wget` comando a seguir.
+Isso representa a versão de distribuição em que você está. Isso é usado no `wget` comando a seguir. A versão de distribuição é o valor numérico, como `20.04` no Ubuntu ou `10` no Debian.
 
 Primeiro, tente limpar a lista de pacotes:
 
@@ -24,4 +24,4 @@ sudo dpkg --purge packages-microsoft-prod && sudo dpkg -i packages-microsoft-pro
 sudo apt-get update
 ```
 
-Em seguida, tente instalar o .NET Core novamente. Se isso não funcionar, você poderá executar uma instalação manual com os seguintes comandos:
+Em seguida, tente instalar o .NET novamente. Se isso não funcionar, você poderá executar uma instalação manual com os seguintes comandos:

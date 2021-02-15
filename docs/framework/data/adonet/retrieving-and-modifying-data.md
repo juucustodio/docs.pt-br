@@ -3,17 +3,19 @@ title: Recuperando e modificando dados
 description: No .NET Framework, os provedores de dados no ADO.NET servem como uma ponte entre um aplicativo e uma fonte de dados para ler e atualizar dados.
 ms.date: 03/30/2017
 ms.assetid: 722e7f87-3691-46c6-87e8-7d159722d675
-ms.openlocfilehash: f916324dc829526a5e6b0078021b09786755f666
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 7620843e77b25606b2dec2bf6eae3a4f40d1b9fb
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286605"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91150668"
 ---
 # <a name="retrieving-and-modifying-data-in-adonet"></a>Recuperando e modificando dados no ADO.NET
+
 A função principal de qualquer aplicativo de banco de dados é conectar-se a uma fonte de dados e recuperar os dados que ele contém. Os .NET Framework provedores de dados do ADO.NET servem como uma ponte entre um aplicativo e uma fonte de dados, permitindo que você execute comandos, bem como recuperar dados usando um **DataReader** ou um **DataAdapter**. A função principal de qualquer aplicativo de banco de dados é a capacidade de atualizar os dados que estão armazenados no banco de dados. No ADO.NET, a atualização de dados envolve o uso de **DataAdapter** e e de <xref:System.Data.DataSet> objetos **Command** ; e também pode envolver o uso de transações.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Conectando a uma Fonte de Dados](connecting-to-a-data-source.md)  
  Descreve como estabelecer uma conexão com uma fonte de dados e como trabalhar com eventos de conexão.  
   
@@ -59,9 +61,9 @@ A função principal de qualquer aplicativo de banco de dados é conectar-se a u
  [Suporte de streaming do SqlClient](sqlclient-streaming-support.md)  
  Discute como escrever aplicativos que transmitem dados de SQL Server sem tê-los totalmente carregados na memória.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Data Type Mappings in ADO.NET](data-type-mappings-in-ado-net.md) (Mapeamentos de tipo de dados no ADO.NET)
+- [Mapeamentos de tipos de dados no ADO.NET](data-type-mappings-in-ado-net.md)
 - [DataSets, DataTables e DataViews](./dataset-datatable-dataview/index.md)
 - [Protegendo aplicativos ADO.NET](securing-ado-net-applications.md)
 - [SQL Server e ADO.NET](./sql/index.md)

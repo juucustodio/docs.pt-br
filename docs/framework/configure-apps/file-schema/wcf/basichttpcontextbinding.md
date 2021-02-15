@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <basicHttpContextBinding>'
 title: <basicHttpContextBinding>
 ms.date: 03/30/2017
 ms.assetid: 39b16b82-4ec6-4eff-8031-67e026870961
-ms.openlocfilehash: 78372970c7dc0f5a29e7fc9fdfc80aa443107b6d
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: d77d57325417a2aa7c49fb8893f4512dad71563b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "84201172"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782189"
 ---
 # \<basicHttpContextBinding>
+
 Especificar uma associação que fornece contexto para o <xref:System.ServiceModel.BasicHttpBinding> a ser trocado habilitando cookies http como o mecanismo de troca.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -17,7 +19,7 @@ Especificar uma associação que fornece contexto para o <xref:System.ServiceMod
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<basicHttpContextBinding>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <basicHttpContextBinding>
@@ -54,6 +56,7 @@ Especificar uma associação que fornece contexto para o <xref:System.ServiceMod
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -83,7 +86,7 @@ Especificar uma associação que fornece contexto para o <xref:System.ServiceMod
 |Elemento|Descrição|  
 |-------------|-----------------|  
 |[\<security>](security-of-basichttpbinding.md)|Define as configurações de segurança para a associação. Esse elemento é do tipo <xref:System.ServiceModel.Configuration.BasicHttpSecurityElement> .|  
-|[\<readerQuotas>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Define as restrições sobre a complexidade de mensagens SOAP que podem ser processadas por pontos de extremidade configurados com essa associação. Esse elemento é do tipo <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement> .|  
+|[\<readerQuotas>](/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Define as restrições sobre a complexidade de mensagens SOAP que podem ser processadas por pontos de extremidade configurados com essa associação. Esse elemento é do tipo <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement> .|  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
@@ -92,9 +95,10 @@ Especificar uma associação que fornece contexto para o <xref:System.ServiceMod
 |[\<bindings>](bindings.md)|Esse elemento contém uma coleção de associações padrão e personalizadas.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Esse elemento de associação fornece um nível de proteção e um mecanismo de troca como parte do contexto para um `BasicHttpBinding` .  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.BasicHttpBinding>
 - <xref:System.ServiceModel.BasicHttpContextBinding>

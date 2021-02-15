@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como acessar serviços com um contrato duplex'
 title: Como acessar serviços com um contrato duplex
 ms.date: 03/30/2017
 dev_langs:
@@ -7,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - duplex contracts [WCF]
 ms.assetid: 746a9d64-f21c-426c-b85d-972e916ec6c5
-ms.openlocfilehash: bc42792b827b49265a0b1addf959de2fa1a041e3
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: e58225e6b77115004c3c201d606e328aab184b75
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597209"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742882"
 ---
 # <a name="how-to-access-services-with-a-duplex-contract"></a>Como acessar serviços com um contrato duplex
 
@@ -28,7 +29,7 @@ Para obter um tutorial sobre como criar um serviço e cliente WCF básicos, cons
 
 2. Executar o serviço.
 
-3. Use a [ferramenta de utilitário de metadados ServiceModel (svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) para gerar contratos (interfaces) para o cliente. Para obter informações sobre como fazer isso, consulte [como: criar um cliente](../how-to-create-a-wcf-client.md).
+3. Use a [ferramenta de utilitário de metadados ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) para gerar contratos (interfaces) para o cliente. Para obter informações sobre como fazer isso, consulte  [como: criar um cliente](../how-to-create-a-wcf-client.md).
 
 4. Implemente a interface de retorno de chamada na classe Client, conforme mostrado no exemplo a seguir.
 
@@ -89,8 +90,8 @@ O exemplo de código a seguir demonstra como criar uma classe de cliente que ace
 
 ## <a name="see-also"></a>Consulte também
 
-- [Tutorial de Introdução](../getting-started-tutorial.md)
-- [Como criar um contrato duplex](how-to-create-a-duplex-contract.md)
-- [Ferramenta de utilitário de metadados ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)
+- [Guia de introdução ao tutorial](../getting-started-tutorial.md)
+- [Como: criar um contrato duplex](how-to-create-a-duplex-contract.md)
+- [Ferramenta Utilitário de Metadados ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)
 - [Como criar um cliente](../how-to-create-a-wcf-client.md)
-- [Como usar o ChannelFactory](how-to-use-the-channelfactory.md)
+- [Como: usar o ChannelFactory](how-to-use-the-channelfactory.md)

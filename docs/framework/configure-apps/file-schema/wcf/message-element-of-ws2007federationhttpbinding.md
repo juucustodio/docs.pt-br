@@ -1,15 +1,17 @@
 ---
-title: <message>elemento de<ws2007FederationHttpBinding>
+description: 'Saiba mais sobre: <message> elemento de <ws2007FederationHttpBinding>'
+title: <message> elemento de <ws2007FederationHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 52cd941d-e230-4c82-8b29-333a7d20eca8
-ms.openlocfilehash: dde763687dbc62d6fb342a21a4c614208f28d7e8
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: f9116a5075f30421dfb26adc29ec0b167db33673
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73739002"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725447"
 ---
-# <a name="message-element-of-ws2007federationhttpbinding"></a>\<message>elemento de\<ws2007FederationHttpBinding>
+# <a name="message-element-of-ws2007federationhttpbinding"></a>\<message> elemento de \<ws2007FederationHttpBinding>
+
 Define as configurações para a segurança em nível de mensagem para o [\<ws2007FederationHttpBinding>](ws2007federationhttpbinding.md) elemento.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,7 +22,7 @@ Define as configurações para a segurança em nível de mensagem para o [\<ws20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<security>**](security-element-of-ws2007federationhttpbinding.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<message>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <ws2007FederationBinding>
@@ -81,6 +83,7 @@ Define as configurações para a segurança em nível de mensagem para o [\<ws20
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -128,7 +131,7 @@ Define as configurações para a segurança em nível de mensagem para o [\<ws20
 |-------------|-----------------|  
 |[\<security>](security-element-of-ws2007federationhttpbinding.md)|Define as configurações de segurança para uma associação.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.FederatedMessageSecurityOverHttp>
 - <xref:System.ServiceModel.Configuration.WSFederationHttpSecurityElement.Message%2A>

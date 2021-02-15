@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <endToEndTracing>'
 title: <endToEndTracing>
 ms.date: 03/30/2017
 ms.assetid: 5034f5de-bb60-4157-9ad4-58aaade094e0
-ms.openlocfilehash: 1a274f15800c6a132994a2437943c83982de9de0
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 2ac4a7563d7d7881cdb503e843d34f84fd9c95a9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70855288"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782111"
 ---
 # \<endToEndTracing>
+
 Um elemento de configuração que permite habilitar e desabilitar diferentes aspectos de rastreamento de ponta a ponta durante a execução de um aplicativo de serviço.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -17,7 +19,7 @@ Um elemento de configuração que permite habilitar e desabilitar diferentes asp
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<diagnostics>**](diagnostics.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<endToEndTracing>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.serviceModel>
@@ -30,6 +32,7 @@ Um elemento de configuração que permite habilitar e desabilitar diferentes asp
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -41,6 +44,7 @@ Um elemento de configuração que permite habilitar e desabilitar diferentes asp
 |`propagateActivity`|Um valor booliano que especifica se o atributo Propagate é definido como true.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -49,10 +53,10 @@ Um elemento de configuração que permite habilitar e desabilitar diferentes asp
 |-------------|-----------------|  
 |[\<diagnostics>](diagnostics.md)|Define as configurações do WCF para inspeção e controle de tempo de execução para o administrador.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.DiagnosticSection>
 - <xref:System.ServiceModel.Diagnostics>
 - <xref:System.ServiceModel.Configuration.DiagnosticSection.EndToEndTracing%2A>
 - <xref:System.ServiceModel.Configuration.EndToEndTracingElement>
-- [Rastreamento de ponta a ponta](../../../wcf/diagnostics/tracing/end-to-end-tracing.md)
+- [Rastreamento ponta a ponta](../../../wcf/diagnostics/tracing/end-to-end-tracing.md)

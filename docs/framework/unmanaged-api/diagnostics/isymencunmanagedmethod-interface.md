@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ISymENCUnmanagedMethod'
 title: Interface ISymENCUnmanagedMethod
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: faebf594-67d5-4abf-b9c1-547fd3a1ff87
 topic_type:
 - apiref
-ms.openlocfilehash: 54c8c7f5c3ba6b4afd4ff352a8afb947a92e2d61
-ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
+ms.openlocfilehash: 59dd56c20279b2507fc4432182d0abb5b3e9c289
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83441871"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790315"
 ---
 # <a name="isymencunmanagedmethod-interface"></a>Interface ISymENCUnmanagedMethod
+
 Fornece informações para o recurso Editar e continuar.  
   
 ## <a name="methods"></a>Métodos  
@@ -35,8 +37,9 @@ Fornece informações para o recurso Editar e continuar.
 |[Método GetSourceExtentInDocument](isymencunmanagedmethod-getsourceextentindocument-method.md)|Obtém a menor linha inicial e a linha final maior para o método em um documento específico.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de armazenamento de símbolo de diagnóstico](diagnostics-symbol-store-interfaces.md)

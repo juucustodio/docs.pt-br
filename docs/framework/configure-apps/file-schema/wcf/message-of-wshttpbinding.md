@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <message> de <wsHttpBinding>'
 title: <message> de <wsHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 621abbde-590b-454d-90ac-68dc3c69c720
-ms.openlocfilehash: 5a4d7bb41a57ca25397f585a2d5684ca6abdfa33
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: b3a389f2cfd3442a0d05455f0519eaa19ef01e74
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73738978"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673629"
 ---
 # <a name="message-of-wshttpbinding"></a>\<message> de \<wsHttpBinding>
+
 Define as configurações de segurança em nível de mensagem do [\<wsHttpBinding>](wshttpbinding.md) .  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,7 +22,7 @@ Define as configurações de segurança em nível de mensagem do [\<wsHttpBindin
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<security>**](security-of-wshttpbinding.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<message>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <message algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"
@@ -29,10 +31,12 @@ Define as configurações de segurança em nível de mensagem do [\<wsHttpBindin
          negotiateServiceCredential="Boolean" />
 ```  
   
-## <a name="type"></a>Type  
+## <a name="type"></a>Tipo  
+
  <xref:System.ServiceModel.NonDualMessageSecurityOverHttp>  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai  
   
 ### <a name="attributes"></a>Atributos  
@@ -76,6 +80,7 @@ Define as configurações de segurança em nível de mensagem do [\<wsHttpBindin
 |Windows|Permite que as trocas SOAP estejam sob o contexto autenticado de uma credencial do Windows. Se o `negotiateServiceCredential` atributo for definido como `true` , isso executará uma negociação SSPI ou o Kerberos (um padrão interoperável).|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -84,7 +89,7 @@ Define as configurações de segurança em nível de mensagem do [\<wsHttpBindin
 |-------------|-----------------|  
 |[\<security>](security-of-wshttpbinding.md)|Define as configurações de segurança para um [\<wsHttpBinding>](wshttpbinding.md) .|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.NonDualMessageSecurityOverHttp>
 - <xref:System.ServiceModel.Configuration.WSHttpSecurityElement.Message%2A>

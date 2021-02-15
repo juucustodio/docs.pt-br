@@ -6,12 +6,12 @@ ms.topic: tutorial
 ms.custom: mvc
 ms.author: luquinta
 author: luisquintanilla
-ms.openlocfilehash: d93bdee8d5a057be0f405fe4334d7edbdc0649ec
-ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
+ms.openlocfilehash: 51041f5a9076ad360a84cc39704aedb50b77d40a
+ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86174400"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90679384"
 ---
 # <a name="tutorial-forecast-bike-rental-service-demand-with-time-series-analysis-and-mlnet"></a>Tutorial: prever a demanda de serviço de aluguel de bicicletas com análise de série temporal e ML.NET
 
@@ -73,7 +73,7 @@ O conjunto de conteúdo original contém várias colunas correspondentes ao sazo
 
 O DataSet original é mapeado para uma tabela de banco de dados com o esquema a seguir em um banco de dados SQL Server.
 
-```SQL
+```sql
 CREATE TABLE [Rentals] (
     [RentalDate] DATE NOT NULL,
     [Year] INT NOT NULL,
@@ -83,7 +83,7 @@ CREATE TABLE [Rentals] (
 
 Veja a seguir um exemplo dos dados:
 
-| RentalDate | Ano | TotalRentals |
+| RentalDate | Year | TotalRentals |
 | --- | --- | --- |
 |1/1/2011|0|985|
 |1/2/2011|0|801|
@@ -149,7 +149,7 @@ Veja a seguir um exemplo dos dados:
 
     [!code-csharp [LoadData](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L31)]
 
-1. O DataSet contém dois anos de dados. Somente os dados do primeiro ano são usados para treinamento, o segundo ano é mantido para comparar os valores reais com a previsão produzida pelo modelo. Filtre os dados usando a [`FilterRowsByColumn`](xref:Microsoft.ML.DataOperationsCatalog.FilterRowsByColumn*) transformação.
+1. O DataSet contém dois anos de dados. Somente os dados do primeiro ano são usados para treinamento, o segundo ano é mantido para comparar os valores reais com a previsão produzida pelo modelo. Filtre os dados usando a [`FilterRowsByColumn`](xref:Microsoft.ML.DataOperationsCatalog.FilterRowsByColumn%2A) transformação.
 
     [!code-csharp [SplitData](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L33-L34)]
 
@@ -163,7 +163,7 @@ Veja a seguir um exemplo dos dados:
 
     O `forecastingPipeline` leva 365 pontos de dados para o primeiro ano e os exemplos ou divide o conjunto de tempo da série temporal em intervalos de 30 dias (mensais), conforme especificado pelo `seriesLength` parâmetro. Cada um desses exemplos é analisado por meio de uma janela semanal ou de 7 dias. Ao determinar qual é o valor previsto para o próximo período, os valores dos sete dias anteriores são usados para fazer uma previsão. O modelo é definido para prever sete períodos no futuro, conforme definido pelo `horizon` parâmetro. Como uma previsão é uma estimativa informada, nem sempre é mais 100% precisa. Portanto, é bom saber o intervalo de valores nos melhores e piores cenários, conforme definido pelos limites superior e inferior. Nesse caso, o nível de confiança para os limites inferior e superior é definido como 95%. O nível de confiança pode ser aumentado ou diminuído adequadamente. Quanto maior o valor, mais largo o intervalo é entre os limites superior e inferior para obter o nível de confiança desejado.
 
-1. Use o [`Fit`](xref:Microsoft.ML.Transforms.TimeSeries.SsaForecastingEstimator.Fit*) método para treinar o modelo e ajustar os dados para o definido anteriormente `forecastingPipeline` .
+1. Use o [`Fit`](xref:Microsoft.ML.Transforms.TimeSeries.SsaForecastingEstimator.Fit%2A) método para treinar o modelo e ajustar os dados para o definido anteriormente `forecastingPipeline` .
 
     [!code-csharp [TrainModel](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L47)]
 
@@ -180,15 +180,15 @@ Avalie como o modelo é executado prevendo os dados do próximo ano e comparando
     }
     ```
 
-1. Dentro do `Evaluate` método, preveja os dados do segundo ano usando o [`Transform`](xref:Microsoft.ML.ITransformer.Transform*) método com o modelo treinado.
+1. Dentro do `Evaluate` método, preveja os dados do segundo ano usando o [`Transform`](xref:Microsoft.ML.ITransformer.Transform%2A) método com o modelo treinado.
 
     [!code-csharp [EvaluateForecast](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L62)]
 
-1. Obtenha os valores reais dos dados usando o [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable*) método.
+1. Obtenha os valores reais dos dados usando o [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable%2A) método.
 
     [!code-csharp [GetActualRentals](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L65-L67)]
 
-1. Obtenha os valores de previsão usando o [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable*) método.
+1. Obtenha os valores de previsão usando o [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable%2A) método.
 
     [!code-csharp [GetForecastRentals](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L70-L72)]
 
@@ -217,11 +217,11 @@ Avalie como o modelo é executado prevendo os dados do próximo ano e comparando
 
 Se você estiver satisfeito com seu modelo, salve-o para uso posterior em outros aplicativos.
 
-1. No `Main` método, crie um [`TimeSeriesPredictionEngine`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine%602) . [`TimeSeriesPredictionEngine`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine%602)é um método de conveniência para fazer previsões únicas.
+1. No `Main` método, crie um [`TimeSeriesPredictionEngine`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine%602) . [`TimeSeriesPredictionEngine`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine%602) é um método de conveniência para fazer previsões únicas.
 
     [!code-csharp [CreateTimeSeriesEngine](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L51)]
 
-1. Salve o modelo em um arquivo chamado `MLModel.zip` conforme especificado pela variável definida anteriormente `modelPath` . Use o [`Checkpoint`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine%602.CheckPoint*) método para salvar o modelo.
+1. Salve o modelo em um arquivo chamado `MLModel.zip` conforme especificado pela variável definida anteriormente `modelPath` . Use o [`Checkpoint`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine%602.CheckPoint%2A) método para salvar o modelo.
 
     [!code-csharp [SaveModel](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L52)]
 
@@ -236,7 +236,7 @@ Se você estiver satisfeito com seu modelo, salve-o para uso posterior em outros
     }
     ```
 
-1. Dentro do `Forecast` método, use o [`Predict`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine%602.Predict*) método para prever locações para os próximos sete dias.
+1. Dentro do `Forecast` método, use o [`Predict`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine%602.Predict%2A) método para prever locações para os próximos sete dias.
 
     [!code-csharp [SingleForecast](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L91)]
 

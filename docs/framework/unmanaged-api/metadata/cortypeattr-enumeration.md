@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorTypeAttr'
 title: Enumeração CorTypeAttr
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 9bede0ec-5fdf-42a2-b5b7-bee64056acb6
 topic_type:
 - apiref
-ms.openlocfilehash: b6936081ca3dbadb4f802a6856fafb53f6cef3fa
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: d4f7d25ce8ead945790defae800b7a45dc88bc38
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008957"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721158"
 ---
 # <a name="cortypeattr-enumeration"></a>Enumeração CorTypeAttr
+
 Contém valores que indicam metadados de tipo.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -75,7 +77,7 @@ typedef enum CorTypeAttr {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`tdVisibilityMask`|Usado para informações de visibilidade de tipo.|  
 |`tdNotPublic`|Especifica que o tipo não está no escopo público.|  
@@ -112,12 +114,13 @@ typedef enum CorTypeAttr {
 |`tdHasSecurity`|Especifica que o tipo tem segurança associada a ele.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorHdr. h  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumerações de metadados](metadata-enumerations.md)

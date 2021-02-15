@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <UseRandomizedStringHashAlgorithm> elemento'
 title: Elemento <UseRandomizedStringHashAlgorithm>
 ms.date: 03/30/2017
 dev_langs:
@@ -8,21 +9,22 @@ helpviewer_keywords:
 - UseRandomizedStringHashAlgorithm element
 - <UseRandomizedStringHashAlgorithm> element
 ms.assetid: c08125d6-56cc-4b23-b482-813ff85dc630
-ms.openlocfilehash: a9afa0db516a542b74d08a4c3754a3244abbbea7
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: bb651fc9c9f6f3df448ed5ce19e81c1ae092838c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79153771"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639972"
 ---
 # <a name="userandomizedstringhashalgorithm-element"></a>Elemento \<UseRandomizedStringHashAlgorithm>
+
 Determina se o Common Language Runtime calcula códigos de hash para cadeias de caracteres por aplicativo.  
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<UseRandomizedStringHashAlgorithm>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <UseRandomizedStringHashAlgorithm
@@ -30,6 +32,7 @@ Determina se o Common Language Runtime calcula códigos de hash para cadeias de 
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -46,6 +49,7 @@ Determina se o Common Language Runtime calcula códigos de hash para cadeias de 
 |`1`|O Common Language Runtime computa códigos de hash para cadeias de caracteres por aplicativo. Cadeias de caracteres idênticas em domínios de aplicativo diferentes e em processos diferentes terão códigos de hash diferentes.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -56,6 +60,7 @@ Determina se o Common Language Runtime calcula códigos de hash para cadeias de 
 |`runtime`|Contém informações sobre opções de inicialização do runtime.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Por padrão, a <xref:System.StringComparer> classe e o <xref:System.String.GetHashCode%2A?displayProperty=nameWithType> método usam um único algoritmo de hash que produz um código hash consistente entre domínios de aplicativo. Isso é equivalente a definir o `enabled` atributo do `<UseRandomizedStringHashAlgorithm>` elemento como `0` . Esse é o algoritmo de hash usado no .NET Framework 4.  
   
  A <xref:System.StringComparer> classe e o <xref:System.String.GetHashCode%2A?displayProperty=nameWithType> método também podem usar um algoritmo de hash diferente que computa códigos de hash em uma base de domínio por aplicativo. Como resultado, os códigos de hash para cadeias de caracteres equivalentes serão diferentes entre domínios de aplicativo. Esse é um recurso opcional; para aproveitar isso, você deve definir o `enabled` atributo do `<UseRandomizedStringHashAlgorithm>` elemento como `1` .  
@@ -63,6 +68,7 @@ Determina se o Common Language Runtime calcula códigos de hash para cadeias de 
  A pesquisa de cadeia de caracteres em uma tabela de hash normalmente é uma operação O (1). No entanto, quando ocorre um grande número de colisões, a pesquisa pode se tornar uma operação O (n<sup>2</sup>). Você pode usar o `<UseRandomizedStringHashAlgorithm>` elemento de configuração para gerar um algoritmo de hash aleatório por domínio de aplicativo, que, por sua vez, limita o número de colisões em potencial, especialmente quando as chaves das quais os códigos de hash são calculados se baseiam na entrada de dados pelos usuários.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir define uma `DisplayString` classe que inclui uma constante de cadeia de caracteres privada, `s` , cujo valor é "esta é uma cadeia de caracteres". Também inclui um método `ShowStringHashCode` que exibe o valor de cadeia de caracteres e seu código de hash com o nome do domínio do aplicativo no qual o método está sendo executado.  
   
  [!code-csharp[System.String.GetHashCode#2](../../../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.String.GetHashCode/CS/perdomain.cs#2)]

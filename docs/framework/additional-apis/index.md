@@ -9,12 +9,12 @@ helpviewer_keywords:
 - out-of-band releases
 ms.assetid: cf2d9006-b631-4e5d-81cd-20aab78c60f1
 ms.topic: conceptual
-ms.openlocfilehash: c6404df5d4f0be381bc0a9c1924fcf82cf078306
-ms.sourcegitcommit: 70d6a7e4f7187cbfa332f0f8be76566f7828cfcd
+ms.openlocfilehash: 55cb37cc2c9184eeb55ee0aab39e97f4a3f7b7d8
+ms.sourcegitcommit: eb7e87496f42361b1da98562dd75b516c9d58bbc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88075469"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91877633"
 ---
 # <a name="additional-class-libraries-and-apis"></a>Bibliotecas de classes e APIs adicionais
 
@@ -24,25 +24,25 @@ Este artigo lista .NET Framework APIs que foram lançadas fora de banda, visam u
 
 Para melhorar o desenvolvimento de plataforma cruzada e introduzir novas funcionalidades no início, alguns recursos .NET Framework foram lançados fora de banda (OOB).
 
-| Projeto | Descrição |  
-| ------- | ----------- |  
+| Projeto | Descrição |
+| ------- | ----------- |
 | <xref:System.Collections.Immutable> | Fornece coleções que são thread-safe e têm garantias de que seu conteúdo nunca será alterado. |
 | <xref:System.Net.Http.WinHttpHandler> | Fornece um manipulador de mensagens para <xref:System.Net.Http.HttpClient> o com base na interface WinHTTP do Windows. |
 | <xref:System.Numerics> | Fornece uma biblioteca de tipos de vetor que podem aproveitar a aceleração baseada em hardware SIMD.|
-| <xref:System.Threading.Tasks.Dataflow> | A Biblioteca de Fluxo de Dados TPL fornece componentes de fluxo de dados para ajudar a aumentar a robustez de aplicativos habilitados para simultaneidade. |  
+| <xref:System.Threading.Tasks.Dataflow> | A Biblioteca de Fluxo de Dados TPL fornece componentes de fluxo de dados para ajudar a aumentar a robustez de aplicativos habilitados para simultaneidade. |
 
 ## <a name="platform-specific-libraries"></a>Bibliotecas específicas da plataforma
 
 Algumas bibliotecas têm como destino plataformas específicas. Por exemplo, a <xref:System.Text.CodePagesEncodingProvider> classe torna codificações de página de código disponíveis para aplicativos UWP desenvolvidos usando .NET Framework.
-  
-| Projeto | Descrição |  
-| ------- | ----------- |  
-| <xref:System.Text.CodePagesEncodingProvider> | Estende a <xref:System.Text.EncodingProvider> classe para tornar as codificações de página de código disponíveis para aplicativos direcionados ao plataforma universal do Windows. |  
-  
-## <a name="private-apis"></a>APIs privadas  
 
-Essas APIs dão suporte à infraestrutura do produto e não são pretendidas nem têm suporte para serem usadas diretamente do seu código.  
-  
+| Projeto | Descrição |
+| ------- | ----------- |
+| <xref:System.Text.CodePagesEncodingProvider> | Estende a <xref:System.Text.EncodingProvider> classe para tornar as codificações de página de código disponíveis para aplicativos direcionados ao plataforma universal do Windows. |
+
+## <a name="private-apis"></a>APIs privadas
+
+Essas APIs dão suporte à infraestrutura do produto e não são pretendidas nem têm suporte para serem usadas diretamente do seu código.
+
 * [Propriedade Microsoft. SqlServer. Server. SmiOrderProperty. Item](microsoft.sqlserver.server.smiorderproperty.item.md)
 * [Método System. Exception. PrepForRemoting](system.exception.prepforremoting.md)
 * [Propriedade System. Data. SqlTypes. SqlChars. Stream](system.data.sqltypes.sqlchars.stream.md)
@@ -82,16 +82,19 @@ Essas APIs dão suporte à infraestrutura do produto e não são pretendidas nem
 * [Campo System .net. ConnectionGroupList. m \_](m_connectiongrouplist.md)
 * [Método System .net. ServicePointManager. CloseConnectionGroups](system.net.servicepointmanager.closeconnectiongroups.md)
 * [Campo System .net. ServicePointManager. s do \_ Objectpointtable](s_servicepointtable.md)
-* [Campo System .net. TlsStream. m_Worker](system.net.tlsstream.m_worker.md)
+* [Campo de System.Net.TlsStream.m_Worker](system.net.tlsstream.m_worker.md)
 * [Classe System .net. UnsafeNclNativeMethods](system.net.unsafenclnativemethods.md)
 * [Método System .net. WebHeaderCollection. addinterna](system.net.webheadercollection.addinternal.md)
 * [Método System. ServiceModel. Channels. Message. BodyToString](system.servicemodel.channels.message.bodytostring.md)
 * [Método System. ServiceModel. Channels. Message. WriteStartHeaders](system.servicemodel.channels.message.writestartheaders.md)
 * [Classe System. Web. Compilation. ControlBuilderInterceptor](controlbuilderinterceptor-class.md)
+* [Método System. Windows. Controls. GridViewHeaderRowPresenter. FindHeaderByColumn](system.windows.controls.gridviewheaderrowpresenter.findheaderbycolumn.md)
+* [Método System. Windows. Controls. GridViewHeaderRowPresenter. MakeParentItemsControlGotFocus](system.windows.controls.gridviewheaderrowpresenter.makeparentitemscontrolgotfocus.md)
+* [Método System. Windows. Controls. GridViewHeaderRowPresenter. PrepareHeaderDrag](system.windows.controls.gridviewheaderrowpresenter.prepareheaderdrag.md)
 * [Campo System. Windows. Diagnostics. VisualDiagnostics. s \_ isDebuggerCheckDisabledForTestPurposes](s-isdebuggercheckdisabledfortestpurposes-field.md)
 * [Classe System. Windows. Forms. Design. DataMemberFieldEditor](datamemberfieldeditor-class.md)
 * [Classe System. Windows. Forms. Design. DataMemberListEditor](datamemberlisteditor-class.md)
-* [MétodoSystem.Xml.XmlReader. CreateSqlReader](system.xml.xmlreader.createsqlreader.md)
+* [ MétodoSystem.Xml.XmlReader. CreateSqlReader](system.xml.xmlreader.createsqlreader.md)
 * [ActiveX. Interface de conexão](adodb.connection.md)
 * [ActiveX. EventReason enum](adodb.eventreasonenum.md)
 * [ActiveX. EventStatus enum](adodb.eventstatusenum.md)
@@ -103,7 +106,7 @@ Essas APIs dão suporte à infraestrutura do produto e não são pretendidas nem
 * [stdole. Propriedade IPictureDisp. Handle](stdole.ipicturedisp.handle.md)
 * [stdole. Interface StdFont](stdole.stdfont.md)
 * [stdole. Interface StdPicture](stdole.stdpicture.md)
-  
+
 ## <a name="see-also"></a>Confira também
 
 * [.NET Framework e versões fora de banda](../get-started/the-net-framework-and-out-of-band-releases.md)

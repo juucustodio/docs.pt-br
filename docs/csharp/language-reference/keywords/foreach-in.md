@@ -1,7 +1,7 @@
 ---
 description: foreach, in (Referência em C#)
 title: Instrução foreach do C#
-ms.date: 07/22/2020
+ms.date: 09/18/2020
 f1_keywords:
 - foreach
 - foreach_CSharpKeyword
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - foreach statement [C#]
 - in keyword [C#]
 ms.assetid: 5a9c5ddc-5fd3-457a-9bb6-9abffcd874ec
-ms.openlocfilehash: 2ed89fa52b2d3d369d668bf79ab32eaf7be18a8a
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: ea8a6f86595348a32b707caf9782f84147fefc87
+ms.sourcegitcommit: 43ed174f085840ca18a791dc89fe833174da766d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89142070"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90828884"
 ---
 # <a name="foreach-in-c-reference"></a>foreach, in (Referência em C#)
 
@@ -25,8 +25,8 @@ A `foreach` instrução executa uma instrução ou um bloco de instruções para
 
 A `foreach` instrução não está limitada a esses tipos. Você pode usá-lo com uma instância de qualquer tipo que atenda às seguintes condições:
 
-- um tipo tem o método público sem parâmetros `GetEnumerator` cujo tipo de retorno é Class, struct ou interface Type,
-- o tipo de retorno do método `GetEnumerator` tem a propriedade `Current` pública e o método `MoveNext` público sem parâmetros, cujo tipo de retorno é <xref:System.Boolean>.
+- Um tipo tem o método público sem parâmetros `GetEnumerator` cujo tipo de retorno é Class, struct ou interface Type. A partir do C# 9,0, o `GetEnumerator` método pode ser o [método de extensão](../../programming-guide/classes-and-structs/extension-methods.md)de um tipo.
+- O tipo de retorno do `GetEnumerator` método tem a `Current` propriedade Public e o método público sem parâmetros `MoveNext` cujo tipo de retorno é <xref:System.Boolean> .
 
 O exemplo a seguir usa a `foreach` instrução com uma instância do <xref:System.Span%601?displayProperty=nameWithType> tipo, que não implementa nenhuma interface:
 
@@ -67,7 +67,12 @@ No formulário anterior, o tipo `T` de um elemento de coleção deve ser implici
 
 Para obter mais informações, confira a seção [A instrução foreach](~/_csharplang/spec/statements.md#the-foreach-statement) na [Especificação da linguagem C#](~/_csharplang/spec/introduction.md).
 
-## <a name="see-also"></a>Confira também
+Para obter mais informações sobre os recursos adicionados em C# 8,0 e posterior, consulte as seguintes notas de proposta de recurso:
+
+- [Fluxos assíncronos (C# 8,0)](~/_csharplang/proposals/csharp-8.0/async-streams.md)
+- [`GetEnumerator`Suporte de extensão para `foreach` loops (C# 9,0)](~/_csharplang/proposals/csharp-9.0/extension-getenumerator.md)
+
+## <a name="see-also"></a>Consulte também
 
 - [Referência de C#](../index.md)
 - [Palavras-chave de C#](index.md)

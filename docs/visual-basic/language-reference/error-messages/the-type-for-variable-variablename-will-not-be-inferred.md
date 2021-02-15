@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC42110: o tipo da variável ' <variablename> ' não será inferido porque está associado a um campo em um escopo delimitador"
 title: O tipo da variável '<variablename>' não será inferido porque está associado a um campo em um escopo delimitador
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,14 +8,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC42110
 ms.assetid: ef4442eb-08d1-434f-a03b-4aa2ed4e4414
-ms.openlocfilehash: 98aeb5699fdd5e5e538a205acd37436019c3fc03
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: db31f1a6e87a2fd133f095e2fbdde7bc6bded97e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84363040"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641233"
 ---
-# <a name="the-type-for-variable-variablename-will-not-be-inferred-because-it-is-bound-to-a-field-in-an-enclosing-scope"></a>O tipo da variável '\<variablename>' não será inferido porque está associado a um campo em um escopo delimitador
+# <a name="bc42110-the-type-for-variable-variablename-will-not-be-inferred-because-it-is-bound-to-a-field-in-an-enclosing-scope"></a>BC42110: o tipo para a variável ' \<variablename> ' não será inferido porque está associado a um campo em um escopo delimitador
 
 O tipo da variável ' \<variablename> ' não será inferido porque está associado a um campo em um escopo delimitador. Altere o nome de ' \<variablename> ' ou use o nome totalmente qualificado (por exemplo, ' me. VariableName ' ou ' MyBase. VariableName ').
 
@@ -43,7 +44,7 @@ Por padrão, esta mensagem é um aviso. Para obter informações sobre como ocul
 
 **ID do erro:** BC42110
 
-### <a name="to-address-this-warning"></a>Para resolver este aviso
+## <a name="to-address-this-warning"></a>Para resolver este aviso
 
 - Torne a variável de controle de loop local alterando seu nome para um identificador que não seja também o nome de um campo da classe.
 
@@ -64,6 +65,7 @@ Por padrão, esta mensagem é um aviso. Para obter informações sobre como ocul
   ```
 
 ## <a name="example"></a>Exemplo
+
  O código a seguir mostra o exemplo anterior com a primeira correção em vigor.
 
 ```vb
@@ -82,7 +84,7 @@ Class Customer
 End Class
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instrução Option Infer](../statements/option-infer-statement.md)
 - [Instrução For Each...Next](../statements/for-each-next-statement.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorPublishProcess'
 title: Interface ICorPublishProcess
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 6d1dc41b-8aa2-4889-bb00-1cbccc00c123
 topic_type:
 - apiref
-ms.openlocfilehash: 8d958e949612b502ab218f5c6b75779174d34e19
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 8dbc619d33c2c9b625dde852948dff00b5be926e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83421079"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800858"
 ---
 # <a name="icorpublishprocess-interface"></a>Interface ICorPublishProcess
+
 Fornece métodos que acessam informações a serem exibidas sobre um processo.  
   
 ## <a name="methods"></a>Métodos  
@@ -34,6 +36,7 @@ Fornece métodos que acessam informações a serem exibidas sobre um processo.
 |[Método IsManaged](icorpublishprocess-ismanaged-method.md)|Obtém um valor que indica se o processo referenciado por isso `ICorPublishProcess` é conhecido por estar executando código gerenciado.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorPub. idl, CorPub. h  
@@ -42,7 +45,7 @@ Fornece métodos que acessam informações a serem exibidas sobre um processo.
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Coclass CorpubPublish](corpubpublish-coclass.md)

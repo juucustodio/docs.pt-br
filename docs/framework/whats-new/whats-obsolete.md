@@ -7,12 +7,12 @@ helpviewer_keywords:
 - what's obsolete [.NET Framework]
 - deprecated [.NET Framework]
 ms.assetid: d356a43a-73df-4ae2-a457-b9628074c7cd
-ms.openlocfilehash: 188d9184476e58fb679421467cd68e2ea8a8a101
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 93c2015c873b9de7b6c1b94224fa4033863aecfd
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88558862"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558492"
 ---
 # <a name="whats-obsolete-in-the-net-framework-class-library"></a>O que está obsoleto na biblioteca de classes do .NET Framework
 
@@ -37,7 +37,7 @@ Quando você atualiza e depois recompila o código existente, o uso de um tipo o
 
 - Altere seu código removendo o uso do tipo ou do membro, se possível.
 
-     -ou-
+     - ou -
 
 - Examine a documentação dessa área de tecnologia para determinar como responder à substituição.
 
@@ -67,7 +67,7 @@ Para direcionar uma versão específica do .NET Framework, atribua um dos seguin
 |3,5|v2.0.50727|
 |2.0|v2.0.50727|
 |1,1|v1.1.4322|
-|1.0|v1.0.3705|
+|1,0|v1.0.3705|
 
 ## <a name="obsolete-apis-for-net-framework-45-and-later-versions"></a>APIs obsoletas para o .NET Framework 4,5 e versões posteriores
 
@@ -76,10 +76,10 @@ Para direcionar uma versão específica do .NET Framework, atribua um dos seguin
 
 ## <a name="obsolete-apis-for-previous-versions"></a>APIs obsoletas para versões anteriores
 
-- [Tipos obsoletos no .NET Framework 4](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee461503(v=vs.100))
-- [Membros obsoletos no .NET Framework 4](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee471421(v=vs.100))
-- [Lista obsoleta do .NET Framework 3.5](https://docs.microsoft.com/previous-versions/cc835481(v=msdn.10))
-- [Lista obsoleta do .NET Framework 2.0](https://docs.microsoft.com/previous-versions/aa497286(v=msdn.10))
+- [Tipos obsoletos no .NET Framework 4](/previous-versions/dotnet/netframework-4.0/ee461503(v=vs.100))
+- [Membros obsoletos no .NET Framework 4](/previous-versions/dotnet/netframework-4.0/ee471421(v=vs.100))
+- [Lista obsoleta do .NET Framework 3.5](/previous-versions/cc835481(v=msdn.10))
+- [Lista obsoleta do .NET Framework 2.0](/previous-versions/aa497286(v=msdn.10))
 
 ## <a name="see-also"></a>Confira também
 

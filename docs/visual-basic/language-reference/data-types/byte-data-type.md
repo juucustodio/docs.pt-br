@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: tipo de dados byte (Visual Basic)'
 title: Tipo de Dados Byte
 ms.date: 01/31/2018
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - Byte data type
 - data types [Visual Basic], assigning
 ms.assetid: eed44dff-eaee-4937-a89f-444e418e74f6
-ms.openlocfilehash: 97acd1bc2ff29bac6588216b9ee4a4f187078815
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 983af36d8340b5df7ac44782bf56349901460c20
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84374311"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731221"
 ---
 # <a name="byte-data-type-visual-basic"></a>Tipo de dados byte (Visual Basic)
 
@@ -55,7 +56,7 @@ Dim number As Byte = &H_6A
 
 - **Ampliação.** O `Byte` tipo de dados amplia para,,,,,, `Short` `UShort` `Integer` `UInteger` `Long` `ULong` `Decimal` , `Single` ou `Double` . Isso significa que você pode converter `Byte` para qualquer um desses tipos sem encontrar um <xref:System.OverflowException?displayProperty=nameWithType> erro.
   
-- **Digite os caracteres.** `Byte`Não tem caractere de tipo literal ou caractere de tipo de identificador.
+- **Digite os caracteres.** `Byte` Não tem caractere de tipo literal ou caractere de tipo de identificador.
 
 - **Tipo de estrutura.** O tipo correspondente no .NET Framework é a estrutura <xref:System.Byte?displayProperty=nameWithType>.
 
@@ -65,10 +66,10 @@ Dim number As Byte = &H_6A
 
  [!code-vb[VbVbalrDataTypes#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#16)]  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Byte?displayProperty=nameWithType>
-- [Tipos de dados](index.md)
+- [Data Types](index.md)
 - [Funções de conversão do tipo](../functions/type-conversion-functions.md)
 - [Resumo da Conversão](../keywords/conversion-summary.md)
 - [Uso eficiente de tipos de dados](../../programming-guide/language-features/data-types/efficient-use-of-data-types.md)

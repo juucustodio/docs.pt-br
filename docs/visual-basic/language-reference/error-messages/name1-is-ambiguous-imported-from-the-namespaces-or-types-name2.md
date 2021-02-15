@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC30561: ' <name1> ' é ambíguo, importado dos namespaces ou tipos ' <name2> '"
 title: "'<name1>' é ambíguo, importado dos namespaces ou tipos '<name2>'"
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,25 +8,26 @@ f1_keywords:
 helpviewer_keywords:
 - BC30561
 ms.assetid: 761091f7-1018-4299-b481-3966a4a2c126
-ms.openlocfilehash: 63e61d412e4d1238b08ccae94f11adb0c3d1b54d
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: d338d16c563be988c215dd19ac59174d79a8c7a7
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401570"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100483567"
 ---
-# <a name="name1-is-ambiguous-imported-from-the-namespaces-or-types-name2"></a>'\<name1>' é ambíguo, importado dos namespaces ou tipos '\<name2>'
-Você forneceu um nome ambíguo e, portanto, está em conflito com outro nome. O compilador Visual Basic não tem nenhuma regra de resolução de conflitos; Você mesmo deve eliminar a ambiguidade dos nomes.  
-  
- **ID do erro:** BC30561  
-  
-## <a name="to-correct-this-error"></a>Para corrigir este erro  
-  
-1. Desfaça a ambiguidade do nome removendo importações de namespace.  
-  
-2. Qualifique totalmente o nome.  
-  
-## <a name="see-also"></a>Confira também
+# <a name="bc30561-name1-is-ambiguous-imported-from-the-namespaces-or-types-name2"></a>BC30561: ' \<name1> ' é ambíguo, importado dos namespaces ou tipos ' \<name2> '
+
+Você forneceu um nome ambíguo e, portanto, está em conflito com outro nome. O compilador Visual Basic não tem nenhuma regra de resolução de conflitos; Você mesmo deve eliminar a ambiguidade dos nomes.
+
+ **ID do erro:** BC30561
+
+## <a name="to-correct-this-error"></a>Para corrigir este erro
+
+- Desfaça a ambiguidade do nome removendo importações de namespace.
+
+- Qualifique totalmente o nome.
+
+## <a name="see-also"></a>Consulte também
 
 - [Instrução Imports (tipo e namespace .NET)](../statements/imports-statement-net-namespace-and-type.md)
 - [Namespaces no Visual Basic](../../programming-guide/program-structure/namespaces.md)

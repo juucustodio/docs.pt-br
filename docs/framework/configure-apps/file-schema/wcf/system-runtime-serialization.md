@@ -1,21 +1,23 @@
 ---
+description: 'Saiba mais sobre: <System. Runtime. Serialization>'
 title: <system.runtime.serialization>
 ms.date: 03/30/2017
 ms.assetid: a8cebf4c-06d2-4667-8f5b-c3e1fc90df6f
-ms.openlocfilehash: c93a1f482882cc8cd9d229d82597efa64ba209bc
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: cf1d95c8650e4b6979d4f34b0bed1fa395911f2d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79152964"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786623"
 ---
 # \<system.runtime.serialization>
+
 Representa o elemento raiz da <xref:System.Runtime.Serialization> seção namespace e contém elementos para definir as opções do <xref:System.Runtime.Serialization.DataContractSerializer> .  
 
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;**\<system.runtime.serialization>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <configuration>
@@ -35,9 +37,11 @@ Representa o elemento raiz da <xref:System.Runtime.Serialization> seção namesp
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai  
   
 ### <a name="attributes"></a>Atributos  
+
  Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  
@@ -50,10 +54,10 @@ Representa o elemento raiz da <xref:System.Runtime.Serialization> seção namesp
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[\<configuration>Elementos](../configuration-element.md)|O elemento de nível superior para configuração.|  
+|[\<configuration> Elementos](../configuration-element.md)|O elemento de nível superior para configuração.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.Serialization>
 - [Usando contratos de dados](../../../wcf/feature-details/using-data-contracts.md)
-- [Tipos conhecidos de contrato de dados](../../../wcf/feature-details/data-contract-known-types.md)
+- [Tipos de contratos de dados conhecidos](../../../wcf/feature-details/data-contract-known-types.md)

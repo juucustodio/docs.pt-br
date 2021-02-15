@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: provedor de tokens emitidos duráveis'
 title: Provedor de tokens emitidos duráveis
 ms.date: 03/30/2017
 ms.assetid: 76fb27f5-8787-4b6a-bf4c-99b4be1d2e8b
-ms.openlocfilehash: fed5f44e6cc40cfe2ca963077b6371c14b3b086a
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: dfde4efa961704659d9d1de6010b16616467a779
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600550"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793266"
 ---
 # <a name="durable-issued-token-provider"></a>Provedor de tokens emitidos duráveis
+
 Este exemplo demonstra como implementar um provedor de token emitido pelo cliente personalizado.  
   
 ## <a name="discussion"></a>Discussão  
+
  Um provedor de token no Windows Communication Foundation (WCF) é usado para fornecer credenciais para a infraestrutura de segurança. O provedor de token em geral examina o destino e emite as credenciais apropriadas para que a infraestrutura de segurança possa proteger a mensagem. O WCF é fornecido com um provedor de token do CardSpace. Os provedores de token personalizados são úteis nos seguintes casos:  
   
 - Se você tiver um repositório de credenciais para o qual o provedor de token interno não pode operar.  
@@ -31,7 +34,7 @@ Este exemplo demonstra como implementar um provedor de token emitido pelo client
   
 - Como o servidor é autenticado pelo cliente usando o certificado X. 509 do servidor.  
   
- Este exemplo consiste em um programa de console do cliente (Client. exe), um programa de console do serviço de token de segurança (SecurityTokenService. exe) e um programa de console do serviço (Service. exe). O serviço implementa um contrato que define um padrão de comunicação de solicitação-resposta. O contrato é definido pela `ICalculator` interface, que expõe operações matemáticas (adicionar, subtrair, multiplicar e dividir). O cliente obtém um token de segurança do STS (serviço de token de segurança) e faz solicitações síncronas para o serviço para uma determinada operação matemática e o serviço responde com o resultado. A atividade do cliente fica visível na janela do console.  
+ Este exemplo consiste em um programa de console do cliente (Client.exe), um programa de console de serviço de token de segurança (Securitytokenservice.exe) e um programa de console de serviço (Service.exe). O serviço implementa um contrato que define um padrão de comunicação de solicitação-resposta. O contrato é definido pela `ICalculator` interface, que expõe operações matemáticas (adicionar, subtrair, multiplicar e dividir). O cliente obtém um token de segurança do STS (serviço de token de segurança) e faz solicitações síncronas para o serviço para uma determinada operação matemática e o serviço responde com o resultado. A atividade do cliente fica visível na janela do console.  
   
 > [!NOTE]
 > Os procedimentos de instalação e as instruções de compilação para esse exemplo estão localizadas no final deste tópico.  
@@ -110,6 +113,7 @@ Este exemplo demonstra como implementar um provedor de token emitido pelo client
  O serviço de token de segurança expõe um único ponto de extremidade usando o wsHttpBinding padrão. O serviço de token de segurança responde à solicitação de clientes para tokens e, desde que o cliente seja autenticado usando uma conta do Windows, emite um token que contém o nome de usuário do cliente como uma declaração no token emitido. Como parte da criação do token, o serviço de token de segurança assina o token usando a chave privada associada ao certificado CN = STS. Além disso, ele cria uma chave simétrica e a criptografa usando a chave pública associada ao certificado CN = localhost. Ao retornar o token para o cliente, o serviço de token de segurança também retorna a chave simétrica. O cliente apresenta o token emitido para o serviço de calculadora e comprova que ele conhece a chave simétrica assinando a mensagem com essa chave.  
   
 ## <a name="custom-client-credentials-and-token-provider"></a>Credenciais de cliente personalizadas e provedor de token  
+
  As etapas a seguir mostram como desenvolver um provedor de token personalizado que armazena em cache os tokens emitidos e o integra com o WCF: segurança.  
   
 ### <a name="to-develop-a-custom-token-provider"></a>Para desenvolver um provedor de token personalizado  
@@ -226,9 +230,11 @@ Este exemplo demonstra como implementar um provedor de token emitido pelo client
     ```  
   
 ## <a name="running-the-sample"></a>Executando o exemplo  
+
  Consulte as instruções a seguir para executar o exemplo. Quando você executa o exemplo, a solicitação para o token de segurança é mostrada na janela do console do serviço de token de segurança. As solicitações e respostas da operação são exibidas nas janelas do console do cliente e do serviço. Pressione ENTER em qualquer uma das janelas do console para desligar o aplicativo.  
   
 ## <a name="the-setupcmd-batch-file"></a>O arquivo em lotes setup. cmd  
+
  O arquivo em lotes setup. cmd incluído neste exemplo permite que você configure o servidor e o serviço de token de segurança com certificados relevantes para executar um aplicativo auto-hospedado. O arquivo em lotes cria dois certificados no repositório de certificados CurrentUser/TrustedPeople. O primeiro certificado tem um nome de assunto de CN = STS e é usado pelo serviço de token de segurança para assinar os tokens de segurança que ele emite para o cliente. O segundo certificado tem um nome de assunto de CN = localhost e é usado pelo serviço de token de segurança para criptografar um segredo para que o serviço possa descriptografá-lo.  
   
 ### <a name="to-set-up-build-and-run-the-sample"></a>Para configurar, compilar, e executar o exemplo  
@@ -237,9 +243,9 @@ Este exemplo demonstra como implementar um provedor de token emitido pelo client
   
 2. Para compilar a solução, siga as instruções em [criando os exemplos de Windows Communication Foundation](building-the-samples.md). Verifique se todos os projetos na solução são criados (Shared, RSTRSTR, Service, SecurityTokenService e Client).  
   
-3. Verifique se o Service. exe e o SecurityTokenService. exe estão sendo executados com privilégios de administrador.  
+3. Verifique se Service.exe e SecurityTokenService.exe estão sendo executados com privilégios de administrador.  
   
-4. Execute Client. exe.  
+4. Execute Client.exe.  
   
 ### <a name="to-clean-up-after-the-sample"></a>Para limpar após o exemplo  
   

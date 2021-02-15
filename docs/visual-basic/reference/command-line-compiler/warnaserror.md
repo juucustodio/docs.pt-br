@@ -6,14 +6,15 @@ helpviewer_keywords:
 - /warnaserror compiler option [Visual Basic]
 - -warnaserror compiler option [Visual Basic]
 ms.assetid: 49819f1d-a1bd-4201-affe-5afe6d9712e1
-ms.openlocfilehash: 94a8b43a891df9837925869e17fac4536a995264
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 2c243b05b7e819691165ef20996691c0bd38ae4a
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84414266"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91098859"
 ---
 # <a name="-warnaserror-visual-basic"></a>-warnaserror (Visual Basic)
+
 Faz com que o compilador trate a primeira ocorrência de um aviso como um erro.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -30,6 +31,7 @@ Faz com que o compilador trate a primeira ocorrência de um aviso como um erro.
 |`numberList`|Opcional. A lista delimitada por vírgulas dos números de identificação do aviso aos quais se aplica a opção `-warnaserror`. Se nenhuma identificação de aviso for especificada, a opção `-warnaserror` se aplica a todos os avisos.|  
   
 ## <a name="remarks"></a>Comentários  
+
  A opção `-warnaserror` trata todos os avisos como erros. Quaisquer mensagens que normalmente seriam relatadas como avisos são, em vez disso, relatadas como erros. O compilador relatará as ocorrências subsequentes do mesmo aviso como avisos.  
   
  Por padrão, `-warnaserror-` está em vigor, o que faz com que os avisos sejam apenas informativos. A opção `-warnaserror`, que é o mesmo que `-warnaserror+`, faz com que os avisos sejam tratados como erros.  
@@ -48,6 +50,7 @@ Faz com que o compilador trate a primeira ocorrência de um aviso como um erro.
 |1. ter um projeto selecionado em **Gerenciador de soluções**. No menu **Projeto** , clique em **Propriedades**.<br />2. Clique na guia **Compilar** .<br />3. Certifique-se de que a caixa de seleção **desabilitar todos os avisos** esteja desmarcada.<br />4. Verifique se a caixa de seleção **tratar todos os avisos como erros** está desmarcada.<br />5. Selecione o **erro** da coluna de **notificação** adjacente ao aviso que deve ser tratado como um erro.|  
   
 ## <a name="example"></a>Exemplo  
+
  O código a seguir compila `In.vb` e direciona o compilador para exibir um erro para a primeira ocorrência de cada aviso que ele encontre.  
   
 ```console
@@ -55,6 +58,7 @@ vbc -warnaserror in.vb
 ```  
   
 ## <a name="example"></a>Exemplo  
+
  O código a seguir compila `T2.vb` e trata apenas o aviso de variáveis locais não utilizadas (42024) como um erro.  
   
 ```console

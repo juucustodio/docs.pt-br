@@ -1,13 +1,13 @@
 ---
 title: Transactions
-ms.date: 12/13/2019
+ms.date: 09/08/2020
 description: Saiba como usar transações.
-ms.openlocfilehash: 4b72a1573a560ffd1bfd0f54d46ab3b135280976
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: 50c4cd1023eac892cafc3ae4395e9168bd8e9f36
+ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75447135"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90678856"
 ---
 # <a name="transactions"></a>Transactions
 
@@ -33,6 +33,15 @@ O SQLite também dá suporte à **leitura não confirmada** ao usar um cache com
 
 Microsoft. Data. sqlite trata o IsolationLevel passado para <xref:Microsoft.Data.Sqlite.SqliteConnection.BeginTransaction%2A> como um nível mínimo. O nível de isolamento real será promovido para leitura não confirmada ou serializável.
 
-O código a seguir simula uma leitura suja. Observe que a cadeia de conexão deve `Cache=Shared`incluir.
+O código a seguir simula uma leitura suja. Observe que a cadeia de conexão deve incluir `Cache=Shared` .
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/DirtyReadSample/Program.cs?name=snippet_DirtyRead)]
+
+## <a name="deferred-transactions"></a>Transações adiadas
+
+A partir do Microsoft. Data. sqlite versão 5,0, as transações podem ser adiadas. Isso adia a criação da transação real no banco de dados até que o primeiro comando seja executado. Ele também faz com que a transação seja atualizada gradualmente de uma transação de leitura para uma transação de gravação conforme necessário por seus comandos. Isso pode ser útil para habilitar o acesso simultâneo ao banco de dados durante a transação.
+
+[!code-csharp[](../../../../samples/snippets/standard/data/sqlite/DeferredTransactionSample/Program.cs?name=snippet_DeferredTransaction)]
+
+> [!WARNING]
+> Os comandos dentro de uma transação adiada poderão falhar se fizerem com que a transação seja atualizada de uma transação de leitura para uma transação de gravação enquanto o banco de dados estiver bloqueado. Quando isso acontecer, o aplicativo precisará repetir a transação inteira.

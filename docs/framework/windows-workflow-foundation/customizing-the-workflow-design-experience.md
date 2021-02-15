@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: Personalizando a experiência de design do fluxo de trabalho'
 title: Personalizando a experiência design de fluxo de trabalho
 ms.date: 03/30/2017
 helpviewer_keywords:
 - extending [WF], Workflow Designer
 ms.assetid: 98135077-0f5d-4d16-9337-01094e843537
-ms.openlocfilehash: 27be398d874747b65ae051224070d3f40f1fbbb0
-ms.sourcegitcommit: 5fb5b6520b06d7f5e6131ec2ad854da302a28f2e
+ms.openlocfilehash: 02049f8b42de3de6e4dfdfe8a4151be1500bcca9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74715132"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742648"
 ---
 # <a name="customizing-the-workflow-design-experience"></a>Personalizando a experiência design de fluxo de trabalho
 
@@ -17,11 +18,11 @@ Os cenários para criar atividades personalizadas e rehospedar as Designer de Fl
 
 ## <a name="in-this-section"></a>Nesta seção
 
- [Usando designers e modelos de atividade personalizados](using-custom-activity-designers-and-templates.md)
+ [Usando designers personalizados e modelos de atividades](using-custom-activity-designers-and-templates.md)
 
  Descreve como criar novos designer personalizadas e modelos de atividade.
 
- [Hospedando novamente o Designer de Fluxo de Trabalho](rehosting-the-workflow-designer.md)
+ [Hospedando novamente o designer de fluxo de trabalho](rehosting-the-workflow-designer.md)
 
  Descreve como hospedar novamente o Designer de Fluxo de Trabalho do Windows fora do Visual Studio e como exibir erros de validação.
 
@@ -35,7 +36,7 @@ Os cenários para criar atividades personalizadas e rehospedar as Designer de Fl
 
 ## <a name="see-also"></a>Consulte também
 
-- [Estendendo o Windows Workflow Foundation](extend.md)
+- [Estendendo Windows Workflow Foundation](extend.md)
 - [Designer](./samples/designer.md)
-- [Designers de atividade personalizada](./samples/custom-activity-designers.md)
-- [Mudança de host de designer](./samples/designer-rehosting.md)
+- [Designers personalizados de atividades](./samples/custom-activity-designers.md)
+- [Hospedagem do designer](./samples/designer-rehosting.md)

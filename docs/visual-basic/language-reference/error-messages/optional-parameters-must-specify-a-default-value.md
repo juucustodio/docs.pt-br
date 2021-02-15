@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: BC30812: parâmetros opcionais devem especificar um valor padrão'
 title: Parâmetros opcionais devem especificar um valor padrão
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,14 +8,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC30812
 ms.assetid: 5091a250-be66-413b-98a3-2a9974c4d600
-ms.openlocfilehash: eb782b2fa1fb73c7407b57a0942e5eebb30474ff
-ms.sourcegitcommit: ad800f019ac976cb669e635fb0ea49db740e6890
+ms.openlocfilehash: 1cbed1c0f1297ecacdae94d9234d18a3d268f487
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73040935"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795528"
 ---
-# <a name="optional-parameters-must-specify-a-default-value"></a>Parâmetros opcionais devem especificar um valor padrão
+# <a name="bc30812-optional-parameters-must-specify-a-default-value"></a>BC30812: parâmetros opcionais devem especificar um valor padrão
 
 Parâmetros opcionais devem fornecer valores padrão que podem ser usados se nenhum parâmetro for fornecido por um procedimento de chamada.
 

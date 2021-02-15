@@ -1,13 +1,13 @@
 ---
 title: expressão switch-referência C#
 description: Saiba como usar a expressão de comutador C# para correspondência de padrões e outras introspecção de dados
-ms.date: 03/19/2020
-ms.openlocfilehash: 2249afc1ff1cc81e9ad423d910ebb95df8c787d4
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.date: 01/14/2021
+ms.openlocfilehash: 55fef8d351b178fd0ec23847e81e6c56eb1367b0
+ms.sourcegitcommit: 3a8f1979a98c6c19217a1930e0af5908988eb8ba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87916656"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98536080"
 ---
 # <a name="switch-expression-c-reference"></a>expressão switch (referência C#)
 
@@ -22,7 +22,7 @@ A `switch` expressão fornece `switch` semântica semelhante em um contexto de e
 O exemplo anterior mostra os elementos básicos de uma expressão switch:
 
 - A *expressão de intervalo*: o exemplo anterior usa a variável `direction` como a expressão de intervalo.
-- Os *braços de expressão switch*: cada ARM de expressão switch contém um *padrão*, uma *proteção de caso*opcional, o `=>` token e uma *expressão*.
+- Os *braços de expressão switch*: cada ARM de expressão switch contém um *padrão*, uma *proteção de caso* opcional, o `=>` token e uma *expressão*.
 
 O resultado da *expressão switch* é o valor da expressão do primeiro *ARM de expressão switch* cujo *padrão* corresponde à *expressão Range* e cujo *Case Guard*, se presente, é avaliado como `true` . A *expressão* à direita do `=>` token não pode ser uma instrução de expressão.
 
@@ -48,10 +48,13 @@ Por fim, você pode adicionar o `_` padrão e o `null` padrão para capturar arg
 
 O exemplo anterior adiciona um `null` padrão e altera o `IEnumerable<T>` padrão de tipo para um `_` padrão. O `null` padrão fornece uma verificação nula como um ARM de expressão switch. A expressão para esse ARM gera um <xref:System.ArgumentNullException> . O `_` padrão corresponde a todas as entradas que não corresponderam aos braços anteriores. Ele deve vir após a `null` verificação, ou ele corresponderá a `null` entradas.
 
-Você pode ler mais na proposta de especificação da linguagem C# para obter [padrões recursivos](~/_csharplang/proposals/csharp-8.0/patterns.md#switch-expression).
+## <a name="non-exhaustive-switch-expressions"></a>Expressões de comutador não exaustivas
 
-## <a name="see-also"></a>Consulte também
+Se nenhum dos padrões de uma expressão de switch capturar um argumento, o tempo de execução lançará uma exceção. No .NET Core 3,0 e versões posteriores, a exceção é um <xref:System.Runtime.CompilerServices.SwitchExpressionException?displayProperty=nameWithType> . Em .NET Framework, a exceção é um <xref:System.InvalidOperationException> .
 
+## <a name="see-also"></a>Confira também
+
+- [Proposta de especificação da linguagem C# para padrões recursivos](~/_csharplang/proposals/csharp-8.0/patterns.md#switch-expression)
 - [Referência de C#](../index.md)
 - [Operadores e expressões C#](index.md)
 - [Correspondência de padrões](../../pattern-matching.md)

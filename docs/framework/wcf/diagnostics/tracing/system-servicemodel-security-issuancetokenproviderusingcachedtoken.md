@@ -1,22 +1,25 @@
 ---
+description: 'Saiba mais sobre: System. ServiceModel. Security. IssuanceTokenProviderUsingCachedToken'
 title: System.ServiceModel.Security.IssuanceTokenProviderUsingCachedToken
 ms.date: 03/30/2017
 ms.assetid: ee51ed4e-821c-4010-8d64-eabde522169f
-ms.openlocfilehash: 47468a04ab49439565740e3c378c9b1765190d84
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 66275261f562b518daced2c53bd55d065fb1b884
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84579872"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798648"
 ---
 # <a name="systemservicemodelsecurityissuancetokenproviderusingcachedtoken"></a>System.ServiceModel.Security.IssuanceTokenProviderUsingCachedToken
+
 System.ServiceModel.Security.IssuanceTokenProviderUsingCachedToken  
   
 ## <a name="description"></a>Descrição  
+
  O IssuanceTokenProvider usou o token de serviço em cache.  
   
 ## <a name="see-also"></a>Consulte também
 
 - [Rastreamento](index.md)
 - [Utilizando o rastreamento para solucionar problemas em seu aplicativo](using-tracing-to-troubleshoot-your-application.md)
-- [Administração e diagnóstico](../index.md)
+- [Administração e diagnósticos](../index.md)

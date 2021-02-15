@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICeeGen:: TruncateSection'
 title: Método ICeeGen::TruncateSection
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 0451d752-1e5c-4c9a-8bad-6cd35b7ba3df
 topic_type:
 - apiref
-ms.openlocfilehash: 387f5f01f2d2589c0b34e50b69398e1feb0e77e0
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 074c7d7b4222b5b22f1d9b79169d531cd5544b1e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008238"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784204"
 ---
 # <a name="iceegentruncatesection-method"></a>Método ICeeGen::TruncateSection
+
 Trunca a seção de código especificada pelo comprimento especificado.  
   
  Este método é obsoleto e não deve ser usado.  
@@ -37,6 +39,7 @@ HRESULT TruncateSection (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `section`  
  no A seção a ser truncada.  
   
@@ -44,17 +47,19 @@ HRESULT TruncateSection (
  no O comprimento, em bytes, pelo qual truncar a seção.  
   
 ## <a name="remarks"></a>Comentários  
+
  Chame `TruncateSection` somente se você tiver requisitos de seção especiais que não são tratados por outros métodos.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICeeGen](iceegen-interface.md)

@@ -7,14 +7,15 @@ helpviewer_keywords:
 - ETW, common language runtime
 - ETW, CLR events
 ms.assetid: ef2b31c3-7426-43e7-9924-92339b96556d
-ms.openlocfilehash: 22a2f027462d67d5a933972a7420c5f0e38353e5
-ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
+ms.openlocfilehash: 8acc792b5217519e2a73c0cdf30c20161373c678
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86309827"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96283907"
 ---
 # <a name="clr-etw-events"></a>Eventos ETW no CLR
+
 Os tópicos desta seção descrevem os eventos ETW (rastreamento de eventos para Windows). Cada evento tem uma palavra-chave e um nível associados, que são descritos no tópico [Palavras-chave e níveis CLR ETW](clr-etw-keywords-and-levels.md). O CLR tem dois provedores para os eventos:  
   
 - O provedor de runtime, que aciona eventos, dependendo de quais palavras-chave (categorias de eventos) são habilitadas. O GUID do provedor de runtime CLR é e13c0d23-ccbc-4e12-931b-d9cc2eee27e4.  
@@ -24,6 +25,7 @@ Os tópicos desta seção descrevem os eventos ETW (rastreamento de eventos para
  Para obter mais informações sobre os provedores, consulte [Provedores CLR ETW](clr-etw-providers.md).  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Eventos de informação de runtime](runtime-information-etw-events.md)  
  Captura informações sobre o runtime, incluindo a SKU, o número de versão, a maneira pela qual o runtime foi ativado, os parâmetros de linha de comando com os quais ele foi iniciado, o GUID (se aplicável) e outras informações relevantes.  
   
@@ -60,9 +62,9 @@ Os tópicos desta seção descrevem os eventos ETW (rastreamento de eventos para
  [Evento de pilha](stack-etw-event.md)  
  Captura informações que são usadas com outros eventos para gerar rastreamentos de pilha depois que um evento é acionado.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-- [Melhore o ajuste de depuração e desempenho com o ETW](https://docs.microsoft.com/archive/msdn-magazine/2007/april/event-tracing-improve-debugging-and-performance-tuning-with-etw)
+- [Melhore o ajuste de depuração e desempenho com o ETW](/archive/msdn-magazine/2007/april/event-tracing-improve-debugging-and-performance-tuning-with-etw)
 - [Controlando o registro em log no .NET Framework](controlling-logging.md)
 - [Provedores ETW no CLR](clr-etw-providers.md)
 - [Palavras-chave e níveis ETW no CLR](clr-etw-keywords-and-levels.md)

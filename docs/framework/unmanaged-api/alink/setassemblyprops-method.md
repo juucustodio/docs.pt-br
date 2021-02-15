@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método SetAssemblyProps'
 title: Método SetAssemblyProps
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: a3d7cf29-1414-49e6-8aae-9b3283c4f5f0
 topic_type:
 - apiref
-ms.openlocfilehash: 4bfad8b985a8ef059031464e99a8004842b276c0
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 212d8aad22ac1cb231db46f20ff65de2339a21aa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74445578"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99662345"
 ---
 # <a name="setassemblyprops-method"></a>Método SetAssemblyProps
+
 Atribui propriedades no nível do assembly.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,11 +38,12 @@ HRESULT SetAssemblyProps(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `AssemblyID`  
  ID do assembly.  
   
  `FileToken`  
- Arquivo que define a propriedade. Pode ser NULL se `AssemblyID` não indicar um netmodule não associado.  
+ Arquivo que define a propriedade. Pode ser NULL se não `AssemblyID` indicar um netmodule não associado.  
   
  `Option`  
  Indica a opção a ser modificada.  
@@ -49,9 +52,11 @@ HRESULT SetAssemblyProps(
  Novo valor da opção.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  Retorna S_OK se o método tiver sucesso.  
   
-## <a name="requirements"></a>{1&gt;{2&gt;Requisitos&lt;2}&lt;1}  
+## <a name="requirements"></a>Requisitos  
+
  Requer ALink. h.  
   
 ## <a name="see-also"></a>Consulte também

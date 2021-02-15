@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRDataTarget:: ReadVirtual'
 title: Método ICLRDataTarget::ReadVirtual
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: da3769eb-1828-4aa1-b9ed-db4842136a43
 topic_type:
 - apiref
-ms.openlocfilehash: e285df37d83ff73fe29fe293380a4053cb5a9eea
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: 740a89c95092cfad7974d6bc708c5d8b0d2a9172
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860559"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738176"
 ---
 # <a name="iclrdatatargetreadvirtual-method"></a>Método ICLRDataTarget::ReadVirtual
+
 Lê dados do endereço de memória virtual especificado no buffer especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -38,6 +40,7 @@ HRESULT ReadVirtual (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `address`  
  no Um CLRDATA_ADDRESS que armazena o endereço de memória virtual.  
   
@@ -51,6 +54,7 @@ HRESULT ReadVirtual (
  fora Um ponteiro para o número de bytes retornados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** ClrData. idl, ClrData. h  
@@ -59,6 +63,6 @@ HRESULT ReadVirtual (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRDataTarget](iclrdatatarget-interface.md)

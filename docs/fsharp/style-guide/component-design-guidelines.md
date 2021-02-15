@@ -2,12 +2,12 @@
 title: Diretrizes de design de componente do F#
 description: 'Conheça as diretrizes para escrever componentes F # destinados para consumo por outros chamadores.'
 ms.date: 05/14/2018
-ms.openlocfilehash: 590bda0660d54ea73c590d31e694f3d499e0fd9f
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 24be2a422c97b9334f749e3d9dfcccd0feec219b
+ms.sourcegitcommit: e395fabeeea5c705d243d246fa64446839ac85b6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83209130"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97856101"
 ---
 # <a name="f-component-design-guidelines"></a>Diretrizes de design de componente do F#
 
@@ -73,8 +73,8 @@ A tabela a seguir segue as convenções de nomenclatura e de capitalização do 
 | Constructo | Caixa | Parte | Exemplos | Observações |
 |-----------|------|------|----------|-------|
 | Tipos concretos | PascalCase | Substantivo/adjetivo | Lista, dupla, complexa | Os tipos concretos são structs, classes, enumerações, delegados, registros e uniões. Embora os nomes de tipo sejam tradicionalmente minúsculos em OCaml, o F # adotou o esquema de nomenclatura .NET para tipos.
-| DLLs           | PascalCase |                 | Fabrikam. Core. dll |  |
-| Marcas Union     | PascalCase | Substantivo | Alguns, adicionar, sucesso | Não use um prefixo em APIs públicas. Opcionalmente, use um prefixo quando interno, como`type Teams = TAlpha | TBeta | TDelta.` |
+| DLLs           | PascalCase |                 | Fabrikam.Core.dll |  |
+| Marcas Union     | PascalCase | Substantivo | Alguns, adicionar, sucesso | Não use um prefixo em APIs públicas. Opcionalmente, use um prefixo quando interno, como `type Teams = TAlpha | TBeta | TDelta.` |
 | Evento          | PascalCase | Verbo | ValueChanged/ValueChanging |  |
 | Exceções     | PascalCase |      | WebException | O nome deve terminar com "Exception". |
 | Campo          | PascalCase | Substantivo | CurrentName  | |
@@ -191,8 +191,8 @@ Use tipos de interface para representar um conjunto de operações. Isso é pref
 
 ```fsharp
 type Serializer =
-    abstract Serialize<'T>: preserveRefEq: bool -> value: 'T -> string
-    abstract Deserialize<'T>: preserveRefEq: bool -> pickle: string -> 'T
+    abstract Serialize<'T> : preserveRefEq: bool -> value: 'T -> string
+    abstract Deserialize<'T> : preserveRefEq: bool -> pickle: string -> 'T
 ```
 
 Em preferência a:
@@ -222,7 +222,7 @@ Se você incluir esse módulo, siga as convenções de nomenclatura padrão para
 
 #### <a name="use-a-module-to-group-functions-for-common-canonical-functions-especially-in-math-and-dsl-libraries"></a>Use um módulo para agrupar funções para funções comuns e canônicas, especialmente em bibliotecas de matemática e DSL
 
-Por exemplo, `Microsoft.FSharp.Core.Operators` é uma coleção aberta automaticamente de funções de nível superior (como `abs` e `sin` ) fornecida por FSharp. Core. dll.
+Por exemplo, `Microsoft.FSharp.Core.Operators` é uma coleção aberta automaticamente de funções de nível superior (como `abs` e `sin` ) fornecida pelo FSharp.Core.dll.
 
 Da mesma forma, uma biblioteca de estatísticas pode incluir um módulo com funções `erf` e `erfc` , em que esse módulo foi projetado para ser aberto explicitamente ou automaticamente.
 
@@ -653,7 +653,7 @@ member this.ParamOverload(x: int) = x
 member this.ParamOverload(x: int, y: int) = x + y
 ```
 
-#### <a name="use-the-net-collection-interface-types-ienumerablet-and-idictionarykeyvalue-for-parameters-and-return-values"></a>Use os tipos de interface de coleção do .NET IEnumerable \< T \> e IDictionary \< Key, valor \> para parâmetros e valores de retorno
+#### <a name="use-the-net-collection-interface-types-ienumerablet-and-idictionarykeyvalue-for-parameters-and-return-values"></a>Usar os tipos de interface de coleção .NET IEnumerable \<T\> e IDictionary \<Key,Value\> para parâmetros e valores de retorno
 
 Evite o uso de tipos de coleção concretos, como matrizes .NET `T[]` , tipos F # `list<T>` `Map<Key,Value>` e `Set<T>` tipos de coleção concretos .NET `Dictionary<Key,Value>` , como. As diretrizes de design de biblioteca do .NET têm bons conselhos sobre quando usar vários tipos de coleção como o `IEnumerable<T>` . Um pouco de uso de matrizes ( `T[]` ) é aceitável em algumas circunstâncias, no aterramento de desempenho. Observe especialmente que `seq<T>` é apenas o alias F # para `IEnumerable<T>` e, portanto, seq é geralmente um tipo apropriado para uma API .NET da baunilha.
 

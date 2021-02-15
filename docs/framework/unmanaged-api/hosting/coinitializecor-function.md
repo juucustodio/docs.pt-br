@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Função CoInitializeCor'
 title: Função CoInitializeCor
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 9b9079fb-579e-4141-b3f0-791072dd40dc
 topic_type:
 - apiref
-ms.openlocfilehash: 1263467fc5db92d4dd21c4f09a98af309e2c4d55
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: e1db9914cce8a92cecf78123a2e247d75ec74acf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84504414"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799844"
 ---
 # <a name="coinitializecor-function"></a>Função CoInitializeCor
+
 `CoInitializeCor` é obsoleto.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,11 +36,13 @@ STDAPI CoInitializeCor (
 ```  
   
 ## <a name="remarks"></a>Comentários  
+
  Para inicializar o Common Language Runtime, use [CorBindToRuntimeEx](corbindtoruntimeex-function.md) ou [CorBindToCurrentRuntime](corbindtocurrentruntime-function.md).  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** Cor. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Funções estáticas globais de metadados](../metadata/metadata-global-static-functions.md)

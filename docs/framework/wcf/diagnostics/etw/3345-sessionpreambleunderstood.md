@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 3345-SessionPreambleUnderstood'
 title: 3345 - SessionPreambleUnderstood
 ms.date: 03/30/2017
 ms.assetid: e8e9fcda-7dbc-4670-bb47-b365219f3046
-ms.openlocfilehash: 42e37edeace9853330c89deffb472e2c7f438c9b
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: b452a823fa42d6a1c72a4ca9035b0badc45ab944
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61971503"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99670184"
 ---
 # <a name="3345---sessionpreambleunderstood"></a>3345 - SessionPreambleUnderstood
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,9 +22,11 @@ ms.locfileid: "61971503"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
+
  Esse evento é emitido quando o preâmbulo da sessão NetTcp é compreendido.  
   
 ## <a name="message"></a>Mensagem  
- Preambule relace Pro '%1' compreendido.  
+
+ Preâmbulo de sessão para ' %1 ' compreendido.  
   
 ## <a name="details"></a>Detalhes

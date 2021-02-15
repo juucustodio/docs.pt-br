@@ -3,12 +3,12 @@ title: Conceitos e modelo de objeto do SDK do .NET Compiler Platform
 description: Esta visão geral fornece o contexto necessário para trabalhar efetivamente com o SDK do .NET Compiler. Você aprenderá sobre as camadas de API, os principais tipos envolvidos e o modelo de objeto geral.
 ms.date: 07/13/2020
 ms.custom: mvc
-ms.openlocfilehash: a65d282dd3c58279bbfd635c0386d50ce3f30055
-ms.sourcegitcommit: e7748001b1cee80ced691d8a76ca814c0b02dd9b
+ms.openlocfilehash: f4b2163c3bf8824b6ad93f0b144a6b02d870f50a
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86374462"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899159"
 ---
 # <a name="understand-the-net-compiler-platform-sdk-model"></a>Entender o modelo do SDK do .NET Compiler Platform
 
@@ -30,7 +30,7 @@ Correspondente a cada uma dessas fases, o SDK do .NET Compiler Platform expõe u
 
 Cada compilador combina esses componentes como um único inteiro de ponta a ponta.
 
-Essas APIs são as mesmas usadas pelo Visual Studio. Por exemplo, os recursos de estrutura de tópicos e formatação do código usam as árvores de sintaxe, o **pesquisador de objetos**e os recursos de navegação usam a tabela de símbolos, refatoração e **ir para definição** usam o modelo semântico, e **Editar e continuar** usa todos eles, incluindo a API de emissão.
+Essas APIs são as mesmas usadas pelo Visual Studio. Por exemplo, os recursos de estrutura de tópicos e formatação do código usam as árvores de sintaxe, o **pesquisador de objetos** e os recursos de navegação usam a tabela de símbolos, refatoração e **ir para definição** usam o modelo semântico, e **Editar e continuar** usa todos eles, incluindo a API de emissão.
 
 ## <a name="api-layers"></a>Camadas de API
 
@@ -42,7 +42,7 @@ A camada do compilador contém os modelos de objeto que correspondem às informa
 
 ### <a name="diagnostic-apis"></a>APIs de diagnóstico
 
-Como parte de sua análise, o compilador pode produzir um conjunto de diagnósticos que abrangem tudo, desde a sintaxe, semântica e erros de atribuição definitiva a vários diagnósticos de avisos e informativos. A camada de API do Compilador expõe o diagnóstico por meio de uma API extensível que permite que os analisadores definidos pelo usuário sejam conectados ao processo de compilação. Ela possibilita que o diagnóstico definido pelo usuário, como aqueles gerados por ferramentas como o StyleCop ou FxCop, seja produzido junto com o diagnóstico definido pelo compilador. A produção de diagnóstico dessa maneira tem o benefício de integrar naturalmente com ferramentas como o MSBuild e o Visual Studio, que dependem de diagnósticos para experiências como interromper uma compilação com base na política e mostrar rabiscos ao vivo no editor e sugerir correções de código.
+Como parte de sua análise, o compilador pode produzir um conjunto de diagnósticos que abrangem tudo, de sintaxe, semântica e erros de atribuição definitivos a vários avisos e diagnósticos informativos. A camada de API do Compilador expõe o diagnóstico por meio de uma API extensível que permite que os analisadores definidos pelo usuário sejam conectados ao processo de compilação. Ele permite que o diagnóstico definido pelo usuário, como aqueles produzidos por ferramentas como StyleCop, seja produzido junto com o diagnóstico definido pelo compilador. A produção de diagnóstico dessa maneira tem o benefício de integrar naturalmente com ferramentas como o MSBuild e o Visual Studio, que dependem de diagnósticos para experiências como interromper uma compilação com base na política e mostrar rabiscos ao vivo no editor e sugerir correções de código.
 
 ### <a name="scripting-apis"></a>APIs de script
 

@@ -3,17 +3,19 @@ title: ASP.NET Web API e WCF
 description: Saiba se o WCF ou o ASP.NET Web API é mais adequado para suas necessidades, comparando os principais recursos de cada tecnologia.
 ms.date: 03/30/2017
 ms.assetid: 08ceded3-fd9a-4467-9715-c4cbd9c7228e
-ms.openlocfilehash: de8d1905866c860da96983c2f3d52599e3342403
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: b3a905f890b4dfa9f60c906c3a242be60921e5c8
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85245953"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96273588"
 ---
 # <a name="wcf-and-aspnet-web-api"></a>ASP.NET Web API e WCF
+
 WCF é o modelo de programação unificada da Microsoft para a criação de aplicativos orientados a serviços. Ele permite aos desenvolvedores criarem soluções seguras, confiáveis e transacionadas que se integram nas plataformas e interoperam com os investimentos existentes. [ASP.NET Web API](https://www.asp.net/web-api) é uma estrutura que facilita a criação de serviços http que atingem uma ampla variedade de clientes, incluindo navegadores e dispositivos móveis. O ASP.NET Web API é uma plataforma ideal para o desenvolvimento de aplicativos RESTful no .NET Framework. Este tópico apresenta algumas diretrizes para ajudá-lo a decidir qual tecnologia atenderá melhor suas necessidades.  
   
 ## <a name="choosing-which-technology-to-use"></a>Escolhendo a tecnologia a ser usada  
+
  A tabela a seguir descreve os principais recursos de cada tecnologia.  
   
 |WCF|ASP.NET Web API|  

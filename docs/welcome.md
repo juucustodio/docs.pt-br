@@ -3,12 +3,12 @@ title: Bem-vindo ao .NET
 description: Introdução à família de tecnologias do .NET.
 ms.date: 12/03/2019
 ms.custom: updateeachrelease
-ms.openlocfilehash: 7b1c5eceefd1e108eabf17d5cb6f7552af00e0d5
-ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
+ms.openlocfilehash: 707f83e912b6bd6999423949412cffba852093a0
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2020
-ms.locfileid: "89495141"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558068"
 ---
 # <a name="welcome-to-net"></a>Bem-vindo ao .NET
 
@@ -34,8 +34,8 @@ Além disso, siga os eventos .NET mais recentes:
 Para obter informações sobre os recursos mais recentes adicionados às implementações do .NET e os idiomas com suporte, consulte os seguintes artigos:
 
 - [Novidades do .NET Core 3.1](core/whats-new/dotnet-core-3-1.md)
-- [O que há de novo na .NET Framework](framework/whats-new/index.md)
-- [Novidades no C#](csharp/whats-new/index.md)
+- [Novidades no .NET Framework](framework/whats-new/index.md)
+- [Novidades no C#](./csharp/whats-new/csharp-9.md)
 - [O que há de novo para Visual Basic](visual-basic/whats-new/index.md)
 
 ## <a name="documentation"></a>Documentação
@@ -43,17 +43,17 @@ Para obter informações sobre os recursos mais recentes adicionados às impleme
 Esta documentação abrange a extensão do .NET entre plataformas e linguagens. Você pode começar com o .NET e suas linguagens em qualquer uma das seções a seguir:
 
 - [Conceitos básicos do .NET](fundamentals/index.yml)
-- [Guia de .NET Framework](framework/index.yml)
+- [Guia do .NET Framework](framework/index.yml)
 - [Guia do C#](csharp/index.yml)
-- [Guia de F #](fsharp/index.yml)
-- [Guia de Visual Basic](visual-basic/index.yml)
+- [Guia do F#](fsharp/index.yml)
+- [Guia do Visual Basic](visual-basic/index.yml)
 - [Guia do ML.NET](machine-learning/index.yml)
 - [.NET para Apache Spark](spark/index.yml)
 - [Arquitetura do Aplicativo .NET](architecture/index.yml)
 
-Além disso, você pode procurar a [referência da API .NET](/dotnet/api).
+Além disso, você pode procurar a [referência da API .NET](../api/index.md).
 
-## <a name="videos"></a>vídeos
+## <a name="videos"></a>Vídeos
 
 Explore vídeos em Web, móveis, desktops, C#, Machine Learning, contêineres/Docker, acesso a dados e muito mais:
 

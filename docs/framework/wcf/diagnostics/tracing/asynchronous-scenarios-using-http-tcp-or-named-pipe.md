@@ -1,74 +1,85 @@
 ---
+description: 'Saiba mais sobre: cenários assíncronos usando HTTP, TCP ou Named-Pipe'
 title: Cenários assíncronos usando HTTP, TCP ou pipe nomeado
 ms.date: 03/30/2017
 ms.assetid: a4d62402-43a4-48a4-9ced-220633ebc4ce
-ms.openlocfilehash: 6ae96c0aac5010adf37eb78ed57d1549885ece58
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 5e01866cd20d63796741a097a6d7d774ea45d3d9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79185779"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99770944"
 ---
 # <a name="asynchronous-scenarios-using-http-tcp-or-named-pipe"></a>Cenários assíncronos usando HTTP, TCP ou pipe nomeado
-Este tópico descreve as atividades e transferências para diferentes cenários de solicitação/resposta assíncronas, com solicitações multithreaded usando HTTP, TCP ou pipe nomeado.  
-  
-## <a name="asynchronous-requestreply-without-errors"></a>Solicitação/Resposta assíncrona sem erros  
- Esta seção descreve as atividades e transferências para um cenário assíncrono de solicitação/resposta, com clientes multithreaded.  
-  
- A atividade do `beginCall` chamador `endCall` termina quando retorna e retorna. Se um retorno de chamada for chamado, o retorno de chamada retorna.  
-  
- A atividade chamada `beginCall` termina `endCall` quando retorna, retorna ou quando o retorno de chamada retorna se for chamado dessa atividade.  
-  
-### <a name="asynchronous-client-without-callback"></a>Cliente assíncrono sem Retorno de Chamada  
-  
-#### <a name="propagation-is-enabled-on-both-sides-using-http"></a>A propagação é habilitada em ambos os lados, usando HTTP  
- ![Cliente assíncrono sem retorno de chamada onde propagaçãoActivity é definido como verdadeiro em ambos os lados.](./media/asynchronous-scenarios-using-http-tcp-or-named-pipe/asynchronous-client-no-callback.gif)
-  
- Se `propagateActivity=true`, ProcessMessage indicar para qual atividade processAction será transferida.  
-  
- Para cenários baseados em HTTP, o ReceiveBytes é invocado na primeira mensagem a ser enviada e existe durante toda a vida útil da solicitação.  
-  
-#### <a name="propagation-is-disabled-on-either-sides-using-http"></a>A propagação é desativada em ambos os lados, usando HTTP  
- Se `propagateActivity=false` em ambos os lados, processMessage não indicar para qual atividade processAction será transferida. Portanto, uma nova atividade temporária processAction com um novo ID é invocada. Quando a resposta assíncrona é compatível com a solicitação no código ServiceModel, o ID de atividade pode ser recuperado do contexto local. A atividade processaction real pode ser transferida para com esse ID.  
-  
- ![Cliente assíncrono sem retorno de chamada onde propagaatividade é definido como falso em ambos os lados.](./media/asynchronous-scenarios-using-http-tcp-or-named-pipe/asynchronous-scenario-propagation-disabled-either-side.gif)  
 
- Para cenários baseados em HTTP, o ReceiveBytes é invocado na primeira mensagem a ser enviada e existe durante toda a vida útil da solicitação.  
+Este tópico descreve as atividades e transferências para diferentes cenários assíncronos de solicitação/resposta, com solicitações multi-threaded usando HTTP, TCP ou pipe nomeado.  
   
- Uma atividade process action é criada em um `propagateActivity=false` cliente assíncrono quando no chamador ou no callee, e quando a mensagem de resposta não inclui um cabeçalho de ação.  
-  
-#### <a name="propagation-is-enabled-on-both-sides-using-tcp-or-named-pipe"></a>A propagação está ativada em ambos os lados, usando TCP ou Pipe nomeado  
- ![Cliente assíncrono sem retorno de chamada onde propagaçãoAAtividade é definida como verdadeira em ambos os lados e chamada pipe/TCP.](./media/asynchronous-scenarios-using-http-tcp-or-named-pipe/asynchronous-scenario-propagation-enabled-using-tcp.gif)  
-  
- Para um cenário baseado em Pipe ou TCP, o ReceiveBytes é invocado quando o cliente é aberto e existe durante toda a vida útil da conexão.  
-  
- Semelhante à primeira imagem, se `propagateActivity=true`, ProcessMessage indica para qual atividade processAction transferir.  
-  
-#### <a name="propagation-is-disabled-on-either-sides-using-tcp-or-named-pipe"></a>A propagação é desativada em ambos os lados, usando TCP ou Pipe nomeado  
- Para um cenário baseado em Pipe ou TCP, o ReceiveBytes é invocado quando o cliente é aberto e existe durante toda a vida útil da conexão.  
-  
- Semelhante à segunda imagem, se `propagateActivity=false` em ambos os lados, processMessage não indica qual atividade processAction transferir. Portanto, uma nova atividade temporária processAction com um novo ID é invocada. Quando a resposta assíncrona é compatível com a solicitação no código ServiceModel, o ID de atividade pode ser recuperado do contexto local. A atividade processaction real pode ser transferida para com esse ID.  
-  
- ![Cliente assíncrono sem retorno de chamada onde propagaçãoActivity é definido como falso em ambos os lados e chamado pipe/TCP.](./media/asynchronous-scenarios-using-http-tcp-or-named-pipe/asynchronous-scenario-propagation-disabled-using-tcp.gif)  
+## <a name="asynchronous-requestreply-without-errors"></a>Solicitação/resposta assíncrona sem erros  
 
-### <a name="asynchronous-client-with-callback"></a>Cliente assíncrono com Callback  
- Este cenário adiciona atividades G e A', para o retorno de chamada e `endCall`, e suas transferências para dentro/para fora.  
+ Esta seção descreve as atividades e transferências para um cenário de solicitação/resposta assíncrona, com clientes multithread.  
   
- Esta seção só `propagateActivity` = `true`demonstra o uso de HTTP com . No entanto, as atividades adicionais e transferências `propagateActivity` = `false`também se aplicam aos outros casos (isto é, usando TCP ou Named-Pipe).  
+ A atividade do chamador é encerrada quando `beginCall` retorna e `endCall` retorna. Se um retorno de chamada for chamado, o retorno de chamada retornará.  
   
- O retorno de chamada cria uma nova atividade (G) quando o cliente liga para o código do usuário para notificar que os resultados estão prontos. Em seguida, `endCall` o código do usuário chama dentro do retorno de chamada (como mostrado na Figura 5) ou fora do retorno de chamada (Figura 6). Como não se sabe `endCall` de qual atividade do usuário `A’`está sendo chamada, essa atividade é rotulada . É possível que A' possa ser idêntico ou diferente de A.  
+ A atividade chamada termina quando `beginCall` retorna, `endCall` retorna ou quando o retorno de chamada retorna se foi chamado a partir dessa atividade.  
   
- ![Mostra um cliente assíncrono com retorno de chamada, chamada final em retorno de chamada.](./media/asynchronous-scenarios-using-http-tcp-or-named-pipe/asynchronous-client-callback-endcall-in-callback.gif)  
+### <a name="asynchronous-client-without-callback"></a>Cliente assíncrono sem retorno de chamada  
+  
+#### <a name="propagation-is-enabled-on-both-sides-using-http"></a>A propagação está habilitada em ambos os lados, usando HTTP  
 
- ![Mostra um cliente assíncrono com retorno de chamada, chamada de chamada externa.](./media/asynchronous-scenarios-using-http-tcp-or-named-pipe/asynchronous-client-callback-endcall-outside-callback.gif)  
+ ![Cliente assíncrono sem nenhum retorno de chamada, em que propagateActivity está definido como true em ambos os lados.](./media/asynchronous-scenarios-using-http-tcp-or-named-pipe/asynchronous-client-no-callback.gif)
+  
+ Se `propagateActivity=true` , ProcessMessage indica a atividade processAction a ser transferida.  
+  
+ Para cenários baseados em HTTP, ReceiveBytes é invocado na primeira mensagem a ser enviada e existe durante o tempo de vida da solicitação.  
+  
+#### <a name="propagation-is-disabled-on-either-sides-using-http"></a>A propagação está desabilitada em qualquer um dos lados, usando HTTP  
+
+ Se `propagateActivity=false` , em ambos os lados, ProcessMessage não indicar qual atividade processAction será transferida. Portanto, uma nova atividade processAction temporária com uma nova ID é invocada. Quando a resposta assíncrona é correspondida à solicitação no código de ServiceModel, a ID da atividade pode ser recuperada do contexto local. A atividade processAction real pode ser transferida para com essa ID.  
+  
+ ![Cliente assíncrono sem nenhum retorno de chamada, em que propagateActivity está definido como false em ambos os lados.](./media/asynchronous-scenarios-using-http-tcp-or-named-pipe/asynchronous-scenario-propagation-disabled-either-side.gif)  
+
+ Para cenários baseados em HTTP, ReceiveBytes é invocado na primeira mensagem a ser enviada e existe durante o tempo de vida da solicitação.  
+  
+ Uma atividade processar ação é criada em um cliente assíncrono quando `propagateActivity=false` no chamador ou receptor, e quando a mensagem de resposta não inclui um cabeçalho de ação.  
+  
+#### <a name="propagation-is-enabled-on-both-sides-using-tcp-or-named-pipe"></a>A propagação é habilitada em ambos os lados, usando TCP ou pipe nomeado  
+
+ ![Cliente assíncrono sem nenhum retorno de chamada, em que propagateActivity está definido como true em ambos os lados e pipe nomeado/TCP.](./media/asynchronous-scenarios-using-http-tcp-or-named-pipe/asynchronous-scenario-propagation-enabled-using-tcp.gif)  
+  
+ Para um cenário baseado em Named-Pipe ou TCP, ReceiveBytes é invocado quando o cliente é aberto e existe durante o tempo de vida da conexão.  
+  
+ Semelhante à primeira imagem, If `propagateActivity=true` , ProcessMessage indica a atividade processAction a ser transferida.  
+  
+#### <a name="propagation-is-disabled-on-either-sides-using-tcp-or-named-pipe"></a>A propagação está desabilitada em qualquer um dos lados, usando TCP ou pipe nomeado  
+
+ Para um cenário baseado em Named-Pipe ou TCP, ReceiveBytes é invocado quando o cliente é aberto e existe durante o tempo de vida da conexão.  
+  
+ Semelhante à segunda imagem, se estiver `propagateActivity=false` em ambos os lados, ProcessMessage não indica qual atividade processAction transferir para. Portanto, uma nova atividade processAction temporária com uma nova ID é invocada. Quando a resposta assíncrona é correspondida à solicitação no código de ServiceModel, a ID da atividade pode ser recuperada do contexto local. A atividade processAction real pode ser transferida para com essa ID.  
+  
+ ![Cliente assíncrono sem nenhum retorno de chamada em que propagateActivity está definido como false em ambos os lados e pipe nomeado/TCP.](./media/asynchronous-scenarios-using-http-tcp-or-named-pipe/asynchronous-scenario-propagation-disabled-using-tcp.gif)  
+
+### <a name="asynchronous-client-with-callback"></a>Cliente assíncrono com retorno de chamada  
+
+ Esse cenário adiciona as atividades G e A ', para o retorno de chamada e e `endCall` suas transferências para dentro/para fora.  
+  
+ Esta seção demonstra apenas o uso de HTTP com o `propagateActivity` = `true` . No entanto, as atividades e transferências adicionais também se aplicam aos outros casos (ou seja, `propagateActivity` = `false` usando TCP ou pipe nomeado).  
+  
+ O retorno de chamada cria uma nova atividade (G) quando o cliente chama o código do usuário para notificar que os resultados estão prontos. Em seguida, o código do usuário chama `endCall` o retorno de chamada (como mostrado na Figura 5) ou fora do retorno de chamada (Figura 6). Como não é conhecido qual atividade do usuário `endCall` está sendo chamada, essa atividade é rotulada `A’` . É possível que um ' possa ser idêntico ou diferente de um.  
+  
+ ![Mostra um cliente assíncrono com retorno de chamada, EndCall em chamada de retorno.](./media/asynchronous-scenarios-using-http-tcp-or-named-pipe/asynchronous-client-callback-endcall-in-callback.gif)  
+
+ ![Mostra um cliente assíncrono com retorno de chamada, EndCall externo.](./media/asynchronous-scenarios-using-http-tcp-or-named-pipe/asynchronous-client-callback-endcall-outside-callback.gif)  
 
 ### <a name="asynchronous-server-with-callback"></a>Servidor assíncrono com retorno de chamada  
+
  ![Mostra um servidor assíncrono com retorno de chamada.](./media/asynchronous-scenarios-using-http-tcp-or-named-pipe/asynchronous-server-callback.gif)  
 
- A pilha de canais chama de volta o cliente no Message Receive: os rastreamentos para esse processamento são emitidos na própria atividade ProcessRequest.  
+ A pilha de canais retorna de volta o cliente na mensagem de recebimento: os rastreamentos para esse processamento são emitidos na própria atividade ProcessRequest.  
   
 ## <a name="asynchronous-requestreply-with-errors"></a>Solicitação/resposta assíncrona com erros  
- Erros de mensagem `endCall`de falha são recebidos durante . Caso contrário, as atividades e transferências são semelhantes aos cenários anteriores.  
+
+ Erros de mensagem de falha são recebidos durante `endCall` . Caso contrário, as atividades e transferências são semelhantes aos cenários anteriores.  
   
-## <a name="asynchronous-one-way-with-or-without-errors"></a>Caminho síncrono unidirecional com ou sem erros  
- Nenhuma resposta ou falha é devolvida ao cliente.
+## <a name="asynchronous-one-way-with-or-without-errors"></a>One-Way assíncrona com ou sem erros  
+
+ Nenhuma resposta ou falha é retornada ao cliente.

@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 5cb9be13-5ac4-4373-a034-b3520a5b2dec
-ms.openlocfilehash: 5851492f075068337c60316664138dd09c97443b
-ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
+ms.openlocfilehash: ef0b1c642db055c8c5d4f2275b02119d8ebee8f0
+ms.sourcegitcommit: 6d1ae17e60384f3b5953ca7b45ac859ec6d4c3a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89551962"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94982414"
 ---
 # <a name="how-to-project-an-anonymous-type-linq-to-xml"></a>Como projetar um tipo anônimo (LINQ to XML)
 

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: contratos'
 title: Contratos
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,19 +7,21 @@ helpviewer_keywords:
 - contracts [WCF]
 - Windows Communication Foundation [WCF], contracts
 ms.assetid: c8364183-4ac1-480b-804a-c5e6c59a5d7d
-ms.openlocfilehash: 1cd7e54d50e7116c71c040df1965674a4fdaff13
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: efa924970ce8d07a6b068e92ff85f099b696016d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595590"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780512"
 ---
 # <a name="contracts"></a>Contratos
+
 Esta seção mostra como definir e implementar contratos de Windows Communication Foundation (WCF). Um contrato de serviço especifica o que um ponto de extremidade se comunica com o mundo exterior. Em um nível mais concreto, trata-se de uma declaração sobre um conjunto de mensagens específicas organizadas em padrões de troca de mensagens básicos (MEPs), como solicitação/resposta, unidirecional e duplex. Se um contrato de serviço for um conjunto de trocas de mensagens logicamente relacionado, uma operação de serviço será uma única troca de mensagens. Por exemplo, uma `Hello` operação deve, obviamente, aceitar uma mensagem (para que o chamador possa anunciar a saudação) e pode ou não retornar uma mensagem (dependendo da cortesia da operação).  
   
  Para obter mais informações sobre contratos e outros conceitos principais do WCF, consulte [conceitos fundamentais de Windows Communication Foundation](../fundamental-concepts.md). Este tópico se concentra na compreensão dos contratos de serviço. Para obter mais informações sobre como criar clientes que usam contratos de serviço para se conectar a serviços, consulte [visão geral do cliente WCF](../wcf-client-overview.md). Para obter mais informações sobre canais de cliente, a arquitetura de cliente e outros problemas de cliente, consulte [clientes](clients.md).  
   
 ## <a name="overview"></a>Visão geral  
+
  Este tópico fornece uma orientação conceitual de alto nível para projetar e implementar serviços WCF. Os subtópicos fornecem informações mais detalhadas sobre as especificidades de design e implementação. Antes de projetar e implementar seu aplicativo WCF, é recomendável que você:  
   
 - Entenda o que é um contrato de serviço, como ele funciona e como criar um.  
@@ -26,6 +29,7 @@ Esta seção mostra como definir e implementar contratos de Windows Communicatio
 - Entenda que os contratos atendem aos requisitos mínimos de que a configuração em tempo de execução ou o ambiente de hospedagem pode não dar suporte.  
   
 ## <a name="service-contracts"></a>Contratos de serviço  
+
  Um contrato de serviço é uma instrução que fornece informações sobre:  
   
 - O agrupamento de operações em um serviço.  
@@ -59,6 +63,7 @@ Esta seção mostra como definir e implementar contratos de Windows Communicatio
  Além disso, o WCF também fornece a capacidade de desenvolver contratos de serviço inteiramente no nível da mensagem. Para obter mais informações sobre como desenvolver contratos de serviço no nível da mensagem, consulte [usando contratos de mensagem](using-message-contracts.md). Para obter mais informações sobre como desenvolver serviços em XML não SOAP, consulte [interoperabilidade com aplicativos Pox](interoperability-with-pox-applications.md).  
   
 ### <a name="understanding-the-hierarchy-of-requirements"></a>Noções básicas sobre a hierarquia de requisitos  
+
  Um contrato de serviço agrupa as operações; Especifica o MEP, os tipos de mensagem e os tipos de dados que essas mensagens transportam; e indica categorias de comportamento de tempo de execução que uma implementação deve ter para dar suporte ao contrato (por exemplo, pode exigir que as mensagens sejam criptografadas e assinadas). O próprio contrato de serviço, no entanto, não especifica precisamente como esses requisitos são atendidos, apenas que eles devem ser. O tipo de criptografia ou como uma mensagem é assinada é a implementação e a configuração de um serviço em conformidade.  
   
  Observe a maneira como o contrato requer determinadas coisas da implementação do contrato de serviço e a configuração de tempo de execução para adicionar o comportamento. O conjunto de requisitos que devem ser atendidos para expor um serviço para uso se baseia no conjunto de requisitos anterior. Se um contrato fizer requisitos da implementação, uma implementação poderá exigir ainda mais a configuração e as associações que permitem a execução do serviço. Por fim, o aplicativo host também deve oferecer suporte a todos os requisitos que a configuração de serviço e as associações adicionam.  

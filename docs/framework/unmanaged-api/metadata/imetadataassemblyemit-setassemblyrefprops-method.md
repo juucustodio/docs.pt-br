@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataAssemblyEmit:: SetAssemblyRefProps'
 title: Método IMetaDataAssemblyEmit::SetAssemblyRefProps
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 70a32bf3-9051-4f96-ae87-11356d06a073
 topic_type:
 - apiref
-ms.openlocfilehash: fb381a872cbeb787da0c6920f2cdeef434fb33ea
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 704fff656b705bb246e2742ce991d41fcadcdfcd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008086"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678153"
 ---
 # <a name="imetadataassemblyemitsetassemblyrefprops-method"></a>Método IMetaDataAssemblyEmit::SetAssemblyRefProps
+
 Modifica a estrutura de `AssemblyRef` metadados especificada.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -41,6 +43,7 @@ HRESULT SetAssemblyRefProps (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ar`  
  no O token de metadados que especifica a `AssemblyRef` estrutura de metadados a ser modificada.  
   
@@ -66,17 +69,19 @@ HRESULT SetAssemblyRefProps (
  no Uma combinação de bits de valores [AssemblyRefFlags](assemblyrefflags-enumeration.md) que especifica atributos do assembly referenciado.  
   
 ## <a name="remarks"></a>Comentários  
+
  Para criar uma `AssemblyRef` estrutura de metadados, use o método [IMetaDataAssemblyEmit::D efineassemblyref](imetadataassemblyemit-defineassemblyref-method.md) .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataAssemblyEmit](imetadataassemblyemit-interface.md)

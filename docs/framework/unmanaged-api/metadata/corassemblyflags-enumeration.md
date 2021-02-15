@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorAssemblyFlags'
 title: Enumeração CorAssemblyFlags
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: bb8db3b6-d81d-49fc-b74c-dbc908a9eab9
 topic_type:
 - apiref
-ms.openlocfilehash: b1a83f07f03ddb17d5c306453cf838101a77ed65
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: bd74534b1f607eea15f1d8615f66723428ddae3f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84007930"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678478"
 ---
 # <a name="corassemblyflags-enumeration"></a>Enumeração CorAssemblyFlags
+
 Contém valores que descrevem os metadados aplicados a uma compilação de assembly.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -55,7 +57,7 @@ typedef enum CorAssemblyFlags {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`afPublicKey`|Indica que a referência de assembly contém a chave pública completa sem hash.|  
 |`afPA_None`|Indica que a arquitetura do processador não está especificada.|  
@@ -77,12 +79,13 @@ typedef enum CorAssemblyFlags {
 |`afContentType_WindowsRuntime`|Indica o tipo de conteúdo de Windows Runtime.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorHdr. h  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumerações de metadados](metadata-enumerations.md)

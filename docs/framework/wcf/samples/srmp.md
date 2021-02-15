@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: SRMP'
 title: SRMP
 ms.date: 03/30/2017
 ms.assetid: cf37078c-dcb4-45e0-acaf-2f196521b226
-ms.openlocfilehash: f3b0e57f05ccb77eef25c97e7d5d028183e7b13e
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: e91bdd7fb4bb896942f1a08d348080ca9bcb8f83
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600926"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668884"
 ---
 # <a name="srmp"></a>SRMP
+
 Este exemplo demonstra como executar a comunicação em fila transacionada usando o MSMQ (enfileiramento de mensagens) via HTTP.  
   
  Na comunicação em fila, o cliente se comunica com o serviço usando uma fila. Mais precisamente, o cliente envia mensagens para uma fila. O serviço recebe mensagens da fila. O serviço e o cliente, portanto, não precisam estar em execução ao mesmo tempo para se comunicarem usando uma fila.  
@@ -35,12 +37,15 @@ Este exemplo demonstra como executar a comunicação em fila transacionada usand
 8. Execute o cliente. Certifique-se de alterar o endereço do ponto de extremidade para apontar para o nome do computador ou endereço IP em vez de localhost. O cliente envia uma mensagem e sai.  
   
 ## <a name="requirements"></a>Requisitos  
+
  Para executar este exemplo, o IIS deve ser instalado no serviço e nos computadores cliente, além do MSMQ.  
   
 ## <a name="demonstrates"></a>Demonstra  
+
  O exemplo demonstra o envio de mensagens em fila do WCF usando o MSMQ sobre HTTP. Isso também é chamado de sistema de mensagens SRMP. Quando uma mensagem em fila é enviada, o MSMQ no computador de envio transfere as mensagens para o Gerenciador de filas de recebimento por transporte TCP ou HTTP. Escolhendo SRMP, o usuário indica a opção de HTTP como um transporte para transferência de fila. SRMP Secure permite o uso de HTTPS.  
   
 ## <a name="example"></a>Exemplo  
+
  O código de exemplo é baseado no exemplo transacionado. Como você envia uma mensagem para a fila e recebe uma mensagem da fila usando SRMP é o mesmo que enviar e receber mensagens usando um protocolo nativo.  
   
  A configuração do cliente é alterada para indicar a escolha do protocolo de transferência de fila. O protocolo de transferência de fila pode ser nativo, SRMP ou SrmpSecure. Por padrão, o protocolo de transferência é nativo. O cliente e o serviço especificam na configuração para usar SRMP neste exemplo.  

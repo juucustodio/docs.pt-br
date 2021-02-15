@@ -1,28 +1,32 @@
 ---
+description: 'Saiba mais sobre: 110-CustomTrackingRecordWarning'
 title: 110 - CustomTrackingRecordWarning
 ms.date: 03/30/2017
 ms.assetid: 3bc093de-be47-4ed0-983f-05b4246446fc
-ms.openlocfilehash: 230e889c677ee83b2e71b128413b7107ec11dc2e
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: d127b0fbf8fa4f2d7285068486a900452685346d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61924131"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667597"
 ---
 # <a name="110---customtrackingrecordwarning"></a>110 - CustomTrackingRecordWarning
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
-|Id|110|  
+|ID|110|  
 |Palavras-chave|UserEvents, EndToEndMonitoring, solução de problemas, HealthMonitoring, WFTracking|  
-|Nível|Aviso|  
+|Level|Aviso|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  
+
  Este evento é emitido pelo participante de rastreamento de ETW quando uma atividade em uma instância de fluxo de trabalho se emite CustomTrackingRecord com aviso nivelado  
   
 ## <a name="message"></a>Mensagem  
+
  TrackRecord = CustomTrackingRecord, InstanceID = %1, RecordNumber=%2, EventTime=%3, Name=%4, ActivityName=%5, ActivityId=%6, ActivityInstanceId=%7, ActivityTypeName=%8, Data=%9, Annotations=%10, ProfileName = %11  
   
 ## <a name="details"></a>Detalhes  
@@ -37,8 +41,8 @@ ms.locfileid: "61924131"
 |ActivityId|xs:string|A identificação da atividade que se emitiu o CustomTrackingRecord|  
 |ActivityInstanceId|xs:string|A identificação de instância de atividade que se emitiu o CustomTrackingRecord|  
 |ActivityTypeName|xs:string|O nome da atividade que se emitiu o CustomTrackingRecord|  
-|Dados|xs:string|Os dados que foram rastreadas com esse evento.  Os valores são armazenados em um elemento xml no formato \<itens >\< nome do item = "tipo" System "> dataValue\</item > \< /itens >.  Se nenhum dado foi controlado, que contém a cadeia de caracteres \<itens / >. O tamanho do evento de ETW é limitado pelo tamanho do buffer de ETW ou pela carga máxima útil para um evento de ETW. Se o tamanho do evento excede os limites de ETW, então o evento será truncado soltando as anotações e substituindo o valor de dados com \<itens >...  \< /itens >.  Os seguintes tipos são armazenados como seu valor como retornados por ToString(); cadeia de caracteres, char, bool, int, short, long, uint, ushort, ulong, System.Single, flutuante, double, System.Guid, System.DateTimeOffset, System.DateTime.  Todos os outros tipos são serializados usando System.Runtime.Serialization.NetDataContractSerializer.|  
-|Anotações|xs:string|As anotações que foram adicionadas a este evento.  Os valores são armazenados em um elemento xml no formato \<itens >\< nome do item = "tipo" System "> annotationValue\</item > \< /itens >.  Se nenhuma anotação é especificada, a cadeia de caracteres contém \<itens / >. O tamanho do evento de ETW é limitado pelo tamanho do buffer de ETW ou pela carga máxima útil para um evento de ETW. Se o tamanho do evento excede os limites de ETW, então o evento será truncado soltando as anotações e substituindo o valor de anotação com \<itens >...  \< /itens >.|  
+|Dados|xs:string|Os dados que foram rastreadas com esse evento.  Os valores são armazenados em um elemento XML no formato \<items> \< item  name = "dataName" type="System.String"> DataValue \</item> \</items> .  Se nenhum dado foi acompanhado, a cadeia de caracteres contém \<items/> . O tamanho do evento de ETW é limitado pelo tamanho do buffer de ETW ou pela carga máxima útil para um evento de ETW. Se o tamanho do evento exceder os limites de ETW, o evento será truncado descartando as anotações e substituindo o valor dos dados por \<items> ... \</items> .  Os tipos a seguir são armazenados como seu valor, conforme retornado por ToString (); String, Char, bool, int, short, Long, uint, ushort, ulong, System. single, float, Double, System. GUID, System. DateTimeOffset, System. DateTime.  Todos os outros tipos são serializados usando System.Runtime.Serialization.NetDataContractSerializer.|  
+|Anotações|xs:string|As anotações que foram adicionadas a este evento.  Os valores são armazenados em um elemento XML no formato \<items> \< item  name = "annotationName" type="System.String"> annotationvalue \</item> \</items> .  Se nenhuma anotação for especificada, a cadeia de caracteres conterá \<items/> . O tamanho do evento de ETW é limitado pelo tamanho do buffer de ETW ou pela carga máxima útil para um evento de ETW. Se o tamanho do evento exceder os limites de ETW, o evento será truncado descartando as anotações e substituindo o valor da anotação por \<items> ... \</items> .|  
 |ProfileName|xs:string|O nome ou o perfil de rastreamento que levam a este evento que está sendo emitido|  
-|HostReference|xs:string|Hospedados para serviços da Web, este campo identifica unicamente o serviço na hierarquia da Web.  É formato é definido como ' caminho Virtual do aplicativo de nome de Site&#124;caminho Virtual de serviço&#124;ServiceName' exemplo: ' Default Web Site/CalculatorApplication&#124;/CalculatorService.svc&#124;CalculatorService'|  
+|HostReference|xs:string|Hospedados para serviços da Web, este campo identifica unicamente o serviço na hierarquia da Web.  O formato é definido como ' nome do site aplicativo caminho virtual do serviço&#124;caminho virtual Service&#124;nome do provedor ' exemplo: ' Default Web site/CalculatorApplication&#124;/CalculatorService.svc&#124;CalculatorService '|  
 |AppDomain|xs:string|A cadeia de caracteres retornada por AppDomain.CurrentDomain.FriendlyName.|

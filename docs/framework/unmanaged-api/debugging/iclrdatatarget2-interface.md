@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICLRDataTarget2'
 title: Interface ICLRDataTarget2
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 94249397-861b-4294-a538-cf01466a66d3
 topic_type:
 - apiref
-ms.openlocfilehash: 6b2700b2f12e312f06640a06e5ec82fbc58f2ca9
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: 9ba6d11ea043d3b6ba85544b47e063f585854af8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860467"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794839"
 ---
 # <a name="iclrdatatarget2-interface"></a>Interface ICLRDataTarget2
+
 Uma subclasse de [ICLRDataTarget](iclrdatatarget-interface.md) que é usada pela camada de serviços de acesso a dados para manipular regiões de memória virtual no processo de destino.  
   
 ## <a name="methods"></a>Métodos  
@@ -32,9 +34,11 @@ Uma subclasse de [ICLRDataTarget](iclrdatatarget-interface.md) que é usada pela
 |[Método FreeVirtual](iclrdatatarget2-freevirtual-method.md)|Libera a memória que foi alocada anteriormente no espaço de endereço do processo de destino.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O cliente da API (ou seja, o depurador) deve implementar a interface conforme o apropriado para o processo de destino específico. Por exemplo, um processo dinâmico teria uma implementação diferente da implementação de um despejo de memória. O destino pode não oferecer suporte à modificação de suas regiões de memória.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** ClrData. idl, ClrData. h  
@@ -43,7 +47,7 @@ Uma subclasse de [ICLRDataTarget](iclrdatatarget-interface.md) que é usada pela
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRDataTarget](iclrdatatarget-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

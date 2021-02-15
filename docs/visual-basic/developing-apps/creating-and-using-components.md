@@ -1,21 +1,22 @@
 ---
+description: 'Saiba mais sobre: Criando e usando componentes no Visual Basic'
 title: Como criar e usar componentes
 ms.date: 07/20/2015
 helpviewer_keywords:
 - components [Visual Basic]
 ms.assetid: ee6a4156-73f7-4e9b-8e01-c74c4798b65c
-ms.openlocfilehash: 2fefdff9dc27915066e3d92efd8439adffed9fc5
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: f59b4774556d95dcbc1befb16409d68a51c50535
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74330293"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666583"
 ---
 # <a name="creating-and-using-components-in-visual-basic"></a>Criando e usando componentes no Visual Basic
 
-Um *componente* é uma classe que implementa a interface <xref:System.ComponentModel.IComponent?displayProperty=nameWithType> ou que deriva direta ou indiretamente de uma classe que implementa <xref:System.ComponentModel.IComponent>. Um componente .NET Framework é um objeto que é reutilizável, pode interagir com outros objetos e fornece controle sobre os recursos externos e o suporte a tempo de design.  
+Um *componente* é uma classe que implementa a interface <xref:System.ComponentModel.IComponent?displayProperty=nameWithType> ou que deriva direta ou indiretamente de uma classe que implementa <xref:System.ComponentModel.IComponent>. Um componente do .NET é um objeto que é reutilizável, pode interagir com outros objetos e fornece controle sobre os recursos externos e o suporte a tempo de design.  
   
- Um recurso importante dos componentes é que eles são projetáveis, o que significa que uma classe que é um componente pode ser usada no ambiente de desenvolvimento integrado do Visual Studio. Um componente pode ser adicionado à Caixa de Ferramentas, arrastado e solto em um formulário e manipulado em uma superfície de design. Observe que o suporte a tempo de design base para componentes é incorporado ao .NET Framework; um desenvolvedor de componentes não precisa fazer nenhum trabalho adicional para aproveitar a funcionalidade de tempo de design base.  
+ Um recurso importante dos componentes é que eles são projetáveis, o que significa que uma classe que é um componente pode ser usada no ambiente de desenvolvimento integrado do Visual Studio. Um componente pode ser adicionado à Caixa de Ferramentas, arrastado e solto em um formulário e manipulado em uma superfície de design. O suporte de tempo de design base para componentes é incorporado ao .NET. Um desenvolvedor de componentes não precisa fazer nenhum trabalho adicional para aproveitar a funcionalidade de tempo de design base.  
   
  Um *controle* é semelhante a um componente, pois ambos são projetáveis. No entanto, um controle fornece uma interface do usuário, enquanto que um componente não. Um controle deve derivar de uma das classes de controle base: <xref:System.Windows.Forms.Control> ou <xref:System.Web.UI.Control>.  
   
@@ -63,9 +64,9 @@ Um *componente* é uma classe que implementa a interface <xref:System.ComponentM
   
 ## <a name="related-sections"></a>Seções relacionadas  
 
- [Solução de problemas de criação de controle e de componente](../../framework/winforms/controls/troubleshooting-control-and-component-authoring.md)  
+ [Solução de problemas de criação de controle e de componente](/dotnet/desktop/winforms/controls/troubleshooting-control-and-component-authoring)  
  Explica como corrigir problemas comuns.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
-- [Como acessar o suporte a tempo de design no Windows Forms](../../framework/winforms/controls/developing-windows-forms-controls-at-design-time.md)
+- [Como acessar o suporte a tempo de design no Windows Forms](/dotnet/desktop/winforms/controls/developing-windows-forms-controls-at-design-time)

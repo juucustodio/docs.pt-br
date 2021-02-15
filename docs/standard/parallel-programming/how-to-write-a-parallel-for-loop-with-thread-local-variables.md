@@ -2,24 +2,25 @@
 title: 'Como: Gravar um loop Parallel.For com variáveis locais de thread'
 description: Veja um exemplo de como escrever um loop. for paralelo no .NET que usa variáveis de thread local, que armazenam e recuperam o estado em cada tarefa separada no loop.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - parallel for loops, how to use local state
 ms.assetid: 68384064-7ee7-41e2-90e3-71f00bde01bb
-ms.openlocfilehash: 9cff507757aab2e5676df2fabb02a237a2172c17
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: f3adcfa98f4004f283b24bcd31dc243c18c2644c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599783"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729363"
 ---
 # <a name="how-to-write-a-parallelfor-loop-with-thread-local-variables"></a>Como: Gravar um loop Parallel.For com variáveis locais de thread
+
 Este exemplo mostra como usar variáveis de thread local para armazenar e recuperar o estado em cada tarefa separada criada por um loop <xref:System.Threading.Tasks.Parallel.For%2A>. Usando dados de thread local, você pode evitar a sobrecarga de sincronizar um grande número de acessos com estado compartilhado. Em vez de gravar em um recurso compartilhado em cada iteração, você computa e armazena o valor até todas as iterações da tarefas serem concluídas. Em seguida, é possível gravar o resultado final uma vez no recurso compartilhado ou passá-lo para outro método.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir chama o método <xref:System.Threading.Tasks.Parallel.For%60%601%28System.Int32%2CSystem.Int32%2CSystem.Func%7B%60%600%7D%2CSystem.Func%7BSystem.Int32%2CSystem.Threading.Tasks.ParallelLoopState%2C%60%600%2C%60%600%7D%2CSystem.Action%7B%60%600%7D%29> para calcular a soma dos valores em uma matriz com um milhão de elementos. O valor de cada elemento é igual a seu índice.  
   
  [!code-csharp[TPL_Parallel#05](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_parallel/cs/forandforeach_simple.cs#05)]
@@ -43,7 +44,7 @@ Function() new MyClass()
   
  Para obter mais informações sobre como usar expressões lambda, confira [Expressões lambda no PLINQ e TPL](lambda-expressions-in-plinq-and-tpl.md).  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Paralelismo de dados](data-parallelism-task-parallel-library.md)
 - [Programação paralela](index.md)

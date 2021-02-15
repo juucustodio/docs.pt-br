@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ImportFileEx2'
 title: Método ImportFileEx2
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 02c789fd-16fc-48c6-9619-56e87e2a37ca
 topic_type:
 - apiref
-ms.openlocfilehash: 7e270dbfc63c03e77cb4b0694296e48c2035b8a6
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 0968318ab7e416e56b71f2f30f2745d538d0ff8a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74445694"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99717999"
 ---
 # <a name="importfileex2-method"></a>Método ImportFileEx2
+
 Importa assemblies e módulos desvinculados. Esse método é como o [Método ImportFile](importfile-method.md), mas funciona mesmo que o arquivo que está sendo importado não exista no disco.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -40,6 +42,7 @@ HRESULT ImportFileEx2(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pszFilename`  
  Nome do arquivo a ser importado.  
   
@@ -65,9 +68,11 @@ HRESULT ImportFileEx2(
  Recebe o número de arquivos e/ou escopos importados.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  Retorna S_OK se o método tiver sucesso.  
   
-## <a name="requirements"></a>{1&gt;{2&gt;Requisitos&lt;2}&lt;1}  
+## <a name="requirements"></a>Requisitos  
+
  Requer ALink. h.  
   
 ## <a name="see-also"></a>Consulte também

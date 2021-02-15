@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugVariableHome:: getlocationtype'
 title: 'Método ICorDebugVariableHome:: getlocationtype'
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 88027c55-8ec6-4f1e-a55b-7eefdbbc3515
 topic_type:
 - apiref
-ms.openlocfilehash: 8874deede8b46b93df0e298fb3970fa153b51415
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: 6efe9c045641d162be820961ca75c21a2b8fc14b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396566"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728789"
 ---
 # <a name="icordebugvariablehomegetlocationtype-method"></a>Método ICorDebugVariableHome:: getlocationtype
+
 Obtém o tipo do local nativo da variável.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,10 +36,12 @@ HRESULT GetLocationType(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pLocationType`  
  fora Um ponteiro para o tipo do local nativo da variável.  Consulte a enumeração [VariableLocationType](variablelocationtype-enumeration.md) para obter mais informações.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -46,7 +50,7 @@ HRESULT GetLocationType(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugVariableHome](icordebugvariablehome-interface.md)
 - [Enumeração VariableLocationType](variablelocationtype-enumeration.md)

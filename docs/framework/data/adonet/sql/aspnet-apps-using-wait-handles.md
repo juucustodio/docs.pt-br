@@ -1,28 +1,31 @@
 ---
+description: 'Saiba mais sobre: ASP.NET aplicativos usando identificadores de espera'
 title: Aplicativos ASP.NET que usam identificadores de espera
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: f588597a-49de-4206-8463-4ef377e112ff
-ms.openlocfilehash: d354dda05e8353a33c3a64440e5c2bad390743b4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 5f1f9475a041aa3cc2b3f31a8a77ce54b4e0e1e8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79148849"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718636"
 ---
 # <a name="aspnet-applications-using-wait-handles"></a>Aplicativos ASP.NET que usam identificadores de espera
+
 Os modelos de retorno de chamada e sondagem para lidar com operações assíncronas são úteis quando seu aplicativo está processando apenas uma operação assíncrona de cada vez. Os modelos Wait fornecem uma maneira mais flexível de processar várias operações assíncronas. Há dois modelos Wait, nomeados segundo os métodos <xref:System.Threading.WaitHandle> usados para implementá-los: o modelo Wait (Any) e o modelo Wait (All).  
   
  Para usar um modelo Wait, você precisa usar a propriedade <xref:System.IAsyncResult.AsyncWaitHandle%2A> do objeto <xref:System.IAsyncResult> retornado pelos métodos <xref:System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery%2A>, <xref:System.Data.SqlClient.SqlCommand.BeginExecuteReader%2A> ou <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A>. Os métodos <xref:System.Threading.WaitHandle.WaitAny%2A> e <xref:System.Threading.WaitHandle.WaitAll%2A> exigem que você envie os objetos <xref:System.Threading.WaitHandle> como um argumento, agrupados juntos em uma matriz.  
   
- Ambos os métodos Wait monitoram as operações assíncronas, aguardando a conclusão. O <xref:System.Threading.WaitHandle.WaitAny%2A> método aguarda que qualquer uma das operações seja concluída ou com intervalo de tempo. Uma vez que você sabe que uma determinada operação está completa, você pode processar seus resultados e, em seguida, continuar esperando a próxima operação para ser concluída ou tempo para fora. O <xref:System.Threading.WaitHandle.WaitAll%2A> método aguarda que todos os processos <xref:System.Threading.WaitHandle> na matriz de instâncias sejam concluídos ou com intervalo antes de continuar.  
+ Ambos os métodos Wait monitoram as operações assíncronas, aguardando a conclusão. O <xref:System.Threading.WaitHandle.WaitAny%2A> método aguarda a conclusão de qualquer uma das operações ou o tempo limite. Quando você souber que uma operação específica foi concluída, poderá processar seus resultados e continuar aguardando a conclusão da próxima operação ou o tempo limite. O <xref:System.Threading.WaitHandle.WaitAll%2A> método aguarda todos os processos na matriz de <xref:System.Threading.WaitHandle> instâncias serem concluídos ou atingir o tempo limite antes de continuar.  
   
  O benefício dos modelos Wait é mais perceptível quando você precisa executar várias operações com duração considerável em servidores diferentes ou então quando o seu servidor é suficientemente poderoso para processar todas as consultas simultaneamente. Nos exemplos apresentados aqui, três consultas emulam processos longos adicionando comando WAITFOR de durações variáveis a consultas SELECT sem relevância.  
   
-## <a name="example-wait-any-model"></a>Exemplo: Aguarde (qualquer) modelo  
- O exemplo a seguir ilustra o modelo Wait (Any). Depois que três processos assíncronos são iniciados, o método <xref:System.Threading.WaitHandle.WaitAny%2A> é chamado para aguardar a conclusão de qualquer um deles. À medida que cada processo é concluído, o método <xref:System.Data.SqlClient.SqlCommand.EndExecuteReader%2A> é chamado e o objeto <xref:System.Data.SqlClient.SqlDataReader> resultante é lido. Nesse ponto, um aplicativo do mundo real provavelmente usará o <xref:System.Data.SqlClient.SqlDataReader> para popular uma parte da página. Neste exemplo simples, a hora em que o processo foi concluído é adicionada a uma caixa de texto correspondente ao processo. Juntos, os tempos nas caixas de texto ilustram o ponto: O código é executado cada vez que um processo é concluído.  
+## <a name="example-wait-any-model"></a>Exemplo: modelo de espera (qualquer)  
+
+ O exemplo a seguir ilustra o modelo Wait (Any). Depois que três processos assíncronos são iniciados, o método <xref:System.Threading.WaitHandle.WaitAny%2A> é chamado para aguardar a conclusão de qualquer um deles. À medida que cada processo é concluído, o método <xref:System.Data.SqlClient.SqlCommand.EndExecuteReader%2A> é chamado e o objeto <xref:System.Data.SqlClient.SqlDataReader> resultante é lido. Nesse ponto, um aplicativo do mundo real provavelmente usará o <xref:System.Data.SqlClient.SqlDataReader> para popular uma parte da página. Neste exemplo simples, a hora em que o processo foi concluído é adicionada a uma caixa de texto correspondente ao processo. Em conjunto, os horários nas caixas de texto ilustram o ponto: o código é executado cada vez que um processo é concluído.  
   
  Para configurar este exemplo, crie um projeto de site do ASP.NET. Coloque um controle <xref:System.Web.UI.WebControls.Button> e quatro controles <xref:System.Web.UI.WebControls.TextBox> na página (aceitando o nome padrão de cada controle).  
   
@@ -312,10 +315,11 @@ void Button1_Click(object sender, System.EventArgs e)
 }  
 ```  
   
-## <a name="example-wait-all-model"></a>Exemplo: Aguarde (todos) modelo  
+## <a name="example-wait-all-model"></a>Exemplo: modelo de espera (todos)  
+
  O exemplo a seguir ilustra o modelo Wait (All). Depois que três processos assíncronos são iniciados, o método <xref:System.Threading.WaitHandle.WaitAll%2A> é chamado para aguardar a conclusão dos processos ou que eles atinjam o próprio tempo limite.  
   
- Assim como ocorre no exemplo do modelo Wait (Any), a hora em que o processo foi concluído é adicionada a uma caixa de texto correspondente ao processo. Novamente, os tempos nas caixas de texto <xref:System.Threading.WaitHandle.WaitAny%2A> ilustram o ponto: O código que segue o método é executado somente depois de todos os processos estarem concluídos.  
+ Assim como ocorre no exemplo do modelo Wait (Any), a hora em que o processo foi concluído é adicionada a uma caixa de texto correspondente ao processo. Novamente, os horários nas caixas de texto ilustram o ponto: o código após o <xref:System.Threading.WaitHandle.WaitAny%2A> método é executado somente após a conclusão de todos os processos.  
   
  Para configurar este exemplo, crie um projeto de site do ASP.NET. Coloque um controle <xref:System.Web.UI.WebControls.Button> e quatro controles <xref:System.Web.UI.WebControls.TextBox> na página (aceitando o nome padrão de cada controle).  
   
@@ -579,7 +583,7 @@ void Button1_Click(object sender, System.EventArgs e)
 }  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operações assíncronas](asynchronous-operations.md)
 - [Visão geral do ADO.NET](../ado-net-overview.md)

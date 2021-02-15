@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerCallback:: UnmanagedToManagedTransition'
 title: Método ICorProfilerCallback::UnmanagedToManagedTransition
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: ade2cc01-9b81-4e09-a5f9-b3b9dda27e96
 topic_type:
 - apiref
-ms.openlocfilehash: 8734fa9c9418b818cbe14ebe87ce2af6fa59c078
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 2b2bd86798df8b8c46506c924ee201c191e6cb82
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84499838"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99657116"
 ---
 # <a name="icorprofilercallbackunmanagedtomanagedtransition-method"></a>Método ICorProfilerCallback::UnmanagedToManagedTransition
+
 Notifica o criador de perfil de que uma transição de código não gerenciado para código gerenciado ocorreu.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,6 +36,7 @@ HRESULT UnmanagedToManagedTransition(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `functionId`  
  no A ID da função que está sendo chamada.  
   
@@ -41,11 +44,13 @@ HRESULT UnmanagedToManagedTransition(
  no Um valor da enumeração [COR_PRF_TRANSITION_REASON](cor-prf-transition-reason-enumeration.md) que indica se a transição ocorreu devido a uma chamada em código gerenciado a partir de código não gerenciado ou por causa de um retorno de uma função não gerenciada chamada por um gerenciado.  
   
 ## <a name="remarks"></a>Comentários  
+
  Se o valor de `reason` for COR_PRF_TRANSITION_RETURN e `functionId` não for NULL, a ID da função será a da função não gerenciada e nunca terá sido compilada usando o compilador JIT (just-in-time). As funções não gerenciadas têm algumas informações básicas associadas a elas, como um nome e alguns metadados.  
   
  Se o valor de `reason` for COR_PRF_TRANSITION_CALL, talvez seja possível que a função chamada (ou seja, a função gerenciada) ainda não tenha sido compilada em JIT.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -54,7 +59,7 @@ HRESULT UnmanagedToManagedTransition(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Método ManagedToUnmanagedTransition](icorprofilercallback-managedtounmanagedtransition-method.md)

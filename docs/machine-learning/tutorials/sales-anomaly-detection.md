@@ -4,12 +4,12 @@ description: Saiba como criar um aplicativo de detecção de anomalias para dado
 ms.date: 06/30/2020
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
-ms.openlocfilehash: cf61f197e4befebdbb1fbf2ca4cbcdc61c48780a
-ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
+ms.openlocfilehash: 48a8b26409b20e2a01aa97425153336b34c9b5b7
+ms.sourcegitcommit: e301979e3049ce412d19b094c60ed95b316a8f8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86281661"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97594170"
 ---
 # <a name="tutorial-detect-anomalies-in-product-sales-with-mlnet"></a>Tutorial: detectar anomalias em vendas de produtos com o ML.NET
 
@@ -384,6 +384,6 @@ Neste tutorial, você aprendeu a:
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Confira o repositório do GitHub de exemplos de Machine Learning para explorar um exemplo de Detecção de Anomalias de Consumo de Energia.
+Confira o repositório GitHub de exemplos de Machine Learning para explorar um exemplo de detecção de anomalias de dados sazonalidade.
 > [!div class="nextstepaction"]
-> [dotnet/machinelearning-samples GitHub repository](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/AnomalyDetection_PowerMeterReadings)
+> [dotnet/machinelearning-samples GitHub repository](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/AnomalyDetection_PhoneCalls)

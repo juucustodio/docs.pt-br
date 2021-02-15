@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <gcServer> elemento'
 title: Elemento gcServer
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - gcServer element
 - <gcServer> element
 ms.assetid: 8d25b80e-2581-4803-bd87-a59528e3cb03
-ms.openlocfilehash: 8eab5e36bab90510aff4f1a3e15328197ac59ed7
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: bed347699786682421292392a8d2449b7aac61d0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73968941"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754531"
 ---
 # <a name="gcserver-element"></a>Elemento \<gcServer>
 
@@ -23,7 +24,7 @@ Especifica se o Common Language Runtime executa a coleta de lixo do servidor.
 &nbsp;&nbsp;[\<runtime>](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;\<gcServer>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <gcServer
@@ -89,9 +90,9 @@ O exemplo a seguir habilita a coleta de lixo do servidor:
 </configuration>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=nameWithType>
 - [Esquema de configurações do runtime](index.md)
-- [Esquema de arquivos de configuração](../index.md)
+- [Esquema do arquivo de configuração](../index.md)
 - [Para desabilitar a coleta de lixo simultânea](gcconcurrent-element.md#to-disable-background-garbage-collection)

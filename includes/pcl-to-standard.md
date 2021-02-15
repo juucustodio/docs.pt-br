@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: cd5bcc6bd96834d4803e00bd84eff4441abfe9f8
-ms.sourcegitcommit: 8699383914c24a0df033393f55db3369db728a7b
+ms.openlocfilehash: eb0a5c8ac733f0db4e8356dca80f898bc7a72cfb
+ms.sourcegitcommit: 870bc4b4087510f6fba3c7b1c0d391f02bcc1f3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65641445"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92471950"
 ---
 > [!IMPORTANT]
-> Porque os projetos de biblioteca de classes portátil destinam-se apenas um subconjunto muito específico de implementações do .NET, nós não recomendamos seu uso em desenvolvimento de novos aplicativos. A substituição recomendada é uma biblioteca .NET Standard, que se destina a todas as implementações do .NET que dão suporte a uma versão específica do .NET Standard. Para obter mais informações, confira [.NET Standard](~/docs/standard/net-standard.md).
+> Não é altamente recomendável o uso de bibliotecas de classes portáteis no novo desenvolvimento de aplicativos, pois eles visam apenas um subconjunto muito específico de implementações do .NET. Se você estiver criando uma biblioteca reutilizável para compartilhar código entre .NET Framework e outras implementações do .NET, a substituição recomendada será uma biblioteca .NET Standard 2,0. Caso contrário, use o .NET 5 ou posterior. Para obter mais informações, confira [.NET Standard](~/docs/standard/net-standard.md).

@@ -2,12 +2,12 @@
 title: 'Tutorial: criar um provedor de tipos'
 description: 'Saiba como criar seus próprios provedores de tipo F # no F # 3,0 examinando vários provedores de tipo simples para ilustrar os conceitos básicos.'
 ms.date: 11/04/2019
-ms.openlocfilehash: 71225614ed983a76d35c214faa87bbad0fbb7d24
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: 803b6ea141ed4404daf5daccd1a53212d8b42234
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88810866"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468298"
 ---
 # <a name="tutorial-create-a-type-provider"></a>Tutorial: criar um provedor de tipos
 
@@ -15,7 +15,7 @@ O mecanismo do provedor de tipos no F # é uma parte significativa de seu suport
 
 O ecossistema F # contém um intervalo de provedores de tipos para serviços de dados empresariais e da Internet usados com frequência. Por exemplo:
 
-- O [FSharp. Data](https://fsharp.github.io/FSharp.Data/) inclui provedores de tipos para formatos de documento JSON, XML, CSV e HTML.
+- O FSharp. Data inclui provedores de tipos para formatos de documento JSON, XML, CSV e HTML.
 
 - O [Sqlfornecetor](https://fsprojects.github.io/SQLProvider/) fornece acesso fortemente tipado a bancos de dados SQL por meio de um mapeamento de objeto e consultas F # LINQ em relação a essas fontes.
 
@@ -243,7 +243,7 @@ Você deve observar os seguintes pontos:
 Em seguida, adicione a documentação XML ao tipo. Esta documentação está atrasada, ou seja, calculada sob demanda se o compilador do host precisar dela.
 
 ```fsharp
-t.AddXmlDocDelayed (fun () -> sprintf "This provided type %s" ("Type" + string n))
+t.AddXmlDocDelayed (fun () -> $"""This provided type {"Type" + string n}""")
 ```
 
 Em seguida, você adiciona uma propriedade estática fornecida ao tipo:
@@ -352,9 +352,9 @@ t.AddMembersDelayed(fun () ->
                   getterCode= (fun args -> <@@ valueOfTheProperty @@>))
 
               p.AddXmlDocDelayed(fun () ->
-                  sprintf "This is StaticProperty%d on NestedType" i)
+                  $"This is StaticProperty{i} on NestedType")
 
-              p
+              p
       ]
 
     staticPropsInNestedType)
@@ -461,7 +461,7 @@ let result = reg.IsMatch("425-123-2345")
 let r = reg.Match("425-123-2345").Groups.["AreaCode"].Value //r equals "425"
 ```
 
-Observe o seguinte:
+Observe os seguintes pontos:
 
 - O tipo Regex padrão representa o tipo parametrizado `RegexTyped` .
 
@@ -527,7 +527,7 @@ type public CheckedRegexProvider() as this =
 do ()
 ```
 
-Observe o seguinte:
+Observe os seguintes pontos:
 
 - O provedor de tipos usa dois parâmetros estáticos: o `pattern` , que é obrigatório e o `options` , que são opcionais (porque um valor padrão é fornecido).
 
@@ -581,7 +581,7 @@ for group in r.GetGroupNames() do
         propertyName = group,
         propertyType = typeof<Group>,
         getterCode = fun args -> <@@ ((%%args.[0]:obj) :?> Match).Groups.[group] @@>)
-        prop.AddXmlDoc(sprintf @"Gets the ""%s"" group from this match" group)
+        prop.AddXmlDoc($"""Gets the ""{group}"" group from this match""")
     matchTy.AddMember prop
 ```
 
@@ -764,7 +764,7 @@ Novamente, a primeira etapa é considerar a aparência da API. Dado um `info.csv
 let info = new MiniCsv<"info.csv">()
 for row in info.Data do
 let time = row.Time
-printfn "%f" (float time)
+printfn $"{float time}"
 ```
 
 Nesse caso, o compilador deve converter essas chamadas em algo semelhante ao exemplo a seguir:
@@ -773,7 +773,7 @@ Nesse caso, o compilador deve converter essas chamadas em algo semelhante ao exe
 let info = new CsvFile("info.csv")
 for row in info.Data do
 let (time:float) = row.[1]
-printfn "%f" (float time)
+printfn $"%f{float time}"
 ```
 
 A tradução ideal exigirá que o provedor de tipos defina um `CsvFile` tipo real no assembly do provedor de tipos. Provedores de tipo geralmente dependem de alguns tipos auxiliares e métodos para encapsular lógica importante. Como as medidas são apagadas no tempo de execução, você pode usar um `float[]` como o tipo apagado para uma linha. O compilador tratará colunas diferentes como tendo tipos de medidas diferentes. Por exemplo, a primeira coluna em nosso exemplo tem tipo `float<meter>` e a segunda tem `float<second>` . No entanto, a representação apagada pode permanecer bem simples.
@@ -1048,7 +1048,7 @@ A API ProvidedTypes fornece auxiliares para fornecer anotações de medida. Por 
   let nullableDecimal_kgpm2 = typedefof<System.Nullable<_>>.MakeGenericType [|dkgpm2 |]
 ```
 
-### <a name="accessing-project-local-or-script-local-resources"></a>Acessando projetos-recursos locais ou de script local
+### <a name="accessing-project-local-or-script-local-resources"></a>Acessando recursos Project-Local ou Script-Local
 
 Cada instância de um provedor de tipos pode receber um `TypeProviderConfig` valor durante a construção. Esse valor contém a "pasta de resolução" para o provedor (ou seja, a pasta do projeto para a compilação ou o diretório que contém um script), a lista de assemblies referenciados e outras informações.
 
@@ -1136,7 +1136,7 @@ devenv /debugexe fsc.exe script.fsx
 
   Você pode usar o log de impressão para stdout.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Provedores de tipos](index.md)
 - [O SDK do provedor de tipos](https://github.com/fsprojects/FSharp.TypeProviders.SDK)

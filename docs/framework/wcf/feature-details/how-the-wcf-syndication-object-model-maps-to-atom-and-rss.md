@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: como o modelo de objeto de distribuição do WCF é mapeado para Atom e RSS'
 title: Como o modelo de objeto de sindicalização do WCF mapeia para Atom e RSS
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 0365eb37-98cc-4b13-80fb-f1e78847a748
-ms.openlocfilehash: 67fbbb035a3a6683cefbf24e299f32579b674bbd
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: d66fb30acde18053e866b8986ebf71a6eed562ec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597248"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742934"
 ---
 # <a name="how-the-wcf-syndication-object-model-maps-to-atom-and-rss"></a>Como o modelo de objeto de sindicalização do WCF mapeia para Atom e RSS
+
 Ao desenvolver um serviço de distribuição do Windows Communication Foundation (WCF), você cria feeds e itens usando as seguintes classes:  
   
 - <xref:System.ServiceModel.Syndication.SyndicationFeed>  
@@ -37,17 +39,18 @@ Ao desenvolver um serviço de distribuição do Windows Communication Foundation
   
  Os exemplos de código neste tópico usam um dos dois métodos definidos aqui para fazer a serialização real.  
   
- `SerializeFeed`Serializa um feed de agregação.  
+ `SerializeFeed` Serializa um feed de agregação.  
   
  [!code-csharp[SyndicationMapping#10](../../../../samples/snippets/csharp/VS_Snippets_CFX/syndicationmapping/cs/snippets.cs#10)]
  [!code-vb[SyndicationMapping#10](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/syndicationmapping/vb/snippets.vb#10)]  
   
- `SerializeItem`Serializa um item de distribuição.  
+ `SerializeItem` Serializa um item de distribuição.  
   
  [!code-csharp[SyndicationMapping#11](../../../../samples/snippets/csharp/VS_Snippets_CFX/syndicationmapping/cs/snippets.cs#11)]
  [!code-vb[SyndicationMapping#11](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/syndicationmapping/vb/snippets.vb#11)]  
   
 ## <a name="syndicationfeed"></a>SyndicationFeed  
+
  O exemplo de código a seguir mostra como serializar a <xref:System.ServiceModel.Syndication.SyndicationFeed> classe para Atom 1,0 e RSS 2,0.  
   
  [!code-csharp[SyndicationMapping#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/syndicationmapping/cs/snippets.cs#0)]
@@ -145,6 +148,7 @@ Ao desenvolver um serviço de distribuição do Windows Communication Foundation
 ```  
   
 ## <a name="syndicationitem"></a>SyndicationItem  
+
  O exemplo de código a seguir mostra como serializar a <xref:System.ServiceModel.Syndication.SyndicationItem> classe para Atom 1,0 e RSS 2,0.  
   
  [!code-csharp[SyndicationMapping#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/syndicationmapping/cs/snippets.cs#1)]
@@ -231,6 +235,7 @@ Ao desenvolver um serviço de distribuição do Windows Communication Foundation
 ```  
   
 ## <a name="syndicationperson"></a>SyndicationPerson  
+
  O exemplo de código a seguir mostra como serializar a <xref:System.ServiceModel.Syndication.SyndicationPerson> classe para Atom 1,0 e RSS 2,0.  
   
  [!code-csharp[SyndicationMapping#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/syndicationmapping/cs/snippets.cs#2)]
@@ -288,6 +293,7 @@ Ao desenvolver um serviço de distribuição do Windows Communication Foundation
 ```  
   
 ## <a name="syndicationlink"></a>SyndicationLink  
+
  O exemplo de código a seguir mostra como serializar a <xref:System.ServiceModel.Syndication.SyndicationLink> classe para Atom 1,0 e RSS 2,0.  
   
  [!code-csharp[SyndicationMapping#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/syndicationmapping/cs/snippets.cs#3)]
@@ -302,6 +308,7 @@ Ao desenvolver um serviço de distribuição do Windows Communication Foundation
  `<a10:link rel="alternate" type="text/html" title="My Link Title" length="2048" href="http://contoso/MyLink" />`  
   
 ## <a name="syndicationcategory"></a>SyndicationCategory  
+
  O exemplo de código a seguir mostra como serializar a <xref:System.ServiceModel.Syndication.SyndicationCategory> classe para Atom 1,0 e RSS 2,0.  
   
  [!code-csharp[SyndicationMapping#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/syndicationmapping/cs/snippets.cs#4)]
@@ -316,6 +323,7 @@ Ao desenvolver um serviço de distribuição do Windows Communication Foundation
  `<category domain="categoryScheme">categoryName</category>`  
   
 ## <a name="textsyndicationcontent"></a>TextSyndicationContent  
+
  O exemplo de código a seguir mostra como serializar a <xref:System.ServiceModel.Syndication.TextSyndicationContent> classe para Atom 1,0 e RSS 2,0 quando <xref:System.ServiceModel.Syndication.TextSyndicationContent> é criado com conteúdo HTML.  
   
  [!code-csharp[SyndicationMapping#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/syndicationmapping/cs/snippets.cs#5)]
@@ -360,6 +368,7 @@ Ao desenvolver um serviço de distribuição do Windows Communication Foundation
  `<description><html> some xhtml </html></description>`  
   
 ## <a name="urlsyndicationcontent"></a>UrlSyndicationContent  
+
  O exemplo de código a seguir mostra como serializar a <xref:System.ServiceModel.Syndication.UrlSyndicationContent> classe para Atom 1,0 e RSS 2,0.  
   
  [!code-csharp[SyndicationMapping#8](../../../../samples/snippets/csharp/VS_Snippets_CFX/syndicationmapping/cs/snippets.cs#8)]
@@ -376,6 +385,7 @@ Ao desenvolver um serviço de distribuição do Windows Communication Foundation
  `<content type="audio" src="http://Contoso/someurl/" xmlns="http://www.w3.org/2005/Atom" />`  
   
 ## <a name="xmlsyndicationcontent"></a>XmlSyndicationContent  
+
  O exemplo de código a seguir mostra como serializar a <xref:System.ServiceModel.Syndication.XmlSyndicationContent> classe para Atom 1,0 e RSS 2,0.  
   
  [!code-csharp[SyndicationMapping#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/syndicationmapping/cs/snippets.cs#9)]
@@ -401,6 +411,6 @@ Ao desenvolver um serviço de distribuição do Windows Communication Foundation
 
 - [Visão geral de sindicalização do WCF](wcf-syndication-overview.md)
 - [Arquitetura de sindicalização](architecture-of-syndication.md)
-- [Como criar um feed RSS básico](how-to-create-a-basic-rss-feed.md)
-- [Como criar um Feed Atom básico](how-to-create-a-basic-atom-feed.md)
-- [Como expor um feed como Atom e RSS](how-to-expose-a-feed-as-both-atom-and-rss.md)
+- [Como: criar um RSS Feed básico](how-to-create-a-basic-rss-feed.md)
+- [Como: criar um feed Atom básico](how-to-create-a-basic-atom-feed.md)
+- [Como: expor um feed como Atom e RSS](how-to-expose-a-feed-as-both-atom-and-rss.md)

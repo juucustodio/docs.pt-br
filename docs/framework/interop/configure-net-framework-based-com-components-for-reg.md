@@ -9,14 +9,15 @@ helpviewer_keywords:
 - registration-free COM interop, configuring .NET-based components
 - activation, registration-free
 ms.assetid: 32f8b7c6-3f73-455d-8e13-9846895bd43b
-ms.openlocfilehash: 5263e042bafdb886b313f05751c29de0f5715211
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: ffeb342f286663ee7fe733ee617741e0ab30d0d8
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85622192"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96282867"
 ---
 # <a name="how-to-configure-net-framework-based-com-components-for-registration-free-activation"></a>Como: Configurar componentes COM baseados no .NET Framework para ativação sem registro
+
 A ativação sem registro de componentes baseados no .NET Framework é apenas um pouco mais complicada do que para componentes COM. A instalação exige dois manifestos:  
   
 - Os aplicativos COM devem ter um manifesto do aplicativo no estilo Win32 para identificar o componente gerenciado.  
@@ -173,9 +174,9 @@ Você pode instalar um manifesto do aplicativo no mesmo diretório do aplicativo
   
      Novamente, `myresource.res` é o nome do arquivo de recurso que contém recursos incorporados.  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Interoperabilidade COM sem registro](registration-free-com-interop.md)
-- [Requisitos para interoperabilidade COM sem registro](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/f8h7012w(v=vs.100))
-- [Configurando componentes COM para ativação sem registro](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/x65a421a(v=vs.100))
-- [Ativação sem registro de componentes baseados no .NET: um passo a passo](https://docs.microsoft.com/previous-versions/dotnet/articles/ms973915(v=msdn.10))
+- [Requisitos para interoperabilidade COM sem registro](/previous-versions/dotnet/netframework-4.0/f8h7012w(v=vs.100))
+- [Configurando componentes COM para ativação sem registro](/previous-versions/dotnet/netframework-4.0/x65a421a(v=vs.100))
+- [Ativação sem registro de componentes baseados no .NET: um passo a passo](/previous-versions/dotnet/articles/ms973915(v=msdn.10))

@@ -2,7 +2,6 @@
 title: Formatos de caminho de arquivo em sistemas Windows
 description: Neste artigo, saiba mais sobre formatos de caminho de arquivo em sistemas Windows, como caminhos de DOS tradicionais, caminhos de dispositivo DOS e caminhos UNC (Convenção de nomenclatura universal).
 ms.date: 06/06/2019
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -10,12 +9,12 @@ helpviewer_keywords:
 - I/O, long paths
 - long paths
 - path formats, Windows
-ms.openlocfilehash: 8cbb687b0c7cfb69d3f3807c083f1c25e9d39594
-ms.sourcegitcommit: e0803b8975d3eb12e735a5d07637020dd6dac5ef
+ms.openlocfilehash: 378fe56bcd54469bc82d762868636daec6eb286e
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89271783"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94831163"
 ---
 # <a name="file-path-formats-on-windows-systems"></a>Formatos de caminho de arquivo em sistemas Windows
 
@@ -43,7 +42,7 @@ Se todos os três componentes estiverem presentes, o caminho será absoluto. Se 
 > [!IMPORTANT]
 > Observe a diferença entre os últimos dois caminhos. Ambos especificam o especificador de volume opcional ( `C:` em ambos os casos), mas o primeiro começa com a raiz do volume especificado, enquanto o segundo não. Como resultado, o primeiro é um caminho absoluto do diretório raiz da unidade `C:` , enquanto o segundo é um caminho relativo do diretório atual da unidade `C:` . Uso do segundo formulário quando o primeiro é uma fonte comum de bugs que envolvem caminhos de arquivo do Windows.
 
-É possível determinar se um caminho de arquivo é totalmente qualificado (ou seja, se o caminho é independente do diretório atual e não se altera quando o diretório atual é alterado) chamando o método <xref:System.IO.Path.IsPathFullyQualified%2A?displayProperty=nameWthType>. Esse tipo de caminho poderá incluir segmentos de diretório relativo (`.` e `..`) e ainda ser totalmente qualificado se o caminho resolvido sempre apontar para o mesmo local.
+É possível determinar se um caminho de arquivo é totalmente qualificado (ou seja, se o caminho é independente do diretório atual e não se altera quando o diretório atual é alterado) chamando o método <xref:System.IO.Path.IsPathFullyQualified%2A?displayProperty=nameWithType>. Esse tipo de caminho poderá incluir segmentos de diretório relativo (`.` e `..`) e ainda ser totalmente qualificado se o caminho resolvido sempre apontar para o mesmo local.
 
 O exemplo a seguir ilustra a diferença entre caminhos absolutos e relativos. Ele pressupõe que o diretório `D:\FY2018\` existe e que você não definiu nenhum diretório atual para `D:\` o no prompt de comando antes de executar o exemplo.
 
@@ -90,7 +89,7 @@ O caminho de dispositivo DOS tem os seguintes componentes:
 - O especificador de caminho do dispositivo (`\\.\` ou `\\?\`), que identifica o caminho como um caminho de dispositivo DOS.
 
    > [!NOTE]
-   > O `\\?\` é compatível com todas as versões do .NET Core e, no .NET Framework, a partir da versão 4.6.2.
+   > O `\\?\` tem suporte em todas as versões do .NET Core e do .NET 5 + e no .NET Framework a partir da versão 4.6.2.
 
 - Um link simbólico para o objeto de dispositivo "real" (C: no caso de um nome de unidade ou Volume{b75e2c83-0000-0000-0000-602f00000000} no caso de um GUID de volume).
 
@@ -194,10 +193,10 @@ Por que ignorar a normalização? Existem três motivos principais:
 
 1. Para melhorar o desempenho ignorando a normalização, se você já tiver normalizado.
 
-1. Somente no .NET Framework, ignorar a verificação `MAX_PATH` do tamanho do caminho para permitir caminhos com mais de 259 caracteres. A maioria das APIs permitem isso, com algumas exceções.
+1. Somente no .NET Framework, para ignorar a `MAX_PATH` verificação do comprimento do caminho para permitir caminhos maiores que 259 caracteres. A maioria das APIs permitem isso, com algumas exceções.
 
 > [!NOTE]
-> O .NET Core trata caminhos longos de maneira implícita e não executa uma verificação `MAX_PATH`. A verificação `MAX_PATH` se aplica somente ao .NET Framework.
+> O .NET Core e o .NET 5 + manipulam caminhos longos implicitamente e não realiza uma `MAX_PATH` verificação. A `MAX_PATH` verificação se aplica somente a .NET Framework.
 
 Ignorar a normalização e as verificações de tamanho do caminho é a única diferença entre as duas sintaxes de caminho de dispositivo. Caso contrário, elas serão idênticas. Tenha cuidado ao ignorar a normalização, pois é fácil criar caminhos de difícil tratamento para aplicativos "normais".
 

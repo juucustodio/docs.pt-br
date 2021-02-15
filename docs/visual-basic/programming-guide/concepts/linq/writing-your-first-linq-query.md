@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: escrevendo sua primeira consulta LINQ (Visual Basic)'
 title: Escrever sua primeira consulta LINQ
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,19 +7,21 @@ helpviewer_keywords:
 - LINQ queries [Visual Basic]
 - LINQ [Visual Basic], writing queries
 ms.assetid: 4affb732-3e9b-4479-aa31-1f9bd8183cbe
-ms.openlocfilehash: 9d85f9c0390a659e59e372ad949cffdd17715189
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: cb57ae3c22b7e2ee2c3b66a8f033eda6fd72e16a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84413252"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100477509"
 ---
 # <a name="writing-your-first-linq-query-visual-basic"></a>Escrevendo a primeira consulta LINQ (Visual Basic)
+
 Uma *consulta* é uma expressão que recupera dados de uma fonte de dados. As consultas são expressas em uma linguagem de consulta dedicada. Ao longo do tempo, diferentes idiomas foram desenvolvidos para diferentes tipos de fontes de dados, por exemplo, SQL para bancos de dados relacionais e XQuery for XML. Isso torna necessário que o desenvolvedor do aplicativo aprenda uma nova linguagem de consulta para cada tipo de fonte de dados ou formato de dados com suporte.  
   
- A consulta integrada à linguagem (LINQ) simplifica a situação oferecendo um modelo consistente para trabalhar com dados em vários tipos de fontes de dados e formatos. Em uma consulta LINQ, você está sempre trabalhando com objetos. Você usa os mesmos padrões básicos de codificação para consultar e transformar dados em documentos XML, bancos de dados SQL, conjuntos de ADO.NET e entidades, .NET Framework coleções e qualquer outra fonte ou formato para o qual um provedor de LINQ esteja disponível. Este documento descreve as três fases da criação e do uso de consultas básicas do LINQ.  
+ A consulta de Language-Integrated (LINQ) simplifica a situação oferecendo um modelo consistente para trabalhar com dados em vários tipos de fontes de dados e formatos. Em uma consulta LINQ, você está sempre trabalhando com objetos. Você usa os mesmos padrões básicos de codificação para consultar e transformar dados em documentos XML, bancos de dados SQL, conjuntos de ADO.NET e entidades, .NET Framework coleções e qualquer outra fonte ou formato para o qual um provedor de LINQ esteja disponível. Este documento descreve as três fases da criação e do uso de consultas básicas do LINQ.  
   
 ## <a name="three-stages-of-a-query-operation"></a>Três Estágios de uma Operação de Consulta  
+
  As operações de consulta LINQ consistem em três ações:  
   
 1. Obtenha a fonte de dados ou as fontes.  
@@ -41,6 +44,7 @@ Uma *consulta* é uma expressão que recupera dados de uma fonte de dados. As co
  `0 2 4 6`  
   
 ## <a name="the-data-source"></a>A Fonte de Dados  
+
  Como a fonte de dados no exemplo anterior é uma matriz, ela dá suporte implicitamente à <xref:System.Collections.Generic.IEnumerable%601> interface genérica. É esse fato que permite que você use uma matriz como uma fonte de dados para uma consulta LINQ. Tipos que dão suporte a <xref:System.Collections.Generic.IEnumerable%601> ou uma interface derivada, como a genérica <xref:System.Linq.IQueryable%601>, são chamados *tipos passíveis de consulta*.  
   
  Como um tipo implicitamente consultável, a matriz não requer nenhuma modificação ou tratamento especial para servir como uma fonte de dados LINQ. O mesmo é verdadeiro para qualquer tipo de coleção com suporte <xref:System.Collections.Generic.IEnumerable%601> , incluindo as <xref:System.Collections.Generic.List%601> classes genéricas, <xref:System.Collections.Generic.Dictionary%602> e outras no .NET Framework biblioteca de classes.  
@@ -63,6 +67,7 @@ Dim customers As Table(Of Customer) = db.GetTable(Of Customer)
 > Tipos como <xref:System.Collections.ArrayList> o que dão suporte à interface não genérica <xref:System.Collections.IEnumerable> também podem ser usados como fontes de dados LINQ. Para obter um exemplo que usa um <xref:System.Collections.ArrayList> , consulte [como: consultar um ARRAYLIST com LINQ (Visual Basic)](how-to-query-an-arraylist-with-linq.md).  
   
 ## <a name="the-query"></a>A consulta  
+
  Na consulta, você especifica quais informações deseja recuperar da fonte de dados ou das fontes. Você também tem a opção de especificar como essas informações devem ser classificadas, agrupadas ou estruturadas antes de serem retornadas. Para habilitar a criação de consultas, Visual Basic incorporou uma nova sintaxe de consulta à linguagem.  
   
  Quando é executado, a consulta no exemplo a seguir retorna todos os números pares de uma matriz de inteiros, `numbers` .  
@@ -74,9 +79,11 @@ Dim customers As Table(Of Customer) = db.GetTable(Of Customer)
  É importante lembrar que a variável de consulta não executa nenhuma ação e não retorna nenhum dado. Ele armazena apenas a definição de consulta. No exemplo anterior, é o `For Each` loop que executa a consulta.  
   
 ## <a name="query-execution"></a>Execução da consulta  
+
  A execução da consulta é separada da criação da consulta. A criação de consulta define a consulta, mas a execução é disparada por um mecanismo diferente. Uma consulta pode ser executada assim que é definida (*execução imediata*) ou a definição pode ser armazenada e a consulta pode ser executada mais tarde (*execução adiada*).  
   
 ### <a name="deferred-execution"></a>Execução Adiada  
+
  Uma consulta LINQ típica é semelhante à do exemplo anterior, em que `evensQuery` é definida. Ele cria a consulta, mas não a executa imediatamente. Em vez disso, a definição de consulta é armazenada na variável de consulta `evensQuery` . Você executa a consulta mais tarde, normalmente usando um `For Each` loop, que retorna uma sequência de valores ou aplicando um operador de consulta padrão, como `Count` ou `Max` . Esse processo é conhecido como *execução adiada*.  
   
  [!code-vb[VbLINQFirstQuery#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQFirstQuery/VB/Class1.vb#7)]  
@@ -98,6 +105,7 @@ Dim customers As Table(Of Customer) = db.GetTable(Of Customer)
  `0  10  2  22  8`  
   
 ### <a name="immediate-execution"></a>Execução Imediata  
+
  Na execução adiada de consultas, a definição de consulta é armazenada em uma variável de consulta para execução posterior. Na execução imediata, a consulta é executada no momento da definição. A execução é disparada quando você aplica um método que requer acesso a elementos individuais do resultado da consulta. A execução imediata geralmente é forçada usando um dos operadores de consulta padrão que retornam valores únicos. Os exemplos são `Count` ,, `Max` `Average` e `First` . Esses operadores de consulta padrão executam a consulta assim que são aplicados para calcular e retornar um resultado singleton. Para obter mais informações sobre operadores de consulta padrão que retornam valores únicos, consulte operações de [agregação](aggregation-operations.md), [operações de elemento](element-operations.md)e [operações de quantificador](quantifier-operations.md).  
   
  A consulta a seguir retorna uma contagem dos números pares em uma matriz de inteiros. A definição de consulta não é salva e `numEvens` é simples `Integer` .  
@@ -118,7 +126,7 @@ Dim customers As Table(Of Customer) = db.GetTable(Of Customer)
   
  Você também pode fazer com que uma consulta seja executada usando um `IEnumerable` método como o <xref:Microsoft.VisualBasic.Collection.System%23Collections%23IEnumerable%23GetEnumerator%2A> método.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Introdução a LINQ no Visual Basic](getting-started-with-linq.md)
 - [Inferência de Tipo de Variável Local](../../language-features/variables/local-type-inference.md)

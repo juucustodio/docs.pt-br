@@ -8,12 +8,12 @@ helpviewer_keywords:
 - security [.NET Framework], remoting
 - secure coding, remoting
 ms.assetid: 125d2ab8-55a4-4e5f-af36-a7d401a37ab0
-ms.openlocfilehash: 3a272b2a8f164aad07413a069e68a2146d0df6a7
-ms.sourcegitcommit: c37e8d4642fef647ebab0e1c618ecc29ddfe2a0f
+ms.openlocfilehash: 883c20483c4d315a45e1f4dab959d42cbb6e3c4b
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87855706"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96288197"
 ---
 # <a name="security-and-remoting-considerations"></a>Considerações sobre segurança e comunicação remota
 
@@ -26,6 +26,7 @@ A comunicação remota permite que você configure a chamada transparente entre 
  Geralmente, você nunca deve expor métodos, propriedades ou eventos que são protegidos por [LinkDemand](link-demands.md) e verificações de segurança declarativas <xref:System.Security.Permissions.SecurityAction.InheritanceDemand> . Com a comunicação remota, essas verificações não são impostas. Outras verificações de segurança, como <xref:System.Security.Permissions.SecurityAction.Demand> , [Assert](using-the-assert-method.md)e assim por diante, funcionam entre domínios de aplicativo dentro de um processo, mas não funcionam em cenários de processo cruzado ou entre máquinas.  
   
 ## <a name="protected-objects"></a>Objetos protegidos  
+
  Alguns objetos mantêm o estado de segurança em si. Esses objetos não devem ser passados para código não confiável, o que, por sua conta, adquiriria a autorização de segurança além de suas próprias permissões.  
   
  Um exemplo é a criação de um <xref:System.IO.FileStream> objeto. O <xref:System.Security.Permissions.FileIOPermission> é exigido no momento da criação e, se for bem sucedido, o objeto File será retornado. No entanto, se essa referência de objeto for passada para o código sem permissões de arquivo, o objeto poderá ler e gravar nesse arquivo específico.  
@@ -33,6 +34,7 @@ A comunicação remota permite que você configure a chamada transparente entre 
  A defesa mais simples para tal objeto é exigir a mesma **FileIOPermission** de qualquer código que busca obter a referência de objeto por meio de um elemento de API pública.  
   
 ## <a name="application-domain-crossing-issues"></a>Problemas de cruzamento de domínio de aplicativo  
+
  Para isolar o código em ambientes de hospedagem gerenciados, é comum gerar vários domínios de aplicativo filho com política explícita, reduzindo os níveis de permissão para vários assemblies. No entanto, a política para esses assemblies permanece inalterada no domínio do aplicativo padrão. Se um dos domínios do aplicativo filho puder forçar o domínio de aplicativo padrão a carregar um assembly, o efeito do isolamento de código será perdido e os tipos no assembly de tentativa forçado poderão executar o código em um nível mais alto de confiança.  
   
  Um domínio de aplicativo pode forçar outro domínio de aplicativo a carregar um assembly e executar o código contido nele chamando um proxy para um objeto hospedado no outro domínio de aplicativo. Para obter um proxy de domínio entre aplicativos, o domínio do aplicativo que hospeda o objeto deve distribuir um por meio de um parâmetro de chamada de método ou valor de retorno. Ou, se o domínio do aplicativo acabou de ser criado, o criador tem um proxy para o <xref:System.AppDomain> objeto por padrão. Portanto, para evitar a interrupção do isolamento de código, um domínio de aplicativo com um nível mais alto de confiança não deve distribuir referências a objetos de marshaling por referência (instâncias de classes derivadas de <xref:System.MarshalByRefObject> ) em seu domínio para domínios de aplicativo com níveis inferiores de confiança.  

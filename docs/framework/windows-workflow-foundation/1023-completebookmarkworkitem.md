@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 1023-CompleteBookmarkWorkItem'
 title: 1023 - CompleteBookmarkWorkItem
 ms.date: 03/30/2017
 ms.assetid: fc5dac57-b3eb-4826-b505-c6d269e4774d
-ms.openlocfilehash: 8677f25057486247e64879298755fe972bd373d3
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: c83972b41a844747c47b97a0dd2bd37c26ae78a9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62008844"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755519"
 ---
 # <a name="1023---completebookmarkworkitem"></a>1023 - CompleteBookmarkWorkItem
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,9 +22,11 @@ ms.locfileid: "62008844"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
+
  Indica que um BookmarkWorkItem terminado.  
   
 ## <a name="message"></a>Mensagem  
+
  Um BookmarkWorkItem concluiu para atividades “%1 ", DisplayName: “%2", InstanceId: “%3". BookmarkName: %4, BookmarkScope: %5.  
   
 ## <a name="details"></a>Detalhes  

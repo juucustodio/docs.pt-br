@@ -1,20 +1,20 @@
 ---
 ms.openlocfilehash: b55de00188d92623c493dfc5f9aca915890ae5df
-ms.sourcegitcommit: 348bb052d5cef109a61a3d5253faa5d7167d55ac
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82021473"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96031956"
 ---
-### <a name="private-fields-added-to-built-in-struct-types"></a>Campos privados adicionados aos tipos de estrutura embutidos
+### <a name="private-fields-added-to-built-in-struct-types"></a>Campos privados adicionados aos tipos de struct internos
 
-Campos privados foram [adicionados](#affected-apis) a certos tipos de estrutura em [conjuntos de referência](../../../../docs/standard/assembly/reference-assemblies.md). Como resultado, em C#, esses tipos de estrutura devem ser sempre instanciados usando o [novo operador](../../../../docs/csharp/language-reference/operators/new-operator.md) ou o [padrão literal](../../../../docs/csharp/language-reference/operators/default.md#default-literal).
+Campos privados foram adicionados a [determinados tipos de struct](#affected-apis) em [assemblies de referência](../../../../docs/standard/assembly/reference-assemblies.md). Como resultado, em C#, esses tipos de struct sempre devem ser instanciados usando o [novo operador](../../../../docs/csharp/language-reference/operators/new-operator.md) ou o [literal padrão](../../../../docs/csharp/language-reference/operators/default.md#default-literal).
 
-#### <a name="change-description"></a>Descrição da alteração
+#### <a name="change-description"></a>Descrição das alterações
 
-Em .NET Core 2.0 e versões anteriores, alguns tipos de estrutura, por exemplo, <xref:System.ConsoleKeyInfo>poderiam ser instanciados sem usar o `new` operador ou o padrão [literal](../../../../docs/csharp/language-reference/operators/default.md#default-literal) em C#. Isso porque as [montagens de referência](../../../../docs/standard/assembly/reference-assemblies.md) usadas pelo compilador C# não continham os campos privados para as estruturas. Todos os campos privados para tipos de estrutura .NET são adicionados aos conjuntos de referência a partir de .NET Core 2.1.
+No .NET Core 2,0 e nas versões anteriores, alguns tipos struct fornecidos, por exemplo,, <xref:System.ConsoleKeyInfo> podem ser instanciados sem usar o `new` operador ou o [literal padrão](../../../../docs/csharp/language-reference/operators/default.md#default-literal) em C#. Isso ocorreu porque os [assemblies de referência](../../../../docs/standard/assembly/reference-assemblies.md) usados pelo compilador C# não continham os campos privados para as estruturas. Todos os campos privados para tipos de struct .NET são adicionados aos assemblies de referência a partir do .NET Core 2,1.
 
-Por exemplo, o código C# a seguir compila no .NET Core 2.0, mas não no .NET Core 2.1:
+Por exemplo, o seguinte código C# é compilado no .NET Core 2,0, mas não no .NET Core 2,1:
 
 ```csharp
 ConsoleKeyInfo key;    // Struct type
@@ -25,7 +25,7 @@ if (key.ToString() == "y")
 }
 ```
 
-No .NET Core 2.1, o código anterior resulta no seguinte erro de compilador: **CS0165 - Uso de 'chave' de variável local não atribuída**
+No .NET Core 2,1, o código anterior resulta no seguinte erro do compilador: **CS0165-uso da variável local não atribuída ' Key '**
 
 #### <a name="version-introduced"></a>Versão introduzida
 
@@ -33,7 +33,7 @@ No .NET Core 2.1, o código anterior resulta no seguinte erro de compilador: **C
 
 #### <a name="recommended-action"></a>Ação recomendada
 
-Digite os tipos de `new` estrutura usando o operador ou [o literal padrão](../../../../docs/csharp/language-reference/operators/default.md#default-literal).
+Crie instâncias de tipos struct usando o `new` operador ou o [literal padrão](../../../../docs/csharp/language-reference/operators/default.md#default-literal).
 
 Por exemplo:
 
@@ -53,7 +53,7 @@ if (key.ToString() == "y")
 
 #### <a name="category"></a>Categoria
 
-Bibliotecas Core .NET
+Bibliotecas principais do .NET
 
 #### <a name="affected-apis"></a>APIs afetadas
 

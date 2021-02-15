@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração EClrOperation'
 title: Enumeração EClrOperation
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5aef6808-5aac-4b2f-a2c7-fee1575c55ed
 topic_type:
 - apiref
-ms.openlocfilehash: e7cb1c2070e760258e548d2f45e3b6ed11e046c4
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 9f75762a400955b5f36fb2a337f283e36a32658c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616314"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785556"
 ---
 # <a name="eclroperation-enumeration"></a>Enumeração EClrOperation
+
 Descreve o conjunto de operações para as quais um host pode aplicar ações de política.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -40,7 +42,7 @@ typedef enum {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`OPR_AppDomainRudeUnload`|O host pode especificar ações de política a serem executadas quando um <xref:System.AppDomain> for descarregado em um modo não normal (rude).|  
 |`OPR_AppDomainUnload`|O host pode especificar ações de política a serem executadas quando um <xref:System.AppDomain> for descarregado.|  
@@ -51,6 +53,7 @@ typedef enum {
 |`OPR_ThreadRudeAbortInNonCriticalRegion`|O host pode especificar ações de política a serem executadas quando uma anulação de thread rude ocorrer em uma região não crítica de código.|  
   
 ## <a name="remarks"></a>Comentários  
+
  A infraestrutura de confiabilidade do Common Language Runtime (CLR) distingue entre anulações e falhas de alocação de recursos que ocorrem em regiões críticas de código e aquelas que ocorrem em regiões não críticas de código. Essa distinção foi projetada para permitir que os hosts definam políticas diferentes dependendo de onde ocorrer uma falha no código.  
   
  Uma *região crítica de código* é qualquer espaço em que o CLR não possa garantir que a anulação de uma tarefa ou a falha de concluir uma solicitação de recursos afetará apenas a tarefa atual. Por exemplo, se uma tarefa estiver mantendo um bloqueio e receber um HRESULT que indica falha ao fazer uma solicitação de alocação de memória, é insuficiente simplesmente anular essa tarefa para garantir a estabilidade do <xref:System.AppDomain> , pois o <xref:System.AppDomain> pode conter outras tarefas aguardando o mesmo bloqueio. Para abandonar, a tarefa atual pode fazer com que essas outras tarefas parem de responder. Nesse caso, o host precisa da capacidade de descarregar todo o <xref:System.AppDomain> risco em potencial de instabilidade.  
@@ -60,15 +63,16 @@ typedef enum {
  O CLR também distingue entre anulações normais e não normais (rudes). Em geral, uma anulação normal ou regular faz cada esforço para executar rotinas de manipulação de exceção e finalizadores antes de abortar uma tarefa, enquanto uma anulação rude não faz nenhuma garantia.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** MSCorEE. dll  
+ **Biblioteca:** MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Enumeração EClrFailure](eclrfailure-enumeration.md)
 - [Enumeração EPolicyAction](epolicyaction-enumeration.md)

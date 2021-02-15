@@ -4,12 +4,12 @@ title: Tipos não gerenciados – referência em C#
 ms.date: 09/06/2019
 helpviewer_keywords:
 - unmanaged type [C#]
-ms.openlocfilehash: b5a689ca3ade36ef77da958549894f76e074986e
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 4374872af13c94e1a1af6b9f2c431f076c6f7dff
+ms.sourcegitcommit: 870bc4b4087510f6fba3c7b1c0d391f02bcc1f3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89143526"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92471793"
 ---
 # <a name="unmanaged-types-c-reference"></a>Tipos não gerenciados (referência em C#)
 
@@ -24,11 +24,11 @@ A partir do C# 7,3, você pode usar a [ `unmanaged` restrição](../../programmi
 
 A partir do C# 8,0, um tipo struct *construído* que contém campos de tipos não gerenciados também é não gerenciado, como mostra o exemplo a seguir:
 
-[!code-csharp[unmanaged constructed types](snippets/UnmanagedTypes.cs#ProgramExample)]
+[!code-csharp[unmanaged constructed types](snippets/shared/UnmanagedTypes.cs#ProgramExample)]
 
 Uma estrutura genérica pode ser a fonte de tipos construídos não gerenciados e não gerenciados. O exemplo anterior define uma struct genérica `Coords<T>` e apresenta os exemplos de tipos construídos não gerenciados. O exemplo de não é um tipo não gerenciado `Coords<object>` . Não é não gerenciado porque tem os campos do `object` tipo, que não são gerenciados. Se você quiser que *todos os* tipos construídos sejam tipos não gerenciados, use a `unmanaged` restrição na definição de uma estrutura genérica:
 
-[!code-csharp[unmanaged constraint in type definition](snippets/UnmanagedTypes.cs#AlwaysUnmanaged)]
+[!code-csharp[unmanaged constraint in type definition](snippets/shared/UnmanagedTypes.cs#AlwaysUnmanaged)]
 
 ## <a name="c-language-specification"></a>Especificação da linguagem C#
 

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerCallback:: AssemblyUnloadStarted'
 title: Método ICorProfilerCallback::AssemblyUnloadStarted
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 6e47b7e5-0335-4dd3-8c42-d3c07d62b102
 topic_type:
 - apiref
-ms.openlocfilehash: 80054a8292c69b957664cb3573b0a8694c7f9fd2
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: e9c72d481df7242f305b5efa6f747866984b31f7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500397"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99657821"
 ---
 # <a name="icorprofilercallbackassemblyunloadstarted-method"></a>Método ICorProfilerCallback::AssemblyUnloadStarted
+
 Notifica o criador de perfil de que um assembly está sendo descarregado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -39,9 +41,11 @@ HRESULT AssemblyUnloadStarted(
   \[in] identifica o assembly que está sendo descarregado.
 
 ## <a name="remarks"></a>Comentários  
+
  O valor de `assemblyId` não é válido para uma solicitação de informações após o `AssemblyUnloadStarted` retorno do método — essa é a última chance do criador de perfil obter informações sobre esse assembly.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -50,7 +54,7 @@ HRESULT AssemblyUnloadStarted(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Método AssemblyUnloadFinished](icorprofilercallback-assemblyunloadfinished-method.md)

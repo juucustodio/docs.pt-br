@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugAssembly2:: IsFullyTrusted'
 title: Método ICorDebugAssembly2::IsFullyTrusted
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 26cbd27d-12bf-444a-8197-ccd14d37dda3
 topic_type:
 - apiref
-ms.openlocfilehash: dd82709064fe7f7d912d93f4b3f0248769f02b9e
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: bc1c4d9a4fa84bac3469aafe8aaa061473e50413
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82894881"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754102"
 ---
 # <a name="icordebugassembly2isfullytrusted-method"></a>Método ICorDebugAssembly2::IsFullyTrusted
+
 Obtém um valor que indica se o assembly recebeu confiança total pelo sistema de segurança de tempo de execução.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,13 +36,16 @@ HRESULT IsFullyTrusted(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pbFullyTrusted`  
- fora `true` se o assembly tiver recebido confiança total pelo sistema de segurança de tempo de execução; caso contrário `false`,.  
+ [fora] `true` Se o assembly tiver recebido confiança total pelo sistema de segurança de tempo de execução; caso contrário, `false` .  
   
 ## <a name="remarks"></a>Comentários  
+
  Esse método retornará um HRESULT de CORDBG_E_NOTREADY se a política de segurança para o assembly ainda não tiver sido resolvida, ou seja, se nenhum código no assembly tiver sido executado ainda.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

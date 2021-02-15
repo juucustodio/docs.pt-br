@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Office programming [C#]
 - Office programming [Visual Basic]
 ms.assetid: 519cff31-f80b-4f0e-a56b-26358d0f8c51
-ms.openlocfilehash: 76f0e2eccb5d1a59d9aaa3eed11b25dd2dd9cac3
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.openlocfilehash: eff414411c47ec83177ae6a09de4a96f47af6313
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88062997"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558583"
 ---
 # <a name="walkthrough-office-programming-c-and-visual-basic"></a>Passo a passo: Programação do Office (C# e Visual Basic)
 
@@ -190,7 +190,7 @@ Você deve ter o Microsoft Office Excel e o Microsoft Office Word instalados no 
 
 8. No Visual Studio, clique em **Limpar Solução** no menu **Compilar** para limpar o projeto concluído.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Propriedades autoimplementadas (Visual Basic)](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)
 - [Propriedades autoimplementadas (C#)](../classes-and-structs/auto-implemented-properties.md)
@@ -205,7 +205,7 @@ Você deve ter o Microsoft Office Excel e o Microsoft Office Word instalados no 
 - [Expressões lambda (Visual Basic)](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)
 - [Expressões lambda [C#]](../../language-reference/operators/lambda-expressions.md)
 - [Como usar propriedades indexadas na programação para interoperabilidade COM](./how-to-use-indexed-properties-in-com-interop-rogramming.md)
-- [Passo a passo: inserindo informações de tipo dos Microsoft Office Assemblies no Visual Studio](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ee317478(v%3dvs.120))
+- [Passo a passo: inserindo informações de tipo dos Microsoft Office Assemblies no Visual Studio](/previous-versions/visualstudio/visual-studio-2013/ee317478(v=vs.120))
 - [Instruções passo a passo: Inserindo tipos de assemblies gerenciados](../../../standard/assembly/embed-types-visual-studio.md)
 - [Passo a passo: criando o primeiro suplemento do VSTO para Excel](/visualstudio/vsto/walkthrough-creating-your-first-vsto-add-in-for-excel)
 - [Interoperabilidade COM](../../../visual-basic/programming-guide/com-interop/index.md)

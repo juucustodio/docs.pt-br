@@ -6,20 +6,20 @@ ms.author: wiwagn
 no-loc:
 - Blazor
 - WebAssembly
-ms.date: 07/27/2020
-ms.openlocfilehash: f04de5c350dfead4dad8c37eece7f16c9a9e00bc
-ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
+ms.date: 12/01/2020
+ms.openlocfilehash: 309630b4b20105d0f64903c1920006dcfb945f76
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89515813"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429695"
 ---
 # <a name="choose-between-traditional-web-apps-and-single-page-apps-spas"></a>Escolher entre aplicativos Web tradicionais e SPAs (aplicativos de página única)
 
 > "Lei de Atwood: qualquer aplicativo que pode ser escrito em JavaScript será, em última análise, escrito em JavaScript."  
 > _\- Jeff Atwood_
 
-Há duas abordagens gerais para a criação de aplicativos Web hoje: os aplicativos Web tradicionais que executam a maior parte da lógica do aplicativo no servidor e os SPAs (aplicativos de página única) que executam a maior parte da lógica da interface do usuário em um navegador da Web, comunicando-se com o servidor Web principalmente por meio de APIs Web. Uma abordagem híbrida também é possível, o mais simples é hospedar um ou mais aplicativos avançados semelhantes ao SPA em um aplicativo Web tradicional mais amplo.
+Existem duas abordagens gerais para criar aplicativos Web hoje: aplicativos Web tradicionais que executam a maior parte da lógica do aplicativo no servidor e SPAs (aplicativos de página única) que executam a maior parte da lógica da interface do usuário em um navegador da Web, comunicando-se com o servidor Web principalmente usando APIs da Web. Uma abordagem híbrida também é possível, o mais simples é hospedar um ou mais aplicativos avançados semelhantes ao SPA em um aplicativo Web tradicional mais amplo.
 
 Use aplicativos Web tradicionais quando:
 
@@ -43,7 +43,7 @@ Melhorias na experiência do usuário possibilitadas pela abordagem SPA devem se
 
 ## Blazor
 
-ASP.NET Core inclui um modelo para a criação de interfaces de usuário avançadas, interativas e combináveis chamadas Blazor . Blazor o lado do servidor permite que os desenvolvedores criem interface do usuário com C# e Razor no servidor e que a interface do usuário seja conectada interativamente ao navegador em tempo real usando uma conexão de sinalização persistente. BlazorWebAssemblyapresenta outra opção para Blazor aplicativos, permitindo que eles sejam executados no navegador usando o WebAssembly . Como o .NET real está em execução WebAssembly , você pode usar novamente o código e as bibliotecas de partes do lado do servidor do seu aplicativo.
+ASP.NET Core inclui um modelo para a criação de interfaces de usuário avançadas, interativas e combináveis chamadas Blazor . Blazor o lado do servidor permite que os desenvolvedores criem interface do usuário com C# e Razor no servidor e que a interface do usuário seja conectada interativamente ao navegador em tempo real usando uma conexão de sinalização persistente. BlazorWebAssemblyapresenta outra opção para Blazor aplicativos, permitindo que eles sejam executados no navegador usando o WebAssembly . Como o .NET real está em execução WebAssembly , você pode reutilizar o código e as bibliotecas de partes do lado do servidor do seu aplicativo.
 
 Blazor fornece uma nova opção a ser considerada ao avaliar se deve-se criar um aplicativo Web puramente renderizado no servidor ou um SPA. Você pode criar comportamentos avançados do lado do cliente com SPA usando Blazor , sem a necessidade de um desenvolvimento de JavaScript significativo. Blazor os aplicativos podem chamar APIs para solicitar dados ou executar operações do lado do servidor. Eles podem interoperar com JavaScript, quando necessário, para aproveitar as estruturas e bibliotecas JavaScript.
 
@@ -53,17 +53,17 @@ Considere criar seu aplicativo Web com Blazor quando:
 
 - Sua equipe é mais confortável com o desenvolvimento do .NET do que o desenvolvimento de JavaScript ou TypeScript
 
-Se você tiver um aplicativo Web Forms existente que está considerando a migração para o .NET Core, talvez queira examinar o livro eletrônico gratuito, [ Blazor para que os desenvolvedores de Web Forms](../blazor-for-web-forms-developers/index.md) vejam se faz sentido considerar a migração para o Blazor .
+Se você tiver um aplicativo Web Forms existente que está pensando em migrar para o .NET Core ou com o .NET mais recente, talvez queira examinar o livro eletrônico gratuito, [ Blazor para que Web Forms desenvolvedores](../blazor-for-web-forms-developers/index.md) vejam se faz sentido considerar a migração para o Blazor .
 
 Para obter mais informações sobre o Blazor , consulte Introdução [ Blazor ao ](https://blazor.net/docs/get-started.html).
 
 ## <a name="when-to-choose-traditional-web-apps"></a>Quando escolher aplicativos Web tradicionais
 
-A seguir há uma explicação mais detalhada dos motivos já mencionados para escolher os aplicativos Web tradicionais.
+A seção a seguir é uma explicação mais detalhada dos motivos declarados anteriormente para escolher aplicativos Web tradicionais.
 
 **Seu aplicativo tem requisitos simples do lado do cliente, possivelmente somente leitura**
 
-Muitos aplicativos Web são consumidos principalmente em um modo somente leitura pela grande maioria de seus usuários. Os aplicativos somente leitura (ou predominantemente de leitura) tendem a ser muito mais simples do que aqueles que mantêm e manipulam uma grande quantidade de estado. Por exemplo, um mecanismo de pesquisa pode consistir em um único ponto de entrada com uma caixa de texto e uma segunda página para exibição dos resultados da pesquisa. Os usuários anônimos podem fazer solicitações com facilidade, e há pouca necessidade de uma lógica do lado do cliente. Da mesma forma, um aplicativo voltado para o público de um sistema de gerenciamento de conteúdo ou blog normalmente consiste principalmente em conteúdo com pouco comportamento do lado do cliente. Esses aplicativos são facilmente criados como aplicativos Web tradicionais baseados em servidor, que executam lógica no servidor Web e renderizam HTML para serem exibidos no navegador. O fato de que cada página exclusiva do site tem sua própria URL que pode ser marcada e indexada por mecanismos de pesquisa (por padrão, sem a necessidade de adicioná-la como um recurso separado do aplicativo) também é um benefício claro nesses cenários.
+Muitos aplicativos Web são consumidos principalmente em um modo somente leitura pela grande maioria de seus usuários. Os aplicativos somente leitura (ou de leitura na maioria das vezes) tendem a ser muito mais simples do que os aplicativos que mantêm e manipulam uma grande quantidade de estado. Por exemplo, um mecanismo de pesquisa pode consistir em um único ponto de entrada com uma caixa de texto e uma segunda página para exibição dos resultados da pesquisa. Os usuários anônimos podem fazer solicitações com facilidade, e há pouca necessidade de uma lógica do lado do cliente. Da mesma forma, um aplicativo voltado para o público de um sistema de gerenciamento de conteúdo ou blog normalmente consiste principalmente em conteúdo com pouco comportamento do lado do cliente. Esses aplicativos são facilmente criados como aplicativos Web tradicionais baseados em servidor, que executam lógica no servidor Web e renderizam HTML para serem exibidos no navegador. O fato de que cada página exclusiva do site tem sua própria URL que pode ser marcada e indexada pelos mecanismos de pesquisa (por padrão, sem a necessidade de adicionar essa funcionalidade como um recurso separado do aplicativo) também é um benefício claro nesses cenários.
 
 **Seu aplicativo precisa funcionar em navegadores sem suporte a JavaScript**
 
@@ -75,13 +75,13 @@ Caso sua equipe não esteja familiarizada com o JavaScript ou o TypeScript, mas 
 
 ## <a name="when-to-choose-spas"></a>Quando escolher SPAs
 
-Veja a seguir uma explicação mais detalhada de quando escolher um estilo de desenvolvimento de Aplicativos de Página Única para seu aplicativo Web.
+A seção a seguir é uma explicação mais detalhada de quando escolher um estilo de desenvolvimento de aplicativos de página única para seu aplicativo Web.
 
 **Seu aplicativo precisa expor uma interface do usuário avançada com muitos recursos**
 
 Os SPAs podem dar suporte à funcionalidade avançada do lado do cliente que não exige o recarregamento da página conforme os usuários executam ações ou navegam entre as áreas do aplicativo. OS SPAs podem ser carregados com mais agilidade, buscando dados em segundo plano, e as ações de usuário individuais são mais ágeis na resposta pois os recarregamentos de página inteira são raros. Os SPAs podem dar suporte a atualizações incrementais, salvando formulários ou documentos parcialmente preenchidos sem que o usuário precise clicar em um botão para enviar um formulário. Os SPAs podem ser compatíveis com comportamentos avançados do lado do cliente, como operações do tipo "arrastar e soltar", com muito mais agilidade do que os aplicativos tradicionais. Os SPAs podem ser designados para serem executados em um modo desconectado, fazendo atualizações em um modelo do lado do cliente que são, por fim, sincronizadas com o servidor depois que uma conexão é restabelecida. Escolha um aplicativo estilo SPA se os requisitos do seu aplicativo incluírem funcionalidades avançadas que vão além do que os formulários HTML típicos oferecem.
 
-Frequentemente, o SPAs precisa implementar recursos que são internos a aplicativos Web tradicionais, como exibir uma URL significativa na barra de endereços que reflete a operação atual (e permitir que os usuários marquem ou vinculem o link profundo para essa URL para retornar a ela). Os SPAs também devem permitir que os usuários usem os botões Voltar e Avançar do navegador com resultados que não os surpreenderão.
+Frequentemente, a SPAs precisa implementar recursos criados em aplicativos Web tradicionais, como exibir uma URL significativa na barra de endereços que reflete a operação atual (e permitir que os usuários marquem ou vinculem o link profundo para essa URL para retornar a ela). Os SPAs também devem permitir que os usuários usem os botões Voltar e Avançar do navegador com resultados que não os surpreenderão.
 
 **Sua equipe está familiarizada com o desenvolvimento de JavaScript e/ou TypeScript**
 
@@ -89,20 +89,17 @@ A configuração de SPAs exige familiaridade com o JavaScript e/ou o TypeScript 
 
 > ### <a name="references--spa-frameworks"></a>Referências – Estruturas de SPA
 >
-> - **Angular**  
->   <https://angular.io>
-> - **Reagir**
->   <https://reactjs.org/>
-> - **Comparação de Estruturas em JavaScript**  
->   <https://jsreport.io/the-ultimate-guide-to-javascript-frameworks/>
+> - **Angular**: <https://angular.io>
+> - **Reagir**: <https://reactjs.org/>
+> - **Vue.js**: <https://vuejs.org/>
 
 **Seu aplicativo já deve expor uma API para outros clientes (internos ou públicos)**
 
 Caso você já esteja dando suporte a uma API Web para uso por outros clientes, poderá ser necessário menos esforço para criar uma implementação de SPA que utiliza essas APIs em vez de reproduzir a lógica no formulário do lado do servidor. Os SPAs fazem uso extensivo de APIs Web para consultar e atualizar os dados conforme os usuários interagem com o aplicativo.
 
-## <a name="when-to-choose-no-locblazor"></a>Quando escolher Blazor
+## <a name="when-to-choose-blazor"></a>Quando escolher Blazor
 
-Veja a seguir uma explicação mais detalhada de quando escolher Blazor para seu aplicativo Web.
+A seção a seguir é uma explicação mais detalhada de quando escolher Blazor para seu aplicativo Web.
 
 **Seu aplicativo deve expor uma interface do usuário rica**
 
@@ -121,7 +118,7 @@ A tabela de decisão a seguir resume alguns dos fatores básicos a serem conside
 | É necessária a familiaridade da equipe com JavaScript/TypeScript | **Mínimo**             | **Necessária**                | **Mínimo**     |
 | Suporte a navegadores sem scripts                   | **Com suporte**           | **Sem suporte**           | **Com suporte**   |
 | Comportamento mínimo do aplicativo do lado do cliente             | **Apropriado**         | **Exagero**                | **Viáveis**      |
-| Requisitos avançados e complexos de interface do usuário            | **Certo**             | **Apropriado**             | **Apropriado** |
+| Requisitos avançados e complexos de interface do usuário            | **Limitado**             | **Apropriado**             | **Apropriado** |
 
 >[!div class="step-by-step"]
 >[Anterior](modern-web-applications-characteristics.md) 

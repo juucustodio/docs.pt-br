@@ -11,12 +11,12 @@ helpviewer_keywords:
 - serialization, cross-framework
 ms.assetid: 2b1ea3be-1152-4032-b2b3-07794054c405
 author: ViktorHofer
-ms.openlocfilehash: c735d30920fd3c8cd13243b4a5a29489ce05b262
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: bfb504862232345db07bdc92993069fc87afdbeb
+ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "84289688"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93282095"
 ---
 # <a name="binary-serialization"></a>Serialização binária
 
@@ -25,7 +25,7 @@ A serialização pode ser definida como o processo de armazenar o estado de um o
 Ao implementar um mecanismo de serialização em um ambiente orientado a objeto, você precisará fazer algumas trocas entre a facilidade de uso e a flexibilidade. O processo pode ser automatizado em grande parte, contanto que você tenha controle suficiente sobre o processo. Por exemplo, em algumas situações, a serialização binária simples pode não ser suficiente, ou pode haver um motivo específico para decidir quais campos em uma classe precisam ser serializados. As seções a seguir examinam o mecanismo de serialização robusto fornecido com o .NET e destacam vários recursos importantes que permitem personalizar o processo para atender às suas necessidades.
 
 > [!NOTE]
-> O estado de um objeto codificado UTF-8 ou UTF-7 não é preservado se o objeto é serializado e desserializado usando versões diferentes do .NET Framework.
+> O estado de um objeto codificado UTF-8 ou UTF-7 não será preservado se o objeto for serializado e desserializado usando versões diferentes do .NET.
 
 [!INCLUDE [binary-serialization-warning](../../../includes/binary-serialization-warning.md)]
 
@@ -339,7 +339,7 @@ O .NET Core dá suporte à serialização binária para um subconjunto de tipos.
 > | <xref:System.Xml.Xsl.XsltCompileException?displayProperty=nameWithType> | A partir do .NET Core 2.0.4. |
 > | <xref:System.Xml.Xsl.XsltException?displayProperty=nameWithType> | A partir do .NET Core 2.0.4. |
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - <xref:System.Runtime.Serialization>\
 Contém classes que podem ser usadas para serialização e desserialização de objetos.
@@ -350,8 +350,8 @@ Descreve o mecanismo de serialização de XML que está incluído com o Common L
 - [Segurança e serialização](../../framework/misc/security-and-serialization.md)\
 Descreve as diretrizes para codificação segura para seguir ao escrever o código que executa a serialização.
 
-- [Comunicação remota do .NET](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/72x4h507(v=vs.100))\
-Descreve os vários métodos que começam no .NET Framework para comunicação remota.
+- [Comunicação remota do .NET](/previous-versions/dotnet/netframework-4.0/72x4h507(v=vs.100))\
+Descreve os vários métodos em .NET Framework para comunicações remotas.
 
-- [Serviços Web XML criados usando ASP.NET e clientes de serviço Web XML](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/7bkzywba(v=vs.100))\
+- [Serviços Web XML criados usando ASP.NET e clientes de serviço Web XML](/previous-versions/dotnet/netframework-4.0/7bkzywba(v=vs.100))\
 Artigos que descrevem e explicam como programar serviços Web XML criados usando o ASP.NET.

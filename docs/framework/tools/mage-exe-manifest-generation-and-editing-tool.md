@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Manifest Generation and Editing tool
 - Mage.exe
 ms.assetid: 77dfe576-2962-407e-af13-82255df725a1
-ms.openlocfilehash: 864d3d7bd7cf32b5c2a5ce83819f4e78cd8ce043
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: bca26e359c25bf0dfae70f0ddfdc0c75b2081458
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87164266"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556317"
 ---
 # <a name="mageexe-manifest-generation-and-editing-tool"></a>Mage.exe (Ferramenta de Geração e Edição de Manifesto)
 
@@ -29,7 +29,7 @@ Duas versões do *Mage.exe* e *MageUI.exe* são incluídas no Visual Studio. Par
 Mage [commands] [commandOptions]
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
 A tabela a seguir mostra os comandos com suporte pelo *Mage.exe*. Para obter mais informações sobre as opções compatíveis com esses comandos, confira [Opções de comando novas e atualizadas](#new-and-update-command-options) e [Opções do comando de entrada](#sign-command-options).
 
@@ -46,7 +46,7 @@ A tabela a seguir mostra os comandos com suporte pelo *Mage.exe*. Para obter mai
 
 A tabela a seguir mostra as opções compatíveis com os comandos `-New` e `-Update`:
 
-|Opções|Valor padrão|Aplica-se A|Descrição|
+|Opções|Valor padrão|Aplica-se A|Description|
 |-------------|-------------------|----------------|-----------------|
 |**-a, -Algorithm**|sha1RSA|Manifestos de aplicativo.<br /><br /> Manifestos de implantação.|Especifica o algoritmo com o qual gerar resumos de dependência. O valor deve ser "sha256RSA" ou "sha1RSA.<br /><br /> Use com a opção "-Update". Essa opção é ignorada durante o uso da opção "-Sign"|
 |**-appc, -AppCodeBase** `manifestReference`||Manifestos de implantação.|Insere uma referência de URL ou de caminho do arquivo no arquivo de manifesto do aplicativo. Esse valor deve ser o caminho completo do manifesto de aplicativo.|
@@ -66,7 +66,7 @@ A tabela a seguir mostra as opções compatíveis com os comandos `-New` e `-Upd
 |**-pu,** **-ProviderURL** `url`||Manifestos de implantação.|Especifica a URL que o ClickOnce examinará em busca de atualizações de aplicativo.|
 |**-pub, -Publisher** `publisherName`||Manifestos de aplicativo.<br /><br /> Manifestos de implantação.|Adiciona o nome do editor ao elemento de descrição do manifesto de implantação ou de aplicativo. Quando usado em um manifesto do aplicativo, **-UseManifestForTrust** também deve ser especificado com um valor "true" ou "t", do contrário, esse parâmetro gerará um erro.|
 |**-s, -SupportURL**  `url`||Manifestos de aplicativo.<br /><br /> Manifestos de implantação.|Especifica o link exibido em Adicionar ou Remover Programas do aplicativo ClickOnce.|
-|**-ti, -TimestampUri** `uri`||Manifestos de aplicativo.<br /><br /> Manifestos de implantação.|A URL de um serviço de carimbo de data/hora digital. O carimbo de data/hora dos manifestos evita que você precise assinar novamente os manifestos, caso o certificado digital expire antes de implantar a próxima versão do aplicativo. Para obter mais informações, consulte [Membros do programa de certificado raiz do Windows](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)).|
+|**-ti, -TimestampUri** `uri`||Manifestos de aplicativo.<br /><br /> Manifestos de implantação.|A URL de um serviço de carimbo de data/hora digital. O carimbo de data/hora dos manifestos evita que você precise assinar novamente os manifestos, caso o certificado digital expire antes de implantar a próxima versão do aplicativo. Para obter mais informações, consulte [Membros do programa de certificado raiz do Windows](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)).|
 |**-t, -ToFile** `filePath`|– New:<br />– Implantação: deploy.application<br />– Aplicativo: application.exe.manifest<br />– Update:<br />– O arquivo de entrada.|Todos os tipos de arquivo.|Especifica o caminho de saída do arquivo que foi criado ou modificado.<br /><br /> Se **-ToFile** não for fornecido quando você usar **-New**, a saída será gravada no diretório de trabalho atual. Se **-ToFile** não for fornecido quando você usar **-Update**, *Mage.exe* gravará o arquivo de volta no arquivo de entrada.|
 |**-tr, -TrustLevel** `level`|Com base na zona em que reside a URL do aplicativo.|Manifestos de aplicativo.|O nível de confiança a ser concedido ao aplicativo em computadores cliente. Entre os valores estão "Internet", "Intranet" e "FullTrust".|
 |**-um, -UseManifestForTrust** `willUseForTrust`|Falso|Manifestos de aplicativo.|Especifica se a assinatura digital do manifesto de aplicativo será usada para na tomada de decisões de confiança quando o aplicativo é executado no cliente. A especificação de "true" ou "t" indica que o manifesto do aplicativo será usado em decisões de confiança. A especificação de "false" ou "f" indica que a assinatura do manifesto de implantação será usada.|
@@ -118,13 +118,13 @@ As tabelas a seguir mostram esses recursos e restrições:
 
 |Versão do manifesto|Operação|Mage v2.0|Mage v4.0|
 |----------------------|---------------|---------------|---------------|
-|Manifesto dos aplicativos com a versão 2.0 ou 3.x do .NET Framework como destino|Abertas|OK|OK|
+|Manifesto dos aplicativos com a versão 2.0 ou 3.x do .NET Framework como destino|Aberto|OK|OK|
 ||Fechar|OK|OK|
 ||Salvar|OK|OK|
 ||Assinar Novamente|OK|OK|
 ||Novo|OK|Sem suporte|
 ||Atualizar (veja abaixo)|OK|OK|
-|Manifesto dos aplicativos com a versão 4 do .NET Framework como destino|Abertas|OK|OK|
+|Manifesto dos aplicativos com a versão 4 do .NET Framework como destino|Aberto|OK|OK|
 ||Fechar|OK|OK|
 ||Salvar|OK|OK|
 ||Assinar Novamente|OK|OK|

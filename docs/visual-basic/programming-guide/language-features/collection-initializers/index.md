@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: inicializadores de coleção (Visual Basic)'
 title: Inicializadores de Coleção
 ms.date: 07/20/2015
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - collection initializers [Visual Basic]
 ms.assetid: a9290329-77b0-4fdf-ae75-8fc17287f469
-ms.openlocfilehash: 1d2d5adc7266faaa1636e568d6433429761eeaab
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: afae9278092934ead4572f16fb1ec4a29d631803
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84414538"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100475455"
 ---
 # <a name="collection-initializers-visual-basic"></a>Inicializadores de coleção (Visual Basic)
 
@@ -26,7 +27,7 @@ Você identificará um inicializador de coleção usando a palavra-chave `From` 
 > [!NOTE]
 > O C# também fornece inicializadores de coleção. Os inicializadores de coleção C# fornecem a mesma funcionalidade que a dos inicializadores de coleção do Visual Basic. Para obter mais informações sobre os inicializadores de coleção do C#, consulte [Inicializadores de objeto e de coleção](../../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md).
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 Um inicializador de coleção consiste em uma lista de valores separados por vírgula colocados entre chaves (`{}`), precedidos pela palavra-chave `From`, conforme mostrado no código a seguir.
 
@@ -75,17 +76,17 @@ Somente as listas de valores aninhados do primeiro nível de aninhamento são en
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Title|Descrição|
+|Título|Descrição|
 |---|---|
 |[Como criar um método para adicionar extensão usado por um inicializador de coleção](how-to-create-an-add-extension-method-used-by-a-collection-initializer.md)|Mostra como criar um método de extensão chamado `Add`, que pode ser usado para preencher uma coleção com valores de um inicializador de coleção.|
 |[Como criar uma coleção usada por um inicializador de coleção](how-to-create-a-collection-used-by-a-collection-initializer.md)|Mostra como habilitar o uso de um inicializador de coleção, incluindo um método `Add` em uma classe de coleção que implementa `IEnumerable`.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Coleções](../../concepts/collections.md)
-- [Matrizes](../arrays/index.md)
+- [matrizes](../arrays/index.md)
 - [Inicializadores de objeto: tipos nomeados e anônimos](../objects-and-classes/object-initializers-named-and-anonymous-types.md)
-- [Novo operador](../../../language-reference/operators/new-operator.md)
+- [Novo Operador](../../../language-reference/operators/new-operator.md)
 - [Propriedades autoimplementadas](../procedures/auto-implemented-properties.md)
 - [Como inicializar uma variável de matriz no Visual Basic](../arrays/how-to-initialize-an-array-variable.md)
 - [Inferência de Tipo de Variável Local](../variables/local-type-inference.md)

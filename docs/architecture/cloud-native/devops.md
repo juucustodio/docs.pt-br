@@ -1,13 +1,13 @@
 ---
 title: DevOps
 description: Considerações sobre o DevOps para aplicativos nativos de nuvem
-ms.date: 05/13/2020
-ms.openlocfilehash: ce814595245d49e409e780cb0f63c436299c2e4e
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.date: 01/19/2021
+ms.openlocfilehash: 089f6ac82f3ce0613c7b8e0b9527f3fa9cf7b50c
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83614105"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506195"
 ---
 # <a name="devops"></a>DevOps
 
@@ -47,7 +47,7 @@ O Azure DevOps é dividido em cinco componentes principais:
 
 **Azure boards** -fornece um problema e uma ferramenta de acompanhamento de itens de trabalho que se esforça para permitir que os usuários escolham os fluxos que funcionam melhor para eles. Ele vem com vários modelos pré-configurados, incluindo aqueles para oferecer suporte a estilos de desenvolvimento e do SCRUM.
 
-**Azure pipelines** -um sistema de gerenciamento de versão e compilação que dá suporte à integração rígida com o Azure. As compilações podem ser executadas em uma variedade de plataformas do Windows para Linux para MacOS. Os agentes de compilação podem ser provisionados na nuvem ou localmente.
+**Azure pipelines** -um sistema de gerenciamento de versão e compilação que dá suporte à integração rígida com o Azure. As compilações podem ser executadas em várias plataformas do Windows para Linux para macOS. Os agentes de compilação podem ser provisionados na nuvem ou localmente.
 
 **Azure Test Plans** -nenhuma pessoa de QA será deixada com o suporte de teste de gerenciamento de teste e exploratório oferecido pelo recurso de Test Plans.
 
@@ -79,7 +79,7 @@ Dividir o código para os microserviços no projeto DevOps do Azure pode ser um 
 
 ### <a name="repository-per-microservice"></a>Repositório por microserviço
 
-À primeira vista, isso parece a abordagem mais lógica para dividir o código-fonte para os microservices. Cada repositório pode conter o código necessário para criar um microserviço. As vantagens dessa abordagem estão prontamente visíveis:
+À primeira vista, essa abordagem parece a abordagem mais lógica para dividir o código-fonte para os microserviços. Cada repositório pode conter o código necessário para criar um microserviço. As vantagens dessa abordagem estão prontamente visíveis:
 
 1. As instruções para criar e manter o aplicativo podem ser adicionadas a um arquivo LEIAme na raiz de cada repositório. Ao inverter os repositórios, é fácil encontrar essas instruções, reduzindo o tempo de rotação para os desenvolvedores.
 2. Cada serviço está localizado em um local lógico, facilmente encontrado sabendo o nome do serviço.
@@ -100,29 +100,29 @@ Outra desvantagem se apresenta ao mover o código entre os serviços. Embora sej
 
 A desvantagem final e mais importante é coordenar alterações. Em um aplicativo de microserviços verdadeiro, não deve haver nenhuma dependência de implantação entre os serviços. Deve ser possível implantar os serviços A, B e C em qualquer ordem, pois eles têm acoplamento flexível. Na realidade, no entanto, há ocasiões em que é desejável fazer uma alteração que cruze vários repositórios ao mesmo tempo. Alguns exemplos incluem a atualização de uma biblioteca para fechar uma brecha de segurança ou alterar um protocolo de comunicação usado por todos os serviços.
 
-Para fazer uma alteração entre repositórios, é necessário que uma confirmação para cada repositório seja feita sucessivamente. Cada alteração em cada repositório precisará ser solicitada por pull e revisada separadamente. Isso pode ser difícil de coordenar.
+Para fazer uma alteração entre repositórios, é necessário que uma confirmação para cada repositório seja feita sucessivamente. Cada alteração em cada repositório precisará ser solicitada por pull e revisada separadamente. Essa atividade pode ser difícil de coordenar.
 
 Uma alternativa ao uso de muitos repositórios é colocar todo o código-fonte em um gigante, sabendo, único repositório.
 
 ### <a name="single-repository"></a>Repositório único
 
-Nessa abordagem, às vezes conhecida como um [monorepository](https://danluu.com/monorepo/), todo o código-fonte de cada serviço é colocado no mesmo repositório. A princípio, parece que uma terrível é uma boa ideia tornar difícil lidar com o código-fonte. No entanto, há algumas vantagens marcadas para trabalhar dessa forma.
+Nessa abordagem, às vezes conhecida como um [monorepository](https://danluu.com/monorepo/), todo o código-fonte de cada serviço é colocado no mesmo repositório. A princípio, essa abordagem parece ser uma boa ideia, o que provavelmente tornaria o difícil de lidar com o código-fonte. No entanto, há algumas vantagens marcadas para trabalhar dessa forma.
 
 A primeira vantagem é que é mais fácil gerenciar dependências entre projetos. Em vez de contar com um feed de artefatos externo, os projetos podem importar diretamente um do outro. Isso significa que as atualizações são instantâneas e as versões conflitantes provavelmente serão encontradas no momento da compilação na estação de trabalho do desenvolvedor. Em vigor, deslocar parte do teste de integração para a esquerda.
 
 Ao mover o código entre projetos, agora é mais fácil preservar o histórico à medida que os arquivos forem detectados como tendo sido movidos em vez de serem reescritos.
 
-Outra vantagem é que a ampla gama de alterações que cruzam limites de serviço pode ser feita em uma única confirmação. Isso reduz a sobrecarga de ter potencialmente dezenas de alterações a serem examinadas individualmente.
+Outra vantagem é que a ampla gama de alterações que cruzam limites de serviço pode ser feita em uma única confirmação. Essa atividade reduz a sobrecarga de ter potencialmente dezenas de alterações a serem examinadas individualmente.
 
 Há muitas ferramentas que podem executar a análise estática de código para detectar práticas de programação inseguras ou uso problemático de APIs. Em um mundo de vários repositórios, cada repositório precisará ser iterado para localizar os problemas neles. O repositório único permite executar a análise em um só lugar.
 
 Também há muitas desvantagens para a abordagem de repositório único. Uma das mais importantes preocupações é que ter um único repositório gera preocupações de segurança. Se o conteúdo de um repositório estiver vazado em um repositório por modelo de serviço, a quantidade de código perdido será mínima. Com um único repositório, tudo o que a empresa possui pode ser perdido. Houve muitos exemplos no passado sobre isso acontecendo e degradendo trabalhos inteiros de desenvolvimento de jogos. Ter vários repositórios expõe menos área de superfície, que é uma característica desejável na maioria das práticas de segurança.
 
-O tamanho do único repositório provavelmente se tornará não gerenciável rapidamente. Isso apresenta algumas implicações de desempenho interessantes. Pode ser necessário usar ferramentas especializadas, como o [sistema de arquivos virtual para git](https://vfsforgit.org/), que foi originalmente projetado para melhorar a experiência dos desenvolvedores na equipe do Windows.
+O tamanho do único repositório provavelmente se tornará não gerenciável rapidamente. Isso apresenta algumas implicações de desempenho interessantes. Pode ser necessário usar ferramentas especializadas, como o [sistema de arquivos virtual para git](https://github.com/Microsoft/VFSForGit), que foi originalmente projetado para melhorar a experiência dos desenvolvedores na equipe do Windows.
 
 Frequentemente, o argumento para usar um único repositório se resume a um argumento que o Facebook ou o Google usam esse método para a organização do código-fonte. Se a abordagem for boa o suficiente para essas empresas, certamente, essa será a abordagem correta para todas as empresas. A verdade da questão é que poucas empresas operam em qualquer coisa como a escala do Facebook ou do Google. Os problemas que ocorrem nessas escalas são diferentes daqueles que a maioria dos desenvolvedores enfrentarão. O que é bom para o ganso pode não ser bom para o analisar.
 
-No final, qualquer uma das soluções pode ser usada para hospedar o código-fonte para os microservices. No entanto, na maioria dos casos, a sobrecarga de gerenciamento e de engenharia da operação em um único repositório não vale as vantagens meagers. Dividir o código em vários repositórios incentiva a melhor separação de preocupações e incentiva a autonomia entre as equipes de desenvolvimento.  
+No final, qualquer uma das soluções pode ser usada para hospedar o código-fonte para os microservices. No entanto, na maioria dos casos, a sobrecarga de gerenciamento e de engenharia da operação em um único repositório não vale as vantagens meagers. Dividir o código em vários repositórios incentiva a melhor separação de preocupações e incentiva a autonomia entre as equipes de desenvolvimento.
 
 ### <a name="standard-directory-structure"></a>Estrutura de diretório padrão
 
@@ -154,7 +154,7 @@ Os estágios nas placas não são a única ferramenta organizacional. Dependendo
 
 O campo Descrição dá suporte aos estilos normais esperados (negrito, sublinhado e tachado) e a capacidade de inserir imagens. Isso o torna uma ferramenta poderosa para uso ao especificar trabalho ou bugs.
 
-As tarefas podem ser acumuladas em recursos, que definem uma unidade maior de trabalho. Os recursos, por sua vez, podem ser [acumulados em Epics](https://docs.microsoft.com/azure/devops/boards/backlogs/define-features-epics?view=azure-devops). A classificação de tarefas nessa hierarquia facilita muito a compreensão de como um recurso grande é para ser implantado.
+As tarefas podem ser acumuladas em recursos, que definem uma unidade maior de trabalho. Os recursos, por sua vez, podem ser [acumulados em Epics](/azure/devops/boards/backlogs/define-features-epics?view=azure-devops). A classificação de tarefas nessa hierarquia facilita muito a compreensão de como um recurso grande é para ser implantado.
 
 ![Figura 10-6 tipos de item de trabalho configurados por padrão no modelo de processo básico](./media/board-issue-types.png)
 
@@ -199,7 +199,7 @@ variables:
   artifactName: drop
   buildPlatform: any cpu
   buildConfiguration: release
-  
+
 pool:
   name: Hosted VS2017
   demands:

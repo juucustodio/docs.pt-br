@@ -1,28 +1,32 @@
 ---
+description: 'Saiba mais sobre: 4213-RunnableInstancesDetectionError'
 title: 4213 - RunnableInstancesDetectionError
 ms.date: 03/30/2017
 ms.assetid: 979ec935-bd9f-4798-be9a-25e08c4b94cf
-ms.openlocfilehash: b846e561d947c10df2565e8db7601e11e9357ba1
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: eb9a69f757fa88acf87a40c828ca9ba4b626e76c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61774186"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99720391"
 ---
 # <a name="4213---runnableinstancesdetectionerror"></a>4213 - RunnableInstancesDetectionError
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
 |ID|4213|  
 |Palavras-chave|WFInstanceStore|  
-|Nível|Erro|  
+|Level|Erro do|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
+
  Detecção de instâncias praticáveis falhadas devido a uma exceção  
   
 ## <a name="message"></a>Mensagem  
+
  Falha na detecção de instâncias executáveis devido à seguinte exceção  
   
 ## <a name="details"></a>Detalhes  

@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: <TypeParameter> elemento (.net Native)'
 title: <TypeParameter> (.NET Nativo)
 ms.date: 03/30/2017
 ms.assetid: d37bb1b7-1ddc-4c6d-8ecf-583f804a2479
-ms.openlocfilehash: c69b535f3a01c287d30189138130066fc10a77e2
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 182cd62dc0584991b8ef0f5757d6005173d6d7a7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73128919"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803640"
 ---
 # <a name="typeparameter-element-net-native"></a>\<TypeParameter> (.NET Nativo)
+
 Aplica a política ao tipo representado por um argumento Type passado para um método.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <Parameter Name="parameter_name"  
@@ -29,6 +31,7 @@ Aplica a política ao tipo representado por um argumento Type passado para um m�
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -60,6 +63,7 @@ Aplica a política ao tipo representado por um argumento Type passado para um m�
 |*policy_setting*|A configuração a ser aplicada a este tipo de política. Os valores possíveis são `All`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal` e `Required All`. Para obter mais informações, consulte [Configurações da política da diretiva de runtime](runtime-directive-policy-settings.md).|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -69,6 +73,7 @@ Aplica a política ao tipo representado por um argumento Type passado para um m�
 |[\<Method>](method-element-net-native.md)|Aplica a política de reflexão de runtime a um construtor ou método.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O `<TypeParameter>` elemento é semelhante ao [\<Parameter>](parameter-element-net-native.md) elemento, exceto que ele só pode ser aplicado a parâmetros do tipo <xref:System.Type> . Ele aplica a política a qualquer tipo que é representado no tempo de execução pelo argumento do tipo especificado pelo atributo `Name`.  
   
  Por exemplo, o serializador NewtonSoft JSON inclui um método `JsonConvert.DeserializeObject(String value, Type type)` estático. As seguintes diretivas de reflexão:  
@@ -92,9 +97,9 @@ Object obj = JsonConvert.DeserializeObject(data, t);
   
  as diretivas de reflexão disponibilizam os metadados para o tipo `StockQuote` disponível para o serializador NewtonSoft JSON no tempo de execução.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [\<Method>Elementos](method-element-net-native.md)
+- [\<Method> Elementos](method-element-net-native.md)
 - [Referência do arquivo de configuração de diretivas do runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
 - [Configurações da política da diretiva de runtime](runtime-directive-policy-settings.md)
 - [Elementos da diretiva de runtime](runtime-directive-elements.md)

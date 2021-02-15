@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <trace> elemento'
 title: Elemento <trace>
 ms.date: 03/30/2017
 f1_keywords:
@@ -10,21 +11,22 @@ helpviewer_keywords:
 - trace element
 - trace listener, <trace> element
 ms.assetid: 7931c942-63c1-47c3-a045-9d9de3cacdbf
-ms.openlocfilehash: 7d8a989219d84e8604e767456c84c0092bc73b22
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 470bc300911656a9c9951e52e3883ba5c8b01c59
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79153160"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750319"
 ---
 # <a name="trace-element"></a>Elemento \<trace>
+
 Contém os ouvintes que coletam, armazenam e roteiam mensagens de rastreamento.  
   
 [**\<configuration>**](../configuration-element.md)  
 &nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;**\<trace>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <trace autoflush="true|false"
@@ -33,6 +35,7 @@ Contém os ouvintes que coletam, armazenam e roteiam mensagens de rastreamento.
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -71,7 +74,8 @@ Contém os ouvintes que coletam, armazenam e roteiam mensagens de rastreamento.
 |`system.diagnostics`|Especifica os ouvintes de rastreamento que coletam, armazenam e roteiam mensagens e o nível em que uma opção de rastreamento é definida.|  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como usar o `<trace>` elemento para adicionar o ouvinte `MyListener` à `Listeners` coleção. `MyListener`Cria um arquivo chamado `MyListener.log` e grava a saída no arquivo. O `useGlobalLock` atributo é definido como `false` , o que faz com que o bloqueio global não seja usado se o ouvinte de rastreamento for thread-safe. O `autoflush` atributo é definido como `true` , o que faz com que o ouvinte de rastreamento grave no arquivo, independentemente de o <xref:System.Diagnostics.Trace.Flush%2A?displayProperty=nameWithType> método ser chamado. O `indentsize` atributo é definido como 0 (zero), o que faz com que o ouvinte recue zero espaços quando o <xref:System.Diagnostics.Trace.Indent%2A?displayProperty=nameWithType> método é chamado.  
+
+ O exemplo a seguir mostra como usar o `<trace>` elemento para adicionar o ouvinte `MyListener` à `Listeners` coleção. `MyListener` Cria um arquivo chamado `MyListener.log` e grava a saída no arquivo. O `useGlobalLock` atributo é definido como `false` , o que faz com que o bloqueio global não seja usado se o ouvinte de rastreamento for thread-safe. O `autoflush` atributo é definido como `true` , o que faz com que o ouvinte de rastreamento grave no arquivo, independentemente de o <xref:System.Diagnostics.Trace.Flush%2A?displayProperty=nameWithType> método ser chamado. O `indentsize` atributo é definido como 0 (zero), o que faz com que o ouvinte recue zero espaços quando o <xref:System.Diagnostics.Trace.Indent%2A?displayProperty=nameWithType> método é chamado.  
   
 ```xml  
 <configuration>  
@@ -85,7 +89,7 @@ Contém os ouvintes que coletam, armazenam e roteiam mensagens de rastreamento.
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Diagnostics.TraceListener>
 - <xref:System.Diagnostics.DefaultTraceListener>

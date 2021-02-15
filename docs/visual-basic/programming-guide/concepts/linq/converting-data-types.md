@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: convertendo tipos de dados (Visual Basic)'
 title: Converter tipos de dados
 ms.date: 07/20/2015
 ms.assetid: 9b0cf1ab-de48-4c6e-9f00-05b40fade46e
-ms.openlocfilehash: 1394f53923ba850ae11fbc326a25c279589c3be1
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 7650f5d5d6f727b7815b9dd2de8a565e27fa18d9
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410845"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100428708"
 ---
 # <a name="converting-data-types-visual-basic"></a>Convertendo tipos de dados (Visual Basic)
 
@@ -80,7 +81,7 @@ Sub Cast()
 End Sub
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Linq>
 - [Visão geral de operadores de consulta padrão (Visual Basic)](standard-query-operators-overview.md)

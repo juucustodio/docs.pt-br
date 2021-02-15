@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: fluxo de controle em programas assíncronos (Visual Basic)'
 title: Fluxo de controle em programas assíncronos
 ms.date: 07/20/2015
 ms.assetid: b0443af7-c586-4cb0-b476-742ae4098a96
-ms.openlocfilehash: 0c479b9dd2a691b1b353fac54ee3320a895b1c7f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: bf0ca6a083971cb02cfb6dff2dfcaaabd5405b36
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396656"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100428240"
 ---
 # <a name="control-flow-in-async-programs-visual-basic"></a>Fluxo de controle em programas assíncronos (Visual Basic)
 
@@ -62,7 +63,7 @@ Class MainWindow
 End Class
 ```
 
-Cada um dos locais rotulados, "UM"a "SEIS," exibe informações sobre o estado atual do programa. A saída a seguir será produzida:
+Cada um dos locais rotulados, "UM"a "SEIS," exibe informações sobre o estado atual do programa. A seguinte saída é produzida:
 
 ```console
 ONE:   Entering startButton_Click.
@@ -121,7 +122,7 @@ Para executar o projeto, realize as seguintes etapas:
 
     A caixa de diálogo **Novo Projeto** será aberta.
 
-3. No painel **modelos instalados** , escolha **Visual Basic**e, em seguida, escolha **aplicativo WPF** na lista de tipos de projeto.
+3. No painel **modelos instalados** , escolha **Visual Basic** e, em seguida, escolha **aplicativo WPF** na lista de tipos de projeto.
 
 4. Digite `AsyncTracer` como o nome do projeto e, em seguida, escolha o botão **OK**.
 
@@ -288,7 +289,7 @@ Dim urlContents As String = Await getStringTask
 
 A imagem a seguir mostra o fluxo de controle de `client.GetStringAsync` para a atribuição de e para a `getStringTask` criação de `getStringTask` para o aplicativo de um operador Await.
 
-![Etapa três](../../../../csharp/programming-guide/concepts/async/media/asynctrace-three.png "AsyncTrace-três")
+![Etapa três](../../../../csharp/programming-guide/concepts/async/media/asynctrace-three.png "AsyncTrace-Three")
 
 A expressão await suspende `AccessTheWebAsync` até que `client.GetStringAsync` retorne. Enquanto isso, o controle retorna para o chamador de `AccessTheWebAsync`, `startButton_Click`.
 
@@ -367,7 +368,7 @@ A imagem a seguir mostra o retorno do controle de `AccessTheWebAsync` para `star
 
 ![Etapa SEIS](../../../../csharp/programming-guide/concepts/async/media/asynctrace-six.png "AsyncTrace-seis")
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Programação assíncrona com Async e Await (Visual Basic)](index.md)
 - [Tipos de retorno assíncronos (Visual Basic)](async-return-types.md)

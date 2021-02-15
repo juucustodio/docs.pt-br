@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: a4476fbff572c004632153e5a98812c241efca57
-ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83721161"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96031961"
 ---
 ### <a name="openssl-versions-on-macos"></a>Versões do OpenSSL no macOS
 
@@ -12,7 +12,7 @@ Os tempos de execução do .NET Core 3,0 e posteriores no MacOS agora preferem a
 
 O tempo de execução do .NET Core 2,1 agora dá suporte às versões do OpenSSL 1.1. x, mas ainda prefere as versões do OpenSSL 1.0. x.
 
-#### <a name="change-description"></a>Descrição da alteração
+#### <a name="change-description"></a>Descrição das alterações
 
 Anteriormente, o tempo de execução do .NET Core usava as versões do OpenSSL 1.0. x no macOS para tipos que interagem com o OpenSSL. A versão mais recente do OpenSSL 1.0. x, OpenSSL 1.0.2, agora está sem suporte. Para manter os tipos que usam o OpenSSL nas versões com suporte do OpenSSL, os tempos de execução do .NET Core 3,0 e posteriores agora usam versões mais recentes do OpenSSL no macOS.
 

@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <security> de <netMsmqBinding>'
 title: <security> de <netMsmqBinding>
 ms.date: 03/30/2017
 ms.assetid: 001d11a9-7439-498c-b09d-fca20eaf8cd3
-ms.openlocfilehash: 7877fd59aff581eee5b62a1ca224dbf51c956069
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 1b60d9e390e371555f4c3abf4988e79bb0f04fe8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73738671"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786844"
 ---
 # <a name="security-of-netmsmqbinding"></a>\<security> de \<netMsmqBinding>
+
 Define as configurações de segurança para uma associação MSMQ. Especifica se a segurança de transporte ou de SOAP está habilitada e, em caso afirmativo, qual modo de autenticação e níveis de proteção estão em uso.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -19,7 +21,7 @@ Define as configurações de segurança para uma associação MSMQ. Especifica s
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<security>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <security mode="None/Transport/Message/Both">
@@ -33,6 +35,7 @@ Define as configurações de segurança para uma associação MSMQ. Especifica s
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -52,9 +55,9 @@ Define as configurações de segurança para uma associação MSMQ. Especifica s
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|associação|O elemento Binding da[\<netMsmqBinding>](netmsmqbinding.md)|  
+|associação|O elemento Binding da [\<netMsmqBinding>](netmsmqbinding.md)|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement>
 - <xref:System.ServiceModel.NetMsmqBinding.Security%2A>

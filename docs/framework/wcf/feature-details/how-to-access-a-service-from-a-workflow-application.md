@@ -1,15 +1,17 @@
 ---
-title: Como acessar um serviço de um aplicativo de fluxo de trabalho
+description: 'Saiba mais sobre: como acessar um serviço de um aplicativo de fluxo de trabalho'
+title: 'Como: acessar um serviço de um aplicativo de fluxo de trabalho'
 ms.date: 03/30/2017
 ms.assetid: 925ef8ea-5550-4c9d-bb7b-209e20c280ad
-ms.openlocfilehash: 2ce79b726b623c2a25bf14065682e685455ca575
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: f8972bf7755c0103d164633d53d8d32508ce2efe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597235"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743090"
 ---
-# <a name="how-to-access-a-service-from-a-workflow-application"></a>Como acessar um serviço de um aplicativo de fluxo de trabalho
+# <a name="how-to-access-a-service-from-a-workflow-application"></a>Como: acessar um serviço de um aplicativo de fluxo de trabalho
+
 Este tópico descreve como chamar um serviço de fluxo de trabalho de um aplicativo de console de fluxo de trabalho. Depende da conclusão do tópico [como: criar um serviço de fluxo de trabalho com atividades de mensagens](how-to-create-a-workflow-service-with-messaging-activities.md) . Embora este tópico descreva como chamar um serviço de fluxo de trabalho de um aplicativo de fluxo de trabalho, os mesmos métodos podem ser usados para chamar qualquer serviço de Windows Communication Foundation (WCF) de um aplicativo de fluxo de trabalho.
 
 ### <a name="create-a-workflow-console-application-project"></a>Criar um projeto de aplicativo do console de fluxo de trabalho
@@ -65,5 +67,5 @@ Este tópico descreve como chamar um serviço de fluxo de trabalho de um aplicat
 ## <a name="see-also"></a>Consulte também
 
 - [Serviços de fluxo de trabalho](workflow-services.md)
-- [Como criar um serviço de fluxo de trabalho com atividades de mensagens](how-to-create-a-workflow-service-with-messaging-activities.md)
-- [Consumindo um serviço WCF de um fluxo de trabalho em um projeto Web](https://docs.microsoft.com/archive/blogs/endpoint/how-to-consume-a-wcf-service-from-a-wf4-workflow)
+- [Como: criar um serviço de fluxo de trabalho com atividades de mensagens](how-to-create-a-workflow-service-with-messaging-activities.md)
+- [Consumindo um serviço WCF de um fluxo de trabalho em um projeto Web](/archive/blogs/endpoint/how-to-consume-a-wcf-service-from-a-wf4-workflow)

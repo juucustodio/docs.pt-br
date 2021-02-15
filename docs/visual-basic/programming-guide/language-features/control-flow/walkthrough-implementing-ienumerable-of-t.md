@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Walkthrough: Implementing IEnumerable (Of T) in Visual Basic'
 title: Implementando IEnumerable
 ms.date: 07/31/2018
 helpviewer_keywords:
@@ -7,14 +8,15 @@ helpviewer_keywords:
 - loop structures [Visual Basic], optimizing performance
 - control flow [Visual Basic]
 ms.assetid: c60d7589-51f2-4463-a2d5-22506bbc1554
-ms.openlocfilehash: 582957c91eac63cf7f72dd2f6c0cf40e627be686
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 87905e4f110d3a9d95b1cad642296ea8105f32f4
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84402025"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100428136"
 ---
 # <a name="walkthrough-implementing-ienumerableof-t-in-visual-basic"></a>Instruções passo a passo: implementando IEnumerable(Of T) no Visual Basic
+
 A <xref:System.Collections.Generic.IEnumerable%601> interface é implementada por classes que podem retornar uma sequência de valores de um item por vez. A vantagem de retornar dados de um item por vez é que você não precisa carregar o conjunto completo de dados na memória para trabalhar com ele. Você só precisa usar memória suficiente para carregar um único item dos dados. As classes que implementam a `IEnumerable(T)` interface podem ser usadas com `For Each` loops ou consultas LINQ.  
   
  Por exemplo, considere um aplicativo que deve ler um arquivo de texto grande e retornar cada linha do arquivo que corresponde a critérios de pesquisa específicos. O aplicativo usa uma consulta LINQ para retornar linhas do arquivo que correspondem aos critérios especificados. Para consultar o conteúdo do arquivo usando uma consulta LINQ, o aplicativo pode carregar o conteúdo do arquivo em uma matriz ou em uma coleção. No entanto, carregar o arquivo inteiro em uma matriz ou coleção consumiria muito mais memória do que o necessário. Em vez disso, a consulta LINQ poderia consultar o conteúdo do arquivo usando uma classe enumerável, retornando apenas os valores que correspondem aos critérios de pesquisa. As consultas que retornam apenas alguns valores correspondentes consumirão muito menos memória.  
@@ -35,7 +37,7 @@ A <xref:System.Collections.Generic.IEnumerable%601> interface é implementada po
 
 1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no arquivo Class1. vb e clique em **renomear**. Renomeie o arquivo como `StreamReaderEnumerable.vb` e pressione ENTER. Renomear o arquivo também renomeará a classe para `StreamReaderEnumerable`. Essa classe implementará a interface `IEnumerable(Of String)`.
 
-1. Clique com o botão direito do mouse no projeto StreamReaderEnumerable, aponte para **Adicionar**e clique em **novo item**. Selecione o modelo de **classe** . Na caixa **Nome**, digite `StreamReaderEnumerator.vb` e clique em **OK**.
+1. Clique com o botão direito do mouse no projeto StreamReaderEnumerable, aponte para **Adicionar** e clique em **novo item**. Selecione o modelo de **classe** . Na caixa **Nome**, digite `StreamReaderEnumerator.vb` e clique em **OK**.
 
  A primeira classe neste projeto é a classe enumerável e implementará a `IEnumerable(Of String)` interface. Essa interface genérica implementa a <xref:System.Collections.IEnumerable> interface e garante que os consumidores dessa classe possam acessar valores digitados como `String` .  
   
@@ -93,9 +95,9 @@ A <xref:System.Collections.Generic.IEnumerable%601> interface é implementada po
   
  [!code-vb[VbVbalrIteratorWalkthrough#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrIteratorWalkthrough/VB/Module1.vb#10)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Introdução a LINQ no Visual Basic](../linq/introduction-to-linq.md)
-- [Fluxo de controle](index.md)
+- [Fluxo de Controle](index.md)
 - [Estruturas de Loop](loop-structures.md)
 - [Instrução For Each...Next](../../../language-reference/statements/for-each-next-statement.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: consultando o serviço de dados (WCF Data Services)'
 title: Consultando o serviço de dados (WCF Data Services)
 ms.date: 03/30/2017
 dev_langs:
@@ -9,14 +10,16 @@ helpviewer_keywords:
 - WCF Data Services, querying
 - WCF Data Services, accessing data
 ms.assetid: 823e9444-27aa-4f1f-be8e-0486d67f54c0
-ms.openlocfilehash: 13334f6425c47e45d729d606d99602a99f35d8e6
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 7eb76b9d90273235d97318a70a4c880f869f249b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286152"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794930"
 ---
 # <a name="querying-the-data-service-wcf-data-services"></a>Consultando o serviço de dados (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 A biblioteca de cliente WCF Data Services permite que você execute consultas em um serviço de dados usando padrões de programação de .NET Framework familiares, incluindo o uso do LINQ (consulta integrada à linguagem). A biblioteca de cliente converte uma consulta, que é definida no cliente como uma instância da classe <xref:System.Data.Services.Client.DataServiceQuery%601>, em uma mensagem de solicitação HTTP GET. A biblioteca recebe a mensagem de resposta e converte-a em instâncias de classes do serviço de dados cliente. Essas classes são rastreadas pelo <xref:System.Data.Services.Client.DataServiceContext> ao qual o <xref:System.Data.Services.Client.DataServiceQuery%601> pertence.
 
@@ -139,18 +142,18 @@ Você também pode obter apenas a contagem total de entidades no conjunto como u
 
 - [Considerações sobre o LINQ](linq-considerations-wcf-data-services.md)
 
-- [Como executar consultas de serviço de dados](how-to-execute-data-service-queries-wcf-data-services.md)
+- [Como: executar consultas de serviço de dados](how-to-execute-data-service-queries-wcf-data-services.md)
 
-- [Como adicionar opções de consulta para uma consulta de serviço de dados](how-to-add-query-options-to-a-data-service-query-wcf-data-services.md)
+- [Como: adicionar opções de consulta a uma consulta de serviço de dados](how-to-add-query-options-to-a-data-service-query-wcf-data-services.md)
 
-- [Como determinar o número de entidades retornadas por uma consulta](number-of-entities-returned-by-a-query-wcf.md)
+- [Como: determinar o número de entidades retornadas por uma consulta](number-of-entities-returned-by-a-query-wcf.md)
 
-- [Como especificar as credenciais do cliente para uma solicitação de serviço de dados](specify-client-creds-for-a-data-service-request-wcf.md)
+- [Como: especificar as credenciais do cliente para uma solicitação de serviço de dados](specify-client-creds-for-a-data-service-request-wcf.md)
 
-- [Como definir os cabeçalhos da solicitação do cliente](how-to-set-headers-in-the-client-request-wcf-data-services.md)
+- [Como: definir os cabeçalhos da solicitação do cliente](how-to-set-headers-in-the-client-request-wcf-data-services.md)
 
-- [Como fazer para projetar resultados de consulta](how-to-project-query-results-wcf-data-services.md)
+- [Como: projetar resultados da consulta](how-to-project-query-results-wcf-data-services.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Biblioteca de cliente do WCF Data Services](wcf-data-services-client-library.md)

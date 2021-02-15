@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugCode:: GetFunction'
 title: Método ICorDebugCode::GetFunction
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: c568b737-fdb2-4816-accd-051f5ab760f1
 topic_type:
 - apiref
-ms.openlocfilehash: 9f785eafa8925324e3bd269ca08a3b1367b74c44
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: c90635bf1821d70d6d056d5cbd495ddfa2d2a2ff
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82893586"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711200"
 ---
 # <a name="icordebugcodegetfunction-method"></a>Método ICorDebugCode::GetFunction
+
 Obtém o "ICorDebugFunction" associado a este "ICorDebugCode".  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,13 +36,16 @@ HRESULT GetFunction (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ppFunction`  
  fora Um ponteiro para o endereço da função.  
   
 ## <a name="remarks"></a>Comentários  
- `ICorDebugCode`e `ICorDebugFunction` manter uma relação um-para-um.  
+
+ `ICorDebugCode` e `ICorDebugFunction` manter uma relação um-para-um.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

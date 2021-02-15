@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: CeeSectionRelocExtra Union'
 title: CeeSectionRelocExtra União
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: d9568cf6-7f98-4cd6-ab36-0a2bd509afcc
 topic_type:
 - apiref
-ms.openlocfilehash: d11fefe220fdb00457cc48a6cd166673350be049
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 40001c1a0772e24633f4232da8e7817f3747f8ea
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84006019"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678842"
 ---
 # <a name="ceesectionrelocextra-union"></a>CeeSectionRelocExtra União
+
 Representa um deslocamento de endereço que é usado pela interface [ICeeGen](iceegen-interface.md) para realocar uma seção.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,19 +36,20 @@ typedef union  {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`highAdj`|O ajuste de endereço superior para a seção.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Incluído como um recurso em MsCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Uniões de metadados](metadata-unions.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugILFrame:: GetStackDepth'
 title: Método ICorDebugILFrame::GetStackDepth
 ms.date: 03/30/2017
 api_name:
@@ -15,17 +16,18 @@ helpviewer_keywords:
 ms.assetid: da6a1123-871d-4492-9d35-3bdb49f94c93
 topic_type:
 - apiref
-ms.openlocfilehash: ad0c93dfcb4dc630793a6735ab00de9da6166e9a
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 950903f35c59d87a121e71a2ce81e9e0302ec2f4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73130963"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791350"
 ---
 # <a name="icordebugilframegetstackdepth-method"></a>Método ICorDebugILFrame::GetStackDepth
+
 Esse método não foi implementado.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT GetStackDepth (  
@@ -34,4 +36,5 @@ HRESULT GetStackDepth (
 ```  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorDebug.idl, CorDebug.h

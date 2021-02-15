@@ -1,28 +1,32 @@
 ---
+description: 'Saiba mais sobre: 1005-WorkflowApplicationIdled'
 title: 1005 - WorkflowApplicationIdled
 ms.date: 03/30/2017
 ms.assetid: 74d77dfa-f20d-4fe9-a6ae-e6d1b5fe4182
-ms.openlocfilehash: 6bbd12e8025b6a127dbfec8e5d3690825c188c4d
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: ee8d0b7ff2155333213a718a04c3966024fda89d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62008597"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755597"
 ---
 # <a name="1005---workflowapplicationidled"></a>1005 - WorkflowApplicationIdled
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
 |ID|1005|  
 |Palavras-chave|WFRuntime|  
-|Nível|Informações|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
+
  Indica que um aplicativo de fluxo de trabalho rodou em marcha lenta.  
   
 ## <a name="message"></a>Mensagem  
+
  Identificação de WorkflowApplication: “%1 " foi ociosa.  
   
 ## <a name="details"></a>Detalhes  

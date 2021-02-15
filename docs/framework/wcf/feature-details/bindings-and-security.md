@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Windows Communication Foundation, security
 - bindings [WCF]
 ms.assetid: 4de03dd3-968a-4e65-af43-516e903d7f95
-ms.openlocfilehash: e012ec9ad340c74f5bc776cfc6d8b88326210fec
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 86b9a1d7b0c772a308b9f059bb31c1f489635300
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85245318"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90559396"
 ---
 # <a name="bindings-and-security"></a>Associações e segurança
 
@@ -193,30 +193,30 @@ Se nenhuma das associações fornecidas pelo sistema atender aos requisitos, voc
 
 A tabela a seguir resume os recursos oferecidos na configuração do modo de segurança, ou seja, lista os recursos disponíveis quando o modo de segurança é definido como `Transport` , `Message` ou `TransportWithMessageCredential` . Use esta tabela para ajudá-lo a encontrar os recursos de segurança que seu aplicativo requer.
 
-|Configuração|Recursos|
+|Setting|Recursos|
 |-------------|--------------|
-|Transporte|Autenticação de servidor<br /><br /> Autenticação de cliente<br /><br /> Segurança ponto a ponto<br /><br /> Interoperabilidade<br /><br /> Aceleração de hardware<br /><br /> Alta taxa de transferência<br /><br /> Proteger o firewall<br /><br /> Aplicativos de alta latência<br /><br /> Nova criptografia em vários saltos|
-|Mensagem|Autenticação de servidor<br /><br /> Autenticação de cliente<br /><br /> Segurança de ponta a ponta<br /><br /> Interoperabilidade<br /><br /> Declarações avançadas<br /><br /> Federação<br /><br /> Autenticação multifator<br /><br /> Tokens personalizados<br /><br /> Serviço de Notary/carimbo de data/hora<br /><br /> Aplicativos de alta latência<br /><br /> Persistência de assinaturas de mensagem|
-|TransportWithMessageCredential|Autenticação de servidor<br /><br /> Autenticação de cliente<br /><br /> Segurança ponto a ponto<br /><br /> Interoperabilidade<br /><br /> Aceleração de hardware<br /><br /> Alta taxa de transferência<br /><br /> Declarações de cliente avançadas<br /><br /> Federação<br /><br /> Autenticação multifator<br /><br /> Tokens personalizados<br /><br /> Proteger o firewall<br /><br /> Aplicativos de alta latência<br /><br /> Nova criptografia em vários saltos|
+|Transport|Autenticação do servidor<br /><br /> Autenticação de cliente<br /><br /> Segurança ponto a ponto<br /><br /> Interoperabilidade<br /><br /> Aceleração de hardware<br /><br /> Alta taxa de transferência<br /><br /> Proteger o firewall<br /><br /> Aplicativos de alta latência<br /><br /> Nova criptografia em vários saltos|
+|Mensagem|Autenticação do servidor<br /><br /> Autenticação de cliente<br /><br /> Segurança de ponta a ponta<br /><br /> Interoperabilidade<br /><br /> Declarações avançadas<br /><br /> Federação<br /><br /> Autenticação multifator<br /><br /> Tokens personalizados<br /><br /> Serviço de Notary/carimbo de data/hora<br /><br /> Aplicativos de alta latência<br /><br /> Persistência de assinaturas de mensagem|
+|TransportWithMessageCredential|Autenticação do servidor<br /><br /> Autenticação de cliente<br /><br /> Segurança ponto a ponto<br /><br /> Interoperabilidade<br /><br /> Aceleração de hardware<br /><br /> Alta taxa de transferência<br /><br /> Declarações de cliente avançadas<br /><br /> Federação<br /><br /> Autenticação multifator<br /><br /> Tokens personalizados<br /><br /> Proteger o firewall<br /><br /> Aplicativos de alta latência<br /><br /> Nova criptografia em vários saltos|
 
 A tabela a seguir lista as associações que dão suporte às várias configurações de modo. Selecione uma associação da tabela a ser usada para criar o ponto de extremidade de serviço.
 
 |Associação|Suporte ao modo de transporte|Suporte ao modo de mensagem|Suporte do TransportWithMessageCredential|
 |-------------|----------------------------|--------------------------|--------------------------------------------|
-|`BasicHttpBinding`|Yes|Yes|Yes|
-|`WSHttpBinding`|Yes|Yes|Sim|
+|`BasicHttpBinding`|Sim|Sim|Sim|
+|`WSHttpBinding`|Sim|Sim|Sim|
 |`WSDualHttpBinding`|Não|Sim|Não|
-|`NetTcpBinding`|Sim|Yes|Yes|
-|`NetNamedPipeBinding`|Sim|No|Não|
+|`NetTcpBinding`|Sim|Sim|Sim|
+|`NetNamedPipeBinding`|Sim|Não|Não|
 |`NetMsmqBinding`|Sim|Sim|Não|
-|`MsmqIntegrationBinding`|Sim|No|Não|
-|`wsFederationHttpBinding`|Não|Sim|Yes|
+|`MsmqIntegrationBinding`|Sim|Não|Não|
+|`wsFederationHttpBinding`|Não|Sim|Sim|
 
 ## <a name="transport-credentials-in-bindings"></a>Credenciais de transporte em associações
 
 A tabela a seguir lista os tipos de credenciais de cliente disponíveis ao usar o `BasicHttpBinding` ou o `WSHttpBinding` no modo de segurança de transporte.
 
-|Type|Descrição|
+|Tipo|Descrição|
 |----------|-----------------|
 |Nenhum|Especifica que o cliente não precisa apresentar nenhuma credencial. Isso se traduz em um cliente anônimo.|
 |Basic|Autenticação básica. Para obter mais informações, consulte RFC 2617 – autenticação HTTP: autenticação básica e resumida, disponível em <https://go.microsoft.com/fwlink/?LinkId=84023> .|
@@ -230,7 +230,7 @@ A tabela a seguir lista os tipos de credenciais de cliente disponíveis ao usar 
 
 A tabela a seguir lista os tipos de credenciais de cliente disponíveis ao usar uma associação no modo de segurança da mensagem.
 
-|Type|Descrição|
+|Tipo|Descrição|
 |----------|-----------------|
 |Nenhum|Permite que o serviço interaja com clientes anônimos.|
 |Windows|Permite que as trocas de mensagens SOAP sejam feitas sob o contexto autenticado de uma credencial do Windows.|
@@ -238,11 +238,11 @@ A tabela a seguir lista os tipos de credenciais de cliente disponíveis ao usar 
 |Certificado|Permite que o serviço exija que o cliente seja autenticado usando um certificado.|
 |IssuedToken|Permite que o serviço use um serviço de token de segurança para fornecer um token personalizado.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Visão geral de segurança](security-overview.md)
 - [Protegendo serviços e clientes](securing-services-and-clients.md)
 - [Selecionando um tipo de credencial](selecting-a-credential-type.md)
 - [Recursos de segurança com associações personalizadas](security-capabilities-with-custom-bindings.md)
 - [Comportamentos de segurança](security-behaviors-in-wcf.md)
-- [Modelo de segurança para o Windows Server app Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Modelo de segurança para o Windows Server app Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

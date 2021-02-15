@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: cenários de rede ponto a ponto'
 title: Cenários de rede ponto a ponto
 ms.date: 03/30/2017
 ms.assetid: d23b1a64-2e08-4014-882a-c1dd766bdcc2
-ms.openlocfilehash: 9b5d4d35085585fe04f2f0c0a105e6dff4b1fcc0
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 097b006c5f260a91c1f134a443f7d2f63a1f7866
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "64623078"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738257"
 ---
 # <a name="peer-to-peer-networking-scenarios"></a>Cenários de rede ponto a ponto
 

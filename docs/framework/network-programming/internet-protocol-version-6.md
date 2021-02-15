@@ -9,14 +9,15 @@ helpviewer_keywords:
 - Internet Protocol version 6, improvements
 - Internet Protocol version 6
 ms.assetid: e6fa8ebd-010a-4c48-a5ec-a5102c53c06f
-ms.openlocfilehash: dd8b0b26e449fba7479d2678aff25ed49e721a90
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: f5b74674ba4144f75d125267f2458394bb74fab1
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502386"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96283946"
 ---
 # <a name="internet-protocol-version-6"></a>Protocolo IP versão 6
+
 O protocolo IP versão 6 (IPv6) é um novo pacote de protocolos padrão para a camada de rede da Internet. O IPv6 foi projetado para resolver muitos dos problemas da versão atual do pacote de protocolos IP (conhecido como IPv4) relacionados ao o esgotamento de endereços, a segurança, a configuração automática, a necessidade de extensibilidade e outros. O IPv6 expande os recursos da Internet para habilitar novos tipos de aplicativos, inclusive aplicativos móveis e de ponto a ponto. Estes são os principais problemas do protocolo IPv4 atual:  
   
 - Rápido esgotamento do espaço de endereço.  
@@ -46,6 +47,7 @@ O protocolo IP versão 6 (IPv6) é um novo pacote de protocolos padrão para a c
  Para obter mais informações, consulte [Endereçamento IPv6](ipv6-addressing.md), [Roteamento IPv6](ipv6-routing.md), [Configuração automática de IPv6](ipv6-auto-configuration.md), [Habilitando e desabilitando o IPv6](enabling-and-disabling-ipv6.md) e [Como modificar o arquivo de configuração do computador para habilitar o suporte a IPv6](how-to-modify-the-computer-configuration-file-to-enable-ipv6-support.md).  
   
 ## <a name="references"></a>Referências  
+
  Veja a seguir documentos do RFC selecionados que podem ser encontrados no site da [IETF (Internet Engineering Task Force)](https://www.ietf.org/):  
   
 - RFC 1287, voltado a arquitetura de Internet futura.  
@@ -56,10 +58,10 @@ O protocolo IP versão 6 (IPv6) é um novo pacote de protocolos padrão para a c
   
 - RFC 2374, um formato de endereço unicast global agregável IPv6.  
   
- Você também pode encontrar informações relacionadas ao IPv6 em [Versão 6 do IP (IPv6)](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd379498%28v=ws.10%29).  
+ Você também pode encontrar informações relacionadas ao IPv6 em [Versão 6 do IP (IPv6)](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd379498(v=ws.10)).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-- [Amostra de soquetes IPv6](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms180981%28v=vs.85%29)
+- [Amostra de soquetes IPv6](/previous-versions/dotnet/netframework-3.0/ms180981(v=vs.85))
 - [Amostras de programação de rede](network-programming-samples.md)
 - [Soquetes](sockets.md)

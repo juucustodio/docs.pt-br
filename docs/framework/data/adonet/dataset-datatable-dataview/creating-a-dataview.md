@@ -1,25 +1,27 @@
 ---
+description: 'Saiba mais sobre: Criando um DataView'
 title: Criar um DataView
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: b1cc02d1-23b1-4439-a998-0da1899f3442
-ms.openlocfilehash: 9d21b17068ff3ce5b0bd3990144383d7f9ded2f9
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e9614e7ee9aae58c4dc57f856a959bd3624dac03
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79151332"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725019"
 ---
 # <a name="creating-a-dataview"></a>Criar um DataView
-Há duas maneiras de criar um <xref:System.Data.DataView>. Você pode usar o construtor **DataView** ou criar <xref:System.Data.DataTable.DefaultView%2A> uma referência <xref:System.Data.DataTable>à propriedade do . O construtor **DataView** pode estar vazio ou pode tomar uma **Tabela de Dados** como um único argumento ou uma Tabela de **Dados,** juntamente com critérios de filtro, critérios de classificação e um filtro de estado de linha. Para obter mais informações sobre os argumentos adicionais disponíveis para uso com o **DataView,** consulte [Dados de classificação e filtragem](sorting-and-filtering-data.md).  
+
+Há duas maneiras de criar um <xref:System.Data.DataView>. Você pode usar o construtor **DataView** ou pode criar uma referência à <xref:System.Data.DataTable.DefaultView%2A> Propriedade do <xref:System.Data.DataTable> . O construtor **DataView** pode estar vazio ou pode ter uma **DataTable** como um único argumento, ou uma **DataTable** junto com critérios de filtro, critérios de classificação e um filtro de estado de linha. Para obter mais informações sobre os argumentos adicionais disponíveis para uso com o **DataView**, consulte [classificando e Filtrando dados](sorting-and-filtering-data.md).  
   
- Como o índice de um **DataView** é construído tanto quando o **DataView** é criado, quanto quando qualquer uma das propriedades **Sort**, **RowFilter**ou **RowStateFilter** são modificadas, você obtém o melhor desempenho fornecendo qualquer ordem de classificação inicial ou critérios de filtragem como argumentos de construtor quando você cria o **DataView**. Criar um **DataView** sem especificar critérios de classificação ou filtro e, em seguida, definir as propriedades **Classificar,** **RowFilter**ou **RowStateFilter** mais tarde faz com que o índice seja construído pelo menos duas vezes: uma vez quando o **DataView** é criado e novamente quando qualquer um dos tipos ou propriedades do filtro for modificado.  
+ Como o índice de um **DataView** é criado tanto quando o **DataView** é criado, quanto quando qualquer uma das propriedades **Sort**, **RowStateFilter** **ou de propriedade** é modificada, você obtém o melhor desempenho fornecendo qualquer ordem de classificação inicial ou critérios de filtragem como argumentos de construtor ao criar o **DataView**. A criação de um **DataView** sem especificar critérios de classificação ou de filtro e, em seguida, definir as propriedades **Sort**, **userFilter** ou **RowStateFilter** posteriormente faz com que o índice seja compilado pelo menos duas vezes: uma vez quando o **DataView** é criado e novamente quando qualquer uma das propriedades de classificação ou filtro é modificada.  
   
- Observe que se você criar um **DataView** usando o construtor que não tenha argumentos, você não poderá usar o **DataView** até definir a propriedade **Tabela.**  
+ Observe que se você criar um **DataView** usando o construtor que não usa argumentos, não será possível usar o **DataView** até que você defina a propriedade **Table** .  
   
- O exemplo de código a seguir demonstra como criar um **DataView** usando o construtor **DataView.** Uma **coluna RowFilter**, **Sort** e **DataViewRowState** são fornecidas juntamente com a **Tabela de Dados**.  
+ O exemplo de código a seguir demonstra como criar um **DataView** usando o construtor **DataView** . Um **filtro** de lista, coluna de **classificação** e **DataViewRowState** são fornecidos junto com a **DataTable**.  
   
 ```vb  
 Dim custDV As DataView = New DataView(custDS.Tables("Customers"), _  
@@ -35,7 +37,7 @@ DataView custDV = new DataView(custDS.Tables["Customers"],
     DataViewRowState.CurrentRows);  
 ```  
   
- O exemplo de código a seguir demonstra como obter uma referência ao **DataView** padrão de uma Tabela de **Dados** usando a propriedade **DefaultView** da tabela.  
+ O exemplo de código a seguir demonstra como obter uma referência ao **DataView** padrão de uma **DataTable** usando a propriedade **ModoPadrão** da tabela.  
   
 ```vb  
 Dim custDV As DataView = custDS.Tables("Customers").DefaultView  
@@ -45,7 +47,7 @@ Dim custDV As DataView = custDS.Tables("Customers").DefaultView
 DataView custDV = custDS.Tables["Customers"].DefaultView;  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Data.DataTable>
 - <xref:System.Data.DataView>

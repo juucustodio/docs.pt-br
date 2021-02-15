@@ -1,19 +1,19 @@
 ---
-title: Tutoriais do .NET Core
-description: Siga os tutoriais para aprender como criar aplicativos e bibliotecas do .NET Core no Windows, Mac e Linux.
-author: richlander
-ms.date: 09/09/2020
+title: Tutoriais do .NET
+description: Siga os tutoriais para aprender o .NET para criar aplicativos e bibliotecas em Mac, Linux e Windows.
+author: tdykstra
+ms.date: 12/07/2020
 titleSuffix: ''
-ms.openlocfilehash: 84c8daa735df0255b0e383244f1abd8db4fe21fe
-ms.sourcegitcommit: 1e8382d0ce8b5515864f8fbb178b9fd692a7503f
+ms.openlocfilehash: cf466f7ea004199052c1f02f5860668f2bb2ff28
+ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89656152"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97009313"
 ---
-# <a name="learn-net-core-and-the-net-core-sdk-tools-by-exploring-these-tutorials"></a>Aprenda sobre o .NET Core e as ferramentas de SDK do .NET Core explorando estes tutoriais
+# <a name="learn-net-and-the-net-sdk-tools-by-exploring-these-tutorials"></a>Conheça as ferramentas do .NET e do SDK do .NET explorando estes tutoriais
 
-Os tutoriais a seguir estão disponíveis para aprender mais sobre o .NET Core.
+Os tutoriais a seguir mostram como desenvolver aplicativos de console e bibliotecas para .NET Core, .NET 5 e versões posteriores. Para outros tipos de aplicativos, consulte [tutoriais para introdução ao .net](../../standard/get-started.md).
 
 ## <a name="use-visual-studio"></a>Usar o Virtual Studio
 
@@ -58,7 +58,3 @@ Escolha estes tutoriais se quiser usar Visual Studio Code ou algum outro editor 
 - [Criar modelos para a CLI](cli-templates-create-item-template.md)
 - [Criar e usar ferramentas para a CLI](../tools/global-tools-how-to-create.md)
 - [Criar um aplicativo com plug-ins](creating-app-with-plugin-support.md)
-
-## <a name="create-web-apps"></a>Criar aplicativos Web
-
-Para ver tutoriais sobre como desenvolver aplicativos Web do ASP.NET Core, consulte a [documentação do ASP.NET Core](/aspnet/core/).

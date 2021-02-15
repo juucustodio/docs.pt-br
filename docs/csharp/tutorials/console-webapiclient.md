@@ -1,18 +1,18 @@
 ---
 title: Cria um cliente REST usando .NET Core
-description: Este tutorial ensina vários recursos no .NET Core e da linguagem C#.
+description: Este tutorial ensina sobre alguns recursos no .NET Core e na linguagem C#.
 ms.date: 01/09/2020
 ms.assetid: 51033ce2-7a53-4cdd-966d-9da15c8204d2
-ms.openlocfilehash: 8db87440bb6e0995b1cc2c97b0d28995170ada8c
-ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
+ms.openlocfilehash: a8490efbc954ca585a2a0fa9d571191095a4b24c
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88656938"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98024971"
 ---
 # <a name="rest-client"></a>Cliente REST
 
-Este tutorial ensina vários recursos no .NET Core e da linguagem C#. Você aprenderá:
+Este tutorial ensina vários recursos no .NET Core e da linguagem C#. O que você aprenderá:
 
 * As noções básicas do CLI do .NET Core.
 * Uma visão geral dos recursos da linguagem C#.
@@ -21,20 +21,20 @@ Este tutorial ensina vários recursos no .NET Core e da linguagem C#. Você apre
 * Processamento de informações de JSON
 * Gerenciamento de configuração com Atributos.
 
-Você compilará um aplicativo que emite solicitações HTTP para um serviço REST no GitHub. Você lerá informações no formato JSON e converterá esse pacote JSON em objetos C#. Por fim, você verá como trabalhar com objetos C#.
+Você criará um aplicativo que emite solicitações HTTP para um serviço REST no GitHub. Você lerá informações no formato JSON e converterá esse pacote JSON em objetos C#. Por fim, você verá como trabalhar com objetos C#.
 
-Há muitos recursos neste tutorial. Vamos compilá-los individualmente.
+Há muitos recursos neste tutorial. Vamos compilá-las uma a uma.
 
-Se preferir acompanhar com o [exemplo final](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-webapiclient) para esse tópico, você poderá baixá-lo. Para obter instruções de download, consulte [Exemplos e tutoriais](../../samples-and-tutorials/index.md#view-and-download-samples).
+Se preferir acompanhar o [exemplo final](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-webapiclient) deste artigo, você poderá baixá-lo. Para obter instruções de download, consulte [Exemplos e tutoriais](../../samples-and-tutorials/index.md#view-and-download-samples).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Você precisará configurar seu computador para executar o .NET Core. Você pode encontrar as instruções de instalação na página de [downloads do .NET Core](https://dotnet.microsoft.com/download) . Execute esse aplicativo no Windows, Linux, macOS ou em um contêiner do Docker.
-Será necessário instalar o editor de código de sua preferência. As descrições a seguir usam o [Visual Studio Code](https://code.visualstudio.com/), que é uma software livre, no editor de plataforma. No entanto, você pode usar quaisquer ferramentas que esteja familiarizado.
+Você precisará configurar seu computador para executar o .NET Core. Encontre as instruções de instalação na página [Downloads do .NET Core](https://dotnet.microsoft.com/download). Você pode executar esse aplicativo no Windows, Linux ou macOS ou em um contêiner do Docker.
+Você precisará instalar seu editor de código favorito. As descrições a seguir usam o [Visual Studio Code](https://code.visualstudio.com/), que é uma software livre, no editor de plataforma. No entanto, você pode usar quaisquer ferramentas que esteja familiarizado.
 
 ## <a name="create-the-application"></a>Criar o aplicativo
 
-A primeira etapa é criar um novo aplicativo. Abra um prompt de comando e crie um novo diretório para seu aplicativo. Torne ele o diretório atual. Digite o seguinte comando em uma janela de console:
+A primeira etapa é criar um novo aplicativo. Abra um prompt de comando e crie um novo diretório para seu aplicativo. Torne ele o diretório atual. Insira o seguinte comando em uma janela do console:
 
 ```dotnetcli
 dotnet new console --name WebAPIClient
@@ -42,7 +42,7 @@ dotnet new console --name WebAPIClient
 
 Isso cria os arquivos iniciais de um aplicativo "Olá, Mundo" básico. O nome do projeto é "WebAPIClient". Como esse é um novo projeto, nenhuma das dependências está em vigor. A primeira execução baixará o .NET Core Framework, instalará um certificado de desenvolvimento e executará o Gerenciador de pacotes NuGet para restaurar as dependências ausentes.
 
-Antes de começar a fazer modificações, digite `dotnet run` ([veja a observação](#dotnet-restore-note)) no prompt de comando para executar seu aplicativo. `dotnet run` executará automaticamente `dotnet restore` se estiverem faltando dependências em seu ambiente. Ele também executará `dotnet build` se seu aplicativo precisar ser reconstruído.
+Antes de começar a fazer modificações, `cd` no diretório "WebAPIClient" e digite `dotnet run` ([consulte a observação](#dotnet-restore-note)) no prompt de comando para executar o aplicativo. `dotnet run` executará automaticamente `dotnet restore` se estiverem faltando dependências em seu ambiente. Ele também executará `dotnet build` se seu aplicativo precisar ser reconstruído.
 Após sua configuração inicial, você só precisará executar `dotnet restore` ou `dotnet build` quando fizer sentido para seu projeto.
 
 ## <a name="adding-new-dependencies"></a>Adicionar novas dependências
@@ -129,7 +129,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 ```
 
-A primeira versão faz uma solicitação da Web para ler a lista de todos os repositórios na organização dotnet foundation. (A ID do gitHub para o .NET Foundation é 'dotnet'). As primeiras linhas configuram o <xref:System.Net.Http.HttpClient> para essa solicitação. Primeiro, ele é configurado para aceitar as respostas JSON do GitHub.
+A primeira versão faz uma solicitação da Web para ler a lista de todos os repositórios na organização dotnet foundation. (A ID do GitHub para o .NET Foundation é `dotnet` .) As primeiras linhas configuram o <xref:System.Net.Http.HttpClient> para essa solicitação. Primeiro, ele é configurado para aceitar as respostas JSON do GitHub.
 Esse formato é simplesmente JSON. A próxima linha adiciona um cabeçalho de agente do usuário para todas as solicitações deste objeto. Esses dois cabeçalhos são verificados pelo código do servidor GitHub e são necessários para recuperar informações do GitHub.
 
 Depois de configurar o <xref:System.Net.Http.HttpClient>, faça uma solicitação da Web e recupere a resposta. Nesta primeira versão, você usa o método de conveniência <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)?displayProperty=nameWithType>. Este método prático inicia uma tarefa que faz a solicitação da Web e, depois, quando a solicitação retornar, ele lê o fluxo de resposta e extrai o conteúdo do fluxo. O corpo da resposta retorna como um <xref:System.String>. A cadeia de caracteres fica disponível após a conclusão da tarefa.

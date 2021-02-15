@@ -9,14 +9,15 @@ helpviewer_keywords:
 - first-chance exception notifications
 - exceptions, first chance notifications
 ms.assetid: 66f002b8-a97d-4a6e-a503-2cec01689113
-ms.openlocfilehash: e8b5ae5fb69c7befd329316aee11523f79d73fcd
-ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
+ms.openlocfilehash: 0b3150a52a68e078d1052a9894bb652ad35027d0
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85104735"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96242559"
 ---
 # <a name="how-to-receive-first-chance-exception-notifications"></a>Como: Receber notificações de exceção de primeira tentativa
+
 O evento <xref:System.AppDomain.FirstChanceException> da classe <xref:System.AppDomain> permite que você receba uma notificação de que uma exceção foi lançada, antes de o Common Language Runtime começar a procurar por manipuladores de exceção.
 
  O evento é gerado no nível de domínio do aplicativo. Um thread de execução pode passar por vários domínios de aplicativo, assim, uma exceção não tratada em um domínio de aplicativo poderia ser tratada em outro domínio de aplicativo. A notificação ocorre em cada domínio de aplicativo que tenha adicionado um manipulador para o evento, até que um domínio de aplicativo lide com a exceção.
@@ -26,6 +27,7 @@ O evento <xref:System.AppDomain.FirstChanceException> da classe <xref:System.App
  Para obter um exemplo mais complexo que abrange vários domínios de aplicativo, veja o exemplo para o evento <xref:System.AppDomain.FirstChanceException>.
 
 ## <a name="receiving-first-chance-exception-notifications-in-the-default-application-domain"></a>Receber notificações de exceção de primeira tentativa no Domínio do aplicativo padrão
+
  No procedimento a seguir, o ponto de entrada para o aplicativo, o método `Main()`, é executado no domínio do aplicativo padrão.
 
 #### <a name="to-demonstrate-first-chance-exception-notifications-in-the-default-application-domain"></a>Para demonstrar notificações de exceção de primeira tentativa no domínio do aplicativo padrão
@@ -51,6 +53,7 @@ O evento <xref:System.AppDomain.FirstChanceException> da classe <xref:System.App
      [!code-vb[System.AppDomain.FirstChanceException_howto_simple#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.appdomain.firstchanceexception_howto_simple/vb/example.vb#5)]
 
 ## <a name="receiving-first-chance-exception-notifications-in-another-application-domain"></a>Receber notificações de exceção de primeira tentativa em outro Domínio do aplicativo
+
  Se seu programa contiver mais de um domínio de aplicativo, escolha quais domínios de aplicativo recebem notificações.
 
 #### <a name="to-receive-first-chance-exception-notifications-in-an-application-domain-that-you-create"></a>Para receber notificações de exceção de primeira tentativa em outro Domínio do aplicativo criado por você
@@ -85,6 +88,7 @@ O evento <xref:System.AppDomain.FirstChanceException> da classe <xref:System.App
      [!code-vb[System.AppDomain.FirstChanceException_howto#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.appdomain.firstchanceexception_howto/vb/example.vb#5)]
 
 ## <a name="example"></a>Exemplo
+
  O exemplo a seguir cria um domínio do aplicativo chamado `AD1` e adiciona o manipulador de eventos ao evento <xref:System.AppDomain.FirstChanceException> do domínio do aplicativo. O exemplo cria uma instância da classe `Worker` no domínio do aplicativo e chama um método chamado `Thrower`, que gera uma <xref:System.ArgumentException>. Dependendo do valor do argumento, o método captura a exceção ou não consegue lidar com ela.
 
  Cada vez que o método `Thrower` gera uma exceção no `AD1`, o evento <xref:System.AppDomain.FirstChanceException> é gerado no `AD1` e o manipulador de eventos exibe uma mensagem. Em seguida, o runtime procura um manipulador de exceção. No primeiro caso, o manipulador de exceção é encontrado em `AD1`. No segundo caso, a exceção é tratada no `AD1` e, em vez disso, é capturada no domínio do aplicativo padrão.

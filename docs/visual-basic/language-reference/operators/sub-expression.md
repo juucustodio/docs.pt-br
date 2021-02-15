@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: sub Expression (Visual Basic)'
 title: Subexpressão
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,17 +7,18 @@ helpviewer_keywords:
 - Sub Expression [Visual Basic]
 - subroutines [Visual Basic], sub expressions
 ms.assetid: 36b6bfd1-6539-4d8f-a5eb-6541a745ffde
-ms.openlocfilehash: f862730220d0595faecaa915b1eaad2a3cdc0053
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e47aa8f9707701b5fd9d90fb3fabb31e9c052b53
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406308"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795281"
 ---
 # <a name="sub-expression-visual-basic"></a>Subexpressão (Visual Basic)
+
 Declara os parâmetros e o código que definem uma expressão lambda de sub-rotina.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 Sub ( [ parameterlist ] ) statement  
@@ -31,13 +33,15 @@ End Sub
 |Termo|Definição|  
 |---|---|  
 |`parameterlist`|Opcional. Uma lista de nomes de variáveis locais que representam os parâmetros do procedimento. Os parênteses devem estar presentes mesmo quando a lista estiver vazia. Para obter mais informações, consulte [lista de parâmetros](../statements/parameter-list.md).|  
-|`statement`|Obrigatórios. Uma única instrução.|  
-|`statements`|Obrigatórios. Uma lista de instruções.|  
+|`statement`|Obrigatório. Uma única instrução.|  
+|`statements`|Obrigatório. Uma lista de instruções.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Uma *expressão lambda* é uma sub-rotina que não tem um nome e que executa uma ou mais instruções. Você pode usar uma expressão lambda em qualquer lugar que possa usar um tipo delegado, exceto como um argumento para `RemoveHandler` . Para obter mais informações sobre delegados e o uso de expressões lambda com delegados, consulte [instrução delegate](../statements/delegate-statement.md) e [conversão de delegado reduzida](../../programming-guide/language-features/delegates/relaxed-delegate-conversion.md).  
   
 ## <a name="lambda-expression-syntax"></a>Sintaxe da expressão lambda  
+
  A sintaxe de uma expressão lambda é semelhante à de uma sub-rotina padrão. As diferenças são:  
   
 - Uma expressão lambda não tem um nome.  
@@ -53,11 +57,12 @@ End Sub
 - Parâmetros genéricos não são permitidos em expressões lambda.  
   
 ## <a name="example"></a>Exemplo  
+
  Veja a seguir um exemplo de uma expressão lambda que grava um valor no console. O exemplo mostra a sintaxe de expressão lambda de linha única e de várias linhas para uma sub-rotina. Para obter mais exemplos, consulte [expressões lambda](../../programming-guide/language-features/procedures/lambda-expressions.md).  
   
  [!code-vb[VbVbalrLambdas#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#15)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instrução Sub](../statements/sub-statement.md)
 - [Expressões lambda](../../programming-guide/language-features/procedures/lambda-expressions.md)

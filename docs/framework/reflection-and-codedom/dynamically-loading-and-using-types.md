@@ -13,14 +13,15 @@ helpviewer_keywords:
 - implicit late binding
 - reflection, dynamically using types
 ms.assetid: db985bec-5942-40ec-b13a-771ae98623dc
-ms.openlocfilehash: 39a4a9a2ff77cb900db7f39a55dc17a5b8c62cf3
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: be9991a4df866f65aabe063be3cc2b374f4d124d
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86475080"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96266786"
 ---
 # <a name="dynamically-loading-and-using-types"></a>Carregando e usando tipos dinamicamente
+
 A reflexão fornece a infraestrutura usada pelos compiladores de linguagem para implementar a associação tardia implícita. Associação é o processo de localizar a declaração (ou seja, a implementação) que corresponde a um tipo especificado exclusivamente. Quando esse processo ocorre no tempo de execução em vez do tempo de compilação, ele é chamado de associação tardia. O Visual Basic permite que você use associação tardia implícita em seu código. O compilador do Visual Basic chama um método auxiliar que usa a reflexão para obter o tipo de objeto. Os argumentos passados para o método auxiliar fazem com que o método apropriado seja invocado no tempo de execução. Esses argumentos são a instância (um objeto) na qual o método será invocado, o nome do método invocado (uma cadeia de caracteres) e os argumentos passados para o método invocado (uma matriz de objetos).  
   
  No exemplo a seguir, o compilador do Visual Basic usa reflexão implicitamente para chamar um método em um objeto cujo tipo não é conhecido no tempo de compilação. Uma classe **HelloWorld** tem um método **PrintHello** que imprime “Hello World” concatenado com algum texto que é passado para o método **PrintHello**. O método **PrintHello** chamado neste exemplo é na verdade um <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType>; o código do Visual Basic permite que o método **PrintHello** seja invocado como se o tipo de objeto (helloObj) fosse conhecido durante o tempo de compilação (associação antecipada) em vez de no tempo de execução (associação tardia).  
@@ -40,6 +41,7 @@ End Module
 ```  
   
 ## <a name="custom-binding"></a>Associação personalizado  
+
  Além de ser usado implicitamente por compiladores para associação tardia, a reflexão pode ser usada explicitamente no código para realizar a associação tardia.  
   
  O [Common Language Runtime](../../standard/clr.md) dá suporte a várias linguagens de programação e as regras de associação dessas linguagens são diferentes. No caso de associação antecipada, os geradores de código podem controlar essa associação completamente. No entanto, na associação tardia por meio de reflexão, a associação deve ser controlada pela associação personalizada. A classe <xref:System.Reflection.Binder> fornece controle personalizado do membro de seleção e da invocação.  
@@ -53,6 +55,7 @@ End Module
  [!code-vb[Conceptual.Types.Dynamic#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.types.dynamic/vb/source1.vb#1)]  
   
 ### <a name="invokemember-and-createinstance"></a>InvokeMember e CreateInstance  
+
  Use <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType> para invocar um membro de um tipo. Os métodos **CreateInstance** de várias classes, como <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType> e <xref:System.Reflection.Assembly.CreateInstance%2A?displayProperty=nameWithType>, são formas especializadas de **InvokeMember** que criam novas instâncias do tipo especificado. A classe **Binder** é usada para resolução de sobrecarga e coerção de argumento nesses métodos.  
   
  O exemplo a seguir mostra três combinações possíveis de coerção de argumento (conversão de tipo) e seleção de membro. No caso 1, não é necessária nenhuma coerção de argumento ou seleção de membro. No caso 2, somente a seleção de membro é necessária. No caso 3, somente a coerção de argumento é necessária.  
@@ -90,14 +93,14 @@ End Module
 |Int16|Int32, Int64, Single e Double|  
 |UInt32|UInt64, Int64, Single e Double|  
 |Int32|Int64, Single e Double|  
-|UInt64|Single, Double|  
-|Int64|Single, Double|  
-|Single|Double|  
+|UInt64|Single e Double|  
+|Int64|Single e Double|  
+|Single|Duplo|  
 |Tipo Nonreference|Tipo de referência|  
   
  A classe <xref:System.Type> tem métodos **Get** que usam parâmetros do tipo **Binder** para resolver referências a um determinado membro. <xref:System.Type.GetConstructor%2A?displayProperty=nameWithType>, <xref:System.Type.GetMethod%2A?displayProperty=nameWithType> e <xref:System.Type.GetProperty%2A?displayProperty=nameWithType> pesquisam um determinado membro do tipo atual, fornecendo informações de assinatura para esse membro. <xref:System.Reflection.Binder.SelectMethod%2A?displayProperty=nameWithType> e <xref:System.Reflection.Binder.SelectProperty%2A?displayProperty=nameWithType> são chamados de volta para selecionar as informações de determinada assinatura dos métodos apropriados.  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType>
 - <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedDocument:: FindClosestLine'
 title: Método ISymUnmanagedDocument::FindClosestLine
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 628f2a04-e529-407d-841e-3b3da219a9cb
 topic_type:
 - apiref
-ms.openlocfilehash: 9e6134d39096c4ab157aa545646d83339f92a0b8
-ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
+ms.openlocfilehash: 0409a5cc29bf148a49a5267d34662f763fc302d9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83441026"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99737825"
 ---
 # <a name="isymunmanageddocumentfindclosestline-method"></a>Método ISymUnmanagedDocument::FindClosestLine
+
 Retorna a linha mais próxima que é um ponto de sequência, dada uma linha neste documento que pode ou não ser um ponto de sequência.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,6 +36,7 @@ HRESULT FindClosestLine(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `line`  
  no Uma linha neste documento.  
   
@@ -41,8 +44,9 @@ HRESULT FindClosestLine(
  fora Um ponteiro para uma variável que recebe a linha.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  S_OK se o método tiver sucesso; caso contrário, um código de erro.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedDocument](isymunmanageddocument-interface.md)

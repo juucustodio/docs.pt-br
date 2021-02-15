@@ -1,19 +1,19 @@
 ---
-title: Configuração do aplicativo
+title: Configuração de aplicativo
 description: Saiba como configurar Blazor aplicativos sem usar ConfigurationManager.
 author: csharpfritz
 ms.author: jefritz
 no-loc:
 - Blazor
-ms.date: 04/01/2020
-ms.openlocfilehash: 6154b4f8c7a5bff42e603b12d5ef85468b80224e
-ms.sourcegitcommit: 0100be20fcf23f61dab672deced70059ed71bb2e
+ms.date: 11/20/2020
+ms.openlocfilehash: 360d9077bc981a2e9875bb1f86b49c0029424d6e
+ms.sourcegitcommit: 2f485e721f7f34b87856a51181b5b56624b31fd5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88267497"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96509787"
 ---
-# <a name="app-configuration"></a>Configuração do aplicativo
+# <a name="app-configuration"></a>Configuração de aplicativo
 
 A principal maneira de carregar a configuração de aplicativo no Web Forms é com entradas no arquivo *web.config* &mdash; no servidor ou em um arquivo de configuração relacionado referenciado por *web.config*. Você pode usar o `ConfigurationManager` objeto estático para interagir com as configurações do aplicativo, cadeias de conexão do repositório de dados e outros provedores de configuração estendidos que são adicionados ao aplicativo. É comum ver interações com a configuração do aplicativo, como visto no código a seguir:
 
@@ -28,9 +28,9 @@ Com ASP.NET Core e servidor Blazor , o arquivo de *web.config* pode estar presen
 
 ASP.NET Core reconhece que há muitas fontes de configuração que você pode querer usar para seu aplicativo. A estrutura tenta oferecer o melhor desses recursos por padrão. A configuração é lida e agregada dessas várias fontes por ASP.NET Core. Os valores carregados posteriormente para a mesma chave de configuração têm precedência sobre os valores anteriores.
 
-A ASP.NET Core foi projetada para ser compatível com a nuvem e para facilitar a configuração de aplicativos para operadores e desenvolvedores. ASP.NET Core tem reconhecimento de ambiente e sabe se ele está em execução no `Production` seu `Development` ambiente ou. O indicador de ambiente é definido na `ASPNETCORE_ENVIRONMENT` variável de ambiente do sistema. Se nenhum valor for configurado, o aplicativo usa como padrão a execução no `Production` ambiente.
+O ASP.NET Core foi projetado para ser compatível com a nuvem e tornar a configuração de aplicativos mais fácil para operadores e desenvolvedores. ASP.NET Core tem reconhecimento de ambiente e sabe se ele está em execução no `Production` seu `Development` ambiente ou. O indicador de ambiente é definido na `ASPNETCORE_ENVIRONMENT` variável de ambiente do sistema. Se nenhum valor for configurado, o aplicativo usa como padrão a execução no `Production` ambiente.
 
-Seu aplicativo pode disparar e adicionar a configuração de várias fontes com base no nome do ambiente. Por padrão, a configuração é carregada dos seguintes recursos na ordem listada:
+Seu aplicativo pode disparar e adicionar a configuração de várias fontes com base no nome do ambiente. Por padrão, a configuração é carregada a partir dos seguintes recursos na ordem listada:
 
 1. *appsettings.jsno* arquivo, se presente
 1. *appSettings. Arquivo {ENVIRONMENT_NAME}. JSON* , se presente
@@ -64,7 +64,7 @@ Os segredos do usuário são:
 * Valores de configuração que são armazenados em um arquivo JSON na estação de trabalho do desenvolvedor, fora da pasta de desenvolvimento do aplicativo.
 * Carregado somente quando executado no `Development` ambiente.
 * Associado a um aplicativo específico.
-* Gerenciado com o comando do CLI do .NET Core `user-secrets` .
+* Gerenciado com o comando da CLI do .NET `user-secrets` .
 
 Configure seu aplicativo para o armazenamento de segredos executando o `user-secrets` comando:
 

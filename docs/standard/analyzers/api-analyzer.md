@@ -3,13 +3,12 @@ title: Analisador de API do .NET
 description: Saiba como o analisador de API do .NET pode ajudar a detectar problemas de compatibilidade de plataforma e de APIs preteridas.
 author: oliag
 ms.date: 02/20/2020
-ms.technology: dotnet-standard
-ms.openlocfilehash: 8da4b2add206daa431124a7d24efc2676cbcaa69
-ms.sourcegitcommit: 43d5aca3fda42bad8843f6c4e72f6bd52daa55f1
+ms.openlocfilehash: 47ef2368692aee56ebd3db7803cbde7368d38049
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89598097"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94819598"
 ---
 # <a name="net-api-analyzer"></a>Analisador de API do .NET
 
@@ -62,18 +61,18 @@ A janela **Lista de Erros** contém avisos com uma ID exclusiva por API preterid
 
 Clicando na ID, você vai para uma página da Web com informações detalhadas sobre por que a API foi preterida e sugestões sobre APIs alternativas que podem ser usadas.
 
-Todos os avisos podem ser suprimidos clicando com o botão direito do mouse no membro realçado e selecionando **suprimir \<diagnostic ID> **. Há duas maneiras de suprimir avisos:
+Todos os avisos podem ser suprimidos clicando com o botão direito do mouse no membro realçado e selecionando **suprimir \<diagnostic ID>**. Há duas maneiras de suprimir avisos:
 
 - [localmente (no código-fonte)](#suppress-warnings-locally)
 - [globalmente (em um arquivo de supressão)](#suppress-warnings-globally) ‒ recomendado
 
 ### <a name="suppress-warnings-locally"></a>Suprimir avisos localmente
 
-Para suprimir avisos localmente, clique com o botão direito do mouse no membro para o qual você deseja suprimir avisos e, em seguida, selecione **ações rápidas e refatorar**  >  **suprimir a *ID* \<diagnostic ID> **  >  **de diagnóstico na origem**. A diretiva de pré-processador de aviso [#pragma](../../csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning.md) é adicionada ao código-fonte no escopo definido: ![ captura de tela de código frameed com #pragma Aviso de desabilitação.](media/api-analyzer/suppress-in-source.jpg)
+Para suprimir avisos localmente, clique com o botão direito do mouse no membro para o qual você deseja suprimir avisos e, em seguida, selecione **ações rápidas e refatorar**  >  **suprimir a *ID* \<diagnostic ID>**  >  **de diagnóstico na origem**. A diretiva de pré-processador de aviso [#pragma](../../csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning.md) é adicionada ao código-fonte no escopo definido: ![ captura de tela de código frameed com #pragma Aviso de desabilitação.](media/api-analyzer/suppress-in-source.jpg)
 
 ### <a name="suppress-warnings-globally"></a>Suprimir avisos globalmente
 
-Para suprimir os avisos globalmente, clique com o botão direito do mouse no membro para o qual você deseja suprimir avisos e, em seguida, selecione **ações rápidas e refatoração**  >  **suprimir a *ID* \<diagnostic ID> **  >  **de diagnóstico no arquivo de supressão**.
+Para suprimir os avisos globalmente, clique com o botão direito do mouse no membro para o qual você deseja suprimir avisos e, em seguida, selecione **ações rápidas e refatoração**  >  **suprimir a *ID* \<diagnostic ID>**  >  **de diagnóstico no arquivo de supressão**.
 
 ![Captura de tela do menu de atalho mostrando opções para suprimir um aviso no Visual Studio.](media/api-analyzer/suppress-in-sup-file.jpg)
 
@@ -84,6 +83,9 @@ Um arquivo *GlobalSuppressions.cs* é adicionado ao projeto após a primeira sup
 A supressão global é a maneira recomendada de garantir a consistência do uso da API em projetos.
 
 ## <a name="discover-cross-platform-issues"></a>Descobrir problemas entre plataformas
+
+> [!NOTE]
+> O .NET 5,0 apresenta o [analisador de compatibilidade de plataforma](platform-compat-analyzer.md) como uma substituição desse recurso. O analisador de compatibilidade de plataforma está incluído no SDK do .NET (sem necessidade de instalá-lo separadamente) e está ativado por padrão.
 
 De forma semelhante a APIs preteridas, o analisador identifica todas as APIs que não são entre plataformas. Por exemplo, <xref:System.Console.WindowWidth?displayProperty=nameWithType> funciona no Windows, mas não no Linux ou no macOS. A ID de diagnóstico é mostrada na janela **Lista de Erros**. Você pode suprimir esse aviso clicando e selecionando **Ações Rápidas e Refatorações**. Diferentemente de casos de preterição em que você tem duas opções (continuar usando o membro preterido e suprimir avisos ou não o utilizar), aqui, se estiver desenvolvendo o código apenas para algumas plataformas, você poderá suprimir todos os avisos para todas as outras plataformas em que não planejar executar o código. Para fazer isso, basta editar o arquivo de projeto e adicionar a propriedade `PlatformCompatIgnore` que lista todas as plataformas a serem ignoradas. Os valores aceitos são: `Linux`, `macOS` e `Windows`.
 
@@ -121,7 +123,7 @@ Todos esses diagnósticos estão disponíveis não só no IDE, mas também na li
 
 ## <a name="configuration"></a>Configuração
 
-O usuário decide como o diagnóstico deve ser tratado: como avisos, erros, sugestões ou ser desligado. Por exemplo, como arquiteto, você pode decidir que problemas de compatibilidade devem ser tratados como erros, chamadas a algumas APIs preteridas geram avisos, enquanto outras só geram sugestões. Você pode configurar isso separadamente por ID de diagnóstico e por projeto. Para fazer isso no **Gerenciador de Soluções**, navegue até o nó **Dependências** em seu projeto. Expanda os nós que os analisadores de **dependências**  >  **Analyzers**  >  **Microsoft. dotnet. Analyzers. Compatibility**. Clique com o botão direito do mouse na ID de diagnóstico, selecione **Definir Severidade de Conjunto de Regras** e selecione a opção desejada.
+O usuário decide como o diagnóstico deve ser tratado: como avisos, erros, sugestões ou ser desligado. Por exemplo, como arquiteto, você pode decidir que problemas de compatibilidade devem ser tratados como erros, chamadas a algumas APIs preteridas geram avisos, enquanto outras só geram sugestões. Você pode configurar isso separadamente por ID de diagnóstico e por projeto. Para fazer isso no **Gerenciador de Soluções**, navegue até o nó **Dependências** em seu projeto. Expanda os nós que os analisadores de **dependências**  >  **Analyzers**  >  **Microsoft. dotnet. Analyzers. Compatibility**. Clique com o botão direito do mouse na ID de diagnóstico, selecione **definir severidade do conjunto de regras** e escolha a opção desejada.
 
 ![Captura de tela de Gerenciador de Soluções mostrando o diagnóstico e a caixa de diálogo pop-up com a severidade do conjunto de regras.](media/api-analyzer/disable-notifications.jpg)
 
@@ -129,3 +131,4 @@ O usuário decide como o diagnóstico deve ser tratado: como avisos, erros, suge
 
 - Postagem de blog [Introduzindo o analisador de API](https://devblogs.microsoft.com/dotnet/introducing-api-analyzer/).
 - Vídeo de demonstração no YouTube [Analisador de API](https://youtu.be/eeBEahYXGd0).
+- [Analisador de compatibilidade de plataforma](platform-compat-analyzer.md)

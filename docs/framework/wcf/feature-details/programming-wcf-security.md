@@ -8,22 +8,24 @@ dev_langs:
 helpviewer_keywords:
 - message security [WCF], programming overview
 ms.assetid: 739ec222-4eda-4cc9-a470-67e64a7a3f10
-ms.openlocfilehash: 8e77c667dd8904c10bbab88e1413690677cef53b
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 4ffbf6a05abd3ed9ebcea4b2e85f0dc305a4f2db
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85244979"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96244763"
 ---
 # <a name="programming-wcf-security"></a>Programação de segurança do WCF
+
 Este tópico descreve as tarefas de programação fundamentais usadas para criar um aplicativo de Windows Communication Foundation de segurança (WCF). Este tópico aborda somente autenticação, confidencialidade e integridade, coletivamente conhecido como *segurança de transferência*. Este tópico não abrange a autorização (o controle de acesso a recursos ou serviços); para obter informações sobre autorização, consulte [Authorization](authorization-in-wcf.md).  
   
 > [!NOTE]
-> Para obter uma introdução valiosa aos conceitos de segurança, especialmente em relação ao WCF, consulte o conjunto de tutoriais de padrões e práticas no MSDN em [cenários, padrões e diretrizes de implementação para o WSE (Web Services Enhancements) 3,0](https://docs.microsoft.com/previous-versions/msp-n-p/ff648183(v=pandp.10)).  
+> Para obter uma introdução valiosa aos conceitos de segurança, especialmente em relação ao WCF, consulte o conjunto de tutoriais de padrões e práticas no MSDN em [cenários, padrões e diretrizes de implementação para o WSE (Web Services Enhancements) 3,0](/previous-versions/msp-n-p/ff648183(v=pandp.10)).  
   
  A programação da segurança do WCF baseia-se em três etapas definindo o seguinte: o modo de segurança, um tipo de credencial de cliente e os valores de credencial. Você pode executar essas etapas por meio de código ou configuração.  
   
 ## <a name="setting-the-security-mode"></a>Configurando o modo de segurança  
+
  O seguinte explica as etapas gerais para a programação com o modo de segurança no WCF:  
   
 1. Selecione uma das associações predefinidas apropriadas para os requisitos do aplicativo. Para obter uma lista das opções de associação, consulte [associações fornecidas pelo sistema](../system-provided-bindings.md). Por padrão, quase todas as ligações têm segurança habilitada. A única exceção é a <xref:System.ServiceModel.BasicHttpBinding> classe (usando a configuração, o [\<basicHttpBinding>](../../configure-apps/file-schema/wcf/basichttpbinding.md) ).  
@@ -55,6 +57,7 @@ Este tópico descreve as tarefas de programação fundamentais usadas para criar
      Uma sessão segura ocorre quando um cliente e um serviço criam um canal usando uma chave simétrica (tanto o cliente quanto o servidor usam a mesma chave para o comprimento de uma conversa, até que a caixa de diálogo seja fechada).  
   
 ## <a name="setting-the-client-credential-type"></a>Configurando o tipo de credencial do cliente  
+
  Selecione um tipo de credencial de cliente conforme apropriado. Para obter mais informações, consulte [selecionando um tipo de credencial](selecting-a-credential-type.md). Os seguintes tipos de credencial do cliente estão disponíveis:  
   
 - `Windows`  
@@ -92,12 +95,14 @@ Este tópico descreve as tarefas de programação fundamentais usadas para criar
  [!code-vb[c_WsHttpService#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_wshttpservice/vb/source.vb#1)]  
   
 ## <a name="setting-service-credential-values"></a>Definindo valores de credenciais de serviço  
+
  Depois de selecionar um tipo de credencial de cliente, você deve definir as credenciais reais para o serviço e o cliente a serem usados. No serviço, as credenciais são definidas usando a <xref:System.ServiceModel.Description.ServiceCredentials> classe e retornadas pela <xref:System.ServiceModel.ServiceHostBase.Credentials%2A> propriedade da <xref:System.ServiceModel.ServiceHostBase> classe. A associação em uso implica o tipo de credencial de serviço, o modo de segurança escolhido e o tipo de credencial do cliente. O código a seguir define um certificado para uma credencial de serviço.  
   
  [!code-csharp[c_tcpService#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_tcpservice/cs/source.cs#3)]
  [!code-vb[c_tcpService#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_tcpservice/vb/source.vb#3)]  
   
 ## <a name="setting-client-credential-values"></a>Definindo valores de credenciais de cliente  
+
  No cliente, defina os valores de credencial do cliente usando a <xref:System.ServiceModel.Description.ClientCredentials> classe e retornados pela <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A> propriedade da <xref:System.ServiceModel.ClientBase%601> classe. O código a seguir define um certificado como uma credencial em um cliente usando o protocolo TCP.  
   
  [!code-csharp[c_TcpClient#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_tcpclient/cs/source.cs#1)]
@@ -105,5 +110,5 @@ Este tópico descreve as tarefas de programação fundamentais usadas para criar
   
 ## <a name="see-also"></a>Veja também
 
-- [Programação básica do WCF](../basic-wcf-programming.md)
+- [Programação de WCF básica](../basic-wcf-programming.md)
 - [Cenários comuns de segurança](common-security-scenarios.md)

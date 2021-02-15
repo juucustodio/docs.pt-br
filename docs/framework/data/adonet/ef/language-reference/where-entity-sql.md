@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: onde (Entity SQL)'
 title: ONDE (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: a8e1061e-0028-4a6f-8f19-b9f48e96c4b8
-ms.openlocfilehash: b551d15d7de2cf07afc7455b7fd0a0faf6436ccf
-ms.sourcegitcommit: 628e8147ca10187488e6407dab4c4e6ebe0cac47
+ms.openlocfilehash: e094a93927f6ac77aef772654f1d8d4fcf999cbd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72319179"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712864"
 ---
 # <a name="where-entity-sql"></a>ONDE (Entity SQL)
+
 A cláusula WHERE é aplicada diretamente após a cláusula [from](from-entity-sql.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -18,11 +20,13 @@ A cláusula WHERE é aplicada diretamente após a cláusula [from](from-entity-s
 [ WHERE expression ]  
 ```  
   
-## <a name="arguments"></a>Arguments  
+## <a name="arguments"></a>Argumentos  
+
  `expression`  
  Um tipo booleano.  
   
 ## <a name="remarks"></a>Comentários  
+
  A cláusula WHERE tem a mesma semântica, conforme descrito para Transact-SQL. Restringe os objetos gerados pela expressão de consulta limitando os elementos das coleções de fonte àquelas que passam a condição.  
   
 ```sql  
@@ -36,4 +40,4 @@ select c from cs as c where e
 ## <a name="see-also"></a>Consulte também
 
 - [Referência de Entity SQL](entity-sql-reference.md)
-- [Expressões de Consulta](query-expressions-entity-sql.md)
+- [Expressões de consulta](query-expressions-entity-sql.md)

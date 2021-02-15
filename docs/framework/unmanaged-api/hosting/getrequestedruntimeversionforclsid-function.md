@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função GetRequestedRuntimeVersionForCLSID'
 title: Função GetRequestedRuntimeVersionForCLSID
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5bb12f9a-0612-434b-b4ed-2db636a20bec
 topic_type:
 - apiref
-ms.openlocfilehash: 899d6e74902e47f1f41b849bd5c25048baa175f7
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 10fdc947181d3f1fa12b33f11cf31b68fc4285cd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83617133"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785257"
 ---
 # <a name="getrequestedruntimeversionforclsid-function"></a>Função GetRequestedRuntimeVersionForCLSID
+
 Obtém as informações de versão do Common Language Runtime (CLR) apropriadas para a classe com o especificado `CLSID` .  
   
  Essa função foi preterida no .NET Framework 4.  
@@ -39,6 +41,7 @@ HRESULT GetRequestedRuntimeVersionForCLSID (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `rclsid`  
  no  O `CLSID` do componente.  
   
@@ -52,7 +55,7 @@ HRESULT GetRequestedRuntimeVersionForCLSID (
  fora O comprimento, em bytes, do buffer retornado.  
   
  `dwResolutionFlags`  
- no  Um dos valores de CLSID_RESOLUTION_FLAGS. Os valores a seguir têm suporte:  
+ no  Um dos valores de CLSID_RESOLUTION_FLAGS. Os seguintes valores têm suporte:  
   
 - CLSID_RESOLUTION_DEFAULT: (0x0) especifica que o comportamento de interoperabilidade padrão deve ser usado.  
   
@@ -66,15 +69,16 @@ HRESULT GetRequestedRuntimeVersionForCLSID (
 |E_INVALIDARG|Um dos parâmetros tem um tipo ou formato inválido.|  
 |ERROR_INSUFFICIENT_BUFFER|O `pVersion` buffer não é grande o suficiente para manter a cadeia de caracteres da versão inteira.|  
 |REGDB_E_CLASSNOTREG|Não há nenhuma classe registrada com o especificado `CLSID` .|  
-|E_POINTER|`dwLength`é nulo ou `cchBuffer` é grande o suficiente para conter a cadeia de caracteres de versão, mas `pVersion` é nulo.|  
+|E_POINTER|`dwLength` é nulo ou `cchBuffer` é grande o suficiente para conter a cadeia de caracteres de versão, mas `pVersion` é nulo.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Funções de hospedagem CLR reprovadas](deprecated-clr-hosting-functions.md)

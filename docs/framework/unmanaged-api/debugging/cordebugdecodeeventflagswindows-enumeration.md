@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorDebugDecodeEventFlagsWindows'
 title: Enumeração CorDebugDecodeEventFlagsWindows
 ms.date: 03/30/2017
 api_name:
@@ -10,14 +11,15 @@ api_type:
 ms.assetid: aa6cf962-30ae-4cfd-8895-826deeb46a54
 topic_type:
 - apiref
-ms.openlocfilehash: a90ddd27834e7614c1827d606a9955b4d6c53127
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: 765ce4b967d00bd70becca666e2ed418614d6fe3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795970"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801690"
 ---
 # <a name="cordebugdecodeeventflagswindows-enumeration"></a>Enumeração CorDebugDecodeEventFlagsWindows
+
 Fornece informações adicionais sobre eventos de depuração na plataforma Windows.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -30,17 +32,19 @@ typedef enum CorDebugDecodeEventFlagsWindows {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`IS_FIRST_CHANCE`|Indica que o evento de depuração é uma exceção de primeira chance.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O método [ICorDebugProcess6::D ecodeevent](icordebugprocess6-decodeevent-method.md) inclui um `dwFlags` parâmetro que fornece informações adicionais sobre um evento de depuração e cujo valor é dependente da arquitetura de destino. A enumeração `CorDebugDecodeEventFlagsWindows` pode ser usada com eventos de depuração na plataforma Windows.  
   
 > [!NOTE]
 > Essa enumeração destina-se ao uso em cenários de depuração .NET Native apenas.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

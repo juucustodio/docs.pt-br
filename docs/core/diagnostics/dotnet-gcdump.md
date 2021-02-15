@@ -1,25 +1,42 @@
 ---
-title: dotnet-gcdump-.NET Core
-description: Instalando e usando a ferramenta de linha de comando dotnet-gcdump.
-ms.date: 07/26/2020
-ms.openlocfilehash: a7b19f4d7487677b975621e7267a17894dae2e3a
-ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
+title: dotnet-ferramenta de diagnóstico do gcdump – CLI do .NET
+description: Saiba como instalar e usar a ferramenta de CLI do dotnet-gcdump para coletar despejos de GC (coletor de lixo) de processos do .NET em tempo real usando o .NET EventPipe.
+ms.date: 11/17/2020
+ms.openlocfilehash: fe7772eed642daadbd1754627751f58d0ab57b8e
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88656645"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188563"
 ---
 # <a name="heap-analysis-tool-dotnet-gcdump"></a>Ferramenta de análise de heap (dotNet-gcdump)
 
 **Este artigo aplica-se a:** ✔️ SDK do .net Core 3,1 e versões posteriores
 
-## <a name="install-dotnet-gcdump"></a>Instalar dotnet-gcdump
+## <a name="install"></a>Instalar
 
-Para instalar a versão de lançamento mais recente do `dotnet-gcdump` [pacote NuGet](https://www.nuget.org/packages/dotnet-gcdump), use o comando de [instalação da ferramenta dotnet](../tools/dotnet-tool-install.md) :
+Há duas maneiras de baixar e instalar `dotnet-gcdump` :
 
-```dotnetcli
-dotnet tool install -g dotnet-gcdump
-```
+- **ferramenta global dotnet:**
+
+  Para instalar a versão de lançamento mais recente do `dotnet-gcdump` [pacote NuGet](https://www.nuget.org/packages/dotnet-gcdump), use o comando de [instalação da ferramenta dotnet](../tools/dotnet-tool-install.md) :
+
+  ```dotnetcli
+  dotnet tool install --global dotnet-gcdump
+  ```
+
+- **Download direto:**
+
+  Baixe o executável da ferramenta que corresponde à sua plataforma:
+
+  | Sistema operacional  | Plataforma |
+  | --- | -------- |
+  | Windows | [x86](https://aka.ms/dotnet-gcdump/win-x86) \| [x64](https://aka.ms/dotnet-gcdump/win-x64) \| [ARM](https://aka.ms/dotnet-gcdump/win-arm) \| [ARM-x64](https://aka.ms/dotnet-gcdump/win-arm64) |
+  | macOS   | [x64](https://aka.ms/dotnet-gcdump/osx-x64) |
+  | Linux   | [x64](https://aka.ms/dotnet-gcdump/linux-x64) \| [ARM](https://aka.ms/dotnet-gcdump/linux-arm) \| [arm64](https://aka.ms/dotnet-gcdump/linux-arm64) \| [MUSL-x64](https://aka.ms/dotnet-gcdump/linux-musl-x64) \| [MUSL-arm64](https://aka.ms/dotnet-gcdump/linux-musl-arm64) |
+
+> [!NOTE]
+> Para usar `dotnet-gcdump` o em um aplicativo x86, você precisa de uma versão x86 correspondente da ferramenta.
 
 ## <a name="synopsis"></a>Sinopse
 
@@ -29,7 +46,7 @@ dotnet-gcdump [-h|--help] [--version] <command>
 
 ## <a name="description"></a>Descrição
 
-A `dotnet-gcdump` ferramenta global é uma maneira de coletar despejos de GC (coletor de lixo) de processos do .net em tempo real. Ele usa a tecnologia EventPipe, que é uma alternativa de plataforma cruzada para o ETW no Windows. Os despejos de GC são criados disparando um GC no processo de destino, ativando eventos especiais e regenerando o grafo de raízes de objeto a partir do fluxo de eventos. Esse processo permite que os despejos de GC sejam coletados enquanto o processo está em execução e com sobrecarga mínima. Esses despejos são úteis para vários cenários:
+A `dotnet-gcdump` ferramenta global coleta despejos GC (coletor de lixo) de processos do Live .NET usando o [EventPipe](./eventpipe.md). Os despejos de GC são criados disparando um GC no processo de destino, ativando eventos especiais e regenerando o grafo de raízes de objeto a partir do fluxo de eventos. Esse processo permite que os despejos de GC sejam coletados enquanto o processo está em execução e com sobrecarga mínima. Esses despejos são úteis para vários cenários:
 
 - Comparando o número de objetos no heap em vários pontos no tempo.
 - Análise de raízes de objetos (respondendo a perguntas como "o que ainda tem uma referência a esse tipo?").
@@ -54,6 +71,9 @@ Você pode coletar vários `.gcdump` s e abri-los simultaneamente no Visual Stud
 ## `dotnet-gcdump collect`
 
 Coleta um despejo de GC de um processo em execução no momento.
+
+> [!WARNING]
+> Para percorrer o heap de GC, esse comando dispara uma coleta de lixo de geração 2 (completa), que pode suspender o tempo de execução por um longo tempo, especialmente quando o heap de GC for grande. Não use esse comando em ambientes sensíveis ao desempenho quando o heap de GC for grande.
 
 ### <a name="synopsis"></a>Sinopse
 
@@ -86,6 +106,12 @@ dotnet-gcdump collect [-h|--help] [-p|--process-id <pid>] [-o|--output <gcdump-f
 - **`-n|--name <name>`**
 
   O nome do processo do qual coletar o despejo do GC.
+
+> [!NOTE]
+> No Linux e no macOS, esse comando espera o aplicativo de destino e `dotnet-gcdump` compartilha a mesma `TMPDIR` variável de ambiente. Caso contrário, o comando atingirá o tempo limite.
+
+> [!NOTE]
+> Para coletar um despejo de GC usando `dotnet-gcdump` o, ele precisa ser executado como o mesmo usuário que o usuário que está executando o processo de destino ou como raiz. Caso contrário, a ferramenta não conseguirá estabelecer uma conexão com o processo de destino.
 
 ## `dotnet-gcdump ps`
 
@@ -121,7 +147,7 @@ dotnet-gcdump report [-h|--help] [-p|--process-id <pid>] [-t|--report-type <Heap
 
   O tipo de relatório a ser gerado. Opções disponíveis: heapstat (padrão).
 
-## <a name="troubleshoot"></a>Solucionar problemas
+## <a name="troubleshoot"></a>Solução de problemas
 
 - Não há nenhuma informação de tipo no gcdump.
 

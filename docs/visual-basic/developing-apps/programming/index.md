@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: programação no Visual Basic'
 title: Programação
 ms.date: 07/20/2015
 helpviewer_keywords:
 - programming [Visual Basic], Visual Basic
 - programming
 ms.assetid: bc45a3de-ea36-46e6-a106-309a413d7804
-ms.openlocfilehash: 0016e6c107baefffd050c99c48cfd10d01522dfc
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 38b7bcaf5fdec1f589305a1865b89c949be9bb6b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406593"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775234"
 ---
 # <a name="programming-in-visual-basic"></a>Programando no Visual Basic
 
@@ -39,7 +40,7 @@ Esta seção aborda tarefas de programação que você talvez queira saber mais 
  [Processando unidades, diretórios e arquivos](drives-directories-files/index.md)  
  Contém documentação sobre como acessar o sistema de arquivos usando o objeto `My.Computer.FileSystem`.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Recursos da linguagem do Visual Basic](../../programming-guide/language-features/index.md)
 - [Conceitos de programação](../../programming-guide/concepts/index.md)

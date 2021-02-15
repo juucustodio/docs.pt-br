@@ -9,14 +9,15 @@ helpviewer_keywords:
 - keycontainer compiler option [C#]
 - -keycontainer compiler option [C#]
 ms.assetid: b3982b6d-2382-4f7e-bebd-ce98eaa30763
-ms.openlocfilehash: 8b11380683159b7792149558a5dd432707ba3818
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 93ee5cd755a4fd6918d2a5825b63151a201a8f6a
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125495"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "91152462"
 ---
 # <a name="-keycontainer-c-compiler-options"></a>-keycontainer (opções do compilador C#)
+
 Especifica o nome do contêiner da chave de criptografia.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -26,10 +27,12 @@ Especifica o nome do contêiner da chave de criptografia.
 ```  
   
 ## <a name="arguments"></a>Argumentos  
+
  `string`  
  O nome do contêiner de chave de nome forte.  
   
 ## <a name="remarks"></a>Comentários  
+
  Quando a opção **-keycontainer** for usada, o compilador criará um componente compartilhável. O compilador insere uma chave pública do contêiner especificado no manifesto do assembly e assina o assembly final com a chave privada. Para gerar um arquivo de chave, digite `sn -k file` na linha de comando. `sn -i` instala o par de chaves no contêiner. Não há suporte para essa opção quando o compilador é executado no CoreCLR. Para assinar um assembly ao compilar no CoreCLR, use a opção [-keyfile](keyfile-compiler-option.md).
   
  Se você compilar com [-target:module](./target-module-compiler-option.md), o nome do arquivo de chave será mantido no módulo e incorporado no assembly quando você compilar esse módulo em um assembly com [-addmodule](./addmodule-compiler-option.md).  
@@ -49,5 +52,5 @@ Especifica o nome do contêiner da chave de criptografia.
 ## <a name="see-also"></a>Confira também
 
 - [Opção -keyfile do compilador C#](keyfile-compiler-option.md)
-- [Opções do compilador C#](index.md)
+- [Opções do compilador de C#](index.md)
 - [Gerenciando propriedades de solução e de projeto](/visualstudio/ide/managing-project-and-solution-properties)

@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: script de folha de estilos XSLT usando <msxsl: script>'
 title: Script de folha de estilos XSLT usando <msxsl:script>
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 ms.assetid: 60e2541b-0cea-4b2e-a4fa-85f4c50f1bef
-ms.openlocfilehash: aef2471a375469f7cd4dff27084b305ef9394d5e
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 4ed2caf5b31fb5a6494c294b2619535699e09905
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291962"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731975"
 ---
-# <a name="xslt-stylesheet-scripting-using-msxslscript"></a>Script de folha de estilos XSLT usando\<msxsl:script>
+# <a name="xslt-stylesheet-scripting-using-msxslscript"></a>Script de folha de estilos XSLT usando \<msxsl:script>
+
 A classe <xref:System.Xml.Xsl.XslTransform> dá suporte a scripts inserido usando o elemento `script`.  
   
 > [!NOTE]
@@ -43,11 +44,11 @@ A classe <xref:System.Xml.Xsl.XslTransform> dá suporte a scripts inserido usand
   
  Para obter a evidência do assembly, use `this.GetType().Assembly.Evidence`. Para obter a evidência de um Uniform Resource Identifier (URI), use `Evidence e = XmlSecureResolver.CreateEvidenceForUrl(stylesheetURI)`.  
   
- Se você usar os métodos <xref:System.Xml.Xsl.XslTransform.Load%2A> que utilizam um <xref:System.Xml.XmlResolver> mas nenhum `Evidence`, a zona de segurança para o assembly usará como padrão a confiança total. Para saber mais, veja <xref:System.Security.SecurityZone> e [Conjuntos de permissões nomeadas](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/4652tyx7(v=vs.100)).  
+ Se você usar os métodos <xref:System.Xml.Xsl.XslTransform.Load%2A> que utilizam um <xref:System.Xml.XmlResolver> mas nenhum `Evidence`, a zona de segurança para o assembly usará como padrão a confiança total. Para saber mais, veja <xref:System.Security.SecurityZone> e [Conjuntos de permissões nomeadas](/previous-versions/dotnet/netframework-4.0/4652tyx7(v=vs.100)).  
   
  As funções podem ser declaradas no elemento `msxsl:script`. A tabela a seguir mostra os namespaces que têm suporte por padrão. Você pode usar as classes fora dos namespaces listados. No entanto, essas classes devem ser totalmente qualificadas.  
   
-|Namespaces padrão|Description|  
+|Namespaces padrão|Descrição|  
 |------------------------|-----------------|  
 |Sistema|Classe do sistema.|  
 |System.Collection|Classes de coleção.|  
@@ -99,6 +100,7 @@ A classe <xref:System.Xml.Xsl.XslTransform> dá suporte a scripts inserido usand
  Isso gera uma exceção porque o E comercial não escapa. O documento é carregado como XML e nenhum tratamento especial é aplicado ao texto entre as marcas de elemento de `msxsl:script`.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir usa um script inserido para calcular a circunferência de um círculo considerando o seu raio.  
   
 ```vb  
@@ -166,6 +168,7 @@ public class Sample
 ```  
   
 ## <a name="input"></a>Entrada  
+
  number.xml  
   
 ```xml  
@@ -229,6 +232,6 @@ public class Sample
 </circles>
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [A classe XslTransform implementa do processador XSLT](xsltransform-class-implements-the-xslt-processor.md)

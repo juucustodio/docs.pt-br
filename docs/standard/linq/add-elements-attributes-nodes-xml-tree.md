@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: db911e4f-40aa-499a-9500-a9763bb6df56
-ms.openlocfilehash: 5225560a3f3c94dcb7d4c65e66accddcead84b70
-ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
+ms.openlocfilehash: 272605982bb7f5e6569ff2aa0ceb990f9c3b2d42
+ms.sourcegitcommit: 48466b8fb7332ececff5dc388f19f6b3ff503dd4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89552034"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400840"
 ---
 # <a name="add-elements-attributes-and-nodes-to-an-xml-tree-linq-to-xml"></a>Adicionar elementos, atributos e nós a uma árvore XML (LINQ to XML)
 
@@ -38,14 +38,14 @@ Os seguintes métodos adicionam o conteúdo como nós irmãos de um <xref:System
 O exemplo a seguir cria duas árvores XML e, em seguida, modifica uma delas.
 
 ```csharp
-XElement srcTree = new XElement("Root",
+var srcTree = new XElement("Root",
     new XElement("Element1", 1),
     new XElement("Element2", 2),
     new XElement("Element3", 3),
     new XElement("Element4", 4),
     new XElement("Element5", 5)
 );
-XElement xmlTree = new XElement("Root",
+var xmlTree = new XElement("Root",
     new XElement("Child1", 1),
     new XElement("Child2", 2),
     new XElement("Child3", 3),
@@ -65,7 +65,7 @@ Console.WriteLine(xmlTree);
 ```
 
 ```vb
-Dim srcTree As XElement = _
+Dim srcTree As XElement =
     <Root>
         <Element1>1</Element1>
         <Element2>2</Element2>
@@ -73,7 +73,7 @@ Dim srcTree As XElement = _
         <Element4>4</Element4>
         <Element5>5</Element5>
     </Root>
-Dim xmlTree As XElement = _
+Dim xmlTree As XElement =
     <Root>
         <Child1>1</Child1>
         <Child2>2</Child2>
@@ -83,9 +83,9 @@ Dim xmlTree As XElement = _
     </Root>
 
 xmlTree.Add(<NewChild>new content</NewChild>)
-xmlTree.Add( _
-    From el In srcTree.Elements() _
-    Where CInt(el) > 3 _
+xmlTree.Add(
+    From el In srcTree.Elements()
+    Where CInt(el) > 3
     Select el)
 
 ' Even though Child9 doesn't exist in srcTree, the following statement

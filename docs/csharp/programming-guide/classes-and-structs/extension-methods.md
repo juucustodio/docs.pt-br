@@ -7,12 +7,12 @@ helpviewer_keywords:
 - extension methods [C#]
 - methods [C#], extension
 ms.assetid: 175ce3ff-9bbf-4e64-8421-faeb81a0bb51
-ms.openlocfilehash: 116087ac1aab57f2869b05f436801c7861c56eca
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.openlocfilehash: 88d6cfd1b5262d4a4fae96cf53271467b5042319
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88063699"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90541936"
 ---
 # <a name="extension-methods-c-programming-guide"></a>Métodos de extensão (Guia de Programação em C#)
 
@@ -117,13 +117,13 @@ Se você implementar métodos de extensão para um determinado tipo, lembre-se d
 
 Para uma biblioteca de classes que você implemente, não use métodos de extensão para evitar incrementar o número de versão de um assembly. Se você quiser adicionar uma funcionalidade significativa a uma biblioteca para a qual você possui o código-fonte, siga as diretrizes do .NET para o controle de versão do assembly. Para obter mais informações, consulte [Controle de versão do assembly](../../../standard/assembly/versioning.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Guia de programação C#](../index.md)
 - [Exemplos de programação paralela (incluem vários métodos de extensão de exemplo)](/samples/browse/?products=dotnet-core%2Cdotnet-standard&term=parallel)
 - [Expressões lambda](../../language-reference/operators/lambda-expressions.md)
 - [Visão geral de operadores de consulta padrão](../concepts/linq/standard-query-operators-overview.md)
-- [Regras de conversão para parâmetros de instância e seu impacto](https://docs.microsoft.com/archive/blogs/sreekarc/conversion-rules-for-instance-parameters-and-their-impact)
-- [Interoperabilidade de métodos de extensão entre linguagens](https://docs.microsoft.com/archive/blogs/sreekarc/extension-methods-interoperability-between-languages)
-- [Métodos de extensão e representantes via currying](https://docs.microsoft.com/archive/blogs/sreekarc/extension-methods-and-curried-delegates)
-- [Associação do método de extensão e relatório de erros](https://docs.microsoft.com/archive/blogs/sreekarc/extension-method-binding-and-error-reporting)
+- [Regras de conversão para parâmetros de instância e seu impacto](/archive/blogs/sreekarc/conversion-rules-for-instance-parameters-and-their-impact)
+- [Interoperabilidade de métodos de extensão entre linguagens](/archive/blogs/sreekarc/extension-methods-interoperability-between-languages)
+- [Métodos de extensão e representantes via currying](/archive/blogs/sreekarc/extension-methods-and-curried-delegates)
+- [Associação do método de extensão e relatório de erros](/archive/blogs/sreekarc/extension-method-binding-and-error-reporting)

@@ -1,20 +1,20 @@
 ---
+description: 'Saiba mais sobre: como: restaurar fusos horários de um recurso inserido'
 title: 'Como: restaurar fusos horários de um recurso inserido'
 ms.date: 04/10/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
-- time zones [.NET Framework], deserializing
-- time zones [.NET Framework], restoring
+- time zones [.NET], deserializing
+- time zones [.NET], restoring
 ms.assetid: 6b7b4de9-da07-47e3-8f4c-823f81798ee7
-ms.openlocfilehash: b1cece13c88b3a49c9c4c90045a07dd009d4282d
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 593fb392c073ca0a3b557b7d82d430b024b3d13a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84281317"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702477"
 ---
 # <a name="how-to-restore-time-zones-from-an-embedded-resource"></a>Como: restaurar fusos horários de um recurso inserido
 
@@ -26,7 +26,7 @@ Este tópico descreve como restaurar os fusos horários que foram salvos em um a
 
 2. Crie uma instância de um <xref:System.Resources.ResourceManager> objeto passando o nome totalmente qualificado do arquivo de recurso inserido e uma referência para o assembly que contém o arquivo de recurso.
 
-   Se você não puder determinar o nome totalmente qualificado do arquivo de recurso inserido, use o [ILDASM. exe (desmontador de Il)](../../framework/tools/ildasm-exe-il-disassembler.md) para examinar o manifesto do assembly. Uma `.mresource` entrada identifica o recurso. No exemplo, o nome totalmente qualificado do recurso é `SerializeTimeZoneData.SerializedTimeZones` .
+   Se você não puder determinar o nome totalmente qualificado do arquivo de recurso inserido, use o [Ildasm.exe (desmontador Il)](../../framework/tools/ildasm-exe-il-disassembler.md) para examinar o manifesto do assembly. Uma `.mresource` entrada identifica o recurso. No exemplo, o nome totalmente qualificado do recurso é `SerializeTimeZoneData.SerializedTimeZones` .
 
    Se o arquivo de recurso for inserido no mesmo assembly que contém o código de instanciação de fuso horário, você poderá recuperar uma referência a ele chamando `static` o `Shared` método (no Visual Basic) <xref:System.Reflection.Assembly.GetExecutingAssembly%2A> .
 
@@ -49,14 +49,14 @@ Como os dados de fusos horários personalizados (fusos horários instanciados us
 
 Este exemplo requer:
 
-- Que uma referência a System. Windows. Forms. dll e System. Core. dll seja adicionada ao projeto.
+- Que uma referência a System.Windows.Forms.dll e System.Core.dll ser adicionada ao projeto.
 
 - Que os seguintes namespaces sejam importados:
 
   [!code-csharp[TimeZone2.Serialization#2](../../../samples/snippets/csharp/VS_Snippets_CLR/TimeZone2.Serialization/cs/SerializeTimeZoneData.cs#2)]
   [!code-vb[TimeZone2.Serialization#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/TimeZone2.Serialization/vb/SerializeTimeZoneData.vb#2)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Datas, horas e fusos horários](index.md)
 - [Visão geral do fuso horário](time-zone-overview.md)

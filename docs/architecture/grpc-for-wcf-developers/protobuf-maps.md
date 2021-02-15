@@ -1,17 +1,17 @@
 ---
 title: Mapas do Protobuf para dicionários-gRPC para desenvolvedores do WCF
 description: Entenda como usar o Protobuf Maps para representar tipos de dicionário no .NET.
-ms.date: 09/09/2019
-ms.openlocfilehash: 2c2ae76d47b2309227d22235b5acbe2afa794158
-ms.sourcegitcommit: b9122d1af21898eaba81e990c70fef46fef74a8d
+ms.date: 12/15/2020
+ms.openlocfilehash: d38270d4bc320cf1f758080c18843ed1d716b350
+ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88867459"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97938540"
 ---
 # <a name="protobuf-maps-for-dictionaries"></a>Mapas de Protobuf para dicionários
 
-É importante poder representar coleções arbitrárias de valores nomeados em mensagens. No .NET, isso é normalmente tratado por meio de tipos de dicionário. O equivalente do tipo .NET <xref:System.Collections.Generic.IDictionary%602> no buffer de protocolo (Protobuf) é o `map<key_type, value_type>` tipo. Esta seção mostra como declarar um `map` tipo em Protobuf e como usar o código gerado.
+É importante poder representar coleções arbitrárias de valores nomeados em mensagens. No .NET, essa atividade é comumente manipulada por meio de tipos de dicionário. O equivalente do tipo .NET <xref:System.Collections.Generic.IDictionary%602> no buffer de protocolo (Protobuf) é o `map<key_type, value_type>` tipo. Esta seção mostra como declarar um `map` tipo em Protobuf e como usar o código gerado.
 
 ```protobuf
 message StockPrices {

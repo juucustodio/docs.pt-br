@@ -3,14 +3,15 @@ title: Atividades de fluxo de controle em WF
 description: Este artigo resume as .NET Framework atividades 4.6.1 para controlar o fluxo de execução em um fluxo de trabalho.
 ms.date: 03/30/2017
 ms.assetid: 6892885b-f7c5-4aea-8f5e-28863fb4ae75
-ms.openlocfilehash: 18ff982d3f215e3fd46108eb2411f3d1a5ab9745
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: fbb36ca181513a687eca7b19535bf2eb4fd4f777
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420065"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96294164"
 ---
 # <a name="control-flow-activities-in-wf"></a>Atividades de fluxo de controle em WF
+
 [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] fornece várias atividades para o fluxo de controle de execução dentro de um fluxo de trabalho. Algumas dessas atividades (como `Switch` e `If` ) implementam estruturas de controle de fluxo semelhantes àquelas em ambientes de programação, como o Visual C#, enquanto outras (como `Pick` ) modelam novas estruturas de programação.  
   
  Observe que quando atividades como `Parallel` e atividades filhos de cronograma de atividades de `ParallelForEach` várias para a execução simultaneamente, somente um único segmento é usado para um fluxo de trabalho. Cada atividade filho dessas atividades executa seqüencialmente e as atividades sucessivas não executam até atividades anteriores completa ou vão ociosa. Como resultado, essas atividades são mais úteis para aplicativos que potencialmente em vários bloquear atividades deve executar em uma forma intercalada. Se nenhuma das atividades filhos dessas atividades vão ociosa, uma atividade de `Parallel` apenas executa como uma atividade de `Sequence` , e uma atividade de `ParallelForEach` apenas executa como uma atividade de `ForEach` . Se, no entanto, as atividades assíncronos (como atividades que derivam de <xref:System.Activities.AsyncCodeActivity>) ou as atividades de mensagem são usadas, o controle irá passar a ramificação seguir quando as espera por filhos de atividade para que a mensagem a ser recebidos ou seu trabalho assíncrono está concluído.  

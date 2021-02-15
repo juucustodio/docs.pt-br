@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Personalizando projetos e estendendo My com o Visual Basic'
 title: Personalizando projetos e estendendo My
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - My namespace
 - My namespace [Visual Basic], extending
 ms.assetid: 06ca80b9-1192-4eb5-8537-8ef5edfb9be0
-ms.openlocfilehash: e6ed43aeff90295f71590bcee180ca1e0f88e5ff
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 69a8bdff78fcfda03ab03ef89b7407fb230c17bf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74330334"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775455"
 ---
 # <a name="customizing-projects-and-extending-my-with-visual-basic"></a>Personalizando projetos e estendendo My com o Visual Basic
 
@@ -21,12 +22,12 @@ Você pode personalizar modelos de projeto para fornecer `My` objetos adicionais
 
 - [Estendendo o Meu Namespace no Visual Basic](extending-the-my-namespace.md)  
  Descreve como adicionar membros e valores personalizados ao `My` namespace no Visual Basic.
-- [Empacotando e implantando minhas extensões personalizadas](packaging-and-deploying-custom-my-extensions.md)  
- Descreve como publicar extensões de `My` namespace personalizadas usando modelos do Visual Studio.
+- [Como empacotar e implantar extensões personalizadas de My](packaging-and-deploying-custom-my-extensions.md)  
+ Descreve como publicar `My` extensões de namespace personalizadas usando modelos do Visual Studio.
 - [Estendendo o modelo de aplicativo do Visual Basic](extending-the-visual-basic-application-model.md)  
- Descreve como especificar suas próprias extensões para o modelo de aplicativo, substituindo os membros <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> da classe.
+ Descreve como especificar suas próprias extensões para o modelo de aplicativo, substituindo os membros da <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> classe.
 - [Como personalizar quais objetos estão disponíveis em My](customizing-which-objects-are-available-in-my.md)  
- Descreve como controlar quais `My` objetos são habilitados definindo a constante de compilação \_condicional com MyType do seu projeto.
+ Descreve como controlar quais `My` objetos são habilitados definindo a \_ constante de compilação condicional com MyType do seu projeto.
 
 ## <a name="related-sections"></a>Seções relacionadas
 
@@ -41,6 +42,6 @@ Você pode personalizar modelos de projeto para fornecer `My` objetos adicionais
 - <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>  
  Descreve o `My` objeto que fornece propriedades, métodos e eventos relacionados ao aplicativo atual.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Desenvolvendo aplicativos com o Visual Basic](../index.md)

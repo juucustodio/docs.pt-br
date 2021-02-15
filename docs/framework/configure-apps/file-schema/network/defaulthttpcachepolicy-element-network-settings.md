@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <defaultHttpCachePolicy> elemento (configurações de rede)'
 title: Elemento <defaultHttpCachePolicy> (Configurações de Rede)
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,14 +9,15 @@ helpviewer_keywords:
 - defaultHttpCachePolicy element
 - <defaultHttpCachePolicy> element
 ms.assetid: 2c1247d0-39b0-4c12-919a-a925ce075c79
-ms.openlocfilehash: c5029a7d1e53c28d0abb232efdc3e0bd2c9658d4
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: d2df27c9b140c9bdb4def49aef7de1a3d80f4a11
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74088412"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740321"
 ---
 # <a name="defaulthttpcachepolicy-element-network-settings"></a>Elemento \<defaultHttpCachePolicy> (Configurações de Rede)
+
 Descreve se o cache HTTP está ativo e descreve a política de cache padrão.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -23,7 +25,7 @@ Descreve se o cache HTTP está ativo e descreve a política de cache padrão.
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<requestCaching>**](requestcaching-element-network-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<defaultHttpCachePolicy>**
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <defaultHttpCachePolicy  
@@ -35,6 +37,7 @@ Descreve se o cache HTTP está ativo e descreve a política de cache padrão.
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -47,6 +50,7 @@ Descreve se o cache HTTP está ativo e descreve a política de cache padrão.
 |`policyLevel`|Especifica se a política de cache é automática ou se o cache é ignorado. O valor padrão é `BypassCache`.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -56,14 +60,17 @@ Descreve se o cache HTTP está ativo e descreve a política de cache padrão.
 |[requestCaching](requestcaching-element-network-settings.md)|Controla o mecanismo de cache para solicitações de rede.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O valor do `policyLevel` atributo é `BypassCache` ou `Default` .  
   
- Os valores para `maximumAge` os `maximumStale` elementos, e `minimumFresh` são um intervalo de tempo explícito com um formato de *d*.* HH*:*mm*:*SS* (dias, horas, minutos e segundos) ou as constantes `minValue` ou `maxValue` , conforme apropriado.  
+ Os valores para `maximumAge` os `maximumStale` elementos, e `minimumFresh` são um intervalo de tempo explícito com um formato de *d*.*HH*:*mm*:*SS* (dias, horas, minutos e segundos) ou as constantes `minValue` ou `maxValue` , conforme apropriado.  
   
-## <a name="configuration-files"></a>Arquivos de configuração  
- Esse elemento pode ser usado no arquivo de configuração do aplicativo ou no arquivo de configuração do computador (Machine. config).  
+## <a name="configuration-files"></a>Arquivos de Configuração  
+
+ Esse elemento pode ser usado no arquivo de configuração do aplicativo ou no arquivo de configuração do computador (Machine.config).  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir mostra como especificar uma hora de atualização mínima de seis horas, um tempo de vida máximo de dois dias e um tempo máximo de obsoleto de quatro horas.  
   
 ```xml  
@@ -80,7 +87,7 @@ Descreve se o cache HTTP está ativo e descreve a política de cache padrão.
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Net.Cache>
 - <xref:System.Net.WebRequest>

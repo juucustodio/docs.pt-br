@@ -10,14 +10,15 @@ helpviewer_keywords:
 - Using statement [Visual Basic], Using...End Using
 - Using block
 ms.assetid: 8be2b239-8090-419b-8e7e-bcaa75b0ecc8
-ms.openlocfilehash: dd15c6746628f45b072d46eea40051ed9afb7921
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c430bc7744f5aefaa65f2a86f3e5e22743ffed57
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403492"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91077196"
 ---
 # <a name="how-to-dispose-of-a-system-resource-visual-basic"></a>Como descartar um recurso do sistema (Visual Basic)
+
 Você pode usar um `Using` bloco para garantir que o sistema descarte um recurso quando o código sair do bloco. Isso será útil se você estiver usando um recurso do sistema que consome uma grande quantidade de memória ou que outros componentes também queiram usar.  
   
 ### <a name="to-dispose-of-a-database-connection-when-your-code-is-finished-with-it"></a>Para descartar uma conexão de banco de dados quando seu código for concluído com ele  
@@ -47,7 +48,7 @@ Você pode usar um `Using` bloco para garantir que o sistema descarte um recurso
 ## <a name="see-also"></a>Confira também
 
 - <xref:System.Data.SqlClient.SqlConnection>
-- [Fluxo de controle](index.md)
+- [Fluxo de Controle](index.md)
 - [Estruturas de Decisão](decision-structures.md)
 - [Estruturas de Loop](loop-structures.md)
 - [Outras Estruturas de Controle](other-control-structures.md)

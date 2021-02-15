@@ -1,23 +1,23 @@
 ---
 title: Usar variáveis de difusão no .NET para Apache Spark
 description: Saiba como usar variáveis de difusão no .NET para aplicativos Apache Spark.
-ms.date: 06/25/2020
+ms.author: nidutta
+author: Niharikadutta
+ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: d86b160855cc4d3f3a6502f5606d4766b7c06aa0
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: ca6dab01cbd639594da0b51f145272a9a150e93c
+ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85617850"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94687747"
 ---
 # <a name="use-broadcast-variables-in-net-for-apache-spark"></a>Usar variáveis de difusão no .NET para Apache Spark
 
 Neste artigo, você aprenderá a usar variáveis de difusão no .NET para Apache Spark. As [variáveis de difusão no Apache Spark](https://spark.apache.org/docs/2.2.0/rdd-programming-guide.html#broadcast-variables) são mecanismos para compartilhar variáveis em executores que se destinam a ser somente leitura. As variáveis de difusão permitem manter uma variável somente leitura armazenada em cache em cada máquina, em vez de enviar uma cópia dela com tarefas. Você pode usar variáveis de difusão para dar a cada nó uma cópia de um conjunto de dados de entrada grande de maneira eficiente.
 
 Como os dados são enviados apenas uma vez, as variáveis de difusão têm benefícios de desempenho quando comparadas com as variáveis locais que são enviadas aos executores com cada tarefa. Consulte a [documentação da variável de difusão oficial](https://spark.apache.org/docs/2.2.0/rdd-programming-guide.html#broadcast-variables) para obter uma compreensão mais profunda das variáveis de difusão e por que elas são usadas.
-
-[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## <a name="create-broadcast-variables"></a>Criar variáveis de difusão
 
@@ -41,7 +41,7 @@ A variável de difusão pode ser excluída de todos os executores chamando o `De
 bv.Destroy();
 ```
 
-`Destroy()`exclui todos os dados e metadados relacionados à variável de difusão e devem ser usados com cautela. Depois que uma variável de difusão é destruída, ela não pode ser usada novamente.
+`Destroy()` exclui todos os dados e metadados relacionados à variável de difusão e devem ser usados com cautela. Depois que uma variável de difusão é destruída, ela não pode ser usada novamente.
 
 ## <a name="limit-broadcast-variable-scope-in-udfs"></a>Limitar o escopo da variável de difusão em UDFs
 
@@ -96,6 +96,11 @@ Func<Column, Column> udf2 = Udf<string, string>(
 // Calling udf2 works fine as expected
 df.Select(udf2(df["_1"])).Show();
 ```
+
+## <a name="faqs"></a>Perguntas frequentes
+
+**Por que não difundir variáveis funcionam com o .NET interativo?**  
+Variáveis de difusão não funcionam com cenários interativos devido ao design interativo do .NET de acrescentar cada objeto definido em uma célula com sua classe de envio de célula, que, como não está marcada como serializável, falha com a mesma exceção mostrada anteriormente. Para obter mais informações, consulte [Este artigo](dotnet-interactive-udf-issue.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 

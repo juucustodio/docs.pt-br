@@ -1,17 +1,19 @@
 ---
-title: Como detectar a disponibilidade de rede e alterações de endereço
+description: 'Saiba mais sobre: como detectar a disponibilidade da rede e as alterações de endereço'
+title: 'Como: Detectar a disponibilidade de rede e alterações de endereço'
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Network
 ms.assetid: d4377115-4a76-4848-ab23-4898d65c771c
-ms.openlocfilehash: 9e265a97d339da59bb9d0af6ab6757e16af00e06
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b9465cbfc538c551725d6510cac3c73d006b7b59
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "70894966"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747433"
 ---
-# <a name="how-to-detect-network-availability-and-address-changes"></a>Como detectar a disponibilidade de rede e alterações de endereço
+# <a name="how-to-detect-network-availability-and-address-changes"></a>Como: Detectar a disponibilidade de rede e alterações de endereço
+
 Este exemplo mostra como detectar alterações no endereço de rede de uma interface.  
   
 ## <a name="example"></a>Exemplo  
@@ -46,6 +48,7 @@ namespace Examples.Net.AddressChanges
 ```  
   
 ## <a name="compiling-the-code"></a>Compilando o código  
+
  Este exemplo requer:  
   
 - Referências ao namespace **System.Net**.

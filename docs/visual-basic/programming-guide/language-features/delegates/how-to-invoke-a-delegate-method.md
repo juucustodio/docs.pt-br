@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como invocar um método delegate (Visual Basic)'
 title: Como invocar um método delegado
 ms.date: 07/20/2015
 ms.assetid: b56866ae-abf9-4a5a-a855-486359455e9c
-ms.openlocfilehash: f319727c007b93c7b334af0598f1b9f7c034144d
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c5c20048969f2fef16b8b7f65e84a094a3f1cf9f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410715"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434466"
 ---
 # <a name="how-to-invoke-a-delegate-method-visual-basic"></a>Como invocar um método delegado (Visual Basic)
 
@@ -43,9 +44,9 @@ Este exemplo mostra como associar um método a um delegado e, em seguida, chamar
     End Sub
     ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instrução Delegate](../../../language-reference/statements/delegate-statement.md)
-- [Delegados](index.md)
+- [Representantes](index.md)
 - [Eventos](../events/index.md)
 - [Aplicativos multi-threaded](../../../../standard/threading/using-threads-and-threading.md)

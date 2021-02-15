@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: literal de elemento XML (Visual Basic)'
 title: Literal do Elemento XML
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - element literal [Visual Basic]
 - XML literals [Visual Basic], element
 ms.assetid: 95039642-7893-48b7-b23f-45a6c55d8f67
-ms.openlocfilehash: d6a91de4e279816bafd29f46bb4f5422cbd934ff
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: dfc78beded5c6f472b67fa272835ef0aa29d0187
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84400183"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787533"
 ---
 # <a name="xml-element-literal-visual-basic"></a>Literal do elemento XML (Visual Basic)
 
 Um literal que representa um <xref:System.Xml.Linq.XElement> objeto.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <name [ attributeList ] />
@@ -31,18 +32,18 @@ Um literal que representa um <xref:System.Xml.Linq.XElement> objeto.
 
 - `<`
 
-  Obrigatórios. Abre a marca do elemento inicial.
+  Obrigatório. Abre a marca do elemento inicial.
 
 - `name`
 
-  Obrigatórios. Nome do elemento. O formato é um dos seguintes:
+  Obrigatório. Nome do elemento. O formato é um dos seguintes:
 
   - Texto literal para o nome do elemento, do formulário `[ePrefix:]eName` , em que:
 
     |Parte|Descrição|
     |---|---|
     |`ePrefix`|Opcional. Prefixo do namespace XML para o elemento. Deve ser um namespace XML global que é definido com uma `Imports` instrução no arquivo ou no nível do projeto, ou um namespace XML local que é definido neste elemento ou em um elemento pai.|
-    |`eName`|Obrigatórios. Nome do elemento. O formato é um dos seguintes:<br /><br /> -Texto literal. Consulte [nomes de elementos e atributos XML declarados](../../programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).<br />-Expressão inserida do formulário `<%= eNameExp %>` . O tipo de `eNameExp` deve ser `String` ou um tipo que é implicitamente conversível <xref:System.Xml.Linq.XName> .|
+    |`eName`|Obrigatório. Nome do elemento. O formato é um dos seguintes:<br /><br /> -Texto literal. Consulte [nomes de elementos e atributos XML declarados](../../programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).<br />-Expressão inserida do formulário `<%= eNameExp %>` . O tipo de `eNameExp` deve ser `String` ou um tipo que é implicitamente conversível <xref:System.Xml.Linq.XName> .|
 
   - Expressão inserida do formulário `<%= nameExp %>` . O tipo de `nameExp` deve ser `String` ou um tipo implicitamente conversível para <xref:System.Xml.Linq.XName> . Uma expressão inserida não é permitida em uma marca de fechamento de um elemento.
 
@@ -59,7 +60,7 @@ Um literal que representa um <xref:System.Xml.Linq.XElement> objeto.
     |Parte|Descrição|
     |---|---|
     |`aPrefix`|Opcional. Prefixo do namespace XML para o atributo. Deve ser um namespace XML global que é definido com uma `Imports` instrução ou um namespace XML local que é definido neste elemento ou um elemento pai.|
-    |`aName`|Obrigatórios. Nome do atributo. O formato é um dos seguintes:<br /><br /> -Texto literal. Consulte [nomes de elementos e atributos XML declarados](../../programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).<br />-Expressão inserida do formulário `<%= aNameExp %>` . O tipo de `aNameExp` deve ser `String` ou um tipo que é implicitamente conversível <xref:System.Xml.Linq.XName> .|
+    |`aName`|Obrigatório. Nome do atributo. O formato é um dos seguintes:<br /><br /> -Texto literal. Consulte [nomes de elementos e atributos XML declarados](../../programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).<br />-Expressão inserida do formulário `<%= aNameExp %>` . O tipo de `aNameExp` deve ser `String` ou um tipo que é implicitamente conversível <xref:System.Xml.Linq.XName> .|
     |`aValue`|Opcional. Valor do atributo. O formato é um dos seguintes:<br /><br /> -Texto literal, entre aspas.<br />-Expressão inserida do formulário `<%= aValueExp %>` . Qualquer tipo é permitido.|
 
   - Expressão inserida do formulário `<%= aExp %>` .
@@ -70,7 +71,7 @@ Um literal que representa um <xref:System.Xml.Linq.XElement> objeto.
 
 - `>`
 
-  Obrigatórios. Termina a marca de elemento inicial ou vazia.
+  Obrigatório. Termina a marca de elemento inicial ou vazia.
 
 - `elementContents`
 
@@ -96,7 +97,7 @@ Um literal que representa um <xref:System.Xml.Linq.XElement> objeto.
 
   Opcional. Representa a marca de fechamento do elemento. O `name` parâmetro opcional não é permitido quando é o resultado de uma expressão inserida.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
 
 Um objeto <xref:System.Xml.Linq.XElement>.
 
@@ -165,7 +166,7 @@ Esse código exibe o seguinte texto:
 
 Observe que o compilador converteu o prefixo do namespace XML global em uma definição de prefixo para o namespace XML. O \<ns:middle> elemento redefine o prefixo do namespace XML para o \<ns:inner1> elemento. No entanto, o \<ns:inner2> elemento usa o namespace definido pela `Imports` instrução.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.Linq.XElement>
 - [Nomes de elementos e atributos XML declarados](../../programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)

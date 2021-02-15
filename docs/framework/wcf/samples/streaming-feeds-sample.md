@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: exemplo de feeds de streaming'
 title: Exemplo de Streaming Feeds
 ms.date: 03/30/2017
 ms.assetid: 1f1228c0-daaa-45f0-b93e-c4a158113744
-ms.openlocfilehash: 551a97f3cc54915a831fc28eca6ae0ff23101e0b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 1de295391316396d6c454496d34d8b82ad8129d5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84589780"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668741"
 ---
 # <a name="streaming-feeds-sample"></a>Exemplo de Streaming Feeds
+
 Este exemplo demonstra como gerenciar feeds de distribuição que contêm um grande número de itens. No servidor, o exemplo demonstra como atrasar a criação de <xref:System.ServiceModel.Syndication.SyndicationItem> objetos individuais no feed até imediatamente antes que o item seja gravado no fluxo de rede.  
   
  No cliente, o exemplo mostra como um formatador de feed de agregação personalizado pode ser usado para ler itens individuais do fluxo de rede para que o feed que está sendo lido nunca seja totalmente armazenado em buffer na memória.  
@@ -19,6 +21,7 @@ Este exemplo demonstra como gerenciar feeds de distribuição que contêm um gra
  A demonstração faz uso de iteradores do Visual C# (usando a `yield return` construção de palavra-chave). Para obter mais informações sobre iteradores, consulte o tópico "usando iteradores" no MSDN.  
   
 ## <a name="service"></a>Serviço  
+
  O serviço implementa um <xref:System.ServiceModel.Web.WebGetAttribute> contrato básico que consiste em uma operação, conforme mostrado no código a seguir.  
   
 ```csharp  
@@ -68,6 +71,7 @@ public Atom10FeedFormatter StreamedFeed()
  Como resultado, o fluxo de itens nunca é totalmente armazenado em buffer na memória. Você pode observar esse comportamento definindo um ponto de interrupção na `yield return` instrução dentro do `ItemGenerator.GenerateItems()` método e observando que esse ponto de interrupção é encontrado pela primeira vez após o serviço ter retornado o resultado do `StreamedFeed()` método.  
   
 ## <a name="client"></a>Cliente  
+
  O cliente neste exemplo usa uma implementação personalizada <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> que atrasa a materialização de itens individuais no feed em vez de armazenar em buffer na memória. A `StreamedAtom10FeedFormatter` instância personalizada é usada da seguinte maneira.  
   
 ```csharp  

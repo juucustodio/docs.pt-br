@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICeeGen:: GenerateCeeMemoryImage'
 title: Método ICeeGen::GenerateCeeMemoryImage
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: b3847495-0ae6-4a72-b496-65ce2424afc6
 topic_type:
 - apiref
-ms.openlocfilehash: 4de3530cb912f9e60a6bdf11026f9168a188c8ce
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 08361454171b1c3ad3879399f9499921738c106a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008814"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707079"
 ---
 # <a name="iceegengenerateceememoryimage-method"></a>Método ICeeGen::GenerateCeeMemoryImage
+
 Gera uma imagem na memória para a base de código.  
   
  Este método é obsoleto e não deve ser usado.  
@@ -36,18 +38,20 @@ HRESULT GenerateCeeMemoryImage (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ppImage`  
  fora Um ponteiro para a imagem gerada.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICeeGen](iceegen-interface.md)

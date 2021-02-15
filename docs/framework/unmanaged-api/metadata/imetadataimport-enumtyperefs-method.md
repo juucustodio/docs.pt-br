@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport:: EnumTypeRefs'
 title: Método IMetaDataImport::EnumTypeRefs
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: b4896b8f-8e97-469c-8089-e72a025661b5
 topic_type:
 - apiref
-ms.openlocfilehash: 0c7e96c50e59902cde4686f908047a86dd2b6a47
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 1155357e82c08660a852225f0b1a54629cbee0ca
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503738"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99670613"
 ---
 # <a name="imetadataimportenumtyperefs-method"></a>Método IMetaDataImport::EnumTypeRefs
+
 Enumera tokens TypeRef definidos no escopo de metadados atual.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,6 +39,7 @@ HRESULT EnumTypeRefs (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `phEnum`  
  [entrada, saída] Um ponteiro para o enumerador. Isso deve ser nulo para a primeira chamada deste método.  
   
@@ -49,26 +52,28 @@ HRESULT EnumTypeRefs (
  `pcTypeRefs`  
  fora Um ponteiro para o número de tokens TypeRef retornado em `rTypeRefs` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
-|`S_OK`|`EnumTypeRefs`retornado com êxito.|  
+|`S_OK`|`EnumTypeRefs` retornado com êxito.|  
 |`S_FALSE`|Não há tokens para enumerar. Nesse caso, `pcTypeRefs` é zero.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Um token TypeRef representa uma referência a um tipo.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Incluído como um recurso em MsCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport](imetadataimport-interface.md)
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)

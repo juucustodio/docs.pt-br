@@ -9,14 +9,15 @@ helpviewer_keywords:
 - /target compiler options [C#], /target:exe
 - -target compiler options [C#], /target:exe
 ms.assetid: bda5717d-1b91-4848-956b-fcf85c30e432
-ms.openlocfilehash: 3cea52fe872fcb407206ee2063b93dc81447a3b2
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: ae1706f1ecdd396e24711070d19420faa6d34761
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89128498"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "91193747"
 ---
 # <a name="-targetexe-c-compiler-options"></a>-target:exe (opções do compilador C#)
+
 A opção **-target:exe** faz com que o compilador crie um aplicativo de console executável (EXE).  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -26,6 +27,7 @@ A opção **-target:exe** faz com que o compilador crie um aplicativo de console
 ```  
   
 ## <a name="remarks"></a>Comentários  
+
  A opção **-target:exe** está em vigor por padrão. O arquivo executável será criado com a extensão .exe.  
   
  Use [-target:winexe](./target-winexe-compiler-option.md) para criar um executável de programa do Windows.  
@@ -47,6 +49,7 @@ A opção **-target:exe** faz com que o compilador crie um aplicativo de console
  Para obter informações sobre como definir essa opção do compilador programaticamente, consulte <xref:VSLangProj80.ProjectProperties3.OutputType%2A>.  
   
 ## <a name="example"></a>Exemplo  
+
  Cada uma das seguintes linhas de comando compilará `in.cs`, criando `in.exe`:  
   
 ```console  
@@ -57,4 +60,4 @@ csc in.cs
 ## <a name="see-also"></a>Confira também
 
 - [-Target (opções do compilador C#)](./target-compiler-option.md)
-- [Opções do compilador C#](./index.md)
+- [Opções do compilador de C#](./index.md)

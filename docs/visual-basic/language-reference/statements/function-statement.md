@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instrução de função (Visual Basic)'
 title: Instrução Function
 ms.date: 05/12/2018
 f1_keywords:
@@ -28,18 +29,18 @@ helpviewer_keywords:
 - End keyword [Visual Basic], Function statements
 - Handles keyword [Visual Basic], Function statements
 ms.assetid: a4497077-0f46-4ede-a27f-9e8670df52b9
-ms.openlocfilehash: 49cf4fead2c5594b7ac6815f82fea0dc995ea436
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e8a05b02c3a214f0572e85c1fc973cb9f03118ae
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404622"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769059"
 ---
 # <a name="function-statement-visual-basic"></a>Instrução Function (Visual Basic)
 
 Declara o nome, os parâmetros e o código que definem um `Function` procedimento.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```vb
 [ <attributelist> ] [ accessmodifier ] [ proceduremodifiers ] [ Shared ] [ Shadows ] [ Async | Iterator ]
@@ -60,13 +61,13 @@ End Function
 
   Opcional. Pode ser um dos seguintes:
 
-  - [Pública](../modifiers/public.md)
+  - [Público](../modifiers/public.md)
 
   - [Protected](../modifiers/protected.md)
 
-  - [Público](../modifiers/friend.md)
+  - [Friend](../modifiers/friend.md)
 
-  - [Privada](../modifiers/private.md)
+  - [Privado](../modifiers/private.md)
 
   - [Amigo Protegido](../modifiers/protected-friend.md)
 
@@ -110,7 +111,7 @@ End Function
 
 - `name`
 
-  Obrigatórios. Nome do procedimento. Consulte [nomes de elementos declarados](../../programming-guide/language-features/declared-elements/declared-element-names.md).
+  Obrigatório. Nome do procedimento. Consulte [nomes de elementos declarados](../../programming-guide/language-features/declared-elements/declared-element-names.md).
 
 - `typeparamlist`
 
@@ -141,7 +142,7 @@ End Function
   |Parte|Descrição|
   |---|---|
   |`interface`|Obrigatórios. Nome de uma interface implementada por este procedimento que contém a classe ou a estrutura.|
-  |`definedname`|Obrigatórios. Nome pelo qual o procedimento é definido `interface` .|
+  |`definedname`|Obrigatório. Nome pelo qual o procedimento é definido `interface` .|
 
 - `Handles`
 
@@ -160,7 +161,7 @@ End Function
   |Parte|Descrição|
   |---|---|
   |`eventvariable`|Obrigatórios. Variável de objeto declarada com o tipo de dados da classe ou estrutura que gera o evento.|
-  |`event`|Obrigatórios. Nome do evento que este procedimento manipula.|
+  |`event`|Obrigatório. Nome do evento que este procedimento manipula.|
 
 - `statements`
 
@@ -180,7 +181,7 @@ Para retornar um valor para o código de chamada, use um `Function` procedimento
 
 Você pode definir um `Function` procedimento somente no nível do módulo. Portanto, o contexto de declaração para uma função deve ser uma classe, uma estrutura, um módulo ou uma interface e não pode ser um arquivo de origem, um namespace, um procedimento ou um bloco. Para obter mais informações, consulte [Contextos de declaração e níveis de acesso padrão](declaration-contexts-and-default-access-levels.md).
 
-`Function`os procedimentos assumem como padrão o acesso público. Você pode ajustar seus níveis de acesso com os modificadores de acesso.
+`Function` os procedimentos assumem como padrão o acesso público. Você pode ajustar seus níveis de acesso com os modificadores de acesso.
 
 Um `Function` procedimento pode declarar o tipo de dados do valor que o procedimento retorna. Você pode especificar qualquer tipo de dados ou o nome de uma enumeração, uma estrutura, uma classe ou uma interface. Se você não especificar o `returntype` parâmetro, o procedimento retornará `Object` .
 
@@ -264,7 +265,7 @@ O `startButton_Click` procedimento é um exemplo de um `Async Sub` procedimento.
 
 [!code-vb[csAsyncMethod#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/csasyncmethod/vb/mainwindow.xaml.vb#1)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instrução Sub](sub-statement.md)
 - [Procedimentos de função](../../programming-guide/language-features/procedures/function-procedures.md)

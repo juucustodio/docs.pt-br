@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: funções canônicas de matemática'
 title: Funções canônicas matemáticas
 ms.date: 03/30/2017
 ms.assetid: 6f6cddc6-b561-4ebe-84b6-841ef5b4113b
-ms.openlocfilehash: 9417ff9836912017c9d88bb24a18849aaac2836a
-ms.sourcegitcommit: 4e2d355baba82814fa53efd6b8bbb45bfe054d11
+ms.openlocfilehash: 55072099f5766d48ea3067a2e9eaa187a8b3f111
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70250301"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99739359"
 ---
 # <a name="math-canonical-functions"></a>Funções canônicas matemáticas
 
@@ -19,7 +20,7 @@ Retorna o valor absoluto de `value`.
 
 **Argumentos**
 
-Um `Int16`, `Int32`, ,`Byte`,, e`Double`. `Int64` `Single` `Decimal`
+Um `Int16` , `Int32` , `Int64` , `Byte` , `Single` , `Double` e `Decimal` .
 
 **Valor retornado**
 
@@ -35,7 +36,7 @@ Retorna o número inteiro o menor que não é menor que `value`.
 
 **Argumentos**
 
-A `Single`, `Double`, e `Decimal`.
+A `Single` , `Double` , e `Decimal` .
 
 **Valor retornado**
 
@@ -52,7 +53,7 @@ Retorna o número inteiro maior que não é maior do que `value`.
 
 **Argumentos**
 
-A `Single`, `Double`, e `Decimal`.
+A `Single` , `Double` , e `Decimal` .
 
 **Valor retornado**
 
@@ -72,7 +73,7 @@ Retorna o resultado de `value` especificado a `exponent`especificado.
 |  |  |
 |--|--|
 |`value` | Um `Int32, Int64, Double` ou `Decimal`. |
-|`exponent` | Um `Int64`, `Double`, ou `Decimal`. |
+|`exponent` | Um `Int64` , `Double` , ou `Decimal` . |
 
 **Valor retornado**
 
@@ -88,7 +89,7 @@ Retorna a parte inteira de `value`, arredondada para o inteiro mais próximo.
 
 **Argumentos**
 
-A `Single`, `Double`, e `Decimal`.
+A `Single` , `Double` , e `Decimal` .
 
 **Valor retornado**
 
@@ -142,4 +143,4 @@ O tipo de `value`.
   
 ## <a name="see-also"></a>Consulte também
 
-- [Canonical Functions](canonical-functions.md) (Funções canônicas)
+- [Funções canônicas](canonical-functions.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerCallback2:: HandleDestroyed'
 title: Método ICorProfilerCallback2::HandleDestroyed
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: ab4f4bbd-40c7-4667-bfde-60cd73803110
 topic_type:
 - apiref
-ms.openlocfilehash: d7a4f7d08e6d8698dbb58c4c2d111a47d0ccc8db
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: d583a2170efbb4ebe72d7eacdd60af1a089a518f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84499773"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99705560"
 ---
 # <a name="icorprofilercallback2handledestroyed-method"></a>Método ICorProfilerCallback2::HandleDestroyed
+
 Notifica o criador de perfil de código de que um identificador de coleta de lixo foi destruído.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -33,10 +35,12 @@ HRESULT HandleDestroyed(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `handleId`  
  no A ID do identificador para a coleta de lixo.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -45,7 +49,7 @@ HRESULT HandleDestroyed(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Interface ICorProfilerCallback2](icorprofilercallback2-interface.md)

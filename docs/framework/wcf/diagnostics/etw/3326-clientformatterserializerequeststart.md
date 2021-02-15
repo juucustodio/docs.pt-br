@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 3326-ClientFormatterSerializeRequestStart'
 title: 3326 - ClientFormatterSerializeRequestStart
 ms.date: 03/30/2017
 ms.assetid: 1d212383-5a34-43f5-8522-9b15ed8ebd87
-ms.openlocfilehash: 07529ab88c322ebed675d620d801f68d941945d4
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 58735f6b6916e66d0c889db686f9f80a316ddfec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61595862"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99744910"
 ---
 # <a name="3326---clientformatterserializerequeststart"></a>3326 - ClientFormatterSerializeRequestStart
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,9 +22,11 @@ ms.locfileid: "61595862"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando a serialização de solicitação do cliente é iniciado.  
+
+ Esse evento é emitido quando a serialização de solicitação do cliente é iniciada.  
   
 ## <a name="message"></a>Mensagem  
- Serialização de solicitação do cliente é iniciado.  
+
+ Serialização de solicitação do cliente iniciada.  
   
 ## <a name="details"></a>Detalhes

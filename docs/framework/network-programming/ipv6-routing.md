@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: roteamento IPv6'
 title: Roteamento IPv6
 ms.date: 03/30/2017
 ms.assetid: c98731b4-b542-46a2-9947-1cea63c186b2
-ms.openlocfilehash: 93300107710164d755d578633b7fa6651f984987
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 75499a7380ab0ea7c38c83a6407a0c2a269b5fce
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "71047782"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672030"
 ---
 # <a name="ipv6-routing"></a>Roteamento IPv6
+
 Um mecanismo de roteamento flexível é uma vantagem do IPv6. Devido à maneira que as IDs de rede IPv4 foram e são alocadas, grandes tabelas de roteamento precisam ser mantidas pelos roteadores que estão nos backbones da Internet. Esses roteadores devem saber todas as rotas para encaminhar pacotes que são potencialmente direcionados para qualquer nó na Internet. Com sua capacidade de agregar endereços, o IPv6 permite endereçamento flexível e reduz consideravelmente o tamanho das tabelas de roteamento. Nessa nova arquitetura de endereçamento, os roteadores intermediários devem controlar apenas a parte local de sua rede para encaminhar as mensagens corretamente.  
   
 ## <a name="neighbor-discovery"></a>Descoberta de vizinhos  
+
  Estes são alguns dos recursos fornecidos pela descoberta de vizinhos:  
   
 - Descoberta de roteador. Isso permite que os hosts identifiquem os roteadores locais.  
@@ -33,7 +36,7 @@ Um mecanismo de roteamento flexível é uma vantagem do IPv6. Devido à maneira 
   
 - Redirecionamento. Enviado por roteadores a fim de indicar um melhor endereço de próximo salto para um destino específico para um nó de envio.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Protocolo da Internet Versão 6](internet-protocol-version-6.md)
+- [Protocolo IP versão 6](internet-protocol-version-6.md)
 - [Soquetes](sockets.md)

@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: como consultar arquivos com um atributo ou nome especificado (Visual Basic)'
 title: 'Como: consultar arquivos com um atributo ou um nome especificado'
 ms.date: 07/20/2015
 ms.assetid: b26026a3-3f43-448f-a582-259997af6be0
-ms.openlocfilehash: 4a6a5630f4ac0eb0cb08aed0dc8a390225194675
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 3eb58bf683b97c5806145395cb489f0e85c2071b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396409"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100425718"
 ---
 # <a name="how-to-query-for-files-with-a-specified-attribute-or-name-visual-basic"></a>Como consultar arquivos com um atributo ou nome especificado (Visual Basic)
+
 Este exemplo mostra como localizar todos os arquivos que têm uma extensão de nome de arquivo especificada (por exemplo ".txt") em uma árvore de diretório especificada. Ele também mostra como retornar tanto os arquivos mais recentes como os mais antigo na árvore com base na hora de criação.  
   
 ## <a name="example"></a>Exemplo  
@@ -61,9 +63,10 @@ End Module
 ```  
   
 ## <a name="compile-the-code"></a>Compilar o código  
+
 Crie um projeto de aplicativo de console Visual Basic, com uma `Imports` instrução para o namespace System. Linq.
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ to Objects (Visual Basic)](linq-to-objects.md)
 - [LINQ e diretórios de arquivos (Visual Basic)](linq-and-file-directories.md)

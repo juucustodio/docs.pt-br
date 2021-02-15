@@ -6,12 +6,12 @@ ms.technology: dotnet-standard
 helpviewer_keywords:
 - cryptography, cross-platform
 - encryption, cross-platform
-ms.openlocfilehash: 61fd49e53761deac278b770003eb97241b6c2be9
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: 7269b32e509039fdd767446bd6e10202b089c094
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87557145"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90550013"
 ---
 # <a name="cross-platform-cryptography-in-net-core-and-net-5"></a>Criptografia de plataforma cruzada no .NET Core e no .NET 5
 
@@ -109,7 +109,7 @@ As bibliotecas do sistema operacional são usadas para criptografia e preenchime
 | Assinatura PKCS1 (SHA-2)               | ✔️           | ✔️              | ✔️   | ⚠️\*           |
 | PSS                                   | ✔️           | ✔️              | ✔️   | ❌             |
 
-\*O Windows CryptoAPI (CAPI) é capaz de PKCS1 assinatura com um algoritmo SHA-2. Mas o objeto RSA individual pode ser carregado em um CSP (provedor de serviços de criptografia) que não dá suporte a ele.
+\* O Windows CryptoAPI (CAPI) é capaz de PKCS1 assinatura com um algoritmo SHA-2. Mas o objeto RSA individual pode ser carregado em um CSP (provedor de serviços de criptografia) que não dá suporte a ele.
 
 #### <a name="rsa-on-windows"></a>RSA no Windows
 
@@ -151,7 +151,7 @@ As curvas de chave de ECDSA são definidas pelas bibliotecas do sistema operacio
 
 <sup>1</sup> as distribuições do Linux nem todas têm suporte para as mesmas curvas nomeadas.
 
-<sup>2</sup> o suporte para curvas nomeadas foi adicionado à CNG do Windows no Windows 10. Para obter mais informações, consulte [CNG chamado curvas elípticas](https://msdn.microsoft.com/library/windows/desktop/mt632245(v=vs.85).aspx). As curvas nomeadas não estão disponíveis em versões anteriores do Windows, exceto para três curvas no Windows 7.
+<sup>2</sup> o suporte para curvas nomeadas foi adicionado à CNG do Windows no Windows 10. Para obter mais informações, consulte [CNG chamado curvas elípticas](/windows/win32/seccng/cng-named-elliptic-curves). As curvas nomeadas não estão disponíveis em versões anteriores do Windows, exceto para três curvas no Windows 7.
 
 <sup>3</sup> a exportação com parâmetros de curva explícitos requer suporte à biblioteca do so, que não está disponível no MacOS ou em versões anteriores do Windows.
 
@@ -164,7 +164,7 @@ O .NET expõe tipos para permitir que os programas interoperem com as biblioteca
 | <xref:System.Security.Cryptography.ECDsaCng>     | ✔️     | ❌    | ❌    |
 | <xref:System.Security.Cryptography.ECDsaOpenSsl> | ❌     | ✔️    | ⚠️\*  |
 
-\*No macOS, <xref:System.Security.Cryptography.ECDsaOpenSsl> o funcionará se o OpenSSL estiver instalado no sistema e um libcrypto dylib apropriado puder ser encontrado por meio do carregamento da biblioteca dinâmica. Se uma biblioteca apropriada não puder ser encontrada, as exceções serão geradas.
+\* No macOS, <xref:System.Security.Cryptography.ECDsaOpenSsl> o funcionará se o OpenSSL estiver instalado no sistema e um libcrypto dylib apropriado puder ser encontrado por meio do carregamento da biblioteca dinâmica. Se uma biblioteca apropriada não puder ser encontrada, as exceções serão geradas.
 
 ### <a name="ecdh"></a>ECDH
 
@@ -194,7 +194,7 @@ As curvas de chave ECDH são definidas pelas bibliotecas do sistema operacional 
 
 <sup>1</sup> as distribuições do Linux nem todas têm suporte para as mesmas curvas nomeadas.
 
-<sup>2</sup> o suporte para curvas nomeadas foi adicionado à CNG do Windows no Windows 10. Para obter mais informações, consulte [CNG chamado curvas elípticas](https://msdn.microsoft.com/library/windows/desktop/mt632245(v=vs.85).aspx). As curvas nomeadas não estão disponíveis em versões anteriores do Windows, exceto para três curvas no Windows 7.
+<sup>2</sup> o suporte para curvas nomeadas foi adicionado à CNG do Windows no Windows 10. Para obter mais informações, consulte [CNG chamado curvas elípticas](/windows/win32/seccng/cng-named-elliptic-curves). As curvas nomeadas não estão disponíveis em versões anteriores do Windows, exceto para três curvas no Windows 7.
 
 <sup>3</sup> a exportação com parâmetros de curva explícitos requer suporte à biblioteca do so, que não está disponível no MacOS ou em versões anteriores do Windows.
 
@@ -207,7 +207,7 @@ O .NET expõe tipos para permitir que os programas interoperem com as biblioteca
 | <xref:System.Security.Cryptography.ECDiffieHellmanCng>     | ✔️     | ❌    | ❌   |
 | <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> | ❌     | ✔️    | ⚠️\* |
 
-\*No macOS, <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> o funcionará se o OpenSSL estiver instalado e um dylib libcrypto apropriado puder ser encontrado por meio do carregamento da biblioteca dinâmica. Se uma biblioteca apropriada não puder ser encontrada, as exceções serão geradas.
+\* No macOS, <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> o funcionará se o OpenSSL estiver instalado e um dylib libcrypto apropriado puder ser encontrado por meio do carregamento da biblioteca dinâmica. Se uma biblioteca apropriada não puder ser encontrada, as exceções serão geradas.
 
 ### <a name="dsa"></a>DSA
 
@@ -222,7 +222,7 @@ A geração de chave de DSA (algoritmo de assinatura digital) é executada pelas
 | FIPS 186-2                    | ✔️         | ✔️    | ✔️            | ✔️           |
 | FIPS 186-3 (assinaturas SHA-2) | ✔️         | ✔️    | ❌            | ❌            |
 
-\*o macOS carrega chaves DSA maiores que 1024 bits, mas o comportamento dessas chaves é indefinido. Eles não se comportam de acordo com o FIPS 186-3.
+\* o macOS carrega chaves DSA maiores que 1024 bits, mas o comportamento dessas chaves é indefinido. Eles não se comportam de acordo com o FIPS 186-3.
 
 #### <a name="dsa-on-windows"></a>DSA no Windows
 
@@ -261,7 +261,7 @@ A maior parte do suporte para certificados X. 509 no .NET é proveniente de bibl
 | Vários certificados, uma chave privada       | ✔️     | ✔️    | ✔️   |
 | Vários certificados, várias chaves privadas | ✔️     | ⚠️\*  | ✔️   |
 
-\*Disponível em versões de visualização do .NET 5.
+\* Disponível em versões de visualização do .NET 5.
 
 ### <a name="write-a-pkcs12pfx"></a>Gravar um PKCS12/PFX
 
@@ -275,7 +275,7 @@ A maior parte do suporte para certificados X. 509 no .NET é proveniente de bibl
 | Vários certificados, várias chaves privadas | ✔️     | ⚠️\*  | ✔️   |
 | Carregamento efêmero                            | ✔️     | ✔️    | ⚠️\* |
 
-\*Disponível em versões de visualização do .NET 5.
+\* Disponível em versões de visualização do .NET 5.
 
 o macOS não pode carregar chaves privadas de certificado sem um objeto de conjunto de chaves, que requer gravação no disco. Os conjuntos de chaves são criados automaticamente para carregamento de PFX e são excluídos quando não estiverem mais em uso. Como a <xref:System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.EphemeralKeySet?displayProperty=nameWithType> opção significa que a chave privada não deve ser gravada no disco, a declaração desse sinalizador no MacOS resulta em um <xref:System.PlatformNotSupportedException> .
 

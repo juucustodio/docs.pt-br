@@ -1,5 +1,6 @@
 ---
-title: Como criar um serviço de token de segurança
+description: 'Saiba mais sobre: como criar um serviço de token de segurança'
+title: 'Como: criar um serviço de token de segurança'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,20 +9,23 @@ helpviewer_keywords:
 - WCF, federation
 - federation
 ms.assetid: 98e82101-4cff-4bb8-a220-f7abed3556e5
-ms.openlocfilehash: 1cfcca524e5dd2b0c1560eb7600795766e2db1d6
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: a3bfe6f97eeccdb31d3b8f4ef6c05a3c15257e91
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84598951"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734445"
 ---
-# <a name="how-to-create-a-security-token-service"></a>Como criar um serviço de token de segurança
-Um serviço de token de segurança implementa o protocolo definido na especificação WS-Trust. Esse protocolo define os formatos de mensagem e os padrões de troca de mensagens para emissão, renovação, cancelamento e validação de tokens de segurança. Um determinado serviço de token de segurança fornece um ou mais desses recursos. Este tópico analisa o cenário mais comum: implementando a emissão de tokens.  
+# <a name="how-to-create-a-security-token-service"></a>Como: criar um serviço de token de segurança
+
+Um serviço de token de segurança implementa o protocolo definido na especificação de WS-Trust. Esse protocolo define os formatos de mensagem e os padrões de troca de mensagens para emissão, renovação, cancelamento e validação de tokens de segurança. Um determinado serviço de token de segurança fornece um ou mais desses recursos. Este tópico analisa o cenário mais comum: implementando a emissão de tokens.  
   
 ## <a name="issuing-tokens"></a>Emitindo tokens  
- O WS-Trust define formatos de mensagem, com base no `RequestSecurityToken` elemento de esquema XSD (linguagem de definição de esquema XML) e no `RequestSecurityTokenResponse` elemento de esquema XSD para executar a emissão de tokens. Além disso, ele define os URIs (identificadores de recursos uniformes) da ação associada. O URI de ação associado à `RequestSecurityToken` mensagem é `http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Issue` . O URI de ação associado à `RequestSecurityTokenResponse` mensagem é `http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Issue` .  
+
+ WS-Trust define formatos de mensagem, com base no `RequestSecurityToken` elemento de esquema XSD (linguagem de definição de esquema XML) e no `RequestSecurityTokenResponse` elemento de esquema XSD para executar a emissão de tokens. Além disso, ele define os URIs (identificadores de recursos uniformes) da ação associada. O URI de ação associado à `RequestSecurityToken` mensagem é `http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Issue` . O URI de ação associado à `RequestSecurityTokenResponse` mensagem é   `http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Issue` .  
   
 ### <a name="request-message-structure"></a>Estrutura da mensagem de solicitação  
+
  A estrutura da mensagem de solicitação de problema normalmente consiste nos seguintes itens:  
   
 - Um URI de tipo de solicitação com um valor de `http://schemas.xmlsoap.org/ws/2005/02/trust/Issue` .
@@ -41,6 +45,7 @@ Um serviço de token de segurança implementa o protocolo definido na especifica
  O serviço de token de segurança usa as informações na mensagem de solicitação de problema ao construir a mensagem de resposta do problema.  
   
 ## <a name="response-message-structure"></a>Estrutura da mensagem de resposta  
+
  A estrutura da mensagem de resposta do problema normalmente consiste nos seguintes itens;  
   
 - O token de segurança emitido, por exemplo, uma Asserção SAML 1,1.  
@@ -58,6 +63,7 @@ Um serviço de token de segurança implementa o protocolo definido na especifica
 - Informações de tempo de vida para o token emitido.  
   
 ## <a name="processing-request-messages"></a>Processando mensagens de solicitação  
+
  O serviço de token de segurança processa a solicitação de problema examinando as várias partes da mensagem de solicitação e garantindo que ela possa emitir um token que satisfaça a solicitação. O serviço de token de segurança deve determinar o seguinte antes de construir o token a ser emitido:  
   
 - A solicitação é realmente uma solicitação para que um token seja emitido.  
@@ -101,6 +107,7 @@ Um serviço de token de segurança implementa o protocolo definido na especifica
  Para obter mais informações, consulte [exemplo de Federação](../samples/federation-sample.md).  
   
 ## <a name="creating-response-messages"></a>Criando mensagens de resposta  
+
  Depois que o serviço de token de segurança processa a solicitação de problema e constrói o token a ser emitido junto com a chave de prova, a mensagem de resposta precisa ser construída, incluindo pelo menos o token solicitado, o token de prova e as referências de token emitidas. O token emitido normalmente é <xref:System.IdentityModel.Tokens.SamlSecurityToken> criado a partir do <xref:System.IdentityModel.Tokens.SamlAssertion> , conforme mostrado no exemplo a seguir.  
   
  [!code-csharp[c_CreateSTS#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_creatests/cs/source.cs#5)]
@@ -121,6 +128,7 @@ Um serviço de token de segurança implementa o protocolo definido na especifica
  Esses vários valores são serializados na mensagem de resposta retornada ao cliente.  
   
 ## <a name="example"></a>Exemplo  
+
  Para obter o código completo de um serviço de token de segurança, consulte [exemplo de Federação](../samples/federation-sample.md).  
   
 ## <a name="see-also"></a>Consulte também

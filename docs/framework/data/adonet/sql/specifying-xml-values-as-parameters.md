@@ -1,21 +1,24 @@
 ---
+description: 'Saiba mais sobre: especificando valores XML como parâmetros'
 title: Especificar valores XML como parâmetros
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 2c4d08b8-fc29-4614-97fa-29c8ff7ca5b3
-ms.openlocfilehash: acb94efd8b6b6b66d0cc84309c2d68ad692b08d3
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 9c5b81270eeaec1fc0b3992971c9285863c92466
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79174492"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767447"
 ---
 # <a name="specifying-xml-values-as-parameters"></a>Especificar valores XML como parâmetros
+
 Se uma consulta exigir um parâmetro cujo valor é uma cadeia de caracteres XML, os desenvolvedores poderão fornecer esse valor usando uma instância do tipo de dados **SqlXml**. Não há nenhuma pegadinha: as colunas XML no SQL Server aceitam valores de parâmetro exatamente da mesma maneira que outros tipos de dados.  
   
 ## <a name="example"></a>Exemplo  
+
  O aplicativo de console a seguir cria uma tabela no banco de dados **AdventureWorks**. A nova tabela inclui uma coluna chamada **SalesID** e uma coluna XML denominada **SalesInfo**.  
   
 > [!NOTE]
@@ -159,8 +162,8 @@ class Class1
 }  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Data.SqlTypes.SqlXml>
-- [Dados XML no Servidor SQL](xml-data-in-sql-server.md)
+- [Dados XML no SQL Server](xml-data-in-sql-server.md)
 - [Visão geral do ADO.NET](../ado-net-overview.md)

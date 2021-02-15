@@ -3,12 +3,12 @@ title: Introdução à análise de sintaxe (APIs Roslyn)
 description: Uma introdução pela travessia, consulta e percurso por árvores de sintaxe.
 ms.date: 02/05/2018
 ms.custom: mvc
-ms.openlocfilehash: 22d1303c9daa2ae35cf130b0c857cd7a5efdbe76
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 8b9dd909a83877755dc1ebafd58aae892e460b93
+ms.sourcegitcommit: a8a205034eeffc7c3e1bdd6f506a75b0f7099ebf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "78240500"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91756150"
 ---
 # <a name="get-started-with-syntax-analysis"></a>Introdução à análise de sintaxe
 
@@ -51,12 +51,12 @@ Uma árvore de sintaxe é uma estrutura de dados usada pelos compiladores C# e V
 
 Os quatro principais blocos de construção de árvores de sintaxe são:
 
-* A classe <xref:Microsoft.CodeAnalysis.SyntaxTree?displayProperty=nameWithType>, uma instância da qual representa uma árvore de análise inteira. <xref:Microsoft.CodeAnalysis.SyntaxTree> é uma classe abstrata que tem derivativos específicos a um idioma. Você usa os métodos <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxTree?displayProperty=nameWithType> de <xref:Microsoft.CodeAnalysis.VisualBasic.VisualBasicSyntaxTree?displayProperty=nameWithType>análise da classe (ou ) para analisar o texto em C# ou Visual Basic.
+* A classe <xref:Microsoft.CodeAnalysis.SyntaxTree?displayProperty=nameWithType>, uma instância da qual representa uma árvore de análise inteira. <xref:Microsoft.CodeAnalysis.SyntaxTree> é uma classe abstrata que tem derivativos específicos a um idioma. Você usa os métodos Parse da <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxTree?displayProperty=nameWithType> classe (ou <xref:Microsoft.CodeAnalysis.VisualBasic.VisualBasicSyntaxTree?displayProperty=nameWithType> ) para analisar o texto em C# (ou Visual Basic).
 * A classe <xref:Microsoft.CodeAnalysis.SyntaxNode?displayProperty=nameWithType>, instâncias da qual representam constructos sintáticos como declarações, instruções, cláusulas e expressões.
 * A estrutura <xref:Microsoft.CodeAnalysis.SyntaxToken?displayProperty=nameWithType>, que representa uma pontuação, operador, identificador ou palavra-chave individual.
 * Finalmente, a estrutura <xref:Microsoft.CodeAnalysis.SyntaxTrivia?displayProperty=nameWithType>, que representa os bits de informação sem significância sintática, tais como o espaço em branco entre tokens, diretivas de pré-processamento e comentários.
 
-Trívia, tokens e nós são compostos hierarquicamente para formar uma árvore que representa completamente tudo em um fragmento de código do Visual Basic ou do C#. Você pode ver essa estrutura usando a janela **Visualizador de Sintaxe**. No Visual Studio, escolha **Exibir** > **outro** > **visualizador de sintaxe do Windows**. Por exemplo, o arquivo de origem C# anterior examinado usando o **Visualizador de Sintaxe** se parecerá com a figura a seguir:
+Trívia, tokens e nós são compostos hierarquicamente para formar uma árvore que representa completamente tudo em um fragmento de código do Visual Basic ou do C#. Você pode ver essa estrutura usando a janela **Visualizador de Sintaxe**. No Visual Studio, escolha **Exibir**  >  **outras**  >  **Syntax Visualizer**do Windows. Por exemplo, o arquivo de origem C# anterior examinado usando o **Visualizador de Sintaxe** se parecerá com a figura a seguir:
 
 **SyntaxNode**: Azul | **SyntaxToken**: Verde | **SyntaxTrivia**: Vermelho ![Arquivo de Código C#](media/walkthrough-csharp-syntax-figure1.png)
 
@@ -77,8 +77,8 @@ Você pode ver o código concluído para essa amostra no [nosso repositório do 
 
 Criar um novo projeto de **Ferramenta de Análise de Código Autônoma** do C#:
 
-* No Visual Studio, escolha **Arquivo** > **Novo** > **Projeto** para exibir a caixa de diálogo Novo Projeto.
-* Em **Visual C#** > **Extensibility,** escolha **a ferramenta de análise de código independente**.
+* No Visual Studio, escolha **arquivo**  >  **novo**  >  **projeto** para exibir a caixa de diálogo novo projeto.
+* Em extensibilidade do **Visual C#**  >  **Extensibility**, escolha **ferramenta de análise de código autônoma**.
 * Nomeie o projeto "**SyntaxTreeManualTraversal**" e clique em OK.
 
 Você analisará o programa "Olá, Mundo!" básico mostrado anteriormente.
@@ -110,7 +110,7 @@ Agora que você sabe que a declaração é um <xref:Microsoft.CodeAnalysis.CShar
 
 [!code-csharp[Find the main declaration](../../../../samples/snippets/csharp/roslyn-sdk/SyntaxQuickStart/HelloSyntaxTree/Program.cs#6 "Find the main declaration")]
 
-O nó de declaração do método contém todas as informações de sintaxe sobre o método. Permite exibir o tipo de retorno do método `Main`, o número e os tipos dos argumentos e o texto do corpo do método. Adicione os códigos a seguir:
+O nó de declaração do método contém todas as informações de sintaxe sobre o método. Permite exibir o tipo de retorno do método `Main`, o número e os tipos dos argumentos e o texto do corpo do método. Adicione o seguinte código:
 
 [!code-csharp[Examine the syntax of the main method](../../../../samples/snippets/csharp/roslyn-sdk/SyntaxQuickStart/HelloSyntaxTree/Program.cs#7 "Display information about the main method")]
 
@@ -172,7 +172,7 @@ Agora que você definiu o texto do programa, você precisa criar um `SyntaxTree`
 
 [!code-csharp[Create the Syntax tree and access the root](../../../../samples/snippets/csharp/roslyn-sdk/SyntaxQuickStart/SyntaxWalker/Program.cs#2 "Create the Syntax tree and access the root node.")]
 
-Em seguida, crie uma nova classe. No Visual Studio, escolha **Projeto** > **Adicionar novo item**. Na caixa de diálogo **Adicionar Novo Item**, digite *UsingCollector.cs* como o nome do arquivo.
+Em seguida, crie uma nova classe. No Visual Studio, escolha **projeto**  >  **Adicionar novo item**. Na caixa de diálogo **Adicionar Novo Item**, digite *UsingCollector.cs* como o nome do arquivo.
 
 Você implementa a funcionalidade de visitante `using` na classe `UsingCollector`. Para começar, crie a classe `UsingCollector` derivada de <xref:Microsoft.CodeAnalysis.CSharp.CSharpSyntaxWalker>.
 
@@ -192,7 +192,7 @@ Por fim, você precisa adicionar duas linhas de código para criar o `UsingColle
 
 [!code-csharp[Create the UsingCollector and visit the root node.](../../../../samples/snippets/csharp/roslyn-sdk/SyntaxQuickStart/SyntaxWalker/Program.cs#6 "Create the UsingCollector and visit the root node.")]
 
-Compile e execute o programa. Você deve ver o seguinte resultado:
+Compile e execute o programa. A seguinte saída deve ser exibida:
 
 ```console
         VisitUsingDirective called with System.

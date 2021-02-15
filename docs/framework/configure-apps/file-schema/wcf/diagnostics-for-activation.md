@@ -1,22 +1,24 @@
 ---
-title: <diagnostics>para ativação
+description: 'Saiba mais sobre: <diagnostics> para ativação'
+title: <diagnostics> para ativação
 ms.date: 03/30/2017
 ms.assetid: 1486e0eb-fe2a-46c3-b584-c924889477dd
-ms.openlocfilehash: 33b2cd4c5ae1b4076892a61aa7e2b927efa1ddc1
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: aa1529a478ac367ea89c8926571c6c6f2f57cf74
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70400406"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698356"
 ---
-# <a name="diagnostics-for-activation"></a>\<diagnostics>para ativação
+# <a name="diagnostics-for-activation"></a>\<diagnostics> para ativação
+
 Configura as funcionalidades de diagnóstico do ouvinte Windows Communication Foundation (WCF).  
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.serviceModel.activation>**](system-servicemodel-activation.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<diagnostics>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <configuration>
@@ -26,10 +28,12 @@ Configura as funcionalidades de diagnóstico do ouvinte Windows Communication Fo
 </configuration>
 ```  
   
-## <a name="type"></a>Type  
+## <a name="type"></a>Tipo  
+
  `Type`  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -39,13 +43,14 @@ Configura as funcionalidades de diagnóstico do ouvinte Windows Communication Fo
 |`performanceCountersEnabled`|Um valor booliano que indica se os contadores de desempenho estão habilitados para fins de diagnóstico.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[\<system.serviceModel.activation>](system-servicemodel-activation.md)|Contém definições de configuração para o processo de ouvinte SMSvcHost. exe.|  
+|[\<system.serviceModel.activation>](system-servicemodel-activation.md)|Contém definições de configuração para o processo de ouvinte SMSvcHost.exe.|  
   
 ## <a name="see-also"></a>Confira também
 

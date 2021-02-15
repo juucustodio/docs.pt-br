@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: Pausando e retomando um fluxo de trabalho'
 title: Pausando e continuando um fluxo de trabalho
 ms.date: 03/30/2017
 ms.assetid: 11f38339-79c7-4295-b610-24a7223bbf6d
-ms.openlocfilehash: dc6bdfe7cc10837fb8721ab12490d244d5ec1ca0
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 787dc2e2ddac03a059df30798645d561cb57437b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79142960"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787884"
 ---
 # <a name="pausing-and-resuming-a-workflow"></a>Pausando e continuando um fluxo de trabalho
+
 Fluxos de trabalho pausarão e continuarão em resposta a indexadores e para atividades de bloqueio como <xref:System.Activities.Statements.Delay>, mas um fluxo de trabalho também pode ser explicitamente pausado, descarregado, e continuado usando a persistência.  
   
 ## <a name="pausing-a-workflow"></a>Pausando um fluxo de trabalho  
+
  Para pausar um fluxo de trabalho, use <xref:System.Activities.WorkflowApplication.Unload%2A>.  Este método requer que o fluxo de trabalho persiste e descarrega, e irá acionar <xref:System.TimeoutException> se o fluxo de trabalho não descarrega em 30 segundos.  
   
 ```csharp  
@@ -28,6 +31,7 @@ catch (TimeoutException e)
 ```  
   
 ## <a name="resuming-a-workflow"></a>Continuando um fluxo de trabalho  
+
  Para continuar um fluxo de trabalho anteriormente em pausa e descarregado, use <xref:System.Activities.WorkflowApplication.Load%2A>. Este método carrega um fluxo de trabalho de um armazenamento de persistência na memória.  
   
 ```csharp  
@@ -37,6 +41,7 @@ application.Load(id);
 ```  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo de código a seguir demonstra como pausar e retomar um fluxo de trabalho usando a persistência.  
   
 ```csharp  

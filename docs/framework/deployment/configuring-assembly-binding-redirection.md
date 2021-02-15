@@ -6,14 +6,15 @@ helpviewer_keywords:
 - side-by-side execution, assembly binding redirection
 - assemblies [.NET Framework], binding redirection
 ms.assetid: d266cbd8-bf91-41d1-baf0-afbc481a741f
-ms.openlocfilehash: 8f3e2270d92e11ea467d6cefc2b19b4faff563b4
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 2455cab19132a208fb99454d4131363a624315c5
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85621724"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96236371"
 ---
 # <a name="configuring-assembly-binding-redirection"></a>Configurando o redirecionamento de associações de assemblies
+
 Por padrão, os aplicativos usam o conjunto de assemblies do .NET Framework que acompanha a versão do runtime usada para compilar o aplicativo. Você pode usar o atributo **AppliesTo** no [\<assemblyBinding>](../configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) elemento em um arquivo de configuração de aplicativo para redirecionar referências de associação de assembly para uma versão específica dos assemblies de .NET Framework. Esse atributo opcional usa um número de versão do .NET Framework para indicar a qual versão ele se aplica. Se nenhum atributo **AppliesTo** for especificado, o **\<assemblyBinding>** elemento se aplicará a todas as versões do .NET Framework.  
   
  O atributo **appliesTo** foi introduzido no.NET Framework versão 1.1; ele é ignorado pelo .NET Framework versão 1.0. Isso significa que todos os **\<assemblyBinding>** elementos são aplicados ao usar o .NET Framework versão 1,0, mesmo se um atributo **AppliesTo** for especificado.  
@@ -52,10 +53,11 @@ Por padrão, os aplicativos usam o conjunto de assemblies do .NET Framework que 
 ```  
   
 ## <a name="debugging-configuration-file-errors"></a>Depurando erros de arquivos de configuração  
+
  O runtime analisa os arquivos de configuração uma vez quando um domínio do aplicativo é criado e carrega o código para ele. O Common Language Runtime trata os erros em um arquivo de configuração ignorando a entrada. O runtime ignorará todo o arquivo de configuração se ele contiver XML mal formado. Para XML inválido, apenas as seções inválidas serão ignoradas.  
   
  É possível identificar se um arquivo de configuração está sendo usado determinando se os redirecionamentos de associação de assembly estão ocorrendo. Use o [Visualizador de Log de Associação de Assembly (Fuslogvw.exe)](../tools/fuslogvw-exe-assembly-binding-log-viewer.md) para ver quais assemblies são carregados. Para ver todas as associações de assembly, você deve definir uma entrada para **ForceLog** no registro.  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como: Habilitar e desabilitar o redirecionamento automático de associação](../configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)

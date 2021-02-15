@@ -5,19 +5,19 @@ ms.date: 08/20/2019
 helpviewer_keywords:
 - strong-named assemblies, signing with strong names
 - signing assemblies
-- assemblies [.NET Framework], signing
-- assemblies [.NET Framework], strong-named
+- assemblies [.NET], signing
+- assemblies [.NET], strong-named
 ms.assetid: 2c30799a-a826-46b4-a25d-c584027a6c67
 dev_langs:
 - csharp
 - vb
 - cpp
-ms.openlocfilehash: d4888a12ac0494ca34eac3553a5374c3517fee38
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 5192f7f372b9ef7927930c3599aebc6fca9f1f0f
+ms.sourcegitcommit: 279fb6e8d515df51676528a7424a1df2f0917116
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378614"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92687658"
 ---
 # <a name="how-to-sign-an-assembly-with-a-strong-name"></a>Como assinar um assembly com um nome forte
 
@@ -28,7 +28,7 @@ Há vários modos de assinar um assembly com um nome forte:
   
 - Usando a guia **Assinatura** na caixa de diálogo **Propriedades** de um projeto no Visual Studio. Esta é a forma mais fácil e conveniente de assinar um assembly com um nome forte.  
   
-- Usando o [vinculador do assembly (al. exe)](../../framework/tools/al-exe-assembly-linker.md) para vincular um módulo de código de .NET Framework (um arquivo *. netmodule* ) a um arquivo de chave.  
+- Usando o [vinculador de assembly (Al.exe)](../../framework/tools/al-exe-assembly-linker.md) para vincular um módulo de código de .NET Framework (um arquivo *. netmodule* ) a um arquivo de chave.  
   
 - Usando atributos de assembly para inserir as informações do nome forte no seu código. Você pode usar o atributo <xref:System.Reflection.AssemblyKeyFileAttribute> ou <xref:System.Reflection.AssemblyKeyNameAttribute>, dependendo do local em que o arquivo de chave a ser usado se encontra.  
   
@@ -38,13 +38,13 @@ Há vários modos de assinar um assembly com um nome forte:
   
 ## <a name="create-and-sign-an-assembly-with-a-strong-name-by-using-visual-studio"></a>Criar e assinar um assembly com um nome forte usando o Visual Studio  
   
-1. No **Gerenciador de Soluções**, abra o menu de atalho do projeto e, em seguida, escolha **Propriedades**.  
+1. No **Gerenciador de Soluções** , abra o menu de atalho do projeto e, em seguida, escolha **Propriedades** .  
   
-2. Escolha a guia **Assinatura**.  
+2. Escolha a guia **Assinatura** .  
   
-3. Marque a caixa **Assinar o assembly**.  
+3. Marque a caixa **Assinar o assembly** .  
   
-4. Na caixa **escolher um arquivo de chave de nome forte** , escolha **procurar**e, em seguida, navegue até o arquivo de chave. Para criar um novo arquivo de chave, escolha **novo** e digite seu nome na caixa de diálogo **criar chave de nome forte** .  
+4. Na caixa **escolher um arquivo de chave de nome forte** , escolha **procurar** e, em seguida, navegue até o arquivo de chave. Para criar um novo arquivo de chave, escolha **novo** e digite seu nome na caixa de diálogo **criar chave de nome forte** .  
   
 > [!NOTE]
 > Para [assinar um assembly com atraso](delay-sign.md), escolha um arquivo de chave pública.  
@@ -53,7 +53,7 @@ Há vários modos de assinar um assembly com um nome forte:
   
 No [prompt de comando do desenvolvedor para o Visual Studio](../../framework/tools/developer-command-prompt-for-vs.md), digite o seguinte comando:  
 
-**Al** **/out:** \< *AssemblyName* >  * \< ModuleName>* **/keyfile:** \< *DefaultFilename*>  
+**Al** **/out:** \<*assemblyName*> *\<moduleName>* **/keyfile:**\<*keyfileName*>  
 
 Em que:  
 
@@ -63,7 +63,7 @@ Em que:
   
 - *fileFileName* é o nome do contêiner ou arquivo que contém o par de chaves. O vinculador de assembly interpreta um caminho relativo em relação ao diretório atual.  
 
-O exemplo a seguir assina o assembly *myAssembly. dll* com um nome forte usando o arquivo de chave *sgKey. SNK*.  
+O exemplo a seguir assina o assembly *MyAssembly.dll* com um nome forte usando o arquivo de chave *sgKey. SNK* .  
 
 ```console
 al /out:MyAssembly.dll MyModule.netmodule /keyfile:sgKey.snk  
@@ -80,7 +80,7 @@ Para saber mais sobre essa ferramenta, veja [Vinculador de Assembly](../../frame
    > [!NOTE]
    > Os compiladores de C# e Visual Basic emitem avisos do compilador (CS1699 e BC41008, respectivamente) quando encontram o atributo <xref:System.Reflection.AssemblyKeyFileAttribute> ou <xref:System.Reflection.AssemblyKeyNameAttribute> no código-fonte. Você pode ignorar os avisos.  
 
-O exemplo a seguir usa o <xref:System.Reflection.AssemblyKeyFileAttribute> atributo com um arquivo de chave chamado *keyfile. SNK*, que está localizado no diretório em que o assembly é compilado.  
+O exemplo a seguir usa o <xref:System.Reflection.AssemblyKeyFileAttribute> atributo com um arquivo de chave chamado *keyfile. SNK* , que está localizado no diretório em que o assembly é compilado.  
 
 ```cpp
 [assembly:AssemblyKeyFileAttribute("keyfile.snk")];
@@ -102,17 +102,17 @@ Compile seu arquivo ou arquivos de código-fonte com a opção de compilador `/k
 
 Para obter informações sobre assinatura de atraso, consulte [assinar um assembly com atraso](delay-sign.md).  
 
-O exemplo a seguir usa o compilador C# e assina o assembly *UtilityLibrary. dll* com um nome forte usando o arquivo de chave *sgKey. SNK*.  
+O exemplo a seguir usa o compilador C# e assina o assembly *UtilityLibrary.dll* com um nome forte usando o arquivo de chave *sgKey. SNK* .  
 
 ```cmd
 csc /t:library UtilityLibrary.cs /keyfile:sgKey.snk  
 ```  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Criar e usar assemblies com nome forte](create-use-strong-named.md)
-- [Como criar um par de chaves pública/privada](create-public-private-key-pair.md)
-- [Al. exe (vinculador de assembly)](../../framework/tools/al-exe-assembly-linker.md)
+- [Como criar um par de chaves pública-privada](create-public-private-key-pair.md)
+- [Al.exe (vinculador de assembly)](../../framework/tools/al-exe-assembly-linker.md)
 - [Assinar um assembly com atraso](delay-sign.md)
 - [Gerenciar assinatura de assembly e de manifesto](/visualstudio/ide/managing-assembly-and-manifest-signing)
 - [Página de assinatura, designer de projeto](/visualstudio/ide/reference/signing-page-project-designer)

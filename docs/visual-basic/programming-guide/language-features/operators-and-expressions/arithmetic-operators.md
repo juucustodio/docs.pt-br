@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: operadores aritméticos no Visual Basic'
 title: Operadores aritméticos
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -13,17 +14,19 @@ helpviewer_keywords:
 - Visual Basic code, operators
 - arithmetic operators [Visual Basic], about arithmetic operators
 ms.assetid: 325dac7a-ea4f-41d5-8b48-f6e904211569
-ms.openlocfilehash: d5f79f3e45fc887dcb32c959f04703253ade198c
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 3a7005b0a44f9b0358e393d8580a2a19a9a19881
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84389030"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100465321"
 ---
 # <a name="arithmetic-operators-in-visual-basic"></a>Operadores aritméticos no Visual Basic
+
 Os operadores aritméticos são usados para executar muitas das operações aritméticas familiares que envolvem o cálculo de valores numéricos representados por literais, variáveis, outras expressões, chamadas de função e propriedade e constantes. Também classificado com operadores aritméticos são os operadores de deslocamento de bits, que atuam no nível dos bits individuais dos operandos e deslocam seus padrões de bits para a esquerda ou para a direita.  
   
-## <a name="arithmetic-operations"></a>Operações Aritméticas  
+## <a name="arithmetic-operations"></a>Operações aritméticas  
+
  Você pode adicionar dois valores em uma expressão junto com o [operador +](../../../language-reference/operators/addition-operator.md)ou subtrair um de outro com o [operador-Operator (Visual Basic)](../../../language-reference/operators/subtraction-operator.md), como demonstra o exemplo a seguir.  
   
  [!code-vb[VbVbalrOperators#57](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#57)]  
@@ -51,20 +54,22 @@ Os operadores aritméticos são usados para executar muitas das operações arit
  [!code-vb[VbVbalrOperators#63](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#63)]  
   
 ### <a name="attempted-division-by-zero"></a>Tentativa de divisão por zero  
+
  A divisão por zero tem resultados diferentes, dependendo dos tipos de dados envolvidos. Em divisões integrais (,,,, `SByte` `Byte` ,, `Short` `UShort` `Integer` `UInteger` `Long` , `ULong` ), a .NET Framework gera uma <xref:System.DivideByZeroException> exceção. Em operações de divisão no `Decimal` `Single` tipo de dados ou, a .NET Framework também gera uma <xref:System.DivideByZeroException> exceção.  
   
  Em divisões de ponto flutuante que envolvem o `Double` tipo de dados, nenhuma exceção é lançada e o resultado é o membro de classe que representa <xref:System.Double.NaN> , <xref:System.Double.PositiveInfinity> ou <xref:System.Double.NegativeInfinity> , dependendo do dividendo. A tabela a seguir resume os vários resultados da tentativa de dividir um `Double` valor por zero.  
   
 |Tipo de dados dividendo|Tipo de dados de divisor|Valor de dividendo|Result|  
 |---|---|---|---|  
-|`Double`|`Double`|0|<xref:System.Double.NaN>(não é um número definido matematicamente)|  
+|`Double`|`Double`|0|<xref:System.Double.NaN> (não é um número definido matematicamente)|  
 |`Double`|`Double`|> 0|<xref:System.Double.PositiveInfinity>|  
 |`Double`|`Double`|\< 0|<xref:System.Double.NegativeInfinity>|  
   
  Ao capturar uma <xref:System.DivideByZeroException> exceção, você pode usar seus membros para ajudá-lo a tratá-la. Por exemplo, a <xref:System.Exception.Message%2A> propriedade contém o texto da mensagem para a exceção. Para obter mais informações, consulte [Instrução Try...Catch...Finally](../../../language-reference/statements/try-catch-finally-statement.md).  
   
-## <a name="bit-shift-operations"></a>Operações de deslocamento de bits  
- Uma operação de deslocamento de bits executa um deslocamento aritmético em um padrão de bit. O padrão está contido no operando à esquerda, enquanto o operando à direita especifica o número de posições para deslocar o padrão. Você pode deslocar o padrão para a direita com o [operador de>> ](../../../language-reference/operators/right-shift-operator.md) ou para a esquerda com o [operador de<< ](../../../language-reference/operators/left-shift-operator.md).  
+## <a name="bit-shift-operations"></a>Operações de Bit-Shift  
+
+ Uma operação de deslocamento de bits executa um deslocamento aritmético em um padrão de bit. O padrão está contido no operando à esquerda, enquanto o operando à direita especifica o número de posições para deslocar o padrão. Você pode deslocar o padrão para a direita com o [ operador de>> ](../../../language-reference/operators/right-shift-operator.md) ou para a esquerda com o [ operador de<< ](../../../language-reference/operators/left-shift-operator.md).  
   
  O tipo de dados do operando de padrão deve ser,,,,,, `SByte` `Byte` `Short` `UShort` `Integer` `UInteger` `Long` ou `ULong` . O tipo de dados do operando de valor de deslocamento deve ser `Integer` ou deve ser ampliado para `Integer` .  
   
@@ -85,16 +90,18 @@ Os operadores aritméticos são usados para executar muitas das operações arit
  As turnos aritméticos nunca geram exceções de estouro.  
   
 ## <a name="bitwise-operations"></a>Operações bits  
+
  Além de serem operadores lógicos, `Not` , `Or` , `And` e `Xor` também executam aritméticas de bit que não se são usados em valores numéricos. Para obter mais informações, consulte "operações bit a bit" em [operadores lógicos e de bit a bit em Visual Basic](logical-and-bitwise-operators.md).  
   
 ## <a name="type-safety"></a>Segurança de tipo  
+
  Os operandos normalmente devem ser do mesmo tipo. Por exemplo, se você estiver fazendo adição com uma `Integer` variável, deverá adicioná-la a outra `Integer` variável e também deverá atribuir o resultado a uma variável do tipo `Integer` .  
   
  Uma maneira de garantir uma boa prática de codificação de tipo seguro é usar a [instrução Option Strict](../../../language-reference/statements/option-strict-statement.md). Se você definir `Option Strict On` , Visual Basic automaticamente executará conversões *de tipo seguro* . Por exemplo, se você tentar adicionar uma `Integer` variável a uma `Double` variável e atribuir o valor a uma `Double` variável, a operação continuará normalmente, porque um `Integer` valor pode ser convertido `Double` sem perda de dados. Por outro lado, as conversões sem segurança de tipo causam um erro de compilador com `Option Strict On` . Por exemplo, se você tentar adicionar uma `Integer` variável a uma `Double` variável e atribuir o valor a uma `Integer` variável, um erro de compilador resultará porque uma `Double` variável não pode ser convertida implicitamente no tipo `Integer` .  
   
  No entanto, se você definir `Option Strict Off` , o Visual Basic permitir conversões de estreitamento implícitas, embora elas possam resultar na perda inesperada de dados ou precisão. Por esse motivo, recomendamos que você use `Option Strict On` ao escrever código de produção. Para obter mais informações, consulte [Ampliando e restringindo conversões](../data-types/widening-and-narrowing-conversions.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operadores aritméticos](../../../language-reference/operators/arithmetic-operators.md)
 - [Operadores Bit Shift](../../../language-reference/operators/bit-shift-operators.md)

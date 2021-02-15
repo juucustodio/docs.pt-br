@@ -1,51 +1,54 @@
 ---
+description: 'Saiba mais sobre: DiffGrams'
 title: DiffGrams
 ms.date: 03/30/2017
 ms.assetid: 037f3991-7bbc-424b-b52e-8b03585d3e34
-ms.openlocfilehash: 2c521ef33c98234dac5f4b819a800cd524218462
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: df00bbfb2c25014ff4e73a2777511bd3593ff8a4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79151150"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652504"
 ---
 # <a name="diffgrams"></a>DiffGrams
-O DiffGram é um formato XML que identifica versões atuais e originais de elementos de dados. O <xref:System.Data.DataSet> uso do formato DiffGram para carregar e persistir seu conteúdo e serializar seu conteúdo para transporte através de uma conexão de rede. Quando <xref:System.Data.DataSet> a é escrita como um DiffGram, ele preenche o DiffGram com todas as informações necessárias <xref:System.Data.DataSet>para recriar com precisão o conteúdo, embora não o esquema, do , incluindo valores de coluna das versões de linha **Original** e **Atual,** informações de erro de linha e ordem de linha.  
+
+Um DiffGram é um formato XML que identifica as versões atuais e originais dos elementos de dados. O <xref:System.Data.DataSet> usa o formato DiffGram para carregar e manter seu conteúdo e para serializar seu conteúdo para transporte em uma conexão de rede. Quando um <xref:System.Data.DataSet> é escrito como um DiffGram, ele popula o DiffGram com todas as informações necessárias para recriar com precisão o conteúdo, embora não o esquema, do <xref:System.Data.DataSet> , incluindo valores de coluna das versões de linha **original** e **atual** , informações de erro de linha e ordem de linha.  
   
- Ao enviar e <xref:System.Data.DataSet> recuperar um de um serviço Web XML, o formato DiffGram é usado implicitamente. Além disso, ao carregar <xref:System.Data.DataSet> o conteúdo de um xml usando o método <xref:System.Data.DataSet> **ReadXml,** ou ao escrever o conteúdo de um em XML usando o método **WriteXml,** você pode especificar que o conteúdo seja lido ou escrito como um DiffGram. Para obter mais informações, consulte [Carregar um conjunto de dados do XML](loading-a-dataset-from-xml.md) e escrever o conteúdo do conjunto de dados como Dados [XML](writing-dataset-contents-as-xml-data.md).  
+ Ao enviar e recuperar um <xref:System.Data.DataSet> de um serviço Web XML, o formato DiffGram é usado implicitamente. Além disso, ao carregar o conteúdo de um <xref:System.Data.DataSet> XML usando o método **ReadXml** ou ao gravar o conteúdo de um <xref:System.Data.DataSet> em XML usando o método **WriteXml** , você pode especificar que o conteúdo seja lido ou gravado como um DiffGram. Para obter mais informações, consulte [carregando um conjunto de dados a partir de XML](loading-a-dataset-from-xml.md) e [gravando conteúdo do DataSet como XML](writing-dataset-contents-as-xml-data.md).  
   
- Embora o formato DiffGram seja usado principalmente pelo .NET Framework como <xref:System.Data.DataSet>um formato de serialização para o conteúdo de a, você também pode usar diffGrams para modificar dados em tabelas em um banco de dados Microsoft SQL Server.  
+ Embora o formato DiffGram seja usado principalmente pelo .NET Framework como um formato de serialização para o conteúdo de um <xref:System.Data.DataSet> , você também pode usar DiffGrams para modificar dados em tabelas em um banco de dados Microsoft SQL Server.  
   
- Um Diffgram é gerado escrevendo o conteúdo de todas as tabelas para um ** \<elemento>diffgram.**  
+ Um DiffGram é gerado pela gravação do conteúdo de todas as tabelas em um **\<diffgram>** elemento.  
   
-### <a name="to-generate-a-diffgram"></a>Para gerar um Diffgram  
+### <a name="to-generate-a-diffgram"></a>Para gerar um DiffGram  
   
-1. Gerar uma lista de tabelas Raiz (ou seja, tabelas sem nenhum pai).  
+1. Gerar uma lista de tabelas raiz (ou seja, tabelas sem qualquer pai).  
   
-2. Para cada tabela e seus descendentes na lista, escreva a versão atual de todas as linhas na primeira seção Diffgram.  
+2. Para cada tabela e seus descendentes na lista, anote a versão atual de todas as linhas na primeira seção DiffGram.  
   
-3. Para cada tabela <xref:System.Data.DataSet>no , escreva a versão original de todas as linhas, se houver, na ** \<** seção anterior>do Diffgram.  
+3. Para cada tabela no <xref:System.Data.DataSet> , anote a versão original de todas as linhas, se houver, na **\<before>** seção do DiffGram.  
   
-4. Para linhas que tenham erros, escreva ** \<** o conteúdo de erro na seção>erros do Diffgram.  
+4. Para linhas com erros, grave o conteúdo de erro na **\<errors>** seção do DiffGram.  
   
- Um Diffgram é processado em ordem desde o início do arquivo XML até o final.  
+ Um DiffGram é processado na ordem do início do arquivo XML até o fim.  
   
-### <a name="to-process-a-diffgram"></a>Para processar um Diffgram  
+### <a name="to-process-a-diffgram"></a>Para processar um DiffGram  
   
-1. Processe a primeira seção do Diffgram que contém a versão atual das linhas.  
+1. Processar a primeira seção do DiffGram que contém a versão atual das linhas.  
   
-2. Processe a ** \<** segunda ou a seção anterior>que contém a versão original da linha de linhas modificadas e excluídas.  
+2. Processe a segunda ou a **\<before>** seção que contém a versão de linha original das linhas modificadas e excluídas.  
   
     > [!NOTE]
-    > Se uma linha for marcada excluída, a operação excluir também poderá excluir `Cascade` os descendentes <xref:System.Data.DataSet>da linha, dependendo da propriedade da corrente .  
+    > Se uma linha for marcada como excluída, a operação de exclusão também poderá excluir os descendentes da linha, dependendo da `Cascade` Propriedade do atual <xref:System.Data.DataSet> .  
   
-3. Processe ** \<** os erros>seção. Defina as informações de erro para a linha e a coluna especificadas para cada item nesta seção.  
+3. Processe a **\<errors>** seção. Defina as informações de erro para a linha e a coluna especificadas para cada item nesta seção.  
   
 > [!NOTE]
-> Se você <xref:System.Data.XmlWriteMode> definir o 'Diffgram', <xref:System.Data.DataSet> o <xref:System.Data.DataSet> conteúdo do destino e o original podem ser diferentes.  
+> Se você definir <xref:System.Data.XmlWriteMode> como DiffGram, o conteúdo do destino <xref:System.Data.DataSet> e o original <xref:System.Data.DataSet> poderão ser diferentes.  
   
 ## <a name="diffgram-format"></a>Formato DiffGram  
- O formato DiffGram é dividido em três seções: os dados atuais, os dados originais (ou "antes") e uma seção de erros, como mostrado no exemplo a seguir.  
+
+ O formato DiffGram é dividido em três seções: os dados atuais, os dados originais (ou "anteriores") e uma seção de erros, conforme mostrado no exemplo a seguir.  
   
 ```xml  
 <?xml version="1.0"?>  
@@ -67,37 +70,39 @@ O DiffGram é um formato XML que identifica versões atuais e originais de eleme
   
  O formato DiffGram consiste nos seguintes blocos de dados:  
   
- **\<**  ***Instância de dados***  **>**  
- O nome deste elemento, ***DataInstance***, é usado para fins de explicação nesta documentação. Um elemento ***DataInstance*** <xref:System.Data.DataSet> representa uma ou <xref:System.Data.DataTable>uma linha de a . Em vez de *DataInstance,* o elemento <xref:System.Data.DataSet> <xref:System.Data.DataTable>conteria o nome do ou . Este bloco do formato DiffGram contém os dados atuais, sejam eles modificados ou não. Um elemento, ou linha, que foi modificado é identificado com a anotação **diffgr:hasChanges.**  
+ **\<**  **_DataInstance_*_  _*>**  
+ O nome desse elemento, ***DataInstance** _, é usado para fins explicativos nesta documentação. Um elemento _*_DataInstance_*_ representa uma <xref:System.Data.DataSet> ou uma linha de um <xref:System.Data.DataTable> . Em vez de _DataInstance *, o elemento conterá o nome do <xref:System.Data.DataSet> ou <xref:System.Data.DataTable> . Esse bloco do formato DiffGram contém os dados atuais, se eles foram modificados ou não. Um elemento, ou linha, que foi modificado, é identificado com a anotação **diffgr: hasChanges** .  
   
- **\<diffgr:antes de>**  
- Este bloco do formato DiffGram contém a versão original de uma linha. Os elementos neste bloco são compatíveis com elementos no bloco ***DataInstance*** usando a anotação **diffgr:id.**  
+ **\<diffgr:before>**  
+ Esse bloco do formato DiffGram contém a versão original de uma linha. Os elementos neste bloco são correspondidos aos elementos no bloco ***DataInstance** _ usando a anotação _ *diffgr: ID**.  
   
- **\<diffgr:erros>**  
- Este bloco do formato DiffGram contém informações de erro para uma linha específica no bloco ***DataInstance.*** Os elementos neste bloco são compatíveis com elementos no bloco ***DataInstance*** usando a anotação **diffgr:id.**  
+ **\<diffgr:errors>**  
+ Esse bloco do formato DiffGram contém informações de erro para uma linha específica no bloco ***DataInstance** _. Os elementos neste bloco são correspondidos aos elementos no bloco _*_DataInstance_*_ usando a anotação _ *diffgr: ID**.  
   
 ## <a name="diffgram-annotations"></a>Anotações de DiffGram  
- Os DiffGrams usam várias anotações para relacionar elementos dos diferentes blocos DiffGram que representam diferentes versões de linha ou informações de erro no <xref:System.Data.DataSet>.  
+
+ Os DiffGrams usam várias anotações para relacionar os elementos dos diferentes blocos de DiffGram que representam diferentes versões de linha ou informações de erro no <xref:System.Data.DataSet> .  
   
- A tabela a seguir descreve as anotações DiffGram definidas no nameSpace diffGram **urn:schemas-microsoft-com:xml-diffgram-v1**.  
+ A tabela a seguir descreve as anotações de DiffGram que são definidas no namespace do DiffGram **urn: schemas-microsoft-com: XML-DiffGram-v1**.  
   
-|Anotação|Descrição|  
+|Annotation|Descrição|  
 |----------------|-----------------|  
-|**id**|Usado para emparelhar os elementos no ** \<diffgr:antes de>** **\<** e ** \<diffgr:erros>** blocos a elementos no bloco ***DataInstance.*** **>** Os valores com a anotação **diffgr:id** estão no formulário *[TableName][RowIdentifier]*. Por exemplo: `<Customers diffgr:id="Customers1">`.|  
-|**parentId**|Identifica qual elemento **\<** do bloco ***DataInstance*** **>** é o elemento pai do elemento atual. Os valores com a anotação **diffgr:parentId** estão no formulário *[TableName][RowIdentifier]*. Por exemplo: `<Orders diffgr:parentId="Customers1">`.|  
-|**hasChanges**|Identifica uma linha **\<** no bloco ***DataInstance*** **>** como modificada. A anotação **hasChanges** pode ter um dos dois valores a seguir:<br /><br /> **Inserido**<br /> Identifica uma linha **adicionada.**<br /><br /> **Modificado**<br /> Identifica uma **linha modificada** que contém uma versão de linha **Original** no ** \<diffgr:antes de>** bloco. Observe que as linhas **excluídas** terão uma versão de linha **Original** no ** \<diffgr:antes de** **\<**>bloco, mas não haverá nenhum elemento anotado no bloco ***DataInstance.*** **>**|  
-|**Haserrors**|Identifica uma linha **\<** no bloco ***DataInstance*** **>** com um **Erro de linha**. O elemento de erro é colocado no ** \<bloco diffgr:errors>.**|  
-|**Erro**|Contém o texto do 'Erro de **linha'** para um determinado elemento no ** \<bloco diffgr:errors>.**|  
+|**id**|Usado para emparelhar os elementos nos **\<diffgr:before>** **\<diffgr:errors>** blocos e para os elementos no **\<** **_DataInstance_*_ _*>** bloco. Os valores com a anotação **diffgr: ID** estão no formato *[TableName] [ID do @ identificador]*. Por exemplo, `<Customers diffgr:id="Customers1">`.|  
+|**parentId**|Identifica qual elemento do **\<** **_DataInstance_*_ _*>** bloco é o elemento pai do elemento atual. Os valores com a anotação **diffgr: parentID** estão no formato *[TableName] [ID do @ identificador]*. Por exemplo, `<Orders diffgr:parentId="Customers1">`.|  
+|**hasChanges**|Identifica uma linha no **\<** **_DataInstance_*_ _*>** bloco como modificada. A anotação **HasChanges** pode ter um dos dois valores a seguir:<br /><br /> **inserido**<br /> Identifica uma linha **adicionada** .<br /><br /> **modificado**<br /> Identifica uma linha **modificada** que contém uma versão de linha **original** no **\<diffgr:before>** bloco. Observe que as linhas **excluídas** terão uma versão de linha **original** no **\<diffgr:before>** bloco, mas não haverá nenhum elemento anotado no **\<** **_DataInstance_*_ _*>** bloco.|  
+|**hasErrors**|Identifica uma linha no **\<** **_DataInstance_*_ _*>** bloco com um rowgroup . O elemento error é colocado no **\<diffgr:errors>** bloco.|  
+|**Erro**|Contém o texto do **Usererror** para um elemento específico no **\<diffgr:errors>** bloco.|  
   
- O <xref:System.Data.DataSet> inclui anotações adicionais ao ler ou escrever seu conteúdo como um DiffGram. A tabela a seguir descreve essas anotações adicionais, que são definidas no namespace **urn:schemas-microsoft-com:xml-msdata**.  
+ O <xref:System.Data.DataSet> inclui anotações adicionais ao ler ou gravar seu conteúdo como um DiffGram. A tabela a seguir descreve essas anotações adicionais, que são definidas no namespace **urn: schemas-microsoft-com: xml-msdata**.  
   
-|Anotação|Descrição|  
+|Annotation|Descrição|  
 |----------------|-----------------|  
-|**RowOrder**|Preserva a ordem de linha dos dados originais e identifica <xref:System.Data.DataTable>o índice de uma linha em um determinado .|  
-|**Escondidos**|Identifica uma coluna como tendo uma propriedade **Demapeamento** de colunas definida como **MappingType.Hidden**. O atributo é gravado no formato **msdata:hidden** *[ColumnName]*="*valor*". Por exemplo: `<Customers diffgr:id="Customers1" msdata:hiddenContactTitle="Owner">`.<br /><br /> Observe que as colunas ocultas só são escritas como um atributo DiffGram se contiverem dados. Caso contrário, eles serão ignorados.|  
+|**RowOrder**|Preserva a ordem de linha dos dados originais e identifica o índice de uma linha em um determinado <xref:System.Data.DataTable> .|  
+|**Oculto**|Identifica uma coluna como tendo uma propriedade **ColumnMapping** definida como **MappingType. Hidden**. O atributo é escrito no formato **MSDATA: Hidden** *[ColumnName]*= "*Value*". Por exemplo, `<Customers diffgr:id="Customers1" msdata:hiddenContactTitle="Owner">`.<br /><br /> Observe que as colunas ocultas só serão gravadas como um atributo DiffGram se eles contiverem dados. Caso contrário, eles serão ignorados.|  
   
-## <a name="sample-diffgram"></a>DiffGram de amostra  
- Um exemplo do formato DiffGram é mostrado abaixo. Este exemplo mostra o resultado de uma atualização para uma linha em uma tabela antes que as alterações tenham sido cometidas. A linha com um CustomerID de "ALFKI" foi modificada, mas não atualizada. Como resultado, há uma linha **Atual** com um **diffgr:id** **\<** de "Clientes1" no bloco ***DataInstance*** **>** e uma linha **Original** com um **diffgr:id** de "Clientes1" no ** \<diffgr:antes de>** bloco. A linha com um CustomerID de "ANATR" inclui um **RowError**, `diffgr:hasErrors="true"` por isso é anotado com e há um elemento relacionado no ** \<bloco diffgr:errors>.**  
+## <a name="sample-diffgram"></a>DiffGram de exemplo  
+
+ Um exemplo do formato DiffGram é mostrado abaixo. Este exemplo mostra o resultado de uma atualização para uma linha em uma tabela antes que as alterações sejam confirmadas. A linha com um CustomerID de "ALFKI" foi modificada, mas não foi atualizada. Como resultado, há uma linha **atual** com um **diffgr: ID** de "Customers1" no **\<** **_DataInstance_*_ _*>** bloco e uma linha **original** com um **diffgr: ID** de "Customers1" no **\<diffgr:before>** bloco. A linha com um CustomerID de "ANATR" inclui um **rowgroup, portanto**, ele é anotado com `diffgr:hasErrors="true"` e há um elemento relacionado no **\<diffgr:errors>** bloco.  
   
 ```xml  
 <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">  
@@ -131,10 +136,10 @@ O DiffGram é um formato XML que identifica versões atuais e originais de eleme
 </diffgr:diffgram>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Using XML in a DataSet](using-xml-in-a-dataset.md) (Usando XML em um DataSet)
-- [Carregar um conjunto de dados do XML](loading-a-dataset-from-xml.md)
-- [Gravar o conteúdo do conjunto de dados como dados XML](writing-dataset-contents-as-xml-data.md)
+- [Usando XML em um DataSet](using-xml-in-a-dataset.md)
+- [Carregando um DataSet a partir de XML](loading-a-dataset-from-xml.md)
+- [Gravando o conteúdo do DataSet como dados XML](writing-dataset-contents-as-xml-data.md)
 - [DataSets, DataTables e DataViews](index.md)
 - [Visão geral do ADO.NET](../ado-net-overview.md)

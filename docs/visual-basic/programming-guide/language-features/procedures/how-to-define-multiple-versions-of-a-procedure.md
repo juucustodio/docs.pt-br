@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como definir várias versões de um procedimento (Visual Basic)'
 title: Como definir várias versões de um procedimento
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,14 +9,15 @@ helpviewer_keywords:
 - procedures [Visual Basic], multiple versions
 - procedure overloading [Visual Basic], multiple versions
 ms.assetid: 71ccdd66-1b00-4b66-bee4-6926c0d696f4
-ms.openlocfilehash: 870a18dbf3a7e28b7d7b612e853beeec6908cf6f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 4b470e478c22c3a827f71b9b28056e16d6d9b7cd
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84387927"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100456023"
 ---
 # <a name="how-to-define-multiple-versions-of-a-procedure-visual-basic"></a>Como definir várias versões de um procedimento (Visual Basic)
+
 Você pode definir um procedimento em várias versões *sobrecarregando* -a, usando o mesmo nome, mas uma lista de parâmetros diferente para cada versão. A finalidade do sobrecarregamento é definir várias versões de um procedimento bem relacionadas sem precisar diferenciá-las por nome.  
   
  Para obter mais informações, consulte [sobrecarga de procedimento](./procedure-overloading.md).  
@@ -31,6 +33,7 @@ Você pode definir um procedimento em várias versões *sobrecarregando* -a, usa
 4. Encerre cada versão do procedimento com a `End Sub` instrução ou `End Function` conforme apropriado.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir define um `Sub` procedimento para lançar uma transação em relação ao saldo do cliente. Ele usa a `Overloads` palavra-chave para definir duas versões do procedimento, uma que aceita o cliente pelo nome e a outra por número da conta.  
   
  [!code-vb[VbVbcnProcedures#72](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#72)]  
@@ -40,9 +43,10 @@ Você pode definir um procedimento em várias versões *sobrecarregando* -a, usa
  Para obter informações sobre como chamar essas versões do `post` procedimento, consulte [como: chamar um procedimento sobrecarregado](./how-to-call-an-overloaded-procedure.md).  
   
 ## <a name="compile-the-code"></a>Compilar o código  
+
  Verifique se cada uma de suas versões sobrecarregadas tem o mesmo nome de procedimento, mas uma lista de parâmetros diferente.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos](./index.md)
 - [Parâmetros e Argumentos de Procedimento](./procedure-parameters-and-arguments.md)

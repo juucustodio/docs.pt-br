@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport:: GetPermissionSetProps'
 title: Método IMetaDataImport::GetPermissionSetProps
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 9855f0e4-12c0-4d3d-ab5d-d6bc52d25eae
 topic_type:
 - apiref
-ms.openlocfilehash: 54c75156c32e5b40aa933ef6530b2cc33edf7de4
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 9dc10b7bf531b6eec389334d80cf6a1cece20ee9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84490985"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789184"
 ---
 # <a name="imetadataimportgetpermissionsetprops-method"></a>Método IMetaDataImport::GetPermissionSetProps
+
 Obtém os metadados associados ao <xref:System.Security.PermissionSet?displayProperty=nameWithType> representado pelo token de permissão especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,6 +39,7 @@ HRESULT GetPermissionSetProps (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pm`  
  no O token de metadados de permissão que representa o conjunto de permissões para obter as propriedades de metadados.  
   
@@ -50,15 +53,16 @@ HRESULT GetPermissionSetProps (
  fora O tamanho em bytes de `ppvPermission` .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Incluído como um recurso em MsCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Security.PermissionSet>
 - [Interface IMetaDataImport](imetadataimport-interface.md)

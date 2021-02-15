@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IGCHost2'
 title: Interface IGCHost2
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: e5323fa4-18ac-424d-859d-a65a550d08d9
 topic_type:
 - apiref
-ms.openlocfilehash: 976673a0caab4e041cc80e5536544c195fcf692a
-ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
+ms.openlocfilehash: e32a4894fcff3600c9385f0f559443e23b2bc307
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83805173"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99709315"
 ---
 # <a name="igchost2-interface"></a>Interface IGCHost2
+
 Fornece métodos para obter informações sobre o sistema de coleta de lixo e para controlar alguns aspectos da coleta de lixo.  
   
 > [!NOTE]
@@ -34,15 +36,16 @@ Fornece métodos para obter informações sobre o sistema de coleta de lixo e pa
 |[Método SetGCStartupLimitsEx](igchost2-setgcstartuplimitsex-method.md)|Define o tamanho do segmento e o tamanho máximo para a geração 0. Habilita a geração 0 e os tamanhos de segmento maiores que `DWORD` .|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** GCHost. idl, GCHost. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de hospedagem](hosting-interfaces.md)
 - [Interfaces de hospedagem CLR](clr-hosting-interfaces.md)

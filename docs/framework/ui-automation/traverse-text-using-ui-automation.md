@@ -10,20 +10,22 @@ helpviewer_keywords:
 - text, traversing
 - traversing text
 ms.assetid: 3ddb3b7b-1d6b-4dba-8678-5a68e868aadb
-ms.openlocfilehash: 0b4269d043fd6cd0cc5da9825714aab4ead701f9
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 1413cac56e3d6358eb58d55eb2fc0ca583147571
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87168083"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96242026"
 ---
 # <a name="traverse-text-using-ui-automation"></a>Percorrer texto usando automação de interface do usuário
+
 > [!NOTE]
 > Esta documentação destina-se a desenvolvedores do .NET Framework que querem usar as classes da [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] gerenciadas definidas no namespace <xref:System.Windows.Automation>. Para obter as informações mais recentes sobre a [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], consulte [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32) (API de Automação do Windows: Automação da Interface do Usuário).  
   
  Este tópico mostra como usar [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] o para percorrer o conteúdo textual de um documento por <xref:System.Windows.Automation.Text.TextUnit> incrementos.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo de código a seguir demonstra como atravessar o conteúdo de um provedor de texto de automação de interface do usuário. O <xref:System.Windows.Automation.Text.TextPatternRange.Move%2A> método move os <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.Start> <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.End> pontos de extremidade e de um <xref:System.Windows.Automation.Text.TextPatternRange> . Normalmente, esse intervalo de texto é um intervalo de degeneramento que representa o ponto de inserção de texto.  
   
 > [!NOTE]
@@ -38,7 +40,7 @@ ms.locfileid: "87168083"
   
  Qualquer método <xref:System.Windows.Automation.Text.TextUnit> que use será adiado para o próximo maior <xref:System.Windows.Automation.Text.TextUnit> suporte se o dado <xref:System.Windows.Automation.Text.TextUnit> não for suportado pelo controle.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Visão geral de TextPattern de automação da interface do usuário](ui-automation-textpattern-overview.md)
 - [Acrescentar Conteúdo a um Text Box Utilizando Automação de IU](add-content-to-a-text-box-using-ui-automation.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração de ASM_CMP_FLAGS'
 title: Enumeração ASM_CMP_FLAGS
 ms.date: 03/30/2017
 api_name:
@@ -14,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: 4d1e6700-d4be-4fbd-8796-bfb4c07abbc8
 topic_type:
 - apiref
-ms.openlocfilehash: 7ca4d7fe32b71401c16e64314bd8b4a9eb0f7766
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 6d35691e853d76dc0e363651b23a6e5ff94244a9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178329"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761389"
 ---
 # <a name="asm_cmp_flags-enumeration"></a>Enumeração ASM_CMP_FLAGS
-Indica a versão, a build, a cultura, a assinatura e assim por diante, de dois conjuntos a serem comparados pelo método [IAssemblyName::IsEqual.](iassemblyname-isequal-method.md)  
+
+Indica a versão, a compilação, a cultura, a assinatura e assim por diante, de dois assemblies a serem comparados pelo método [IAssemblyName:: IsEqual](iassemblyname-isequal-method.md) .  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 typedef enum {  
@@ -66,15 +68,16 @@ typedef enum {
 ```  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
- **Cabeçalho:** Fusion.h  
+ **Cabeçalho:** Fusion. h  
   
- **Biblioteca:** Incluído como um recurso em MsCorEE.dll  
+ **Biblioteca:** Incluído como um recurso no MsCorEE.dll  
   
- **.NET Framework Versions:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IAssemblyName](iassemblyname-interface.md)
 - [Enumerações Fusion](fusion-enumerations.md)

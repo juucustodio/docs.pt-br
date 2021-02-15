@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <startup> elemento'
 title: Elemento <startup>
 ms.date: 03/30/2017
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - <startup> element
 - startup element
 ms.assetid: 536acfd8-f827-452f-838a-e14fa3b87621
-ms.openlocfilehash: e936c069275bfa9f7ac81ef1c6fc6228828182a8
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 82ece56aaa05376237922b3bd54b6f15967adf8b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79153719"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639816"
 ---
 # <a name="startup-element"></a>Elemento \<startup>
 
@@ -23,7 +24,7 @@ Especifica Common Language Runtime informações de inicialização.
 [**\<configuration>**](../configuration-element.md)  
 &nbsp;&nbsp;**\<startup>**  
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <startup useLegacyV2RuntimeActivationPolicy="true|false" >
@@ -71,7 +72,7 @@ Especifica Common Language Runtime informações de inicialização.
  Esse atributo será útil se seu aplicativo usar caminhos de ativação herdados, como a [função CorBindToRuntimeEx](../../../unmanaged-api/hosting/corbindtoruntimeex-function.md), e você quiser que esses caminhos ativem a versão 4 do CLR em vez de uma versão anterior, ou se seu aplicativo for criado com o .NET Framework 4, mas tiver uma dependência em um assembly de modo misto criado com uma versão anterior do .NET Framework. Nesses cenários, defina o atributo como `true` .
 
 > [!NOTE]
-> Definir o atributo para `true` impedir que o CLR versão 1,1 ou a versão 2,0 do CLR seja carregado no mesmo processo, desabilitando efetivamente o recurso lado a lado no processo (Confira [execução lado a lado para interoperabilidade com](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/8t8td04t(v=vs.100))).
+> Definir o atributo para `true` impedir que o CLR versão 1,1 ou a versão 2,0 do CLR seja carregado no mesmo processo, desabilitando efetivamente o recurso lado a lado no processo (Confira [execução lado a lado para interoperabilidade com](/previous-versions/dotnet/netframework-4.0/8t8td04t(v=vs.100))).
 
 ## <a name="example"></a>Exemplo
 
@@ -93,10 +94,10 @@ Especifica Common Language Runtime informações de inicialização.
 </configuration>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações de inicialização](index.md)
-- [Esquema de arquivos de configuração](../index.md)
+- [Esquema do arquivo de configuração](../index.md)
 - [Como configurar um aplicativo para dar suporte a .NET Framework 4 ou versões posteriores](../../../migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)
-- [Execução lado a lado para interoperabilidade COM](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/8t8td04t(v=vs.100))
+- [Execução lado a lado para interoperabilidade COM](/previous-versions/dotnet/netframework-4.0/8t8td04t(v=vs.100))
 - [Execução lado a lado em processo](../../../deployment/in-process-side-by-side-execution.md)

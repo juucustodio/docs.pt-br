@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: TransactionFlowAttribute'
 title: TransactionFlowAttribute
 ms.date: 03/30/2017
 ms.assetid: 0a9c8674-29f7-4f14-aa1f-dc2644ca57e4
-ms.openlocfilehash: 8c30fd5c0d23a945caa1b55ca547040b076aacc9
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 8bb39990d2c12470cfdb6ff4d0c49364d6c2fac6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61641730"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757144"
 ---
 # <a name="transactionflowattribute"></a>TransactionFlowAttribute
+
 TransactionFlowAttribute  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class TransactionFlowAttribute : Behavior  
@@ -22,24 +24,27 @@ class TransactionFlowAttribute : Behavior
 ```  
   
 ## <a name="methods"></a>Métodos  
- A classe TransactionFlowAttribute não define quaisquer métodos.  
+
+ A classe TransactionFlowAttribute não define nenhum método.  
   
 ## <a name="properties"></a>Propriedades  
+
  A classe TransactionFlowAttribute tem a seguinte propriedade:  
   
 ### <a name="transactionflowoption"></a>TransactionFlowOption  
+
  Tipo de dados: cadeia de caracteres  
   
  Tipo de acesso: Somente leitura  
   
- Indica se as transações de fluxo.  
+ Indica se as transações fluem.  
   
 ## <a name="requirements"></a>Requisitos  
   
-|MOF|Declarado em Servicemodel.mof.|  
+|MOF|Declarado em ServiceModel. mof.|  
 |---------|-----------------------------------|  
-|Namespace|Definido no root\ServiceModel|  
+|Namespace|Definido em root\ServiceModel|  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.ServiceModel.TransactionFlowAttribute>

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: INotifyConnection2:: RegisterNotifySource'
 title: Método INotifyConnection2::RegisterNotifySource
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 2632da80-6e4b-4429-8dee-b382745a5f81
 topic_type:
 - apiref
-ms.openlocfilehash: b7fa777466e2c7edd7b3110dd91e776785c63c58
-ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
+ms.openlocfilehash: 97aacf7f2005a1e9f21acebd6c5f5ed65867b245
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83442066"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800312"
 ---
 # <a name="inotifyconnection2registernotifysource-method"></a>Método INotifyConnection2::RegisterNotifySource
+
 Instala uma fonte de notificação especificada.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT RegisterNotifySource
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `in_pNotifySource`  
  no Especifica o objeto a ser usado como a fonte de notificação.  
   
@@ -43,12 +46,14 @@ HRESULT RegisterNotifySource
  fora Recebe o objeto a ser usado como o coletor de notificação.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  S_OK se o método tiver sucesso.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** ProtocolNotify2. idl  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface INotifyConnection2](inotifyconnection2-interface.md)
 - [Interface INotifySource2](inotifysource2-interface.md)

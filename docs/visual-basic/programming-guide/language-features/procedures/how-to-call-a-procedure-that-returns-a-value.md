@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como chamar um procedimento que retorna um valor (Visual Basic)'
 title: Como chamar um procedimento que retorna um valor
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,14 +8,15 @@ helpviewer_keywords:
 - procedures [Visual Basic], calling
 - procedures [Visual Basic], returning a value
 ms.assetid: a445127b-0f5f-465a-98fb-3e514b93d115
-ms.openlocfilehash: a110cf9f3b42c7244d8d5bf7b49d5e6dac8c2e21
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 74c7b6c9340537088ac631fc47f9ebf7b1a203cb
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84388758"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100466738"
 ---
 # <a name="how-to-call-a-procedure-that-returns-a-value-visual-basic"></a>Como chamar um procedimento que retorna um valor (Visual Basic)
+
 Um `Function` procedimento retorna um valor para o código de chamada. Você pode chamá-lo incluindo seu nome e argumentos no lado direito de uma instrução de atribuição ou em uma expressão.  
   
 ### <a name="to-call-a-function-procedure-within-an-expression"></a>Para chamar um procedimento Function dentro de uma expressão  
@@ -40,11 +42,12 @@ Um `Function` procedimento retorna um valor para o código de chamada. Você pod
 4. O valor retornado do procedimento é armazenado na variável ou propriedade no lado esquerdo da instrução de atribuição.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir chama o Visual Basic <xref:Microsoft.VisualBasic.Interaction.Environ%2A> para recuperar o valor de uma variável de ambiente do sistema operacional. A primeira linha `Environ` é chamada dentro de uma expressão e a segunda linha a chama em uma instrução de atribuição. `Environ`usa o nome da variável como seu único argumento. Ele retorna o valor da variável para o código de chamada.  
+
+ O exemplo a seguir chama o Visual Basic <xref:Microsoft.VisualBasic.Interaction.Environ%2A> para recuperar o valor de uma variável de ambiente do sistema operacional. A primeira linha `Environ` é chamada dentro de uma expressão e a segunda linha a chama em uma instrução de atribuição. `Environ` usa o nome da variável como seu único argumento. Ele retorna o valor da variável para o código de chamada.  
   
  [!code-vb[VbVbcnProcedures#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#7)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos de função](./function-procedures.md)
 - [Parâmetros e Argumentos de Procedimento](./procedure-parameters-and-arguments.md)

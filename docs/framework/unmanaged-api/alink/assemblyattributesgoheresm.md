@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: classe AssemblyAttributesGoHereSM'
 title: Classe AssemblyAttributesGoHereSM (System. Runtime. Compiladorservices)
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4cf9bf39-1527-49e0-a0e9-55e7a018bf66
 topic_type:
 - apiref
-ms.openlocfilehash: 379ba20ebf675bec71e6e5f5bcfc0dc2fbd1f92c
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: ac38017b6ae9169b853da1daa8533d4c1cf44d97
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446604"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638516"
 ---
 # <a name="assemblyattributesgoheresm-class"></a>Classe AssemblyAttributesGoHereSM
 
@@ -38,9 +39,9 @@ As referências a esse tipo podem ser inseridas dentro de netmodules cujas fonte
 
 Referências a esse tipo indicam atributos personalizados que são relacionados à segurança e ao uso múltiplo.
 
-Esses tipos são marcados como "internos" dentro do .NET Framework e estão localizados no namespace <xref:System.Runtime.CompilerServices>.
+Esses tipos são marcados como "internos" dentro do .NET Framework e estão localizados no <xref:System.Runtime.CompilerServices> namespace.
 
-## <a name="requirements"></a>{1&gt;{2&gt;Requisitos&lt;2}&lt;1}
+## <a name="requirements"></a>Requisitos
 
 mscorlib.dll
 

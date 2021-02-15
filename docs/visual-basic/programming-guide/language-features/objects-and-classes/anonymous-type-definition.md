@@ -1,21 +1,22 @@
 ---
+description: 'Saiba mais sobre: definição de tipo anônimo (Visual Basic)'
 title: Definição do tipo anônimo
 ms.date: 07/20/2015
 helpviewer_keywords:
 - anonymous types [Visual Basic], type definition
 ms.assetid: 7a8a0ddc-55ba-4d67-869e-87a84d938bac
-ms.openlocfilehash: 952eb295cc71eab5d0ad6e18f2b697a9b701b434
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 2e3f847f5f844e3ed6e036c26efc330a237d193f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404895"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100436910"
 ---
 # <a name="anonymous-type-definition-visual-basic"></a>Definição do tipo anônimo (Visual Basic)
 
 Em resposta à declaração de uma instância de um tipo anônimo, o compilador cria uma nova definição de classe que contém as propriedades especificadas para o tipo.
 
-## <a name="compiler-generated-code"></a>Código gerado pelo compilador
+## <a name="compiler-generated-code"></a>Código de Compiler-Generated
 
 Para a seguinte definição de `product` , o compilador cria uma nova definição de classe que contém propriedades `Name` , `Price` e `OnHand` .
 
@@ -56,7 +57,7 @@ Além disso, as definições de tipo anônimo contêm um construtor sem parâmet
 
 Se uma declaração de tipo anônimo contiver pelo menos uma propriedade de chave, a definição de tipo substituirá três membros herdados de <xref:System.Object> : <xref:System.Object.Equals%2A> , <xref:System.Object.GetHashCode%2A> e <xref:System.Object.ToString%2A> . Se nenhuma propriedade de chave for declarada, somente <xref:System.Object.ToString%2A> será substituído. As substituições fornecem a seguinte funcionalidade:
 
-- `Equals`retorna `True` se duas instâncias de tipo anônimo forem a mesma instância ou se atenderem às seguintes condições:
+- `Equals` retorna `True` se duas instâncias de tipo anônimo forem a mesma instância ou se atenderem às seguintes condições:
 
   - Eles têm o mesmo número de propriedades.
 
@@ -70,9 +71,9 @@ Se uma declaração de tipo anônimo contiver pelo menos uma propriedade de chav
 
     [!code-vb[VbVbalrAnonymousTypes#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class2.vb#24)]
 
-- `GetHashcode`fornece um algoritmo GetHashCode adequadamente exclusivo. O algoritmo usa apenas as propriedades de chave para calcular o código hash.
+- `GetHashcode` fornece um algoritmo GetHashCode adequadamente exclusivo. O algoritmo usa apenas as propriedades de chave para calcular o código hash.
 
-- `ToString`Retorna uma cadeia de caracteres de valores de propriedade concatenados, conforme mostrado no exemplo a seguir. As propriedades Key e non-key são incluídas.
+- `ToString` Retorna uma cadeia de caracteres de valores de propriedade concatenados, conforme mostrado no exemplo a seguir. As propriedades Key e non-key são incluídas.
 
   [!code-vb[VbVbalrAnonymousTypes#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class2.vb#29)]
 
@@ -83,7 +84,7 @@ As definições de tipo anônimo que incluem pelo menos uma propriedade de chave
 > [!NOTE]
 > Declarações de tipo anônimo criam o mesmo tipo anônimo somente se eles ocorrerem no mesmo assembly, suas propriedades têm os mesmos nomes e os mesmos tipos inferidos, as propriedades são declaradas na mesma ordem e as mesmas propriedades são marcadas como propriedades de chave.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Tipos anônimos](anonymous-types.md)
 - [Como inferir nomes e tipos de propriedade na declaração de tipo anônimo](how-to-infer-property-names-and-types-in-anonymous-type-declarations.md)

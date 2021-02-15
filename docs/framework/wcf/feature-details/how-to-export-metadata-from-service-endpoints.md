@@ -1,18 +1,20 @@
 ---
-title: Como exportar metadados para pontos de extremidade de serviço
+description: 'Saiba mais sobre: como exportar metadados de pontos de extremidade de serviço'
+title: 'Como: exportar metadados para pontos de extremidade de serviço'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: b6c4dfd0-f270-43ec-961a-e16eb6af2f2c
-ms.openlocfilehash: 58e86e5566775048e081bfb4ac217a7747b98a35
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: f690d2dc0bd3ac0f89e527412a63ce0967daa8f6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84579404"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802873"
 ---
-# <a name="how-to-export-metadata-from-service-endpoints"></a>Como exportar metadados para pontos de extremidade de serviço
+# <a name="how-to-export-metadata-from-service-endpoints"></a>Como: exportar metadados para pontos de extremidade de serviço
+
 Este tópico explica como exportar metadados de pontos de extremidade de serviço.  
   
 ### <a name="to-export-metadata-from-service-endpoints"></a>Para exportar metadados de pontos de extremidade de serviço  
@@ -47,13 +49,15 @@ Este tópico explica como exportar metadados de pontos de extremidade de serviç
 7. Agora você pode usar os metadados, como gravá-los em um arquivo chamando o <xref:System.ServiceModel.Description.MetadataSet.WriteTo%28System.Xml.XmlWriter%29> método.  
   
 ## <a name="example"></a>Exemplo  
+
  A seguir está a listagem completa de códigos deste exemplo.  
   
  [!code-csharp[S_UEWsdlExporter#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_uewsdlexporter/cs/program.cs#0)]
  [!code-vb[S_UEWsdlExporter#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_uewsdlexporter/vb/program.vb#0)]  
   
 ## <a name="compiling-the-code"></a>Compilando o código  
- Ao compilar o Program.cs Reference System. ServiceModel. dll.  
+
+ Ao compilar a referência de Program.cs System.ServiceModel.dll.  
   
 ## <a name="see-also"></a>Consulte também
 

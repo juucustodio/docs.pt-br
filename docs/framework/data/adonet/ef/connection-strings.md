@@ -3,12 +3,12 @@ title: Cadeias de conexão no Entity Framework ADO.NET
 description: Saiba mais sobre cadeias de conexão no Entity Framework, que contêm informações para se conectar ao provedor de dados ADO.NET e sobre arquivos de mapeamento e modelo.
 ms.date: 10/15/2018
 ms.assetid: 78d516bc-c99f-4865-8ff1-d856bc1a01c0
-ms.openlocfilehash: 2ae25f5881c033a84d65f5b0b4ed14b4866dbcb3
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 36b7724bc8dbb8f427f4bbf748b7b7801adea8db
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286864"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90542751"
 ---
 # <a name="connection-strings-in-the-adonet-entity-framework"></a>Cadeias de conexão no Entity Framework ADO.NET
 
@@ -16,7 +16,7 @@ Uma cadeia de conexão contém informações de inicialização que são passada
 
 A cadeia de conexão é usada pelo provedor EntityClient ao acessar metadados de modelo e de mapeamento e ao se conectar à fonte de dados. A cadeia de conexão pode ser acessada ou definida por meio da propriedade <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A> de <xref:System.Data.EntityClient.EntityConnection>. A classe <xref:System.Data.EntityClient.EntityConnectionStringBuilder> pode ser usada para construir ou acessar programaticamente parâmetros na cadeia de conexão. Para obter mais informações, consulte [como: criar uma cadeia de conexão de EntityConnection](how-to-build-an-entityconnection-connection-string.md).
 
-As [ferramentas de modelo de dados de entidade](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100)) geram uma cadeia de conexão que é armazenada no arquivo de configuração do aplicativo. O <xref:System.Data.Objects.ObjectContext> recupera essas informações de conexão automaticamente ao criar consultas de objeto. O <xref:System.Data.EntityClient.EntityConnection> usado por uma instância <xref:System.Data.Objects.ObjectContext> pode ser acessado a partir da propriedade <xref:System.Data.Objects.ObjectContext.Connection%2A>. Para obter mais informações, consulte [Managing Connections and Transactions](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100)).
+As [ferramentas de modelo de dados de entidade](/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100)) geram uma cadeia de conexão que é armazenada no arquivo de configuração do aplicativo. O <xref:System.Data.Objects.ObjectContext> recupera essas informações de conexão automaticamente ao criar consultas de objeto. O <xref:System.Data.EntityClient.EntityConnection> usado por uma instância <xref:System.Data.Objects.ObjectContext> pode ser acessado a partir da propriedade <xref:System.Data.Objects.ObjectContext.Connection%2A>. Para obter mais informações, consulte [Managing Connections and Transactions](/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100)).
 
 ## <a name="connection-string-syntax"></a>Sintaxe da cadeia de conexão
 
@@ -26,7 +26,7 @@ Para saber mais sobre a sintaxe geral das cadeias de conexão, consulte [sintaxe
 
 A tabela a seguir lista os nomes válidos para valores de palavra-chave na propriedade <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A>.
 
-|Palavra-chave|Description|
+|Palavra-chave|Descrição|
 |-------------|-----------------|
 |`Provider`|Necessária quando a palavra-chave `Name` não é especificada. O nome do provedor, que é usado para recuperar o objeto <xref:System.Data.Common.DbProviderFactory> do provedor subjacente. Esse valor é constante.<br /><br /> Quando a palavra-chave `Name` não é incluída em uma cadeia de conexão de entidade, um valor não vazio para a palavra-chave `Provider` é necessário. Essa palavra-chave é mutuamente excludente com a palavra-chave `Name`.|
 |`Provider Connection String`|Opcional. Especifica a cadeia de conexão específica ao provedor que é passada para a fonte de dados subjacente. Essa cadeia de conexão contém pares válidos de palavra-chave/valor para o provedor de dados. Uma palavra-chave `Provider Connection String` inválida produzirá um erro em tempo de execução ao ser avaliada pela fonte de dados.<br /><br /> Essa palavra-chave é mutuamente excludente com a palavra-chave `Name`.<br /><br /> Certifique-se de escapar o valor de acordo com a sintaxe geral das [cadeias de conexão ADO.net](../connection-strings.md). Considere, por exemplo, a seguinte cadeia de conexão: `Server=serverName; User ID = userID` . Ele deve ser ignorado porque contém um ponto e vírgula. Como não contém aspas duplas, elas podem ser usadas para escapar:<br /><br /> `Provider Connection String ="Server=serverName; User ID = userID";`|
@@ -45,7 +45,7 @@ Os recursos inseridos são especificados como a seguir:
 
 As seguintes opções estão disponíveis para definir o local de um recurso inserido:
 
-|Opção|Description|
+|Opção|Descrição|
 |-|-|
 |`assemblyFullName`|O nome completo de um assembly com o recurso inserido. O nome inclui o nome simples, o nome da versão, a cultura com suporte e a chave pública, como a seguir:<br /><br /> `ResourceLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null`<br /><br /> Os recursos podem ser inseridos em qualquer assembly que seja acessível pelo aplicativo.<br /><br /> Se você especificar um curinga ( \* ) para `assemblyFullName` , o tempo de execução de Entity Framework procurará recursos nos seguintes locais, nesta ordem:<br /><br /> 1. o assembly de chamada.<br />2. os assemblies referenciados.<br />3. os assemblies no diretório bin de um aplicativo.<br /><br /> Se os arquivos não estiverem em um desses locais, será gerada uma exceção. **Observação:**  Quando você usa curinga (*), o Entity Framework precisa examinar todos os assemblies em busca de recursos com o nome correto. Para melhorar o desempenho, especifique o nome do assembly, em vez do curinga.|
 |`resourceName`|O nome do recurso incluído, como AdventureWorksModel. CSDL. Os serviços de metadados só procuram arquivos ou recursos com uma das seguintes extensões: .csdl, .ssdl ou .msl. Se a palavra-chave `resourceName` não for especificada, todos os recursos de metadados serão carregados. Os recursos devem ter nomes exclusivos em um assembly. Se vários arquivos com o mesmo nome forem definidos em diferentes diretórios no assembly, a palavra-chave `resourceName` deverá incluir a estrutura de pastas antes do nome do recurso, por exemplo, FolderName.FileName.csdl.<br /><br /> `resourceName` não é necessária quando você especifica um curinga (*) para `assemblyFullName`.|
@@ -93,7 +93,7 @@ Metadata=.\
 
 ## <a name="support-for-the-124datadirectory124-substitution-string-and-the-web-application-root-operator-"></a>Suporte para a cadeia de caracteres de substituição do &#124;DataDirectory&#124; e o operador raiz do aplicativo Web (~)
 
-`DataDirectory`e o operador ~ é usado no <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A> como parte das `Metadata` `Provider Connection String` palavras-chave e. <xref:System.Data.EntityClient.EntityConnection> encaminha `DataDirectory` e o operador ~ para <xref:System.Data.Metadata.Edm.MetadataWorkspace> e para o provedor de armazenamento, respectivamente.
+`DataDirectory` e o operador ~ é usado no <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A> como parte das `Metadata` `Provider Connection String` palavras-chave e. <xref:System.Data.EntityClient.EntityConnection> encaminha `DataDirectory` e o operador ~ para <xref:System.Data.Metadata.Edm.MetadataWorkspace> e para o provedor de armazenamento, respectivamente.
 
 |Termo|Descrição|
 |----------|-----------------|
@@ -104,13 +104,13 @@ Metadata=.\
 
 Um caminho que começa com `DataDirectory` ou com o operador ~ não pode ser resolvido como um caminho físico fora da ramificação de `DataDirectory` e do operador ~. Por exemplo, os seguintes caminhos serão resolvidos: `~`, `~/data`, `~/bin/Model/SqlServer`. Os seguintes caminhos não serão resolvidos: `~/..`, `~/../other`.
 
-`DataDirectory`e o operador ~ pode ser estendido para incluir subdiretórios, da seguinte `|DataDirectory|\Model` maneira:`~/bin/Model`
+`DataDirectory` e o operador ~ pode ser estendido para incluir subdiretórios, da seguinte `|DataDirectory|\Model` maneira: `~/bin/Model`
 
 A resolução da cadeia de caracteres de substituição `DataDirectory` e do operador ~ é não recursiva. Por exemplo, quando `DataDirectory` incluir o caractere `~`, será gerada uma exceção. Isso evita uma recursão infinita.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Trabalhando com Provedores de Dados](working-with-data-providers.md)
+- [Trabalhando com provedores de dados](working-with-data-providers.md)
 - [Considerações sobre implantação](deployment-considerations.md)
-- [Gerenciando conexões e transações](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100))
+- [Gerenciando conexões e transações](/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100))
 - [Cadeias de conexão](../connection-strings.md)

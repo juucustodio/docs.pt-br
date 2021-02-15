@@ -6,12 +6,12 @@ helpviewer_keywords:
 - .NET Framework, troubleshooting blocked installations
 - blocked .NET Framework installations, troubleshooting
 ms.assetid: c3fdfbc1-ed99-4202-a2b0-8c4f1646385d
-ms.openlocfilehash: e6f5dbce6bd10ae68b2033a135660d1e31aceff9
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 9f4ae96a148d850efd92f950a177b32cc75c33ab
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88558446"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96283166"
 ---
 # <a name="troubleshoot-blocked-net-framework-installations-and-uninstallations"></a>Solucionar problemas de instalações e desinstalações bloqueadas do .NET Framework
 
@@ -53,6 +53,7 @@ Nesta tabela, 4.5.x refere-se ao .NET Framework 4.5 e às suas versões de ponto
 |Este programa de instalação requer um computador x64 ou x86. Ele não pode ser instalado em computadores IA64.|Confira [Requisitos de sistema](../get-started/system-requirements.md).|  
 
 <a name="compat"></a>
+
 ### <a name="program-compatibility-issues"></a>Problemas de compatibilidade de programas
 
 A instalação do .NET Framework 4.5 ou dos lançamentos pontuais falha com um código de erro 1603 ou é bloqueada quando executada no Modo de Compatibilidade de Programa do Windows. O **Auxiliar de Compatibilidade de Programas** indica que o .NET Framework pode não ter sido instalado corretamente e sugere que ele seja reinstalado usando a configuração recomendada (Modo de Compatibilidade do Programa). O Modo de Compatibilidade de Programa também pode ter sido definido pelo Auxiliar de Compatibilidade de Programas em tentativas anteriores fracassadas ou canceladas de executar o programa de instalação do .NET Framework.
@@ -73,7 +74,7 @@ O instalador do .NET Framework não pode ser executado no Modo de Compatibilidad
 
 1. Execute novamente o instalador do .NET Framework para as versões 4.5, 4.5.1, 4.5.2, ou 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1 ou 4.7.2.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Instalar o .NET Framework para desenvolvedores](guide-for-developers.md)
 - [Como determinar quais versões do .NET Framework estão instaladas](../migration-guide/how-to-determine-which-versions-are-installed.md)

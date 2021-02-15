@@ -1,39 +1,22 @@
 ---
-title: Alterações de quebra de rede
-description: Lista as alterações significativas na rede no .NET Core.
+title: Alterações interruptivas relacionadas à rede
+description: Lista as alterações interruptivas relacionadas à rede no .NET Core 2.0 e 3.0.
 ms.date: 05/05/2020
-ms.openlocfilehash: fa5807c882c3bc6f66e8a27361ccc14254e90b3e
-ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
+ms.openlocfilehash: 761c6481888bcb8e91f7b4212355aca067632495
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89465502"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95689206"
 ---
-# <a name="networking-breaking-changes"></a>Alterações de quebra de rede
+# <a name="networking-breaking-changes-in-net-core-20-and-30"></a>Alterações interruptivas relacionadas à rede no .NET Core 2.0 e 3.0
 
-As seguintes alterações significativas estão documentadas nesta página:
+As seguintes alterações interruptivas estão documentadas nesta página:
 
-| Alteração significativa | Versão introduzida |
+| Alteração interruptiva | Versão introduzida |
 | - | - |
-| [WinHttpHandler removido do tempo de execução do .NET](#winhttphandler-removed-from-net-runtime) | 5,0 |
-| [MulticastOption. Group não aceita um valor nulo](#multicastoptiongroup-doesnt-accept-a-null-value) | 5,0 |
-| [O tratamento de caminho de cookie agora está em conformidade com RFC 6265](#cookie-path-handling-now-conforms-to-rfc-6265) | 5,0 |
 | [Valor padrão de HttpRequestMessage. Version alterado para 1,1](#default-value-of-httprequestmessageversion-changed-to-11) | 3.0 |
 | [WebClient. CancelAsync nem sempre cancela imediatamente](#webclientcancelasync-doesnt-always-cancel-immediately) | 2,0 |
-
-## <a name="net-50"></a>.NET 5,0
-
-[!INCLUDE [winhttphandler-removed-from-runtime](../../../includes/core-changes/networking/5.0/winhttphandler-removed-from-runtime.md)]
-
-***
-
-[!INCLUDE [multicastoption-group-doesnt-accept-null](../../../includes/core-changes/networking/5.0/multicastoption-group-doesnt-accept-null.md)]
-
-***
-
-[!INCLUDE [cookie-path-conforms-to-rfc6265](../../../includes/core-changes/networking/5.0/cookie-path-conforms-to-rfc6265.md)]
-
-***
 
 ## <a name="net-core-30"></a>.NET Core 3.0
 

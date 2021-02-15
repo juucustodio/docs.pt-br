@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: Hospedagem'
 title: Exemplos de hospedagem do WCF
 ms.date: 03/30/2017
 ms.assetid: 8a6ec5d4-d191-49cc-bb0f-a07639dc60d4
-ms.openlocfilehash: 10586d723a757ae8c7abe68968dfd8682adb0727
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: c26f66613e3e5ac92e11551023c3a731d31f2a58
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84575165"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631925"
 ---
-# <a name="hosting"></a>Hosting
+# <a name="hosting"></a>Hospedagem
+
 Esta seção contém exemplos que demonstram a hospedagem de serviços do Windows Communication Foundation (WCF).  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Ativação de processo do Windows](windows-process-activation.md)  
  Demonstra a ativação de serviço por meio de protocolos de rede.  
   

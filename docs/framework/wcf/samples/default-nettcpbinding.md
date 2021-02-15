@@ -1,17 +1,19 @@
 ---
+description: 'Saiba mais sobre: NetTcpbinding padrão'
 title: NetTcpBinding padrão
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Net profile TCP
 ms.assetid: e8475fe6-0ecd-407a-8e7e-45860561bb74
-ms.openlocfilehash: 56648b74e400085b76f4f837852791b33fbf97e0
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 055cc33138e6e04469b2eec14dbd93ef63924218
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599991"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632042"
 ---
 # <a name="default-nettcpbinding"></a>NetTcpBinding padrão
+
 Este exemplo demonstra o uso da <xref:System.ServiceModel.NetTcpBinding> associação. Este exemplo é baseado no [introdução](getting-started-sample.md) que implementa um serviço de calculadora. Neste exemplo, o serviço é auto-hospedado. O cliente e o serviço são aplicativos de console.  
   
 > [!NOTE]
@@ -107,7 +109,7 @@ Press ENTER to terminate client.
 4. Para executar o exemplo em uma configuração de computador único ou cruzado, siga as instruções em [executando os exemplos de Windows Communication Foundation](running-the-samples.md).  
   
     > [!NOTE]
-    > Como o servidor é auto-hospedado, você deve especificar uma identidade no arquivo app. config do cliente para executar o exemplo em uma configuração entre computadores.  
+    > Como o servidor é auto-hospedado, você deve especificar uma identidade no arquivo de App.config do cliente para executar o exemplo em uma configuração entre computadores.  
   
     ```xml  
     <client>  

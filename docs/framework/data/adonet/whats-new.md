@@ -3,12 +3,12 @@ title: O Que Há de Novo
 description: Saiba mais sobre os novos recursos do ADO.NET no .NET Framework 4,5, incluindo novos recursos para o provedor de dados SqlClient e o ADO.NET Entity Framework.
 ms.date: 03/30/2017
 ms.assetid: 3bb65d38-cce2-46f5-b979-e5c505e95e10
-ms.openlocfilehash: 536b9314dd83366202f7fd9b489759681021fd9e
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: b34a27574b6aab75539f9ab30e2978e45b4ad9e3
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286165"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90553851"
 ---
 # <a name="whats-new-in-adonet"></a>Novidades no ADO.NET
 
@@ -46,17 +46,17 @@ Os recursos a seguir são novos no .NET Framework Provedor de Dados para SQL Ser
 
 - `Type System Version=SQL Server 2012;` é o novo valor para passar para a propriedade de conexão `Type System Version`. O valor `Type System Version=Latest;` agora é obsoleto e agora é equivalente ao `Type System Version=SQL Server 2008;`. Para obter mais informações, consulte <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>.
 
-- O SqlClient fornece suporte adicional a colunas esparsas, um recurso que foi adicionado no SQL Server 2008. Se o aplicativo já acessa dados em uma tabela que usa colunas esparsas, você deverá ver um aumento no desempenho. A coluna IsColumnSet do <xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable%2A> indica se uma coluna é uma esparsa que é membro de um conjunto de colunas. <xref:System.Data.SqlClient.SqlConnection.GetSchema%2A>indica se uma coluna é uma coluna esparsa (consulte [SQL Server coleções de esquema](sql-server-schema-collections.md) para obter mais informações). Para obter mais informações sobre colunas esparsas, consulte [usar colunas esparsas](/sql/relational-databases/tables/use-sparse-columns).
+- O SqlClient fornece suporte adicional a colunas esparsas, um recurso que foi adicionado no SQL Server 2008. Se o aplicativo já acessa dados em uma tabela que usa colunas esparsas, você deverá ver um aumento no desempenho. A coluna IsColumnSet do <xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable%2A> indica se uma coluna é uma esparsa que é membro de um conjunto de colunas. <xref:System.Data.SqlClient.SqlConnection.GetSchema%2A> indica se uma coluna é uma coluna esparsa (consulte [SQL Server coleções de esquema](sql-server-schema-collections.md) para obter mais informações). Para obter mais informações sobre colunas esparsas, consulte [usar colunas esparsas](/sql/relational-databases/tables/use-sparse-columns).
 
-- O Microsoft.SqlServer.Types.dll do assembly, que contém os tipos de dados espaciais, foi atualizada da versão 10.0 para a 11.0. Os aplicativos que fazem referência a esse assembly podem falhar. Para obter mais informações, consulte [alterações recentes em recursos de mecanismo de banco de dados](https://docs.microsoft.com/previous-versions/sql/sql-server-2012/ms143179(v=sql.110)).
+- O Microsoft.SqlServer.Types.dll do assembly, que contém os tipos de dados espaciais, foi atualizada da versão 10.0 para a 11.0. Os aplicativos que fazem referência a esse assembly podem falhar. Para obter mais informações, consulte [alterações recentes em recursos de mecanismo de banco de dados](/previous-versions/sql/sql-server-2012/ms143179(v=sql.110)).
 
 ## <a name="adonet-entity-framework"></a>ADO.NET Entity Framework
 
-O .NET Framework 4,5 adiciona APIs que habilitam novos cenários ao trabalhar com o Entity Framework 5,0. Para obter mais informações sobre melhorias e recursos que foram adicionados ao Entity Framework 5,0, consulte os seguintes tópicos: [novidades](https://docs.microsoft.com/previous-versions/gg696190(v=vs.103)) e [Entity Framework versões e controle de versão](/ef/ef6/what-is-new/past-releases).
+O .NET Framework 4,5 adiciona APIs que habilitam novos cenários ao trabalhar com o Entity Framework 5,0. Para obter mais informações sobre melhorias e recursos que foram adicionados ao Entity Framework 5,0, consulte os seguintes tópicos: [novidades](/previous-versions/gg696190(v=vs.103)) e [Entity Framework versões e controle de versão](/ef/ef6/what-is-new/past-releases).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [ADO.NET](index.md)
 - [Visão geral do ADO.NET](ado-net-overview.md)
 - [SQL Server e ADO.NET](./sql/index.md)
-- [O que há de novo no WCF Data Services 5,0](https://docs.microsoft.com/previous-versions/dotnet/wcf-data-services/ee373845(v=vs.103))
+- [O que há de novo no WCF Data Services 5,0](/previous-versions/dotnet/wcf-data-services/ee373845(v=vs.103))

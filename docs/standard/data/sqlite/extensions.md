@@ -1,13 +1,13 @@
 ---
 title: Extensões
-ms.date: 12/13/2019
+ms.date: 12/08/2020
 description: Saiba como carregar extensões do SQLite.
-ms.openlocfilehash: 51c705349c25240fe42e0edda8004a3e3b013ca3
-ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
+ms.openlocfilehash: 68d31093662f373d6ebf4460d6a5d44029c27c5c
+ms.sourcegitcommit: 9b877e160c326577e8aa5ead22a937110d80fa44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81242953"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97110839"
 ---
 # <a name="extensions"></a>Extensões
 
@@ -18,6 +18,9 @@ O .NET Core inclui lógica adicional para a localização de bibliotecas nativas
 Para carregar uma extensão, chame o <xref:Microsoft.Data.Sqlite.SqliteConnection.LoadExtension%2A> método. Microsoft. Data. sqlite garantirá que a extensão permaneça carregada mesmo se a conexão for fechada e reaberta.
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/ExtensionsSample/Program.cs?name=snippet_LoadExtension)]
+
+> [!NOTE]
+> O método LoadExtension foi adicionado na versão 3,0.
 
 ## <a name="see-also"></a>Veja também
 

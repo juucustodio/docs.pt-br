@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: kit de ferramentas de conjunto de regras externo'
 title: Kit de ferramentas de Ruleset externo
 ms.date: 03/30/2017
 ms.assetid: a306d283-a031-475e-aa01-9ae86e7adcb0
-ms.openlocfilehash: eb59b02d469788b23126f4e02c5b7ae5a63081f0
-ms.sourcegitcommit: 011314e0c8eb4cf4a11d92078f58176c8c3efd2d
+ms.openlocfilehash: 41ee739ee90ba6dc1583369930919816e9afd53b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2020
-ms.locfileid: "77094664"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755376"
 ---
 # <a name="external-ruleset-toolkit"></a>Kit de ferramentas de Ruleset externo
 
@@ -37,7 +38,7 @@ A interação dos componentes é mostrada na imagem a seguir. As seções a segu
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Se esse diretório não existir, vá para [Windows Communication Foundation (WCF) e exemplos de Windows Workflow Foundation (WF) para .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) para baixar todas as Windows Communication Foundation (WCF) e [!INCLUDE[wf1](../../../../includes/wf1-md.md)] amostras. Este exemplo está localizado no seguinte diretório.
+> Se esse diretório não existir, vá para [Windows Communication Foundation (WCF) e exemplos de Windows Workflow Foundation (WF) para .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) para baixar todos os Windows Communication Foundation (WCF) e [!INCLUDE[wf1](../../../../includes/wf1-md.md)] exemplos. Este exemplo está localizado no seguinte diretório.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ExternalRuleSetToolKit`
 
@@ -55,19 +56,19 @@ Quando você clica em **Editar regras**, o editor de conjunto de regras é inici
 
 Essa é uma nova hospedagem da caixa de diálogo do editor que faz parte do suplemento Windows Workflow Foundation Visual Studio. Fornece a mesma funcionalidade, incluindo suporte Intellisense. As regras são criadas em relação a um tipo de destino (como um fluxo de trabalho) associado ao conjunto de regras na ferramenta; Quando você clica em **procurar** na caixa de diálogo da ferramenta principal, a caixa de diálogo **seletor de fluxo de trabalho/tipo** é exibida, como mostra a Figura 4.
 
-![Seleção &#47;de tipo de fluxo de trabalho](./media/71f08d57-e8f2-499e-8151-ece2cbdcabfd.gif "71f08d57-e8f2-499e-8151-ece2cbdcabfd")
+![Seleção de tipo de &#47;de fluxo de trabalho](./media/71f08d57-e8f2-499e-8151-ece2cbdcabfd.gif "71f08d57-e8f2-499e-8151-ece2cbdcabfd")
 
 Figure 4: Seletor de fluxo de trabalho/tipo
 
 Você pode usar a caixa de diálogo **seletor de fluxo de trabalho/tipo** para especificar um assembly e um tipo específico dentro desse assembly. Esse tipo é o tipo de destino com que as regras são criadas (e execução). Em muitos casos, o tipo de destino é um fluxo de trabalho ou qualquer outro tipo de atividade. No entanto, você pode executar um RuleSet contra qualquer tipo .NET.
 
-O caminho para o arquivo de assembly e o tipo `name are stored with the` conjunto de regras no banco de dados, de modo que, quando o conjunto de regras for recuperado do banco de dados, a ferramenta tentará carregar automaticamente o tipo de destino.
+O caminho para o arquivo de assembly e o conjunto de regras de tipo `name are stored with the` no banco de dados, de modo que, quando o RuleSet é recuperado do banco de dados, a ferramenta tenta carregar automaticamente o tipo de destino.
 
 Quando você clica em **OK** na caixa de diálogo **seletor de fluxo de trabalho/tipo** , ele valida o tipo selecionado em relação ao conjunto de regras para garantir que o tipo de destino tenha todos os membros referenciados pelas regras. Os erros são mostrados em uma caixa de diálogo **erros de validação** . Você pode optar por continuar com a alteração, independentemente dos erros, ou clicar em **Cancelar**. No menu **ferramentas** na caixa de diálogo principal da ferramenta, você pode clicar em **validar** para validar novamente a versão do RuleSet em relação à atividade de destino.
 
 ![Captura de tela mostrando a caixa de diálogo erros de validação.](./media/external-ruleset-toolkit/validation-errors-dialog.png)
 
-No menu **dados** da ferramenta, você pode importar e exportar conjuntos de regras. Quando você clica em **importar**, uma caixa de diálogo de escolha de arquivo é exibida, na qual você pode selecionar um arquivo. Rules. Ele pode ou não ser um arquivo inicialmente criado no Visual Studio. O arquivo de .rules deve conter uma instância serializada de `RuleDefinitions` que contém uma coleção de condições e uma coleção de RuleSets. A ferramenta não usa a coleção de condições, mas usa o formato `RuleDefinitions`. Rules para permitir a interação com o ambiente do Visual Studio.
+No menu **dados** da ferramenta, você pode importar e exportar conjuntos de regras. Quando você clica em **importar**, uma caixa de diálogo de escolha de arquivo é exibida, na qual você pode selecionar um arquivo. Rules. Ele pode ou não ser um arquivo inicialmente criado no Visual Studio. O arquivo de .rules deve conter uma instância serializada de `RuleDefinitions` que contém uma coleção de condições e uma coleção de RuleSets. A ferramenta não usa a coleção de condições, mas usa o `RuleDefinitions` formato. Rules para permitir a interação com o ambiente do Visual Studio.
 
 Depois de selecionar um arquivo. Rules, uma caixa de diálogo **seletor de RuleSet** é exibida. Você pode usar a caixa de diálogo para selecionar o RuleSets do arquivo que você deseja importar (a opção especificar qualquer RuleSets). RuleSets no arquivo de .rules não tem números de versão, porque o controle de versão em um projeto de WF é o mesmo que a versão do assembly. Durante o processo de importação, a ferramenta atribui automaticamente o próximo número de versão principal disponível (que pode ser alterado após a importação); Você pode ver os números de versão atribuídos na lista **seletor de RuleSet** .
 
@@ -109,9 +110,9 @@ O base de dados a ser acessado pelo serviço deve ser configurado no host que us
 
     - Quando a caixa de diálogo **escolher itens da caixa de ferramentas** for exibida, clique na guia **atividades** .
 
-    - Navegue até o assembly `PolicyActivities` na solução `ExternalRuleSetToolkit` e clique em **abrir**.
+    - Navegue até o `PolicyActivities` assembly na `ExternalRuleSetToolkit` solução e clique em **abrir**.
 
-    - Verifique se a atividade de `PolicyFromService` está selecionada na caixa de diálogo **escolher itens da caixa de ferramentas** e clique em **OK**.
+    - Verifique se a `PolicyFromService` atividade está selecionada na caixa de diálogo **escolher itens da caixa de ferramentas** e clique em **OK**.
 
     - A atividade agora deve aparecer na caixa de ferramentas na categoria **componentes RuleSetToolkitUsageSample** .
 
@@ -125,7 +126,7 @@ O base de dados a ser acessado pelo serviço deve ser configurado no host que us
 
 9. Um arquivo de configuração do aplicativo é adicionado ao projeto de fluxo de trabalho especificar a cadeia de conexão para o base de dados é usado pelo serviço. Isso deve ser a mesma cadeia de conexão usada pela ferramenta de RuleSet, apontando para a base de dados que contém a tabela de RuleSet.
 
-10. Agora você pode executar o projeto de `RuleSetToolkitUsageSample` como você faria qualquer outro aplicativo de console do fluxo de trabalho. Pressione F5 ou CTRL + F5 no Visual Studio ou execute o arquivo RuleSetToolkitUsageSample. exe diretamente.
+10. Agora você pode executar o projeto de `RuleSetToolkitUsageSample` como você faria qualquer outro aplicativo de console do fluxo de trabalho. Pressione F5 ou CTRL + F5 no Visual Studio ou execute o arquivo de RuleSetToolkitUsageSample.exe diretamente.
 
     > [!NOTE]
     > Você deve fechar a ferramenta de RuleSet para recompilar o exemplo de uso, porque a ferramenta carrega o assembly de exemplo de uso.

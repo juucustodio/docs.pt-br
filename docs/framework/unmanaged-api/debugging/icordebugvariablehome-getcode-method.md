@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugVariableHome:: GetCode'
 title: 'Método ICorDebugVariableHome:: GetCode'
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: ef002890-4a7b-4a5d-abbf-16c60083f794
 topic_type:
 - apiref
-ms.openlocfilehash: 87d611a7b6e12a9238b00131326e8205778769e6
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: e3ff96816e580fe3cd1cee782dc5bd4166f08a14
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396600"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794631"
 ---
 # <a name="icordebugvariablehomegetcode-method"></a>Método ICorDebugVariableHome:: GetCode
+
 Obtém a instância "ICorDebugCode" que contém este objeto [ICorDebugVariableHome](icordebugvariablehome-interface.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,10 +36,12 @@ HRESULT GetCode(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ppCode`  
  fora Um ponteiro para o endereço da instância "ICorDebugCode" que contém este objeto [ICorDebugVariableHome](icordebugvariablehome-interface.md) .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -46,6 +50,6 @@ HRESULT GetCode(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugVariableHome](icordebugvariablehome-interface.md)

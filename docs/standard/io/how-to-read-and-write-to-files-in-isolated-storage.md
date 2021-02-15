@@ -1,7 +1,7 @@
 ---
+description: 'Saiba mais sobre: como ler e gravar em arquivos no armazenamento isolado'
 title: 'Como: Ler e gravar em arquivos no armazenamento isolado'
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -16,23 +16,25 @@ helpviewer_keywords:
 - data stores, reading and writing to files
 - stores, reading and writing to files
 ms.assetid: f977ebdc-1b55-475a-bc3d-3376470b08ae
-ms.openlocfilehash: d0c95f418ff85654dceed296b7a891c025ab2e62
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 6e88cc4c590c44394768472ce8bd5fd89ac99d38
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291793"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775533"
 ---
 # <a name="how-to-read-and-write-to-files-in-isolated-storage"></a>Como: Ler e gravar em arquivos no armazenamento isolado
+
 Para ler ou gravar de um arquivo em um armazenamento isolado, use um objeto <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream> com um leitor de fluxo (objeto <xref:System.IO.StreamReader>) ou o gravador do fluxo (objeto <xref:System.IO.StreamWriter>).  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo de código a seguir obtém um repositório isolado e verifica se existe um arquivo chamado TestStore.txt no repositório. Se não existir, ele cria o arquivo e grava "Armazenamento Isolado do Hello" no arquivo. Se TestStore.txt já existir, o código de exemplo será lido a partir do arquivo.  
   
  [!code-csharp[Conceptual.IsolatedStorage#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.isolatedstorage/cs/source5.cs#5)]
  [!code-vb[Conceptual.IsolatedStorage#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.isolatedstorage/vb/source5.vb#5)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.IO.IsolatedStorage.IsolatedStorageFile>
 - <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream>
@@ -41,4 +43,4 @@ Para ler ou gravar de um arquivo em um armazenamento isolado, use um objeto <xre
 - <xref:System.IO.StreamReader?displayProperty=nameWithType>
 - <xref:System.IO.StreamWriter?displayProperty=nameWithType>
 - [Arquivo e e/s de fluxo](index.md)
-- [Armazenamento isolado](isolated-storage.md)
+- [Armazenamentos isolado](isolated-storage.md)

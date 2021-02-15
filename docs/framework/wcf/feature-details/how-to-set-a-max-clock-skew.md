@@ -1,5 +1,6 @@
 ---
-title: Como definir a precisão máxima do relógio
+description: 'Saiba mais sobre: como definir uma distorção de relógio máx.'
+title: 'Como: definir a distorção máxima do relógio'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,14 +9,15 @@ helpviewer_keywords:
 - MaxClockSkew property
 - WCF, custom bindings
 ms.assetid: 491d1705-eb29-43c2-a44c-c0cf996f74eb
-ms.openlocfilehash: f8231acade6821c95a76a608633fe443f4add8ab
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 688be1bb42dd7b30fce577082992741b76819e3e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84586907"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643196"
 ---
-# <a name="how-to-set-a-max-clock-skew"></a>Como definir a precisão máxima do relógio
+# <a name="how-to-set-a-max-clock-skew"></a>Como: definir a distorção máxima do relógio
+
 As funções de tempo crítico podem ser degradedas se as configurações de relógio em dois computadores forem diferentes. Para atenuar essa possibilidade, você pode definir a `MaxClockSkew` propriedade como um <xref:System.TimeSpan> . Essa propriedade está disponível em duas classes:  
   
  <xref:System.ServiceModel.Channels.LocalClientSecuritySettings>  
@@ -89,4 +91,4 @@ As funções de tempo crítico podem ser degradedas se as configurações de rel
 - <xref:System.ServiceModel.Channels.LocalClientSecuritySettings>
 - <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings>
 - <xref:System.ServiceModel.Channels.CustomBinding>
-- [Como criar uma associação personalizada utilizando o SecurityBindingElement](how-to-create-a-custom-binding-using-the-securitybindingelement.md)
+- [Como: criar uma associação personalizada utilizando o SecurityBindingElement](how-to-create-a-custom-binding-using-the-securitybindingelement.md)

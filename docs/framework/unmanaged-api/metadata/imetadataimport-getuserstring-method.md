@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport:: getuserstring'
 title: Método IMetaDataImport::GetUserString
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 0fd3bb47-58b5-4083-b241-b9719df7a285
 topic_type:
 - apiref
-ms.openlocfilehash: 358ca84f32e1b233116605bf5486cc9a01b42e67
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 074d196c74be30f5879410ad44b9bb5c096eb153
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503491"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789093"
 ---
 # <a name="imetadataimportgetuserstring-method"></a>Método IMetaDataImport::GetUserString
+
 Obtém a cadeia de caracteres literal representada pelo token de metadados especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,6 +39,7 @@ HRESULT GetUserString (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `stk`  
  no O token da cadeia de caracteres para o qual retornar a cadeia de caracteres associada.  
   
@@ -50,15 +53,16 @@ HRESULT GetUserString (
  fora O tamanho em caracteres largos do retornado `szString` .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Incluído como um recurso em MsCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport](imetadataimport-interface.md)
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)

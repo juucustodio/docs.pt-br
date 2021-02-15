@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugEval:: NewArray'
 title: Método ICorDebugEval::NewArray
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: cc79a67d-5368-434d-a943-209db90491b9
 topic_type:
 - apiref
-ms.openlocfilehash: 496a6a7e01dec8aa90ba4e849c431ccd499ef53d
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: 1344a99450974369533b1c54b641c036fc64e3ea
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976194"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99693974"
 ---
 # <a name="icordebugevalnewarray-method"></a>Método ICorDebugEval::NewArray
+
 Aloca uma nova matriz do tipo e das dimensões do elemento especificado.  
   
  Esse método é obsoleto no .NET Framework versão 2,0. Use [ICorDebugEval2:: NewParameterizedArray](icordebugeval2-newparameterizedarray-method.md) em vez disso.  
@@ -40,6 +42,7 @@ HRESULT NewArray (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `elementType`  
  no Um valor da enumeração CorElementType que especifica o tipo de elemento da matriz.  
   
@@ -56,9 +59,11 @@ HRESULT NewArray (
  [in] Opcional. O limite inferior de cada dimensão da matriz. Se esse valor for omitido, um limite inferior de zero será assumido para cada dimensão.  
   
 ## <a name="remarks"></a>Comentários  
+
  A matriz é sempre criada no domínio do aplicativo no qual o thread está sendo executado no momento.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

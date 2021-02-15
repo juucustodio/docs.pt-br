@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugArrayValue'
 title: Interface ICorDebugArrayValue
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: dc437751-7093-44e2-bfdc-191d9ce3c192
 topic_type:
 - apiref
-ms.openlocfilehash: bd1e86b83c43af20604416f158ab9e74f399821b
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 2b91c910b9444b061b4a6bea715667bca6a4629c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82894961"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722887"
 ---
 # <a name="icordebugarrayvalue-interface"></a>Interface ICorDebugArrayValue
 
@@ -39,12 +40,14 @@ Uma subclasse de ICorDebugHeapValue que representa uma matriz unidimensional ou 
 |[Método HasBaseIndicies](icordebugarrayvalue-hasbaseindicies-method.md)|Determina se a matriz tem índices base.|  
   
 ## <a name="remarks"></a>Comentários  
- `ICorDebugArrayValue`dá suporte a matrizes unidimensionais e multidimensionais.  
+
+ `ICorDebugArrayValue` dá suporte a matrizes unidimensionais e multidimensionais.  
   
 > [!NOTE]
 > Esta interface não dá suporte para chamada remota, seja entre computadores ou processos cruzados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

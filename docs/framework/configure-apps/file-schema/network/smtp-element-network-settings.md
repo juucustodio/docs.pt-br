@@ -9,14 +9,15 @@ helpviewer_keywords:
 - <smtp> element
 - smtp element
 ms.assetid: 220b0329-e384-4e0c-86b4-0945ad17efd9
-ms.openlocfilehash: b30b82922a69ea660f4c4abfd808e89fa9945183
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 58f496b4a07f7d5531df897dd54bb6176111f1c4
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84504505"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91178314"
 ---
 # <a name="smtp-element-network-settings"></a>Elemento \<smtp> (Configurações de Rede)
+
 Configura o formato de entrega, o método de entrega e o endereço de remetente para enviar emails.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -37,6 +38,7 @@ Configura o formato de entrega, o método de entrega e o endereço de remetente 
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -56,11 +58,12 @@ Configura o formato de entrega, o método de entrega e o endereço de remetente 
   
 ### <a name="parent-elements"></a>Elementos pai  
   
-|**Elemento**|**Descrição**|  
+|**Element**|**Descrição**|  
 |-----------------|---------------------|  
-|[\<mailSettings>Elemento (configurações de rede)](mailsettings-element-network-settings.md)|Configura as opções de envio de email.|  
+|[\<mailSettings> Elemento (configurações de rede)](mailsettings-element-network-settings.md)|Configura as opções de envio de email.|  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir especifica os parâmetros de SMTP apropriados para enviar email usando as credenciais de rede padrão.  
   
 ```xml  
@@ -79,7 +82,7 @@ Configura o formato de entrega, o método de entrega e o endereço de remetente 
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>
 - <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>

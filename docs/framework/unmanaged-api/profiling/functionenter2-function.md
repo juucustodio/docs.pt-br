@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função FunctionEnter2'
 title: Função FunctionEnter2
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: ce7a21f9-0ca3-4b92-bc4b-bb803cae3f51
 topic_type:
 - apiref
-ms.openlocfilehash: 8c88e97f8187ac347f4ff39890c8d87ee80c8f9e
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 8b8061b213d02efd845e214c1177db4e5351869b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500709"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788976"
 ---
 # <a name="functionenter2-function"></a>Função FunctionEnter2
+
 Notifica o criador de perfil que o controle está sendo passado para uma função e fornece informações sobre o quadro de pilha e os argumentos de função. Essa função substitui a função [FunctionEnter](functionenter-function.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -58,6 +60,7 @@ void __stdcall FunctionEnter2 (
   Para acessar informações de argumento, o `COR_PRF_ENABLE_FUNCTION_ARGS` sinalizador deve ser definido. O criador de perfil pode usar o método [ICorProfilerInfo:: SetEventMask](icorprofilerinfo-seteventmask-method.md) para definir os sinalizadores de evento.
 
 ## <a name="remarks"></a>Comentários  
+
  Os valores dos `func` parâmetros e `argumentInfo` não são válidos após a `FunctionEnter2` função retornar, pois os valores podem ser alterados ou destruídos.  
   
  A `FunctionEnter2` função é um retorno de chamada; você deve implementá-la. A implementação deve usar o `__declspec` `naked` atributo de classe de armazenamento ().  
@@ -73,6 +76,7 @@ void __stdcall FunctionEnter2 (
  Além disso, a `FunctionEnter2` função não deve chamar um código gerenciado ou, de qualquer forma, causar uma alocação de memória gerenciada.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl  
@@ -81,7 +85,7 @@ void __stdcall FunctionEnter2 (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Função FunctionLeave2](functionleave2-function.md)
 - [Função FunctionTailcall2](functiontailcall2-function.md)

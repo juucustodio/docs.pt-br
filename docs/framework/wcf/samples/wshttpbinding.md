@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: WSHttpBinding'
 title: WSHttpBinding
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WS Profile binding
 ms.assetid: 22d85b19-0135-4141-9179-a0e9c343ad73
-ms.openlocfilehash: a78eac52095d3f647efdacc9104a75e46651f389
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 91537fa4237e0966864b53c37cd42da545fbe26d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596365"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668299"
 ---
 # <a name="wshttpbinding"></a>WSHttpBinding
-Este exemplo demonstra como implementar um serviço típico e um cliente típico usando Windows Communication Foundation (WCF). Este exemplo consiste em um programa de console do cliente (Client. exe) e uma biblioteca de serviços hospedado pelo Serviços de Informações da Internet (IIS). O serviço implementa um contrato que define um padrão de comunicação de solicitação-resposta. O contrato é definido pela `ICalculator` interface, que expõe operações matemáticas (adicionar, subtrair, multiplicar e dividir). O cliente faz solicitações síncronas para uma determinada operação matemática e o serviço responde com o resultado. A atividade do cliente fica visível na janela do console.  
+
+Este exemplo demonstra como implementar um serviço típico e um cliente típico usando Windows Communication Foundation (WCF). Este exemplo consiste em um programa de console do cliente (client.exe) e uma biblioteca de serviços hospedado pelo Serviços de Informações da Internet (IIS). O serviço implementa um contrato que define um padrão de comunicação de solicitação-resposta. O contrato é definido pela `ICalculator` interface, que expõe operações matemáticas (adicionar, subtrair, multiplicar e dividir). O cliente faz solicitações síncronas para uma determinada operação matemática e o serviço responde com o resultado. A atividade do cliente fica visível na janela do console.  
   
 > [!IMPORTANT]
 > Os exemplos podem já estar instalados no seu computador. Verifique o seguinte diretório (padrão) antes de continuar.  
@@ -26,7 +28,7 @@ Este exemplo demonstra como implementar um serviço típico e um cliente típico
 > [!NOTE]
 > O procedimento de instalação e as instruções de Build para este exemplo estão localizados no final deste tópico.  
   
- Este exemplo expõe o `ICalculator` contrato usando o [\<wsHttpBinding>](../../configure-apps/file-schema/wcf/wshttpbinding.md) . A configuração dessa associação foi expandida no arquivo Web. config.  
+ Este exemplo expõe o `ICalculator` contrato usando o [\<wsHttpBinding>](../../configure-apps/file-schema/wcf/wshttpbinding.md) . A configuração dessa associação foi expandida no arquivo de Web.config.  
   
 ```xml
 <bindings>  

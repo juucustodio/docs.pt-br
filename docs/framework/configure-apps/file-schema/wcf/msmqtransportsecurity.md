@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <msmqTransportSecurity>'
 title: <msmqTransportSecurity>
 ms.date: 03/30/2017
 ms.assetid: 092e911b-ab1b-4069-a26e-6134c3299e06
-ms.openlocfilehash: 5899c609b3cf52c4a275ba6fb10c5826fcf37f1e
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: d5a681c287749598c8c80470ea6d800f1687a80d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79153003"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99684159"
 ---
 # \<msmqTransportSecurity>
+
 Especifica as configurações de segurança de transporte MSMQ para uma associação personalizada.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,7 +22,7 @@ Especifica as configurações de segurança de transporte MSMQ para uma associa�
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<msmqIntegration>**](msmqintegration.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<msmqTransportSecurity>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <msmqTransportSecurity msmqAuthenticationMode="None/Windows/Certificate"
@@ -31,6 +33,7 @@ Especifica as configurações de segurança de transporte MSMQ para uma associa�
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -43,6 +46,7 @@ Especifica as configurações de segurança de transporte MSMQ para uma associa�
 |`msmqSecureHashAlgorithm`|Especifica o algoritmo a ser usado na computação do resumo como parte das assinaturas. Os valores válidos incluem os seguintes:<br /><br /> -MD5<br />-SHA1<br />-SHA256<br />-SHA512<br /><br /> O valor padrão é SHA1. Esse atributo é do tipo <xref:System.ServiceModel.MsmqSecureHashAlgorithm> .<br>Devido a problemas de colisão com MD5 e SHA1, a Microsoft recomenda SHA256 ou melhor.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -53,9 +57,10 @@ Especifica as configurações de segurança de transporte MSMQ para uma associa�
 |[\<msmqTransport>](msmqtransport.md)|Especifica as propriedades de comunicação de filas para um serviço de Windows Communication Foundation (WCF) que usa o protocolo MSMQ nativo.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Para obter mais informações sobre segurança de transporte, consulte [segurança de transporte](../../../wcf/feature-details/transport-security.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity>
 - <xref:System.ServiceModel.Configuration.MsmqTransportSecurityElement>

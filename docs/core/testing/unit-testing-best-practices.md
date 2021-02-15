@@ -4,12 +4,12 @@ description: Conheça as melhores práticas para escrever testes de unidade que 
 author: jpreese
 ms.author: wiwagn
 ms.date: 07/28/2018
-ms.openlocfilehash: ffeaa1e11512cab64695c120f844594b8c5014a8
-ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
+ms.openlocfilehash: 56f51cde0e52a9e6a38e5291c81470beee61adef
+ms.sourcegitcommit: 4b79862c5b41fbd86cf38f926f6a49516059f6f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86281102"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97678116"
 ---
 # <a name="unit-testing-best-practices-with-net-core-and-net-standard"></a>Melhores práticas de teste de unidade com .NET Core e .NET Standard
 
@@ -48,7 +48,7 @@ Escrever testes para seu código o desacoplará naturalmente, porque seria mais 
 ## <a name="characteristics-of-a-good-unit-test"></a>Características de um bom teste de unidade
 
 - **Rápido**. Não é incomum para projetos maduros ter milhares de testes de unidade. Os testes de unidade devem levar muito pouco tempo para serem executados. Milissegundos.
-- **Isolado**. Testes de unidade são autônomos, podem ser executados em isolamento e não têm dependências em nenhum fator externo, como um sistema de arquivos ou o banco de dados.
+- **Isolados**. Testes de unidade são autônomos, podem ser executados em isolamento e não têm dependências em nenhum fator externo, como um sistema de arquivos ou o banco de dados.
 - **Repetível**. A execução de um teste de unidade deve ser consistente com seus resultados, ou seja, ele sempre retornará o mesmo resultado se você não alterar nada entre execuções.
 - **Verificação automática**. O teste deve ser capaz de detectar automaticamente se ele foi aprovado ou reprovado sem nenhuma interação humana.
 - **Em tempo hábil**. Um teste de unidade não deve levar um tempo desproporcionalmente longo para ser escrito comparado com o código que está sendo testado. Se você achar que o teste do código está levando uma grande quantidade de tempo comparado com a escrita do código, considere um design mais testável.
@@ -67,7 +67,7 @@ A *simulação* de termos, infelizmente, geralmente é usada para falar sobre os
 
 *Simulação* -um objeto fictício é um objeto falso no sistema que decide se um teste de unidade foi aprovado ou não. Uma simulação começa como falsa até ser declarada.
 
-*Stub* – Um stub é uma substituição controlável para uma dependência existente (ou colaborador) no sistema. Ao usar um stub, é possível testar seu código sem lidar diretamente com a dependência. Por padrão, uma falsificação começa como um stub.
+*Stub* – Um stub é uma substituição controlável para uma dependência existente (ou colaborador) no sistema. Ao usar um stub, é possível testar seu código sem lidar diretamente com a dependência. Por padrão, um stub começa como falso.
 
 Considere o seguinte snippet de código:
 
@@ -93,7 +93,7 @@ purchase.ValidateOrders();
 Assert.True(purchase.CanBeShipped);
 ```
 
-Renomeando a classe para `FakeOrder`, você tornou a classe muito mais genérica, a classe pode ser usada como uma simulação ou um stub. O que for melhor para o caso de teste. No exemplo acima, `FakeOrder` é usado como um stub. Você não está usando o `FakeOrder` em qualquer forma durante a declaração. `FakeOrder`foi passado para a `Purchase` classe para atender aos requisitos do construtor.
+Renomeando a classe para `FakeOrder`, você tornou a classe muito mais genérica, a classe pode ser usada como uma simulação ou um stub. O que for melhor para o caso de teste. No exemplo acima, `FakeOrder` é usado como um stub. Você não está usando o `FakeOrder` em qualquer forma durante a declaração. `FakeOrder` foi passado para a `Purchase` classe para atender aos requisitos do construtor.
 
 Para usá-lo como uma Simulação, você poderia fazer algo como isto
 
@@ -114,6 +114,8 @@ Nesse caso, você está verificando uma propriedade na Falsificação (declarand
 O ponto principal a lembrar sobre simulações versus stub é que simulações são como stubs, mas você declara com relação ao objeto fictício, enquanto você não declara com relação a um stub.
 
 ## <a name="best-practices"></a>Práticas recomendadas
+
+Tente não introduzir dependências na infraestrutura ao escrever testes de unidade. Isso torna os testes lentos e frágeis e deve ser reservado para testes de integração. Você pode evitar essas dependências no aplicativo seguindo o [Princípio de Dependências Explícitas](https://deviq.com/explicit-dependencies-principle) e usando a [Injeção de Dependência](../extensions/dependency-injection.md). Você também pode manter seus testes de unidade em um projeto separado de seus testes de integração. Isso garante que seu projeto de teste de unidade não tenha referências a ou dependências em pacotes de infraestrutura.
 
 ### <a name="naming-your-tests"></a>Nomeando seus testes
 
@@ -225,7 +227,7 @@ Quando você introduz a lógica em seu conjunto de testes, a possibilidade de in
 
 ### <a name="prefer-helper-methods-to-setup-and-teardown"></a>Preferir métodos auxiliares para instalação (setup) e desinstalação (teardown)
 
-Se você precisar de um objeto ou estado semelhante para seus testes, prefira um método auxiliar do que usar atributos Setup e Teardown, se existirem.
+Se você precisar de um objeto ou estado semelhante para seus testes, prefira um método auxiliar do que o aproveitamento `Setup` e os `Teardown` atributos, se existirem.
 
 #### <a name="why"></a>Por quê?
 

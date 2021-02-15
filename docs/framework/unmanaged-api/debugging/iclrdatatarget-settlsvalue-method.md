@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRDataTarget:: SetTLSValue'
 title: Método ICLRDataTarget::SetTLSValue
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 4a2d6a24-749a-47ad-9f01-4517203d3f35
 topic_type:
 - apiref
-ms.openlocfilehash: 6c98fc93fd659ccfc0ccd42eec7d95382cf342f8
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: 2432cd66f604575e35f171c98a0fb313c5ccd94e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860516"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785673"
 ---
 # <a name="iclrdatatargetsettlsvalue-method"></a>Método ICLRDataTarget::SetTLSValue
+
 Define um valor no armazenamento local de threads (TLS) do thread especificado no processo de destino. Esse método é chamado pelos serviços de acesso a dados do Common Language Runtime (CLR).  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT SetTLSValue (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `threadID`  
  no O identificador do sistema operacional de um thread no processo de destino.  
   
@@ -46,9 +49,11 @@ HRESULT SetTLSValue (
  no Um `CLRDATA_ADDRESS` valor que especifica o valor a ser colocado no local de TLS fornecido.  
   
 ## <a name="remarks"></a>Comentários  
+
  Este método é implementado pelo autor do aplicativo de depuração.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** ClrData. idl, ClrData. h  
@@ -57,6 +62,6 @@ HRESULT SetTLSValue (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRDataTarget](iclrdatatarget-interface.md)

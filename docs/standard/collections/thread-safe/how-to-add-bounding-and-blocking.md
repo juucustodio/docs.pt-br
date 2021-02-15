@@ -1,21 +1,23 @@
 ---
-title: Como adicionar a funcionalidade de delimitação e bloqueio a uma coleção
+description: 'Saiba mais sobre: como adicionar funcionalidade de delimitador e bloqueio a uma coleção'
+title: 'Como: Adicionar a funcionalidade de delimitação e bloqueio a uma coleção'
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - thread-safe collections, custom blocking collections
 ms.assetid: 4c2492de-3876-4873-b5a1-000bb404d770
-ms.openlocfilehash: 57a01726e897f4ddbf8df5ede53609c198012d80
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: c44febe0a7b2155c61b12c280d830ad7b028d326
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84287868"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99676060"
 ---
-# <a name="how-to-add-bounding-and-blocking-functionality-to-a-collection"></a>Como adicionar a funcionalidade de delimitação e bloqueio a uma coleção
+# <a name="how-to-add-bounding-and-blocking-functionality-to-a-collection"></a>Como: Adicionar a funcionalidade de delimitação e bloqueio a uma coleção
+
 Este exemplo mostra como adicionar a funcionalidade de delimitação e de bloqueio a uma classe de coleção personalizada por meio da implementação da interface <xref:System.Collections.Concurrent.IProducerConsumerCollection%601?displayProperty=nameWithType> na classe e do uso de uma instância da classe como o mecanismo de armazenamento interno para um <xref:System.Collections.Concurrent.BlockingCollection%601?displayProperty=nameWithType>. Para obter mais informações sobre delimitação e bloqueio, veja [Visão geral de BlockingCollection](blockingcollection-overview.md).  
   
 ## <a name="example"></a>Exemplo  
+
  A classe de coleção personalizada é uma fila de prioridade básica na qual os níveis de prioridade são representados como uma matriz de objetos <xref:System.Collections.Concurrent.ConcurrentQueue%601?displayProperty=nameWithType>. Nenhuma solicitação adicional é executada dentro de cada fila.  
   
  No código do cliente, três tarefas são iniciadas. A primeira tarefa apenas monitora a digitação no teclado para permitir o cancelamento a qualquer momento durante a execução. A segunda tarefa é o thread produtor; ele adiciona novos itens na coleção de bloqueio e atribui uma prioridade com base em um valor aleatório a cada item. A terceira tarefa remove itens da coleção assim que eles ficarem disponíveis.  
@@ -26,6 +28,6 @@ Este exemplo mostra como adicionar a funcionalidade de delimitação e de bloque
   
  Por padrão, o armazenamento para um <xref:System.Collections.Concurrent.BlockingCollection%601?displayProperty=nameWithType> é <xref:System.Collections.Concurrent.ConcurrentQueue%601?displayProperty=nameWithType>.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
-- [Coleções com segurança de thread](index.md)
+- [Coleções thread-safe](index.md)

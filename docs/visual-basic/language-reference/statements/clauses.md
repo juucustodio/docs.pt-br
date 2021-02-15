@@ -1,21 +1,24 @@
 ---
+description: 'Saiba mais sobre: cláusulas (Visual Basic)'
 title: Cláusulas
 ms.date: 07/20/2015
 helpviewer_keywords:
 - clauses [Visual Basic]
 ms.assetid: 5e89f5f3-d129-4ed1-8857-30cd71cff95e
-ms.openlocfilehash: a8974d83901c1f005a8d6042bf3a9de2e5e0e125
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 2d17121a5e2e48fba3617fba7b068991714ddaf4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84397136"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673876"
 ---
 # <a name="clauses-visual-basic"></a>Cláusulas (Visual Basic)
+
 Os tópicos nesta seção documentam Visual Basic cláusulas de tempo de execução.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Receber](alias-clause.md)  
+
+ [Alias](alias-clause.md)  
   
  [Como](as-clause.md)  
   
@@ -23,11 +26,12 @@ Os tópicos nesta seção documentam Visual Basic cláusulas de tempo de execuç
   
  [Implementações](implements-clause.md)  
   
- [Em](in-clause.md)  
+ [In](in-clause.md)  
   
  [Porta](into-clause.md)  
   
  [Desse](of-clause.md)  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Referência de linguagem de Visual Basic](../index.md)  
+
+ [Referência da linguagem Visual Basic](../index.md)  

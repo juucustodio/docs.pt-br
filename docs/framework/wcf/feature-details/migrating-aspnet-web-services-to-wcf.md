@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: migrando serviços Web ASP.NET para o WCF'
 title: Migrando serviços Web do ASP.NET para o WCF
 ms.date: 03/30/2017
 ms.assetid: 1adbb931-f0b1-47f3-9caf-169e4edc9907
-ms.openlocfilehash: fa707a4246d5bc9940417072c098b2973140f878
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: c0d78f1086c72eb853bd80ab378b4d0e78362f60
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84598795"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733769"
 ---
 # <a name="migrating-aspnet-web-services-to-wcf"></a>Migrando serviços Web do ASP.NET para o WCF
+
 O ASP.NET fornece bibliotecas de classes e ferramentas de .NET Framework para a criação de serviços Web, bem como recursos para hospedar serviços no Serviços de Informações da Internet (IIS). O Windows Communication Foundation (WCF) fornece .NET Framework bibliotecas de classes, ferramentas e recursos de hospedagem para permitir que entidades de software se comuniquem usando qualquer protocolo, incluindo os usados pelos serviços Web.  Migrar serviços Web do ASP.NET para o WCF permite que seus aplicativos aproveitem os novos recursos e melhorias que são exclusivos do WCF.  
   
  O WCF tem várias vantagens importantes em relação aos serviços Web do ASP.NET. Embora as ferramentas de serviços Web do ASP.NET sejam exclusivamente para a criação de serviços da Web, o WCF fornece ferramentas que podem ser usadas quando entidades de software devem ser feitas para se comunicarem umas com as outras. Isso reduzirá o número de tecnologias que os desenvolvedores precisam saber para acomodar diferentes cenários de comunicação de software, o que, por sua vez, reduzirá o custo dos recursos de desenvolvimento de software, bem como o tempo para concluir os projetos de desenvolvimento de software.  
@@ -37,8 +39,8 @@ O ASP.NET fornece bibliotecas de classes e ferramentas de .NET Framework para a 
   
 ## <a name="see-also"></a>Consulte também
 
-- [Antecipando a adoção do Windows Communication Foundation: facilitando a migração futura](anticipating-adopting-wcf-migration.md)
-- [Antecipando a adoção do Windows Communication Foundation: facilitando a futura integração](anticipating-adopting-the-wcf-easing-future-integration.md)
+- [Antecipar a adoção do Windows Communication Foundation: facilitar a migração futura](anticipating-adopting-wcf-migration.md)
+- [Antecipar a adoção do Windows Communication Foundation: facilitar a integração futura](anticipating-adopting-the-wcf-easing-future-integration.md)
 - [Adotando o Windows Communication Foundation](adopting-wcf.md)
 - [Comparando serviços Web do ASP.NET ao WCF com base na finalidade e nos padrões usados](comparing-aspnet-web-services-to-wcf-based-on-purpose-and-standards-used.md)
 - [Comparando os serviços Web ASP.NET com o WCF baseado em desenvolvimento](comparing-aspnet-web-services-to-wcf-based-on-development.md)

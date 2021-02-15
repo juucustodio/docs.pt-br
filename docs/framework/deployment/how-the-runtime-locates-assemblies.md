@@ -10,12 +10,12 @@ helpviewer_keywords:
 - locating assemblies
 - assemblies [.NET Framework], location
 ms.assetid: 772ac6f4-64d2-4cfb-92fd-58096dcd6c34
-ms.openlocfilehash: 4cf1e5787fe2e430d20208d8e79b610e9126c67c
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 1b2ee58ccbd4bdfceb6300c20d5255718982f2e5
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85622621"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96272521"
 ---
 # <a name="how-the-runtime-locates-assemblies"></a>Como o runtime localiza assemblies
 
@@ -135,11 +135,13 @@ O arquivo de configuração de política de publicador substitui as informaçõe
 Um arquivo de política de publicador é usado quando um componente compartilhado é atualizado e a nova versão do componente compartilhado deve ser selecionada por todos os aplicativos que usam esse componente. As configurações no arquivo de política de publicador substituem as configurações no arquivo de configuração de aplicativo, a menos que o arquivo de configuração de aplicativo imponha o modo de segurança.
 
 #### <a name="safe-mode"></a>Modo de segurança
+
 Os arquivos de política de publicador normalmente são explicitamente instalados como parte de uma atualização do programa ou service pack. Se houver algum problema com o componente compartilhado atualizado, você poderá ignorar as substituições no arquivo de política de publicador usando o modo de segurança. O modo de segurança é determinado pelo **\<publisherPolicy apply="yes**&#124;**no"/>** elemento, localizado somente no arquivo de configuração do aplicativo. Ele especifica se as informações de configuração de política do publicador devem ser removidas do processo de associação.
 
 O modo de segurança pode ser definido para todo o aplicativo ou para os assemblies selecionados. Ou seja, você pode desligar a política para todos os assemblies que compõem o aplicativo ou ativá-lo para alguns assemblies, mas não para outros. Para aplicar seletivamente a política do Publicador a assemblies que compõem um aplicativo, defina **\<publisherPolicy apply\=no/>** e especifique quais assemblies você deseja que sejam afetados usando o \<**dependentAssembly**> elemento. Para aplicar a política do Publicador a todos os assemblies que compõem o aplicativo, defina sem **\<publisherPolicy apply\=no/>** elementos de assembly dependentes. Para obter mais informações sobre a configuração, consulte [Configuring Apps by Using Configuration Files](../configure-apps/index.md) (Configurando aplicativos usando arquivos de configuração).
 
 ### <a name="machine-configuration-file"></a>Arquivo de configuração do computador
+
 Em terceiro lugar, o runtime examina o arquivo de configuração do computador. Esse arquivo, chamado Machine.config, reside no computador local no subdiretório Config do diretório raiz em que o runtime está instalado. Esse arquivo pode ser usado por administradores para especificar restrições de associação de assembly que são locais no computador. As configurações no arquivo de configuração do computador têm precedência sobre todas as outras definições de configuração. No entanto, isso não significa que todas as definições de configuração devem ser colocadas nesse arquivo. A versão de determinada pelo arquivo de política de administrador é final e não pode ser substituída. As substituições especificadas no arquivo Machine.config afetam todos os aplicativos. Para obter mais informações sobre os arquivos de configuração, consulte [Configuring Apps by Using Configuration Files](../configure-apps/index.md) (Configurando aplicativos usando arquivos de configuração).
 
 <a name="step2"></a>
@@ -233,7 +235,7 @@ Considerando as seguintes informações:
 
 - Diretório raiz do aplicativo: `http://www.code.microsoft.com`
 
-- [\<probing>](../configure-apps/file-schema/runtime/probing-element.md)o elemento no arquivo de configuração especifica: bin
+- [\<probing>](../configure-apps/file-schema/runtime/probing-element.md) o elemento no arquivo de configuração especifica: bin
 
 - Cultura: de
 
@@ -265,7 +267,7 @@ O local do assembly também pode ser determinado usando o contexto de associaç�
 
 Por exemplo, se o Assembly1 fizer referência ao Assembly2 e o Assembly1 tiver sido baixado de `http://www.code.microsoft.com/utils`, esse local será considerado uma dica sobre onde encontrar o Assembly2.dll. Em seguida, o runtime procura pelo assembly em `http://www.code.microsoft.com/utils/Assembly2.dll` e `http://www.code.microsoft.com/utils/Assembly2/Assembly2.dll`. Se Assembly2 não for encontrado em um desses locais, o runtime de consultará o Windows Installer.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Práticas recomendadas para carregamento de assemblies](best-practices-for-assembly-loading.md)
 - [Implantação](index.md)

@@ -3,18 +3,18 @@ title: Portabilidade de bibliotecas para o .NET Core
 description: Saiba como realizar a portabilidade de projetos de biblioteca do .NET Framework para o .NET Core.
 author: cartermp
 ms.date: 12/07/2018
-ms.openlocfilehash: ac9da2f850bf1e4e36367ad2154849a0c7efd535
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 09874899018abc09051af17771c9df829b8dbe96
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87164288"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189675"
 ---
 # <a name="port-net-framework-libraries-to-net-core"></a>Portabilidade de bibliotecas do .NET Framework para o .NET Core
 
 Saiba como portar .NET Framework o código da biblioteca para o .NET Core, em que ele é executado em várias plataformas e expande o alcance dos aplicativos que o utilizam.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
 
 Este artigo pressupõe que você:
 
@@ -30,15 +30,15 @@ Este artigo descreve a especificação formal de APIs do .NET que devem estar di
 [Desenvolvendo bibliotecas com ferramentas de plataforma cruzada](../tutorials/libraries.md)\
 Este artigo explica como escrever bibliotecas usando o CLI do .NET Core.
 
-[Adições ao formato *csproj* para .NET Core](../tools/csproj.md)\
-Este artigo descreve as alterações adicionadas aos arquivos de projeto como parte da mudança para *csproj* e o MSBuild.
+[SDKs do projeto .NET](../project-sdk/overview.md)\
+Este artigo descreve o formato de arquivo de projeto no estilo SDK.
 
 [Portando para o .NET Core – analisando suas dependências de terceiros](third-party-deps.md)\
 Este artigo discute a portabilidade de dependências de terceiros e o que fazer quando uma dependência de pacote NuGet não é executada no .NET Core.
 
 ## <a name="retarget-to-net-framework-472"></a>Redirecionar para .NET Framework 4.7.2
 
-Se o seu código não estiver direcionando para o .NET Framework 4.7.2, recomendamos o redirecionamento para o .NET Framework 4.7.2. Isso garante a disponibilidade das alternativas de API mais recentes para casos em que o .NET Standard não dá suporte a APIs existentes.
+Se o seu código não estiver direcionando para o .NET Framework 4.7.2, recomendamos o redirecionamento para o .NET Framework 4.7.2. Isso garante a disponibilidade das alternativas de API mais recentes para casos em que .NET Standard não oferece suporte a APIs existentes.
 
 Para cada um dos projetos que você deseja portar, faça o seguinte no Visual Studio:
 
@@ -107,8 +107,8 @@ Seu plano pode envolver alterações significativas na sua base de código enqua
 
 A melhor maneira de verificar se tudo está funcionando após portar seu código é testá-lo ao portá-lo para o .NET Core. Para fazer isso, você precisará usar uma estrutura de teste que compilará e executará os testes para .NET Core. No momento, você tem três opções:
 
-- [xUnit](https://xunit.github.io/)
-  - [Introdução](https://xunit.github.io/docs/getting-started-dotnet-core.html)
+- [xUnit](https://xunit.net/)
+  - [Introdução](https://xunit.net/docs/getting-started/netcore/cmdline)
   - [Ferramenta para converter um projeto MSTest em xUnit](https://github.com/dotnet/codeformatter/tree/master/src/XUnitConverter)
 - [NUnit](https://nunit.org/)
   - [Introdução](https://github.com/nunit/docs/wiki/Installation)
@@ -120,7 +120,7 @@ A melhor maneira de verificar se tudo está funcionando após portar seu código
 Por fim, o esforço de portabilidade depende muito de como seu código do .NET Framework está estruturado. Uma boa maneira de portar seu código é começar com a *base* de sua biblioteca, que são os componentes fundamentais do seu código. Ela pode ser os modelos de dados ou alguma outra classe e método fundamental que todos os demais elementos usam direta ou indiretamente.
 
 1. Porte o projeto de teste da camada da sua biblioteca que está sendo portada no momento.
-1. Copie a base da sua biblioteca para um novo projeto do .NET Core e selecione a versão do .NET Standard à qual você deseja dar suporte.
+1. Copie sobre a base da biblioteca em um novo projeto .NET Core e selecione a versão do .NET Standard que você deseja dar suporte.
 1. Faça as alterações necessárias para que o código seja compilado. Uma boa parte disso pode exigir a adição de dependências de pacotes NuGet para o arquivo *csproj*.
 1. Execute os testes e faça os ajustes necessários.
 1. Selecione a próxima camada de código para portabilidade e repita as etapas anteriores.

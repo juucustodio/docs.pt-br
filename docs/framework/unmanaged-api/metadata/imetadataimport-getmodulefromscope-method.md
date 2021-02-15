@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport:: GetModuleFromScope'
 title: Método IMetaDataImport::GetModuleFromScope
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: add68d3f-45fd-4bef-af94-eb5273f26b11
 topic_type:
 - apiref
-ms.openlocfilehash: 4e2b2501b6b7117cefcfa43511ef20f25106bb42
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 8c1e952a45b3827717102428fbd18ceac3951baf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503573"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753361"
 ---
 # <a name="imetadataimportgetmodulefromscope-method"></a>Método IMetaDataImport::GetModuleFromScope
+
 Obtém um token de metadados para o módulo referenciado no escopo de metadados atual.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,19 +36,21 @@ HRESULT GetModuleFromScope (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pmd`  
  fora Um ponteiro para o token que representa o módulo referenciado no escopo de metadados atual.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Incluído como um recurso em MsCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport](imetadataimport-interface.md)
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)

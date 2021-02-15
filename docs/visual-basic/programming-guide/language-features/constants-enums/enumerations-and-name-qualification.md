@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumerações e qualificação de nome (Visual Basic)'
 title: Enumerações e qualificação de nome
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -17,19 +18,21 @@ helpviewer_keywords:
 - naming conventions [Visual Basic], naming conflicts
 - declarations [Visual Basic], namespaces
 ms.assetid: 08ba2738-df52-4140-bc55-f57c871c9b73
-ms.openlocfilehash: 4b09284b8282c481e406050d37cbdb2f3c8686bc
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 83f5b894dad821fea920386be905de0b51f9c42f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84414499"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100477470"
 ---
 # <a name="enumerations-and-name-qualification-visual-basic"></a>Enumerações e qualificação de nome (Visual Basic)
+
 Normalmente, ao fazer referência a um membro de uma enumeração, você deve qualificar o nome do membro com o nome da enumeração. Por exemplo, para se referir ao `Sunday` membro da sua `Days` enumeração, você usaria a seguinte sintaxe:  
   
  [!code-vb[VbEnumsTask#18](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#18)]  
   
 ## <a name="using-the-imports-statement"></a>Usando a instrução Imports  
+
  Você pode evitar o uso de nomes totalmente qualificados adicionando uma `Imports` instrução à seção de declarações de namespace do seu código, como no exemplo a seguir:  
   
  [!code-vb[VbEnumsTask#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class1.vb#22)]  
@@ -38,7 +41,7 @@ Normalmente, ao fazer referência a um membro de uma enumeração, você deve qu
   
  [!code-vb[VbEnumsTask#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class1.vb#24)]  
   
- Ao organizar conjuntos de constantes relacionadas em enumerações, você pode usar os mesmos nomes de constantes em diferentes contextos. Por exemplo, você pode usar os mesmos nomes para as constantes do dia da semana nas `Days` `WorkDays` enumerações e. Se você usar a `Imports` instrução com suas enumerações, deverá ter cuidado para evitar referências ambíguas. Considere o exemplo a seguir:  
+ Ao organizar conjuntos de constantes relacionadas em enumerações, você pode usar os mesmos nomes de constantes em diferentes contextos. Por exemplo, você pode usar os mesmos nomes para as constantes do dia da semana nas `Days` `WorkDays` enumerações e. Se você usar a `Imports` instrução com suas enumerações, deverá ter cuidado para evitar referências ambíguas. Considere o seguinte exemplo:  
   
  [!code-vb[VbEnumsTask#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class1.vb#22)]  
   
@@ -48,7 +51,7 @@ Normalmente, ao fazer referência a um membro de uma enumeração, você deve qu
   
  [!code-vb[VbEnumsTask#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#32)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Constantes e enumerações](../../../language-reference/constants-and-enumerations.md)
 - [Como declarar uma enumeração](how-to-declare-enumerations.md)
@@ -59,4 +62,4 @@ Normalmente, ao fazer referência a um membro de uma enumeração, você deve qu
 - [Tipos de dados constante e literal](constant-and-literal-data-types.md)
 - [Instrução Enum](../../../language-reference/statements/enum-statement.md)
 - [Instrução Imports (tipo e namespace .NET)](../../../language-reference/statements/imports-statement-net-namespace-and-type.md)
-- [Tipos de dados](../../../language-reference/data-types/index.md)
+- [Data Types](../../../language-reference/data-types/index.md)

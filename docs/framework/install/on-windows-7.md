@@ -2,12 +2,12 @@
 title: Instalar o .NET Framework no Windows 7 SP1
 description: Saiba como instalar o .NET Framework no Windows 7 SP1.
 ms.date: 04/18/2019
-ms.openlocfilehash: 3f94562f2a14c108a021343b89a8279e95215f30
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 900b38110626a93f37829045a8676ea87101d7e9
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88558849"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899081"
 ---
 # <a name="install-the-net-framework-on-windows-7-sp1-and-windows-server-2008-r2"></a>Instalar o .NET Framework no Windows 7 SP1 e Windows Server 2008 R2
 
@@ -23,6 +23,16 @@ Essas instruções ajudarão você a instalar as versões do .NET Framework nece
 > [Baixar o .NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)
 
 O [.NET Framework 4.8](https://github.com/Microsoft/dotnet/tree/master/releases/net48) pode ser usado para executar aplicativos criados para o .NET Framework 4.0 ou posterior.
+
+### <a name="offline-installer"></a>Instalador offline
+
+Ao fazer uma instalação offline para .NET Framework no Windows 7, primeiro você precisará certificar-se de que a última [autoridade de certificação raiz 2011 da Microsoft](https://www.microsoft.com/pkiops/Docs/Repository.htm) tenha sido instalada no computador de destino.
+
+A ferramenta de _certmgr.exe_ pode automatizar a instalação de um certificado e é obtida no Visual Studio ou no SDK do Windows. O comando a seguir é usado para instalar o certificado antes de executar o instalador do .NET Framework:
+
+```console
+certmgr.exe /add MicRooCerAut2011_2011_03_22.crt /s /r localMachine root
+```
 
 ## <a name="net-framework-35"></a>.NET Framework 3.5
 

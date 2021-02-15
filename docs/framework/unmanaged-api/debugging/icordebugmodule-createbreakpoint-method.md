@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugModule:: CreateBreakpoint'
 title: Método ICorDebugModule::CreateBreakpoint
 ms.date: 03/30/2017
 api_name:
@@ -15,17 +16,18 @@ helpviewer_keywords:
 ms.assetid: c2541c30-fa6e-43b6-9682-77d8898f33e1
 topic_type:
 - apiref
-ms.openlocfilehash: 1a65f9f117ff013a1f6dc7403a5bc0c7b3dbb2c3
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 830b3fc8d80b69a26c9635108139f13cf4f88aa5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73136599"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722666"
 ---
 # <a name="icordebugmodulecreatebreakpoint-method"></a>Método ICorDebugModule::CreateBreakpoint
+
 Este método não foi implementado na versão atual do .NET Framework.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT CreateBreakpoint(  
@@ -34,4 +36,5 @@ HRESULT CreateBreakpoint(
 ```  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorDebug.idl, CorDebug.h

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataAssemblyImport:: CloseEnum'
 title: Método IMetaDataAssemblyImport::CloseEnum
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: c9df4087-12b3-46d9-b075-9067dd7805df
 topic_type:
 - apiref
-ms.openlocfilehash: 63e81e822eb55b4090aeee6d6be3c72adbd94451
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 3ff234fac905a058ed832d58a0f996a2c7393ed0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84009126"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678075"
 ---
 # <a name="imetadataassemblyimportcloseenum-method"></a>Método IMetaDataAssemblyImport::CloseEnum
+
 Libera uma referência para a instância de enumeração especificada.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,18 +36,20 @@ void CloseEnum (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `hEnum`  
  no A instância de enumeração a ser fechada.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataAssemblyImport](imetadataassemblyimport-interface.md)

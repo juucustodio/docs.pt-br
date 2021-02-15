@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: validação do cliente'
 title: Validação de cliente
 ms.date: 03/30/2017
 ms.assetid: f0c1f805-1a81-4d0d-a112-bf5e2e87a631
-ms.openlocfilehash: dce11ec2e3ef552c0c53e1faf89a12bc13b66ae0
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 373ee49bccd8905e0cb9bfebf281abdd183ac506
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84585318"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99778562"
 ---
 # <a name="client-validation"></a>Validação de cliente
+
 Os serviços geralmente publicam metadados para habilitar a geração automática e a configuração de tipos de proxy do cliente. Quando o serviço não é confiável, os aplicativos cliente devem validar que os metadados estão em conformidade com a política do aplicativo cliente referente à segurança, às transações, ao tipo de contrato de serviço e assim por diante. O exemplo a seguir demonstra como gravar um comportamento de ponto de extremidade de cliente que valida o ponto de extremidade de serviço para garantir que o ponto de extremidade de serviço seja seguro para uso.  
   
  O serviço expõe quatro pontos de extremidade de serviço. O primeiro ponto de extremidade usa o WSDualHttpBinding, o segundo ponto de extremidade usa a autenticação NTLM, o terceiro ponto de extremidade habilita o fluxo de transações e o quarto ponto de extremidade usa a autenticação baseada em certificado.  
@@ -22,21 +24,21 @@ Os serviços geralmente publicam metadados para habilitar a geração automátic
   
 ### <a name="to-run-the-sample-on-the-same-computer"></a>Para executar o exemplo no mesmo computador  
   
-1. Abra um Prompt de Comando do Desenvolvedor para o Visual Studio com privilégios de administrador e execute Setup. bat na pasta de instalação de exemplo. Isso instala todos os certificados necessários para executar o exemplo.  
+1. Abra um Prompt de Comando do Desenvolvedor para o Visual Studio com privilégios de administrador e execute Setup.bat na pasta de instalação de exemplo. Isso instala todos os certificados necessários para executar o exemplo.  
   
 2. Executar o aplicativo de serviço do \service\bin\Debug.  
   
 3. Executar o aplicativo cliente do \client\bin\Debug. A atividade do cliente é exibida no aplicativo de console do cliente.  
   
-4. Se o cliente e o serviço não puderem se comunicar, consulte [dicas de solução de problemas para exemplos do WCF](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+4. Se o cliente e o serviço não puderem se comunicar, consulte [dicas de solução de problemas para exemplos do WCF](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
-5. Remova os certificados executando Cleanup. bat quando tiver concluído o exemplo. Outros exemplos de segurança usam os mesmos certificados.  
+5. Remova os certificados executando Cleanup.bat ao concluir o exemplo. Outros exemplos de segurança usam os mesmos certificados.  
   
 ### <a name="to-run-the-sample-across-computers"></a>Para executar o exemplo entre computadores  
   
 1. No servidor, em um Prompt de Comando do Desenvolvedor para o Visual Studio executar com privilégios de administrador, digite `setup.bat service` . `setup.bat`A execução com o `service` argumento cria um certificado de serviço com o nome de domínio totalmente qualificado do computador e exporta o certificado de serviço para um arquivo chamado Service. cer.  
   
-2. No servidor, edite app. config para refletir o novo nome do certificado. Ou seja, altere o `findValue` atributo no [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-clientcredentials-element.md) elemento para o nome de domínio totalmente qualificado do computador.  
+2. No servidor, edite App.config para refletir o novo nome do certificado. Ou seja, altere o `findValue` atributo no [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-clientcredentials-element.md) elemento para o nome de domínio totalmente qualificado do computador.  
   
 3. Copie o arquivo Service. cer do diretório de serviço para o diretório cliente no computador cliente.  
   
@@ -46,19 +48,19 @@ Os serviços geralmente publicam metadados para habilitar a geração automátic
   
 6. Copie o arquivo client. cer do diretório cliente para o diretório de serviço no servidor.  
   
-7. No cliente, execute ImportServiceCert. bat em um Prompt de Comando do Desenvolvedor para Visual Studio aberto com privilégios de administrador. Isso importa o certificado de serviço do arquivo Service. cer para o repositório CurrentUser-TrustedPeople.  
+7. No cliente, execute ImportServiceCert.bat em um Prompt de Comando do Desenvolvedor para o Visual Studio aberto com privilégios de administrador. Isso importa o certificado de serviço do arquivo Service. cer para o repositório CurrentUser-TrustedPeople.  
   
-8. No servidor, execute ImportClientCert. bat em um Prompt de Comando do Desenvolvedor para Visual Studio aberto com privilégios de administrador. Isso importa o certificado do cliente do arquivo client. cer para o repositório LocalMachine-TrustedPeople.  
+8. No servidor, execute ImportClientCert.bat em um Prompt de Comando do Desenvolvedor para o Visual Studio aberto com privilégios de administrador. Isso importa o certificado do cliente do arquivo client. cer para o repositório LocalMachine-TrustedPeople.  
   
-9. No computador do serviço, crie o projeto de serviço no Visual Studio e execute o Service. exe.  
+9. No computador de serviço, crie o projeto de serviço no Visual Studio e execute service.exe.  
   
-10. No computador cliente, execute Client. exe.  
+10. No computador cliente, execute client.exe.  
   
-    1. Se o cliente e o serviço não puderem se comunicar, consulte [dicas de solução de problemas para exemplos do WCF](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+    1. Se o cliente e o serviço não puderem se comunicar, consulte [dicas de solução de problemas para exemplos do WCF](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 ### <a name="to-clean-up-after-the-sample"></a>Para limpar após o exemplo  
   
-- Execute o Cleanup. bat na pasta Samples depois de concluir a execução do exemplo.  
+- Execute Cleanup.bat na pasta Samples depois de concluir a execução do exemplo.  
   
     > [!NOTE]
     > Esse script não remove certificados de serviço em um cliente ao executar esse exemplo em computadores. Se você tiver executado os exemplos do WCF que usam certificados entre computadores, certifique-se de limpar os certificados de serviço que foram instalados no repositório CurrentUser-TrustedPeople. Para fazer isso, use o seguinte comando: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>. For example: certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com` .  

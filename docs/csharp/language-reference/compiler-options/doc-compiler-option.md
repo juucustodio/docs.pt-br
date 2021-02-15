@@ -13,14 +13,15 @@ helpviewer_keywords:
 - -doc compiler option [C#]
 - /doc compiler option [C#]
 ms.assetid: 849eea59-c936-4311-bad8-d07404480f2a
-ms.openlocfilehash: 366bad1029904b3571be0a76d827ff0213d776bb
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: e55b86e5b028fb871f309d80217477cfd164c106
+ms.sourcegitcommit: f0eb7eeedf3ceec726499fa678786d03083214ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125742"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98629248"
 ---
 # <a name="-doc-c-compiler-options"></a>-doc (opções do compilador C#)
+
 A opção **-doc** permite colocar comentários de documentação em um arquivo XML.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -30,10 +31,12 @@ A opção **-doc** permite colocar comentários de documentação em um arquivo 
 ```  
   
 ## <a name="arguments"></a>Argumentos  
+
  `file`  
  O arquivo de saída para XML, que é populado com os comentários nos arquivos de código-fonte da compilação.  
   
 ## <a name="remarks"></a>Comentários  
+
  Nos arquivos de código-fonte, os comentários de documentação que precedem o seguinte podem ser processados e adicionados ao arquivo XML:  
   
 - Tipos definidos pelo usuário, como [classe](../keywords/class.md), [delegado](../builtin-types/reference-types.md#the-delegate-type) ou [interface](../keywords/interface.md)  
@@ -51,17 +54,21 @@ A opção **-doc** permite colocar comentários de documentação em um arquivo 
   
  Consulte [Marcas recomendadas para comentários de documentação](../../programming-guide/xmldoc/recommended-tags-for-documentation-comments.md) para ver maneiras de gerar a documentação dos comentários em seu código.  
   
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Para definir esta opção do compilador no ambiente de desenvolvimento do Visual Studio  
-  
-1. Abra a página **Propriedades** do projeto.  
-  
-2. Clique na guia **Build**.  
-  
-3. Modifique a propriedade **Arquivo de documentação XML**.  
-  
- Para obter informações sobre como definir essa opção do compilador programaticamente, consulte <xref:VSLangProj80.CSharpProjectConfigurationProperties3.DocumentationFile%2A>.  
-  
-## <a name="see-also"></a>Confira também
+### <a name="to-set-this-compiler-option-in-the-visual-studio-2019-development-environment"></a>Para definir essa opção de compilador no ambiente de desenvolvimento do Visual Studio 2019  
 
-- [Opções do compilador C#](./index.md)
+1. Abra a página **Propriedades** do projeto.  
+2. Clique na guia **Build**.
+3. Modifique a propriedade **Arquivo de documentação XML**.
+  
+### <a name="to-set-this-compiler-option-in-the-visual-studio-for-mac-development-environment"></a>Para definir essa opção de compilador no ambiente de desenvolvimento de Visual Studio para Mac  
+  
+1. Abra a página **Opções** do projeto.
+2. Selecione a guia **compilador** .
+3. Selecione **gerar documentação XML** e insira o nome do arquivo na caixa de texto.
+
+Para obter informações sobre como definir essa opção do compilador programaticamente, consulte <xref:VSLangProj80.CSharpProjectConfigurationProperties3.DocumentationFile%2A>.  
+  
+## <a name="see-also"></a>Veja também
+
+- [Opções do compilador de C#](./index.md)
 - [Gerenciando propriedades de solução e de projeto](/visualstudio/ide/managing-project-and-solution-properties)

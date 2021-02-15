@@ -2,12 +2,12 @@
 title: EventCounters no .NET Core
 description: Neste artigo, você aprenderá o que é o EventCounters, como implementá-los e como consumi-los.
 ms.date: 08/07/2020
-ms.openlocfilehash: fc2f945e3de732a81b9ce3fd82eff10e455cae87
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.openlocfilehash: 843f1ec645bf7f52fd4f85e30d183e6e21fee5c6
+ms.sourcegitcommit: 78eb25647b0c750cd80354ebd6ce83a60668e22c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88062958"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99065058"
 ---
 # <a name="eventcounters-in-net-core"></a>EventCounters no .NET Core
 
@@ -15,13 +15,11 @@ ms.locfileid: "88062958"
 
 EventCounters são APIs do .NET Core usadas para coleta de métrica de desempenho leve, de plataforma cruzada e quase em tempo real. EventCounters foram adicionados como uma alternativa de plataforma cruzada aos "contadores de desempenho" do .NET Framework no Windows. Neste artigo, você aprenderá o que são os EventCounters, como implementá-los e como consumi-los.
 
-O tempo de execução do .NET Core e algumas bibliotecas .NET publicam informações básicas de diagnóstico usando EventCounters a partir do .NET Core 3,0. Além dos EventCounters que são fornecidos pelo tempo de execução do .NET, você pode optar por implementar seu próprio EventCounters. EventCounters pode ser usado para controlar várias métricas.
+O tempo de execução do .NET Core e algumas bibliotecas .NET publicam informações básicas de diagnóstico usando EventCounters a partir do .NET Core 3,0. Além dos EventCounters que são fornecidos pelo tempo de execução do .NET, você pode optar por implementar seu próprio EventCounters. EventCounters pode ser usado para controlar várias métricas. Saiba mais sobre eles no [EventCounters bem conhecido no .net](available-counters.md)
 
-EventCounters em tempo real como parte de um <xref:System.Diagnostics.Tracing.EventSource> e são automaticamente enviados para ferramentas de ouvinte regularmente. Assim como todos os outros eventos em um <xref:System.Diagnostics.Tracing.EventSource> , eles podem ser consumidos tanto no processo quanto fora do processo por meio de <xref:System.Diagnostics.Tracing.EventListener> e EventPipe. Este artigo se concentra nos recursos de plataforma cruzada do EventCounters e exclui intencionalmente o PerfView e o ETW (rastreamento de eventos para Windows) – embora ambos possam ser usados com o EventCounters.
+EventCounters em tempo real como parte de um <xref:System.Diagnostics.Tracing.EventSource> e são automaticamente enviados para ferramentas de ouvinte regularmente. Assim como todos os outros eventos em um <xref:System.Diagnostics.Tracing.EventSource> , eles podem ser consumidos tanto no processo quanto fora do processo por meio de <xref:System.Diagnostics.Tracing.EventListener> e [EventPipe](./eventpipe.md). Este artigo se concentra nos recursos de plataforma cruzada do EventCounters e exclui intencionalmente o PerfView e o ETW (rastreamento de eventos para Windows) – embora ambos possam ser usados com o EventCounters.
 
 ![Imagem do diagrama EventCounters no proc e fora do processo](media/event-counters.svg)
-
-[!INCLUDE [available-counters](includes/available-counters.md)]
 
 ## <a name="eventcounter-api-overview"></a>Visão geral da API do EventCounter
 
@@ -61,10 +59,10 @@ dotnet-counters ps
    1400180 sample-counters C:\sample-counters\bin\Debug\netcoreapp3.1\sample-counters.exe
 ```
 
-Passe o <xref:System.Diagnostics.Tracing.EventSource> nome para o `counter_list` comutador para começar a monitorar seu contador:
+Passe o <xref:System.Diagnostics.Tracing.EventSource> nome para a `--counters` opção de iniciar o monitoramento do seu contador:
 
 ```console
-dotnet-counters monitor --process-id 1400180 Sample.EventCounter.Minimal
+dotnet-counters monitor --process-id 1400180 --counters Sample.EventCounter.Minimal
 ```
 
 O exemplo a seguir mostra a saída do monitor:
@@ -103,7 +101,7 @@ var workingSetCounter = new PollingCounter(
 };
 ```
 
-O <xref:System.Diagnostics.Tracing.PollingCounter> relata a quantidade atual de memória física mapeada para o processo (conjunto de trabalho) do aplicativo, já que ele captura uma métrica em um momento no tempo. O retorno de chamada para sondar um valor é a expressão lambda fornecida, que é apenas uma chamada para a <xref:System.Environment.WorkingSet?displayProperty=fullName> API. <xref:System.Diagnostics.Tracing.DiagnosticCounter.DisplayName>e <xref:System.Diagnostics.Tracing.DiagnosticCounter.DisplayUnits> são propriedades opcionais que podem ser definidas para ajudar o lado do consumidor do contador a exibir o valor mais claramente. Por exemplo, [dotnet-Counters](dotnet-counters.md) usa essas propriedades para exibir a versão mais amigável dos nomes dos contadores.
+O <xref:System.Diagnostics.Tracing.PollingCounter> relata a quantidade atual de memória física mapeada para o processo (conjunto de trabalho) do aplicativo, já que ele captura uma métrica em um momento no tempo. O retorno de chamada para sondar um valor é a expressão lambda fornecida, que é apenas uma chamada para a <xref:System.Environment.WorkingSet?displayProperty=fullName> API. <xref:System.Diagnostics.Tracing.DiagnosticCounter.DisplayName> e <xref:System.Diagnostics.Tracing.DiagnosticCounter.DisplayUnits> são propriedades opcionais que podem ser definidas para ajudar o lado do consumidor do contador a exibir o valor mais claramente. Por exemplo, [dotnet-Counters](dotnet-counters.md) usa essas propriedades para exibir a versão mais amigável dos nomes dos contadores.
 
 > [!IMPORTANT]
 > As `DisplayName` Propriedades não estão localizadas.
@@ -144,6 +142,16 @@ O `AddRequest()` método pode ser chamado a partir de um manipulador de solicita
 
 ```csharp
 public void AddRequest() => Interlocked.Increment(ref _requestCount);
+```
+
+Para evitar leituras interrompidas (em arquiteturas de 32 bits) do `long` uso do `_requestCount` campo <xref:System.Threading.Interlocked.Read%2A?displayProperty=nameWithType> .
+
+```csharp
+_requestRateCounter = new IncrementingPollingCounter("request-rate", this, () => Interlocked.Read(ref _requestCount))
+{
+    DisplayName = "Request Rate",
+    DisplayRateTimeScale = TimeSpan.FromSeconds(1)
+};
 ```
 
 ## <a name="consume-eventcounters"></a>Consumir EventCounters
@@ -187,17 +195,17 @@ Você pode consumir os valores do contador por meio da <xref:System.Diagnostics.
 
 Primeiro, o <xref:System.Diagnostics.Tracing.EventSource> que produz o valor do contador precisa ser habilitado. Substitua o <xref:System.Diagnostics.Tracing.EventListener.OnEventSourceCreated%2A?displayProperty=nameWithType> método para obter uma notificação quando um <xref:System.Diagnostics.Tracing.EventSource> for criado e, se esse for o correto <xref:System.Diagnostics.Tracing.EventSource> com seu EventCounters, você poderá chamá <xref:System.Diagnostics.Tracing.EventListener.EnableEvents%2A?displayProperty=nameWithType> -lo. Aqui está um exemplo de substituição:
 
-:::code language="csharp" source="snippets/EventCounters/SimpleEventListener.cs" range="16-27":::
+:::code language="csharp" source="snippets/EventCounters/SimpleEventListener.cs" range="11-22":::
 
 #### <a name="sample-code"></a>Código de exemplo
 
-Aqui está uma classe de exemplo <xref:System.Diagnostics.Tracing.EventListener> que imprime todos os nomes de contadores e valores de tempo de execução do .NET <xref:System.Diagnostics.Tracing.EventSource> , para publicar seus contadores internos ( `System.Runtime` ) em algum intervalo.
+Aqui está uma classe de exemplo <xref:System.Diagnostics.Tracing.EventListener> que imprime todos os nomes de contadores e valores de tempo de execução do .NET <xref:System.Diagnostics.Tracing.EventSource> , para publicar seus contadores internos ( `System.Runtime` ) a cada segundo.
 
 :::code language="csharp" source="snippets/EventCounters/SimpleEventListener.cs":::
 
 Como mostrado acima, você _deve_ verificar se o `"EventCounterIntervalSec"` argumento está definido no `filterPayload` argumento ao chamar <xref:System.Diagnostics.Tracing.EventListener.EnableEvents%2A> . Caso contrário, os contadores não poderão liberar valores, já que ele não sabe em qual intervalo ele deve ser liberado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [dotnet-counters](dotnet-counters.md)
 - [dotnet-trace](dotnet-trace.md)

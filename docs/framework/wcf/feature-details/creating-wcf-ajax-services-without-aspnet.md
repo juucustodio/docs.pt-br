@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: criando serviços WCF AJAX sem ASP.NET'
 title: Criando serviços WCF AJAX sem ASP.NET
 ms.date: 03/30/2017
 ms.assetid: ba4a7d1b-e277-4978-9f62-37684e6dc934
-ms.openlocfilehash: b5f0f730f90227dcccc7e5ebf533d80a28f6e6eb
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 98171a67b3dd2f267edf2281396bb0da1858b0b2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599289"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99705142"
 ---
 # <a name="creating-wcf-ajax-services-without-aspnet"></a>Criando serviços WCF AJAX sem ASP.NET
+
 Os serviços do Windows Communication Foundation (WCF) AJAX podem ser acessados em qualquer página da Web habilitada para JavaScript, sem a necessidade do AJAX ASP.NET. Este tópico descreve como criar um serviço WCF desse tipo.  
   
  Para obter instruções sobre como usar o WCF com o ASP.NET AJAX, consulte [CREATING WCF Services for ASP.NET AJAX](creating-wcf-services-for-aspnet-ajax.md).  
@@ -23,6 +25,7 @@ Os serviços do Windows Communication Foundation (WCF) AJAX podem ser acessados 
 - Acessando os serviços WCF AJAX.  
   
 ## <a name="creating-an-ajax-endpoint"></a>Criando um ponto de extremidade AJAX  
+
  A maneira mais básica de habilitar o suporte a AJAX em um serviço WCF é usar o <xref:System.ServiceModel.Activation.WebServiceHostFactory> no arquivo. svc associado ao serviço, como no exemplo a seguir.  
   
 ```text
@@ -61,7 +64,8 @@ Os serviços do Windows Communication Foundation (WCF) AJAX podem ser acessados 
   
  Para obter um exemplo funcional, consulte o [serviço AJAX com JSON e XML](../samples/ajax-service-with-json-and-xml-sample.md).  
   
-## <a name="creating-an-ajax-compatible-service-contract"></a>Criando um contrato de serviço compatível com AJAX  
+## <a name="creating-an-ajax-compatible-service-contract"></a>Criando um contrato de serviço de AJAX-Compatible  
+
  Por padrão, os contratos de serviço expostos em um ponto de extremidade AJAX retornam dados no formato XML. Além disso, por padrão, as operações de serviço são acessíveis por meio de solicitações HTTP POST para URLs que incluem o endereço do ponto de extremidade seguido pelo nome da operação, conforme mostrado no exemplo a seguir.  
   
 ```csharp
@@ -102,6 +106,7 @@ string[] GetCities(string firstLetters, int maxNumber);
 ```  
   
 ## <a name="accessing-ajax-services"></a>Acessando serviços AJAX  
+
  Os pontos de extremidade do WCF AJAX sempre aceitam solicitações JSON e XML.  
   
  As solicitações HTTP POST com um tipo de conteúdo de "Application/JSON" são tratadas como JSON, e aquelas com Content-Type que indicam XML (por exemplo, "text/xml") são tratadas como XML.  

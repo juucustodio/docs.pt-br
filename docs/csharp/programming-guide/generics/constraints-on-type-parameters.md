@@ -7,20 +7,20 @@ helpviewer_keywords:
 - type constraints [C#]
 - type parameters [C#], constraints
 - unbound type parameter [C#]
-ms.openlocfilehash: 91807fa05ce49b8507ee6913ff2620452fcbfab5
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: 8230dfed11bb4ba21e922827cc1a525ce45ba3e5
+ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87301938"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96599109"
 ---
 # <a name="constraints-on-type-parameters-c-programming-guide"></a>Restrições a parâmetros de tipo (Guia de Programação em C#)
 
-Restrições informam o compilador sobre as funcionalidades que um argumento de tipo deve ter. Sem nenhuma restrição, o argumento de tipo poderia ser qualquer tipo. O compilador pode assumir somente os membros de <xref:System.Object?displayProperty=nameWithType>, que é a classe base definitiva para qualquer tipo .NET. Para obter mais informações, consulte [Por que usar restrições](#why-use-constraints). Se o código do cliente usar um tipo que não atenda a uma restrição, o compilador emitirá um erro. Restrições são especificadas usando a palavra-chave contextual `where`. A tabela a seguir lista os sete tipos de restrições:
+Restrições informam o compilador sobre as funcionalidades que um argumento de tipo deve ter. Sem nenhuma restrição, o argumento de tipo poderia ser qualquer tipo. O compilador pode assumir somente os membros de <xref:System.Object?displayProperty=nameWithType>, que é a classe base definitiva para qualquer tipo .NET. Para obter mais informações, consulte [Por que usar restrições](#why-use-constraints). Se o código do cliente usar um tipo que não atenda a uma restrição, o compilador emitirá um erro. Restrições são especificadas usando a palavra-chave contextual `where`. A tabela a seguir lista os vários tipos de restrições:
 
 |Constraint|Descrição|
 |----------------|-----------------|
-|`where T : struct`|O argumento de tipo deve ser um tipo de valor não anulável. Para obter informações sobre tipos de valor anulável, consulte [tipos de valor anulável](../../language-reference/builtin-types/nullable-value-types.md). Como todos os tipos de valor têm um construtor acessível sem parâmetros, a `struct` restrição implica a `new()` restrição e não pode ser combinada com a `new()` restrição. Não é possível combinar a `struct` restrição com a `unmanaged` restrição.|
+|`where T : struct`|O argumento de tipo deve ser um tipo de [valor](../../language-reference/builtin-types/value-types.md)não anulável. Para obter informações sobre tipos de valor anulável, consulte [tipos de valor anulável](../../language-reference/builtin-types/nullable-value-types.md). Como todos os tipos de valor têm um construtor acessível sem parâmetros, a `struct` restrição implica a `new()` restrição e não pode ser combinada com a `new()` restrição. Não é possível combinar a `struct` restrição com a `unmanaged` restrição.|
 |`where T : class`|O argumento de tipo deve ser um tipo de referência. Essa restrição se aplica também a qualquer classe, interface, delegado ou tipo de matriz. Em um contexto anulável no C# 8,0 ou posterior, `T` deve ser um tipo de referência não anulável. |
 |`where T : class?`|O argumento de tipo deve ser um tipo de referência, anulável ou não anulável. Essa restrição se aplica também a qualquer classe, interface, delegado ou tipo de matriz.|
 |`where T : notnull`|O argumento de tipo deve ser um tipo não anulável. O argumento pode ser um tipo de referência não anulável em C# 8,0 ou posterior, ou um tipo de valor não anulável. |
@@ -29,7 +29,7 @@ Restrições informam o compilador sobre as funcionalidades que um argumento de 
 |`where T :` *\<base class name>*|O argumento de tipo deve ser ou derivar da classe base especificada. Em um contexto anulável no C# 8,0 e posterior, `T` deve ser um tipo de referência não anulável derivado da classe base especificada. |
 |`where T :` *\<base class name>?*|O argumento de tipo deve ser ou derivar da classe base especificada. Em um contexto anulável no C# 8,0 e posterior, `T` pode ser um tipo anulável ou não anulável derivado da classe base especificada. |
 |`where T :` *\<interface name>*|O argumento de tipo deve ser ou implementar a interface especificada. Várias restrições de interface podem ser especificadas. A interface de restrição também pode ser genérica. Em um contexto anulável no C# 8,0 e posterior, `T` deve ser um tipo não anulável que implementa a interface especificada.|
-|`where T :` *\<interface name>?*|O argumento de tipo deve ser ou implementar a interface especificada. Várias restrições de interface podem ser especificadas. A interface de restrição também pode ser genérica. Em um contexto anulável no C# 8,0, `T` pode ser um tipo de referência anulável, um tipo de referência não anulável ou um tipo de valor. `T`Não pode ser um tipo de valor anulável.|
+|`where T :` *\<interface name>?*|O argumento de tipo deve ser ou implementar a interface especificada. Várias restrições de interface podem ser especificadas. A interface de restrição também pode ser genérica. Em um contexto anulável no C# 8,0, `T` pode ser um tipo de referência anulável, um tipo de referência não anulável ou um tipo de valor. `T` Não pode ser um tipo de valor anulável.|
 |`where T : U`|O argumento de tipo fornecido para `T` deve ser ou derivado do argumento fornecido para `U` . Em um contexto anulável, se `U` for um tipo de referência não anulável, `T` deverá ser um tipo de referência não anulável. Se `U` for um tipo de referência anulável, `T` poderá ser anulável ou não anulável. |
 
 ## <a name="why-use-constraints"></a>Por que usar restrições
@@ -114,7 +114,7 @@ Começando com o C# 7.3, você também pode especificar o tipo <xref:System.Enum
 
 [!code-csharp[using the enum constraint](snippets/GenericWhereConstraints.cs#18)]
 
-`Enum.GetValues`e `Enum.GetName` usar reflexão, que tem implicações de desempenho. Você pode chamar `EnumNamedValues` para criar uma coleção que é armazenada em cache e reutilizada em vez de repetir as chamadas que exigem reflexão.
+`Enum.GetValues` e `Enum.GetName` usar reflexão, que tem implicações de desempenho. Você pode chamar `EnumNamedValues` para criar uma coleção que é armazenada em cache e reutilizada em vez de repetir as chamadas que exigem reflexão.
 
 Você pode usá-lo conforme mostrado no exemplo a seguir para criar uma enum e compilar um dicionário de seus nomes e valores:
 
@@ -122,7 +122,7 @@ Você pode usá-lo conforme mostrado no exemplo a seguir para criar uma enum e c
 
 [!code-csharp[using the enum constrained method](snippets/GenericWhereConstraints.cs#20)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.Collections.Generic>
 - [Guia de programação C#](../index.md)

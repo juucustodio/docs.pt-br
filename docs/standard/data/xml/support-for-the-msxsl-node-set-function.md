@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: suporte para a função msxsl: node-set ()'
 title: Suporte à função msxsl:node-set()
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 ms.assetid: d0cbf517-d9f6-4097-9851-4fa62903decd
-ms.openlocfilehash: 747a0ff8c155f7635d5a6d2ebc76f287cf8646d4
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: cd9f02dbfdd400b182c95453de5f49e43ee0b2aa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291442"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782917"
 ---
 # <a name="support-for-the-msxslnode-set-function"></a>Suporte à função msxsl:node-set()
+
 A função `msxsl:node-set` permite que você converta um fragmento da árvore de resultados em um conjunto de nós. O conjunto de nós resultante sempre contém um único nó e é o nó raiz da árvore.  
   
 > [!NOTE]
@@ -19,7 +20,8 @@ A função `msxsl:node-set` permite que você converta um fragmento da árvore d
  A função `msxsl:node-set` permite que você converta um fragmento da árvore de resultados em um conjunto de nós. O conjunto de nós resultante sempre contém um único nó e é o nó raiz da árvore.  
   
 ## <a name="example"></a>Exemplo  
- No exemplo a seguir, `$var` é uma variável que é uma árvore de nós na folha de estilos. A instrução for-each combinada com a função `node-set` permite que o usuário itere sobre essa árvore de nós como um conjunto de nós.  
+
+ No exemplo a seguir, `$books` é uma variável que é uma árvore de nós na folha de estilos. A instrução for-each combinada com a função `node-set` permite que o usuário itere sobre essa árvore de nós como um conjunto de nós.  
   
 ## <a name="nodesetxsl"></a>nodeset.xsl  
   
@@ -44,6 +46,7 @@ A função `msxsl:node-set` permite que você converta um fragmento da árvore d
 ```  
   
 ## <a name="output"></a>Saída  
+
  A saída da transformação é  
   
 ```xml  
@@ -51,6 +54,6 @@ A função `msxsl:node-set` permite que você converta um fragmento da árvore d
 <authors><author>Michael Howard</author><author>Michael Kay</author></authors>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [A classe XslTransform implementa do processador XSLT](xsltransform-class-implements-the-xslt-processor.md)

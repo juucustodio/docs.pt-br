@@ -1,16 +1,18 @@
 ---
+description: 'Saiba mais sobre: <x509SecurityTokenHandlerRequirement>'
 title: <x509SecurityTokenHandlerRequirement>
 ms.date: 03/30/2017
 ms.assetid: aca22c2c-5ae7-42af-9bbd-15c2524692ce
 author: BrucePerlerMS
-ms.openlocfilehash: 30ce69a35cfdd34e0dfea5c682347eb9187e04ed
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 21a05cfeee6365bd677a6f35e984cb64fa4dd078
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79152444"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99748967"
 ---
 # \<x509SecurityTokenHandlerRequirement>
+
 Fornece a configuração opcional para a <xref:System.IdentityModel.Tokens.X509SecurityTokenHandler> classe ou classes derivadas.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,7 +22,7 @@ Fornece a configuração opcional para a <xref:System.IdentityModel.Tokens.X509S
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<add>**](add.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<x509SecurityTokenHandlerRequirement>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.identityModel>  
@@ -41,6 +43,7 @@ Fornece a configuração opcional para a <xref:System.IdentityModel.Tokens.X509S
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -54,6 +57,7 @@ Fornece a configuração opcional para a <xref:System.IdentityModel.Tokens.X509S
 |certificateValidator|Um tipo personalizado que deriva de <xref:System.IdentityModel.Selectors.X509CertificateValidator> . Se o `certificateValidationMode` atributo for "Custom", uma instância desse tipo será usada para validação do certificado do emissor.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum  
   
 ### <a name="parent-elements"></a>Elementos pai  

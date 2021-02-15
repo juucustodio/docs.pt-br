@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função GetCORSystemDirectory'
 title: Função GetCORSystemDirectory
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 3dcd16a7-dafc-4ca8-b5cd-20ffb37db91d
 topic_type:
 - apiref
-ms.openlocfilehash: 137b2e30916cb1934d4389c5668bfb7eb5066064
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 267736c2f8cdea03fbd9f77108a3d88193830ab4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83617224"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785335"
 ---
 # <a name="getcorsystemdirectory-function"></a>Função GetCORSystemDirectory
+
 Retorna o diretório de instalação do Common Language Runtime (CLR) que é carregado no processo. O diretório de instalação é totalmente qualificado, por exemplo, "c:\Windows\Microsoft.NET\Framework\v1.0.3705".  
   
  Esta função é preterida. Ele é substituído pelo método [ICLRRuntimeInfo:: GetRuntimeDirectory](iclrruntimeinfo-getruntimedirectory-method.md) fornecido no .NET Framework 4.  
@@ -38,6 +40,7 @@ HRESULT GetCORSystemDirectory (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pbuffer`  
  fora Um buffer no qual o tempo de execução retorna uma cadeia de caracteres que contém o nome totalmente qualificado do diretório de instalação para o tempo de execução que é carregado no processo. Se o tempo de execução ainda não tiver sido carregado no processo, a função retornará as informações de diretório apropriadas para a versão mais recente do tempo de execução instalada no computador.  
   
@@ -53,14 +56,15 @@ HRESULT GetCORSystemDirectory (
 > Não use essa função em processos que estejam executando a versão 4 do CLR. Se uma versão anterior do CLR estiver instalada no computador, essa função retornará o diretório de instalação para essa versão.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** MSCorEE. dll  
+ **Biblioteca:** MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Funções de hospedagem CLR reprovadas](deprecated-clr-hosting-functions.md)

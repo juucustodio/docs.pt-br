@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <add> de <baseAddressPrefixFilter>'
 title: <add> de <baseAddressPrefixFilter>
 ms.date: 03/30/2017
 ms.assetid: b226bede-8459-4de9-b2ac-3d39604ce2bc
-ms.openlocfilehash: 2572a6ee6763ae26fe5c56669e10f8c9aef8a280
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: f3abdf59223921a56c96e02dd95babc54f91dc03
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88811789"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99804043"
 ---
 # <a name="add-of-baseaddressprefixfilter"></a>\<add> de \<baseAddressPrefixFilter>
+
 Representa um elemento de configuração que especifica um filtro de passagem, que fornece um mecanismo para escolher as associações de Serviços de Informações da Internet (IIS) apropriadas ao hospedar um aplicativo de Windows Communication Foundation (WCF) no IIS.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -18,7 +20,7 @@ Representa um elemento de configuração que especifica um filtro de passagem, q
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<baseAddressPrefixFilters>**](baseaddressprefixfilters.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <serviceHostingEnvironment>
@@ -29,6 +31,7 @@ Representa um elemento de configuração que especifica um filtro de passagem, q
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -38,6 +41,7 @@ Representa um elemento de configuração que especifica um filtro de passagem, q
 |prefixo|Um URI que é usado para corresponder a uma parte de um endereço base.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -47,6 +51,7 @@ Representa um elemento de configuração que especifica um filtro de passagem, q
 |[\<baseAddressPrefixFilters>](baseaddressprefixfilters.md)|Uma coleção de elementos de configuração que especificam filtros de passagem, que fornecem um mecanismo para escolher as associações do IIS apropriadas ao hospedar um aplicativo de Windows Communication Foundation (WCF) no IIS.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Um filtro de prefixo fornece uma maneira de provedores de hospedagem compartilhados especificar quais URIs devem ser usados pelo serviço. Ele permite que hosts compartilhados hospedem vários aplicativos com endereços base diferentes para o mesmo esquema no mesmo site.  
   
  Os sites da Web do IIS são contêineres para aplicativos virtuais que contêm diretórios virtuais. O aplicativo em um site pode ser acessado por meio de uma ou mais associações do IIS. As associações do IIS fornecem duas informações: vinculação de protocolo e informações de associação. O protocolo de associação (por exemplo, HTTP) define o esquema sobre o qual ocorre a comunicação e as informações de associação (por exemplo, endereço IP, porta, cabeçalho) contêm os dados usados para acessar o site.  
@@ -80,9 +85,9 @@ http://test2.fabrikam.com/Service.svc
 > [!NOTE]
 > O filtro não oferece suporte a caracteres curinga. Além disso, os baseAddresss fornecidos pelo IIS podem ter endereços associados a outros esquemas que não estão presentes na `baseAddressPrefixFilters` lista. Esses endereços não são filtrados.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.BaseAddressPrefixFilterElement>
 - <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>
 - <xref:System.ServiceModel.ServiceHostingEnvironment>
-- [Hosting](../../../wcf/feature-details/hosting.md)
+- [Hospedagem](../../../wcf/feature-details/hosting.md)

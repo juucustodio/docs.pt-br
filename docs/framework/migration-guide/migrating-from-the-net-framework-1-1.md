@@ -6,12 +6,12 @@ helpviewer_keywords:
 - .NET Framework 4.5, migrating from 1.1
 - .NET Framework 1.1, migrating to .NET Framework 4.5
 ms.assetid: 7ead0cb3-3b19-414a-8417-a1c1fa198d9e
-ms.openlocfilehash: f2b0e21ff5dbeab3395335f52799629859fb2d90
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: 7312de7d812aa714447a60f5aa04cb48890e40e8
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86475262"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90553721"
 ---
 # <a name="migrate-from-the-net-framework-11"></a>Migrar do .NET Framework 1,1
 
@@ -35,15 +35,15 @@ Há duas maneiras de obter um aplicativo que foi compilado usando o .NET Framewo
 
 Independentemente de preferir recompilar ou redirecionar seu aplicativo, você deve determinar se o aplicativo é afetado por alguma alterações introduzida em versões posteriores do .NET Framework. Essas alterações são de dois tipos:
 
-- Alterações significativas ocorridas entre o .NET Framework 1.1 e as versões posteriores do .NET Framework.
+- Alterações interruptivas ocorridas entre o .NET Framework 1.1 e as versões posteriores do .NET Framework.
 
 - Tipos e membros do tipo que foram marcados como preteridos ou obsoletos entre o .NET Framework 1.1 e versões posteriores do .NET Framework.
 
-Se redirecionar seu aplicativo ou recompilá-lo, você deverá examinar as alterações significativas e os tipos e membros obsoletos de cada versão do .NET Framework liberada após o .NET Framework 1.1.
+Se redirecionar seu aplicativo ou recompilá-lo, você deverá examinar as alterações interruptivas e os tipos e membros obsoletos de cada versão do .NET Framework liberada após o .NET Framework 1.1.
 
-## <a name="breaking-changes"></a>Alterações de quebra
+## <a name="breaking-changes"></a>Alterações interruptivas
 
-Quando ocorre uma alteração significativa, dependendo da alteração específica, a solução desse problema pode estar disponível tanto para aplicativos redestinados como para recompilados. Em alguns casos, você pode adicionar um elemento filho ao [\<runtime>](../configure-apps/file-schema/startup/supportedruntime-element.md) elemento do arquivo de configuração do aplicativo para restaurar o comportamento anterior. Por exemplo, o arquivo de configuração a seguir restaura a classificação da cadeia de caracteres e o comportamento de comparação usados no .NET Framework 1.1 e pode ser usado com um aplicativo redirecionado ou recompilado.
+Quando ocorre uma alteração interruptiva, dependendo da alteração específica, a solução desse problema pode estar disponível tanto para aplicativos redestinados como para recompilados. Em alguns casos, você pode adicionar um elemento filho ao [\<runtime>](../configure-apps/file-schema/startup/supportedruntime-element.md) elemento do arquivo de configuração do aplicativo para restaurar o comportamento anterior. Por exemplo, o arquivo de configuração a seguir restaura a classificação da cadeia de caracteres e o comportamento de comparação usados no .NET Framework 1.1 e pode ser usado com um aplicativo redirecionado ou recompilado.
 
 ```xml
 <configuration>
@@ -55,11 +55,11 @@ Quando ocorre uma alteração significativa, dependendo da alteração específi
 
 No entanto, em alguns casos, você talvez tenha que modificar o código-fonte e recompilar seu aplicativo.
 
-Para avaliar o impacto de alterações significativas possíveis em seu aplicativo, você deve examinar a seguinte lista de alterações:
+Para avaliar o impacto de alterações interruptivas possíveis em seu aplicativo, você deve examinar a seguinte lista de alterações:
 
-- [Alterações significativas no .NET Framework 2.0](https://docs.microsoft.com/previous-versions/aa570326(v=msdn.10)) documenta alterações no .NET Framework 2.0 SP1 que podem afetar um aplicativo destinado ao .NET Framework 1.1.
+- [Alterações interruptivas no .NET Framework 2.0](/previous-versions/aa570326(v=msdn.10)) documenta alterações no .NET Framework 2.0 SP1 que podem afetar um aplicativo destinado ao .NET Framework 1.1.
 
-- [Alterações no .NET Framework 3.5 SP1](https://docs.microsoft.com/previous-versions/dotnet/articles/dd310284(v=msdn.10)) documenta alterações entre o NET Framework 3.5 e o .NET Framework 3.5 SP1.
+- [Alterações no .NET Framework 3.5 SP1](/previous-versions/dotnet/articles/dd310284(v=msdn.10)) documenta alterações entre o NET Framework 3.5 e o .NET Framework 3.5 SP1.
 
 - [Problemas de migração do .NET Framework 4](net-framework-4-migration-issues.md) documenta alterações entre o .NET Framework 3.5 SP1 e o .NET Framework 4.
 

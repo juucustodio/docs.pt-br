@@ -2,19 +2,19 @@
 title: Padrões de resiliência de aplicativo
 description: Arquitetando aplicativos .NET nativos da nuvem para o Azure | Padrões de resiliência do aplicativo
 author: robvet
-ms.date: 05/13/2020
-ms.openlocfilehash: bb72e47704c833a2ce86f103a66b0414ce3a37ff
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.date: 01/19/2021
+ms.openlocfilehash: 655df16ef58f1deb2d2f4d0487c47658499f2108
+ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83614312"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99547714"
 ---
 # <a name="application-resiliency-patterns"></a>Padrões de resiliência de aplicativo
 
 A primeira linha de defesa é a resiliência do aplicativo.
 
-Embora você possa investir um tempo considerável escrevendo sua própria estrutura de resiliência, esses produtos já existem. O [Polly](http://www.thepollyproject.org/) é uma biblioteca abrangente de resiliência do .net e tratamento transitório de falhas que permite aos desenvolvedores expressar políticas de resiliência de uma maneira fluente e thread-safe. O Polly tem como alvo aplicativos criados com o .NET Framework ou o .NET Core. A tabela a seguir descreve os recursos de resiliência, chamados `policies` , disponíveis na biblioteca Polly. Eles podem ser aplicados individualmente ou agrupados juntos.
+Embora você possa investir um tempo considerável escrevendo sua própria estrutura de resiliência, esses produtos já existem. O [Polly](https://dotnetfoundation.org/projects/polly) é uma biblioteca abrangente de resiliência do .net e tratamento transitório de falhas que permite aos desenvolvedores expressar políticas de resiliência de uma maneira fluente e thread-safe. O Polly tem como alvo aplicativos criados com o .NET Framework ou o .NET 5. A tabela a seguir descreve os recursos de resiliência, chamados `policies` , disponíveis na biblioteca Polly. Eles podem ser aplicados individualmente ou agrupados juntos.
 
 | Política | Experiência |
 | :-------- | :-------- |
@@ -33,12 +33,12 @@ Observe como, na figura anterior, as políticas de resiliência se aplicam a men
 | 408 | Tempo limite da solicitação |
 | 429 | Muitas solicitações (você provavelmente foi limitado) |
 | 502 | Gateway inválido |
-| 503 | Serviço não disponível |
+| 503 | Serviço indisponível |
 | 504 | Tempo limite do gateway |
 
 Pergunta: você tentaria novamente um código de status HTTP de 403-Proibido? Não. Aqui, o sistema está funcionando corretamente, mas informando ao chamador que eles não estão autorizados a executar a operação solicitada. Deve-se ter cuidado para repetir apenas as operações causadas por falhas.
 
-Como recomendado no capítulo 1, os desenvolvedores da Microsoft que constroem aplicativos nativos de nuvem devem visar a plataforma .NET Core. A versão 2,1 introduziu a biblioteca [HTTPClientFactory](https://www.stevejgordon.co.uk/introduction-to-httpclientfactory-aspnetcore) para criar instâncias de cliente http para interagir com recursos baseados em URL. Substituindo a classe HTTPClient original, a classe Factory dá suporte a muitos recursos avançados, um dos quais é uma [integração total](../microservices/implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly.md) com a biblioteca de resiliência Polly. Com ele, você pode definir facilmente políticas de resiliência na classe de inicialização do aplicativo para lidar com falhas parciais e problemas de conectividade.
+Como recomendado no capítulo 1, os desenvolvedores da Microsoft que constroem aplicativos nativos de nuvem devem visar a plataforma .NET. A versão 2,1 introduziu a biblioteca [HTTPClientFactory](https://www.stevejgordon.co.uk/introduction-to-httpclientfactory-aspnetcore) para criar instâncias de cliente http para interagir com recursos baseados em URL. Substituindo a classe HTTPClient original, a classe Factory dá suporte a muitos recursos avançados, um dos quais é uma [integração total](../microservices/implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly.md) com a biblioteca de resiliência Polly. Com ele, você pode definir facilmente políticas de resiliência na classe de inicialização do aplicativo para lidar com falhas parciais e problemas de conectividade.
 
 Em seguida, vamos expandir em padrões de repetição e de disjuntor.
 
@@ -46,7 +46,7 @@ Em seguida, vamos expandir em padrões de repetição e de disjuntor.
 
 Em um ambiente de nuvem nativa distribuída, as chamadas para serviços e recursos de nuvem podem falhar devido a falhas transitórias (de curta duração), que normalmente se corrigem após um breve período de tempo. A implementação de uma estratégia de repetição ajuda um serviço nativo de nuvem a mitigar esses cenários.
 
-O [padrão de repetição](https://docs.microsoft.com/azure/architecture/patterns/retry) permite que um serviço Repita uma operação de solicitação com falha a um número (configurável) de vezes com um tempo de espera crescente exponencialmente. A Figura 6-2 mostra uma nova tentativa em ação.
+O [padrão de repetição](/azure/architecture/patterns/retry) permite que um serviço Repita uma operação de solicitação com falha a um número (configurável) de vezes com um tempo de espera crescente exponencialmente. A Figura 6-2 mostra uma nova tentativa em ação.
 
 ![Padrão de repetição em ação](./media/retry-pattern.png)
 
@@ -70,7 +70,7 @@ Para piorar as coisas, a execução de operações contínuas de repetição em 
 
 Nessas situações, seria preferível para a operação falhar imediatamente e tentar invocar o serviço apenas se for provável que tenha êxito.
 
-O [padrão de disjuntor](https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker) pode impedir que um aplicativo tente executar repetidamente uma operação que provavelmente falhará. Após um número predefinido de chamadas com falha, ele bloqueia todo o tráfego para o serviço. Periodicamente, ele permitirá uma chamada de avaliação para determinar se a falha foi resolvida. A Figura 6-3 mostra o padrão de disjuntor em ação.
+O [padrão de disjuntor](/azure/architecture/patterns/circuit-breaker) pode impedir que um aplicativo tente executar repetidamente uma operação que provavelmente falhará. Após um número predefinido de chamadas com falha, ele bloqueia todo o tráfego para o serviço. Periodicamente, ele permitirá uma chamada de avaliação para determinar se a falha foi resolvida. A Figura 6-3 mostra o padrão de disjuntor em ação.
 
 ![Padrão de disjuntor em ação](./media/circuit-breaker-pattern.png)
 
@@ -82,7 +82,7 @@ Tenha em mente que a intenção do padrão de disjuntor é *diferente* daquela d
 
 ## <a name="testing-for-resiliency"></a>Teste de resiliência
 
-O teste de resiliência nem sempre pode ser feito da mesma maneira que você testa a funcionalidade do aplicativo (executando testes de unidade, testes de integração e assim por diante). Em vez disso, deve-se testar a execução da carga de trabalho de ponta a ponta sob condições de falha intermitentes. Por exemplo: injetar falhas ao travar processos, certificados expirados, tornar os serviços dependentes indisponíveis etc. Estruturas como o [caos – o macaco](https://github.com/Netflix/chaosmonkey) pode ser usado para esses testes de caos.
+O teste de resiliência nem sempre pode ser feito da mesma maneira que você testa a funcionalidade do aplicativo (executando testes de unidade, testes de integração e assim por diante). Em vez disso, você deve testar como a carga de trabalho de ponta a ponta é executada sob condições de falha, o que ocorre apenas intermitentemente. Por exemplo: injetar falhas ao travar processos, certificados expirados, tornar os serviços dependentes indisponíveis etc. Estruturas como o [caos – o macaco](https://github.com/Netflix/chaosmonkey) pode ser usado para esses testes de caos.
 
 A resiliência do aplicativo é necessária para lidar com operações solicitadas problemáticas. Mas, é apenas metade da história. Em seguida, abordamos os recursos de resiliência disponíveis na nuvem do Azure.
 

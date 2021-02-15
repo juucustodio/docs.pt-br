@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 1037-RuntimeTransactionComplete'
 title: 1037 - RuntimeTransactionComplete
 ms.date: 03/30/2017
 ms.assetid: 2c8c31e0-42a9-4f46-865b-2da9ab16a0ba
-ms.openlocfilehash: 7a94c917157904c5cb84105c41842657a534c973
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 5784dc1b0eede5ddad0e6aae4cb79c6e859f325e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61924287"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667857"
 ---
 # <a name="1037---runtimetransactioncomplete"></a>1037 - RuntimeTransactionComplete
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,10 +22,12 @@ ms.locfileid: "61924287"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
- Indica que a transação de tempo de execução terminado.  
+
+ Indica que a transação de runtime terminado.  
   
 ## <a name="message"></a>Mensagem  
- A transação de tempo de execução terminou com o estado “%1 ".  
+
+ A transação de runtime terminou com o estado “%1 ".  
   
 ## <a name="details"></a>Detalhes  
   

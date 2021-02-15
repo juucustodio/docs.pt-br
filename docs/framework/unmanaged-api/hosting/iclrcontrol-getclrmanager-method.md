@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRControl:: GetCLRManager'
 title: Método ICLRControl::GetCLRManager
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 8a11bfa4-cbb0-4082-82b5-f9fba66c93f5
 topic_type:
 - apiref
-ms.openlocfilehash: 04cb45cd021532b6cb3d74a195cbd62e1ab8d31d
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: fc24cbdfd4bebfff5c2f8d73a9cd6961a8c94e94
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615846"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99716712"
 ---
 # <a name="iclrcontrolgetclrmanager-method"></a>Método ICLRControl::GetCLRManager
+
 Obtém um ponteiro de interface para uma instância de qualquer um dos tipos de Gerenciador que o host pode usar para configurar o Common Language Runtime (CLR).  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,6 +37,7 @@ HRESULT GetCLRManager (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `riid`  
  no O `IID` do tipo de Gerenciador a ser retornado. Há `IID` suporte para os valores a seguir.  
   
@@ -68,15 +71,16 @@ HRESULT GetCLRManager (
 |E_NOINTERFACE|Não há suporte para o tipo de interface.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRControl](iclrcontrol-interface.md)
 - [Interface IHostControl](ihostcontrol-interface.md)

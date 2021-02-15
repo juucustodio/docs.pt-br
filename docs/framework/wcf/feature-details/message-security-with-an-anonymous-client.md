@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: segurança de mensagem com um cliente anônimo'
 title: Mensagem de segurança com um cliente anônimo
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: cad53e1a-b7c9-4064-bc87-508c3d1dce49
-ms.openlocfilehash: 058163c96bba036c3183695bf986b4d0424271ac
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 921ddd9e8e7d2a860f3516c452870bc2bb150911
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595213"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726969"
 ---
 # <a name="message-security-with-an-anonymous-client"></a>Mensagem de segurança com um cliente anônimo
 
@@ -144,4 +145,4 @@ O código a seguir configura o cliente.
 - [Segurança de aplicativos distribuídos](distributed-application-security.md)
 - [Segurança de mensagem anônima](../samples/message-security-anonymous.md)
 - [Identidade e autenticação de serviço](service-identity-and-authentication.md)
-- [Modelo de segurança para o Windows Server app Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Modelo de segurança para o Windows Server app Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Resumo de diretórios e arquivos (Visual Basic)'
 title: Resumo de diretórios e arquivos
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,14 +7,15 @@ helpviewer_keywords:
 - directories [Visual Basic], Visual Basic
 - files [Visual Basic], summary
 ms.assetid: 588b75fd-a09b-4381-822d-19868990c170
-ms.openlocfilehash: c4429d58d2f089b86f5c32c1f3ce8353b02880c4
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 4f0d05cfa94076e1619748042faca61008a3a1c8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84373870"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99730740"
 ---
 # <a name="directories-and-files-summary-visual-basic"></a>Resumo de diretórios e arquivos (Visual Basic)
+
 As palavras-chave do idioma Visual Basic e os membros da biblioteca de tempo de execução são organizados por finalidade e uso.  
   
  O uso do `My` recurso proporciona maior produtividade e desempenho em operações de e/s de arquivo do que usar esses membros. Para obter mais informações, consulte <xref:Microsoft.VisualBasic.FileIO.FileSystem>.  
@@ -33,7 +35,7 @@ As palavras-chave do idioma Visual Basic e os membros da biblioteca de tempo de 
 |Retornar o nome ou o rótulo de volume de um arquivo.|<xref:Microsoft.VisualBasic.FileSystem.Dir%2A>|  
 |Definir informações de atributo para um arquivo.|<xref:Microsoft.VisualBasic.FileSystem.SetAttr%2A>|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Palavras-chave](index.md)
 - [Membros da Biblioteca de Runtime do Visual Basic](../runtime-library-members.md)

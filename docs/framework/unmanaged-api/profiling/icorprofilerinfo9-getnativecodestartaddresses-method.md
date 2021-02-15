@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo9:: GetNativeCodeStartAddresses'
 title: ICorProfilerInfo9::GetNativeCodeStartAddresses
 ms.date: 08/06/2019
 dev_langs:
@@ -11,12 +12,12 @@ api_type:
 - COM
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: 99706fdc3d60a5e1a7f85400c1184d5acc808e42
-ms.sourcegitcommit: 700ea803fb06c5ce98de017c7f76463ba33ff4a9
+ms.openlocfilehash: 1ca686cef4a45ebb9e05190fa790ed5300c0d816
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77449719"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646485"
 ---
 # <a name="icorprofilerinfo9getnativecodestartaddresses-method"></a>Método ICorProfilerInfo9:: GetNativeCodeStartAddresses
 
@@ -32,19 +33,19 @@ HRESULT GetNativeCodeStartAddresses( [in]  FunctionID functionID,
                                      [out] UINT_PTR codeStartAddresses[]);
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
 - `functionId`
 
-  \[em] a ID da função cujos endereços de início de código nativo devem ser retornados.
+  \[in] a ID da função cujos endereços de início de código nativo devem ser retornados.
 
 - `reJitId`
 
-  \[em] a identidade da função de compilação JIT recompilada.
+  \[in] a identidade da função de compilação JIT recompilada.
 
 - `cCodeStartAddresses`
 
-  \[em] o tamanho máximo da matriz de `codeStartAddresses`.
+  \[in] o tamanho máximo da `codeStartAddresses` matriz.
 
 - `pcCodeStartAddresses`
 
@@ -52,7 +53,7 @@ HRESULT GetNativeCodeStartAddresses( [in]  FunctionID functionID,
 
 - `codeStartAddresses`
 
-  \[out] uma matriz de `UINT_PTR`, cada uma delas é o endereço inicial de um corpo nativo para a função especificada.
+  \[out] uma matriz de `UINT_PTR` , cada uma delas é o endereço inicial de um corpo nativo para a função especificada.
 
 ## <a name="remarks"></a>Comentários
 
@@ -60,14 +61,14 @@ Quando a compilação em camadas está habilitada, uma função pode ter mais de
 
 ## <a name="requirements"></a>Requisitos
 
-**Plataformas:** Consulte [sistemas operacionais com suporte do .NET Core](../../../core/install/dependencies.md?pivots=os-windows).
+**Plataformas:** Consulte [sistemas operacionais com suporte do .NET Core](../../../core/install/windows.md?pivots=os-windows).
 
 **Cabeçalho:** CorProf. idl, CorProf. h
 
 **Biblioteca:** CorGuids.lib
 
-**Versões do .net:** [!INCLUDE[net_core_22](../../../../includes/net-core-22-md.md)]
+**Versões do .net:**[!INCLUDE[net_core_22](../../../../includes/net-core-22-md.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo9](icorprofilerinfo9-interface.md)

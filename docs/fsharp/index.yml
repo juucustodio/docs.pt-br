@@ -8,12 +8,12 @@ metadata:
   author: cartermp
   ms.author: phcart
   ms.date: 08/29/2020
-  ms.openlocfilehash: 7d7f9492bcd41975616ddd4d8f552aea5217b2d7
-  ms.sourcegitcommit: e0803b8975d3eb12e735a5d07637020dd6dac5ef
+  ms.openlocfilehash: 308f91c4bc8f199410dac1c45ad54dc2feb1c1f4
+  ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 09/01/2020
-  ms.locfileid: "89271848"
+  ms.lasthandoff: 12/04/2020
+  ms.locfileid: "96599044"
 landingContent:
 - title: 'Aprenda a programar em F #'
   linkLists:
@@ -31,6 +31,10 @@ landingContent:
     links:
     - text: Baixar o SDK do .NET Core
       url: https://dotnet.microsoft.com/download
+  - linkListType: get-started
+    links:
+    - text: 'F # no Q&A'
+      url: /answers/topics/dotnet-fsharp.html
 - title: 'Conceitos básicos de F #'
   linkLists:
   - linkListType: overview
@@ -57,6 +61,8 @@ landingContent:
   linkLists:
   - linkListType: whats-new
     links:
+    - text: 'O que há de novo no F # 5,0'
+      url: whats-new/fsharp-50.md
     - text: 'O que há de novo no F # 4,7'
       url: whats-new/fsharp-47.md
     - text: 'O que há de novo no F # 4,6'
@@ -67,7 +73,7 @@ landingContent:
   linkLists:
   - linkListType: reference
     links:
-    - text: Referência de linguagem
+    - text: Referência da linguagem
       url: language-reference/index.md
     - text: Referência de palavra-chave
       url: language-reference/keyword-reference.md
@@ -77,6 +83,12 @@ landingContent:
       url: language-reference/functions/index.md
     - text: 'Tipos de F #'
       url: language-reference/fsharp-types.md
+- title: Ferramentas do F#
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: F# Interativo
+      url: tools/fsharp-interactive/index.md
 - title: 'Referência da biblioteca principal F #'
   linkLists:
   - linkListType: reference

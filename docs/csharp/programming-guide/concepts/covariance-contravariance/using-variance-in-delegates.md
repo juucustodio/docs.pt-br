@@ -3,19 +3,21 @@ title: Usando variação em delegações (C#)
 description: Saiba como usar a variação em delegados usando os exemplos de código de covariância e contravariância incluídos.
 ms.date: 07/20/2015
 ms.assetid: 1638c95d-dc8b-40c1-972c-c2dcf84be55e
-ms.openlocfilehash: 62b0555ee29c5e7d2ba0954a8949d61596122cc7
-ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
+ms.openlocfilehash: 6704c3bf09dd854335f1e2719ccc8462cb7cde26
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87105678"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91176312"
 ---
 # <a name="using-variance-in-delegates-c"></a>Usando variação em delegações (C#)
+
 Quando você atribui um método a um delegado, a *covariância* e a *contravariância* fornece flexibilidade para corresponder um tipo de delegado a uma assinatura de método. A covariância permite que um método tenha o tipo de retorno mais derivado do que o definido no delegado. A contravariância permite que um método que tem tipos de parâmetro menos derivados do que no tipo delegado.  
   
 ## <a name="example-1-covariance"></a>Exemplo 1: covariância  
   
 ### <a name="description"></a>Descrição  
+
  Este exemplo demonstra como delegados podem ser usados com métodos que têm tipos de retorno que são derivados do tipo de retorno na assinatura do delegado. O tipo de dados retornado por `DogsHandler` é do tipo `Dogs`, que deriva do tipo `Mammals` definido no delegado.  
   
 ### <a name="code"></a>Código  
@@ -93,7 +95,7 @@ public Form1()
 }  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Variação em delegados (C#)](./variance-in-delegates.md)
 - [Usando variação para delegados genéricos Func e Action (C#)](./using-variance-for-func-and-action-generic-delegates.md)

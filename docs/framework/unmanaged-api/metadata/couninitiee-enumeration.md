@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração COUNINITIEE'
 title: Enumeração COUNINITIEE
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: c42baa79-f469-4330-95a2-baf7f021c2fc
 topic_type:
 - apiref
-ms.openlocfilehash: 14942680a79c4d1fcc69092a4f752738db1fb0b0
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 893ab96851e9c762a888f3c4cac98b486a0b4614
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008905"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707222"
 ---
 # <a name="couninitiee-enumeration"></a>Enumeração COUNINITIEE
+
 Especifica constantes usadas por [CoUninitializeEE](../hosting/couninitializeee-function.md) ao inicializar o Common Language Runtime.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,20 +38,21 @@ typedef enum tagCOUNINITEE
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`COUNINITEE_DEFAULT`|Indica o modo de não inicialização padrão.|  
 |`COUNINITEE_DLL`|Indica o modo de não inicialização para descarregar um assembly.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Incluído como um recurso em MsCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumerações de metadados](metadata-enumerations.md)

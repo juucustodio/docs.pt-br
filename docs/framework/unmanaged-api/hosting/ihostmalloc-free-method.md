@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: IHostMAlloc:: método gratuito'
 title: Método IHostMAlloc::Free
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: c89abf5b-1120-4437-8b57-4a99fb3ae7f9
 topic_type:
 - apiref
-ms.openlocfilehash: 1dd5ed4c556a5a4d4425a9c0730cebf22ff1785b
-ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
+ms.openlocfilehash: 097e2e95b6dfb9d6a1bae68f9e0455a96383159e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83804617"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708197"
 ---
 # <a name="ihostmallocfree-method"></a>Método IHostMAlloc::Free
+
 Libera a memória que foi alocada usando a função de [alocação](ihostmalloc-alloc-method.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,14 +36,15 @@ HRESULT Free (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pMem`  
  no Um ponteiro para a memória a ser liberada.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
-|S_OK|`Free`retornado com êxito.|  
+|S_OK|`Free` retornado com êxito.|  
 |HOST_E_CLRNOTAVAILABLE|O Common Language Runtime (CLR) não foi carregado em um processo ou o CLR está em um estado no qual não pode executar código gerenciado ou processar a chamada com êxito.|  
 |HOST_E_TIMEOUT|A chamada atingiu o tempo limite.|  
 |HOST_E_NOT_OWNER|O chamador não possui o bloqueio.|  
@@ -50,18 +53,20 @@ HRESULT Free (
 |HOST_E_INVALIDOPERATION|Foi feita uma tentativa de liberar memória que não foi alocada por meio do host.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Se o `pMem` parâmetro se referir a uma região de memória que não foi alocada usando uma chamada para `Alloc` , o host deverá retornar HOST_E_INVALIDOPERATION.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IHostMemoryManager](ihostmemorymanager-interface.md)
 - [Interface IHostMalloc](ihostmalloc-interface.md)

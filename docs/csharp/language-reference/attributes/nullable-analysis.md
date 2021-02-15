@@ -1,22 +1,22 @@
 ---
 title: 'Atributos reservados do C#: análise estática anulável'
-ms.date: 04/14/2020
+ms.date: 02/02/2021
 description: Esses atributos são interpretados pelo compilador para fornecer uma análise estática melhor para tipos de referência anuláveis e não anuláveis.
-ms.openlocfilehash: d2405162ece3df209111de65fdef54f70cc86d45
-ms.sourcegitcommit: 1e8382d0ce8b5515864f8fbb178b9fd692a7503f
+ms.openlocfilehash: 91bba16506e2e8bbac9fdef2d1c4badcf59c1546
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89656296"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100432563"
 ---
 # <a name="reserved-attributes-contribute-to-the-compilers-null-state-static-analysis"></a>Atributos reservados contribuem para a análise estática do estado nulo do compilador
 
 Em um contexto anulável, o compilador executa a análise estática de código para determinar o estado nulo de todas as variáveis de tipo de referência:
 
-- *NOT NULL*: a análise estática determinou que a variável foi atribuída a um valor não nulo.
+- *NOT NULL*: a análise estática determina que uma variável é atribuída a um valor não nulo.
 - *talvez NULL*: a análise estática não pode determinar que uma variável é atribuída a um valor não nulo.
 
-Você pode aplicar um número de atributos que fornecem informações ao compilador sobre a semântica de suas APIs. Essas informações ajudam o compilador a executar análise estática e determinar quando uma variável não é nula. Este artigo fornece uma breve descrição de cada um desses atributos e como usá-los. Todos os exemplos pressupõem C# 8,0 ou mais recente e o código está em um contexto anulável.
+Você pode aplicar atributos que fornecem informações ao compilador sobre a semântica de suas APIs. Essas informações ajudam o compilador a executar análise estática e determinar quando uma variável não é nula. Este artigo fornece uma breve descrição de cada um desses atributos e como usá-los. Todos os exemplos pressupõem C# 8,0 ou mais recente e o código está em um contexto anulável.
 
 Vamos começar com um exemplo familiar. Imagine que sua biblioteca tenha a seguinte API para recuperar uma cadeia de caracteres de recurso:
 
@@ -45,10 +45,12 @@ As regras para suas APIs são provavelmente mais complicadas, como vimos com o `
 - [NotNullIfNotNull](xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute): um valor de retorno não será nulo se o argumento do parâmetro especificado não for nulo.
 - [DoesNotReturn](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute): um método nunca retorna. Em outras palavras, ele sempre gera uma exceção.
 - [DoesNotReturnIf](xref:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute): esse método nunca retorna se o `bool` parâmetro associado tiver o valor especificado.
+- [MemberNotNull](xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute): o membro listado não será nulo quando o método retornar.
+- [MemberNotNullWhen](xref:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute): o membro listado não será nulo quando o método retornar o `bool` valor especificado.
 
 As descrições anteriores são uma referência rápida para o que cada atributo faz. Cada seção a seguir descreve o comportamento e significa mais detalhadamente.
 
-A adição desses atributos fornece ao compilador mais informações sobre as regras para sua API. Quando o código de chamada é compilado em um contexto habilitado para valor nulo, o compilador avisa aos chamadores quando eles violam essas regras. Esses atributos não habilitam verificações adicionais em sua implementação.
+A adição desses atributos fornece ao compilador mais informações sobre as regras para sua API. Quando o código de chamada é compilado em um contexto habilitado para valor nulo, o compilador avisa aos chamadores quando eles violam essas regras. Esses atributos não permitem mais verificações em sua implementação.
 
 ## <a name="specify-preconditions-allownull-and-disallownull"></a>Especificar pré-condições: `AllowNull` e `DisallowNull`
 
@@ -63,7 +65,7 @@ public string ScreenName
 private string _screenName;
 ```
 
-Quando você compila o código anterior em um contexto alheios anulável, tudo está bem. Depois que você habilitar tipos de referência anuláveis, a `ScreenName` propriedade se tornará uma referência não anulável. Isso está correto para o `get` acessador: ele nunca retorna `null` . Os chamadores não precisam verificar a propriedade retornada `null` . Mas, agora, definir a propriedade para `null` gerar um aviso. Para continuar a dar suporte a esse tipo de código, adicione o <xref:System.Diagnostics.CodeAnalysis.AllowNullAttribute?displayProperty=nameWithType> atributo à propriedade, conforme mostrado no código a seguir:
+Quando você compila o código anterior em um contexto alheios anulável, tudo está bem. Depois que você habilitar tipos de referência anuláveis, a `ScreenName` propriedade se tornará uma referência não anulável. Isso está correto para o `get` acessador: ele nunca retorna `null` . Os chamadores não precisam verificar a propriedade retornada `null` . Mas, agora, definir a propriedade para `null` gerar um aviso. Para dar suporte a esse tipo de código, você adiciona o <xref:System.Diagnostics.CodeAnalysis.AllowNullAttribute?displayProperty=nameWithType> atributo à propriedade, conforme mostrado no código a seguir:
 
 ```csharp
 [AllowNull]
@@ -75,7 +77,7 @@ public string ScreenName
 private string _screenName = GenerateRandomScreenName();
 ```
 
-Talvez seja necessário adicionar uma `using` diretiva para <xref:System.Diagnostics.CodeAnalysis> que o use este e outros atributos discutidos neste artigo. O atributo é aplicado à propriedade, não ao `set` acessador. O `AllowNull` atributo especifica *pré-condições*e só se aplica a entradas. O `get` acessador tem um valor de retorno, mas nenhum argumento de entrada. Portanto, o `AllowNull` atributo só se aplica ao `set` acessador.
+Talvez seja necessário adicionar uma `using` diretiva para <xref:System.Diagnostics.CodeAnalysis> que o use este e outros atributos discutidos neste artigo. O atributo é aplicado à propriedade, não ao `set` acessador. O `AllowNull` atributo especifica *pré-condições* e só se aplica a entradas. O `get` acessador tem um valor de retorno, mas nenhum argumento de entrada. Portanto, o `AllowNull` atributo só se aplica ao `set` acessador.
 
 O exemplo anterior demonstra o que procurar ao adicionar o `AllowNull` atributo em um argumento:
 
@@ -180,7 +182,7 @@ Você provavelmente está familiarizado com o `string` método <xref:System.Stri
 bool IsNullOrEmpty([NotNullWhen(false)] string? value);
 ```
 
-Isso informa ao compilador que qualquer código em que o valor de retorno `false` não precisa ser marcado como nulo. A adição do atributo informa a análise estática do compilador que `IsNullOrEmpty` executa a verificação nula necessária: quando retorna `false` , o argumento de entrada não é `null` .
+Isso informa ao compilador que qualquer código em que o valor de retorno `false` não precisa de verificações nulas. A adição do atributo informa a análise estática do compilador que `IsNullOrEmpty` executa a verificação nula necessária: quando ela retorna `false` , o argumento de entrada não é `null` .
 
 ```csharp
 string? userInput = GetUserInput();
@@ -215,7 +217,7 @@ Há um atributo final que você também pode precisar. Às vezes, o estado nulo 
 string GetTopLevelDomainFromFullUrl(string url);
 ```
 
-Se o `url` argumento não for nulo, a saída não será `null` . Depois que as referências anuláveis estiverem habilitadas, essa assinatura funcionará corretamente, desde que sua API nunca aceite uma entrada nula. No entanto, se a entrada puder ser nula, o valor de retorno também poderá ser nulo. Portanto, você pode alterar a assinatura para o código a seguir:
+Se o `url` argumento não for nulo, a saída não será `null` . Depois que as referências anuláveis estiverem habilitadas, essa assinatura funcionará corretamente, desde que sua API nunca aceite uma entrada nula. No entanto, se a entrada puder ser nula, o valor de retorno também poderá ser nulo. Você pode alterar a assinatura para o código a seguir:
 
 ```csharp
 string? GetTopLevelDomainFromFullUrl(string? url);
@@ -236,11 +238,21 @@ Você especifica condições recondicionais usando estes atributos:
 - [NotNullWhen](xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute): um argumento de entrada anulável não será nulo quando o método retornar o `bool` valor especificado.
 - [NotNullIfNotNull](xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute): um valor de retorno não será nulo se o argumento de entrada para o parâmetro especificado não for nulo.
 
+## <a name="constructor-helper-methods-membernotnull-and-membernotnullwhen"></a>Métodos auxiliares de construtor: `MemberNotNull` e `MemberNotNullWhen`
+
+Esses atributos especificam sua intenção quando você refatorar o código comum de construtores em métodos auxiliares. O compilador C# analisa construtores e inicializadores de campo para garantir que todos os campos de referência não anuláveis tenham sido inicializados antes de cada Construtor retornar. No entanto, o compilador C# não rastreia atribuições de campo por meio de todos os métodos auxiliares. O compilador emite um aviso `CS8618` quando os campos não são inicializados diretamente no construtor, mas em um método auxiliar. Você adiciona o <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute> a uma declaração de método e especifica os campos que são inicializados para um valor não nulo no método. Por exemplo, considere o exemplo a seguir:
+
+:::code language="csharp" source="snippets/InitializeMembers.cs" ID="MemberNotNullExample":::
+
+Você pode especificar vários nomes de campo como argumentos para o `MemberNotNull` Construtor de atributo.
+
+O <xref:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute> tem um `bool` argumento. Você usa `MemberNotNullWhen` em situações em que o método auxiliar retorna um `bool` que indica se o método auxiliar inicializou campos.
+
 ## <a name="verify-unreachable-code"></a>Verificar código inacessível
 
 Alguns métodos, normalmente os auxiliares de exceção ou outros métodos de utilitário, sempre saem lançando uma exceção. Ou, um auxiliar pode gerar uma exceção com base no valor de um argumento booliano.
 
-No primeiro caso, você pode adicionar o `DoesNotReturn` atributo à declaração do método. O compilador o ajuda de três maneiras. Primeiro, o compilador emite um aviso se houver um caminho onde o método pode sair sem lançar uma exceção. Em segundo lugar, o compilador marca qualquer código depois de uma chamada para esse método como *inacessível*, até que uma `catch` cláusula apropriada seja encontrada. Terceiro, o código inacessível não afetará nenhum estado nulo. Considere este método:
+No primeiro caso, você pode adicionar o `DoesNotReturn` atributo à declaração do método. O compilador o ajuda de três maneiras. Primeiro, o compilador emite um aviso se há um caminho onde o método pode sair sem lançar uma exceção. Em segundo lugar, o compilador marca qualquer código depois de uma chamada para esse método como *inacessível*, até que uma `catch` cláusula apropriada seja encontrada. Terceiro, o código inacessível não afetará nenhum estado nulo. Considere este método:
 
 ```csharp
 [DoesNotReturn]
@@ -285,7 +297,7 @@ public void SetState(object containedField)
 
 [!INCLUDE [C# version alert](../../includes/csharp-version-alert.md)]
 
-A adição de tipos de referência anuláveis fornece um vocabulário inicial para descrever suas expectativas de APIs para variáveis que podem ser `null` . Os atributos adicionais fornecem um vocabulário mais rico para descrever o estado nulo de variáveis como pré-condições e condições. Esses atributos descrevem mais claramente suas expectativas e fornecem uma experiência melhor para os desenvolvedores que usam suas APIs.
+A adição de tipos de referência anuláveis fornece um vocabulário inicial para descrever suas expectativas de APIs para variáveis que podem ser `null` . Os atributos fornecem um vocabulário mais rico para descrever o estado nulo de variáveis como pré-condições e condições. Esses atributos descrevem mais claramente suas expectativas e fornecem uma experiência melhor para os desenvolvedores que usam suas APIs.
 
 Conforme você atualiza as bibliotecas para um contexto anulável, adicione esses atributos para orientar os usuários de suas APIs para o uso correto. Esses atributos ajudam você a descrever totalmente o estado nulo dos argumentos de entrada e valores de retorno:
 

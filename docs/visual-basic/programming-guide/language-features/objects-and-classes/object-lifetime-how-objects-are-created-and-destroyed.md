@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: tempo de vida do objeto: como os objetos são criados e destruídos (Visual Basic)'
 title: 'Tempo de vida do objeto: como os objetos são criados e destruídos'
 ms.date: 07/20/2015
 f1_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - Sub Dispose destructor
 - garbage collection [Visual Basic], Visual Basic
 ms.assetid: f1ee8458-b156-44e0-9a8a-5dd171648cd8
-ms.openlocfilehash: e81e131933e0997756ed4185a3ceb12ad19b78de
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 424a5619ea50d9da9bf069488ce7cac16527efbe
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84392877"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100438821"
 ---
 # <a name="object-lifetime-how-objects-are-created-and-destroyed-visual-basic"></a>Tempo de vida do objeto: como os objetos são criados e destruídos (Visual Basic)
 
@@ -155,10 +156,10 @@ O CLR destrói periodicamente objetos quando o sistema determina que esses objet
 
 Outra diferença entre os sistemas de coleta de lixo envolve o uso de `Nothing`. Para aproveitar a contagem de referência no Visual Basic 6.0 e em versões anteriores, os programadores às vezes atribuem `Nothing` para as variáveis de objeto para liberar as referências que essas variáveis mantinham. Se a variável mantiver a última referência ao objeto, os recursos do objeto são lançados imediatamente. Em versões posteriores do Visual Basic, embora haja casos em que esse procedimento ainda é importante, executá-lo nunca faz com que o objeto referenciado libere seus recursos imediatamente. Para liberar recursos imediatamente, use o método <xref:System.IDisposable.Dispose%2A> do objeto, se disponível. A única vez em que você deve definir uma variável para `Nothing` é quando seu tempo de vida é longo em relação ao tempo que o coletor de lixo leva para detectar objetos órfãos.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.IDisposable.Dispose%2A>
-- [Inicialização e término de componentes](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ws9dc6t6(v=vs.120))
-- [Novo operador](../../../language-reference/operators/new-operator.md)
+- [Inicialização e término de componentes](/previous-versions/visualstudio/visual-studio-2013/ws9dc6t6(v=vs.120))
+- [Novo Operador](../../../language-reference/operators/new-operator.md)
 - [Limpando recursos não gerenciados](../../../../standard/garbage-collection/unmanaged.md)
-- [Nada](../../../language-reference/nothing.md)
+- [Nothing](../../../language-reference/nothing.md)

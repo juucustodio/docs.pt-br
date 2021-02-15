@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: referência de linguagem de Visual Basic'
 title: Referência de linguagem
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - language reference, Visual Basic
 - Visual Basic, language reference
 ms.assetid: 5c6bd31a-9542-4f3e-bfd5-e951af58f0f2
-ms.openlocfilehash: dd7b26d7b5acf924c3eac39b7a67c35245945aaa
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 47a299437b5f3ceab1cb24b8a09666366c546a64
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84362470"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731026"
 ---
 # <a name="visual-basic-language-reference"></a>Referência da linguagem Visual Basic
 
@@ -38,10 +39,10 @@ Esta seção fornece informações de referência para vários aspectos do idiom
  [Constantes e enumerações](constants-and-enumerations.md)  
  Documenta as constantes e enumerações disponíveis em Visual Basic.  
   
- [Tipos de dados](data-types/index.md)  
+ [Data Types](data-types/index.md)  
  Documenta os tipos de dados disponíveis no Visual Basic.  
   
- [Diretivas](directives/index.md)  
+ [Aparenta](directives/index.md)  
  Documenta as diretivas de compilador disponíveis no Visual Basic.  
   
  [Funções](functions/index.md)  
@@ -53,7 +54,7 @@ Esta seção fornece informações de referência para vários aspectos do idiom
  [Módulos](modules.md)  
  Documenta os módulos disponíveis em Visual Basic e seus membros.  
   
- [Nada](nothing.md)  
+ [Nothing](nothing.md)  
  Descreve o valor padrão de qualquer tipo de dados.  
   
  [Objetos](objects/index.md)  
@@ -66,7 +67,7 @@ Esta seção fornece informações de referência para vários aspectos do idiom
  Documenta as propriedades disponíveis no Visual Basic.  
   
  [Consultas](queries/index.md)  
- Fornece informações de referência sobre o uso de expressões de LINQ (consulta integrada à linguagem) em seu código.  
+ Fornece informações de referência sobre como usar expressões de consulta de Language-Integrated (LINQ) em seu código.  
   
  [Instruções](statements/index.md)  
  Documenta a declaração e as instruções Executáveis disponíveis no Visual Basic.  

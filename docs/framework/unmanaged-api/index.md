@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: referência de API não gerenciada'
 title: Referência de API não gerenciada
 ms.date: 11/06/2017
 helpviewer_keywords:
@@ -7,17 +8,19 @@ helpviewer_keywords:
 - native API reference [.NET Framework]
 - unmanaged API reference [.NET Framework]
 ms.assetid: 9aa000ee-c04c-492c-ae4f-83ecdf4fdbbe
-ms.openlocfilehash: 9b8671f2bd278e9e6153476d742f43150a4f6e3e
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: 3c9c485d8dced9641d0d1af850de190318902aa9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795606"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678985"
 ---
 # <a name="unmanaged-api-reference"></a>Referência de API não gerenciada
+
 Esta seção inclui informações sobre APIs não gerenciadas que podem ser usadas por aplicativos relacionados a código gerenciado, como hosts de runtime, compiladores, desmontadores, ofuscadores, depuradores e criadores de perfis.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Tipos de dados comuns](common-data-types-unmanaged-api-reference.md)  
  Lista os tipos de dados comuns que são usados, especialmente na criação de perfis não gerenciados e APIs de depuração.  
   
@@ -30,7 +33,7 @@ Esta seção inclui informações sobre APIs não gerenciadas que podem ser usad
  [Constantes](constants-unmanaged-api-reference.md)  
  Descreve as constantes que são definidas em CorSym.idl.  
   
- [Atributos de interface personalizada](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms231946(v=vs.100))  
+ [Atributos de interface personalizada](/previous-versions/dotnet/netframework-4.0/ms231946(v=vs.100))  
  Descreve os atributos de interface personalizada do COM (Component Object Model).  
   
  [Depuração](./debugging/index.md)  
@@ -39,10 +42,10 @@ Esta seção inclui informações sobre APIs não gerenciadas que podem ser usad
  [Repositório de símbolos de diagnóstico](./diagnostics/index.md)  
  Descreve a API de armazenamento de código de diagnóstico, que permite a um compilador gerar informações de símbolo para uso por um depurador.  
   
- [Flores](./fusion/index.md)  
+ [Fusão](./fusion/index.md)  
  Descreve a API de fusão, que permite a um host de runtime acessar as propriedades dos recursos de um aplicativo para localizar as versões corretas desses recursos para o aplicativo.  
   
- [Hosting](./hosting/index.md)  
+ [Hospedagem](./hosting/index.md)  
  Descreve a API de hospedagem, que permite a hosts não gerenciados integrar o CLR em seus aplicativos.  
   
  [Metadados](./metadata/index.md)  
@@ -61,4 +64,5 @@ Esta seção inclui informações sobre APIs não gerenciadas que podem ser usad
  Descreve as duas funções auxiliares e a interface usada pelo Exportador da Biblioteca de Tipos (Tlbexp.exe) durante o processo de conversão de assembly para biblioteca de tipos.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Guia de desenvolvimento](../development-guide.md)  
+
+ [Guia de desenvolvimento](../development-guide.md)

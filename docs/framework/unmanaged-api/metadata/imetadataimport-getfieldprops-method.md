@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport:: GetFieldProps'
 title: Método IMetaDataImport::GetFieldProps
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 7b0e9b10-8cef-4ba6-8432-40bf63e65ab1
 topic_type:
 - apiref
-ms.openlocfilehash: 2bd05b49c3d51ac13865997910c99cc0cd5ca2d9
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 76735f837ff53b46b35cdf8c39990ed8689cc69c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84491222"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789197"
 ---
 # <a name="imetadataimportgetfieldprops-method"></a>Método IMetaDataImport::GetFieldProps
+
 Obtém os metadados associados ao campo referenciado pelo token FieldDef especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -44,6 +46,7 @@ HRESULT GetFieldProps (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `mb`  
  no Um token FieldDef que representa o campo para o qual obter metadados associados.  
   
@@ -78,15 +81,16 @@ HRESULT GetFieldProps (
  fora O tamanho em caracteres de `ppValue` , ou zero, se nenhuma cadeia de caracteres existir.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Incluído como um recurso em MsCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport](imetadataimport-interface.md)
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)

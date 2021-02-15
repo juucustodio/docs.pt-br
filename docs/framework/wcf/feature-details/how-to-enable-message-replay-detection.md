@@ -1,5 +1,6 @@
 ---
-title: Como habilitar a detecção de repetição de mensagem
+description: 'Saiba mais sobre: como habilitar a detecção de reprodução de mensagem'
+title: 'Como: habilitar a detecção de reprodução de mensagem'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -10,17 +11,18 @@ helpviewer_keywords:
 - WCF, custom bindings
 - WCF, security
 ms.assetid: 8b847e91-69a3-49e1-9e5f-0c455e50d804
-ms.openlocfilehash: bf45b39f59e2fe38fec88d1fac23ab824c009546
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 743452195d5bf78360909a22ea81997c2712dd06
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597079"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704661"
 ---
-# <a name="how-to-enable-message-replay-detection"></a>Como habilitar a detecção de repetição de mensagem
+# <a name="how-to-enable-message-replay-detection"></a>Como: habilitar a detecção de reprodução de mensagem
+
 Um ataque de reprodução ocorre quando um invasor copia um fluxo de mensagens entre duas partes e repete o fluxo para uma ou mais das partes. A menos que seja atenuado, os computadores sujeitos ao ataque processarão o fluxo como mensagens legítimas, resultando em uma variedade de consequências inadequadas, como ordens redundantes de um item.  
   
- Para obter mais informações sobre a detecção de reprodução de mensagem, consulte [detecção de reprodução de mensagem](https://docs.microsoft.com/previous-versions/msp-n-p/ff649371(v=pandp.10)).  
+ Para obter mais informações sobre a detecção de reprodução de mensagem, consulte [detecção de reprodução de mensagem](/previous-versions/msp-n-p/ff649371(v=pandp.10)).  
   
  O procedimento a seguir demonstra várias propriedades que você pode usar para controlar a detecção de reprodução usando o Windows Communication Foundation (WCF).  
   
@@ -75,22 +77,25 @@ Um ataque de reprodução ocorre quando um invasor copia um fluxo de mensagens e
     ```  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir cria um <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> usando o <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateKerberosBindingElement%2A> método e define as propriedades de reprodução da associação.  
   
  [!code-csharp[c_ReplayDetection#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_replaydetection/cs/source.cs#1)]
  [!code-vb[c_ReplayDetection#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_replaydetection/vb/source.vb#1)]  
   
 ## <a name="scope-of-replay-message-security-only"></a>Escopo da reprodução: somente segurança da mensagem  
+
  Observe que os procedimentos a seguir se aplicam somente ao modo de segurança da mensagem. Para transporte e transporte com modos de credenciais de mensagem, os mecanismos de transporte detectam repetições.  
   
 ## <a name="secure-conversation-notes"></a>Proteger anotações de conversa  
+
  Para associações que habilitam conversas seguras, você pode ajustar essas configurações para o canal de aplicativo, bem como para a associação de inicialização de conversa segura. Por exemplo, você pode desativar as repetições para o canal de aplicativo, mas habilitá-las para o canal de bootstrap que estabelece a conversa segura.  
   
  Se você não usar sessões de conversa seguras, a detecção de repetição não garantirá a detecção de repetições em cenários de farm de servidores e quando o processo for reciclado. Isso se aplica às seguintes associações fornecidas pelo sistema:  
   
 - <xref:System.ServiceModel.BasicHttpBinding>.  
   
-- <xref:System.ServiceModel.WSHttpBinding>com a <xref:System.ServiceModel.NonDualMessageSecurityOverHttp.EstablishSecurityContext%2A> propriedade definida como `false` .  
+- <xref:System.ServiceModel.WSHttpBinding> com a <xref:System.ServiceModel.NonDualMessageSecurityOverHttp.EstablishSecurityContext%2A> propriedade definida como `false` .  
   
 ## <a name="compiling-the-code"></a>Compilando o código  
   
@@ -108,4 +113,4 @@ Um ataque de reprodução ocorre quando um invasor copia um fluxo de mensagens e
 - <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings>
 - [Sessões seguras e conversas seguras](secure-conversations-and-secure-sessions.md)
 - [\<localClientSettings>](../../configure-apps/file-schema/wcf/localclientsettings-element.md)
-- [Como criar uma associação personalizada utilizando o SecurityBindingElement](how-to-create-a-custom-binding-using-the-securitybindingelement.md)
+- [Como: criar uma associação personalizada utilizando o SecurityBindingElement](how-to-create-a-custom-binding-using-the-securitybindingelement.md)

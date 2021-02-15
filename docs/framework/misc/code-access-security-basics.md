@@ -8,12 +8,12 @@ dev_langs:
 helpviewer_keywords:
 - security [.NET Framework], code access security
 ms.assetid: 4eaa6535-d9fe-41a1-91d8-b437cfc16921
-ms.openlocfilehash: 9d1f2e35c79ca32595711316885991717c4c1696
-ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
+ms.openlocfilehash: 9f6049913a2e8cf3e3f220b0148598a236b60bef
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86281740"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557065"
 ---
 # <a name="code-access-security-basics"></a>Noções básicas da segurança de acesso do código
 
@@ -54,7 +54,7 @@ A segurança de acesso ao código não elimina a possibilidade de erro humano em
 A sintaxe de segurança declarativa usa [atributos](../../standard/attributes/index.md) para posicionar informações de segurança nos [metadados](../../standard/metadata-and-self-describing-components.md) do seu código. Os atributos podem ser colocados no nível de assembly, classe ou membro, para indicar o tipo de solicitação, demanda ou substituição que você deseja usar. As solicitações são usadas em aplicativos direcionados à Common Language Runtime para informar o sistema de segurança de tempo de execução sobre as permissões que seu aplicativo precisa ou não deseja. As demandas e substituições são usadas em bibliotecas para ajudar a proteger recursos de chamadores ou para substituir o comportamento de segurança padrão.
 
 > [!NOTE]
-> No .NET Framework 4, houve alterações importantes na .NET Framework modelo e terminologia de segurança. Para obter mais informações sobre essas alterações, consulte [Security Changes](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes).
+> No .NET Framework 4, houve alterações importantes na .NET Framework modelo e terminologia de segurança. Para obter mais informações sobre essas alterações, consulte [Security Changes](/previous-versions/dotnet/framework/security/security-changes).
 
 Para usar chamadas de segurança declarativas, você deve inicializar os dados de estado do objeto de permissão para que ele represente a forma específica de permissão necessária. Cada permissão interna tem um atributo que é passado <xref:System.Security.Permissions.SecurityAction> como uma enumeração para descrever o tipo de operação de segurança que você deseja executar. No entanto, as permissões também aceitam seus próprios parâmetros que são exclusivos para eles.
 
@@ -163,7 +163,7 @@ Se você quiser que seu aplicativo execute uma operação que requer o acesso a 
 - <xref:System.Security.Permissions.FileIOPermission>
 - <xref:System.Security.NamedPermissionSet>
 - <xref:System.Security.Permissions.SecurityAction>
-- [Declarar](using-the-assert-method.md)
+- [Assert](using-the-assert-method.md)
 - [Segurança de acesso do código](code-access-security.md)
 - [Noções básicas da segurança de acesso do código](code-access-security-basics.md)
 - [Atributos](../../standard/attributes/index.md)

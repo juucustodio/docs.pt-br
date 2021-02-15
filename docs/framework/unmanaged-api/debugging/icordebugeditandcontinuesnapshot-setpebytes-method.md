@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugEditAndContinueSnapshot:: SetPEBytes'
 title: Método ICorDebugEditAndContinueSnapshot::SetPEBytes
 ms.date: 03/30/2017
 api_name:
@@ -15,16 +16,17 @@ helpviewer_keywords:
 ms.assetid: 7235c225-cb6e-49e9-a95b-09a646579841
 topic_type:
 - apiref
-ms.openlocfilehash: f678f98d7b40f5f4c0db8773f7f6a0aa81aa1b91
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: cfd63cae0aa972d6983df5641339d0c6ff2ca63c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76783028"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694533"
 ---
 # <a name="icordebugeditandcontinuesnapshotsetpebytes-method"></a>Método ICorDebugEditAndContinueSnapshot::SetPEBytes
+
 `SetPEBytes` é obsoleto. Não chame esse método.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

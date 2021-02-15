@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: visão geral da integração com aplicativos COM'
 title: Integração com visão geral de aplicativos COM
 ms.date: 03/30/2017
 helpviewer_keywords:
 - COM [WCF], integration overview
 ms.assetid: 02c5697f-6e2e-47d6-b715-f3a28aebfbd5
-ms.openlocfilehash: c283e7cbc4cb4b8bc37dd1313480410df93a93bf
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: a179fd73c8065fff1e16d3f86202d717df155b81
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596819"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802808"
 ---
 # <a name="integrating-with-com-applications-overview"></a>Integração com visão geral de aplicativos COM
 
@@ -53,7 +54,7 @@ A tabela a seguir mostra os parâmetros que são suportados pelo moniker do serv
 |`serializer`|Especifique o uso do serializador "XML" ou "DataContract".|
 
 > [!NOTE]
-> Mesmo quando usado com clientes totalmente baseados em COM, o moniker do serviço exige que o WCF e o suporte ao .NET Framework 2,0 sejam instalados no computador cliente. Também é essencial que os aplicativos cliente que usam o moniker do serviço carreguem a versão apropriada do tempo de execução de .NET Framework. Ao usar o moniker em aplicativos do Office, um arquivo de configuração pode ser necessário para garantir que a versão correta da estrutura seja carregada. Por exemplo, com o Excel, o texto a seguir deve ser colocado em um arquivo chamado Excel. exe. config no mesmo diretório que o arquivo Excel. exe:
+> Mesmo quando usado com clientes totalmente baseados em COM, o moniker do serviço exige que o WCF e o suporte ao .NET Framework 2,0 sejam instalados no computador cliente. Também é essencial que os aplicativos cliente que usam o moniker do serviço carreguem a versão apropriada do tempo de execução de .NET Framework. Ao usar o moniker em aplicativos do Office, um arquivo de configuração pode ser necessário para garantir que a versão correta da estrutura seja carregada. Por exemplo, com o Excel, o texto a seguir deve ser colocado em um arquivo chamado Excel.exe.config no mesmo diretório que o arquivo de Excel.exe:
 >
 > `<?xml version="1.0" encoding="utf-8"?>`
 >
@@ -69,4 +70,4 @@ A tabela a seguir mostra os parâmetros que são suportados pelo moniker do serv
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como registrar e configurar um Moniker de serviço](how-to-register-and-configure-a-service-moniker.md)
+- [Como: registrar e configurar um moniker de serviço](how-to-register-and-configure-a-service-moniker.md)

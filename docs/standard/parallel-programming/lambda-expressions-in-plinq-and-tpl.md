@@ -1,7 +1,7 @@
 ---
+description: 'Saiba mais sobre: expressões lambda em PLINQ e TPL'
 title: Expressões lambda em PLINQ e TPL
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Action delegate, creating with lambda expression
 - lambda expressions, with Action and Func
 ms.assetid: 645b2c17-29d0-4ffa-8684-430743cc2f2d
-ms.openlocfilehash: 469c164630e1dab84b3d54c16c43d031ebf560ed
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.openlocfilehash: 86ecfca0e9866a08b4f4bb40d15b74257ec4540e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88063764"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798024"
 ---
 # <a name="lambda-expressions-in-plinq-and-tpl"></a>Expressões lambda em PLINQ e TPL
 

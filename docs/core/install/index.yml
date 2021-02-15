@@ -1,17 +1,17 @@
 ### YamlMime:Landing
-title: Instalar o .NET Core no Windows, Linux e macOS
-summary: Saiba mais sobre como instalar o .NET em versões do Windows, Linux e macOS. Descubra as dependências necessárias para desenvolver, implantar e executar aplicativos .NET Core.
+title: Instalar o .NET no Windows, Linux e macOS
+summary: Saiba mais sobre como instalar o .NET Core, o .NET 5 e versões posteriores no Windows, Linux e macOS. Descubra as dependências necessárias para desenvolver, implantar e executar aplicativos .NET.
 metadata:
-  title: Instalar o .NET Core no Windows, Linux e macOS
-  description: Saiba onde baixar e instalar o .NET Core em versões do Windows, Linux e macOS. Descubra as dependências necessárias para desenvolver, implantar e executar aplicativos .NET Core.
+  title: Instalar o .NET no Windows, Linux e macOS
+  description: Saiba onde baixar e instalar o .NET Core, o .NET 5 e versões posteriores no Windows, Linux e macOS. Descubra as dependências necessárias para desenvolver, implantar e executar aplicativos .NET.
   ms.topic: landing-page
   ms.date: 06/29/2020
-  ms.openlocfilehash: dbc159bc4ff2d10bf55bd0c0b4d4e07a8fc04a4a
-  ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
+  ms.openlocfilehash: 4fdfa606c07105a5a0f966a4562732d150bd3d54
+  ms.sourcegitcommit: 81f1bba2c97a67b5ca76bcc57b37333ffca60c7b
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 07/01/2020
-  ms.locfileid: "85804471"
+  ms.lasthandoff: 12/10/2020
+  ms.locfileid: "97009502"
 landingContent:
 - title: Windows
   linkLists:
@@ -61,3 +61,17 @@ landingContent:
       url: linux-sles.md
     - text: Ubuntu
       url: linux-ubuntu.md
+- title: Perguntas e respostas
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Instaladores autônomos
+      url: /answers/topics/dotnet-ad-installer.html
+    - text: Instaladores do Visual Studio
+      url: /answers/topics/dotnet-ad-vs.html
+    - text: Feeds do Linux
+      url: /answers/topics/dotnet-ad-linux.html
+    - text: Docker
+      url: /answers/topics/dotnet-ad-docker.html
+    - text: Implantação corporativa
+      url: /answers/topics/dotnet-ad-enterprise.html

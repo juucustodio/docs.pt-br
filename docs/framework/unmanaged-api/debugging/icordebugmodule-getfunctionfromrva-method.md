@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugModule:: GetFunctionFromRVA'
 title: Método ICorDebugModule::GetFunctionFromRVA
 ms.date: 03/30/2017
 api_name:
@@ -15,17 +16,18 @@ helpviewer_keywords:
 ms.assetid: f5a34517-2422-484f-be89-2ce0b4bce195
 topic_type:
 - apiref
-ms.openlocfilehash: 6245942f0b5cedd478ba0704acc1fef7251b8211
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: fdafba1321ce32743ccca271e5db551fc746d886
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73109612"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99691569"
 ---
 # <a name="icordebugmodulegetfunctionfromrva-method"></a>Método ICorDebugModule::GetFunctionFromRVA
+
 Este método não foi implementado na versão atual do .NET Framework.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT GetFunctionFromRVA(  
@@ -35,6 +37,7 @@ HRESULT GetFunctionFromRVA(
 ```  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também

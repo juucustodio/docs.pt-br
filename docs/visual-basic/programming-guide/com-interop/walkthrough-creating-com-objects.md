@@ -8,13 +8,15 @@ helpviewer_keywords:
 - object creation [Visual Basic], COM objects
 - COM objects, walkthroughs
 ms.assetid: 7b07a463-bc72-4392-9ba0-9dfcb697a44f
-ms.openlocfilehash: 6ff23f73af384a1440bcebd4b6bac21714e01756
-ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.openlocfilehash: 90a21b70b45902a9f4fd559a97e777f26043fffb
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86051474"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91075610"
 ---
 # <a name="walkthrough-creating-com-objects-with-visual-basic"></a>Instruções passo a passo: criando objetos COM com o Visual Basic
+
 Ao criar novos aplicativos ou componentes, é melhor criar assemblies de .NET Framework. No entanto, Visual Basic também facilita a exposição de um componente de .NET Framework para COM. Isso permite que você forneça novos componentes para conjuntos de aplicativos anteriores que exigem componentes COM. Este tutorial demonstra como usar Visual Basic para expor .NET Framework objetos como objetos COM, com e sem o modelo de classe COM.  
   
  A maneira mais fácil de expor objetos COM é usando o modelo de classe COM. Esse modelo cria uma nova classe e, em seguida, configura seu projeto para gerar a classe com uma camada de interoperabilidade como um objeto COM e registrá-la no sistema operacional.  
@@ -39,6 +41,7 @@ Ao criar novos aplicativos ou componentes, é melhor criar assemblies de .NET Fr
 6. Selecione **criar ClassLibrary1** no menu **Compilar** . Visual Basic compila o assembly e registra o objeto com com o sistema operacional.  
   
 ## <a name="creating-com-objects-without-the-com-class-template"></a>Criando objetos COM sem o modelo de classe COM  
+
  Você também pode criar uma classe COM manualmente em vez de usar o modelo de classe COM. Esse procedimento é útil quando você está trabalhando na linha de comando ou quando deseja obter mais controle sobre como os objetos COM são definidos.  
   
 #### <a name="to-set-up-your-project-to-generate-a-com-object"></a>Para configurar seu projeto para gerar um objeto COM  
@@ -89,7 +92,7 @@ Ao criar novos aplicativos ou componentes, é melhor criar assemblies de .NET Fr
     > [!NOTE]
     > Os objetos COM que você gera com Visual Basic não podem ser usados por outros aplicativos Visual Basic porque não são objetos COM verdadeiros. As tentativas de adicionar referências a esses objetos COM gerarão um erro. Para obter detalhes, consulte [interoperabilidade com em aplicativos .NET Framework](com-interoperability-in-net-framework-applications.md).  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:Microsoft.VisualBasic.ComClassAttribute>
 - [Interoperabilidade COM](index.md)

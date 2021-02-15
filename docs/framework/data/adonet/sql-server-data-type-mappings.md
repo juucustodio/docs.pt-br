@@ -3,14 +3,15 @@ title: Mapeamentos de tipos de dados do SQL Server
 description: Saiba mais sobre o mapeamento entre os diferentes sistemas de tipos para SQL Server e o .NET Framework. Este artigo resume como os sistemas interagem no ADO.NET.
 ms.date: 03/30/2017
 ms.assetid: fafdc31a-f435-4cd3-883f-1dfadd971277
-ms.openlocfilehash: 83be217a69f912047360cd097db702e4a95a6512
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: b6cb182d72a7f0a99df77b33f6bd6b8b77b33b3b
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286579"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91175259"
 ---
 # <a name="sql-server-data-type-mappings"></a>Mapeamentos de tipos de dados do SQL Server
+
 O SQL Server e o .NET Framework baseiam-se em diferentes sistemas de tipo. Por exemplo, a estrutura <xref:System.Decimal> do .NET Framework tem uma escala máxima de 28, enquanto os tipos de dados decimais e numéricos do SQL Server têm uma escala máximo de 38. Para manter a integridade dos dados ao ler e gravar dados, o <xref:System.Data.SqlClient.SqlDataReader> expõe métodos acessadores tipados específicos do SQL Server que retornam objetos de <xref:System.Data.SqlTypes>, bem como métodos acessadores que retornam tipos do .NET Framework. Os tipos do SQL Server e do .NET Framework também são representados por enumerações nas classes <xref:System.Data.DbType> e <xref:System.Data.SqlDbType>, que você pode usar ao especificar tipos de dados <xref:System.Data.SqlClient.SqlParameter>.  
   
  A tabela a seguir mostra o tipo de .NET Framework inferido, as <xref:System.Data.DbType> <xref:System.Data.SqlDbType> enumerações e e os métodos de acessador para o <xref:System.Data.SqlClient.SqlDataReader> .  
@@ -40,7 +41,7 @@ O SQL Server e o .NET Framework baseiam-se em diferentes sistemas de tipo. Por e
 |smalldatetime|Datetime|<xref:System.Data.SqlDbType.DateTime>|<xref:System.Data.SqlClient.SqlDataReader.GetSqlDateTime%2A>|<xref:System.Data.DbType.DateTime>|<xref:System.Data.SqlClient.SqlDataReader.GetDateTime%2A>|  
 |SMALLINT|Int16|<xref:System.Data.SqlDbType.SmallInt>|<xref:System.Data.SqlClient.SqlDataReader.GetSqlInt16%2A>|<xref:System.Data.DbType.Int16>|<xref:System.Data.SqlClient.SqlDataReader.GetInt16%2A>|  
 |SMALLMONEY|Decimal|<xref:System.Data.SqlDbType.SmallMoney>|<xref:System.Data.SqlClient.SqlDataReader.GetSqlMoney%2A>|<xref:System.Data.DbType.Decimal>|<xref:System.Data.SqlClient.SqlDataReader.GetDecimal%2A>|  
-|sql_variant|Objeto <sup>2</sup>|<xref:System.Data.SqlDbType.Variant>|<xref:System.Data.SqlClient.SqlDataReader.GetSqlValue%2A> <sup>2</sup>|<xref:System.Data.DbType.Object>|<xref:System.Data.SqlClient.SqlDataReader.GetValue%2A> <sup>2</sup>|  
+|sql_variant|Objeto <sup>2</sup>|<xref:System.Data.SqlDbType.Variant>|<xref:System.Data.SqlClient.SqlDataReader.GetSqlValue%2A><sup>2</sup>|<xref:System.Data.DbType.Object>|<xref:System.Data.SqlClient.SqlDataReader.GetValue%2A><sup>2</sup>|  
 |text|String<br /><br /> Char[]|<xref:System.Data.SqlDbType.Text>|<xref:System.Data.SqlClient.SqlDataReader.GetSqlString%2A>|<xref:System.Data.DbType.String>|<xref:System.Data.SqlClient.SqlDataReader.GetString%2A><br /><br /> <xref:System.Data.SqlClient.SqlDataReader.GetChars%2A>|  
 |time<br /><br /> (SQL Server 2008 e posteriores)|TimeSpan|<xref:System.Data.SqlDbType.Time>|nenhum|<xref:System.Data.DbType.Time>|<xref:System.Data.SqlClient.SqlDataReader.GetDateTime%2A>|  
 |timestamp|Byte[]|<xref:System.Data.SqlDbType.Timestamp>|<xref:System.Data.SqlClient.SqlDataReader.GetSqlBinary%2A>|<xref:System.Data.DbType.Binary>|<xref:System.Data.SqlClient.SqlDataReader.GetBytes%2A>|  
@@ -57,10 +58,10 @@ O SQL Server e o .NET Framework baseiam-se em diferentes sistemas de tipo. Por e
 
 Para obter mais informações sobre tipos de dados SQL Server, consulte [tipos de dados (Transact-SQL)](/sql/t-sql/data-types/data-types-transact-sql).
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Tipos de dados SQL Server e ADO.NET](./sql/sql-server-data-types.md)
+- [Tipos de dados do SQL Server e ADO.NET](./sql/sql-server-data-types.md)
 - [SQL Server dados binários e de valor grande](./sql/sql-server-binary-and-large-value-data.md)
-- [Data Type Mappings in ADO.NET](data-type-mappings-in-ado-net.md) (Mapeamentos de tipo de dados no ADO.NET)
-- [Configurando parâmetros e tipos de dados de parâmetro](configuring-parameters-and-parameter-data-types.md)
+- [Mapeamentos de tipos de dados no ADO.NET](data-type-mappings-in-ado-net.md)
+- [Configurar parâmetros e tipos de dados de parâmetro](configuring-parameters-and-parameter-data-types.md)
 - [Visão geral do ADO.NET](ado-net-overview.md)

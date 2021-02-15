@@ -1,16 +1,18 @@
 ---
+description: 'Saiba mais sobre: sistema de mensagens confiável'
 title: Mensagens confiáveis
 ms.date: 03/30/2017
 ms.assetid: 46d41fdf-b1f8-4968-8e54-c896848885fa
-ms.openlocfilehash: 5cff6d0e35f785c008e164f485067853a8d1ecf0
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 1bbeae437a5c13f7269c1b89d556ee013e10dfd3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61752991"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99686239"
 ---
 # <a name="reliable-messaging"></a>Mensagens confiáveis
-Este tópico lista todas as exceções geradas pelo sistema de mensagens confiável.  
+
+Este tópico lista todas as exceções geradas por mensagens confiáveis.  
   
 ## <a name="exception-list"></a>Lista de exceções  
   

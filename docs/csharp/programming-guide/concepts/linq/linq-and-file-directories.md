@@ -3,12 +3,12 @@ title: LINQ e diretórios de arquivos (C#)
 description: Esses recursos LINQ do C# para operações do sistema de arquivos não são usados para alterar o conteúdo dos arquivos ou pastas.
 ms.date: 07/20/2015
 ms.assetid: b66c55e4-0f72-44e5-b086-519f9962335c
-ms.openlocfilehash: ac00e29f90ee1c04ab9978b6ada3ae5f28991a1c
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: d8ef8ac8a8ff25f0bbac417c07e39f516eee27f2
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87165666"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91170474"
 ---
 # <a name="linq-and-file-directories-c"></a>LINQ e diretórios de arquivos (C#)
 
@@ -40,6 +40,7 @@ Muitas operações do sistema de arquivos são basicamente consultas e, portanto
  Mostra como iterar pelas pastas em uma árvore, abrir cada arquivo e consultar o conteúdo do arquivo.  
   
 ## <a name="comments"></a>Comentários  
+
  Há certa complexidade envolvida na criação de uma fonte de dados que representa o conteúdo do sistema de arquivos com precisão e trata exceções de maneira elegante. Os exemplos nesta seção criam uma coleção de instantâneos de objetos <xref:System.IO.FileInfo> que representa todos os arquivos em uma pasta raiz especificada e todas as suas subpastas. O estado real de cada <xref:System.IO.FileInfo> pode ser alterado no tempo entre o momento em que você começa e termina a execução de uma consulta. Por exemplo, você pode criar uma lista de objetos <xref:System.IO.FileInfo> para usar como uma fonte de dados. Se você tentar acessar a propriedade `Length` em uma consulta, o objeto <xref:System.IO.FileInfo> tentará acessar o sistema de arquivos para atualizar o valor de `Length`. Se o arquivo não existir, você obterá uma <xref:System.IO.FileNotFoundException> em sua consulta, embora não esteja consultando diretamente o sistema de arquivos. Algumas consultas nesta seção usam um método separado que consome essas exceções específicas em determinados casos. Outra opção é manter a fonte de dados atualizada dinamicamente usando o <xref:System.IO.FileSystemWatcher>.  
   
 ## <a name="see-also"></a>Confira também

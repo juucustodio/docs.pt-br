@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugBoxValue:: GetObject'
 title: Método ICorDebugBoxValue::GetObject
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 3a867a5b-bf94-493f-a4f5-b28685cf5325
 topic_type:
 - apiref
-ms.openlocfilehash: 401f052b881c1a0cfa065ba60c93aca1706f34f4
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: fc5376fa7ddbbeae3464427b34caf991d0a2f59a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82894778"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711830"
 ---
 # <a name="icordebugboxvaluegetobject-method"></a>Método ICorDebugBoxValue::GetObject
+
 Obtém o valor em caixa.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,10 +36,12 @@ HRESULT GetObject (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ppObject`  
  fora Um ponteiro para o endereço de um objeto ICorDebugObjectValue que representa o valor boxed.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

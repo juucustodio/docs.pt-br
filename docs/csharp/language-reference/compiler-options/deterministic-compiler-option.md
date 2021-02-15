@@ -8,12 +8,12 @@ helpviewer_keywords:
 - -deterministic compiler option [C#]
 - deterministic compiler option [C#]
 - /deterministic compiler option [C#]
-ms.openlocfilehash: 9d0bcc2957e5a666c21cdc2ce61e74fc90fe3530
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: d64f4d4b0d4e9b5ed2cc1ee40662dc669fc6660d
+ms.sourcegitcommit: 4f5f1855849cb02c3b610c7006ac21d7429f3348
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125820"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98235320"
 ---
 # <a name="-deterministic"></a>-deterministic
 
@@ -27,7 +27,7 @@ Faz com que o compilador produza um assembly cuja saída byte a byte é idêntic
 
 ## <a name="remarks"></a>Comentários
 
-Por padrão, a saída do compilador de um determinado conjunto de entradas é exclusiva, uma vez que o compilador adiciona um carimbo de data/hora e um GUID gerado com base em números aleatórios. Use a opção `-deterministic` para produzir um *assembly determinística*, cujo conteúdo binário seja idêntico entre compilações, desde que a entrada permaneça a mesma.
+Por padrão, a saída do compilador de um determinado conjunto de entradas é exclusiva, pois o compilador adiciona um carimbo de data/hora e um MVID que é gerado a partir de números aleatórios. Use a opção `-deterministic` para produzir um *assembly determinística*, cujo conteúdo binário seja idêntico entre compilações, desde que a entrada permaneça a mesma. Nesse tipo de compilação, os campos TIMESTAMP e MVID serão substituídos por valores derivados de um hash de todas as entradas de compilação.
 
 O compilador considera as seguintes entradas com a finalidade de determinismo:
 
@@ -55,5 +55,5 @@ Quando as fontes estão disponíveis publicamente, a compilação determinístic
 
 ## <a name="see-also"></a>Confira também
 
-- [Opções do compilador C#](./index.md)
+- [Opções do compilador de C#](./index.md)
 - [Gerenciando propriedades de solução e de projeto](/visualstudio/ide/managing-project-and-solution-properties)

@@ -1,23 +1,24 @@
 ---
+description: 'Saiba mais sobre: como implementar um provedor'
 title: Como implementar um provedor
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
-- observer design pattern [.NET Framework], implementing providers
-- providers [.NET Framework], in observer design pattern
-- observables [.NET Framework], in observer design pattern
+- observer design pattern [.NET], implementing providers
+- providers [.NET], in observer design pattern
+- observables [.NET], in observer design pattern
 ms.assetid: 790b5d8b-d546-40a6-beeb-151b574e5ee5
-ms.openlocfilehash: 4f8a213c0df3ef3c633106b7249a4947fe77c0d2
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 09c2e5127a241bc1d522e19ae71df420131c3d4d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84280017"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641766"
 ---
 # <a name="how-to-implement-a-provider"></a>Como implementar um provedor
+
 O padrão de design do observador requer uma divisão entre um provedor, que monitora os dados e envia notificações e um ou mais observadores, que recebem notificações (retornos de chamada) do provedor. Este tópico discute como criar um provedor. Um tópico relacionado, [Como implementar um observador](how-to-implement-an-observer.md), descreve como criar um observador.  
   
 ### <a name="to-create-a-provider"></a>Para criar um provedor  
@@ -53,12 +54,13 @@ O padrão de design do observador requer uma divisão entre um provedor, que mon
      [!code-vb[Conceptual.ObserverDesign.HowTo#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesign.howto/vb/provider.vb#6)]  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir contém o código-fonte completo para definir uma implementação <xref:System.IObservable%601> para uma aplicativo de monitoramento de temperatura. Ele inclui a estrutura `Temperature`, os dados enviados para observadores e a classe `TemperatureMonitor`, que é a implementação <xref:System.IObservable%601>.  
   
  [!code-csharp[Conceptual.ObserverDesign.HowTo#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.observerdesign.howto/cs/provider.cs#7)]
  [!code-vb[Conceptual.ObserverDesign.HowTo#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesign.howto/vb/provider.vb#7)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.IObservable%601>
 - [Padrão de design do observador](observer-design-pattern.md)

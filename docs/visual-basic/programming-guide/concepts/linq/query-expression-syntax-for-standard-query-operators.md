@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: sintaxe de expressão de consulta para operadores de consulta padrão (Visual Basic)'
 title: Sintaxe de expressão da consulta para operadores de consulta padrão
 ms.date: 07/20/2015
 ms.assetid: eb978d86-d3b5-497b-95ce-a054bea8f510
-ms.openlocfilehash: 69bb50007c04bf8d1ee1553a37aca542afbffab0
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c891482506f45278d9ecbe037a516b3de3fe97b7
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396279"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100477483"
 ---
 # <a name="query-expression-syntax-for-standard-query-operators-visual-basic"></a>Sintaxe de expressão de consulta para operadores de consulta padrão (Visual Basic)
+
 Alguns dos operadores de consulta padrão usados com mais frequência têm uma sintaxe de palavra-chave de linguagem Visual Basic dedicada que permite que eles sejam chamados como parte de uma *expressão de consulta*. Uma expressão de consulta é uma maneira diferente e mais legível de expressar uma consulta do que seu equivalente *baseado em método*. As cláusulas de expressão de consulta são convertidas em chamadas para os métodos de consulta em tempo de compilação.  
   
 ## <a name="query-expression-syntax-table"></a>Tabela de sintaxe de expressão de consulta  
+
  A tabela a seguir lista os operadores de consulta padrão que têm cláusulas de expressão de consulta equivalentes.  
   
 |Método|Visual Basic sintaxe de expressão de consulta|  
@@ -42,7 +45,7 @@ Alguns dos operadores de consulta padrão usados com mais frequência têm uma s
 |<xref:System.Linq.Enumerable.ThenByDescending%60%602%28System.Linq.IOrderedEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29>|`Order By …, … Descending`<br /><br /> (Para obter mais informações, consulte [a cláusula order by](../../../language-reference/queries/order-by-clause.md).)|  
 |<xref:System.Linq.Enumerable.Where%2A>|`Where`<br /><br /> (Para obter mais informações, consulte a [cláusula WHERE](../../../language-reference/queries/where-clause.md).)|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Linq.Enumerable>
 - <xref:System.Linq.Queryable>

@@ -2,7 +2,6 @@
 title: Comparações e classificações dentro de coleções
 description: As comparações & classificações usando as classes System. Collections no .NET, que ajudam a localizar um elemento para remover ou retornar o valor de um par de chave e valor.
 ms.date: 04/30/2020
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -11,14 +10,14 @@ helpviewer_keywords:
 - IComparable.CompareTo method
 - Collections classes
 - Equals method
-- collections [.NET Framework], comparisons
+- collections [.NET], comparisons
 ms.assetid: 5e4d3b45-97f0-423c-a65f-c492ed40e73b
-ms.openlocfilehash: aa001e8469947a532d77059bd52024c6b47b508e
-ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
+ms.openlocfilehash: e4d40568710498df811954c86bb36382d93057a3
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84769191"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95733536"
 ---
 # <a name="comparisons-and-sorts-within-collections"></a>Comparações e classificações dentro de coleções
 
@@ -27,6 +26,7 @@ As classes <xref:System.Collections> executam comparações em quase todos os pr
 As coleções normalmente usam um comparador de igualdade e/ou um comparador de ordenação. Dois constructos são usados para comparações.
 
 <a name="BKMK_Checkingforequality"></a>
+
 ## <a name="check-for-equality"></a>Verificar igualdade
 
 Métodos como `Contains`, <xref:System.Collections.IList.IndexOf%2A>, <xref:System.Collections.Generic.List%601.LastIndexOf%2A> e `Remove` usam um comparador de igualdade para os elementos da coleção. Se a coleção for genérica, os itens serão comparados para igualdade de acordo com as seguintes diretrizes:
@@ -38,6 +38,7 @@ Métodos como `Contains`, <xref:System.Collections.IList.IndexOf%2A>, <xref:Syst
 Além disso, algumas sobrecargas de construtores para coleções de dicionários aceitam uma implementação <xref:System.Collections.Generic.IEqualityComparer%601>, que é usada para comparar chaves com relação à igualdade. Para ver um exemplo, consulte o construtor <xref:System.Collections.Generic.Dictionary%602.%23ctor%2A>.
 
 <a name="BKMK_Determiningsortorder"></a>
+
 ## <a name="determine-sort-order"></a>Determinar ordem de classificação
 
 Métodos como `BinarySearch` e `Sort` usam um comparador de ordenação para os elementos da coleção. As comparações podem ser entre elementos da coleção ou entre um elemento e um valor especificado. Para comparar objetos, há o conceito de um `default comparer` e um `explicit comparer`.
@@ -55,6 +56,7 @@ Para fornecer comparações explícitas, alguns métodos aceitam uma implementa�
 A configuração de cultura atual do sistema pode afetar as comparações e as classificações dentro de uma coleção. Por padrão, as comparações e classificações nas classes **Collections** levam em conta a cultura. Para ignorar a configuração de cultura e assim obter comparação consistente e classificar os resultados, use o <xref:System.Globalization.CultureInfo.InvariantCulture%2A> com sobrecargas de membros que aceitam uma <xref:System.Globalization.CultureInfo>. Para obter mais informações, consulte [Executando operações de cadeia de caracteres que não levam em conta a cultura em coleções](../globalization-localization/performing-culture-insensitive-string-operations-in-collections.md) e [Executando operações de cadeia de caracteres que não levam em conta a cultura em matrizes](../globalization-localization/performing-culture-insensitive-string-operations-in-arrays.md).
 
 <a name="BKMK_Equalityandsortexample"></a>
+
 ## <a name="equality-and-sort-example"></a>Exemplo de igualdade e classificação
 
 O código a seguir demonstra uma implementação de <xref:System.IEquatable%601> e <xref:System.IComparable%601> em um objeto de negócios simples. Além disso, quando o objeto é armazenado em uma lista e classificado, você verá que chamar o método <xref:System.Collections.Generic.List%601.Sort> resulta no uso do comparador padrão para o tipo `Part` e o método <xref:System.Collections.Generic.List%601.Sort%28System.Comparison%7B%600%7D%29> implementado usando um método anônimo.

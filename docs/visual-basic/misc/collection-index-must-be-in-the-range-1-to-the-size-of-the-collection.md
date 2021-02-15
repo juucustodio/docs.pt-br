@@ -1,18 +1,20 @@
 ---
-title: Índice de coleção deve estar no intervalo entre 1 e o tamanho da coleção
+description: 'Saiba mais sobre: o índice da coleção deve estar no intervalo 1 até o tamanho da coleção'
+title: Índice de coleção deve estar no intervalo 1 para o tamanho da coleção
 ms.date: 07/20/2015
 f1_keywords:
 - vbrArgument_CollectionIndex
 ms.assetid: feee4d55-0754-40fe-9ce9-288ef543f569
-ms.openlocfilehash: 92bb2c1b0f417347f320fc0fa32aa557b039b212
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: d9398d23896fb8f689ce50eab3f5cc394600f37f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61769896"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100463540"
 ---
-# <a name="collection-index-must-be-in-the-range-1-to-the-size-of-the-collection"></a>Índice de coleção deve estar no intervalo entre 1 e o tamanho da coleção
-O valor de índice fornecido está fora do intervalo válido, o que é 1 para o tamanho da coleção.  
+# <a name="collection-index-must-be-in-the-range-1-to-the-size-of-the-collection"></a>Índice de coleção deve estar no intervalo 1 para o tamanho da coleção
+
+O valor de índice fornecido fica fora do intervalo válido, que é de 1 até o tamanho da coleção.  
   
 ## <a name="to-correct-this-error"></a>Para corrigir este erro  
   

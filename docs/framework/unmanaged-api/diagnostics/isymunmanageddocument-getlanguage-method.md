@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedDocument:: GetLanguage'
 title: Método ISymUnmanagedDocument::GetLanguage
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: c6639418-e9f2-4a99-8ce2-ec9876e0bc79
 topic_type:
 - apiref
-ms.openlocfilehash: 084f3ae12d906f5e80fdb86e65b09d2371fd246b
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: f30636303d310ed91aa4229f52a3197a29190d3a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83614585"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710303"
 ---
 # <a name="isymunmanageddocumentgetlanguage-method"></a>Método ISymUnmanagedDocument::GetLanguage
+
 Obtém o identificador de idioma deste documento  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -33,12 +35,14 @@ HRESULT GetLanguage(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pRetVal`  
  fora Um ponteiro para uma variável que recebe o identificador de idioma.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  S_OK se o método tiver sucesso.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedDocument](isymunmanageddocument-interface.md)

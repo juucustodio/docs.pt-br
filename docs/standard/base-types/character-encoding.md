@@ -2,7 +2,6 @@
 title: Como usar classes de codificação de caracteres no .NET
 description: Saiba como usar classes de codificação de caracteres no .NET.
 ms.date: 12/22/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -11,12 +10,12 @@ helpviewer_keywords:
 - encoding, choosing
 - encoding, fallback strategy
 ms.assetid: bf6d9823-4c2d-48af-b280-919c5af66ae9
-ms.openlocfilehash: c626e79e7bbcd71c90775df8ee8c4d6570c29125
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 520316c0733d5c56b5ab77fbec7d4dd838af6338
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84290572"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94823284"
 ---
 # <a name="how-to-use-character-encoding-classes-in-net"></a>Como usar classes de codificação de caracteres no .NET
 
@@ -43,9 +42,9 @@ Todas as classes de codificação de caracteres no .NET são herdadas da classe 
 
 Você pode recuperar informações sobre todas as codificações disponíveis no .NET chamando o método <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=nameWithType>. O .NET oferece suporte aos esquemas de codificação de caracteres listados na tabela a seguir.
 
-|Classe de codificação|Description|
+|Classe de codificação|Descrição|
 |--------------|-----------|
-|[LOCALIZADOS](xref:System.Text.ASCIIEncoding)|Codifica um intervalo limitado de caracteres usando os menores sete bits de um byte. Como essa codificação só dá suporte a valores de caracteres de U+0000 a U+007F, na maioria dos casos, ela é inadequada para aplicativos internacionalizados.|
+|[ASCII](xref:System.Text.ASCIIEncoding)|Codifica um intervalo limitado de caracteres usando os menores sete bits de um byte. Como essa codificação só dá suporte a valores de caracteres de U+0000 a U+007F, na maioria dos casos, ela é inadequada para aplicativos internacionalizados.|
 |[UTF-7](xref:System.Text.UTF7Encoding)|Representa caracteres como sequências de caracteres ASCII de 7 bits. Caracteres Unicode não ASCII são representados por uma sequência de escape de caracteres ASCII. O UTF-7 dá suporte a protocolos como email e grupo de notícias. No entanto, o UTF-7 não é particularmente seguro ou robusto. Em alguns casos, alterar um bit pode alterar radicalmente a interpretação de toda uma cadeia de caracteres UTF-7. Em outros casos, diferentes cadeias de caracteres UTF-7 podem codificar o mesmo texto. Para as sequências que incluem caracteres não ASCII, o UTF-7 requer mais espaço do que o UTF-8 e a codificação/decodificação é mais lenta. Consequentemente, você deve usar o UTF-8 em vez do UTF-7, se possível.|
 |[UTF-8](xref:System.Text.UTF8Encoding)|Representa cada ponto de código Unicode como uma sequência de um a quatro bytes. O UTF-8 dá suporte a tamanhos de dados de 8 bits e funciona bem com muitos sistemas operacionais existentes. Para o intervalo de caracteres ASCII, o UTF-8 é idêntico à codificação ASCII e permite um conjunto mais amplo de caracteres. No entanto, para scripts em chinês-japonês-coreano (CJK), o UTF-8 pode exigir três bytes para cada caractere e pode causar tamanhos maiores de dados do que o UTF-16. Às vezes, a quantidade de dados ASCII, como marcas HTML, justifica o tamanho aumentado para o intervalo CJK.|
 |[UTF-16](xref:System.Text.UnicodeEncoding)|Representa cada ponto de código Unicode como uma sequência de um a dois inteiros de 16 bits. Os caracteres Unicode mais comuns exigem apenas um ponto de código UTF-16, embora os caracteres suplementares Unicode (U+10000 e maiores) exigem dois pontos de código UTF-16 alternativos. Há suporte para as ordens de byte little endian e big endian. A codificação UTF-16 é usada pelo Common Language Runtime para representar os valores <xref:System.Char> e <xref:System.String>, e é usada pelo sistema operacional Windows para representar valores `WCHAR`.|
@@ -260,7 +259,7 @@ O código a seguir instancia o objeto `CustomMapper` e passa uma instância dele
 [!code-csharp[Conceptual.Encoding#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.encoding/cs/custom1.cs#7)]
 [!code-vb[Conceptual.Encoding#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.encoding/vb/custom1.vb#7)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Introdução à codificação de caracteres no .NET](character-encoding-introduction.md)
 - <xref:System.Text.Encoder>

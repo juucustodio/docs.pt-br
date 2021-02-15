@@ -3,12 +3,13 @@ title: Usando F# no Azure
 description: 'Guia para usar os serviços do Azure com F #'
 author: sylvanc
 ms.date: 07/29/2020
-ms.openlocfilehash: 24ef3fd14a4d0173935fac3e67aadf86110fa6d8
-ms.sourcegitcommit: b4f8849c47c1a7145eb26ce68bc9f9976e0dbec3
+ms.custom: devx-track-fsharp
+ms.openlocfilehash: 16599aa48776acee05edf8201cdd148a87507cdb
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87517367"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899395"
 ---
 # <a name="using-f-on-azure"></a>Usando F# no Azure
 
@@ -41,10 +42,10 @@ Outros recursos para usar o Azure Functions e F#:
 
 O Armazenamento do Azure é uma camada base de serviços de armazenamento para aplicativos modernos que dependem de durabilidade, disponibilidade e escalabilidade para atender às necessidades dos clientes. Os programas F # podem interagir diretamente com os serviços de armazenamento do Azure, usando as técnicas descritas nos artigos a seguir.
 
-* [Introdução ao armazenamento de Blobs do Azure usando F#](blob-storage.md)
-* [Introdução ao armazenamento de Arquivos do Azure usando F#](file-storage.md)
-* [Introdução ao armazenamento de Filas do Azure usando F#](queue-storage.md)
-* [Introdução ao armazenamento de Tabelas do Azure usando F#](table-storage.md)
+* [Introdução ao armazenamento de BLOBs do Azure usando o F #](blob-storage.md)
+* [Introdução ao armazenamento de arquivos do Azure usando o F #](file-storage.md)
+* [Introdução ao armazenamento de filas do Azure usando F #](queue-storage.md)
+* [Introdução ao armazenamento de tabelas do Azure usando F #](table-storage.md)
 
 O Armazenamento do Azure também pode ser usado em conjunto com o Azure Functions por meio de configuração declarativa em vez de chamadas de API explícitas. Consulte [Gatilhos e associações do Azure Functions para Armazenamento do Azure](/azure/azure-functions/functions-bindings-storage) que inclui exemplos de F#.
 
@@ -57,7 +58,7 @@ O Armazenamento do Azure também pode ser usado em conjunto com o Azure Function
 
 ## <a name="using-apache-spark-with-f-on-azure-hdinsight-or-azure-databricks"></a>Usando Apache Spark com F # no Azure HDInsight ou Azure Databricks
 
-[Apache Spark para Azure HDInsight](https://docs.microsoft.com/azure/hdinsight/spark/apache-spark-overview) é uma estrutura de processamento de código-fonte aberto que executa aplicativos de análise de dados em larga escala. O [Azure Databricks](https://docs.microsoft.com/azure/databricks/scenarios/what-is-azure-databricks) é uma plataforma de análise baseada no Apache Spark otimizada para a plataforma de Serviços de Nuvem do Microsoft Azure. O Azure torna o Apache Spark fácil e barato de implantar. Desenvolva seu aplicativo Spark em F # usando [.net para Apache Spark](../../spark/what-is-apache-spark-dotnet.md), um conjunto de associações .net para Apache Spark.
+[Apache Spark para Azure HDInsight](/azure/hdinsight/spark/apache-spark-overview) é uma estrutura de processamento de código-fonte aberto que executa aplicativos de análise de dados em larga escala. O [Azure Databricks](/azure/databricks/scenarios/what-is-azure-databricks) é uma plataforma de análise baseada no Apache Spark otimizada para a plataforma de Serviços de Nuvem do Microsoft Azure. O Azure torna o Apache Spark fácil e barato de implantar. Desenvolva seu aplicativo Spark em F # usando [.net para Apache Spark](../../spark/what-is-apache-spark-dotnet.md), um conjunto de associações .net para Apache Spark.
 
 * [Exemplos do .NET para Apache Spark F #](https://github.com/dotnet/spark/tree/master/examples/Microsoft.Spark.FSharp.Examples)
 * [Instalar notebooks Jupyter interativos do .NET no Azure HDInsight](../../spark/how-to-guides/hdinsight-notebook-installation.md)
@@ -89,7 +90,7 @@ Os Hubs de Eventos do Azure podem ser usados com F# de duas maneiras:
 Os Hubs de Notificação do Azure podem ser usados com F# de duas maneiras:
 
 1. Durante a criação de Azure Functions em F# que enviam resultados para um hub de notificação. Consulte [Gatilhos de saída do Azure Function para Hubs de Notificação](/azure/azure-functions/functions-bindings-notification-hubs), ou
-2. Usando o [SDK do .NET para Azure](https://docs.microsoft.com/archive/blogs/azuremobile/push-notifications-using-notification-hub-and-net-backend). Observe que esses exemplos estão em C#.
+2. Usando o [SDK do .NET para Azure](/archive/blogs/azuremobile/push-notifications-using-notification-hub-and-net-backend). Observe que esses exemplos estão em C#.
 
 ## <a name="implementing-webhooks-on-azure-with-f"></a>Implementação de WebHooks no Azure com F\#
 
@@ -111,7 +112,7 @@ Os temporizadores podem ser implementados em F# e hospedados no Azure por meio d
 
 ## <a name="deploying-and-managing-azure-resources-with-f-scripts"></a>Implantação e gerenciamento de recursos do Azure com scripts em F#
 
-As VMs do Azure podem ser implantadas e gerenciadas programaticamente a partir de scripts em F# usando as APIs e o Microsoft.Azure.Management. Por exemplo, veja [Introdução às bibliotecas de gerenciamento para .NET](https://msdn.microsoft.com/library/dn722415.aspx) e [Como usar o Azure Resource Manager](/azure/azure-resource-manager/resource-manager-deployment-model).
+As VMs do Azure podem ser implantadas e gerenciadas programaticamente a partir de scripts em F# usando as APIs e o Microsoft.Azure.Management. Por exemplo, veja [Introdução às bibliotecas de gerenciamento para .NET](/previous-versions/azure/dn722415(v=azure.100)) e [Como usar o Azure Resource Manager](/azure/azure-resource-manager/resource-manager-deployment-model).
 
 Da mesma forma, os outros recursos do Azure também podem ser implantados e gerenciados a partir de scripts em F# usando os mesmos componentes. Por exemplo, você pode criar contas de armazenamento, implantar serviços de nuvem do Azure, criar Azure Cosmos DB instâncias e gerenciar hubs de notificação do Azure programaticamente de scripts F #.
 

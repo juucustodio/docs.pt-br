@@ -1,13 +1,13 @@
 ---
 title: Comando dotnet sln
 description: O comando dotnet-sln oferece uma opção conveniente para adicionar, remover e listar projetos em um arquivo de solução.
-ms.date: 02/14/2020
-ms.openlocfilehash: efe52f64a29c8825070bae9ee96b430b32176ffa
-ms.sourcegitcommit: 2560a355c76b0a04cba0d34da870df9ad94ceca3
+ms.date: 12/07/2020
+ms.openlocfilehash: af502efe842e9c9610137738d86c05e00a3b37df
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "89053025"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97633644"
 ---
 # <a name="dotnet-sln"></a>dotnet sln
 
@@ -15,7 +15,7 @@ ms.locfileid: "89053025"
 
 ## <a name="name"></a>Nome
 
-`dotnet sln` -Lista ou modifica os projetos em um arquivo de solução .NET Core.
+`dotnet sln` -Lista ou modifica os projetos em um arquivo de solução .NET.
 
 ## <a name="synopsis"></a>Sinopse
 
@@ -25,7 +25,7 @@ dotnet sln [<SOLUTION_FILE>] [command]
 dotnet sln [command] -h|--help
 ```
 
-## <a name="description"></a>Descrição
+## <a name="description"></a>Description
 
 O `dotnet sln` comando fornece uma maneira conveniente de listar e modificar projetos em um arquivo de solução.
 
@@ -35,7 +35,7 @@ Para usar o comando `dotnet sln`, o arquivo de solução já deve existir. Se vo
 dotnet new sln
 ```
 
-## <a name="arguments"></a>Argumentos
+## <a name="arguments"></a>Arguments
 
 - **`SOLUTION_FILE`**
 
@@ -59,7 +59,7 @@ Lista todos os projetos em um arquivo de solução.
 dotnet sln list [-h|--help]
 ```
 
-#### <a name="arguments"></a>Argumentos
+#### <a name="arguments"></a>Arguments
 
 - **`SOLUTION_FILE`**
 
@@ -82,7 +82,7 @@ dotnet sln [<SOLUTION_FILE>] add [--in-root] [-s|--solution-folder <PATH>] <PROJ
 dotnet sln add [-h|--help]
 ```
 
-#### <a name="arguments"></a>Argumentos
+#### <a name="arguments"></a>Arguments
 
 - **`SOLUTION_FILE`**
 
@@ -104,7 +104,7 @@ dotnet sln add [-h|--help]
 
 - **`-s|--solution-folder <PATH>`**
 
-  O caminho da pasta da solução de destino para a qual adicionar os projetos. Disponível desde o SDK do .NET Core 3.0.
+  O caminho da [pasta da solução](/visualstudio/ide/solutions-and-projects-in-visual-studio#solution-folder) de destino para a qual adicionar os projetos. Disponível desde o SDK do .NET Core 3.0.
 
 ### `remove`
 
@@ -117,7 +117,7 @@ dotnet sln [<SOLUTION_FILE>] remove <PROJECT_PATH> [<PROJECT_PATH>...]
 dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
 ```
 
-#### <a name="arguments"></a>Argumentos
+#### <a name="arguments"></a>Arguments
 
 - **`SOLUTION_FILE`**
 
@@ -194,3 +194,19 @@ dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
   ```dotnetcli
   dotnet sln todo.sln remove (ls -r **/*.csproj)
   ```
+
+- Crie uma solução, um aplicativo de console e duas bibliotecas de classe. Adicione os projetos à solução e use a `--solution-folder` opção de `dotnet sln` para organizar as bibliotecas de classes em uma pasta de solução.
+
+  ```dotnetcli
+  dotnet new sln -n mysolution
+  dotnet new console -o myapp
+  dotnet new classlib -o mylib1
+  dotnet new classlib -o mylib2
+  dotnet sln mysolution.sln add myapp\myapp.csproj
+  dotnet sln mysolution.sln add mylib1\mylib1.csproj --solution-folder mylibs
+  dotnet sln mysolution.sln add mylib2\mylib2.csproj --solution-folder mylibs
+  ```
+
+  A captura de tela a seguir mostra o resultado no Visual Studio 2019 **Gerenciador de soluções**:
+
+  :::image type="content" source="media/dotnet-sln/dotnet-sln-solution-folder.png" alt-text="Gerenciador de Soluções mostrando projetos de biblioteca de classes agrupados em uma pasta de solução.":::

@@ -1,19 +1,21 @@
 ---
+description: 'Saiba mais sobre: navegação de conjunto de nós usando XPathNavigator'
 title: Navegação do nó usando XPathNavigator
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 ms.assetid: 1a954b41-7173-40bc-8544-d430f209b1e5
-ms.openlocfilehash: 132154afdfd3e5bd6769bfcce338e598136e7515
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: d4e902cbe8cf93fe753c9cbdd01d6a369152c092
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84288752"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675956"
 ---
 # <a name="node-set-navigation-using-xpathnavigator"></a>Navegação do nó usando XPathNavigator
+
 Você pode navegar sobre nós em <xref:System.Xml.XPath.XPathDocument> ou o objeto de <xref:System.Xml.XmlDocument> que usa os métodos definidos de navegação do nó de <xref:System.Xml.XPath.XPathNavigator> classe. Você pode navegar sobre todos os nós ou sobre um conjunto selecionado de nós retornados por um dos métodos de seleção de classe de <xref:System.Xml.XPath.XPathNavigator> .  
   
 ## <a name="element-node-set-navigation"></a>Navegação do nó de elemento  
+
  A classe de <xref:System.Xml.XPath.XPathNavigator> fornece vários métodos usados para navegar em nós do elemento. A tabela a seguir mostra os métodos de navegação disponíveis e uma descrição de como se movem; isso não inclui os métodos usados para navegar nós de atributo e de namespace.  
   
  Para saber mais sobre como escolher nós no objeto <xref:System.Xml.XPath.XPathNavigator>, confira [Selecionar, avaliar e corresponder dados XML usando XPathNavigator](selecting-evaluating-and-matching-xml-data-using-xpathnavigator.md). Para saber mais sobre a navegação de nós de atributo e do namespace, confira [Navegação do nó de atributo e do namespace usando XPathNavigator](attribute-and-namespace-node-navigation-using-xpathnavigator.md).  
@@ -32,6 +34,7 @@ Você pode navegar sobre nós em <xref:System.Xml.XPath.XPathDocument> ou o obje
 |<xref:System.Xml.XPath.XPathNavigator.MoveToRoot%2A>|Move <xref:System.Xml.XPath.XPathNavigator> ao nó raiz de documento XML.|  
   
 ## <a name="comments-and-processing-instruction-node-navigation"></a>Comentários e navegação do nó de instrução de processamento  
+
  Os seguintes métodos da classe <xref:System.Xml.XPath.XPathNavigator> são válidos para mover para comentários ou as instruções de processamento de outros nós em um documento XML.  
   
 - <xref:System.Xml.XPath.XPathNavigator.MoveTo%2A>  
@@ -50,7 +53,7 @@ Você pode navegar sobre nós em <xref:System.Xml.XPath.XPathDocument> ou o obje
   
 - <xref:System.Xml.XPath.XPathNavigator.MoveToId%2A>  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>

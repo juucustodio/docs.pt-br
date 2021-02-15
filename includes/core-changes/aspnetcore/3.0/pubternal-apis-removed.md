@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: b1fb9647091cecb80b9c2f04ec9b6bb156eb39ba
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 224cd3c7897c64ef05baba7d3d31dbe5ac0dd610
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "84466830"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90606765"
 ---
 ### <a name="pubternal-apis-removed"></a>APIs "Pubternal" removidas
 
@@ -22,14 +22,14 @@ As APIs afetadas são marcadas com o `public` modificador de acesso e existem em
 
 #### <a name="new-behavior"></a>Novo comportamento
 
-As APIs afetadas são marcadas com o modificador de acesso [interno](/dotnet/csharp/language-reference/keywords/internal) e não podem mais ser usadas pelo código fora desse assembly.
+As APIs afetadas são marcadas com o modificador de acesso [interno](../../../../docs/csharp/language-reference/keywords/internal.md) e não podem mais ser usadas pelo código fora desse assembly.
 
 #### <a name="reason-for-change"></a>Motivo da alteração
 
 As diretrizes para essas :::no-loc text="\"pubternal\""::: APIs eram:
 
 * Pode ser alterado sem aviso prévio.
-* Não estavam sujeitos às políticas do .NET para evitar alterações significativas.
+* Não estavam sujeitas às políticas do .NET para evitar alterações interruptivas.
 
 Deixar as APIs `public` (mesmo nos `*.Internal` namespaces) era confusa para os clientes.
 
@@ -43,7 +43,7 @@ Por exemplo, considere o seguinte código de buffer de solicitação HTTP em um 
 HttpContext.Request.EnableRewind();
 ```
 
-Em um projeto ASP.NET Core 3,0, substitua a `EnableRewind` chamada por uma chamada para o `EnableBuffering` método de extensão. O recurso de buffer de solicitação funciona como fazia no passado. `EnableBuffering`chama a `internal` API Now.
+Em um projeto ASP.NET Core 3,0, substitua a `EnableRewind` chamada por uma chamada para o `EnableBuffering` método de extensão. O recurso de buffer de solicitação funciona como fazia no passado. `EnableBuffering` chama a `internal` API Now.
 
 ```csharp
 HttpContext.Request.EnableBuffering();

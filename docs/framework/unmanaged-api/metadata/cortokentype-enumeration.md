@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorTokenType'
 title: Enumeração CorTokenType
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 93c9a369-225f-4eff-9b78-3fbee4902cf1
 topic_type:
 - apiref
-ms.openlocfilehash: 629e18b6cd2fd7910804ecc608a45d2406dddea1
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 954bddccd8fe20be46080f8843bcf754e0cf1bbb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84007488"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678387"
 ---
 # <a name="cortokentype-enumeration"></a>Enumeração CorTokenType
+
 Indica o tipo de um token de metadados.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -61,7 +63,7 @@ typedef enum CorTokenType {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`mdtModule`|Um `mdModule` token.|  
 |`mdtTypeRef`|Um `mdTypeRef` token.|  
@@ -91,15 +93,17 @@ typedef enum CorTokenType {
 |`mdtBaseType`|Não usado.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Cada valor é igual ao valor do byte superior no token de metadados correspondente.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorHdr. h  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumerações de metadados](metadata-enumerations.md)

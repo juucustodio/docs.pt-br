@@ -7,14 +7,15 @@ helpviewer_keywords:
 - technology overview [WCF]
 - WCF [WCF], technology overview
 ms.assetid: 40e1009d-ef15-450b-9848-62eabe5e5738
-ms.openlocfilehash: 84cb45d62409769a79fa6a401fdb1aa6934c4099
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: b63ce62cd39ef7961db1c0ac86c8cbd6ca871dbd
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85245603"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96261885"
 ---
 # <a name="what-is-windows-communication-foundation"></a>O que é o Windows Communication Foundation
+
 O Windows Communication Foundation (WCF) é uma estrutura para a criação de aplicativos orientados a serviços. Usando o WCF, você pode enviar dados como mensagens assíncronas de um ponto de extremidade de serviço para outro. Um ponto de extremidade de serviço pode ser parte de um serviço disponível continuamente hospedado pelo IIS, ou pode ser um serviço hospedado em um aplicativo. Um ponto de extremidade pode ser um cliente de um serviço que solicita dados de um ponto de extremidade de serviço. As mensagens podem ser simples como um único caractere ou uma palavra enviada como XML ou complexo como um fluxo de dados binários. Alguns cenários de exemplo incluem:
 
 - Um serviço seguro para processar transações comerciais.
@@ -65,7 +66,7 @@ O WCF inclui o seguinte conjunto de recursos. Para obter mais informações, con
 
 - **Mensagens confiáveis e na fila**
 
-     O WCF dá suporte à troca de mensagens confiável usando sessões confiáveis implementadas em mensagens WS-Reliable e usando o MSMQ. Para obter mais informações sobre o suporte a mensagens confiáveis e enfileiradas no WCF [, consulte filas e sessões confiáveis](./feature-details/queues-and-reliable-sessions.md).
+     O WCF dá suporte à troca de mensagens confiável usando sessões confiáveis implementadas em WS-Reliable mensagens e usando o MSMQ. Para obter mais informações sobre o suporte a mensagens confiáveis e enfileiradas no WCF [, consulte filas e sessões confiáveis](./feature-details/queues-and-reliable-sessions.md).
 
 - **Mensagens duráveis**
 
@@ -101,7 +102,7 @@ Os recursos de hospedagem do servidor de aplicativos do Windows Server AppFabric
 - [Conceitos fundamentais do Windows Communication Foundation](fundamental-concepts.md)
 - [Arquitetura do Windows Communication Foundation](architecture.md)
 - [Diretrizes e práticas recomendadas](guidelines-and-best-practices.md)
-- [Tutorial de Introdução](getting-started-tutorial.md)
-- [Guia da documentação](guide-to-the-documentation.md)
-- [Programação básica do WCF](basic-wcf-programming.md)
-- [Exemplos do Windows Communication Foundation](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751514%28v=vs.90%29)
+- [Guia de introdução ao tutorial](getting-started-tutorial.md)
+- [Guia para a documentação](guide-to-the-documentation.md)
+- [Programação de WCF básica](basic-wcf-programming.md)
+- [Exemplos do Windows Communication Foundation](/previous-versions/dotnet/netframework-3.5/ms751514(v=vs.90))

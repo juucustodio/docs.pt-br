@@ -3,18 +3,20 @@ title: Tutorial de depuração de perda de memória
 description: Saiba como depurar um vazamento de memória no .NET Core.
 ms.topic: tutorial
 ms.date: 04/20/2020
-ms.openlocfilehash: ff684f9b9402cb8b7b648e792a1d37ddcc96b399
-ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
+ms.openlocfilehash: 6764663eedc28cd75f9f68927a12ae5b2255d11b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86924884"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100431445"
 ---
 # <a name="debug-a-memory-leak-in-net-core"></a>Depurar um vazamento de memória no .NET Core
 
 **Este artigo aplica-se a:** ✔️ SDK do .net Core 3,1 e versões posteriores
 
-Este tutorial demonstra as ferramentas para analisar um vazamento de memória do .NET Core.
+Um vazamento de memória pode ocorrer quando seu aplicativo faz referência a objetos que ele não precisa mais para executar a tarefa desejada. Fazer referência a objetos dizia faz com que o coletor de lixo não consiga recuperar a memória usada, muitas vezes resultando em degradação do desempenho e, potencialmente, gerando uma <xref:System.OutOfMemoryException> .
+
+Este tutorial demonstra as ferramentas para analisar um vazamento de memória em um aplicativo .NET Core usando as ferramentas da CLI do diagnóstico do .NET. Se você estiver no Windows, poderá usar as ferramentas de [diagnóstico de memória do Visual Studio](/visualstudio/profiling/memory-usage) para depurar o vazamento de memória.
 
 Este tutorial usa um aplicativo de exemplo, que é projetado para vazar a memória intencionalmente. O exemplo é fornecido como um exercício. Você pode analisar um aplicativo que está vazando involuntariamente a memória também.
 
@@ -34,7 +36,7 @@ O tutorial usa:
 - [dotnet – rastreamento](dotnet-trace.md) para listar processos.
 - [dotnet-contadores](dotnet-counters.md) para verificar o uso de memória gerenciada.
 - [dotnet-despejo](dotnet-dump.md) para coletar e analisar um arquivo de despejo.
-- Um aplicativo de [destino de depuração de exemplo](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios/) para diagnosticar.
+- Um aplicativo de [destino de depuração de exemplo](/samples/dotnet/samples/diagnostic-scenarios/) para diagnosticar.
 
 O tutorial pressupõe que o exemplo e as ferramentas estejam instalados e prontos para uso.
 
@@ -42,7 +44,7 @@ O tutorial pressupõe que o exemplo e as ferramentas estejam instalados e pronto
 
 Antes de começar a coletar dados de diagnóstico para ajudar a raiz a causar esse cenário, você precisa certificar-se de que está realmente vendo um vazamento de memória (aumento de memória). Você pode usar a ferramenta [dotnet-Counters](dotnet-counters.md) para confirmar isso.
 
-Abra uma janela de console e navegue até o diretório em que você baixou e descompactou o [destino de depuração de exemplo](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios/). Execute o destino:
+Abra uma janela de console e navegue até o diretório em que você baixou e descompactou o [destino de depuração de exemplo](/samples/dotnet/samples/diagnostic-scenarios/). Execute o destino:
 
 ```dotnetcli
 dotnet run
@@ -116,7 +118,7 @@ Ao assistir ao uso de memória, você pode dizer com segurança que a memória e
 
 Ao analisar possíveis vazamentos de memória, você precisa ter acesso ao heap de memória do aplicativo. Em seguida, você pode analisar o conteúdo da memória. Examinando relações entre objetos, você cria teorias sobre o motivo pelo qual a memória não está sendo liberada. Uma fonte de dados de diagnóstico comum é um despejo de memória no Windows ou o dump de núcleo equivalente no Linux. Para gerar um despejo de um aplicativo .NET Core, você pode usar a ferramenta [dotnet-dump)](dotnet-dump.md) .
 
-Usando o [destino de depuração de exemplo](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios/) iniciado anteriormente, execute o seguinte comando para gerar um despejo de núcleo do Linux:
+Usando o [destino de depuração de exemplo](/samples/dotnet/samples/diagnostic-scenarios/) iniciado anteriormente, execute o seguinte comando para gerar um despejo de núcleo do Linux:
 
 ```dotnetcli
 dotnet-dump collect -p 4807
@@ -133,7 +135,7 @@ Complete
 
 Depois que o despejo for coletado, você deverá ter informações suficientes para diagnosticar o processo com falha. Se o processo com falha estiver em execução em um servidor de produção, agora é o momento ideal para a remediação de curto prazo reiniciando o processo.
 
-Neste tutorial, você está pronto para o destino de [depuração de exemplo](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios/) e pode fechá-lo. Navegue até o terminal que iniciou o servidor e pressione <kbd>Ctrl + C</kbd>.
+Neste tutorial, você está pronto para o destino de [depuração de exemplo](/samples/dotnet/samples/diagnostic-scenarios/) e pode fechá-lo. Navegue até o terminal que iniciou o servidor e pressione <kbd>Ctrl + C</kbd>.
 
 ### <a name="analyze-the-core-dump"></a>Analisar o dump principal
 
@@ -146,7 +148,7 @@ dotnet-dump analyze core_20190430_185145
 Em que `core_20190430_185145` é o nome do dump principal que você deseja analisar.
 
 > [!NOTE]
-> Se você vir um erro reclamando que *libdl.so* não pode ser encontrado, talvez seja necessário instalar o pacote *libc6-dev* . Para saber mais, confira [Pré-requisitos para o .NET Core no Linux](../install/dependencies.md?pivots=os-linux).
+> Se você vir um erro reclamando que *libdl.so* não pode ser encontrado, talvez seja necessário instalar o pacote *libc6-dev* . Para saber mais, confira [Pré-requisitos para o .NET Core no Linux](../install/linux.md).
 
 Você verá um prompt onde pode inserir comandos SOS. Normalmente, a primeira coisa que você deseja examinar é o estado geral do heap gerenciado:
 
@@ -232,12 +234,13 @@ Neste tutorial, você iniciou um servidor Web de exemplo. Esse servidor deve ter
 
 Você também pode excluir o arquivo de despejo que foi criado.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [dotnet-rastrear](dotnet-trace.md) para listar processos
 - [dotnet-contadores](dotnet-counters.md) para verificar o uso de memória gerenciada
 - [dotnet-despejo](dotnet-dump.md) para coletar e analisar um arquivo de despejo
 - [dotnet/diagnóstico](https://github.com/dotnet/diagnostics/tree/master/documentation/tutorial)
+- [Usar o Visual Studio para depurar vazamentos de memória](/visualstudio/profiling/memory-usage)
 
 ## <a name="next-steps"></a>Próximas etapas
 

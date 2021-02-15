@@ -5,18 +5,18 @@ ms.date: 10/01/2018
 helpviewer_keywords:
 - Memory&lt;T&gt; and Span&lt;T&gt; best practices
 - using Memory&lt;T&gt; and Span&lt;T&gt;
-ms.openlocfilehash: d9a50fa18e027b6df7415438e1a5584003f7a094
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 4a08148dc8a4736b40af45d11490200056bb6f83
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85245590"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506350"
 ---
 # <a name="memoryt-and-spant-usage-guidelines"></a>Diretrizes de uso de Memory\<T> e Span\<T>
 
-O .NET Core inclui vários tipos que representam uma região contígua arbitrária de memória. O .NET Core 2.0 introduziu <xref:System.Span%601> e <xref:System.ReadOnlySpan%601>, que são buffers de memória leves que podem ter suporte de memória gerenciada ou não gerenciada. Como esses tipos só podem ser armazenados na pilha, eles são inadequados para vários cenários, incluindo chamadas de método assíncronas. O .NET Core 2.1 adiciona vários outros tipos, inclusive <xref:System.Memory%601>, <xref:System.ReadOnlyMemory%601>, <xref:System.Buffers.IMemoryOwner%601> e <xref:System.Buffers.MemoryPool%601>. Assim como <xref:System.Span%601>, <xref:System.Memory%601> e os tipos relacionados podem ter suporte de memória gerenciada e não gerenciada. Diferentemente de <xref:System.Span%601>, <xref:System.Memory%601> pode ser armazenado no heap gerenciado.
+O .NET Core inclui vários tipos que representam uma região contígua arbitrária de memória. O .NET Core 2,0 introduziu <xref:System.Span%601> e <xref:System.ReadOnlySpan%601> , que são buffers de memória leves que encapsulam referências a memória gerenciada ou não gerenciada. Como esses tipos só podem ser armazenados na pilha, eles são inadequados para vários cenários, incluindo chamadas de método assíncronas. O .NET Core 2.1 adiciona vários outros tipos, inclusive <xref:System.Memory%601>, <xref:System.ReadOnlyMemory%601>, <xref:System.Buffers.IMemoryOwner%601> e <xref:System.Buffers.MemoryPool%601>. Assim como <xref:System.Span%601>, <xref:System.Memory%601> e os tipos relacionados podem ter suporte de memória gerenciada e não gerenciada. Diferentemente de <xref:System.Span%601>, <xref:System.Memory%601> pode ser armazenado no heap gerenciado.
 
-Tanto <xref:System.Span%601> como <xref:System.Memory%601> representam buffers de dados estruturados que podem ser usados em pipelines. Ou seja, eles são projetados para que alguns ou todos os dados possam ser passados com eficiência para os componentes no pipeline que pode processá-los e, opcionalmente, modificar o buffer. Como <xref:System.Memory%601> e os tipos relacionados podem ser acessados por vários componentes ou threads, é importante que os desenvolvedores sigam algumas diretrizes de uso padrão para criar um código robusto.
+Ambos <xref:System.Span%601> e <xref:System.Memory%601> são wrappers em buffers de dados estruturados que podem ser usados em pipelines. Ou seja, eles são projetados para que alguns ou todos os dados possam ser passados com eficiência para os componentes no pipeline que pode processá-los e, opcionalmente, modificar o buffer. Como <xref:System.Memory%601> e os tipos relacionados podem ser acessados por vários componentes ou threads, é importante que os desenvolvedores sigam algumas diretrizes de uso padrão para criar um código robusto.
 
 ## <a name="owners-consumers-and-lifetime-management"></a>Gerenciamento de proprietários, consumidores e vida útil
 
@@ -185,7 +185,7 @@ Essa orientação se aplica a métodos que retornam <xref:System.Threading.Tasks
 
 **#5 de regra: se o Construtor aceitar memória \<T> como um parâmetro, os métodos de instância no objeto construído serão considerados consumidores da instância de memória \<T> .**
 
-Considere o exemplo a seguir:
+Considere o seguinte exemplo:
 
 ```csharp
 class OddValueExtractor

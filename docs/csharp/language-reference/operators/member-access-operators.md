@@ -1,7 +1,7 @@
 ---
 title: Operadores de acesso de membro e expressões-referência C#
 description: Aprenda sobre operadores de C# que você pode usar para acessar membros de tipo.
-ms.date: 04/17/2020
+ms.date: 11/13/2020
 author: pkulikov
 f1_keywords:
 - ._CSharpKeyword
@@ -32,12 +32,12 @@ helpviewer_keywords:
 - hat operator [C#]
 - .. operator [C#]
 - range operator [C#]
-ms.openlocfilehash: 688a1fcff84a6e8f2fa31533a2bc459bf8c8717a
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.openlocfilehash: 28d3d9c3261f1a852d16f2637309b21412611c10
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87916787"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95691234"
 ---
 # <a name="member-access-operators-and-expressions-c-reference"></a>Operadores de acesso de membro e expressões (referência C#)
 
@@ -138,9 +138,6 @@ No exemplo anterior, se você não usar o `??` operador, o `numbers?.Length < 2`
 
 O operador de acesso do membro condicional nulo `?.` também é conhecido como o operador Elvis.
 
-> [!NOTE]
-> No C# 8, o [operador NULL-tolerante](null-forgiving.md) encerra a lista de operações condicionais nulas anteriores. Por exemplo, a expressão `x?.y!.z` é analisada como `(x?.y)!.z` . Devido a essa interpretação, `z` é avaliada mesmo se `x` for `null` , o que pode resultar em um <xref:System.NullReferenceException> .
-
 ### <a name="thread-safe-delegate-invocation"></a>Invocação de delegado thread-safe
 
 Use o operador `?.` para verificar se um delegado é não nulo e chame-o de uma forma thread-safe (por exemplo, quando você [aciona um evento](../../../standard/events/how-to-raise-and-consume-events.md)), conforme mostrado no código a seguir:
@@ -209,7 +206,7 @@ Para obter mais informações, consulte [índices e intervalos](../../tutorials/
 
 Os `.` `()` operadores,, `^` e `..` não podem ser sobrecarregados. O operador `[]` também é considerado um operador não sobrecarregável. Use [indexadores](../../programming-guide/indexers/index.md) para permitir a indexação com tipos definidos pelo usuário.
 
-## <a name="c-language-specification"></a>especificação da linguagem C#
+## <a name="c-language-specification"></a>Especificação da linguagem C#
 
 Para obter mais informações, confira as seguintes seções da [especificação da linguagem C#](~/_csharplang/spec/introduction.md):
 
@@ -220,7 +217,7 @@ Para obter mais informações, confira as seguintes seções da [especificação
 
 Para obter mais informações sobre índices e intervalos, consulte a [Nota de proposta de recurso](~/_csharplang/proposals/csharp-8.0/ranges.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Referência de C#](../index.md)
 - [Operadores e expressões C#](index.md)

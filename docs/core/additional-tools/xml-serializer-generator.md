@@ -1,16 +1,16 @@
 ---
 title: Microsoft XML Serializer Generator
 description: Uma visão geral sobre o Microsoft XML Serializer Generator. Use o XML Serializer Generator para gerar um assembly de serialização XML para os tipos contidos em seu projeto.
-author: mlacouture
+author: honggit
 ms.date: 01/19/2017
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: efa0925a96fcdd4356109632fa77199edde73c26
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 4b408326bb9f1bc3b82acb92e8daabfd90be43f6
+ms.sourcegitcommit: 7e42488c2f8f63f6d499b5f8fb1dec5bac9ad254
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84284280"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957891"
 ---
 # <a name="using-microsoft-xml-serializer-generator-on-net-core"></a>Usando o Microsoft XML Serializer Generator no .NET Core
 
@@ -18,15 +18,15 @@ Este tutorial ensina como usar o Microsoft XML Serializer Generator em um aplica
 
 > [!div class="checklist"]
 >
-> - Como criar um aplicativo do .NET Core
+> - Como criar um aplicativo .NET Core
 > - Como adicionar uma referência ao pacote Microsoft.XmlSerializer.Generator
-> - Como editar o MyApp.csproj para adicionar dependências
+> - Como editar seu MyApp.csproj para adicionar dependências
 > - Como adicionar uma classe e um XmlSerializer
 > - Como compilar e executar o aplicativo
 
 Como o [XML Serializer Generator (sgen.exe)](../../standard/serialization/xml-serializer-generator-tool-sgen-exe.md) para o .NET Framework, o [pacote NuGet Microsoft.XmlSerializer.Generator](https://www.nuget.org/packages/Microsoft.XmlSerializer.Generator) é o equivalente para projetos do .NET Core e .NET Standard. Ele cria um assembly de serialização de XML para tipos contidos em um assembly a fim de melhorar o desempenho de inicialização da serialização de XML ao serializar ou desserializar objetos desses tipos usando <xref:System.Xml.Serialization.XmlSerializer>.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 Para concluir este tutorial:
 
@@ -40,7 +40,7 @@ Para concluir este tutorial:
 
 As instruções a seguir mostram como usar o XML Serializer Generator em um aplicativo de console do .NET Core.
 
-### <a name="create-a-net-core-console-application"></a>Criar um aplicativo de console do .NET Core
+### <a name="create-a-net-core-console-application"></a>Criar um aplicativo de console .NET Core
 
 Abra um prompt de comando e crie uma pasta chamada *MyApp*. Navegue até a pasta criada e digite o seguinte comando:
 
@@ -112,7 +112,7 @@ dotnet run
 ```
 
 > [!NOTE]
-> [`dotnet run`](../tools/dotnet-run.md)chama [`dotnet build`](../tools/dotnet-build.md) para garantir que os destinos de compilação foram criados e, em seguida, chama `dotnet <assembly.dll>` para executar o aplicativo de destino.
+> [`dotnet run`](../tools/dotnet-run.md) chama [`dotnet build`](../tools/dotnet-build.md) para garantir que os destinos de compilação foram criados e, em seguida, chama `dotnet <assembly.dll>` para executar o aplicativo de destino.
 
 > [!IMPORTANT]
 > Os comandos e as etapas mostradas neste tutorial para executar o aplicativo são usadas somente durante o tempo de desenvolvimento. Quando estiver pronto para implantar o aplicativo, dê uma olhada nas diferentes [estratégias de implantação](../deploying/index.md) para aplicativos do .NET Core e no comando [`dotnet publish`](../tools/dotnet-publish.md).
@@ -131,5 +131,5 @@ Parabéns! Você acabou de:
 ## <a name="related-resources"></a>Recursos relacionados
 
 - [Apresentando a serialização XML](../../standard/serialization/introducing-xml-serialization.md)
-- [Como serializar usando XmlSerializer (C#)](../../csharp/programming-guide/concepts/linq/how-to-serialize-using-xmlserializer.md)
-- [Como serializar usando XmlSerializer (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/how-to-serialize-using-xmlserializer.md)
+- [Como serializar usando XmlSerializer (C#)](../../standard/linq/serialize-xmlserializer.md)
+- [Como serializar usando XmlSerializer (Visual Basic)](../../standard/linq/serialize-xmlserializer.md)

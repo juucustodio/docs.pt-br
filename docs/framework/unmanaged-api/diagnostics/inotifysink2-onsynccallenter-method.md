@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: INotifySink2:: OnSyncCallEnter'
 title: Método INotifySink2::OnSyncCallEnter
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: e33265be-c25d-4145-ad02-c3e89d6f26c1
 topic_type:
 - apiref
-ms.openlocfilehash: 85f00698f42f120b209cca14f293a58ae4c65f6f
-ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
+ms.openlocfilehash: e7537b16ec8ea8d92ad92498c1bfdac5a9de6475
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83442027"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800273"
 ---
 # <a name="inotifysink2onsynccallenter-method"></a>Método INotifySink2::OnSyncCallEnter
+
 É invocado ao inserir uma chamada.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,6 +39,7 @@ HRESULT OnSyncCallEnter
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `in_CallID`  
  no ID da chamada que está sendo inserida. Consulte [estrutura de CALL_ID](call-id-structure.md).  
   
@@ -47,12 +50,14 @@ HRESULT OnSyncCallEnter
  no Tamanho do buffer de chamada, em bytes.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  S_OK se o método tiver sucesso.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** ProtocolNotify2. idl  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface INotifySink2](inotifysink2-interface.md)
 - [Interface INotifySource2](inotifysource2-interface.md)

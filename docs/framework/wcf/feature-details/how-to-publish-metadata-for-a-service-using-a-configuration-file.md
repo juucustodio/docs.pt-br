@@ -1,16 +1,17 @@
 ---
-title: Como publicar metadados para um serviço usando um arquivo de configuração
+title: 'Como: publicar metadados para um serviço usando um arquivo de configuração'
 description: Saiba como publicar metadados para um serviço WCF usando um arquivo de configuração. A publicação permite que os clientes obtenham esses metadados usando uma solicitação GET ou HTTP/GET.
 ms.date: 03/30/2017
 ms.assetid: f061443f-92df-4824-b36a-609c4cd14a17
-ms.openlocfilehash: d5d425be7f02a204476c4f6e81441aca9ea39fcc
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: eb7aeb4275e367bfc4463a7289d4bc3ff77ff9f4
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85246812"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96295542"
 ---
-# <a name="how-to-publish-metadata-for-a-service-using-a-configuration-file"></a>Como publicar metadados para um serviço usando um arquivo de configuração
+# <a name="how-to-publish-metadata-for-a-service-using-a-configuration-file"></a>Como: publicar metadados para um serviço usando um arquivo de configuração
+
 Este é um dos dois tópicos de instruções que demonstram a publicação de metadados para um serviço Windows Communication Foundation (WCF). Há duas maneiras de especificar como um serviço deve publicar metadados, usando um arquivo de configuração e usando código. Este tópico mostra como publicar metadados para um serviço usando um arquivo de configuração.  
   
 > [!CAUTION]
@@ -99,7 +100,7 @@ namespace Metadata.Samples
 
 3. Adicione um `<behavior>` elemento ao `<serviceBehaviors>` elemento e especifique um valor para o `name` atributo do `<behavior>` elemento.  
 
-4. Adicione um `<serviceMetadata>` elemento ao `<behavior>` elemento. Defina o `httpGetEnabled` atributo como `true` e o `policyVersion` atributo como Policy15. `httpGetEnabled`permite que o serviço responda a solicitações de metadados feitas por uma solicitação HTTP GET. `policyVersion`instrui o serviço a estar em conformidade com o WS-Policy 1,5 ao gerar metadados.  
+4. Adicione um `<serviceMetadata>` elemento ao `<behavior>` elemento. Defina o `httpGetEnabled` atributo como `true` e o `policyVersion` atributo como Policy15. `httpGetEnabled` permite que o serviço responda a solicitações de metadados feitas por uma solicitação HTTP GET. `policyVersion` informa ao serviço para estar em conformidade com WS-Policy 1,5 ao gerar metadados.  
 
 5. Adicione um `behaviorConfiguration` atributo ao `<service>` elemento e especifique o `name` atributo do `<behavior>` elemento adicionado na etapa 1, conforme mostrado no exemplo de código a seguir.  
   
@@ -141,13 +142,13 @@ namespace Metadata.Samples
   
 7. Para os pontos de extremidade de metadados adicionados na etapa anterior, defina o `binding` atributo como um dos seguintes:  
   
-    - `mexHttpBinding`para publicação HTTP.  
+    - `mexHttpBinding` para publicação HTTP.  
   
-    - `mexHttpsBinding`para publicação HTTPS.  
+    - `mexHttpsBinding` para publicação HTTPS.  
   
-    - `mexNamedPipeBinding`para publicação de pipe nomeado.  
+    - `mexNamedPipeBinding` para publicação de pipe nomeado.  
   
-    - `mexTcpBinding`para publicação de TCP.  
+    - `mexTcpBinding` para publicação de TCP.  
   
 8. Para os pontos de extremidade de metadados adicionados em uma etapa anterior, defina o endereço igual a:  
   
@@ -183,6 +184,7 @@ namespace Metadata.Samples
      Como o serviço tem um <xref:System.ServiceModel.Description.ServiceMetadataBehavior> com o `httpGetEnabled` definido como `true` , o serviço tem metadados de publicação habilitados e, como nenhum ponto de extremidade foi explicitamente adicionado, o tempo de execução adiciona os pontos de extremidade padrão. Para obter mais informações sobre pontos de extremidade, associações e comportamentos padrão, confira [Configuração simplificada](../simplified-configuration.md) e [Configuração simplificada para serviços WCF](../samples/simplified-configuration-for-wcf-services.md).  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo de código a seguir mostra a implementação de um serviço WCF básico e o arquivo de configuração que publica metadados para o serviço.  
   
 ```csharp  
@@ -257,8 +259,8 @@ namespace Metadata.Samples
 ## <a name="see-also"></a>Veja também
 
 - <xref:System.ServiceModel.Description.ServiceMetadataBehavior>
-- [Como hospedar um serviço do WCF em um aplicativo gerenciado](../how-to-host-a-wcf-service-in-a-managed-application.md)
+- [Como: hospedar um serviço do WCF em um aplicativo gerenciado](../how-to-host-a-wcf-service-in-a-managed-application.md)
 - [Self-Host](../samples/self-host.md)
 - [Visão geral da arquitetura de metadados](metadata-architecture-overview.md)
 - [Utilizando metadados](using-metadata.md)
-- [Como publicar metadados utilizando código para um serviço](how-to-publish-metadata-for-a-service-using-code.md)
+- [Como: publicar metadados utilizando código para um serviço](how-to-publish-metadata-for-a-service-using-code.md)

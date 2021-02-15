@@ -1,28 +1,30 @@
 ---
+description: 'Saiba mais sobre: visão geral do fluxo de mensagens'
 title: Visão geral de fluxo de mensagens
 ms.date: 03/30/2017
 ms.assetid: fb0899e1-84cc-4d90-b45b-dc5a50063943
-ms.openlocfilehash: 0bfbd1523f1d5db4a94cf3af03a03779af14655d
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: ec26824db51e65eff75f4b705c0a2ed966a7aa3a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70795970"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759751"
 ---
 # <a name="message-flow-overview"></a>Visão geral de fluxo de mensagens
+
 Em um sistema distribuído que contém serviços interconectados, é necessário determinar as relações de causal entre os serviços. É importante entender os vários componentes que faziam parte de um fluxo de solicitação para dar suporte a cenários críticos, como monitoramento de integridade, solução de problemas e análise de causa raiz. Para habilitar a correlação de rastreamentos entre vários serviços, no .NET Framework 4, adicionamos suporte por meio dos seguintes recursos:
 
-- Rastreamento analítico: Um recurso de rastreamento de alto desempenho e baixo nível baixo usando o ETW (rastreamento de eventos para Windows).
+- Rastreamento analítico: um recurso de rastreamento de alto desempenho e baixo nível baixo usando o ETW (rastreamento de eventos para Windows).
 
-- Modelo de atividade de ponta a ponta para serviços WCF/WF: Esse recurso dá suporte à correlação de rastreamentos <xref:System.ServiceModel> gerados <xref:System.Workflow.ComponentModel> pelos namespaces e.
+- Modelo de atividade de ponta a ponta para serviços WCF/WF: esse recurso dá suporte à correlação de rastreamentos gerados pelos <xref:System.ServiceModel> <xref:System.Workflow.ComponentModel> namespaces e.
 
-- Rastreamento de ETW para WF: Esse recurso usa registros de rastreamento gerados pelos serviços do WF para fornecer visibilidade do estado atual do fluxo de trabalho e do andamento.
+- Rastreamento de ETW para WF: esse recurso usa registros de rastreamento gerados pelos serviços do WF para fornecer visibilidade do estado atual do fluxo de trabalho e do andamento.
 
  Os erros registrados em um registro rastreamento ou rastreamento podem ser usados para encontrar defeitos de código ou mensagens formadas incorretamente. A propriedade ActivityId do nó de correlação no cabeçalho da mensagem do evento pode ser usada para determinar a atividade com falha. Para habilitar o rastreamento de fluxo de mensagens por ID de atividade, consulte [Configurando o rastreamento de fluxo de mensagens](./etw/configuring-message-flow-tracing.md). Este tópico demonstra como habilitar o rastreamento de fluxo de mensagens no projeto criado no tutorial de Introdução.
 
 ### <a name="to-enable-message-flow-tracing-in-the-getting-started-tutorial"></a>Para habilitar o rastreamento de fluxo de mensagens no tutorial de Introdução
 
-1. Abra Visualizador de Eventos clicando em **Iniciar**, **executar**e inserindo `eventvwr.exe`.
+1. Abra Visualizador de Eventos clicando em **Iniciar**, **executar** e inserindo `eventvwr.exe` .
 
 2. Se você não tiver habilitado o rastreamento analítico, expanda **logs de aplicativos e serviços**, **Microsoft**, **Windows**, **servidor de aplicativos-aplicativos**. Selecione **Exibir**, **Mostrar logs analíticos e de depuração**. Clique com o botão direito do mouse em **analítica** e selecione **habilitar log**. Deixe Visualizador de Eventos aberto para que os rastreamentos possam ser exibidos.
 
@@ -30,7 +32,7 @@ Em um sistema distribuído que contém serviços interconectados, é necessário
 
 4. Clique com o botão direito do mouse no projeto de **serviço** e selecione **Adicionar**, **novo item**. Selecione o **arquivo de configuração do aplicativo** e clique em **OK**.
 
-5. Adicione o código a seguir ao arquivo app. config criado na etapa anterior.
+5. Adicione o código a seguir ao arquivo App.Config criado na etapa anterior.
 
     ```xml
     <system.serviceModel>
@@ -63,7 +65,7 @@ Em um sistema distribuído que contém serviços interconectados, é necessário
     Trace.CorrelationManager.ActivityId = guid;
     ```
 
-10. Atualize e examine o log **analítico** .  Procure um evento com a ID de evento 220.  Selecione o evento e clique na guia **detalhes** no painel de visualização. Esse evento conterá a ID de correlação para a atividade de chamada.
+10. Atualize e examine o log **analítico**  .  Procure um evento com a ID de evento 220.  Selecione o evento e clique na guia **detalhes** no painel de visualização. Esse evento conterá a ID de correlação para a atividade de chamada.
 
     ```xml
     <Correlation ActivityID="{A066CCF1-8AB3-459B-B62F-F79F957A5036}" />

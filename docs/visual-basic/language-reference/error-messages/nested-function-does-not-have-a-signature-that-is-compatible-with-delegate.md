@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC36532: a função aninhada não tem uma assinatura compatível com o delegado ' <delegatename> '"
 title: A função aninhada não tem uma assinatura que seja compatível com o delegado '<delegatename>'
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,14 +8,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC36532
 ms.assetid: 493f292c-d81e-40ef-8b47-61f020571829
-ms.openlocfilehash: 28d07f01c0fd467cb68d73749988273eee95edf4
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: ff6abda015187d0d7d0690f2f1fd00772e63c61b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84409420"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100483541"
 ---
-# <a name="nested-function-does-not-have-a-signature-that-is-compatible-with-delegate-delegatename"></a>A função aninhada não tem uma assinatura que seja compatível com o delegado '\<delegatename>'
+# <a name="bc36532-nested-function-does-not-have-a-signature-that-is-compatible-with-delegate-delegatename"></a>BC36532: a função aninhada não tem uma assinatura compatível com o delegado ' \<delegatename> '
 
 Uma expressão lambda foi atribuída a um delegado que tem uma assinatura incompatível. Por exemplo, no código a seguir, o delegado `Del` tem dois parâmetros inteiros.
 
@@ -36,7 +37,7 @@ O erro será gerado se uma expressão lambda com um argumento for declarada como
 
 Ajuste a definição de delegado ou a expressão lambda atribuída para que as assinaturas sejam compatíveis.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Conversão de delegado reduzida](../../programming-guide/language-features/delegates/relaxed-delegate-conversion.md)
 - [Expressões lambda](../../programming-guide/language-features/procedures/lambda-expressions.md)

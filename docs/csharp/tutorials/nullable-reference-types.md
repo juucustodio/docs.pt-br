@@ -4,16 +4,16 @@ description: Este tutorial avançado fornece uma introdução aos tipos de refer
 ms.date: 02/19/2019
 ms.technology: csharp-null-safety
 ms.custom: mvc
-ms.openlocfilehash: 54cf9d812999cae837483b48cdedd89d9dc40fc9
-ms.sourcegitcommit: 99b153b93bf94d0fecf7c7bcecb58ac424dfa47c
+ms.openlocfilehash: bd575b226a2ff61e938719b064ff5ede0cf66013
+ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80249123"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91805174"
 ---
 # <a name="tutorial-express-your-design-intent-more-clearly-with-nullable-and-non-nullable-reference-types"></a>Tutorial: Expressar sua intenção de design mais claramente com tipos de referência que permitem valor nulo e tipos que não permitem valor nulo
 
-C# 8.0 introduz [tipos de referência anulados,](../nullable-references.md)que complementam os tipos de referência da mesma forma que os tipos de valor anulados complementam os tipos de valor. Para declarar que uma variável é um **tipo de referência que permite valor nulo**, anexe um `?` ao tipo. Por exemplo, `string?` representa uma `string` que permite valor nulo. Você pode usar esses novos tipos para expressar mais claramente sua intenção de design: algumas variáveis * devem sempre ter um valor *, outras * podem ter um valor * ausente.
+O C# 8,0 apresenta [tipos de referência anuláveis](../nullable-references.md), que complementam os tipos de referência da mesma maneira que os tipos de valores de valor nulo complementam tipos Value Para declarar que uma variável é um **tipo de referência que permite valor nulo**, anexe um `?` ao tipo. Por exemplo, `string?` representa uma `string` que permite valor nulo. Você pode usar esses novos tipos para expressar mais claramente sua intenção de design: algumas variáveis * devem sempre ter um valor *, outras * podem ter um valor * ausente.
 
 Neste tutorial, você aprenderá como:
 
@@ -26,19 +26,19 @@ Neste tutorial, você aprenderá como:
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Você precisará configurar sua máquina para executar o .NET Core, incluindo o compilador C# 8.0. O compilador C# 8.0 está disponível com [o Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), ou [.NET Core 3.0](https://dotnet.microsoft.com/download/dotnet-core/3.0).
+Você precisará configurar seu computador para executar o .NET Core, incluindo o compilador C# 8,0. O compilador C# 8,0 está disponível com o [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)ou o [.NET Core 3,0](https://dotnet.microsoft.com/download/dotnet-core/3.0).
 
 Este tutorial pressupõe que você esteja familiarizado com o C# e .NET, incluindo o Visual Studio ou a CLI do .NET Core.
 
 ## <a name="incorporate-nullable-reference-types-into-your-designs"></a>Incorporar tipos de referência que permitem valor nulo aos designs
 
-Neste tutorial, você criará uma biblioteca para modelar a executar uma pesquisa. O código usa tipos de referência que permitem valores nulos e tipos de referência que não permitem valores nulos para representar os conceitos do mundo real. As perguntas da pesquisa nunca podem ser um valor nulo. Um entrevistado pode optar por não responder a uma pergunta. As respostas podem `null` estar neste caso.
+Neste tutorial, você criará uma biblioteca para modelar a executar uma pesquisa. O código usa tipos de referência que permitem valores nulos e tipos de referência que não permitem valores nulos para representar os conceitos do mundo real. As perguntas da pesquisa nunca podem ser um valor nulo. Um entrevistado pode optar por não responder a uma pergunta. As respostas podem estar `null` nesse caso.
 
 O código que você gravará para este exemplo expressa essa intenção e o compilador a aplica.
 
 ## <a name="create-the-application-and-enable-nullable-reference-types"></a>Criar o aplicativo e habilitar os tipos de referência que permitem valor nulo
 
-Crie um novo aplicativo de console no Visual Studio ou na linha de comando usando `dotnet new console`. Dê o nome `NullableIntroduction` ao aplicativo. Depois de criar o aplicativo, você precisará especificar que todo o projeto compila em um contexto de **anotação anulada**habilitado . Abra o arquivo *.csproj* e adicione um `Nullable` elemento ao `PropertyGroup` elemento. Defina seu valor como `enable`. Você deve optar pelo recurso **de tipos de referência anulados,** mesmo em projetos C# 8.0. Isso porque, quando o recurso é ativado, as declarações de variáveis de referência existentes tornam-se **tipos de referência que não permitem valor nulo**. Embora essa decisão ajude a encontrar problemas onde o código existente pode não ter verificações nulas adequadas, pode não refletir com precisão sua intenção de projeto original:
+Crie um novo aplicativo de console no Visual Studio ou na linha de comando usando `dotnet new console`. Dê o nome `NullableIntroduction` ao aplicativo. Depois de criar o aplicativo, você precisará especificar que todo o projeto será compilado em um **contexto de anotação anulável**habilitado. Abra o arquivo *. csproj* e adicione um `Nullable` elemento ao `PropertyGroup` elemento. Defina seu valor como `enable`. Você deve optar pelo recurso **tipos de referência anulável** , mesmo em projetos C# 8,0. Isso porque, quando o recurso é ativado, as declarações de variáveis de referência existentes tornam-se **tipos de referência que não permitem valor nulo**. Embora essa decisão ajude a encontrar problemas em que o código existente pode não ter verificações nulas adequadas, ele pode não refletir com precisão sua intenção de design original:
 
 ```xml
 <Nullable>enable</Nullable>
@@ -58,23 +58,23 @@ Esses tipos usarão os tipos de referência que permitem valor nulo e tipos de r
 - Os entrevistados nunca poderão ser nulos. Convém controlar as pessoas contatadas, mesmo os entrevistados que se recusaram a participar.
 - Qualquer resposta a uma pergunta pode ser um valor nulo. Os entrevistados podem se recusar a responder a algumas ou a todas as perguntas.
 
-Se você programou em C#, você pode estar tão acostumado `null` a tipos de referência que permitem valores que você pode ter perdido outras oportunidades de declarar instâncias não anuladas:
+Se você tiver programado em C#, talvez esteja acostumado a se acostumar com tipos de referência que permitem que `null` os valores que você tenha perdido outras oportunidades declarem instâncias não anuláveis:
 
 - O conjunto de perguntas não deve permitir um valor nulo.
 - O conjunto de entrevistados não deve permitir um valor nulo.
 
-Ao escrever o código, você verá que um tipo de referência não anulado como padrão para <xref:System.NullReferenceException>referências evita erros comuns que podem levar a s. Uma lição deste tutorial é que você tomou decisões sobre `null`quais variáveis poderiam ou não ser . O idioma não forneceu sintaxe para expressar essas decisões. Agora ele já fornece.
+Ao escrever o código, você verá que um tipo de referência não anulável como o padrão para referências evita erros comuns que poderiam levar a <xref:System.NullReferenceException> s. Uma lição deste tutorial é que você tomou decisões sobre quais variáveis poderiam ou não ser `null` . O idioma não forneceu sintaxe para expressar essas decisões. Agora ele já fornece.
 
-O aplicativo que você vai construir faz as seguintes etapas:
+O aplicativo que você criará faz as seguintes etapas:
 
-1. Cria uma pesquisa e adiciona perguntas a ele.
-1. Cria um conjunto pseudo-aleatório de respondentes para a pesquisa.
-1. Contatos respondentes até que o tamanho da pesquisa concluída atinja o número da meta.
-1. Escreve estatísticas importantes sobre as respostas da pesquisa.
+1. Cria uma pesquisa e adiciona perguntas a ela.
+1. Cria um conjunto pseudo aleatório de entrevistados para a pesquisa.
+1. Os participantes do contato até que o tamanho da pesquisa concluída atinja o número da meta.
+1. Grava estatísticas importantes nas respostas da pesquisa.
 
-## <a name="build-the-survey-with-nullable-and-non-nullable-reference-types"></a>Construa a pesquisa com tipos de referência anulados e não anulados
+## <a name="build-the-survey-with-nullable-and-non-nullable-reference-types"></a>Criar a pesquisa com tipos de referência anuláveis e não anuláveis
 
-O primeiro código gravado criará a pesquisa. Você escreverá classes para modelar uma pergunta da pesquisa e uma execução da pesquisa. A pesquisa tem três tipos de perguntas, diferenciadas pelo formato da resposta: respostas do tipo Sim/Não, respostas com números e respostas com texto. Criar `public SurveyQuestion` uma classe:
+O primeiro código gravado criará a pesquisa. Você escreverá classes para modelar uma pergunta da pesquisa e uma execução da pesquisa. A pesquisa tem três tipos de perguntas, diferenciadas pelo formato da resposta: respostas do tipo Sim/Não, respostas com números e respostas com texto. Criar uma `public SurveyQuestion` classe:
 
 ```csharp
 namespace NullableIntroduction
@@ -85,7 +85,7 @@ namespace NullableIntroduction
 }
 ```
 
-O compilador interpreta cada declaração de variável de tipo de referência como um tipo de referência **não anulado** para código em um contexto de anotação anulada habilitado. Para ver seu primeiro aviso, adicione propriedades ao texto da pergunta e tipo de pergunta, conforme mostrado no código a seguir:
+O compilador interpreta cada declaração de variável de tipo de referência como um tipo de referência **não anulável** para o código em um contexto de anotação anulável habilitado. Para ver seu primeiro aviso, adicione propriedades ao texto da pergunta e tipo de pergunta, conforme mostrado no código a seguir:
 
 ```csharp
 namespace NullableIntroduction
@@ -131,11 +131,11 @@ namespace NullableIntroduction
 
 Como foi feito anteriormente, você deve inicializar o objeto de lista com um valor não nulo ou o compilador emitirá um aviso. Não há verificações de valores nulos na segunda sobrecarga de `AddQuestion`, pois elas são desnecessárias: você declarou que a variável não permite valor nulo. Seu valor não pode ser `null`.
 
-Mude para *Program.cs* em seu editor `Main` e substitua o conteúdo das seguintes linhas de código:
+Alterne para *Program.cs* no seu editor e substitua o conteúdo de `Main` pelas seguintes linhas de código:
 
 [!code-csharp[AddQuestions](~/samples/snippets/csharp/NullableIntroduction/NullableIntroduction/Program.cs#AddQuestions)]
 
-Como todo o projeto está em um contexto de anotação anulada `null` habilitado, você receberá avisos quando passar para qualquer método esperando um tipo de referência não anulado. Experimente adicionar a seguinte linha a `Main`:
+Como o projeto inteiro está em um contexto de anotação anulável habilitado, você receberá avisos quando passar `null` para qualquer método que espera um tipo de referência não anulável. Experimente adicionar a seguinte linha a `Main`:
 
 ```csharp
 surveyRun.AddQuestion(QuestionType.Text, default);
@@ -176,7 +176,7 @@ Adicione o seguinte código à classe `SurveyResponse`:
 
 [!code-csharp[AnswerSurvey](~/samples/snippets/csharp/NullableIntroduction/NullableIntroduction/SurveyResponse.cs#AnswerSurvey)]
 
-O armazenamento das respostas da pesquisa é um `Dictionary<int, string>?`, indicando que ele pode ser um valor nulo. Você está usando o novo recurso de idioma para declarar sua intenção de design, tanto para o compilador quanto para qualquer pessoa que leia seu código posteriormente. Se você alguma `surveyResponses` vez desreferenciar sem verificar o `null` valor primeiro, você receberá um aviso de compilador. Você não receberá um aviso no método `AnswerSurvey` porque o compilador pode determinar que a variável `surveyResponses` foi definida como um valor não nulo acima.
+O armazenamento das respostas da pesquisa é um `Dictionary<int, string>?`, indicando que ele pode ser um valor nulo. Você está usando o novo recurso de idioma para declarar sua intenção de design, tanto para o compilador quanto para qualquer pessoa que leia seu código posteriormente. Se você já desreferenciar `surveyResponses` sem verificar o `null` valor primeiro, obterá um aviso do compilador. Você não receberá um aviso no método `AnswerSurvey` porque o compilador pode determinar que a variável `surveyResponses` foi definida como um valor não nulo acima.
 
 O uso de `null` para respostas ausentes destaca um ponto importante para trabalhar com tipos de referência anuláveis: seu objetivo não é remover todos os valores `null` de seu programa. Em vez disso, sua meta é garantir que o código escrito expresse a intenção do seu design. Os valores ausentes representam um conceito que precisa ser expresso em seu código. O valor `null` é uma forma clara de expressar esses valores ausentes. Tentar remover todos os valores `null` leva somente à definição de alguma outra maneira de expressar esses valores ausentes sem `null`.
 
@@ -196,7 +196,7 @@ A última etapa é exibir os resultados da pesquisa. Você adicionará código a
 
 [!code-csharp[ReportResponses](~/samples/snippets/csharp/NullableIntroduction/NullableIntroduction/SurveyResponse.cs#SurveyStatus)]
 
-Por `surveyResponses` ser um tipo de referência nulo, verificações nulas são necessárias antes de desfazer a referência. O `Answer` método retorna uma seqüência não anulada, por isso temos que cobrir o caso de uma resposta ausente usando o operador de coalizão nula.
+Como `surveyResponses` é um tipo de referência anulável, verificações nulas são necessárias antes de fazer referência a ela. O `Answer` método retorna uma cadeia de caracteres não anulável, portanto, precisamos abordar o caso de uma resposta ausente usando o operador de União nula.
 
 Em seguida, adicione esses três membros com corpo de expressão à classe `SurveyRun`:
 
@@ -221,3 +221,6 @@ Experimente alterar as declarações de tipo entre os tipos de referência que p
 Saiba mais migrando um aplicativo existente para usar tipos de referência anuláveis:
 > [!div class="nextstepaction"]
 > [Atualizar um aplicativo a fim de usar tipos de referência anuláveis](upgrade-to-nullable-references.md)
+
+Saiba como usar o tipo de referência anulável ao usar Entity Framework:
+> [Conceitos básicos de Entity Framework Core: trabalhando com tipos de referência anuláveis](/ef/core/miscellaneous/nullable-reference-types)

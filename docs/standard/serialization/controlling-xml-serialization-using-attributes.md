@@ -12,18 +12,18 @@ helpviewer_keywords:
 - arrays, serializing
 - XML serialization, attributes
 - preventing serialization
-- attributes [.NET Framework], XML serialization
+- attributes [.NET], XML serialization
 - serialization, examples
 - serialization, attributes
 ms.assetid: 47d4c39d-30e1-4c7b-8a2e-301325390647
-ms.openlocfilehash: 79c5541b4c384e91fbec8c8f1b2130887e79a252
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 36456d373b7482c4a4267b69e031c1e45baa9abb
+ms.sourcegitcommit: 74d05613d6c57106f83f82ce8ee71176874ea3f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "84289675"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93281777"
 ---
-# <a name="controlling-xml-serialization-using-attributes"></a>Controlando a serialização XML usando atributos
+# <a name="control-xml-serialization-using-attributes"></a>Controlar a serialização XML usando atributos
 
 Os atributos podem ser usados para controlar a serialização XML de um objeto ou criar um fluxo XML alternativo do mesmo conjunto de classes. Para obter mais detalhes sobre como criar um fluxo XML alternativo, consulte [Como especificar um nome de elemento alternativo para um fluxo XML](how-to-specify-an-alternate-element-name-for-an-xml-stream.md).
 
@@ -316,12 +316,12 @@ Por outro lado, se você quisesse serializar uma instância da classe, somente `
 
 Pode haver situações quando uma propriedade pública ou um campo não precisam ser serializados. Por exemplo, um campo ou propriedade podem ser usados para conter metadados. Nesses casos, aplicar o <xref:System.Xml.Serialization.XmlIgnoreAttribute> ao campo ou propriedade e o <xref:System.Xml.Serialization.XmlSerializer> o ignorarão.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Atributos que controlam a serialização de XML](attributes-that-control-xml-serialization.md)
 - [Atributos que controlam a serialização SOAP codificada](attributes-that-control-encoded-soap-serialization.md)
 - [Apresentando a serialização XML](introducing-xml-serialization.md)
-- [Exemplos de serialização XML](examples-of-xml-serialization.md)
+- [Exemplos de Serialização XML](examples-of-xml-serialization.md)
 - [Como especificar um nome de elemento alternativo para um fluxo XML](how-to-specify-an-alternate-element-name-for-an-xml-stream.md)
 - [Como serializar um objeto](how-to-serialize-an-object.md)
 - [Como desserializar um objeto](how-to-deserialize-an-object.md)

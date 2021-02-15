@@ -2,12 +2,12 @@
 title: Estado e dados em aplicativos do Docker
 description: Saiba qual é a opção disponível para salvar o estado nos aplicativos em contêineres.
 ms.date: 08/06/2020
-ms.openlocfilehash: dc9a1a3eccb77e9fd67e69fd3295f3db1edf5e66
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.openlocfilehash: d55519e9340ec06588c2dae3e7363d03f263ce39
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87915305"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91163460"
 ---
 # <a name="state-and-data-in-docker-applications"></a>Estado e dados em aplicativos do Docker
 
@@ -27,7 +27,7 @@ Do armazenamento remoto:
 
 - O [Armazenamento do Azure](https://azure.microsoft.com/documentation/services/storage/) oferece armazenamento geograficamente distribuído, fornecendo uma boa solução de persistência de longo prazo para contêineres.
 
-- Os bancos de dados relacionais remotos, como [Banco de Dados SQL do Azure](https://azure.microsoft.com/services/sql-database/); bancos de dados NoSQL, como o [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction); ou serviços de cache, como o [Redis](https://redis.io/).
+- Os bancos de dados relacionais remotos, como [Banco de Dados SQL do Azure](https://azure.microsoft.com/services/sql-database/); bancos de dados NoSQL, como o [Azure Cosmos DB](/azure/cosmos-db/introduction); ou serviços de cache, como o [Redis](https://redis.io/).
 
 Do contêiner do Docker:
 

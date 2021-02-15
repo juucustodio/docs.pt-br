@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: com... Instrução End With (Visual Basic)'
 title: Instrução With...End With
 ms.date: 07/20/2015
 f1_keywords:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 - With block
 - End keyword [Visual Basic], With...End With statements
 ms.assetid: 340d5fbb-4f43-48ec-a024-80843c137817
-ms.openlocfilehash: 50f3bd0c6e96254274b429794901e2e4ac719ad0
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 86393d5dee7a03b2b8396b34b31326d1b0ea3c28
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401375"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787559"
 ---
 # <a name="withend-with-statement-visual-basic"></a>Instrução With...End With (Visual Basic)
 
 Executa uma série de instruções que referenciam repetidamente um único objeto ou estrutura de modo que as instruções possam usar uma sintaxe simplificada para acessar membros do objeto ou estrutura.  Ao usar uma estrutura, você só poderá ler os valores dos membros ou invocar métodos, e obterá um erro se tentar atribuir valores aos membros de uma estrutura usada em uma instrução `With...End With`.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```vb
 With objectExpression
@@ -38,9 +39,9 @@ End With
 
 |Termo|Definição|
 |---|---|
-|`objectExpression`|Obrigatórios. Uma expressão que avalia como um objeto. A expressão pode ser arbitrariamente complexa e é avaliada apenas uma vez. A expressão pode ser avaliada como qualquer tipo de dados, inclusive tipos elementares.|
+|`objectExpression`|Obrigatório. Uma expressão que avalia como um objeto. A expressão pode ser arbitrariamente complexa e é avaliada apenas uma vez. A expressão pode ser avaliada como qualquer tipo de dados, inclusive tipos elementares.|
 |`statements`|Opcional. Uma ou mais instruções entre `With` e `End With` que podem fazer referência a membros de um objeto que é gerado pela avaliação de `objectExpression`.|
-|`End With`|Obrigatórios. Finaliza a definição do bloco `With`.|
+|`End With`|Obrigatório. Finaliza a definição do bloco `With`.|
 
 ## <a name="remarks"></a>Comentários
 
@@ -83,7 +84,7 @@ O exemplo a seguir aninha instruções `With…End With`. Na instrução `With` 
 
 [!code-vb[VbVbalrWithStatement#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvbalrwithstatement/vb/mainwindow.xaml.vb#1)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Collections.Generic.List%601>
 - [Estruturas de Controle Aninhadas](../../programming-guide/language-features/control-flow/nested-control-structures.md)

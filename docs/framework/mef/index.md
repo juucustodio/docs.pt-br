@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Managed Extensibility Framework, overview
 - MEF, overview
 ms.assetid: 6c61b4ec-c6df-4651-80f1-4854f8b14dde
-ms.openlocfilehash: 00ed48f2202d4c04039ac264b1fe71474a02432e
-ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
+ms.openlocfilehash: b743a26dd401e7015c588be2a197551aa891a687
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86281245"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555569"
 ---
 # <a name="managed-extensibility-framework-mef"></a>MEF (Managed Extensibility Framework)
 
@@ -62,7 +62,7 @@ Versões anteriores do .NET Framework introduziram o MAF (Managed Add-in Framewo
 
 A maneira mais simples de ver o que o MEF é criar um aplicativo MEF simples. Neste exemplo, você criará uma calculadora muito simples chamada SimpleCalculator. A meta da SimpleCalculator é criar um aplicativo de console que aceite comandos aritméticos básicos, no formato "5+3" ou "6-2" e retorne as respostas corretas. Usando MEF, você poderá adicionar novos operadores sem alterar o código do aplicativo.
 
-Para baixar o código completo deste exemplo, consulte o [exemplo SimpleCalculator (Visual Basic)](https://docs.microsoft.com/samples/dotnet/samples/simple-calculator-vb/).
+Para baixar o código completo deste exemplo, consulte o [exemplo SimpleCalculator (Visual Basic)](/samples/dotnet/samples/simple-calculator-vb/).
 
 > [!NOTE]
 > A finalidade da SimpleCalculator é demonstrar os conceitos e a sintaxe do MEF, em vez de fornecer necessariamente um cenário realista para seu uso. Muitos dos aplicativos que mais se beneficiariam da potência do MEF são mais complexos que a SimpleCalculator. Para obter exemplos mais abrangentes, consulte o [Managed Extensibility Framework](https://github.com/MicrosoftArchive/mef) no GitHub.
@@ -426,7 +426,7 @@ Adicionar classes ao código-fonte é bastante simples, mas o MEF oferece a capa
 
 Adicione um novo diretório chamado `Extensions` ao projeto da SimpleCalculator. Certifique-se de adicioná-lo no nível do projeto e não no nível da solução. Em seguida, adicione um novo projeto de Biblioteca de Classes à solução, chamado `ExtendedOperations`. O novo projeto será compilado em um assembly separado.
 
-Abra o designer de propriedades do projeto para o projeto ExtendedOperations e clique na guia **Compilar** ou **Compilar** . Altere o caminho de **saída da compilação** ou o **caminho de saída** para apontar para o diretório de extensões no diretório do projeto SimpleCalculator (*.. \SimpleCalculator\Extensions \\ *).
+Abra o designer de propriedades do projeto para o projeto ExtendedOperations e clique na guia **Compilar** ou **Compilar** . Altere o **caminho** de saída da compilação ou o **caminho de saída** para apontar para o diretório de extensões no diretório do projeto SimpleCalculator (*.. \SimpleCalculator\Extensions \\ *).
 
  No *Module1. vb* ou *Program.cs*, adicione a seguinte linha ao `Program` Construtor:
 
@@ -438,7 +438,7 @@ catalog.Catalogs.Add(New DirectoryCatalog("C:\SimpleCalculator\SimpleCalculator\
 catalog.Catalogs.Add(new DirectoryCatalog("C:\\SimpleCalculator\\SimpleCalculator\\Extensions"));
 ```
 
-Substitua o caminho de exemplo pelo caminho para o diretório de Extensions. (Esse caminho absoluto destina-se apenas a fins de depuração. Em um aplicativo de produção, você usaria um caminho relativo.) <xref:System.ComponentModel.Composition.Hosting.DirectoryCatalog>Agora, o adicionará todas as partes encontradas em quaisquer assemblies no diretório de extensões ao contêiner de composição.
+Substitua o caminho de exemplo pelo caminho para o diretório de Extensions. (Esse caminho absoluto destina-se apenas a fins de depuração. Em um aplicativo de produção, você usaria um caminho relativo.) <xref:System.ComponentModel.Composition.Hosting.DirectoryCatalog> Agora, o adicionará todas as partes encontradas em quaisquer assemblies no diretório de extensões ao contêiner de composição.
 
 No projeto ExtendedOperations, adicione referências à SimpleCalculator e ao System.ComponentModel.Composition. No arquivo de classe ExtendedOperations, adicione um `Imports` ou uma instrução `using` para o System.ComponentModel.Composition. No Visual Basic, adicione também uma instrução `Imports` para a SimpleCalculator. Em seguida, adicione a seguinte classe ao arquivo da classe ExtendedOperations:
 
@@ -484,6 +484,6 @@ Este tópico abordou os conceitos básicos do MEF.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Para baixar o código completo deste exemplo, consulte o [exemplo SimpleCalculator (Visual Basic)](https://docs.microsoft.com/samples/dotnet/samples/simple-calculator-vb/).
+Para baixar o código completo deste exemplo, consulte o [exemplo SimpleCalculator (Visual Basic)](/samples/dotnet/samples/simple-calculator-vb/).
 
  Para obter mais informações e exemplos de código, confira [Managed Extensibility Framework](https://github.com/MicrosoftArchive/mef). Para obter uma lista dos tipos de MEF, confira o namespace <xref:System.ComponentModel.Composition?displayProperty=nameWithType>.

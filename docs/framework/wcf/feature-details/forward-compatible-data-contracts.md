@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Forward-Compatible contratos de dados'
 title: Contratos de dados compatíveis por encaminhamento
 ms.date: 03/30/2017
 dev_langs:
@@ -7,24 +8,27 @@ dev_langs:
 helpviewer_keywords:
 - data contracts [WCF], forward compatibility
 ms.assetid: 413c9044-26f8-4ecb-968c-18495ea52cd9
-ms.openlocfilehash: 34bde56b78ec0148cf6b924f8edd29343b97faa4
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 70256449d405290e9c32eebdc5b8e3a78b76ed56
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597378"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793851"
 ---
 # <a name="forward-compatible-data-contracts"></a>Contratos de dados compatíveis por encaminhamento
+
 Um recurso do sistema de contrato de dados do Windows Communication Foundation (WCF) é que os contratos podem evoluir ao longo do tempo de maneiras não separáveis. Ou seja, um cliente com uma versão mais antiga de um contrato de dados pode se comunicar com um serviço com uma versão mais recente do mesmo contrato de dados ou um cliente com uma versão mais recente de um contrato de dados pode se comunicar com uma versão mais antiga do mesmo contrato de dados. Para obter mais informações, consulte [práticas recomendadas: controle de versão de contrato de dados](../best-practices-data-contract-versioning.md).  
   
  Você pode aplicar a maioria dos recursos de controle de versão de acordo com a necessidade quando novas versões de um contrato de dados existente são criadas. No entanto, um recurso de controle de versão, ida e *volta*, deve ser incorporado ao tipo da primeira versão para funcionar corretamente.  
   
-## <a name="round-tripping"></a>Ida e volta  
+## <a name="round-tripping"></a>Round-Tripping  
+
  A viagem de ida e volta ocorre quando os dados passam de uma nova versão para uma versão antiga e para a nova versão de um contrato de dados. A ida e volta garante que nenhum dado seja perdido. Habilitar a ida e volta torna o tipo compatível com as alterações futuras com suporte do modelo de controle de versão do contrato de dados.  
   
  Para habilitar a ida e volta para um tipo específico, o tipo deve implementar a <xref:System.Runtime.Serialization.IExtensibleDataObject> interface. A interface contém uma propriedade <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A> (retornando o <xref:System.Runtime.Serialization.ExtensionDataObject> tipo). A propriedade armazena todos os dados de versões futuras do contrato de dados que são desconhecidos para a versão atual.  
   
 ### <a name="example"></a>Exemplo  
+
  O contrato de dados a seguir não é compatível com o encaminhamento com alterações futuras.  
   
  [!code-csharp[C_DataContract#7](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_datacontract/cs/source.cs#7)]
@@ -46,4 +50,4 @@ Um recurso do sistema de contrato de dados do Windows Communication Foundation (
 - <xref:System.Runtime.Serialization.IExtensibleDataObject>
 - <xref:System.Runtime.Serialization.ExtensionDataObject>
 - [Controle de versão de contrato de dados](data-contract-versioning.md)
-- [Práticas recomendadas: controle de versão de contrato de dados](../best-practices-data-contract-versioning.md)
+- [Melhores práticas: Controle de versão de contrato de dados](../best-practices-data-contract-versioning.md)

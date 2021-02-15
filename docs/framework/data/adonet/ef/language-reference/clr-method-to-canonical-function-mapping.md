@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: método CLR para mapeamento de função canônica'
 title: Método CLR ao mapeamento canônico de função
 ms.date: 03/30/2017
 ms.assetid: e3363261-2cb8-4b54-9555-2870be99b929
-ms.openlocfilehash: 6f14ad8d9e8f919fe820447cc991b102319b38d5
-ms.sourcegitcommit: 4e2d355baba82814fa53efd6b8bbb45bfe054d11
+ms.openlocfilehash: 3a082f0b9bce63330e113e6ae9f50d15d71ce727
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70251220"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697069"
 ---
 # <a name="clr-method-to-canonical-function-mapping"></a>Método CLR ao mapeamento canônico de função
 
 Entity Framework fornece um conjunto de funções canônicas que implementam a funcionalidade que são comuns através de muitos sistemas de base de dados, como a manipulação de cadeia de caracteres e funções matemáticas. Isso permite aos desenvolvedores para direcionar uma ampla gama de sistemas de base de dados. Quando chamadas de uma tecnologia consultando, como LINQ to Entities, essas funções canônicas são transmitidos para a função correspondente correta do armazenamento para o provedor que está sendo usado. Isso permite que as chamadas de função são expressos em um formulário comuns através de fontes de dados, fornecendo uma experiência consistente de consulta por de fontes de dados. Os operadores bit e, OR, NOT e XOR também são mapeados para funções canônicas quando o operando é um tipo numérico. Para os operandos boolianos, os operadores AND, and, NOT e XOR de and lógico computem as operações lógica AND, OR, and e XOR de seus operandos. Para obter mais informações, consulte [funções canônicas](canonical-functions.md).
 
-Para cenários LINQ, as consultas em Entity Framework envolvem mapear determinados métodos de CLR métodos na fonte de dados subjacente com as funções canônicas. Todas as chamadas de método em consulte LINQ to entidades que não são mapeados explicitamente a uma função canônica resultarão em uma exceção de <xref:System.NotSupportedException> de tempo de execução que está sendo lançada.
+Para cenários LINQ, as consultas em Entity Framework envolvem mapear determinados métodos de CLR métodos na fonte de dados subjacente com as funções canônicas. Todas as chamadas de método em consulte LINQ to entidades que não são mapeados explicitamente a uma função canônica resultarão em uma exceção de <xref:System.NotSupportedException> de runtime que está sendo lançada.
 
 ## <a name="systemstring-method-static-mapping"></a>Mapear de método System.String (estático)
 
@@ -40,17 +41,17 @@ Para cenários LINQ, as consultas em Entity Framework envolvem mapear determinad
 
 |Método de instância System.String ()|Função canônica|Observações|
 |---------------------------------------|------------------------|-----------|
-|Boolean contém (cadeia de caracteres `value`)|`this` GOSTA DE “% DE`value`%”|Se `value` não for uma constante, isso será mapeado para IndexOf (`this`, `value`) > 0|
-|EndsWith booleano (cadeia de caracteres `value`)|`this`LIKE `'` '% `value`|Se `value` não é uma constante, então este mapeados para a direita (`this`,`value`comprimento ()) = `value`.|
-|StartsWith booleano (cadeia de caracteres `value`)|`this` GOSTA DE '`value`% "|Se `value` não é uma constante, então este mapeia para IndexOf (`this`, `value`) = 1.|
-|Length|Comprimento (`this`)||
+|Boolean contém (cadeia de caracteres `value`)|`this` GOSTA de “% de`value`%”|Se `value` não for uma constante, isso será mapeado para IndexOf ( `this` , `value` ) > 0|
+|EndsWith booleano (cadeia de caracteres `value`)|`this`LIKE `'` % `value` '|Se `value` não é uma constante, então este mapeados para a direita (`this`,`value`comprimento ()) = `value`.|
+|StartsWith booleano (cadeia de caracteres `value`)|`this` GOSTA de '`value`% "|Se `value` não é uma constante, então este mapeia para IndexOf (`this`, `value`) = 1.|
+|Comprimento|Comprimento (`this`)||
 |Int32 IndexOf (cadeia de caracteres `value`)|IndexOf (`this`, `value`) - 1||
 |Inserção de System.String (Int32, `startIndex`cadeia de caracteres `value`)|Concat (Concat (subcadeia de caracteres (`this`, 1, `startIndex`), `value`), subcadeia de caracteres (`this`, `startIndex`+1, comprimento (`this`) - `startIndex`))||
 |System.String remove (Int32 `startIndex`)|Subsequência de caracteres (`this`, 1, `startIndex`)||
-|System.String remove (Int32 `startIndex`, Int32 `count`)|Concat (Subcadeia de`this`caracteres (, `startIndex`1,), Subcadeia `startIndex` de caracteres (`this`, +   +  `count` +`this`1, comprimento`startIndex`()-(`count`))|Remova (`startIndex`, `count`) é suportado apenas se `count` é um inteiro maior ou igual a 0.|
+|System.String remove (Int32 `startIndex`, Int32 `count`)|Concat (Subcadeia de caracteres ( `this` , 1, `startIndex` ), subcadeia de caracteres ( `this` , `startIndex`  +  `count` + 1, comprimento ( `this` )-( `startIndex`  +  `count` ))|Remova (`startIndex`, `count`) é suportado apenas se `count` é um inteiro maior ou igual a 0.|
 |System.String substituem (cadeia de caracteres `oldValue`, cadeia de caracteres `newValue`)|Substitua (`this`, `oldValue`, `newValue`)||
 |Subsequência de caracteres de System.String (Int32 `startIndex`)|Subsequência de caracteres (`this`, `startIndex` +1, comprimento (`this`) - `startIndex`)||
-|Subsequência de caracteres de System.String (Int32 `startIndex`, Int32 `length`)|Subcadeia de`this`caracteres `startIndex` (, + `length`1,)||
+|Subsequência de caracteres de System.String (Int32 `startIndex`, Int32 `length`)|Subcadeia de caracteres ( `this` , `startIndex` + 1, `length` )||
 |System.String ToLower()|ToLower (`this`)||
 |System.String ToUpper()|ToUpper (`this`)||
 |System.String Trim()|Preparo (`this`)||
@@ -66,12 +67,12 @@ Para cenários LINQ, as consultas em Entity Framework envolvem mapear determinad
 |System.DateTime.Now|CurrentDateTime()||
 |System.DateTime.UtcNow|CurrentUtcDateTime()||
 |Op_Equality booleano (DateTime `d1`, DateTime `d2`)|Operador =||
-|Op_GreaterThan booleano (DateTime `t1`, DateTime `t2`)|operador de >||
-|Op_GreaterThanOrEqual booleano (DateTime `t1`, DateTime `t2`)|operador > =||
+|Op_GreaterThan booleano (DateTime `t1`, DateTime `t2`)|Operador de >||
+|Op_GreaterThanOrEqual booleano (DateTime `t1`, DateTime `t2`)|Operador >=||
 |Op_Inequality booleano (DateTime `t1`, DateTime `t2`)|Operador !=||
-|Op_LessThan booliano ( `t1`DateTime, `t2`DateTime)|operador de <||
-|Op_LessThanOrEqual booleano (DateTime `t1`, DateTime `t2`)|operador < =||
-|Microsoft.VisualBasic.DateAndTime.DatePart (_<br /><br /> ByVal `Interval` as DateInterval,\_<br /><br /> ByVal `DateValue` as DateTime,\_<br /><br /> Opcional ByVal `FirstDayOfWeekValue` as FirstDayOfWeek = VbSunday,\_<br /><br /> ByVal `FirstWeekOfYearValue` opcional como FirstWeekOfYear = VbFirstJan1\_<br /><br /> Como o inteiro)||Consulte a seção de função DatePart para mais informações.|
+|Op_LessThan booliano (DateTime `t1` , DateTime `t2` )|Operador de <||
+|Op_LessThanOrEqual booleano (DateTime `t1`, DateTime `t2`)|Operador <=||
+|Microsoft.VisualBasic.DateAndTime.DatePart (_<br /><br /> ByVal `Interval` as DateInterval, \_<br /><br /> ByVal `DateValue` as DateTime, \_<br /><br /> Opcional ByVal `FirstDayOfWeekValue` as FirstDayOfWeek = VbSunday, \_<br /><br /> ByVal opcional `FirstWeekOfYearValue` como FirstWeekOfYear = VbFirstJan1 \_<br /><br /> Como o inteiro)||Consulte a seção de função DatePart para mais informações.|
 |Microsoft.VisualBasic.DateAndTime.Now|CurrentDateTime()||
 |Microsoft.VisualBasic.DateAndTime.Year (DateTime `TimeValue`)|Year()||
 |Microsoft.VisualBasic.DateAndTime.Month (DateTime `TimeValue`)|Month()||
@@ -85,11 +86,11 @@ Para cenários LINQ, as consultas em Entity Framework envolvem mapear determinad
 |Método de instância System.DateTime ()|Função canônica|
 |-----------------------------------------|------------------------|
 |Iguais booleanas (DateTime `value`)|Operador =|
-|Day|Dia (`this`)|
+|Dia|Dia (`this`)|
 |Hora|Hora (`this`)|
-|Milissegundo|Milissegundos (`this`)|
+|Milissegundos|Milissegundos (`this`)|
 |Minuto|Minuto (`this`)|
-|Month|Mês (`this`)|
+|Mês|Mês (`this`)|
 |Segundo|Segundo (`this`)|
 |Year|Ano (`this`)|
 
@@ -99,11 +100,11 @@ O mapeamento mostrado para os métodos de `get` nas propriedades listadas.
 
 |Método de instância System.DateTimeOffset ()|Função canônica|Observações|
 |-----------------------------------------------|------------------------|-----------|
-|Day|Dia (`this`)|Não suportado no SQL Server 2005.|
+|Dia|Dia (`this`)|Não suportado no SQL Server 2005.|
 |Hora|Hora (`this`)|Não suportado no SQL Server 2005.|
-|Milissegundo|Milissegundos (`this`)|Não suportado no SQL Server 2005.|
+|Milissegundos|Milissegundos (`this`)|Não suportado no SQL Server 2005.|
 |Minuto|Minuto (`this`)|Não suportado no SQL Server 2005.|
-|Month|Mês (`this`)|Não suportado no SQL Server 2005.|
+|Mês|Mês (`this`)|Não suportado no SQL Server 2005.|
 |Segundo|Segundo (`this`)|Não suportado no SQL Server 2005.|
 |Year|Ano (`this`)|Não suportado no SQL Server 2005.|
 
@@ -125,8 +126,8 @@ O mapeamento mostrado para os métodos de `get` nas propriedades listadas.
 |Método de instância System.TimeSpan ()|Função canônica|Observações|
 |-----------------------------------------|------------------------|-----------|
 |Horas|Hora (`this`)|Não suportado no SQL Server 2005.|
-|Milésimos de segundos|Milissegundos (`this`)|Não suportado no SQL Server 2005.|
-|Minutos|Minuto (`this`)|Não suportado no SQL Server 2005.|
+|Milissegundos|Milissegundos (`this`)|Não suportado no SQL Server 2005.|
+|minutos|Minuto (`this`)|Não suportado no SQL Server 2005.|
 |Segundos|Segundo (`this`)|Não suportado no SQL Server 2005.|
 
 > [!NOTE]

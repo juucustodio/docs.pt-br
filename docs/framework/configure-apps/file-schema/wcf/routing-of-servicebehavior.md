@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <routing> de <serviceBehavior>'
 title: <routing> de <serviceBehavior>
 ms.date: 03/30/2017
 ms.assetid: d8f9c844-4629-4a45-9599-856dc8f01794
-ms.openlocfilehash: 0998f4fc61de7099879ba6e122eed1e64588baec
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 1d8a056d708b3c42aeccf3e46a0703b3fc78a17d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70397726"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786883"
 ---
 # <a name="routing-of-servicebehavior"></a>\<routing> de \<serviceBehavior>
+
 Fornece acesso de tempo de execução ao serviço de roteamento para permitir a modificação dinâmica da configuração de roteamento.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -19,7 +21,7 @@ Fornece acesso de tempo de execução ao serviço de roteamento para permitir a 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-servicebehaviors.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<routing>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <behaviors>
@@ -34,6 +36,7 @@ Fornece acesso de tempo de execução ao serviço de roteamento para permitir a 
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -45,6 +48,7 @@ Fornece acesso de tempo de execução ao serviço de roteamento para permitir a 
 |soapProcessingEnabled|Um valor booliano que especifica se o processamento SOAP deve ocorrer.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -54,6 +58,7 @@ Fornece acesso de tempo de execução ao serviço de roteamento para permitir a 
 |[\<behavior>](behavior-of-endpointbehaviors.md)|Especifica um elemento de comportamento.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Quando adicionado à configuração de comportamento do serviço, esse elemento de configuração habilita o roteamento para o serviço. Você pode especificar a tabela de roteamento real a ser usada pelo serviço neste elemento.  
   
  Usando esta seção de configuração, você pode alterar suas configurações de roteamento imediatamente quando o padrão de implantação for alterado. Em tempo de execução, você pode registrar sua própria extensão de roteamento com novas configurações de roteamento e o serviço de roteamento começará a usar as informações de configuração atualizadas para novas mensagens e sessões, deixando, ao mesmo tempo, mensagens/sessões em andamento usando as regras que estavam em vigor quando elas foram iniciadas.  Isso lhe dá a capacidade de fazer a reconfiguração com segurança de sessão e sem reciclagem do serviço de roteamento durante o tempo de execução.  

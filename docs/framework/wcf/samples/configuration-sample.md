@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: exemplo de configuração'
 title: Exemplo de configuração
 ms.date: 03/30/2017
 ms.assetid: 75515b4a-8d70-44c8-99e0-7423df41380e
-ms.openlocfilehash: 6d84085d06da117ebf13fa4bb714513aacc3abd6
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: e11237fbc32b203c9b661288dbccab01745928d0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594719"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99778380"
 ---
 # <a name="configuration-sample"></a>Exemplo de configuração
+
 Este exemplo demonstra o uso de um arquivo de configuração para tornar um serviço detectável.  
   
 > [!NOTE]
@@ -25,6 +27,7 @@ Este exemplo demonstra o uso de um arquivo de configuração para tornar um serv
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Discovery\Configuration`  
   
 ## <a name="service-configuration"></a>Configuração de Serviço  
+
  O arquivo de configuração neste exemplo demonstra dois recursos:  
   
 - Tornando o serviço detectável por meio de um padrão <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> .  
@@ -155,6 +158,7 @@ Este exemplo demonstra o uso de um arquivo de configuração para tornar um serv
 ```  
   
 ## <a name="client-configuration"></a>Configuração do cliente  
+
  No arquivo de configuração do aplicativo para o cliente, um `standardEndpoint` do tipo `dynamicEndpoint` é usado para utilizar a descoberta, conforme mostrado no trecho de configuração a seguir.  
   
 ```xml  
@@ -169,7 +173,7 @@ Este exemplo demonstra o uso de um arquivo de configuração para tornar um serv
 </client>  
 ```  
   
- Quando um cliente está usando um `dynamicEndpoint` , o tempo de execução executa a descoberta automaticamente. Várias configurações são usadas durante a descoberta, como aquelas definidas na `discoveryClientSettings` seção, que especifica o tipo de ponto de extremidade de descoberta a ser usado:  
+ Quando um cliente está usando um `dynamicEndpoint` , o tempo de execução executa a descoberta automaticamente. Várias configurações são usadas durante a descoberta, como aquelas definidas na  `discoveryClientSettings` seção, que especifica o tipo de ponto de extremidade de descoberta a ser usado:  
   
 ```xml  
 <endpoint kind="udpDiscoveryEndpoint" endpointConfiguration="adhocDiscoveryEndpointConfiguration" />  

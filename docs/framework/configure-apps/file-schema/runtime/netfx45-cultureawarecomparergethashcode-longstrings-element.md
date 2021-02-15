@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <NetFx45_CultureAwareComparerGetHashCode_LongStrings elemento>'
 title: Elemento <NetFx45_CultureAwareComparerGetHashCode_LongStrings>
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - GetHashCode method
 - hash codes, calculating
 ms.assetid: 3a5f38d1-ebc8-44de-aaeb-2929f6e6b48f
-ms.openlocfilehash: 413eb6c6e61b509135601c65cf045eabd849e8b3
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: ca4099d3bf812cb25e6a611b9b51b3752b1ad361
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74802118"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782280"
 ---
 # <a name="netfx45_cultureawarecomparergethashcode_longstrings-element"></a>Elemento \<NetFx45_CultureAwareComparerGetHashCode_LongStrings>
 
@@ -22,7 +23,7 @@ Especifica se o runtime usa uma quantidade fixa de memória para calcular códig
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<NetFx45_CultureAwareComparerGetHashCode_LongStrings>**  
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <NetFx45_CultureAwareComparerGetHashCode_LongStrings enabled="0|1">
@@ -63,7 +64,7 @@ Por padrão, o Common Language Runtime aloca uma quantidade variável de memóri
 > [!IMPORTANT]
 > O `<NetFx45_CultureAwareComparerGetHashCode_LongStrings>` elemento não é usado no Windows 8 e versões posteriores.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType>
 - [Esquema de configurações do runtime](index.md)

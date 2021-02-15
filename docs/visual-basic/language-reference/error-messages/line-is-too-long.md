@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: BC30494: a linha é muito longa'
 title: A linha é muito longa
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,22 +8,23 @@ f1_keywords:
 helpviewer_keywords:
 - BC30494
 ms.assetid: 27270ec3-82a4-4693-a948-dd4664a5f060
-ms.openlocfilehash: 39be6c90479becb32257bad5803ff1e2c5464f9d
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 305691b0343245879e5555a1e63c2d8f9c5af777
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84397305"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795879"
 ---
-# <a name="line-is-too-long"></a>A linha é muito longa
-As linhas de texto de origem não podem exceder 65535 caracteres.  
-  
- **ID do erro:** BC30494  
-  
-## <a name="to-correct-this-error"></a>Para corrigir este erro  
-  
-- Reduza o comprimento da linha até 65535 caracteres ou menos.  
-  
-## <a name="see-also"></a>Confira também
+# <a name="bc30494-line-is-too-long"></a>BC30494: a linha é muito longa
+
+As linhas de texto de origem não podem exceder 65535 caracteres.
+
+ **ID do erro:** BC30494
+
+## <a name="to-correct-this-error"></a>Para corrigir este erro
+
+- Reduza o comprimento da linha até 65535 caracteres ou menos.
+
+## <a name="see-also"></a>Consulte também
 
 - [Tipos de erro](../../programming-guide/language-features/error-types.md)

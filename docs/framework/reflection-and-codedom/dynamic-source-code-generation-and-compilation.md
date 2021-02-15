@@ -11,12 +11,12 @@ helpviewer_keywords:
 - source code in multiple languages
 - languages, multiple language support by CodeDOM
 ms.assetid: d077a3e8-bd81-4bdf-b6a3-323857ea30fb
-ms.openlocfilehash: 3cdd89ac9745f6af133ca683afff64283f2727d1
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: 7871c27400cf5a7604e509274d5ef3f866070576
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86475093"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555206"
 ---
 # <a name="compile-and-generate-dynamic-source-code"></a>Compilar e gerar código-fonte dinâmico
 
@@ -60,4 +60,4 @@ O .NET Framework inclui geradores e compiladores de código para <xref:Microsoft
   
 ## <a name="related-sections"></a>Seções relacionadas  
 
-- A [referência rápida do CodeDom](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/f1dfsbhc(v=vs.100)) fornece uma maneira rápida para os desenvolvedores encontrarem os elementos CodeDOM que representam elementos de código-fonte.
+- A [referência rápida do CodeDom](/previous-versions/dotnet/netframework-4.0/f1dfsbhc(v=vs.100)) fornece uma maneira rápida para os desenvolvedores encontrarem os elementos CodeDOM que representam elementos de código-fonte.

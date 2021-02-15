@@ -2,12 +2,12 @@
 title: Registros
 description: 'Saiba como os registros F # representam agregações simples de valores nomeados, opcionalmente com membros.'
 ms.date: 08/15/2020
-ms.openlocfilehash: a72c0f15b58407e7d759e2fb5a1b35a7fc0d29e3
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: 2da31da0ec830d458a370e64ca105048181f5d74
+ms.sourcegitcommit: 88fbb019b84c2d044d11fb4f6004aec07f2b25b1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88812348"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97899633"
 ---
 # <a name="records"></a>Registros
 
@@ -26,7 +26,7 @@ type [accessibility-modifier] typename =
 
 ## <a name="remarks"></a>Comentários
 
-Na sintaxe anterior, *TypeName* é o nome do tipo de registro, *Label1* e *Label2* são nomes de valores, chamados de *Labels*e *type1* e *type2* são os tipos desses valores. *lista* de membros é a lista opcional de membros para o tipo.  Você pode usar o `[<Struct>]` atributo para criar um registro de struct em vez de um registro que é um tipo de referência.
+Na sintaxe anterior, *TypeName* é o nome do tipo de registro, *Label1* e *Label2* são nomes de valores, chamados de *Labels* e *type1* e *type2* são os tipos desses valores. *lista* de membros é a lista opcional de membros para o tipo.  Você pode usar o `[<Struct>]` atributo para criar um registro de struct em vez de um registro que é um tipo de referência.
 
 Estes são alguns exemplos:
 
@@ -157,13 +157,13 @@ type Person =
     member this.WeirdToString() =
         this.Name + this.Address + string this.Age
 
-let p = { Name = "a"; Age = 12; Address = "abc123 }
+let p = { Name = "a"; Age = 12; Address = "abc123" }
 let weirdString = p.WeirdToString()
 ```
 
 ## <a name="differences-between-records-and-classes"></a>Diferenças entre registros e classes
 
-Os campos de registro diferem das classes no que são expostos automaticamente como propriedades e são usados na criação e cópia de registros. A construção do registro também difere da construção da classe. Em um tipo de registro, você não pode definir um construtor. Em vez disso, a sintaxe de construção descrita neste tópico se aplica. Classes não têm relação direta entre parâmetros de construtor, campos e propriedades.
+Os campos de registro diferem dos campos de classe nos quais são expostos automaticamente como propriedades e são usados na criação e cópia de registros. A construção do registro também difere da construção da classe. Em um tipo de registro, você não pode definir um construtor. Em vez disso, a sintaxe de construção descrita neste tópico se aplica. Classes não têm relação direta entre parâmetros de construtor, campos e propriedades.
 
 Como tipos de União e estrutura, os registros têm semântica de igualdade estrutural. As classes têm semântica de igualdade de referência. O código de exemplo a seguir demonstra isso.
 
@@ -179,7 +179,7 @@ Se você escrever o mesmo código com classes, os dois objetos de classe seriam 
 
 Se você precisar de igualdade de referência para registros, adicione o atributo `[<ReferenceEquality>]` acima do registro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Tipos F#](fsharp-types.md)
 - [Classes](classes.md)

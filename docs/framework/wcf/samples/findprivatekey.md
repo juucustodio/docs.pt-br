@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: exemplo de FindPrivateKey'
 title: Exemplo de FindPrivateKey
 ms.date: 12/04/2017
 helpviewer_keywords:
 - FindPrivateKey
 ms.assetid: 16b54116-0ceb-4413-af0c-753bb2a785a6
-ms.openlocfilehash: 0ed1e5e81a5d2f7f3586e5dce306e8244b5ebd48
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: 0e876aa3e1f6dde16acbb3ddd2a130ad49d369fc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75346010"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99732417"
 ---
 # <a name="findprivatekey-sample"></a>Exemplo de FindPrivateKey
 
-Pode ser difícil encontrar o local e o nome do arquivo de chave privada associado a um certificado X. 509 específico no repositório de certificados. A ferramenta FindPrivateKey. exe facilita esse processo.
+Pode ser difícil encontrar o local e o nome do arquivo de chave privada associado a um certificado X. 509 específico no repositório de certificados. A ferramenta FindPrivateKey.exe facilita esse processo.
 
 > [!IMPORTANT]
 > FindPrivateKey é um exemplo que precisa ser compilado antes do uso. Consulte a seção [para criar o projeto FindPrivateKey](#to-build-the-findprivatekey-project) para obter instruções sobre como criar a ferramenta FindPrivateKey.
@@ -22,7 +23,7 @@ Os certificados X. 509 são instalados por um administrador ou qualquer usuário
 
 Essa conta pode não ter acesso ao arquivo de chave privada porque o certificado não foi instalado originalmente. A ferramenta FindPrivateKey fornece o local de um determinado arquivo de chave privada do certificado X. 509. Você pode adicionar permissões ou remover permissões para esse arquivo quando souber o local do arquivo de chave privada de certificados X. 509 específico.
 
-Os exemplos que usam certificados para segurança usam a ferramenta FindPrivateKey no arquivo *Setup. bat* . Depois que o arquivo de chave privada for encontrado, você poderá usar outras ferramentas, como *cacls. exe* , para definir os direitos de acesso apropriados no arquivo.
+Os exemplos que usam certificados para segurança usam a ferramenta FindPrivateKey no arquivo *Setup.bat* . Depois que o arquivo de chave privada for encontrado, você poderá usar outras ferramentas, como *Cacls.exe* , para definir os direitos de acesso apropriados no arquivo.
 
 Ao executar um serviço de Windows Communication Foundation (WCF) em uma conta de usuário, como um executável auto-hospedado, verifique se a conta de usuário tem acesso somente leitura ao arquivo. Ao executar um serviço WCF em Serviços de Informações da Internet (IIS), as contas padrão nas quais o serviço é executado são o serviço de rede no IIS 7 e versões anteriores, ou a identidade do pool de aplicativos no IIS 7,5 e versões posteriores. Para obter mais informações, consulte [identidades do pool de aplicativos](/iis/manage/configuring-security/application-pool-identities).
 
@@ -36,7 +37,7 @@ Message="The certificate 'CN=localhost' must have a private key that is capable 
 Source="System.ServiceModel"
 ```
 
-Quando isso ocorrer, use a ferramenta FindPrivateKey para localizar o arquivo de chave privada e, em seguida, defina o direito de acesso para o processo em que o serviço está sendo executado. Por exemplo, isso pode ser feito com a ferramenta Cacls. exe, conforme mostrado no exemplo a seguir:
+Quando isso ocorrer, use a ferramenta FindPrivateKey para localizar o arquivo de chave privada e, em seguida, defina o direito de acesso para o processo em que o serviço está sendo executado. Por exemplo, isso pode ser feito com a ferramenta de Cacls.exe, conforme mostrado no exemplo a seguir:
 
 ```console
 cacls.exe "C:\Documents and Settings\All Users\Application Data\Microsoft\Crypto\RSA\MachineKeys\8aeda5eb81555f14f8f9960745b5a40d_38f7de48-5ee9-452d-8a5a-92789d7110b1" /E /G "NETWORK SERVICE":R
@@ -52,7 +53,7 @@ Para baixar o projeto, visite [exemplos de Windows Communication Foundation (WCF
 
 3. No menu **Compilar** , selecione **Recompilar solução**.
 
-4. A criação da solução gera o arquivo: FindPrivateKey. exe.
+4. A criação da solução gera o arquivo: FindPrivateKey.exe.
 
 ## <a name="conventionscommand-line-entries"></a>Convenções — entradas de linha de comando
 
@@ -62,9 +63,9 @@ Para baixar o projeto, visite [exemplos de Windows Communication Foundation (WCF
 
  "*opção 1* &#124; *opção 2*" representa uma opção entre conjuntos de opções.
 
- "\<*value*>" representa um valor de parâmetro a ser inserido.
+ " \<*value*> " representa um valor de parâmetro a ser inserido.
 
-## <a name="usage"></a>Medição de
+## <a name="usage"></a>Uso
 
 ```console
 FindPrivateKey <storeName> <storeLocation> [{ {-n <subjectName>} | {-t <thumbprint>} } [-f | -d | -a]]
@@ -75,7 +76,7 @@ Em que:
 | Parâmetro         | Descrição                                                                       |
 |-----------------|-----------------------------------------------------------------------------------|
 | `<subjectName>` | O nome do assunto do certificado                                               |
-| `<thumbprint>`  | A impressão digital do certificado (você pode usar a ferramenta certmgr. exe para encontrá-lo) |
+| `<thumbprint>`  | A impressão digital do certificado (você pode usar a ferramenta de Certmgr.exe para encontrá-la) |
 | `-f`            | somente nome do arquivo de saída                                                             |
 | `-d`            | somente diretório de saída                                                             |
 | `-a`            | nome de arquivo de saída absoluto                                                         |

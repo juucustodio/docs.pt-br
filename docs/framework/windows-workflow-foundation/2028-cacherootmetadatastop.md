@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 2028-CacheRootMetadataStop'
 title: 2028 - CacheRootMetadataStop
 ms.date: 03/30/2017
 ms.assetid: d799b707-ee16-4b04-8b6d-b87c0d60e71d
-ms.openlocfilehash: a097c95d6b28a30b1831483bd40c94682c5b6770
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 863941d18cb30a0cd7544366727889bcd595bc94
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62009845"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755389"
 ---
 # <a name="2028---cacherootmetadatastop"></a>2028 - CacheRootMetadataStop
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,9 +22,11 @@ ms.locfileid: "62009845"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
+
  Indica a conclusão de CacheRootMetadata em uma atividade.  
   
 ## <a name="message"></a>Mensagem  
+
  CacheRootMetadata ter parado na atividade %1.  
   
 ## <a name="details"></a>Detalhes  

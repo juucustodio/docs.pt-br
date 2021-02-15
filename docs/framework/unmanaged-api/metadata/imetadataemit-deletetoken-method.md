@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: IMetaDataEmit: método eleteToken de:D'
 title: Método IMetaDataEmit::DeleteToken
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: a4926d0a-261b-46b1-9994-82633661a64b
 topic_type:
 - apiref
-ms.openlocfilehash: 78f3ea0d84c932732a752f3af2dc952100fef831
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 5c28b56b06f994057409ef8fa17179cb0b0e205b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84009269"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783944"
 ---
 # <a name="imetadataemitdeletetoken-method"></a>Método IMetaDataEmit::DeleteToken
+
 Exclui o token especificado do escopo de metadados atual.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,19 +36,21 @@ HRESULT DeleteToken (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `tkObj`  
  no O token a ser excluído.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MSCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataEmit](imetadataemit-interface.md)
 - [Interface IMetaDataEmit2](imetadataemit2-interface.md)

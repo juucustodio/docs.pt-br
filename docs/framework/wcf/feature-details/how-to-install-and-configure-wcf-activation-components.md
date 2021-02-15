@@ -1,18 +1,18 @@
 ---
-title: Como instalar e configurar componentes de ativação do WCF
+title: 'Como: instalar e configurar componentes de ativação do WCF'
 description: Saiba como configurar o WAS (serviço de ativação de processos do Windows) no Windows Vista para hospedar serviços WCF que não se comunicam via HTTP.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - HTTP activation [WCF]
 ms.assetid: 33a7054a-73ec-464d-83e5-b203aeded658
-ms.openlocfilehash: 84a0dcc4fed28ebd7a536bdabfcdc389be6072d8
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 085a69421f0aa7b763bd2222820ced4b4a7e1c81
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85246877"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557860"
 ---
-# <a name="how-to-install-and-configure-wcf-activation-components"></a>Como instalar e configurar componentes de ativação do WCF
+# <a name="how-to-install-and-configure-wcf-activation-components"></a>Como: instalar e configurar componentes de ativação do WCF
 
 Este tópico descreve as etapas necessárias para configurar o serviço de ativação de processos do Windows (também conhecido como WAS) no Windows Vista para hospedar serviços de Windows Communication Foundation (WCF) que não se comunicam por protocolos de rede HTTP. As seções a seguir descrevem as etapas para essa configuração:
 
@@ -102,9 +102,9 @@ Depois de instalar e configurar o WAS, consulte [como hospedar um serviço WCF n
     > [!NOTE]
     > Esse comando é uma única linha de texto.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Ativação TCP](../samples/tcp-activation.md)
 - [Ativação de MSMQ](../samples/msmq-activation.md)
 - [NamedPipe Activation](../samples/namedpipe-activation.md)
-- [Recursos de hospedagem do Windows Server AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))
+- [Recursos de hospedagem do Windows Server AppFabric](/previous-versions/appfabric/ee677189(v=azure.10))

@@ -18,23 +18,25 @@ helpviewer_keywords:
 - OnDeserializedAttribute class, custom serialization
 - OnSerializingAttribute class, custom serialization
 ms.assetid: 12ed422d-5280-49b8-9b71-a2ed129c0384
-ms.openlocfilehash: 1532c4eeb09e7110d0f369ec47f342256889e576
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 4ca78c71f464a914c07583825d4a7027ebb11bf6
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "84289649"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95679033"
 ---
 # <a name="custom-serialization"></a>Serialização personalizada
+
 A serialização personalizada é o processo de controlar a serialização e a desserialização de um tipo. Controlando a serialização, é possível garantir a compatibilidade de serialização, que é a capacidade de serializar e desserializar entre versões de um tipo sem interromper a funcionalidade básica do tipo. Por exemplo, na primeira versão de um tipo, pode haver apenas dois campos. Na próxima versão de um tipo, vários outros campos são adicionados. No entanto, a segunda versão de um aplicativo deve ser capaz de serializar e desserializar ambos os tipos. As seções a seguir descrevem como controlar a serialização.
 
 [!INCLUDE [binary-serialization-warning](../../../includes/binary-serialization-warning.md)]
   
 > [!IMPORTANT]
-> Nas versões anteriores ao .NET Framework 4.0, a serialização de dados personalizados do usuário em um assembly parcialmente confiável era realizada com o GetObjectData. Iniciando com a versão 4.0, esse método é marcado com o atributo <xref:System.Security.SecurityCriticalAttribute> que impede a execução em assemblies parcialmente confiáveis. Para contornar esta condição, implemente a interface <xref:System.Runtime.Serialization.ISafeSerializationData>.  
+> Nas versões anteriores à .NET Framework 4,0, a serialização de dados de usuário personalizados em um assembly parcialmente confiável foi realizada usando `GetObjectData` . A partir da versão 4,0, esse método é marcado com o <xref:System.Security.SecurityCriticalAttribute> atributo, que impede a execução em assemblies parcialmente confiáveis. Para contornar esta condição, implemente a interface <xref:System.Runtime.Serialization.ISafeSerializationData>.  
   
-## <a name="running-custom-methods-during-and-after-serialization"></a>Executando métodos personalizados durante e após a serialização  
- A prática recomendada e a maneira mais fácil (introduzidas na versão 2.0 do .NET Framework) é aplicar os seguintes atributos a métodos que são usados para corrigir dados durante e após a serialização:  
+## <a name="running-custom-methods-during-and-after-serialization"></a>Executando métodos personalizados durante e após a serialização
+
+A maneira recomendada de executar métodos personalizados durante e após a serialização é aplicar os seguintes atributos aos métodos que são usados para corrigir os dados durante e após a serialização:  
   
 - <xref:System.Runtime.Serialization.OnDeserializedAttribute>  
   
@@ -49,6 +51,7 @@ A serialização personalizada é o processo de controlar a serialização e a d
  Além disso, ao adicionar um novo campo a um tipo serializável existente, aplique o atributo <xref:System.Runtime.Serialization.OptionalFieldAttribute> ao campo. <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> e <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> ignoram a ausência do campo quando um fluxo que não tem o novo campo é processado.  
   
 ## <a name="implementing-the-iserializable-interface"></a>Implementando a interface ISerializable  
+
  A outra maneira de controlar a serialização é obtida pela implementação da interface <xref:System.Runtime.Serialization.ISerializable> em um objeto. Observe, no entanto, que o método na seção anterior substitui esse método para controlar a serialização.  
   
  Além disso, você não deve usar a serialização padrão em uma classe que está marcada com o atributo [Serializable](xref:System.SerializableAttribute) e que tem segurança declarativa ou imperativa no nível da classe ou em seus construtores. Em vez disso, essas classes sempre devem implementar a interface <xref:System.Runtime.Serialization.ISerializable>.  

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugObjectValue'
 title: Interface ICorDebugObjectValue
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 937de6a0-6fbf-4ddc-80ea-a6217b73e62b
 topic_type:
 - apiref
-ms.openlocfilehash: 603ab20b57dc4ba736b0342797d0be649a5bebc4
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: a2af438bbb4c2f56eb1a72151e339b6b0a978eec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83207487"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794761"
 ---
 # <a name="icordebugobjectvalue-interface"></a>Interface ICorDebugObjectValue
 
@@ -38,12 +39,14 @@ Uma subclasse de "ICorDebugValue" que representa um valor que contém um objeto.
 |[Método SetFromManagedCopy](icordebugobjectvalue-setfrommanagedcopy-method.md)|Obsoleto. Não chame esse método.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Um `ICorDebugObjectValue` permanece válido até que o processo que está sendo depurado seja continuado.  
   
 > [!NOTE]
 > Esta interface não dá suporte para chamada remota, seja entre computadores ou processos cruzados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -52,6 +55,6 @@ Uma subclasse de "ICorDebugValue" que representa um valor que contém um objeto.
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

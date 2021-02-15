@@ -1,43 +1,44 @@
 ---
+description: 'Saiba mais sobre: expondo dados com CacheMetadata'
 title: Expõem dados com CacheMetadata
 ms.date: 03/30/2017
 ms.assetid: 34832f23-e93b-40e6-a80b-606a855a00d9
-ms.openlocfilehash: a044c896e56541ee954fc33853376eb8293c6ede
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: ac4623881ebd76270f773a3b7acfe205ad365118
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61945698"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742336"
 ---
 # <a name="exposing-data-with-cachemetadata"></a>Expõem dados com CacheMetadata
 
-Antes de executar uma atividade, o tempo de execução de fluxo de trabalho obtém qualquer informação sobre a atividade que precisa para manter sua execução. O tempo de execução de fluxo de trabalho obtém essas informações durante a execução do método de <xref:System.Activities.Activity.CacheMetadata%2A> . A implementação padrão desse método oferece o tempo de execução com todos os argumentos públicos, variáveis, e atividades filhos exposto pela atividade é então executada; se a atividade precisará fornecer mais informações em tempo de execução desta (como membros particulares, ou atividades a ser agendadas pela atividade), esse método pode ser substituído para oferece.
+Antes de executar uma atividade, o runtime de fluxo de trabalho obtém qualquer informação sobre a atividade que precisa para manter sua execução. O runtime de fluxo de trabalho obtém essas informações durante a execução do método de <xref:System.Activities.Activity.CacheMetadata%2A> . A implementação padrão desse método oferece o runtime com todos os argumentos públicos, variáveis, e atividades filhos exposto pela atividade é então executada; se a atividade precisará fornecer mais informações em runtime desta (como membros particulares, ou atividades a ser agendadas pela atividade), esse método pode ser substituído para oferece.
 
 ## <a name="default-cachemetadata-behavior"></a>Comportamento padrão de CacheMetadata
 
 A implementação padrão de <xref:System.Activities.NativeActivity.CacheMetadata%2A> para as atividades que derivam de <xref:System.Activities.NativeActivity> processa os tipos de seguinte método das seguintes maneiras:
 
-- <xref:System.Activities.InArgument%601>, <xref:System.Activities.OutArgument%601>, ou <xref:System.Activities.InOutArgument%601> (argumentos genéricos): Esses argumentos são expostos no tempo de execução como argumentos com um nome e tipo iguais ao tipo e o nome de propriedade exposta, a direção do argumento apropriado e alguns dados de validação.
+- <xref:System.Activities.InArgument%601>, <xref:System.Activities.OutArgument%601>, ou <xref:System.Activities.InOutArgument%601> (argumentos genéricos): Esses argumentos são expostos no runtime como argumentos com um nome e tipo igual ao nome e o tipo expõe de propriedade, a direção apropriado do argumento, e alguns dados de validação.
 
-- <xref:System.Activities.Variable> ou alguma subclasse disso: Esses membros são expostos no tempo de execução como variáveis públicas.
+- <xref:System.Activities.Variable> ou alguma subclasse disso: Esses membros são expostos no runtime como variáveis públicas.
 
-- <xref:System.Activities.Activity> ou alguma subclasse disso: Esses membros são expostos no tempo de execução como atividades filhos públicas. O comportamento padrão pode ser implementado explicitamente chamando <xref:System.Activities.ActivityMetadata.AddImportedChild%2A>, passando a atividade filho.
+- <xref:System.Activities.Activity> ou alguma subclasse disso: Esses membros são expostos ao runtime como atividades filhos públicas. O comportamento padrão pode ser implementado explicitamente chamando <xref:System.Activities.ActivityMetadata.AddImportedChild%2A> , passando a atividade filho.
 
-- <xref:System.Activities.ActivityDelegate> ou alguma subclasse disso: Esses membros são expostos no tempo de execução como representantes públicos.
+- <xref:System.Activities.ActivityDelegate> ou alguma subclasse disso: Esses membros são expostos no runtime como representantes públicos.
 
-- <xref:System.Collections.ICollection> do tipo <xref:System.Activities.Variable>: Todos os elementos na coleção são expostos no tempo de execução como variáveis públicas.
+- <xref:System.Collections.ICollection> de tipo <xref:System.Activities.Variable>: Todos os elementos na coleção é retornado para o runtime como variáveis públicas.
 
-- <xref:System.Collections.ICollection> do tipo <xref:System.Activities.Activity>: Todos os elementos na coleção são expostos no tempo de execução como filhos públicos.
+- <xref:System.Collections.ICollection> de tipo <xref:System.Activities.Activity>: Todos os elementos na coleção expostos no runtime como filhos públicos.
 
-- <xref:System.Collections.ICollection> do tipo <xref:System.Activities.ActivityDelegate>: Todos os elementos na coleção são expostos no tempo de execução como representantes públicos.
+- <xref:System.Collections.ICollection> de tipo <xref:System.Activities.ActivityDelegate>: Todos os elementos na coleção são expostos ao runtime como representantes públicos.
 
 <xref:System.Activities.Activity.CacheMetadata%2A> para as atividades que derivam de <xref:System.Activities.Activity>, <xref:System.Workflow.Activities.CodeActivity>, e <xref:System.Activities.AsyncCodeActivity> também funcionam como anterior, exceto as seguintes diferenças:
 
-- As classes que derivam de <xref:System.Activities.Activity> não pode agendar atividades filho ou representantes, para que esses membros são expostos como filhos e delegados importados;
+- As classes que derivam de <xref:System.Activities.Activity> não pode agendar atividades filho ou representantes, para que esses membros são expostos como filhos e delegados importados; 
 
 - As classes que derivam de <xref:System.Activities.CodeActivity> e <xref:System.Activities.AsyncCodeActivity> não suporta variáveis, filhos, ou representantes, portanto somente argumentos serão expostas.
 
-## <a name="overriding-cachemetadata-to-provide-information-to-the-runtime"></a>Substituindo CacheMetadata para fornecer informações em tempo de execução
+## <a name="overriding-cachemetadata-to-provide-information-to-the-runtime"></a>Substituindo CacheMetadata para fornecer informações em runtime
 
 O snippet de código a seguir demonstra como adicionar informações sobre membros para metadados de uma atividade durante a execução do método de <xref:System.Activities.Activity.CacheMetadata%2A> . Observe que a base do método é chamada para armazenar em cachê todos os dados públicos sobre a atividade.
 

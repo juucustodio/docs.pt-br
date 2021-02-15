@@ -1,24 +1,28 @@
 ---
+description: 'Saiba mais sobre: Manipulando dados'
 title: Manipulando dados
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 51096a2e-8b38-4c4d-a523-799bfdb7ec69
-ms.openlocfilehash: 70ee6041b14feb298d93ab452e16ee23607b3fcc
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: dba948fe923e709f6564e6c64fd9adce7f3f15f5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79174284"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767681"
 ---
 # <a name="manipulating-data"></a>Manipulando dados
+
 Antes da introdução do MARS (conjunto de resultados ativos múltiplos), os desenvolvedores precisavam usar várias conexões ou cursores do lado do servidor para resolver determinados cenários. Além disso, quando várias conexões eram usadas em uma situação transacional, as conexões associadas (com **sp_getbindtoken** e **sp_bindsession**) eram necessárias. Os cenários a seguir mostram como usar uma conexão habilitada para MARS em vez de várias conexões.  
   
 ## <a name="using-multiple-commands-with-mars"></a>Usando vários comandos com o MARS  
+
  O aplicativo de console a seguir demonstra como usar dois objetos <xref:System.Data.SqlClient.SqlDataReader> com dois objetos <xref:System.Data.SqlClient.SqlCommand> e um objeto <xref:System.Data.SqlClient.SqlConnection> com o MARS habilitado.  
   
 ### <a name="example"></a>Exemplo  
+
  O exemplo abre uma conexão com o banco de dados **AdventureWorks**. Usando um objeto <xref:System.Data.SqlClient.SqlCommand>, um <xref:System.Data.SqlClient.SqlDataReader> é criado. Conforme o leitor é usado, um segundo <xref:System.Data.SqlClient.SqlDataReader> é aberto, usando dados do primeiro <xref:System.Data.SqlClient.SqlDataReader> como entrada para a cláusula WHERE para o segundo leitor.  
   
 > [!NOTE]
@@ -164,9 +168,11 @@ static void Main()
 ```  
   
 ## <a name="reading-and-updating-data-with-mars"></a>Lendo e atualizando dados com o MARS  
- O MARS permite que uma conexão seja usada para operações de leitura e de DML (linguagem de manipulação de dados) com mais de uma operação pendente. Esse recurso elimina a necessidade de um aplicativo lidar com erros de conexão ocupada. Além disso, a MARS pode substituir o uso de cursores do lado do servidor, que geralmente consomem mais recursos. Finalmente, como as várias operações podem funcionar em uma única conexão, elas podem compartilhar o mesmo contexto de transação, eliminando a necessidade de usar procedimentos armazenados do sistema **sp_getbindtoken** e **sp_bindsession**.  
+
+ O MARS permite que uma conexão seja usada para operações de leitura e de DML (linguagem de manipulação de dados) com mais de uma operação pendente. Esse recurso elimina a necessidade de um aplicativo lidar com erros de conexão ocupada. Além disso, o MARS pode substituir o uso de cursores do servidor, que geralmente consomem mais recursos. Finalmente, como as várias operações podem funcionar em uma única conexão, elas podem compartilhar o mesmo contexto de transação, eliminando a necessidade de usar procedimentos armazenados do sistema **sp_getbindtoken** e **sp_bindsession**.  
   
 ### <a name="example"></a>Exemplo  
+
  O aplicativo de console a seguir demonstra como usar dois objetos <xref:System.Data.SqlClient.SqlDataReader> com três objetos <xref:System.Data.SqlClient.SqlCommand> e um objeto <xref:System.Data.SqlClient.SqlConnection> com o MARS habilitado. O primeiro objeto de comando recupera uma lista de fornecedores cuja classificação de crédito é 5. O segundo objeto de comando usa a ID do fornecedor especificada de um <xref:System.Data.SqlClient.SqlDataReader> para carregar o segundo <xref:System.Data.SqlClient.SqlDataReader> com todos os produtos para o fornecedor específico. Cada registro de produto é visitado pelo segundo <xref:System.Data.SqlClient.SqlDataReader>. Um cálculo é executado para determinar o que o novo **OnOrderQty** deve ser. O terceiro objeto de comando é usado para atualizar a tabela **ProductVendor** com o novo valor. Todo esse processo ocorre em uma transação, que é revertida no final.  
   
 > [!NOTE]
@@ -404,5 +410,5 @@ private static string GetConnectionString()
   
 ## <a name="see-also"></a>Confira também
 
-- [Múltiplos conjuntos de resultados ativos (MARS)](multiple-active-result-sets-mars.md)
+- [MARS (conjunto de resultados ativos múltiplos)](multiple-active-result-sets-mars.md)
 - [Visão geral do ADO.NET](../ado-net-overview.md)

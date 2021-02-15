@@ -1,12 +1,14 @@
 ---
+description: 'Saiba mais sobre: @ServiceHost'
 title: '@ServiceHost'
 ms.date: 03/30/2017
 ms.assetid: 96ba6967-00f2-422f-9aa7-15de4d33ebf3
-ms.openlocfilehash: cb425d9f4dadd97e93946a2b4cd9d059ea8504ce
-ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.openlocfilehash: d16fda68bdc753121f02f6332dabedf236fac257
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86051357"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750306"
 ---
 # <a name="servicehost"></a>\@ServiceHost
 
@@ -36,9 +38,9 @@ O nome do tipo CLR da fábrica do host de serviço usada para instanciar o host 
 
 ### <a name="debug"></a>Depurar
 
-Indica se o serviço de Windows Communication Foundation (WCF) deve ser compilado com símbolos de depuração. `true`Se o serviço WCF deve ser compilado com símbolos de depuração; caso contrário, `false` .
+Indica se o serviço de Windows Communication Foundation (WCF) deve ser compilado com símbolos de depuração. `true` Se o serviço WCF deve ser compilado com símbolos de depuração; caso contrário, `false` .
 
-### <a name="language"></a>Linguagem
+### <a name="language"></a>Idioma
 
 Especifica o idioma usado ao compilar todo o código embutido no arquivo (. svc). Os valores podem representar qualquer. Linguagem com suporte .net, incluindo `C#` , `VB` e `JS` , que se refere a C#, Visual Basic e JScript .net, respectivamente. Esse atributo é opcional.
 

@@ -1,15 +1,17 @@
 ---
-title: Como desabilitar criptografia de assinaturas digitais
+description: 'Saiba mais sobre: como desabilitar a criptografia de assinaturas digitais'
+title: 'Como: desabilitar criptografia de assinaturas digitais'
 ms.date: 03/30/2017
 ms.assetid: fd174313-ad81-4dca-898a-016ccaff8187
-ms.openlocfilehash: 7ef305fdfd9a4ee61dfd89fdd46f2dc03a350977
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 95e9bd18b480f5fdf9c98fdb3447610e0d4e3c75
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595395"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756130"
 ---
-# <a name="how-to-disable-encryption-of-digital-signatures"></a>Como desabilitar criptografia de assinaturas digitais
+# <a name="how-to-disable-encryption-of-digital-signatures"></a>Como: desabilitar criptografia de assinaturas digitais
+
 Por padrão, uma mensagem é assinada e a assinatura é criptografada digitalmente. Isso é controlado por meio da criação de uma associação personalizada com uma instância do <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement> ou do <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> e da configuração da `MessageProtectionOrder` propriedade de qualquer classe para um <xref:System.ServiceModel.Security.MessageProtectionOrder> valor de enumeração. O padrão é <xref:System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncryptAndEncryptSignature>. Esse processo consome até 30% mais tempo do que simplesmente assinar e criptografar com base no tamanho geral da mensagem (quanto menor a mensagem, maior o impacto no desempenho). No entanto, desabilitar a criptografia da assinatura pode permitir que um invasor Adivinhe o conteúdo da mensagem. Isso é possível porque o elemento Signature contém o código hash do texto sem formatação de todas as partes assinadas na mensagem. Por exemplo, embora o corpo da mensagem seja criptografado por padrão, a assinatura não criptografada contém o código hash do corpo da mensagem antes da criptografia. Se o conjunto de valores possíveis para a parte assinada e criptografada for pequeno, um invasor poderá deduzir o conteúdo examinando o valor de hash. A criptografia da assinatura reduz esse vetor de ataque.  
   
  Portanto, desabilite a criptografia da assinatura somente quando o valor do conteúdo estiver baixo ou o conjunto de possíveis valores de conteúdo for grande e não determinístico e o lucro de desempenho for mais importante do que reduzir o ataque descrito acima.  

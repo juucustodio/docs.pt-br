@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: usando a variação em interfaces para coleções genéricas (Visual Basic)'
 title: Usar variação em interfaces para coleções genéricas
 ms.date: 07/20/2015
 ms.assetid: c867fcea-7462-4995-b9c5-542feec74036
-ms.openlocfilehash: b762ce42215f9b24371313446637e95962677bfb
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 9f98facbe1b89e468902384d2145fc5f91aae66a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84375635"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100458974"
 ---
 # <a name="using-variance-in-interfaces-for-generic-collections-visual-basic"></a>Usando variação em interfaces para coleções genéricas (Visual Basic)
 
@@ -112,6 +113,6 @@ Sub Main()
 End Sub
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Variação em interfaces genéricas (Visual Basic)](variance-in-generic-interfaces.md)

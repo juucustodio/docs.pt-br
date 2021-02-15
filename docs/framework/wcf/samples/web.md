@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: Web'
 title: Web
 ms.date: 03/30/2017
 ms.assetid: 88794df1-8e2d-431e-b377-2fd3dc7942ab
-ms.openlocfilehash: aad3b68dfad8e542bf0975ffcc653a4e791b2d53
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 929c0e77c35d57ef5daf6458c08d7208a0b59f6c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84602304"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798115"
 ---
 # <a name="web"></a>Web
+
 Esta seção contém exemplos hospedados na Web.  
   
 ## <a name="in-this-section"></a>Nesta seção

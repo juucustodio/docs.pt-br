@@ -10,12 +10,12 @@ metadata:
   level: Beginner
   displayType: two-column
   interactive: csharp
-  ms.openlocfilehash: 278f2c9b3dc8b00313213508bbd9057e6a0ad3b9
-  ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+  ms.openlocfilehash: 26fded8a82771672825825ce5d617ef200f18542
+  ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88812166"
+  ms.lasthandoff: 10/07/2020
+  ms.locfileid: "91805096"
 items:
 - durationInMinutes: 1
   content: >
@@ -117,7 +117,9 @@ items:
       Console.WriteLine($"The name {names[index]} is at index {index}");
 
     var notFound = names.IndexOf("Not Found");
-      Console.WriteLine($"When an item is not found, IndexOf returns {notFound}");
+
+    Console.WriteLine($"When an item is not found, IndexOf returns {notFound}");
+
     ```
 
 

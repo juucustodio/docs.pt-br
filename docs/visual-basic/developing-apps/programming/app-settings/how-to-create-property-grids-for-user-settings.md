@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como criar grades de propriedade para configurações de usuário no Visual Basic'
 title: 'Como: criar grades de propriedades para configurações de usuário'
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - property grids [Visual Basic], creating for user settings
 - property grids
 ms.assetid: b0bc737e-50d1-43d1-a6df-268db6e6f91c
-ms.openlocfilehash: e93c62ad138be260422319e28a3ed85dd1871a1b
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 19523f712207cac225ccf68e02e338a9e76fe358
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410160"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797842"
 ---
 # <a name="how-to-create-property-grids-for-user-settings-in-visual-basic"></a>Como criar grades de propriedades para configurações de usuário no Visual Basic
 
@@ -21,7 +22,7 @@ Você pode criar uma grade de propriedades para configurações de usuário, pre
 > [!NOTE]
 > Para que esse exemplo funcione, seu aplicativo deve ter as configurações de usuário definidas. Para obter mais informações, consulte [Gerenciando configurações de aplicativo (.NET)](/visualstudio/ide/managing-application-settings-dotnet).  
   
- O objeto `My.Settings` expõe cada configuração como uma propriedade. O nome da propriedade é o mesmo que o nome da configuração e o tipo de propriedade é o mesmo que o tipo de configuração. O **escopo** da configuração determina se a propriedade é somente leitura; a propriedade para uma configuração de escopo de **aplicativo**é somente leitura, enquanto a propriedade para uma configuração de escopo de **usuário**é de leitura/gravação. Para obter mais informações, consulte [Objeto My.Settings](../../../language-reference/objects/my-settings-object.md).  
+ O objeto `My.Settings` expõe cada configuração como uma propriedade. O nome da propriedade é o mesmo que o nome da configuração e o tipo de propriedade é o mesmo que o tipo de configuração. O **escopo** da configuração determina se a propriedade é somente leitura; a propriedade para uma configuração de escopo de **aplicativo** é somente leitura, enquanto a propriedade para uma configuração de escopo de **usuário** é de leitura/gravação. Para obter mais informações, consulte [Objeto My.Settings](../../../language-reference/objects/my-settings-object.md).  
   
 > [!NOTE]
 > Você não pode alterar ou salvar os valores de configurações de escopo do aplicativo em tempo de execução. As configurações de escopo do aplicativo só podem ser alteradas ao criar o aplicativo (por meio do **Designer de Projeto**) ou editando o arquivo de configuração de aplicativo. Para obter mais informações, consulte [Gerenciando configurações de aplicativo (.NET)](/visualstudio/ide/managing-application-settings-dotnet).  
@@ -51,7 +52,7 @@ Você pode criar uma grade de propriedades para configurações de usuário, pre
 
  O aplicativo salva as configurações do usuário quando o aplicativo é desligado. Para salvar as configurações imediatamente, chame o método `My.Settings.Save`. Para obter mais informações, consulte [Como persistir configurações do usuário no Visual Basic](how-to-persist-user-settings.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Objeto My.Settings](../../../language-reference/objects/my-settings-object.md)
 - [Como ler configurações do aplicativo no Visual Basic](how-to-read-application-settings.md)

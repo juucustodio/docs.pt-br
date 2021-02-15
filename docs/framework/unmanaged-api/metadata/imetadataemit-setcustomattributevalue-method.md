@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataEmit:: SetCustomAttributeValue'
 title: Método IMetaDataEmit::SetCustomAttributeValue
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: f721c863-9642-4e64-917a-65f9e55c25b9
 topic_type:
 - apiref
-ms.openlocfilehash: 6e24db7da7abbdb597b8ff64515e8053667af3ff
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 1eede765f27b371deb670242086d59b3d4320530
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008762"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706572"
 ---
 # <a name="imetadataemitsetcustomattributevalue-method"></a>Método IMetaDataEmit::SetCustomAttributeValue
+
 Define ou atualiza o valor de um atributo personalizado definido por uma chamada anterior para [IMetaDataEmit::D efinecustomattribute](imetadataemit-definecustomattribute-method.md).  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT SetCustomAttributeValue (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pcv`  
  no O token do atributo personalizado de destino.  
   
@@ -46,15 +49,16 @@ HRESULT SetCustomAttributeValue (
  no O tamanho, em bytes, do atributo personalizado.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MSCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataEmit](imetadataemit-interface.md)
 - [Interface IMetaDataEmit2](imetadataemit2-interface.md)

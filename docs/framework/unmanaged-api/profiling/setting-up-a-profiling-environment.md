@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Configurando um ambiente de criação de perfil'
 title: Configurando um ambiente de criação de perfil
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -10,14 +11,15 @@ helpviewer_keywords:
 - COR_ENABLE_PROFILING environment variable
 - profiling API [.NET Framework], enabling
 ms.assetid: fefca07f-7555-4e77-be86-3c542e928312
-ms.openlocfilehash: adf790e0b2d2b72b5a1f0b2a41b80db6d5026869
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 88bfb50b02874bf79f03414213329c5dcc79a9fa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84494014"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646342"
 ---
 # <a name="setting-up-a-profiling-environment"></a>Configurando um ambiente de criação de perfil
+
 > [!NOTE]
 > Houve alterações substanciais na criação de perfil no .NET Framework 4.  
   
@@ -41,13 +43,14 @@ ms.locfileid: "84494014"
 > Para usar .NET Framework versões 2,0, 3,0 e 3,5 de filers no .NET Framework 4 e versões posteriores, você deve definir a variável de ambiente COMPLUS_ProfAPI_ProfilerCompatibilitySetting.  
   
 ## <a name="environment-variable-scope"></a>Escopo da variável de ambiente  
+
  A maneira como você define as variáveis de ambiente COR_ENABLE_PROFILING e COR_PROFILER determinará seu escopo de influência. Você pode definir essas variáveis de uma das seguintes maneiras:  
   
 - Se você definir as variáveis em uma chamada [ICorDebug:: CreateProcess](../debugging/icordebug-createprocess-method.md) , elas serão aplicadas somente ao aplicativo que você está executando no momento. (Eles também serão aplicados a outros aplicativos iniciados pelo aplicativo que herdam o ambiente.)  
   
 - Se você definir as variáveis em uma janela de prompt de comando, elas serão aplicadas a todos os aplicativos iniciados nessa janela.  
   
-- Se você definir as variáveis no nível de usuário, elas serão aplicadas a todos os aplicativos que você iniciar com o explorador de arquivos. Uma janela de prompt de comando que você abrir depois de definir as variáveis terá essas configurações de ambiente e, portanto, qualquer aplicativo que você iniciar nessa janela. Para definir variáveis de ambiente no nível do usuário, clique com o botão direito do mouse em **meu computador**, clique em **Propriedades**, clique na guia **avançado** , clique em **variáveis de ambiente**e adicione as variáveis à lista variáveis de **usuário** .  
+- Se você definir as variáveis no nível de usuário, elas serão aplicadas a todos os aplicativos que você iniciar com o explorador de arquivos. Uma janela de prompt de comando que você abrir depois de definir as variáveis terá essas configurações de ambiente e, portanto, qualquer aplicativo que você iniciar nessa janela. Para definir variáveis de ambiente no nível do usuário, clique com o botão direito do mouse em **meu computador**, clique em **Propriedades**, clique na guia **avançado** , clique em **variáveis de ambiente** e adicione as variáveis à lista variáveis de **usuário** .  
   
 - Se você definir as variáveis no nível do computador, elas serão aplicadas a todos os aplicativos iniciados nesse computador. Uma janela de prompt de comando aberta nesse computador terá essas configurações de ambiente e, portanto, qualquer aplicativo que você iniciar nessa janela. Isso significa que todos os processos gerenciados nesse computador serão iniciados com seu criador de perfil. Para definir variáveis de ambiente no nível do computador, clique com o botão direito do mouse em **meu computador**, clique em **Propriedades**, clique na guia **avançado** , clique em **variáveis de ambiente**, adicione as variáveis à lista variáveis do **sistema** e reinicie o computador. Após a reinicialização, as variáveis estarão disponíveis em todo o sistema.  
   
@@ -62,6 +65,7 @@ ms.locfileid: "84494014"
 - Como o criador de perfil é um objeto COM que é instanciado em processo, cada aplicativo de criação de perfil terá sua própria cópia do criador de perfis. Portanto, uma única instância do criador de perfil não precisa lidar com dados de vários aplicativos. No entanto, você precisará adicionar lógica ao código de log do criador de perfil para evitar que o arquivo de log seja sobregravado de outros aplicativos com criação de perfil.  
   
 ## <a name="initializing-the-profiler"></a>Inicializando o criador de perfil  
+
  Quando as duas verificações de variável de ambiente são aprovadas, o CLR cria uma instância do criador de perfil de maneira semelhante à `CoCreateInstance` função com. O criador de perfil não é carregado por meio de uma chamada direta para `CoCreateInstance` . Portanto, uma chamada para `CoInitialize` , que requer a definição do modelo de Threading, é evitada. Em seguida, o CLR chama o método [ICorProfilerCallback:: Initialize](icorprofilercallback-initialize-method.md) no criador de perfil. A assinatura desse método é a seguinte.  
   
 ```cpp  
@@ -71,6 +75,7 @@ HRESULT Initialize(IUnknown *pICorProfilerInfoUnk)
  O criador de perfil deve consultar `pICorProfilerInfoUnk` um ponteiro de interface [ICorProfilerInfo](icorprofilerinfo-interface.md) ou [ICorProfilerInfo2](icorprofilerinfo2-interface.md) e salvá-lo para que possa solicitar mais informações posteriormente durante a criação de perfil.  
   
 ## <a name="setting-event-notifications"></a>Definindo notificações de eventos  
+
  Em seguida, o criador de perfil chama o método [ICorProfilerInfo:: SetEventMask](icorprofilerinfo-seteventmask-method.md) para especificar em quais categorias de notificações ele está interessado. Por exemplo, se o criador de perfil estiver interessado apenas em funções Enter e sair de notificações e notificações de coleta de lixo, ele especificará o seguinte.  
   
 ```cpp  
@@ -84,7 +89,9 @@ pInfo->SetEventMask(COR_PRF_MONITOR_ENTERLEAVE | COR_PRF_MONITOR_GC)
  Determinados eventos do criador de perfil são imutáveis. Isso significa que assim que esses eventos são definidos no retorno de `ICorProfilerCallback::Initialize` chamada, eles não podem ser desativados e novos eventos não podem ser ativados. As tentativas de alterar um evento imutável resultarão no `ICorProfilerInfo::SetEventMask` retorno de um HRESULT com falha.  
   
 <a name="windows_service"></a>
+
 ## <a name="profiling-a-windows-service"></a>Criação de perfil de um serviço do Windows  
+
  A criação de perfil de um serviço do Windows é como a criação de perfil de um aplicativo Common Language Runtime. Ambas as operações de criação de perfil são habilitadas por meio de variáveis de ambiente. Como um serviço do Windows é iniciado quando o sistema operacional é iniciado, as variáveis de ambiente discutidas anteriormente neste tópico já devem estar presentes e definidas para os valores necessários antes do início do sistema. Além disso, a DLL de criação de perfil já deve estar registrada no sistema.  
   
  Depois de definir as variáveis de ambiente COR_ENABLE_PROFILING e COR_PROFILER e registrar a DLL do criador de perfil, você deve reiniciar o computador de destino para que o serviço do Windows possa detectar essas alterações.  
@@ -93,6 +100,6 @@ pInfo->SetEventMask(COR_PRF_MONITOR_ENTERLEAVE | COR_PRF_MONITOR_GC)
   
  Essa técnica também leva a todos os processos CLR que estão sendo Profiles. O criador de perfil deve adicionar lógica ao seu retorno de chamada [ICorProfilerCallback:: Initialize](icorprofilercallback-initialize-method.md) para detectar se o processo atual é de interesse. Se não for, o criador de perfil poderá falhar o retorno de chamada sem executar a inicialização.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral da criação de perfil](profiling-overview.md)

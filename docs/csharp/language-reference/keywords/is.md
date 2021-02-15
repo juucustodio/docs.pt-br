@@ -8,25 +8,23 @@ f1_keywords:
 helpviewer_keywords:
 - is keyword [C#]
 ms.assetid: bc62316a-d41f-4f90-8300-c6f4f0556e43
-ms.openlocfilehash: 3508f08857f88fd34478f968a71bae0121d54d1c
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: c38649a9e3b3f75ec35fb8711324302a682b504e
+ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89134504"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96851328"
 ---
 # <a name="is-c-reference"></a>is (Referência de C#)
 
-O operador `is` verifica se o resultado de uma expressão é compatível com um tipo fornecido ou (a partir do C# 7.0) testa uma expressão em relação a um padrão. Saiba mais sobre o operador `is` de teste de tipo na seção [operador is](../operators/type-testing-and-cast.md#is-operator) do artigo [Operadores cast e teste de tipo](../operators/type-testing-and-cast.md).
+O operador `is` verifica se o resultado de uma expressão é compatível com um tipo fornecido ou (a partir do C# 7.0) testa uma expressão em relação a um padrão. Para obter informações sobre o operador de teste de tipo `is` , consulte a seção [is Operator](../operators/type-testing-and-cast.md#is-operator) do artigo [Type-Test and Cast Operators](../operators/type-testing-and-cast.md) .
 
 ## <a name="pattern-matching-with-is"></a>Correspondência de padrões com `is`
 
 Começando com o C# 7.0, as instruções `is` e [switch](switch.md) permitem a correspondência de padrões. A palavra-chave `is` dá suporte aos seguintes padrões:
 
-- [Padrão de tipo](#type-pattern), que testa se uma expressão pode ser convertida em um tipo especificado e, caso possa, a converte em uma variável desse tipo.
-
+- [Tipo padrão](#type-pattern), que testa se uma expressão pode ser convertida em um tipo especificado e, se puder, converte a variável em uma variável desse tipo.
 - [Padrão constante](#constant-pattern), que testa se uma expressão é avaliada como um valor constante especificado.
-
 - [Padrão var](#var-pattern), uma correspondência que sempre é bem-sucedida e vincula o valor de uma expressão a uma nova variável local.
 
 ### <a name="type-pattern"></a>Padrão de tipo
@@ -34,24 +32,21 @@ Começando com o C# 7.0, as instruções `is` e [switch](switch.md) permitem a c
 Ao usar o padrão de tipo para realizar a correspondência de padrões, `is` testa se uma expressão pode ser convertida em um tipo especificado e, caso possa, a converte em uma variável desse tipo. Trata-se de uma extensão simples da instrução `is` que habilita a conversão e a avaliação de tipo concisas. A forma geral do padrão de tipo `is` é:
 
 ```csharp
-   expr is type varname
+expr is type varname
 ```
 
 Em que *expr* é uma expressão que é avaliada como uma instância de algum tipo, *digite* é o nome do tipo para o qual o resultado de *expr* deve ser convertido e *VarName* é o objeto para o qual o resultado de *expr* é convertido se o `is` teste for `true` .
 
-A expressão `is` será `true` se *expr* não for `null` e qualquer um dos seguintes for verdadeiro:
+A `is` expressão é `true` se *expr* não for `null` , e qualquer uma das condições a seguir for verdadeira:
 
 - *expr* for uma instância do mesmo tipo que *type*.
-
 - *expr* for uma instância de um tipo derivado de *type*. Em outras palavras, o resultado de *expr* pode sofrer upcast para uma instância de *type*.
-
 - *expr* tem um tipo de tempo de compilação que é uma classe base de *type*, e *expr* tem um tipo de runtime que é *type* ou é derivado de *type*. O *tipo de tempo de compilação* de uma variável é o tipo da variável, conforme definido em sua declaração. O *tipo de runtime* de uma variável é o tipo da instância atribuída a essa variável.
-
 - *expr* é uma instância de um tipo que implementa a interface de *type*.
 
 A partir do C# 7.1, *expr* pode ter um tipo de tempo de compilação definido por um parâmetro de tipo genérico e suas restrições.
 
-Se *expr* for `true` e `is` for usado com uma instrução `if`, *varname* será atribuído somente dentro da instrução `if`. O escopo de *varname* é da expressão `is` até o final do bloco que envolve a instrução `if`. Usar *varname* em qualquer outro local gera um erro em tempo de compilação para o uso de uma variável que não foi atribuída.
+Se *expr* for `true` e `is` for usado com uma instrução `if`, *varname* será atribuído somente dentro da instrução `if`. O escopo de *varname* é da expressão `is` até o final do bloco que envolve a instrução `if`. O uso de *VarName* em qualquer outro local gera um erro de tempo de compilação para uso de uma variável que não foi atribuída.
 
 O exemplo a seguir usa o padrão de tipo `is` para fornecer a implementação do método <xref:System.IComparable.CompareTo(System.Object)?displayProperty=nameWithType> de um tipo.
 
@@ -105,6 +100,8 @@ O exemplo a seguir demonstra uma comparação de verificações de `null`:
 
 [!code-csharp[is#11](../../../../samples/snippets/csharp/language-reference/keywords/is/is-const-pattern11.cs#11)]
 
+A expressão `x is null` é computada de forma diferente para tipos de referência e tipos de valor anulável. Para tipos de valor anulável, ele usa <xref:System.Nullable%601.HasValue?displayProperty=nameWithType> . Para tipos de referência, ele usa `(object)x == null` .
+
 ### <a name="var-pattern"></a>Padrão var
 
 Uma correspondência de padrões com o `var` padrão sempre é realizada com sucesso. Sua sintaxe é:
@@ -113,7 +110,7 @@ Uma correspondência de padrões com o `var` padrão sempre é realizada com suc
    expr is var varname
 ```
 
-Em que o valor de *expr* sempre é atribuído a uma variável local chamada *VarName*. *VarName* é uma variável do mesmo tipo que o tipo de *expr*de tempo de compilação.
+Em que o valor de *expr* sempre é atribuído a uma variável local chamada *VarName*. *VarName* é uma variável do mesmo tipo que o tipo de *expr* de tempo de compilação.
 
 Se *expr* for avaliada como `null` , a `is` expressão produz `true` e atribui `null` a *VarName*. O padrão var é um dos poucos usos `is` que produz `true` para um `null` valor.
 

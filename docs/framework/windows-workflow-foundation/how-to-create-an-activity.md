@@ -1,30 +1,27 @@
 ---
-title: Como criar uma atividade
+title: 'Como: criar uma atividade'
 description: 'Este artigo mostra como criar duas atividades no Workflow Foundation: uma que usa o código para implementar sua lógica e outra definida usando outras atividades.'
 ms.date: 09/14/2018
 dev_langs:
 - csharp
 - vb
 ms.assetid: c09b1e99-21b5-4d96-9c04-ec31db3f4436
-ms.openlocfilehash: dae099d102b0c85d09a1ef8bcce56e8a9096bd20
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: c7610d8612eb944afa9c23e1bf2abceeb3a6d38b
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83419584"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190761"
 ---
-# <a name="how-to-create-an-activity"></a>Como criar uma atividade
+# <a name="how-to-create-an-activity"></a>Como: criar uma atividade
 
 As atividades são a unidade principal de comportamento no [!INCLUDE[wf1](../../../includes/wf1-md.md)]. A lógica de execução de uma atividade pode ser implementada em código gerenciado ou pode ser implementada usando outras atividades. Este tópico demonstra como criar duas atividades. A primeira atividade é uma atividade simples que usa o código para implementar a sua lógica de execução. A implementação da segunda atividade é definida usando outras atividades. Essas atividades são usadas nas seguintes etapas no tutorial.
-
-> [!NOTE]
-> Para baixar uma versão completa do tutorial, consulte [Windows Workflow Foundation (WF45) – introdução tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).
 
 ## <a name="create-the-activity-library-project"></a>Criar o projeto de biblioteca de atividades
 
 1. Abra o Visual Studio e escolha **novo**  >  **projeto** no menu **arquivo** .
 
-2. Na caixa de diálogo **novo projeto** , na categoria **instalado** , selecione **Visual C#**  >  **fluxo de trabalho** do Visual C# (ou **Visual Basic**  >  **fluxo de trabalho**).
+2. Na caixa de diálogo **novo projeto** , na categoria **instalado** , selecione   >  **fluxo de trabalho** do Visual C# (ou **Visual Basic**  >  **fluxo de trabalho**).
 
     > [!NOTE]
     > Se você não vir a categoria de modelo de **fluxo de trabalho** , talvez seja necessário instalar o componente **Windows Workflow Foundation** do Visual Studio. Escolha o link **abrir instalador do Visual Studio** no lado esquerdo da caixa de diálogo **novo projeto** . Em Instalador do Visual Studio, selecione a guia **componentes individuais** . Em seguida, na categoria **atividades de desenvolvimento** , selecione o componente **Windows Workflow Foundation** . Escolha **Modificar** para instalar o componente.
@@ -37,7 +34,7 @@ As atividades são a unidade principal de comportamento no [!INCLUDE[wf1](../../
 
 1. Escolha **Adicionar novo item** no menu **projeto** .
 
-2. No nó **Installed**  >  **itens comuns** instalados, selecione **fluxo de trabalho**. Selecione **atividade de código** na lista **fluxo de trabalho** .
+2. No nó   >  **itens comuns** instalados, selecione **fluxo de trabalho**. Selecione **atividade de código** na lista **fluxo de trabalho** .
 
 3. Digite `ReadInt` na caixa **Nome** e clique em **Adicionar**.
 
@@ -55,7 +52,7 @@ As atividades são a unidade principal de comportamento no [!INCLUDE[wf1](../../
 
 2. Escolha **Adicionar novo item** no menu **projeto** .
 
-3. No nó **Installed**  >  **itens comuns** instalados, selecione **fluxo de trabalho**. Selecione **Atividade** na lista **Fluxo de Trabalho**.
+3. No nó   >  **itens comuns** instalados, selecione **fluxo de trabalho**. Selecione **Atividade** na lista **Fluxo de Trabalho**.
 
 4. Digite `Prompt` na caixa **Nome** e clique em **Adicionar**.
 
@@ -69,7 +66,7 @@ As atividades são a unidade principal de comportamento no [!INCLUDE[wf1](../../
 
 9. Clique em **Criar Argumento**.
 
-10. Digite `Result` na caixa de **nome** que está abaixo do argumento recém-adicionado `BookmarkName` , selecione **fora** na lista suspensa **direção** , selecione **Int32** na lista suspensa tipo de **argumento** e pressione **Enter**para.
+10. Digite `Result` na caixa de **nome** que está abaixo do argumento recém-adicionado `BookmarkName` , selecione **fora** na lista suspensa **direção** , selecione **Int32** na lista suspensa tipo de **argumento** e pressione **Enter** para.
 
 11. Clique em **Criar Argumento**.
 
@@ -93,9 +90,9 @@ As atividades são a unidade principal de comportamento no [!INCLUDE[wf1](../../
 
 17. Arraste uma atividade **ReadInt** da seção **NumberGuessWorkflowActivities** da caixa de **ferramentas** e solte-a na atividade **Sequence** para que ela siga a atividade **WriteLine** .
 
-18. Associe o argumento **BookmarkName** da atividade **ReadInt** ao argumento **BookmarkName** da atividade **prompt** , digitando `BookmarkName` na caixa **Inserir uma expressão VB** à direita do argumento **BookmarkName** na **janela Propriedades**e pressione a tecla **Tab** duas vezes para fechar a janela membros da lista do IntelliSense e salvar a propriedade.
+18. Associe o argumento **BookmarkName** da atividade **ReadInt** ao argumento **BookmarkName** da atividade **prompt** , digitando `BookmarkName` na caixa **Inserir uma expressão VB** à direita do argumento **BookmarkName** na **janela Propriedades** e pressione a tecla **Tab** duas vezes para fechar a janela membros da lista do IntelliSense e salvar a propriedade.
 
-19. Vincule o argumento **Result** da atividade **ReadInt** ao argumento **Result** da atividade **prompt** , digitando `Result` na caixa **Inserir uma expressão VB** à direita do argumento **resultado** na **janela Propriedades**e pressione a tecla **Tab** duas vezes...
+19. Vincule o argumento **Result** da atividade **ReadInt** ao argumento **Result** da atividade **prompt** , digitando `Result` na caixa **Inserir uma expressão VB** à direita do argumento **resultado** na **janela Propriedades** e pressione a tecla **Tab** duas vezes...
 
 20. Pressione **Ctrl** + **Shift** + **B** para criar a solução.
 
@@ -103,11 +100,11 @@ As atividades são a unidade principal de comportamento no [!INCLUDE[wf1](../../
 
 Para obter instruções sobre como criar um fluxo de trabalho usando essas atividades, consulte a próxima etapa do tutorial [como: criar um fluxo de trabalho](how-to-create-a-workflow.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.Activities.CodeActivity>
 - <xref:System.Activities.NativeActivity%601>
 - [Criando e implementando atividades personalizadas](designing-and-implementing-custom-activities.md)
-- [Tutorial de Introdução](getting-started-tutorial.md)
-- [Como criar um fluxo de trabalho](how-to-create-a-workflow.md)
+- [Guia de introdução ao tutorial](getting-started-tutorial.md)
+- [Como: criar um fluxo de trabalho](how-to-create-a-workflow.md)
 - [Usando o ExpressionTextBox em um designer personalizado de atividades](./samples/using-the-expressiontextbox-in-a-custom-activity-designer.md)

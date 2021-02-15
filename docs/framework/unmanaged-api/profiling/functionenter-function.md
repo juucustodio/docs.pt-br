@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função FunctionEnter'
 title: Função FunctionEnter
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: bf4ffa50-4506-4dd4-aa13-a0457b47ca74
 topic_type:
 - apiref
-ms.openlocfilehash: 52870c7446987817ff00b90db26c3265bccdd096
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 07b91a81480e453be16e840b89fa822cb91002ba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500722"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788950"
 ---
 # <a name="functionenter-function"></a>Função FunctionEnter
+
 Notifica o criador de perfil que o controle está sendo passado para uma função.  
   
 > [!NOTE]
@@ -42,6 +44,7 @@ void __stdcall FunctionEnter (
   \[in] o identificador da função à qual o controle é passado.
 
 ## <a name="remarks"></a>Comentários  
+
  A `FunctionEnter` função é um retorno de chamada; você deve implementá-la. A implementação deve usar o `__declspec` `naked` atributo de classe de armazenamento ().  
   
  O mecanismo de execução não salva nenhum registro antes de chamar essa função.  
@@ -55,6 +58,7 @@ void __stdcall FunctionEnter (
  Além disso, a `FunctionEnter` função não deve chamar um código gerenciado ou, de qualquer forma, causar uma alocação de memória gerenciada.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl  
@@ -63,7 +67,7 @@ void __stdcall FunctionEnter (
   
  **Versões do .NET Framework:** 1,1, 1,0  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Função FunctionEnter2](functionenter2-function.md)
 - [Função FunctionLeave2](functionleave2-function.md)

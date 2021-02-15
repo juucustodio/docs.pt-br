@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedScope:: GetChildren'
 title: Método ISymUnmanagedScope::GetChildren
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 0bed524e-cc48-4bf0-b9fa-25d665e63ddb
 topic_type:
 - apiref
-ms.openlocfilehash: c6d21f40c260890c9c88dcdfccd7e31161024ba3
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 55d72c98d34fcb30a479611895228fbc1b9f7f55
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83614858"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763495"
 ---
 # <a name="isymunmanagedscopegetchildren-method"></a>Método ISymUnmanagedScope::GetChildren
+
 Obtém os filhos deste escopo.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT GetChildren(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `cChildren`  
  no Um `ULONG32` que indica o tamanho da `children` matriz.  
   
@@ -46,12 +49,14 @@ HRESULT GetChildren(
  fora A matriz de filhos retornada.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedScope](isymunmanagedscope-interface.md)
 - [Método GetParent](isymunmanagedscope-getparent-method.md)

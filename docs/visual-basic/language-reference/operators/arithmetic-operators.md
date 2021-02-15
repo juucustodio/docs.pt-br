@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: operadores aritméticos (Visual Basic)'
 title: Operadores aritméticos
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,14 +7,15 @@ helpviewer_keywords:
 - arithmetic operators [Visual Basic]
 - math operators [Visual Basic]
 ms.assetid: 330178e0-a375-4742-b662-b3080c89fa54
-ms.openlocfilehash: c5d7ec0c01e956acfcb3b41689c7a7338c6e25b4
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: ce73df474e605408cec67319c950c1aa39749c72
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84371876"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774233"
 ---
 # <a name="arithmetic-operators-visual-basic"></a>Operadores aritméticos (Visual Basic)
+
 A seguir estão os operadores aritméticos definidos em Visual Basic.  
   
  [Operador ^](exponentiation-operator.md)  
@@ -30,7 +32,7 @@ A seguir estão os operadores aritméticos definidos em Visual Basic.
   
  [-Operator](subtraction-operator.md) (unário e binário)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Precedência do operador no Visual Basic](operator-precedence.md)
 - [Operadores aritméticos no Visual Basic](../../programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)

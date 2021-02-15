@@ -1,17 +1,18 @@
 ---
-title: Como usar o Svcutil.exe para baixar documentos de metadados
+title: 'Como: usar Svcutil.exe para baixar documentos de metadados'
 description: Saiba como usar Svcutil.exe para baixar metadados de serviços em execução e salvar os metadados em arquivos locais.
 ms.date: 03/30/2017
 ms.assetid: 15524274-3167-4627-b722-d6cedb9fa8c6
-ms.openlocfilehash: 42df55fe7bbae6d8c977263e05053d8a8fa87aff
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 449dd3023b5d688ed0de22e3651cccf16bee0c52
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85246760"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96280670"
 ---
-# <a name="how-to-use-svcutilexe-to-download-metadata-documents"></a>Como usar o Svcutil.exe para baixar documentos de metadados
-Você pode usar Svcutil.exe para baixar metadados de serviços em execução e para salvar os metadados em arquivos locais. Para esquemas de URL HTTP e HTTPS, Svcutil.exe tenta recuperar metadados usando o WS-MetadataExchange e a [descoberta de serviço Web XML](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/fxx6cfx2(v=vs.100)). Para todos os outros esquemas de URL, Svcutil.exe usa apenas WS-MetadataExchange.  
+# <a name="how-to-use-svcutilexe-to-download-metadata-documents"></a>Como: usar Svcutil.exe para baixar documentos de metadados
+
+Você pode usar Svcutil.exe para baixar metadados de serviços em execução e para salvar os metadados em arquivos locais. Para esquemas de URL HTTP e HTTPS, Svcutil.exe tenta recuperar metadados usando WS-MetadataExchange e [descoberta de serviço Web XML](/previous-versions/dotnet/netframework-4.0/fxx6cfx2(v=vs.100)). Para todos os outros esquemas de URL, Svcutil.exe usa apenas WS-MetadataExchange.  
   
  Por padrão, Svcutil.exe usa as associações definidas na <xref:System.ServiceModel.Description.MetadataExchangeBindings> classe. Para configurar a associação usada para WS-MetadataExchange, você deve definir um ponto de extremidade do cliente no arquivo de configuração para Svcutil.exe (svcutil.exe.config) que usa o `IMetadataExchange` contrato e que tem o mesmo nome que o esquema de Uniform Resource Identifier (URI) do endereço do ponto de extremidade de metadados.  
   
@@ -41,6 +42,7 @@ Você pode usar Svcutil.exe para baixar metadados de serviços em execução e p
  Para obter mais opções sobre como usar essa ferramenta para download de metadados, consulte [ferramenta de utilitário de metadados ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md).  
   
 ## <a name="example"></a>Exemplo  
+
  O comando a seguir baixa os documentos de metadados de um serviço em execução.  
   
 ```console
@@ -49,4 +51,4 @@ svcutil /t:metadata http://service/metadataEndpoint
   
 ## <a name="see-also"></a>Veja também
 
-- [Ferramenta de utilitário de metadados ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)
+- [Ferramenta Utilitário de Metadados ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md)

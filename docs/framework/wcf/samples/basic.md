@@ -1,25 +1,28 @@
 ---
+description: 'Saiba mais sobre: básico'
 title: Básico2
 ms.date: 03/30/2017
 ms.assetid: 04e4d3bd-ab89-4b50-8f42-2a4430751a9c
-ms.openlocfilehash: c6c1dcfaebd74e7cc401b555e834bca2ac8da856
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: b521649e7399463bd2cfbd2ec28397ad9a024b49
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84575674"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755922"
 ---
-# <a name="basic"></a>Basic
+# <a name="basic"></a>Básico
+
 Esta seção inclui seções de exemplos que demonstram a funcionalidade básica do Windows Communication Foundation (WCF).  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Introdução](getting-started-sample.md)  
  Demonstra como implementar um serviço típico e um cliente típico usando o WCF.  
   
  [AJAX](ajax.md)  
  Demonstra o JavaScript e o XML assíncronos.  
   
- [Associação](binding.md)  
+ [Vinculação](binding.md)  
  Demonstra o uso do atributo Binding de um elemento Endpoint.  
   
  [Cliente](client.md)  
@@ -28,7 +31,7 @@ Esta seção inclui seções de exemplos que demonstram a funcionalidade básica
  [Contrato](contract.md)  
  Demonstra os contratos de dados.  
   
- [Descoberta](discovery-samples.md)  
+ [Discovery](discovery-samples.md)  
  Demonstra a descoberta do WCF.  
   
  [Gerenciamento](management.md)  

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport2:: EnumGenericParamConstraints'
 title: Método IMetaDataImport2::EnumGenericParamConstraints
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 8a7d4e40-28fe-4e14-b801-4049880130e7
 topic_type:
 - apiref
-ms.openlocfilehash: af226f9317b67b23e03d06614ed5b9c956939c22
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: d7ee44059796a943411750b66f5b45034f871a0b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503413"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99677535"
 ---
 # <a name="imetadataimport2enumgenericparamconstraints-method"></a>Método IMetaDataImport2::EnumGenericParamConstraints
+
 Obtém um enumerador para uma matriz de restrições de parâmetro genérico associadas ao parâmetro genérico representado pelo token especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -38,6 +40,7 @@ HRESULT EnumGenericParamConstraints (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `phEnum`  
  [entrada, saída] Um ponteiro para o enumerador.  
   
@@ -53,23 +56,24 @@ HRESULT EnumGenericParamConstraints (
  `pcGenericParamConstraints`  
  fora Um ponteiro para o número de tokens colocados em `rGenericParamConstraints` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
-|`S_OK`|`EnumGenericParameterConstraints`retornado com êxito.|  
-|`S_FALSE`|`phEnum`Não tem elementos de membro. Nesse caso, `pcGenericParameterConstraints` é definido como 0 (zero).|  
+|`S_OK`|`EnumGenericParameterConstraints` retornado com êxito.|  
+|`S_FALSE`|`phEnum` Não tem elementos de membro. Nesse caso, `pcGenericParameterConstraints` é definido como 0 (zero).|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)
 - [Interface IMetaDataImport](imetadataimport-interface.md)

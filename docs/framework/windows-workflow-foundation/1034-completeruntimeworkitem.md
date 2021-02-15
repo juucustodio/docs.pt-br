@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 1034-CompleteRuntimeWorkItem'
 title: 1034 - CompleteRuntimeWorkItem
 ms.date: 03/30/2017
 ms.assetid: 45620011-8b04-4f87-ab5a-65b24145e17d
-ms.openlocfilehash: bd49c608a8f6a6caab6975850507a00a2c0edb03
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: dd8a9fcb2fb692ab3b69df8f07f6a96cf48fc806
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61924547"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667961"
 ---
 # <a name="1034---completeruntimeworkitem"></a>1034 - CompleteRuntimeWorkItem
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,10 +22,12 @@ ms.locfileid: "61924547"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
+
  Indica que um RuntimeWorkItem terminado.  
   
 ## <a name="message"></a>Mensagem  
- Um item de trabalho de tempo de execução concluiu para atividades “%1 ", DisplayName: “%2", InstanceId: “%3".  
+
+ Um item de trabalho de runtime concluiu para atividades “%1 ", DisplayName: “%2", InstanceId: “%3".  
   
 ## <a name="details"></a>Detalhes  
   

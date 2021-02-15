@@ -1,20 +1,20 @@
 ---
+description: 'Saiba mais sobre: tipos de coleção classificados'
 title: Tipos de coleção Sorted
 ms.date: 04/30/2020
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - SortedDictionary collection type
 - SortedList class, grouping data in collections
 - grouping data in collections, SortedList collection type
 - SortedList collection type
-- collections [.NET Framework], SortedList collection type
+- collections [.NET], SortedList collection type
 ms.assetid: 3db965b2-36a6-4b12-b76e-7f074ff7275a
-ms.openlocfilehash: 2d9d3744859eea1a09923980b3b4c57eca6bba97
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: b57d767457b5de8d38100db104dde3e7ad2e540a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84287933"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99676125"
 ---
 # <a name="sorted-collection-types"></a>Tipos de coleção Sorted
 
@@ -45,9 +45,9 @@ Para listas ou dicionários classificados que precisam estar acessíveis simulta
 > [!NOTE]
 > Para valores que contêm suas próprias chaves (por exemplo, registros de funcionários que contêm um número de ID do funcionário), você pode criar uma coleção com chave que tem algumas características de uma lista e algumas características de um dicionário, derivando da classe genérica <xref:System.Collections.ObjectModel.KeyedCollection%602>.
 
-A partir do .NET Framework 4, a classe <xref:System.Collections.Generic.SortedSet%601> fornece uma árvore de balanceamento automático que mantém os dados na ordem classificada após inserções, exclusões e pesquisas. Essa classe e a classe <xref:System.Collections.Generic.HashSet%601> implementam a interface <xref:System.Collections.Generic.ISet%601>.
+A partir do .NET Framework 4, a <xref:System.Collections.Generic.SortedSet%601> classe fornece uma árvore de balanceamento automático que mantém os dados em ordem classificada após inserções, exclusões e pesquisas. Essa classe e a classe <xref:System.Collections.Generic.HashSet%601> implementam a interface <xref:System.Collections.Generic.ISet%601>.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Collections.IDictionary?displayProperty=nameWithType>
 - <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>

@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: XmlDictionaryReaderQuotas'
 title: XmlDictionaryReaderQuotas
 ms.date: 03/30/2017
 ms.assetid: 9b4ca8b4-0a89-4758-97ab-528a8ce18f07
-ms.openlocfilehash: f1c12a0a60397a84d4e9ff0241c4182b4511af5c
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: d1450051e7107e9b92f848d26e6b182bfd2f2340
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61858423"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756858"
 ---
 # <a name="xmldictionaryreaderquotas"></a>XmlDictionaryReaderQuotas
+
 XmlDictionaryReaderQuotas  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class XmlDictionaryReaderQuotas  
@@ -26,12 +28,15 @@ class XmlDictionaryReaderQuotas
 ```  
   
 ## <a name="methods"></a>Métodos  
- A classe XmlDictionaryReaderQuotas não define quaisquer métodos.  
+
+ A classe XmlDictionaryReaderQuotas não define nenhum método.  
   
 ## <a name="properties"></a>Propriedades  
+
  A classe XmlDictionaryReaderQuotas tem as seguintes propriedades:  
   
 ### <a name="maxarraylength"></a>MaxArrayLength  
+
  Tipo de dados: sint32  
   
  Tipo de acesso: Somente leitura  
@@ -39,6 +44,7 @@ class XmlDictionaryReaderQuotas
  A extensão máxima permitida da matriz.  
   
 ### <a name="maxbytesperread"></a>MaxBytesPerRead  
+
  Tipo de dados: sint32  
   
  Tipo de acesso: Somente leitura  
@@ -46,6 +52,7 @@ class XmlDictionaryReaderQuotas
  O máximo de bytes permitidos retornados para cada leitura.  
   
 ### <a name="maxdepth"></a>MaxDepth  
+
  Tipo de dados: sint32  
   
  Tipo de acesso: Somente leitura  
@@ -53,6 +60,7 @@ class XmlDictionaryReaderQuotas
  A profundidade máxima do nó aninhado para cada leitura.  
   
 ### <a name="maxnametablecharcount"></a>MaxNameTableCharCount  
+
  Tipo de dados: sint32  
   
  Tipo de acesso: Somente leitura  
@@ -60,6 +68,7 @@ class XmlDictionaryReaderQuotas
  O máximo de caracteres permitidos no nome da tabela.  
   
 ### <a name="maxstringcontentlength"></a>MaxStringContentLength  
+
  Tipo de dados: sint32  
   
  Tipo de acesso: Somente leitura  
@@ -68,11 +77,11 @@ class XmlDictionaryReaderQuotas
   
 ## <a name="requirements"></a>Requisitos  
   
-|MOF|Declarado em Servicemodel.mof.|  
+|MOF|Declarado em ServiceModel. mof.|  
 |---------|-----------------------------------|  
-|Namespace|Definido no root\ServiceModel|  
+|Namespace|Definido em root\ServiceModel|  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.Xml.XmlDictionaryReaderQuotas>
 - <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>

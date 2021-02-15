@@ -4,12 +4,12 @@ description: Saiba como formar consultas baseadas em conjunto no código do apli
 titleSuffix: ''
 ms.date: 03/30/2017
 ms.assetid: bf0c8f93-3ff7-49f3-8aed-f2b7ac938dec
-ms.openlocfilehash: a663d36f1e07c53d20e22d051e38123bd8873f06
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 50e048a67d4a9bf62b2224664acb654b96da0cb7
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286747"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91194681"
 ---
 # <a name="linq-and-adonet"></a>LINQ e o ADO.NET
 
@@ -30,14 +30,17 @@ Hoje, muitos desenvolvedores de negócios devem usar duas (ou mais) linguagens d
  As seções a seguir fornecem mais informações sobre LINQ to DataSet, [!INCLUDE[vbtecdlinq](../../../../includes/vbtecdlinq-md.md)] e LINQ to Entities.  
   
 ## <a name="linq-to-dataset"></a>LINQ to DataSet  
+
  O <xref:System.Data.DataSet> é um elemento-chave do modelo de programação desconectado no qual o ADO.net é criado e é amplamente usado. LINQ to DataSet permite que os desenvolvedores criem recursos de consulta mais avançados no usando <xref:System.Data.DataSet> o mesmo mecanismo de formulação de consulta que está disponível para muitas outras fontes de dados. Para obter mais informações, consulte [LINQ to DataSet](linq-to-dataset.md).  
   
 ## <a name="linq-to-sql"></a>LINQ to SQL  
- O [!INCLUDE[vbtecdlinq](../../../../includes/vbtecdlinq-md.md)] é uma ferramenta útil para os desenvolvedores que não requerem mapeamento para um modelo conceitual. Usando [!INCLUDE[vbtecdlinq](../../../../includes/vbtecdlinq-md.md)] o, você pode usar o modelo de programação LINQ diretamente sobre o esquema de banco de dados existente. [!INCLUDE[vbtecdlinq](../../../../includes/vbtecdlinq-md.md)]permite que os desenvolvedores gerem .NET Framework classes que representam dados. Em vez do mapeamento para um modelo de dados conceitual, essas classes geradas mapeiam diretamente para tabelas do banco de dados, modos de exibição, procedimentos armazenados e funções definidas pelo usuário.  
+
+ O [!INCLUDE[vbtecdlinq](../../../../includes/vbtecdlinq-md.md)] é uma ferramenta útil para os desenvolvedores que não requerem mapeamento para um modelo conceitual. Usando [!INCLUDE[vbtecdlinq](../../../../includes/vbtecdlinq-md.md)] o, você pode usar o modelo de programação LINQ diretamente sobre o esquema de banco de dados existente. [!INCLUDE[vbtecdlinq](../../../../includes/vbtecdlinq-md.md)] permite que os desenvolvedores gerem .NET Framework classes que representam dados. Em vez do mapeamento para um modelo de dados conceitual, essas classes geradas mapeiam diretamente para tabelas do banco de dados, modos de exibição, procedimentos armazenados e funções definidas pelo usuário.  
   
  Com o [!INCLUDE[vbtecdlinq](../../../../includes/vbtecdlinq-md.md)] , os desenvolvedores podem escrever código diretamente no esquema de armazenamento usando o mesmo padrão de programação LINQ que as coleções na memória e o, além de <xref:System.Data.DataSet> outras fontes de dados, como XML. Para obter mais informações, consulte [LINQ to SQL](./sql/linq/index.md).  
   
 ## <a name="linq-to-entities"></a>LINQ to Entities  
+
  Atualmente, maioria dos aplicativos são escritos sobre bancos de dados relacionais. Em algum ponto, esses aplicativos precisarão interagir com os dados representados em um formulário relacional. Os esquemas de banco de dados não são sempre ideais para criar aplicativos, e os modelos conceituais do aplicativo não são os mesmos que os modelos lógicos de bancos de dados. O Modelo de Dados de Entidade é um modelo de dados conceitual que pode ser usado para modelar os dados de um determinado domínio para que os aplicativos possam interagir com os dados como objetos. Para obter mais informações, consulte [ADO.NET Entity Framework](./ef/index.md).  
   
  Por meio do Modelo de Dados de Entidade, os dados relacionais são expostos como objetos no ambiente .NET. Isso torna a camada de objeto um destino ideal para o suporte a LINQ, permitindo que os desenvolvedores formulem consultas no banco de dados a partir da linguagem usada para criar a lógica de negócios. Essa funcionalidade é conhecida como LINQ to Entities. Para obter mais informações, consulte [LINQ to Entities](./ef/language-reference/linq-to-entities.md).  
@@ -47,5 +50,5 @@ Hoje, muitos desenvolvedores de negócios devem usar duas (ou mais) linguagens d
 - [LINQ to DataSet](linq-to-dataset.md)
 - [LINQ to SQL](./sql/linq/index.md)
 - [LINQ to Entities](./ef/language-reference/linq-to-entities.md)
-- [LINQ (consulta integrada à linguagem)](../../../csharp/programming-guide/concepts/linq/index.md)
+- [LINQ (Consulta Integrada à Linguagem)](../../../csharp/programming-guide/concepts/linq/index.md)
 - [Visão geral do ADO.NET](ado-net-overview.md)

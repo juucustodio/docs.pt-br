@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: operações de porta no .NET Framework com Visual Basic'
 title: Operações de porta no .NET Framework
 ms.date: 07/20/2015
 helpviewer_keywords:
 - ports, Visual Basic
 ms.assetid: 1eba223b-7bd3-401a-b097-982bce96df1b
-ms.openlocfilehash: 0ef0b8a7aec40603185d227d972cea655fd238c1
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 072baac53589f8a5d6405eb786b4e692cbaf6181
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84360131"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641519"
 ---
 # <a name="port-operations-in-the-net-framework-with-visual-basic"></a>Operações de porta no .NET Framework com Visual Basic
 
@@ -33,7 +34,7 @@ Esta tabela lista e descreve as principais enumerações usadas para acessar uma
 |<xref:System.IO.Ports.SerialPinChange>|Especifica o tipo de alteração ocorrida no objeto <xref:System.IO.Ports.SerialPort>.|
 |<xref:System.IO.Ports.StopBits>|Especifica o número de bits de parada usado no objeto <xref:System.IO.Ports.SerialPort>.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.Devices.Ports>
 - [Acessar as portas do computador](accessing-the-computer-s-ports.md)

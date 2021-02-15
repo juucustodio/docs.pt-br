@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: reflexão e .NET Native'
 title: Reflexão e .NET Nativo
 ms.date: 03/30/2017
 ms.assetid: 91c9eae4-c641-476c-a06e-d7ce39709763
-ms.openlocfilehash: 65921377be9b8bf1c2d147b384c85cbd037d15f2
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 150afe5964cbf3a8983540d5948b246a8f330793
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73128180"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738436"
 ---
 # <a name="reflection-and-net-native"></a>Reflexão e .NET Nativo
+
 No .NET Framework, o desenvolvimento gerenciado oferece suporte à metaprogramação por meio da API de reflexão. A reflexão permite inspecionar objetos em um aplicativo, chamar métodos em objetos descobertos por meio de inspeção, gerar novos tipos no tempo de execução e oferece suporte a muitos outros cenários de código dinâmico. Ele também oferece suporte à serialização e desserialização, o que permite que os valores do campo do objeto sejam mantidos e restaurados posteriormente. Todos esses cenários exigem o compilador do .NET Framework JIT (just-in-time) para gerar código nativo com base em metadados disponíveis.  
   
  O tempo de execução de .NET Native não inclui um compilador JIT. Como resultado, todo o código nativo necessário deve ser gerado com antecedência. Um conjunto de heurística é usado para determinar qual código deve ser gerado, mas esses heurística não pode abranger todos os cenários de metaprogramação possíveis.  Portanto, você deve fornecer dicas para esses cenários metaprogramação usando [diretivas de runtime](runtime-directives-rd-xml-configuration-file-reference.md). Se o código de implementação ou de metadados necessário não está disponível em tempo de execução, seu aplicativo gerará uma exceção [MissingMetadataException](missingmetadataexception-class-net-native.md), [MissingRuntimeArtifactException](missingruntimeartifactexception-class-net-native.md) ou [MissingInteropDataException](missinginteropdataexception-class-net-native.md). Estão disponíveis duas soluções de problemas que gerarão a entrada apropriada para seu arquivo de diretivas de runtime, a qual elimina a exceção:  
@@ -31,7 +33,7 @@ No .NET Framework, o desenvolvimento gerenciado oferece suporte à metaprograma�
   
 - [Referência do arquivo de configuração de diretivas do runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Compilando aplicativos com o .NET Nativo](index.md)
 - [Compilação e .NET nativo](net-native-and-compilation.md)

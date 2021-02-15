@@ -9,17 +9,19 @@ helpviewer_keywords:
 - MDAs (managed debugging assistants), failed QueryInterface
 - managed debugging assistants (MDAs), failed QueryInterface
 ms.assetid: 902dc863-34b3-477c-b433-b8a6bb6133c6
-ms.openlocfilehash: 2d7f14c67d47e58bcb88eab4621df63d7c598a7a
-ms.sourcegitcommit: a2c8b19e813a52b91facbb5d7e3c062c7188b457
+ms.openlocfilehash: bbd8d5644f8620444d80845b9920b925b6891176
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85415934"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96244321"
 ---
 # <a name="failedqi-mda"></a>MDA failedQI
+
 O MDA (assistente para depuração gerenciada) `failedQI` é ativado quando o tempo de execução chama `QueryInterface` em um ponteiro de interface COM em nome de um RCW (Runtime Callable Wrapper) e a chamada `QueryInterface` falha.  
   
 ## <a name="symptoms"></a>Sintomas  
+
  Uma conversão em um RCW falha ou uma chamada ao COM em um RCW falha inesperadamente.  
   
 ## <a name="cause"></a>Causa  
@@ -31,12 +33,15 @@ O MDA (assistente para depuração gerenciada) `failedQI` é ativado quando o te
 - Um proxy de propriedade do OLE retornou uma falha HRESULT.  
   
 ## <a name="resolution"></a>Resolução  
+
  Consulte a documentação do MSDN sobre as regras do COM.  
   
 ## <a name="effect-on-the-runtime"></a>Efeito sobre o runtime  
+
  Se uma chamada `QueryInterface` falhar, o contexto será alternado e haverá uma tentativa de realizar a chamada `QueryInterface` novamente para ver se um contexto incorreto estava com uma falha.  
   
 ## <a name="output"></a>Saída  
+
  O nome gerenciado da interface, o GUID da interface e o HRESULT da falha.  
   
 ## <a name="configuration"></a>Configuração  
@@ -52,5 +57,5 @@ O MDA (assistente para depuração gerenciada) `failedQI` é ativado quando o te
 ## <a name="see-also"></a>Veja também
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
-- [Diagnosticando erros com assistentes para depuração gerenciada](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Diagnosticando erros com assistentes de depuração gerenciados](diagnosing-errors-with-managed-debugging-assistants.md)
 - [Realizando marshaling de interoperabilidade](../interop/interop-marshaling.md)

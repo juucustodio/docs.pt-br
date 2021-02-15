@@ -1,16 +1,17 @@
 ---
-title: Como especificar uma associação de cliente em configuração
+title: 'Como: especificar uma associação de cliente na configuração'
 description: Saiba como especificar a associação para um cliente WCF declarativamente em um arquivo de configuração. O cliente acessa um serviço neste exemplo.
 ms.date: 03/30/2017
 ms.assetid: 4a7c79aa-50ee-4991-891e-adc0599323a7
-ms.openlocfilehash: 28778b6ae853199c5d7943f329bb087760f4bb11
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: e8a552211b28c1323b2afd595c5b060db6b2824a
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85244485"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96236501"
 ---
-# <a name="how-to-specify-a-client-binding-in-configuration"></a>Como especificar uma associação de cliente em configuração
+# <a name="how-to-specify-a-client-binding-in-configuration"></a>Como: especificar uma associação de cliente na configuração
+
 Neste exemplo, um aplicativo de console do cliente é criado para usar um serviço de calculadora e a associação para esse cliente é especificada declarativamente na configuração. O cliente acessa o `CalculatorService` , que implementa a `ICalculator` interface, e o serviço e o cliente usam a <xref:System.ServiceModel.BasicHttpBinding> classe.  
   
  O procedimento descrito pressupõe que o serviço de calculadora está em execução. Para obter informações sobre como criar o serviço, consulte [como especificar uma associação de serviço na configuração](how-to-specify-a-service-binding-in-configuration.md). Ele também usa a [ferramenta de utilitário de metadados ServiceModel (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md) que o Windows Communication Foundation (WCF) fornece para gerar automaticamente os componentes do cliente. A ferramenta gera o código do cliente e a configuração para acessar o serviço.  

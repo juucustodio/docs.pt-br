@@ -1,28 +1,32 @@
 ---
+description: 'Saiba mais sobre: 3801-RoutingServiceChannelFaulted'
 title: 3801 - RoutingServiceChannelFaulted
 ms.date: 03/30/2017
 ms.assetid: 06cd2a1a-ee5f-4f44-900c-15b5bb6e302b
-ms.openlocfilehash: f63a48a609d1c87055d75043c0373e3d70cf009f
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 942352356e1a74c735390adb4d87758b00bdb06f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61999811"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760336"
 ---
 # <a name="3801---routingservicechannelfaulted"></a>3801 - RoutingServiceChannelFaulted
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
 |ID|3801|  
-|Palavras-chave|RoutingServices|  
-|Nível|Aviso|  
+|Palavras-chave|Roteamentoservices|  
+|Level|Aviso|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando o cliente do serviço de roteamento apresentou falha.  
+
+ Esse evento é emitido quando o cliente do serviço de roteamento falha.  
   
 ## <a name="message"></a>Mensagem  
- Cliente do serviço de roteamento '%1' apresentou falha.  
+
+ Falha no cliente ' %1 ' do serviço de roteamento.  
   
 ## <a name="details"></a>Detalhes

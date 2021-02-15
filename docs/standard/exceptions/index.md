@@ -2,7 +2,6 @@
 title: Tratando e gerando exceções no .NET
 description: Saiba como tratar e lançar exceções no .NET. Exceções são como as operações do .NET indicam falha em aplicativos.
 ms.date: 06/19/2018
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - exceptions [.NET], handling
 - runtime, exceptions
@@ -12,12 +11,12 @@ helpviewer_keywords:
 - exceptions [.NET]
 - common language runtime, exceptions
 ms.assetid: f99a1d29-a2a8-47af-9707-9909f9010735
-ms.openlocfilehash: 89d88e3128917125d1a09466ed4e230604d6978c
-ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
+ms.openlocfilehash: c18482335947c8d24ba7ed6552bb78c70a0a054f
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84662765"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94827991"
 ---
 # <a name="handling-and-throwing-exceptions-in-net"></a>Tratando e gerando exceções no .NET
 
@@ -63,7 +62,7 @@ A tabela a seguir lista algumas exceções comuns com exemplos do que pode caus�
 - [Como usar o bloco try-catch para capturar exceções](how-to-use-the-try-catch-block-to-catch-exceptions.md)
 - [Como: usar exceções específicas em um bloco catch](how-to-use-specific-exceptions-in-a-catch-block.md)
 - [Como gerar exceções explicitamente](how-to-explicitly-throw-exceptions.md)
-- [Como: criar exceções definidas pelo usuário](how-to-create-user-defined-exceptions.md)
+- [Como: criar exceções de User-Defined](how-to-create-user-defined-exceptions.md)
 - [Usando manipuladores de exceção filtrados por usuário](using-user-filtered-exception-handlers.md)
 - [Como usar blocos finally](how-to-use-finally-blocks.md)
 - [Manipulando exceções de interoperabilidade COM](handling-com-interop-exceptions.md)

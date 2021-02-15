@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICeeGen'
 title: Interface ICeeGen
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 383d20b0-efe9-4e71-8fb8-1186b2e7d0c0
 topic_type:
 - apiref
-ms.openlocfilehash: e6cf0aa6f731d0a417e1a2be0ca1d0f8c9299379
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 43e9e0696523346ffbcf0b8823a48ed2c9c359e4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008268"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706806"
 ---
 # <a name="iceegen-interface"></a>Interface ICeeGen
+
 Fornece métodos para a compilação dinâmica de código.  
   
  Esta interface está obsoleta e não deve ser usada.  
@@ -47,14 +49,15 @@ Fornece métodos para a compilação dinâmica de código.
 |[Método TruncateSection](iceegen-truncatesection-method.md)|Obsoleto. Trunca a seção de código especificada pelo comprimento especificado.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de metadados](metadata-interfaces.md)

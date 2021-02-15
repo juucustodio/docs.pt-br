@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: MsmqBindingElementBase'
 title: MsmqBindingElementBase
 ms.date: 03/30/2017
 ms.assetid: 210d41ab-a2a4-4d7a-afd2-0916c08a4015
-ms.openlocfilehash: 1df4b32feda246a536183a42ac11b113bc4bb259
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 3aa5ec2343d73798f1cf5e3c7d4b5a8282f97ac9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61963430"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803172"
 ---
 # <a name="msmqbindingelementbase"></a>MsmqBindingElementBase
+
 MsmqBindingElementBase  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp  
 class MsmqBindingElementBase : TransportBindingElement  
@@ -32,95 +34,108 @@ class MsmqBindingElementBase : TransportBindingElement
 ```  
   
 ## <a name="methods"></a>Métodos  
- A classe MsmqBindingElementBase não define quaisquer métodos.  
+
+ A classe MsmqBindingElementBase não define nenhum método.  
   
 ## <a name="properties"></a>Propriedades  
+
  A classe MsmqBindingElementBase tem as seguintes propriedades:  
   
 ### <a name="customdeadletterqueue"></a>CustomDeadLetterQueue  
+
  Tipo de dados: cadeia de caracteres  
   
  Tipo de acesso: Somente leitura  
   
- Um URI que contém o local da fila de mensagens mortas de cada aplicativo, onde as mensagens que expiraram ou tiveram uma falha de transferência ou entrega são colocadas.  
+ Um URI que contém o local da fila de mensagens mortas para cada aplicativo, onde as mensagens que expiraram ou que têm a transferência ou entrega com falha são colocadas.  
   
 ### <a name="deadletterqueue"></a>DeadLetterQueue  
+
  Tipo de dados: cadeia de caracteres  
   
  Tipo de acesso: Somente leitura  
   
- Um valor de enumeração que indica o tipo de fila de mensagens mortas a ser usada.  
+ Um valor de enumeração que indica o tipo de fila de mensagens mortas a ser usado.  
   
-### <a name="durable"></a>duráveis  
- Tipo de dados: boolean  
+### <a name="durable"></a>Durável  
+
+ Tipo de dados: booliano  
   
  Tipo de acesso: Somente leitura  
   
  Um valor que indica se as mensagens processadas por essa associação são duráveis ou voláteis.  
   
 ### <a name="exactlyonce"></a>ExactlyOnce  
- Tipo de dados: boolean  
+
+ Tipo de dados: booliano  
   
  Tipo de acesso: Somente leitura  
   
  Um valor booliano que indica se as mensagens processadas por essa associação são recebidas exatamente uma vez.  
   
-### <a name="maxretrycycles"></a>maxRetryCycles  
+### <a name="maxretrycycles"></a>MaxRetryCycles  
+
  Tipo de dados: sint32  
   
  Tipo de acesso: Somente leitura  
   
- O número máximo de ciclos de repetição para tentar entregar mensagens para o aplicativo de recebimento.  
+ O número máximo de ciclos de repetição para tentar a entrega de mensagens para o aplicativo de recebimento.  
   
 ### <a name="receiveerrorhandling"></a>ReceiveErrorHandling  
+
  Tipo de dados: cadeia de caracteres  
   
  Tipo de acesso: Somente leitura  
   
- As configurações para manipulação de mensagens suspeitas.  
+ As configurações de manipulação de mensagens suspeitas.  
   
 ### <a name="receiveretrycount"></a>ReceiveRetryCount  
+
  Tipo de dados: sint32  
   
  Tipo de acesso: Somente leitura  
   
- O número máximo de repetição imediata tentativas em uma mensagem que é lida da fila de aplicativos.  
+ O número máximo de tentativas de repetição imediatas em uma mensagem que é lida da fila do aplicativo.  
   
 ### <a name="retrycycledelay"></a>RetryCycleDelay  
- Tipo de dados: datetime  
+
+ Tipo de dados: DateTime  
   
  Tipo de acesso: Somente leitura  
   
- Um valor que indica o tempo de espera entre ciclos ao tentar entregar uma mensagem que não pôde ser entregue imediatamente.  
+ Um valor que indica o tempo de espera entre os ciclos de repetição ao tentar entregar uma mensagem que não pôde ser entregue imediatamente.  
   
-### <a name="timetolive"></a>TimeToLive  
- Tipo de dados: datetime  
+### <a name="timetolive"></a>timeToLive  
+
+ Tipo de dados: DateTime  
   
  Tipo de acesso: Somente leitura  
   
- O intervalo de tempo que indica quanto tempo as mensagens processadas por essa associação pode ser na fila antes de expirarem.  
+ O intervalo de tempo que indica por quanto tempo as mensagens processadas por essa associação podem estar na fila antes de expirarem.  
   
 ### <a name="usemsmqtracing"></a>UseMsmqTracing  
- Tipo de dados: boolean  
+
+ Tipo de dados: booliano  
   
  Tipo de acesso: Somente leitura  
   
- Um valor booliano que indica se as mensagens processadas por essa associação deve ser rastreado.  
+ Um valor booliano que indica se as mensagens processadas por essa associação devem ser rastreadas.  
   
 ### <a name="usesourcejournal"></a>UseSourceJournal  
- Tipo de dados: boolean  
+
+ Tipo de dados: booliano  
   
  Tipo de acesso: Somente leitura  
   
- Um valor booliano que indica se as cópias de mensagens processadas por essa associação devem ser armazenadas na fila de diário de origem.  
+ Um valor booliano que indica se cópias de mensagens processadas por essa associação devem ser armazenadas na fila do diário de origem.  
   
 ## <a name="requirements"></a>Requisitos  
   
-|MOF|Declarado em Servicemodel.mof.|  
+|MOF|Declarado em ServiceModel. mof.|  
 |---------|-----------------------------------|  
-|Namespace|Definido no root\ServiceModel|  
+|Namespace|Definido em root\ServiceModel|  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.ServiceModel.NetMsmqBinding>
 - <xref:System.ServiceModel.MsmqBindingBase>

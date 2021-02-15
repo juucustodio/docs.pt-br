@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymENCUnmanagedMethod:: GetDocumentsForMethod'
 title: Método ISymENCUnmanagedMethod::GetDocumentsForMethod
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: bd6ccde5-d578-48d8-abed-b474fbd48d13
 topic_type:
 - apiref
-ms.openlocfilehash: 89be772ee3d8a6fc5acb74d5ebe6d3c691764f89
-ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
+ms.openlocfilehash: 01c7280abe437266618d96c6e195e61a4f830131
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83441949"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721535"
 ---
 # <a name="isymencunmanagedmethodgetdocumentsformethod-method"></a>Método ISymENCUnmanagedMethod::GetDocumentsForMethod
+
 Obtém os documentos em que este método tem linhas.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,6 +37,7 @@ HRESULT GetDocumentsForMethod(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `cDocs`  
  no O comprimento do buffer apontado por `pcDocs` .  
   
@@ -45,11 +48,13 @@ HRESULT GetDocumentsForMethod(
  no O buffer que contém os documentos.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  S_OK se o método tiver sucesso; caso contrário, um código de erro.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymENCUnmanagedMethod](isymencunmanagedmethod-interface.md)

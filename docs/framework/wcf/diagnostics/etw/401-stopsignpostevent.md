@@ -1,28 +1,32 @@
 ---
+description: 'Saiba mais sobre: 401-StopSignPostEvent'
 title: 401- StopSignPostEvent
 ms.date: 03/30/2017
 ms.assetid: e033d03a-510d-4300-aa65-ef02cb4807f2
-ms.openlocfilehash: 1776252c362feb3c3ebc04651603944040ceee7b
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 99b6151d902f3f8059b0aa01e6cda290debafda6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61999746"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793942"
 ---
 # <a name="401--stopsignpostevent"></a>401- StopSignPostEvent
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
 |ID|401|  
 |Palavras-chave|Solução de problemas|  
-|Nível|Informações|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  
- Esse evento marca o final de uma atividade de ponta a ponta. Contém o nome da atividade.  
+
+ Esse evento marca o fim de uma atividade de ponta a ponta. Contém o nome da atividade.  
   
 ## <a name="message"></a>Mensagem  
+
  Limite de atividade.  
   
 ## <a name="details"></a>Detalhes  

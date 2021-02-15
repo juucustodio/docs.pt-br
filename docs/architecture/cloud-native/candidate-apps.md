@@ -2,13 +2,13 @@
 title: Aplicativos candidatos para nuvem nativa
 description: Saiba quais tipos de aplicativos se beneficiam de uma abordagem nativa de nuvem
 author: robvet
-ms.date: 05/14/2020
-ms.openlocfilehash: b907a17b2351bc4ffe49fd6eb6f5963b209d00db
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.date: 01/19/2021
+ms.openlocfilehash: 443a7c1a1aaef078b33f352f597b33b768d989a3
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83614234"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506182"
 ---
 # <a name="candidate-apps-for-cloud-native"></a>Aplicativos candidatos para nuvem nativa
 
@@ -40,7 +40,7 @@ O Microsoft e-book gratuito [modernizar aplicativos .net existentes com a nuvem 
 
 Aplicativos monolíticos que não são críticos amplamente se beneficiam de uma migração rápida de comparação de precisão e mudança ([pronta para a infraestrutura de nuvem](../modernize-with-azure-containers/lift-and-shift-existing-apps-azure-iaas.md)). Aqui, a carga de trabalho local é rehospedada para uma VM baseada em nuvem, sem alterações. Essa abordagem usa o [modelo IaaS (infraestrutura como serviço)](https://azure.microsoft.com/overview/what-is-iaas/). O Azure inclui várias ferramentas, como [migrações para Azure](https://azure.microsoft.com/services/azure-migrate/), [Azure site Recovery](https://azure.microsoft.com/services/site-recovery/)e serviço de migração de [banco de dados do Azure](https://azure.microsoft.com/campaigns/database-migration/) para facilitar a movimentação. Embora essa estratégia possa gerar alguma economia de custos, esses aplicativos normalmente não eram arquitetados para desbloquear e aproveitar os benefícios da computação em nuvem.
 
-Os aplicativos monolíticos que são essenciais para os negócios muitas vezes se beneficiam de uma migração avançada de comparação de precisão e deslocamento (*otimizada para nuvem*). Essa abordagem inclui otimizações de implantação que habilitam os principais serviços de nuvem, sem alterar a arquitetura principal do aplicativo. Por exemplo, você pode colocar o aplicativo em [contêiner](https://docs.microsoft.com/virtualization/windowscontainers/about/) e implantá-lo em um orquestrador de contêiner, como os [Serviços Kubernetess do Azure](https://azure.microsoft.com/services/kubernetes-service/), discutidos posteriormente neste livro. Uma vez na nuvem, o aplicativo poderia consumir outros serviços de nuvem, como bancos de dados, filas de mensagens, monitoramento e Caching distribuído.
+Os aplicativos monolíticos que são essenciais para os negócios muitas vezes se beneficiam de uma migração avançada de comparação de precisão e deslocamento (*otimizada para nuvem*). Essa abordagem inclui otimizações de implantação que habilitam os principais serviços de nuvem, sem alterar a arquitetura principal do aplicativo. Por exemplo, você pode colocar o aplicativo em [contêiner](/virtualization/windowscontainers/about/) e implantá-lo em um orquestrador de contêiner, como os [Serviços Kubernetess do Azure](https://azure.microsoft.com/services/kubernetes-service/), discutidos posteriormente neste livro. Uma vez na nuvem, o aplicativo poderia consumir outros serviços de nuvem, como bancos de dados, filas de mensagens, monitoramento e Caching distribuído.
 
 Por fim, os aplicativos monolíticos que executam funções empresariais estratégicas podem se beneficiar melhor de uma abordagem *nativa de nuvem* , o assunto deste livro. Essa abordagem fornece agilidade e velocidade. Mas, ele vem a um custo de replataforma, rearquitetura e reescrita de código.
 
@@ -78,9 +78,9 @@ Com a introdução por trás, agora nos aprofundamos em uma visão muito mais de
 
 - [Padrões de nuvem nativa por Cornelia Davis](https://www.manning.com/books/cloud-native-patterns)
 
-- [Além do aplicativo de doze fatores](https://content.pivotal.io/blog/beyond-the-twelve-factor-app)
+- [Além do aplicativo Twelve-Factor](https://content.pivotal.io/blog/beyond-the-twelve-factor-app)
 
-- [O que é infraestrutura como código](https://docs.microsoft.com/azure/devops/learn/what-is-infrastructure-as-code)
+- [O que é infraestrutura como código](/azure/devops/learn/what-is-infrastructure-as-code)
 
 - [Micro Deploy de engenharia de Uber: implantação diária com confiança](https://eng.uber.com/micro-deploy/)
 

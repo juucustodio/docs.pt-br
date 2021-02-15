@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Construtor SqlStreamChars'
 title: Construtor SqlStreamChars (System. Data. SqlTypes)
 author: stevestein
 ms.author: sstein
@@ -12,16 +13,16 @@ api_location:
 - System.Data.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 34c5dcfe458ca57aa3bd5388e8b4c66c3c497df6
-ms.sourcegitcommit: 2e95559d957a1a942e490c5fd916df04b39d73a9
+ms.openlocfilehash: 1bdf9b0a9b2b32e974b29f9710541c4babb54773
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72395652"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802626"
 ---
 # <a name="sqlstreamchars-constructor"></a>Construtor SqlStreamChars
 
-Inicializa uma nova instância da classe `SqlStreamChars` . O assembly que contém esse construtor tem uma relação Friend com SQLAccess. dll. Ele é destinado ao uso por SQL Server. Para outros bancos de dados, use o mecanismo de hospedagem fornecido por esse banco.
+Inicializa uma nova instância da classe `SqlStreamChars`. O assembly que contém esse construtor tem uma relação Friend com SQLAccess.dll. Ele é destinado ao uso por SQL Server. Para outros bancos de dados, use o mecanismo de hospedagem fornecido por esse banco.
 
 ```csharp
 protected SqlStreamChars ();
@@ -30,7 +31,7 @@ protected SqlStreamChars ();
 ## <a name="remarks"></a>Comentários
 
 > [!WARNING]
-> O Construtor `SqlStreamChars` é protegido e não deve ser usado diretamente no seu código.
+> O `SqlStreamChars` Construtor é protegido e não deve ser usado diretamente no seu código.
 >
 > A Microsoft não oferece suporte ao uso desse construtor em um aplicativo de produção sob nenhuma circunstância.
 
@@ -38,6 +39,6 @@ protected SqlStreamChars ();
 
 **Namespace:** <xref:System.Data.SqlTypes>
 
-**Assembly:** System. Data (em System. Data. dll)
+**Assembly:** System.Data (em System.Data.dll)
 
 **.NET Framework versões:** Disponível desde 2,0.

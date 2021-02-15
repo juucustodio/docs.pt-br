@@ -9,14 +9,15 @@ helpviewer_keywords:
 - -bugreport compiler option [C#]
 - bugreport compiler option [C#]
 ms.assetid: f39665e3-4f6f-4357-88a2-3274c7bec0c1
-ms.openlocfilehash: 2c358b2dda400f6077ffb5ba1dfc8e6e1127fa52
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 1fb2efc9b12680e95767746c7e4e1ddacbdd2594
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125989"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "93281500"
 ---
 # <a name="-bugreport-c-compiler-options"></a>-bugreport (opções do compilador C#)
+
 Especifica que as informações de depuração devem ser colocadas em um arquivo para análise posterior.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -26,10 +27,12 @@ Especifica que as informações de depuração devem ser colocadas em um arquivo
 ```  
   
 ## <a name="arguments"></a>Argumentos  
+
  `file`  
  O nome do arquivo que conterá o relatório de bug.  
   
 ## <a name="remarks"></a>Comentários  
+
  A opção **-bugreport** especifica que as informações a seguir devem ser colocadas em `file`:  
   
 - Uma cópia de todos os arquivos de código-fonte na compilação.  
@@ -38,7 +41,7 @@ Especifica que as informações de depuração devem ser colocadas em um arquivo
   
 - Informações de versão sobre o compilador, o tempo de execução e o sistema operacional.  
   
-- Assemblies e módulos referenciados, salvos como dígitos hexadecimais, exceto os assemblies que vêm com o .NET Framework e o SDK.  
+- Assemblies e módulos referenciados, salvos como dígitos hexadecimais, exceto assemblies que são fornecidos com o .NET e o SDK do .NET.  
   
 - Saída do compilador, se houver.  
   
@@ -56,6 +59,6 @@ Especifica que as informações de depuração devem ser colocadas em um arquivo
   
 ## <a name="see-also"></a>Confira também
 
-- [Opções do compilador C#](./index.md)
+- [Opções do compilador de C#](./index.md)
 - [-ERRORREPORT (opções do compilador C#)](./errorreport-compiler-option.md)
 - [Gerenciando propriedades de solução e de projeto](/visualstudio/ide/managing-project-and-solution-properties)

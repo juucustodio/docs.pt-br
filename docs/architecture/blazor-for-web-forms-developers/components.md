@@ -6,12 +6,12 @@ ms.author: daroth
 no-loc:
 - Blazor
 ms.date: 09/18/2019
-ms.openlocfilehash: 4fdf062fb719e62b53e47f79db1e93d0bf079350
-ms.sourcegitcommit: 0100be20fcf23f61dab672deced70059ed71bb2e
+ms.openlocfilehash: fd560c84c095dffc3718a7709af904d9ba722a18
+ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88267679"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97512763"
 ---
 # <a name="build-reusable-ui-components-with-no-locblazor"></a>Crie componentes da interface do usuário reutilizáveis com Blazor
 
@@ -116,7 +116,7 @@ Muitas das sintaxes usadas em arquivos *. aspx* e *. ascx* têm sintaxes paralel
 |Blocos de códigos                  |`<% %>`             |`<% int x = 123; %>` |`@{ }`        |`@{ int x = 123; }`|
 |Expressões<br>(Codificado em HTML)|`<%: %>`            |`<%:DateTime.Now %>` |Localiza `@`<br>Explicita `@()`|`@DateTime.Now`<br>`@(DateTime.Now)`|
 |Comentários                     |`<%-- --%>`         |`<%-- Commented --%>`|`@* *@`       |`@* Commented *@`|
-|Vinculação de dados                 |`<%# %>`            |`<%# Bind("Name") %>`|`@bind`       |`<input @bind="username" />`|
+|Associação de dados                 |`<%# %>`            |`<%# Bind("Name") %>`|`@bind`       |`<input @bind="username" />`|
 
 Para adicionar membros à classe de componente Razor, use a `@code` diretiva. Essa técnica é semelhante ao uso de um `<script runat="server">...</script>` bloco em um ASP.NET Web Forms controle de usuário ou página.
 
@@ -307,7 +307,7 @@ Os componentes também podem definir seus próprios eventos definindo um parâme
 }
 ```
 
-## <a name="data-binding"></a>Vinculação de dados
+## <a name="data-binding"></a>Associação de dados
 
 Blazor fornece um mecanismo simples para associar dados de um componente de interface do usuário ao estado do componente. Essa abordagem difere dos recursos do ASP.NET Web Forms para associação de dados de fontes de dados a controles de interface do usuário. Abordaremos o tratamento de dados de fontes de dados diferentes na seção [lidando com dados](data.md) .
 
@@ -550,7 +550,9 @@ Um componente pai pode fornecer conteúdo filho usando sintaxe Razor normal.
 
 ```razor
 <ChildContentComponent>
-    <p>The time is @DateTime.Now</p>
+    <ChildContent>
+        <p>The time is @DateTime.Now</p>
+    </ChildContent>
 </ChildContentComponent>
 ```
 

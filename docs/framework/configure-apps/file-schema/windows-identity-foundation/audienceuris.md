@@ -1,16 +1,18 @@
 ---
+description: 'Saiba mais sobre: <audienceUris>'
 title: <audienceUris>
 ms.date: 03/30/2017
 ms.assetid: 7a3d8515-d756-4afe-a22d-07cbe2217ee3
 author: BrucePerlerMS
-ms.openlocfilehash: bd04e4ebdf5c58adaeea0ff0ca5993d7d9ce38f1
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 98b411e73d4b9941e65daaf5d1d63285cdc90fd0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70252177"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99681845"
 ---
 # \<audienceUris>
+
 Especifica o conjunto de URIs que são identificadores aceitáveis da terceira parte confiável (RP). Os tokens não serão aceitos se eles não forem analisados por uma das URIs de audiência permitidas.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,7 +22,7 @@ Especifica o conjunto de URIs que são identificadores aceitáveis da terceira p
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<securityTokenHandlerConfiguration>**](securitytokenhandlerconfiguration.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<audienceUris>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.identityModel>  
@@ -39,6 +41,7 @@ Especifica o conjunto de URIs que são identificadores aceitáveis da terceira p
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -62,7 +65,8 @@ Especifica o conjunto de URIs que são identificadores aceitáveis da terceira p
 |[\<securityTokenHandlerConfiguration>](securitytokenhandlerconfiguration.md)|Fornece a configuração para uma coleção de manipuladores de token de segurança.|  
   
 ## <a name="remarks"></a>Comentários  
- Por padrão, a coleção está vazia; Use `<add>` `<clear>` `<remove>` os elementos, e para modificar a coleção. <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler>e <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> os objetos usam os valores na coleção de URI de audiência para configurar quaisquer restrições de URI de audiência permitidas em <xref:System.IdentityModel.Tokens.SamlSecurityTokenRequirement> objetos.  
+
+ Por padrão, a coleção está vazia; Use `<add>` `<clear>` `<remove>` os elementos, e para modificar a coleção. <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler> e <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> os objetos usam os valores na coleção de URI de audiência para configurar quaisquer restrições de URI de audiência permitidas em <xref:System.IdentityModel.Tokens.SamlSecurityTokenRequirement> objetos.  
   
  O `<audienceUris>` elemento é representado pela <xref:System.IdentityModel.Configuration.AudienceUriElementCollection> classe. Um URI individual adicionado à coleção é representado pela <xref:System.IdentityModel.Configuration.AudienceUriElement> classe.  
   
@@ -70,6 +74,7 @@ Especifica o conjunto de URIs que são identificadores aceitáveis da terceira p
 > O uso do `<audienceUris>` elemento como um elemento filho do elemento foi [\<identityConfiguration>](identityconfiguration.md) preterido, mas ainda tem suporte para compatibilidade com versões anteriores. As configurações no `<securityTokenHandlerConfiguration>` elemento substituem aquelas no `<identityConfiguration>` elemento.  
   
 ## <a name="example"></a>Exemplo  
+
  O XML a seguir mostra como configurar os URIs de público aceitáveis para um aplicativo. Este exemplo configura um único URI. Os tokens com escopo definido para esse URI serão aceitos, todos os outros serão rejeitados.  
   
 ```xml  

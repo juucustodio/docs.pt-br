@@ -27,17 +27,19 @@ helpviewer_keywords:
 - compiling source code, multiple languages
 - CodeDOM, graphs
 ms.assetid: 6c864c8e-6dd3-4a65-ace0-36879d9a9c42
-ms.openlocfilehash: 85654fe961f01ad7b8fb886d59a3de9ab0efe7aa
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: aec7d6b44e63558ae70bc0eb41f94e55c8a6c325
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86474040"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96266331"
 ---
 # <a name="generating-and-compiling-source-code-from-a-codedom-graph"></a>Gerando e compilando código-fonte de um gráfico CodeDOM
+
 O namespace <xref:System.CodeDom.Compiler> fornece interfaces para geração de código-fonte de grafos de objeto CodeDOM e para o gerenciamento da compilação com compiladores com suporte. Um provedor de código pode produzir código-fonte em uma linguagem de programação específica acordo com um grafo CodeDOM. Uma classe que deriva de <xref:System.CodeDom.Compiler.CodeDomProvider> normalmente pode fornecer métodos para gerar e compilar o código para a linguagem à qual o provedor dá suporte.  
   
 ## <a name="using-a-codedom-code-provider-to-generate-source-code"></a>Usando um provedor de código CodeDOM para gerar código-fonte  
+
  Para gerar o código-fonte em uma determinada linguagem, você precisa de um grafo CodeDOM que representa a estrutura do código-fonte a ser gerada.  
   
  O exemplo a seguir demonstra como criar uma instância de um <xref:Microsoft.CSharp.CSharpCodeProvider>:  
@@ -53,6 +55,7 @@ O namespace <xref:System.CodeDom.Compiler> fornece interfaces para geração de 
  [!code-vb[CodeDomExample#22](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomExample/VB/source3.vb#22)]  
   
 ## <a name="using-a-codedom-code-provider-to-compile-assemblies"></a>Usando um provedor de código CodeDOM para compilar assemblies  
+
  **Invocando a compilação**  
   
  Para compilar um assembly usando um provedor de CodeDom, você deve ter o código-fonte para compilar em uma linguagem para a qual tenha um compilador ou um grafo CodeDOM do qual o código-fonte pode ser gerado.  
@@ -90,11 +93,12 @@ O namespace <xref:System.CodeDom.Compiler> fornece interfaces para geração de 
  [!code-vb[CodeDomExample#23](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomExample/VB/source3.vb#23)]  
   
 ## <a name="languages-with-initial-support"></a>Linguagens com suporte inicial  
+
  O .NET Framework fornece compiladores de código e geradores de código para as seguintes linguagens: C#, Visual Basic, C++ e JScript. O suporte do CodeDOM pode ser estendido a outras linguagens implementando geradores de código e compiladores de código específicos da linguagem.  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - <xref:System.CodeDom>
 - <xref:System.CodeDom.Compiler>
 - [Geração e compilação de código-fonte dinâmico](dynamic-source-code-generation-and-compilation.md)
-- [Referência rápida do CodeDOM](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/f1dfsbhc(v=vs.100))
+- [Referência rápida do CodeDOM](/previous-versions/dotnet/netframework-4.0/f1dfsbhc(v=vs.100))

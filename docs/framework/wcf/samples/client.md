@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: cliente'
 title: Cliente
 ms.date: 03/30/2017
 ms.assetid: fabb0c70-b79b-4e58-a5d3-9705de85ee5b
-ms.openlocfilehash: 8f2d93458c2bec16b737d8bfcbd423494941dc3e
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: a7aaf08007a5ca0731a0212066368b37b80330cf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84585279"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99778549"
 ---
 # <a name="client"></a>Cliente
+
 Esta seção contém exemplos que demonstram os aplicativos cliente do Windows Communication Foundation (WCF).  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Interoperabilidade do cliente](client-interoperability.md)  
  Demonstra a interoperabilidade entre o WCF e outras tecnologias.  
   
@@ -32,4 +35,4 @@ Esta seção contém exemplos que demonstram os aplicativos cliente do Windows C
  Demonstra como você não deve usar a instrução C# "using" para limpar automaticamente os recursos ao usar um cliente digitado.  
   
  [Cliente tipado](typed-client.md)  
- Demonstra como obter informações de um cliente tipado gerado pela [ferramenta de utilitário de metadados ServiceModel (svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md).
+ Demonstra como obter informações de um cliente tipado gerado pela [ferramenta de utilitário de metadados ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md).

@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugSymbolProvider'
 title: Interface ICorDebugSymbolProvider
 ms.date: 03/30/2017
 ms.assetid: 85b24196-b6c6-4bda-9de3-47180bd6ff96
-ms.openlocfilehash: 25faad4f4bc67b57c339bc63d1a18ab4d275cd71
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: bd47f294092ee87fc1f34bc68fe744b447e21f20
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379350"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99659564"
 ---
 # <a name="icordebugsymbolprovider-interface"></a>Interface ICorDebugSymbolProvider
+
 Fornece métodos que podem ser usados para recuperar informações de símbolo de depuração.  
   
 ## <a name="methods"></a>Métodos  
@@ -34,6 +36,7 @@ Fornece métodos que podem ser usados para recuperar informações de símbolo d
 > Essa interface está disponível somente com .NET Native. Se você implementar essa interface para cenários ICorDebug fora do .NET Native, o Common Language Runtime ignorará essa interface.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -42,7 +45,7 @@ Fornece métodos que podem ser usados para recuperar informações de símbolo d
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Depuração](index.md)

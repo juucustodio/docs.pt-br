@@ -10,14 +10,15 @@ helpviewer_keywords:
 - KnownTypeAttribute [WCF]
 - KnownTypes [WCF]
 ms.assetid: 1a0baea1-27b7-470d-9136-5bbad86c4337
-ms.openlocfilehash: 52b0caaaac976893dcf5ef5c228ccc4f53bdbe9e
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 124083d86c220451c55a9290c2edf996b50d8d28
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85247475"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96286676"
 ---
 # <a name="data-contract-known-types"></a>Tipos de contratos de dados conhecidos
+
 A <xref:System.Runtime.Serialization.KnownTypeAttribute> classe permite que você especifique, com antecedência, os tipos que devem ser incluídos para consideração durante a desserialização. Para obter um exemplo de trabalho, consulte o exemplo [tipos conhecidos](../samples/known-types.md) .  
   
  Normalmente, ao passar parâmetros e retornar valores entre um cliente e um serviço, ambos os pontos de extremidade compartilham todos os contratos de dados dos dados a serem transmitidos. No entanto, esse não é o caso nas seguintes circunstâncias:  
@@ -31,20 +32,24 @@ A <xref:System.Runtime.Serialization.KnownTypeAttribute> classe permite que voc�
 - Alguns tipos, que incluem tipos de .NET Framework, têm Membros que estão em uma das três categorias anteriores. Por exemplo, <xref:System.Collections.Hashtable> usa <xref:System.Object> para armazenar os objetos reais na tabela de hash. Ao serializar esses tipos, o lado de recebimento não pode determinar antecipadamente o contrato de dados para esses membros.  
   
 ## <a name="the-knowntypeattribute-class"></a>A classe KnownTypeattribute  
+
  Quando os dados chegam em um ponto de extremidade de recebimento, o tempo de execução do WCF tenta desserializar os dados em uma instância de um tipo de Common Language Runtime (CLR). O tipo instanciado para desserialização é escolhido primeiro inspecionando a mensagem de entrada para determinar o contrato de dados ao qual o conteúdo da mensagem está em conformidade. Em seguida, o mecanismo de desserialização tenta encontrar um tipo CLR que implementa um contrato de dados compatível com o conteúdo da mensagem. O conjunto de tipos candidatos que o mecanismo de desserialização permite durante esse processo é conhecido como o conjunto de "tipos conhecidos" do desserializador.  
   
  Uma maneira de permitir que o mecanismo de desserialização saiba sobre um tipo é usando o <xref:System.Runtime.Serialization.KnownTypeAttribute> . O atributo não pode ser aplicado a membros de dados individuais, somente a tipos de contrato de dados inteiros. O atributo é aplicado a um *tipo externo* que pode ser uma classe ou uma estrutura. Em seu uso mais básico, a aplicação do atributo especifica um tipo como "tipo conhecido". Isso faz com que o tipo conhecido seja uma parte do conjunto de tipos conhecidos sempre que um objeto do tipo externo ou qualquer objeto referido por seus membros está sendo desserializado. Mais de um <xref:System.Runtime.Serialization.KnownTypeAttribute> atributo pode ser aplicado ao mesmo tipo.  
   
 ## <a name="known-types-and-primitives"></a>Tipos conhecidos e primitivos  
+
  Tipos primitivos, bem como determinados tipos tratados como primitivos (por exemplo, <xref:System.DateTime> e <xref:System.Xml.XmlElement> ) são sempre "conhecidos" e nunca precisam ser adicionados por meio desse mecanismo. No entanto, as matrizes de tipos primitivos precisam ser adicionadas explicitamente. A maioria das coleções é considerada equivalente a matrizes. (As coleções não genéricas são consideradas equivalentes a matrizes de <xref:System.Object> ). Para obter um exemplo de como usar primitivas, matrizes primitivas e coleções primitivas, consulte o exemplo 4.  
   
 > [!NOTE]
 > Ao contrário de outros tipos primitivos, a <xref:System.DateTimeOffset> estrutura não é um tipo conhecido por padrão, portanto, ela deve ser adicionada manualmente à lista de tipos conhecidos.  
   
 ## <a name="examples"></a>Exemplos  
+
  Os exemplos a seguir mostram a <xref:System.Runtime.Serialization.KnownTypeAttribute> classe em uso.  
   
 #### <a name="example-1"></a>Exemplo 1  
+
  Há três classes com uma relação de herança.  
   
  [!code-csharp[C_KnownTypeAttribute#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_knowntypeattribute/cs/source.cs#1)]
@@ -63,18 +68,21 @@ A <xref:System.Runtime.Serialization.KnownTypeAttribute> classe permite que voc�
  Sempre que o tipo externo `CompanyLogo2` está sendo desserializado, o mecanismo de desserialização sabe `CircleType` e `TriangleType` e, portanto, é capaz de encontrar tipos correspondentes para os contratos de dados "Circle" e "triângulo".  
   
 #### <a name="example-2"></a>Exemplo 2  
+
  No exemplo a seguir, embora ambos `CustomerTypeA` e `CustomerTypeB` tenham o `Customer` contrato de dados, uma instância do `CustomerTypeB` é criada sempre que um `PurchaseOrder` é desserializado, porque apenas `CustomerTypeB` é conhecido pelo mecanismo de desserialização.  
   
  [!code-csharp[C_KnownTypeAttribute#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_knowntypeattribute/cs/source.cs#4)]
  [!code-vb[C_KnownTypeAttribute#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_knowntypeattribute/vb/source.vb#4)]  
   
 #### <a name="example-3"></a>Exemplo 3  
+
  No exemplo a seguir, um <xref:System.Collections.Hashtable> armazena seu conteúdo internamente como <xref:System.Object> . Para desserializar uma tabela de hash com êxito, o mecanismo de desserialização deve saber o conjunto de possíveis tipos que podem ocorrer lá. Nesse caso, sabemos com antecedência que somente os `Book` objetos e `Magazine` são armazenados no `Catalog` , portanto, eles são adicionados usando o <xref:System.Runtime.Serialization.KnownTypeAttribute> atributo.  
   
  [!code-csharp[C_KnownTypeAttribute#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_knowntypeattribute/cs/source.cs#5)]
  [!code-vb[C_KnownTypeAttribute#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_knowntypeattribute/vb/source.vb#5)]  
   
 #### <a name="example-4"></a>Exemplo 4  
+
  No exemplo a seguir, um contrato de dados armazena um número e uma operação a ser executada no número. O `Numbers` membro de dados pode ser um inteiro, uma matriz de inteiros ou um <xref:System.Collections.Generic.List%601> que contenha inteiros.  
   
 > [!CAUTION]
@@ -89,6 +97,7 @@ A <xref:System.Runtime.Serialization.KnownTypeAttribute> classe permite que voc�
  [!code-vb[C_KnownTypeAttribute#7](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_knowntypeattribute/vb/source.vb#7)]  
   
 ## <a name="known-types-inheritance-and-interfaces"></a>Tipos, herança e interfaces conhecidos  
+
  Quando um tipo conhecido é associado a um tipo específico usando o `KnownTypeAttribute` atributo, o tipo conhecido também é associado a todos os tipos derivados desse tipo. Por exemplo, consulte o código a seguir.  
   
  [!code-csharp[C_KnownTypeAttribute#8](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_knowntypeattribute/cs/source.cs#8)]
@@ -99,6 +108,7 @@ A <xref:System.Runtime.Serialization.KnownTypeAttribute> classe permite que voc�
  Tipos conhecidos podem ser associados somente a classes e estruturas, não a interfaces.  
   
 ## <a name="known-types-using-open-generic-methods"></a>Tipos conhecidos usando métodos genéricos abertos  
+
  Pode ser necessário adicionar um tipo genérico como um tipo conhecido. No entanto, um tipo genérico aberto não pode ser passado como um parâmetro para o `KnownTypeAttribute` atributo.  
   
  Esse problema pode ser resolvido usando um mecanismo alternativo: escreva um método que retorne uma lista de tipos a serem adicionados à coleção de tipos conhecidos. O nome do método é especificado como um argumento de cadeia de caracteres para o `KnownTypeAttribute` atributo devido a algumas restrições.  
@@ -132,6 +142,7 @@ A <xref:System.Runtime.Serialization.KnownTypeAttribute> classe permite que voc�
  [!code-vb[C_KnownTypeAttribute#10](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_knowntypeattribute/vb/source.vb#10)]  
   
 ## <a name="additional-ways-to-add-known-types"></a>Outras maneiras de adicionar tipos conhecidos  
+
  Além disso, tipos conhecidos podem ser adicionados por meio de um arquivo de configuração. Isso é útil quando você não controla o tipo que requer tipos conhecidos para desserialização adequada, como ao usar bibliotecas de tipo de terceiros com o Windows Communication Foundation (WCF).  
   
  O arquivo de configuração a seguir mostra como especificar um tipo conhecido em um arquivo de configuração.  

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método SetPEKind'
 title: Método SetPEKind
 ms.date: 03/30/2017
 api_name:
@@ -14,15 +15,16 @@ helpviewer_keywords:
 ms.assetid: 050e77ee-3014-45c0-9e29-2ebe29347b0d
 topic_type:
 - apiref
-ms.openlocfilehash: 5a8442b1f0869e1592a05dfeeb0f5e6d583f3ea8
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4154e9e80b7f88b6951c9aa8da5fc23d340c96dc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79179383"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99662293"
 ---
 # <a name="setpekind-method"></a>Método SetPEKind
-Determina o tipo executável portátil, específico da máquina ou agnóstico da máquina.  
+
+Determina o tipo de executável portátil, específico do computador ou independente do computador.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,26 +37,29 @@ HRESULT SetPEKind(
 ) PURE;
 ```  
   
-## <a name="parameters"></a>parâmetros  
+## <a name="parameters"></a>Parâmetros  
+
  `AssemblyID`  
- ID da assembléia.  
+ ID do assembly.  
   
  `FileToken`  
- Token de arquivo para o qual o tipo PE deve ser definido. Pode ser `AssemblyID` NULO se não indicar um módulo de rede não vinculado.  
+ Token do arquivo para o qual o tipo PE deve ser definido. Pode ser NULL se não `AssemblyID` indicar um netmodule não associado.  
   
  `dwPEKind`  
  O tipo de PE, conforme indicado pela [Enumeração CorPEKind](../metadata/corpekind-enumeration.md).  
   
  `dwMachine`  
- A arquitetura da máquina de destino, conforme indicado no cabeçalho NT.  
+ A arquitetura do computador de destino, conforme indicado no cabeçalho do NT.  
   
 ## <a name="return-value"></a>Valor retornado  
- Retorna S_OK se o método for bem sucedido.  
+
+ Retorna S_OK se o método tiver sucesso.  
   
 ## <a name="requirements"></a>Requisitos  
- Requer alink.h.  
+
+ Requer ALink. h.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método GetPEKind](../metadata/imetadataimport2-getpekind-method.md)
 - [Interface IALink2](ialink2-interface.md)

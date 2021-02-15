@@ -1,7 +1,7 @@
 ---
+description: 'Saiba mais sobre: independência de idioma e componentes de Language-Independent'
 title: Independência da linguagem e componentes independentes da linguagem
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -13,16 +13,16 @@ helpviewer_keywords:
 - runtime, language interoperability
 - common language runtime, language interoperability
 ms.assetid: 4f0b77d0-4844-464f-af73-6e06bedeafc6
-ms.openlocfilehash: aa569c0da5b963243596ef440ef37c08b4fae37f
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 2208f515bcab5f423b32fabc5364e02ed7230919
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84288232"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713202"
 ---
 # <a name="language-independence-and-language-independent-components"></a>Independência da linguagem e componentes independentes da linguagem
 
-O .NET Framework independe da linguagem. Isso significa que, como desenvolvedor, você pode desenvolver em uma das muitas linguagens que segmentam o .NET Framework, como C#, C++/CLI, Eiffel, F#, IronPython, IronRuby, PowerBuilder, Visual Basic, Visual COBOL e Windows PowerShell. É possível acessar os tipos e os membros das bibliotecas de classes desenvolvidas para o .NET Framework sem que seja necessário conhecer a linguagem em que foram originalmente gravados e sem precisar seguir as convenções da linguagem original. Se você for um desenvolvedor de componentes, o componente poderá ser acessado por qualquer aplicativo do .NET Framework, independentemente da linguagem.
+O .NET é independente de linguagem. Isso significa que, como desenvolvedor, você pode desenvolver em uma das várias linguagens que visam o .NET, como C#, C++/CLI, Eiffel, F #, IronPython, IronRuby, PowerBuilder, Visual Basic, Visual COBOL e Windows PowerShell. Você pode acessar os tipos e membros de bibliotecas de classes desenvolvidos para .NET sem precisar saber a linguagem na qual eles foram originalmente escritos e sem ter que seguir as convenções do idioma original. Se você for um desenvolvedor de componentes, seu componente poderá ser acessado por qualquer aplicativo .NET, independentemente de seu idioma.
 
 > [!NOTE]
 > A primeira parte deste artigo discorre sobre a criação de componentes independentes de linguagem, ou seja, componentes que podem ser consumidos por aplicativos escritos em qualquer linguagem. Você também pode criar um único componente ou aplicativo de código-fonte gravado em várias linguagens; consulte [Interoperabilidade em qualquer idioma](#CrossLang) na segunda parte deste artigo.
@@ -39,9 +39,9 @@ Neste artigo:
 
   - [Convenções de nomenclatura](#naming)
 
-  - [Conversão de tipo](#conversion)
+  - [Conversão de tipos](#conversion)
 
-  - [Matrizes](#arrays)
+  - [matrizes](#arrays)
 
   - [Interfaces](#Interfaces)
 
@@ -107,7 +107,7 @@ As regras de conformidade com CLS estão listadas na tabela a seguir. O texto da
 |--------------|---------|----------|-----------------|
 |Acessibilidade|[Acessibilidade de membro](#MemberAccess)|A acessibilidade não deverá ser alterada ao substituir métodos herdados, exceto na substituição de um método herdado de um assembly diferente com acessibilidade `family-or-assembly`. Nesse caso, a substituição deverá ter a acessibilidade `family`.|10|
 |Acessibilidade|[Acessibilidade de membro](#MemberAccess)|A visibilidade e a acessibilidade de tipos e membros deverão ser de tal forma que os tipos na assinatura de qualquer membro sejam visíveis e acessíveis sempre que o próprio membro estiver visível e acessível. Por exemplo, um método público visível fora do assembly não deve ter um argumento cujo tipo seja visível somente dentro do assembly. A visibilidade e a acessibilidade dos tipos que compõem um tipo genérico instanciado usado na assinatura de qualquer membro deverão estar visíveis e acessíveis sempre que o próprio membro estiver visível e acessível. Por exemplo, um tipo genérico instanciado presente na assinatura de um membro visível fora do assembly não deverá ter um argumento genérico cujo tipo seja visível somente dentro do assembly.|12|
-|Matrizes|[Matrizes](#arrays)|As matrizes deverão ter elementos com um tipo compatível com CLS e todas as dimensões da matriz deverão ter limites inferiores iguais a zero. Se o item for uma matriz, o tipo do elemento da matriz será necessário para diferenciar as sobrecargas. Quando a sobrecarga é baseada em dois ou mais tipos de matriz, os tipos de elemento deverão ser chamados de tipos.|16|
+|Matrizes|[matrizes](#arrays)|As matrizes deverão ter elementos com um tipo compatível com CLS e todas as dimensões da matriz deverão ter limites inferiores iguais a zero. Se o item for uma matriz, o tipo do elemento da matriz será necessário para diferenciar as sobrecargas. Quando a sobrecarga é baseada em dois ou mais tipos de matriz, os tipos de elemento deverão ser chamados de tipos.|16|
 |Atributos|[Atributos](#attributes)|Os atributos deverão ser do tipo <xref:System.Attribute?displayProperty=nameWithType> ou de um tipo que o herde.|41|
 |Atributos|[Atributos](#attributes)|A CLS só permite um subconjunto das codificações de atributos personalizados. Os únicos tipos que deverão ser exibidos nessas codificações são (consulte a Partição IV): <xref:System.Type?displayProperty=nameWithType>, <xref:System.String?displayProperty=nameWithType>, <xref:System.Char?displayProperty=nameWithType>, <xref:System.Boolean?displayProperty=nameWithType>, <xref:System.Byte?displayProperty=nameWithType>, <xref:System.Int16?displayProperty=nameWithType>, <xref:System.Int32?displayProperty=nameWithType>, <xref:System.Int64?displayProperty=nameWithType>, <xref:System.Single?displayProperty=nameWithType>, <xref:System.Double?displayProperty=nameWithType> e qualquer tipo de enumeração baseado em um tipo inteiro de base compatível com CLS.|34|
 |Atributos|[Atributos](#attributes)|A CLS não permite modificadores obrigatórios visíveis publicamente (`modreq`, consulte a Partição II), mas permite modificadores opcionais (`modopt`, consulte a Partição II) que ela não entende.|35|
@@ -135,7 +135,7 @@ As regras de conformidade com CLS estão listadas na tabela a seguir. O texto da
 |Membros|[Membros de tipo em geral](#members)|Campos e métodos estáticos globais não são compatíveis com CLS.|36|
 |Membros|--|O valor de um estático literal é especificado por meio do uso de metadados de inicialização do campo. Um literal compatível com CLS deve ter um valor especificado em metadados de inicialização de campo que sejam exatamente do mesmo tipo que o literal (ou do tipo subjacente, se esse literal for um `enum`).|13|
 |Membros|[Membros de tipo em geral](#members)|A restrição vararg não faz parte da CLS e a única convenção de chamada com suporte pela CLS é a convenção de chamada gerenciada padrão.|15|
-|Convenções de nomenclatura|[Convenções de nomenclatura](#naming)|Os assemblies deverão seguir o Anexo 7 do Relatório Técnico 15 do Padrão Unicode 3.0 que controla o conjunto de caracteres que podem iniciar e ser incluídos em identificadores, disponíveis online em <https://www.unicode.org/unicode/reports/tr15/tr15-18.html>. Os identificadores deverão estar no formato canônico definido pelo Formulário C de Normalização de Unicode. Para fins de CLS, dois identificadores serão iguais se os mapeamentos em minúsculas (conforme especificado pelos mapeamentos em minúsculas um para um, insensíveis a localidade Unicode) forem os mesmos. Ou seja, para dois identificadores serem considerados diferentes na CLS, eles deverão ser diferentes além de apenas maiúsculas e minúsculas. No entanto, para substituir uma definição herdada, a CLI exige que a codificação precisa da declaração original seja usada.|4|
+|Convenções de nomenclatura|[Convenções de nomenclatura](#naming)|Os assemblies deverão seguir o Anexo 7 do Relatório Técnico 15 do Padrão Unicode 3.0 que controla o conjunto de caracteres que podem iniciar e ser incluídos em identificadores, disponíveis online em <https://www.unicode.org/reports/tr15/tr15-18.html>. Os identificadores deverão estar no formato canônico definido pelo Formulário C de Normalização de Unicode. Para fins de CLS, dois identificadores serão iguais se os mapeamentos em minúsculas (conforme especificado pelos mapeamentos em minúsculas um para um, insensíveis a localidade Unicode) forem os mesmos. Ou seja, para dois identificadores serem considerados diferentes na CLS, eles deverão ser diferentes além de apenas maiúsculas e minúsculas. No entanto, para substituir uma definição herdada, a CLI exige que a codificação precisa da declaração original seja usada.|4|
 |Sobrecarga|[Convenções de nomenclatura](#naming)|Todos os nomes introduzidos em um escopo compatível com CLS deverão ser independentes e distintos do tipo, exceto quando os nomes forem idênticos e resolvidos por meio da sobrecarga. Ou seja, embora o CTS permita que um único tipo use o mesmo nome para um método e um campo, a CLS não permite.|5|
 |Sobrecarga|[Convenções de nomenclatura](#naming)|Campos e tipos aninhados deverão ser diferenciados apenas por comparação de identificador, mesmo que o CTS permita que assinaturas diferentes sejam distinguidas. Métodos, propriedades e eventos com o mesmo nome (por comparação de identificador) deverão ser diferentes além apenas do tipo de retorno, exceto conforme especificado na Regra 39 da CLS.|6|
 |Sobrecarga|[Sobrecargas](#overloads)|Somente propriedades e métodos podem ser sobrecarregados.|37|
@@ -143,10 +143,10 @@ As regras de conformidade com CLS estão listadas na tabela a seguir. O texto da
 |Sobrecarga|--|Se dois ou mais métodos em conformidade com CLS declarados em um tipo tiverem o mesmo nome e, para um conjunto específico de instanciações de tipo, tiverem os mesmos tipos de parâmetro e retorno, esses métodos deverão ser semanticamente equivalentes nessas instanciações de tipo.|48|
 |Tipos|[Tipo e assinaturas de membro de tipo](#Types)|<xref:System.Object?displayProperty=nameWithType> é compatível com CLS. Qualquer outra classe compatível com CLS deverá herdar de uma classe compatível com CLS.|23|
 |Propriedades|[Propriedades](#properties)|Os métodos que implementam os métodos getter e setter de uma propriedade deverão ser marcados como `SpecialName` nos metadados.|24|
-|Propriedades|[Propriedades](#properties)|Os acessadores de uma propriedade deverão ser todos estáticos, virtuais ou de instância.|26|
+|Propriedades|[Propriedades](#properties)|Os acessadores de uma propriedade serão todos estáticos, todos serão virtuais ou todas as instâncias.|26|
 |Propriedades|[Propriedades](#properties)|O tipo de uma propriedade deverá ser o tipo de retorno do getter e o tipo do último argumento do setter. Os tipos dos parâmetros da propriedade deverão ser os tipos dos parâmetros do getter e os tipos de todos os parâmetros, menos o parâmetro final do setter. Todos esses tipos deverão ser compatíveis com CLS e não deverão ser ponteiros gerenciados (por exemplo, não deverão ser passados por referência).|27|
 |Propriedades|[Propriedades](#properties)|As propriedades deverão seguir um padrão de nomenclatura específico. O atributo `SpecialName` mencionado na regra 24 da CLS deverá ser ignorado em comparações de nome apropriadas e respeitar as regras do identificador. Uma propriedade deverá ter um método getter, um método setter ou ambos.|28|
-|Conversão de tipos|[Conversão de tipo](#conversion)|Se `op_Implicit` ou `op_Explicit` for fornecido, um meio alternativo de fornecimento da coerção deverá ser fornecido.|39|
+|Conversão de tipos|[Conversão de tipos](#conversion)|Se `op_Implicit` ou `op_Explicit` for fornecido, um meio alternativo de fornecimento da coerção deverá ser fornecido.|39|
 |Tipos|[Tipo e assinaturas de membro de tipo](#Types)|Tipos de valor demarcado não estão em conformidade com CLS.|3|
 |Tipos|[Tipo e assinaturas de membro de tipo](#Types)|Todos os tipos exibidos em uma assinatura deverão ser compatíveis com CLS. Todos os tipos que compõem um tipo genérico instanciado deverão ser compatíveis com CLS.|11|
 |Tipos|[Tipo e assinaturas de membro de tipo](#Types)|Referências com tipo não são compatíveis com CLS.|14|
@@ -157,7 +157,7 @@ As regras de conformidade com CLS estão listadas na tabela a seguir. O texto da
 
 ### <a name="types-and-type-member-signatures"></a>Tipos e assinaturas de membro de tipo
 
-O tipo <xref:System.Object?displayProperty=nameWithType> é compatível com CLS e é o tipo base de todos os tipos de objeto no sistema de tipos do .NET Framework. A herança no .NET Framework é implícita (por exemplo, a classe <xref:System.String> herda implicitamente da classe <xref:System.Object>) ou explícita (por exemplo, a classe <xref:System.Globalization.CultureNotFoundException> herda explicitamente da classe <xref:System.ArgumentException>, que herda explicitamente da classe <xref:System.SystemException>, que herda explicitamente da classe <xref:System.Exception>). Para que um tipo derivado esteja em conformidade com CLS, seu tipo base também deverá estar em conformidade com CLS.
+O <xref:System.Object?displayProperty=nameWithType> tipo é compatível com CLS e é o tipo base de todos os tipos de objeto no sistema de tipos .net. A herança no .NET é implícita (por exemplo, a <xref:System.String> classe herda implicitamente da <xref:System.Object> classe) ou explícita (por exemplo, a <xref:System.Globalization.CultureNotFoundException> classe herda explicitamente da classe <xref:System.ArgumentException> , que herda explicitamente da <xref:System.SystemException> classe, que herda explicitamente da <xref:System.Exception> classe). Para que um tipo derivado esteja em conformidade com CLS, seu tipo base também deverá estar em conformidade com CLS.
 
 O exemplo a seguir mostra um tipo derivado cujo tipo de base não é compatível com CLS. Ele define uma classe `Counter` base que usa um inteiro de 32 bits sem sinal como um contador. Como a classe fornece funcionalidade de contador encapsulando um inteiro sem sinal, a classe é marcada como não compatível com CLS. Assim, uma classe derivada, `NonZeroCounter`, também não é compatível com CLS.
 
@@ -170,7 +170,7 @@ Todos os tipos exibidos em assinaturas de membro, incluindo um tipo de retorno d
 
 - Todos os tipos usados como restrições em parâmetros genéricos devem ser compatíveis com CLS.
 
-O [Common Type System](base-types/common-type-system.md) do .NET Framework inclui vários tipos internos que têm suporte direto do Common Language Runtime e são codificados especialmente nos metadados de um assembly. Desses tipos intrínsecos, os tipos listados na tabela a seguir estão em conformidade com CLS.
+O [Common Type System](base-types/common-type-system.md) do .NET inclui vários tipos internos com suporte diretamente com o Common Language Runtime e codificados especialmente nos metadados de um assembly. Desses tipos intrínsecos, os tipos listados na tabela a seguir estão em conformidade com CLS.
 
 |Tipo em conformidade com CLS|Descrição|
 |-------------------------|-----------------|
@@ -197,13 +197,13 @@ Os tipos intrínsecos listados na tabela a seguir não são compatíveis com CLS
 |<xref:System.UInt64>|Inteiro sem sinal de 64 bits|<xref:System.Int64> (pode estourar), <xref:System.Numerics.BigInteger> ou <xref:System.Double>|
 |<xref:System.UIntPtr>|Ponteiro ou identificador sem sinal|<xref:System.IntPtr>|
 
-A biblioteca de classes .NET Framework ou qualquer outra biblioteca de classes pode incluir outros tipos que não sejam compatíveis com CLS; por exemplo:
+A biblioteca de classes .NET ou qualquer outra biblioteca de classes pode incluir outros tipos que não são compatíveis com CLS; por exemplo:
 
 - Tipos de valor demarcado. O exemplo do C# a seguir cria uma classe que tem uma propriedade pública do tipo `int*` chamada `Value`. Como um `int*` é um tipo de valor demarcado, o compilador o sinaliza como incompatível com CLS.
 
   [!code-csharp[Conceptual.CLSCompliant#26](../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.clscompliant/cs/box2.cs#26)]
 
-- Referências de tipo, que são constructos especiais que contêm referência a um objeto e referência a um tipo. As referências tipadas são representadas no .NET Framework pela classe <xref:System.TypedReference>.
+- Referências de tipo, que são constructos especiais que contêm referência a um objeto e referência a um tipo. As referências digitadas são representadas no .NET pela <xref:System.TypedReference> classe.
 
 Se um tipo não for compatível com CLS, você deverá aplicar o atributo <xref:System.CLSCompliantAttribute> com um valor `isCompliant` de `false` a ele. Para obter mais informações, consulte [a seção atributo CLSCompliantAttribute](#CLSAttribute) .
 
@@ -487,7 +487,7 @@ Para corrigir este erro, a classe `ErrorClass` deve herdar de <xref:System.Excep
 
 ### <a name="attributes"></a>Atributos
 
-Em assemblies do .NET Framework, atributos personalizados fornecem um mecanismo extensível para armazenamento de atributos personalizados e recuperação de metadados sobre objetos de programação, como assemblies, tipos, membros e parâmetros de método. Atributos personalizados devem derivar de <xref:System.Attribute?displayProperty=nameWithType> ou de um tipo derivado de <xref:System.Attribute?displayProperty=nameWithType>.
+Em assemblies .NET, os atributos personalizados fornecem um mecanismo extensível para armazenar atributos personalizados e recuperar metadados sobre objetos de programação, como assemblies, tipos, membros e parâmetros de método. Atributos personalizados devem derivar de <xref:System.Attribute?displayProperty=nameWithType> ou de um tipo derivado de <xref:System.Attribute?displayProperty=nameWithType>.
 
 O exemplo a seguir viola essa regra. Ele define uma classe `NumericAttribute` que não deriva de <xref:System.Attribute?displayProperty=nameWithType>. Observe que um erro de compilador só acontece quando o atributo não compatível com CLS é aplicado e não quando a classe é definida.
 
@@ -533,7 +533,7 @@ No tempo de compilação, o compilador detecta os elementos não compatíveis qu
 
 Os desenvolvedores de componentes podem usar o atributo <xref:System.CLSCompliantAttribute> de duas maneiras:
 
-- Para definir as partes da interface pública exposta por um componente que são compatíveis com CLS e as partes que não são compatíveis com CLS. Quando o atributo é usado para marcar elementos de programa específicos como em conformidade com CLS, seu uso garante que os elementos sejam acessíveis em todas as linguagens e ferramentas direcionadas ao .NET Framework.
+- Para definir as partes da interface pública exposta por um componente que são compatíveis com CLS e as partes que não são compatíveis com CLS. Quando o atributo é usado para marcar elementos específicos do programa como em conformidade com CLS, seu uso garante que esses elementos sejam acessíveis de todas as linguagens e ferramentas direcionadas ao .NET.
 
 - Para garantir que a interface pública da biblioteca de componentes exponha apenas elementos de programa que são compatíveis com CLS. Se os elementos não forem compatíveis com CLS, os compiladores geralmente emitirão um aviso.
 
@@ -571,7 +571,7 @@ Se você estiver desenvolvendo um aplicativo em vez de uma biblioteca (ou seja, 
 
 ## <a name="cross-language-interoperability"></a>Interoperabilidade em qualquer idioma
 
-A independência de linguagem tem vários significados possíveis. Um significado, discutido no artigo [Independência de linguagem e componentes independentes de linguagem](language-independence-and-language-independent-components.md), envolve o consumo pleno de tipos escritos em uma linguagem de um aplicativo escrito em outra linguagem. Um segundo significado, que é o enfoque deste artigo, envolve combinar o código gravado em várias linguagens em um único assembly do .NET Framework.
+A independência de linguagem tem vários significados possíveis. Um significado, discutido no artigo [Independência de linguagem e componentes independentes de linguagem](language-independence-and-language-independent-components.md), envolve o consumo pleno de tipos escritos em uma linguagem de um aplicativo escrito em outra linguagem. Um segundo significado, que é o foco deste artigo, envolve a combinação de código escrito em vários idiomas em um único assembly .NET.
 
 O exemplo a seguir ilustra a interoperabilidade em qualquer idioma com a criação de uma biblioteca de classes chamada Utilities.dll que inclui duas classes, `NumericLib` e `StringLib`. A classe `NumericLib` é gravada em C#, e a classe `StringLib` é gravada em Visual Basic. Aqui está o código-fonte de StringUtil.vb, que inclui um único membro, `ToTitleCase`, em sua classe `StringLib`.
 
@@ -614,7 +614,7 @@ Para compilar o código do Visual Basic, use este comando:
 vbc example.vb /r:UtilityLib.dll
 ```
 
-Para compilar com C#, altere o nome do compilador de **Vbc** para **CSC**e altere a extensão de arquivo de. vb para. cs:
+Para compilar com C#, altere o nome do compilador de **Vbc** para **CSC** e altere a extensão de arquivo de. vb para. cs:
 
 ```console
 csc example.cs /r:UtilityLib.dll

@@ -5,14 +5,15 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - basicHttpBinding Element
 ms.assetid: 85cf1a4f-26c2-48c7-bda6-6c960d5d3fb3
-ms.openlocfilehash: 5b2ce1973966468107d7aa4de545a976c67b13ed
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 87628f0966afe83d933dc5b629b5352c609386dc
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85244017"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91201519"
 ---
 # \<basicHttpBinding>
+
 Representa uma associação que um serviço do WCF (Windows Communication Foundation) pode usar para configurar e expor pontos de extremidade capazes de se comunicar com clientes e serviços Web baseados em ASMX e outros serviços que estejam em conformidade com o WS-I Basic Profile 1.1.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,7 +21,7 @@ Representa uma associação que um serviço do WCF (Windows Communication Founda
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<basicHttpBinding>**  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Sintaxe  
   
 ```xml  
 <basicHttpBinding>
@@ -57,6 +58,7 @@ Representa uma associação que um serviço do WCF (Windows Communication Founda
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -82,23 +84,25 @@ Representa uma associação que um serviço do WCF (Windows Communication Founda
   
 ### <a name="child-elements"></a>Elementos filho  
   
-|Elemento|Description|  
+|Elemento|Descrição|  
 |-------------|-----------------|  
 |[\<security>](security-of-basichttpbinding.md)|Define as configurações de segurança para a associação. Esse elemento é do tipo <xref:System.ServiceModel.Configuration.BasicHttpSecurityElement> .|  
-|[\<readerQuotas>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Define as restrições sobre a complexidade de mensagens SOAP que podem ser processadas por pontos de extremidade configurados com essa associação. Esse elemento é do tipo <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement> .|  
+|[\<readerQuotas>](/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Define as restrições sobre a complexidade de mensagens SOAP que podem ser processadas por pontos de extremidade configurados com essa associação. Esse elemento é do tipo <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement> .|  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
-|Elemento|Description|  
+|Elemento|Descrição|  
 |-------------|-----------------|  
 |[\<bindings>](bindings.md)|Esse elemento contém uma coleção de associações padrão e personalizadas.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O BasicHttpBinding usa HTTP como o transporte para enviar mensagens SOAP 1,1. Um serviço pode usar essa associação para expor pontos de extremidade que estão em conformidade com WS-I BP 1,1, como aqueles que os clientes ASMX consomem. Da mesma forma, um cliente pode usar o BasicHttpBinding para se comunicar com os serviços expondo pontos de extremidade que estão em conformidade com WS-I BP 1,1, como serviços Web ASMX ou serviços configurados com o BasicHttpBinding.  
   
  A segurança é desativada por padrão, mas pode ser adicionada definindo o atributo mode do [\<security>](security-of-basichttpbinding.md) elemento filho com um valor diferente de `None` . Ele usa uma codificação de mensagem "texto" e codificação de texto UTF-8 por padrão.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir demonstra o uso do <xref:System.ServiceModel.BasicHttpBinding> que fornece comunicação http e a interoperabilidade máxima com serviços da Web de primeira e segunda geração. A associação é especificada nos arquivos de configuração para o cliente e o serviço. O tipo de associação é especificado usando o `binding` atributo do `<endpoint>` elemento. Se você quiser configurar a ligação básica e alterar algumas de suas configurações, será necessário definir uma configuração de associação. O ponto de extremidade deve referenciar a configuração de associação por nome usando o `bindingConfiguration` atributo do `<endpoint>` elemento, conforme mostrado no código de configuração a seguir para o serviço.  
   
 ```xml  
@@ -136,6 +140,7 @@ Representa uma associação que um serviço do WCF (Windows Communication Founda
 ```  
   
 ## <a name="example"></a>Exemplo  
+
  A partir do .NET Framework 4, associações e comportamentos não precisam ter um nome. A funcionalidade do exemplo anterior pode ser realizada removendo o bindingConfiguration do endereço do ponto de extremidade e o nome da associação.  
   
 ```xml  

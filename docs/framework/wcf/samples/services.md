@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: serviços'
 title: Exemplos de serviços
 ms.date: 03/30/2017
 ms.assetid: 462a2218-f8c6-4fb7-95bc-64765459c429
-ms.openlocfilehash: a225d9bfb4d0ab70904a6e03c22269d69122f00b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 706d42a022a53d8f270b791df78b9b534d0cb2c2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84591452"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793032"
 ---
 # <a name="services"></a>Serviços
 

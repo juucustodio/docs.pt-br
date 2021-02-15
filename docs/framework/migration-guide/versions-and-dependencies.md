@@ -5,12 +5,12 @@ ms.date: 01/17/2020
 helpviewer_keywords:
 - versions, .NET Framework
 ms.assetid: f75a72de-e2f2-4a7a-9574-3f278684ea90
-ms.openlocfilehash: fe652e4cc3a996586d01cdfc4c5749decb51e9db
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: f807a9d9a7ccebf2ae71d47e01fbfba7338b1799
+ms.sourcegitcommit: 870bc4b4087510f6fba3c7b1c0d391f02bcc1f3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88557341"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92471991"
 ---
 # <a name="net-framework-versions-and-dependencies"></a>Versões e dependências do .NET Framework
 
@@ -18,12 +18,14 @@ Cada versão do .NET Framework contém o Common Language Runtime (CLR), as bibli
 
 Cada nova versão do .NET Framework adiciona novos recursos, mas retém recursos de versões anteriores.
 
+[!INCLUDE [net-framework-future](../../../includes/net-framework-future.md)]
+
 O CLR é identificado pelo seu próprio número de versão. O número de versão do .NET Framework é incrementado em cada versão, mas a versão do CLR nem sempre é incrementada. Por exemplo, .NET Framework 4, 4,5 e versões posteriores incluem o CLR 4, mas .NET Framework 2,0, 3,0 e 3,5 incluem CLR 2,0. (Não houve versão 3 do CLR.)
 
 > [!TIP]
 >
 > - Para obter uma lista completa dos sistemas operacionais com suporte, consulte [requisitos do sistema](../get-started/system-requirements.md).
-> - Para obter informações sobre downloads, consulte [Instalar o .NET Framework para desenvolvedores](../install/guide-for-developers.md).
+> - Para downloads, consulte [instalar .NET Framework para desenvolvedores](../install/guide-for-developers.md).
 > - Para obter informações sobre como determinar quais versões do .NET Framework estão instaladas em um computador, consulte [como determinar quais versões do .NET Framework estão instaladas](how-to-determine-which-versions-are-installed.md).
 
 ## <a name="version-information"></a>Informações da versão
@@ -32,11 +34,11 @@ As tabelas a seguir resumem .NET Framework histórico de versão e correlacionam
 
 - O ícone de marca de seleção ✔️ denota as versões do sistema operacional nas quais o .NET Framework está instalado por padrão.
 - O ícone de sinal de adição ➕ denota as versões do sistema operacional nas quais .NET Framework não vem instalado, mas pode ser instalado.
-- O asterisco **\*** denota as versões do sistema operacional nas quais .NET Framework (se pré-instalado ou não) devem ser habilitadas [no painel de controle](../install/dotnet-35-windows-10.md) ou, para o Windows Server, por meio do Gerenciador do servidor.
+- O asterisco * *\** _ denota as versões do sistema operacional nas quais .NET Framework (se pré-instalado ou não) devem ser habilitadas [no painel de controle](../install/dotnet-35-windows-10.md) ou, para o Windows Server, por meio do Gerenciador do servidor.
 
 | | |
 | - | - |
-| [.NET Framework 4,8](#net-framework-48) | [.NET Framework 4.7.2](#net-framework-472) | [.NET Framework 4.7.1](#net-framework-471) | [.NET Framework 4,7](#net-framework-47) |
+| [.NET Framework 4.8](#net-framework-48) | [.NET Framework 4.7.2](#net-framework-472) | [.NET Framework 4.7.1](#net-framework-471) | [.NET Framework 4.7](#net-framework-47) |
 | [.NET Framework 4.6.2](#net-framework-462) | [.NET Framework 4.6.1](#net-framework-461) | [.NET Framework 4.6](#net-framework-46) | [.NET Framework 4.5.2](#net-framework-452) |
 | [.NET Framework 4.5.1](#net-framework-451) | [.NET Framework 4.5](#net-framework-45) | [.NET Framework 4](#net-framework-4) | [.NET Framework 3.5](#net-framework-35) |
 | [.NET Framework 3.0](#net-framework-30) | [.NET Framework 2.0](#net-framework-20) | [.NET Framework 1.1](#net-framework-11) | [.NET Framework 1.0](#net-framework-10) |
@@ -49,7 +51,7 @@ As tabelas a seguir resumem .NET Framework histórico de versão e correlacionam
 
 |||
 |-|-|
-|**Versão CLR**|4|
+|_*Versão do CLR**|4|
 |**Versões do Windows**|Atualização do ✔️ 10 2019 de maio<br/>➕ Atualização de 10 de outubro de 2018 (versão 1809)<br/>➕ 10 de abril de 2018 atualização (versão 1803)<br/>Atualização dos criadores de 10 outono do ➕ (versão 1709)<br/>Atualização do ➕ 10 Creators (versão 1703)<br/>Atualização de aniversário de 10 ➕ (versão 1607)<br/>➕ 8,1<br/>➕ 7|
 |**Versões do Windows Server**|➕ O Windows Server 2019<br/>➕ Windows Server, versão 1809<br/>➕ Windows Server, versão 1803<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1|
 |**Para determinar a versão .NET instalada**|Use DWORD `Release`:<br/>-528040 (atualização de maio de 2019 para o Windows 10)<br/>– 528049 (todas as outras versões de SO)<br/>(Consulte [as instruções](how-to-determine-which-versions-are-installed.md))|
@@ -175,7 +177,7 @@ As tabelas a seguir resumem .NET Framework histórico de versão e correlacionam
 
 ### <a name="net-framework-4"></a>.NET Framework 4
 
-[Novos recursos](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms171868(v=vs.100))
+[Novos recursos](/previous-versions/dotnet/netframework-4.0/ms171868(v=vs.100))
 
 |||
 |-|-|
@@ -187,7 +189,7 @@ As tabelas a seguir resumem .NET Framework histórico de versão e correlacionam
 
 ### <a name="net-framework-35"></a>.NET Framework 3.5
 
-[Novos recursos](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ms171868\(v=vs.90\)):
+[Novos recursos](/previous-versions/visualstudio/visual-studio-2008/ms171868\(v=vs.90\)):
 
 - LINQ
 - Árvores de expressão
@@ -208,7 +210,7 @@ As tabelas a seguir resumem .NET Framework histórico de versão e correlacionam
 
 ### <a name="net-framework-30"></a>.NET Framework 3.0
 
-[Novos recursos](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bb822048(v=vs.90)):
+[Novos recursos](/previous-versions/visualstudio/visual-studio-2008/bb822048(v=vs.90)):
 
 - Windows Presentation Foundation
 - Windows Communication Foundation
@@ -224,7 +226,7 @@ As tabelas a seguir resumem .NET Framework histórico de versão e correlacionam
 
 ### <a name="net-framework-20"></a>.NET Framework 2.0
 
-[Novos recursos](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/t357fb32%28v%3dvs.90%29):
+[Novos recursos](/previous-versions/visualstudio/visual-studio-2008/t357fb32(v=vs.90)):
 
 - Genéricos
 - Editar e continuar o depurador
@@ -243,7 +245,7 @@ As tabelas a seguir resumem .NET Framework histórico de versão e correlacionam
 
 ### <a name="net-framework-11"></a>.NET Framework 1.1
 
-[Novos recursos](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/h88tthh0%28v%3dvs.90%29):
+[Novos recursos](/previous-versions/visualstudio/visual-studio-2008/h88tthh0(v=vs.90)):
 
 - Controles móveis do ASP.NET
 - Execução lado a lado

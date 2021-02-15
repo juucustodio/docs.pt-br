@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: atributos comuns (Visual Basic)'
 title: Atributos comuns
 ms.date: 07/20/2015
 ms.assetid: 11fe4894-1bf9-4525-a36b-cddcd3a5d22b
-ms.openlocfilehash: 57ef8f103d64a51d896f46d2889d78ec99ff3223
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 875554b69a23640c2d67367c93b56c34c286df37
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84400713"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100437781"
 ---
 # <a name="common-attributes-visual-basic"></a>Atributos comuns (Visual Basic)
 
@@ -23,7 +24,7 @@ Este tópico descreve os atributos que são mais comumente usados em Visual Basi
 
 - [Atributos de Visual Basic](#VB)
 
-## <a name="global-attributes"></a><a name="Global"></a>Atributos globais
+## <a name="global-attributes"></a><a name="Global"></a> Atributos globais
 
 A maioria dos atributos são aplicados aos elementos específicos de linguagem, como classes ou métodos. No entanto, alguns atributos são globais. Eles se aplicam a um assembly inteiro ou módulo. Por exemplo, o atributo <xref:System.Reflection.AssemblyVersionAttribute> pode ser usado para inserir informações de versão em um assembly, desta maneira:
 
@@ -79,7 +80,7 @@ Você pode usar atributos de manifesto do assembly para fornecer informações n
 |<xref:System.Reflection.AssemblyConfigurationAttribute>|Define um atributo personalizado que especifica uma configuração de assembly (como comercial ou de depuração) para um manifesto do assembly. assembly.|
 |<xref:System.Reflection.AssemblyDefaultAliasAttribute>|Define um alias amigável padrão para um manifesto do assembly|
 
-## <a name="obsolete-attribute"></a><a name="Obsolete"></a>Atributo obsoleto
+## <a name="obsolete-attribute"></a><a name="Obsolete"></a> Atributo obsoleto
 
 O atributo `Obsolete` marca uma entidade programa como não recomendada para uso. Cada uso de uma entidade marcada como obsoleta gerará subsequentemente um aviso ou erro, dependendo de como o atributo é configurado. Por exemplo:
 
@@ -218,7 +219,7 @@ Class SampleClass
 End Class
 ```
 
-## <a name="caller-info-attributes"></a><a name="CallerInfo"></a>Atributos de informações do chamador
+## <a name="caller-info-attributes"></a><a name="CallerInfo"></a> Atributos de informações do chamador
 
 Ao usar atributos de informações do chamador, você pode obter informações sobre o chamador de um método. Você pode obter o caminho do arquivo do código-fonte, o número de linha no código-fonte e o nome do membro do chamador.
 
@@ -232,7 +233,7 @@ Para obter informações do chamador do membro, você usa os atributos que são 
 
 Para obter mais informações sobre os atributos de informações do chamador, consulte [informações do chamador (Visual Basic)](../caller-information.md).
 
-## <a name="visual-basic-attributes"></a><a name="VB"></a>Atributos de Visual Basic
+## <a name="visual-basic-attributes"></a><a name="VB"></a> Atributos de Visual Basic
 
 A tabela a seguir lista os atributos que são específicos para Visual Basic.
 
@@ -269,7 +270,7 @@ End Structure
 
 Use `VBFixedArrayAttribute` para declarar matrizes que são fixas em tamanho. Assim como Visual Basic cadeias de caracteres, as matrizes são de comprimento variável por padrão. Esse atributo é útil ao serializar ou gravar dados em arquivos.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Reflection>
 - <xref:System.Attribute>

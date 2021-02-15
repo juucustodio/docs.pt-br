@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método IMetaDataTables2:: getmetadatastorage'
 title: Método IMetaDataTables2::GetMetaDataStorage
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 667a6d1e-753d-4ea2-8fd8-a8337d1bb9cd
 topic_type:
 - apiref
-ms.openlocfilehash: 55fcde6c47705e515eb2d20f25ac870e257b92c0
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: df6bbc69be05986dc6d4f143cec7ec09a2d78ee5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84501086"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799235"
 ---
 # <a name="imetadatatables2getmetadatastorage-method"></a>Método IMetaDataTables2::GetMetaDataStorage
+
 Obtém o tamanho e o conteúdo dos metadados armazenados na seção especificada.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,6 +37,7 @@ HRESULT GetMetaDataStorage (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ppvMd`  
  [entrada, saída] Um ponteiro para uma seção de metadados.  
   
@@ -42,15 +45,16 @@ HRESULT GetMetaDataStorage (
  fora O tamanho do fluxo de metadados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataTables2](imetadatatables2-interface.md)
 - [Interface IMetaDataTables](imetadatatables-interface.md)

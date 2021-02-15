@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração EBindPolicyLevels'
 title: Enumeração EBindPolicyLevels
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: a9e00b4f-b6d0-4257-bd88-4fe9af97b8fa
 topic_type:
 - apiref
-ms.openlocfilehash: 94d2ec12309249afbecdc4130f8fe20c927b0a9b
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 00e10cff79cdd782e8d9ab8e9b7e1e3f388fb1ee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616366"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785608"
 ---
 # <a name="ebindpolicylevels-enumeration"></a>Enumeração EBindPolicyLevels
+
 Fornece sinalizadores para especificar o nível no qual aplicar ou modificar a política de assembly.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -41,7 +43,7 @@ typedef enum {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`ePolicyLevelAdmin`|Especifica que a política deve ser aplicada no nível de administrador.|  
 |`ePolicyLevelApp`|Especifica que a política deve ser aplicada no nível do aplicativo.|  
@@ -49,22 +51,24 @@ typedef enum {
 |`ePolicyLevelNone`|Especifica nenhum sinalizador de nível de política.|  
 |`ePolicyLevelPublisher`|Especifica que a política deve ser aplicada no nível do Publicador.|  
 |`ePolicyLevelRetargetable`|Especifica que a política deve ser aplicável em níveis de variável.|  
-|`ePolicyPortability`|Especifica que a política deve dar suporte à portabilidade entre as implementações de um assembly .NET Framework. Consulte o elemento arquivo de configuração do [ \< supportPortability>](../../configure-apps/file-schema/runtime/supportportability-element.md) .|  
+|`ePolicyPortability`|Especifica que a política deve dar suporte à portabilidade entre as implementações de um assembly .NET Framework. Consulte o [\<supportPortability>](../../configure-apps/file-schema/runtime/supportportability-element.md) elemento arquivo de configuração.|  
 |`ePolicyUnifiedToCLR`|Especifica que a política deve ser unificada para a do Common Language Runtime (CLR).|  
   
 ## <a name="remarks"></a>Comentários  
+
  Essa enumeração é passada para métodos da interface [ICLRHostBindingPolicyManager](iclrhostbindingpolicymanager-interface.md) para especificar alterações na política de aplicativo.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** MSCorEE. dll  
+ **Biblioteca:** MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRAssemblyIdentityManager](iclrassemblyidentitymanager-interface.md)
 - [Hospedando enumerações](hosting-enumerations.md)

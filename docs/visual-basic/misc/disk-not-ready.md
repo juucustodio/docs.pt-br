@@ -4,14 +4,15 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrID71
 ms.assetid: 5e2528f5-81b3-4e5e-a294-a43cc738a42e
-ms.openlocfilehash: 28cdb5d9a4a08111150770fbac1f367b271a0798
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: cdd853ddcf5958326711b180ab1d57b44ea19c90
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84394772"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91084444"
 ---
 # <a name="disk-not-ready"></a>O disco não está pronto
+
 Para a unidade especificada, não há um disco ou a porta da unidade está aberta.  
   
 ## <a name="to-correct-this-error"></a>Para corrigir este erro  

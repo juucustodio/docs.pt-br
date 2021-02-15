@@ -1,22 +1,24 @@
 ---
+description: 'Saiba mais sobre: resolvendo recursos externos durante o processamento XSLT'
 title: Resolvendo recursos externos durante processamento XSLT
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 ms.assetid: 3a59d31c-0ec5-4de6-a2a9-558531c8116e
-ms.openlocfilehash: d38aea1a54c93b00ec14c6aac7ed11ceba288f7b
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 5b45458f8d4f240de5dc5e370e5a57c6ecab191d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291494"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783073"
 ---
 # <a name="resolving-external-resources-during-xslt-processing"></a>Resolvendo recursos externos durante processamento XSLT
+
 Há várias vezes durante uma transformação XSLT quando você precise resolver recursos externos.  
   
 ## <a name="using-the-xmlresolver-class"></a>Usando a classe de XmlResolver  
+
  A classe de <xref:System.Xml.XmlResolver> é usada para resolver recursos externos. A tabela a seguir descreve quando <xref:System.Xml.XmlResolver> se torna envolvido durante processamento XSLT.  
   
 |Tarefa XSLT|O que o XmlResolver é usado para|  
@@ -37,12 +39,13 @@ Há várias vezes durante uma transformação XSLT quando você precise resolver
 - Se você quiser garantir que nenhum recurso externo é acessado, você pode especificar `null` para o argumento de <xref:System.Xml.XmlResolver> .  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir cria uma folha de estilos que é armazenada em um recurso de rede. Um objeto de <xref:System.Xml.XmlUrlResolver> especifica as credenciais necessárias para acessar a folha de estilos.  
   
  [!code-csharp[XslCompiledTransform.Load#11](../../../../samples/snippets/csharp/VS_Snippets_Data/XslCompiledTransform.Load/CS/Xslt_Load_v2.cs#11)]
  [!code-vb[XslCompiledTransform.Load#11](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XslCompiledTransform.Load/VB/Xslt_Load_v2.vb#11)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.Xsl.XslCompiledTransform>
 - <xref:System.Xml.Xsl.XsltSettings>

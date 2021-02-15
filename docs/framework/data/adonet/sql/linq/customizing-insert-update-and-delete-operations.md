@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: Personalizando operações de inserção, atualização e exclusão'
 title: Personalizando a inserção, atualiazação, e as operações de exclusão
 ms.date: 03/30/2017
 ms.assetid: 07eef055-8f6c-414d-850e-d323ff946cd0
-ms.openlocfilehash: ed3de95a8224f0b4d8f3d5d913274417a6879942
-ms.sourcegitcommit: 4e2d355baba82814fa53efd6b8bbb45bfe054d11
+ms.openlocfilehash: 44bd76b61aff335019818b3c61040d10babe7301
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70247606"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773206"
 ---
 # <a name="customizing-insert-update-and-delete-operations"></a>Personalizando a inserção, atualiazação, e as operações de exclusão
+
 Por padrão, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] gerencia dinâmico SQL para implementar à leitura, inserção, atualiazação, e as operações de exclusão. Na prática, no entanto, você personaliza normalmente seu aplicativo atender às suas necessidades comerciais.  
   
 > [!NOTE]
@@ -18,7 +20,8 @@ Por padrão, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]
  Tópicos desta seção descreve as técnicas que [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] fornece personalizando à leitura, inserção, atualiazação, e as operações de exclusão em seu aplicativo.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Personalizando operações: visão geral](customizing-operations-overview.md)  
+
+ [Personalizar operações: Visão geral](customizing-operations-overview.md)  
  Descreve as diversas técnicas que [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] fornece personalizando à leitura, inserção, atualiazação, e as operações de exclusão.  
   
  [Operações de inserção, atualização e exclusão](insert-update-and-delete-operations.md)  
@@ -27,5 +30,5 @@ Por padrão, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]
  [Responsabilidades do desenvolvedor em substituir o comportamento padrão](responsibilities-of-the-developer-in-overriding-default-behavior.md)  
  Descreve a função do desenvolvedor em implementar os requisitos não aplicadas por [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
- [Adicionando a lógica de negócios usando métodos parciais](adding-business-logic-by-using-partial-methods.md)  
+ [Adicionando a lógica comercial usando métodos parciais](adding-business-logic-by-using-partial-methods.md)  
  Descreve como usar os métodos parciais para substituir métodos gerado automaticamente.

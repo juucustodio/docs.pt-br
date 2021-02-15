@@ -1,17 +1,17 @@
 ---
+description: 'Saiba mais sobre: validação de XDR com XmlSchemaCollection'
 title: Validação de XDR com XmlSchemaCollection
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 ms.assetid: 00833027-1428-4586-83c1-42f5de3323d1
-ms.openlocfilehash: c1383dbb5419eadbfb7c07f288ee46b1ca11cf5c
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: 270626a99fd87f859e8b32bbce522caeba44acdc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75709992"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782787"
 ---
 # <a name="xdr-validation-with-xmlschemacollection"></a>Validação de XDR com XmlSchemaCollection
 
@@ -131,7 +131,7 @@ namespace ValidationSample
 }
 ```
 
-O seguinte descreve o conteúdo do arquivo de entrada, *HeadCount. xml*, a ser validado:
+O seguinte descreve o conteúdo do arquivo de entrada, *HeadCount.xml*, a ser validado:
 
 ```xml
 <!--Load HeadCount.xdr in SchemaCollection for Validation-->
@@ -154,7 +154,7 @@ O seguinte descreve o conteúdo do arquivo de esquema XDR, *HeadCount.xdr*, a se
 </Schema>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.XmlValidatingReader.ValidationType%2A>
 - [Compilação do esquema de XmlSchemaCollection](xmlschemacollection-schema-compilation.md)

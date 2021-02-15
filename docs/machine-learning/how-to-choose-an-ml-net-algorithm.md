@@ -3,12 +3,12 @@ title: Como escolher um algoritmo do ML.NET
 description: Saiba como escolher um algoritmo do ML.NET para seu modelo de machine learning
 ms.topic: overview
 ms.date: 06/05/2019
-ms.openlocfilehash: 0fed33203c02303e37e47f548e08ec131eeb1c77
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 04cf191401c7c25f1fa341acaf9312dc19752260
+ms.sourcegitcommit: e301979e3049ce412d19b094c60ed95b316a8f8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75740000"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97593084"
 ---
 # <a name="how-to-choose-an-mlnet-algorithm"></a>Como escolher um algoritmo do ML.NET
 
@@ -20,9 +20,9 @@ Algoritmos operam em **recursos**. Recursos são valores numéricos calculados u
 
 Um algoritmo é o cálculo executado para produzir um **modelo**. Diferentes algoritmos produzem modelos com características diferentes.
 
-Com o do ML.NET, o mesmo algoritmo pode ser aplicado para tarefas diferentes. Por exemplo, o Ascendente de coordenada dupla estocástico pode ser usado para Classificação binária, Classificação multiclasse e Regressão. A diferença está em como a saída do algoritmo é interpretada de acordo com a tarefa.
+Com o do ML.NET, o mesmo algoritmo pode ser aplicado para tarefas diferentes. Por exemplo, estocásticos de coordenadas duplas podem ser usadas para classificação binária, classificação multiclasse e regressão. A diferença está em como a saída do algoritmo é interpretada de acordo com a tarefa.
 
-Para cada combinação de algoritmo/tarefa, o ML.NET fornece um componente que executa o algoritmo de treinamento e realiza a interpretação. Esses componentes são chamados de treinadores. Por exemplo, o <xref:Microsoft.ML.Trainers.SdcaRegressionTrainer> usa o algoritmo **StochasticDualCoordinatedAscent** aplicado à tarefa **Regressão**.
+Para cada combinação de algoritmo/tarefa, o ML.NET fornece um componente que executa o algoritmo de treinamento e faz a interpretação. Esses componentes são chamados de treinadores. Por exemplo, o <xref:Microsoft.ML.Trainers.SdcaRegressionTrainer> usa o algoritmo **StochasticDualCoordinatedAscent** aplicado à tarefa **Regressão**.
 
 ## <a name="linear-algorithms"></a>Algoritmos lineares
 
@@ -32,9 +32,9 @@ Algoritmos lineares funcionam bem para recursos que são [separáveis linearment
 
 Antes do treinamento com um algoritmo linear, os recursos devem ser normalizados. Isso impede que um recurso tenha mais influência sobre o resultado do que outros.
 
-Em geral, algoritmos lineares são escalonáveis e rápidos, baratos de treinar e baratos de prever. Eles são dimensionados pelo número de recursos e aproximadamente pelo tamanho do conjunto de dados de treinamento.
+Em geral, os algoritmos lineares são escalonáveis, rápidos, baratos de treinar e são baratos de prever. Eles são dimensionados pelo número de recursos e aproximadamente pelo tamanho do conjunto de dados de treinamento.
 
-Algoritmos lineares fazem várias passagens sobre os dados de treinamento. Se seu conjunto de dados se encaixar na memória, adicionar um [ponto de verificação de cache](xref:Microsoft.ML.LearningPipelineExtensions.AppendCacheCheckpoint*) a seu pipeline do ML.NET antes de acrescentar o instrutor tornará a execução do treinamento mais rápida.
+Algoritmos lineares fazem várias passagens sobre os dados de treinamento. Se seu conjunto de resultados couber na memória, adicionar um [ponto de verificação de cache](xref:Microsoft.ML.LearningPipelineExtensions.AppendCacheCheckpoint%2A) ao pipeline do ml.net antes de acrescentar o instrutor fará com que o treinamento seja executado mais rapidamente.
 
 **Treinadores Lineares**
 
@@ -76,7 +76,7 @@ Algoritmos de árvore de decisão consomem mais recursos e não são dimensionad
 
 ## <a name="meta-algorithms"></a>Meta-algoritmos
 
-Esses treinadores criam um treinador de várias classe de um instrutor binário. Use com <xref:Microsoft.ML.Trainers.AveragedPerceptronTrainer>, <xref:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer>, <xref:Microsoft.ML.Trainers.SymbolicSgdLogisticRegressionBinaryTrainer>, <xref:Microsoft.ML.Trainers.LightGbm.LightGbmBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.FastForestBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.GamBinaryTrainer>.
+Esses treinadores criam um instrutor multiclasse de um instrutor binário. Use com <xref:Microsoft.ML.Trainers.AveragedPerceptronTrainer>, <xref:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer>, <xref:Microsoft.ML.Trainers.SymbolicSgdLogisticRegressionBinaryTrainer>, <xref:Microsoft.ML.Trainers.LightGbm.LightGbmBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.FastForestBinaryTrainer>, <xref:Microsoft.ML.Trainers.FastTree.GamBinaryTrainer>.
 
 |Algoritmo|Propriedades|Treinadores|
 |---------|----------|--------|

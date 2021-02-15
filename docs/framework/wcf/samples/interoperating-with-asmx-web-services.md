@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: interoperação com serviços Web ASMX'
 title: Interoperabilidade com serviços Web ASMX
 ms.date: 03/30/2017
 ms.assetid: a7c11f0a-9e68-4f03-a6b1-39cf478d1a89
-ms.openlocfilehash: 3f99ba7571c6d84f245b69c5b8f626128ce18627
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: dd21cf74cf4ee49cae5b9bcfa55e099636c84e1c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596618"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726384"
 ---
 # <a name="interoperating-with-asmx-web-services"></a>Interoperabilidade com serviços Web ASMX
+
 Este exemplo demonstra como integrar um aplicativo cliente do Windows Communication Foundation (WCF) com um serviço Web ASMX existente.  
   
 > [!NOTE]
@@ -48,13 +50,13 @@ public class CalculatorService : System.Web.Services.WebService
   
  Conforme configurado, o serviço pode ser acessado `http://localhost/servicemodelsamples/service.asmx` por um cliente no mesmo computador. Para clientes em computadores remotos acessarem o serviço, um nome de domínio qualificado deve ser especificado em vez de localhost.  
   
- A comunicação é feita por meio de um cliente gerado pela [ferramenta de utilitário de metadados ServiceModel (svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md). O cliente está contido no arquivo generatedClient.cs. O serviço ASMX deve estar disponível para gerar o código de proxy, pois ele é usado para recuperar os metadados atualizados. Execute o comando a seguir em um prompt de comando no diretório do cliente para gerar o proxy de tipo.  
+ A comunicação é feita por meio de um cliente gerado pela [ferramenta de utilitário de metadados ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md). O cliente está contido no arquivo generatedClient.cs. O serviço ASMX deve estar disponível para gerar o código de proxy, pois ele é usado para recuperar os metadados atualizados. Execute o comando a seguir em um prompt de comando no diretório do cliente para gerar o proxy de tipo.  
   
 ```console  
 svcutil.exe /n:http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Samples http://localhost/servicemodelsamples/service.svc?wsdl /out:generatedClient.cs  
 ```  
   
- Usando o cliente gerado, você pode acessar um ponto de extremidade de serviço Configurando o endereço e a associação apropriados. Assim como o serviço, o cliente usa um arquivo de configuração (App. config) para especificar o ponto de extremidade com o qual se comunicar. A configuração de ponto de extremidade do cliente consiste em um endereço absoluto para o ponto de extremidade de serviço, a associação e o contrato, conforme mostrado na seguinte configuração de exemplo.  
+ Usando o cliente gerado, você pode acessar um ponto de extremidade de serviço Configurando o endereço e a associação apropriados. Assim como o serviço, o cliente usa um arquivo de configuração (App.config) para especificar o ponto de extremidade com o qual se comunicar. A configuração de ponto de extremidade do cliente consiste em um endereço absoluto para o ponto de extremidade de serviço, a associação e o contrato, conforme mostrado na seguinte configuração de exemplo.  
   
 ```xml  
 <client>  

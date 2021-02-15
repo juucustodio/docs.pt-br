@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IMetaDataAssemblyImport'
 title: Interface IMetaDataAssemblyImport
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 29c6fba5-4cea-417d-b484-7ed22ebff1c9
 topic_type:
 - apiref
-ms.openlocfilehash: 2a67f50fa1042e8d3957a9a0394507f260a328c6
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: bb9c5163e4f5b68700e5a3836fa55edbbebac01c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84009009"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753634"
 ---
 # <a name="imetadataassemblyimport-interface"></a>Interface IMetaDataAssemblyImport
+
 Fornece métodos para acessar e examinar o conteúdo de um manifesto do assembly.  
   
 ## <a name="methods"></a>Métodos  
@@ -44,15 +46,16 @@ Fornece métodos para acessar e examinar o conteúdo de um manifesto do assembly
 |[Método GetManifestResourceProps](imetadataassemblyimport-getmanifestresourceprops-method.md)|Obtém as configurações de Propriedade do recurso de manifesto especificado.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataforma:** Consulte [requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de metadados](metadata-interfaces.md)
 - [Interface IMetaDataAssemblyEmit](imetadataassemblyemit-interface.md)

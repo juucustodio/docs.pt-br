@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como criar uma nova variável (Visual Basic)'
 title: Como criar uma nova variável
 ms.date: 07/20/2015
 helpviewer_keywords:
 - Dim statement [Visual Basic]
 - variables [Visual Basic], creating
 ms.assetid: 35300be3-77b0-4bef-a156-034d3cdedde0
-ms.openlocfilehash: 501c8f3aff4c5b204d231bdc26213e13d125a7cf
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: b473a247bc5b4d9c1d65f4721ecba3621b232e27
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410523"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100481955"
 ---
 # <a name="how-to-create-a-new-variable-visual-basic"></a>Como criar uma nova variável (Visual Basic)
 
@@ -56,13 +57,13 @@ Você cria uma variável com uma [instrução Dim](../../../language-reference/s
     Public Static newCustomer As New Customer
     ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Variáveis](index.md)
 - [Declaração de Variável](variable-declaration.md)
 - [Nomes de elementos declarados](../declared-elements/declared-element-names.md)
 - [Características do Elemento Declarado](../declared-elements/declared-element-characteristics.md)
-- [Tipos de valor e referência](../data-types/value-types-and-reference-types.md)
+- [Tipos de valor e tipos de referência](../data-types/value-types-and-reference-types.md)
 - [Instruções](../../../language-reference/statements/index.md)
 - [Inferência de Tipo de Variável Local](local-type-inference.md)
 - [Instrução Option Infer](../../../language-reference/statements/option-infer-statement.md)

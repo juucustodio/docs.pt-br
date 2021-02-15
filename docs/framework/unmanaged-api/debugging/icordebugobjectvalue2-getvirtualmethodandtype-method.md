@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugObjectValue2:: GetVirtualMethodAndType'
 title: Método ICorDebugObjectValue2::GetVirtualMethodAndType
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 621b4543-a8f7-4117-98e4-930992cd688a
 topic_type:
 - apiref
-ms.openlocfilehash: 17cb3440c5b33d461b1624608ce115e1942d6beb
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 73866cc902d60316e3f1f31a86473116c0bff129
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73129711"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781916"
 ---
 # <a name="icordebugobjectvalue2getvirtualmethodandtype-method"></a>Método ICorDebugObjectValue2::GetVirtualMethodAndType
+
 Este método ainda não foi implementado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT GetVirtualMethodAndType (
 ```  
   
 ## <a name="remarks"></a>Comentários  
+
  Obtém ponteiros de interface para as instâncias "ICorDebugFunction" e "ICorDebugType" que representam o método e tipo mais derivados para a referência de membro especificada.  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também

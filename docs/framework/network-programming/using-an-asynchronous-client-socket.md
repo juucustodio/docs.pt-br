@@ -18,14 +18,15 @@ helpviewer_keywords:
 - Internet, sockets
 - client sockets
 ms.assetid: fd85bc88-e06c-467d-a30d-9fd7cffcfca1
-ms.openlocfilehash: 9cf46e9519bcecf4d7a20ff99b86fa5f66af2087
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: af5379533e51e7488d673359dc24268c6329c082
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502035"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96265213"
 ---
 # <a name="using-an-asynchronous-client-socket"></a>Usando um soquete de cliente assíncrono
+
 Um soquete de cliente assíncrono não suspende o aplicativo enquanto aguarda a conclusão das operações de rede. Em vez disso, ele usa o modelo padrão de programação assíncrona do .NET Framework para processar a conexão de rede em um thread, enquanto o aplicativo continua em execução no thread original. Soquetes assíncronos são apropriados para aplicativos que fazem uso intenso da rede ou que não podem aguardar a conclusão das operações de rede antes de continuar.  
   
  A classe <xref:System.Net.Sockets.Socket> segue o padrão de nomenclatura do .NET Framework para métodos assíncronos; por exemplo, o método <xref:System.Net.Sockets.Socket.Receive%2A> síncrono corresponde aos métodos <xref:System.Net.Sockets.Socket.BeginReceive%2A> e <xref:System.Net.Sockets.Socket.EndReceive%2A> assíncronos.  
@@ -54,7 +55,7 @@ public static void Connect(EndPoint remoteEP, Socket client) {
 }  
 ```  
   
- O método de retorno de chamada de conexão `ConnectCallback` implementa o representante <xref:System.AsyncCallback>. Ele se conecta ao dispositivo remoto quando o dispositivo remoto está disponível e, em seguida, sinaliza ao thread de aplicativo que a conexão foi concluída definindo o **ManualResetEvent como ** `connectDone`. O código a seguir implementa o método `ConnectCallback`.  
+ O método de retorno de chamada de conexão `ConnectCallback` implementa o representante <xref:System.AsyncCallback>. Ele se conecta ao dispositivo remoto quando o dispositivo remoto está disponível e, em seguida, sinaliza ao thread de aplicativo que a conexão foi concluída definindo o **ManualResetEvent como** `connectDone`. O código a seguir implementa o método `ConnectCallback`.  
   
 ```vb  
 Private Shared Sub ConnectCallback(ar As IAsyncResult)  
@@ -220,7 +221,7 @@ private static void Receive(Socket client) {
 }  
 ```  
   
- O método de retorno de chamada de recebimento `ReceiveCallback` implementa o representante **AsyncCallback**. Ele recebe os dados do dispositivo de rede e cria uma cadeia de caracteres de mensagem. Ele lê um ou mais bytes de dados da rede no buffer de dados e, em seguida, chama o método **BeginReceive** novamente até que os dados enviados pelo cliente estejam completos. Depois que todos os dados são lidos do cliente, `ReceiveCallback` sinaliza ao thread de aplicativo que os dados estão completos definindo o **ManualResetEvent como ** `sendDone`.  
+ O método de retorno de chamada de recebimento `ReceiveCallback` implementa o representante **AsyncCallback**. Ele recebe os dados do dispositivo de rede e cria uma cadeia de caracteres de mensagem. Ele lê um ou mais bytes de dados da rede no buffer de dados e, em seguida, chama o método **BeginReceive** novamente até que os dados enviados pelo cliente estejam completos. Depois que todos os dados são lidos do cliente, `ReceiveCallback` sinaliza ao thread de aplicativo que os dados estão completos definindo o **ManualResetEvent como** `sendDone`.  
   
  O exemplo de código a seguir implementa o método `ReceiveCallback`. Ele supõe uma cadeia de caracteres global chamada `response` que contém a cadeia de caracteres recebida e um **ManualResetEvent** global chamado `receiveDone`. O servidor deve desligar o soquete de cliente normalmente para encerrar a sessão de rede.  
   
@@ -286,7 +287,7 @@ private static void ReceiveCallback( IAsyncResult ar ) {
 }  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Usando um soquete de cliente síncrono](using-a-synchronous-client-socket.md)
 - [Escutando com soquetes](listening-with-sockets.md)

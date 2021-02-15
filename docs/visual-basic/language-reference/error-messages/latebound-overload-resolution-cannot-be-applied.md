@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC30933: a resolução de sobrecarga de ligação tardia não pode ser aplicada a ' <procedurename> ' porque a instância de acesso é um tipo de interface"
 title: Não é possível aplicar a resolução de sobrecarga com associação tardia a '<procedurename>' porque a instância de acesso é um tipo de interface
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,14 +9,14 @@ helpviewer_keywords:
 - overload resolution [Visual Basic], with late-bound argument
 - BC30933
 ms.assetid: 8182eea0-dd34-4d6e-9ca0-41d8713e9dc4
-ms.openlocfilehash: 4500a177c7a4729fe5131af1b007fd38e77afe07
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 3002232c953fa21a10de944bc61e2f0c448ae4fa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84397331"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795905"
 ---
-# <a name="latebound-overload-resolution-cannot-be-applied-to-procedurename-because-the-accessing-instance-is-an-interface-type"></a>Não é possível aplicar a resolução de sobrecarga com associação tardia a '\<procedurename>' porque a instância de acesso é um tipo de interface
+# <a name="bc30933-latebound-overload-resolution-cannot-be-applied-to-procedurename-because-the-accessing-instance-is-an-interface-type"></a>BC30933: a resolução de sobrecarga de ligação tardia não pode ser aplicada a ' \<procedurename> ' porque a instância de acesso é um tipo de interface
 
 O compilador está tentando resolver uma referência a uma propriedade ou um procedimento sobrecarregado, mas a referência falha porque um argumento é do tipo `Object` e o objeto de referência tem o tipo de dados de uma interface. O `Object` argumento força o compilador a resolver a referência como associação tardia.
 
@@ -66,7 +67,7 @@ refer.s1(CType(o1, Double))
 
 Cada uma das linhas de código anteriores converte explicitamente a `Object` variável `o1` em um dos tipos de parâmetro definidos para as sobrecargas.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Sobrecarga de procedimento](../../programming-guide/language-features/procedures/procedure-overloading.md)
 - [Resolução de sobrecarga](../../programming-guide/language-features/procedures/overload-resolution.md)

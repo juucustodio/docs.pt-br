@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: exemplo de UriTemplate'
 title: Exemplo de UriTemplate
 ms.date: 03/30/2017
 ms.assetid: 0aaf91d0-ce18-468d-8006-bc9bc2e48231
-ms.openlocfilehash: fb956882ae653f584026fefb20e261c90010ca9b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 80e932c06a6819ef7e1e289d9eacab6cd4e55f92
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84591053"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685433"
 ---
 # <a name="uritemplate-sample"></a>Exemplo de UriTemplate
+
 A <xref:System.UriTemplate> classe fornece métodos para trabalhar com conjuntos de URIs que compartilham uma estrutura comum. Este exemplo demonstra os seguintes conceitos principais relacionados a `UriTemplate` :  
   
 - Sintaxe para criar modelos.  
@@ -33,7 +35,7 @@ A <xref:System.UriTemplate> classe fornece métodos para trabalhar com conjuntos
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Web\UriTemplate`  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Tabela de UriTemplate](uritemplate-table-sample.md)
 - [Dispatcher de tabela de UriTemplate](uritemplate-table-dispatcher-sample.md)

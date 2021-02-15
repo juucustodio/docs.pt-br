@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataAssemblyEmit:: SetExportedTypeProps'
 title: Método IMetaDataAssemblyEmit::SetExportedTypeProps
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 1c090153-fd5f-46c7-9cff-39a78d992c8f
 topic_type:
 - apiref
-ms.openlocfilehash: fa4f1f57cb8fe1ca81bbad6438a88bb43c48e7bf
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 61032abd7b049af29c583e9aee126184af3c78f2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008073"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678088"
 ---
 # <a name="imetadataassemblyemitsetexportedtypeprops-method"></a>Método IMetaDataAssemblyEmit::SetExportedTypeProps
+
 Modifica a estrutura de `ExportedType` metadados especificada.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,6 +39,7 @@ HRESULT SetExportedTypeProps (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ct`  
  no O token de metadados que especifica a `ExportedType` estrutura de metadados a ser modificada.  
   
@@ -50,17 +53,19 @@ HRESULT SetExportedTypeProps (
  no Uma combinação de bits de valores que especifica atributos do tipo.  
   
 ## <a name="remarks"></a>Comentários  
+
  Para criar uma `ExportedType` estrutura de metadados, use o método [IMetaDataAssemblyEmit::D efineexportedtype](imetadataassemblyemit-defineexportedtype-method.md) .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataAssemblyEmit](imetadataassemblyemit-interface.md)

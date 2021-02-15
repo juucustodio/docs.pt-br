@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugRemote'
 title: Interface ICorDebugRemote
 ms.date: 03/30/2017
 api_name:
@@ -14,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: 53d073c6-fa02-40d2-82e1-b9452bb6abaa
 topic_type:
 - apiref
-ms.openlocfilehash: ef11aa48f679592126f736c2877c697f02cb5e62
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 4c9d92800c68155216a077180ea0b613c67423dd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379242"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790666"
 ---
 # <a name="icordebugremote-interface"></a>Interface ICorDebugRemote
+
 Fornece a capacidade de iniciar ou anexar um depurador gerenciado a um processo remoto de destino.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 interface ICorDebugRemote : IUnknown  
@@ -64,9 +66,11 @@ interface ICorDebugRemote : IUnknown
 |[Método ICorDebugRemote::DebugActiveProcessEx](icordebugremote-debugactiveprocessex-method.md)|Inicia um processo em um computador remoto sob o depurador.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Atualmente, essa funcionalidade tem suporte apenas para a depuração de um destino de aplicativo baseado no Silverlight que está sendo executado em um computador Macintosh remoto.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -75,7 +79,7 @@ interface ICorDebugRemote : IUnknown
   
  **Versões do .NET Framework:** 4,5, 4, 3,5 SP1  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugRemoteTarget](icordebugremotetarget-interface.md)
 - [Interface ICorDebug](icordebug-interface.md)

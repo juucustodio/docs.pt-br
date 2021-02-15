@@ -3,12 +3,12 @@ title: Programação funcional versus programação imperativa-LINQ to XML
 description: Saiba mais sobre a programação funcional e como ela difere da programação imperativa (procedimento) tradicional.
 ms.date: 07/20/2015
 ms.assetid: 5e35c5a0-c949-422a-873b-fca6b2254f57
-ms.openlocfilehash: d6dddab9b288cfa820aa4ed9d800c29136edf772
-ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
+ms.openlocfilehash: e99cffa9500c07c507962f41b17ab3f3b05c7781
+ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89551882"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91805285"
 ---
 # <a name="functional-programming-vs-imperative-programming-linq-to-xml"></a>Programação funcional versus programação imperativa (LINQ to XML)
 
@@ -32,7 +32,7 @@ Embora a maioria das linguagens sejam criados para oferecer suporte a um paradig
 
 ## <a name="functional-programming-using-xslt"></a>Programação funcional usando XSLT
 
-Muitos desenvolvedores XSLT estão familiarizados com a abordagem funcional pura. A maioria de modo eficiente desenvolver uma folha de estilos XSLT é manipular cada modelo como uma transformação isolado, passível de composição. A ordem de execução de- é completamente sublinhado. O XSLT não permite efeitos colaterais (com exceção de que os mecanismos de saída para executar o código de procedimento podem introduzir efeitos colaterais que resultam em inpureza funcional). No entanto, embora o XSLT seja uma ferramenta eficaz, algumas de suas características não são ideais. Por exemplo, expressar construções de programação em XML torna o código relativamente detalhado, e portanto difícil manter. Além disso, a confiança pesada na recursão do controle de fluxo pode resultar em código que é difícil de ler. Para obter mais informações sobre XSLT, consulte [Transformações XSLT](../../standard/data/xml/xslt-transformations.md).
+Muitos desenvolvedores XSLT estão familiarizados com a abordagem funcional pura. A maioria de modo eficiente desenvolver uma folha de estilos XSLT é manipular cada modelo como uma transformação isolado, passível de composição. A ordem de execução de- é completamente sublinhado. O XSLT não permite efeitos colaterais (com exceção de que os mecanismos de saída para executar o código de procedimento podem introduzir efeitos colaterais que resultam em inpureza funcional). No entanto, embora o XSLT seja uma ferramenta eficaz, algumas de suas características não são ideais. Por exemplo, expressar construções de programação em XML torna o código relativamente detalhado, e portanto difícil manter. Além disso, a confiança pesada na recursão do controle de fluxo pode resultar em código que é difícil de ler. Para obter mais informações sobre XSLT, consulte [Transformações XSLT](../data/xml/xslt-transformations.md).
 
 No entanto, XSLT provou o valor de usar uma abordagem funcional pura para transformar XML de uma forma para outra. Programação funcional pura com LINQ to XML é semelhante de várias maneiras a fonte. No entanto, as construções de programação introduzidas por LINQ to XML, C# e Visual Basic permitem que você escreva transformações funcionais puras que são mais legíveis e que podem ser mantidas do que o XSLT.
 
@@ -57,5 +57,5 @@ Felizmente, o C# e o Visual Basic não exigem o salto completo para a programaç
 ## <a name="see-also"></a>Confira também
 
 - [Introdução às transformações funcionais puras](introduction-pure-functional-transformations.md)
-- [Transformações XSLT](/../../standard/data/xml/xslt-transformations.md)
+- [Transformações XSLT](../data/xml/xslt-transformations.md)
 - [Refatorar em funções puras](refactor-pure-functions.md)

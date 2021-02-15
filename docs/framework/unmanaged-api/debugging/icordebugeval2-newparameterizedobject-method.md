@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugEval2:: NewParameterizedObject'
 title: Método ICorDebugEval2::NewParameterizedObject
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 3d705463-e640-4249-8036-4e8206d03cfe
 topic_type:
 - apiref
-ms.openlocfilehash: f6ede42ac90f65f934e285f879bcef62d13b65cb
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: 2dc746fdada0e79044a1387bd4cb1c11b81d7777
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976090"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99693675"
 ---
 # <a name="icordebugeval2newparameterizedobject-method"></a>Método ICorDebugEval2::NewParameterizedObject
+
 Cria uma instância de um novo objeto de tipo com parâmetros e chama o método de construtor do objeto.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -38,6 +40,7 @@ HRESULT NewParameterizedObject (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pConstructor`  
  no Um ponteiro para um objeto ICorDebugFunction que representa o construtor do objeto a ser instanciado.  
   
@@ -54,9 +57,11 @@ HRESULT NewParameterizedObject (
  no Uma matriz de ponteiros, cada um dos quais aponta para um objeto ICorDebugValue que representa um valor de argumento que é passado para o construtor.  
   
 ## <a name="remarks"></a>Comentários  
+
  O construtor do objeto pode ter <xref:System.Type> parâmetros.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

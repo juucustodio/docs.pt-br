@@ -1,13 +1,13 @@
 ---
 title: Criptografia
-ms.date: 12/13/2019
+ms.date: 09/08/2020
 description: Saiba como criptografar seu arquivo de banco de dados.
-ms.openlocfilehash: ccdd4b6b8642b3cde1c2667c9ca432a9b0ef21f2
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: 1b33e1510a269aba87caba2cd39faab33791aa55
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75447261"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91203404"
 ---
 # <a name="encryption"></a>Criptografia
 
@@ -37,14 +37,17 @@ Para obter mais informações sobre como usar uma biblioteca nativa diferente pa
 
 ## <a name="specify-the-key"></a>Especifique a chave
 
-Para habilitar a criptografia, especifique a chave usando `Password` a palavra-chave da cadeia de conexão. Use <xref:Microsoft.Data.Sqlite.SqliteConnectionStringBuilder> para adicionar ou atualizar o valor da entrada do usuário e evitar ataques de injeção de cadeia de conexão.
+Para habilitar a criptografia em um novo banco de dados, especifique a chave usando a `Password` palavra-chave da cadeia de conexão. Use <xref:Microsoft.Data.Sqlite.SqliteConnectionStringBuilder> para adicionar ou atualizar o valor da entrada do usuário e evitar ataques de injeção de cadeia de conexão.
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/EncryptionSample/Program.cs?name=snippet_ConnectionStringBuilder)]
 
+> [!TIP]
+> O método para criptografar e descriptografar bancos de dados existentes varia de acordo com a solução que você está usando. Por exemplo, você precisa usar a `sqlcipher_export()` função em sqlcipher. Verifique a documentação da solução para obter detalhes.
+
 ## <a name="rekeying-the-database"></a>Rechaveamento do banco de dados
 
-Se você quiser alterar a chave de criptografia de um banco de dados, `PRAGMA rekey` emita uma instrução. Para descriptografar o banco `NULL`de dados, especifique.
+Se você quiser alterar a chave de um banco de dados criptografado, emita uma `PRAGMA rekey` instrução.
 
-Infelizmente, o SQLite não dá suporte `PRAGMA` a parâmetros em instruções. Em vez disso, `quote()` use a função para impedir a injeção de SQL.
+Infelizmente, o SQLite não dá suporte a parâmetros em `PRAGMA` instruções. Em vez disso, use a `quote()` função para impedir a injeção de SQL.
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/EncryptionSample/Program.cs?name=snippet_Rekey)]

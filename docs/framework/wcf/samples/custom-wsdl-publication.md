@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: publicação WSDL personalizada'
 title: Publicação personalizada de WSDL
 ms.date: 03/30/2017
 ms.assetid: 3b3e8103-2c95-4db3-a05b-46aa8e9d4d29
-ms.openlocfilehash: b18ac2f72d58c768b3784e1c414a71cdaec50c01
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 39bb884a6c89d24fc38b89db09c848c87e663870
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596689"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752412"
 ---
 # <a name="custom-wsdl-publication"></a>Publicação personalizada de WSDL
+
 Este exemplo demonstra como:  
   
 - Implemente um <xref:System.ServiceModel.Description.IWsdlExportExtension?displayProperty=nameWithType> em um <xref:System.ServiceModel.Description.IContractBehavior?displayProperty=nameWithType> atributo personalizado para exportar Propriedades de atributo como anotações WSDL.  
@@ -24,6 +26,7 @@ Este exemplo demonstra como:
 > O procedimento de instalação e as instruções de Build para este exemplo estão localizados no final deste tópico.  
   
 ## <a name="service"></a>Serviço  
+
  O serviço neste exemplo é marcado com dois atributos personalizados. O primeiro, o `WsdlDocumentationAttribute` , aceita uma cadeia de caracteres no construtor e pode ser aplicado para fornecer uma interface ou operação de contrato com uma cadeia de caracteres que descreve seu uso. O segundo, `WsdlParamOrReturnDocumentationAttribute` , pode ser aplicado a valores de retorno ou parâmetros para descrever esses valores na operação. O exemplo a seguir mostra um contrato de serviço, `ICalculator` , descrito usando esses atributos.  
   
 ```csharp  
@@ -170,9 +173,11 @@ for (int i = 0; i < args.Length; i++)
 ```  
   
 ## <a name="svcutil-client"></a>Cliente svcutil  
- Este exemplo não usa svcutil. exe. O contrato é fornecido no arquivo generatedClient.cs para que, após o exemplo, demonstrasse a importação de WSDL personalizada e a geração de código, o serviço pode ser invocado. Para usar o importador WSDL personalizado a seguir para este exemplo, você pode executar svcutil. exe e especificar a `/svcutilConfig` opção, fornecendo o caminho para o arquivo de configuração do cliente usado neste exemplo, que faz referência à `WsdlDocumentation.dll` biblioteca. Para carregar o `WsdlDocumentationImporter` , no entanto, o Svuctil. exe deve ser capaz de localizar e carregar a `WsdlDocumentation.dll` biblioteca, o que significa que ela está registrada no cache de assembly global, no caminho ou está no mesmo diretório que svcutil. exe. Para um exemplo básico como esse, a coisa mais fácil é copiar svcutil. exe e o arquivo de configuração do cliente no mesmo diretório que `WsdlDocumentation.dll` e executá-lo a partir daí.  
+
+ Este exemplo não usa Svcutil.exe. O contrato é fornecido no arquivo generatedClient.cs para que, após o exemplo, demonstrasse a importação de WSDL personalizada e a geração de código, o serviço pode ser invocado. Para usar o importador WSDL personalizado a seguir para este exemplo, você pode executar Svcutil.exe e especificar a `/svcutilConfig` opção, fornecendo o caminho para o arquivo de configuração do cliente usado neste exemplo, que faz referência à `WsdlDocumentation.dll` biblioteca. `WsdlDocumentationImporter`No entanto, para carregar o, Svuctil.exe deve ser capaz de localizar e carregar a `WsdlDocumentation.dll` biblioteca, o que significa que ela está registrada no cache de assembly global, no caminho ou está no mesmo diretório que Svcutil.exe. Para um exemplo básico como esse, a coisa mais fácil é copiar Svcutil.exe e o arquivo de configuração do cliente no mesmo diretório que `WsdlDocumentation.dll` e executá-lo a partir daí.  
   
 ## <a name="the-custom-wsdl-importer"></a>O importador WSDL personalizado  
+
  O <xref:System.ServiceModel.Description.IWsdlImportExtension> objeto personalizado `WsdlDocumentationImporter` também implementa <xref:System.ServiceModel.Description.IContractBehavior> e <xref:System.ServiceModel.Description.IOperationBehavior> deve ser adicionado a um ServiceEndpoint importado e <xref:System.ServiceModel.Description.IServiceContractGenerationExtension> e <xref:System.ServiceModel.Description.IOperationContractGenerationExtension> para ser chamado para modificar a geração de código quando o contrato ou o código de operação está sendo criado.  
   
  Primeiro, no <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%28System.ServiceModel.Description.WsdlImporter%2CSystem.ServiceModel.Description.WsdlContractConversionContext%29> método, o exemplo determina se a anotação WSDL está no nível de contrato ou de operação e se adiciona como um comportamento no escopo apropriado, passando o texto de anotação importado para seu construtor.  
@@ -219,6 +224,7 @@ public void GenerateOperation(OperationContractGenerationContext context)
 ```  
   
 ## <a name="the-client-application"></a>O aplicativo cliente  
+
  O aplicativo cliente carrega o importador WSDL personalizado especificando-o no arquivo de configuração do aplicativo.  
   
 ```xml  

@@ -6,18 +6,18 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: cc2687cf-d648-451e-88ac-3847c6c967c8
-ms.openlocfilehash: 35e48defb2fa010a4403d50373f6e491fad6c293
-ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
+ms.openlocfilehash: 846816a38d32b16ec1252b67dd4eed2d8512f815
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89552070"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92160438"
 ---
 # <a name="how-to-retrieve-paragraphs-from-an-office-open-xml-document-linq-to-xml"></a>Como recuperar parágrafos de um documento XML aberto do Office (LINQ to XML)
 
 Este artigo fornece um exemplo que abre um documento XML aberto do Office e recupera uma coleção de todos os parágrafos do documento.
 
-Para obter mais informações sobre o Office Open XML, consulte [abrir o SDK do XML](https://github.com/OfficeDev/Open-XML-SDK) e o [blog de Eric White](http://www.ericwhite.com/).
+Para obter mais informações sobre o Office Open XML, consulte [abrir o SDK do XML](https://github.com/OfficeDev/Open-XML-SDK) e o [blog de Eric White](https://www.ericwhite.com/).
 
 ## <a name="example-retrieve-the-paragraphs-from-an-office-open-xml-document"></a>Exemplo: recuperar os parágrafos de um documento XML aberto do Office
 

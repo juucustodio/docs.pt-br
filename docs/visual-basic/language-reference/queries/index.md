@@ -1,21 +1,24 @@
 ---
+description: 'Saiba mais sobre: consultas (Visual Basic)'
 title: Consultas
 ms.date: 07/20/2015
 helpviewer_keywords:
 - queries [Visual Basic]
 - LINQ, queries
 ms.assetid: 8edc717c-4a24-4cbc-9c16-11f479c935db
-ms.openlocfilehash: 8fb245309170d4b9adf7458bb3bcfde3e28c0538
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f816078ea7a8a02b84ebf2d23940c67e54997091
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84359820"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700423"
 ---
 # <a name="queries-visual-basic"></a>Consultas (Visual Basic)
-Visual Basic permite que você crie expressões LINQ (consulta integrada à linguagem) em seu código.  
+
+Visual Basic permite que você crie expressões de consulta de Language-Integrated (LINQ) em seu código.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Cláusula Aggregate](aggregate-clause.md)  
  Descreve a `Aggregate` cláusula, que aplica uma ou mais funções de agregação a uma coleção.  
   
@@ -25,7 +28,7 @@ Visual Basic permite que você crie expressões LINQ (consulta integrada à ling
  [Cláusula from](from-clause.md)  
  Descreve a `From` cláusula, que especifica uma coleção e uma variável de intervalo para uma consulta.  
   
- [Cláusula Group By](group-by-clause.md)  
+ [Cláusula Group by](group-by-clause.md)  
  Descreve a `Group By` cláusula, que agrupa os elementos de um resultado de consulta e pode ser usada para aplicar funções de agregação a cada grupo.  
   
  [Cláusula Group Join](group-join-clause.md)  
@@ -37,7 +40,7 @@ Visual Basic permite que você crie expressões LINQ (consulta integrada à ling
  [Cláusula Let](let-clause.md)  
  Descreve a `Let` cláusula, que computa um valor e o atribui a uma nova variável na consulta.  
   
- [Cláusula Order By](order-by-clause.md)  
+ [Cláusula order by](order-by-clause.md)  
  Descreve a `Order By` cláusula, que especifica a ordem de classificação das colunas em uma consulta.  
   
  [Cláusula SELECT](select-clause.md)  
@@ -58,7 +61,7 @@ Visual Basic permite que você crie expressões LINQ (consulta integrada à ling
  [Cláusula WHERE](where-clause.md)  
  Descreve a `Where` cláusula, que especifica uma condição de filtragem para uma consulta.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ](../../programming-guide/language-features/linq/index.md)
 - [Introdução a LINQ no Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md)

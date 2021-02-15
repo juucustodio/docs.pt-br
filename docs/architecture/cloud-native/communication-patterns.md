@@ -3,12 +3,12 @@ title: Padrões de comunicação nativos de nuvem
 description: Saiba mais sobre as principais preocupações de comunicação do serviço em aplicativos nativos de nuvem
 author: robvet
 ms.date: 05/13/2020
-ms.openlocfilehash: 3d678df44b5fef68427846e59f446b7408795625
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 5ce789924e828865f7bdf717b081b9112203293a
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83614208"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91160912"
 ---
 # <a name="cloud-native-communication-patterns"></a>Padrões de comunicação nativos de nuvem
 
@@ -20,7 +20,7 @@ Em um aplicativo monolítico, a comunicação é simples. Os módulos de código
 
 Os sistemas nativos de nuvem implementam uma arquitetura baseada em microserviço com muitos microserviços pequenos e independentes. Cada microserviço é executado em um processo separado e normalmente é executado dentro de um contêiner implantado em um *cluster*.
 
-Um cluster agrupa um pool de máquinas virtuais para formar um ambiente altamente disponível. Eles são gerenciados com uma ferramenta de orquestração, que é responsável por implantar e gerenciar os microserviços em contêineres. A Figura 4-1 mostra um cluster [kubernetes](https://kubernetes.io) implantado na nuvem do Azure com os [serviços de kubernetes do Azure](https://docs.microsoft.com/azure/aks/intro-kubernetes)totalmente gerenciados.
+Um cluster agrupa um pool de máquinas virtuais para formar um ambiente altamente disponível. Eles são gerenciados com uma ferramenta de orquestração, que é responsável por implantar e gerenciar os microserviços em contêineres. A Figura 4-1 mostra um cluster [kubernetes](https://kubernetes.io) implantado na nuvem do Azure com os [serviços de kubernetes do Azure](/azure/aks/intro-kubernetes)totalmente gerenciados.
 
 ![Um cluster kubernetes no Azure](./media/kubernetes-cluster-in-azure.png)
 

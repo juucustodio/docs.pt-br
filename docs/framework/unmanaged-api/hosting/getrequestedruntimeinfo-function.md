@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função GetRequestedRuntimeInfo'
 title: Função GetRequestedRuntimeInfo
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 0dfd7cdc-c116-4e25-b56a-ac7b0378c942
 topic_type:
 - apiref
-ms.openlocfilehash: 0efda458d51677fcd16140cd0f0a835b76c20173
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 63d0bdcd07be5727cddc0acc352e8358b5ff0090
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83617172"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785283"
 ---
 # <a name="getrequestedruntimeinfo-function"></a>Função GetRequestedRuntimeInfo
+
 Obtém informações de versão e diretório sobre o Common Language Runtime (CLR) solicitado por um aplicativo.  
   
  Essa função foi preterida no .NET Framework 4.  
@@ -46,6 +48,7 @@ HRESULT GetRequestedRuntimeInfo (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pExe`  
  no O nome do aplicativo.  
   
@@ -80,6 +83,7 @@ HRESULT GetRequestedRuntimeInfo (
  fora Um ponteiro para o comprimento da cadeia de caracteres da versão.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  Esse método retorna códigos de erro padrão de Component Object Model (COM), conforme definido no WinError. h, além dos valores a seguir.  
   
 |Código de retorno|Descrição|  
@@ -88,6 +92,7 @@ HRESULT GetRequestedRuntimeInfo (
 |ERROR_INSUFFICIENT_BUFFER|O buffer de diretório não é grande o suficiente para armazenar o caminho do diretório.<br /><br /> - ou -<br /><br /> O buffer de versão não é grande o suficiente para armazenar a cadeia de caracteres de versão.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O `GetRequestedRuntimeInfo` método retorna informações de tempo de execução sobre a versão carregada no processo, que não é necessariamente a versão mais recente instalada no computador.  
   
  Na versão .NET Framework 2,0, você pode obter informações sobre a versão instalada mais recente usando o `GetRequestedRuntimeInfo` método da seguinte maneira:  
@@ -113,15 +118,16 @@ HRESULT GetRequestedRuntimeInfo (
 - RUNTIME_INFO_REQUEST_X86  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** MSCorEE. dll  
+ **Biblioteca:** MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Função GetRequestedRuntimeVersion](getrequestedruntimeversion-function.md)
 - [Função GetVersionFromProcess](getversionfromprocess-function.md)

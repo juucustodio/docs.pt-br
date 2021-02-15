@@ -2,16 +2,16 @@
 title: Comando dotnet clean
 description: O comando dotnet clean limpa o diretório atual.
 ms.date: 02/14/2020
-ms.openlocfilehash: a59922feba75e940a5cee2dfeb500f4f86372870
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: 1023f13c7662abb7dad613128631c7644ca15bb9
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463695"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189597"
 ---
 # <a name="dotnet-clean"></a>dotnet clean
 
-**Este artigo se aplica a:** ✔️ .NET Core 2.x SDK e versões posteriores
+**Este artigo aplica-se a:** ✔️ SDK do .NET Core 2. x e versões posteriores
 
 ## <a name="name"></a>Nome
 
@@ -42,11 +42,11 @@ O projeto do MSBuild ou a solução para limpar. Se um arquivo de solução ou p
 
 * **`-c|--configuration <CONFIGURATION>`**
 
-  Define a configuração da compilação. O padrão para `Debug`a maioria dos projetos é, mas você pode substituir as configurações de configuração de compilação em seu projeto. Essa opção só será exigida na limpeza se você especificá-la durante o momento do build.
+  Define a configuração da compilação. O padrão para a maioria dos projetos é `Debug` , mas você pode substituir as definições de configuração de compilação em seu projeto. Essa opção só será exigida na limpeza se você especificá-la durante o momento do build.
 
 * **`-f|--framework <FRAMEWORK>`**
 
-  A [estrutura](../../standard/frameworks.md) que foi especificada no momento da construção. A estrutura precisa ser definida no [arquivo de projeto](csproj.md). Se você especificou a estrutura no momento da compilação, especifique a estrutura ao limpar.
+  A [estrutura](../../standard/frameworks.md) que foi especificada no momento da compilação. A estrutura precisa ser definida no [arquivo de projeto](../project-sdk/overview.md). Se você especificou a estrutura no momento da compilação, especifique a estrutura ao limpar.
 
 * **`-h|--help`**
 

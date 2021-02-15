@@ -5,12 +5,12 @@ ms.date: 03/30/2017
 ms.assetid: 123457ac-4223-4273-bb58-3bc0e4957e9d
 author: BillWagner
 ms.author: wiwagn
-ms.openlocfilehash: 4a9f5d50ad78b2b0bef0ece3c4fce47d2925aca5
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.openlocfilehash: 20b9f34595f8586eb5162715eb6b0df171f132a1
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88063751"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96266838"
 ---
 # <a name="writing-large-responsive-net-framework-apps"></a>Escrevendo aplicativos .NET Framework grandes e dinâmicos
 
@@ -19,6 +19,7 @@ Este artigo apresenta dicas para melhorar o desempenho de grandes aplicativos do
 O .NET Framework é altamente produtivo para compilar aplicativos. Linguagens eficientes e seguras e uma coleção sofisticada de bibliotecas tornam a compilação de aplicativos altamente produtiva. Porém, grande produtividade traz muita responsabilidade. Você deve usar toda a potência do .NET Framework, mas esteja preparado para ajustar o desempenho do código quando necessário.
   
 ## <a name="why-the-new-compiler-performance-applies-to-your-app"></a>Por que o desempenho do novo compilador se aplica ao seu aplicativo  
+
  A equipe do .NET Compiler Platform ("Roslyn") reescreveu os compiladores do C# e do Visual Basic em código gerenciado para fornecer novas APIs para modelar e analisar códigos, compilar ferramentas e possibilitar experiências de código mais sofisticadas no Visual Studio. A nova gravação de compiladores e a criação de experiências do Visual Studio para os novos compiladores revelaram informações úteis sobre o desempenho, aplicáveis a qualquer aplicativo grande do .NET Framework ou qualquer aplicativo que processe muitos dados. Não é preciso ter conhecimento de compiladores para aproveitar as informações e os exemplos do compilador do C#.
   
  O Visual Studio usa as APIs do compilador para compilar todos os recursos do IntelliSense adorados pelos usuários, como colorização de identificadores e palavras-chave, listas de conclusão de sintaxe, soluções para erros, dicas de parâmetro, problemas de código e ações de código. O Visual Studio oferece essa ajuda enquanto os desenvolvedores estão digitando e alterando seus códigos e ele deve continuar respondendo enquanto o compilador modela continuamente a edição do desenvolvedor do código.
@@ -28,30 +29,37 @@ O .NET Framework é altamente produtivo para compilar aplicativos. Linguagens ef
  Para obter mais informações sobre compiladores do Roslyn, consulte [o SDK do .net Compiler Platform](../../csharp/roslyn-sdk/index.md).
   
 ## <a name="just-the-facts"></a>Aos fatos  
+
  Considere estes fatos ao ajustar o desempenho e criar aplicativos do .NET Framework ágeis na resposta.
   
 ### <a name="fact-1-dont-prematurely-optimize"></a>Fato 1: não otimize de forma prematura  
+
  Gravar um código mais complexo do que o necessário acarreta custos de manutenção, depuração e acabamento. Os programadores experientes têm uma compreensão intuitiva de como resolver problemas de codificação e gravar um código mais eficiente. Porém, às vezes, eles otimizam o código antes. Por exemplo, eles usam uma tabela hash quando uma simples matriz bastaria ou usam um cache complicado que pode causar perda de memória, em vez de simplesmente recalcular os valores. Mesmo que não seja um programador experiente, você deve testar o desempenho e analisar o código quando encontrar problemas.
   
 ### <a name="fact-2-if-youre-not-measuring-youre-guessing"></a>Fato 2: se você não está medindo, está adivinhando  
+
  Os perfis e as medidas não mentem. Os perfis mostram se a CPU está totalmente carregada ou se há um bloqueio na E/S do disco. Os perfis informam o tipo e a quantidade de memória que está sendo alocada e se a CPU está gastando muito tempo no [GC](../../standard/garbage-collection/index.md) (coleta de lixo).
   
  Estabeleça metas de desempenho para experiências ou cenários importantes do cliente no aplicativo e gravar testes para avaliar o desempenho. Investigue testes com falha aplicando o método científico: use perfis para orientá-lo, crie hipóteses sobre qual seria o problema e teste as hipóteses com um experimento ou uma alteração feita no código. Estabeleça medidas de desempenho de linha de base com o passar do tempo, usando testes regulares para que seja possível isolar as alterações que causam regressões no desempenho. Abordando o trabalho de desempenho de maneira rigorosa, você evitará a perda de tempo com atualizações desnecessárias de código.
   
 ### <a name="fact-3-good-tools-make-all-the-difference"></a>Fato 3: boas ferramentas fazem toda a diferença  
+
  As boas ferramentas permitem chegar rapidamente aos maiores problemas de desempenho (CPU, memória ou disco) e ajudam a alocar o código que causa esses gargalos. A Microsoft fornece uma variedade de ferramentas de desempenho, como o [Visual Studio Profiler](/visualstudio/profiling/beginners-guide-to-performance-profiling) e o [Perfview](https://www.microsoft.com/download/details.aspx?id=28567).
   
  PerfView é uma ferramenta gratuita e incrivelmente eficiente que ajuda você a se concentrar em problemas intensos, como E/S de disco, eventos de GC e memória. Capture eventos [ETW](../wcf/samples/etw-tracing.md) (Rastreamento de Eventos para Windows) relacionados ao desempenho e exiba informações por aplicativo, processo, pilha e thread com facilidade. O PerfView mostra quanto e que tipo de memória o aplicativo aloca, além de quais funções ou pilhas de chamadas contribuem para a quantidade de alocações da memória. Para obter detalhes, consulte os tópicos avançados da ajuda, as demonstrações e os vídeos incluídos com a ferramenta (como os [tutoriais do PerfView](https://channel9.msdn.com/Series/PerfView-Tutorial) no Channel 9).
   
 ### <a name="fact-4-its-all-about-allocations"></a>Fato 4: é tudo uma questão de alocação  
+
  Convém pensar que compilar um aplicativo do .NET Framework ágil na resposta é uma questão de algoritmos, como usar a classificação rápida em vez da classificação de bolhas, mas não é esse o caso. O maior fator na compilação de um aplicativo ágil na resposta é alocar memória, especialmente quando o aplicativo é muito grande ou processa grandes volumes de dados.
   
  Praticamente todo o trabalho de compilação de experiências IDE ágeis na resposta com as APIs do novo compilador envolveu evitar alocações e gerenciar estratégias de cache. Os rastreamentos do PerfView mostram que o desempenho dos novos compiladores do C# e do Visual Basic raramente está associado à CPU. Os compiladores podem estar associados à E/S na leitura de milhares ou milhões de linhas de código, de metadados ou na emissão de código gerenciado. Os atrasos do thread da interface do usuário são praticamente todos por conta da coleta de lixo. A GC do .NET Framework está totalmente ajustada para o desempenho e faz boa parte de seu trabalho junto com a execução do código do aplicativo. Porém, uma única alocação pode disparar uma coleta [gen2](../../standard/garbage-collection/fundamentals.md) cara, interrompendo todos os threads.
   
 ## <a name="common-allocations-and-examples"></a>Alocações e exemplos comuns  
+
  As expressões de exemplo nesta seção têm alocações ocultas aparentemente pequenas. Porém, se um aplicativo grande executar as expressões o número de vezes suficiente, elas poderão causar centenas de megabytes, até mesmo gigabytes, de alocações. Por exemplo, testes de um minuto que simulavam a digitação de um desenvolvedor no editor alocaram gigabytes de memória e permitiram que a equipe de desenvolvimento se concentrasse nos cenários de digitação.
   
 ### <a name="boxing"></a>Conversão boxing  
+
  A [conversão boxing](../../csharp/programming-guide/types/boxing-and-unboxing.md) ocorre quando tipos de valor, que normalmente residem na pilha ou nas estruturas de dados, são encapsulados em um objeto. Ou seja, você aloca um objeto para manter os dados e retorna um ponteiro para o objeto. Às vezes, o .NET Framework realiza a conversão boxing de valores por conta da assinatura de um método ou do tipo de local de armazenamento. A disposição de um tipo de valor em um objeto causa alocação da memória. Muitas operações de conversão boxing podem proporcionar megabytes ou gigabytes de alocações no aplicativo, o que significa que o aplicativo causará mais GCs. O .NET Framework e os compiladores de linguagem evitam a conversão boxing sempre que possível, mas às vezes ela acontece quando você menos espera.
   
  Para ver a conversão boxing no PerfView, abra um rastreamento e observe GC Heap Alloc Stacks abaixo do nome de processo do aplicativo (lembre-se de que o PerfView relata todos os processos). Caso veja tipos como <xref:System.Int32?displayProperty=nameWithType> e <xref:System.Char?displayProperty=nameWithType> sob as alocações, você está realizando a conversão boxing dos tipos de valor. A escolha de um desses tipos mostrará as pilhas e as funções nas quais a conversão boxing é realizada.
@@ -132,6 +140,7 @@ public class BoxingExample
  Mantenha o fator do primeiro desempenho em mente (ou seja, não otimize antes) e não comece a gravar novamente todo o código dessa forma. Esteja atento aos custos da conversão boxing, mas só altere o código depois de criar o perfil do aplicativo e encontrar os pontos de acesso.
   
 ### <a name="strings"></a>Cadeias de caracteres  
+
  As manipulações da cadeia de caracteres são as maiores responsáveis pelas alocações e costumam aparecer no PerfView entre as cinco primeiras alocações. Os programas usam cadeias de caracteres na serialização, em JSON e nas APIs REST. É possível usar cadeias de caracteres como constantes programáticas na interoperação com sistemas quando não é possível usar tipos de enumeração. Quando a criação de perfis mostrar que as cadeias de caracteres estão afetando muito o desempenho, procure chamadas para métodos <xref:System.String> como <xref:System.String.Format%2A>, <xref:System.String.Concat%2A>, <xref:System.String.Split%2A>, <xref:System.String.Join%2A>, <xref:System.String.Substring%2A> e assim por diante. O uso de <xref:System.Text.StringBuilder> para evitar o custo com a criação de uma cadeia de caracteres com base em muitas peças ajuda, mas mesmo a alocação do objeto <xref:System.Text.StringBuilder> pode se tornar um gargalo que precisa ser gerenciado.
   
  **Exemplo 3: operações da cadeia de caracteres**  
@@ -278,11 +287,12 @@ private static string GetStringAndReleaseBuilder(StringBuilder sb)
  Essa estratégia de cache simples respeita o bom design de cache porque tem um limite de tamanho. Porém, há mais código agora do que havia originalmente, o que significa mais custos com manutenção. Você só deverá adotar a estratégia de cache se tiver encontrado um problema de desempenho e o PerfView tiver mostrado que as alocações de <xref:System.Text.StringBuilder> são um fator significativo.
   
 ### <a name="linq-and-lambdas"></a>LINQ e lambdas  
-A consulta integrada à linguagem (LINQ), em conjunto com expressões lambda, é um exemplo de um recurso de produtividade. No entanto, seu uso pode ter um impacto significativo no desempenho ao longo do tempo e talvez você ache necessário reescrever seu código.
+
+A consulta de Language-Integrated (LINQ), em conjunto com expressões lambda, é um exemplo de um recurso de produtividade. No entanto, seu uso pode ter um impacto significativo no desempenho ao longo do tempo e talvez você ache necessário reescrever seu código.
   
  **Exemplo 5: lambdas, lista \<T> e IEnumerable\<T>**  
   
- Esse exemplo usa [o LINQ e um código de estilo funcional](https://docs.microsoft.com/archive/blogs/charlie/anders-hejlsberg-on-linq-and-functional-programming) para localizar um símbolo no modelo do compilador, considerando uma cadeia de caracteres de nome:  
+ Esse exemplo usa [o LINQ e um código de estilo funcional](/archive/blogs/charlie/anders-hejlsberg-on-linq-and-functional-programming) para localizar um símbolo no modelo do compilador, considerando uma cadeia de caracteres de nome:  
   
 ```csharp  
 class Symbol {  
@@ -306,7 +316,7 @@ Func<Symbol, bool> predicate = s => s.Name == name;
      return symbols.FirstOrDefault(predicate);  
 ```  
   
- Na primeira linha, a [expressão lambda](../../csharp/language-reference/operators/lambda-expressions.md) `s => s.Name == name` [fecha](https://docs.microsoft.com/archive/blogs/ericlippert/what-are-closures) a variável local `name`. Isso significa que, além de alocar um objeto para o [representante](../../csharp/language-reference/builtin-types/reference-types.md#the-delegate-type) que `predicate` mantém, o código aloca uma classe estática para manter o ambiente que captura o valor `name`. O compilador gera um código semelhante ao seguinte:  
+ Na primeira linha, a [expressão lambda](../../csharp/language-reference/operators/lambda-expressions.md) `s => s.Name == name` [fecha](/archive/blogs/ericlippert/what-are-closures) a variável local `name`. Isso significa que, além de alocar um objeto para o [representante](../../csharp/language-reference/builtin-types/reference-types.md#the-delegate-type) que `predicate` mantém, o código aloca uma classe estática para manter o ambiente que captura o valor `name`. O compilador gera um código semelhante ao seguinte:  
   
 ```csharp  
 // Compiler-generated class to hold environment state for lambda  
@@ -439,9 +449,10 @@ class Compilation { /*...*/
  Esse código altera o tipo de `cachedResult` para `Task<SyntaxTree>` e emprega uma função auxiliar `async` que mantém o código original de `GetSyntaxTreeAsync()`. `GetSyntaxTreeAsync()` agora usa o [operador de união nula](../../csharp/language-reference/operators/null-coalescing-operator.md) para retornar `cachedResult`, caso ele não seja nulo. Se `cachedResult` for nulo, `GetSyntaxTreeAsync()` chamará `GetSyntaxTreeUncachedAsync()` e armazenará o resultado em cache. `GetSyntaxTreeAsync()` não aguarda a chamada para `GetSyntaxTreeUncachedAsync()` como o código faria normalmente. Não usar a espera significa que, quando `GetSyntaxTreeUncachedAsync()` retorna seu objeto <xref:System.Threading.Tasks.Task>, `GetSyntaxTreeAsync()` retorna imediatamente o <xref:System.Threading.Tasks.Task>. Agora, o resultado armazenado em cache é um <xref:System.Threading.Tasks.Task>. Assim, não há alocações para retornar o resultado armazenado em cache.
   
 ### <a name="additional-considerations"></a>Considerações adicionais  
+
  Aqui estão mais alguns pontos sobre possíveis problemas em aplicativos grandes ou em aplicativos que processam muitos dados.
   
- **OldValues**  
+ **Dicionários**  
   
  Os dicionários são amplamente usados em muitos programas, e bons dicionários são muito práticos e naturalmente eficientes. Porém, eles costumam ser usados incorretamente. No Visual Studio e nos novos compiladores, a análise mostra que muitos dos dicionários apresentavam um único elemento ou estavam vazios. Um <xref:System.Collections.Generic.Dictionary%602> vazio tem dez campos e ocupa 48 bytes no heap em um computador x86. Os dicionários são ótimos quando você precisa de um mapeamento ou de uma estrutura de dados associativa com pesquisa constante. No entanto, quando tem apenas alguns elementos, você perde muito espaço usando um dicionário. Em vez disso, por exemplo, você pode analisar iterativamente um `List<KeyValuePair\<K,V>>` com a mesma rapidez. Se você usa um dicionário apenas para carregá-lo com dados e, em seguida, lê-lo (um padrão muito comum), o uso de uma matriz classificada com uma pesquisa N(log(N)) pode ter praticamente a mesma velocidade, dependendo do número de elementos que você estiver usando.
   
@@ -463,12 +474,12 @@ class Compilation { /*...*/
   
 - É tudo uma questão de alocação – é onde a equipe da plataforma do compilador passa boa parte do tempo melhorando o desempenho dos novos compiladores.
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Vídeo de apresentação deste tópico](https://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/DEV-B333)
 - [Guia do iniciante à criação de perfil do desempenho](/visualstudio/profiling/beginners-guide-to-performance-profiling)
 - [Desempenho](index.md)
-- [Dicas de desempenho do .NET](https://docs.microsoft.com/previous-versions/dotnet/articles/ms973839(v%3dmsdn.10))
+- [Dicas de desempenho do .NET](/previous-versions/dotnet/articles/ms973839(v=msdn.10))
 - [Tutoriais do PerfView no Channel 9](https://channel9.msdn.com/Series/PerfView-Tutorial)
 - [O SDK do .NET Compiler Platform](../../csharp/roslyn-sdk/index.md)
 - [repositório dotnet/Roslyn no GitHub](https://github.com/dotnet/roslyn)

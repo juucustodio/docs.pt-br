@@ -1,16 +1,18 @@
 ---
+description: 'Saiba mais sobre: repositórios de instância'
 title: Armazenamentos de instância
 ms.date: 03/30/2017
 ms.assetid: f2629668-0923-4987-b943-67477131c1e0
-ms.openlocfilehash: 69b50942c36406bd29147d243e0501b8048d56dc
-ms.sourcegitcommit: 32a575bf4adccc901f00e264f92b759ced633379
+ms.openlocfilehash: 4d2f7c72d744d2de87a8c2af7b89090b4261de83
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74802551"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631171"
 ---
 # <a name="instance-stores"></a>Armazenamentos de instância
-Um armazenamento de instância é um contêiner lógico instâncias. É o local onde os dados e os metadados de instância são armazenados. Um armazenamento de instância não implica o armazenamento físico dedicado. Um armazenamento de instância pode conter informações durável em uma base de dados SQL Server ou em uma informações de estado não durável na memória. Os vem de [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] com a instância Store de fluxo de trabalho SQL, que é uma implementação concreta de um armazenamento de instância que permite que os fluxos de trabalho persistam dados e metadados de instância em uma base de dados SQL Server 2005 ou SQL Server 2008. Além a tela de aplicativo Windows Server também fornece uma implementação concreta de um armazenamento de instância. Para obter mais informações, consulte [provedores de armazenamento, consulta e controle de instância do Windows Server app Fabric](https://docs.microsoft.com/previous-versions/appfabric/ff383417(v=azure.10)).  
+
+Um armazenamento de instância é um contêiner lógico instâncias. É o local onde os dados e os metadados de instância são armazenados. Um armazenamento de instância não implica o armazenamento físico dedicado. Um armazenamento de instância pode conter informações durável em uma base de dados SQL Server ou em uma informações de estado não durável na memória. Os vem de [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] com a instância Store de fluxo de trabalho SQL, que é uma implementação concreta de um armazenamento de instância que permite que os fluxos de trabalho persistam dados e metadados de instância em uma base de dados SQL Server 2005 ou SQL Server 2008. Além a tela de aplicativo Windows Server também fornece uma implementação concreta de um armazenamento de instância. Para obter mais informações, consulte [provedores de armazenamento, consulta e controle de instância do Windows Server app Fabric](/previous-versions/appfabric/ff383417(v=azure.10)).  
   
  Persistência API é a interface entre um host e um armazenamento de instância que permite que o host enviar solicitações de comando (por exemplo, <xref:System.Activities.DurableInstancing.LoadWorkflowCommand> e <xref:System.Activities.DurableInstancing.SaveWorkflowCommand>) para o armazenamento de instância. A implementação concreta deste API é chamado um provedor de persistência. O provedor de persistência recebe solicitações de um host e altera o armazenamento de instância.  
   
@@ -24,8 +26,8 @@ Um armazenamento de instância é um contêiner lógico instâncias. É o local 
   
 1. Obtenha um **InstanceStore** de um provedor de persistência.  
 
-2. Obtenha o identificador para uma instância chamando o método <xref:System.Runtime.DurableInstancing.InstanceStore.CreateInstanceHandle%2A> no **InstanceStore**.  
+2. Obtenha o identificador para uma instância chamando o <xref:System.Runtime.DurableInstancing.InstanceStore.CreateInstanceHandle%2A> método no **InstanceStore**.  
   
-3. Invoque comandos em relação ao identificador de instância chamando o método <xref:System.Runtime.DurableInstancing.InstanceStore.Execute%2A> no **InstanceStore**.  
+3. Invoque comandos em relação ao identificador de instância chamando o <xref:System.Runtime.DurableInstancing.InstanceStore.Execute%2A> método no **InstanceStore**.  
   
-4. Examine o <xref:System.Runtime.DurableInstancing.InstanceView> retornado pelo **InstanceStore. Execute** para determinar os resultados dos comandos.
+4. Examine o <xref:System.Runtime.DurableInstancing.InstanceView> retornado por **InstanceStore.Exegraciosos** para determinar os resultados dos comandos.

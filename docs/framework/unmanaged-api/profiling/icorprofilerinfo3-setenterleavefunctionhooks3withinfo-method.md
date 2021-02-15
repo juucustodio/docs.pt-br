@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo3:: SetEnterLeaveFunctionHooks3WithInfo'
 title: Método ICorProfilerInfo3::SetEnterLeaveFunctionHooks3WithInfo
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: ca8ea534-e441-47b8-be85-466410988c0a
 topic_type:
 - apiref
-ms.openlocfilehash: d40cb424306535cc502d930dd61e6a1e254667da
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 15f6696635172972b09e68beeae13a7d6a8e195a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84496172"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99687006"
 ---
 # <a name="icorprofilerinfo3setenterleavefunctionhooks3withinfo-method"></a>Método ICorProfilerInfo3::SetEnterLeaveFunctionHooks3WithInfo
+
 Especifica as funções implementadas pelo criador de perfil que serão chamadas nos ganchos [FunctionEnter3WithInfo](functionenter3withinfo-function.md), [FunctionLeave3WithInfo](functionleave3withinfo-function.md)e [FunctionTailcall3WithInfo](functiontailcall3withinfo-function.md) das funções gerenciadas.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,6 +37,7 @@ HRESULT SetEnterLeaveFunctionHooks3WithInfo(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pFuncEnter3`  
  no Um ponteiro para a implementação a ser usado como o `FunctionEnter3WithInfo` retorno de chamada.  
   
@@ -45,6 +48,7 @@ HRESULT SetEnterLeaveFunctionHooks3WithInfo(
  no Um ponteiro para a implementação a ser usado como o `FunctionTailcall3WithInfo` retorno de chamada.  
   
 ## <a name="remarks"></a>Comentários  
+
  Os ganchos [FunctionEnter3WithInfo](functionenter3withinfo-function.md), [FunctionLeave3WithInfo](functionleave3withinfo-function.md)e [FunctionTailcall3WithInfo](functiontailcall3withinfo-function.md) fornecem inspeção de quadro de pilha e de argumentos. Para acessar essas informações, os `COR_PRF_ENABLE_FUNCTION_ARGS` `COR_PRF_ENABLE_FUNCTION_RETVAL` sinalizadores, e/ou `COR_PRF_ENABLE_FRAME_INFO` devem ser definidos. O criador de perfil pode usar o método [ICorProfilerInfo:: SetEventMask](icorprofilerinfo-seteventmask-method.md) para definir os sinalizadores de evento e, em seguida, usar o `SetEnterLeaveFunctionHooks3WithInfo` método para registrar sua implementação dessa função.  
   
  Somente um conjunto de retornos de chamada pode estar ativo por vez e a versão mais recente tem precedência. Portanto, se um criador de perfil chamar [SetEnterLeaveFunctionHooks2](icorprofilerinfo2-setenterleavefunctionhooks2-method.md) e `SetEnterLeaveFunctionHooks3WithInfo` , `SetEnterLeaveFunctionHooks3WithInfo` será usado.  
@@ -52,6 +56,7 @@ HRESULT SetEnterLeaveFunctionHooks3WithInfo(
  O `SetEnterLeaveFunctionHooks3WithInfo` método pode ser chamado somente do retorno de chamada [ICorProfilerCallback:: Initialize](icorprofilercallback-initialize-method.md) do criador de perfil.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -60,7 +65,7 @@ HRESULT SetEnterLeaveFunctionHooks3WithInfo(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [SetEnterLeaveFunctionHooks3](icorprofilerinfo3-setenterleavefunctionhooks3-method.md)
 - [FunctionEnter3](functionenter3-function.md)

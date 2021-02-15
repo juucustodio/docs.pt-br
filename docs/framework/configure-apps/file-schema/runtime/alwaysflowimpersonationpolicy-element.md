@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <alwaysFlowImpersonationPolicy> elemento'
 title: Elemento <alwaysFlowImpersonationPolicy>
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,21 +9,22 @@ helpviewer_keywords:
 - alwaysFlowImpersonationPolicy element
 - <alwaysFlowImpersonationPolicy> element
 ms.assetid: ee622801-9e46-470b-85ab-88c4b1dd2ee1
-ms.openlocfilehash: 7c8ac37932a528ff0f000cbaab49124dec51b88c
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 5ee8e763eddb810143522ce9e6df780ee77c26c3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79154477"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99719364"
 ---
 # <a name="alwaysflowimpersonationpolicy-element"></a>Elemento \<alwaysFlowImpersonationPolicy>
+
 Especifica que a identidade do Windows sempre fluirá por pontos assíncronos, independentemente de como a representação tenha sido executada.  
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<alwaysFlowImpersonationPolicy>**\  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <alwaysFlowImpersonationPolicy
@@ -30,6 +32,7 @@ Especifica que a identidade do Windows sempre fluirá por pontos assíncronos, i
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -46,6 +49,7 @@ Especifica que a identidade do Windows sempre fluirá por pontos assíncronos, i
 |`true`|A identidade do Windows sempre flui entre pontos assíncronos, independentemente de como a representação foi executada.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -56,6 +60,7 @@ Especifica que a identidade do Windows sempre fluirá por pontos assíncronos, i
 |`runtime`|Contém informações sobre associação do assembly e coleta de lixo.|  
   
 ## <a name="remarks"></a>Comentários  
+
  No .NET Framework versões 1,0 e 1,1, a identidade do Windows não flui entre pontos assíncronos. No .NET Framework versão 2,0, há um <xref:System.Threading.ExecutionContext> objeto que contém informações sobre o thread em execução no momento e o flui entre pontos assíncronos dentro de um domínio de aplicativo. O <xref:System.Security.Principal.WindowsIdentity> também flui como parte das informações que fluem pelos pontos assíncronos, desde que a representação tenha sido obtida usando métodos gerenciados, como <xref:System.Security.Principal.WindowsIdentity.Impersonate%2A> e não por outros meios, como invocação de plataforma para métodos nativos. Esse elemento é usado para especificar que a identidade do Windows flua entre pontos assíncronos, independentemente de como a representação foi obtida.  
   
  Você pode alterar esse comportamento padrão de duas maneiras:  
@@ -69,11 +74,12 @@ Especifica que a identidade do Windows sempre fluirá por pontos assíncronos, i
      Se uma interface de hospedagem não gerenciada (em vez de um executável gerenciado simples) for usada para carregar o CLR, você poderá especificar um sinalizador especial na chamada para a função de [função CorBindToRuntimeEx](../../../unmanaged-api/hosting/corbindtoruntimeex-function.md) . Para habilitar o modo de compatibilidade para todo o processo, defina o `flags` parâmetro para a [função CorBindToRuntimeEx](../../../unmanaged-api/hosting/corbindtoruntimeex-function.md) como `STARTUP_ALWAYSFLOW_IMPERSONATION` .  
   
 ## <a name="configuration-file"></a>Arquivo de configuração  
+
  Em um aplicativo .NET Framework, esse elemento pode ser usado somente no arquivo de configuração do aplicativo.  
   
- Para um aplicativo ASP.NET, o fluxo de representação pode ser configurado no arquivo Aspnet. config encontrado no \<Windows Folder> diretório \Microsoft.NET\Framework\vx.x.xxxx  
+ Para um aplicativo ASP.NET, o fluxo de representação pode ser configurado no arquivo de aspnet.config encontrado no \<Windows Folder> diretório \Microsoft.NET\Framework\vx.x.xxxx.  
   
- O ASP.NET, por padrão, desabilita o fluxo de representação no arquivo Aspnet. config usando as seguintes definições de configuração:  
+ O ASP.NET, por padrão, desabilita o fluxo de representação no arquivo de aspnet.config usando as seguintes definições de configuração:  
   
 ```xml
 <configuration>  
@@ -96,6 +102,7 @@ Especifica que a identidade do Windows sempre fluirá por pontos assíncronos, i
 ```  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir mostra como especificar que a identidade do Windows flui entre pontos assíncronos, mesmo quando a representação é obtida por meio de meios diferentes dos métodos gerenciados.  
   
 ```xml  
@@ -106,8 +113,8 @@ Especifica que a identidade do Windows sempre fluirá por pontos assíncronos, i
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações do runtime](index.md)
-- [Esquema de arquivos de configuração](../index.md)
-- [\<legacyImpersonationPolicy>Elementos](legacyimpersonationpolicy-element.md)
+- [Esquema do arquivo de configuração](../index.md)
+- [\<legacyImpersonationPolicy> Elementos](legacyimpersonationpolicy-element.md)

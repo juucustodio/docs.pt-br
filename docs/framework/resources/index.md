@@ -12,12 +12,12 @@ helpviewer_keywords:
 - packaging application resources
 - localizing resources
 ms.assetid: 8ad495d4-2941-40cf-bf64-e82e85825890
-ms.openlocfilehash: 105325170389917bfb2022314791aa1ed5923db3
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: 3941c912348a652ddcbaea517cf7626c2a8f88e3
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86865158"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90535564"
 ---
 # <a name="resources-in-net-apps"></a>Recursos em aplicativos .NET
 
@@ -25,7 +25,7 @@ Quase todos os aplicativos de qualidade de produção precisam usar recursos. Um
 
 O .NET Framework e o .NET Core fornecem suporte abrangente para a criação e a localização de recursos. Além disso, o .NET dá suporte a um modelo simples de empacotamento e implantação de recursos localizados.
 
-Para saber mais sobre recursos no ASP.NET, confira [Visão Geral sobre Recursos de Página da Web ASP.NET](https://docs.microsoft.com/previous-versions/aspnet/ms227427(v=vs.100)).
+Para saber mais sobre recursos no ASP.NET, confira [Visão Geral sobre Recursos de Página da Web ASP.NET](/previous-versions/aspnet/ms227427(v=vs.100)).
 
 ## <a name="create-and-localize-resources"></a>Criar e localizar recursos
 
@@ -63,7 +63,7 @@ Você pode recuperar recursos para a cultura da interface do usuário atual ou p
 
 - A classe <xref:System.Resources.ResXResourceSet>, que permite recuperar todos os itens em um arquivo de recurso XML na memória.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.Globalization.CultureInfo>
 - <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType>

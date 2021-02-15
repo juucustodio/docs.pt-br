@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugModule2'
 title: Interface ICorDebugModule2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0847e64f-fdbe-4c96-8168-da20fdc84d80
 topic_type:
 - apiref
-ms.openlocfilehash: 7b98302985d9d54599ea8ea2e01dc2503c468d58
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 28de1f0d3411218ac92991d4fceda0612c8199bf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83210222"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99659927"
 ---
 # <a name="icordebugmodule2-interface"></a>Interface ICorDebugModule2
 
@@ -41,6 +42,7 @@ Serve como uma extensão lógica para a interface ICorDebugModule.
 > Esta interface não dá suporte para chamada remota, seja entre computadores ou processos cruzados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -49,6 +51,6 @@ Serve como uma extensão lógica para a interface ICorDebugModule.
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

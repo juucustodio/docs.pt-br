@@ -1,15 +1,17 @@
 ---
-title: Como implementar um aplicativo cliente que utiliza o proxy de descoberta para encontrar um serviço
+description: 'Saiba mais sobre: como implementar um aplicativo cliente que usa o proxy de descoberta para encontrar um serviço'
+title: 'Como: implementar um aplicativo cliente que utiliza o proxy de descoberta para encontrar um serviço'
 ms.date: 03/30/2017
 ms.assetid: 62b41a75-cf40-4c52-a842-a5f1c70e247f
-ms.openlocfilehash: a1e770531a196d73dfc7d93bf70ed432df343c88
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 316e7f446e497cb1d3de806043c7ba4f9a8659d9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84587008"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743612"
 ---
-# <a name="how-to-implement-a-client-application-that-uses-the-discovery-proxy-to-find-a-service"></a>Como implementar um aplicativo cliente que utiliza o proxy de descoberta para encontrar um serviço
+# <a name="how-to-implement-a-client-application-that-uses-the-discovery-proxy-to-find-a-service"></a>Como: implementar um aplicativo cliente que utiliza o proxy de descoberta para encontrar um serviço
+
 Este tópico é o terceiro de três tópicos que discute como implementar um proxy de descoberta. No tópico anterior, [como implementar um serviço detectável que se registra com o proxy de descoberta](discoverable-service-that-registers-with-the-discovery-proxy.md), você implementou um serviço WCF que se registra com o proxy de descoberta. Neste tópico, você cria um cliente WCF que usa o proxy de descoberta para localizar o serviço WCF.  
   
 ### <a name="implement-the-client"></a>Implementar o cliente  
@@ -25,7 +27,7 @@ Este tópico é o terceiro de três tópicos que discute como implementar um pro
 3. Adicione o GeneratedClient.cs encontrado na parte inferior deste tópico ao projeto.  
   
     > [!NOTE]
-    > Normalmente, esse arquivo é gerado usando uma ferramenta como SvcUtil. exe. Ele é fornecido neste tópico para simplificar a tarefa.  
+    > Normalmente, esse arquivo é gerado usando uma ferramenta como Svcutil.exe. Ele é fornecido neste tópico para simplificar a tarefa.  
   
 4. Abra o arquivo Program.cs e adicione o método a seguir. Esse método usa um endereço de ponto de extremidade e o usa para inicializar o cliente de serviço (proxy).  
   
@@ -104,6 +106,7 @@ Este tópico é o terceiro de três tópicos que discute como implementar um pro
  Você concluiu a implementação do aplicativo cliente. Continue em [como: testar o proxy de descoberta](how-to-test-the-discovery-proxy.md).  
   
 ## <a name="example"></a>Exemplo  
+
  Esta é a listagem de código completa para este tópico.  
   
 ```csharp  
@@ -284,5 +287,5 @@ namespace Microsoft.Samples.Discovery
 ## <a name="see-also"></a>Consulte também
 
 - [Visão geral de descoberta do WCF](wcf-discovery-overview.md)
-- [Como implementar um proxy de descoberta](how-to-implement-a-discovery-proxy.md)
-- [Como implementar um serviço de descoberta que registra usando o proxy de descoberta](discoverable-service-that-registers-with-the-discovery-proxy.md)
+- [Como: implementar um proxy de descoberta](how-to-implement-a-discovery-proxy.md)
+- [Como: implementar um serviço de descoberta que registra usando o proxy de descoberta](discoverable-service-that-registers-with-the-discovery-proxy.md)

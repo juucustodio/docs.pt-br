@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função GetRequestedRuntimeVersion'
 title: Função GetRequestedRuntimeVersion
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 82f596a4-483d-4509-b0c5-a84c53c3da1b
 topic_type:
 - apiref
-ms.openlocfilehash: b7a38d28b55842e9358bd9c7019b84c529526613
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 836cc4b875ddc427c6779950f5b68d2df8b6ef75
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83617159"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785270"
 ---
 # <a name="getrequestedruntimeversion-function"></a>Função GetRequestedRuntimeVersion
+
 Obtém o número de versão do Common Language Runtime (CLR) solicitado pelo aplicativo especificado. Se essa versão não estiver instalada, o obterá a versão mais recente instalada antes da versão solicitada.  
   
  Essa função foi preterida no .NET Framework 4.  
@@ -39,6 +41,7 @@ HRESULT GetRequestedRuntimeVersion (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pExe`  
  no O nome do aplicativo.  
   
@@ -52,6 +55,7 @@ HRESULT GetRequestedRuntimeVersion (
  fora Um ponteiro para o comprimento da cadeia de caracteres do número de versão.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  Esse método retorna códigos de erro padrão de Component Object Model (COM), conforme definido no WinError. h, além dos valores a seguir.  
   
 |Código de retorno|Descrição|  
@@ -61,15 +65,16 @@ HRESULT GetRequestedRuntimeVersion (
 |E_POINTER|`pdwLength` é nulo.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** MSCorEE. dll  
+ **Biblioteca:** MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Função GetRequestedRuntimeInfo](getrequestedruntimeinfo-function.md)
 - [Função GetVersionFromProcess](getversionfromprocess-function.md)

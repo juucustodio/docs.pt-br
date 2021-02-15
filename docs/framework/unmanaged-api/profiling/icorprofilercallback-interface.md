@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorProfilerCallback'
 title: Interface ICorProfilerCallback
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4bae06f7-94d7-4ba8-b250-648b2da78674
 topic_type:
 - apiref
-ms.openlocfilehash: 6a53b9b1b061c2ca07a469abc78c07ed9e710069
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 5bc59839bfe352fb7d67688dcd7c8fe0d6c97eaf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500085"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99705896"
 ---
 # <a name="icorprofilercallback-interface"></a>Interface ICorProfilerCallback
+
 Fornece métodos que são usados pelo Common Language Runtime (CLR) para notificar um criador de perfil de código quando os eventos para os quais o criador de perfil assinou ocorreram.  
   
 ## <a name="methods"></a>Métodos  
@@ -60,8 +62,8 @@ Fornece métodos que são usados pelo Common Language Runtime (CLR) para notific
 |[Método ExceptionUnwindFunctionLeave](icorprofilercallback-exceptionunwindfunctionleave-method.md)|Notifica o criador de perfil de que a fase de desenrolamento da manipulação de exceções concluiu o desenrolamento de uma função.|  
 |[Método FunctionUnloadStarted](icorprofilercallback-functionunloadstarted-method.md)|Notifica o criador de perfil de que o tempo de execução começou a descarregar uma função.|  
 |[Método Initialize](icorprofilercallback-initialize-method.md)|Chamado para inicializar o criador de perfil sempre que um novo aplicativo CLR é iniciado.|  
-|[Método JITCachedFunctionSearchFinished](icorprofilercallback-jitcachedfunctionsearchfinished-method.md)|Notifica o criador de perfil de que uma pesquisa foi concluída para uma função que foi compilada anteriormente usando NGen. exe.|  
-|[Método JITCachedFunctionSearchStarted](icorprofilercallback-jitcachedfunctionsearchstarted-method.md)|Notifica o criador de perfil de que uma pesquisa foi iniciada para uma função que foi compilada anteriormente usando NGen. exe.|  
+|[Método JITCachedFunctionSearchFinished](icorprofilercallback-jitcachedfunctionsearchfinished-method.md)|Notifica o criador de perfil de que uma pesquisa foi concluída para uma função que foi compilada anteriormente usando NGen.exe.|  
+|[Método JITCachedFunctionSearchStarted](icorprofilercallback-jitcachedfunctionsearchstarted-method.md)|Notifica o criador de perfil de que uma pesquisa foi iniciada para uma função que foi compilada anteriormente usando NGen.exe.|  
 |[Método JITCompilationFinished](icorprofilercallback-jitcompilationfinished-method.md)|Notifica o criador de perfil de que o compilador JIT concluiu a compilação de uma função.|  
 |[Método JITCompilationStarted](icorprofilercallback-jitcompilationstarted-method.md)|Notifica o criador de perfil de que o compilador JIT (just-in-time) começou a compilar uma função.|  
 |[Método JITFunctionPitched](icorprofilercallback-jitfunctionpitched-method.md)|Notifica o criador de perfil de que uma função que foi compilada por JIT foi removida da memória.|  
@@ -99,6 +101,7 @@ Fornece métodos que são usados pelo Common Language Runtime (CLR) para notific
 |[Método UnmanagedToManagedTransition](icorprofilercallback-unmanagedtomanagedtransition-method.md)|Notifica o criador de perfil de que uma transição de código não gerenciado para código gerenciado ocorreu.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O CLR chama um método na `ICorProfilerCallback` interface (ou [ICorProfilerCallback2](icorprofilercallback2-interface.md)) para notificar o criador de perfil quando um evento, ao qual o criador de perfil assinou, ocorre. Essa é a interface de retorno de chamada principal por meio da qual o CLR se comunica com o criador de perfil de código.  
   
  Um criador de perfil de código deve implementar os métodos da `ICorProfilerCallback` interface. Para o .NET Framework versão 2,0 ou posterior, o criador de perfil também deve implementar os `ICorProfilerCallback2` métodos. Cada implementação de método deve retornar um HRESULT que tenha um valor de S_OK em caso de êxito ou E_FAIL em caso de falha. Atualmente, o CLR ignora o HRESULT que é retornado por cada retorno de chamada, exceto [ICorProfilerCallback:: Objectreferenciations](icorprofilercallback-objectreferences-method.md).  
@@ -109,6 +112,7 @@ Fornece métodos que são usados pelo Common Language Runtime (CLR) para notific
 > O criador de perfil registra um único objeto COM. Se o criador de perfil estiver direcionando para o .NET Framework versão 1,0 ou 1,1, esse objeto COM precisará implementar apenas os métodos de `ICorProfilerCallback` . Se ele estiver direcionando .NET Framework versão 2,0 ou posterior, o objeto COM também deverá implementar os métodos de `ICorProfilerCallback2` .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -117,7 +121,7 @@ Fornece métodos que são usados pelo Common Language Runtime (CLR) para notific
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criação de perfil de interfaces](profiling-interfaces.md)
 - [Interface ICorProfilerCallback2](icorprofilercallback2-interface.md)

@@ -1,22 +1,24 @@
 ---
+description: 'Saiba mais sobre: Fine-Tuning seu aplicativo assíncrono (Visual Basic)'
 title: Ajustando seu aplicativo Async
 ms.date: 07/20/2015
 ms.assetid: 4c3e7997-a95f-4fbe-a6ac-60ba042d30b9
-ms.openlocfilehash: e33f86177a3680d41ec04842dbc120713a48f61c
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 1e31ffdee4d2af9379e8073010ed2b1925023e43
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396643"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100464411"
 ---
 # <a name="fine-tuning-your-async-application-visual-basic"></a>Ajustando seu aplicativo assíncrono (Visual Basic)
+
 É possível adicionar flexibilidade e precisão a seus aplicativos assíncronos usando os métodos e propriedades que o tipo <xref:System.Threading.Tasks.Task> disponibiliza. Os tópicos nesta seção mostram exemplos que usam <xref:System.Threading.CancellationToken> e métodos de `Task` importantes como <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> e <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType>.  
   
  Usando `WhenAny` e `WhenAll`, é possível, com facilidade, iniciar várias tarefas e aguardar sua conclusão monitorando uma única tarefa.  
   
 - `WhenAny` retorna uma tarefa que é concluída quando qualquer tarefa em uma coleção for concluída.  
   
-     Para obter exemplos que usam o `WhenAny` , consulte [Cancelar tarefas assíncronas restantes após uma conclusão (Visual Basic)](cancel-remaining-async-tasks-after-one-is-complete.md)e [iniciar várias tarefas assíncronas e processá-las à medida que elas forem concluídas (Visual Basic)](start-multiple-async-tasks-and-process-them-as-they-complete.md).  
+     Para obter exemplos que usam o `WhenAny` , consulte  [Cancelar tarefas assíncronas restantes após uma conclusão (Visual Basic)](cancel-remaining-async-tasks-after-one-is-complete.md)e [iniciar várias tarefas assíncronas e processá-las à medida que elas forem concluídas (Visual Basic)](start-multiple-async-tasks-and-process-them-as-they-complete.md).  
   
 - `WhenAll` retorna uma tarefa que é concluída quando todas as tarefas em uma coleção forem concluídas.  
   
@@ -41,6 +43,6 @@ ms.locfileid: "84396643"
   
  É possível baixar projetos completos do WPF (Windows Presentation Foundation) em [Exemplo assíncrono: ajuste fino de seu aplicativo](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Programação assíncrona com Async e Await (Visual Basic)](index.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Visual Basic convenções de nomenclatura'
 title: Convenções de nomenclatura
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,15 +11,16 @@ helpviewer_keywords:
 - names [Visual Basic], naming conventions
 - naming conventions [Visual Basic], classes
 ms.assetid: 164949a4-2a7c-4736-9d82-9c3078e2e56c
-ms.openlocfilehash: 20531e379ddf9b93a278795e9b3c0eb91b47e077
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 058d3b06ca1da71c4d8993c6bd451531ec758dbd
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84398338"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100461002"
 ---
 # <a name="visual-basic-naming-conventions"></a>Convenções de nomenclatura do Visual Basic
-Quando você nomear um elemento em seu aplicativo Visual Basic, o primeiro caractere desse nome deverá ser um caractere alfabético ou um sublinhado. Observe, no entanto, que os nomes que começam com um sublinhado não são compatíveis com a [independência de idioma e com os componentes independentes de linguagem](../../../standard/language-independence-and-language-independent-components.md) (CLS).  
+
+Quando você nomear um elemento em seu aplicativo Visual Basic, o primeiro caractere desse nome deverá ser um caractere alfabético ou um sublinhado. No entanto, observe que os nomes que começam com um sublinhado não são compatíveis com a [independência de idioma e os componentes de Language-Independent](../../../standard/language-independence-and-language-independent-components.md) (CLS).  
   
  As sugestões a seguir se aplicam à nomenclatura.  
   
@@ -40,10 +42,10 @@ Quando você nomear um elemento em seu aplicativo Visual Basic, o primeiro carac
   
 - Evite usar nomes em um escopo interno que sejam iguais aos nomes em um escopo externo. Os erros poderão ocorrer se a variável incorreta for acessada. Se ocorrer um conflito entre uma variável e a palavra-chave de mesmo nome, você deverá identificar a palavra-chave precedendo-a à biblioteca de tipos apropriada. Por exemplo, se você tiver uma variável chamada `Date` , poderá usar a função intrínseca `Date` somente chamando <xref:System.DateTime.Date%2A?displayProperty=nameWithType> .  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Palavras-chave como nomes de elemento no código](keywords-as-element-names-in-code.md)
 - [Me, My, MyBase e MyClass](me-my-mybase-and-myclass.md)
 - [Nomes de elementos declarados](../language-features/declared-elements/declared-element-names.md)
 - [Estrutura do programa e convenções de código](program-structure-and-code-conventions.md)
-- [Referência de linguagem de Visual Basic](../../language-reference/index.md)
+- [Referência da linguagem Visual Basic](../../language-reference/index.md)

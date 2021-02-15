@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerObjectEnum:: clone'
 title: Método ICorProfilerObjectEnum::Clone
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: b0b2facd-5991-4f4c-932d-c4937f45cef9
 topic_type:
 - apiref
-ms.openlocfilehash: a2a54c32c0713b4b69d8f2a0272687cbe9420610
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 59971f6f6e7edab4b4c4f796ee7bea3c4d8b4e91
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84494755"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798947"
 ---
 # <a name="icorprofilerobjectenumclone-method"></a>Método ICorProfilerObjectEnum::Clone
+
 Obtém um ponteiro de interface para uma cópia desta interface [ICorProfilerObjectEnum](icorprofilerobjectenum-interface.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -33,10 +35,12 @@ HRESULT Clone (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ppEnum`  
  fora Um ponteiro para o ponteiro de interface que, por sua vez, aponta para a cópia dessa `ICorProfilerObjectEnum` interface. A cópia mantém seu próprio estado de enumeração separadamente deste. No entanto, a posição inicial do cursor da cópia será a mesma posição do cursor atual do enumerador.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -45,6 +49,6 @@ HRESULT Clone (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerObjectEnum](icorprofilerobjectenum-interface.md)

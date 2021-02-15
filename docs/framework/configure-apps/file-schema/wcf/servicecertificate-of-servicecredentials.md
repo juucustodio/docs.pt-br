@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <serviceCertificate> de <serviceCredentials>'
 title: <serviceCertificate> de <serviceCredentials>
 ms.date: 03/30/2017
 ms.assetid: 597ae6d5-4938-4950-9f5e-b2280e816182
-ms.openlocfilehash: 513dcad7f4325d653df87fe9cc27572c25e153c5
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: ab52f27949168562ec0cab0433c95843a7c312d0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70399667"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786727"
 ---
 # <a name="servicecertificate-of-servicecredentials"></a>\<serviceCertificate> de \<serviceCredentials>
+
 Especifique um certificado X. 509 que será usado para autenticar o serviço para clientes usando o modo de segurança da mensagem.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,7 +22,7 @@ Especifique um certificado X. 509 que será usado para autenticar o serviço par
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceCredentials>**](servicecredentials.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<serviceCertificate>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <serviceCertificate findValue="String"
@@ -30,6 +32,7 @@ Especifique um certificado X. 509 que será usado para autenticar o serviço par
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -42,6 +45,7 @@ Especifique um certificado X. 509 que será usado para autenticar o serviço par
 |`x509FindType`|Define o tipo de pesquisa de X.509 a ser executada. Os valores válidos incluem os seguintes:<br /><br /> -FindByThumbprint<br />-FindBySubjectName<br />- FindBySubjectDistinguishedName<br />- FindByIssuerName<br />- FindByIssuerDistinguishedName<br />- FindBySerialNumber<br />- FindByTimeValid<br />- FindByTimeNotYetValid<br />- FindByTemplateName<br />- FindByApplicationPolicy<br />- FindByCertificatePolicy<br />- FindByExtension<br />- FindByKeyUsage<br />- FindBySubjectKeyIdentifier<br /><br /> O tipo contido no `findValue` atributo deve atender aos requisitos do X509FindType especificado.<br /><br /> O valor padrão é FindBySubjectDistinguishedName.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -51,15 +55,16 @@ Especifique um certificado X. 509 que será usado para autenticar o serviço par
 |[\<serviceCredentials>](servicecredentials.md)|Especifica a credencial a ser usada na autenticação do serviço e as configurações relacionadas à validação de credenciais do cliente.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Use este elemento para especificar um certificado X. 509 que será usado para autenticar o serviço para clientes usando o modo de segurança da mensagem. Se você estiver usando um certificado que será renovado periodicamente, sua impressão digital será alterada. Nesse caso, use o nome da entidade como o `x509FindType` porque o certificado pode ser reemitido com o mesmo nome de assunto.  
   
  Para obter mais informações sobre como usar o elemento, consulte [como especificar valores de credencial do cliente](../../../wcf/how-to-specify-client-credential-values.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.X509RecipientCertificateServiceElement>
 - <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.ServiceCertificate%2A>
 - <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential>
 - <xref:System.ServiceModel.Description.ServiceCredentials.ServiceCertificate%2A>
-- [Como especificar valores de credenciais do cliente](../../../wcf/how-to-specify-client-credential-values.md)
+- [Como: especificar valores de credenciais de cliente](../../../wcf/how-to-specify-client-credential-values.md)
 - [Comportamentos de segurança](../../../wcf/feature-details/security-behaviors-in-wcf.md)

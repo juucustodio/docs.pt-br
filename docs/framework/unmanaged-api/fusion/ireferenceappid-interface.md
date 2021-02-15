@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IReferenceAppId'
 title: Interface IReferenceAppId
 ms.date: 03/30/2017
 api_name:
@@ -14,32 +15,34 @@ helpviewer_keywords:
 ms.assetid: 8eb9e565-f358-43ce-900e-a8f8a5aa6cfb
 topic_type:
 - apiref
-ms.openlocfilehash: 6f20fb2e9e026253fb02b47dfcd63cf655acc4ee
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 66838d6ae66aa7de05d899e9fa980308718e2a38
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73131655"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800065"
 ---
 # <a name="ireferenceappid-interface"></a>Interface IReferenceAppId
+
 Representa uma referência ao identificador exclusivo para o aplicativo no escopo atual.  
   
 ## <a name="methods"></a>Métodos  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|`IReferenceAppId::get_CodeBase`|Obtém um ponteiro para uma representação de cadeia de caracteres do identificador de código para o aplicativo referenciado por este `IReferenceAppId`.|  
-|`IReferenceAppId::put_CodeBase`|Define o identificador de código para o aplicativo referenciado por este `IReferenceAppId`.|  
-|`IReferenceAppId::EnumAppPath`|Obtém um ponteiro de interface para uma instância de `IEnumReferenceIdentity` que contém as instâncias de `IReferenceIdentity` que representam os membros dessa `IReferenceAppId`.|  
-|`IReferenceAppId::get_SubscriptionId`|Obtém um ponteiro para uma representação de cadeia de caracteres do identificador de token para uma assinatura para essa `IReferenceAppId`.|  
-|`IReferenceAppId::put_SubscriptionId`|Define o identificador de token para uma assinatura para essa `IReferenceAppId` para o valor da cadeia de caracteres especificada.|  
+|`IReferenceAppId::get_CodeBase`|Obtém um ponteiro para uma representação de cadeia de caracteres do identificador de código para o aplicativo referenciado por isso `IReferenceAppId` .|  
+|`IReferenceAppId::put_CodeBase`|Define o identificador de código para o aplicativo referenciado por isso `IReferenceAppId` .|  
+|`IReferenceAppId::EnumAppPath`|Obtém um ponteiro de interface para uma `IEnumReferenceIdentity` instância que contém as `IReferenceIdentity` instâncias que representam os membros desse `IReferenceAppId` .|  
+|`IReferenceAppId::get_SubscriptionId`|Obtém um ponteiro para uma representação de cadeia de caracteres do identificador de token para uma assinatura para isso `IReferenceAppId` .|  
+|`IReferenceAppId::put_SubscriptionId`|Define o identificador de token para uma assinatura para `IReferenceAppId` o valor da cadeia de caracteres especificada.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Isolamento. h  
   
- **Versões do .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>Consulte também
 

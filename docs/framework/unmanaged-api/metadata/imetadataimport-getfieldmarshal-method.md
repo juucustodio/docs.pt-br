@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport:: GetFieldMarshal'
 title: Método IMetaDataImport::GetFieldMarshal
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 4e2d88c6-8a3a-4fbe-900b-b4f4c06bf6bf
 topic_type:
 - apiref
-ms.openlocfilehash: a031cdb875b5eb046428d4d235d3093caddb7a6a
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: d6ca1f80a8b9bae4d9c02466042300bc3662f7c3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84491271"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803510"
 ---
 # <a name="imetadataimportgetfieldmarshal-method"></a>Método IMetaDataImport::GetFieldMarshal
+
 Obtém um ponteiro para o tipo nativo não gerenciado do campo representado pelo token de metadados do campo especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT GetFieldMarshal (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `tk`  
  no O token de metadados que representa o campo para obter informações de marshaling de interoperabilidade para.  
   
@@ -46,15 +49,16 @@ HRESULT GetFieldMarshal (
  fora O tamanho em bytes de `ppvNativeType` .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Incluído como um recurso em MsCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport](imetadataimport-interface.md)
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)

@@ -2,12 +2,12 @@
 title: Desafios e soluções do gerenciamento de dados distribuídos
 description: Saiba quais são os desafios e soluções de gerenciamento de dados distribuídos no mundo de microsserviços.
 ms.date: 09/20/2018
-ms.openlocfilehash: 8b91879e879db293ed61bd5f3c49dc391b9d8f5a
-ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
+ms.openlocfilehash: 1439dd5a04c3991a2b3b2ef12763843f9f339a29
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84144312"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91152645"
 ---
 # <a name="challenges-and-solutions-for-distributed-data-management"></a>Desafios e soluções do gerenciamento de dados distribuídos
 
@@ -25,7 +25,7 @@ Um segundo desafio é como implementar consultas que recuperam dados de vários 
 
 **Gateway de API.** Para a agregação de dados simples de vários microsserviços que têm bancos de dados diferentes, a abordagem recomendada é um microsserviço de agregação, conhecido como Gateway de API. No entanto, você precisa ter cuidado ao implementar esse padrão, porque ele pode ser um ponto de redução no sistema e pode violar o princípio de autonomia dos microsserviços. Para atenuar essas possibilidades, você pode ter vários Gateways de API refinados, cada um concentrado em uma "fatia" vertical ou em uma área de negócios do sistema. O padrão do Gateway de API será explicado mais detalhadamente na [seção Gateway de API](direct-client-to-microservice-communication-versus-the-api-gateway-pattern.md#why-consider-api-gateways-instead-of-direct-client-to-microservice-communication) mais adiante.
 
-**CQRS com tabelas de consulta/leituras.** Outra solução para agregar dados de vários microsserviços é o [Padrão de exibição materializada](https://docs.microsoft.com/azure/architecture/patterns/materialized-view). Nessa abordagem, você gera com antecedência (prepara os dados desnormalizados antes que as consultas reais ocorram) uma tabela somente leitura com os dados que pertencem a vários microsserviços. A tabela tem um formato adequado às necessidades do aplicativo cliente.
+**CQRS com tabelas de consulta/leituras.** Outra solução para agregar dados de vários microsserviços é o [Padrão de exibição materializada](/azure/architecture/patterns/materialized-view). Nessa abordagem, você gera com antecedência (prepara os dados desnormalizados antes que as consultas reais ocorram) uma tabela somente leitura com os dados que pertencem a vários microsserviços. A tabela tem um formato adequado às necessidades do aplicativo cliente.
 
 Considere algo como tela de um aplicativo móvel. Se houver um banco de dados individual, você poderá reunir os dados para essa tela usando uma consulta SQL que execute uma junção complexa envolvendo várias tabelas. No entanto, quando houver vários bancos de dados, e cada banco de dados pertencer a um microsserviço diferente, você não poderá consultar esses bancos de dados e criar uma junção SQL. Sua consulta complexa se tornará um desafio. Você pode atender ao requisito usando uma abordagem de CQRS, ou seja, criar uma tabela desnormalizada em outro banco de dados que é usado apenas para consultas. A tabela pode ser desenvolvida especificamente para os dados necessários para essa consulta complexa, com uma relação um-para-um entre os campos necessários para a tela do aplicativo e as colunas na tabela de consulta. Ela também pode funcionar para a geração de relatórios.
 

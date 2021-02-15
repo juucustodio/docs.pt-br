@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: atividades de primitivas no WF'
 title: Atividades de primitivas em WF
 ms.date: 03/30/2017
 ms.assetid: 8e9009d1-236e-4d8e-86fc-e43132bf6dfc
-ms.openlocfilehash: d87125d8d85fa33a49651dfabb840881b0e216ce
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 5f613eeb8f4153f349fad8232f6dec1123b1a8a2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61780699"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742063"
 ---
 # <a name="primitives-activities-in-wf"></a>Atividades de primitivas em WF
+
 [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] fornece vários sistema forneceu as atividades que fornecem um mecanismo conveniente para executar tarefas comuns.  
   
 |Atividade|Descrição|  

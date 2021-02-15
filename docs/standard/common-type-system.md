@@ -2,14 +2,13 @@
 title: Common Type System e Common Language Specification
 description: Saiba como o CTS (Common Type System) e a CLS (Common Language Specification) possibilitam ao .NET dar suporte a várias linguagens.
 ms.date: 06/20/2016
-ms.technology: dotnet-standard
 ms.assetid: 3b1f5725-ac94-4f17-8e5f-244442438a4d
-ms.openlocfilehash: 8983e456b051ace434fda9f6ed9cf9028c2ec2d7
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e60205450e2f156407deb7be6b9c497d090b6f7b
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79187672"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94822874"
 ---
 # <a name="common-type-system--common-language-specification"></a>Common Type System e Common Language Specification
 
@@ -17,7 +16,7 @@ Novamente, dois termos que são usados livremente no mundo do .NET, eles realmen
 
 ## <a name="common-type-system"></a>Common Type System
 
-Para começar do zero, lembre-se que uma implementação do .NET é _independente de linguagem_. Isso não significa apenas que um programador pode escrever seu código em qualquer idioma que possa ser compilado para IL. Isso também significa que eles precisam ser capazes de interagir com códigos escritos em outros idiomas que podem ser usados em uma implementação .NET.
+Para começar do zero, lembre-se que uma implementação do .NET é _independente de linguagem_. Isso não significa apenas que um programador possa escrever seu código em qualquer linguagem que possa ser compilada para IL. Isso também significa que eles precisam ser capazes de interagir com código escrito em outras linguagens que podem ser usadas em uma implementação do .NET.
 
 Para fazer isso de forma transparente, deve haver uma maneira comum de descrever todos os tipos com suporte. Isso é o que o CTS (Common Type System) é responsável por fazer. Ele foi feito de várias maneiras:
 
@@ -28,7 +27,7 @@ Para fazer isso de forma transparente, deve haver uma maneira comum de descrever
 
 O CTS define dois tipos principais que devem ter suporte: tipos de referência e valor. Seus nomes apontam para suas definições.
 
-Os objetos dos tipos de referência são representados por uma referência ao valor real do objeto; uma referência aqui é semelhante a um ponteiro em C/C++. Ele simplesmente se refere a um local de memória onde os valores dos objetos estão. Isso tem um profundo impacto sobre como esses tipos são usados. Se você atribuir um tipo de referência a uma variável e, em seguida, passar essa variável em um método, por exemplo, qualquer alteração feita no objeto será refletida no objeto principal. Não há nenhuma cópia.
+Os objetos de tipos de referência são representados por uma referência ao valor real do objeto; uma referência aqui é semelhante a um ponteiro em C/C++. Ele simplesmente se refere a um local de memória onde os valores dos objetos são. Isso tem um profundo impacto sobre como esses tipos são usados. Se você atribuir um tipo de referência a uma variável e, em seguida, passar essa variável em um método, por exemplo, qualquer alteração feita no objeto será refletida no objeto principal. Não há nenhuma cópia.
 
 Tipos de valor são o oposto, no qual os objetos são representados por seus valores. Se você atribuir um tipo de valor a uma variável, você estará, essencialmente, copiando um valor do objeto.
 
@@ -36,9 +35,9 @@ O CTS define várias categorias de tipos, cada um com sua semântica específica
 
 * Classes
 * Estruturas
-* Enums
+* Enumerações
 * Interfaces
-* Delega
+* Delegados
 
 O CTS também define todas as outras propriedades de tipos, como modificadores de acesso, o que são membros de tipo válidos, como a herança e a sobrecarga funcionam e assim por diante. Infelizmente, se aprofundar em qualquer um deles está além do escopo de um artigo introdutório como este, mas você pode consultar a seção [Mais recursos](#more-resources) no final para obter links para mais conteúdos detalhados que abordam esses tópicos.
 

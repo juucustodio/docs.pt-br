@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura do programa e convenções de código (Visual Basic)'
 title: Estrutura do programa e convenções de código
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -13,14 +14,15 @@ helpviewer_keywords:
 - Visual Basic code
 - programming [Visual Basic], Visual Basic coding conventions
 ms.assetid: dd9be76f-6944-4e78-ad72-0b6084a3fc13
-ms.openlocfilehash: c8d851afc33e7e898ab16abc941d8680f74145e3
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 7d4202ead0550cf54a80eac89c4a4274a22d0315
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84398299"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468480"
 ---
 # <a name="program-structure-and-code-conventions-visual-basic"></a>Estrutura do programa e convenções de código (Visual Basic)
+
 Esta seção apresenta a estrutura típica do programa de Visual Basic, fornece um programa de Visual Basic simples, "Olá, mundo" e discute Visual Basic convenções de código. As convenções de código são sugestões que se concentram não na lógica de um programa, mas em sua estrutura física e aparência. A seguir, torna seu código mais fácil de ler, entender e manter. As convenções de código podem incluir, entre outras:  
   
 - Formatos padronizados para rotular e comentar o código.  
@@ -32,6 +34,7 @@ Esta seção apresenta a estrutura típica do programa de Visual Basic, fornece 
  Os tópicos a seguir apresentam um conjunto de diretrizes de programação para Visual Basic programas, juntamente com exemplos de bom uso.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Estrutura de um programa Visual Basic](structure-of-a-visual-basic-program.md)  
  Fornece uma visão geral dos elementos que compõem um programa de Visual Basic.  
   
@@ -78,6 +81,7 @@ Esta seção apresenta a estrutura típica do programa de Visual Basic, fornece 
  Discute a remoção de limites de codificação conhecidos dentro de Visual Basic.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
+
  [Convenções tipográficas e de código](../../language-reference/typographic-and-code-conventions.md)  
  Fornece convenções de codificação padrão para Visual Basic.  
   

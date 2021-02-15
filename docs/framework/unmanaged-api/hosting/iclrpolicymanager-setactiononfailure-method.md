@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRPolicyManager:: SetActionOnFailure'
 title: Método ICLRPolicyManager::SetActionOnFailure
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 4664033f-db97-4388-b988-2ec470796e58
 topic_type:
 - apiref
-ms.openlocfilehash: 727cd82226b9a59c4879ffea5e87f93dd5fe38c9
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 67d3ca5d7924caf0a768b4de53b4b24f1c72fa27
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84504102"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789795"
 ---
 # <a name="iclrpolicymanagersetactiononfailure-method"></a>Método ICLRPolicyManager::SetActionOnFailure
+
 Especifica a ação de política que o Common Language Runtime (CLR) deve executar quando a falha especificada ocorrer.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,17 +37,18 @@ HRESULT SetActionOnFailure (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `failure`  
  no Um dos valores de [EClrFailure](eclrfailure-enumeration.md) , indicando o tipo de falha para a qual executar a ação.  
   
  `action`  
  no Um dos valores de [EPolicyAction](epolicyaction-enumeration.md) , indicando a ação a ser executada quando ocorrer uma falha. Para obter uma lista de valores com suporte, consulte a seção comentários.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
-|S_OK|`SetActionOnFailure`retornado com êxito.|  
+|S_OK|`SetActionOnFailure` retornado com êxito.|  
 |HOST_E_CLRNOTAVAILABLE|O CLR não foi carregado em um processo ou o CLR está em um estado no qual não pode executar código gerenciado ou processar a chamada com êxito.|  
 |HOST_E_TIMEOUT|A chamada atingiu o tempo limite.|  
 |HOST_E_NOT_OWNER|O chamador não possui o bloqueio.|  
@@ -54,7 +57,8 @@ HRESULT SetActionOnFailure (
 |E_INVALIDARG|Uma ação de política não pode ser definida para a operação especificada ou uma ação de política inválida foi especificada para a operação.|  
   
 ## <a name="remarks"></a>Comentários  
- Por padrão, o CLR gera uma exceção quando ele falha ao alocar um recurso, como memória. `SetActionOnFailure`permite que o host Substitua esse comportamento especificando a ação da política a ser tomada após a falha. A tabela a seguir mostra as combinações de valores [EClrFailure](eclrfailure-enumeration.md) e [EPolicyAction](epolicyaction-enumeration.md) com suporte. (O prefixo de FAIL_ é omitido dos valores de [EClrFailure](eclrfailure-enumeration.md) .)  
+
+ Por padrão, o CLR gera uma exceção quando ele falha ao alocar um recurso, como memória. `SetActionOnFailure` permite que o host Substitua esse comportamento especificando a ação da política a ser tomada após a falha. A tabela a seguir mostra as combinações de valores [EClrFailure](eclrfailure-enumeration.md) e [EPolicyAction](epolicyaction-enumeration.md) com suporte. (O prefixo de FAIL_ é omitido dos valores de [EClrFailure](eclrfailure-enumeration.md) .)  
   
 ||NonCriticalResource|CriticalResource|FatalRuntime|OrphanedLock|StackOverflow|AccessViolation|CodeContract|  
 |-|-------------------------|----------------------|------------------|------------------|-------------------|---------------------|------------------|  
@@ -70,15 +74,16 @@ HRESULT SetActionOnFailure (
 |`eDisableRuntime`|X|X|X|X|X|N/D||  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumeração EClrFailure](eclrfailure-enumeration.md)
 - [Enumeração EPolicyAction](epolicyaction-enumeration.md)

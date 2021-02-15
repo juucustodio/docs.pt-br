@@ -2,12 +2,12 @@
 title: Implementação de Gateways de API com o Ocelot
 description: Saiba como implementar Gateways de API com o Ocelot e como usar o Ocelot em um ambiente baseado em contêiner.
 ms.date: 03/02/2020
-ms.openlocfilehash: 3611ffa7a163ff632ca854fafb910fcd3e228306
-ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
+ms.openlocfilehash: 3f8fcaac162d2bffd221f07b2e5061455d73e1bd
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89358980"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429293"
 ---
 # <a name="implement-api-gateways-with-ocelot"></a>Implementar Gateways de API com o Ocelot
 
@@ -39,7 +39,7 @@ Por exemplo, a granularidade refinada na camada do Gateway de API pode ser útil
 
 Apresentamos mais detalhes na seção anterior [Criando uma interface do usuário composta baseada em microsserviços](../architect-microservice-container-applications/microservice-based-composite-ui-shape-layout.md).
 
-Como principal vantagem para muitos aplicativos de médio e grande porte, o uso de um produto de Gateway de API personalizado costuma ser uma boa abordagem, mas não como um único agregador monolítico ou um Gateway de API personalizado central exclusivo, a menos que esse Gateway de API permita várias áreas de configuração independentes para as diversas equipes de desenvolvimento que criam microsserviços autônomos.
+Como importante, para muitos aplicativos de médio e grande porte, usar um produto de gateway de API personalizado é geralmente uma boa abordagem, mas não como um agregador monolítico único ou gateway de API personalizada central exclusivo, a menos que o gateway de API permita várias áreas de configuração independentes para as várias equipes de desenvolvimento que criam microserviços autônomos.
 
 ### <a name="sample-microservicescontainers-to-reroute-through-the-api-gateways"></a>Microsserviços/contêineres de amostra a serem reencaminhados por meio dos Gateways de API
 
@@ -87,8 +87,8 @@ A solicitação HTTP acabará executando esse tipo de código C# acessando o ban
 
 Em relação à URL do Microservice, quando os contêineres são implantados em seu PC de desenvolvimento local (host do Docker local), cada contêiner de microserviço sempre tem uma porta interna (geralmente a porta 80) especificada em seu dockerfile, como no seguinte dockerfile:
 
-```Dockerfile
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
+```dockerfile
+FROM mcr.microsoft.com/dotnet/aspnet:3.1 AS base
 WORKDIR /app
 EXPOSE 80
 ```
@@ -97,7 +97,7 @@ A porta 80 mostrada no código é interna no host do Docker e, portanto, não po
 
 Os aplicativos cliente poderão acessar apenas as portas externas (se houver) publicadas durante a implantação com `docker-compose`.
 
-Essas portas externas não devem ser publicadas durante a implantação em um ambiente de produção. Esse é exatamente o motivo para usar o Gateway de API, ou seja, para evitar a comunicação direta entre os aplicativos clientes e os microsserviços.
+Essas portas externas não devem ser publicadas durante a implantação em um ambiente de produção. Por esse motivo específico, por que você deseja usar o gateway de API, para evitar a comunicação direta entre os aplicativos cliente e os microserviços.
 
 No entanto, durante o desenvolvimento, é necessário acessar o microsserviço/contêiner diretamente e executá-lo por meio do Swagger. É por isso que, em eShopOnContainers, as portas externas ainda são especificadas mesmo quando não serão usadas pelo gateway de API ou pelos aplicativos cliente.
 
@@ -155,7 +155,7 @@ No eShopOnContainers, sua implementação de gateway de API é um projeto Webhos
 
 **Figura 6-32**. Projeto base OcelotApiGw no eShopOnContainers
 
-Basicamente, este projeto WebHost do ASP.NET Core é criado com dois arquivos simples: `Program.cs` e `Startup.cs`.
+Este ASP.NET Core projeto Webhost é criado com dois arquivos simples:  `Program.cs` e `Startup.cs` .
 
 O Program.cs precisa apenas criar e configurar o BuildWebHost típico do ASP.NET Core.
 
@@ -196,7 +196,7 @@ O ponto importante para Ocelot é o arquivo `configuration.json` que você preci
 
 Há duas seções para a configuração. Uma matriz de redirecionamentos e um GlobalConfiguration. As rerotas são os objetos que dizem ao Ocelot como tratar uma solicitação upstream. A configuração global permite substituições de redirecionar configurações específicas. É útil se você não quiser gerenciar muitas configurações específicas de redirecionamento.
 
-Aqui está um exemplo simplificado de [redirecionar o arquivo de configuração](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/ApiGateways/Web.Bff.Shopping/apigw/configuration.json) de um dos gateways de API do eShopOnContainers.
+Aqui está um exemplo simplificado de [redirecionar o arquivo de configuração](https://github.com/dotnet-architecture/eShopOnContainers/blob/main/src/ApiGateways/Mobile.Bff.Shopping/apigw/configuration.json) de um dos gateways de API do eShopOnContainers.
 
 ```json
 {
@@ -267,7 +267,7 @@ A porta é a porta interna usada pelo serviço. Ao usar contêineres, é a porta
 
 O `Host` é um nome de serviço que depende da resolução de nomes de serviço que você está usando. Quando o docker-compose é usado, os serviços de nomes são fornecidos pelo Host do Docker, que está usando os nomes de serviço fornecidos nos arquivos docker-compose. Quando é usado um orquestrador, como o Kubernetes ou o Service Fabric, esse nome deve ser resolvido pelo DNS ou pela resolução de nomes fornecida por cada orquestrador.
 
-DownstreamHostAndPorts é uma matriz que contém o host e a porta de todos os serviços downstream para os quais você deseja encaminhar solicitações. Normalmente, ela conterá apenas uma entrada, mas, às vezes, convém balancear a carga de solicitações para os serviços downstream e, para isso, o Ocelot permite que você adicione mais de uma entrada e, em seguida, selecione um balanceador de carga. Mas se você estiver usando o Azure e algum orquestrador, provavelmente, será melhor balancear a carga com a infraestrutura de nuvem e do orquestrador.
+DownstreamHostAndPorts é uma matriz que contém o host e a porta de todos os serviços downstream para os quais você deseja encaminhar solicitações. Normalmente, essa configuração conterá apenas uma entrada, mas às vezes você pode querer balancear a carga de solicitações para seus serviços downstream e o Ocelot permite que você adicione mais de uma entrada e, em seguida, selecione um balanceador de carga. Mas se você estiver usando o Azure e algum orquestrador, provavelmente, será melhor balancear a carga com a infraestrutura de nuvem e do orquestrador.
 
 O UpstreamPathTemplate é a URL que o Ocelot usará para identificar qual DownstreamPathTemplate será usado para uma determinada solicitação do cliente. Por fim, o UpstreamHttpMethod é usado para que Ocelot possa distinguir entre diferentes solicitações (GET, POST, PUT) para a mesma URL.
 
@@ -373,7 +373,7 @@ Devido a motivos de teste ou depuração, se você quisesse acessar diretamente 
 
 **Figura 6-36**. Acesso direto a um microsserviço para fins de teste
 
-Mas o aplicativo está configurado para que ele acesse todos os microserviços por meio dos gateways de API, não apesar da porta direta "atalhos".
+Mas o aplicativo está configurado para que ele acesse todos os microserviços por meio dos gateways de API, não por meio da porta direta "atalhos".
 
 ### <a name="the-gateway-aggregation-pattern-in-eshoponcontainers"></a>O padrão de agregação do Gateway em eShopOnContainers
 
@@ -393,7 +393,7 @@ Ampliando ainda mais, na área de negócios de "compras" na imagem a seguir, voc
 
 **Figura 6-38**. Visão ampliada do agregador de serviços
 
-Você pode observar como quando o diagrama mostra as possíveis solicitações provenientes dos gateways de API que podem ser complexas. Apesar disso, veja como as setas em azul seriam simplificadas, da perspectiva dos aplicativos clientes, ao usar o padrão de agregador reduzindo o excesso de comunicação e a latência na comunicação, por fim, melhorando significativamente a experiência do usuário para os aplicativos remotos ( aplicativos móveis e SPA), principalmente.
+Você pode observar como quando o diagrama mostra as possíveis solicitações provenientes dos gateways de API que podem ser complexas. Por outro lado, ao usar o padrão de agregador, você pode ver como as setas em azul simplificariam a comunicação de uma perspectiva de aplicativo cliente. Esse padrão não só ajuda a reduzir a informação e a latência na comunicação, além de melhorar significativamente a experiência do usuário para os aplicativos remotos (aplicativos móveis e SPA).
 
 No caso da área de negócios e dos microserviços de "marketing", é um caso de uso simples, portanto, não há necessidade de usar agregadores, mas também pode ser possível, se necessário.
 
@@ -527,7 +527,7 @@ No kubernetes, se você não usar nenhuma abordagem de entrada, seus serviços e
 
 Mas se você usar uma abordagem de entrada, haverá uma camada intermediária entre a Internet e seus serviços (incluindo seus Gateways de API), atuando como um proxy reverso.
 
-Como uma definição, uma entrada é uma coleção de regras que permitem que conexões de entrada acessem os serviços de cluster. Uma entrada é geralmente configurada para fornecer aos serviços URLs acessadas externamente, balancear a carga do tráfego, terminação SSL e muito mais. Os usuários solicitam a entrada postando o recurso de entrada no servidor de API.
+Como uma definição, uma entrada é uma coleção de regras que permitem que conexões de entrada acessem os serviços de cluster. Uma entrada é configurada para fornecer aos serviços URLs acessadas externamente, balancear a carga do tráfego, terminação SSL e muito mais. Os usuários solicitam a entrada postando o recurso de entrada no servidor de API.
 
 Em eShopOnContainers, ao desenvolver localmente e usar apenas o computador de desenvolvimento como o host do Docker, você não está usando nenhuma entrada, mas apenas vários Gateways de API.
 
@@ -543,7 +543,7 @@ A arquitetura ideal é uma camada Nginx de entrada no Kubernetes na frente dos a
 
 **Figura 6-41**. A camada de entrada em eShopOnContainers, quando implantada no Kubernetes
 
-Uma Entrada do Kubernetes funciona como um proxy reverso para todo o tráfego para o aplicativo, incluindo os aplicativos Web, que geralmente estão fora do escopo do gateway de API. Quando você implanta o eShopOnContainers no Kubernetes, ele expõe apenas alguns serviços ou pontos de extremidade via _entrada_, ou seja, basicamente, a seguinte lista de pós-fixados nas URLs:
+Uma entrada kubernetes atua como um proxy reverso para todo o tráfego para o aplicativo, incluindo os aplicativos Web, que estão fora do escopo do gateway de API. Quando você implanta o eShopOnContainers no Kubernetes, ele expõe apenas alguns serviços ou pontos de extremidade via _entrada_, ou seja, basicamente, a seguinte lista de pós-fixados nas URLs:
 
 - `/` para o aplicativo Web cliente SPA
 - `/webmvc` para o aplicativo Web cliente MVC

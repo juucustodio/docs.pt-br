@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugClass2'
 title: Interface ICorDebugClass2
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5416de70-43f2-4cdf-a11f-d570759c9c0c
 topic_type:
 - apiref
-ms.openlocfilehash: ff15297eb479f7474c9f07123a29263fb4da3205
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 80aa8e59ccc774141e7fcea130d1fc6a38fa37da
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82893981"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711434"
 ---
 # <a name="icordebugclass2-interface"></a>Interface ICorDebugClass2
 
@@ -38,6 +39,7 @@ Representa uma classe genérica ou uma classe com um parâmetro do método do ti
 > Esta interface não dá suporte para chamada remota, seja entre computadores ou processos cruzados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

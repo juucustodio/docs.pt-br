@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ISymUnmanagedReader'
 title: Interface ISymUnmanagedReader
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: aa3cc15d-058e-4e6f-b03e-39569646ba47
 topic_type:
 - apiref
-ms.openlocfilehash: b372021fcda39d9973d96a9c39e93e38617887a6
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: bad4fdbac3bf6f03fa0db79ce54a5b0ca897028f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615456"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763794"
 ---
 # <a name="isymunmanagedreader-interface"></a>Interface ISymUnmanagedReader
+
 Representa um leitor de símbolo que fornece acesso a documentos, métodos e variáveis em um repositório de símbolos.  
   
 ## <a name="methods"></a>Métodos  
@@ -47,9 +49,10 @@ Representa um leitor de símbolo que fornece acesso a documentos, métodos e var
 |[Método UpdateSymbolStore](isymunmanagedreader-updatesymbolstore-method.md)|Atualiza o repositório de símbolos existente com um repositório de símbolos delta.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de armazenamento de símbolo de diagnóstico](diagnostics-symbol-store-interfaces.md)
 - [Interface ISymUnmanagedReader2](isymunmanagedreader2-interface.md)

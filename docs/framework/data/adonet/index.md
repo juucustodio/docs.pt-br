@@ -4,18 +4,19 @@ description: Saiba mais sobre o ADO.NET, classes que expõem serviços de acesso
 titleSuffix: ''
 ms.date: 03/30/2017
 ms.assetid: 5b96ed06-9759-4966-a797-a1d5f6ee50ca
-ms.openlocfilehash: 4f9b2ca42a2c25c1463b7d1ca38b4b8920b2dafd
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 503977ab2bef6f03ab13fab168319d350aad9471
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286722"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91194564"
 ---
 # <a name="adonet"></a>ADO.NET
 
 O ADO.NET é um conjunto de classes que expõem serviços de acesso a dados para desenvolvedores do .NET Framework. O ADO.NET fornece um conjunto rico de componentes para criar aplicativos distribuídos e de compartilhamento de dados. Faz parte do .NET Framework, fornecendo acesso a dados de aplicativo relacionais e XML. O ADO.NET oferece suporte a uma variedade de necessidades de desenvolvimento, incluindo a criação de clientes front-end de banco de dados e objetos comerciais de camada intermediária usados por aplicativos, ferramentas, linguagens ou navegadores da Internet.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Novidades no ADO.NET](whats-new.md)  
  Apresenta recursos que são novos no ADO.NET.  
   
@@ -28,7 +29,7 @@ O ADO.NET é um conjunto de classes que expõem serviços de acesso a dados para
  [Protegendo aplicativos ADO.NET](securing-ado-net-applications.md)  
  Descreve práticas seguras de codificação ao usar o ADO.NET.  
   
- [Data Type Mappings in ADO.NET](data-type-mappings-in-ado-net.md) (Mapeamentos de tipo de dados no ADO.NET)  
+ [Mapeamentos de tipos de dados no ADO.NET](data-type-mappings-in-ado-net.md)  
  Descreve os mapeamentos de tipo de dados entre os tipos de dados do .NET Framework e os provedores de dados .NET Framework.  
   
  [DataSets, DataTables e DataViews](./dataset-datatable-dataview/index.md)  
@@ -37,16 +38,17 @@ O ADO.NET é um conjunto de classes que expõem serviços de acesso a dados para
  [LINQ to DataSet](linq-to-dataset.md)  
  Fornece informações sobre LINQ to DataSet, incluindo exemplos de programação.  
   
- [Retrieving and Modifying Data in ADO.NET](retrieving-and-modifying-data.md) (Recuperando e modificando dados no ADO.NET)  
+ [Recuperando e modificando dados no ADO.NET](retrieving-and-modifying-data.md)  
  Descreve como se conectar a uma fonte de dados e como recuperar e modificar dados usando o `Commands` , o `DataReaders` e o `DataAdapters` .  
   
  [SQL Server e ADO.NET](./sql/index.md)  
  Descreve como trabalhar com recursos e funcionalidades que são específicos ao SQL Server.  
   
- [Oracle and ADO.NET](oracle-and-adonet.md) (Oracle e ADO.NET)  
+ [Oracle e ADO.NET](oracle-and-adonet.md)  
  Descreve os recursos e os comportamentos que são específicos ao Provedor de Dados .NET Framework para Oracle.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
+
  [LINQ (consulta integrada à linguagem) – C#](../../../csharp/programming-guide/concepts/linq/index.md)  
  Fornece links para tópicos e exemplos do LINQ usando C#.  
   

@@ -15,14 +15,15 @@ helpviewer_keywords:
 - network
 - WPAD (Web Proxy Auto-Discovery)
 ms.assetid: fcd9c3bd-93de-4c92-8ff3-837327ad18de
-ms.openlocfilehash: dbd5d7fa671ae5ec3b7dc00205f0c9d8381bb3ce
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 8d1b904a8acc6d3960a076c54c2d5f5de54820c0
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502685"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96250626"
 ---
 # <a name="automatic-proxy-detection"></a>Detecção automática de proxy
+
 A detecção automática de proxy é um processo pelo qual um servidor proxy Web é identificado pelo sistema e usado para enviar solicitações em nome do cliente. Esse recurso também é conhecido como WPAD (Descoberta Automática de Proxy Web). Quando a detecção automática de proxy está habilitada, o sistema tenta localizar um script de configuração de proxy que é responsável por retornar o conjunto de proxies que pode ser usado para a solicitação. Se o script de configuração de proxy for encontrado, o script será baixado, compilado e executado no computador local quando as informações de proxy, o fluxo da solicitação ou a resposta for obtida de uma solicitação que usa uma instância <xref:System.Net.WebProxy>.  
   
  A detecção automática de proxy é executada pela classe <xref:System.Net.WebProxy> e pode utilizar configurações no nível da solicitação, configurações nos arquivos de configuração e as configurações especificadas usando a caixa de diálogo **Rede Local (LAN)** do Internet Explorer.  
@@ -68,8 +69,8 @@ Public Shared Sub DisableForMyRequest(ByVal resource As Uri)
   
  As solicitações que não têm um proxy usam o proxy padrão do domínio do aplicativo, que está disponível na propriedade <xref:System.Net.WebRequest.DefaultWebProxy%2A>.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - <xref:System.Net.WebProxy>
 - <xref:System.Net.WebRequest>
-- [\<system.Net>Elemento (configurações de rede)](../configure-apps/file-schema/network/system-net-element-network-settings.md)
+- [\<system.Net> Elemento (configurações de rede)](../configure-apps/file-schema/network/system-net-element-network-settings.md)

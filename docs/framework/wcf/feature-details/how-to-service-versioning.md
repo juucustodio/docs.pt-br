@@ -1,15 +1,17 @@
 ---
-title: Como controlar a versão de serviço
+description: 'Saiba mais sobre: como: controle de versão de serviço'
+title: 'Como: Controle de versão de serviço'
 ms.date: 03/30/2017
 ms.assetid: 4287b6b3-b207-41cf-aebe-3b1d4363b098
-ms.openlocfilehash: beb7de63d300ad7986bfc59093006b074b9456ba
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: d32ea2051783ccaec7a66bfffada7f08887f8559
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84586930"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643222"
 ---
-# <a name="how-to-service-versioning"></a>Como controlar a versão de serviço
+# <a name="how-to-service-versioning"></a>Como: Controle de versão de serviço
+
 Este tópico descreve as etapas básicas necessárias para criar uma configuração de roteamento que roteia mensagens para versões diferentes do mesmo serviço. Neste exemplo, as mensagens são roteadas para duas versões diferentes de um serviço de calculadora, `roundingCalc` (v1) e `regularCalc` (v2). Ambas as implementações dão suporte às mesmas operações; no entanto, o serviço mais antigo, `roundingCalc` , Arredonda todos os cálculos para o valor inteiro mais próximo antes de retornar. Um aplicativo cliente deve ser capaz de indicar se deseja usar o serviço mais recente `regularCalc` .  
   
 > [!WARNING]
@@ -131,6 +133,7 @@ messageHeadersElement.Add(MessageHeader.CreateHeader("CalcVer", "http://my.custo
     ```  
   
 ## <a name="example"></a>Exemplo  
+
  A seguir está uma lista completa do arquivo de configuração.  
   
 ```xml  
@@ -214,6 +217,7 @@ messageHeadersElement.Add(MessageHeader.CreateHeader("CalcVer", "http://my.custo
 ```  
   
 ## <a name="example"></a>Exemplo  
+
  A seguir está uma lista completa do aplicativo cliente.  
   
 ```csharp  

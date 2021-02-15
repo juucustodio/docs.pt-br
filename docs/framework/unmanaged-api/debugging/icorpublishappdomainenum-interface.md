@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorPublishAppDomainEnum'
 title: Interface ICorPublishAppDomainEnum
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: bb798c56-042e-475d-a245-b6fac36d0c07
 topic_type:
 - apiref
-ms.openlocfilehash: a48e20413f466e25a9145e9dbf1ba93d90155770
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: 4e84af576103a792308fd44f903f2ae4daa5d736
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83397042"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721782"
 ---
 # <a name="icorpublishappdomainenum-interface"></a>Interface ICorPublishAppDomainEnum
+
 Uma subclasse da interface [ICorPublishEnum](icorpublishenum-interface.md) que fornece métodos para atravessar uma coleção de objetos [ICorPublishAppDomain](icorpublishappdomain-interface.md) que existem atualmente dentro de um processo.  
   
 ## <a name="methods"></a>Métodos  
@@ -31,9 +33,11 @@ Uma subclasse da interface [ICorPublishEnum](icorpublishenum-interface.md) que f
 |[Método Next](icorpublishappdomainenum-next-method.md)|Obtém o número especificado de `ICorPublishAppDomain` instâncias da coleção, começando na posição atual.|  
   
 ## <a name="remarks"></a>Comentários  
+
  A `ICorPublishAppDomainEnum` interface implementa os métodos da interface abstrata, [ICorPublishEnum](icorpublishenum-interface.md).  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorPub. idl, CorPub. h  
@@ -42,7 +46,7 @@ Uma subclasse da interface [ICorPublishEnum](icorpublishenum-interface.md) que f
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Coclass CorpubPublish](corpubpublish-coclass.md)

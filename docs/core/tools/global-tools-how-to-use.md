@@ -1,16 +1,16 @@
 ---
-title: 'Tutorial: instalar e usar uma ferramenta global do .NET Core'
+title: 'Tutorial: instalar e usar uma ferramenta global do .NET'
 description: Saiba como instalar e usar uma ferramenta .NET como uma ferramenta global.
 ms.topic: tutorial
 ms.date: 02/12/2020
-ms.openlocfilehash: 28e34a4e5a0344e314c5d23228c1af5839db991c
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.openlocfilehash: 01b773516da92fb16fb0f67fc6617e0c70d17c9d
+ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88062763"
+ms.lasthandoff: 11/15/2020
+ms.locfileid: "94633888"
 ---
-# <a name="tutorial-install-and-use-a-net-core-global-tool-using-the-net-core-cli"></a>Tutorial: instalar e usar uma ferramenta global do .NET Core usando o CLI do .NET Core
+# <a name="tutorial-install-and-use-a-net-global-tool-using-the-net-cli"></a>Tutorial: instalar e usar uma ferramenta global do .NET usando a CLI do .NET
 
 **Este artigo aplica-se a:** ✔️ SDK do .net Core 2,1 e versões posteriores
 
@@ -28,9 +28,9 @@ Este tutorial ensina como instalar e usar uma ferramenta global. Você usa uma f
    dotnet tool install --global --add-source ./nupkg microsoft.botsay
    ```
 
-   O `--global` parâmetro informa ao CLI do .NET Core para instalar os binários de ferramenta em um local padrão que é adicionado automaticamente à variável de ambiente Path.
+   O `--global` parâmetro informa à CLI do .net para instalar os binários da ferramenta em um local padrão que é adicionado automaticamente à variável de ambiente Path.
 
-   O `--add-source` parâmetro informa ao CLI do .NET Core para usar temporariamente o diretório *./nupkg* como um feed de origem adicional para pacotes NuGet. Você deu ao seu pacote um nome exclusivo para certificar-se de que ele só será encontrado no diretório *./nupkg* , não no site do NuGet.org.
+   O `--add-source` parâmetro informa à CLI do .net para usar temporariamente o diretório *./nupkg* como um feed de origem adicional para pacotes NuGet. Você deu ao seu pacote um nome exclusivo para certificar-se de que ele só será encontrado no diretório *./nupkg* , não no site do NuGet.org.
 
    A saída mostra o comando usado para chamar a ferramenta e a versão instalada:
 
@@ -70,7 +70,7 @@ Este tutorial ensina como instalar e usar uma ferramenta global. Você usa uma f
    dotnet tool install --tool-path ~/bin --add-source ./nupkg microsoft.botsay
    ```
 
-   O `--tool-path` parâmetro informa ao CLI do .NET Core para instalar os binários de ferramenta no local especificado. Se o diretório não existir, ele será criado. Esse diretório não é adicionado automaticamente à variável de ambiente PATH.
+   O `--tool-path` parâmetro informa à CLI do .net para instalar os binários da ferramenta no local especificado. Se o diretório não existir, ele será criado. Esse diretório não é adicionado automaticamente à variável de ambiente PATH.
 
    A saída mostra o comando usado para chamar a ferramenta e a versão instalada:
 
@@ -107,9 +107,9 @@ Este tutorial ensina como instalar e usar uma ferramenta global. Você usa uma f
    dotnet tool uninstall --tool-path ~/bin microsoft.botsay
    ```
 
-## <a name="troubleshoot"></a>Solucionar problemas
+## <a name="troubleshoot"></a>Solução de problemas
 
-Se você receber uma mensagem de erro ao seguir o tutorial, consulte [solucionar problemas de uso da ferramenta .NET Core](troubleshoot-usage-issues.md).
+Se você receber uma mensagem de erro ao seguir o tutorial, consulte [solucionar problemas de uso da ferramenta .net](troubleshoot-usage-issues.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 

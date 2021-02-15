@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 57bcefe3-8433-4d3b-935a-511c9bcbdfa8
-ms.openlocfilehash: ea61a79549488765526f45852dae7a4df7cacb64
-ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
+ms.openlocfilehash: c9f4d6ad3dfe12f49b907095312477717a73c2c9
+ms.sourcegitcommit: 6d1ae17e60384f3b5953ca7b45ac859ec6d4c3a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89551948"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94982169"
 ---
 # <a name="how-to-work-with-dictionaries-using-linq-to-xml"></a>Como trabalhar com dicionários usando LINQ to XML
 
@@ -65,7 +65,7 @@ Esse exemplo gera a saída a seguir:
 
 ## <a name="example-create-a-dictionary-and-load-it-from-xml-data"></a>Exemplo: criar um dicionário e carregá-lo a partir de dados XML
 
-O exemplo a seguir cria uma carga de dicionário carregada a partir de dados XML.
+O exemplo a seguir cria um dicionário que o carrega de dados XML.
 
 ```csharp
 XElement root = new XElement("Root",
@@ -111,4 +111,4 @@ Child4:Value4
 
 ## <a name="see-also"></a>Confira também
 
-- [Projeções e transformações (LINQ to XML) (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)
+- [Operações de projeção (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/projection-operations.md)

@@ -2,12 +2,12 @@
 title: Invocação de plataforma (P/Invoke)
 description: Saiba como chamar funções nativas via P/Invoke no .NET.
 ms.date: 01/18/2019
-ms.openlocfilehash: fa8b43edfba50fbc620f257c4e7caf1673f83235
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: cde52d9d0a4e3b84fec632b615b635e7b7df3924
+ms.sourcegitcommit: 4b79862c5b41fbd86cf38f926f6a49516059f6f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75706299"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97678264"
 ---
 # <a name="platform-invoke-pinvoke"></a>Invocação de plataforma (P/Invoke)
 
@@ -19,9 +19,9 @@ Vamos começar com exemplo mais comum, que é chamar funções não gerenciadas 
 
 O exemplo anterior é simples, mas mostra o que é necessário para invocar funções não gerenciadas de um código gerenciado. Vamos analisar o exemplo:
 
-- A linha 1 mostra a instrução de uso para o namespace `System.Runtime.InteropServices` que contém todos os itens necessários.
-- A linha 7 apresenta o atributo `DllImport`. Esse atributo é crucial, pois informa ao runtime que deve carregar a DLL não gerenciada. A cadeia de caracteres passada é a DLL na qual nossa função de destino está incluída. Além disso, especifica qual [conjunto de caracteres](./charset.md) deve ser usado para realizar marshaling de cadeias de caracteres. Por fim, especifica que essa função chama [SetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) e que o runtime deve capturar esse código de erro para que o usuário possa recuperá-lo via <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error?displayProperty=nameWithType>.
-- A linha 8 é o ponto crucial do trabalho do P/Invoke. Define um método gerenciado que tem **exatamente a mesma assinatura** que o não gerenciado. A declaração tem uma nova palavra-chave que você pode observar, `extern`, que informa ao runtime que é um método externo; quando invocado, o runtime deve encontrá-la na DLL especificada no atributo `DllImport`.
+- A linha #2 mostra a instrução using para o `System.Runtime.InteropServices` namespace que contém todos os itens necessários.
+- A linha #8 apresenta o `DllImport` atributo. Esse atributo é crucial, pois informa ao runtime que deve carregar a DLL não gerenciada. A cadeia de caracteres passada é a DLL na qual nossa função de destino está incluída. Além disso, especifica qual [conjunto de caracteres](./charset.md) deve ser usado para realizar marshaling de cadeias de caracteres. Por fim, especifica que essa função chama [SetLastError](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) e que o runtime deve capturar esse código de erro para que o usuário possa recuperá-lo via <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error?displayProperty=nameWithType>.
+- A linha #9 é a crux do trabalho P/Invoke. Define um método gerenciado que tem **exatamente a mesma assinatura** que o não gerenciado. A declaração tem uma nova palavra-chave que você pode observar, `extern`, que informa ao runtime que é um método externo; quando invocado, o runtime deve encontrá-la na DLL especificada no atributo `DllImport`.
 
 O restante do exemplo é simplesmente chamar o método como você faria com qualquer outro método gerenciado.
 

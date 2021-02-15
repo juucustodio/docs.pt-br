@@ -1,5 +1,5 @@
 ---
-title: Como criar e inicializar fontes de rastreamento
+title: 'Como: criar e inicializar fontes de rastreamento'
 description: Crie e inicialize fontes de rastreamento usando a classe de rastreamento no .NET. Essa classe fornece métodos para rastreamento de eventos e dados e emissão de rastreamentos informativos.
 ms.date: 03/30/2017
 dev_langs:
@@ -10,13 +10,15 @@ helpviewer_keywords:
 - initializing trace sources
 - configuration files [.NET Framework], trace sources
 ms.assetid: f88dda6f-5fda-45be-9b3c-745a9b708c4d
-ms.openlocfilehash: 55d7854bff991ba185d3f5d6e4c6e7222c9e3039
-ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.openlocfilehash: 3c3624dce9e860a46a9c8c9e9075a03a7c47cb8d
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86051266"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96244126"
 ---
-# <a name="how-to-create-and-initialize-trace-sources"></a>Como criar e inicializar fontes de rastreamento
+# <a name="how-to-create-and-initialize-trace-sources"></a>Como: criar e inicializar fontes de rastreamento
+
 A classe <xref:System.Diagnostics.TraceSource> é usada por aplicativos para produzir rastreamentos que podem ser associados ao aplicativo. <xref:System.Diagnostics.TraceSource> fornece métodos de rastreamento que permitem rastrear eventos com facilidade, rastrear dados e emitir rastreamentos informativos. A saída de rastreamento de <xref:System.Diagnostics.TraceSource> pode ser criada e inicializada com ou sem o uso de arquivos de configuração. Este tópico fornece instruções para ambas as opções. No entanto, recomendamos o uso de arquivos de configuração para facilitar a reconfiguração dos rastreamentos produzidos por origens de rastreamento em tempo de execução.  
   
 ### <a name="to-create-and-initialize-a-trace-source-using-a-configuration-file"></a>Para criar e inicializar uma origem de rastreamento usando um arquivo de configuração  
@@ -76,10 +78,10 @@ A classe <xref:System.Diagnostics.TraceSource> é usada por aplicativos para pro
      [!code-csharp[TraceSourceExample2#1](../../../samples/snippets/csharp/VS_Snippets_CLR/tracesourceexample2/cs/program.cs#1)]
      [!code-vb[TraceSourceExample2#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/tracesourceexample2/vb/program.vb#1)]  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - <xref:System.Diagnostics.TraceSource>
 - <xref:System.Diagnostics.TextWriterTraceListener>
 - <xref:System.Diagnostics.ConsoleTraceListener>
 - <xref:System.Diagnostics.EventTypeFilter>
-- [Rastreamento e instrumentação de aplicativos](tracing-and-instrumenting-applications.md)
+- [Como rastrear e instrumentar aplicativos](tracing-and-instrumenting-applications.md)

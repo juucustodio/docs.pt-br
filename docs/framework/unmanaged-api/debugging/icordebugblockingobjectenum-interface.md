@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugBlockingObjectEnum'
 title: Interface ICorDebugBlockingObjectEnum
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 208e5c2d-3f3f-404e-8b3c-7cccc14ddb16
 topic_type:
 - apiref
-ms.openlocfilehash: 8be4332da77c3fbf4229a3fbeb9ba835a7a13eee
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 4f28039cb8a9bdcb376a9acf22572d29e41a2adf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82894799"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754063"
 ---
 # <a name="icordebugblockingobjectenum-interface"></a>Interface ICorDebugBlockingObjectEnum
+
 Fornece um enumerador para uma lista de estruturas [CorDebugBlockingObject](cordebugblockingobject-structure.md) . Essa interface é uma subclasse da interface ICorDebugEnum.  
   
 ## <a name="methods"></a>Métodos  
@@ -31,12 +33,14 @@ Fornece um enumerador para uma lista de estruturas [CorDebugBlockingObject](cord
 |[Método Next](icordebugblockingobjectenum-next-method.md)|Enumera por meio de uma lista de estruturas [CorDebugBlockingObject](cordebugblockingobject-structure.md) .|  
   
 ## <a name="remarks"></a>Comentários  
+
  Cada `CorDebugBlockingObject` estrutura representa um objeto que está bloqueando um thread.  
   
 > [!NOTE]
 > Esta interface não dá suporte para chamada remota, seja entre computadores ou processos cruzados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

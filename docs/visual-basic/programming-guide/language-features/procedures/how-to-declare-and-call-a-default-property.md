@@ -10,14 +10,15 @@ helpviewer_keywords:
 - Visual Basic code, properties
 - default properties
 ms.assetid: 68b4026e-09ef-4613-808e-f6287494ff63
-ms.openlocfilehash: 4de5d94a94e764d1fc543ffae41b00a9bb729c94
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 21aa6e6a9bba23d767b9d1fac610eaac3265550d
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84388148"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91087447"
 ---
 # <a name="how-to-declare-and-call-a-default-property-in-visual-basic"></a>Como declarar e chamar uma propriedade padrão no Visual Basic
+
 Uma *propriedade padrão* é uma classe ou propriedade de estrutura que seu código pode acessar sem especificá-la. Ao chamar o código, uma classe ou estrutura, mas não uma propriedade, e o contexto permite acesso a uma propriedade, Visual Basic resolve o acesso a essa classe ou propriedade padrão da estrutura, se houver.  
   
  Uma classe ou estrutura pode ter no máximo uma propriedade padrão. No entanto, você pode sobrecarregar uma propriedade padrão e ter mais de uma versão dela.  
@@ -61,11 +62,13 @@ Uma *propriedade padrão* é uma classe ou propriedade de estrutura que seu cód
      [!code-vb[VbVbcnProcedures#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#19)]  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir declara uma propriedade padrão em uma classe.  
   
  [!code-vb[VbVbcnProcedures#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#12)]  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir demonstra como chamar a propriedade default `myProperty` na classe `class1` . As três instruções de atribuição armazenam valores em `myProperty` e a <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A> chamada lê os valores.  
   
  [!code-vb[VbVbcnProcedures#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#13)]  
@@ -73,6 +76,7 @@ Uma *propriedade padrão* é uma classe ou propriedade de estrutura que seu cód
  O uso mais comum de uma propriedade padrão é a <xref:Microsoft.VisualBasic.Collection.Item%2A> propriedade em várias classes de coleção.  
   
 ## <a name="robust-programming"></a>Programação robusta  
+
  As propriedades padrão podem resultar em uma pequena redução em caracteres de código-fonte, mas podem tornar seu código mais difícil de ler. Se o código de chamada não estiver familiarizado com sua classe ou estrutura, quando ele fizer uma referência ao nome da classe ou da estrutura, ele não poderá ter certeza se essa referência acessa a classe ou estrutura em si ou uma propriedade padrão. Isso pode levar a erros de compilador ou erros de lógica de tempo de execução sutis.  
   
  Você pode, de certa forma, reduzir a chance de erros de propriedade padrão sempre usando a [instrução Option Strict](../../../language-reference/statements/option-strict-statement.md) para definir a verificação de tipo de compilador como `On` .  

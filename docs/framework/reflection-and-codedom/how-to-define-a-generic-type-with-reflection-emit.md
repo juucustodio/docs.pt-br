@@ -11,14 +11,15 @@ helpviewer_keywords:
 - generics [.NET Framework], dynamic types
 - reflection emit, generic types
 ms.assetid: 07d5f01a-7b5b-40ea-9b15-f21561098fe4
-ms.openlocfilehash: fe8fb731fd160ab87e5c65debf367a96bc0dea2a
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: 75076eb9ce1b9bfc6b3c8b5a48e200ca5e63cdff
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86865119"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96263458"
 ---
 # <a name="how-to-define-a-generic-type-with-reflection-emit"></a>Como: Definir um tipo genérico com a emissão de reflexão
+
 Este tópico mostra como criar um tipo genérico simples com dois parâmetros de tipo, como aplicar restrições de classe, restrições de interface e restrições especiais aos parâmetros de tipo e como criar membros que usam os parâmetros de tipo da classe como tipos de parâmetro e tipos de retorno.  
   
 > [!IMPORTANT]
@@ -110,6 +111,7 @@ Este tópico mostra como criar um tipo genérico simples com dois parâmetros de
      [!code-vb[EmitGenericType#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/EmitGenericType/VB/source.vb#10)]  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo de código a seguir define uma classe chamada `Sample`, junto com uma classe base e duas interfaces. O programa define dois parâmetros de tipo genérico para `Sample`, transformando-o em um tipo genérico. Os parâmetros de tipo são a única coisa que torna um tipo genérico. O programa mostra isso exibindo uma mensagem de teste antes e após a definição dos parâmetros de tipo.  
   
  O parâmetro de tipo `TSecond` é usado para demonstrar as restrições de interface e de classe, usando a classe base e interfaces e o parâmetro de tipo `TFirst` é usado para demonstrar restrições especiais.  
@@ -129,5 +131,5 @@ Este tópico mostra como criar um tipo genérico simples com dois parâmetros de
 ## <a name="see-also"></a>Veja também
 
 - <xref:System.Reflection.Emit.GenericTypeParameterBuilder>
-- [Usando a emissão de reflexão](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/3y322t50(v=vs.100))
-- [Cenários de assemblies dinâmicos para a emissão de reflexão](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/tt9483fk(v=vs.100))
+- [Usando a emissão de reflexão](/previous-versions/dotnet/netframework-4.0/3y322t50(v=vs.100))
+- [Cenários de assemblies dinâmicos para a emissão de reflexão](/previous-versions/dotnet/netframework-4.0/tt9483fk(v=vs.100))

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostSemaphore:: Wait'
 title: Método IHostSemaphore::Wait
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 0da962a3-ce55-44dd-ab7a-14ad7105af4a
 topic_type:
 - apiref
-ms.openlocfilehash: 22d570711c293dd8c0cc6fefd198dd46d6489bea
-ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
+ms.openlocfilehash: 386f9806d6457f30d13e18e7d0d1ab16aafb84ee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83803546"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728422"
 ---
 # <a name="ihostsemaphorewait-method"></a>Método IHostSemaphore::Wait
+
 Faz com que a instância de [IHostSemaphore](ihostsemaphore-interface.md) atual aguarde até que ela seja propriedade ou a quantidade especificada de tempo decorre.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,17 +37,18 @@ HRESULT Wait (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `dwMilliseconds`  
  no O número de milissegundos a aguardar antes de retornar, se a `IHostSemaphore` instância atual não pertence.  
   
  `option`  
  no Um dos valores de [WAIT_OPTION](wait-option-enumeration.md) , especificando a ação que o host deve executar se essa operação bloquear.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
-|S_OK|`Wait`retornado com êxito.|  
+|S_OK|`Wait` retornado com êxito.|  
 |HOST_E_CLRNOTAVAILABLE|O Common Language Runtime (CLR) não foi carregado em um processo ou o CLR está em um estado no qual não pode executar código gerenciado ou processar a chamada com êxito.|  
 |HOST_E_TIMEOUT|A chamada atingiu o tempo limite.|  
 |HOST_E_NOT_OWNER|O chamador não possui o bloqueio.|  
@@ -54,15 +57,16 @@ HRESULT Wait (
 |HOST_E_DEADLOCK|O host detectou um deadlock durante o intervalo de espera e escolheu a `IHostSemaphore` instância atual como uma vítima de deadlock.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRSyncManager](iclrsyncmanager-interface.md)
 - [Interface IHostAutoEvent](ihostautoevent-interface.md)

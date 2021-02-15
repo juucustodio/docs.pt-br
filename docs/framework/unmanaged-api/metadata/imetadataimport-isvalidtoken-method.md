@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport:: IsValidToken'
 title: Método IMetaDataImport::IsValidToken
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: aeb0fc63-9eff-4384-9284-cb9900572d74
 topic_type:
 - apiref
-ms.openlocfilehash: 9190d021b801be951d214406dde7e6d76da15608
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 68589496213c93f81cfbd0992f9b210e03d6f178
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503431"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789054"
 ---
 # <a name="imetadataimportisvalidtoken-method"></a>Método IMetaDataImport::IsValidToken
+
 Obtém um valor que indica se o token especificado contém uma referência válida a um objeto de código.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,22 +36,25 @@ BOOL IsValidToken (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `tk`  
  no O token para verificar a validade de referência.  
   
-## <a name="return-value"></a>Valor Retornado  
- `true`Se `tk` é um token de metadados válido dentro do escopo atual. Caso contrário, `false`.  
+## <a name="return-value"></a>Valor retornado  
+
+ `true` Se `tk` é um token de metadados válido dentro do escopo atual. Caso contrário, `false`.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Incluído como um recurso em MsCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport](imetadataimport-interface.md)
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)

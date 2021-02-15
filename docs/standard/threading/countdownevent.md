@@ -1,21 +1,22 @@
 ---
+description: 'Saiba mais sobre: CountdownEvent'
 title: CountdownEvent
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - synchronization primitives, CountdownEvent
 ms.assetid: eec3812a-e20f-4ecd-bfef-6921d508b708
-ms.openlocfilehash: 8ed1414ad377015400d9e126d924bf426fbc753d
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 8b16666c6419b0b63a45182ee9f383476d6858cf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84277850"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675449"
 ---
 # <a name="countdownevent"></a>CountdownEvent
+
 <xref:System.Threading.CountdownEvent?displayProperty=nameWithType> é um primitivo de sincronização que desbloqueia seus threads em espera após ser sinalizado um determinado número de vezes. <xref:System.Threading.CountdownEvent> foi projetado para cenários em que, caso contrário, seria necessário usar um <xref:System.Threading.ManualResetEvent> ou um <xref:System.Threading.ManualResetEventSlim> e diminuir manualmente uma variável antes de sinalizar o evento. Por exemplo, em um cenário de bifurcação/junção, basta criar um <xref:System.Threading.CountdownEvent> que tenha uma contagem de sinal de 5 e, em seguida, iniciar cinco itens de trabalho no pool de threads e fazer com que cada item de trabalho chame <xref:System.Threading.CountdownEvent.Signal%2A> quando ele for concluído. Cada chamada para <xref:System.Threading.CountdownEvent.Signal%2A> diminui a contagem de sinal em 1. No thread principal, a chamada para <xref:System.Threading.CountdownEvent.Wait%2A> será bloqueada até que a contagem de sinal seja zero.  
   
 > [!NOTE]
@@ -29,16 +30,18 @@ ms.locfileid: "84277850"
   
 - As instâncias podem ser reutilizadas após <xref:System.Threading.CountdownEvent.Wait%2A> ser retornado ao chamar o método <xref:System.Threading.CountdownEvent.Reset%2A>.  
   
-- As instâncias expõem um <xref:System.Threading.WaitHandle> para integração com outra APIs de sincronização do .NET Framework, como <xref:System.Threading.WaitHandle.WaitAll%2A>.  
+- As instâncias expõem um <xref:System.Threading.WaitHandle> para integração com outras APIs de sincronização do .net, como <xref:System.Threading.WaitHandle.WaitAll%2A> .  
   
 ## <a name="basic-usage"></a>Uso básico  
+
  O exemplo a seguir demonstra como usar um <xref:System.Threading.CountdownEvent> com itens de trabalho <xref:System.Threading.ThreadPool>.  
   
  [!code-csharp[CDS_CountdownEvent#01](../../../samples/snippets/csharp/VS_Snippets_Misc/cds_countdownevent/cs/countdownevent.cs#01)]
  [!code-vb[CDS_CountdownEvent#01](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds_countdownevent/vb/module1.vb#01)]  
   
 ## <a name="countdownevent-with-cancellation"></a>CountdownEvent com cancelamento  
- O exemplo a seguir mostra como cancelar a operação de espera em <xref:System.Threading.CountdownEvent> usando um token de cancelamento. O padrão básico segue o modelo do cancelamento unificado introduzido no .NET Framework 4. Para obter mais informações, consulte [cancelamento em threads gerenciados](cancellation-in-managed-threads.md).  
+
+ O exemplo a seguir mostra como cancelar a operação de espera em <xref:System.Threading.CountdownEvent> usando um token de cancelamento. O padrão básico segue o modelo para cancelamento unificado, que foi introduzido no .NET Framework 4. Para obter mais informações, consulte [cancelamento em threads gerenciados](cancellation-in-managed-threads.md).  
   
  [!code-csharp[CDS_CountdownEvent#02](../../../samples/snippets/csharp/VS_Snippets_Misc/cds_countdownevent/cs/countdownevent.cs#02)]
  [!code-vb[CDS_CountdownEvent#02](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds_countdownevent/vb/canceleventwait.vb#02)]  

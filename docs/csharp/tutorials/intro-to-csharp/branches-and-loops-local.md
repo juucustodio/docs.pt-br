@@ -3,18 +3,20 @@ title: Tutorial Branches e loops – introdução ao C#
 description: Neste tutorial sobre branches e loops, você escreve código em C# para explorar a sintaxe de linguagem que dá suporte a branches e loops condicionais para execução repetida de instruções.
 ms.date: 10/31/2017
 ms.custom: mvc
-ms.openlocfilehash: d67cfe359634783bb542e9ac34df52a095b45c20
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: 1c93c96217abf041b14b94aafcdfe85bb7018528
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396876"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585696"
 ---
 # <a name="learn-conditional-logic-with-branch-and-loop-statements"></a>Saiba mais sobre lógica condicional com instruções branch e loop
 
 Este tutorial ensina a escrever código que examina variáveis e muda o caminho de execução com base nessas variáveis. Escreva o código em C# e veja os resultados da compilação e da execução. O tutorial contém uma série de lições que exploram construções de branches e loops em C#. Estas lições ensinam os princípios básicos da linguagem C#.
 
-Este tutorial espera que você tenha um computador que possa usar para desenvolvimento. O tutorial do .NET [Olá, mundo em 10 minutos](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) tem instruções para configurar seu ambiente de desenvolvimento local no Windows, Linux ou MacOS. Uma visão geral dos comandos que você usará está em [Familiarize-se com as ferramentas de desenvolvimento](local-environment.md), com links para obter mais detalhes.
+## <a name="prerequisites"></a>Pré-requisitos
+
+O tutorial espera que você tenha uma máquina configurada para desenvolvimento local. No Windows, Linux ou macOS, você pode usar a CLI do .NET para criar, compilar e executar aplicativos. No Windows, você pode usar o Visual Studio 2019. Para obter instruções de instalação, consulte [configurar seu ambiente local](local-environment.md).
 
 ## <a name="make-decisions-using-the-if-statement"></a>Tome decisões usando a instrução `if`
 
@@ -24,7 +26,7 @@ Crie um diretório chamado *branches-tutorial*. Faça com que o diretório atual
 dotnet new console -n BranchesAndLoops -o .
 ```
 
-Esse comando cria um novo aplicativo de console .NET Core no diretório atual.
+Este comando cria um novo aplicativo de console .NET no diretório atual.
 
 Abra *Program.cs* em seu editor favorito e substitua a linha `Console.WriteLine("Hello World!");` pelo seguinte código:
 
@@ -237,7 +239,7 @@ O código anterior faz o mesmo trabalho que o `while` loop e o `do` loop que voc
 
 A primeira parte é o **inicializador de para**: `int index = 0;` declara que `index` é a variável de loop e define seu valor inicial como `0` .
 
-A parte intermediária é a **condição**for: `index < 10` declara que esse `for` loop continua a ser executado, desde que o valor do contador seja menor que 10.
+A parte intermediária é a **condição** for: `index < 10` declara que esse `for` loop continua a ser executado, desde que o valor do contador seja menor que 10.
 
 A parte final é o **para iterador**: `index++` especifica como modificar a variável de loop depois de executar o bloco após a `for` instrução. Aqui, ela especifica que `index` deve ser incrementado com 1 sempre que o bloco for executado.
 
@@ -248,7 +250,7 @@ Experimente por conta própria. Experimente cada uma das seguintes variações:
 
 Quando terminar, vamos escrever um código para usar o que você aprendeu.
 
-Há uma outra instrução de looping que não é abordada neste tutorial: a `foreach` instrução. A `foreach` instrução repete sua instrução para cada item em uma sequência de itens. Ele é usado com mais frequência com *coleções*e, portanto, é abordado no próximo tutorial.
+Há uma outra instrução de looping que não é abordada neste tutorial: a `foreach` instrução. A `foreach` instrução repete sua instrução para cada item em uma sequência de itens. Ele é usado com mais frequência com *coleções* e, portanto, é abordado no próximo tutorial.
 
 ## <a name="created-nested-loops"></a>Loops aninhados criados
 

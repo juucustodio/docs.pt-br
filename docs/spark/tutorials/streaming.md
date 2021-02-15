@@ -3,28 +3,26 @@ title: Tutorial estruturado com .NET para Apache Spark
 description: Neste tutorial, você aprenderá a usar o .NET para Apache Spark para o streaming estruturado do Spark.
 author: mamccrea
 ms.author: mamccrea
-ms.date: 06/25/2020
+ms.date: 10/09/2020
 ms.topic: tutorial
-ms.openlocfilehash: 5420fe081db1704d7af647e8c88826c1bcf614d9
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 3a02ac52155971f480c7f0c338d4a2a9a7d1d81c
+ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85617837"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94688014"
 ---
 # <a name="tutorial-structured-streaming-with-net-for-apache-spark"></a>Tutorial: streaming estruturado com .NET para Apache Spark
 
 Este tutorial ensina como invocar o streaming estruturado do Spark usando o .NET para Apache Spark. O streaming estruturado do Spark é o suporte de Apache Spark para o processamento de fluxos de dados em tempo real. Processamento de fluxo significa analisar dados dinâmicos conforme eles estão sendo produzidos.
 
-Neste tutorial, você aprenderá como:
+Neste tutorial, você aprenderá a:
 
 > [!div class="checklist"]
 >
 > * Criar e executar um aplicativo .NET para Apache Spark
 > * Usar netcat para criar um fluxo de dados
 > * Usar funções definidas pelo usuário e SparkSQL para analisar dados de streaming
-
-[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -147,14 +145,14 @@ StreamingQuery query = arrayDf
 
 ## <a name="run-your-code"></a>Executar seu código
 
-O streaming estruturado no Spark processa dados por meio de uma série de **lotes**pequenos.  Quando você executa o programa, o prompt de comando no qual você estabelece a conexão netcat permite que você comece a digitar. Cada vez que você pressiona a tecla ENTER depois de digitar dados nesse prompt de comando, o Spark considera sua entrada em um lote e executa o UDF.
+O streaming estruturado no Spark processa dados por meio de uma série de **lotes** pequenos.  Quando você executa o programa, o prompt de comando no qual você estabelece a conexão netcat permite que você comece a digitar. Cada vez que você pressiona a tecla ENTER depois de digitar dados nesse prompt de comando, o Spark considera sua entrada em um lote e executa o UDF.
 
 ### <a name="use-spark-submit-to-run-your-app"></a>Use o Spark-Submit para executar seu aplicativo
 
 Depois de iniciar uma nova sessão do netcat, abra um novo terminal e execute o `spark-submit` comando, semelhante ao seguinte comando:
 
 ```powershell
-spark-submit --class org.apache.spark.deploy.dotnet.DotnetRunner --master local /path/to/microsoft-spark-<version>.jar Microsoft.Spark.CSharp.Examples.exe Sql.Streaming.StructuredNetworkCharacterCount localhost 9999
+spark-submit --class org.apache.spark.deploy.dotnet.DotnetRunner --master local /path/to/microsoft-spark-<spark_majorversion-spark_minorversion>_<scala_majorversion.scala_minorversion>-<spark_dotnet_version>.jar Microsoft.Spark.CSharp.Examples.exe Sql.Streaming.StructuredNetworkCharacterCount localhost 9999
 ```
 
 > [!NOTE]

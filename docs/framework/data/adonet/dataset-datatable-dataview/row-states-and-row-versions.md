@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: Estados de linha e versões de linha'
 title: Estados de linha e versões de linha
 ms.date: 07/19/2018
 dev_langs:
 - csharp
 - vb
 ms.assetid: 2e6642c9-bfc6-425c-b3a7-e4912ffa6c1f
-ms.openlocfilehash: 70596d6acb62fa01092e5e55dd3b6c84eb162b5d
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 7d436ffcfcf59f5daa4fc6eaa9f9018b92e5c608
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70784335"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651672"
 ---
 # <a name="row-states-and-row-versions"></a>Estados de linha e versões de linha
+
 O ADO.NET gerencia linhas nas tabelas usando estados de linha e versões. Um estado de linha indica o status de uma linha; as versões de linha mantêm os valores armazenados em uma linha à medida que são modificados, incluindo os valores atuais, originais e padrão. Por exemplo, depois que você tiver feito uma alteração em uma coluna em uma linha, a linha terá um estado de linha de `Modified` e duas versões de linha: `Current`, que contém os valores atuais de linha e `Original`, que contém os valores de linha antes que a coluna foi modificada.  
   
  Cada objeto <xref:System.Data.DataRow> tem uma propriedade <xref:System.Data.DataRow.RowState%2A> que você pode examinar para determinar o estado atual da linha. A tabela a seguir dá a você uma breve descrição de cada valor de enumeração `RowState`.  
@@ -96,7 +98,7 @@ foreach (DataRow delRow in delRows)
   
 ## <a name="see-also"></a>Consulte também
 
-- [Manipulação de dados em uma DataTable](manipulating-data-in-a-datatable.md)
-- [DataSets, DataTables, and DataViews](index.md) (DataSets, DataTables e DataViews)
+- [Manipulando dados em uma DataTable](manipulating-data-in-a-datatable.md)
+- [DataSets, DataTables e DataViews](index.md)
 - [DataAdapters e DataReaders](../dataadapters-and-datareaders.md)
-- [ADO.NET Overview](../ado-net-overview.md) (Visão geral do ADO.NET)
+- [Visão geral do ADO.NET](../ado-net-overview.md)

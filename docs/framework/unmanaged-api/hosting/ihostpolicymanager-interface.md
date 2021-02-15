@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface O IHostPolicyManager'
 title: Interface IHostPolicyManager
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 8c4aa124-5e00-46d9-b1e8-57ba6574bb0d
 topic_type:
 - apiref
-ms.openlocfilehash: d6b34403a45cc40863d79b59396041e496989045
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: d823ee2526019188afd17df903b61a720e18207f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503916"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671905"
 ---
 # <a name="ihostpolicymanager-interface"></a>Interface IHostPolicyManager
+
 Fornece métodos que notificam o host das ações que o Common Language Runtime (CLR) executa em caso de anulações, tempos limite ou falhas.  
   
 ## <a name="methods"></a>Métodos  
@@ -33,15 +35,16 @@ Fornece métodos que notificam o host das ações que o Common Language Runtime 
 |[Método OnTimeout](ihostpolicymanager-ontimeout-method.md)|Notifica o host de que o CLR está prestes a executar a ação especificada por uma chamada para [ICLRPolicyManager:: SetActionOnTimeout](iclrpolicymanager-setactionontimeout-method.md) em resposta a um tempo limite.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumeração EClrFailure](eclrfailure-enumeration.md)
 - [Enumeração EClrOperation](eclroperation-enumeration.md)

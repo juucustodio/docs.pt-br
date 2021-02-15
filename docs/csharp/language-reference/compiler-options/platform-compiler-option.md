@@ -10,10 +10,10 @@ helpviewer_keywords:
 - /platform compiler option [C#]
 ms.assetid: c290ff5e-47f4-4a85-9bb3-9c2525b0be04
 ms.openlocfilehash: 3fdb030dfc141b011f5faa827a4e4bb45ae38d19
-ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2020
+ms.lasthandoff: 11/26/2020
 ms.locfileid: "89466008"
 ---
 # <a name="-platform-c-compiler-options"></a>-platform (opções do compilador C#)
@@ -82,7 +82,7 @@ O exemplo a seguir mostra como usar a opção **-platform** para especificar que
 csc -platform:anycpu filename.cs
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Opções do compilador C#](index.md)
+- [Opções do compilador de C#](index.md)
 - [Gerenciando propriedades de solução e de projeto](/visualstudio/ide/managing-project-and-solution-properties)

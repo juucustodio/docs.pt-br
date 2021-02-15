@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorPublishProcess:: getprocessid'
 title: Método ICorPublishProcess::GetProcessID
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: f31185e0-f01d-463a-b392-42163e39bfe9
 topic_type:
 - apiref
-ms.openlocfilehash: 95a4ef3ab77b33c67c63be2c22647075f2f95ce8
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: f959a49330e0ef4ade2a878acfd287657b5086ec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83421105"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728802"
 ---
 # <a name="icorpublishprocessgetprocessid-method"></a>Método ICorPublishProcess::GetProcessID
+
 Obtém o identificador do sistema operacional para esse processo.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,10 +36,12 @@ HRESULT GetProcessID (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pid`  
  fora Um ponteiro para o identificador do processo representado por esse objeto [ICorPublishProcess](icorpublishprocess-interface.md) .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorPub. idl, CorPub. h  
@@ -46,6 +50,6 @@ HRESULT GetProcessID (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorPublishProcess](icorpublishprocess-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como controlar a disponibilidade de uma variável (Visual Basic)'
 title: Como controlar a disponibilidade de uma variável
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,14 +12,15 @@ helpviewer_keywords:
 - declared elements [Visual Basic], access level
 - Protected keyword [Visual Basic], accessing variables
 ms.assetid: eaf4f073-7922-43ce-ae1e-90ff376ae947
-ms.openlocfilehash: 0bfa7fa2bdac4746827884c1dad62734c549a48e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 3fa21a804008f31da9003aa847752f749154d602
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84357381"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429878"
 ---
 # <a name="how-to-control-the-availability-of-a-variable-visual-basic"></a>Como controlar a disponibilidade de uma variável (Visual Basic)
+
 Você controla a disponibilidade de uma variável especificando seu *nível de acesso*. O nível de acesso determina qual código tem permissão para ler ou gravar na variável.  
   
 - As *variáveis de membro* (definidas em nível de módulo e fora de qualquer procedimento) assumem o padrão de acesso público, o que significa que qualquer código que possa vê-las pode acessá-las. Você pode alterar isso especificando um modificador de acesso.  
@@ -54,6 +56,7 @@ Você controla a disponibilidade de uma variável especificando seu *nível de a
      Você pode ler ou gravar na variável de qualquer lugar dentro do procedimento, mas não de fora dela.  
   
 ## <a name="protected-and-friend-access"></a>Acesso protegido e amigo  
+
  Você pode limitar o nível de acesso de uma variável à sua classe e a todas as classes derivadas ou a seu assembly. Você também pode especificar a União dessas limitações, que permite o acesso a partir do código em qualquer classe derivada ou em qualquer outro lugar no mesmo assembly. Você especifica essa União combinando as `Protected` `Friend` palavras-chave e na mesma declaração.  
   
 #### <a name="to-make-a-variable-accessible-only-from-within-its-class-and-any-derived-classes"></a>Para tornar uma variável acessível somente de dentro de sua classe e de quaisquer classes derivadas  
@@ -73,6 +76,7 @@ Você controla a disponibilidade de uma variável especificando seu *nível de a
      Você pode ler ou gravar na variável de qualquer lugar dentro do módulo, da classe ou da estrutura, bem como de qualquer código no mesmo assembly, mas não de fora do assembly.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir mostra declarações de variáveis `Public` com `Protected` `Friend` os níveis de acesso,,, `Protected Friend` e `Private` . Observe que, quando a `Dim` instrução especifica um nível de acesso, você não precisa incluir a `Dim` palavra-chave.  
   
 ```vb  
@@ -84,13 +88,14 @@ Private numberForMeOnly As Integer
 ```  
   
 ## <a name="net-framework-security"></a>Segurança do .NET Framework  
+
  Quanto mais restritiva for o nível de acesso de uma variável, menor será a probabilidade de que o código mal-intencionado possa usar o uso impróprio.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Níveis de acesso no Visual Basic](access-levels.md)
 - [Instrução Dim](../../../language-reference/statements/dim-statement.md)
-- [Pública](../../../language-reference/modifiers/public.md)
+- [Público](../../../language-reference/modifiers/public.md)
 - [Protected](../../../language-reference/modifiers/protected.md)
-- [Público](../../../language-reference/modifiers/friend.md)
-- [Privada](../../../language-reference/modifiers/private.md)
+- [Friend](../../../language-reference/modifiers/friend.md)
+- [Privado](../../../language-reference/modifiers/private.md)

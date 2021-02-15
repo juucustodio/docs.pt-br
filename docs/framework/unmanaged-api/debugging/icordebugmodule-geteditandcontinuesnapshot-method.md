@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugModule:: GetEditAndContinueSnapshot'
 title: Método ICorDebugModule::GetEditAndContinueSnapshot
 ms.date: 03/30/2017
 api_name:
@@ -15,17 +16,18 @@ helpviewer_keywords:
 ms.assetid: fad94e1e-78be-440f-aa43-e0c66e0b102e
 topic_type:
 - apiref
-ms.openlocfilehash: 5bb8ec0110aec5ffd442dd8e8d8ee3f96fe4b6db
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 63ec84c40f3fc11308a657e2161c95b828db1fb2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83212589"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99691725"
 ---
 # <a name="icordebugmodulegeteditandcontinuesnapshot-method"></a>Método ICorDebugModule::GetEditAndContinueSnapshot
+
 Preterido.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT GetEditAndContinueSnapshot(  
@@ -34,6 +36,7 @@ HRESULT GetEditAndContinueSnapshot(
 ```  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: ConcurrencyMode reentrante'
 title: ConcurrencyMode Reentrant
 ms.date: 03/30/2017
 ms.assetid: b2046c38-53d8-4a6c-a084-d6c7091d92b1
-ms.openlocfilehash: 67e719afd40b52f37c777cf9791291a16878592f
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: f423722d87a8ab9567e0631afbb6bff68fd22b7a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600082"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99778510"
 ---
 # <a name="concurrencymode-reentrant"></a>ConcurrencyMode Reentrant
+
 Este exemplo demonstra a necessidade e as implicações de usar ConcurrencyMode. reentrante em uma implementação de serviço. ConcurrencyMode. Reentrant implica que o serviço (ou retorno de chamada) processa apenas uma mensagem em um determinado momento (análogo a `ConcurencyMode.Single` ). Para garantir a segurança do thread, o Windows Communication Foundation (WCF) bloqueia `InstanceContext` uma mensagem para que nenhuma outra mensagem possa ser processada. No caso do modo reentrante, o `InstanceContext` é desbloqueado antes de o serviço fazer uma chamada de saída, permitindo, assim, a chamada subsequente, (que pode ser reentrante como demonstrado no exemplo) para obter o bloqueio na próxima vez que chegar ao serviço. Para demonstrar o comportamento, o exemplo mostra como um cliente e um serviço podem enviar mensagens entre si usando um contrato duplex.  
   
  O contrato definido é um contrato duplex com o `Ping` método que está sendo implementado pelo serviço e o método de retorno de chamada `Pong` que está sendo implementado pelo cliente. Um cliente invoca o método do servidor `Ping` com uma contagem em escala, iniciando a chamada. O serviço verifica se a contagem de tiques não é igual a 0 e, em seguida, invoca o método de retornos de chamada `Pong` ao decrementar a contagem de tiques. Isso é feito pelo código a seguir no exemplo.  
@@ -53,7 +55,8 @@ public void Pong(int ticks)
 3. Para executar o exemplo em uma configuração de computador único ou cruzado, siga as instruções em [executando os exemplos de Windows Communication Foundation](running-the-samples.md).  
   
 ## <a name="demonstrates"></a>Demonstra  
- Para executar o exemplo, compile os projetos de cliente e servidor. Em seguida, abra duas janelas de comando e altere os diretórios para os \<sample> diretórios \CS\Service\bin\debug e \<sample> \CS\Client\bin\debug. Em seguida, inicie o serviço digitando `service.exe` e, em seguida, invoque o Client. exe com o valor inicial de tiques passado como um argumento de entrada. Uma saída de exemplo para 10 tiques é mostrada.  
+
+ Para executar o exemplo, compile os projetos de cliente e servidor. Em seguida, abra duas janelas de comando e altere os diretórios para os \<sample> diretórios \CS\Service\bin\debug e \<sample> \CS\Client\bin\debug. Em seguida, inicie o serviço digitando `service.exe` e, em seguida, invoque o Client.exe com o valor inicial de tiques passado como um argumento de entrada. Uma saída de exemplo para 10 tiques é mostrada.  
   
 ```console  
 Prompt>Service.exe  

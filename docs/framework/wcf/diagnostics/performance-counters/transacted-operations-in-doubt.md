@@ -1,16 +1,19 @@
 ---
+description: 'Saiba mais sobre: operações transacionadas em dúvida'
 title: Operações Transacionadas em Dúvida
 ms.date: 03/30/2017
 ms.assetid: 83c7a86d-37de-4c6a-aa09-5d53fc4476b6
-ms.openlocfilehash: be72ce5773f997c0b2fb2981dbbcf74bc3a35b55
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: a3cb73d027a1a55232df487fbc6b47e1742c714a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61766409"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99771035"
 ---
 # <a name="transacted-operations-in-doubt"></a>Operações Transacionadas em Dúvida
-Nome do contador: Operações transacionadas em dúvida.  
+
+Nome do contador: operações transacionadas em dúvida.  
   
 ## <a name="description"></a>Descrição  
- Número de operações transacionais com resultados em dúvida neste serviço.
+
+ Número de operações transacionais com um resultado incerto nesse serviço.

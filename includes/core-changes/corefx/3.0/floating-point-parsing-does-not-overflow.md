@@ -1,16 +1,16 @@
 ---
 ms.openlocfilehash: 935d9b2368ea4a0eeca7943dcbd584d24d2a6633
-ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83721470"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96031958"
 ---
 ### <a name="floating-point-parsing-operations-no-longer-fail-or-throw-an-overflowexception"></a>Operações de análise de ponto flutuante não falham mais ou geram uma estourexception
 
 Os métodos de análise de ponto flutuante não geram mais um <xref:System.OverflowException> retorno ou retornam `false` quando analisam uma cadeia de caracteres cujo valor numérico está fora do intervalo do <xref:System.Single> tipo de <xref:System.Double> ponto flutuante.
 
-#### <a name="change-description"></a>Descrição da alteração
+#### <a name="change-description"></a>Descrição das alterações
 
 No .NET Core 2,2 e versões anteriores, os <xref:System.Double.Parse%2A?displayProperty=nameWithType> <xref:System.Single.Parse%2A?displayProperty=nameWithType> métodos e geram um <xref:System.OverflowException> para valores que estão fora do intervalo de seus respectivos tipos. Os <xref:System.Double.TryParse%2A?displayProperty=nameWithType> <xref:System.Single.TryParse%2A?displayProperty=nameWithType> métodos e retornam `false` para as representações de cadeia de caracteres de valores numéricos fora do intervalo.
 

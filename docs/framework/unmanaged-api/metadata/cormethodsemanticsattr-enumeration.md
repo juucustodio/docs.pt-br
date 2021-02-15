@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração CorMethodSemanticsAttr'
 title: Enumeração CorMethodSemanticsAttr
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: ca2af325-eb9d-4a91-90e4-267e45b98611
 topic_type:
 - apiref
-ms.openlocfilehash: 1572c206f4a5a5fe0fd189ca84d0bcda2249c6d4
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 4079e81ae2389ff0684fd11d0751b191a7289932
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84007644"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784360"
 ---
 # <a name="cormethodsemanticsattr-enumeration"></a>Enumeração CorMethodSemanticsAttr
+
 Contém valores que descrevem a relação entre um método e uma propriedade ou evento associado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -41,7 +43,7 @@ typedef enum CorMethodSemanticsAttr {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`msSetter`|Especifica que o método é um `set` acessador para uma propriedade.|  
 |`msGetter`|Especifica que o método é um `get` acessador para uma propriedade.|  
@@ -51,12 +53,13 @@ typedef enum CorMethodSemanticsAttr {
 |`msFire`|Especifica que o método gera um evento.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorHdr. h  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumerações de metadados](metadata-enumerations.md)

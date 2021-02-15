@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 3343-EstablishConnectionStop'
 title: 3343 - EstablishConnectionStop
 ms.date: 03/30/2017
 ms.assetid: 4ddbaae5-2de0-45d0-90d2-0ab135fea31f
-ms.openlocfilehash: a4563b2f01b767deef5663deffb6d897db73256c
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: bd628bcc321ceb130e7765b99f980b993c835a1b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61971516"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788586"
 ---
 # <a name="3343---establishconnectionstop"></a>3343 - EstablishConnectionStop
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,9 +22,11 @@ ms.locfileid: "61971516"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando o estabelecimento de conexão é interrompida.  
+
+ Esse evento é emitido quando o estabelecimento de conexão foi interrompido.  
   
 ## <a name="message"></a>Mensagem  
+
  Conexão estabelecida.  
   
 ## <a name="details"></a>Detalhes

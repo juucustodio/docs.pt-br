@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorAttributeTargets'
 title: Enumeração CorAttributeTargets
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 694c0fa0-7011-41a9-9dfd-f0e16ea574b5
 topic_type:
 - apiref
-ms.openlocfilehash: f1836f26af99f91ab1765107573f6b067edd5e95
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 6f80df31b9da8591fac3d979ede1e9bf0f8ecfc4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84007917"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678481"
 ---
 # <a name="corattributetargets-enumeration"></a>Enumeração CorAttributeTargets
+
 Especifica os elementos do aplicativo no qual ele é válido para aplicar um atributo.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -60,7 +62,7 @@ typedef enum CorAttributeTargets
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`catAssembly`|O atributo pode ser aplicado a um assembly.|  
 |`catModule`|O atributo pode ser aplicado a um módulo executável portátil (. dll ou. exe).|  
@@ -80,17 +82,19 @@ typedef enum CorAttributeTargets
 |`catClassMembers`|O atributo pode ser aplicado a um membro de uma classe.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Os `CorAttributeTargets` valores de enumeração podem ser combinados com uma operação OR bit a bit para obter a combinação preferida.  
   
  O `CorAttributeTargets` paraleliza a enumeração gerenciada <xref:System.AttributeTargets?displayProperty=nameWithType> .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorHdr. h  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumerações de metadados](metadata-enumerations.md)

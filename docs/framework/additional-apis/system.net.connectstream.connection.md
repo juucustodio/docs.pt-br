@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre a propriedade: ConnectStream. Connection'
 title: Propriedade ConnectStream. Connection (System.Net)
 ms.date: 10/21/2019
 ms.technology: dotnet-networking
@@ -11,12 +12,12 @@ api_location:
 - System.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 374d53346c964c5f8135c7e121bd3a2db8a8fd7b
-ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
+ms.openlocfilehash: 26d7141cd63dd579112b962b58f5c5e85a655dc1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84989521"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802509"
 ---
 # <a name="connectstreamconnection-property"></a>Propriedade ConnectStream. Connection
 

@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: d70a8d2a3031a5b3d47ab3fb7f40193dce6e311e
-ms.sourcegitcommit: 7370aa8203b6036cea1520021b5511d0fd994574
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "82728321"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96032287"
 ---
 ### <a name="localization-resourcemanagerwithculturestringlocalizer-and-withculture-marked-obsolete"></a>Localização: ResourceManagerWithCultureStringLocalizer e WithCulture marcados como obsoletos
 
@@ -14,7 +14,7 @@ Para o contexto, consulte [dotnet/aspnetcore # 3324](https://github.com/dotnet/a
 
 #### <a name="version-introduced"></a>Versão introduzida
 
-3,0
+3.0
 
 #### <a name="old-behavior"></a>Comportamento antigo
 

@@ -1,19 +1,19 @@
 ---
 title: Explore os intervalos de dados usando intervalos e índices
-description: Este tutorial avançado ensina você a explorar dados usando intervalos e índices para examinar fatias de um conjunto de dados sequencial.
-ms.date: 03/11/2020
+description: Este tutorial avançado ensina a explorar dados usando índices e intervalos para examinar um intervalo contínuo de um conjunto de dados sequenciais.
+ms.date: 09/11/2020
 ms.technology: csharp-fundamentals
 ms.custom: mvc
-ms.openlocfilehash: 82aad968e2efc437c82a7c8250bcd108b60b09e1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: c0484a42233466e3a2a70a673aee81fce91fe31b
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79156488"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585397"
 ---
 # <a name="indices-and-ranges"></a>Índices e intervalos
 
-Faixas e índices fornecem uma sintaxe sucinta para acessar elementos únicos ou intervalos em uma seqüência.
+Intervalos e índices fornecem uma sintaxe sucinta para acessar elementos únicos ou intervalos em uma sequência.
 
 Neste tutorial, você aprenderá como:
 
@@ -25,14 +25,14 @@ Neste tutorial, você aprenderá como:
 
 ## <a name="language-support-for-indices-and-ranges"></a>Suporte a idioma para intervalos e índices
 
-Este suporte ao idioma conta com dois novos tipos e dois novos operadores:
+Esse suporte a idioma depende de dois novos tipos e de dois novos operadores:
 
 - <xref:System.Index?displayProperty=nameWithType> representa um índice em uma sequência.
-- O índice do `^`operador final , que especifica que um índice é relativo ao fim de uma seqüência.
+- O índice do operador end `^` , que especifica que um índice é relativo ao final de uma sequência.
 - <xref:System.Range?displayProperty=nameWithType> representa um subintervalo de uma sequência.
-- O operador `..`de alcance , que especifica o início e o fim de uma faixa como seus operadores.
+- O operador Range `..` , que especifica o início e o término de um intervalo como seus operandos.
 
-Vamos começar com as regras para índices. Considere uma matriz `sequence`. O índice `0` é o mesmo que `sequence[0]`. O índice `^0` é o mesmo que `sequence[sequence.Length]`. A `sequence[^0]` expressão faz uma exceção, assim como. `sequence[sequence.Length]` Para qualquer número `n`, o índice `^n` é o mesmo que `sequence[sequence.Length - n]`.
+Vamos começar com as regras para índices. Considere uma matriz `sequence`. O índice `0` é o mesmo que `sequence[0]`. O índice `^0` é o mesmo que `sequence[sequence.Length]`. A expressão `sequence[^0]` gera uma exceção, assim como `sequence[sequence.Length]` faz. Para qualquer número `n`, o índice `^n` é o mesmo que `sequence[sequence.Length - n]`.
 
 ```csharp
 string[] words = new string[]
@@ -54,13 +54,13 @@ Você pode recuperar a última palavra com o índice `^1`. Adicione o código a 
 
 [!code-csharp[LastIndex](~/samples/snippets/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_LastIndex)]
 
-Um intervalo especifica o *início* e o *final* de um intervalo. As faixas são exclusivas, o que significa que o *final* não está incluído na gama. O intervalo `[0..^0]` representa todo o intervalo, assim como `[0..sequence.Length]` representa todo o intervalo.
+Um intervalo especifica o *início* e o *final* de um intervalo. Os intervalos são exclusivos, o que significa que o *final* não está incluído no intervalo. O intervalo `[0..^0]` representa todo o intervalo, assim como `[0..sequence.Length]` representa todo o intervalo.
 
 O código a seguir cria um subintervalo com as palavras "quick", "brown" e "fox". Ele inclui `words[1]` até `words[3]`. O elemento `words[4]` não está no intervalo. Adicione o seguinte código ao mesmo método. Copie e cole-o na parte inferior da janela interativa.
 
 [!code-csharp[Range](~/samples/snippets/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_Range)]
 
-O código a seguir cria um subintervalo com "lazy" e "dog". Ele inclui `words[^2]` e `words[^1]`. O índice final `words[^0]` não está incluído. Adicione o seguinte código também:
+O código a seguir retorna o intervalo com "Lazy" e "Dog". Ele inclui `words[^2]` e `words[^1]`. O índice final `words[^0]` não está incluído. Adicione o seguinte código também:
 
 [!code-csharp[LastRange](~/samples/snippets/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_LastRange)]
 
@@ -76,22 +76,31 @@ O exemplo a seguir mostra muitos dos motivos para essas escolhas. Modifique `x`,
 
 [!code-csharp[SemanticsExamples](~/samples/snippets/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_Semantics)]
 
-## <a name="type-support-for-indices-and-ranges"></a>Tipo suporte para índices e faixas
+## <a name="type-support-for-indices-and-ranges"></a>Suporte de tipo para índices e intervalos
 
-Índices e faixas fornecem sintaxe clara e concisa para acessar um único elemento ou uma subgama de elementos em uma seqüência. Uma expressão de índice normalmente retorna o tipo de elementos de uma seqüência. Uma expressão de intervalo normalmente retorna o mesmo tipo de seqüência da seqüência de origem.
+Índices e intervalos fornecem sintaxe clara e concisa para acessar um único elemento ou um intervalo de elementos em uma sequência. Uma expressão de índice normalmente retorna o tipo dos elementos de uma sequência. Uma expressão de intervalo normalmente retorna o mesmo tipo de sequência que a sequência de origem.
 
-Qualquer tipo que forneça um <xref:System.Index> <xref:System.Range> [indexador](../programming-guide/indexers/index.md) com um ou parâmetro suporta explicitamente índices ou faixas, respectivamente. Um indexador que <xref:System.Range> toma um único parâmetro pode <xref:System.Span%601?displayProperty=nameWithType>retornar um tipo de seqüência diferente, como .
+Qualquer tipo que fornece um [indexador](../programming-guide/indexers/index.md) com um <xref:System.Index> <xref:System.Range> parâmetro ou dá suporte explicitamente a índices ou intervalos, respectivamente. Um indexador que usa um único <xref:System.Range> parâmetro pode retornar um tipo de sequência diferente, como <xref:System.Span%601?displayProperty=nameWithType> .
 
-Um tipo é **contável** se `Length` `Count` tiver uma propriedade nomeada ou `int`com um getter acessível e um tipo de retorno de . Um tipo contável que não suporta explicitamente índices ou intervalos pode fornecer um suporte implícito para eles. Para obter mais informações, consulte as seções [de suporte ao Índice Implícito](~/_csharplang/proposals/csharp-8.0/ranges.md#implicit-index-support) e à Faixa [Implícita](~/_csharplang/proposals/csharp-8.0/ranges.md#implicit-range-support) da [nota de proposta de recurso](~/_csharplang/proposals/csharp-8.0/ranges.md). Intervalos usando suporte de intervalo implícito retornam o mesmo tipo de seqüência que a seqüência de origem.
+> [!IMPORTANT]
+> O desempenho do código usando o operador Range depende do tipo do operando de sequência.
+>
+> A complexidade de tempo do operador de intervalo depende do tipo de sequência. Por exemplo, se a sequência for uma `string` matriz ou, o resultado será uma cópia da seção especificada da entrada, portanto, a complexidade de tempo será *o (n)* (em que N é o comprimento do intervalo). Por outro lado, se for um <xref:System.Span%601?displayProperty=nameWithType> ou um <xref:System.Memory%601?displayProperty=nameWithType> , o resultado faz referência ao mesmo armazenamento de backup, o que significa que não há cópia e a operação é *o (1)*.
+>
+> Além da complexidade do tempo, isso causa alocações e cópias extras, afetando o desempenho. Em código sensível ao desempenho, considere usar `Span<T>` ou `Memory<T>` como o tipo de sequência, já que o operador de intervalo não é alocado para eles.
 
-Por exemplo, os seguintes tipos .NET suportam índices e intervalos: <xref:System.String>, <xref:System.Span%601>e <xref:System.ReadOnlySpan%601>. Os <xref:System.Collections.Generic.List%601> índices suportam, mas não suportam faixas.
+Um tipo pode ser **contabilizado** se tiver uma propriedade chamada `Length` ou `Count` com um getter acessível e um tipo de retorno de `int` . Um tipo com contagem que não dá suporte explicitamente a índices ou intervalos pode fornecer um suporte implícito para eles. Para obter mais informações, consulte as seções [suporte ao índice implícito](~/_csharplang/proposals/csharp-8.0/ranges.md#implicit-index-support) e [suporte de intervalo implícito](~/_csharplang/proposals/csharp-8.0/ranges.md#implicit-range-support) da [Nota de proposta de recurso](~/_csharplang/proposals/csharp-8.0/ranges.md). Intervalos usando o suporte de intervalo implícito retornam o mesmo tipo de sequência que a sequência de origem.
 
-<xref:System.Array>tem um comportamento mais matizado. Os arrays de dimensões únicas suportam índices e intervalos. Matrizes multidimensionais não. O indexador para uma matriz multidimensional tem múltiplos parâmetros, não um único parâmetro. Os arrays irregulares, também referidos como uma matriz de matrizes, suportam ambos os intervalos e indexadores. O exemplo a seguir mostra como iterar uma subseção retangular de uma matriz irregular. Itenumera a seção no centro, excluindo a primeira e a última três linhas, e as duas primeiras e últimas duas colunas de cada linha selecionada:
+Por exemplo, os seguintes tipos .NET oferecem suporte a índices e intervalos: <xref:System.String> , <xref:System.Span%601> e <xref:System.ReadOnlySpan%601> . O <xref:System.Collections.Generic.List%601> dá suporte a índices, mas não dá suporte a intervalos.
+
+<xref:System.Array> tem um comportamento mais nuancedo. Matrizes de dimensão única dão suporte a índices e intervalos. Matrizes multidimensionais não dão suporte a indexadores ou intervalos. O indexador de uma matriz multidimensional tem vários parâmetros, não um único parâmetro. Matrizes denteadas, também chamadas de matriz de matrizes, oferecem suporte a intervalos e indexadores. O exemplo a seguir mostra como iterar uma subseção retangular de uma matriz denteada. Ele itera a seção no centro, excluindo as primeiras e últimas três linhas, e a primeira e a última duas colunas de cada linha selecionada:
 
 [!code-csharp[JaggedArrays](~/samples/snippets/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_JaggedArrays)]
 
-## <a name="scenarios-for-indices-and-ranges"></a>Cenários para índices e faixas
+Em todos os casos, o operador Range para <xref:System.Array> aloca uma matriz para armazenar os elementos retornados.
 
-Muitas vezes você usará intervalos e índices quando quiser analisar uma subgama de uma seqüência maior. A nova sintaxe é mais clara para ler exatamente quais subintervalo está envolvido. A função local `MovingAverage` usa um <xref:System.Range> como seu argumento. O método então enumera apenas esse intervalo ao calcular o mínimo, máximo e média. Experimente o seguinte código em seu projeto:
+## <a name="scenarios-for-indices-and-ranges"></a>Cenários para índices e intervalos
+
+Você geralmente usará intervalos e índices quando desejar analisar uma parte de uma sequência maior. A nova sintaxe fica mais clara na leitura exata do que parte da seqüência está envolvida. A função local `MovingAverage` usa um <xref:System.Range> como seu argumento. O método então enumera apenas esse intervalo ao calcular o mínimo, máximo e média. Experimente o seguinte código em seu projeto:
 
 [!code-csharp[MovingAverages](~/samples/snippets/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_MovingAverage)]

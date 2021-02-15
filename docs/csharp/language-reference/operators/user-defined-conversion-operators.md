@@ -12,12 +12,12 @@ helpviewer_keywords:
 - implicit keyword [C#]
 - conversion operator [C#]
 - user-defined conversion [C#]
-ms.openlocfilehash: a0eb11d55ad9e9cccde1704ba4c5ae8acb609989
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.openlocfilehash: ab977408ed891bd7c996ce3644b22ea984425664
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87916635"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90536373"
 ---
 # <a name="user-defined-conversion-operators-c-reference"></a>Operadores de conversão definidos pelo usuário (Referência de C#)
 
@@ -35,7 +35,7 @@ O exemplo a seguir demonstra como definir uma conversão implícita e explícita
 
 Use também a palavra-chave `operator` para sobrecarregar um operador C# predefinido. Para obter mais informações, consulte [Sobrecarga de operador](operator-overloading.md).
 
-## <a name="c-language-specification"></a>especificação da linguagem C#
+## <a name="c-language-specification"></a>Especificação da linguagem C#
 
 Para obter mais informações, confira as seguintes seções da [especificação da linguagem C#](~/_csharplang/spec/introduction.md):
 
@@ -44,7 +44,7 @@ Para obter mais informações, confira as seguintes seções da [especificação
 - [Conversões implícitas](~/_csharplang/spec/conversions.md#implicit-conversions)
 - [Conversões explícitas](~/_csharplang/spec/conversions.md#explicit-conversions)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Referência de C#](../index.md)
 - [Operadores e expressões C#](index.md)
@@ -52,4 +52,4 @@ Para obter mais informações, confira as seguintes seções da [especificação
 - [Operadores cast e teste de tipo](type-testing-and-cast.md)
 - [Conversão e conversão de tipo](../../programming-guide/types/casting-and-type-conversions.md)
 - [Diretrizes de design – operadores de conversão](../../../standard/design-guidelines/operator-overloads.md#conversion-operators)
-- [Conversões explícitas encadeadas definidas pelo usuário em C#](https://docs.microsoft.com/archive/blogs/ericlippert/chained-user-defined-explicit-conversions-in-c)
+- [Conversões explícitas encadeadas definidas pelo usuário em C#](/archive/blogs/ericlippert/chained-user-defined-explicit-conversions-in-c)

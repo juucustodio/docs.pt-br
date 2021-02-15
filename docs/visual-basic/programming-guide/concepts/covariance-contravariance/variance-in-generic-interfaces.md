@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: variação em interfaces genéricas (Visual Basic)'
 title: Variação em interfaces genéricas
 ms.date: 07/20/2015
 ms.assetid: cf4096d0-4bb3-45a9-9a6b-f01e29a60333
-ms.openlocfilehash: df28a9f24518f24d1be89acba726da7dfbbf9570
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 42257f80cb929756583b1e488cd315450b9db35e
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84375584"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100469832"
 ---
 # <a name="variance-in-generic-interfaces-visual-basic"></a>Variação em interfaces genéricas (Visual Basic)
 
@@ -92,7 +93,7 @@ Também é importante lembrar que as classes que implementam interfaces variante
 Dim listObjects As IEnumerable(Of Object) = New List(Of String)
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Usando variação em interfaces para coleções genéricas (Visual Basic)](using-variance-in-interfaces-for-generic-collections.md)
 - [Criando interfaces genéricas variantes (Visual Basic)](creating-variant-generic-interfaces.md)

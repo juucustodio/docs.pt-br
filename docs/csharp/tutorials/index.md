@@ -2,12 +2,12 @@
 title: Tutoriais do C#
 description: Explore estes tutoriais do c# para aprender a criar programas em c# e conhecer os recursos da linguagem c#.
 ms.date: 10/25/2018
-ms.openlocfilehash: 9542f4919c9b1f0363fb8bc27136eb9a7e074913
-ms.sourcegitcommit: b1f4756120deaecb8b554477bb040620f69a4209
+ms.openlocfilehash: d6eeed2ed5fbf68120c789b7d8203e811fb8608d
+ms.sourcegitcommit: 9b877e160c326577e8aa5ead22a937110d80fa44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89414807"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97110163"
 ---
 # <a name="c-tutorials"></a>Tutoriais do C#
 
@@ -19,7 +19,7 @@ Se você quiser iniciar sua exploração em formato de vídeo, a [série de víd
 
 As primeiras lições explicam os conceitos de C# usando pequenos snippets de código. Você aprenderá os conceitos básicos da sintaxe de C# e como trabalhar com tipos de dados como cadeias de caracteres, números e valores boolianos. É tudo interativo e você começará a gravar e executar o código em questão de minutos. Estas primeiras lições não exigem conhecimento prévio de programação ou da linguagem C#.
 
-## <a name="hello-world"></a>[Hello world](intro-to-csharp/hello-world.yml)
+## <a name="hello-world"></a>[Olá, mundo](intro-to-csharp/hello-world.yml)
 
 No tutorial [Olá, Mundo](intro-to-csharp/hello-world.yml), você criará o programa C# mais básico. Você explorará o tipo `string` e como trabalhar com texto.
 
@@ -47,7 +47,6 @@ Todos os tutoriais de introdução posteriores à lição Olá, Mundo estão dis
 
 ## <a name="explore-new-features-in-c"></a>Explore novos recursos no C\#
 
-* [Experimente os novos recursos no c# 6 de forma interativa](exploration/csharp-6.yml): Explore os recursos adicionados no [c# 6](../whats-new/csharp-6.md) interativamente em seu navegador.
 * [Interpolação de cadeia de caracteres](string-interpolation.md): demonstra como usar interpolação de cadeia de caracteres para criar cadeias de caracteres formatadas em C#.
 * [Tipos de referência nula](nullable-reference-types.md): demonstra como usar tipos de referência nula para expressar sua intenção para referências nulas.
 * [Atualizar um projeto para usar tipos de referência que permitem valor nulo](upgrade-to-nullable-references.md): demonstra técnicas para atualizar um projeto existente a fim de usar tipos de referência que permitem valor nulo.

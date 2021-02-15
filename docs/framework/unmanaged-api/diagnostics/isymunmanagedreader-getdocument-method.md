@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedReader:: GetDocument'
 title: Método ISymUnmanagedReader::GetDocument
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: bb203853-6a6d-4027-b9e9-603a7f28b9d3
 topic_type:
 - apiref
-ms.openlocfilehash: 950fb3b9c51ae2c9470b5aadd31c877d7aa6b6f6
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 7f2f31467cfd00de68737224a2c1af5b1e78efed
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615053"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764093"
 ---
 # <a name="isymunmanagedreadergetdocument-method"></a>Método ISymUnmanagedReader::GetDocument
+
 Localiza um documento. O idioma do documento, o fornecedor e o tipo são opcionais.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,6 +39,7 @@ HRESULT GetDocument (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `url`  
  no A URL que identifica o documento.  
   
@@ -53,11 +56,13 @@ HRESULT GetDocument (
  fora Um ponteiro para a interface retornada.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedReader](isymunmanagedreader-interface.md)

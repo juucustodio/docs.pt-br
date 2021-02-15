@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: conceitos de programação (Visual Basic)'
 title: Conceitos de programação
 ms.date: 02/27/2017
 ms.assetid: cc9cac84-61f6-476e-b8c7-9bae7749bd90
-ms.openlocfilehash: 500e2670e9f2aafce31f814a08d1da4f0a1d06fd
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 83cf59325de4616cce705d87c702eccee27c42ad
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410949"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100462198"
 ---
 # <a name="programming-concepts-visual-basic"></a>Conceitos de Programação (Visual Basic)
 
@@ -15,7 +16,7 @@ Esta seção explica conceitos de programação na linguagem do Visual Basic.
 
 ## <a name="in-this-section"></a>Nesta seção
 
-|Title|Descrição|
+|Título|Descrição|
 |-----------|-----------------|
 |[Programação assíncrona com Async e Await (Visual Basic)](async/index.md)|Descreve como criar soluções assíncronas usando palavras-chave [Async](../../language-reference/modifiers/async.md) e [Await](../../language-reference/operators/await-operator.md). Inclui um passo a passo.|
 |[Visão geral de atributos (Visual Basic)](attributes/index.md)|Discute como fornecer informações adicionais sobre como programar elementos como tipos, campos, métodos e propriedades por meio de atributos.|

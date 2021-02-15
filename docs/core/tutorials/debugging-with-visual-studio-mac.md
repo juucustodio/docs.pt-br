@@ -1,21 +1,21 @@
 ---
-title: Depurar um aplicativo de console do .NET Core usando Visual Studio para Mac
-description: Saiba como depurar um aplicativo de console do .NET Core usando o Mac do Visual Studio.
-ms.date: 06/08/2020
-ms.openlocfilehash: 011647a6e3e676909880befa3b770205eb9616d6
-ms.sourcegitcommit: 60dc0a11ebdd77f969f41891d5cca06335cda6a7
+title: Depurar um aplicativo de console .NET usando Visual Studio para Mac
+description: Saiba como depurar um aplicativo de console do .NET usando o Visual Studio Mac.
+ms.date: 11/30/2020
+ms.openlocfilehash: e35bbef5582b6eec00ee48669a0f5d028eb051fb
+ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88957519"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96599610"
 ---
-# <a name="tutorial-debug-a-net-core-console-application-using-visual-studio-for-mac"></a>Tutorial: Depurar um aplicativo de console do .NET Core usando Visual Studio para Mac
+# <a name="tutorial-debug-a-net-console-application-using-visual-studio-for-mac"></a>Tutorial: Depurar um aplicativo de console .NET usando o Visual Studio para Mac
 
 Este tutorial apresenta as ferramentas de depuração disponíveis no Visual Studio para Mac.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
 
-- Este tutorial funciona com o aplicativo de console que você cria em [criar um aplicativo de console do .NET Core usando Visual Studio para Mac](with-visual-studio-mac.md).
+- Este tutorial funciona com o aplicativo de console que você cria em [criar um aplicativo de console .NET usando Visual Studio para Mac](with-visual-studio-mac.md).
 
 ## <a name="use-debug-build-configuration"></a>Usar configuração de compilação de depuração
 
@@ -27,7 +27,7 @@ Por padrão, Visual Studio para Mac usa a configuração de compilação de depu
 
 1. Iniciar Visual Studio para Mac.
 
-1. Abra o projeto que você criou em [criar um aplicativo de console do .NET Core usando Visual Studio para Mac](with-visual-studio-mac.md).
+1. Abra o projeto que você criou em [criar um aplicativo de console .NET usando Visual Studio para Mac](with-visual-studio-mac.md).
 
    A configuração de build atual é mostrada na barra de ferramentas. A imagem da barra de ferramentas a seguir mostra que o Visual Studio está configurado para compilar a versão de depuração do aplicativo:
 
@@ -77,7 +77,7 @@ A janela **imediata** permite interagir com o aplicativo que você está depuran
 
    :::image type="content" source="media/debugging-with-visual-studio-mac/terminal-hello-world.png" alt-text="Olá, Mundo de terminal na barra de navegação inferior":::
 
-1. Pressione qualquer tecla para sair do programa.
+1. Pressione qualquer tecla para encerrar o programa.
 
 1. Feche a janela do terminal.
 
@@ -87,7 +87,7 @@ O programa exibe uma cadeia de caracteres que o usuário insere. O que acontecer
 
 1. <kbd>Ctrl</kbd>-clique no ponto vermelho que representa o pontos de interrupção. No menu de contexto, selecione **Editar ponto de interrupção**.
 
-1. Na caixa de diálogo **Editar ponto de interrupção** , insira o seguinte código no campo a seguir **e a condição a seguir é verdadeira**e selecione **aplicar**.
+1. Na caixa de diálogo **Editar ponto de interrupção** , insira o seguinte código no campo a seguir **e a condição a seguir é verdadeira** e selecione **aplicar**.
 
    ```csharp
    String.IsNullOrEmpty(name)
@@ -159,7 +159,7 @@ O Visual Studio também permite percorrer linha por linha de um programa e monit
 
    O terminal exibe uma mensagem e aguarda que você pressione uma tecla.
 
-1. Pressione qualquer tecla para sair do programa.
+1. Pressione qualquer tecla para encerrar o programa.
 
 ## <a name="use-release-build-configuration"></a>Usar a configuração de Build de versão
 
@@ -178,4 +178,4 @@ Para compilar e testar a versão de lançamento do aplicativo de console, execut
 Neste tutorial, você usou as ferramentas de depuração do Visual Studio. No próximo tutorial, você publica uma versão implantável do aplicativo.
 
 > [!div class="nextstepaction"]
-> [Publicar um aplicativo de console do .NET Core usando Visual Studio para Mac](publishing-with-visual-studio-mac.md)
+> [Publicar um aplicativo de console .NET usando Visual Studio para Mac](publishing-with-visual-studio-mac.md)

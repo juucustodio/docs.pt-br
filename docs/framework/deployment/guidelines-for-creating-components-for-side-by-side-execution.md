@@ -6,14 +6,15 @@ helpviewer_keywords:
 - side-by-side execution, multiple application versions
 - side-by-side execution, multiple component versions
 ms.assetid: 5c540161-6e40-42e9-be92-6175aee2c46a
-ms.openlocfilehash: f0d25984f2444d29d9fc0edb3add23b6adc04c62
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 3ac7c514a69ae05b00e7a486aadcbf41e5d1cbd6
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85622634"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96262509"
 ---
 # <a name="guidelines-for-creating-components-for-side-by-side-execution"></a>Diretrizes para criação de componentes para execução lado a lado
+
 Siga estas diretrizes gerais para criar aplicativos gerenciados ou componentes projetados para execução lado a lado:  
   
 - Associe a identidade de tipo a uma versão específica de um arquivo.  
@@ -29,6 +30,7 @@ Siga estas diretrizes gerais para criar aplicativos gerenciados ou componentes p
      Um aplicativo ou componente que é executado isoladamente deve gerenciar recursos para evitar conflitos quando duas instâncias do aplicativo ou componente forem executadas simultaneamente. O aplicativo ou componente também deve usar uma estrutura de arquivos específica da versão.  
   
 ## <a name="application-and-component-isolation"></a>Isolamento de componente e de aplicativo  
+
  Uma chave para criar com êxito um aplicativo ou componente para execução lado a lado é o isolamento. O aplicativo ou componente deve gerenciar todos os recursos, especialmente E/S de arquivos, de maneira isolada. Siga estas diretrizes para garantir que seu aplicativo ou componente seja executado isoladamente:  
   
 - Grave o Registro de uma maneira específica da versão. Armazene valores em hives ou chaves que indicam a versão e não compartilham informações ou o estado entre as versões de um componente. Isso impede que dois aplicativos ou componentes em execução ao mesmo tempo substituam as informações.  
@@ -40,6 +42,7 @@ Siga estas diretrizes gerais para criar aplicativos gerenciados ou componentes p
 - Crie grupos e contas de usuário de uma maneira específica da versão. Contas de usuário e grupos criados por um aplicativo devem ser identificados pela versão. Não compartilhe as contas de usuário e grupos entre versões de um aplicativo.  
   
 ## <a name="installing-and-uninstalling-versions"></a>Instalando e desinstalando versões  
+
  Ao criar um aplicativo para a execução lado a lado, siga estas diretrizes sobre a instalação e desinstalação de versões:  
   
 - Não exclua informações do Registro que podem ser necessárias para outros aplicativos em execução em uma versão diferente do .NET Framework.  
@@ -55,13 +58,14 @@ Siga estas diretrizes gerais para criar aplicativos gerenciados ou componentes p
 - Não adicione nada ao Registro que contenha um caminho sem versão.  
   
 ## <a name="file-version-number-and-assembly-version-number"></a>Número de versão do arquivo e número de versão do Assembly  
+
  A versão do arquivo é um recurso de versão do Win32 que não é usado pelo runtime. Em geral, você atualiza a versão do arquivo até mesmo para uma atualização in-loco. Dois arquivos idênticos podem ter informações de versão de arquivo diferentes e dois arquivos diferentes podem ter as mesmas informações de versão do arquivo.  
   
  A versão do assembly é usada pelo runtime para a associação do assembly. Dois assemblies idênticos com números de versão diferentes são tratados como dois assemblies diferentes pelo runtime.  
   
  A [ferramenta Cache de Assembly Global (Gacutil.exe)](../tools/gacutil-exe-gac-tool.md) permite que você substitua um assembly quando apenas o número de versão do arquivo é mais recente. O instalador geralmente não instala em um assembly, a menos que o número de versão do assembly seja maior.  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Execução lado a lado](side-by-side-execution.md)
 - [Como: Habilitar e desabilitar o redirecionamento automático de associação](../configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)

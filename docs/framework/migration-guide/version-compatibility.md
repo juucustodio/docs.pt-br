@@ -7,12 +7,12 @@ helpviewer_keywords:
 - .NET Framework, compatibility with earlier versions
 - .NET Framework versions, compatibility
 ms.assetid: 2f25e522-456a-48c3-8a53-e5f39275649f
-ms.openlocfilehash: 92cfdc1a2a530f9790a693d0aa1ca5f65ff1af9f
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 2be9c4e12d6a613e7f1062ec7492b0b99203f39d
+ms.sourcegitcommit: 48466b8fb7332ececff5dc388f19f6b3ff503dd4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88558758"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400690"
 ---
 # <a name="version-compatibility"></a>Compatibilidade de versões
 
@@ -53,15 +53,15 @@ Se o aplicativo ou o componente não funcionar conforme esperado no .NET Framewo
 
 - Se você tiver um aplicativo .NET Framework 3.5, consulte também [Problemas de migração do .NET Framework 4](net-framework-4-migration-issues.md).
 
-- Se você tiver um aplicativo .NET Framework 2.0, consulte também [Alterações no .NET Framework 3.5 SP1](https://docs.microsoft.com/previous-versions/dotnet/articles/dd310284(v=msdn.10)).
+- Se você tiver um aplicativo .NET Framework 2.0, consulte também [Alterações no .NET Framework 3.5 SP1](/previous-versions/dotnet/articles/dd310284(v=msdn.10)).
 
-- Se você tiver um aplicativo .NET Framework 1.1, consulte também [Alterações no .NET Framework 2.0](https://docs.microsoft.com/previous-versions/aa570326(v=msdn.10)).
+- Se você tiver um aplicativo .NET Framework 1.1, consulte também [Alterações no .NET Framework 2.0](/previous-versions/aa570326(v=msdn.10)).
 
 - Caso esteja recompilando o código-fonte existente para ser executado no .NET Framework 4.5 ou suas versões de ponto ou desenvolvendo uma nova versão de um aplicativo ou componente direcionado ao .NET Framework 4.5 ou suas versões de ponto de uma base de código-fonte existente, confira [O que está obsoleto na biblioteca de classes](../whats-new/whats-obsolete.md) para obter tipos e membros obsoletos e aplicar a solução alternativa descrita. (O código compilado anteriormente continuará sendo executado em tipos e membros marcados como obsoletos.)
 
 - Se você determinar que uma alteração no .NET Framework 4,5 desrompeu o aplicativo, verifique o [esquema de configurações de tempo de execução](../configure-apps/file-schema/runtime/index.md)e, particularmente, o [ \<AppContextSwitchOverrides> elemento](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md), para determinar se você pode usar uma configuração de tempo de execução no arquivo de configuração do aplicativo para restaurar o comportamento anterior.
 
-- Se você encontrar um problema que não está documentado, abra um problema no [site da Comunidade de Desenvolvedores do .NET](https://developercommunity.visualstudio.com/spaces/61/index.html) ou no [repositório GitHub do Microsoft/dotnet](https://github.com/microsoft/dotnet/issues).
+- Se você encontrar um problema que não está documentado, abra um problema no [site da Comunidade de Desenvolvedores do .NET](https://aka.ms/feedback/report?space=61) ou no [repositório GitHub do Microsoft/dotnet](https://github.com/microsoft/dotnet/issues).
 
 ## <a name="side-by-side-execution"></a>Execução lado a lado
 

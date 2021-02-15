@@ -1,6 +1,6 @@
 ---
-title: HerdafunçãoDa função (referência de API não gerenciada)
-description: A função Herdade determina se uma classe ou instância deriva de uma classe pai específica.
+title: Função InheritsFrom (referência de API não gerenciada)
+description: A função InheritsFrom determina se uma classe ou instância deriva de uma classe pai específica.
 ms.date: 11/06/2017
 api_name:
 - InheritsFrom
@@ -14,14 +14,15 @@ helpviewer_keywords:
 - InheritsFrom function [.NET WMI and performance counters]
 topic_type:
 - Reference
-ms.openlocfilehash: c735c01c45beda8a1ba988a5c580e6b04ae46312
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 3cfe3388dc808335e6d3daaf7ec949108e95f52e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79174934"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726780"
 ---
 # <a name="inheritsfrom-function"></a>Função InheritsFrom
+
 Determina se a classe ou instância atual é derivada de uma classe pai especificada.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
@@ -36,37 +37,38 @@ HRESULT InheritsFrom (
 );
 ```  
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
 `vFunc`  
-[em] Este parâmetro não é usado.
+no Este parâmetro não é usado.
 
 `ptr`  
-[em] Um ponteiro para uma instância [IWbemClassObject.](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject)
+no Um ponteiro para uma instância de [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) .
 
 `wszAncestor`  
-[em] O nome da classe. `wszAncestor`deve apontar para `LPCWSTR`um válido .
+no O nome da classe. `wszAncestor` deve apontar para um válido `LPCWSTR` .
 
 ## <a name="return-value"></a>Valor retornado
 
-Os seguintes valores retornados por esta função são definidos no arquivo de cabeçalho *WbemCli.h,* ou você pode defini-los como constantes em seu código:
+Os valores a seguir retornados por essa função são definidos no arquivo de cabeçalho *WbemCli. h* ou você pode defini-los como constantes em seu código:
 
-|Constante  |Valor  |Descrição  |
+|Constante  |Valor  |DESCRIÇÃO  |
 |---------|---------|---------|
-| `WBEM_S_NO_ERROR` | 0 | O objeto atual `wszAncestor`herda de .  |
-| `WBEM_S_FALSE` | 1 | O objeto atual não `wszAncestor`herda de . |
+| `WBEM_S_NO_ERROR` | 0 | O objeto atual é herdado de `wszAncestor` .  |
+| `WBEM_S_FALSE` | 1 | O objeto atual não herda de `wszAncestor` . |
 |`WBEM_E_INVALID_PARAMETER` | 0x80041008 | `wszAncestor` é `null`. |
   
 ## <a name="remarks"></a>Comentários
 
-Esta função envolve uma chamada para o [método IWbemClassObject::InheritsFrom.](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-inheritsfrom)
+Essa função encapsula uma chamada para o método [IWbemClassObject:: InheritsFrom](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-inheritsfrom) .
 
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
- **Cabeçalho:** WMINet_Utils.idl  
+ **Cabeçalho:** WMINet_Utils. idl  
   
- **.NET Framework Versions:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
+ **.NET Framework versões:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## <a name="see-also"></a>Confira também
 

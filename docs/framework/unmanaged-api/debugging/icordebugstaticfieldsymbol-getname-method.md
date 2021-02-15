@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugStaticFieldSymbol:: GetName'
 title: 'Método ICorDebugStaticFieldSymbol:: GetName'
 ms.date: 03/30/2017
 ms.assetid: e2be4af2-15d1-4e6a-8b68-1d78c93294a4
-ms.openlocfilehash: 75f5324296f9b42406157d06351f7e680a749444
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: c74de604f5880a69b77c89e56a82ae08517dd69c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378743"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794696"
 ---
 # <a name="icordebugstaticfieldsymbolgetname-method"></a>Método ICorDebugStaticFieldSymbol:: GetName
+
 Obtém o nome do campo estático.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -23,6 +25,7 @@ HRESULT GetName(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `cchName`  
  no O número de caracteres no `szName` buffer.  
   
@@ -38,6 +41,7 @@ HRESULT GetName(
 > Esse método está disponível somente com .NET Native.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -46,7 +50,7 @@ HRESULT GetName(
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugStaticFieldSymbol](icordebugstaticfieldsymbol-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

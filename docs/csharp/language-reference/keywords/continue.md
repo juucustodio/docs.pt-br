@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - continue keyword [C#]
 ms.assetid: 8a5ac96f-f98a-4519-b32d-345847ed7be0
-ms.openlocfilehash: 76578b0ad7e2b969609fbf50df1f9ab7de6e5097
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 6c70934c3b861e1a1433e5c0b95bb32e9d717c53
+ms.sourcegitcommit: eb7e87496f42361b1da98562dd75b516c9d58bbc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89128433"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91877646"
 ---
 # <a name="continue-c-reference"></a>continue (Referência de C#)
 
@@ -21,7 +21,7 @@ A instrução `continue` passa o controle para a próxima iteração da instruç
 
 ## <a name="example"></a>Exemplo
 
-Neste exemplo, um contador é inicializado para a contagem de 1 a 10. Ao usar a instrução `continue` junto com a expressão `(i < 9)`, as instruções entre `continue` e o término do corpo `for` serão ignoradas.
+Neste exemplo, um contador é inicializado para a contagem de 1 a 10. Usando a `continue` instrução em conjunto com a expressão `(i < 9)` , as instruções entre `continue` e o final do `for` corpo são ignoradas nas iterações em que `i` é menor que 9. Nas duas últimas iterações do `for` loop (onde i = = 9 e i = = 10), a `continue` instrução não é executada e o valor de `i` é impresso no console.
 
 [!code-csharp[csrefKeywordsJump#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsJump/CS/csrefKeywordsJump.cs#3)]
 

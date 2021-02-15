@@ -1,16 +1,18 @@
 ---
+description: 'Saiba mais sobre: <serviceCertificate>'
 title: <serviceCertificate>
 ms.date: 03/30/2017
 ms.assetid: 42c7f291-2ec3-43c5-8872-35897ff3c660
 author: BrucePerlerMS
-ms.openlocfilehash: 653dd9cfadbfd33f5371b77172199b946321bc8c
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: d9940fd96667211b1f9fd672b824af84e0d5143a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70251864"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725318"
 ---
 # \<serviceCertificate>
+
 Configura o certificado X. 509 que é usado para criptografar e descriptografar tokens.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -18,7 +20,7 @@ Configura o certificado X. 509 que é usado para criptografar e descriptografar 
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<federationConfiguration>**](federationconfiguration.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<serviceCertificate>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.identityModel.services>  
@@ -30,9 +32,11 @@ Configura o certificado X. 509 que é usado para criptografar e descriptografar 
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
+
  Nenhum  
   
 ### <a name="child-elements"></a>Elementos filho  
@@ -48,6 +52,7 @@ Configura o certificado X. 509 que é usado para criptografar e descriptografar 
 |[\<federationConfiguration>](federationconfiguration.md)|Contém as configurações que definem o <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) e o <xref:System.IdentityModel.Services.SessionAuthenticationModule> (Sam).|  
   
 ## <a name="example"></a>Exemplo  
+
  O XML a seguir mostra o uso do \<serviceCertificate> elemento. O XML é extraído do `CustomToken` exemplo.  
   
 ```xml  

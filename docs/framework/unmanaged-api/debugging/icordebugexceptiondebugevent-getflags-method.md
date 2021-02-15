@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugExceptionDebugEvent:: GetFlags'
 title: 'Método ICorDebugExceptionDebugEvent:: GetFlags'
 ms.date: 03/30/2017
 ms.assetid: 73225303-8852-487e-9a0e-9f0cb95e99d9
-ms.openlocfilehash: 5793d939c8497ef842f614048707f69faa8ac568
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: 54a6c9b0dff2346ca130f80e72fe06dbb3017f10
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976038"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99693467"
 ---
 # <a name="icordebugexceptiondebugeventgetflags-method"></a>Método ICorDebugExceptionDebugEvent:: GetFlags
+
 Obtém um sinalizador que indica se a exceção pode ser interceptada.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -21,6 +23,7 @@ HRESULT GetFlags(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pdwFlags`  
  fora Um ponteiro para um valor [CorDebugExceptionFlags](cordebugexceptionflags-enumeration.md) que indica se a exceção pode ser interceptada.  
   
@@ -30,6 +33,7 @@ HRESULT GetFlags(
 > Esse método está disponível somente com .NET Native.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

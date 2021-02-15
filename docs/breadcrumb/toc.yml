@@ -307,32 +307,6 @@ items:
                   - name: Exemplos do WF (Windows Workflow)
                     tocHref: /dotnet/framework/windows-workflow-foundation/samples/
                     topicHref: /dotnet/framework/windows-workflow-foundation/samples/index
-              - name: Windows Forms
-                tocHref: /dotnet/framework/winforms/
-                topicHref: /dotnet/framework/winforms/index
-                items:
-                  - name: Aprimorar aplicativos do Windows Forms
-                    tocHref: /dotnet/framework/winforms/advanced/
-                    topicHref: /dotnet/framework/winforms/advanced/index
-                  - name: Controles de formulários do Windows
-                    tocHref: /dotnet/framework/winforms/controls/
-                    topicHref: /dotnet/framework/winforms/controls/index
-              - name: Serviços XAML
-                tocHref: /dotnet/framework/xaml-services/
-                topicHref: /dotnet/framework/xaml-services/index
-          - name: Guia da área de trabalho – WPF
-            tocHref: /dotnet/desktop-wpf/
-            topicHref: /dotnet/desktop-wpf/index
-            items:
-              - name: Introdução
-                tocHref: /visualstudio/get-started/csharp/tutorial-wpf
-                topicHref: /dotnet/desktop-wpf/getting-started/index
-              - name: Migração
-                tocHref: /dotnet/desktop-wpf/migration
-                topicHref: /dotnet/desktop-wpf/migration/index
-              - name: Associação de dados
-                tocHref: /dotnet/desktop-wpf/data
-                topicHref: /dotnet/desktop-wpf/data/index
           - name: Guia do C#
             tocHref: /dotnet/csharp/
             topicHref: /dotnet/csharp/index
@@ -343,6 +317,10 @@ items:
               - name: Introdução
                 tocHref: /dotnet/csharp/getting-started/
                 topicHref: /dotnet/csharp/getting-started/index
+                items:
+                  - name: Tour do C#
+                    tocHref: /dotnet/csharp/tour-of-csharp/
+                    topicHref: /dotnet/csharp/tour-of-csharp/index
               - name: Tutoriais
                 tocHref: /dotnet/csharp/tutorials/
                 topicHref: /dotnet/csharp/tutorials/index
@@ -600,3 +578,9 @@ items:
               - name: Azure para desenvolvedores .NET
                 tocHref: /dotnet/azure/
                 topicHref: /dotnet/azure/index
+          - name: Bibliotecas de IoT do .NET
+            tocHref: /dotnet/iot/
+            topicHref: /dotnet/iot/index
+          - name: Novidades
+            tocHref: /dotnet/whats-new/
+            topicHref: /dotnet/whats-new/index

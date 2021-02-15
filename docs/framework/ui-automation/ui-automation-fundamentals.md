@@ -7,20 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - UI automation fundamentals
 ms.assetid: d270ab45-542b-45c0-a240-e80aa4a61b95
-ms.openlocfilehash: d62bf321e81fccc10c23b6563a58c1ea6af995f0
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 17d5c55f5f98764cca5988a677e34a5ceb4bbf82
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87168420"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96262847"
 ---
 # <a name="ui-automation-fundamentals"></a>Fundamentos de automação da interface do usuário
+
 > [!NOTE]
 > Esta documentação destina-se a desenvolvedores do .NET Framework que querem usar as classes da [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] gerenciadas definidas no namespace <xref:System.Windows.Automation>. Para obter as informações mais recentes sobre a [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], consulte [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32) (API de Automação do Windows: Automação da Interface do Usuário).  
   
  Esta seção contém visões gerais de alto nível da [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] API.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Visão geral de automação da interface do usuário](ui-automation-overview.md)  
  [Automação de Interface do usuário e Microsoft Active Accessibility](ui-automation-and-microsoft-active-accessibility.md)  
  [Visão geral da árvore de automação de interface do usuário](ui-automation-tree-overview.md)  
@@ -31,6 +33,7 @@ ms.locfileid: "87168420"
  [Usando automação de interface do usuário para testes automatizados](using-ui-automation-for-automated-testing.md)  
   
 ## <a name="reference"></a>Referência  
+
  <xref:System.Windows.Automation>  
   
  <xref:System.Windows.Automation.Provider>  

@@ -1,21 +1,24 @@
 ---
+description: 'Saiba mais sobre: estatísticas do provedor para SQL Server'
 title: Estatísticas do provedor para SQL Server
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 429c9d09-92ac-46ec-829a-fbff0a9575a2
-ms.openlocfilehash: 5e37a04ff731a99664d636e0d4175f99214c2646
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ece5a6214d438ecac64e8738755d5fb5d0ed7245
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79174505"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767590"
 ---
 # <a name="provider-statistics-for-sql-server"></a>Estatísticas do provedor para SQL Server
+
 A partir da versão 2.0 do .NET Framework, o provedor de dados do .NET Framework para SQL Server dá suporte a estatísticas de tempo de execução. Você precisa habilitar as estatísticas configurando a propriedade <xref:System.Data.SqlClient.SqlConnection.StatisticsEnabled%2A> do objeto <xref:System.Data.SqlClient.SqlConnection> como `True` depois de criar um objeto de conexão válido. Depois que as estatísticas forem habilitadas, você poderá examiná-las como um "instantâneo no tempo" ao recuperar uma referência de <xref:System.Collections.IDictionary> por meio do método <xref:System.Data.SqlClient.SqlConnection.RetrieveStatistics%2A> do objeto <xref:System.Data.SqlClient.SqlConnection>. Você enumera os itens na lista como um conjunto de entradas de dicionário de pares de nome/valor. Esses pares de nome/valor não são ordenados. A qualquer momento, você pode chamar o método <xref:System.Data.SqlClient.SqlConnection.ResetStatistics%2A> do objeto <xref:System.Data.SqlClient.SqlConnection> para redefinir os contadores. Se a coleta de estatísticas não tiver sido habilitada, uma exceção não será gerada. Além disso, se <xref:System.Data.SqlClient.SqlConnection.RetrieveStatistics%2A> for chamado sem <xref:System.Data.SqlClient.SqlConnection.StatisticsEnabled%2A> ter sido chamado primeiro, os valores recuperados serão os valores iniciais para cada entrada. Se você habilitar estatísticas, execute seu aplicativo por um tempo e, em seguida, desabilite as estatísticas. Os valores recuperados refletirão os valores coletados até o ponto em que as estatísticas tiverem sido desabilitadas. Todos os valores estatísticos coletados são contabilizados por conexão.  
   
 ## <a name="statistical-values-available"></a>Valores estatísticos disponíveis  
+
  Atualmente, há 18 itens diferentes disponíveis no provedor do Microsoft SQL Server. O número de itens disponíveis pode ser acessado por meio da propriedade **Count** da referência da interface <xref:System.Collections.IDictionary> retornada pelo <xref:System.Data.SqlClient.SqlConnection.RetrieveStatistics%2A>. Todos os contadores para estatísticas do provedor usam o tipo de common language runtime <xref:System.Int64> (**long** no C# e no Visual Basic), que tem 64 bits de largura. O valor máximo do tipo de dados **int64**, conforme definido pelo campo **int64.MaxValue**, é ((2^63)-1)). Quando os valores para os contadores atingem esse valor máximo, eles não devem mais ser considerados precisos. Isso significa que **int64.MaxValue**-1((2^63)-2) é efetivamente o maior valor válido para qualquer estatística.  
   
 > [!NOTE]
@@ -45,6 +48,7 @@ A partir da versão 2.0 do .NET Framework, o provedor de dados do .NET Framework
 |`UnpreparedExecs`|Retorna o número de instruções cuja preparação foi cancelada que são executadas por meio da conexão depois que o aplicativo foi iniciado usando o provedor e as estatísticas do aplicativo foram habilitadas.|  
   
 ### <a name="retrieving-a-value"></a>Recuperando um valor  
+
  O aplicativo de console a seguir mostra como habilitar estatísticas em uma conexão, recuperar quatro valores de estatística individuais e gravá-los na janela do console.  
   
 > [!NOTE]
@@ -201,6 +205,7 @@ namespace CS_Stats_Console_GetValue
 ```  
   
 ### <a name="retrieving-all-values"></a>Recuperando todos os valores  
+
  O aplicativo de console a seguir mostra como habilitar estatísticas em uma conexão, recuperar todos os valores de estatística disponíveis usando o enumerador e gravá-los na janela do console.  
   
 > [!NOTE]

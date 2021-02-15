@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IAssemblyName:: GetVersion'
 title: Método IAssemblyName::GetVersion
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 42230928-2c33-41fd-9519-d96efef6c7af
 topic_type:
 - apiref
-ms.openlocfilehash: c0a43dc1640bdaa0ae104832eb4d1f8eb15b0392
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 3339dda6a0b4f083655ece7bef86b080a8fcf5c8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73134327"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760713"
 ---
 # <a name="iassemblynamegetversion-method"></a>Método IAssemblyName::GetVersion
+
 Obtém as informações de versão para o assembly referenciado por este objeto [IAssemblyName](iassemblyname-interface.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,6 +37,7 @@ HRESULT GetVersion (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pdwVersionHi`  
  fora Os bits de 32 altos da versão.  
   
@@ -42,11 +45,12 @@ HRESULT GetVersion (
  fora Os bits de 32 baixos da versão.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Fusion. h  
   
- **Versões do .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>Consulte também
 

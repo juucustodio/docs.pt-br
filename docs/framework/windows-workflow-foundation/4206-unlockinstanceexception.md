@@ -1,28 +1,32 @@
 ---
+description: 'Saiba mais sobre: 4206-UnlockInstanceException'
 title: 4206 - UnlockInstanceException
 ms.date: 03/30/2017
 ms.assetid: 5a46dc5f-d517-4135-8905-25a42f01206b
-ms.openlocfilehash: 3c981888b491f2797a431c2103ba3f5f0bd17046
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 7c281b7471869fc2361b1c7fb158559e4c9fae65
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61774316"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99676268"
 ---
 # <a name="4206---unlockinstanceexception"></a>4206 - UnlockInstanceException
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
 |ID|4206|  
 |Palavras-chave|WFInstanceStore|  
-|Nível|Erro|  
+|Level|Erro do|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
+
  Indica que uma exceção foi encontrada ao tentar desbloquear uma instância.  
   
 ## <a name="message"></a>Mensagem  
+
  Exceção encontrada %1 ao tentar desbloquear a instância.  
   
 ## <a name="details"></a>Detalhes  

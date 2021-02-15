@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: parâmetros de procedimento e argumentos (Visual Basic)'
 title: Parâmetros e argumentos de procedimento
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -18,14 +19,15 @@ helpviewer_keywords:
 - argument lists [Visual Basic]
 - procedures [Visual Basic], parameter lists
 ms.assetid: ff275aff-aa13-40df-bd4c-63486db8c1e9
-ms.openlocfilehash: 178206ca2ee103bbdb5a4ac03bca0df903c8c5d8
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c2239c76450f503e74dbf5f191cd212e05d11600
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406710"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100423154"
 ---
 # <a name="procedure-parameters-and-arguments-visual-basic"></a>Parâmetros e argumentos de procedimento (Visual Basic)
+
 Na maioria dos casos, um procedimento precisa de algumas informações sobre as circunstâncias em que ele foi chamado. Um procedimento que executa tarefas repetidas ou compartilhadas usa informações diferentes para cada chamada. Essas informações consistem em variáveis, constantes e expressões que você passa para o procedimento ao chamá-lo.  
   
  Um *parâmetro* representa um valor que o procedimento espera que você forneça ao chamá-lo. A declaração do procedimento define seus parâmetros.  
@@ -41,6 +43,7 @@ Na maioria dos casos, um procedimento precisa de algumas informações sobre as 
  Para obter mais informações, consulte [diferenças entre parâmetros e argumentos](./differences-between-parameters-and-arguments.md).  
   
 ## <a name="parameter-data-type"></a>Tipo de dados de parâmetro  
+
  Você define um tipo de dados para um parâmetro usando a `As` cláusula em sua declaração. Por exemplo, a função a seguir aceita uma cadeia de caracteres e um inteiro.  
   
  [!code-vb[VbVbcnProcedures#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#32)]  
@@ -56,9 +59,10 @@ Na maioria dos casos, um procedimento precisa de algumas informações sobre as 
 - Use uma palavra-chave de conversão para converter explicitamente o tipo de dados.  
   
 ### <a name="type-parameters"></a>Parâmetros de tipo  
+
  Um *procedimento genérico* também define um ou mais *parâmetros de tipo* , além de seus parâmetros normais. Um procedimento genérico permite que o código de chamada passe tipos de dados diferentes cada vez que chama o procedimento, para que possa personalizar os tipos de dados para os requisitos de cada chamada individual. Consulte [procedimentos genéricos em Visual Basic](../data-types/generic-procedures.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos](./index.md)
 - [Subprocedimentos](./sub-procedures.md)

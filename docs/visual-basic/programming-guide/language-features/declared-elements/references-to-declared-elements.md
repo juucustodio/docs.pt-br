@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: referências a elementos declarados (Visual Basic)'
 title: Referências a elementos declarados
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,14 +7,15 @@ helpviewer_keywords:
 - references [Visual Basic], declared elements
 - qualified names [Visual Basic]
 ms.assetid: d6301709-f4cc-4b7a-b8ba-80898f14ab46
-ms.openlocfilehash: 23bff2eb098982f67ecb1b709e59096d5259a644
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 75cc05381f01af00ac75995739647810fb7ff1d7
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84405177"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100471429"
 ---
 # <a name="references-to-declared-elements-visual-basic"></a>Referências a elementos declarados (Visual Basic)
+
 Quando seu código se refere a um elemento declarado, o compilador Visual Basic corresponde ao nome em sua referência à declaração apropriada desse nome. Se mais de um elemento for declarado com o mesmo nome, você poderá controlar quais desses elementos serão referenciados *qualificando* seu nome.  
   
  O compilador tenta corresponder uma referência de nome a uma declaração de nome com o *escopo mais estreito*. Isso significa que ele começa com o código que faz a referência e funciona fora por meio de níveis sucessivos de elementos continentes.  
@@ -42,6 +44,7 @@ End Module
 ```  
   
 ## <a name="qualifying-an-element-name"></a>Qualificando um nome de elemento  
+
  Se você quiser substituir esse processo de pesquisa e especificar um nome declarado em um escopo mais amplo, você deverá *qualificar* o nome com o elemento recipiente do escopo mais amplo. Em alguns casos, você também pode precisar qualificar o elemento recipiente.  
   
  Qualificar um nome significa precedendo-o em sua instrução de origem com informações que identificam onde o elemento de destino é definido. Essas informações são chamadas de *cadeia de caracteres de qualificação*. Ele pode incluir um ou mais namespaces e um módulo, classe ou estrutura.  
@@ -68,7 +71,7 @@ End Module
   
 2. Determine um caminho de qualificação com base no local do elemento de destino. Comece com o namespace de nível mais alto, vá para o namespace de nível mais baixo e termine com o módulo, classe ou estrutura que contém o elemento de destino. Cada elemento no caminho deve conter o elemento que o segue.  
   
-     `outerSpace`→ `innerSpace` → `holdsTotals` →`totals`  
+     `outerSpace` → `innerSpace` → `holdsTotals` → `totals`  
   
 3. Prepare a cadeia de caracteres de qualificação para o elemento de destino. Coloque um ponto ( `.` ) após cada elemento no caminho. Seu aplicativo deve ter acesso a todos os elementos em sua cadeia de caracteres de qualificação.  
   
@@ -105,6 +108,7 @@ Dim winLabel As New win.Label()
 ```  
   
 ## <a name="members-of-other-containing-elements"></a>Membros de outros elementos continentes  
+
  Quando você usa um membro não compartilhado de outra classe ou estrutura, primeiro você deve qualificar o nome do membro com uma variável ou expressão que aponta para uma instância da classe ou estrutura. No exemplo a seguir, `demoClass` é uma instância de uma classe chamada `class1` .  
   
 ```vb  
@@ -150,6 +154,7 @@ End Module
 ```  
   
 ## <a name="references-to-projects"></a>Referências a projetos  
+
  Para usar elementos [públicos](../../../language-reference/modifiers/public.md) definidos em outro projeto, primeiro você deve definir uma *referência* para o assembly ou a biblioteca de tipos do projeto. Para definir uma referência, clique em **Adicionar referência** no menu **projeto** ou use a opção de compilador de linha de comando [-Reference (Visual Basic)](../../../reference/command-line-compiler/reference.md) .  
   
  Por exemplo, você pode usar o modelo de objeto XML do .NET Framework. Se você definir uma referência ao <xref:System.Xml> namespace, poderá declarar e usar qualquer uma de suas classes, como <xref:System.Xml.XmlDocument> . O exemplo a seguir usa <xref:System.Xml.XmlDocument>.  
@@ -161,6 +166,7 @@ Dim xDoc As System.Xml.XmlDocument
 ```  
   
 ## <a name="importing-containing-elements"></a>Importando elementos continentes  
+
  Você pode usar a [instrução Imports (namespace e tipo do .net)](../../../language-reference/statements/imports-statement-net-namespace-and-type.md) para *importar* os namespaces que contêm os módulos ou as classes que você deseja usar. Isso permite que você consulte os elementos definidos em um namespace importado sem qualificar totalmente seus nomes. O exemplo a seguir reescreve o exemplo anterior para importar o <xref:System.Xml> namespace.  
   
 ```vb  
@@ -186,19 +192,21 @@ Dim xDoc As xD.XmlDocument
  Você também pode usar a `Imports` instrução para importar módulos, classes, estruturas e enumerações. Você pode usar os membros de tais elementos importados sem qualificação. No entanto, você deve sempre qualificar Membros não compartilhados de classes e estruturas com uma variável ou expressão que é avaliada como uma instância da classe ou estrutura.  
   
 ## <a name="naming-guidelines"></a>Diretrizes de nomenclatura  
+
  Quando você define dois ou mais elementos de programação que têm o mesmo nome, uma *ambiguidade de nome* pode resultar quando o compilador tenta resolver uma referência a esse nome. Se mais de uma definição estiver no escopo ou se nenhuma definição estiver no escopo, a referência será não resolvível. Para obter um exemplo, consulte "exemplo de referência qualificada" nesta página de ajuda.  
   
  Você pode evitar a ambiguidade de nome fornecendo todos os seus elementos nomes exclusivos. Em seguida, você pode fazer referência a qualquer elemento sem precisar qualificar seu nome com um namespace, módulo ou classe. Você também reduz as chances de se referir acidentalmente ao elemento errado.  
   
 ## <a name="shadowing"></a>Sombreamento  
- Quando dois elementos de programação compartilham o mesmo nome, um deles pode ocultar ou *sombrear*o outro. Um elemento sombreado não está disponível para referência; em vez disso, quando o código usa o nome do elemento sombreado, o compilador Visual Basic o resolve para o elemento de sombreamento. Para obter uma explicação mais detalhada com exemplos, consulte [sombreamento em Visual Basic](shadowing.md).  
+
+ Quando dois elementos de programação compartilham o mesmo nome, um deles pode ocultar ou *sombrear* o outro. Um elemento sombreado não está disponível para referência; em vez disso, quando o código usa o nome do elemento sombreado, o compilador Visual Basic o resolve para o elemento de sombreamento. Para obter uma explicação mais detalhada com exemplos, consulte [sombreamento em Visual Basic](shadowing.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Nomes de elementos declarados](declared-element-names.md)
 - [Características do Elemento Declarado](declared-element-characteristics.md)
 - [Gerenciando propriedades de solução e de projeto](/visualstudio/ide/managing-project-and-solution-properties)
 - [Variáveis](../variables/index.md)
 - [Instrução Imports (tipo e namespace .NET)](../../../language-reference/statements/imports-statement-net-namespace-and-type.md)
-- [Novo operador](../../../language-reference/operators/new-operator.md)
-- [Pública](../../../language-reference/modifiers/public.md)
+- [Novo Operador](../../../language-reference/operators/new-operator.md)
+- [Público](../../../language-reference/modifiers/public.md)

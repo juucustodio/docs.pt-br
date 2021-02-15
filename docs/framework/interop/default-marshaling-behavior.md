@@ -10,22 +10,24 @@ helpviewer_keywords:
 - interoperation with unmanaged code, marshaling
 - marshaling behavior
 ms.assetid: c0a9bcdf-3df8-4db3-b1b6-abbdb2af809a
-ms.openlocfilehash: 0469874d016725eb6423bb8453e9657b2be923d4
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 3e18bb5c4caa43a8e951eed3fc6992ec1b2d2afb
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85618565"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96256645"
 ---
 # <a name="default-marshaling-behavior"></a>Comportamento de marshaling padrão
+
 O marshaling de interoperabilidade opera em regras que determinam como os dados associados aos parâmetros de método se comportam, conforme eles passam entre a memória gerenciada e não gerenciada. Essas regras internas controlam atividades de marshaling como transformações de tipo de dados, se um receptor pode alterar os dados passados para ele e retornar essas alterações ao chamador e em quais circunstâncias o marshaler fornece otimizações de desempenho.  
   
  Esta seção identifica as características comportamentais padrão do serviço de marshaling de interoperabilidade. Ela apresenta informações detalhadas sobre o marshaling de matrizes, tipos boolianos, tipos char, representantes, classes, objetos, cadeias de caracteres e estruturas.  
   
 > [!NOTE]
-> Não há suporte para o marshaling de tipos genéricos. Para obter mais informações, consulte [Interoperando com tipos genéricos](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms229590(v=vs.100)).  
+> Não há suporte para o marshaling de tipos genéricos. Para obter mais informações, consulte [Interoperando com tipos genéricos](/previous-versions/dotnet/netframework-4.0/ms229590(v=vs.100)).  
   
 ## <a name="memory-management-with-the-interop-marshaler"></a>Gerenciamento de memória com o marshaler de interoperabilidade  
+
  O marshaler de interoperabilidade sempre tenta liberar a memória alocada pelo código não gerenciado. Esse comportamento está em conformidade com as regras de gerenciamento da memória COM, mas é diferente das regras que regem o C++ nativo.  
   
  Poderá haver confusão se você antecipar o comportamento do C++ nativo (sem liberação de memória) ao usar a invocação de plataforma, que libera a memória para ponteiros automaticamente. Por exemplo, a chamada do método não gerenciado a seguir em uma DLL do C++ não libera qualquer memória automaticamente.  
@@ -40,15 +42,18 @@ BSTR MethodOne (BSTR b) {
   
  No entanto, se você definir o método como um protótipo de invocação de plataforma, substituir cada tipo **BSTR** por um tipo <xref:System.String> e chamar `MethodOne`, o Common Language Runtime tentará liberar `b` duas vezes. Altere o comportamento de marshaling usando tipos <xref:System.IntPtr>, em vez de tipos **String**.  
   
- O runtime sempre usa o método **CoTaskMemFree** para liberar memória. Se a memória com a qual você está trabalhando não foi alocada com o método **CoTaskMemAlloc**, use um **IntPtr** e libere a memória manualmente usando o método apropriado. Da mesma forma, evite a liberação automática de memória em situações em que a memória nunca deve ser liberada, como ao usar a função **GetCommandLine** no Kernel32.dll, que retorna um ponteiro para a memória do kernel. Para obter detalhes sobre como liberar a memória manualmente, consulte a [Amostra de buffers](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/x3txb6xc(v=vs.100)).  
+ O runtime sempre usa o método **CoTaskMemFree** para liberar memória. Se a memória com a qual você está trabalhando não foi alocada com o método **CoTaskMemAlloc**, use um **IntPtr** e libere a memória manualmente usando o método apropriado. Da mesma forma, evite a liberação automática de memória em situações em que a memória nunca deve ser liberada, como ao usar a função **GetCommandLine** no Kernel32.dll, que retorna um ponteiro para a memória do kernel. Para obter detalhes sobre como liberar a memória manualmente, consulte a [Amostra de buffers](/previous-versions/dotnet/netframework-4.0/x3txb6xc(v=vs.100)).  
   
 ## <a name="default-marshaling-for-classes"></a>Marshaling padrão para classes  
+
  As classes podem ter o marshaling realizado somente pela interoperabilidade COM e sempre têm o marshaling realizado como interfaces. Em alguns casos, a interface usada para realizar marshaling da classe é conhecida como a interface de classe. Para obter informações sobre como substituir a interface de classe por uma interface de sua preferência, confira [Apresentando a interface de classe](../../standard/native-interop/com-callable-wrapper.md#introducing-the-class-interface).  
   
 ### <a name="passing-classes-to-com"></a>Passando classes para o COM  
+
  Quando uma classe gerenciada é passada para o COM, o marshaler de interoperabilidade encapsula a classe automaticamente com um proxy COM e passa a interface de classe produzida pelo proxy para a chamada de método COM. Em seguida, o proxy delega todas as chamadas na interface de classe novamente para o objeto gerenciado. O proxy também expõe interfaces que não são implementadas pela classe explicitamente. O proxy implementa automaticamente interfaces como **IUnknown** e **IDispatch** em nome da classe.  
   
 ### <a name="passing-classes-to-net-code"></a>Passando classes para o código do .NET  
+
  As coclasses não são normalmente usadas como argumentos de método no COM. Em vez disso, uma interface padrão geralmente é passada no lugar da coclass.  
   
  Quando uma interface é passada para um código gerenciado, o marshaler de interoperabilidade é responsável por encapsular a interface com o wrapper apropriado e passar o wrapper para o método gerenciado. Pode ser difícil determinar quais wrapper usar. Cada instância de um objeto COM tem um único wrapper exclusivo, não importa quantas interfaces são implementadas pelo objeto. Por exemplo, um único objeto COM que implementa cinco interfaces distintas tem apenas um wrapper. O mesmo wrapper expõe todas as cinco interfaces. Se duas instâncias do objeto COM são criadas, duas instâncias do wrapper são criadas.  
@@ -70,6 +75,7 @@ BSTR MethodOne (BSTR b) {
 3. Se o marshaler ainda não puder identificar a classe, ele encapsulará a interface com uma classe wrapper genérica chamada **System.__ComObject**.  
   
 ## <a name="default-marshaling-for-delegates"></a>Marshaling padrão para representantes  
+
  Um representante gerenciado tem o marshaling realizado como uma interface COM ou como um ponteiro de função, com base no mecanismo de chamada:  
   
 - Para a invocação de plataforma, um representante tem o marshaling realizado como um ponteiro de função não gerenciada, por padrão.  
@@ -161,6 +167,7 @@ internal class DelegateTest {
 ```  
   
 ## <a name="default-marshaling-for-value-types"></a>Marshaling padrão para tipos de valor  
+
  A maioria dos tipos de valor, como inteiros e números de ponto flutuante, é [blittable](blittable-and-non-blittable-types.md) e não exige marshaling. Outros tipos [não blittable](blittable-and-non-blittable-types.md) têm diferentes representações na memória gerenciada e não gerenciada e exigem marshaling. Além disso, outros tipos de exigem a formatação explícita no limite de interoperabilidade.  
   
  Esta seção fornece informações sobre os seguintes tipos de valor formatados:  
@@ -186,6 +193,7 @@ internal class DelegateTest {
      Indica que os membros são dispostos de acordo com o <xref:System.Runtime.InteropServices.FieldOffsetAttribute> fornecido com cada campo.  
   
 ### <a name="value-types-used-in-platform-invoke"></a>Tipos de valor usados na invocação de plataforma  
+
  No exemplo a seguir, os tipos `Point` e `Rect` fornecem informações de layout de membro usando o **StructLayoutAttribute**.  
   
 ```vb  
@@ -330,6 +338,7 @@ public class Point {
 ```  
   
 ### <a name="value-types-used-in-com-interop"></a>Tipos de valor usados na interoperabilidade COM  
+
  Os tipos formatados também podem ser passados para chamadas de método da interoperabilidade COM. Na verdade, quando exportados para uma biblioteca de tipos, os tipos de valor são convertidos em estruturas automaticamente. Como mostra o exemplo a seguir, o tipo de valor `Point` se torna uma definição de tipo (typedef) com o nome `Point`. Todas as referências ao tipo de valor `Point` em outros lugares da biblioteca de tipos são substituídas pela typedef `Point`.  
   
  **Representação da biblioteca de tipos**  
@@ -353,6 +362,7 @@ interface _Graphics {
 > Estruturas que têm o valor de enumeração <xref:System.Runtime.InteropServices.LayoutKind> definido como **Explicit** não podem ser usadas na interoperabilidade COM porque a biblioteca de tipos exportada não pode expressar um layout explícito.  
   
 ### <a name="system-value-types"></a>Tipos de valor do sistema  
+
  O namespace <xref:System> tem vários tipos de valor que representam o formato demarcado dos tipos primitivos de runtime. Por exemplo, a estrutura <xref:System.Int32?displayProperty=nameWithType> do tipo de valor representa o formato demarcado de **ELEMENT_TYPE_I4**. Em vez de realizar marshaling desses tipos como estruturas, assim como ocorre com outros tipos formatados, realize marshaling deles da mesma maneira como os tipos primitivos demarcados por eles. Portanto, **System.Int32** tem o marshaling realizado como **ELEMENT_TYPE_I4**, em vez de como uma estrutura que contém um único membro do tipo **long**. A tabela a seguir contém uma lista dos tipos de valor no namespace **System** que são representações demarcadas de tipos primitivos.  
   
 |Tipo de valor do sistema|Tipo de elemento|  
@@ -378,8 +388,8 @@ interface _Graphics {
 |Tipo de valor do sistema|Tipo de IDL|  
 |-----------------------|--------------|  
 |<xref:System.DateTime?displayProperty=nameWithType>|**DATE**|  
-|<xref:System.Decimal?displayProperty=nameWithType>|**VÍRGULA**|  
-|<xref:System.Guid?displayProperty=nameWithType>|**VOLUME**|  
+|<xref:System.Decimal?displayProperty=nameWithType>|**DECIMAL**|  
+|<xref:System.Guid?displayProperty=nameWithType>|**GUID**|  
 |<xref:System.Drawing.Color?displayProperty=nameWithType>|**OLE_COLOR**|  
   
  O código a seguir mostra a definição dos tipos não gerenciados **DATE**, **GUID**, **DECIMAL** e **OLE_COLOR** na biblioteca de tipos Stdole2.  
@@ -438,7 +448,7 @@ interface IValueTypes : IDispatch {
 };  
 ```  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Tipos blittable e não blittable](blittable-and-non-blittable-types.md)
 - [Copiando e fixando](copying-and-pinning.md)

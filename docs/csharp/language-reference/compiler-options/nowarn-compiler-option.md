@@ -9,14 +9,15 @@ helpviewer_keywords:
 - /nowarn compiler option [C#]
 - -nowarn compiler option [C#]
 ms.assetid: 6dcbc5e8-ae67-4566-9df3-f63cfdd9c4e4
-ms.openlocfilehash: ab906912bc4bfab40e459c92a823b915240b8d55
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 31a7ee5eacb2e7cd6b24c4a2276ce6e07fcc67e1
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125079"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "91194018"
 ---
 # <a name="-nowarn-c-compiler-options"></a>-nowarn (opções do compilador C#)
+
 A opção **-nowarn** permite suprimir a exibição de um ou mais avisos pelo compilador. Separe vários números de aviso com uma vírgula.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -26,10 +27,12 @@ A opção **-nowarn** permite suprimir a exibição de um ou mais avisos pelo co
 ```  
   
 ## <a name="arguments"></a>Argumentos  
+
  `number1`, `number2`  
  Números de aviso que você deseja que o compilador suprima.  
   
 ## <a name="remarks"></a>Comentários  
+
  Você só precisa especificar a parte numérica do identificador de aviso. Por exemplo, se quiser suprimir CS0028, você pode especificar `-nowarn:28`.  
   
  O compilador ignorará silenciosamente números de aviso passados para `-nowarn` que eram válidos em versões anteriores, mas que foram removidos do compilador. Por exemplo, CS0679 era válido no compilador no Visual Studio .NET 2002, mas foi removido posteriormente.  
@@ -54,6 +57,6 @@ A opção **-nowarn** permite suprimir a exibição de um ou mais avisos pelo co
   
 ## <a name="see-also"></a>Confira também
 
-- [Opções do compilador C#](./index.md)
+- [Opções do compilador de C#](./index.md)
 - [Gerenciando propriedades de solução e de projeto](/visualstudio/ide/managing-project-and-solution-properties)
 - [Erros do compilador C#](../compiler-messages/index.md)

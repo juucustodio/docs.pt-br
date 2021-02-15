@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: publicação e resolução de nome de par'
 title: Resolução e publicação de nome de par
 ms.date: 03/30/2017
 ms.assetid: f0370e08-9fa6-4ee5-ab78-9a58a20a7da2
-ms.openlocfilehash: 4a0787972a61f5700d1e8728be96db8ef9ee749e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: cd1d3358c212b1618548422715329eea57452ac3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "64623196"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747420"
 ---
 # <a name="peer-name-publication-and-resolution"></a>Resolução e publicação de nome de par
 

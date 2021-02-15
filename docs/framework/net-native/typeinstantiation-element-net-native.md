@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: <TypeInstantiation> elemento (.net Native)'
 title: <TypeInstantiation> (.NET Nativo)
 ms.date: 03/30/2017
 ms.assetid: a5eada64-075b-4162-9655-ded84e4681f2
-ms.openlocfilehash: 9069856b3d8739724d148b5eea5d4188c8b8b9e1
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 8939767e016283ea525fbd74554fe30b1cca952a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73128674"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801924"
 ---
 # <a name="typeinstantiation-element-net-native"></a>\<TypeInstantiation> (.NET Nativo)
+
 Aplica a política de reflexão de runtime a um tipo genérico construído.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <TypeInstantiation Name="type_name"  
@@ -30,6 +32,7 @@ Aplica a política de reflexão de runtime a um tipo genérico construído.
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -92,11 +95,13 @@ Aplica a política de reflexão de runtime a um tipo genérico construído.
 |`<TypeInstantiation>`|Aplica a política de reflexão a um tipo genérico construído e todos os seus membros.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Os atributos de reflexão, serialização e interoperabilidade são todos opcionais. No entanto, pelo menos um deve estar presente.  
   
  Se um `<TypeInstantiation>` elemento for o filho de um [\<Assembly>](assembly-element-net-native.md) [\<Namespace>](namespace-element-net-native.md) elemento, ou, [\<Type>](type-element-net-native.md) ele substituirá as configurações de política definidas pelo elemento pai. Se um [\<Type>](type-element-net-native.md) elemento definir uma definição de tipo genérico correspondente, o `<TypeInstantiation>` elemento substituirá a política de reflexão de tempo de execução somente para instanciações do tipo genérico construído especificado.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir usa uma reflexão para recuperar a definição de tipo genérico de um objeto <xref:System.Collections.Generic.Dictionary%602> construído. Ele também usa reflexão para exibir informações sobre objetos <xref:System.Type> que representam tipos genéricos construídos e definições de tipo genérico. A variável `b` no exemplo é um <xref:Windows.UI.Xaml.Controls.TextBlock> controle.  
   
  [!code-csharp[ProjectN_Reflection#2](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn_reflection/cs/makegenerictype1.cs#2)]  
@@ -114,7 +119,7 @@ Aplica a política de reflexão de runtime a um tipo genérico construído.
 </Directives>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência do arquivo de configuração de diretivas do runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
 - [Elementos da diretiva de runtime](runtime-directive-elements.md)

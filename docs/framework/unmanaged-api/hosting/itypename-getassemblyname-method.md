@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ITypeName:: GetAssemblyName'
 title: Método ITypeName::GetAssemblyName
 ms.date: 03/30/2017
 api_name:
@@ -15,17 +16,18 @@ helpviewer_keywords:
 ms.assetid: 97801d99-f5f1-4a30-882f-959827093fac
 topic_type:
 - apiref
-ms.openlocfilehash: 0c8f540e5d835b4874cc55b789804d0ce30f208d
-ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
+ms.openlocfilehash: c2e84ec2fc7c6a300611643783d61b46c14997ce
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83842199"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789337"
 ---
 # <a name="itypenamegetassemblyname-method"></a>Método ITypeName::GetAssemblyName
+
 Esse método oferece suporte a infraestrutura do .NET Framework e não se destina a ser usado diretamente do seu código.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT GetAssemblyName (  
@@ -34,11 +36,12 @@ HRESULT GetAssemblyName (
 ```  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   

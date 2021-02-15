@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: funcionalidade sem suporte'
 title: Funcionalidade sem suporte
 ms.date: 03/30/2017
 ms.assetid: e480cfb5-697e-42c8-bed5-9264c945c4f9
-ms.openlocfilehash: fb030a5f212be71d99b66f101e5e8411fbe4de33
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: 5c44dd4aad2d2ee4ec5e00ce42f4de9400cea478
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64618137"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99680883"
 ---
 # <a name="unsupported-functionality"></a>Funcionalidade sem suporte
+
 Em LINQ to SQL, a seguinte funcionalidade do SQL não pode ser expostas pela conversão do Common Language Runtime existente (CLR) e construtores do.NET Framework:  
   
 - `STDDEV`  
@@ -24,8 +26,8 @@ Em LINQ to SQL, a seguinte funcionalidade do SQL não pode ser expostas pela con
   
 - `ROUND`  
   
-     LINQ to SQL limitou suporte para `ROUND`. Para obter mais informações, consulte [métodos de System. Math](system-math-methods.md).  
+     LINQ to SQL limitou suporte para `ROUND`. Para obter mais informações, consulte [métodos System. Math](system-math-methods.md).  
   
 ## <a name="see-also"></a>Consulte também
 
-- [Funções e tipos de dados](data-types-and-functions.md)
+- [Tipos de dados e funções](data-types-and-functions.md)

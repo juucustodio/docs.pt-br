@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugAssembly'
 title: Interface ICorDebugAssembly
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9d657a28-6984-4c5e-8a54-89d20080baff
 topic_type:
 - apiref
-ms.openlocfilehash: d9e2236b944137de82bb056820f81014febfcc5f
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 746b5f4b2f26550788708d93bf0dd50f5f495041
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82894906"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711941"
 ---
 # <a name="icordebugassembly-interface"></a>Interface ICorDebugAssembly
 
@@ -30,7 +31,7 @@ Representa um assembly.
 |Método|Descrição|  
 |------------|-----------------|  
 |[Método EnumerateModules](icordebugassembly-enumeratemodules-method.md)|Obtém um enumerador para os módulos contidos no assembly.|  
-|[Método GetAppDomain](icordebugassembly-getappdomain-method.md)|Obtém um ponteiro de interface para o domínio do aplicativo que `ICorDebugAssembly` contém essa instância.|  
+|[Método GetAppDomain](icordebugassembly-getappdomain-method.md)|Obtém um ponteiro de interface para o domínio do aplicativo que contém essa `ICorDebugAssembly` instância.|  
 |[Método GetCodeBase](icordebugassembly-getcodebase-method.md)|Não implementado na versão atual do .NET Framework.|  
 |[Método GetName](icordebugassembly-getname-method.md)|Obtém o nome do assembly.|  
 |[Método GetProcess](icordebugassembly-getprocess-method.md)|Obtém a instância ICorDebugProcess na qual o assembly está em execução.|  
@@ -41,6 +42,7 @@ Representa um assembly.
 > Esta interface não dá suporte para chamada remota, seja entre computadores ou processos cruzados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

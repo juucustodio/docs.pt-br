@@ -12,14 +12,15 @@ helpviewer_keywords:
 - res compiler option [C#]
 - resource compiler option [C#]
 ms.assetid: 5212666e-98ab-47e4-a497-b5545ab15c7f
-ms.openlocfilehash: 1e2de095b460b684fb06faf46731283a1304906e
-ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
+ms.openlocfilehash: 6f90ce6c1590784cefbd5f15ca8a36941aad77ed
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89465683"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "91193771"
 ---
 # <a name="-resource-c-compiler-options"></a>-resource (opções do compilador C#)
+
 Insere o recurso especificado no arquivo de saída.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -29,6 +30,7 @@ Insere o recurso especificado no arquivo de saída.
 ```  
   
 ## <a name="arguments"></a>Argumentos  
+
  `filename`  
  O arquivo de recurso do .NET que você deseja inserir no arquivo de saída.  
   
@@ -39,6 +41,7 @@ Insere o recurso especificado no arquivo de saída.
  A acessibilidade do recurso: público ou privado. O padrão é público.  
   
 ## <a name="remarks"></a>Comentários  
+
  Use [-linkresource](./linkresource-compiler-option.md) para vincular um recurso a um assembly e não adicionar o arquivo de recurso ao arquivo de saída.  
   
  Por padrão, recursos são públicos no assembly quando são criados usando o compilador C#. Para tornar os recursos privados, especifique `private` como o modificador de acessibilidade. Não é permitida nenhuma outra acessibilidade diferente de `public` ou `private`.  
@@ -62,13 +65,14 @@ Insere o recurso especificado no arquivo de saída.
  Para saber mais sobre como definir essa opção do compilador programaticamente, veja <xref:VSLangProj80.FileProperties2.BuildAction%2A>.  
   
 ## <a name="example"></a>Exemplo  
+
  Compile `in.cs` e anexe ao arquivo de recurso `rf.resource`:  
   
 ```console  
 csc -resource:rf.resource in.cs  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Opções do compilador C#](./index.md)
+- [Opções do compilador de C#](./index.md)
 - [Gerenciando propriedades de solução e de projeto](/visualstudio/ide/managing-project-and-solution-properties)

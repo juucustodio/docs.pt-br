@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostTaskManager:: SetUILocale'
 title: Método IHostTaskManager::SetUILocale
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: d0c87a9c-ea81-4237-a16b-c22b36ec9dc8
 topic_type:
 - apiref
-ms.openlocfilehash: e7e65c3b9bcafdf4c8b1185fcff1fc0740b2ef7c
-ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
+ms.openlocfilehash: 0b81f127c6afb64670424a05db6cc57c4918396a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83841420"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789379"
 ---
 # <a name="ihosttaskmanagersetuilocale-method"></a>Método IHostTaskManager::SetUILocale
+
 Notifica o host de que o Common Language Runtime (CLR) alterou a localidade da interface do usuário, ou cultura, na tarefa em execução no momento.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,14 +36,15 @@ HRESULT SetUILocale (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `lcid`  
  no O valor do identificador de localidade que mapeia para a cultura geográfica e a linguagem recém atribuídas.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
-|S_OK|`SetUILocale`retornado com êxito.|  
+|S_OK|`SetUILocale` retornado com êxito.|  
 |HOST_E_CLRNOTAVAILABLE|O CLR não foi carregado em um processo ou o CLR está em um estado no qual não pode executar código gerenciado ou processar a chamada com êxito.|  
 |HOST_E_TIMEOUT|A chamada atingiu o tempo limite.|  
 |HOST_E_NOT_OWNER|O chamador não possui o bloqueio.|  
@@ -50,14 +53,16 @@ HRESULT SetUILocale (
 |E_NOTIMPL|O host não permite que o código de usuário gerenciado altere a cultura da IU.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O tempo de execução chama `SetUILocale` quando o valor da <xref:System.Threading.Thread.CurrentUICulture%2A?displayProperty=nameWithType> propriedade é alterado por código gerenciado. Esse método fornece uma oportunidade para o host executar qualquer mecanismo que ele possa ter para a sincronização de localidades. Se um host não permitir que a localidade da interface do usuário seja alterada do código gerenciado ou não implementar um mecanismo para sincronizar as localidades, ele deverá retornar E_NOTIMPL desse método.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   

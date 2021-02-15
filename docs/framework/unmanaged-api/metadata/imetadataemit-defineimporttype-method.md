@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: IMetaDataEmit: método efineImportType de:D'
 title: Método IMetaDataEmit::DefineImportType
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 37fd27af-8062-4904-ace4-51bb78ec600a
 topic_type:
 - apiref
-ms.openlocfilehash: edce5cb93b770fb5730e5a06633ffffacf332f7a
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 7afe0fe400e4eb6e177a06e00b2d69202820804c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84004680"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753426"
 ---
 # <a name="imetadataemitdefineimporttype-method"></a>Método IMetaDataEmit::DefineImportType
+
 Cria uma referência ao tipo especificado que é definido fora do escopo atual e define um token para essa referência.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -40,6 +42,7 @@ HRESULT DefineImportType (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pAssemImport`  
  no Uma interface [IMetaDataAssemblyImport](imetadataassemblyimport-interface.md) que representa o assembly do qual o tipo de destino é importado.  
   
@@ -62,18 +65,20 @@ HRESULT DefineImportType (
  fora O `mdTypeRef` token que é definido no escopo atual para a referência de tipo.  
   
 ## <a name="remarks"></a>Comentários  
+
  Antes de chamar o método [IMetaDataEmit::D efineimportmember](imetadataemit-defineimportmember-method.md) , você pode usar o `DefineImportType` método para criar uma referência de tipo, no escopo atual, para a classe pai ou a interface pai do membro.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MSCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataEmit](imetadataemit-interface.md)
 - [Interface IMetaDataEmit2](imetadataemit2-interface.md)

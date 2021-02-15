@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: While... Instrução End While (Visual Basic)'
 title: Instrução While...End While
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,17 +10,18 @@ helpviewer_keywords:
 - While statement [Visual Basic]
 - While...End While statements [Visual Basic]
 ms.assetid: b931d1ce-e8ed-44d8-a13d-92a4f5458a1e
-ms.openlocfilehash: d9eb8cb95d46e860aa127954d7b44e37991d4a13
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: ab452e2d9446c9c44b952c6ebf026f7a6f9080cd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84391580"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787572"
 ---
 # <a name="whileend-while-statement-visual-basic"></a>Instrução While...End While (Visual Basic)
+
 Executa uma série de instruções desde que uma determinada condição seja `True` .  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 While condition  
@@ -39,9 +41,10 @@ End While
 |`statements`|Opcional. Uma ou mais instruções `While` a seguir, que são executadas toda vez `condition` são `True` .|  
 |`Continue While`|Opcional. Transfere o controle para a próxima iteração do `While` bloco.|  
 |`Exit While`|Opcional. Transfere o controle do `While` bloco.|  
-|`End While`|Obrigatórios. Finaliza a definição do bloco `While`.|  
+|`End While`|Obrigatório. Finaliza a definição do bloco `While`.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Use uma `While...End While` estrutura quando você quiser repetir um conjunto de instruções um número indefinido de vezes, desde que uma condição permaneça `True` . Se você quiser mais flexibilidade com o local em que você testa a condição ou o resultado para o qual você o testa, talvez prefira o [... Instrução loop](do-loop-statement.md). Se você quiser repetir as instruções um número definido de vezes, o [para... A próxima instrução](for-next-statement.md) é geralmente uma opção melhor.  
   
 > [!NOTE]
@@ -56,7 +59,8 @@ End While
  Você pode aninhar `While` loops colocando um loop dentro de outro. Você também pode aninhar diferentes tipos de estruturas de controle entre si. Para obter mais informações, consulte [estruturas de controle aninhado](../../programming-guide/language-features/control-flow/nested-control-structures.md).  
   
 ## <a name="exit-while"></a>Sair enquanto  
- A instrução [Exit while](exit-statement.md) pode fornecer outra maneira de sair de um `While` loop. `Exit While`transfere imediatamente o controle para a instrução que segue a `End While` instrução.  
+
+ A instrução [Exit while](exit-statement.md) pode fornecer outra maneira de sair de um `While` loop. `Exit While` transfere imediatamente o controle para a instrução que segue a `End While` instrução.  
   
  Normalmente, você usa `Exit While` depois que alguma condição é avaliada (por exemplo, em uma `If...Then...Else` estrutura). Talvez você queira sair de um loop se detectar uma condição que o torne desnecessário ou impossível para continuar a iteração, como um valor errado ou uma solicitação de encerramento. Você pode usar `Exit While` ao testar uma condição que poderia causar um *loop infinito*, que é um loop que poderia executar um número muito grande ou mesmo infinito de vezes. Em seguida, você pode usar `Exit While` para escapar o loop.  
   
@@ -67,21 +71,24 @@ End While
  A `Continue While` instrução transfere imediatamente o controle para a próxima iteração do loop. Para obter mais informações, consulte [instrução Continue](continue-statement.md).  
   
 ## <a name="example"></a>Exemplo  
+
  No exemplo a seguir, as instruções no loop continuam a ser executadas até que a `index` variável seja maior que 10.  
   
  [!code-vb[VbVbalrStatements#171](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class14.vb#171)]  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir ilustra o uso das `Continue While` `Exit While` instruções e.  
   
  [!code-vb[VbVbalrStatements#172](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class14.vb#172)]  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir lê todas as linhas em um arquivo de texto. O <xref:System.IO.File.OpenText%2A> método abre o arquivo e retorna um <xref:System.IO.StreamReader> que lê os caracteres. Na `While` condição, o <xref:System.IO.StreamReader.Peek%2A> método de `StreamReader` determina se o arquivo contém caracteres adicionais.  
   
  [!code-vb[VbVbalrStatements#173](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class14.vb#173)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Estruturas de Loop](../../programming-guide/language-features/control-flow/loop-structures.md)
 - [Instrução Do...Loop](do-loop-statement.md)

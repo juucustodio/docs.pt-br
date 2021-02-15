@@ -1,73 +1,74 @@
 ---
+description: 'Saiba mais sobre: práticas recomendadas para sessões confiáveis'
 title: Práticas recomendadas para sessões confiáveis
 ms.date: 03/30/2017
 ms.assetid: b94f6e01-8070-40b6-aac7-a2cb7b4cb4f2
-ms.openlocfilehash: 1d9671e7e3124d535b66de8cd8468f76dcb32b10
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 4b05dd914d2c5b8ec7941417b727bec1e5b43ba4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61857980"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643664"
 ---
 # <a name="best-practices-for-reliable-sessions"></a>Práticas recomendadas para sessões confiáveis
 
 Este tópico discute as práticas recomendadas para sessões confiáveis.
 
-## <a name="setting-maxtransferwindowsize"></a>Configuração MaxTransferWindowSize
+## <a name="setting-maxtransferwindowsize"></a>Configurando MaxTransferWindowSize
 
-Sessões confiáveis no Windows Communication Foundation (WCF) usam uma janela de transferência para manter as mensagens no cliente e o serviço. A propriedade configurável <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.MaxTransferWindowSize%2A> indica quantas mensagens a janela de transferência pode conter.
+As sessões confiáveis no Windows Communication Foundation (WCF) usam uma janela de transferência para manter as mensagens no cliente e no serviço. A propriedade configurável <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.MaxTransferWindowSize%2A> indica quantas mensagens a janela de transferência pode conter.
 
-No remetente, isso indica quantas mensagens a janela de transferência pode conter enquanto aguarda as confirmações; no receptor, ele indica quantas mensagens para armazenar em buffer para o serviço.
+No remetente, isso indica quantas mensagens a janela de transferência pode conter ao aguardar confirmações; no receptor, ele indica quantas mensagens armazenar em buffer para o serviço.
 
-Escolher o tamanho correto afeta a eficiência da rede e a capacidade ideal do serviço. As seções a seguir detalham o que considerar ao escolher um valor para essa propriedade e o impacto do valor.
+Escolher o tamanho certo afeta a eficiência da rede e a capacidade ideal do serviço. As seções a seguir detalham o que considerar ao escolher um valor para essa propriedade e o impacto do valor.
 
-O tamanho de janela de transferência padrão é oito mensagens.
+O tamanho da janela de transferência padrão é oito mensagens.
 
 ### <a name="efficient-use-of-the-network"></a>Uso eficiente da rede
 
-Nesse contexto, o termo *rede* corresponde a tudo o que usado como a base da comunicação entre um cliente (remetente) e um serviço (receptor). Isso inclui as conexões de transporte e qualquer intermediário ou pontes entre elas, incluindo HTTP proxies/firewalls ou roteadores SOAP.
+Nesse contexto, o termo *rede* corresponde a tudo usado como a base da comunicação entre um cliente (remetente) e um serviço (receptor). Isso inclui as conexões de transporte e qualquer intermediário ou ponte entre, incluindo roteadores SOAP ou proxies/firewalls HTTP.
 
-Uso eficiente da rede garante a capacidade de rede estiver totalmente utilizada. O volume de dados que podem ser transferidos pela rede por segundo (*taxa de dados*) e o tempo necessário para transferir dados do remetente para o receptor (*latência*) afetar como efetivamente a rede é utilizado.
+O uso eficiente da rede garante que a capacidade da rede seja totalmente usada. A quantidade de dados que podem ser transferidos por segundo pela rede (taxa de *dados*) e o tempo necessário para transferir dados do remetente para o receptor (*latência*) impactam a eficácia com que a rede é utilizada.
 
-No remetente, a propriedade <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.MaxTransferWindowSize%2A> indica quantas mensagens sua janela de transferência pode conter enquanto aguarda as confirmações. Se a latência de rede é alta e para garantir que um remetente responsivo e a utilização da rede em vigor, você deve aumentar o tamanho da janela de transferência.
+No remetente, a propriedade <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.MaxTransferWindowSize%2A> indica quantas mensagens sua janela de transferência pode conter ao aguardar confirmações. Se a latência de rede for alta e para garantir um remetente responsivo e uma utilização de rede eficaz, você deverá aumentar o tamanho da janela de transferência.
 
-Por exemplo, mesmo se o remetente mantém o ritmo com taxa de dados, a latência pode ser alta se vários intermediários existem entre o remetente e receptor ou os dados devem passar por um intermediário com perdas ou rede. Portanto, o remetente possui a espera por confirmações para mensagens em sua janela de transferência antes de aceitar novas mensagens para enviar durante a transmissão. Quanto menor o buffer com alta latência, menos eficazes a utilização da rede. Por outro lado, muito alta um tamanho de janela de transferência pode afetar o serviço porque o serviço talvez precisem ser atualizado para a alta taxa de dados enviados pelo cliente.
+Por exemplo, mesmo que o remetente continue com a taxa de dados, a latência poderá ser alta se existirem vários intermediários entre o remetente e o destinatário ou os dados precisarem passar por uma rede ou um intermediário com perdas. Portanto, o remetente precisa aguardar as confirmações das mensagens em sua janela de transferência antes de aceitar novas mensagens para envio na conexão. Quanto menor o buffer com alta latência, menor a eficiência da utilização da rede. Por outro lado, um tamanho de janela de transferência muito alto pode afetar o serviço, pois o serviço pode precisar acompanhar a alta taxa de dados enviados pelo cliente.
 
-### <a name="running-the-service-to-capacity"></a>Executando o serviço a capacidade
+### <a name="running-the-service-to-capacity"></a>Executando o serviço para a capacidade
 
-Quanto tempo a rede é usada com eficiência, idealmente, você também deseja o serviço seja executado na capacidade total ideal. A propriedade de tamanho de janela de transferência no receptor indica quantas mensagens que o receptor pode armazenar em buffer. Esse buffer de mensagem ajuda não só o controle de fluxo de rede, mas também permite que o serviço seja executado a capacidade total. Por exemplo, se o buffer é uma mensagem e as mensagens chegam mais rápido do que o serviço pode processá-las, em seguida, a rede pode ignorar mensagens e capacidade pode ser desperdiçada ou subutilizada.
+Tanto quanto a rede for usada com eficiência, o ideal é que você também queira que o serviço seja executado com capacidade ideal. A propriedade tamanho da janela de transferência no receptor indica quantas mensagens o receptor pode armazenar em buffer. Esse buffer de mensagens ajuda não apenas o controle de fluxo de rede, mas também permite que o serviço seja executado com capacidade total. Por exemplo, se o buffer for uma mensagem e as mensagens chegarem mais rápido do que o serviço pode processá-las, a rede poderá remover mensagens e a capacidade poderá ser desperdiçada ou subutilizada.
 
-Usando um buffer aumenta a disponibilidade do serviço que recebe e armazena uma mensagem em buffer ao processar a mensagem recebida anteriormente simultaneamente.
+O uso de um buffer aumenta a disponibilidade do serviço, pois ele recebe e armazena em buffers simultaneamente uma mensagem durante o processamento das mensagens recebidas anteriormente.
 
-É recomendável que você use o mesmo `MaxTransferWindowSize` no remetente e receptor.
+Recomendamos que você use o mesmo `MaxTransferWindowSize` no remetente e no destinatário.
 
-### <a name="enabling-flow-control"></a>Habilitar o controle de fluxo
+### <a name="enabling-flow-control"></a>Habilitando o controle de fluxo
 
-*Controle de fluxo* é um mecanismo que garante que o remetente e receptor acompanhar uns aos outros, ou seja, as mensagens são consumidas e influenciadas tão rápido quanto eles são produzidos. O tamanho da janela de transferência no cliente e o serviço garante que o remetente e receptor dentro de uma janela razoável de sincronização.
+O *controle de fluxo* é um mecanismo que garante que o remetente e o destinatário mantenham o ritmo entre si, ou seja, as mensagens são consumidas e trabalhadas tão rapidamente quanto são produzidas. O tamanho da janela de transferência no cliente e no serviço garante que o remetente e o destinatário estejam dentro de uma janela razoável de sincronização.
 
-É altamente recomendável que você defina a propriedade <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.FlowControlEnabled%2A> para `true` quando você estiver usando uma sessão confiável entre um cliente WCF e um serviço WCF.
+É altamente recomendável que você defina a propriedade <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.FlowControlEnabled%2A> como `true` quando estiver usando uma sessão confiável entre um cliente WCF e um serviço WCF.
 
-## <a name="setting-maxpendingchannels"></a>Configuração MaxPendingChannels
+## <a name="setting-maxpendingchannels"></a>Configurando MaxPendingChannels
 
-Ao escrever um serviço que permite a comunicação de sessão confiável de clientes diferentes, é possível ter vários clientes estabelecer uma sessão confiável para o serviço ao mesmo tempo. A resposta do serviço nessas situações depende o `MaxPendingChannels` propriedade.
+Ao escrever um serviço que permite a comunicação de sessão confiável de diferentes clientes, é possível ter muitos clientes estabelecendo uma sessão confiável para o serviço ao mesmo tempo. A resposta do serviço nessas situações depende da `MaxPendingChannels` propriedade.
 
-Quando o remetente cria um canal de sessão confiável a um destinatário, um handshake entre eles estabelece uma sessão confiável. Depois que a sessão confiável foi estabelecida, o canal é colocado em uma fila de canal pendentes para aceitação pelo serviço. O `MaxPendingChannels` propriedade indica quantos canais podem ficar nesse estado.
+Quando o remetente cria um canal de sessão confiável para um receptor, um handshake entre eles estabelece uma sessão confiável. Depois que a sessão confiável é estabelecida, o canal é colocado em uma fila de canal pendente para a aceitação pelo serviço. A `MaxPendingChannels` propriedade indica quantos canais podem estar nesse estado.
 
-É possível que o serviço esteja em um estado em que ele não pode aceitar mais canais. Se a fila está cheia, uma tentativa de estabelecer uma sessão confiável é rejeitada e o cliente deve repetir.
+É possível que o serviço esteja em um estado em que ele não aceite mais canais. Se a fila estiver cheia, uma tentativa de estabelecer uma sessão confiável será rejeitada e o cliente deverá tentar novamente.
 
-Também é possível que os canais pendentes na fila permanecem na fila por mais tempo. Nesse ínterim, um tempo limite de inatividade da sessão confiável pode ocorrer, fazendo com que o canal de fazer a transição para um estado de falha.
+Também é possível que os canais pendentes na fila permaneçam na fila por uma duração maior. Enquanto isso, um tempo limite de inatividade na sessão confiável pode ocorrer, fazendo com que o canal faça a transição para um estado com falha.
 
-Ao escrever um serviço que atende a vários clientes simultaneamente, você deve definir um valor que é adequado para suas necessidades. Definindo um valor muito alto para o `MaxPendingChannels` propriedade afeta o conjunto de trabalho.
+Ao escrever um serviço que atende a vários clientes simultaneamente, você deve definir um valor adequado às suas necessidades. Definir um valor muito alto para a `MaxPendingChannels` propriedade afeta seu conjunto de trabalho.
 
-O valor padrão para <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.MaxPendingChannels%2A> é quatro canais.
+O valor padrão para o <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.MaxPendingChannels%2A> é de quatro canais.
 
-## <a name="reliable-sessions-and-hosting"></a>Sessões confiáveis e hospedagem
+## <a name="reliable-sessions-and-hosting"></a>Hospedagem e sessões confiáveis
 
-Quando web a hospedar um serviço que usa as sessões confiáveis, você deve ter as seguintes considerações importantes em mente:
+Quando a Web hospeda um serviço que usa sessões confiáveis, você deve manter as seguintes considerações importantes em mente:
 
-- Sessões confiáveis são com monitoração de estado e o estado é mantido no AppDomain. Isso significa que todas as mensagens que fazem parte de uma sessão confiável devem ser processadas no mesmo AppDomain. Web farms e ambientes web onde o tamanho do farm ou do ambiente é maior que um nó não podem garantir essa restrição.
+- As sessões confiáveis são monitoradas e o estado é mantido no AppDomain. Isso significa que todas as mensagens que fazem parte de uma sessão confiável devem ser processadas no mesmo AppDomain. Web farms e ambientes Web em que o tamanho do farm ou do jardim é maior que um nó não pode garantir essa restrição.
 
-- Sessões confiáveis usando dois canais HTTP (por exemplo, usando `WsDualHttpBinding`) pode exigir mais do que o padrão de duas conexões por-cliente HTTP. Isso significa que uma sessão confiável duplex pode exigir até duas conexões cada forma porque mensagens simultâneas do aplicativo e o protocolo podem transferir a cada forma em um determinado momento. Sob certas condições, dependendo do padrão de troca de mensagem do serviço, isso significa que é possível que ocorra um deadlock um serviço hospedado na web usando HTTP duplo e sessões confiáveis. Para aumentar o número de conexões de HTTP permitidas por cliente, adicione o seguinte ao arquivo de configuração relevante (por exemplo, *Web. config* do serviço em questão):
+- As sessões confiáveis que usam canais HTTP duplos (por exemplo, usando `WsDualHttpBinding` ) podem exigir mais do que o padrão de duas conexões http por cliente. Isso significa que uma sessão confiável duplex pode exigir até duas conexões, cada uma delas porque as mensagens simultâneas de aplicativo e protocolo podem ser transformadas cada uma delas em um determinado momento. Em determinadas condições, dependendo do padrão de troca de mensagens do serviço, isso significa que é possível fazer o deadlock de um serviço hospedado na Web usando HTTP duplo e sessões confiáveis. Para aumentar o número de conexões HTTP permitidas por cliente, adicione o seguinte ao arquivo de configuração relevante (por exemplo, *web.config* do serviço em questão):
 
   ```xml
   <configuration>
@@ -79,4 +80,4 @@ Quando web a hospedar um serviço que usa as sessões confiáveis, você deve te
   </configuration>
   ```
 
-  O valor da `maxconnection` atributo é o número de conexões necessárias. Nesse caso, o mínimo deve ser quatro conexões.
+  O valor do `maxconnection` atributo é o número de conexões necessárias. O mínimo, nesse caso, deve ser de quatro conexões.

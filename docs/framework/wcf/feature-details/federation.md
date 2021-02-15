@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Federação'
 title: Federação
 ms.date: 03/30/2017
 dev_langs:
@@ -8,22 +9,25 @@ helpviewer_keywords:
 - WCF, federation
 - federation [WCF]
 ms.assetid: 2f1e646f-8361-48d4-9d5d-1b961f31ede4
-ms.openlocfilehash: c31c2612b595e627b0c4c2d7fbb3a359b19ee704
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 069017097b46ef0b86e74fb94c2e2823172fb1e0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595486"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756325"
 ---
 # <a name="federation"></a>Federação
+
 Este tópico fornece uma breve visão geral do conceito de segurança federada. Ele também descreve o suporte a Windows Communication Foundation (WCF) para implantar arquiteturas de segurança federadas. Para obter um aplicativo de exemplo que demonstre a Federação, consulte [exemplo de Federação](../samples/federation-sample.md).  
   
 ## <a name="definition-of-federated-security"></a>Definição de segurança federada  
+
  A segurança federada permite uma separação clara entre o serviço que um cliente está acessando e os procedimentos de autenticação e autorização associados. A segurança federada também permite a colaboração entre vários sistemas, redes e organizações em territórios de confiança diferentes.  
   
  O WCF oferece suporte para a criação e implantação de sistemas distribuídos que empregam a segurança federada.  
   
 ### <a name="elements-of-a-federated-security-architecture"></a>Elementos de uma arquitetura de segurança federada  
+
  A arquitetura de segurança federada tem três elementos principais, conforme descrito na tabela a seguir.  
   
 |Elemento|Descrição|  
@@ -33,6 +37,7 @@ Este tópico fornece uma breve visão geral do conceito de segurança federada. 
 |STS (Serviço de Token de Segurança)|Um serviço Web que emite tokens de segurança; ou seja, ele faz asserções com base nas evidências que confiam, para quemá-la a confiar. Isso constitui a base do agente de confiança entre domínios.|  
   
 ### <a name="example-scenario"></a>Cenário de Exemplo  
+
  A ilustração a seguir mostra um exemplo de segurança federada:  
   
  ![Diagrama mostrando um cenário típico de segurança federada.](./media/federation/typical-federated-security-scenario.gif)  
@@ -40,7 +45,7 @@ Este tópico fornece uma breve visão geral do conceito de segurança federada. 
  Esse cenário inclui duas organizações: A e B. a organização B tem um recurso da Web (um serviço Web) que alguns usuários da organização A encontraram valiosos.  
   
 > [!NOTE]
-> Esta seção usa o *recurso*de termos, o *serviço*e o *serviço Web* de maneira intercambiável.  
+> Esta seção usa o *recurso* de termos, o *serviço* e o *serviço Web* de maneira intercambiável.  
   
  Normalmente, a organização B requer que um usuário da organização A forneça alguma forma válida de autenticação antes de acessar o serviço. Além disso, a organização também pode exigir que o usuário esteja autorizado a acessar o recurso específico em questão. Uma maneira de resolver esse problema e permitir que os usuários na organização a acessem o recurso na organização B é o seguinte:  
   
@@ -67,6 +72,7 @@ Este tópico fornece uma breve visão geral do conceito de segurança federada. 
  Depois que os usuários obtêm um token de segurança do STS A, eles apresentam o token para o STS B. a organização B continua a executar a autorização das solicitações dos usuários e emite um token de segurança para os usuários de seu próprio conjunto de tokens de segurança. Os usuários podem então apresentar seu token para o recurso na organização B e acessar o serviço.  
   
 ## <a name="support-for-federated-security-in-wcf"></a>Suporte para segurança federada no WCF  
+
  O WCF fornece suporte completo para implantar arquiteturas de segurança federadas por meio do [\<wsFederationHttpBinding>](../../configure-apps/file-schema/wcf/wsfederationhttpbinding.md) .  
   
  O [\<wsFederationHttpBinding>](../../configure-apps/file-schema/wcf/wsfederationhttpbinding.md) elemento fornece uma associação segura, confiável e interoperável que envolve o uso de http como o mecanismo de transporte subjacente para o estilo de comunicação de solicitação-resposta, empregando texto e XML como o formato de conexão para codificação.  
@@ -74,7 +80,8 @@ Este tópico fornece uma breve visão geral do conceito de segurança federada. 
  O uso do [\<wsFederationHttpBinding>](../../configure-apps/file-schema/wcf/wsfederationhttpbinding.md) em um cenário de segurança federada pode ser dissociado em duas fases logicamente independentes, conforme descrito nas seções a seguir.  
   
 ### <a name="phase-1-design-phase"></a>Fase 1: fase de design  
- Durante a fase de design, o cliente usa a [ferramenta de utilitário de metadados ServiceModel (svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) para ler a política que o ponto de extremidade de serviço expõe e para coletar os requisitos de autenticação e autorização do serviço. Os proxies apropriados são construídos para criar o seguinte padrão de comunicação de segurança federada no cliente:  
+
+ Durante a fase de design, o cliente usa a [ferramenta de utilitário de metadados ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) para ler a política que o ponto de extremidade de serviço expõe e para coletar os requisitos de autenticação e autorização do serviço. Os proxies apropriados são construídos para criar o seguinte padrão de comunicação de segurança federada no cliente:  
   
 - Obtenha um token de segurança do STS no realm de confiança do cliente.  
   
@@ -84,15 +91,18 @@ Este tópico fornece uma breve visão geral do conceito de segurança federada. 
   
 - Apresente o token ao serviço para acessar o serviço.  
   
-### <a name="phase-2-run-time-phase"></a>Fase 2: fase de tempo de execução  
+### <a name="phase-2-run-time-phase"></a>Fase 2: fase de Run-Time  
+
  Durante a fase de tempo de execução, o cliente cria uma instância de um objeto da classe WCF Client e faz uma chamada usando o cliente WCF. A estrutura subjacente do WCF manipula as etapas mencionadas anteriormente no padrão de comunicação de segurança federada e permite que o cliente consuma o serviço diretamente.  
   
 ## <a name="sample-implementation-using-wcf"></a>Exemplo de implementação usando o WCF  
+
  A ilustração a seguir mostra uma implementação de exemplo para uma arquitetura de segurança federada usando o suporte nativo do WCF.  
   
  ![Diagrama mostrando uma implementação de segurança de Federação de exemplo.](./media/federation/federated-security-implementation.gif)  
   
 ### <a name="example-myservice"></a>Exemplo de MyService  
+
  O serviço `MyService` expõe um único ponto de extremidade por meio do `MyServiceEndpoint` . A ilustração a seguir mostra o endereço, a associação e o contrato associados ao ponto de extremidade.  
   
  ![Diagrama mostrando os detalhes de myserviceendpoint.](./media/federation/myserviceendpoint-details.gif)  
@@ -158,6 +168,7 @@ operationRequirementType="FederationSample.MyServiceOperationRequirement, MyServ
 [!code-vb[C_Federation#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_federation/vb/source.vb#1)]  
   
 #### <a name="sts-b"></a>STS B  
+
  A ilustração a seguir mostra o STS B. Como mencionado anteriormente, um STS (serviço de token de segurança) também é um serviço Web e pode ter seus pontos de extremidade associados, política e assim por diante.  
   
  ![Diagrama mostrando o serviço de token de segurança B.](./media/federation/myservice-security-token-service-b.gif)  
@@ -220,6 +231,7 @@ operationRequirementType="FederationSample.MyServiceOperationRequirement, MyServ
  [!code-vb[C_Federation#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_federation/vb/source.vb#3)]  
   
 #### <a name="sts-a"></a>STS A  
+
  A ilustração a seguir mostra o STS A.  
   
  ![Federação](media/sts-b.gif "STS_B")  
@@ -282,11 +294,13 @@ operationRequirementType="FederationSample.MyServiceOperationRequirement, MyServ
  [!code-vb[C_Federation#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_federation/vb/source.vb#5)]  
   
 ### <a name="client-at-organization-a"></a>Cliente na organização A  
+
  A ilustração a seguir mostra o cliente na organização A, juntamente com as etapas envolvidas em fazer uma `MyService` chamada de serviço. Os outros componentes funcionais também estão incluídos para fins de integridade.  
   
  ![Diagrama mostrando as etapas em uma chamada de serviço de MyService.](./media/federation/federation-myservice-service-call-process.gif)  
   
 ## <a name="summary"></a>Resumo  
+
  A segurança federada fornece uma divisão de responsabilidade limpa e ajuda a criar arquiteturas de serviço seguras e escalonáveis. Como uma plataforma para a criação e implantação de aplicativos distribuídos, o WCF fornece suporte nativo para implementar a segurança federada.  
   
 ## <a name="see-also"></a>Consulte também

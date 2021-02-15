@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugComObjectValue:: GetCachedInterfacePointers'
 title: Método ICorDebugComObjectValue::GetCachedInterfacePointers
 ms.date: 03/30/2017
 api_name:
@@ -13,14 +14,15 @@ helpviewer_keywords:
 ms.assetid: 08dbd558-bd39-4263-94c2-71e70687aaf0
 topic_type:
 - apiref
-ms.openlocfilehash: fa22c17ed7d5bcd689f21d2d855d9be7a6a8e164
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 737d71f6aa903a3dfa97f583b47a322ec074147f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82892804"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710849"
 ---
 # <a name="icordebugcomobjectvaluegetcachedinterfacepointers-method"></a>Método ICorDebugComObjectValue::GetCachedInterfacePointers
+
 Obtém os ponteiros de interface bruto armazenados em cache no RCW (tempo de execução Callable Wrapper) atual.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,14 +36,15 @@ HRESULT GetCachedInterfacePointers(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `bIInspectableOnly`  
- no Um valor que indica se o método retornará apenas interfaces Windows Runtime (`IInspectable` interfaces) ou todas as interfaces com armazenadas em cache pelo RCW (Runtime Callable Wrapper).  
+ no Um valor que indica se o método retornará apenas interfaces Windows Runtime ( `IInspectable` interfaces) ou todas as interfaces com armazenadas em cache pelo RCW (Runtime Callable Wrapper).  
   
  `celt`  
  no O número de objetos cujos endereços devem ser recuperados.  
   
  `pceltFetched`  
- fora Um ponteiro para o número de `CORDB_ADDRESS` valores realmente retornados em `ptrs`.  
+ fora Um ponteiro para o número de `CORDB_ADDRESS` valores realmente retornados em `ptrs` .  
   
  `ptrs`  
  Um ponteiro para o endereço inicial de uma matriz de `CORDB_ADDRESS` valores que contêm os endereços dos objetos de interface em cache.  
@@ -49,6 +52,7 @@ HRESULT GetCachedInterfacePointers(
 ## <a name="remarks"></a>Comentários  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

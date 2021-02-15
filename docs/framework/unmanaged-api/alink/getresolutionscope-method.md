@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método GetResolutionScope'
 title: Método GetResolutionScope
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5b48ca60-dacd-44b2-9979-4a5122f00812
 topic_type:
 - apiref
-ms.openlocfilehash: f2b78b35db6306c82e389955c4824875bcf25334
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: add8ccb1ef6eb0f4b688dcf80563e9280099120d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74447230"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718389"
 ---
 # <a name="getresolutionscope-method"></a>Método GetResolutionScope
+
 Recupera o escopo de um determinado tipo.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT GetResolutionScope(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `AssemblyID`  
  ID do assembly.  
   
@@ -49,9 +52,11 @@ HRESULT GetResolutionScope(
  Recebe a referência de módulo ou assembly.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  Retorna S_OK se o método tiver sucesso.  
   
-## <a name="requirements"></a>{1&gt;{2&gt;Requisitos&lt;2}&lt;1}  
+## <a name="requirements"></a>Requisitos  
+
  Requer ALink. h.  
   
 ## <a name="see-also"></a>Consulte também

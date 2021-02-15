@@ -1,29 +1,30 @@
 ---
+description: 'Saiba mais sobre: como definir e usar provedores de formato numérico personalizado'
 title: 'Como: definir e usar provedores de formatos numéricos personalizados'
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
-- numeric format strings [.NET Framework]
-- formatting [.NET Framework], numbers
-- number formatting [.NET Framework]
+- numeric format strings [.NET]
+- formatting [.NET], numbers
+- number formatting [.NET]
 - custom numeric format strings
-- numbers [.NET Framework], custom numeric format strings
+- numbers [.NET], custom numeric format strings
 - displaying date and time data
-- format providers [.NET Framework]
+- format providers [.NET]
 - custom format strings
 ms.assetid: a281bfbf-6596-45ed-a2d6-3782d535ada2
-ms.openlocfilehash: d12899fff7d9e6cb63728ba0b160b70fa2a41a1a
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 64671d2d2ebe19c04ca7168aa093937b0cb07ebe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84290507"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99629806"
 ---
 # <a name="how-to-define-and-use-custom-numeric-format-providers"></a>Como: definir e usar provedores de formatos numéricos personalizados
-O .NET Framework oferece controle abrangente sobre a representação de cadeias de caracteres de valores numéricos. Ele dá suporte aos seguintes recursos para personalizar o formato de valores numéricos:  
+
+O .NET oferece controle abrangente sobre a representação de cadeias de caracteres de valores numéricos. Ele dá suporte aos seguintes recursos para personalizar o formato de valores numéricos:  
   
 - Cadeias de caracteres de formato numérico padrão, que fornecem um conjunto predefinido de formatos para converter números para suas representações de cadeia de caracteres. Você pode usá-las com qualquer método de formatação numérica, como <xref:System.Decimal.ToString%28System.String%29?displayProperty=nameWithType>, que tem um parâmetro `format`. Para obter detalhes, confira [Cadeias de caracteres de formato numérico padrão](standard-numeric-format-strings.md).  
   
@@ -31,9 +32,9 @@ O .NET Framework oferece controle abrangente sobre a representação de cadeias 
   
 - Os objetos <xref:System.Globalization.CultureInfo> ou <xref:System.Globalization.NumberFormatInfo> personalizados que definem os símbolos e padrões de formato usados para exibir as representações de cadeia de caracteres de valores numéricos. Você pode usá-las com qualquer método de formatação numérica, como <xref:System.Int32.ToString%2A>, que tem um parâmetro `provider`. Normalmente, o parâmetro `provider` é usado para especificar a formatação específica à cultura.  
   
- Em alguns casos (como quando um aplicativo deve exibir um número de conta formatado, um número de identificação ou um código postal) essas três técnicas são inadequadas. O .NET Framework também permite que você defina um objeto de formatação que não é um objeto <xref:System.Globalization.CultureInfo> ou <xref:System.Globalization.NumberFormatInfo> para determinar como um valor numérico é formatado. Este tópico fornece informações passo a passo para implementar esse tipo de objeto, bem como um exemplo que formata números de telefone.  
+ Em alguns casos (como quando um aplicativo deve exibir um número de conta formatado, um número de identificação ou um código postal) essas três técnicas são inadequadas. O .NET também permite que você defina um objeto de formatação que não seja <xref:System.Globalization.CultureInfo> nem um <xref:System.Globalization.NumberFormatInfo> objeto para determinar como um valor numérico é formatado. Este tópico fornece informações passo a passo para implementar esse tipo de objeto, bem como um exemplo que formata números de telefone.  
   
-### <a name="to-define-a-custom-format-provider"></a>Para definir um provedor de formato personalizado  
+## <a name="define-a-custom-format-provider"></a>Definir um provedor de formato personalizado  
   
 1. Defina uma classe que implementa as interfaces <xref:System.IFormatProvider> e <xref:System.ICustomFormatter>.  
   
@@ -55,13 +56,14 @@ O .NET Framework oferece controle abrangente sobre a representação de cadeias 
   
     4. Retorne a representação de cadeia de caracteres do parâmetro `arg`.  
   
-### <a name="to-use-a-custom-numeric-formatting-object"></a>Para usar um objeto de formatação numérico personalizado  
+## <a name="use-a-custom-numeric-formatting-object"></a>Usar um objeto de formatação numérico personalizado  
   
 1. Crie uma nova instância da classe de formatação personalizada.  
   
 2. Chame o método de formatação <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> e passe para ele o objeto de formatação personalizado, o especificador de formatação (ou <xref:System.String.Empty?displayProperty=nameWithType>, se um não for usado) e o valor numérico a ser formatado.  
   
-## <a name="example"></a>Exemplo  
+## <a name="example"></a>Exemplo
+
  O exemplo a seguir define um provedor de formato numérico personalizado chamado `TelephoneFormatter`, que converte um número que representa um número de telefone dos EUA para seu formato NANP ou E.123. O método lida com dois especificadores de formato, "N" (que gera o formato NANP) e "I" (que gera o formato internacional E.123).  
   
  [!code-csharp[Formatting.HowTo.NumericValue#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.NumericValue/cs/Telephone1.cs#1)]

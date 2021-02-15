@@ -1,17 +1,17 @@
 ---
-title: Visual Basic alterações significativas
-description: Lista as alterações significativas em Visual Basic usadas com o .NET Core.
+title: Alterações interruptivas do Visual Basic
+description: Lista as alterações interruptivas no Visual Basic usadas com o .NET Core 3.0.
 ms.date: 09/20/2019
-ms.openlocfilehash: f6dd25586b9da173a4809cd4721bf2a39c9e0401
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: b814edbf3a3a58d37b0a2b66a0e1c4f680f14b57
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87555897"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95713139"
 ---
-# <a name="visual-basic-breaking-changes"></a>Visual Basic alterações significativas
+# <a name="visual-basic-breaking-changes-in-net-core-30"></a>Alterações interruptivas do Visual Basic no .NET Core 3.0
 
-Veja a seguir uma lista de alterações significativas no Visual Basic:
+Veja a seguir uma lista de alterações interruptivas no Visual Basic:
 
 - [Microsoft. VisualBasic. Constants. vbNewLine é obsoleto](#microsoftvisualbasicconstantsvbnewline-is-obsolete)
 

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: criar um serviço de fluxo de trabalho de execução longa'
 title: Criando um serviço de fluxo de trabalho de execução longa
 ms.date: 03/30/2017
 ms.assetid: 4c39bd04-5b8a-4562-a343-2c63c2821345
-ms.openlocfilehash: 4ae01201230bf848c045158424db60097d8dd767
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 9d26e763e2515f9e9ec2b61201512f02eeaeb1bc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599341"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756897"
 ---
 # <a name="create-a-long-running-workflow-service"></a>Criar um serviço de fluxo de trabalho de execução longa
 
@@ -21,13 +22,13 @@ Você deve ter o seguinte software instalado para usar este passo a passos:
 
 2. Visual Studio 2012
 
-3. O[!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)]
+3. O  [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)]
 
 4. Você está familiarizado com o WCF e o Visual Studio 2012 e sabe como criar projetos/soluções.
 
 ## <a name="set-up-the-sql-database"></a>Configurar o banco de dados SQL
 
-1. Para que as instâncias do serviço de fluxo de trabalho sejam persistidas, você deve ter Microsoft SQL Server instalado e deve configurar um banco de dados para armazenar as instâncias de fluxo de trabalho persistentes. Execute o Microsoft SQL Management Studio clicando no botão **Iniciar** , selecionando **todos os programas**, **Microsoft SQL Server 2008**e **Microsoft SQL Management Studio**.
+1. Para que as instâncias do serviço de fluxo de trabalho sejam persistidas, você deve ter Microsoft SQL Server instalado e deve configurar um banco de dados para armazenar as instâncias de fluxo de trabalho persistentes. Execute o Microsoft SQL Management Studio clicando no botão **Iniciar** , selecionando **todos os programas**, **Microsoft SQL Server 2008** e **Microsoft SQL Management Studio**.
 
 2. Clique no botão **conectar** para fazer logon na instância de SQL Server
 
@@ -122,7 +123,7 @@ Você deve ter o seguinte software instalado para usar este passo a passos:
 
     5. Arraste e solte uma atividade **If** imediatamente após a atividade **ReceiveAddItem** . Essa atividade funciona exatamente como uma instrução If.
 
-        1. Defina a propriedade **condição** como`itemId=="Zune HD" (itemId="Zune HD" for Visual Basic)`
+        1. Defina a propriedade **condição** como `itemId=="Zune HD" (itemId="Zune HD" for Visual Basic)`
 
         2. Arraste e solte uma atividade **assign** na seção **then,** e outra na seção **else** define as propriedades de **atribuir** atividades, conforme mostrado na ilustração a seguir.
 
@@ -138,7 +139,7 @@ Você deve ter o seguinte software instalado para usar este passo a passos:
 
             ![Definindo a associação de dados para a atividade SendReply](./media/creating-a-long-running-workflow-service/set-property-for-sendreplytoadditem.gif "Defina a propriedade para a atividade SendReplyToAddItem.")
 
-8. Abra o arquivo Web. config e adicione os seguintes elementos na \<behavior> seção para habilitar a persistência do fluxo de trabalho.
+8. Abra o arquivo web.config e adicione os seguintes elementos na \<behavior> seção para habilitar a persistência do fluxo de trabalho.
 
     ```xml
     <sqlWorkflowInstanceStore connectionString="Data Source=your-machine\SQLExpress;Initial Catalog=SQLPersistenceStore;Integrated Security=True;Asynchronous Processing=True" instanceEncodingOption="None" instanceCompletionAction="DeleteAll" instanceLockedExceptionAction="BasicRetry" hostLockRenewalPeriod="00:00:30" runnableInstancesDetectionPeriod="00:00:02" />

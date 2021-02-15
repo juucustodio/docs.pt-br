@@ -4,12 +4,12 @@ description: Guia para arquitetura sem servidor. Saiba quando, por que e como im
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 04/22/2020
-ms.openlocfilehash: 16e658a99feda6537189a45b53da514e67766999
-ms.sourcegitcommit: 8b02d42f93adda304246a47f49f6449fc74a3af4
+ms.openlocfilehash: 867765d29a7c50694a5de7b1de56346d86600a83
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82135679"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91171813"
 ---
 # <a name="serverless-apps-architecture-patterns-and-azure-implementation"></a>Aplicativos sem servidor: Arquitetura, padrões e implementação no Azure
 
@@ -74,7 +74,7 @@ Sem [servidor](https://azure.microsoft.com/solutions/serverless/) é a evoluçã
 
 Este guia concentra-se no desenvolvimento de aplicativos nativos da nuvem que usam a computação sem servidor. O livro destaca os benefícios e expõe as possíveis desvantagens do desenvolvimento de aplicativos sem servidor e fornece uma pesquisa sobre arquiteturas sem servidor. São ilustrados vários exemplos de como a computação sem servidor pode ser usada, juntamente com vários padrões de design sem servidor.
 
-Este guia explica os componentes da plataforma sem servidor do Azure e concentra-se especificamente na implementação da computação sem servidor usando o [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview). Você saberá mais sobre gatilhos e associações, e aprenderá a implementar aplicativos sem servidor que se baseiam em estado usando funções duráveis. Por fim, exemplos de negócios e estudos de caso o ajudarão a estabelecer um contexto e um quadro de referência para determinar se a computação sem servidor é a abordagem certa para seus projetos.
+Este guia explica os componentes da plataforma sem servidor do Azure e concentra-se especificamente na implementação da computação sem servidor usando o [Azure Functions](/azure/azure-functions/functions-overview). Você saberá mais sobre gatilhos e associações, e aprenderá a implementar aplicativos sem servidor que se baseiam em estado usando funções duráveis. Por fim, exemplos de negócios e estudos de caso o ajudarão a estabelecer um contexto e um quadro de referência para determinar se a computação sem servidor é a abordagem certa para seus projetos.
 
 ## <a name="evolution-of-cloud-platforms"></a>Evolução das plataformas de nuvem
 
@@ -116,12 +116,12 @@ Outro recurso sem servidor é a microcobrança. É comum que aplicativos Web hos
 
 ## <a name="what-this-guide-doesnt-cover"></a>O que este guia não aborda
 
-Este guia enfatiza especificamente as abordagens de arquitetura e os padrões de design e não é uma visão aprofundada dos detalhes da implementação do Azure Functions, dos [Aplicativos Lógicos](https://docs.microsoft.com/azure/logic-apps/logic-apps-what-are-logic-apps) ou de outras plataformas sem servidor. Este guia não aborda, por exemplo, fluxos de trabalho com Aplicativos Lógicos ou recursos do Azure Functions como a configuração do CORS (Compartilhamento de Recursos entre Origens), a aplicação de domínios personalizados ou o carregamento de certificados SSL. Esses detalhes estão disponíveis na [documentação online do Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-reference).
+Este guia enfatiza especificamente as abordagens de arquitetura e os padrões de design e não é uma visão aprofundada dos detalhes da implementação do Azure Functions, dos [Aplicativos Lógicos](/azure/logic-apps/logic-apps-what-are-logic-apps) ou de outras plataformas sem servidor. Este guia não aborda, por exemplo, fluxos de trabalho com Aplicativos Lógicos ou recursos do Azure Functions como a configuração do CORS (Compartilhamento de Recursos entre Origens), a aplicação de domínios personalizados ou o carregamento de certificados SSL. Esses detalhes estão disponíveis na [documentação online do Azure Functions](/azure/azure-functions/functions-reference).
 
 ### <a name="additional-resources"></a>Recursos adicionais
 
-- [Centro de arquitetura do Azure](https://docs.microsoft.com/azure/architecture/)
-- [Práticas recomendadas para aplicativos em nuvem](https://docs.microsoft.com/azure/architecture/best-practices/api-design)
+- [Centro de arquitetura do Azure](/azure/architecture/)
+- [Práticas recomendadas para aplicativos em nuvem](/azure/architecture/best-practices/api-design)
 
 ## <a name="who-should-use-the-guide"></a>Quem deve usar o guia
 
@@ -140,4 +140,4 @@ A primeira parte deste guia examina por que a computação sem servidor é uma o
 O guia e os exemplos relacionados estão em constante desenvolvimento, portanto, seus comentários são bem-vindos! Se você tiver comentários de como este guia pode ser melhorado, use a seção de comentários na parte inferior de qualquer página baseada em [problemas do GitHub](https://github.com/dotnet/docs/issues).
 
 >[!div class="step-by-step"]
->[Avançar](architecture-approaches.md)
+>[Próximo](architecture-approaches.md)

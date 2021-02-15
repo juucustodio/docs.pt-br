@@ -2,12 +2,12 @@
 title: Interfaces
 description: 'Saiba como as interfaces F # especificam conjuntos de membros relacionados que outras classes implementam.'
 ms.date: 08/15/2020
-ms.openlocfilehash: 36272b52fcff83e8e8a54ccc4e6ecd1252a91819
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 0cef2932045dae401f5aa069107815543457ca4a
+ms.sourcegitcommit: f99115e12a5eb75638abe45072e023a3ce3351ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88558121"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94557045"
 ---
 # <a name="interfaces"></a>Interfaces
 
@@ -101,7 +101,68 @@ As interfaces podem herdar de uma ou mais interfaces base.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet2805.fs)]
 
-## <a name="see-also"></a>Confira também
+## <a name="implementing-interfaces-with-default-implementations"></a>Implementando interfaces com implementações padrão
+
+O C# dá suporte à definição de interfaces com implementações padrão, da seguinte forma:
+
+```csharp
+using System;
+
+namespace CSharp
+{
+    public interface MyDim
+    {
+        public int Z => 0;
+    }
+}
+```
+
+Eles são diretamente consumíveis da F #:
+
+```fsharp
+open CSharp
+
+// You can implement the interface via a class
+type MyType() =
+    member _.M() = ()
+
+    interface MyDim
+
+let md = MyType() :> MyDim
+printfn $"DIM from C#: %d{md.Z}"
+
+// You can also implement it via an object expression
+let md' = { new MyDim }
+printfn $"DIM from C# but via Object Expression: %d{md'.Z}"
+```
+
+Você pode substituir uma implementação padrão por `override` , como substituir qualquer membro virtual.
+
+Todos os membros em uma interface que não têm uma implementação padrão ainda devem ser implementados explicitamente.
+
+## <a name="implementing-the-same-interface-at-different-generic-instantiations"></a>Implementando a mesma interface em instanciações genéricas diferentes
+
+O F # dá suporte à implementação da mesma interface em instanciações genéricas diferentes, desta forma:
+
+```fsharp
+type IA<'T> =
+    abstract member Get : unit -> 'T
+
+type MyClass() =
+    interface IA<int> with
+        member x.Get() = 1
+    interface IA<string> with
+        member x.Get() = "hello"
+
+let mc = MyClass()
+let iaInt = mc :> IA<int>
+let iaString = mc :> IA<string>
+
+iaInt.Get() // 1
+iaString.Get() // "hello"
+```
+
+## <a name="see-also"></a>Consulte também
 
 - [Referência de linguagem F #](index.md)
 - [Expressões de objeto](object-expressions.md)

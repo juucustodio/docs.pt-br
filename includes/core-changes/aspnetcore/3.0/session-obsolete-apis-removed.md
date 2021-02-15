@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 4dcb357570cb6597fde86c9e8f2acb74364cfaa3
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "73198335"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96032305"
 ---
 ### <a name="session-state-obsolete-apis-removed"></a>Estado da sessão: APIs obsoletas removidas
 
@@ -12,7 +12,7 @@ APIs obsoletas para configurar cookies de sessão foram removidas. Para obter ma
 
 #### <a name="version-introduced"></a>Versão introduzida
 
-3,0
+3.0
 
 #### <a name="reason-for-change"></a>Motivo da alteração
 

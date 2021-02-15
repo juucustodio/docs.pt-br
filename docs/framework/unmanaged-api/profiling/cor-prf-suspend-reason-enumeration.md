@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração de COR_PRF_SUSPEND_REASON'
 title: Enumeração COR_PRF_SUSPEND_REASON
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 75594833-bed3-47b2-a426-b75c5fe6fbcf
 topic_type:
 - apiref
-ms.openlocfilehash: fdbcbb2da8f449b9275d820763c2a94cca86cd1e
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 9e8b3dc98aa6b1a989088f5f4d0efb74d488d927
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500748"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789002"
 ---
 # <a name="cor_prf_suspend_reason-enumeration"></a>Enumeração COR_PRF_SUSPEND_REASON
+
 Indica o motivo pelo qual o tempo de execução é suspenso.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -40,7 +42,7 @@ typedef enum {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`COR_PRF_FIELD_SUSPEND_OTHER`|O tempo de execução é suspenso por um motivo não especificado.|  
 |`COR_PRF_FIELD_SUSPEND_FOR_GC`|O tempo de execução é suspenso para atender a uma solicitação de coleta de lixo.<br /><br /> Os retornos de chamada relacionados à coleta de lixo ocorrem entre os retornos de chamada [ICorProfilerCallback:: RuntimeSuspendFinished](icorprofilercallback-runtimesuspendfinished-method.md) e [ICorProfilerCallback:: RuntimeResumeStarted](icorprofilercallback-runtimeresumestarted-method.md) .|  
@@ -52,9 +54,11 @@ typedef enum {
 |`COR_PRF_SUSPEND_FOR_REJIT`|O tempo de execução é suspenso para a recompilação JIT.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Todos os threads de tempo de execução que estão em código não gerenciado têm permissão para continuar em execução até tentarem inserir novamente o tempo de execução, ponto em que eles também serão suspensos até que o tempo de execução seja retomado. Isso também se aplica a novos threads que entram no tempo de execução. Todos os threads dentro do tempo de execução serão suspensos imediatamente se estiverem no código passível de interrupção ou solicitados a suspender quando acessarem o código passível de interrupção.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -63,6 +67,6 @@ typedef enum {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criando perfil de enumerações](profiling-enumerations.md)

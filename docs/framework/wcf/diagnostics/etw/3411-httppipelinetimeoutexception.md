@@ -1,28 +1,32 @@
 ---
+description: 'Saiba mais sobre: 3411-HttpPipelineTimeoutException'
 title: 3411 - HttpPipelineTimeoutException
 ms.date: 03/30/2017
 ms.assetid: 1f10a482-9e8f-4726-bdc8-b18a32e4dfdc
-ms.openlocfilehash: 426f13dcb5bd4d5df31b3b042fc1855aba1fe27f
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: e0029401edd0871cf75400726b4caaec68cc9587
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61764667"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99669716"
 ---
 # <a name="3411---httppipelinetimeoutexception"></a>3411 - HttpPipelineTimeoutException
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
 |ID|3411|  
 |Palavras-chave|HTTP|  
-|Nível|Erro|  
+|Level|Erro do|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando a conexão WebSocket foi atingido.  
+
+ Esse evento é emitido quando a conexão WebSocket atingiu o tempo limite.  
   
 ## <a name="message"></a>Mensagem  
- Tempo limite da conexão WebSocket.  
+
+ A conexão WebSocket atingiu o tempo limite.  
   
 ## <a name="details"></a>Detalhes

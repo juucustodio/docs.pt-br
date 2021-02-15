@@ -1,15 +1,16 @@
 ---
-title: 'Tarefa 3: Crie a caixa de ferramentas e os painéis de PropertyGrid'
+description: 'Saiba mais sobre: tarefa 3: criar os painéis caixa de ferramentas e PropertyGrid'
+title: 'Tarefa 3: Criar os painéis de Caixa de ferramentas e PropertyGrid'
 ms.date: 03/30/2017
 ms.assetid: 72c1546a-eed5-4f0f-a616-719a163414f4
-ms.openlocfilehash: 29e50b24135cd3d6a02052d846e1781b0d9fa325
-ms.sourcegitcommit: 5fb5b6520b06d7f5e6131ec2ad854da302a28f2e
+ms.openlocfilehash: c07bfc2f974018cb0d789a6cc1181f9bed861382
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74716227"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755156"
 ---
-# <a name="task-3-create-the-toolbox-and-propertygrid-panes"></a>Tarefa 3: Crie a caixa de ferramentas e os painéis de PropertyGrid
+# <a name="task-3-create-the-toolbox-and-propertygrid-panes"></a>Tarefa 3: Criar os painéis de Caixa de ferramentas e PropertyGrid
 
 Nesta tarefa, você criará os painéis **caixa de ferramentas** e **PropertyGrid** e os adicionará à designer de fluxo de trabalho do Windows rehospedada.
 
@@ -21,7 +22,7 @@ Para referência, o código que deve estar no arquivo MainWindow.xaml.cs depois 
 
 2. No painel de **Gerenciador de soluções** , clique com o botão direito do mouse no arquivo *MainWindow. XAML* e selecione **Exibir código**.
 
-3. Adicione um método `GetToolboxControl` à classe `MainWindow` que cria uma <xref:System.Activities.Presentation.Toolbox.ToolboxControl>, adiciona uma nova categoria de **caixa de ferramentas** à caixa de **ferramentas**e atribui os tipos de atividade <xref:System.Activities.Statements.Assign> e <xref:System.Activities.Statements.Sequence> a essa categoria.
+3. Adicione um `GetToolboxControl` método à `MainWindow` classe que cria um <xref:System.Activities.Presentation.Toolbox.ToolboxControl> , adiciona uma nova categoria da **caixa de ferramentas** à **caixa de ferramentas** e atribui os <xref:System.Activities.Statements.Assign> tipos de <xref:System.Activities.Statements.Sequence> atividade e a essa categoria.
 
     ```csharp
     private ToolboxControl GetToolboxControl()
@@ -50,7 +51,7 @@ Para referência, o código que deve estar no arquivo MainWindow.xaml.cs depois 
     }
     ```
 
-4. Adicione um método `AddToolbox` privado à classe `MainWindow` que coloca a **caixa de ferramentas** na coluna esquerda da grade.
+4. Adicione um `AddToolbox` método particular à `MainWindow` classe que coloca a caixa de **ferramentas** na coluna esquerda da grade.
 
     ```csharp
     private void AddToolBox()
@@ -61,7 +62,7 @@ Para referência, o código que deve estar no arquivo MainWindow.xaml.cs depois 
     }
     ```
 
-5. Adicione uma chamada para o método `AddToolBox` no construtor da classe `MainWindow()`, conforme mostrado no código a seguir:
+5. Adicione uma chamada para o `AddToolBox` método no `MainWindow()` Construtor de classe, conforme mostrado no código a seguir:
 
     ```csharp
     public MainWindow()
@@ -74,13 +75,13 @@ Para referência, o código que deve estar no arquivo MainWindow.xaml.cs depois 
     }
     ```
 
-6. Pressione <kbd>F5</kbd> para compilar e executar sua solução. A **caixa de ferramentas** que contém as atividades <xref:System.Activities.Statements.Assign> e <xref:System.Activities.Statements.Sequence> deve ser exibida.
+6. Pressione <kbd>F5</kbd> para compilar e executar sua solução. A **caixa de ferramentas** que contém as <xref:System.Activities.Statements.Assign> <xref:System.Activities.Statements.Sequence> atividades e deve ser exibida.
 
 ## <a name="to-create-the-propertygrid"></a>Para criar o PropertyGrid
 
 1. No painel de **Gerenciador de soluções** , clique com o botão direito do mouse no arquivo *MainWindow. XAML* e selecione **Exibir código**.
 
-2. Adicione o método `AddPropertyInspector` à classe `MainWindow` para posicionar o painel **PropertyGrid** na coluna mais à direita na grade:
+2. Adicione o `AddPropertyInspector` método à `MainWindow` classe para posicionar o painel **PropertyGrid** na coluna mais à direita na grade:
 
     ```csharp
     private void AddPropertyInspector()
@@ -90,7 +91,7 @@ Para referência, o código que deve estar no arquivo MainWindow.xaml.cs depois 
     }
     ```
 
-3. Adicione uma chamada para o método `AddPropertyInspector` no construtor da classe `MainWindow()`, conforme mostrado no código a seguir:
+3. Adicione uma chamada para o `AddPropertyInspector` método no `MainWindow()` Construtor de classe, conforme mostrado no código a seguir:
 
     ```csharp
     public MainWindow()
@@ -104,7 +105,7 @@ Para referência, o código que deve estar no arquivo MainWindow.xaml.cs depois 
     }
     ```
 
-4. Pressione <kbd>F5</kbd> para compilar e executar a solução. A **caixa de ferramentas**, a tela de design do fluxo de trabalho e os painéis de **PropertyGrid** devem ser exibidos e, quando você arrasta uma atividade de <xref:System.Activities.Statements.Assign> ou uma atividade de <xref:System.Activities.Statements.Sequence> para a tela de design, a grade de propriedades deve ser atualizada dependendo da atividade realçada.
+4. Pressione <kbd>F5</kbd> para compilar e executar a solução. A **caixa de ferramentas**, a tela de design do fluxo de trabalho e os painéis de **PropertyGrid** devem ser exibidos e, quando você arrasta uma <xref:System.Activities.Statements.Assign> atividade ou uma <xref:System.Activities.Statements.Sequence> atividade para a tela de design, a grade de propriedades deve ser atualizada dependendo da atividade realçada.
 
 ## <a name="example"></a>Exemplo
 
@@ -216,6 +217,6 @@ namespace HostingApplication
 
 ## <a name="see-also"></a>Consulte também
 
-- [Hospedando novamente o Designer de Fluxo de Trabalho](rehosting-the-workflow-designer.md)
-- [Tarefa 1: Criar um novo aplicativo do Windows Presentation Foundation](task-1-create-a-new-wpf-app.md)
+- [Hospedando novamente o designer de fluxo de trabalho](rehosting-the-workflow-designer.md)
+- [Tarefa 1: Criar um aplicativo do Windows Presentation Foundation do Windows](task-1-create-a-new-wpf-app.md)
 - [Tarefa 2: Hospedar o Designer de Fluxo de Trabalho](task-2-host-the-workflow-designer.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IManagedObject'
 title: Interface IManagedObject
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1fbbf572-6d28-41a5-82fb-579ac90bfcf5
 topic_type:
 - apiref
-ms.openlocfilehash: 8439be4d466c13feaaf4ac6cf946b5960e2862a3
-ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
+ms.openlocfilehash: ae16a07065af840c6a3cadd7c5d71700d251c4fe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83842316"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671131"
 ---
 # <a name="imanagedobject-interface"></a>Interface IManagedObject
+
 Fornece métodos para controlar um objeto gerenciado.  
   
 ## <a name="methods"></a>Métodos  
@@ -32,11 +34,12 @@ Fornece métodos para controlar um objeto gerenciado.
 |[Método GetSerializedBuffer](imanagedobject-getserializedbuffer-method.md)|Obtém a representação da cadeia de caracteres deste objeto gerenciado.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   

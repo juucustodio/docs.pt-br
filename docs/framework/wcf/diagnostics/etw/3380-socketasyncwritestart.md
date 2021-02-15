@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 3380-SocketAsyncWriteStart'
 title: 3380 - SocketAsyncWriteStart
 ms.date: 03/30/2017
 ms.assetid: 1de37c02-e14b-42ad-a23a-9ee8edc354b5
-ms.openlocfilehash: 126cf67e228feb33bbcf3253470979b8bf1f89ec
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 563c42ff6433d9e39a789952247aa46f4e024e3f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61943280"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752841"
 ---
 # <a name="3380---socketasyncwritestart"></a>3380 - SocketAsyncWriteStart
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,9 +22,11 @@ ms.locfileid: "61943280"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido com o início de SocketAsyncWrite.  
+
+ Esse evento é emitido com o início do SocketAsyncWrite.  
   
 ## <a name="message"></a>Mensagem  
- SocketId:% 1 bytes de gravação '%2' para '%3'.  
+
+ Socketid: %1 gravando ' %2 ' bytes em ' %3 '.  
   
 ## <a name="details"></a>Detalhes

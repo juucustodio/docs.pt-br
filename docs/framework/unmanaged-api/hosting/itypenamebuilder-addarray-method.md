@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ITypeNameBuilder:: AddArray'
 title: Método ITypeNameBuilder::AddArray
 ms.date: 03/30/2017
 api_name:
@@ -15,17 +16,18 @@ helpviewer_keywords:
 ms.assetid: 0a21ae28-54bc-4f6e-aaa6-960a22c5f530
 topic_type:
 - apiref
-ms.openlocfilehash: 4d12d1dc09c4cc2bed688c750149979991b01461
-ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
+ms.openlocfilehash: 59c2ec544f8ac218084783b01c092c0f9763b3d8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83842108"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99680792"
 ---
 # <a name="itypenamebuilderaddarray-method"></a>Método ITypeNameBuilder::AddArray
+
 Esse método oferece suporte a infraestrutura do .NET Framework e não se destina a ser usado diretamente do seu código.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT AddArray (  
@@ -34,11 +36,12 @@ HRESULT AddArray (
 ```  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   

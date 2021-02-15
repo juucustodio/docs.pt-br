@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugController:: isexecuted'
 title: Método ICorDebugController::IsRunning
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: b33ff059-40c4-4dfe-9cb2-21bfed2de0b0
 topic_type:
 - apiref
-ms.openlocfilehash: 89ea9f221ad55063e4186cc27cc8038334d800d4
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 6a0628cc39765d9cb295877d912d92dbb27937da
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82892874"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764574"
 ---
 # <a name="icordebugcontrollerisrunning-method"></a>Método ICorDebugController::IsRunning
+
 Obtém um valor que indica se os threads no processo estão em execução livremente no momento.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,10 +36,12 @@ HRESULT IsRunning (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pbRunning`  
- fora Um ponteiro para um valor que `true` se os threads no processo estão em execução livremente; caso contrário `false`,.  
+ fora Um ponteiro para um valor que `true` se os threads no processo estiverem em execução livremente; caso contrário, `false` .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorSetENC'
 title: Enumeração CorSetENC
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: fe4150e8-071d-43fb-8e06-c3c616dbeed2
 topic_type:
 - apiref
-ms.openlocfilehash: 93a194ea72ab894544927cf96304397b7211b5ac
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 5ba3e41c10b082ceb2ce7d327f7ff7f857ca98a5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84009152"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707391"
 ---
 # <a name="corsetenc-enumeration"></a>Enumeração CorSetENC
+
 Contém valores usados para influenciar o comportamento durante a geração de metadados.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -44,7 +46,7 @@ typedef enum CorSetENC {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`MDSetENCOn`|Obsoleto.|  
 |`MDSetENCOff`|Obsoleto.|  
@@ -56,12 +58,13 @@ typedef enum CorSetENC {
 |`MDUpdateMask`|Inclui `MDUpdateENC` o `MDUpdateFull` e o `MDUpdateIncremental` .|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorHdr. h  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumerações de metadados](metadata-enumerations.md)

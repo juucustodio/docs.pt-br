@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostMAlloc:: Alloc'
 title: Método IHostMAlloc::Alloc
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: a3007f5e-d75d-4b37-842b-704e9edced5e
 topic_type:
 - apiref
-ms.openlocfilehash: 6f58e2290afa166d48306c0bbb50edd1df36888b
-ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
+ms.openlocfilehash: e0349c273ef9e3194bb8bad167510dd8fefcab62
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83804641"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708223"
 ---
 # <a name="ihostmallocalloc-method"></a>Método IHostMAlloc::Alloc
+
 Solicita que o host aloque a quantidade especificada de memória do heap.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT Alloc (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `cbSize`  
  no O tamanho, em bytes, da solicitação de alocação de memória atual.  
   
@@ -45,11 +48,11 @@ HRESULT Alloc (
  `ppMem`  
  fora Um ponteiro para a memória alocada ou NULL se a solicitação não puder ser concluída.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
-|S_OK|`Alloc`retornado com êxito.|  
+|S_OK|`Alloc` retornado com êxito.|  
 |HOST_E_CLRNOTAVAILABLE|O Common Language Runtime (CLR) não foi carregado em um processo ou o CLR está em um estado no qual não pode executar código gerenciado ou processar a chamada com êxito.|  
 |HOST_E_TIMEOUT|A chamada atingiu o tempo limite.|  
 |HOST_E_NOT_OWNER|O chamador não possui o bloqueio.|  
@@ -58,18 +61,20 @@ HRESULT Alloc (
 |E_OUTOFMEMORY|Não havia memória suficiente disponível para concluir a solicitação de alocação.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O CLR Obtém um ponteiro de interface para uma `IHostMalloc` instância chamando o método [IHostMemoryManager:: CreateMAlloc](ihostmemorymanager-createmalloc-method.md) .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IHostMemoryManager](ihostmemorymanager-interface.md)
 - [Interface IHostMalloc](ihostmalloc-interface.md)

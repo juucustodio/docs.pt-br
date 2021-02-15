@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedNamespace:: getvariations'
 title: Método ISymUnmanagedNamespace::GetVariables
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: ea7c1617-f3ce-4220-8288-f2b50eaf0f0f
 topic_type:
 - apiref
-ms.openlocfilehash: 091f497024b48589953456e1ea6daf6635738240
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 63316bf3ba1e4736d542be3362076c3ae6e95def
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615079"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721197"
 ---
 # <a name="isymunmanagednamespacegetvariables-method"></a>Método ISymUnmanagedNamespace::GetVariables
+
 Retorna todas as variáveis definidas no escopo global dentro deste namespace.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT GetVariables(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `cVars`  
  no Um `ULONG32` que indica o tamanho da `pVars` matriz.  
   
@@ -46,11 +49,13 @@ HRESULT GetVariables(
  fora Um ponteiro para um buffer que contém os namespaces.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedNamespace](isymunmanagednamespace-interface.md)

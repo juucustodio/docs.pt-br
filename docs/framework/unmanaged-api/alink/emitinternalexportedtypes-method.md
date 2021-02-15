@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método EmitInternalExportedTypes'
 title: Método EmitInternalExportedTypes
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 28c8b00d-2c14-40b4-aed5-a1db0e2428eb
 topic_type:
 - apiref
-ms.openlocfilehash: d4b7064b0339825c29e4001bc35c4a604098468a
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 5d23c593988b31c077d3b65b11b73113e164ed74
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446503"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638295"
 ---
 # <a name="emitinternalexportedtypes-method"></a>Método EmitInternalExportedTypes
+
 Emite tipos adicionados ao assembly. Chame esse método após a adição de tipos internos conhecidos.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,13 +36,16 @@ HRESULT EmitInternalExportedTypes(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `AssemblyID`  
  ID do assembly.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  Retorna S_OK se o método tiver sucesso.  
   
-## <a name="requirements"></a>{1&gt;{2&gt;Requisitos&lt;2}&lt;1}  
+## <a name="requirements"></a>Requisitos  
+
  Requer ALink. h  
   
 ## <a name="see-also"></a>Consulte também

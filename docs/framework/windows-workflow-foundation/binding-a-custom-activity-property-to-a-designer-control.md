@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: associando uma propriedade de atividade personalizada a um controle de designer'
 title: Associando uma propriedade personalizada de atividade a um controle de designer
 ms.date: 03/30/2017
 ms.assetid: 2e8061ea-10f5-407c-a31f-d0d74ce12f27
-ms.openlocfilehash: 142a9eb273a98d3a2d83a1239d6d7c891d5cc305
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 522e3df3028270d42f7654026383c628ec951e8d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61945893"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787936"
 ---
 # <a name="binding-a-custom-activity-property-to-a-designer-control"></a>Associando uma propriedade personalizada de atividade a um controle de designer
 
@@ -19,7 +20,7 @@ Associar um controle de designer caixa de texto para um argumento de atividade �
 
 2. Crie uma nova classe chamada ComboBoxItemConverter. Adicione uma referência a System.Windows.Data, e tem a classe derivar de <xref:System.Windows.Data.IValueConverter>. Tenha o Visual Studio fornecedores da interface para gerar stub para `Convert` e `ConvertBack`.
 
-3. Adicione o seguinte código ao método de `Convert` . Este código a seguir converte <xref:System.Activities.InArgument%601> de atividade do tipo <xref:System.String> para o valor a ser colocado no designer.
+3. Adicione o seguinte código ao `Convert` método. Este código a seguir converte <xref:System.Activities.InArgument%601> de atividade do tipo <xref:System.String> para o valor a ser colocado no designer.
 
     ```csharp
     ModelItem modelItem = value as ModelItem;
@@ -73,7 +74,7 @@ Associar um controle de designer caixa de texto para um argumento de atividade �
     return null;
     ```
 
-4. Adicione o seguinte código ao método de `ConvertBack` . Este código a seguir converte o item de entrada da caixa de combinação de volta a <xref:System.Activities.InArgument%601>.
+4. Adicione o seguinte código ao `ConvertBack` método. Este código a seguir converte o item de entrada da caixa de combinação de volta a <xref:System.Activities.InArgument%601>.
 
     ```csharp
     // Convert combo box value to InArgument<string>

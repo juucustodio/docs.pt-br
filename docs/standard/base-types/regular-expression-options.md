@@ -2,23 +2,22 @@
 title: Opções de expressões regulares
 description: Saiba como usar as opções de expressão regular no .NET, como correspondência que não diferencia maiúsculas de minúsculas, modo multilinha e modo da direita para a esquerda.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - regular expressions, options
 - constructs, options
-- .NET Framework regular expressions, options
+- .NET regular expressions, options
 - inline option constructs
 - options parameter
 ms.assetid: c82dc689-7e82-4767-a18d-cd24ce5f05e9
-ms.openlocfilehash: 268e05c2212539b030ccc3c7195f618bb3afa707
-ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
+ms.openlocfilehash: a77409476c8b2c1b32429118edbe6ad6542a7b09
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84662869"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94828940"
 ---
 # <a name="regular-expression-options"></a>Opções de expressões regulares
 
@@ -30,7 +29,7 @@ Por padrão, a comparação de uma cadeia de caracteres de entrada com quaisquer
 |<xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase>|`i`|Use correspondência sem diferenciação de maiúsculas e minúsculas. Para obter mais informações, consulte correspondência que não [diferencia maiúsculas de minúsculas](#case-insensitive-matching).|
 |<xref:System.Text.RegularExpressions.RegexOptions.Multiline>|`m`|Use o modo multilinha, em que `^` e `$` correspondem com o início e o fim de cada linha (em vez do início e o fim da cadeia de caracteres de entrada). Para obter mais informações, consulte [modo multilinha](#multiline-mode).|
 |<xref:System.Text.RegularExpressions.RegexOptions.Singleline>|`s`|Use o modo de linha única, em que o ponto (.) corresponde com todos os caracteres (em vez de todos os caracteres, exceto `\n`). Para obter mais informações, consulte [modo de linha única](#single-line-mode).|
-|<xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture>|`n`|Não capture grupos sem nome. As únicas capturas válidas são grupos explicitamente nomeados ou numerados da `(?<` *name* `>` *subexpressão*Name do formulário `)` . Para obter mais informações, consulte [somente capturas explícitas](#explicit-captures-only).|
+|<xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture>|`n`|Não capture grupos sem nome. As únicas capturas válidas são grupos explicitamente nomeados ou numerados da `(?<` *name* `>` *subexpressão* Name do formulário `)` . Para obter mais informações, consulte [somente capturas explícitas](#explicit-captures-only).|
 |<xref:System.Text.RegularExpressions.RegexOptions.Compiled>|Não disponível|Compile a expressão regular para um assembly. Para obter mais informações, consulte [expressões regulares compiladas](#compiled-regular-expressions).|
 |<xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace>|`x`|Exclua um espaço em branco sem escape do padrão e habilite comentários após uma tecla de cerquilha (`#`). Para obter mais informações, confira [Ignorar espaço em branco](#ignore-white-space).|
 |<xref:System.Text.RegularExpressions.RegexOptions.RightToLeft>|Não disponível|Altera a direção da pesquisa. A pesquisa se move da direita para a esquerda, em vez de da esquerda para a direita. Para obter mais informações, consulte [modo da direita para a esquerda](#right-to-left-mode).|
@@ -57,7 +56,7 @@ Por padrão, a comparação de uma cadeia de caracteres de entrada com quaisquer
   [!code-csharp[Conceptual.Regex.Language.Options#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/example1.cs#7)]
   [!code-vb[Conceptual.Regex.Language.Options#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/example1.vb#7)]
 
-- Aplicando opções embutidas em uma determinada construção de agrupamento em um padrão de expressão regular com a `(?imnsx-imnsx:` *subexpressão*Syntax `)` . Nenhum sinal antes de um conjunto de opções ativa o conjunto; um sinal de subtração antes de um conjunto de opções desativa o conjunto. ( `?` é uma parte fixa da sintaxe da construção de linguagem que é necessária se as opções estão habilitadas ou desabilitadas.) A opção se aplica somente a esse grupo. Para saber mais, confira [Constructos de agrupamento](grouping-constructs-in-regular-expressions.md).
+- Aplicando opções embutidas em uma determinada construção de agrupamento em um padrão de expressão regular com a `(?imnsx-imnsx:` *subexpressão* Syntax `)` . Nenhum sinal antes de um conjunto de opções ativa o conjunto; um sinal de subtração antes de um conjunto de opções desativa o conjunto. ( `?` é uma parte fixa da sintaxe da construção de linguagem que é necessária se as opções estão habilitadas ou desabilitadas.) A opção se aplica somente a esse grupo. Para saber mais, confira [Constructos de agrupamento](grouping-constructs-in-regular-expressions.md).
 
   O exemplo a seguir ilustra esse cenário. Ele usa opções embutidas em um constructo de agrupamento para habilitar a correspondência sem diferenciação entre maiúsculas e minúsculas e ignorar espaço em branco do padrão ao identificar palavras que começam com a letra “d”.
 
@@ -191,7 +190,7 @@ O exemplo a seguir é equivalente ao anterior, exceto que ele usa a opção embu
 
 ## <a name="explicit-captures-only"></a>Apenas capturas explícitas
 
-Por padrão, grupos de capturas são definidos pelo uso de parênteses no padrão de expressão regular. Os grupos nomeados recebem um nome ou número pela `(?<` *name* `>` opção de linguagem de*subexpressão* de nome `)` , enquanto os grupos não nomeados são acessíveis por índice. No objeto <xref:System.Text.RegularExpressions.GroupCollection>, grupos não nomeados precedem grupos nomeados.
+Por padrão, grupos de capturas são definidos pelo uso de parênteses no padrão de expressão regular. Os grupos nomeados recebem um nome ou número pela `(?<` *name* `>` opção de linguagem de *subexpressão* de nome `)` , enquanto os grupos não nomeados são acessíveis por índice. No objeto <xref:System.Text.RegularExpressions.GroupCollection>, grupos não nomeados precedem grupos nomeados.
 
 Constructos de agrupamento costumam ser usados apenas para aplicar quantificadores a vários elementos de linguagem; as subcadeias de caracteres capturadas não são de interesse. Por exemplo, se a seguinte expressão regular:
 

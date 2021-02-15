@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Hospedagem (referência de API não gerenciada)'
 title: Hospedagem (referência de API não gerenciada)
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,17 +7,19 @@ helpviewer_keywords:
 - native API reference [.NET Framework], hosting
 - hosting [.NET Framework], using the unmanaged API
 ms.assetid: 14295c28-1da8-408b-a656-9584abcd9896
-ms.openlocfilehash: e6430e16de39b4acecf55d855785503ff19673ec
-ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
+ms.openlocfilehash: 710c8e6e8c3f2a2e4299deb02e317f1026be41e7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83842303"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753725"
 ---
 # <a name="hosting-unmanaged-api-reference"></a>Hospedagem (referência de API não gerenciada)
+
 A API de hospedagem permite que hosts não gerenciados integrem o CLR (Common Language Runtime) em seus aplicativos.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Hospedando coclasses](hosting-coclasses.md)  
  Descreve as coclasses não gerenciadas que a API de hospedagem usa.  
   
@@ -33,5 +36,6 @@ A API de hospedagem permite que hosts não gerenciados integrem o CLR (Common La
  Descreve as estruturas não gerenciadas que a API de hospedagem usa.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Hosts de runtime](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/a51xd4ze(v=vs.100))  
+
+ [Hosts de runtime](/previous-versions/dotnet/netframework-4.0/a51xd4ze(v=vs.100))  
  Descreve os hosts de runtime incluídos no .NET Framework.

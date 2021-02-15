@@ -1,22 +1,24 @@
 ---
+description: 'Saiba mais sobre: <System. identityModel. Services>'
 title: <system.identityModel.services>
 ms.date: 03/30/2017
 ms.assetid: fa1624dd-2d74-4ae3-942e-498cee261ac5
 author: BrucePerlerMS
-ms.openlocfilehash: 57757aaec39bc5c552e7ba12c9779cb3a92a9025
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 037a96c2620e06ef6aed85d1dbaba62aca72e9eb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79152498"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786545"
 ---
 # \<system.identityModel.services>
+
 A seção de configuração para autenticação usando o protocolo WS-Federation.  
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;**\<system.identityModel.services>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.identityModel.services>  
@@ -26,9 +28,11 @@ A seção de configuração para autenticação usando o protocolo WS-Federation
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
+
  Nenhum  
   
 ### <a name="child-elements"></a>Elementos filho  
@@ -38,9 +42,11 @@ A seção de configuração para autenticação usando o protocolo WS-Federation
 |[\<federationConfiguration>](federationconfiguration.md)|Contém as configurações que definem os <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> módulos http (WSFAM) e <xref:System.IdentityModel.Services.SessionAuthenticationModule> (Sam).|  
   
 ### <a name="parent-elements"></a>Elementos pai  
+
  Nenhum  
   
 ## <a name="remarks"></a>Comentários  
+
  Adicione uma `<system.identityModel.services>` seção ao arquivo de configuração do aplicativo para fornecer as configurações para o Sam e o WSFAM.  
   
 > [!IMPORTANT]
@@ -49,6 +55,7 @@ A seção de configuração para autenticação usando o protocolo WS-Federation
  A `<system.identityModel.services>` seção é representada pela <xref:System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection> classe. A coleção de `<federationConfiguration>` elementos filho configurados na seção é representada pela <xref:System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection> classe.  
   
 ## <a name="example"></a>Exemplo  
+
  O XML a seguir mostra como adicionar uma `<system.identityModel.services>` seção a um arquivo de configuração. Você deve primeiro adicionar declarações de seção para a `<system.identityModel.services>` seção e as `<system.identityModel>` seções. (Ao adicionar uma `<system.identityModel.services>` seção, você também deve adicionar uma declaração para a `<system.identityModel>` seção para garantir que uma seção padrão `<identityConfiguration>` possa ser criada pelo tempo de execução, se necessário.) Depois que as declarações de seção tiverem sido adicionadas, você poderá definir as configurações de autenticação federada no `<system.identityModel.services>` elemento.  
   
 ```xml  

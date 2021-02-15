@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugThreadEnum'
 title: Interface ICorDebugThreadEnum
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 796de687-7dd4-4b7b-a10b-8bf22dc7779f
 topic_type:
 - apiref
-ms.openlocfilehash: 82a7689bb1848d89f5dee4482d8dc7685c9c5b5c
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 088b9bd56ae0049ad5f287b07cd2857f70a496c3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378331"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99658471"
 ---
 # <a name="icordebugthreadenum-interface"></a>Interface ICorDebugThreadEnum
+
 Implementa métodos ICorDebugEnum e enumera matrizes ICorDebugThread.  
   
 ## <a name="methods"></a>Métodos  
@@ -36,6 +38,7 @@ Implementa métodos ICorDebugEnum e enumera matrizes ICorDebugThread.
 > Esta interface não dá suporte para chamada remota, seja entre computadores ou processos cruzados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -44,6 +47,6 @@ Implementa métodos ICorDebugEnum e enumera matrizes ICorDebugThread.
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

@@ -1,7 +1,7 @@
 ---
+description: 'Saiba mais sobre: como criptografar elementos XML com chaves assimétricas'
 title: 'Como: criptografar elementos XML com chaves assimétricas'
 ms.date: 07/14/2020
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -16,12 +16,12 @@ helpviewer_keywords:
 - Advanced Encryption Standard algorithm
 - encryption [.NET], asymmetric keys
 ms.assetid: a164ba4f-e596-4bbe-a9ca-f214fe89ed48
-ms.openlocfilehash: 1c824b00a1df920108cfcd8c4590b680020cdf3e
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: fff8ec57da0318e48f2a230f01dba26497837028
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87555781"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685147"
 ---
 # <a name="how-to-encrypt-xml-elements-with-asymmetric-keys"></a>Como: criptografar elementos XML com chaves assimétricas
 
@@ -113,6 +113,7 @@ Você pode usar as classes no <xref:System.Security.Cryptography.Xml> namespace 
      [!code-vb[HowToEncryptXMLElementAsymmetric#16](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementAsymmetric/vb/sample.vb#16)]  
   
 ## <a name="example"></a>Exemplo  
+
  Este exemplo pressupõe que um arquivo chamado `"test.xml"` existe no mesmo diretório que o programa compilado.  Ele também pressupõe que `"test.xml"` contém um `"creditcard"` elemento.  Você pode inserir o XML a seguir em um arquivo chamado `test.xml` e usá-lo com este exemplo.  
   
 ```xml  
@@ -143,10 +144,10 @@ Nunca incorpore uma chave diretamente no seu código-fonte.  Chaves inseridas po
   
 Quando você terminar de usar uma chave criptográfica, limpe-a da memória definindo cada byte como zero ou chamando o <xref:System.Security.Cryptography.SymmetricAlgorithm.Clear%2A> método da classe de criptografia gerenciada.  Às vezes, as chaves criptográficas podem ser lidas da memória por um depurador ou lidas de um disco rígido se o local da memória for paginado no disco.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Modelo de criptografia](cryptography-model.md)
 - [Serviços criptográficos](cryptographic-services.md)
 - [Criptografia de plataforma cruzada](cross-platform-cryptography.md)- <xref:System.Security.Cryptography.Xml>
-- [Como: descriptografar elementos XML com chaves assimétricas](how-to-decrypt-xml-elements-with-asymmetric-keys.md)
+- [Como descriptografar elementos XML com chaves assimétricas](how-to-decrypt-xml-elements-with-asymmetric-keys.md)
 - [Proteção de dados do ASP.NET Core](/aspnet/core/security/data-protection/introduction)

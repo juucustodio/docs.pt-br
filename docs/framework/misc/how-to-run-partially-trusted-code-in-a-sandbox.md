@@ -9,12 +9,12 @@ helpviewer_keywords:
 - restricted security environment
 - code security, sandboxing
 ms.assetid: d1ad722b-5b49-4040-bff3-431b94bb8095
-ms.openlocfilehash: 415a42f7c4f4866bb72f19bdd6f02bfdb5158bf8
-ms.sourcegitcommit: c37e8d4642fef647ebab0e1c618ecc29ddfe2a0f
+ms.openlocfilehash: baa04a3c55728590b8aa502648a8ab42bf62f903
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87855797"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96288275"
 ---
 # <a name="how-to-run-partially-trusted-code-in-a-sandbox"></a>Como executar código parcialmente confiável em uma área restrita
 
@@ -63,7 +63,7 @@ AppDomain.CreateDomain( string friendlyName,
     PermissionSet internetPS = SecurityManager.GetStandardSandbox(ev);  
     ```  
   
-     O <xref:System.Security.SecurityManager.GetStandardSandbox%2A> método retorna um `Internet` conjunto de permissões ou um `LocalIntranet` conjunto de permissões dependendo da zona na evidência. <xref:System.Security.SecurityManager.GetStandardSandbox%2A>também constrói permissões de identidade para alguns dos objetos de evidência passados como referências.  
+     O <xref:System.Security.SecurityManager.GetStandardSandbox%2A> método retorna um `Internet` conjunto de permissões ou um `LocalIntranet` conjunto de permissões dependendo da zona na evidência. <xref:System.Security.SecurityManager.GetStandardSandbox%2A> também constrói permissões de identidade para alguns dos objetos de evidência passados como referências.  
   
 2. Assine o assembly que contém a classe de hospedagem (denominada `Sandboxer` neste exemplo) que chama o código não confiável. Adicione o <xref:System.Security.Policy.StrongName> usado para assinar o assembly à <xref:System.Security.Policy.StrongName> matriz do `fullTrustAssemblies` parâmetro da <xref:System.AppDomain.CreateDomain%2A> chamada. A classe de hospedagem deve ser executada como totalmente confiável para habilitar a execução do código de confiança parcial ou para oferecer serviços ao aplicativo de confiança parcial. É assim que você lê o <xref:System.Security.Policy.StrongName> de um assembly:  
   
@@ -167,7 +167,7 @@ AppDomain.CreateDomain( string friendlyName,
     }  
     ```  
   
-     <xref:System.Reflection>é usado para obter um identificador de um método no assembly parcialmente confiável. O identificador pode ser usado para executar código de forma segura com permissões mínimas.  
+     <xref:System.Reflection> é usado para obter um identificador de um método no assembly parcialmente confiável. O identificador pode ser usado para executar código de forma segura com permissões mínimas.  
   
      No código anterior, observe o <xref:System.Security.PermissionSet.Assert%2A> para a permissão de confiança total antes de imprimir o <xref:System.Security.SecurityException> .  
   
@@ -178,6 +178,7 @@ AppDomain.CreateDomain( string friendlyName,
      A declaração de confiança total é usada para obter informações estendidas do <xref:System.Security.SecurityException> . Sem o <xref:System.Security.PermissionSet.Assert%2A> , o <xref:System.Security.SecurityException.ToString%2A> método do <xref:System.Security.SecurityException> irá descobrir que há código parcialmente confiável na pilha e restringirá as informações retornadas. Isso pode causar problemas de segurança se o código de confiança parcial pudesse ler essas informações, mas o risco é mitigado não concedendo <xref:System.Security.Permissions.UIPermission> . A declaração de confiança total deve ser usada com moderação e somente quando você tiver certeza de que não está permitindo que o código de confiança parcial eleve a confiança total. Como regra, não chame o código que você não confia na mesma função e depois de chamar uma declaração para confiança total. É recomendável sempre reverter a declaração quando terminar de usá-la.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir implementa o procedimento na seção anterior. No exemplo, um projeto chamado `Sandboxer` em uma solução do Visual Studio também contém um projeto chamado `UntrustedCode` , que implementa a classe `UntrustedClass` . Esse cenário pressupõe que você tenha baixado um assembly de biblioteca que contém um método que deve retornar `true` ou `false` para indicar se o número fornecido é um número Fibonacci. Em vez disso, o método tenta ler um arquivo do seu computador. O exemplo a seguir mostra o código não confiável.  
   
 ```csharp

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugAppDomain:: GetProcess'
 title: Método ICorDebugAppDomain::GetProcess
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 9d0b9628-a91c-40d0-b9bc-00b34a396b8f
 topic_type:
 - apiref
-ms.openlocfilehash: 90ac981f9b5ee71ca59f76823e7b796471571e4e
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: a681e58334df5dd7373e49b70c096fa1ff10773f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82895194"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99772400"
 ---
 # <a name="icordebugappdomaingetprocess-method"></a>Método ICorDebugAppDomain::GetProcess
+
 Obtém o processo que contém o domínio do aplicativo.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,10 +36,12 @@ HRESULT GetProcess (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ppProcess`  
  fora Um ponteiro para o endereço de um objeto ICorDebugProcess que representa o processo.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

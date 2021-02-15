@@ -1,22 +1,22 @@
 ---
 title: Comando dotnet new
-description: O comando dotnet new cria novos projetos .NET Core com base no modelo especificado.
+description: O comando dotnet New cria novos projetos .NET com base no modelo especificado.
 no-loc:
 - Blazor
 - WebAssembly
-ms.date: 09/01/2020
-ms.openlocfilehash: 70297cfe15732716b9ceacae091abe3c8957fb61
-ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
+ms.date: 09/04/2020
+ms.openlocfilehash: 3ee644f05ea5929ffc7b11054ef1d974b811f418
+ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2020
-ms.locfileid: "89495467"
+ms.lasthandoff: 11/15/2020
+ms.locfileid: "94634449"
 ---
 # <a name="dotnet-new"></a>dotnet new
 
 **Este artigo aplica-se a:** ✔️ SDK do .net Core 2,0 e versões posteriores
 
-## <a name="name"></a>Nome
+## <a name="name"></a>Name
 
 `dotnet new` – Cria um novo projeto, arquivo de configuração ou solução com base no modelo especificado.
 
@@ -33,9 +33,9 @@ dotnet new <TEMPLATE> [-l|--list] [--type <TYPE>]
 dotnet new -h|--help
 ```
 
-## <a name="description"></a>Descrição
+## <a name="description"></a>Description
 
-O `dotnet new` comando cria um projeto do .NET Core ou outros artefatos com base em um modelo.
+O `dotnet new` comando cria um projeto .net ou outros artefatos com base em um modelo.
 
 O comando chama o [mecanismo de modelo](https://github.com/dotnet/templating) para criar os artefatos em disco com base no modelo e nas opções especificadas.
 
@@ -56,9 +56,9 @@ O comando chama o [mecanismo de modelo](https://github.com/dotnet/templating) pa
   - Se a CLI não encontrar uma correspondência de modelo ao invocar `dotnet new` , nem mesmo parcial.
   - Se houver uma versão mais recente do modelo disponível. Nesse caso, o projeto ou artefato é criado, mas a CLI avisa sobre uma versão atualizada do modelo.
 
-  A tabela a seguir mostra os modelos que vêm pré-instalados com o SDK do .NET Core. O idioma padrão do modelo é mostrado entre parênteses. Clique no link nome curto para ver as opções de modelo específicas.
+  A tabela a seguir mostra os modelos que vêm pré-instalados com o SDK do .NET. O idioma padrão do modelo é mostrado entre parênteses. Clique no link nome curto para ver as opções de modelo específicas.
 
-| Modelos                                    | Nome curto                      | Idioma     | Marcas                                  | Incluída |
+| Modelos                                    | Nome curto                      | Idioma     | Marcações                                  | Introduzida |
 |----------------------------------------------|---------------------------------|--------------|---------------------------------------|------------|
 | Aplicativo do Console                          | [MMC](#console)             | [C#], F#, VB | Comum/Console                        | 1.0        |
 | Biblioteca de classes                                | [classlib](#classlib)           | [C#], F#, VB | Comum/Library                        | 1.0        |
@@ -74,22 +74,22 @@ O comando chama o [mecanismo de modelo](https://github.com/dotnet/templating) pa
 | Item de Teste do NUnit 3                            | `nunit-test`                    | [C#], F#, VB | Teste/NUnit                            | 2.2        |
 | Projeto de Teste xUnit                           | [xUnit](#test)                  | [C#], F#, VB | Teste/xUnit                            | 1.0        |
 | Componente Razor                              | `razorcomponent`                | [C#]         | Web/ASP.NET                           | 3.0        |
-| Página do Razor                                   | [page](#page)                   | [C#]         | Web/ASP.NET                           | 2,0        |
-| Importações de Exibição do MVC                              | [viewimports](#namespace)       | [C#]         | Web/ASP.NET                           | 2,0        |
-| MVC ViewStart                                | `viewstart`                     | [C#]         | Web/ASP.NET                           | 2,0        |
+| Página do Razor                                   | [page](#page)                   | [C#]         | Web/ASP.NET                           | 2.0        |
+| Importações de Exibição do MVC                              | [viewimports](#namespace)       | [C#]         | Web/ASP.NET                           | 2.0        |
+| MVC ViewStart                                | `viewstart`                     | [C#]         | Web/ASP.NET                           | 2.0        |
 | Blazor Aplicativo de servidor                            | [blazorserver](#blazorserver)   | [C#]         | SiteBlazor                            | 3.0        |
-| BlazorDo WebAssembly aplicativo                       | `blazorwasm`                    | [C#]         | SiteBlazor/WebAssembly                | 3.1.300    |
+| BlazorDo WebAssembly aplicativo                       | [blazorwasm](#blazorwasm)       | [C#]         | SiteBlazor/WebAssembly                | 3.1.300    |
 | ASP.NET Core Vazio                           | [site](#web)                     | [C#], F#     | Web/Vazio                             | 1.0        |
 | Aplicativo Web ASP.NET Core (Modelo-Exibição-Controlador) | [MVC](#web-options)             | [C#], F#     | Web/MVC                               | 1.0        |
 | Aplicativo Web ASP.NET Core                         | [webapp, Razor](#web-options)   | [C#]         | Web/MVC/Razor Pages                   | 2,2, 2,0   |
-| ASP.NET Core com Angular                    | [angular](#spa)                 | [C#]         | Web/MVC/SPA                           | 2,0        |
-| ASP.NET Core com React.js                   | [reagir](#spa)                   | [C#]         | Web/MVC/SPA                           | 2,0        |
-| ASP.NET Core com React.js e Redux         | [reactredux](#reactredux)       | [C#]         | Web/MVC/SPA                           | 2,0        |
+| ASP.NET Core com Angular                    | [angular](#spa)                 | [C#]         | Web/MVC/SPA                           | 2.0        |
+| ASP.NET Core com React.js                   | [reagir](#spa)                   | [C#]         | Web/MVC/SPA                           | 2.0        |
+| ASP.NET Core com React.js e Redux         | [reactredux](#reactredux)       | [C#]         | Web/MVC/SPA                           | 2.0        |
 | Biblioteca de Classes do Razor                          | [razorclasslib](#razorclasslib) | [C#]         | Web/Razor/Biblioteca/Biblioteca de Classes do Razor | 2.1        |
 | API Web do ASP.NET Core                         | [webAPI](#webapi)               | [C#], F#     | Web/WebAPI                            | 1.0        |
 | ASP.NET Core serviço gRPC                    | [grpc](#web-others)             | [C#]         | Web/gRPC                              | 3.0        |
 | arquivo dotnet gitignore                        | `gitignore`                     |              | Config                                | 3.0        |
-| Arquivo global.json                             | [globaljson](#globaljson)       |              | Config                                | 2,0        |
+| Arquivo global.json                             | [globaljson](#globaljson)       |              | Config                                | 2.0        |
 | Configuração do NuGet                                 | `nugetconfig`                   |              | Config                                | 1.0        |
 | Arquivo de manifesto da ferramenta local dotnet              | `tool-manifest`                 |              | Config                                | 3.0        |
 | Configuração da Web                                   | `webconfig`                     |              | Config                                | 1.0        |
@@ -135,7 +135,7 @@ O comando chama o [mecanismo de modelo](https://github.com/dotnet/templating) pa
 
 - **`--nuget-source <SOURCE>`**
 
-  Especifica uma origem do NuGet a ser usada durante a instalação. Disponível desde o SDK do .NET Core 2,1.
+  Especifica uma origem do NuGet a ser usada durante a instalação.
 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
@@ -143,7 +143,7 @@ O comando chama o [mecanismo de modelo](https://github.com/dotnet/templating) pa
 
 - **`--type <TYPE>`**
 
-  Filtra modelos com base em tipos disponíveis. Os valores predefinidos são `project` , `item` e `other` .
+  Filtra modelos com base em tipos disponíveis. Os valores predefinidos são `project` e `item` .
 
 - **`-u|--uninstall [PATH|NUGET_ID]`**
 
@@ -177,6 +177,7 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
   | Versão do SDK | Valor padrão   |
   |-------------|-----------------|
+  | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
 
@@ -190,13 +191,13 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
   Se especificado, não executa uma restauração implícita durante a criação do projeto. Disponível desde o SDK do .NET Core 2,2.
 
-***
+**_
 
 ### <a name="classlib"></a>classlib
 
-- **`-f|--framework <FRAMEWORK>`**
+- _ *`-f|--framework <FRAMEWORK>`**
 
-  Especifica a [estrutura](../../standard/frameworks.md) a ser direcionada. Valores: `netcoreapp<version>` para criar uma Biblioteca de classes do .NET Core ou `netstandard<version>` para criar uma Biblioteca de classes .NET Standard. O valor padrão é `netstandard2.0`.
+  Especifica a [estrutura](../../standard/frameworks.md) a ser direcionada. Valores: `net5.0` ou `netcoreapp<version>` para criar uma biblioteca de classes .net ou `netstandard<version>` para criar uma .net Standard biblioteca de classes. O valor padrão para o SDK do .NET 5,0 é `net5.0` .
 
 - **`--langVersion <VERSION_NUMBER>`**
 
@@ -208,13 +209,13 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
   Não executa uma restauração implícita durante a criação do projeto.
 
-***
+**_
 
 ### <a name="wpf-wpflib-wpfcustomcontrollib-wpfusercontrollib"></a><a name="wpf"></a> WPF, wpflib, wpfcustomcontrollib, wpfusercontrollib
 
-- **`-f|--framework <FRAMEWORK>`**
+- _ *`-f|--framework <FRAMEWORK>`**
 
-  Especifica a [estrutura](../../standard/frameworks.md) a ser direcionada. O valor padrão é `netcoreapp3.1`. Disponível desde o SDK do .NET Core 3,1.
+  Especifica a [estrutura](../../standard/frameworks.md) a ser direcionada. O valor padrão é `net5.0`. Disponível desde o SDK do .NET Core 3,1.
 
 - **`--langVersion <VERSION_NUMBER>`**
 
@@ -226,11 +227,11 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
   Não executa uma restauração implícita durante a criação do projeto.
 
-***
+**_
 
 ### <a name="winforms-winformslib"></a><a name="winforms"></a> WinForms, winformslib
 
-- **`--langVersion <VERSION_NUMBER>`**
+- _ *`--langVersion <VERSION_NUMBER>`**
 
   Define a `LangVersion` propriedade no arquivo de projeto criado. Por exemplo, use `--langVersion 7.3` para usar C# 7.3.
 
@@ -240,11 +241,11 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
   Não executa uma restauração implícita durante a criação do projeto.
 
-***
+**_
 
 ### <a name="worker-grpc"></a><a name="web-others"></a> trabalho, grpc
 
-- **`-f|--framework <FRAMEWORK>`**
+- _ *`-f|--framework <FRAMEWORK>`**
 
   Especifica a [estrutura](../../standard/frameworks.md) a ser direcionada. O valor padrão é `netcoreapp3.1`. Disponível desde o SDK do .NET Core 3,1.
 
@@ -256,11 +257,11 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
   Não executa uma restauração implícita durante a criação do projeto.
 
-***
+**_
 
 ### <a name="mstest-xunit"></a><a name="test"></a> MSTest, xUnit
 
-- **`-f|--framework <FRAMEWORK>`**
+- _ *`-f|--framework <FRAMEWORK>`**
 
   Especifica a [estrutura](../../standard/frameworks.md) a ser direcionada. Opção disponível desde o SDK do .NET Core 3,0.
 
@@ -268,6 +269,7 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
   | Versão do SDK | Valor padrão   |
   |-------------|-----------------|
+  | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
 
@@ -279,11 +281,11 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
   Não executa uma restauração implícita durante a criação do projeto.
 
-***
+**_
 
 ### <a name="nunit"></a>NUnit
 
-- **`-f|--framework <FRAMEWORK>`**
+- _ *`-f|--framework <FRAMEWORK>`**
 
   Especifica a [estrutura](../../standard/frameworks.md) a ser direcionada.
 
@@ -291,6 +293,7 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
   | Versão do SDK | Valor padrão   |
   |-------------|-----------------|
+  | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
   | 2.2         | `netcoreapp2.2` |
@@ -304,11 +307,11 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
   Não executa uma restauração implícita durante a criação do projeto.
 
-***
+**_
 
 ### <a name="page"></a>página
 
-- **`-na|--namespace <NAMESPACE_NAME>`**
+- _ *`-na|--namespace <NAMESPACE_NAME>`**
 
   Namespace para o código gerado. O valor padrão é `MyApp.Namespace`.
 
@@ -316,19 +319,19 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
   Cria a página sem um PageModel.
 
-***
+**_
 
 ### <a name="viewimports-proto"></a><a name="namespace"></a> viewimports, proto
 
-- **`-na|--namespace <NAMESPACE_NAME>`**
+- _ *`-na|--namespace <NAMESPACE_NAME>`**
 
   Namespace para o código gerado. O valor padrão é `MyApp.Namespace`.
 
-***
+**_
 
 ### <a name="blazorserver"></a>blazorserver
 
-- **`-au|--auth <AUTHENTICATION_TYPE>`**
+- _ *`-au|--auth <AUTHENTICATION_TYPE>`**
 
   O tipo de autenticação a ser usado. Os valores possíveis são:
 
@@ -395,11 +398,115 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
   Não executa uma restauração implícita durante a criação do projeto.
 
-***
+**_
+
+### <a name="blazorwasm"></a>blazorwasm
+
+- _ *`-f|--framework <FRAMEWORK>`**
+
+  Especifica a [estrutura](../../standard/frameworks.md) a ser direcionada.
+
+  A tabela a seguir lista os valores padrão de acordo com o número de versão do SDK que você está usando:
+
+  | Versão do SDK | Valor padrão   |
+  |-------------|-----------------|
+  | 5.0         | `net5.0`        |
+  | 3.1         | `netcoreapp3.1` |
+
+- **`--no-restore`**
+
+  Não executa uma restauração implícita durante a criação do projeto.
+
+- **`-ho|--hosted`**
+
+  Inclui um host ASP.NET Core para o Blazor WebAssembly aplicativo.
+
+- **`-au|--auth <AUTHENTICATION_TYPE>`**
+
+  O tipo de autenticação a ser usado. Os valores possíveis são:
+
+  - `None` – Nenhuma autenticação (Padrão).
+  - `Individual` – Autenticação individual.
+  - `IndividualB2C` – Autenticação individual com o Azure AD B2C.
+  - `SingleOrg` – Autenticação organizacional para um único locatário.
+
+- **`--authority <AUTHORITY>`**
+
+  A autoridade do provedor de OIDC. Use com a autenticação do `Individual`. O valor padrão é `https://login.microsoftonline.com/`.
+
+- **`--aad-b2c-instance <INSTANCE>`**
+
+  A instância de Azure Active Directory B2C à qual se conectar. Use com a autenticação do `IndividualB2C`. O valor padrão é `https://aadB2CInstance.b2clogin.com/`.
+
+- **`-ssp|--susi-policy-id <ID>`**
+
+  A ID da política de entrada e inscrição deste projeto. Use com a autenticação do `IndividualB2C`.
+
+- **`--aad-instance <INSTANCE>`**
+
+  A instância de Azure Active Directory à qual se conectar. Use com a autenticação do `SingleOrg`. O valor padrão é `https://login.microsoftonline.com/`.
+
+- **`--client-id <ID>`**
+
+  A ID do cliente para este projeto. Use o com o `IndividualB2C` , o `SingleOrg` ou a `Individual` autenticação em cenários autônomos. O valor padrão é `33333333-3333-3333-33333333333333333`.
+
+- **`--domain <DOMAIN>`**
+
+  O domínio para o locatário do diretório. Use com a autenticação `SingleOrg` ou `IndividualB2C`. O valor padrão é `qualified.domain.name`.
+
+- **`--app-id-uri <URI>`**
+
+  O URI da ID do aplicativo para a API do servidor que você deseja chamar. Use com a autenticação `SingleOrg` ou `IndividualB2C`. O valor padrão é `api.id.uri`.
+
+- **`--api-client-id <ID>`**
+
+  A ID do cliente para a API que o servidor hospeda. Use com a autenticação `SingleOrg` ou `IndividualB2C`. O valor padrão é `11111111-1111-1111-11111111111111111`.
+
+- **`-s|--default-scope <SCOPE>`**
+
+  O escopo da API que o cliente precisa solicitar para provisionar um token de acesso. Use com a autenticação `SingleOrg` ou `IndividualB2C`. O valor padrão é `user_impersonation`.
+
+- **`--tenant-id <ID>`**
+
+  A ID de Tenantid do diretório ao qual se conectar. Use com a autenticação do `SingleOrg`. O valor padrão é `22222222-2222-2222-2222-222222222222`.
+
+- **`-r|--org-read-access`**
+
+  Permite que este aplicativo Leia o acesso ao diretório. Aplica-se somente à `SingleOrg` autenticação.
+
+- **`--exclude-launch-settings`**
+
+  Exclui *launchSettings.js* do modelo gerado.
+
+- **`-p|--pwa`**
+
+  produz um aplicativo Web progressivo (PWA) que dá suporte à instalação e ao uso offline.
+
+- **`--no-https`**
+
+  Desativa o HTTPS. Essa opção se aplica somente se `Individual` , `IndividualB2C` ou `SingleOrg` não estiverem sendo usados para `--auth` .
+
+- **`-uld|--use-local-db`**
+
+  Especifica LocalDB deve ser usado em vez do SQLite. Aplicável apenas à autenticação `Individual` ou `IndividualB2C`.
+
+- **`--called-api-url <URL>`**
+
+  URL da API a ser chamada do aplicativo Web. Aplica-se somente ao `SingleOrg` ou à `IndividualB2C` autenticação sem um host ASP.NET Core especificado. O valor padrão é `https://graph.microsoft.com/v1.0/me`.
+
+- **`--calls-graph`**
+
+  Especifica se o aplicativo Web chama Microsoft Graph. Aplica-se somente à `SingleOrg` autenticação.
+
+- **`--called-api-scopes <SCOPES>`**
+
+  Escopos a serem solicitados a chamar a API do aplicativo Web. Aplica-se somente ao `SingleOrg` ou à `IndividualB2C` autenticação sem um host ASP.NET Core especificado. O padrão é `user.read`.
+
+**_
 
 ### <a name="web"></a>web
 
-- **`--exclude-launch-settings`**
+- _ *`--exclude-launch-settings`**
 
   Exclui *launchSettings.js* do modelo gerado.
 
@@ -411,6 +518,7 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
   | Versão do SDK | Valor padrão   |
   |-------------|-----------------|
+  | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
   | 2.1         | `netcoreapp2.1` |
@@ -423,11 +531,11 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
   Desativa o HTTPS.
 
-***
+**_
 
 ### <a name="mvc-webapp"></a><a name="web-options"></a> MVC, webapp
 
-- **`-au|--auth <AUTHENTICATION_TYPE>`**
+- _ *`-au|--auth <AUTHENTICATION_TYPE>`**
 
   O tipo de autenticação a ser usado. Os valores possíveis são:
 
@@ -498,6 +606,7 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
   | Versão do SDK | Valor padrão   |
   |-------------|-----------------|
+  | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
 
@@ -513,11 +622,11 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
   Determina se o projeto está configurado para usar a [compilação de tempo de execução do Razor](/aspnet/core/mvc/views/view-compilation#runtime-compilation) em compilações de depuração. Opção disponível desde o SDK do 3.1.201 do .NET Core.
 
-***
+**_
 
 ### <a name="angular-react"></a><a name="spa"></a> angular, reagir
 
-- **`-au|--auth <AUTHENTICATION_TYPE>`**
+- _ *`-au|--auth <AUTHENTICATION_TYPE>`**
 
   O tipo de autenticação a ser usado. Disponível desde o SDK do .NET Core 3.0.
   
@@ -550,15 +659,16 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
   | Versão do SDK | Valor padrão   |
   |-------------|-----------------|
+  | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
   | 2.1         | `netcoreapp2.0` |
 
-***
+**_
 
 ### <a name="reactredux"></a>reactredux
 
-- **`--exclude-launch-settings`**
+- _ *`--exclude-launch-settings`**
 
   Exclui *launchSettings.js* do modelo gerado.
 
@@ -570,6 +680,7 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
   | Versão do SDK | Valor padrão   |
   |-------------|-----------------|
+  | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
   | 2.1         | `netcoreapp2.0` |
@@ -582,11 +693,11 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
   Desativa o HTTPS.
 
-***
+**_
 
 ### <a name="razorclasslib"></a>razorclasslib
 
-- **`--no-restore`**
+- _ *`--no-restore`**
 
   Não executa uma restauração implícita durante a criação do projeto.
 
@@ -594,11 +705,11 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
   Dá suporte à adição de páginas e exibições do Razor tradicionais, além dos componentes dessa biblioteca. Disponível desde o SDK do .NET Core 3.0.
 
-***
+**_
   
 ### <a name="webapi"></a>webapi
 
-- **`-au|--auth <AUTHENTICATION_TYPE>`**
+- _ *`-au|--auth <AUTHENTICATION_TYPE>`**
 
   O tipo de autenticação a ser usado. Os valores possíveis são:
 
@@ -655,6 +766,7 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
   | Versão do SDK | Valor padrão   |
   |-------------|-----------------|
+  | 5.0         | `net5.0`        |
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
   | 2.1         | `netcoreapp2.1` |
@@ -663,13 +775,13 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
 
   Não executa uma restauração implícita durante a criação do projeto.
 
-***
+**_
 
 ### <a name="globaljson"></a>globaljson
 
-- **`--sdk-version <VERSION_NUMBER>`**
+- _ *`--sdk-version <VERSION_NUMBER>`**
 
-  Especifica a versão do SDK do .NET Core a ser usada na *global.jsno* arquivo.
+  Especifica a versão do SDK do .NET a ser usada na *global.jsno* arquivo.
 
 ***
 
@@ -741,7 +853,7 @@ Cada modelo de projeto pode ter opções adicionais disponíveis. Os principais 
   dotnet new globaljson --sdk-version 3.1.101
   ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Modelos personalizados para dotnet new](custom-templates.md)
 - [Create a custom template for dotnet new](../tutorials/cli-templates-create-item-template.md) (Criar um modelo personalizado para dotnet new)

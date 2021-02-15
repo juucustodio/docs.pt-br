@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: interoperabilidade com aplicativos POX'
 title: Interoperabilidade com aplicativos POX
 ms.date: 03/30/2017
 ms.assetid: 449276b8-4633-46f0-85c9-81f01d127636
-ms.openlocfilehash: 64a6d850a32b14bc60cd43466e04b53a7a39be81
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 832b9ae93f6046ca9995b57bdcbbfbfeb46d2a09
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84579261"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802704"
 ---
 # <a name="interoperability-with-pox-applications"></a>Interoperabilidade com aplicativos POX
 

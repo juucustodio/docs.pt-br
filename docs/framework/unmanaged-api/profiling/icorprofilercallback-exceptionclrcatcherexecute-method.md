@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerCallback:: ExceptionCLRCatcherExecute'
 title: Método ICorProfilerCallback::ExceptionCLRCatcherExecute
 ms.date: 03/30/2017
 api_name:
@@ -15,23 +16,25 @@ helpviewer_keywords:
 ms.assetid: aaac8f98-5cf4-42c7-b04b-556cce367e36
 topic_type:
 - apiref
-ms.openlocfilehash: b79c8dd9f27805e00535dde53c6ee9f5ee457b42
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: cb6926fdfcc9b5ffef20cc69c71a3bafefd9f6ff
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500257"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99657496"
 ---
 # <a name="icorprofilercallbackexceptionclrcatcherexecute-method"></a>Método ICorProfilerCallback::ExceptionCLRCatcherExecute
+
 Chamado quando um `catch` bloco de uma exceção é executado dentro do Common Language Runtime (CLR) em si. Esse método é obsoleto no .NET Framework versão 2,0.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT ExceptionCLRCatcherExecute();  
 ```  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -40,7 +43,7 @@ HRESULT ExceptionCLRCatcherExecute();
   
  **Versões do .NET Framework:** 1,1, 1,0  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Método ExceptionCLRCatcherFound](icorprofilercallback-exceptionclrcatcherfound-method.md)

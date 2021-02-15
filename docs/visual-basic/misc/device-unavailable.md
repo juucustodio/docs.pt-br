@@ -4,14 +4,15 @@ ms.date: 07/20/2015
 f1_keywords:
 - vbrID68
 ms.assetid: 9a89beda-140e-4b32-8d0a-2dc598ef279a
-ms.openlocfilehash: d1c31af1df65855d3632e64983314767f76c9375
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 251df96d9e3c461f108b7ebb08ddfca576e0ad7f
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84394785"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91079042"
 ---
 # <a name="device-unavailable"></a>Dispositivo não disponível
+
 Você perdeu a conexão de rede ou o dispositivo que você está tentando acessar está offline ou não existe.  
   
 ## <a name="to-correct-this-error"></a>Para corrigir este erro  

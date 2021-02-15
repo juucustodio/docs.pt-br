@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como: colocar um valor em uma propriedade (Visual Basic)'
 title: Como inserir um valor em uma propriedade
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,14 +9,15 @@ helpviewer_keywords:
 - Visual Basic code, properties
 - properties [Visual Basic], values
 ms.assetid: c39401e5-b5fc-4439-8f31-ed640f7ce6ed
-ms.openlocfilehash: c0fb3e137010390097a68aea161efcff93839d94
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 62f5552f821fb98bd3a4695505aba5ff73b08fc7
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84414331"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100476196"
 ---
 # <a name="how-to-put-a-value-in-a-property-visual-basic"></a>Como inserir um valor em uma propriedade (Visual Basic)
+
 Você armazena um valor em uma propriedade colocando o nome da propriedade no lado esquerdo de uma instrução de atribuição.  
   
  O procedimento da propriedade `Set` armazena um valor, mas você não o chama explicitamente por nome. Você usa a propriedade da mesma forma como usaria uma variável. Visual Basic faz as chamadas para os procedimentos da propriedade.  
@@ -34,7 +36,7 @@ Você armazena um valor em uma propriedade colocando o nome da propriedade no la
   
 4. O valor gerado no lado direito da instrução de atribuição é armazenado na propriedade.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.DateAndTime.TimeOfDay%2A>
 - [Procedimentos de propriedade](./property-procedures.md)

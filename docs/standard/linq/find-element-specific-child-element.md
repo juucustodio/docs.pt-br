@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 00cf5555-374e-4369-bf93-7bd2e7f21db3
-ms.openlocfilehash: 947983ea1ea9d50528a9cb0beaa9c86b545e5ea6
-ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
+ms.openlocfilehash: 2f97f920ce09222858a0a51eb52ffe0d58dba960
+ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89551834"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90678634"
 ---
 # <a name="how-to-find-an-element-with-a-specific-child-element-linq-to-xml"></a>Como localizar um elemento com um elemento filho específico (LINQ to XML)
 
@@ -96,6 +96,5 @@ Esse exemplo gera a saída a seguir:
 
 - <xref:System.Xml.Linq.XElement.Attribute%2A>
 - <xref:System.Xml.Linq.XContainer.Elements%2A>
-- [Visão geral de operadores de consulta padrão (C#)](../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [Operações de projeção (C#)](../../csharp/programming-guide/concepts/linq/projection-operations.md)
-- [Visão geral de operadores de consulta padrão (Visual Basic)](/../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
+- [Visão geral de operadores de consulta padrão](../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
+- [Operações de projeção](../../csharp/programming-guide/concepts/linq/projection-operations.md)

@@ -6,12 +6,12 @@ metadata:
   description: Conheça as práticas recomendadas para arquitetar, criar e migrar aplicativos .NET.
   ms.topic: landing-page
   ms.date: 03/19/2020
-  ms.openlocfilehash: 0ea87b6e69df9a6edacd916d279a095d984af463
-  ms.sourcegitcommit: 0100be20fcf23f61dab672deced70059ed71bb2e
+  ms.openlocfilehash: 2ddd4c6d0c42f9e0ae4651aedb8fbdd59cd179f2
+  ms.sourcegitcommit: eb7e87496f42361b1da98562dd75b516c9d58bbc
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 08/17/2020
-  ms.locfileid: "88267913"
+  ms.lasthandoff: 10/09/2020
+  ms.locfileid: "91877516"
 landingContent:
 - title: Desenvolver aplicativos ASP.NET Core
   linkLists:
@@ -38,7 +38,11 @@ landingContent:
     - text: Tutorial de microserviço Olá, Mundo
       url: https://dotnet.microsoft.com/learn/aspnet/microservice-tutorial/intro
     - text: Criar e implantar um microsserviço ASP.NET Core nativo de nuvem
-      url: https://docs.microsoft.com/learn/modules/microservices-aspnet-core
+      url: /learn/modules/microservices-aspnet-core
+    - text: Implantar um microsserviço ASP.NET Core nativo de nuvem com o GitHub Actions
+      url: /learn/modules/microservices-devops-aspnet-core
+    - text: Implementar a resiliência em um microsserviço ASP.NET Core nativo de nuvem
+      url: /learn/modules/microservices-resiliency-aspnet-core
 - title: Migrar aplicativos .NET para o Azure
   linkLists:
   - linkListType: concept

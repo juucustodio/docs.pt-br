@@ -3,14 +3,15 @@ title: Autenticação no SQL Server
 description: Saiba mais sobre a autenticação com SQL Server para ADO.NET, incluindo o modo de autenticação do Windows e o modo misto.
 ms.date: 05/22/2018
 ms.assetid: 646ddbf5-dd4e-4285-8e4a-f565f666c5cc
-ms.openlocfilehash: e9915598acfbdefb59069d6a9c6ef4b7c824e4c6
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 2c4f62391a0d9b5ada27f56eef4c3467d99b4c6d
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286540"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91197521"
 ---
 # <a name="authentication-in-sql-server"></a>Autenticação no SQL Server
+
 O SQL Server dá suporte a dois modos de autenticação, autenticação do Windows e modo misto.  
   
 - A autenticação do Windows é o padrão, e é geralmente conhecida como segurança integrada porque esse modelo de segurança do SQL Server está integrado com o Windows. Contas específicas de usuário e de grupo do Windows são confiáveis para fazer logon no SQL Server. Os usuários do Windows que já foram autenticados não precisam apresentar credenciais adicionais.  
@@ -30,6 +31,7 @@ O SQL Server dá suporte a dois modos de autenticação, autenticação do Windo
 > Os logons são diferentes dos usuários de banco de dados. Você precisa mapear logons ou grupos do Windows para usuários ou funções de banco de dados em uma operação separada. Em seguida, conceda permissões a usuários ou funções para acessar objetos de banco de dados.  
   
 ## <a name="authentication-scenarios"></a>Cenários de autenticação  
+
  A autenticação do Windows é geralmente a melhor opção nas seguintes situações:  
   
 - Há um controlador de domínio.  
@@ -50,6 +52,7 @@ O SQL Server dá suporte a dois modos de autenticação, autenticação do Windo
 > Especificar a autenticação do Windows não desabilita os logons do SQL Server. Use a instrução ALTER LOGIN DISABLE do Transact-SQL para desabilitar logons do SQL Server com privilégios elevados.  
   
 ## <a name="login-types"></a>Tipos de logon  
+
  O SQL Server dá suporte a três tipos de logon:  
   
 - Uma conta de usuário do Windows local ou uma conta de domínio confiável. O SQL Server depende do Windows para autenticar as contas de usuário do Windows.  
@@ -62,6 +65,7 @@ O SQL Server dá suporte a dois modos de autenticação, autenticação do Windo
 > O SQL Server fornece os logons criados de certificados ou chaves assimétricas que são usados somente para assinatura de código. Eles não podem ser usados para a conexão com o SQL Server.  
   
 ## <a name="mixed-mode-authentication"></a>Autenticação de modo misto  
+
  Se você deve usar a autenticação de modo misto, deverá criar os logons do SQL Server, que são armazenados no SQL Server. Em seguida, você terá que fornecer o nome de usuário e a senha do SQL Server em tempo de execução.  
   
 > [!IMPORTANT]
@@ -73,11 +77,12 @@ O SQL Server dá suporte a dois modos de autenticação, autenticação do Windo
 > Concatenar cadeias de conexão da entrada do usuário pode deixá-lo vulnerável a um ataque de injeção de cadeia de conexão. Use o <xref:System.Data.SqlClient.SqlConnectionStringBuilder> para criar cadeias de conexão sintaticamente válidas em tempo de execução. Para obter mais informações, confira [Construtores de cadeias de conexão](../connection-string-builders.md).  
   
 ## <a name="external-resources"></a>Recursos externos  
+
  Para obter mais informações, consulte os recursos a seguir.  
   
 |Recurso|Descrição|  
 |--------------|-----------------|  
-|[Principals](/sql/relational-databases/security/authentication-access/principals-database-engine)|Descreve logons e outras entidades de segurança no SQL Server.|  
+|[Entidades](/sql/relational-databases/security/authentication-access/principals-database-engine)|Descreve logons e outras entidades de segurança no SQL Server.|  
   
 ## <a name="see-also"></a>Veja também
 

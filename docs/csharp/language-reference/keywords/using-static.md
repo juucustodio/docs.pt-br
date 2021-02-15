@@ -2,15 +2,17 @@
 description: Diretiva using static – Referência de C#
 title: Diretiva using static – Referência de C#
 ms.date: 03/10/2017
+f1_keywords:
+- using-static_CSharpKeyword
 helpviewer_keywords:
 - using static directive [C#]
 ms.assetid: 8b8f9e34-c75e-469b-ba85-6f2eb4090314
-ms.openlocfilehash: a10c315a05c28bce9b5ddb65af67dde6446d031d
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: d117d4423a2f7c782cd6365a73e6c18298d89abc
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89141914"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92162226"
 ---
 # <a name="using-static-directive-c-reference"></a>Diretiva using static (Referência de C#)
 
@@ -50,7 +52,7 @@ O exemplo a seguir usa a diretiva `using static` para tornar os membros estátic
 
 No exemplo, a diretiva `using static` também poderia ter sido aplicada ao tipo <xref:System.Double>. Isso tornaria possível chamar o método <xref:System.Double.TryParse(System.String,System.Double@)> sem especificar um nome de tipo. No entanto, isso cria um código menos legível, pois torna-se necessário verificar as `using static` diretivas para determinar qual método de tipo numérico `TryParse` é chamado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [usando a diretiva](using-directive.md)
 - [Referência do C#](../index.md)

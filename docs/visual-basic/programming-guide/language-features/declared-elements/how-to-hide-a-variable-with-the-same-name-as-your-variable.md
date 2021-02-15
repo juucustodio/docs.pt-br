@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como ocultar uma variável com o mesmo nome que a variável (Visual Basic)'
 title: Como ocultar uma variável com o mesmo nome que a variável
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - declared elements [Visual Basic], referencing
 - declared elements [Visual Basic], about declared elements
 ms.assetid: e39c0752-f19f-4d2e-a453-00df1b5fc7ee
-ms.openlocfilehash: c1f4c2fbf339358be77e76468b1db94616bf04a2
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c6699abdc163c6ae1a78f6035cd08439d1b029f0
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84357226"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429846"
 ---
 # <a name="how-to-hide-a-variable-with-the-same-name-as-your-variable-visual-basic"></a>Como ocultar uma variável com o mesmo nome que a variável (Visual Basic)
 
@@ -105,7 +106,7 @@ Você pode ocultar uma variável *sombreando* -a, ou seja, redefinindo-a com uma
 
 O sombreamento apresenta mais de uma versão de uma variável com o mesmo nome. Quando uma instrução de código se refere ao nome da variável, a versão para a qual o compilador resolve a referência depende de fatores como o local da instrução do código e a presença de uma cadeia de caracteres de qualificação. Isso pode aumentar o risco de se referir a uma versão não intencional de uma variável sombreada. Você pode reduzir esse risco Qualificando totalmente todas as referências a uma variável sombreada.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referências a elementos declarados](references-to-declared-elements.md)
 - [Sombreamento no Visual Basic](shadowing.md)

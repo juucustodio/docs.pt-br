@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataEmit:: MergeEnd'
 title: Método IMetaDataEmit::MergeEnd
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 2d64315a-1af1-4c60-aedf-f8a781914aea
 topic_type:
 - apiref
-ms.openlocfilehash: feb81b86190f953b50f43f244f4e58a0a482f86e
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: aac48b9bafb60cee4e3d73232d9f9c00cca7f796
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84003913"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99745873"
 ---
 # <a name="imetadataemitmergeend-method"></a>Método IMetaDataEmit::MergeEnd
 
@@ -48,7 +49,7 @@ As seguintes condições especiais se aplicam à mesclagem:
 
   Se as propriedades do módulo já foram definidas para o escopo atual, nenhuma Propriedade do módulo será importada. No entanto, se as propriedades do módulo não tiverem sido definidas no escopo atual, elas serão importadas apenas uma vez, quando forem encontradas. Se essas propriedades de módulo forem encontradas novamente, elas serão duplicadas. Se os valores de todas as propriedades do módulo (exceto MVID) forem comparados e nenhuma duplicata for encontrada, um erro será gerado.
 
-- Para definições de tipo ( `TypeDef` ), nenhuma duplicata é mesclada no escopo atual. `TypeDef`os objetos são verificados em busca de duplicatas em relação a cada número de versão GUID *de nome de objeto totalmente qualificado*  +  *GUID*  +  *version number*. Se houver uma correspondência no nome ou GUID, e qualquer um dos outros dois elementos for diferente, um erro será gerado. Caso contrário, se todos os três itens corresponderem, `MergeEnd` uma verificação de cursor garantirá que as entradas sejam, de fato, duplicadas; caso contrário, um erro será gerado. Esta verificação de cursor procura:
+- Para definições de tipo ( `TypeDef` ), nenhuma duplicata é mesclada no escopo atual. `TypeDef`os objetos são verificados em busca de duplicatas em relação a cada número de versão GUID *de nome de objeto totalmente qualificado*  +    +  . Se houver uma correspondência no nome ou GUID, e qualquer um dos outros dois elementos for diferente, um erro será gerado. Caso contrário, se todos os três itens corresponderem, `MergeEnd` uma verificação de cursor garantirá que as entradas sejam, de fato, duplicadas; caso contrário, um erro será gerado. Esta verificação de cursor procura:
 
   - As mesmas declarações de membro, que ocorrem na mesma ordem. Os membros que são sinalizados como `mdPrivateScope` (consulte a enumeração [CorMethodAttr](cormethodattr-enumeration.md) ) não são incluídos nessa verificação; eles são mesclados especialmente.
 
@@ -68,11 +69,11 @@ As seguintes condições especiais se aplicam à mesclagem:
 
 **Cabeçalho:** Cor. h
 
-**Biblioteca:** Usado como um recurso em MSCorEE. dll
+**Biblioteca:** Usado como um recurso no MSCorEE.dll
 
 **.NET Framework versões:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataEmit](imetadataemit-interface.md)
 - [Interface IMetaDataEmit2](imetadataemit2-interface.md)

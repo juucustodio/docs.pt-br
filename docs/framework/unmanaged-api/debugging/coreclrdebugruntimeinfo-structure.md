@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura CoreClrDebugRuntimeInfo'
 title: Estrutura CoreClrDebugRuntimeInfo
 ms.date: 03/30/2017
 api_name:
@@ -16,14 +17,15 @@ helpviewer_keywords:
 ms.assetid: bd01c30f-b7a8-4179-9497-622b6599b1a6
 topic_type:
 - apiref
-ms.openlocfilehash: 2c41e7db32ee8557a6c03217b95fd5b040655c70
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: 588e8bd1598996d1676e2df5517bd9a52eb59df4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860935"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661708"
 ---
 # <a name="coreclrdebugruntimeinfo-structure"></a>Estrutura CoreClrDebugRuntimeInfo
+
 Representa uma instância de Common Language Runtime (CLR) que é carregada em um processo em um computador remoto.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,15 +38,16 @@ struct  CoreClrDebugRuntimeInfo {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`m_dwInternalID`|Identificador de tempo de execução atribuído pelo proxy de depuração remota em execução no computador de destino.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CoreClrRemoteDebuggingInterfaces. h  
   
- **Biblioteca:** mscordbi_macx86. dll  
+ **Biblioteca:** mscordbi_macx86.dll  
   
  **Versões do .NET Framework:** 3,5 SP1

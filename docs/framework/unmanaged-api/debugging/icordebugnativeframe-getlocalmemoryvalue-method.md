@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugNativeFrame:: GetLocalMemoryValue'
 title: Método ICorDebugNativeFrame::GetLocalMemoryValue
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: b600b3a2-9908-42d8-8093-ab6f39e9a2c9
 topic_type:
 - apiref
-ms.openlocfilehash: 4c4bfe6a797fc1476ff53a8f2db4f80debc41f6b
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 5fbdf9474ca8c5849b7d917ecddff491b329113b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83212432"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729231"
 ---
 # <a name="icordebugnativeframegetlocalmemoryvalue-method"></a>Método ICorDebugNativeFrame::GetLocalMemoryValue
+
 Obtém o valor de um argumento ou uma variável local que é armazenada no local de memória especificado para esse quadro nativo.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,6 +39,7 @@ HRESULT GetLocalMemoryValue (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `address`  
  no Um `CORDB_ADDRESS` valor que especifica o local da memória que contém o valor.  
   
@@ -50,6 +53,7 @@ HRESULT GetLocalMemoryValue (
  fora Um ponteiro para o endereço de um objeto "ICorDebugValue" que representa o valor recuperado que é armazenado no local da memória especificado.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

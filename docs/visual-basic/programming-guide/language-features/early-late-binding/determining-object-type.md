@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: determinando o tipo de objeto (Visual Basic)'
 title: Determinar o Tipo de Objeto
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,17 +10,19 @@ helpviewer_keywords:
 - TypeName function
 - objects [Visual Basic], type determining
 ms.assetid: d95e7ad1-cd63-41d6-9a28-d7a1380d49c1
-ms.openlocfilehash: 3b1c4ad0ab4fd8d2897aff6ad9097cdc81272455
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 0cf64b6dde74b98edaf055537533cb648ed3381a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410638"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434401"
 ---
 # <a name="determining-object-type-visual-basic"></a>Determinando o tipo de objeto (Visual Basic)
+
 Variáveis de objeto genérico (ou seja, variáveis declaradas como `Object` ) podem conter objetos de qualquer classe. Ao usar variáveis do tipo `Object` , talvez seja necessário executar ações diferentes com base na classe do objeto; por exemplo, alguns objetos podem não dar suporte a uma propriedade ou um método específico. Visual Basic fornece dois meios de determinar qual tipo de objeto é armazenado em uma variável de objeto: a `TypeName` função e o `TypeOf...Is` operador.  
   
 ## <a name="typename-and-typeofis"></a>TypeName e TypeOf... For  
+
  A `TypeName` função retorna uma cadeia de caracteres e é a melhor opção quando você precisa armazenar ou exibir o nome de classe de um objeto, conforme mostrado no fragmento de código a seguir:  
   
  [!code-vb[VbVbalrOOP#92](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#92)]  
@@ -44,7 +47,7 @@ Variáveis de objeto genérico (ou seja, variáveis declaradas como `Object` ) p
   
      [!code-vb[VbVbalrOOP#95](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#95)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.Information.TypeName%2A>
 - [Chamando uma propriedade ou um método usando o nome de uma cadeia de caracteres](calling-a-property-or-method-using-a-string-name.md)

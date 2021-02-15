@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: <Method> elemento (.net Native)'
 title: <Method> (.NET Nativo)
 ms.date: 03/30/2017
 ms.assetid: 348b49e5-589d-4eb2-a597-d6ff60ab52d1
-ms.openlocfilehash: 8db32c660846b4f4071fff2a40c760a3d1ef2489
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 76c379ed81e721316e4293b20ba89acfbc9d174f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79180982"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747517"
 ---
 # <a name="method-element-net-native"></a>\<Method> (.NET Nativo)
+
 Aplica a política de reflexão de runtime a um construtor ou método.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <Method Name="method_name"  
@@ -22,6 +24,7 @@ Aplica a política de reflexão de runtime a um construtor ou método.
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -68,13 +71,15 @@ Aplica a política de reflexão de runtime a um construtor ou método.
 |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|Aplica a política de reflexão a um tipo genérico construído e todos os seus membros.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Um elemento `<Method>` de um método genérico aplica sua política a todas as instanciações que não possuem sua própria política.  
   
  Você pode usar o atributo `Signature` para especificar uma política para uma sobrecarga de método específico. Caso contrário, se o atributo `Signature` estiver ausente, a diretiva de runtime se aplicará a todas as sobrecargas do método.  
   
- Não é possível definir a política de reflexão de runtime de um construtor usando o `<Method>` elemento. Em vez disso, use o `Activate` atributo [\<Assembly>](assembly-element-net-native.md) do [\<Namespace>](namespace-element-net-native.md) elemento,, [\<Type>](type-element-net-native.md) ou [\<TypeInstantiation>](typeinstantiation-element-net-native.md) .  
+ Não é possível definir a política de reflexão de runtime de um construtor usando o `<Method>` elemento. Em vez disso, use o `Activate` atributo  [\<Assembly>](assembly-element-net-native.md) do [\<Namespace>](namespace-element-net-native.md) elemento,, [\<Type>](type-element-net-native.md) ou [\<TypeInstantiation>](typeinstantiation-element-net-native.md) .  
   
 ## <a name="example"></a>Exemplo  
+
  O método `Stringify` no exemplo a seguir é um método de formatação para fins gerais que usa reflexão para converter um objeto em sua representação de cadeia de caracteres. Além de chamar o método `ToString` padrão do objeto, o método pode produzir uma cadeia de caracteres de resultados formatada passando um método `ToString` do objeto método em uma cadeia de caracteres, uma implementação de <xref:System.IFormatProvider> ou ambos. Ele também pode chamar uma das sobrecargas de <xref:System.Convert.ToString%2A?displayProperty=nameWithType> que converte um número em sua representação octal, hexadecimal ou binária.  
   
  [!code-csharp[ProjectN_Reflection#7](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn_reflection/cs/method1.cs#7)]  
@@ -143,9 +148,9 @@ Aplica a política de reflexão de runtime a um construtor ou método.
 </Directives>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência do arquivo de configuração de diretivas do runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
 - [Elementos da diretiva de runtime](runtime-directive-elements.md)
 - [Configurações da política da diretiva de runtime](runtime-directive-policy-settings.md)
-- [\<MethodInstantiation>Elementos](methodinstantiation-element-net-native.md)
+- [\<MethodInstantiation> Elementos](methodinstantiation-element-net-native.md)

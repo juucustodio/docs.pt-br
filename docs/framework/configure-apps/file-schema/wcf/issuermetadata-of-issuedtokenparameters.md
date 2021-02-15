@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <issuerMetadata> de <issuedTokenParameters>'
 title: <issuerMetadata> de <issuedTokenParameters>
 ms.date: 03/30/2017
 ms.assetid: 1a85ca37-496d-4fa3-8d44-d6c9383d735c
-ms.openlocfilehash: fcdd66ecd162dff5be86a1d4ab1b196f50dbd445
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 6b0b5064254caf1c6bcf72c2e6d3449402853b98
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70400348"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802236"
 ---
 # <a name="issuermetadata-of-issuedtokenparameters"></a>\<issuerMetadata> de \<issuedTokenParameters>
 
@@ -20,20 +21,21 @@ ms.locfileid: "70400348"
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<issuedTokenParameters>**](issuedtokenparameters.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<issuerMetadata>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <issuerMetaData address="String" />
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|address|Obrigatórios. Uma cadeia de caracteres que especifica o endereço do ponto de extremidade. O endereço deve ser um URI absoluto. O valor padrão é uma cadeia de caracteres vazia.|  
+|address|Obrigatório. Uma cadeia de caracteres que especifica o endereço do ponto de extremidade. O endereço deve ser um URI absoluto. O valor padrão é uma cadeia de caracteres vazia.|  
   
 ### <a name="child-elements"></a>Elementos filho  
   
@@ -48,7 +50,7 @@ ms.locfileid: "70400348"
 |-------------|-----------------|  
 |[\<issuedTokenParameters>](issuedtokenparameters.md)|Especifica os parâmetros para um token de segurança emitido em um cenário de segurança federada.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters>
 - <xref:System.ServiceModel.Configuration.IssuedTokenParametersElement>
@@ -61,5 +63,5 @@ ms.locfileid: "70400348"
 - [Estendendo associações](../../../wcf/extending/extending-bindings.md)
 - [Associações personalizadas](../../../wcf/extending/custom-bindings.md)
 - [\<customBinding>](custombinding.md)
-- [Como criar uma associação personalizada utilizando o SecurityBindingElement](../../../wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
+- [Como: criar uma associação personalizada utilizando o SecurityBindingElement](../../../wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
 - [Segurança de associação personalizada](../../../wcf/samples/custom-binding-security.md)

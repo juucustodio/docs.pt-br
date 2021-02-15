@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração CorDebugStepReason'
 title: Enumeração CorDebugStepReason
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: fe248069-b33c-48e1-a777-06ac9b239c54
 topic_type:
 - apiref
-ms.openlocfilehash: 288d7bfdf18be5cef032227c537032966fa68df4
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: 2a331b09709ffb6179f2e481baf4bf421d60ea99
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795697"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801534"
 ---
 # <a name="cordebugstepreason-enumeration"></a>Enumeração CorDebugStepReason
+
 Indica o resultado de uma etapa individual.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -40,7 +42,7 @@ typedef enum CorDebugStepReason {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`STEP_NORMAL`|A etapa foi concluída normalmente, dentro da mesma função.|  
 |`STEP_RETURN`|A depuração continua normalmente, depois que a função é retornada.|  
@@ -51,6 +53,7 @@ typedef enum CorDebugStepReason {
 |`STEP_EXIT`|O thread saiu antes da conclusão da etapa.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

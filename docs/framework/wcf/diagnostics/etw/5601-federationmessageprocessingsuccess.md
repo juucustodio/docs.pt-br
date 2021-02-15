@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 5601-FederationMessageProcessingSuccess'
 title: 5601 - FederationMessageProcessingSuccess
 ms.date: 03/30/2017
 ms.assetid: 767591c3-2674-4d7e-a61b-e76da3b159ae
-ms.openlocfilehash: 2fdfa11d9be34563850028722e0c967ac10207b1
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 1919d7b7a87d1a51713a49dd3af48a070c28527e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61767423"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99636033"
 ---
 # <a name="5601---federationmessageprocessingsuccess"></a>5601 - FederationMessageProcessingSuccess
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,9 +22,11 @@ ms.locfileid: "61767423"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando o processamento da mensagem de Federação foi bem-sucedida.  
+
+ Esse evento é emitido quando o processamento da mensagem de Federação foi bem-sucedido.  
   
 ## <a name="message"></a>Mensagem  
- Processamento de mensagens de Federação foi bem-sucedida.  
+
+ Processamento de mensagem de Federação bem-sucedido.  
   
 ## <a name="details"></a>Detalhes

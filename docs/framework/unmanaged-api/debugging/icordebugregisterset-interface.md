@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugRegisterSet'
 title: Interface ICorDebugRegisterSet
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: d3d9676d-0b87-4bc3-b679-7bbc7a186c88
 topic_type:
 - apiref
-ms.openlocfilehash: 7c60fa775b82372b50d1eb3891f107b97df3e73a
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 7d888e9e395e9f5fa88c6a6d96b2b8e3171ef4ac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378264"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99690776"
 ---
 # <a name="icordebugregisterset-interface"></a>Interface ICorDebugRegisterSet
+
 Representa o conjunto de registros disponíveis no computador que está executando o código no momento.  
   
 ## <a name="methods"></a>Métodos  
@@ -35,12 +37,14 @@ Representa o conjunto de registros disponíveis no computador que está executan
 |[Método SetThreadContext](icordebugregisterset-setthreadcontext-method.md)|Não implementado para o .NET Framework 2,0.|  
   
 ## <a name="remarks"></a>Comentários  
+
  A `ICorDebugRegisterSet` interface dá suporte apenas a registros de 32 bits. Use a interface [ICorDebugRegisterSet2](icordebugregisterset2-interface.md) em plataformas como IA-64 que exigem registros adicionais.  
   
 > [!NOTE]
 > Esta interface não dá suporte para chamada remota, seja entre computadores ou processos cruzados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -49,7 +53,7 @@ Representa o conjunto de registros disponíveis no computador que está executan
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Interface ICorDebugRegisterSet2](icordebugregisterset2-interface.md)

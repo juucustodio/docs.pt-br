@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ISymUnmanagedWriter3:: Commit'
 title: Método ISymUnmanagedWriter3::Commit
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: f6961922-46ec-4d2c-8369-85f880731f37
 topic_type:
 - apiref
-ms.openlocfilehash: 4331728a4766d81b723c439747e5e1181815394f
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 308f5d3a16cf60a0e77a581a318d6fd6c398b3f3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83614663"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761753"
 ---
 # <a name="isymunmanagedwriter3commit-method"></a>Método ISymUnmanagedWriter3::Commit
+
 Confirma as alterações gravadas até o fluxo.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -32,11 +34,13 @@ HRESULT Commit();
 ```  
   
 ## <a name="return-value"></a>Valor retornado  
+
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedWriter3](isymunmanagedwriter3-interface.md)

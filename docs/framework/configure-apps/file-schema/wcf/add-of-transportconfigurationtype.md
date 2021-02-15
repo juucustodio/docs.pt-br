@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <add> de <transportConfigurationType>'
 title: <add> de <transportConfigurationType>
 ms.date: 03/30/2017
 ms.assetid: 03d79db9-571d-4534-acef-d05e5467b257
-ms.openlocfilehash: adf4cd7f02db6535c5950443d09476a9a5ff63fb
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 4a4a68e1f70bcb2ec7d55d5d6c3b530e71ddc55d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70850312"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750007"
 ---
 # <a name="add-of-transportconfigurationtype"></a>\<add> de \<transportConfigurationType>
+
 Esse elemento é um par chave/valor, que identifica o tipo de um transporte específico.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -18,7 +20,7 @@ Esse elemento é um par chave/valor, que identifica o tipo de um transporte espe
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<transportConfigurationTypes>**](transportconfigurationtypes.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <serviceHostingEnvironment>
@@ -30,6 +32,7 @@ Esse elemento é um par chave/valor, que identifica o tipo de um transporte espe
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -40,6 +43,7 @@ Esse elemento é um par chave/valor, que identifica o tipo de um transporte espe
 |transportConfigurationType|Uma cadeia de caracteres que contém o tipo que implementa o transporte específico.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -59,9 +63,9 @@ Esse elemento é um par chave/valor, que identifica o tipo de um transporte espe
 </serviceHostingEnvironment>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.TransportConfigurationTypeElement>
 - <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>
 - <xref:System.ServiceModel.ServiceHostingEnvironment>
-- [Hosting](../../../wcf/feature-details/hosting.md)
+- [Hospedagem](../../../wcf/feature-details/hosting.md)

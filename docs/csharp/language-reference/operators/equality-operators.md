@@ -1,7 +1,7 @@
 ---
 title: Operadores de igualdade - Referência de C#
 description: Saiba mais sobre os operadores de comparação de igualdade C# e a igualdade do tipo C#.
-ms.date: 06/26/2019
+ms.date: 10/30/2020
 author: pkulikov
 f1_keywords:
 - ==_CSharpKeyword
@@ -15,12 +15,12 @@ helpviewer_keywords:
 - inequality operator [C#]
 - not equals operator [C#]
 - '!= operator [C#]'
-ms.openlocfilehash: 33215e2440b14fb888a6f0df5c220c891ebed0e2
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.openlocfilehash: 39461157c33fea0effb5c8808ded1c9981900e17
+ms.sourcegitcommit: b1442669f1982d3a1cb18ea35b5acfb0fc7d93e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88063088"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93063209"
 ---
 # <a name="equality-operators-c-reference"></a>Operadores de igualdade (Referência de C#)
 
@@ -47,11 +47,19 @@ Começando com C# 7.3, os operadores `==`, `!=`,  e  são compatíveis com as [t
 
 ### <a name="reference-types-equality"></a>Igualdade de tipos de referência
 
-Por padrão, dois operandos do tipo de referência são iguais quando se referem ao mesmo objeto:
+Por padrão, dois operandos de tipo de referência sem registro são iguais se se referirem ao mesmo objeto:
 
 [!code-csharp[reference type equality](snippets/shared/EqualityOperators.cs#ReferenceTypesEquality)]
 
 Como mostra o exemplo, os tipos de referência definidos pelo usuário dão suporte ao operador `==`, por padrão. No entanto, um tipo de referência pode sobrecarregar o operador `==`. Se um tipo de referência sobrecarregar o operador `==`, use o método <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType> para verificar se as duas referências desse tipo dizem respeito ao mesmo objeto.
+
+### <a name="record-types-equality"></a>Igualdade de tipos de registro
+
+Disponível em C# 9,0 e posterior, os [tipos de registro](../../whats-new/csharp-9.md#record-types) dão suporte aos `==` operadores e `!=` que, por padrão, fornecem semântica de igualdade de valor. Ou seja, dois operandos de registro são iguais quando ambos são `null` ou valores correspondentes de todos os campos e propriedades auto implementadas são iguais.
+
+:::code language="csharp" source="snippets/shared/EqualityOperators.cs" id="RecordTypesEquality":::
+
+Como mostra o exemplo anterior, no caso de membros de tipo de referência que não são de registro, seus valores de referência são comparados, não as instâncias referenciadas.
 
 ### <a name="string-equality"></a>Igualdade da cadeia de caracteres
 
@@ -85,9 +93,17 @@ O exemplo a seguir demonstra o uso do operador `!=`:
 
 Os tipos definidos pelo usuário podem [sobrecarregar](operator-overloading.md) os operadores `==` e `!=`. Se um tipo sobrecarrega um dos dois operadores, ele também deve sobrecarregar o outro.
 
+Um tipo de registro não pode sobrecarregar explicitamente os `==` `!=` operadores e. Se você precisar alterar o comportamento dos `==` `!=` operadores e para o tipo de registro `T` , implemente o <xref:System.IEquatable%601.Equals%2A?displayProperty=nameWithType> método com a assinatura a seguir:
+
+```csharp
+public virtual bool Equals(T? other);
+```
+
 ## <a name="c-language-specification"></a>Especificação da linguagem C#
 
 Para obter mais informações, consulte a seção [Operadores de teste de tipo e relacional](~/_csharplang/spec/expressions.md#relational-and-type-testing-operators) na [Especificação da linguagem C#](~/_csharplang/spec/introduction.md).
+
+Para obter mais informações sobre a igualdade de tipos de registro, consulte a seção [membros de igualdade](~/_csharplang/proposals/csharp-9.0/records.md#equality-members) da nota de proposta de [recurso de registros](~/_csharplang/proposals/csharp-9.0/records.md).
 
 ## <a name="see-also"></a>Consulte também
 

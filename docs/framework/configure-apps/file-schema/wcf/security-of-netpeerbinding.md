@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <security> de <netPeerBinding>'
 title: <security> de <netPeerBinding>
 ms.date: 03/30/2017
 ms.assetid: 1ef40d8c-f903-4426-9b08-da81462766d8
-ms.openlocfilehash: 3d1ac85073c44f683fe0c054737c5ec7ed1cbf52
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: f67cfa445a5a605b99783cfd67dd1bae6e17b51e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73738666"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786831"
 ---
 # <a name="security-of-netpeerbinding"></a>\<security> de \<netPeerBinding>
+
 Define as configurações de segurança do [\<netPeerTcpBinding>](netpeertcpbinding.md) , incluindo o tipo de autenticação usado e a segurança usada para o transporte de mensagens.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -19,7 +21,7 @@ Define as configurações de segurança do [\<netPeerTcpBinding>](netpeertcpbind
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<security>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <netPeerBinding>
@@ -32,6 +34,7 @@ Define as configurações de segurança do [\<netPeerTcpBinding>](netpeertcpbind
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai  
   
 ### <a name="attributes"></a>Atributos  
@@ -62,9 +65,10 @@ Define as configurações de segurança do [\<netPeerTcpBinding>](netpeertcpbind
 |[\<binding>](bindings.md)|Define todos os recursos de associação do [\<netPeerTcpBinding>](netpeertcpbinding.md) .|  
   
 ## <a name="remarks"></a>Comentários  
+
  A segurança pode ser específica de mensagens ou de transporte.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.PeerSecurityElement>
 - <xref:System.ServiceModel.NetPeerTcpBinding.Security%2A>

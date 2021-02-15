@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Método ImportFile'
 title: Método ImportFile
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: bcbe321f-b83a-4e9a-9f10-8d913e244dc9
 topic_type:
 - apiref
-ms.openlocfilehash: cda6d90865f8ad2b9d565f6a6378c35b03c65bf7
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 82c9c7de7cd739ee205dc3695ea651643d01ea3a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446997"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718155"
 ---
 # <a name="importfile-method"></a>Método ImportFile
+
 Importa assemblies e módulos desvinculados.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -38,6 +40,7 @@ HRESULT ImportFile(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pszFilename`  
  Nome totalmente qualificado do arquivo a ser importado.  
   
@@ -57,9 +60,11 @@ HRESULT ImportFile(
  Ponteiro para a contagem de arquivos e/ou escopos que foram importados.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  Retorna S_OK se o método tiver sucesso.  
   
-## <a name="requirements"></a>{1&gt;{2&gt;Requisitos&lt;2}&lt;1}  
+## <a name="requirements"></a>Requisitos  
+
  Requer ALink. h  
   
 ## <a name="see-also"></a>Consulte também

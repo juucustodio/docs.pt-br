@@ -1,7 +1,7 @@
 ---
+description: 'Saiba mais sobre: como implementar um componente que dá suporte ao padrão assíncrono baseado em evento'
 title: 'Como: Implementar um componente compatível com o padrão assíncrono baseado em evento'
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -9,23 +9,24 @@ helpviewer_keywords:
 - Event-based Asynchronous Pattern
 - ProgressChangedEventArgs class
 - BackgroundWorker component
-- events [.NET Framework], asynchronous
+- events [.NET], asynchronous
 - Asynchronous Pattern
 - AsyncOperationManager class
-- threading [.NET Framework], asynchronous features
-- components [.NET Framework], asynchronous
+- threading [.NET], asynchronous features
+- components [.NET], asynchronous
 - AsyncOperation class
 - threading [Windows Forms], asynchronous features
 - AsyncCompletedEventArgs class
 ms.assetid: 61f676b5-936f-40f6-83ce-f22805ec9c2f
-ms.openlocfilehash: d635135e58c2fd86897b06b20a6aa0c251335e70
-ms.sourcegitcommit: b78018c850590dfc0348301e1748b779c28604cc
+ms.openlocfilehash: ca25370bda7a1dd451ff9333fee546d4106914c0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89379116"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99714112"
 ---
 # <a name="how-to-implement-a-component-that-supports-the-event-based-asynchronous-pattern"></a>Como: Implementar um componente compatível com o padrão assíncrono baseado em evento
+
 Se você estiver escrevendo uma classe com algumas operações que possam causar atrasos notáveis, considere a opção de fornecer funcionalidade assíncrona Implementando a [visão geral de padrão assíncrono baseado em evento](event-based-asynchronous-pattern-overview.md).  
   
  Este passo a passo ilustra como criar um componente que implemente o Padrão Assíncrono Baseado em Evento. Ele é implementado usando classes auxiliares do namespace <xref:System.ComponentModel?displayProperty=nameWithType>, o que garante que o componente funcione corretamente em qualquer modelo de aplicativo, incluindo ASP.NET, aplicativos do Windows Forms e aplicativos de Console. Esse componente também é projetável com um controle <xref:System.Windows.Forms.PropertyGrid> e seus próprios designers personalizados.  
@@ -51,6 +52,7 @@ Se você estiver escrevendo uma classe com algumas operações que possam causar
  Para copiar o código deste tópico como uma única lista, confira [Como implementar um cliente do Padrão assíncrono baseado em evento](how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md).  
   
 ## <a name="creating-the-component"></a>Criando o componente  
+
  A primeira etapa é criar o componente que implementará o Padrão Assíncrono Baseado em Evento.  
   
 ### <a name="to-create-the-component"></a>Para criar o componente  
@@ -58,6 +60,7 @@ Se você estiver escrevendo uma classe com algumas operações que possam causar
 - Criar uma classe chamada `PrimeNumberCalculator` que herda de <xref:System.ComponentModel.Component>.  
   
 ## <a name="defining-public-asynchronous-events-and-delegates"></a>Definir representantes e eventos assíncronos públicos  
+
  O componente se comunica com clientes usando eventos. O evento _MethodName_**Completed** alerta os clientes da conclusão de uma tarefa assíncrona, e o evento _MethodName_**ProgressChanged** informa os clientes do progresso de uma tarefa assíncrona.  
   
 ### <a name="to-define-asynchronous-events-for-clients-of-your-component"></a>Para definir eventos assíncronos para clientes do componente:  
@@ -83,6 +86,7 @@ Se você estiver escrevendo uma classe com algumas operações que possam causar
      [!code-vb[System.ComponentModel.AsyncOperationManager#6](snippets/component-that-supports-the-event-based-asynchronous-pattern/vb/primenumbercalculatormain.vb#6)]  
   
 ## <a name="checkpoint"></a>Ponto de verificação  
+
  Neste ponto, você pode compilar o componente.  
   
 ### <a name="to-test-your-component"></a>Para testar o componente  
@@ -99,6 +103,7 @@ Se você estiver escrevendo uma classe com algumas operações que possam causar
      Esses avisos serão removidos na próxima seção.  
   
 ## <a name="defining-private-delegates"></a>Definir representantes privados  
+
  Os aspectos assíncronos do componente `PrimeNumberCalculator` são implementados internamente com um representante especial conhecido como <xref:System.Threading.SendOrPostCallback>. Um <xref:System.Threading.SendOrPostCallback> representa um método de retorno de chamada que é executado em um thread <xref:System.Threading.ThreadPool>. O método de retorno de chamada deve ter uma assinatura que use um único parâmetro do tipo <xref:System.Object>, o que significa que você precisará passar o estado entre representantes em uma classe wrapper. Para obter mais informações, consulte <xref:System.Threading.SendOrPostCallback>.  
   
 ### <a name="to-implement-your-components-internal-asynchronous-behavior"></a>Para implementar o comportamento assíncrono interno do componente:  
@@ -130,6 +135,7 @@ Se você estiver escrevendo uma classe com algumas operações que possam causar
      [!code-vb[System.ComponentModel.AsyncOperationManager#23](snippets/component-that-supports-the-event-based-asynchronous-pattern/vb/primenumbercalculatormain.vb#23)]  
   
 ## <a name="implementing-public-events"></a>Implementar eventos públicos  
+
  Os componentes que implementam o Padrão Assíncrono baseado em Evento se comunicam com clientes usando os eventos. Esses eventos são invocados no thread adequado com a ajuda da classe <xref:System.ComponentModel.AsyncOperation>.  
   
 ### <a name="to-raise-events-to-your-components-clients"></a>Para gerar eventos para clientes do componente:  
@@ -140,6 +146,7 @@ Se você estiver escrevendo uma classe com algumas operações que possam causar
      [!code-vb[System.ComponentModel.AsyncOperationManager#24](snippets/component-that-supports-the-event-based-asynchronous-pattern/vb/primenumbercalculatormain.vb#24)]  
   
 ## <a name="implementing-the-completion-method"></a>Implementar o método de conclusão  
+
  O representante de conclusão é o método que o comportamento assíncrono subjacente independente de thread chamará quando a operação assíncrona terminar como bem-sucedida, com erro ou cancelamento. Essa chamada ocorre em um thread arbitrário.  
   
  Esse método é onde a ID da tarefa do cliente é removida da coleção interna de tokens de cliente exclusivos. Esse método também termina o tempo de vida de determinada operação assíncrona chamando o método <xref:System.ComponentModel.AsyncOperation.PostOperationCompleted%2A> no <xref:System.ComponentModel.AsyncOperation> correspondente. Essa chamada gera o evento de conclusão no thread que é apropriado para o modelo de aplicativo. Após o método <xref:System.ComponentModel.AsyncOperation.PostOperationCompleted%2A> ser chamado, essa instância do <xref:System.ComponentModel.AsyncOperation> não pode mais ser usada, e quaisquer tentativas subsequentes de usá-lo gerarão uma exceção.  
@@ -154,6 +161,7 @@ Se você estiver escrevendo uma classe com algumas operações que possam causar
      [!code-vb[System.ComponentModel.AsyncOperationManager#26](snippets/component-that-supports-the-event-based-asynchronous-pattern/vb/primenumbercalculatormain.vb#26)]  
   
 ## <a name="checkpoint"></a>Ponto de verificação  
+
  Neste ponto, você pode compilar o componente.  
   
 ### <a name="to-test-your-component"></a>Para testar o componente  
@@ -169,6 +177,7 @@ Se você estiver escrevendo uma classe com algumas operações que possam causar
      Esse aviso será resolvido na próxima seção.  
   
 ## <a name="implementing-the-worker-methods"></a>Implementar os métodos de trabalhador  
+
  Até agora, você implementou o código de suporte assíncrono para o componente `PrimeNumberCalculator`. Agora você pode implementar o código que faz o trabalho real. Você implementará os três métodos: `CalculateWorker`, `BuildPrimeNumberList` e `IsPrime`. Juntos, `BuildPrimeNumberList` e `IsPrime` compõem um algoritmo bem conhecido chamado Sieve de Eratosthenes, que determina se um número é primo localizando todos os números primos até a raiz quadrada do número de teste. Se nenhum divisor for encontrado até esse ponto, o número de teste será primo.  
   
  Se esse componente fosse desenvolvido para máxima eficiência, se lembraria de todos os números primos descobertos por várias invocações de diferentes números de teste. Também deve verificar se há divisores triviais como 2, 3 e 5. A intenção desse exemplo é demonstrar como operações demoradas podem ser executadas de forma assíncrona, no entanto. Assim, essas otimizações são deixadas como um exercício para você.  
@@ -208,6 +217,7 @@ Se você estiver escrevendo uma classe com algumas operações que possam causar
      [!code-vb[System.ComponentModel.AsyncOperationManager#29](snippets/component-that-supports-the-event-based-asynchronous-pattern/vb/primenumbercalculatormain.vb#29)]  
   
 ## <a name="checkpoint"></a>Ponto de verificação  
+
  Neste ponto, você pode compilar o componente.  
   
 ### <a name="to-test-your-component"></a>Para testar o componente  
@@ -217,6 +227,7 @@ Se você estiver escrevendo uma classe com algumas operações que possam causar
      Tudo o que resta a serem gravado são os métodos para iniciar e cancelar operações assíncronas, `CalculatePrimeAsync` e `CancelAsync`.  
   
 ## <a name="implementing-the-start-and-cancel-methods"></a>Implementar os métodos Iniciar e Cancelar  
+
  Você inicia o método de trabalho em seu próprio thread chamando `BeginInvoke` no representante que o encapsula. Para gerenciar o tempo de vida de determinada operação assíncrona, você deve chamar o método <xref:System.ComponentModel.AsyncOperationManager.CreateOperation%2A> na classe auxiliar <xref:System.ComponentModel.AsyncOperationManager>. Isso retorna um <xref:System.ComponentModel.AsyncOperation>, que realiza marshaling de chamadas nos manipuladores de eventos do cliente para o contexto ou thread adequado.  
   
  Você cancela determinada operação pendente chamando <xref:System.ComponentModel.AsyncOperation.PostOperationCompleted%2A> em seu <xref:System.ComponentModel.AsyncOperation> correspondente. Isso encerra a operação, e qualquer chamada subsequente para seu <xref:System.ComponentModel.AsyncOperation> gerará uma exceção.  
@@ -234,6 +245,7 @@ Se você estiver escrevendo uma classe com algumas operações que possam causar
      [!code-vb[System.ComponentModel.AsyncOperationManager#4](snippets/component-that-supports-the-event-based-asynchronous-pattern/vb/primenumbercalculatormain.vb#4)]  
   
 ## <a name="checkpoint"></a>Ponto de verificação  
+
  Neste ponto, você pode compilar o componente.  
   
 ### <a name="to-test-your-component"></a>Para testar o componente  
@@ -245,14 +257,15 @@ Se você estiver escrevendo uma classe com algumas operações que possam causar
  Para um cliente de exemplo que usa o componente `PrimeNumberCalculator`, confira [Como implementar um cliente do padrão assíncrono baseado em evento](how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md).  
   
 ## <a name="next-steps"></a>Próximas etapas  
+
  Você pode preencher este exemplo escrevendo `CalculatePrime`, o equivalente síncrono do método `CalculatePrimeAsync`. Isso tornará o componente `PrimeNumberCalculator` totalmente compatível com o Padrão Assíncrono baseado em Evento.  
   
  Você pode melhorar este exemplo mantendo a lista de todos os números primos descoberto por várias invocações de diferentes números de teste. Usando essa abordagem, cada tarefa se beneficiará do trabalho realizado por tarefas anteriores. Tenha cuidado para proteger essa lista com regiões `lock`, para que o acesso à lista por threads diferentes seja serializado.  
   
  Você também pode melhorar este exemplo testando divisores triviais, como 2, 3 e 5.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Como: Executar uma operação em segundo plano](../../framework/winforms/controls/how-to-run-an-operation-in-the-background.md)
+- [Como: Executar uma operação em segundo plano](/dotnet/desktop/winforms/controls/how-to-run-an-operation-in-the-background)
 - [Visão geral do padrão assíncrono baseado em evento](event-based-asynchronous-pattern-overview.md)
 - [Padrão assíncrono baseado em evento (EAP)](event-based-asynchronous-pattern-eap.md)

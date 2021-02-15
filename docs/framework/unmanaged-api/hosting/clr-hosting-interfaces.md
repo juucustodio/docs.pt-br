@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interfaces de hospedagem CLR'
 title: Interfaces de hospedagem CLR
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,19 +7,21 @@ helpviewer_keywords:
 - hosting interfaces [.NET Framework], version 2.0
 - .NET Framework 2.0, hosting interfaces
 ms.assetid: 703b8381-43db-4a4d-9faa-cca39302d922
-ms.openlocfilehash: e6913e18a4ff6e616f357a4ef43fb8b892264943
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: f42a74698607ffbed4a981f061d13ea4e9d634d8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616834"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799896"
 ---
 # <a name="clr-hosting-interfaces"></a>Interfaces de hospedagem CLR
+
 Esta seção descreve as interfaces que os hosts não gerenciados podem usar para integrar o Common Language Runtime (CLR) em seus aplicativos. As informações referem-se à .NET Framework versão 2,0 e versões posteriores. Essas interfaces permitem que o host controle muitos outros aspectos do tempo de execução do que era possível nas versões 1,0 e 1,1 e fornece uma integração muito mais rígida entre o CLR e o modelo de execução do host.  
   
  No .NET Framework versão 1,0 e 1,1, o modelo de hospedagem habilitou um host não gerenciado para carregar o CLR em um processo, para definir determinadas configurações e para receber notificações de eventos. No entanto, em geral, o host e o CLR eram executados de forma independente nesse processo. No .NET Framework versão 2,0 e versões posteriores, novas camadas de abstração permitem que o host forneça muitos dos recursos fornecidos atualmente pelos tipos no assembly do Win32 e estenda o conjunto de recursos que o host pode configurar.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Interface IActionOnCLREvent](iactiononclrevent-interface.md)  
  Fornece um método que executa um retorno de chamada para um evento registrado.  
   
@@ -185,8 +188,9 @@ Esta seção descreve as interfaces que os hosts não gerenciados podem usar par
  Fornece métodos para validar imagens executáveis portáteis (PE) e relatar erros de validação.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
+
  [Interfaces e coclasse de hospedagem CLR reprovadas](deprecated-clr-hosting-interfaces-and-coclasses.md)  
  Contém tópicos que descrevem as interfaces de hospedagem fornecidas no .NET Framework versão 1,0 e 1,1.  
   
- [Interfaces de hospedagem CLR adicionadas ao .NET Framework 4 e 4.5](clr-hosting-interfaces-added-in-the-net-framework-4-and-4-5.md)  
+ [Interfaces de hospedagem CLR adicionadas no .NET Framework 4 e 4.5](clr-hosting-interfaces-added-in-the-net-framework-4-and-4-5.md)  
  Contém tópicos que descrevem as interfaces de hospedagem fornecidas no .NET Framework 4.

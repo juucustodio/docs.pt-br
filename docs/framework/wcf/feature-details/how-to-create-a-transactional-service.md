@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: como criar um serviço transacional'
 title: 'Como: criar um serviço transacional'
 ms.date: 03/30/2017
 ms.assetid: 1bd2e4ed-a557-43f9-ba98-4c70cb75c154
-ms.openlocfilehash: be364e7638394a30c199b05dd15ef4c44e18e688
-ms.sourcegitcommit: 68653db98c5ea7744fd438710248935f70020dfb
+ms.openlocfilehash: 78ad922a7e1f174715be7bd1a8466572425411be
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69964012"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643430"
 ---
 # <a name="how-to-create-a-transactional-service"></a>Como: criar um serviço transacional
+
 Este exemplo demonstra vários aspectos da criação de um serviço transacional e o uso de uma transação iniciada pelo cliente para coordenar operações de serviço.  
   
 ### <a name="creating-a-transactional-service"></a>Criando um serviço transacional  
@@ -31,7 +33,7 @@ Este exemplo demonstra vários aspectos da criação de um serviço transacional
     }  
     ```  
   
-2. Crie uma classe de implementação e use o <xref:System.ServiceModel.ServiceBehaviorAttribute> para especificar opcionalmente um <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionIsolationLevel%2A> e um <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionTimeout%2A>. Você deve observar que, em muitos casos, o <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionTimeout%2A> padrão de 60 segundos e o <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionIsolationLevel%2A> `Unspecified` padrão são apropriados. Para cada operação, você pode usar o <xref:System.ServiceModel.OperationBehaviorAttribute> atributo para especificar se o trabalho executado dentro do método deve ocorrer dentro do escopo de um escopo de transação de acordo com o <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> valor do atributo. Nesse caso, a transação usada para o `Add` método é a mesma que a transação de entrada obrigatória que está fluindo do cliente e a transação usada para o `Subtract` método é a mesma que a transação de entrada, caso um tenha sido transmitido do cliente ou uma nova transação criada implicitamente e localmente.  
+2. Crie uma classe de implementação e use o <xref:System.ServiceModel.ServiceBehaviorAttribute> para especificar opcionalmente um <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionIsolationLevel%2A> e um <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionTimeout%2A> . Você deve observar que, em muitos casos, o padrão <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionTimeout%2A> de 60 segundos e o <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionIsolationLevel%2A> padrão `Unspecified` são apropriados. Para cada operação, você pode usar o <xref:System.ServiceModel.OperationBehaviorAttribute> atributo para especificar se o trabalho executado dentro do método deve ocorrer dentro do escopo de um escopo de transação de acordo com o valor do <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> atributo. Nesse caso, a transação usada para o `Add` método é a mesma que a transação de entrada obrigatória que está fluindo do cliente e a transação usada para o `Subtract` método é a mesma que a transação de entrada, caso um tenha sido transmitido do cliente ou uma nova transação criada implicitamente e localmente.  
   
     ```csharp
     [ServiceBehavior(  
@@ -65,7 +67,7 @@ Este exemplo demonstra vários aspectos da criação de um serviço transacional
     }  
     ```  
   
-3. Configure as associações no arquivo de configuração, especificando que o contexto de transação deve ser fluído e os protocolos a serem usados para fazer isso. Para obter mais informações, consulte [configuração de transação de ServiceModel](servicemodel-transaction-configuration.md). Especificamente, o tipo de associação é especificado no atributo do elemento `binding` do ponto de extremidade. `bindingConfiguration` O [ \<elemento Endpoint >](../../configure-apps/file-schema/wcf/endpoint-element.md) contém um atributo que faz referência a uma configuração `transactionalOleTransactionsTcpBinding`de associação denominada, conforme mostrado na seguinte configuração de exemplo.  
+3. Configure as associações no arquivo de configuração, especificando que o contexto de transação deve ser fluído e os protocolos a serem usados para fazer isso. Para obter mais informações, consulte [configuração de transação de ServiceModel](servicemodel-transaction-configuration.md). Especificamente, o tipo de associação é especificado no atributo do elemento do ponto de extremidade `binding` . O [\<endpoint>](../../configure-apps/file-schema/wcf/endpoint-element.md) elemento contém um `bindingConfiguration` atributo que faz referência a uma configuração de associação denominada `transactionalOleTransactionsTcpBinding` , conforme mostrado na seguinte configuração de exemplo.  
   
     ```xml  
     <service name="CalculatorService">  
@@ -77,7 +79,7 @@ Este exemplo demonstra vários aspectos da criação de um serviço transacional
     </service>  
     ```  
   
-     O fluxo de transações é habilitado no nível de configuração usando `transactionFlow` o atributo, e o protocolo de transação é especificado `transactionProtocol` usando o atributo, conforme mostrado na configuração a seguir.  
+     O fluxo de transações é habilitado no nível de configuração usando o `transactionFlow` atributo, e o protocolo de transação é especificado usando o `transactionProtocol` atributo, conforme mostrado na configuração a seguir.  
   
     ```xml  
     <bindings>  
@@ -108,7 +110,7 @@ Este exemplo demonstra vários aspectos da criação de um serviço transacional
     </service>  
     ```  
   
-     O protocolo de transação é especificado usando `transactionProtocol` o atributo. No entanto, esse atributo está ausente do fornecido `wsHttpBinding`pelo sistema, pois essa associação só pode usar o protocolo WS-AT.  
+     O protocolo de transação é especificado usando o `transactionProtocol` atributo. No entanto, esse atributo está ausente do fornecido pelo sistema `wsHttpBinding` , pois essa associação só pode usar o protocolo WS-AT.  
   
     ```xml  
     <bindings>  
@@ -126,7 +128,7 @@ Este exemplo demonstra vários aspectos da criação de um serviço transacional
   
 ### <a name="controlling-the-completion-of-a-transaction"></a>Controlando a conclusão de uma transação  
   
-1. Por padrão, as operações do WCF automaticamente concluem transações se nenhuma exceção sem tratamento for lançada. Você pode modificar esse comportamento usando a <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> Propriedade e o <xref:System.ServiceModel.OperationContext.SetTransactionComplete%2A> método. Quando uma operação é necessária para ocorrer na mesma transação que outra operação (por exemplo, uma operação de débito e crédito), você pode desabilitar o comportamento de preenchimento automático definindo a <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> `false` Propriedade como, conforme mostrado no seguinte `Debit` exemplo de operação. A transação usada `Debit` pela operação não é concluída até que um método com <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> a propriedade definida `true` seja chamado, como mostrado na operação `Credit1`, ou quando o <xref:System.ServiceModel.OperationContext.SetTransactionComplete%2A> método é chamado para marcar explicitamente o transação como concluída, conforme mostrado na operação `Credit2`. Observe que as duas operações de crédito são mostradas para fins de ilustração e que uma única operação de crédito seria mais típica.  
+1. Por padrão, as operações do WCF automaticamente concluem transações se nenhuma exceção sem tratamento for lançada. Você pode modificar esse comportamento usando a <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> propriedade e o <xref:System.ServiceModel.OperationContext.SetTransactionComplete%2A> método. Quando uma operação é necessária para ocorrer na mesma transação que outra operação (por exemplo, uma operação de débito e crédito), você pode desabilitar o comportamento de preenchimento automático definindo a <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> propriedade `false` como, conforme mostrado no exemplo de operação a seguir `Debit` . A transação `Debit` usada pela operação não é concluída até que um método com a <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> propriedade definida `true` seja chamado, conforme mostrado na operação `Credit1` , ou quando o <xref:System.ServiceModel.OperationContext.SetTransactionComplete%2A> método é chamado para marcar explicitamente a transação como concluída, conforme mostrado na operação `Credit2` . Observe que as duas operações de crédito são mostradas para fins de ilustração e que uma única operação de crédito seria mais típica.  
   
     ```csharp
     [ServiceBehavior]  
@@ -162,7 +164,7 @@ Este exemplo demonstra vários aspectos da criação de um serviço transacional
     }  
     ```  
   
-2. Para fins de correlação de transações, definir a <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> Propriedade como `false` requer o uso de uma associação de sessão. Esse requisito é especificado com a `SessionMode` propriedade <xref:System.ServiceModel.ServiceContractAttribute>no.  
+2. Para fins de correlação de transações, definir a <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete%2A> propriedade como `false` requer o uso de uma associação de sessão. Esse requisito é especificado com a `SessionMode` propriedade no <xref:System.ServiceModel.ServiceContractAttribute> .  
   
     ```csharp
     [ServiceContract(SessionMode = SessionMode.Required)]  
@@ -182,7 +184,7 @@ Este exemplo demonstra vários aspectos da criação de um serviço transacional
   
 ### <a name="controlling-the-lifetime-of-a-transactional-service-instance"></a>Controlando o tempo de vida de uma instância de serviço transacional  
   
-1. O WCF usa <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> a propriedade para especificar se a instância de serviço subjacente é liberada quando uma transação é concluída. Como esse padrão é `true`, a menos que configurado de outra forma, o WCF exibe um comportamento de ativação "Just-in-time" eficiente e previsível. As chamadas para um serviço em uma transação subsequente são garantidas como uma nova instância de serviço sem vestígios do estado da transação anterior. Embora isso seja geralmente útil, às vezes você pode desejar manter o estado dentro da instância do serviço além da conclusão da transação. Exemplos disso seriam quando o estado ou os identificadores necessários para os recursos forem caros de recuperar ou reconstituir. Você pode fazer isso definindo a <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> Propriedade como. `false` Com essa configuração, a instância e qualquer estado associado estarão disponíveis em chamadas subsequentes. Ao usar isso, dê uma consideração cuidadosa sobre quando e como o estado e as transações serão limpos e concluídos. O exemplo a seguir demonstra como fazer isso mantendo a instância com a `runningTotal` variável.  
+1. O WCF usa a <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> propriedade para especificar se a instância de serviço subjacente é liberada quando uma transação é concluída. Como esse padrão é `true` , a menos que configurado de outra forma, o WCF exibe um comportamento de ativação "Just-in-time" eficiente e previsível. As chamadas para um serviço em uma transação subsequente são garantidas como uma nova instância de serviço sem vestígios do estado da transação anterior. Embora isso seja geralmente útil, às vezes você pode desejar manter o estado dentro da instância do serviço além da conclusão da transação. Exemplos disso seriam quando o estado ou os identificadores necessários para os recursos forem caros de recuperar ou reconstituir. Você pode fazer isso definindo a <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> propriedade como `false` . Com essa configuração, a instância e qualquer estado associado estarão disponíveis em chamadas subsequentes. Ao usar isso, dê uma consideração cuidadosa sobre quando e como o estado e as transações serão limpos e concluídos. O exemplo a seguir demonstra como fazer isso mantendo a instância com a `runningTotal` variável.  
   
     ```csharp
     [ServiceBehavior(TransactionIsolationLevel = [ServiceBehavior(  
@@ -217,4 +219,4 @@ Este exemplo demonstra vários aspectos da criação de um serviço transacional
     ```  
   
     > [!NOTE]
-    > Como o tempo de vida da instância é um comportamento que é interno ao serviço e controlado por <xref:System.ServiceModel.ServiceBehaviorAttribute> meio da propriedade, nenhuma modificação na configuração do serviço ou no contrato de serviço é necessária para definir o comportamento da instância. Além disso, a transmissão não conterá nenhuma representação.
+    > Como o tempo de vida da instância é um comportamento que é interno ao serviço e controlado por meio da <xref:System.ServiceModel.ServiceBehaviorAttribute> propriedade, nenhuma modificação na configuração do serviço ou no contrato de serviço é necessária para definir o comportamento da instância. Além disso, a transmissão não conterá nenhuma representação.

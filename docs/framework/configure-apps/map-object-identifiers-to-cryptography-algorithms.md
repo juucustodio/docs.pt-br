@@ -9,14 +9,15 @@ helpviewer_keywords:
 - mapping object identifiers
 - cryptography, mapping object identifiers
 ms.assetid: c9673f81-bf9e-47fd-bc6f-6bc1c1c4c15e
-ms.openlocfilehash: e22510014071455b83ba28cd82690b5ecdce9bc9
-ms.sourcegitcommit: 6219b1e1feccb16d88656444210fed3297f5611e
+ms.openlocfilehash: 5416ddbb766dfde56fa28a3853ed448cc73f25a2
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85141998"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91189377"
 ---
 # <a name="mapping-object-identifiers-to-cryptography-algorithms"></a>Mapeando identificadores de objeto para algoritmos de criptografia
+
 As assinaturas digitais garantem que os dados não sejam adulterados quando enviados de um programa para outro. Normalmente, a assinatura digital é computada aplicando uma função matemática ao hash dos dados a serem assinados. Ao Formatar um valor de hash a ser assinado, alguns algoritmos de assinatura digital acrescentam um OID (identificador de objeto) de ASN. 1 como parte da operação de formatação. O OID identifica o algoritmo que foi usado para calcular o hash. Você pode mapear algoritmos para identificadores de objeto para estender o mecanismo de criptografia para usar algoritmos personalizados. O exemplo a seguir mostra como mapear um identificador de objeto para um novo algoritmo de hash.  
   
 ```xml  
@@ -44,4 +45,4 @@ As assinaturas digitais garantem que os dados não sejam adulterados quando envi
 ## <a name="see-also"></a>Veja também
 
 - [Configurando classes de criptografia](configure-cryptography-classes.md)
-- [Serviços de Criptografia](../../standard/security/cryptographic-services.md)
+- [Serviços criptográficos](../../standard/security/cryptographic-services.md)

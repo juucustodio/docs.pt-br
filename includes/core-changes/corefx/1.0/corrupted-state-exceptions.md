@@ -1,16 +1,16 @@
 ---
 ms.openlocfilehash: 394f2daebad7b6af94bee4d7876796e87fe8ab19
-ms.sourcegitcommit: 8b02d42f93adda304246a47f49f6449fc74a3af4
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82135614"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96031953"
 ---
 ### <a name="handling-corrupted-state-exceptions-is-not-supported"></a>Não há suporte para a manipulação de exceções de estado corrompidas
 
 Não há suporte para a manipulação de exceções de estado de processo corrompido no .NET Core.
 
-#### <a name="change-description"></a>Descrição da alteração
+#### <a name="change-description"></a>Descrição das alterações
 
 Anteriormente, as exceções de estado de processo corrompido poderiam ser detectadas e manipuladas por manipuladores de exceção de código gerenciado, por exemplo, usando uma instrução [try-catch](../../../../docs/csharp/language-reference/keywords/try-catch.md) em C#.
 

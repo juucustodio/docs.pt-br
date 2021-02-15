@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <persistableType>'
 title: <persistableType>
 ms.date: 03/30/2017
 ms.assetid: e5425fe6-523a-4076-aab4-2c2515b1d830
-ms.openlocfilehash: 328caaefe0cc24da45b460cab0a672dc8a6ccce1
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: eadbb951d751dd88ce974edc8d5b343a1469b758
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70855076"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683626"
 ---
 # \<persistableType>
+
 Especifica todos os tipos persistentes.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -19,7 +21,7 @@ Especifica todos os tipos persistentes.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<persistableTypes>**](persistabletypes.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<persistableType>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <comContracts>
@@ -33,10 +35,12 @@ Especifica todos os tipos persistentes.
 </comContracts>
 ```  
   
-## <a name="type"></a>Type  
+## <a name="type"></a>Tipo  
+
  `Type`  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -47,6 +51,7 @@ Especifica todos os tipos persistentes.
 |name|Um atributo opcional que contém uma cadeia de caracteres que especifica o nome do tipo persistente.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -55,10 +60,10 @@ Especifica todos os tipos persistentes.
 |-------------|-----------------|  
 |[\<persistableTypes>](persistabletypes.md)|Uma coleção de elementos `persistableType`.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.ComPersistableTypeElementCollection>
 - <xref:System.ServiceModel.Configuration.ComPersistableTypeElement>
 - [\<comContracts>](comcontracts.md)
 - [Integração com aplicativos COM+](../../../wcf/feature-details/integrating-with-com-plus-applications.md)
-- [Como configurar configurações de serviço de COM+](../../../wcf/feature-details/how-to-configure-com-service-settings.md)
+- [Como: definir configurações de serviço de COM+](../../../wcf/feature-details/how-to-configure-com-service-settings.md)

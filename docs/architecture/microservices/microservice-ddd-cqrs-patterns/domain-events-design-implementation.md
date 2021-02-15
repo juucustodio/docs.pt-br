@@ -2,12 +2,12 @@
 title: Eventos de domínio. design e implementação
 description: Arquitetura de Microsserviços .NET para aplicativos .NET em contêineres | Obtenha uma visão detalhada dos eventos de domínio, um conceito fundamental para estabelecer a comunicação entre agregações.
 ms.date: 10/08/2018
-ms.openlocfilehash: 0cc2072408e110d94b47bd47a9c337a604d4c1a3
-ms.sourcegitcommit: e0803b8975d3eb12e735a5d07637020dd6dac5ef
+ms.openlocfilehash: 651d9cb98444c0729b97f523cc3d688f0f8d51d5
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89271770"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91173361"
 ---
 # <a name="domain-events-design-and-implementation"></a>Eventos de domínio: design e implementação
 
@@ -132,7 +132,7 @@ A próxima pergunta é: como acionar um evento de domínio para que ele alcance 
 
 Udi Dahan originalmente propôs (em várias postagens relacionadas, como, [Domain Events – Take 2 (Eventos de domínio – tomada 2)](https://udidahan.com/2008/08/25/domain-events-take-2/)) o uso de uma classe estática para gerenciar e acionar eventos. Isso incluiria uma classe estática chamada DomainEvents, que geraria eventos de domínio assim que fosse chamada, usando uma sintaxe como: `DomainEvents.Raise(Event myEvent)`. Jimmy Bogard escreveu uma postagem no blog ([Strengthening your domain: Domain Events (Fortalecendo seu domínio: eventos de domínio)](https://lostechies.com/jimmybogard/2010/04/08/strengthening-your-domain-domain-events/)) que recomenda uma abordagem semelhante.
 
-No entanto, quando a classe dos eventos de domínio é estática, ela também faz a expedição imediata aos manipuladores. Isso torna o teste e a depuração mais difíceis, pois os manipuladores de eventos com a lógica de efeitos colaterais são executados imediatamente após o evento ser acionado. Ao testar e depurar, você quer se concentrar somente no que está acontecendo nas classes de agregação atuais; você não deseja ser redirecionado repentinamente para outros manipuladores de eventos de efeitos colaterais relacionados a outras agregações ou lógica de aplicativo. É por isso as outras abordagens evoluíram, conforme explicado na próxima seção.
+No entanto, quando a classe dos eventos de domínio é estática, ela também faz a expedição imediata aos manipuladores. Isso torna o teste e a depuração mais difíceis, pois os manipuladores de eventos com a lógica de efeitos colaterais são executados imediatamente após o evento ser acionado. Quando você estiver testando e Depurando, você só deseja se concentrar no que está acontecendo nas classes de agregação atuais; Você não deseja, de repente, ser redirecionado para outros manipuladores de eventos para efeitos colaterais relacionados a outras agregações ou lógica do aplicativo. É por isso as outras abordagens evoluíram, conforme explicado na próxima seção.
 
 #### <a name="the-deferred-approach-to-raise-and-dispatch-events"></a>A abordagem adiada para acionar e despacho de eventos
 
@@ -342,7 +342,7 @@ Por fim, é importante mencionar que, às vezes, convém propagar eventos entre 
 
 Conforme mencionado, use eventos de domínio para implementar explicitamente os efeitos colaterais de alterações em seu domínio. Para usar a terminologia DDD, use eventos de domínio para implementar explicitamente efeitos colaterais entre uma ou várias agregações. Além disso e para melhor escalabilidade e menor impacto em bloqueios de banco de dados, use consistência eventual entre agregações dentro do mesmo domínio.
 
-O aplicativo de referência usa [mediador](https://github.com/jbogard/MediatR) para propagar eventos de domínio de forma síncrona entre agregações em uma única transação. No entanto, você também pode usar alguma implementação de AMQP como [RabbitMQ](https://www.rabbitmq.com/) ou [barramento de serviço do Azure](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview) para propagar eventos de domínio de forma assíncrona, usando a consistência eventual, mas, como mencionado acima, você precisa considerar a necessidade de ações de compensação em caso de falhas.
+O aplicativo de referência usa [mediador](https://github.com/jbogard/MediatR) para propagar eventos de domínio de forma síncrona entre agregações em uma única transação. No entanto, você também pode usar alguma implementação de AMQP como [RabbitMQ](https://www.rabbitmq.com/) ou [barramento de serviço do Azure](/azure/service-bus-messaging/service-bus-messaging-overview) para propagar eventos de domínio de forma assíncrona, usando a consistência eventual, mas, como mencionado acima, você precisa considerar a necessidade de ações de compensação em caso de falhas.
 
 ## <a name="additional-resources"></a>Recursos adicionais
 

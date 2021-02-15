@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: referência de linguagem de Entity SQL'
 title: Referência de linguagem de Entity SQL
 ms.date: 03/30/2017
 ms.assetid: bb07282c-161d-47e8-856d-b2374ba18181
-ms.openlocfilehash: 310e3d69887c02055983c00f1545582e06d4bc2e
-ms.sourcegitcommit: 7088f87e9a7da144266135f4b2397e611cf0a228
+ms.openlocfilehash: 6929f2d4ea743dfb5b68608ab7024db7dc1630f5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75900757"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99748577"
 ---
 # <a name="entity-sql-language-reference"></a>Referência de linguagem de Entity SQL
 
@@ -16,16 +17,16 @@ Esta seção fornece a documentação detalhada LINQ to Entities, Entity SQL e a
 ## <a name="in-this-section"></a>Nesta seção
   
 - [LINQ to Entities](linq-to-entities.md)
-- [Entity SQL Language](entity-sql-language.md) (Linguagem SQL de entidade)
-- [Canonical Functions](canonical-functions.md) (Funções canônicas)
+- [Linguagem Entity SQL](entity-sql-language.md)
+- [Funções canônicas](canonical-functions.md)
 
 ## <a name="related-sections"></a>Seções relacionadas
 
-- [Ferramentas de Modelo de Dados de Entidade de ADO.NET](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))  
+- [Ferramentas de Modelo de Dados de Entidade de ADO.NET](/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
-- [Entity Framework do ADO.NET](../index.md)
+- [ADO.NET Entity Framework](../index.md)
 - [Introdução](../getting-started.md)
-- [Amostras](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738547(v=vs.100))
-- [CSDL, SSDL, and MSL Specifications](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec) (Especificações CSDL, SSDL e MSL)
+- [Amostras](/previous-versions/dotnet/netframework-4.0/bb738547(v=vs.100))
+- [Especificações de CSDL, SSDL e MSL](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec)

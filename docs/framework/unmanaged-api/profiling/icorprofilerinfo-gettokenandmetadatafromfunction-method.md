@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo:: GetTokenAndMetadataFromFunction'
 title: Método ICorProfilerInfo::GetTokenAndMetadataFromFunction
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: e525aa16-c923-4b16-833b-36f1f0dd70fc
 topic_type:
 - apiref
-ms.openlocfilehash: 1cc05f4c10f4a5b042ff14c05f3c85a7b5935184
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 0cea6564df15c7a7f4c46097714cc0956002599b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84497888"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783840"
 ---
 # <a name="icorprofilerinfogettokenandmetadatafromfunction-method"></a>Método ICorProfilerInfo::GetTokenAndMetadataFromFunction
+
 Obtém o token de metadados e uma instância de interface de metadados que podem ser usados em relação ao token para a função especificada.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT GetTokenAndMetaDataFromFunction(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `functionId`  
  no A ID da função para a qual obter o token de metadados e a interface de metadados.  
   
@@ -49,6 +52,7 @@ HRESULT GetTokenAndMetaDataFromFunction(
  fora Um ponteiro para o token de metadados para a função especificada.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -57,6 +61,6 @@ HRESULT GetTokenAndMetaDataFromFunction(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo](icorprofilerinfo-interface.md)

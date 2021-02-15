@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: IMetaDataEmit: método efineSecurityAttributeSet de:D'
 title: Método IMetaDataEmit::DefineSecurityAttributeSet
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 27064ca2-4186-4433-90a7-3b297785e891
 topic_type:
 - apiref
-ms.openlocfilehash: c33ede841324820da16e33d35bbf5e8f8e75924f
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 3512857ca23d65389b0e150bd24234d272ddd9b6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84009360"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784048"
 ---
 # <a name="imetadataemitdefinesecurityattributeset-method"></a>Método IMetaDataEmit::DefineSecurityAttributeSet
+
 Cria um conjunto de permissões de segurança para anexar ao objeto referenciado pelo token especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,6 +39,7 @@ HRESULT DefineSecurityAttributeSet (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `tkObj`  
  no O token ao qual as informações de segurança estão anexadas.  
   
@@ -50,15 +53,16 @@ HRESULT DefineSecurityAttributeSet (
  fora Se o método falhar, especifica o índice no `rSecAttrs` elemento que causou o problema.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MSCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataEmit](imetadataemit-interface.md)
 - [Interface IMetaDataEmit2](imetadataemit2-interface.md)

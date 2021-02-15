@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 3709b9e694011666cebcb0ae09fbc838f65967af
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 28b882384760c8ac56c6d194bef6018c451fd03f
+ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85614306"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96478199"
 ---
 ### <a name="wpf-grid-allocation-of-space-to-star-columns"></a>Alocação de espaço para colunas com estrela em Grades do WPF
 
@@ -22,7 +22,7 @@ Nos dois primeiros casos, as larguras produzidas pelo novo algoritmo podem ser s
 - A alocação total pode ser menor que a largura da grade. Esse é o problema duplo do n° 1, que surge ao alocar para uma coluna cujo compartilhamento proporcional é maior do que seu tamanho máximo, sem nenhuma coluna de \* restante para concluir o processo.
 - Duas colunas com \* podem receber alocações que não sejam proporcionais a seus pesos \*. Esta é uma versão atenuada da n° 1 e da n° 2, que surge ao alocar para colunas de \* A, B e C (nessa ordem), quando o compartilhamento proporcional de B viola sua restrição mínima (ou máxima). Como acima, isso altera o espaço disponível para a coluna C, que obtém menos (ou mais) alocação proporcional do que A.
 - As colunas com pesos muito grandes (&gt; 10^298) são tratadas como se tivessem o peso 10^298. Não são consideradas as diferenças proporcionais entre elas (e entre colunas com pesos um pouco menores).
-- Colunas com pesos infinitos não são tratadas corretamente. (Na verdade, você não pode definir um peso para infinito, mas essa é uma restrição artificial. O código de alocação tentou lidar com isso, mas não teve muito sucesso.)
+- As colunas com pesos infinitos não são tratadas corretamente. (Na verdade, você não pode definir um peso para infinito, mas essa é uma restrição artificial. O código de alocação tentou lidar com isso, mas não teve muito sucesso.)
 - Vários problemas menores, evitando estouro, estouro negativo, perda de precisão e problemas de ponto flutuante semelhantes.
 - Os ajustes de arredondamento de layout são incorretos em um DPI suficientemente alto.
 O novo algoritmo produz resultados que atendam aos seguintes critérios:<p/>a. A largura real atribuída a uma coluna de * nunca é menor que sua largura mínima nem maior que sua largura máxima.<br/>B. Cada <em>coluna que não é atribuída à sua largura mínima ou máxima recebe uma largura proporcional ao <em>peso. Para ser preciso, se duas colunas forem declaradas com a largura x</em> e y</em> , respectivamente, e se nenhuma coluna receber sua largura mínima ou máxima, as larguras reais v e w atribuídas às colunas estarão na mesma proporção: v/w = = x/y.<br/>C. A largura total alocada para &quot; colunas proporcionais &quot; \* é igual ao espaço disponível após a alocação para as colunas restritas (fixo, automático e \* -colunas que são alocadas na largura mínima ou máxima). Isso pode ser zero, por exemplo se a soma das larguras mínimas excede a largura disponível da grade.<br/>D. Todas essas instruções devem ser interpretadas em relação ao layout &quot;ideal&quot;. Quando o arredondamento de layout está em vigor, as larguras reais podem diferir das larguras ideais em até um pixel.<br/>O algoritmo antigo respeitou (A), mas não respeitou os outros critérios nos casos descritos acima.<p/>Tudo que foi dito sobre colunas e larguras neste tópico se aplica também a linhas e alturas.
@@ -35,8 +35,8 @@ Por padrão, os aplicativos direcionados a versões do .NET Framework começando
 
 O valor `true` seleciona o algoritmo antigo, `false` seleciona o novo algoritmo.
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
 | Escopo   | Secundária       |
 | Versão | 4.7         |
-| Type    | Redirecionando |
+| Tipo    | Redirecionando |

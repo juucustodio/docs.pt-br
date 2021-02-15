@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRControl:: SetAppDomainManagerType'
 title: Método ICLRControl::SetAppDomainManagerType
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: ec57828b-2aad-496d-a35a-e45d4bd7fe77
 topic_type:
 - apiref
-ms.openlocfilehash: e62f9fd6b8421ea131eff0e6b36523718589c921
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 20d45a0ab14904c778a6ea821fcd63f85b6b0921
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615820"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99716660"
 ---
 # <a name="iclrcontrolsetappdomainmanagertype-method"></a>Método ICLRControl::SetAppDomainManagerType
+
 Define um tipo derivado de <xref:System.AppDomainManager> como o tipo para gerenciadores de domínio de aplicativo.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,6 +37,7 @@ HRESULT SetAppDomainManagerType (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pwzAppDomainManagerAssembly`  
  no O nome do assembly no qual o tipo solicitado derivado <xref:System.AppDomainManager> é implementado.  
   
@@ -53,15 +56,16 @@ HRESULT SetAppDomainManagerType (
 |E_FAIL|Ocorreu uma falha catastrófica desconhecida. Depois que um método retorna E_FAIL, o CLR não pode mais ser usado no processo. As chamadas subsequentes para métodos de hospedagem retornam HOST_E_CLRNOTAVAILABLE.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRControl](iclrcontrol-interface.md)
 - [Interface IHostControl](ihostcontrol-interface.md)

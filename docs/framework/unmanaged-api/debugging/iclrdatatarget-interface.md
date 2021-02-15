@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICLRDataTarget'
 title: Interface ICLRDataTarget
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: e2f05155-9bef-4e11-b703-7f05890665ca
 topic_type:
 - apiref
-ms.openlocfilehash: 30806394a8895084068acaec6f7d03c6b67bb14b
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: f24760f638705a1bde7e055069cbc3a18a0896fd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860572"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738215"
 ---
 # <a name="iclrdatatarget-interface"></a>Interface ICLRDataTarget
+
 Fornece métodos para interação com um item de destino do Common Language Runtime (CLR).  
   
 ## <a name="methods"></a>Métodos  
@@ -41,9 +43,11 @@ Fornece métodos para interação com um item de destino do Common Language Runt
 |[Método WriteVirtual](iclrdatatarget-writevirtual-method.md)|Grava dados do buffer especificado para o endereço de memória virtual especificado.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O cliente de API (ou seja, o depurador) deve implementar essa interface conforme apropriado para o item de destino específico. Por exemplo, um processo dinâmico teria uma implementação diferente da implementação de um despejo de memória.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** ClrData. idl, ClrData. h  
@@ -52,7 +56,7 @@ Fornece métodos para interação com um item de destino do Common Language Runt
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRDataTarget2](iclrdatatarget2-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

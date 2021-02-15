@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: modelo de programação do WCF Web HTTP'
 title: Modelo de programação WCF Web HTTP
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,27 +7,29 @@ helpviewer_keywords:
 - POX
 - REST
 ms.assetid: 2312a8d3-b66e-4623-ba42-978434300c7f
-ms.openlocfilehash: dd9cc282750e59e5ccbfec428c7252ab9689395f
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: f439e69e0e0c041f49e7fc5e64637337880e8459
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84589845"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752581"
 ---
 # <a name="wcf-web-http-programming-model"></a>Modelo de programação WCF Web HTTP
+
 O modelo de programação HTTP Web do Windows Communication Foundation (WCF) permite que os desenvolvedores exponham operações de serviço do WCF a pontos de extremidade não SOAP. Os tópicos nesta seção examinam o recurso em detalhes.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Visão geral do modelo de programação HTTP Web do WCF](wcf-web-http-programming-model-overview.md)  
+
+ [Visão geral de modelo de programação HTTP Web do WCF](wcf-web-http-programming-model-overview.md)  
  Fornece uma visão geral do modelo de programação HTTP da Web do Windows Communication Foundation (WCF).  
   
  [Modelo de objeto de programação HTTP Web do WCF](wcf-web-http-programming-object-model.md)  
  Discute o modelo de programação HTTP Web do Windows Communication Foundation (WCF) e como ele funciona.  
   
- [Como criar um serviço Web HTTP WCF básico](how-to-create-a-basic-wcf-web-http-service.md)  
+ [Como: criar um serviço Web HTTP WCF básico](how-to-create-a-basic-wcf-web-http-service.md)  
  Descreve como gravar um serviço básico que expõe um ponto de extremidade de não SOAP.  
   
- [Como expor um contrato para clientes SOAP e da Web](how-to-expose-a-contract-to-soap-and-web-clients.md)  
+ [Como: expor um contrato para clientes SOAP e da Web](how-to-expose-a-contract-to-soap-and-web-clients.md)  
  Descreve como gravar um serviço básico que expõe o mesmo contrato para os clientes SOAP e não SOAP.  
   
  [UriTemplate and UriTemplateTable](uritemplate-and-uritemplatetable.md)  

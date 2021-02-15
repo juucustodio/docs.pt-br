@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: <Crst_DisableSpinWait elemento>'
 title: Elemento <Crst_DisableSpinWait>
 ms.date: 04/18/2019
 f1_keywords:
 - Crst_DisableSpinWait
 helpviewer_keywords:
 - Crst_DisableSpinWait element
-ms.openlocfilehash: 0683081183081e249b2a9c89e1a6a15f638fb339
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: fca6fed2dabc3d1319ad030bb13bbb35a561b9aa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73117644"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795099"
 ---
 # <a name="crst_disablespinwait-element"></a>Elemento \<Crst_DisableSpinWait>
 
@@ -20,7 +21,7 @@ Especifica se é para desabilitar a espera de rotação para uma seção crític
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<Crst_DisableSpinWait>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <Crst_DisableSpinWait enabled="true | false"/>  
@@ -44,6 +45,7 @@ As seções a seguir descrevem atributos, elementos filho e elementos pai.
 |0|Não desabilite o giro-aguardando quando uma seção crítica não puder ser adquirida. Esse é o valor padrão.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -65,7 +67,7 @@ O exemplo a seguir desabilita a espera de rotação em seções críticas quando
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações do runtime](index.md)
 - [Esquema do arquivo de configuração](../index.md)

@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: pooling'
 title: Agrupamento
 ms.date: 03/30/2017
 ms.assetid: 688dfb30-b79a-4cad-a687-8302f8a9ad6a
-ms.openlocfilehash: 82b81637deb0715d19109794348d2a2bcda7f0d9
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: cb770b60a3011f95df5a2fdecea6cdc66b64710f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594615"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703842"
 ---
 # <a name="pooling"></a>Agrupamento
+
 Este exemplo demonstra como estender Windows Communication Foundation (WCF) para dar suporte ao pooling de objetos. O exemplo demonstra como criar um atributo que seja sintaticamente e semanticamente semelhante à `ObjectPoolingAttribute` funcionalidade de atributo dos serviços corporativos. O pooling de objetos pode fornecer um aumento considerável para o desempenho de um aplicativo. No entanto, ele pode ter o efeito oposto se não for usado corretamente. O pooling de objetos ajuda a reduzir a sobrecarga de recriação de objetos usados com frequência que exigem inicialização extensiva. No entanto, se uma chamada para um método em um objeto em pool levar um tempo considerável para ser concluída, o pooling de objetos enfileirará solicitações adicionais assim que o tamanho máximo do pool for atingido. Portanto, ele pode falhar ao fornecer algumas solicitações de criação de objeto lançando uma exceção de tempo limite.  
   
 > [!NOTE]
@@ -22,6 +24,7 @@ Este exemplo demonstra como estender Windows Communication Foundation (WCF) para
  Os despachantes de canal e ponto de extremidade oferecem extensibilidade de canal e de todo o contrato expondo várias propriedades que controlam o comportamento do Dispatcher. A <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.DispatchRuntime%2A> propriedade também permite inspecionar, modificar ou personalizar o processo de expedição. Este exemplo se concentra na <xref:System.ServiceModel.Dispatcher.DispatchRuntime.InstanceProvider%2A> propriedade que aponta para o objeto que fornece as instâncias da classe de serviço.  
   
 ## <a name="the-iinstanceprovider"></a>O IInstanceProvider  
+
  No WCF, o Dispatcher cria instâncias da classe de serviço usando um <xref:System.ServiceModel.Dispatcher.DispatchRuntime.InstanceProvider%2A> , que implementa a <xref:System.ServiceModel.Dispatcher.IInstanceProvider> interface. Essa interface tem três métodos:  
   
 - <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%28System.ServiceModel.InstanceContext%2CSystem.ServiceModel.Channels.Message%29>: Quando uma mensagem chega ao dispatcher chama o <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%28System.ServiceModel.InstanceContext%2CSystem.ServiceModel.Channels.Message%29> método para criar uma instância da classe de serviço para processar a mensagem. A frequência das chamadas para esse método é determinada pela <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> propriedade. Por exemplo, se a <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> propriedade for definida como <xref:System.ServiceModel.InstanceContextMode.PerCall> uma nova instância da classe de serviço for criada para processar cada mensagem que chega, então <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%28System.ServiceModel.InstanceContext%2CSystem.ServiceModel.Channels.Message%29> é chamado sempre que uma mensagem chega.  
@@ -31,6 +34,7 @@ Este exemplo demonstra como estender Windows Communication Foundation (WCF) para
 - <xref:System.ServiceModel.Dispatcher.IInstanceProvider.ReleaseInstance%28System.ServiceModel.InstanceContext%2CSystem.Object%29>: Quando o tempo de vida de uma instância de serviço tiver decorrido, o Dispatcher chamará o <xref:System.ServiceModel.Dispatcher.IInstanceProvider.ReleaseInstance%28System.ServiceModel.InstanceContext%2CSystem.Object%29> método. Assim como para o <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%28System.ServiceModel.InstanceContext%2CSystem.ServiceModel.Channels.Message%29> método, a frequência das chamadas para esse método é determinada pela <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> propriedade.  
   
 ## <a name="the-object-pool"></a>O pool de objetos  
+
  Uma <xref:System.ServiceModel.Dispatcher.IInstanceProvider> implementação personalizada fornece a semântica de pool de objetos necessária para um serviço. Portanto, esse exemplo tem um `ObjectPoolingInstanceProvider` tipo que fornece implementação personalizada do <xref:System.ServiceModel.Dispatcher.IInstanceProvider> para pooling. Quando o `Dispatcher` chama o <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%28System.ServiceModel.InstanceContext%2CSystem.ServiceModel.Channels.Message%29> método, em vez de criar uma nova instância, a implementação personalizada procura um objeto existente em um pool na memória. Se houver um disponível, ele será retornado. Caso contrário, um novo objeto será criado. A implementação do `GetInstance` é mostrada no código de exemplo a seguir.  
   
 ```csharp  
@@ -83,6 +87,7 @@ void IInstanceProvider.ReleaseInstance(InstanceContext instanceContext, object i
  O `ReleaseInstance` método fornece um recurso de "inicialização de limpeza". Normalmente, o pool mantém um número mínimo de objetos durante o tempo de vida do pool. No entanto, pode haver períodos de uso excessivo que exigem a criação de objetos adicionais no pool para alcançar o limite máximo especificado na configuração. Eventualmente, quando o pool se torna menos ativo, esses objetos excedentes podem se tornar uma sobrecarga extra. Portanto, quando o `activeObjectsCount` chega a zero, um temporizador ocioso é iniciado que dispara e executa um ciclo de limpeza.  
   
 ## <a name="adding-the-behavior"></a>Adicionando o comportamento  
+
  As extensões de camada de Dispatcher são conectadas usando os seguintes comportamentos:  
   
 - Comportamentos de serviço. Elas permitem a personalização de todo o tempo de execução do serviço.  
@@ -186,6 +191,7 @@ public class PoolService : IPoolService
 ```  
   
 ## <a name="running-the-sample"></a>Executando o exemplo  
+
  O exemplo demonstra os benefícios de desempenho que podem ser obtidos usando o pool de objetos em determinados cenários.  
   
  O aplicativo de serviço implementa dois serviços – `WorkService` e `ObjectPooledWorkService` . Ambos os serviços compartilham a mesma implementação, ambos exigem uma inicialização cara e, em seguida, expõem um `DoWork()` método relativamente barato. A única diferença é que o `ObjectPooledWorkService` tem o pool de objetos configurado:  
@@ -241,7 +247,7 @@ Press <ENTER> to exit.
 3. Para executar o exemplo em uma configuração de computador único ou cruzado, siga as instruções em [executando os exemplos de Windows Communication Foundation](running-the-samples.md).  
   
 > [!NOTE]
-> Se você usar svcutil. exe para regenerar a configuração para este exemplo, certifique-se de modificar o nome do ponto de extremidade na configuração do cliente para corresponder ao código do cliente.  
+> Se você usar Svcutil.exe para regenerar a configuração para este exemplo, certifique-se de modificar o nome do ponto de extremidade na configuração do cliente para corresponder ao código do cliente.  
   
 > [!IMPORTANT]
 > Os exemplos podem já estar instalados no seu computador. Verifique o seguinte diretório (padrão) antes de continuar.  

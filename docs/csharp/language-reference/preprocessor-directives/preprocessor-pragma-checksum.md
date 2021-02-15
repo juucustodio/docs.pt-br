@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - '#pragma checksum [C#]'
 ms.assetid: 3673e4ca-6098-4ec1-890f-8fceb2a794a2
-ms.openlocfilehash: 60c491000337fd50da217e97054e86faccb2e7d7
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: df665704ac813adbbf6473e81fad0a1c7ff616d0
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89137975"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91168563"
 ---
 # <a name="pragma-checksum-c-reference"></a>#pragma checksum (Referência de C#)
+
 Gera somas de verificação para os arquivos de origem para ajudar na depuração de páginas do ASP.NET.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -24,6 +25,7 @@ Gera somas de verificação para os arquivos de origem para ajudar na depuraçã
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `"filename"`  
  O nome do arquivo que exige o monitoramento de alterações ou atualizações.  
   
@@ -34,6 +36,7 @@ Gera somas de verificação para os arquivos de origem para ajudar na depuraçã
  A cadeia de caracteres de dígitos hexadecimais que representa os bytes da soma de verificação. Deve ser um número par de dígitos hexadecimais. Um número ímpar de dígitos resulta em um aviso em tempo de compilação e a diretiva é ignorada.  
   
 ## <a name="remarks"></a>Comentários  
+
  O depurador do Visual Studio usa uma soma de verificação para certificar-se de sempre encontrar a fonte correta. O compilador calcula a soma de verificação para um arquivo de origem e, em seguida, emite a saída no arquivo PDB (banco de dados do programa). Em seguida, o depurador usa o PDB para comparar com a soma de verificação que ele calcula para o arquivo de origem.  
   
  Essa solução não funciona para projetos do ASP.NET, porque é a soma de verificação calculada é para o arquivo de origem gerado e não para o arquivo .aspx. Para resolver esse problema, a `#pragma checksum` fornece suporte à soma de verificação para páginas do ASP.NET.  

@@ -2,7 +2,6 @@
 title: Segurança e condições de corrida
 'description:': Describes pitfalls to avoid around security holes exploited by race conditions, including dispose methods, constructors, cached objects, and finalizers.
 ms.date: 07/15/2020
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -12,12 +11,12 @@ helpviewer_keywords:
 - secure coding, race conditions
 - code security, race conditions
 ms.assetid: ea3edb80-b2e8-4e85-bfed-311b20cb59b6
-ms.openlocfilehash: a667bf69ba72cbe203bd2603c4c6b7a1e58a6d43
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: 870dc0ac956bad045cb87b9c0968b4a8e9733812
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87555104"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94824116"
 ---
 # <a name="security-and-race-conditions"></a>Segurança e condições de corrida
 

@@ -1,15 +1,17 @@
 ---
-title: <authentication>do <clientCertificate> elemento
+description: 'Saiba mais sobre: <authentication> do <clientCertificate> elemento'
+title: <authentication> do <clientCertificate> elemento
 ms.date: 03/30/2017
 ms.assetid: 4a55eea2-1826-4026-b911-b7cc9e9c8bfe
-ms.openlocfilehash: 99084f6b7afbdd8586ee706cd6ec44b349d81ff2
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 346e1012fd9d799b093be15381aebbc026ea2591
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70398261"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749890"
 ---
-# <a name="authentication-of-clientcertificate-element"></a>\<authentication>do \<clientCertificate> elemento
+# <a name="authentication-of-clientcertificate-element"></a>\<authentication> do \<clientCertificate> elemento
+
 Especifica comportamentos de autenticação para certificados de cliente usados por um serviço.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -21,7 +23,7 @@ Especifica comportamentos de autenticação para certificados de cliente usados 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<clientCertificate>**](clientcertificate-of-servicecredentials.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<authentication>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <authentication customCertificateValidatorType="namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"
@@ -33,6 +35,7 @@ Especifica comportamentos de autenticação para certificados de cliente usados 
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai  
   
 ### <a name="attributes"></a>Atributos  
@@ -71,6 +74,7 @@ Especifica comportamentos de autenticação para certificados de cliente usados 
 |Enumeração|Um dos seguintes valores: `LocalMachine` ou `CurrentUser`. O padrão é `CurrentUser`. Se o aplicativo cliente estiver sendo executado em uma conta do sistema, o certificado geralmente estará abaixo de `LocalMachine` . Se o aplicativo cliente estiver sendo executado sob uma conta de usuário, o certificado normalmente estará em `CurrentUser` .|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -80,11 +84,13 @@ Especifica comportamentos de autenticação para certificados de cliente usados 
 |[\<clientCertificate>](clientcertificate-of-servicecredentials.md)|Define um certificado X. 509 usado para autenticar um cliente para um serviço.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O `<authentication>` elemento corresponde à <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication> classe. Ele permite que você personalize como os clientes são autenticados. Você pode definir o `certificateValidationMode` atributo como `None` ,,, `ChainTrust` `PeerOrChainTrust` `PeerTrust` ou `Custom` . Por padrão, o nível é definido como `ChainTrust` , que especifica que cada certificado deve ser encontrado em uma hierarquia de certificados que terminam em uma *autoridade raiz* na parte superior da cadeia. Esse é o modo mais seguro. Você também pode definir o valor como `PeerOrChainTrust` , que especifica que os certificados emitidos por conta própria (peer Trust) são aceitos, bem como certificados que estão em uma cadeia confiável. Esse valor é usado ao desenvolver e depurar clientes e serviços porque certificados emitidos por conta própria não precisam ser comprados de uma autoridade confiável. Ao implantar um cliente, use o `ChainTrust` valor em vez disso.  
   
  Você também pode definir o valor como `Custom` . Quando definido como o `Custom` valor, você também deve definir o `customCertificateValidatorType` atributo para um assembly e tipo usado para validar o certificado. Para criar seu próprio validador personalizado, você deve herdar da <xref:System.IdentityModel.Selectors.X509CertificateValidator> classe abstrata. Para obter mais informações, consulte [como: criar um serviço que emprega um validador de certificado personalizado](../../../wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md).  
   
 ## <a name="example"></a>Exemplo  
+
  O código a seguir especifica um certificado X. 509 e um tipo de validação personalizado no `<authentication>` elemento.  
   
 ```xml  
@@ -105,7 +111,7 @@ Especifica comportamentos de autenticação para certificados de cliente usados 
 </serviceBehaviors>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication>
 - <xref:System.ServiceModel.Security.X509CertificateValidationMode>
@@ -113,5 +119,5 @@ Especifica comportamentos de autenticação para certificados de cliente usados 
 - <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement.Authentication%2A>
 - <xref:System.ServiceModel.Configuration.X509ClientCertificateAuthenticationElement>
 - [Comportamentos de segurança](../../../wcf/feature-details/security-behaviors-in-wcf.md)
-- [Como criar um serviço que utiliza um validador de certificado personalizado](../../../wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md)
+- [Como: criar um serviço que utiliza um validador de certificado personalizado](../../../wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md)
 - [Trabalhando com certificados](../../../wcf/feature-details/working-with-certificates.md)

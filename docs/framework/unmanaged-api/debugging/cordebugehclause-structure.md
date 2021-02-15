@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura CorDebugEHClause'
 title: Estrutura CorDebugEHClause
 ms.date: 03/30/2017
 dev_langs:
@@ -12,14 +13,15 @@ api_type:
 ms.assetid: 0e350a1b-6997-46d0-bfc5-962a5011ef43
 topic_type:
 - apiref
-ms.openlocfilehash: a889d6ba00c4a0eb96a9923a7dbe52f3b93aaba5
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: ecb00e2a110719ab82de32fb1f1c861e2033a528
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795955"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801664"
 ---
 # <a name="cordebugehclause-structure"></a>Estrutura CorDebugEHClause
+
 [Com suporte no .NET Framework 4.5.2 e versões posteriores]  
   
  Representa uma cláusula de manipulação de exceção (EH) para um determinado código de linguagem intermediária (IL).  
@@ -40,7 +42,7 @@ typedef struct _CorDebugEHClause {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`Flags`|Um campo de bits que descreve as informações de exceção na cláusula EH. Para obter mais informações, consulte a seção Comentários.|  
 |`TryOffset`|O deslocamento, em bytes, do bloco `try` a partir do início do corpo do método.|  
@@ -51,6 +53,7 @@ typedef struct _CorDebugEHClause {
 |`FilterOffset`|O deslocamento, em bytes, do início do corpo do método para um manipulador de exceção com base em filtro.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Uma matriz de `CoreDebugEHClause` valores é retornada pelo método [GetEHClauses](icordebugilcode-getehclauses-method.md) .  
   
  As informações da cláusula EH são definidas pela especificação CLI. Para obter mais informações, consulte [Standard ECMA-355: Common Language Infrastructure (CLI), 6º edição](https://www.ecma-international.org/publications/standards/Ecma-335.htm).  
@@ -65,6 +68,7 @@ typedef struct _CorDebugEHClause {
 |`COR_ILEXCEPTION_CLAUSE_FAULT`|0x00000004|Uma cláusula de falha (uma cláusula `finally` que é chamada somente quando uma exceção é lançada).|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

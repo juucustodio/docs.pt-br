@@ -3,12 +3,12 @@ title: Reflexão (C#)
 description: A reflexão fornece objetos que descrevem assemblies, módulos e tipos em C#. Se o código incluir atributos, a reflexão permitirá que você o acesse.
 ms.date: 07/20/2015
 ms.assetid: f80a2362-953b-4e8e-9759-cd5f334190d4
-ms.openlocfilehash: 4d4f4c082dd2d58e212bae53524e5dd4fd06fb75
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: 91d6d9bbd54199f3468f867d8804596f4a7546d9
+ms.sourcegitcommit: 38999dc0ec4f7c4404de5ce0951b64c55997d9ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87302796"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99427055"
 ---
 # <a name="reflection-c"></a>Reflexão (C#)
 
@@ -39,7 +39,7 @@ Console.WriteLine(info);
 A saída é: `System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e` .
 
 > [!NOTE]
-> As palavras-chave de C# `protected` e `internal` não têm significado no IL e não são usadas nas APIs de reflexão. Os termos correspondentes na IL são *Família* e *Assembly*. Para identificar um método `internal` usando a reflexão, use a propriedade <xref:System.Reflection.MethodBase.IsAssembly%2A>. Para identificar um método `protected internal`, use o <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A>.
+> As palavras-chave do C# `protected` e não `internal` têm significado na Il (linguagem intermediária) e não são usadas nas APIs de reflexão. Os termos correspondentes na IL são *Família* e *Assembly*. Para identificar um método `internal` usando a reflexão, use a propriedade <xref:System.Reflection.MethodBase.IsAssembly%2A>. Para identificar um método `protected internal`, use o <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A>.
 
 ## <a name="reflection-overview"></a>Visão geral da reflexão
 
@@ -60,7 +60,7 @@ Para mais informações:
 - <xref:System.Reflection.Emit>
 - [Recuperando informações armazenadas em atributos](../../../standard/attributes/retrieving-information-stored-in-attributes.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Guia de programação C#](../index.md)
 - [Assemblies no .NET](../../../standard/assembly/index.md)

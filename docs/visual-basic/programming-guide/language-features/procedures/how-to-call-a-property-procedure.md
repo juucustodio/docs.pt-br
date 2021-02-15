@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como chamar um procedimento de propriedade (Visual Basic)'
 title: Como chamar um procedimento de propriedade
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,14 +9,15 @@ helpviewer_keywords:
 - properties [Visual Basic], property procedures
 - procedure calls [Visual Basic], property procedures
 ms.assetid: 96bc4d74-d9c3-4b7a-954d-58ac8553cd94
-ms.openlocfilehash: 006961a0f1d4be6b0d52be5bc273dad9733bfe56
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 541768cb6381aa3d2b1bf75267c5b34a82a3d2ab
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84388693"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100466751"
 ---
 # <a name="how-to-call-a-property-procedure-visual-basic"></a>Como chamar um procedimento de propriedade (Visual Basic)
+
 Você chama um procedimento de propriedade armazenando um valor na propriedade ou recuperando seu valor. Você acessa uma propriedade da mesma maneira que acessa uma variável.  
   
  O procedimento da propriedade `Set` armazena um valor e seu `Get` procedimento recupera o valor. No entanto, você não chama explicitamente esses procedimentos por nome. Você usa a propriedade em uma instrução de atribuição ou uma expressão, assim como você armazenaria ou recuperaria o valor de uma variável. Visual Basic faz as chamadas para os procedimentos da propriedade.  
@@ -52,7 +54,7 @@ Você chama um procedimento de propriedade armazenando um valor na propriedade o
   
  O valor gerado no lado direito da instrução de atribuição é armazenado na propriedade.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos de propriedade](./property-procedures.md)
 - [Parâmetros e Argumentos de Procedimento](./procedure-parameters-and-arguments.md)

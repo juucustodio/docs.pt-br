@@ -1,18 +1,21 @@
 ---
-title: Usando a representação com segurança de transporte
+description: 'Saiba mais sobre: usando a representação com segurança de transporte'
+title: Utilizando Personificação com segurança de transporte
 ms.date: 03/30/2017
 ms.assetid: 426df8cb-6337-4262-b2c0-b96c2edf21a9
-ms.openlocfilehash: 1d33bfbbb74266aefa538166b4e1aca7d7e315ef
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 49b454369e6bf02c5c3f20661f4116f51c64c6eb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594966"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632315"
 ---
-# <a name="using-impersonation-with-transport-security"></a>Usando a representação com segurança de transporte
+# <a name="using-impersonation-with-transport-security"></a>Utilizando Personificação com segurança de transporte
+
 *Representação* é a capacidade de um aplicativo de servidor assumir a identidade do cliente. É comum que os serviços usem a representação ao validar o acesso aos recursos. O aplicativo de servidor é executado usando uma conta de serviço, mas quando o servidor aceita uma conexão de cliente, ele representa o cliente para que as verificações de acesso sejam executadas usando as credenciais do cliente. A segurança de transporte é um mecanismo para transmitir credenciais e proteger a comunicação usando essas credenciais. Este tópico descreve como usar a segurança de transporte no Windows Communication Foundation (WCF) com o recurso de representação. Para obter mais informações sobre a representação usando a segurança da mensagem, consulte [delegação e representação](delegation-and-impersonation-with-wcf.md).  
   
 ## <a name="five-impersonation-levels"></a>Cinco níveis de representação  
+
  A segurança de transporte usa cinco níveis de representação, conforme descrito na tabela a seguir.  
   
 |Nível de representação|Descrição|  
@@ -27,10 +30,12 @@ ms.locfileid: "84594966"
   
  Usar a representação nos `Impersonate` `Delegate` níveis ou exige que o aplicativo de servidor tenha o `SeImpersonatePrivilege` privilégio. Por padrão, um aplicativo tem esse privilégio se estiver sendo executado em uma conta no grupo Administradores ou em uma conta com um SID de serviço (serviço de rede, serviço local ou sistema local). A representação não requer autenticação mútua do cliente e do servidor. Alguns esquemas de autenticação que dão suporte à representação, como NTLM, não podem ser usados com autenticação mútua.  
   
-## <a name="transport-specific-issues-with-impersonation"></a>Problemas específicos de transporte com representação  
+## <a name="transport-specific-issues-with-impersonation"></a>Problemas de Transport-Specific com representação  
+
  A escolha de um transporte no WCF afeta as possíveis opções de representação. Esta seção descreve os problemas que afetam os transportes padrão HTTP e pipe nomeado no WCF. Os transportes personalizados têm suas próprias restrições quanto ao suporte para representação.  
   
 ### <a name="named-pipe-transport"></a>Transporte de pipe nomeado  
+
  Os seguintes itens são usados com o transporte de pipe nomeado:  
   
 - O transporte de pipe nomeado destina-se somente ao uso no computador local. O transporte de pipe nomeado no WCF explicitamente não permite conexões entre computadores.  
@@ -40,6 +45,7 @@ ms.locfileid: "84594966"
  Para obter mais informações sobre pipes nomeados, consulte [escolhendo um transporte](choosing-a-transport.md).  
   
 ### <a name="http-transport"></a>Transporte HTTP  
+
  As associações que usam o transporte HTTP ( <xref:System.ServiceModel.WSHttpBinding> e <xref:System.ServiceModel.BasicHttpBinding> ) dão suporte a vários esquemas de autenticação, conforme explicado em [noções básicas sobre a autenticação http](understanding-http-authentication.md). O nível de representação com suporte depende do esquema de autenticação. Os seguintes itens são usados com o transporte HTTP:  
   
 - O `Anonymous` esquema de autenticação ignora a representação.  
@@ -54,9 +60,9 @@ ms.locfileid: "84594966"
   
  Para obter mais informações sobre o transporte HTTP, consulte [escolhendo um transporte](choosing-a-transport.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Delegação e representação](delegation-and-impersonation-with-wcf.md)
 - [Autorização](authorization-in-wcf.md)
-- [Como personificar um cliente em um serviço](../how-to-impersonate-a-client-on-a-service.md)
-- [Entendendo a autenticação HTTP](understanding-http-authentication.md)
+- [Como: representar um cliente em um serviço](../how-to-impersonate-a-client-on-a-service.md)
+- [Noções básicas de autenticação HTTP](understanding-http-authentication.md)

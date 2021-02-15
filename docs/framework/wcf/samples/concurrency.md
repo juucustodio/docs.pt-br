@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: simultaneidade'
 title: Simultaneidade
 ms.date: 03/30/2017
 helpviewer_keywords:
 - service behaviors, concurency sample
 - Concurrency Sample [Windows Communication Foundation]
 ms.assetid: f8dbdfb3-6858-4f95-abe3-3a1db7878926
-ms.openlocfilehash: 393c8a79cb60a33203b41a0778176a4d78a9b6ee
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 2fbb6f9fc5ee2807ed0ca0592c364f048d5d8b14
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84585305"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99778536"
 ---
 # <a name="concurrency"></a>Simultaneidade
+
 O exemplo de simultaneidade demonstra o uso do <xref:System.ServiceModel.ServiceBehaviorAttribute> com a <xref:System.ServiceModel.ConcurrencyMode> enumeração, que controla se uma instância de um serviço processa as mensagens sequencialmente ou simultaneamente. O exemplo se baseia na [introdução](getting-started-sample.md), que implementa o `ICalculator` contrato de serviço. Este exemplo define um novo contrato, `ICalculatorConcurrency` , que é herdado do `ICalculator` , fornecendo duas operações adicionais para inspecionar o estado da simultaneidade do serviço. Alterando a configuração de simultaneidade, você pode observar a alteração no comportamento executando o cliente.  
   
  Neste exemplo, o cliente é um aplicativo de console (. exe) e o serviço é hospedado pelo Serviços de Informações da Internet (IIS).  
@@ -97,7 +99,7 @@ public class CalculatorService : ICalculatorConcurrency
   
 1. Verifique se você executou o [procedimento de configuração única para os exemplos de Windows Communication Foundation](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2. Se você usar svcutil. exe para gerar o cliente proxy, certifique-se de incluir a `/async` opção.  
+2. Se você usar Svcutil.exe para gerar o cliente proxy, certifique-se de incluir a `/async` opção.  
   
 3. Para criar a edição C# ou Visual Basic .NET da solução, siga as instruções em [criando os exemplos de Windows Communication Foundation](building-the-samples.md).  
   

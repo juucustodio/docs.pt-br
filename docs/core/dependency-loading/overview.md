@@ -5,12 +5,12 @@ ms.date: 08/09/2019
 author: sdmaclea
 ms.author: stmaclea
 ms.topic: overview
-ms.openlocfilehash: 34deb802183f20cc92449c21eb7e149cc002850f
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 2eaa01fad3913272dc90891592d0e35cd89ad2ab
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84284216"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506312"
 ---
 # <a name="dependency-loading-in-net-core"></a>Carregamento de dependência no .NET Core
 
@@ -40,3 +40,7 @@ O tutorial [criar um aplicativo .NET Core com plug-ins](../tutorials/creating-ap
 ## <a name="how-to-use-and-debug-assembly-unloadability-in-net-core"></a>Como usar e depurar a capacidade de descarregamento de assembly no .NET Core
 
 O artigo [como usar e depurar a descarga do assembly no .NET Core](../../standard/assembly/unloadability.md) é um tutorial passo a passo. Ele mostra como carregar um aplicativo .NET Core, executá-lo e descarregá-lo. O artigo também fornece dicas de depuração.
+
+## <a name="collect-detailed-assembly-loading-information"></a>Coletar informações detalhadas de carregamento do assembly
+
+O artigo [coletar informações detalhadas de carregamento de assembly](collect-details.md) descreve como coletar informações detalhadas sobre o carregamento de assembly gerenciado no tempo de execução. Ele usa a ferramenta [dotnet-Trace](../diagnostics/dotnet-trace.md) para capturar eventos do carregador de assembly em um rastreamento de um processo em execução.

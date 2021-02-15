@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: arquitetura de distribuição'
 title: Arquitetura de sindicalização
 ms.date: 03/30/2017
 ms.assetid: ed4ca86e-e3d8-4acb-87aa-1921fbc353be
-ms.openlocfilehash: 718778993a953ae819a2bee5a4a050a81d3a4b84
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 274ec121629bcb4e596401ad989309d3ef02c128
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84587515"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643729"
 ---
 # <a name="architecture-of-syndication"></a>Arquitetura de sindicalização
+
 A API de distribuição foi projetada para fornecer um modelo de programação de formato neutro que permite que o conteúdo agregado seja gravado na conexão em uma variedade de formatos. O modelo de dados abstratos consiste nas seguintes classes:  
   
 - <xref:System.ServiceModel.Syndication.SyndicationCategory>  
@@ -36,11 +38,12 @@ A API de distribuição foi projetada para fornecer um modelo de programação d
 > A especificação Atom 1,0 permite que os segundos fracionários sejam especificados em qualquer uma de suas construções de data. Ao serializar e desserializar a implementação do WCF, o ignora os segundos fracionários.  
   
 ## <a name="object-model"></a>Modelo de Objeto  
+
  O modelo de objeto para distribuição consiste nos grupos de classes nas tabelas a seguir.  
   
  Classes de formatação:  
   
-|Classe|Descrição|  
+|Class|Descrição|  
 |-----------|-----------------|  
 |<xref:System.ServiceModel.Syndication.Atom10FeedFormatter>|Uma classe que serializa uma <xref:System.ServiceModel.Syndication.SyndicationFeed> instância para o formato Atom 1,0.|  
 |<xref:System.ServiceModel.Syndication.Atom10FeedFormatter%601>|Uma classe que serializa <xref:System.ServiceModel.Syndication.SyndicationFeed> classes derivadas para o formato Atom 1,0.|  
@@ -53,12 +56,12 @@ A API de distribuição foi projetada para fornecer um modelo de programação d
   
  Classes de modelo de objeto:  
   
-|Classe|Descrição|  
+|Class|Descrição|  
 |-----------|-----------------|  
 |<xref:System.ServiceModel.Syndication.SyndicationCategory>|Uma classe que representa a categoria de um feed de sindicalização.|  
 |<xref:System.ServiceModel.Syndication.SyndicationContent>|Uma classe base que representa o conteúdo de sindicalização.|  
 |<xref:System.ServiceModel.Syndication.SyndicationElementExtension>|Uma classe que representa uma extensão do elemento de sindicalização.|  
-|<xref:System.ServiceModel.Syndication.SyndicationElementExtensionCollection>|Uma coleção de objetos <xref:System.ServiceModel.Syndication.SyndicationElementExtension>.|  
+|<xref:System.ServiceModel.Syndication.SyndicationElementExtensionCollection>|Uma coleção de objetos <xref:System.ServiceModel.Syndication.SyndicationElementExtension> .|  
 |<xref:System.ServiceModel.Syndication.SyndicationFeed>|Uma classe que representa um objeto de feed de nível superior.|  
 |<xref:System.ServiceModel.Syndication.SyndicationItem>|Uma classe que representa um item de feed.|  
 |<xref:System.ServiceModel.Syndication.SyndicationLink>|Uma classe que representa um link dentro de um feed ou item de distribuição.|  
@@ -77,7 +80,7 @@ A API de distribuição foi projetada para fornecer um modelo de programação d
   
 - Um recurso importante dos protocolos de distribuição é A extensibilidade. O Atom 1,0 e o RSS 2,0 permitem que você adicione atributos e elementos a feeds de distribuição que não estão definidos nas especificações. O modelo de programação de agregação do WCF fornece duas maneiras de trabalhar com atributos e extensões personalizados: derivar uma nova classe e acesso com rigidez de tipos. Para obter mais informações, consulte [extensibilidade de distribuição](syndication-extensibility.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral de sindicalização do WCF](wcf-syndication-overview.md)
 - [Como o modelo de objeto de sindicalização do WCF mapeia para Atom e RSS](how-the-wcf-syndication-object-model-maps-to-atom-and-rss.md)

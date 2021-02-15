@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugCode:: GetILToNativeMapping'
 title: Método ICorDebugCode::GetILToNativeMapping
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: a8ecd8c8-9627-4356-9c6f-bd05e24637c0
 topic_type:
 - apiref
-ms.openlocfilehash: 3de85626be6ae8e4769ac261f4de1479461417ec
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 808ed450fced8afecc2b637a3b990a894897b350
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82893536"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711187"
 ---
 # <a name="icordebugcodegetiltonativemapping-method"></a>Método ICorDebugCode::GetILToNativeMapping
+
 Obtém uma matriz de instâncias "COR_DEBUG_IL_TO_NATIVE_MAP" que representam mapeamentos de deslocamentos de MSIL (Microsoft Intermediate Language) para deslocamentos nativos.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,6 +39,7 @@ HRESULT GetILToNativeMapping (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `cMap`  
  no O tamanho da `map` matriz.  
   
@@ -49,9 +52,11 @@ HRESULT GetILToNativeMapping (
  Não há nenhuma ordem para a matriz de elementos retornada.  
   
 ## <a name="remarks"></a>Comentários  
+
  O `GetILToNativeMapping` método retornará resultados significativos somente se essa instância "ICorDebugCode" representar o código nativo que era JIT (just-in-time) compilado do código MSIL.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

@@ -1,27 +1,27 @@
 ---
 title: Visão geral do global.json
-description: Saiba como usar o arquivo global.json para definir a versão do SDK do .NET Core ao executar comandos de CLI do .NET Core.
+description: Saiba como usar o global.jsno arquivo para definir a versão do SDK do .NET ao executar comandos da CLI do .NET.
 ms.topic: how-to
 ms.date: 05/01/2020
 ms.custom: updateeachrelease
-ms.openlocfilehash: a9558090b1ef48f376334fbc826f6265a58908da
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.openlocfilehash: 02a0ab478a23f7df55a8cc2e872e480b311304fe
+ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88062789"
+ms.lasthandoff: 11/15/2020
+ms.locfileid: "94633993"
 ---
 # <a name="globaljson-overview"></a>Visão geral do global.json
 
 **Este artigo aplica-se a:** ✔️ SDK do .net Core 2,0 e versões posteriores
 
-O arquivo *global.json* permite que você defina qual versão do SDK do .NET Core é usada ao executar comandos de CLI do .NET Core. A seleção do SDK do .NET Core não depende da especificação do runtime ao qual o projeto é direcionado. A versão SDK do .NET Core indica quais versões do CLI do .NET Core são usadas.
+O *global.jsno* arquivo permite que você defina qual versão do SDK do .net é usada quando você executa comandos da CLI do .net. Selecionar o SDK do .NET é independente de especificar o tempo de execução de destino do projeto. A versão do SDK do .NET indica quais versões da CLI do .NET são usadas.
 
 Em geral, você deseja usar a versão mais recente das ferramentas do SDK, portanto, nenhum *global.jsno* arquivo é necessário. Em alguns cenários avançados, talvez você queira controlar a versão das ferramentas do SDK, e este artigo explica como fazer isso.
 
 Para obter mais informações de como especificar o runtime nesse caso, confira [Estruturas de destino](../../standard/frameworks.md).
 
-O SDK do .NET Core procura um arquivo *global.json* no diretório de trabalho atual (que não necessariamente é o mesmo que o diretório do projeto) ou um de seus diretórios pai.
+O SDK do .NET procura um *global.jsno* arquivo no diretório de trabalho atual (que não é necessariamente o mesmo que o diretório do projeto) ou um de seus diretórios pai.
 
 ## <a name="globaljson-schema"></a>Esquema do global.json
 
@@ -29,15 +29,15 @@ O SDK do .NET Core procura um arquivo *global.json* no diretório de trabalho at
 
 Digite: `object`
 
-Especifica as informações sobre o SDK do .NET Core a ser selecionado.
+Especifica informações sobre o SDK do .NET a ser selecionado.
 
-#### <a name="version"></a>version
+#### <a name="version"></a>Versão
 
 - Digite: `string`
 
 - Disponível desde: SDK do .NET Core 1,0.
 
-A versão do SDK do .NET Core a ser usada.
+A versão do SDK do .NET a ser usada.
 
 Este campo:
 
@@ -55,7 +55,7 @@ Indica se o resolvedor do SDK deve considerar versões de pré-lançamento ao se
 Se você não definir esse valor explicitamente, o valor padrão dependerá do fato de você estar executando a partir do Visual Studio:
 
 - Se você **não** estiver no Visual Studio, o valor padrão será `true` .
-- Se você estiver no Visual Studio, ele usará o status de pré-lançamento solicitado. Ou seja, se você estiver usando uma versão de visualização do Visual Studio ou se definir a opção **usar visualizações da SDK do .NET Core** (em **ferramentas**  >  **Opções**  >  **Environment**  >  **recursos de visualização**do ambiente), o valor padrão será `true` ; caso contrário, `false` .
+- Se você estiver no Visual Studio, ele usará o status de pré-lançamento solicitado. Ou seja, se você estiver usando uma versão de visualização do Visual Studio ou se definir a opção **usar visualizações da SDK do .NET Core** (em **ferramentas**  >  **Opções**  >  **Environment**  >  **recursos de visualização** do ambiente), o valor padrão será `true` ; caso contrário, `false` .
 
 #### <a name="rollforward"></a>Avanço
 
@@ -64,13 +64,14 @@ Se você não definir esse valor explicitamente, o valor padrão dependerá do f
 - Disponível desde: SDK do .NET Core 3,0.
 
 A política de roll-forward a ser usada ao selecionar uma versão do SDK, seja como um fallback quando uma versão específica do SDK estiver ausente ou como uma diretiva para usar uma versão superior. Uma [versão](#version) deve ser especificada com um `rollForward` valor, a menos que você esteja definindo-a como `latestMajor` .
+O comportamento de roll-forward padrão é determinado pelas [regras de correspondência](#matching-rules).
 
 Para entender as políticas disponíveis e seu comportamento, considere as seguintes definições para uma versão do SDK no formato `x.y.znn` :
 
-- `x`é a versão principal.
-- `y`é a versão secundária.
-- `z`é a faixa de recursos.
-- `nn`é a versão do patch.
+- `x` é a versão principal.
+- `y` é a versão secundária.
+- `z` é a faixa de recursos.
+- `nn` é a versão do patch.
 
 A tabela a seguir mostra os valores possíveis para a `rollForward` chave:
 
@@ -81,9 +82,9 @@ A tabela a seguir mostra os valores possíveis para a `rollForward` chave:
 | `minor`       | Usa o nível de patch mais recente para a faixa primária, secundária e de recurso especificada. <br> Se não for encontrado, roll forward para a próxima faixa de recursos mais alta na mesma versão principal/secundária e usa o nível de patch mais recente para essa faixa de recurso. <br> Se não for encontrado, roll forward para a próxima faixa secundária e de recurso na mesma principal e usa o nível de patch mais recente para essa faixa de recurso. <br> Se não for encontrado, falhará. |
 | `major`       | Usa o nível de patch mais recente para a faixa primária, secundária e de recurso especificada. <br> Se não for encontrado, roll forward para a próxima faixa de recursos mais alta na mesma versão principal/secundária e usa o nível de patch mais recente para essa faixa de recurso. <br> Se não for encontrado, roll forward para a próxima faixa secundária e de recurso na mesma principal e usa o nível de patch mais recente para essa faixa de recurso. <br> Se não for encontrado, rola para a próxima faixa mais alta, secundária e de recurso e usa o nível de patch mais recente para essa faixa de recurso. <br> Se não for encontrado, falhará. |
 | `latestPatch` | Usa o nível de patch mais recente instalado que corresponde à faixa principal, secundária e de recursos solicitada com um nível de patch e maior ou igual ao valor especificado. <br> Se não for encontrado, falhará. |
-| `latestFeature` | Usa a faixa de recursos e o nível de patch mais alto instalados que coincidem com o principal e o secundário solicitados com uma faixa de recursos maior ou igual ao valor especificado. <br> Se não for encontrado, falhará. |
-| `latestMinor` | Usa a maior versão instalada, a faixa de recursos e o nível de patch que corresponde à principal solicitada com um secundário que é maior ou igual ao valor especificado. <br> Se não for encontrado, falhará. |
-| `latestMajor` | Usa o SDK do .NET Core mais alto instalado com uma grande maior ou igual ao valor especificado. <br> Se não for encontrado, falha. |
+| `latestFeature` | Usa a faixa de recursos e o nível de patch mais alto instalados que corresponde ao principal e secundário solicitados com uma faixa de recursos e um nível de patch que é maior ou igual ao valor especificado. <br> Se não for encontrado, falhará. |
+| `latestMinor` | Usa a maior versão instalada, a faixa de recursos e o nível de patch que corresponde à principal solicitada com um nível secundário, de faixa de recursos e de patch que é maior ou igual ao valor especificado. <br> Se não for encontrado, falhará. |
+| `latestMajor` | Usa o SDK do .NET mais alto instalado com uma versão maior ou igual à do valor especificado. <br> Se não for encontrado, falha. |
 | `disable`     | Não rola para frente. Correspondência exata necessária. |
 
 ### <a name="msbuild-sdks"></a>MSBuild-SDKs
@@ -148,11 +149,11 @@ O exemplo a seguir mostra como usar a versão de patch mais alta instalada de um
 }
 ```
 
-## <a name="globaljson-and-the-net-core-cli"></a>global.json e CLI do .NET Core
+## <a name="globaljson-and-the-net-cli"></a>global.jsno e na CLI do .NET
 
-É útil saber quais versões do SDK estão instaladas em seu computador para definir uma na *global.jsno* arquivo. Para obter mais informações sobre como fazer isso, consulte [como verificar se o .NET Core já está instalado](../install/how-to-detect-installed-versions.md#check-sdk-versions).
+É útil saber quais versões do SDK estão instaladas em seu computador para definir uma na *global.jsno* arquivo. Para obter mais informações sobre como fazer isso, consulte [como verificar se o .net já está instalado](../install/how-to-detect-installed-versions.md#check-sdk-versions).
 
-Para instalar versões adicionais do SDK do .NET Core em seu computador, visite a página [baixar o .NET Core](https://dotnet.microsoft.com/download/dotnet-core) .
+Para instalar versões adicionais do SDK do .NET em seu computador, visite a página [baixar o .NET Core](https://dotnet.microsoft.com/download/dotnet-core) .
 
 Você pode criar um novo arquivo *global.json* no diretório atual executando o comando [dotnet new](dotnet-new.md), como no exemplo a seguir:
 
@@ -163,7 +164,7 @@ dotnet new globaljson --sdk-version 3.0.100
 ## <a name="matching-rules"></a>Regras de correspondência
 
 > [!NOTE]
-> As regras de correspondência são governadas pelo `dotnet.exe` ponto de entrada, que é comum em todos os tempos de execução instalados do .NET Core instalados. As regras de correspondência para a versão mais recente instalada do tempo de execução do .NET Core são usadas quando você tem vários tempos de execução instalados lado a lado.
+> As regras de correspondência são governadas pelo `dotnet.exe` ponto de entrada, que é comum em todos os tempos de execução instalados do .net. As regras de correspondência para a versão mais recente instalada do tempo de execução do .NET são usadas quando você tem vários tempos de execução instalados lado a lado ou se estiver usando um *global.jsno* arquivo.
 
 ## <a name="net-core-3x"></a>[.NET Core 3.x](#tab/netcore3x)
 
@@ -171,11 +172,11 @@ A partir do .NET Core 3,0, as seguintes regras se aplicam ao determinar qual ver
 
 - Se nenhum *global.jsno* arquivo for encontrado ou *global.jsem* não especificar uma versão do SDK nem um `allowPrerelease` valor, a versão mais recente do SDK será usada (equivalente a definir `rollForward` como `latestMajor` ). Se as versões de pré-lançamento do SDK são consideradas depende de como o `dotnet` está sendo invocado.
   - Se você **não** estiver no Visual Studio, as versões de pré-lançamento serão consideradas.
-  - Se você estiver no Visual Studio, ele usará o status de pré-lançamento solicitado. Ou seja, se você estiver usando uma versão prévia do Visual Studio ou se definir a opção **usar visualizações da SDK do .NET Core** (em **ferramentas**  >  **Opções**  >  recursos de visualização do**ambiente**  >  **Preview Features**), as versões de pré-lançamento serão consideradas; caso contrário, apenas as versões de lançamento serão consideradas.
-- Se um *global.jsno* arquivo for encontrado e não especificar uma versão do SDK, mas especificar um `allowPrerelease` valor, a versão mais recente do SDK instalada será usada (equivalente a definir `rollForward` como `latestMajor` ). Se a versão mais recente do SDK pode ser Release ou pré-lançamento depende do valor de `allowPrerelease` . `true`indica que as versões de pré-lançamento são consideradas; `false`indica que apenas versões de lançamento são consideradas.
+  - Se você estiver no Visual Studio, ele usará o status de pré-lançamento solicitado. Ou seja, se você estiver usando uma versão prévia do Visual Studio ou se definir a opção **usar visualizações da SDK do .NET Core** (em **ferramentas**  >  **Opções**  >  recursos de visualização do **ambiente**  >  **Preview Features** ), as versões de pré-lançamento serão consideradas; caso contrário, apenas as versões de lançamento serão consideradas.
+- Se um *global.jsno* arquivo for encontrado e não especificar uma versão do SDK, mas especificar um `allowPrerelease` valor, a versão mais recente do SDK instalada será usada (equivalente a definir `rollForward` como `latestMajor` ). Se a versão mais recente do SDK pode ser Release ou pré-lançamento depende do valor de `allowPrerelease` . `true` indica que as versões de pré-lançamento são consideradas; `false` indica que apenas versões de lançamento são consideradas.
 - Se um *global.jsno* arquivo for encontrado e ele especificar uma versão do SDK:
 
-  - Se nenhum `rollFoward` valor for definido, ele será usado `latestPatch` como a `rollForward` política padrão. Caso contrário, verifique cada valor e seu comportamento na seção [avanço](#rollforward) .
+  - Se nenhum `rollForward` valor for definido, ele será usado `latestPatch` como a `rollForward` política padrão. Caso contrário, verifique cada valor e seu comportamento na seção [avanço](#rollforward) .
   - Se as versões de pré-lançamento são consideradas e qual é o comportamento padrão quando `allowPrerelease` não está definido, é descrito na seção [allowPrerelease](#allowprerelease) .
 
 ## <a name="net-core-2x"></a>[.NET Core 2.x](#tab/netcore2x)
@@ -196,7 +197,7 @@ A **versão de recursos** do SDK do .NET Core é representada pelo primeiro díg
 
 A **versão de patch** é definida pelos dois últimos dígitos (`yz`) na última parte do número (`xyz`) do SDK versões 2.1.100 e superiores. Por exemplo, se você especificar `2.1.300` como a versão do SDK, a seleção de SDK localizará até a `2.1.399` mas a `2.1.400` não será considerada uma versão de patch para `2.1.300`.
 
-As versões do SDK do .NET Core `2.1.100` até `2.1.201` foram lançadas durante a transição entre os esquemas de número de versão e não lidam corretamente com a notação `xyz`. Se você especificar essas versões no arquivo *global.json*, será altamente recomendado verificar se as versões especificadas estão nos computadores de destino.
+As versões do SDK do .NET Core `2.1.100` até `2.1.201` foram lançadas durante a transição entre os esquemas de número de versão e não lidam corretamente com a notação `xyz`. Se você especificar essas versões no arquivo *global.json* , será altamente recomendado verificar se as versões especificadas estão nos computadores de destino.
 
 ---
 

@@ -3,12 +3,12 @@ title: Propriedades
 description: Saiba mais sobre propriedades C#, que incluem recursos de validação, valores computados, avaliação lenta e notificações de alteração de propriedade.
 ms.technology: csharp-fundamentals
 ms.date: 04/25/2018
-ms.openlocfilehash: 28050a77e1f7b0ac148bba6112aa79ef4d46b710
-ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
+ms.openlocfilehash: 5306650a10a3de0ff208f7c72c0ba520a527e746
+ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89358902"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96437939"
 ---
 # <a name="properties"></a>Propriedades
 
@@ -129,7 +129,7 @@ Se a versão calculada anteriormente for válida, ela será usada. Se outra alte
 ### <a name="attaching-attributes-to-auto-implemented-properties"></a>Anexando atributos a propriedades autoimplementadas
 
 Do C# 7.3 em diante, atributos de campo podem ser anexados ao campo de suporte gerado pelo compilador em propriedades autoimplementadas. Por exemplo, considere uma revisão da classe `Person` que adiciona uma propriedade `Id` de inteiro exclusivo.
-Você escreve a propriedade `Id` usando uma propriedade autoimplementada, mas o design não exige a persistência da propriedade `Id`. O <xref:System.NonSerializedAttribute> pode ser anexado apenas a campos, não a propriedades. Anexe o <xref:System.NonSerializedAttribute> ao campo de suporte da propriedade `Id` usando o especificador `field:` no atributo, conforme mostrado no seguinte exemplo:
+Você escreve a `Id` propriedade usando uma propriedade implementada automaticamente, mas o design não chama a propriedade de persistência `Id` . O <xref:System.NonSerializedAttribute> pode ser anexado apenas a campos, não a propriedades. Anexe o <xref:System.NonSerializedAttribute> ao campo de suporte da propriedade `Id` usando o especificador `field:` no atributo, conforme mostrado no seguinte exemplo:
 
 [!code-csharp[Attaching attributes to a backing field](../../samples/snippets/csharp/properties/Person.cs#14)]
 
@@ -141,7 +141,7 @@ A última situação em que você precisa escrever código em um acessador de pr
 
 [!code-csharp[invalidating the cache correctly](../../samples/snippets/csharp/properties/Person.cs#15)]
 
-O operador `?.` é chamado de *operador condicional nulo*. Ele verifica uma referência nula antes de avaliar o lado direito do operador. O resultado final é que, se não houver nenhum assinante para o evento `PropertyChanged`, o código para acionar o evento não é executado. Ela lançaria uma `NullReferenceException` sem essa verificação, nesse caso. Para obter mais informações, consulte [`events`](events-overview.md). Este exemplo também usa o novo operador `nameof` para converter o símbolo de nome da propriedade em sua representação de texto.
+O operador `?.` é chamado de *operador condicional nulo*. Ele verifica uma referência nula antes de avaliar o lado direito do operador. O resultado final é que, se não houver nenhum assinante para o evento `PropertyChanged`, o código para acionar o evento não é executado. Ela lançaria uma `NullReferenceException` sem essa verificação, nesse caso. Para obter mais informações, confira [`events`](events-overview.md). Este exemplo também usa o novo operador `nameof` para converter o símbolo de nome da propriedade em sua representação de texto.
 O uso de `nameof` pode reduzir erros no local em que você digitou errado o nome da propriedade.
 
 Novamente, a implementação de <xref:System.ComponentModel.INotifyPropertyChanged> é um exemplo de um caso em que você pode escrever o código nos acessadores para dar suporte aos cenários necessários.

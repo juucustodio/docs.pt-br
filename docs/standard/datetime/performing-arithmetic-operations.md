@@ -1,25 +1,25 @@
 ---
+description: 'Saiba mais sobre: executando operações aritméticas com datas e horas'
 title: Executando operações aritméticas com datas e horários
 ms.date: 04/10/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
-- times [.NET Framework], arithmetic operations
-- dates [.NET Framework], arithmetic operations
-- time zones [.NET Framework], arithmetic operations
-- arithmetic operations [.NET Framework], dates and times
-- dates [.NET Framework], comparing
+- times [.NET], arithmetic operations
+- dates [.NET], arithmetic operations
+- time zones [.NET], arithmetic operations
+- arithmetic operations [.NET], dates and times
+- dates [.NET], comparing
 - DateTime structure, arithmetic operations
 - DateTimeOffset structure, arithmetic operations
 ms.assetid: 87c7ddf2-f15e-48af-8602-b3642237e6d0
-ms.openlocfilehash: c212397f99bd09195f298d7d704c879705b14f02
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 7b39a6dec3abc2206c8eef7566f74aab6614aae6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84281538"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702555"
 ---
 # <a name="performing-arithmetic-operations-with-dates-and-times"></a>Executando operações aritméticas com datas e horários
 
@@ -68,7 +68,7 @@ Para ilustrar, a transição para o horário de verão no fuso horário padrão 
 
 ## <a name="arithmetic-operations-with-times-in-time-zones"></a>Operações aritméticas com tempos em fusos horários
 
-A <xref:System.TimeZoneInfo> classe inclui vários métodos de conversão que aplicam ajustes automaticamente quando convertem horários de um fuso horário para outro. Entre elas estão as seguintes:
+A <xref:System.TimeZoneInfo> classe inclui vários métodos de conversão que aplicam ajustes automaticamente quando convertem horários de um fuso horário para outro. Elas incluem o seguinte:
 
 - Os <xref:System.TimeZoneInfo.ConvertTime%2A> <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%2A> métodos e, que convertem os horários entre dois fusos horários.
 
@@ -83,7 +83,7 @@ Por exemplo, o código a seguir é semelhante ao código anterior, que adicionou
 [!code-csharp[System.DateTimeOffset.Conceptual#5](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual/cs/Conceptual5.cs#5)]
 [!code-vb[System.DateTimeOffset.Conceptual#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual/vb/Conceptual5.vb#5)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Datas, horas e fusos horários](index.md)
-- [Como usar fusos horários em aritmética de data e hora](use-time-zones-in-arithmetic.md)
+- [Como: usar fusos horários em aritmética de data e hora](use-time-zones-in-arithmetic.md)

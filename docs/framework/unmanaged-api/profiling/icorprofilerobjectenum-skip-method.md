@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerObjectEnum:: Skip'
 title: Método ICorProfilerObjectEnum::Skip
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: f8e498f8-f93a-4b82-bd22-55bdbf5e8d45
 topic_type:
 - apiref
-ms.openlocfilehash: 2248f99b76aaabff4bd3dc78b6e777a95692bb9c
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 8a2aa5dd2b905931b97fafa4db6709aab16aacc4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84494510"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781253"
 ---
 # <a name="icorprofilerobjectenumskip-method"></a>Método ICorProfilerObjectEnum::Skip
+
 Avança o cursor deste enumerador de sua posição atual para que o número especificado de elementos seja ignorado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,13 +36,16 @@ HRESULT Skip (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `celt`  
  no O número de elementos a serem ignorados.  
   
 ## <a name="remarks"></a>Comentários  
+
  A nova posição do cursor deste enumerador é: (posição atual) + `celt` .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -49,6 +54,6 @@ HRESULT Skip (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerObjectEnum](icorprofilerobjectenum-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração de ASM_NAME'
 title: Enumeração ASM_NAME
 ms.date: 03/30/2017
 api_name:
@@ -14,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: c8b65b19-d777-428f-bc0c-0d84c78a37bc
 topic_type:
 - apiref
-ms.openlocfilehash: fb77fe470829570d5abe291249eb7ef9023e6b14
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d4fc18b24e3de31e4c6679bb30a013f61346f4dd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178305"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761304"
 ---
 # <a name="asm_name-enumeration"></a>Enumeração ASM_NAME
-Indica a versão, a construção, a cultura, a assinatura e assim por diante, do conjunto cujas propriedades serão recuperadas ou definidas pelos métodos [IAssemblyName.](iassemblyname-interface.md)  
+
+Indica a versão, a compilação, a cultura, a assinatura e assim por diante, do assembly cujas propriedades serão recuperadas ou definidas pelos métodos [IAssemblyName](iassemblyname-interface.md) .  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 typedef enum {  
@@ -63,15 +65,16 @@ typedef enum {
 ```  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
- **Cabeçalho:** Fusion.h  
+ **Cabeçalho:** Fusion. h  
   
- **Biblioteca:** Incluído como um recurso em MsCorEE.dll  
+ **Biblioteca:** Incluído como um recurso no MsCorEE.dll  
   
- **.NET Framework Versions:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IAssemblyName](iassemblyname-interface.md)
 - [Enumerações Fusion](fusion-enumerations.md)

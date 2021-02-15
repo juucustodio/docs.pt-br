@@ -2,12 +2,12 @@
 title: Listas
 description: 'Saiba mais sobre as listas F #, uma série ordenada e imutável de elementos do mesmo tipo.'
 ms.date: 08/13/2020
-ms.openlocfilehash: 16d7195039d25cf63630f5cc3be6563b1bf45c44
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 567731eb57b77d60d3dd847630d5676e8d047d09
+ms.sourcegitcommit: fe8877e564deb68d77fa4b79f55584ac8d7e8997
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88559161"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90720342"
 ---
 # <a name="lists"></a>Listas
 
@@ -59,9 +59,9 @@ As listas em F # são implementadas como listas vinculadas individualmente, o qu
 
 O tipo de lista oferece suporte às seguintes propriedades:
 
-|Propriedade|Type|Descrição|
+|Propriedade|Tipo|Descrição|
 |--------|----|-----------|
-|[Principal](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-list-1.html#Head)|`'T`|O primeiro elemento.|
+|[Head](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-list-1.html#Head)|`'T`|O primeiro elemento.|
 |[Empty (vazio)](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-list-1.html#Empty)|`'T list`|A propriedade estática que retorna uma lista vazia do tipo apropriado.|
 |[IsEmpty](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-list-1.html#IsEmpty)|`bool`|`true` se a lista não tiver elementos.|
 |[Item](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-list-1.html#Item)|`'T`|O elemento no índice especificado (com base em zero).|
@@ -265,7 +265,7 @@ A saída é da seguinte maneira:
 
 As versões de descompactação correspondentes, [list. Unzip](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-listmodule.html#unzip) e [list. unzip3](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-listmodule.html#unzip3), tomam listas de tuplas e listas de retorno em uma tupla, em que a primeira lista contém todos os elementos que foram primeiro em cada tupla, e a segunda lista contém o segundo elemento de cada tupla e assim por diante.
 
-O exemplo de código a seguir demonstra o uso de [list. Unzip](https://msdn.microsoft.com/library/639db80c-41b5-45bb-a6b4-1eaa04d61d21).
+O exemplo de código a seguir demonstra o uso de [list. Unzip](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-listmodule.html#unzip).
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lists/snippet15.fs)]
 
@@ -276,7 +276,7 @@ A saída é da seguinte maneira:
 [1; 3] [2; 4]
 ```
 
-O exemplo de código a seguir demonstra o uso de [list. unzip3](https://msdn.microsoft.com/library/43078c77-32ec-4342-85b3-c31ccf984db4).
+O exemplo de código a seguir demonstra o uso de [list. unzip3](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-listmodule.html#unzip3).
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lists/snippet16.fs)]
 

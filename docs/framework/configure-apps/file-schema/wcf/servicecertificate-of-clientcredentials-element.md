@@ -1,15 +1,17 @@
 ---
-title: <serviceCertificate>do <clientCredentials> elemento
+description: 'Saiba mais sobre: <serviceCertificate> do <clientCredentials> elemento'
+title: <serviceCertificate> do <clientCredentials> elemento
 ms.date: 03/30/2017
 ms.assetid: e50c0ac5-f0df-4c90-b54b-fc602c1f84ea
-ms.openlocfilehash: 4c7489a171bdd5cb4b747ca99f1b7ff6dd65517b
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 5503c1a60b2d37f4f9359a2f49c019c37df71619
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70399679"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682898"
 ---
-# <a name="servicecertificate-of-clientcredentials-element"></a>\<serviceCertificate>do \<clientCredentials> elemento
+# <a name="servicecertificate-of-clientcredentials-element"></a>\<serviceCertificate> do \<clientCredentials> elemento
+
 Especifica um certificado a ser usado ao autenticar um serviço para o cliente.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,16 +22,18 @@ Especifica um certificado a ser usado ao autenticar um serviço para o cliente.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<clientCredentials>**](clientcredentials.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<serviceCertificate>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <serviceCertificate />
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
+
  Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  
@@ -47,11 +51,12 @@ Especifica um certificado a ser usado ao autenticar um serviço para o cliente.
 |[\<clientCredentials>](clientcredentials.md)|Especifica as credenciais usadas pelo cliente para se autenticar em um serviço.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Esse elemento de configuração especifica as configurações usadas pelo cliente para validar o certificado apresentado pelo serviço usando a autenticação SSL. Também contém um certificado para o serviço que é explicitamente configurado no cliente a ser usado para criptografar mensagens para o serviço usando a segurança de mensagem.  
   
  Os atributos do `serviceCertificate` elemento são idênticos aos atributos do [\<clientCertificate>](clientcertificate-of-clientcredentials-element.md) .  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.ClientCredentialsElement>
 - <xref:System.ServiceModel.Configuration.ClientCredentialsElement.ServiceCertificate%2A>

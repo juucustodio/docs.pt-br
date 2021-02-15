@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <security> de <peerTransport>'
 title: <security> de <peerTransport>
 ms.date: 03/30/2017
 ms.assetid: f73634ed-f896-4968-bf74-5e5ac52d3b6b
-ms.openlocfilehash: 270ca844f586be256b6483653c868d1cc4396657
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 592f886377a2d5f2008be900a9e7586385fb3782
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70399777"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786818"
 ---
 # <a name="security-of-peertransport"></a>\<security> de \<peerTransport>
+
 Contém as definições de segurança associadas a um canal de pares, incluindo o tipo de autenticação utilizada e a segurança usada para o transporte de mensagens.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,7 +22,7 @@ Contém as definições de segurança associadas a um canal de pares, incluindo 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<peerTransport>**](peertransport.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<security>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <security mode="None/Transport/Message/TransportWithMessageCredential">
@@ -29,6 +31,7 @@ Contém as definições de segurança associadas a um canal de pares, incluindo 
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -58,7 +61,7 @@ Contém as definições de segurança associadas a um canal de pares, incluindo 
 |-------------|-----------------|  
 |[\<peerTransport>](peertransport.md)|Define um transporte de mesmo nível para uma associação personalizada.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.PeerSecurityElement>
 - <xref:System.ServiceModel.PeerSecuritySettings>

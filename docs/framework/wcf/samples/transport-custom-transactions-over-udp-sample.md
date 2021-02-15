@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: transporte: transações personalizadas sobre o exemplo de UDP'
 title: 'Transporte: transações personalizadas através de exemplo de UDP'
 ms.date: 03/30/2017
 ms.assetid: 6cebf975-41bd-443e-9540-fd2463c3eb23
-ms.openlocfilehash: ce1e6f0aedff46aaf58e22d8c23c37b03f8789dd
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 609576c74a8a3c0cd55829335545818028d444bf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596533"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668507"
 ---
 # <a name="transport-custom-transactions-over-udp-sample"></a>Transporte: transações personalizadas através de exemplo de UDP
+
 Este exemplo baseia-se no exemplo de [transporte: UDP](transport-udp.md) na[extensibilidade de transporte](transport-extensibility.md)do Windows Communication Foundation (WCF). Ele estende o exemplo de transporte UDP para dar suporte ao fluxo de transações personalizadas e demonstra o uso da <xref:System.ServiceModel.Channels.TransactionMessageProperty> propriedade.  
   
 ## <a name="code-changes-in-the-udp-transport-sample"></a>Alterações de código no exemplo de transporte UDP  
+
  Para demonstrar o fluxo de transações, o exemplo altera o contrato de serviço para `ICalculatorContract` para exigir um escopo de transação para `CalculatorService.Add()` . O exemplo também adiciona um `System.Guid` parâmetro extra ao contrato da `Add` operação. Esse parâmetro é usado para passar o identificador da transação do cliente para o serviço.  
   
 ```csharp  
@@ -46,7 +49,7 @@ byte[] txmsgBuffer = TransactionMessageBuffer.WriteTransactionMessageBuffer(txPr
 int bytesSent = this.socket.SendTo(txmsgBuffer, 0, txmsgBuffer.Length, SocketFlags.None, this.remoteEndPoint);  
 ```  
   
- `TransactionMessageBuffer.WriteTransactionMessageBuffer`é um método auxiliar que contém nova funcionalidade para mesclar o token de propagação para a transação atual com a entidade de mensagem e colocá-lo em um buffer.  
+ `TransactionMessageBuffer.WriteTransactionMessageBuffer` é um método auxiliar que contém nova funcionalidade para mesclar o token de propagação para a transação atual com a entidade de mensagem e colocá-lo em um buffer.  
   
  Para o transporte de fluxo de transações personalizado, a implementação do cliente deve saber quais operações de serviço exigem o fluxo de transações e passar essas informações para o WCF. Também deve haver um mecanismo para transmitir a transação do usuário para a camada de transporte. Este exemplo usa "inspetores de mensagem do WCF" para obter essas informações. O Inspetor de mensagem do cliente implementado aqui, que é chamado `TransactionFlowInspector` , executa as seguintes tarefas:  
   
@@ -159,7 +162,7 @@ count = listenSocket.EndReceiveFrom(result, ref dummy);
 // read the transaction and message                       TransactionMessageBuffer.ReadTransactionMessageBuffer(buffer, count, out transaction, out msg);  
 ```  
   
- `TransactionMessageBuffer.ReadTransactionMessageBuffer()`é o método auxiliar que reverte o processo de serialização executado pelo `TransactionMessageBuffer.WriteTransactionMessageBuffer()` .  
+ `TransactionMessageBuffer.ReadTransactionMessageBuffer()` é o método auxiliar que reverte o processo de serialização executado pelo `TransactionMessageBuffer.WriteTransactionMessageBuffer()` .  
   
  Se uma transação tiver sido transformada em fluxo, ela será anexada à mensagem no `TransactionMessageProperty` .  
   
@@ -178,7 +181,7 @@ if (transaction != null)
   
 1. Para compilar a solução, siga as instruções em [criando os exemplos de Windows Communication Foundation](building-the-samples.md).  
   
-2. O exemplo atual deve ser executado de forma semelhante à amostra [Transport: UDP](transport-udp.md) . Para executá-lo, inicie o serviço com UdpTestService. exe. Se você estiver executando o Windows Vista, deverá iniciar o serviço com privilégios elevados. Para fazer isso, clique com o botão direito do mouse em UdpTestService. exe no explorador de arquivos e clique em **Executar como administrador**.  
+2. O exemplo atual deve ser executado de forma semelhante à amostra [Transport: UDP](transport-udp.md) . Para executá-lo, inicie o serviço com UdpTestService.exe. Se você estiver executando o Windows Vista, deverá iniciar o serviço com privilégios elevados. Para fazer isso, clique com o botão direito do mouse em UdpTestService.exe no explorador de arquivos e clique em **Executar como administrador**.  
   
 3. Isso produz a saída a seguir.  
   
@@ -188,7 +191,7 @@ if (transaction != null)
     Press <ENTER> to terminate the service and start service from config...  
     ```  
   
-4. Neste momento, você pode iniciar o cliente executando UdpTestClient. exe. A saída produzida pelo cliente é a seguinte.  
+4. Neste momento, você pode iniciar o cliente executando UdpTestClient.exe. A saída produzida pelo cliente é a seguinte.  
   
     ```console
     0  
@@ -231,13 +234,13 @@ if (transaction != null)
   
 8. Executar o cliente em relação ao serviço agora produz uma saída semelhante como antes.  
   
-9. Para regenerar o código do cliente e a configuração usando svcutil. exe, inicie o aplicativo de serviço e execute o comando svcutil. exe a seguir do diretório raiz do exemplo.  
+9. Para regenerar o código do cliente e a configuração usando Svcutil.exe, inicie o aplicativo de serviço e execute o seguinte comando Svcutil.exe do diretório raiz do exemplo.  
   
     ```console  
     svcutil http://localhost:8000/udpsample/ /reference:UdpTransport\bin\UdpTransport.dll /svcutilConfig:svcutil.exe.config  
     ```  
   
-10. Observe que svcutil. exe não gera a configuração de extensão de associação para o `sampleProfileUdpBinding` ; você deve adicioná-lo manualmente.  
+10. Observe que Svcutil.exe não gera a configuração de extensão de associação para o `sampleProfileUdpBinding` ; você deve adicioná-la manualmente.  
   
     ```xml  
     <configuration>  

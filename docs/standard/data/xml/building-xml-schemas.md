@@ -1,26 +1,29 @@
 ---
+description: 'Saiba mais sobre: Criando esquemas XML'
 title: Compilando esquemas XML
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 - cpp
 ms.assetid: 8a5ea56c-0140-4b51-8997-875ae6a8e0cb
-ms.openlocfilehash: adc1a10bb9acb14ee88589c13e28c49773e42100
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: a748560b128ff16ea3cceb9be37e427396ec9dfd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291585"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642611"
 ---
 # <a name="building-xml-schemas"></a>Compilando esquemas XML
+
 As classes no namespace <xref:System.Xml.Schema?displayProperty=nameWithType> mapeiam para as estruturas definidas na recomendação do W3C (World Wide Web Consortium) sobre esquemas XML e podem ser usadas para compilar esquemas XML na memória.  
   
 ## <a name="building-an-xml-schema"></a>Compilando um esquema XML  
+
  Nos exemplos de código a seguir, a API do SOM é usada para compilar um esquema XML cliente na memória.  
   
 ### <a name="creating-element-and-attributes"></a>Criando o elemento e os atributos  
+
  Os exemplos de código compilam o esquema cliente de baixo para cima, criando primeiro elementos e atributos filho, bem como seus tipos correspondentes, e depois os elementos de nível superior.  
   
  No exemplo de código a seguir, os elementos `FirstName` e `LastName`, bem como o atributo `CustomerId` do esquema cliente são criados usando as classes <xref:System.Xml.Schema.XmlSchemaElement> e <xref:System.Xml.Schema.XmlSchemaAttribute> do SOM. Com exceção das propriedades <xref:System.Xml.Schema.XmlSchemaElement.Name%2A> das classes <xref:System.Xml.Schema.XmlSchemaElement> e <xref:System.Xml.Schema.XmlSchemaAttribute>, que correspondem ao atributo "name" dos elementos `<xs:element />` e `<xs:attribute />` em um esquema XML, todos os outros atributos permitidos pelo esquema (`defaultValue`, `fixedValue`, `form` e assim por diante) têm propriedades correspondentes nas classes <xref:System.Xml.Schema.XmlSchemaElement> e <xref:System.Xml.Schema.XmlSchemaAttribute>.  
@@ -30,6 +33,7 @@ As classes no namespace <xref:System.Xml.Schema?displayProperty=nameWithType> ma
  [!code-vb[XmlSchemaCreateExample#2](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaCreateExample/VB/XmlSchemaCreateExample.vb#2)]  
   
 ### <a name="creating-schema-types"></a>Criando tipos de esquema  
+
  O conteúdo de elementos e de atributos é definido pelos respectivos tipos. Para criar elementos e atributos cujos tipos são um dos tipos internos do esquema, a propriedade <xref:System.Xml.Schema.XmlSchemaElement.SchemaTypeName%2A> das classes <xref:System.Xml.Schema.XmlSchemaElement> ou <xref:System.Xml.Schema.XmlSchemaAttribute> são definidas com o nome qualificado correspondente do tipo interno usando a classe <xref:System.Xml.XmlQualifiedName>. Para criar um tipo definido pelo usuário de elementos e atributos, um novo tipo simples ou complexo é criado usando a classe <xref:System.Xml.Schema.XmlSchemaSimpleType> ou <xref:System.Xml.Schema.XmlSchemaComplexType>.  
   
 > [!NOTE]
@@ -47,6 +51,7 @@ As classes no namespace <xref:System.Xml.Schema?displayProperty=nameWithType> ma
  [!code-vb[XmlSchemaCreateExample#3](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaCreateExample/VB/XmlSchemaCreateExample.vb#3)]  
   
 ### <a name="creating-and-compiling-schemas"></a>Criando e compilando esquemas  
+
  Neste ponto, os elementos e atributos filho, seus tipos correspondentes e o elemento de nível superior `Customer` foram criados na memória usando a API do SOM. No exemplo de código a seguir, o elemento de esquema é criado usando a classe <xref:System.Xml.Schema.XmlSchema>, os elementos e os tipos de nível superior são adicionados a ele usando a propriedade <xref:System.Xml.Schema.XmlSchema.Items%2A?displayProperty=nameWithType> e o esquema completo é compilado usando a classe <xref:System.Xml.Schema.XmlSchemaSet> e criado no console.  
   
  [!code-cpp[XmlSchemaCreateExample#4](../../../../samples/snippets/cpp/VS_Snippets_Data/XmlSchemaCreateExample/CPP/XmlSchemaCreateExample.cpp#4)]
@@ -86,7 +91,7 @@ As classes no namespace <xref:System.Xml.Schema?displayProperty=nameWithType> ma
 </xs:schema>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral do modelo de objeto de esquema XML](xml-schema-object-model-overview.md)
 - [Lendo e gravando esquemas XML](reading-and-writing-xml-schemas.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: sobrecarga de procedimento (Visual Basic)'
 title: Sobrecarga de procedimento
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - procedure overloading
 - procedures [Visual Basic], parameter lists
 ms.assetid: fbc7fb18-e3b2-48b6-b554-64c00ed09d2a
-ms.openlocfilehash: f8accc74fbdd9b1d8cf9bc3d8f6ddd26f73452b8
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 27e79e12153bc7ac6a9e3b3b5997a50c1c354195
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84363870"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100466634"
 ---
 # <a name="procedure-overloading-visual-basic"></a>Sobrecarga de procedimento (Visual Basic)
 
@@ -50,13 +51,13 @@ Quando você sobrecarrega um procedimento, as seguintes regras se aplicam:
 
 - **Itens que não fazem parte da assinatura**. Não é possível sobrecarregar um procedimento sem variar a assinatura. Em particular, você não pode sobrecarregar um procedimento, variando apenas um ou mais dos seguintes itens:
 
-  - Palavras-chave do modificador de procedimento, como `Public` , `Shared` e`Static`
+  - Palavras-chave do modificador de procedimento, como `Public` , `Shared` e `Static`
 
   - Nomes de parâmetro de tipo ou parâmetro
 
   - Restrições de parâmetro de tipo (para um procedimento genérico)
 
-  - Palavras-chave do modificador de parâmetro, como `ByRef` e`Optional`
+  - Palavras-chave do modificador de parâmetro, como `ByRef` e `Optional`
 
   - Se ele retorna um valor
 
@@ -90,7 +91,7 @@ A vantagem de sobrecarregar um procedimento é a flexibilidade da chamada. Para 
 
 [!code-vb[VbVbcnProcedures#57](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#57)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos](./index.md)
 - [Como definir várias versões de um procedimento](./how-to-define-multiple-versions-of-a-procedure.md)

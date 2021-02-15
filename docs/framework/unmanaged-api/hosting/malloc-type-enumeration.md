@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração de MALLOC_TYPE'
 title: Enumeração MALLOC_TYPE
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: c02476f9-23a2-4af7-9282-aa9c42c7429b
 topic_type:
 - apiref
-ms.openlocfilehash: 630fe4e79b369bfdefc19be72780f1893090895e
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 47eb58107d79309c34af5f0acdf614804d1f208f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008450"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99679791"
 ---
 # <a name="malloc_type-enumeration"></a>Enumeração MALLOC_TYPE
+
 Contém valores que especificam as características da memória que está sendo alocada.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,20 +37,21 @@ typedef enum {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`MALLOC_EXECUTABLE`|A memória alocada pode conter um arquivo executável.|  
 |`MALLOC_THREADSAFE`|A memória alocada é thread-safe. Ou seja, a memória pode ser acessada por vários threads sem nenhuma sincronização.<br /><br /> Se esse sinalizador não for definido, as chamadas no objeto deverão ser serializadas.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** MSCorEE. dll  
+ **Biblioteca:** MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Hospedando enumerações](hosting-enumerations.md)

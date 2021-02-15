@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <security> de <wsHttpBinding>'
 title: <security> de <wsHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 8658b162-2ddf-4162-a869-aa517a42288a
-ms.openlocfilehash: b66b5228cab9dbc35502a13a2d0fe56ce4c6a18d
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 646d49bd67b2b544ae2616f206bfdeabf7806579
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73738586"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683054"
 ---
 # <a name="security-of-wshttpbinding"></a>\<security> de \<wsHttpBinding>
+
 Representa os recursos de segurança do [\<wsHttpBinding>](wshttpbinding.md) .  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -19,7 +21,7 @@ Representa os recursos de segurança do [\<wsHttpBinding>](wshttpbinding.md) .
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<security>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <security mode="Message/None/Transport/TransportWithMessageCredential">
@@ -37,6 +39,7 @@ Representa os recursos de segurança do [\<wsHttpBinding>](wshttpbinding.md) .
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai  
   
 ### <a name="attributes"></a>Atributos  
@@ -68,9 +71,10 @@ Representa os recursos de segurança do [\<wsHttpBinding>](wshttpbinding.md) .
 |[\<wsHttpBinding>](wshttpbinding.md)|Uma associação segura para aplicativos de transporte HTTP.|  
   
 ## <a name="remarks"></a>Comentários  
+
  A classe WSHttpBinding foi projetada para interoperação com serviços que implementam especificações WS-*. A segurança de transporte para essa associação é protocolo SSL (SSL) sobre HTTP ou HTTPS.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.WSHttpSecurity>
 - <xref:System.ServiceModel.WSHttpBinding.Security%2A>

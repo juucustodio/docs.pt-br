@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-Main
 title: -main
 ms.date: 03/13/2018
 helpviewer_keywords:
@@ -6,14 +7,15 @@ helpviewer_keywords:
 - /main compiler option [Visual Basic]
 - -main compiler option [Visual Basic]
 ms.assetid: 83fc339d-6652-415d-b205-b5133319b5b0
-ms.openlocfilehash: 5530da4c784346df4a1088998b8d2027feee08e3
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 4c225c5a0030de6de0aaa510080a586272aa920b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403155"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100455659"
 ---
 # <a name="-main"></a>-main
+
 Especifica a classe ou o módulo que contém o procedimento `Sub Main`.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -23,10 +25,12 @@ Especifica a classe ou o módulo que contém o procedimento `Sub Main`.
 ```  
   
 ## <a name="arguments"></a>Argumentos  
+
  `location`  
- Obrigatórios. O nome da classe ou do módulo que contém o `Sub Main` procedimento a ser chamado quando o programa for iniciado. Isso pode estar no formato **-principal: módulo** ou **-principal: namespace. Module**.  
+ Obrigatório. O nome da classe ou do módulo que contém o `Sub Main` procedimento a ser chamado quando o programa for iniciado. Isso pode estar no formato **-principal: módulo** ou **-principal: namespace. Module**.  
   
 ## <a name="remarks"></a>Comentários  
+
  Use essa opção quando você criar um arquivo executável ou programa executável do Windows. Se a opção **-Main** for omitida, o compilador pesquisará um compartilhamento válido `Sub Main` em todos os módulos e classes públicas.  
   
  Consulte o [procedimento principal no Visual Basic](../../programming-guide/program-structure/main-procedure.md) para obter uma discussão sobre as várias formas do `Main` procedimento.  
@@ -46,13 +50,14 @@ Especifica a classe ou o módulo que contém o procedimento `Sub Main`.
 4. Modifique o valor na caixa **objeto de inicialização** .  
   
 ## <a name="example"></a>Exemplo  
+
  O código a seguir compila `T2.vb` e `T3.vb` , especificando que o `Sub Main` procedimento será encontrado na `Test2` classe.  
   
 ```console
 vbc t2.vb t3.vb -main:Test2  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Compilador de linha de comando do Visual Basic](index.md)
 - [-Target (Visual Basic)](target.md)

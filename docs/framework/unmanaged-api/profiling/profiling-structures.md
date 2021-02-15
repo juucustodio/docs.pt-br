@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estruturas de criação de perfil'
 title: Estruturas de criação de perfil
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,17 +7,19 @@ helpviewer_keywords:
 - unmanaged structures [.NET Framework], profiling
 - structures [.NET Framework profiling]
 ms.assetid: 750385f2-f365-41b1-939f-ca2f2ff9b466
-ms.openlocfilehash: c3bbc66079e05abf494ad112b8aa0ac68e3c3e2f
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: 7a76c49aaa301ba45c41fb2eb3f7770539dcc6c0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76868103"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798882"
 ---
 # <a name="profiling-structures"></a>Estruturas de criação de perfil
+
 Esta seção descreve as estruturas não gerenciadas que a API de perfil utiliza.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Estrutura COR_PRF_ASSEMBLY_REFERENCE_INFO](cor-prf-assembly-reference-info-structure.md)  
  Fornece ao Common Language Runtime informações sobre um assembly de referência que deve ser considerado ao realizar um exame de fechamento de referência de assembly.  
   
@@ -38,14 +41,15 @@ Esta seção descreve as estruturas não gerenciadas que a API de perfil utiliza
  [Estrutura COR_PRF_GC_GENERATION_RANGE](cor-prf-gc-generation-range-structure.md)  
  Descreve um intervalo (ou seja, um bloco) de memória que está passando por coleta de lixo.  
   
-## <a name="related-sections"></a>Seções Relacionadas  
+## <a name="related-sections"></a>Seções relacionadas  
+
  COR_DEBUG_IL_TO_NATIVE_MAP  
   
  COR_IL_MAP  
   
  [Visão geral da criação de perfil](profiling-overview.md)  
   
- [Interfaces de criação de perfil](profiling-interfaces.md)  
+ [Criação de perfil de interfaces](profiling-interfaces.md)  
   
  [Criando perfil de funções estáticas globais](profiling-global-static-functions.md)  
   

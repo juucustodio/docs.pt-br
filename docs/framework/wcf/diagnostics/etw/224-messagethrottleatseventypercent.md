@@ -1,35 +1,39 @@
 ---
+description: 'Saiba mais sobre: 224-MessageThrottleAtSeventyPercent'
 title: 224 - MessageThrottleAtSeventyPercent
 ms.date: 03/30/2017
 ms.assetid: 82bbbfd7-10d2-41fd-805d-2443b0c1b96b
-ms.openlocfilehash: f70dc235e037b4f490a25866940fe2bccceae2a1
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 14c08371c5db7e6f7deb0a5851a1d24dfc94475e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61916299"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794267"
 ---
 # <a name="224---messagethrottleatseventypercent"></a>224 - MessageThrottleAtSeventyPercent
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
 |ID|224|  
 |Palavras-chave|EndToEndMonitoring, HealthMonitoring, solução de problemas, ServiceModel|  
-|Nível|Aviso|  
+|Level|Aviso|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  
- Quando uma das restrições de serviço principal foi excedida, o `MessageThrottleExceeded` evento é emitido. Quando diminui o pico de atividade e o valor atual a limitação é de 70% do limite atual, em seguida, esse evento é emitido. Observe que esse evento só é emitido depois que estiver tornando a como a atividade. Se o valor atual é posicionado na marca de 70 por cento, (por exemplo, 70,69,70,71,70,69), somente a primeira ocorrência de 70% resulta em um evento. Depois que esse evento é emitido, ocorrências futuras de exceder a limitação limitam resultados em um `MessageThrottleExceeded` eventos.  
+
+ Quando uma das principais restrições de serviço for excedida, o `MessageThrottleExceeded` evento será emitido. Quando o pico de atividade é lento e o valor atual da limitação está em 70% do limite atual, esse evento é emitido. Observe que esse evento é emitido apenas uma vez, pois a atividade está lenta. Se o valor atual focalizar na marca de porcentagem de 70, (por exemplo, 70, 69, 70, 71, 70, 69), somente a primeira ocorrência de 70% resultará em um evento. Depois que esse evento é emitido, ocorrências futuras de exceder o limite do acelerador resulta em um `MessageThrottleExceeded` evento.  
   
 ## <a name="message"></a>Mensagem  
- O limite de restrição '%1' de '%2' está em 70% %.  
+
+ O limite de ' %2 ' do acelerador ' %1 ' está em 70%%.  
   
 ## <a name="details"></a>Detalhes  
   
 |Nome do item de dados|Tipo de item de dados|Descrição|  
 |--------------------|--------------------|-----------------|  
-|Nome do acelerador|`xs:string`|O nome do acelerador de foi excedido. Qualquer um dos `MaxConcurrentCalls`, `MaxConcurrentInstances`, ou `MaxConcurrentSessions`,|  
-|Limite|`xs:long`|O limite configurado no momento da limitação.|  
-|HostReference|`xs:string`|Para serviços hospedados na Web, este campo identifica exclusivamente o serviço na hierarquia da Web. O formato é definido como ' caminho Virtual do aplicativo de nome de Site&#124;caminho Virtual de serviço&#124;ServiceName'. Exemplo: ' Default Web Site/CalculatorApplication&#124;/CalculatorService.svc&#124;CalculatorService'.|  
+|Nome do acelerador|`xs:string`|O nome do limite que foi excedido. `MaxConcurrentCalls`Ou, `MaxConcurrentInstances` , ou `MaxConcurrentSessions` ,|  
+|Limite|`xs:long`|O limite atualmente configurado da limitação.|  
+|HostReference|`xs:string`|Para serviços hospedados na Web, esse campo identifica exclusivamente o serviço na hierarquia da Web. Seu formato é definido como ' nome do site aplicativo caminho virtual&#124;serviço caminho virtual&#124;ServiceName '. Exemplo: ' Default Web site/CalculatorApplication&#124;/CalculatorService.svc&#124;CalculatorService '.|  
 |AppDomain|`xs:string`|A cadeia de caracteres retornada por AppDomain.CurrentDomain.FriendlyName.|

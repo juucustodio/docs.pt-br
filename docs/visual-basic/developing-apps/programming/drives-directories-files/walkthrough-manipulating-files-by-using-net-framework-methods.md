@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Walkthrough: manipulando arquivos usando métodos de .NET Framework (Visual Basic)'
 title: manipular arquivos usando métodos do .NET Framework
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - text files [Visual Basic], reading
 - I/O [Visual Basic], reading text from files
 ms.assetid: 7d2109eb-f98a-4389-b43d-30f384aaa7d5
-ms.openlocfilehash: 9abb87f3f6cdefefef29eb37c2c2d4d15155e93d
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e59dca15660a981c487688234c864a818398af65
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406645"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775364"
 ---
 # <a name="walkthrough-manipulating-files-by-using-net-framework-methods-visual-basic"></a>Instruções passo a passo: manipulando arquivos usando métodos do .NET Framework (Visual Basic)
 
@@ -40,15 +41,15 @@ Inicie o Visual Studio e comece o projeto criando um formulário que o usuário 
 
 3. Na caixa **nome** , digite `MyDiary` e clique em **OK**.
 
-     O Visual Studio adiciona o projeto a **Gerenciador de soluções**e o **Designer de formulários do Windows** é aberto.
+     O Visual Studio adiciona o projeto a **Gerenciador de soluções** e o **Designer de formulários do Windows** é aberto.
 
 4. Adicione os controles na tabela a seguir ao formulário e defina os valores correspondentes para as respectivas propriedades.
 
 |**Objeto**|**Propriedades**|**Valor**|
 |---|---|---|
-|<xref:System.Windows.Forms.Button>|**Nome**<br /><br /> **Texto**|`Submit`<br /><br /> **Enviar entrada**|
-|<xref:System.Windows.Forms.Button>|**Nome**<br /><br /> **Texto**|`Clear`<br /><br /> **Limpar entrada**|
-|<xref:System.Windows.Forms.TextBox>|**Nome**<br /><br /> **Texto**<br /><br /> **Multilinha**|`Entry`<br /><br /> **Digite algo.**<br /><br /> `False`|
+|<xref:System.Windows.Forms.Button>|**Nome**<br /><br /> **Text**|`Submit`<br /><br /> **Enviar entrada**|
+|<xref:System.Windows.Forms.Button>|**Nome**<br /><br /> **Text**|`Clear`<br /><br /> **Limpar entrada**|
+|<xref:System.Windows.Forms.TextBox>|**Nome**<br /><br /> **Text**<br /><br /> **Multilinha**|`Entry`<br /><br /> **Digite algo.**<br /><br /> `False`|
 
 ## <a name="writing-to-the-file"></a>Gravando no arquivo
 
@@ -96,9 +97,9 @@ Para esta seção do passo a passo, adicione os controles na tabela a seguir ao 
 |Control|Propriedades|Valores|
 |-------------|----------------|------------|
 |<xref:System.Windows.Forms.TextBox>|**Nome**<br /><br /> **Visível**<br /><br /> **Tamanho**<br /><br /> **Multilinha**|`DisplayEntry`<br /><br /> `False`<br /><br /> `120,60`<br /><br /> `True`|
-|<xref:System.Windows.Forms.Button>|**Nome**<br /><br /> **Texto**|`Display`<br /><br /> **Exibição**|
-|<xref:System.Windows.Forms.Button>|**Nome**<br /><br /> **Texto**|`GetEntries`<br /><br /> **Obter entradas**|
-|<xref:System.Windows.Forms.ComboBox>|**Nome**<br /><br /> **Texto**<br /><br /> **Enabled**|`PickEntries`<br /><br /> **Selecionar uma entrada**<br /><br /> `False`|
+|<xref:System.Windows.Forms.Button>|**Nome**<br /><br /> **Text**|`Display`<br /><br /> **Exibição**|
+|<xref:System.Windows.Forms.Button>|**Nome**<br /><br /> **Text**|`GetEntries`<br /><br /> **Obter entradas**|
+|<xref:System.Windows.Forms.ComboBox>|**Nome**<br /><br /> **Text**<br /><br /> **Enabled**|`PickEntries`<br /><br /> **Selecionar uma entrada**<br /><br /> `False`|
 
 ### <a name="to-populate-the-combo-box"></a>Para popular a caixa de combinação
 
@@ -124,9 +125,9 @@ Adicione os controles na tabela a seguir ao formulário e defina os valores corr
 
 |Control|Propriedades|Valores|
 |-------------|----------------|------------|
-|<xref:System.Windows.Forms.Button>|**Nome**<br /><br /> **Texto**<br /><br /> **Enabled**|`DeleteEntry`<br /><br /> **Excluir entrada**<br /><br /> `False`|
-|<xref:System.Windows.Forms.Button>|**Nome**<br /><br /> **Texto**<br /><br /> **Enabled**|`EditEntry`<br /><br /> **Editar entrada**<br /><br /> `False`|
-|<xref:System.Windows.Forms.Button>|**Nome**<br /><br /> **Texto**<br /><br /> **Enabled**|`SubmitEdit`<br /><br /> **Enviar edição**<br /><br /> `False`|
+|<xref:System.Windows.Forms.Button>|**Nome**<br /><br /> **Text**<br /><br /> **Enabled**|`DeleteEntry`<br /><br /> **Excluir entrada**<br /><br /> `False`|
+|<xref:System.Windows.Forms.Button>|**Nome**<br /><br /> **Text**<br /><br /> **Enabled**|`EditEntry`<br /><br /> **Editar entrada**<br /><br /> `False`|
+|<xref:System.Windows.Forms.Button>|**Nome**<br /><br /> **Text**<br /><br /> **Enabled**|`SubmitEdit`<br /><br /> **Enviar edição**<br /><br /> `False`|
 
 ### <a name="to-enable-deletion-and-modification-of-entries"></a>Para habilitar a exclusão e modificação de entradas
 
@@ -152,7 +153,7 @@ Adicione os controles na tabela a seguir ao formulário e defina os valores corr
 
 Para testar seu código, pressione F5 para compilar o aplicativo. Clique em **Obter Entradas**, selecione uma entrada e clique em **Exibir**. A entrada aparece na `DisplayEntry`<xref:System.Windows.Forms.TextBox>. Clique em **Editar entrada**. A entrada aparece na `Entry`<xref:System.Windows.Forms.TextBox>. Edite a entrada no `Entry` <xref:System.Windows.Forms.TextBox> e clique em **Enviar editar**. Abra o arquivo `MyDiary.txt` para confirmar a correção. Agora, selecione uma entrada e clique em **Excluir entrada**. Quando o <xref:System.Windows.Forms.MessageBox> solicita confirmação, clique em **OK**. Feche o aplicativo e abra `MyDiary.txt` para confirmar a exclusão.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.IO.StreamReader>
 - <xref:System.IO.StreamWriter>

@@ -1,22 +1,23 @@
 ---
+description: 'Saiba mais sobre: incompatibilidades de tipo SQL-CLR'
 title: Incompatibilidade de SQL-CLR
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 0a90c33f-7ed7-4501-ad5f-6224c5da8e9b
-ms.openlocfilehash: 27708f4bb8e191156f578132602570bc4a6337b0
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 9a2e1d360fc2a54f401572e46d92654f2b9284db
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70781203"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803718"
 ---
 # <a name="sql-clr-type-mismatches"></a>Incompatibilidade de SQL-CLR
 
-[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] automatiza muitas de conversão entre o modelo de objeto e o SQL Server. Entretanto, algumas situações impedem a conversão exata. Essas incompatibilidades de chave entre os tipos de Common Language Runtime (CLR) e os tipos de banco de dados SQL Server são resumidas nas seções a seguir. Você pode encontrar mais detalhes sobre mapeamentos de tipo específicos e conversão de função em [tipos de dados e funções](data-types-and-functions.md)de [mapeamento de tipo SQL-CLR](sql-clr-type-mapping.md) .
+[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] automatiza muitas de conversão entre o modelo de objeto e o SQL Server. Entretanto, algumas situações impedem a conversão exata. Essas incompatíveis chave entre Common Language Runtime (CLR) tipo e os tipos de base de dados do SQL Server são resumidas nas seções a seguir. Você pode encontrar mais detalhes sobre mapeamentos de tipo específicos e conversão de função em [tipos de dados e funções](data-types-and-functions.md)de [mapeamento de tipo SQL-CLR](sql-clr-type-mapping.md) .
 
-## <a name="data-types"></a>Tipos de Dados
+## <a name="data-types"></a>Tipos de dados
 
 A conversão entre CLR SQL Server e ocorre quando uma consulta está sendo enviadas a base de dados, e quando os resultados são novamente enviado ao seu modelo de objeto. Por exemplo, a seguinte consulta de Transact-SQL requer duas conversões de valor:
 
@@ -34,18 +35,18 @@ Os seguintes tipos não têm correspondentes razoáveis.
 
   - **Inteiros não assinados**. Esses tipos são mapeados normalmente a suas contrapartes assinados de tamanho maior para evitar estouro. Literais podem ser convertidos em um sinal numérico do mesmo ou de menor tamanho, com base no valor.
 
-  - **Booliano**. Esses tipos podem ser mapeados para um bit ou um número maior ou uma cadeia de caracteres. Um literal pode ser mapeado para uma expressão que avalia para o mesmo valor (por exemplo, `1=1` em SQL para `True` em CLS).
+  - **Boolean**. Esses tipos podem ser mapeados para um bit ou um número maior ou uma cadeia de caracteres. Um literal pode ser mapeado para uma expressão que avalia para o mesmo valor (por exemplo, `1=1` em SQL para `True` em CLS).
 
   - **TimeSpan**. Este tipo representa a diferença entre dois valores de `DateTime` e não corresponde a `timestamp` SQL Server. CLR <xref:System.TimeSpan?displayProperty=nameWithType> também pode mapear ao SQL Server `TIME` o tipo em alguns casos. O tipo do SQL Server `TIME` foi pretendido representar somente valores positivos menos de 24 horas. CLR <xref:System.TimeSpan> tem um intervalo muito maior.
 
   > [!NOTE]
-  > Os tipos de .NET Framework específicos do <xref:System.Data.SqlTypes> SQL Server no não estão incluídos nessa comparação.
+  > Os tipos de .NET Framework específicos do SQL Server no <xref:System.Data.SqlTypes> não estão incluídos nessa comparação.
 
 - Incompatíveis no SQL Server:
 
-  - **Tipos de caracteres de comprimento fixo**. O Transact-SQL distingue entre categorias Unicode e não-Unicode e tem três tipos distintos em cada categoria: comprimento `nchar` `varchar` / `char`fixo, comprimento `nvarchar` /variável e tamanho `ntext` /maior. `text` Os tipos de caracteres de comprimento fixo podem ser mapeado para o tipo de CLR <xref:System.Char?displayProperty=nameWithType> para recuperar caracteres, mas não correspondem realmente o mesmo tipo em conversões e comportamento.
+  - **Tipos de caracteres de comprimento fixo**. O Transact-SQL distingue entre categorias Unicode e não-Unicode e tem três tipos distintos em cada categoria: comprimento fixo `nchar` / `char` , comprimento variável `nvarchar` / `varchar` e tamanho maior `ntext` / `text` . Os tipos de caracteres de comprimento fixo podem ser mapeado para o tipo de CLR <xref:System.Char?displayProperty=nameWithType> para recuperar caracteres, mas não correspondem realmente o mesmo tipo em conversões e comportamento.
 
-  - **Bit**. Embora o domínio de `bit` tem o mesmo número de valores que `Nullable<Boolean>`, os dois tipos são diferentes. `Bit`usa valores `1` e `0` em vez `true`de / enãopodeserusadocomoumequivalentea`false`expressões boolianas.
+  - **Bit**. Embora o domínio de `bit` tem o mesmo número de valores que `Nullable<Boolean>`, os dois tipos são diferentes. `Bit`usa valores `1` e `0` em vez de e `true` / `false` não pode ser usado como um equivalente a expressões boolianas.
 
   - **Carimbo de data/hora**. Ao contrário do tipo de CLR <xref:System.TimeSpan?displayProperty=nameWithType> , o tipo do SQL Server `TIMESTAMP` representa um número de 8 bytes gerado pelo base de dados que é exclusivo para cada atualização e não é baseado na diferença entre valores de <xref:System.DateTime> .
 
@@ -67,7 +68,7 @@ As seguintes subseções ilustram a incompatibilidade entre expressões aparente
 
 ### <a name="null-semantics"></a>Semântica nula
 
-As expressões SQL fornecem lógica três avaliada para expressões booleanas. O resultado pode ser true, false, ou zero. Por outro lado, CLR especifica o resultado booleano duas avaliado para as comparações que envolvem valores nulos. Considere o código a seguir:
+As expressões SQL fornecem lógica três avaliada para expressões booleanas. O resultado pode ser true, false, ou zero. Por outro lado, CLR especifica o resultado booleano duas avaliado para as comparações que envolvem valores nulos. Considere o seguinte código:
 
 [!code-csharp[DLinqMismatch#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqMismatch/cs/Program.cs#2)]
 [!code-vb[DLinqMismatch#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqMismatch/vb/Module1.vb#2)]
@@ -114,7 +115,7 @@ or col1 != col2
 
 Em casos anteriores, você pode obter o comportamento equivalente em gerar o SQL, mas a conversão não pode exatamente refletir sua intenção.
 
-[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]não impõe C# `null` ou Visual Basic `nothing` semântica de comparação no SQL. Os operadores de comparação são convertidos sintaticamente para seus equivalentes SQL. Semânticas reflete a semântica do SQL como definida pelas configurações do servidor ou de conexão. Dois valores nulos são considerados configurações padrão inferiores desiguais SQL Server (embora você possa alterar as configurações para alterar a semântica). De qualquer forma, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] não considera configurações de servidor para a tradução de consulta.
+[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] não impõe a `null` `nothing` semântica de comparação em C# ou Visual Basic no SQL. Os operadores de comparação são convertidos sintaticamente para seus equivalentes SQL. Semânticas reflete a semântica do SQL como definida pelas configurações do servidor ou de conexão. Dois valores nulos são considerados configurações padrão inferiores desiguais SQL Server (embora você possa alterar as configurações para alterar a semântica). De qualquer forma, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] não considera configurações de servidor para a tradução de consulta.
 
 Uma comparação com `null` literal (`nothing`) é convertido para a versão apropriada do SQL (`is null` ou `is not null`).
 
@@ -132,9 +133,9 @@ Também, a precedência de tipo em Transact-SQL difere de precedência de tipo e
 
 Em casos simples, essas diferenças fazem com que as expressões de CLR com conversões sejam redundantes para uma expressão correspondente SQL. Mais importante, os resultados intermediários de uma expressão SQL podem ser implicitamente promovidos para um tipo que não tem contraparte exata em C#, e vice-versa. Total, os testes, depuração, e a validação dessas expressões adiciona a carga significativa no usuário.
 
-### <a name="collation"></a>Ordenação
+### <a name="collation"></a>Collation
 
-Transact-SQL suporta ordenações explícitas como as anotações a cadeia de caracteres tipo. Essas ordenações determinam a validade de determinadas comparações. Por exemplo, comparar duas colunas com diferentes ordenações explícitas é um erro. O uso do tipo muito mais simples de cadeia de caracteres de CTS não causa esses erros. Considere o exemplo a seguir:
+Transact-SQL suporta ordenações explícitas como as anotações a cadeia de caracteres tipo. Essas ordenações determinam a validade de determinadas comparações. Por exemplo, comparar duas colunas com diferentes ordenações explícitas é um erro. O uso do tipo muito mais simples de cadeia de caracteres de CTS não causa esses erros. Considere o seguinte exemplo:
 
 ```sql
 create table T2 (
@@ -155,7 +156,7 @@ Where Col1 = Col2
 
 Na verdade, a subcláusula Collation cria um *tipo restrito* que não é substituível.
 
-Da mesma forma, a ordem de classificação pode ser significativamente diferente entre sistemas de tipos. Essa diferença afeta a classificação dos resultados. <xref:System.Guid> são classificadas em todos os 16 bytes pela ordem lexicographic (`IComparable()`), enquanto T-SQL compara GUIDs na seguinte ordem: (nó 10-15), relógio- segs. (8-9), Hora- alto (6-7), Hora- mid (4-5), Hora- baixo (0-3). Isso regras que foi feito no SQL 7.0 GUIDs gerado quando NT- tinha uma ordem de octeto. A abordagem de assegurou-se que GUIDs gerado no mesmo conjunto de nó viesse juntos em ordem sequencial de acordo com o carimbo de data/hora. A abordagem também é útil para compilar índices (inserções se tornam append em vez de IOs aleatório). A ordem scrambled posteriormente no Windows devido a interesses privacidade, mas o SQL deve manter compatibilidade. Uma solução alternativa é usar <xref:System.Data.SqlTypes.SqlGuid> em vez <xref:System.Guid>de.
+Da mesma forma, a ordem de classificação pode ser significativamente diferente entre sistemas de tipos. Essa diferença afeta a classificação dos resultados. <xref:System.Guid> são classificadas em todos os 16 bytes pela ordem lexicographic (`IComparable()`), enquanto T-SQL compara GUIDs na seguinte ordem: (nó 10-15), relógio- segs. (8-9), Hora- alto (6-7), Hora- mid (4-5), Hora- baixo (0-3). Isso regras que foi feito no SQL 7.0 GUIDs gerado quando NT- tinha uma ordem de octeto. A abordagem de assegurou-se que GUIDs gerado no mesmo conjunto de nó viesse juntos em ordem sequencial de acordo com o carimbo de data/hora. A abordagem também é útil para compilar índices (inserções se tornam append em vez de IOs aleatório). A ordem scrambled posteriormente no Windows devido a interesses privacidade, mas o SQL deve manter compatibilidade. Uma solução alternativa é usar <xref:System.Data.SqlTypes.SqlGuid> em vez de <xref:System.Guid> .
 
 ### <a name="operator-and-function-differences"></a>Operador e diferenças de função
 
@@ -163,11 +164,11 @@ Os operadores e funções que são essencialmente comparáveis têm a semântica
 
 - Especifica C# procura por um caminho menor a semântica com base na ordem lexicalmente de operandos para operadores lógicos `&&` e `||`. O SQL por outro lado é definido para consultas definir - com base e portanto fornece mais liberdade de otimizador para decidir a ordem de execução. Algumas implicações incluem o seguinte:
 
-  - A conversão semanticamente equivalente exigiria`CASE` "... `WHEN` … `THEN`"constructo no SQL para evitar a reordenação da execução do operando.
+  - A conversão semanticamente equivalente exigiria " `CASE` ... `WHEN` … `THEN`"constructo no SQL para evitar a reordenação da execução do operando.
 
-  - Uma tradução flexível para `AND` / `OR` operadores poderia causar erros inesperados C# se a expressão depender da avaliação do segundo operando com base no resultado da avaliação do primeiro operando.
+  - Uma tradução flexível para `AND` / `OR` operadores poderia causar erros inesperados se a expressão C# depender da avaliação do segundo operando com base no resultado da avaliação do primeiro operando.
 
-- `Round()`a função tem uma semântica diferente no .NET Framework e no T-SQL.
+- `Round()` a função tem uma semântica diferente no .NET Framework e no T-SQL.
 
 - Iniciar o índice para cadeias de caracteres é 0 em CLR mas 1 no SQL. Portanto, qualquer função que tem a conversão de índice das necessidades de índice.
 
@@ -178,7 +179,7 @@ Os operadores e funções que são essencialmente comparáveis têm a semântica
     > [!NOTE]
     > Este comportamento do operador de `Like` se aplica a C# somente; a palavra-chave do Visual Basic `Like` é inalterado.
 
-- O estouro sempre é verificado no SQL, mas precisa ser explicitamente especificado em C# (não em Visual Basic) para evitar delimitador. Colunas disponíveis C1, C2 e C3 inteiro, se C1+C2 é armazenado em C3 (atualização T ajustada C3 = C1 + C2).
+- O estouro sempre é verificado no SQL, mas precisa ser especificado explicitamente em C# (não no Visual Basic) para evitar delimitador. Colunas disponíveis C1, C2 e C3 inteiro, se C1+C2 é armazenado em C3 (atualização T ajustada C3 = C1 + C2).
 
     ```sql
     create table T3 (
@@ -196,7 +197,7 @@ Os operadores e funções que são essencialmente comparáveis têm a semântica
 
 - O SQL executa o arredondamento aritmético simétrico enquanto .NET Framework usa o arredondamento do banco. Consulte o artigo 196652 da knowledgebase para obter detalhes adicionais.
 
-- Por padrão, para localidades comuns, as comparações de cadeia de caracteres não diferenciam maiúsculas de minúsculas no SQL. No Visual Basic e C#, diferenciam maiúsculas de minúsculas. Por exemplo, `s == "Food"` (`s = "Food"` em Visual Basic) e `s == "Food"` pode produzir resultados diferentes se `s` for `food`.
+- Por padrão, para localidades comuns, as comparações de cadeia de caracteres não diferenciam maiúsculas de minúsculas no SQL. No Visual Basic e C#, diferenciam maiúsculas de minúsculas. Por exemplo, `s == "Food"` ( `s = "Food"` em Visual Basic) e `s == "Food"` pode produzir resultados diferentes se `s` for `food` .
 
     ```sql
     -- Assume default US-English locale (case insensitive).

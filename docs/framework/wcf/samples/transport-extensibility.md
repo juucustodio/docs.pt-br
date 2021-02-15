@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: extensibilidade de transporte'
 title: Extensibilidade de transporte
 ms.date: 03/30/2017
 ms.assetid: 3c9108be-f60f-4035-9f57-1da58c325420
-ms.openlocfilehash: 57868f72658831039e936bd4325836b24531a6dc
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: a55b182d792d5836c7b2721b938df44c2b2778a5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596520"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668455"
 ---
 # <a name="transport-extensibility"></a>Extensibilidade de transporte
+
 Esta seção contém exemplos que demonstram Transportes personalizados no Windows Communication Foundation (WCF).  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Ativação de UDP](udp-activation.md)  
  Demonstra como estender o exemplo de [transporte: UDP](transport-udp.md) para dar suporte à ativação do processo usando o WAS (serviço de ativação de processos do Windows).  
   

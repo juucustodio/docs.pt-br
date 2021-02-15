@@ -1,19 +1,22 @@
 ---
+description: 'Saiba mais sobre: definições de tipo (Entity SQL)'
 title: Definições de tipo (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 306b204a-ade5-47ef-95b5-c785d2da4a7e
-ms.openlocfilehash: 35f660a66fd706b37187056830af5e06ac586caa
-ms.sourcegitcommit: 628e8147ca10187488e6407dab4c4e6ebe0cac47
+ms.openlocfilehash: e5a66ed9ea456733bab9c68d96ef5c176dad5651
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72319242"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673408"
 ---
 # <a name="type-definitions-entity-sql"></a>Definições de tipo (Entity SQL)
+
 Uma definição de tipo é usada na instrução de declaração de uma função in-line de [!INCLUDE[esql](../../../../../../includes/esql-md.md)] .  
   
 ## <a name="remarks"></a>Comentários  
- A instrução de declaração para uma função embutida consiste na palavra-chave [Function](function-entity-sql.md) seguida pelo identificador que representa o nome da função (por exemplo, "MyAvg") seguido por uma lista de definições de parâmetro entre parênteses (por exemplo, "coleção de dívidas ( Decimal) ").  
+
+ A instrução de declaração para uma função embutida consiste na palavra-chave [Function](function-entity-sql.md) seguida pelo identificador que representa o nome da função (por exemplo, "MyAvg") seguido por uma lista de definições de parâmetro entre parênteses (por exemplo, "coleção indevido (Decimal)").  
   
  A lista de definição de parâmetro consiste de zero ou mais definições de parâmetro. Cada definição de parâmetro consiste em um identificador (o nome do parâmetro para a função, por exemplo, a dívidas “”) seguido por uma definição de tipo (por exemplo, “coleção (decimal) ").  
   
@@ -23,7 +26,7 @@ Uma definição de tipo é usada na instrução de declaração de uma função 
   
 - A palavra-chave `COLLECTION` seguido por outra definição de tipo no parêntese (por exemplo, “coleção (AdventureWorks.Order) ").  
   
-- A LINHA seguida por uma lista de definições de propriedade no parêntese (por exemplo, “linha de palavras-chave (x) AdventureWorks.Order "). As definições de propriedade têm um formato como "`identifier type_definition`, `identifier type_definition`,...".  
+- A LINHA seguida por uma lista de definições de propriedade no parêntese (por exemplo, “linha de palavras-chave (x) AdventureWorks.Order "). As definições de propriedade têm um formato como " `identifier type_definition` , `identifier type_definition` ,...".  
   
 - A referência seguido pelo tipo identificador no parêntese (por exemplo, “referência de palavras-chave (AdventureWorks.Order) "). O operador de definição de tipo de referência requer um tipo de entidade como o argumento. Você não pode especificar um tipo primitivo como o argumento.  
   
@@ -46,6 +49,7 @@ Uma definição de tipo é usada na instrução de declaração de uma função 
  Os tipos de entidade suporte a apenas tipos de entidade no namespace atual. Não incluem tipos primitivos.  
   
 ## <a name="examples"></a>Exemplos  
+
  A seguir está um exemplo de uma definição de tipo simples.  
   
 ```sql  
@@ -88,5 +92,5 @@ select Ref(x) from AdventureWorksEntities.SalesOrderHeaders as x
   
 ## <a name="see-also"></a>Consulte também
 
-- [Visão geral do Entity SQL](entity-sql-overview.md)
+- [Visão geral da Entity SQL](entity-sql-overview.md)
 - [Referência de Entity SQL](entity-sql-reference.md)

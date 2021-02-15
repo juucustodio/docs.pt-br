@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedDocument:: GetSourceLength'
 title: Método ISymUnmanagedDocument::GetSourceLength
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: e087dbbb-f4fb-4fbe-8292-e4f1a14d0df2
 topic_type:
 - apiref
-ms.openlocfilehash: e84639c1d63e6935b9b363f01c12bf0fbd3390e3
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 91ac1327afc84458c87122dddc31d0f5b2186f10
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615612"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721509"
 ---
 # <a name="isymunmanageddocumentgetsourcelength-method"></a>Método ISymUnmanagedDocument::GetSourceLength
+
 Obtém o comprimento, em bytes, da origem inserida.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -33,12 +35,14 @@ HRESULT GetSourceLength(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pRetVal`  
  fora Um ponteiro para uma variável que indica o comprimento, em bytes, da fonte inserida.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  S_OK se o método tiver sucesso.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedDocument](isymunmanageddocument-interface.md)

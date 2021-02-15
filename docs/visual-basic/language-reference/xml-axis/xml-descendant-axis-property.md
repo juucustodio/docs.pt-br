@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Propriedade do eixo descendente XML (Visual Basic)'
 title: Propriedade de Eixo Descendente XML
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - XML axis [Visual Basic], descendant
 - XML [Visual Basic], accessing
 ms.assetid: a178f85b-5d54-438f-8479-40b62af6fe76
-ms.openlocfilehash: 52544619171dbc7034baeb5feb61395d81096387
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c356d4d6f9a84755e9df171b26060fc6bfc4ead6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84400247"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768773"
 ---
 # <a name="xml-descendant-axis-property-visual-basic"></a>Propriedade de eixo descendente XML (Visual Basic)
 
 Fornece acesso aos descendentes dos seguintes: um <xref:System.Xml.Linq.XElement> objeto, um <xref:System.Xml.Linq.XDocument> objeto, uma coleção de <xref:System.Xml.Linq.XElement> objetos ou uma coleção de <xref:System.Xml.Linq.XDocument> objetos.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```vb
 object...<descendant>
@@ -38,13 +39,13 @@ object...<descendant>
 |Parte|Descrição|
 |----------|-----------------|
 |`prefix`|Opcional. Prefixo do namespace XML para o nó descendente. Deve ser um namespace XML global que é definido usando uma `Imports` instrução.|
-|`name`|Obrigatórios. Nome local do nó descendente. Consulte [nomes de elementos e atributos XML declarados](../../programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).|
+|`name`|Obrigatório. Nome local do nó descendente. Consulte [nomes de elementos e atributos XML declarados](../../programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).|
 
 `>` Necessário. Denota o final de uma propriedade de eixo descendente.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor retornado
 
-Uma coleção de objetos <xref:System.Xml.Linq.XElement>.
+Uma coleção de objetos <xref:System.Xml.Linq.XElement> .
 
 ## <a name="remarks"></a>Comentários
 
@@ -78,7 +79,7 @@ Esse código exibe o seguinte texto:
 
 `Name: Patrick Hines`
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.Linq.XElement>
 - [Propriedades do eixo XML](index.md)

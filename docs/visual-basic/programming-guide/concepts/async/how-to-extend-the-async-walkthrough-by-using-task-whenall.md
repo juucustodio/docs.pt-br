@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como estender a instrução assíncrona usando Task. WhenAll (Visual Basic)'
 title: Como estender as instruções passo a passo assíncronas usando Task.WhenAll
 ms.date: 07/20/2015
 ms.assetid: c06d386d-e996-4da9-bf3d-05a3b6c0a258
-ms.openlocfilehash: fb323852c83b1edf51396a0b800c2d54a833d0c0
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: fc303d6b2ed64cb2003c06724fcd21000d0b3abf
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396617"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100474376"
 ---
 # <a name="how-to-extend-the-async-walkthrough-by-using-taskwhenall-visual-basic"></a>Como estender as instruções passo a passo assíncronas usando Task.WhenAll (Visual Basic)
 
@@ -26,7 +27,7 @@ Você aplica o método `Task.WhenAll` a uma coleção de tarefas. A aplicação 
 
 1. Adicione o `ProcessURLAsync` método ao primeiro aplicativo que é desenvolvido em [passo a passos: acessando a Web usando Async e Await (Visual Basic)](walkthrough-accessing-the-web-by-using-async-and-await.md).
 
-    - Se você baixou o código de [exemplos de código do desenvolvedor](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f), abra o projeto AsyncWalkthrough e, em seguida, adicione `ProcessURLAsync` ao arquivo MainWindow. XAML. vb.
+    - Se você baixou o código de  [exemplos de código do desenvolvedor](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f), abra o projeto AsyncWalkthrough e, em seguida, adicione `ProcessURLAsync` ao arquivo MainWindow. XAML. vb.
 
     - Se você desenvolveu o código ao concluir o passo a passo, adicione `ProcessURLAsync` ao aplicativo que inclui o método `GetURLContentsAsync`. O arquivo MainWindow. XAML. vb para esse aplicativo é o primeiro exemplo na seção "exemplos de código completos da explicação passo a passo".
 
@@ -422,7 +423,7 @@ Class MainWindow
 End Class
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType>
 - [Instruções passo a passo: acessando a Web usando Async e Await (Visual Basic)](walkthrough-accessing-the-web-by-using-async-and-await.md)

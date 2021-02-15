@@ -1,7 +1,7 @@
 ---
+description: 'Saiba mais sobre: como cancelar uma consulta PLINQ'
 title: 'Como: Cancelar uma consulta PLINQ'
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -9,14 +9,15 @@ helpviewer_keywords:
 - PLINQ queries, how to cancel
 - cancellation, PLINQ
 ms.assetid: 80b14640-edfa-4153-be1b-3e003d3e9c1a
-ms.openlocfilehash: 09405a8a9f5d96d80454bcc98cbf29db54df6725
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: c81ea565beb7287389ea043fee5854eb592e5271
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84288206"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702178"
 ---
 # <a name="how-to-cancel-a-plinq-query"></a>Como: Cancelar uma consulta PLINQ
+
 Os exemplos a seguir mostram duas maneiras de cancelar uma consulta PLINQ. O primeiro exemplo mostra como cancelar uma consulta composta principalmente de travessia de dados. O segundo exemplo mostra como cancelar uma consulta que contém uma função de usuário que gasta muitos recursos de computação.
 
 > [!NOTE]
@@ -50,7 +51,7 @@ Para garantir a capacidade de resposta do sistema, recomendamos que você verifi
 
 Quando um enumerador é Descartado, por exemplo, quando o código é quebrado de um loop foreach (para cada Visual Basic) que está Iterando nos resultados da consulta, a consulta é cancelada, mas nenhuma exceção é gerada.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Linq.ParallelEnumerable>
 - [LINQ paralelo (PLINQ)](introduction-to-plinq.md)

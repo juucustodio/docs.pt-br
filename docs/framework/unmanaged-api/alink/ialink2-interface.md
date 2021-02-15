@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IALink2'
 title: Interface IALink2
 ms.date: 03/30/2017
 f1_keywords:
@@ -6,17 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - IALink2 interface
 ms.assetid: fba62a55-36bd-401e-bcd2-5be8e2d34891
-ms.openlocfilehash: 57998f8841ed952c8876fa6d36f090cf58866a8b
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 8c1cf7854e08bed3485c84e2cd446d8da44b3a19
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74431362"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718220"
 ---
 # <a name="ialink2-interface"></a>Interface IALink2
+
 Complementa a [interface IALink](ialink-interface.md) declarando métodos que operam em interfaces de metadados mais recentes, como a [interface IMetaDataEmit2](../metadata/imetadataemit2-interface.md). Além disso, o IALink2 declara métodos que fornecem flexibilidade de uso adicional nas interfaces IALink originais.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Método AddFile2](addfile2-method.md)  
   
  [Método EmitAssembly](emitassembly-method.md)  
@@ -43,4 +46,4 @@ Complementa a [interface IALink](ialink-interface.md) declarando métodos que op
 
 - [API do ALink](index.md)
 - [Interface IALink](ialink-interface.md)
-- [Al.exe (Assembly Linker)](../../tools/al-exe-assembly-linker.md)
+- [Al.exe (vinculador de assembly)](../../tools/al-exe-assembly-linker.md)

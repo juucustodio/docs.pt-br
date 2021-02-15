@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataEmit:: SetFieldMarshal'
 title: Método IMetaDataEmit::SetFieldMarshal
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: be232314-7f69-4855-bfab-63361bd22307
 topic_type:
 - apiref
-ms.openlocfilehash: d0066c6590a9e0cf278e036111c2739f7cfaf679
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 4694487479b0249e875abfd9ecd963a5dc404d46
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84003900"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99658042"
 ---
 # <a name="imetadataemitsetfieldmarshal-method"></a>Método IMetaDataEmit::SetFieldMarshal
+
 Define as informações de marshaling do PInvoke para o campo, o retorno do método ou o parâmetro do método referenciado pelo token especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT SetFieldMarshal (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `tk`  
  no O token para o item de dados de destino. Este é um `mdFieldDef` `mdParamDef` token ou.  
   
@@ -46,15 +49,16 @@ HRESULT SetFieldMarshal (
  no A contagem de bytes em `pvNativeType` .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MSCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataEmit](imetadataemit-interface.md)
 - [Interface IMetaDataEmit2](imetadataemit2-interface.md)

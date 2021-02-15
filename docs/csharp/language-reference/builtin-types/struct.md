@@ -1,7 +1,7 @@
 ---
-description: 'Saiba mais sobre o tipo de struct em C #'
 title: Tipos de estrutura-referência C#
-ms.date: 04/21/2020
+description: 'Saiba mais sobre o tipo de struct em C #'
+ms.date: 10/23/2020
 f1_keywords:
 - struct_CSharpKeyword
 helpviewer_keywords:
@@ -9,18 +9,18 @@ helpviewer_keywords:
 - struct type [C#]
 - structure type [C#]
 ms.assetid: ff3dd9b7-dc93-4720-8855-ef5558f65c7c
-ms.openlocfilehash: 7f3940ce487b9e382150234f317cf1dba34bb060
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 2ceac94c04dd8deb169e836f09928dfd9a38ac35
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89132723"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025427"
 ---
 # <a name="structure-types-c-reference"></a>Tipos de estrutura (referência C#)
 
 Um *tipo de estrutura* (ou *tipo de struct*) é um tipo de [valor](value-types.md) que pode encapsular dados e funcionalidade relacionada. Você usa a `struct` palavra-chave para definir um tipo de estrutura:
 
-[!code-csharp[struct example](snippets/StructType.cs#StructExample)]
+[!code-csharp[struct example](snippets/shared/StructType.cs#StructExample)]
 
 Os tipos de estrutura têm *semântica de valor*. Ou seja, uma variável de um tipo de estrutura contém uma instância do tipo. Por padrão, os valores de variáveis são copiados na atribuição, passando um argumento para um método e retornando um resultado de método. No caso de uma variável de tipo de estrutura, uma instância do tipo é copiada. Para obter mais informações, consulte [tipos de valor](value-types.md).
 
@@ -30,19 +30,19 @@ Como os tipos de estrutura têm semântica de valor, recomendamos que você defi
 
 ## <a name="readonly-struct"></a>`readonly` struct
 
-A partir do C# 7,2, você usa o `readonly` modificador para declarar que um tipo de estrutura é imutável:
-
-[!code-csharp[readonly struct](snippets/StructType.cs#ReadonlyStruct)]
-
-Todos os membros de dados de um `readonly` struct devem ser somente leitura da seguinte maneira:
+A partir do C# 7,2, você usa o `readonly` modificador para declarar que um tipo de estrutura é imutável. Todos os membros de dados de um `readonly` struct devem ser somente leitura da seguinte maneira:
 
 - Qualquer declaração de campo deve ter o [ `readonly` modificador](../keywords/readonly.md)
-- Qualquer propriedade, incluindo as implementadas automaticamente, deve ser somente leitura
+- Qualquer propriedade, incluindo as implementadas automaticamente, deve ser somente leitura. No C# 9,0 e posterior, uma propriedade pode ter um [ `init` acessador](../../whats-new/csharp-9.md#init-only-setters).
 
 Isso garante que nenhum membro de uma `readonly` struct modifique o estado da estrutura. No C# 8,0 e posterior, isso significa que outros membros da instância, exceto construtores, são implicitamente [`readonly`](#readonly-instance-members) .
 
 > [!NOTE]
 > Em uma `readonly` struct, um membro de dados de um tipo de referência mutável ainda pode mutar seu próprio estado. Por exemplo, você não pode substituir uma <xref:System.Collections.Generic.List%601> instância, mas pode adicionar novos elementos a ela.
+
+O código a seguir define uma `readonly` struct com setters de propriedade somente init, disponível em C# 9,0 e posterior:
+
+[!code-csharp[readonly struct](snippets/shared/StructType.cs#ReadonlyStruct)]
 
 ## <a name="readonly-instance-members"></a>`readonly` Membros da instância
 
@@ -54,20 +54,24 @@ Normalmente, você aplica o `readonly` modificador aos seguintes tipos de membro
 
 - maneiras
 
-  [!code-csharp[readonly method](snippets/StructType.cs#ReadonlyMethod)]
+  [!code-csharp[readonly method](snippets/shared/StructType.cs#ReadonlyMethod)]
 
   Você também pode aplicar o `readonly` modificador a métodos que substituem os métodos declarados em <xref:System.Object?displayProperty=nameWithType> :
 
-  [!code-csharp[readonly override](snippets/StructType.cs#ReadonlyOverride)]
+  [!code-csharp[readonly override](snippets/shared/StructType.cs#ReadonlyOverride)]
 
 - Propriedades e indexadores:
 
-  [!code-csharp[readonly property get](snippets/StructType.cs#ReadonlyProperty)]
+  [!code-csharp[readonly property get](snippets/shared/StructType.cs#ReadonlyProperty)]
 
   Se você precisar aplicar o `readonly` modificador a ambos os acessadores de uma propriedade ou indexador, aplique-o na declaração da propriedade ou do indexador.
 
   > [!NOTE]
   > O compilador declara um `get` acessador de uma [propriedade implementada automaticamente](../../programming-guide/classes-and-structs/auto-implemented-properties.md) como `readonly` , independentemente da presença do `readonly` modificador em uma declaração de propriedade.
+
+  No C# 9,0 e posterior, você pode aplicar o `readonly` modificador a uma propriedade ou a um indexador com um `init` acessador:
+
+  :::code language="csharp" source="snippets/shared/StructType.cs" id="ReadonlyWithInit":::
 
 Você não pode aplicar o `readonly` modificador a membros estáticos de um tipo de estrutura.
 
@@ -95,7 +99,7 @@ Normalmente, você cria uma instância de um tipo de estrutura chamando um const
 
 Se todos os campos de instância de um tipo de estrutura estiverem acessíveis, você também poderá instanciá-lo sem o `new` operador. Nesse caso, você deve inicializar todos os campos de instância antes do primeiro uso da instância. O seguinte exemplo mostra como fazer isso:
 
-[!code-csharp[without new](snippets/StructType.cs#WithoutNew)]
+[!code-csharp[without new](snippets/shared/StructType.cs#WithoutNew)]
 
 No caso dos tipos de [valor internos](value-types.md#built-in-value-types), use os literais correspondentes para especificar um valor do tipo.
 
@@ -118,13 +122,17 @@ A partir do C# 7,2, você pode usar o `ref` modificador na declaração de um ti
 
 Normalmente, você define um `ref` tipo de struct quando precisa de um tipo que também inclui membros de dados de `ref` tipos de struct:
 
-[!code-csharp[ref struct](snippets/StructType.cs#RefStruct)]
+[!code-csharp[ref struct](snippets/shared/StructType.cs#RefStruct)]
 
 Para declarar uma `ref` struct como [`readonly`](#readonly-struct) , combine os `readonly` `ref` modificadores e na declaração de tipo (o `readonly` modificador deve vir antes do `ref` Modificador):
 
-[!code-csharp[readonly ref struct](snippets/StructType.cs#ReadonlyRef)]
+[!code-csharp[readonly ref struct](snippets/shared/StructType.cs#ReadonlyRef)]
 
 No .NET, exemplos de uma `ref` estrutura são <xref:System.Span%601?displayProperty=nameWithType> e <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> .
+
+## <a name="struct-constraint"></a>restrição de struct
+
+Você também usa a `struct` palavra-chave na [ `struct` restrição](../../programming-guide/generics/constraints-on-type-parameters.md) para especificar que um parâmetro de tipo é um tipo de valor não anulável. Os tipos de estrutura e [Enumeração](enum.md) atendem à `struct` restrição.
 
 ## <a name="conversions"></a>Conversões
 
@@ -140,7 +148,7 @@ Para obter mais informações sobre os recursos introduzidos no C# 7,2 e posteri
 - [Membros da instância ReadOnly](~/_csharplang/proposals/csharp-8.0/readonly-instance-members.md)
 - [Segurança de tempo de compilação para tipos semelhantes a ref](~/_csharplang/proposals/csharp-7.2/span-safety.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de C#](../index.md)
 - [Diretrizes de design-escolhendo entre classe e estrutura](../../../standard/design-guidelines/choosing-between-class-and-struct.md)

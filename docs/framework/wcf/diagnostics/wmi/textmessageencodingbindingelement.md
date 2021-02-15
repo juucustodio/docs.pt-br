@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: TextMessageEncodingBindingElement'
 title: TextMessageEncodingBindingElement
 ms.date: 03/30/2017
 ms.assetid: 885e2d7a-3436-4093-bc5f-0a404c62acdc
-ms.openlocfilehash: 67c1083daa9acfd204d4de50d4e9178b25aafcf0
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 9848f1660642f92c4bce3542fbd404f463b8c84d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61858384"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757339"
 ---
 # <a name="textmessageencodingbindingelement"></a>TextMessageEncodingBindingElement
+
 TextMessageEncodingBindingElement  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class TextMessageEncodingBindingElement : MessageEncodingBindingElement  
@@ -25,33 +27,39 @@ class TextMessageEncodingBindingElement : MessageEncodingBindingElement
 ```  
   
 ## <a name="methods"></a>Métodos  
- A classe TextMessageEncodingBindingElement não define quaisquer métodos.  
+
+ A classe TextMessageEncodingBindingElement não define nenhum método.  
   
 ## <a name="properties"></a>Propriedades  
+
  A classe TextMessageEncodingBindingElement tem as seguintes propriedades:  
   
-### <a name="encoding"></a>Codificando  
+### <a name="encoding"></a>Codificação  
+
  Tipo de dados: cadeia de caracteres  
   
  Tipo de acesso: Somente leitura  
   
- O conjunto de caracteres codificação a ser usada para emitir mensagens na associação.  
+ A codificação do conjunto de caracteres a ser usada para emitir mensagens na associação.  
   
 ### <a name="maxreadpoolsize"></a>MaxReadPoolSize  
+
  Tipo de dados: sint32  
   
  Tipo de acesso: Somente leitura  
   
- Um inteiro que define quantas mensagens pode ser lidas simultaneamente sem alocar novos leitores.  
+ Um inteiro que define quantas mensagens podem ser lidas simultaneamente sem alocar novos leitores.  
   
 ### <a name="maxwritepoolsize"></a>MaxWritePoolSize  
+
  Tipo de dados: sint32  
   
  Tipo de acesso: Somente leitura  
   
- Um inteiro que define quantas mensagens pode ser enviado simultaneamente sem alocar novos escritores.  
+ Um inteiro que define quantas mensagens podem ser enviadas simultaneamente sem alocar novos gravadores.  
   
 ### <a name="readerquotas"></a>ReaderQuotas  
+
  Tipo de dados: XmlDictionaryReaderQuotas  
   
  Tipo de acesso: Somente leitura  
@@ -60,10 +68,10 @@ class TextMessageEncodingBindingElement : MessageEncodingBindingElement
   
 ## <a name="requirements"></a>Requisitos  
   
-|MOF|Declarado em Servicemodel.mof.|  
+|MOF|Declarado em ServiceModel. mof.|  
 |---------|-----------------------------------|  
-|Namespace|Definido no root\ServiceModel|  
+|Namespace|Definido em root\ServiceModel|  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>

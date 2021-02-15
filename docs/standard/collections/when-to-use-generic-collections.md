@@ -1,17 +1,17 @@
 ---
+description: 'Saiba mais sobre: quando usar coleções genéricas'
 title: Quando usar coleções genéricas
 ms.date: 04/30/2020
-ms.technology: dotnet-standard
 helpviewer_keywords:
-- collections [.NET Framework], generic
-- generic collections [.NET Framework]
+- collections [.NET], generic
+- generic collections [.NET]
 ms.assetid: e7b868b1-11fe-4ac5-bed3-de68aca47739
-ms.openlocfilehash: c59a125a8df95e3c4fe6e1839956d800bd6ee910
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: aea85606044e50c788eee9da4aaf7a4f5934cfc1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84290377"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675982"
 ---
 # <a name="when-to-use-generic-collections"></a>Quando usar coleções genéricas
 
@@ -25,9 +25,9 @@ Os seguintes tipos genéricos correspondem aos tipos de coleção existentes:
 
 - <xref:System.Collections.Generic.Dictionary%602> e <xref:System.Collections.Concurrent.ConcurrentDictionary%602> são as classes genéricas que correspondem à <xref:System.Collections.Hashtable>.
 
-- <xref:System.Collections.ObjectModel.Collection%601> é a classe genérica que corresponde à <xref:System.Collections.CollectionBase>. <xref:System.Collections.ObjectModel.Collection%601>pode ser usado como uma classe base, mas, ao contrário <xref:System.Collections.CollectionBase> de, não é abstrato, o que o torna muito mais fácil de usar.
+- <xref:System.Collections.ObjectModel.Collection%601> é a classe genérica que corresponde à <xref:System.Collections.CollectionBase>. <xref:System.Collections.ObjectModel.Collection%601> pode ser usado como uma classe base, mas, ao contrário <xref:System.Collections.CollectionBase> de, não é abstrato, o que o torna muito mais fácil de usar.
 
-- <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> é a classe genérica que corresponde à <xref:System.Collections.ReadOnlyCollectionBase>. <xref:System.Collections.ObjectModel.ReadOnlyCollection%601>Não é abstrato e tem um construtor que torna mais fácil expor um existente <xref:System.Collections.Generic.List%601> como uma coleção somente leitura.
+- <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> é a classe genérica que corresponde à <xref:System.Collections.ReadOnlyCollectionBase>. <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> Não é abstrato e tem um construtor que torna mais fácil expor um existente <xref:System.Collections.Generic.List%601> como uma coleção somente leitura.
 
 - As <xref:System.Collections.Generic.Queue%601> <xref:System.Collections.Concurrent.ConcurrentQueue%601> <xref:System.Collections.Immutable.ImmutableQueue%601> classes genéricas,,,, <xref:System.Collections.Immutable.ImmutableArray%601> <xref:System.Collections.Generic.SortedList%602> e <xref:System.Collections.Immutable.ImmutableSortedSet%601> correspondem às respectivas classes não genéricas com os mesmos nomes.
 
@@ -63,11 +63,12 @@ O `Builder` objeto pode ser criado chamando o método não genérico `CreateBuil
 O recurso LINQ para objetos permite que você use consultas LINQ para acessar objetos na memória, desde que o tipo de objeto implemente a interface <xref:System.Collections.IEnumerable?displayProperty=nameWithType> ou <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>. Consultas LINQ fornecem um padrão comum para acessar dados; normalmente são mais concisos e legíveis do que `foreach` loops padrão e fornecem recursos de filtragem, classificação e agrupamento. Consultas LINQ também podem melhorar o desempenho. Para obter mais informações, confira [LINQ to Objects (C#)](../../csharp/programming-guide/concepts/linq/linq-to-objects.md), [LINQ to Objects (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md) e [PLINQ (Parallel LINQ)](../parallel-programming/introduction-to-plinq.md).
 
 ## <a name="additional-functionality"></a>Funcionalidade adicional
+
 Alguns dos tipos genéricos possuem funcionalidades que não se encontram em tipos de coleção genérica. Por exemplo, a classe <xref:System.Collections.Generic.List%601>, que corresponde à classe <xref:System.Collections.ArrayList> não genérica, possui vários métodos que aceitam delegados genéricos, tais como o delegado <xref:System.Predicate%601> que permite que você especifique métodos para pesquisa na lista, o delegado <xref:System.Action%601> que representa métodos que atuam em cada elemento da lista e o delegado <xref:System.Converter%602> que permite definir conversões entre tipos.
 
 A classe <xref:System.Collections.Generic.List%601> permite que você especifique suas próprias implementações de interface genérica <xref:System.Collections.Generic.IComparer%601> para classificação e pesquisa na lista. As classes <xref:System.Collections.Generic.SortedDictionary%602> e <xref:System.Collections.Generic.SortedList%602> também possuem esse recurso. Além disso, essas classes permitem que você especifique comparadores quando a coleção for criada. De maneira semelhante, as classes <xref:System.Collections.Generic.Dictionary%602> e <xref:System.Collections.ObjectModel.KeyedCollection%602> permitem que você especifique seus próprios comparadores de igualdade.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Coleções e estruturas de dados](index.md)
 - [Tipos de coleção comumente usados](commonly-used-collection-types.md)

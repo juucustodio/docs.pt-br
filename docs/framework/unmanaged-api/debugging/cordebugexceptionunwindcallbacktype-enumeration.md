@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorDebugExceptionUnwindCallbackType'
 title: Enumeração CorDebugExceptionUnwindCallbackType
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 783dce92-8a98-43db-8f78-888d943dd5b2
 topic_type:
 - apiref
-ms.openlocfilehash: 4d2be9960f8935b754791a8badd4ea98b5d54912
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: 3e12cffcdf1eb921330f658215c52501dce83eff
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795905"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747017"
 ---
 # <a name="cordebugexceptionunwindcallbacktype-enumeration"></a>Enumeração CorDebugExceptionUnwindCallbackType
+
 Indica o evento que está sendo sinalizado pelo retorno de chamada durante a fase de desenrolamento.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,12 +37,13 @@ typedef enum CorDebugExceptionUnwindCallbackType {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`DEBUG_EXCEPTION_UNWIND_BEGIN`|O início do processo de desenrolar.|  
 |`DEBUG_EXCEPTION_INTERCEPTED`|A exceção foi interceptada.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

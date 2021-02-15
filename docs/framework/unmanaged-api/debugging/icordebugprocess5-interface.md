@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugProcess5'
 title: Interface ICorDebugProcess5
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 30a39d79-1f10-4328-9c5d-094ed824e2ba
 topic_type:
 - apiref
-ms.openlocfilehash: 1953a3e0492e4cfcdaea761b68ea22cf5a4a8ed7
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 880c305c1d9786f87d9727836a973696aa686ecf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83205528"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649761"
 ---
 # <a name="icordebugprocess5-interface"></a>Interface ICorDebugProcess5
+
 Estende a interface ICorDebugProcess para dar suporte ao acesso ao heap gerenciado, para fornecer informações sobre a coleta de lixo de objetos gerenciados e para determinar se um depurador carrega imagens do cache de imagem nativa local do aplicativo.  
   
 ## <a name="methods"></a>Métodos  
@@ -42,12 +44,14 @@ Estende a interface ICorDebugProcess para dar suporte ao acesso ao heap gerencia
 |[Método GetTypeLayout](icordebugprocess5-gettypelayout-method.md)|Obtém informações sobre o layout de um objeto na memória com base em seu identificador de tipo.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Essa interface estende logicamente as interfaces ICorDebugProcess, ICorDebugProcess2 e [ICorDebugProcess3](icordebugprocess3-interface.md) .  
   
 > [!NOTE]
 > Esta interface não dá suporte a chamadas remotas de outro computador ou de outro processo.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -56,7 +60,7 @@ Estende a interface ICorDebugProcess para dar suporte ao acesso ao heap gerencia
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Depuração](index.md)

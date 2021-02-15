@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: concedendo permissões de Row-Level no SQL Server'
 title: Conceder permissões de nível de linha no SQL Server
 ms.date: 03/30/2017
 ms.assetid: a55aaa12-34ab-41cd-9dec-fd255b29258c
-ms.openlocfilehash: df5fcb4a6c73e12bec2ab17501fdfb02cf672324
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: fe69a023b5befbdb53473881647fff8bdf0e9795
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70782357"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99663294"
 ---
 # <a name="granting-row-level-permissions-in-sql-server"></a>Conceder permissões de nível de linha no SQL Server
 
@@ -23,7 +24,7 @@ O exemplo a seguir descreve como configurar a filtragem em nível de linha com b
 
 - Habilitar Filtragem em nível de linha:
 
-  - Se você estiver usando o SQL Server 2016 ou superior, ou o [banco de dados SQL do Azure](https://docs.microsoft.com/azure/sql-database/), crie uma política de segurança que adiciona um predicado na tabela, restringindo as linhas retornadas àquelas que correspondem ao usuário do banco de dados atual (usando a função interna CURRENT_USER ()) ou o nome de logon atual (usando a função de SUSER_SNAME () interna):
+  - Se você estiver usando o SQL Server 2016 ou superior, ou o [banco de dados SQL do Azure](/azure/sql-database/), crie uma política de segurança que adiciona um predicado na tabela que restringe as linhas retornadas àquelas que correspondem ao usuário do banco de dados atual (usando a função interna CURRENT_USER ()) ou o nome de logon atual (usando a função interna SUSER_SNAME ()):
 
       ```sql
       CREATE SCHEMA Security
@@ -53,7 +54,7 @@ O exemplo a seguir descreve como configurar a filtragem em nível de linha com b
       GO
       ```
 
-- Crie procedimentos armazenados para selecionar, inserir, atualizar e excluir dados. Se a filtragem for aplicada por uma política de segurança, os procedimentos armazenados devem executar essas operações na tabela base diretamente; caso contrário, se a filtragem for aplicada por um modo de exibição, os procedimentos armazenados deverão operar em relação à exibição. A política de segurança ou a exibição filtrará automaticamente as linhas retornadas ou modificadas por consultas de usuário, e o procedimento armazenado fornecerá um limite de segurança mais difícil para impedir que os usuários com acesso direto a consultas executem com êxito consultas que podem inferir o existência de dados filtrados.
+- Crie procedimentos armazenados para selecionar, inserir, atualizar e excluir dados. Se a filtragem for aplicada por uma política de segurança, os procedimentos armazenados devem executar essas operações na tabela base diretamente; caso contrário, se a filtragem for aplicada por um modo de exibição, os procedimentos armazenados deverão operar em relação à exibição. A política de segurança ou a exibição filtrará automaticamente as linhas retornadas ou modificadas por consultas de usuário, e o procedimento armazenado fornecerá um limite de segurança mais difícil para impedir que os usuários com acesso direto a consultas executem com êxito consultas que podem inferir a existência de dados filtrados.
 
 - Para procedimentos armazenados que inserem dados, Capture o nome de usuário usando a mesma função especificada na política de segurança ou exibição e insira esse valor na coluna nome de usuário.
 
@@ -64,9 +65,9 @@ O exemplo a seguir descreve como configurar a filtragem em nível de linha com b
 ## <a name="see-also"></a>Consulte também
 
 - [Segurança em nível de linha](/sql/relational-databases/security/row-level-security)
-- [Securing ADO.NET Applications](../securing-ado-net-applications.md) (Protegendo aplicativos ADO.NET)
+- [Protegendo aplicativos ADO.NET](../securing-ado-net-applications.md)
 - [Visão geral de segurança do SQL Server](overview-of-sql-server-security.md)
-- [Cenários de segurança do aplicativo no SQL Server](application-security-scenarios-in-sql-server.md)
+- [Cenários de Segurança de Aplicativo no SQL Server](application-security-scenarios-in-sql-server.md)
 - [Gerenciando permissões com procedimentos armazenados no SQL Server](managing-permissions-with-stored-procedures-in-sql-server.md)
-- [Escrevendo SQL dinâmico seguro no SQL Server](writing-secure-dynamic-sql-in-sql-server.md)
-- [ADO.NET Overview](../ado-net-overview.md) (Visão geral do ADO.NET)
+- [Gravação de SQL Dinâmico Seguro no SQL Server](writing-secure-dynamic-sql-in-sql-server.md)
+- [Visão geral do ADO.NET](../ado-net-overview.md)

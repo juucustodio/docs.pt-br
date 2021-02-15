@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: protegendo aplicativos ADO.NET'
 title: Protegendo aplicativos
 ms.date: 03/30/2017
 ms.assetid: 005a1d43-6ee5-471e-ad98-1d30a44d49d5
-ms.openlocfilehash: 1e08bb2386dff5d824d46aba652609ec5a373008
-ms.sourcegitcommit: e7748001b1cee80ced691d8a76ca814c0b02dd9b
+ms.openlocfilehash: 4e4d219d1f4249846943d019e174abd6d43687c7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86374514"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718870"
 ---
 # <a name="securing-adonet-applications"></a>Protegendo aplicativos ADO.NET
 
@@ -39,7 +40,7 @@ Escrever código seguro não protege contra buracos na segurança autoinfligidos
  [Diretrizes de segurança do conjunto de tabela e DataTable](dataset-datatable-dataview/security-guidance.md)  
  Fornece diretrizes de segurança para o <xref:System.Data.DataSet> e o <xref:System.Data.DataTable> .
 
- [Segurança de SQL Server](./sql/sql-server-security.md)  
+ [Segurança do SQL Server](./sql/sql-server-security.md)  
  Descreve os recursos de segurança do SQL Server da perspectiva de um desenvolvedor.  
   
  [Considerações sobre segurança](./ef/security-considerations.md)  
@@ -48,16 +49,16 @@ Escrever código seguro não protege contra buracos na segurança autoinfligidos
  [Segurança](../../../standard/security/index.md)  
  Contém links para artigos que descrevem todos os aspectos de segurança no .NET.  
   
- [Ferramentas de segurança](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/7w3fd0wb(v=vs.90))  
+ [Ferramentas de segurança](/previous-versions/visualstudio/visual-studio-2008/7w3fd0wb(v=vs.90))  
  As ferramentas do .NET Framework para proteger e administrar a política de segurança.  
   
- [Recursos para criar aplicativos seguros](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms165101(v=vs.100))  
+ [Recursos para criar aplicativos seguros](/previous-versions/visualstudio/visual-studio-2010/ms165101(v=vs.100))  
  Fornece links para artigos para criar aplicativos seguros.  
   
  [Bibliografia de segurança](/visualstudio/ide/securing-applications)  
  Fornece links para recursos externos disponíveis online e em cópia impressa.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [ADO.NET](index.md)
 - [Visão geral do ADO.NET](ado-net-overview.md)

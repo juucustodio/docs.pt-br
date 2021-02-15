@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: usando o Visualizador de rastreamento de serviço para exibir rastreamentos correlacionados e solução de problemas'
 title: Utilizando o visualizador de rastreamento de serviço para visualização de rastreamento correlacionados e soluções de problemas
 ms.date: 03/30/2017
 ms.assetid: 05d2321c-8acb-49d7-a6cd-8ef2220c6775
-ms.openlocfilehash: e1cd1443e96e7195127cb95e7ef1b2c4d6d9c176
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 3f6f48c3d366a024c5dcc0cdbc85c4aea47a7a8b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84587749"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99758158"
 ---
 # <a name="using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting"></a>Utilizando o visualizador de rastreamento de serviço para visualização de rastreamento correlacionados e soluções de problemas
 
@@ -15,9 +16,9 @@ Este tópico descreve o formato dos dados de rastreamento, como exibi-los e abor
 
 ## <a name="using-the-service-trace-viewer-tool"></a>Usando a ferramenta Visualizador de Rastreamento de Serviço
 
-A ferramenta de visualizador de rastreamento do serviço Windows Communication Foundation (WCF) ajuda a correlacionar rastreamentos de diagnóstico produzidos por ouvintes do WCF para localizar a causa raiz de um erro. A ferramenta oferece uma maneira de exibir, agrupar e filtrar rastreamentos de forma fácil para que você possa diagnosticar, reparar e verificar problemas com os serviços WCF. Para obter mais informações sobre como usar essa ferramenta, consulte [Service Trace Viewer Tool (SvcTraceViewer. exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md).
+A ferramenta de visualizador de rastreamento do serviço Windows Communication Foundation (WCF) ajuda a correlacionar rastreamentos de diagnóstico produzidos por ouvintes do WCF para localizar a causa raiz de um erro. A ferramenta oferece uma maneira de exibir, agrupar e filtrar rastreamentos de forma fácil para que você possa diagnosticar, reparar e verificar problemas com os serviços WCF. Para obter mais informações sobre como usar essa ferramenta, consulte [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md).
 
-Este tópico contém capturas de tela de rastreamentos gerados pela execução da amostra de [rastreamento e registro de mensagens](../../samples/tracing-and-message-logging.md) , quando exibido usando a [ferramenta do Visualizador de rastreamento de serviço (SvcTraceViewer. exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md). Este tópico demonstra como entender o conteúdo do rastreamento, as atividades e sua correlação e como analisar grandes números de rastreamentos ao solucionar problemas.
+Este tópico contém capturas de tela de rastreamentos gerados pela execução da amostra de [rastreamento e registro de mensagens](../../samples/tracing-and-message-logging.md) , quando exibido usando a [ferramenta do Visualizador de rastreamento de serviço (SvcTraceViewer.exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md). Este tópico demonstra como entender o conteúdo do rastreamento, as atividades e sua correlação e como analisar grandes números de rastreamentos ao solucionar problemas.
 
 ## <a name="viewing-trace-content"></a>Exibindo conteúdo de rastreamento
 
@@ -46,15 +47,15 @@ Além disso, a exibição formatada também fornece uma descrição para o rastr
 
 No modo de exibição XML, as marcas XML úteis incluem o seguinte:
 
-- `<SubType>`(nível de rastreamento).
+- `<SubType>` (nível de rastreamento).
 
 - `<TimeCreated>`.
 
-- `<Source>`(nome da origem do rastreamento).
+- `<Source>` (nome da origem do rastreamento).
 
-- `<Correlation>`(ID da atividade definida ao emitir o rastreamento).
+- `<Correlation>` (ID da atividade definida ao emitir o rastreamento).
 
-- `<Execution>`(ID do processo e thread).
+- `<Execution>` (ID do processo e thread).
 
 - `<Computer>`.
 
@@ -214,5 +215,5 @@ Para iniciar a solução de problemas, você também pode escolher um rastreamen
 ## <a name="see-also"></a>Consulte também
 
 - [Cenários de rastreamento ponta a ponta](end-to-end-tracing-scenarios.md)
-- [Ferramenta Visualizador de rastreamento de serviço (SvcTraceViewer.exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md)
+- [Ferramenta Visualizador de Rastreamento de Serviço (SvcTraceViewer.exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md)
 - [Rastreamento](index.md)

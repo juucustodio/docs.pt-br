@@ -1,24 +1,24 @@
 ---
-title: dotnet-símbolo-.NET Core
-description: Instalando e usando a ferramenta de linha de comando dotnet-Symbol.
-ms.date: 08/26/2020
-ms.openlocfilehash: feaa64ad756878f85b829ab0cecf6ea2736014ba
-ms.sourcegitcommit: 43d5aca3fda42bad8843f6c4e72f6bd52daa55f1
+title: dotnet-ferramenta de diagnóstico de símbolo-CLI do .NET
+description: Saiba como instalar e usar a ferramenta dotnet-Symbol CLI para baixar arquivos necessários para depurar despejos e minidespejos do .NET.
+ms.date: 11/17/2020
+ms.openlocfilehash: 69c05544e886d9d41113c8a2383f760b85d01124
+ms.sourcegitcommit: c0b803bffaf101e12f071faf94ca21b46d04ff30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89598323"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97764988"
 ---
 # <a name="symbol-downloader-dotnet-symbol"></a>Downloader de símbolos (dotNet-Symbol)
 
 **Este artigo aplica-se a:** ✔️ SDK do .net Core 2,1 e versões posteriores
 
-## <a name="install-dotnet-symbol"></a>Instalar dotnet-símbolo
+## <a name="install"></a>Instalar
 
 Para instalar a versão de lançamento mais recente do `dotnet-symbol` [pacote NuGet](https://www.nuget.org/packages/dotnet-symbol), use o comando de [instalação da ferramenta dotnet](../tools/dotnet-tool-install.md) :
 
 ```dotnetcli
-dotnet tool install -g dotnet-symbol
+dotnet tool install --global dotnet-symbol
 ```
 
 ## <a name="synopsis"></a>Sinopse
@@ -97,4 +97,9 @@ dotnet-symbol --host-only --debugging <dump file path>
 
 - 404 não encontrado ao baixar símbolos.
 
-   O download de símbolo só tem suporte em versões oficiais do .NET Core Runtime adquiridas por meio de canais oficiais, como [o site oficial](https://dotnet.microsoft.com/download/dotnet-core) e as [fontes padrão nos scripts de instalação dotnet](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-scripts). Um erro 404 ao baixar arquivos de depuração pode indicar que o despejo foi criado com um tempo de execução do .NET Core de outra fonte, como um compilado da origem localmente ou para um distribuição Linux específico ou de sites da Comunidade como Archlinux. Nesses casos, o arquivo necessário para depuração (dotNet, libcoreclr.so e libmscordaccore.so) deve ser copiado dessas fontes ou do ambiente no qual o arquivo de despejo foi criado.
+   O download de símbolo só tem suporte em versões oficiais do .NET Core Runtime adquiridas por meio de canais oficiais, como [o site oficial](https://dotnet.microsoft.com/download/dotnet-core) e as [fontes padrão nos scripts de instalação dotnet](../tools/dotnet-install-script.md). Um erro 404 ao baixar arquivos de depuração pode indicar que o despejo foi criado com um tempo de execução do .NET Core de outra fonte, como um compilado da origem localmente ou para um distribuição Linux específico ou de sites da Comunidade como Archlinux. Nesses casos, o arquivo necessário para depuração (dotNet, libcoreclr.so e libmscordaccore.so) deve ser copiado dessas fontes ou do ambiente no qual o arquivo de despejo foi criado.
+
+## <a name="see-also"></a>Veja também
+
+* [Depurando com símbolos](/windows/win32/dxtecharts/debugging-with-symbols)
+* [PDBs portáteis](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md)

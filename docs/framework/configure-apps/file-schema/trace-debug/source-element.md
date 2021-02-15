@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <source> elemento'
 title: Elemento <source>
 ms.date: 09/29/2017
 f1_keywords:
@@ -7,14 +8,15 @@ f1_keywords:
 helpviewer_keywords:
 - <source> element
 - source element
-ms.openlocfilehash: 417722ce2f3865350158413307495e3ab435d386
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: acf510dd5813900f36ac431418d55bbc6c2f364a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79153289"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750579"
 ---
 # <a name="source-element"></a>Elemento \<source>
+
 Especifica uma origem de rastreamento que inicia as mensagens de rastreamento.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -22,7 +24,7 @@ Especifica uma origem de rastreamento que inicia as mensagens de rastreamento.
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<sources>**](sources-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<source>**
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <source>
@@ -31,6 +33,7 @@ Especifica uma origem de rastreamento que inicia as mensagens de rastreamento.
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -57,9 +60,11 @@ Especifica uma origem de rastreamento que inicia as mensagens de rastreamento.
 |`sources`|Contém as origens de rastreamento que iniciam as mensagens de rastreamento.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse elemento pode ser usado no arquivo de configuração da máquina (Machine. config) e no arquivo de configuração do aplicativo.  
+
+ Esse elemento pode ser usado no arquivo de configuração da máquina (Machine.config) e no arquivo de configuração do aplicativo.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir mostra como usar o `<source>` elemento para adicionar a origem de rastreamento `mySource` e definir o nível para a opção de origem denominada `sourceSwitch` . Um ouvinte de rastreamento de console é adicionado que grava informações de rastreamento no console do.  
   
 ```xml  
@@ -82,7 +87,7 @@ Especifica uma origem de rastreamento que inicia as mensagens de rastreamento.
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações de rastreamento e depuração](index.md)
 - [Opções de rastreamento](../../../debug-trace-profile/trace-switches.md)

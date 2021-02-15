@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugEval:: IsActive'
 title: Método ICorDebugEval::IsActive
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: bf2bba24-d278-43bd-b1c5-35680e748d3e
 topic_type:
 - apiref
-ms.openlocfilehash: 4ee055812eb8dce2dc86f834dde92d7de5e1fdf9
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: 2314814f8979f460063017ebdf46beb512417395
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976207"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694039"
 ---
 # <a name="icordebugevalisactive-method"></a>Método ICorDebugEval::IsActive
+
 Obtém um valor que indica se este objeto ICorDebugEval está em execução no momento.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,10 +36,12 @@ HRESULT IsActive (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pbActive`  
  fora Ponteiro para um valor que indica se essa avaliação está ativa.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

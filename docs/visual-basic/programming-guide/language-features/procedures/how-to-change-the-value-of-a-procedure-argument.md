@@ -13,14 +13,15 @@ helpviewer_keywords:
 - arguments [Visual Basic], ByRef
 - arguments [Visual Basic], changing value
 ms.assetid: 6fad2368-5da7-4c07-8bf8-0f4e65a1be67
-ms.openlocfilehash: 46cf9062d01e248b6e90882a923a48210780f7f4
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 9960dacc053c5dc8d8cfdfd6eaa0ea3258ed0fea
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84388498"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91077066"
 ---
 # <a name="how-to-change-the-value-of-a-procedure-argument-visual-basic"></a>Como alterar o valor de um argumento de procedimento (Visual Basic)
+
 Quando você chama um procedimento, cada argumento fornecido corresponde a um dos parâmetros definidos no procedimento. Em alguns casos, o código do procedimento pode alterar o valor subjacente a um argumento no código de chamada. Em outros casos, o procedimento pode alterar apenas sua cópia local de um argumento.  
   
  Quando você chama o procedimento, Visual Basic faz uma cópia local de cada argumento passado por [ByVal](../../../language-reference/modifiers/byval.md). Para cada argumento passado por [ByRef](../../../language-reference/modifiers/byref.md), Visual Basic dá ao código do procedimento uma referência direta para o elemento de programação subjacente ao argumento no código de chamada.  
@@ -42,19 +43,21 @@ Quando você chama um procedimento, cada argumento fornecido corresponde a um do
  Veja o exemplo mais abaixo para ver uma demonstração.  
   
 ## <a name="changing-local-copies"></a>Alterando cópias locais  
+
  Se o elemento subjacente no código de chamada for um elemento não modificável ou se o argumento for passado `ByVal` , o procedimento não poderá alterar seu valor no código de chamada. No entanto, o procedimento pode alterar sua cópia local desse argumento.  
   
 #### <a name="to-change-the-copy-of-a-procedure-argument-in-the-procedure-code"></a>Para alterar a cópia de um argumento de procedimento no código do procedimento  
   
 1. Na declaração de procedimento, especifique [ByVal](../../../language-reference/modifiers/byval.md) para o parâmetro correspondente ao argumento.  
   
-     -ou-  
+     - ou -  
   
      No código de chamada, coloque o argumento entre parênteses na lista de argumentos. Isso força Visual Basic a passar o argumento por valor, mesmo se o parâmetro correspondente especificar `ByRef` .  
   
 2. No código do procedimento, use o nome do parâmetro para atribuir um valor à cópia local do argumento. O valor subjacente no código de chamada não é alterado.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir mostra dois procedimentos que usam uma variável de matriz e operam em seus elementos. O `increase` procedimento simplesmente adiciona um a cada elemento. O `replace` procedimento atribui uma nova matriz ao parâmetro `a()` e, em seguida, adiciona uma a cada elemento.  
   
  [!code-vb[VbVbcnProcedures#35](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#35)]  
@@ -70,11 +73,13 @@ Quando você chama um procedimento, cada argumento fornecido corresponde a um do
  Você pode impedir que o procedimento modifique a variável em si no código de chamada. Consulte [como: proteger um argumento de procedimento contra alterações de valor](./how-to-protect-a-procedure-argument-against-value-changes.md).  
   
 ## <a name="compile-the-code"></a>Compilar o código  
+
  Ao passar uma variável por referência, você deve usar a `ByRef` palavra-chave para especificar esse mecanismo.  
   
  O padrão no Visual Basic é passar argumentos por valor. No entanto, é uma boa prática de programação incluir a palavra-chave [ByVal](../../../language-reference/modifiers/byval.md) ou [ByRef](../../../language-reference/modifiers/byref.md) com cada parâmetro declarado. Isso torna seu código mais fácil de ler.  
   
 ## <a name="net-framework-security"></a>Segurança do .NET Framework  
+
  Sempre há um risco potencial em permitir que um procedimento altere o valor subjacente a um argumento no código de chamada. Certifique-se de que você espera que esse valor seja alterado e esteja preparado para verificá-lo quanto à validade antes de usá-lo.  
   
 ## <a name="see-also"></a>Confira também

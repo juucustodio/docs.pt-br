@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 5006-ImportKnownTypesStop'
 title: 5006 - ImportKnownTypesStop
 ms.date: 03/30/2017
 ms.assetid: 2e1786c1-cbdd-4427-b8fc-cbf86b8debae
-ms.openlocfilehash: 104b2aaabfa41ea1373cb644a47798d25b07449a
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: f4f2fa4dbdbbaf3849a23f76edd22b37a510ab32
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61991738"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760167"
 ---
 # <a name="5006---importknowntypesstop"></a>5006 - ImportKnownTypesStop
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,9 +22,11 @@ ms.locfileid: "61991738"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando o ImportKnownTypes é interrompido.  
+
+ Esse evento é emitido quando o ImportKnownTypes para.  
   
 ## <a name="message"></a>Mensagem  
- Parar ImportKnownTypes.  
+
+ ImportKnownTypes parar.  
   
 ## <a name="details"></a>Detalhes

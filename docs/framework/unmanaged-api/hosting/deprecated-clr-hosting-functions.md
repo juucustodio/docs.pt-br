@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: funções de hospedagem CLR preteridas'
 title: Funções de hospedagem CLR reprovadas
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -7,19 +8,21 @@ helpviewer_keywords:
 - .NET Framework 2.0, hosting global static functions
 - hosting global static functions [.NET Framework], version 2.0
 ms.assetid: 91fbbb35-e543-4814-b806-371cebae8c5a
-ms.openlocfilehash: 083d0ff285abb4a99ad05c791bc504ff7f282c6a
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 3d16b5829e29c5c963f4790bbb3be7adcaeedbfc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84504362"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785660"
 ---
 # <a name="deprecated-clr-hosting-functions"></a>Funções de hospedagem CLR reprovadas
+
 Esta seção descreve as funções estáticas globais não gerenciadas que as versões anteriores da API de hospedagem usavam.  
   
  Com exceção das funções de infraestrutura ( `_Cor*` funções), que são usadas somente pelo .NET Framework, essas funções foram preteridas no .NET Framework 4.  
   
 ## <a name="activation-functions"></a>Funções de ativação  
+
  [Função ClrCreateManagedInstance](clrcreatemanagedinstance-function.md)  
  Preterido. Cria uma instância do tipo gerenciado especificado.  
   
@@ -57,6 +60,7 @@ Esta seção descreve as funções estáticas globais não gerenciadas que as ve
  Preterido. Obtém informações de versão e diretório sobre o CLR solicitado por um aplicativo.  
   
 ## <a name="clr-version-functions"></a>Funções de versão do CLR  
+
  As funções nesta seção retornam uma versão do CLR; Eles não ativam o CLR.  
   
  [Função GetCORVersion](getcorversion-function.md)  
@@ -78,6 +82,7 @@ Esta seção descreve as funções estáticas globais não gerenciadas que as ve
  Preterido. Permite que o host determine qual versão do CLR será usada dentro do processo antes de inicializar explicitamente o CLR.  
   
 ## <a name="hosting-functions"></a>Funções de hospedagem  
+
  [Função CallFunctionShim](callfunctionshim-function.md)  
  Preterido. Faz uma chamada para a função que tem o nome e os parâmetros especificados na biblioteca especificada.  
   
@@ -139,6 +144,7 @@ Esta seção descreve as funções estáticas globais não gerenciadas que as ve
  Preterido. Aponta para uma função que notifica o host de que um identificador de espera foi sinalizado ou atingiu o tempo limite.  
   
 ## <a name="infrastructure-functions"></a>Funções de infraestrutura  
+
  As funções nesta seção são para uso apenas pelo .NET Framework.  
   
  [Função _CorDllMain](cordllmain-function.md)  
@@ -156,6 +162,6 @@ Esta seção descreve as funções estáticas globais não gerenciadas que as ve
  [Função _CorValidateImage](corvalidateimage-function.md)  
  Valida as imagens de módulo gerenciado e notifica o carregador do sistema operacional depois que elas tiverem sido carregadas.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [.NET Framework 4 hospedando funções estáticas globais](net-framework-4-hosting-global-static-functions.md)

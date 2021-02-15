@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 7723892a33bf7dd8e475b2f696db5d9ab287e182
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: ab1006f706439bcf5129854da3d14538e5b690a2
+ms.sourcegitcommit: bc9c63541c3dc756d48a7ce9d22b5583a18cf7fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84602988"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94506840"
 ---
 
 Os pacotes adicionados aos feeds do Gerenciador de pacotes são nomeados em um formato hackable: `{product}-{type}-{version}` .
@@ -24,6 +24,7 @@ Escolhe o SDK ou o tempo de execução. As opções válidas são:
 - **Versão**\
 A versão do SDK ou do tempo de execução a ser instalado. Este artigo sempre fornecerá as instruções para a versão mais recente com suporte. As opções válidas são qualquer versão lançada, como:
 
+  - 5.0
   - 3.1
   - 3.0
   - 2.1
@@ -32,10 +33,11 @@ A versão do SDK ou do tempo de execução a ser instalado. Este artigo sempre f
 
 ### <a name="examples"></a>Exemplos
 
-- Instale o tempo de execução do ASP.NET Core 3,1: `aspnetcore-runtime-3.1`
+- Instale o tempo de execução do ASP.NET Core 5,0: `aspnetcore-runtime-5.0`
 - Instale o tempo de execução do .NET Core 2,1: `dotnet-runtime-2.1`
+- Instale o SDK do .NET 5,0: `dotnet-sdk-5.0`
 - Instale o SDK do .NET Core 3,1: `dotnet-sdk-3.1`
 
 ### <a name="package-missing"></a>Pacote ausente
 
-Se a combinação de versão do pacote não funcionar, ela não estará disponível. Por exemplo, não há um SDK ASP.NET Core, os componentes do SDK estão incluídos no SDK do .NET Core. O valor `aspnetcore-sdk-2.2` está incorreto e deve ser `dotnet-sdk-2.2` . Para obter uma lista de distribuições do Linux com suporte no .NET Core, confira [dependências e requisitos do .NET Core](../linux.md).
+Se a combinação de versão do pacote não funcionar, ela não estará disponível. Por exemplo, não há um SDK ASP.NET Core, os componentes do SDK estão incluídos no SDK do .NET. O valor `aspnetcore-sdk-2.2` está incorreto e deve ser `dotnet-sdk-2.2` . Para obter uma lista de distribuições do Linux com suporte no .NET Core, consulte [dependências e requisitos do .net](../linux.md).

@@ -9,20 +9,22 @@ helpviewer_keywords:
 - UI Automation, custom user interface (UI) elements
 - providers, UI Automation
 ms.assetid: 88bc4212-3f4e-4bac-bae0-faef31944b71
-ms.openlocfilehash: ed296daf24b6a3f8e8ced5c843151cc8478ead9d
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 6ed4994d6e1f0f1a59d0fa36ffd5d8e17673cc7e
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87163194"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96240349"
 ---
 # <a name="ui-automation-providers-for-managed-code-how-to-topics"></a>Tópicos de instrução sobre Provedores de automação de interface do usuário para código gerenciado
+
 > [!NOTE]
 > Esta documentação destina-se a desenvolvedores do .NET Framework que querem usar as classes da [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] gerenciadas definidas no namespace <xref:System.Windows.Automation>. Para obter as informações mais recentes sobre a [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], consulte [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32) (API de Automação do Windows: Automação da Interface do Usuário).  
   
  Esta seção contém exemplos de código que demonstram tarefas em [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] provedores de escrita para [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] elementos.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Expor um provedor de automação de interface do usuário do lado do servidor](expose-a-server-side-ui-automation-provider.md)  
  [Retornando Propriedades de um Provedor de Automação de IU](return-properties-from-a-ui-automation-provider.md)  
  [Disparar Eventos de um Provedor de Automação UI](raise-events-from-a-ui-automation-provider.md)  

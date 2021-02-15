@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedDocument:: GetURL'
 title: Método ISymUnmanagedDocument::GetURL
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 60600178-c2b5-4cab-b3a5-f0f61acebaf1
 topic_type:
 - apiref
-ms.openlocfilehash: 3685707f1983ffec413e9cea2df5034ac53f643a
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: b39b36054d80f9ad2f9dd076e2055ccbc6526973
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615586"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710186"
 ---
 # <a name="isymunmanageddocumentgeturl-method"></a>Método ISymUnmanagedDocument::GetURL
+
 Retorna o Uniform Resource Locator (URL) deste documento.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,6 +37,7 @@ HRESULT GetURL(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `cchUrl`  
  no O tamanho, em caracteres, do `szURL` buffer.  
   
@@ -45,8 +48,9 @@ HRESULT GetURL(
  fora O buffer que contém a URL.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  S_OK se o método tiver sucesso; caso contrário, um código de erro.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedDocument](isymunmanageddocument-interface.md)

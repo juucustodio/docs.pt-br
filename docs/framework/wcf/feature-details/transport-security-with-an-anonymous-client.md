@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 056653a5-384e-4a02-ae3c-1b0157d2ccb4
-ms.openlocfilehash: 08cfb8c1a5581f17a251224430018764bed80b0f
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 5e8bcab4cdd8f27e9ea27e66fe4c848ccd35e99c
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85245005"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556805"
 ---
 # <a name="transport-security-with-an-anonymous-client"></a>Segurança de transporte com um cliente anônimo
 
@@ -25,12 +25,12 @@ Para obter mais informações sobre como usar um certificado com um serviço, co
 
 |Característica|Descrição|
 |--------------------|-----------------|
-|Modo de segurança|Transporte|
+|Modo de segurança|Transport|
 |Interoperabilidade|Com os serviços Web e clientes existentes|
 |Autenticação (servidor)<br /><br /> Autenticação (cliente)|Yes<br /><br /> Nível do aplicativo (sem suporte do WCF)|
 |Integridade|Yes|
 |Confidencialidade|Yes|
-|Transporte|HTTPS|
+|Transport|HTTPS|
 |Associação|<xref:System.ServiceModel.WSHttpBinding>|
 
 ## <a name="service"></a>Serviço
@@ -122,9 +122,9 @@ A configuração a seguir pode ser usada em vez do código para configurar o ser
 </configuration>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Visão geral de segurança](security-overview.md)
 - [Segurança de transporte WS](../samples/ws-transport-security.md)
 - [Visão geral de segurança de transporte](transport-security-overview.md)
-- [Modelo de segurança para o Windows Server app Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Modelo de segurança para o Windows Server app Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como criar um procedimento que retorna um valor (Visual Basic)'
 title: Como criar um procedimento que retorne um valor
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,14 +7,15 @@ helpviewer_keywords:
 - Visual Basic code, procedures
 - procedures [Visual Basic], returning a value
 ms.assetid: 8ee19f95-a9ef-4033-963b-d224dca207c4
-ms.openlocfilehash: 2655aba6ce37be831d8dd4202ffd484cfd3fd5ef
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: fa2ea50febd1cc4e7aecf1e6f5cca671789b36fd
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84388343"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100467050"
 ---
 # <a name="how-to-create-a-procedure-that-returns-a-value-visual-basic"></a>Como criar um procedimento que retorne um valor (Visual Basic)
+
 Você usa um `Function` procedimento para retornar um valor para o código de chamada.  
   
 ### <a name="to-create-a-procedure-that-returns-a-value"></a>Para criar um procedimento que retorna um valor  
@@ -36,7 +38,7 @@ Você usa um `Function` procedimento para retornar um valor para o código de ch
   
      [!code-vb[VbVbcnProcedures#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#6)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos](./index.md)
 - [Subprocedimentos](./sub-procedures.md)

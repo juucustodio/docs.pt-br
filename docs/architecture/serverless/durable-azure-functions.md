@@ -1,33 +1,33 @@
 ---
-title: Funções duráveis do Azure - Aplicativos sem servidor
-description: As funções duráveis do Azure estendem o tempo de execução das funções do Azure para permitir fluxos de trabalho estaduais em código.
+title: Aplicativos duráveis Azure Functions-sem servidor
+description: Os Azure Functions duráveis estendem o tempo de execução Azure Functions para permitir fluxos de trabalho com estado no código.
 author: cecilphillip
 ms.author: cephilli
 ms.date: 06/26/2018
-ms.openlocfilehash: 2c0ad086640409ac187c3aa882add4d6b39b6ff9
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: c3ee628b5c2239cd13395fda7714b38b06efa058
+ms.sourcegitcommit: f99115e12a5eb75638abe45072e023a3ce3351ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "72522857"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94557149"
 ---
-# <a name="durable-azure-functions"></a>Funções duráveis do Azure
+# <a name="durable-azure-functions"></a>Azure Functions durável
 
-Ao criar aplicativos sem servidor com funções do Azure, suas operações normalmente serão projetadas para serem executadas de forma apátrida. A razão para essa escolha de design é porque, à medida que a plataforma é dimensionada, torna-se difícil saber em quais servidores o código está sendo executado. Também fica difícil saber quantas instâncias estão ativas em um dado momento. No entanto, existem classes de aplicações que exigem que o estado atual de um processo seja conhecido. Considere o processo de envio de um pedido para uma loja online. A operação de checkout pode ser um fluxo de trabalho que é composto por múltiplas operações que precisam saber o estado do processo. Essas informações podem incluir o inventário do produto, se o cliente tiver algum crédito em sua conta, e também os resultados do processamento do cartão de crédito. Essas operações podem facilmente ser seus próprios fluxos de trabalho internos ou até mesmo serviços de sistemas de terceiros.
+Ao criar aplicativos sem servidor com o Azure Functions, suas operações normalmente serão projetadas para serem executadas de maneira sem monitoração de estado. A razão para essa escolha de design é porque, à medida que a plataforma é dimensionada, fica difícil saber em quais servidores o código está sendo executado. Também se torna difícil saber quantas instâncias estão ativas em qualquer ponto determinado. No entanto, há classes de aplicativos que exigem que o estado atual de um processo seja conhecido. Considere o processo de envio de um pedido para uma loja online. A operação de check-out pode ser um fluxo de trabalho composto por várias operações que precisam saber o estado do processo. Essas informações podem incluir o inventário do produto, se o cliente tiver créditos de sua conta e também os resultados do processamento do cartão de crédito. Essas operações podem ser facilmente seus próprios fluxos de trabalho internos ou até mesmo serviços de sistemas de terceiros.
 
-Existem hoje diversos padrões que auxiliam na coordenação do estado de aplicação entre sistemas internos e externos. É comum encontrar soluções que dependem de sistemas centralizados de fila, lojas de valor de chave distribuídas ou bancos de dados compartilhados para gerenciar esse estado. No entanto, todos esses são recursos adicionais que agora precisam ser provisionados e gerenciados. Em um ambiente sem servidor, seu código pode se tornar complicado tentando coordenar com esses recursos manualmente. O Azure Functions oferece uma alternativa para criar funções imponentes chamadas Funções Duráveis.
+Existem vários padrões atualmente que ajudam na coordenação do estado do aplicativo entre sistemas internos e externos. É comum entrar em soluções que dependem de sistemas de enfileiramento centralizados, repositórios de chave-valor distribuído ou bancos de dados compartilhados para gerenciar esse estado. No entanto, esses são todos os recursos adicionais que agora precisam ser provisionados e gerenciados. Em um ambiente sem servidor, seu código pode se tornar complicado tentando coordenar esses recursos manualmente. Azure Functions oferece uma alternativa para a criação de funções com estado chamada Durable Functions.
 
-Durable Functions é uma extensão do tempo de execução funções do Azure que permite a definição de fluxos de trabalho estatais em código. Ao dividir os fluxos de trabalho em atividades, a extensão Funções Duráveis pode gerenciar o estado, criar pontos de verificação de progresso e lidar com a distribuição de chamadas de função entre servidores. Em segundo plano, ele faz uso de uma conta do Azure Storage para persistir o histórico de execução, agendar funções de atividade e recuperar respostas. Seu código sem servidor nunca deve interagir com informações perpersistentes nessa conta de armazenamento, e normalmente não é algo com o qual os desenvolvedores precisam interagir.
+Durable Functions é uma extensão para o tempo de execução Azure Functions que permite a definição de fluxos de trabalho com estado no código. Ao dividir os fluxos de trabalho em atividades, a extensão de Durable Functions pode gerenciar o estado, criar pontos de verificação de progresso e manipular a distribuição de chamadas de função entre servidores. Em segundo plano, ele faz uso de uma conta de armazenamento do Azure para manter o histórico de execução, agendar funções de atividade e recuperar respostas. O código sem servidor nunca deve interagir com informações persistentes nessa conta de armazenamento e normalmente não é algo com o qual os desenvolvedores precisam interagir.
 
-## <a name="triggering-a-stateful-workflow"></a>Desencadeando um fluxo de trabalho imponente
+## <a name="triggering-a-stateful-workflow"></a>Disparando um fluxo de trabalho com estado
 
-Fluxos de trabalho estatais em Funções Duráveis podem ser divididos em dois componentes intrínsecos; orquestração e ativação de atividade. Gatilhos e vinculações são componentes principais usados pelas funções do Azure para permitir que suas funções sem servidor sejam notificadas quando iniciar, receber entradas e retornar resultados.
+Fluxos de trabalho com estado no Durable Functions podem ser divididos em dois componentes intrínsecos; gatilhos de orquestração e de atividade. Gatilhos e associações são componentes principais usados pelo Azure Functions para permitir que suas funções sem servidor sejam notificadas quando iniciar, receber entrada e retornar resultados.
 
-### <a name="working-with-the-orchestration-client"></a>Trabalhando com o cliente orchestration
+### <a name="working-with-the-orchestration-client"></a>Trabalhando com o cliente de orquestração
 
-As orquestrações são únicas quando comparadas com outros estilos de operações desencadeadas em Funções Azure. Funções duráveis permitem a execução de funções que podem levar horas ou até dias para serem concluídas. Esse tipo de comportamento vem com a necessidade de verificar o status de uma orquestração em execução, encerrar preventivamente ou enviar notificações de eventos externos.
+As orquestrações são exclusivas em comparação com outros estilos de operações disparadas no Azure Functions. Durable Functions permite a execução de funções que podem levar horas ou até mesmo dias para serem concluídas. Esse tipo de comportamento vem com a necessidade de verificar o status de uma orquestração em execução, encerrar preempção ou enviar notificações de eventos externos.
 
-Para esses casos, a extensão `DurableOrchestrationClient` Funções Duráveis fornece a classe que permite interagir com funções orquestradas. Você tem acesso ao cliente de `OrchestrationClientAttribute` orquestração usando a vinculação. Geralmente, você incluiria esse atributo com outro `HttpTrigger` tipo `ServiceBusTrigger`de gatilho, como um ou . Uma vez que a função de origem tenha sido acionada, o cliente de orquestração pode ser usado para iniciar uma função orquestradora.
+Para esses casos, a extensão Durable Functions fornece a `DurableOrchestrationClient` classe que permite que você interaja com funções orquestradas. Você obtém acesso ao cliente de orquestração usando a `OrchestrationClientAttribute` associação. Em geral, você incluiria esse atributo com outro tipo de gatilho, como um `HttpTrigger` ou `ServiceBusTrigger` . Depois que a função de origem tiver sido disparada, o cliente de orquestração poderá ser usado para iniciar uma função de orquestrador.
 
 ```csharp
 [FunctionName("KickOff")]
@@ -43,15 +43,15 @@ public static async Task<HttpResponseMessage> Run(
 }
 ```
 
-### <a name="the-orchestrator-function"></a>A função orquestradora
+### <a name="the-orchestrator-function"></a>A função de orquestrador
 
-Anotando uma função com o OrchestrationTriggerAttribute em Funções Azure marca que funcionam como uma função orquestradora. É responsável por gerenciar as diversas atividades que compõem seu fluxo de trabalho imponente.
+Anotar uma função com o OrchestrationTriggerAttribute em Azure Functions marca que funciona como uma função de orquestrador. É responsável por gerenciar as várias atividades que compõem seu fluxo de trabalho com estado.
 
-As funções do orquestrador não podem fazer uso de amarras diferentes do OrchestrationTriggerAttribute. Este atributo só pode ser usado com um tipo de parâmetro de DurableOrchestrationContext. Nenhum outro inputs pode ser usado, uma vez que a desserialização de entradas na assinatura da função não é suportada. Para obter entradas fornecidas pelo cliente de\<\> orquestração, o método GetInput T deve ser usado.
+As funções de orquestrador não podem fazer uso de associações diferentes de OrchestrationTriggerAttribute. Esse atributo só pode ser usado com um tipo de parâmetro de DurableOrchestrationContext. Nenhuma outra entrada pode ser usada, pois a desserialização de entradas na assinatura de função não tem suporte. Para obter as entradas fornecidas pelo cliente de orquestração, o método getinput \<T\> deve ser usado.
 
-Além disso, os tipos de retorno das funções de orquestração devem ser vazios, tarefa ou um valor serializável JSON.
+Além disso, os tipos de retorno das funções de orquestração devem ser void, Task ou um valor serializável JSON.
 
-> *O código de manipulação de erros foi deixado de fora por brevidade*
+> *O código de tratamento de erros foi deixado para fins de brevidade*
 
 ```csharp
 [FunctionName("PlaceOrder")]
@@ -69,19 +69,19 @@ public static async Task<string> PlaceOrder([OrchestrationTrigger] DurableOrches
 }
 ```
 
-Várias instâncias de uma orquestração podem ser iniciadas e funcionando ao mesmo tempo. Chamar `StartNewAsync` o método `DurableOrchestrationClient` nos lançamentos é uma nova instância da orquestração. O método `Task<string>` retorna um que se completa quando a orquestração começou. Uma exceção `TimeoutException` do tipo é lançada se a orquestração não começou dentro de 30 segundos.
+Várias instâncias de uma orquestração podem ser iniciadas e executadas ao mesmo tempo. Chamar o `StartNewAsync` método no `DurableOrchestrationClient` inicia uma nova instância da orquestração. O método retorna um `Task<string>` que é concluído quando a orquestração é iniciada. Uma exceção do tipo `TimeoutException` é gerada se a orquestração não tiver começado dentro de 30 segundos.
 
-O `Task<string>` completo `StartNewAsync` deve conter o ID único da instância de orquestração. Este ID de instância pode ser usado para invocar operações nessa orquestração específica. A orquestração pode ser consultada para o status ou notificações de eventos enviadas.
+O `Task<string>` from concluído `StartNewAsync` deve conter a ID exclusiva da instância de orquestração. Essa ID de instância pode ser usada para invocar operações nessa orquestração específica. A orquestração pode ser consultada para o status ou notificações de eventos enviadas.
 
 ### <a name="the-activity-functions"></a>As funções de atividade
 
-As funções de atividade são as operações discretas que são compostas juntas dentro de uma função de orquestração para criar o fluxo de trabalho. Aqui é onde a maior parte do trabalho real ocorreria. Eles representam a lógica do negócio, os processos de longo prazo e as peças do quebra-cabeça para uma solução maior.
+Funções de atividade são operações discretas que são compostas em uma função de orquestração para criar o fluxo de trabalho. Aqui está o local em que a maior parte do trabalho real ocorre. Eles representam a lógica de negócios, os processos de longa duração e as peças de quebra-cabeça para uma solução maior.
 
-O `ActivityTriggerAttribute` é usado para anotar um parâmetro `DurableActivityContext`de função do tipo . O uso da anotação informa o tempo de execução de que a função deve ser usada como função de atividade. Os valores de entrada para `GetInput<T>` as funções de atividade são recuperados usando o método do `DurableActivityContext` parâmetro.
+O `ActivityTriggerAttribute` é usado para anotar um parâmetro de função do tipo `DurableActivityContext` . O uso da anotação informa ao tempo de execução que a função destina-se a ser usada como uma função de atividade. Os valores de entrada para as funções de atividade são recuperados usando o `GetInput<T>` método do `DurableActivityContext` parâmetro.
 
-Semelhante às funções de orquestração, os tipos de retorno das funções de atividade devem ser vazios, tarefas ou um valor serializável JSON.
+Semelhante às funções de orquestração, os tipos de retorno das funções de atividade devem ser void, Task ou um valor serializável JSON.
 
-Quaisquer exceções não manuseadas que sejam jogadas dentro das funções de `TaskFailedException`atividade serão enviadas para a função de orquestrador de chamadas e apresentadas como um . Neste ponto, o erro pode ser pego e registrado no orquestrador, e a atividade pode ser repetida novamente.
+Todas as exceções sem tratamento que são lançadas em funções de atividade serão enviadas para a função de orquestrador de chamada e apresentadas como um `TaskFailedException` . Neste ponto, o erro pode ser capturado e registrado no orquestrador, e a atividade pode ser repetida.
 
 ```csharp
 [FunctionName("CheckAndReserveInventory")]
@@ -96,10 +96,10 @@ public static bool CheckAndReserveInventory([ActivityTrigger] DurableActivityCon
 
 ## <a name="recommended-resources"></a>Recursos recomendados
 
-- [Funções duráveis](https://docs.microsoft.com/azure/azure-functions/durable-functions-overview)
-- [Vinculações para funções duráveis](https://docs.microsoft.com/azure/azure-functions/durable-functions-bindings)
-- [Gerenciar instâncias em funções duráveis](https://docs.microsoft.com/azure/azure-functions/durable-functions-instance-management)
+- [Durable Functions](/azure/azure-functions/durable-functions-overview)
+- [Associações para Durable Functions](/azure/azure-functions/durable-functions-bindings)
+- [Gerenciar instâncias no Durable Functions](/azure/azure-functions/durable-functions-instance-management)
 
 >[!div class="step-by-step"]
->[Próximo](event-grid.md)
->[anterior](orchestration-patterns.md)
+>[Anterior](event-grid.md) 
+> [Avançar](orchestration-patterns.md)

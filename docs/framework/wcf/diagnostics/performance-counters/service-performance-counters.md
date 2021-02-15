@@ -1,16 +1,18 @@
 ---
+description: 'Saiba mais sobre: contadores de desempenho de serviço'
 title: Contadores de desempenho de serviço
 ms.date: 03/30/2017
 ms.assetid: 4210f549-31f2-4ea7-99bd-69eaffb98ddf
-ms.openlocfilehash: 929ddcb2f271b7488270ea39e7a3a0037158c855
-ms.sourcegitcommit: 628e8147ca10187488e6407dab4c4e6ebe0cac47
+ms.openlocfilehash: 16f6f2548cf7f92b64264ac606423c69e62cd110
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72320024"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99686031"
 ---
 # <a name="service-performance-counters"></a>Contadores de desempenho de serviço
-Os contadores de desempenho de serviço medem o comportamento do serviço como um todo e podem ser usados para diagnosticar o desempenho do serviço inteiro. Eles podem ser encontrados no objeto de desempenho `ServiceModelService 4.0.0.0` ao exibir com o monitor de desempenho (Perfmon. exe). As instâncias são nomeadas usando o seguinte padrão:  
+
+Os contadores de desempenho de serviço medem o comportamento do serviço como um todo e podem ser usados para diagnosticar o desempenho do serviço inteiro. Eles podem ser encontrados no `ServiceModelService 4.0.0.0` objeto de desempenho ao exibir com o monitor de desempenho (Perfmon.exe). As instâncias são nomeadas usando o seguinte padrão:  
   
 `ServiceName@ServiceBaseAddress`
   

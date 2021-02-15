@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IAssemblyEnum:: clone'
 title: Método IAssemblyEnum::Clone
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 0014bb66-590c-486c-9ade-f2133905cd99
 topic_type:
 - apiref
-ms.openlocfilehash: 34b5f3bd5908d3833a2223b078f8d796234641be
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 0b4da5818b66d5b82da0b693c2d1cfa257f08a7f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73134446"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760830"
 ---
 # <a name="iassemblyenumclone-method"></a>Método IAssemblyEnum::Clone
+
 Cria uma cópia superficial deste objeto [IAssemblyEnum](iassemblyenum-interface.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,15 +36,17 @@ HRESULT Clone (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ppEnum`  
  fora Um ponteiro para a cópia.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Fusion. h  
   
- **Versões do .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>Consulte também
 

@@ -1,13 +1,13 @@
 ---
 title: Resumo
-description: Um resumo das principais conclusões da arquitetura de aplicativos .NET nativos da nuvem para o guia do Azure/livro eletrônico.
+description: Um resumo das principais conclusões da arquitetura Cloud-Native aplicativos .NET para o guia do Azure/livro eletrônico.
 ms.date: 05/13/2020
-ms.openlocfilehash: b1a195c0c081565c57f5aac2e234411bb904ca08
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: e0325b1bb6961c865e904779496950031db8db0b
+ms.sourcegitcommit: 6d1ae17e60384f3b5953ca7b45ac859ec6d4c3a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83613649"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94982349"
 ---
 # <a name="summary"></a>Resumo
 

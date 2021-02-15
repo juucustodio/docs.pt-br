@@ -1,5 +1,5 @@
 ---
-title: Como utilizar credenciais de mensagem e segurança de transporte
+title: 'Como: usar credenciais de mensagem e segurança do transporte'
 description: Saiba como implementar a segurança de transporte com credenciais de mensagem, que oferece o melhor dos modos de segurança de transporte e de mensagens no WCF.
 ms.date: 03/30/2017
 dev_langs:
@@ -8,14 +8,15 @@ dev_langs:
 helpviewer_keywords:
 - TransportWithMessageCredentials
 ms.assetid: 6cc35346-c37a-4859-b82b-946c0ba6e68f
-ms.openlocfilehash: f632a4389eafc155cedcae94707c9418b6696f2c
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: dbf04572e19d0dfc2508b3f8c3295ffae78ca0f4
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85246643"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96268307"
 ---
-# <a name="how-to-use-transport-security-and-message-credentials"></a>Como utilizar credenciais de mensagem e segurança de transporte
+# <a name="how-to-use-transport-security-and-message-credentials"></a>Como: usar credenciais de mensagem e segurança do transporte
+
 A proteção de um serviço com as credenciais de transporte e de mensagem usa o melhor dos modos de segurança de transporte e de mensagem no Windows Communication Foundation (WCF). Em Sum, a segurança da camada de transporte fornece integridade e confidencialidade, enquanto a segurança da camada de mensagens fornece uma variedade de credenciais que não são possíveis com mecanismos de segurança de transporte estritos. Este tópico mostra as etapas básicas para implementar o transporte com credenciais de mensagem usando as <xref:System.ServiceModel.WSHttpBinding> <xref:System.ServiceModel.NetTcpBinding> associações e. Para obter mais informações sobre como definir o modo de segurança, consulte [como: definir o modo de segurança](../how-to-set-the-security-mode.md).  
   
  Ao definir o modo de segurança como `TransportWithMessageCredential` , o transporte determina o mecanismo real que fornece a segurança em nível de transporte. Para HTTP, o mecanismo é protocolo SSL (SSL) via HTTP (HTTPS); para TCP, é SSL sobre TCP ou Windows.  
@@ -163,6 +164,6 @@ A proteção de um serviço com as credenciais de transporte e de mensagem usa o
   
 ## <a name="see-also"></a>Veja também
 
-- [Como definir o modo de segurança](../how-to-set-the-security-mode.md)
-- [Protegendo serviços](../securing-services.md)
+- [Como: definir o modo de segurança](../how-to-set-the-security-mode.md)
+- [Serviços de segurança](../securing-services.md)
 - [Protegendo serviços e clientes](securing-services-and-clients.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estruturas de metadados'
 title: Estruturas de metadados
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,17 +7,19 @@ helpviewer_keywords:
 - unmanaged structures [.NET Framework], metadata
 - metadata structures [.NET Framework]
 ms.assetid: 3eeaec36-5e1a-4a62-9de3-ea3942f67d04
-ms.openlocfilehash: fbb9727523aa175f10a05b3ba4f54ac64b790f8e
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 992181abd4d78560c03f1463d55567a3f9d62457
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84489542"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799097"
 ---
 # <a name="metadata-structures"></a>Estruturas de metadados
+
 Esta seção descreve as estruturas não gerenciadas que a API de metadados usa.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  ASSEMBLYMETADATA  
  Armazena metadados do assembly para uso posterior.  
   
@@ -33,6 +36,7 @@ Esta seção descreve as estruturas não gerenciadas que a API de metadados usa.
  Contém informações sobre o sistema operacional.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
+
  [Interfaces de metadados](metadata-interfaces.md)  
   
  [Funções estáticas globais de metadados](metadata-global-static-functions.md)  

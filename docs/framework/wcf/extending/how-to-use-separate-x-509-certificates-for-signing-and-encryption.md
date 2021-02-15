@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como usar certificados X. 509 separados para assinatura e criptografia'
 title: 'Como: usar certificados X.509 separados para assinatura e criptografia'
 ms.date: 03/30/2017
 dev_langs:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - ClientCredentials class
 - ClientCredentialsSecurityTokenManager class
 ms.assetid: 0b06ce4e-7835-4d82-8baf-d525c71a0e49
-ms.openlocfilehash: e464aff46f311ede1cd629fb459ade9a6e627d59
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: a1cb72265d9fa2742718b88bd574efe4cc9a4918
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70796950"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99644236"
 ---
 # <a name="how-to-use-separate-x509-certificates-for-signing-and-encryption"></a>Como: usar certificados X.509 separados para assinatura e criptografia
 
@@ -24,46 +25,46 @@ Para permitir que certificados separados sejam usados para assinatura e criptogr
 
 O diagrama a seguir mostra as classes principais usadas, as classes das quais elas herdam (mostradas por uma seta apontando para cima) e os tipos de retorno de determinados métodos e propriedades.
 
-- `MyClientCredentials`é uma implementação personalizada do <xref:System.ServiceModel.Description.ClientCredentials>.
+- `MyClientCredentials` é uma implementação personalizada do <xref:System.ServiceModel.Description.ClientCredentials> .
 
-  - Suas propriedades mostradas no diagrama todas as instâncias retornam de <xref:System.Security.Cryptography.X509Certificates.X509Certificate2>.
+  - Suas propriedades mostradas no diagrama todas as instâncias retornam de <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> .
 
-  - Seu método <xref:System.ServiceModel.Description.ClientCredentials.CreateSecurityTokenManager%2A> retorna uma instância do `MyClientCredentialsSecurityTokenManager`.
+  - Seu método <xref:System.ServiceModel.Description.ClientCredentials.CreateSecurityTokenManager%2A> retorna uma instância do `MyClientCredentialsSecurityTokenManager` .
 
-- `MyClientCredentialsSecurityTokenManager`é uma implementação personalizada do <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager>.
+- `MyClientCredentialsSecurityTokenManager` é uma implementação personalizada do <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager> .
 
-  - Seu método <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager.CreateSecurityTokenProvider%2A> retorna uma instância do <xref:System.IdentityModel.Selectors.X509SecurityTokenProvider>.
+  - Seu método <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager.CreateSecurityTokenProvider%2A> retorna uma instância do <xref:System.IdentityModel.Selectors.X509SecurityTokenProvider> .
 
 ![Gráfico mostrando como as credenciais do cliente são usadas](./media/e4971edd-a59f-4571-b36f-7e6b2f0d610f.gif "e4971edd-a59f-4571-b36f-7e6b2f0d610f")
 
-Para obter mais informações sobre credenciais personalizadas, [consulte Walkthrough: Criando credenciais](walkthrough-creating-custom-client-and-service-credentials.md)de cliente e de serviço personalizadas.
+Para obter mais informações sobre credenciais personalizadas, consulte [Walkthrough: criando credenciais personalizadas de cliente e serviço](walkthrough-creating-custom-client-and-service-credentials.md).
 
 Além disso, você deve criar um verificador de identidade personalizado e vinculá-lo a um elemento de associação de segurança em uma associação personalizada. Você também deve usar as credenciais personalizadas em vez das credenciais padrão.
 
-O diagrama a seguir mostra as classes envolvidas na associação personalizada e como o verificador de identidade personalizado está vinculado. Há vários elementos de ligação envolvidos, todos herdados de <xref:System.ServiceModel.Channels.BindingElement>. O <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement> tem a <xref:System.ServiceModel.Channels.LocalClientSecuritySettings> Propriedade, que retorna uma instância do <xref:System.ServiceModel.Security.IdentityVerifier>, da qual `MyIdentityVerifier` é personalizado.
+O diagrama a seguir mostra as classes envolvidas na associação personalizada e como o verificador de identidade personalizado está vinculado. Há vários elementos de ligação envolvidos, todos herdados de <xref:System.ServiceModel.Channels.BindingElement> . O <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement> tem a <xref:System.ServiceModel.Channels.LocalClientSecuritySettings> propriedade, que retorna uma instância do <xref:System.ServiceModel.Security.IdentityVerifier> , da qual `MyIdentityVerifier` é personalizado.
 
 ![Gráfico mostrando um elemento de associação personalizado](./media/dddea4a2-0bb4-4921-9bf4-20d4d82c3da5.gif "dddea4a2-0bb4-4921-9bf4-20d4d82c3da5")
 
-Para obter mais informações sobre como criar um verificador de identidade personalizado, consulte Como: [Como: Crie um verificador](how-to-create-a-custom-client-identity-verifier.md)de identidade de cliente personalizado.
+Para obter mais informações sobre como criar um verificador de identidade personalizado, consulte Como: [como criar um verificador de identidade de cliente personalizado](how-to-create-a-custom-client-identity-verifier.md).
 
 ### <a name="to-use-separate-certificates-for-signing-and-encryption"></a>Para usar certificados separados para assinatura e criptografia
 
-1. Defina uma nova classe de credenciais de cliente que herda <xref:System.ServiceModel.Description.ClientCredentials> da classe. Implemente quatro novas propriedades para permitir a especificação de `ClientSigningCertificate`vários `ClientEncryptingCertificate`certificados `ServiceSigningCertificate`:, `ServiceEncryptingCertificate`, e. Além disso, <xref:System.ServiceModel.Description.ClientCredentials.CreateSecurityTokenManager%2A> substitua o método para retornar uma instância da <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager> classe personalizada que é definida na próxima etapa.
+1. Defina uma nova classe de credenciais de cliente que herda da <xref:System.ServiceModel.Description.ClientCredentials> classe. Implemente quatro novas propriedades para permitir a especificação de vários certificados: `ClientSigningCertificate` , `ClientEncryptingCertificate` , `ServiceSigningCertificate` e `ServiceEncryptingCertificate` . Além disso, substitua o <xref:System.ServiceModel.Description.ClientCredentials.CreateSecurityTokenManager%2A> método para retornar uma instância da <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager> classe personalizada que é definida na próxima etapa.
 
      [!code-csharp[c_FourCerts#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_fourcerts/cs/source.cs#1)]
      [!code-vb[c_FourCerts#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_fourcerts/vb/source.vb#1)]
 
-2. Defina um novo Gerenciador de token do Client Security que herda <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager> da classe. Substitua o <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager.CreateSecurityTokenProvider%2A> método para criar um provedor de token de segurança apropriado. O `requirement` parâmetro (a <xref:System.IdentityModel.Selectors.SecurityTokenRequirement>) fornece a direção da mensagem e o uso da chave.
+2. Defina um novo Gerenciador de token do Client Security que herda da <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager> classe. Substitua o <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager.CreateSecurityTokenProvider%2A> método para criar um provedor de token de segurança apropriado. O `requirement` parâmetro (a <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> ) fornece a direção da mensagem e o uso da chave.
 
      [!code-csharp[c_FourCerts#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_fourcerts/cs/source.cs#2)]
      [!code-vb[c_FourCerts#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_fourcerts/vb/source.vb#2)]
 
-3. Defina uma nova classe de credenciais de serviço que herda <xref:System.ServiceModel.Description.ServiceCredentials> da classe. Implemente quatro novas propriedades para permitir a especificação de `ClientSigningCertificate`vários `ClientEncryptingCertificate`certificados `ServiceSigningCertificate`:, `ServiceEncryptingCertificate`, e. Além disso, <xref:System.ServiceModel.Description.ServiceCredentials.CreateSecurityTokenManager%2A> substitua o método para retornar uma instância da <xref:System.ServiceModel.Security.ServiceCredentialsSecurityTokenManager> classe personalizada que é definida na próxima etapa.
+3. Defina uma nova classe de credenciais de serviço que herda da <xref:System.ServiceModel.Description.ServiceCredentials> classe. Implemente quatro novas propriedades para permitir a especificação de vários certificados: `ClientSigningCertificate` , `ClientEncryptingCertificate` , `ServiceSigningCertificate` e `ServiceEncryptingCertificate` . Além disso, substitua o <xref:System.ServiceModel.Description.ServiceCredentials.CreateSecurityTokenManager%2A> método para retornar uma instância da <xref:System.ServiceModel.Security.ServiceCredentialsSecurityTokenManager> classe personalizada que é definida na próxima etapa.
 
      [!code-csharp[c_FourCerts#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_fourcerts/cs/source.cs#3)]
      [!code-vb[c_FourCerts#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_fourcerts/vb/source.vb#3)]
 
-4. Defina um novo Gerenciador de token de segurança de serviço que <xref:System.ServiceModel.Security.ServiceCredentialsSecurityTokenManager> herda da classe. Substitua o <xref:System.ServiceModel.Security.ServiceCredentialsSecurityTokenManager.CreateSecurityTokenProvider%2A> método para criar um provedor de token de segurança apropriado, considerando a direção da mensagem passada e o uso da chave.
+4. Defina um novo Gerenciador de token de segurança de serviço que herda da <xref:System.ServiceModel.Security.ServiceCredentialsSecurityTokenManager> classe. Substitua o <xref:System.ServiceModel.Security.ServiceCredentialsSecurityTokenManager.CreateSecurityTokenProvider%2A> método para criar um provedor de token de segurança apropriado, considerando a direção da mensagem passada e o uso da chave.
 
      [!code-csharp[c_FourCerts#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_fourcerts/cs/source.cs#4)]
      [!code-vb[c_FourCerts#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_fourcerts/vb/source.vb#4)]
@@ -75,7 +76,7 @@ Para obter mais informações sobre como criar um verificador de identidade pers
      [!code-csharp[c_FourCerts#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_fourcerts/cs/source.cs#5)]
      [!code-vb[c_FourCerts#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_fourcerts/vb/source.vb#5)]
 
-2. Defina um personalizado <xref:System.ServiceModel.Security.IdentityVerifier>. O serviço tem várias identidades porque certificados diferentes são usados para criptografar a solicitação e para assinar a resposta.
+2. Defina um personalizado <xref:System.ServiceModel.Security.IdentityVerifier> . O serviço tem várias identidades porque certificados diferentes são usados para criptografar a solicitação e para assinar a resposta.
 
     > [!NOTE]
     > No exemplo a seguir, o verificador de identidade personalizado fornecido não executa nenhuma verificação de identidade de ponto de extremidade para fins de demonstração. Essa não é uma prática recomendada para o código de produção.
@@ -97,4 +98,4 @@ Para obter mais informações sobre como criar um verificador de identidade pers
 - <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager>
 - <xref:System.ServiceModel.Security.ServiceCredentialsSecurityTokenManager>
 - <xref:System.ServiceModel.Security.IdentityVerifier>
-- [Passo a passo: Criando credenciais de cliente e de serviço personalizadas](walkthrough-creating-custom-client-and-service-credentials.md)
+- [Passo a passo: criar credenciais de serviço e cliente personalizados](walkthrough-creating-custom-client-and-service-credentials.md)

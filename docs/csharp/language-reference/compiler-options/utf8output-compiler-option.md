@@ -9,14 +9,15 @@ helpviewer_keywords:
 - /utf8output compiler option [C#]
 - -utf8output compiler option [C#]
 ms.assetid: 27ff7381-c281-45d7-b2eb-1ad644b1354e
-ms.openlocfilehash: e0e3a1eb437fb24adec277c527f768548e8937ca
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 675782ffef9768e57397e765538924b78a2abcaa
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89127367"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "91171358"
 ---
 # <a name="-utf8output-c-compiler-options"></a>-utf8output (opções do compilador C#)
+
 A opção **-utf8output** exibe a saída do compilador usando a codificação UTF-8.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -26,10 +27,11 @@ A opção **-utf8output** exibe a saída do compilador usando a codificação UT
 ```  
   
 ## <a name="remarks"></a>Comentários  
+
  Em algumas configurações internacionais, a saída do compilador não pode ser exibida corretamente no console. Nessas configurações, use **-utf8output** e redirecione a saída do compilador para um arquivo.  
   
  Essa opção do compilador não está disponível no Visual Studio e não pode ser alterada programaticamente.  
   
 ## <a name="see-also"></a>Confira também
 
-- [Opções do compilador C#](./index.md)
+- [Opções do compilador de C#](./index.md)

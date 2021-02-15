@@ -2,19 +2,18 @@
 title: Como gravar um loop Parallel.ForEach com variáveis locais de partição
 description: Veja um exemplo de como escrever um loop. ForEach paralelo que usa variáveis de partição local no .NET.
 ms.date: 06/26/2018
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - parallel foreach loop, how to use local state
 ms.assetid: 24b10041-b30b-45cb-aa65-66cf568ca76d
-ms.openlocfilehash: f598955fb2d6800f81bce050bdf474fc63bfb554
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: f8cb7f465d4594c5b9405e8152c6c4a3f3e1ff7b
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599770"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94825423"
 ---
 # <a name="how-to-write-a-parallelforeach-loop-with-partition-local-variables"></a>Como gravar um loop Parallel.ForEach com variáveis locais de partição
 
@@ -49,7 +48,7 @@ O exemplo a seguir chama a sobrecarga <xref:System.Threading.Tasks.Parallel.ForE
 [!code-csharp[TPL_Parallel#04](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_parallel/cs/foreachthreadlocal.cs#04)]
 [!code-vb[TPL_Parallel#04](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_parallel/vb/foreachthreadlocal.vb#04)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Paralelismo de dados](data-parallelism-task-parallel-library.md)
 - [Como: Gravar um loop Parallel.For com variáveis locais de thread](how-to-write-a-parallel-for-loop-with-thread-local-variables.md)

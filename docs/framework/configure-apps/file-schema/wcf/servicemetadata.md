@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <serviceMetadata>'
 title: <serviceMetadata>
 ms.date: 03/30/2017
 ms.assetid: 2b4c3b4c-31d4-4908-a9b7-5bb411c221f2
-ms.openlocfilehash: c421273d1d08db047a51f1f1e4f9d6c908f12986
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: b519de04c333f9ddc12de72757587c9b38f29dba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "84201781"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682820"
 ---
 # \<serviceMetadata>
+
 Especifica a publicação de metadados de serviço e informações associadas.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -19,7 +21,7 @@ Especifica a publicação de metadados de serviço e informações associadas.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-servicebehaviors.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<serviceMetadata>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <serviceMetadata externalMetadataLocation="String"
@@ -35,6 +37,7 @@ Especifica a publicação de metadados de serviço e informações associadas.
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -53,6 +56,7 @@ Especifica a publicação de metadados de serviço e informações associadas.
 |policyVersion|Uma cadeia de caracteres que especifica a versão da especificação de WS-Policy que está sendo usada. Esse atributo é do tipo <xref:System.ServiceModel.Description.PolicyVersion> .|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -62,7 +66,8 @@ Especifica a publicação de metadados de serviço e informações associadas.
 |[\<behavior>](behavior-of-endpointbehaviors.md)|Especifica um elemento de comportamento.|  
   
 ## <a name="remarks"></a>Comentários  
- Este elemento de configuração permite que você controle os recursos de publicação de metadados de um serviço. Para evitar a divulgação não intencional de metadados de serviço potencialmente confidenciais, a configuração padrão para Windows Communication Foundation (WCF) Services desabilita a publicação de metadados. Esse comportamento é seguro por padrão, mas também significa que você não pode usar uma ferramenta de importação de metadados (como SvcUtil. exe) para gerar o código do cliente necessário para chamar o serviço, a menos que o comportamento de publicação de metadados do serviço esteja explicitamente habilitado na configuração. Usando esse elemento de configuração, você pode habilitar esse comportamento de publicação para seu serviço.  
+
+ Este elemento de configuração permite que você controle os recursos de publicação de metadados de um serviço. Para evitar a divulgação não intencional de metadados de serviço potencialmente confidenciais, a configuração padrão para Windows Communication Foundation (WCF) Services desabilita a publicação de metadados. Esse comportamento é seguro por padrão, mas também significa que você não pode usar uma ferramenta de importação de metadados (como Svcutil.exe) para gerar o código do cliente necessário para chamar o serviço, a menos que o comportamento de publicação de metadados do serviço esteja explicitamente habilitado na configuração. Usando esse elemento de configuração, você pode habilitar esse comportamento de publicação para seu serviço.  
   
  Para obter um exemplo detalhado de como configurar esse comportamento, consulte [comportamento de publicação de metadados](../../../wcf/samples/metadata-publishing-behavior.md).  
   
@@ -82,6 +87,7 @@ Especifica a publicação de metadados de serviço e informações associadas.
 ```  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir configura um serviço para expor metadados usando o \<serviceMetadata> elemento. Ele também configura um ponto de extremidade para expor o `IMetadataExchange` contrato como uma implementação de um protocolo de WS-MetadataExchange (MEX). O exemplo usa o `mexHttpBinding` , que é uma associação padrão de conveniência equivalente ao `wsHttpBinding` com o modo de segurança definido como `None` . Um endereço relativo de "MEX" é usado no ponto de extremidade, que, quando resolvido em relação ao endereço base de serviços, resulta em um endereço de ponto de extremidade de `http://localhost/servicemodelsamples/service.svc/mex` .  
   
 ```xml  
@@ -117,7 +123,7 @@ Especifica a publicação de metadados de serviço e informações associadas.
 </configuration>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.ServiceMetadataPublishingElement>
 - <xref:System.ServiceModel.Description.ServiceMetadataBehavior>

@@ -1,6 +1,6 @@
 ---
 title: Função GetMethodOrigin (referência de API não gerenciada)
-description: A função GetMethodOrigin determina a classe em que um método é declarado.
+description: A função GetMethodOrigin determina a classe na qual um método é declarado.
 ms.date: 11/06/2017
 api_name:
 - GetMethodOrigin
@@ -14,14 +14,15 @@ helpviewer_keywords:
 - GetMethodOrigin function [.NET WMI and performance counters]
 topic_type:
 - Reference
-ms.openlocfilehash: 5b4609b6649be875aea7dfcf52ba36b1e98ab7bc
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 434392ffb4d9124e319bcd9c42fdd340d3fec5b4
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176793"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95722772"
 ---
 # <a name="getmethodorigin-function"></a>Função GetMethodOrigin
+
 Determina a classe na qual um método é declarado.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
@@ -37,44 +38,45 @@ HRESULT GetMethodOrigin (
 );
 ```  
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
 `vFunc`  
-[em] Este parâmetro não é usado.
+no Este parâmetro não é usado.
 
 `ptr`  
-[em] Um ponteiro para uma instância [IWbemClassObject.](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject)
+no Um ponteiro para uma instância de [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) .
 
 `wszMethodName`  
-[em] O nome do método para o objeto cuja classe de possuir está sendo solicitado.
+no O nome do método para o objeto cuja classe proprietária está sendo solicitada.
 
 `pstrClassName`  
-[fora] Recebe o nome da classe que possui o método.
+fora Recebe o nome da classe que possui o método.
 
 ## <a name="return-value"></a>Valor retornado
 
-Os seguintes valores retornados por esta função são definidos no arquivo de cabeçalho *WbemCli.h,* ou você pode defini-los como constantes em seu código:
+Os valores a seguir retornados por essa função são definidos no arquivo de cabeçalho *WbemCli. h* ou você pode defini-los como constantes em seu código:
 
-|Constante  |Valor  |Descrição  |
+|Constante  |Valor  |DESCRIÇÃO  |
 |---------|---------|---------|
 |`WBEM_E_NOT_FOUND` | 0x80041002 | O método especificado não foi encontrado. |
 |`WBEM_E_INVALID_PARAMETER` | 0x80041008 | Um ou mais parâmetros não são válidos. |
-|`WBEM_S_NO_ERROR` | 0 | A chamada de função foi bem sucedida.  |
+|`WBEM_S_NO_ERROR` | 0 | A chamada de função foi bem-sucedida.  |
   
 ## <a name="remarks"></a>Comentários
 
-Esta função envolve uma chamada para o método [IWbemClassObject::GetMethodOrigin.](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-getmethod)
+Essa função encapsula uma chamada para o método [IWbemClassObject:: GetMethodOrigin](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-getmethod) .
 
-Como uma classe pode herdar métodos de uma ou mais classes básicas, os desenvolvedores muitas vezes querem determinar a classe na qual um determinado método é definido.
+Como uma classe pode herdar métodos de uma ou mais classes base, os desenvolvedores geralmente desejam determinar a classe na qual um determinado método é definido.
 
-O `pstrClassName` parâmetro não deve apontar `BSTR` para um válido antes `out` que a função seja chamada porque este é um parâmetro; este ponteiro não é desalocado após o retorno da função.
+O `pstrClassName` parâmetro não deve apontar para um válido `BSTR` antes que a função seja chamada porque esse é um `out` parâmetro; esse ponteiro não é desalocado depois que a função retorna.
 
 ## <a name="requirements"></a>Requisitos  
+
 **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
- **Cabeçalho:** WMINet_Utils.idl  
+ **Cabeçalho:** WMINet_Utils. idl  
   
- **.NET Framework Versions:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
+ **.NET Framework versões:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## <a name="see-also"></a>Confira também
 

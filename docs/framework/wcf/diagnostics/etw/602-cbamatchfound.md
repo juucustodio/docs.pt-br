@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 602-CBAMatchFound'
 title: 602 - CBAMatchFound
 ms.date: 03/30/2017
 ms.assetid: 6b1ccbb8-5a43-4b36-9949-702877cef90a
-ms.openlocfilehash: 2e8a289a43d55fc6ff8beb99b7b10ab01da3b15c
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: dc584d186197f2ff6608d8d6292a5bb5ef7ace12
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61953017"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99744286"
 ---
 # <a name="602---cbamatchfound"></a>602 - CBAMatchFound
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,9 +22,11 @@ ms.locfileid: "61953017"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando CBAMatch for encontrado.  
+
+ Esse evento é emitido quando CBAMatch é encontrado.  
   
 ## <a name="message"></a>Mensagem  
- Solicitação de entrada corresponde a um elemento relativní Adresa com endereço '%1'.  
+
+ A solicitação de entrada corresponde a um elemento de desativação com o endereço ' %1 '.  
   
 ## <a name="details"></a>Detalhes

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - attribute fields in platform invoke, CharSet
 - CharSet field
 ms.assetid: a8347eb1-295f-46b9-8a78-63331f9ecc50
-ms.openlocfilehash: 789753742d8714e481f038e323407cbab0499f6c
-ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
+ms.openlocfilehash: 8cc4198d6c13d4705ffc5ce5229cce7a205aec8a
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86309788"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96278174"
 ---
 # <a name="specify-a-character-set"></a>Especificar um conjunto de caracteres
 
@@ -33,6 +33,7 @@ O campo <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayP
      Fornece a formatação Unicode de caracteres de 2 bytes, diferenciada por um “W” acrescentado ao nome do ponto de entrada. Chamadas para **MessageBoxW** sempre realizam marshaling das cadeias de caracteres no formato Unicode.  
   
 ## <a name="string-marshaling-and-name-matching"></a>Marshaling de cadeia de caracteres e correspondência de nomes  
+
  O campo `CharSet` aceita os seguintes valores:  
   
  <xref:System.Runtime.InteropServices.CharSet.Ansi> (valor padrão)  
@@ -148,7 +149,7 @@ extern "C" int MessageBox(
     HWND hWnd, String* lpText, String* lpCaption, unsigned int uType);
 ```
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - <xref:System.Runtime.InteropServices.DllImportAttribute>
 - [Criando protótipos em código gerenciado](creating-prototypes-in-managed-code.md)

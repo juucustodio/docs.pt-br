@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataEmit2:: SetGenericParamProps'
 title: Método IMetaDataEmit2::SetGenericParamProps
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: cd93a48d-1fed-4706-bec6-a05dc3b64fbd
 topic_type:
 - apiref
-ms.openlocfilehash: 8feba8e67f3a90dd48fd957065a9c166c204b87c
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 9c6946bbd301450203bc6fb2b1202352119dc792
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84492727"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99771633"
 ---
 # <a name="imetadataemit2setgenericparamprops-method"></a>Método IMetaDataEmit2::SetGenericParamProps
+
 Define valores de propriedade para a definição de parâmetro genérico referenciada pelo token especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -38,6 +40,7 @@ HRESULT SetGenericParamProps (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `gp`  
  no O token para a definição de parâmetro genérico para a qual definir valores.  
   
@@ -54,15 +57,16 @@ HRESULT SetGenericParamProps (
  [in] Opcional. Uma matriz de restrições de tipo terminada em zero. Os membros da matriz devem ser um `mdTypeDef` `mdTypeRef` token de metadados, ou `mdTypeSpec` .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataEmit2](imetadataemit2-interface.md)
 - [Interface IMetaDataEmit](imetadataemit-interface.md)

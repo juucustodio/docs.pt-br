@@ -1,17 +1,18 @@
 ---
+description: 'Saiba mais sobre: removendo o estado de exibição que o designer adiciona a um arquivo XAML'
 title: Removendo o estado de exibição que o designer adiciona a um arquivo XAML – WF
 ms.date: 03/30/2017
 ms.assetid: a801ce22-8699-483c-a392-7bb3834aae4f
-ms.openlocfilehash: f431275140e821aa5ec4d2235322f06be87d5ee2
-ms.sourcegitcommit: 5fb5b6520b06d7f5e6131ec2ad854da302a28f2e
+ms.openlocfilehash: e6be1e8e4f754085b98f912923ad67cb12893910
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74715618"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741790"
 ---
 # <a name="removing-the-view-state-the-designer-adds-to-an-xaml-file"></a>Removendo o estado de exibição que o designer adiciona a um arquivo XAML
 
-Este exemplo demonstra como criar uma classe que deriva de <xref:System.Xaml.XamlWriter> e se remova o modo estado de um arquivo XAML. O Windows Designer de Fluxo de Trabalho grava informações no documento XAML, que é conhecido como estado de exibição. O estado de exibição se refere à informação que é necessária em tempo de design, como o posicionamento de layout, que não é necessário em runtime. Designer de Fluxo de Trabalho insere essas informações no documento XAML conforme ele é editado. Designer de Fluxo de Trabalho grava o estado de exibição no arquivo XAML com o atributo `mc:Ignorable`, portanto, essas informações não são carregadas quando o tempo de execução carrega o arquivo XAML. Este exemplo demonstra como criar uma classe que remove essas informações de estado de exibição ao processar nós XAML.
+Este exemplo demonstra como criar uma classe que deriva de <xref:System.Xaml.XamlWriter> e se remova o modo estado de um arquivo XAML. O Windows Designer de Fluxo de Trabalho grava informações no documento XAML, que é conhecido como estado de exibição. O estado de exibição se refere à informação que é necessária em tempo de design, como o posicionamento de layout, que não é necessário em runtime. Designer de Fluxo de Trabalho insere essas informações no documento XAML conforme ele é editado. Designer de Fluxo de Trabalho grava o estado de exibição no arquivo XAML com o `mc:Ignorable` atributo, portanto, essas informações não são carregadas quando o tempo de execução carrega o arquivo XAML. Este exemplo demonstra como criar uma classe que remove essas informações de estado de exibição ao processar nós XAML.
 
 ## <a name="discussion"></a>Discussão
 
@@ -99,7 +100,7 @@ XamlServices.Save(new ViewStateCleaningWriter(ActivityXamlServices.CreateBuilder
    ViewStateCleaningWriter.exe [input file] [output file]
    ```
 
-   Isso gera um arquivo XAML para \[outfile], que tem todas as informações de estado de exibição removidas.
+   Isso gera um arquivo XAML para \[ outfile], que tem todas as suas informações de estado de exibição removidas.
 
 > [!NOTE]
 > Para um fluxo de trabalho <xref:System.Activities.Statements.Sequence> , um número de dicas de virtualização são removidos. Isso faz com que o designer recalcule o layout na próxima vez que é carregado. Quando você usa este exemplo para <xref:System.Activities.Statements.Flowchart>, qualquer posicionamento e linha informações de roteamento são removidos e a carga subsequente no designer, todas as atividades são empilhadas no lado esquerdo da tela.
@@ -121,6 +122,6 @@ XamlServices.Save(new ViewStateCleaningWriter(ActivityXamlServices.CreateBuilder
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Se esse diretório não existir, vá para [Windows Communication Foundation (WCF) e exemplos de Windows Workflow Foundation (WF) para .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) para baixar todas as Windows Communication Foundation (WCF) e [!INCLUDE[wf1](../../../../includes/wf1-md.md)] amostras. Este exemplo está localizado no seguinte diretório.
+> Se esse diretório não existir, vá para [Windows Communication Foundation (WCF) e exemplos de Windows Workflow Foundation (WF) para .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) para baixar todos os Windows Communication Foundation (WCF) e [!INCLUDE[wf1](../../../../includes/wf1-md.md)] exemplos. Este exemplo está localizado no seguinte diretório.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Designer\ViewStateCleaningWriter`

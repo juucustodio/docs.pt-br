@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: instruções de hospedagem do serviço de informações da Internet'
 title: Instruções de hospedagem de serviço de informação de internet
 ms.date: 03/30/2017
 ms.assetid: 959a21c8-9d9d-4757-b255-4e57793ae9d6
-ms.openlocfilehash: 226b47bfd90dc4cffb0a364a804016043cc25d02
-ms.sourcegitcommit: 68653db98c5ea7744fd438710248935f70020dfb
+ms.openlocfilehash: 51f5230ecbb8eaf4a909c5c09366680b8c555165
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69929105"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726371"
 ---
 # <a name="internet-information-service-hosting-instructions"></a>Instruções de hospedagem de serviço de informação de internet
+
 Para executar os exemplos hospedados pelo Serviços de Informações da Internet (IIS), você deve verificar se o IIS está instalado corretamente e está em execução.  
   
 ### <a name="to-install-iis-version-75-on-windows-server-2008-r2"></a>Para instalar o IIS versão 7,5 no Windows Server 2008 R2  
@@ -22,7 +24,7 @@ Para executar os exemplos hospedados pelo Serviços de Informações da Internet
   
 4. Marque a caixa de seleção **servidor Web (IIS)** . Se for solicitado que você instale recursos e serviços de função adicionais, clique em **Adicionar recursos necessários**. Clique em **Avançar** duas vezes para exibir a caixa de diálogo **selecionar serviços de função** para a função do servidor Web (IIS).  
   
-5. Expanda **ferramentas de gerenciamento**e, em seguida, expanda **compatibilidade de gerenciamento do IIS 6**. Selecione **ferramentas de script do IIS 6**. Se for solicitado que você instale recursos e serviços de função adicionais, clique em **Adicionar serviços de função necessários**. Clique em **Avançar**.  
+5. Expanda **ferramentas de gerenciamento** e, em seguida, expanda **compatibilidade de gerenciamento do IIS 6**. Selecione **ferramentas de script do IIS 6**. Se for solicitado que você instale recursos e serviços de função adicionais, clique em **Adicionar serviços de função necessários**. Clique em **Próximo**.  
   
 6. Se o resumo das seleções estiver correto, clique em **instalar**.  
   
@@ -30,7 +32,7 @@ Para executar os exemplos hospedados pelo Serviços de Informações da Internet
   
 ### <a name="to-install-iis-version-75-on-windows-7"></a>Para instalar o IIS versão 7,5 no Windows 7  
   
-1. Clique em **Iniciar**e em **painel de controle**.  
+1. Clique em **Iniciar** e em **Painel de Controle**.  
   
 2. Abra o grupo **programas** .  
   
@@ -46,7 +48,7 @@ Para executar os exemplos hospedados pelo Serviços de Informações da Internet
   
 8. Verifique se os seguintes itens estão selecionados:  
   
-    1. **Extensibilidade do .NET**  
+    1. **Extensibilidade .NET**  
   
     2. **ASP.NET**  
   
@@ -62,11 +64,11 @@ Para executar os exemplos hospedados pelo Serviços de Informações da Internet
   
 12. Verifique se a **autenticação do Windows** está selecionada.  
   
-13. No diretório **serviços de informações da Internet** , expanda o item rotulado **ferramentas de gerenciamento da Web**e selecione **console de gerenciamento do IIS**.  
+13. No diretório **serviços de informações da Internet** , expanda o item rotulado **ferramentas de gerenciamento da Web** e selecione **console de gerenciamento do IIS**.  
   
-14. Expanda o item rotulado **compatibilidade de gerenciamento do IIS 6**e, em seguida, selecione **ferramentas de script do IIS 6**.  
+14. Expanda o item rotulado **compatibilidade de gerenciamento do IIS 6** e, em seguida, selecione **ferramentas de script do IIS 6**.  
   
-15. No diretório **serviços de informações da Internet** , expanda o item rotulado **Microsoft .NET Framework 3.5.1**e, em seguida, selecione **Windows Communication Foundation ativação http**.  
+15. No diretório **serviços de informações da Internet** , expanda o item rotulado **Microsoft .NET Framework 3.5.1** e, em seguida, selecione **Windows Communication Foundation ativação http**.  
   
 16. Clique em **OK**.  
   
@@ -80,7 +82,7 @@ Para executar os exemplos hospedados pelo Serviços de Informações da Internet
   
 4. Selecione a caixa **de seleção servidor Web (IIS)** . Se for solicitado que você instale recursos e serviços de função adicionais, clique em **Adicionar recursos necessários**. Clique em **Avançar** duas vezes para exibir a caixa de diálogo **selecionar serviços de função** para a função do servidor Web (IIS).  
   
-5. Expanda **ferramentas de gerenciamento**e, em seguida, expanda **compatibilidade de gerenciamento do IIS 6**. Selecione **ferramentas de script do IIS 6**. Se for solicitado que você instale recursos e serviços de função adicionais, clique em **Adicionar serviços de função necessários**. Clique em **Avançar**.  
+5. Expanda **ferramentas de gerenciamento** e, em seguida, expanda **compatibilidade de gerenciamento do IIS 6**. Selecione **ferramentas de script do IIS 6**. Se for solicitado que você instale recursos e serviços de função adicionais, clique em **Adicionar serviços de função necessários**. Clique em **Próximo**.  
   
 6. Se o resumo das seleções estiver correto, clique em **instalar**.  
   
@@ -88,7 +90,7 @@ Para executar os exemplos hospedados pelo Serviços de Informações da Internet
   
 ### <a name="to-install-iis-version-70-on-windows-vista"></a>Para instalar o IIS versão 7,0 no Windows Vista  
   
-1. Clique em Iniciar e em painel de controle.  
+1. Clique em Iniciar e em Painel de Controle.  
   
 2. Selecione o grupo **programas** .  
   
@@ -104,7 +106,7 @@ Para executar os exemplos hospedados pelo Serviços de Informações da Internet
   
 8. Verifique se os seguintes itens estão selecionados:  
   
-    1. **Extensibilidade do .NET**  
+    1. **Extensibilidade .NET**  
   
     2. **ASP.NET**  
   
@@ -112,7 +114,7 @@ Para executar os exemplos hospedados pelo Serviços de Informações da Internet
   
     4. **Filtros ISAPI**  
   
-9. Expanda o item rotulado **ferramentas de gerenciamento da Web**e selecione **console de gerenciamento do IIS**.  
+9. Expanda o item rotulado **ferramentas de gerenciamento da Web** e selecione **console de gerenciamento do IIS**.  
   
 10. Sob o item rotulado **World Wide Web serviços**, expanda **recursos http comuns**.  
   
@@ -122,15 +124,15 @@ Para executar os exemplos hospedados pelo Serviços de Informações da Internet
   
 13. Verifique se a **autenticação do Windows** está selecionada.  
   
-14. Expanda o item rotulado **compatibilidade de gerenciamento do IIS 6**e, em seguida, selecione **ferramentas de script do IIS 6**.  
+14. Expanda o item rotulado **compatibilidade de gerenciamento do IIS 6** e, em seguida, selecione **ferramentas de script do IIS 6**.  
   
-15. Expanda o item rotulado **Microsoft .NET Framework 3,0**e, em seguida, selecione **Windows Communication Foundation ativação http**.  
+15. Expanda o item rotulado **Microsoft .NET Framework 3,0** e, em seguida, selecione **Windows Communication Foundation ativação http**.  
   
 16. Clique em **OK**.  
   
 ### <a name="to-install-iis-version-60-on-windows-server-2003"></a>Para instalar o IIS versão 6,0 no Windows Server 2003  
   
-1. Em **gerenciar seu servidor**, clique em **Adicionar ou remover uma função**e, em seguida, clique em **Avançar**.  
+1. Em **gerenciar seu servidor**, clique em **Adicionar ou remover uma função** e, em seguida, clique em **Avançar**.  
   
 2. Selecione **servidor de aplicativos (IIS, ASP.net)** na lista **função de servidor** e clique em **Avançar**.  
   
@@ -140,9 +142,9 @@ Para executar os exemplos hospedados pelo Serviços de Informações da Internet
   
 ### <a name="to-install-iis-version-51-on-windows-xp-with-service-pack-2-and-service-pack-3-installed"></a>Para instalar o IIS versão 5,1 no Windows XP com Service Pack 2 e Service Pack 3 instalados  
   
-1. No painel de controle, clique em **Adicionar ou remover programas**.  
+1. No Painel de Controle, clique em **Adicionar ou Remover Programas**.  
   
-2. Na caixa de diálogo **Adicionar ou remover programas** , clique em **Adicionar/remover componentes do Windows**.  
+2. Na caixa de diálogo **Adicionar ou Remover Programas**, clique em **Adicionar/Remover Componentes do Windows**.  
   
 3. No **Assistente de componentes do Windows**, marque a caixa de seleção **serviços de informações da Internet (IIS)** e clique em **Avançar**.  
   
@@ -163,9 +165,9 @@ Para executar os exemplos hospedados pelo Serviços de Informações da Internet
 4. Uma página da Web com o texto "Olá, Mundo" deve aparecer.  
   
 > [!NOTE]
-> Sempre que você instalar uma nova versão do .NET Framework, deverá registrar novamente o aspnet_isapi como uma extensão de serviço da Web para o IIS. Para fazer isso, emita o `aspnet_regiis –I –enable` comando.  
+> Sempre que você instalar uma nova versão do .NET Framework, deverá registrar novamente aspnet_isapi como uma extensão de serviço da Web para o IIS. Para fazer isso, emita o `aspnet_regiis –I –enable` comando.  
   
-## <a name="sample-code"></a>Código de exemplo  
+## <a name="sample-code"></a>Exemplo de código  
   
 ```xml  
 <html>  

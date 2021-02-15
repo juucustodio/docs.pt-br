@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugThread'
 title: Interface ICorDebugThread
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3930fd9b-2bc3-4b72-80a0-b6eeb94d60c6
 topic_type:
 - apiref
-ms.openlocfilehash: edcc0ebcadc1bd95574b0276bfd0e2d42e5474fd
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 7e16fa2a82a004a5c85d60a278cdd14df6ab2300
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379815"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99658822"
 ---
 # <a name="icordebugthread-interface"></a>Interface ICorDebugThread
+
 Representa um thread em um processo. O tempo de vida de uma instância `ICorDebugThread` é igual ao tempo de vida do thread que ela representa.  
   
 ## <a name="methods"></a>Métodos  
@@ -51,6 +53,7 @@ Representa um thread em um processo. O tempo de vida de uma instância `ICorDebu
 > Esta interface não dá suporte para chamada remota, seja entre computadores ou processos cruzados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -59,6 +62,6 @@ Representa um thread em um processo. O tempo de vida de uma instância `ICorDebu
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

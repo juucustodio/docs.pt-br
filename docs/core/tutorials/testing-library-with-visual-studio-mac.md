@@ -1,29 +1,29 @@
 ---
-title: Testar um .NET Standard biblioteca de classes com o .NET Core usando Visual Studio para Mac
-description: Crie um projeto de teste de unidade para uma biblioteca de classes do .NET Core. Verifique se uma biblioteca de classes do .NET Core funciona corretamente com testes de unidade.
-ms.date: 06/08/2020
-ms.openlocfilehash: d3c8a5e01d16047949e977f3af6a429970d996d0
-ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
+title: Testar uma biblioteca de classes .NET usando Visual Studio para Mac
+description: Crie um projeto de teste de unidade para uma biblioteca de classes .NET. Verifique se uma biblioteca de classes .NET funciona corretamente com testes de unidade.
+ms.date: 11/18/2020
+ms.openlocfilehash: 02d5aa74258ec15c5447b23246a3c7e9c61a6760
+ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89359214"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96599520"
 ---
-# <a name="test-a-net-standard-class-library-with-net-core-using-visual-studio"></a>Testar um .NET Standard biblioteca de classes com o .NET Core usando o Visual Studio
+# <a name="test-a-net-class-library-using-visual-studio"></a>Testar uma biblioteca de classes .NET usando o Visual Studio
 
 Este tutorial mostra como automatizar o teste de unidade adicionando um projeto de teste a uma solução.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- Este tutorial funciona com a solução que você cria em [criar uma .net Standard biblioteca usando Visual Studio para Mac](library-with-visual-studio-mac.md).
+- Este tutorial funciona com a solução que você cria em [criar uma biblioteca de classes .NET usando Visual Studio para Mac](library-with-visual-studio-mac.md).
 
-## <a name="create-a-unit-test-project"></a>Crie um projeto de teste de unidade
+## <a name="create-a-unit-test-project"></a>Criar um projeto de teste de unidade
 
 As unidade de teste fornecem testes de software automatizados durante o desenvolvimento e a publicação. [MSTest](https://github.com/Microsoft/testfx-docs) é uma das três estruturas de teste que você pode escolher. Os outros são [xUnit](https://xunit.net/) e [NUnit](https://nunit.org/).
 
 1. Iniciar Visual Studio para Mac.
 
-1. Abra a `ClassLibraryProjects` solução que você criou em [criar uma .net Standard biblioteca usando Visual Studio para Mac](library-with-visual-studio-mac.md).
+1. Abra a `ClassLibraryProjects` solução que você criou em [criar uma biblioteca de classes .net usando Visual Studio para Mac](library-with-visual-studio-mac.md).
 
 1. No painel de **solução** , <kbd>pressione CTRL +</kbd>clique na `ClassLibraryProjects` solução e selecione **Adicionar**  >  **novo projeto**.
 
@@ -31,7 +31,9 @@ As unidade de teste fornecem testes de software automatizados durante o desenvol
 
    :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-unit-test-project.png" alt-text="Caixa de diálogo novo projeto do Visual Studio Mac criando projeto de teste":::
 
-1. Selecione **.NET Core 3,1**. Nomeie o novo projeto como "StringLibraryTest" e selecione **criar**.
+1. Selecione **.net 5,0** como a **estrutura de destino** e selecione **Avançar**.
+
+1. Nomeie o novo projeto como "StringLibraryTest" e selecione **criar**.
 
    :::image type="content" source="media/testing-library-with-visual-studio-mac/visual-studio-mac-new-project-name.png" alt-text="Caixa de diálogo Novo Projeto do Visual Studio para Mac fornecendo um nome de projeto":::
 
@@ -165,11 +167,13 @@ Para testar a compilação de Lançamento:
 
 ## <a name="debug-tests"></a>Depurar testes
 
-Você pode usar o mesmo processo mostrado no [tutorial: Depurar um aplicativo de console do .NET Core usando Visual Studio para Mac](debugging-with-visual-studio-mac.md) para depurar código usando seu projeto de teste de unidade. Em vez de iniciar o projeto de aplicativo de demonstração, <kbd>pressione CTRL</kbd>e clique no projeto **StringLibraryTests** e selecione **Iniciar Depuração de projeto** no menu de contexto. O Visual Studio inicia o projeto de teste com o depurador anexado. A execução será interrompida em qualquer ponto de interrupção que você adicionou ao projeto de teste ou ao código de biblioteca subjacente.
+Se você estiver usando Visual Studio para Mac como o IDE, poderá usar o mesmo processo mostrado no [tutorial: Depurar um aplicativo de console .NET usando Visual Studio para Mac](debugging-with-visual-studio-mac.md) para depurar o código usando seu projeto de teste de unidade. Em vez de iniciar o projeto de aplicativo de *demonstração* , <kbd>pressione CTRL</kbd>e clique no projeto **StringLibraryTests** e selecione **Iniciar Depuração de projeto** no menu de contexto.
+
+O Visual Studio inicia o projeto de teste com o depurador anexado. A execução será interrompida em qualquer ponto de interrupção que você adicionou ao projeto de teste ou ao código de biblioteca subjacente.
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
-* [Teste de unidade no .NET Core e no .NET Standard](../testing/index.md)
+* [Teste de unidade no .NET](../testing/index.md)
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -186,4 +190,4 @@ Se você publicar uma biblioteca como um pacote NuGet, outras pessoas poderão i
 Uma biblioteca não precisa ser distribuída como um pacote. Ele pode ser agrupado com um aplicativo de console que o utiliza. Para saber como publicar um aplicativo de console, consulte o tutorial anterior nesta série:
 
 > [!div class="nextstepaction"]
-> [Publicar um aplicativo de console do .NET Core usando Visual Studio para Mac](publishing-with-visual-studio-mac.md)
+> [Publicar um aplicativo de console .NET usando Visual Studio para Mac](publishing-with-visual-studio-mac.md)

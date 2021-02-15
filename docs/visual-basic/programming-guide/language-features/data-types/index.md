@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: tipos de dados no Visual Basic'
 title: Tipos de dados
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,17 +9,19 @@ helpviewer_keywords:
 - Visual Basic code, data types
 - data types [Visual Basic], improving speed with
 ms.assetid: 5e1b9aaf-c7ca-4b29-9b22-0e82ed8e85e2
-ms.openlocfilehash: 928d7fb6a40873641ae3e91e057c272b946a0091
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f431b501b40d2fafd4422b1f3fa1ea3a2ebf56fb
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84393709"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100483931"
 ---
 # <a name="data-types-in-visual-basic"></a>Tipos de dados no Visual Basic
+
 O *tipo de dados* de um elemento de programação se refere a que tipo de dados ele pode armazenar e como ele armazena esses dados. Os tipos de dados se aplicam a todos os valores que podem ser armazenados na memória do computador ou participam da avaliação de uma expressão. Cada variável, literal, constante, enumeração, propriedade, parâmetro de procedimento, argumento de procedimento e valor retornado do procedimento tem um tipo de dados.  
   
 ## <a name="declared-data-types"></a>Tipos de dados declarados  
+
  Você define um elemento de programação com uma instrução de declaração, e você especifica o tipo de dados com a cláusula `As`. A tabela a seguir mostra as instruções que você usa para declarar vários elementos.  
   
 |Elemento de programação|Declaração de tipo de dados|  
@@ -34,16 +37,16 @@ O *tipo de dados* de um elemento de programação se refere a que tipo de dados 
   
  Para obter uma lista dos tipos de dados do Visual Basic, consulte [Tipos de dados](../../../language-reference/data-types/index.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Caracteres de tipo](type-characters.md)
 - [Tipos de dados elementares](elementary-data-types.md)
 - [Tipos de dados compostos](composite-data-types.md)
 - [Tipos genéricos no Visual Basic](generic-types.md)
-- [Tipos de valor e referência](value-types-and-reference-types.md)
+- [Tipos de valor e tipos de referência](value-types-and-reference-types.md)
 - [Conversões de tipo no Visual Basic](type-conversions.md)
 - [Estruturas](structures.md)
 - [Tuplas](tuples.md)
 - [Solução de problemas de tipos de dados](troubleshooting-data-types.md)
-- [Tipos de dados](../../../language-reference/data-types/index.md)
+- [Data Types](../../../language-reference/data-types/index.md)
 - [Uso eficiente de tipos de dados](efficient-use-of-data-types.md)

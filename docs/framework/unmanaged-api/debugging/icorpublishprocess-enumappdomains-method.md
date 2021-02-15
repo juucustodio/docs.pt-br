@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorPublishProcess:: EnumAppDomains'
 title: Método ICorPublishProcess::EnumAppDomains
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 7da621fc-e7d0-4c00-9439-5c93619d7414
 topic_type:
 - apiref
-ms.openlocfilehash: 0c3b5da52b78150198fa9f910bf01b4657e4eba8
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: c7834b23967ab467c1589ee31929bf346b4b3b8f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83421157"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794598"
 ---
 # <a name="icorpublishprocessenumappdomains-method"></a>Método ICorPublishProcess::EnumAppDomains
+
 Obtém um enumerador para os domínios de aplicativo no processo que é referenciado por este [ICorPublishProcess](icorpublishprocess-interface.md).  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,15 +36,18 @@ HRESULT EnumAppDomains (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ppEnum`  
  fora Um ponteiro para o endereço de uma instância de [ICorPublishAppDomainEnum](icorpublishappdomainenum-interface.md) que permite a iteração por meio da coleção de domínios de aplicativo nesse processo.  
   
 ## <a name="remarks"></a>Comentários  
+
  A lista de domínios de aplicativo é baseada em um instantâneo dos domínios de aplicativo que existem quando o `EnumAppDomains` método é chamado. Esse método pode ser chamado mais de uma vez para criar uma nova lista atualizada. As listas existentes não serão afetadas pelas chamadas subsequentes desse método.  
   
  Se o processo tiver sido encerrado, o `EnumAppDomains` falhará com um valor HRESULT de CORDBG_E_PROCESS_TERMINATED.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorPub. idl, CorPub. h  
@@ -51,6 +56,6 @@ HRESULT EnumAppDomains (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorPublishProcess](icorpublishprocess-interface.md)

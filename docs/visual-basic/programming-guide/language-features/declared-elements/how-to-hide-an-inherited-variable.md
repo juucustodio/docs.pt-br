@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como ocultar uma variável herdada (Visual Basic)'
 title: Como ocultar uma variável herdada
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,16 +12,16 @@ helpviewer_keywords:
 - declared elements [Visual Basic], about declared elements
 - variables [Visual Basic], hiding inherited
 ms.assetid: 765728d9-7351-4a30-999d-b5f34f024412
-ms.openlocfilehash: f49bba0497f9f4f2774b01284c815bba9aaed119
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: be2de980e27b318151c795ae36bd92a01d47d55e
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84357264"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429891"
 ---
 # <a name="how-to-hide-an-inherited-variable-visual-basic"></a>Como ocultar uma variável herdada (Visual Basic)
 
-Uma classe derivada herda todas as definições de sua classe base. Se você quiser definir uma variável usando o mesmo nome de um elemento da classe base, poderá ocultar ou *sombrear*esse elemento da classe base ao definir a variável na classe derivada. Se você fizer isso, o código na classe derivada acessa sua variável, a menos que ela ignore explicitamente o mecanismo de sombreamento.
+Uma classe derivada herda todas as definições de sua classe base. Se você quiser definir uma variável usando o mesmo nome de um elemento da classe base, poderá ocultar ou *sombrear* esse elemento da classe base ao definir a variável na classe derivada. Se você fizer isso, o código na classe derivada acessa sua variável, a menos que ela ignore explicitamente o mecanismo de sombreamento.
 
 Outro motivo para você querer ocultar uma variável herdada é proteger-se contra a revisão da classe base. A classe base pode passar por uma alteração que altera o elemento que você está herdando. Se isso acontecer, o `Shadows` modificador força referências da classe derivada a serem resolvidas para a variável, em vez de para o elemento de classe base.
 
@@ -56,7 +57,7 @@ Outro motivo para você querer ocultar uma variável herdada é proteger-se cont
 
 O sombreamento apresenta mais de uma versão de uma variável com o mesmo nome. Quando uma instrução de código se refere ao nome da variável, a versão para a qual o compilador resolve a referência depende de fatores como o local da instrução do código e a presença de uma cadeia de caracteres de qualificação. Isso pode aumentar o risco de se referir a uma versão não intencional de uma variável sombreada. Você pode reduzir esse risco Qualificando totalmente todas as referências a uma variável sombreada.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referências a elementos declarados](references-to-declared-elements.md)
 - [Sombreamento no Visual Basic](shadowing.md)

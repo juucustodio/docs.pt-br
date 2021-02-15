@@ -1,14 +1,14 @@
 ---
-ms.openlocfilehash: 3cc07eef109b9096bc5a5fbcd1ea098a23b2155f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 8b6d334677991382d235fd53cd3c98e3a77d650d
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "78968143"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96032224"
 ---
 ### <a name="http-browser-samesite-changes-impact-authentication"></a>HTTP: navegador SameSite alterações de impacto na autenticação
 
-Alguns navegadores, como Chrome e Firefox, fizeram alterações significativas em suas implementações de `SameSite` cookies. As alterações afetam os cenários de autenticação remota, como OpenID Connect e WS-Federation, que devem ser recusadas enviando `SameSite=None` . No entanto, o `SameSite=None` interrompe o IOS 12 e algumas versões mais antigas de outros navegadores. O aplicativo precisa farejar essas versões e omitir `SameSite` .
+Alguns navegadores, como Chrome e Firefox, fizeram alterações interruptivas nas respectivas implementações de `SameSite` para cookies. As alterações afetam os cenários de autenticação remota, como OpenID Connect e WS-Federation, que devem ser recusadas enviando `SameSite=None` . No entanto, o `SameSite=None` interrompe o IOS 12 e algumas versões mais antigas de outros navegadores. O aplicativo precisa farejar essas versões e omitir `SameSite` .
 
 Para obter uma discussão sobre esse problema, consulte [dotnet/aspnetcore # 14996](https://github.com/dotnet/aspnetcore/issues/14996).
 
@@ -22,11 +22,11 @@ Para obter uma discussão sobre esse problema, consulte [dotnet/aspnetcore # 149
 
 #### <a name="new-behavior"></a>Novo comportamento
 
-O Google propôs um novo padrão de rascunho que não é compatível com versões anteriores. O padrão altera o modo padrão para `Lax` e adiciona uma nova entrada `None` a ser recusada. `Lax` é suficiente para a maioria dos cookies de aplicativo; no entanto, ele quebra cenários entre sites como o OpenID Connect e o logon do WS-Federation. A maioria dos logons OAuth não é afetada devido a diferenças em como a solicitação flui. O novo `None` parâmetro causa problemas de compatibilidade com clientes que implementaram o rascunho padrão anterior (por exemplo, IOS 12). O Chrome 80 incluirá as alterações. Consulte [atualizações do SameSite](https://www.chromium.org/updates/same-site) para a linha do tempo de lançamento do produto Chrome.
+O Google propôs um novo padrão de rascunho que não é compatível com versões anteriores. O padrão altera o modo padrão para `Lax` e adiciona uma nova entrada `None` a ser recusada. `Lax` é suficiente para a maioria dos cookies de aplicativo; no entanto, ele quebra cenários entre sites como o OpenID Connect e WS-Federation logon. A maioria dos logons OAuth não é afetada devido a diferenças em como a solicitação flui. O novo `None` parâmetro causa problemas de compatibilidade com clientes que implementaram o rascunho padrão anterior (por exemplo, IOS 12). O Chrome 80 incluirá as alterações. Consulte [atualizações do SameSite](https://www.chromium.org/updates/same-site) para a linha do tempo de lançamento do produto Chrome.
 
 ASP.NET Core 3,1 foi atualizado para implementar o novo `SameSite` comportamento. A atualização redefine o comportamento de `SameSiteMode.None` para emissão `SameSite=None` e adiciona um novo valor `SameSiteMode.Unspecified` para omitir o `SameSite` atributo. Todas as APIs de cookie agora são padronizadas para `Unspecified` , embora alguns componentes que usam os cookies definam valores mais específicos para seus cenários, como a correlação do OpenID Connect e os cookies de nonce.
 
-Para outras alterações recentes nessa área, consulte [http: alguns padrões de SameSite de cookie foram alterados para nenhum](/dotnet/core/compatibility/2.2-3.0#http-some-cookie-samesite-defaults-changed-to-none). No ASP.NET Core 3,0, a maioria dos padrões foi alterada de <xref:Microsoft.AspNetCore.Http.SameSiteMode.Lax?displayProperty=nameWithType> para <xref:Microsoft.AspNetCore.Http.SameSiteMode.None?displayProperty=nameWithType> (mas ainda usando o padrão anterior).
+Para outras alterações recentes nessa área, consulte [http: alguns padrões de SameSite de cookie foram alterados para nenhum](../../../../docs/core/compatibility/2.2-3.0.md#http-some-cookie-samesite-defaults-changed-to-none). No ASP.NET Core 3,0, a maioria dos padrões foi alterada de <xref:Microsoft.AspNetCore.Http.SameSiteMode.Lax?displayProperty=nameWithType> para <xref:Microsoft.AspNetCore.Http.SameSiteMode.None?displayProperty=nameWithType> (mas ainda usando o padrão anterior).
 
 #### <a name="reason-for-change"></a>Motivo da alteração
 

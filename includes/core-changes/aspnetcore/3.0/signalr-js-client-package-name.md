@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: f202b39f1a45f740625827be25e72df0e403d605
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75901720"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96032310"
 ---
 ### <a name="signalr-javascript-client-package-name-changed"></a>Signalr: nome do pacote de cliente JavaScript alterado
 
@@ -16,7 +16,7 @@ Para obter uma discussão, consulte [dotnet/aspnetcore # 11637](https://github.c
 
 #### <a name="version-introduced"></a>Versão introduzida
 
-3,0
+3.0
 
 #### <a name="old-behavior"></a>Comportamento antigo
 

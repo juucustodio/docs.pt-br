@@ -1,24 +1,27 @@
 ---
+description: 'Saiba mais sobre: acompanhamento personalizado'
 title: Rastreamento personalizada
 ms.date: 03/30/2017
 ms.assetid: 2d191c9f-62f4-4c63-92dd-cda917fcf254
-ms.openlocfilehash: 2b100b877bbc8c6d830f09a4a59decffde511511
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a06faaaa50a06d613f7183ca018438a8f2b4460b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79182850"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792551"
 ---
 # <a name="custom-tracking"></a>Rastreamento personalizada
+
 Este exemplo demonstra como criar um participante personalizado de rastreamento e gravar o conteúdo dos dados de acompanhamento no console. Além disso, o exemplo demonstra como emitir os objetos de <xref:System.Activities.Tracking.CustomTrackingRecord> preenchido com dados definidos pelo usuário. O participante controlando console- base filtra os objetos de <xref:System.Activities.Tracking.TrackingRecord> emissores pelo fluxo de trabalho usando um objeto de perfil de rastreamento criado em código.
 
 ## <a name="sample-details"></a>Detalhes de exemplo
- O Windows Workflow Foundation (WF) fornece uma infra-estrutura de rastreamento para rastrear a execução de uma instância de fluxo de trabalho. O runtime de rastreamento implementa uma instância de fluxo de trabalho para emitir os eventos relacionados ao ciclo de vida de fluxo de trabalho, os eventos de atividades de fluxo de trabalho e eventos personalizados de rastreamento. A tabela a seguir detalha os componentes principais de infraestrutura de rastreamento.
+
+ Windows Workflow Foundation (WF) fornece uma infraestrutura de controle para controlar a execução de uma instância de fluxo de trabalho. O runtime de rastreamento implementa uma instância de fluxo de trabalho para emitir os eventos relacionados ao ciclo de vida de fluxo de trabalho, os eventos de atividades de fluxo de trabalho e eventos personalizados de rastreamento. A tabela a seguir detalha os componentes principais de infraestrutura de rastreamento.
 
 |Componente|Descrição|
 |---------------|-----------------|
 |runtime de rastreamento|Fornece a infraestrutura para emitir registros de rastreamento.|
-|Participantes de rastreamento|Consome os registros de rastreamento. O .NET Framework 4 é fornecido com um participante de rastreamento que grava registros de rastreamento como eventos de Rastreamento de Eventos para Windows (ETW).|
+|Participantes de rastreamento|Consome os registros de rastreamento. O .NET Framework 4 é fornecido com um participante de controle que grava registros de rastreamento como eventos de ETW (rastreamento de eventos para Windows).|
 |Controlando o perfil|Um mecanismo de filtragem que permite que um participante de rastreamento assine para um subconjunto de registros de rastreamento emissores de uma instância de fluxo de trabalho.|
 
  A tabela a seguir detalha os registros de rastreamento que o runtime de fluxo de trabalho se emite.
@@ -33,6 +36,7 @@ Este exemplo demonstra como criar um participante personalizado de rastreamento 
  O participante de rastreamento assinatura para um subconjunto dos objetos emissores de <xref:System.Activities.Tracking.TrackingRecord> usando perfis de rastreamento. Um perfil de rastreamento contém consultas de rastreamento que permitem assinar para um tipo de registro específico de rastreamento. Controlar perfis pode ser especificado no código ou na configuração.
 
 ### <a name="custom-tracking-participant"></a>Participante de rastreamento personalizada
+
  O participante API de rastreamento permite a extensão de rastreamento com um usuário fornecido pelo participante que pode incluir a lógica personalizada para manipular os objetos de <xref:System.Activities.Tracking.TrackingRecord> emissores em runtime de fluxo de trabalho.
 
  Para gravar um participante de rastreamento o usuário deve implementar <xref:System.Activities.Tracking.TrackingParticipant>. Especificamente, o método de <xref:System.Activities.Tracking.TrackingParticipant.Track%2A> precisa ser implementado por participante personalizado. Este método é chamado quando <xref:System.Activities.Tracking.TrackingRecord> é emitida em runtime de fluxo de trabalho.
@@ -47,7 +51,7 @@ public abstract class TrackingParticipant
 }
 ```
 
- O participante de rastreamento completo é implementado no arquivo ConsoleTrackingParticipant.cs. O exemplo de <xref:System.Activities.Tracking.TrackingParticipant.Track%2A> código a seguir é o método para o participante de rastreamento personalizado.
+ O participante de acompanhamento completo é implementado no arquivo ConsoleTrackingParticipant.cs. O exemplo de código a seguir é o <xref:System.Activities.Tracking.TrackingParticipant.Track%2A> método para o participante de acompanhamento personalizado.
 
 ```csharp
 protected override void Track(TrackingRecord record, TimeSpan timeout)
@@ -108,11 +112,12 @@ invoker.Extensions.Add(customTrackingParticipant);
 ```
 
 ### <a name="emitting-custom-tracking-records"></a>Emitindo registros de rastreamento personalizadas
+
  Este exemplo também demonstra a capacidade de emitir objetos de <xref:System.Activities.Tracking.CustomTrackingRecord> de uma atividade personalizado de fluxo de trabalho:
 
 - Os objetos de <xref:System.Activities.Tracking.CustomTrackingRecord> são criados e preenchido com dados definidos pelo usuário que são desejados ser emitidos com o registro.
 
-- O <xref:System.Activities.Tracking.CustomTrackingRecord> é emitido chamando o <xref:System.Activities.ActivityContext>método de faixa do .
+- O <xref:System.Activities.Tracking.CustomTrackingRecord> é emitido chamando o método Track do <xref:System.Activities.ActivityContext> .
 
  O exemplo a seguir demonstra como emitir objetos de <xref:System.Activities.Tracking.CustomTrackingRecord> dentro de uma atividade personalizado.
 
@@ -133,7 +138,7 @@ context.Track(customRecord);
 
 #### <a name="to-use-this-sample"></a>Para usar este exemplo
 
-1. Usando o Visual Studio 2010, abra o arquivo de solução CustomTrackingSample.sln.
+1. Usando o Visual Studio 2010, abra o arquivo de solução CustomTrackingSample. sln.
 
 2. Para criar a solução, pressione CTRL+SHIFT+B.
 
@@ -144,10 +149,10 @@ context.Track(customRecord);
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Se esse diretório não existir, vá para [a Windows Communication Foundation (WCF) e para o Windows Workflow Foundation (WF) Amostras para .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) para baixar todas as Amostras e amostras da [!INCLUDE[wf1](../../../../includes/wf1-md.md)] Windows Communication Foundation (Windows Communication Foundation). Este exemplo está localizado no seguinte diretório.  
+> Se esse diretório não existir, vá para [Windows Communication Foundation (WCF) e exemplos de Windows Workflow Foundation (WF) para .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) para baixar todos os Windows Communication Foundation (WCF) e [!INCLUDE[wf1](../../../../includes/wf1-md.md)] exemplos. Este exemplo está localizado no seguinte diretório.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Tracking\CustomTracking`  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [AppFabric que monitora Exemplos](https://docs.microsoft.com/previous-versions/appfabric/ff383407(v=azure.10))
+- [AppFabric que monitora Exemplos](/previous-versions/appfabric/ff383407(v=azure.10))

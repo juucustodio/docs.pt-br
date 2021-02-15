@@ -2,17 +2,16 @@
 title: Usando threads e threading
 description: Saiba mais sobre como usar threads e threading no .NET, para que você possa escrever aplicativos para executar muitas operações ao mesmo tempo (multithreading).
 ms.date: 08/08/2018
-ms.technology: dotnet-standard
 helpviewer_keywords:
-- threading [.NET Framework], about threading
+- threading [.NET], about threading
 - managed threading
 ms.assetid: 9b5ec2cd-121b-4d49-b075-222cf26f2344
-ms.openlocfilehash: c092994818c9105a555acaf63ceba4b8e99bcada
-ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
+ms.openlocfilehash: 85968cfb1a228826429876e525f0c8452f97cfc4
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84663025"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94826086"
 ---
 # <a name="using-threads-and-threading"></a>Usando threads e threading
 
@@ -21,7 +20,7 @@ Com o .NET, você pode escrever aplicativos que executam várias operações ao 
 Aplicativos que usam multithreading são mais responsivos a entradas do usuário porque a interface do usuário permanece ativa, enquanto tarefas com uso intensivo do processador são executadas em threads separados. O multithreading também é útil quando você cria aplicativos escalonáveis, porque você pode adicionar threads conforme a carga de trabalho aumenta.
 
 > [!NOTE]
-> Se precisar de mais controle sobre o comportamento dos threads de seu aplicativo, você poderá gerenciar os threads por conta própria. No entanto, começando no .NET Framework 4, a programação multi-threaded ficou bastante simplificada com as classes <xref:System.Threading.Tasks.Parallel?displayProperty=nameWithType> e <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>, o [PLINQ (LINQ paralelo)](../parallel-programming/introduction-to-plinq.md), as novas classes de coleção simultânea no namespace <xref:System.Collections.Concurrent?displayProperty=nameWithType> e um novo modelo de programação que se baseia no conceito de tarefas e não em threads. Para obter mais informações, confira [Programação paralela](../parallel-programming/index.md) e [TPL (biblioteca de paralelismo de tarefas)](../parallel-programming/task-parallel-library-tpl.md).
+> Se precisar de mais controle sobre o comportamento dos threads de seu aplicativo, você poderá gerenciar os threads por conta própria. No entanto, a programação multithread é bastante simplificada com as <xref:System.Threading.Tasks.Parallel?displayProperty=nameWithType> classes e o <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> [Parallel LINQ (PLINQ)](../parallel-programming/introduction-to-plinq.md), as classes de coleção simultâneas no <xref:System.Collections.Concurrent?displayProperty=nameWithType> namespace e um modelo de programação baseado no conceito de tarefas em vez de threads. Para obter mais informações, confira [Programação paralela](../parallel-programming/index.md) e [TPL (biblioteca de paralelismo de tarefas)](../parallel-programming/task-parallel-library-tpl.md).
 
 ## <a name="how-to-create-and-start-a-new-thread"></a>Como criar e iniciar um thread
 
@@ -33,7 +32,7 @@ Para encerrar a execução de um thread, use o <xref:System.Threading.Cancellati
 
 Às vezes, não é possível parar um thread de cooperativa, pois ele executa código de terceiros não projetado para cancelamento cooperativo. Nesse caso, talvez você queira encerrar sua execução forçosamente. Para encerrar a execução de um thread de modo forçado, em .NET Framework você pode usar o <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> método. Esse método gera uma <xref:System.Threading.ThreadAbortException> no thread em que é invocado. Para obter mais informações, confira [Destruindo threads](destroying-threads.md). O <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> método não tem suporte no .NET Core. Se você precisar encerrar a execução de código de terceiros de modo forçado no .NET Core, execute-o no processo e uso separados <xref:System.Diagnostics.Process.Kill%2A?displayProperty=nameWithType> .
 
-O <xref:System.Threading.CancellationToken?displayProperty=nameWithType> não está disponível antes de .NET Framework 4. Para interromper um thread em versões mais antigas do .NET Framework, você deve implementar o cancelamento cooperativo manualmente usando as técnicas de sincronização de threads. Por exemplo, você pode criar o campo booliano volátil `shouldStop` e usá-lo para solicitar o código executado pelo thread para parar. Para obter mais informações, consulte [volátil](../../csharp/language-reference/keywords/volatile.md) em referência de C# e <xref:System.Threading.Volatile?displayProperty=nameWithType> .
+O <xref:System.Threading.CancellationToken?displayProperty=nameWithType> não está disponível antes de .NET Framework 4. Para interromper um thread em versões mais antigas do .NET Framework, implemente o cancelamento cooperativo manualmente usando as técnicas de sincronização de threads. Por exemplo, você pode criar o campo booliano volátil `shouldStop` e usá-lo para solicitar o código executado pelo thread para parar. Para obter mais informações, consulte [volátil](../../csharp/language-reference/keywords/volatile.md) em referência de C# e <xref:System.Threading.Volatile?displayProperty=nameWithType> .
 
 Use o <xref:System.Threading.Thread.Join%2A?displayProperty=nameWithType> método para fazer com que o thread de chamada aguarde o encerramento do thread que está sendo interrompido.
 

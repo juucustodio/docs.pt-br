@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: BindingElement'
 title: BindingElement
 ms.date: 03/30/2017
 ms.assetid: fdbfde0c-2e52-4fc5-9eb8-14b42e647263
-ms.openlocfilehash: 88884c0c05d2b3e1e7bcc24e5c3d750b89385fcb
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: dc18f4854dac84222086b1a9283244c1cbc18d17
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61964184"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757768"
 ---
 # <a name="bindingelement"></a>BindingElement
+
 BindingElement  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp  
 class BindingElement  
@@ -21,14 +23,15 @@ class BindingElement
 ```  
   
 ## <a name="methods"></a>Métodos  
- A classe BindingElement herda, mas não define as propriedades ou métodos adicionais.  
+
+ A classe BindingElement é herdada de, mas não define métodos ou propriedades adicionais.  
   
 ## <a name="requirements"></a>Requisitos  
   
-|MOF|Declarado em Servicemodel.mof.|  
+|MOF|Declarado em ServiceModel. mof.|  
 |---------|-----------------------------------|  
-|Namespace|Definido no root\ServiceModel|  
+|Namespace|Definido em root\ServiceModel|  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.ServiceModel.Channels.Binding>

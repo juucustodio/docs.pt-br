@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedScope2:: GetConstantCount'
 title: Método ISymUnmanagedScope2::GetConstantCount
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 1e1f0be6-c4e8-4d6c-98cd-d5fa9f686e87
 topic_type:
 - apiref
-ms.openlocfilehash: 88fc6b7d6076bca42050ca87533062557e6a7b50
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: e5b084edb116432aa43360db72ca2528dd3cc6a3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83610945"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763248"
 ---
 # <a name="isymunmanagedscope2getconstantcount-method"></a>Método ISymUnmanagedScope2::GetConstantCount
+
 Obtém uma contagem das constantes definidas neste escopo.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -33,15 +35,18 @@ HRESULT GetConstantCount(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pRetVal`  
  fora Um ponteiro para um `ULONG32` que recebe o tamanho, em caracteres, do buffer necessário para conter as constantes.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedScope2](isymunmanagedscope2-interface.md)

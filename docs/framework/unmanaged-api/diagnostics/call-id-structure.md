@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura de CALL_ID'
 title: Estrutura CALL_ID
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: bfd46324-afec-4782-9c18-586d81fb4740
 topic_type:
 - apiref
-ms.openlocfilehash: 1c795ee536483a7def9c0339efae66a013898a77
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 4ef6023e382e8c5fead48494f428648a37f3bef4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420624"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800481"
 ---
 # <a name="call_id-structure"></a>Estrutura CALL_ID
+
 Fornece informações para um depurador sobre uma função que está sendo chamada. Consulte a interface [INotifySink2](inotifysink2-interface.md) para obter mais informações.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -40,7 +42,7 @@ typedef struct tagCALL_ID
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`szMachine`|Identifica o computador que está fazendo a chamada.|  
 |`dwPid`|Identifica o processador do computador.|  
@@ -50,9 +52,10 @@ typedef struct tagCALL_ID
 |`szDestinationMachine`|Identifica o computador que executará a chamada.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** ProtocolNotify2. idl  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Interface INotifySink2](inotifysink2-interface.md)
 - [Estruturas de armazenamento de símbolo de diagnóstico](diagnostics-symbol-store-structures.md)

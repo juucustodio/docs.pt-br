@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <transport> de <netTcpBinding>'
 title: <transport> de <netTcpBinding>
 ms.date: 03/30/2017
 ms.assetid: 49462e0a-66e1-463f-b3e1-c83a441673c6
-ms.openlocfilehash: 4ef08ad73a03dea21d27217364a7bacb46a3848e
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 9005de300b41c9f53c62875ee185d0f8a3ee8d7f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73735924"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664542"
 ---
 # <a name="transport-of-nettcpbinding"></a>\<transport> de \<netTcpBinding>
+
 Define o tipo de requisitos de segurança no nível de mensagem para um ponto de extremidade configurado com o [\<netTcpBinding>](nettcpbinding.md) .  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,7 +22,7 @@ Define o tipo de requisitos de segurança no nível de mensagem para um ponto de
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<security>**](security-of-nettcpbinding.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<transport>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <netTcpBinding>
@@ -41,6 +43,7 @@ Define o tipo de requisitos de segurança no nível de mensagem para um ponto de
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai  
   
 ### <a name="attributes"></a>Atributos  
@@ -69,6 +72,7 @@ Define o tipo de requisitos de segurança no nível de mensagem para um ponto de
 |EncryptAndSign|-As mensagens são criptografadas e assinadas.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -78,9 +82,10 @@ Define o tipo de requisitos de segurança no nível de mensagem para um ponto de
 |[\<security>](security-of-nettcpbinding.md)|Especifica os recursos de segurança do [\<netTcpBinding>](nettcpbinding.md) .|  
   
 ## <a name="remarks"></a>Comentários  
+
  Use a segurança de transporte para integridade e confidencialidade da mensagem SOAP e da autenticação mútua. Se esse modo de segurança for selecionado em uma associação, a pilha de canais será configurada usando um transporte seguro e as mensagens SOAP serão protegidas usando segurança de transporte, como Windows (Negotiate) ou SSL sobre TCP.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.TcpTransportSecurity>
 - <xref:System.ServiceModel.Configuration.NetTcpSecurityElement.Transport%2A>

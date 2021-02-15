@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <endpoint> de <client>'
 title: <endpoint> de <client>
 ms.date: 03/30/2017
 ms.assetid: de6238ae-bbf8-48e9-a1b5-e24c0bea8afa
-ms.openlocfilehash: f1ffbc1e8efac70523d7f631c8cf9ba9a1622bfc
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 4ace6d49ba18524729925b20cf08e5d57bcc40c5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70855322"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725773"
 ---
 # <a name="endpoint-of-client"></a>\<endpoint> de \<client>
+
 Especifica o contrato, a associação e as propriedades de endereço do ponto de extremidade do canal, que é usado pelos clientes para se conectar a pontos de extremidades de serviço no servidor.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -17,7 +19,7 @@ Especifica o contrato, a associação e as propriedades de endereço do ponto de
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<client>**](client.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<endpoint>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <endpoint address="String"
@@ -32,6 +34,7 @@ Especifica o contrato, a associação e as propriedades de endereço do ponto de
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -44,7 +47,7 @@ Especifica o contrato, a associação e as propriedades de endereço do ponto de
 |bindingConfiguration|Opcional. Uma cadeia de caracteres que contém o nome da configuração de associação a ser usada quando o ponto de extremidade é instanciado. A configuração de associação deve estar no escopo no ponto em que o ponto de extremidade é definido. O padrão é uma cadeia de caracteres vazia.<br /><br /> Esse atributo é usado em conjunto com `binding` para fazer referência a uma configuração de associação específica no arquivo de configuração. Defina esse atributo se você estiver tentando usar uma associação personalizada. Caso contrário, uma exceção pode ser lançada.|  
 |contrato|Atributo de cadeia de caracteres obrigatório.<br /><br /> Uma cadeia de caracteres que indica qual contrato este ponto de extremidade está expondo. O assembly deve implementar o tipo de contrato.|  
 |endpointConfiguration|Uma cadeia de caracteres que especifica o nome do ponto de extremidade padrão que é definido pelo `kind` atributo, que faz referência às informações de configuração adicionais desse ponto de extremidade padrão. O mesmo nome deve ser definido na `<standardEndpoints>` seção.|  
-|kind|Uma cadeia de caracteres que especifica o tipo de ponto de extremidade padrão aplicado. O tipo deve ser registrado na `<extensions>` seção ou em Machine. config. Se nada for especificado, um ponto de extremidade de canal comum será criado.|  
+|kind|Uma cadeia de caracteres que especifica o tipo de ponto de extremidade padrão aplicado. O tipo deverá ser registrado na seção `<extensions>` ou em machine.config. Caso nada seja especificado, um ponto de extremidade de canal comum será criado.|  
 |name|Atributo de cadeia de caracteres opcional. Esse atributo identifica exclusivamente um ponto de extremidade para um determinado contrato. Você pode definir vários clientes para um determinado tipo de contrato. Cada definição deve ser diferenciada por um nome de configuração exclusivo. Se esse atributo for omitido, o ponto de extremidade correspondente será usado como o ponto de extremidade padrão associado ao tipo de contrato especificado. O padrão é uma cadeia de caracteres vazia.<br /><br /> O `name` atributo de uma associação é usado para exportação de definição por meio de WSDL.|  
   
 ### <a name="child-elements"></a>Elementos filho  
@@ -61,6 +64,7 @@ Especifica o contrato, a associação e as propriedades de endereço do ponto de
 |[\<client>](client.md)|Uma seção de configuração que define uma lista de pontos de extremidade aos quais um cliente pode se conectar.|  
   
 ## <a name="example"></a>Exemplo  
+
  Este é um exemplo de uma configuração de ponto de extremidade de canal.  
   
 ```xml  
@@ -72,7 +76,7 @@ Especifica o contrato, a associação e as propriedades de endereço do ponto de
 </endpoint>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.ChannelEndpointElement>
 - <xref:System.ServiceModel.Configuration.ClientSection>

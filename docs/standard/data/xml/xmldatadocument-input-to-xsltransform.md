@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: entrada XmlDataDocument para XslTransform'
 title: XmlDataDocument inseriu a XslTransform
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 ms.assetid: a0b536b6-cdb3-4a44-86c2-3b2ebc7bd4c9
-ms.openlocfilehash: 01c6ba8b14f8de167892ee9eeaff615f1f9ca37d
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: d55f24e4d947c793bef47a6c5ccaadf6b53a1316
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84290260"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782657"
 ---
 # <a name="xmldatadocument-input-to-xsltransform"></a>XmlDataDocument inseriu a XslTransform
+
 > [!NOTE]
 > A classe <xref:System.Xml.Xsl.XslTransform> está obsoleta no .NET Framework 2.0. Você pode executar a linguagem XSL Transformations (XSLT) usando a classe <xref:System.Xml.Xsl.XslCompiledTransform>. Confira [Usar a classe XslCompiledTransform](using-the-xslcompiledtransform-class.md) e [Migrar da classe XslTransform](migrating-from-the-xsltransform-class.md) para saber mais.  
   
@@ -20,7 +21,7 @@ ms.locfileid: "84290260"
   
  Para saber mais sobre como aplicar uma transformação de dados relacional, confira [Aplicando uma transformação XSLT a um conjunto de dados](../../../framework/data/adonet/dataset-datatable-dataview/applying-an-xslt-transform-to-a-dataset.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.XmlDataDocument>
 - [Sincronização de DataSet e XmlDataDocument](../../../framework/data/adonet/dataset-datatable-dataview/dataset-and-xmldatadocument-synchronization.md)

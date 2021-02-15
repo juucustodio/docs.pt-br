@@ -3,14 +3,14 @@ title: Tutorial de processamento em lote com .NET para Apache Spark
 description: Saiba como fazer o processamento em lotes usando o .NET para Apache Spark.
 author: mamccrea
 ms.author: mamccrea
-ms.date: 06/25/2020
+ms.date: 10/09/2020
 ms.topic: tutorial
-ms.openlocfilehash: dbc3ab5cc4bd7f438e9f3f8e5d36c764d785ce4b
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: c161a0420de9e99478768926e5385dcfda1f9ee7
+ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85618279"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94688222"
 ---
 # <a name="tutorial-do-batch-processing-with-net-for-apache-spark"></a>Tutorial: fazer processamento em lote com .NET para Apache Spark
 
@@ -18,15 +18,13 @@ Neste tutorial, você aprenderá a fazer o processamento em lotes usando o .NET 
 
 Em geral, o processamento em lotes é executado em conjuntos de grandes volumes de valores simples, que precisam ser preparados para análise posterior. O processamento de log e o data warehousing são cenários comuns de processamento em lote. Nesse cenário, você analisa informações sobre projetos do GitHub, como o número de vezes que projetos diferentes foram bifurcados ou como os projetos foram atualizados.
 
-Neste tutorial, você aprenderá como:
+Neste tutorial, você aprenderá a:
 
 > [!div class="checklist"]
 >
 > * Criar e executar um aplicativo .NET para Apache Spark
 > * Ler dados em um dataframe e prepará-los para análise
 > * Processar os dados usando o Spark SQL
-
-[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -160,7 +158,7 @@ O objetivo deste aplicativo é obter algumas informações sobre os dados de pro
 1. Execute seu aplicativo com `spark-submit` . Certifique-se de atualizar o comando a seguir com os caminhos reais para o arquivo JAR do Microsoft Spark.
 
    ```console
-   spark-submit --class org.apache.spark.deploy.dotnet.DotnetRunner --master local /<path>/to/microsoft-spark-<version>.jar dotnet /<path>/to/netcoreapp<version>/GitHubProjects.dll
+   spark-submit --class org.apache.spark.deploy.dotnet.DotnetRunner --master local /<path>/to/microsoft-spark-<spark_majorversion-spark_minorversion>_<scala_majorversion.scala_minorversion>-<spark_dotnet_version>.jar dotnet /<path>/to/netcoreapp<version>/mySparkBatchApp.dll
    ```
 
 ## <a name="get-the-code"></a>Obter o código

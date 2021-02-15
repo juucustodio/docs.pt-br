@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <probing> elemento'
 title: Elemento <probing>
 ms.date: 03/30/2017
 f1_keywords:
@@ -9,14 +10,15 @@ helpviewer_keywords:
 - container tags, <probing> element
 - probing element
 ms.assetid: 09c80fc9-1ba5-4192-89f7-3a79b2e4b024
-ms.openlocfilehash: e9e48ea97e1b70fef7fcc78a113e18c5fec23b7c
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 404e53f735ce02c2a3d7911216f834d38e309789
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73115857"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726098"
 ---
 # <a name="probing-element"></a>Elemento \<probing>
+
 Especifica subdiretórios base do aplicativo para a Common Language Runtime Pesquisar ao carregar assemblies.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -24,13 +26,14 @@ Especifica subdiretórios base do aplicativo para a Common Language Runtime Pesq
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<assemblyBinding>**](assemblybinding-element-for-runtime.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<probing>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <probing privatePath="paths"/>  
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -52,6 +55,7 @@ Nenhum.
 |`runtime`|Contém informações sobre associação do assembly e coleta de lixo.|  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir mostra como especificar subdiretórios base do aplicativo em que o tempo de execução deve pesquisar assemblies.  
   
 ```xml  
@@ -64,7 +68,7 @@ Nenhum.
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações de tempo de execução](index.md)
 - [Esquema do arquivo de configuração](../index.md)

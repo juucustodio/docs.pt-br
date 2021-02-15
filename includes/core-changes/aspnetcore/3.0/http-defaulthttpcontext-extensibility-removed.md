@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 9d138f79fcede4acac837f8d7793aa343ced737c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "78290738"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96032243"
 ---
 ### <a name="http-defaulthttpcontext-extensibility-removed"></a>HTTP: extensibilidade defaulthttpcontext removida
 
@@ -16,7 +16,7 @@ Para obter uma discussão, consulte [dotnet/aspnetcore # 6534](https://github.co
 
 #### <a name="version-introduced"></a>Versão introduzida
 
-3,0
+3.0
 
 #### <a name="old-behavior"></a>Comportamento antigo
 

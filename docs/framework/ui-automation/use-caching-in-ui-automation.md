@@ -9,14 +9,15 @@ helpviewer_keywords:
 - caching, UI Automation
 - UI Automation, caching
 ms.assetid: ec722dff-6009-4279-b86a-e18d3fa94ebf
-ms.openlocfilehash: 8dff9db77e39dc66a16b6a7b395c76a3c768d48e
-ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
+ms.openlocfilehash: f99fb724130c359a77c72db66dd9f837ef1a2219
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86924481"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96258602"
 ---
 # <a name="use-caching-in-ui-automation"></a>Usar armazenamento em cache em automação de interface do usuário
+
 > [!NOTE]
 > Esta documentação destina-se a desenvolvedores do .NET Framework que querem usar as classes da [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] gerenciadas definidas no namespace <xref:System.Windows.Automation>. Para obter as informações mais recentes sobre a [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], consulte [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32) (API de Automação do Windows: Automação da Interface do Usuário).  
   
@@ -24,7 +25,7 @@ ms.locfileid: "86924481"
   
 ### <a name="activate-a-cache-request"></a>Ativar uma solicitação de cache  
   
-1. Crie um <xref:System.Windows.Automation.CacheRequest>.  
+1. Criará um <xref:System.Windows.Automation.CacheRequest>.  
   
 2. Especifique propriedades e padrões para armazenar em cache usando <xref:System.Windows.Automation.CacheRequest.Add%2A> .  
   
@@ -53,17 +54,19 @@ ms.locfileid: "86924481"
 3. Recupere os valores de propriedade da `Cached` Propriedade do padrão de controle.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo de código a seguir mostra vários aspectos do cache, usando <xref:System.Windows.Automation.CacheRequest.Activate%2A> o para ativar o <xref:System.Windows.Automation.CacheRequest> .  
   
  [!code-csharp[UIAClient_snip#107](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#107)]
  [!code-vb[UIAClient_snip#107](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#107)]  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo de código a seguir mostra vários aspectos do cache, usando <xref:System.Windows.Automation.CacheRequest.Push%2A> o para ativar o <xref:System.Windows.Automation.CacheRequest> . Exceto quando você deseja aninhar solicitações de cache, é preferível usar <xref:System.Windows.Automation.CacheRequest.Activate%2A> .  
   
  [!code-csharp[UIAClient_snip#108](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#108)]
  [!code-vb[UIAClient_snip#108](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#108)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Armazenando em cache em clientes de automação de interface do usuário](caching-in-ui-automation-clients.md)

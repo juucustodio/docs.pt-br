@@ -1,7 +1,7 @@
 ---
+description: 'Saiba mais sobre: executando Culture-Insensitive operações de cadeia de caracteres em coleções'
 title: Executando operações de cadeia de caracteres que não levam em conta a cultura em coleções
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -9,18 +9,18 @@ helpviewer_keywords:
 - CaseInsensitiveComparer class, using
 - CollectionsUtil.CreateCaseInsensitiveHashtable method
 - culture-insensitive string operations, collections
-- collections [.NET Framework], culture-insensitive string operations
+- collections [.NET], culture-insensitive string operations
 - CaseInsensitiveHashCodeProvider class, using
 - ArrayList.Sort method
 - SortedList class, culture-insensitive string operations
 - culture parameter
 ms.assetid: 5cdc9396-a64b-4615-a1cd-b605db4c5983
-ms.openlocfilehash: 377fa58e052e8f8e35a546c21fe2b4fb00cb103d
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 38628474a20359be84780c2d90ac2470a9a66730
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84288258"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675696"
 ---
 # <a name="performing-culture-insensitive-string-operations-in-collections"></a>Executando operações de cadeia de caracteres que não levam em conta a cultura em coleções
 
@@ -137,7 +137,7 @@ Em geral, se você usar `SortedList` em cadeias de caracteres sem especificar um
 
 Sobrecargas do método `ArrayList.Sort` executam, por padrão, classificações sensíveis à cultura usando a propriedade `Thread.CurrentCulture`. Os resultados podem variar de acordo com a cultura, devido a ordens de classificação diferentes. Para eliminar o comportamento sensível à cultura, use as sobrecargas desse método para aceitar uma implementação `IComparer`. Para o parâmetro `comparer`, especifique uma classe de comparação invariável personalizada que usa `CultureInfo.InvariantCulture`. Um exemplo de uma classe de comparação invariável personalizada é fornecido no tópico [Usar a classe SortedList](#cpconperformingculture-insensitivestringoperationsincollectionsanchor1).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Collections.CaseInsensitiveComparer>
 - <xref:System.Collections.CaseInsensitiveHashCodeProvider>

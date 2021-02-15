@@ -1,16 +1,18 @@
 ---
+description: 'Saiba mais sobre: período de renovação do bloqueio do host'
 title: Período de renovação de bloqueio de host
 ms.date: 03/30/2017
 ms.assetid: f8ba94fc-27e0-4d8e-8f85-50a6d2a3cd43
-ms.openlocfilehash: 91d83259c766120f7e3ffc9e49f1cf1b18c32a18
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 88348c4cebd7ac42657c4ba68238a3b58a8f0d1a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61945607"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742206"
 ---
 # <a name="host-lock-renewal-period"></a>Período de renovação de bloqueio de host
-O **período de renovação de bloqueio de Host** propriedade de Store de instância de fluxo de trabalho do SQL permite que você especifique o período de tempo em que o host renova seu bloqueio em uma instância de fluxo de trabalho. O bloqueio permaneça válido para o período de renovação de bloqueio host + 30 segundos. Se o host não renova o bloqueio (ou seja estender o aluguer) dentro desse período de tempo, o bloqueio expirar e o provedor de persistência desbloqueia a instância. O valor para essa propriedade é do tipo de intervalo de tempo no formato "hh". O mínimo valor permitido é de "00: 00:01" (1 segundo). O valor padrão dessa propriedade é "00: 00:30" (30 segundos).  
+
+A propriedade **período de renovação do bloqueio do host** do repositório da instância do fluxo de trabalho SQL permite especificar o período de tempo no qual o host renova seu bloqueio em uma instância de fluxo de trabalho. O bloqueio permaneça válido para o período de renovação de bloqueio host + 30 segundos. Se o host não renova o bloqueio (ou seja estender o aluguer) dentro desse período de tempo, o bloqueio expirar e o provedor de persistência desbloqueia a instância. O valor dessa propriedade é do tipo TimeSpan no formato "hh: mm: SS". O valor mínimo permitido é "00:00:01" (1 segundo). O valor padrão dessa propriedade é "00:00:30" (30 segundos).  
   
  Esta propriedade é significativa em situações onde um host serviço de fluxo de trabalho falha antes que possa desbloquear uma instância do serviço de fluxo de trabalho que possua. Nesse cenário, o bloqueio na instância do serviço de fluxo de trabalho na base de dados de persistência é removido pelo provedor de persistência após o bloqueio expira de modo que outra execução do host serviço de fluxo de trabalho no mesmo computador ou em outro computador em um farm de servidores pode adquirir o bloqueio e carregar a instância do serviço de fluxo de trabalho na memória para continuar a execução de seu estado persistente último.  
   

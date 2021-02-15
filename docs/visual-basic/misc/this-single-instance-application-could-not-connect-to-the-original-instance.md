@@ -1,24 +1,26 @@
 ---
+description: 'Saiba mais sobre: este aplicativo de instância única não pôde se conectar à instância original'
 title: Este aplicativo de instância única não pôde se conectar à instância original
 ms.date: 07/20/2015
 f1_keywords:
 - vbrAppModel_SingleInstanceCantConnect
 ms.assetid: 7c2c0cee-02a1-4157-be03-39d18e18408f
-ms.openlocfilehash: 04ceec4839d07ba959c39af8c4f582c7abfe7d6b
-ms.sourcegitcommit: 5a28f8eb071fcc09b045b0c4ae4b96898673192e
+ms.openlocfilehash: 123cf2cded43c10d0f538fc12f31f4065caeb6dd
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73198133"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100427915"
 ---
 # <a name="this-single-instance-application-could-not-connect-to-the-original-instance"></a>Este aplicativo de instância única não pôde se conectar à instância original
+
 Este aplicativo de instância única não pôde se conectar à instância original. Algumas das possíveis causas para esse problema são as seguintes:  
   
 - A instância original parou de responder.  
   
 - O aplicativo não tem permissões para criar objetos kernel. Para obter mais informações sobre objetos kernel, consulte [mutexes](../../standard/threading/mutexes.md).  
   
-     O nome de base para os objetos kernel vem da concatenação do GUID do assembly, número da versão principal e número da versão secundária. Por exemplo, o nome de base pode ser `3639f15d-9547-43da-8145-60da347829915.1`.  
+     O nome de base para os objetos kernel vem da concatenação do GUID do assembly, número da versão principal e número da versão secundária. Por exemplo, o nome de base pode ser `3639f15d-9547-43da-8145-60da347829915.1` .  
   
 ## <a name="to-correct-this-error-when-developing-the-application"></a>Para corrigir esse erro ao desenvolver o aplicativo  
   

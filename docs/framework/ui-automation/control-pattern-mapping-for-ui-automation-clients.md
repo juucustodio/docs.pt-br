@@ -6,14 +6,15 @@ helpviewer_keywords:
 - control patterns, for UI Automation clients
 - UI Automation, clients, control patterns for
 ms.assetid: 8b81645b-8be3-4e26-9c98-4fb0fceca06b
-ms.openlocfilehash: 7673ce4ac88cc36a7c35e2e946a31d23b2ce6eca
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: aaab4639a7573dd090af2e6d9bb06f896c4728f6
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87164182"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96276549"
 ---
 # <a name="control-pattern-mapping-for-ui-automation-clients"></a>Mapeamento de Padrão de Controles para Clientes de Automação de IU
+
 > [!NOTE]
 > Esta documentação destina-se a desenvolvedores do .NET Framework que querem usar as classes da [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] gerenciadas definidas no namespace <xref:System.Windows.Automation>. Para obter as informações mais recentes sobre a [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], consulte [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32) (API de Automação do Windows: Automação da Interface do Usuário).  
   
@@ -31,6 +32,7 @@ ms.locfileid: "87164182"
 > Alguns controles têm suporte condicional para vários padrões de controle, dependendo da funcionalidade do controle. Por exemplo, o controle de item de menu tem suporte condicional para o <xref:System.Windows.Automation.InvokePattern> padrão de controle,, <xref:System.Windows.Automation.ExpandCollapsePattern> <xref:System.Windows.Automation.TogglePattern> ou <xref:System.Windows.Automation.SelectionItemPattern> , dependendo de sua função no controle de menu.  
   
 <a name="control_mapping_clients"></a>
+
 ## <a name="ui-automation-control-patterns-for-clients"></a>Padrões de Controle para Clientes de Automação de IU  
   
 |Tipo de controle|Com suporte|Suporte condicional|Sem suporte|  
@@ -38,16 +40,16 @@ ms.locfileid: "87164182"
 |Botão|Nenhum|Invocar, ativar/desativar, expandir recolher|Nenhum|  
 |Calendário|Grade, tabela|Seleção, rolar|Valor|  
 |Caixa de seleção|Alternar|Nenhum|Nenhum|  
-|Caixa de Combinação|Expandir recolher|Seleção, valor|Rolar|  
-|Grade de dados|Grade|Rolar, selecionar, tabela|Nenhum|  
+|Caixa de Combinação|Expandir recolher|Seleção, valor|Rolagem|  
+|Grade de dados|Grid|Rolar, selecionar, tabela|Nenhum|  
 |Item de Dados|Item de Seleção|Expandir recolhimento, item de grade, item de rolagem, tabela, alternância, valor|Nenhum|  
-|Document|Texto|Rolar, valor|Nenhum|  
+|Documento|Texto|Rolar, valor|Nenhum|  
 |Editar|Nenhum|Texto, valor do intervalo, valor|Nenhum|  
 |Agrupar|Nenhum|Expandir recolher|Nenhum|  
 |Cabeçalho|Nenhum|Transformar|Nenhum|  
 |Item de Cabeçalho|Nenhum|Transformar, invocar|Nenhum|  
 |Hyperlink|Invoke|Valor|Nenhum|  
-|Image|Nenhum|Item de grade, item de tabela|Invocar, item de seleção|  
+|Imagem|Nenhum|Item de grade, item de tabela|Invocar, item de seleção|  
 |Lista|Nenhum|Grade, exibição múltipla, rolagem, seleção|Tabela|  
 |Item de lista|Item de Seleção|Expandir recolhimento, item de grade, invocar, rolar item, alternar, valor|Nenhum|  
 |Menu|Nenhum|Nenhum|Nenhum|  
@@ -56,13 +58,13 @@ ms.locfileid: "87164182"
 |Painel|Nenhum|Ancorá. Rolar, transformar|Janela|  
 |Barra de Andamento|Nenhum|Valor do intervalo, valor|Nenhum|  
 |Botão de Opção|Item de Seleção|Nenhum|Alternar|  
-|Barra de Rolagem|Nenhum|Valor de Intervalo|Rolar|  
+|Barra de Rolagem|Nenhum|Valor de Intervalo|Rolagem|  
 |Separador|Nenhum|Nenhum|Nenhum|  
 |Controle deslizante|Nenhum|Valor de intervalo, seleção, valor|Nenhum|  
 |Controle giratório|Nenhum|Valor de intervalo, seleção, valor|Nenhum|  
 |Botão de Divisão|Invocar, expandir recolher|Nenhum|Nenhum|  
-|Barra de Status|Nenhum|Grade|Nenhum|  
-|Tab|Seleção|Rolar|Nenhum|  
+|Barra de Status|Nenhum|Grid|Nenhum|  
+|Guia|Seleção|Rolagem|Nenhum|  
 |Item da Guia|Item de Seleção|Nenhum|Invoke|  
 |Tabela|Grade, item de grade, tabela, item de tabela|Nenhum|Nenhum|  
 |Texto|Nenhum|Item de grade, item de tabela, texto|Valor|  
@@ -77,6 +79,6 @@ ms.locfileid: "87164182"
 > [!NOTE]
 > Se um tipo de controle não tiver padrões de controle com suporte listados, mas tiver um ou mais padrões de controle com suporte condicionalmente, um desses padrões de controle condicional terá suporte em todos os momentos.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Visão geral de automação da interface do usuário](ui-automation-overview.md)

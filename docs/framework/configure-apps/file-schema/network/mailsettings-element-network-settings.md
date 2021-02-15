@@ -9,21 +9,22 @@ helpviewer_keywords:
 - mailSettings element
 - <mailSettings> element
 ms.assetid: 54f0f153-17e5-4f49-afdc-deadb940c9c1
-ms.openlocfilehash: ce7b8564e4ee5ea73d42259612c077420d36645b
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: a146874acc21f52507b37b1751c648792e23c8bb
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84504557"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91158845"
 ---
 # <a name="mailsettings-element-network-settings"></a>Elemento \<mailSettings> (Configurações de Rede)
+
 Configura as opções de envio de email.  
 
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<mailSettings>**
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <mailSettings>
@@ -32,24 +33,27 @@ Configura as opções de envio de email.
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
+
  Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|[\<smtp>Elemento (configurações de rede)](smtp-element-network-settings.md)|Configura opções de protocolo de transporte de email simples.|  
+|[\<smtp> Elemento (configurações de rede)](smtp-element-network-settings.md)|Configura opções de protocolo de transporte de email simples.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
-|**Elemento**|**Descrição**|  
+|**Element**|**Descrição**|  
 |-----------------|---------------------|  
-|[\<system.Net>Elemento (configurações de rede)](system-net-element-network-settings.md)|Contém configurações que especificam como o .NET Framework se conecta à rede.|  
+|[\<system.Net> Elemento (configurações de rede)](system-net-element-network-settings.md)|Contém configurações que especificam como o .NET Framework se conecta à rede.|  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir especifica os parâmetros de SMTP apropriados para enviar email usando as credenciais de rede padrão.  
   
 ```xml  

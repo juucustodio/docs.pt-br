@@ -3,18 +3,18 @@ title: Depuração do deadlock-.NET Core
 description: Um tutorial que orienta você pela depuração de um problema de bloqueio no .NET Core.
 ms.topic: tutorial
 ms.date: 07/20/2020
-ms.openlocfilehash: 6f060e1ae801eb4eacbbd1fb67110f827c37f597
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: d9a9328b376de5886d22ca7315f6d7d9d73fd2c2
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88557874"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90538690"
 ---
 # <a name="debug-a-deadlock-in-net-core"></a>Depurar um deadlock no .NET Core
 
 **Este artigo aplica-se a: ✔️** SDK do .net Core 3,1 e versões posteriores
 
-Neste tutorial, você aprenderá a depurar um cenário de deadlock. Usando o exemplo fornecido ASP.NET Core repositório de código-fonte do [aplicativo Web](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) , você pode causar um deadlock intencionalmente. O ponto de extremidade passará por uma falha e acumulação de threads. Você aprenderá como é possível usar várias ferramentas para analisar o problema, como dumps principais, análise de despejo principal e rastreamento de processos.
+Neste tutorial, você aprenderá a depurar um cenário de deadlock. Usando o exemplo fornecido ASP.NET Core repositório de código-fonte do [aplicativo Web](/samples/dotnet/samples/diagnostic-scenarios) , você pode causar um deadlock intencionalmente. O ponto de extremidade passará por uma falha e acumulação de threads. Você aprenderá como é possível usar várias ferramentas para analisar o problema, como dumps principais, análise de despejo principal e rastreamento de processos.
 
 Neste tutorial, você irá:
 
@@ -31,13 +31,13 @@ Neste tutorial, você irá:
 O tutorial usa:
 
 - [SDK do .NET Core 3,1](https://dotnet.microsoft.com/download/dotnet-core) ou uma versão posterior
-- [Exemplo de destino de depuração – aplicativo Web](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) para disparar o cenário
+- [Exemplo de destino de depuração – aplicativo Web](/samples/dotnet/samples/diagnostic-scenarios) para disparar o cenário
 - [dotnet-rastrear](dotnet-trace.md) para listar processos
 - [dotnet-despejo](dotnet-dump.md) para coletar e analisar um arquivo de despejo
 
 ## <a name="core-dump-generation"></a>Geração de despejo principal
 
-Para investigar a falta de resposta do aplicativo, um despejo principal ou despejo de memória permite inspecionar o estado de seus threads e os possíveis bloqueios que podem ter problemas de contenção. Execute o aplicativo de [depuração de exemplo](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) usando o seguinte comando no diretório raiz de exemplo:
+Para investigar a falta de resposta do aplicativo, um despejo principal ou despejo de memória permite inspecionar o estado de seus threads e os possíveis bloqueios que podem ter problemas de contenção. Execute o aplicativo de [depuração de exemplo](/samples/dotnet/samples/diagnostic-scenarios) usando o seguinte comando no diretório raiz de exemplo:
 
 ```dotnetcli
 dotnet run

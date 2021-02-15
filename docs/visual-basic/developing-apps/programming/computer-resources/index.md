@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: acessando recursos do computador (Visual Basic)'
 title: Acessando recursos do computador
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - My.Computer object [Visual Basic], tasks
 - computer resources [Visual Basic], accessing
 ms.assetid: 75b81c88-f7c0-46e0-95c8-0c006d2120f9
-ms.openlocfilehash: 9595abaa1daa2b4a4436577d58856183dcb4d9ac
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 20b91557bb5940be048f9c38e03b087c07f96c85
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401778"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792330"
 ---
 # <a name="accessing-computer-resources-visual-basic"></a>Acessar recursos de computador (Visual Basic)
 

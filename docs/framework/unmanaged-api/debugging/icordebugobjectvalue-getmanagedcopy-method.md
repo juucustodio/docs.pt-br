@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugObjectValue:: GetManagedCopy'
 title: Método ICorDebugObjectValue::GetManagedCopy
 ms.date: 03/30/2017
 api_name:
@@ -15,17 +16,18 @@ helpviewer_keywords:
 ms.assetid: 300af43f-b3eb-4ce5-9ead-30dbfc5fbcc3
 topic_type:
 - apiref
-ms.openlocfilehash: d0f3f6206a215b0296f6e183f48d69d8d979a02d
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: f2947721103ff75c2a1133ac59968996505b0416
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73095815"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728958"
 ---
 # <a name="icordebugobjectvaluegetmanagedcopy-method"></a>Método ICorDebugObjectValue::GetManagedCopy
+
 `GetManagedCopy` é obsoleto. Não chame esse método.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT GetManagedCopy (  
@@ -34,6 +36,7 @@ HRESULT GetManagedCopy (
 ```  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também

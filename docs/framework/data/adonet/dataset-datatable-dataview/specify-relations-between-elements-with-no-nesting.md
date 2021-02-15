@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: especificar relações entre elementos sem aninhamento'
 title: Especificar relações entre elementos sem nenhum aninhamento
 ms.date: 03/30/2017
 ms.assetid: e31325da-7691-4d33-acf4-99fccca67006
-ms.openlocfilehash: bee427c6cdf76792773ea827c8772b276ff29c31
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 68f6edad0c282091529bf9182f5161d0808a47aa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79150812"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651620"
 ---
 # <a name="specify-relations-between-elements-with-no-nesting"></a>Especificar relações entre elementos sem nenhum aninhamento
-Quando os elementos não estão aninhados, nenhuma relação implícita é criada. No entanto, você pode especificar explicitamente as relações entre elementos que não estão aninhados usando a anotação **msdata:Relacionamento.**  
+
+Quando os elementos não são aninhados, nenhuma relação implícita é criada. No entanto, você pode especificar explicitamente as relações entre os elementos que não são aninhados usando a anotação **MSDATA: relationship** .  
   
- O exemplo a seguir mostra um esquema XML no qual a anotação **msdata:Relationship** é especificada entre os elementos **Ordem** e **OrderDetail,** que não estão aninhados. A anotação **msdata:Relacionamento** é especificada como o elemento filho do elemento **Esquema.**  
+ O exemplo a seguir mostra um esquema XML no qual a anotação **MSDATA: relationship** é especificada entre os elementos **Order** e **OrderDetail** , que não estão aninhados. A anotação **MSDATA: relationship** é especificada como o elemento filho do elemento **Schema** .  
   
 ```xml  
 <xs:schema id="MyDataSet" xmlns=""
@@ -53,7 +55,7 @@ Quando os elementos não estão aninhados, nenhuma relação implícita é criad
 </xs:schema>  
 ```  
   
- O processo de mapeamento de esquema xml schema (XSD) cria uma <xref:System.Data.DataSet> tabela com tabelas **Order** and **OrderDetail** e uma relação especificada entre essas duas tabelas, conforme mostrado abaixo.  
+ O processo de mapeamento de esquema XSD (linguagem de definição de esquema XML) cria um <xref:System.Data.DataSet> com tabelas **Order** e **OrderDetail** e uma relação especificada entre essas duas tabelas, como mostrado abaixo.  
   
 ```text  
 RelationName: OrdOrderDetailRelation  
@@ -64,7 +66,7 @@ ChildColumns: OrderNo
 Nested: False  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Gerar relações de DataSet do esquema XML (XSD)](generating-dataset-relations-from-xml-schema-xsd.md)
 - [Mapeamento de restrições de esquema XML (XSD) para restrições de DataSet](mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)

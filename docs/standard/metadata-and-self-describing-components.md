@@ -1,7 +1,7 @@
 ---
+description: 'Saiba mais sobre: metadados e componentes de Self-Describing'
 title: Metadados e componentes autodescritivos
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -13,18 +13,18 @@ helpviewer_keywords:
 - metadata, about metadata
 - common language runtime, metadata
 - PE files, metadata
-- components [.NET Framework], metadata
+- components [.NET], metadata
 ms.assetid: 3dd13c5d-a508-455b-8dce-0a852882a5a7
-ms.openlocfilehash: 5327bd70b05bac8970fa9802fb15e94ba5f686c8
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 5f043a1e204c019f83fb15705ca44562a82ad6a2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84290052"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702204"
 ---
 # <a name="metadata-and-self-describing-components"></a>Metadados e componentes autodescritivos
 
-No passado, um componente de software (.exe ou .dll) escrito em uma linguagem não podia usar facilmente um componente de software escrito em outra linguagem. COM foi um passo para a solução desse problema. O .NET Framework facilita ainda mais a interoperação entre componentes permitindo que compiladores emitam informações declarativas adicionais sobre todos os módulos e assemblies. Essas informações, chamadas de metadados, ajudam os componentes a interagirem perfeitamente.
+No passado, um componente de software (.exe ou .dll) escrito em uma linguagem não podia usar facilmente um componente de software escrito em outra linguagem. COM foi um passo para a solução desse problema. O .NET torna a interoperação de componente ainda mais fácil, permitindo que compiladores emitam informações declarativas adicionais em todos os módulos e assemblies. Essas informações, chamadas de metadados, ajudam os componentes a interagirem perfeitamente.
 
  Metadados são informações binárias que descrevem o seu programa, armazenadas em um arquivo PE (Portable Executable) do Common Language Runtime ou na memória. Quando você compila seu código em um arquivo PE, os metadados são inseridos em uma parte do arquivo, e o código é convertido em MSIL (Microsoft Intermediate Language) e inserido em outra parte do arquivo. Cada tipo e membro definido e referenciado em um módulo ou assembly é descrito em metadados. Quando o código é executado, o runtime carrega os metadados na memória e os referencia para descobrir informações sobre suas classes de código, membros, herança etc.
 
@@ -52,7 +52,7 @@ No passado, um componente de software (.exe ou .dll) escrito em uma linguagem n�
 
 ## <a name="benefits-of-metadata"></a>Benefícios dos metadados
 
-Os metadados são a chave para um modelo de programação mais simples e eliminam a necessidade de arquivos IDL (Interface Definition Language), arquivos de cabeçalho ou qualquer método externo de referência a componente. Os metadados permitem que linguagens .NET Framework se descrevam automaticamente de maneira neutra em relação à linguagem, sem que o desenvolvedor e o usuário vejam. Além disso, metadados são extensíveis pelo uso de atributos. Os metadados oferecem os seguintes benefícios principais:
+Os metadados são a chave para um modelo de programação mais simples e eliminam a necessidade de arquivos IDL (Interface Definition Language), arquivos de cabeçalho ou qualquer método externo de referência a componente. Os metadados permitem que as linguagens .NET se descrevam automaticamente de maneira neutra de linguagem, não vistos pelo desenvolvedor e pelo usuário. Além disso, metadados são extensíveis pelo uso de atributos. Os metadados oferecem os seguintes benefícios principais:
 
 - Arquivos autodescritivos.
 
@@ -64,11 +64,11 @@ Os metadados são a chave para um modelo de programação mais simples e elimina
 
 - Atributos.
 
-  O .NET Framework permite declarar tipos específicos de metadados, chamados atributos, no seu arquivo compilado. Os atributos podem ser encontrados em todo o .NET Framework e são usados para controlar mais detalhadamente como o seu programa se comporta no tempo de execução. Além disso, você pode emitir seus próprios metadados personalizados em arquivos do .NET Framework por meio de atributos definidos pelo usuário. Para obter mais informações, consulte [Atributos](attributes/index.md).
+  O .NET permite que você declare tipos específicos de metadados, chamados atributos, em seu arquivo compilado. Os atributos podem ser encontrados em todo o .NET e são usados para controlar mais detalhadamente como o seu programa se comporta em tempo de execução. Além disso, você pode emitir seus próprios metadados personalizados em arquivos .NET por meio de atributos personalizados definidos pelo usuário. Para obter mais informações, consulte [Atributos](attributes/index.md).
 
 ## <a name="metadata-and-the-pe-file-structure"></a>Metadados e a estrutura de arquivos PE
 
-Os metadados são armazenados em uma seção de um arquivo PE (Portable Executable) do .NET Framework, e o MSIL (Microsoft Intermediate Language) é armazenado em outra seção do arquivo PE. A parte de metadados do arquivo contém uma série de estruturas de tabela e de dados do heap. A parte MSIL contém tokens MSIL e de metadados que referenciam a parte de metadados do arquivo PE. Você pode encontrar tokens de metadados ao usar ferramentas como o [MSIL Disassembler (Ildasm.exe)](../framework/tools/ildasm-exe-il-disassembler.md) para exibir o MSIL de seu código, por exemplo.
+Os metadados são armazenados em uma seção de um arquivo executável portátil do .NET (PE), enquanto o MSIL (Microsoft Intermediate Language) é armazenado em outra seção do arquivo PE. A parte de metadados do arquivo contém uma série de estruturas de tabela e de dados do heap. A parte MSIL contém tokens MSIL e de metadados que referenciam a parte de metadados do arquivo PE. Você pode encontrar tokens de metadados ao usar ferramentas como o [MSIL Disassembler (Ildasm.exe)](../framework/tools/ildasm-exe-il-disassembler.md) para exibir o MSIL de seu código, por exemplo.
 
 ### <a name="metadata-tables-and-heaps"></a>Tabelas e heaps de metadados
 
@@ -134,7 +134,7 @@ public class MyApp
 
 Quando o código é executado, o runtime carrega o módulo na memória e consulta os metadados dessa classe. Quando carregado, o runtime executa uma análise abrangente do fluxo MSIL (Microsoft Intermediate Language) do método para convertê-lo em instruções de máquina rápidas nativas. O runtime usa um compilador JIT (just-in-time) para converter as instruções MSIL em código de máquina nativo, um método por vez, conforme necessário.
 
-O exemplo a seguir mostra parte do MSIL produzido a partir da função `Main` do código anterior. Você pode exibir o MSIL e os metadados de qualquer aplicativo .NET Framework usando o [MSIL Disassembler (Ildasm.exe)](../framework/tools/ildasm-exe-il-disassembler.md).
+O exemplo a seguir mostra parte do MSIL produzido a partir da função `Main` do código anterior. Você pode exibir o MSIL e os metadados de qualquer aplicativo .NET usando o [desmontador MSIL (Ildasm.exe)](../framework/tools/ildasm-exe-il-disassembler.md).
 
 ```console
 .entrypoint

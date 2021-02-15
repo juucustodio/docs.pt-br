@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função FunctionTailcall3'
 title: Função FunctionTailcall3
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1e48243f-5de6-4bd6-a1d0-e1d248bca4b8
 topic_type:
 - apiref
-ms.openlocfilehash: 55955cd47bd32fb4294b0b8e852dd692702bd74f
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 07ab49e8aeccdd82680a677c8b94e8a0c075d242
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500527"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99687292"
 ---
 # <a name="functiontailcall3-function"></a>Função FunctionTailcall3
+
 Notifica o criador de perfil de que a função atualmente em execução está prestes a executar uma chamada tail para outra função.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,6 +39,7 @@ void __stdcall FunctionTailcall3 (FunctionOrRemappedID functionOrRemappedID);
   \[in] o identificador da função atualmente em execução que está prestes a fazer uma chamada tail.
 
 ## <a name="remarks"></a>Comentários  
+
  A `FunctionTailcall3` função de retorno de chamada notifica o criador de perfil conforme as funções estão sendo chamadas. Use o [método ICorProfilerInfo3:: SetEnterLeaveFunctionHooks3](icorprofilerinfo3-setenterleavefunctionhooks3-method.md) para registrar sua implementação dessa função.  
   
  A `FunctionTailcall3` função é um retorno de chamada; você deve implementá-la. A implementação deve usar o `__declspec(naked)` atributo de classe de armazenamento.  
@@ -52,6 +55,7 @@ void __stdcall FunctionTailcall3 (FunctionOrRemappedID functionOrRemappedID);
  A `FunctionTailcall3` função não deve chamar código gerenciado ou causar uma alocação de memória gerenciada de qualquer forma.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl  
@@ -60,7 +64,7 @@ void __stdcall FunctionTailcall3 (FunctionOrRemappedID functionOrRemappedID);
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [FunctionEnter3](functionenter3-function.md)
 - [FunctionLeave3](functionleave3-function.md)

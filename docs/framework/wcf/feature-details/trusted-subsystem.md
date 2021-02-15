@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: subsistema confiável'
 title: Subsistema de confiança
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 1f5ce46b-e259-4bc9-a0b9-89d06fc9341c
-ms.openlocfilehash: f90906b4c3fc1d1d76977451abfb238bb33fb581
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 41c2943c7794206dba06ef8b5bbee762931ce0c0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595109"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733041"
 ---
 # <a name="trusted-subsystem"></a>Subsistema de confiança
+
 Um cliente acessa um ou mais serviços Web que são distribuídos em uma rede. Os serviços Web são projetados de forma que o acesso a recursos adicionais (como bancos de dados ou outros serviços Web) seja encapsulado na lógica de negócios do serviço Web. Esses recursos devem ser protegidos contra acesso não autorizado. A ilustração a seguir descreve um processo de subsistema confiável.  
   
  ![Subsistema confiável](media/wcfc-trustedsubsystemc.gif "wcfc_TrustedSubsystemc")  
@@ -36,19 +38,21 @@ Um cliente acessa um ou mais serviços Web que são distribuídos em uma rede. O
 |Autenticação (serviço)|O serviço de token de segurança autentica e autoriza clientes.|  
 |Autenticação (cliente)|O subsistema confiável autentica o cliente e o recurso autentica o serviço de subsistema confiável.|  
 |Integridade|Sim|  
-|Confidencialidade|Sim|  
+|Confidencialidade|Yes|  
 |Transport|HTTP entre o cliente e o serviço de subsistema confiável.<br /><br /> Virtual. TCP entre o serviço de subsistema confiável e o recurso (serviço de back-end).|  
-|Associação|<xref:System.ServiceModel.WSHttpBinding>e<xref:System.ServiceModel.NetTcpBinding>[\<wsFederationHttpBinding>](../../configure-apps/file-schema/wcf/wsfederationhttpbinding.md)|  
+|Associação|<xref:System.ServiceModel.WSHttpBinding> e <xref:System.ServiceModel.NetTcpBinding>[\<wsFederationHttpBinding>](../../configure-apps/file-schema/wcf/wsfederationhttpbinding.md)|  
   
 ## <a name="resource-back-end-service"></a>Recurso (serviço de back-end)  
   
 ### <a name="code"></a>Código  
+
  O código a seguir mostra como criar um ponto de extremidade de serviço para o recurso, que usa a segurança de transporte sobre o protocolo de transporte TCP.  
   
  [!code-csharp[TrustedSubSystemsResource#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/trustedsubsystemsresource/cs/source.cs#1)]
  [!code-vb[TrustedSubSystemsResource#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/trustedsubsystemsresource/vb/source.vb#1)]  
   
 ### <a name="configuration"></a>Configuração  
+
  A configuração a seguir configura o mesmo ponto de extremidade usando a configuração.  
   
 ```xml  
@@ -90,6 +94,7 @@ Um cliente acessa um ou mais serviços Web que são distribuídos em uma rede. O
 ## <a name="trusted-subsystem"></a>Subsistema de confiança  
   
 ### <a name="code"></a>Código  
+
  O código a seguir mostra como criar um ponto de extremidade de serviço para o subsistema confiável que usa a segurança de mensagem sobre o protocolo HTTP e um nome de usuário e senha para autenticação.  
   
  [!code-csharp[TrustedSubSystems#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/trustedsubsystems/cs/source.cs#1)]
@@ -101,6 +106,7 @@ Um cliente acessa um ou mais serviços Web que são distribuídos em uma rede. O
  [!code-vb[TrustedSubSystems#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/trustedsubsystems/vb/source.vb#2)]  
   
 ### <a name="configuration"></a>Configuração  
+
  A configuração a seguir configura o mesmo ponto de extremidade usando a configuração. Observe as duas associações: uma protege o serviço hospedado no subsistema confiável e o outro se comunica entre o subsistema confiável e o serviço de back-end.  
   
 ```xml  
@@ -166,12 +172,14 @@ Um cliente acessa um ou mais serviços Web que são distribuídos em uma rede. O
 ## <a name="client"></a>Cliente  
   
 ### <a name="code"></a>Código  
+
  O código a seguir mostra como criar o cliente que se comunica com o subsistema confiável usando a segurança de mensagem sobre o protocolo HTTP e um nome de usuário e senha para autenticação.  
   
  [!code-csharp[TrustedSubSystemsClient#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/trustedsubsystemsclient/cs/source.cs#1)]
  [!code-vb[TrustedSubSystemsClient#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/trustedsubsystemsclient/vb/source.vb#1)]  
   
 ### <a name="configuration"></a>Configuração  
+
  O código a seguir configura o cliente para usar a segurança de mensagem sobre o protocolo HTTP e um nome de usuário e senha para autenticação. O nome de usuário e a senha só podem ser especificados usando código (não é configurável).  
   
 ```xml  
@@ -210,7 +218,7 @@ Um cliente acessa um ou mais serviços Web que são distribuídos em uma rede. O
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral de segurança](security-overview.md)
-- [Modelo de segurança para o Windows Server app Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Modelo de segurança para o Windows Server app Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

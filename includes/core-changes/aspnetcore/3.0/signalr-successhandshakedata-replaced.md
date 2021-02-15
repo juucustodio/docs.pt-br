@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 1d8bcaf68d44f27642048c1c207b52c55b604690
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 05aec429e28ef74515ef6988d5b064e6d16b7c1b
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75901722"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96032312"
 ---
 ### <a name="signalr-handshakeprotocolsuccesshandshakedata-replaced"></a>Signalr: HandshakeProtocol. SuccessHandshakeData substituído
 
@@ -12,7 +12,7 @@ O campo [HandshakeProtocol. SuccessHandshakeData](https://github.com/dotnet/aspn
 
 #### <a name="version-introduced"></a>Versão introduzida
 
-3,0
+3.0
 
 #### <a name="old-behavior"></a>Comportamento antigo
 
@@ -28,7 +28,7 @@ Campos adicionais foram adicionados à _resposta_ de handshake que são não con
 
 #### <a name="recommended-action"></a>Ação recomendada
 
-Nenhum. Esse tipo não é projetado para uso do código do usuário. É `public` , portanto, pode ser compartilhado entre o servidor e o cliente do signalr. Ele também pode ser usado por clientes do Signalr do cliente escritos em .NET. **Os usuários** do signalr não devem ser afetados por essa alteração.
+nenhuma. Esse tipo não é projetado para uso do código do usuário. É `public` , portanto, pode ser compartilhado entre o servidor e o cliente do signalr. Ele também pode ser usado por clientes do Signalr do cliente escritos em .NET. **Os usuários** do signalr não devem ser afetados por essa alteração.
 
 #### <a name="category"></a>Categoria
 
@@ -36,7 +36,7 @@ ASP.NET Core
 
 #### <a name="affected-apis"></a>APIs afetadas
 
-<xref:Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol.SuccessHandshakeData?displayProperty=namewithType>
+<xref:Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol.SuccessHandshakeData?displayProperty=nameWithType>
 
 <!--
 

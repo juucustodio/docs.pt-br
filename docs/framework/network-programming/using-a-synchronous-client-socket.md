@@ -18,14 +18,15 @@ helpviewer_keywords:
 - Internet, sockets
 - client sockets
 ms.assetid: 945d00c6-7202-466c-9df9-140b84156d43
-ms.openlocfilehash: ef682af33c10cf06ffc398c22e4a7dc1adf8290e
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: f198f283f2acfdcfbafed25baecb02a64e9d1e26
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502061"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96236306"
 ---
 # <a name="using-a-synchronous-client-socket"></a>Usando um soquete de cliente síncrono
+
 Um soquete de cliente síncrona suspende o programa de aplicativo enquanto a operação de rede é concluída. Soquetes síncronos não são adequados para aplicativos que fazem uso intenso da rede para sua operação, mas podem permitir o acesso simples aos serviços de rede para outros aplicativos.  
   
  Para enviar dados, passe uma matriz de bytes para um dos métodos de envio de dados da classe <xref:System.Net.Sockets.Socket> (<xref:System.Net.Sockets.Socket.Send%2A> e <xref:System.Net.Sockets.Socket.SendTo%2A>). O exemplo a seguir codifica uma cadeia de caracteres em um buffer de matriz de bytes usando a propriedade <xref:System.Text.Encoding.ASCII%2A?displayProperty=nameWithType> e, em seguida, transmite o buffer para o dispositivo de rede usando o método **Send**. O método **Send** retorna o número de bytes enviados para o dispositivo de rede.  
@@ -71,7 +72,7 @@ s.Shutdown(SocketShutdown.Both);
 s.Close();  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Usando um soquete de cliente assíncrono](using-an-asynchronous-client-socket.md)
 - [Escutando com soquetes](listening-with-sockets.md)

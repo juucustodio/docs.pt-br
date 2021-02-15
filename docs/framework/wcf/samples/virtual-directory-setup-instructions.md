@@ -1,31 +1,33 @@
 ---
+description: 'Saiba mais sobre: instruções de configuração do diretório virtual'
 title: Instruções de definição de diretório virtual
 ms.date: 03/30/2017
 ms.assetid: 3c62cab5-81a4-48b6-ac8c-9ce33a85a157
-ms.openlocfilehash: 2d9443431601ffc712da40bd1c085f595471336b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 4b1a68fb657a59e9858c6efa7931c5d106231605
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84602356"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755701"
 ---
 # <a name="virtual-directory-setup-instructions"></a>Instruções de definição de diretório virtual
+
 Os exemplos de Windows Communication Foundation (WCF) destinam-se a compartilhar um diretório virtual comum denominado servicemodelsamples que é mapeado para a pasta%SystemDrive%\inetpub\wwwroot\servicemodelsamples.  
   
 > [!NOTE]
 > % SystemDrive% geralmente é C: ou D:, dependendo do local da unidade em que o Serviços de Informações da Internet (IIS) está instalado.  
   
- Você pode executar os arquivos Setupvroot. bat e Cleanupvroot. bat do [procedimento de configuração única para os exemplos de Windows Communication Foundation](one-time-setup-procedure-for-the-wcf-samples.md) para criar o diretório virtual. Se preferir criar o diretório virtual manualmente, use os procedimentos a seguir.  
+ Você pode executar os arquivos de Setupvroot.bat e Cleanupvroot.bat do [procedimento de configuração única para os exemplos de Windows Communication Foundation](one-time-setup-procedure-for-the-wcf-samples.md) para criar o diretório virtual. Se preferir criar o diretório virtual manualmente, use os procedimentos a seguir.  
   
 ## <a name="procedures"></a>Procedimentos  
   
 #### <a name="to-create-a-virtual-directory-in-iis-70-or-75"></a>Para criar um diretório virtual no IIS 7,0 ou 7,5  
   
-1. No menu **Iniciar** , clique em **executar**e digite **inetmgr** para abrir o snap-in do MMC serviços de informações da Internet (IIS).  
+1. No menu **Iniciar** , clique em **executar** e digite **inetmgr** para abrir o snap-in do MMC serviços de informações da Internet (IIS).  
   
 2. No painel esquerdo, expanda o nó com o nome do computador e, em seguida, expanda o nó **sites** .  
   
-3. Clique com o botão direito do mouse em **site padrão**e selecione **Adicionar aplicativo** para abrir a **janela Adicionar aplicativo**.  
+3. Clique com o botão direito do mouse em **site padrão** e selecione **Adicionar aplicativo** para abrir a **janela Adicionar aplicativo**.  
   
 4. Na janela, digite `servicemodelsamples` como o alias para o diretório virtual que você está criando.  
   
@@ -41,7 +43,7 @@ Os exemplos de Windows Communication Foundation (WCF) destinam-se a compartilhar
     > [!NOTE]
     > Para a finalidade desta documentação, o termo `virtual directory` é sinônimo de `Web application` .  
   
-     Além de criar o diretório virtual, você também deve definir suas propriedades para permitir que os serviços WCF sejam executados. Veja abaixo para obter mais detalhes.  
+     Além de criar o diretório virtual, você também deve definir suas propriedades para permitir que os serviços WCF sejam executados. Confira os detalhes abaixo.  
   
 #### <a name="to-create-a-virtual-directory-in-iis-51-or-60"></a>Para criar um diretório virtual no IIS 5,1 ou 6,0  
   
@@ -55,15 +57,15 @@ Os exemplos de Windows Communication Foundation (WCF) destinam-se a compartilhar
   
 5. Defina o caminho para%SystemDrive%\inetpub\wwwroot\servicemodelsamples. A maioria dos exemplos do WCF copia arquivos executáveis do serviço para esse local quando compilado.  
   
-6. Clique em **Avançar**.  
+6. Clique em **Próximo**.  
   
 7. Por padrão, as seguintes caixas de seleção são selecionadas:  
   
-    - **Leitura**  
+    - **Ler**  
   
     - **Executar scripts (como ASP)**  
   
-8. Clique em **Avançar**e em **concluir** para concluir o assistente.  
+8. Clique em **Avançar** e em **concluir** para concluir o assistente.  
   
     > [!NOTE]
     > Esta tarefa deve ser executada apenas uma vez porque todos os exemplos do WCF usam o mesmo diretório virtual servicemodelsamples.  
@@ -76,7 +78,7 @@ Os exemplos de Windows Communication Foundation (WCF) destinam-se a compartilhar
   
 3. No painel Ações, selecione a opção **habilitar** . Isso permite que você acesse o diretório do diretório usando o Internet Explorer, que ajuda a depurar um serviço.  
   
- Por fim, você deve definir as propriedades de segurança da pasta servicemodelsamples para permitir que ela seja acessada por outras pessoas. Veja abaixo para obter mais detalhes.  
+ Por fim, você deve definir as propriedades de segurança da pasta servicemodelsamples para permitir que ela seja acessada por outras pessoas. Confira os detalhes abaixo.  
   
 #### <a name="to-set-additional-virtual-directory-properties-in-iis-51-or-60"></a>Para definir propriedades de diretório virtual adicionais no IIS 5,1 ou 6,0  
   
@@ -84,7 +86,7 @@ Os exemplos de Windows Communication Foundation (WCF) destinam-se a compartilhar
   
 2. Por padrão, as seguintes caixas de seleção são selecionadas:  
   
-    - **Leitura**  
+    - **Ler**  
   
     - **Registrar visitas**  
   
@@ -104,7 +106,7 @@ Os exemplos de Windows Communication Foundation (WCF) destinam-se a compartilhar
   
 5. Clique em **Avançado**.  
   
-6. Clique em **locais**. A janela **locais** agora está aberta.  
+6. Clique em **Locais**. A janela **locais** agora está aberta.  
   
 7. Selecione a entrada para o computador que está sendo usado. É importante selecionar o computador local e não uma entrada para todos os domínios ou redes listados. Depois de selecionar o computador, clique em **OK**.  
   
@@ -124,7 +126,7 @@ Os exemplos de Windows Communication Foundation (WCF) destinam-se a compartilhar
   
 2. Clique com o botão direito do mouse na pasta **servicemodelsamples** e clique em **compartilhamento e segurança.**  
   
-3. Clique na guia **Segurança**.  
+3. Clique na guia **Segurança** .  
   
 4. Se você estiver usando o IIS 6,0, na caixa **nomes de grupo ou de usuário** , verifique se a conta de convidado da **Internet** está listada.  
   

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo:: GetModuleInfo'
 title: Método ICorProfilerInfo::GetModuleInfo
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 5a90d16f-7929-4987-8f83-a631becf564d
 topic_type:
 - apiref
-ms.openlocfilehash: 751f2ac44e543fed76c7031791bb57d75ed0fd48
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 003f40e6637490be23e8bf87a6bac8ab76bc50e5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84498096"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647187"
 ---
 # <a name="icorprofilerinfogetmoduleinfo-method"></a>Método ICorProfilerInfo::GetModuleInfo
+
 Dada uma ID de módulo, retorna o nome do arquivo do módulo e a ID do assembly pai do módulo.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -39,6 +41,7 @@ HRESULT GetModuleInfo(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `moduleId`  
  no A ID do módulo para o qual as informações serão recuperadas.  
   
@@ -58,6 +61,7 @@ HRESULT GetModuleInfo(
  fora Um ponteiro para a ID do assembly pai do módulo.  
   
 ## <a name="remarks"></a>Comentários  
+
  Para módulos dinâmicos, o `szName` parâmetro é uma cadeia de caracteres vazia e o endereço base é 0 (zero).  
   
  Embora o `GetModuleInfo` método possa ser chamado assim que a ID do módulo existir, a ID do assembly pai não estará disponível até que o criador de perfil receba o retorno de chamada [ICorProfilerCallback:: ModuleAttachedToAssembly](icorprofilercallback-moduleattachedtoassembly-method.md) .  
@@ -67,6 +71,7 @@ HRESULT GetModuleInfo(
  Como alternativa, você pode primeiro chamar `GetModuleInfo` com um buffer de comprimento zero `szName` para obter o tamanho de buffer correto. Em seguida, você pode definir o tamanho do buffer para o valor retornado em `pcchName` e chamar `GetModuleInfo` novamente.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -75,7 +80,7 @@ HRESULT GetModuleInfo(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo](icorprofilerinfo-interface.md)
 - [Criação de perfil de interfaces](profiling-interfaces.md)

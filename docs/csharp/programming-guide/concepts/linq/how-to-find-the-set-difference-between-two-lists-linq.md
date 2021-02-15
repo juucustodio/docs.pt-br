@@ -3,14 +3,15 @@ title: Como localizar a diferença de conjunto entre duas listas (LINQ) (C#)
 description: Saiba como usar o LINQ em C# para comparar duas listas de cadeias de caracteres e produzir as linhas que estão em uma lista, mas não no outro.
 ms.date: 07/20/2015
 ms.assetid: 8e8945f0-4aba-439d-8d5d-c8d1eeef4e71
-ms.openlocfilehash: 24509488d91f9861ee9bf84277238bea7031e5f6
-ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
+ms.openlocfilehash: 01aba16b3489e4bf21a76bc715b6d4d2c9d250dd
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87105088"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91159053"
 ---
 # <a name="how-to-find-the-set-difference-between-two-lists-linq-c"></a>Como localizar a diferença de conjunto entre duas listas (LINQ) (C#)
+
 Este exemplo mostra como usar o LINQ para comparar duas listas de cadeias de caracteres e retornar as linhas que estão no names1.txt, mas não no names2.txt.  
   
 ### <a name="to-create-the-data-files"></a>Para criar os arquivos de dados  
@@ -56,6 +57,7 @@ class CompareLists
  Alguns tipos de operações de consulta em C#, tais como <xref:System.Linq.Enumerable.Except%2A>, <xref:System.Linq.Enumerable.Distinct%2A>, <xref:System.Linq.Enumerable.Union%2A> e <xref:System.Linq.Enumerable.Concat%2A>, só podem ser expressas em sintaxe baseada em método.  
   
 ## <a name="compiling-the-code"></a>Compilando o código  
+
  Criar um projeto de aplicativo de console em C# com diretivas `using` para os namespaces System.Linq e System.IO.  
   
 ## <a name="see-also"></a>Confira também

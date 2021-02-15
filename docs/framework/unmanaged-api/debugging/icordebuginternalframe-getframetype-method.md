@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugInternalFrame:: GetFrameType'
 title: Método ICorDebugInternalFrame::GetFrameType
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: da278a29-dc2e-4bf7-96ce-801bdc4d7025
 topic_type:
 - apiref
-ms.openlocfilehash: 6b598352f734cf47514a82de1d0fca65d430a9ab
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: ea96f032ebfa5914503287d124242b74a84ea11f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83209951"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791173"
 ---
 # <a name="icordebuginternalframegetframetype-method"></a>Método ICorDebugInternalFrame::GetFrameType
+
 Obtém o tipo deste quadro interno.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,13 +36,16 @@ HRESULT GetFrameType (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pType`  
  fora Um ponteiro para um valor da enumeração CorDebugInternalFrameType que indica o tipo de quadro interno representado por esse `ICorDebugInternalFrame` objeto.  
   
 ## <a name="remarks"></a>Comentários  
+
  O tipo de quadro interno nunca será STUBFRAME_NONE. Os depuradores devem ignorar normalmente os tipos de quadro internos não reconhecidos.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

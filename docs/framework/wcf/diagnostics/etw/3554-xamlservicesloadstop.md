@@ -1,28 +1,32 @@
 ---
+description: 'Saiba mais sobre: 3554-XamlServicesLoadStop'
 title: 3554 - XamlServicesLoadStop
 ms.date: 03/30/2017
 ms.assetid: 1d3a3bd9-fdaf-4c57-bede-e8392b077c99
-ms.openlocfilehash: e9deb102b960364b5daa408c6ed781462777dbcd
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 7a271f4585aa7b7fcc86f1b2e25e2d2b0cdfa55e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61781577"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788482"
 ---
 # <a name="3554---xamlservicesloadstop"></a>3554 - XamlServicesLoadStop
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
 |ID|3554|  
 |Palavras-chave|WebHost|  
-|Nível|Informações|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido em xamlservicesload-zastavení.  
+
+ Esse evento é emitido no XamlServicesLoad stop.  
   
 ## <a name="message"></a>Mensagem  
- Xamlservicesload-Zastavení  
+
+ XamlServicesLoad parar  
   
 ## <a name="details"></a>Detalhes

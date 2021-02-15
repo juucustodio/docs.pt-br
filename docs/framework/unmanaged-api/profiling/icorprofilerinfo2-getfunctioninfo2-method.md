@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo2:: GetFunctionInfo2'
 title: Método ICorProfilerInfo2::GetFunctionInfo2
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 0aa60f24-8bbd-4c83-83c5-86ad191b1d82
 topic_type:
 - apiref
-ms.openlocfilehash: f5438ddc655f0f6a7c11d978a47b1bf9e2a13059
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: f0534a2e8cc8a9ce24f2c2b3deaade6215e15b5a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84496995"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99657067"
 ---
 # <a name="icorprofilerinfo2getfunctioninfo2-method"></a>Método ICorProfilerInfo2::GetFunctionInfo2
+
 Obtém a classe pai, o token de metadados e o `ClassID` de cada argumento de tipo, se presente, de uma função.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -40,6 +42,7 @@ HRESULT GetFunctionInfo2(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `funcId`  
  no A ID da função para a qual obter a classe pai e outras informações.  
   
@@ -65,6 +68,7 @@ HRESULT GetFunctionInfo2(
  fora Uma matriz de `ClassID` valores, cada qual é a ID de um argumento de tipo da função. Quando o método retornar, `typeArgs` conterá alguns ou todos os `ClassID` valores.  
   
 ## <a name="remarks"></a>Comentários  
+
  O código do criador de perfil pode chamar [ICorProfilerInfo:: GetModuleMetaData](icorprofilerinfo-getmodulemetadata-method.md) para obter uma interface de [metadados](../metadata/index.md) para um determinado módulo. O token de metadados que é retornado para o local referenciado por `pToken` pode ser usado para acessar os metadados para a função.  
   
  Os argumentos ID de classe e tipo retornados por meio dos `pClassId` `typeArgs` parâmetros e dependem do valor que é passado no `frameInfo` parâmetro, conforme mostrado na tabela a seguir.  
@@ -80,6 +84,7 @@ HRESULT GetFunctionInfo2(
  Como alternativa, você pode primeiro chamar `GetFunctionInfo2` com um buffer de comprimento zero `pcTypeArgs` para obter o tamanho de buffer correto. Em seguida, você pode definir o tamanho do buffer para o valor retornado em `pcTypeArgs` dividido pelo tamanho de um `ClassID` valor e chamar `GetFunctionInfo2` novamente.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -88,7 +93,7 @@ HRESULT GetFunctionInfo2(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo](icorprofilerinfo-interface.md)
 - [Interface ICorProfilerInfo2](icorprofilerinfo2-interface.md)

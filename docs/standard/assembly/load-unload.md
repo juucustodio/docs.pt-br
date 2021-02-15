@@ -3,14 +3,15 @@ title: Como carregar e descarregar assemblies
 description: O CLR carrega automaticamente assemblies .NET referenciados por um programa. Você também pode carregar dinamicamente assemblies específicos no domínio do aplicativo atual.
 ms.date: 08/19/2019
 ms.assetid: 6a4f490f-3576-471f-9533-003737cad4a3
-ms.openlocfilehash: e6f1ede055dd3f68bced4eba527b2fc65f7d5715
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: fe1a5fe63361620f8ab99ec8469169ed2213c0ee
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378689"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95731482"
 ---
 # <a name="how-to-load-and-unload-assemblies"></a>Como carregar e descarregar assemblies
+
 Os assemblies referenciados pelo seu programa serão automaticamente carregados pelo Common Language Runtime, mas também é possível carregar dinamicamente assemblies específicos no domínio do aplicativo atual. Para obter mais informações, consulte [como carregar assemblies em um domínio de aplicativo](../../framework/app-domains/how-to-load-assemblies-into-an-application-domain.md).
 
 No .NET Framework, não há nenhuma maneira de descarregar um assembly individual sem descarregar todos os domínios de aplicativo que o contêm. Mesmo se o assembly sair do escopo, o arquivo do assembly real permanecerá carregado até que todos os domínios do aplicativo que o contenham sejam descarregados. No .NET Core, a <xref:System.Runtime.Loader.AssemblyLoadContext?displayProperty=nameWithType> classe manipula o descarregamento de assemblies. Para obter mais informações, consulte [como usar e depurar o descarregamento de assembly no .NET Core](unloadability.md).

@@ -7,22 +7,27 @@ helpviewer_keywords:
 - MEF, Composition Analysis Tool
 - Mefx [MEF], Composition Analysis Tool
 ms.assetid: c48a7f93-83bb-4a06-aea0-d8e7bd1502ad
-ms.openlocfilehash: abb1459afc5aeb2d39ee553c62fe382bb7af58d5
-ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
+ms.openlocfilehash: a7c76bfe169a23322a5a0cdfe0d2e2e5d82f0346
+ms.sourcegitcommit: 7e42488c2f8f63f6d499b5f8fb1dec5bac9ad254
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86281271"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957865"
 ---
 # <a name="composition-analysis-tool-mefx"></a>Ferramenta de Análise de Composição (Mefx)
+
 A Ferramenta de Análise de Composição (Mefx) é um aplicativo de linha de comando que analisa arquivos de biblioteca (.dll) e de aplicativo (.exe) que contêm partes do MEF (Managed Extensibility Framework). A principal finalidade da Mefx é fornecer aos desenvolvedores uma maneira de diagnosticar falhas de composição em seus aplicativos MEF sem a necessidade de adicionar um código de rastreamento inconveniente ao próprio aplicativo. Ele também pode ser útil para ajudar a entender as partes de uma biblioteca fornecida por terceiros. Este tópico descreve como usar a Mefx e fornece uma referência para sua sintaxe.  
   
 <a name="getting_mefx"></a>
+
 ## <a name="getting-mefx"></a>Obtendo a Mefx  
+
  A Mefx está disponível no GitHub em [Managed Extensibility Framework](https://github.com/MicrosoftArchive/mef/releases/tag/4.0). Basta baixar e descompactar a ferramenta.  
   
 <a name="basic_syntax"></a>
+
 ## <a name="basic-syntax"></a>Sintaxe básica  
+
  A Mefx é invocada na linha de comando no seguinte formato:  
   
 ```console
@@ -41,7 +46,9 @@ mefx /file:MyAddIn.dll /directory:Program\AddIns [action...]
  Depois da lista de arquivos e diretórios, você deverá especificar um comando e as opções para esse comando.  
   
 <a name="listing_available_parts"></a>
+
 ## <a name="listing-available-parts"></a>Listando as partes disponíveis  
+
  Use a ação `/parts` para listar todas as partes declaradas nos arquivos carregados. O resultado é uma lista simple de nomes de parte.  
   
 ```console
@@ -59,7 +66,9 @@ mefx /file:MyAddIn.dll /type:MyAddIn.AddIn /verbose
 ```  
   
 <a name="listing_imports_and_exports"></a>
+
 ## <a name="listing-imports-and-exports"></a>Listando as importações e exportações  
+
  As ações `/imports` e `/exports` listarão todas as partes importadas e todas as partes exportadas, respectivamente. Você também pode listar as partes que importam ou exportam um tipo específico usando as ações `/importers` ou `/exporters`.  
   
 ```console  
@@ -70,7 +79,9 @@ MyAddin.AddIn
  Você também pode aplicar a opção `/verbose` a essas ações.  
   
 <a name="finding_rejected_parts"></a>
+
 ## <a name="finding-rejected-parts"></a>Localizando as partes rejeitadas  
+
  Depois de carregar as partes disponíveis, a Mefx usa o mecanismo de composição do MEF para compô-las. As partes que não podem ser compostas com êxito são chamadas de *rejeitadas*. Para listar todas as partes rejeitadas, use a ação `/rejected`.  
   
  Você pode usar a opção `/verbose` com a ação `/rejected` para imprimir informações detalhadas sobre as partes rejeitadas. No exemplo a seguir, a DLL `ClassLibrary1` contém a parte `AddIn`, que importa as partes `MemberPart` e `ChainOne`. A `ChainOne` importa a `ChainTwo`, mas a `ChainTwo` não existe. Isso significa que a `ChainOne` foi rejeitada, o que faz com que a `AddIn` seja rejeitada.  
@@ -107,7 +118,9 @@ from: ClassLibrary1.ChainOne from: AssemblyCatalog (Assembly="ClassLibrary1, Ver
  As informações interessantes estão contidas nos resultados de `[Exception]` e `[Unsuitable]`. O resultado de `[Exception]` fornece informações sobre por que uma parte foi rejeitada. O resultado `[Unsuitable]` indica por que uma parte com outro tipo de correspondência não pôde ser usada para preencher uma importação. Nesse caso, porque essa parte foi rejeitada devido à ausência de importações.  
   
 <a name="analyzing_primary_causes"></a>
+
 ## <a name="analyzing-primary-causes"></a>Analisando a causa principal  
+
  Se várias partes estiverem vinculadas em uma cadeia longa de dependência, um problema envolvendo uma parte próxima à parte inferior poderá fazer com que a cadeia inteira seja rejeitada. O diagnóstico desses problemas pode ser difícil, pois a causa raiz da falha nem sempre é óbvia. Para ajudar a resolver o problema, você pode usar a ação `/causes`, que tenta localizar a causa raiz de qualquer rejeição em cascata.  
   
  O uso da ação `/causes` no exemplo anterior listaria apenas as informações para `ChainOne`, cuja importação não preenchida é a causa raiz da rejeição de `AddIn`. A ação `/causes` pode ser usada nas opções normal e `/verbose`.  
@@ -116,10 +129,12 @@ from: ClassLibrary1.ChainOne from: AssemblyCatalog (Assembly="ClassLibrary1, Ver
 > Na maioria dos casos, a Mefx poderá diagnosticar a causa raiz de uma falha em cascata. No entanto, nos casos em que as partes são adicionadas de forma programática a um contêiner, nos que envolvem contêineres hierárquicos ou nos que envolvem implementações de `ExportProvider` personalizadas, a Mefx não pode diagnosticar a causa. Em geral, esses casos descritos devem ser evitados sempre que possível, pois as falhas geralmente são difíceis de diagnosticar.  
   
 <a name="white_lists"></a>
-## <a name="white-lists"></a>Listas de permissões  
- A opção `/whitelist` permite que você especifique um arquivo de texto que lista as partes que devem ser rejeitadas. Assim, as rejeições inesperadas serão sinalizadas. Isso pode ser útil ao analisar uma biblioteca incompleta ou uma sub-biblioteca com algumas dependências faltando. A opção `/whitelist` pode ser aplicada às ações `/rejected` ou `/causes`.  
+
+## <a name="allow-lists"></a>Listas de permissões
+
+ A opção `/whitelist` permite que você especifique um arquivo de texto que lista as partes que devem ser rejeitadas. Assim, as rejeições inesperadas serão sinalizadas. Isso pode ser útil quando você analisa uma biblioteca incompleta ou uma subbiblioteca que não tem algumas dependências. A opção `/whitelist` pode ser aplicada às ações `/rejected` ou `/causes`.  
   
- Considere um arquivo chamado test.txt que contenha o texto "ClassLibrary1.ChainOne". Se você executar a ação `/rejected` com a opção `/whitelist` no exemplo anterior, ela produzirá a saída a seguir:  
+ Considere um arquivo chamado test.txt que contenha o texto "ClassLibrary1.ChainOne". Se você executar a `/rejected` ação com a `/whitelist` opção no exemplo anterior, ela produzirá a seguinte saída:  
   
 ```console
 mefx /file:ClassLibrary1.dll /rejected /whitelist:test.txt  

@@ -4,22 +4,22 @@ description: 'Saiba mais sobre tuplas C#: estruturas de dados leves que você po
 ms.date: 07/09/2020
 helpviewer_keywords:
 - value tuples [C#]
-ms.openlocfilehash: 3d79ab19117847e2364b154db33a1521416bb3f4
-ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
+ms.openlocfilehash: d996c7afecba1b58bfd8337fa444fd71790dd482
+ms.sourcegitcommit: 870bc4b4087510f6fba3c7b1c0d391f02bcc1f3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86174984"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92471766"
 ---
 # <a name="tuple-types-c-reference"></a>Tipos de tupla (referência C#)
 
 Disponível em C# 7,0 e posterior, o recurso de *tuplas* fornece uma sintaxe concisa para agrupar vários elementos de dados em uma estrutura de dados leve. O exemplo a seguir mostra como você pode declarar uma variável de tupla, inicializá-la e acessar seus membros de dados:
 
-[!code-csharp-interactive[tuple intro](snippets/ValueTuples.cs#Introduction)]
+[!code-csharp-interactive[tuple intro](snippets/shared/ValueTuples.cs#Introduction)]
 
 Como mostra o exemplo anterior, para definir um tipo de tupla, você especifica os tipos de todos os seus membros de dados e, opcionalmente, os [nomes de campo](#tuple-field-names). Você não pode definir métodos em um tipo de tupla, mas pode usar os métodos fornecidos pelo .NET, como mostra o exemplo a seguir:
 
-[!code-csharp-interactive[tuple methods](snippets/ValueTuples.cs#MethodOnTuples)]
+[!code-csharp-interactive[tuple methods](snippets/shared/ValueTuples.cs#MethodOnTuples)]
 
 A partir do C# 7,3, os tipos de tupla dão suporte a [operadores de igualdade](../operators/equality-operators.md) `==` e `!=` . Para obter mais informações, consulte a seção de [igualdade de tupla](#tuple-equality) .
 
@@ -30,13 +30,13 @@ Tipos de tupla são [tipos de valor](value-types.md); os elementos de tupla são
 
 Você pode definir tuplas com um grande número arbitrário de elementos:
 
-[!code-csharp-interactive[large tuple](snippets/ValueTuples.cs#LargeTuple)]
+[!code-csharp-interactive[large tuple](snippets/shared/ValueTuples.cs#LargeTuple)]
 
 ## <a name="use-cases-of-tuples"></a>Casos de uso de tuplas
 
 Um dos casos de uso mais comuns de tuplas é como um tipo de retorno de método. Ou seja, em vez de definir [ `out` parâmetros de método](../keywords/out-parameter-modifier.md), você pode agrupar resultados de método em um tipo de retorno de tupla, como mostra o exemplo a seguir:
 
-[!code-csharp-interactive[multiple method outputs](snippets/ValueTuples.cs#MultipleReturns)]
+[!code-csharp-interactive[multiple method outputs](snippets/shared/ValueTuples.cs#MultipleReturns)]
 
 Como mostra o exemplo anterior, você pode trabalhar com a instância de tupla retornada diretamente ou [desconstruir](#tuple-assignment-and-deconstruction) -la em variáveis separadas.
 
@@ -48,11 +48,11 @@ Normalmente, você usa tuplas para agrupar elementos de dados livremente relacio
 
 Você pode especificar explicitamente os nomes dos campos de tupla em uma expressão de inicialização de tupla ou na definição de um tipo de tupla, como mostra o exemplo a seguir:
 
-[!code-csharp-interactive[explicit field names](snippets/ValueTuples.cs#ExplicitFieldNames)]
+[!code-csharp-interactive[explicit field names](snippets/shared/ValueTuples.cs#ExplicitFieldNames)]
 
 A partir do C# 7,1, se você não especificar um nome de campo, ele poderá ser inferido a partir do nome da variável correspondente em uma expressão de inicialização de tupla, como mostra o exemplo a seguir:
 
-[!code-csharp-interactive[inferred field names](snippets/ValueTuples.cs#InferFieldNames)]
+[!code-csharp-interactive[inferred field names](snippets/shared/ValueTuples.cs#InferFieldNames)]
 
 Isso é conhecido como inicializadores de projeção de tupla. O nome de uma variável não é projetado para um nome de campo de tupla nos seguintes casos:
 
@@ -63,7 +63,7 @@ Nesses casos, você especifica explicitamente o nome de um campo ou acessa um ca
 
 Os nomes padrão dos campos de tupla `Item1` são `Item2` , `Item3` e assim por diante. Você sempre pode usar o nome padrão de um campo, mesmo quando um nome de campo é especificado explicitamente ou inferido, como mostra o exemplo a seguir:
 
-[!code-csharp-interactive[default field names](snippets/ValueTuples.cs#DefaultFieldNames)]
+[!code-csharp-interactive[default field names](snippets/shared/ValueTuples.cs#DefaultFieldNames)]
 
 As [comparações de igualdade](#tuple-equality) de tupla e [atribuição de tupla](#tuple-assignment-and-deconstruction) não têm nomes de campo em conta.
 
@@ -78,21 +78,21 @@ O C# dá suporte à atribuição entre tipos de tupla que atendem às duas condi
 
 Os valores de elemento de tupla são atribuídos após a ordem dos elementos de tupla. Os nomes dos campos de tupla são ignorados e não atribuídos, como mostra o exemplo a seguir:
 
-[!code-csharp-interactive[tuple assignment](snippets/ValueTuples.cs#Assignment)]
+[!code-csharp-interactive[tuple assignment](snippets/shared/ValueTuples.cs#Assignment)]
 
 Você também pode usar o operador de atribuição `=` para *desconstruir* uma instância de tupla em variáveis separadas. Você pode fazer isso de uma das seguintes maneiras:
 
 - Declare explicitamente o tipo de cada variável dentro dos parênteses:
 
-  [!code-csharp-interactive[specify types of variables](snippets/ValueTuples.cs#DeconstructExplicit)]
+  [!code-csharp-interactive[specify types of variables](snippets/shared/ValueTuples.cs#DeconstructExplicit)]
 
 - Use a `var` palavra-chave fora dos parênteses para declarar variáveis digitadas implicitamente e deixe o compilador inferir seus tipos:
 
-  [!code-csharp-interactive[implicitly typed variables](snippets/ValueTuples.cs#DeconstructVar)]
+  [!code-csharp-interactive[implicitly typed variables](snippets/shared/ValueTuples.cs#DeconstructVar)]
 
 - Usar variáveis existentes:
 
-  [!code-csharp-interactive[existing variables](snippets/ValueTuples.cs#DeconstructExisting)]
+  [!code-csharp-interactive[existing variables](snippets/shared/ValueTuples.cs#DeconstructExisting)]
 
 Para obter mais informações sobre a desconstrução de tuplas e outros tipos, consulte [decompondo tuplas e outros tipos](../../deconstruct.md).
 
@@ -100,7 +100,7 @@ Para obter mais informações sobre a desconstrução de tuplas e outros tipos, 
 
 Começando com o C# 7.3, os tipos de tupla oferecem suporte aos operadores `==` e `!=`. Esses operadores comparam membros do operando à esquerda com os membros correspondentes do operando à direita após a ordem dos elementos de tupla.
 
-[!code-csharp-interactive[tuple equality](snippets/ValueTuples.cs#TupleEquality)]
+[!code-csharp-interactive[tuple equality](snippets/shared/ValueTuples.cs#TupleEquality)]
 
 Como mostra o exemplo anterior, as `==` `!=` operações e não levam em conta os nomes de campo de tupla.
 
@@ -111,30 +111,30 @@ Duas tuplas são comparáveis quando as duas condições a seguir são satisfeit
 
 Os `==` `!=` operadores e comparam tuplas na forma de curto-circuito. Ou seja, uma operação é interrompida assim que ela atende a um par de elementos não iguais ou atinge as extremidades das tuplas. No entanto, antes de qualquer comparação, *todos os* elementos de tupla são avaliados, como mostra o exemplo a seguir:
 
-[!code-csharp-interactive[tuple element evaluation](snippets/ValueTuples.cs#TupleEvaluationForEquality)]
+[!code-csharp-interactive[tuple element evaluation](snippets/shared/ValueTuples.cs#TupleEvaluationForEquality)]
 
 ## <a name="tuples-as-out-parameters"></a>Parâmetros de tuplas como saída
 
 Normalmente, você refatoria um método que tem [ `out` parâmetros](../keywords/out-parameter-modifier.md) em um método que retorna uma tupla. No entanto, há casos em que um `out` parâmetro pode ser de um tipo de tupla. O exemplo a seguir mostra como trabalhar com tuplas como `out` parâmetros:
 
-[!code-csharp-interactive[tuple as out parameter](snippets/ValueTuples.cs#TupleAsOutParameter)]
+[!code-csharp-interactive[tuple as out parameter](snippets/shared/ValueTuples.cs#TupleAsOutParameter)]
 
-## <a name="tuples-vs-systemtuple"></a>Tuplas vs`System.Tuple`
+## <a name="tuples-vs-systemtuple"></a>Tuplas vs `System.Tuple`
 
 As tuplas do C#, que são apoiadas por <xref:System.ValueTuple?displayProperty=nameWithType> tipos, são diferentes das tuplas representadas por <xref:System.Tuple?displayProperty=nameWithType> tipos. As principais diferenças são as seguintes:
 
-- `ValueTuple`os tipos são [tipos de valor](value-types.md). `Tuple`tipos são [tipos de referência](../keywords/reference-types.md).
-- `ValueTuple`os tipos são mutáveis. `Tuple`os tipos são imutáveis.
+- `ValueTuple` os tipos são [tipos de valor](value-types.md). `Tuple` tipos são [tipos de referência](../keywords/reference-types.md).
+- `ValueTuple` os tipos são mutáveis. `Tuple` os tipos são imutáveis.
 - Os membros de dados dos `ValueTuple` tipos são campos. Os membros de dados dos `Tuple` tipos são propriedades.
 
-## <a name="c-language-specification"></a>especificação da linguagem C#
+## <a name="c-language-specification"></a>Especificação da linguagem C#
 
 Para obter mais informações, consulte as seguintes notas de proposta de recurso:
 
 - [Inferir nomes de tupla (também conhecido como inicializadores de projeção de tupla)](~/_csharplang/proposals/csharp-7.1/infer-tuple-names.md)
 - [Suporte para `==` e `!=` em tipos de tupla](~/_csharplang/proposals/csharp-7.3/tuple-equality.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência de C#](../index.md)
 - [Tipos de valor](value-types.md)

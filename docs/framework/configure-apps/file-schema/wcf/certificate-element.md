@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <certificate> elemento'
 title: Elemento <certificate>
 ms.date: 03/30/2017
 ms.assetid: 9b3d9233-ef35-477a-bf5d-efd1e80a52f4
-ms.openlocfilehash: e28e7d16073a56f3b6126439644bfff86c9af18b
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 3f67435d86f19f81c1f6fe1fe2a9a8afbef69e53
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70400549"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639127"
 ---
 # <a name="certificate-element"></a>Elemento \<certificate>
+
 Especifica um certificado X. 509 a ser usado para assinar e criptografar mensagens para clientes ponto a ponto.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -21,7 +23,7 @@ Especifica um certificado X. 509 a ser usado para assinar e criptografar mensage
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<peer>**](peer-of-clientcredentials-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<certificate>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <certificate findValue="String"
@@ -31,6 +33,7 @@ Especifica um certificado X. 509 a ser usado para assinar e criptografar mensage
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -43,6 +46,7 @@ Especifica um certificado X. 509 a ser usado para assinar e criptografar mensage
 |`X509FindType`|Define o tipo de pesquisa de X.509 a ser executada. Os valores válidos incluem os seguintes:<br /><br /> -FindByThumbPrint<br />-FindBySubjectName<br />- FindBySubjectDistinguishedName<br />- FindByIssuerName<br />- FindByIssuerDistinguishedName<br />- FindBySerialNumber<br />- FindByTimeValid<br />- FindByTimeNotYetValid<br />- FindByTemplateName<br />- FindByApplicationPolicy<br />- FindByCertificatePolicy<br />- FindByExtension<br />- FindByKeyUsage<br />- FindBySubjectKeyIdentifier<br /><br /> O tipo contido no `findValue` atributo deve atender aos requisitos do especificado `X509FindType` .<br /><br /> O valor padrão é FindBySubjectDistinguishedName.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -52,11 +56,13 @@ Especifica um certificado X. 509 a ser usado para assinar e criptografar mensage
 |[\<peer>](peer-of-clientcredentials-element.md)|Especifica as credenciais usadas ao autenticar clientes ponto a ponto.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Este elemento de configuração contém uma instância X509Certificate2 usada ao autenticar vizinhos na malha par.  
   
  Para obter mais informações sobre a programação ponto a ponto, consulte [rede ponto a ponto](../../../wcf/feature-details/peer-to-peer-networking.md).  
   
 ## <a name="example"></a>Exemplo  
+
  O código a seguir especifica como localizar o certificado usado em um cenário ponto a ponto.  
   
 ```xml  
@@ -75,14 +81,14 @@ Especifica um certificado X. 509 a ser usado para assinar e criptografar mensage
 </behaviors>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.PeerCredentialElement>
 - <xref:System.ServiceModel.Configuration.PeerCredentialElement.Certificate%2A>
 - <xref:System.ServiceModel.Configuration.X509PeerCertificateElement>
 - <xref:System.ServiceModel.Security.PeerCredential.Certificate%2A>
 - [Trabalhando com certificados](../../../wcf/feature-details/working-with-certificates.md)
-- [Rede ponto a ponto](../../../wcf/feature-details/peer-to-peer-networking.md)
-- [Autenticação de mensagem de canal par](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
-- [Autenticação personalizada do canal par](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
+- [Rede peer-to-peer](../../../wcf/feature-details/peer-to-peer-networking.md)
+- [Autenticação de mensagem de canal par](/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
+- [Autenticação personalizada do canal par](/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
 - [Protegendo aplicativos de canal par](../../../wcf/feature-details/securing-peer-channel-applications.md)

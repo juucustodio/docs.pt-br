@@ -1,21 +1,21 @@
 ---
-title: comando de execução de ferramenta dotnet
-description: O comando dotnet tool run invoca uma ferramenta local.
+title: comando de execução da ferramenta dotnet
+description: O comando dotnet ferramenta de execução invoca uma ferramenta local.
 ms.date: 02/14/2020
-ms.openlocfilehash: f79c239363e8b3abbd55c54dd1912443e6777fb7
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: 116ecb61748a0ca70ed385b279b11b939748f4a8
+ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463320"
+ms.lasthandoff: 11/15/2020
+ms.locfileid: "94634149"
 ---
 # <a name="dotnet-tool-run"></a>dotnet tool run
 
-**Este artigo se aplica a:** ✔️ .NET Core 3.0 SDK e versões posteriores
+**Este artigo aplica-se a:** ✔️ SDK do .net Core 3,0 e versões posteriores
 
-## <a name="name"></a>Nome
+## <a name="name"></a>Name
 
-`dotnet tool run`- Invoca uma ferramenta local.
+`dotnet tool run` -Invoca uma ferramenta local.
 
 ## <a name="synopsis"></a>Sinopse
 
@@ -25,15 +25,15 @@ dotnet tool run <COMMAND NAME>
 dotnet tool run -h|--help
 ```
 
-## <a name="description"></a>Descrição
+## <a name="description"></a>Description
 
-O `dotnet tool run` comando pesquisa arquivos manifestos de ferramenta que estão no escopo para o diretório atual. Quando encontra uma referência à ferramenta especificada, ela executa a ferramenta. Para obter mais informações, consulte [Invocar uma ferramenta local](global-tools.md#invoke-a-local-tool).
+O `dotnet tool run` comando pesquisa os arquivos de manifesto da ferramenta que estão no escopo do diretório atual. Quando ele encontra uma referência à ferramenta especificada, ele executa a ferramenta. Para obter mais informações, consulte [invocar uma ferramenta local](global-tools.md#invoke-a-local-tool).
 
 ## <a name="arguments"></a>Argumentos
 
 - **`COMMAND_NAME`**
 
-  O nome de comando da ferramenta para executar.
+  O nome do comando da ferramenta a ser executada.
 
 ## <a name="options"></a>Opções
 
@@ -45,9 +45,9 @@ O `dotnet tool run` comando pesquisa arquivos manifestos de ferramenta que estã
 
 - **`dotnet tool run dotnetsay`**
 
-  Executa `dotnetsay` a ferramenta local.
+  Executa a `dotnetsay` ferramenta local.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [.NET Core ferramentas](global-tools.md)
-- [Tutorial: Instale e use uma ferramenta local .NET Core usando o .NET Core CLI](local-tools-how-to-use.md)
+- [Ferramentas .NET](global-tools.md)
+- [Tutorial: instalar e usar uma ferramenta local do .NET usando a CLI do .NET](local-tools-how-to-use.md)

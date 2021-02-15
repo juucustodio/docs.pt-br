@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugAssemblyEnum'
 title: Interface ICorDebugAssemblyEnum
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 891ceb43-5161-421e-a0bf-299962fd7efd
 topic_type:
 - apiref
-ms.openlocfilehash: 988637956b1176235618bf8f4aee7ecec9ce1187
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: e9dab7560da10efcb33fc48f5718f26b960cdaa3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82894831"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791485"
 ---
 # <a name="icordebugassemblyenum-interface"></a>Interface ICorDebugAssemblyEnum
 
@@ -37,6 +38,7 @@ Implementa métodos ICorDebugEnum e enumera matrizes ICorDebugAssembly.
 > Esta interface não dá suporte para chamada remota, seja entre computadores ou processos cruzados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

@@ -1,25 +1,28 @@
 ---
+description: 'Saiba mais sobre: ParticipantRecoveryLogEntryCreationFailure'
 title: ParticipantRecoveryLogEntryCreationFailure
 ms.date: 03/30/2017
 ms.assetid: 0bda0f08-7614-40f8-912a-06f5a99393e6
-ms.openlocfilehash: cc31605ffaa8e6e625e8eeeb6699ef2c517144b2
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 2652704f004c26365f637f9e138f8b0a43826068
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70797646"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99655820"
 ---
 # <a name="participantrecoverylogentrycreationfailure"></a>ParticipantRecoveryLogEntryCreationFailure
-Sessão 141  
+
+ID: 141  
   
- Severity Erro  
+ Gravidade: Erro  
   
- Categorias TransactionBridge  
+ Categoria: TransactionBridge  
   
 ## <a name="description"></a>Descrição  
+
  Esse evento indica que a entrada de log arecovery não pôde ser gerada para uma inscrição de participante. A transação será anulada. O evento lista a ID da transação, a ID da inscrição, a exceção, o nome do processo e a ID do processo.  
   
 ## <a name="see-also"></a>Consulte também
 
-- [Registro de eventos em log](index.md)
+- [Log de eventos](index.md)
 - [Referência geral de eventos](events-general-reference.md)

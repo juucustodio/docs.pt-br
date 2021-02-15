@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: a4e20e0468d861138ad801c9dbfa15340b3f388c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "72394285"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96032227"
 ---
 ### <a name="authentication-oauthhandler-exchangecodeasync-signature-changed"></a>Autenticação: assinatura OAuthHandler ExchangeCodeAsync alterada
 
@@ -22,7 +22,7 @@ protected virtual System.Threading.Tasks.Task<Microsoft.AspNetCore.Authenticatio
 
 #### <a name="version-introduced"></a>Versão introduzida
 
-3,0
+3.0
 
 #### <a name="old-behavior"></a>Comportamento antigo
 

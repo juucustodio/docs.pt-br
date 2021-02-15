@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração LogSwitchCallReason'
 title: Enumeração LogSwitchCallReason
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5bbb8d1b-bbc4-47b0-b1b1-2d54cc0be291
 topic_type:
 - apiref
-ms.openlocfilehash: 4d29bb3886ffb51e1dfb9654f4d70ef7c568fd43
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 46c457ee4c12fe9a73796aa7b7a5f599d90c9c6c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420702"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800598"
 ---
 # <a name="logswitchcallreason-enumeration"></a>Enumeração LogSwitchCallReason
+
 Indica a operação que foi realizada em uma alternação entre depuração/rastreamento.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,13 +38,14 @@ typedef enum LogSwitchCallReason {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`SWITCH_CREATE`|Uma opção de depuração/rastreamento foi criada.|  
 |`SWITCH_MODIFY`|Uma opção de depuração/rastreamento foi modificada.|  
 |`SWITCH_DELETE`|Uma opção de depuração/rastreamento foi excluída.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -51,6 +54,6 @@ typedef enum LogSwitchCallReason {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Declarando enumerações](debugging-enumerations.md)

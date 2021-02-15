@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugReferenceValue:: SetValue'
 title: Método ICorDebugReferenceValue::SetValue
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 3d3f6eec-d772-401f-a028-1a2ecdc31e95
 topic_type:
 - apiref
-ms.openlocfilehash: 892471e7b35b4f4093df3f86d4777947b6e484e0
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 44909962d2716ddb606d98a2f6b3804247c581cd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378312"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99690906"
 ---
 # <a name="icordebugreferencevaluesetvalue-method"></a>Método ICorDebugReferenceValue::SetValue
+
 Define o endereço de memória especificado. Ou seja, esse método define esse ICorDebugReferenceValue para apontar para um objeto.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,10 +36,12 @@ HRESULT SetValue (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `value`  
  no Um `CORDB_ADDRESS` valor que especifica o endereço do objeto para o qual este `ICorDebugReferenceValue` aponta.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

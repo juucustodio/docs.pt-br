@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Code-Bodied'
 title: o corpóreo
 ms.date: 03/30/2017
 ms.assetid: 5bfb2d95-9092-4551-9c59-bd8f0a37225e
-ms.openlocfilehash: 541099c660605f3f47061f160fdc50ad1d4c45b4
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 4632ee3906af929e71623dccaf289e60cc95334f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61913894"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99653661"
 ---
 # <a name="code-bodied"></a>o corpóreo
 
@@ -15,5 +16,5 @@ Esta seção contém exemplos de atividade personalizados criados declarativamen
   
 ## <a name="in-this-section"></a>Nesta seção
   
- [Composição personalizada usando atividade nativa](custom-composite-using-native-activity.md)  
+ [Atividade nativo de usar composta personalizada](custom-composite-using-native-activity.md)  
  Este exemplo demonstra como escrever <xref:System.Activities.NativeActivity> que agenda outros objetos de <xref:System.Activities.Activity> para controlar o fluxo de execução de um fluxo de trabalho.

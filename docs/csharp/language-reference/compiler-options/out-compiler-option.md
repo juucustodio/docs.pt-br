@@ -9,14 +9,15 @@ helpviewer_keywords:
 - out compiler option [C#]
 - -out compiler option [C#]
 ms.assetid: 70d91d01-7bd2-4aea-ba8b-4e9807e9caa5
-ms.openlocfilehash: d1b79879639e1cbdc3dc040977d9fcd0c3a73602
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 409760ee0b147065a2128c62c304fb5d70cfcf42
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125014"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "91193875"
 ---
 # <a name="-out-c-compiler-options"></a>-out (opções do compilador C#)
+
 A opção **-out** especifica o nome do arquivo de saída.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -26,10 +27,12 @@ A opção **-out** especifica o nome do arquivo de saída.
 ```  
   
 ## <a name="arguments"></a>Argumentos  
+
  `filename`  
  O nome do arquivo de saída criado pelo compilador.  
   
 ## <a name="remarks"></a>Comentários  
+
  Na linha de comando, é possível especificar vários arquivos de saída para a compilação. O compilador espera encontrar um ou mais arquivos de código-fonte após a opção **-out**. Em seguida, todos os arquivos de código-fonte serão compilados no arquivo de saída especificado por essa opção **-out**.  
   
  Especifique o nome completo e a extensão do arquivo que você deseja criar.  
@@ -59,6 +62,7 @@ A opção **-out** especifica o nome do arquivo de saída.
      Para definir essa opção do compilador de maneira programática: <xref:VSLangProj80.ProjectProperties3.OutputFileName%2A> é uma propriedade somente leitura, determinada por uma combinação do tipo de projeto (exe, biblioteca e assim por diante) e o nome do assembly. Será necessário modificar uma ou ambas as propriedades para definir o nome do arquivo de saída.  
   
 ## <a name="example"></a>Exemplo  
+
  Compile `t.cs` e crie o arquivo de saída `t.exe`, bem como compile `t2.cs` e crie o arquivo de saída de módulo `mymodule.netmodule`:  
   
 ```console  
@@ -67,6 +71,6 @@ csc t.cs -out:mymodule.netmodule -target:module t2.cs
   
 ## <a name="see-also"></a>Confira também
 
-- [Opções do compilador C#](./index.md)
-- [Assemblies Friend](../../../standard/assembly/friend.md)
+- [Opções do compilador de C#](./index.md)
+- [Assemblies amigáveis](../../../standard/assembly/friend.md)
 - [Gerenciando propriedades de solução e de projeto](/visualstudio/ide/managing-project-and-solution-properties)

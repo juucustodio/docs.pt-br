@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugAppDomain2:: GetFunctionPointerType'
 title: Método ICorDebugAppDomain2::GetFunctionPointerType
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 0aba6096-5b38-435c-a72a-86d35db4daef
 topic_type:
 - apiref
-ms.openlocfilehash: fb9b5ee329b41a8b842b94d59bd61c8bcf5f0bf5
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 2b9e10295df40b8e7db82e489fe8a6d28214ff38
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82895143"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99772379"
 ---
 # <a name="icordebugappdomain2getfunctionpointertype-method"></a>Método ICorDebugAppDomain2::GetFunctionPointerType
+
 Obtém um ponteiro para uma função que tem uma determinada assinatura.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT GetFunctionPointerType (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `nTypeArgs`  
  no O número de argumentos de tipo para a função.  
   
@@ -46,6 +49,7 @@ HRESULT GetFunctionPointerType (
  fora Um ponteiro para o endereço de um `ICorDebugType` objeto que representa o ponteiro para a função.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

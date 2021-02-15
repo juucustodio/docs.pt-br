@@ -1,16 +1,17 @@
 ---
-title: Como modificar o arquivo de configuração do computador para habilitar o suporte a IPv6
-description: Saiba como modificar o arquivo de configuração do computador, Machine. config, para habilitar o suporte a IPv6 no .NET Framework.
+title: 'Como: Modificar o arquivo de configuração do computador para habilitar o suporte ao IPv6'
+description: Saiba como modificar o arquivo de configuração do computador, machine.config, para habilitar o suporte a IPv6 no .NET Framework.
 ms.date: 03/30/2017
 ms.assetid: 5611b677-b9cc-43b8-a434-60e18d89aada
-ms.openlocfilehash: eb7b3665c0dbcf0edefa8c48a9e69297d7259067
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 2c5e3e094eca480a7cab4f7c25cc0fedba196338
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502516"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96269594"
 ---
-# <a name="how-to-modify-the-computer-configuration-file-to-enable-ipv6-support"></a>Como modificar o arquivo de configuração do computador para habilitar o suporte a IPv6
+# <a name="how-to-modify-the-computer-configuration-file-to-enable-ipv6-support"></a>Como: Modificar o arquivo de configuração do computador para habilitar o suporte ao IPv6
+
 O exemplo de código a seguir mostra como modificar o arquivo de configuração do computador, *machine.config* para habilitar o suporte a IPv6. O arquivo *machine.config* é armazenado na pasta *%Windir%\Microsoft.NET\Framework* no diretório em que o Windows foi instalado. Há um outro arquivo *machine.config* nas pastas em *%Windir%\Microsoft.NET\Framework* para cada versão do .NET Framework instalada no computador (por exemplo, *C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\machine.config*).  
   
  Essas configurações também podem ser feitas no arquivo de configuração do aplicativo, que tem precedência sobre o arquivo de configuração do computador.  
@@ -36,8 +37,8 @@ O exemplo de código a seguir mostra como modificar o arquivo de configuração 
 </system.net>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Endereçamento IPv6](ipv6-addressing.md)
 - [Esquema de configurações de rede](../configure-apps/file-schema/network/index.md)
-- [\<ipv6>Elemento (configurações de rede)](../configure-apps/file-schema/network/ipv6-element-network-settings.md)
+- [\<ipv6> Elemento (configurações de rede)](../configure-apps/file-schema/network/ipv6-element-network-settings.md)

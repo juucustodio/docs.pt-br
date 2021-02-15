@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: matrizes no Visual Basic'
 title: Matrizes
 ms.date: 12/06/2017
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - arrays [Visual Basic]
 - Visual Basic, arrays
 ms.assetid: dbf29737-b589-4443-bee6-a27588d9c67e
-ms.openlocfilehash: 5093f28f05c5b72294dce9a4e69723acafb31a9f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: b6e8349fe02e77f12fb827618f84d44288914b62
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84413086"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100454593"
 ---
 # <a name="arrays-in-visual-basic"></a>Matrizes no Visual Basic
 
-Uma matriz é um conjunto de valores, que são *elementos*com termo, que estão logicamente relacionados entre si. Por exemplo, uma matriz pode consistir no número de alunos em cada nível em uma escola gramatical; cada elemento da matriz é o número de alunos em uma única classificação. Da mesma forma, uma matriz pode consistir em notas de um aluno para uma classe; cada elemento da matriz é uma única classificação.
+Uma matriz é um conjunto de valores, que são *elementos* com termo, que estão logicamente relacionados entre si. Por exemplo, uma matriz pode consistir no número de alunos em cada nível em uma escola gramatical; cada elemento da matriz é o número de alunos em uma única classificação. Da mesma forma, uma matriz pode consistir em notas de um aluno para uma classe; cada elemento da matriz é uma única classificação.
 
 É possível que as variáveis individuais armazenem cada um de nossos itens de dados. Por exemplo, se nosso aplicativo analisar as notas dos alunos, podemos usar uma variável separada para a classificação de cada aluno, como `englishGrade1` , `englishGrade2` etc. Essa abordagem tem três limitações principais:
 
@@ -136,7 +137,7 @@ O exemplo a seguir itera por meio de uma matriz unidimensional usando a [`For...
 
 [!code-vb[iterate-one-dimensional-array](~/samples/snippets/visualbasic/programming-guide/language-features/arrays/iterate1d.vb)]
 
-O exemplo a seguir itera por meio de uma matriz multidimensional usando uma [`For...Next`](../../../language-reference/statements/for-next-statement.md) instrução. O método <xref:System.Array.GetUpperBound%2A> tem um parâmetro que especifica a dimensão. `GetUpperBound(0)`Retorna o índice mais alto da primeira dimensão e `GetUpperBound(1)` retorna o índice mais alto da segunda dimensão.
+O exemplo a seguir itera por meio de uma matriz multidimensional usando uma [`For...Next`](../../../language-reference/statements/for-next-statement.md) instrução. O método <xref:System.Array.GetUpperBound%2A> tem um parâmetro que especifica a dimensão. `GetUpperBound(0)` Retorna o índice mais alto da primeira dimensão e `GetUpperBound(1)` retorna o índice mais alto da segunda dimensão.
 
 [!code-vb[iterate-two-dimensional-array](~/samples/snippets/visualbasic/programming-guide/language-features/arrays/iterate2d.vb)]
 
@@ -262,7 +263,7 @@ O exemplo a seguir divide uma matriz de cadeia de caracteres em duas matrizes co
 
 [!code-vb[splitting-an-array-by-delimiter](~/samples/snippets/visualbasic/programming-guide/language-features/arrays/split2.vb)]
 
-## <a name="joining-arrays"></a>Unindo matrizes
+## <a name="joining-arrays"></a>Como unir matrizes
 
 Você também pode combinar um número de matrizes em uma única matriz maior. Para fazer isso, você também usa o <xref:System.Array.Copy%2A?displayProperty=nameWithType> método.
 
@@ -304,7 +305,7 @@ Para obter mais informações sobre coleções, consulte [Coleções](../../conc
 |[Como atribuir uma matriz a outra matriz](how-to-assign-one-array-to-another-array.md)|Descreve as regras e as etapas para atribuir uma matriz a outra variável de matriz.|
 |[Solução de problemas de matrizes](troubleshooting-arrays.md)|Aborda alguns problemas comuns que surgem ao trabalhar com matrizes.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Array?displayProperty=nameWithType>
 - [Instrução Dim](../../../language-reference/statements/dim-statement.md)

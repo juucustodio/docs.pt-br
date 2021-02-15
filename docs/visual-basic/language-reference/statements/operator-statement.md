@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instrução Operator'
 title: Instrução Operator
 ms.date: 07/20/2015
 f1_keywords:
@@ -17,18 +18,18 @@ helpviewer_keywords:
 - Operator statement [Visual Basic]
 - CType function [Visual Basic], Operator statement
 ms.assetid: b12ec4af-1ad7-4a17-865b-c5ee96320ae5
-ms.openlocfilehash: f9e6ffe5a49715592399321ab471d73826e05d8e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f6a8ae2ac51e8bc8fe1be0de3549004b9dda4ef4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404389"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768812"
 ---
 # <a name="operator-statement"></a>Instrução Operator
 
 Declara o símbolo do operador, os operandos e o código que definem um procedimento de operador em uma classe ou estrutura.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```vb
 [ <attrlist> ] Public [ Overloads ] Shared [ Shadows ] [ Widening | Narrowing ]
@@ -46,13 +47,13 @@ End Operator
 Opcional. Consulte a [lista de atributos](attribute-list.md).
 
 `Public`  
-Obrigatórios. Indica que este procedimento de operador tem acesso [público](../modifiers/public.md) .
+Obrigatório. Indica que este procedimento de operador tem acesso [público](../modifiers/public.md) .
 
 `Overloads`  
 Opcional. Veja [sobrecargas](../modifiers/overloads.md).
 
 `Shared`  
-Obrigatórios. Indica que esse procedimento de operador é um procedimento [compartilhado](../modifiers/shared.md) .
+Obrigatório. Indica que esse procedimento de operador é um procedimento [compartilhado](../modifiers/shared.md) .
 
 `Shadows`  
 Opcional. Consulte [Shadows](../modifiers/shadows.md).
@@ -64,22 +65,22 @@ Necessário para um operador de conversão, a menos que você especifique `Narro
 Necessário para um operador de conversão, a menos que você especifique `Widening` . Indica que este procedimento de operador define uma conversão de [restrição](../modifiers/narrowing.md) . Consulte "conversões de alargamento e estreitamento" nesta página de ajuda.
 
 `operatorsymbol`  
-Obrigatórios. O símbolo ou identificador do operador que este procedimento de operador define.
+Obrigatório. O símbolo ou identificador do operador que este procedimento de operador define.
 
 `operand1`  
-Obrigatórios. O nome e o tipo do operando único de um operador unário (incluindo um operador de conversão) ou o operando esquerdo de um operador binário.
+Obrigatório. O nome e o tipo do operando único de um operador unário (incluindo um operador de conversão) ou o operando esquerdo de um operador binário.
 
 `operand2`  
 Necessário para operadores binários. O nome e o tipo do operando direito de um operador binário.
 
-`operand1`e `operand2` têm a seguinte sintaxe e partes:
+`operand1` e `operand2` têm a seguinte sintaxe e partes:
 
 `[ ByVal ] operandname [ As operandtype ]`
 
 |Parte|Descrição|
 |----------|-----------------|
 |`ByVal`|Opcional, mas o mecanismo de passagem deve ser [ByVal](../modifiers/byval.md).|
-|`operandname`|Obrigatórios. Nome da variável que representa esse operando. Consulte [nomes de elementos declarados](../../programming-guide/language-features/declared-elements/declared-element-names.md).|
+|`operandname`|Obrigatório. Nome da variável que representa esse operando. Consulte [nomes de elementos declarados](../../programming-guide/language-features/declared-elements/declared-element-names.md).|
 |`operandtype`|Opcional, a menos que `Option Strict` seja `On` . Tipo de dados deste operando.|
 
 `type`  
@@ -89,10 +90,10 @@ Opcional, a menos que `Option Strict` seja `On` . Tipo de dados do valor que o p
 Opcional. Bloco de instruções que o procedimento de operador executa.
 
 `returnvalue`  
-Obrigatórios. O valor que o procedimento do operador retorna para o código de chamada.
+Obrigatório. O valor que o procedimento do operador retorna para o código de chamada.
 
 `End` `Operator`  
-Obrigatórios. Encerra a definição deste procedimento de operador.
+Obrigatório. Encerra a definição deste procedimento de operador.
 
 ## <a name="remarks"></a>Comentários
 
@@ -174,11 +175,11 @@ Se houver alguma possibilidade de que um procedimento de conversão não tenha s
 
 ## <a name="example"></a>Exemplo
 
-O exemplo de código a seguir usa a `Operator` instrução para definir o contorno de uma estrutura que inclui procedimentos de operador para os `And` `Or` operadores,, `IsFalse` e `IsTrue` . `And`e `Or` cada um tem dois operandos do tipo `abc` e do tipo de retorno `abc` . `IsFalse`e `IsTrue` cada um tem um único operando do tipo `abc` e do retorno `Boolean` . Essas definições permitem que o código de chamada use `And` ,, `AndAlso` `Or` e `OrElse` com operandos do tipo `abc` .
+O exemplo de código a seguir usa a `Operator` instrução para definir o contorno de uma estrutura que inclui procedimentos de operador para os `And` `Or` operadores,, `IsFalse` e `IsTrue` . `And` e `Or` cada um tem dois operandos do tipo `abc` e do tipo de retorno `abc` . `IsFalse` e `IsTrue` cada um tem um único operando do tipo `abc` e do retorno `Boolean` . Essas definições permitem que o código de chamada use `And` ,, `AndAlso` `Or` e `OrElse` com operandos do tipo `abc` .
 
 [!code-vb[VbVbalrStatements#44](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#44)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operador IsFalse](../operators/isfalse-operator.md)
 - [Operador IsTrue](../operators/istrue-operator.md)

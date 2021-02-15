@@ -1,7 +1,7 @@
 ---
+description: 'Saiba mais sobre: como especificar um Agendador de Tarefas em um bloco de Dataflow'
 title: 'Como: especificar um agendador de tarefas em um bloco de fluxo de dados'
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -10,14 +10,15 @@ helpviewer_keywords:
 - Task Parallel Library, dataflows
 - task scheduler, linking from TPL
 ms.assetid: 27ece374-ed5b-49ef-9cec-b20db34a65e8
-ms.openlocfilehash: 76c9e75f787c28657af143b46bb22d08039e2dc4
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: e3a803bfa775d8272db5b0d6974b13648136c74e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84288128"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99701788"
 ---
 # <a name="how-to-specify-a-task-scheduler-in-a-dataflow-block"></a>Como: especificar um agendador de tarefas em um bloco de fluxo de dados
+
 Este documento demonstra como associar um agendador de tarefas específico quando você usa o fluxo de dados em seu aplicativo. O exemplo usa a classe <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair?displayProperty=nameWithType> em um aplicativo Windows Forms para mostrar quando as tarefas do leitor estão ativas e quando uma tarefa de gravador está ativa. Ele também usa o método <xref:System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext%2A?displayProperty=nameWithType> para permitir que um bloco de fluxo de dados seja executado no thread da interface do usuário.
 
 [!INCLUDE [tpl-install-instructions](../../../includes/tpl-install-instructions.md)]
@@ -31,6 +32,7 @@ Este documento demonstra como associar um agendador de tarefas específico quand
 3. Adicione um controle <xref:System.Windows.Forms.Timer> ao formulário. Defina a propriedade <xref:System.Windows.Forms.Timer.Interval%2A> como `2500`.  
   
 ## <a name="adding-dataflow-functionality"></a>Adicionar funcionalidade de fluxo de dados  
+
  Esta seção descreve como criar os blocos de fluxo de dados que participam do aplicativo e como associar cada um com um agendador de tarefas.  
   
 ### <a name="to-add-dataflow-functionality-to-the-application"></a>Para adicionar a funcionalidade de fluxo de dados ao aplicativo  
@@ -74,11 +76,12 @@ Este documento demonstra como associar um agendador de tarefas específico quand
  Este exemplo também usa a classe <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair> para permitir que alguns blocos de fluxo de dados atuem simultaneamente e outro bloco de fluxo de dados atue de forma exclusiva em relação a todos os outros blocos de fluxo de dados que são executados no mesmo objeto <xref:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair>. Essa técnica é útil quando vários blocos de fluxo de dados compartilham um recurso e alguns exigem acesso exclusivo a esse recurso, pois elimina o requisito de sincronizar manualmente o acesso a esse recurso. A eliminação da sincronização manual pode tornar o código mais eficiente.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir mostra o código completo para o Form1.cs (Form1.vb para Visual Basic).  
   
  [!code-csharp[TPLDataflow_WriterReadersWinForms#100](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_writerreaderswinforms/cs/writerreaderswinforms/form1.cs#100)]
  [!code-vb[TPLDataflow_WriterReadersWinForms#100](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_writerreaderswinforms/vb/writerreaderswinforms/form1.vb#100)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Fluxo de dados](dataflow-task-parallel-library.md)

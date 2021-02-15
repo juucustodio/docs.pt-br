@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 57402-TraceCodeEventLogVerbose'
 title: 57402 - TraceCodeEventLogVerbose
 ms.date: 03/30/2017
 ms.assetid: d6b1d6a7-a067-40d9-842a-ef451cebe03b
-ms.openlocfilehash: f9e8a420d272546edeb27d557b907d4954ef7a32
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 9febe0bd7f6af95bfd38e0845aa7ba1f63152765
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61951197"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99669144"
 ---
 # <a name="57402---tracecodeeventlogverbose"></a>57402 - TraceCodeEventLogVerbose
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,9 +22,11 @@ ms.locfileid: "61951197"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
+
  Esse evento é emitido em TraceCodeEventLogVerbose.  
   
 ## <a name="message"></a>Mensagem  
- Zapsáno do EventLog.  
+
+ Gravado no log de eventos.  
   
 ## <a name="details"></a>Detalhes

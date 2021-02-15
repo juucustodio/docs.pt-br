@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerThreadEnum:: Reset'
 title: Método ICorProfilerThreadEnum::Reset
 ms.date: 03/30/2017
 api_name:
@@ -15,23 +16,25 @@ helpviewer_keywords:
 ms.assetid: 81d7c86f-d062-4eed-8df3-448091ce8c49
 topic_type:
 - apiref
-ms.openlocfilehash: 19f3a4ecb6680d9951cd09525ec079b85fc5839c
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 6baa4bd62fab10c27140f8b47e1d556aec285668
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84494326"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99636322"
 ---
 # <a name="icorprofilerthreadenumreset-method"></a>Método ICorProfilerThreadEnum::Reset
+
 Move o cursor do enumerador para a posição inicial da sequência.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT Reset();  
 ```  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -40,7 +43,7 @@ HRESULT Reset();
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerThreadEnum](icorprofilerthreadenum-interface.md)
 - [Criação de perfil de interfaces](profiling-interfaces.md)

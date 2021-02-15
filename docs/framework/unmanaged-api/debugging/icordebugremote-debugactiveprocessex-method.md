@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICorDebugRemote: método ebugActiveProcessEx de:D'
 title: Método ICorDebugRemote::DebugActiveProcessEx
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: b0df5c5d-9a2e-47bf-894c-6f8a9fe24a1f
 topic_type:
 - apiref
-ms.openlocfilehash: b95e9f3a0d584511a2bcf156ed2c50a98f96d071
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: ccbde152e59146bd852a5a0a2f991d10333fa9d6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379056"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99717895"
 ---
 # <a name="icordebugremotedebugactiveprocessex-method"></a>Método ICorDebugRemote::DebugActiveProcessEx
+
 Inicia um processo em um computador remoto sob o depurador.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,6 +39,7 @@ HRESULT DebugActiveProcessEx (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pRemoteTarget`  
  no Ponteiro para uma [interface ICorDebugRemoteTarget](icordebugremotetarget-interface.md). Esse parâmetro é usado para determinar o computador no qual o processo está em execução.  
   
@@ -50,6 +53,7 @@ HRESULT DebugActiveProcessEx (
  fora Um ponteiro para o endereço de um objeto "ICorDebugProcess" que representa o processo ao qual o depurador foi anexado.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  S_OK  
  Anexado com êxito ao processo no computador remoto.  
   
@@ -57,9 +61,11 @@ HRESULT DebugActiveProcessEx (
  Não é possível anexar ao processo no computador remoto.  
   
 ## <a name="remarks"></a>Comentários  
+
  Não há suporte para a depuração de modo misto no Silverlight.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -68,7 +74,7 @@ HRESULT DebugActiveProcessEx (
   
  **Versões do .NET Framework:** 4,5, 4, 3,5 SP1  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugRemote](icordebugremote-interface.md)
 - [Interface ICorDebug](icordebug-interface.md)

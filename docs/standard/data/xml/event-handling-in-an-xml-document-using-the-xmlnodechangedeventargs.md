@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: manipulação de eventos em um documento XML usando o XmlNodeChangedEventArgs'
 title: Tratamento de eventos em um documento XML usando o XmlNodeChangedEventArgs
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 ms.assetid: 0fe844e3-5b6f-4fe7-ad15-22459501738b
-ms.openlocfilehash: 7bca8600468d3715b1d1cca46049eb07bb8e3d03
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 6d7a263e0931b8de58a3e7e4ec10e29f6c723b1c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84287773"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783320"
 ---
 # <a name="event-handling-in-an-xml-document-using-the-xmlnodechangedeventargs"></a>Tratamento de eventos em um documento XML usando o XmlNodeChangedEventArgs
+
 **XmlNodeChangedEventArgs** encapsula os argumentos passados para manipuladores de eventos registrados no objeto **XmlDocument** para manipular eventos. Os eventos e uma descrição de quando são acionados dados na tabela a seguir.  
   
 |Evento|Acionado|  
@@ -206,6 +207,6 @@ public class Sample
   
  Para obter mais informações, consulte <xref:System.Xml.XmlNodeChangedEventArgs> e <xref:System.Xml.XmlNodeChangedEventHandler>.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

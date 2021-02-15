@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função FunctionIDMapper2'
 title: Função FunctionIDMapper2
 ms.date: 03/30/2017
 api_name:
@@ -14,15 +15,16 @@ helpviewer_keywords:
 ms.assetid: 466ad51b-8f0c-41d9-81f7-371aac3374cb
 topic_type:
 - apiref
-ms.openlocfilehash: 65c5d2d4f288d927d79c233374edfec54c0b77ae
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 1fd6680ffaa7b28e679dc3eaeb9840981ead5c45
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500644"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648565"
 ---
 # <a name="functionidmapper2-function"></a>Função FunctionIDMapper2
-Notifica o criador de perfil de que o identificador fornecido de uma função pode ser remapeado para uma ID alternativa a ser usada nos retornos de chamada [FunctionEnter3](functionenter3-function.md), [FunctionLeave3](functionleave3-function.md)e [FunctionTailcall3](functiontailcall3-function.md)ou[FunctionEnter3WithInfo](functionenter3withinfo-function.md), [FunctionLeave3WithInfo](functionleave3withinfo-function.md)e [FunctionTailcall3WithInfo](functiontailcall3withinfo-function.md) para essa função. `FunctionIDMapper2`também permite que o criador de perfil indique se deseja receber retornos de chamada para essa função.  
+
+Notifica o criador de perfil de que o identificador fornecido de uma função pode ser remapeado para uma ID alternativa a ser usada nos retornos de chamada [FunctionEnter3](functionenter3-function.md), [FunctionLeave3](functionleave3-function.md)e [FunctionTailcall3](functiontailcall3-function.md)ou[FunctionEnter3WithInfo](functionenter3withinfo-function.md), [FunctionLeave3WithInfo](functionleave3withinfo-function.md)e [FunctionTailcall3WithInfo](functiontailcall3withinfo-function.md) para essa função. `FunctionIDMapper2` também permite que o criador de perfil indique se deseja receber retornos de chamada para essa função.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -48,13 +50,16 @@ UINT_PTR __stdcall FunctionIDMapper2 (
 
   \[out] um ponteiro para um valor que o criador de perfil define `true` se deseja receber `FunctionEnter3` , `FunctionLeave3` , e `FunctionTailcall3` , ou `FunctionEnter3WithInfo` , `FunctionLeave3WithInfo` e `FunctionTailcall3WithInfo` retornos de chamada; caso contrário, ele define esse valor como `false` .
 
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
+
  O criador de perfil retorna um valor que o mecanismo de execução usa como um identificador de função alternativo. O valor de retorno não pode ser nulo, a menos que `false` seja retornado em `pbHookFunction` . Caso contrário, um valor de retorno nulo produz resultados imprevisíveis, incluindo possivelmente interromper o processo.  
   
 ## <a name="remarks"></a>Comentários  
+
  Esse método estende a função [FunctionIDMapper](functionidmapper-function.md) com um parâmetro adicional que é usado para passar dados do cliente. Os dados do cliente são usados para fazer a ambiguidade entre tempos de execução.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl  
@@ -63,7 +68,7 @@ UINT_PTR __stdcall FunctionIDMapper2 (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [ICorProfilerInfo::SetFunctionIDMapper](icorprofilerinfo-setfunctionidmapper-method.md)
 - [ICorProfilerInfo3::SetFunctionIDMapper2](icorprofilerinfo3-setfunctionidmapper2-method.md)

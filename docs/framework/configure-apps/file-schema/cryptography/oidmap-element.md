@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <oidMap> elemento'
 title: Elemento <oidMap>
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,14 +9,15 @@ helpviewer_keywords:
 - <oidMap> element
 - oidMap element
 ms.assetid: 7f0c2246-c070-4748-b96a-2f66a296c539
-ms.openlocfilehash: a28eaf68fe1e6ab3f26592eee5ae2d0f2e7a3256
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 9a71cc54546f49fcada90a0f9915d44d1fc65e89
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79155161"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729986"
 ---
 # <a name="oidmap-element"></a>Elemento \<oidMap>
+
 Contém mapeamentos de OID (identificador de objeto) ASN para classes.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -23,7 +25,7 @@ Contém mapeamentos de OID (identificador de objeto) ASN para classes.
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<cryptographySettings>**](cryptographysettings-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<oidMap>**
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <oidMap>
@@ -31,9 +33,11 @@ Contém mapeamentos de OID (identificador de objeto) ASN para classes.
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
+
  Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  
@@ -51,6 +55,7 @@ Contém mapeamentos de OID (identificador de objeto) ASN para classes.
 |`mscorlib`|Contém o `cryptographySettings` elemento.|  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir mostra como usar o **\<oidMap>** elemento para conter um mapeamento de um OID para o algoritmo de hash RIPEMD-160 para uma implementação desse algoritmo de hash.  
   
 ```xml  
@@ -73,10 +78,10 @@ Contém mapeamentos de OID (identificador de objeto) ASN para classes.
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Esquema de arquivos de configuração](../index.md)
+- [Esquema do arquivo de configuração](../index.md)
 - [Esquema de configurações de criptografia](index.md)
-- [Serviços de Criptografia](../../../../standard/security/cryptographic-services.md)
+- [Serviços criptográficos](../../../../standard/security/cryptographic-services.md)
 - [Configurando classes de criptografia](../../configure-cryptography-classes.md)
 - [Mapeando identificadores de objeto para algoritmos de criptografia](../../map-object-identifiers-to-cryptography-algorithms.md)

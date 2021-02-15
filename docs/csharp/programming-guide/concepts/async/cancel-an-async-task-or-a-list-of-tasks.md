@@ -1,15 +1,15 @@
 ---
 title: Cancelar uma lista de tarefas (C#)
 description: Saiba como usar tokens de cancelamento para sinalizar uma solicitação de cancelamento para uma lista de tarefas.
-ms.date: 08/19/2020
+ms.date: 02/03/2021
 ms.topic: tutorial
 ms.assetid: eec32dbb-70ea-4c88-bd27-fa2e34546914
-ms.openlocfilehash: 30bef5d1a5082fbd3757377dbedb8f9b9d17e218
-ms.sourcegitcommit: 2560a355c76b0a04cba0d34da870df9ad94ceca3
+ms.openlocfilehash: 532c61ab6499583620ba2ee5c710c58f7886f89d
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "89053087"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585735"
 ---
 # <a name="cancel-a-list-of-tasks-c"></a>Cancelar uma lista de tarefas (C#)
 
@@ -115,7 +115,7 @@ static async Task Main()
 }
 ```
 
-O `Main` método atualizado agora é considerado um [Async Main](../../../whats-new/csharp-7-1.md#async-main), que permite um ponto de entrada assíncrono no executável. Ele grava algumas mensagens instrutivas no console e, em seguida, declara uma <xref:System.Threading.Tasks.Task> instância chamada `cancelTask` , que lerá os traços de tecla do console. Se a tecla <kbd>Enter</kbd> for pressionada, será feita uma chamada para <xref:System.Threading.CancellationTokenSource.Cancel?displayProperty=nameWithType> . Isso sinalizará o cancelamento. Em seguida, a `sumPageSizesTask` variável é atribuída a partir do `SumPageSizesAsync` método. Em seguida, as duas tarefas são passadas para <xref:System.Threading.Tasks.Task.WhenAny(System.Threading.Tasks.Task[])?displayProperty=nameWithType> o, o que continuará quando qualquer uma das duas tarefas for concluída.
+O `Main` método atualizado agora é considerado um [Async Main](../../../whats-new/csharp-7.md#async-main), que permite um ponto de entrada assíncrono no executável. Ele grava algumas mensagens instrutivas no console e, em seguida, declara uma <xref:System.Threading.Tasks.Task> instância chamada `cancelTask` , que lerá os traços de tecla do console. Se a tecla <kbd>Enter</kbd> for pressionada, será feita uma chamada para <xref:System.Threading.CancellationTokenSource.Cancel?displayProperty=nameWithType> . Isso sinalizará o cancelamento. Em seguida, a `sumPageSizesTask` variável é atribuída a partir do `SumPageSizesAsync` método. Em seguida, as duas tarefas são passadas para <xref:System.Threading.Tasks.Task.WhenAny(System.Threading.Tasks.Task[])?displayProperty=nameWithType> o, o que continuará quando qualquer uma das duas tarefas for concluída.
 
 ## <a name="create-the-asynchronous-sum-page-sizes-method"></a>Criar o método de tamanhos de página de soma assíncrona
 
@@ -166,7 +166,7 @@ static async Task<int> ProcessUrlAsync(string url, HttpClient client, Cancellati
 }
 ```
 
-Para qualquer URL fornecida, o método usará a `client` instância fornecida para obter a resposta como um `byte[]` . A <xref:System.Threading.CancellationToken> instância é passada para os <xref:System.Net.Http.HttpClient.GetAsync(System.String,System.Threading.CancellationToken)?displayProperty=nameWithType> <xref:System.Net.Http.HttpContent.ReadAsByteArrayAsync(System.Threading.CancellationToken)?displayProperty=nameWithType> métodos e. O `token` é usado para se registrar para o cancelamento solicitado. O comprimento é retornado depois que a URL e o comprimento são gravados no console.
+Para qualquer URL fornecida, o método usará a `client` instância fornecida para obter a resposta como um `byte[]` . A <xref:System.Threading.CancellationToken> instância é passada para os <xref:System.Net.Http.HttpClient.GetAsync(System.String,System.Threading.CancellationToken)?displayProperty=nameWithType> <xref:System.Net.Http.HttpContent.ReadAsByteArrayAsync?displayProperty=nameWithType> métodos e. O `token` é usado para se registrar para o cancelamento solicitado. O comprimento é retornado depois que a URL e o comprimento são gravados no console.
 
 ### <a name="example-application-output"></a>Exemplo de saída de aplicativo
 
@@ -193,7 +193,7 @@ O código a seguir é o texto completo do arquivo *Program.cs* para o exemplo.
 
 :::code language="csharp" source="snippets/cancel-tasks/cancel-tasks/Program.cs":::
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Threading.CancellationToken>
 - <xref:System.Threading.CancellationTokenSource>

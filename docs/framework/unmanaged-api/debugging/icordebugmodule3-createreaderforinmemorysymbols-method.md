@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugModule3:: CreateReaderForInMemorySymbols'
 title: Método ICorDebugModule3::CreateReaderForInMemorySymbols
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: af317171-d66d-4114-89eb-063554c74940
 topic_type:
 - apiref
-ms.openlocfilehash: 2a8200f942405395429db182b7501a07fc1f930a
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: af037cc891e83f53fd94bad290f40286ed665e6f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83212315"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790770"
 ---
 # <a name="icordebugmodule3createreaderforinmemorysymbols-method"></a>Método ICorDebugModule3::CreateReaderForInMemorySymbols
+
 Cria um leitor de símbolo de depuração para um módulo dinâmico.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,6 +36,7 @@ HRESULT CreateReaderForInMemorySymbols (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  riid  
  no O IID da interface COM a ser retornada. Normalmente, essa é uma [interface ISymUnmanagedReader](../diagnostics/isymunmanagedreader-interface.md).  
   
@@ -41,6 +44,7 @@ HRESULT CreateReaderForInMemorySymbols (
  fora Ponteiro para um ponteiro para a interface retornada.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  S_OK  
  Leitor criado com êxito.  
   
@@ -54,6 +58,7 @@ HRESULT CreateReaderForInMemorySymbols (
  Não é possível criar o leitor.  
   
 ## <a name="remarks"></a>Comentários  
+
  Esse método também pode ser usado para criar um objeto de leitor de símbolo para módulos na memória (não dinâmicos), mas somente depois que os símbolos são disponibilizados pela primeira vez (indicado pelo retorno de chamada do [método UpdateModuleSymbols](icordebugmanagedcallback-updatemodulesymbols-method.md) ).  
   
  Esse método retorna uma nova instância de leitor toda vez que é chamado (como [CComPtrBase:: CoCreateInstance](/cpp/atl/reference/ccomptrbase-class#cocreateinstance)). Portanto, o depurador deve armazenar em cache o resultado e solicitar uma nova instância somente quando os dados subjacentes podem ter mudado (ou seja, quando um retorno de chamada de [método LoadClass](icordebugmanagedcallback-loadclass-method.md) é recebido).  
@@ -61,6 +66,7 @@ HRESULT CreateReaderForInMemorySymbols (
  Módulos dinâmicos não têm nenhum símbolo disponível até que o primeiro tipo seja carregado (conforme indicado pelo retorno de chamada do [método LoadClass](icordebugmanagedcallback-loadclass-method.md) ).  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -69,7 +75,7 @@ HRESULT CreateReaderForInMemorySymbols (
   
  **Versões do .NET Framework:** 4,5, 4, 3,5 SP1  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugRemoteTarget](icordebugremotetarget-interface.md)
 - [Interface ICorDebug](icordebug-interface.md)

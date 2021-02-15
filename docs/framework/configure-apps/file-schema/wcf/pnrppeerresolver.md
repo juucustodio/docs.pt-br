@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <pnrpPeerResolver>'
 title: <pnrpPeerResolver>
 ms.date: 03/30/2017
 ms.assetid: c1b34f3b-68e5-4911-a367-de49fb61dbc6
-ms.openlocfilehash: d3e88d7f2dd991091d3d7abdc715e125ddc9ac56
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 4af6a63312fa300cfa33e578f01b8e07267ad3a1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73738772"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683535"
 ---
 # \<pnrpPeerResolver>
+
 Especifica que o resolvedor PNRP (Peer Name Resolution Protocol) deve ser usado como um resolvedor. Esse elemento é opcional porque o PNRP é o resolvedor padrão.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -19,13 +21,14 @@ Especifica que o resolvedor PNRP (Peer Name Resolution Protocol) deve ser usado 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<pnrpResolver>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <pnrpResolver resolverType="String" />
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -35,6 +38,7 @@ Especifica que o resolvedor PNRP (Peer Name Resolution Protocol) deve ser usado 
 |resolvedor|Uma cadeia de caracteres que especifica o resolvedor a ser usado. Esse atributo é opcional. Se não estiver definido, ou se estiver definido como uma cadeia de caracteres vazia, o PNRP será usado.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -49,7 +53,7 @@ Especifica que o resolvedor PNRP (Peer Name Resolution Protocol) deve ser usado 
 <pnrpResolver resolverType="String" />
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.PnrpPeerResolverElement>
 - <xref:System.ServiceModel.Channels.PnrpPeerResolverBindingElement>
@@ -58,4 +62,4 @@ Especifica que o resolvedor PNRP (Peer Name Resolution Protocol) deve ser usado 
 - [Estendendo associações](../../../wcf/extending/extending-bindings.md)
 - [Associações personalizadas](../../../wcf/extending/custom-bindings.md)
 - [\<customBinding>](custombinding.md)
-- [Resolvedores pares](../../../wcf/feature-details/peer-resolvers.md)
+- [Resolvedor peer](../../../wcf/feature-details/peer-resolvers.md)

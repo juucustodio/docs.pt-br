@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função InitDbgTransportManager'
 title: Função InitDbgTransportManager
 ms.date: 03/30/2017
 api_name:
@@ -16,14 +17,15 @@ helpviewer_keywords:
 ms.assetid: a30102ff-c52e-48c9-b3a9-aa14286a42b2
 topic_type:
 - apiref
-ms.openlocfilehash: e18ceb25b9c58a9710ef967cb071e3ef55beea8c
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 19cdfcbe3a5b120c11fc781476410833997b8c6e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83421040"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790432"
 ---
 # <a name="initdbgtransportmanager-function"></a>Função InitDbgTransportManager
+
 Inicializa o Gerenciador de transporte para se conectar a um destino remoto para enumeração de processo e tempo de execução.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -33,8 +35,9 @@ HRESULT InitDbgTransportManager ();
 ```  
   
 ## <a name="return-value"></a>Valor retornado  
+
  S_OK  
- Êxito.  
+ Sucesso.  
   
  E_OUTOFMEMORY  
  A função não pôde alocar memória para um Gerenciador de transporte.  
@@ -43,10 +46,11 @@ HRESULT InitDbgTransportManager ();
  Outras falhas.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CoreClrRemoteDebuggingInterfaces. h  
   
- **Biblioteca:** mscordbi_macx86. dll  
+ **Biblioteca:** mscordbi_macx86.dll  
   
  **Versões do .NET Framework:** 3,5 SP1

@@ -14,14 +14,15 @@ helpviewer_keywords:
 - CTLs
 - certificate revocation lists
 ms.assetid: 7e953b43-1374-4bbc-814f-53ca1b6b52bb
-ms.openlocfilehash: 43ab281e6ec28ff23ea584b03fd4278c6682e33e
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 30a35ded6fc86af6dc6dd4bf19cdf60f66570e0c
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87167264"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96247246"
 ---
 # <a name="certmgrexe-certificate-manager-tool"></a>Certmgr.exe (ferramenta Gerenciador de Certificados)
+
 A ferramenta Gerenciador de Certificados (Certmgr.exe) gerencia certificados, CTLs (listas de certificados confiáveis) e CRLs (listas de certificados revogados).  
   
  O Gerenciador de Certificados é instalado automaticamente com o Visual Studio. Para iniciar a ferramenta, use os [Prompts de Comando](developer-command-prompt-for-vs.md).  
@@ -50,7 +51,7 @@ A ferramenta Gerenciador de Certificados (Certmgr.exe) gerencia certificados, CT
 |*sourceStorename*|O repositório de certificados que contém os certificados, as CTLs ou as CRLs existentes que serão adicionados, excluídos, salvos ou exibidos. Ele pode ser um arquivo de repositório ou um repositório de sistemas.|  
 |*destinationStorename*|O repositório ou o arquivo de certificados de saída.|  
   
-|Opção|DESCRIÇÃO|  
+|Opção|Descrição|  
 |------------|-----------------|  
 |**/Add**|Adiciona certificados, CTLs e CRLs a um repositório de certificados.|  
 |**/All**|Adiciona todas as entradas quando usadas com **/add**. Exclui todas as entradas quando usadas com **/del**. Exibe todas as entradas quando usadas sem as opções **/Add** ou **/del** . A opção **/all** não pode ser usada com **/put**.|  
@@ -63,7 +64,7 @@ A ferramenta Gerenciador de Certificados (Certmgr.exe) gerencia certificados, CT
 |**/h**[**elp**]|Exibe sintaxe de comando e opções para a ferramenta.|  
 |**/n** *nam*|Especifica o nome comum do certificado a ser adicionado, excluído ou salvo. Essa opção só pode ser usada com certificados; ela não pode ser usada com CTLs ou CRLs.|  
 |**/put**|Salva um certificado X.509, uma CTL ou uma CRL de um repositório de certificados em um arquivo. O arquivo é salvo no formato X.509. É possível usar a opção **/7** com a opção **/put** para salvar o arquivo no formato PKCS #7. A opção **/put** deve ser seguida por **/c**, **/CTL** ou **/CRL**. A opção **/all** não pode ser usada com **/put**.|  
-|**/r** *location*|Identifica o local do Registro do repositório do sistema. Essa opção só será ignorada se você especificar a opção **/s**. *location* deve ser um dos seguintes:<br /><br /> -   `currentUser` indica que o repositório de certificados está na chave HKEY_CURRENT_USER. Esse é o padrão.<br />-   `localMachine` indica que o repositório de certificados está na chave HKEY_LOCAL_MACHINE.|  
+|**/r** *location*|Identifica o local do Registro do repositório do sistema. Essa opção só será ignorada se você especificar a opção **/s**. *location* deve ser um dos seguintes:<br /><br /> -   `currentUser` indica que o repositório de certificados está na chave HKEY_CURRENT_USER. Este é o padrão.<br />-   `localMachine` indica que o repositório de certificados está na chave HKEY_LOCAL_MACHINE.|  
 |**/s**|Indica que o repositório de certificados é um repositório do sistema. Se você não especificar essa opção, o repositório será considerado um **StoreFile**.|  
 |**/sha1** *sha1Hash*|Especifica o hash SHA1 do certificado, da CTL ou da CRL a ser adicionado, excluído ou salvo.|  
 |**/v**|Especifica o modo detalhado; exibe informações detalhadas sobre certificados, CTLs e CRLs. Essa opção não pode ser usada com as opções **/add**, **/del** ou **/put**.|  
@@ -72,6 +73,7 @@ A ferramenta Gerenciador de Certificados (Certmgr.exe) gerencia certificados, CT
 |**/?**|Exibe sintaxe de comando e opções para a ferramenta.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Certmgr.exe realiza as seguintes funções básicas:  
   
 - Exibe certificados, CTLs e CRLs para o console.  
@@ -94,6 +96,7 @@ A ferramenta Gerenciador de Certificados (Certmgr.exe) gerencia certificados, CT
  Para obter mais informações sobre certificados, consulte [Working with Certificates](../wcf/feature-details/working-with-certificates.md) (Trabalhando com certificados).  
   
 ## <a name="examples"></a>Exemplos  
+
  O comando a seguir exibe um repositório de sistema padrão chamado `my` com saída detalhada.  
   
 ```console  
@@ -136,7 +139,7 @@ certmgr /del /all /ctl /s my newStore.str
 certmgr /put /c /s my newFile  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Ferramentas](index.md)
 - [Makecert.exe (Ferramenta de Criação de Certificado)](/windows/desktop/SecCrypto/makecert)

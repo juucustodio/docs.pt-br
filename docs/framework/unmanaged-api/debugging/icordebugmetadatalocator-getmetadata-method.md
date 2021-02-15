@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugMetaDataLocator:: GetMetaData'
 title: Método ICorDebugMetaDataLocator::GetMetaData
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: f9b0ff22-54db-45eb-9cc3-508000a3141d
 topic_type:
 - apiref
-ms.openlocfilehash: d9269339e8e2ae8d00da701b015aa30cd51cbef3
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 419a03e42a54057ab70e31a368e918612f3a85f6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213368"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99691673"
 ---
 # <a name="icordebugmetadatalocatorgetmetadata-method"></a>Método ICorDebugMetaDataLocator::GetMetaData
+
 Solicita que o depurador retorne o caminho completo para um módulo cujos metadados são necessários para concluir uma operação solicitada pelo depurador.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -40,8 +42,9 @@ HRESULT GetMetaData(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `wszImagePath`  
- no Uma cadeia de caracteres terminada em nulo que representa o caminho completo para o arquivo. Se o caminho completo não estiver disponível, o nome e a extensão do arquivo (*filename*.* extensão*).  
+ no Uma cadeia de caracteres terminada em nulo que representa o caminho completo para o arquivo. Se o caminho completo não estiver disponível, o nome e a extensão do arquivo (*filename*.*extensão*).  
   
  `dwImageTimeStamp`  
  no O carimbo de data/hora dos cabeçalhos de arquivo PE da imagem. Esse parâmetro pode potencialmente ser usado para uma pesquisa de servidor de símbolo ([symsrv](/windows/desktop/debug/using-symsrv)).  
@@ -63,17 +66,20 @@ HRESULT GetMetaData(
  O `ofReadOnly` sinalizador da enumeração [CorOpenFlags](../metadata/coropenflags-enumeration.md) é usado para solicitar acesso somente leitura aos metadados nesse arquivo.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  Esse método retorna os HRESULTs específicos a seguir, bem como os erros de HRESULT que indicam falha de método. Todos os outros HRESULTs de falha indicam que o arquivo não é recuperável.  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
-|S_OK|O método foi concluído com êxito. `wszPathBuffer`contém o caminho completo para o arquivo e é encerrado em nulo.|  
+|S_OK|O método foi concluído com êxito. `wszPathBuffer` contém o caminho completo para o arquivo e é encerrado em nulo.|  
 |E_NOT_SUFFICIENT_BUFFER|O tamanho atual de `wszPathBuffer` não é suficiente para manter o caminho completo. Nesse caso, `pcchPathBuffer` contém a contagem necessária de `WCHAR` s, incluindo o caractere nulo de terminação e `GetMetaData` é chamado uma segunda vez com o tamanho do buffer solicitado.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Se `wszImagePath` contiver um caminho completo para um módulo de um despejo, ele especificará o caminho do computador em que o despejo foi coletado. O arquivo pode não existir neste local ou um arquivo incorreto com o mesmo nome pode ser armazenado no caminho.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -82,7 +88,7 @@ HRESULT GetMetaData(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugThread4](icordebugthread4-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

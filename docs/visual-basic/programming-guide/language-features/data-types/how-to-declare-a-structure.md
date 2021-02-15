@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como declarar uma estrutura (Visual Basic)'
 title: 'Como: Declarar uma estrutura'
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,14 +8,15 @@ helpviewer_keywords:
 - statements [Visual Basic], structure
 - structures [Visual Basic], declaring
 ms.assetid: d5e98381-eb81-47d4-af83-48cc534a2572
-ms.openlocfilehash: a6b70d0973e92db90e35e61b7fed2279c5b0bac3
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 7560f22db70fd5804ca309720d32477bcb9a3782
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84393968"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100436923"
 ---
 # <a name="how-to-declare-a-structure-visual-basic"></a>Como declarar uma estrutura (Visual Basic)
+
 Você começa uma declaração de estrutura com a [instrução Structure](../../../language-reference/statements/structure-statement.md)e a encerra com a `End Structure` instrução. Entre essas duas instruções, você deve declarar pelo menos um *elemento*. Os elementos podem ser de qualquer tipo de dados, mas pelo menos um deve ser uma variável não compartilhada ou um evento não compartilhado e não-personalizado.  
   
  Você não pode inicializar nenhum dos elementos de estrutura na declaração de estrutura. Quando você declara uma variável para ser de um tipo de estrutura, você atribui valores aos elementos acessando-os por meio da variável.  
@@ -55,12 +57,12 @@ Você começa uma declaração de estrutura com a [instrução Structure](../../
   
      Além de variáveis, `Sub` procedimentos e eventos, você também pode definir constantes, `Function` procedimentos e propriedades em uma estrutura. Você pode designar, no máximo, uma propriedade como a *propriedade padrão*, desde que ela aceite pelo menos um argumento. Você pode manipular um evento com um procedimento [compartilhado](../../../language-reference/modifiers/shared.md) `Sub` . Para obter mais informações, consulte [como: declarar e chamar uma propriedade padrão em Visual Basic](../procedures/how-to-declare-and-call-a-default-property.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Tipos de dados](index.md)
+- [Data Types](index.md)
 - [Tipos de dados elementares](elementary-data-types.md)
 - [Tipos de dados compostos](composite-data-types.md)
-- [Tipos de valor e referência](value-types-and-reference-types.md)
+- [Tipos de valor e tipos de referência](value-types-and-reference-types.md)
 - [Estruturas](structures.md)
 - [Solução de problemas de tipos de dados](troubleshooting-data-types.md)
 - [Variáveis de estrutura](structure-variables.md)

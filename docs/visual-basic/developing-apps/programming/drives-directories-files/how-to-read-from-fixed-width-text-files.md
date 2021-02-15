@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como ler de arquivos de texto de largura fixa no Visual Basic'
 title: 'Como: ler de arquivos de texto de largura fixa'
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - text files [Visual Basic], tasks
 - text files [Visual Basic], reading
 ms.assetid: 99be5692-967a-4e85-993e-cd18139a5a69
-ms.openlocfilehash: 77b2e0a4ebe36b68501f821ef5731935ee3b16a7
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 4f5868fa68009851cc65eeaf5ff6431ac22840d3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84411623"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797452"
 ---
 # <a name="how-to-read-from-fixed-width-text-files-in-visual-basic"></a>Como ler de arquivos de texto de largura fixa no Visual Basic
 
@@ -59,7 +60,7 @@ O objeto `TextFieldParser` fornece uma maneira fácil e eficiente de analisar ar
   
 - O usuário não tem permissões suficientes para acessar o arquivo (<xref:System.UnauthorizedAccessException>).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.FileIO.TextFieldParser?displayProperty=nameWithType>
 - [Como: ler de arquivos de texto separados por vírgula](how-to-read-from-comma-delimited-text-files.md)

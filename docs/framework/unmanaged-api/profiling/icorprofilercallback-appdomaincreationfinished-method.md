@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerCallback:: AppDomainCreationFinished'
 title: Método ICorProfilerCallback::AppDomainCreationFinished
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: dbab7d90-d515-4dc9-8195-294d5d04bab6
 topic_type:
 - apiref
-ms.openlocfilehash: 76f56971223154d3ed966c272081049adf30de54
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 6995c6cda168b5be5815e6f7b2b4d900ae0d4d67
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500488"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648357"
 ---
 # <a name="icorprofilercallbackappdomaincreationfinished-method"></a>Método ICorProfilerCallback::AppDomainCreationFinished
+
 Notifica o criador de perfil de que um domínio de aplicativo foi criado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -44,11 +46,13 @@ HRESULT AppDomainCreationFinished(
   \[in] um HRESULT que indica se a criação do domínio do aplicativo foi concluída com êxito.
 
 ## <a name="remarks"></a>Comentários  
+
  A ID do aplicativo não é válida para nenhuma solicitação de informações até que o `AppDomainCreationFinished` método seja chamado.  
   
  Algumas partes do carregamento do domínio do aplicativo podem continuar após o `AppDomainCreationFinished` retorno de chamada. Um HRESULT de falha em `hrStatus` indica uma falha. No entanto, um HRESULT de êxito em `hrStatus` indica apenas que a primeira parte da criação do domínio do aplicativo foi bem-sucedida.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -57,6 +61,6 @@ HRESULT AppDomainCreationFinished(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerCallback](icorprofilercallback-interface.md)

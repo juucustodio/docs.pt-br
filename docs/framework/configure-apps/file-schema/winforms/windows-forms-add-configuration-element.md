@@ -1,22 +1,23 @@
 ---
+description: 'Saiba mais sobre: Windows Forms adicionar elemento de configuração'
 title: Windows Forms adicionar elemento de configuração
 ms.date: 04/07/2017
 helpviewer_keywords:
 - Windows Forms Add configuration element
 - configuring Windows Forms applications
 ms.assetid: 3e3e04de-99d1-4658-b716-44cb669d9589
-ms.openlocfilehash: 26b806f84c3e1bc44e0437a8f8806316b14897b8
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: a0db81e0dd86f9ee6f2a47183100645ece78280c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73109656"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773248"
 ---
 # <a name="windows-forms-add-configuration-element"></a>Windows Forms adicionar elemento de configuração
 
 O `<add>` elemento adiciona uma chave predefinida que especifica se o aplicativo do Windows Form dá suporte a recursos adicionados a Windows Forms aplicativos no .NET Framework 4,7 ou posterior.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <System.Windows.Forms.ApplicationConfigurationSection>
@@ -35,7 +36,7 @@ As seções a seguir descrevem atributos, elementos filho e elementos pai.
 | `key`     | Atributo obrigatório. Um nome de chave predefinido que corresponde a um determinado Windows Forms recurso personalizável. |
 | `value`   | Atributo obrigatório. O valor a ser atribuído a `key`. |
 
-### <a name="key-attribute-names-and-associated-values"></a>`key`nomes de atributo e valores associados
+### <a name="key-attribute-names-and-associated-values"></a>`key` nomes de atributo e valores associados
 
 | nome de `key` | Valores | Descrição |
 | ---------- | ------ | ----------- |
@@ -65,17 +66,17 @@ A partir do .NET Framework 4.7, o elemento `<System.Windows.Forms.ApplicationCon
 
 O `<System.Windows.Forms.ApplicationConfigurationSection>` elemento permite que você adicione um ou mais `<add>` elementos filho, cada um deles define uma definição de configuração específica.
 
-Para obter uma visão geral do suporte a alto DPI Windows Forms, consulte [suporte a alto dpi no Windows Forms](../../../winforms/high-dpi-support-in-windows-forms.md).
+Para obter uma visão geral do suporte a alto DPI Windows Forms, consulte [suporte a alto dpi no Windows Forms](/dotnet/desktop/winforms/high-dpi-support-in-windows-forms).
 
 ### <a name="dpiawareness"></a>DpiAwareness
 
-Windows Forms aplicativos executados em versões do Windows começando com o Windows 10 Creators Edition e as versões de destino do .NET Framework a partir do .NET Framework 4,7 podem ser configurados para aproveitar os aprimoramentos de DPI alto introduzidos no .NET Framework 4,7. Eles incluem:
+Windows Forms aplicativos executados em versões do Windows começando com o Windows 10 Creators Edition e as versões de destino do .NET Framework a partir do .NET Framework 4,7 podem ser configurados para aproveitar os aprimoramentos de DPI alto introduzidos no .NET Framework 4,7. Elas incluem:
 
 - Suporte para cenários de DPI dinâmico em que o usuário altera o fator de escala ou DPI depois que um aplicativo de Windows Forms foi iniciado.
 
 - Melhorias no dimensionamento e no layout de vários controles de Windows Forms, como o <xref:System.Windows.Forms.MonthCalendar> controle e o <xref:System.Windows.Forms.CheckedListBox> controle.
 
-O reconhecimento de DPI alto é um recurso opcional; Por padrão, o valor de `DpiAwareness` é `false` . Você pode aceitar o suporte do Windows Forms para reconhecimento de DPI definindo o valor dessa chave como `PerMonitorV2` no arquivo de configuração do aplicativo. Se o reconhecimento de DPI estiver habilitado, todos os recursos individuais de DPI também estarão habilitados. Eles incluem:
+O reconhecimento de DPI alto é um recurso opcional; Por padrão, o valor de `DpiAwareness` é `false` . Você pode aceitar o suporte do Windows Forms para reconhecimento de DPI definindo o valor dessa chave como `PerMonitorV2` no arquivo de configuração do aplicativo. Se o reconhecimento de DPI estiver habilitado, todos os recursos individuais de DPI também estarão habilitados. Elas incluem:
 
 - As mensagens de DPI alteradas, que são controladas pela `DisableDpiChangedMessageHandling` chave.
 
@@ -97,7 +98,7 @@ A configuração de aceitação padrão única fornecida pela configuração `Dp
 
 Normalmente, você recusa um recurso específico porque optou por tratá-lo programaticamente.
 
-Para obter mais informações sobre como aproveitar o suporte de DPI alto em aplicativos Windows Forms, consulte [suporte a alto dpi no Windows Forms](../../../winforms/high-dpi-support-in-windows-forms.md).
+Para obter mais informações sobre como aproveitar o suporte de DPI alto em aplicativos Windows Forms, consulte [suporte a alto dpi no Windows Forms](/dotnet/desktop/winforms/high-dpi-support-in-windows-forms).
 
 ### <a name="disabledpichangedmessagehandling"></a>DisableDpiChangedMessageHandling
 
@@ -107,7 +108,7 @@ A partir do .NET Framework 4,7, Windows Forms controles geram vários eventos re
 
 O dimensionamento único ou de várias passagens influencia a capacidade de resposta percebida da interface do usuário e a aparência visual dos elementos da interface do usuário conforme eles são dimensionados. A partir do .NET Framework 4,7, Windows Forms usa o dimensionamento de passagem única. Nas versões anteriores do .NET Framework, o dimensionamento foi realizado por meio de várias passagens, o que fazia com que alguns controles fosse escalado mais do que o necessário. O dimensionamento de passagem única só deverá ser desabilitado se seu aplicativo depender do comportamento antigo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Seção de configuração do Windows Forms](index.md)
-- [Suporte a alto DPI no Windows Forms](../../../winforms/high-dpi-support-in-windows-forms.md)
+- [Windows Forms seção de configuração](index.md)
+- [Suporte a alto DPI no Windows Forms](/dotnet/desktop/winforms/high-dpi-support-in-windows-forms)

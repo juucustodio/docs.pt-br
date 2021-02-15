@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugClass:: GetToken'
 title: Método ICorDebugClass::GetToken
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: ee5c848a-eac4-4462-b07a-07ccd76a75df
 topic_type:
 - apiref
-ms.openlocfilehash: 3433f5f69927afb501c2596571f138e3a69fabb6
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: f87b71800410fc3a95790e6d35cf4bd10a5ce747
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82894119"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711514"
 ---
 # <a name="icordebugclassgettoken-method"></a>Método ICorDebugClass::GetToken
+
 Obtém o `TypeDef` token de metadados que faz referência à definição dessa classe.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,10 +36,12 @@ HRESULT GetToken (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pTypeDef`  
  fora Um ponteiro para um `mdTypeDef` token que faz referência à definição dessa classe.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

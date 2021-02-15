@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura de COR_PRF_FUNCTION'
 title: Estrutura COR_PRF_FUNCTION
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 8bb5acf5-cf4b-4ccb-93f1-46db1f3f8bf3
 topic_type:
 - apiref
-ms.openlocfilehash: 856e01c7934709a17556aa53851204bf6a917de8
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 494f3cfe6d1e3641645ef0050c06014e67bf4475
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500930"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648968"
 ---
 # <a name="cor_prf_function-structure"></a>Estrutura COR_PRF_FUNCTION
+
 Fornece uma representação única de uma função pela combinação de sua ID com a ID de sua versão recompilada.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -32,7 +34,7 @@ typedef struct _COR_PRF_FUNCTION {    FunctionID functionId;    ReJITID    reJit
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`functionId`|A ID da função.|  
 |`reJitId`|A ID da função recompilada. Um valor de 0 (zero) representa a versão original da função.|  
@@ -40,6 +42,7 @@ typedef struct _COR_PRF_FUNCTION {    FunctionID functionId;    ReJITID    reJit
 ## <a name="remarks"></a>Comentários  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl  
@@ -48,6 +51,6 @@ typedef struct _COR_PRF_FUNCTION {    FunctionID functionId;    ReJITID    reJit
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Estruturas de criação de perfil](profiling-structures.md)

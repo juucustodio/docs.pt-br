@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como unir conteúdo de arquivos diferentes (LINQ) (Visual Basic)'
 title: 'Como: unir o conteúdo de arquivos diferentes (LINQ)'
 ms.date: 06/27/2018
 ms.assetid: e7530857-c467-41ea-9730-84e6b1065a4d
-ms.openlocfilehash: 7dac73a16d0d3fbf409f58628bc5c69716dcee14
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: a0718463a36e1a3e1e312fbe0c0947e39648846d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84398364"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468506"
 ---
 # <a name="how-to-join-content-from-dissimilar-files-linq-visual-basic"></a>Como: unir conteúdo de arquivos não semelhantes (LINQ) (Visual Basic)
 
@@ -120,7 +121,7 @@ End Class
 ' 12 total names in list
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ e cadeias de caracteres (Visual Basic)](linq-and-strings.md)
 - [LINQ e diretórios de arquivos (Visual Basic)](linq-and-file-directories.md)

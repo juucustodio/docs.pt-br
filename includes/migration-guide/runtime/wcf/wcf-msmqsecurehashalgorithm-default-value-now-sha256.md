@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 9baca45de1c8994f610815e84fdee8ba3930eb04
-ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
+ms.openlocfilehash: 7c0227980aa5d90f3788783088bcd7cd9509ed66
+ms.sourcegitcommit: 261e0c98a111357692b3b63c596edf0cacf72991
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2020
-ms.locfileid: "89496799"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90770808"
 ---
 ### <a name="wcf-msmqsecurehashalgorithm-default-value-is-now-sha256"></a>O valor padrão MsmqSecureHashAlgorithm do WCF agora é SHA256
 
@@ -14,13 +14,21 @@ A partir do .NET Framework 4.7.1, o algoritmo de assinatura da mensagem padrão 
 
 #### <a name="suggestion"></a>Sugestão
 
-Se houver problemas de compatibilidade com essa alteração no .NET Framework 4.7.1 ou uma versão posterior, será possível recusá-la adicionando a seguinte linha à seção <code>&lt;runtime&gt;</code> do arquivo app.config:<pre><code class="lang-xml">&lt;configuration&gt;&#13;&#10;&lt;runtime&gt;&#13;&#10;&lt;AppContextSwitchOverrides value=&quot;Switch.System.ServiceModel.UseSha1InMsmqEncryptionAlgorithm=true&quot; /&gt;&#13;&#10;&lt;/runtime&gt;&#13;&#10;&lt;/configuration&gt;&#13;&#10;</code></pre>
+Se você tiver problemas de compatibilidade com essa alteração no .NET Framework 4.7.1 ou posterior, poderá recusar a alteração adicionando a seguinte linha à `<runtime>` seção do arquivo de app.config:
 
-| Nome    | Valor       |
-|:--------|:------------|
-| Escopo   |Secundária|
-|Versão|4.7.1|
-|Tipo|Runtime|
+```xml
+<configuration>
+  <runtime>
+    <AppContextSwitchOverrides value=&quot;Switch.System.ServiceModel.UseSha1InMsmqEncryptionAlgorithm=true&quot; />
+  </runtime>
+</configuration>
+```
+
+| Nome    | Valor   |
+|:--------|:--------|
+| Escopo   | Secundária   |
+| Versão | 4.7.1   |
+| Tipo    | Runtime |
 
 #### <a name="affected-apis"></a>APIs afetadas
 

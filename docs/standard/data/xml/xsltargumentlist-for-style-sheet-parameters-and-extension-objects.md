@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: XsltArgumentList para parâmetros de folha de estilo e objetos de extensão'
 title: XsltArgumentList para parâmetros de folha de estilos e objetos de extensão
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 ms.assetid: de2f0dce-6b98-4908-bba7-ed150cc50355
-ms.openlocfilehash: 1c69a6e78207e146c8dbd6cdc252f27f36ab37a2
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: aa96d952cefe35db7451619e760c3d1826f109d2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84281694"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782488"
 ---
 # <a name="xsltargumentlist-for-style-sheet-parameters-and-extension-objects"></a>XsltArgumentList para parâmetros de folha de estilos e objetos de extensão
+
 A classe de <xref:System.Xml.Xsl.XsltArgumentList> contém o idioma extensível de folha de estilos para objetos de parâmetros de transformações (XSLT) e a extensão XSLT. Quando passados para o método de <xref:System.Xml.Xsl.XslTransform.Transform%2A> , esses parâmetros e objetos de extensão podem ser chamados de folhas de estilos.  
   
 > [!NOTE]
@@ -32,6 +33,7 @@ A classe de <xref:System.Xml.Xsl.XsltArgumentList> contém o idioma extensível 
 - Suporte que passam partes da árvore de resultado à folha de estilos com o uso de <xref:System.Xml.XPath.XPathNodeIterator>.  
   
 ## <a name="xslt-style-sheet-parameters"></a>Parâmetros de folha de estilos XSLT  
+
  Os parâmetros XSLT são adicionados a <xref:System.Xml.Xsl.XsltArgumentList> usando o método <xref:System.Xml.Xsl.XsltArgumentList.AddParam%2A> . Um nome qualificado e um namespace Uniform Resource Identifier (URI) são associados com o objeto de parâmetro no momento.  
   
  O objeto de parâmetro deve corresponder a um tipo de World Wide Web Consortium (W3C). A tabela seguinte mostra tipos correspondentes W3C, as classes equivalentes do .NET Framework (tipo), e se o tipo W3C é um tipo de XPath (linguagem de caminho XML) ou tipo de XSLT.  
@@ -55,6 +57,7 @@ A classe de <xref:System.Xml.Xsl.XsltArgumentList> contém o idioma extensível 
 3. Passar <xref:System.Xml.Xsl.XsltArgumentList> para o método de <xref:System.Xml.Xsl.XslTransform.Transform%2A> .  
   
 ### <a name="example"></a>Exemplo  
+
  O exemplo a seguir usa o método de <xref:System.Xml.Xsl.XsltArgumentList.AddParam%2A> para criar um parâmetro para conter uma data calculada de desconto. A data de desconto é calculada para ser a 20 dias de data pedido.  
   
 ```vb  
@@ -138,6 +141,7 @@ public class Sample
 ```  
   
 ### <a name="input"></a>Entrada  
+
  order.xml  
   
 ```xml  
@@ -179,6 +183,7 @@ public class Sample
 ```  
   
 ## <a name="xslt-extension-objects"></a>Objetos de extensão XSLT  
+
  Os objetos de extensão XSLT são adicionados a <xref:System.Xml.Xsl.XsltArgumentList> usando o método <xref:System.Xml.Xsl.XsltArgumentList.AddExtensionObject%2A> . Um nome qualificado e URI de namespace são associados com o objeto de extensão no momento.  
   
  Quando um objeto é adicionado, o chamador de <xref:System.Xml.Xsl.XsltArgumentList.AddExtensionObject%2A> deve ser totalmente confiável na política de segurança. Se o chamador é de confiança parcial, a adição falhará.  
@@ -196,6 +201,7 @@ public class Sample
 3. Passar <xref:System.Xml.Xsl.XsltArgumentList> para o método de <xref:System.Xml.Xsl.XslTransform.Transform%2A> .  
   
 ### <a name="example"></a>Exemplo  
+
  O exemplo a seguir calcula a circunferência de um círculo determinado o raio.  
   
 ```vb  
@@ -306,6 +312,7 @@ public class Sample
 ```  
   
 ### <a name="input"></a>Entrada  
+
  number.xml  
   
 ```xml  
@@ -342,6 +349,7 @@ public class Sample
 ```  
   
 ### <a name="output"></a>Saída  
+
  `<circles xmlns:myObj="urn:myObj">`  
   
  `<circle>`  
@@ -362,6 +370,6 @@ public class Sample
   
  `</circles>`  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [A classe XslTransform implementa do processador XSLT](xsltransform-class-implements-the-xslt-processor.md)

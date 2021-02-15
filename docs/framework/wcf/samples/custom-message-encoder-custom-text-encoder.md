@@ -3,12 +3,12 @@ title: 'Codificador de mensagem personalizado: Codificador de texto personalizad
 description: Use este exemplo para implementar um codificador de mensagem de texto personalizado usando o WCF. Esse codificador dá suporte a todas as codificações de caracteres com suporte da plataforma para interoperabilidade.
 ms.date: 03/30/2017
 ms.assetid: 68ff5c74-3d33-4b44-bcae-e1d2f5dea0de
-ms.openlocfilehash: 88ddc79e6cc1df654aea851cedb0e60c6fbcd017
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 89f0bf09ba6408e24f642a67f2e7ac8243608dcb
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85246266"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96240960"
 ---
 # <a name="custom-message-encoder-custom-text-encoder"></a>Codificador de mensagem personalizado: Codificador de texto personalizado
 
@@ -218,6 +218,7 @@ Qualquer tipo derivado de <xref:System.ServiceModel.Channels.MessageEncodingBind
 Para este exemplo, a configuração do cliente é configurar mão. Você não pode usar Svcutil.exe para gerar a configuração do cliente porque o `CustomTextMessageBindingElement` não exporta uma declaração de política para descrever seu comportamento. Em geral, você deve implementar a <xref:System.ServiceModel.Description.IPolicyExportExtension> interface em um elemento de associação personalizado para exportar uma declaração de política personalizada que descreve o comportamento ou a funcionalidade implementada pelo elemento de associação. Para obter um exemplo de como exportar uma declaração de política para um elemento de associação personalizado, consulte o exemplo [Transport: UDP](transport-udp.md) .
 
 ## <a name="message-encoding-binding-configuration-handler"></a>Manipulador de configuração de associação de codificação de mensagens
+
 A seção anterior mostra como usar o codificador de mensagem de texto personalizado programaticamente. O `CustomTextMessageEncodingBindingSection` implementa um manipulador de configuração que permite que você especifique o uso de um codificador de mensagem de texto personalizado dentro de um arquivo de configuração. A `CustomTextMessageEncodingBindingSection` classe deriva da <xref:System.ServiceModel.Configuration.BindingElementExtensionElement> classe. A `BindingElementType` propriedade informa o sistema de configuração do tipo de elemento de associação a ser criado para esta seção.
 
 Todas as configurações definidas pelo `CustomTextMessageBindingElement` são expostas como as propriedades no `CustomTextMessageEncodingBindingSection` . O <xref:System.Configuration.ConfigurationPropertyAttribute> ajuda no mapeamento dos atributos do elemento de configuração para as propriedades e a definição de valores padrão se o atributo não estiver definido. Depois que os valores da configuração são carregados e aplicados às propriedades do tipo, o <xref:System.ServiceModel.Configuration.BindingElementExtensionElement.CreateBindingElement%2A> método é chamado, o que converte as propriedades em uma instância concreta de um elemento de associação.

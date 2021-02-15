@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IMapToken'
 title: Interface IMapToken
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4c5c4df0-43f3-4830-a01b-8d029806f2c4
 topic_type:
 - apiref
-ms.openlocfilehash: 7858237f46ecfa71f0ce0e726ec8ef441b291456
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 30f8e2cc73fcb932dae7d35dbb4e68d2b1115603
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008203"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706793"
 ---
 # <a name="imaptoken-interface"></a>Interface IMapToken
+
 Fornece recursos de mapeamento entre assemblies.  
   
 > [!NOTE]
@@ -34,14 +36,15 @@ Fornece recursos de mapeamento entre assemblies.
 |[Método Map](imaptoken-map-method.md)|Mapeia uma relação entre dois assemblies usando assinaturas de metadados.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de metadados](metadata-interfaces.md)

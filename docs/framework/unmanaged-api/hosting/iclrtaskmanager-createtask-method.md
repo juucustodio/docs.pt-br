@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRTaskManager:: CreateTask'
 title: Método ICLRTaskManager::CreateTask
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: eea570d9-2e53-4320-9ea0-eb777bf9dcf3
 topic_type:
 - apiref
-ms.openlocfilehash: 9829f57da911b43626516284e4858adc4139a3ca
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: 98a287f10a84b18579ebf2a4294cbb8a67cabc9c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83762846"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728607"
 ---
 # <a name="iclrtaskmanagercreatetask-method"></a>Método ICLRTaskManager::CreateTask
+
 Solicitações explicitamente que o Common Language Runtime (CLR) cria uma nova tarefa.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,12 +36,13 @@ HRESULT CreateTask (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pTask`  
  fora Um ponteiro para o endereço de um [ICLRTask](iclrtask-interface.md)recém-criado, ou NULL, se a tarefa não pôde ser criada.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
-|HRESULT|Description|  
+|HRESULT|Descrição|  
 |-------------|-----------------|  
 |S_OK|O método foi retornado com êxito.|  
 |HOST_E_CLRNOTAVAILABLE|O CLR não foi carregado em um processo ou o CLR está em um estado no qual não pode executar código gerenciado ou processar a chamada com êxito.|  
@@ -50,23 +53,25 @@ HRESULT CreateTask (
 |E_OUTOFMEMORY|Não há memória suficiente disponível para alocar o recurso solicitado.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O CLR cria uma nova tarefa automaticamente na inicialização, quando o código do usuário cria um thread usando tipos no <xref:System.Threading> namespace ou quando o tamanho do pool de threads é aumentado. Ele também cria tarefas quando o código não gerenciado faz uma chamada para uma função gerenciada.  
   
- `CreateTask`permite que o host faça uma solicitação explícita de que o CLR crie uma nova tarefa. Por exemplo, o host pode invocar esse método para inicializar as estruturas de dados.  
+ `CreateTask` permite que o host faça uma solicitação explícita de que o CLR crie uma nova tarefa. Por exemplo, o host pode invocar esse método para inicializar as estruturas de dados.  
   
 > [!IMPORTANT]
 > A nova tarefa é retornada em um estado suspenso e permanece suspensa até que o host chame explicitamente [IHostTask:: Start](ihosttask-start-method.md).  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRTask](iclrtask-interface.md)
 - [Interface ICLRTaskManager](iclrtaskmanager-interface.md)

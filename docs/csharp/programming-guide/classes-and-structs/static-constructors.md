@@ -6,19 +6,21 @@ helpviewer_keywords:
 - static constructors [C#]
 - constructors [C#], static
 ms.assetid: 151ec95e-3c4d-4ed7-885d-95b7a3be2e7d
-ms.openlocfilehash: e324b2aa968ff5fdf9c268fa3891f67e8530ff87
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: c224f96091e8fd5c51139757002ec8a67461a508
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86863976"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98898730"
 ---
 # <a name="static-constructors-c-programming-guide"></a>Construtores estáticos (Guia de Programação em C#)
+
 Um construtor estático é usado para inicializar quaisquer dados [estáticos](../../language-reference/keywords/static.md) ou para executar uma ação específica que precisa ser executada apenas uma vez. Ele é chamado automaticamente antes que a primeira instância seja criada ou que quaisquer membros estáticos sejam referenciados.  
   
- [!code-csharp[csProgGuideObjects#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#14)]  
+ [!code-csharp[SimpleClass#1](snippets/static-constructors/Program.cs#1)]
 
 ## <a name="remarks"></a>Comentários
+
 Construtores estáticos têm as seguintes propriedades:  
   
 - Um construtor estático não usa modificadores de acesso nem tem parâmetros.  
@@ -52,14 +54,16 @@ Construtores estáticos têm as seguintes propriedades:
 - Construtores estáticos também são um local conveniente para impor verificações em tempo de execução no parâmetro de tipo que não pode ser verificado no tempo de compilação por meio de restrições (restrições de parâmetro de tipo).
 
 ## <a name="example"></a>Exemplo
+
  Nesse exemplo, a classe `Bus` tem um construtor estático. Quando a primeira instância do `Bus` for criada (`bus1`), o construtor estático será invocado para inicializar a classe. O exemplo de saída verifica se o construtor estático é executado somente uma vez, mesmo se duas instâncias de `Bus` forem criadas e se é executado antes que o construtor da instância seja executado.  
   
- [!code-csharp[csProgGuideObjects#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#15)]
+ [!code-csharp[BusSample#2](snippets/static-constructors/Program.cs#2)]
 
-## <a name="c-language-specification"></a>especificação da linguagem C#
+## <a name="c-language-specification"></a>Especificação da linguagem C#
+
 Para saber mais, confira a seção [Construtores estáticos](~/_csharplang/spec/classes.md#static-constructors) da [Especificação da linguagem C#](~/_csharplang/spec/introduction.md).
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Guia de programação C#](../index.md)
 - [Classes e structs](./index.md)
@@ -67,4 +71,4 @@ Para saber mais, confira a seção [Construtores estáticos](~/_csharplang/spec/
 - [Classes static e membros de classes static](./static-classes-and-static-class-members.md)
 - [Finalizadores](./destructors.md)
 - [Diretrizes de design de construtor](../../../standard/design-guidelines/constructor.md#type-constructor-guidelines)
-- [Aviso de segurança-CA2121: construtores estáticos devem ser privados](https://docs.microsoft.com/visualstudio/code-quality/ca2121-static-constructors-should-be-private)
+- [Aviso de segurança-CA2121: construtores estáticos devem ser privados](/visualstudio/code-quality/ca2121-static-constructors-should-be-private)

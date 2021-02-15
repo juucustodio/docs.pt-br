@@ -1,16 +1,19 @@
 ---
-title: 'Ponto de extremidade: Chamadas pendentes'
+description: 'Saiba mais sobre: ponto de extremidade: chamadas pendentes'
+title: 'Ponto de extremidade: chamadas pendentes'
 ms.date: 03/30/2017
 ms.assetid: cf1e854a-92bc-4850-81a2-a8134c9fd7d2
-ms.openlocfilehash: 4827d2b4031e4560ad240dd25f3123cbe144fcf1
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: d47136307c3553f699194e904628b803999f9e1d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61797235"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759595"
 ---
-# <a name="endpoint-calls-outstanding"></a>Ponto de extremidade: Chamadas pendentes
-Nome do contador: Chamadas pendentes  
+# <a name="endpoint-calls-outstanding"></a>Ponto de extremidade: chamadas pendentes
+
+Nome do contador: chamadas pendentes  
   
 ## <a name="description"></a>Descrição  
+
  Número de chamadas em andamento para esse ponto de extremidade.

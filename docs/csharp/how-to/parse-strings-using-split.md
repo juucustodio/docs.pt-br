@@ -1,6 +1,6 @@
 ---
-title: Analisar cadeias de caracteres usando String. Split (guia C#)
-description: O método Split retorna uma matriz de cadeias de caracteres divididas de um conjunto de delimitadores. Esta á uma maneira fácil de analisar cadeias de caracteres.
+title: Dividir cadeias de caracteres usando String. Split (guia C#)
+description: O método Split retorna uma matriz de cadeias de caracteres divididas de um conjunto de delimitadores. É uma maneira fácil de extrair subsequências de uma cadeia de caracteres.
 ms.date: 01/03/2018
 helpviewer_keywords:
 - splitting strings [C#]
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - parse strings
 ms.assetid: 729c2923-4169-41c6-9c90-ef176c1e2953
 ms.custom: mvc
-ms.openlocfilehash: 7c5d8fa462775c6f3a9981693129997dda6c2286
-ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
+ms.openlocfilehash: 5361a3c60905edd19b180c5ddb14064a85f64337
+ms.sourcegitcommit: 48466b8fb7332ececff5dc388f19f6b3ff503dd4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85324135"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400494"
 ---
-# <a name="how-to-parse-strings-using-stringsplit-in-c"></a>Como analisar cadeias de caracteres usando String. Split em C\#
+# <a name="how-to-separate-strings-using-stringsplit-in-c"></a>Como separar cadeias de caracteres usando String. Split em C\#
 
 O método <xref:System.String.Split%2A?displayProperty=nameWithType> cria uma matriz de subcadeias, dividindo a cadeia de caracteres de entrada com base em um ou mais delimitadores. Esse método é geralmente a maneira mais fácil de separar uma cadeia de caracteres em limites de palavras. Ele também é usado para dividir cadeias de caracteres em outras cadeias ou caractere específico.
 
@@ -48,8 +48,9 @@ O <xref:System.String.Split%2A?displayProperty=nameWithType> pode receber uma ma
 
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs" id="Snippet5":::
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
+- [Extrair elementos de uma cadeia de caracteres](../../standard/base-types/divide-up-strings.md)
 - [Guia de programação em C#](../programming-guide/index.md)
 - [Cadeias de caracteres](../programming-guide/strings/index.md)
 - [Expressões regulares do .NET](../../standard/base-types/regular-expressions.md)

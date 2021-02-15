@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IAssemblyName:: GetProperty'
 title: Método IAssemblyName::GetProperty
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: e59fda62-77d5-4e37-89cb-ce7ae4627975
 topic_type:
 - apiref
-ms.openlocfilehash: b86828e01fb00b12feff2ed451793c240e16e240
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 66528bb54e1cb4adbba8fa87088065bc40c2ee15
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73134390"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760726"
 ---
 # <a name="iassemblynamegetproperty-method"></a>Método IAssemblyName::GetProperty
+
 Obtém um ponteiro para a propriedade referenciada pelo identificador de propriedade especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT GetProperty (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `PropertyId`  
  no O identificador exclusivo para a propriedade solicitada.  
   
@@ -43,14 +46,15 @@ HRESULT GetProperty (
  fora Os dados de propriedade retornados.  
   
  `pcbProperty`  
- [entrada, saída] O tamanho, em bytes, de `pvProperty`.  
+ [entrada, saída] O tamanho, em bytes, de `pvProperty` .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Fusion. h  
   
- **Versões do .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>Consulte também
 

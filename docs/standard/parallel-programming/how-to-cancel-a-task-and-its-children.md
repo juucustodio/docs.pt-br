@@ -2,21 +2,21 @@
 title: 'Como: Cancelar uma tarefa e seus filhos'
 description: Consulte exemplos de como cancelar uma tarefa e seus filhos no .NET. Os exemplos abrangem as etapas da criação de tarefa cancelável, para o aviso de que a tarefa foi cancelada.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - tasks, how to cancel
 ms.assetid: 08574301-8331-4719-ad50-9cf7f6ff3048
-ms.openlocfilehash: 66daf00680b65aace1ce6367761e3ed81596d33b
-ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
+ms.openlocfilehash: 82a71faf3a2390f5bb36dd896cf865f773f54bd9
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84662674"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95713217"
 ---
 # <a name="how-to-cancel-a-task-and-its-children"></a>Como: Cancelar uma tarefa e seus filhos
+
 Estes exemplos mostram como realizar as seguintes tarefas:  
   
 1. Crie e inicie uma tarefa cancelável.  
@@ -30,6 +30,7 @@ Estes exemplos mostram como realizar as seguintes tarefas:
  O thread de chamada não força o término da tarefa. Ele apenas sinaliza que o cancelamento é solicitado. Se a tarefa já estiver em execução, cabe ao representante de usuário observar a solicitação e responder adequadamente. Se cancelamento for solicitado antes da execução da tarefa, o representante de usuário nunca será executado e o objeto de tarefa fará a transição para o estado Cancelado.  
   
 ## <a name="example"></a>Exemplo  
+
  Este exemplo mostra como terminar uma <xref:System.Threading.Tasks.Task> e suas tarefas filho em resposta a uma solicitação de cancelamento. Ele também mostra que quando um representante de usuário termina lançando um <xref:System.Threading.Tasks.TaskCanceledException>, o thread de chamada pode optar por usar o método <xref:System.Threading.Tasks.Task.Wait%2A> ou o método <xref:System.Threading.Tasks.Task.WaitAll%2A> para aguardar a conclusão das tarefas. Nesse caso, você deve usar um bloco `try/catch` para lidar com as exceções no thread de chamada.  
   
  [!code-csharp[TPL_Cancellation#04](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_cancellation/cs/cancel1.cs#04)]

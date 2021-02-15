@@ -1,29 +1,32 @@
 ---
+description: 'Saiba mais sobre: como inspecionar e modificar mensagens no serviço'
 title: 'Como: inspecionar e modificar mensagens do serviço'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 9c5b1cc7-84f3-45f8-9226-d59c278e8c42
-ms.openlocfilehash: 1356983361c483170d9d7365932b788f2421bf09
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 5fd3a5e49bdd35a3095e5855b399533337e133a9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70795607"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668871"
 ---
 # <a name="how-to-inspect-and-modify-messages-on-the-service"></a>Como: inspecionar e modificar mensagens do serviço
-Você pode inspecionar ou modificar as mensagens de entrada ou saída em um cliente Windows Communication Foundation (WCF) implementando <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector?displayProperty=nameWithType> uma e inserindo-a no tempo de execução do serviço. Para obter mais informações, consulte [estendendo expatchers](extending-dispatchers.md). O recurso equivalente no serviço é o <xref:System.ServiceModel.Dispatcher.IClientMessageInspector?displayProperty=nameWithType>.  
+
+Você pode inspecionar ou modificar as mensagens de entrada ou saída em um cliente Windows Communication Foundation (WCF) implementando uma <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector?displayProperty=nameWithType> e inserindo-a no tempo de execução do serviço. Para obter mais informações, consulte [estendendo expatchers](extending-dispatchers.md). O recurso equivalente no serviço é o <xref:System.ServiceModel.Dispatcher.IClientMessageInspector?displayProperty=nameWithType> .  
   
 ### <a name="to-inspect-or-modify-messages"></a>Para inspecionar ou modificar mensagens  
   
-1. Implementar a interface <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector?displayProperty=nameWithType>.  
+1. Implemente a interface <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector?displayProperty=nameWithType>.  
   
-2. Implemente <xref:System.ServiceModel.Description.IServiceBehavior?displayProperty=nameWithType>uma <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=nameWithType>interface, <xref:System.ServiceModel.Description.IContractBehavior?displayProperty=nameWithType> ou, dependendo do escopo no qual você deseja inserir facilmente seu inspetor de mensagem de serviço.  
+2. Implemente <xref:System.ServiceModel.Description.IServiceBehavior?displayProperty=nameWithType> uma <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=nameWithType> interface, ou, <xref:System.ServiceModel.Description.IContractBehavior?displayProperty=nameWithType> dependendo do escopo no qual você deseja inserir facilmente seu inspetor de mensagem de serviço.  
   
-3. Insira seu comportamento antes de chamar o <xref:System.ServiceModel.ICommunicationObject.Open%2A?displayProperty=nameWithType> método <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType>no. Para obter detalhes, consulte [Configurando e estendendo o tempo de execução com comportamentos](configuring-and-extending-the-runtime-with-behaviors.md).  
+3. Insira seu comportamento antes de chamar o <xref:System.ServiceModel.ICommunicationObject.Open%2A?displayProperty=nameWithType> método no <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType> . Para obter detalhes, consulte [Configurando e estendendo o tempo de execução com comportamentos](configuring-and-extending-the-runtime-with-behaviors.md).  
   
 ## <a name="example"></a>Exemplo  
+
  Os exemplos de código a seguir mostram, em ordem:  
   
 - Uma implementação do Inspetor de serviço.  
@@ -44,4 +47,4 @@ Você pode inspecionar ou modificar as mensagens de entrada ou saída em um clie
 
 - <xref:System.ServiceModel.Dispatcher.IClientMessageInspector?displayProperty=nameWithType>
 - <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector?displayProperty=nameWithType>
-- [Configurando e estendendo o tempo de execução com comportamentos](configuring-and-extending-the-runtime-with-behaviors.md)
+- [Configurando e estendendo o runtime com comportamentos](configuring-and-extending-the-runtime-with-behaviors.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração VariableLocationType'
 title: Enumeração VariableLocationType
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 8635ee3a-c84b-4626-876c-416bee54f787
 topic_type:
 - apiref
-ms.openlocfilehash: 455fd06dbdbfd5d9753f3d7270647a742751d804
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 8561077b9f3f4d318eeb743d51538b2a9a22a217
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420650"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800520"
 ---
 # <a name="variablelocationtype-enumeration"></a>Enumeração VariableLocationType
+
 Indica o tipo de local nativo de uma variável.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,16 +39,18 @@ typedef enum VariableLocationType
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`VLT_REGISTER`|A variável está em um registro.|  
 |`VLT_REGISTER_RELATIVE`|A variável está em um local de memória relativa ao registro.|  
 |`VLT_INVALID`|A variável não é armazenada em um local de memória de registro ou de registro relativo.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Um membro da `VariableLocationType` enumeração é retornado pelo método [ICorDebugVariableHome:: getlocationtype](icordebugvariablehome-getlocationtype-method.md) .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -55,6 +59,6 @@ typedef enum VariableLocationType
   
  **.NET Framework versões:**[!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Declarando enumerações](debugging-enumerations.md)

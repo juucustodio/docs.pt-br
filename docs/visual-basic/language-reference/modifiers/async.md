@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Async (Visual Basic)'
 title: Async
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - Async [Visual Basic]
 - Async keyword [Visual Basic]
 ms.assetid: 1be8b4b5-9689-41b5-bd33-b906bfd53bc5
-ms.openlocfilehash: 35df7a464937647c6d110142a3e2801cebbea505
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: a20c80ace06e386e7c106acc2b7e6258abca13b2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84373148"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99701151"
 ---
 # <a name="async-visual-basic"></a>Async (Visual Basic)
 
@@ -106,7 +107,7 @@ Private Async Function GetURLContentsAsync(url As String) As Task(Of Byte())
 End Function
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.CompilerServices.AsyncStateMachineAttribute>
 - [Operador Await](../operators/await-operator.md)

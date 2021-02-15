@@ -3,14 +3,15 @@ title: Usando variação em interfaces para Coleções Genéricas (C#)
 description: Saiba como usar as interfaces covariantes e contravariant para coleções genéricas. Consulte exemplos de conversão e comparação de coleções genéricas.
 ms.date: 07/20/2015
 ms.assetid: a44f0708-10fa-4c76-82cd-daa6e6b31e8e
-ms.openlocfilehash: c2ce849e32520cb91422ff36173e418a010476bd
-ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
+ms.openlocfilehash: a896fe8fda3d9ad08de9a09c6a172f7d75335e7d
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87105671"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91176299"
 ---
 # <a name="using-variance-in-interfaces-for-generic-collections-c"></a>Usando variação em interfaces para Coleções Genéricas (C#)
+
 Uma interface de covariante permite que seus métodos retornem mais tipos derivados daquelas especificadas na interface. Uma interface de contravariante permite que seus métodos aceitem parâmetros de tipos menos derivados do que os especificados na interface.  
   
  No .NET Framework 4, várias interfaces existentes se tornaram covariantes e contravariantes. Eles incluem <xref:System.Collections.Generic.IEnumerable%601> e <xref:System.IComparable%601>. Isso permite que você reutilize métodos que operam com coleções genéricas de tipos base para coleções de tipos derivados.  
@@ -18,6 +19,7 @@ Uma interface de covariante permite que seus métodos retornem mais tipos deriva
  Para obter uma lista de interfaces variantes no .NET, consulte [variação em interfaces genéricas (C#)](./variance-in-generic-interfaces.md).  
   
 ## <a name="converting-generic-collections"></a>Convertendo coleções genéricas  
+
  O exemplo a seguir ilustra os benefícios do suporte à covariância na interface <xref:System.Collections.Generic.IEnumerable%601>. O método `PrintFullName` aceita uma coleção do tipo `IEnumerable<Person>` como um parâmetro. No entanto, você pode reutilizá-lo para uma coleção do tipo `IEnumerable<Employee>` porque `Employee` herda `Person`.  
   
 ```csharp  
@@ -56,6 +58,7 @@ class Program
 ```  
   
 ## <a name="comparing-generic-collections"></a>Comparando coleções genéricas  
+
  O exemplo a seguir ilustra os benefícios do suporte à contravariância na interface <xref:System.Collections.Generic.IComparer%601>. A classe `PersonComparer` implementa a interface `IComparer<Person>`. No entanto, você pode reutilizar essa classe para comparar uma sequência de objetos do tipo `Employee` porque `Employee` herda `Person`.  
   
 ```csharp  
@@ -114,6 +117,6 @@ class Program
 }  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Variância em interfaces genéricas (C#)](./variance-in-generic-interfaces.md)

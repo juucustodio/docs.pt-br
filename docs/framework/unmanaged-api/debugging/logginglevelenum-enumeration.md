@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração LoggingLevelEnum'
 title: Enumeração LoggingLevelEnum
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 09daac08-005a-46b2-beab-408d0820c5e5
 topic_type:
 - apiref
-ms.openlocfilehash: 62ea982f30a6a73648d9bf36722c0b5a49a68896
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 7c9676fef83ea44f45a25350a2b3d325c1c22f98
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420737"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800599"
 ---
 # <a name="logginglevelenum-enumeration"></a>Enumeração LoggingLevelEnum
+
 Indica o nível de severidade de uma mensagem descritiva que é escrita no log de eventos quando um thread gerenciado registrar um evento.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -46,7 +48,7 @@ typedef enum LoggingLevelEnum {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`LTraceLevel0`|A mensagem é um nível de rastreamento 0.|  
 |`LTraceLevel1`|A mensagem é um nível de rastreamento 1.|  
@@ -63,9 +65,11 @@ typedef enum LoggingLevelEnum {
 |`LPanicLevel`|A mensagem é um nível de pane.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O Common Language Runtime (CLR) chama o método [ICorDebugManagedCallback:: LogMessage](icordebugmanagedcallback-logmessage-method.md) para notificar o depurador de que um thread gerenciado registrou um evento. O CLR passa um valor da `LoggingLevelEnum` enumeração para indicar o nível de severidade da mensagem que o thread gerenciado gravou no log de eventos.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -74,7 +78,7 @@ typedef enum LoggingLevelEnum {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Diagnostics.EventLog>
 - [Declarando enumerações](debugging-enumerations.md)

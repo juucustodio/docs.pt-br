@@ -4,12 +4,12 @@ description: Visão geral dos métodos, parâmetros de método e valores retorna
 ms.technology: csharp-fundamentals
 ms.date: 05/21/2018
 ms.assetid: 577a8527-1081-4b36-9b9e-0685b6553c6e
-ms.openlocfilehash: 879c553f8df560a3e2f3dccdbbf0d7e8a05c50cd
-ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
+ms.openlocfilehash: ea07553d20ea6c18bac048a2e8d697f665bfb949
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2020
-ms.locfileid: "89495532"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96031670"
 ---
 # <a name="methods-in-c"></a>Métodos em (C#)
 
@@ -121,13 +121,14 @@ Passar um parâmetro de tipo de referência permite que você altere o valor da 
 
 Às vezes, o requisito de que você especifique o número exato de argumentos para o método é restritivo. Usando a palavra-chave `params` para indicar que um parâmetro é uma matriz de parâmetros, você permite que o método seja chamado com um número variável de argumentos. O parâmetro marcado com a palavra-chave `params` deve ser um tipo de matriz e ele deve ser o último parâmetro na lista de parâmetros do método.
 
-Um chamador pode, então, invocar o método de uma das três maneiras:
+Um chamador pode invocar o método de uma das quatro maneiras:
 
 - Passando uma matriz do tipo apropriado que contém o número de elementos desejado.
 - Passando uma lista separada por vírgulas de argumentos individuais do tipo apropriado para o método.
+- Passando `null` .
 - Não fornecendo um argumento para a matriz de parâmetros.
 
-O exemplo a seguir define um método chamado `GetVowels` que retorna todas as vogais de uma matriz de parâmetros. O método `Main` ilustra todas as três maneiras de invocar o método. Os chamadores não precisam fornecer argumentos para parâmetros que incluem o modificador `params`. Nesse caso, o parâmetro é `null`.
+O exemplo a seguir define um método chamado `GetVowels` que retorna todas as vogais de uma matriz de parâmetros. O `Main` método ilustra todas as quatro maneiras de invocar o método. Os chamadores não precisam fornecer argumentos para parâmetros que incluem o modificador `params`. Nesse caso, o parâmetro é uma matriz vazia.
 
 [!code-csharp[csSnippets.Methods#75](~/samples/snippets/csharp/concepts/methods/params75.cs#75)]
 
@@ -153,7 +154,7 @@ Se um método com vários argumentos opcionais for invocado usando argumentos po
 
 Se um método for chamado usando argumentos nomeados ou uma combinação de argumentos posicionais e nomeados, o chamador poderá omitir todos os argumentos após o último argumento posicional na chamada do método.
 
-A exemplo a seguir chama o método `ExampleMethod` três vezes.  As duas primeiras chamadas de método usam argumentos posicionais. O primeiro omite ambos os argumentos opcionais, enquanto o segundo omite o último argumento. A terceira chamada de método fornece um argumento posicional para o parâmetro obrigatório, mas usa um argumento nomeado para fornecer um valor para o parâmetro `description` enquanto omite o argumento `optionalInt`.
+A exemplo a seguir chama o método `ExampleMethod` três vezes.  As duas primeiras chamadas de método usam argumentos posicionais. O primeiro omite ambos os argumentos opcionais, enquanto o segundo omite o último argumento. A terceira chamada de método fornece um argumento posicional para o parâmetro Required, mas usa um argumento nomeado para fornecer um valor ao `description` parâmetro ao omitir o `optionalInt` argumento.
 
 [!code-csharp[csSnippets.Methods#22](../../samples/snippets/csharp/concepts/methods/optional1.cs#22)]
 
@@ -197,7 +198,7 @@ O chamador pode então consumir a tupla retornada com o código semelhante ao se
 
 ```csharp
 var person = GetPersonalInfo("111111111")
-Console.WriteLine("{person.Item1} {person.Item3}: age = {person.Item4}");
+Console.WriteLine($"{person.Item1} {person.Item3}: age = {person.Item4}");
 ```
 
 Os nomes também podem ser atribuídos aos elementos da tupla na definição de tipo de tupla. O exemplo a seguir mostra uma versão alternativa do método `GetPersonalInfo` que usa elementos nomeados:
@@ -214,7 +215,7 @@ A chamada anterior para o método `GetPersonInfo` pode ser modificada da seguint
 
 ```csharp
 var person = GetPersonalInfo("111111111");
-Console.WriteLine("{person.FName} {person.LName}: age = {person.Age}");
+Console.WriteLine($"{person.FName} {person.LName}: age = {person.Age}");
 ```
 
 Se um método passa uma matriz como um argumento e modifica o valor de elementos individuais, o método não precisa retornar a matriz, embora você possa optar por fazer isso para obter um bom estilo ou um fluxo de valores funcional.  Isso ocorre porque o C# passa todos os tipos de referência por valor e o valor de uma referência de matriz é o ponteiro para a matriz. No exemplo a seguir, as alterações no conteúdo da matriz `values` realizados pelo método `DoubleValues` são observáveis por qualquer código que faz referência à matriz.
@@ -292,4 +293,4 @@ Para obter mais informações, consulte [Iteradores](programming-guide/concepts/
 - [fora](language-reference/keywords/out-parameter-modifier.md)
 - [ref](language-reference/keywords/ref.md)
 - [Em](language-reference/keywords/in-parameter-modifier.md)
-- [Passar parâmetros](programming-guide/classes-and-structs/passing-parameters.md)
+- [Passando parâmetros](programming-guide/classes-and-structs/passing-parameters.md)

@@ -1,28 +1,45 @@
 ---
-title: dotnet-despejo-.NET Core
-description: Instalando e usando a ferramenta de linha de comando dotnet-dump.
-ms.date: 10/14/2019
-ms.openlocfilehash: e008dcfc734a8742c495ea32a7a149c9a55c54c6
-ms.sourcegitcommit: 43d5aca3fda42bad8843f6c4e72f6bd52daa55f1
+title: dotnet – ferramenta de diagnóstico de despejo-CLI do .NET
+description: Saiba como instalar e usar a ferramenta de CLI de despejo de dotnet para coletar e analisar despejos do Windows e do Linux sem nenhum depurador nativo.
+ms.date: 11/17/2020
+ms.openlocfilehash: 84b3796f4ee92880e6d432df606a6addfd2471b0
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89598103"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189795"
 ---
 # <a name="dump-collection-and-analysis-utility-dotnet-dump"></a>Utilitário de coleta e análise de despejo (dotNet-dump)
 
 **Este artigo aplica-se a:** ✔️ SDK do .net Core 3,0 e versões posteriores
 
 > [!NOTE]
-> `dotnet-dump` Não tem suporte no macOS.
+> `dotnet-dump` para macOS só é compatível com o .NET 5,0 e versões posteriores.
 
-## <a name="install-dotnet-dump"></a>Instalar dotnet-dump
+## <a name="install"></a>Instalar
 
-Para instalar a versão de lançamento mais recente do `dotnet-dump` [pacote NuGet](https://www.nuget.org/packages/dotnet-dump), use o comando de [instalação da ferramenta dotnet](../tools/dotnet-tool-install.md) :
+Há duas maneiras de baixar e instalar `dotnet-dump` :
 
-```dotnetcli
-dotnet tool install -g dotnet-dump
-```
+- **ferramenta global dotnet:**
+
+  Para instalar a versão de lançamento mais recente do `dotnet-dump` [pacote NuGet](https://www.nuget.org/packages/dotnet-dump), use o comando de [instalação da ferramenta dotnet](../tools/dotnet-tool-install.md) :
+
+  ```dotnetcli
+  dotnet tool install --global dotnet-dump
+  ```
+
+- **Download direto:**
+
+  Baixe o executável da ferramenta que corresponde à sua plataforma:
+
+  | Sistema operacional  | Plataforma |
+  | --- | -------- |
+  | Windows | [x86](https://aka.ms/dotnet-dump/win-x86) \| [x64](https://aka.ms/dotnet-dump/win-x64) \| [ARM](https://aka.ms/dotnet-dump/win-arm) \| [ARM-x64](https://aka.ms/dotnet-dump/win-arm64) |
+  | macOS   | [x64](https://aka.ms/dotnet-dump/osx-x64) |
+  | Linux   | [x64](https://aka.ms/dotnet-dump/linux-x64) \| [ARM](https://aka.ms/dotnet-dump/linux-arm) \| [arm64](https://aka.ms/dotnet-dump/linux-arm64) \| [MUSL-x64](https://aka.ms/dotnet-dump/linux-musl-x64) \| [MUSL-arm64](https://aka.ms/dotnet-dump/linux-musl-arm64) |
+
+> [!NOTE]
+> Para usar `dotnet-dump` o em um aplicativo x86, você precisa de uma versão x86 correspondente da ferramenta.
 
 ## <a name="synopsis"></a>Sinopse
 
@@ -58,7 +75,7 @@ Captura um despejo de um processo.
 ### <a name="synopsis"></a>Sinopse
 
 ```console
-dotnet-dump collect [-h|--help] [-p|--process-id] [--type] [-o|--output] [--diag]
+dotnet-dump collect [-h|--help] [-p|--process-id] [-n|--name] [--type] [-o|--output] [--diag]
 ```
 
 ### <a name="options"></a>Opções
@@ -69,7 +86,11 @@ dotnet-dump collect [-h|--help] [-p|--process-id] [--type] [-o|--output] [--diag
 
 - **`-p|--process-id <PID>`**
 
-  Especifica o número de identificação do processo do qual coletar um despejo de memória.
+  Especifica o número de identificação do processo do qual coletar um despejo.
+
+- **`-n|--name <name>`**
+
+  Especifica o nome do processo do qual coletar um despejo.
 
 - **`--type <Full|Heap|Mini>`**
 
@@ -95,6 +116,12 @@ dotnet-dump collect [-h|--help] [-p|--process-id] [--type] [-o|--output] [--diag
 - **`--diag`**
 
   Habilita o log de diagnóstico de coleta de despejo.
+
+> [!NOTE]
+> No Linux e no macOS, esse comando espera o aplicativo de destino e `dotnet-dump` compartilha a mesma `TMPDIR` variável de ambiente. Caso contrário, o comando atingirá o tempo limite.
+
+> [!NOTE]
+> Para coletar um despejo usando o `dotnet-dump` , ele precisa ser executado como o mesmo usuário que o usuário que está executando o processo de destino ou como raiz. Caso contrário, a ferramenta não conseguirá estabelecer uma conexão com o processo de destino.
 
 ## <a name="dotnet-dump-analyze"></a>dotnet-análise de despejo
 
@@ -128,34 +155,37 @@ dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 | `clrstack <arguments>`              | Fornece um rastreamento de pilha apenas do código gerenciado.                                                  |
 | `clrthreads <arguments>`            | Lista os threads gerenciados em execução.                                                            |
 | `dumpasync <arguments>`             | Exibe informações sobre máquinas de estado assíncrono no heap coletado por lixo.                |
-| `dumpassembly <arguments>`          | Exibe detalhes sobre um assembly.                                                           |
-| `dumpclass <arguments>`             | Exibe informações sobre uma estrutura de classe do EE no endereço especificado.                     |
-| `dumpdelegate <arguments>`          | Exibe informações sobre um delegado.                                                        |
-| `dumpdomain <arguments>`            | Exibe informações sobre todos os AppDomains e todos os assemblies nos domínios.                |
+| `dumpassembly <arguments>`          | Exibe detalhes sobre o assembly no endereço especificado.                                 |
+| `dumpclass <arguments>`             | Exibe informações sobre a `EEClass` estrutura no endereço especificado.                  |
+| `dumpdelegate <arguments>`          | Exibe informações sobre o delegado no endereço especificado.                             |
+| `dumpdomain <arguments>`            | Exibe informações sobre todos os AppDomains e todos os assemblies no domínio especificado.       |
 | `dumpheap <arguments>`              | Exibe informações sobre o heap coletado por lixo e estatísticas de coleção sobre objetos.       |
 | `dumpil <arguments>`                | Exibe o MSIL (Microsoft Intermediate Language) associado a um método gerenciado. |
 | `dumplog <arguments>`               | Grava o conteúdo de um log de estresse na memória no arquivo especificado.                         |
-| `dumpmd <arguments>`                | Exibe informações sobre uma estrutura MethodDesc no endereço especificado.                   |
-| `dumpmodule <arguments>`            | Exibe informações sobre uma estrutura de módulo do EE no endereço especificado.                    |
-| `dumpmt <arguments>`                | Exibe informações sobre uma tabela de métodos no endereço especificado.                           |
-| `dumpobj <arguments>`               | Exibe informações sobre um objeto no endereço especificado.                                       |
+| `dumpmd <arguments>`                | Exibe informações sobre a `MethodDesc` estrutura no endereço especificado.               |
+| `dumpmodule <arguments>`            | Exibe informações sobre o módulo no endereço especificado.                               |
+| `dumpmt <arguments>`                | Exibe informações sobre o `MethodTable` no endereço especificado.                        |
+| `dumpobj <arguments>`               | Exibe informações sobre o objeto no endereço especificado.                                      |
 | `dso|dumpstackobjects <arguments>`  | Exibe todos os objetos gerenciados encontradas dentro dos limites da pilha atual.                    |
 | `eeheap <arguments>`                | Exibe informações sobre a memória de processo consumida por estruturas de dados de tempo de execução internas.              |
 | `finalizequeue <arguments>`         | Exibe todos os objetos registrados para a finalização.                                             |
-| `gcroot <arguments>`                | Exibe informações sobre referências (ou raízes) para um objeto no endereço especificado.              |
+| `gcroot <arguments>`                | Exibe informações sobre referências (ou raízes) para o objeto no endereço especificado.             |
 | `gcwhere <arguments>`               | Exibe o local no heap de GC do argumento passado.                               |
-| `ip2md <arguments>`                 | Exibe a estrutura MethodDesc no endereço especificado no código JIT.                       |
+| `ip2md <arguments>`                 | Exibe a `MethodDesc` estrutura no endereço especificado no código JIT.                     |
 | `histclear <arguments>`             | Libera todos os recursos usados pela família de comandos `hist*`.                                |
 | `histinit <arguments>`              | Inicializa as estruturas de SOS com base no log de estresse salvo no elemento a ser depurado.                     |
 | `histobj <arguments>`               | Exibe as realocações de log de estresse da coleta de lixo relacionadas ao `<arguments>` .              |
-| `histobjfind <arguments>`           | Exibe todas as entradas de log que fazem referência a um objeto no endereço especificado.               |
+| `histobjfind <arguments>`           | Exibe todas as entradas de log que fazem referência ao objeto no endereço especificado.              |
 | `histroot <arguments>`              | Exibe informações relacionadas a ambas as promoções e realocações da raiz especificada.        |
 | `lm|modules`                        | Exibe os módulos nativos no processo.                                                   |
-| `name2ee <arguments>`               | Exibe a estrutura de MethodTable e a estrutura EEClass para o `<argument>` .                |
-| `pe|printexception <arguments>`     | Exibe qualquer objeto derivado da classe de exceção no endereço `<argument>` .             |
+| `name2ee <arguments>`               | Exibe as `MethodTable` `EEClass` estruturas e para o `<argument>` .                     |
+| `pe|printexception <arguments>`     | Exibe qualquer objeto derivado da <xref:System.Exception> classe para o `<argument>` .      |
 | `setsymbolserver <arguments>`       | Habilita o suporte ao servidor de símbolos                                                             |
 | `syncblk <arguments>`               | Exibe as informações do SyncBlock de suporte.                                                           |
 | `threads|setthread <threadid>`      | Define ou exibe a ID de thread atual para os comandos SOS.                                  |
+
+> [!NOTE]
+> Detalhes adicionais podem ser encontrados na [extensão de depuração SOS para .net](sos-debugging-extension.md).
 
 ## <a name="using-dotnet-dump"></a>Usando `dotnet-dump`
 

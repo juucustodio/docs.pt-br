@@ -31,18 +31,18 @@ O NuGet torna fácil usar pacotes existentes ao criar uma biblioteca do .NET. Sa
 
 O Source Link é uma ótima ferramenta que permite aos usuários da biblioteca .NET intervir no código-fonte durante a depuração. Este artigo é uma visão geral do que é o Source Link e por que você deve usá-lo.
 
-### <a name="publishing"></a>[Publicação](./publish-nuget-package.md)
+### <a name="publishing"></a>[Publicando](./publish-nuget-package.md)
 
 Embora o NuGet.org seja o repositório mais amplamente conhecido e usado, há muitos locais para publicar pacotes do NuGet. Saiba mais sobre os diferentes repositórios de pacote do NuGet disponíveis e práticas recomendadas de segurança para a publicação de uma biblioteca do .NET.
 
-## <a name="versioning"></a>[Versão](./versioning.md)
+## <a name="versioning"></a>[Controle de versão](./versioning.md)
 
-Boas bibliotecas do .NET evoluem ao longo do tempo, adicionando recursos, corrigindo bugs e melhorando o desempenho em versões posteriores. Saiba mais sobre os vários números de versão e como comunicar alterações significativas para os desenvolvedores.
+Boas bibliotecas do .NET evoluem ao longo do tempo, adicionando recursos, corrigindo bugs e melhorando o desempenho em versões posteriores. Saiba mais sobre os vários números de versão e como comunicar alterações interruptivas para os desenvolvedores.
 
-### <a name="breaking-changes"></a>[Alterações de quebra](./breaking-changes.md)
+### <a name="breaking-changes"></a>[Alterações interruptivas](./breaking-changes.md)
 
-É importante que uma biblioteca .NET encontre um equilíbrio entre a estabilidade para usuários existentes e a inovação para o futuro. Saiba mais sobre os diferentes tipos de alterações da falha e estratégias para adição de novos recursos, ao mesmo tempo mantendo a compatibilidade com versões anteriores.
+É importante que uma biblioteca .NET encontre um equilíbrio entre a estabilidade para usuários existentes e a inovação para o futuro. Saiba mais sobre os diferentes tipos de alterações interruptivas e estratégias para adição de novos recursos, ao mesmo tempo mantendo a compatibilidade com versões anteriores.
 
 >[!div class="step-by-step"]
->[Próximo](index.md)
->[anterior](cross-platform-targeting.md)
+>[Anterior](index.md) 
+> [Avançar](cross-platform-targeting.md)

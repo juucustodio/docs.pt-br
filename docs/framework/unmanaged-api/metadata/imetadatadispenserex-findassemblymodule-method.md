@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataDispenserEx:: FindAssemblyModule'
 title: Método IMetaDataDispenserEx::FindAssemblyModule
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: d1fb65e1-7e19-4513-85b1-44f87c294d3e
 topic_type:
 - apiref
-ms.openlocfilehash: 64f1e2a8f05616c7ca84bc130428629b1176e985
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 39ea13a2d8f2436e86db513aaa33f990f43d8132
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84006175"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753569"
 ---
 # <a name="imetadatadispenserexfindassemblymodule-method"></a>Método IMetaDataDispenserEx::FindAssemblyModule
+
 Este método não está implementado. Se chamado, ele retornará E_NOTIMPL.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -41,6 +43,7 @@ HRESULT FindAssemblyModule(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `szAppBase`  
  no Não usado.  
   
@@ -66,15 +69,16 @@ HRESULT FindAssemblyModule(
  fora O número de caracteres realmente retornados em `szName` .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataforma:** Consulte [requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataDispenserEx](imetadatadispenserex-interface.md)
 - [Interface IMetaDataDispenser](imetadatadispenser-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método setassemblyfile'
 title: Método SetAssemblyFile
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3a912787-f139-43ca-a841-8bbda3107ecf
 topic_type:
 - apiref
-ms.openlocfilehash: 1db4c4ab7e47e223a492e08297ac3cedcb3a27eb
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 943e0600b9781aeaf45cc26e39bd8a8b33a783c2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74445597"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99662488"
 ---
 # <a name="setassemblyfile-method"></a>Método SetAssemblyFile
+
 Atribui o nome do assembly a ser compilado. Não para uso na produção de módulos não associados.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT SetAssemblyFile(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pszFilename`  
  Nome totalmente qualificado do arquivo de manifesto.  
   
@@ -49,9 +52,11 @@ HRESULT SetAssemblyFile(
  Ponteiro para a ID do assembly resultante.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  Retorna S_OK se o método tiver sucesso.  
   
-## <a name="requirements"></a>{1&gt;{2&gt;Requisitos&lt;2}&lt;1}  
+## <a name="requirements"></a>Requisitos  
+
  Requer ALink. h.  
   
 ## <a name="see-also"></a>Consulte também

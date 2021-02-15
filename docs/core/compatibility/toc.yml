@@ -1,54 +1,667 @@
-- name: O que são alterações da falha?
+- name: O que são alterações interruptivas?
   href: index.md
-- name: Compatibilidade
+- name: Tipos de compatibilidade
   href: categories.md
-- name: Seletores de página
-  href: breaking-changes.md
-- name: Por versão
+- name: Referência
   expanded: true
   items:
-    - name: 3.1 a 5.0
-      href: 3.1-5.0.md
-    - name: 3.0 a 3.1
-      href: 3.0-3.1.md
-    - name: 2.2 a 3.1
-      href: 2.2-3.1.md
-    - name: 2.2 a 3.0
-      href: 2.2-3.0.md
-    - name: 2.0 a 2.1
-      href: 2.0-2.1.md
-    - name: .NET Framework para .NET Core
+    - name: Visão geral
+      href: breaking-changes.md
+    - name: Do .NET Framework
       items:
         - name: Alterações da falha
           href: fx-core.md
         - name: Tecnologias indisponíveis
-          href: ../porting/net-framework-tech-unavailable.md?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+          href: ../porting/net-framework-tech-unavailable.md
         - name: APIs que sempre geram
           href: unsupported-apis.md
-- name: Por área de tecnologia
-  expanded: true
-  items:
-    - name: ASP.NET Core
-      href: aspnetcore.md
-    - name: Bibliotecas principais do .NET
-      href: corefx.md
-    - name: Criptografia
-      href: cryptography.md
-    - name: Entity Framework Core
-      href: /ef/core/what-is-new/ef-core-3.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
-    - name: Globalização
-      href: globalization.md
-    - name: Interoperabilidade
-      href: interop.md
-    - name: MSBuild
-      href: msbuild.md
-    - name: Rede
-      href: networking.md
-    - name: Serialização
-      href: serialization.md
-    - name: Visual Basic
-      href: visualbasic.md
-    - name: Windows Forms
-      href: winforms.md
-    - name: WPF
-      href: wpf.md
+    - name: Alterações interruptivas por versão
+      expanded: true
+      items:
+        - name: .NET 6.0
+          items:
+            - name: Visão geral
+              href: 6.0.md
+            - name: ASP.NET Core
+              items:
+                - name: 'Mais incrivelmente: nome de parâmetro alterado no método RequestImageFileAsync'
+                  href: aspnet-core/6.0/blazor-parameter-name-changed-in-method.md
+                - name: 'Kestrel: atributos de mensagem de log alterados'
+                  href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
+                - name: 'Middleware: o middleware de redirecionamento de HTTPS gera uma exceção em portas HTTPS ambíguas'
+                  href: aspnet-core/6.0/middleware-ambiguous-https-ports-exception.md
+                - name: 'Razor: APIs RazorEngine marcadas como obsoletas'
+                  href: aspnet-core/6.0/razor-engine-apis-obsolete.md
+            - name: Bibliotecas principais do .NET
+              items:
+                - name: Alterações de anotação de nulidade
+                  href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
+            - name: Windows Forms
+              items:
+                - name: APIs lançam ArgumentNullException
+                  href: windows-forms/6.0/apis-throw-argumentnullexception.md
+                - name: Tamanho máximo de texto aumentado para NotifyIcon.Text
+                  href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
+                - name: As propriedades TableLayoutSettings geram InvalidEnumArgumentException
+                  href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
+                - name: TreeNodecollection. Item gera uma exceção se o nó for atribuído em outro lugar
+                  href: windows-forms/6.0/treenodecollection-item-throws-argumentexception.md
+        - name: .NET 5.0
+          items:
+            - name: Visão geral
+              href: 5.0.md
+            - name: ASP.NET Core
+              items:
+                - name: Os aplicativos ASP.NET Core desserializam números entre aspas
+                  href: serialization/5.0/jsonserializer-allows-reading-numbers-as-strings.md
+                - name: APIs do AzureAD.UI e do AzureADB2C.UI obsoletas
+                  href: aspnet-core/5.0/authentication-aad-packages-obsolete.md
+                - name: Os métodos de serialização BinaryFormatter estão obsoletos
+                  href: core-libraries/5.0/binaryformatter-serialization-obsolete.md
+                - name: O recurso no roteamento de ponto de extremidade é HttpContext
+                  href: aspnet-core/5.0/authorization-resource-in-endpoint-routing.md
+                - name: Pacotes de integração do Azure prefixados com Microsoft removidos
+                  href: aspnet-core/5.0/azure-integration-packages-removed.md
+                - name: 'Blazor: Lógica de precedência de rota alterada em aplicativos Blazor'
+                  href: aspnet-core/5.0/blazor-routing-logic-changed.md
+                - name: 'Blazor: suporte a navegadores atualizado'
+                  href: aspnet-core/5.0/blazor-browser-support-updated.md
+                - name: 'Blazor: espaço em branco não significativo cortado pelo compilador'
+                  href: aspnet-core/5.0/blazor-components-trim-insignificant-whitespace.md
+                - name: 'Blazor: os tipos JSObjectReference e JSInProcessObjectReference são internos'
+                  href: aspnet-core/5.0/blazor-jsobjectreference-to-internal.md
+                - name: 'Blazor: estrutura de destino de pacotes NuGet alterada'
+                  href: aspnet-core/5.0/blazor-packages-target-framework-changed.md
+                - name: 'Blazor: o recurso ProtectedBrowserStorage foi movido para a estrutura compartilhada'
+                  href: aspnet-core/5.0/blazor-protectedbrowserstorage-moved.md
+                - name: 'Blazor: os campos públicos somente leitura RenderTreeFrame agora são propriedades'
+                  href: aspnet-core/5.0/blazor-rendertreeframe-fields-become-properties.md
+                - name: 'Blazor: lógica de validação atualizada para ativos da Web estáticos'
+                  href: aspnet-core/5.0/blazor-static-web-assets-validation-logic-updated.md
+                - name: APIs de criptografia sem suporte no navegador
+                  href: cryptography/5.0/cryptography-apis-not-supported-on-blazor-webassembly.md
+                - name: 'Extensões: alterações de referência de pacote'
+                  href: aspnet-core/5.0/extensions-package-reference-changes.md
+                - name: Os tipos Kestrel e IIS BadHttpRequestException estão obsoletos
+                  href: aspnet-core/5.0/http-badhttprequestexception-obsolete.md
+                - name: Instâncias de HttpClient criadas por códigos de status de inteiro de log IHttpClientFactory
+                  href: aspnet-core/5.0/http-httpclient-instances-log-integer-status-codes.md
+                - name: 'HttpSys: renegociação de certificado do cliente desabilitada por padrão'
+                  href: aspnet-core/5.0/httpsys-client-certificate-renegotiation-disabled-by-default.md
+                - name: 'IIS: as cadeias de caracteres de consulta de middleware UrlRewrite são preservadas'
+                  href: aspnet-core/5.0/iis-urlrewrite-middleware-query-strings-are-preserved.md
+                - name: 'Kestrel: alterações de configuração detectadas por padrão'
+                  href: aspnet-core/5.0/kestrel-configuration-changes-at-run-time-detected-by-default.md
+                - name: 'Kestrel: versões do protocolo TLS com suporte padrão alteradas'
+                  href: aspnet-core/5.0/kestrel-default-supported-tls-protocol-versions-changed.md
+                - name: 'Kestrel: HTTP/2 desabilitado via TLS em versões incompatíveis do Windows'
+                  href: aspnet-core/5.0/kestrel-disables-http2-over-tls.md
+                - name: 'Kestrel: transporte do Libuv marcado como obsoleto'
+                  href: aspnet-core/5.0/kestrel-libuv-transport-obsolete.md
+                - name: Propriedades obsoletas em ConsoleLoggerOptions
+                  href: core-libraries/5.0/obsolete-consoleloggeroptions-properties.md
+                - name: Classe ResourceManagerWithCultureStringLocalizer e membro de interface WithCulture removidos
+                  href: aspnet-core/5.0/localization-members-removed.md
+                - name: APIs do Pubternal removidas
+                  href: aspnet-core/5.0/localization-pubternal-apis-removed.md
+                - name: Construtor obsoleto removido no middleware de localização de solicitação
+                  href: aspnet-core/5.0/localization-requestlocalizationmiddleware-constructor-removed.md
+                - name: 'Middleware: página de erro do banco de dados marcada como obsoleta'
+                  href: aspnet-core/5.0/middleware-database-error-page-obsolete.md
+                - name: O middleware do manipulador de exceção gera uma exceção original
+                  href: aspnet-core/5.0/middleware-exception-handler-throws-original-exception.md
+                - name: ObjectModelValidator chama uma nova sobrecarga de Validate
+                  href: aspnet-core/5.0/mvc-objectmodelvalidator-calls-new-overload.md
+                - name: Codificação de nome de cookie removida
+                  href: aspnet-core/5.0/security-cookie-name-encoding-removed.md
+                - name: Versões de pacote NuGet IdentityModel atualizadas
+                  href: aspnet-core/5.0/security-identitymodel-nuget-package-versions-updated.md
+                - name: 'SignalR: tipo de opções de protocolo do hub MessagePack alterado'
+                  href: aspnet-core/5.0/signalr-messagepack-hub-protocol-options-changed.md
+                - name: 'SignalR: protocolo do hub MessagePack removido'
+                  href: aspnet-core/5.0/signalr-messagepack-package.md
+                - name: Métodos UseSignalR e UseConnections removidos
+                  href: aspnet-core/5.0/signalr-usesignalr-useconnections-removed.md
+                - name: Tipo de conteúdo CSV alterado para em conformidade com padrões
+                  href: aspnet-core/5.0/static-files-csv-content-type-changed.md
+            - name: Análise de código
+              items:
+                - name: Aviso CA1416
+                  href: code-analysis/5.0/ca1416-platform-compatibility-analyzer.md
+                - name: Aviso CA1417
+                  href: code-analysis/5.0/ca1417-outattributes-on-pinvoke-string-parameters.md
+                - name: Aviso CA1831
+                  href: code-analysis/5.0/ca1831-range-based-indexer-on-string.md
+                - name: Aviso CA2013
+                  href: code-analysis/5.0/ca2013-referenceequals-on-value-types.md
+                - name: Aviso CA2014
+                  href: code-analysis/5.0/ca2014-stackalloc-in-loops.md
+                - name: Aviso CA2015
+                  href: code-analysis/5.0/ca2015-finalizers-for-memorymanager-types.md
+                - name: Aviso CA2200
+                  href: code-analysis/5.0/ca2200-rethrow-to-preserve-stack-details.md
+                - name: Aviso CA2247
+                  href: code-analysis/5.0/ca2247-ctor-arg-should-be-taskcreationoptions.md
+            - name: Bibliotecas principais do .NET
+              items:
+                - name: Alterações de APIs relacionadas a assembly para publicação de arquivo único
+                  href: core-libraries/5.0/assembly-api-behavior-changes-for-single-file-publish.md
+                - name: Os métodos de serialização BinaryFormatter estão obsoletos
+                  href: core-libraries/5.0/binaryformatter-serialization-obsolete.md
+                - name: As APIs de segurança de acesso do código estão obsoletas
+                  href: core-libraries/5.0/code-access-security-apis-obsolete.md
+                - name: CreateCounterSetInstance gera InvalidOperationException
+                  href: core-libraries/5.0/createcountersetinstance-throws-invalidoperation.md
+                - name: O ActivityIdFormat padrão é W3C
+                  href: core-libraries/5.0/default-activityidformat-changed.md
+                - name: Environment.OSVersion retorna a versão correta
+                  href: core-libraries/5.0/environment-osversion-returns-correct-version.md
+                - name: 'O valor de FrameworkDescription é .NET, não .NET Core'
+                  href: core-libraries/5.0/frameworkdescription-returns-net-not-net-core.md
+                - name: As APIs do GAC estão obsoletas
+                  href: core-libraries/5.0/global-assembly-cache-apis-obsolete.md
+                - name: Verificações de IsSupported de intrínsecos de hardware
+                  href: core-libraries/5.0/hardware-instrinsics-issupported-checks.md
+                - name: IntPtr e UIntPtr implementam IFormattable
+                  href: core-libraries/5.0/intptr-uintptr-implement-iformattable.md
+                - name: LastIndexOf lida com cadeias de caracteres de pesquisa vazias
+                  href: core-libraries/5.0/lastindexof-improved-handling-of-empty-values.md
+                - name: Caminhos de URI com caracteres não ASCII no UNIX
+                  href: core-libraries/5.0/non-ascii-chars-in-uri-parsed-correctly.md
+                - name: Obsolescências de API com IDs de diagnóstico não padrão
+                  href: core-libraries/5.0/obsolete-apis-with-custom-diagnostics.md
+                - name: Propriedades obsoletas em ConsoleLoggerOptions
+                  href: core-libraries/5.0/obsolete-consoleloggeroptions-properties.md
+                - name: Complexidade de OrderBy.First da LINQ
+                  href: core-libraries/5.0/orderby-firstordefault-complexity-increase.md
+                - name: Atributos OSPlatform renomeados ou removidos
+                  href: core-libraries/5.0/os-platform-attributes-renamed.md
+                - name: Pacote Microsoft.DotNet.PlatformAbstractions removido
+                  href: core-libraries/5.0/platformabstractions-package-removed.md
+                - name: PrincipalPermissionAttribute está obsoleto
+                  href: core-libraries/5.0/principalpermissionattribute-obsolete.md
+                - name: Alterações de nome de parâmetro de versões prévias
+                  href: core-libraries/5.0/reference-assembly-parameter-names-rc1.md
+                - name: Alterações de nome de parâmetro em assemblies de referência
+                  href: core-libraries/5.0/reference-assembly-parameter-names.md
+                - name: As APIs de comunicação remota estão obsoletas
+                  href: core-libraries/5.0/remoting-apis-obsolete.md
+                - name: A ordem da lista de Activity.Tags está invertida
+                  href: core-libraries/5.0/reverse-order-of-tags-in-activity-property.md
+                - name: Os métodos de comparação SSE e SSE2 manipulam NaN
+                  href: core-libraries/5.0/sse-comparegreaterthan-intrinsics.md
+                - name: Thread.Abort está obsoleto
+                  href: core-libraries/5.0/thread-abort-obsolete.md
+                - name: Reconhecimento de URI de caminhos UNC no UNIX
+                  href: core-libraries/5.0/unc-path-recognition-unix.md
+                - name: Os caminhos do código UTF-7 estão obsoletos
+                  href: core-libraries/5.0/utf-7-code-paths-obsolete.md
+                - name: Alteração de comportamento para Vector2.Lerp e Vector4.Lerp
+                  href: core-libraries/5.0/vector-lerp-behavior-change.md
+                - name: Vector<T> gera NotSupportedException
+                  href: core-libraries/5.0/vectort-throws-notsupportedexception.md
+            - name: Criptografia
+              items:
+                - name: APIs de criptografia sem suporte no navegador
+                  href: cryptography/5.0/cryptography-apis-not-supported-on-blazor-webassembly.md
+                - name: Cryptography.OID é somente inicialização
+                  href: cryptography/5.0/cryptography-oid-init-only.md
+                - name: Conjuntos de criptografia TLS padrão no Linux
+                  href: cryptography/5.0/default-cipher-suites-for-tls-on-linux.md
+                - name: As sobrecargas Create() em abstrações criptográficas estão obsoletas
+                  href: cryptography/5.0/instantiating-default-implementations-of-cryptographic-abstractions-not-supported.md
+                - name: Valor de FeedbackSize padrão alterado
+                  href: cryptography/5.0/tripledes-default-feedback-size-change.md
+            - name: Entity Framework Core
+              href: /ef/core/what-is-new/ef-core-5.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+            - name: Globalização
+              items:
+                - name: Usar bibliotecas ICU no Windows
+                  href: globalization/5.0/icu-globalization-api.md
+                - name: StringInfo e TextElementEnumerator são compatíveis com UAX29
+                  href: globalization/5.0/uax29-compliant-grapheme-enumeration.md
+                - name: Categoria Unicode alterada para caracteres Latin-1
+                  href: globalization/5.0/unicode-categories-for-latin1-chars.md
+                - name: Valores de ListSeparator alterados
+                  href: globalization/5.0/listseparator-value-change.md
+            - name: Interoperabilidade
+              items:
+                - name: O suporte para WinRT foi removido
+                  href: interop/5.0/built-in-support-for-winrt-removed.md
+                - name: A conversão de RCW em InterfaceIsIInspectable gera exceção
+                  href: interop/5.0/casting-rcw-to-inspectable-interface-throws-exception.md
+                - name: Nenhuma investigação de sufixo A/W em plataformas não Windows
+                  href: interop/5.0/function-suffix-pinvoke.md
+            - name: MSBuild
+              items:
+                - name: Arquivos Directory.Packages.prop importados por padrão
+                  href: msbuild/5.0/directory-packages-props-imported-by-default.md
+                - name: Símbolo de pré-processador de NETCOREAPP3_1 não definido
+                  href: msbuild/5.0/netcoreapp3_1-preprocessor-symbol-not-defined.md
+                - name: Alteração de comportamento de PublishDepsFilePath
+                  href: msbuild/5.0/publishdepsfilepath-behavior-change.md
+                - name: Alteração de TargetFramework de netcoreapp para net
+                  href: msbuild/5.0/targetframework-name-change.md
+            - name: Rede
+              items:
+                - name: A manipulação de caminho de cookie está em conformidade com a RFC 6265
+                  href: networking/5.0/cookie-path-conforms-to-rfc6265.md
+                - name: LocalEndPoint é atualizado após chamar SendToAsync
+                  href: networking/5.0/localendpoint-updated-on-sendtoasync.md
+                - name: MulticastOption.Group não aceita nulo
+                  href: networking/5.0/multicastoption-group-doesnt-accept-null.md
+                - name: Fluxos permitem operações Begin sucessivas
+                  href: networking/5.0/negotiatestream-sslstream-dont-fail-on-successive-begin-calls.md
+                - name: WinHttpHandler removido do runtime do .NET
+                  href: networking/5.0/winhttphandler-removed-from-runtime.md
+            - name: Segurança
+              items:
+                - name: As APIs de segurança de acesso do código estão obsoletas
+                  href: core-libraries/5.0/code-access-security-apis-obsolete.md
+                - name: PrincipalPermissionAttribute está obsoleto
+                  href: core-libraries/5.0/principalpermissionattribute-obsolete.md
+                - name: Os caminhos do código UTF-7 estão obsoletos
+                  href: core-libraries/5.0/utf-7-code-paths-obsolete.md
+            - name: Serialização
+              items:
+                - name: BinaryFormatter.Deserialize reencapsula exceções
+                  href: serialization/5.0/binaryformatter-deserialize-rewraps-exceptions.md
+                - name: JsonSerializer.Desserialize requer cadeia de caracteres de caractere único
+                  href: serialization/5.0/deserializing-json-into-char-requires-single-character.md
+                - name: Os aplicativos ASP.NET Core desserializam números entre aspas
+                  href: serialization/5.0/jsonserializer-allows-reading-numbers-as-strings.md
+                - name: JsonSerializer.Serialize gera ArgumentNullException
+                  href: serialization/5.0/jsonserializer-serialize-throws-argumentnullexception-for-null-type.md
+                - name: Construtores não públicos sem parâmetros não usados para desserialização
+                  href: serialization/5.0/non-public-parameterless-constructors-not-used-for-deserialization.md
+                - name: As opções são respeitadas ao serializar pares chave-valor
+                  href: serialization/5.0/options-honored-when-serializing-key-value-pairs.md
+            - name: Windows Forms
+              items:
+                - name: O código nativo não pode acessar objetos Windows Forms
+                  href: windows-forms/5.0/winforms-objects-not-accessible-from-native-code.md
+                - name: OutputType definido como WinExe
+                  href: windows-forms/5.0/automatically-infer-winexe-output-type.md
+                - name: DataGridView não redefine fontes personalizadas
+                  href: windows-forms/5.0/datagridview-doesnt-reset-custom-font-settings.md
+                - name: Os métodos geram ArgumentException
+                  href: windows-forms/5.0/invalid-args-cause-argumentexception.md
+                - name: Os métodos geram ArgumentNullException
+                  href: windows-forms/5.0/null-args-cause-argumentnullexception.md
+                - name: As propriedades geram ArgumentOutOfRangeException
+                  href: windows-forms/5.0/invalid-args-cause-argumentoutofrangeexception.md
+                - name: TextFormatFlags.ModifyString está obsoleto
+                  href: windows-forms/5.0/modifystring-field-of-textformatflags-obsolete.md
+                - name: As APIs do DataGridView geram InvalidOperationException
+                  href: windows-forms/5.0/null-owner-causes-invalidoperationexception.md
+                - name: Os aplicativos WinForms usam Microsoft.NET.Sdk
+                  href: windows-forms/5.0/sdk-and-target-framework-change.md
+                - name: Controles de barra de status removidos
+                  href: windows-forms/5.0/winforms-deprecated-controls.md
+            - name: WPF
+              items:
+                - name: OutputType definido como WinExe
+                  href: windows-forms/5.0/automatically-infer-winexe-output-type.md
+                - name: Aplicativos WPF usam Microsoft.NET.Sdk
+                  href: windows-forms/5.0/sdk-and-target-framework-change.md
+        - name: .NET Core 3.1
+          href: 3.1.md
+        - name: .NET Core 3.0
+          href: 3.0.md
+        - name: .NET Core 2.1
+          href: 2.1.md
+    - name: Alterações interruptivas por área
+      items:
+        - name: ASP.NET Core
+          items:
+            - name: .NET 6.0
+              items:
+                - name: 'Mais incrivelmente: nome de parâmetro alterado no método RequestImageFileAsync'
+                  href: aspnet-core/6.0/blazor-parameter-name-changed-in-method.md
+                - name: 'Kestrel: atributos de mensagem de log alterados'
+                  href: aspnet-core/6.0/kestrel-log-message-attributes-changed.md
+                - name: 'Middleware: o middleware de redirecionamento de HTTPS gera uma exceção em portas HTTPS ambíguas'
+                  href: aspnet-core/6.0/middleware-ambiguous-https-ports-exception.md
+                - name: 'Razor: APIs RazorEngine marcadas como obsoletas'
+                  href: aspnet-core/6.0/razor-engine-apis-obsolete.md
+            - name: .NET 5.0
+              items:
+                - name: Os aplicativos ASP.NET Core desserializam números entre aspas
+                  href: serialization/5.0/jsonserializer-allows-reading-numbers-as-strings.md
+                - name: APIs do AzureAD.UI e do AzureADB2C.UI obsoletas
+                  href: aspnet-core/5.0/authentication-aad-packages-obsolete.md
+                - name: Os métodos de serialização BinaryFormatter estão obsoletos
+                  href: core-libraries/5.0/binaryformatter-serialization-obsolete.md
+                - name: O recurso no roteamento de ponto de extremidade é HttpContext
+                  href: aspnet-core/5.0/authorization-resource-in-endpoint-routing.md
+                - name: Pacotes de integração do Azure prefixados com Microsoft removidos
+                  href: aspnet-core/5.0/azure-integration-packages-removed.md
+                - name: 'Blazor: Lógica de precedência de rota alterada em aplicativos Blazor'
+                  href: aspnet-core/5.0/blazor-routing-logic-changed.md
+                - name: 'Blazor: suporte a navegadores atualizado'
+                  href: aspnet-core/5.0/blazor-browser-support-updated.md
+                - name: 'Blazor: espaço em branco não significativo cortado pelo compilador'
+                  href: aspnet-core/5.0/blazor-components-trim-insignificant-whitespace.md
+                - name: 'Blazor: os tipos JSObjectReference e JSInProcessObjectReference são internos'
+                  href: aspnet-core/5.0/blazor-jsobjectreference-to-internal.md
+                - name: 'Blazor: estrutura de destino de pacotes NuGet alterada'
+                  href: aspnet-core/5.0/blazor-packages-target-framework-changed.md
+                - name: 'Blazor: o recurso ProtectedBrowserStorage foi movido para a estrutura compartilhada'
+                  href: aspnet-core/5.0/blazor-protectedbrowserstorage-moved.md
+                - name: 'Blazor: os campos públicos somente leitura RenderTreeFrame agora são propriedades'
+                  href: aspnet-core/5.0/blazor-rendertreeframe-fields-become-properties.md
+                - name: 'Blazor: lógica de validação atualizada para ativos da Web estáticos'
+                  href: aspnet-core/5.0/blazor-static-web-assets-validation-logic-updated.md
+                - name: APIs de criptografia sem suporte no navegador
+                  href: cryptography/5.0/cryptography-apis-not-supported-on-blazor-webassembly.md
+                - name: 'Extensões: alterações de referência de pacote'
+                  href: aspnet-core/5.0/extensions-package-reference-changes.md
+                - name: Os tipos Kestrel e IIS BadHttpRequestException estão obsoletos
+                  href: aspnet-core/5.0/http-badhttprequestexception-obsolete.md
+                - name: Instâncias de HttpClient criadas por códigos de status de inteiro de log IHttpClientFactory
+                  href: aspnet-core/5.0/http-httpclient-instances-log-integer-status-codes.md
+                - name: 'HttpSys: renegociação de certificado do cliente desabilitada por padrão'
+                  href: aspnet-core/5.0/httpsys-client-certificate-renegotiation-disabled-by-default.md
+                - name: 'IIS: as cadeias de caracteres de consulta de middleware UrlRewrite são preservadas'
+                  href: aspnet-core/5.0/iis-urlrewrite-middleware-query-strings-are-preserved.md
+                - name: 'Kestrel: alterações de configuração detectadas por padrão'
+                  href: aspnet-core/5.0/kestrel-configuration-changes-at-run-time-detected-by-default.md
+                - name: 'Kestrel: versões do protocolo TLS com suporte padrão alteradas'
+                  href: aspnet-core/5.0/kestrel-default-supported-tls-protocol-versions-changed.md
+                - name: 'Kestrel: HTTP/2 desabilitado via TLS em versões incompatíveis do Windows'
+                  href: aspnet-core/5.0/kestrel-disables-http2-over-tls.md
+                - name: 'Kestrel: transporte do Libuv marcado como obsoleto'
+                  href: aspnet-core/5.0/kestrel-libuv-transport-obsolete.md
+                - name: Propriedades obsoletas em ConsoleLoggerOptions
+                  href: core-libraries/5.0/obsolete-consoleloggeroptions-properties.md
+                - name: Classe ResourceManagerWithCultureStringLocalizer e membro de interface WithCulture removidos
+                  href: aspnet-core/5.0/localization-members-removed.md
+                - name: APIs do Pubternal removidas
+                  href: aspnet-core/5.0/localization-pubternal-apis-removed.md
+                - name: Construtor obsoleto removido no middleware de localização de solicitação
+                  href: aspnet-core/5.0/localization-requestlocalizationmiddleware-constructor-removed.md
+                - name: 'Middleware: página de erro do banco de dados marcada como obsoleta'
+                  href: aspnet-core/5.0/middleware-database-error-page-obsolete.md
+                - name: O middleware do manipulador de exceção gera uma exceção original
+                  href: aspnet-core/5.0/middleware-exception-handler-throws-original-exception.md
+                - name: ObjectModelValidator chama uma nova sobrecarga de Validate
+                  href: aspnet-core/5.0/mvc-objectmodelvalidator-calls-new-overload.md
+                - name: Codificação de nome de cookie removida
+                  href: aspnet-core/5.0/security-cookie-name-encoding-removed.md
+                - name: Versões de pacote NuGet IdentityModel atualizadas
+                  href: aspnet-core/5.0/security-identitymodel-nuget-package-versions-updated.md
+                - name: 'SignalR: tipo de opções de protocolo do hub MessagePack alterado'
+                  href: aspnet-core/5.0/signalr-messagepack-hub-protocol-options-changed.md
+                - name: 'SignalR: protocolo do hub MessagePack removido'
+                  href: aspnet-core/5.0/signalr-messagepack-package.md
+                - name: Métodos UseSignalR e UseConnections removidos
+                  href: aspnet-core/5.0/signalr-usesignalr-useconnections-removed.md
+                - name: Tipo de conteúdo CSV alterado para em conformidade com padrões
+                  href: aspnet-core/5.0/static-files-csv-content-type-changed.md
+            - name: .NET Core 3.0-3.1
+              href: aspnetcore.md
+        - name: Análise de código
+          items:
+            - name: .NET 5.0
+              items:
+                - name: Aviso CA1416
+                  href: code-analysis/5.0/ca1416-platform-compatibility-analyzer.md
+                - name: Aviso CA1417
+                  href: code-analysis/5.0/ca1417-outattributes-on-pinvoke-string-parameters.md
+                - name: Aviso CA1831
+                  href: code-analysis/5.0/ca1831-range-based-indexer-on-string.md
+                - name: Aviso CA2013
+                  href: code-analysis/5.0/ca2013-referenceequals-on-value-types.md
+                - name: Aviso CA2014
+                  href: code-analysis/5.0/ca2014-stackalloc-in-loops.md
+                - name: Aviso CA2015
+                  href: code-analysis/5.0/ca2015-finalizers-for-memorymanager-types.md
+                - name: Aviso CA2200
+                  href: code-analysis/5.0/ca2200-rethrow-to-preserve-stack-details.md
+                - name: Aviso CA2247
+                  href: code-analysis/5.0/ca2247-ctor-arg-should-be-taskcreationoptions.md
+        - name: Bibliotecas principais do .NET
+          items:
+            - name: .NET 6.0
+              items:
+                - name: Alterações de anotação de nulidade
+                  href: core-libraries/6.0/nullable-ref-type-annotation-changes.md
+            - name: .NET 5.0
+              items:
+                - name: Alterações de APIs relacionadas a assembly para publicação de arquivo único
+                  href: core-libraries/5.0/assembly-api-behavior-changes-for-single-file-publish.md
+                - name: Os métodos de serialização BinaryFormatter estão obsoletos
+                  href: core-libraries/5.0/binaryformatter-serialization-obsolete.md
+                - name: As APIs de segurança de acesso do código estão obsoletas
+                  href: core-libraries/5.0/code-access-security-apis-obsolete.md
+                - name: CreateCounterSetInstance gera InvalidOperationException
+                  href: core-libraries/5.0/createcountersetinstance-throws-invalidoperation.md
+                - name: O ActivityIdFormat padrão é W3C
+                  href: core-libraries/5.0/default-activityidformat-changed.md
+                - name: Environment.OSVersion retorna a versão correta
+                  href: core-libraries/5.0/environment-osversion-returns-correct-version.md
+                - name: 'O valor de FrameworkDescription é .NET, não .NET Core'
+                  href: core-libraries/5.0/frameworkdescription-returns-net-not-net-core.md
+                - name: As APIs do GAC estão obsoletas
+                  href: core-libraries/5.0/global-assembly-cache-apis-obsolete.md
+                - name: Verificações de IsSupported de intrínsecos de hardware
+                  href: core-libraries/5.0/hardware-instrinsics-issupported-checks.md
+                - name: IntPtr e UIntPtr implementam IFormattable
+                  href: core-libraries/5.0/intptr-uintptr-implement-iformattable.md
+                - name: LastIndexOf lida com cadeias de caracteres de pesquisa vazias
+                  href: core-libraries/5.0/lastindexof-improved-handling-of-empty-values.md
+                - name: Caminhos de URI com caracteres não ASCII no UNIX
+                  href: core-libraries/5.0/non-ascii-chars-in-uri-parsed-correctly.md
+                - name: Obsolescências de API com IDs de diagnóstico não padrão
+                  href: core-libraries/5.0/obsolete-apis-with-custom-diagnostics.md
+                - name: Propriedades obsoletas em ConsoleLoggerOptions
+                  href: core-libraries/5.0/obsolete-consoleloggeroptions-properties.md
+                - name: Complexidade de OrderBy.First da LINQ
+                  href: core-libraries/5.0/orderby-firstordefault-complexity-increase.md
+                - name: Atributos OSPlatform renomeados ou removidos
+                  href: core-libraries/5.0/os-platform-attributes-renamed.md
+                - name: Pacote Microsoft.DotNet.PlatformAbstractions removido
+                  href: core-libraries/5.0/platformabstractions-package-removed.md
+                - name: PrincipalPermissionAttribute está obsoleto
+                  href: core-libraries/5.0/principalpermissionattribute-obsolete.md
+                - name: Alterações de nome de parâmetro de versões prévias
+                  href: core-libraries/5.0/reference-assembly-parameter-names-rc1.md
+                - name: Alterações de nome de parâmetro em assemblies de referência
+                  href: core-libraries/5.0/reference-assembly-parameter-names.md
+                - name: As APIs de comunicação remota estão obsoletas
+                  href: core-libraries/5.0/remoting-apis-obsolete.md
+                - name: A ordem da lista de Activity.Tags está invertida
+                  href: core-libraries/5.0/reverse-order-of-tags-in-activity-property.md
+                - name: Os métodos de comparação SSE e SSE2 manipulam NaN
+                  href: core-libraries/5.0/sse-comparegreaterthan-intrinsics.md
+                - name: Thread.Abort está obsoleto
+                  href: core-libraries/5.0/thread-abort-obsolete.md
+                - name: Reconhecimento de URI de caminhos UNC no UNIX
+                  href: core-libraries/5.0/unc-path-recognition-unix.md
+                - name: Os caminhos do código UTF-7 estão obsoletos
+                  href: core-libraries/5.0/utf-7-code-paths-obsolete.md
+                - name: Alteração de comportamento para Vector2.Lerp e Vector4.Lerp
+                  href: core-libraries/5.0/vector-lerp-behavior-change.md
+                - name: Vector<T> gera NotSupportedException
+                  href: core-libraries/5.0/vectort-throws-notsupportedexception.md
+            - name: .NET 1.0-3.1
+              href: corefx.md
+        - name: Criptografia
+          items:
+            - name: .NET 5.0
+              items:
+                - name: APIs de criptografia sem suporte no navegador
+                  href: cryptography/5.0/cryptography-apis-not-supported-on-blazor-webassembly.md
+                - name: Cryptography.OID é somente inicialização
+                  href: cryptography/5.0/cryptography-oid-init-only.md
+                - name: Conjuntos de criptografia TLS padrão no Linux
+                  href: cryptography/5.0/default-cipher-suites-for-tls-on-linux.md
+                - name: As sobrecargas Create() em abstrações criptográficas estão obsoletas
+                  href: cryptography/5.0/instantiating-default-implementations-of-cryptographic-abstractions-not-supported.md
+                - name: Valor de FeedbackSize padrão alterado
+                  href: cryptography/5.0/tripledes-default-feedback-size-change.md
+            - name: .NET Core 2.1-3.0
+              href: cryptography.md
+        - name: Entity Framework Core
+          items:
+            - name: EF Core 5.0
+              href: /ef/core/what-is-new/ef-core-5.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+            - name: EF Core 3.1
+              href: /ef/core/what-is-new/ef-core-3.x/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+        - name: Globalização
+          items:
+            - name: .NET 5.0
+              items:
+                - name: Usar bibliotecas ICU no Windows
+                  href: globalization/5.0/icu-globalization-api.md
+                - name: StringInfo e TextElementEnumerator são compatíveis com UAX29
+                  href: globalization/5.0/uax29-compliant-grapheme-enumeration.md
+                - name: Categoria Unicode alterada para caracteres Latin-1
+                  href: globalization/5.0/unicode-categories-for-latin1-chars.md
+                - name: Valores de ListSeparator alterados
+                  href: globalization/5.0/listseparator-value-change.md
+            - name: .NET 3.0
+              href: globalization.md
+        - name: Interoperabilidade
+          items:
+            - name: .NET 3.0
+              items:
+                - name: O suporte para WinRT foi removido
+                  href: interop/5.0/built-in-support-for-winrt-removed.md
+                - name: A conversão de RCW em InterfaceIsIInspectable gera exceção
+                  href: interop/5.0/casting-rcw-to-inspectable-interface-throws-exception.md
+                - name: Nenhuma investigação de sufixo A/W em plataformas não Windows
+                  href: interop/5.0/function-suffix-pinvoke.md
+        - name: MSBuild
+          items:
+            - name: .NET 5.0
+              items:
+                - name: Arquivos Directory.Packages.prop importados por padrão
+                  href: msbuild/5.0/directory-packages-props-imported-by-default.md
+                - name: Símbolo de pré-processador de NETCOREAPP3_1 não definido
+                  href: msbuild/5.0/netcoreapp3_1-preprocessor-symbol-not-defined.md
+                - name: Alteração de comportamento de PublishDepsFilePath
+                  href: msbuild/5.0/publishdepsfilepath-behavior-change.md
+                - name: Alteração de TargetFramework de netcoreapp para net
+                  href: msbuild/5.0/targetframework-name-change.md
+            - name: .NET 3.0
+              href: msbuild.md
+        - name: Rede
+          items:
+            - name: .NET 5.0
+              items:
+                - name: A manipulação de caminho de cookie está em conformidade com a RFC 6265
+                  href: networking/5.0/cookie-path-conforms-to-rfc6265.md
+                - name: LocalEndPoint é atualizado após chamar SendToAsync
+                  href: networking/5.0/localendpoint-updated-on-sendtoasync.md
+                - name: MulticastOption.Group não aceita nulo
+                  href: networking/5.0/multicastoption-group-doesnt-accept-null.md
+                - name: Fluxos permitem operações Begin sucessivas
+                  href: networking/5.0/negotiatestream-sslstream-dont-fail-on-successive-begin-calls.md
+                - name: WinHttpHandler removido do runtime do .NET
+                  href: networking/5.0/winhttphandler-removed-from-runtime.md
+            - name: .NET 2.0-3.0
+              href: networking.md
+        - name: Segurança
+          items:
+            - name: .NET 5.0
+              items:
+                - name: As APIs de segurança de acesso do código estão obsoletas
+                  href: core-libraries/5.0/code-access-security-apis-obsolete.md
+                - name: PrincipalPermissionAttribute está obsoleto
+                  href: core-libraries/5.0/principalpermissionattribute-obsolete.md
+                - name: Os caminhos do código UTF-7 estão obsoletos
+                  href: core-libraries/5.0/utf-7-code-paths-obsolete.md
+        - name: Serialização
+          items:
+            - name: .NET 5.0
+              items:
+                - name: BinaryFormatter.Deserialize reencapsula exceções
+                  href: serialization/5.0/binaryformatter-deserialize-rewraps-exceptions.md
+                - name: JsonSerializer.Desserialize requer cadeia de caracteres de caractere único
+                  href: serialization/5.0/deserializing-json-into-char-requires-single-character.md
+                - name: Os aplicativos ASP.NET Core desserializam números entre aspas
+                  href: serialization/5.0/jsonserializer-allows-reading-numbers-as-strings.md
+                - name: JsonSerializer.Serialize gera ArgumentNullException
+                  href: serialization/5.0/jsonserializer-serialize-throws-argumentnullexception-for-null-type.md
+                - name: Construtores não públicos sem parâmetros não usados para desserialização
+                  href: serialization/5.0/non-public-parameterless-constructors-not-used-for-deserialization.md
+                - name: As opções são respeitadas ao serializar pares chave-valor
+                  href: serialization/5.0/options-honored-when-serializing-key-value-pairs.md
+        - name: Visual Basic
+          items:
+            - name: .NET Core 3.0
+              href: visualbasic.md
+        - name: Windows Forms
+          items:
+            - name: .NET 6.0
+              items:
+                - name: APIs lançam ArgumentNullException
+                  href: windows-forms/6.0/apis-throw-argumentnullexception.md
+                - name: Tamanho máximo de texto aumentado para NotifyIcon.Text
+                  href: windows-forms/6.0/notifyicon-text-max-text-length-increased.md
+                - name: As propriedades TableLayoutSettings geram InvalidEnumArgumentException
+                  href: windows-forms/6.0/tablelayoutsettings-apis-throw-invalidenumargumentexception.md
+                - name: TreeNodecollection. Item gera uma exceção se o nó for atribuído em outro lugar
+                  href: windows-forms/6.0/treenodecollection-item-throws-argumentexception.md
+            - name: .NET 5.0
+              items:
+                - name: O código nativo não pode acessar objetos Windows Forms
+                  href: windows-forms/5.0/winforms-objects-not-accessible-from-native-code.md
+                - name: OutputType definido como WinExe
+                  href: windows-forms/5.0/automatically-infer-winexe-output-type.md
+                - name: DataGridView não redefine fontes personalizadas
+                  href: windows-forms/5.0/datagridview-doesnt-reset-custom-font-settings.md
+                - name: Os métodos geram ArgumentException
+                  href: windows-forms/5.0/invalid-args-cause-argumentexception.md
+                - name: Os métodos geram ArgumentNullException
+                  href: windows-forms/5.0/null-args-cause-argumentnullexception.md
+                - name: As propriedades geram ArgumentOutOfRangeException
+                  href: windows-forms/5.0/invalid-args-cause-argumentoutofrangeexception.md
+                - name: TextFormatFlags.ModifyString está obsoleto
+                  href: windows-forms/5.0/modifystring-field-of-textformatflags-obsolete.md
+                - name: As APIs do DataGridView geram InvalidOperationException
+                  href: windows-forms/5.0/null-owner-causes-invalidoperationexception.md
+                - name: Os aplicativos WinForms usam Microsoft.NET.Sdk
+                  href: windows-forms/5.0/sdk-and-target-framework-change.md
+                - name: Controles de barra de status removidos
+                  href: windows-forms/5.0/winforms-deprecated-controls.md
+            - name: .NET Core 3.0-3.1
+              href: winforms.md
+        - name: WPF
+          items:
+            - name: .NET 5.0
+              items:
+                - name: OutputType definido como WinExe
+                  href: windows-forms/5.0/automatically-infer-winexe-output-type.md
+                - name: Aplicativos WPF usam Microsoft.NET.Sdk
+                  href: windows-forms/5.0/sdk-and-target-framework-change.md
+    - name: Avisos do SYSLIB
+      items:
+        - name: Visão geral
+          displayName: 'syslib, obsolete, obsoletion'
+          href: syslib-obsoletions.md
+        - name: SYSLIB0001
+          href: syslib-warnings/syslib0001.md
+        - name: SYSLIB0002
+          href: syslib-warnings/syslib0002.md
+        - name: SYSLIB0003
+          href: syslib-warnings/syslib0003.md
+        - name: SYSLIB0004
+          href: syslib-warnings/syslib0004.md
+        - name: SYSLIB0005
+          href: syslib-warnings/syslib0005.md
+        - name: SYSLIB0006
+          href: syslib-warnings/syslib0006.md
+        - name: SYSLIB0007
+          href: syslib-warnings/syslib0007.md
+        - name: SYSLIB0008
+          href: syslib-warnings/syslib0008.md
+        - name: SYSLIB0009
+          href: syslib-warnings/syslib0009.md
+        - name: SYSLIB0010
+          href: syslib-warnings/syslib0010.md
+        - name: SYSLIB0011
+          href: syslib-warnings/syslib0011.md
+        - name: SYSLIB0012
+          href: syslib-warnings/syslib0012.md

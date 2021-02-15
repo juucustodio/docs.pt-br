@@ -4,12 +4,12 @@ description: Como lidar com problemas de notarization e certificado com o macOS 
 author: adegeo
 ms.author: adegeo
 ms.date: 02/14/2020
-ms.openlocfilehash: a7741727ad46216ebd9936515d8af29b6d7049c2
-ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
+ms.openlocfilehash: 616f163856cca48ccc6d1a14e0c6e68d56379c0c
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88656521"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90538296"
 ---
 # <a name="macos-catalina-notarization-and-the-impact-on-net-core-downloads-and-projects"></a>macOS Catalina notarization e o impacto sobre os downloads e projetos do .NET Core
 
@@ -17,7 +17,7 @@ A partir do macOS Catalina (versão 10,15), todo software criado após 1º de ju
 
 ## <a name="installing-net-core"></a>Instalando o .NET Core
 
-Os instaladores do .NET Core (Runtime e SDK) versões 3,1, 3,0 e 2,1, foram notarizeddos desde 18 de fevereiro de 2020. Versões anteriores liberadas não são notarized. Você pode instalar manualmente uma versão não notarized do .NET Core baixando primeiro o instalador e, em seguida, usando o `sudo installer` comando. Para obter mais informações, consulte [baixar e instalar manualmente para o MacOS](sdk.md?pivots=os-macos#download-and-manually-install).
+Os instaladores do .NET Core (Runtime e SDK) versões 3,1, 3,0 e 2,1, foram notarizeddos desde 18 de fevereiro de 2020. Versões anteriores liberadas não são notarized. Você pode instalar manualmente uma versão não notarized do .NET Core baixando primeiro o instalador e, em seguida, usando o `sudo installer` comando. Para obter mais informações, consulte [baixar e instalar manualmente para o MacOS](./macos.md#download-and-manually-install).
 
 A partir das seguintes versões, os instaladores do .NET Core são notarized:
 

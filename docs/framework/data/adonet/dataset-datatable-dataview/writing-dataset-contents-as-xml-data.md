@@ -1,23 +1,25 @@
 ---
+description: 'Saiba mais sobre: gravando conteúdo do conjunto de dados como XML'
 title: Gravando o conteúdo do DataSet como dados XML
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: fd15f8a5-3b4c-46d0-a561-4559ab2a4705
-ms.openlocfilehash: 9a63e79b2fce137ba9d21db861850a471cb42b9f
-ms.sourcegitcommit: 8a0fe8a2227af612f8b8941bdb8b19d6268748e7
+ms.openlocfilehash: 0ad232f744f69f822d09c0af6c4374b6e5f0147d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71833962"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651360"
 ---
 # <a name="writing-dataset-contents-as-xml-data"></a>Gravando o conteúdo do DataSet como dados XML
+
 No ADO.NET, você pode gravar a representação XML de um <xref:System.Data.DataSet>, com ou sem seu esquema. Se as informações de esquema forem embutidas no XML embutido, elas serão gravadas através da linguagem de definição de esquema XML (XSD). O esquema contém as definições de tabela do <xref:System.Data.DataSet>, bem como as definições de relação e de restrição.  
   
  Quando um <xref:System.Data.DataSet> é gravado como dados XML, as linhas do <xref:System.Data.DataSet> são gravadas nas suas versões atuais. No entanto, o <xref:System.Data.DataSet> também pode ser gravado como um DiffGram de modo que os valores atuais e originais das linhas sejam incluídos.  
   
- A representação XML do <xref:System.Data.DataSet> pode ser gravada em um arquivo, um fluxo, um **XmlWriter**ou uma cadeia de caracteres. Essas opções proporcionam excelente flexibilidade para o transporte da representação XML do <xref:System.Data.DataSet>. Para obter a representação XML do <xref:System.Data.DataSet> como uma cadeia de caracteres, use o método **GetXml** , conforme mostrado no exemplo a seguir.  
+ A representação XML do <xref:System.Data.DataSet> pode ser gravada em um arquivo, um fluxo, um **XmlWriter** ou uma cadeia de caracteres. Essas opções proporcionam excelente flexibilidade para o transporte da representação XML do <xref:System.Data.DataSet>. Para obter a representação XML do <xref:System.Data.DataSet> como uma cadeia de caracteres, use o método **GetXml** , conforme mostrado no exemplo a seguir.  
   
 ```vb  
 Dim xmlDS As String = custDS.GetXml()  
@@ -35,11 +37,11 @@ string xmlDS = custDS.GetXml();
   
 |Opção de XmlWriteMode|Descrição|  
 |-------------------------|-----------------|  
-|**IgnoreSchema**|Grava o conteúdo atual do <xref:System.Data.DataSet> como dados XML, sem um esquema XML. Esse é o padrão.|  
+|**IgnoreSchema**|Grava o conteúdo atual do <xref:System.Data.DataSet> como dados XML, sem um esquema XML. Este é o padrão.|  
 |**WriteSchema**|Grava o conteúdo atual do <xref:System.Data.DataSet> como dados XML com a estrutura relacional como um esquema XML embutido.|  
 |**DiffGram**|Grava todo o <xref:System.Data.DataSet> como um DiffGram, incluindo valores originais e atuais. Para obter mais informações, consulte [DiffGrams](diffgrams.md).|  
   
- Ao gravar uma representação XML de um <xref:System.Data.DataSet> que contém objetos **DataRelation** , você provavelmente desejará que o XML resultante tenha as linhas filhas de cada relação aninhada em seus elementos pai relacionados. Para fazer isso, defina a propriedade **aninhada** da **relação** como **true** quando você adicionar a **DataRelation** ao <xref:System.Data.DataSet>. Para obter mais informações, consulte [aninhando DataRelations](nesting-datarelations.md).  
+ Ao escrever uma representação XML de um <xref:System.Data.DataSet> que contenha objetos **DataRelation** , você provavelmente desejará que o XML resultante tenha as linhas filhas de cada relação aninhada em seus elementos pai relacionados. Para fazer isso, defina a propriedade **aninhada** da **relação** como **true** quando você adicionar a **DataRelation** ao <xref:System.Data.DataSet> . Para obter mais informações, consulte [aninhando DataRelations](nesting-datarelations.md).  
   
  Veja a seguir dois exemplos de como gravar a representação XML de um <xref:System.Data.DataSet> em um arquivo. O primeiro exemplo passa o nome do arquivo para o XML resultante como uma cadeia de caracteres para **WriteXml**. O segundo exemplo passa um objeto **System. IO. StreamWriter** .
   
@@ -64,20 +66,21 @@ xmlSW.Close();
 ```  
   
 ## <a name="mapping-columns-to-xml-elements-attributes-and-text"></a>Mapeando colunas para elementos XML, atributos e texto  
+
  Você pode especificar como uma coluna de uma tabela é representada em XML usando a propriedade **ColumnMapping** do objeto **DataColumn** . A tabela a seguir mostra os valores de **MappingType** diferentes para a propriedade **ColumnMapping** de uma coluna de tabela e o XML resultante.  
   
 |Valor de MappingType|Descrição|  
 |-----------------------|-----------------|  
-|**Elemento**|Esse é o padrão. A coluna é gravada como um elemento XML, em que ColumnName é o nome do elemento e o conteúdo da coluna é gravado como texto do elemento. Por exemplo:<br /><br /> `<ColumnName>Column Contents</ColumnName>`|  
+|**Element**|Este é o padrão. A coluna é gravada como um elemento XML, em que ColumnName é o nome do elemento e o conteúdo da coluna é gravado como texto do elemento. Por exemplo:<br /><br /> `<ColumnName>Column Contents</ColumnName>`|  
 |**Atributo**|A coluna é gravada como um atributo XML do elemento XML da linha atual, em que ColumnName é o nome do atributo e o conteúdo da coluna é gravado como valor do atributo. Por exemplo:<br /><br /> `<RowElement ColumnName="Column Contents" />`|  
 |**SimpleContent**|O conteúdo de coluna é gravado como texto no elemento XML da linha atual. Por exemplo:<br /><br /> `<RowElement>Column Contents</RowElement>`<br /><br /> Observe que **simpleContent** não pode ser definido para uma coluna de uma tabela que tenha colunas de **elementos** ou relações aninhadas.|  
 |**Oculto**|A coluna não é gravada na saída XML.|  
   
 ## <a name="see-also"></a>Consulte também
 
-- [Using XML in a DataSet](using-xml-in-a-dataset.md) (Usando XML em um DataSet)
+- [Usando XML em um DataSet](using-xml-in-a-dataset.md)
 - [DiffGrams](diffgrams.md)
 - [Aninhamento de DataRelations](nesting-datarelations.md)
-- [Gravando informações de esquema de conjunto de dados como XSD](writing-dataset-schema-information-as-xsd.md)
-- [DataSets, DataTables, and DataViews](index.md) (DataSets, DataTables e DataViews)
-- [ADO.NET Overview](../ado-net-overview.md) (Visão geral do ADO.NET)
+- [Gravar informações de esquema de DataSet como XSD](writing-dataset-schema-information-as-xsd.md)
+- [DataSets, DataTables e DataViews](index.md)
+- [Visão geral do ADO.NET](../ado-net-overview.md)

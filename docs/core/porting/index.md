@@ -3,12 +3,12 @@ title: Porte do .NET Framework para o .NET Core
 description: Entenda o processo de compatibilidade e descubra ferramentas que podem ser úteis ao realizar a portabilidade de um projeto do .NET Framework para o .NET Core.
 author: cartermp
 ms.date: 10/22/2019
-ms.openlocfilehash: 74fe4519e41a07bc78a4dc346f8d1b52b5c7d092
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 247e709ac6898a6a89318626e3aa9a2a8e239a9a
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 13/09/2020
-ms.locfileid: "84502763"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189929"
 ---
 # <a name="overview-of-porting-from-net-framework-to-net-core"></a>Visão geral da portabilidade do .NET Framework para o .NET Core
 
@@ -19,7 +19,7 @@ Você pode ter um código que atualmente é executado no .NET Framework que voc�
 
 ## <a name="overview-of-the-porting-process"></a>Visão geral do processo de portabilidade
 
-Portar para o .NET Core (ou .NET Standard) de .NET Framework para muitos projetos é relativamente simples. Há várias alterações que são necessárias, mas muitas delas seguem os padrões descritos abaixo. Os projetos em que o modelo de aplicativo está disponível no .NET Core (como bibliotecas, aplicativos de console e aplicativos de área de trabalho) geralmente exigem pouca alteração. Os projetos que exigem um novo modelo de aplicativo, como a mudança para ASP.NET Core de ASP.NET, exigem um pouco mais de trabalho, mas muitos padrões têm analogias que podem ser usadas durante a conversão. Este documento deve ajudar a identificar as principais estratégias que foram empregadas pelos usuários para converter com êxito suas bases de código para o destino .NET Standard ou o .NET Core e abordarão a conversão em dois níveis: toda a solução e o projeto específico. Consulte os links na parte inferior para obter instruções sobre conversões específicas de modelo de aplicativo.
+Portar para .NET Core (ou .NET Standard) de .NET Framework para muitos projetos é relativamente simples. Há várias alterações que são necessárias, mas muitas delas seguem os padrões descritos abaixo. Os projetos em que o modelo de aplicativo está disponível no .NET Core (como bibliotecas, aplicativos de console e aplicativos de área de trabalho) geralmente exigem pouca alteração. Os projetos que exigem um novo modelo de aplicativo, como a mudança para ASP.NET Core de ASP.NET, exigem um pouco mais de trabalho, mas muitos padrões têm analogias que podem ser usadas durante a conversão. Este documento deve ajudar a identificar as principais estratégias que foram empregadas pelos usuários para converter com êxito suas bases de código para o destino .NET Standard ou o .NET Core e abordarão a conversão em dois níveis: toda a solução e o projeto específico. Consulte os links na parte inferior para obter instruções sobre conversões específicas de modelo de aplicativo.
 
 Recomendamos que você use o processo a seguir ao portar seu projeto para o .NET Core. Cada uma dessas etapas introduz possíveis locais para alterações de comportamento, portanto, certifique-se de testar adequadamente sua biblioteca ou aplicativo antes de continuar em etapas posteriores. As primeiras etapas são preparar seu projeto para um comutador para .NET Standard ou para o .NET Core. Se você tiver testes de unidade, será melhor convertê-los primeiro para que você possa continuar testando as alterações no produto em que está trabalhando. Como a portabilidade para o .NET Core é uma alteração significativa na base de código, é altamente recomendável portar seus projetos de teste para que você possa executar testes à medida que você portar seu código. MSTest, xUnit e NUnit funcionam no .NET Core.
 
@@ -39,7 +39,7 @@ Para identificar a ordem em que os projetos devem ser migrados, você pode usar 
 
 - Os [diagramas de dependência no Visual Studio](/visualstudio/modeling/create-layer-diagrams-from-your-code) podem criar um grafo direcionado do código em uma solução.
 - Execute `msbuild _SolutionPath_ /t:GenerateRestoreGraphFile /p:RestoreGraphOutputPath=graph.dg.json` para gerar um documento JSON que inclui a lista de referências do projeto.
-- Execute o [analisador de portabilidade do .net](../../standard/analyzers/portability-analyzer.md) com a `-r DGML` opção para recuperar um diagrama de dependência dos assemblies. Para saber mais, clique [aqui](../../standard/analyzers/portability-analyzer.md#solution-wide-view).
+- Execute o [analisador de portabilidade do .net](../../standard/analyzers/portability-analyzer.md) com a `-r DGML` opção para recuperar um diagrama de dependência dos assemblies. Para mais informações, consulte [aqui](../../standard/analyzers/portability-analyzer.md#solution-wide-view).
 
 Depois que você tiver informações de dependência, poderá usar essas informações para começar nos nós folha e trabalhar com a árvore de dependência aplicando as etapas na próxima seção.
 
@@ -49,13 +49,13 @@ Recomendamos que você use o seguinte processo ao portar seu projeto para o .NET
 
 1. Converta todas as suas `packages.config` dependências para o formato [PackageReference](/nuget/consume-packages/package-references-in-project-files) com a [ferramenta de conversão no Visual Studio](/nuget/consume-packages/migrate-packages-config-to-package-reference).
 
-   Esta etapa envolve a conversão de suas dependências do formato herdado `packages.config` . `packages.config`Não funciona no .NET Core, portanto, essa conversão será necessária se você tiver dependências de pacote. Ele também requer apenas as dependências que você está usando diretamente em um projeto, o que facilita mais as etapas, reduzindo o número de dependências que você deve gerenciar.
+   Esta etapa envolve a conversão de suas dependências do formato herdado `packages.config` . `packages.config` Não funciona no .NET Core, portanto, essa conversão será necessária se você tiver dependências de pacote. Ele também requer apenas as dependências que você está usando diretamente em um projeto, o que facilita mais as etapas, reduzindo o número de dependências que você deve gerenciar.
 
 1. Converta o arquivo de projeto para a nova estrutura de arquivos em estilo SDK. Você pode criar novos projetos para o .NET Core e copiar sobre os arquivos de origem, ou tentar converter o arquivo de projeto existente com uma ferramenta.
 
-   O .NET Core usa um formato de arquivo de [projeto](../tools/csproj.md) simplificado (e diferente) do que o .NET Framework. Você precisará converter os arquivos de projeto nesse formato para continuar. Este estilo de projeto permite que você também direcione .NET Framework, que neste ponto você ainda desejará direcionar.
+   O .NET Core usa um formato de arquivo de [projeto](../project-sdk/overview.md) simplificado (e diferente) do que o .NET Framework. Você precisará converter os arquivos de projeto nesse formato para continuar. Este estilo de projeto permite que você também direcione .NET Framework, que neste ponto você ainda desejará direcionar.
 
-   Você pode tentar portar soluções menores ou projetos individuais em uma operação para o formato de arquivo de projeto do .NET Core com a ferramenta [dotnet try-Convert](https://github.com/dotnet/try-convert) . `dotnet try-convert`Não tem garantia de funcionar para todos os seus projetos e pode causar alterações sutis no comportamento que você dependou. Use-o como um _ponto de partida_ que automatize as coisas básicas que podem ser automatizadas. Não é uma solução garantida para migrar um projeto, pois há muitas diferenças nos destinos usados pelos projetos de estilo do SDK em comparação com os arquivos de projeto de estilo antigo.
+   Você pode tentar portar soluções menores ou projetos individuais em uma operação para o formato de arquivo de projeto do .NET Core com a ferramenta [dotnet try-Convert](https://github.com/dotnet/try-convert) . `dotnet try-convert` Não tem garantia de funcionar para todos os seus projetos e pode causar alterações sutis no comportamento que você dependou. Use-o como um _ponto de partida_ que automatize as coisas básicas que podem ser automatizadas. Não é uma solução garantida para migrar um projeto, pois há muitas diferenças nos destinos usados pelos projetos de estilo do SDK em comparação com os arquivos de projeto de estilo antigo.
 
 1. Redirecione todos os projetos que você deseja que a porta direcione .NET Framework 4.7.2 ou superior.
 
@@ -65,7 +65,7 @@ Recomendamos que você use o seguinte processo ao portar seu projeto para o .NET
 
 1. Use o [.net Portability Analyzer](../../standard/analyzers/portability-analyzer.md) para analisar seus assemblies e ver se eles são portáteis para o .NET Core.
 
-   A ferramenta Analisador de portabilidade .NET analisa seus assemblies compilados e gera um relatório. Este relatório mostra um resumo de portabilidade de alto nível e uma análise de cada API que você está usando e que não está disponível no núcleo da rede. Ao usar a ferramenta, envie apenas o projeto individual que você está convertendo para se concentrar nas alterações da API que são potencialmente necessárias. Muitas das APIs têm disponibilidade equivalente no .NET Core, para a qual você vai querer alternar.
+   A ferramenta Analisador de portabilidade .NET analisa seus assemblies compilados e gera um relatório. Este relatório mostra um resumo de portabilidade de alto nível e uma análise de cada API que você está usando e que não está disponível no .NET Core. Ao usar a ferramenta, envie apenas o projeto individual que você está convertendo para se concentrar nas alterações da API que são potencialmente necessárias. Muitas das APIs têm disponibilidade equivalente no .NET Core, para a qual você vai querer alternar.
 
    Ao ler os relatórios gerados pelo analisador, as informações importantes são as APIs reais que estão sendo usadas e não necessariamente a porcentagem de suporte para a plataforma de destino. Muitas APIs têm opções equivalentes no .NET Standard/Core e, portanto, entender os cenários de que sua biblioteca ou aplicativo precisa para a API ajudará a determinar a implicação da portabilidade.
 
@@ -113,5 +113,10 @@ Recomendamos que você use o seguinte processo ao portar seu projeto para o .NET
 
 > [!div class="nextstepaction"]
 > [Analisar dependências](third-party-deps.md) 
-> [Pacote NuGet](../deploying/creating-nuget-packages.md) 
-> [ASP.net para migração de ASP.NET Core](/aspnet/core/migration/proper-to-2x)
+> [Empacotar um pacote NuGet](../deploying/creating-nuget-packages.md)
+
+## <a name="see-also"></a>Confira também
+
+- [ASP.NET para migração de ASP.NET Core](/aspnet/core/migration/proper-to-2x)
+- [Migrar aplicativos do WPF para o .NET Core](/dotnet/desktop/wpf/migration/convert-project-from-net-framework)
+- [Migrar .NET Framework Windows Forms aplicativos para o .NET](/dotnet/desktop/winforms/migration/?view=netdesktop-5.0&preserve-view=true)

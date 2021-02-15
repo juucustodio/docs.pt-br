@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataAssemblyImport:: GetAssemblyProps'
 title: Método IMetaDataAssemblyImport::GetAssemblyProps
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 0eaa4aa9-9441-444a-920c-e4b2a2db899e
 topic_type:
 - apiref
-ms.openlocfilehash: a90deaf3e9ddf326c6fca558cbb4681fc40e022d
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 9cd3674dcd640bce27ae5d399d0f7de0c2eeca48
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84009048"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784139"
 ---
 # <a name="imetadataassemblyimportgetassemblyprops-method"></a>Método IMetaDataAssemblyImport::GetAssemblyProps
+
 Obtém o conjunto de propriedades para o assembly com a assinatura de metadados especificada.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -42,6 +44,7 @@ HRESULT GetAssemblyProps (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `mda`  
  [in]. O `mdAssembly` token de metadados que representa o assembly para o qual obter as propriedades.  
   
@@ -70,14 +73,15 @@ HRESULT GetAssemblyProps (
  fora Sinalizadores que descrevem os metadados aplicados a um assembly. Esse valor é uma combinação de um ou mais valores de [CorAssemblyFlags](corassemblyflags-enumeration.md) .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataAssemblyImport](imetadataassemblyimport-interface.md)

@@ -1,21 +1,21 @@
 ---
-title: " Ferramentas do .NET Core"
-description: Como instalar, usar, atualizar e remover as ferramentas do .NET Core. Aborda ferramentas globais, ferramentas de caminho de ferramenta e ferramentas locais.
+title: Ferramentas .NET
+description: Como instalar, usar, atualizar e remover ferramentas .NET. Aborda ferramentas globais, ferramentas de caminho de ferramenta e ferramentas locais.
 author: KathleenDollard
 ms.topic: how-to
 ms.date: 02/12/2020
-ms.openlocfilehash: 08277ed791036201d1dfa30c21799db1c21a924e
-ms.sourcegitcommit: 43d5aca3fda42bad8843f6c4e72f6bd52daa55f1
+ms.openlocfilehash: 8839fd4fba72c9f973d906eabb72919306a847dd
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89598127"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97633878"
 ---
-# <a name="how-to-manage-net-core-tools"></a>Como gerenciar as ferramentas do .NET Core
+# <a name="how-to-manage-net-tools"></a>Como gerenciar ferramentas .NET
 
 **Este artigo aplica-se a:** ✔️ SDK do .net Core 2,1 e versões posteriores
 
-Uma ferramenta .NET Core é um pacote NuGet especial que contém um aplicativo de console. Uma ferramenta pode ser instalada em seu computador das seguintes maneiras:
+Uma ferramenta .NET é um pacote NuGet especial que contém um aplicativo de console. Uma ferramenta pode ser instalada em seu computador das seguintes maneiras:
 
 * Como uma ferramenta global.
 
@@ -29,24 +29,23 @@ Uma ferramenta .NET Core é um pacote NuGet especial que contém um aplicativo d
 
   Os binários de ferramenta são instalados em um diretório padrão. Você invoca a ferramenta no diretório de instalação ou em qualquer um de seus subdiretórios. Diretórios diferentes podem usar versões diferentes da mesma ferramenta.
   
-  A CLI do .NET usa arquivos de manifesto para controlar quais ferramentas são instaladas como locais em um diretório. Quando o arquivo de manifesto é salvo no diretório raiz de um repositório de código-fonte, um colaborador pode clonar o repositório e invocar um único comando CLI do .NET Core que instala todas as ferramentas listadas nos arquivos de manifesto.
+  A CLI do .NET usa arquivos de manifesto para controlar quais ferramentas são instaladas como locais em um diretório. Quando o arquivo de manifesto é salvo no diretório raiz de um repositório de código-fonte, um colaborador pode clonar o repositório e invocar um único comando da CLI do .NET que instala todas as ferramentas listadas nos arquivos de manifesto.
 
 > [!IMPORTANT]
-> As ferramentas do .NET Core são executadas com confiança total. Não instale uma ferramenta do .NET Core, a menos que você confie no autor.
+> As ferramentas .NET são executadas com confiança total. Não instale uma ferramenta .NET, a menos que você confie no autor.
 
 ## <a name="find-a-tool"></a>Encontrar uma ferramenta
 
-Atualmente, o .NET Core não tem um recurso de pesquisa de ferramenta. Aqui estão algumas maneiras de encontrar ferramentas:
+Aqui estão algumas maneiras de encontrar ferramentas:
 
+* Use o comando [dotnet ferramenta de pesquisa](dotnet-tool-search.md) para encontrar uma ferramenta que é publicada no NuGet.org.
 * Pesquise o site do [NuGet](https://www.nuget.org) usando o filtro de tipo de pacote "ferramenta .net". Para obter mais informações, consulte [Localizando e escolhendo pacotes](/nuget/consume-packages/finding-and-choosing-packages).
-* Consulte a lista de ferramentas no repositório GitHub [natemcmaster/dotnet-Tools](https://github.com/natemcmaster/dotnet-tools) .
-* Use [ToolGet](https://www.toolget.net/) para procurar ferramentas .net.
 * Consulte o código-fonte para as ferramentas criadas pela equipe de ASP.NET Core no [diretório de ferramentas do repositório do GitHub dotnet/aspnetcore](https://github.com/dotnet/aspnetcore/tree/master/src/Tools).
-* Saiba mais sobre as ferramentas de diagnóstico nas [ferramentas de diagnóstico do .NET Core dotnet](../diagnostics/index.md#net-core-diagnostic-global-tools).
+* Saiba mais sobre as ferramentas de diagnóstico em [ferramentas de diagnóstico do .net](../diagnostics/index.md#net-core-diagnostic-global-tools).
 
 ## <a name="check-the-author-and-statistics"></a>Verificar o autor e as estatísticas
 
-Como as ferramentas do .NET Core são executadas com confiança total e as ferramentas globais são adicionadas à variável de ambiente PATH, elas podem ser muito poderosas. Não baixe ferramentas de pessoas em quem você não confia.
+Como as ferramentas .NET são executadas com confiança total e as ferramentas globais são adicionadas à variável de ambiente PATH, elas podem ser muito poderosas. Não baixe ferramentas de pessoas em quem você não confia.
 
 Se a ferramenta estiver hospedada no NuGet, você pode verificar o autor e as estatísticas pesquisando a ferramenta.
 
@@ -92,7 +91,7 @@ No Linux ou macOS:
 dotnet tool install dotnetsay --tool-path ~/bin
 ```
 
-O SDK do .NET Core não adiciona esse local automaticamente à variável de ambiente PATH. Para [invocar uma ferramenta de caminho de ferramenta](#invoke-a-tool-path-tool), você precisa certificar-se de que o comando está disponível usando um dos seguintes métodos:
+O SDK do .NET não adiciona esse local automaticamente à variável de ambiente PATH. Para [invocar uma ferramenta de caminho de ferramenta](#invoke-a-tool-path-tool), você precisa certificar-se de que o comando está disponível usando um dos seguintes métodos:
 
 * Adicione o diretório de instalação à variável de ambiente PATH.
 * Especifique o caminho completo para a ferramenta ao chamá-lo.
@@ -273,10 +272,10 @@ Para obter instruções de uso da ferramenta, insira um dos comandos a seguir ou
 dotnet <command> --help
 ```
 
-Se uma ferramenta não for instalada ou executada, consulte [solucionar problemas de uso da ferramenta .NET Core](troubleshoot-usage-issues.md).
+Se uma ferramenta não for instalada ou executada, consulte [solucionar problemas de uso da ferramenta .net](troubleshoot-usage-issues.md).
 
 ## <a name="see-also"></a>Confira também
 
-- [Tutorial: criar uma ferramenta do .NET Core usando o CLI do .NET Core](global-tools-how-to-create.md)
-- [Tutorial: instalar e usar uma ferramenta global do .NET Core usando o CLI do .NET Core](global-tools-how-to-use.md)
-- [Tutorial: instalar e usar uma ferramenta local do .NET Core usando o CLI do .NET Core](local-tools-how-to-use.md)
+- [Tutorial: criar uma ferramenta .NET usando a CLI do .NET](global-tools-how-to-create.md)
+- [Tutorial: instalar e usar uma ferramenta global do .NET usando a CLI do .NET](global-tools-how-to-use.md)
+- [Tutorial: instalar e usar uma ferramenta local do .NET usando a CLI do .NET](local-tools-how-to-use.md)

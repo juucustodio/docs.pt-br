@@ -6,12 +6,12 @@ helpviewer_keywords:
 - registering primary interop assemblies
 - primary interop assemblies, registering
 ms.assetid: 4b2fcf8a-429d-43ce-8334-e026040be8bb
-ms.openlocfilehash: a15bda7b40f160b31028c62cf7c73bdedd9541fa
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 4961b4bc57d25f9fa83cf40f82b153aa93592b55
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85622738"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96267007"
 ---
 # <a name="how-to-register-primary-interop-assemblies"></a>Como: Registrar assemblies de interoperabilidade primários
 
@@ -42,14 +42,15 @@ Use a [Ferramenta de Registro do Assembly (Regasm.exe)](../tools/regasm-exe-asse
      Nesse comando, *nomedoassembly* é o nome do arquivo do assembly que é registrado. Regasm.exe adiciona uma entrada para o assembly de interoperabilidade primário sob a mesma chave do Registro da biblioteca de tipos original.
 
 ## <a name="example"></a>Exemplo
+
  O exemplo a seguir registra o assembly de interoperabilidade primário `CompanyA.UtilLib.dll`.
 
 ```console
 regasm CompanyA.UtilLib.dll
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-- [Programando com assemblies de interoperabilidade primários](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/baxfadst(v=vs.100))
-- [Localizando assemblies de interoperabilidade primários](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/y06sxw56(v=vs.100))
-- [Redistribuindo assemblies de interoperabilidade primários](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/w0dt2w20(v=vs.100))
+- [Programando com assemblies de interoperabilidade primários](/previous-versions/dotnet/netframework-4.0/baxfadst(v=vs.100))
+- [Localizando assemblies de interoperabilidade primários](/previous-versions/dotnet/netframework-4.0/y06sxw56(v=vs.100))
+- [Redistribuindo assemblies de interoperabilidade primários](/previous-versions/dotnet/netframework-4.0/w0dt2w20(v=vs.100))

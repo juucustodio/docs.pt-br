@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: referência de rastreamentos'
 title: Referência de rastreamentos
 ms.date: 03/30/2017
 ms.assetid: bd960851-162d-4dcc-8c0c-0ec8f455d56d
-ms.openlocfilehash: c6f6d5a928500cce9f64dbb7338826d5a4ccd1ce
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 576e64e82c5108749da0533b00ce576c517d9eec
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84587774"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99758171"
 ---
 # <a name="traces-reference"></a>Referência de rastreamentos
+
 Esta seção lista todos os rastreamentos gerados pelo Windows Communication Foundation (WCF).  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  `Administration`  
   
  [System.ServiceModel.Administration.WmiPut](system-servicemodel-administration-wmiput.md)  

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IXCLRDataModule:: GetMethodDefinitionByToken'
 title: 'Método IXCLRDataModule:: GetMethodDefinitionByToken'
 ms.date: 01/16/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: 074949145be588fc34266a9f2ee501caeeffb9d3
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 1eb1187d09183bfff97324a8032d23cbf471f580
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420871"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800767"
 ---
 # <a name="ixclrdatamodulegetmethoddefinitionbytoken-method"></a>Método IXCLRDataModule:: GetMethodDefinitionByToken
 
@@ -56,7 +57,7 @@ O método fornecido faz parte da `IXCLRDataModule` interface e corresponde ao sl
 **Biblioteca:** None  
 **.NET Framework versões:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Depuração](index.md)
 - [Interface IXCLRDataModule](ixclrdatamodule-interface.md)

@@ -14,14 +14,15 @@ helpviewer_keywords:
 - comments
 - code comments
 ms.assetid: 90136fba-22eb-49f9-ba81-63db629b4a47
-ms.openlocfilehash: b50e76b8f832c3a214ca54f97bab8b0b6789ac25
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: b0077bdae3bad1d67c3d26e503d05f318982eb80
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403311"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91099015"
 ---
 # <a name="comments-in-code-visual-basic"></a>Comentários no código (Visual Basic)
+
 À medida que você lê os exemplos de código, você encontra geralmente o símbolo de comentário (`'`). Esse símbolo informa o compilador de Visual Basic para ignorar o texto que o segue ou o *Comentário*. Os comentários são uma breve explicação e/ou anotações adicionadas ao código para o benefício de quem os lê.  
   
  É uma prática de programação recomendável iniciar todos os procedimentos com um breve comentário descrevendo as características do procedimento e sua funcionalidade (o que ele faz). Isso é um benefício para o programador e é vantajoso para qualquer pessoa que examinar o código. Você deve separar os detalhes de implementação (como o procedimento faz isso) dos comentários que descrevem as características funcionais. Quando você incluir detalhes da implementação na descrição, lembre-se de atualizá-los quando você atualizar a função.  
@@ -35,6 +36,7 @@ ms.locfileid: "84403311"
  [!code-vb[VbVbcnConventions#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnConventions/VB/Class1.vb#17)]  
   
 ## <a name="commenting-guidelines"></a>Diretrizes de comentários  
+
  A tabela a seguir fornece diretrizes gerais para os tipos de comentários que podem preceder uma seção de código. Essas são sugestões; Visual Basic não impõe regras para adicionar comentários. Escreva o que funciona melhor, tanto para você quanto para qualquer outra pessoa que leia seu código.  
   
 |||  
@@ -61,7 +63,7 @@ ms.locfileid: "84403311"
   
 ## <a name="see-also"></a>Confira também
 
-- [Instintos básicos – documentando seu código com comentários XML](https://docs.microsoft.com/archive/msdn-magazine/2009/may/documenting-your-code-with-xml-comments)
+- [Instintos básicos – documentando seu código com comentários XML](/archive/msdn-magazine/2009/may/documenting-your-code-with-xml-comments)
 - [Como criar documentação XML](how-to-create-xml-documentation.md)
 - [Marcações de Comentário XML](../../language-reference/xmldoc/index.md)
 - [Estrutura do programa e convenções de código](program-structure-and-code-conventions.md)

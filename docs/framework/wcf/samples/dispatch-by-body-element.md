@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: expedição por elemento body'
 title: Expedição por elemento Body
 ms.date: 03/30/2017
 ms.assetid: f64a3c04-62b4-47b2-91d9-747a3af1659f
-ms.openlocfilehash: 19913cdaa47d766f62a313e216a653ac69633a99
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 431a69e1650ca7481432f71e67b87750254bda9f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594693"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755792"
 ---
 # <a name="dispatch-by-body-element"></a>Expedição por elemento Body
+
 Este exemplo demonstra como implementar um algoritmo alternativo para atribuir mensagens de entrada a operações.  
   
- Por padrão, o distribuidor do modelo de serviço seleciona o método de tratamento apropriado para uma mensagem de entrada com base no cabeçalho "ação" do WS-Addressing da mensagem ou nas informações equivalentes na solicitação HTTP SOAP.  
+ Por padrão, o Dispatcher do modelo de serviço seleciona o método de tratamento apropriado para uma mensagem de entrada com base no cabeçalho WS-Addressing "ação" da mensagem ou nas informações equivalentes na solicitação HTTP SOAP.  
   
  Algumas pilhas de serviços Web SOAP 1,1 que não seguem as diretrizes WS-I Basic Profile 1,1 não expedem mensagens com base no URI de ação, mas com base no nome qualificado XML do primeiro elemento dentro do corpo SOAP. Da mesma forma, o lado do cliente dessas pilhas pode enviar mensagens com um cabeçalho SOAPAction HTTP vazio ou arbitrário, que era permitido pela especificação SOAP 1,1.  
   
@@ -34,7 +36,7 @@ class DispatchByBodyElementOperationSelector : IDispatchOperationSelector
 }
 ```  
   
- <xref:System.ServiceModel.Dispatcher.IDispatchOperationSelector>as implementações são muito simples de criar, pois há apenas um método na interface: <xref:System.ServiceModel.Dispatcher.IDispatchOperationSelector.SelectOperation%2A> . O trabalho desse método é inspecionar uma mensagem de entrada e retornar uma cadeia de caracteres que seja igual ao nome de um método no contrato de serviço para o ponto de extremidade atual.  
+ <xref:System.ServiceModel.Dispatcher.IDispatchOperationSelector> as implementações são muito simples de criar, pois há apenas um método na interface: <xref:System.ServiceModel.Dispatcher.IDispatchOperationSelector.SelectOperation%2A> . O trabalho desse método é inspecionar uma mensagem de entrada e retornar uma cadeia de caracteres que seja igual ao nome de um método no contrato de serviço para o ponto de extremidade atual.  
   
  Neste exemplo, o seletor de operação adquire um <xref:System.Xml.XmlDictionaryReader> para o corpo da mensagem de entrada usando <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A> . Esse método já posiciona o leitor no primeiro filho do corpo da mensagem para que seja suficiente obter o nome do elemento atual e o URI do namespace e combiná-los em um `XmlQualifiedName` que é usado para pesquisar a operação correspondente do dicionário mantido pelo seletor de operação.  
   
@@ -70,6 +72,7 @@ private Message CreateMessageCopy(Message message,
 ```  
   
 ## <a name="adding-an-operation-selector-to-a-service"></a>Adicionando um seletor de operação a um serviço  
+
  Os seletores de operação de expedição de serviço são extensões para o Dispatcher do Windows Communication Foundation (WCF). Para selecionar métodos no canal de retorno de chamada de contratos duplex, também há seletores de operação do cliente, que funcionam muito como os seletores de operação de expedição descritos aqui, mas que não são explicitamente abordados neste exemplo.  
   
  Assim como a maioria das extensões de modelo de serviço, os seletores de operação de expedição são adicionados ao dispatcher usando comportamentos. Um *comportamento* é um objeto de configuração, que adiciona uma ou mais extensões ao tempo de execução de expedição (ou ao tempo de execução do cliente) ou altera suas configurações.  
@@ -118,6 +121,7 @@ public void ApplyDispatchBehavior(ContractDescription contractDescription, Servi
 ```  
   
 ## <a name="implementing-the-service"></a>Implementando o serviço  
+
  O comportamento implementado neste exemplo afeta diretamente como as mensagens da transmissão são interpretadas e expedidas, que é uma função do contrato de serviço. Consequentemente, o comportamento deve ser declarado no nível de contrato de serviço em qualquer implementação de serviço que escolha usá-lo.  
   
  O serviço de projeto de exemplo aplica o `DispatchByBodyElementBehaviorAttribute` comportamento do contrato ao `IDispatchedByBody` contrato de serviço e rotula cada uma das duas operações `OperationForBodyA()` e `OperationForBodyB()` com um `DispatchBodyElementAttribute` comportamento de operação. Quando um host de serviço para um serviço que implementa esse contrato é aberto, esses metadados são coletados pelo Dispatcher Builder conforme descrito anteriormente.  
@@ -143,6 +147,7 @@ public interface IDispatchedByBody
  A implementação do serviço de exemplo é simples. Cada método encapsula a mensagem recebida em uma mensagem de resposta e a ecoa de volta para o cliente.  
   
 ## <a name="running-and-building-the-sample"></a>Executando e compilando o exemplo  
+
  Quando você executa o exemplo, o conteúdo do corpo das respostas da operação é exibido na janela do console do cliente semelhante à saída (formatada) a seguir.  
   
  O cliente envia três mensagens para o serviço cujo elemento de conteúdo do corpo é nomeado `bodyA` , `bodyB` e `bodyX` , respectivamente. Como pode ser adiado da descrição anterior e do contrato de serviço mostrado, a mensagem de entrada com o `bodyA` elemento é expedida para o `OperationForBodyA()` método. Como não há nenhum destino de expedição explícito para a mensagem com o `bodyX` elemento body, a mensagem é expedida para o `DefaultOperation()` . Cada uma das operações de serviço encapsula o corpo da mensagem recebida em um elemento específico do método e a retorna, o que é feito para correlacionar as mensagens de entrada e saída claramente para este exemplo:  

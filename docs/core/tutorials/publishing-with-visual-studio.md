@@ -1,61 +1,65 @@
 ---
-title: Publicar um aplicativo de console do .NET Core usando o Visual Studio
-description: A publicação cria o conjunto de arquivos necessários para executar um aplicativo .NET Core.
+title: Publicar um aplicativo de console .NET usando o Visual Studio
+description: Saiba como usar o Visual Studio para criar o conjunto de arquivos necessários para executar um aplicativo .NET.
 ms.date: 06/08/2020
 dev_langs:
 - csharp
 - vb
 ms.custom: vs-dotnet
-ms.openlocfilehash: e0033d52ab54259ce5e4ccf2a25bf4e3d4f244de
-ms.sourcegitcommit: b9122d1af21898eaba81e990c70fef46fef74a8d
+ms.openlocfilehash: b0c6bd85ddf86f0eb11c56f01abb74a7e9786363
+ms.sourcegitcommit: 5114e7847e0ff8ddb8c266802d47af78567949cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88867549"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94915987"
 ---
-# <a name="tutorial-publish-a-net-core-console-application-using-visual-studio"></a>Tutorial: publicar um aplicativo de console do .NET Core usando o Visual Studio
+# <a name="tutorial-publish-a-net-console-application-using-visual-studio"></a>Tutorial: publicar um aplicativo de console .NET usando o Visual Studio
 
 Este tutorial mostra como publicar um aplicativo de console para que outros usuários possam executá-lo. A publicação cria o conjunto de arquivos necessários para executar seu aplicativo. Para implantar os arquivos, copie-os para o computador de destino.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- Este tutorial funciona com o aplicativo de console que você cria em [criar um aplicativo de console do .NET Core usando o Visual Studio](with-visual-studio.md).
+- Este tutorial funciona com o aplicativo de console que você cria em [criar um aplicativo de console .NET usando o Visual Studio](with-visual-studio.md).
 
 ## <a name="publish-the-app"></a>Publicar o aplicativo
 
 1. Inicie o Visual Studio.
 
-1. Abra o projeto *HelloWorld* que você criou em [criar um aplicativo de console do .NET Core usando o Visual Studio](with-visual-studio.md).
+1. Abra o projeto *HelloWorld* que você criou em [criar um aplicativo de console .NET usando o Visual Studio](with-visual-studio.md).
 
 1. Verifique se o Visual Studio está usando a configuração de Build de versão. Se necessário, altere a configuração de build na barra de ferramentas de **Depuração** para **Lançamento**.
 
-   ![Barra de ferramentas do Visual Studio com build de versão selecionado](media/publishing-with-visual-studio/visual-studio-toolbar-release.png)
+   :::image type="content" source="media/publishing-with-visual-studio/visual-studio-toolbar-release.png" alt-text="Barra de ferramentas do Visual Studio com build de versão selecionado":::
 
 1. Clique com o botão direito do mouse no projeto **HelloWorld** (não na solução HelloWorld) e selecione **publicar** no menu.
 
-   ![Menu de contexto Publicar do Visual Studio](media/publishing-with-visual-studio/publish-context-menu.png)
+   :::image type="content" source="media/publishing-with-visual-studio/publish-context-menu.png" alt-text="Menu de contexto Publicar do Visual Studio":::
 
-1. Na guia **destino** da página **publicar** , selecione **pasta**e, em seguida, selecione **Avançar**.
+1. Na guia **destino** da página **publicar** , selecione **pasta** e, em seguida, selecione **Avançar**.
 
-   ![Escolher um destino de publicação no Visual Studio](media/publishing-with-visual-studio/pick-publish-target.png)
+   :::image type="content" source="media/publishing-with-visual-studio/pick-publish-target.png" alt-text="Escolher um destino de publicação no Visual Studio":::
+
+1. Na guia **destino específico** da página **publicar** , selecione **pasta** e, em seguida, selecione **Avançar**.
+
+   :::image type="content" source="media/publishing-with-visual-studio/pick-specific-publish-target.png" alt-text="Escolha o destino de publicação específico no Visual Studio":::
 
 1. Na guia **local** da página **publicar** , selecione **concluir**.
 
-   ![Guia local da página de publicação do Visual Studio](media/publishing-with-visual-studio/publish-page-loc-tab.png)
+   :::image type="content" source="media/publishing-with-visual-studio/publish-page-loc-tab.png" alt-text="Guia local da página de publicação do Visual Studio":::
 
 1. Na guia **publicar** da janela **publicar** , selecione **publicar**.
 
-   ![Janela Publicar do Visual Studio](media/publishing-with-visual-studio/publish-page.png)
+   :::image type="content" source="media/publishing-with-visual-studio/publish-page.png" alt-text="Janela Publicar do Visual Studio":::
 
 ## <a name="inspect-the-files"></a>Inspecionar os arquivos
 
-Por padrão, o processo de publicação cria uma implantação dependente de estrutura, que é um tipo de implantação em que o aplicativo publicado é executado no computador que tem o tempo de execução do .NET Core instalado. Os usuários podem executar o aplicativo publicado clicando duas vezes no executável ou emitindo o `dotnet HelloWorld.dll` comando de um prompt de comando.
+Por padrão, o processo de publicação cria uma implantação dependente de estrutura, que é um tipo de implantação em que o aplicativo publicado é executado no computador que tem o tempo de execução do .NET instalado. Os usuários podem executar o aplicativo publicado clicando duas vezes no executável ou emitindo o `dotnet HelloWorld.dll` comando de um prompt de comando.
 
 Nas etapas a seguir, você examinará os arquivos criados pelo processo de publicação.
 
 1. Em **Gerenciador de soluções**, selecione **Mostrar todos os arquivos**.
 
-1. Na pasta do projeto, expanda *bin/Release/netcoreapp 3.1/publicar*.
+1. Na pasta do projeto, expanda *bin/Release/NET 5.0/publicar*.
 
    :::image type="content" source="media/publishing-with-visual-studio/published-files-output.png" alt-text="Gerenciador de Soluções mostrando os arquivos publicados":::
 
@@ -63,11 +67,11 @@ Nas etapas a seguir, você examinará os arquivos criados pelo processo de publi
 
    * *HelloWorld.deps.json*
 
-      Este é o arquivo de dependências de tempo de execução do aplicativo. Ele define os componentes do .NET Core e as bibliotecas (incluindo a biblioteca de vínculo dinâmico que contém seu aplicativo) necessárias para executar o aplicativo. Para obter mais informações, consulte [arquivos de configuração de tempo de execução](https://github.com/dotnet/cli/blob/85ca206d84633d658d7363894c4ea9d59e515c1a/Documentation/specs/runtime-configuration-file.md).
+      Este é o arquivo de dependências de tempo de execução do aplicativo. Ele define os componentes .NET e as bibliotecas (incluindo a biblioteca de vínculo dinâmico que contém seu aplicativo) necessárias para executar o aplicativo. Para obter mais informações, consulte [arquivos de configuração de tempo de execução](https://github.com/dotnet/cli/blob/85ca206d84633d658d7363894c4ea9d59e515c1a/Documentation/specs/runtime-configuration-file.md).
 
    * *HelloWorld.dll*
 
-      Esta é a versão de [implantação dependente de estrutura](../deploying/deploy-with-cli.md#framework-dependent-deployment) do aplicativo. Para executar essa biblioteca de vínculo dinâmico, digite `dotnet HelloWorld.dll` em um prompt de comando. Esse método de execução do aplicativo funciona em qualquer plataforma que tenha o tempo de execução do .NET Core instalado.
+      Esta é a versão de [implantação dependente de estrutura](../deploying/deploy-with-cli.md#framework-dependent-deployment) do aplicativo. Para executar essa biblioteca de vínculo dinâmico, digite `dotnet HelloWorld.dll` em um prompt de comando. Esse método de execução do aplicativo funciona em qualquer plataforma que tenha o tempo de execução do .NET instalado.
 
    * *HelloWorld.exe*
 
@@ -79,7 +83,7 @@ Nas etapas a seguir, você examinará os arquivos criados pelo processo de publi
 
    * *HelloWorld.runtimeconfig.json*
 
-      Este é o arquivo de configuração de tempo de execução do aplicativo. Identifica a versão do .NET Core com base na qual o aplicativo foi criado para ser executado. Você também pode adicionar opções de configuração a ela. Para obter mais informações, consulte [definições de configuração de tempo de execução do .NET Core](../run-time-config/index.md#runtimeconfigjson).
+      Este é o arquivo de configuração de tempo de execução do aplicativo. Ele identifica a versão do .NET na qual seu aplicativo foi criado para ser executado. Você também pode adicionar opções de configuração a ela. Para obter mais informações, consulte [definições de configuração de tempo de execução do .net](../run-time-config/index.md#runtimeconfigjson).
 
 ## <a name="run-the-published-app"></a>Executar o aplicativo publicado
 
@@ -105,11 +109,11 @@ Nas etapas a seguir, você examinará os arquivos criados pelo processo de publi
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
-- [Implantação de aplicativo .NET Core](../deploying/index.md)
+- [Implantação de aplicativos .NET](../deploying/index.md)
 
 ## <a name="next-steps"></a>Próximas etapas
 
 Neste tutorial, você publicou um aplicativo de console. No próximo tutorial, você criará uma biblioteca de classes.
 
 > [!div class="nextstepaction"]
-> [Criar uma biblioteca de .NET Standard usando o Visual Studio](library-with-visual-studio.md)
+> [Criar uma biblioteca de classes .NET usando o Visual Studio](library-with-visual-studio.md)

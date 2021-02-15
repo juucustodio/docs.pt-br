@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugFrame:: GetCode'
 title: Método ICorDebugFrame::GetCode
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: fbaa0794-a031-4015-8beb-2749e47ac340
 topic_type:
 - apiref
-ms.openlocfilehash: c8914ba1090ec5fd6540e9ead302675cb44f37e6
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: f45e0a29530a8b4ddbeaa92db4489a030ac1ae79
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83208597"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99692999"
 ---
 # <a name="icordebugframegetcode-method"></a>Método ICorDebugFrame::GetCode
+
 Obtém um ponteiro para o código associado a este quadro de pilhas.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,10 +36,12 @@ HRESULT GetCode (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ppCode`  
  fora Um ponteiro para o endereço de um objeto ICorDebugCode que representa o código associado a esse quadro.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

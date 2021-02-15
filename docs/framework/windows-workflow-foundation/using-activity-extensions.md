@@ -1,20 +1,22 @@
 ---
+description: 'Saiba mais sobre: usando extensões de atividade'
 title: Usando extensões de atividade
 ms.date: 03/30/2017
 ms.assetid: 500eb96a-c009-4247-b6b5-b36faffdf715
-ms.openlocfilehash: 551ce24db8c0adc8225ac94a1d05f998a26873a9
-ms.sourcegitcommit: 005980b14629dfc193ff6cdc040800bc75e0a5a5
+ms.openlocfilehash: d0286850bf685497d3a2471a3b4e0db4630070b1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70988630"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755064"
 ---
 # <a name="using-activity-extensions"></a>Usando extensões de atividade
+
 As atividades podem interagir com as extensões do aplicativo de fluxo de trabalho que permitem que o host fornece funcionalidade adicional que não é modelada explicitamente no fluxo de trabalho.  Este tópico descreve como criar e usar uma extensão para contar o número de vezes que a atividade é executado.
 
 ### <a name="to-use-an-activity-extension-to-count-executions"></a>Para usar uma extensão de atividade para contar executa
 
-1. Abra o Visual Studio 2010. Selecione **novo**, **projeto**. No nó **Visual C#**  , selecione **fluxo de trabalho**.  Selecione **aplicativo de console de fluxo de trabalho** na lista de modelos. Nomeie o projeto `Extensions`. Clique em **OK** para criar o projeto.
+1. Abra o Visual Studio 2010. Selecione **novo**, **projeto**. No nó do **Visual C#** , selecione **fluxo de trabalho**.  Selecione **aplicativo de console de fluxo de trabalho** na lista de modelos. Dê ao projeto o nome de `Extensions`. Clique em **OK** para criar o projeto.
 
 2. Adicione uma `using` instrução no arquivo Program.cs para o namespace **System. Collections. Generic** .
 

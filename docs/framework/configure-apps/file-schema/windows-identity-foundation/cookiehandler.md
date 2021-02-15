@@ -1,16 +1,18 @@
 ---
+description: 'Saiba mais sobre: <cookieHandler>'
 title: <cookieHandler>
 ms.date: 03/30/2017
 ms.assetid: bfdc127f-8d94-4566-8bef-f583c6ae7398
 author: BrucePerlerMS
-ms.openlocfilehash: 853dc9817d080e59ac7a792576eda862bd0b1f1d
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 036646ca5c8aaedebba9466ecb8c9232e87a773d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70252026"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786571"
 ---
 # \<cookieHandler>
+
 Configura o <xref:System.IdentityModel.Services.CookieHandler> que o <xref:System.IdentityModel.Services.SessionAuthenticationModule> (Sam) usa para ler e gravar cookies.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -18,7 +20,7 @@ Configura o <xref:System.IdentityModel.Services.CookieHandler> que o <xref:Syste
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<federationConfiguration>**](federationconfiguration.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<cookieHandler>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.identityModel.services>  
@@ -38,6 +40,7 @@ Configura o <xref:System.IdentityModel.Services.CookieHandler> que o <xref:Syste
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -66,6 +69,7 @@ Configura o <xref:System.IdentityModel.Services.CookieHandler> que o <xref:Syste
 |[\<federationConfiguration>](federationconfiguration.md)|Contém as configurações que definem o <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) e o <xref:System.IdentityModel.Services.SessionAuthenticationModule> (Sam).|  
   
 ## <a name="remarks"></a>Comentários  
+
  O <xref:System.IdentityModel.Services.CookieHandler> é responsável por ler e gravar cookies brutos no nível do protocolo http. Você pode configurar um <xref:System.IdentityModel.Services.ChunkedCookieHandler> ou um manipulador de cookie personalizado derivado da <xref:System.IdentityModel.Services.CookieHandler> classe.  
   
  Para configurar um manipulador de cookie em bloco, defina o atributo Mode como "em bloco" ou "padrão". O tamanho de parte padrão é 2000 bytes, mas você pode opcionalmente especificar um tamanho de parte diferente, incluindo um `<chunkedCookieHandler>` elemento filho.  
@@ -75,6 +79,7 @@ Configura o <xref:System.IdentityModel.Services.CookieHandler> que o <xref:Syste
  O `<cookieHandler>` elemento é representado pela <xref:System.IdentityModel.Services.CookieHandlerElement> classe. O manipulador de cookies que foi especificado na configuração está disponível na <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.CookieHandler%2A> Propriedade do <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> conjunto de objetos na <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=nameWithType> propriedade.  
   
 ## <a name="example"></a>Exemplo  
+
  O XML a seguir mostra um `<cookieHandler>` elemento. Neste exemplo, como o `mode` atributo não é especificado, o manipulador de cookies padrão será usado pelo Sam. Essa é uma instância da <xref:System.IdentityModel.Services.ChunkedCookieHandler> classe. Como o `<chunkedCookieHandler>` elemento filho não é especificado, o tamanho de bloco padrão será usado. O HTTPS não será necessário porque o `requireSsl` atributo está definido `false` .  
   
 > [!WARNING]

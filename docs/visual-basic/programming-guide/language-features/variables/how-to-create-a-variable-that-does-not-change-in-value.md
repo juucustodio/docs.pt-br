@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como criar uma variável que não é alterada no valor (Visual Basic)'
 title: Como criar uma variável que não se altera no valor
 ms.date: 07/20/2015
 helpviewer_keywords:
 - variables [Visual Basic], read-only
 - variables [Visual Basic], constant value
 ms.assetid: 86b59266-25df-4635-ae15-9b59c411d036
-ms.openlocfilehash: 04e08784b5cfbdeb6db73b9b00fe9afa201bd06d
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 0392a27249de3bf604a73c8f8aaa16caf6f1c3e2
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410510"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100481929"
 ---
 # <a name="how-to-create-a-variable-that-does-not-change-in-value-visual-basic"></a>Como criar uma variável que não se altera no valor (Visual Basic)
 
@@ -44,7 +45,7 @@ Você não pode usar a [instrução const](../../../language-reference/statement
 
     Se você não souber o valor em tempo de compilação, ou não puder computar em tempo de compilação em uma única instrução, ainda poderá atribuí-lo em tempo de execução em um construtor. Para fazer isso, você deve declarar a `ReadOnly` variável no nível de classe ou estrutura. No construtor para essa classe ou estrutura, calcule o valor fixo da variável e atribua-o à variável antes de retornar do construtor.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [WriteOnly](../../../language-reference/modifiers/writeonly.md)
 - [Instrução Const](../../../language-reference/statements/const-statement.md)

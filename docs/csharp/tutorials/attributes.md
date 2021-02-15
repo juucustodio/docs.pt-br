@@ -1,18 +1,18 @@
 ---
-title: 'Tutorial: Use atributos - C #'
+title: 'Tutorial: usar atributos-C #'
 description: Saiba como os atributos funcionam em C#.
 author: mgroves
 ms.technology: csharp-fundamentals
 ms.date: 03/06/2017
 ms.assetid: b152cf36-76e4-43a5-b805-1a1952e53b79
-ms.openlocfilehash: 24cb7d35a89fda78511dc4ba725b69c5d601a008
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4e2c0126d0920df18271f8889d8e117cd374d979
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75937466"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91174180"
 ---
-# <a name="use-attributes-in-c"></a>Use atributos em C\#
+# <a name="use-attributes-in-c"></a>Usar atributos em C\#
 
 Os atributos fornecem uma maneira de associar informações ao código de forma declarativa. Eles também podem fornecer um elemento reutilizável que pode ser aplicado a uma variedade de destinos.
 
@@ -21,9 +21,10 @@ Considere o atributo `[Obsolete]`. Ele pode ser aplicado a classes, structs, mé
 Neste tutorial, você verá como adicionar atributos a seu código, como criar e usar seus próprios atributos e como usar alguns atributos que são criados no .NET Core.
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Você precisará configurar seu computador para executar o .NET Core. Você pode encontrar as instruções de instalação na página [.NET Core Downloads.](https://dotnet.microsoft.com/download)
+
+Você precisará configurar seu computador para executar o .NET Core. Você pode encontrar as instruções de instalação na página de [downloads do .NET Core](https://dotnet.microsoft.com/download) .
 Você pode executar esse aplicativo no Windows, Ubuntu Linux, macOS ou em um contêiner do Docker.
-Será necessário instalar o editor de código de sua preferência. As descrições abaixo usam [Visual Studio Code,](https://code.visualstudio.com/) que é um editor de código aberto e multiplataforma. No entanto, você pode usar quaisquer ferramentas que esteja familiarizado.
+Será necessário instalar o editor de código de sua preferência. As descrições a seguir usam [Visual Studio Code](https://code.visualstudio.com/) , que é um editor de plataforma cruzada, de código aberto. No entanto, você pode usar quaisquer ferramentas que esteja familiarizado.
 
 ## <a name="create-the-application"></a>Criar o aplicativo
 
@@ -31,7 +32,7 @@ Agora que você instalou todas as ferramentas, crie um novo aplicativo do .NET C
 
 `dotnet new console`
 
-Este comando criará arquivos de projeto de núcleo .NET de ossos nus. Você precisará executar `dotnet restore` para restaurar as dependências necessárias para compilar esse projeto.
+Este comando criará arquivos de projeto do .NET Core no básico. Você precisará executar `dotnet restore` para restaurar as dependências necessárias para compilar esse projeto.
 
 [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
@@ -85,8 +86,8 @@ Os atributos podem ser usados em um número de "destinos". Os exemplos acima mos
 * Assembly
 * Classe
 * Construtor
-* delegado
-* Enum
+* Delegar
+* Enumeração
 * Evento
 * Campo
 * GenericParameter
@@ -96,7 +97,7 @@ Os atributos podem ser usados em um número de "destinos". Os exemplos acima mos
 * Parâmetro
 * Propriedade
 * ReturnValue
-* Struct
+* Estrutura
 
 Quando você cria uma classe de atributo, por padrão, o C# permitirá que você use esse atributo em qualquer um dos destinos possíveis do atributo. Se quiser restringir seu atributo a determinados destinos, você poderá fazer isso usando o `AttributeUsageAttribute` em sua classe de atributo. É isso mesmo, um atributo em um atributo!
 

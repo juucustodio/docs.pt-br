@@ -18,14 +18,15 @@ helpviewer_keywords:
 - Internet, streams
 - streams
 ms.assetid: 02b05fba-7235-45ce-94e5-060436ee0875
-ms.openlocfilehash: f8d35b43c9b46a77bfd0c78f7d0118093b6fe824
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: c59e4aa2edad7b28203cfce5f568f8ccb8558dbb
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84501970"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96263107"
 ---
 # <a name="using-streams-on-the-network"></a>Usando fluxos na rede
+
 Os recursos de rede são representados no .NET Framework como fluxos. Tratando os fluxos de forma genérica, o .NET Framework oferece as seguintes funcionalidades:  
   
 - Uma maneira comum de enviar e receber dados da Web. Seja qual for o conteúdo real do arquivo – HTML, XML ou qualquer outra coisa –, o aplicativo usará <xref:System.IO.Stream.Write%2A?displayProperty=nameWithType> e <xref:System.IO.Stream.Read%2A?displayProperty=nameWithType> para enviar e receber dados.  
@@ -103,7 +104,7 @@ Dim sr As _
 sr.Close()  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-- [Como solicitar dados usando a classe WebRequest](how-to-request-data-using-the-webrequest-class.md)
+- [Como: Solicitar dados usando a classe WebRequest](how-to-request-data-using-the-webrequest-class.md)
 - [Solicitando dados](requesting-data.md)

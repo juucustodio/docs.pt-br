@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: criando serviços WCF para ASP.NET AJAX'
 title: Criando serviços do WCF para o AJAX ASP.NET
 ms.date: 03/30/2017
 ms.assetid: 04c0402c-e617-4ba5-aedf-d17692234776
-ms.openlocfilehash: 8c82d4c61b32572fd1ad7d8f19e939273cc2280b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: e4ab977db5632de0c9e825e03369506d4917709f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599302"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99705116"
 ---
 # <a name="creating-wcf-services-for-aspnet-ajax"></a>Criando serviços do WCF para o AJAX ASP.NET
 
@@ -61,6 +62,6 @@ Os pontos de extremidade AJAX no WCF podem até mesmo ser consumidos sem a estru
 ## <a name="see-also"></a>Consulte também
 
 - [Modelo de programação WCF Web HTTP](wcf-web-http-programming-model.md)
-- [Como adicionar um ponto de extremidade do ASP.NET AJAX sem utilizar a configuração](how-to-add-an-aspnet-ajax-endpoint-without-using-configuration.md)
-- [Como usar a configuração para adicionar um ponto de extremidade do ASP.NET AJAX](how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md)
-- [Como escolher entre solicitações HTTP POST e HTTP GET para pontos de extremidade AJAX ASP.NET](http-post-and-http-get-requests-for-aspnet-ajax-endpoints.md)
+- [Como: adicionar um ponto de extremidade de ASP.NET AJAX sem utilizar a configuração](how-to-add-an-aspnet-ajax-endpoint-without-using-configuration.md)
+- [Como: usar a configuração para adicionar um ponto de extremidade AJAX ASP.NET](how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md)
+- [Como: escolher entre solicitações HTTP POST e HTTP GET para pontos de extremidade AJAX ASP.NET](http-post-and-http-get-requests-for-aspnet-ajax-endpoints.md)

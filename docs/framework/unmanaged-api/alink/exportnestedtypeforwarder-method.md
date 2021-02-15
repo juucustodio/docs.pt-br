@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ExportNestedTypeForwarder'
 title: Método ExportNestedTypeForwarder
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 886ea6c5-6b26-4b88-8bf6-448d6d191950
 topic_type:
 - apiref
-ms.openlocfilehash: cc81ccd1c754e3d34c54737f4560b4f81d5cc916
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: fd791e3fea76338f191fcf924d56720d257d2e8b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74438416"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638100"
 ---
 # <a name="exportnestedtypeforwarder-method"></a>Método ExportNestedTypeForwarder
+
 Adiciona um encaminhador de tipo para um tipo aninhado à tabela de tipos do assembly especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -39,6 +41,7 @@ HRESULT ExportNestedTypeForwarder(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `AssemblyID`  
  ID do assembly do qual exportar.  
   
@@ -55,15 +58,17 @@ HRESULT ExportNestedTypeForwarder(
  Nome de tipo totalmente qualificado para exportar.  
   
  `dwFlags`  
- `ComType` sinalizadores como `tdPublic` ou `tdNested`.  
+ `ComType` sinalizadores como `tdPublic` ou `tdNested` .  
   
  `pType`  
  Recebe o token do tipo de exportação. Isso é necessário apenas para emitir tipos aninhados.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  Retorna S_OK se o método tiver sucesso.  
   
 ## <a name="requirements"></a>Requisitos  
+
  Requer ALink. h  
   
 ## <a name="see-also"></a>Consulte também

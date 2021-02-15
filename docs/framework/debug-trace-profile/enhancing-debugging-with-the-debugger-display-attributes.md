@@ -14,12 +14,12 @@ helpviewer_keywords:
 - display attributes for debugger
 - DebuggerBrowsableAttribute attribute
 ms.assetid: 72bb7aa9-459b-42c4-9163-9312fab4c410
-ms.openlocfilehash: f266bf7278f472c51dd355df5ba04a123cbd7df0
-ms.sourcegitcommit: a2c8b19e813a52b91facbb5d7e3c062c7188b457
+ms.openlocfilehash: 2e556358490409a0fa7b345c4454eb43cf607e32
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85415960"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96244360"
 ---
 # <a name="enhancing-debugging-with-the-debugger-display-attributes"></a>Melhorando a depuração com os atributos de exibição do depurador
 
@@ -42,6 +42,7 @@ Os atributos aplicados às propriedades referenciadas na expressão não são pr
 Por exemplo, se um objeto do C# tiver um `ToString()` substituído, o depurador chamará a substituição e mostrará seu resultado, em vez do `{<typeName>}.` padrão. Portanto, se você tiver substituído `ToString()`, não precisará usar <xref:System.Diagnostics.DebuggerDisplayAttribute>. Se você usar ambas, o atributo <xref:System.Diagnostics.DebuggerDisplayAttribute> terá precedência sobre a substituição de `ToString()`.
 
 ## <a name="using-the-debuggerbrowsableattribute"></a>Usando o DebuggerBrowsableAttribute
+
  Aplique o <xref:System.Diagnostics.DebuggerBrowsableAttribute> a um campo ou uma propriedade para especificar como o campo ou a propriedade deve ser exibida na janela do depurador. O construtor desse atributo usa um dos valores de enumeração <xref:System.Diagnostics.DebuggerBrowsableState>, que especifica um dos seguintes estados:
 
 - <xref:System.Diagnostics.DebuggerBrowsableState.Never> indica que o membro não é exibido na janela de dados.  Por exemplo, o uso desse valor para o <xref:System.Diagnostics.DebuggerBrowsableAttribute> em um campo remove o campo da hierarquia; o campo não é exibido quando você expande o tipo delimitador clicando no sinal de adição (+) da instância de tipo.
@@ -61,6 +62,7 @@ public static string y = "Test String";
 ```
 
 ## <a name="using-the-debuggertypeproxy"></a>Usando o DebuggerTypeProxy
+
  Use o atributo <xref:System.Diagnostics.DebuggerTypeProxyAttribute> quando você precisar alterar a exibição de depuração de um tipo de forma significativa e básica, mas não o próprio tipo. O atributo <xref:System.Diagnostics.DebuggerTypeProxyAttribute> é usado para especificar um proxy de exibição para um tipo, permitindo que um desenvolvedor adapte a exibição para o tipo.  Este atributo, como o <xref:System.Diagnostics.DebuggerDisplayAttribute>, pode ser usado no nível do assembly, caso em que a propriedade <xref:System.Diagnostics.DebuggerTypeProxyAttribute.Target%2A> especifica o tipo para o qual o proxy será usado. O uso recomendado é que este atributo especifique um tipo aninhado particular que ocorre dentro do tipo ao qual o atributo é aplicado.  Um avaliador de expressão que dá suporte a visualizadores de tipo verifica se esse atributo existe quando um tipo é exibido. Se o atributo for encontrado, o avaliador de expressão substituirá o tipo de proxy de exibição do tipo ao qual o atributo é aplicado.
 
  Quando o <xref:System.Diagnostics.DebuggerTypeProxyAttribute> está presente, a janela de variáveis do depurador exibe apenas os membros públicos do tipo de proxy. Os membros particulares não são exibidos. O comportamento da janela de dados não é alterado por exibições aprimoradas por atributo.

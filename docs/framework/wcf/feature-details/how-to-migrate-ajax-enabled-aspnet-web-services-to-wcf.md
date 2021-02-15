@@ -1,15 +1,17 @@
 ---
-title: Como migrar serviços habilitados para AJAX ASP.NET para o WCF
+description: 'Saiba mais sobre: como migrar AJAX-Enabled serviços Web ASP.NET para o WCF'
+title: 'Como: migrar serviços Web habilitados para AJAX ASP.NET para o WCF'
 ms.date: 03/30/2017
 ms.assetid: 1428df4d-b18f-4e6d-bd4d-79ab3dd5147c
-ms.openlocfilehash: 6f356f47922945218e02271371d9ddea36ecc5a2
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: fe79660f0ed8ef01a2607c94362d484cacc6a7b1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597001"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793721"
 ---
-# <a name="how-to-migrate-ajax-enabled-aspnet-web-services-to-wcf"></a>Como migrar serviços habilitados para AJAX ASP.NET para o WCF
+# <a name="how-to-migrate-ajax-enabled-aspnet-web-services-to-wcf"></a>Como: migrar serviços Web habilitados para AJAX ASP.NET para o WCF
+
 Este tópico descreve os procedimentos para migrar um serviço AJAX ASP.NET básico para um serviço equivalente habilitado para AJAX (Windows Communication Foundation). Ele mostra como criar uma versão WCF equivalente funcional de um serviço ASP.NET AJAX. Os dois serviços podem ser usados lado a lado, ou o serviço WCF pode ser usado para substituir o serviço ASP.NET AJAX.
 
  A migração de um serviço ASP.NET AJAX existente para um serviço WCF AJAX oferece os seguintes benefícios:
@@ -28,7 +30,7 @@ Este tópico descreve os procedimentos para migrar um serviço AJAX ASP.NET bás
 
 1. Abra o Visual Studio 2012.
 
-2. No menu **arquivo** , selecione **novo**, **projeto**, **Web**e, em seguida, selecione **aplicativo de serviço Web ASP.net**.
+2. No menu **arquivo** , selecione **novo**, **projeto**, **Web** e, em seguida, selecione **aplicativo de serviço Web ASP.net**.
 
 3. Nomeie o projeto `ASPHello` e clique em **OK**.
 
@@ -36,7 +38,7 @@ Este tópico descreve os procedimentos para migrar um serviço AJAX ASP.NET bás
 
 5. No menu **Compilar** , selecione **Compilar solução**.
 
-6. No menu **Depurar**, selecione **Iniciar sem Depurar**.
+6. No menu **Depurar**, selecione **Iniciar sem depurar**.
 
 7. Na página da Web gerada, selecione a `HelloWorld` operação.
 
@@ -53,7 +55,7 @@ Este tópico descreve os procedimentos para migrar um serviço AJAX ASP.NET bás
 
 ### <a name="to-create-an-equivalent-wcf-ajax-service-application"></a>Para criar um aplicativo de serviço WCF AJAX equivalente
 
-1. Clique com o botão direito do mouse no projeto **ASPHello** e selecione **Adicionar**, **novo item**e, em seguida, **serviço WCF habilitado para AJAX**.
+1. Clique com o botão direito do mouse no projeto **ASPHello** e selecione **Adicionar**, **novo item** e, em seguida, **serviço WCF habilitado para AJAX**.
 
 2. Nomeie o serviço `WCFHello` e clique em **Adicionar**.
 
@@ -111,6 +113,7 @@ Este tópico descreve os procedimentos para migrar um serviço AJAX ASP.NET bás
 11. O `WCFHello.svc/HelloWorld` e os `Service1.aspx/HelloWorld` pontos de extremidade agora são funcionalmente equivalentes.
 
 ## <a name="example"></a>Exemplo
+
  O código que resulta dos procedimentos descritos neste tópico é fornecido no exemplo a seguir.
 
 ```csharp
@@ -193,9 +196,9 @@ d.Add("two", 2);
 
  Esse dicionário é representado em objetos JSON, conforme mostrado na lista a seguir:
 
-- [{"Chave": "um", "valor": 1}, {"chave": "dois", "valor": 2}] pelo<xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>
+- [{"Chave": "um", "valor": 1}, {"chave": "dois", "valor": 2}] pelo <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>
 
-- {"One": 1, "Two": 2} pelo AJAX ASP.NET<xref:System.Web.Script.Serialization.JavaScriptSerializer>
+- {"One": 1, "Two": 2} pelo AJAX ASP.NET <xref:System.Web.Script.Serialization.JavaScriptSerializer>
 
  O <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> é mais potente no sentido de que ele pode manipular dicionários em que o tipo de chave não é uma cadeia de caracteres, enquanto o <xref:System.Web.Script.Serialization.JavaScriptSerializer> não pode. Mas o último é mais amigável para JSON.
 
@@ -203,15 +206,15 @@ d.Add("two", 2);
 
 |Categoria de diferenças|DataContractJsonSerializer|ASP.NET AJAX JavaScriptSerializer|
 |-----------------------------|--------------------------------|---------------------------------------|
-|Desserializar o buffer vazio (novo byte [0]) em <xref:System.Object> (ou <xref:System.Uri> ou em algumas outras classes).|SerializationException|null|
-|Serialização de<xref:System.DBNull.Value>|{}(ou {"__type": "#System"})|Null|
+|Desserializar o buffer vazio (novo byte [0]) em <xref:System.Object> (ou <xref:System.Uri> ou em algumas outras classes).|SerializationException|nulo|
+|Serialização de <xref:System.DBNull.Value>|{} (ou {"__type": "#System"})|Nulo|
 |Serialização dos membros privados de tipos de [Serializable].|serializado|não serializado|
 |Serialização das propriedades públicas de <xref:System.Runtime.Serialization.ISerializable> tipos.|não serializado|serializado|
 |"Extensões" de JSON|Segue a especificação JSON, que requer aspas em nomes de membros de objetos ({"a": "Olá"}).|Dá suporte aos nomes de membros de objeto sem aspas ({a: "Olá"}).|
-|<xref:System.DateTime>Tempo universal coordenado (UTC)|Não dá suporte ao formato " \\ /Date (123456789U) \\ /" ou " \\ /Date \\ (\d + (U&#124; ( \\ + \\ -[\d {4} ]))? \\ ) \\ \\ /)".|Dá suporte ao formato " \\ /Date (123456789U) \\ /" e " \\ /Date \\ (\d + (U&#124; ( \\ + \\ -[\d {4} ]))? \\ ) \\ \\ /) "como valores de DateTime.|
+|<xref:System.DateTime> Tempo universal coordenado (UTC)|Não dá suporte ao formato " \\ /Date (123456789U) \\ /" ou " \\ /Date \\ (\d + (U&#124; ( \\ + \\ -[\d {4} ]))? \\ ) \\ \\ /)".|Dá suporte ao formato " \\ /Date (123456789U) \\ /" e " \\ /Date \\ (\d + (U&#124; ( \\ + \\ -[\d {4} ]))? \\ ) \\ \\ /) "como valores de DateTime.|
 |Representação de dicionários|Uma matriz de KeyValuePair \<K,V> , lida com tipos de chave que não são cadeias de caracteres.|Como objetos JSON reais – mas só trata os tipos de chave que são cadeias de caracteres.|
 |Caracteres de escape|Sempre com uma barra de escape (/); Nunca permite caracteres JSON inválidos sem escape, como "\n".|Com uma barra de escape (/) para valores DateTime.|
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como usar a configuração para adicionar um ponto de extremidade do ASP.NET AJAX](how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md)
+- [Como: usar a configuração para adicionar um ponto de extremidade AJAX ASP.NET](how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md)

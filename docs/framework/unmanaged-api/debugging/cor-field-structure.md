@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura de COR_FIELD'
 title: Estrutura COR_FIELD
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: c0822423-a9df-4961-950d-50dcc152f863
 topic_type:
 - apiref
-ms.openlocfilehash: 78e34d9d33d34047e3ebd2effb4894bc7b709585
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: a3e9dcc2a5c3bb2abae42dab4292c1d285df5ad7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73132350"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747100"
 ---
 # <a name="cor_field-structure"></a>Estrutura COR_FIELD
+
 Fornece informações sobre um campo em um objeto.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,7 +39,7 @@ typedef struct COR_FIELD{
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`token`|Um `mdFieldDef` token que pode ser usado para obter informações de campo.|  
 |`offset`|O deslocamento, em bytes, para os dados de campo no objeto.|  
@@ -47,13 +49,14 @@ typedef struct COR_FIELD{
 ## <a name="remarks"></a>Comentários  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
   
  **Biblioteca:** CorGuids.lib  
   
- **Versões do .NET Framework:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
+ **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## <a name="see-also"></a>Consulte também
 

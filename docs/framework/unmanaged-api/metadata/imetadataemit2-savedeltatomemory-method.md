@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataEmit2:: SaveDeltaToMemory'
 title: Método IMetaDataEmit2::SaveDeltaToMemory
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: e2146726-0084-4c9e-a2d2-e8d461b13b21
 topic_type:
 - apiref
-ms.openlocfilehash: 8a6f11996425c92d9b0e3123ee2d3a064739454b
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 3ef01889df6dede85947508ca08635c95d655666
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84492738"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99771750"
 ---
 # <a name="imetadataemit2savedeltatomemory-method"></a>Método IMetaDataEmit2::SaveDeltaToMemory
+
 Salva as alterações da sessão de edição e continuação atual na memória.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,6 +37,7 @@ HRESULT SaveDeltaToMemory (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pbData`  
  fora O endereço no qual começar a gravar o Delta de metadados.  
   
@@ -42,15 +45,16 @@ HRESULT SaveDeltaToMemory (
  no O tamanho das alterações. Use [IMetaDataEmit2:: GetDeltaSaveSize](imetadataemit2-getdeltasavesize-method.md) para determinar o tamanho.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataEmit2](imetadataemit2-interface.md)
 - [Interface IMetaDataEmit](imetadataemit-interface.md)

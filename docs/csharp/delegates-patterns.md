@@ -4,11 +4,11 @@ description: Saiba mais sobre os padrões comuns para usar delegados em seu cód
 ms.date: 06/20/2016
 ms.assetid: 0ff8fdfd-6a11-4327-b061-0f2526f35b43
 ms.openlocfilehash: 22ab88e5b139381e3a8921baa20df035f1405146
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: 67ebdb695fd017d79d9f1f7f35d145042d5a37f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79399661"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92223690"
 ---
 # <a name="common-patterns-for-delegates"></a>Padrões Comuns para Delegados
 
@@ -151,6 +151,6 @@ Você não encontrará o método `Invoke()` listado na documentação de `System
 
 Você já viu o início de um componente de log que poderia ser expandido com outros gravadores e outros recursos. Com o uso de delegados no design, esses diferentes componentes ficam acoplados de forma bastante flexível. Isso traz vários benefícios. É muito fácil criar novos mecanismos de saída e anexá-los ao sistema. Esses outros mecanismos precisam de apenas um método: o método que grava a mensagem de log. Trata-se de um design que é muito flexível quando novos recursos são adicionados. O contrato necessário para qualquer gravador é implementar um método. Esse método pode ser estático ou de instância. Ele pode ser ter acesso público, privado ou qualquer outro acesso válido.
 
-A classe de agente pode fazer vários aprimoramentos ou alterações sem introduzir alterações significativas. Assim como qualquer classe, você não pode modificar a API pública sem o risco de fazer alterações significativas. Mas, como o acoplamento entre o agente e qualquer mecanismo de saída ocorre somente por meio do delegado, nenhum outro tipo (como interfaces ou classes base) é envolvido. O acoplamento é o menor possível.
+A classe de agente pode fazer vários aprimoramentos ou alterações sem introduzir alterações interruptivas. Assim como qualquer classe, você não pode modificar a API pública sem o risco de fazer alterações interruptivas. Mas, como o acoplamento entre o agente e qualquer mecanismo de saída ocorre somente por meio do delegado, nenhum outro tipo (como interfaces ou classes base) é envolvido. O acoplamento é o menor possível.
 
-[Avançar](events-overview.md)
+[Próximo](events-overview.md)

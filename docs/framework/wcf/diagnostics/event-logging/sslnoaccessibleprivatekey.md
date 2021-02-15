@@ -1,25 +1,28 @@
 ---
+description: 'Saiba mais sobre: SslNoAccessiblePrivateKey'
 title: SslNoAccessiblePrivateKey
 ms.date: 03/30/2017
 ms.assetid: 90cc793e-7ac8-45b2-81b8-2976e2485734
-ms.openlocfilehash: ee4c7d73d55add300b912bbdff6ffb819349cb9f
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 5ec81c31cd8cf7e478837b82b5d0c672eb066e7f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70797554"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99635916"
 ---
 # <a name="sslnoaccessibleprivatekey"></a>SslNoAccessiblePrivateKey
-Sessão 155  
+
+ID: 155  
   
- Severity Erro  
+ Gravidade: Erro  
   
- Categorias TransactionBridge  
+ Categoria: TransactionBridge  
   
 ## <a name="description"></a>Descrição  
+
  Esse evento indica que um certificado de identidade com o nome de entidade específico e a impressão digital não tem uma chave privada acessível. O evento lista o nome do processo e a ID do processo.  
   
 ## <a name="see-also"></a>Consulte também
 
-- [Registro de eventos em log](index.md)
+- [Log de eventos](index.md)
 - [Referência geral de eventos](events-general-reference.md)

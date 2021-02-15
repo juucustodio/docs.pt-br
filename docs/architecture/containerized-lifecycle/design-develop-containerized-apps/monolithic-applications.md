@@ -1,13 +1,13 @@
 ---
 title: Aplicativos monolíticos
 description: Entenda os principais conceitos da implantação de aplicativos monolíticos em contêineres.
-ms.date: 08/06/2020
-ms.openlocfilehash: f188a2ff576436d9378030e0a858ffb8110dad17
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.date: 01/06/2021
+ms.openlocfilehash: a66c76c473c116b303975040d893348182b96713
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87915439"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970532"
 ---
 # <a name="monolithic-applications"></a>Aplicativos monolíticos
 
@@ -37,7 +37,7 @@ De uma perspectiva de infraestrutura, cada servidor pode executar vários aplica
 
 Por fim, de uma perspectiva de disponibilidade, os aplicativos monolíticos devem ser implantados como um todo. Isso significa que se você precisar *parar e iniciar*, todas as funcionalidades e todos os usuários serão afetados durante a janela de implantação. Em certos casos, o uso do Azure e dos contêineres pode minimizar essas situações e reduzir a probabilidade de tempo de inatividade do aplicativo, como você pode ver na Figura 4-3.
 
-Os aplicativos monolíticos no Microsoft Azure podem ser implantados por meio de VMs dedicadas a cada instância. Com os [Conjuntos de Dimensionamento de VMs do Azure](https://docs.microsoft.com/azure/virtual-machine-scale-sets/), é possível dimensionar as VMs com facilidade.
+Os aplicativos monolíticos no Microsoft Azure podem ser implantados por meio de VMs dedicadas a cada instância. Com os [Conjuntos de Dimensionamento de VMs do Azure](/azure/virtual-machine-scale-sets/), é possível dimensionar as VMs com facilidade.
 
 Também é possível usar os [Serviços de Aplicativos do Azure](https://azure.microsoft.com/services/app-service/) para executar aplicativos monolíticos e dimensionar instâncias com facilidade, sem a necessidade de gerenciar as VMs. Os Serviços de Aplicativos do Azure também podem executar instâncias únicas de contêineres do Docker, simplificando a implantação.
 
@@ -69,7 +69,7 @@ Seja para validar rapidamente um contêiner implantado no Azure ou simplesmente 
 
 Usar o Serviço de Aplicativo do Azure é intuitivo e você pode começar a trabalhar rapidamente, porque ele oferece uma ótima integração com o Git para processar seu código, compilá-lo no Microsoft Visual Studio e implantá-lo diretamente no Azure. No entanto, tradicionalmente (sem o Docker), se você precisasse de outras funcionalidades, estruturas ou dependências não compatíveis com os Serviços de Aplicativos, deveria aguardar até a equipe do Azure atualizar essas dependências no Serviço de Aplicativo ou migrar para outros serviços como o Service Fabric, os Serviços de Nuvem ou até mesmo VMs simples, em que você tem mais controle e pode instalar um componente ou estrutura obrigatória para o aplicativo.
 
-Agora, conforme mostrado na Figura 4-4, ao usar o Visual Studio 2017, o suporte para contêineres no Serviço de Aplicativo do Azure oferece a capacidade de incluir tudo o que você deseja no ambiente do aplicativo. Se você tiver adicionado uma dependência ao aplicativo porque ele está sendo executado em um contêiner, terá a capacidade de incluir essas dependências no Dockerfile ou na imagem do Docker.
+Agora, como mostra a Figura 4-4, ao usar o Visual Studio 2019, o suporte a contêineres no serviço Azure App oferece a capacidade de incluir o que desejar em seu ambiente de aplicativo. Se você tiver adicionado uma dependência ao aplicativo porque ele está sendo executado em um contêiner, terá a capacidade de incluir essas dependências no Dockerfile ou na imagem do Docker.
 
 ![Captura de tela da caixa de diálogo Criar serviço de aplicativo mostrando um registro de contêiner.](./media/monolithic-applications/publish-azure-app-service-container.png)
 

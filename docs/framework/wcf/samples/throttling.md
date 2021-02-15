@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: limitação'
 title: Limitação
 ms.date: 03/30/2017
 helpviewer_keywords:
 - service behaviors, throttling sample
 - Throttling Sample [Windows Communication Foundation]
 ms.assetid: 40bb3582-8ae9-4410-96f0-6c515bfaf47c
-ms.openlocfilehash: f007d153a04117df872ea2fcdc68af38c57b53b3
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 91b69ca02e139064b012cab26bba8acd13002cbd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600861"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798271"
 ---
 # <a name="throttling"></a>Limitação
+
 O exemplo de limitação demonstra o uso de controles de limitação. Os controles de limitação colocam limites no número de chamadas simultâneas, instâncias ou sessões para evitar a sobrecarga de consumo de recursos. O comportamento de limitação é especificado nas configurações do arquivo de configuração de serviço. Este exemplo é baseado no [introdução](getting-started-sample.md) que implementa um serviço de calculadora.  
   
  Neste exemplo, o cliente é um aplicativo de console (. exe) e o serviço é hospedado pelo Serviços de Informações da Internet (IIS).  

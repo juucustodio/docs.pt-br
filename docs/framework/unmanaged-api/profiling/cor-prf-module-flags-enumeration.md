@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração de COR_PRF_MODULE_FLAGS'
 title: Enumeração COR_PRF_MODULE_FLAGS
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7bc3a938-0df1-4739-9ff1-89cff454b704
 topic_type:
 - apiref
-ms.openlocfilehash: 12e7faa8d9fee7698de9d9734f522d818f225c84
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 0be5d97bfb6bea069d039d175fc554e0ef59993d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500813"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706431"
 ---
 # <a name="cor_prf_module_flags-enumeration"></a>Enumeração COR_PRF_MODULE_FLAGS
+
 Especifica as propriedades de um módulo.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -41,10 +43,10 @@ typedef enum
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |COR_PRF_MODULE_DISK|O módulo foi carregado do disco.|  
-|COR_PRF_MODULE_NGEN|O módulo foi gerado pelo gerador de imagem nativa (NGen. exe).|  
+|COR_PRF_MODULE_NGEN|O módulo foi gerado pelo gerador de imagem nativa (Ngen.exe).|  
 |COR_PRF_MODULE_DYNAMIC|O módulo foi criado por métodos no <xref:System.Reflection.Emit?displayProperty=nameWithType> namespace.|  
 |COR_PRF_MODULE_COLLECTIBLE|O tempo de vida do módulo é gerenciado pelo coletor de lixo.|  
 |COR_PRF_MODULE_RESOURCE|O módulo não contém metadados e é usado estritamente como um recurso. O equivalente gerenciado desse bit é o <xref:System.Reflection.Module.IsResource%2A?displayProperty=nameWithType> método.|  
@@ -52,9 +54,11 @@ typedef enum
 |COR_PRF_MODULE_WINDOWS_RUNTIME|O sinalizador de tipo de conteúdo Windows Runtime é definido nos metadados para o assembly do módulo. Esse é o caso para todos os módulos de metadados do Windows (. winmd).|  
   
 ## <a name="remarks"></a>Comentários  
+
  Bits de COR_PRF_MODULE_FLAGS são retornados para o criador de perfil no `pdwModuleFlags` parâmetro de saída do método [ICorProfilerInfo3:: GetModuleInfo2](icorprofilerinfo3-getmoduleinfo2-method.md) . Algumas combinações de dois ou mais sinalizadores são possíveis, mas nem todas as combinações são possíveis.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -63,6 +67,6 @@ typedef enum
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criando perfil de enumerações](profiling-enumerations.md)

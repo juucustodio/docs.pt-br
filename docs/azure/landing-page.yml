@@ -10,12 +10,12 @@ metadata:
   ms.technology: azure
   ms.service: multiple
   ms.prod: azure-dotnet
-  ms.openlocfilehash: a7b9b909e500979750d57cc6047153123cd192e5
-  ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
+  ms.openlocfilehash: 3f84758863561be809078b888f18308d5cbcfb82
+  ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 07/09/2020
-  ms.locfileid: "86174896"
+  ms.lasthandoff: 01/30/2021
+  ms.locfileid: "99216058"
 landingContent:
 - title: Introdução ao .NET no Azure
   linkLists:
@@ -29,7 +29,7 @@ landingContent:
       url: tools.md
     - text: Autentique seu aplicativo
       url: authentication.md
-    - text: Registro em log
+    - text: Registrando em log
       url: logging.md
     - text: Exemplo de SDK
       url: /samples/dotnet/samples/azure-identity-resource-management-storage/
@@ -51,7 +51,7 @@ landingContent:
     links:
     - text: Serviço de Aplicativo
       url: /azure/app-service/overview
-    - text: Azure Functions
+    - text: Funções do Azure
       url: /azure/azure-functions/functions-overview
   - linkListType: quickstart
     links:
@@ -75,7 +75,7 @@ landingContent:
       url: /azure/app-service/app-service-web-tutorial-connect-msi
     - text: API Web com CORS no Serviço de Aplicativo do Azure
       url: /azure/app-service/app-service-web-tutorial-rest-api
-- title: Compilar aplicativos nativos de nuvem
+- title: Criar aplicativos nativos da nuvem
   linkLists:
   - linkListType: quickstart
     links:
@@ -141,7 +141,7 @@ landingContent:
       url: /learn/modules/develop-app-that-queries-azure-sql/
     - text: Criar um aplicativo .NET Core para o Azure Cosmos DB no Visual Studio Code
       url: /learn/modules/build-cosmos-db-app-with-vscode/
-    - text: Armazenar dados do aplicativo com o Armazenamento de Blobs do Azure
+    - text: Armazenar dados de aplicativos com o armazenamento de BLOBs do Azure
       url: /learn/modules/store-app-data-with-azure-blob-storage/
     - text: Persistir e recuperar dados relacionais com o Entity Framework Core
       url: /learn/modules/persist-data-ef-core/
@@ -214,10 +214,10 @@ landingContent:
   - linkListType: architecture
     links:
     - text: 'Microsserviços do .NET: Arquitetura para aplicativos .NET em contêineres'
-      url: /dotnet/architecture/microservices/
+      url: ../architecture/microservices/index.md
     - text: Arquitetar aplicativos Web modernos com o ASP.NET Core e o Azure
-      url: /dotnet/architecture/modern-web-apps-azure/
+      url: ../architecture/modern-web-apps-azure/index.md
     - text: Ciclo de vida de aplicativo Docker em contêiner com plataforma e ferramentas da Microsoft
-      url: /dotnet/architecture/containerized-lifecycle/
+      url: ../architecture/containerized-lifecycle/index.md
     - text: Modernize os aplicativos .NET existentes com contêineres do Windows e a nuvem do Azure
       url: /dotnet/architecture/modernize-with-azure-containers/

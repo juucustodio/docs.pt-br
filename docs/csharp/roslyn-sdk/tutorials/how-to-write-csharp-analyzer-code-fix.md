@@ -3,12 +3,12 @@ title: 'Tutorial: escrever seu primeiro analisador e correção de código'
 description: Este tutorial fornece instruções passo a passo para criar um analisador e correção de código usando o SDK do .NET Compiler (APIs do Roslyn).
 ms.date: 08/01/2018
 ms.custom: mvc
-ms.openlocfilehash: e79907f364939462b7d0d5814c4752be23bcfdf3
-ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
+ms.openlocfilehash: 33c00e90d768021e36a7987be0ddd7daec4cfcec
+ms.sourcegitcommit: 67ebdb695fd017d79d9f1f7f35d145042d5a37f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87381587"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92224035"
 ---
 # <a name="tutorial-write-your-first-analyzer-and-code-fix"></a>Tutorial: escrever seu primeiro analisador e correção de código
 
@@ -18,27 +18,7 @@ Neste tutorial, você explorará a criação de um **analisador** e uma **corre�
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-> [!NOTE]
-> O modelo atual do **analisador do Visual Studio com o código Fix (.net Standard)** tem um bug conhecido e deve ser corrigido no Visual Studio 2019 versão 16,7. Os projetos no modelo não serão compilados, a menos que sejam feitas as seguintes alterações:
->
-> 1. Selecione **ferramentas**  >  **Opções**  >  pacote**Gerenciador de pacotes NuGet**  >  **fontes**
->    - Selecione o botão de adição para adicionar uma nova fonte:
->    - Defina a **origem** como `https://dotnet.myget.org/F/roslyn-analyzers/api/v3/index.json` e selecione **Atualizar**
-> 1. No **Gerenciador de soluções**, clique com o botão direito do mouse no projeto **MakeConst. vsix** e selecione **Editar arquivo de projeto**
->    - Atualize o `<AssemblyName>` nó para adicionar o `.Visx` sufixo:
->      - `<AssemblyName>MakeConst.Vsix</AssemblyName>`
->    - Atualize o `<ProjectReference>` nó na linha 41 para alterar o `TargetFramework` valor:
->      - `<ProjectReference Update="@(ProjectReference)" AdditionalProperties="TargetFramework=netstandard2.0" />`
-> 1. Atualize o arquivo *MakeConstUnitTests.cs* , no projeto *MakeConst. Test* :
->    - Altere a linha 9 para o seguinte, observe a alteração do namespace:
->      - `using Verify = Microsoft.CodeAnalysis.CSharp.Testing.MSTest.CodeFixVerifier<`
->    - Altere a linha 24 para o seguinte método:
->      - `await Verify.VerifyAnalyzerAsync(test);`
->    - Altere a linha 62 para o seguinte método:
->      - `await Verify.VerifyCodeFixAsync(test, expected, fixtest);`
-
-- [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/#visual-studio-2017-and-other-products)
-- [Visual Studio 2019](https://www.visualstudio.com/downloads)
+- [Visual Studio 2019](https://www.visualstudio.com/downloads) versão 16,7 ou posterior
 
 Você precisará instalar o **SDK do .net Compiler Platform** por meio do instalador do Visual Studio:
 

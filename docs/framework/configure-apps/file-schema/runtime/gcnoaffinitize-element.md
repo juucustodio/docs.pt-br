@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: <GCNoAffinitize> elemento'
 title: Elemento GCNoAffinitize
 ms.date: 11/08/2019
 helpviewer_keywords:
 - gcNoAffinitize element
 - <gcNoAffinitize> element
-ms.openlocfilehash: 16d6e5adefe2b632d7251669650058d7df7cea70
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 139c0fd9e1ec829a3569b77a85e6526bec765e21
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "84004732"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754544"
 ---
 # <a name="gcnoaffinitize-element"></a>Elemento \<GCNoAffinitize>
 
@@ -19,7 +20,7 @@ Especifica se os threads GC do servidor relacionar ou não devem ser usados com 
 &nbsp;&nbsp;\<runtime>\
 &nbsp;&nbsp;&nbsp;&nbsp;\<GCNoAffinitize>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <GCNoAffinitize
@@ -56,7 +57,7 @@ Nenhum.
 
 ## <a name="remarks"></a>Comentários
 
-Por padrão, os threads GC do servidor são relacionados com suas respectivas CPUs. Cada um dos processadores disponíveis do sistema tem seu próprio heap e thread de GC. Normalmente, essa é a configuração preferida, pois otimiza o uso do cache. Começando com .NET Framework 4.6.2, definindo o atributo **GCNoAffinitize** do elemento GCNoAffinitize `enabled` como `true` , você pode especificar que os threads e as CPUs do servidor GC não devem estar rigidamente acoplados.
+Por padrão, os threads GC do servidor são relacionados com suas respectivas CPUs. Cada um dos processadores disponíveis do sistema tem seu próprio heap e thread de GC. Normalmente, essa é a configuração preferida, pois otimiza o uso do cache. Começando com .NET Framework 4.6.2, definindo o atributo  do elemento GCNoAffinitize `enabled` como `true` , você pode especificar que os threads e as CPUs do servidor GC não devem estar rigidamente acoplados.
 
 Você pode especificar o elemento de configuração **GCNoAffinitize** sozinho para não relacionar THREADs GC de servidor com CPUs. Você também pode usá-lo junto com o elemento [GCHeapCount](gcheapcount-element.md) para controlar o número de heaps e threads de GC usados por um aplicativo.
 
@@ -87,7 +88,7 @@ O exemplo a seguir não relacionar threads GC do servidor e limita o número de 
 </configuration>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=nameWithType>
 - [Elemento GCHeapAffinitizeMask](gcheapaffinitizemask-element.md)

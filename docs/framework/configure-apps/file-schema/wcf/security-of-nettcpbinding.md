@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <security> de <netTcpBinding>'
 title: <security> de <netTcpBinding>
 ms.date: 03/30/2017
 ms.assetid: 286cd191-4fd5-4c4e-a223-9c71cf7fdead
-ms.openlocfilehash: aa01e906ddd2f15007c72bfc2a45122cfb15ba2c
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: ad924f5a6ea9e003f6427ee76d3aef3afde9d083
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73736377"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683067"
 ---
 # <a name="security-of-nettcpbinding"></a>\<security> de \<netTcpBinding>
+
 Define as configurações de segurança para uma associação.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -19,7 +21,7 @@ Define as configurações de segurança para uma associação.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<security>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <security mode="Message/None/Transport/TransportWithCredential">
@@ -31,6 +33,7 @@ Define as configurações de segurança para uma associação.
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai  
   
 ### <a name="attributes"></a>Atributos  
@@ -62,13 +65,14 @@ Define as configurações de segurança para uma associação.
 |associação|O elemento Binding do [\<netTcpBinding>](nettcpbinding.md) .|  
   
 ## <a name="remarks"></a>Comentários  
+
  Cada uma das associações padrão fornece parâmetros para controlar os requisitos de segurança de transferência. Esses parâmetros normalmente incluem o modo de segurança que especificou se a segurança no nível de mensagem ou de transporte é usada e a escolha do tipo de credencial do cliente. Com base na escolha das opções que esses parâmetros apresentam, uma pilha de canais é construída com a segurança apropriada.  
   
  As associações fornecidas pelo sistema fornecidas pelo Windows Communication Foundation (WCF) são um conjunto projetado para atender a alguns dos requisitos de cenário mais comuns. Cada uma dessas associações permite a especificação de requisitos de segurança para alguns cenários específicos de destino.  
   
  Este elemento de configuração fornece as especificações de segurança para o `netTcpBinding` . Essa é uma associação segura, confiável e otimizada adequada para comunicação entre computadores. Por padrão, ele gera uma pilha de comunicação de tempo de execução que dá suporte a TCP para entrega de mensagens e segurança do Windows para segurança e autenticação de mensagens, WS-ReliableMessaging para confiabilidade e codificação de mensagens binárias.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.NetTcpSecurity>
 - <xref:System.ServiceModel.NetTcpBinding.Security%2A>

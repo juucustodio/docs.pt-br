@@ -10,24 +10,27 @@ helpviewer_keywords:
 - providers, UI Automation
 - UI Automation, clients
 ms.assetid: 69eebd8b-39ed-40e7-93cc-4457c4caf746
-ms.openlocfilehash: 4f51a31a433986822a9dba22bf8f17ade00bbb76
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 8a97c4bfbe361eafc11cd920b032424f67c3a5fb
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87168091"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96240440"
 ---
 # <a name="ui-automation-events-overview"></a>Visão geral sobre eventos de automação de interface do usuário
+
 > [!NOTE]
 > Esta documentação destina-se a desenvolvedores do .NET Framework que querem usar as classes da [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] gerenciadas definidas no namespace <xref:System.Windows.Automation>. Para obter as informações mais recentes sobre a [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], consulte [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32) (API de Automação do Windows: Automação da Interface do Usuário).  
   
- [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)]a notificação de eventos é um recurso importante para tecnologias assistenciais, como leitores de tela e ampliadores de tela. Esses clientes de automação da interface do usuário rastreiam eventos que são gerados por provedores de automação de interface do usuário quando algo acontece no [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] e usam as informações para notificar os usuários finais.  
+ [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] a notificação de eventos é um recurso importante para tecnologias assistenciais, como leitores de tela e ampliadores de tela. Esses clientes de automação da interface do usuário rastreiam eventos que são gerados por provedores de automação de interface do usuário quando algo acontece no [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] e usam as informações para notificar os usuários finais.  
   
  A eficiência é aprimorada permitindo que os aplicativos de provedor gerem eventos de forma seletiva, dependendo se algum cliente estiver inscrito nesses eventos ou não, se nenhum cliente estiver ouvindo nenhum evento.  
   
 <a name="Types_of_Events"></a>
+
 ## <a name="types-of-events"></a>Tipos de eventos  
- [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]os eventos se enquadram nas categorias a seguir.  
+
+ [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] os eventos se enquadram nas categorias a seguir.  
   
 |Evento|Descrição|  
 |-----------|-----------------|  
@@ -40,7 +43,7 @@ ms.locfileid: "87168091"
   
  Os eventos a seguir podem ser gerados mesmo quando o estado da interface do usuário não foi alterado.  
   
-- `AutomationPropertyChangedEvent`(dependendo da propriedade que foi alterada)  
+- `AutomationPropertyChangedEvent` (dependendo da propriedade que foi alterada)  
   
 - `ElementSelectedEvent`  
   
@@ -49,8 +52,10 @@ ms.locfileid: "87168091"
 - `TextChangedEvent`  
   
 <a name="UI_Automation_Event_Identifiers"></a>
+
 ## <a name="ui-automation-event-identifiers"></a>Identificadores de evento de automação da interface do usuário  
- [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)]os eventos são identificados por <xref:System.Windows.Automation.AutomationEvent> objetos. A <xref:System.Windows.Automation.AutomationIdentifier.Id%2A> propriedade contém um valor que identifica exclusivamente o tipo de evento.  
+
+ [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] os eventos são identificados por <xref:System.Windows.Automation.AutomationEvent> objetos. A <xref:System.Windows.Automation.AutomationIdentifier.Id%2A> propriedade contém um valor que identifica exclusivamente o tipo de evento.  
   
  Os valores possíveis para <xref:System.Windows.Automation.AutomationIdentifier.Id%2A> são fornecidos na tabela a seguir, juntamente com o tipo usado para argumentos de evento. Observe que os identificadores usados por clientes e provedores são campos nomeados de forma idêntica de classes diferentes.  
   
@@ -64,10 +69,12 @@ ms.locfileid: "87168091"
 |<xref:System.Windows.Automation.WindowPattern.WindowClosedEvent?displayProperty=nameWithType>|<xref:System.Windows.Automation.WindowPatternIdentifiers.WindowClosedEvent?displayProperty=nameWithType>|<xref:System.Windows.Automation.WindowClosedEventArgs>|  
   
 <a name="UI_Automation_Event_Arguments"></a>
+
 ## <a name="ui-automation-event-arguments"></a>Argumentos de evento de automação da interface do usuário  
+
  As classes a seguir encapsulam argumentos de evento.  
   
-|Classe|Descrição|  
+|Class|Descrição|  
 |-----------|-----------------|  
 |<xref:System.Windows.Automation.AsyncContentLoadedEventArgs>|Contém informações sobre o carregamento assíncrono de conteúdo, incluindo a porcentagem de carregamento concluído.|  
 |<xref:System.Windows.Automation.AutomationEventArgs>|Contém informações sobre um evento simples que não requer dados adicionais.|  
@@ -82,7 +89,7 @@ ms.locfileid: "87168091"
   
  Para obter uma lista de identificadores de eventos, consulte [eventos de automação da interface do usuário para clientes](ui-automation-events-for-clients.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Automação de Eventos de Interface de Usuário para Clientes.](ui-automation-events-for-clients.md)
 - [Implementação do provedor de automação de interface do usuário no lado do servidor](server-side-ui-automation-provider-implementation.md)

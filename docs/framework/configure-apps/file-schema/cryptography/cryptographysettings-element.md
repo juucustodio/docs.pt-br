@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <cryptographySettings> elemento'
 title: Elemento <cryptographySettings>
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,21 +9,22 @@ helpviewer_keywords:
 - cryptographySettings element
 - <cryptographySettings> element
 ms.assetid: 6201b7da-bcb7-49f7-b9f5-ba1fe05573b9
-ms.openlocfilehash: fe6de09213c6f980e8eb205a318aae50033b2a84
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: afd4fdbc24dfaac60ce24b7a439a8d4d8a9427ea
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79155226"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99730090"
 ---
 # <a name="cryptographysettings-element"></a>Elemento \<cryptographySettings>
+
 Contém configurações de criptografia.  
 
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<mscorlib>**](mscorlib-element-for-cryptography-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<cryptographySettings>**
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
       <cryptographySettings>
@@ -30,9 +32,11 @@ Contém configurações de criptografia.
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
+
  Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  
@@ -50,6 +54,7 @@ Contém configurações de criptografia.
 |`mscorlib`|Contém o `cryptographySettings` elemento.|  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir mostra como usar o **\<cryptographySettings>** elemento para conter mapeamentos de nome de criptografia e mapeamentos de OID. Este exemplo configura o tempo de execução para que <xref:System.Security.Cryptography.HashAlgorithm.Create%2A?displayProperty=nameWithType> o retorne um `MyHashClass` objeto e a `MyCryptoClass` classe seja mapeada para o identificador de objeto 1.3.36.2.1.  
   
 ```xml  
@@ -76,8 +81,8 @@ Contém configurações de criptografia.
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Esquema de arquivos de configuração](../index.md)
+- [Esquema do arquivo de configuração](../index.md)
 - [Esquema de configurações de criptografia](index.md)
-- [Serviços de Criptografia](../../../../standard/security/cryptographic-services.md)
+- [Serviços criptográficos](../../../../standard/security/cryptographic-services.md)

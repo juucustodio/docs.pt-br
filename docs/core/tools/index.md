@@ -1,23 +1,23 @@
 ---
-title: CLI do .NET Core
+title: CLI do .NET
 titleSuffix: ''
-description: Uma visão geral do CLI do .NET Core e de seus recursos.
+description: Uma visão geral da CLI do .NET e seus recursos.
 ms.topic: overview
 ms.date: 02/13/2020
-ms.openlocfilehash: 18dde384058206f437b53572b2f8331d65324482
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.openlocfilehash: 6a12e2d16afe36092c10e14a7465fa3bdbb23f32
+ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88062685"
+ms.lasthandoff: 11/15/2020
+ms.locfileid: "94633850"
 ---
-# <a name="net-core-cli-overview"></a>Visão geral da CLI do .NET Core
+# <a name="net-cli-overview"></a>Visão geral da CLI do .NET
 
 **Este artigo aplica-se a:** ✔️ SDK do .net Core 2,1 e versões posteriores
 
-A CLI (interface de linha de comando) do .NET Core é uma ferramentas de plataforma cruzada para o desenvolvimento, a criação, a execução e a publicação de aplicativos .NET Core.
+A CLI (interface de linha de comando) do .NET é uma ferramentas de plataforma cruzada para o desenvolvimento, a criação, a execução e a publicação de aplicativos .NET.
 
-O CLI do .NET Core está incluído no [SDK do .NET Core](../sdk.md). Para saber como instalar o SDK do .NET Core, consulte [instalar o .NET Core](../install/windows.md).
+A CLI do .NET está incluída no [SDK do .net](../sdk.md). Para saber como instalar o SDK do .NET, consulte [instalar o .NET Core](../install/windows.md).
 
 ## <a name="cli-commands"></a>Comandos de CLI
 
@@ -60,15 +60,15 @@ Os comandos a seguir são instalados por padrão:
 - [`tool install`](dotnet-tool-install.md)
 - [`tool list`](dotnet-tool-list.md)
 - [`tool update`](dotnet-tool-update.md)
-- [`tool restore`](global-tools.md#install-a-local-tool)Disponível desde SDK do .NET Core 3,0.
-- [`tool run`](global-tools.md#invoke-a-local-tool)Disponível desde SDK do .NET Core 3,0.
+- [`tool restore`](global-tools.md#install-a-local-tool) Disponível desde SDK do .NET Core 3,0.
+- [`tool run`](global-tools.md#invoke-a-local-tool) Disponível desde SDK do .NET Core 3,0.
 - [`tool uninstall`](dotnet-tool-uninstall.md)
 
-Ferramentas são aplicativos de console que são instalados a partir de pacotes NuGet e são invocados no prompt de comando. Você pode escrever ferramentas por conta própria ou instalar ferramentas escritas por terceiros. As ferramentas também são conhecidas como ferramentas globais, ferramentas de caminho de ferramenta e ferramentas locais. Para obter mais informações, consulte [visão geral das ferramentas do .NET Core](global-tools.md).
+Ferramentas são aplicativos de console que são instalados a partir de pacotes NuGet e são invocados no prompt de comando. Você pode escrever ferramentas por conta própria ou instalar ferramentas escritas por terceiros. As ferramentas também são conhecidas como ferramentas globais, ferramentas de caminho de ferramenta e ferramentas locais. Para obter mais informações, consulte [visão geral das ferramentas .net](global-tools.md).
 
 ## <a name="command-structure"></a>Estrutura de comando
 
-A estrutura de comando CLI consiste no [driver ("dotnet")](#driver), [do comando](#command) e possivelmente de [opções](#options) e [argumentos](#arguments) de comando. É possível ver esse padrão na maioria das operações de CLI, como ao criar um novo aplicativo de console e executá-lo a partir da linha de comando, como mostram os comandos a seguir quando executados a partir de um diretório chamado *my_app*:
+A estrutura de comando CLI consiste no [driver ("dotnet")](#driver), [do comando](#command) e possivelmente de [opções](#options) e [argumentos](#arguments) de comando. É possível ver esse padrão na maioria das operações de CLI, como ao criar um novo aplicativo de console e executá-lo a partir da linha de comando, como mostram os comandos a seguir quando executados a partir de um diretório chamado *my_app* :
 
 ```dotnetcli
 dotnet new console
@@ -80,7 +80,7 @@ dotnet /build_output/my_app.dll
 
 O driver é chamado [dotnet](dotnet.md) e tem duas responsabilidades, executar um [aplicativo dependente da estrutura](../deploying/index.md) ou executar um comando.
 
-Para executar um aplicativo dependente da estrutura, especifique o aplicativo após o driver, por exemplo, `dotnet /path/to/my_app.dll`. Ao executar o comando na pasta onde está a DLL do aplicativo, basta executar `dotnet my_app.dll`. Se você quiser usar uma versão específica do .NET Core Runtime, use a opção `--fx-version <VERSION>` (consulte a referência [do comando dotnet](dotnet.md)).
+Para executar um aplicativo dependente da estrutura, especifique o aplicativo após o driver, por exemplo, `dotnet /path/to/my_app.dll`. Ao executar o comando na pasta onde está a DLL do aplicativo, basta executar `dotnet my_app.dll`. Se você quiser usar uma versão específica do tempo de execução do .NET, use a `--fx-version <VERSION>` opção (consulte a referência de [comando dotnet](dotnet.md) ).
 
 Quando você fornece um comando para o driver, `dotnet.exe` inicia o processo de execução do comando da CLI. Por exemplo:
 
@@ -105,4 +105,4 @@ As opções que você passa na linha de comando são aquelas do comando invocado
 ## <a name="see-also"></a>Consulte também
 
 - [repositório do GitHub do dotnet/SDK](https://github.com/dotnet/sdk/)
-- [Guia de instalação do .NET Core](../install/windows.md)
+- [Guia de instalação do .NET](../install/windows.md)

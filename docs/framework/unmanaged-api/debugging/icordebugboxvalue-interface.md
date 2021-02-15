@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugBoxValue'
 title: Interface ICorDebugBoxValue
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3d3ae7e2-97d4-46de-a2c3-cb78f3490f9d
 topic_type:
 - apiref
-ms.openlocfilehash: bece1be7474c57d38f083e322c2af1b0ba705ee9
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 86a985d3cbb8330efdef1d6636f91b64c3f78bc6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82894761"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711928"
 ---
 # <a name="icordebugboxvalue-interface"></a>Interface ICorDebugBoxValue
 
@@ -37,6 +38,7 @@ Uma subclasse de "ICorDebugHeapValue" que representa um objeto de classe de valo
 > Esta interface não dá suporte para chamada remota, seja entre computadores ou processos cruzados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração de METAHOST_CONFIG_FLAGS'
 title: Enumeração METAHOST_CONFIG_FLAGS
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 6f1e389f-ed99-4d6a-a0ba-72d7d869a01d
 topic_type:
 - apiref
-ms.openlocfilehash: 6b37fcfc04e3ec880c67f102ec12d7f3e4b06a43
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 56d70f50d3b4c48b7fbf1aa3be6fc11cda904638
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84493156"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99679635"
 ---
 # <a name="metahost_config_flags-enumeration"></a>Enumeração METAHOST_CONFIG_FLAGS
+
 Descreve os possíveis sinalizadores retornados no `pdwConfigFlags` parâmetro do método [ICLRMetaHostPolicy:: GetRequestedRuntime](iclrmetahostpolicy-getrequestedruntime-method.md) , indicando a presença e a configuração do `useLegacyV2RuntimeActivationPolicy` atributo no [ \<startup> elemento](../../configure-apps/file-schema/startup/startup-element.md) do arquivo de configuração.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,7 +39,7 @@ typedef enum {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`METAHOST_CONFIG_FLAGS_LEGACY_V2_ACTIVATION_POLICY_UNSET`|O `useLegacyV2RuntimeActivationPolicy` atributo não estava presente no [ \<startup> elemento](../../configure-apps/file-schema/startup/startup-element.md).|  
 |`METAHOST_CONFIG_FLAGS_LEGACY_V2_ACTIVATION_POLICY_TRUE`|O `useLegacyV2RuntimeActivationPolicy` atributo estava presente e definido como `true` .|  
@@ -47,16 +49,17 @@ typedef enum {
 ## <a name="remarks"></a>Comentários  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MetaHost. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Hospedando enumerações](hosting-enumerations.md)
 - [Método GetRequestedRuntime](iclrmetahostpolicy-getrequestedruntime-method.md)
-- [\<startup>Elementos](../../configure-apps/file-schema/startup/startup-element.md)
+- [\<startup> Elementos](../../configure-apps/file-schema/startup/startup-element.md)

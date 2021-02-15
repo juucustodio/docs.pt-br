@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <cryptoClass> elemento'
 title: Elemento <cryptoClass>
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,14 +9,15 @@ helpviewer_keywords:
 - cryptoClass element
 - <cryptoClass> element
 ms.assetid: 03db52ef-010e-44ea-b6fd-b9c900ecad50
-ms.openlocfilehash: 4872fbd6fa043902e8c69f158bee5d0c915ec83a
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 503a079ea78a71a11e4c750a629cf67c9244a25d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74088657"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698929"
 ---
 # <a name="cryptoclass-element"></a>Elemento \<cryptoClass>
+
 Contém uma classe de criptografia que tem um mapeamento para um nome amigável no [\<nameEntry>](nameentry-element.md) elemento.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -25,13 +27,14 @@ Contém uma classe de criptografia que tem um mapeamento para um nome amigável 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<cryptoClasses>**](cryptoclasses-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<cryptoClass>**
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <cryptoClass customClassName="fully qualified type name" />  
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -41,6 +44,7 @@ Contém uma classe de criptografia que tem um mapeamento para um nome amigável 
 |`customClassName`|Atributo obrigatório.<br /><br /> Contém as informações para a classe de criptografia. Use esse atributo para fornecer um nome curto para sua classe. Você deve especificar uma cadeia de caracteres que atenda aos requisitos especificados na [especificação de nomes de tipo totalmente qualificados](../../../reflection-and-codedom/specifying-fully-qualified-type-names.md).|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -54,6 +58,7 @@ Contém uma classe de criptografia que tem um mapeamento para um nome amigável 
 |`mscorlib`|Contém o [\<cryptographySettings>](cryptographysettings-element.md) elemento.|  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir mostra como usar o **\<cryptoClass>** elemento para fazer referência a uma classe de criptografia e configurar o tempo de execução. Em seguida, você pode passar a cadeia de caracteres "RSA" para o <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=nameWithType> método e usar o <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> método para retornar um `MyCryptoRSAClass` objeto.  
   
 ```xml  
@@ -75,9 +80,9 @@ Contém uma classe de criptografia que tem um mapeamento para um nome amigável 
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Esquema de arquivos de configuração](../index.md)
+- [Esquema do arquivo de configuração](../index.md)
 - [Esquema de configurações de criptografia](index.md)
-- [Serviços de Criptografia](../../../../standard/security/cryptographic-services.md)
+- [Serviços criptográficos](../../../../standard/security/cryptographic-services.md)
 - [Configurando classes de criptografia](../../configure-cryptography-classes.md)

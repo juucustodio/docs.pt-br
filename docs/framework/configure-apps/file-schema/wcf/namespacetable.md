@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <namespaceTable>'
 title: <namespaceTable>
 ms.date: 03/30/2017
 ms.assetid: 64801766-01b7-4c65-9ce6-70ad5af67689
-ms.openlocfilehash: aefe7beec7335d80341e670961800907c2bd0200
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 73bfac93fba3247c02c2d86d1482af2563015a76
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70855098"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99684081"
 ---
 # \<namespaceTable>
 
@@ -18,7 +19,7 @@ Representa uma seção de configuração para definir um conjunto de elementos q
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<routing>**](routing.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<namespaceTable>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.serviceModel>

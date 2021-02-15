@@ -4,18 +4,18 @@ description: Saiba como os genéricos atuam como modelos de código que permitem
 author: kuhlenh
 ms.author: wiwagn
 ms.date: 10/09/2018
-ms.openlocfilehash: 99e3b589cd67c9d7026966d3d48d0e06a91fcc86
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 5f6e84e23b5bcdcb3dcd742823d83728fb43d195
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84287539"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557938"
 ---
 # <a name="generic-types-overview"></a>Visão geral de tipos genéricos
 
 Desenvolvedores usam genéricos o tempo todo no .NET, seja implícita ou explicitamente. Ao usar o LINQ no .NET, você já percebeu que você está trabalhando com <xref:System.Collections.Generic.IEnumerable%601>? Ou, se você já viu um exemplo online de um "repositório genérico" para conversar com bancos de dados usando Entity Framework, você viu que a maioria dos métodos retorna `IQueryable<T>` ? Talvez você tenha se perguntado o que é o **T** nesses exemplos e por que ele está lá.
 
-Introduzidos pela primeira vez no .NET Framework 2.0, os genéricos são essencialmente um "modelo de código" que permite aos desenvolvedores definir estruturas de dados [fortemente tipadas](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/hbzz1a9a(v=vs.100)) sem se comprometer com um tipo de dados real. Por exemplo, <xref:System.Collections.Generic.List%601> é uma [coleção genérica](xref:System.Collections.Generic) que pode ser declarada e usada com qualquer tipo, como `List<int>` , `List<string>` ou `List<Person>` .
+Introduzidos pela primeira vez no .NET Framework 2.0, os genéricos são essencialmente um "modelo de código" que permite aos desenvolvedores definir estruturas de dados [fortemente tipadas](/previous-versions/dotnet/netframework-4.0/hbzz1a9a(v=vs.100)) sem se comprometer com um tipo de dados real. Por exemplo, <xref:System.Collections.Generic.List%601> é uma [coleção genérica](xref:System.Collections.Generic) que pode ser declarada e usada com qualquer tipo, como `List<int>` , `List<string>` ou `List<Person>` .
 
 Para entender por que os genéricos são úteis, vamos dar uma olhada em uma classe específica antes e depois adicionar os genéricos: <xref:System.Collections.ArrayList>. No .NET Framework 1.0, os elementos `ArrayList` eram do tipo <xref:System.Object>. Qualquer elemento adicionado à coleção foi convertido silenciosamente em um `Object` . O mesmo ocorreria ao ler elementos da lista. Esse processo é conhecido como [conversão boxing e unboxing](../csharp/programming-guide/types/boxing-and-unboxing.md) e afeta o desempenho. Além do desempenho, no entanto, não há como determinar o tipo de dados na lista em tempo de compilação, o que torna o código frágil. Genéricos resolvem esse problema definindo o tipo de dados que cada instância de lista conterá. Resumindo, você só pode adicionar inteiros a `List<int>` e só pode adicionar Pessoas a `List<Person>`.
 
@@ -66,6 +66,6 @@ A primeira coisa que você pode observar aqui é que classificar a lista genéri
 
 Uma vantagem adicional de o runtime saber o tipo de seu genérico é uma melhor experiência de depuração. Quando você está depurando um genérico em C#, você sabe que tipo de cada elemento está na sua estrutura de dados. Sem os genéricos, você não faria ideia de qual o tipo de cada elemento.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Guia de Programação em C# – Genéricos](../csharp/programming-guide/generics/index.md)

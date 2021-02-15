@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: visão geral das transações de Windows Communication Foundation'
 title: Visão geral de transações do Windows Communication Foundation
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,14 +7,15 @@ helpviewer_keywords:
 - WCF, transactions
 - Windows Communication Foundation, transactions
 ms.assetid: c7757854-1207-4019-8b31-552578b7d570
-ms.openlocfilehash: a8e3306612e016568ad7cfd5138ab538af771a17
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: c9d251e4f49ee8e2edaa0ce2ff48738383a1b76c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84585825"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752646"
 ---
 # <a name="windows-communication-foundation-transactions-overview"></a>Visão geral de transações do Windows Communication Foundation
+
 As transações fornecem uma maneira de agrupar um conjunto de ações ou operações em uma única unidade indivisível de execução. Uma transação é uma coleção de operações com as seguintes propriedades:  
   
 - Atomicidade. Isso garante que todas as atualizações concluídas em uma transação específica sejam confirmadas e tornadas duráveis ou todas todas sejam anuladas e revertidas para o estado anterior.  

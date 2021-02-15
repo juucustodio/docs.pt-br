@@ -1,16 +1,16 @@
 ---
-title: 'Tutorial: instalar e usar as ferramentas locais do .NET Core'
+title: 'Tutorial: instalar e usar as ferramentas locais do .NET'
 description: Saiba como instalar e usar uma ferramenta .NET como uma ferramenta local.
 ms.topic: tutorial
-ms.date: 02/12/2020
-ms.openlocfilehash: 555497a71d54713e62e54f8f293afdf74ead1743
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.date: 12/11/2020
+ms.openlocfilehash: f32a5c4091ff63c7c50cf339dddd89b78e543c4c
+ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88062666"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97512457"
 ---
-# <a name="tutorial-install-and-use-a-net-core-local-tool-using-the-net-core-cli"></a>Tutorial: instalar e usar uma ferramenta local do .NET Core usando o CLI do .NET Core
+# <a name="tutorial-install-and-use-a-net-local-tool-using-the-net-cli"></a>Tutorial: instalar e usar uma ferramenta local do .NET usando a CLI do .NET
 
 **Este artigo aplica-se a:** ✔️ SDK do .net Core 3,0 e versões posteriores
 
@@ -172,7 +172,7 @@ Normalmente, você instala uma ferramenta local no diretório raiz do repositór
 
 ## <a name="update-a-local-tool"></a>Atualizar uma ferramenta local
 
-A versão instalada da ferramenta local `dotnetsay` é 2.1.3.  A versão mais recente é 2.1.4. Use o comando [dotnet ferramenta de atualização](dotnet-tool-update.md) para atualizar a ferramenta para a versão mais recente.
+A versão instalada da ferramenta local `dotnetsay` é 2.1.3.  Use o comando [dotnet ferramenta de atualização](dotnet-tool-update.md) para atualizar a ferramenta para a versão mais recente.
 
 ```dotnetcli
 dotnet tool update dotnetsay
@@ -181,7 +181,7 @@ dotnet tool update dotnetsay
 A saída indica o novo número de versão:
 
 ```console
-Tool 'dotnetsay' was successfully updated from version '2.1.3' to version '2.1.4'
+Tool 'dotnetsay' was successfully updated from version '2.1.3' to version '2.1.7'
 (manifest file /home/name/repository/.config/dotnet-tools.json).
 ```
 
@@ -201,8 +201,8 @@ dotnet tool uninstall dotnetsay
 
 ## <a name="troubleshoot"></a>Solucionar problemas
 
-Se você receber uma mensagem de erro ao seguir o tutorial, consulte [solucionar problemas de uso da ferramenta .NET Core](troubleshoot-usage-issues.md).
+Se você receber uma mensagem de erro ao seguir o tutorial, consulte [solucionar problemas de uso da ferramenta .net](troubleshoot-usage-issues.md).
 
 ## <a name="see-also"></a>Consulte também
 
-Para obter mais informações, consulte [Ferramentas do .NET Core](global-tools.md)
+Para obter mais informações, consulte [ferramentas .net](global-tools.md)

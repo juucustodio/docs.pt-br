@@ -6,14 +6,15 @@ helpviewer_keywords:
 - thread pool events [.NET Framework]
 - ETW, thread pool events (CLR)
 ms.assetid: f2a21e3a-3b6c-4433-97f3-47ff16855ecc
-ms.openlocfilehash: d3059cec5007c24d41a4a779939d4990f19305ca
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: 8b00c20e82ee1b1efa6a8a123e66a4cfc239143b
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86475197"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96236163"
 ---
 # <a name="thread-pool-etw-events"></a>Eventos ETW de pool de threads
+
  Esses eventos coletam informações sobre a função de trabalho e os threads de E/S.  
   
  Há dois grupos de eventos de pool de threads:  
@@ -23,9 +24,11 @@ ms.locfileid: "86475197"
 - [Eventos de pool de threads de E/S](#io-thread-events), que fornecem informações sobre os threads de E/S que são criados, desativados, ativados novamente ou terminados no pool de threads.  
 
 ## <a name="worker-thread-pool-events"></a>Eventos de pool de threads de trabalho
+
  Esses eventos se relacionam ao pool de threads de trabalho do runtime e fornecem notificações de eventos de thread (por exemplo, quando um thread é criado ou interrompido). O pool de threads de trabalho usa um algoritmo adaptável para o controle de simultaneidade, em que o número de threads é calculado com base na taxa de transferência medida. Os eventos de pool de threads de trabalho podem ser usados para entender como um aplicativo está usando o pool de threads, bem como o efeito que determinadas cargas de trabalho podem ter no controle de simultaneidade.  
   
 ### <a name="threadpoolworkerthreadstart-and-threadpoolworkerthreadstop"></a>ThreadPoolWorkerThreadStart e ThreadPoolWorkerThreadStop  
+
  A tabela a seguir mostra a palavra-chave e o nível desses eventos. (Para obter mais informações, consulte [Palavras-chaves e níveis CLR ETW](clr-etw-keywords-and-levels.md).)  
   
 |Palavra-chave para acionar o evento|Nível|  
@@ -50,9 +53,11 @@ ms.locfileid: "86475197"
 |ClrInstanceID|Win:UInt16|ID exclusiva da instância do CLR ou do CoreCLR.|  
   
 ### <a name="threadpoolworkerthreadadjustment"></a>ThreadPoolWorkerThreadAdjustment  
+
  Esses eventos de pool de threads fornecem informações para entender e depurar o comportamento do algoritmo de injeção de threads (controle de simultaneidade). As informações são usadas internamente pelo pool de threads de trabalho.  
   
 #### <a name="threadpoolworkerthreadadjustmentsample"></a>ThreadPoolWorkerThreadAdjustmentSample  
+
  A tabela a seguir mostra a palavra-chave e o nível.  
   
 |Palavra-chave para acionar o evento|Nível|  
@@ -73,6 +78,7 @@ ms.locfileid: "86475197"
 |ClrInstanceID|Win:UInt16|ID exclusiva da instância do CLR ou do CoreCLR.|  
   
 #### <a name="threadpoolworkerthreadadjustmentadjustment"></a>ThreadPoolWorkerThreadAdjustmentAdjustment  
+
  A tabela a seguir mostra a palavra-chave e o nível.  
   
 |Palavra-chave para acionar o evento|Nível|  
@@ -95,6 +101,7 @@ ms.locfileid: "86475197"
 |ClrInstanceID|Win:UInt16|ID exclusiva da instância do CLR ou do CoreCLR.|  
   
 #### <a name="threadpoolworkerthreadadjustmentstats"></a>ThreadPoolWorkerThreadAdjustmentStats  
+
  A tabela a seguir mostra a palavra-chave e o nível.  
   
 |Palavra-chave para acionar o evento|Nível|  
@@ -111,7 +118,7 @@ ms.locfileid: "86475197"
   
 |Nome do campo|Tipo de dados|Descrição|  
 |----------------|---------------|-----------------|  
-|Duration|win:Double|Tempo, em segundos, durante o qual essas estatísticas foram coletadas.|  
+|Duração|win:Double|Tempo, em segundos, durante o qual essas estatísticas foram coletadas.|  
 |Taxa de transferência|win:Double|Número médio de conclusões por segundo durante esse intervalo.|  
 |ThreadWave|win:Double|Reservado para uso interno.|  
 |ThroughputWave|win:Double|Reservado para uso interno.|  
@@ -124,9 +131,11 @@ ms.locfileid: "86475197"
 |ClrInstanceID|Win:UInt16|ID exclusiva da instância do CLR ou do CoreCLR.|  
 
 ## <a name="io-thread-events"></a>Eventos de threads de E/S  
+
  Esses eventos de pool de threads ocorrem em threads do pool de threads de E/S (portas de conclusão), que é assíncrono.  
   
 ### <a name="iothreadcreate_v1"></a>IOThreadCreate_V1  
+
  A tabela a seguir mostra a palavra-chave e o nível.  
   
 |Palavra-chave para acionar o evento|Nível|  
@@ -148,6 +157,7 @@ ms.locfileid: "86475197"
 |ClrInstanceID|Win:UInt16|ID exclusiva da instância do CLR ou do CoreCLR.|  
   
 ### <a name="iothreadretire_v1"></a>IOThreadRetire_V1  
+
  A tabela a seguir mostra a palavra-chave e o nível.  
   
 |Palavra-chave para acionar o evento|Nível|  
@@ -169,6 +179,7 @@ ms.locfileid: "86475197"
 |ClrInstanceID|Win:UInt16|ID exclusiva da instância do CLR ou do CoreCLR.|  
   
 ### <a name="iothreadunretire_v1"></a>IOThreadUnretire_V1  
+
  A tabela a seguir mostra a palavra-chave e o nível.  
   
 |Palavra-chave para acionar o evento|Nível|  
@@ -190,6 +201,7 @@ ms.locfileid: "86475197"
 |ClrInstanceID|Win:UInt16|ID exclusiva da instância do CLR ou do CoreCLR.|  
   
 ### <a name="iothreadterminate"></a>IOThreadTerminate  
+
  A tabela a seguir mostra a palavra-chave e o nível.  
   
 |Palavra-chave para acionar o evento|Nível|  
@@ -210,6 +222,6 @@ ms.locfileid: "86475197"
 |NumRetired|win:UInt64|Número de threads de E/S desativados.|  
 |ClrInstanceID|Win:UInt16|ID exclusiva da instância do CLR ou do CoreCLR.|  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Eventos ETW no CLR](clr-etw-events.md)

@@ -1,13 +1,13 @@
 ---
 title: Linguagem de definição de interface-gRPC para desenvolvedores do WCF
 description: Apresentando os buffers de protocolo IDL.
-ms.date: 09/02/2019
-ms.openlocfilehash: 841f041ae350e76e648c71f9d6d113b9d39e0d3b
-ms.sourcegitcommit: 771c554c84ba38cbd4ac0578324ec4cfc979cf2e
+ms.date: 12/15/2020
+ms.openlocfilehash: 60cedd9b7c29bf54165b15f512c0b2159cb5dda9
+ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77543203"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97938072"
 ---
 # <a name="interface-definition-language"></a>Linguagem IDL
 
@@ -17,7 +17,7 @@ gRPC usa o IDL (Interface Definition Language) dos buffers de protocolo. Os buff
 
 Uma das vantagens do Protobuf IDL é que, como uma linguagem personalizada, ele permite que o gRPC seja completamente independente de linguagem e plataforma, não favorecendo nenhuma tecnologia sobre outra.
 
-O Protobuf IDL também é projetado para os seres humanos para leitura e gravação, enquanto o WSDL é destinado a um formato legível por máquina/gravável. A alteração do WSDL de um serviço WCF normalmente requer a alteração do serviço, a execução do serviço e a regeneração do arquivo WSDL a partir do servidor. Por outro lado, com um arquivo de `.proto`, as alterações são simples de aplicar a um editor de texto e fluem automaticamente pelo código gerado. O Visual Studio 2019 compila `.proto` arquivos em segundo plano quando eles são salvos. Com outros editores, como VS Code, as alterações são aplicadas quando o projeto é compilado.
+O Protobuf IDL também é projetado para os seres humanos para leitura e gravação, enquanto o WSDL é destinado a um formato legível por máquina/gravável. A alteração do WSDL de um serviço WCF normalmente requer a alteração do serviço, a execução do serviço e a regeneração do arquivo WSDL a partir do servidor. Por outro lado, com um `.proto` arquivo, as alterações são simples de se aplicar a um editor de texto e fluir automaticamente pelo código gerado. O Visual Studio 2019 compila `.proto` arquivos em segundo plano quando eles são salvos. Com outros editores, como VS Code, as alterações são aplicadas quando o projeto é compilado.
 
 Quando comparado com XML e particularmente SOAP, mensagens codificadas usando Protobuf têm muitas vantagens. As mensagens Protobuf tendem a ser menores do que os mesmos dados serializados como XML SOAP, e codificar, decodificar e transmiti-los por uma rede pode ser mais rápido.
 
@@ -30,5 +30,5 @@ A desvantagem potencial do Protobuf em comparação com o SOAP é que, como as m
 > O formato binário do WCF, usado com a associação NetTCP, é muito mais próximo de Protobuf em termos de compactação e desempenho. Mas o NetTCP só é utilizável entre clientes e servidores .NET, enquanto o Protobuf é uma solução de plataforma cruzada.
 
 >[!div class="step-by-step"]
->[Anterior](approach.md)
->[Próximo](network-protocols.md)
+>[Anterior](approach.md) 
+> [Avançar](network-protocols.md)

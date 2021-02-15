@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICLRStrongName'
 title: Interface ICLRStrongName
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 2fac66fd-6b3b-4dbd-8baf-86038bd85526
 topic_type:
 - apiref
-ms.openlocfilehash: 0b6efcbe4458977e8e938afabd7ae59171bc065a
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 5565e864d35e68e714602b291a724a0ad9999a28
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84501645"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799662"
 ---
 # <a name="iclrstrongname-interface"></a>Interface ICLRStrongName
+
 Fornece funções estáticas globais básicas para assinar assemblies com nomes fortes. Todos os `ICLRStrongName` métodos retornam o padrão com HResults.  
   
 ## <a name="methods"></a>Métodos  
@@ -55,18 +57,20 @@ Fornece funções estáticas globais básicas para assinar assemblies com nomes 
 |[Método StrongNameTokenFromPublicKey](iclrstrongname-strongnametokenfrompublickey-method.md)|Obtém um token que representa uma chave pública.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Você pode obter uma instância do `ICLRStrongName` chamando o método [ICLRRuntimeInfo:: GetInterface](iclrruntimeinfo-getinterface-method.md) usando `CLSID_CLRStrongName` e `IID_ICLRStrongName` como parâmetros.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MetaHost. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de hospedagem](hosting-interfaces.md)
-- [Hosting](index.md)
+- [Hospedagem](index.md)

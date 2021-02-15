@@ -1,5 +1,5 @@
 ---
-title: Como criar um soquete
+title: 'Como: Criar um soquete'
 description: Saiba como inicializar um soquete para se comunicar com dispositivos remotos. Use a classe Socket para especificar a família de endereços, o tipo de soquete e o tipo de protocolo.
 ms.date: 03/30/2017
 dev_langs:
@@ -18,17 +18,19 @@ helpviewer_keywords:
 - Internet, sockets
 - sockets, creating
 ms.assetid: c64a049c-5981-43bc-a2dc-1851473589c7
-ms.openlocfilehash: 1d56ddea721b54192a7dd47d144b6c41bbb9a5d7
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 9746b814188a4dc92463399542a6044501d0da12
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502542"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96287391"
 ---
-# <a name="how-to-create-a-socket"></a>Como criar um soquete
+# <a name="how-to-create-a-socket"></a>Como: Criar um soquete
+
 Antes de poder usar um soquete para se comunicar com dispositivos remotos, o soquete deve ser inicializado com as informações de protocolo e endereço de rede. O construtor da classe <xref:System.Net.Sockets.Socket> tem parâmetros que especificam a família de endereços, o tipo de soquete e o tipo de protocolo usado pelo soquete para fazer conexões.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir cria um Socket que pode ser usado para se comunicar em uma rede baseada em TCP/IP, como a Internet.  
   
 ```csharp  
@@ -61,7 +63,7 @@ Dim s as New Socket(AddressFamily.InterNetwork, _
   
  Depois que um **Socket** for criado, ele poderá iniciar uma conexão com um ponto de extremidade remoto ou receber conexões de dispositivos remotos.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-- [Usando soquetes do cliente](using-client-sockets.md)
+- [Usando soquetes de cliente](using-client-sockets.md)
 - [Escutando com soquetes](listening-with-sockets.md)

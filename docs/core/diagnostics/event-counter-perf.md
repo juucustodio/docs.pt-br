@@ -3,18 +3,18 @@ title: Medir o desempenho usando o EventCounters no .NET Core
 description: Neste tutorial, você aprenderá a medir o desempenho usando o EventCounters.
 ms.date: 08/07/2020
 ms.topic: tutorial
-ms.openlocfilehash: 7b4940e17d01e7ec5a50d11e3c818ecdec2d48cf
-ms.sourcegitcommit: 1e6439ec4d5889fc08cf3bfb4dac2b91931eb827
+ms.openlocfilehash: 2ed7f234b685dab91ab275105d26b474e3bd1a87
+ms.sourcegitcommit: 3d6d6595a03915f617349781f455f838a44b0f44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "88024992"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97700737"
 ---
 # <a name="tutorial-measure-performance-using-eventcounters-in-net-core"></a>Tutorial: medir o desempenho usando o EventCounters no .NET Core
 
 **Este artigo aplica-se a: ✔️** SDK do .net Core 3,0 e versões posteriores
 
-Neste tutorial, você aprenderá como um <xref:System.Diagnostics.Tracing.EventCounter> pode ser usado para medir o desempenho com uma alta frequência de eventos. Você pode usar os [contadores disponíveis](event-counters.md#available-counters) publicados por vários pacotes oficiais do .NET Core, provedores de terceiros ou criar suas próprias métricas para monitoramento.
+Neste tutorial, você aprenderá como um <xref:System.Diagnostics.Tracing.EventCounter> pode ser usado para medir o desempenho com uma alta frequência de eventos. Você pode usar os [contadores disponíveis](available-counters.md) publicados por vários pacotes oficiais do .NET Core, provedores de terceiros ou criar suas próprias métricas para monitoramento.
 
 Neste tutorial, você irá:
 
@@ -29,11 +29,11 @@ O tutorial usa:
 
 - [SDK do .NET Core 3,1](https://dotnet.microsoft.com/download/dotnet-core) ou uma versão posterior.
 - [dotnet-contadores](dotnet-counters.md) para monitorar os contadores de eventos.
-- Um aplicativo de [destino de depuração de exemplo](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) para diagnosticar.
+- Um aplicativo de [destino de depuração de exemplo](/samples/dotnet/samples/diagnostic-scenarios) para diagnosticar.
 
 ## <a name="get-the-source"></a>Obter a origem
 
-O aplicativo de exemplo será usado como base para o monitoramento. O [repositório de ASP.NET Core de exemplo](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) está disponível no navegador de exemplos. Baixe o arquivo zip, extraia-o depois de baixado e abra-o em seu IDE favorito. Compile e execute o aplicativo para garantir que ele funcione corretamente e, em seguida, interrompa o aplicativo.
+O aplicativo de exemplo será usado como base para o monitoramento. O [repositório de ASP.NET Core de exemplo](/samples/dotnet/samples/diagnostic-scenarios) está disponível no navegador de exemplos. Baixe o arquivo zip, extraia-o depois de baixado e abra-o em seu IDE favorito. Compile e execute o aplicativo para garantir que ele funcione corretamente e, em seguida, interrompa o aplicativo.
 
 ## <a name="implement-an-eventsource"></a>Implementar um EventSource
 
@@ -49,7 +49,7 @@ A <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A?displayProperty=nam
 
 ## <a name="add-an-action-filter"></a>Adicionar um filtro de ação
 
-O código-fonte de exemplo é um projeto ASP.NET Core. Você pode adicionar um [filtro de ação](/aspnet/core/mvc/controllers/filters#action-filters) globalmente, que registrará o tempo total de solicitação. Crie um novo arquivo chamado *LogRequestTimeFilterAttribute.cs*e use o código a seguir:
+O código-fonte de exemplo é um projeto ASP.NET Core. Você pode adicionar um [filtro de ação](/aspnet/core/mvc/controllers/filters#action-filters) globalmente, que registrará o tempo total de solicitação. Crie um novo arquivo chamado *LogRequestTimeFilterAttribute.cs* e use o código a seguir:
 
 ```csharp
 using System.Diagnostics;
@@ -97,7 +97,7 @@ dotnet-counters ps
 Usando o identificador de processo da saída do `dotnet-counters ps` comando, você pode começar a monitorar o contador de eventos com o seguinte `dotnet-counters monitor` comando:
 
 ```console
-dotnet-counters monitor --process-id 2196 Sample.EventCounter.Minimal Microsoft.AspNetCore.Hosting[total-requests,requests-per-second] System.Runtime[cpu-usage]
+dotnet-counters monitor --process-id 2196 --counters Sample.EventCounter.Minimal,Microsoft.AspNetCore.Hosting[total-requests,requests-per-second],System.Runtime[cpu-usage]
 ```
 
 Enquanto o `dotnet-counters monitor` comando estiver em execução, mantenha <kbd>F5</kbd> no navegador para começar a emitir solicitações contínuas para o `https://localhost:5001/api/values` ponto de extremidade. Depois de alguns segundos, pare pressionando <kbd>q</kbd>
@@ -118,7 +118,7 @@ Press p to pause, r to resume, q to quit.
 O `dotnet-counters monitor` comando é ótimo para o monitoramento ativo. No entanto, talvez você queira coletar essas métricas de diagnóstico para o pós-processamento e a análise. Para isso, use o `dotnet-counters collect` comando. O `collect` comando switch é semelhante ao `monitor` comando, mas aceita alguns parâmetros adicionais. Você pode especificar o nome e o formato do arquivo de saída desejado. Para um arquivo JSON chamado *diagnostics.jsem* use o seguinte comando:
 
 ```console
-dotnet-counters collect --process-id 2196 --format json -o diagnostics.json Sample.EventCounter.Minimal Microsoft.AspNetCore.Hosting[total-requests,requests-per-second] System.Runtime[cpu-usage]
+dotnet-counters collect --process-id 2196 --format json -o diagnostics.json --counters Sample.EventCounter.Minimal,Microsoft.AspNetCore.Hosting[total-requests,requests-per-second],System.Runtime[cpu-usage]
 ```
 
 Novamente, enquanto o comando estiver em execução, mantenha <kbd>F5</kbd> no navegador para começar a emitir solicitações contínuas para o `https://localhost:5001/api/values` ponto de extremidade. Depois de alguns segundos, pare pressionando <kbd>q</kbd>. O *diagnostics.jsno* arquivo é gravado. No entanto, o arquivo JSON que é gravado não é recuado; para facilitar a leitura, ele é recuado aqui.

@@ -1,19 +1,20 @@
 ---
-title: Como criar um ponto de extremidade de serviço em código
+title: 'Como: criar um ponto de extremidade de serviço em código'
 description: Saiba como implementar um serviço em uma classe e definir seu ponto de extremidade programaticamente. No WCF, os pontos de extremidade geralmente são definidos em um arquivo de configuração.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 3fbb22fa-2930-48b8-b437-def1de87c6a0
-ms.openlocfilehash: 3b2ff2a17975bc381db61edc2c0f85f67edd3325
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 6f5e06154ff19129da0bce77dd70736037c2dc92
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85247046"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96294411"
 ---
-# <a name="how-to-create-a-service-endpoint-in-code"></a>Como criar um ponto de extremidade de serviço em código
+# <a name="how-to-create-a-service-endpoint-in-code"></a>Como: criar um ponto de extremidade de serviço em código
+
 Neste exemplo, um `ICalculator` contrato é definido para um serviço de calculadora, o serviço é implementado na `CalculatorService` classe e, em seguida, seu ponto de extremidade é definido no código, onde é especificado que o serviço deve usar a <xref:System.ServiceModel.BasicHttpBinding> classe.  
   
  Geralmente, é a prática recomendada especificar a associação e as informações de endereço de forma declarativa na configuração, em vez de imperativa no código. A definição de pontos de extremidade no código geralmente não é prática porque as associações e os endereços para um serviço implantado são normalmente diferentes daqueles usados enquanto o serviço está sendo desenvolvido. Em geral, manter as informações de vinculação e endereçamento do código permite que elas sejam alteradas sem a necessidade de recompilar ou reimplantar o aplicativo.  
@@ -49,4 +50,4 @@ Neste exemplo, um `ICalculator` contrato é definido para um serviço de calcula
   
 ## <a name="see-also"></a>Veja também
 
-- [Como especificar uma associação de serviço no código](../how-to-specify-a-service-binding-in-code.md)
+- [Como: especificar uma associação de serviço no código](../how-to-specify-a-service-binding-in-code.md)

@@ -12,14 +12,15 @@ helpviewer_keywords:
 - Mgmtclassgen.exe
 - early-bound managed classes
 ms.assetid: 02ce6699-49b5-4a0b-b0d5-1003c491232e
-ms.openlocfilehash: 89facd4369dad6168e46febd3e34d7f7c235faf0
-ms.sourcegitcommit: b4f8849c47c1a7145eb26ce68bc9f9976e0dbec3
+ms.openlocfilehash: 1dea4b0b94053919169abb639ff48ecd3abbd66c
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87517289"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96279149"
 ---
 # <a name="mgmtclassgenexe-management-strongly-typed-class-generator"></a>Mgmtclassgen.exe (Gerador de Classe Fortemente Tipada de Gerenciamento)
+
 A ferramenta Gerador de Classes Fortemente Tipadas de Gerenciamento permite gerar rapidamente uma classe gerenciada Early Bound para uma classe WMI (Instrumentação de Gerenciamento do Windows) especificada. A classe gerada simplifica o código que você deve gravar para acessar uma instância da classe WMI.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -33,7 +34,7 @@ WMIClass [options]
 |--------------|-----------------|  
 |*WMIClass*|A classe WMI para a qual uma classe gerenciada Early Bound deve ser gerada.|  
   
-|Opção|DESCRIÇÃO|  
+|Opção|Descrição|  
 |------------|-----------------|  
 |**/l**  *language*|Especifica a linguagem na qual gerar a classe gerenciada Early Bound. É possível especificar **CS** (C#, padrão), **VB** (Visual Basic), **MC** (C++) ou **JS** (JScript) como o argumento da linguagem.|  
 |**/m**  *machine*|Especifica o computador ao qual se conectar, em que a classe WMI reside. O padrão é o computador local.|  
@@ -45,6 +46,7 @@ WMIClass [options]
 |**/?**|Exibe sintaxe de comando e opções para a ferramenta.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Mgmtclassgen.exe usa o método <xref:System.Management.ManagementClass.GetStronglyTypedClassCode%2A?displayProperty=nameWithType>. Por isso, é possível usar qualquer provedor de código personalizado para gerar código em linguagens gerenciadas que não sejam C#, Visual Basic e JScript.  
   
  As classes geradas são associadas ao esquema para o qual são geradas. Se o esquema subjacente mudar, você deverá gerar novamente a classe se quiser refletir alterações no esquema.  
@@ -54,7 +56,7 @@ WMIClass [options]
 |Tipo CIM|Tipo de dados na classe gerada|  
 |--------------|--------------------------------------|  
 |CIM_SINT8|**SByte**|  
-|CIM_UINT8|**Minuciosa**|  
+|CIM_UINT8|**Byte**|  
 |CIM_SINT16|**Int16**|  
 |CIM_UINT16|**UInt16**|  
 |CIM_SINT32|**Int32**|  
@@ -93,6 +95,7 @@ WMIClass [options]
  Para obter mais informações sobre WMI, consulte o tópico **Instrumentação de Gerenciamento do Windows** na documentação do SDK da Plataforma.  
   
 ## <a name="examples"></a>Exemplos  
+
  O comando a seguir gera uma classe gerenciada no código do C# para a classe WMI **Win32_LogicalDisk** no namespace **Root\cimv2**. A ferramenta grava a classe gerenciada no arquivo de origem em c:\disk.cs no namespace **ROOT.CIMV2.Win32**.  
   
 ```console  
@@ -149,7 +152,7 @@ public class App
 }  
 ```  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - <xref:System.Management>
 - <xref:System.Management.ManagementClass.GetStronglyTypedClassCode%2A?displayProperty=nameWithType>

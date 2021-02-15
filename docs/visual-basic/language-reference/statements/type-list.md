@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: tipo List (Visual Basic)'
 title: Lista de Tipos
 ms.date: 07/20/2015
 f1_keywords:
@@ -24,18 +25,18 @@ helpviewer_keywords:
 - type parameters
 - constraints, Class keyword
 ms.assetid: 56db947a-2ae8-40f2-a70a-960764e9d0db
-ms.openlocfilehash: 7e22ad6e32ec13f081391e1d47a80df8b1e65063
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: d4c8bcab4a39af0ac0747d6be0d04408edd98a55
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84412982"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740893"
 ---
 # <a name="type-list-visual-basic"></a>Lista de tipos (Visual Basic)
 
 Especifica os *parâmetros de tipo* para um elemento de programação *genérico* . Vários parâmetros são separados por vírgulas. A seguir está a sintaxe para um parâmetro de tipo.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```vb
 [genericmodifier] typename [ As constraintlist ]
@@ -46,7 +47,7 @@ Especifica os *parâmetros de tipo* para um elemento de programação *genérico
 |Termo|Definição|
 |---|---|
 |`genericmodifier`|Opcional. Pode ser usado somente em interfaces e delegados genéricos. Você pode declarar um tipo covariant usando a palavra-chave [out](../modifiers/out-generic-modifier.md) ou contravariant usando a palavra-chave [in](../modifiers/in-generic-modifier.md) . Consulte [Covariância e contravariância](../../programming-guide/concepts/covariance-contravariance/index.md).|
-|`typename`|Obrigatórios. Nome do parâmetro de tipo. Este é um espaço reservado, a ser substituído por um tipo definido fornecido pelo argumento de tipo correspondente.|
+|`typename`|Obrigatório. Nome do parâmetro de tipo. Este é um espaço reservado, a ser substituído por um tipo definido fornecido pelo argumento de tipo correspondente.|
 |`constraintlist`|Opcional. Lista de requisitos que restringem o tipo de dados que pode ser fornecido para o `typename` . Se você tiver várias restrições, coloque-as entre chaves ( `{ }` ) e separe-as com vírgulas. Você deve introduzir a lista de restrições com [a palavra-](as-clause.md) chave as. Você usa `As` apenas uma vez, no início da lista.|
 
 ## <a name="remarks"></a>Comentários
@@ -97,10 +98,10 @@ O exemplo a seguir mostra a definição esqueleto equivalente gerada pelo exempl
 
 [!code-vb[VbVbalrStatements#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#5)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Desse](of-clause.md)
-- [Novo operador](../operators/new-operator.md)
+- [Novo Operador](../operators/new-operator.md)
 - [Níveis de acesso no Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md)
 - [Tipo de dados Object](../data-types/object-data-type.md)
 - [Instrução Function](function-statement.md)
@@ -108,5 +109,5 @@ O exemplo a seguir mostra a definição esqueleto equivalente gerada pelo exempl
 - [Instrução Sub](sub-statement.md)
 - [Como: Usar uma classe genérica](../../programming-guide/language-features/data-types/how-to-use-a-generic-class.md)
 - [Covariância e contravariância](../../programming-guide/concepts/covariance-contravariance/index.md)
-- [Em](../modifiers/in-generic-modifier.md)
+- [In](../modifiers/in-generic-modifier.md)
 - [Fora](../modifiers/out-generic-modifier.md)

@@ -3,14 +3,15 @@ title: Convertendo Tipos de Dados (C#)
 description: Os métodos de conversão alteram o tipo dos objetos de entrada. Consulte operações de conversão em consultas LINQ em C#, como Enumerable. AsEnumerable e Enumerable. OfType.
 ms.date: 07/20/2015
 ms.assetid: 46e5682f-77a1-4302-8f93-a2b53c408808
-ms.openlocfilehash: 3291690f9aaee945ca7feb04ebbc676db2612894
-ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
+ms.openlocfilehash: f9e3b354fd6eeba6564067550ea3821e4946d92f
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87105482"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91159131"
 ---
 # <a name="converting-data-types-c"></a>Convertendo Tipos de Dados (C#)
+
 Os métodos de conversão alteram o tipo dos objetos de entrada.
 
  As operações de conversão em consultas LINQ são úteis em diversas aplicações. A seguir estão alguns exemplos:
@@ -22,11 +23,12 @@ Os métodos de conversão alteram o tipo dos objetos de entrada.
 - Os métodos <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType>, <xref:System.Linq.Enumerable.ToDictionary%2A?displayProperty=nameWithType>, <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> e <xref:System.Linq.Enumerable.ToLookup%2A?displayProperty=nameWithType> podem ser usados para forçar a execução de consulta imediata em vez de adiá-la até que a consulta seja enumerada.
 
 ## <a name="methods"></a>Métodos
+
  A tabela a seguir lista os métodos de operador de consulta padrão que realizam conversões de tipo de dados.
 
  Os métodos de conversão nesta tabela cujos nomes começam com "As" alteram o tipo estático da coleção de origem, mas não a enumeram. Os métodos cujos nomes começam com "To" enumeram a coleção de origem e colocam os itens na coleção de tipo correspondente.
 
-|Nome do método|Descrição|Sintaxe de expressão de consulta C#|Mais informações|
+|Nome do método|Description|Sintaxe de expressão de consulta C#|Mais informações|
 |-----------------|-----------------|---------------------------------|----------------------|
 |AsEnumerable|Retorna a entrada digitada como <xref:System.Collections.Generic.IEnumerable%601>.|Não aplicável.|<xref:System.Linq.Enumerable.AsEnumerable%2A?displayProperty=nameWithType>|
 |AsQueryable|Converte um <xref:System.Collections.IEnumerable> (genérico) em um <xref:System.Linq.IQueryable> (genérico).|Não aplicável.|<xref:System.Linq.Queryable.AsQueryable%2A?displayProperty=nameWithType>|

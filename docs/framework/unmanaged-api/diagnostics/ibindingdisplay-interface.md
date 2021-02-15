@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IBindingDisplay'
 title: Interface IBindingDisplay
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3367166f-31fe-43d0-8107-2e786f984e50
 topic_type:
 - apiref
-ms.openlocfilehash: e1b8cf3e8d78c8ef4715467760805cc50975d014
-ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
+ms.openlocfilehash: 2c0122988cbc6dea4a962876dbf82cc91d75820a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83442131"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800377"
 ---
 # <a name="ibindingdisplay-interface"></a>Interface IBindingDisplay
+
 Fornece métodos que exibem informações de associação atuais sobre o aplicativo em execução.  
   
 ## <a name="methods"></a>Métodos  
@@ -32,6 +34,7 @@ Fornece métodos que exibem informações de associação atuais sobre o aplicat
 |[Método InitializeForProcess](ibindingdisplay-initializeforprocess-method.md)|Inicializa o objeto `IBindingDisplay`.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** BindingDisplay. h  
@@ -40,6 +43,6 @@ Fornece métodos que exibem informações de associação atuais sobre o aplicat
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de armazenamento de símbolo de diagnóstico](diagnostics-symbol-store-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração de RUNTIME_INFO_FLAGS'
 title: Enumeração RUNTIME_INFO_FLAGS
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: adba37be-f775-4cdb-8919-5746ce694f33
 topic_type:
 - apiref
-ms.openlocfilehash: da830aaaced179fed642340c33e7b7c37b350aa3
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 54ff62cdee6e940ae9ea8a2ce8ceff99f923d3f4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84006552"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99679440"
 ---
 # <a name="runtime_info_flags-enumeration"></a>Enumeração RUNTIME_INFO_FLAGS
+
 Contém valores que indicam quais informações sobre o Common Language Runtime (CLR) devem ser retornadas.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -43,7 +45,7 @@ typedef enum {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`RUNTIME_INFO_DONT_RETURN_DIRECTORY`|Indica que as informações de diretório não devem ser incluídas.|  
 |`RUNTIME_INFO_DONT_RETURN_VERSION`|Indica que as informações de versão não devem ser incluídas.|  
@@ -55,6 +57,7 @@ typedef enum {
 |`RUNTIME_INFO_UPGRADE_VERSION`|Indica que as informações de atualização de versão devem ser incluídas.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Os seguintes sinalizadores de arquitetura de plataforma podem ser especificados apenas um de cada vez e não podem ser combinados:  
   
 - RUNTIME_INFO_REQUEST_IA64  
@@ -64,14 +67,15 @@ typedef enum {
 - RUNTIME_INFO_REQUEST_X86  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** MSCorEE. dll  
+ **Biblioteca:** MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Hospedando enumerações](hosting-enumerations.md)

@@ -9,14 +9,15 @@ helpviewer_keywords:
 - target compiler options [C#], /target:library
 - /target compiler options [C#], /target:library
 ms.assetid: c5670e88-2126-47c1-8d1c-217923837d17
-ms.openlocfilehash: 953249c4d0168ed3d279d03a0b2fb63d8ff6d5f5
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 0f5b1e1bec8fd601bf111e1c2c64adf22d0a064e
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89128472"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "91193719"
 ---
 # <a name="-targetlibrary-c-compiler-options"></a>-target:library (opções do compilador C#)
+
 A opção **-target:library** faz com que o compilador crie uma DLL (biblioteca de vínculo dinâmico) em vez de um EXE (arquivo executável).  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -26,6 +27,7 @@ A opção **-target:library** faz com que o compilador crie uma DLL (biblioteca 
 ```  
   
 ## <a name="remarks"></a>Comentários  
+
  A DLL será criada com a extensão .dll.  
   
  A menos que seja especificado de outra forma com a opção [-out](./out-compiler-option.md), o nome do arquivo de saída usa o nome do primeiro arquivo de entrada.  
@@ -45,6 +47,7 @@ A opção **-target:library** faz com que o compilador crie uma DLL (biblioteca 
  Para obter informações sobre como definir essa opção do compilador programaticamente, consulte <xref:VSLangProj80.ProjectProperties3.OutputType%2A>.  
   
 ## <a name="example"></a>Exemplo  
+
  Compile `in.cs`, criando `in.dll`:  
   
 ```console  
@@ -54,4 +57,4 @@ csc -target:library in.cs
 ## <a name="see-also"></a>Confira também
 
 - [-Target (opções do compilador C#)](./target-compiler-option.md)
-- [Opções do compilador C#](./index.md)
+- [Opções do compilador de C#](./index.md)

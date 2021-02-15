@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IManagedObject:: GetSerializedBuffer'
 title: Método IManagedObject::GetSerializedBuffer
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: c17105bb-b49f-434e-8f9b-77f8c85b9220
 topic_type:
 - apiref
-ms.openlocfilehash: c68ec0b41bb38afc7cefaf47df718fffcf42d250
-ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
+ms.openlocfilehash: f324b6ed1e9cea21fec9027a954fbad54174dd0c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83842421"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753764"
 ---
 # <a name="imanagedobjectgetserializedbuffer-method"></a>Método IManagedObject::GetSerializedBuffer
+
 Obtém a representação da cadeia de caracteres deste objeto gerenciado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,18 +36,21 @@ HRESULT GetSerializedBuffer (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pBSTR`  
  fora Um ponteiro para uma cadeia de caracteres que é o objeto serializado.  
   
 ## <a name="remarks"></a>Comentários  
+
  O `GetSerializedBuffer` método serializa o objeto para que ele possa ser empacotado para o cliente.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   

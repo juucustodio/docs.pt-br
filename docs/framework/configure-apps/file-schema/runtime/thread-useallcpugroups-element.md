@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <Thread_UseAllCpuGroups elemento>'
 title: Elemento <Thread_UseAllCpuGroups>
 ms.date: 03/30/2017
 ms.assetid: d30fe7c5-8469-46e2-b804-e3eec7b24256
-ms.openlocfilehash: a3a612c0ffbcb211157b9623d298ce8ad7a13e94
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 3f11ba6855caab25bd261de71c80c78232f2690f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73115406"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802405"
 ---
 # <a name="thread_useallcpugroups-element"></a>Elemento \<Thread_UseAllCpuGroups>
 
@@ -17,7 +18,7 @@ Especifica se o runtime distribui threads gerenciados entre todos os grupos de C
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<Thread_UseAllCpuGroups>**  
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Thread_UseAllCpuGroups
@@ -70,8 +71,8 @@ O exemplo a seguir mostra como habilitar o suporte para vários grupos de CPU.
 </configuration>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações do runtime](index.md)
-- [Esquema de arquivos de configuração](../index.md)
-- [\<GCCpuGroup>Elementos](gccpugroup-element.md)
+- [Esquema do arquivo de configuração](../index.md)
+- [\<GCCpuGroup> Elementos](gccpugroup-element.md)

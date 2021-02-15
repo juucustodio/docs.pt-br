@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Partial (Visual Basic)'
 title: Parcial
 ms.date: 07/20/2015
 f1_keywords:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 - Partial keyword [Visual Basic]
 - type promotion
 ms.assetid: 7adaef80-f435-46e1-970a-269fff63b448
-ms.openlocfilehash: 650ead2f0deb9813b26241a6a4676907de3f263d
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: bf2d8b06b83f4a90ec2f4edd52405b58695c26e2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84362236"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99701008"
 ---
 # <a name="partial-visual-basic"></a>Parcial (Visual Basic)
+
 Indica que uma declaração de tipo é uma definição parcial do tipo.  
   
  Você pode dividir a definição de um tipo entre várias declarações usando a `Partial` palavra-chave. Você pode usar quantas declarações parciais desejar, em quantos arquivos de origem diferentes desejar. No entanto, todas as declarações devem estar no mesmo assembly e no mesmo namespace.  
@@ -29,7 +31,7 @@ Indica que uma declaração de tipo é uma definição parcial do tipo.
 > [!NOTE]
 > O Visual Basic dá suporte a *métodos parciais*, que normalmente são implementados em classes parciais. Para obter mais informações, consulte [partial Methods](../../programming-guide/language-features/procedures/partial-methods.md) e [sub Statement](../statements/sub-statement.md).  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 [ <attrlist> ] [ accessmodifier ] [ Shadows ] [ MustInherit | NotInheritable ] _  
@@ -50,7 +52,7 @@ Partial { Class | Structure | Interface | Module } name [ (Of typelist) ]
 |`Shadows`|Opcional. Consulte [Shadows](shadows.md).|  
 |`MustInherit`|Opcional. Consulte [MustInherit](mustinherit.md).|  
 |`NotInheritable`|Opcional. Consulte [NotInheritable](notinheritable.md).|  
-|`name`|Obrigatórios. Nome deste tipo. Deve corresponder ao nome definido em todas as outras declarações parciais do mesmo tipo.|  
+|`name`|Obrigatório. Nome deste tipo. Deve corresponder ao nome definido em todas as outras declarações parciais do mesmo tipo.|  
 |`Of`|Opcional. Especifica que este é um tipo genérico. Consulte [tipos genéricos em Visual Basic](../../programming-guide/language-features/data-types/generic-types.md).|  
 |`typelist`|Necessário se você usar [do](../statements/of-clause.md). Consulte [lista de tipos](../statements/type-list.md).|  
 |`Inherits`|Opcional. Consulte a [instrução Inherits](../statements/inherits-statement.md).|  
@@ -62,6 +64,7 @@ Partial { Class | Structure | Interface | Module } name [ (Of typelist) ]
 |`End Class` ou `End Structure`|Finaliza essa `Class` definição ou parcial `Structure` .|  
   
 ## <a name="remarks"></a>Comentários  
+
  Visual Basic usa definições de classe parcial para separar o código gerado do código criado pelo usuário em arquivos de origem separados. Por exemplo, o **Windows Form Designer** define classes parciais para controles, como <xref:System.Windows.Forms.Form>. Você não deve modificar o código gerado nesses controles.  
   
  Todas as regras para classe, estrutura, interface e criação de módulo, como aquelas para uso e herança de modificador, se aplicam ao criar um tipo parcial.  
@@ -87,13 +90,14 @@ Partial { Class | Structure | Interface | Module } name [ (Of typelist) ]
  [Instrução Structure](../statements/structure-statement.md)  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir divide a definição da classe `sampleClass` em duas declarações, cada uma delas define um `Sub` procedimento diferente.  
   
  [!code-vb[VbVbalrKeywords#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class1.vb#3)]  
   
  As duas definições parciais no exemplo anterior podem estar no mesmo arquivo de origem ou em dois arquivos de origem diferentes.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instrução Class](../statements/class-statement.md)
 - [Instrução Structure](../statements/structure-statement.md)

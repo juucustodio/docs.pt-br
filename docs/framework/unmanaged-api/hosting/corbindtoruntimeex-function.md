@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função CorBindToRuntimeEx'
 title: Função CorBindToRuntimeEx
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: aae9fb17-5d01-41da-9773-1b5b5b642d81
 topic_type:
 - apiref
-ms.openlocfilehash: e66b63ffa4ed25e861cff6bd9eb6065f57ff807f
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 64ea90619d13306d8dd78eb231f9f8dbc927913f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84493494"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99717232"
 ---
 # <a name="corbindtoruntimeex-function"></a>Função CorBindToRuntimeEx
+
 Permite que hosts não gerenciados carreguem o Common Language Runtime (CLR) em um processo. O [CorBindToRuntime](corbindtoruntime-function.md) e as `CorBindToRuntimeEx` funções executam a mesma operação, mas a `CorBindToRuntimeEx` função permite que você defina sinalizadores para especificar o comportamento do CLR.  
   
  Essa função foi preterida no .NET Framework 4.  
@@ -56,12 +58,13 @@ HRESULT CorBindToRuntimeEx (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pwszVersion`  
  no Uma cadeia de caracteres que descreve a versão do CLR que você deseja carregar.  
   
  Um número de versão no .NET Framework consiste em quatro partes separadas por pontos: *Major. Minor. Build. Revision*. A cadeia de caracteres passada como `pwszVersion` deve começar com o caractere "v" seguido pelas três primeiras partes do número de versão (por exemplo, "v 1.0.1529").  
   
- Algumas versões do CLR são instaladas com uma declaração de política que especifica a compatibilidade com versões anteriores do CLR. Por padrão, o Shim de inicialização `pwszVersion` é avaliado em relação a instruções de política e carrega a versão mais recente do tempo de execução que é compatível com a versão que está sendo solicitada. Um host pode forçar o Shim a ignorar a avaliação da política e carregar a versão exata especificada no `pwszVersion` passando um valor de `STARTUP_LOADER_SAFEMODE` para o `startupFlags` parâmetro, conforme descrito abaixo.  
+ Algumas versões do CLR são instaladas com uma declaração de política que especifica a compatibilidade com versões anteriores do CLR. Por padrão, o Shim de inicialização `pwszVersion` é avaliado em relação a instruções de política e carrega a versão mais recente do tempo de execução que é compatível com a versão que está sendo solicitada. Um host pode forçar o Shim a ignorar a avaliação da política e carregar a versão exata especificada no `pwszVersion` passando um valor de  `STARTUP_LOADER_SAFEMODE` para o `startupFlags` parâmetro, conforme descrito abaixo.  
   
  Se o chamador especificar NULL para `pwszVersion` , `CorBindToRuntimeEx` o identificará o conjunto de tempos de execução instalados cujos números de versão são menores do que o tempo de execução do .NET Framework 4 e carregará a versão mais recente do tempo de execução desse conjunto. Ele não carregará o .NET Framework 4 ou posterior e falhará se nenhuma versão anterior estiver instalada. Observe que a passagem de NULL fornece ao host nenhum controle sobre qual versão do tempo de execução é carregada. Embora essa abordagem possa ser apropriada em alguns cenários, é altamente recomendável que o host forneça uma versão específica para carregar.  
   
@@ -111,9 +114,11 @@ HRESULT CorBindToRuntimeEx (
  fora O ponteiro de interface retornado para `riid` .  
   
 ## <a name="remarks"></a>Comentários  
+
  Se `pwszVersion` o especificar uma versão de tempo de execução que não existe, `CorBindToRuntimeEx` o retornará um valor HRESULT de CLR_E_SHIM_RUNTIMELOAD.  
   
 ## <a name="execution-context-and-flow-of-windows-identity"></a>Contexto de execução e fluxo de identidade do Windows  
+
  Na versão 1 do CLR, o <xref:System.Security.Principal.WindowsIdentity> objeto não flui em pontos assíncronos, como novos threads, pools de threads ou retornos de chamada de temporizador. Na versão 2,0 do CLR, um <xref:System.Threading.ExecutionContext> objeto encapsula algumas informações sobre o thread em execução no momento e o flui em qualquer ponto assíncrono, mas não entre os limites do domínio do aplicativo. Da mesma forma, o <xref:System.Security.Principal.WindowsIdentity> objeto também flui em qualquer ponto assíncrono. Portanto, a representação atual no thread, se houver, flui também.  
   
  Você pode alterar o fluxo de duas maneiras:  
@@ -129,15 +134,16 @@ HRESULT CorBindToRuntimeEx (
      O modo de compatibilidade da versão 1 se aplica a todo o processo e a todos os domínios de aplicativo no processo.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** MSCorEE. dll  
+ **Biblioteca:** MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Função CorBindToCurrentRuntime](corbindtocurrentruntime-function.md)
 - [Função CorBindToRuntime](corbindtoruntime-function.md)

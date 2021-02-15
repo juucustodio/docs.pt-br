@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IMetaDataFilter'
 title: Interface IMetaDataFilter
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: ec0856ef-8c56-40ba-bf60-86e0ce8b337f
 topic_type:
 - apiref
-ms.openlocfilehash: 821936d20a421739e8eb3d5df228888df7f022e3
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: c994574207ccb26a5cb317e1673145a41f0d837d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503777"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99677919"
 ---
 # <a name="imetadatafilter-interface"></a>Interface IMetaDataFilter
+
 Fornece métodos para marcação e filtragem de tokens de metadados para evitar ações repetidas que já foram realizadas.  
   
 ## <a name="methods"></a>Métodos  
@@ -33,14 +35,15 @@ Fornece métodos para marcação e filtragem de tokens de metadados para evitar 
 |[Método UnmarkAll](imetadatafilter-unmarkall-method.md)|Remove as marcas de processamento de todos os tokens no escopo de metadados atual.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de metadados](metadata-interfaces.md)

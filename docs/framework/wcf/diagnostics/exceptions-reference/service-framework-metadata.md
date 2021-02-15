@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: metadados do Service Framework'
 title: Metadados de estrutura de serviço
 ms.date: 03/30/2017
 ms.assetid: 76afc73a-0770-4084-93f3-6701a757911e
-ms.openlocfilehash: f3e73df54b3389b2c9f27001953be147b27eb6f8
-ms.sourcegitcommit: 005980b14629dfc193ff6cdc040800bc75e0a5a5
+ms.openlocfilehash: d5443627e3bb4f15e0d7bc154e5735c7ef639320
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70991210"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99686200"
 ---
 # <a name="service-framework-metadata"></a>Metadados de estrutura de serviço
+
 Este tópico lista todas as exceções geradas pelos metadados do Service Framework.  
   
 ## <a name="exception-list"></a>Lista de exceções  

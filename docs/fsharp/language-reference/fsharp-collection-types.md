@@ -2,24 +2,24 @@
 title: Tipos de coleção
 description: 'Saiba mais sobre os tipos de coleção F # e como eles diferem dos tipos de coleção .NET.'
 ms.date: 08/14/2020
-ms.openlocfilehash: 394f6bbaf58e7e8607abc3a0c20bbc2b1c9c3c8d
-ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
+ms.openlocfilehash: 0b5be8f656d6728fe382b1944bda0a410a94d226
+ms.sourcegitcommit: fe8877e564deb68d77fa4b79f55584ac8d7e8997
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88656899"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90720329"
 ---
-# <a name="f-collection-types"></a>Tipos de coleção de F#
+# <a name="f-collection-types"></a>Tipos de coleção F #
 
 Ao examinar este tópico, você pode determinar qual tipo de coleção F # melhor atende a uma necessidade específica. Esses tipos de coleção diferem dos tipos de coleção no .NET, como aqueles no `System.Collections.Generic` namespace, nos quais os tipos de coleção F # são projetados de uma perspectiva de programação funcional em vez de uma perspectiva orientada a objeto. Mais especificamente, somente a coleção de matrizes tem elementos mutáveis. Portanto, ao modificar uma coleção, você cria uma instância da coleção modificada em vez de alterar a coleção original.
 
 Os tipos de coleção também diferem no tipo de estrutura de dados em que os objetos são armazenados. Estruturas de dados como tabelas de hash, listas vinculadas e matrizes têm características de desempenho diferentes e um conjunto diferente de operações disponíveis.
 
-## <a name="f-collection-types"></a>Tipos de coleção de F#
+## <a name="table-of-collection-types"></a>Tabela de tipos de coleção
 
 A tabela a seguir mostra os tipos de coleção F #.
 
-|Type|Descrição|Links Relacionados|
+|Tipo|Descrição|Links Relacionados|
 |----|-----------|-------------|
 |[Lista](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-fsharplist-1.html)|Uma série ordenada e imutável de elementos do mesmo tipo. Implementado como uma lista vinculada.|[Listas](lists.md)<br /><br />[Módulo List](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-listmodule.html)|
 |[Matriz](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-array-1.html)|Uma coleção de tamanho fixo, baseada em zero, mutável de elementos de dados consecutivos que são do mesmo tipo.|[matrizes](arrays.md)<br /><br />[Módulo Array](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-arraymodule.html)<br /><br />[Módulo Array2D](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-array2dmodule.html)<br /><br />[Módulo Array3D](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-array3dmodule.html)|
@@ -29,7 +29,7 @@ A tabela a seguir mostra os tipos de coleção F #.
 
 ### <a name="table-of-functions"></a>Tabela de funções
 
-Esta seção compara as funções que estão disponíveis em tipos de coleção F #. A complexidade computacional da função é determinada, em que N é o tamanho da primeira coleção e M é o tamanho da segunda coleção, se houver. Um traço (-) indica que essa função não está disponível na coleção. Como as sequências são avaliadas lentamente, uma função como Seq. Distinct pode ser O (1) porque ela retorna imediatamente, embora ainda afete o desempenho da sequência quando enumerada.
+Esta seção compara as funções que estão disponíveis em tipos de coleção F #. A complexidade computacional da função é determinada, em que N é o tamanho da primeira coleção e M é o tamanho da segunda coleção, se houver. Um traço (-) indica que essa função não está disponível na coleção. Como as sequências são avaliadas lentamente, uma função como `Seq.distinct` pode ser O (1) porque ela retorna imediatamente, embora ainda afete o desempenho da sequência quando enumerada.
 
 |Função|Array|Lista|Sequência|Mapeamento|Definir|Descrição|
 |--------|-----|----|--------|---|---|-----------|
@@ -90,11 +90,11 @@ Esta seção compara as funções que estão disponíveis em tipos de coleção 
 |map3|-|O (N)|-|-|-|Cria uma coleção cujos elementos são os resultados da aplicação da função fornecida aos elementos correspondentes das três coleções simultaneamente.|
 |MAPI|O (N)|O (N)|O (N)|-|-|Cria uma matriz cujos elementos são os resultados da aplicação da função determinada em cada elemento da matriz. O índice de inteiro que é passado para a função indica o índice do elemento que está sendo transformado.|
 |mapi2|O (N)|O (N)|-|-|-|Cria uma coleção cujos elementos são os resultados da aplicação da função fornecida aos elementos correspondentes das duas coleções emparelhadas, também passando o índice dos elementos. As duas matrizes de entrada devem ter o mesmo comprimento.|
-|máx.|O (N)|O (N)|O (N)|-|-|Retorna o maior elemento na coleção, comparado usando o operador [Max](https://msdn.microsoft.com/library/9a988328-00e9-467b-8dfa-e7a6990f6cce) .|
-|maxBy|O (N)|O (N)|O (N)|-|-|Retorna o maior elemento na coleção, comparado usando [Max](https://msdn.microsoft.com/library/9a988328-00e9-467b-8dfa-e7a6990f6cce) no resultado da função.|
+|máx.|O (N)|O (N)|O (N)|-|-|Retorna o maior elemento na coleção, comparado usando o operador [Max](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#max) .|
+|maxBy|O (N)|O (N)|O (N)|-|-|Retorna o maior elemento na coleção, comparado usando [Max](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#max) no resultado da função.|
 |maxElement|-|-|-|-|O (log (N))|Retorna o elemento maior no conjunto de acordo com a ordenação usada para o conjunto.|
-|mín.|O (N)|O (N)|O (N)|-|-|Retorna o elemento mínimo na coleção, comparada usando o operador [min](https://msdn.microsoft.com/library/adea4fd7-bfad-4834-989c-7878aca81fed) .|
-|minBy|O (N)|O (N)|O (N)|-|-|Retorna o elemento mínimo na coleção, comparada usando o operador [min](https://msdn.microsoft.com/library/adea4fd7-bfad-4834-989c-7878aca81fed) no resultado da função.|
+|min|O (N)|O (N)|O (N)|-|-|Retorna o elemento mínimo na coleção, comparada usando o operador [min](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#min) .|
+|minBy|O (N)|O (N)|O (N)|-|-|Retorna o elemento mínimo na coleção, comparada usando o operador [min](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#min) no resultado da função.|
 |minElement|-|-|-|-|O (log (N))|Retorna o elemento mais baixo no conjunto de acordo com a ordenação usada para o conjunto.|
 |ofArray|-|O (N)|O (1)|O (N)|O (N)|Cria uma coleção que contém os mesmos elementos que a matriz especificada.|
 |ofList|O (N)|-|O (1)|O (N)|O (N)|Cria uma coleção que contém os mesmos elementos da lista fornecida.|
@@ -115,10 +115,10 @@ Esta seção compara as funções que estão disponíveis em tipos de coleção 
 |set|O (1)|-|-|-|-|Define um elemento de uma matriz para o valor especificado.|
 |skip|-|-|O (N)|-|-|Retorna uma sequência que ignora N elementos da sequência subjacente e, em seguida, gera os elementos restantes da sequência.|
 |skipWhile|-|-|O (N)|-|-|Retorna uma sequência que, quando iterada, ignora os elementos da sequência subjacente, enquanto o predicado fornecido retorna `true` e, em seguida, gera os elementos restantes da sequência.|
-|sort|O (N \* log (n)) média<br /><br />O (N ^ 2) pior caso|O (N \* log (n))|O (N \* log (n))|-|-|Classifica a coleção por valor do elemento. Os elementos são comparados usando [Compare](https://msdn.microsoft.com/library/295e1320-0955-4c3d-ac31-288fa80a658c).|
-|sortBy|O (N \* log (n)) média<br /><br />O (N ^ 2) pior caso|O (N \* log (n))|O (N \* log (n))|-|-|Classifica a lista determinada usando as chaves fornecidas pela projeção fornecida. As chaves são comparadas usando [Compare](https://msdn.microsoft.com/library/295e1320-0955-4c3d-ac31-288fa80a658c).|
-|sortInPlace|O (N \* log (n)) média<br /><br />O (N ^ 2) pior caso|-|-|-|-|Classifica os elementos de uma matriz, modificando-os no local e usando a função de comparação fornecida. Os elementos são comparados usando [Compare](https://msdn.microsoft.com/library/295e1320-0955-4c3d-ac31-288fa80a658c).|
-|sortInPlaceBy|O (N \* log (n)) média<br /><br />O (N ^ 2) pior caso|-|-|-|-|Classifica os elementos de uma matriz, modificando-os no local e usando a projeção fornecida para as chaves. Os elementos são comparados usando [Compare](https://msdn.microsoft.com/library/295e1320-0955-4c3d-ac31-288fa80a658c).|
+|sort|O (N \* log (n)) média<br /><br />O (N ^ 2) pior caso|O (N \* log (n))|O (N \* log (n))|-|-|Classifica a coleção por valor do elemento. Os elementos são comparados usando [Compare](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#compare).|
+|sortBy|O (N \* log (n)) média<br /><br />O (N ^ 2) pior caso|O (N \* log (n))|O (N \* log (n))|-|-|Classifica a lista determinada usando as chaves fornecidas pela projeção fornecida. As chaves são comparadas usando [Compare](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#compare).|
+|sortInPlace|O (N \* log (n)) média<br /><br />O (N ^ 2) pior caso|-|-|-|-|Classifica os elementos de uma matriz, modificando-os no local e usando a função de comparação fornecida. Os elementos são comparados usando [Compare](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#compare).|
+|sortInPlaceBy|O (N \* log (n)) média<br /><br />O (N ^ 2) pior caso|-|-|-|-|Classifica os elementos de uma matriz, modificando-os no local e usando a projeção fornecida para as chaves. Os elementos são comparados usando [Compare](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#compare).|
 |sortInPlaceWith|O (N \* log (n)) média<br /><br />O (N ^ 2) pior caso|-|-|-|-|Classifica os elementos de uma matriz, modificando-os no local e usando a função de comparação fornecida como a ordem.|
 |sortWith|O (N \* log (n)) média<br /><br />O (N ^ 2) pior caso|O (N \* log (n))|-|-|-|Classifica os elementos de uma coleção, usando a função de comparação fornecida como a ordem e retornando uma nova coleção.|
 |sub|O (N)|-|-|-|-|Cria uma matriz que contém o subintervalo fornecido, que é especificado pelo índice inicial e pelo comprimento.|
@@ -144,7 +144,7 @@ Esta seção compara as funções que estão disponíveis em tipos de coleção 
 |zip|O (N)|O (N)|O (N)|-|-|Combina as duas coleções em uma lista de pares. As duas listas devem ter comprimentos iguais.|
 |zip3|O (N)|O (N)|O (N)|-|-|Combina as três coleções em uma lista de corridas. As listas devem ter comprimentos iguais.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Tipos F#](fsharp-types.md)
 - [Referência de linguagem F #](index.md)

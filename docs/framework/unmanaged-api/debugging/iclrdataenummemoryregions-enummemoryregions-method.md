@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRDataEnumMemoryRegions:: EnumMemoryRegions'
 title: Método ICLRDataEnumMemoryRegions::EnumMemoryRegions
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 22d2e339-f174-40b5-a478-0b744501566f
 topic_type:
 - apiref
-ms.openlocfilehash: e6cdc924df126e56d2e7c8c9cb8762ee88712fcc
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: 48887defab38d6ac99c718e14646d39166927438
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860694"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785712"
 ---
 # <a name="iclrdataenummemoryregionsenummemoryregions-method"></a>Método ICLRDataEnumMemoryRegions::EnumMemoryRegions
+
 Enumera áreas especificadas de memória.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT EnumMemoryRegions (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `callback`  
  no Um ponteiro para uma instância de [ICLRDataEnumMemoryRegionsCallback](iclrdataenummemoryregionscallback-interface.md) que é chamada por esse método para cada região de memória que está sendo enumerada para notificar o depurador do resultado.  
   
@@ -48,9 +51,11 @@ HRESULT EnumMemoryRegions (
  no Um valor da enumeração [CLRDataEnumMemoryFlags](clrdataenummemoryflags-enumeration.md) que especifica as regiões de memória a serem enumeradas.  
   
 ## <a name="remarks"></a>Comentários  
+
  Esse método usa a instância [ICLRDataEnumMemoryRegionsCallback](iclrdataenummemoryregionscallback-interface.md) especificada para notificar o chamador de resultados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** ClrData. idl, ClrData. h  
@@ -59,6 +64,6 @@ HRESULT EnumMemoryRegions (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRDataEnumMemoryRegions](iclrdataenummemoryregions-interface.md)

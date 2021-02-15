@@ -1,17 +1,17 @@
 ---
 title: Habilitar ou desabilitar redirecionamentos de associação gerados automaticamente
-description: Leia como habilitar ou desabilitar o redirecionamento de associação automática. Esse recurso afeta os aplicativos da área de trabalho e os aplicativos Web destinados ao .NET 4.5.1 ou posterior.
+description: Leia como habilitar ou desabilitar o redirecionamento de associação automática. Esse recurso afeta os aplicativos da área de trabalho e os aplicativos Web direcionados .NET Framework 4.5.1 ou posterior.
 ms.date: 10/30/2018
 helpviewer_keywords:
 - side-by-side execution, assembly binding redirection
 - assemblies [.NET Framework], binding redirection
 ms.assetid: 5fca42f3-bdce-4b81-a704-61e42c89d3ba
-ms.openlocfilehash: edee95f6c3b2c2d74c4f1b68e0a65e5cb0e85f54
-ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
+ms.openlocfilehash: b099ab4958b1cf41b76884243e252e19a7a951b7
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85105391"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95698826"
 ---
 # <a name="how-to-enable-and-disable-automatic-binding-redirection"></a>Como: Habilitar e desabilitar o redirecionamento automático de associação
 
@@ -35,7 +35,7 @@ Se você tiver o Visual Studio 2017 versão 15,7 ou posterior, poderá desabilit
 
 1. Abra o arquivo de projeto para edição usando um dos seguintes métodos:
 
-   - No Visual Studio, selecione o projeto em **Gerenciador de soluções**e, em seguida, escolha **abrir pasta no explorador de arquivos** no menu de atalho. No explorador de arquivos, localize o arquivo de projeto (. csproj ou. vbproj) e abra-o no bloco de notas.
+   - No Visual Studio, selecione o projeto em **Gerenciador de soluções** e, em seguida, escolha **abrir pasta no explorador de arquivos** no menu de atalho. No explorador de arquivos, localize o arquivo de projeto (. csproj ou. vbproj) e abra-o no bloco de notas.
    - No Visual Studio, em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto e escolha **descarregar projeto**. Clique com o botão direito do mouse no projeto descarregado e escolha **Editar [ProjectName. csproj]**.
 
 2. No arquivo de projeto, localize a seguinte entrada de propriedade:
@@ -56,7 +56,7 @@ Você pode habilitar redirecionamentos de associação automática em aplicativo
 
 1. Abra o arquivo de projeto para edição usando um dos seguintes métodos:
 
-   - No Visual Studio, selecione o projeto em **Gerenciador de soluções**e, em seguida, escolha **abrir pasta no explorador de arquivos** no menu de atalho. No explorador de arquivos, localize o arquivo de projeto (. csproj ou. vbproj) e abra-o no bloco de notas.
+   - No Visual Studio, selecione o projeto em **Gerenciador de soluções** e, em seguida, escolha **abrir pasta no explorador de arquivos** no menu de atalho. No explorador de arquivos, localize o arquivo de projeto (. csproj ou. vbproj) e abra-o no bloco de notas.
    - No Visual Studio, em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto e escolha **descarregar projeto**. Clique com o botão direito do mouse no projeto descarregado e escolha **Editar [ProjectName. csproj]**.
 
 2. Adicione o seguinte elemento ao primeiro grupo de propriedades de configuração (sob a \<PropertyGroup> marca):
@@ -100,7 +100,7 @@ Para adicionar redirecionamentos de associação a um arquivo de **web.config** 
 
    ![Diálogo de permissão de redirecionamento de associação](./media/clr-addbindingredirect.png "CLR_AddBindingRedirect")
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [\<bindingRedirect>Elementos](./file-schema/runtime/bindingredirect-element.md)
+- [\<bindingRedirect> Elementos](./file-schema/runtime/bindingredirect-element.md)
 - [Redirecionando versões de assembly](redirect-assembly-versions.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ponteiro de função WAITORTIMERCALLBACK'
 title: Ponteiro de função WAITORTIMERCALLBACK
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1fec4aef-0a06-4df0-bae7-d31a9ef9603d
 topic_type:
 - apiref
-ms.openlocfilehash: ee5dd611888ec52e360ef45fab4c01e9c5b2d6bb
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 6fd9e7eab56e48086eefcb26fc48cbf5f45d4a0e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84009438"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99679050"
 ---
 # <a name="waitortimercallback-function-pointer"></a>Ponteiro de função WAITORTIMERCALLBACK
+
 Aponta para uma função que notifica o host que um identificador de espera ( <xref:System.Threading.WaitHandle> ) foi sinalizado ou esgotou o tempo limite.  
   
  Esse ponteiro de função foi preterido no .NET Framework 4.  
@@ -36,6 +38,7 @@ typedef VOID (__stdcall *WAITORTIMERCALLBACK) (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `lpParameter`  
  no Um ponteiro para um objeto que contém informações definidas pelo host.  
   
@@ -43,17 +46,19 @@ typedef VOID (__stdcall *WAITORTIMERCALLBACK) (
  [in] `true` Se o identificador de espera expirou ou `false` se foi sinalizado.  
   
 ## <a name="remarks"></a>Comentários  
+
  A função para a qual os `WAITORTIMERCALLBACK` pontos é uma função de retorno de chamada e deve ser implementada pelo gravador do aplicativo de hospedagem.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** MSCorWks. dll  
+ **Biblioteca:** MSCorWks.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Funções de hospedagem CLR reprovadas](deprecated-clr-hosting-functions.md)

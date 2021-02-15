@@ -3,15 +3,15 @@ title: Assemblies e execução lado a lado
 description: Saiba mais sobre a execução lado a lado, que é a capacidade de armazenar e executar várias versões de um aplicativo ou componente no mesmo computador.
 ms.date: 08/20/2019
 helpviewer_keywords:
-- side-by-side execution [.NET Framework]
-- assemblies [.NET Framework], side-by-side execution
+- side-by-side execution [.NET]
+- assemblies [.NET], side-by-side execution
 ms.assetid: e42036ee-7590-47d1-b884-cc856e39bd5d
-ms.openlocfilehash: 74b5710c7e8ad60873fb83a3699ce3992ead6e07
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 7bedd5a384ceace014412eb894adad5c92c00b05
+ms.sourcegitcommit: 279fb6e8d515df51676528a7424a1df2f0917116
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378638"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92687985"
 ---
 # <a name="assemblies-and-side-by-side-execution"></a>Assemblies e execução lado a lado
 
@@ -21,7 +21,7 @@ O suporte para armazenamento lado a lado e execução de diferentes versões do 
   
 Embora o runtime ofereça a capacidade de criar aplicativos lado a lado, a execução lado a lado não é automática. Para obter mais informações sobre como criar aplicativos para execução lado a lado, consulte [diretrizes para criar componentes para execução lado a lado](../../framework/deployment/guidelines-for-creating-components-for-side-by-side-execution.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Como o tempo de execução localiza assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md)
 - [Assemblies no .NET](index.md)

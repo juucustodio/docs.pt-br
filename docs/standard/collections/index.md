@@ -2,38 +2,38 @@
 title: Coleções e estruturas de dados
 description: Saiba como usar coleções e estruturas de dados no .NET. Use coleções genéricas e não genéricas em operações thread-safe.
 ms.date: 04/30/2020
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - grouping data in collections
-- objects [.NET Framework], grouping in collections
+- objects [.NET], grouping in collections
 - Array class, grouping data in collections
-- threading [.NET Framework], safety
+- threading [.NET], safety
 - Collections classes
-- collections [.NET Framework]
+- collections [.NET]
 ms.assetid: 60cc581f-1db5-445b-ba04-a173396bf872
-ms.openlocfilehash: 3d5b16dccdd9867293a52c74a2d379c807fd93e7
-ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
+ms.openlocfilehash: 7400d460c4d1ebf5c02d8313f33a5a63de1734d4
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84662739"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95733510"
 ---
 # <a name="collections-and-data-structures"></a>Coleções e estruturas de dados
 
 Dados semelhantes podem normalmente ser tratados com mais eficiência quando armazenados e manipulados como uma coleção. Você pode usar a <xref:System.Array?displayProperty=nameWithType> classe ou as classes nos <xref:System.Collections> <xref:System.Collections.Generic> <xref:System.Collections.Concurrent> namespaces,, e <xref:System.Collections.Immutable> para adicionar, remover e modificar elementos individuais ou um intervalo de elementos em uma coleção.
 
-Há dois tipos principais de coleções; coleções genéricas e coleções não genéricas. Coleções genéricas foram adicionadas ao .NET Framework 2.0 e fornecem coleções que são fortemente tipadas no tempo de compilação. Por isso, coleções genéricas normalmente oferecem melhor desempenho. Coleções genéricas aceitam um parâmetro de tipo quando são criadas e não exigem que você converta de e para o tipo <xref:System.Object> ao adicionar ou remover itens da coleção.  Além disso, há suporte para a maioria das coleções genéricas em aplicativos da Windows Store. As coleções não genéricas armazenam itens como <xref:System.Object> , exigem a conversão e a maioria não tem suporte para o desenvolvimento de aplicativos da Windows Store. No entanto, você pode ver as coleções não genéricas no código mais antigo.
+Há dois tipos principais de coleções; coleções genéricas e coleções não genéricas. Coleções genéricas são fortemente tipadas em tempo de compilação. Por isso, coleções genéricas normalmente oferecem melhor desempenho. Coleções genéricas aceitam um parâmetro de tipo quando são criadas e não exigem que você converta de e para o tipo <xref:System.Object> ao adicionar ou remover itens da coleção.  Além disso, há suporte para a maioria das coleções genéricas em aplicativos da Windows Store. As coleções não genéricas armazenam itens como <xref:System.Object> , exigem a conversão e a maioria não tem suporte para o desenvolvimento de aplicativos da Windows Store. No entanto, você pode ver as coleções não genéricas no código mais antigo.
 
-Começando com o .NET Framework 4, as coleções no namespace <xref:System.Collections.Concurrent> fornecem operações thread-safe eficientes para acessar itens da coleção de vários threads. As classes de coleção imutáveis no <xref:System.Collections.Immutable> namespace ([pacote NuGet](https://www.nuget.org/packages/System.Collections.Immutable)) são inerentemente seguras ao thread porque as operações são executadas em uma cópia da coleção original e a coleção original não pode ser modificada.
+A partir do .NET Framework 4, as coleções no <xref:System.Collections.Concurrent> namespace fornecem operações eficientes de thread-safe para acessar itens de coleção de vários threads. As classes de coleção imutáveis no <xref:System.Collections.Immutable> namespace ([pacote NuGet](https://www.nuget.org/packages/System.Collections.Immutable)) são inerentemente seguras ao thread porque as operações são executadas em uma cópia da coleção original e a coleção original não pode ser modificada.
 
 <a name="BKMK_Commoncollectionfeatures"></a>
+
 ## <a name="common-collection-features"></a>Recursos comuns de coleção
 
 Todas as coleções fornecem métodos para adicionar, remover ou localizar itens na coleção. Além disso, todas as coleções que direta ou indiretamente implementam a interface <xref:System.Collections.ICollection> ou a interface <xref:System.Collections.Generic.ICollection%601> compartilham estes recursos:
 
 - **A capacidade de enumerar a coleção**
 
-    Coleções do .NET Framework implementam <xref:System.Collections.IEnumerable?displayProperty=nameWithType> ou <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> para permitir a iteração da coleção por meio dela. Um enumerador pode ser considerado um ponteiro móvel para qualquer elemento da coleção. A instrução [foreach, in](../../csharp/language-reference/keywords/foreach-in.md) e a [Instrução For Each...Next](../../visual-basic/language-reference/statements/for-each-next-statement.md) usam o enumerador exposto pelo método <xref:System.Collections.IEnumerable.GetEnumerator%2A> e ocultam a complexidade de manipulação do enumerador. Além disso, qualquer coleção que implementa <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> é considerada um *tipo passível de consulta* e pode ser consultada com LINQ. Consultas LINQ fornecem um padrão comum para o acesso de dados. Elas são geralmente mais concisas e legíveis que loops `foreach` padrão e fornecem filtragem, classificação e agrupamento de recursos. Consultas LINQ também podem melhorar o desempenho. Para obter mais informações, consulte [LINQ to Objects (C#)](../../csharp/programming-guide/concepts/linq/linq-to-objects.md), [LINQ to Objects (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md), [Parallel LINQ (PLINQ)](../parallel-programming/introduction-to-plinq.md), [Introdução a consultas LINQ (C#)](../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md) e [Operações básicas de consulta (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md).
+    As coleções .NET implementam <xref:System.Collections.IEnumerable?displayProperty=nameWithType> ou <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> permitem que a coleção seja iterada. Um enumerador pode ser considerado um ponteiro móvel para qualquer elemento da coleção. A instrução [foreach, in](../../csharp/language-reference/keywords/foreach-in.md) e a [Instrução For Each...Next](../../visual-basic/language-reference/statements/for-each-next-statement.md) usam o enumerador exposto pelo método <xref:System.Collections.IEnumerable.GetEnumerator%2A> e ocultam a complexidade de manipulação do enumerador. Além disso, qualquer coleção que implementa <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> é considerada um *tipo passível de consulta* e pode ser consultada com LINQ. Consultas LINQ fornecem um padrão comum para o acesso de dados. Elas são geralmente mais concisas e legíveis que loops `foreach` padrão e fornecem filtragem, classificação e agrupamento de recursos. Consultas LINQ também podem melhorar o desempenho. Para obter mais informações, consulte [LINQ to Objects (C#)](../../csharp/programming-guide/concepts/linq/linq-to-objects.md), [LINQ to Objects (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md), [Parallel LINQ (PLINQ)](../parallel-programming/introduction-to-plinq.md), [Introdução a consultas LINQ (C#)](../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md) e [Operações básicas de consulta (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md).
 
 - **A capacidade de copiar o conteúdo da coleção para uma matriz**
 
@@ -51,13 +51,14 @@ Além disso, muitas classes de coleção contêm os seguintes recursos:
 
 - **Um limite inferior consistente**
 
-    O limite inferior de uma coleção é o índice do seu primeiro elemento. Todas as coleções indexadas nos namespaces <xref:System.Collections> têm um limite inferior de zero, indicando que são indexados em 0. <xref:System.Array>tem um limite inferior de zero por padrão, mas um limite inferior diferente pode ser definido ao criar uma instância da classe de **matriz** usando <xref:System.Array.CreateInstance%2A?displayProperty=nameWithType> .
+    O limite inferior de uma coleção é o índice do seu primeiro elemento. Todas as coleções indexadas nos namespaces <xref:System.Collections> têm um limite inferior de zero, indicando que são indexados em 0. <xref:System.Array> tem um limite inferior de zero por padrão, mas um limite inferior diferente pode ser definido ao criar uma instância da classe de **matriz** usando <xref:System.Array.CreateInstance%2A?displayProperty=nameWithType> .
 
 - **Sincronização para acesso de vários threads** ( <xref:System.Collections> somente classes).
 
     Tipos de coleção não genérica no namespace <xref:System.Collections> oferecem algum acesso thread-safe com sincronização; geralmente exposto por meio dos membros <xref:System.Collections.ICollection.SyncRoot%2A> e <xref:System.Collections.ICollection.IsSynchronized%2A>. Essas coleções são não thread-safe por padrão. Se você precisar de acesso com multithread escalável e eficiente para uma coleção, use uma das classes no namespace <xref:System.Collections.Concurrent> ou considere usar uma coleção imutável. Para obter mais informações, veja [Coleções thread-safe](thread-safe/index.md).
 
 <a name="BKMK_Choosingacollection"></a>
+
 ## <a name="choose-a-collection"></a>Escolher uma coleção
 
 Em geral, você deve usar coleções genéricas. A tabela a seguir descreve alguns cenários comuns de coleção e as classes de coleção que você pode usar para esses cenários. Se você for inexperiente com coleções genéricas, esta tabela o ajudará a escolher a coleção genérica adequada para a tarefa.
@@ -87,7 +88,7 @@ Ao escolher uma [classe de coleção](selecting-a-collection-class.md), vale a p
 | `HashSet<T>.Add`, pesquisa  | O (1)       | O ( `n` )                    | `ImmutableHashSet<T>.Add`          | O (log `n` ) |
 | `SortedSet<T>.Add`        | O (log `n` ) | O ( `n` )                    | `ImmutableSortedSet<T>.Add`        | O (log `n` ) |
 | `Dictionary<T>.Add`       | O (1)       | O ( `n` )                    | `ImmutableDictionary<T>.Add`       | O (log `n` ) |
-| `Dictionary<T>`busca    | O (1)       | O (1) – ou estritamente O ( `n` ) | `ImmutableDictionary<T>`busca    | O (log `n` ) |
+| `Dictionary<T>` busca    | O (1)       | O (1) – ou estritamente O ( `n` ) | `ImmutableDictionary<T>` busca    | O (log `n` ) |
 | `SortedDictionary<T>.Add` | O (log `n` ) | O ( `n` log `n` )            | `ImmutableSortedDictionary<T>.Add` | O (log `n` ) |
 
 Um `List<T>` pode ser enumerado com eficiência usando um `for` loop ou um `foreach` loop. `ImmutableList<T>`No entanto, um trabalho insatisfatório dentro de um `for` loop ocorre devido ao tempo (de log `n` ) do seu indexador. A enumeração de um `ImmutableList<T>` usando um `foreach` loop é eficiente porque o `ImmutableList<T>` usa uma árvore binária para armazenar seus dados em vez de uma matriz simples, como o `List<T>` uso. Uma matriz pode ser rapidamente indexada em, enquanto uma árvore binária deve ser percorrido até que o nó com o índice desejado seja encontrado.
@@ -95,9 +96,10 @@ Um `List<T>` pode ser enumerado com eficiência usando um `for` loop ou um `fore
 Além disso, `SortedSet<T>` o tem a mesma complexidade que `ImmutableSortedSet<T>` . Isso porque ambos usam árvores binárias. É claro que a diferença significativa é que `ImmutableSortedSet<T>` usa uma árvore binária imutável. Como `ImmutableSortedSet<T>` o também oferece uma <xref:System.Collections.Immutable.ImmutableSortedSet%601.Builder?displayProperty=nameWithType> classe que permite a mutação, você pode ter a imutabilidade e o desempenho.
 
 <a name="BKMK_RelatedTopics"></a>
-## <a name="related-topics"></a>Tópicos relacionados
 
-|Title|Descrição|
+## <a name="related-topics"></a>Tópicos Relacionados
+
+|Título|DESCRIÇÃO|
 |-----------|-----------------|
 |[Selecionando uma classe de coleção](selecting-a-collection-class.md)|Descreve as diferentes coleções e ajuda a selecionar uma para o seu cenário.|
 |[Tipos de coleção comumente usados](commonly-used-collection-types.md)|Descreve os tipos de coleção genérica e não genérica normalmente usadas, tais como <xref:System.Array?displayProperty=nameWithType>, <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>, e <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>.|
@@ -109,7 +111,9 @@ Além disso, `SortedSet<T>` o tem a mesma complexidade que `ImmutableSortedSet<T
 |System.Collections.Immutable|Apresenta as coleções imutáveis e fornece links para os tipos de coleção.|
 
 <a name="BKMK_Reference"></a>
+
 ## <a name="reference"></a>Referência
+
 <xref:System.Array?displayProperty=nameWithType>
 <xref:System.Collections?displayProperty=nameWithType>
 <xref:System.Collections.Concurrent?displayProperty=nameWithType>

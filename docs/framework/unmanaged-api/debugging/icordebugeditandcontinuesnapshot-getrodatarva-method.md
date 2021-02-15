@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugEditAndContinueSnapshot:: GetRoDataRVA'
 title: Método ICorDebugEditAndContinueSnapshot::GetRoDataRVA
 ms.date: 03/30/2017
 api_name:
@@ -15,16 +16,17 @@ helpviewer_keywords:
 ms.assetid: efc32294-292b-419a-9d6e-24251322a85a
 topic_type:
 - apiref
-ms.openlocfilehash: e88a0ffbc167dfefb8efe39f6b5787548bc9460c
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 1d86d989a41ff85c78a972937e5ea93f87b8aa3b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76783164"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694767"
 ---
 # <a name="icordebugeditandcontinuesnapshotgetrodatarva-method"></a>Método ICorDebugEditAndContinueSnapshot::GetRoDataRVA
+
 `GetRoDataRVA` é obsoleto. Não chame esse método.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

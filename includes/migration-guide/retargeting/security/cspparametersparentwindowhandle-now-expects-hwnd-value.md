@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 4b5c886ad35afbbf0a68e03b3174ab9ea1f5524f
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 12ba3bd3c9e9e00b88cab0e568a1ce0f4f8bbb05
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85614291"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90606797"
 ---
 ### <a name="cspparametersparentwindowhandle-now-expects-hwnd-value"></a>CspParameters.ParentWindowHandle agora espera o valor HWND
 
@@ -16,7 +16,7 @@ O valor <xref:System.Security.Cryptography.CspParameters.ParentWindowHandle>, in
 cspParameters.ParentWindowHandle = form.Handle;
 ```
 
-Em versões anteriores do .NET Framework, esperava-se que o valor fosse um <xref:System.IntPtr?displayProperty=fullName> representando um local na memória em que o valor de [HWND](https://docs.microsoft.com/windows/desktop/WinProg/windows-data-types#HWND) residia. Definir a propriedade como form.Handle no Windows 7 e em versões anteriores não tinha efeito. No Windows 8 e em versões posteriores, isso resulta em &quot;<xref:System.Security.Cryptography.CryptographicException?displayProperty=fullName>: O parâmetro está incorreto.&quot;
+Em versões anteriores do .NET Framework, esperava-se que o valor fosse um <xref:System.IntPtr?displayProperty=fullName> representando um local na memória em que o valor de [HWND](/windows/desktop/WinProg/windows-data-types#HWND) residia. Definir a propriedade como form.Handle no Windows 7 e em versões anteriores não tinha efeito. No Windows 8 e em versões posteriores, isso resulta em &quot;<xref:System.Security.Cryptography.CryptographicException?displayProperty=fullName>: O parâmetro está incorreto.&quot;
 
 #### <a name="suggestion"></a>Sugestão
 
@@ -43,7 +43,7 @@ Por outro lado, usuários que quiserem aceitar o novo comportamento no runtime d
 |:--------|:------------|
 | Escopo   | Secundária       |
 | Versão | 4.7         |
-| Type    | Redirecionando |
+| Tipo    | Redirecionando |
 
 #### <a name="affected-apis"></a>APIs afetadas
 

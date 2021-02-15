@@ -1,22 +1,22 @@
 ---
-title: 'Como: enumerar fusos horários presentes em um computador'
+description: 'Saiba mais sobre: como enumerar os fusos horários presentes em um computador'
+title: 'Como: enumerar os fusos horários presentes em um computador'
 ms.date: 04/10/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
-- time zones [.NET Framework], enumerating
-- enumerating time zones [.NET Framework]
+- time zones [.NET], enumerating
+- enumerating time zones [.NET]
 ms.assetid: bb7a42ab-6bd9-4c5c-b734-5546d51f8669
-ms.openlocfilehash: 8f1cc9d58bc0f169d458854eac6568caaa4481c7
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 98227d61ed81828f9c0614f622fed9a9667c6f4e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286126"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702672"
 ---
-# <a name="how-to-enumerate-time-zones-present-on-a-computer"></a>Como: enumerar fusos horários presentes em um computador
+# <a name="how-to-enumerate-time-zones-present-on-a-computer"></a>Como: enumerar os fusos horários presentes em um computador
 
 Trabalhar com êxito com um fuso horário designado requer que informações sobre o fuso horário em questão estejam disponíveis no sistema. Os sistemas operacionais Windows XP e Windows Vista armazenam essas informações no registro. Embora o número total de fusos horários existentes seja grande, o Registro contém informações apenas sobre um subconjunto deles. Além disso, o Registro em si é uma estrutura dinâmica cujo conteúdo está sujeito a alterações deliberadas ou acidentais. Como resultado, um aplicativo nem sempre pode presumir que um determinado fuso horário esteja definido e disponível no sistema. A primeira etapa para muitos aplicativos que usam informações de fuso horário é determinar se os fusos horários necessários estão disponíveis no sistema local ou dar ao usuário uma lista dos fusos horários entre os quais escolher. Isso requer que o aplicativo enumere os fusos horários definidos no sistema local.
 
@@ -63,11 +63,11 @@ Este exemplo requer:
 
 - Que os seguintes namespaces sejam importados:
 
-  <xref:System>(em código C#)
+  <xref:System> (em código C#)
 
   <xref:System.Collections.ObjectModel>
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Datas, horas e fusos horários](index.md)
 - [Como: salvar fusos horários em um recurso inserido](save-time-zones-to-an-embedded-resource.md)

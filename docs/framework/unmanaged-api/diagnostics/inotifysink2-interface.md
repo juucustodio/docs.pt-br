@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface INotifySink2'
 title: Interface INotifySink2
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: c1018789-4206-455d-aacc-2d876fc0d0bb
 topic_type:
 - apiref
-ms.openlocfilehash: c7afe074afb9b38d6fefa1192799120dbb50b403
-ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
+ms.openlocfilehash: 4d046c5566d9cb1641426f6a990f39449c33bc4d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83442053"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800286"
 ---
 # <a name="inotifysink2-interface"></a>Interface INotifySink2
+
 Declara métodos para notificação de coletor.  
   
 ## <a name="methods"></a>Métodos  
@@ -34,9 +36,10 @@ Declara métodos para notificação de coletor.
 |[Método OnSyncCallReturn](inotifysink2-onsynccallreturn-method.md)|É invocado quando uma chamada retorna.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** ProtocolNotify2. idl  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface INotifyConnection2](inotifyconnection2-interface.md)
 - [Interface INotifySource2](inotifysource2-interface.md)

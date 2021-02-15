@@ -1,17 +1,19 @@
 ---
+description: 'Saiba mais sobre: protocolos de segurança'
 title: Protocolos de segurança
 ms.date: 03/30/2017
 helpviewer_keywords:
 - security [WCF], protocols
 ms.assetid: 57ffcbea-807c-4e43-a41c-44b3db8ed2af
-ms.openlocfilehash: d09dd6bcb8564f770df6b87751aee4cdb04cd12c
-ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
+ms.openlocfilehash: 267724f852e2402054c11fbada3ef465db4b1ca2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84144611"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726800"
 ---
 # <a name="security-protocols"></a>Protocolos de segurança
+
 Os protocolos especificação Web Services Security fornecem mecanismos de segurança de serviços da Web que abrangem todos os requisitos de segurança de mensagens empresariais existentes. Esta seção descreve os detalhes de Windows Communication Foundation (WCF) (implementados no <xref:System.ServiceModel.Channels.SecurityBindingElement> ) para os seguintes protocolos de segurança de serviços da Web.  
   
 |Especificação/documento|Link|  
@@ -25,7 +27,7 @@ Os protocolos especificação Web Services Security fornecem mecanismos de segur
 |WSS: X. 509 o perfil de token 1,1|<http://www.oasis-open.org/committees/download.php/16785/wss-v1.1-spec-os-x509TokenProfile.pdf>|  
 |WSS: perfil de token Kerberos 1,1|<http://www.oasis-open.org/committees/download.php/16788/wss-v1.1-spec-os-KerberosTokenProfile.pdf>|  
 |WSS: perfil de token 1,1 SAML 1,1|<http://www.oasis-open.org/committees/download.php/16768/wss-v1.1-spec-os-SAMLTokenProfile.pdf>|  
-|Conversa WS-Secure 1,3|<http://docs.oasis-open.org/ws-sx/ws-secureconversation/200512/ws-secureconversation-1.3-os.pdf>|  
+|WS-Secure conversa 1,3|<http://docs.oasis-open.org/ws-sx/ws-secureconversation/200512/ws-secureconversation-1.3-os.pdf>|  
 |WS-Trust 1.3|<http://docs.oasis-open.org/ws-sx/ws-trust/200512/ws-trust-1.3-os.pdf>|  
 |Observação do aplicativo:<br /><br /> Usando WS-Trust para handshake de TLS|A ser publicado|  
 |Observação do aplicativo:<br /><br /> Usando WS-Trust para SPNEGO|A ser publicado|  
@@ -55,14 +57,14 @@ Os protocolos especificação Web Services Security fornecem mecanismos de segur
 |Kerberos|Windows|Windows|Mensagem|  
 |IssuedToken|Federado|Federado|Mensagem|  
 |SspiNegotiated|Windows SSPI negociado|Windows SSPI negociado|Mensagem|  
-|AnonymousForSslNegotiated|Nenhum|X509, TLS-nego|Mensagem|  
-|UserNameForSslNegotiated|Nome de usuário/senha|X509, TLS-nego|Mensagem|  
-|MutualSslNegotiated|X509|X509, TLS-nego|Mensagem|  
-|IssuedTokenForSslNegotiated|Federado|X509, TLS-nego|Mensagem|  
+|AnonymousForSslNegotiated|Nenhum|X509, TLS-Nego|Mensagem|  
+|UserNameForSslNegotiated|Nome de usuário/senha|X509, TLS-Nego|Mensagem|  
+|MutualSslNegotiated|X509|X509, TLS-Nego|Mensagem|  
+|IssuedTokenForSslNegotiated|Federado|X509, TLS-Nego|Mensagem|  
   
- Os pontos de extremidade que usam esses modos de autenticação podem expressar seus requisitos de segurança usando WS-SecurityPolicy (WS-SP). Este documento descreve a estrutura de mensagens de cabeçalho e de infraestrutura de segurança para cada modo de autenticação e fornece exemplos de políticas e mensagens.  
+ Os pontos de extremidade que usam esses modos de autenticação podem expressar seus requisitos de segurança usando o WS-SecurityPolicy (WS-SP). Este documento descreve a estrutura de mensagens de cabeçalho e de infraestrutura de segurança para cada modo de autenticação e fornece exemplos de políticas e mensagens.  
   
- O WCF aproveita o WS-SecureConversation para fornecer suporte a sessões seguras para proteger as trocas de várias mensagens entre aplicativos.  Consulte "sessões seguras" abaixo para obter detalhes de implementação.  
+ O WCF aproveita WS-SecureConversation para fornecer suporte a sessões seguras para proteger as trocas de várias mensagens entre aplicativos.  Consulte "sessões seguras" abaixo para obter detalhes de implementação.  
   
  Além dos modos de autenticação, o WCF fornece configurações para controlar mecanismos de proteção comuns que se aplicam à maioria dos modos de autenticação baseados em segurança de mensagem, por exemplo: ordem de assinatura versus operações de criptografia, conjuntos de algoritmos, derivação de chave e confirmação de assinatura.  
   
@@ -72,21 +74,23 @@ Os protocolos especificação Web Services Security fornecem mecanismos de segur
 |------------|---------------|  
 |s|`http://www.w3.org/2003/05/soap-envelope`|  
 |sp|`http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702`|  
-|a|`http://www.w3.org/2005/08/addressing`|  
+|um|`http://www.w3.org/2005/08/addressing`|  
 |wsse|TBD – OASIS WSS 1,0 URI|  
 |wsse11|TBD – OASIS WSS 1,1 URI|  
 |wsu|`http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd`|  
 |AD|TBD – URI de XMLDSig do W3C|  
-|WST|TBD – URI do WS-Trust 2005/02|  
-|wssc|TBD – WS-SecureConversation 2005/02 URI|  
+|WST|TBD – WS-Trust URI 2005/02|  
+|wssc|TBD – WS-SecureConversation URI 2005/02|  
 |wsaw|`http://www.w3.org/2006/05/addressing/wsdl`|  
 |WSP|`http://schemas.xmlsoap.org/ws/2004/09/policy`|  
 |mssp|`http://schemas.microsoft.com/ws/2005/07/securitypolicy`|  
   
 ## <a name="1-token-profiles"></a>1. perfis de token  
+
  As especificações de especificação Web Services Security representam credenciais como tokens de segurança. O WCF dá suporte aos seguintes tipos de token:  
   
 ### <a name="11-usernametoken"></a>UsernameToken 1,1  
+
  O WCF segue os perfis UsernameToken10 e UsernameToken11 com as seguintes restrições:  
   
  O atributo R1101 Passwordtype no elemento UsernameToken\Password deve ser omitido ou ter um valor #PasswordText (padrão).  
@@ -104,6 +108,7 @@ Os protocolos especificação Web Services Security fornecem mecanismos de segur
  Lógica: as senhas geralmente são consideradas muito fracas para serem usadas para operações criptográficas.  
   
 ### <a name="12-x509-token"></a>1,2 token X509  
+
  O WCF dá suporte a certificados X509v3 como um tipo de credencial e segue o X509TokenProfile 1.0 e o X509TokenProfile 1.1 com as seguintes restrições:  
   
  R1201 o atributo ValueType no elemento BinarySecurityToken deve ter valor #X509v3 quando ele contiver um certificado X509v3.  
@@ -121,6 +126,7 @@ Os protocolos especificação Web Services Security fornecem mecanismos de segur
  O WCF dá suporte a X509IssuerSerial. No entanto, há problemas de interoperabilidade com o X509IssuerSerial: o WCF usa uma cadeia de caracteres para comparar dois valores de X509IssuerSerial. Portanto, se um reordenar componentes do nome da entidade e enviar a um serviço WCF uma referência a um certificado, ele poderá não ser encontrado.  
   
 ### <a name="13-kerberos-token"></a>Token Kerberos 1,3  
+
  O WCF dá suporte ao KerberosTokenProfile 1.1 para fins de autenticação do Windows com as seguintes restrições:  
   
  R1301 um token Kerberos deve transportar o valor de um AP_REQ de Kerberos v4 encapsulado de GSS, conforme definido em GSS_API e a especificação de Kerberos, e deve ter o atributo ValueType com o valor #GSS_Kerberosv5_AP_REQ.  
@@ -128,33 +134,42 @@ Os protocolos especificação Web Services Security fornecem mecanismos de segur
  O WCF usa a GSS-REQ do Kerberos encapsulado no protocolo de autenticação, e não um ponto de acesso simples. Essa é uma prática recomendada de segurança.  
   
 ### <a name="14-saml-v11-token"></a>Token do SAML v 1.1 1,4  
+
  O WCF dá suporte a perfis de token SAML 1,0 e 1,1 para tokens SAML v 1.1. É possível implementar outras versões de formatos de token SAML.  
   
 ### <a name="15-security-context-token"></a>Token de contexto de segurança 1,5  
+
  O WCF dá suporte ao SCT (token de contexto de segurança) introduzido no WS-SecureConversation. O SCT é usado para representar um contexto de segurança estabelecido no SecureConversation, bem como os protocolos de negociação binárias TLS e SSPI, descritos abaixo.  
   
 ## <a name="2-common-message-security-parameters"></a>2. parâmetros de segurança de mensagem comum  
   
 ### <a name="21-timestamp"></a>2,1 carimbo de data/hora  
+
  A presença do carimbo de data/hora é controlada usando a <xref:System.ServiceModel.Channels.SecurityBindingElement.IncludeTimestamp%2A> propriedade da <xref:System.ServiceModel.Channels.SecurityBindingElement> classe. O WCF sempre serializa wsse: TimeStamp com wsse: created e wsse: expira campos. O carimbo de data/hora wsse: sempre é assinado quando a assinatura é usada.  
   
 ### <a name="22-protection-order"></a>2,2 ordem de proteção  
- O WCF dá suporte à ordem de proteção de mensagem "assinar antes de criptografar" e "criptografar antes de assinar" (política de segurança 1,2). É recomendável "assinar antes de criptografar" para os motivos, incluindo: mensagens protegidas com criptografar antes de assinar os ataques de substituição de assinatura, a menos que o mecanismo de SignatureConfirmation do WS-Security 1,1 seja usado e uma assinatura sobre conteúdo criptografado torne a auditoria mais difícil.  
+
+ O WCF dá suporte à ordem de proteção de mensagem "assinar antes de criptografar" e "criptografar antes de assinar" (política de segurança 1,2). A opção "assinar antes de criptografar" é recomendada por motivos, incluindo: mensagens protegidas com criptografar antes de assinar os ataques de substituição de assinatura, a menos que o mecanismo de SignatureConfirmation 1,1 seja usado, e uma assinatura sobre conteúdo criptografado torna WS-Security a auditoria mais difícil.  
   
 ### <a name="23-signature-protection"></a>Proteção de assinatura 2,3  
+
  Quando o sinal de criptografia antes é usado, é recomendável proteger a assinatura para evitar ataques de força bruta para adivinhar o conteúdo criptografado ou a chave de assinatura (especialmente quando um token personalizado é usado com o material de chave fraco).  
   
 ### <a name="24-algorithm-suite"></a>Pacote de algoritmos 2,4  
+
  O WCF dá suporte a todos os conjuntos de algoritmos listados na política de segurança 1,2.  
   
 ### <a name="25-key-derivation"></a>Derivação de chave 2,5  
+
  O WCF usa "derivação de chave para chaves simétricas", conforme descrito em WS-SecureConversation.  
   
 ### <a name="26-signature-confirmation"></a>2,6 confirmação de assinatura  
+
  A confirmação de assinatura pode ser usada como proteção contra ataques de Man intermediários para proteger o conjunto de assinaturas.  
   
 ### <a name="27-security-header-layout"></a>Layout do cabeçalho de segurança 2,7  
- Cada modo de autenticação descreve um determinado layout para o cabeçalho de segurança. Os elementos dentro do cabeçalho de segurança são semiordenados. Para definir a ordem dos elementos filho do cabeçalho de segurança, a política do WS-Security define os seguintes modos de layout de cabeçalho de segurança:  
+
+ Cada modo de autenticação descreve um determinado layout para o cabeçalho de segurança. Os elementos dentro do cabeçalho de segurança são semiordenados. Para definir a ordem dos elementos filho do cabeçalho de segurança, WS-Security política define os seguintes modos de layout de cabeçalho de segurança:  
   
 |||  
 |-|-|  
@@ -166,9 +181,11 @@ Os protocolos especificação Web Services Security fornecem mecanismos de segur
  O WCF dá suporte a todos os quatro modos de layout de cabeçalho de segurança. A estrutura de cabeçalho de segurança e os exemplos de mensagem para os modos de autenticação abaixo seguem o modo "estrito".  
   
 ## <a name="3-common-message-security-parameters"></a>3. parâmetros de segurança de mensagem comum  
+
  Esta seção fornece as políticas de exemplo para cada modo de autenticação, juntamente com exemplos que mostram a estrutura de cabeçalho de segurança em mensagens trocadas por cliente e serviço.  
   
 ### <a name="31-transport-protection"></a>Proteção de transporte 3,1  
+
  O WCF fornece cinco modos de autenticação que usam o transporte seguro para proteger mensagens; UserNameOverTransport, CertificateOverTransport, KerberosOverTransport, IssuedTokenOverTransport e SspiNegotiatedOverTransport.  
   
  Esses modos de autenticação são construídos usando a associação de transporte descrita em SecurityPolicy. Para o modo de autenticação UserNameOverTransport, o UsernameToken é um token de suporte assinado. Para os outros modos de autenticação, o token aparece como um token de endosso assinado. O Apêndice C. 1.2 e o C. 1.3 de SecurityPolicy descrevem o layout do cabeçalho de segurança em detalhes. Os cabeçalhos de segurança de exemplo a seguir mostram o layout estrito para um determinado modo de autenticação.  
@@ -184,6 +201,7 @@ Os protocolos especificação Web Services Security fornecem mecanismos de segur
  Conjunto de algoritmos: Basic256  
   
 #### <a name="311-usernameovertransport"></a>3.1.1 UsernameOverTransport  
+
  Com esse modo de autenticação, o cliente é autenticado com um token de nome de usuário que aparece na camada SOAP como um token de suporte assinado que é sempre enviado do iniciador para o destinatário. O serviço é autenticado usando um certificado X. 509 na camada de transporte. A associação usada é uma associação de transporte.  
   
  Política  
@@ -207,6 +225,7 @@ Os protocolos especificação Web Services Security fornecem mecanismos de segur
 ```  
   
 #### <a name="312-certificateovertransport"></a>3.1.2 CertificateOverTransport  
+
  Com esse modo de autenticação, o cliente é autenticado usando um certificado X. 509 que aparece na camada SOAP como um token de suporte de endosso que é sempre enviado do iniciador para o destinatário. O serviço é autenticado usando um certificado X. 509 na camada de transporte. A associação usada é uma associação de transporte. CertificateOverTransport assina apenas os cabeçalhos SOAP, não o corpo SOAP. Esse é o modo de autenticação usado pelo modo de segurança TransportWithMessageCredentials. Somente os cabeçalhos SOAP são assinados porque a autenticação é feita usando as credenciais da mensagem.  
   
  Política  
@@ -230,6 +249,7 @@ Os protocolos especificação Web Services Security fornecem mecanismos de segur
 ```  
   
 #### <a name="313-issuedtokenovertransport"></a>3.1.3 IssuedTokenOverTransport  
+
  Com esse modo de autenticação, o cliente não se autentica no serviço, como tal, mas apresenta um token emitido por um STS (serviço de token de segurança) e comprova o conhecimento de uma chave compartilhada. O token emitido é exibido na camada SOAP como um token de suporte de endosso que é sempre enviado do iniciador para o destinatário. O serviço é autenticado usando um certificado X. 509 na camada de transporte. A associação é uma associação de transporte.  
   
  Política  
@@ -322,6 +342,7 @@ Os protocolos especificação Web Services Security fornecem mecanismos de segur
 ```  
   
 #### <a name="314-kerberosovertransport"></a>3.1.4 KerberosOverTransport  
+
  Com esse modo de autenticação, o cliente é autenticado para o serviço usando um tíquete Kerberos. O token Kerberos é exibido na camada SOAP como um token de suporte de endosso. O serviço é autenticado usando um certificado X. 509 na camada de transporte. A associação é uma associação de transporte.  
   
  Política  
@@ -345,6 +366,7 @@ Os protocolos especificação Web Services Security fornecem mecanismos de segur
 ```  
   
 #### <a name="315-sspinegotiatedovertransport"></a>3.1.5 SspiNegotiatedOverTransport  
+
  Com esse modo, um protocolo de negociação é usado para executar a autenticação de cliente e servidor. O Kerberos é usado se possível, caso contrário, NTLM. O SCT resultante aparece na camada SOAP como um token de suporte de endosso que sempre é enviado do iniciador para o destinatário. O serviço também é autenticado na camada de transporte por um certificado X. 509. A associação usada é uma associação de transporte. "SPNEGO" (negociação) descreve como o WCF usa o protocolo de negociação binária SSPI com WS-Trust. Os exemplos de cabeçalho de segurança nesta seção são após o SCT ter sido estabelecido por meio do handshake SPNEGO.  
   
  Política  
@@ -354,7 +376,8 @@ Os protocolos especificação Web Services Security fornecem mecanismos de segur
 ```  
   
 ### <a name="security-header-examples"></a>Exemplos de cabeçalho de segurança  
- Depois que o token de contexto de segurança é estabelecido por meio de handshake SPNEGO usando a negociação binária de WS-Trust, as mensagens de aplicativo têm cabeçalhos de segurança com a seguinte estrutura.  
+
+ Depois que o token de contexto de segurança é estabelecido por meio de handshake SPNEGO usando a negociação binária WS-Trust, as mensagens de aplicativo têm cabeçalhos de segurança com a seguinte estrutura.  
   
  Solicitação  
   
@@ -369,9 +392,11 @@ Os protocolos especificação Web Services Security fornecem mecanismos de segur
 ```  
   
 ### <a name="32-using-x509-certificates-for-service-authentication"></a>3,2 usando certificados X. 509 para autenticação de serviço  
+
  Esta seção descreve os seguintes modos de autenticação: MutualCertificate WSS 1.0, Mutual CertificateDuplex, MutualCertificate WSS 1.1, AnonymousForCertificate, UserNameForCertificate e IssuedTokenForCertificate.  
   
 #### <a name="321-mutualcertificate-wss10"></a>3.2.1 MutualCertificate WSS 1.0  
+
  Com esse modo de autenticação, o cliente é autenticado usando um certificado X. 509 que aparece na camada SOAP como o token do iniciador. O serviço também é autenticado usando um certificado X. 509. Os cabeçalhos SOAP e o corpo SOAP são assinados. Uma chave simétrica é criada e criptografada com o certificado de transporte do destinatário.  
   
  A associação usada é uma associação assimétrica com os seguintes valores de propriedade:  
@@ -395,6 +420,7 @@ Os protocolos especificação Web Services Security fornecem mecanismos de segur
 ```  
   
 ### <a name="security-header-examples-signbeforeencrypt-encryptsignature"></a>Exemplos de cabeçalho de segurança: SignBeforeEncrypt, EncryptSignature  
+
  Solicitação  
   
 ```xml  
@@ -414,6 +440,7 @@ Os protocolos especificação Web Services Security fornecem mecanismos de segur
 ```  
   
 ### <a name="security-header-examples-encryptbeforesign"></a>Exemplos de cabeçalho de segurança: EncryptBeforeSign  
+
  Solicitação  
   
 ```xml  
@@ -427,6 +454,7 @@ Os protocolos especificação Web Services Security fornecem mecanismos de segur
 ```  
   
 #### <a name="322-mutualcertificateduplex"></a>3.2.2 MutualCertificateDuplex  
+
  Com esse modo de autenticação, o cliente é autenticado usando um certificado X. 509 que aparece na camada SOAP como o token do iniciador. O serviço também é autenticado usando um certificado X. 509.  
   
  A associação usada é uma associação assimétrica com os seguintes valores de propriedade:  
@@ -450,6 +478,7 @@ Os protocolos especificação Web Services Security fornecem mecanismos de segur
 ```  
   
 ### <a name="security-header-examples-signbeforeencrypt-encryptsignature"></a>Exemplos de cabeçalho de segurança: SignBeforeEncrypt, EncryptSignature  
+
  Solicitação e resposta  
   
 ```xml  
@@ -463,6 +492,7 @@ Os protocolos especificação Web Services Security fornecem mecanismos de segur
 ```  
   
 ### <a name="security-header-examples-encryptbeforesign"></a>Exemplos de cabeçalho de segurança: EncryptBeforeSign  
+
  Solicitação e resposta  
   
 ```xml  
@@ -470,9 +500,10 @@ Os protocolos especificação Web Services Security fornecem mecanismos de segur
 ```  
   
 #### <a name="323-using-symmetricbinding-with-x509-service-authentication"></a>3.2.3 usando Simétricobinding com autenticação de serviço X. 509  
+
  "WSS10" forneceu suporte limitado para cenários com tokens X509. Por exemplo, não havia como fornecer proteção de assinatura e criptografia para mensagens usando apenas o token X509 do serviço. "WSS11" introduziu o uso de EncryptedKey como um token simétrico. Agora, uma chave temporária criptografada para o certificado X. 509 do serviço pode ser usada para a proteção de mensagens de solicitação e resposta. Os modos de autenticação descritos na seção 3,4 abaixo usam esse padrão.  
   
- O WS-SecurityPolicy descreve esse padrão usando o Simétricobinding com o token X509 do serviço como o token de proteção.  
+ WS-SecurityPolicy descreve esse padrão usando o Simétricobinding com o token X509 do serviço como o token de proteção.  
   
  Modos de autenticação AnonymousForCertificate, UsernameForCertificate, MutualCertificate WSS11 e IssuedTokenForCertificate usam uma instância semelhante de SP: Symmetricbinding com os seguintes valores de propriedade:  
   
@@ -488,6 +519,7 @@ Proteção de token: false
  Os modos de autenticação acima diferem apenas pelos tokens de suporte que eles usam. AnonymousForCertificate não tem nenhum token de suporte, o MutualCertificate WSS 1,1 tem o certificado X509 do cliente como um token de suporte de endosso, UserNameForCertificate tem um token de nome de usuário como um token de suporte assinado e IssuedTokenForCertificate tem o token emitido como um token de suporte de endosso.  
   
 #### <a name="324-anonymousforcertificate"></a>3.2.4 AnonymousForCertificate  
+
  Com esse modo de autenticação, o cliente é anônimo e o serviço é autenticado usando um certificado X. 509. A associação usada é uma instância da Associação simétrica, conforme descrito em 3.4.2.  
   
  Política  
@@ -497,6 +529,7 @@ Proteção de token: false
 ```  
   
 ### <a name="security-header-examples-signbeforeencrypt-encryptsignature"></a>Exemplos de cabeçalho de segurança: SignBeforeEncrypt, EncryptSignature  
+
  Solicitação  
   
 ```xml  
@@ -516,6 +549,7 @@ Proteção de token: false
 ```  
   
 ### <a name="security-header-examples-encryptbeforesign"></a>Exemplos de cabeçalho de segurança: EncryptBeforeSign  
+
  Solicitação  
   
 ```xml  
@@ -529,6 +563,7 @@ Proteção de token: false
 ```  
   
 #### <a name="325-usernameforcertificate"></a>3.2.5 UserNameForCertificate  
+
  Com esse modo de autenticação, o cliente é autenticado no serviço usando um token de nome de usuário que aparece na camada SOAP como um token de suporte assinado. O serviço é autenticado no cliente usando um certificado X. 509. A associação usada é uma associação simétrica com o token de proteção sendo uma chave gerada pelo cliente, criptografada com a chave pública do serviço.  
   
  Política  
@@ -538,6 +573,7 @@ Proteção de token: false
 ```  
   
 ### <a name="security-header-examples-signbeforeencrypt-encryptsignature"></a>Exemplos de cabeçalho de segurança: SignBeforeEncrypt, EncryptSignature  
+
  Solicitação  
   
 ```xml  
@@ -557,6 +593,7 @@ Proteção de token: false
 ```  
   
 ### <a name="security-header-examples-encryptbeforesign"></a>Exemplos de cabeçalho de segurança: EncryptBeforeSign  
+
  Solicitação  
   
 ```xml  
@@ -570,6 +607,7 @@ Proteção de token: false
 ```  
   
 #### <a name="326-mutualcertificate-wss-11"></a>3.2.6 MutualCertificate (WSS 1,1)  
+
  Com esse modo de autenticação, o cliente é autenticado usando um certificado X. 509 que aparece na camada SOAP como um token de suporte de endosso. O serviço também é autenticado usando um certificado X. 509. A associação usada é uma associação simétrica com o token de proteção sendo uma chave gerada pelo cliente, criptografada com a chave pública do serviço.  
   
  Política  
@@ -579,6 +617,7 @@ Proteção de token: false
 ```  
   
 ### <a name="security-header-examples-signbeforeencrypt-encryptsignature"></a>Exemplos de cabeçalho de segurança: SignBeforeEncrypt, EncryptSignature  
+
  Solicitação  
   
 ```xml  
@@ -598,6 +637,7 @@ Proteção de token: false
 ```  
   
 ### <a name="security-header-examples-encryptbeforesign"></a>Exemplos de cabeçalho de segurança: EncryptBeforeSign  
+
  Solicitação  
   
 ```xml  
@@ -611,6 +651,7 @@ Proteção de token: false
 ```  
   
 #### <a name="327-issuedtokenforcertificate"></a>3.2.7 IssuedTokenForCertificate  
+
  Com esse modo de autenticação, o cliente não se autentica no serviço, como tal, mas apresenta um token emitido por um STS e comprova o conhecimento de uma chave compartilhada. O token emitido é exibido na camada SOAP como um token de suporte de endosso. O serviço é autenticado no cliente usando um certificado X. 509. A associação usada é uma associação simétrica com o token de proteção sendo uma chave gerada pelo cliente, criptografada com a chave pública do serviço.  
   
  Política  
@@ -620,6 +661,7 @@ Proteção de token: false
 ```  
   
 ### <a name="security-header-examples-signbeforeencrypt-encryptsignature"></a>Exemplos de cabeçalho de segurança: SignBeforeEncrypt, EncryptSignature  
+
  Solicitação  
   
 ```xml  
@@ -633,6 +675,7 @@ Proteção de token: false
 ```  
   
 ### <a name="security-header-examples-encryptbeforesign"></a>Exemplos de cabeçalho de segurança: EncryptBeforeSign  
+
  Política  
   
 ```xml  
@@ -652,6 +695,7 @@ Proteção de token: false
 ```  
   
 ## <a name="33-kerberos"></a>3,3 Kerberos  
+
  Com esse modo de autenticação, o cliente é autenticado para o serviço usando um tíquete Kerberos. Esse mesmo tíquete também fornece autenticação de servidor. A associação usada é uma associação simétrica com as seguintes propriedades;  
   
  Token de proteção: tíquete Kerberos, modo de inclusão é definido como. ../IncludeToken/Once  
@@ -670,6 +714,7 @@ Proteção de token: false
 ```  
   
 ### <a name="security-header-examples-signbeforeencrypt-encryptsignature"></a>Exemplos de cabeçalho de segurança: SignBeforeEncrypt, EncryptSignature  
+
  Solicitação  
   
 ```xml  
@@ -689,6 +734,7 @@ Proteção de token: false
 ```  
   
 ### <a name="security-header-examples-encryptbeforesign"></a>Exemplos de cabeçalho de segurança: EncryptBeforeSign  
+
  Solicitação  
   
 ```xml  
@@ -702,6 +748,7 @@ Proteção de token: false
 ```  
   
 #### <a name="34-issuedtoken"></a>3,4 IssuedToken  
+
  Com esse modo de autenticação, o cliente não se autentica no serviço, como tal, em vez disso, o cliente apresenta um token emitido por um STS e comprova o conhecimento de uma chave compartilhada. O serviço não é autenticado para o cliente, como tal, em vez disso, o STS criptografa a chave compartilhada como parte do token emitido, de modo que somente o serviço possa descriptografar a chave. A associação usada é como uma associação simétrica com as seguintes propriedades;  
   
  Token de proteção: token emitido, o modo de inclusão é definido como. ../IncludeToken/AlwaysToRecipient  
@@ -720,6 +767,7 @@ Proteção de token: false
 ```  
   
 ### <a name="security-header-examples-signbeforeencrypt-encryptsignature"></a>Exemplos de cabeçalho de segurança: SignBeforeEncrypt, EncryptSignature  
+
  Solicitação  
   
 ```xml  
@@ -739,6 +787,7 @@ Proteção de token: false
 ```  
   
 ### <a name="security-header-examples-encryptbeforesign"></a>Exemplos de cabeçalho de segurança: EncryptBeforeSign  
+
  Solicitação  
   
 ```xml  
@@ -752,7 +801,8 @@ Proteção de token: false
 ```  
   
 ### <a name="35-using-sslnegotiated-for-service-authentication"></a>3,5 usando SslNegotiated para autenticação de serviço  
- Esta seção descreve um grupo de modos de autenticação que usam uma associação simétrica com o token de proteção sendo um token de contexto de segurança por WS-SecureConversation (WS-SC), cujo valor de chave é negociado pela execução do protocolo TLS em mensagens de RST/RSTR WS-Trust (WS-T). Detalhes da implementação de handshake de TLS usando WS-Trust são descritos em TLSNEGO. Aqui, nos exemplos de mensagem, vamos supor que o SCT com um contexto de segurança associado já foi estabelecido por meio de um handshake.  
+
+ Esta seção descreve um grupo de modos de autenticação que usam uma associação simétrica com o token de proteção sendo um token de contexto de segurança por WS-SecureConversation (WS-SC), cujo valor de chave é negociado executando o protocolo TLS em mensagens de RST/RSTR de WS-Trust (WS-T). Os detalhes da implementação de handshake de TLS usando WS-Trust são descritos em TLSNEGO. Aqui, nos exemplos de mensagem, vamos supor que o SCT com um contexto de segurança associado já foi estabelecido por meio de um handshake.  
   
  A associação usada é uma associação simétrica com as seguintes propriedades;  
   
@@ -766,9 +816,11 @@ Proteção de token: false
  Criptografar assinatura: verdadeiro  
   
 #### <a name="351-policy-for-sslnegotiated-service-authentication"></a>política 3.5.1 para autenticação do serviço SslNegotiated  
+
  A política para todos os modos de autenticação nesta seção é semelhante e difere somente por tokens de suporte ou de endosso específicos assinados usados.  
   
 #### <a name="352-anonymousforsslnegotiated"></a>3.5.2 AnonymousForSslNegotiated  
+
  Com esse modo de autenticação, o cliente é anônimo e o serviço é autenticado usando um certificado X. 509. A associação usada é uma instância de associação simétrica, conforme descrito em 3.5.1 acima.  
   
  Política  
@@ -778,6 +830,7 @@ Proteção de token: false
 ```  
   
 ### <a name="security-header-examples-signbeforeencrypt-encryptsignature"></a>Exemplos de cabeçalho de segurança: SignBeforeEncrypt, EncryptSignature  
+
  Solicitação  
   
 ```xml  
@@ -797,6 +850,7 @@ Proteção de token: false
 ```  
   
 ### <a name="security-header-examples-encryptbeforesign"></a>Exemplos de cabeçalho de segurança: EncryptBeforeSign  
+
  Solicitação  
   
 ```xml  
@@ -810,6 +864,7 @@ Proteção de token: false
 ```  
   
 #### <a name="353-usernameforsslnegotiated"></a>3.5.3 UserNameForSslNegotiated  
+
  Com esse modo de autenticação, o cliente é autenticado usando um token de nome de usuário que aparece na camada SOAP como um token de suporte assinado. O serviço é autenticado usando um certificado X. 509. A associação usada é uma instância da Associação simétrica, conforme descrito em 3.5.1.  
   
  Política  
@@ -819,6 +874,7 @@ Proteção de token: false
 ```  
   
 ### <a name="security-header-examples-signbeforeencrypt-encryptsignature"></a>Exemplos de cabeçalho de segurança: SignBeforeEncrypt, EncryptSignature  
+
  Solicitação  
   
 ```xml  
@@ -838,6 +894,7 @@ Proteção de token: false
 ```  
   
 ### <a name="security-header-examples-encryptbeforesign"></a>Exemplos de cabeçalho de segurança: EncryptBeforeSign  
+
  Solicitação  
   
 ```xml  
@@ -851,6 +908,7 @@ Proteção de token: false
 ```  
   
 #### <a name="354-issuedtokenforsslnegotiated"></a>3.5.4 IssuedTokenForSslNegotiated  
+
  Com esse modo de autenticação, o cliente não se autentica no serviço, como tal, mas apresenta um token emitido por um STS e comprova o conhecimento de uma chave compartilhada. O token emitido é exibido na camada SOAP como um token de suporte de endosso. O serviço é autenticado usando um certificado X. 509. A associação usada é uma instância de associação simétrica, conforme descrito em 3.5.1 acima.  
   
  Política  
@@ -860,6 +918,7 @@ Proteção de token: false
 ```  
   
 ### <a name="security-header-examples-signbeforeencrypt-encryptsignature"></a>Exemplos de cabeçalho de segurança: SignBeforeEncrypt, EncryptSignature  
+
  Solicitação  
   
 ```xml  
@@ -879,6 +938,7 @@ Proteção de token: false
 ```  
   
 ### <a name="security-header-examples-encryptbeforesign"></a>Exemplos de cabeçalho de segurança: EncryptBeforeSign  
+
  Solicitação  
   
 ```xml  
@@ -892,6 +952,7 @@ Proteção de token: false
 ```  
   
 #### <a name="355-mutualsslnegotiated"></a>3.5.5 MutualSslNegotiated  
+
  Com esse modo de autenticação, o cliente e o serviço se autenticam usando certificados X. 509. A associação usada é uma instância de associação simétrica, conforme descrito em 3.5.1 acima.  
   
  Política  
@@ -901,6 +962,7 @@ Proteção de token: false
 ```  
   
 ### <a name="security-header-examples-signbeforeencrypt-encryptsignature"></a>Exemplos de cabeçalho de segurança: SignBeforeEncrypt, EncryptSignature  
+
  Solicitação  
   
 ```xml  
@@ -920,6 +982,7 @@ Proteção de token: false
 ```  
   
 ### <a name="security-header-examples-encryptbeforesign"></a>Exemplos de cabeçalho de segurança: EncryptBeforeSign  
+
  Solicitação  
   
 ```xml  
@@ -933,6 +996,7 @@ Proteção de token: false
 ```  
   
 ### <a name="36-sspinegotiated"></a>3,6 SspiNegotiated  
+
  Com esse modo de autenticação, um protocolo de negociação é usado para executar a autenticação de cliente e servidor. O Kerberos é usado se possível, caso contrário, NTLM. A associação usada é uma associação simétrica com as seguintes propriedades;  
   
  Token de proteção: SpnegoContextToken, o modo de inclusão é definido como. ../IncludeToken/AlwaysToRecipient  
@@ -951,6 +1015,7 @@ Proteção de token: false
 ```  
   
 ### <a name="security-header-examples-signbeforeencrypt-encryptsignature"></a>Exemplos de cabeçalho de segurança: SignBeforeEncrypt, EncryptSignature  
+
  Solicitação  
   
 ```xml  
@@ -970,6 +1035,7 @@ Proteção de token: false
 ```  
   
 ### <a name="security-header-examples-encryptbeforesign"></a>Exemplos de cabeçalho de segurança: EncryptBeforeSign  
+
  Solicitação  
   
 ```xml  
@@ -983,6 +1049,7 @@ Proteção de token: false
 ```  
   
 ### <a name="37-secureconversation"></a>3,7 SecureConversation  
+
  A associação usada é uma associação simétrica com o token de proteção sendo um SCT por WS-SecureConversation (WS-SC). O SCT é negociado usando WS-Trust (WS-Trust) ou WS-SecureConversation (WS-SC) de acordo com uma associação aninhada, que, por sua vez, é uma ligação simétrica que usa um protocolo de negociação. O protocolo de negociação usará o Kerberos para executar a autenticação de cliente e servidor, se possível. Se o Kerberos não puder ser usado, ele retornará ao NTLM.  
   
  Política  
@@ -992,6 +1059,7 @@ Proteção de token: false
 ```  
   
 ### <a name="security-header-examples-signbeforeencrypt-encryptsignature"></a>Exemplos de cabeçalho de segurança: SignBeforeEncrypt, EncryptSignature  
+
  Solicitação  
   
 ```xml  
@@ -1011,6 +1079,7 @@ Proteção de token: false
 ```  
   
 ### <a name="security-header-examples-encryptbeforesign"></a>Exemplos de cabeçalho de segurança: EncryptBeforeSign  
+
  Solicitação  
   
 ```xml  

@@ -2,12 +2,12 @@
 title: Diretrizes de formatação de código do F#
 description: 'Aprenda as diretrizes para formatar o código F #.'
 ms.date: 08/31/2020
-ms.openlocfilehash: 401c0688cd7d0a945dc469f1ab5841b21e1d4ab4
-ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
+ms.openlocfilehash: b4b70d86b36f2ba50318cb50e54d65cc6abff450
+ms.sourcegitcommit: f8cd3ef517ee177c99feed944824c27d208cc0d1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89359279"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98570223"
 ---
 # <a name="f-code-formatting-guidelines"></a>Diretrizes de formatação de código do F#
 
@@ -100,16 +100,114 @@ let myFun (a: decimal) b c = a + b + c
 let myFunBad (a:decimal)(b)c = a + b + c
 ```
 
+### <a name="avoid-name-sensitive-alignments"></a>Evitar alinhamentos que diferenciam nomes
+
+Em geral, busque para evitar recuo e alinhamento que são sensíveis à nomenclatura:
+
+```fsharp
+// OK
+let myLongValueName =
+    someExpression
+    |> anotherExpression
+
+
+// Bad
+let myLongValueName = someExpression
+                      |> anotherExpression
+```
+
+Isso às vezes é chamado de "alinhamento intuitivo" ou "intuitivo recuo". Os principais motivos para evitar isso são:
+
+* O código importante é movido da extrema para a direita
+* Há menos largura restante para o código real
+* A renomeação pode quebrar o alinhamento
+
+Faça o mesmo para a fim de `do` / `do!` manter o recuo consistente com `let` / `let!` . Veja um exemplo usando `do` em uma classe:
+
+```fsharp
+// OK
+type Foo () =
+    let foo =
+        fooBarBaz
+        |> loremIpsumDolorSitAmet
+        |> theQuickBrownFoxJumpedOverTheLazyDog
+    do
+        fooBarBaz
+        |> loremIpsumDolorSitAmet
+        |> theQuickBrownFoxJumpedOverTheLazyDog
+
+// Bad - notice the "do" expression is indented one space less than the `let` expression
+type Foo () =
+    let foo =
+        fooBarBaz
+        |> loremIpsumDolorSitAmet
+        |> theQuickBrownFoxJumpedOverTheLazyDog
+    do fooBarBaz
+       |> loremIpsumDolorSitAmet
+       |> theQuickBrownFoxJumpedOverTheLazyDog
+```
+
+Aqui está um exemplo com `do!` o uso de dois espaços de recuo (porque com `do!` há uma diferença de não-incidente entre as abordagens ao usar quatro espaços de recuo):
+
+```fsharp
+// OK
+async {
+  let! foo =
+    fooBarBaz
+    |> loremIpsumDolorSitAmet
+    |> theQuickBrownFoxJumpedOverTheLazyDog
+  do!
+    fooBarBaz
+    |> loremIpsumDolorSitAmet
+    |> theQuickBrownFoxJumpedOverTheLazyDog
+}
+
+// Bad - notice the "do!" expression is indented two spaces more than the `let!` expression
+async {
+  let! foo =
+    fooBarBaz
+    |> loremIpsumDolorSitAmet
+    |> theQuickBrownFoxJumpedOverTheLazyDog
+  do! fooBarBaz
+      |> loremIpsumDolorSitAmet
+      |> theQuickBrownFoxJumpedOverTheLazyDog
+}
+```
+
 ### <a name="place-parameters-on-a-new-line-for-long-definitions"></a>Coloque os parâmetros em uma nova linha para definições longas
 
-Se você tiver uma definição de função muito longa, coloque os parâmetros em novas linhas e recue-os para corresponder ao nível de recuo do parâmetro subsequente.
+Se você tiver uma definição de função longa, coloque os parâmetros em novas linhas e recue-os para corresponder ao nível de recuo do parâmetro subsequente.
 
 ```fsharp
 module M =
-    let LongFunctionWithLotsOfParameters(aVeryLongParam: AVeryLongTypeThatYouNeedToUse)
-                                        (aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse)
-                                        (aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse)
-                                        =
+    let longFunctionWithLotsOfParameters
+        (aVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+        (aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+        (aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+        =
+        // ... the body of the method follows
+
+    let longFunctionWithLotsOfParametersAndReturnType
+        (aVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+        (aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+        (aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+        : ReturnType =
+        // ... the body of the method follows
+
+    let longFunctionWithLongTupleParameter
+        (
+            aVeryLongParam: AVeryLongTypeThatYouNeedToUse,
+            aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse,
+            aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse
+        ) =
+        // ... the body of the method follows
+
+    let longFunctionWithLongTupleParameterAndReturnType
+        (
+            aVeryLongParam: AVeryLongTypeThatYouNeedToUse,
+            aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse,
+            aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse
+        ) : ReturnType =
         // ... the body of the method follows
 ```
 
@@ -117,30 +215,38 @@ Isso também se aplica a membros, construtores e parâmetros usando tuplas:
 
 ```fsharp
 type TM() =
-    member _.LongMethodWithLotsOfParameters(aVeryLongParam: AVeryLongTypeThatYouNeedToUse,
-                                            aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse,
-                                            aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse) =
+    member _.LongMethodWithLotsOfParameters
+        (
+            aVeryLongParam: AVeryLongTypeThatYouNeedToUse,
+            aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse,
+            aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse
+        ) =
         // ... the body of the method
 
-type TC(aVeryLongCtorParam: AVeryLongTypeThatYouNeedToUse,
+type TC
+    (
+        aVeryLongCtorParam: AVeryLongTypeThatYouNeedToUse,
         aSecondVeryLongCtorParam: AVeryLongTypeThatYouNeedToUse,
-        aThirdVeryLongCtorParam: AVeryLongTypeThatYouNeedToUse) =
+        aThirdVeryLongCtorParam: AVeryLongTypeThatYouNeedToUse
+    ) =
     // ... the body of the class follows
 ```
 
-Se os parâmetros forem currified ou houver uma anotação explícita de tipo de retorno, é preferível posicionar o `=` caractere em uma nova linha:
+Se os parâmetros forem currified, coloque o `=` caractere junto com qualquer tipo de retorno em uma nova linha:
 
 ```fsharp
 type C() =
-    member _.LongMethodWithLotsOfParameters(aVeryLongParam: AVeryLongTypeThatYouNeedToUse,
-                                            aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse,
-                                            aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse)
-                                            : AReturnType =
+    member _.LongMethodWithLotsOfCurrifiedParamsAndReturnType
+        (aVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+        (aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+        (aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+        : ReturnType =
         // ... the body of the method
-    member _.LongMethodWithLotsOfCurrifiedParams(aVeryLongParam: AVeryLongTypeThatYouNeedToUse)
-                                                (aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse)
-                                                (aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse)
-                                                =
+    member _.LongMethodWithLotsOfCurrifiedParams
+        (aVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+        (aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+        (aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+        =
         // ... the body of the method
 ```
 
@@ -308,7 +414,7 @@ Namespaces, exceções, eventos e projeto/ `.dll` nomes também devem usar Pasca
 
 ### <a name="avoid-underscores-in-names"></a>Evitar sublinhados em nomes
 
-Historicamente, algumas bibliotecas F # usaram sublinhados em nomes. No entanto, isso não é mais amplamente aceito, parcialmente porque ele conflita com as convenções de nomenclatura do .NET. Dito isso, alguns programadores de F # usam sublinhados intensamente, parcialmente por motivos históricos, e a tolerância e o respeito são importantes. No entanto, lembre-se de que o estilo geralmente é desgosto por outros que têm a opção de usá-lo.
+Historicamente, algumas bibliotecas F # usaram sublinhados em nomes. No entanto, isso não é mais amplamente aceito, parcialmente porque ele conflita com as convenções de nomenclatura do .NET. Dito isso, alguns programadores de F # usam sublinhados intensamente, parcialmente por motivos históricos, e a tolerância e o respeito são importantes. No entanto, o estilo geralmente é desgosto por outros que têm a opção de usá-lo.
 
 Uma exceção inclui a interoperação com componentes nativos, onde os sublinhados são comuns.
 
@@ -424,14 +530,14 @@ type PostalAddress =
     { Address: string
       City: string
       Zip: string }
-    member x.ZipAndCity = sprintf "%s %s" x.Zip x.City
+    member x.ZipAndCity = $"{x.Zip} {x.City}"
 
 // Not OK
 type PostalAddress =
   { Address: string
     City: string
     Zip: string }
-    member x.ZipAndCity = sprintf "%s %s" x.Zip x.City
+    member x.ZipAndCity = $"{x.Zip} {x.City}"
 
 // Unusual in F#
 type PostalAddress =
@@ -452,7 +558,7 @@ type PostalAddress =
         City: string
         Zip: string
     }
-    member x.ZipAndCity = sprintf "%s %s" x.Zip x.City
+    member x.ZipAndCity = $"{x.Zip} {x.City}"
 
 type MyRecord =
     {
@@ -504,10 +610,11 @@ type MyRecord =
 
 let foo a =
     a
-    |> Option.map (fun x ->
-        {
-            MyField = x
-        })
+    |> Option.map
+        (fun x ->
+            {
+                MyField = x
+            })
 ```
 
 As mesmas regras se aplicam a elementos de lista e matriz.
@@ -535,13 +642,14 @@ E, assim como nas diretrizes de registro, talvez você queira dedicar linhas sep
 
 ```fsharp
 type S = { F1: int; F2: string }
-type State = { F:  S option }
+type State = { Foo: S option }
 
-let state = { F = Some { F1 = 1; F2 = "Hello" } }
+let state = { Foo = Some { F1 = 1; F2 = "Hello" } }
 let newState =
     {
         state with
-            F = Some {
+            Foo =
+                Some {
                     F1 = 0
                     F2 = ""
                 }
@@ -642,21 +750,17 @@ Em alguns casos, o `do...yield` pode ajudar na legibilidade. Esses casos, embora
 
 ## <a name="formatting-if-expressions"></a>Formatando expressões If
 
-O recuo de condicionais depende dos tamanhos das expressões que as compõem. Se `cond` `e1` e `e2` forem curtos, basta escrevê-los em uma linha:
+O recuo de condicionais depende do tamanho e da complexidade das expressões que as compõem.
+Escreva-os em uma linha quando:
+
+- `cond`, `e1` e `e2` são curtos
+- `e1` e `e2` não são as `if/then/else` próprias expressões.
 
 ```fsharp
 if cond then e1 else e2
 ```
 
-Se `cond` `e1` ou `e2` for maior, mas não uma linha múltipla:
-
-```fsharp
-if cond
-then e1
-else e2
-```
-
-Se qualquer uma das expressões for de várias linhas:
+Se qualquer uma das expressões for de várias linhas ou `if/then/else` expressões.
 
 ```fsharp
 if cond then
@@ -665,13 +769,26 @@ else
     e2
 ```
 
-Várias condicionais com `elif` e `else` são recuadas no mesmo escopo que o `if` :
+Várias condicionais com `elif` e `else` são recuadas no mesmo escopo que o `if` quando seguem as regras das expressões de uma linha `if/then/else` .
 
 ```fsharp
 if cond1 then e1
 elif cond2 then e2
 elif cond3 then e3
 else e4
+```
+
+Se qualquer uma das condições ou expressões for de várias linhas, a `if/then/else` expressão inteira será de várias linhas:
+
+```fsharp
+if cond1 then
+    e1
+elif cond2 then
+    e2
+elif cond3 then
+    e3
+else
+    e4
 ```
 
 ### <a name="pattern-matching-constructs"></a>Constructos de correspondência de padrões
@@ -708,10 +825,11 @@ A correspondência de padrões de funções anônimas, começando pelo `function
 
 ```fsharp
 lambdaList
-|> List.map (function
-    | Abs(x, body) -> 1 + sizeLambda 0 body
-    | App(lam1, lam2) -> sizeLambda (sizeLambda 0 lam1) lam2
-    | Var v -> 1)
+|> List.map
+    (function
+        | Abs(x, body) -> 1 + sizeLambda 0 body
+        | App(lam1, lam2) -> sizeLambda (sizeLambda 0 lam1) lam2
+        | Var v -> 1)
 ```
 
 Correspondência de padrões em funções definidas por `let` ou `let rec` devem ser recuadas quatro espaços após o início de `let` , mesmo que a `function` palavra-chave seja usada:
@@ -744,11 +862,27 @@ with
 
 ## <a name="formatting-function-parameter-application"></a>Formatando o aplicativo de parâmetros de função
 
-Em geral, a maioria dos aplicativos de parâmetro de função é feita na mesma linha.
-
-Se você quiser aplicar parâmetros a uma função em uma nova linha, recue-os por um escopo.
+Em geral, a maioria dos argumentos é fornecida na mesma linha:
 
 ```fsharp
+let x = sprintf "\t%s - %i\n\r" x.IngredientName x.Quantity
+
+let printListWithOffset a list1 =
+    List.iter (fun elem -> printfn $"%d{a + elem}") list1
+```
+
+Quando os pipelines estão preocupados, o mesmo normalmente também é verdadeiro, em que uma função na forma curried é aplicada como um argumento na mesma linha:
+
+```
+let printListWithOffsetPiped a list1 =
+    list1
+    |> List.iter (fun elem -> printfn $"%d{a + elem}")
+```
+
+No entanto, talvez você queira passar argumentos para uma função em uma nova linha, como uma questão de legibilidade ou porque a lista de argumentos ou os nomes de argumentos são muito longos. Nesse caso, recue com um escopo:
+
+```fsharp
+
 // OK
 sprintf "\t%s - %i\n\r"
      x.IngredientName x.Quantity
@@ -766,23 +900,23 @@ let printVolumes x =
         (convertVolumeImperialPint x)
 ```
 
-As mesmas diretrizes se aplicam a expressões lambda como argumentos de função. Se o corpo de uma expressão lambda, o corpo pode ter outra linha, recuada por um escopo
+Para expressões lambda, você também pode considerar colocar o corpo de uma expressão lambda em uma nova linha, recuada por um escopo, se for longa o suficiente:
 
 ```fsharp
 let printListWithOffset a list1 =
     List.iter
-        (fun elem -> printfn "%d" (a + elem))
+        (fun elem ->
+            printfn $"%d{a + elem}")
         list1
 
-// OK if lambda body is long enough
-let printListWithOffset a list1 =
-    List.iter
+let printListWithOffsetPiped a list1 =
+    list1
+    |> List.iter
         (fun elem ->
-            printfn "%d" (a + elem))
-        list1
+            printfn $"%d{a + elem}")
 ```
 
-No entanto, se o corpo de uma expressão lambda for maior que uma linha, considere a possibilidade de separá-la em uma função separada em vez de ter uma construção de várias linhas aplicada como um único argumento a uma função.
+Se o corpo de uma expressão lambda tiver várias linhas, considere refatorá-la em uma função com escopo local.
 
 ### <a name="formatting-infix-operators"></a>Formatando operadores infixos
 
@@ -800,7 +934,7 @@ let function1 arg1 arg2 arg3 arg4 =
     arg3 + arg4
 ```
 
-### <a name="formatting-pipeline-operators"></a>Formatando operadores de pipeline
+### <a name="formatting-pipeline-operators-or-mutable-assignments"></a>Formatando operadores de pipeline ou atribuições mutáveis
 
 `|>`Os operadores de pipeline devem ficar abaixo das expressões em que operam.
 
@@ -823,6 +957,32 @@ let methods2 = System.AppDomain.CurrentDomain.GetAssemblies()
             |> List.ofArray
             |> List.map (fun t -> t.GetMethods())
             |> Array.concat
+
+// Not OK either
+let methods2 = System.AppDomain.CurrentDomain.GetAssemblies()
+               |> List.ofArray
+               |> List.map (fun assm -> assm.GetTypes())
+               |> Array.concat
+               |> List.ofArray
+               |> List.map (fun t -> t.GetMethods())
+               |> Array.concat
+```
+
+Isso também se aplica a setters mutáveis:
+
+```fsharp
+// Preferred approach
+ctx.Response.Headers.[HeaderNames.ContentType] <-
+    Constants.jsonApiMediaType |> StringValues
+ctx.Response.Headers.[HeaderNames.ContentLength] <-
+    bytes.Length |> string |> StringValues
+
+// Not OK
+ctx.Response.Headers.[HeaderNames.ContentType] <- Constants.jsonApiMediaType
+                                                  |> StringValues
+ctx.Response.Headers.[HeaderNames.ContentLength] <- bytes.Length
+                                                    |> string
+                                                    |> StringValues
 ```
 
 ### <a name="formatting-modules"></a>Módulos de formatação
@@ -879,6 +1039,41 @@ let makeStreamReader x = new System.IO.StreamReader(path=x)
 
 // Not OK
 let makeStreamReader x = new System.IO.StreamReader(path = x)
+```
+
+### <a name="formatting-constructors-static-members-and-member-invocations"></a>Construtores de formatação, membros estáticos e invocações de membro
+
+Se a expressão for curta, separe os argumentos com espaços e mantenha-os em uma linha.
+
+```fsharp
+let person = new Person(a1, a2)
+
+let myRegexMatch = Regex.Match(input, regex)
+
+let untypedRes = checker.ParseFile(file, source, opts)
+```
+
+Se a expressão for longa, use novas linhas e recue um escopo, em vez de recuar para o colchete.
+
+```fsharp
+let person =
+    new Person(
+        argument1,
+        argument2
+    )
+
+let myRegexMatch =
+    Regex.Match(
+        "my longer input string with some interesting content in it",
+        "myRegexPattern"
+    )
+
+let untypedRes =
+    checker.ParseFile(
+        fileName,
+        sourceText,
+        parsingOptionsWithDefines
+    )
 ```
 
 ## <a name="formatting-attributes"></a>Atributos de formatação
@@ -948,7 +1143,7 @@ Evite colocar o atributo na mesma linha que o valor.
 
 ## <a name="formatting-computation-expression-operations"></a>Formatando operações de expressão de computação
 
-Ao criar operações personalizadas para [expressões de computação](../language-reference/computation-expressions.md) , é recomendável usar a nomenclatura CamelCase:
+Ao criar operações personalizadas para [expressões de computação](../language-reference/computation-expressions.md), é recomendável usar a nomenclatura CamelCase:
 
 ```fsharp
 type MathBuilder () =
@@ -987,5 +1182,5 @@ let myNumber =
     }
 ```
 
-A Convenção de nomenclatura usada deve, em última análise, ser orientada pelo domínio que está sendo modelado.
+O domínio que está sendo modelado deve levar em última análise a Convenção de nomenclatura.
 Se for idiomática usar uma convenção diferente, essa Convenção deverá ser usada em seu lugar.

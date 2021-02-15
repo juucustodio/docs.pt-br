@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugHeapValue'
 title: Interface ICorDebugHeapValue
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 1bca66db-0359-4ae8-846e-e35f7e547e8b
 topic_type:
 - apiref
-ms.openlocfilehash: 36a485413490045ca49b99fca4fe5d43edc37114
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 7c65cbce530f0d1f00d8610031fb604a0118ee29
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213004"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803666"
 ---
 # <a name="icordebugheapvalue-interface"></a>Interface ICorDebugHeapValue
 
@@ -38,6 +39,7 @@ Uma subclasse de "ICorDebugValue" que representa um objeto que foi coletado pelo
 > Esta interface não dá suporte para chamada remota, seja entre computadores ou processos cruzados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -46,6 +48,6 @@ Uma subclasse de "ICorDebugValue" que representa um objeto que foi coletado pelo
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

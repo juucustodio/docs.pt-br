@@ -1,23 +1,27 @@
 ---
+description: 'Saiba mais sobre: literais nulos e inferência de tipos (Entity SQL)'
 title: Literais nulos e inferência de tipo (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: edd56afb-af1b-4e7d-b210-cb8998143426
-ms.openlocfilehash: bb2d9184e17ee2a9916a731eb20eefa105a73753
-ms.sourcegitcommit: 4e2d355baba82814fa53efd6b8bbb45bfe054d11
+ms.openlocfilehash: 3b3474ea9841a34970d2269173d263fda2eb1789
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70249820"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802132"
 ---
 # <a name="null-literals-and-type-inference-entity-sql"></a>Literais nulos e inferência de tipo (Entity SQL)
-Literais nulos são compatíveis com qualquer no sistema de tipos de [!INCLUDE[esql](../../../../../../includes/esql-md.md)] . No entanto, para que o tipo de um literal nulo seja inferido [!INCLUDE[esql](../../../../../../includes/esql-md.md)] corretamente, o impõe certas restrições em que um literal nulo pode ser usado.  
+
+Literais nulos são compatíveis com qualquer no sistema de tipos de [!INCLUDE[esql](../../../../../../includes/esql-md.md)] . No entanto, para que o tipo de um literal nulo seja inferido corretamente, [!INCLUDE[esql](../../../../../../includes/esql-md.md)] o impõe certas restrições em que um literal nulo pode ser usado.  
   
 ## <a name="typed-nulls"></a>Tipado nulos  
+
  Tipado anula pode ser usado em qualquer lugar. Inferência de tipos não é necessária para tipado anula porque o tipo é conhecido. Por exemplo, você pode construir um zero do tipo Int16 com a seguir compilação de [!INCLUDE[esql](../../../../../../includes/esql-md.md)] :  
   
  `(cast(null as Int16))`  
   
 ## <a name="free-floating-null-literals"></a>Literais nulos de flutuante  
+
  Literais nulos de flutuante podem ser usados nos seguintes contextos:  
   
 - Como um argumento para uma expressão de CAST ou de DELEITE. Essa é a maneira recomendada para gerar uma expressão nula tipada.  
@@ -42,4 +46,4 @@ Literais nulos são compatíveis com qualquer no sistema de tipos de [!INCLUDE[e
   
 ## <a name="see-also"></a>Consulte também
 
-- [Visão geral do Entity SQL](entity-sql-overview.md)
+- [Visão geral da Entity SQL](entity-sql-overview.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como declarar uma constante (Visual Basic)'
 title: Como declarar uma constante
 ms.date: 07/20/2015
 f1_keywords:
@@ -23,14 +24,15 @@ helpviewer_keywords:
 - module-level constants and variables
 - Object data type [Visual Basic], declaring constants
 ms.assetid: f901b4fa-481f-4621-822e-427060577ad1
-ms.openlocfilehash: ffaa98f6af3d4b276f5c0b1153841acdea0809d7
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 42b0ecce90e12a7e777b8e51bc9a23ab454f433d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84414473"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100477496"
 ---
 # <a name="how-to-declare-a-constant-visual-basic"></a>Como declarar uma constante (Visual Basic)
+
 Você usa a `Const` instrução para declarar uma constante e definir seu valor. Ao declarar uma constante, você atribui um nome significativo a um valor. Depois que uma constante é declarada, ela não pode ser modificada ou atribuída um novo valor.  
   
  Você declara uma constante em um procedimento ou na seção declarações de um módulo, classe ou estrutura. As constantes de nível de classe ou estrutura são `Private` por padrão, mas também podem ser declaradas como `Public` , `Friend` , `Protected` ou `Protected Friend` para o nível apropriado de acesso ao código.  
@@ -65,7 +67,7 @@ Você usa a `Const` instrução para declarar uma constante e definir seu valor.
     Public Const Four As Integer = 4, Five As Integer = 5, Six As Integer = 44  
     ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instrução Const](../../../language-reference/statements/const-statement.md)
 - [Tipos de dados constante e literal](constant-and-literal-data-types.md)

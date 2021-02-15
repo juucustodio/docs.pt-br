@@ -2,26 +2,26 @@
 title: Common Type System
 description: Explore o sistema de tipos no .NET. Leia sobre os tipos no .NET (tipos de valor ou tipos de referência), definição de tipo, membros de tipo e características de membro de tipo.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
+ms.topic: conceptual
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - type system
 - common type system
-- assemblies [.NET Framework], types
+- assemblies [.NET], types
 - reference types
 - value types
 - cross-language interoperability
-- namespaces [.NET Framework], types
+- namespaces [.NET], types
 - types, about types
 ms.assetid: 53c57c96-83e1-4ee3-9543-9ac832671a89
-ms.openlocfilehash: db0ecd59f122228d33b74be6dec51371413d68b3
-ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
+ms.openlocfilehash: c25ff63d3bfb318144d42f98e2e20bdb9dd709e4
+ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84767826"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98692936"
 ---
 # <a name="common-type-system"></a>Common Type System
 
@@ -53,7 +53,7 @@ O Common Type System define como os tipos são declarados, usados e gerenciados 
   
 - [Interfaces](#interfaces)  
   
-- [Delegados](#delegates)  
+- [Representantes](#delegates)  
   
 ### <a name="classes"></a>Classes
 
@@ -171,14 +171,16 @@ O Common Type System define como os tipos são declarados, usados e gerenciados 
 - Definições para cada um dos membros do tipo.  
   
 ### <a name="attributes"></a>Atributos  
+
  Atributos fornecem metadados adicionais definidos pelo usuário. Com frequência, eles são usados para armazenar informações adicionais sobre um tipo em seu assembly ou para modificar o comportamento de um membro de tipo no ambiente do tempo de design ou do tempo de execução.  
   
  Os atributos são as próprias classe herdadas de <xref:System.Attribute?displayProperty=nameWithType>. Linguagens que dão suporte ao uso de atributos têm sua própria sintaxe para aplicar atributos a um elemento de linguagem. Os atributos podem ser aplicados a praticamente qualquer elemento de linguagem; os elementos específicos para os quais um atributo pode ser aplicado são definidos pelo <xref:System.AttributeUsageAttribute> aplicado à classe de atributo.  
   
 ### <a name="type-accessibility"></a>Acessibilidade de tipo  
+
  Todos os tipos têm um modificador que rege sua acessibilidade de outros tipos. A tabela a seguir descreve as acessibilidades de tipo que o runtime dá suporte.  
   
-|Acessibilidade|Description|  
+|Acessibilidade|Descrição|  
 |-------------------|-----------------|  
 |públicos|O tipo é acessível por todos os assemblies.|  
 |assembly|O tipo é acessível somente dentro do assembly.|  
@@ -198,6 +200,7 @@ O Common Type System define como os tipos são declarados, usados e gerenciados 
 - Se a acessibilidade declarada de `M` for `private`, o domínio de acessibilidade de `M` será o texto de programa de `T`.  
   
 ### <a name="type-names"></a>Nomes de tipo  
+
  O Common Type System impõe apenas duas restrições de nomes:  
   
 - Todos os nomes são codificados como cadeias de caracteres Unicode (16 bits).  
@@ -209,6 +212,7 @@ O Common Type System define como os tipos são declarados, usados e gerenciados 
  Embora um tipo possa referenciar tipos de outros módulos e assemblies, um tipo deve ser totalmente definido em um módulo do .NET. (Dependendo do suporte do compilador, no entanto, ele pode ser dividido em vários arquivos de código-fonte.) Os nomes de tipo precisam ser exclusivos somente dentro de um namespace. Para identificar totalmente um tipo, o nome de tipo deve ser qualificado pelo namespace que contém a implementação do tipo.  
   
 ### <a name="base-types-and-interfaces"></a>Tipos de base e interfaces  
+
  Um tipo pode herdar valores e comportamentos de outro tipo. O Common Type System não permite que tipos sejam herdados de mais de um tipo de base.  
   
  Um tipo pode implementar um número qualquer de interfaces. Para implementar uma interface, um tipo deve implementar todos os membros virtuais dessa interface. Um método virtual pode ser implementado por um tipo derivado e pode ser invocado estática ou dinamicamente.  
@@ -279,7 +283,7 @@ O Common Type System define como os tipos são declarados, usados e gerenciados 
 
  O Common Type System permite que os membros de tipo tenham várias características. No entanto, as linguagens não necessariamente dão suporte a todas elas. A tabela a seguir descreve as características de um membro.  
   
-|Característica|Pode ser aplicado a|Description|  
+|Característica|Pode ser aplicado a|Descrição|  
 |--------------------|------------------|-----------------|  
 |abstract|Métodos, propriedades e eventos|O tipo não fornece a implementação do método. Tipos que herdam ou implementam métodos abstratos devem fornecer uma implementação para o método. A única exceção é quando o tipo derivado é um tipo abstrato. Todos os métodos abstratos são virtuais.|  
 |privado, família, assembly, família e assembly, família ou assembly ou público|Tudo|Define a acessibilidade de um membro:<br /><br /> particulares<br /> Acessível somente dentro do mesmo tipo que o membro ou de um tipo aninhado.<br /><br /> família<br /> Acessível dentro do mesmo tipo que o membro e de tipos derivados herdados dele.<br /><br /> assembly<br /> Acessível somente no assembly no qual o tipo é definido.<br /><br /> família e assembly<br /> Acessíveis somente em tipos qualificados para acesso de família e assembly.<br /><br /> família ou assembly<br /> Acessíveis somente dentro de tipos qualificados para acesso de família ou assembly.<br /><br /> públicos<br /> Acessíveis dentro de qualquer tipo.|  
@@ -292,20 +296,22 @@ O Common Type System define como os tipos são declarados, usados e gerenciados 
 |virtual|Métodos, propriedades e eventos|O método pode ser implementado por um tipo derivado e pode ser invocado estática ou dinamicamente. Se a invocação dinâmica for usada, o tipo da instância que faz a chamada no tempo de execução (em vez do tipo conhecido no tempo de compilação) determinará qual implementação do método será chamada. Para invocar um método virtual estaticamente, a variável precisará ser convertida em um tipo que usa a versão desejada do método.|  
   
 ### <a name="overloading"></a>Sobrecarga  
+
  Cada membro de tipo tem uma assinatura exclusiva. Assinaturas de método consistem no nome de método e em uma lista de parâmetros (a ordem e os tipos dos argumentos do método). Os vários métodos com o mesmo nome podem ser definidos em um tipo desde que suas assinaturas sejam diferentes. Quando dois ou mais métodos com o mesmo nome forem definidos, diz-se que o método está sobrecarregado. Por exemplo, em <xref:System.Char?displayProperty=nameWithType>, o método <xref:System.Char.IsDigit%2A> está sobrecarregado. Um método utiliza um <xref:System.Char>. O outro método utiliza um <xref:System.String> e um <xref:System.Int32>.  
   
 > [!NOTE]
 > O tipo de retorno não é considerado parte da assinatura do método. Ou seja, os métodos não poderão ser sobrecarregados se diferirem somente pelo tipo de retorno.  
   
 ### <a name="inherit-override-and-hide-members"></a>Herdar, substituir e ocultar membros  
+
  Um tipo derivado herda todos os membros de seu tipo de base; ou seja, esses membros são definidos e disponibilizados para o tipo derivado. O comportamento, ou qualidades, de membros herdados pode ser modificado de duas maneiras:  
   
 - Um tipo derivado pode ocultar um membro herdado definindo um novo membro com a mesma assinatura. Isso pode ser feito para fazer um membro privado anteriormente público ou para definir o novo comportamento de um método herdado marcado como `final`.  
   
 - Um tipo derivado pode substituir um método virtual herdado. O método de substituição fornece uma nova definição do método que será invocado com base no tipo do valor no tempo de execução em vez do tipo de variável conhecido no tempo de compilação. Um método poderá substituir um método virtual somente se o método virtual não estiver marcado como `final` e o novo método for tão acessível quanto o método virtual.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
-- [Navegador da API .NET](/dotnet/api)
+- [Navegador de API .NET](../../../api/index.md)
 - [Common Language Runtime](../clr.md)
 - [Conversão de tipo no .NET](type-conversion.md)

@@ -1,19 +1,19 @@
 ---
-title: 'Como: permitir que os usuários resolvam tempos ambíguos'
+description: 'Saiba mais sobre: como permitir que os usuários resolvam tempos ambíguos'
+title: 'Como: permitir que os usuários resolvam horários ambíguos'
 ms.date: 04/10/2017
-ms.technology: dotnet-standard
 helpviewer_keywords:
-- time zones [.NET Framework], ambiguous time
-- ambiguous time [.NET Framework]
+- time zones [.NET], ambiguous time
+- ambiguous time [.NET]
 ms.assetid: bca874ee-5b68-4654-8bbd-3711220ef332
-ms.openlocfilehash: ac723738d80a2f686a5fcaf279cec791b3c58619
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: a64d20080ed021af273a2d114c7558615b8b04e4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84281577"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782475"
 ---
-# <a name="how-to-let-users-resolve-ambiguous-times"></a>Como: permitir que os usuários resolvam tempos ambíguos
+# <a name="how-to-let-users-resolve-ambiguous-times"></a>Como: permitir que os usuários resolvam horários ambíguos
 
 Um horário ambíguo é um horário que aponta para mais de um UTC (Tempo Universal Coordenado). Ocorre quando o horário do relógio é atrasado, como durante a transição do horário de verão de um fuso horário para seu horário padrão. Ao processar um horário ambíguo, você pode executar uma das seguintes ações:
 
@@ -54,7 +54,7 @@ Este exemplo requer:
 
 - Que o <xref:System> namespace seja importado com a `using` instrução (necessária no código C#).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Datas, horas e fusos horários](index.md)
 - [Como: resolver horários ambíguos](resolve-ambiguous-times.md)

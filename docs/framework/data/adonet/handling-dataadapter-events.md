@@ -1,45 +1,48 @@
 ---
+description: 'Saiba mais sobre: Manipulando eventos DataAdapter'
 title: Manipulação de eventos DataAdapter
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 11515b25-ee49-4b1d-9294-a142147c1ec5
-ms.openlocfilehash: d01198d158c4e1c64f12e8a0756c3d4e599fce74
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 045a48ae545ad4354844dd451ff58618b760a9a8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79149538"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723940"
 ---
 # <a name="handling-dataadapter-events"></a>Manipulação de eventos DataAdapter
-O <xref:System.Data.Common.DataAdapter> ADO.NET expõe três eventos que você pode usar para responder a alterações feitas na fonte de dados. A tabela a `DataAdapter` seguir mostra os eventos.  
+
+O ADO.NET <xref:System.Data.Common.DataAdapter> expõe três eventos que você pode usar para responder a alterações feitas nos dados na fonte de dados. A tabela a seguir mostra os `DataAdapter` eventos.  
   
 |Evento|Descrição|  
 |-----------|-----------------|  
-|`RowUpdating`|Uma operação UPDATE, INSERT ou DELETE em uma linha `Update` (por uma chamada para um dos métodos) está prestes a começar.|  
-|`RowUpdated`|Uma operação UPDATE, INSERT ou DELETE em uma linha `Update` (por uma chamada para um dos métodos) está concluída.|  
-|`FillError`|Um erro ocorreu durante `Fill` uma operação.|  
+|`RowUpdating`|Uma operação UPDATE, INSER ou DELETE em uma linha (por meio da chamada a um dos métodos `Update`) está prestes a começar.|  
+|`RowUpdated`|Uma operação UPDATE, INSER ou DELETE em uma linha (por meio da chamada a um dos métodos `Update`) está concluída.|  
+|`FillError`|Ocorreu um erro durante uma operação `Fill`.|  
   
-## <a name="rowupdating-and-rowupdated"></a>Atualização de linhas e linhaatualizada  
- `RowUpdating`é levantada antes que qualquer atualização <xref:System.Data.DataSet> para uma linha da tenha sido processada na fonte de dados. `RowUpdated`é levantada após qualquer atualização de `DataSet` uma linha da que foi processada na fonte de dados. Como resultado, você `RowUpdating` pode usar para modificar o comportamento de atualização antes que ele aconteça, para fornecer tratamento adicional quando uma atualização ocorrerá, para reter uma referência a uma linha atualizada, para cancelar a atualização atual e agendar para um processo de lote a ser processado mais tarde, e assim por diante. `RowUpdated`é útil para responder a erros e exceções que ocorrem durante a atualização. Você pode adicionar informações `DataSet`de erro à lógica, bem como à lógica de repetição, e assim por diante.  
+## <a name="rowupdating-and-rowupdated"></a>Auto-atualização e atualizado  
+
+ `RowUpdating` é gerado antes que qualquer atualização em uma linha de <xref:System.Data.DataSet> tenha sido processada na fonte de dados. `RowUpdated` é gerado depois que qualquer atualização em uma linha de `DataSet` tenha sido processada na fonte de dados. Como resultado, você pode usar `RowUpdating` para modificar o comportamento da atualização antes que ela ocorra, para fornecer tratamento adicional quando ocorre uma atualização, para manter uma referência a uma linha atualizada, para cancelar a atualização atual e agendá-la para que um processo em lote seja processado posteriormente e assim por diante. `RowUpdated` é útil para responder a erros e exceções que ocorrem durante a atualização. Você pode adicionar informações de erro ao `DataSet` , bem como à lógica de repetição, e assim por diante.  
   
- Os <xref:System.Data.Common.RowUpdatingEventArgs> <xref:System.Data.Common.RowUpdatedEventArgs> argumentos passados `RowUpdating` `RowUpdated` para os eventos `Command` incluem: uma `Command` propriedade que faz referência ao objeto que está sendo usado para realizar a atualização; uma `Row` propriedade que `DataRow` faz referência ao objeto que contém as informações atualizadas; uma `StatementType` propriedade para que tipo de atualização está sendo realizada; o `TableMapping`, se aplicável; e `Status` a operação.  
+ Os argumentos <xref:System.Data.Common.RowUpdatingEventArgs> e <xref:System.Data.Common.RowUpdatedEventArgs> passados para os eventos `RowUpdating` e `RowUpdated` incluem o seguinte: uma propriedade `Command` que faz referência ao objeto `Command` que está sendo usado para executar a atualização; uma propriedade `Row` que faz referência ao objeto `DataRow` que contém as informações atualizadas; uma propriedade `StatementType` para qual tipo de atualização está sendo executada; a `TableMapping`, se aplicável; e a `Status` da operação.  
   
- Você pode `Status` usar a propriedade para determinar se ocorreu um erro durante a operação e, se desejar, controlar as ações contra as linhas atuais e resultantes. Quando o evento `Status` ocorre, a `Continue` `ErrorsOccurred`propriedade é igual a um ou . A tabela a seguir mostra os `Status` valores aos quais você pode definir a propriedade para controlar ações posteriores durante a atualização.  
+ Você pode usar a propriedade `Status` para determinar se ocorreu um erro durante a operação e, se desejar, para controlar as ações sobre as linhas atuais e resultantes. Quando o evento ocorre, a propriedade `Status` é igual a `Continue` ou `ErrorsOccurred`. A tabela a seguir mostra os valores para os quais você pode definir a propriedade `Status` para controlar as ações posteriores durante a atualização.  
   
 |Status|Descrição|  
 |------------|-----------------|  
-|`Continue`|Continue a operação de atualização.|  
-|`ErrorsOccurred`|Abortar a operação de atualização e abrir uma exceção.|  
-|`SkipCurrentRow`|Ignore a linha atual e continue a operação de atualização.|  
-|`SkipAllRemainingRows`|Aborte a operação de atualização, mas não lance uma exceção.|  
+|`Continue`|Continue com a operação de atualização.|  
+|`ErrorsOccurred`|Anule a operação de atualização e lance uma exceção.|  
+|`SkipCurrentRow`|Ignore a linha atual e continue com a operação de atualização.|  
+|`SkipAllRemainingRows`|Anule a operação de atualização, mas não lance uma exceção.|  
   
- Definir `Status` a `ErrorsOccurred` propriedade para fazer com que uma exceção seja lançada. Você pode controlar qual exceção `Errors` é lançada definindo a propriedade para a exceção desejada. Usar um dos outros `Status` valores para evitar que uma exceção seja lançada.  
+ Definir a propriedade `Status` como `ErrorsOccurred` faz com que uma exceção seja lançada. Você pode controlar qual exceção é lançada definindo a propriedade `Errors` como a exceção desejada. O uso de um dos outros valores para `Status` impede que uma exceção seja gerada.  
   
- Você também pode `ContinueUpdateOnError` usar a propriedade para lidar com erros para linhas atualizadas. Se `DataAdapter.ContinueUpdateOnError` `true`for , quando uma atualização para uma linha resulta em uma `RowError` exceção sendo lançada, o texto da exceção é colocado nas informações da linha específica, e o processamento continua sem lançar uma exceção. Isso permite que você responda a erros quando o `Update` evento estiver concluído, em contraste com o evento, o `RowUpdated` que permite que você responda a erros quando o erro é encontrado.  
+ Você também pode usar a propriedade `ContinueUpdateOnError` para gerenciar os erros das linhas atualizadas. Se `DataAdapter.ContinueUpdateOnError` for `true`, quando a atualização de uma linha resultar no lançamento de uma exceção, o texto da exceção será colocado nas informações de `RowError` da linha específica e o processamento continuará sem lançar uma exceção. Isso permite que você responda aos erros quando a `Update` for concluída, ao contrário do evento `RowUpdated`, que lhe permite responder aos erros no momento em que eles são encontrados.  
   
- A amostra de código a seguir mostra como adicionar e remover manipuladores de eventos. O `RowUpdating` manipulador de eventos grava um registro de todos os registros excluídos com um carimbo de hora. O `RowUpdated` manipulador de eventos `RowError` adiciona informações de `DataSet`erro à propriedade da linha no , suprime `ContinueUpdateOnError`  =  `true`a exceção e continua processando (espelhando o comportamento de ).  
+ O exemplo de código a seguir mostra como adicionar e remover manipuladores de eventos. O manipulador de eventos `RowUpdating` grava um log com todos os registros excluídos com um carimbo de data/hora. O manipulador de eventos `RowUpdated` adiciona informações de erro à propriedade `RowError` da linha em `DataSet`, suprime a exceção e continua o processamento (espelhando o comportamento de `ContinueUpdateOnError` = `true`).  
   
 ```vb  
 ' Assumes that connection is a valid SqlConnection object.  
@@ -124,21 +127,22 @@ protected static void OnRowUpdated(
 }  
 ```  
   
-## <a name="fillerror"></a>Fillerror  
- Os `DataAdapter` problemas `FillError` são os eventos `Fill` quando ocorre um erro durante uma operação. Esse tipo de erro geralmente ocorre quando os dados da linha que estão sendo adicionados não podem ser convertidos em um tipo de Framework .NET sem alguma perda de precisão.  
+## <a name="fillerror"></a>FillError  
+
+ `DataAdapter` emite o evento `FillError` quando ocorre um erro durante uma operação `Fill`. Esse tipo de erro geralmente ocorre quando os dados na linha que está sendo adicionada não podem ser convertidos em um tipo de .NET Framework sem perda de precisão.  
   
- Se ocorrer um `Fill` erro durante uma operação, a `DataTable`linha atual não será adicionada à . O `FillError` evento permite que você resolva o erro e adicione a `Fill` linha, ou ignorar a linha excluída e continuar a operação.  
+ Se ocorrer um erro durante uma operação `Fill`, a linha atual não será adicionada à `DataTable`. O evento `FillError` permite que você resolva o erro e adicione a linha ou ignore a linha excluída e continue com a operação `Fill`.  
   
- O `FillErrorEventArgs` passado `FillError` para o evento pode conter várias propriedades que permitem que você responda e resolva erros. A tabela a seguir `FillErrorEventArgs` mostra as propriedades do objeto.  
+ O `FillErrorEventArgs` passado para o evento `FillError` pode conter várias propriedades que lhe permitem responder aos erros e resolvê-los. A tabela a seguir mostra as propriedades do objeto `FillErrorEventArgs`.  
   
 |Propriedade|Descrição|  
 |--------------|-----------------|  
 |`Errors`|O `Exception` que ocorreu.|  
-|`DataTable`|O `DataTable` objeto que está sendo preenchido quando ocorreu o erro.|  
-|`Values`|Uma matriz de objetos que contém os valores da linha que estão sendo adicionados quando o erro ocorreu. As referências ordinais da `Values` matriz correspondem às referências ordinais das colunas da linha que estão sendo adicionadas. Por exemplo, `Values[0]` é o valor que estava sendo adicionado como a primeira coluna da linha.|  
-|`Continue`|Permite que você escolha se deve ou não abrir uma exceção. A `Continue` definição `false` da propriedade `Fill` interromperá a operação atual, e uma exceção será lançada. `Continue` Configuração `true` para `Fill` continuar a operação apesar do erro.|  
+|`DataTable`|O objeto `DataTable` que estava sendo preenchido quando o erro ocorreu.|  
+|`Values`|A matriz de objetos que contém os valores da linha que estava sendo adicionada quando o erro ocorreu. As referências ordinais da matriz `Values` correspondem às referências ordinais das colunas da linha que está sendo adicionada. Por exemplo, `Values[0]` é o valor que estava sendo adicionado como a primeira coluna da linha.|  
+|`Continue`|Permite que você escolha se deseja ou não lançar uma exceção. Definir a propriedade `Continue` como `false` interromperá a operação `Fill` atual e lançará uma exceção. A configuração de `Continue` como `true` permite continuar com a operação `Fill` apesar do erro.|  
   
- O exemplo de código a `FillError` seguir adiciona `DataAdapter`um manipulador de eventos para o evento do . No `FillError` código do evento, o exemplo determina se há potencial para perda de precisão, proporcionando a oportunidade de responder à exceção.  
+ O exemplo de código a seguir adiciona um manipulador de eventos para o evento `FillError` de `DataAdapter`. No código do evento `FillError`, o exemplo determina se há o potencial para perda de precisão, fornecendo a oportunidade de responder à exceção.  
   
 ```vb  
 AddHandler adapter.FillError, New FillErrorEventHandler( _  

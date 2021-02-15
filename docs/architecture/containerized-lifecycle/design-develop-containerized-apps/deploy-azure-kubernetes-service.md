@@ -2,16 +2,16 @@
 title: Orquestrar microsserviços e aplicativos de vários contêineres para alta escalabilidade e disponibilidade
 description: Saiba como implantar um aplicativo usando o Serviço de Kubernetes do Azure.
 ms.date: 08/06/2020
-ms.openlocfilehash: b4deb9906e0fece7fb611b6988df576e8b07fe46
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.openlocfilehash: ba9887c0a4837c16a60ebeb006416c0fa8c105e0
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87916109"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96032197"
 ---
 # <a name="deploy-to-azure-kubernetes-service-aks"></a>Implantar no AKS (Serviço de Kubernetes do Azure)
 
-Você pode interagir com o AKS usando seu sistema operacional cliente preferencial (Windows, macOS ou Linux) com a interface de linha de comando do Azure (CLI do Azure) instalada. Para obter mais detalhes, consulte [CLI do Azure documentação](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest) e [Guia de instalação](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) para os ambientes disponíveis.
+Você pode interagir com o AKS usando seu sistema operacional cliente preferencial (Windows, macOS ou Linux) com a interface de linha de comando do Azure (CLI do Azure) instalada. Para obter mais detalhes, consulte [CLI do Azure documentação](/cli/azure/?view=azure-cli-latest) e [Guia de instalação](/cli/azure/install-azure-cli?view=azure-cli-latest) para os ambientes disponíveis.
 
 ## <a name="create-the-aks-environment-in-azure"></a>Criar o ambiente do AKS no Azure
 

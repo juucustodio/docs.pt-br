@@ -1,25 +1,26 @@
 ---
-title: Como configurar um serviço do WCF hospedado no IIS com SSL
+title: 'Como: configurar um serviço do WCF hospedado no IIS com SSL'
 description: Saiba como configurar um serviço WCF hospedado pelo IIS para usar a segurança de transporte HTTP, que requer um certificado registrado no IIS.
 ms.date: 03/30/2017
 ms.assetid: df2fe31f-a4bb-4024-92ca-b74ba055e038
-ms.openlocfilehash: 8dc4692863d93e407a122c0ba93ae38323b8b213
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 960005761d3bed917142141976e9f9094094b34c
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85245252"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96257646"
 ---
-# <a name="how-to-configure-an-iis-hosted-wcf-service-with-ssl"></a>Como configurar um serviço do WCF hospedado no IIS com SSL
+# <a name="how-to-configure-an-iis-hosted-wcf-service-with-ssl"></a>Como: configurar um serviço do WCF hospedado no IIS com SSL
+
 Este tópico descreve como configurar um serviço WCF hospedado pelo IIS para usar a segurança de transporte HTTP. A segurança de transporte HTTP requer que um certificado SSL seja registrado no IIS. Se você não tiver um certificado SSL, poderá usar o IIS para gerar um certificado de teste. Em seguida, você deve adicionar uma associação SSL ao site da Web e configurar as propriedades de autenticação do site. Por fim, você precisa configurar o serviço WCF para usar HTTPS.  
   
-### <a name="creating-a-self-signed-certificate"></a>Criando um certificado autoassinado  
+### <a name="creating-a-self-signed-certificate"></a>Criando um certificado de Self-Signed  
   
 1. Abra o Serviços de Informações da Internet Manager (inetmgr.exe) e selecione o nome do computador no modo de exibição de árvore à esquerda. No lado direito da tela, selecione certificados de servidor  
   
      ![Tela inicial do gerenciador do IIS](media/mg-inetmgrhome.jpg "mg_INetMgrHome")  
   
-2. Na janela certificados do servidor, clique no **criar certificado autoassinado....** Criar.  
+2. Na janela certificados do servidor, clique no **Self-Signed criar certificado....** Criar.  
   
      ![Criando um certificado auto&#45;assinado com o IIS](media/mg-createselfsignedcert.jpg "mg_CreateSelfSignedCert")  
   
@@ -95,6 +96,7 @@ Este tópico descreve como configurar um serviço WCF hospedado pelo IIS para us
     ```  
   
 ## <a name="example"></a>Exemplo  
+
  Veja a seguir um exemplo completo de um arquivo de web.config para um serviço WCF usando a segurança de transporte HTTP  
   
 ```xml  
@@ -149,5 +151,5 @@ Este tópico descreve como configurar um serviço WCF hospedado pelo IIS para us
 
 - [Hospedagem no Internet Information Services](hosting-in-internet-information-services.md)
 - [Instruções de hospedagem de serviço de informação de internet](../samples/internet-information-service-hosting-instructions.md)
-- [Práticas recomendadas de hospedagem de Serviços de Informações da Internet](internet-information-services-hosting-best-practices.md)
+- [Práticas recomendadas de hospedagem dos Serviços de Informações da Internet](internet-information-services-hosting-best-practices.md)
 - [Hospedagem do IIS utilizando código embutido](../samples/iis-hosting-using-inline-code.md)

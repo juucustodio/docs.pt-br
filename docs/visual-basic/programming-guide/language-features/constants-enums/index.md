@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: constantes e enumerações no Visual Basic'
 title: Constantes e enumerações
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,14 +12,15 @@ helpviewer_keywords:
 - naming conventions [Visual Basic], constants
 - Visual Basic code, improving readability with constants
 ms.assetid: c8aba36e-fa47-4a33-8b68-cb2009218270
-ms.openlocfilehash: 7d15c46c0f6bb00c23dd98e464f61a5f94b0773a
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 78436f1e00c95c33d547fb9819b21bbe8ebafc2c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84414396"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468441"
 ---
 # <a name="constants-and-enumerations-in-visual-basic"></a>Constantes e enumerações no Visual Basic
+
 Constantes são uma maneira de usar nomes significativos no lugar de um valor que não é alterado. Constantes armazenam valores que, como o nome implica, permanecem constantes durante a execução de um aplicativo. Você pode usar constantes para fornecer nomes significativos, em vez de números, tornando o código mais legível.  
   
  Enumerações fornecem uma maneira conveniente para trabalhar com conjuntos de constantes relacionadas e para associar valores de constante a nomes. Por exemplo, é possível declarar uma enumeração de um conjunto de constantes de inteiros associados aos dias da semana e, em seguida, usar os nomes de dias em vez de seus valores de inteiros em seu código.  

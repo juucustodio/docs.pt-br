@@ -1,21 +1,24 @@
 ---
+description: 'Saiba mais sobre: referência rápida do Entity SQL'
 title: Referência rápida de Entity SQL
 ms.date: 03/30/2017
 ms.assetid: e53dad9e-5e83-426e-abb4-be3e78e3d6dc
-ms.openlocfilehash: fc7cf8f8f692f9dc4230569d5f575b6d5fad19fa
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: ddac48bece1f0e9df737db295d4d028529ea290f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79150344"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724551"
 ---
 # <a name="entity-sql-quick-reference"></a>Referência rápida de Entity SQL
+
 Este tópico fornece uma referência rápida às consultas de [!INCLUDE[esql](../../../../../../includes/esql-md.md)]. As consultas deste tópico se baseiam no modelo de vendas AdventureWorks.  
   
 ## <a name="literals"></a>Literais  
   
 ### <a name="string"></a>String  
- Há literais de cadeia de caracteres Unicode e não Unicode. As seqüências unicode são preparadas com N. Por exemplo, `N'hello'`.  
+
+ Há literais de cadeia de caracteres Unicode e não Unicode. As cadeias de caracteres Unicode são precedidas por N. Por exemplo, `N'hello'` .  
   
  Este é um exemplo de um literal de cadeia de caracteres não Unicode:  
   
@@ -32,6 +35,7 @@ Este tópico fornece uma referência rápida às consultas de [!INCLUDE[esql](..
 |hello|  
   
 ### <a name="datetime"></a>Datetime  
+
  Em literais DateTime, as partes de data e hora são obrigatórias. Não há valores padrão.  
   
  Exemplo:  
@@ -49,6 +53,7 @@ DATETIME '2006-12-25 01:01'
 |12/25/2006 1:01:00 AM|  
   
 ### <a name="integer"></a>Integer  
+
  Literais inteiros podem ser do tipo Int32 (123), UInt32 (123U), Int64 (123L) e UInt64 (123UL).  
   
  Exemplo:  
@@ -67,12 +72,14 @@ DATETIME '2006-12-25 01:01'
 |3|  
   
 ### <a name="other"></a>Outros  
+
  Outros literais com suporte do [!INCLUDE[esql](../../../../../../includes/esql-md.md)] são Guid, Binary, Float/Double, Decimal e `null`. Literais nulos em [!INCLUDE[esql](../../../../../../includes/esql-md.md)] são considerados compatíveis com cada outro tipo no modelo conceitual.  
   
 ## <a name="type-constructors"></a>Construtores de tipo  
   
 ### <a name="row"></a>ROW  
- [Row](row-entity-sql.md) constrói um valor anônimo, estruturalmente digitado (registro) como em:`ROW(1 AS myNumber, ‘Name’ AS myName).`  
+
+ A [linha](row-entity-sql.md) constrói um valor anônimo e estruturado de tipo (registro) como em:`ROW(1 AS myNumber, ‘Name’ AS myName).`  
   
  Exemplo:  
   
@@ -91,7 +98,8 @@ SELECT VALUE row (product.ProductID AS ProductID, product.Name
 |...|...|  
   
 ### <a name="multiset"></a>MULTISET  
- [Multiset](multiset-entity-sql.md) constrói coleções, tais como:  
+
+ As coleções de [vários](multiset-entity-sql.md) conjuntos de construções, como:  
   
  `MULTISET(1,2,2,3)` `--same as`-`{1,2,2,3}.`  
   
@@ -108,7 +116,8 @@ SELECT VALUE product FROM AdventureWorksEntities.Product AS product WHERE produc
 |842|Touring-Panniers, Large|PA-T100|…|  
   
 ### <a name="object"></a>Objeto  
- [O Tipo Construtor](named-type-constructor-entity-sql.md) denominado construções (nomeado) `person("abc", 12)`objetos definidos pelo usuário, tais como .  
+
+ Construções de [Construtor de tipo nomeado](named-type-constructor-entity-sql.md) (nomeados) objetos definidos pelo usuário, como `person("abc", 12)` .  
   
  Exemplo:  
   
@@ -130,7 +139,8 @@ AS o
 ## <a name="references"></a>Referências  
   
 ### <a name="ref"></a>REF  
- [O REF](ref-entity-sql.md) cria uma referência a uma instância de tipo de entidade. Por exemplo, a seguinte consulta retorna referências para cada entidade Order no conjunto de entidades Orders:  
+
+ [Ref](ref-entity-sql.md) cria uma referência a uma instância de tipo de entidade. Por exemplo, a seguinte consulta retorna referências para cada entidade Order no conjunto de entidades Orders:  
   
 ```sql  
 SELECT REF(o) AS OrderID FROM Orders AS o  
@@ -164,7 +174,8 @@ SELECT VALUE REF(p).Name FROM
 |...|  
   
 ### <a name="deref"></a>DEREF  
- [O DEREF](deref-entity-sql.md) defaz referência a um valor de referência e produz o resultado dessa dereferência. Por exemplo, a seguinte consulta gera as entidades Order para cada Order no conjunto de entidades Orders: `SELECT DEREF(o2.r) FROM (SELECT REF(o) AS r FROM LOB.Orders AS o) AS o2`.  
+
+ [DEREF](deref-entity-sql.md) faz a referência de um valor de referência e produz o resultado dessa desreferência. Por exemplo, a seguinte consulta gera as entidades Order para cada Order no conjunto de entidades Orders: `SELECT DEREF(o2.r) FROM (SELECT REF(o) AS r FROM LOB.Orders AS o) AS o2`.  
   
  Exemplo:  
   
@@ -183,7 +194,8 @@ SELECT VALUE DEREF(REF(p)).Name FROM
 |...|  
   
 ### <a name="createref-and-key"></a>CREATEREF AND KEY  
- [CREATEREF](createref-entity-sql.md) cria uma referência passando uma chave. [Key](key-entity-sql.md) extrai a parte-chave de uma expressão com referência de tipo.  
+
+ [CREATEREF](createref-entity-sql.md) cria uma referência passando uma chave. A [chave](key-entity-sql.md) extrai a parte de chave de uma expressão com referência de tipo.  
   
  Exemplo:  
   
@@ -204,7 +216,8 @@ SELECT VALUE Key(CreateRef(AdventureWorksEntities.Product, row(p.ProductID)))
 ## <a name="functions"></a>Funções  
   
 ### <a name="canonical"></a>Canônico  
- O namespace para [funções canônicas](canonical-functions.md) é `Edm.Length("string")`Edm, como em . Você não precisa especificar o namespace, a menos que outro namespace seja importado e contenha uma função com o mesmo nome de uma função canônica. Se dois namespaces têm a mesma função, o usuário deve especificar o nome completo.  
+
+ O namespace para [funções canônicas](canonical-functions.md) é EDM, como em `Edm.Length("string")` . Você não precisa especificar o namespace, a menos que outro namespace seja importado e contenha uma função com o mesmo nome de uma função canônica. Se dois namespaces têm a mesma função, o usuário deve especificar o nome completo.  
   
  Exemplo:  
   
@@ -223,7 +236,8 @@ SELECT Length(c. FirstName) AS NameLen FROM
 |5|  
   
 ### <a name="microsoft-provider-specific"></a>Específico do provedor da Microsoft  
- [As funções específicas do](../sqlclient-for-ef-functions.md) `SqlServer` provedor da Microsoft estão no namespace.  
+
+ As [funções específicas do provedor da Microsoft](../sqlclient-for-ef-functions.md) estão no `SqlServer` namespace.  
   
  Exemplo:  
   
@@ -242,7 +256,8 @@ SELECT SqlServer.LEN(c.EmailAddress) AS EmailLen FROM
 |26|  
   
 ## <a name="namespaces"></a>Namespaces  
- [O USO](using-entity-sql.md) especifica os namespaces usados em uma expressão de consulta.  
+
+ O [uso](using-entity-sql.md) de especifica namespaces usados em uma expressão de consulta.  
   
  Exemplo:  
   
@@ -257,7 +272,8 @@ using SqlServer; LOWER('AA');
 |aa|  
   
 ## <a name="paging"></a>Paginamento  
- A paginação pode ser expressa declarando uma subcláusula [SKIP](skip-entity-sql.md) e [LIMIT](limit-entity-sql.md) à cláusula [ORDER BY.](order-by-entity-sql.md)  
+
+ A paginação pode ser expressa declarando-se uma subcláusula [Skip](skip-entity-sql.md) e [Limit](limit-entity-sql.md) com a cláusula [order by](order-by-entity-sql.md) .  
   
  Exemplo:  
   
@@ -275,7 +291,8 @@ SELECT c.ContactID as ID, c.LastName AS Name FROM
 |12|Aguilar|  
   
 ## <a name="grouping"></a>Agrupamento  
- [O AGRUPAMENTO POR](group-by-entity-sql.md) especifica grupos nos quais os objetos retornados por uma expressão de consulta[(SELECT)](select-entity-sql.md)devem ser colocados.  
+
+ O [agrupamento](group-by-entity-sql.md) especifica os grupos nos quais os objetos retornados por uma expressão de consulta ([Select](select-entity-sql.md)) devem ser colocados.  
   
  Exemplo:  
   
@@ -294,7 +311,8 @@ SELECT VALUE name FROM AdventureWorksEntities.Product AS P
 |...|  
   
 ## <a name="navigation"></a>Navegação  
- O operador de navegação de relação permite que você navegue na relação de uma entidade (from end) para outra (to end). [O NAVIGATE](navigate-entity-sql.md) tem o \<tipo de relacionamento qualificado como namespace>. \<nome do tipo de relacionamento>. Navegar retorna\<Ref T> se a cardinalidade do fim for 1. Se a cardinalidade do fim for n,\<a Coleção<Ref T>> será devolvida.  
+
+ O operador de navegação de relação permite que você navegue na relação de uma entidade (from end) para outra (to end). A [navegação](navigate-entity-sql.md) usa o tipo de relação qualificado como \<namespace> . \<relationship type name> . Navigate retornará Ref \<T> se a cardinalidade da extremidade to for 1. Se a cardinalidade do to end for n, a coleção<Ref \<T>> será retornada.  
   
  Exemplo:  
   
@@ -316,7 +334,8 @@ SELECT a.AddressID, (SELECT VALUE DEREF(v) FROM
 ## <a name="select-value-and-select"></a>SELECT VALUE AND SELECT  
   
 ### <a name="select-value"></a>SELECT VALUE  
- [!INCLUDE[esql](../../../../../../includes/esql-md.md)] fornece a cláusula SELECT VALUE para ignorar a construção de linha implícita. Somente um item pode ser especificado em uma cláusula SELECT VALUE. Quando tal cláusula é usada, nenhum invólucro de linha é construído em torno dos itens da cláusula SELECT, e uma coleção da forma desejada pode ser produzida, por exemplo: `SELECT VALUE a`.  
+
+ [!INCLUDE[esql](../../../../../../includes/esql-md.md)] fornece a cláusula SELECT VALUE para ignorar a construção de linha implícita. Somente um item pode ser especificado em uma cláusula SELECT VALUE. Quando tal cláusula é usada, nenhum wrapper de linha é construído em volta dos itens na cláusula SELECT e uma coleção da forma desejada pode ser produzida, por exemplo: `SELECT VALUE a` .  
   
  Exemplo:  
   
@@ -334,6 +353,7 @@ SELECT VALUE p.Name FROM AdventureWorksEntities.Product AS p
 |...|  
   
 ### <a name="select"></a>SELECT  
+
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] também fornece o construtor de linha para construir linhas arbitrárias. SELECT utiliza um ou mais elementos na projeção e resulta em um registro de dados com campos; por exemplo: `SELECT a, b, c`.  
   
  Exemplo:  
@@ -348,7 +368,8 @@ SELECT VALUE p.Name FROM AdventureWorksEntities.Product AS p
 |...|...|  
   
 ## <a name="case-expression"></a>CASE EXPRESSION  
- A [expressão do caso](case-entity-sql.md) avalia um conjunto de expressões booleanas para determinar o resultado.  
+
+ A [expressão CASE](case-entity-sql.md) avalia um conjunto de expressões boolianas para determinar o resultado.  
   
  Exemplo:  
   
@@ -362,7 +383,7 @@ CASE WHEN AVG({25,12,11}) < 100 THEN TRUE ELSE FALSE END
 |-----------|  
 |TRUE|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de Entity SQL](entity-sql-reference.md)
 - [Visão geral da Entity SQL](entity-sql-overview.md)

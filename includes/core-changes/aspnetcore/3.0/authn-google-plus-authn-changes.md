@@ -1,16 +1,16 @@
 ---
-ms.openlocfilehash: c634c43e72d345721f2d8f2e9f45760e927a86ab
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 14d80f25c34465caa6dec10e5704fe0a3cbccc71
+ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "72393967"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96477956"
 ---
 ### <a name="authentication-google-deprecated-and-replaced"></a>Autenticação: Google + preterido e substituído
 
 O Google está começando a [desligar](https://developers.google.com/+/api-shutdown) o Google + entrar para aplicativos como no início de 28 de janeiro de 2019.
 
-#### <a name="change-description"></a>Descrição da alteração
+#### <a name="change-description"></a>Descrição das alterações
 
 ASP.NET 4. x e ASP.NET Core têm usado as APIs de entrada do Google + para autenticar usuários da conta do Google em aplicativos Web. Os pacotes NuGet afetados são [Microsoft. AspNetCore. Authentication. Google](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.Google/) para ASP.NET Core e [Microsoft. Owin. Security. Google](https://www.nuget.org/packages/Microsoft.Owin.Security.Google/) para `Microsoft.Owin` com ASP.NET Web Forms e MVC.
 
@@ -63,7 +63,7 @@ A mitigação fornecida para o ASP.NET Core 2. x também pode ser usada para ASP
     o.ClientSecret = Configuration["Authentication:Google:ClientSecret"];
     o.Authority = "https://accounts.google.com";
     o.ResponseType = OpenIdConnectResponseType.Code;
-    o.CallbackPath = "/signin-google"; // Or register the default "/sigin-oidc"
+    o.CallbackPath = "/signin-google"; // Or register the default "/signin-oidc"
     o.Scope.Add("email");
 });
 JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();

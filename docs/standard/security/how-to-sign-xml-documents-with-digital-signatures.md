@@ -2,7 +2,6 @@
 title: 'Como: assinar documento XML com assinaturas digitais'
 description: Saiba como assinar documentos XML com assinaturas digitais. Use classes no namespace System.Security.Cryptography.Xml no .NET.
 ms.date: 07/14/2020
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -15,12 +14,12 @@ helpviewer_keywords:
 - XML signing
 - signing XML
 ms.assetid: 99692ac1-d8c9-42d7-b1bf-2737b01037e4
-ms.openlocfilehash: e1457fd659ab63489bd4cfafd7731a4b098a2791
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: 2cb63fd91b1aeb51c762975103ea665e0d8539b1
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87557067"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726672"
 ---
 # <a name="how-to-sign-xml-documents-with-digital-signatures"></a>Como: assinar documento XML com assinaturas digitais
 
@@ -96,6 +95,7 @@ Para obter informações sobre como verificar uma assinatura digital XML que foi
      [!code-vb[HowToSignXMLDocumentRSA#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToSignXMLDocumentRSA/vb/sample.vb#13)]  
   
 ## <a name="example"></a>Exemplo  
+
  Este exemplo pressupõe que um arquivo chamado `test.xml` existe no mesmo diretório que o programa compilado.  Você pode inserir o XML a seguir em um arquivo chamado `test.xml` e usá-lo com este exemplo.  
   
 ```xml  
@@ -130,5 +130,5 @@ Nunca incorpore uma chave privada diretamente em seu código-fonte.  Chaves inse
 - [Serviços criptográficos](cryptographic-services.md)
 - [Criptografia de plataforma cruzada](cross-platform-cryptography.md)
 - <xref:System.Security.Cryptography.Xml>
-- [Como: verificar as assinaturas digitais de documentos XML](how-to-verify-the-digital-signatures-of-xml-documents.md)
+- [Como verificar as assinaturas digitais de documentos XML](how-to-verify-the-digital-signatures-of-xml-documents.md)
 - [Proteção de dados do ASP.NET Core](/aspnet/core/security/data-protection/introduction)

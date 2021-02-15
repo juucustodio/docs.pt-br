@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorDebugGenerationTypes'
 title: Enumeração CorDebugGenerationTypes
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 9f25b64f-eedd-4ae5-8b0e-cfdfb9b6c5d8
 topic_type:
 - apiref
-ms.openlocfilehash: 0443f58b79e60111756308cc4843daf86d1fc823
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: f86b2bc9bf947c6b285c50678f46494005bb5537
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795859"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99662124"
 ---
 # <a name="cordebuggenerationtypes-enumeration"></a>Enumeração CorDebugGenerationTypes
+
 Especifica a geração de uma região de memória no heap gerenciado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -47,6 +49,7 @@ typedef enum CorDebugGenerationTypes {
 ## <a name="remarks"></a>Comentários  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

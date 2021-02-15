@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICorDebugHeapSegmentEnum:: Next Method'
 title: Método ICorDebugHeapSegmentEnum::Next
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 51625fd0-7399-49c7-b22b-5dfb05451fe6
 topic_type:
 - apiref
-ms.openlocfilehash: 3d4e44eefaf99a40b9c4f1c45e7dd81192f8b607
-ms.sourcegitcommit: 3824ff187947572b274b9715b60c11269335c181
+ms.openlocfilehash: 8d2ddfb4df82969fa9cf580ed8a7f903f9d6c260
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84904267"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803669"
 ---
 # <a name="icordebugheapsegmentenumnext-method"></a>Método ICorDebugHeapSegmentEnum::Next
+
 Obtém o número especificado de instâncias de [COR_SEGMENT](cor-segment-structure.md) que contêm informações sobre regiões de memória do heap gerenciado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,6 +37,7 @@ HRESULT Next(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  celt  
  no O número de segmentos a serem recuperados.  
   
@@ -47,6 +50,7 @@ HRESULT Next(
 ## <a name="remarks"></a>Comentários  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -55,7 +59,7 @@ HRESULT Next(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugHeapSegmentEnum](icordebugheapsegmentenum-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

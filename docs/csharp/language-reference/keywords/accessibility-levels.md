@@ -6,12 +6,12 @@ helpviewer_keywords:
 - access modifiers [C#], accessibility levels
 - accessibility levels
 ms.assetid: dc083921-0073-413e-8936-a613e8bb7df4
-ms.openlocfilehash: 26b8f78595b1406deb371113cf491b80ad7c1474
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 6e1a5bddc0d40b0b62c7b07dbc6b4134a3447a95
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89127016"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91168784"
 ---
 # <a name="accessibility-levels-c-reference"></a>Níveis de acessibilidade (Referência de C#)
 
@@ -46,6 +46,7 @@ Use os modificadores de acesso, `public`, `protected`, `internal` ou `private`, 
  A acessibilidade de um tipo aninhado depende de seu [domínio de acessibilidade](./accessibility-domain.md), que é determinado pela acessibilidade declarada do membro e o domínio de acessibilidade do tipo que o contém imediatamente. Entretanto, o domínio de acessibilidade de um tipo aninhado não pode exceder o do tipo contido.  
   
 ## <a name="c-language-specification"></a>Especificação da Linguagem C#  
+
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## <a name="see-also"></a>Confira também

@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: <Property> elemento (.net Native)'
 title: <Property> (.NET Nativo)
 ms.date: 03/30/2017
 ms.assetid: ad4ba56d-3bcb-4c10-ba90-1cc66e2175a1
-ms.openlocfilehash: b9bc89804a872dddf1a56c2a3dadc9c3df4f5fd1
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: cd3c033fd2ce21b69ff0d8563f0782838f39b09f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73128204"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738462"
 ---
 # <a name="property-element-net-native"></a>\<Property> (.NET Nativo)
+
 Aplica a política de reflexão de runtime a uma propriedade.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <Property Name="property_name"  
@@ -22,6 +24,7 @@ Aplica a política de reflexão de runtime a uma propriedade.
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -46,6 +49,7 @@ Aplica a política de reflexão de runtime a uma propriedade.
 |*policy_setting*|A configuração a ser aplicada a este tipo de política para a propriedade. Os valores possíveis são `Auto`, `Excluded`, `Included` e `Required`. Para obter mais informações, consulte [Configurações da política da diretiva de runtime](runtime-directive-policy-settings.md).|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -56,9 +60,11 @@ Aplica a política de reflexão de runtime a uma propriedade.
 |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|Aplica a política de reflexão a um tipo genérico construído e todos os seus membros.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Se a política da propriedade não for definida explicitamente, ela herdará a política de runtime do seu elemento pai.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir usa reflexão para instanciar um objeto `Book` e exibir seus valores de propriedade. O arquivo default.rd.xml original para o projeto aparece da seguinte maneira:  
   
 ```xml  
@@ -81,7 +87,7 @@ Aplica a política de reflexão de runtime a uma propriedade.
   
 - definindo a `Dynamic` política para o `Book` tipo em seu [\<Type>](type-element-net-native.md) elemento.  
   
-- Adicionando um elemento aninhado [\<Property>](property-element-net-native.md) para cada propriedade cujo getter gostaríamos de invocar, como faz o seguinte arquivo default. Rd. xml.  
+- Adicionando um elemento aninhado [\<Property>](property-element-net-native.md) para cada propriedade cujo getter gostaríamos de invocar, como o arquivo de default.rd.xml a seguir.  
   
     ```xml  
     <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
@@ -97,7 +103,7 @@ Aplica a política de reflexão de runtime a uma propriedade.
     </Directives>  
     ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência do arquivo de configuração de diretivas do runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
 - [Elementos da diretiva de runtime](runtime-directive-elements.md)

@@ -25,33 +25,57 @@
       href: tutorials/ml-sentiment-analysis.md
 - name: Guias de instruções
   items:
+    - name: Conectar-se a dados
+      items:
+        - name: Armazenamento do Azure
+          href: how-to-guides/connect-to-azure-storage.md
+        - name: Hubs de Eventos
+          href: how-to-guides/connect-to-event-hub.md
+        - name: Mongo DB
+          href: how-to-guides/connect-to-mongo-db.md
+        - name: SQL Server
+          href: how-to-guides/connect-to-sql-server.md
+    - name: Compilar aplicativos
+      items:
+        - name: Ubuntu
+          href: how-to-guides/ubuntu-instructions.md
+        - name: Windows
+          href: how-to-guides/windows-instructions.md
+    - name: Enviar trabalhos remotos
+      items:
+        - name: Enviar trabalhos para o Azure Synapse Analytics
+          href: /azure/synapse-analytics/spark/spark-dotnet
+        - name: Enviar trabalhos para o Databricks
+          href: how-to-guides/databricks-deploy-methods.md
+        - name: Enviar trabalhos para o HDInsight
+          href: how-to-guides/hdinsight-deploy-methods.md
+    - name: UDFs (Funções definidas pelo usuário)
+      items:
+        - name: Guia de UDF
+          href: how-to-guides/udf-guide.md
+        - name: UDFs do Java no .NET
+          href: how-to-guides/java-udf-from-dotnet.md
+        - name: UDFs no .NET Interativo
+          href: how-to-guides/dotnet-interactive-udf-issue.md
+        - name: Implantar binários de trabalho e do UDF
+          href: how-to-guides/deploy-worker-udf-binaries.md
+    - name: Usar o Jupyter Notebooks
+      href: how-to-guides/dotnet-spark-jupyter-notebooks.md
     - name: Guia de difusão
       href: how-to-guides/broadcast-guide.md
-    - name: Guia de UDF
-      href: how-to-guides/udf-guide.md
     - name: Depurar seu aplicativo
       href: how-to-guides/debug.md
-    - name: Enviar trabalhos para o HDInsight
-      href: how-to-guides/hdinsight-deploy-methods.md
-    - name: Enviar trabalhos para o Databricks
-      href: how-to-guides/databricks-deploy-methods.md
-    - name: Implantar binários de trabalho e do UDF
-      href: how-to-guides/deploy-worker-udf-binaries.md
-    - name: Compilar aplicativo no Ubuntu
-      href: how-to-guides/ubuntu-instructions.md
-    - name: Compilar aplicativo no Windows
-      href: how-to-guides/windows-instructions.md
     - name: Instalar notebooks interativos no Azure HDInsight
       href: how-to-guides/hdinsight-notebook-installation.md
 - name: Referência
   items:
-    - name: Referência API
-      href: 'https://docs.microsoft.com/dotnet/api/?view=spark-dotnet'
+    - name: Referência de API
+      href: ../../api/index.md?view=spark-dotnet
 - name: Recursos
   items:
     - name: Visão geral dos recursos
       href: resources/index.md
-    - name: GitHub
+    - name: GitHub do .NET para Apache Spark
       href: 'https://github.com/dotnet/spark'
     - name: Stack Overflow
       href: 'https://stackoverflow.com/questions/tagged/.net-spark'

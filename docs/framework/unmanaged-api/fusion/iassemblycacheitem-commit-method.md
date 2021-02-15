@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método IAssemblyCacheItem:: Commit'
 title: Método IAssemblyCacheItem::Commit
 ms.date: 03/30/2017
 api_name:
@@ -15,15 +16,16 @@ helpviewer_keywords:
 ms.assetid: c2321f17-f46f-4815-ae41-b28678753613
 topic_type:
 - apiref
-ms.openlocfilehash: f840438e175790a2b4c97302963b910f98dffb7d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: bd73bb9099090089e52d52009cfef309b33adc53
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176559"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760845"
 ---
 # <a name="iassemblycacheitemcommit-method"></a>Método IAssemblyCacheItem::Commit
-Compromete a referência de montagem armazenada em cache à memória.  
+
+Confirma a referência de assembly armazenada em cache para a memória.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -34,20 +36,22 @@ HRESULT Commit (
 );  
 ```  
   
-## <a name="parameters"></a>parâmetros  
+## <a name="parameters"></a>Parâmetros  
+
  `dwFlags`  
- [em] Bandeiras definidas em Fusion.idl.  
+ no Sinalizadores definidos em Fusion. idl.  
   
  `pulDisposition`  
- [fora, opcional] Um valor que indica o resultado da operação.  
+ [saída, opcional] Um valor que indica o resultado da operação.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
- **Cabeçalho:** Fusion.h  
+ **Cabeçalho:** Fusion. h  
   
- **.NET Framework Versions:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IAssemblyCacheItem](iassemblycacheitem-interface.md)

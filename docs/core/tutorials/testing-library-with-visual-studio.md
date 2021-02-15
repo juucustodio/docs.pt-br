@@ -1,25 +1,25 @@
 ---
-title: Testar um .NET Standard biblioteca de classes com o .NET Core usando o Visual Studio
-description: Crie um projeto de teste de unidade para uma biblioteca de classes do .NET Core. Verifique se uma biblioteca de classes do .NET Core funciona corretamente com testes de unidade.
-ms.date: 06/08/2020
+title: Testar uma biblioteca de classes .NET usando o Visual Studio
+description: Saiba como usar o Visual Studio para criar e executar um projeto de teste de unidade para uma biblioteca de classes .NET.
+ms.date: 11/18/2020
 dev_langs:
 - csharp
 - vb
 ms.custom: vs-dotnet
-ms.openlocfilehash: 049f0636b1c2c2df33461714aea5a11810ef00ad
-ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
+ms.openlocfilehash: 3d56627b937fa0ad5f8002f396ce617e09ce9d2c
+ms.sourcegitcommit: 5114e7847e0ff8ddb8c266802d47af78567949cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89359188"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94916110"
 ---
-# <a name="tutorial-test-a-net-standard-class-library-with-net-core-using-visual-studio"></a>Tutorial: testar uma biblioteca de classes de .NET Standard com o .NET Core usando o Visual Studio
+# <a name="tutorial-test-a-net-class-library-with-net-using-visual-studio"></a>Tutorial: testar uma biblioteca de classes .NET com .NET usando o Visual Studio
 
 Este tutorial mostra como automatizar o teste de unidade adicionando um projeto de teste a uma solução.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- Este tutorial funciona com a solução que você cria em [criar uma .net Standard biblioteca usando o Visual Studio](library-with-visual-studio.md).
+- Este tutorial funciona com a solução que você cria em [criar uma biblioteca de classes .NET usando o Visual Studio](library-with-visual-studio.md).
 
 ## <a name="create-a-unit-test-project"></a>Crie um projeto de teste de unidade
 
@@ -27,7 +27,7 @@ As unidade de teste fornecem testes de software automatizados durante o desenvol
 
 1. Inicie o Visual Studio.
 
-1. Abra a `ClassLibraryProjects` solução que você criou em [criar uma .net Standard biblioteca usando o Visual Studio](library-with-visual-studio.md).
+1. Abra a `ClassLibraryProjects` solução que você criou em [criar uma biblioteca de classes .NET usando o Visual Studio](library-with-visual-studio.md).
 
 1. Adicione um novo projeto de teste de unidade chamado "StringLibraryTest" à solução.
 
@@ -35,9 +35,11 @@ As unidade de teste fornecem testes de software automatizados durante o desenvol
 
    1. Na página **Adicionar um novo projeto** , digite **MSTest** na caixa de pesquisa. Escolha **C#** ou **Visual Basic** na lista idioma e, em seguida, escolha **todas as plataformas** na lista plataforma.
 
-   1. Escolha o modelo de **projeto de teste MSTest (.NET Core)** e, em seguida, escolha **Avançar**.
+   1. Escolha o modelo de **projeto de teste de unidade** e escolha **Avançar**.
 
-   1. Na página **configurar seu novo projeto** , digite **StringLibraryTest** na caixa **nome do projeto** . Em seguida, escolha **Criar**.
+   1. Na página **configurar seu novo projeto** , digite **StringLibraryTest** na caixa **nome do projeto** . Em seguida, escolha **Avançar**.
+
+   1. Na página **informações adicionais** , selecione **.NET 5,0 (atual)** na caixa **estrutura de destino** . Em seguida, escolha **Criar**.
 
 1. O Visual Studio cria o projeto e abre o arquivo de classe na janela de código com o código a seguir. Se o idioma que você deseja usar não for mostrado, altere o seletor de idioma na parte superior da página.
 
@@ -122,21 +124,21 @@ Para criar os métodos de teste:
 1. Na barra de menus, selecione **arquivo**  >  **salvar UnitTest1.cs como** ou **arquivo**  >  **salvar UnitTest1. vb como**. Na caixa de diálogo **Salvar Arquivo Como**, selecione a seta ao lado do botão **Salvar** e selecione **Salvar com Codificação**.
 
    > [!div class="mx-imgBorder"]
-   > ![Caixa de diálogo Salvar arquivo como do Visual Studio](./media/testing-library-with-visual-studio/save-file-as-dialog.png)
+   > :::image type="content" source="./media/testing-library-with-visual-studio/save-file-as-dialog.png" alt-text="Caixa de diálogo Salvar arquivo como do Visual Studio":::
 
 1. Na caixa de diálogo **Confirmar Salvar Como**, selecione o botão **Sim** para salvar o arquivo.
 
 1. Na caixa de diálogo **Opções Avançadas de Salvamento**, selecione **Unicode (UTF-8 com assinatura) – página de código 65001** na lista suspensa **Codificação** e selecione **OK**.
 
    > [!div class="mx-imgBorder"]
-   > ![Caixa de diálogo Opções Avançadas de Salvamento do Visual Studio](./media/testing-library-with-visual-studio/advanced-save-options.png)
+   > :::image type="content" source="./media/testing-library-with-visual-studio/advanced-save-options.png" alt-text="Caixa de diálogo Opções Avançadas de Salvamento do Visual Studio":::
 
    Se você não salvar seu código-fonte como um arquivo codificado em UTF8, o Visual Studio poderá salvá-lo como um arquivo ASCII. Quando isso acontece, o tempo de execução não decodifica com precisão os caracteres UTF8 fora do intervalo ASCII, e os resultados de teste não estarão corretos.
 
 1. Na barra de menus, selecione **testar**  >  **executar todos os testes**. Se a janela **Gerenciador de testes** não abrir, abra-a escolhendo **Test**  >  **Test Explorer**. Os três testes estão listados na seção **Testes Aprovados**, e a seção **Resumo** relata o resultado da execução de teste.
 
    > [!div class="mx-imgBorder"]
-   > ![Janela Gerenciador de Testes com testes aprovados](./media/testing-library-with-visual-studio/test-explorer-window.png)
+   > :::image type="content" source="./media/testing-library-with-visual-studio/test-explorer-window.png" alt-text="Janela Gerenciador de Testes com testes aprovados":::
 
 ## <a name="handle-test-failures"></a>Lidar com falhas de teste
 
@@ -158,14 +160,14 @@ Se você estiver fazendo o TDD (desenvolvimento controlado por teste), você esc
 1. Execute o teste selecionando **testar**  >  **executar todos os testes** na barra de menus. A Janela **Gerenciador de Testes** indica que dois testes tiveram êxito e um falhou.
 
    > [!div class="mx-imgBorder"]
-   > ![Janela Gerenciador de Testes com testes com falha](./media/testing-library-with-visual-studio/failed-test-window.png)
+   > :::image type="content" source="./media/testing-library-with-visual-studio/failed-test-window.png" alt-text="Janela Gerenciador de Testes com testes com falha":::
 
 1. Selecione o teste com falha, `TestDoesNotStartWith` .
 
    A janela **Gerenciador de Testes** mostra a mensagem produzida pelo assert: "Assert.IsFalse falhou. Esperado para 'Error': false, real: True". Devido à falha, nenhuma cadeia de caracteres na matriz após o "erro" foi testada.
 
    > [!div class="mx-imgBorder"]
-   > ![Janela do Gerenciador de testes mostrando a falha de asserção IsFalse](./media/testing-library-with-visual-studio/failed-test-detail.png)
+   > :::image type="content" source="./media/testing-library-with-visual-studio/failed-test-detail.png" alt-text="Janela do Gerenciador de testes mostrando a falha de asserção IsFalse":::
 
 1. Remova a cadeia de caracteres "Error" que você adicionou na etapa 1. Execute novamente o teste e os testes são aprovados.
 
@@ -178,19 +180,25 @@ Para testar a compilação de Lançamento:
 1. Na barra de ferramentas do Visual Studio, altere a configuração de compilação de **Depurar** para **Lançamento**.
 
    > [!div class="mx-imgBorder"]
-   > ![Barra de ferramentas do Visual Studio com build de versão realçado](./media/testing-library-with-visual-studio/visual-studio-toolbar-release.png)
+   > :::image type="content" source="./media/testing-library-with-visual-studio/visual-studio-toolbar-release.png" alt-text="Barra de ferramentas do Visual Studio com build de versão realçado":::
 
 1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto **StringLibrary** e selecione **Compilar** no menu de contexto para recompilar a biblioteca.
 
    > [!div class="mx-imgBorder"]
-   > ![Menu de contexto de StringLibrary com comando de build](./media/testing-library-with-visual-studio/build-library-context-menu.png)
+   > :::image type="content" source="./media/testing-library-with-visual-studio/build-library-context-menu.png" alt-text="Menu de contexto de StringLibrary com comando de build":::
 
 1. Execute os testes de unidade escolhendo **testar executar**  >  **todos os testes** na barra de menus. Os testes são aprovados.
+
+## <a name="debug-tests"></a>Depurar testes
+
+Se você estiver usando o Visual Studio como seu IDE, poderá usar o mesmo processo mostrado no [tutorial: Depurar um aplicativo de console .NET usando o Visual Studio](debugging-with-visual-studio.md) para depurar o código usando seu projeto de teste de unidade. Em vez de iniciar o projeto de aplicativo de *demonstração* , clique com o botão direito do mouse no projeto **StringLibraryTests** e selecione **depurar testes** no menu de contexto.
+
+O Visual Studio inicia o projeto de teste com o depurador anexado. A execução será interrompida em qualquer ponto de interrupção que você adicionou ao projeto de teste ou ao código de biblioteca subjacente.
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
 * [Noções básicas do teste de unidade – Visual Studio](/visualstudio/test/unit-test-basics)
-* [Teste de unidade no .NET Core e no .NET Standard](../testing/index.md)
+* [Teste de unidade no .NET](../testing/index.md)
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -207,4 +215,4 @@ Se você publicar uma biblioteca como um pacote NuGet, outras pessoas poderão i
 Uma biblioteca não precisa ser distribuída como um pacote. Ele pode ser agrupado com um aplicativo de console que o utiliza. Para saber como publicar um aplicativo de console, consulte o tutorial anterior nesta série:
 
 > [!div class="nextstepaction"]
-> [Publicar um aplicativo de console do .NET Core usando o Visual Studio](publishing-with-visual-studio.md)
+> [Publicar um aplicativo de console .NET usando o Visual Studio](publishing-with-visual-studio.md)

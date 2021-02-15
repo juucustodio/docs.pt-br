@@ -6,14 +6,15 @@ helpviewer_keywords:
 - binary serialization, steps
 - serialization, steps
 ms.assetid: 4bcbc883-2a91-418f-b968-6c86a25e9737
-ms.openlocfilehash: 1f749b9102182e78bc3fda436cf386a9f5759d5a
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: a22155f3e4cbf665e962ff79f92a6313eca7c223
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "83379095"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95734784"
 ---
 # <a name="steps-in-the-serialization-process"></a>Etapas do processo de serialização
+
 Quando o método <xref:System.Runtime.Serialization.Formatter.Serialize%2A> é chamado em um [formatador](xref:System.Runtime.Serialization.Formatter), a serialização do objeto procede de acordo com a seguinte sequência de regras:
 
 - Uma verificação é feita para determinar se o formatador tem um seletor substituto. Se tiver, verifique se o seletor substituto administra objetos do tipo determinado. Se o seletor manipular o tipo de objeto, <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=nameWithType> será chamado no seletor alternativo.
@@ -29,4 +30,4 @@ Quando o método <xref:System.Runtime.Serialization.Formatter.Serialize%2A> é c
 ## <a name="see-also"></a>Confira também
 
 - [Serialização binária](binary-serialization.md)
-- [Serialização de XML e SOAP](xml-and-soap-serialization.md)
+- [Serialização XML e SOAP](xml-and-soap-serialization.md)

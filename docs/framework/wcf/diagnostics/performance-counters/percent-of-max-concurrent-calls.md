@@ -1,16 +1,19 @@
 ---
+description: 'Saiba mais sobre: percentual de chamadas simultâneas máximas'
 title: Porcentagem de máximo de chamadas simultâneas
 ms.date: 03/30/2017
 ms.assetid: 22f18a91-1188-4c4e-9ad1-93f0dc180858
-ms.openlocfilehash: 252f987cb8ea0cc53a2dd7e39b4d4eeaf4d34980
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 2c030b6531aa2248169e91fa4c5f7af5cab8a6e0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61916208"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99655182"
 ---
 # <a name="percent-of-max-concurrent-calls"></a>Porcentagem de máximo de chamadas simultâneas
-Nome do contador: Porcentagem de máximo de chamadas simultâneas  
+
+Nome do contador: percentual de chamadas simultâneas máximas  
   
 ## <a name="description"></a>Descrição  
- O número de chamadas simultâneas, como uma porcentagem de máximo de chamadas simultâneas.
+
+ O número de chamadas simultâneas como uma porcentagem de chamadas simultâneas máximas.

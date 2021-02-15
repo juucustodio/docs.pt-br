@@ -5,12 +5,12 @@ ms.topic: reference
 ms.date: 06/01/2020
 ms.author: luquinta
 author: luisquintanilla
-ms.openlocfilehash: 8622b580b7925adfd7895317815021f57960e9ee
-ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
+ms.openlocfilehash: 1321967cacdd373acc19923f992d30c5453ea869
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86924572"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556213"
 ---
 # <a name="model-builder-azure-training-resources"></a>Recursos de treinamento do Azure do Model Builder
 
@@ -48,7 +48,7 @@ Para criar um espaço de trabalho Azure Machine Learning, são necessários os s
     | Standard_NC12   | 12 | 112 | 680  | 2 | 24 | 48 | 2 |
     | Standard_NC24   | 24 | 224 | 1440 | 4 | 48 | 64 | 4 |
 
-    Visite a [documentação da VM do Linux da série NC](https://docs.microsoft.com/azure/virtual-machines/nc-series?toc=/azure/virtual-machines/linux/toc.json&bc=/azure/virtual-machines/linux/breadcrumb/toc.json) para obter mais detalhes sobre tipos de computação otimizados para GPU.
+    Visite a [documentação da VM do Linux da série NC](/azure/virtual-machines/nc-series?bc=%252fazure%252fvirtual-machines%252flinux%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fvirtual-machines%252flinux%252ftoc.json) para obter mais detalhes sobre tipos de computação otimizados para GPU.
 - Prioridade de computação
 
   - Baixa prioridade: adequada para tarefas com tempos de execução mais curtos. Pode ser afetado por interrupções e falta de disponibilidade. Geralmente custa menos, pois aproveita a capacidade excedente no Azure.
@@ -76,7 +76,7 @@ As `ModelInput` `ModelOutput` classes e no projeto de *modelo* definem o esquema
 Em um cenário de classificação de imagem, o `ModelInput` contém duas colunas:
 
 - `ImageSource`: O caminho da cadeia de caracteres do local da imagem.
-- `Label`: A categoria real à qual a imagem pertence. `Label`é usado apenas como uma entrada quando o treinamento e não precisa ser fornecido ao fazer previsões.
+- `Label`: A categoria real à qual a imagem pertence. `Label` é usado apenas como uma entrada quando o treinamento e não precisa ser fornecido ao fazer previsões.
 
 O `ModelOutput` contém duas colunas:
 

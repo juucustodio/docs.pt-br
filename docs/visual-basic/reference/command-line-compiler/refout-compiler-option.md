@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-refout (Visual Basic)
 title: -refout
 ms.date: 03/16/2018
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - refout compiler option [Visual Basic]
 - /refout compiler option [Visual Basic]
 - -refout compiler option [Visual Basic]
-ms.openlocfilehash: 3649a24a52cc6a448ea7cf4d850915adf02147fb
-ms.sourcegitcommit: 17ee6605e01ef32506f8fdc686954244ba6911de
+ms.openlocfilehash: 2760f7e60d950aaff90becad843824a2e2b4379f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74348647"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100474116"
 ---
 # <a name="-refout-visual-basic"></a>-refout (Visual Basic)
 
@@ -29,17 +30,17 @@ A opção **-refout** especifica um caminho de arquivo em que o assembly de refe
 ## <a name="arguments"></a>Argumentos
 
 `filepath`  
-O caminho e o nome do arquivo do assembly de referência. Em geral, ele deve estar em uma subpasta do assembly primário. A convenção recomendada (usada pelo MSBuild) é colocar o assembly de referência em uma subpasta "ref/" em relação ao assembly principal. Todas as pastas `filepath` no devem existir; o compilador não os cria.
+O caminho e o nome do arquivo do assembly de referência. Em geral, ele deve estar em uma subpasta do assembly primário. A convenção recomendada (usada pelo MSBuild) é colocar o assembly de referência em uma subpasta "ref/" em relação ao assembly principal. Todas as pastas no `filepath` devem existir; o compilador não as cria.
 
 ## <a name="remarks"></a>Comentários
 
-Visual Basic dá suporte `-refout` à opção a partir da versão 15,3.
+Visual Basic dá suporte à `-refout` opção a partir da versão 15,3.
 
 Os assemblies de referência são um tipo especial de assembly que contém apenas a quantidade mínima de metadados necessários para representar a superfície da API pública da biblioteca. Eles incluem declarações para todos os membros que são significativos ao referenciar um assembly em ferramentas de compilação, mas excluem todas as implementações de membro e declarações de membros privados que não têm impacto observável em seu contrato de API. Para obter mais informações, consulte [Reference Assemblies](../../../standard/assembly/reference-assemblies.md) in .net Guide.
 
-As `-refout` opções [`-refonly`](refonly-compiler-option.md) e são mutuamente exclusivas.
+As `-refout` [`-refonly`](refonly-compiler-option.md) Opções e são mutuamente exclusivas.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [-refonly](refonly-compiler-option.md)
 - [Compilador de linha de comando do Visual Basic](index.md)

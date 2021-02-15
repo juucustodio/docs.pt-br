@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugILFrame3:: GetReturnValueForILOffset'
 title: Método ICorDebugILFrame3::GetReturnValueForILOffset
 ms.date: 03/30/2017
 dev_langs:
@@ -13,14 +14,15 @@ api_type:
 ms.assetid: 06522727-5f64-4391-9331-11386883c352
 topic_type:
 - apiref
-ms.openlocfilehash: f6a54ab9efa7ca97bcdb64afcde8812f2b5e44e9
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 4be4cb3a108394f2701f6690b06f6c2252ae25cd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83210066"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791264"
 ---
 # <a name="icordebugilframe3getreturnvalueforiloffset-method"></a>Método ICorDebugILFrame3::GetReturnValueForILOffset
+
 Obtém um objeto "ICorDebugValue" que encapsula o valor de retorno de uma função.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -33,6 +35,7 @@ HRESULT GetReturnValueForILOffset(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ILOffset`  
  O deslocamento de IL. Consulte a seção Comentários.  
   
@@ -40,6 +43,7 @@ HRESULT GetReturnValueForILOffset(
  Um ponteiro para o endereço de um objeto de interface "ICorDebugValue" que fornece informações sobre o valor de retorno de uma chamada de função.  
   
 ## <a name="remarks"></a>Comentários  
+
  Esse método é usado junto com o método [ICorDebugCode3:: GetReturnValueLiveOffset](icordebugcode3-getreturnvalueliveoffset-method.md) para obter o valor de retorno de um método. Ele é particularmente útil no caso de métodos cujos valores de retorno são ignorados, como nos dois exemplos de código a seguir. O primeiro exemplo chama o <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> método, mas ignora o valor de retorno do método.  
   
  [!code-csharp[Unmanaged.Debugging.MRV#1](../../../../samples/snippets/csharp/VS_Snippets_CLR/unmanaged.debugging.mrv/cs/mrv1.cs#1)]
@@ -62,6 +66,7 @@ HRESULT GetReturnValueForILOffset(
  O `ICorDebugILFrame3::GetReturnValueForILOffset` método está disponível apenas em sistemas baseados em x86 e amd64.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -70,7 +75,7 @@ HRESULT GetReturnValueForILOffset(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v451plus](../../../../includes/net-current-v451plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método GetReturnValueLiveOffset](icordebugcode3-getreturnvalueliveoffset-method.md)
 - [Interface ICorDebugILFrame3](icordebugilframe3-interface.md)

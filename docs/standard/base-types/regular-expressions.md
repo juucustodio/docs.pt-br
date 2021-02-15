@@ -1,8 +1,8 @@
 ---
 title: Expressões regulares do .NET
 description: Use expressões regulares para localizar padrões de caracteres específicos, validar texto, trabalhar com subcadeias de texto, & adicionar cadeias de caracteres extraídas a uma coleção no .NET.
+ms.topic: conceptual
 ms.date: 06/30/2020
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -13,20 +13,20 @@ helpviewer_keywords:
 - pattern-matching with regular expressions
 - searching with regular expressions
 - parsing text with regular expressions
-- regular expressions [.NET Framework], about regular expressions
-- regular expressions [.NET Framework]
-- .NET Framework regular expressions, about
-- characters [.NET Framework], regular expressions
+- regular expressions [.NET], about regular expressions
+- regular expressions [.NET]
+- .NET regular expressions, about
+- characters [.NET], regular expressions
 - parsing text with regular expressions, overview
-- .NET Framework regular expressions
-- strings [.NET Framework], regular expressions
+- .NET regular expressions
+- strings [.NET], regular expressions
 ms.assetid: 521b3f6d-f869-42e1-93e5-158c54a6895d
-ms.openlocfilehash: f57199c2ddf6569020554e74b6e70801844da641
-ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
+ms.openlocfilehash: ea6b16909b79236245b35238ad43d778eec3051a
+ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85802891"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98692767"
 ---
 # <a name="net-regular-expressions"></a>Expressões regulares do .NET
 
@@ -130,7 +130,7 @@ A classe <xref:System.String> inclui uma série de métodos de pesquisa de cadei
   
 ## <a name="related-topics"></a>Tópicos relacionados  
   
-|Title|Descrição|  
+|Título|Descrição|  
 |-----------|-----------------|  
 |[Linguagem de expressões regulares – referência rápida](regular-expression-language-quick-reference.md)|Oferece informações sobre o conjunto de caracteres, operadores e constructos que você pode usar para definir expressões regulares.|  
 |[O modelo de objeto de expressão regular](the-regular-expression-object-model.md)|Oferece informações e exemplos de código que ilustram como usar as classes de expressão regular.|  

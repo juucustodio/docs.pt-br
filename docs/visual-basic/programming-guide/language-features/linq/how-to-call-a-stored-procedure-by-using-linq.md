@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como: chamar um procedimento armazenado usando o LINQ (Visual Basic)'
 title: Como chamar um procedimento armazenado usando LINQ
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,15 +8,16 @@ helpviewer_keywords:
 - stored procedures [LINQ to SQL]
 - queries [LINQ in Visual Basic], how-to topics
 ms.assetid: 6436d384-d1e0-40aa-8afd-451007477260
-ms.openlocfilehash: b451642a16f36c4f7fd19c853fdfd2282f5bede5
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f6fca7ac008e5f0d5f68fdf9c192eaadae9412ef
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84405024"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100466322"
 ---
 # <a name="how-to-call-a-stored-procedure-by-using-linq-visual-basic"></a>Como chamar um procedimento armazenado usando LINQ (Visual Basic)
-A consulta integrada à linguagem (LINQ) facilita o acesso a informações do banco de dados, incluindo objetos de banco de dados, como procedimentos armazenados.  
+
+A consulta de Language-Integrated (LINQ) facilita o acesso a informações do banco de dados, incluindo objetos de banco de dados, como procedimentos armazenados.  
   
  O exemplo a seguir mostra como criar um aplicativo que chama um procedimento armazenado em um banco de dados SQL Server. O exemplo mostra como chamar dois procedimentos armazenados diferentes no banco de dados. Cada procedimento retorna os resultados de uma consulta. Um procedimento usa parâmetros de entrada e o outro procedimento não usa parâmetros.  
   
@@ -68,10 +70,10 @@ A consulta integrada à linguagem (LINQ) facilita o acesso a informações do ba
   
 4. Pressione F5 para executar o projeto e exibir os resultados.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ](index.md)
 - [Consultas](../../../language-reference/queries/index.md)
 - [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
-- [Métodos DataContext (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)
+- [Métodos de DataContext (Designer de Objeto Relacional)](/visualstudio/data-tools/datacontext-methods-o-r-designer)
 - [Como atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Designer Relacional de Objetos)](/visualstudio/data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer)

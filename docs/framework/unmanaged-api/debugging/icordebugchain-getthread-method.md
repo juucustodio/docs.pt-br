@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugChain:: GetThread'
 title: Método ICorDebugChain::GetThread
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: b3390319-6366-418c-ba80-b552ac4dfc1e
 topic_type:
 - apiref
-ms.openlocfilehash: 28b54026c8743f31a420e164944f60709e2e271b
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 090cb40c3681792ce4a30cd342e65dc02ac3f381
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82894363"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694911"
 ---
 # <a name="icordebugchaingetthread-method"></a>Método ICorDebugChain::GetThread
+
 Obtém o thread físico para o qual esta cadeia de chamadas faz parte.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,10 +36,12 @@ HRESULT GetThread (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ppThread`  
  fora Um ponteiro para um objeto ICorDebugThread que representa o thread físico para o qual esta cadeia de chamada faz parte.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

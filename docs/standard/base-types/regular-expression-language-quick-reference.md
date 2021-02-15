@@ -2,7 +2,7 @@
 title: Linguagem de expressões regulares – referência rápida
 description: Nesta referência rápida, aprenda a usar padrões de expressão regular para corresponder o texto de entrada. Um padrão tem um ou mais literais de caractere, operadores ou construções.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
+ms.topic: reference
 f1_keywords:
 - VS.RegularExpressionBuilder
 helpviewer_keywords:
@@ -11,16 +11,16 @@ helpviewer_keywords:
 - searching with regular expressions, language elements
 - pattern-matching with regular expressions, language elements
 - regular expressions, language elements
-- regular expressions [.NET Framework]
+- regular expressions [.NET]
 - cheat sheet
-- .NET Framework regular expressions, language elements
+- .NET regular expressions, language elements
 ms.assetid: 930653a6-95d2-4697-9d5a-52d11bb6fd4c
-ms.openlocfilehash: 4788c84be76a5cc9a9a6327fcd054e08db4d1872
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: f34d52bc2413aaf666c07ff511f3c1beb14519d4
+ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87556794"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98692819"
 ---
 # <a name="regular-expression-language---quick-reference"></a>Linguagem de expressões regulares – referência rápida
 
@@ -37,7 +37,7 @@ Também fornecemos essas informações em dois formatos que você pode baixar e 
 
 O caractere de barra invertida (\\) em uma expressão regular indica que o próximo caractere é um caractere especial (conforme mostrado na tabela a seguir) ou se deve ser interpretado literalmente. Para obter mais informações, consulte [Escapes de Caracteres](character-escapes-in-regular-expressions.md).
 
-|Caractere com escape|Descrição|Padrão|Correspondências|
+|Caractere com escape|Descrição|Padrão|Corresponde a|
 |-----------------------|-----------------|-------------|-------------|
 |`\a`|Corresponde a um caractere de sino, \u0007.|`\a`|`"\u0007"` em `"Error!" + '\u0007'`|
 |`\b`|Em uma classe de caractere, corresponde a um backspace, \ u0008.|`[\b]{3,}`|`"\b\b\b\b"` em `"\b\b\b\b"`|
@@ -47,9 +47,9 @@ O caractere de barra invertida (\\) em uma expressão regular indica que o próx
 |`\f`|Corresponde a um avanço de página, \u000C.|`[\f]{2,}`|`"\f\f\f"` em `"\f\f\f"`|
 |`\n`|Corresponde a uma nova linha, \u000A.|`\r\n(\w+)`|`"\r\nThese"` em `"\r\nThese are\ntwo lines."`|
 |`\e`|Corresponde a um escape, \u001B.|`\e`|`"\x001B"` em `"\x001B"`|
-|`\` *nnn*|Usa representação octal para especificar um caractere (*nnn* consiste em dois ou três dígitos).|`\w\040\w`|`"a b"` e `"c d"` em `"a bc d"`|
+|`\`*nnn*|Usa representação octal para especificar um caractere (*nnn* consiste em dois ou três dígitos).|`\w\040\w`|`"a b"` e `"c d"` em `"a bc d"`|
 |`\x` *nn*|Usa representação hexadecimal para especificar um caractere (*nn* consiste exatamente em dois dígitos).|`\w\x20\w`|`"a b"` e `"c d"` em `"a bc d"`|
-|`\c` *X*<br /><br /> `\c` *x*|Corresponde ao caractere de controle ASCII especificado por *X* ou *x*, em que *X* ou *x* é a letra do caractere de controle.|`\cC`|`"\x0003"` em `"\x0003"` (Ctrl-C)|
+|`\c`*X*<br /><br /> `\c` *x*|Corresponde ao caractere de controle ASCII especificado por *X* ou *x*, em que *X* ou *x* é a letra do caractere de controle.|`\cC`|`"\x0003"` em `"\x0003"` (Ctrl-C)|
 |`\u` *nnnn*|Corresponde a um caractere Unicode usando representação hexadecimal (exatamente quatro dígitos, como representado por *nnnn*).|`\w\u0020\w`|`"a b"` e `"c d"` em `"a bc d"`|
 |`\`|Quando seguido por um caractere que não é reconhecido como um caractere de escape nesta e em outras tabelas deste tópico, corresponde a esse caractere. Por exemplo, `\*` é igual a `\x2A`, e `\.` é igual a `\x2E`. Isso permite que o mecanismo de expressões regulares remova ambiguidades de elementos da linguagem (como \* ou ?) e caracteres literais (representados por `\*` ou `\?`).|`\d+[\+-x\*]\d+`|`"2+2"` e `"3*9"` em `"(2+2) * 3*9"`|
 
@@ -57,7 +57,7 @@ O caractere de barra invertida (\\) em uma expressão regular indica que o próx
 
 Uma classe de caractere corresponde a qualquer um dos conjuntos de caracteres. As classes de caracteres incluem os elementos de linguagem listados na tabela a seguir. Para saber mais, confira [Classes de caracteres](character-classes-in-regular-expressions.md).
 
-|Classe de caractere|Descrição|Padrão|Correspondências|
+|Classe de caractere|Descrição|Padrão|Corresponde a|
 |---------------------|-----------------|-------------|-------------|
 |`[`*character_group*`]`|Corresponde a qualquer caractere único em *character_group*. Por padrão, a correspondência diferencia maiúsculas de minúsculas.|`[ae]`|`"a"` em `"gray"`<br /><br /> `"a"` e `"e"` em `"lane"`|
 |`[^`*character_group*`]`|Negação: corresponde a qualquer caractere único que não esteja em *character_group*. Por padrão, caracteres em *character_group* diferenciam maiúsculas de minúsculas.|`[^aei]`|`"r"`, `"g"` e `"n"` em `"reign"`|
@@ -76,7 +76,7 @@ Uma classe de caractere corresponde a qualquer um dos conjuntos de caracteres. A
 
 Âncoras ou asserções atômicas de largura zero, fazem com que uma correspondência tenha êxito ou falha dependendo da posição atual na cadeia de caracteres, mas não fazem com que o mecanismo avance na cadeia de caracteres ou consuma caracteres. Os metacaracteres listados na tabela a seguir são âncoras. Para saber mais, confira [Âncoras](anchors-in-regular-expressions.md).
 
-|Asserção|Descrição|Padrão|Correspondências|
+|Asserção|Descrição|Padrão|Corresponde a|
 |---------------|-----------------|-------------|-------------|
 |`^`|Por padrão, a correspondência precisa começar no início da cadeia de caracteres. No modo multilinha, precisa começar no início da linha.|`^\d{3}`|`"901"` em `"901-333-"`|
 |`$`|Por padrão, a correspondência deve ocorrer no fim da cadeia de caracteres ou antes de `\n` no fim da cadeia de caracteres. No modo multilinha, deve antes do fim da linha ou antes de `\n` no fim da linha.|`-\d{3}$`|`"-333"` em `"-901-333"`|
@@ -91,7 +91,7 @@ Uma classe de caractere corresponde a qualquer um dos conjuntos de caracteres. A
 
 Os constructos de agrupamento delineiam subexpressões de uma expressão regular e, em geral, capturam subcadeias de caracteres de uma cadeia de caracteres de entrada. Os constructos de agrupamento incluem os elementos de linguagem listados na tabela a seguir. Para saber mais, confira [Constructos de agrupamento](grouping-constructs-in-regular-expressions.md).
 
-|Constructo de agrupamento|Descrição|Padrão|Correspondências|
+|Constructo de agrupamento|Descrição|Padrão|Corresponde a|
 |------------------------|-----------------|-------------|-------------|
 |`(`*subexpressão*`)`|Captura a subexpressão correspondente e atribui a ela um número ordinal com base um.|`(\w)\1`|`"ee"` em `"deep"`|
 |`(?<` *nome* `>` *subexpressão* `)`<br /> ou <br />`(?'` *nome* `'` *subexpressão* `)`|Captura a subexpressão correspondente em um grupo nomeado.|`(?<double>\w)\k<double>`|`"ee"` em `"deep"`|
@@ -108,7 +108,7 @@ Os constructos de agrupamento delineiam subexpressões de uma expressão regular
 
 Um quantificador especifica quantas instâncias do elemento anterior (que pode ser um caractere, um grupo ou uma classe de caracteres) devem estar presentes na cadeia de caracteres de entrada para que uma correspondência ocorra. Os quantificadores incluem os elementos de linguagem listados na tabela a seguir. Para saber mais, confira [Quantificadores](quantifiers-in-regular-expressions.md).
 
-|Quantificador|Descrição|Padrão|Correspondências|
+|Quantificador|Descrição|Padrão|Corresponde a|
 |----------------|-----------------|-------------|-------------|
 |`*`|Corresponde ao elemento anterior zero ou mais vezes.|`\d*\.\d`|`".0"`, `"19.9"`, `"219.9"`|
 |`+`|Corresponde ao elemento anterior uma ou mais vezes.|`"be+"`|`"bee"` em `"been"`, `"be"` em `"bent"`|
@@ -127,16 +127,16 @@ Um quantificador especifica quantas instâncias do elemento anterior (que pode s
 
 Um referência inversa permite que uma subexpressão correspondida anteriormente seja identificada posteriormente na mesma expressão regular. A tabela a seguir lista os constructos de referência inversa tem suporte nas expressões regulares do .NET. Para saber mais, confira [Constructos de referência inversa](backreference-constructs-in-regular-expressions.md).
 
-|Constructo de referência inversa|Descrição|Padrão|Correspondências|
+|Constructo de referência inversa|Descrição|Padrão|Corresponde a|
 |-----------------------------|-----------------|-------------|-------------|
-|`\` *número*|Referência inversa. Corresponde ao valor de uma subexpressão numerada.|`(\w)\1`|`"ee"` em `"seek"`|
+|`\` *number*|Referência inversa. Corresponde ao valor de uma subexpressão numerada.|`(\w)\1`|`"ee"` em `"seek"`|
 |`\k<`*nome* do`>`|Referência inversa nomeada. Corresponde ao valor de uma expressão nomeada.|`(?<char>\w)\k<char>`|`"ee"` em `"seek"`|
 
 ## <a name="alternation-constructs"></a>Construtores de alternância
 
 Os constructos de alternância modificam uma expressão regular para habilitar uma correspondência do tipo um/ou outro. Esses constructos incluem os elementos de linguagem listados na tabela a seguir. Para saber mais, confira [Constructos de alternância](alternation-constructs-in-regular-expressions.md).
 
-|Constructo de alternância|Descrição|Padrão|Correspondências|
+|Constructo de alternância|Descrição|Padrão|Corresponde a|
 |---------------------------|-----------------|-------------|-------------|
 |<code>&#124;</code>|Corresponde a qualquer elemento separado pelo caractere de barra vertical (<code>&#124;</code>).|<code>th(e&#124;is&#124;at)</code>|`"the"` e `"this"` em `"this is the day."`|
 |`(?(`*expressão* `)` de *Sim* <code>&#124;</code> *não*`)`|Corresponde a *yes* se o padrão de expressão regular designado por *expression* for correspondente. Do contrário, corresponde à parte *no* opcional. *expressão* é interpretado como uma asserção de largura zero.|<code>(?(A)A\d{2}\b&#124;\b\d{3}\b)</code>|`"A10"` e `"910"` em `"A10 C103 910"`|
@@ -148,7 +148,7 @@ As substituições são elementos de linguagem de expressões regulares com supo
 
 |Caractere|Descrição|Padrão|Padrão de substituição|Cadeia de caracteres de entrada|Cadeia de caracteres de resultado|
 |---------------|-----------------|-------------|-------------------------|------------------|-------------------|
-|`$` *número*|Substitui a subcadeia de caracteres correspondida pelo grupo *number*.|`\b(\w+)(\s)(\w+)\b`|`$3$2$1`|`"one two"`|`"two one"`|
+|`$` *number*|Substitui a subcadeia de caracteres correspondida pelo grupo *number*.|`\b(\w+)(\s)(\w+)\b`|`$3$2$1`|`"one two"`|`"two one"`|
 |`${`*nome* do`}`|Substitui a substring de caracteres correspondida pelo grupo chamado *nome*.|`\b(?<word1>\w+)(\s)(?<word2>\w+)\b`|`${word2} ${word1}`|`"one two"`|`"two one"`|
 |`$$`|Substitui um literal "$".|`\b(\d+)\s?USD`|`$$$1`|`"103 USD"`|`"$103"`|
 |`$&`|Substitui uma cópia da correspondência inteira.|`\$?\d*\.?\d+`|`**$&**`|`"$1.30"`|`"**$1.30**"`|
@@ -164,11 +164,11 @@ Você pode especificar opções que controlam como o mecanismo de expressões re
 É possível especificar uma opção embutida de duas formas:
 
 - Usando o [constructo diverso](miscellaneous-constructs-in-regular-expressions.md) `(?imnsx-imnsx)`, em que um sinal de subtração (-) antes de uma opção ou um conjunto de opções desativa essas opções. Por exemplo, `(?i-mn)` ativa a correspondência sem diferenciação de maiúsculas e minúsculas (`i`), desativa o modo de várias linhas (`m`) e desativa capturas de grupo sem nome (`n`). A opção se aplica ao padrão de expressão regular no ponto em que a opção é definida e entra em vigor no final do padrão ou no ponto em que outro constructo inverte a opção.
-- Usando a subexpressão de [construção de agrupamento](grouping-constructs-in-regular-expressions.md) `(?imnsx-imnsx:` *subexpression* `)` , que define as opções somente para o grupo especificado.
+- Usando a subexpressão de [construção de agrupamento](grouping-constructs-in-regular-expressions.md) `(?imnsx-imnsx:`  `)` , que define as opções somente para o grupo especificado.
 
 O mecanismo de expressões regulares do .NET oferece suporte às seguintes opções embutidas:
 
-|Opção|DESCRIÇÃO|Padrão|Correspondências|
+|Opção|Descrição|Padrão|Corresponde a|
 |------------|-----------------|-------------|-------------|
 |`i`|Use correspondência sem diferenciação de maiúsculas e minúsculas.|`\b(?i)a(?-i)a\w+\b`|`"aardvark"` e `"aaaAuto"` em `"aardvark AAAuto aaaAuto Adam breakfast"`|
 |`m`|Use o modo multilinha. `^` e `$` correspondem ao início e ao fim de uma linha em vez do início e fim de uma cadeia de caracteres.|Para obter um exemplo, consulte a seção "modo multilinha" em [Opções de expressão regular](regular-expression-options.md).||
@@ -186,11 +186,11 @@ Os constructos diversos modificam um expressão regular padrão ou fornecem info
 |`(?#`*Comentário*`)`|Comentário embutido. O comentário é encerrado no primeiro caractere de fechar parênteses.|`\bA(?#Matches words starting with A)\w+\b`|
 |`#` [até o final da linha]|Comentário do modo X. O comentário começa em um `#` sem escape e continua até o final da linha.|`(?x)\bA\w+\b#Matches words starting with A`|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Text.RegularExpressions?displayProperty=nameWithType>
 - <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>
-- [Expressões regulares](regular-expressions.md)
+- [Regular Expressions](regular-expressions.md)
 - [Classes de expressões regulares](the-regular-expression-object-model.md)
 - [Expressões regulares - referência rápida (fazer download no formato Word)](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)
 - [Expressões regulares - referência rápida (fazer download no formato PDF)](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)

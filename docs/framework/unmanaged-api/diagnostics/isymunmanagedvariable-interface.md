@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ISymUnmanagedVariable'
 title: Interface ISymUnmanagedVariable
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 704c69ba-77bc-40d7-8c0c-400061686321
 topic_type:
 - apiref
-ms.openlocfilehash: d05d4451e8fb75829b22e0a1b9c9afcb0607eb8b
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 15b6c7018f92ad4c82abb9e5b4e52bf428b3f54b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83610165"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762689"
 ---
 # <a name="isymunmanagedvariable-interface"></a>Interface ISymUnmanagedVariable
+
 Representa uma variável, como um parâmetro, uma variável local ou um campo.  
   
 ## <a name="methods"></a>Métodos  
@@ -39,8 +41,9 @@ Representa uma variável, como um parâmetro, uma variável local ou um campo.
 |[Método GetStartOffset](isymunmanagedvariable-getstartoffset-method.md)|Obtém o deslocamento inicial dessa variável dentro de seu pai.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de armazenamento de símbolo de diagnóstico](diagnostics-symbol-store-interfaces.md)

@@ -1,21 +1,23 @@
 ---
+description: 'Saiba mais sobre: regras para inferir tipos simples'
 title: Regras para inferir tipos simples
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 ms.assetid: 394624d6-4da0-430a-8a88-46efe40f14de
-ms.openlocfilehash: 571019d13433312a5d31f581c3527aae901bbba7
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 4b7c212f262d3c24a3bd4e677ee04bd169c6dd3e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84289064"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783008"
 ---
 # <a name="rules-for-inferring-simple-types"></a>Regras para inferir tipos simples
+
 Descreve como a classe de <xref:System.Xml.Schema.XmlSchemaInference> infere o tipo de dados para atributos e elementos.  
   
  A classe de <xref:System.Xml.Schema.XmlSchemaInference> infere o tipo de dados para atributos e elementos como tipos simples. Esta seção descreve os tipos inferidos possivelmente, como os valores de diferentes de vários são reconciliados a um único tipo, e como esquema- definindo atributos de `xsi` são tratados.  
   
 ## <a name="inferred-types"></a>Tipos inferidos  
+
  A classe de <xref:System.Xml.Schema.XmlSchemaInference> infere valores de elemento e atributo como tipos simples e inclui um atributo de tipo no esquema resultante. Todos os tipos são inferidos tipos simples. Qualquer tipo base ou aspecto são incluído como parte do esquema resultante.  
   
  Os valores são examinados individualmente que são encontrados no documento XML. O tipo é inferido para um valor então é examinado. Se um tipo é inferido de um atributo ou um elemento, e um valor para o atributo ou o elemento está localizado que não corresponde ao tipo atualmente inferido, a classe de <xref:System.Xml.Schema.XmlSchemaInference> eleva tipo para cada um de um conjunto de regras. Essas regras são discutidas na seção da promoção de tipos, posterior neste tópico.  
@@ -33,7 +35,7 @@ Descreve como a classe de <xref:System.Xml.Schema.XmlSchemaInference> infere o t
 |unsignedInt|Inteiros no intervalo de 0 a 4294967295.|  
 |long|Inteiros no intervalo de – 9223372036854775808 a 9223372036854775807.|  
 |unsignedLong|Inteiros no intervalo de 0 a 18446744073709551615.|  
-|inteiro|Um número de dígitos finito prefixados possivelmente com “-”.|  
+|Número inteiro|Um número de dígitos finito prefixados possivelmente com “-”.|  
 |decimal|Valores numéricos que contêm 0 a 28 dígitos de precisão.|  
 |FLOAT|Os decimais opcionalmente seguido por “E” ou “e” tiver usado por um valor inteiro que representa o expoente. Os valores decimais podem estar no intervalo de -16777216 a 16777216. Os valores do expoente podem estar no intervalo de – 149 a 104.<br /><br /> O flutuante permite valores especiais representar a infinito e não valores numéricos. Os valores especiais para o flutuante são: 0, -0, INF, - INF, NaN.|  
 |double|O mesmo como flutuam exceto valores decimais podem estar no intervalo de -9007199254740992 a 9007199254740992, e o expoente valor podem estar no intervalo de – 1075 a 970.<br /><br /> O tipo double permite valores especiais representar a infinito e não valores numéricos. Os valores especiais para o flutuante são: 0, -0, INF, - INF, NaN.|  
@@ -45,6 +47,7 @@ Descreve como a classe de <xref:System.Xml.Schema.XmlSchemaInference> infere o t
 |string|Um ou mais caracteres Unicode.|  
   
 ## <a name="type-promotion"></a>Promoção de tipos  
+
  A classe de <xref:System.Xml.Schema.XmlSchemaInference> examina valores de atributo e de um elemento de cada vez. Como valores são encontrados, o tipo mais restritivo, o mais sem sinal é inferido. Se um tipo é inferido de um atributo ou um elemento, e um novo valor está localizado que não corresponde ao tipo atualmente inferido, o tipo é inferido alto para um novo tipo que se aplica a ambos tipo atualmente inferido e o novo valor. A classe de <xref:System.Xml.Schema.XmlSchemaInference> considera valores anteriores para elevar o tipo inferido.  
   
  Por exemplo, considere os seguintes fragmentos XML de dois documentos XML:  
@@ -74,7 +77,7 @@ Os seguintes esquema- está definindo os atributos que são ignorados durante a 
 |`xsi:schemaLocation`|Se `xsi:schemaLocation` é encontrado, será ignorado.|  
 |`xsi:noNamespaceSchemaLocation`|Se `xsi:noNamespaceSchemaLocation` é encontrado, será ignorado.|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [SOM (Schema Object Model) XML](xml-schema-object-model-som.md)
 - [Inferindo esquemas de documentos XML](inferring-schemas-from-xml-documents.md)

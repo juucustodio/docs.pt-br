@@ -9,12 +9,12 @@ helpviewer_keywords:
 - main compiler option [C#]
 - /main compiler option [C#]
 ms.assetid: 975cf4d5-36ac-4530-826c-4aad0c7f2049
-ms.openlocfilehash: 61e63de8082a335b448ffee1ae35170d3a1cf6b4
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: c27898de2a7cc2f3c01c51f8de1122e81b2233b4
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125261"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91194109"
 ---
 # <a name="-main-c-compiler-options"></a>-main (opções do compilador C#)
 
@@ -27,6 +27,7 @@ Esta opção especifica a classe que contém o ponto de entrada para o programa,
 ```
 
 ## <a name="arguments"></a>Argumentos
+
  `class`  
  O tipo que contém o método **Main**.  
  O nome de classe informado deve ser totalmente qualificado. Ele deve incluir o namespace completo que contém a classe, seguido do nome de classe. Por exemplo, quando o método `Main` é localizado dentro da classe `Program` no namespace `MyApplication.Core`, a opção do compilador deve ser `-main:MyApplication.Core.Program`.
@@ -66,7 +67,7 @@ Compile `t2.cs` e `t3.cs`, especificando que o método **Main** será encontrado
 csc t2.cs t3.cs -main:Test2
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-- [Opções do compilador C#](./index.md)
+- [Opções do compilador de C#](./index.md)
 - [Gerenciando propriedades de solução e de projeto](/visualstudio/ide/managing-project-and-solution-properties)

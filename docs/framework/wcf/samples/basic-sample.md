@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: exemplo básico'
 title: Exemplo básico
 ms.date: 03/30/2017
 ms.assetid: c1910bc1-3d0a-4fa6-b12a-4ed6fe759620
-ms.openlocfilehash: db560ec7dea3912ecec8d84943cc9a01512d1f33
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 064c3d616a911f789050ccd5da433ed10fcfb596
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84575765"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99778822"
 ---
 # <a name="basic-sample"></a>Exemplo básico
 
@@ -89,9 +90,9 @@ static void InvokeCalculatorService(ServiceEndpoint serviceEndpoint)
 
 2. Usando o Visual Studio 2012, abra o Basic. sln e compile o exemplo.
 
-3. Execute o aplicativo Service. exe.
+3. Execute o aplicativo service.exe.
 
-4. Depois que o serviço for iniciado, execute o Client. exe.
+4. Depois que o serviço for iniciado, execute o client.exe.
 
 5. Observe que o cliente conseguiu encontrar o serviço sem saber seu endereço.
 

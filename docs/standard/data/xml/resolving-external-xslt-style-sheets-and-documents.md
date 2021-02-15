@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: resolvendo documentos e folhas de estilo XSLT externos'
 title: Resolvendo folhas de estilos XSLT e documentos externos
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 ms.assetid: 920cfe3b-d525-4bb2-abf6-9431651f9cf9
-ms.openlocfilehash: 8e7f66d67f2520b47c30307a98ed2f3fb08455df
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: f95714b918429d48b88cfca7f49bef611a1efebd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291468"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783047"
 ---
 # <a name="resolving-external-xslt-style-sheets-and-documents"></a>Resolvendo folhas de estilos XSLT e documentos externos
+
 Há várias vezes durante uma transformação quando você precise resolver recursos externos.  
   
 > [!NOTE]
@@ -25,6 +26,7 @@ Há várias vezes durante uma transformação quando você precise resolver recu
 - Durante <xref:System.Xml.Xsl.XslTransform.Transform%2A> para resolver algumas funções de `document()` .  
   
 ## <a name="using-the-xmlresolver-class"></a>Usando a classe de XmlResolver  
+
  Se a autenticação for necessária para acessar um recurso de rede, use os métodos de <xref:System.Xml.Xsl.XslTransform.Load%2A> que têm um parâmetro de <xref:System.Xml.XmlResolver> para passar o objeto de <xref:System.Xml.XmlResolver> , que tem as propriedades credenciais necessárias definidas.  
   
  Se você tiver <xref:System.Xml.XmlResolver> personalizado que você deseja usar, ou se você precisar especificar credenciais diferentes, a tabela a seguir lista a tarefa necessária, como quando o recurso externo precisar a resolução.  
@@ -41,14 +43,14 @@ Há várias vezes durante uma transformação quando você precise resolver recu
   
  Quando o método de <xref:System.Xml.Xsl.XslTransform.Transform%2A> é chamado, as permissões são calculadas com a evidência fornecida em tempo de carregamento, e esse conjunto de permissões é atribuído ao processo inteiro de transformação. Se a função de `document()` tentar iniciar uma ação que requer permissões não encontradas no dataset, uma exceção é lançada.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Transformações XSLT com a classe XslTransform](xslt-transformations-with-the-xsltransform-class.md)
 - [A classe XslTransform implementa do processador XSLT](xsltransform-class-implements-the-xslt-processor.md)
 - [Saída de um XslTransform](outputs-from-an-xsltransform.md)
 - [Transformações XSLT sobre diferentes armazena](xslt-transformations-over-different-stores.md)
 - [XsltArgumentList para parâmetros de folha de estilos e objetos de extensão](xsltargumentlist-for-style-sheet-parameters-and-extension-objects.md)
-- [Script de folha de estilos XSLT usando\<msxsl:script>](xslt-stylesheet-scripting-using-msxsl-script.md)
+- [Script de folha de estilos XSLT usando \<msxsl:script>](xslt-stylesheet-scripting-using-msxsl-script.md)
 - [Suporte à função msxsl:node-set()](support-for-the-msxsl-node-set-function.md)
 - [XPathNavigator nas transformações](xpathnavigator-in-transformations.md)
 - [XPathNodeIterator nas transformações](xpathnodeiterator-in-transformations.md)

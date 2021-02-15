@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICatalogServices'
 title: Interface ICatalogServices
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: f0d7e49b-2394-4ae0-8820-1b64cae0cfe8
 topic_type:
 - apiref
-ms.openlocfilehash: b3c5fc4731029561129609601b8e0635f6a9516c
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 579ad06e3388c6b7397b68e95fd8f9a2d4d2f29f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83617029"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781903"
 ---
 # <a name="icatalogservices-interface"></a>Interface ICatalogServices
+
 Fornece métodos para catalogar serviços.  
   
  Essa interface oferece suporte a infraestrutura do .NET Framework e não se destina a ser usada diretamente do seu código.  
@@ -33,6 +35,6 @@ Fornece métodos para catalogar serviços.
 |[Método Autodone](icatalogservices-autodone-method.md)|Reservado apenas para uso interno.|  
 |[Método NotAutodone](icatalogservices-notautodone-method.md)|Reservado apenas para uso interno.|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de hospedagem](hosting-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugFunction2:: EnumerateNativeCode'
 title: Método ICorDebugFunction2::EnumerateNativeCode
 ms.date: 03/30/2017
 api_name:
@@ -15,20 +16,21 @@ helpviewer_keywords:
 ms.assetid: d383f5cc-1144-4b6d-b57a-db34d9134ab2
 topic_type:
 - apiref
-ms.openlocfilehash: d5b24ee02a682b38dcf0cb3449f0dff197e91bf9
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 617d6dbfdb596df192e2722a47d81517ae57ac1f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73137826"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99692245"
 ---
 # <a name="icordebugfunction2enumeratenativecode-method"></a>Método ICorDebugFunction2::EnumerateNativeCode
+
 Obtém um ponteiro de interface para um objeto ICorDebugCodeEnum que contém as instruções de código nativo na função referenciada por este objeto ICorDebugFunction2.  
   
 > [!NOTE]
-> `EnumerateNativeCode` não está implementado na versão atual do .NET Framework.  
+> `EnumerateNativeCode` Não está implementado na versão atual do .NET Framework.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT EnumerateNativeCode (  
@@ -37,4 +39,5 @@ HRESULT EnumerateNativeCode (
 ```  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorDebug.idl, CorDebug.h

@@ -1,13 +1,13 @@
 ---
 title: Correspondência padrão
 description: 'Saiba como os padrões são usados em F # para comparar dados com estruturas lógicas, decompor dados em partes constituintes ou extrair informações de dados.'
-ms.date: 08/15/2020
-ms.openlocfilehash: 6d284b941824bc15a8e872a4e28e22c0e159191d
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.date: 11/12/2020
+ms.openlocfilehash: 932f50b7947f6df728149437dd3ceb19c42e5c6a
+ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88811503"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96740270"
 ---
 # <a name="pattern-matching"></a>Correspondência padrão
 
@@ -33,7 +33,7 @@ Os padrões com suporte são mostrados na tabela a seguir. Em tempo de execuçã
 |----|-----------|-------|
 |Padrão de constante|Qualquer literal numérico, de caractere ou de cadeia de caracteres, uma constante de enumeração ou um identificador literal definido|`1.0`, `"test"`, `30`, `Color.Red`|
 |Padrão de identificador|Um valor de case de uma união discriminada, um rótulo de exceção ou um caso de padrão ativo|`Some(x)`<br /><br />`Failure(msg)`|
-|Padrão de variável|*ID*|`a`|
+|Padrão de variável|*identifier*|`a`|
 |`as` padrão|*padrão* como *identificador*|`(a, b) as tuple1`|
 |OU padrão|*pattern1* &#124; *pattern2*|<code>([h] &#124; [h; _])</code>|
 |E padrão|*pattern1* &amp; *pattern2*|`(a, b) & (_, "test")`|
@@ -47,6 +47,7 @@ Os padrões com suporte são mostrados na tabela a seguir. Em tempo de execuçã
 |Padrão junto com a anotação de tipo|*padrão* : *tipo*|`a : int`|
 |Padrão de teste de tipo|:? *tipo* [como *identificador* ]|`:? System.DateTime as dt`|
 |Padrão nulo|null|`null`|
+|Padrão nameof|*expr nameof*|`nameof str`|
 
 ## <a name="constant-patterns"></a>Padrões constantes
 
@@ -87,8 +88,8 @@ Você pode usar os campos nomeados em uma expressão de correspondência de padr
 ```fsharp
 let matchShape shape =
     match shape with
-    | Rectangle(height = h) -> printfn "Rectangle with length %f" h
-    | Circle(r) -> printfn "Circle with radius %f" r
+    | Rectangle(height = h) -> printfn $"Rectangle with length %f{h}"
+    | Circle(r) -> printfn $"Circle with radius %f{r}"
 ```
 
 O uso do campo nomeado é opcional, portanto, no exemplo anterior, ambos `Circle(r)` e `Circle(radius = r)` têm o mesmo efeito.
@@ -97,7 +98,7 @@ Quando você especifica vários campos, use o ponto-e-vírgula (;) como um separ
 
 ```fsharp
 match shape with
-| Rectangle(height = h; width = w) -> printfn "Rectangle with height %f and width %f" h w
+| Rectangle(height = h; width = w) -> printfn $"Rectangle with height %f{h} and width %f{w}"
 | _ -> ()
 ```
 
@@ -139,7 +140,7 @@ O exemplo a seguir é como `detectZeroTuple` mostrado na seção padrão de tupl
 
 ## <a name="cons-pattern"></a>Padrão de contras
 
-O padrão de contras de contras é usado para decompor uma lista no primeiro elemento, no *cabeçalho*e em uma lista que contém os elementos restantes, a *parte final*.
+O padrão de contras de contras é usado para decompor uma lista no primeiro elemento, no *cabeçalho* e em uma lista que contém os elementos restantes, a *parte final*.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet4809.fs)]
 
@@ -214,6 +215,22 @@ O padrão nulo corresponde ao valor nulo que pode aparecer quando você está tr
 O exemplo a seguir usa o padrão nulo e o padrão de variável.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet4817.fs)]
+
+## <a name="nameof-pattern"></a>Padrão nameof
+
+O `nameof` padrão corresponde a uma cadeia de caracteres quando seu valor é igual à expressão que segue a `nameof` palavra-chave. Por exemplo:
+
+```fsharp
+let f (str: string) =
+    match str with
+    | nameof str -> "It's 'str'!"
+    | _ -> "It is not 'str'!"
+
+f "str" // matches
+f "asdf" // does not match
+```
+
+Consulte o [`nameof`](nameof.md) operador para obter informações sobre o que você pode obter um nome.
 
 ## <a name="see-also"></a>Confira também
 

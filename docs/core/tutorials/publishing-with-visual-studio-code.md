@@ -1,29 +1,29 @@
 ---
-title: Publicar um aplicativo de console do .NET Core usando Visual Studio Code
-description: A publicação cria o conjunto de arquivos necessários para executar um aplicativo .NET Core.
-ms.date: 07/04/2020
-ms.openlocfilehash: 79c69546b79de3d702fb4bb6550e615d8d59fa74
-ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
+title: Publicar um aplicativo de console .NET usando Visual Studio Code
+description: Saiba como usar Visual Studio Code e a CLI do .NET para criar o conjunto de arquivos necessários para executar um aplicativo .NET.
+ms.date: 11/17/2020
+ms.openlocfilehash: 9cfe490203d2d3254103ad2f0a4c4ff74972ec64
+ms.sourcegitcommit: 5114e7847e0ff8ddb8c266802d47af78567949cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2020
-ms.locfileid: "89495519"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94915876"
 ---
-# <a name="tutorial-publish-a-net-core-console-application-using-visual-studio-code"></a>Tutorial: publicar um aplicativo de console do .NET Core usando Visual Studio Code
+# <a name="tutorial-publish-a-net-console-application-using-visual-studio-code"></a>Tutorial: publicar um aplicativo de console .NET usando o Visual Studio Code
 
 Este tutorial mostra como publicar um aplicativo de console para que outros usuários possam executá-lo. A publicação cria o conjunto de arquivos necessários para executar um aplicativo. Para implantar os arquivos, copie-os para o computador de destino.
 
-O CLI do .NET Core é usado para publicar o aplicativo, para que você possa seguir este tutorial com um editor de código diferente de Visual Studio Code se preferir.
+A CLI do .NET é usada para publicar o aplicativo, para que você possa seguir este tutorial com um editor de código diferente de Visual Studio Code se preferir.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- Este tutorial funciona com o aplicativo de console que você cria em [criar um aplicativo de console do .NET Core usando Visual Studio Code](with-visual-studio-code.md).
+- Este tutorial funciona com o aplicativo de console que você cria em [criar um aplicativo de console .NET usando Visual Studio Code](with-visual-studio-code.md).
 
 ## <a name="publish-the-app"></a>Publicar o aplicativo
 
-1. Iniciar o Visual Studio Code.
+1. Inicie o Visual Studio Code.
 
-1. Abra a pasta do projeto *HelloWorld* que você criou em [criar um aplicativo de console do .net Core usando Visual Studio Code](with-visual-studio-code.md).
+1. Abra a pasta do projeto *HelloWorld* que você criou em [criar um aplicativo de console .NET usando Visual Studio Code](with-visual-studio-code.md).
 
 1. Escolha **Exibir**  >  **terminal** no menu principal.
 
@@ -50,13 +50,13 @@ O CLI do .NET Core é usado para publicar o aplicativo, para que você possa seg
 
 ## <a name="inspect-the-files"></a>Inspecionar os arquivos
 
-Por padrão, o processo de publicação cria uma implantação dependente de estrutura, que é um tipo de implantação em que o aplicativo publicado é executado em um computador que tem o tempo de execução do .NET Core instalado. Para executar o aplicativo publicado, você pode usar o arquivo executável ou executar o `dotnet HelloWorld.dll` comando em um prompt de comando.
+Por padrão, o processo de publicação cria uma implantação dependente de estrutura, que é um tipo de implantação em que o aplicativo publicado é executado em um computador que tem o tempo de execução do .NET instalado. Para executar o aplicativo publicado, você pode usar o arquivo executável ou executar o `dotnet HelloWorld.dll` comando em um prompt de comando.
 
 Nas etapas a seguir, você examinará os arquivos criados pelo processo de publicação.
 
 1. Selecione o **Gerenciador** na barra de navegação à esquerda.
 
-1. Expanda *bin/Release/netcoreapp 3.1/publicar*.
+1. Expanda *compartimento/versão/rede 5.0/publicar*.
 
    :::image type="content" source="media/publishing-with-visual-studio-code/published-files-output.png" alt-text="Explorer mostrando arquivos publicados":::
 
@@ -64,11 +64,11 @@ Nas etapas a seguir, você examinará os arquivos criados pelo processo de publi
 
    * *HelloWorld.deps.json*
 
-      Este é o arquivo de dependências de tempo de execução do aplicativo. Ele define os componentes do .NET Core e as bibliotecas (incluindo a biblioteca de vínculo dinâmico que contém seu aplicativo) necessárias para executar o aplicativo. Para obter mais informações, consulte [arquivos de configuração de tempo de execução](https://github.com/dotnet/cli/blob/85ca206d84633d658d7363894c4ea9d59e515c1a/Documentation/specs/runtime-configuration-file.md).
+      Este é o arquivo de dependências de tempo de execução do aplicativo. Ele define os componentes .NET e as bibliotecas (incluindo a biblioteca de vínculo dinâmico que contém seu aplicativo) necessárias para executar o aplicativo. Para obter mais informações, consulte [arquivos de configuração de tempo de execução](https://github.com/dotnet/cli/blob/85ca206d84633d658d7363894c4ea9d59e515c1a/Documentation/specs/runtime-configuration-file.md).
 
    * *HelloWorld.dll*
 
-      Esta é a versão de [implantação dependente de estrutura](../deploying/deploy-with-cli.md#framework-dependent-deployment) do aplicativo. Para executar essa biblioteca de vínculo dinâmico, digite `dotnet HelloWorld.dll` em um prompt de comando. Esse método de execução do aplicativo funciona em qualquer plataforma que tenha o tempo de execução do .NET Core instalado.
+      Esta é a versão de [implantação dependente de estrutura](../deploying/deploy-with-cli.md#framework-dependent-deployment) do aplicativo. Para executar essa biblioteca de vínculo dinâmico, digite `dotnet HelloWorld.dll` em um prompt de comando. Esse método de execução do aplicativo funciona em qualquer plataforma que tenha o tempo de execução do .NET instalado.
 
    * *HelloWorld.exe* (*HelloWorld* no Linux, não criado no MacOS).
 
@@ -80,7 +80,7 @@ Nas etapas a seguir, você examinará os arquivos criados pelo processo de publi
 
    * *HelloWorld.runtimeconfig.json*
 
-      Este é o arquivo de configuração de tempo de execução do aplicativo. Identifica a versão do .NET Core com base na qual o aplicativo foi criado para ser executado. Você também pode adicionar opções de configuração a ela. Para obter mais informações, consulte [definições de configuração de tempo de execução do .NET Core](../run-time-config/index.md#runtimeconfigjson).
+      Este é o arquivo de configuração de tempo de execução do aplicativo. Ele identifica a versão do .NET na qual seu aplicativo foi criado para ser executado. Você também pode adicionar opções de configuração a ela. Para obter mais informações, consulte [definições de configuração de tempo de execução do .net](../run-time-config/index.md#runtimeconfigjson).
 
 ## <a name="run-the-published-app"></a>Executar o aplicativo publicado
 
@@ -104,11 +104,11 @@ Nas etapas a seguir, você examinará os arquivos criados pelo processo de publi
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
-- [Implantação de aplicativo .NET Core](../deploying/index.md)
+- [Implantação de aplicativos .NET](../deploying/index.md)
 
 ## <a name="next-steps"></a>Próximas etapas
 
 Neste tutorial, você publicou um aplicativo de console. No próximo tutorial, você criará uma biblioteca de classes.
 
 > [!div class="nextstepaction"]
-> [Criar uma biblioteca de .NET Standard usando Visual Studio Code](library-with-visual-studio-code.md)
+> [Criar uma biblioteca de classes .NET usando Visual Studio Code](library-with-visual-studio-code.md)

@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: f99e2f93-fca5-403f-8a0c-770761d4905a
-ms.openlocfilehash: 0d6aa3319efb42b467782c8f09947bdae9657ab5
-ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
+ms.openlocfilehash: 0bf4a2f2c1db420492939351795e3b66b9e0b6b7
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89551849"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90547304"
 ---
 # <a name="how-to-filter-on-an-optional-element-linq-to-xml"></a>Como filtrar em um elemento opcional (LINQ to XML)
 
@@ -181,7 +181,7 @@ Child Four Text
 - <xref:System.Xml.Linq.Extensions.Elements%2A?displayProperty=nameWithType>
 - [Visão geral de operadores de consulta padrão (C#)](../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
 - [Operações de projeção (C#)](../../csharp/programming-guide/concepts/linq/projection-operations.md)
-- [Consultas básicas (LINQ to XML) (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)
+- [Consultas básicas (LINQ to XML) (Visual Basic)](./find-element-specific-attribute.md)
 - [Propriedade do eixo filho XML (Visual Basic)](../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md)
 - [Propriedade de eixo do atributo XML (Visual Basic)](../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)
 - [Propriedade do Valor XML](../../visual-basic/language-reference/xml-axis/xml-value-property.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugThread:: GetHandle'
 title: Método ICorDebugThread::GetHandle
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 172ef8c4-2ead-4cfc-bd2e-dee4fb7191cd
 topic_type:
 - apiref
-ms.openlocfilehash: 16aafa439fc81c3606f98ca2ba860316ec46e0db
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 378bb395e56f0fc287a480d67d2047e082d0796f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379746"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99659095"
 ---
 # <a name="icordebugthreadgethandle-method"></a>Método ICorDebugThread::GetHandle
+
 Obtém o identificador atual da parte ativa deste ICorDebugThread.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,15 +36,18 @@ HRESULT GetHandle (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `phThreadHandle`  
  fora Um ponteiro para um HTHREAD que é o identificador da parte ativa deste thread.  
   
 ## <a name="remarks"></a>Comentários  
+
  O identificador pode ser alterado conforme o processo é executado e pode ser diferente para partes diferentes do thread.  
   
  Esse identificador é de propriedade da API de depuração. O depurador deve duplicá-lo antes de usá-lo.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

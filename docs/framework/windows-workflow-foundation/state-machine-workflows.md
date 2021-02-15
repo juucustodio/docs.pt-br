@@ -3,17 +3,19 @@ title: Fluxos de trabalho do computador de estado
 description: Este artigo fornece uma visão geral da criação de fluxos de trabalho de máquina de estado usando a atividade StateMachine.
 ms.date: 03/30/2017
 ms.assetid: 344caacd-bf3b-4716-bd5a-eca74fc5a61d
-ms.openlocfilehash: 2b259f315e0186c13ca44c5eed50d861bce3668a
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 5ecfc53795d50a4b633cc26c8911fec0a36f54ac
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83421326"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96262340"
 ---
 # <a name="state-machine-workflows"></a>Fluxos de trabalho do computador de estado
+
 Um computador de estado é um paradigma conhecido para programas desenvolvimento. A atividade de <xref:System.Activities.Statements.StateMachine> , juntamente com <xref:System.Activities.Statements.State>, <xref:System.Activities.Statements.Transition>, e outras atividades pode ser usada para criar programas de fluxo de trabalho do computador de estado. Este tópico fornece uma visão geral de criar fluxos de trabalho do computador de estado.  
   
 ## <a name="state-machine-workflow-overview"></a>Visão geral de fluxo de trabalho do computador de estado  
+
  Fluxos de trabalho do computador de estado fornecem um estilo modelagem com que você pode modelar seu fluxo de trabalho em uma maneira de baseada. Uma atividade de <xref:System.Activities.Statements.StateMachine> contém os estados e as transições que compõem a lógica do computador de estado, e pode ser usada em qualquer lugar uma atividade pode ser usada. Há várias classes no runtime do computador de estado:  
   
 - <xref:System.Activities.Statements.StateMachine>  
@@ -22,13 +24,14 @@ Um computador de estado é um paradigma conhecido para programas desenvolvimento
   
 - <xref:System.Activities.Statements.Transition>  
   
- Para criar um fluxo de trabalho de máquina de estado, os Estados são adicionados a uma <xref:System.Activities.Statements.StateMachine> atividade e as transições são usadas para controlar o fluxo entre os Estados. A captura de tela a seguir, da etapa [introdução tutorial](getting-started-tutorial.md) [como criar um fluxo de trabalho de máquina de estado](how-to-create-a-state-machine-workflow.md), mostra um fluxo de trabalho de máquina de estado com três Estados e três transições. **Inicializar destino** é o estado inicial e representa o primeiro estado no fluxo de trabalho. Isso é designado pela linha que a leva para o nó **inicial** . O estado final no fluxo de trabalho é chamado de **FinalState**e representa o ponto no qual o fluxo de trabalho é concluído.  
+ Para criar um fluxo de trabalho de máquina de estado, os Estados são adicionados a uma <xref:System.Activities.Statements.StateMachine> atividade e as transições são usadas para controlar o fluxo entre os Estados. A captura de tela a seguir, da etapa [introdução tutorial](getting-started-tutorial.md) [como criar um fluxo de trabalho de máquina de estado](how-to-create-a-state-machine-workflow.md), mostra um fluxo de trabalho de máquina de estado com três Estados e três transições. **Inicializar destino** é o estado inicial e representa o primeiro estado no fluxo de trabalho. Isso é designado pela linha que a leva para o nó **inicial** . O estado final no fluxo de trabalho é chamado de **FinalState** e representa o ponto no qual o fluxo de trabalho é concluído.  
   
  ![Ilustração que mostra o fluxo de trabalho da máquina de estado concluído.](./media/state-machine-workflows/complete-state-machine-workflow.jpg)  
   
  Um fluxo de trabalho do computador de estado deve ter um e somente um estados iniciais, e pelo menos um estados finais. Cada estado que não é um estado final deve ter pelo menos uma transição. As seções a seguir abordam como criar e configurar de estados e das transições.  
   
 ## <a name="creating-and-configuring-states"></a>Criando e configurando estados  
+
  <xref:System.Activities.Statements.State> representa um estado em que um computador de estado pode estar. Para adicionar um <xref:System.Activities.Statements.State> a um fluxo de trabalho, arraste o designer de atividade de **estado** da seção **máquina de estado** da **caixa de ferramentas** e solte-o em uma <xref:System.Activities.Statements.StateMachine> atividade na superfície de designer de fluxo de trabalho do Windows.  
   
  ![Captura de tela da seção máquina de estado da caixa de ferramentas.](./media/state-machine-workflows/state-machine-section-toolbox.jpg)  
@@ -38,12 +41,14 @@ Um computador de estado é um paradigma conhecido para programas desenvolvimento
  Um estado que representa um estado de terminação em um computador de estado é chamado um estado final. Um estado final é um estado que tem sua propriedade de <xref:System.Activities.Statements.State.IsFinal%2A> definida como `true`, não tem nenhuma atividade de <xref:System.Activities.Statements.State.Exit%2A> , e nenhuma transição que se origina delas. Para adicionar um estado final a um fluxo de trabalho, arraste um designer de atividades **FinalState** da seção **máquina de estado** da **caixa de ferramentas** e solte-o em uma <xref:System.Activities.Statements.StateMachine> atividade na superfície de designer de fluxo de trabalho do Windows. Um fluxo de trabalho do computador de estado deve ter pelo menos um estado final.  
   
 ### <a name="configuring-entry-and-exit-actions"></a>Configurando ações de entrada e de saída  
+
  Um estado pode ter <xref:System.Activities.Statements.State.Entry%2A> e uma ação de <xref:System.Activities.Statements.State.Exit%2A> . (O estado de configurado como um estado final pode ter apenas uma ação de entrada). Quando uma instância de fluxo de trabalho entra em um estado, todas as atividades em ação de entrada são executadas. Quando a ação de entrada for concluída, os gatilhos para as transições do estado serão agendados. Quando uma transição para outro estado é confirmada, as atividades em ação de saída são executadas, mesmo se o estado faz a transição de volta ao mesmo estado. Após a conclusão da ação de saída, as atividades na ação da transição são executadas e, em seguida, o novo estado é transferido para, e suas ações de entrada são agendadas.  
   
 > [!NOTE]
 > Para depurar um fluxo de trabalho do computador de estado, pontos de interrupção podem ser colocados na atividade e os estados do computador de estado da raiz no fluxo de trabalho do computador de estado. Os pontos de interrupção não podem ser colocados diretamente nas transições, mas podem ser colocados em todas as atividades contidas nos estados e as transições.  
   
 ## <a name="creating-and-configuring-transitions"></a>Criando e configurando as transições  
+
  Todos os Estados devem ter pelo menos uma transição, exceto para um estado final, que pode não ter transições. Transições podem ser adicionadas após um estado é adicionado a um fluxo de trabalho do computador de estado, ou podem ser criadas como o estado são soltas.  
   
  Para adicionar um <xref:System.Activities.Statements.State> e criar uma transição em uma única etapa, arraste uma atividade de **estado** da seção **máquina de estado** da **caixa de ferramentas** e passe o mouse sobre outro Estado no designer de fluxo de trabalho. Quando <xref:System.Activities.Statements.State> arrastado está sobre um outro <xref:System.Activities.Statements.State>, quatro triângulos aparecerão em torno do outro <xref:System.Activities.Statements.State>. Se <xref:System.Activities.Statements.State> é solto em um dos quatro triângulos, é adicionado ao computador de estado e uma transição é criada de origem <xref:System.Activities.Statements.State> ao destino solto <xref:System.Activities.Statements.State>. Para obter mais informações, consulte o [Designer de atividade de transição](/visualstudio/workflow-designer/transition-activity-designer).  
@@ -63,6 +68,7 @@ Um computador de estado é um paradigma conhecido para programas desenvolvimento
  Para obter mais informações sobre como criar fluxos de trabalho de máquina de estado, consulte [como criar um fluxo de trabalho de máquina de estado](how-to-create-a-state-machine-workflow.md), [StateMachine designer de atividade](/visualstudio/workflow-designer/statemachine-activity-designer), designer de atividade de [estado](/visualstudio/workflow-designer/state-activity-designer), [Designer de atividade FinalState](/visualstudio/workflow-designer/finalstate-activity-designer)e designer de atividade de [transição](/visualstudio/workflow-designer/transition-activity-designer).  
   
 ## <a name="state-machine-terminology"></a>Terminologia do computador de estado  
+
  Esta seção define o vocabulário do computador de estado usado em todo este tópico.  
   
  Estado  
@@ -103,7 +109,7 @@ Um computador de estado é um paradigma conhecido para programas desenvolvimento
   
 ## <a name="see-also"></a>Veja também
 
-- [Como criar um fluxo de trabalho de máquina de estado](how-to-create-a-state-machine-workflow.md)
+- [Como: criar um fluxo de trabalho da máquina de estado](how-to-create-a-state-machine-workflow.md)
 - [Designer de atividade StateMachine](/visualstudio/workflow-designer/statemachine-activity-designer)
 - [Designer de atividade de estado](/visualstudio/workflow-designer/state-activity-designer)
 - [Designer de atividade FinalState](/visualstudio/workflow-designer/finalstate-activity-designer)

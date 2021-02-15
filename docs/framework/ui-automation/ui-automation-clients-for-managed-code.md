@@ -8,20 +8,22 @@ helpviewer_keywords:
 - UI Automation, clients for managed code
 - managed code, UI Automation clients
 ms.assetid: e1ed1197-3e9e-4e78-8845-92e82787faed
-ms.openlocfilehash: b7c3e425312652fb37ed8e2203d0a0155fea25b9
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 95ac13409156b553962aee5ea4f5ca717375c133
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87163928"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96241974"
 ---
 # <a name="ui-automation-clients-for-managed-code"></a>Clientes de Automação de Interface de Usuário para Código Gerenciado
+
 > [!NOTE]
 > Esta documentação destina-se a desenvolvedores do .NET Framework que querem usar as classes da [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] gerenciadas definidas no namespace <xref:System.Windows.Automation>. Para obter as informações mais recentes sobre a [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], consulte [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32) (API de Automação do Windows: Automação da Interface do Usuário).  
   
  Esta seção contém visões gerais e tópicos de instruções para ajudá-lo a desenvolver clientes de automação da interface do usuário.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Automação da Interface do Usuário e Escala da Tela](ui-automation-and-screen-scaling.md)  
  [Suporte de automação de interface do usuário para Controles Padrão](ui-automation-support-for-standard-controls.md)  
  [Automação de Eventos de Interface de Usuário para Clientes.](ui-automation-events-for-clients.md)  
@@ -31,7 +33,8 @@ ms.locfileid: "87163928"
  [Padrões de Controle para Clientes de Automação de IU](ui-automation-control-patterns-for-clients.md)  
  [Obtendo elementos da automação interface do usuário](obtaining-ui-automation-elements.md)  
  [Problemas de Threading na Automação da Interface do Usuário](ui-automation-threading-issues.md)  
- [Tópicos explicativos](ui-automation-clients-for-managed-code-how-to-topics.md)  
+ [Tópicos de instruções](ui-automation-clients-for-managed-code-how-to-topics.md)  
   
 ## <a name="reference"></a>Referência  
+
  <xref:System.Windows.Automation>

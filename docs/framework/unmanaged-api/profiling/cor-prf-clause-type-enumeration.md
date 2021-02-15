@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração de COR_PRF_CLAUSE_TYPE'
 title: Enumeração COR_PRF_CLAUSE_TYPE
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: f64c325a-ed3a-4aaf-b847-a88edbc4fefc
 topic_type:
 - apiref
-ms.openlocfilehash: a308017dc80dd973cbf108ba9df824193775f5ff
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 413dbc0ad94e4ab670cd7cd9537bbd1735ffd7cf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84501047"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649254"
 ---
 # <a name="cor_prf_clause_type-enumeration"></a>Enumeração COR_PRF_CLAUSE_TYPE
+
 Indica o tipo de cláusula de exceção que o código acabou de inserir ou deixar.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,7 +39,7 @@ typedef enum {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`COR_PRF_CLAUSE_NONE`|A cláusula de exceção não é válida.|  
 |`COR_PRF_CLAUSE_FILTER`|A cláusula de exceção é uma expressão de filtro.|  
@@ -45,6 +47,7 @@ typedef enum {
 |`COR_PRF_CLAUSE_FINALLY`|A cláusula de exceção é uma `finally` instrução.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -53,6 +56,6 @@ typedef enum {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criando perfil de enumerações](profiling-enumerations.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport:: CountEnum'
 title: Método IMetaDataImport::CountEnum
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: d1de53ad-9435-4b5f-9df7-07f21210e5b5
 topic_type:
 - apiref
-ms.openlocfilehash: 4521a3f15ec358a4d786a4533efb6b99d0e1c1cc
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: c579ef7ce440e3552ab28572fc6c96ad12d66400
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84492376"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99677685"
 ---
 # <a name="imetadataimportcountenum-method"></a>Método IMetaDataImport::CountEnum
+
 Obtém o número de elementos na enumeração que foi recuperado pelo enumerador especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,6 +37,7 @@ HRESULT CountEnum (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `hEnum`  
  no O identificador do enumerador.  
   
@@ -42,18 +45,20 @@ HRESULT CountEnum (
  fora O número de elementos enumerados.  
   
 ## <a name="remarks"></a>Comentários  
+
  O identificador especificado por `hEnum` é obtido de uma chamada de `Enum` *nome* anterior (por exemplo, [IMetaDataImport:: EnumTypeDefs](imetadataimport-enumtypedefs-method.md)).  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Incluído como um recurso em MsCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport](imetadataimport-interface.md)
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)

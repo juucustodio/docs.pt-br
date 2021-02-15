@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <customBinding>'
 title: <customBinding>
 ms.date: 03/30/2017
 ms.assetid: 9da4f960-f64e-4d8a-894d-2b09eba5ce4b
-ms.openlocfilehash: cdaaacf0dfa75209d001f6e8d6ac7175816048aa
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: a4d297750d107648aa10b349c6febc1a8929a30b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74140797"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803939"
 ---
 # \<customBinding>
 
@@ -18,7 +19,7 @@ Fornece controle total sobre a pilha de mensagens para o usuário.
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<customBinding>**  
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <customBinding>
@@ -193,7 +194,7 @@ As seções a seguir descrevem atributos, elementos filho e elementos pai
 |-------------|-----------------|
 |[\<compositeDuplex>](compositeduplex.md)|Especifica a mensagem de duas vias para a associação personalizada. Ele é usado com transportes que não permitem comunicações duplex nativamente, por exemplo, HTTP. O TCP, por outro lado, permite comunicações duplex nativamente e não requer o uso desse elemento de ligação para que o serviço envie mensagens de volta para um cliente.<br /><br /> O cliente deve expor um endereço para que o serviço faça contato e estabeleça uma conexão. Esse endereço de cliente é fornecido pelo `ClientBaseAddress` atributo.<br /><br /> Esse elemento é do tipo <xref:System.ServiceModel.Configuration.CompositeDuplexElement> .|
 |[\<pnrpPeerResolver>](pnrppeerresolver.md)|Especifica um resolvedor de nome de par PNRP (Peer Name Resolution Protocol). Esse elemento é do tipo <xref:System.ServiceModel.Configuration.PnrpPeerResolverElement> .|
-|[\<reliableSession>](reliablesession.md)|Especifica a configuração para mensagens WS-Reliable. Quando esse elemento é adicionado a uma associação personalizada, o canal resultante pode dar suporte a garantias de entrega exatamente uma vez. Esse elemento é do tipo <xref:System.ServiceModel.Configuration.ReliableSessionElement> .|
+|[\<reliableSession>](reliablesession.md)|Especifica a configuração para WS-Reliable mensagens. Quando esse elemento é adicionado a uma associação personalizada, o canal resultante pode dar suporte a garantias de entrega exatamente uma vez. Esse elemento é do tipo <xref:System.ServiceModel.Configuration.ReliableSessionElement> .|
 |[\<security>](security-of-custombinding.md)|Especifica as opções de segurança da associação personalizada. Esse elemento é do tipo <xref:System.ServiceModel.Configuration.SecurityElement> .|
 |[\<sslStreamSecurity>](sslstreamsecurity.md)|Especifica as configurações de segurança para uma associação de fluxo SSL. Esse elemento é do tipo <xref:System.ServiceModel.Configuration.SslStreamSecurityElement> .|
 |[\<transactionFlow>](transactionflow.md)|Especifica que a associação dá suporte ao fluxo de transações e o protocolo a ser usado pelo `transactionProtocol` atributo. Esse elemento é do tipo <xref:System.ServiceModel.Configuration.TransactionFlowElement> .|
@@ -229,7 +230,7 @@ Uma associação personalizada é construída usando uma das <xref:System.Servic
 
 - Na parte superior, há um opcional <xref:System.ServiceModel.Channels.TransactionFlowBindingElement> que permite transações de fluxo.
 
-- Em seguida, é um opcional <xref:System.ServiceModel.Channels.ReliableSessionBindingElement> que fornece um mecanismo de sessão e ordenação, conforme definido na especificação WS-ReliableMessaging. Essa noção de uma sessão pode cruzar os intermediários de transporte e SOAP.
+- Em seguida, é um opcional <xref:System.ServiceModel.Channels.ReliableSessionBindingElement> que fornece um mecanismo de sessão e ordenação, conforme definido na especificação de WS-ReliableMessaging. Essa noção de uma sessão pode cruzar os intermediários de transporte e SOAP.
 
 - A seguir está um elemento de associação de segurança opcional que fornece recursos de segurança como autorização, autenticação, proteção e confidencialidade. Os seguintes elementos de associação de segurança são fornecidos pelo Windows Communication Foundation (WCF):
 
@@ -283,17 +284,17 @@ A tabela a seguir resume as opções para cada camada.
 |-----------|-------------|--------------|
 |Fluxo de transações|<xref:System.ServiceModel.Channels.TransactionFlowBindingElement>|Não|
 |Confiabilidade|<xref:System.ServiceModel.Channels.ReliableSessionBindingElement>|Não|
-|Segurança|Simétrico, assimétrico, nível de transporte|Não|
+|Segurança|Simétrico, assimétrico Transport-Level|Não|
 |Alteração de forma|<xref:System.ServiceModel.Channels.CompositeDuplexBindingElement>|Não|
 |Atualizações de transporte|Fluxo SSL, fluxo do Windows, resolvedor de pares|Não|
-|Codificação|Texto, binário, MTOM, personalizado|Sim|
-|Transport|TCP, pipes nomeados, HTTP, HTTPS, tipos de MSMQ, personalizado|Sim|
+|Codificação|Texto, binário, MTOM, personalizado|Yes|
+|Transport|TCP, pipes nomeados, HTTP, HTTPS, tipos de MSMQ, personalizado|Yes|
 
 Além disso, você pode definir seus próprios elementos de ligação e inseri-los entre as camadas definidas anteriormente.
 
-Para obter uma discussão sobre como usar uma associação personalizada para modificar uma associação fornecida pelo sistema, consulte [como: personalizar uma associação fornecida pelo sistema](../../../wcf/extending/how-to-customize-a-system-provided-binding.md).
+Para obter uma discussão sobre como usar uma associação personalizada para modificar uma associação fornecida pelo sistema, consulte [como: personalizar uma associação de System-Provided](../../../wcf/extending/how-to-customize-a-system-provided-binding.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Channels.Binding>
 - <xref:System.ServiceModel.Channels.BindingElement>

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugFunction'
 title: Interface ICorDebugFunction
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 783faea9-8083-41c1-b04a-51a81ac4c8f3
 topic_type:
 - apiref
-ms.openlocfilehash: 6b7b6969c1f207decbf47217e98b7fee3aa9ce54
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 835625341889e89e15ceb66ca71531cf7b8311c4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213229"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99692362"
 ---
 # <a name="icordebugfunction-interface"></a>Interface ICorDebugFunction
 
@@ -39,6 +40,7 @@ Representa uma função ou um método gerenciado.
 |[Método GetToken](icordebugfunction-gettoken-method.md)|Obtém o token de metadados para esta função.|  
   
 ## <a name="remarks"></a>Comentários  
+
  A `ICorDebugFunction` interface não representa uma função com parâmetros de tipo genérico. Por exemplo, uma `ICorDebugFunction` instância representaria `Func<T>` , mas não `Func<string>` . Chame [ICorDebugILFrame2:: EnumerateTypeParameters](icordebugilframe2-enumeratetypeparameters-method.md) para obter os parâmetros de tipo genérico.  
   
  A relação entre o token de metadados de um método, o `mdMethodDef` e o objeto de um método `ICorDebugFunction` depende se editar e continuar é permitido na função:  
@@ -51,6 +53,7 @@ Representa uma função ou um método gerenciado.
 > Esta interface não dá suporte para chamada remota, seja entre computadores ou processos cruzados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -59,6 +62,6 @@ Representa uma função ou um método gerenciado.
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

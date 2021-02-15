@@ -7,12 +7,12 @@ helpviewer_keywords:
 - UI Automation, server-side provider implementation
 - provider implementation, UI Automation
 ms.assetid: 6acc6d08-bd67-4e2e-915c-9c1d34eb86fe
-ms.openlocfilehash: ea1b5e668e29d854233d4dde4c0e6152d591da97
-ms.sourcegitcommit: 3824ff187947572b274b9715b60c11269335c181
+ms.openlocfilehash: ee9fe5b3180abcc9ecbc4515e0af1e1c4b2e8b87
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84903890"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555426"
 ---
 # <a name="server-side-ui-automation-provider-implementation"></a>Implementação do provedor de automação de interface do usuário no lado do servidor
 
@@ -25,7 +25,7 @@ A implementação para elementos de Windows Presentation Foundation (WPF) e elem
 
 <a name="Security_Considerations"></a>
 
-## <a name="security-considerations"></a>Considerações de segurança
+## <a name="security-considerations"></a>Considerações sobre segurança
 
 Os provedores devem ser escritos para que possam trabalhar em um ambiente de confiança parcial. Como UIAutomationClient.dll não está configurado para ser executado sob confiança parcial, o código do provedor não deve fazer referência a esse assembly. Se isso ocorrer, o código poderá ser executado em um ambiente de confiança total, mas, em seguida, falhar em um ambiente parcialmente confiável.
 
@@ -35,7 +35,7 @@ Em particular, não use campos de classes em UIAutomationClient.dll como as do <
 
 ## <a name="provider-implementation-by-windows-presentation-foundation-elements"></a>Implementação de provedor por elementos de Windows Presentation Foundation
 
-Para obter mais informações sobre este tópico, consulte [automação da interface do usuário de um controle personalizado do WPF](../wpf/controls/ui-automation-of-a-wpf-custom-control.md).
+Para obter mais informações sobre este tópico, consulte [automação da interface do usuário de um controle personalizado do WPF](/dotnet/desktop/wpf/controls/ui-automation-of-a-wpf-custom-control).
 
 <a name="Provider_Implementation_by_non_WPF_Elements"></a>
 
@@ -80,7 +80,7 @@ Para se comunicar com o [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2s
 
 |Funcionalidade|Implementação|
 |-------------------|--------------------|
-|Expor o provedor para[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|Em resposta a uma mensagem de WM_GETOBJECT enviada para a janela de controle, retorne o objeto que implementa <xref:System.Windows.Automation.Provider.IRawElementProviderSimple> (ou uma interface derivada). Para fragmentos, esse deve ser o provedor para a raiz do fragmento.|
+|Expor o provedor para [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]|Em resposta a uma mensagem de WM_GETOBJECT enviada para a janela de controle, retorne o objeto que implementa <xref:System.Windows.Automation.Provider.IRawElementProviderSimple> (ou uma interface derivada). Para fragmentos, esse deve ser o provedor para a raiz do fragmento.|
 |Fornecer valores de propriedade|Implemente <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.GetPropertyValue%2A> para fornecer ou substituir valores.|
 |Habilitar o cliente a interagir com o controle|Implemente interfaces que dão suporte a padrões de controle, como <xref:System.Windows.Automation.Provider.IInvokeProvider> . Retorne esses provedores de padrões na sua implementação do <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.GetPatternProvider%2A> .|
 |Gerar eventos|Chame um dos métodos estáticos de <xref:System.Windows.Automation.Provider.AutomationInteropProvider> para gerar um evento que um cliente possa escutar.|
@@ -91,7 +91,7 @@ Para se comunicar com o [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2s
 
 ### <a name="property-values-in-non-wpf-providers"></a>Valores de propriedade em provedores não WPF
 
-[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]os provedores de controles personalizados devem dar suporte a determinadas propriedades que podem ser usadas pelo sistema de automação, bem como por aplicativos cliente. Para elementos que são hospedados no Windows (HWNDs), o [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] pode recuperar algumas propriedades do provedor de janela padrão, mas deve obter outras do provedor personalizado.
+[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] os provedores de controles personalizados devem dar suporte a determinadas propriedades que podem ser usadas pelo sistema de automação, bem como por aplicativos cliente. Para elementos que são hospedados no Windows (HWNDs), o [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] pode recuperar algumas propriedades do provedor de janela padrão, mas deve obter outras do provedor personalizado.
 
 Os provedores de controles baseados em HWND normalmente não precisam fornecer as seguintes propriedades (identificadas por valores de campo):
 
@@ -128,9 +128,9 @@ Para obter um exemplo de código, consulte [Propriedades de retorno de um proved
 
 ### <a name="events-in-non-wpf-providers"></a>Eventos em provedores que não são do WPF
 
-[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]os provedores devem gerar eventos para notificar aplicativos cliente sobre alterações no estado da interface do usuário. Os métodos a seguir são usados para gerar eventos.
+[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] os provedores devem gerar eventos para notificar aplicativos cliente sobre alterações no estado da interface do usuário. Os métodos a seguir são usados para gerar eventos.
 
-|Método|Description|
+|Método|Descrição|
 |------------|-----------------|
 |<xref:System.Windows.Automation.Provider.AutomationInteropProvider.RaiseAutomationEvent%2A>|Gera vários eventos, incluindo eventos disparados por padrões de controle.|
 |<xref:System.Windows.Automation.Provider.AutomationInteropProvider.RaiseAutomationPropertyChangedEvent%2A>|Gera um evento quando uma propriedade [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] foi alterada.|
@@ -140,7 +140,7 @@ A finalidade de um evento é notificar o cliente sobre algo que está ocorrendo 
 
 Para otimizar o desempenho, um provedor poderá acionar eventos seletivamente ou não gerar nenhum evento se nenhum aplicativo cliente estiver registrado para recebê-los. Os métodos a seguir são usados para otimização.
 
-|Método|Description|
+|Método|Descrição|
 |------------|-----------------|
 |<xref:System.Windows.Automation.Provider.AutomationInteropProvider.ClientsAreListening%2A>|Essa propriedade estática especifica se qualquer aplicativo cliente assinou [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] eventos.|
 |<xref:System.Windows.Automation.Provider.IRawElementProviderAdviseEvents>|A implementação do provedor dessa interface em uma raiz de fragmento permite que ela seja avisada quando os clientes registram e cancelam o registro de manipuladores de eventos para eventos no fragmento.|
@@ -164,7 +164,7 @@ Elementos de um fragmento que não são a raiz devem dar suporte à navegação 
 
 ### <a name="non-wpf-provider-reparenting"></a>Repai do provedor não WPF
 
-As janelas pop-up são, na verdade, janelas de nível superior e, por padrão, aparecem na [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] árvore como filhas da área de trabalho. Em muitos casos, no entanto, janelas pop-up são logicamente filhos de algum outro controle. Por exemplo, a lista suspensa de uma caixa de combinação é logicamente um filho da caixa de combinação. Da mesma forma, uma janela pop-up de menu é logicamente um filho do menu. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]fornece suporte para reinicializar janelas pop-up para que pareçam ser filhos do controle associado.
+As janelas pop-up são, na verdade, janelas de nível superior e, por padrão, aparecem na [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] árvore como filhas da área de trabalho. Em muitos casos, no entanto, janelas pop-up são logicamente filhos de algum outro controle. Por exemplo, a lista suspensa de uma caixa de combinação é logicamente um filho da caixa de combinação. Da mesma forma, uma janela pop-up de menu é logicamente um filho do menu. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] fornece suporte para reinicializar janelas pop-up para que pareçam ser filhos do controle associado.
 
 Para recriar o pai de uma janela pop-up:
 
@@ -184,13 +184,13 @@ A repai não é adequada para casos em que um controle pode hospedar uma janela 
 
 ### <a name="non-wpf-provider-repositioning"></a>Reposicionamento de provedor não WPF
 
-[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]os fragmentos podem conter dois ou mais elementos que estão contidos em uma janela (HWND). Como cada HWND tem seu próprio provedor padrão que considera o HWND como um filho de um HWND recipiente, a [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] árvore, por padrão, mostrará os HWNDs no fragmento como filhos da janela pai. Na maioria dos casos, esse comportamento é desejável, mas às vezes pode levar à confusão porque não corresponde à estrutura lógica do [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] .
+[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] os fragmentos podem conter dois ou mais elementos que estão contidos em uma janela (HWND). Como cada HWND tem seu próprio provedor padrão que considera o HWND como um filho de um HWND recipiente, a [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] árvore, por padrão, mostrará os HWNDs no fragmento como filhos da janela pai. Na maioria dos casos, esse comportamento é desejável, mas às vezes pode levar à confusão porque não corresponde à estrutura lógica do [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] .
 
 Um bom exemplo disso é um controle rebar. Um rebar contém bandas, e cada uma delas pode, por sua vez, conter um controle baseado em HWND, como uma barra de ferramentas, uma caixa de edição ou uma caixa de combinação. O provedor de janela padrão para o HWND de rebar vê os HWNDs de controle de banda como filhos, e o provedor de rebar vê as bandas como filhos. Como o provedor de HWND e o provedor de rebar estão trabalhando em tandem e combinando seus filhos, as faixas e os controles baseados em HWND aparecem como filhos do rebar. No entanto, logicamente, somente as faixas devem aparecer como filhos do rebar, e cada provedor de banda deve ser acoplado ao provedor HWND padrão para o controle que ele contém.
 
 Para fazer isso, o provedor raiz do fragmento do rebar expõe um conjunto de filhos representando as faixas. Cada banda tem um único provedor que pode expor propriedades e padrões. Em sua implementação de <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.HostRawElementProvider%2A> , o provedor de banda retorna o provedor de janela padrão para o HWND de controle, que é obtido chamando <xref:System.Windows.Automation.Provider.AutomationInteropProvider.HostProviderFromHandle%2A> , passando o identificador de janela do controle. Por fim, o provedor raiz do fragmento para o rebar implementa a <xref:System.Windows.Automation.Provider.IRawElementProviderHwndOverride> interface e, em sua implementação, <xref:System.Windows.Automation.Provider.IRawElementProviderHwndOverride.GetOverrideProviderForHwnd%2A> retorna o provedor de banda apropriado para o controle contido no HWND especificado.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Visão Geral dos Provedores de Automação de Interface do Usuário](ui-automation-providers-overview.md)
 - [Expor um provedor de automação de interface do usuário do lado do servidor](expose-a-server-side-ui-automation-provider.md)

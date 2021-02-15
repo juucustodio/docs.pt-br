@@ -1,17 +1,18 @@
 ---
+description: 'Saiba mais sobre: migrar seu aplicativo da Windows Store para .NET Native'
 title: Migrando seu aplicativo da Windows Store para .NET Nativo
 ms.date: 03/30/2017
 ms.assetid: 4153aa18-6f56-4a0a-865b-d3da743a1d05
-ms.openlocfilehash: 5e5c655d0e8d6f1730f27d35525692e110b3c80c
-ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
+ms.openlocfilehash: 7a9e8f7108ca21dbbae7ca0097b15af078c8c6bb
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86309190"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100464671"
 ---
 # <a name="migrate-your-windows-store-app-to-net-native"></a>Migre seu aplicativo da Windows Store para .NET Native
 
-.NET Native fornece compilação estática de aplicativos na Windows Store ou no computador do desenvolvedor. Isso difere da compilação dinâmica realizada para Aplicativos da Windows Store pelo compilador JIT (just-in-time) ou o [Gerador de Imagem Nativa (Ngen.exe)](../tools/ngen-exe-native-image-generator.md) no dispositivo. Apesar das diferenças, .NET Native tenta manter a compatibilidade com o [.net para aplicativos da Windows Store](https://docs.microsoft.com/previous-versions/windows/apps/br230302%28v=vs.140%29). Para a maior parte, as coisas que funcionam no .NET para aplicativos da Windows Store também funcionam com .NET Native.  No entanto, em alguns casos, você pode encontrar alterações de comportamento. Este documento discute essas diferenças entre o .NET Standard para aplicativos da Windows Store e .NET Native nas seguintes áreas:
+.NET Native fornece compilação estática de aplicativos na Windows Store ou no computador do desenvolvedor. Isso difere da compilação dinâmica realizada para Aplicativos da Windows Store pelo compilador JIT (just-in-time) ou o [Gerador de Imagem Nativa (Ngen.exe)](../tools/ngen-exe-native-image-generator.md) no dispositivo. Apesar das diferenças, .NET Native tenta manter a compatibilidade com o [.net para aplicativos da Windows Store](/previous-versions/windows/apps/br230302(v=vs.140)). Para a maior parte, as coisas que funcionam no .NET para aplicativos da Windows Store também funcionam com .NET Native.  No entanto, em alguns casos, você pode encontrar alterações de comportamento. Este documento discute essas diferenças entre o .NET Standard para aplicativos da Windows Store e .NET Native nas seguintes áreas:
 
 - [Diferenças de runtime geral](#Runtime)
 
@@ -85,7 +86,7 @@ Em .NET Native:
 
 - <xref:System.Reflection.RuntimeReflectionExtensions.GetRuntimeProperties%2A?displayProperty=nameWithType> e <xref:System.Reflection.RuntimeReflectionExtensions.GetRuntimeEvents%2A?displayProperty=nameWithType> incluem membros ocultos em classes base e, portanto, podem ser substituídos sem substituições explícitas. Isso também é verdadeiro para outros métodos [RuntimeReflectionExtensions.GetRuntime*](xref:System.Reflection.RuntimeReflectionExtensions).
 
-- <xref:System.Type.MakeArrayType%2A?displayProperty=nameWithType>e <xref:System.Type.MakeByRefType%2A?displayProperty=nameWithType> não falham quando você tenta criar determinadas combinações (por exemplo, uma matriz de `byref` objetos).
+- <xref:System.Type.MakeArrayType%2A?displayProperty=nameWithType> e <xref:System.Type.MakeByRefType%2A?displayProperty=nameWithType> não falham quando você tenta criar determinadas combinações (por exemplo, uma matriz de `byref` objetos).
 
 - Você não pode usar reflexão para invocar os membros que têm parâmetros de ponteiro.
 
@@ -143,7 +144,7 @@ As seções a seguir listam cenários não suportados e APIs de desenvolvimento 
 
 - Você não pode usar reflexão para obter ou definir um campo de ponteiro.
 
-**Serialização**
+**Série**
 
 O atributo <xref:System.Runtime.Serialization.KnownTypeAttribute.%23ctor%28System.String%29> não é suportado. Use o atributo <xref:System.Runtime.Serialization.KnownTypeAttribute.%23ctor%28System.Type%29> em vez disso.
 
@@ -151,7 +152,7 @@ O atributo <xref:System.Runtime.Serialization.KnownTypeAttribute.%23ctor%28Syste
 
 O uso de recursos localizados com a classe <xref:System.Diagnostics.Tracing.EventSource> não é suportado. A propriedade <xref:System.Diagnostics.Tracing.EventSourceAttribute.LocalizationResources%2A?displayProperty=nameWithType> não define os recursos localizados.
 
-**Delegados**
+**Representantes**
 
 `Delegate.BeginInvoke` e `Delegate.EndInvoke` não são suportados.
 
@@ -159,7 +160,7 @@ O uso de recursos localizados com a classe <xref:System.Diagnostics.Tracing.Even
 
 - A propriedade [typeInfo. GUID](xref:System.Type.GUID) gera uma <xref:System.PlatformNotSupportedException> exceção se um <xref:System.Runtime.InteropServices.GuidAttribute> atributo não é aplicado ao tipo. O GUID é usado principalmente para suporte a COM.
 
-- O <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> método analisa corretamente as cadeias de caracteres que contêm datas curtas em .net Native. Contudo, ele não mantém a compatibilidade com as alterações na análise de data e hora descritas no artigos da Base de Dados de Conhecimento Microsoft [KB2803771](https://support.microsoft.com/kb/2803771) e [KB2803755](https://support.microsoft.com/kb/2803755).
+- O <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> método analisa corretamente as cadeias de caracteres que contêm datas curtas em .net Native. No entanto, ele não mantém a compatibilidade com determinadas alterações na análise de data e hora.
 
 - <xref:System.Numerics.BigInteger.ToString%2A?displayProperty=nameWithType>`("E")`é arredondado corretamente em .net Native. Em algumas versões do CLR, a cadeia de caracteres de resultado é truncada em vez de arredondada.
 
@@ -208,7 +209,9 @@ Em .NET Native:
 - O cabeçalho `SetCookie2` em respostas será ignorado como obsoleto.
 
 <a name="Interop"></a>
+
 ### <a name="interop-differences"></a>Diferenças de interoperabilidade
+
  **APIs obsoletas**
 
  Várias APIs pouco usadas para a interoperabilidade com código gerenciado foram preteridas. Quando usado com .NET Native, essas APIs podem gerar uma <xref:System.NotImplementedException> <xref:System.PlatformNotSupportedException> exceção ou, ou resultar em um erro do compilador. Em aplicativos .NET para Windows Store, essas APIs são marcadas como obsoletas, embora chamá-las gere um aviso do compilador em vez de um erro do compilador.
@@ -225,9 +228,9 @@ Em .NET Native:
 - <xref:System.Runtime.InteropServices.UnmanagedType.SafeArray?displayProperty=nameWithType>
 - <xref:System.Runtime.InteropServices.VarEnum?displayProperty=nameWithType>
 
- <xref:System.Runtime.InteropServices.UnmanagedType.Struct?displayProperty=nameWithType>tem suporte, mas gera uma exceção em alguns cenários, como quando ele é usado com [IDispatch](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) ou `byref` variantes.
+ <xref:System.Runtime.InteropServices.UnmanagedType.Struct?displayProperty=nameWithType> tem suporte, mas gera uma exceção em alguns cenários, como quando ele é usado com [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) ou `byref` variantes.
 
- As APIs preteridas para suporte a [IDispatch](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) incluem:
+ As APIs preteridas para suporte a [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) incluem:
 
 - <xref:System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch?displayProperty=fullName>
 - <xref:System.Runtime.InteropServices.ClassInterfaceType.AutoDual?displayProperty=fullName>
@@ -240,15 +243,15 @@ APIs preteridas para eventos COM clássicos incluem:
 
 APIs preteridas na <xref:System.Runtime.InteropServices.ICustomQueryInterface?displayProperty=nameWithType> interface, que não têm suporte no .net Native, incluem:
 
-- <xref:System.Runtime.InteropServices.ICustomQueryInterface?displayProperty=nameWithType>(todos os membros)
-- <xref:System.Runtime.InteropServices.CustomQueryInterfaceMode?displayProperty=nameWithType>(todos os membros)
-- <xref:System.Runtime.InteropServices.CustomQueryInterfaceResult?displayProperty=nameWithType>(todos os membros)
+- <xref:System.Runtime.InteropServices.ICustomQueryInterface?displayProperty=nameWithType> (todos os membros)
+- <xref:System.Runtime.InteropServices.CustomQueryInterfaceMode?displayProperty=nameWithType> (todos os membros)
+- <xref:System.Runtime.InteropServices.CustomQueryInterfaceResult?displayProperty=nameWithType> (todos os membros)
 - <xref:System.Runtime.InteropServices.Marshal.GetComInterfaceForObject%28System.Object%2CSystem.Type%2CSystem.Runtime.InteropServices.CustomQueryInterfaceMode%29?displayProperty=fullName>
 
 Outros recursos de interoperabilidade sem suporte incluem:
 
-- <xref:System.Runtime.InteropServices.ICustomAdapter?displayProperty=nameWithType>(todos os membros)
-- <xref:System.Runtime.InteropServices.SafeBuffer?displayProperty=nameWithType>(todos os membros)
+- <xref:System.Runtime.InteropServices.ICustomAdapter?displayProperty=nameWithType> (todos os membros)
+- <xref:System.Runtime.InteropServices.SafeBuffer?displayProperty=nameWithType> (todos os membros)
 - <xref:System.Runtime.InteropServices.UnmanagedType.Currency?displayProperty=fullName>
 - <xref:System.Runtime.InteropServices.UnmanagedType.VBByRefStr?displayProperty=fullName>
 - <xref:System.Runtime.InteropServices.UnmanagedType.AnsiBStr?displayProperty=fullName>
@@ -324,7 +327,7 @@ No entanto, o .NET Native não dá suporte ao seguinte:
 
 - Implementando a interface <xref:System.Runtime.InteropServices.ICustomQueryInterface?displayProperty=nameWithType> em um tipo gerenciado
 
-- Implementando a interface [IDispatch](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) em um tipo gerenciado por meio do atributo <xref:System.Runtime.InteropServices.ComDefaultInterfaceAttribute?displayProperty=nameWithType>. No entanto, você não pode chamar objetos COM por meio `IDispatch` do e o objeto gerenciado não pode implementar `IDispatch` .
+- Implementando a interface [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) em um tipo gerenciado por meio do atributo <xref:System.Runtime.InteropServices.ComDefaultInterfaceAttribute?displayProperty=nameWithType>. No entanto, você não pode chamar objetos COM por meio `IDispatch` do e o objeto gerenciado não pode implementar `IDispatch` .
 
 Usar reflexão para invocar um método de invocação de plataforma não é suportado. Você pode contornar essa limitação envolvendo a chamada de método em outro método e usando reflexão para chamar o wrapper em vez disso.
 
@@ -661,9 +664,9 @@ Use as ferramentas de criação x86 usadas por padrão pelo Visual Studio. Não 
 
 A habilitação de .NET Native em uma biblioteca de teste de unidade para um projeto de aplicativos da Windows Store não tem suporte e faz com que o projeto falhe ao ser compilado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Introdução](getting-started-with-net-native.md)
 - [Referência do arquivo de configuração de diretivas do runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
-- [Visão geral dos aplicativos .NET para Windows Store](https://docs.microsoft.com/previous-versions/windows/apps/br230302%28v=vs.140%29)
-- [Suporte do .NET Framework para Aplicativos da Windows Store e Windows Runtime](../../standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)
+- [Visão geral dos aplicativos .NET para Windows Store](/previous-versions/windows/apps/br230302(v=vs.140))
+- [Suporte do .NET Framework para Aplicativos da Windows Store e Windows Runtime](../cross-platform/support-for-windows-store-apps-and-windows-runtime.md)

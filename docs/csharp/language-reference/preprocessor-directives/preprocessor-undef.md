@@ -7,14 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - '#undef directive [C#]'
 ms.assetid: 686c92d2-7194-4be4-b2f4-80091712d513
-ms.openlocfilehash: 97f99ab4230585e61fed0e057552b78c7a4c2bb5
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 7db79be7ea9d8462e09b6ae874bf0ae7d265afe2
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89137858"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "91150551"
 ---
 # <a name="undef-c-reference"></a>#undef (Referência de C#)
+
 `#undef` permite excluir as definições de um símbolo, de modo que, usando o símbolo como a expressão em uma diretiva [#if](./preprocessor-if.md), a expressão será avaliada como `false`.  
   
  Um símbolo pode ser definido com a diretiva [#define](./preprocessor-define.md) ou a opção [-definir](../compiler-options/define-compiler-option.md) compilador. A diretiva `#undef` deve ser exibida no arquivo antes de usar qualquer instrução que também não sejam diretivas.  

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: solução de problemas: leitura e gravação em arquivos de texto (Visual Basic)'
 title: 'Solução de problemas: lendo e gravando em arquivos de texto'
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - writing to files [Visual Basic], troubleshooting
 - reading text files [Visual Basic], troubleshooting
 ms.assetid: a8e9b44d-facb-4718-8c0f-466537171182
-ms.openlocfilehash: 8af4160d09f39f2622a007aef793173d614a8b44
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 1c01f7673ef021759a9c1892f685aa90ef1acdf6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406619"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675332"
 ---
 # <a name="troubleshooting-reading-from-and-writing-to-text-files-visual-basic"></a>Solução de problemas: lendo e gravando em arquivos de texto (Visual Basic)
 
@@ -36,7 +37,7 @@ Este tópico aborda problemas comuns encontrados ao trabalhar com arquivos de te
 
  Durante a análise de caminhos de arquivo, particularmente caminhos relativos, é fácil fornecer os dados errados. Muitos problemas podem ser corrigidos certificando-se de que está fornecendo o caminho correto. Para obter mais informações, consulte [Como analisar demarcadores de arquivo](how-to-parse-file-paths.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem>
 - [Ler arquivos](reading-from-files.md)

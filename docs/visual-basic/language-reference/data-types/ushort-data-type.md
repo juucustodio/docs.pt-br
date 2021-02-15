@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: tipo de dados UShort (Visual Basic)'
 title: Tipo de Dados UShort
 ms.date: 01/31/2018
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - UShort data type
 - US literal type characters [Visual Basic]
 ms.assetid: 138db892-665d-4ba8-9cae-d8d91c4a8f39
-ms.openlocfilehash: ee31156e00059699125fd72a7f091afbb21beab0
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 9c709e2110aef4281c348f697408044a191314c6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84415473"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774974"
 ---
 # <a name="ushort-data-type-visual-basic"></a>Tipo de dados UShort (Visual Basic)
 
@@ -70,14 +71,14 @@ Dim number = &H_5826us
   
 - **Ampliação.** O `UShort` tipo de dados amplia para `Integer` ,,,,, `UInteger` `Long` `ULong` `Decimal` `Single` e `Double` . Isso significa que você pode converter `UShort` para qualquer um desses tipos sem encontrar um <xref:System.OverflowException?displayProperty=nameWithType> erro.  
   
-- **Digite os caracteres.** Acrescentar os caracteres do tipo literal `US` a um literal força-o ao `UShort` tipo de dados. `UShort`Não tem um caractere de tipo de identificador.  
+- **Digite os caracteres.** Acrescentar os caracteres do tipo literal `US` a um literal força-o ao `UShort` tipo de dados. `UShort` Não tem um caractere de tipo de identificador.  
   
 - **Tipo de estrutura.** O tipo correspondente no .NET Framework é a estrutura <xref:System.UInt16?displayProperty=nameWithType>.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.UInt16>
-- [Tipos de dados](index.md)
+- [Data Types](index.md)
 - [Funções de conversão do tipo](../functions/type-conversion-functions.md)
 - [Resumo da Conversão](../keywords/conversion-summary.md)
 - [Como: Chamar uma função do Windows que use tipos não assinados](../../programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)

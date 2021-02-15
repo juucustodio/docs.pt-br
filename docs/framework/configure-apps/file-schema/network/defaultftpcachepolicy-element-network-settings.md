@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <defaultFtpCachePolicy> elemento (configurações de rede)'
 title: Elemento <defaultFtpCachePolicy> (Configurações de Rede)
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,14 +9,15 @@ helpviewer_keywords:
 - <defaultFtpCachePolicy> element
 - defaultFtpCachePolicy element
 ms.assetid: 0eb0c5cb-dd97-484d-8614-785e88877abb
-ms.openlocfilehash: 9261a430642cb4d5ac4507835bd0fd3561bd8c02
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 77150ce0980e96dd949df4b5ad7e4557ed1b991a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74088436"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740360"
 ---
 # <a name="defaultftpcachepolicy-element-network-settings"></a>Elemento \<defaultFtpCachePolicy> (Configurações de Rede)
+
 Descreve se o cache FTP está ativo e descreve a política de cache padrão.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -23,7 +25,7 @@ Descreve se o cache FTP está ativo e descreve a política de cache padrão.
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<requestCaching>**](requestcaching-element-network-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<defaultFtpCachePolicy>**
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <defaultFtpCachePolicy  
@@ -32,6 +34,7 @@ Descreve se o cache FTP está ativo e descreve a política de cache padrão.
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -54,6 +57,7 @@ Descreve se o cache FTP está ativo e descreve a política de cache padrão.
 |`Revalidate`|Atende a uma solicitação usando a cópia do recurso armazenada em cache se o carimbo de data/hora for igual ao do recurso no servidor; caso contrário, o recurso será baixado do servidor, apresentado ao chamador e armazenado no cache.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -65,6 +69,7 @@ Descreve se o cache FTP está ativo e descreve a política de cache padrão.
 ## <a name="remarks"></a>Comentários  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir mostra como especificar uma política de cache de FTP do `NoCacheNoStore` .  
   
 ```xml  
@@ -79,7 +84,7 @@ Descreve se o cache FTP está ativo e descreve a política de cache padrão.
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Net.Cache>
 - <xref:System.Net.WebRequest>

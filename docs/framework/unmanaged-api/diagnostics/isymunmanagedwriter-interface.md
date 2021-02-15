@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ISymUnmanagedWriter'
 title: Interface ISymUnmanagedWriter
 ms.date: 03/30/2017
 api_name:
@@ -14,15 +15,16 @@ helpviewer_keywords:
 ms.assetid: 7d6733ec-f081-4166-bc17-de09e16dc304
 topic_type:
 - apiref
-ms.openlocfilehash: 8f0bbd26bde562df5482d167c9d2775e01426f55
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 20fc0fd9b76b1aae4090582fe48a8a8e77d77c9f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83610048"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762234"
 ---
 # <a name="isymunmanagedwriter-interface"></a>Interface ISymUnmanagedWriter
-Representa um gravador de símbolo e fornece métodos para definir documentos, pontos de sequência, escopos léxicos e variáveis.  
+
+Representa um gravador de símbolo e fornece métodos para definir documentos, pontos de sequência, escopos lexicais e variáveis.  
   
 ## <a name="methods"></a>Métodos  
   
@@ -54,9 +56,10 @@ Representa um gravador de símbolo e fornece métodos para definir documentos, p
 |[Método UsingNamespace](isymunmanagedwriter-usingnamespace-method.md)|Especifica que o nome de namespace totalmente qualificado fornecido está sendo usado dentro do escopo léxico aberto no momento.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de armazenamento de símbolo de diagnóstico](diagnostics-symbol-store-interfaces.md)
 - [Interface ISymUnmanagedWriter2](isymunmanagedwriter2-interface.md)

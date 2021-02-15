@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método GetAssemblyRefHash'
 title: Método GetAssemblyRefHash
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 091a18bd-e901-46f6-b999-74d71c8a7c41
 topic_type:
 - apiref
-ms.openlocfilehash: c68f43ce2f79ee6e4ec44ce4b2f0dbfb1c1185fa
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: d8222d2fdd2c05ca1a23f881989dc344ba294bc1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74433879"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718467"
 ---
 # <a name="getassemblyrefhash-method"></a>Método GetAssemblyRefHash
+
 Recupera um blob de hash para um determinado assembly.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,6 +37,7 @@ HRESULT GetAssemblyRefHash(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `FileToken`  
  ID do assembly ao qual o hash fará referência.  
   
@@ -45,9 +48,11 @@ HRESULT GetAssemblyRefHash(
  Recebe o tamanho, em bytes, do blob de hash.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  Retorna S_OK se o método tiver sucesso.  
   
 ## <a name="requirements"></a>Requisitos  
+
  Requer ALink. h  
   
 ## <a name="see-also"></a>Consulte também

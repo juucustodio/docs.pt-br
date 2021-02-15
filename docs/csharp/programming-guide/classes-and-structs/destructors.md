@@ -7,14 +7,15 @@ helpviewer_keywords:
 - C# language, finalizers
 - finalizers [C#]
 ms.assetid: 1ae6e46d-a4b1-4a49-abe5-b97f53d9e049
-ms.openlocfilehash: 392b69633e596f0682fdfb4a5875f46755203ff7
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: a2f4f5f9342d5df1f9fa741c86cfe6f8b1d88bd1
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86474885"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899055"
 ---
 # <a name="finalizers-c-programming-guide"></a>Finalizadores (Guia de Programação em C#)
+
 Os finalizadores (que também são chamados de **destruidores**) são usados para executar qualquer limpeza final necessária, quando uma instância da classe está sendo coletada pelo coletor de lixo.  
   
 ## <a name="remarks"></a>Comentários  
@@ -31,7 +32,7 @@ Os finalizadores (que também são chamados de **destruidores**) são usados par
   
  Por exemplo, o seguinte é uma declaração de um finalizador para a classe `Car`.
   
- [!code-csharp[csProgGuideObjects#86](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#86)]  
+ [!code-csharp[csProgGuideObjects#86](snippets/destructors/Program.cs#2)]
 
 Um finalizador também pode ser implementado como uma definição do corpo da expressão, como mostra o exemplo a seguir.
 
@@ -65,9 +66,11 @@ protected override void Finalize()
  É possível forçar a coleta de lixo chamando <xref:System.GC.Collect%2A> , mas, na maioria das vezes, essa chamada deve ser evitada, pois ela pode criar problemas de desempenho.  
   
 ## <a name="using-finalizers-to-release-resources"></a>Usar finalizadores para liberar recursos  
+
  Em geral, o C# não exige tanto gerenciamento de memória por parte do desenvolvedor como linguagens que não têm como alvo um tempo de execução com coleta de lixo. Isso ocorre porque o coletor de lixo do .NET gerencia implicitamente a alocação e a liberação da memória para seus objetos. No entanto, quando o aplicativo encapsula recursos não gerenciados, como Windows, arquivos e conexões de rede, você deve usar os finalizadores para liberar esses recursos. Quando o objeto está qualificado para finalização, o coletor de lixo executa o método `Finalize` do objeto.
   
 ## <a name="explicit-release-of-resources"></a>Liberação explícita de recursos  
+
  Se seu aplicativo estiver usando um recurso externo caro, também será recomendável fornecer uma maneira de liberar explicitamente o recurso antes que o coletor de lixo libere o objeto. Para liberar o recurso, implemente um `Dispose` método da <xref:System.IDisposable> interface que executa a limpeza necessária para o objeto. Isso pode melhorar consideravelmente o desempenho do aplicativo. Mesmo com esse controle explícito sobre os recursos, o finalizador torna-se uma proteção para limpar os recursos se a chamada para o `Dispose` método falhar.  
   
  Para obter mais informações sobre como limpar recursos, consulte os seguintes artigos:  
@@ -79,15 +82,16 @@ protected override void Finalize()
 - [Instrução using](../../language-reference/keywords/using-statement.md)  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir cria três classes que compõem uma cadeia de herança. A classe `First` é a classe base, `Second` é derivado de `First` e `Third` é derivado de `Second`. Todas as três têm finalizadores. Em `Main`, uma instância da classe mais derivada é criada. Quando o programa for executado, observe que os finalizadores das três classes são chamados automaticamente e em ordem, do mais derivado para o menos derivado.  
   
- [!code-csharp[csProgGuideObjects#85](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#85)]  
+ [!code-csharp[Destructors#1](snippets/destructors/Program.cs#1)]
   
-## <a name="c-language-specification"></a>especificação da linguagem C#  
+## <a name="c-language-specification"></a>Especificação da linguagem C#  
 
 Para obter mais informações, confira a seção [Destruidores](~/_csharplang/spec/classes.md#destructors) na [Especificação da linguagem C#](/dotnet/csharp/language-reference/language-specification/introduction).
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.IDisposable>
 - [Guia de programação C#](../index.md)

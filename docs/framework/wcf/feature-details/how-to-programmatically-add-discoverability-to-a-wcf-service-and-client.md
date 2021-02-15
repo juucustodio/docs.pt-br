@@ -1,22 +1,24 @@
 ---
-title: Como adicionar programaticamente a capacidade de descoberta para um cliente e serviço do WCF
+description: 'Saiba mais sobre: como: programaticamente adicionar capacidade de descoberta a um serviço e cliente WCF'
+title: 'Como: adicionar programaticamente a capacidade de descoberta para um cliente e serviço do WCF'
 ms.date: 03/30/2017
 ms.assetid: 4f7ae7ab-6fc8-4769-9730-c14d43f7b9b1
-ms.openlocfilehash: c28815d1d208d3e91785a13d95e03c09c0f02ed9
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: ad192c6fcc57a36d7001f230c98b1193c42262aa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596988"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793708"
 ---
-# <a name="how-to-programmatically-add-discoverability-to-a-wcf-service-and-client"></a>Como adicionar programaticamente a capacidade de descoberta para um cliente e serviço do WCF
-Este tópico explica como tornar um serviço Windows Communication Foundation (WCF) detectável. Ele se baseia no exemplo de [hospedagem interna](https://docs.microsoft.com/dotnet/framework/wcf/samples/self-host) .  
+# <a name="how-to-programmatically-add-discoverability-to-a-wcf-service-and-client"></a>Como: adicionar programaticamente a capacidade de descoberta para um cliente e serviço do WCF
+
+Este tópico explica como tornar um serviço Windows Communication Foundation (WCF) detectável. Ele se baseia no exemplo de [hospedagem interna](../samples/self-host.md) .  
   
-### <a name="to-configure-the-existing-self-host-service-sample-for-discovery"></a>Para configurar o exemplo de serviço de auto-host existente para descoberta  
+### <a name="to-configure-the-existing-self-host-service-sample-for-discovery"></a>Para configurar o exemplo de serviço de Self-Host existente para descoberta  
   
-1. Abra a solução de hospedagem interna no Visual Studio 2012. O exemplo está localizado no diretório TechnologySamples\Basic\Service\Hosting\SelfHost  
+1. Abra a solução Self-Host no Visual Studio 2012. O exemplo está localizado no diretório TechnologySamples\Basic\Service\Hosting\SelfHost  
   
-2. Adicione uma referência ao `System.ServiceModel.Discovery.dll` projeto de serviço do. Você pode ver uma mensagem de erro dizendo "System. ServiceModel. Discovery. dll ou uma de suas dependências requer uma versão mais recente do .NET Framework do que aquela especificada no projeto... " Se você vir essa mensagem, clique com o botão direito do mouse no projeto no Gerenciador de Soluções e escolha **Propriedades**. Na janela **Propriedades do projeto** , verifique se a **estrutura de destino** é [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] .  
+2. Adicione uma referência ao `System.ServiceModel.Discovery.dll` projeto de serviço do. Você pode ver uma mensagem de erro dizendo "System. ServiceModel.Discovery.dll ou uma de suas dependências requer uma versão mais recente do .NET Framework do que aquela especificada no projeto... " Se você vir essa mensagem, clique com o botão direito do mouse no projeto no Gerenciador de Soluções e escolha **Propriedades**. Na janela **Propriedades do projeto** , verifique se a **estrutura de destino** é [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] .  
   
 3. Abra o arquivo Service.cs e adicione a instrução a seguir `using` .  
   
@@ -58,9 +60,9 @@ Este tópico explica como tornar um serviço Windows Communication Foundation (W
   
 1. Adicione um novo aplicativo de console à solução chamada `DiscoveryClientApp` .  
   
-2. Adicione uma referência a `System.ServiceModel.dll` e`System.ServiceModel.Discovery.dll`  
+2. Adicione uma referência a `System.ServiceModel.dll` e `System.ServiceModel.Discovery.dll`  
   
-3. Copie os arquivos GeneratedClient.cs e app. config do projeto de cliente existente para o novo projeto DiscoveryClientApp. Para fazer isso, clique com o botão direito do mouse nos arquivos no **Gerenciador de soluções**, selecione **copiar**e, em seguida, selecione o projeto **DiscoveryClientApp** , clique com o botão direito do mouse e selecione **colar**.  
+3. Copie os arquivos GeneratedClient.cs e App.config do projeto de cliente existente para o novo projeto DiscoveryClientApp. Para fazer isso, clique com o botão direito do mouse nos arquivos no **Gerenciador de soluções**, selecione **copiar** e, em seguida, selecione o projeto **DiscoveryClientApp** , clique com o botão direito do mouse e selecione **colar**.  
   
 4. Abra Program.cs.  
   
@@ -124,7 +126,7 @@ Este tópico explica como tornar um serviço Windows Communication Foundation (W
   
      Esse método usa o endereço do ponto de extremidade retornado de `FindCalculatorServiceAddress` para chamar o serviço de calculadora.  
   
-11. Dentro do `InvokeCalculatorService` método, crie uma instância da `CalculatorServiceClient` classe. Essa classe é definida pelo exemplo de [hospedagem interna](https://docs.microsoft.com/dotnet/framework/wcf/samples/self-host) . Ele foi gerado usando svcutil. exe.  
+11. Dentro do `InvokeCalculatorService` método, crie uma instância da `CalculatorServiceClient` classe. Essa classe é definida pelo exemplo de [hospedagem interna](../samples/self-host.md) . Ele foi gerado usando Svcutil.exe.  
   
     ```csharp  
     // Create a client  
@@ -190,11 +192,11 @@ Este tópico explica como tornar um serviço Windows Communication Foundation (W
   
 ### <a name="to-test-the-application"></a>Para testar o aplicativo  
   
-1. Abra um prompt de comando com privilégios elevados e execute Service. exe.  
+1. Abra um prompt de comando com privilégios elevados e execute Service.exe.  
   
-2. Abra um prompt de comando e execute Discoveryclientapp. exe.  
+2. Abra um prompt de comando e execute Discoveryclientapp.exe.  
   
-3. A saída de Service. exe deve ser parecida com a saída a seguir.  
+3. A saída de service.exe deve ser semelhante à saída a seguir.  
   
     ```output  
     Received Add(100,15.99)  
@@ -207,7 +209,7 @@ Este tópico explica como tornar um serviço Windows Communication Foundation (W
     Return: 6.25390869293308  
     ```  
   
-4. A saída de Discoveryclientapp. exe deve ser semelhante à saída a seguir.  
+4. A saída de Discoveryclientapp.exe deve ser semelhante à saída a seguir.  
   
     ```output  
     Invoking CalculatorService at http://localhost:8000/ServiceModelSamples/service  
@@ -220,7 +222,8 @@ Este tópico explica como tornar um serviço Windows Communication Foundation (W
     ```  
   
 ## <a name="example"></a>Exemplo  
- Veja a seguir uma lista do código para este exemplo. Como esse código é baseado no exemplo de [hospedagem interna](https://docs.microsoft.com/dotnet/framework/wcf/samples/self-host) , somente os arquivos que são alterados são listados. Para obter mais informações sobre o exemplo de hospedagem interna, consulte [instruções de instalação](https://docs.microsoft.com/dotnet/framework/wcf/samples/set-up-instructions).  
+
+ Veja a seguir uma lista do código para este exemplo. Como esse código é baseado no exemplo de [hospedagem interna](../samples/self-host.md) , somente os arquivos que são alterados são listados. Para obter mais informações sobre o exemplo de Self-Host, consulte [instruções de instalação](../samples/set-up-instructions.md).  
   
 ```csharp  
 // Service.cs  

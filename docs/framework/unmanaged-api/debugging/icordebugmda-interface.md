@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugMDA'
 title: Interface ICorDebugMDA
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 8ecbb854-295c-4dd4-b9fc-01ebeac46e06
 topic_type:
 - apiref
-ms.openlocfilehash: d711f36b4e2071dac9458a023e1d3cf4743e77b3
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 8e6e779c58d71b07edc9b63dff72aef728ebe050
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83212627"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801118"
 ---
 # <a name="icordebugmda-interface"></a>Interface ICorDebugMDA
+
 Representa uma mensagem do assistente de depuração gerenciado (MDA).  
   
 ## <a name="methods"></a>Métodos  
@@ -40,6 +42,7 @@ Representa uma mensagem do assistente de depuração gerenciado (MDA).
 > Esta interface não dá suporte para chamada remota, seja entre computadores ou processos cruzados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -48,7 +51,7 @@ Representa uma mensagem do assistente de depuração gerenciado (MDA).
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
-- [Diagnosticando erros com assistentes para depuração gerenciada](../../debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+- [Diagnosticando erros com assistentes de depuração gerenciados](../../debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Analisando arquivos de texto com o objeto TextFieldParser (Visual Basic)'
 title: Analisando arquivos de texto com o objeto TextFieldParser
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - I/O [Visual Basic], parsing files
 - files [Visual Basic], parsing
 ms.assetid: fc31d6e6-af0c-403f-8a00-d556b2c57567
-ms.openlocfilehash: 7b2cb0dd39d14dd94db661cc9cbacf99edf0e778
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 7ba3e9f98e4fea882260e8f194d59fda8eda9f69
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406671"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797374"
 ---
 # <a name="parsing-text-files-with-the-textfieldparser-object-visual-basic"></a>Analisando arquivos de texto com o objeto TextFieldParser (Visual Basic)
 

@@ -1,16 +1,16 @@
 ---
 ms.openlocfilehash: ec6724ab378dd614c55a024ede18d997d27be3a3
-ms.sourcegitcommit: 34dc3c0d0d0a1cc418abff259d9daa8078d00b81
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "79549612"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96032315"
 ---
 ### <a name="target-framework-net-framework-support-dropped"></a>Estrutura de destino: suporte a .NET Framework Descartado
 
 A partir do ASP.NET Core 3,0, .NET Framework é uma estrutura de destino sem suporte.
 
-#### <a name="change-description"></a>Descrição da alteração
+#### <a name="change-description"></a>Descrição das alterações
 
 .NET Framework 4,8 é a última versão principal do .NET Framework. Novos aplicativos de ASP.NET Core devem ser criados no .NET Core. A partir da versão 3,0 do .NET Core, você pode considerar ASP.NET Core 3,0 como parte do .NET Core.
 
@@ -24,7 +24,7 @@ Para obter mais informações sobre a motivação para essa alteração, consult
 
 #### <a name="version-introduced"></a>Versão introduzida
 
-3,0
+3.0
 
 #### <a name="old-behavior"></a>Comportamento antigo
 

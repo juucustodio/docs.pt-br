@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: matrizes de parâmetros (Visual Basic)'
 title: Matrizes de parâmetros
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,17 +11,19 @@ helpviewer_keywords:
 - procedures [Visual Basic], indefinite number of argument values
 - arrays [Visual Basic], parameter arrays
 ms.assetid: c43edfae-9114-4096-9ebc-8c5c957a1067
-ms.openlocfilehash: dac0575d73ffd4159e89bff344915a33b9d0e5d3
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e71524d9d62f0ece3a8310934eba15e9db16aaa1
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84364273"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100427577"
 ---
 # <a name="parameter-arrays-visual-basic"></a>Matrizes de parâmetros (Visual Basic)
+
 Normalmente, você não pode chamar um procedimento com mais argumentos do que a declaração de procedimento especifica. Quando você precisar de um número indefinido de argumentos, poderá declarar uma *matriz de parâmetros*, que permite que um procedimento aceite uma matriz de valores para um parâmetro. Você não precisa saber o número de elementos na matriz de parâmetros ao definir o procedimento. O tamanho da matriz é determinado individualmente por cada chamada para o procedimento.  
   
 ## <a name="declaring-a-paramarray"></a>Declarando um ParamArray  
+
  Você usa a palavra-chave [ParamArray](../../../language-reference/modifiers/paramarray.md) para denotar uma matriz de parâmetros na lista de parâmetros. As seguintes regras se aplicam:  
   
 - Um procedimento pode definir apenas uma matriz de parâmetros e deve ser o último parâmetro na definição do procedimento.  
@@ -32,6 +35,7 @@ Normalmente, você não pode chamar um procedimento com mais argumentos do que a
 - Todos os parâmetros anteriores à matriz de parâmetros devem ser necessários. A matriz de parâmetros deve ser o único parâmetro opcional.  
   
 ## <a name="calling-a-paramarray"></a>Chamando um ParamArray  
+
  Ao chamar um procedimento que define uma matriz de parâmetros, você pode fornecer o argumento de qualquer uma das seguintes maneiras:  
   
 - Nada — ou seja, você pode omitir o argumento [ParamArray](../../../language-reference/modifiers/paramarray.md) . Nesse caso, uma matriz vazia é passada para o procedimento. Se você passar explicitamente a palavra-chave [Nothing](../../../language-reference/nothing.md) , uma matriz NULL será passada para o procedimento e poderá resultar em uma NullReferenceException se o procedimento chamado não verificar essa condição.
@@ -46,6 +50,7 @@ Normalmente, você não pode chamar um procedimento com mais argumentos do que a
 > Sempre que você lida com uma matriz que pode ser indefinidamente grande, há um risco de sobreexecutar alguma capacidade interna de seu aplicativo. Se você aceitar uma matriz de parâmetros, deverá testar o tamanho da matriz que o código de chamada passou para ela. Siga as etapas apropriadas se for muito grande para seu aplicativo. Saiba mais em [Matrizes](../arrays/index.md).  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir define e chama a função `calcSum` . O `ParamArray` modificador para o parâmetro `args` permite que a função aceite um número variável de argumentos.  
   
  [!code-vb[VbVbalrStatements#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#26)]  
@@ -56,7 +61,7 @@ Normalmente, você não pode chamar um procedimento com mais argumentos do que a
   
  [!code-vb[VbVbcnProcedures#49](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#49)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.Information.UBound%2A>
 - [Procedimentos](./index.md)
@@ -65,5 +70,5 @@ Normalmente, você não pode chamar um procedimento com mais argumentos do que a
 - [Passando argumentos por posição e nome](./passing-arguments-by-position-and-by-name.md)
 - [Parâmetros Opcionais](./optional-parameters.md)
 - [Sobrecarga de procedimento](./procedure-overloading.md)
-- [Matrizes](../arrays/index.md)
+- [matrizes](../arrays/index.md)
 - [Opcional](../../../language-reference/modifiers/optional.md)

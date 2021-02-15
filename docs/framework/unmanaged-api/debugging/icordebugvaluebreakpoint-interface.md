@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugValueBreakpoint'
 title: Interface ICorDebugValueBreakpoint
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: c02338fe-da6c-467f-9567-70ebb387e901
 topic_type:
 - apiref
-ms.openlocfilehash: 1183f9f6d1ac221b20767f0a1bab15b3e9665a61
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: ff53b1f6e1557a3e98cc642f80eaaa2feaeac473
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396607"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790679"
 ---
 # <a name="icordebugvaluebreakpoint-interface"></a>Interface ICorDebugValueBreakpoint
+
 Estende a interface ICorDebugBreakpoint para fornecer acesso a valores específicos.  
   
 ## <a name="methods"></a>Métodos  
@@ -36,6 +38,7 @@ Estende a interface ICorDebugBreakpoint para fornecer acesso a valores específi
 > Esta interface não dá suporte para chamada remota, seja entre computadores ou processos cruzados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -44,6 +47,6 @@ Estende a interface ICorDebugBreakpoint para fornecer acesso a valores específi
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

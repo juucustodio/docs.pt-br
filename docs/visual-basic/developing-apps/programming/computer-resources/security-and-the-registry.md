@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: segurança e registro (Visual Basic)'
 title: Segurança e Registro
 ms.date: 07/20/2015
 helpviewer_keywords:
 - security [Visual Basic], registry
 - registry [Visual Basic], security issues
 ms.assetid: 9980aff7-2f69-492b-8f66-29a9a76d3df5
-ms.openlocfilehash: 2eba9d177769b22de3f931bc7af4905a80e316b5
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 2dc6413328bc32c004d281b096ee095d4f827feb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84359962"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666375"
 ---
 # <a name="security-and-the-registry-visual-basic"></a>Segurança e Registro (Visual Basic)
 
@@ -41,7 +42,7 @@ Esta página discute as implicações de segurança de armazenar dados no Regist
 > [!IMPORTANT]
 > Ao ler o Registro em um aplicativo Web, a identidade do usuário atual depende da autenticação e da representação implementadas no aplicativo Web.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.MyServices.RegistryProxy>
 - [Ler e gravar no Registro](reading-from-and-writing-to-the-registry.md)

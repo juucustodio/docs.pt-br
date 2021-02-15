@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: procedimentos de função (Visual Basic)'
 title: Procedimentos de função
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - procedures [Visual Basic], Function procedures
 - syntax [Visual Basic], function procedures
 ms.assetid: 1b9f632c-553b-4cb6-920a-ded117ead8c0
-ms.openlocfilehash: b0ba96a875fd8785e45eee565beefe4b961ffc9d
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 4997059fc33fb5d438519356b2c9fdd9e6a27cce
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84388745"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100436143"
 ---
 # <a name="function-procedures-visual-basic"></a>Procedimentos de função (Visual Basic)
 
@@ -58,7 +59,7 @@ Para obter mais informações, consulte "partes" na [instrução function](../..
 
 O valor `Function` que um procedimento envia de volta para o código de chamada é chamado de valor de retorno. O procedimento retorna esse valor de uma das duas maneiras:
 
-- Ele usa a `Return` instrução para especificar o valor de retorno e retorna o controle imediatamente para o programa de chamada. O exemplo a seguir ilustra isto.
+- Ele usa a `Return` instrução para especificar o valor de retorno e retorna o controle imediatamente para o programa de chamada. O exemplo a seguir ilustra essa situação.
 
   ```vb
   Function FunctionName [(ParameterList)] As ReturnType
@@ -68,7 +69,7 @@ O valor `Function` que um procedimento envia de volta para o código de chamada 
   End Function
   ```
 
-- Ele atribui um valor ao seu próprio nome de função em uma ou mais instruções do procedimento. O controle não retorna ao programa de chamada até que `Exit Function` uma `End Function` instrução ou seja executada. O exemplo a seguir ilustra isto.
+- Ele atribui um valor ao seu próprio nome de função em uma ou mais instruções do procedimento. O controle não retorna ao programa de chamada até que `Exit Function` uma `End Function` instrução ou seja executada. O exemplo a seguir ilustra essa situação.
 
   ```vb
   Function FunctionName [(ParameterList)] As ReturnType
@@ -92,7 +93,7 @@ A sintaxe de uma chamada para um `Function` procedimento é a seguinte.
 
 `If ((`*nomedafunção* `[(` *argumentolist* `)] / 3) <=` *expressão* de  `) Then`
 
-Quando você chama um `Function` procedimento, não precisa usar seu valor de retorno. Se você não fizer isso, todas as ações da função serão executadas, mas o valor de retorno será ignorado. <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A>geralmente é chamado dessa maneira.
+Quando você chama um `Function` procedimento, não precisa usar seu valor de retorno. Se você não fizer isso, todas as ações da função serão executadas, mas o valor de retorno será ignorado. <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A> geralmente é chamado dessa maneira.
 
 ### <a name="illustration-of-declaration-and-call"></a>Ilustração de declaração e chamada
 
@@ -104,7 +105,7 @@ O exemplo a seguir mostra uma chamada típica para `hypotenuse` .
 
 [!code-vb[VbVbcnProcedures#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#6)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos](./index.md)
 - [Subprocedimentos](./sub-procedures.md)

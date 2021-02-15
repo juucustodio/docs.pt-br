@@ -11,12 +11,12 @@ helpviewer_keywords:
 - PEverify.exe
 - PE files, PEVerify
 ms.assetid: f4f46f9e-8d08-4e66-a94b-0c69c9b0bbfa
-ms.openlocfilehash: 478c04a45c7f9d3ad568a6bc4a12a89fe786583a
-ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
+ms.openlocfilehash: c859aa4e2e3ae95c5c72aed930a9bc4a05add296
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85325623"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96238581"
 ---
 # <a name="peverifyexe-peverify-tool"></a>Peverify.exe (ferramenta PEVerify)
 
@@ -30,7 +30,7 @@ A ferramenta PEVerify ajuda os desenvolvedores que geram MSIL (Microsoft Interme
 peverify filename [options]  
 ```  
   
-## <a name="parameters"></a>Parâmetros  
+## <a name="parameters"></a>parâmetros  
   
 |Argumento|Descrição|  
 |--------------|-----------------|  
@@ -40,7 +40,7 @@ peverify filename [options]
 |------------|-----------------|  
 |**/break=** *maxErrorCount*|Anula a verificação depois de erros *maxErrorCount*.<br /><br /> Esse parâmetro não é compatível no .NET Framework versão 2.0 ou posterior.|  
 |**/clock**|Mede e relata os seguintes tempos de verificação em milissegundos:<br /><br /> **MD Val. cycle**<br /> Ciclo de validação dos metadados<br /><br /> **MD Val. pure**<br /> Validação dos metadados pura<br /><br /> **IL Ver. cycle**<br /> Ciclo de verificação MSIL<br /><br /> **IL Ver pure**<br /> Verificação MSIL pura<br /><br /> Os tempos de **MD Val. cycle** e **IL Ver. cycle** incluem o tempo necessário para a realização de procedimentos de inicialização e desligamento necessários. Os tempos de **MD Val. pure** e **IL Ver pure** refletem o tempo necessário para a realização da validação ou apenas da verificação.|  
-|**/help**|Exibe sintaxe de comando e opções para a ferramenta.|  
+|**/Help**|Exibe sintaxe de comando e opções para a ferramenta.|  
 |**/hresult**|Exibe códigos de erro em formato hexadecimal.|  
 |**/ignore=** *hex.code* [, *hex.code*]|Ignora os códigos de erro especificados.|  
 |**/ignore=@** *responseFile*|Ignora os códigos de erro listados no arquivo de resposta especificado.|  
@@ -55,6 +55,7 @@ peverify filename [options]
 |**/?**|Exibe sintaxe de comando e opções para a ferramenta.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O Common Language Runtime depende na execução fortemente tipada do código de aplicativo para ajudar a impor mecanismos de segurança e isolamento. Normalmente, o código que não é [fortemente tipado verificável](../../standard/security/key-security-concepts.md#type-safety-and-security) não pode ser executado, embora seja possível definir a política de segurança para permitir a execução de código confiável, mas não verificável.  
   
  Se as opções **/md** ou **/il** não forem especificadas, Peverify.exe realizará ambos os tipos de verificações. Peverify.exe realiza as verificações de **/md** primeiro. Se não houver erros, as verificações de **/il** serão feitas. Se você especificar **/md** e **/il**, as verificações de **/il** serão feitas mesmo se houver erros nos metadados. Por isso, se não houver erros de metadados, **peverify** *filename* equivalerá a **peverify** *filename* **/md** **/il**.  
@@ -64,6 +65,7 @@ peverify filename [options]
 .NET Framework versão 2,0 ou posterior dá suporte `byref` a retornos verificáveis especificados usando as seguintes instruções MSIL:,,,, `dup` `ldsflda` `ldflda` `ldelema` `call` e `unbox` .  
   
 ## <a name="examples"></a>Exemplos  
+
  O comando a seguir realiza verificações de validação dos metadados e verificações de segurança fortemente tipada MSIL para métodos implementados no assembly `myAssembly.exe`.  
   
 ```console  

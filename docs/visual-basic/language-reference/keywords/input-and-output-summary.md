@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Resumo de entrada e saída (Visual Basic)'
 title: Resumo de entrada e saída
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,14 +7,15 @@ helpviewer_keywords:
 - output, Visual Basic functions
 - I/O [Visual Basic], functions
 ms.assetid: 6b0cbb88-6593-43b8-8a40-a61563bc0ce9
-ms.openlocfilehash: 44321d75ce88beead2c631318392e5d630bae74b
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 214eb827a9630005c68ff3c8631957b8e2752a05
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84373467"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99774818"
 ---
 # <a name="input-and-output-summary-visual-basic"></a>Resumo de entrada e saída (Visual Basic)
+
 As palavras-chave do idioma Visual Basic e os membros da biblioteca de tempo de execução são organizados por finalidade e uso.  
   
 |Ação|Elemento de linguagem|  
@@ -31,7 +33,7 @@ As palavras-chave do idioma Visual Basic e os membros da biblioteca de tempo de 
 |Definir a posição de leitura/gravação em um arquivo.|<xref:Microsoft.VisualBasic.FileSystem.Seek%2A>|  
 |Gravar em um arquivo.|<xref:Microsoft.VisualBasic.FileSystem.FilePut%2A>, <xref:Microsoft.VisualBasic.FileSystem.FilePutObject%2A>, <xref:Microsoft.VisualBasic.FileSystem.Print%2A>, <xref:Microsoft.VisualBasic.FileSystem.Write%2A>, <xref:Microsoft.VisualBasic.FileSystem.WriteLine%2A>|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Palavras-chave](index.md)
 - [Membros da Biblioteca de Runtime do Visual Basic](../runtime-library-members.md)

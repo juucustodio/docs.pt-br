@@ -1,15 +1,17 @@
 ---
-title: Como criar um contrato de resposta/solicitação
+description: 'Saiba mais sobre: como criar um contrato de Request-Reply'
+title: 'Como: criar um contrato de resposta/solicitação'
 ms.date: 03/30/2017
 ms.assetid: 801d90da-3d45-4284-9c9f-56c8aadb4060
-ms.openlocfilehash: 8a09c265c77edc584b591477e64314f1e76e332b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: f5e63538a405aa451ffd3be114485604c00fa407
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84593432"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734692"
 ---
-# <a name="how-to-create-a-request-reply-contract"></a>Como criar um contrato de resposta/solicitação
+# <a name="how-to-create-a-request-reply-contract"></a>Como: criar um contrato de resposta/solicitação
+
 Um contrato de solicitação-resposta especifica um método que retorna uma resposta. A resposta deve ser enviada e correlacionada à solicitação sob os termos deste contrato. Mesmo que o método não retorne nenhuma resposta ( `void` em C# ou um `Sub` no Visual Basic), a infraestrutura cria e envia uma mensagem vazia para o chamador. Para evitar o envio de uma mensagem de resposta vazia, use um contrato unidirecional para a operação.  
   
 ### <a name="to-create-a-request-reply-contract"></a>Para criar um contrato de solicitação-resposta  
@@ -23,6 +25,7 @@ Um contrato de solicitação-resposta especifica um método que retorna uma resp
 4. Opcional. Defina o valor da <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> propriedade como `true` para impedir o envio de uma mensagem de resposta vazia. Por padrão, todas as operações são contratos de solicitação-resposta.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir define um contrato para um serviço de calculadora que fornece `Add` `Subtract` métodos e. O `Multiply` método não faz parte do contrato porque não está marcado pela <xref:System.ServiceModel.OperationContractAttribute> classe e, portanto, não pode ser acessado pelos clientes.  
   
 ```csharp
@@ -51,4 +54,4 @@ public interface ICalculator
 
 - <xref:System.ServiceModel.OperationContractAttribute>
 - [Criando contratos de serviço](../designing-service-contracts.md)
-- [Como criar um contrato duplex](how-to-create-a-duplex-contract.md)
+- [Como: criar um contrato duplex](how-to-create-a-duplex-contract.md)

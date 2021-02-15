@@ -1,18 +1,20 @@
 ---
-title: Como proteger um serviço com um certificado X.509
+description: 'Saiba mais sobre: como proteger um serviço com um certificado X. 509'
+title: 'Como: proteger um serviço com um certificado X.509'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 2d06c2aa-d0d7-4e5e-ad7e-77416aa1c10b
-ms.openlocfilehash: 10d6db63368ee55040f85f922b9483982e8ff264
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 57c8e78777c620fd3078651dbafbbf010fbd3768
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596962"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643378"
 ---
-# <a name="how-to-secure-a-service-with-an-x509-certificate"></a>Como proteger um serviço com um certificado X.509
+# <a name="how-to-secure-a-service-with-an-x509-certificate"></a>Como: proteger um serviço com um certificado X.509
+
 A proteção de um serviço com um certificado X. 509 é uma técnica básica que a maioria das ligações em Windows Communication Foundation (WCF) usa. Este tópico percorre as etapas de configuração de um serviço hospedado internamente com um certificado X. 509.  
   
  Um pré-requisito é um certificado válido que pode ser usado para autenticar o servidor. O certificado deve ser emitido para o servidor por uma autoridade de certificação confiável. Se o certificado não for válido, qualquer cliente que tente usar o serviço não confiará no serviço e, consequentemente, nenhuma conexão será feita. Para obter mais informações sobre como usar certificados, consulte [trabalhando com certificados](working-with-certificates.md).  
@@ -62,12 +64,14 @@ A proteção de um serviço com um certificado X. 509 é uma técnica básica qu
      [!code-vb[C_SecureWithCertificate#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewithcertificate/vb/source.vb#8)]  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir usa o <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential.SetCertificate%2A> método para configurar um serviço com um certificado X. 509.  
   
  [!code-csharp[C_SecureWithCertificate#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securewithcertificate/cs/source.cs#9)]
  [!code-vb[C_SecureWithCertificate#9](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewithcertificate/vb/source.vb#9)]  
   
 ## <a name="compiling-the-code"></a>Compilando o código  
+
  Os namespaces a seguir são necessários para compilar o código:  
   
 - <xref:System>  

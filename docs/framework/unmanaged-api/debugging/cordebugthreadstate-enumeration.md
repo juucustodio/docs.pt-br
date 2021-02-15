@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorDebugThreadState'
 title: Enumeração CorDebugThreadState
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: a3ccdf18-4ec6-494d-9024-48e5c8c724f5
 topic_type:
 - apiref
-ms.openlocfilehash: 9c22ca47a606da0949529cf55655bbcde19cb5c9
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: 0cf83ee31547e49ccc7d09e0ab4ee85548688b36
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795658"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661799"
 ---
 # <a name="cordebugthreadstate-enumeration"></a>Enumeração CorDebugThreadState
+
 Especifica o estado de um thread para depuração.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,17 +37,19 @@ typedef enum CorDebugThreadState {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`THREAD_RUN`|O thread é executado livremente, a menos que ocorra um evento de depuração.|  
 |`THREAD_SUSPEND`|Não é possível executar o thread.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O depurador usa a `CorDebugThreadState` enumeração para controlar a execução de um thread. O estado de um thread pode ser definido usando o método [ICorDebugThread:: SetDebugState](icordebugthread-setdebugstate-method.md) ou [ICorDebugController:: SetAllThreadsDebugState](icordebugcontroller-setallthreadsdebugstate-method.md) .  
   
  Um retorno de chamada fornecido à [API de hospedagem](../hosting/index.md) permite bombeamento de mensagens, portanto, um estado interrompido não é necessário.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

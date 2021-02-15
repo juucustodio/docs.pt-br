@@ -2,15 +2,15 @@
 title: Registrando em log com o SDK do Azure para .NET
 description: Saiba como habilitar o registro em log com o SDK do Azure para bibliotecas de cliente .NET
 ms.date: 03/20/2020
-ms.custom: azure-sdk-dotnet
+ms.custom: devx-track-dotnet
 ms.author: casoper
 author: camsoper
-ms.openlocfilehash: 0b255713bc9c13e0cbdaeb25a3d0fe46e91e815d
-ms.sourcegitcommit: 3492dafceb5d4183b6b0d2f3bdf4a1abc4d5ed8c
+ms.openlocfilehash: 6adc485867e9bad401a15da19e6cb4424d2ddb13
+ms.sourcegitcommit: 3d6d6595a03915f617349781f455f838a44b0f44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86416026"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97700704"
 ---
 # <a name="logging-with-the-azure-sdk-for-net"></a>Registrando em log com o SDK do Azure para .NET
 
@@ -21,7 +21,7 @@ As bibliotecas de cliente do [SDK do Azure](https://azure.microsoft.com/download
 - Configurar log personalizado
 
 > [!IMPORTANT]
-> Este artigo se aplica a bibliotecas de cliente que usam as versões mais recentes do SDK do Azure para .NET. Para ver se há suporte para uma biblioteca, consulte a lista de [versões mais recentes do SDK do Azure](https://azure.github.io/azure-sdk/releases/latest/index.html). Se seu aplicativo estiver usando uma versão mais antiga das bibliotecas de cliente do SDK do Azure, consulte as instruções específicas na documentação do serviço aplicável.
+> Este artigo se aplica a bibliotecas de cliente que usam as versões mais recentes do SDK do Azure para .NET. Para ver se uma biblioteca é compatível, veja a lista de [versões mais recentes do SDK do Azure](https://azure.github.io/azure-sdk/releases/latest/index.html). Se o aplicativo estiver usando uma versão mais antiga das bibliotecas de clientes do SDK do Azure, veja as instruções específicas na documentação do serviço aplicável.
 
 ## <a name="log-information"></a>Informações do log
 
@@ -96,7 +96,7 @@ using AzureEventSourceListener listener = new AzureEventSourceListener((e, messa
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Habilitar o log de diagnóstico para aplicativos no serviço Azure App](/azure/app-service/troubleshoot-diagnostic-logs)
+- [Habilitar log de diagnósticos para aplicativos no Serviço de Aplicativo do Azure](/azure/app-service/troubleshoot-diagnostic-logs)
 - Examinar o [log de segurança do Azure e as opções de auditoria](/azure/security/fundamentals/log-audit)
 - Saiba como trabalhar com [os logs da plataforma Azure](/azure/azure-monitor/platform/platform-logs-overview)
 - Leia mais sobre [rastreamento e log do .NET Core](../core/diagnostics/logging-tracing.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorThreadpool:: CorChangeTimer'
 title: Método ICorThreadpool::CorChangeTimer
 ms.date: 03/30/2017
 api_name:
@@ -15,17 +16,18 @@ helpviewer_keywords:
 ms.assetid: 82b03a59-5a87-43ed-9b75-e04b256e1a46
 topic_type:
 - apiref
-ms.openlocfilehash: e2174afe0ee96bd153b7b40c73c0185d9058a0dc
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: 259974d7c04f0bf0b4cc6b93234b35ab2c96e2ae
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83760312"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671991"
 ---
 # <a name="icorthreadpoolcorchangetimer-method"></a>Método ICorThreadpool::CorChangeTimer
+
 Esse método oferece suporte a infraestrutura do .NET Framework e não se destina a ser usado diretamente do seu código.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT CorChangeTimer (  
@@ -37,14 +39,15 @@ HRESULT CorChangeTimer (
 ```  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorThreadpool](icorthreadpool-interface.md)

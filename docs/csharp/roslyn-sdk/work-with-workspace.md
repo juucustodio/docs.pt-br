@@ -3,12 +3,12 @@ title: Trabalhar com o modelo de workspace do SDK do .NET Compiler Platform
 description: Esta visão geral fornece uma compreensão do tipo usado para consultar e manipular o workspace e os projetos para o código.
 ms.date: 10/15/2017
 ms.custom: mvc
-ms.openlocfilehash: d21873b132d5f0788033693a319e556feeac59a9
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b613c85c01cc054dea9dd4bb9cf0062ffedb08bf
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79156877"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899107"
 ---
 # <a name="work-with-a-workspace"></a>Trabalhar com um workspace
 
@@ -24,7 +24,7 @@ O <xref:Microsoft.CodeAnalysis.Workspace> fornece acesso ao modelo atual da solu
 
 Também pode criar workspaces independentes desconectados do ambiente de host ou usados em um aplicativo que não tem nenhum ambiente de host.
 
-## <a name="solutions-projects-documents"></a>Soluções, projetos, documentos
+## <a name="solutions-projects-and-documents"></a>Soluções, projetos e documentos
 
 Embora um workspace possa ser alterado sempre que uma tecla é pressionada, você pode trabalhar com o modelo da solução de forma isolada.
 
@@ -40,4 +40,4 @@ O diagrama a seguir é uma representação de como o Workspace se relaciona ao a
 
 ## <a name="summary"></a>Resumo
 
-O Roslyn expõe um conjunto de APIs do compilador e APIs dos Workspaces que fornecem informações detalhadas sobre o código-fonte e que têm fidelidade total com as linguagens C# e Visual Basic.  O SDK do .NET Compiler Platform diminui drasticamente a barreira de entrada para a criação de aplicativos e ferramentas voltadas para o código. Ele cria muitas oportunidades de inovação em áreas como metaprogramação, geração e transformação de código, uso interativo das linguagens C# e Visual Basic, e incorporação de C# e Visual Basic em linguagens específicas de domínio.  
+O Roslyn expõe um conjunto de APIs do compilador e APIs dos Workspaces que fornecem informações detalhadas sobre o código-fonte e que têm fidelidade total com as linguagens C# e Visual Basic.  O SDK do .NET Compiler Platform diminui drasticamente a barreira de entrada para a criação de aplicativos e ferramentas voltadas para o código. Ele cria muitas oportunidades de inovação em áreas como metaprogramação, geração de código e transformação, uso interativo das linguagens C# e Visual Basic e incorporação de C# e Visual Basic em linguagens específicas de domínio.  

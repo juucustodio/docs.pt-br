@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorSymVarFlag'
 title: Enumeração CorSymVarFlag
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: c3f7d307-4047-4f9a-be8c-f152fca42fd0
 topic_type:
 - apiref
-ms.openlocfilehash: d41e048b67d4bc7159f6dd5266457651f1658290
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 28f4b4775e20703e5dcaa7daf69affd3548aa3f2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420585"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800455"
 ---
 # <a name="corsymvarflag-enumeration"></a>Enumeração CorSymVarFlag
+
 Indica se uma variável é gerada pelo compilador.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,13 +37,14 @@ typedef enum CorSymVarFlag
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`VAR_IS_COMP_GEN`|Indica que a variável fornecida é gerada pelo compilador.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Enumerações de armazenamento de símbolo de diagnóstico](diagnostics-symbol-store-enumerations.md)

@@ -1,54 +1,56 @@
 ---
+description: 'Saiba mais sobre: Resumo do tipo de rastreamento'
 title: Resumo de tipo de rastreamento
 ms.date: 03/30/2017
 ms.assetid: e639410b-d1d1-479c-b78e-a4701d4e4085
-ms.openlocfilehash: 8ed6dceb19caa52f928f285064c60337e3f15a87
-ms.sourcegitcommit: 515469828d0f040e01bde01df6b8e4eb43630b06
+ms.openlocfilehash: ebfe9de16766494a6aebe0a8d2501954855dc4df
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78674834"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803211"
 ---
 # <a name="trace-type-summary"></a>Resumo de tipo de rastreamento
-[Os Níveis de Origem](xref:System.Diagnostics.SourceLevels) definem vários níveis de rastreamento: Crítico, Erro, Aviso, `ActivityTracing` Informação e Verbose, bem como fornece uma descrição do sinalizador, que alterna a saída de eventos de limite de rastreamento e transferência de atividade.  
+
+[Os níveis de origem](xref:System.Diagnostics.SourceLevels) definem vários níveis de rastreamento: crítico, erro, aviso, informações e detalhados, além de fornecer uma descrição do `ActivityTracing` sinalizador, que alterna a saída dos eventos de limite de rastreamento e de transferência de atividade.  
   
- Você também <xref:System.Diagnostics.TraceEventType> pode revisar os tipos de traços <xref:System.Diagnostics>que podem ser emitidos a partir de .  
+ Você também pode examinar <xref:System.Diagnostics.TraceEventType> os tipos de rastreamentos que podem ser emitidos <xref:System.Diagnostics> .  
   
- A tabela a seguir lista as mais importantes.  
+ A tabela a seguir lista os mais importantes.  
   
-|Tipo de traço|Descrição|  
+|Tipo de rastreamento|Descrição|  
 |----------------|-----------------|  
 |Crítico|Erro fatal ou falha do aplicativo.|  
-|Erro|Erro recuperável.|  
+|Erro do|Erro recuperável.|  
 |Aviso|Mensagem informativa.|  
 |Informações|Problema não crítico.|  
 |Detalhado|Rastreamento de depuração.|  
-|Iniciar|Começando uma unidade lógica de processamento.|  
+|Iniciar|Início de uma unidade lógica de processamento.|  
 |Suspend|Suspensão de uma unidade lógica de processamento.|  
-|Continuar|Retomada de uma unidade lógica de processamento.|  
-|Stop|Parando uma unidade lógica de processamento.|  
-|Transferir|Alteração da identidade de correlação.|  
+|Retomar|Retomada de uma unidade lógica de processamento.|  
+|Parar|Interrupção de uma unidade lógica de processamento.|  
+|Transferência|Alteração da identidade de correlação.|  
   
- Uma atividade é definida como uma combinação dos tipos de traçoacima.  
+ Uma atividade é definida como uma combinação dos tipos de rastreamento acima.  
   
- A seguir é uma expressão regular que define uma atividade ideal em um escopo local (fonte de rastreamento),  
+ Veja a seguir uma expressão regular que define uma atividade ideal em um escopo local (origem do rastreamento),  
   
  `R = Start (Critical | Error | Warning | Information | Verbose | Transfer | (Transfer Suspend Transfer Resume) )* Stop`  
   
- Isso significa que uma atividade deve satisfazer as seguintes condições.  
+ Isso significa que uma atividade deve atender às condições a seguir.  
   
-- Ele deve começar e parar, respectivamente, por um rastreamento start e stop  
+- Ele deve iniciar e parar respectivamente por um rastreamento de iniciar e parar  
   
-- Ele deve ter um rastreamento de transferência imediatamente antes de um rastreamento suspender ou retomar  
+- Ele deve ter um rastreamento de transferência imediatamente antes de um rastreamento de suspensão ou retomada  
   
-- Ele não deve ter quaisquer vestígios entre os traços Suspender e Retomar se tais vestígios existem  
+- Ele não deve ter nenhum rastreamento entre os rastreamentos suspender e retomar se esses rastreamentos existirem  
   
-- Ele pode ter qualquer e tantos de traços críticos/erro/aviso/informações/verbose/transferência, desde que as condições anteriores sejam observadas  
+- Ele pode ter qualquer e quantos rastreamentos crítico/erro/aviso/informações/detalhados/de transferência, desde que as condições anteriores sejam observadas  
   
- A seguir é uma expressão regular que define uma atividade ideal no âmbito global,  
+ Veja a seguir uma expressão regular que define uma atividade ideal no escopo global,  
   
 `R+`  
   
- com R sendo a expressão regular para uma atividade no escopo local. Isso se traduz em,  
+ o R é a expressão regular para uma atividade no escopo local. Isso se traduz em,  
   
 `[R+ = Start ( Critical | Error | Warning | Information | Verbose | Transfer | (Transfer Suspend Transfer Resume) )* Stop]+`

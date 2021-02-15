@@ -2,12 +2,12 @@
 title: Provedores de tipos
 description: 'Saiba como um provedor de tipo F # é um componente que fornece tipos, propriedades e métodos para uso em seus programas.'
 ms.date: 04/02/2018
-ms.openlocfilehash: eae64d2e318ee93f0b8d5b91f0c6da6c91743527
-ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
+ms.openlocfilehash: f01e207407b2282005d5722bed798df1d49d3ef6
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84202104"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468220"
 ---
 # <a name="type-providers"></a>Provedores de tipos
 
@@ -29,7 +29,7 @@ Apagar provedores de tipo produz tipos que só podem ser consumidos no assembly 
 
 As seguintes bibliotecas amplamente usadas contêm provedores de tipos para usos diferentes:
 
-- O [FSharp. Data](https://fsharp.github.io/FSharp.Data/) inclui provedores de tipos para formatos de documentos JSON, XML, CSV e HTML.
+- O FSharp. Data inclui provedores de tipos para formatos de documentos JSON, XML, CSV e HTML.
 - O [Sqlfornecetor](https://fsprojects.github.io/SQLProvider/) fornece acesso com rigidez de tipos para bancos de dados de relação por meio de mapeamento de objeto e consultas de F # LINQ nessas fontes.
 - O [FSharp. Data. SqlClient](https://fsprojects.github.io/FSharp.Data.SqlClient/) tem um conjunto de provedores de tipos para inserção verificada em tempo de compilação de T-SQL em F #.
 - O [provedor de tipos de armazenamento do Azure](https://fsprojects.github.io/AzureStorageTypeProvider/) fornece tipos para BLOBs, tabelas e filas do Azure, permitindo que você acesse esses recursos sem a necessidade de especificar nomes de recursos como cadeias de caracteres em todo o programa.
@@ -37,7 +37,7 @@ As seguintes bibliotecas amplamente usadas contêm provedores de tipos para usos
 
 Quando necessário, você pode [criar seus próprios provedores de tipo personalizados](creating-a-type-provider.md)ou provedores de tipo de referência que foram criados por outras pessoas. Por exemplo, suponha que sua organização tenha um serviço de dados que forneça um grande e crescente número de conjuntos de dados nomeados, cada um com seu próprio esquema de dados estáveis. Você pode optar por criar um provedor de tipos que leia os esquemas e apresente os conjuntos de dados mais recentes disponíveis para o programador de uma forma fortemente tipada.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Tutorial: criar um provedor de tipos](creating-a-type-provider.md)
 - [Referência de linguagem F #](../../language-reference/index.md)

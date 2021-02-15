@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: interceptador de mensagens personalizado'
 title: Interceptor de mensagem personalizado
 ms.date: 03/30/2017
 ms.assetid: 73f20972-53f8-475a-8bfe-c133bfa225b0
-ms.openlocfilehash: b9a517d0f8ada3680d49cd5ab0b13fa9e4d85402
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 916e608e9f5bee66c5d2b56304af0255ace5b827
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600056"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752464"
 ---
 # <a name="custom-message-interceptor"></a>Interceptor de mensagem personalizado
+
 Este exemplo demonstra o uso do modelo de extensibilidade do canal. Em particular, ele mostra como implementar um elemento de ligação personalizado que cria fábricas de canal e ouvintes de canal para interceptar todas as mensagens recebidas e enviadas em um ponto específico na pilha de tempo de execução. O exemplo também inclui um cliente e um servidor que demonstram o uso dessas fábricas personalizadas.  
   
  Neste exemplo, o cliente e o serviço são programas de console (. exe). O cliente e o serviço fazem uso de uma biblioteca comum (. dll) que contém o elemento de associação personalizado e seus objetos de tempo de execução associados.  
@@ -37,9 +39,11 @@ Este exemplo demonstra o uso do modelo de extensibilidade do canal. Em particula
 4. Adicione uma seção de extensão de elemento de associação para expor o novo elemento de associação ao sistema de configuração.  
   
 ## <a name="channel-shapes"></a>Formas de canal  
+
  A primeira etapa na gravação de um canal personalizado em camadas é decidir quais formas são necessárias para o canal. Para nosso Inspetor de mensagem, damos suporte a qualquer forma com a qual a camada abaixo dá suporte (por exemplo, se a camada abaixo pode criar <xref:System.ServiceModel.Channels.IOutputChannel> e <xref:System.ServiceModel.Channels.IDuplexSessionChannel> , além disso, também expõe <xref:System.ServiceModel.Channels.IOutputChannel> e <xref:System.ServiceModel.Channels.IDuplexSessionChannel> ).  
   
 ## <a name="channel-factory-and-listener-factory"></a>Fábrica de canais e fábrica de ouvintes  
+
  A próxima etapa na gravação de um canal personalizado em camadas é criar uma implementação do <xref:System.ServiceModel.Channels.IChannelFactory> para canais de cliente e de <xref:System.ServiceModel.Channels.IChannelListener> para canais de serviço.  
   
  Essas classes usam uma fábrica interna e um ouvinte e delegam todas `OnCreateChannel` as `OnAcceptChannel` chamadas de e para a fábrica interna e o ouvinte.  
@@ -57,7 +61,8 @@ class InterceptingChannelListener<TChannel> : ListenerFactoryBase<TChannel>
 ```  
   
 ## <a name="adding-a-binding-element"></a>Adicionando um elemento de associação  
- O exemplo define um elemento de associação personalizado: `InterceptingBindingElement` . `InterceptingBindingElement`usa uma `ChannelMessageInterceptor` como entrada e `ChannelMessageInterceptor` a utiliza para manipular mensagens que passam por ela. Essa é a única classe que deve ser pública. A fábrica, o ouvinte e os canais podem ser implementações internas das interfaces de tempo de execução públicas.  
+
+ O exemplo define um elemento de associação personalizado: `InterceptingBindingElement` . `InterceptingBindingElement` usa uma `ChannelMessageInterceptor` como entrada e `ChannelMessageInterceptor` a utiliza para manipular mensagens que passam por ela. Essa é a única classe que deve ser pública. A fábrica, o ouvinte e os canais podem ser implementações internas das interfaces de tempo de execução públicas.  
   
 ```csharp
 public class InterceptingBindingElement : BindingElement
@@ -66,6 +71,7 @@ public class InterceptingBindingElement : BindingElement
 ```  
   
 ## <a name="adding-configuration-support"></a>Adicionando suporte à configuração  
+
  Para integrar com a configuração de associação, a biblioteca define um manipulador de seção de configuração como uma seção de extensão de elemento de associação. Os arquivos de configuração do cliente e do servidor devem registrar a extensão do elemento de associação com o sistema de configuração. Os implementadores que desejam expor seu elemento de ligação para o sistema de configuração podem derivar dessa classe.  
   
 ```csharp
@@ -76,9 +82,11 @@ public abstract class InterceptingElement : BindingElementExtensionElement
 ```  
   
 ## <a name="adding-policy"></a>Adicionando política  
+
  Para integrar com nosso sistema de política, `InterceptingBindingElement` implemente IPolicyExportExtension para sinalizar que devemos participar da geração de políticas. Para dar suporte à política de importação em um cliente gerado, o usuário pode registrar uma classe derivada de `InterceptingBindingElementImporter` e substituir `CreateMessageInterceptor` () para gerar sua classe habilitada para política `ChannelMessageInterceptor` .  
   
 ## <a name="example-droppable-message-inspector"></a>Exemplo: Inspetor de mensagem Dropper  
+
  Incluído no exemplo, há um exemplo de implementação de `ChannelMessageInspector` que descarta mensagens.  
   
 ```csharp
@@ -169,4 +177,4 @@ Dangerous wind detected! Reported speed (70) is greater than 64 kph.
   
 4. Para executar o exemplo em uma configuração de computador único ou cruzado, siga as instruções em [executando os exemplos de Windows Communication Foundation](running-the-samples.md).  
   
-5. Execute o Service. exe primeiro e, em seguida, execute Client. exe e observe as janelas do console para saída.  
+5. Execute Service.exe primeiro e, em seguida, execute Client.exe e observe as janelas do console para saída.  

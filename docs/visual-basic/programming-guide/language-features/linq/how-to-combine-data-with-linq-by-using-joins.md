@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como combinar dados com LINQ usando junções (Visual Basic)'
 title: Como combinar dados a LINQ com junções
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,14 +10,15 @@ helpviewer_keywords:
 - joining [LINQ in Visual Basic]
 - queries [LINQ in Visual Basic], how-to topics
 ms.assetid: 5b00a478-035b-41c6-8918-be1a97728396
-ms.openlocfilehash: de8c4ec3ab8a0f2335c034231c661380420fd31b
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 69cf0bcfb8d9241afdd0616621f35d7ca93bbb9e
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404998"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100422738"
 ---
 # <a name="how-to-combine-data-with-linq-by-using-joins-visual-basic"></a>Como combinar dados a LINQ com junções (Visual Basic)
+
 Visual Basic fornece as `Join` `Group Join` cláusulas de consulta e para permitir que você combine o conteúdo de várias coleções com base em valores comuns entre as coleções. Esses valores são conhecidos como valores de *chave* . Os desenvolvedores familiarizados com conceitos de banco de dados relacional reconhecerão a `Join` cláusula como uma junção interna e a `Group Join` cláusula como, efetivamente, uma junção externa esquerda.  
   
  Os exemplos neste tópico demonstram algumas maneiras de combinar dados usando as `Join` `Group Join` cláusulas de consulta e.  
@@ -33,6 +35,7 @@ Visual Basic fornece as `Join` `Group Join` cláusulas de consulta e para permit
     [!code-vb[VbLINQHowTos#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQHowTos/VB/Module1.vb#2)]  
   
 ## <a name="perform-an-inner-join-by-using-the-join-clause"></a>Executar uma junção interna usando a cláusula JOIN  
+
  Uma junção interna combina dados de duas coleções. Os itens para os quais os valores de chave especificados correspondem são incluídos. Todos os itens de uma das coleções que não têm um item correspondente na outra coleção são excluídos.  
   
  No Visual Basic, o LINQ fornece duas opções para executar uma junção interna: uma junção implícita e uma junção explícita.  
@@ -48,6 +51,7 @@ Visual Basic fornece as `Join` `Group Join` cláusulas de consulta e para permit
      [!code-vb[VbLINQHowTos#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQHowTos/VB/Module1.vb#4)]  
   
 ## <a name="perform-a-left-outer-join-by-using-the-group-join-clause"></a>Executar uma junção externa esquerda usando a cláusula Group Join  
+
  Uma junção externa esquerda inclui todos os itens da coleção do lado esquerdo da junção e apenas valores correspondentes da coleção do lado direito da junção. Todos os itens da coleção do lado direito da junção que não têm um item correspondente na coleção do lado esquerdo são excluídos do resultado da consulta.  
   
  A `Group Join` cláusula executa, na verdade, uma junção externa esquerda. A diferença entre o que normalmente é conhecido como uma junção externa esquerda e o que a `Group Join` cláusula retorna é que a `Group Join` cláusula agrupa os resultados da coleção do lado direito da junção para cada item na coleção do lado esquerdo. Em um banco de dados relacional, uma junção externa esquerda retorna um resultado não agrupado no qual cada item no resultado da consulta contém itens correspondentes de ambas as coleções na junção. Nesse caso, os itens da coleção do lado esquerdo da junção são repetidos para cada item correspondente da coleção do lado direito. Você verá como isso se parece quando você conclui o próximo procedimento.  
@@ -61,6 +65,7 @@ Visual Basic fornece as `Join` `Group Join` cláusulas de consulta e para permit
      [!code-vb[VbLINQHowTos#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQHowTos/VB/Module1.vb#3)]  
   
 ## <a name="perform-a-join-by-using-a-composite-key"></a>Executar uma junção usando uma chave composta  
+
  Você pode usar a `And` palavra-chave em uma `Join` `Group Join` cláusula or para identificar vários campos de chave a serem usados ao corresponder valores das coleções que estão sendo Unidas. A `And` palavra-chave especifica que todos os campos de chave especificados devem corresponder aos itens a serem associados.  
   
 #### <a name="to-perform-a-join-by-using-a-composite-key"></a>Para executar uma junção usando uma chave composta  
@@ -79,7 +84,7 @@ Visual Basic fornece as `Join` `Group Join` cláusulas de consulta e para permit
   
 2. Pressione F5 para executar os exemplos.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ](index.md)
 - [Introdução a LINQ no Visual Basic](introduction-to-linq.md)

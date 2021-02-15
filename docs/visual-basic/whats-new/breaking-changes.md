@@ -1,6 +1,6 @@
 ---
-title: Alterações recentes no compilador Visual Basic
-description: Encontre alterações significativas no compilador de Visual Basic que você está usando.
+title: Alterações interruptivas no compilador de Visual Basic
+description: Encontre alterações interruptivas no compilador de Visual Basic que você está usando.
 ms.topic: troubleshooting
 ms.custom: updateeachrelease
 ms.date: 08/18/2020
@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 09/05/2020
 ms.locfileid: "89495834"
 ---
-# <a name="learn-about-any-breaking-changes-in-the-visual-basic-compiler"></a>Saiba mais sobre as alterações significativas no compilador de Visual Basic
+# <a name="learn-about-any-breaking-changes-in-the-visual-basic-compiler"></a>Saiba mais sobre alterações interruptivas no compilador de Visual Basic
 
-A equipe [Roslyn](https://github.com/dotnet/roslyn) mantém uma lista de alterações significativas nos compiladores C# e Visual Basic. Você pode encontrar informações sobre essas alterações nesses links em seu repositório GitHub:
+A equipe da [Roslyn](https://github.com/dotnet/roslyn) mantém uma lista de alterações interruptivas nos compiladores do C# e do Visual Basic. Você pode encontrar informações sobre essas alterações nesses links em seu repositório GitHub:
 
-- [Alterações recentes na atualização 1 do VS2019 e além de em comparação com VS2019](https://github.com/dotnet/roslyn/blob/master/docs/compilers/Visual%20Basic/Compiler%20Breaking%20Changes%20-%20post%20VS2019.md)
-- [Alterações significativas desde VS2017 (VB 15)](https://github.com/dotnet/roslyn/blob/master/docs/compilers/Visual%20Basic/Compiler%20Breaking%20Changes%20-%20post%20VS2017.md)
-- [Alterações recentes no Roslyn 3,0 (VS2019) do Roslyn 2. * (VS2017)](https://github.com/dotnet/roslyn/blob/master/docs/compilers/Visual%20Basic/Compiler%20Breaking%20Changes%20-%20VS2019.md)
-- [Alterações recentes no Roslyn 1,0 (VS2015) do compilador C# nativo (VS2013 e anterior).](https://github.com/dotnet/roslyn/blob/master/docs/compilers/Visual%20Basic/Compiler%20Breaking%20Changes%20-%20VS2015.md)
+- [Alterações interruptivas no VS2019 Atualização 1 e posteriores em comparação com o VS2019](https://github.com/dotnet/roslyn/blob/master/docs/compilers/Visual%20Basic/Compiler%20Breaking%20Changes%20-%20post%20VS2019.md)
+- [Alterações interruptivas desde o VS2017 (VB 15)](https://github.com/dotnet/roslyn/blob/master/docs/compilers/Visual%20Basic/Compiler%20Breaking%20Changes%20-%20post%20VS2017.md)
+- [Alterações interruptivas no Roslyn 3.0 (VS2019) do Roslyn 2.* (VS2017)](https://github.com/dotnet/roslyn/blob/master/docs/compilers/Visual%20Basic/Compiler%20Breaking%20Changes%20-%20VS2019.md)
+- [Alterações interruptivas no Roslyn 1.0 (VS2015) do compilador nativo C# (VS2013 e anterior).](https://github.com/dotnet/roslyn/blob/master/docs/compilers/Visual%20Basic/Compiler%20Breaking%20Changes%20-%20VS2015.md)
 - [Membros de enumeração conflitantes](https://github.com/dotnet/roslyn/blob/master/docs/compilers/Visual%20Basic/Clashing%20Enum%20Members.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorPinvokeMap'
 title: Enumeração CorPinvokeMap
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: f14f986e-f6ce-42bc-aa23-18150c46d28c
 topic_type:
 - apiref
-ms.openlocfilehash: 199a649b0481c2a740926636345eefbda6831ef2
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 8285632725096b4e6afc85fe54a89f12fc899dd1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84007540"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784256"
 ---
 # <a name="corpinvokemap-enumeration"></a>Enumeração CorPinvokeMap
+
 Especifica as opções para uma chamada PInvoke.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -63,7 +65,7 @@ typedef enum  CorPinvokeMap {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`pmNoMangle`|Use cada nome de membro conforme especificado.|  
 |`pmCharSetMask`|Reservado.|  
@@ -89,12 +91,13 @@ typedef enum  CorPinvokeMap {
 |`pmMaxValue`|Reservado.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorHdr. h  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumerações de metadados](metadata-enumerations.md)

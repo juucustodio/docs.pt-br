@@ -1,19 +1,21 @@
 ---
+description: 'Saiba mais sobre: tipos de nó reconhecidos com consultas XPath'
 title: Tipos de nós reconhecidos com consultas XPath
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 ms.assetid: 1d33e22d-18e5-43f8-a466-2e3d0a8dd094
-ms.openlocfilehash: b9fc55b11455491406970af2a9232b277160875f
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 0fb310a7c2b353ecce14bb2f1a3ac8032fdde4d7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84288726"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675878"
 ---
 # <a name="node-types-recognized-with-xpath-queries"></a>Tipos de nós reconhecidos com consultas XPath
+
 Os tipos de nós reconhecidas em uma consulta XPath não são os mesmos tipos de nós localizados em Document Object Model (DOM).  
   
 ## <a name="w3c-xpath-node-types"></a>Tipos de nós XPath W3C  
+
  Os tipos de nós reconhecidas em uma consulta XPath não são tipos de nós localizados em Document Object Model (DOM). A seguir estão os tipos de nós XPath representados pela enumeração de <xref:System.Xml.XPath.XPathNodeType> .  
   
 - <xref:System.Xml.XPath.XPathNodeType.All>  
@@ -44,7 +46,7 @@ Os tipos de nós reconhecidas em uma consulta XPath não são os mesmos tipos de
   
  Para saber mais sobre o elemento de navegação, o atributo e nós de namespace, confira os tópicos [Navegação do nó usando XPathNavigator](node-set-navigation-using-xpathnavigator.md) e [Navegação do nó de atributo e do namespace usando XPathNavigator](attribute-and-namespace-node-navigation-using-xpathnavigator.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>

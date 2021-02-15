@@ -3,20 +3,20 @@ title: Efetuar roll forward de runtime para implantações autocontidas do .NET 
 description: Saiba mais as alterações de dotnet publish em implantações autossuficientes.
 author: KathleenDollard
 ms.date: 05/31/2018
-ms.openlocfilehash: 22385c7b5d2bf87755fd51cd6268d21fe3431c74
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 6bc578c63b28f51f1dd98e3e7e56fbe2c7a3e7cf
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75740790"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99505902"
 ---
 # <a name="self-contained-deployment-runtime-roll-forward"></a>Roll forward de runtime de implantação autossuficiente
 
-As [implantações de aplicativo autossuficientes](index.md) do .NET Core incluem as bibliotecas e o runtime do .NET Core. A partir do SDK do .NET Core 2.1 (.NET Core 2.1.300), uma implantação de aplicativo autocontida [publica o runtime de patch mais recente no computador](https://github.com/dotnet/designs/pull/36). Por padrão, [`dotnet publish`](../tools/dotnet-publish.md) para uma implantação independente seleciona a versão mais recente instalada como parte do SDK na máquina de publicação. Isso permite que o aplicativo implantado seja executado com correções de segurança (e outras correções) disponíveis durante `publish`. O aplicativo deve ser republicado para obter um novo patch. Os aplicativos autocontidos são criados pela especificação de `-r <RID>` no comando `dotnet publish`, pela especificação do [RID (identificador de runtime)](../rid-catalog.md) no arquivo de projeto (csproj/vbproj) ou na linha de comando.
+As [implantações de aplicativo autossuficientes](index.md) do .NET Core incluem as bibliotecas e o runtime do .NET Core. A partir do SDK do .NET Core 2.1 (.NET Core 2.1.300), uma implantação de aplicativo autocontida [publica o runtime de patch mais recente no computador](https://github.com/dotnet/designs/blob/main/accepted/2018/self-contained-roll-forward.md). Por padrão, [`dotnet publish`](../tools/dotnet-publish.md) para uma implantação independente, selecione a versão mais recente instalada como parte do SDK no computador de publicação. Isso permite que o aplicativo implantado seja executado com correções de segurança (e outras correções) disponíveis durante `publish`. O aplicativo deve ser republicado para obter um novo patch. Os aplicativos autocontidos são criados pela especificação de `-r <RID>` no comando `dotnet publish`, pela especificação do [RID (identificador de runtime)](../rid-catalog.md) no arquivo de projeto (csproj/vbproj) ou na linha de comando.
 
 ## <a name="patch-version-roll-forward-overview"></a>Visão geral do roll forward da versão de patch
 
-[`restore`](../tools/dotnet-restore.md), [`build`](../tools/dotnet-build.md) [`publish`](../tools/dotnet-publish.md) e `dotnet` são comandos que podem ser executados separadamente. A opção de runtime faz parte da operação `restore`, não de `publish` nem de `build`. Se você chamar `publish`, a última versão de patch será escolhida. Se você chamar `publish` com o argumento `--no-restore`, poderá não obter a versão de patch desejada, porque um `restore` anterior pode não ter sido executado com a nova política de publicação do aplicativo autossuficiente. Nesse caso, um erro de build é gerado com um texto semelhante ao seguinte:
+[`restore`](../tools/dotnet-restore.md)[`build`](../tools/dotnet-build.md)e [`publish`](../tools/dotnet-publish.md) são `dotnet` comandos que podem ser executados separadamente. A opção de runtime faz parte da operação `restore`, não de `publish` nem de `build`. Se você chamar `publish`, a última versão de patch será escolhida. Se você chamar `publish` com o argumento `--no-restore`, poderá não obter a versão de patch desejada, porque um `restore` anterior pode não ter sido executado com a nova política de publicação do aplicativo autossuficiente. Nesse caso, um erro de build é gerado com um texto semelhante ao seguinte:
 
   "O projeto foi restaurado usando o Microsoft.NETCore.App versão 2.0.0, mas com as configurações atuais, a versão 2.0.6 será usada em seu lugar. Para resolver esse problema, verifique se as mesmas configurações são usadas para restauração e para as operações seguintes, como build ou publicação. Normalmente, esse problema pode ocorrer se a propriedade RuntimeIdentifier é definida durante o build ou a publicação, mas não durante a restauração."
 
@@ -27,7 +27,7 @@ As [implantações de aplicativo autossuficientes](index.md) do .NET Core inclue
 
 A execução de `restore` como parte da operação `publish` pode ser indesejável para seu cenário. Para evitar `restore` durante `publish` ao criar aplicativos autossuficientes, faça o seguinte:
 
-- Defina `RuntimeIdentifiers` a propriedade como uma lista separada de ponto e vírgula de todos os RIDs a serem [publicados.](../rid-catalog.md)
+- Defina a `RuntimeIdentifiers` propriedade como uma lista separada por ponto-e-vírgula de todos os [RIDs](../rid-catalog.md) a serem publicados.
 - Defina a propriedade `TargetLatestRuntimePatch` como `true`.
 
 ## <a name="no-restore-argument-with-dotnet-publish-options"></a>Argumento no-restore com opções dotnet publish

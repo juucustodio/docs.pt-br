@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <add> de <defaultPorts>'
 title: <add> de <defaultPorts>
 ms.date: 03/30/2017
 ms.assetid: f162ce42-963b-4779-96a7-d6d8b4ea0d2f
-ms.openlocfilehash: f5de2aa897a3bc37d08932451a2c7b94bc603b9e
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 9db7afa5183b185eb842530b051d98236e7fa381
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70400650"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803952"
 ---
 # <a name="add-of-defaultports"></a>\<add> de \<defaultPorts>
+
 Um ponto de extremidade de comunicação padrão que o aplicativo cliente ouve.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -21,7 +23,7 @@ Um ponto de extremidade de comunicação padrão que o aplicativo cliente ouve.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<defaultPorts>**](defaultports.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <useRequestHeadersForMetadataAddress>
@@ -33,6 +35,7 @@ Um ponto de extremidade de comunicação padrão que o aplicativo cliente ouve.
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -43,6 +46,7 @@ Um ponto de extremidade de comunicação padrão que o aplicativo cliente ouve.
 |scheme|Uma cadeia de caracteres que especifica o grupo de configurações de protocolo associado a uma porta de comunicação.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  

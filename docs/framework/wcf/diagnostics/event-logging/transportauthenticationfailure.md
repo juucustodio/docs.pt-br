@@ -1,25 +1,28 @@
 ---
+description: 'Saiba mais sobre: TransportAuthenticationFailure'
 title: TransportAuthenticationFailure
 ms.date: 03/30/2017
 ms.assetid: adbdbda0-de52-448c-a938-cc9f5db2980e
-ms.openlocfilehash: 97483e26132d2620ff99dbab6a3396f324bd3f48
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 8b6938881989a0aa0ea8fefe76cd8a375c7fabbd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70797472"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99655650"
 ---
 # <a name="transportauthenticationfailure"></a>TransportAuthenticationFailure
-Sessão 174  
+
+ID: 174  
   
- Severity Erro  
+ Gravidade: Erro  
   
- Categorias SecurityAudit  
+ Categoria: SecurityAudit  
   
 ## <a name="description"></a>Descrição  
+
  Esse evento indica que a autenticação de transporte falhou, listando a identidade do cliente e a ID da atividade.  
   
 ## <a name="see-also"></a>Consulte também
 
-- [Registro de eventos em log](index.md)
+- [Log de eventos](index.md)
 - [Referência geral de eventos](events-general-reference.md)

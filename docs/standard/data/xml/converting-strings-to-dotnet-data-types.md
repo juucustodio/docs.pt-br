@@ -1,26 +1,27 @@
 ---
-title: Convertendo cadeias de caracteres em tipos de dados do .NET Framework
+description: 'Saiba mais sobre: converter cadeias de caracteres em tipos de dados .NET'
+title: Convertendo cadeias de caracteres em tipos de dados .NET
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 ms.assetid: 65455ef3-9120-412c-819b-d0f59f88ac09
-ms.openlocfilehash: fda5441c58d14b91a9eca16fff9149c8795f95b9
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 2960657dc4d4a31eed85a9b8af04976692a4dc9f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84289220"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713930"
 ---
-# <a name="converting-strings-to-net-framework-data-types"></a>Convertendo cadeias de caracteres em tipos de dados do .NET Framework
-Se você quiser converter uma cadeia de caracteres para um tipo de dados do .NET Framework, use o método **XmlConvert** que se adapta aos requisitos do aplicativo. Para obter uma lista de todos os métodos de conversão disponíveis na classe **XmlConvert**, confira <xref:System.Xml.XmlConvert>.  
+# <a name="convert-strings-to-net-data-types"></a>Converter cadeias de caracteres em tipos de dados .NET
+
+Se você quiser converter uma cadeia de caracteres em um tipo de dados .NET, use o método **XmlConvert** que atenda aos requisitos do aplicativo. Para obter uma lista de todos os métodos de conversão disponíveis na classe **XmlConvert**, confira <xref:System.Xml.XmlConvert>.  
   
- A cadeia de caracteres retornada do método **ToString** é uma versão da cadeia de caracteres dos dados que são passados. Além disso, há vários tipos do .NET Framework que são convertidos usando a classe **XmlConvert** e, ainda assim, não usam os métodos na classe **System.Convert**. A classe **XmlConvert** segue a especificação do tipo de dados XSD (XML Schema) e tem um tipo de dados para o qual o **XmlConvert** pode ser mapeado.  
+ A cadeia de caracteres retornada do método **ToString** é uma versão da cadeia de caracteres dos dados que são passados. Além disso, há vários tipos .NET que são convertidos usando a classe **XmlConvert** , ainda que não usem os métodos na classe **System. Convert** . A classe **XmlConvert** segue a especificação do tipo de dados XSD (XML Schema) e tem um tipo de dados para o qual o **XmlConvert** pode ser mapeado.  
   
- A tabela a seguir lista os tipos de dados do .NET Framework e os tipos de cadeia de caracteres que são retornados usando o mapeamento do tipo de dados do esquema XSD. Esses tipos do .NET Framework não podem ser processados usando **System.Convert**.  
+ A tabela a seguir lista os tipos de dados do .NET e os tipos de cadeia de caracteres que são retornados usando o mapeamento de tipo de dados XSD (esquema XML). Esses tipos .NET não podem ser processados usando **System. Convert**.  
   
-|Tipo de .NET Framework|Cadeia de caracteres retornada|  
+|Tipo .NET|Cadeia de caracteres retornada|  
 |-------------------------|---------------------|  
 |Boolean|"true", "false"|  
 |Single.PositiveInfinity|"INF"|  
@@ -31,7 +32,7 @@ Se você quiser converter uma cadeia de caracteres para um tipo de dados do .NET
 |Timespan|O formato é PnYnMnTnHnMnS isto é, `P2Y10M15DT10H30M20S` é uma duração de 2 anos, 10 meses, 15 dias, 10 horas, 30 minutos e 20 segundos.|  
   
 > [!NOTE]
-> Se estiver convertendo algum dos tipos do .NET Framework listados na tabela para uma cadeia de caracteres usando o método **ToString**, a cadeia de caracteres retornada não será o tipo base, mas o tipo de cadeia de caracteres do esquema XSD.  
+> Se estiver convertendo qualquer um dos tipos .NET listados na tabela para uma cadeia de caracteres usando o método **ToString** , a cadeia de caracteres retornada não será o tipo base, mas o tipo de cadeia de caracteres XSD (esquema XML).  
   
  O tipo de valor **DateTime** e **Timespan** diferem porque **DateTime** representa um momento no tempo, enquanto **TimeSpan** representa um intervalo de tempo. Os formatos **DateTime** e **Timespan** são definidos na especificação dos tipos de dados do esquema XML (XSD). Por exemplo:  
   
@@ -69,12 +70,13 @@ writer.WriteElementString("Number", XmlConvert.ToString(value));
   
  `<Number>200</Number>`  
   
- Entretanto, se você estiver convertendo uma cadeia de caracteres para **Boolean**, **Single** ou **Double**, o tipo do .NET Framework que é retornado não será igual ao tipo retornado ao usar a classe **System.Convert**.  
+ No entanto, se você estiver convertendo uma cadeia de caracteres em **booliano**, **única** ou **dupla**, o tipo do .net retornado não será o mesmo que o tipo retornado ao usar a classe **System. Convert** .  
   
 ## <a name="string-to-boolean"></a>String para Boolean  
+
  A tabela a seguir mostra qual o tipo gerado para cadeias de caracteres de entradas consideradas, ao converter uma cadeia de caracteres para **Boolean** usando o método **ToBoolean**.  
   
-|Parâmetro de entrada válida de cadeia de caracteres|Tipo de saída do .NET Framework|  
+|Parâmetro de entrada válida de cadeia de caracteres|Tipo de saída do .NET|  
 |----------------------------------|--------------------------------|  
 |"true"|Boolean.True|  
 |"1"|Boolean.True|  
@@ -104,17 +106,19 @@ Console.WriteLine(bvalue);
 ```  
   
 ## <a name="string-to-single"></a>String para Single  
+
  A tabela a seguir mostra qual o tipo gerado para cadeias de caracteres de entradas consideradas, ao converter uma cadeia de caracteres para **Single** usando o método **ToSingle**.  
   
-|Parâmetro de entrada válida de cadeia de caracteres|Tipo de saída do .NET Framework|  
+|Parâmetro de entrada válida de cadeia de caracteres|Tipo de saída do .NET|  
 |----------------------------------|--------------------------------|  
 |"INF"|Single.PositiveInfinity|  
 |"-INF"|Single.NegativeInfinity|  
   
 ## <a name="string-to-double"></a>String para Double  
+
  A tabela a seguir mostra qual o tipo gerado para cadeias de caracteres de entradas consideradas, ao converter uma cadeia de caracteres para **Single** usando o método **ToDouble**.  
   
-|Parâmetro de entrada válida de cadeia de caracteres|Tipo de saída do .NET Framework|  
+|Parâmetro de entrada válida de cadeia de caracteres|Tipo de saída do .NET|  
 |----------------------------------|--------------------------------|  
 |"INF"|Double.PositiveInfinity|  
 |"-INF"|Double.NegativeInfinity|  
@@ -131,7 +135,7 @@ Double value = Double.PositiveInfinity;
 writer.WriteElementString("Infinity", XmlConvert.ToString(value));  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Conversão de tipos de dados XML](conversion-of-xml-data-types.md)
-- [Convertendo tipos do .NET Framework para cadeias de caracteres](converting-dotnet-types-to-strings.md)
+- [Convertendo tipos .NET em cadeias de caracteres](converting-dotnet-types-to-strings.md)

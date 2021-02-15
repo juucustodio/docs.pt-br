@@ -8,17 +8,19 @@ helpviewer_keywords:
 - ETW, CLR keywords
 - ETW, CLR levels
 ms.assetid: fdf5856d-516b-4042-849d-911c4518a6cb
-ms.openlocfilehash: dfbe047640a3a640cf37adeea6fa3656cfd9ec6d
-ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
+ms.openlocfilehash: 31426ae0589954d4388ba6d40f156c3eea9a8989
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86309671"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96283880"
 ---
 # <a name="clr-etw-keywords-and-levels"></a>Palavras-chave e níveis ETW no CLR
+
  Os eventos ETW (rastreamento de eventos para Windows) pode ser filtrado por categoria e nível. As [palavras-chave CLR ETW](#clr-etw-keywords) do evento permitem a filtragem de eventos por categoria; elas são usadas em combinações para os provedores de runtime e de encerramento. Os [níveis de evento](#etw-event-levels) são identificados por sinalizadores.  
   
 ## <a name="clr-etw-keywords"></a>Palavras-chave CLR ETW  
+
  As palavras-chave são sinalizadores que podem ser combinados para gerar valores. Na prática, você usa os valores hexadecimais das palavras-chave, em vez dos nomes da palavra-chave, ao chamar os utilitários de linha de comando.  
   
  Essas palavras-chave são descritas nas seguintes tabelas:  
@@ -32,7 +34,9 @@ ms.locfileid: "86309671"
 - [Combinações de palavras-chave para a resolução de símbolo do provedor de encerramento](#rundown_combo)  
   
 <a name="runtime"></a>
+
 ### <a name="clr-etw-runtime-keywords"></a>Palavras-Chave de Runtime CLR ETW  
+
  A tabela a seguir lista as palavras-chave de runtime CLR ETW, seus valores e sua finalidade de uso.  
   
 |Nome da palavra-chave de runtime|Valor|Finalidade|  
@@ -55,7 +59,9 @@ ms.locfileid: "86309671"
 |`StackKeyword`|0x40000000|Habilita a coleta de [eventos de rastreamento de pilha](stack-etw-event.md) do CLR.|  
   
 <a name="rundown"></a>
+
 ### <a name="clr-etw-rundown-keywords"></a>Palavras-Chave de Encerramento CLR ETW  
+
  A tabela a seguir lista as palavras-chave de encerramento CLR ETW, seus valores e sua finalidade de uso.  
   
 |Nome da palavra-chave de encerramento|Valor|Finalidade|  
@@ -71,30 +77,33 @@ ms.locfileid: "86309671"
 |`PerfTrackKeyWord`|0x2000000|Habilita a coleta dos eventos `ModuleDCStart`, `ModuleDCEnd`, `ModuleRangeDCStart` e `ModuleRangeDCEnd`.|
   
 <a name="runtime_combo"></a>
+
 ### <a name="keyword-combinations-for-symbol-resolution-for-the-runtime-provider"></a>Combinações de palavras-chave para a resolução de símbolo do provedor de runtime  
   
 |Palavras-chave e sinalizadores|Domínio do aplicativo, assembly, eventos de carregamento/descarregamento do módulo|Eventos de carregamento/descarregamento do método (exceto eventos dinâmicos)|Eventos de carregamento/destruição de método dinâmico|  
 |------------------------|--------------------------------------------------------------|----------------------------------------------------------|-----------------------------------------|  
 |`LoaderKeyword`|Eventos de carregamento e descarregamento.|Nenhum.|Nenhum.|  
-|`JITKeyword`<br /><br /> (+ `StartEnumerationKeyword` não adiciona nada)|Nenhum.|Eventos de carregamento.|Eventos de carregamento e descarregamento.|  
-|`JITKeyword` +<br /><br /> `EndEnumerationKeyword`|Nenhum.|Eventos de carregamento e descarregamento.|Eventos de carregamento e descarregamento.|  
+|`JITKeyword`<br /><br /> (+ `StartEnumerationKeyword` não adiciona nada)|nenhuma.|Eventos de carregamento.|Eventos de carregamento e descarregamento.|  
+|`JITKeyword` +<br /><br /> `EndEnumerationKeyword`|nenhuma.|Eventos de carregamento e descarregamento.|Eventos de carregamento e descarregamento.|  
 |`NGenKeyword`|Nenhum.|Nenhum.|Não aplicável.|  
-|`NGenKeyword` +<br /><br /> `StartEnumerationKeyword`|Nenhum.|Eventos de carregamento.|Não aplicável.|  
-|`NGenKeyword` +<br /><br /> `EndEnumerationKeyword`|Nenhum.|Eventos de descarregamento.|Não aplicável.|  
+|`NGenKeyword` +<br /><br /> `StartEnumerationKeyword`|nenhuma.|Eventos de carregamento.|Não aplicável.|  
+|`NGenKeyword` +<br /><br /> `EndEnumerationKeyword`|nenhuma.|Eventos de descarregamento.|Não aplicável.|  
   
 <a name="rundown_combo"></a>
+
 ### <a name="keyword-combinations-for-symbol-resolution-for-the-rundown-provider"></a>Combinações de palavras-chave para a resolução de símbolo do provedor de encerramento  
   
 |Palavras-chave e sinalizadores|Domínio do aplicativo, assembly, eventos de DCStart/DCEnd do módulo|Eventos de DCStart/DCEnd do módulo (incluindo eventos de método dinâmico)|  
 |------------------------|----------------------------------------------------------------|----------------------------------------------------------------------|  
-|`LoaderRundownKeyword` +<br /><br /> `StartRundownKeyword`|Eventos `DCStart`.|Nenhum.|  
+|`LoaderRundownKeyword` +<br /><br /> `StartRundownKeyword`|Eventos `DCStart`.|nenhuma.|  
 |`LoaderRundownKeyword` +<br /><br /> `EndRundownKeyword`|Eventos `DCEnd`.|Nenhum.|  
 |`JITKeyword` +<br /><br /> `StartRundownKeyword`|Nenhum.|Eventos `DCStart`.|  
-|`JITKeyword` +<br /><br /> `EndRundownKeyword`|Nenhum.|Eventos `DCEnd`.|  
-|`NGenKeyword` +<br /><br /> `StartRundownKeyword`|Nenhum.|Eventos `DCStart`.|  
-|`NGenKeyword` +<br /><br /> `EndRundownKeyword`|Nenhum.|Eventos `DCEnd`.|  
+|`JITKeyword` +<br /><br /> `EndRundownKeyword`|nenhuma.|Eventos `DCEnd`.|  
+|`NGenKeyword` +<br /><br /> `StartRundownKeyword`|nenhuma.|Eventos `DCStart`.|  
+|`NGenKeyword` +<br /><br /> `EndRundownKeyword`|nenhuma.|Eventos `DCEnd`.|  
 
 ## <a name="etw-event-levels"></a>Níveis de eventos ETW  
+
  Os eventos ETW também podem ser filtrados por nível. Se o nível for definido como 0x5, eventos de todos os níveis serão acionados, incluindo 0x5 e abaixo (que são eventos que pertencem às categorias habilitadas por meio de palavras-chave). Se o nível for definido como 0x2, somente os eventos que pertencem ao nível 0x2 e abaixo serão acionados.  
   
  Os níveis têm os seguintes significados:  
@@ -111,7 +120,7 @@ ms.locfileid: "86309671"
   
  0x0 – LogAlways  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Provedores ETW no CLR](clr-etw-providers.md)
 - [Eventos ETW no CLR](clr-etw-events.md)

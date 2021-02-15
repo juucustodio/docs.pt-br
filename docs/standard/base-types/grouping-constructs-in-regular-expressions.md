@@ -2,7 +2,6 @@
 title: Agrupando construtores em expressões regulares
 description: Aprenda a usar construções de agrupamento no .NET. As construções de agrupamento delineam subexpressãos de uma expressão regular e capturam subcadeias de caracteres de uma cadeia de entrada.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -10,18 +9,19 @@ helpviewer_keywords:
 - lookbehinds
 - regular expressions, grouping constructs
 - lookaheads
-- .NET Framework regular expressions, grouping constructs
+- .NET regular expressions, grouping constructs
 - constructs, grouping
 - grouping constructs
 ms.assetid: 0fc18634-f590-4062-8d5c-f0b71abe405b
-ms.openlocfilehash: d737e5758ee7a940aeea3ded9a7937d687393116
-ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
+ms.openlocfilehash: 62de6dc3b6276aab4667c719033ee3b66928ea2c
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84662622"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95734368"
 ---
 # <a name="grouping-constructs-in-regular-expressions"></a>Agrupando construtores em expressões regulares
+
 As construções de agrupamento delineiam as subexpressões de uma expressão regular e capturam a subcadeia de caracteres de uma cadeia de caracteres de entrada. Você pode usar construções de agrupamento para fazer isto:  
   
 - Fazer a correspondência de uma subexpressão que é repetida na cadeia de caracteres de entrada.  
@@ -50,7 +50,9 @@ As construções de agrupamento delineiam as subexpressões de uma expressão re
  Para obter informações sobre grupos e o modelo de objeto de expressão regular, consulte [agrupando construções e objetos de expressão regular](#Objects).  
   
 <a name="matched_subexpression"></a>
+
 ## <a name="matched-subexpressions"></a>Subexpressões Coincidentes  
+
  O constructo de agrupamento a seguir captura uma subexpressão correspondente:  
   
  `(`*subexpressão*`)`  
@@ -89,7 +91,9 @@ As construções de agrupamento delineiam as subexpressões de uma expressão re
 |`\W`|Estabeleça a correspondência com caracteres que não compõem palavras, como espaços em branco e pontuação. Isso impede a correspondência de um padrão de expressão regular com uma expressão que começa com a palavra do primeiro grupo capturado.|  
   
 <a name="named_matched_subexpression"></a>
+
 ## <a name="named-matched-subexpressions"></a>Subexpressões Correspondentes Nomeadas  
+
  O constructo de agrupamento a seguir captura uma subexpressão correspondente e permite acessá-la usando seu nome ou número:  
   
 `(?<name>subexpression)`  
@@ -163,7 +167,9 @@ As construções de agrupamento delineiam as subexpressões de uma expressão re
 |`(?<digit>\d+)?`|Faz a correspondência de zero ou uma ocorrência de um período seguido por um ou mais caracteres de dígito decimal. Atribuir a correspondência ao grupo chamado `digit`.|  
   
 <a name="balancing_group_definition"></a>
+
 ## <a name="balancing-group-definitions"></a>Definições de grupo de balanceamento  
+
  Uma definição de grupo de balanceamento exclui a definição de um grupo definido anteriormente e armazena, no grupo atual, o intervalo entre o grupo definido anteriormente e o atual. Esse constructo de agrupamento tem o seguinte formato:  
   
 `(?<name1-name2>subexpression)`  
@@ -208,7 +214,7 @@ As construções de agrupamento delineiam as subexpressões de uma expressão re
   
  No exemplo, o mecanismo da expressão regular avalia a cadeia de caracteres de entrada "\<abc><mno\<xyz>>", conforme mostra a tabela a seguir.  
   
-|Etapa|Padrão|Result|  
+|Etapa|Padrão|Resultado|  
 |----------|-------------|------------|  
 |1|`^`|Começa a correspondência no início da cadeia de caracteres de entrada|  
 |2|`[^<>]*`|Procura caracteres que não sejam sinais de menor e maior antes do sinal de menor e não encontra correspondências.|  
@@ -236,7 +242,9 @@ As construções de agrupamento delineiam as subexpressões de uma expressão re
 |24|`$`|Corresponde ao final da cadeia de caracteres de entrada.|  
   
 <a name="noncapturing_group"></a>
+
 ## <a name="noncapturing-groups"></a>Grupos de Não Captura  
+
  O constructo de grupo a seguir não captura a subcadeia de caracteres correspondente a uma subexpressão:  
   
 `(?:subexpression)`
@@ -262,7 +270,9 @@ As construções de agrupamento delineiam as subexpressões de uma expressão re
 |`\.`|Corresponde a um ponto final.|  
   
 <a name="group_options"></a>
+
 ## <a name="group-options"></a>Opções de Grupo  
+
  O constructo de agrupamento a seguir aplica ou desabilita as opções especificadas em uma subexpressão:  
   
  `(?imnsx-imnsx:`*subexpressão*`)`  
@@ -286,7 +296,9 @@ As construções de agrupamento delineiam as subexpressões de uma expressão re
  [!code-vb[Conceptual.Regex.Language.Options#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/example1.vb#8)]  
   
 <a name="zerowidth_positive_lookahead_assertion"></a>
+
 ## <a name="zero-width-positive-lookahead-assertions"></a>Asserções Lookahead Positivas de Largura Zero  
+
  O constructo de agrupamento a seguir define uma asserção lookahead positiva de largura zero:  
   
  `(?=`*subexpressão*`)`  
@@ -309,7 +321,9 @@ As construções de agrupamento delineiam as subexpressões de uma expressão re
 |`(?=\sis\b)`|Determina se os caracteres que compõem palavras são seguidos por um caractere de espaço em branco e pela cadeia de caracteres "is", que termina com um limite de palavra. Nesse caso, a correspondência ocorreu com êxito.|  
   
 <a name="zerowidth_negative_lookahead_assertion"></a>
+
 ## <a name="zero-width-negative-lookahead-assertions"></a>Asserções Lookahead Negativas de Largura Zero  
+
  O constructo de agrupamento a seguir define uma asserção lookahead negativa de largura zero:  
   
  `(?!`*subexpressão*`)`  
@@ -347,7 +361,9 @@ As construções de agrupamento delineiam as subexpressões de uma expressão re
 |`\p{P})`|Se o caractere seguinte não for um símbolo de pontuação (por exemplo, um ponto final ou uma vírgula), a correspondência é estabelecida.|  
   
 <a name="zerowidth_positive_lookbehind_assertion"></a>
+
 ## <a name="zero-width-positive-lookbehind-assertions"></a>Asserções Lookbehind Positivas de Largura Zero  
+
  O constructo de agrupamento a seguir define uma asserção lookbehind positiva de largura zero:  
   
  `(?<=`*subexpressão*`)`  
@@ -372,7 +388,9 @@ As construções de agrupamento delineiam as subexpressões de uma expressão re
  As asserções lookbehind positivas de largura zero também são usadas para limitar o retrocesso quando o último caractere de um grupo capturado precisar ser um subconjunto de caracteres que corresponde ao padrão de expressão regular desse grupo. Por exemplo, se um grupo captura todos os caracteres de palavras em sequência, você pode usar uma asserção lookbehind positivas de largura zero tipo para que o primeiro caractere seja uma letra.  
   
 <a name="zerowidth_negative_lookbehind_assertion"></a>
+
 ## <a name="zero-width-negative-lookbehind-assertions"></a>Asserções Lookbehind Negativas de Largura Zero  
+
  O constructo de agrupamento a seguir define uma asserção lookbehind negativa de largura zero:  
   
  `(?<!`*subexpressão*`)`  
@@ -397,7 +415,9 @@ As construções de agrupamento delineiam as subexpressões de uma expressão re
 |<code>(?<!(Saturday&#124;Sunday) )</code>|Se a correspondência for precedida por algo que não seja as cadeias de caracteres "Sábado" ou "Domingo" seguidas por um espaço, a correspondência é realizada com êxito.|  
   
 <a name="atomic_groups"></a>
+
 ## <a name="atomic-groups"></a>Grupos atômicos  
+
  A construção de agrupamento a seguir representa um grupo atômico (conhecido em alguns outros mecanismos de expressão regular como uma subexpressão sem retrocesso, uma subexpressão atômica ou uma subexpressão somente uma vez):
   
  `(?>`*subexpressão*`)`  
@@ -426,7 +446,9 @@ As construções de agrupamento delineiam as subexpressões de uma expressão re
 |`(?>(\w)\1+)`|Corresponde a uma ou mais ocorrências de um caractere de palavra duplicado, mas não executa o retrocesso para estabelecer a correspondência com o último caractere em um limite de palavra.|  
   
 <a name="Objects"></a>
+
 ## <a name="grouping-constructs-and-regular-expression-objects"></a>Agrupando Constructos e Objetos de Expressão Regulares  
+
  As subcadeias de caracteres que correspondem a um grupo de captura de expressão regular são representadas por objetos <xref:System.Text.RegularExpressions.Group?displayProperty=nameWithType>, que podem ser recuperados do objeto <xref:System.Text.RegularExpressions.GroupCollection?displayProperty=nameWithType> que é retornado pela propriedade <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType>. O objeto <xref:System.Text.RegularExpressions.GroupCollection> é preenchido desta forma:  
   
 - O primeiro objeto <xref:System.Text.RegularExpressions.Group> da coleção (o objeto de índice zero) representa a correspondência total.  

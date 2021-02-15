@@ -4,14 +4,14 @@ description: Aprenda a visitar cada nó em uma árvore de expressão, enquanto e
 ms.date: 06/20/2016
 ms.technology: csharp-advanced-concepts
 ms.assetid: b453c591-acc6-4e08-8175-97e5bc65958e
-ms.openlocfilehash: f60c447d5c89aa83f85073e642e621608131ed8d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: cb64e79d915a5c5567d5a3d25f1d747df9687c87
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "76115785"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90537457"
 ---
-# <a name="translate-expression-trees"></a>Traduzir árvores de expressão
+# <a name="translate-expression-trees"></a>Traduzir árvores de expressões
 
 [Anterior – Compilando expressões](expression-trees-building.md)
 
@@ -61,7 +61,7 @@ Console.WriteLine(answer);
 A criação de uma nova árvore é uma combinação da visita aos nós da árvore existentes e a criação de novos nós, inserindo-os na árvore.
 
 Este exemplo mostra a importância das árvores de expressão serem imutáveis. Observe que a nova árvore criada acima contém uma mistura de nós recém-criados e nós da árvore existente. E isso é seguro, porque os nós da árvore existente não podem ser modificados. Isso pode resultar em eficiências significativas de memória.
-Os mesmos nós podem ser usados em toda a árvore ou em várias árvores de expressão. Como os nódulos não podem ser modificados, o mesmo nó pode ser reutilizado sempre que necessário.
+Os mesmos nós podem ser usados em toda a árvore ou em várias árvores de expressão. Como os nós não podem ser modificados, o mesmo nó pode ser reutilizado sempre que necessário.
 
 ## <a name="traversing-and-executing-an-addition"></a>Percorrer e executar uma adição
 
@@ -91,7 +91,7 @@ Console.WriteLine(theSum);
 ```
 
 Tem bastante código nisso, mas os conceitos são bastante acessíveis.
-Esse código visita filhos em uma pesquisa de profundidade inicial. Ao encontrar um nó constante, o visitante retorna o valor da constante. Depois que o visitante visitar as duas crianças, essas crianças terão computado a soma calculada para aquela subárvore. Agora o nó de adição poderá computar sua soma.
+Esse código visita filhos em uma pesquisa de profundidade inicial. Ao encontrar um nó constante, o visitante retorna o valor da constante. Depois que o visitante visitar ambos os filhos, esses filhos terão calculado a soma calculada para essa subárvore. Agora o nó de adição poderá computar sua soma.
 Uma vez que todos os nós da árvore de expressão forem visitados, a soma será calculada. Você pode executar o exemplo no depurador e rastrear a execução.
 
 Vamos facilitar o rastreamento de como os nós são analisados e como a soma é calculada, percorrendo a árvore. Esta é uma versão atualizada do método de agregação que inclui bastante informação de rastreamento:
@@ -192,7 +192,7 @@ Embora a resposta final seja a mesma, a forma de percorrer a árvore é completa
 
 ## <a name="learning-more"></a>Para saber mais
 
-Este exemplo mostra um pequeno subconjunto do código que você compilaria para percorrer e interpretar os algoritmos representados por uma árvore de expressão. Para obter uma discussão completa a respeito de todo o trabalho necessário para compilar uma biblioteca de finalidade geral que move árvores de expressão para outra linguagem, leia [esta série](https://docs.microsoft.com/archive/blogs/mattwar/linq-building-an-iqueryable-provider-series) escrita por Matt Warren. Ele entra em detalhes de como mover qualquer código que você pode encontrar em uma árvore de expressão.
+Este exemplo mostra um pequeno subconjunto do código que você compilaria para percorrer e interpretar os algoritmos representados por uma árvore de expressão. Para obter uma discussão completa a respeito de todo o trabalho necessário para compilar uma biblioteca de finalidade geral que move árvores de expressão para outra linguagem, leia [esta série](/archive/blogs/mattwar/linq-building-an-iqueryable-provider-series) escrita por Matt Warren. Ele entra em detalhes de como mover qualquer código que você pode encontrar em uma árvore de expressão.
 
 Espero que você tenha visto o verdadeiro poder das árvores de expressão.
 Você pode examinar um conjunto de códigos, fazer as alterações que desejar nesse código e executar a versão modificada. Como as árvores de expressão são imutáveis, você pode criar novas árvores usando os componentes de árvores existentes. Isso minimiza a quantidade de memória necessária para criar árvores de expressão modificadas.

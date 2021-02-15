@@ -1,17 +1,19 @@
 ---
+description: 'Saiba mais sobre: nome ou número de arquivo inadequado'
 title: Nome ou número de arquivo inválido
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID52
 ms.assetid: d0e96aea-7621-48f6-a78b-5d37d18aaa4e
-ms.openlocfilehash: 11e866d9a8da7ad1ecc5f788fc31f6ac96d32f2c
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 6e568a721fb3606c5b4bc046041c9d6f24b6d126
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84409823"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797062"
 ---
 # <a name="bad-file-name-or-number"></a>Nome ou número de arquivo inválido
+
 Ocorreu um erro ao tentar acessar o arquivo especificado. Entre as possíveis causas desse erro estão:  
   
 - Uma instrução refere-se a um arquivo com um nome de arquivo ou número que não foi especificado na `FileOpen` instrução ou que foi especificado em uma `FileOpen` instrução, mas foi fechado posteriormente.  
@@ -28,7 +30,7 @@ Ocorreu um erro ao tentar acessar o arquivo especificado. Entre as possíveis ca
   
 3. Verifique os nomes dos arquivos para garantir que eles estejam em conformidade com as convenções do sistema operacional.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.FileSystem.FileOpen%2A>
 - [Convenções de nomenclatura do Visual Basic](../../programming-guide/program-structure/naming-conventions.md)

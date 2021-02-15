@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: esquema de configurações de aplicativo'
 title: Esquema de configurações do aplicativo
 ms.date: 05/01/2017
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - Windows Forms, app settings schema
 - configuration schema [.NET Framework], app settings
 ms.assetid: 99347d62-3ea5-40b6-bfec-c31431011422
-ms.openlocfilehash: 0a3363b35a6fc8bd27753eb034f8a1e95feb5292
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: a98a60b0470e0fa2c03313f25de9b310f5fce785
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "77215424"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699344"
 ---
 # <a name="app-settings-schema"></a>Esquema de configurações do aplicativo
 
@@ -68,7 +69,7 @@ O exemplo a seguir mostra um arquivo de configuração de aplicativo que consome
 </configuration>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Visão geral das configurações do aplicativo](../../../winforms/advanced/application-settings-overview.md)
-- [Arquitetura das configurações do aplicativo](../../../winforms/advanced/application-settings-architecture.md)
+- [Visão geral sobre configurações do aplicativo](/dotnet/desktop/winforms/advanced/application-settings-overview)
+- [Arquitetura das configurações do aplicativo](/dotnet/desktop/winforms/advanced/application-settings-architecture)

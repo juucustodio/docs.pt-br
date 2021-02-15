@@ -1,28 +1,32 @@
 ---
+description: 'Saiba mais sobre: 701-ServiceChannelOpenStart'
 title: 701 - ServiceChannelOpenStart
 ms.date: 03/30/2017
 ms.assetid: aaf1896e-b55a-4a91-854f-b59672bab3c7
-ms.openlocfilehash: 6c99bfb83ca05ef12b3ca748e485f4917aa5c11d
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 21b6d3793b46c30ea0fdad02e5a7316d89302efe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61952861"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788261"
 ---
 # <a name="701---servicechannelopenstart"></a>701 - ServiceChannelOpenStart
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
 |ID|701|  
 |Palavras-chave|ServiceModel|  
-|Nível|Informações|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando é operace servicechannelopen.  
+
+ Esse evento é emitido quando o ServiceChannelOpen é iniciado.  
   
 ## <a name="message"></a>Mensagem  
- Operace servicechannelopen.  
+
+ ServiceChannelOpen iniciado.  
   
 ## <a name="details"></a>Detalhes

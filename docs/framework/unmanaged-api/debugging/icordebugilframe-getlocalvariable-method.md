@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugILFrame:: GetLocalVariable'
 title: Método ICorDebugILFrame::GetLocalVariable
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: c8706356-d50b-4f87-a40c-39c3b7f4fd38
 topic_type:
 - apiref
-ms.openlocfilehash: d6ce5a5cc64a5eb805faa5bb17a42a662940affe
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: c4bb3e5a5d970539607efbaf55f3f7f08f7e72af
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83210248"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791368"
 ---
 # <a name="icordebugilframegetlocalvariable-method"></a>Método ICorDebugILFrame::GetLocalVariable
+
 Obtém o valor da variável local especificada neste quadro de ativação da MSIL (Microsoft Intermediate Language).  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,6 +37,7 @@ HRESULT GetLocalVariable (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `dwIndex`  
  no O índice da variável local neste quadro da pilha MSIL.  
   
@@ -42,9 +45,11 @@ HRESULT GetLocalVariable (
  [out] Um ponteiro para o endereço de um objeto ICorDebugValue que representa o valor recuperado.  
   
 ## <a name="remarks"></a>Comentários  
+
  O `GetLocalVariable` método pode ser usado em um quadro de pilha MSIL ou em um quadro compilado JIT (just-in-time).  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

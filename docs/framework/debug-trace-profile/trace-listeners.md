@@ -15,14 +15,15 @@ helpviewer_keywords:
 - tracing [.NET Framework], trace listeners
 - logs, trace listeners
 ms.assetid: 444b0d33-67ea-4c36-9e94-79c50f839025
-ms.openlocfilehash: d08f86c782284a296090cf63e4b03c8d446a95fc
-ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
+ms.openlocfilehash: 8cd79d21d66d23f834b7ef0012d8360884028ac6
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85803517"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96238113"
 ---
 # <a name="trace-listeners"></a>Ouvintes de rastreamento
+
 Ao usar **Trace**, **Debug** e <xref:System.Diagnostics.TraceSource>, você deve ter um mecanismo para coletar e registrar as mensagens que são enviadas. As mensagens de rastreamento são recebidas por *ouvintes*. A finalidade de um ouvinte é coletar, armazenar e rotear mensagens de rastreamento. Os ouvintes direcionam a saída de rastreamento para um destino apropriado, como um log, uma janela ou um arquivo de texto.  
   
  Os ouvintes estão disponíveis para as classes **Debug**, **Trace** e <xref:System.Diagnostics.TraceSource>, cada uma das quais pode enviar sua saída para a uma variedade de objetos de ouvinte. Veja a seguir os ouvintes predefinidos mais usados:  
@@ -73,13 +74,14 @@ System.Diagnostics.Trace.Listeners.Add(
 ```  
   
 ## <a name="developer-defined-listeners"></a>Ouvintes definidos pelo desenvolvedor  
+
  Você pode definir seus próprios ouvintes herdando a classe base **TraceListener** e substituindo seus métodos por métodos personalizados. Para obter mais informações sobre como criar ouvintes definidos pelo desenvolvedor, consulte <xref:System.Diagnostics.TraceListener> na referência do .NET Framework.  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - <xref:System.Diagnostics.TextWriterTraceListener>
 - <xref:System.Diagnostics.EventLogTraceListener>
 - <xref:System.Diagnostics.DefaultTraceListener>
 - <xref:System.Diagnostics.TraceListener>
-- [Rastreamento e instrumentação de aplicativos](tracing-and-instrumenting-applications.md)
+- [Como rastrear e instrumentar aplicativos](tracing-and-instrumenting-applications.md)
 - [Opções de rastreamento](trace-switches.md)

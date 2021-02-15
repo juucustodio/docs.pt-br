@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: classe UnsafeNclNativeMethods'
 title: Classe UnsafeNclNativeMethods (System.Net)
 ms.date: 06/12/2020
 ms.technology: dotnet-networking
@@ -12,16 +13,16 @@ api_location:
 - System.dll
 api_type:
 - Assembly
-ms.openlocfilehash: 46756a0d1d69b4768dbb8dcdd7ab098d3f1849bf
-ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
+ms.openlocfilehash: fa1084efddae0ba5cbfc9a949dcd94d2c64f3272
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84990293"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699487"
 ---
 # <a name="unsafenclnativemethods-class"></a>Classe UnsafeNclNativeMethods
 
-Contém classes que importam métodos de rede nativas não seguros. Esta classe não pode ser herdada.
+Contém classes que importam métodos de rede nativas não seguros. Essa classe não pode ser herdada.
 
 ```csharp
 internal static class UnsafeNclNativeMethods
@@ -34,7 +35,7 @@ internal static class UnsafeNclNativeMethods
 
 ## <a name="nativepki-class"></a>Classe NativePKI
 
-Contém métodos importados do crypt32.dll. Esses métodos manipulam certificados ao usar o protocolo HTTPS (Hypertext Transfer Protocol Secure). Esta classe não pode ser herdada.
+Contém métodos importados do crypt32.dll. Esses métodos manipulam certificados ao usar o protocolo HTTPS (Hypertext Transfer Protocol Secure). Essa classe não pode ser herdada.
 
 ```csharp
 internal static class NativePKI

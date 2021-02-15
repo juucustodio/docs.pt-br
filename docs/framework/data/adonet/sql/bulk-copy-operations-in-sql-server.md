@@ -3,14 +3,15 @@ title: Operações de cópia em massa no SQL Server
 description: Aprenda a usar a classe SqlBulkCopy para escrever soluções de código gerenciado que copiam arquivos grandes em massa em tabelas ou exibições em bancos de dados SQL Server.
 ms.date: 03/30/2017
 ms.assetid: 83a7a0d2-8018-4354-97b9-0b1d99f8342b
-ms.openlocfilehash: 4f877836aa45efe162cce3c42cb5733f86deab2c
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 43d63f3671ea8ff05da3e10580c2784fa3aae581
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286514"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91197424"
 ---
 # <a name="bulk-copy-operations-in-sql-server"></a>Operações de cópia em massa no SQL Server
+
 O Microsoft SQL Server inclui um utilitário de linha de comando popular chamado **bcp** para copiar rapidamente grandes arquivos em massa em tabelas ou exibições em bancos de dados do SQL Server. A classe <xref:System.Data.SqlClient.SqlBulkCopy> permite escrever soluções de código gerenciado que fornecem funcionalidade semelhante. Há outras maneiras de carregar dados em uma tabela do SQL Server (instruções INSERT, por exemplo), mas <xref:System.Data.SqlClient.SqlBulkCopy> oferece uma vantagem de desempenho significativa sobre eles.  
   
  A classe <xref:System.Data.SqlClient.SqlBulkCopy> pode ser usada para gravar dados somente em tabelas do SQL Server. Mas a fonte de dados não está limitada a SQL Server; qualquer fonte de dados pode ser usada, desde que os dados possam ser carregados em uma <xref:System.Data.DataTable> instância ou lidos com uma <xref:System.Data.IDataReader> instância do.  
@@ -27,6 +28,7 @@ O Microsoft SQL Server inclui um utilitário de linha de comando popular chamado
 > Ao usar o .NET Framework versão 1.1 ou anterior (que não dá suporte à classe <xref:System.Data.SqlClient.SqlBulkCopy>), você pode executar a instrução **BULK INSERT** do Transact-SQL no SQL Server usando o objeto <xref:System.Data.SqlClient.SqlCommand>.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Configuração de exemplo de cópia em massa](bulk-copy-example-setup.md)  
  Descreve as tabelas usadas nos exemplos de cópia em massa e fornece scripts SQL para criar as tabelas no banco de dados AdventureWorks.  
   

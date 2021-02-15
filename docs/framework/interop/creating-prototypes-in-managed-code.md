@@ -18,14 +18,15 @@ helpviewer_keywords:
 - DLL functions
 - object fields in platform invoke
 ms.assetid: ecdcf25d-cae3-4f07-a2b6-8397ac6dc42d
-ms.openlocfilehash: 76b1a87c4513fdee21c5c3d5eba533b11e022e3a
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 4260bc8b3f9a2550faa28dd4d35842327b4e5935
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85622153"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96244100"
 ---
 # <a name="creating-prototypes-in-managed-code"></a>Criando protótipos em código gerenciado
+
 Este tópico descreve como acessar funções não gerenciadas e apresenta vários campos de atributo que anotam a definição de método no código gerenciado. Para obter exemplos que demonstram como construir declarações baseadas no .NET a serem usadas com a invocação de plataforma, consulte [Realizando marshaling de dados com a invocação de plataforma](marshaling-data-with-platform-invoke.md).  
   
  Antes de poder acessar uma função de DLL não gerenciada no código gerenciado, você precisa saber o nome da função e o nome da DLL que a exporta. Com essas informações, você pode começar a escrever a definição gerenciada para uma função não gerenciada que é implementada em uma DLL. Além disso, você pode ajustar a maneira como essa invocação de plataforma cria a função e realiza marshaling dos dados bidirecionalmente na função.  
@@ -34,6 +35,7 @@ Este tópico descreve como acessar funções não gerenciadas e apresenta vário
 > As funções de API do Windows que alocam uma cadeia de caracteres permitem que você libere a cadeia de caracteres usando um método como `LocalFree`. A invocação de plataforma manipula esses parâmetros de maneira diferente. Para chamadas de invocação de plataforma, torne o parâmetro um tipo `IntPtr`, em vez de um tipo `String`. Use métodos que são fornecidos pela classe <xref:System.Runtime.InteropServices.Marshal?displayProperty=nameWithType> para converter o tipo em uma cadeia de caracteres manualmente e libere-a manualmente.  
   
 ## <a name="declaration-basics"></a>Noções básicas sobre a declaração  
+
  As definições gerenciadas para funções não gerenciadas são dependentes de idioma, como é possível ver nos exemplos a seguir. Para obter exemplos de código mais completos, consulte [Exemplos de invocação de plataforma](platform-invoke-examples.md).  
   
 ```vb
@@ -84,6 +86,7 @@ extern "C" int MessageBox(
 ```
   
 ## <a name="adjusting-the-definition"></a>Ajustando a definição  
+
  Independentemente de você defini-los explicitamente ou não, os campos de atributo estão trabalhando, definindo o comportamento do código gerenciado. A invocação de plataforma funciona de acordo com os valores padrão definidos em vários campos que existem como metadados em um assembly. Altere esse comportamento padrão ajustando os valores de um ou mais campos. Em muitos casos, use o <xref:System.Runtime.InteropServices.DllImportAttribute> para definir um valor.  
   
  A tabela a seguir lista o conjunto completo de campos de atributo que pertencem à invocação de plataforma. Para cada campo, a tabela inclui o valor padrão e um link para informações sobre como usar esses campos para definir funções de DLL não gerenciadas.  
@@ -102,9 +105,11 @@ extern "C" int MessageBox(
  Para obter informações detalhadas sobre a referência, consulte <xref:System.Runtime.InteropServices.DllImportAttribute>.  
   
 ## <a name="platform-invoke-security-considerations"></a>Considerações sobre segurança da invocação de plataforma  
+
  Os membros `Assert`, `Deny` e `PermitOnly` da enumeração <xref:System.Security.Permissions.SecurityAction> são chamados de *modificadores de movimentação de pilha*. Esses membros serão ignorados se forem usados como atributos declarativos em declarações da invocação de plataforma e em instruções COM da linguagem IDL.  
   
 ### <a name="platform-invoke-examples"></a>Exemplos de invocação de plataforma  
+
  As amostras de invocação de plataforma desta seção ilustram o uso do atributo `RegistryPermission` com os modificadores de movimentação de pilha.  
   
  No exemplo a seguir, os modificadores <xref:System.Security.Permissions.SecurityAction>`Assert`, `Deny` e `PermitOnly` são ignorados.  
@@ -184,6 +189,7 @@ class PInvokeScenario
 ```  
   
 #### <a name="com-interop-examples"></a>Exemplos de interoperabilidade COM  
+
  As amostras de interoperabilidade COM desta seção ilustram o uso do atributo `RegistryPermission` com os modificadores de movimentação de pilha.  
   
  As declarações da interface de interoperabilidade COM a seguir ignoram os modificadores `Assert`, `Deny` e `PermitOnly`, da mesma forma que os exemplos da invocação de plataforma da seção anterior.  
@@ -230,13 +236,13 @@ interface IDemandStubsItf
 }  
 ```  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Consumindo funções de DLL não gerenciadas](consuming-unmanaged-dll-functions.md)
 - [Especificando um ponto de entrada](specifying-an-entry-point.md)
 - [Especificando um conjunto de caracteres](specifying-a-character-set.md)
 - [Exemplos de invocação de plataforma](platform-invoke-examples.md)
-- [Considerações sobre Segurança da Invocação de Plataforma](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb397754(v=vs.100))
+- [Considerações sobre Segurança da Invocação de Plataforma](/previous-versions/dotnet/netframework-4.0/bb397754(v=vs.100))
 - [Identificando funções em DLLs](identifying-functions-in-dlls.md)
 - [Criando uma classe para conter funções de DLL](creating-a-class-to-hold-dll-functions.md)
 - [Chamando uma função de DLL](calling-a-dll-function.md)

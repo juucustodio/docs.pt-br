@@ -1,13 +1,13 @@
 ---
 title: Etapas no fluxo de trabalho de DevOps loop externo para um aplicativo de Docker
 description: Aprenda as etapas do "loop externo" do fluxo de trabalho de DevOps
-ms.date: 08/06/2020
-ms.openlocfilehash: 82a45c8669812580623811e18cc55f55f45cb6d3
-ms.sourcegitcommit: e0803b8975d3eb12e735a5d07637020dd6dac5ef
+ms.date: 01/06/2021
+ms.openlocfilehash: bfac2d2c7866bfd11cd18201a93cb17a72cae588
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89271901"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970291"
 ---
 # <a name="steps-in-the-outer-loop-devops-workflow-for-a-docker-application"></a>Etapas no fluxo de trabalho de DevOps loop externo para um aplicativo de Docker
 
@@ -23,7 +23,7 @@ Agora, vamos examinar cada uma dessas etapas com mais detalhes.
 
 Esta etapa é explicada em detalhes no Capítulo 4. Entretanto, para recapitular, aqui é onde o loop externo começa, no momento em que um desenvolvedor enviar código por push para o sistema de gerenciamento de controle do código-fonte (como o Git), iniciando ações do pipeline de CI.
 
-## <a name="step-2-source-code-control-integration-and-management-with-azure-devops-services-and-git"></a>Etapa 2: código-fonte controle integração e gerenciamento com Azure DevOps Services e git
+## <a name="step-2-source-code-control-integration-and-management-with-azure-devops-services-and-git"></a>Etapa 2: Source-Code a integração e o gerenciamento de controle com o Azure DevOps Services e o Git
 
 Nesta etapa, você precisa ter um sistema de controle de versão para reunir uma versão consolidada de todo o código proveniente de diferentes desenvolvedores na equipe.
 
@@ -77,7 +77,7 @@ Você pode usar esses modelos e tarefas para construir seus artefatos de CI/CD p
 
 Com essas tarefas do Visual Studio Team Services, um Host/VM de build do Linux-Docker provisionado no Azure e o registro do Docker de sua preferência (Registro de Contêiner do Azure, Docker Hub, DTR privado do Docker ou qualquer outro registro do Docker), você pode montar seu pipeline de CI do Docker de maneira muito consistente.
 
-***Requisitos:***
+**_Requisitos:_* _
 
 - Azure DevOps Services ou, para instalações locais, Team Foundation Server 2015, Atualização 3 ou posterior.
 
@@ -90,7 +90,7 @@ Com essas tarefas do Visual Studio Team Services, um Host/VM de build do Linux-D
 > - Como executar um agente do Visual Studio Team Services (agora, Azure DevOps Services) como um contêiner do Docker: \
 >   <https://hub.docker.com/_/microsoft-azure-pipelines-vsts-agent>
 >
-> - Como criar imagens Linux Docker do .NET Core com o Azure DevOps Services: \
+> - Criando imagens do Docker do .NET Linux com Azure DevOps Services: \
 >   <https://docs.microsoft.com/archive/blogs/stevelasker/building-net-core-linux-docker-images-with-visual-studio-team-services>
 >
 > - Como criar um computador de build do Visual Studio Team Services baseada em Linux com suporte para Docker: \
@@ -126,7 +126,7 @@ Normalmente, você pode querer ter repositórios privados para suas imagens pers
 
 ![Diagrama mostrando o envio de imagens personalizadas para um registro de contêiner.](./media/docker-application-outer-loop-devops-workflow/docker-push-custom-images.png)
 
-**Figura 5-4**. Publicando imagens personalizadas no Registro do Docker
+_ * Figura 5-4 * *. Publicando imagens personalizadas no Registro do Docker
 
 Na etapa 3, para integração e teste (CI) do build, você pode publicar as imagens do Docker resultantes em um registro público ou privado. Há várias ofertas de registros do Docker de fornecedores de nuvem, como o Registro de Contêiner do Azure, o Registro de Contêiner do Amazon Web Services, o Registro de Contêiner do Google, o Registro Quay e assim por diante.
 

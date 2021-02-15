@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICLRRuntimeInfo'
 title: Interface ICLRRuntimeInfo
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 287e5ede-b3a7-4ef8-a756-4fca3f285a82
 topic_type:
 - apiref
-ms.openlocfilehash: 71e2c7f6790f29872c051bb5cea50755068057e9
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: d599c743e5a42801321ea487fdd9e52bfcfaf081
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84504037"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753855"
 ---
 # <a name="iclrruntimeinfo-interface"></a>Interface ICLRRuntimeInfo
+
 Fornece métodos que retornam informações sobre um Common Language Runtime específico (CLR), incluindo versão, diretório e status de carregamento. Essa interface também fornece funcionalidade específica de tempo de execução sem inicializar o tempo de execução. Ele inclui o método [LoadLibrary](iclrruntimeinfo-loadlibrary-method.md) relativo ao tempo de execução, o método [GetProcAddress](iclrruntimeinfo-getprocaddress-method.md) específico do módulo de tempo de execução e interfaces fornecidas pelo tempo de execução por meio do método [GetInterface](iclrruntimeinfo-getinterface-method.md) .  
   
 ## <a name="methods"></a>Métodos  
@@ -42,15 +44,16 @@ Fornece métodos que retornam informações sobre um Common Language Runtime esp
 |[Método SetDefaultStartupFlags](iclrruntimeinfo-setdefaultstartupflags-method.md)|Define os sinalizadores de inicialização do CLR e o arquivo de configuração do host.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MetaHost. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de hospedagem](hosting-interfaces.md)
-- [Hosting](index.md)
+- [Hospedagem](index.md)

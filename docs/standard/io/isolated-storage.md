@@ -2,7 +2,6 @@
 title: Armazenamentos isolado
 description: Explore o armazenamento isolado, que é um mecanismo de armazenamento de dados que fornece isolamento & segurança definindo maneiras padronizadas de associar código a dados salvos.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - data storage using isolated storage
 - stores
@@ -19,25 +18,25 @@ helpviewer_keywords:
 - data storage using isolated storage, options
 - isolation
 ms.assetid: aff939d7-9e49-46f2-a8cd-938d3020e94e
-ms.openlocfilehash: 0de0c7e9843ca8a97392733a68367b1dae8de232
-ms.sourcegitcommit: 3492dafceb5d4183b6b0d2f3bdf4a1abc4d5ed8c
+ms.openlocfilehash: 1b123b231a7b6856ca527d00b5927c1a8d0e08b6
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86416385"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94819130"
 ---
 # <a name="isolated-storage"></a>Armazenamento isolado
 
  Para aplicativos desktop, o armazenamento isolado é um mecanismo de armazenamento de dados que proporciona isolamento e segurança ao definir formas padronizadas de associar código a dados salvos. A padronização também fornece outros benefícios. Os administradores podem usar as ferramentas desenvolvidas para manipular armazenamentos isolados para configurar espaço de armazenamento de arquivos, definir políticas de segurança e excluir dados não utilizados. Com armazenamentos isolados, seu código não precisa mais de caminhos exclusivos para especificar locais seguros na sistema de arquivos e os dados são protegidos de outros aplicativos que só têm acesso a armazenamentos isolados. Informações embutidas em código que indicam onde a área de armazenamento de um aplicativo se encontra são desnecessárias.
 
 > [!IMPORTANT]
-> O armazenamento isolado não está disponível para aplicativos da loja do Windows 8. x. Em vez disso, use as classes de dados de aplicativos nos namespaces `Windows.Storage` incluídos na API do Windows Runtime para armazenar dados e arquivos locais. Para saber mais, confira [Dados de aplicativo](https://docs.microsoft.com/previous-versions/windows/apps/hh464917(v=win.10)) no Centro de Desenvolvimento do Windows.
+> O armazenamento isolado não está disponível para aplicativos da loja do Windows 8. x. Em vez disso, use as classes de dados de aplicativos nos namespaces `Windows.Storage` incluídos na API do Windows Runtime para armazenar dados e arquivos locais. Para saber mais, confira [Dados de aplicativo](/previous-versions/windows/apps/hh464917(v=win.10)) no Centro de Desenvolvimento do Windows.
 
 <a name="data_compartments_and_stores"></a>
 
 ## <a name="data-compartments-and-stores"></a>Compartimentos e Repositórios de Dados
 
-Quando um aplicativo armazena dados em um arquivo, o nome do arquivo e o local de armazenamento devem ser escolhidos cuidadosamente para minimizar a possibilidade de o local de armazenamento ser conhecido por outro aplicativo e, portanto, tornar-se vulnerável a corrompimento. Sem um sistema padrão para gerenciar esses problemas, o desenvolvimento de técnicas ad hoc que minimizam conflitos de armazenamento pode ser complexo e os resultados podem não ser confiáveis.
+Quando um aplicativo armazena dados em um arquivo, o nome do arquivo e o local de armazenamento devem ser cuidadosamente escolhidos para minimizar a possibilidade de que o local de armazenamento seja conhecido por outro aplicativo e, portanto, vulnerável a danos. Sem um sistema padrão em vigor para gerenciar esses problemas, as técnicas de improvising que minimizam conflitos de armazenamento podem ser complexas e os resultados podem não ser confiáveis.
 
 Com armazenamento isolado, os dados são sempre isolados pelo usuário e pelo assembly. Credenciais como a origem ou o nome forte do assembly determinam a identidade do assembly. Os dados também podem ser isolados por domínio de aplicativo, usando credenciais semelhantes.
 
@@ -59,7 +58,7 @@ Usar o armazenamento isolado permite que aplicativos parcialmente confiáveis ar
 
 Os administradores podem limitar a quantidade de armazenamento isolado que um aplicativo ou usuário tem disponível com base em um nível de confiança apropriado. Além disso, os administradores podem remover todos os dados persistentes de um usuário. Para criar ou acessar um armazenamento isolado, o código deve receber a permissão <xref:System.Security.Permissions.IsolatedStorageFilePermission> apropriada.
 
-Para acessar um armazenamento isolado, o código deve ter todos os direitos do sistema operacional da plataforma nativa necessários. As listas de controle de acesso (ACLs) que controlam quais usuários têm os direitos necessários para usar o sistema de arquivos devem ser satisfeitas. Os aplicativos .NET Framework já possuem direitos do sistema operacional para acessar armazenamentos isolados, a menos que eles executem a personificação (referente à plataforma). Nesse caso, o aplicativo é responsável por garantir que a identidade do usuário personificado tenha os direitos adequados do sistema operacional para acessar o armazenamento isolado. Esse acesso oferece uma maneira conveniente para que códigos que são executados ou baixados da Web possam ler e gravar em uma área de armazenamento relacionada a um usuário específico.
+Para acessar um armazenamento isolado, o código deve ter todos os direitos do sistema operacional da plataforma nativa necessários. As listas de controle de acesso (ACLs) que controlam quais usuários têm os direitos necessários para usar o sistema de arquivos devem ser satisfeitas. Os aplicativos .NET já têm direitos de sistema operacional para acessar o armazenamento isolado, a menos que executem a representação (específica da plataforma). Nesse caso, o aplicativo é responsável por garantir que a identidade do usuário personificado tenha os direitos adequados do sistema operacional para acessar o armazenamento isolado. Esse acesso oferece uma maneira conveniente para que códigos que são executados ou baixados da Web possam ler e gravar em uma área de armazenamento relacionada a um usuário específico.
 
 Para controlar o acesso ao armazenamento isolado, o Common Language Runtime utiliza objetos <xref:System.Security.Permissions.IsolatedStorageFilePermission>. Cada objeto tem propriedades que especificam os seguintes valores:
 
@@ -138,20 +137,21 @@ Agora, considere um sistema de vários usuários com dois usuários registrados 
 
 Se Mallory quiser atacar Bob, ela poderá gravar dados no local de armazenamento em todo o computador e, em seguida, tentar influenciar Bob na leitura do repositório de todo o computador. Quando Bob executa um aplicativo que lê esse armazenamento, esse aplicativo funcionará nos dados Mallory colocados ali, mas de dentro do contexto da conta de usuário de Bob. O restante deste documento contemplates vários vetores de ataque e quais etapas os aplicativos podem fazer para minimizar seus riscos a esses ataques.
 
-__Observação:__ Para que tal ataque ocorra, o Mallory requer:
-
-* Uma conta de usuário no computador.
-* A capacidade de inserir um arquivo em um local conhecido no sistema de arquivos.
-* O conhecimento que Bob irá, em algum momento, executar um aplicativo que tenta ler esses dados.
-
-Esses não são vetores de ameaça que se aplicam a ambientes de desktop de usuário único padrão como PCs domésticos ou estações de trabalho de um funcionário corporativo.
+> [!NOTE]
+> Para que tal ataque ocorra, o Mallory requer:
+>
+> * Uma conta de usuário no computador.
+> * A capacidade de inserir um arquivo em um local conhecido no sistema de arquivos.
+> * O conhecimento que Bob irá, em algum momento, executar um aplicativo que tente ler esses dados.
+>
+> Esses não são vetores de ameaça que se aplicam a ambientes de desktop de usuário único padrão como PCs domésticos ou estações de trabalho de um funcionário corporativo.
 
 #### <a name="elevation-of-privilege"></a>Elevação de privilégio
 
 Um ataque __de elevação de privilégio__ ocorre quando o aplicativo de Bob lê o arquivo de Mallory e tenta automaticamente executar alguma ação com base no conteúdo dessa carga. Considere um aplicativo que leia o conteúdo de um script de inicialização do repositório de todo o computador e passe esse conteúdo para `Process.Start` . Se o Mallory puder fazer um script mal-intencionado dentro da loja de todo o computador, quando Bob iniciar seu aplicativo:
 
 * Seu aplicativo analisa e inicia o script mal-intencionado do Mallory _no contexto do perfil de usuário de Bob_.
-* Mallory acessa a conta do Bob no computador local.
+* Mallory obtém acesso à conta de Bob no computador local.
 
 #### <a name="denial-of-service"></a>Negação de serviço
 
@@ -174,7 +174,7 @@ Quando o aplicativo de Bob lê da loja em todo o computador, ele agora lê inadv
 
 __Importante:__ Se o seu ambiente tiver vários usuários mutuamente não confiáveis, __não__ chame a API `IsolatedStorageFile.GetEnumerator(IsolatedStorageScope.Machine)` nem invoque a ferramenta `storeadm.exe /machine /list` . Ambos pressupõem que eles estão operando em dados confiáveis. Se um invasor puder propagar uma carga mal-intencionada na loja de todo o computador, essa carga poderá levar a uma elevação de ataque de privilégio sob o contexto do usuário que executa esses comandos.
 
-Se estiver operando em um ambiente de vários usuários, reconsidere o uso de recursos de armazenamento isolado que se destinam ao escopo da _máquina_ . Se um aplicativo precisar ler dados de um local em todo o computador, prefira ler os dados de um local que são graváveis somente por contas de administrador. O `%PROGRAMFILES%` diretório e o `HKLM` hive do registro são exemplos de locais que são graváveis somente por administradores e legíveis por todos. Portanto, os dados lidos desses locais são considerados confiáveis.
+Se estiver operando em um ambiente de vários usuários, reconsidere o uso de recursos de armazenamento isolado direcionados ao escopo da _máquina_ . Se um aplicativo precisar ler dados de um local em todo o computador, prefira ler os dados de um local que seja gravável somente por contas de administrador. O `%PROGRAMFILES%` diretório e o `HKLM` hive do registro são exemplos de locais que são graváveis somente por administradores e legíveis por todos. Portanto, os dados lidos desses locais são considerados confiáveis.
 
 Se um aplicativo precisar usar o escopo da _máquina_ em um ambiente de vários usuários, valide o conteúdo de qualquer arquivo que você ler do repositório de todo o computador. Se o aplicativo desserializar grafos de objeto desses arquivos, considere usar serializadores mais seguros como `XmlSerializer` em vez de serializadores perigosos como `BinaryFormatter` ou `NetDataContractSerializer` . Tenha cuidado com grafos de objeto profundamente aninhados ou grafos de objetos que executam a alocação de recursos com base no conteúdo do arquivo.
 
@@ -195,7 +195,7 @@ Se um aplicativo precisar usar o escopo da _máquina_ em um ambiente de vários 
 
 ## <a name="creating-enumerating-and-deleting-isolated-storage"></a>Criando, Enumerando e Excluindo Armazenamento Isolado
 
-O .NET Framework fornece três classes no namespace <xref:System.IO.IsolatedStorage> para ajudar a executar as tarefas que envolvem o armazenamento isolado:
+O .NET fornece três classes no <xref:System.IO.IsolatedStorage> namespace para ajudá-lo a executar tarefas que envolvem o armazenamento isolado:
 
 - <xref:System.IO.IsolatedStorage.IsolatedStorageFile>, que é derivado de <xref:System.IO.IsolatedStorage.IsolatedStorage?displayProperty=nameWithType> e fornece gerenciamento básico de assemblies armazenados e arquivos de aplicativos. Uma instância da classe <xref:System.IO.IsolatedStorage.IsolatedStorageFile> representa um único repositório localizado no sistema de arquivos.
 
@@ -221,7 +221,7 @@ O armazenamento isolado é útil em muitas situações, inclusive nestes quatro 
 
 - Roaming. Os aplicativos também podem usar o armazenamento isolado com perfis de usuários móveis. Isso permite que repositórios isolados de um usuário façam roaming com o perfil.
 
-Você não deve usar um armazenamento isolado nas seguintes situações:
+Não use o armazenamento isolado nas seguintes situações:
 
 - Para armazenar segredos de alto valor, como chaves sem criptografia ou senhas, pois o armazenamento isolado não é protegido contra código altamente confiável, código não gerenciado ou usuários confiáveis do computador.
 
@@ -246,7 +246,7 @@ Muitos aplicativos usam bancos de dados para armazenar e isolar os dados. Nesse 
 |[Como: Localizar arquivos e diretórios existentes no armazenamento isolado](how-to-find-existing-files-and-directories-in-isolated-storage.md)|Demonstra como ler a estrutura de diretórios e arquivos no armazenamento isolado.|
 |[Como: Ler e gravar em arquivos no armazenamento isolado](how-to-read-and-write-to-files-in-isolated-storage.md)|Fornece um exemplo de gravação de uma cadeia de caracteres em um arquivo de armazenamento isolado, seguida por sua leitura de volta.|
 |[Como: Excluir arquivos e diretórios no armazenamento isolado](how-to-delete-files-and-directories-in-isolated-storage.md)|Demonstra como excluir arquivos e diretórios isolados.|
-|[Arquivo e e/s de fluxo](index.md)|Explica como você pode executar acesso síncrono e assíncrono a fluxos de dados e arquivos.|
+|[E/S de arquivo e de fluxo](index.md)|Explica como você pode executar acesso síncrono e assíncrono a fluxos de dados e arquivos.|
 
 <a name="reference"></a>
 

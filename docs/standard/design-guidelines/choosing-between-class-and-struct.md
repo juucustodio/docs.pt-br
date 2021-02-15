@@ -2,7 +2,6 @@
 title: Escolher entre Classe e Struct
 description: Saiba como decidir se deseja criar um tipo como uma classe ou criar um tipo como uma estrutura. Entenda como tipos de referência e tipos de valor diferem no .NET.
 ms.date: 10/22/2008
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - class library design guidelines [.NET Framework], structures
 - class library design guidelines [.NET Framework], classes
@@ -13,14 +12,15 @@ helpviewer_keywords:
 - classes [.NET Framework], vs. structures
 - type design guidelines, classes
 ms.assetid: f8b8ec9b-0ba7-4dea-aadf-a93395cd804f
-ms.openlocfilehash: 9d757e77292c1226fbe2328cce082033ae8f7003
-ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
+ms.openlocfilehash: 05ba9abbc9495d927b7f58ebb06f152c0c15772f
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84662596"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95701244"
 ---
 # <a name="choosing-between-class-and-struct"></a>Escolher entre Classe e Struct
+
 Uma das decisões básicas de design que cada designer de estrutura enfrenta é se deve criar um tipo como uma classe (um tipo de referência) ou como uma struct (um tipo de valor). Uma boa compreensão das diferenças no comportamento dos tipos de referência e dos tipos de valor é crucial para fazer essa escolha.
 
  A primeira diferença entre os tipos de referência e os tipos de valor que consideraremos é que os tipos de referência são alocados no heap e no lixo coletado, enquanto os tipos de valor são alocados na pilha ou embutidos em tipos contendo e desalocados quando a pilha se desenrola ou quando seu tipo recipiente é desalocado. Portanto, alocações e desalocações de tipos de valor são em geral mais baratas do que as alocações e desalocações de tipos de referência.
@@ -37,7 +37,7 @@ Uma das decisões básicas de design que cada designer de estrutura enfrenta é 
 
  ✔️ CONSIDERAR a definição de uma struct em vez de uma classe se as instâncias do tipo forem pequenas e geralmente de curta duração ou se forem normalmente inseridas em outros objetos.
 
- ❌Evite definir uma struct, a menos que o tipo tenha todas as seguintes características:
+ ❌ Evite definir uma struct, a menos que o tipo tenha todas as seguintes características:
 
 - Ele representa logicamente um único valor, semelhante a tipos primitivos ( `int` , `double` , etc.).
 

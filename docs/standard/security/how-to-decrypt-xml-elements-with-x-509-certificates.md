@@ -1,7 +1,7 @@
 ---
+description: 'Saiba mais sobre: como: descriptografar elementos XML com certificados X. 509'
 title: 'Como: descriptografar elementos XML com certificados X.509'
 ms.date: 07/14/2020
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -13,12 +13,12 @@ helpviewer_keywords:
 - X.509 certificates
 - certificates, X.509 certificates
 ms.assetid: bd015722-d88d-408d-8ca8-e4e475c441ed
-ms.openlocfilehash: f60947a3b722f33c88b696d47c6a4000a1cb076b
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: 40006ca1d3e76dbbc0899c0c22090b27c2cfb0de
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87555728"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792369"
 ---
 # <a name="how-to-decrypt-xml-elements-with-x509-certificates"></a>Como: descriptografar elementos XML com certificados X.509
 
@@ -80,7 +80,7 @@ Este exemplo pressupõe que um arquivo chamado `"test.xml"` existe no mesmo dire
 
 O certificado X. 509 usado neste exemplo é apenas para fins de teste.  Os aplicativos devem usar um certificado X. 509 gerado por uma autoridade de certificação confiável.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Modelo de criptografia](cryptography-model.md)
 - [Serviços criptográficos](cryptographic-services.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugEnum:: Skip'
 title: Método ICorDebugEnum::Skip
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: e925d88a-67a5-4f76-88b8-09cedeed0232
 topic_type:
 - apiref
-ms.openlocfilehash: 64d9db09b3e604247ab6a26cdca9eca22adbaace
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: f72e400b3c2c911f609aca19f1b7d6a3a4e785cc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976298"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694351"
 ---
 # <a name="icordebugenumskip-method"></a>Método ICorDebugEnum::Skip
+
 Move o cursor para a frente na enumeração pelo número especificado de itens.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,10 +36,12 @@ HRESULT Skip (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `celt`  
  no O número de itens pelos quais mover o cursor para a frente.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

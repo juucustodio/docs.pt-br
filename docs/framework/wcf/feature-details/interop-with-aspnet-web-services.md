@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: interoperabilidade com serviços Web do ASP.NET'
 title: Interoperabilidade com serviços Web do ASP.NET
 ms.date: 03/30/2017
 ms.assetid: 622422f8-6651-442f-b8be-e654a4aabcac
-ms.openlocfilehash: f38209ffe2161e58528a108b29e730665a65da37
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: f5e439bac3be4c12231653f7059792792edbc21e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84598860"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802730"
 ---
 # <a name="interoperability-with-aspnet-web-services"></a>Interoperabilidade com serviços Web do ASP.NET
+
 A interoperabilidade entre ASP.NET Web Services e serviços Web Windows Communication Foundation (WCF) pode ser obtida garantindo que os serviços implementados usando ambas as tecnologias estejam em conformidade com a especificação WS-I Basic Profile 1,1. Os serviços Web do ASP.NET que estão em conformidade com o WS-I Basic Profile 1,1 são interoperáveis com clientes WCF usando a associação fornecida pelo sistema do WCF, <xref:System.ServiceModel.BasicHttpBinding> .  
   
  Use a opção ASP.NET 2,0 de adicionar <xref:System.Web.Services.WebService> os <xref:System.Web.Services.WebMethodAttribute> atributos e a uma interface, em vez de uma classe, e escrever uma classe para implementar a interface, conforme mostrado no código de exemplo a seguir.  
@@ -47,7 +49,8 @@ public class Service : IEcho
  Evite usar as opções de autenticação fornecidas pelo Serviços de Informações da Internet (IIS). Os clientes WCF não dão suporte a eles. Se um serviço precisar ser protegido, use as opções fornecidas pelo WCF, pois essas opções são robustas e são baseadas em protocolos padrão.  
   
 ## <a name="performance-impact-caused-by-loading-the-servicemodel-httpmodule"></a>Impacto no desempenho causado pelo carregamento do ServiceModel HttpModule  
- No .NET Framework 3,0, o WCF `HttpModule` foi instalado no arquivo Web. config raiz, de modo que todos os aplicativos ASP.net eram habilitados para WCF. Isso pode afetar o desempenho para que você possa remover `ServiceModel` o arquivo Web. config, conforme mostrado no exemplo a seguir.  
+
+ No .NET Framework 3,0, o WCF `HttpModule` foi instalado no arquivo de Web.config raiz, de modo que cada aplicativo ASP.net foi habilitado para WCF. Isso pode afetar o desempenho para que você possa remover `ServiceModel` o arquivo Web.config, conforme mostrado no exemplo a seguir.  
   
 ```xml  
 <httpModules>  
@@ -57,4 +60,4 @@ public class Service : IEcho
   
 ## <a name="see-also"></a>Consulte também
 
-- [Como configurar um serviço do WCF para interoperar com os clientes de serviço Web do ASP.NET](config-wcf-service-with-aspnet-web-service.md)
+- [Como: configurar um serviço do WCF para interoperar com os clientes de serviço Web do ASP.NET](config-wcf-service-with-aspnet-web-service.md)

@@ -1,13 +1,13 @@
 ---
 title: Como registrar em log com a pilha elástica
 description: Registro em log usando Stack elástico, Logstash e Kibana
-ms.date: 05/13/2020
-ms.openlocfilehash: 32d9d0dae175d8d45d48b56d17f133b4cc432363
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.date: 01/19/2021
+ms.openlocfilehash: f8dbcd68bf809715a10d0ea1ab36cf5ceb6a96a9
+ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88811165"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99548078"
 ---
 # <a name="logging-with-elastic-stack"></a>Como registrar em log com a pilha elástica
 
@@ -17,7 +17,7 @@ Coletivamente, essas ferramentas são conhecidas como pilha elástica ou pilha E
 
 ## <a name="elastic-stack"></a>Pilha elástica
 
-A pilha elástica é uma opção avançada para coletar informações de um cluster kubernetes. O kubernetes dá suporte ao envio de logs para um ponto de extremidade Elasticsearch e, na [maioria das vezes](https://kubernetes.io/docs/tasks/debug-application-cluster/logging-elasticsearch-kibana/), tudo o que você precisa para começar é definir as variáveis de ambiente, conforme mostrado na Figura 7-5:
+A pilha elástica é uma opção avançada para coletar informações de um cluster kubernetes. O kubernetes dá suporte ao envio de logs para um ponto de extremidade Elasticsearch e, na [maioria das vezes](https://v1-19.docs.kubernetes.io/docs/tasks/debug-application-cluster/logging-elasticsearch-kibana/), tudo o que você precisa para começar é definir as variáveis de ambiente, conforme mostrado na Figura 7-5:
 
 ```kubernetes
 KUBE_LOGGING_DESTINATION=elasticsearch
@@ -26,7 +26,7 @@ KUBE_ENABLE_NODE_LOGGING=true
 
 **Figura 7-5**. Variáveis de configuração para kubernetes
 
-Isso instalará o Elasticsearch no cluster e o destino enviando todos os logs de cluster para ele.
+Esta etapa instalará o Elasticsearch no cluster e o destino enviando todos os logs de cluster para ele.
 
 ![Um exemplo de um painel de Kibana mostrando os resultados de uma consulta em relação a logs ingeridos da ](./media/kibana-dashboard.png)
  **figura kubernetes 7-6**. Um exemplo de um painel de Kibana que mostra os resultados de uma consulta em relação aos logs que são ingeridos do kubernetes
@@ -39,7 +39,7 @@ A pilha elástica fornece registro em log centralizado de maneira econômica, es
 
 O primeiro componente é [Logstash](https://www.elastic.co/products/logstash). Essa ferramenta é usada para coletar informações de log de uma grande variedade de fontes diferentes. Por exemplo, Logstash pode ler logs do disco e também receber mensagens de bibliotecas de log, como [Serilog](https://serilog.net/). O Logstash pode fazer alguma filtragem básica e expansão nos logs à medida que eles chegam. Por exemplo, se os logs contiverem endereços IP, Logstash poderá ser configurado para fazer uma pesquisa geográfica e obter um país ou até mesmo uma cidade de origem para essa mensagem.
 
-Serilog é uma biblioteca de registro em log para linguagens .NET, que permite o registro em log com parâmetros. Em vez de gerar uma mensagem de log textual que incorpore campos, os parâmetros são mantidos separados. Isso permite a filtragem e a pesquisa mais inteligentes. Uma configuração de Serilog de exemplo para gravação em Logstash aparece na Figura 7-7.
+Serilog é uma biblioteca de registro em log para linguagens .NET, que permite o registro em log com parâmetros. Em vez de gerar uma mensagem de log textual que incorpore campos, os parâmetros são mantidos separados. Essa biblioteca permite a filtragem e a pesquisa mais inteligentes. Uma configuração de Serilog de exemplo para gravação em Logstash aparece na Figura 7-7.
 
 ```csharp
 var log = new LoggerConfiguration()
@@ -105,7 +105,7 @@ O componente final da pilha é Kibana. Essa ferramenta é usada para fornecer vi
 
 ## <a name="installing-elastic-stack-on-azure"></a>Instalando a pilha elástica no Azure
 
-A pilha elástica pode ser instalada no Azure de várias maneiras. Como sempre, é possível [provisionar máquinas virtuais e instalar a pilha elástica diretamente](https://docs.microsoft.com/azure/virtual-machines/linux/tutorial-elasticsearch)nelas. Essa opção é preferida por alguns usuários experientes, pois oferece o mais alto grau de personalização. A implantação na infraestrutura como um serviço introduz uma sobrecarga de gerenciamento significativa, forçando aqueles que tomam esse caminho para apropriar-se de todas as tarefas associadas à infraestrutura como um serviço, como proteger os computadores e manter-se atualizado com os patches.
+A pilha elástica pode ser instalada no Azure de várias maneiras. Como sempre, é possível [provisionar máquinas virtuais e instalar a pilha elástica diretamente](/azure/virtual-machines/linux/tutorial-elasticsearch)nelas. Essa opção é preferida por alguns usuários experientes, pois oferece o mais alto grau de personalização. A implantação na infraestrutura como um serviço introduz uma sobrecarga de gerenciamento significativa, forçando aqueles que tomam esse caminho para apropriar-se de todas as tarefas associadas à infraestrutura como um serviço, como proteger os computadores e manter-se atualizado com os patches.
 
 Uma opção com menos sobrecarga é fazer uso de um dos muitos contêineres do Docker nos quais a pilha elástica já foi configurada. Esses contêineres podem ser descartados em um cluster kubernetes existente e executados junto com o código do aplicativo. O contêiner [sebp/Elk](https://elk-docker.readthedocs.io/) é um contêiner de pilha elástico bem documentado e testado.
 
@@ -113,7 +113,7 @@ Outra opção é uma [oferta Elk como serviço anunciada recentemente](https://d
 
 ## <a name="references"></a>Referências
 
-- [Instalar pilha elástica no Azure](https://docs.microsoft.com/azure/virtual-machines/linux/tutorial-elasticsearch)
+- [Instalar pilha elástica no Azure](/azure/virtual-machines/linux/tutorial-elasticsearch)
 
 >[!div class="step-by-step"]
 >[Anterior](observability-patterns.md) 

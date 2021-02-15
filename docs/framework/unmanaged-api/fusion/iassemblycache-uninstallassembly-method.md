@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IAssemblyCache:: UninstallAssembly'
 title: Método IAssemblyCache::UninstallAssembly
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 973b2c44-8dfc-40c1-9035-10f4846627e9
 topic_type:
 - apiref
-ms.openlocfilehash: 539a8edf6d7248235a6e672edc9464679a2eab82
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: d50108b9090b4250e8a6cec1d9b5c54bb78dee9c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73134507"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760895"
 ---
 # <a name="iassemblycacheuninstallassembly-method"></a>Método IAssemblyCache::UninstallAssembly
+
 Desinstala o assembly especificado do cache de assembly global.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,6 +39,7 @@ HRESULT UninstallAssembly (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `dwFlags`  
  no Sinalizadores definidos em Fusion. idl.  
   
@@ -44,10 +47,10 @@ HRESULT UninstallAssembly (
  no O nome do assembly a ser desinstalado.  
   
  `pRefData`  
- no Uma estrutura [FUSION_INSTALL_REFERENCE](fusion-install-reference-structure.md) que contém os dados de instalação para o assembly.  
+ no Uma estrutura de [FUSION_INSTALL_REFERENCE](fusion-install-reference-structure.md) que contém os dados de instalação para o assembly.  
   
  `pulDisposition`  
- [saída, opcional] Um dos valores de disposição definidos em Fusion. idl. Os valores possíveis incluem o seguinte:  
+ [saída, opcional] Um dos valores de disposição definidos em Fusion. idl. Os possíveis valores incluem os seguintes:  
   
 - IASSEMBLYCACHE_UNINSTALL_DISPOSITION_UNINSTALLED (1)  
   
@@ -62,11 +65,12 @@ HRESULT UninstallAssembly (
 - IASSEMBLYCACHE_UNINSTALL_DISPOSITION_REFERENCE_NOT_FOUND (6)  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Fusion. h  
   
- **Versões do .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>Consulte também
 

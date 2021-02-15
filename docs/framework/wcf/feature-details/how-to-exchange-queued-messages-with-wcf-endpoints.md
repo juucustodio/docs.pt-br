@@ -1,18 +1,20 @@
 ---
-title: Como fazer intercâmbio de mensagens em fila com pontos de extremidade do WCF
+description: 'Saiba mais sobre: como: trocar mensagens em fila com pontos de extremidade do WCF'
+title: 'Como: fazer intercâmbio de mensagens em fila com pontos de extremidade do WCF'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 938e7825-f63a-4c3d-b603-63772fabfdb3
-ms.openlocfilehash: 7da7ba1b680bae2b29eeff8fe669e097ea8eda32
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: fe7195719c57454cb0035c1b6f06134cf3380a46
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595369"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802886"
 ---
-# <a name="how-to-exchange-queued-messages-with-wcf-endpoints"></a>Como fazer intercâmbio de mensagens em fila com pontos de extremidade do WCF
+# <a name="how-to-exchange-queued-messages-with-wcf-endpoints"></a>Como: fazer intercâmbio de mensagens em fila com pontos de extremidade do WCF
+
 As filas do garantem que mensagens confiáveis possam ocorrer entre um cliente e um serviço Windows Communication Foundation (WCF), mesmo que o serviço não esteja disponível no momento da comunicação. Os procedimentos a seguir mostram como garantir a comunicação durável entre um cliente e um serviço usando a associação em fila padrão ao implementar o serviço WCF.  
   
  Esta seção explica como usar o <xref:System.ServiceModel.NetMsmqBinding> para a comunicação em fila entre um cliente WCF e um serviço WCF.  
@@ -50,7 +52,7 @@ As filas do garantem que mensagens confiáveis possam ocorrer entre um cliente e
   
 ### <a name="to-create-a-client-for-the-queued-service"></a>Para criar um cliente para o serviço em fila  
   
-1. O exemplo a seguir mostra como executar o aplicativo de hospedagem e usar a ferramenta svcutil. exe para criar o cliente WCF.  
+1. O exemplo a seguir mostra como executar o aplicativo de hospedagem e usar a ferramenta de Svcutil.exe para criar o cliente WCF.  
   
     ```console
     svcutil http://localhost:8000/ServiceModelSamples/service  
@@ -64,7 +66,8 @@ As filas do garantem que mensagens confiáveis possam ocorrer entre um cliente e
      [!code-vb[S_Msmq_Transacted#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmq_transacted/vb/client.vb#8)]  
   
 ## <a name="example"></a>Exemplo  
- Os exemplos a seguir mostram o código do serviço, o aplicativo de hospedagem, o arquivo app. config e o código do cliente incluídos para este exemplo.  
+
+ Os exemplos a seguir mostram o código do serviço, o aplicativo de hospedagem, o arquivo App.config e o código do cliente incluídos para este exemplo.  
   
  [!code-csharp[S_Msmq_Transacted#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_msmq_transacted/cs/service.cs#9)]
  [!code-vb[S_Msmq_Transacted#9](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmq_transacted/vb/service.vb#9)]  
@@ -80,7 +83,7 @@ As filas do garantem que mensagens confiáveis possam ocorrer entre um cliente e
 - <xref:System.ServiceModel.NetMsmqBinding>
 - [Associação transacionada do MSMQ](../samples/transacted-msmq-binding.md)
 - [Enfileiramento no WCF](queuing-in-wcf.md)
-- [Como trocar mensagens com pontos de extremidade do WCF e aplicativos de enfileiramento de mensagens](how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)
+- [Como: fazer intercâmbio de mensagens com pontos de extremidade do WCF e aplicativos de enfileiramento de mensagens](how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)
 - [Windows Communication Foundation para enfileiramento de mensagens](../samples/wcf-to-message-queuing.md)
 - [Instalando o Enfileiramento de Mensagens (MSMQ)](../samples/installing-message-queuing-msmq.md)
 - [Enfileiramento de mensagens para o Windows Communication Foundation](../samples/message-queuing-to-wcf.md)

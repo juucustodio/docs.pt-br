@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugObjectValue:: SetFromManagedCopy'
 title: Método ICorDebugObjectValue::SetFromManagedCopy
 ms.date: 03/30/2017
 api_name:
@@ -15,17 +16,18 @@ helpviewer_keywords:
 ms.assetid: 2cee9108-a58d-48a8-b7d4-6beb6da3f4bb
 topic_type:
 - apiref
-ms.openlocfilehash: 62f9c6d70b789b52dcfe667b581552bb190a0a1d
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 492e81d03b8396828042d5ee4e6b384b2553ba5c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73129739"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728841"
 ---
 # <a name="icordebugobjectvaluesetfrommanagedcopy-method"></a>Método ICorDebugObjectValue::SetFromManagedCopy
+
 `SetFromManagedCopy` é obsoleto. Não chame esse método.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT SetFromManagedCopy (  
@@ -34,6 +36,7 @@ HRESULT SetFromManagedCopy (
 ```  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função IsFrameworkAssembly'
 title: Função IsFrameworkAssembly
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: b0c6f19b-d4fd-4971-88f0-12ffb5793da3
 topic_type:
 - apiref
-ms.openlocfilehash: e30b6f2d2254d2d107c4c82a2c5664850ce6ec23
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 8f264df7b1ae5c494298b11ebd94cc93aed5543a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73123065"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800013"
 ---
 # <a name="isframeworkassembly-function"></a>Função IsFrameworkAssembly
+
 Obtém um valor que indica se o assembly especificado é gerenciado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT IsFrameworkAssembly (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pwzAssemblyReference`  
  no O nome do assembly a ser verificado.  
   
@@ -49,13 +52,15 @@ HRESULT IsFrameworkAssembly (
  [in] O tamanho do `pwzFrameworkAssemblyIdentity`.  
   
 ## <a name="remarks"></a>Comentários  
- O parâmetro `pwzAssemblyReference` é um ponteiro para uma cadeia de caracteres que contém o nome de um assembly.  
+
+ O `pwzAssemblyReference` parâmetro é um ponteiro para uma cadeia de caracteres que contém o nome de um assembly.  
   
- Se esse assembly fizer parte do .NET Framework, o parâmetro `pbIsFrameworkAssembly` conterá um valor booliano de `true`.  
+ Se esse assembly fizer parte do .NET Framework, o `pbIsFrameworkAssembly` parâmetro conterá um valor booliano de `true` .  
   
- Se o assembly nomeado não fizer parte do .NET Framework, ou se o parâmetro `pwzAssemblyReference` não nomear um assembly, `pbIsFrameworkAssembly` conterá um valor booliano de `false`.  
+ Se o assembly nomeado não fizer parte do .NET Framework, ou se o `pwzAssemblyReference` parâmetro não nomear um assembly, `pbIsFrameworkAssembly` conterá um valor booliano de `false` .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
 ## <a name="see-also"></a>Consulte também

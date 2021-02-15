@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <msmqTransport>'
 title: <msmqTransport>
 ms.date: 03/30/2017
 ms.assetid: 19d89f35-76ac-49dc-832b-e8bec2d5e33b
-ms.openlocfilehash: fae7c9fbc82dafc0f6be58f5404397d751033b45
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 036238340ef7638373b66a342fc4ef722d80400f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73738856"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99684185"
 ---
 # \<msmqTransport>
+
 Faz com que um canal transfira mensagens no transporte MSMQ quando ele é incluído em uma associação personalizada.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -19,7 +21,7 @@ Faz com que um canal transfira mensagens no transporte MSMQ quando ele é inclu�
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<msmqTransport>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <msmqTransport customDeadLetterQueue="Uri"
@@ -46,6 +48,7 @@ Faz com que um canal transfira mensagens no transporte MSMQ quando ele é inclu�
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -63,7 +66,7 @@ Faz com que um canal transfira mensagens no transporte MSMQ quando ele é inclu�
 |maxReceivedMessageSize|Um inteiro positivo que especifica o tamanho máximo da mensagem em bytes, incluindo cabeçalhos. O remetente de uma mensagem recebe uma falha de SOAP quando a mensagem é muito grande para o destinatário. O receptor remove a mensagem e cria uma entrada do evento no log de rastreamento. O padrão é 65536.|  
 |maxRetryCycles|Um inteiro que especifica o número máximo de ciclos de repetição para tentar a entrega de mensagens para o aplicativo de recebimento. O padrão é <xref:System.Int32.MaxValue>.<br /><br /> Um único ciclo de repetição tenta entregar uma mensagem a um aplicativo um número de vezes especificado. O número de tentativas feitas é definido pelo `maxImmediateRetries` atributo. Se o aplicativo não conseguir consumir a mensagem depois que as tentativas na entrega tiverem sido esgotadas, a mensagem será enviada para uma fila de repetição. Os ciclos de repetição subsequentes consistem na mensagem que está sendo retornada da fila de repetição para a fila do aplicativo para tentar a entrega para o aplicativo novamente, após um atraso especificado pelo `retryCycleDelay` atributo. O `maxRetryCycles` atributo especifica o número de ciclos de repetição que o aplicativo usa para tentar entregar a mensagem.|  
 |queueTransferProtocol|Especifica o transporte de canal de comunicação enfileirado que essa associação usa. Os valores válidos são<br /><br /> -Nativo: Use o protocolo MSMQ nativo.<br />-SRMP: Use o protocolo SRMP (SOAP Reliable Messaging Protocol).<br />-SrmpSecure: usar o transporte de protocolo de mensagens confiáveis (SRMPs) SOAP.<br /><br /> Esse atributo é do tipo <xref:System.ServiceModel.QueueTransferProtocol> .<br /><br /> Como o MSMQ não dá suporte ao endereçamento de Active Directory ao usar o protocolo de mensagens confiáveis SOAP, você não deve definir esse atributo como Srmp ou srmps quando `useActiveDirectory` é definido como `true` .|  
-|rejectAfterLastRetry|Um valor booliano que especifica a ação a ser tomada para uma mensagem com falha na entrega após o número máximo de tentativas.<br /><br /> `true`significa que uma confirmação negativa é retornada ao remetente e a mensagem é descartada; `false`significa que a mensagem é enviada para a fila de mensagens suspeitas. O padrão é `false`.<br /><br /> Se o valor for `false` , o aplicativo de recebimento poderá ler a fila de mensagens suspeitas para processar mensagens suspeitas (ou seja, mensagens que falharam na entrega).<br /><br /> O MSMQ 3,0 não dá suporte ao retorno de uma confirmação negativa para o remetente, portanto, esse atributo será ignorado no MSMQ 3,0.|  
+|rejectAfterLastRetry|Um valor booliano que especifica a ação a ser tomada para uma mensagem com falha na entrega após o número máximo de tentativas.<br /><br /> `true` significa que uma confirmação negativa é retornada ao remetente e a mensagem é descartada; `false` significa que a mensagem é enviada para a fila de mensagens suspeitas. O padrão é `false`.<br /><br /> Se o valor for `false` , o aplicativo de recebimento poderá ler a fila de mensagens suspeitas para processar mensagens suspeitas (ou seja, mensagens que falharam na entrega).<br /><br /> O MSMQ 3,0 não dá suporte ao retorno de uma confirmação negativa para o remetente, portanto, esse atributo será ignorado no MSMQ 3,0.|  
 |retryCycleDelay|Um <xref:System.TimeSpan> que especifica o tempo de espera entre os ciclos de repetição ao tentar entregar uma mensagem que não pôde ser entregue imediatamente. O padrão é 00:10:00.<br /><br /> Um único ciclo de repetição tenta entregar uma mensagem a um aplicativo de recebimento um número especificado de vezes. O número de tentativas feitas é especificado pelo `maxImmediateRetries` atributo. Se o aplicativo não conseguir consumir a mensagem após o número especificado de repetições imediatas, a mensagem será enviada para uma fila de repetição. Os ciclos de repetição subsequentes consistem na mensagem que está sendo retornada da fila de repetição para a fila do aplicativo para tentar a entrega para o aplicativo novamente, após um atraso especificado pelo `retryCycleDelay` atributo. O número de ciclos de repetição é especificado pelo `maxRetryCycles` atributo.|  
 |timeToLive|Um <xref:System.TimeSpan> que especifica por quanto tempo as mensagens são válidas antes de expirarem e são colocadas na fila de mensagens mortas. O padrão é 1,00:00:00, o que significa 1 dia.<br /><br /> Esse atributo é definido para garantir que as mensagens sensíveis ao tempo não se tornem obsoletas antes de serem processadas pelos aplicativos de recebimento. Uma mensagem em uma fila que não é consumida pelo aplicativo de recebimento dentro do intervalo de tempo especificado é considerada expirada. As mensagens expiradas são enviadas para a fila especial chamada fila de mensagens mortas. O local da fila de mensagens mortas é definido com o `customDeadLetterQueue` atributo ou com o padrão apropriado, com base em garantias.|  
 |UseActiveDirectory|Um valor booliano que especifica se os endereços de fila devem ser convertidos usando Active Directory.<br /><br /> Os endereços de fila MSMQ podem consistir em nomes de caminho ou nomes de formato diretos. Com um nome de formato direto, o MSMQ resolve o nome do computador usando DNS, NetBIOS ou IP. Com um nome de caminho, o MSMQ resolve o nome do computador usando Active Directory. Por padrão, o transporte em fila do Windows Communication Framework (WCF) converte o URI de uma fila de mensagens em um nome de formato direto. Ao definir esse atributo como `true` , um aplicativo pode especificar que o transporte em fila deve resolver o nome do computador usando Active Directory em vez de DNS, NetBIOS ou IP.|  
@@ -83,11 +86,12 @@ Faz com que um canal transfira mensagens no transporte MSMQ quando ele é inclu�
 |[\<binding>](bindings.md)|Define todos os recursos de associação da associação personalizada.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O `msmqTransport` elemento permite que o usuário defina as propriedades do canal de comunicação enfileirado. O canal de comunicação enfileirado usa o enfileiramento de mensagens para seu transporte.  
   
  Esse elemento de associação é o elemento de associação padrão usado pela associação padrão do enfileiramento de mensagens ( `netMsmqBinding` ).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.MsmqTransportElement>
 - <xref:System.ServiceModel.Channels.MsmqTransportBindingElement>

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estático (Visual Basic)'
 title: Estático
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,17 +8,19 @@ helpviewer_keywords:
 - static modifier
 - Static keyword [Visual Basic]
 ms.assetid: 19013910-4658-47b6-a22e-1744b527979e
-ms.openlocfilehash: 3b323d5fb1c4f1357b9f476213793c69d29b7208
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 03c2e3f64ac9052a0c604b8bc34782af16edbf34
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84402688"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700735"
 ---
 # <a name="static-visual-basic"></a>Estático (Visual Basic)
+
 Especifica que uma ou mais variáveis locais declaradas devem continuar a existir e manter seus valores mais recentes após o término do procedimento no qual elas são declaradas.  
   
 ## <a name="remarks"></a>Comentários  
+
  Normalmente, uma variável local em um procedimento deixa de existir assim que o procedimento para. Uma variável estática continua existindo e retém seu valor mais recente. Na próxima vez em que o código chamar o procedimento, a variável não será reinicializada e ainda manterá o valor mais recente que você atribuiu a ela. Uma variável estática continua existindo durante o tempo de vida da classe ou do módulo em que ela está definida.  
   
 ## <a name="rules"></a>Regras  
@@ -31,11 +34,13 @@ Especifica que uma ou mais variáveis locais declaradas devem continuar a existi
 - **Modificadores combinados.** Você não pode especificar `Static` juntos com `ReadOnly` , `Shadows` ou `Shared` na mesma declaração.  
   
 ## <a name="behavior"></a>Comportamento  
+
  Quando você declara uma variável estática em um `Shared` procedimento, apenas uma cópia da variável estática está disponível para o aplicativo inteiro. Você chama um `Shared` procedimento usando o nome da classe, não uma variável que aponta para uma instância da classe.  
   
  Quando você declara uma variável estática em um procedimento que não é `Shared` , apenas uma cópia da variável está disponível para cada instância da classe. Você chama um procedimento não compartilhado usando uma variável que aponta para uma instância específica da classe.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir demonstra o uso de `Static`.  
   
  [!code-vb[VbVbalrKeywords#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class1.vb#5)]  
@@ -46,7 +51,7 @@ Especifica que uma ou mais variáveis locais declaradas devem continuar a existi
   
  [Instrução Dim](../statements/dim-statement.md)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Sombras](shadows.md)
 - [Compartilhado](shared.md)

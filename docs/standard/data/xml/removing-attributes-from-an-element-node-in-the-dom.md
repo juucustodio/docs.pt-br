@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: removendo atributos de um nó de elemento no DOM'
 title: Removendo os atributos de um nó no elemento DOM
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 ms.assetid: 7ede6f9e-a3ac-49a4-8488-ab8360a44aa4
-ms.openlocfilehash: 0ac8528d52ef09aab99c76aea9378c0188fa66d4
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: a1e15f8358db6723d99194975cad2d121f6d48c3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84292014"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783125"
 ---
 # <a name="removing-attributes-from-an-element-node-in-the-dom"></a>Removendo os atributos de um nó no elemento DOM
+
 Há várias maneiras para remover os atributos. Uma técnica é removê-los de coleção de atributo. Para fazer isso, as seguintes etapas são executadas:  
   
 1. Obter a coleção de atributo do elemento usando `XmlAttributeCollection attrs = elem.Attributes;`.  
@@ -37,6 +38,6 @@ Há várias maneiras para remover os atributos. Uma técnica é removê-los de c
   
  Quando chamado com <xref:System.Xml.XmlAttribute>, o método de <xref:System.Xml.XmlAttributeCollection.RemoveAll%2A> define o valor do atributo para String.Empty, como um atributo não pode existir sem um valor.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

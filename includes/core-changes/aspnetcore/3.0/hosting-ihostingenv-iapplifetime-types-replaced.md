@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: be1fad236dd3eed047b010e93285aec8bc607b61
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "72394334"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96032239"
 ---
 ### <a name="hosting-ihostingenvironment-and-iapplicationlifetime-types-marked-obsolete-and-replaced"></a>Hospedagem: tipos IHostingEnvironment e IApplicationLifetime marcados como obsoletos e substituídos
 
@@ -12,7 +12,7 @@ Novos tipos foram introduzidos para substituir os `IHostingEnvironment` tipos ex
 
 #### <a name="version-introduced"></a>Versão introduzida
 
-3,0
+3.0
 
 #### <a name="old-behavior"></a>Comportamento antigo
 

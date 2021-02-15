@@ -4,11 +4,11 @@ description: Um glossário de termos essenciais sobre o aprendizado de máquina,
 ms.topic: reference
 ms.date: 07/31/2019
 ms.openlocfilehash: 32ccb6df1cb08db45ebd25a0d1c0ea4396a6c50b
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: 67ebdb695fd017d79d9f1f7f35d145042d5a37f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79398933"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92223739"
 ---
 # <a name="machine-learning-glossary-of-important-terms"></a>Glossário de aprendizado de máquina com termos importantes
 
@@ -36,7 +36,7 @@ No ML.NET, um catálogo é uma coleção de funções de extensão agrupadas por
 
 Por exemplo, cada tarefa de aprendizado de máquina (classificação binária, regressão, classificação etc.) tem um catálogo de algoritmos de aprendizado de máquina disponível (treinadores). O catálogo para os treinadores de classificação binária é: <xref:Microsoft.ML.BinaryClassificationCatalog.BinaryClassificationTrainers>.
 
-## <a name="classification"></a>classificação
+## <a name="classification"></a>Classificação
 
 Quando os dados são usados ​​para prever uma categoria, a tarefa de [aprendizado de máquina supervisionado](#supervised-machine-learning) é chamada de classificação. [Classificação binária](#binary-classification) refere-se à previsão de apenas duas categorias (por exemplo, classificar uma imagem como uma figura de um "gato" ou um "cachorro"). [Classificação multiclasse](#multiclass-classification) refere-se à previsão de várias categorias (por exemplo, ao classificar uma imagem como uma imagem de uma raça específica de cão).
 
@@ -80,7 +80,7 @@ Na [classificação](#classification), uma métrica de avaliação que equilibra
 
 Um parâmetro de um algoritmo de aprendizado de máquina. Os exemplos incluem o número de árvores a serem aprendidas em uma floresta de decisão ou o tamanho da etapa em um algoritmo descendente de gradiente. Os valores de *Hiperparâmetros* são definidos antes de treinar o modelo e controlar o processo de localização dos parâmetros da função de previsão, por exemplo, os pontos de comparação em uma árvore de decisão ou os pesos em um modelo de regressão linear. Para obter mais informações, consulte o artigo [Hiperparâmetro](https://en.wikipedia.org/wiki/Hyperparameter_(machine_learning)) na Wikipédia.
 
-## <a name="label"></a>Rótulo
+## <a name="label"></a>Rotular
 
 O elemento a ser previsto com o modelo de aprendizado de máquina. Por exemplo, a raça do cão ou um preço futuro da ação.
 
@@ -98,7 +98,7 @@ Treinadores diferentes podem ser configurados com funções de perda diferentes.
 
 Na [regressão](#regression), uma métrica de avaliação que é a média de todos os erros de modelo, em que erro de modelo consiste na distância entre o valor do [rótulo](#label) previsto e o valor do rótulo correto.
 
-## <a name="model"></a>Modelo
+## <a name="model"></a>Modelar
 
 Tradicionalmente, os parâmetros para a função de previsão. Por exemplo, os pesos em um modelo de regressão linear ou os pontos de divisão em uma árvore de decisão. No ML.NET, um modelo contém todas as informações necessárias para prever o [rótulo](#label) de um objeto de domínio (por exemplo, imagem ou texto). Isso significa que os modelos ML.NET incluem as etapas de personalização necessárias, bem como os parâmetros para a função de previsão.
 
@@ -126,7 +126,7 @@ Todas as operações necessárias para ajustar um modelo a um conjunto de dados.
 
 Na [classificação](#classification), a precisão de uma classe é o número de itens preditos corretamente como pertencentes a essa classe dividido pelo número total de itens previstos como pertencentes à classe.
 
-## <a name="recall"></a>Recuperação
+## <a name="recall"></a>Chamar de volta
 
 Na [classificação](#classification), o recall de uma classe é o número de itens preditos corretamente como pertencentes a essa classe dividido pelo número total de itens que realmente pertencem à classe.
 
@@ -135,7 +135,7 @@ Na [classificação](#classification), o recall de uma classe é o número de it
  Regularização penaliza um modelo linear por ser complicado demais. Há dois tipos de regularização:
 
 - A regularização $L_1$ zera pesos para recursos insignificantes. O tamanho do modelo salvo pode ficar menor após esse tipo de regularização.
-- a regularização $L_2$ minimiza a faixa de peso para recursos insignificantes. Este é um processo mais geral e é menos sensível aos outliers.
+- $L _2 $ regularização minimiza o intervalo de peso para recursos insignificantes. Esse é um processo mais geral e é menos sensível a exceções.
 
 ## <a name="regression"></a>Regressão
 

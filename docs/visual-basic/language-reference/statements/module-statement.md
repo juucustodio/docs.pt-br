@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instrução de módulo'
 title: Instrução Module
 ms.date: 07/20/2015
 f1_keywords:
@@ -13,18 +14,18 @@ helpviewer_keywords:
 - classes [Visual Basic], vs. modules
 - declarations [Visual Basic], modules
 ms.assetid: a1243afc-14a5-45df-95d5-51118aeac362
-ms.openlocfilehash: 24a27ba41f5ac889f2f2725a2852368a4292a6fb
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 2a19bcfa4521d34b5a91fbc9de412a6d8f6f39c0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404441"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99768864"
 ---
 # <a name="module-statement"></a>Instrução Module
 
 Declara o nome de um módulo e apresenta a definição das variáveis, propriedades, eventos e procedimentos que o módulo compreende.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```vb
 [ <attributelist> ] [ accessmodifier ]  Module name
@@ -40,14 +41,14 @@ Opcional. Consulte a [lista de atributos](attribute-list.md).
 `accessmodifier`  
 Opcional. Pode ser um dos seguintes:
 
-- [Pública](../modifiers/public.md)
+- [Público](../modifiers/public.md)
 
-- [Público](../modifiers/friend.md)
+- [Friend](../modifiers/friend.md)
 
 Consulte [níveis de acesso em Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).
 
 `name`  
-Obrigatórios. Nome deste módulo. Consulte [nomes de elementos declarados](../../programming-guide/language-features/declared-elements/declared-element-names.md).
+Obrigatório. Nome deste módulo. Consulte [nomes de elementos declarados](../../programming-guide/language-features/declared-elements/declared-element-names.md).
 
 `statements`  
 Opcional. Instruções que definem as variáveis, propriedades, eventos, procedimentos e tipos aninhados deste módulo.
@@ -101,7 +102,7 @@ Esses elementos têm muitas semelhanças, mas também há algumas diferenças im
 
 [!code-vb[VbVbalrStatements#69](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#69)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instrução Class](class-statement.md)
 - [Instrução Namespace](namespace-statement.md)

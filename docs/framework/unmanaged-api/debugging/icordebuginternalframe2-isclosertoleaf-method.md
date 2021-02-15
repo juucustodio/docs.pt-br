@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugInternalFrame2:: IsCloserToLeaf'
 title: Método ICorDebugInternalFrame2::IsCloserToLeaf
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: c1d3d1eb-8370-4f25-8297-3bd262b4740a
 topic_type:
 - apiref
-ms.openlocfilehash: 4a01ccd4e5cb9aadc6a693b2c6ceaff31c114bbc
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: d773f8670f600a5bcd2a8dad7f23fe243195957c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83209884"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801274"
 ---
 # <a name="icordebuginternalframe2isclosertoleaf-method"></a>Método ICorDebugInternalFrame2::IsCloserToLeaf
+
 Verifica se o `this` quadro interno está mais próximo da folha do que o objeto ICorDebugFrame especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -33,6 +35,7 @@ HRESULT IsCloserToLeaf([in] ICorDebugFrame * pFrameToCompare,
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pFrameToCompare`  
  no Um ponteiro para o objeto de comparação `ICorDebugFrame` .  
   
@@ -40,6 +43,7 @@ HRESULT IsCloserToLeaf([in] ICorDebugFrame * pFrameToCompare,
  [fora] `true` Se o `this` quadro interno estiver mais próximo da folha do que o quadro especificado por `pFrameToCompare` ; caso contrário, `false` .  
   
 ## <a name="return-value"></a>Valor retornado  
+
  Esse método retorna os HRESULTs específicos a seguir, bem como os erros de HRESULT que indicam falha de método.  
   
 |HRESULT|Descrição|  
@@ -49,9 +53,11 @@ HRESULT IsCloserToLeaf([in] ICorDebugFrame * pFrameToCompare,
 |E_INVALIDARG|`pFrameToCompare` ou `pIsCloser` é nulo.|  
   
 ## <a name="remarks"></a>Comentários  
- `IsCloserToLeaf`pode ser usado para implementar uma política para intercalar quadros internos com outros quadros na pilha.  
+
+ `IsCloserToLeaf` pode ser usado para implementar uma política para intercalar quadros internos com outros quadros na pilha.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -60,7 +66,7 @@ HRESULT IsCloserToLeaf([in] ICorDebugFrame * pFrameToCompare,
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugInternalFrame2](icordebuginternalframe2-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICorProfilerCallback8: método ynamicMethodJITCompilationFinished de:D'
 title: 'ICorProfilerCallback8: método ynamicMethodJITCompilationFinished de:D'
 ms.date: 04/10/2018
 api_name:
@@ -8,14 +9,15 @@ api_location:
 - corprof.idl
 api_type:
 - COM
-ms.openlocfilehash: 554cc93de934061e87322c7557e05545e5e7bc62
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: d076307b9e57c27753297cad8eebc1b9aa9433f6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84499071"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781708"
 ---
 # <a name="icorprofilercallback8dynamicmethodjitcompilationfinished-method"></a>ICorProfilerCallback8: método ynamicMethodJITCompilationFinished de:D
+
 [Com suporte no .NET Framework 4,7 e versões posteriores]  
   
 Notifica o criador de perfil sempre que a compilação JIT de um método dinâmico for concluída.  
@@ -31,6 +33,7 @@ HRESULT DynamicMethodJITCompilationFinished(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
 [in] `functionId`  
 O identificador da função na memória para a qual a compilação JIT é iniciada.
 
@@ -44,9 +47,10 @@ O identificador da função na memória para a qual a compilação JIT é inicia
 Esse retorno de chamada é disparado sempre que a compilação JIT de um método dinâmico é concluída. Isso inclui vários stubs IL e métodos LCG. Seu objetivo é fornecer aos gravadores de criador de perfil informações suficientes para identificar o método compilado para os usuários.
 
 > [!NOTE]
-> `functionId`os valores não podem ser usados para resolver seus tokens de metadados, pois os métodos dinâmicos não têm metadados.
+> `functionId` os valores não podem ser usados para resolver seus tokens de metadados, pois os métodos dinâmicos não têm metadados.
 
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -55,7 +59,7 @@ Esse retorno de chamada é disparado sempre que a compilação JIT de um método
   
  **.NET Framework versões:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método DynamicMethodJITCompilationStarted](icorprofilercallback8-dynamicmethodjitcompilationstarted-method.md)
 - [Interface ICorProfilerCallback8](icorprofilercallback8-interface.md)

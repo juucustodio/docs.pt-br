@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-netcf
 title: -netcf
 ms.date: 03/13/2018
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - netcf compiler option [Visual Basic]
 - /netcf compiler option [Visual Basic]
 ms.assetid: db7cfa59-c315-401c-a59b-0daf355343d6
-ms.openlocfilehash: 16fb6b3b63c848ea6c09cc18b0fcc488670f0926
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 053e177d8d7008b10bfa552ee60cbbd2d5dda565
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84397469"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434908"
 ---
 # <a name="-netcf"></a>-netcf
 
@@ -85,13 +86,13 @@ A `-netcf` opção altera os seguintes recursos de idioma:
 
 ## <a name="example"></a>Exemplo
 
-O código a seguir é compilado `Myfile.vb` com o .NET Compact Framework, usando as versões de mscorlib. dll e Microsoft. VisualBasic. dll encontrados no diretório de instalação padrão do .NET Compact Framework na unidade C. Normalmente, você usaria a versão mais recente do .NET Compact Framework.
+O código a seguir é compilado `Myfile.vb` com o .NET Compact Framework, usando as versões do mscorlib.dll e Microsoft.VisualBasic.dll encontradas no diretório de instalação padrão do .NET Compact Framework na unidade C. Normalmente, você usaria a versão mais recente do .NET Compact Framework.
 
 ```console
 vbc -netcf -sdkpath:"c:\Program Files\Microsoft Visual Studio .NET 2003\CompactFrameworkSDK\v1.0.5000\Windows CE " myfile.vb
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Compilador de linha de comando do Visual Basic](index.md)
 - [Linhas de Comando de Compilação de Exemplo](sample-compilation-command-lines.md)

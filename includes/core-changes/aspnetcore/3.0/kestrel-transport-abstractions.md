@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: fb23418816abcae125106c93b339a546aa9bc2ee
-ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83721168"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96032252"
 ---
 ### <a name="kestrel-transport-abstractions-removed-and-made-public"></a>Kestrel: abstrações de transporte removidas e tornadas públicas
 
@@ -12,7 +12,7 @@ Como parte da afastamento das APIs "pubternal", as APIs da camada de transporte 
 
 #### <a name="version-introduced"></a>Versão introduzida
 
-3,0
+3.0
 
 #### <a name="old-behavior"></a>Comportamento antigo
 

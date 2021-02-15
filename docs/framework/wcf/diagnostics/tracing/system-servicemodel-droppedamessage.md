@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: System. ServiceModel. DroppedAMessage'
 title: System.ServiceModel.DroppedAMessage
 ms.date: 03/30/2017
 ms.assetid: a299401f-2983-45ea-b4f3-963bece3602e
-ms.openlocfilehash: 7dfe748f9bc2cfd9e8099181b0596e4a5147da33
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 3f74764cdde28c9ef5e96049c649015efbcb5da3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596032"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99633784"
 ---
 # <a name="systemservicemodeldroppedamessage"></a>System.ServiceModel.DroppedAMessage
+
 System.ServiceModel.DroppedAMessage  
   
 ## <a name="description"></a>Descrição  
+
  Uma mensagem de resposta foi recebida, mas não há solicitações pendentes aguardando esta mensagem. A mensagem está sendo descartada pelo tempo de execução do Windows Communication Foundation (WCF).  
   
  Esse rastreamento pode ser usado para depurar mensagens perdidas.  
@@ -21,4 +24,4 @@ System.ServiceModel.DroppedAMessage
 
 - [Rastreamento](index.md)
 - [Utilizando o rastreamento para solucionar problemas em seu aplicativo](using-tracing-to-troubleshoot-your-application.md)
-- [Administração e diagnóstico](../index.md)
+- [Administração e diagnósticos](../index.md)

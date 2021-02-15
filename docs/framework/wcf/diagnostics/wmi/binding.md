@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: Associação'
 title: Binding2
 ms.date: 03/30/2017
 ms.assetid: 09511c6c-5749-4bb0-874e-0f0be36bfe04
-ms.openlocfilehash: a040cc6e12833d2c737eb14c591300e5873ddce7
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 36887a9296bfafd0790105e7f4d513efc3009bf8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61964067"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757781"
 ---
 # <a name="binding"></a>Associação
-WMI de associação  
+
+Associação WMI  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class Binding  
@@ -29,26 +31,31 @@ class Binding
 ```  
   
 ## <a name="methods"></a>Métodos  
- A classe de associação não define quaisquer métodos.  
+
+ A classe de associação não define nenhum método.  
   
 ## <a name="properties"></a>Propriedades  
- A classe Binding tem as seguintes propriedades.  
+
+ A classe de associação tem as propriedades a seguir.  
   
 ### <a name="bindingelements"></a>BindingElements  
- Tipo de dados: Matriz de BindingElement  
+
+ Tipo de dados: matriz BindingElement  
   
  Tipo de acesso: Somente leitura  
   
- A coleção de elementos implementados pela associação de associação.  
+ A coleção de elementos de associação implementados pela associação.  
   
 ### <a name="closetimeout"></a>CloseTimeout  
- Tipo de dados: datetime  
+
+ Tipo de dados: DateTime  
   
  Tipo de acesso: Somente leitura  
   
- O intervalo de tempo fornecido para a conclusão de uma operação close.  
+ O intervalo de tempo fornecido para a conclusão de uma operação de fechamento.  
   
 ### <a name="name"></a>Nome  
+
  Tipo de dados: cadeia de caracteres  
   
  Tipo de acesso: Somente leitura  
@@ -56,6 +63,7 @@ class Binding
  O nome da associação.  
   
 ### <a name="namespace"></a>Namespace  
+
  Tipo de dados: cadeia de caracteres  
   
  Tipo de acesso: Somente leitura  
@@ -63,39 +71,43 @@ class Binding
  O namespace XML da associação.  
   
 ### <a name="opentimeout"></a>OpenTimeout  
- Tipo de dados: datetime  
+
+ Tipo de dados: DateTime  
   
  Tipo de acesso: Somente leitura  
   
- O intervalo de tempo fornecido para a conclusão de uma operação open.  
+ O intervalo de tempo fornecido para a conclusão de uma operação de abertura.  
   
 ### <a name="receivetimeout"></a>ReceiveTimeout  
- Tipo de dados: datetime  
+
+ Tipo de dados: DateTime  
   
  Tipo de acesso: Somente leitura  
   
- O intervalo de tempo fornecido para uma operação de recebimento ser concluída.  
+ O intervalo de tempo fornecido para a conclusão de uma operação de recebimento.  
   
 ### <a name="scheme"></a>Esquema  
+
  Tipo de dados: cadeia de caracteres  
   
  Tipo de acesso: Somente leitura  
   
- O esquema de transporte URI que é usado pelas fábricas de canal e de ouvinte que são criadas pela associação.  
+ O esquema de transporte de URI que é usado pelas fábricas de canal e ouvinte criadas pela associação.  
   
-### <a name="sendtimeout"></a>sendTimeout  
- Tipo de dados: datetime  
+### <a name="sendtimeout"></a>SendTimeout  
+
+ Tipo de dados: DateTime  
   
  Tipo de acesso: Somente leitura  
   
- O intervalo de tempo fornecido para uma operação de envio ser concluída.  
+ O intervalo de tempo fornecido para a conclusão de uma operação de envio.  
   
 ## <a name="requirements"></a>Requisitos  
   
-|MOF|Declarado em Servicemodel.mof.|  
+|MOF|Declarado em ServiceModel. mof.|  
 |---------|-----------------------------------|  
-|Namespace|Definido no root\ServiceModel|  
+|Namespace|Definido em root\ServiceModel|  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.ServiceModel.Channels.Binding>

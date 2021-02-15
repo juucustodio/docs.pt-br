@@ -8,12 +8,12 @@ helpviewer_keywords:
 - tools [.NET Framework]
 - running .NET Framework tools
 ms.assetid: a2ca532d-91f7-426a-9303-417c2ee1247c
-ms.openlocfilehash: 0a5cbcd4fa60b819d3ab07a4f221e77ca106c321
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 96df5a0c8487d3ba344b3aa13ca74b92e428d5aa
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87166847"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556675"
 ---
 # <a name="net-framework-tools"></a>Ferramentas do .NET Framework
 
@@ -37,7 +37,7 @@ Gera um arquivo que tem um manifesto de assembly com base em módulos ou arquivo
 Converte definições de tipo em uma biblioteca de tipos COM para um controle ActiveX em um controle do Windows Forms.
 
 - [Caspol.exe (ferramenta de política de segurança de acesso do código)](caspol-exe-code-access-security-policy-tool.md)  
-Permite exibir e configurar a política de segurança para o nível de política do computador, o nível de política do usuário e o nível de política da empresa. No .NET Framework 4 e posterior, essa ferramenta não afeta a política de segurança de acesso do código (CAS), a menos que o [ \<legacyCasPolicy> elemento](../configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) seja definido como `true` . Para saber mais, confira [Alterações de segurança](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes).
+Permite exibir e configurar a política de segurança para o nível de política do computador, o nível de política do usuário e o nível de política da empresa. No .NET Framework 4 e posterior, essa ferramenta não afeta a política de segurança de acesso do código (CAS), a menos que o [ \<legacyCasPolicy> elemento](../configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md) seja definido como `true` . Para saber mais, confira [Alterações de segurança](/previous-versions/dotnet/framework/security/security-changes).
 
 - [Cert2spc.exe (ferramenta de teste de certificado do fornecedor de software)](cert2spc-exe-software-publisher-certificate-test-tool.md)  
 Cria um SPC (Software Publisher's Certificate) de um ou mais certificados X.509. Essa ferramenta destina-se apenas a testes.
@@ -134,7 +134,7 @@ Ajuda a localizar recursos de interface do usuário (IU) (arquivos *. resx* ou *
 
 ## <a name="related-sections"></a>Seções relacionadas
 
-- [ferramentas WPF](https://docs.microsoft.com/previous-versions/ms742404(v=vs.110))  
+- [ferramentas WPF](/previous-versions/ms742404(v=vs.110))  
 Inclui ferramentas como a Conformidade do isXPS (isXPS.exe) e ferramentas de criação de perfil de desempenho.
 
 - [Ferramentas do Windows Communication Foundation](../wcf/tools.md)  

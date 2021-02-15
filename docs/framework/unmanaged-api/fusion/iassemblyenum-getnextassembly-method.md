@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IAssemblyEnum:: GetNextAssembly'
 title: Método IAssemblyEnum::GetNextAssembly
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 5d7a4ca2-5f46-4ef1-a9a2-257884e9dc11
 topic_type:
 - apiref
-ms.openlocfilehash: ade404557d65fa073b6a0e66fe8234b41223ecde
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 52b264b1d8efad54168a6bf69fd0c715cbfa7e2a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73134431"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760804"
 ---
 # <a name="iassemblyenumgetnextassembly-method"></a>Método IAssemblyEnum::GetNextAssembly
+
 Obtém um ponteiro para o próximo [IAssemblyName](iassemblyname-interface.md) contido neste objeto [IAssemblyEnum](iassemblyenum-interface.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,21 +38,23 @@ HRESULT GetNextAssembly (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pvReserved`  
  no Reservado para extensibilidade futura. `pvReserved` deve ser uma referência nula.  
   
  `ppName`  
- fora O ponteiro de `IAssemblyName` retornado.  
+ fora O `IAssemblyName` ponteiro retornado.  
   
  `dwFlags`  
  no Reservado para extensibilidade futura. `dwFlags` deve ser 0 (zero).  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Fusion. h  
   
- **Versões do .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>Consulte também
 

@@ -12,17 +12,21 @@ helpviewer_keywords:
 - tracing [.NET Framework], enabling or disabling
 - Web.config configuration file, trace switches
 ms.assetid: 5a0e41bf-f99c-4692-8799-f89617f5bcf9
-ms.openlocfilehash: 6a43e143abba96c841f04b7be9d482c55e78aa8f
-ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.openlocfilehash: 4e8c076645f19e197ea820c052b20d5dde5e7565
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86051318"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96272248"
 ---
 # <a name="how-to-create-initialize-and-configure-trace-switches"></a>Como: criar, inicializar e configurar opções de rastreamento
+
 As opções de rastreamento permitem habilitar, desabilitar e filtrar a saída de rastreamento.  
   
 <a name="create"></a>
+
 ## <a name="creating-and-initializing-a-trace-switch"></a>Criando e inicializando uma opção de rastreamento  
+
  Para usar opções de rastreamento, primeiro você deve criá-las e colocá-las no código. Há duas classes predefinidas com base nas quais você pode criar objetos de opção: a classe <xref:System.Diagnostics.BooleanSwitch?displayProperty=nameWithType> e a classe <xref:System.Diagnostics.TraceSwitch?displayProperty=nameWithType>. Use <xref:System.Diagnostics.BooleanSwitch> se você se importar apenas com o fato de uma mensagem de rastreamento ser exibida ou não; use <xref:System.Diagnostics.TraceSwitch> se desejar discriminar entre níveis de rastreamento. Se você usar uma <xref:System.Diagnostics.TraceSwitch>, poderá definir suas próprias mensagens de depuração e associá-las a diferentes níveis de rastreamento. Use ambos os tipos de opções com o rastreamento ou a depuração. Por padrão, uma <xref:System.Diagnostics.BooleanSwitch> está desabilitada e uma <xref:System.Diagnostics.TraceSwitch> está definida como o nível <xref:System.Diagnostics.TraceLevel.Off?displayProperty=nameWithType>. As opções de rastreamento podem ser criadas e colocadas em qualquer parte do código que você pode usá-las.  
   
  Embora seja possível definir níveis de rastreamento e outras opções de configuração no código, recomendamos o uso do arquivo de configuração para gerenciar o estado das opções. Isso ocorre porque o gerenciamento da configuração das opções no sistema de configuração proporciona maior flexibilidade – você pode ativar e desativar várias opções e alterar os níveis sem recompilar o aplicativo.  
@@ -49,7 +53,9 @@ As opções de rastreamento permitem habilitar, desabilitar e filtrar a saída d
     ```  
   
 <a name="configure"></a>
+
 ## <a name="configuring-trace-switches"></a>Configurando opções de rastreamento  
+
  Depois que o aplicativo for distribuído, você ainda poderá habilitar ou desabilitar a saída de rastreamento configurando as opções de rastreamento no aplicativo. A configuração de uma opção significa alterar seu valor de uma fonte externa, depois que ela foi inicializada. Você pode alterar os valores dos objetos de opção usando o arquivo de configuração. Configure uma opção de rastreamento para ativá-la e desativá-la ou para definir seu nível, determinando a quantidade e o tipo de mensagens que são passados para os ouvintes.  
   
  As opções são configuradas usando o arquivo .config. Para um aplicativo Web, este é o arquivo Web.config associado ao projeto. Em um aplicativo do Windows, esse arquivo é denominado (nome do aplicativo) .exe.config. Em um aplicativo implantado, esse arquivo deve residir na mesma pasta que o executável.  
@@ -123,9 +129,9 @@ As opções de rastreamento permitem habilitar, desabilitar e filtrar a saída d
     </system.diagnostics>  
     ```  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-- [Rastreamento e instrumentação de aplicativos](tracing-and-instrumenting-applications.md)
-- [Como adicionar instruções de rastreamento ao código de um aplicativo](how-to-add-trace-statements-to-application-code.md)
+- [Como rastrear e instrumentar aplicativos](tracing-and-instrumenting-applications.md)
+- [Como: adicionar instruções de rastreamento ao código de um aplicativo](how-to-add-trace-statements-to-application-code.md)
 - [Opções de rastreamento](trace-switches.md)
 - [Esquema de configurações de rastreamento e depuração](../configure-apps/file-schema/trace-debug/index.md)

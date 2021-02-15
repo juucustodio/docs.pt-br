@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ImportTypes2'
 title: Método ImportTypes2
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 32f3ba58-9695-41e9-ba58-fd19e45ed396
 topic_type:
 - apiref
-ms.openlocfilehash: 8dae903ab76ab83ac0818c4bc4a76e81094bdf65
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: ca0d174061608f9b4abf524c43023e867e9a9646
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74445668"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99662605"
 ---
 # <a name="importtypes2-method"></a>Método ImportTypes2
+
 Inicia a importação de tipos. Chame esse método para começar a importar tipos de cada escopo importado por meio do [Método ImportFile](importfile-method.md).  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -38,6 +40,7 @@ HRESULT ImportTypes2(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `AssemblyID`  
  ID do assembly no qual importar.  
   
@@ -57,9 +60,11 @@ HRESULT ImportTypes2(
  Opcionalmente, recebe a contagem de tipos no escopo especificado.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  Retorna S_OK se o método tiver sucesso.  
   
 ## <a name="requirements"></a>Requisitos  
+
  Requer ALink. h  
   
 ## <a name="see-also"></a>Consulte também

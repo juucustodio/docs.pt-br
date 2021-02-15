@@ -8,18 +8,18 @@ dev_langs:
 helpviewer_keywords:
 - certificates [WCF]
 ms.assetid: 6ffb8682-8f07-4a45-afbb-8d2487e9dbc3
-ms.openlocfilehash: 8090e84b33e2a6f442d387c7012e6ccdc2900dd1
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: a12e723c763cdc3b9cf2105df9d0ee601f8bda1a
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85246396"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90559012"
 ---
 # <a name="working-with-certificates"></a>Trabalhando com certificados
 
 Para programar a segurança do WCF (Windows Communication Foundation), os certificados digitais X.509 são normalmente usados para autenticar clientes e servidores, criptografar e assinar mensagens digitalmente. Este tópico explica rapidamente as funcionalidades dos certificados digitais X.509 e como usá-los no WCF. Inclui também links para tópicos que explicam esses conceitos mais detalhadamente ou que mostram como realizar tarefas comuns usando o WCF e certificados.
 
-Em resumo, um certificado digital faz parte de uma *PKI* (infraestrutura de chave pública), que é um sistema de certificados digitais, autoridades de certificação e outras autoridades de registro que verificam e autenticam a validade de cada parte envolvida em uma transação eletrônica por meio do uso da criptografia de chave pública. Uma autoridade de certificação emite certificados e cada certificado tem um conjunto de campos que contêm dados, como a *entidade* (a entidade para a qual o certificado é emitido), as datas de validade (quando o certificado é válido), o emissor (a entidade que emitiu o certificado) e uma chave pública. No WCF, cada uma dessas propriedades é processada como uma <xref:System.IdentityModel.Claims.Claim> e cada declaração é dividida em dois tipos: identidade e direito. Para obter mais informações sobre os certificados X.509, confira [Certificados de chave pública X.509](/windows/desktop/SecCertEnroll/about-x-509-public-key-certificates). Para obter mais informações sobre Declarações e Autorização no WCF, confira [Gerenciando declarações e autorização com o modelo de identidade](managing-claims-and-authorization-with-the-identity-model.md). Para obter mais informações sobre como implementar uma PKI, consulte [Enterprise PKI com Windows Server 2012 R2 Active Directory Certificate Services](https://docs.microsoft.com/archive/blogs/yungchou/enterprise-pki-with-windows-server-2012-r2-active-directory-certificate-services-part-1-of-2).
+Em resumo, um certificado digital faz parte de uma *PKI* (infraestrutura de chave pública), que é um sistema de certificados digitais, autoridades de certificação e outras autoridades de registro que verificam e autenticam a validade de cada parte envolvida em uma transação eletrônica por meio do uso da criptografia de chave pública. Uma autoridade de certificação emite certificados e cada certificado tem um conjunto de campos que contêm dados, como a *entidade* (a entidade para a qual o certificado é emitido), as datas de validade (quando o certificado é válido), o emissor (a entidade que emitiu o certificado) e uma chave pública. No WCF, cada uma dessas propriedades é processada como uma <xref:System.IdentityModel.Claims.Claim> e cada declaração é dividida em dois tipos: identidade e direito. Para obter mais informações sobre os certificados X.509, confira [Certificados de chave pública X.509](/windows/desktop/SecCertEnroll/about-x-509-public-key-certificates). Para obter mais informações sobre Declarações e Autorização no WCF, confira [Gerenciando declarações e autorização com o modelo de identidade](managing-claims-and-authorization-with-the-identity-model.md). Para obter mais informações sobre como implementar uma PKI, consulte [Enterprise PKI com Windows Server 2012 R2 Active Directory Certificate Services](/archive/blogs/yungchou/enterprise-pki-with-windows-server-2012-r2-active-directory-certificate-services-part-1-of-2).
 
 A função principal de um certificado é autenticar a identidade do proprietário do certificado para outras pessoas. Um certificado contém a *chave pública* do proprietário, enquanto o proprietário retém a chave privada. A chave pública pode ser usada para criptografar as mensagens enviadas para o proprietário do certificado. Somente o proprietário tem acesso à chave privada; portanto, somente o proprietário pode descriptografar essas mensagens.
 
@@ -120,7 +120,7 @@ Observe que o campo pode conter vários valores, cada um prefixado com uma inici
 
 Observe também que o valor do campo **Finalidades** do certificado deve incluir um valor apropriado, como "Autenticação do Servidor" ou "Autenticação do Cliente".
 
-### <a name="client-certificates"></a>Certificados de cliente
+### <a name="client-certificates"></a>Certificados do cliente
 
 Os certificados de cliente não são normalmente emitidos por uma autoridade de certificação de terceiros. Em vez disso, o repositório Pessoal do local atual do usuário geralmente contém os certificados colocados lá por uma autoridade raiz, com uma finalidade de “Autenticação do cliente”. O cliente pode usar esse certificado quando a autenticação mútua é necessária.
 
@@ -165,9 +165,9 @@ Você também pode definir certificados usando configuração. Se você estiver 
 
 ## <a name="mapping-a-certificate-to-a-user-account"></a>Mapeando um certificado para uma conta de usuário
 
-Um recurso do IIS e do Active Directory é a capacidade para mapear um certificado para uma conta de usuário do Windows. Para obter mais informações sobre a funcionalidade, confira [Mapear certificados para contas de usuário](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc736706(v=ws.10)).
+Um recurso do IIS e do Active Directory é a capacidade para mapear um certificado para uma conta de usuário do Windows. Para obter mais informações sobre a funcionalidade, confira [Mapear certificados para contas de usuário](/previous-versions/windows/it-pro/windows-server-2003/cc736706(v=ws.10)).
 
-Para obter mais informações sobre como usar o mapeamento do Active Directory, confira [Mapeando certificados do cliente com o mapeamento do serviço de diretório](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc758484(v=ws.10)).
+Para obter mais informações sobre como usar o mapeamento do Active Directory, confira [Mapeando certificados do cliente com o mapeamento do serviço de diretório](/previous-versions/windows/it-pro/windows-server-2003/cc758484(v=ws.10)).
 
 Com esse recurso ativado, você poderá definir a propriedade <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.MapClientCertificateToWindowsAccount%2A> da classe <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication> como `true`. Em configuração, você pode definir o `mapClientCertificateToWindowsAccount` atributo do [\<authentication>](../../configure-apps/file-schema/wcf/authentication-of-servicecertificate-element.md) elemento como `true` , conforme mostrado no código a seguir.
 
@@ -189,7 +189,7 @@ Ao usar o .NET Framework 3,5 ou versões posteriores, o WCF garante que o certif
 
 Na primeira versão do WCF, o mapeamento é feito sem consulta à política de domínio. Portanto, é possível que aplicativos mais antigos que funcionavam ao serem executados na primeira versão falhem se o mapeamento for habilitado e o certificado X.509 não atender a política de domínio.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.ServiceModel.Channels>
 - <xref:System.ServiceModel.Security>

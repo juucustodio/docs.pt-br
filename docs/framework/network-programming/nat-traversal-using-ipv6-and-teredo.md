@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: passagem NAT usando IPv6 e Teredo'
 title: Passagem de NAT usando IPv6 e Teredo
 ms.date: 03/30/2017
 ms.assetid: 568cd245-3300-49ef-a995-d81bf845d961
-ms.openlocfilehash: f617dc8912091576727b90da1e9efb9ebd5f9bda
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4ff7f273c01ef52f4d307cbd3e0698c5cc2ead4d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "61642163"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785738"
 ---
 # <a name="nat-traversal-using-ipv6-and-teredo"></a>Passagem de NAT usando IPv6 e Teredo
+
 Foram feitas melhorias que dão suporte para a passagem de NAT (conversão de endereços de rede). Essas alterações são projetadas para uso com o IPv6 e Teredo, mas elas também são aplicáveis a outras tecnologias de túnel IP. Essas melhorias afetam as classes no <xref:System.Net> e nos namespaces relacionados.  
   
  Essas alterações podem afetar os aplicativos cliente e aplicativos para servidores que planejam usar tecnologias de túnel IP.  
@@ -17,6 +19,7 @@ Foram feitas melhorias que dão suporte para a passagem de NAT (conversão de en
  As alterações para dar suporte à passagem NAT estão disponíveis somente para aplicativos que usam o .NET Framework versão 4. Esses recursos não estão disponíveis em versões anteriores do .NET Framework.  
   
 ## <a name="overview"></a>Visão geral  
+
  O protocolo IP versão 4 (IPv4) definiu um endereço IPv4 como tendo 32 bits de comprimento. Como resultado, o IPv4 dá suporte a aproximadamente 4 bilhões endereços IP exclusivos (2^32). Conforme o número de computadores e dispositivos de rede na Internet se expandiu na década de 1990, os limites do espaço de endereço IPv4 tornou-se aparente.  
   
  Uma das várias técnicas usadas para estender o tempo de vida do IPv4 foi implantar o NAT para permitir que um único endereço IP público exclusivo representasse um grande número de endereços IP privados (Intranet privada). Os endereços IP privados subjacentes ao dispositivo NAT compartilham um único endereço IPv4 público. O dispositivo NAT pode ser um dispositivo de hardware dedicado (um ponto de acesso sem fio e roteador de baixo custo, por exemplo) ou um computador que executa um serviço para fornecer NAT. Um dispositivo ou serviço para esse endereço IP público converte os pacotes de rede IP entre a Internet pública e a Intranet privada.  
@@ -30,6 +33,7 @@ Foram feitas melhorias que dão suporte para a passagem de NAT (conversão de en
  Teredo é uma das tecnologias de transição para IPv6 que oferece conectividade IPv6 em redes IPv4. Teredo está documentado em RFC 4380 publicado pela IETF (Internet Engineering Task Force). O Windows XP SP2 e posteriores dão suporte a um adaptador virtual Teredo que pode fornecer um endereço IPv6 público no intervalo 2001:0::/32. Esse endereço IPv6 pode ser usado para escutar conexões de entrada da Internet e pode ser fornecido aos clientes habilitados para IPv6 que desejam se conectar ao serviço de escuta. Isso libera um aplicativo da preocupação sobre como endereçar um computador subjacente a um dispositivo NAT, já que o aplicativo pode se conectar a ele apenas usando seu endereço IPv6 Teredo.  
   
 ## <a name="enhancements-to-support-nat-traversal-and-teredo"></a>Melhorias para suporte a passagem NAT e Teredo  
+
  Descreve as melhorias adicionadas aos namespaces <xref:System.Net>, <xref:System.Net.NetworkInformation> e <xref:System.Net.Sockets> para dar suporte à passagem NAT usando o IPv6 e o Teredo.  
   
  Vários métodos foram adicionados à classe <xref:System.Net.NetworkInformation.IPGlobalProperties?displayProperty=nameWithType> para obter a lista de endereços IP unicast no host. O método <xref:System.Net.NetworkInformation.IPGlobalProperties.BeginGetUnicastAddresses%2A> começa uma solicitação assíncrona para recuperar a tabela de endereços IP unicast estáveis no computador local. O método <xref:System.Net.NetworkInformation.IPGlobalProperties.EndGetUnicastAddresses%2A> envia uma solicitação assíncrona pendente para recuperar a tabela de endereços IP unicast estáveis no computador local. O método <xref:System.Net.NetworkInformation.IPGlobalProperties.GetUnicastAddresses%2A> é uma solicitação síncrona para recuperar a tabela de endereços IP unicast estáveis no computador local, aguardando até que a tabela de endereços se estabilize se necessário.  

@@ -1,17 +1,19 @@
 ---
+description: 'Saiba mais sobre: estouro (erro de Run-Time de Visual Basic)'
 title: Estouro (erro de tempo de execução do Visual Basic)
 ms.date: 07/20/2015
 f1_keywords:
 - vbrERRID_Overflow
 ms.assetid: c6a23279-3086-412a-bcff-ff8ed2cb8c6f
-ms.openlocfilehash: 5606ae8188c12142800adef46819791b732ff73c
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: a01a8916e09f9278dbdf6d594c5ef84d63b04c51
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84387264"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795450"
 ---
 # <a name="overflow-visual-basic-run-time-error"></a>Estouro (erro de tempo de execução do Visual Basic)
+
 Um estouro resulta quando você tenta uma atribuição que excede os limites do destino da atribuição.  
   
 ## <a name="to-correct-this-error"></a>Para corrigir este erro  
@@ -22,9 +24,9 @@ Um estouro resulta quando você tenta uma atribuição que excede os limites do 
   
 3. Verifique se os números usados em cálculos que são conforçados em inteiros não têm resultados maiores do que os inteiros.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Int32.MaxValue?displayProperty=nameWithType>
 - <xref:System.Double.MaxValue?displayProperty=nameWithType>
-- [Tipos de dados](../data-types/index.md)
+- [Data Types](../data-types/index.md)
 - [Tipos de erro](../../programming-guide/language-features/error-types.md)

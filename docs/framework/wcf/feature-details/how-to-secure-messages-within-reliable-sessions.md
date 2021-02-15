@@ -1,15 +1,16 @@
 ---
-title: Como proteger mensagens em sessões confiáveis
+description: 'Saiba mais sobre: como proteger mensagens em sessões confiáveis'
+title: 'Como: proteger mensagens em sessões confiáveis'
 ms.date: 03/30/2017
 ms.assetid: aee33e50-936f-4486-9ca8-c1520c19a62d
-ms.openlocfilehash: 306d0f96b5163fe5c24d270b4b9a7c1d3f499e7e
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 73ca0d543edc2445dc72264e7eccf6c1eb616313
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596949"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643352"
 ---
-# <a name="how-to-secure-messages-within-reliable-sessions"></a>Como proteger mensagens em sessões confiáveis
+# <a name="how-to-secure-messages-within-reliable-sessions"></a>Como: proteger mensagens em sessões confiáveis
 
 Este tópico descreve as etapas necessárias para habilitar a segurança em nível de mensagem para mensagens trocadas em uma sessão confiável usando uma das associações fornecidas pelo sistema que dão suporte a essa sessão, mas não por padrão. Habilite uma sessão segura e confiável de forma imperativa usando código ou declarativamente no arquivo de configuração. Este procedimento usa os arquivos de configuração de cliente e serviço para habilitar a sessão segura e confiável.
 
@@ -21,7 +22,7 @@ Esse procedimento consiste nas seguintes três tarefas principais:
 
 1. Especifique o tipo de credencial do cliente que o cliente deve usar para ser autenticado com o serviço.
 
-É importante na primeira tarefa que o elemento de configuração do ponto de extremidade contém um `bindingConfiguration` atributo que faz referência a uma configuração de associação chamada (neste exemplo) `MessageSecurity` . O [**\<binding>**](../../configure-apps/file-schema/wcf/bindings.md) elemento de configuração, em seguida, faz referência a esse nome para habilitar sessões confiáveis definindo o `enabled` atributo do [**\<reliableSession>**](https://docs.microsoft.com/previous-versions/ms731375(v=vs.90)) elemento como `true` . Você pode exigir que as garantias de entrega ordenadas estejam disponíveis em uma sessão confiável definindo o `ordered` atributo como `true` .
+É importante na primeira tarefa que o elemento de configuração do ponto de extremidade contém um `bindingConfiguration` atributo que faz referência a uma configuração de associação chamada (neste exemplo) `MessageSecurity` . O [**\<binding>**](../../configure-apps/file-schema/wcf/bindings.md) elemento de configuração, em seguida, faz referência a esse nome para habilitar sessões confiáveis definindo o `enabled` atributo do [**\<reliableSession>**](/previous-versions/ms731375(v=vs.90)) elemento como `true` . Você pode exigir que as garantias de entrega ordenadas estejam disponíveis em uma sessão confiável definindo o `ordered` atributo como `true` .
 
 Para a cópia de origem do exemplo no qual esse procedimento de configuração se baseia, consulte a [sessão confiável do WS](../samples/ws-reliable-session.md).
 

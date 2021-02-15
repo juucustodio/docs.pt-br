@@ -5,17 +5,19 @@ helpviewer_keywords:
 - shadowing, vs. overriding
 - overriding, vs. shadowing
 ms.assetid: 2d014a0b-7630-407d-8f4e-24bd87987923
-ms.openlocfilehash: a6ea83fadf18ef3be778e6de31c0eb4e65e74824
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 98c073f8fa403416b2425431ff4334b990726f44
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84392864"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91095441"
 ---
 # <a name="differences-between-shadowing-and-overriding-visual-basic"></a>Diferenças entre sombreamento e sobreposição (Visual Basic)
+
 Quando você define uma classe que herda de uma classe base, às vezes você deseja redefinir um ou mais dos elementos da classe base na classe derivada. Sombreamento e substituição estão disponíveis para essa finalidade.  
   
 ## <a name="comparison"></a>Comparação  
+
  Sombreamento e substituição são usados quando uma classe derivada herda de uma classe base e ambas redefinem um elemento declarado com outro. Mas há diferenças significativas entre os dois.  
   
  A tabela a seguir compara a sombra com a substituição.  
@@ -28,8 +30,8 @@ Quando você define uma classe que herda de uma classe base, às vezes você des
 |Redefinindo elemento|Qualquer tipo de elemento declarado|Somente um procedimento ou propriedade com a sequência de chamada idêntica<sup>1</sup>|  
 |Nível de acesso do elemento redefinido|Qualquer nível de acesso|Não é possível alterar o nível de acesso do elemento substituído|  
 |Legibilidade e gravação do elemento redefinindo|Qualquer combinação|Não é possível alterar a legibilidade ou gravação da propriedade substituída|  
-|Controle sobre a redefinição|O elemento da classe base não pode impor ou proibir sombreamento|O elemento da classe base pode especificar `MustOverride` , `NotOverridable` ou`Overridable`|  
-|Uso de palavra-chave|`Shadows`recomendado na classe derivada; `Shadows`presumido se nem `Shadows` nem `Overrides` especificado<sup>2</sup>|`Overridable`ou `MustOverride` obrigatório na classe base; `Overrides` necessário na classe derivada|  
+|Controle sobre a redefinição|O elemento da classe base não pode impor ou proibir sombreamento|O elemento da classe base pode especificar `MustOverride` , `NotOverridable` ou `Overridable`|  
+|Uso de palavra-chave|`Shadows` recomendado na classe derivada; `Shadows` presumido se nem `Shadows` nem `Overrides` especificado<sup>2</sup>|`Overridable` ou `MustOverride` obrigatório na classe base; `Overrides` necessário na classe derivada|  
 |Herança da redefinição de elemento por classes derivadas de sua classe derivada|Elemento de sombreamento herdado por mais classes derivadas; elemento sombreado ainda oculto<sup>3</sup>|Elemento de substituição herdado por classes derivadas posteriores; elemento substituído ainda substituído|  
   
  <sup>1</sup> a *sequência de chamada* consiste no tipo de elemento ( `Function` ,, `Sub` `Operator` ou `Property` ), nome, lista de parâmetros e tipo de retorno. Você não pode substituir um procedimento por uma propriedade, ou o contrário. Não é possível substituir um tipo de procedimento ( `Function` , `Sub` ou `Operator` ) por outro tipo.  
@@ -39,6 +41,7 @@ Quando você define uma classe que herda de uma classe base, às vezes você des
  <sup>3</sup> se o elemento de sombreamento estiver inacessível em uma classe derivada adicional, o sombreamento não será herdado. Por exemplo, se você declarar o elemento de sombreamento como `Private` , uma classe que deriva de sua classe derivada herdará o elemento original em vez do elemento de sombreamento.  
   
 ## <a name="guidelines"></a>Diretrizes  
+
  Normalmente, você usa a substituição nos seguintes casos:  
   
 - Você está definindo classes derivadas polimórficas.  

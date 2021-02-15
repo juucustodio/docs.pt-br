@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função StrongNameSignatureGeneration'
 title: Função StrongNameSignatureGeneration
 ms.date: 03/30/2017
 api_name:
@@ -13,17 +14,18 @@ f1_keywords:
 helpviewer_keywords:
 - StrongNameSignatureGeneration function [.NET Framework strong naming]
 ms.assetid: 839b765c-3e41-44ce-bf1b-dc10453db18e
-ms.openlocfilehash: d7f481e5c61ec65d2e7414bd47227866f3435028
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 6f5a164e73af743cdd13390c60d00d553e5e0312
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176897"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798895"
 ---
 # <a name="strongnamesignaturegeneration-function"></a>Função StrongNameSignatureGeneration
+
 Gera uma assinatura de nome forte para o assembly especificado.  
   
- Esta função foi preterida. Use o método [ICLRStrongName::StrongNameSignatureGeneration](../hosting/iclrstrongname-strongnamesignaturegeneration-method.md) em vez disso.  
+ Esta função foi preterida. Em vez disso, use o método [ICLRStrongName:: StrongNameSignatureGeneration](../hosting/iclrstrongname-strongnamesignaturegeneration-method.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -38,53 +40,57 @@ BOOLEAN StrongNameSignatureGeneration (
 );  
 ```  
   
-## <a name="parameters"></a>parâmetros  
+## <a name="parameters"></a>Parâmetros  
+
  `wszFilePath`  
- [em] O caminho para o arquivo que contém o manifesto da montagem para o qual a assinatura de nome forte será gerada.  
+ no O caminho para o arquivo que contém o manifesto do assembly para o qual a assinatura de nome forte será gerada.  
   
  `wszKeyContainer`  
- [em] O nome do recipiente de chave que contém o par de chaves público/privado.  
+ no O nome do contêiner de chave que contém o par de chaves pública/privada.  
   
- Se `pbKeyBlob` for `wszKeyContainer` nulo, deve especificar um contêiner válido dentro do provedor de serviços criptográficos (CSP). Neste caso, o par de chaves armazenado no recipiente é usado para assinar o arquivo.  
+ Se `pbKeyBlob` for NULL, `wszKeyContainer` deve especificar um contêiner válido no CSP (provedor de serviços de criptografia). Nesse caso, o par de chaves armazenado no contêiner é usado para assinar o arquivo.  
   
- Se `pbKeyBlob` não for nulo, presume-se que o par de chaves esteja contido no objeto grande binário chave (BLOB).  
+ Se `pbKeyBlob` não for NULL, o par de chaves será considerado contido no BLOB (objeto binário grande) de chave.  
   
- As teclas devem ser teclas de assinatura Rivest-Shamir-Adleman (RSA) de 1024 bits. Nenhum outro tipo de chaves é suportado neste momento.  
+ As chaves devem ter chaves de assinatura de 1024 bits Rivest-Shamir-Adleman (RSA). Não há suporte para nenhum outro tipo de chave no momento.  
   
  `pbKeyBlob`  
- [em] Um ponteiro para o par de tecla público/privado. Este par está no formato criado pela `CryptExportKey` função Win32. Se `pbKeyBlob` for nulo, o `wszKeyContainer` recipiente de chave especificado por é assumido para conter o par de chaves.  
+ no Um ponteiro para o par de chaves pública/privada. Esse par está no formato criado pela função do Win32 `CryptExportKey` . Se `pbKeyBlob` for NULL, o contêiner de chave especificado por `wszKeyContainer` será considerado para conter o par de chaves.  
   
  `cbKeyBlob`  
- [em] O tamanho, em bytes, de `pbKeyBlob`.  
+ no O tamanho, em bytes, de `pbKeyBlob` .  
   
  `ppbSignatureBlob`  
- [fora] Um ponteiro para o local para o qual o tempo de execução do idioma comum retorna a assinatura. Se `ppbSignatureBlob` for nulo, o tempo de execução `wszFilePath`armazena a assinatura no arquivo especificado por .  
+ fora Um ponteiro para o local no qual o Common Language Runtime retorna a assinatura. Se `ppbSignatureBlob` for NULL, o tempo de execução armazenará a assinatura no arquivo especificado por `wszFilePath` .  
   
- Se `ppbSignatureBlob` não for nulo, o tempo de execução do idioma comum aloca espaço para retornar a assinatura. O chamador deve liberar este espaço usando a função [StrongNameFreeBuffer.](strongnamefreebuffer-function.md)  
+ Se `ppbSignatureBlob` não for NULL, o common language runtime aloca espaço para retornar a assinatura. O chamador deve liberar esse espaço usando a função [StrongNameFreeBuffer](strongnamefreebuffer-function.md) .  
   
  `pcbSignatureBlob`  
- [fora] O tamanho, em bytes, da assinatura retornada.  
+ fora O tamanho, em bytes, da assinatura retornada.  
   
 ## <a name="return-value"></a>Valor retornado  
- `true`em conclusão bem sucedida; caso contrário, `false`.  
+
+ `true` após a conclusão bem-sucedida; caso contrário, `false` .  
   
 ## <a name="remarks"></a>Comentários  
- Especifique nulo `wszFilePath` para calcular o tamanho da assinatura sem criar a assinatura.  
+
+ Especifique NULL para `wszFilePath` para calcular o tamanho da assinatura sem criar a assinatura.  
   
- A assinatura pode ser armazenada diretamente no arquivo ou devolvida ao chamador.  
+ A assinatura pode ser armazenada diretamente no arquivo ou retornada ao chamador.  
   
- Se `StrongNameSignatureGeneration` a função não for concluída com sucesso, chame a função [StrongNameErrorInfo](strongnameerrorinfo-function.md) para recuperar o último erro gerado.  
+ Se a `StrongNameSignatureGeneration` função não for concluída com êxito, chame a função [StrongNameErrorInfo](strongnameerrorinfo-function.md) para recuperar o último erro gerado.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
- **Cabeçalho:** StrongName.h  
+ **Cabeçalho:** StrongName. h  
   
- **Biblioteca:** Incluído como um recurso em MsCorEE.dll  
+ **Biblioteca:** Incluído como um recurso no MsCorEE.dll  
   
- **.NET Framework Versions:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método StrongNameSignatureGeneration](../hosting/iclrstrongname-strongnamesignaturegeneration-method.md)
 - [Método StrongNameSignatureGenerationEx](../hosting/iclrstrongname-strongnamesignaturegenerationex-method.md)

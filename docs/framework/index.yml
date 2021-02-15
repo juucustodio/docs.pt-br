@@ -11,12 +11,12 @@ metadata:
   helpviewer_keywords:
   - .NET Framework guide
   ms.date: 04/22/2020
-  ms.openlocfilehash: da7d48173b17692e5139eb69586fa4d9705d4d12
-  ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
+  ms.openlocfilehash: a30bf235f58c2f66bdcc1d8765e231ecefa312b9
+  ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 09/05/2020
-  ms.locfileid: "89495441"
+  ms.lasthandoff: 12/04/2020
+  ms.locfileid: "96599597"
 landingContent:
 - title: Saiba mais sobre o .NET Framework
   linkLists:
@@ -26,6 +26,10 @@ landingContent:
       url: get-started/overview.md
     - text: Requisitos de sistema
       url: get-started/system-requirements.md
+  - linkListType: get-started
+    links:
+    - text: .NET Framework em Q&A
+      url: /answers/topics/dotnet-runtime-framework.html
   - linkListType: concept
     links:
     - text: Versões mais antigas do .NET Framework
@@ -34,6 +38,10 @@ landingContent:
     links:
     - text: Guia de implantação para desenvolvedores
       url: deployment/deployment-guide-for-developers.md
+  - linkListType: reference
+    links:
+    - text: APIs de .NET Framework
+      url: ../../api/index.md?view=netframework-4.8
 - title: Instalar o .NET Framework
   linkLists:
   - linkListType: download
@@ -110,7 +118,7 @@ landingContent:
     links:
     - text: Cadeias de conexão e arquivos de configuração
       url: data/adonet/connection-strings-and-configuration-files.md
-    - text: Pool de conexões SQL Server
+    - text: Pool de conexões do SQL Server
       url: data/adonet/sql-server-connection-pooling.md
   - linkListType: how-to-guide
     links:
@@ -120,7 +128,7 @@ landingContent:
       url: data/adonet/dataset-datatable-dataview/adding-data-to-a-datatable.md
   - linkListType: reference
     links:
-    - text: Sintaxe da cadeia de conexão
+    - text: Sintaxe de cadeia de conexão
       url: data/adonet/connection-string-syntax.md
     - text: Bancos de dados de SQL Server de exemplo
       url: data/adonet/sql/linq/downloading-sample-databases.md

@@ -3,12 +3,12 @@ title: Definições de configuração de compilação
 description: Saiba mais sobre as configurações de tempo de execução que configuram como o compilador JIT funciona para aplicativos .NET Core.
 ms.date: 11/27/2019
 ms.topic: reference
-ms.openlocfilehash: cfcf9b5fc8d11a4ae35ab9b152f32133cd6930bf
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: e5f9e1245b749864787fb808527d022665197edf
+ms.sourcegitcommit: 4d45bda8cd9558ea8af4be591e3d5a29360c1ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83762000"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91654836"
 ---
 # <a name="run-time-configuration-options-for-compilation"></a>Opções de configuração de tempo de execução para compilação
 
@@ -23,13 +23,13 @@ ms.locfileid: "83762000"
 
 | | Nome da configuração | Valores |
 | - | - | - |
-| **runtimeconfig. JSON** | `System.Runtime.TieredCompilation` | `true`-habilitado<br/>`false`-desabilitado |
-| **Propriedade do MSBuild** | `TieredCompilation` | `true`-habilitado<br/>`false`-desabilitado |
-| **Variável de ambiente** | `COMPlus_TieredCompilation` | `1`-habilitado<br/>`0`-desabilitado |
+| **runtimeconfig.jsem** | `System.Runtime.TieredCompilation` | `true` -habilitado<br/>`false` -desabilitado |
+| **Propriedade do MSBuild** | `TieredCompilation` | `true` -habilitado<br/>`false` -desabilitado |
+| **Variável de ambiente** | `COMPlus_TieredCompilation` | `1` -habilitado<br/>`0` -desabilitado |
 
 ### <a name="examples"></a>Exemplos
 
-arquivo *runtimeconfig. JSON* :
+*runtimeconfig.jsno* arquivo:
 
 ```json
 {
@@ -63,13 +63,13 @@ Arquivo de projeto:
 
 | | Nome da configuração | Valores |
 | - | - | - |
-| **runtimeconfig. JSON** | `System.Runtime.TieredCompilation.QuickJit` | `true`-habilitado<br/>`false`-desabilitado |
-| **Propriedade do MSBuild** | `TieredCompilationQuickJit` | `true`-habilitado<br/>`false`-desabilitado |
-| **Variável de ambiente** | `COMPlus_TC_QuickJit` | `1`-habilitado<br/>`0`-desabilitado |
+| **runtimeconfig.jsem** | `System.Runtime.TieredCompilation.QuickJit` | `true` -habilitado<br/>`false` -desabilitado |
+| **Propriedade do MSBuild** | `TieredCompilationQuickJit` | `true` -habilitado<br/>`false` -desabilitado |
+| **Variável de ambiente** | `COMPlus_TC_QuickJit` | `1` -habilitado<br/>`0` -desabilitado |
 
 ### <a name="examples"></a>Exemplos
 
-arquivo *runtimeconfig. JSON* :
+*runtimeconfig.jsno* arquivo:
 
 ```json
 {
@@ -102,13 +102,13 @@ Arquivo de projeto:
 
 | | Nome da configuração | Valores |
 | - | - | - |
-| **runtimeconfig. JSON** | `System.Runtime.TieredCompilation.QuickJitForLoops` | `false`-desabilitado<br/>`true`-habilitado |
-| **Propriedade do MSBuild** | `TieredCompilationQuickJitForLoops` | `false`-desabilitado<br/>`true`-habilitado |
-| **Variável de ambiente** | `COMPlus_TC_QuickJitForLoops` | `0`-desabilitado<br/>`1`-habilitado |
+| **runtimeconfig.jsem** | `System.Runtime.TieredCompilation.QuickJitForLoops` | `false` -desabilitado<br/>`true` -habilitado |
+| **Propriedade do MSBuild** | `TieredCompilationQuickJitForLoops` | `false` -desabilitado<br/>`true` -habilitado |
+| **Variável de ambiente** | `COMPlus_TC_QuickJitForLoops` | `0` -desabilitado<br/>`1` -habilitado |
 
 ### <a name="examples"></a>Exemplos
 
-arquivo *runtimeconfig. JSON* :
+*runtimeconfig.jsno* arquivo:
 
 ```json
 {
@@ -135,9 +135,9 @@ Arquivo de projeto:
 ## <a name="readytorun"></a>ReadyToRun
 
 - Configura se o tempo de execução do .NET Core usa código pré-compilado para imagens com dados ReadyToRun disponíveis. Desabilitar essa opção força o tempo de execução para o código de estrutura JIT-compile.
-- Para obter mais informações, consulte [ReadyToRun](../whats-new/dotnet-core-3-0.md#readytorun-images).
+- Para obter mais informações, consulte [pronto para executar](../deploying/ready-to-run.md).
 - Se você omitir essa configuração, o .NET usará os dados do ReadyToRun quando ele estiver disponível. Isso é equivalente a definir o valor como `1` .
 
 | | Nome da configuração | Valores |
 | - | - | - |
-| **Variável de ambiente** | `COMPlus_ReadyToRun` | `1`-habilitado<br/>`0`-desabilitado |
+| **Variável de ambiente** | `COMPlus_ReadyToRun` | `1` -habilitado<br/>`0` -desabilitado |

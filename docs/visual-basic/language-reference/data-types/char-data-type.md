@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: tipo de dados char (Visual Basic)'
 title: Tipo de Dados de Caractere
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - data types [Visual Basic], assigning
 - Char data type [Visual Basic], character literals
 ms.assetid: cd7547a9-7855-4e8e-b216-35d74a362657
-ms.openlocfilehash: 3dbbf9f6a2c4079775e05f5d2dcd8704c1ec4259
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 371244ee4eae6d7dde20487dd7f38c09f3929cd8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84387472"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792239"
 ---
 # <a name="char-data-type-visual-basic"></a>Tipo de dados Char (Visual Basic)
 
@@ -37,7 +38,7 @@ Você pode usar métodos como <xref:System.Char.IsDigit%2A> e <xref:System.Char.
 
 Visual Basic não converte diretamente entre `Char` e os tipos numéricos. Você pode usar a <xref:Microsoft.VisualBasic.Strings.Asc%2A> <xref:Microsoft.VisualBasic.Strings.AscW%2A> função ou para converter um `Char` valor em um `Integer` que representa seu ponto de código. Você pode usar a <xref:Microsoft.VisualBasic.Strings.Chr%2A> <xref:Microsoft.VisualBasic.Strings.ChrW%2A> função ou para converter um `Integer` valor em um `Char` que tenha esse ponto de código.
 
-Se a opção de verificação de tipo (a [instrução Option Strict](../statements/option-strict-statement.md)) estiver on, você deverá acrescentar o caractere de tipo literal a um literal de cadeia de caracteres de caractere único para identificá-lo como o `Char` tipo de dados. O exemplo a seguir ilustra isto. A primeira atribuição para a `charVar` variável gera o erro [BC30512](../../misc/bc30512.md) do compilador porque `Option Strict` está ativada. O segundo é compilado com êxito porque o `c` caractere de tipo literal identifica o literal como um `Char` valor.
+Se a opção de verificação de tipo (a [instrução Option Strict](../statements/option-strict-statement.md)) estiver on, você deverá acrescentar o caractere de tipo literal a um literal de cadeia de caracteres de caractere único para identificá-lo como o `Char` tipo de dados. O exemplo a seguir ilustra essa situação. A primeira atribuição para a `charVar` variável gera o erro [BC30512](../../misc/bc30512.md) do compilador porque `Option Strict` está ativada. O segundo é compilado com êxito porque o `c` caractere de tipo literal identifica o literal como um `Char` valor.
 
 ```vb
 Option Strict On
@@ -57,24 +58,24 @@ End Module
 
 ## <a name="programming-tips"></a>Dicas de programação
 
-- **Números negativos.** `Char`é um tipo não assinado e não pode representar um valor negativo. Em qualquer caso, você não deve usar `Char` para armazenar valores numéricos.
+- **Números negativos.** `Char` é um tipo não assinado e não pode representar um valor negativo. Em qualquer caso, você não deve usar `Char` para armazenar valores numéricos.
 
 - **Considerações sobre interoperabilidade.** Se você interface com componentes não escritos para o .NET Framework, por exemplo, automação ou objetos COM, lembre-se de que os tipos de caracteres têm uma largura de dados diferente (8 bits) em outros ambientes. Se você passar um argumento de 8 bits para esse componente, declare-o como `Byte` em vez de `Char` em seu novo código de Visual Basic.
 
 - **Ampliação.** O `Char` tipo de dados amplia para `String` . Isso significa que você pode converter `Char` em `String` e não encontrará um <xref:System.OverflowException?displayProperty=nameWithType> .
 
-- **Digite os caracteres.** Acrescentar o caractere de tipo literal `C` a um literal de cadeia de caracteres de caractere único força-o para o `Char` tipo de dados. `Char`Não tem um caractere de tipo de identificador.
+- **Digite os caracteres.** Acrescentar o caractere de tipo literal `C` a um literal de cadeia de caracteres de caractere único força-o para o `Char` tipo de dados. `Char` Não tem um caractere de tipo de identificador.
 
 - **Tipo de estrutura.** O tipo correspondente no .NET Framework é a estrutura <xref:System.Char?displayProperty=nameWithType>.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Char?displayProperty=nameWithType>
 - <xref:Microsoft.VisualBasic.Strings.Asc%2A>
 - <xref:Microsoft.VisualBasic.Strings.AscW%2A>
 - <xref:Microsoft.VisualBasic.Strings.Chr%2A>
 - <xref:Microsoft.VisualBasic.Strings.ChrW%2A>
-- [Tipos de dados](index.md)
+- [Data Types](index.md)
 - [Tipo de dados da cadeia de caracteres](string-data-type.md)
 - [Funções de conversão do tipo](../functions/type-conversion-functions.md)
 - [Resumo da Conversão](../keywords/conversion-summary.md)

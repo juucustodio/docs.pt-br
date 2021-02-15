@@ -5,12 +5,12 @@ ms.date: 05/03/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to
-ms.openlocfilehash: e3cebe979b5c279ce8cb90db5510f8758c24c2b4
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 681a35956a8959e2f1cbb5a7023e0ef29b67097e
+ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73977002"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90679528"
 ---
 # <a name="save-and-load-trained-models"></a>Salvar e carregar modelos treinados
 
@@ -60,16 +60,16 @@ ITransformer trainedModel = pipelineEstimator.Fit(data);
 mlContext.Model.Save(trainedModel, data.Schema, "model.zip");
 ```
 
-Porque a maioria dos pipelines de preparação de dados e modelos herda o mesmo conjunto de classes, as assinaturas do método salvar e carregar para esses componentes são iguais. Dependendo do seu caso de uso, você pode combinar [`EstimatorChain`](xref:Microsoft.ML.Data.TransformerChain%601) o pipeline de [`ITransformer`](xref:Microsoft.ML.ITransformer) preparação de dados [`ITransformer`](xref:Microsoft.ML.ITransformer) e o modelo em um único que produziria um único ou os separaria, criando assim um separado para cada um.
+Porque a maioria dos pipelines de preparação de dados e modelos herda o mesmo conjunto de classes, as assinaturas do método salvar e carregar para esses componentes são iguais. Dependendo do seu caso de uso, você pode combinar o pipeline de preparação de dados e o modelo em um único que produzirá [`EstimatorChain`](xref:Microsoft.ML.Data.TransformerChain%601) um único [`ITransformer`](xref:Microsoft.ML.ITransformer) ou separá-los, criando um separado [`ITransformer`](xref:Microsoft.ML.ITransformer) para cada um.
 
 ## <a name="save-a-model-locally"></a>Salvar um modelo localmente
 
 Ao salvar um modelo, você precisa de dois itens:
 
 1. O [`ITransformer`](xref:Microsoft.ML.ITransformer) do modelo.
-2. A [`DataViewSchema`](xref:Microsoft.ML.DataViewSchema) [`ITransformer`](xref:Microsoft.ML.ITransformer)da entrada esperada.
+2. O [`DataViewSchema`](xref:Microsoft.ML.DataViewSchema) da [`ITransformer`](xref:Microsoft.ML.ITransformer) entrada esperada.
 
-Depois de treinar o [`Save`](xref:Microsoft.ML.ModelOperationsCatalog.Save*) modelo, use o método `model.zip` para `DataViewSchema` salvar o modelo treinado em um arquivo chamado usando os dados de entrada.
+Depois de treinar o modelo, use o [`Save`](xref:Microsoft.ML.ModelOperationsCatalog.Save%2A) método para salvar o modelo treinado em um arquivo chamado `model.zip` usando os `DataViewSchema` dados de entrada.
 
 ```csharp
 // Save Trained Model
@@ -80,7 +80,7 @@ mlContext.Model.Save(trainedModel, data.Schema, "model.zip");
 
 Os modelos armazenados localmente podem ser usados em outros processos ou aplicativos, como `ASP.NET Core` e `Serverless Web Applications`. Veja os artigos de instruções [Usar ML.NET na API Web](./serve-model-web-api-ml-net.md) e [Implantar aplicativo Web sem servidor do ML.NET](./serve-model-serverless-azure-functions-ml-net.md) para saber mais.
 
-Em um aplicativo ou processo [`Load`](xref:Microsoft.ML.ModelOperationsCatalog.Load*) separado, use o método junto com o caminho do arquivo para colocar o modelo treinado em sua aplicação.
+Em um aplicativo ou processo separado, use o [`Load`](xref:Microsoft.ML.ModelOperationsCatalog.Load%2A) método junto com o caminho do arquivo para obter o modelo treinado em seu aplicativo.
 
 ```csharp
 //Define DataViewSchema for data preparation pipeline and trained model
@@ -92,7 +92,7 @@ ITransformer trainedModel = mlContext.Model.Load("model.zip", out modelSchema);
 
 ## <a name="load-a-model-stored-remotely"></a>Carregar um modelo armazenado remotamente
 
-Para carregar os pipelines e modelos de preparação de [`Stream`](xref:System.IO.Stream) dados armazenados em [`Load`](xref:Microsoft.ML.ModelOperationsCatalog.Load*) um local remoto em seu aplicativo, use um caminho de arquivo em vez de um caminho de arquivo no método.
+Para carregar pipelines de preparação de dados e modelos armazenados em um local remoto em seu aplicativo, use um [`Stream`](xref:System.IO.Stream) em vez de um caminho de arquivo no [`Load`](xref:Microsoft.ML.ModelOperationsCatalog.Load%2A) método.
 
 ```csharp
 // Create MLContext

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugThread4'
 title: Interface ICorDebugThread4
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: a8c7719a-322b-4133-8566-4c27218dc104
 topic_type:
 - apiref
-ms.openlocfilehash: a0d6f3e109f92ad44eeeb1b1dec05e53015992a6
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 4ad587cee81ce635df0a8917b7a6d68e60aaf0b3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378355"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800910"
 ---
 # <a name="icordebugthread4-interface"></a>Interface ICorDebugThread4
+
 Fornece informações de bloqueio de thread.  
   
 ## <a name="methods"></a>Métodos  
@@ -33,12 +35,14 @@ Fornece informações de bloqueio de thread.
 |[Método GetCurrentCustomDebuggerNotification](icordebugthread4-getcurrentcustomdebuggernotification-method.md)|Obtém o objeto [ICorDebugManagedCallback3:: CustomNotification](icordebugmanagedcallback3-customnotification-method.md) atual no thread atual.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Essa interface é uma extensão lógica das interfaces ICorDebugThread, ICorDebugThread2 e [ICorDebugThread3](icordebugthread3-interface.md) .  
   
 > [!NOTE]
 > Esta interface não dá suporte para chamada remota, seja entre computadores ou processos cruzados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -47,7 +51,7 @@ Fornece informações de bloqueio de thread.
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Depuração](index.md)

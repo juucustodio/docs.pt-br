@@ -2,18 +2,18 @@
 title: Comando dotnet run
 description: O comando dotnet run oferece uma opção conveniente para executar o aplicativo do código-fonte.
 ms.date: 02/19/2020
-ms.openlocfilehash: 77282fd8615ef01b7867c1bf0f741c834b6ddb30
-ms.sourcegitcommit: 73aa9653547a1cd70ee6586221f79cc29b588ebd
+ms.openlocfilehash: c80f290c75e3bac65ae73fe8edada53db4ce86f8
+ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82102756"
+ms.lasthandoff: 11/15/2020
+ms.locfileid: "94634410"
 ---
 # <a name="dotnet-run"></a>dotnet run
 
-**Este artigo se aplica a:** ✔️ .NET Core 2.x SDK e versões posteriores
+**Este artigo aplica-se a:** ✔️ SDK do .NET Core 2. x e versões posteriores
 
-## <a name="name"></a>Nome
+## <a name="name"></a>Name
 
 `dotnet run` – Executa o código-fonte sem qualquer comando de compilação ou inicialização explícito.
 
@@ -29,9 +29,9 @@ dotnet run [-c|--configuration <CONFIGURATION>] [-f|--framework <FRAMEWORK>]
 dotnet run -h|--help
 ```
 
-## <a name="description"></a>Descrição
+## <a name="description"></a>Description
 
-O comando `dotnet run` fornece uma opção conveniente para executar o aplicativo do código-fonte com um comando. Ele é útil para o desenvolvimento iterativo rápido a partir da linha de comando. O comando depende [`dotnet build`](dotnet-build.md) do comando para construir o código. Os requisitos para a compilação, como o projeto, devem ser restaurado primeiro, e se aplicam a `dotnet run` também.
+O comando `dotnet run` fornece uma opção conveniente para executar o aplicativo do código-fonte com um comando. Ele é útil para o desenvolvimento iterativo rápido a partir da linha de comando. O comando depende do [`dotnet build`](dotnet-build.md) comando para criar o código. Os requisitos para a compilação, como o projeto, devem ser restaurado primeiro, e se aplicam a `dotnet run` também.
 
 Os arquivos de saída são gravados no local padrão, que é `bin/<configuration>/<target>`. Por exemplo, se você tiver um aplicativo `netcoreapp2.1` e executar `dotnet run`, a saída será colocada em `bin/Debug/netcoreapp2.1`. Os arquivos são substituídos conforme necessário. Os arquivos temporários são colocados no diretório `obj`.
 
@@ -43,7 +43,7 @@ O comando `dotnet run` é usado no contexto de projetos, não assemblies compila
 dotnet myapp.dll
 ```
 
-Para saber mais sobre o driver `dotnet`, veja o tópico [CLI (Ferramentas de Linha de Comando) do .NET Core](index.md).
+Para obter mais informações sobre o `dotnet` Driver, consulte o tópico [CLI (ferramentas de linha de comando) do .net](index.md) .
 
 Para executar o aplicativo, o comando `dotnet run` resolve as dependências do aplicativo que estão fora do runtime compartilhado por meio do cache NuGet. Como ele usa as dependências em cache, não recomendamos usar `dotnet run` para executar aplicativos em produção. Em vez disso, [crie uma implantação](../deploying/index.md) usando o comando [`dotnet publish`](dotnet-publish.md) e implante a saída publicada.
 
@@ -59,7 +59,7 @@ Para executar o aplicativo, o comando `dotnet run` resolve as dependências do a
 
 - **`-c|--configuration <CONFIGURATION>`**
 
-  Define a configuração da compilação. O padrão para `Debug`a maioria dos projetos é, mas você pode substituir as configurações de configuração de compilação em seu projeto.
+  Define a configuração da compilação. O padrão para a maioria dos projetos é `Debug` , mas você pode substituir as definições de configuração de compilação em seu projeto.
 
 - **`-f|--framework <FRAMEWORK>`**
 
@@ -79,7 +79,7 @@ Para executar o aplicativo, o comando `dotnet run` resolve as dependências do a
 
 - **`--launch-profile <NAME>`**
 
-  O nome do perfil de inicialização (se houver) a ser usado ao iniciar o aplicativo. Os perfis de lançamento são definidos no arquivo *launchSettings.json* e são tipicamente chamados `Development`, `Staging`e `Production`. Para obter mais informações, consulte [Trabalhando com vários ambientes](/aspnet/core/fundamentals/environments).
+  O nome do perfil de inicialização (se houver) a ser usado ao iniciar o aplicativo. Os perfis de inicialização são definidos no *launchSettings.jsno* arquivo e são normalmente chamados `Development` , `Staging` e `Production` . Para obter mais informações, consulte [trabalhando com vários ambientes](/aspnet/core/fundamentals/environments).
 
 - **`--no-build`**
 
@@ -103,11 +103,11 @@ Para executar o aplicativo, o comando `dotnet run` resolve as dependências do a
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
-  Especifica o runtime de destino para o qual restaurar os pacotes. Para obter uma lista de RIDs (Identificadores de Runtime), veja o [Catálogo de RIDs](../rid-catalog.md). `-r`opção curta disponível desde .NET Core 3.0 SDK.
+  Especifica o runtime de destino para o qual restaurar os pacotes. Para obter uma lista de RIDs (Identificadores de Runtime), veja o [Catálogo de RIDs](../rid-catalog.md). `-r` pequena opção disponível desde o SDK do .NET Core 3,0.
 
 - **`-v|--verbosity <LEVEL>`**
 
-  Define o nível de detalhes do comando. Os valores permitidos são `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]` e `diag[nostic]`. O valor padrão é `m`. Disponível desde .NET Core 2.1 SDK.
+  Define o nível de detalhes do comando. Os valores permitidos são `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]` e `diag[nostic]`. O valor padrão é `m`. Disponível desde o SDK do .NET Core 2,1.
 
 ## <a name="examples"></a>Exemplos
 
@@ -129,7 +129,7 @@ Para executar o aplicativo, o comando `dotnet run` resolve as dependências do a
   dotnet run --configuration Release -- --help
   ```
 
-- Restaure as dependências e as ferramentas para o projeto no diretório atual, apenas mostrando uma saída mínima e, em seguida, execute o projeto (SDK do .NET Core 2.0 e versões posteriores):
+- Restaure as dependências e as ferramentas para o projeto no diretório atual mostrando apenas a saída mínima e, em seguida, execute o projeto:
 
   ```dotnetcli
   dotnet run --verbosity m

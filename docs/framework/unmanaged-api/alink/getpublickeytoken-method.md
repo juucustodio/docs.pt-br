@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método GetPublicKeyToken'
 title: Método GetPublicKeyToken
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4a16374c-94b0-47b0-9fed-88c2b0cdccd4
 topic_type:
 - apiref
-ms.openlocfilehash: 2e7ed4e1529104db30b0b06665f74342d9ca9a01
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: b864c1dc61c7498ccca6aa04ef29b57a30e1a9ea
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74447235"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718415"
 ---
 # <a name="getpublickeytoken-method"></a>Método GetPublicKeyToken
+
 Recupera o token de chave pública para um determinado contêiner de chave ou keyfile.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT GetPublicKeyToken(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pszKeyFile`  
  Nome do arquivo da chave.  
   
@@ -46,12 +49,14 @@ HRESULT GetPublicKeyToken(
  Endereço em que o token de chave deve ser armazenado.  
   
  `pcbPublicKeyToken`  
- Especifica o tamanho, em bytes, do buffer indicado por `pvPublicKeyToken`. No retorno, contém o número real de bytes usados.  
+ Especifica o tamanho, em bytes, do buffer indicado por `pvPublicKeyToken` . No retorno, contém o número real de bytes usados.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  Retorna S_OK se o método tiver sucesso.  
   
-## <a name="requirements"></a>{1&gt;{2&gt;Requisitos&lt;2}&lt;1}  
+## <a name="requirements"></a>Requisitos  
+
  Requer ALink. h.  
   
 ## <a name="see-also"></a>Consulte também

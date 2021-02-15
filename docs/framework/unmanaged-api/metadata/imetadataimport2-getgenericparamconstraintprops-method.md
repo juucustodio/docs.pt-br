@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport2:: GetGenericParamConstraintProps'
 title: Método IMetaDataImport2::GetGenericParamConstraintProps
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: c5fee4a0-b132-4e5e-8730-e586ce314b9a
 topic_type:
 - apiref
-ms.openlocfilehash: 8a1cdff313dae73e3f5e8918ff2ef395c80b115d
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 03cc4df655f9ab7a1c04840e9d4fa782a90ce1ff
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84490621"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99688735"
 ---
 # <a name="imetadataimport2getgenericparamconstraintprops-method"></a>Método IMetaDataImport2::GetGenericParamConstraintProps
+
 Obtém os metadados associados à restrição de parâmetro genérico representada pelo token de restrição especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT GetGenericParamConstraintProps (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `gpc`  
  no O token para a restrição de parâmetro genérico para a qual retornar os metadados.  
   
@@ -46,15 +49,16 @@ HRESULT GetGenericParamConstraintProps (
  fora Um ponteiro para um token de TypeDef, TypeRef ou TypeSpec que representa uma restrição em `ptGenericParam` .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)
 - [Interface IMetaDataImport](imetadataimport-interface.md)

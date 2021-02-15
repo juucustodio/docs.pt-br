@@ -1,13 +1,13 @@
 ---
 title: Balanceamento de carga gRPC-gRPC para desenvolvedores do WCF
 description: Escolhendo um balanceador de carga para trabalhar com os serviços gRPCs.
-ms.date: 09/02/2019
-ms.openlocfilehash: 215c0983146bbf9168f01956d64733f80cea6faf
-ms.sourcegitcommit: 5fb5b6520b06d7f5e6131ec2ad854da302a28f2e
+ms.date: 12/15/2020
+ms.openlocfilehash: 55f61608dce1f159b11d7265a47938ba49e9e188
+ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74711169"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97938579"
 ---
 # <a name="load-balancing-grpc"></a>GRPC de balanceamento de carga
 
@@ -17,7 +17,7 @@ Os balanceadores de carga são classificados de acordo com a *camada* em que ope
 
 ## <a name="l4-load-balancers"></a>Balanceadores de carga L4
 
-Um balanceador de carga L4 aceita uma solicitação de conexão TCP de um cliente, abre outra conexão com uma das instâncias de back-end e copia dados entre as duas conexões sem processamento real. O L4 oferece excelente desempenho e baixa latência, mas muito pouco controle ou inteligência. Desde que o cliente mantenha a conexão aberta, todas as solicitações serão direcionadas para a mesma instância de back-end.
+Um balanceador de carga L4 aceita uma solicitação de conexão TCP de um cliente, abre outra conexão com uma das instâncias de back-end e copia dados entre as duas conexões sem processamento real. O L4 oferece excelente desempenho e baixa latência, mas com pouco controle ou inteligência. Desde que o cliente mantenha a conexão aberta, todas as solicitações serão direcionadas para a mesma instância de back-end.
 
  [Azure Load Balancer](https://azure.microsoft.com/services/load-balancer/) é um exemplo de um balanceador de carga L4.
 
@@ -31,7 +31,7 @@ Exemplos de balanceadores de carga L7:
 - [HAProxy](https://www.haproxy.com/)
 - [Traefik](https://traefik.io/)
 
-Como regra prática, os balanceadores de carga L7 são a melhor opção para gRPC e outros aplicativos HTTP/2 (e para aplicativos HTTP geralmente, de fato). Os balanceadores de carga L4 *funcionarão* com aplicativos gRPC, mas são principalmente úteis quando baixa latência e baixa sobrecarga são importantes.
+Como regra prática, os balanceadores de carga L7 são a melhor opção para gRPC e outros aplicativos HTTP/2 (e para aplicativos HTTP geralmente, de fato). Os balanceadores de carga L4 *funcionarão* com aplicativos gRPC, mas eles serão úteis principalmente quando baixa latência e baixa sobrecarga forem importantes.
 
 > [!IMPORTANT]
 > No momento da redação deste artigo, alguns balanceadores de carga L7 não dão suporte a todas as partes da especificação HTTP/2 exigidas pelos serviços gRPCs, como cabeçalhos à direita.
@@ -45,5 +45,5 @@ Consulte a documentação do balanceador de carga preferencial para descobrir co
 Consulte [a seção sobre malhas de serviço](service-mesh.md) para obter uma discussão sobre o balanceamento de carga entre serviços internos no kubernetes.
 
 >[!div class="step-by-step"]
->[Anterior](service-mesh.md)
->[Próximo](application-performance-management.md)
+>[Anterior](service-mesh.md) 
+> [Avançar](application-performance-management.md)

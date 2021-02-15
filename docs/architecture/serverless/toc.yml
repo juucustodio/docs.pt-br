@@ -24,7 +24,7 @@
           href: logic-apps.md
         - name: Grade de Eventos do Azure
           href: event-grid.md
-    - name: Funções duráveis do Azure
+    - name: Durable Functions do Azure Functions
       href: durable-azure-functions.md
       items:
         - name: Padrões de orquestração

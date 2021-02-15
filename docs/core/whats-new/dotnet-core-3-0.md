@@ -6,12 +6,12 @@ dev_langs:
 author: adegeo
 ms.author: adegeo
 ms.date: 01/27/2020
-ms.openlocfilehash: bf712e88d96a5c2c80c3ff50283d44e9c7717abb
-ms.sourcegitcommit: cbb19e56d48cf88375d35d0c27554d4722761e0d
+ms.openlocfilehash: 1e48f2f83b65ef934c7c460d42f05e2f8de04cbd
+ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88608213"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96437907"
 ---
 # <a name="whats-new-in-net-core-30"></a>Novidades do .NET Core 3.0
 
@@ -27,7 +27,13 @@ O .NET Core RC1 foi considerado pronto para produção pela Microsoft e foi tota
 
 ## <a name="language-improvements-c-80"></a>Aprimoramentos na linguagem C# 8,0
 
-O C# 8,0 também faz parte desta versão, que inclui o recurso de [tipos de referência anulável](../../csharp/tutorials/nullable-reference-types.md) , [fluxos assíncronos](../../csharp/tutorials/generate-consume-asynchronous-stream.md)e [mais padrões](../../csharp/tutorials/pattern-matching.md). Para obter mais informações sobre recursos do C# 8.0, consulte [Novidades do C# 8.0](../../csharp/whats-new/csharp-8.md).
+O C# 8,0 também faz parte desta versão, que inclui o recurso de [tipos de referência anulável](../../csharp/language-reference/builtin-types/nullable-reference-types.md) , fluxos assíncronos e mais padrões. Para obter mais informações sobre recursos do C# 8.0, consulte [Novidades do C# 8.0](../../csharp/whats-new/csharp-8.md).
+
+Tutoriais relacionados aos recursos de linguagem C# 8,0:
+
+- [Tutorial: Expressar sua intenção de design mais claramente com tipos de referência que permitem valor nulo e tipos que não permitem valor nulo](../../csharp/tutorials/nullable-reference-types.md)
+- [Tutorial: gerar e consumir fluxos assíncronos usando C# 8,0 e .NET Core 3,0](../../csharp/tutorials/generate-consume-asynchronous-stream.md)
+- [Tutorial: usar a correspondência de padrões para criar algoritmos orientados a dados e baseados em tipos](../../csharp/tutorials/pattern-matching.md)
 
 Foram adicionados aprimoramentos de linguagem para dar suporte aos seguintes recursos de API detalhados abaixo:
 
@@ -63,7 +69,7 @@ Durante `dotnet build` ou `dotnet publish` , um executável (conhecido como **ap
 
 ### <a name="macos-apphost-and-notarization"></a>macOS appHost e notarization
 
-*somente macOS*
+*Somente macOS*
 
 A partir do notarized SDK do .NET Core 3,0 para macOS, a configuração para produzir um executável padrão (conhecida como appHost) é desabilitada por padrão. Para obter mais informações, consulte [o notarization Catalina do MacOS e o impacto sobre os downloads e projetos do .NET Core](../install/macos-notarization-issues.md).
 
@@ -102,7 +108,7 @@ Para publicar um único arquivo executável, defina o `PublishSingleFile` em seu
 </PropertyGroup>
 ```
 
--ou-
+- ou -
 
 ```dotnetcli
 dotnet publish -r win10-x64 -p:PublishSingleFile=true
@@ -136,7 +142,7 @@ Por exemplo, o modelo básico de novo projeto de console "hello world" incluído
 
 Antes de mais nada, teste seu aplicativo depois de cortar.
 
-Para saber mais sobre a ferramenta Vinculador de IL, confira a [documentação](https://aka.ms/dotnet-illink) ou visite o repositório [mono/linker]( https://github.com/mono/linker).
+Para saber mais sobre a ferramenta Vinculador de IL, confira a [documentação](../deploying/trim-self-contained.md) ou visite o repositório [mono/linker]( https://github.com/mono/linker).
 
 ### <a name="tiered-compilation"></a>Compilação em camadas
 
@@ -205,6 +211,8 @@ Exceções ao direcionamento cruzado:
 - O Windows x64 pode ser usado para compilar imagens do Windows ARM32, ARM64 e x86.
 - O Windows x86 pode ser usado para compilar imagens do Windows ARM32.
 - O Linux x64 pode ser usado para compilar imagens do Linux ARM32 e ARM64.
+
+Para obter mais informações, consulte [pronto para executar](../deploying/ready-to-run.md).
 
 ## <a name="runtimesdk"></a>Tempo de execução/SDK
 
@@ -299,7 +307,7 @@ dotnet new winforms
 
 O Visual Studio 2019 adiciona modelos de **Novo Projeto** ao Windows Forms e WPF no .NET Core 3.0.
 
-Para obter mais informações sobre como portar um aplicativo existente do .NET Framework, consulte [Portar projetos do WPF](../../desktop-wpf/migration/convert-project-from-net-framework.md) e [Portar projetos do Windows Forms](../porting/winforms.md).
+Para obter mais informações sobre como portar um aplicativo existente do .NET Framework, consulte [Portar projetos do WPF](/dotnet/desktop/wpf/migration/convert-project-from-net-framework) e [Portar projetos do Windows Forms](/dotnet/desktop/winforms/migration/?view=netdesktop-5.0&preserve-view=true).
 
 #### <a name="winforms-high-dpi"></a>WinForms com DPI alto
 
@@ -329,9 +337,9 @@ O Windows oferece uma API nativa rica na forma de APIs C simples, COM e WinRT. E
 
 ### <a name="msix-deployment"></a>Implantação do MSIX
 
-[MSIX](https://docs.microsoft.com/windows/msix/) é um novo formato de pacote de aplicativos do Windows. Ele pode ser usado para implantar aplicativos da área de trabalho do .NET Core 3.0 no Windows 10.
+[MSIX](/windows/msix/) é um novo formato de pacote de aplicativos do Windows. Ele pode ser usado para implantar aplicativos da área de trabalho do .NET Core 3.0 no Windows 10.
 
-O [Projeto de Empacotamento de Aplicativos do Windows](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-packaging-dot-net), disponível no Visual Studio 2019, permite criar pacotes MSIX com aplicativos .NET Core [autossuficientes](../deploying/index.md#publish-self-contained).
+O [Projeto de Empacotamento de Aplicativos do Windows](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net), disponível no Visual Studio 2019, permite criar pacotes MSIX com aplicativos .NET Core [autossuficientes](../deploying/index.md#publish-self-contained).
 
 O arquivo de projeto do .NET Core precisa especificar os runtimes compatíveis na propriedade `<RuntimeIdentifiers>`:
 
@@ -387,7 +395,7 @@ O .NET Core agora faz proveito do [suporte a protocolo TLS 1.3 no OpenSSL 1.1.1]
 Quando disponíveis, o .NET Core 3.0 usa **OpenSSL 1.1.1**, **1.1.0** ou **1.0.2** em um sistema Linux. Quando o **OpenSSL 1.1.1** está disponível, ambos os tipos <xref:System.Net.Security.SslStream?displayProperty=nameWithType> e <xref:System.Net.Http.HttpClient?displayProperty=nameWithType> usarão o **protocolo TLS 1.3** (supondo que o cliente e o servidor deem suporte ao **protocolo TLS 1.3**).
 
 > [!IMPORTANT]
-> Windows e macOS ainda não oferecem suporte a **TLS 1.3**. O .NET Core 3.0 será compatível com **TLS 1.3** nesses sistemas operacionais quando o suporte for disponibilizado.
+> Windows e macOS ainda não oferecem suporte a **TLS 1.3**.
 
 O exemplo de C# 8.0 a seguir demonstra o .NET Core 3.0 no Ubuntu 18.10 conectando-se a <https://www.cloudflare.com>:
 
@@ -395,7 +403,7 @@ O exemplo de C# 8.0 a seguir demonstra o .NET Core 3.0 no Ubuntu 18.10 conectand
 
 ### <a name="cryptography-ciphers"></a>Cifras de criptografia
 
-O .NET 3.0 adiciona o suporte para as criptografias **AES-GCM** e **AES-CCM**, implementadas com <xref:System.Security.Cryptography.AesGcm?displayProperty=nameWithType> e <xref:System.Security.Cryptography.AesCcm?displayProperty=nameWithType>, respectivamente. Esses algoritmos são ambos do tipo [AEAD (criptografia autenticada com os dados de associação)](https://en.wikipedia.org/wiki/Authenticated_encryption).
+O .NET Core 3,0 adiciona suporte para codificações **AES-GCM** e **AES-CCM** , implementadas com <xref:System.Security.Cryptography.AesGcm?displayProperty=nameWithType> e <xref:System.Security.Cryptography.AesCcm?displayProperty=nameWithType> respectivamente. Esses algoritmos são ambos do tipo [AEAD (criptografia autenticada com os dados de associação)](https://en.wikipedia.org/wiki/Authenticated_encryption).
 
 O código a seguir demonstra como usar criptografia `AesGcm` para criptografar e descriptografar dados aleatórios.
 
@@ -508,7 +516,7 @@ Foram adicionadas APIs que permitem acesso a determinadas instruções da CPU or
 
 Quando apropriado, as bibliotecas .NET começaram usando estas instruções para melhorar o desempenho.
 
-Para obter mais informações, consulte [intrínsecos dependentes da plataforma .net](https://github.com/dotnet/designs/blob/master/accepted/2018/platform-intrinsics.md).
+Para obter mais informações, consulte [intrínsecos do .net Platform-Dependent](https://github.com/dotnet/designs/blob/master/accepted/2018/platform-intrinsics.md).
 
 ### <a name="improved-net-core-version-apis"></a>APIs de versão aprimoradas do .NET Core
 
@@ -565,5 +573,5 @@ Muitas vezes, quando você está desenvolvendo um aplicativo, quer usar uma cone
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Examine as alterações significativas entre o .NET Core 2,2 e 3,0.](../compatibility/2.2-3.0.md)
-- [Examine as alterações significativas no .NET Core 3,0 para aplicativos Windows Forms.](../compatibility/winforms.md#net-core-30)
+- [Examinar as alterações interruptivas entre o .NET Core 2.2 e o 3.0.](../compatibility/3.0.md)
+- [Examinar as alterações interruptivas no .NET Core 3.0 para aplicativos do Windows Forms.](../compatibility/winforms.md#net-core-30)

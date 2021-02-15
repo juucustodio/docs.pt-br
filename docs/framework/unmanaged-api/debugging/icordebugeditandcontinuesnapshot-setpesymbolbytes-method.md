@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugEditAndContinueSnapshot:: SetPESymbolBytes'
 title: Método ICorDebugEditAndContinueSnapshot::SetPESymbolBytes
 ms.date: 03/30/2017
 api_name:
@@ -15,16 +16,17 @@ helpviewer_keywords:
 ms.assetid: ec00fbdd-6451-4888-ac6f-08e1e2d9b2fd
 topic_type:
 - apiref
-ms.openlocfilehash: e31522ffcf5dd61c1643a8c60e7573c87b834e6a
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 05fd650286c2e8bdabdb96ec0a02e633ea592914
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76788759"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694507"
 ---
 # <a name="icordebugeditandcontinuesnapshotsetpesymbolbytes-method"></a>Método ICorDebugEditAndContinueSnapshot::SetPESymbolBytes
+
 `SetPESymbolBytes` é obsoleto. Não chame esse método.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

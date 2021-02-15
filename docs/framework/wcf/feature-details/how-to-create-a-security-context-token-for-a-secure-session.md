@@ -1,18 +1,20 @@
 ---
-title: Como criar um token de contexto de segurança para uma sessão segura
+description: 'Saiba mais sobre: como criar um token de contexto de segurança para uma sessão segura'
+title: 'Como: criar um token de contexto de segurança para uma sessão segura'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 640676b6-c75a-4ff7-aea4-b1a1524d71b2
-ms.openlocfilehash: 36cf5ce1aa6e0eef80123ac7008294062d7faf82
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 29e8b694779f2a960f449469438c3aed0d0a815d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84598899"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734666"
 ---
-# <a name="how-to-create-a-security-context-token-for-a-secure-session"></a>Como criar um token de contexto de segurança para uma sessão segura
+# <a name="how-to-create-a-security-context-token-for-a-secure-session"></a>Como: criar um token de contexto de segurança para uma sessão segura
+
 Usando um símbolo de contexto de segurança com estado (SCT) em uma sessão segura, a sessão pode resistir ao serviço que está sendo reciclado. Por exemplo, quando um SCT sem estado é usado em uma sessão segura e Serviços de Informações da Internet (IIS) é redefinido, os dados de sessão associados ao serviço são perdidos. Esses dados de sessão incluem um cache de token SCT. Assim, na próxima vez que um cliente envia o serviço a um SCT sem estado, um erro é retornado, pois a chave associada ao SCT não pode ser recuperada. Se, no entanto, um SCT com estado for usado, a chave que está associada ao SCT está contida no SCT. Como a chave está contida no SCT e, portanto, contida na mensagem, a sessão segura não é afetada pelo serviço que está sendo reciclado. Por padrão, Windows Communication Foundation (WCF) usa SCTs sem estado em uma sessão segura. Este tópico fornece detalhes sobre como usar SCTs com estado em uma sessão segura.  
   
 > [!NOTE]
@@ -90,6 +92,7 @@ Usando um símbolo de contexto de segurança com estado (SCT) em uma sessão seg
     ```  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo de código a seguir cria uma associação personalizada que usa o <xref:System.ServiceModel.Configuration.AuthenticationMode.MutualCertificate> modo de autenticação para inicializar uma sessão segura.  
   
  [!code-csharp[c_CreateStatefulSCT#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_createstatefulsct/cs/secureservice.cs#2)]

@@ -4,12 +4,12 @@ description: Entenda os desafios da arquitetura de aplicativos sem servidor, des
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 04/06/2020
-ms.openlocfilehash: 3c07e1149e6af41a6b9a9317238e5c71015d2c4e
-ms.sourcegitcommit: 8b02d42f93adda304246a47f49f6449fc74a3af4
+ms.openlocfilehash: fbbb0c38cea58902124743fb99f9ab31b3d09be9
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82135666"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91171644"
 ---
 # <a name="serverless-architecture-considerations"></a>Considerações sobre a arquitetura sem servidor
 
@@ -23,7 +23,7 @@ Há várias soluções para adotar o estado sem comprometer os benefícios do se
 
 - Use um armazenamento de dados temporário ou um cache distribuído, como Redis
 - Armazene o estado em um banco de dados, como SQL ou CosmosDB
-- Tratar o estado por meio de um mecanismo de fluxo de trabalho como [funções duráveis](https://docs.microsoft.com/azure/azure-functions/durable/durable-functions-overview)
+- Tratar o estado por meio de um mecanismo de fluxo de trabalho como [funções duráveis](/azure/azure-functions/durable/durable-functions-overview)
 
 O resultado final é que você deve estar ciente da necessidade de qualquer gerenciamento de estado dentro dos processos que está pensando em implementar sem servidor.
 
@@ -55,7 +55,7 @@ A sequência de alterações garante que o código herdado continue a ser execut
 
 Para obter mais informações sobre os dados em arquiteturas sem servidor, consulte [desafios e soluções para o gerenciamento de dados distribuídos](../microservices/architect-microservice-container-applications/distributed-data-management.md).
 
-## <a name="scaling"></a>Scaling
+## <a name="scaling"></a>Dimensionamento
 
 É um equívoco comum que significa sem servidor "nenhum servidor". É, na verdade, "menos servidor". O fato de que há uma infraestrutura de backup é importante entender quando se trata do dimensionamento. A maioria das plataformas sem servidor fornece um conjunto de controles para manipular como a infraestrutura deve ser dimensionada quando a densidade do evento aumenta. Você pode escolher entre uma variedade de opções, mas sua estratégia pode variar dependendo da função. Além disso, as funções normalmente são executadas em um host relacionado, para que as funções no mesmo host tenham as mesmas opções de escala. Portanto, é necessário organizar e planejar quais funções são hospedadas juntas com base nos requisitos de escala.
 
@@ -63,7 +63,7 @@ As regras geralmente especificam como escalar verticalmente (aumentar os recurso
 
 ## <a name="monitoring-tracing-and-logging"></a>Monitoramento, rastreamento e registro em log
 
-Um aspecto freqüentemente ignorado do DevOps é o monitoramento de aplicativos depois de implantado. É importante ter uma estratégia para monitorar funções sem servidor. O maior desafio é geralmente correlação ou reconhecimento quando um usuário chama várias funções como parte da mesma interação. A maioria das plataformas sem servidor permite o log de console que pode ser importado para ferramentas de terceiros. Também há opções para automatizar a coleta de telemetria, gerar e acompanhar IDs de correlação e monitorar ações específicas para fornecer informações detalhadas. O Azure fornece a [plataforma de Application insights](https://docs.microsoft.com/azure/azure-functions/functions-monitoring) avançada para monitoramento e análise.
+Um aspecto freqüentemente ignorado do DevOps é o monitoramento de aplicativos depois de implantado. É importante ter uma estratégia para monitorar funções sem servidor. O maior desafio é geralmente correlação ou reconhecimento quando um usuário chama várias funções como parte da mesma interação. A maioria das plataformas sem servidor permite o log de console que pode ser importado para ferramentas de terceiros. Também há opções para automatizar a coleta de telemetria, gerar e acompanhar IDs de correlação e monitorar ações específicas para fornecer informações detalhadas. O Azure fornece a [plataforma de Application insights](/azure/azure-functions/functions-monitoring) avançada para monitoramento e análise.
 
 ## <a name="inter-service-dependencies"></a>Dependências entre serviços
 
@@ -82,5 +82,5 @@ Para obter mais informações, consulte [Implementing the Circuit disjuntor Patt
 Um dos principais benefícios do servidor é a capacidade de atualizar uma função específica sem precisar reimplantar o aplicativo inteiro. Para que as atualizações sejam bem-sucedidas, as funções devem ter controle de versão para que os serviços que as chamam sejam roteados para a versão correta do código. Uma estratégia para implantar novas versões também é importante. Uma abordagem comum é usar "implantações verdes/azuis". A implantação verde é a função atual. Uma nova versão "azul" é implantada para produção e testada. Quando o teste passa, as versões verde e azul são trocadas para que a nova versão venha ao vivo. Se forem encontrados problemas, eles poderão ser trocados novamente. O suporte à versão e às implantações verdes/azuis requer uma combinação de criação de funções para acomodar alterações de versão e trabalhar com a plataforma sem servidor para lidar com as implantações.
 
 >[!div class="step-by-step"]
->[Anterior](serverless-architecture.md)
->[próximo](serverless-design-examples.md)
+>[Anterior](serverless-architecture.md) 
+> [Avançar](serverless-design-examples.md)

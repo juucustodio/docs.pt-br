@@ -1,19 +1,21 @@
 ---
+description: 'Saiba mais sobre: gerando conjuntos de linhas com rigidez de tipos'
 title: Gerando DataSets fortemente tipados
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 54333cbf-bb43-4314-a7d4-6dc1dd1c44b3
-ms.openlocfilehash: 25419f8a810b52103e6b862cfe2fe6ab5a1fd981
-ms.sourcegitcommit: ad800f019ac976cb669e635fb0ea49db740e6890
+ms.openlocfilehash: c69aecc5a0a541c868dac3037c9dd0dbc3fe8383
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73040083"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99652426"
 ---
 # <a name="generating-strongly-typed-datasets"></a>Gerando DataSets fortemente tipados
-Dado um esquema XML que está em conformidade com o padrão XSD, você pode gerar um <xref:System.Data.DataSet> fortemente tipado usando a ferramenta XSD. exe fornecida com o SDK (Software Development Kit) do Windows.  
+
+Dado um esquema XML que está em conformidade com o padrão XSD, você pode gerar um tipo fortemente tipado <xref:System.Data.DataSet> usando a ferramenta de XSD.exe fornecida com o SDK (Software Development Kit) do Windows.  
   
  (Para criar um XSD a partir de tabelas de banco de dados, consulte <xref:System.Data.DataSet.WriteXmlSchema%2A> ou [trabalhando com DataSets no Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio)).  
   
@@ -23,7 +25,7 @@ Dado um esquema XML que está em conformidade com o padrão XSD, você pode gera
 xsd.exe /d /l:CS XSDSchemaFileName.xsd /eld /n:XSDSchema.Namespace  
 ```  
   
- Nessa sintaxe, a diretiva `/d` informa a ferramenta para gerar um **conjunto**de um e o `/l:` informa à ferramenta qual idioma usar (por exemplo, C# ou Visual Basic .net). A diretiva opcional `/eld` especifica que você pode usar LINQ to DataSet para consultar o conjunto de um **dataset gerado.** Essa opção é usada quando a opção `/d` também está especificada. Para obter mais informações, consulte [consultando conjuntos de dados tipados](../querying-typed-datasets.md). A diretiva opcional `/n:` informa a ferramenta para gerar também um namespace para o **conjunto** de espaço chamado **XSDSchema. namespace**. A saída do comando é XSDSchemaFileName.cs, o que pode ser compilado e usado em um aplicativo ADO.NET. O código gerado pode ser compilado como uma biblioteca ou um módulo.  
+ Nessa sintaxe, a `/d` diretiva instrui a ferramenta a gerar um **conjunto** de um e `/l:` informa à ferramenta qual idioma usar (por exemplo, C# ou Visual Basic .net). A `/eld` diretiva opcional especifica que você pode usar LINQ to DataSet para consultar o conjunto de consulta gerado **.** Essa opção é usada quando a opção `/d` também está especificada. Para obter mais informações, consulte [consultando conjuntos de dados tipados](../querying-typed-datasets.md). A `/n:` diretiva opcional informa a ferramenta para também gerar um namespace para o **conjunto** de espaço chamado **XSDSchema. namespace**. A saída do comando é XSDSchemaFileName.cs, o que pode ser compilado e usado em um aplicativo ADO.NET. O código gerado pode ser compilado como uma biblioteca ou um módulo.  
   
  O código a seguir mostra a sintaxe para compilar o código gerado como uma biblioteca usando o compilador C# (csc.exe).  
   
@@ -98,6 +100,6 @@ foreach(CustomerDataSet.CustomersRow customerRow in customers.Customers)
 
 - <xref:System.Data.DataColumnCollection>
 - <xref:System.Data.DataSet>
-- [Typed DataSets](typed-datasets.md) (DataSets tipados)
-- [DataSets, DataTables, and DataViews](index.md) (DataSets, DataTables e DataViews)
-- [ADO.NET Overview](../ado-net-overview.md) (Visão geral do ADO.NET)
+- [DataSets tipados](typed-datasets.md)
+- [DataSets, DataTables e DataViews](index.md)
+- [Visão geral do ADO.NET](../ado-net-overview.md)

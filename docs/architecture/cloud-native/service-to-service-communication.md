@@ -2,13 +2,13 @@
 title: Comunicação entre serviços
 description: Saiba como os microserviços nativos de nuvem de back-end se comunicam com outros microserviços de back-end.
 author: robvet
-ms.date: 05/13/2020
-ms.openlocfilehash: dec06cc28ac177381b882f9e441e19e5c51bd5ad
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.date: 01/19/2021
+ms.openlocfilehash: 63c80b38e2fa42dccebefc772c969266fa9d79ca
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83613701"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506260"
 ---
 # <a name="service-to-service-communication"></a>Comunicação entre serviços
 
@@ -30,7 +30,7 @@ Os sistemas de microserviço normalmente usam uma combinação desses tipos de i
 
 ## <a name="queries"></a>Consultas
 
-Muitas vezes, um microserviço pode precisar *consultar* outro, exigindo uma resposta imediata para concluir uma operação. Um microserviço da cesta de compras pode precisar de informações do produto e um preço para adicionar um item à sua cesta. Há várias abordagens para implementar operações de consulta.
+Muitas vezes, um microserviço pode precisar *consultar* outro, exigindo uma resposta imediata para concluir uma operação. Um microserviço da cesta de compras pode precisar de informações do produto e um preço para adicionar um item à sua cesta. Há muitas abordagens para implementar operações de consulta.
 
 ### <a name="requestresponse-messaging"></a>Mensagens de solicitação/resposta
 
@@ -54,7 +54,7 @@ O grande grau de acoplamento na imagem anterior sugere que os serviços não for
 
 ### <a name="materialized-view-pattern"></a>Padrão de Exibição Materializada
 
-Uma opção popular para remover o acoplamento de microatendimento é o [padrão de exibição materializado](https://docs.microsoft.com/azure/architecture/patterns/materialized-view). Com esse padrão, um microserviço armazena sua própria cópia local e desnormalizada dos dados pertencentes a outros serviços. Em vez do microserviço da cesta de compras consultar o catálogo de produtos e os microserviços, ele mantém sua própria cópia local desses dados. Esse padrão elimina o acoplamento desnecessário e melhora a confiabilidade e o tempo de resposta. A operação inteira é executada dentro de um único processo. Exploramos esse padrão e outras preocupações de dados no capítulo 5.
+Uma opção popular para remover o acoplamento de microatendimento é o [padrão de exibição materializado](/azure/architecture/patterns/materialized-view). Com esse padrão, um microserviço armazena sua própria cópia local e desnormalizada dos dados pertencentes a outros serviços. Em vez do microserviço da cesta de compras consultar o catálogo de produtos e os microserviços, ele mantém sua própria cópia local desses dados. Esse padrão elimina o acoplamento desnecessário e melhora a confiabilidade e o tempo de resposta. A operação inteira é executada dentro de um único processo. Exploramos esse padrão e outras preocupações de dados no capítulo 5.
 
 ### <a name="service-aggregator-pattern"></a>Padrão de agregador de serviço
 
@@ -94,7 +94,7 @@ No capítulo 1, falamos sobre os *serviços de backup*. Os serviços de backup s
 
 As filas do armazenamento do Azure oferecem uma infraestrutura de fila simples que é rápida, acessível e apoiada pelas contas de armazenamento do Azure.
 
-As [filas do armazenamento do Azure](https://docs.microsoft.com/azure/storage/queues/storage-queues-introduction) apresentam um mecanismo de enfileiramento baseado em REST com mensagens confiáveis e persistentes. Eles fornecem um conjunto mínimo de recursos, mas são baratos e armazenam milhões de mensagens. Sua capacidade varia até 500 TB. Uma única mensagem pode ter até 64 KB de tamanho.
+As [filas do armazenamento do Azure](/azure/storage/queues/storage-queues-introduction) apresentam um mecanismo de enfileiramento baseado em REST com mensagens confiáveis e persistentes. Eles fornecem um conjunto mínimo de recursos, mas são baratos e armazenam milhões de mensagens. Sua capacidade varia até 500 TB. Uma única mensagem pode ter até 64 KB de tamanho.
 
 Você pode acessar mensagens de qualquer lugar do mundo por meio de chamadas autenticadas usando HTTP ou HTTPS. As filas de armazenamento podem ser expandidas para um grande número de clientes simultâneos para lidar com picos de tráfego.
 
@@ -122,13 +122,13 @@ As filas do armazenamento do Azure são uma opção econômica para implementar 
 
 Para requisitos de mensagens mais complexos, considere as filas do barramento de serviço do Azure.
 
-Sentado em uma infra-estrutura de mensagens robusta, o [barramento de serviço do Azure](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview) dá suporte a um *modelo de mensagens orientadas*. As mensagens são armazenadas de forma confiável em um agente (a fila) até serem recebidas pelo consumidor. A fila garante a entrega de mensagem PEPS (primeiro a entrar/primeiro a sair), respeitando a ordem na qual as mensagens foram adicionadas à fila.
+Sentado em uma infra-estrutura de mensagens robusta, o [barramento de serviço do Azure](/azure/service-bus-messaging/service-bus-messaging-overview) dá suporte a um *modelo de mensagens orientadas*. As mensagens são armazenadas de forma confiável em um agente (a fila) até serem recebidas pelo consumidor. A fila garante a entrega de mensagem PEPS (primeiro a entrar/primeiro a sair), respeitando a ordem na qual as mensagens foram adicionadas à fila.
 
-O tamanho de uma mensagem pode ser muito maior, até 256 KB. As mensagens são mantidas na fila por um período de tempo ilimitado. O barramento de serviço dá suporte a chamadas não apenas baseadas em HTTP, mas também fornece suporte completo para o [protocolo AMQP](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-amqp-overview). O AMQP é um padrão aberto entre os fornecedores que oferece suporte a um protocolo binário e a níveis mais altos de confiabilidade.
+O tamanho de uma mensagem pode ser muito maior, até 256 KB. As mensagens são mantidas na fila por um período de tempo ilimitado. O barramento de serviço dá suporte a chamadas não apenas baseadas em HTTP, mas também fornece suporte completo para o [protocolo AMQP](/azure/service-bus-messaging/service-bus-amqp-overview). O AMQP é um padrão aberto entre os fornecedores que oferece suporte a um protocolo binário e a níveis mais altos de confiabilidade.
 
-O barramento de serviço fornece um conjunto avançado de recursos, incluindo [suporte a transações](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-transactions) e um recurso de [detecção de duplicidades](https://docs.microsoft.com/azure/service-bus-messaging/duplicate-detection). A fila garante "no máximo uma vez na entrega" por mensagem. Ele descarta automaticamente uma mensagem que já foi enviada. Se um produtor estiver em dúvida, ele poderá reenviar a mesma mensagem, e o barramento de serviço garante que apenas uma cópia será processada. A detecção de duplicidades libera você de ter que criar o direcionamento de infraestrutura adicional.
+O barramento de serviço fornece um conjunto avançado de recursos, incluindo [suporte a transações](/azure/service-bus-messaging/service-bus-transactions) e um recurso de [detecção de duplicidades](/azure/service-bus-messaging/duplicate-detection). A fila garante "no máximo uma vez na entrega" por mensagem. Ele descarta automaticamente uma mensagem que já foi enviada. Se um produtor estiver em dúvida, ele poderá reenviar a mesma mensagem, e o barramento de serviço garante que apenas uma cópia será processada. A detecção de duplicidades libera você de ter que criar o direcionamento de infraestrutura adicional.
 
-Mais dois recursos corporativos são particionamento e sessões. Uma fila convencional do barramento de serviço é tratada por um único agente de mensagem e armazenada em um único repositório de mensagens. Mas, o [particionamento do barramento de serviço](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-partitioning) espalha a fila entre vários agentes de mensagens e repositórios de mensagens. A taxa de transferência geral não é mais limitada pelo desempenho de um único agente de mensagens ou repositório de mensagens. Uma interrupção temporária de um repositório de mensagens não torna uma fila particionada indisponível.
+Mais dois recursos corporativos são particionamento e sessões. Uma fila convencional do barramento de serviço é tratada por um único agente de mensagem e armazenada em um único repositório de mensagens. Mas, o [particionamento do barramento de serviço](/azure/service-bus-messaging/service-bus-partitioning) espalha a fila entre vários agentes de mensagens e repositórios de mensagens. A taxa de transferência geral não é mais limitada pelo desempenho de um único agente de mensagens ou repositório de mensagens. Uma interrupção temporária de um repositório de mensagens não torna uma fila particionada indisponível.
 
 As [sessões do barramento de serviço](https://codingcanvas.com/azure-service-bus-sessions/) fornecem uma maneira de agrupar mensagens relacionadas. Imagine um cenário de fluxo de trabalho em que as mensagens devem ser processadas em conjunto e a operação seja concluída no final. Para tirar proveito, as sessões devem ser explicitamente habilitadas para a fila e cada mensagem relacionada deve conter a mesma ID de sessão.
 
@@ -148,43 +148,43 @@ O enfileiramento de mensagens é uma maneira eficaz de implementar a comunicaç�
 
 Para resolver esse cenário, mudamos para o terceiro tipo de interação de mensagem, o *evento*. Um microserviço anuncia que uma ação ocorreu. Outros microserviços, se estiverem interessados, reagir à ação ou ao evento.
 
-O evento é um processo de duas etapas. Para uma determinada alteração de estado, um microserviço publica um evento em um agente de mensagem, disponibilizando-o para qualquer outro microserviço interessado. O microserviço interessado é notificado pela assinatura do evento no agente de mensagens. Você usa o padrão de [publicação/assinatura](https://docs.microsoft.com/azure/architecture/patterns/publisher-subscriber) para implementar a [comunicação baseada em eventos](https://docs.microsoft.com/dotnet/standard/microservices-architecture/multi-container-microservice-net-applications/integration-event-based-microservice-communications).
+O evento é um processo de duas etapas. Para uma determinada alteração de estado, um microserviço publica um evento em um agente de mensagem, disponibilizando-o para qualquer outro microserviço interessado. O microserviço interessado é notificado pela assinatura do evento no agente de mensagens. Você usa o padrão de [publicação/assinatura](/azure/architecture/patterns/publisher-subscriber) para implementar a [comunicação baseada em eventos](/dotnet/standard/microservices-architecture/multi-container-microservice-net-applications/integration-event-based-microservice-communications).
 
 A Figura 4-15 mostra um microserviço de cesta de compras publicando um evento com dois outros microservices assinando-o.
 
-![Mensagens controladas por eventos](./media/event-driven-messaging.png)
+![Event-Driven mensagens](./media/event-driven-messaging.png)
 
-**Figura 4-15**. Mensagens controladas por eventos
+**Figura 4-15**. Event-Driven mensagens
 
 Observe o componente de *barramento de evento* que fica no meio do canal de comunicação. É uma classe personalizada que encapsula o agente de mensagem e o dissocia do aplicativo subjacente. Os microserviços de pedidos e de inventário operam de forma independente o evento sem nenhum conhecimento um do outro, nem o microserviço da cesta de compras. Quando o evento registrado é publicado no barramento de evento, eles agem sobre ele.
 
-Com eventos, mudamos da tecnologia de enfileiramento para *Tópicos*. Um [tópico](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions) é semelhante a uma fila, mas dá suporte a um padrão de mensagens de um-para-muitos. Um microserviço publica uma mensagem. Vários microserviços de assinatura podem optar por receber e agir sobre essa mensagem. A Figura 4-16 mostra uma arquitetura de tópico.
+Com eventos, mudamos da tecnologia de enfileiramento para *Tópicos*. Um [tópico](/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions) é semelhante a uma fila, mas dá suporte a um padrão de mensagens de um-para-muitos. Um microserviço publica uma mensagem. Vários microserviços de assinatura podem optar por receber e agir sobre essa mensagem. A Figura 4-16 mostra uma arquitetura de tópico.
 
 ![Arquitetura do tópico](./media/topic-architecture.png)
 
 **Figura 4-16**. Arquitetura do tópico
 
-Na figura anterior, os editores enviam mensagens para o tópico. No final, os assinantes recebem mensagens de assinaturas. No meio, o tópico encaminha mensagens para assinaturas com base em um conjunto de *regras*, mostrado em caixas azuis escuras. As regras atuam como um filtro que encaminha mensagens específicas para uma assinatura. Aqui, um evento "CreateOrder" seria enviado à assinatura \# 1 e à assinatura \# 3, mas não à assinatura \# 2. Um evento "OrderCompleted" seria enviado para a assinatura \# 2 e a assinatura \# 3.
+Na figura anterior, os editores enviam mensagens para o tópico. No final, os assinantes recebem mensagens de assinaturas. No meio, o tópico encaminha mensagens para assinaturas com base em um conjunto de regras, mostrado em caixas azuis escuras. As regras atuam como um filtro que encaminha mensagens específicas para uma assinatura. Aqui, um evento "getPrice" seria enviado para as assinaturas Price e logging, pois a assinatura de log optou por receber todas as mensagens.  Um evento "GetInformation" seria enviado para as informações e assinaturas de registro em log.
 
 A nuvem do Azure dá suporte a dois serviços de tópico diferentes: tópicos do barramento de serviço do Azure e EventGrid do Azure.
 
 ### <a name="azure-service-bus-topics"></a>Tópicos do Barramento de Serviço do Azure
 
-A parte superior do mesmo modelo robusto de mensagens orientadas das filas do barramento de serviço do Azure são os [Tópicos do barramento de serviço do Azure](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions). Um tópico pode receber mensagens de vários Publicadores independentes e enviar mensagens para até 2.000 assinantes. As assinaturas podem ser adicionadas ou removidas dinamicamente no tempo de execução sem interromper o sistema ou recriar o tópico.
+A parte superior do mesmo modelo robusto de mensagens orientadas das filas do barramento de serviço do Azure são os [Tópicos do barramento de serviço do Azure](/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions). Um tópico pode receber mensagens de vários Publicadores independentes e enviar mensagens para até 2.000 assinantes. As assinaturas podem ser adicionadas ou removidas dinamicamente no tempo de execução sem interromper o sistema ou recriar o tópico.
 
-Muitos recursos avançados das filas do barramento de serviço do Azure também estão disponíveis para tópicos, incluindo [detecção de duplicidades](https://docs.microsoft.com/azure/service-bus-messaging/duplicate-detection) e [suporte a transações](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-transactions). Por padrão, os tópicos do barramento de serviço são tratados por um único agente de mensagem e armazenados em um único repositório de mensagens. Mas, o [particionamento do barramento de serviço](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-partitioning) dimensiona um tópico distribuindo-o em vários agentes de mensagens e armazenamentos de mensagens.
+Muitos recursos avançados das filas do barramento de serviço do Azure também estão disponíveis para tópicos, incluindo [detecção de duplicidades](/azure/service-bus-messaging/duplicate-detection) e [suporte a transações](/azure/service-bus-messaging/service-bus-transactions). Por padrão, os tópicos do barramento de serviço são tratados por um único agente de mensagem e armazenados em um único repositório de mensagens. Mas, o [particionamento do barramento de serviço](/azure/service-bus-messaging/service-bus-partitioning) dimensiona um tópico distribuindo-o em vários agentes de mensagens e armazenamentos de mensagens.
 
-A [entrega de mensagem agendada](https://docs.microsoft.com/azure/service-bus-messaging/message-sequencing) marca uma mensagem com um horário específico para processamento. A mensagem não aparecerá no tópico antes dessa hora. O [adiamento de mensagens](https://docs.microsoft.com/azure/service-bus-messaging/message-deferral) permite adiar uma recuperação de uma mensagem para um momento posterior. Ambos são comumente usados em cenários de processamento de fluxo de trabalho em que as operações são processadas em uma ordem específica. Você pode adiar o processamento de mensagens recebidas até que o trabalho anterior tenha sido concluído.
+A [entrega de mensagem agendada](/azure/service-bus-messaging/message-sequencing) marca uma mensagem com um horário específico para processamento. A mensagem não aparecerá no tópico antes dessa hora. O [adiamento de mensagens](/azure/service-bus-messaging/message-deferral) permite adiar uma recuperação de uma mensagem para um momento posterior. Ambos são comumente usados em cenários de processamento de fluxo de trabalho em que as operações são processadas em uma ordem específica. Você pode adiar o processamento de mensagens recebidas até que o trabalho anterior tenha sido concluído.
 
 Os tópicos do barramento de serviço são uma tecnologia robusta e comprovada para habilitar a comunicação de publicação/assinatura em seus sistemas nativos de nuvem.
 
 ### <a name="azure-event-grid"></a>Grade de Eventos do Azure
 
-Embora o barramento de serviço do Azure seja um agente de mensagens testado por batalha com um conjunto completo de recursos corporativos, a [grade de eventos do Azure](https://docs.microsoft.com/azure/event-grid/overview) é a nova criança no bloco.
+Embora o barramento de serviço do Azure seja um agente de mensagens testado por batalha com um conjunto completo de recursos corporativos, a [grade de eventos do Azure](/azure/event-grid/overview) é a nova criança no bloco.
 
 À primeira vista, a grade de eventos pode parecer apenas com outro sistema de mensagens baseado em tópico. No entanto, ele é diferente de várias maneiras. Focado em cargas de trabalho controladas por eventos, ele permite o processamento de eventos em tempo real, a profunda integração do Azure e uma plataforma aberta em uma infraestrutura sem servidor. Ele foi projetado para aplicativos contemporâneos de nuvem e nativas para servidores
 
-Como um *replano de evento*centralizado, ou pipe, a grade de eventos reage a eventos dentro dos recursos do Azure e de seus próprios serviços.
+Como um *replano de evento* centralizado, ou pipe, a grade de eventos reage a eventos dentro dos recursos do Azure e de seus próprios serviços.
 
 As notificações de eventos são publicadas em um tópico da grade de eventos que, por sua vez, roteia cada evento para uma assinatura. Os assinantes mapeiam para assinaturas e consomem os eventos. Assim como o barramento de serviço, a grade de eventos dá suporte a um *modelo de assinante filtrado* em que uma assinatura define a regra para os eventos que deseja receber. A grade de eventos fornece uma taxa de transferência rápida com uma garantia de 10 milhões eventos por segundo, permitindo entrega quase em tempo real – muito mais do que o barramento de serviço do Azure pode gerar.
 
@@ -196,7 +196,7 @@ Ao publicar e assinar eventos nativos de recursos do Azure, nenhuma codificaçã
 
 **Figura 4-17**. Anatomia da grade de eventos
 
-Uma grande diferença entre o EventGrid e o barramento de serviço é o *padrão de troca de mensagens*subjacente.
+Uma grande diferença entre o EventGrid e o barramento de serviço é o *padrão de troca de mensagens* subjacente.
 
 O barramento de serviço implementa um *modelo de pull* de estilo mais antigo no qual o assinante downstream sonda ativamente a assinatura do tópico em busca de novas mensagens. Na cabeça, essa abordagem dá ao Assinante controle total do ritmo no qual ele processa as mensagens. Ele controla quando e quantas mensagens são processadas em um determinado momento. As mensagens não lidas permanecem na assinatura até que sejam processadas. Uma deficiência significativa é a latência entre a hora em que o evento é gerado e a operação de sondagem que efetua pull dessa mensagem para o Assinante para processamento. Além disso, a sobrecarga de sondagem constante para o próximo evento consome recursos e dinheiro.
 
@@ -206,9 +206,9 @@ A grade de eventos é um serviço de nuvem sem servidor totalmente gerenciado. E
 
 ### <a name="streaming-messages-in-the-azure-cloud"></a>Transmissão de mensagens na nuvem do Azure
 
-O barramento de serviço do Azure e a grade de eventos fornecem excelente suporte para aplicativos que expõem eventos únicos e discretos como um novo documento inserido em um Cosmos DB. Mas e se o seu sistema nativo de nuvem precisar processar um *fluxo de eventos relacionados*? Os [fluxos de eventos](https://docs.microsoft.com/archive/msdn-magazine/2015/february/microsoft-azure-the-rise-of-event-stream-oriented-systems) são mais complexos. Normalmente, eles são ordenados por tempo, inter-relacionados e devem ser processados como um grupo.
+O barramento de serviço do Azure e a grade de eventos fornecem excelente suporte para aplicativos que expõem eventos únicos e discretos como um novo documento inserido em um Cosmos DB. Mas e se o seu sistema nativo de nuvem precisar processar um *fluxo de eventos relacionados*? Os [fluxos de eventos](/archive/msdn-magazine/2015/february/microsoft-azure-the-rise-of-event-stream-oriented-systems) são mais complexos. Normalmente, eles são ordenados por tempo, inter-relacionados e devem ser processados como um grupo.
 
-O [Hub de eventos do Azure](https://azure.microsoft.com/services/event-hubs/) é uma plataforma de streaming de dados e um serviço de ingestão de eventos que coleta, transforma e armazena eventos. Ele é ajustado para capturar dados de streaming, como notificações de eventos contínuos emitidas de um contexto de telemetria. O serviço é altamente escalonável e pode armazenar e [processar milhões de eventos por segundo](https://docs.microsoft.com/azure/event-hubs/event-hubs-about). Mostrado na Figura 4-18, geralmente é uma porta frontal para um pipeline de eventos, desacoplando o fluxo de ingestão do consumo de eventos.
+O [Hub de eventos do Azure](https://azure.microsoft.com/services/event-hubs/) é uma plataforma de streaming de dados e um serviço de ingestão de eventos que coleta, transforma e armazena eventos. Ele é ajustado para capturar dados de streaming, como notificações de eventos contínuos emitidas de um contexto de telemetria. O serviço é altamente escalonável e pode armazenar e [processar milhões de eventos por segundo](/azure/event-hubs/event-hubs-about). Mostrado na Figura 4-18, geralmente é uma porta frontal para um pipeline de eventos, desacoplando o fluxo de ingestão do consumo de eventos.
 
 ![Hub de Eventos do Azure](./media/azure-event-hub.png)
 
@@ -216,9 +216,9 @@ O [Hub de eventos do Azure](https://azure.microsoft.com/services/event-hubs/) é
 
 O Hub de eventos dá suporte à baixa latência e à retenção de tempo configurável. Ao contrário das filas e dos tópicos, os hubs de eventos mantêm os dados do evento depois que eles são lidos por um consumidor. Esse recurso permite que outros serviços analíticos de dados, internos e externos, reproduza os dados para análise posterior. Os eventos armazenados no Hub de eventos são excluídos somente após a expiração do período de retenção, que é um dia por padrão, mas configurável.
 
-O Hub de eventos dá suporte a protocolos comuns de publicação de eventos, incluindo HTTPS e AMQP. Ele também dá suporte a Kafka 1,0. Os [aplicativos Kafka existentes podem se comunicar com o Hub de eventos](https://docs.microsoft.com/azure/event-hubs/event-hubs-for-kafka-ecosystem-overview) usando o protocolo Kafka, fornecendo uma alternativa ao gerenciamento de clusters grandes do Kafka. Muitos sistemas de código aberto em nuvem nativas adotam o Kafka.
+O Hub de eventos dá suporte a protocolos comuns de publicação de eventos, incluindo HTTPS e AMQP. Ele também dá suporte a Kafka 1,0. Os [aplicativos Kafka existentes podem se comunicar com o Hub de eventos](/azure/event-hubs/event-hubs-for-kafka-ecosystem-overview) usando o protocolo Kafka, fornecendo uma alternativa ao gerenciamento de clusters grandes do Kafka. Muitos sistemas de código aberto em nuvem nativas adotam o Kafka.
 
-Os hubs de eventos implementam o streaming de mensagens por meio de um [modelo de consumidor particionado](https://docs.microsoft.com/azure/event-hubs/event-hubs-features) no qual cada consumidor lê apenas um subconjunto específico, ou partição, do fluxo de mensagens. Esse padrão permite a enorme escala horizontal para processamento de eventos e fornece outros recursos centrados no fluxo que não estão disponíveis em filas e tópicos. Uma partição é uma sequência ordenada de eventos que é mantida em um hub de eventos. À medida que os eventos mais recentes chegam, eles são adicionados ao final dessa sequência.A Figura 4-19 mostra o particionamento em um hub de eventos.
+Os hubs de eventos implementam o streaming de mensagens por meio de um [modelo de consumidor particionado](/azure/event-hubs/event-hubs-features) no qual cada consumidor lê apenas um subconjunto específico, ou partição, do fluxo de mensagens. Esse padrão permite a enorme escala horizontal para processamento de eventos e fornece outros recursos centrados no fluxo que não estão disponíveis em filas e tópicos. Uma partição é uma sequência ordenada de eventos que é mantida em um hub de eventos. À medida que novos eventos chegam, eles são adicionados ao final dessa sequência. A Figura 4-19 mostra o particionamento em um hub de eventos.
 
 ![Particionamento do hub de eventos](./media/event-hub-partitioning.png)
 

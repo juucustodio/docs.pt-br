@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: ae5a5fbf97ed4a03de7d35b9d5d5ca8de3aebc39
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "72393957"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96032228"
 ---
 ### <a name="caching-responsecaching-pubternal-types-changed-to-internal"></a>Caching: tipos de ResponseCaching "pubternal" alterados para interno
 
@@ -12,13 +12,13 @@ No ASP.NET Core 3,0, os tipos "pubternal" no `ResponseCaching` foram alterados p
 
 Além disso, as implementações padrão do `IResponseCachingPolicyProvider` e do `IResponseCachingKeyProvider` não são mais adicionadas aos serviços como parte do `AddResponseCaching` método.
 
-#### <a name="change-description"></a>Descrição da alteração
+#### <a name="change-description"></a>Descrição das alterações
 
-Em ASP.NET Core, os tipos "pubternal" são declarados como `public` , mas residem em um namespace com sufixo `.Internal` . Embora esses tipos sejam públicos, eles não têm nenhuma política de suporte e estão sujeitos a alterações significativas. Infelizmente, o uso acidental desses tipos foi comum, resultando em alterações significativas nesses projetos e limitando a capacidade de manter a estrutura.
+Em ASP.NET Core, os tipos "pubternal" são declarados como `public` , mas residem em um namespace com sufixo `.Internal` . Embora esses tipos sejam públicos, eles não têm nenhuma política de suporte e estão sujeitos a alterações interruptivas. O uso acidental desses tipos tem sido comum, resultando em alterações interruptivas nesses projetos e limitando a capacidade de manutenção da estrutura.
 
 #### <a name="version-introduced"></a>Versão introduzida
 
-3,0
+3.0
 
 #### <a name="old-behavior"></a>Comportamento antigo
 

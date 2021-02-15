@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport:: GetPropertyProps'
 title: Método IMetaDataImport::GetPropertyProps
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: dc0ff3e6-7e7d-4f6c-948d-52b28f5cb78c
 topic_type:
 - apiref
-ms.openlocfilehash: cac5aaa7ed13b6a48b36ad550da8b73d0deb2ee7
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 25fae4488117a35d94479ce501154679b6b536ad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84491037"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789171"
 ---
 # <a name="imetadataimportgetpropertyprops-method"></a>Método IMetaDataImport::GetPropertyProps
+
 Obtém os metadados para a propriedade representada pelo token especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -49,6 +51,7 @@ HRESULT GetPropertyProps (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `prop`  
  no Um token que representa a propriedade para a qual retornar metadados.  
   
@@ -98,15 +101,16 @@ HRESULT GetPropertyProps (
  fora O número de tokens MethodDef retornados em `rmdOtherMethod` .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Incluído como um recurso em MsCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport](imetadataimport-interface.md)
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: .NET Native a solução de problemas gerais'
 title: Solução de problemas gerais do .NET Nativo
 ms.date: 03/30/2017
 ms.assetid: ee8c5e17-35ea-48a1-8767-83298caac1e8
-ms.openlocfilehash: 2bea81e380fed6c456898e9883658ef874c8dd97
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: c486b1968036c42ac6d6e565abd9a9f7d795abc3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73128233"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738527"
 ---
 # <a name="net-native-general-troubleshooting"></a>Solução de problemas gerais do .NET Nativo
 
@@ -27,13 +28,13 @@ Este tópico descreve como solucionar problemas potenciais que você pode encont
 
 - **Problema:** Você não sabe se seu aplicativo foi compilado usando .NET Native.
 
-  **Resolução:** Se o compilador de .NET Native for invocado, você perceberá tempos de compilação mais longos e o Gerenciador de tarefas mostrará vários processos de componentes de .NET Native, como ILC. exe e nutc_driver. exe.
+  **Resolução:** Se o compilador de .NET Native for invocado, você perceberá tempos de compilação mais longos e o Gerenciador de tarefas mostrará vários processos de componentes de .NET Native, como ILC.exe e nutc_driver.exe.
 
   Depois de criar com êxito seu projeto com .net Native, você encontrará a saída em obj \\ *config* \  *Arch* \\ *ProjectName*. ilc\out.  O conteúdo final do pacote nativo pode ser encontrado em \\ *bin* \\ *config*\AppX. O conteúdo final do pacote nativo estará sob \Bin \\ *Arch* \\ *config*\AppX se você tiver implantado o aplicativo.
 
 - **Problema:** seu aplicativo compilado com o .NET Native está lançando exceções de tempo de execução (normalmente exceções [MissingMetadataException](missingmetadataexception-class-net-native.md) ou [MissingRuntimeArtifactException](missingruntimeartifactexception-class-net-native.md)) que ele não lançava quando era compilado sem o .NET Native.
 
-  **Resolução:** as exceções são geradas porque o .NET Native não forneceu os metadados nem o código de implementação que normalmente fica disponível por meio de reflexão. (Para obter mais informações, consulte [.net Native e compilação](net-native-and-compilation.md).) Para eliminar a exceção, você precisa adicionar uma entrada ao arquivo de [diretivas de tempo de execução (RD. xml)](runtime-directives-rd-xml-configuration-file-reference.md) para que a cadeia de ferramentas de .net Native possa disponibilizar os metadados ou o código de implementação no tempo de execução. Há duas soluções de problemas disponíveis que criarão a entrada necessária para adicionar ao seu arquivo de diretivas de runtime:
+  **Resolução:** as exceções são geradas porque o .NET Native não forneceu os metadados nem o código de implementação que normalmente fica disponível por meio de reflexão. (Para obter mais informações, consulte [.net Native e compilação](net-native-and-compilation.md).) Para eliminar a exceção, você precisa adicionar uma entrada ao arquivo de [diretivas de tempo de execução (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md) para que a cadeia de ferramentas de .net Native possa disponibilizar os metadados ou o código de implementação no tempo de execução. Há duas soluções de problemas disponíveis que criarão a entrada necessária para adicionar ao seu arquivo de diretivas de runtime:
 
   - A [solução de problemas MissingMetadataException](https://dotnet.github.io/native/troubleshooter/type.html) para tipos.
 
@@ -41,6 +42,6 @@ Este tópico descreve como solucionar problemas potenciais que você pode encont
 
   Para obter mais informações, consulte [Reflexão e .NET Native](reflection-and-net-native.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Migrando seu aplicativo da Windows Store para .NET Nativo](migrating-your-windows-store-app-to-net-native.md)

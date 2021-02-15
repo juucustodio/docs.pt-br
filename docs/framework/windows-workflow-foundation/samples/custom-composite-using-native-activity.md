@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: composição personalizada usando atividade nativa'
 title: Atividade nativo de usar composta personalizada
 ms.date: 03/30/2017
 ms.assetid: ef9e739c-8a8a-4d11-9e25-cb42c62e3c76
-ms.openlocfilehash: bf2b8123619df8977b0687c72663c6b482e35654
-ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
+ms.openlocfilehash: 3203de6a46daf6a9d9a054cd944a5ca41557de3d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84200871"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792564"
 ---
 # <a name="custom-composite-using-native-activity"></a>Atividade nativo de usar composta personalizada
+
 Este exemplo demonstra como escrever <xref:System.Activities.NativeActivity> que agenda outros objetos de <xref:System.Activities.Activity> para controlar o fluxo de execução de um fluxo de trabalho. Este exemplo usar dois fluxos comuns de controle, e quando sequência, para demonstrar como fazer isso.
 
 ## <a name="sample-details"></a>Detalhes de exemplo
+
  Iniciando com `MySequence`, a primeira coisa para observar que é derivada de <xref:System.Activities.NativeActivity>. <xref:System.Activities.NativeActivity> é o objeto de <xref:System.Activities.Activity> que expõe a largura total do runtime de fluxo de trabalho com <xref:System.Activities.NativeActivityContext> passado para o método de `Execute` .
 
  `MySequence` expõe uma coleção pública de objetos <xref:System.Activities.Activity> que obtém preenchido pelo autor de fluxo de trabalho. Antes que o fluxo de trabalho é executado, o runtime de fluxo de trabalho chama o método de <xref:System.Activities.Activity.CacheMetadata%2A> em cada atividade em um fluxo de trabalho. Durante esse processo, o runtime estabelecer relações pai-filho para o escopo de dados e o gerenciamento de tempo de vida. A implementação padrão do <xref:System.Activities.Activity.CacheMetadata%2A> método usa a <xref:System.ComponentModel.TypeDescriptor> classe de instância da `MySequence` atividade para adicionar qualquer propriedade pública do tipo <xref:System.Activities.Activity> ou <xref:System.Collections.IEnumerable> \<<xref:System.Activities.Activity>> como filhos da `MySequence` atividade.
@@ -25,7 +28,7 @@ Este exemplo demonstra como escrever <xref:System.Activities.NativeActivity> que
 
  Quando a atividade filho termina, <xref:System.Activities.CompletionCallback> é executado. O loop continua a parte superior. Como `Execute`, <xref:System.Activities.CompletionCallback> leva <xref:System.Activities.NativeActivityContext>, fornecendo acesso do implementador em runtime.
 
- `MyWhile`difere de `MySequence` em que ele agenda um único <xref:System.Activities.Activity> objeto repetidamente e, em que ele usa um <xref:System.Activities.Activity%601><bool \> chamado `Condition` para determinar se esse agendamento deve ocorrer. Como `MySequence`, `MyWhile` usa um método de `InternalExecute` para centralizar sua lógica de programação. Ele agenda o `Condition` <xref:System.Activities.Activity><bool \> com um <xref:System.Activities.CompletionCallback%601> \<bool> nome `OnEvaluationCompleted` . Quando a execução de `Condition` for concluída, seu resultado será disponibilizado por meio dele <xref:System.Activities.CompletionCallback> em um parâmetro com rigidez de tipos chamado `result` . Se `true`, `MyWhile` chama o <xref:System.Activities.NativeActivityContext.ScheduleActivity%2A>, passando o objeto e em `Body` de <xref:System.Activities.Activity>`InternalExecute` como <xref:System.Activities.CompletionCallback>. Quando a execução de `Body` terminar, `Condition` obtém agendada novamente em `InternalExecute`, iniciar o loop sobre novamente. Quando `Condition` retorna `false`, uma instância de `MyWhile` fornece o controle de volta para o runtime sem agendar `Body` e o runtime movê-lo ao estado de <xref:System.Activities.ActivityInstanceState.Closed> .
+ `MyWhile` difere de `MySequence` em que ele agenda um único <xref:System.Activities.Activity> objeto repetidamente e, em que ele usa um <xref:System.Activities.Activity%601><bool \> chamado `Condition` para determinar se esse agendamento deve ocorrer. Como `MySequence`, `MyWhile` usa um método de `InternalExecute` para centralizar sua lógica de programação. Ele agenda o `Condition` <xref:System.Activities.Activity><bool \> com um <xref:System.Activities.CompletionCallback%601> \<bool> nome `OnEvaluationCompleted` . Quando a execução de `Condition` for concluída, seu resultado será disponibilizado por meio dele <xref:System.Activities.CompletionCallback> em um parâmetro com rigidez de tipos chamado `result` . Se `true`, `MyWhile` chama o <xref:System.Activities.NativeActivityContext.ScheduleActivity%2A>, passando o objeto e em `Body` de <xref:System.Activities.Activity>`InternalExecute` como <xref:System.Activities.CompletionCallback>. Quando a execução de `Body` terminar, `Condition` obtém agendada novamente em `InternalExecute`, iniciar o loop sobre novamente. Quando `Condition` retorna `false`, uma instância de `MyWhile` fornece o controle de volta para o runtime sem agendar `Body` e o runtime movê-lo ao estado de <xref:System.Activities.ActivityInstanceState.Closed> .
 
 #### <a name="to-set-up-build-and-run-the-sample"></a>Para configurar, compilar, e executar o exemplo
 

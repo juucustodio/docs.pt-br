@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugModule:: GetClassFromToken'
 title: Método ICorDebugModule::GetClassFromToken
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 622a4d3c-0425-4c54-a7e4-0735377cdad2
 topic_type:
 - apiref
-ms.openlocfilehash: f8a56dcf03748c6582bce07fc379113c5cdddd11
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 8184c6c1920a4397c4037160276b5b86033baf71
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83212588"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722602"
 ---
 # <a name="icordebugmodulegetclassfromtoken-method"></a>Método ICorDebugModule::GetClassFromToken
+
 Obtém a classe especificada pelo token de metadados.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,6 +37,7 @@ HRESULT GetClassFromToken(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `typedef`  
  no Um `mdTypeDef` token de metadados que faz referência aos metadados de uma classe.  
   
@@ -42,6 +45,7 @@ HRESULT GetClassFromToken(
  fora Um ponteiro para o endereço de um objeto ICorDebugClass que representa a classe.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

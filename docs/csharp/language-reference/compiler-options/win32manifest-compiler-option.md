@@ -9,14 +9,15 @@ helpviewer_keywords:
 - win32manifest compiler option [C#]
 - -win32manifest compiler option [C#]
 ms.assetid: 9460ea1b-6c9f-44b8-8f73-301b30a01de1
-ms.openlocfilehash: 4ce4033323eb938caff1d769198ca69782b470ab
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 1d2eefdab433f67e1cba5f709a2db8ec6b9a5dc7
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89140822"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "91171306"
 ---
 # <a name="-win32manifest-c-compiler-options"></a>-win32manifest (opções do compilador C#)
+
 Use a opção **-win32manifest** para especificar um arquivo de manifesto do aplicativo Win32 definido pelo usuário para ser inserido em um arquivo PE do projeto.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -26,10 +27,12 @@ Use a opção **-win32manifest** para especificar um arquivo de manifesto do apl
 ```  
   
 ## <a name="arguments"></a>Argumentos  
+
  `filename`  
  O nome e o local do arquivo de manifesto personalizado.  
   
 ## <a name="remarks"></a>Comentários  
+
  Por padrão, o compilador do Visual C# insere um manifesto do aplicativo que especifica o nível de execução solicitado "asInvoker". Ele cria o manifesto na mesma pasta em que o executável é compilado, normalmente a pasta bin\Debug ou bin\Release quando você usa o Visual Studio. Se você quiser fornecer um manifesto personalizado, por exemplo, para especificar um nível de execução solicitado de "highestAvailable" ou "requireAdministrator", use esta opção para especificar o nome do arquivo.  
   
 > [!NOTE]
@@ -48,6 +51,7 @@ Use a opção **-win32manifest** para especificar um arquivo de manifesto do apl
  Você pode fornecer o manifesto do aplicativo como uma etapa de pós-build personalizada ou como parte de um arquivo de recurso Win32 usando a opção [-nowin32manifest (opções do compilador do C#)](./nowin32manifest-compiler-option.md). Use essa mesma opção se quiser que o aplicativo seja sujeito à virtualização de arquivo ou Registro no Windows Vista. Isso impedirá que o compilador crie e insira um manifesto padrão no arquivo PE.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir mostra o manifesto padrão que o Compilador do Visual C# insere em um PE.  
   
 > [!NOTE]
@@ -69,6 +73,6 @@ Use a opção **-win32manifest** para especificar um arquivo de manifesto do apl
   
 ## <a name="see-also"></a>Confira também
 
-- [Opções do compilador C#](./index.md)
+- [Opções do compilador de C#](./index.md)
 - [-nowin32manifest (opções do compilador do C#)](./nowin32manifest-compiler-option.md)
 - [Gerenciando propriedades de solução e de projeto](/visualstudio/ide/managing-project-and-solution-properties)

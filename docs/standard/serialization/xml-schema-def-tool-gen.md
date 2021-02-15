@@ -8,17 +8,18 @@ helpviewer_keywords:
 - XML Schema Definition tool, using to generate classes that conform to specific schema
 - XML Schema Definition tool, using to generate XML Schema Document
 ms.assetid: 51f0edc3-993d-4051-b7f2-77753694d3d1
-ms.openlocfilehash: 0e4e84ea7e11b2e7a00c852d4a2075747c71267e
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 9d94ed7c2558b1d60efb8b3cdbaac1ea1f0087b5
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "84288960"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95676654"
 ---
 # <a name="how-to-use-the-xml-schema-definition-tool-to-generate-classes-and-xml-schema-documents"></a>Como usar a ferramenta de definição de esquema XML para gerar classes e documentos de esquema XML
+
 A ferramenta de Definição de Esquema XML (Xsd.exe) permite gerar um esquema XML que descreve uma classe ou gerar a classe definida por um esquema XML. Os seguintes procedimentos mostram como executar essas operações.
 
-A ferramenta de definição de esquema XML (XSD. exe) geralmente pode ser encontrada no seguinte caminho: \
+A ferramenta de definição de esquema XML (Xsd.exe) geralmente pode ser encontrada no seguinte caminho: \
 _C: \\ arquivos de programas (x86) \\ Microsoft SDKs \\ Windows \\ {version} \\ Bint \\ {version} ferramentas\\_
 
 ### <a name="to-generate-classes-that-conform-to-a-specific-schema"></a>Para gerar classes que estão em conformidade com um esquema específico  
@@ -61,7 +62,7 @@ _C: \\ arquivos de programas (x86) \\ Microsoft SDKs \\ Windows \\ {version} \\ 
 - <xref:System.Data.DataSet>
 - [A ferramenta de definição de esquema XML e a serialização XML](the-xml-schema-definition-tool-and-xml-serialization.md)
 - [Apresentando a serialização XML](introducing-xml-serialization.md)
-- [Ferramenta de definição de esquema XML (XSD. exe)](xml-schema-definition-tool-xsd-exe.md)
+- [Ferramenta de definição de esquema XML (Xsd.exe)](xml-schema-definition-tool-xsd-exe.md)
 - <xref:System.Xml.Serialization.XmlSerializer>
 - [Como serializar um objeto](how-to-serialize-an-object.md)
 - [Como desserializar um objeto](how-to-deserialize-an-object.md)

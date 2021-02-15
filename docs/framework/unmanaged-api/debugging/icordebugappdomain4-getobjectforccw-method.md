@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugAppDomain4:: GetObjectForCCW'
 title: Método ICorDebugAppDomain4::GetObjectForCCW
 ms.date: 03/30/2017
 ms.assetid: 2cacdb85-e7b8-42e7-b310-c3e8c22e5d33
-ms.openlocfilehash: a175a6b6c91c284348580e1d9dc9ef0c5f5fc5df
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 5ba4923c933d02f5d6ad5c1fd8c4d0e2ddb410d3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82895125"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754128"
 ---
 # <a name="icordebugappdomain4getobjectforccw-method"></a>Método ICorDebugAppDomain4::GetObjectForCCW
+
 Obtém um objeto gerenciado de um ponteiro de COM Callable Wrapper (CCW).  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -22,6 +24,7 @@ HRESULT GetObjectForCCW(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ccwPointer`  
  no Um ponteiro de COM Callable Wrapper (CCW).  
   
@@ -31,6 +34,7 @@ HRESULT GetObjectForCCW(
 ## <a name="remarks"></a>Comentários  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

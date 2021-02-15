@@ -6,13 +6,13 @@ ms.author: daroth
 no-loc:
 - Blazor
 - WebAssembly
-ms.date: 09/11/2019
-ms.openlocfilehash: 2ebb021d2fce46a91a006227ccf9ba0cbcc5eea5
-ms.sourcegitcommit: 0100be20fcf23f61dab672deced70059ed71bb2e
+ms.date: 11/20/2020
+ms.openlocfilehash: 5d80b28642ee1e975d334f89504a1748d13dea8f
+ms.sourcegitcommit: 2f485e721f7f34b87856a51181b5b56624b31fd5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88267601"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96509774"
 ---
 # <a name="no-locblazor-app-hosting-models"></a>Blazor modelos de Hospedagem de aplicativo
 
@@ -66,8 +66,8 @@ As desvantagens do modelo de Blazor WebAssembly hospedagem são:
 Por outro lado, o Blazor modelo de Hospedagem de servidor oferece os seguintes benefícios:
 
 - O tamanho do download é muito menor do que um aplicativo do lado do cliente e o aplicativo é carregado muito mais rapidamente.
-- O aplicativo aproveita totalmente os recursos do servidor, incluindo o uso de qualquer API compatível com o .NET Core.
-- O .NET Core no servidor é usado para executar o aplicativo, portanto, as ferramentas .NET existentes, como depuração, funcionam conforme o esperado.
+- O aplicativo aproveita totalmente os recursos do servidor, incluindo o uso de qualquer API compatível com .NET.
+- O .NET no servidor é usado para executar o aplicativo, portanto, as ferramentas .NET existentes, como depuração, funcionam conforme o esperado.
 - Há suporte para clientes finos. Por exemplo, aplicativos do lado do servidor funcionam com navegadores que não dão suporte a WebAssembly e em dispositivos com restrição de recursos.
 - A base de código .NET/C# do aplicativo, incluindo o código de componente do aplicativo, não é servida aos clientes.
 

@@ -1,17 +1,17 @@
 ---
+description: 'Saiba mais sobre: classe de exceção e propriedades'
 title: Classe Exception e suas propriedades
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - exceptions, Exception class
 - Exception class
 ms.assetid: e2e1f8c4-e7b4-467d-9a66-13c90861221d
-ms.openlocfilehash: df05150a5bdd5d24766be252f5cec9a436720d8c
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d45cc50dadf8f48be5cb0017065ea989ae7ae535
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75708939"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641649"
 ---
 # <a name="exception-class-and-properties"></a>Classe e propriedades da exceção
 
@@ -37,6 +37,6 @@ A maioria das classes que herdam de <xref:System.Exception> não implementa memb
 
 É recomendável gerar e capturar apenas objetos que derivam de <xref:System.Exception>, mas é possível gerar como uma exceção qualquer objeto que derive da classe <xref:System.Object>. Observe que nem todas as linguagens dão suporte à geração e captura de objetos que não derivam de <xref:System.Exception>.
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Exceções](index.md)

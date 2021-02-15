@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como localizar subdiretórios com um padrão específico no Visual Basic'
 title: 'Como: localizar subdiretórios com um padrão específico'
 ms.date: 07/20/2015
 helpviewer_keywords:
 - pattern matching
 - folders, finding
 ms.assetid: c9265fd1-7483-4150-8b7f-ff642caa939d
-ms.openlocfilehash: 5b57914a518b568732955e5c73bb2031824c84dd
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: aaf1fe0e844c6a3db2b011289613a80dbd1b43fb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401622"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797543"
 ---
 # <a name="how-to-find-subdirectories-with-a-specific-pattern-in-visual-basic"></a>Como localizar subdiretórios com um padrão específico no Visual Basic
 
@@ -46,7 +47,7 @@ As seguintes condições podem causar uma exceção:
 
 - O usuário não possui as permissões necessárias (<xref:System.UnauthorizedAccessException>).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetDirectories%2A>
 - [Como: localizar arquivos com um padrão específico](how-to-find-files-with-a-specific-pattern.md)

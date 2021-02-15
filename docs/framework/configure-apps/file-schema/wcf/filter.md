@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <filter>'
 title: <filter>
 ms.date: 03/30/2017
 ms.assetid: 3266700b-904b-44e4-93a7-e06a1a445100
-ms.openlocfilehash: 6e78275aaeb202405e327302455d56fa431d7f27
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 993d2265ac3a714475e8cbe9e8a2c3f93c46bde2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70855250"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664672"
 ---
 # \<filter>
 
@@ -18,7 +19,7 @@ Define um filtro de roteamento, que determina o tipo de Windows Communication Fo
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<filters>**](filters-of-routing.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<filter>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <routing>
@@ -39,7 +40,7 @@ As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 | Atributo  | Descrição |
 | ---------- | ----------- |
-| CustomType | Uma cadeia de caracteres que contém o nome do tipo totalmente qualificado do tipo personalizado a ser usado como um filtro. Se `filterType` é definido como `custom` , esse atributo contém o nome de tipo totalmente qualificado da classe a ser criada.  `filterData`também pode conter valores a serem usados durante a avaliação do filtro de tipo personalizado. |
+| CustomType | Uma cadeia de caracteres que contém o nome do tipo totalmente qualificado do tipo personalizado a ser usado como um filtro. Se `filterType` é definido como `custom` , esse atributo contém o nome de tipo totalmente qualificado da classe a ser criada.  `filterData` também pode conter valores a serem usados durante a avaliação do filtro de tipo personalizado. |
 | filterData | Uma cadeia de caracteres que contém os dados de filtro. Para obter mais informações sobre como especificar esse atributo, consulte <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A> . |
 | filterType | Uma cadeia de caracteres que contém o tipo de filtro. Esse atributo é do <xref:System.ServiceModel.Routing.Configuration.FilterType> tipo.  Para obter mais informações sobre como isso funciona com o `filterData` atributo, consulte <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A> . |
 | name       | Uma cadeia de caracteres que contém o nome exclusivo deste elemento de filtro. |

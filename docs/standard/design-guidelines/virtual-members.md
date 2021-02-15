@@ -1,20 +1,21 @@
 ---
+description: 'Saiba mais sobre: Membros virtuais'
 title: Membros virtuais
 ms.date: 10/22/2008
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - overridable members
 - virtual members
 - members [.NET Framework], virtual
 ms.assetid: 8ff4eb97-0364-43ec-8a02-934b5cd94d19
-ms.openlocfilehash: 918208bb44f84988b7fe903c589e82c7bf1f59e3
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 7618686764fb3a24ef53e5168b871366b7ffb5bf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85620762"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641779"
 ---
 # <a name="virtual-members"></a>Membros virtuais
+
 Os membros virtuais podem ser substituídos, alterando assim o comportamento da subclasse. Eles são bastante semelhantes aos retornos de chamada em termos da extensibilidade que eles fornecem, mas são melhores em termos de desempenho de execução e consumo de memória. Além disso, os membros virtuais sentem-se mais naturais em cenários que exigem a criação de um tipo especial de um Type (especialização) existente.
 
  Os membros virtuais têm um desempenho melhor do que retornos de chamada e eventos, mas não têm melhor desempenho do que métodos não virtuais.
@@ -23,7 +24,7 @@ Os membros virtuais podem ser substituídos, alterando assim o comportamento da 
 
  Membros virtuais, como retornos de chamada (e talvez mais de retornos de chamada), são caros de projetar, testar e manter, pois qualquer chamada para um membro virtual pode ser substituída de maneiras imprevisíveis e pode executar código arbitrário. Além disso, geralmente é necessário muito mais esforço para definir claramente o contrato de membros virtuais, de modo que o custo de criá-los e documentá-los é maior.
 
- ❌Não torne os membros virtuais, a menos que você tenha um bom motivo para fazer isso e esteja ciente de todos os custos relacionados à criação, ao teste e à manutenção de membros virtuais.
+ ❌ Não torne os membros virtuais, a menos que você tenha um bom motivo para fazer isso e esteja ciente de todos os custos relacionados à criação, ao teste e à manutenção de membros virtuais.
 
  Os membros virtuais são menos tolerante em termos de alterações que podem ser feitas a eles sem a necessidade de perder a compatibilidade. Além disso, eles são mais lentos que os membros não virtuais, principalmente porque as chamadas para membros virtuais não são embutidas.
 
@@ -37,7 +38,7 @@ Os membros virtuais podem ser substituídos, alterando assim o comportamento da 
 
  *Reimpresso com permissão da Pearson Education, Inc. das [Diretrizes de Design do Framework: convenções, linguagens e padrões para bibliotecas do .NET reutilizável, 2ª edição](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) por Krzysztof Cwalina e Brad Abrams, publicado em 22 de outubro de 2008 por Addison-Wesley Professional como parte da série de desenvolvimento do Microsoft Windows.*
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Diretrizes de design de estrutura](index.md)
 - [Designer voltado para extensibilidade](designing-for-extensibility.md)

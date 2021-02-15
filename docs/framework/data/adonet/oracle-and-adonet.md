@@ -7,14 +7,15 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 8ee8e389-53cf-45cf-80bd-1df63ef34f2e
-ms.openlocfilehash: 8757352a7444fad802ea88ba58e0fe643c86cbb8
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 736b8dc5179a15ec219c1dae06b9ee6b5d6c3ef3
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286683"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91166619"
 ---
 # <a name="oracle-and-adonet"></a>Oracle e ADO.NET
+
 > [!NOTE]
 > Os tipos em <xref:System.Data.OracleClient> são preteridos. Os tipos permanecem com suporte na versão atual do .NET Framework, mas serão removidos em uma versão futura. A Microsoft recomenda que você use um provedor Oracle de terceiros.  
   
@@ -39,13 +40,14 @@ csc /r:System.Data.OracleClient.dll
 ```  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Requisitos do sistema](system-requirements-for-the-dotnet-data-provider-for-oracle.md)  
  Descreve os requisitos para usar o .NET Framework Provedor de Dados para Oracle e descreve uma série de problemas que você deve saber ao usá-lo.  
   
  [Oracle BFILEs](oracle-bfiles.md)  
  Descreve a classe <xref:System.Data.OracleClient.OracleBFile>, que é usada no trabalho com o tipo de dados Oracle BFILE.  
   
- [LOBs do Oracle](oracle-lobs.md)  
+ [Oracle LOBs](oracle-lobs.md)  
  Descreve a classe <xref:System.Data.OracleClient.OracleLob>, que é usada para no trabalho com tipos de dados Oracle LOB.  
   
  [REF CURSORs do Oracle](oracle-ref-cursors.md)  
@@ -64,13 +66,14 @@ csc /r:System.Data.OracleClient.dll
  Descreve como o objeto <xref:System.Data.OracleClient.OracleConnection> automaticamente se inscreve em uma transação distribuída existente caso determine que uma transação está ativa.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
+
  [Protegendo aplicativos ADO.NET](securing-ado-net-applications.md)  
  Descreve práticas seguras de codificação ao usar o ADO.NET.  
   
  [DataSets, DataTables e DataViews](./dataset-datatable-dataview/index.md)  
  Descreve como criar e usar `DataSets`, `DataSets` tipados, `DataTables` e `DataViews`.  
   
- [Retrieving and Modifying Data in ADO.NET](retrieving-and-modifying-data.md) (Recuperando e modificando dados no ADO.NET)  
+ [Recuperando e modificando dados no ADO.NET](retrieving-and-modifying-data.md)  
  Descreve como trabalhar com dados no ADO.NET.  
   
  [SQL Server e ADO.NET](./sql/index.md)  
@@ -79,7 +82,7 @@ csc /r:System.Data.OracleClient.dll
  [DbProviderFactories](dbproviderfactories.md)  
  Descreve classes genéricas que permitem que você grave código independente de provedor em ADO.NET.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [ADO.NET](index.md)
 - [Visão geral do ADO.NET](ado-net-overview.md)

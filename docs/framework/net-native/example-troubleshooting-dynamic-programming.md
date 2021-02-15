@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: exemplo: solução de problemas de programação dinâmica'
 title: 'Exemplo: solução de problemas de programação dinâmica'
 ms.date: 03/30/2017
 ms.assetid: 42ed860a-a022-4682-8b7f-7c9870784671
-ms.openlocfilehash: ff179854066d024a89cb5a84a19d0b9bb054d6e5
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 7ad3fde9c81800123abe899e2f696c3833fed5bc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73128447"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747849"
 ---
 # <a name="example-troubleshooting-dynamic-programming"></a>Exemplo: solução de problemas de programação dinâmica
+
 > [!NOTE]
 > Este tópico refere-se ao Developer Preview do .NET Nativo, que é um software em pré-lançamento. Você pode baixar a versão prévia do [site Microsoft Connect](https://go.microsoft.com/fwlink/?LinkId=394611) (registro obrigatório).  
   
@@ -34,6 +36,7 @@ App!$43_System::Threading::SendOrPostCallback.InvokeOpenStaticThunk
  Vamos tentar solucionar essa exceção usando a abordagem de três etapas descrita na seção “Resolver manualmente os metadados ausentes” da [Introdução](getting-started-with-net-native.md).  
   
 ## <a name="what-was-the-app-doing"></a>O que o aplicativo estava fazendo?  
+
  A primeira coisa a observar é o maquinário da palavra-chave do `async` na base da pilha.  Determinar o que o aplicativo fazia em método `async` pode ser problemático, porque a pilha perde o contexto da chamada de origem e executa o código `async` em um thread diferente. No entanto, podemos deduzir que o aplicativo está tentando carregar sua primeira página.  Na implementação de `NavigationArgs.Setup`, o seguinte código causou a violação de acesso:  
   
 `AppViewModel.Current.LayoutVM.PageMap`  
@@ -51,12 +54,14 @@ App!$43_System::Threading::SendOrPostCallback.InvokeOpenStaticThunk
  Na programação dinâmica, uma prática recomendada ao usar APIs de reflexão em .NET Native é usar as <xref:System.Type.GetType%2A?displayProperty=nameWithType> sobrecargas que geram uma exceção em caso de falha.  
   
 ## <a name="is-this-an-isolated-case"></a>Esta é uma ocorrência isolada?  
+
  Outros problemas também podem surgir ao usar `App.Core.ViewModels`.  Você deve decidir se vale a pena identificar e corrigir cada exceção de metadados ausentes, ou economizar tempo e adicionar diretivas para uma classe maior de tipos.  Aqui, adicionar metadados `dynamic` a `App.Core.ViewModels` pode ser a melhor abordagem se o aumento de tamanho resultante do binário de saída não for um problema.  
   
 ## <a name="could-the-code-be-rewritten"></a>O código pode ser reescrito?  
+
  Se o aplicativo tivesse usado `typeof(LayoutApplicationVM)` em vez de `Type.GetType("LayoutApplicationVM")`, a cadeia de ferramentas poderia ter preservado os metadados `browse`.  No entanto, ele ainda não criaria os metadados de `invoke`, o que levaria a uma exceção [MissingMetadataException](missingmetadataexception-class-net-native.md) ao instanciar o tipo. Para evitar a exceção, ainda seria necessário adicionar uma diretiva de runtime para o namespace ou o tipo que especifica a política `dynamic`. Para obter informações sobre as diretivas de runtime, consulte a [Referência do arquivo de configuração das diretivas de runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Introdução](getting-started-with-net-native.md)
 - [Exemplo: lidar com exceções ao associar dados](example-handling-exceptions-when-binding-data.md)

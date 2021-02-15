@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: UriTemplate e UriTemplateTable'
 title: UriTemplate and UriTemplateTable
 ms.date: 03/30/2017
 ms.assetid: 5cbbe03f-4a9e-4d44-9e02-c5773239cf52
-ms.openlocfilehash: 106ba21b58dabab96afbc8fb6db5cb305386f2fe
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 7abcf0125108e4f48e392e8bb817dda77dfedd38
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595070"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632406"
 ---
 # <a name="uritemplate-and-uritemplatetable"></a>UriTemplate and UriTemplateTable
-Os desenvolvedores da Web exigem a capacidade de descrever a forma e o layout dos URIs aos quais seus serviços respondem. Windows Communication Foundation (WCF) adicionou duas novas classes para dar aos desenvolvedores controle sobre seus URIs. <xref:System.UriTemplate>e <xref:System.UriTemplateTable> forma a base do mecanismo de expedição baseado em URI no WCF. Essas classes também podem ser usadas por conta própria, permitindo que os desenvolvedores tirem proveito dos modelos e do mecanismo de mapeamento de URI sem implementar um serviço WCF.  
+
+Os desenvolvedores da Web exigem a capacidade de descrever a forma e o layout dos URIs aos quais seus serviços respondem. Windows Communication Foundation (WCF) adicionou duas novas classes para dar aos desenvolvedores controle sobre seus URIs. <xref:System.UriTemplate> e <xref:System.UriTemplateTable> forma a base do mecanismo de expedição baseado em URI no WCF. Essas classes também podem ser usadas por conta própria, permitindo que os desenvolvedores tirem proveito dos modelos e do mecanismo de mapeamento de URI sem implementar um serviço WCF.  
   
 ## <a name="templates"></a>Modelos  
+
  Um modelo é uma maneira de descrever um conjunto de URIs relativos. O conjunto de modelos de URI na tabela a seguir mostra como um sistema que recupera vários tipos de informações de clima pode ser definido.  
   
 |Dados|Modelo|  
@@ -25,22 +28,23 @@ Os desenvolvedores da Web exigem a capacidade de descrever a forma e o layout do
  Esta tabela descreve um conjunto de URIs estruturalmente semelhantes. Cada entrada é um modelo de URI. Os segmentos entre chaves descrevem as variáveis. Os segmentos que não estão entre chaves descrevem cadeias de caracteres literais. As classes de modelo do WCF permitem que um desenvolvedor Use um URI de entrada, por exemplo, "/Weather/wa/Seattle/Cycling" e faça a correspondência com um modelo que o descreva, "/Weather/{State}/{City}/{Activity}".  
   
 ## <a name="uritemplate"></a>UriTemplate  
- <xref:System.UriTemplate>é uma classe que encapsula um modelo de URI. O construtor usa um parâmetro de cadeia de caracteres que define o modelo. Essa cadeia de caracteres contém o modelo no formato descrito na próxima seção. A <xref:System.UriTemplate> classe fornece métodos que permitem que você corresponda a um URI de entrada para um modelo, gere um URI a partir de um modelo, recupere uma coleção de nomes de variáveis usados no modelo, determine se dois modelos são equivalentes e retorna a cadeia de caracteres do modelo.  
+
+ <xref:System.UriTemplate> é uma classe que encapsula um modelo de URI. O construtor usa um parâmetro de cadeia de caracteres que define o modelo. Essa cadeia de caracteres contém o modelo no formato descrito na próxima seção. A <xref:System.UriTemplate> classe fornece métodos que permitem que você corresponda a um URI de entrada para um modelo, gere um URI a partir de um modelo, recupere uma coleção de nomes de variáveis usados no modelo, determine se dois modelos são equivalentes e retorna a cadeia de caracteres do modelo.  
   
- <xref:System.UriTemplate.Match%28System.Uri%2CSystem.Uri%29>usa um endereço base e um URI candidato e tenta corresponder o URI ao modelo. Se a correspondência for bem-sucedida, uma <xref:System.UriTemplateMatch> instância será retornada. O <xref:System.UriTemplateMatch> objeto contém um URI de base, o URI candidato, uma coleção de nome/valor dos parâmetros de consulta, uma matriz dos segmentos de caminho relativo, uma coleção de nome/valor de variáveis que foram correspondidas, a <xref:System.UriTemplate> instância usada para executar a correspondência, uma cadeia de caracteres que contém qualquer parte não correspondente do URI candidato (usada quando o modelo tem um curinga) e um objeto associado ao modelo.  
+ <xref:System.UriTemplate.Match%28System.Uri%2CSystem.Uri%29> usa um endereço base e um URI candidato e tenta corresponder o URI ao modelo. Se a correspondência for bem-sucedida, uma <xref:System.UriTemplateMatch> instância será retornada. O <xref:System.UriTemplateMatch> objeto contém um URI de base, o URI candidato, uma coleção de nome/valor dos parâmetros de consulta, uma matriz dos segmentos de caminho relativo, uma coleção de nome/valor de variáveis que foram correspondidas, a <xref:System.UriTemplate> instância usada para executar a correspondência, uma cadeia de caracteres que contém qualquer parte não correspondente do URI candidato (usada quando o modelo tem um curinga) e um objeto associado ao modelo.  
   
 > [!NOTE]
 > A <xref:System.UriTemplate> classe ignora o esquema e o número da porta ao corresponder um URI candidato a um modelo.  
   
- Há dois métodos que permitem gerar um URI a partir de um modelo <xref:System.UriTemplate.BindByName%28System.Uri%2CSystem.Collections.Specialized.NameValueCollection%29> e <xref:System.UriTemplate.BindByPosition%28System.Uri%2CSystem.String%5B%5D%29> . <xref:System.UriTemplate.BindByName%28System.Uri%2CSystem.Collections.Specialized.NameValueCollection%29>usa um endereço base e uma coleção de nome/valor de parâmetros. Esses parâmetros são substituídos por variáveis quando o modelo é associado. <xref:System.UriTemplate.BindByPosition%28System.Uri%2CSystem.String%5B%5D%29>usa os pares de nome/valor e os substitui da esquerda para a direita.  
+ Há dois métodos que permitem gerar um URI a partir de um modelo <xref:System.UriTemplate.BindByName%28System.Uri%2CSystem.Collections.Specialized.NameValueCollection%29> e <xref:System.UriTemplate.BindByPosition%28System.Uri%2CSystem.String%5B%5D%29> . <xref:System.UriTemplate.BindByName%28System.Uri%2CSystem.Collections.Specialized.NameValueCollection%29> usa um endereço base e uma coleção de nome/valor de parâmetros. Esses parâmetros são substituídos por variáveis quando o modelo é associado. <xref:System.UriTemplate.BindByPosition%28System.Uri%2CSystem.String%5B%5D%29> usa os pares de nome/valor e os substitui da esquerda para a direita.  
   
- <xref:System.UriTemplate.ToString>Retorna a cadeia de caracteres do modelo.  
+ <xref:System.UriTemplate.ToString> Retorna a cadeia de caracteres do modelo.  
   
  A <xref:System.UriTemplate.PathSegmentVariableNames%2A> propriedade contém uma coleção dos nomes das variáveis usadas em segmentos de caminho na cadeia de caracteres do modelo.  
   
- <xref:System.UriTemplate.IsEquivalentTo%28System.UriTemplate%29>usa um <xref:System.UriTemplate> como parâmetro e retorna um valor booliano que especifica se os dois modelos são equivalentes. Para obter mais informações, consulte a seção equivalência de modelo mais adiante neste tópico.  
+ <xref:System.UriTemplate.IsEquivalentTo%28System.UriTemplate%29> usa um <xref:System.UriTemplate> como parâmetro e retorna um valor booliano que especifica se os dois modelos são equivalentes. Para obter mais informações, consulte a seção equivalência de modelo mais adiante neste tópico.  
   
- <xref:System.UriTemplate>foi projetado para funcionar com qualquer esquema URI que esteja de acordo com a gramática de HTTP URI. Veja a seguir exemplos de esquemas de URI com suporte.  
+ <xref:System.UriTemplate> foi projetado para funcionar com qualquer esquema URI que esteja de acordo com a gramática de HTTP URI. Veja a seguir exemplos de esquemas de URI com suporte.  
   
 - `http://`  
   
@@ -55,6 +59,7 @@ Os desenvolvedores da Web exigem a capacidade de descrever a forma e o layout do
  Esquemas como file://e urn://não estão em conformidade com a gramática de HTTP URI e causam resultados imprevisíveis quando usados com modelos de URI.  
   
 ### <a name="template-string-syntax"></a>Sintaxe de cadeia de caracteres de modelo  
+
  Um modelo tem três partes: um caminho, uma consulta opcional e um fragmento opcional. Para obter um exemplo, consulte o seguinte modelo:  
   
 `"/weather/{state}/{city}?forecast={length)#frag1`  
@@ -110,6 +115,7 @@ Os desenvolvedores da Web exigem a capacidade de descrever a forma e o layout do
 - "? y = 2&&X = 3" – a cadeia de caracteres de consulta deve ser pares de valor de nome, os nomes não podem começar com ' & '.  
   
 ### <a name="compound-path-segments"></a>Segmentos de caminho composto  
+
  Segmentos de caminho composto permitem que um único segmento de caminho de URI contenha várias variáveis, bem como variáveis combinadas com literais. Veja a seguir exemplos de segmentos de caminho composto válidos.  
   
 - /filename. {ext}/  
@@ -127,9 +133,11 @@ Os desenvolvedores da Web exigem a capacidade de descrever a forma e o layout do
 - /{Shoe}{Boat}-as variáveis devem ser separadas por um literal.  
   
 ### <a name="matching-and-compound-path-segments"></a>Correspondência e segmentos de caminho compostos  
+
  Segmentos de caminho composto permitem que você defina um UriTemplate que tenha várias variáveis dentro de um único segmento de caminho. Por exemplo, na seguinte cadeia de caracteres de modelo: "Addresses/{State}. {City} "duas variáveis (State e City) são definidas dentro do mesmo segmento. Esse modelo corresponderia a uma URL como `http://example.com/Washington.Redmond` , mas também corresponderá a uma URL como `http://example.com/Washington.Redmond.Microsoft` . No último caso, a variável de estado conterá "Washington" e a variável City conterá "Redmond. Microsoft". Nesse caso, qualquer texto (exceto '/') corresponderá à variável {City}. Se você quiser um modelo que não corresponda ao texto "extra", coloque a variável em um segmento de modelo separado, por exemplo: "Addresses/{State}/{City}.  
   
 ### <a name="named-wildcard-segments"></a>Segmentos curinga nomeados  
+
  Um segmento curinga nomeado é qualquer segmento de variável de caminho cujo nome da variável comece com o caractere curinga ' \* '. A cadeia de caracteres de modelo a seguir contém um segmento curinga nomeado chamado "sapato".  
   
 `"literal/{*shoe}"`  
@@ -149,6 +157,7 @@ Os desenvolvedores da Web exigem a capacidade de descrever a forma e o layout do
 - Segmentos curinga nomeados não podem terminar com "/".  
   
 ### <a name="default-variable-values"></a>Valores de variáveis padrão  
+
  Valores de variáveis padrão permitem que você especifique valores padrão para variáveis dentro de um modelo. As variáveis padrão podem ser especificadas com as chaves que declaram a variável ou como uma coleção passada para o construtor de UriTemplate. O modelo a seguir mostra duas maneiras de especificar um <xref:System.UriTemplate> com variáveis com valores padrão.  
   
 ```csharp
@@ -233,9 +242,11 @@ Quando uma variável recebe um valor padrão, `null` há algumas restrições ad
 - `UriTemplate t = new UriTemplate("{shoe=null}/{boat=x}/{bed=null}"); // shoe cannot have a null default because boat does not have a default null value`
 
 ### <a name="default-values-and-matching"></a>Valores padrão e correspondência  
+
  Ao corresponder um URI candidato com um modelo que tem valores padrão, os valores padrão serão colocados na <xref:System.UriTemplateMatch.BoundVariables%2A> coleção se os valores não forem especificados no URI candidato.  
   
 ### <a name="template-equivalence"></a>Equivalência de modelo  
+
  Dois modelos são considerados *estruturalmente equivalentes* quando todos os literais dos modelos são correspondentes e têm variáveis nos mesmos segmentos. Por exemplo, os modelos a seguir são estruturalmente equivalentes:  
   
 - /a/{var1}/b b/{var2}? x = 1&y = 2  
@@ -253,6 +264,7 @@ Quando uma variável recebe um valor padrão, `null` há algumas restrições ad
 - As cadeias de caracteres de consulta são desordenadas.  
   
 ## <a name="uritemplatetable"></a>UriTemplateTable  
+
  A <xref:System.UriTemplateTable> classe representa uma tabela associativa de <xref:System.UriTemplate> objetos associados a um objeto da escolha do desenvolvedor. Um <xref:System.UriTemplateTable> deve conter pelo menos um <xref:System.UriTemplate> antes de chamar <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29> . O conteúdo de um <xref:System.UriTemplateTable> pode ser alterado até que <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29> seja chamado. A validação é executada quando o <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29> é chamado. O tipo de validação executada depende do valor do `allowMultiple` parâmetro para <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29> .  
   
  Quando <xref:System.UriTemplateTable.MakeReadOnly%28System.Boolean%29> o é chamado de passagem `false` , as <xref:System.UriTemplateTable> verificações para garantir que não haja modelos na tabela. Se encontrar qualquer modelo equivalente estrutural, ele lançará uma exceção. Isso é usado em conjunto com <xref:System.UriTemplateTable.MatchSingle%28System.Uri%29> quando você deseja garantir que apenas um modelo corresponda a um URI de entrada.  
@@ -265,6 +277,7 @@ Quando uma variável recebe um valor padrão, `null` há algumas restrições ad
 > Embora o <xref:System.UriTemplateTable> permita endereços base que usam esquemas diferentes de http, o esquema e o número da porta são ignorados ao corresponder os URIs candidatos aos modelos.  
   
 ### <a name="query-string-ambiguity"></a>Ambiguidade da cadeia de caracteres de consulta  
+
  Os modelos que compartilham um caminho equivalente contêm cadeias de caracteres de consulta ambíguas se houver um URI que corresponda a mais de um modelo.  
   
  Os seguintes conjuntos de cadeias de caracteres de consulta não são ambíguos em si:  
@@ -326,7 +339,7 @@ Quando uma variável recebe um valor padrão, `null` há algumas restrições ad
   
 ## <a name="see-also"></a>Consulte também
 
-- [Visão geral do modelo de programação HTTP Web do WCF](wcf-web-http-programming-model-overview.md)
+- [Visão geral de modelo de programação HTTP Web do WCF](wcf-web-http-programming-model-overview.md)
 - [Modelo de objeto de programação HTTP Web do WCF](wcf-web-http-programming-object-model.md)
 - [UriTemplate](../samples/uritemplate-sample.md)
 - [Tabela de UriTemplate](../samples/uritemplate-table-sample.md)

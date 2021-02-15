@@ -1,26 +1,24 @@
 ---
-title: Como executar um fluxo de trabalho
+title: 'Como: executar um fluxo de trabalho'
 description: Este artigo mostra como criar um host de fluxo de trabalho e executar o fluxo de trabalho definido em um artigo anterior nesta Windows Workflow Foundation série de tutoriais.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: f814ff82-fe2b-4614-aebb-b768c3e61179
-ms.openlocfilehash: 86062dd5147e6e354833928fd98bd1f6b5de9114
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: b92385fa169e03254abdf940f2964c1966cbc2ce
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83421495"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190085"
 ---
-# <a name="how-to-run-a-workflow"></a>Como executar um fluxo de trabalho
+# <a name="how-to-run-a-workflow"></a>Como: executar um fluxo de trabalho
+
 Este tópico é uma continuação do tutorial de Introdução Windows Workflow Foundation e discute como criar um host de fluxo de trabalho e executar o fluxo de trabalho definido no tópico [como criar um fluxo](how-to-create-a-workflow.md) de trabalho anterior.
 
 > [!NOTE]
 > Cada tópico do tutorial de Introdução depende dos tópicos anteriores. Para concluir este tópico, você deve primeiro concluir [como: criar uma atividade](how-to-create-an-activity.md) e [como criar um fluxo de trabalho](how-to-create-a-workflow.md).
-
-> [!NOTE]
-> Para baixar uma versão completa do tutorial, consulte [Windows Workflow Foundation (WF45) – introdução tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).  
   
 ### <a name="to-create-the-workflow-host-project"></a>Para criar o projeto de host de fluxo de trabalho  
   
@@ -38,7 +36,7 @@ Este tópico é uma continuação do tutorial de Introdução Windows Workflow F
 
      Certifique-se de que o **.NET Framework 4.5** esteja selecionado na lista suspensa de versões do .NET Framework. Selecione **aplicativo de console de fluxo de trabalho** na lista **fluxo de trabalho** . Digite `NumberGuessWorkflowHost` na caixa **nome** e clique em **OK**. Isso cria um aplicativo de fluxo de trabalho inicial com suporte básico de hospedagem de fluxo de trabalho. Esse código básico de hospedagem é modificado e usado para executar o aplicativo de fluxo de trabalho.
 
-4. Clique com o botão direito do mouse no projeto **NumberGuessWorkflowHost** recém-adicionado no **Gerenciador de soluções** e selecione **Adicionar referência**. Selecione **solução** na lista **Adicionar referência** , marque a caixa de seleção ao lado de **NumberGuessWorkflowActivities**e clique em **OK**.
+4. Clique com o botão direito do mouse no projeto **NumberGuessWorkflowHost** recém-adicionado no **Gerenciador de soluções** e selecione **Adicionar referência**. Selecione **solução** na lista **Adicionar referência** , marque a caixa de seleção ao lado de **NumberGuessWorkflowActivities** e clique em **OK**.
 
 5. Clique com o botão direito do mouse em **Workflow1. XAML** em **Gerenciador de soluções** e escolha **excluir**. Clique em **OK** para confirmar.
 
@@ -138,7 +136,7 @@ Este tópico é uma continuação do tutorial de Introdução Windows Workflow F
      [!code-csharp[CFX_WF_GettingStarted#11](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_wf_gettingstarted/cs/program.cs#11)]
      [!code-vb[CFX_WF_GettingStarted#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/cfx_wf_gettingstarted/vb/module1.vb#11)]
 
-## <a name="to-build-and-run-the-application"></a><a name="BKMK_ToRunTheApplication"></a>Para compilar e executar o aplicativo
+## <a name="to-build-and-run-the-application"></a><a name="BKMK_ToRunTheApplication"></a> Para compilar e executar o aplicativo
 
 1. Clique com o botão direito do mouse em **NumberGuessWorkflowHost** em **Gerenciador de soluções** e selecione **definir como projeto de inicialização**.
 
@@ -152,6 +150,7 @@ Este tópico é uma continuação do tutorial de Introdução Windows Workflow F
      Para obter instruções sobre como adicionar persistência a um aplicativo de fluxo de trabalho, consulte o próximo tópico [como: criar e executar um fluxo de trabalho de longa execução](how-to-create-and-run-a-long-running-workflow.md).
 
 ## <a name="example"></a>Exemplo
+
  O exemplo a seguir é a listagem de código completa para o método `Main`.
 
 > [!NOTE]
@@ -165,8 +164,8 @@ Este tópico é uma continuação do tutorial de Introdução Windows Workflow F
 - <xref:System.Activities.WorkflowApplication>
 - <xref:System.Activities.Bookmark>
 - [Programação do Windows Workflow Foundation](programming.md)
-- [Tutorial de Introdução](getting-started-tutorial.md)
-- [Como criar um fluxo de trabalho](how-to-create-a-workflow.md)
-- [Como criar e executar um fluxo de trabalho de execução longa](how-to-create-and-run-a-long-running-workflow.md)
-- [Esperando entrada em um fluxo de trabalho](waiting-for-input-in-a-workflow.md)
+- [Guia de introdução ao tutorial](getting-started-tutorial.md)
+- [Como: criar um fluxo de trabalho](how-to-create-a-workflow.md)
+- [Como: criar e executar um fluxo de trabalho de execução prolongada](how-to-create-and-run-a-long-running-workflow.md)
+- [Entrada de espera em um fluxo de trabalho](waiting-for-input-in-a-workflow.md)
 - [Hospedando fluxos de trabalho](hosting-workflows.md)

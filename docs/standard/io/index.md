@@ -2,25 +2,24 @@
 title: E/S de arquivo e de fluxo – .NET
 description: Aprenda as noções básicas de e/s de arquivo e fluxo, que é a transferência de dados de ou para um meio de armazenamento, no .NET.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - IO namespace
 - files, I/O
 - System.IO namespace
-- I/O [.NET Framework]
+- I/O [.NET]
 - streams, I/O
 - data streams, I/O
 ms.assetid: 4f4a33a9-66b7-4cd7-a285-4ad3e4276cd2
-ms.openlocfilehash: 2761d17846009ba06a2ffb1fc58b430f3ec9a949
-ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
+ms.openlocfilehash: 4c6efc059423740f19460f24f12df81ac54f884a
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84662713"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94825813"
 ---
 # <a name="file-and-stream-io"></a>E/S de arquivo e de fluxo
 
-E/S (entrada/saída) de arquivos e fluxos refere-se à transferência de dados de ou para uma mídia de armazenamento. No .NET Framework, os namespaces `System.IO` contêm tipos que permitem a leitura e a gravação, de forma síncrona e assíncrona, em fluxos de dados e arquivos. Esses namespaces também contêm tipos que executam compactação e descompactação em arquivos e tipos que possibilitam a comunicação por meio de pipes e portas seriais.
+E/S (entrada/saída) de arquivos e fluxos refere-se à transferência de dados de ou para uma mídia de armazenamento. No .NET, os `System.IO` namespaces contêm tipos que permitem leitura e gravação, de forma síncrona e assíncrona, em arquivos e fluxos de dados. Esses namespaces também contêm tipos que executam compactação e descompactação em arquivos e tipos que possibilitam a comunicação por meio de pipes e portas seriais.
 
 Um arquivo é uma coleção ordenada e nomeada de bytes com armazenamento persistente. Ao trabalhar com arquivos, você trabalha com caminhos de diretórios, armazenamento em disco e nomes de arquivos e diretórios. Por outro lado, um fluxo é uma sequência de bytes que você pode usar para ler e gravar em um repositório, o qual pode ser uma entre vários tipos de mídia de armazenamento (por exemplo, discos ou memória). Assim como há vários repositórios diferentes de discos, há vários tipos diferentes de fluxos diferentes de fluxos de arquivos, como os fluxos de rede, memória e pipes.
 
@@ -28,7 +27,7 @@ Um arquivo é uma coleção ordenada e nomeada de bytes com armazenamento persis
 
 Você pode usar os tipos no namespace <xref:System.IO?displayProperty=nameWithType> para interagir com arquivos e diretórios. Por exemplo, você pode obter e definir propriedades para arquivos e diretórios e recuperar coleções de arquivos e diretórios com base em critérios de pesquisa.
 
-Para convenções de nomenclatura de caminhos e os modos de expressar um caminho de arquivo para sistemas Windows, incluindo a sintaxe de dispositivo DOS compatível com o .NET Core 1.1 e posterior e o .NET Framework 4.6.2 e posterior, veja [Formatos de caminho de arquivo em sistemas Windows](file-path-formats.md).
+Para obter as convenções de nomenclatura de caminho e as maneiras de expressar um caminho de arquivo para sistemas Windows, incluindo com a sintaxe de dispositivo DOS com suporte no .NET Core 1,1 e posterior e .NET Framework 4.6.2 e posterior, consulte [formatos de caminho de arquivo em sistemas Windows](file-path-formats.md).
 
 Aqui estão algumas classes de arquivos e diretórios comumente usadas:
 
@@ -46,7 +45,7 @@ Você sempre deve fornecer tratamento de exceção robusto ao chamar métodos de
 
 Além de usar essas classes, os usuários do Visual Basic podem usar os métodos e as propriedades fornecidas pela classe <xref:Microsoft.VisualBasic.FileIO.FileSystem?displayProperty=nameWithType> para E/S de arquivo.
 
-Confira [Como copiar diretórios](how-to-copy-directories.md), [Como criar uma listagem de diretórios](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5cf8zcfh(v=vs.100)) e [Como enumerar diretórios e arquivos](how-to-enumerate-directories-and-files.md).
+Confira [Como copiar diretórios](how-to-copy-directories.md), [Como criar uma listagem de diretórios](/previous-versions/dotnet/netframework-4.0/5cf8zcfh(v=vs.100)) e [Como enumerar diretórios e arquivos](how-to-enumerate-directories-and-files.md).
 
 ## <a name="streams"></a>Fluxos
 
@@ -128,7 +127,7 @@ Confira [How to: Compress and Extract Files](how-to-compress-and-extract-files.m
 
 Um armazenamento isolado é um mecanismo de armazenamento de dados que fornece isolamento e segurança ao definir maneiras padronizadas de associar códigos a dados salvos. O armazenamento fornece um sistema de arquivos virtual que é isolado por usuário, assembly e (opcionalmente) domínio. O armazenamento isolado é particularmente útil quando o aplicativo não tem permissão para acessar arquivos de usuários. Você pode salvar configurações ou arquivos para seu aplicativo de modo que ele seja controlado pela política de segurança do computador.
 
-O armazenamento isolado não está disponível para aplicativos da loja do Windows 8. x; em vez disso, use classes de dados de aplicativo no <xref:Windows.Storage?displayProperty=nameWithType> namespace. Para saber mais, veja [Dados de aplicativo](https://docs.microsoft.com/previous-versions/windows/apps/hh464917%28v=win.10%29).
+O armazenamento isolado não está disponível para aplicativos da loja do Windows 8. x; em vez disso, use classes de dados de aplicativo no <xref:Windows.Storage?displayProperty=nameWithType> namespace. Para saber mais, veja [Dados de aplicativo](/previous-versions/windows/apps/hh464917(v=win.10)).
 
 As classes a seguir são usadas com frequência na implementação do armazenamento isolado:
 
@@ -142,13 +141,13 @@ Confira [Armazenamentos isolado](isolated-storage.md).
 
 ## <a name="io-operations-in-windows-store-apps"></a>Operações de E/S em aplicativos da Windows Store
 
-O .NET para aplicativos da loja do Windows 8. x contém muitos dos tipos de leitura e gravação em fluxos; no entanto, esse conjunto não inclui todos os tipos de e/s de .NET Framework.
+O .NET para aplicativos da loja do Windows 8. x contém muitos dos tipos de leitura e gravação em fluxos; no entanto, esse conjunto não inclui todos os tipos de e/s do .NET.
 
 Algumas diferenças importantes a serem observadas ao usar operações de e/s em aplicativos da loja do Windows 8. x:
 
 - Tipos especificamente relacionados a operações de arquivo, como <xref:System.IO.File> , <xref:System.IO.FileInfo> <xref:System.IO.Directory> e <xref:System.IO.DirectoryInfo> , não estão incluídos no .net para aplicativos da loja do Windows 8. x. Em vez disso, use os tipos no namespace <xref:Windows.Storage?displayProperty=nameWithType> do Windows Runtime, como <xref:Windows.Storage.StorageFile> e <xref:Windows.Storage.StorageFolder>.
 
-- O armazenamento isolado não está disponível. Use [dados de aplicativo](https://docs.microsoft.com/previous-versions/windows/apps/hh464917(v=win.10)).
+- O armazenamento isolado não está disponível. Use [dados de aplicativo](/previous-versions/windows/apps/hh464917(v=win.10)).
 
 - Use métodos assíncronos, como <xref:System.IO.Stream.ReadAsync%2A> e <xref:System.IO.Stream.WriteAsync%2A>, para evitar o bloqueio do thread da interface do usuário.
 
@@ -156,13 +155,13 @@ Algumas diferenças importantes a serem observadas ao usar operações de e/s em
 
 É possível converter entre fluxos do .NET Framework e fluxos do Windows Runtime, se necessário. Para obter mais informações, consulte [como converter entre fluxos de .NET Framework e fluxos de Windows Runtime](how-to-convert-between-dotnet-streams-and-winrt-streams.md) ou <xref:System.IO.WindowsRuntimeStreamExtensions> .
 
-Para obter mais informações sobre operações de e/s em um aplicativo da loja do Windows 8. x, consulte [início rápido: lendo e gravando arquivos](https://docs.microsoft.com/previous-versions/windows/apps/hh758325(v=win.10)).
+Para obter mais informações sobre operações de e/s em um aplicativo da loja do Windows 8. x, consulte [início rápido: lendo e gravando arquivos](/previous-versions/windows/apps/hh758325(v=win.10)).
 
 ## <a name="io-and-security"></a>E/S e segurança
 
 Ao usar as classes no namespace <xref:System.IO?displayProperty=nameWithType>, você deve atender aos requisitos de segurança do sistema operacional, como ACLs (listas de controle de acesso) para controlar o acesso a arquivos e diretórios. Esse é um requisito adicional aos requisitos de <xref:System.Security.Permissions.FileIOPermission>. As ACLs podem ser gerenciadas por meio de programação. Para saber mais, confira [Como adicionar ou remover entradas da lista de controle de acesso](how-to-add-or-remove-access-control-list-entries.md).
 
-As políticas de segurança padrão impedem que aplicativos da Internet ou intranet acessem arquivos no computador do usuário. Consequentemente, não use classes de E/S que exijam um caminho para um arquivo físico ao escrever código que será baixado via Internet ou intranet. Em vez disso, use o [armazenamento isolado](isolated-storage.md) para aplicativos .NET Framework tradicionais ou use [dados de aplicativos](https://docs.microsoft.com/previous-versions/windows/apps/hh464917(v=win.10)) para aplicativos da loja do Windows 8. x.
+As políticas de segurança padrão impedem que aplicativos de Internet ou intranet acessem arquivos no computador do usuário. Portanto, não use as classes de e/s que exigem um caminho para um arquivo físico ao escrever código que será baixado pela Internet ou intranet. Em vez disso, use o [armazenamento isolado](isolated-storage.md) para aplicativos .net.
 
 Uma verificação de segurança é executada somente quando o fluxo é construído. Consequentemente, não abra um fluxo para depois passá-lo para código ou domínios de aplicativos menos confiáveis.
 
@@ -178,7 +177,7 @@ Descreve as vantagens de desempenho e a operação básica da E/S assíncrona.
 Descreve um mecanismo de armazenamento isolado que fornece isolamento e segurança ao definir maneiras padronizadas de associar códigos aos dados salvos.
 
 - [Especificadas](pipe-operations.md)\
-Descreve operações de pipes anônimos e nomeados no .NET Framework.
+Descreve as operações de Pipes anônimos e nomeados no .NET.
 
 - [Arquivos mapeados para memória](memory-mapped-files.md)\
 Descreve arquivos mapeados na memória, os quais armazenam o conteúdo de arquivos do disco na memória virtual. Você pode usar arquivos mapeados na memória para editar arquivos muito grandes e para criar memória compartilhada para a comunicação entre processos.

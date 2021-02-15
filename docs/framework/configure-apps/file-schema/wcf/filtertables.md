@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <filterTables>'
 title: <filterTables>
 ms.date: 03/30/2017
 ms.assetid: 41f1ac35-f559-473a-b2c3-8cc83a6a3831
-ms.openlocfilehash: c68479737cefe542a10a404a8b31a4820a430ffb
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 932d0e162c3fdeba8b166d3adaaa73cc3b5293a9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70855204"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664581"
 ---
 # \<filterTables>
+
 Representa uma seção de configuração para definir tabelas de roteamento que contêm mapeamentos entre os filtros de roteamento e os pontos de extremidade de destino para enviar mensagens quando o filtro for correspondente.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -17,7 +19,7 @@ Representa uma seção de configuração para definir tabelas de roteamento que 
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<routing>**](routing.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<filterTables>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <routing>
@@ -35,9 +37,11 @@ Representa uma seção de configuração para definir tabelas de roteamento que 
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
+
  Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  

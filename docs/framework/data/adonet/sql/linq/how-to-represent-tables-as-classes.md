@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: como representar tabelas como classes'
 title: 'Como: declarar tabelas como classes'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 84dda12b-88a2-4cd2-92b3-8db87b28d14c
-ms.openlocfilehash: 1169def4e0180b1d14103d4a968ff3ed56f63d0c
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 9ec5b7309d7d10eaa6e4da6cd6fe4b1d03df1dd9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70781763"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723576"
 ---
 # <a name="how-to-represent-tables-as-classes"></a>Como: declarar tabelas como classes
+
 Use o [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] <xref:System.Data.Linq.Mapping.TableAttribute> atributo para designar uma classe como uma classe de entidade associada a uma tabela de banco de dados.  
   
 ### <a name="to-map-a-class-to-a-database-table"></a>Para mapear uma classe a uma tabela de base de dados  
@@ -20,6 +22,7 @@ Use o [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] <xref:
 - Adicione o atributo de <xref:System.Data.Linq.Mapping.TableAttribute> à declaração de classe.  
   
 ## <a name="example"></a>Exemplo  
+
  O código a seguir estabelece a classe de `Customer` como uma classe de entidade que está associada com a tabela de base de dados de `Customers` .  
   
  [!code-csharp[DLinqCustomize#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqCustomize/cs/Program.cs#1)]
@@ -29,5 +32,5 @@ Use o [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] <xref:
   
 ## <a name="see-also"></a>Consulte também
 
-- [O modelo de objeto LINQ to SQL](the-linq-to-sql-object-model.md)
-- [Como: Personalizar classes de entidade usando o editor de código](how-to-customize-entity-classes-by-using-the-code-editor.md)
+- [Modelo de objeto LINQ to SQL](the-linq-to-sql-object-model.md)
+- [Como: personalizar classes de entidade usando o editor de códigos](how-to-customize-entity-classes-by-using-the-code-editor.md)

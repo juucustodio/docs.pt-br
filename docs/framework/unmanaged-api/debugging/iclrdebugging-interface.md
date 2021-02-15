@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICLRDebugging'
 title: Interface ICLRDebugging
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 429d8fce-b1b1-49d7-895c-28c1c1aa2dbd
 topic_type:
 - apiref
-ms.openlocfilehash: a3d4297e3b16dd1637e6293dbf7f04d4fbeda50f
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: 647b6f7634ef3b9f6ec6080aaff19476c027952a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860388"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723329"
 ---
 # <a name="iclrdebugging-interface"></a>Interface ICLRDebugging
+
 Fornece métodos que manipulam os módulos de carregamento e descarregamento para depuração.  
   
 ## <a name="methods"></a>Métodos  
@@ -32,9 +34,11 @@ Fornece métodos que manipulam os módulos de carregamento e descarregamento par
 |[Método CanUnloadNow](iclrdebugging-canunloadnow-method.md)|Determina se uma biblioteca fornecida por uma interface [ICLRDebuggingLibraryProvider](iclrdebugginglibraryprovider-interface.md) ainda está em uso ou pode ser descarregada.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Você pode obter uma instância da `ICLRDebugging` interface usando a função [CLRCreateInstance](../hosting/clrcreateinstance-function.md) .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -43,7 +47,7 @@ Fornece métodos que manipulam os módulos de carregamento e descarregamento par
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Depuração](index.md)

@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: NamedPipeConnectionPoolSettings'
 title: NamedPipeConnectionPoolSettings
 ms.date: 03/30/2017
 ms.assetid: 079bccb8-54b5-4436-a43d-5567763f72ce
-ms.openlocfilehash: 8c2d4bfc08a503a8d6eb0e8abf6f1e798b90bc83
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 8d724c7a24f62a8d48797125528eb8a194ece660
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61963209"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803107"
 ---
 # <a name="namedpipeconnectionpoolsettings"></a>NamedPipeConnectionPoolSettings
+
 NamedPipeConnectionPoolSettings  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class NamedPipeConnectionPoolSettings  
@@ -24,26 +26,31 @@ class NamedPipeConnectionPoolSettings
 ```  
   
 ## <a name="methods"></a>Métodos  
- A classe NamedPipeConnectionPoolSettings não define quaisquer métodos.  
+
+ A classe NamedPipeConnectionPoolSettings não define nenhum método.  
   
 ## <a name="properties"></a>Propriedades  
+
  A classe NamedPipeConnectionPoolSettings tem as seguintes propriedades:  
   
 ### <a name="groupname"></a>GroupName  
+
  Tipo de dados: cadeia de caracteres  
   
  Tipo de acesso: Somente leitura  
   
- O nome de grupo do pool de conexão usado pelo elemento de associação.  
+ O nome do grupo do pool de conexão usado pelo elemento de associação.  
   
 ### <a name="idletimeout"></a>IdleTimeout  
- Tipo de dados: datetime  
+
+ Tipo de dados: DateTime  
   
  Tipo de acesso: Somente leitura  
   
  O tempo máximo que a conexão pode ficar ociosa antes de ser desconectada.  
   
 ### <a name="maxoutboundconnectionsperendpoint"></a>MaxOutboundConnectionsPerEndpoint  
+
  Tipo de dados: sint32  
   
  Tipo de acesso: Somente leitura  
@@ -52,10 +59,10 @@ class NamedPipeConnectionPoolSettings
   
 ## <a name="requirements"></a>Requisitos  
   
-|MOF|Declarado em Servicemodel.mof.|  
+|MOF|Declarado em ServiceModel. mof.|  
 |---------|-----------------------------------|  
-|Namespace|Definido no root\ServiceModel|  
+|Namespace|Definido em root\ServiceModel|  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.ServiceModel.Channels.NamedPipeConnectionPoolSettings>

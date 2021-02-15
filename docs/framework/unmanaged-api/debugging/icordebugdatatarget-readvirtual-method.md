@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugDataTarget:: ReadVirtual'
 title: Método ICorDebugDataTarget::ReadVirtual
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 55e57640-b3d2-413d-b4f4-fbc27fb8e37c
 topic_type:
 - apiref
-ms.openlocfilehash: 36a18d92f05db55957bba55de84490c0da1a1f86
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: 4525ba1e5dc685813d963dab96879b886987f38f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976506"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710589"
 ---
 # <a name="icordebugdatatargetreadvirtual-method"></a>Método ICorDebugDataTarget::ReadVirtual
+
 Obtém um bloco de memória contígua a partir do endereço especificado e a retorna no buffer fornecido.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,6 +39,7 @@ HRESULT ReadVirtual(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `address`  
  no O endereço inicial da memória solicitada.  
   
@@ -47,12 +50,14 @@ HRESULT ReadVirtual(
  no O número de bytes a serem obtidos do endereço de destino.  
   
  `pBytesRead`  
- fora O número de bytes realmente lidos do endereço de destino. Isso pode ser menor que `bytesRequested`.  
+ fora O número de bytes realmente lidos do endereço de destino. Isso pode ser menor que `bytesRequested` .  
   
 ## <a name="remarks"></a>Comentários  
+
  Se o primeiro byte (no endereço inicial especificado) puder ser lido, a chamada deverá retornar êxito (para dar suporte à leitura eficiente de estruturas de dados com comprimento autodescritivo, como cadeias de caracteres terminadas em nulo).  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

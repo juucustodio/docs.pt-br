@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: APIs que dependem de reflexão'
 title: APIs que dependem de reflexão
 ms.date: 03/30/2017
 ms.assetid: f9532629-6594-4a41-909f-d083f30a42f3
-ms.openlocfilehash: 1d8daceb6b744b984f86b011ad7952d0da583a79
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: a5661719e47a0a9ecb9f0fe9d188b8a67d1068eb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79181086"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738735"
 ---
 # <a name="apis-that-rely-on-reflection"></a>APIs que dependem de reflexão
+
 Em alguns casos, o uso de reflexão no código não é óbvio e, portanto, a cadeia de ferramentas de .NET Native não preserva os metadados necessários no tempo de execução. Este tópico abrange algumas APIs ou padrões de programação comuns que não são consideradas como parte da API de reflexão, mas que dependem de reflexão para serem executados com êxito. Se você usá-los no código-fonte, poderá adicionar informações sobre eles no arquivo de diretivas de runtime (.rd.xml), de modo que as chamadas a essas APIs não gerem uma exceção [MissingMetadataException](missingmetadataexception-class-net-native.md) ou outras exceções em runtime.  
   
 ## <a name="typemakegenerictype-method"></a>Método Type.MakeGenericType  
+
  Você pode instanciar dinamicamente um tipo genérico `AppClass<T>` chamando o método <xref:System.Type.MakeGenericType%2A?displayProperty=nameWithType> usando um código da seguinte forma:  
   
  [!code-csharp[ProjectN#1](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn/cs/type_makegenerictype1.cs#1)]  
@@ -41,6 +44,7 @@ Esta operação não pode ser executada porque os metadados para o seguinte tipo
  Cada instanciação diferente em `AppClass<T>` exigirá uma diretiva separada se estiver sendo criada com o método <xref:System.Type.MakeGenericType%2A?displayProperty=nameWithType> e não for usada estaticamente.  
   
 ## <a name="methodinfomakegenericmethod-method"></a>Método MethodInfo.MakeGenericMethod  
+
  Dada a classe `Class1` com um método genérico `GetMethod<T>(T t)`, `GetMethod` pode ser invocado por meio de reflexão usando um código da seguinte forma:  
   
  [!code-csharp[ProjectN#2](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn/cs/makegenericmethod1.cs#2)]  
@@ -68,6 +72,7 @@ Esta operação não pode ser executada porque os metadados para o seguinte tipo
  A diretiva `MethodInstantiation` é necessária para cada instanciação diferente do método é invocada dinamicamente, e o elemento `Arguments` é atualizado para refletir cada argumento de instanciação diferente.  
   
 ## <a name="arraycreateinstance-and-typemaketypearray-methods"></a>Métodos Array.CreateInstance e Type.MakeTypeArray  
+
  A exemplo a seguir chama os métodos <xref:System.Type.MakeArrayType%2A?displayProperty=nameWithType> e <xref:System.Array.CreateInstance%2A?displayProperty=nameWithType> em um tipo `Class1`.  
   
  [!code-csharp[ProjectN#3](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn/cs/array1.cs#3)]  
@@ -88,7 +93,7 @@ Unfortunately, no further information is available.
 <Type Name="App1.Class1[]" Browse="Required Public" />  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Introdução](getting-started-with-net-native.md)
 - [Referência do arquivo de configuração de diretivas do runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)

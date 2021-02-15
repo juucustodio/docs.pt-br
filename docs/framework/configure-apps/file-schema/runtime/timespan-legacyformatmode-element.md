@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <TimeSpan_LegacyFormatMode elemento>'
 title: Elemento <TimeSpan_LegacyFormatMode>
 ms.date: 03/30/2017
 dev_langs:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <TimeSpan_LegacyFormatMode> element
 - TimeSpan_LegacyFormatMode element
 ms.assetid: 865e7207-d050-4442-b574-57ea29d5e2d6
-ms.openlocfilehash: 9d9eedf52f5d711412e4549e39e6ea23abb68ff3
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 1fa5c3a15941004ebab9e3622d4b3e7b27130e22
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73968900"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802379"
 ---
 # <a name="timespan_legacyformatmode-element"></a>Elemento \<TimeSpan_LegacyFormatMode>
 
@@ -23,7 +24,7 @@ Determina se o tempo de execução preserva o comportamento herdado nas operaç�
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<TimeSpan_LegacyFormatMode>**  
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <TimeSpan_LegacyFormatMode
@@ -96,7 +97,7 @@ No entanto, se você adicionar o seguinte arquivo de configuração ao diretóri
 </configuration>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações do runtime](index.md)
 - [Esquema do arquivo de configuração](../index.md)

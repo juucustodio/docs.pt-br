@@ -1,21 +1,21 @@
 ---
 title: Comando dotnet tool update
-description: O comando dotnet ferramenta de atualização atualiza a ferramenta .NET Core especificada em seu computador.
+description: O comando dotnet ferramenta de atualização atualiza a ferramenta .NET especificada em seu computador.
 ms.date: 07/08/2020
-ms.openlocfilehash: a212fbb40af68019c1bc9a63963d960292be6b08
-ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
+ms.openlocfilehash: 18b153e53a6dbcb32e50ae4a7d06a1c2f53d1eb5
+ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86308865"
+ms.lasthandoff: 11/15/2020
+ms.locfileid: "94634071"
 ---
 # <a name="dotnet-tool-update"></a>dotnet tool update
 
 **Este artigo aplica-se a:** ✔️ SDK do .net Core 2,1 e versões posteriores
 
-## <a name="name"></a>Nome
+## <a name="name"></a>Name
 
-`dotnet tool update`-Atualiza a [ferramenta .NET Core](global-tools.md) especificada em seu computador.
+`dotnet tool update` -Atualiza a [ferramenta .net](global-tools.md) especificada em seu computador.
 
 ## <a name="synopsis"></a>Sinopse
 
@@ -42,9 +42,9 @@ dotnet tool update <PACKAGE_ID> --local
 dotnet tool update -h|--help
 ```
 
-## <a name="description"></a>Descrição
+## <a name="description"></a>Description
 
-O `dotnet tool update` comando fornece uma maneira de atualizar as ferramentas do .NET Core em seu computador para a versão estável mais recente do pacote. O comando desinstala e reinstala uma ferramenta, atualizando-a efetivamente. Para usar o comando, especifique uma das seguintes opções:
+O `dotnet tool update` comando fornece uma maneira de atualizar as ferramentas do .net em seu computador para a versão estável mais recente do pacote. O comando desinstala e reinstala uma ferramenta, atualizando-a efetivamente. Para usar o comando, especifique uma das seguintes opções:
 
 * Para atualizar uma ferramenta global que foi instalada no local padrão, use a `--global` opção
 * Para atualizar uma ferramenta global que foi instalada em um local personalizado, use a `--tool-path` opção.
@@ -56,7 +56,7 @@ O `dotnet tool update` comando fornece uma maneira de atualizar as ferramentas d
 
 - **`PACKAGE_ID`**
 
-  Nome/ID do pacote NuGet que contém a ferramenta global .NET Core a ser atualizada. Encontre o nome do pacote usando o comando [dotnet tool list](dotnet-tool-list.md).
+  Nome/ID do pacote NuGet que contém a ferramenta global .NET a ser atualizada. Encontre o nome do pacote usando o comando [dotnet tool list](dotnet-tool-list.md).
 
 ## <a name="options"></a>Opções
 
@@ -66,7 +66,7 @@ O `dotnet tool update` comando fornece uma maneira de atualizar as ferramentas d
 
 - **`--configfile <FILE>`**
 
-  O arquivo de configuração do NuGet (*nuget.config*) a ser usado.
+  O arquivo de configuração do NuGet ( *nuget.config* ) a ser usado.
 
 - **`--disable-parallel`**
 
@@ -142,9 +142,9 @@ O `dotnet tool update` comando fornece uma maneira de atualizar as ferramentas d
 
   Atualiza a ferramenta global [dotnetsay](https://www.nuget.org/packages/dotnetsay/) para a versão mais baixa dentro do intervalo especificado `(> 2.0.0 && < 2.1.4)` , a versão `2.1.0` deve ser instalada. Para obter mais informações sobre intervalos de controle de versão semântico, consulte [intervalos de versão de empacotamento NuGet](/nuget/concepts/package-versioning#version-ranges).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Ferramentas do .NET Core](global-tools.md)
+- [Ferramentas .NET](global-tools.md)
 - [Controle de versão semântico](https://semver.org)
-- [Tutorial: instalar e usar uma ferramenta global do .NET Core usando o CLI do .NET Core](global-tools-how-to-use.md)
-- [Tutorial: instalar e usar uma ferramenta local do .NET Core usando o CLI do .NET Core](local-tools-how-to-use.md)
+- [Tutorial: instalar e usar uma ferramenta global do .NET usando a CLI do .NET](global-tools-how-to-use.md)
+- [Tutorial: instalar e usar uma ferramenta local do .NET usando a CLI do .NET](local-tools-how-to-use.md)

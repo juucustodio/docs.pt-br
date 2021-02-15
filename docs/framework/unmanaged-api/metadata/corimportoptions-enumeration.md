@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorImportOptions'
 title: Enumeração CorImportOptions
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4e5d03cb-97c9-4ff4-8dbd-17d94ee374d3
 topic_type:
 - apiref
-ms.openlocfilehash: 3be8a004be752af8a8675a3499bdb6cbfd785840
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: b942ed3f5b1b3c400b4f901e3dd3c4364e1d588c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84009191"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784438"
 ---
 # <a name="corimportoptions-enumeration"></a>Enumeração CorImportOptions
+
 Contém valores de sinalizador que controlam o comportamento durante a importação de um assembly fora do escopo atual.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -44,7 +46,7 @@ typedef enum CorImportOptions {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`MDImportOptionDefault`|Indica o comportamento padrão, que é para ignorar os registros excluídos.|  
 |`MDImportOptionAll`|Indica que todos os metadados devem ser enumerados.|  
@@ -57,12 +59,13 @@ typedef enum CorImportOptions {
 |`MDImportOptionAllExportedTypes`|Indica que todos os tipos exportados, incluindo aqueles excluídos, devem ser enumerados.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorHdr. h  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumerações de metadados](metadata-enumerations.md)

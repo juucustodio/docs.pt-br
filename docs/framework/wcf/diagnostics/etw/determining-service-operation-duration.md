@@ -1,20 +1,22 @@
 ---
+description: 'Saiba mais sobre: determinando a duração da operação de serviço'
 title: Determinando a duração da operação de serviço
 ms.date: 03/30/2017
 ms.assetid: e8a93a2c-2c20-48b3-8986-57e90e9aa908
-ms.openlocfilehash: 06a4c2da7b702fa4fbc1469576c118b790803339
-ms.sourcegitcommit: 9c3a4f2d3babca8919a1e490a159c1500ba7a844
+ms.openlocfilehash: e9dd9ee4113ee4b4521afb6dfaf6a913e72ea5d0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72291427"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798804"
 ---
 # <a name="determining-service-operation-duration"></a>Determinando a duração da operação de serviço
+
 Se o rastreamento analítico estiver habilitado em um aplicativo Windows Communication Foundation (WCF), a duração da execução de uma operação de serviço poderá ser facilmente determinada ao examinar o log de eventos.  Este tópico demonstra como determinar a quantidade de tempo que uma operação de serviço leva para ser concluída.  
   
 ### <a name="determining-service-operation-execution-duration"></a>Determinando a duração da execução da operação de serviço  
   
-1. Abra Visualizador de Eventos clicando em **Iniciar**, **executar**e inserindo `eventvwr.exe`.  
+1. Abra Visualizador de Eventos clicando em **Iniciar**, **executar** e inserindo `eventvwr.exe` .  
   
 2. Se você não tiver habilitado o rastreamento analítico, expanda **logs de aplicativos e serviços**, **Microsoft**, **Windows**, **servidor de aplicativos-aplicativos**. Selecione **Exibir**, **Mostrar logs analíticos e de depuração**. Clique com o botão direito do mouse em **analítica** e selecione **habilitar log**. Deixe Visualizador de Eventos aberto para que os rastreamentos possam ser exibidos depois que a operação de serviço for executada.  
   

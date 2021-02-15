@@ -11,12 +11,12 @@ helpviewer_keywords:
 - reflection,partial trust
 - link demands
 ms.assetid: 42d9dc2a-8fcc-4ff3-b002-4ff260ef3dc5
-ms.openlocfilehash: 0465cbd5ceb7d4f44bb6d10865fcbd17b8ed7af6
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: 9ef2ac4897b3f8c48a0b0f402ab06eb073a5c1fa
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86865249"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556330"
 ---
 # <a name="security-considerations-for-reflection"></a>Considerações sobre segurança relacionadas à reflexão
 
@@ -60,7 +60,7 @@ Essas regras são as mesmas se um membro crítico para segurança for acessado d
 
 Código de aplicativo que é executado da linha de comando é executado com confiança total. Desde que não esteja marcado como transparente, ele pode usar reflexão para acessar membros críticos para segurança. Quando o mesmo código é executado com confiança parcial (por exemplo, em um domínio do aplicativo em área restrita), o nível de confiança do assembly determina se ele pode acessar o código crítico para segurança: se o assembly tiver um nome forte e estiver instalado no cache de assembly global, ele é um assembly confiável e pode chamar membros crítico de segurança. Se não for confiável, ele se tornará transparente mesmo se não for marcado como transparente e não poderá acessar membros críticos para segurança.
 
-Para obter mais informações sobre o modelo de segurança no .NET Framework 4, consulte [Alterações de Segurança](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes).
+Para obter mais informações sobre o modelo de segurança no .NET Framework 4, consulte [Alterações de Segurança](/previous-versions/dotnet/framework/security/security-changes).
 
 ## <a name="reflection-and-transparency"></a>Reflexão e transparência
 
@@ -111,12 +111,12 @@ Evite escrever membros públicos que utilizam parâmetros <xref:System.Reflectio
 
 - A partir do .NET Framework 2.0, usar reflexão para obter informações sobre tipos e membros não públicos não requer permissões. Em versões anteriores, o <xref:System.Security.Permissions.ReflectionPermission> com o sinalizador <xref:System.Security.Permissions.ReflectionPermissionFlag.TypeInformation?displayProperty=nameWithType> é obrigatório.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.Security.Permissions.ReflectionPermissionFlag>
 - <xref:System.Security.Permissions.ReflectionPermission>
 - <xref:System.Security.Permissions.SecurityPermission>
-- [Alterações de segurança](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes)
+- [Alterações de segurança](/previous-versions/dotnet/framework/security/security-changes)
 - [Segurança de acesso do código](../misc/code-access-security.md)
 - [Problemas de segurança na emissão de reflexão](security-issues-in-reflection-emit.md)
 - [Exibindo informações de tipo](viewing-type-information.md)

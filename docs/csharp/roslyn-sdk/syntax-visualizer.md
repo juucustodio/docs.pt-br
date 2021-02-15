@@ -3,12 +3,12 @@ title: Explorar código com o visualizador de sintaxe Roslyn no Visual Studio
 description: O visualizador de sintaxe fornece uma ferramenta visual para explorar os modelos que o SDK do .NET Compiler Platform gera para o código.
 ms.date: 03/07/2018
 ms.custom: mvc, vs-dotnet
-ms.openlocfilehash: c7a34fda909bd044a9e65a8353d5626b533730e3
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: a911a99e78ad5a5f4c6771b91a3c541b1812d67c
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82975921"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91167568"
 ---
 # <a name="explore-code-with-the-roslyn-syntax-visualizer-in-visual-studio"></a>Explorar código com o visualizador de sintaxe Roslyn no Visual Studio
 
@@ -20,7 +20,7 @@ Familiarize-se com os conceitos usados no SDK do.NET Compiler Platform lendo o a
 
 ## <a name="syntax-visualizer"></a>Visualizador de sintaxe
 
-O **Syntax Visualizer** habilita a inspeção da árvore de sintaxe para o arquivo de código C# ou Visual Basic na janela atual do editor ativo dentro do IDE do Visual Studio. O Visualizador pode ser iniciado clicando em **Exibir** > **outras** > **Syntax Visualizer**do Windows.  Você também pode usar a barra de ferramentas de **Início Rápido** no canto superior direito. Digite "sintaxe" e o comando para abrir o **Visualizador de sintaxe** deverá aparecer.
+O **Syntax Visualizer** habilita a inspeção da árvore de sintaxe para o arquivo de código C# ou Visual Basic na janela atual do editor ativo dentro do IDE do Visual Studio. O Visualizador pode ser iniciado clicando em **Exibir**  >  **outras**  >  **Syntax Visualizer**do Windows.  Você também pode usar a barra de ferramentas de **Início Rápido** no canto superior direito. Digite "sintaxe" e o comando para abrir o **Visualizador de sintaxe** deverá aparecer.
 
 Este comando abre o Visualizador de sintaxe como uma janela de ferramentas flutuante. Se você não tiver uma janela de editor de código aberta, a exibição ficará em branco, conforme mostrado na figura a seguir.
 
@@ -28,14 +28,16 @@ Este comando abre o Visualizador de sintaxe como uma janela de ferramentas flutu
 
 Encaixe esta janela de ferramentas em um local conveniente dentro do Visual Studio, como o lado esquerdo. O Visualizador mostra informações sobre o arquivo de código atual.
 
-Crie um novo projeto usando o comando **File** > **New Project** . Você pode criar um projeto Visual Basic ou C#. Quando o Visual Studio abre o arquivo de código principal deste projeto, o visualizador exibe a árvore de sintaxe dele. Você pode abrir qualquer arquivo C#/Visual Basic existente nessa instância do Visual Studio e o visualizador exibe a árvore de sintaxe do arquivo. Se você tiver vários arquivos de código abertos no Visual Studio, o visualizador exibirá a árvore de sintaxe do arquivo de código atualmente ativo, (o arquivo de código que tem o foco do teclado).
+Crie um novo projeto usando o comando **File**  >  **New Project** . Você pode criar um projeto Visual Basic ou C#. Quando o Visual Studio abre o arquivo de código principal deste projeto, o visualizador exibe a árvore de sintaxe dele. Você pode abrir qualquer arquivo C#/Visual Basic existente nessa instância do Visual Studio e o visualizador exibe a árvore de sintaxe do arquivo. Se você tiver vários arquivos de código abertos no Visual Studio, o visualizador exibirá a árvore de sintaxe do arquivo de código atualmente ativo, (o arquivo de código que tem o foco do teclado).
 
 <!-- markdownlint-disable MD025 -->
 
 # <a name="c"></a>[C#](#tab/csharp)
+
 ![Visualizando uma árvore de sintaxe de C#](media/syntax-visualizer/visualize-csharp.png)
 
 # <a name="visual-basic"></a>[Visual Basic](#tab/vb)
+
 ![Visualizando uma árvore de sintaxe de Visual Basic](media/syntax-visualizer/visualize-visual-basic.png)
 
 ---

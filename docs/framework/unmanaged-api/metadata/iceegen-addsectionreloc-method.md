@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICeeGen:: AddSectionReloc'
 title: Método ICeeGen::AddSectionReloc
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: b500a260-1d57-4953-95e1-c27063f7c8da
 topic_type:
 - apiref
-ms.openlocfilehash: 2f66d34fcfdd8c61dcc92817ec1a928ac5b603fc
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 715c506f0bdcb3fcef33b3e9165d1f9ae47c6073
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008892"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707170"
 ---
 # <a name="iceegenaddsectionreloc-method"></a>Método ICeeGen::AddSectionReloc
+
 Adiciona uma instrução. realocação à base de código.  
   
  Este método é obsoleto e não deve ser usado.  
@@ -39,6 +41,7 @@ HRESULT AddSectionReloc (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `section`  
  no A seção de código na memória à qual adicionar uma instrução. realocação.  
   
@@ -52,14 +55,15 @@ HRESULT AddSectionReloc (
  no Um dos valores de [CeeSectionRelocType](ceesectionreloctype-enumeration.md) , indicando o tipo de instrução. realocação a ser adicionado.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICeeGen](iceegen-interface.md)

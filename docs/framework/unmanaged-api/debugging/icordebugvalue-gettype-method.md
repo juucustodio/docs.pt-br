@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugValue:: GetType'
 title: Método ICorDebugValue::GetType
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 41e2d503-e1f1-407b-abe0-6a29adb3e0d1
 topic_type:
 - apiref
-ms.openlocfilehash: a3cd62384ad87d072cd715d23d0e9ee9dac23270
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: 750e73634683a03e811d2756cc62c16b6dcea3de
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396736"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99690318"
 ---
 # <a name="icordebugvaluegettype-method"></a>Método ICorDebugValue::GetType
+
 Obtém o tipo primitivo desse objeto "ICorDebugValue".  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,15 +36,18 @@ HRESULT GetType (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pType`  
  fora Um ponteiro para um valor da enumeração "CorElementType" que indica o tipo do valor.  
   
 ## <a name="remarks"></a>Comentários  
+
  Se o objeto for um tipo de tempo de execução complexo, esse tipo poderá ser examinado por meio das subclasses apropriadas da `ICorDebugValue` interface. Por exemplo, "ICorDebugObjectValue", que herda de `ICorDebugValue` , representa um tipo complexo.  
   
  Os `GetType` métodos e [ICorDebugObjectValue:: GetClass](icordebugobjectvalue-getclass-method.md) retornam informações sobre o tipo de um valor. Eles são ambos substituídos pelo método [ICorDebugValue2:: Getexatotype](icordebugvalue2-getexacttype-method.md) com reconhecimento de genéricos.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

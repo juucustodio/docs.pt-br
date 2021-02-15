@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport:: GetSigFromToken'
 title: Método IMetaDataImport::GetSigFromToken
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: ab894dc4-f7b6-4afc-bfcb-582a4b7e53a2
 topic_type:
 - apiref
-ms.openlocfilehash: d795f90c458b7fcf1a191b2763ac5f5bb55fb438
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 16b77fe5866319e24b33ec4ce9d2d56797f04514
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84490881"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789132"
 ---
 # <a name="imetadataimportgetsigfromtoken-method"></a>Método IMetaDataImport::GetSigFromToken
+
 Obtém a assinatura de metadados binários associada ao token especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT GetSigFromToken (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `mdSig`  
  no O token para o qual retornar a assinatura de metadados binários.  
   
@@ -46,15 +49,16 @@ HRESULT GetSigFromToken (
  fora O tamanho em bytes da assinatura de metadados binários.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Incluído como um recurso em MsCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport](imetadataimport-interface.md)
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)

@@ -1,28 +1,28 @@
 ---
+description: 'Saiba mais sobre: Salvando e restaurando fusos horários'
 title: Salvar e restaurar fusos horários
 ms.date: 04/10/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - restoring time zones
-- deserialization [.NET Framework], time zones
-- serialization [.NET Framework], time zones
-- time zone objects [.NET Framework], restoring
+- deserialization [.NET], time zones
+- serialization [.NET], time zones
+- time zone objects [.NET], restoring
 - saving time zones
-- time zone objects [.NET Framework], deserializing
-- time zones [.NET Framework], saving
-- time zones [.NET Framework], restoring
-- time zone objects [.NET Framework], serializing
-- time zone objects [.NET Framework], saving
+- time zone objects [.NET], deserializing
+- time zones [.NET], saving
+- time zones [.NET], restoring
+- time zone objects [.NET], serializing
+- time zone objects [.NET], saving
 ms.assetid: 4028b310-e7ce-49d4-a646-1e83bfaf6f9d
-ms.openlocfilehash: 8da26988d2e141ac704f0d3756cd8a50602cb3fd
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: bd888c2d9a1f02fa05fd1abf9d984022be03e192
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84281044"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702438"
 ---
 # <a name="saving-and-restoring-time-zones"></a>Salvar e restaurar fusos horários
 
@@ -72,6 +72,6 @@ O armazenamento de uma cadeia de caracteres de fuso horário serializada dessa m
 
 Para obter um exemplo que usa um recurso incorporado para armazenar dados de fuso horário serializados, consulte [como: salvar fusos horários em um recurso incorporado](save-time-zones-to-an-embedded-resource.md) e [como restaurar fusos horários de um recurso inserido](restore-time-zones-from-an-embedded-resource.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Datas, horas e fusos horários](index.md)

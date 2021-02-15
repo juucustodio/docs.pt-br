@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: referência de API de reflexão de .NET Native'
 title: Referência da API de reflexão nativa do .NET
 ms.date: 03/30/2017
 ms.assetid: 0429c049-22a3-4ba1-9cc8-f6ee91e31d9c
-ms.openlocfilehash: 01678ea6230a53416f213730ae6bb66e6bc057f8
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 44786812b5bf8c7bd470a588730b7b03ee91f00c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73128225"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738514"
 ---
 # <a name="net-native-reflection-api-reference"></a>Referência da API de reflexão nativa do .NET
+
 .NET Native inclui três novos tipos de exceção: [System. Runtime. compiladorservices. MissingInteropDataException](missinginteropdataexception-class-net-native.md), [System. Reflection. MissingMetadataException](missingmetadataexception-class-net-native.md)e [System. Reflection. MissingRuntimeArtifactException](missingruntimeartifactexception-class-net-native.md). Observe o seguinte sobre todos os três tipos de exceção:  
   
  Esses tipos destinam-se somente a uso interno.  
@@ -26,9 +28,10 @@ ms.locfileid: "73128225"
 > Esta referência documenta três tipos de exceção que são exclusivos para .NET Native. Para obter a documentação de referência para a API de reflexão de núcleo .NET Framework, consulte os <xref:System.Reflection> <xref:System.Reflection.Context> <xref:System.Reflection.Emit> namespaces e. Para ver a documentação de referência da API de interoperabilidade principal do .NET Framework, consulte <xref:System.Runtime.InteropServices>.  
   
 ## <a name="systemreflection-namespace"></a>Namespace System.Reflection  
+
  O namespace <xref:System.Reflection> contém os tipos principais usados para reflexão do .NET Framework. Por .NET Native, ele também inclui dois novos tipos de exceção:  
   
-|Classe|Descrição|  
+|Class|Descrição|  
 |-----------|-----------------|  
 |[MissingMetadataException](missingmetadataexception-class-net-native.md)|A exceção que é acionada quando reflexão é usada para recuperar metadados não presentes.|  
 |[MissingRuntimeArtifactException](missingruntimeartifactexception-class-net-native.md)|A exceção que é acionada quando metadados de um tipo ou um membro de tipo estão disponíveis, mas sua implementação foi removida.|  
@@ -36,15 +39,16 @@ ms.locfileid: "73128225"
  Para ver documentação sobre outros tipos neste namespace, consulte as páginas de referência <xref:System.Reflection> no conjunto de documentação do .NET Framework.  
   
 ## <a name="systemruntimecompilerservices-namespace"></a>Namespace System.Runtime.CompilerServices  
+
  O namespace <xref:System.Runtime.CompilerServices> inclui tipos desenvolvidos para o usuário por compiladores de linguagem. Por .NET Native, ele também inclui um novo tipo de exceção:  
   
-|Classe|Descrição|  
+|Class|Descrição|  
 |-----------|-----------------|  
 |[MissingInteropDataException](missinginteropdataexception-class-net-native.md)|A exceção que é acionada quando um método de marshaling manual é chamado, mas os metadados de um tipo não são encontrados por análise estática ou em um arquivo de diretivas de runtime.|  
   
  Para ver documentação sobre outros tipos neste namespace, consulte as páginas de referência <xref:System.Runtime.CompilerServices> no conjunto de documentação do .NET Framework.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Classe MissingInteropDataException](missinginteropdataexception-class-net-native.md)
 - [Classe MissingMetadataException](missingmetadataexception-class-net-native.md)

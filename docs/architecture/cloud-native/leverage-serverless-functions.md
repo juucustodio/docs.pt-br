@@ -2,12 +2,12 @@
 title: Como aproveitar funções sem servidor
 description: Aproveitamento e Azure Functions sem servidor em aplicativos nativos de nuvem
 ms.date: 05/13/2020
-ms.openlocfilehash: 53a0fdd29630b2a4368f3aa37ddfc5f93df10a24
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 8e5c60d29cd8d635f79f42c232b33f060949e2b5
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83613857"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91155361"
 ---
 # <a name="leveraging-serverless-functions"></a>Como aproveitar funções sem servidor
 
@@ -40,7 +40,7 @@ Os microserviços normalmente são construídos para responder a solicitações,
 
 Serverless expõe funções de curta execução individuais que são invocadas em resposta a um gatilho. Isso os torna ideais para o processamento de tarefas em segundo plano.
 
-Um aplicativo pode precisar enviar um email como uma etapa em um fluxo de trabalho. Em vez de enviar a notificação como parte de uma solicitação de microatendimento, coloque os detalhes da mensagem em uma fila. Uma função do Azure pode remover a mensagem da fila e enviar o email de forma assíncrona. Isso pode melhorar o desempenho e a escalabilidade do microserviço. O [nivelamento de carga baseado em fila](https://docs.microsoft.com/azure/architecture/patterns/queue-based-load-leveling) pode ser implementado para evitar gargalos relacionados ao envio dos emails. Além disso, esse serviço autônomo pode ser reutilizado como um utilitário em vários aplicativos diferentes.
+Um aplicativo pode precisar enviar um email como uma etapa em um fluxo de trabalho. Em vez de enviar a notificação como parte de uma solicitação de microatendimento, coloque os detalhes da mensagem em uma fila. Uma função do Azure pode remover a mensagem da fila e enviar o email de forma assíncrona. Isso pode melhorar o desempenho e a escalabilidade do microserviço. O [nivelamento de carga baseado em fila](/azure/architecture/patterns/queue-based-load-leveling) pode ser implementado para evitar gargalos relacionados ao envio dos emails. Além disso, esse serviço autônomo pode ser reutilizado como um utilitário em vários aplicativos diferentes.
 
 Mensagens assíncronas de filas e tópicos é um padrão comum para disparar funções sem servidor. No entanto, Azure Functions pode ser disparado por outros eventos, como alterações no armazenamento de BLOBs do Azure. Um serviço que dá suporte a carregamentos de imagem pode ter uma função do Azure responsável por otimizar o tamanho da imagem. A função pode ser disparada diretamente por inserções no armazenamento de BLOBs do Azure, mantendo a complexidade das operações de microserviço.
 
@@ -55,9 +55,9 @@ A Figura 3-10 mostra um padrão de inicialização a frio. Observe as etapas adi
 ![Inativo versus a figura de início quente ](./media/cold-start-warm-start.png)
  **3-10**. Início frio versus início quente.
 
-Para evitar que o frio seja totalmente iniciado, você pode mudar de um [plano de consumo para um plano dedicado](https://azure.microsoft.com/blog/understanding-serverless-cold-start/). Você também pode configurar uma ou mais [instâncias pré-configuradas](https://docs.microsoft.com/azure/azure-functions/functions-premium-plan#pre-warmed-instances) com a atualização do plano Premium. Nesses casos, quando você precisa adicionar outra instância, ela já está ativa e pronta para uso. Essas opções podem ajudar a mitigar o problema de inicialização a frio associado à computação sem servidor.
+Para evitar que o frio seja totalmente iniciado, você pode mudar de um [plano de consumo para um plano dedicado](https://azure.microsoft.com/blog/understanding-serverless-cold-start/). Você também pode configurar uma ou mais [instâncias pré-configuradas](/azure/azure-functions/functions-premium-plan#pre-warmed-instances) com a atualização do plano Premium. Nesses casos, quando você precisa adicionar outra instância, ela já está ativa e pronta para uso. Essas opções podem ajudar a mitigar o problema de inicialização a frio associado à computação sem servidor.
 
-Os provedores de nuvem cobram por servidor com base no tempo de execução de computação e na memória consumida. Operações de longa execução ou cargas de trabalho de alto consumo de memória nem sempre são os melhores candidatos para servidor. As funções sem servidor favorecem pequenas partes de trabalho que podem ser concluídas rapidamente. A maioria das plataformas sem servidor exige que as funções individuais sejam concluídas em alguns minutos. Azure Functions usa como padrão uma duração de tempo limite de 5 minutos, que pode ser configurada até 10 minutos. O plano do Azure Functions Premium também pode mitigar esse problema, padronizando os tempos limite para 30 minutos com um limite superior não associado que pode ser configurado. O tempo de computação não é o horário do calendário. Funções mais avançadas usando a [estrutura de durable Functions do Azure](https://docs.microsoft.com/azure/azure-functions/durable/durable-functions-overview?tabs=csharp) podem pausar a execução por um curso de vários dias. A cobrança é baseada no tempo de execução real – quando a função é ativada e retoma o processamento.
+Os provedores de nuvem cobram por servidor com base no tempo de execução de computação e na memória consumida. Operações de longa execução ou cargas de trabalho de alto consumo de memória nem sempre são os melhores candidatos para servidor. As funções sem servidor favorecem pequenas partes de trabalho que podem ser concluídas rapidamente. A maioria das plataformas sem servidor exige que as funções individuais sejam concluídas em alguns minutos. Azure Functions usa como padrão uma duração de tempo limite de 5 minutos, que pode ser configurada até 10 minutos. O plano do Azure Functions Premium também pode mitigar esse problema, padronizando os tempos limite para 30 minutos com um limite superior não associado que pode ser configurado. O tempo de computação não é o horário do calendário. Funções mais avançadas usando a [estrutura de durable Functions do Azure](/azure/azure-functions/durable/durable-functions-overview?tabs=csharp) podem pausar a execução por um curso de vários dias. A cobrança é baseada no tempo de execução real – quando a função é ativada e retoma o processamento.
 
 Por fim, aproveitar Azure Functions para tarefas de aplicativo adiciona complexidade. É prudente primeiro arquitetar seu aplicativo com um design modular e menos rígido. Em seguida, identifique se há benefícios sem servidor que justifiquem a complexidade adicional.
 

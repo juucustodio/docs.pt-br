@@ -1,28 +1,35 @@
 ---
+description: 'Saiba mais sobre: considerações de segurança para dados'
 title: Considerações de segurança para dados
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: a7eb98da-4a93-4692-8b59-9d670c79ffb2
-ms.openlocfilehash: 8b54aea1409f2b4c0a3d39d215922ba62c2a3563
-ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
+ms.openlocfilehash: 6e0bf681ad8dd141ad030ef850c3e50c1d6e65c8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88656964"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632614"
 ---
 # <a name="security-considerations-for-data"></a>Considerações de segurança para dados
 
-Ao lidar com dados no Windows Communication Foundation (WCF), você deve considerar várias categorias de ameaça. A tabela a seguir lista as classes de ameaça mais importantes relacionadas ao processamento de dados. O WCF fornece ferramentas para atenuar essas ameaças.
+Ao lidar com dados no Windows Communication Foundation (WCF), você deve considerar várias categorias de ameaça. A lista a seguir mostra as classes de ameaça mais importantes relacionadas ao processamento de dados. O WCF fornece ferramentas para atenuar essas ameaças.
 
-Negação de serviço ao receber dados não confiáveis, os dados podem fazer com que o lado de recebimento acesse uma quantidade desproporcional de vários recursos, como memória, threads, conexões disponíveis ou ciclos de processador, causando cálculos longos. Um ataque de negação de serviço contra um servidor pode causar uma falha e não pode processar mensagens de outros clientes legítimos.
+* Negação de serviço
 
-A execução de código mal-intencionado dados não confiáveis recebidos faz com que o lado de recebimento execute o código que não pretendia.
+  Ao receber dados não confiáveis, os dados podem fazer com que o lado de recebimento acesse uma quantidade desproporcional de vários recursos, como memória, threads, conexões disponíveis ou ciclos de processador, causando cálculos longos. Um ataque de negação de serviço contra um servidor pode causar uma falha e não pode processar mensagens de outros clientes legítimos.
 
-Divulgação de informações o invasor remoto força a parte destinatária a responder às suas solicitações de forma a divulgar mais informações do que pretender.
+* Execução de código mal-intencionado
 
-## <a name="user-provided-code-and-code-access-security"></a>Código fornecido pelo usuário e segurança de acesso do código
+  Os dados não confiáveis de entrada fazem com que o lado de recebimento execute o código que não pretendia.
+
+* Divulgação de informações confidenciais
+
+  O invasor remoto força a parte destinatária a responder às suas solicitações de forma a divulgar mais informações do que pretender.
+
+## <a name="user-provided-code-and-code-access-security"></a>Código de User-Provided e segurança de acesso de código
 
 Vários locais na infraestrutura de Windows Communication Foundation (WCF) executam o código que é fornecido pelo usuário. Por exemplo, o <xref:System.Runtime.Serialization.DataContractSerializer> mecanismo de serialização pode chamar acessadores `set` e acessadores de propriedade fornecidos pelo usuário `get` . A infraestrutura de canal do WCF também pode chamar classes derivadas fornecidas pelo usuário da <xref:System.ServiceModel.Channels.Message> classe.
 
@@ -88,7 +95,7 @@ O WCF realiza isso passando o `MaxBufferSize` valor para os vários componentes 
 
 O codificador de mensagem MTOM também tem uma `MaxBufferSize` configuração. Ao usar associações padrão, isso é definido automaticamente para o valor de nível de transporte `MaxBufferSize` . No entanto, ao usar o elemento de associação de codificador de mensagem MTOM para construir uma associação personalizada, é importante definir a `MaxBufferSize` propriedade como um valor seguro quando o streaming é usado.
 
-## <a name="xml-based-streaming-attacks"></a>Ataques de streaming baseados em XML
+## <a name="xml-based-streaming-attacks"></a>XML-Based ataques de streaming
 
 `MaxBufferSize` sozinho não é suficiente para garantir que o WCF não possa ser forçado a armazenar em buffer quando o streaming é esperado. Por exemplo, os leitores XML do WCF sempre armazenam em buffer toda a marca de início do elemento XML ao começar a ler um novo elemento. Isso é feito para que os namespaces e atributos sejam processados corretamente. Se `MaxReceivedMessageSize` o estiver configurado para ser grande (por exemplo, para habilitar um cenário de streaming de arquivo grande de direto para disco), uma mensagem mal-intencionada poderá ser construída onde todo o corpo da mensagem for uma marca de início de elemento XML grande. Uma tentativa de ler os resultados resulta em um <xref:System.OutOfMemoryException> . Esse é um dos muitos ataques possíveis de negação de serviço baseados em XML que podem ser atenuados usando cotas de leitor XML, abordadas na seção "usando o XML com segurança" posteriormente neste tópico. Ao transmitir, é especialmente importante definir todas essas cotas.
 
@@ -155,7 +162,7 @@ Essa cota limita a profundidade máxima de aninhamento dos elementos XML. Por ex
 
 #### <a name="maxnametablecharcount"></a>MaxNameTableCharCount
 
-Essa cota limita o tamanho do *NameTable*do leitor. O nametable contém algumas cadeias de caracteres (como namespaces e prefixos) que são encontrados ao processar um documento XML. Como essas cadeias de caracteres são armazenadas em buffer na memória, defina essa cota para evitar o buffer excessivo quando o streaming for esperado.
+Essa cota limita o tamanho do *NameTable* do leitor. O nametable contém algumas cadeias de caracteres (como namespaces e prefixos) que são encontrados ao processar um documento XML. Como essas cadeias de caracteres são armazenadas em buffer na memória, defina essa cota para evitar o buffer excessivo quando o streaming for esperado.
 
 #### <a name="maxstringcontentlength"></a>MaxStringContentLength
 
@@ -292,7 +299,7 @@ Em geral, se você permitir o acesso de código parcialmente confiável à `NetD
 
 Outra preocupação com a segurança com o `NetDataContractSerializer` é uma negação de serviço, não uma ameaça de execução de código mal-intencionado. Ao usar o `NetDataContractSerializer` , sempre defina a <xref:System.Runtime.Serialization.NetDataContractSerializer.MaxItemsInObjectGraph%2A> cota como um valor seguro. É fácil construir uma pequena mensagem mal-intencionada que aloca uma matriz de objetos cujo tamanho é limitado apenas por essa cota.
 
-### <a name="xmlserializer-specific-threats"></a>Ameaças específicas ao XmlSerializer
+### <a name="xmlserializer-specific-threats"></a>Ameaças de XmlSerializer-Specific
 
 O <xref:System.Xml.Serialization.XmlSerializer> modelo de segurança é semelhante ao do <xref:System.Runtime.Serialization.DataContractSerializer> . No entanto, algumas ameaças são exclusivas do <xref:System.Xml.Serialization.XmlSerializer> .
 

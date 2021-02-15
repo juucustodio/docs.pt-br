@@ -7,14 +7,15 @@ helpviewer_keywords:
 - CorFlags.exe
 - portable executable files, CorFlags section
 ms.assetid: ef900f8f-71ca-4dde-9b8c-95ddb0d7d89c
-ms.openlocfilehash: da5efadd63cc03f6f6e4eecf3115865ca3643b39
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 3f9f2a71a7a33de13264ce60fa7ff6ea5832aace
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87167220"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96247181"
 ---
 # <a name="corflagsexe-corflags-conversion-tool"></a>CorFlags.exe (Ferramenta de Conversão de CorFlags)
+
 A ferramenta Conversão CorFlags permite configurar a seção CorFlags do cabeçalho de uma imagem PE (Portable Executable).  
   
  Essa ferramenta é instalada automaticamente com o Visual Studio. Para executar a ferramenta, use o Prompt de Comando do Desenvolvedor para Visual Studio (ou o Prompt de Comando do Visual Studio no Windows 7). Para obter mais informações, consulte [Prompts de Comando](developer-command-prompt-for-vs.md).  
@@ -27,13 +28,13 @@ A ferramenta Conversão CorFlags permite configurar a seção CorFlags do cabeç
 CorFlags.exe assembly [options]  
 ```  
   
-## <a name="parameters"></a>parâmetros  
+## <a name="parameters"></a>Parâmetros  
   
-|Parâmetro obrigatório|DESCRIÇÃO|  
+|Parâmetro obrigatório|Descrição|  
 |------------------------|-----------------|  
 |`assembly`|O nome do assembly para o qual configurar o CorFlags.|  
   
-|Opção|DESCRIÇÃO|  
+|Opção|Descrição|  
 |:------------|-----------------|  
 |`-32BIT[REQ]+`|Define o sinalizador 32BITREQUIRED.|  
 |`-32BIT[REQ]-`|Limpa o sinalizador 32BITREQUIRED.|  
@@ -49,9 +50,10 @@ CorFlags.exe assembly [options]
 |`-UpgradeCLRHeader`|Atualiza a versão do cabeçalho do CLR para 2.5. **Observação:** os assemblies devem ter uma versão do cabeçalho do CLR 2.5 ou posterior para serem executados nativamente.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Se nenhuma opção estiver especificada, a ferramenta Conversão CorFlags exibirá os sinalizadores para o assembly especificado.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Ferramentas](index.md)
 - [Aplicativos de 64 bits](../64-bit-apps.md)

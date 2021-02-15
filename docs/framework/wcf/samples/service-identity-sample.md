@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: exemplo de identidade de serviço'
 title: Exemplo de identidade de serviço
 ms.date: 03/30/2017
 ms.assetid: 79fa8c1c-85bb-4b67-bc67-bfaf721303f8
-ms.openlocfilehash: e4b5e739db04fbb3270c9870468433aec7787061
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 5fa3dc9454d816655d3d3f2af165df19e1c65e15
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599900"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703517"
 ---
 # <a name="service-identity-sample"></a>Exemplo de identidade de serviço
+
 Este exemplo de identidade de serviço demonstra como definir a identidade de um serviço. Em tempo de design, um cliente pode recuperar a identidade usando os metadados do serviço e, em seguida, em tempo de execução, o cliente pode autenticar a identidade do serviço. O conceito de identidade de serviço é permitir que um cliente autentique um serviço antes de chamar qualquer uma de suas operações, protegendo assim o cliente contra chamadas não autenticadas. Em uma conexão segura, o serviço também autentica as credenciais de um cliente antes de permitir o acesso, mas esse não é o foco deste exemplo. Consulte os exemplos no [cliente](client.md) que mostram a autenticação do servidor.
 
 > [!NOTE]
@@ -38,7 +40,7 @@ EndpointAddress epa = new EndpointAddress(dnsrelativeAddress,EndpointIdentity.Cr
 ep.Address = epa;
 ```
 
- A identidade também pode ser especificada na configuração no arquivo app. config. O exemplo a seguir mostra como definir a identidade UPN (nome principal do usuário) para um ponto de extremidade de serviço.
+ A identidade também pode ser especificada na configuração no arquivo de App.config. O exemplo a seguir mostra como definir a identidade UPN (nome principal do usuário) para um ponto de extremidade de serviço.
 
 ```xml
 <endpoint address="upnidentity"
@@ -115,18 +117,18 @@ class CustomIdentityVerifier : IdentityVerifier
 
 ### <a name="to-run-the-sample-on-the-same-computer"></a>Para executar o exemplo no mesmo computador
 
-1. No Windows XP ou no Windows Vista, importe o arquivo de certificado Identity. pfx na pasta de solução de identidade para o repositório de certificados LocalMachine/My (pessoal) usando a ferramenta snap-in do MMC. Esse arquivo é protegido por senha. Durante a importação, você será solicitado a fornecer uma senha. Digite `xyz` na caixa senha. Para obter mais informações, consulte o tópico [How to: View Certificates with the MMC Snap-in](../feature-details/how-to-view-certificates-with-the-mmc-snap-in.md) . Quando isso for feito, execute Setup. bat em um Prompt de Comando do Desenvolvedor para o Visual Studio com privilégios de administrador, que copia esse certificado para o repositório de pessoas CurrentUser/confiáveis para uso no cliente.
+1. No Windows XP ou no Windows Vista, importe o arquivo de certificado Identity. pfx na pasta de solução de identidade para o repositório de certificados LocalMachine/My (pessoal) usando a ferramenta snap-in do MMC. Esse arquivo é protegido por senha. Durante a importação, você será solicitado a fornecer uma senha. Digite `xyz` na caixa senha. Para obter mais informações, consulte o tópico [How to: View Certificates with the MMC Snap-in](../feature-details/how-to-view-certificates-with-the-mmc-snap-in.md) . Quando isso for feito, execute Setup.bat em um Prompt de Comando do Desenvolvedor para o Visual Studio com privilégios de administrador, que copia esse certificado para o repositório de pessoas CurrentUser/confiável para uso no cliente.
 
-2. No Windows Server 2003, execute Setup. bat na pasta de instalação de exemplo dentro de um prompt de comando do Visual Studio 2012 com privilégios de administrador. Isso instala todos os certificados necessários para executar o exemplo.
+2. No Windows Server 2003, execute Setup.bat na pasta de instalação de exemplo dentro de um prompt de comando do Visual Studio 2012 com privilégios de administrador. Isso instala todos os certificados necessários para executar o exemplo.
 
     > [!NOTE]
-    > O arquivo em lotes setup. bat foi projetado para ser executado em um prompt de comando do Visual Studio 2012. A variável de ambiente PATH definida no prompt de comando do Visual Studio 2012 aponta para o diretório que contém os executáveis exigidos pelo script setup. bat. Certifique-se de remover os certificados executando Cleanup. bat quando tiver concluído o exemplo. Outros exemplos de segurança usam os mesmos certificados.  
+    > O arquivo em lotes Setup.bat foi projetado para ser executado em um prompt de comando do Visual Studio 2012. A variável de ambiente PATH definida no prompt de comando do Visual Studio 2012 aponta para o diretório que contém os executáveis exigidos pelo script Setup.bat. Certifique-se de remover os certificados executando Cleanup.bat quando tiver concluído o exemplo. Outros exemplos de segurança usam os mesmos certificados.  
   
-3. Inicie o Service. exe no diretório \service\bin Verifique se o serviço indica que ele está pronto e exibe um prompt para pressionar \<Enter> para encerrar o serviço.  
+3. Inicie o Service.exe no diretório \service\bin Verifique se o serviço indica que ele está pronto e exibe um prompt para pressionar \<Enter> para encerrar o serviço.  
   
-4. Inicie o Client. exe no diretório \client\bin ou pressione F5 no Visual Studio para compilar e executar. A atividade do cliente é exibida no aplicativo de console do cliente.  
+4. Inicie Client.exe no diretório \client\bin ou pressione F5 no Visual Studio para compilar e executar. A atividade do cliente é exibida no aplicativo de console do cliente.  
   
-5. Se o cliente e o serviço não puderem se comunicar, consulte [dicas de solução de problemas para exemplos do WCF](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+5. Se o cliente e o serviço não puderem se comunicar, consulte [dicas de solução de problemas para exemplos do WCF](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 ### <a name="to-run-the-sample-across-computers"></a>Para executar o exemplo entre computadores  
   
@@ -134,27 +136,27 @@ class CustomIdentityVerifier : IdentityVerifier
   
 2. Crie um diretório no computador de serviço.  
   
-3. Copie os arquivos de programa do serviço de Service \Bin para o diretório no computador do serviço. Copie também os arquivos Setup. bat e Cleanup. bat para o computador de serviço.  
+3. Copie os arquivos de programa do serviço de Service \Bin para o diretório no computador do serviço. Copie também os arquivos de Setup.bat e Cleanup.bat para o computador de serviço.  
   
 4. Crie um diretório no computador cliente para os binários do cliente.  
   
-5. Copie os arquivos de programa do cliente para o diretório cliente no computador cliente. Copie também os arquivos Setup. bat, Cleanup. bat e ImportServiceCert. bat para o cliente.  
+5. Copie os arquivos de programa do cliente para o diretório cliente no computador cliente. Copie também os arquivos Setup.bat, Cleanup.bat e ImportServiceCert.bat para o cliente.  
   
 6. No serviço, execute `setup.bat service` em um prompt de comando do desenvolvedor para Visual Studio aberto com privilégios de administrador. `setup.bat`A execução com o `service` argumento cria um certificado de serviço com o nome de domínio totalmente qualificado do computador e exporta o certificado de serviço para um arquivo chamado Service. cer.  
   
 7. Copie o arquivo Service. cer do diretório de serviço para o diretório cliente no computador cliente.  
   
-8. No arquivo client. exe. config no computador cliente, altere o valor de endereço do ponto de extremidade para corresponder ao novo endereço do serviço. Há várias instâncias que devem ser alteradas.  
+8. No arquivo de Client.exe.config no computador cliente, altere o valor de endereço do ponto de extremidade para corresponder ao novo endereço do serviço. Há várias instâncias que devem ser alteradas.  
   
-9. No cliente, execute ImportServiceCert. bat em um Prompt de Comando do Desenvolvedor para Visual Studio aberto com privilégios de administrador. Isso importa o certificado de serviço do arquivo Service. cer para o repositório CurrentUser-TrustedPeople.  
+9. No cliente, execute ImportServiceCert.bat em um Prompt de Comando do Desenvolvedor para o Visual Studio aberto com privilégios de administrador. Isso importa o certificado de serviço do arquivo Service. cer para o repositório CurrentUser-TrustedPeople.  
   
-10. No computador do serviço, inicie o Service. exe no prompt de comando.  
+10. No computador do serviço, inicie o Service.exe no prompt de comando.  
   
-11. No computador cliente, inicie o Client. exe em um prompt de comando. Se o cliente e o serviço não puderem se comunicar, consulte [dicas de solução de problemas para exemplos do WCF](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+11. No computador cliente, inicie o Client.exe em um prompt de comando. Se o cliente e o serviço não puderem se comunicar, consulte [dicas de solução de problemas para exemplos do WCF](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 ### <a name="to-clean-up-after-the-sample"></a>Para limpar após o exemplo  
   
-- Execute o Cleanup. bat na pasta Samples depois de concluir a execução do exemplo.  
+- Execute Cleanup.bat na pasta Samples depois de concluir a execução do exemplo.  
   
     > [!NOTE]
     > Esse script não remove certificados de serviço em um cliente ao executar esse exemplo em computadores. Se você tiver executado Windows Communication Foundation (WCF) exemplos que usam certificados entre computadores, certifique-se de limpar os certificados de serviço que foram instalados no repositório CurrentUser-TrustedPeople. Para fazer isso, use o seguinte comando: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` por exemplo: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com` .

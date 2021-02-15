@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método EmbedResource'
 title: Método EmbedResource
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 667bd954-6dc6-4020-a3cb-0e8224179993
 topic_type:
 - apiref
-ms.openlocfilehash: 24279870e7406de649df56e8aad31252513e95c7
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: f7896172e7416048352788caf7e092096924b7af
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446544"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638347"
 ---
 # <a name="embedresource-method"></a>Método EmbedResource
+
 Declara um recurso inserido. Esse método não insere o recurso de fato.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -38,6 +40,7 @@ HRESULT EmbedResource(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `AssemblyID`  
  ID do assembly.  
   
@@ -51,12 +54,14 @@ HRESULT EmbedResource(
  Deslocamento do recurso de RVA.  
   
  `dwFlags`  
- Sinalizadores de acessibilidade, como `mrPublic` e `mrPrivate`. Esses sinalizadores podem ser passados para o [método DefineExportedType](../metadata/imetadataassemblyemit-defineexportedtype-method.md).  
+ Sinalizadores de acessibilidade, como `mrPublic` e `mrPrivate` . Esses sinalizadores podem ser passados para o [método DefineExportedType](../metadata/imetadataassemblyemit-defineexportedtype-method.md).  
   
 ## <a name="return-value"></a>Valor retornado  
+
  Retorna S_OK se o método tiver sucesso.  
   
-## <a name="requirements"></a>{1&gt;{2&gt;Requisitos&lt;2}&lt;1}  
+## <a name="requirements"></a>Requisitos  
+
  Requer ALink. h.  
   
 ## <a name="see-also"></a>Consulte também

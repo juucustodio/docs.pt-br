@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugAssembly:: GetProcess'
 title: Método ICorDebugAssembly::GetProcess
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: ea52be06-0a16-4f57-afca-4287d72e76c4
 topic_type:
 - apiref
-ms.openlocfilehash: c9cb599dd27a809ed5245c9570cddb8110be8172
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: b121d7f892f6e2e2aa76290d4aee51767c72e9fc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82894923"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754141"
 ---
 # <a name="icordebugassemblygetprocess-method"></a>Método ICorDebugAssembly::GetProcess
+
 Obtém um ponteiro de interface para o processo no qual essa instância de ICorDebugAssembly está em execução.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,10 +36,12 @@ HRESULT GetProcess (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ppProcess`  
  fora Um ponteiro para uma interface ICorDebugProcess que representa o processo.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

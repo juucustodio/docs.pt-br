@@ -6,20 +6,23 @@ helpviewer_keywords:
 - C# language, strings
 - strings [C#]
 ms.assetid: 21580405-cb25-4541-89d5-037846a38b07
-ms.openlocfilehash: 8e833bdeefcce2f12c839738b43778df8e54fa5b
-ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
+ms.openlocfilehash: ba2bd6c90fa28624d52e7ef2e341b43da7ea19a2
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87381600"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91176208"
 ---
 # <a name="strings-c-programming-guide"></a>Cadeias de caracteres (Guia de Programação em C#)
+
 Uma cadeia de caracteres é um objeto do tipo <xref:System.String> cujo valor é texto. Internamente, o texto é armazenado como uma coleção sequencial somente leitura de objetos <xref:System.Char>. Não há um caractere de finalização null ao fim de uma cadeia em C#. Portanto, uma cadeia de caracteres em C# pode ter qualquer número de caracteres nulos inseridos ('\0'). A propriedade `Char` de uma cadeia de caracteres representa o número de objetos <xref:System.String.Length%2A> que ela contém e não o número de caracteres Unicode. Para acessar os pontos de código Unicode individuais em uma cadeia de caracteres, use o objeto <xref:System.Globalization.StringInfo>.  
   
 ## <a name="string-vs-systemstring"></a>String versus System. String  
+
  Em C#, a palavra-chave `string` é um alias para <xref:System.String>. Portanto, `String` e `string` são equivalentes, e você pode usar a convenção de nomenclatura que preferir. A classe `String` fornece vários métodos para criar, manipular e comparar cadeias de caracteres com segurança. Além disso, a linguagem C# sobrecarrega alguns operadores para simplificar operações comuns de cadeia de caracteres. Para saber mais sobre a palavra-chave, confira [cadeia de caracteres](../../language-reference/builtin-types/reference-types.md). Para obter mais informações sobre o tipo e seus métodos, consulte <xref:System.String>.  
   
 ## <a name="declaring-and-initializing-strings"></a>Declaração e inicialização de cadeias de caracteres  
+
  Você pode declarar e inicializar cadeias de caracteres de várias maneiras, conforme mostrado no seguinte exemplo:  
   
  [!code-csharp[csProgGuideStrings#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#1)]  
@@ -29,6 +32,7 @@ Uma cadeia de caracteres é um objeto do tipo <xref:System.String> cujo valor é
  Inicialize uma cadeia de caracteres com o valor constante <xref:System.String.Empty> para criar um novo objeto <xref:System.String> cuja cadeia de caracteres tem comprimento zero. A representação de cadeia de caracteres literal de uma cadeia de caracteres de comprimento zero é "". Ao inicializar cadeias de caracteres com o valor <xref:System.String.Empty> em vez de [nulo](../../language-reference/keywords/null.md), você poderá reduzir as chances de uma <xref:System.NullReferenceException> ocorrer. Use o método estático <xref:System.String.IsNullOrEmpty%28System.String%29> para verificar o valor de uma cadeia de caracteres antes de tentar acessá-la.  
   
 ## <a name="immutability-of-string-objects"></a>Imutabilidade de objetos de cadeia de caracteres  
+
  Objetos de cadeia de caracteres são *imutáveis*: não pode ser alterados após serem criados. Todos os métodos <xref:System.String> e operadores C# que aparecem para modificar uma cadeia de caracteres retornam, na verdade, os resultados em um novo objeto de cadeia de caracteres. No exemplo a seguir, quando o conteúdo de `s1` e `s2` é concatenado para formar uma única cadeia de caracteres, as duas cadeias de caracteres originais são modificadas. O operador `+=` cria uma nova cadeia de caracteres que tem o conteúdo combinado. Esse novo objeto é atribuído à variável `s1`, e o objeto original que foi atribuído a `s1` é liberado para coleta de lixo, pois nenhuma outra variável contém uma referência a ele.  
   
  [!code-csharp[csProgGuideStrings#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#2)]  
@@ -40,6 +44,7 @@ Uma cadeia de caracteres é um objeto do tipo <xref:System.String> cujo valor é
  Para obter mais informações sobre como criar novas cadeias de caracteres com base em modificações, como operações de pesquisa e substituição na cadeia original, consulte [como modificar o conteúdo da cadeia de caracteres](../../how-to/modify-string-contents.md).  
   
 ## <a name="regular-and-verbatim-string-literals"></a>Literais de cadeia de caracteres regulares e textuais  
+
  Use literais de cadeia de caracteres regulares quando você precisar inserir caracteres de escape fornecidos por C#, conforme mostrado no seguinte exemplo:  
   
  [!code-csharp[csProgGuideStrings#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#3)]  
@@ -63,9 +68,9 @@ Uma cadeia de caracteres é um objeto do tipo <xref:System.String> cujo valor é
 |\r|Retorno de carro|0x000D|  
 |\t|Guia horizontal|0x0009|  
 |\v|Guia vertical|0x000B|  
-|\u|Sequência de escape Unicode (UTF-16)|`\uHHHH`(intervalo: 0000-FFFF; exemplo: `\u00E7` = "ç")|  
-|\U|Sequência de escape Unicode (UTF-32)|`\U00HHHHHH`(intervalo: 000000-10FFFF; exemplo: `\U0001F47D` = "& # x1F47D;")|  
-|\x|Sequência de escape Unicode semelhante a "\u", exceto pelo comprimento variável|`\xH[H][H][H]`(intervalo: 0-FFFF; exemplo: `\x00E7` ou `\x0E7` `\xE7` = "ç")|  
+|\u|Sequência de escape Unicode (UTF-16)|`\uHHHH` (intervalo: 0000-FFFF; exemplo: `\u00E7` = "ç")|  
+|\U|Sequência de escape Unicode (UTF-32)|`\U00HHHHHH` (intervalo: 000000-10FFFF; exemplo: `\U0001F47D` = "& # x1F47D;")|  
+|\x|Sequência de escape Unicode semelhante a "\u", exceto pelo comprimento variável|`\xH[H][H][H]` (intervalo: 0-FFFF; exemplo: `\x00E7` ou `\x0E7` `\xE7` = "ç")|  
   
 > [!WARNING]
 > Ao usar a sequência de escape `\x` e especificar menos de quatro dígitos hexadecimais, se os caracteres que seguem imediatamente a sequência de escape são dígitos hexadecimais válidos (ou seja, 0 a 9, A-F e a-f), eles serão interpretados como sendo parte da sequência de escape. Por exemplo, `\xA1` produz "&#161;", que é o ponto de código U+00A1. No entanto, se o próximo caractere é "A" ou "a", então a sequência de escape será, em vez disso, interpretada como sendo `\xA1A` e produzirá "&#x0A1A;", que é o ponto de código U+0A1A. Nesses casos, especificar todos os quatro dígitos hexadecimais (por exemplo, `\x00A1`) impedirá qualquer interpretação errônea possível.  
@@ -74,9 +79,11 @@ Uma cadeia de caracteres é um objeto do tipo <xref:System.String> cujo valor é
 > Em tempo de compilação, cadeias de caracteres textuais são convertidas em cadeias de caracteres comuns com as mesmas sequências de escape. Portanto, se exibir uma cadeia de caracteres textual na janela de observação do depurador, você verá os caracteres de escape que foram adicionados pelo compilador, não a versão textual do código-fonte. Por exemplo, a cadeia de caracteres textual `@"C:\files.txt"` será exibida na janela de inspeção como "C:\\\files.txt".  
   
 ## <a name="format-strings"></a>Cadeias de caracteres de formato  
+
  Uma cadeia de caracteres de formato é aquela cujo conteúdo pode é determinado dinamicamente no runtime. Cadeias de caracteres de formato são criadas incorporando *expressões interpoladas* ou espaços reservados dentro de chaves dentro em uma cadeia de caracteres. Tudo dentro das chaves (`{...}`) será resolvido para um valor e uma saída como uma cadeia de caracteres formatada no runtime. Há dois métodos para criar cadeias de caracteres de formato: cadeia de caracteres de interpolação e formatação de composição.
 
 ### <a name="string-interpolation"></a>Interpolação de cadeia de caracteres
+
 Disponíveis no C# 6.0 e posterior, as [*cadeias de caracteres interpoladas*](../../language-reference/tokens/interpolated.md) são identificadas pelo caractere especial `$` e incluem expressões interpoladas entre chaves. Se você não estiver familiarizado com a interpolação de cadeia de caracteres, confira o tutorial [Interpolação de cadeia de caracteres – tutorial interativo do C#](../../tutorials/exploration/interpolated-strings.yml).
 
 Use a interpolação de cadeia de caracteres para melhorar a legibilidade e a facilidade de manutenção do seu código. A interpolação de cadeia de caracteres alcança os mesmos resultados que o método `String.Format`, mas aumenta a facilidade de uso e a clareza embutida.
@@ -84,6 +91,7 @@ Use a interpolação de cadeia de caracteres para melhorar a legibilidade e a fa
 [!code-csharp[csProgGuideFormatStrings](~/samples/snippets/csharp/programming-guide/strings/Strings_1.cs#StringInterpolation)]
 
 ### <a name="composite-formatting"></a>Formatação composta
+
 O <xref:System.String.Format%2A?displayProperty=nameWithType> utiliza os espaços reservados entre chaves para criar uma cadeia de caracteres de formato. Este exemplo resulta em uma saída semelhante para o método de interpolação de cadeia de caracteres usado acima.
   
 [!code-csharp[csProgGuideFormatStrings](~/samples/snippets/csharp/programming-guide/strings/Strings_1.cs#StringFormat)]
@@ -91,11 +99,13 @@ O <xref:System.String.Format%2A?displayProperty=nameWithType> utiliza os espaço
 Para mais informações sobre formatação de tipos .NET, confira [Tipos de formatação em .NET](../../../standard/base-types/formatting-types.md).
   
 ## <a name="substrings"></a>Subcadeias de caracteres  
+
  Uma subcadeia de caracteres é qualquer sequência de caracteres contida em uma cadeia de caracteres. Use o método <xref:System.String.Substring%2A> para criar uma nova cadeia de caracteres com base em uma parte da cadeia de caracteres original. Você pode pesquisar uma ou mais ocorrências de uma subcadeia de caracteres usando o método <xref:System.String.IndexOf%2A>. Use o método <xref:System.String.Replace%2A> para substituir todas as ocorrências de uma subcadeia de caracteres especificada por uma nova cadeia de caracteres. Como o método <xref:System.String.Substring%2A>, <xref:System.String.Replace%2A> retorna, na verdade, uma nova cadeia de caracteres e não a modifica a cadeia de caracteres original. Para obter mais informações, consulte [como Pesquisar cadeias](../../how-to/search-strings.md) de [caracteres e como modificar o conteúdo da cadeia](../../how-to/modify-string-contents.md).
   
  [!code-csharp[csProgGuideStrings#9](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#7)]  
   
 ## <a name="accessing-individual-characters"></a>Acesso a caracteres individuais  
+
  Você pode usar a notação de matriz com um valor de índice para adquirir acesso somente leitura a caracteres individuais, como no seguinte exemplo:  
   
  [!code-csharp[csProgGuideStrings#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#8)]  
@@ -105,6 +115,7 @@ Para mais informações sobre formatação de tipos .NET, confira [Tipos de form
  [!code-csharp[csProgGuideStrings#27](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#27)]  
   
 ## <a name="null-strings-and-empty-strings"></a>Cadeias de caracteres nulas e cadeias de caracteres vazias  
+
  Uma cadeia de caracteres vazia é uma instância de um objeto <xref:System.String?displayProperty=nameWithType> que contém zero caractere. As cadeias de caracteres vazias geralmente são usadas em vários cenários de programação para representar um campo de texto em branco. Você pode chamar métodos em cadeias de caracteres vazias porque eles são objetos <xref:System.String?displayProperty=nameWithType> válidos. As cadeias de caracteres vazias são inicializadas da seguinte maneira:  
   
 ```csharp  
@@ -116,6 +127,7 @@ string s = String.Empty;
  [!code-csharp[csProgGuideStrings#20](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#20)]  
   
 ## <a name="using-stringbuilder-for-fast-string-creation"></a>Uso do StringBuilder para a criação rápida de cadeias de caracteres  
+
  As operações de cadeia de caracteres no .NET são altamente otimizadas e, na maioria dos casos, não afetam o desempenho de forma significativa. No entanto, em alguns cenários, como loops rígidos que são executados centenas ou milhares de vezes, as operações de cadeia de caracteres podem afetar o desempenho. A classe <xref:System.Text.StringBuilder> cria um buffer de cadeia de caracteres que oferece desempenho melhor se o programa executa várias manipulações de cadeia de caracteres. A cadeia de caracteres <xref:System.Text.StringBuilder> também permite reatribuir caracteres individuais, o que o tipo de dados String interno não dá suporte. Esse código, por exemplo, altera o conteúdo de uma cadeia de caracteres sem criar uma nova cadeia de caracteres:  
   
  [!code-csharp[csProgGuideStrings#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#15)]  
@@ -125,9 +137,10 @@ string s = String.Empty;
  [!code-csharp[TestStringBuilder#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/TestStringBuilder.cs)]
   
 ## <a name="strings-extension-methods-and-linq"></a>Cadeias de caracteres, métodos de extensão e LINQ  
+
  Uma vez que o tipo <xref:System.String> implementa <xref:System.Collections.Generic.IEnumerable%601>, você pode usar os métodos de extensão definidos na classe <xref:System.Linq.Enumerable> em cadeias de caracteres. Para evitar a desordem visual, esses métodos são excluídos do IntelliSense para o tipo <xref:System.String>, mas estão disponíveis mesmo assim. Você também pode usar expressões de consulta LINQ em cadeias de caracteres. Para saber mais, confira [LINQ e cadeias de caracteres](../concepts/linq/linq-and-strings.md).  
   
-## <a name="related-topics"></a>Tópicos Relacionados  
+## <a name="related-topics"></a>Tópicos relacionados  
   
 |Tópico|Descrição|  
 |-----------|-----------------|  
@@ -141,7 +154,7 @@ string s = String.Empty;
 |[Operações básicas de cadeia de caracteres](../../../standard/base-types/basic-string-operations.md)|Fornece links para tópicos que usam os métodos <xref:System.String?displayProperty=nameWithType> e <xref:System.Text.StringBuilder?displayProperty=nameWithType> para executar operações básicas de cadeia de caracteres.|  
 |[Analisando cadeias de caracteres](../../../standard/base-types/parsing-strings.md)|Descreve como converter representações de cadeia de caracteres de tipos base do .NET em instâncias de tipos correspondentes.|  
 |[Analisando cadeias de caracteres de data e hora no .NET](../../../standard/base-types/parsing-datetime.md)|Mostra como converter uma cadeia de caracteres como "24/01/2008" em um objeto <xref:System.DateTime?displayProperty=nameWithType>.|  
-|[Comparando cadeias de caracteres](../../../standard/base-types/comparing.md)|Inclui informações sobre como comparar cadeias de caracteres e fornece exemplos em C# e Visual Basic.|  
+|[Comparação de cadeias de caracteres](../../../standard/base-types/comparing.md)|Inclui informações sobre como comparar cadeias de caracteres e fornece exemplos em C# e Visual Basic.|  
 |[Uso da classe StringBuilder](../../../standard/base-types/stringbuilder.md)|Descreve como criar e modificar objetos de cadeia de caracteres dinâmica usando a classe <xref:System.Text.StringBuilder>.|  
 |[LINQ e cadeias de caracteres](../concepts/linq/linq-and-strings.md)|Fornece informações sobre como executar várias operações de cadeia de caracteres usando consultas LINQ.|  
 |[Guia de programação C#](../index.md)|Fornece links para tópicos que explicam as construções de programação em C#.|  

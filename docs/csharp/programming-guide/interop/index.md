@@ -8,12 +8,12 @@ helpviewer_keywords:
 - platform invoke, accessing APIs with C#
 - C# language, interoperability
 ms.assetid: 238bb95a-e962-4026-bbd5-197055bdb8ee
-ms.openlocfilehash: d85eb51107d50e023270fcbe1ef6e08a7788ae78
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: 84cdc16ccda7a5c629a90b0752071a98de81a9b4
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87302965"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91178470"
 ---
 # <a name="interoperability-c-programming-guide"></a>Interoperabilidade (Guia de Programação em C#)
 
@@ -22,6 +22,7 @@ A interoperabilidade permite que você mantenha e aproveite os investimentos exi
 O .NET permite a interoperabilidade com código não gerenciado por meio de serviços de invocação de plataforma, o <xref:System.Runtime.InteropServices> namespace, interoperabilidade de C++ e interoperabilidade com (INTEROP com).  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Visão geral sobre interoperabilidade](./interoperability-overview.md)  
  Descreve métodos para fins de interoperabilidade entre código gerenciado em C# e código não gerenciado.  
   

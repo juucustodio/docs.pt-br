@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 34d1d971-5e18-4c22-9bf6-d3612e27ea59
-ms.openlocfilehash: 739cb6971209792724a2e939ca4f4821d5879c8c
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: f6e95ce58e055f0c745b781c664309e4ef91ffc6
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85247785"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554007"
 ---
 # <a name="create-the-data-service"></a>Criar o serviço de dados
 
@@ -53,7 +53,7 @@ Neste tópico, você cria um serviço de dados de exemplo que usa WCF Data Servi
 
 5. Conecte o modelo de dados ao banco de dado executando uma das etapas a seguir e clique em **Avançar**:
 
-    - Se você não tiver uma conexão de banco de dados já configurada, clique em **nova conexão** e crie uma nova conexão. Para obter mais informações, consulte [como: criar conexões para bancos de dados SQL Server](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)). Esta instância de SQL Server deve ter o banco de dados de exemplo Northwind anexado.
+    - Se você não tiver uma conexão de banco de dados já configurada, clique em **nova conexão** e crie uma nova conexão. Para obter mais informações, consulte [como: criar conexões para bancos de dados SQL Server](/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)). Esta instância de SQL Server deve ter o banco de dados de exemplo Northwind anexado.
 
          \- ou –
 
@@ -61,7 +61,7 @@ Neste tópico, você cria um serviço de dados de exemplo que usa WCF Data Servi
 
 6. Na página final do assistente, selecione as caixas de seleção para todas as tabelas no banco de dados e desmarque as caixas de seleção para exibições e procedimentos armazenados.
 
-7. Clique em **Concluir** para fechar o assistente.
+7. Clique em **concluir** para fechar o assistente.
 
 ## <a name="create-the-wcf-data-service"></a>Criar o WCF Data Service
 
@@ -102,6 +102,6 @@ Você criou com êxito um novo serviço de dados que expõe um feed OData basead
 > [!div class="nextstepaction"]
 > [Acessar o serviço de um navegador da Web](accessing-the-service-from-a-web-browser-wcf-data-services-quickstart.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Ferramentas de Modelo de Dados de Entidade de ADO.NET](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))
+- [Ferramentas de Modelo de Dados de Entidade de ADO.NET](/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))

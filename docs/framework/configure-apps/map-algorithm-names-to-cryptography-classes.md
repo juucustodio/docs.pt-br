@@ -8,14 +8,15 @@ helpviewer_keywords:
 - cryptographic algorithms
 - names [.NET Framework], algorithm mapping
 ms.assetid: 01327c69-c5e1-4ef6-b73f-0a58351f0492
-ms.openlocfilehash: 5a1d7acdd34182dd82f4dce66d136c4ef4de6e95
-ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
+ms.openlocfilehash: b67db612496e56a341dab2e5fc4b52c954ff02b4
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85105346"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91183384"
 ---
 # <a name="mapping-algorithm-names-to-cryptography-classes"></a>Mapeando nomes de algoritmo para classes de criptografia
+
 Há quatro maneiras pelas quais um desenvolvedor pode criar um objeto de criptografia usando o SDK do Windows:  
   
 - Crie um objeto usando o operador **New** .  
@@ -33,6 +34,7 @@ Há quatro maneiras pelas quais um desenvolvedor pode criar um objeto de criptog
  Se não importa qual algoritmo de hash é usado, o desenvolvedor pode chamar o <xref:System.Security.Cryptography.HashAlgorithm.Create%2A?displayProperty=nameWithType> método, que retorna um objeto que implementa uma transformação de hash.  
   
 ## <a name="mapping-algorithm-names-in-configuration-files"></a>Mapeando nomes de algoritmos em arquivos de configuração  
+
  Por padrão, o tempo de execução retorna um <xref:System.Security.Cryptography.SHA1CryptoServiceProvider> objeto para todos os quatro cenários. No entanto, um administrador de máquina pode alterar o tipo de objeto que os métodos nos dois últimos cenários retornam. Para fazer isso, você deve mapear um nome de algoritmo amigável para a classe que deseja usar no arquivo de configuração de computador (Machine.config).  
   
  O exemplo a seguir mostra como configurar o tempo de execução para que **System. Security. Cryptography. SHA1. Create**, **System. Security. CryptoConfig. CreateFromName ("SHA1")** e **System. Security. Cryptography. HashAlgorithm. Create** retorne um `MySHA1HashClass` objeto.  
@@ -70,5 +72,5 @@ Há quatro maneiras pelas quais um desenvolvedor pode criar um objeto de criptog
   
 ## <a name="see-also"></a>Veja também
 
-- [Serviços de Criptografia](../../standard/security/cryptographic-services.md)
+- [Serviços criptográficos](../../standard/security/cryptographic-services.md)
 - [Configurando classes de criptografia](configure-cryptography-classes.md)

@@ -4,12 +4,12 @@ description: Aprenda a usar a herança em bibliotecas e aplicativos em C#.
 ms.date: 07/05/2018
 ms.technology: csharp-fundamentals
 ms.assetid: aeb68c74-0ea0-406f-9fbe-2ce02d47ef31
-ms.openlocfilehash: 70db8716bea84984ad56d79fa9e26aab3a8182fa
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.openlocfilehash: b0d6a4a3db4d6606375cc3364ee7abc3029f1d9b
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88063504"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91190456"
 ---
 # <a name="inheritance-in-c-and-net"></a>Herança em C# e .NET
 
@@ -277,6 +277,7 @@ Agora você pode criar a instância de um objeto `Book`, invocar seus membros ex
 [!code-csharp[Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/use-publication.cs#1)]
 
 ## <a name="designing-abstract-base-classes-and-their-derived-classes"></a>Criando classes base abstratas e suas classes derivadas
+
 <a name="abstract"></a>
 
 No exemplo anterior, você definiu uma classe base que forneceu uma implementação de diversos métodos para permitir que classes derivadas compartilhem código. Em muitos casos, no entanto, não espera-se que a classe base forneça uma implementação. Nesse caso, a classe base é uma *classe abstrata* que declara *métodos abstratos*. Ela funciona como um modelo que define os membros que cada classe derivada precisa implementar. Normalmente em uma classe base abstrata, a implementação de cada tipo derivado é exclusiva para esse tipo. Você marcou a classe com a palavra-chave abstract porque não fazia sentido criar uma instância de um objeto `Publication`, embora a classe fornecesse implementações de funcionalidades comuns para publicações.
@@ -295,6 +296,6 @@ O exemplo a seguir usa objetos derivados de `Shape`. Ele cria uma matriz de obje
 
 [!code-csharp[Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/shape.cs#3)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Herança (Guia de Programação em C#)](../programming-guide/classes-and-structs/inheritance.md)

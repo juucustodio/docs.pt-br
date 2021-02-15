@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: como inserir expressões em literais XML (Visual Basic)'
 title: Como inserir expressões em literais XML
 ms.date: 07/20/2015
 helpviewer_keywords:
 - embedded expressions [Visual Basic]
 - XML literals [Visual Basic], embedded expressions
 ms.assetid: 75016fad-0141-42de-8564-5051be29487e
-ms.openlocfilehash: 59ba03be6e132203523427d3b7af5a163b6f05ac
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 18bc6164c4466532956f1a5df70c1ff2a8dbbfd5
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84392308"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100480044"
 ---
 # <a name="how-to-embed-expressions-in-xml-literals-visual-basic"></a>Como inserir expressões em literais XML (Visual Basic)
+
 Você pode combinar literais XML com expressões inseridas para criar um documento XML, fragmento ou elemento que contém o conteúdo criado em tempo de execução. Os exemplos a seguir demonstram como usar expressões inseridas para popular o conteúdo do elemento, os atributos e os nomes de elementos em tempo de execução.  
   
  A sintaxe de uma expressão inserida é `<%=` `exp` `%>` , que é a mesma sintaxe que o ASP.NET usa. Para obter mais informações, consulte [expressões inseridas em XML](embedded-expressions-in-xml.md).  
@@ -65,7 +67,7 @@ Você pode combinar literais XML com expressões inseridas para criar um documen
     </contact>  
     ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como criar literais XML](how-to-create-xml-literals.md)
 - [Expressões inseridas no XML](embedded-expressions-in-xml.md)

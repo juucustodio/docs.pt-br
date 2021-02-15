@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <webHttpEndpoint>'
 title: <webHttpEndpoint>
 ms.date: 03/30/2017
 ms.assetid: ecaaeb6f-ebd0-411d-8b53-92477cd45347
-ms.openlocfilehash: 8d4f55fd5b51ea77839b7fdbb930e937f5700417
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: d1bcda1fc97dece833c8163e5facbefe614af0ac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70854803"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682586"
 ---
 # \<webHttpEndpoint>
+
 Este elemento de configuração define um ponto de extremidade padrão com uma [\<webHttpBinding>](webhttpbinding.md) Associação fixa que adiciona automaticamente o [\<webHttp>](webhttp.md) comportamento. Use esse ponto de extremidade ao escrever um serviço REST.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -17,7 +19,7 @@ Este elemento de configuração define um ponto de extremidade padrão com uma [
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<standardEndpoints>**](standardendpoints.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<webHttpEndpoint>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.serviceModel>
@@ -33,6 +35,7 @@ Este elemento de configuração define um ponto de extremidade padrão com uma [
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -45,6 +48,7 @@ Este elemento de configuração define um ponto de extremidade padrão com uma [
 |WebEndpointType|Uma cadeia de caracteres que especifica o tipo do ponto de extremidade.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  

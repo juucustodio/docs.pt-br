@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como armazenar mais de um valor em uma variável (Visual Basic)'
 title: 'Como: Manter mais de um valor em uma variável'
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - arrays [Visual Basic], compilation errors
 - types [Visual Basic], composite
 ms.assetid: 5fe0e558-aac2-4a40-b7f2-7cfea7336917
-ms.openlocfilehash: 399c5909ee6988f96bcc85260b0401f3bd18a0f2
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 5248bc29f58cccf3b8ced95d3fba8f0d39033a83
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84393890"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100483996"
 ---
 # <a name="how-to-hold-more-than-one-value-in-a-variable-visual-basic"></a>Como manter mais de um valor em uma variável (Visual Basic)
 
@@ -42,12 +43,12 @@ Uma variável contém mais de um valor se você declará-lo para ser de um *tipo
 
 5. Siga a `As` palavra-chave com o nome do tipo de dados composto apropriado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Tipos de dados](../../../language-reference/data-types/index.md)
+- [Data Types](../../../language-reference/data-types/index.md)
 - [Caracteres de tipo](type-characters.md)
 - [Tipos de dados compostos](composite-data-types.md)
 - [Estruturas](structures.md)
-- [Matrizes](../arrays/index.md)
+- [matrizes](../arrays/index.md)
 - [Objetos e classes](../objects-and-classes/index.md)
-- [Tipos de valor e referência](value-types-and-reference-types.md)
+- [Tipos de valor e tipos de referência](value-types-and-reference-types.md)

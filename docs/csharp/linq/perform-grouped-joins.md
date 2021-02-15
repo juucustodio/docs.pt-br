@@ -3,12 +3,12 @@ title: Executar junções agrupadas (LINQ em C#)
 description: Saiba como executar junções agrupadas usando o LINQ em C#.
 ms.date: 04/22/2020
 ms.assetid: 9667daf9-a5fd-4b43-a5c4-a9c2b744000e
-ms.openlocfilehash: 740a861da7dfb9653a874d5baf67eeb2030555b4
-ms.sourcegitcommit: 8b02d42f93adda304246a47f49f6449fc74a3af4
+ms.openlocfilehash: 6411479c5fe6cb0ee79a0cd3df6de2f4d42c26a2
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82135744"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90542803"
 ---
 # <a name="perform-grouped-joins"></a>Executar junções agrupadas
 
@@ -20,7 +20,7 @@ Por exemplo, uma classe ou uma tabela de banco de dados relacional chamada `Stud
 > Cada elemento da primeira coleção aparece no conjunto de resultados de uma junção de grupo, independentemente de se os elementos correlacionados encontram-se na segunda coleção. Caso nenhum elemento correlacionado seja encontrado, a sequência de elementos correlacionados desse elemento ficará vazia. O seletor de resultado, portanto, tem acesso a todos os elementos da primeira coleção. Isso difere do seletor de resultado de uma junção que não é de grupo, que não pode acessar os elementos da primeira coleção que não têm correspondência na segunda coleção.
 
 > [!WARNING]
-> <xref:System.Linq.Enumerable.GroupJoin%2A?displayProperty=nameWithType>Não tem equivalente direto em termos de banco de dados relacional tradicionais. No entanto, esse método implementa um superconjunto de junções internas e junções externas à esquerda. Ambas as operações podem ser gravadas em termos de uma junção agrupada. Para obter mais informações, consulte [unir operações](../programming-guide/concepts/linq/join-operations.md) e [Entity Framework Core, GroupJoin](https://docs.microsoft.com/ef/core/querying/complex-query-operators#groupjoin).
+> <xref:System.Linq.Enumerable.GroupJoin%2A?displayProperty=nameWithType> Não tem equivalente direto em termos de banco de dados relacional tradicionais. No entanto, esse método implementa um superconjunto de junções internas e junções externas à esquerda. Ambas as operações podem ser gravadas em termos de uma junção agrupada. Para obter mais informações, consulte [unir operações](../programming-guide/concepts/linq/join-operations.md) e [Entity Framework Core, GroupJoin](/ef/core/querying/complex-query-operators#groupjoin).
 
 O primeiro exemplo neste artigo mostra como executar uma junção de grupo. O segundo exemplo mostra como usar uma junção de grupo para criar elementos XML.
 
@@ -36,7 +36,7 @@ As junções de grupo são ideais para a criação de XML usando o LINQ to XML. 
 
 [!code-csharp[CsLINQProgJoining#6](~/samples/snippets/csharp/concepts/linq/how-to-perform-grouped-joins_2.cs)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.Linq.Enumerable.Join%2A>
 - <xref:System.Linq.Enumerable.GroupJoin%2A>

@@ -3,14 +3,15 @@ title: Como consultar o conteúdo de arquivos de texto em uma pasta (LINQ) (C#)
 description: Saiba como usar o LINQ em C# para consultar todos os arquivos em uma árvore de diretório, abrir cada arquivo e inspecionar seu conteúdo.
 ms.date: 07/20/2015
 ms.assetid: f5b4dce7-1a34-4eb4-9bf1-60d5bdda264c
-ms.openlocfilehash: 216edc2ee6fc43fd06a3c89b1b6b73f693f752f8
-ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
+ms.openlocfilehash: a1f3e29751cd91ac1fd8e6601aa078d967776f5a
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87104268"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91159014"
 ---
 # <a name="how-to-query-the-contents-of-text-files-in-a-folder-linq-c"></a>Como consultar o conteúdo de arquivos de texto em uma pasta (LINQ) (C#)
+
 Este exemplo mostra como consultar todos os arquivos em uma árvore de diretório especificada, abrir cada arquivo e inspecionar seu conteúdo. Este tipo de técnica pode ser usado para criar índices ou inverter os índices do conteúdo de uma árvore de diretório. Uma pesquisa de cadeia de caracteres simples é executada neste exemplo. No entanto, os tipos de correspondência de padrões mais complexos podem ser executados com uma expressão regular. Para obter mais informações, consulte [como combinar consultas LINQ com expressões regulares (C#)](./how-to-combine-linq-queries-with-regular-expressions.md).  
   
 ## <a name="example"></a>Exemplo  
@@ -72,6 +73,7 @@ class QueryContents
 ```  
   
 ## <a name="compiling-the-code"></a>Compilando o código  
+
 Criar um projeto de aplicativo de console em C# com diretivas `using` para os namespaces System.Linq e System.IO.
   
 ## <a name="see-also"></a>Confira também

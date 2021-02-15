@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: CLRRuntimeHost coclass'
 title: Coclass CLRRuntimeHost
 ms.date: 03/30/2017
 api_name:
@@ -14,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: 2ac9cbf5-8a2d-4e4f-8831-0dad8ef0a897
 topic_type:
 - apiref
-ms.openlocfilehash: 40766ce5837053493f2e3f1f25fe7d1d63ec695f
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: a371b9b7263f8bb58b5c513de6647320f000beed
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616792"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799883"
 ---
 # <a name="clrruntimehost-coclass"></a>Coclass CLRRuntimeHost
+
 Fornece interfaces para gerenciar a execução de código pelo tempo de execução.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 coclass CLRRuntimeHost {  
@@ -41,14 +43,15 @@ coclass CLRRuntimeHost {
 |[Interface ICLRValidator](iclrvalidator-interface.md)|Fornece métodos para validação de imagens executáveis portáteis e para relatórios detalhados de erros de validação.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. idl  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Hospedando coclasses](hosting-coclasses.md)

@@ -1,18 +1,20 @@
 ---
-title: Como criar um RSS Feed básico
+description: 'Saiba mais sobre: como criar um RSS feed básico'
+title: 'Como: criar um RSS Feed básico'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 431879b8-a5f8-4947-ad1e-4768c726aca8
-ms.openlocfilehash: 872fe325a6705e79d026cd7f6e1f7cfef5145307
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 68c8c676a6630e9bafc03e2a367d8c9ee8493ed3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599016"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734770"
 ---
-# <a name="how-to-create-a-basic-rss-feed"></a>Como criar um RSS Feed básico
+# <a name="how-to-create-a-basic-rss-feed"></a>Como: criar um RSS Feed básico
+
 Windows Communication Foundation (WCF) permite que você crie um serviço que expõe um feed de distribuição. Este tópico discute como criar um serviço de distribuição que expõe um feed de agregação de RSS.  
   
 ### <a name="to-create-a-basic-syndication-service"></a>Para criar um serviço de distribuição básico  
@@ -86,13 +88,15 @@ Windows Communication Foundation (WCF) permite que você crie um serviço que ex
      [!code-vb[htRssBasic#11](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/htrssbasic/vb/snippets.vb#11)]  
   
 ## <a name="example"></a>Exemplo  
+
  A seguir está a listagem completa de códigos deste exemplo.  
   
  [!code-csharp[htRssBasic#12](../../../../samples/snippets/csharp/VS_Snippets_CFX/htrssbasic/cs/program.cs#12)]
  [!code-vb[htRssBasic#12](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/htrssbasic/vb/program.vb#12)]  
   
 ## <a name="compiling-the-code"></a>Compilando o código  
- Ao compilar o código anterior, referencie System. ServiceModel. dll e System. ServiceModel. Web. dll.  
+
+ Ao compilar o código anterior, referencie System.ServiceModel.dll e System.ServiceModel.Web.dll.  
   
 ## <a name="see-also"></a>Confira também
 

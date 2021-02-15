@@ -1,15 +1,15 @@
 ---
-title: Etapas no fluxo de trabalho de DevOps loop externo para um aplicativo de Docker
+title: Criar pipelines de CI/CD no Azure DevOps Services para um aplicativo .NET em contêineres e implantar em um cluster kubernetes
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools (Ciclo de vida de aplicativo do Docker em contêineres com a plataforma e as ferramentas da Microsoft)
-ms.date: 08/06/2020
-ms.openlocfilehash: 1a973407d59484899f99fb6e326b8d7c8e97079b
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.date: 01/06/2021
+ms.openlocfilehash: ef994f132716547ee402237016ee71013528d779
+ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87915222"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97970480"
 ---
-# <a name="creating-cicd-pipelines-in-azure-devops-services-for-a-net-core-application-on-containers-and-deploying-to-a-kubernetes-cluster"></a>Criando pipelines de CI/CD no Azure DevOps Services para um aplicativo .NET Core em contêineres e implantando em um cluster kubernetes
+# <a name="create-cicd-pipelines-in-azure-devops-services-for-a-net-application-on-containers-and-deploying-to-a-kubernetes-cluster"></a>Criar pipelines de CI/CD no Azure DevOps Services para um aplicativo .NET em contêineres e implantar em um cluster kubernetes
 
 Na Figura 5-12, você pode ver o cenário de DevOps de ponta a ponta, que abrange o gerenciamento de código, a compilação de código, o build de imagens do Docker, o push de imagens do Docker para um registro de Docker e, por fim, a implantação em um cluster do Kubernetes no Azure.
 

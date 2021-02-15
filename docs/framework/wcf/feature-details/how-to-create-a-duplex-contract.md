@@ -1,5 +1,5 @@
 ---
-title: Como criar um contrato duplex
+title: 'Como: criar um contrato duplex'
 description: Saiba como criar um contrato duplex, que permite que clientes e servidores WCF se comuniquem entre si de forma independente. O pode iniciar chamadas para o outro.
 ms.date: 03/30/2017
 dev_langs:
@@ -8,14 +8,15 @@ dev_langs:
 helpviewer_keywords:
 - duplex contracts [WCF]
 ms.assetid: 500a75b6-998a-47d5-8e3b-24e3aba2a434
-ms.openlocfilehash: 9320e5b36b8faba3602fbe1df1b95c05dcc7fa7e
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: cce1784865a1599e69c3f604c288ef62c9c43652
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85247085"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96243710"
 ---
-# <a name="how-to-create-a-duplex-contract"></a>Como criar um contrato duplex
+# <a name="how-to-create-a-duplex-contract"></a>Como: criar um contrato duplex
+
 Este tópico mostra as etapas básicas para criar métodos que usam um contrato duplex (bidirecional). Um contrato duplex permite que os clientes e os servidores se comuniquem entre si independentemente, de modo que qualquer um possa iniciar chamadas para o outro. O contrato duplex é um dos três padrões de mensagem disponíveis para os serviços Windows Communication Foundation (WCF). Os outros padrões de duas mensagens são unidirecionais e solicitação-resposta. Um contrato duplex consiste de dois contratos unidirecionais entre o cliente e o servidor e não exige que as chamadas de método sejam correlacionadas. Use esse tipo de contrato quando o serviço tiver que consultar o cliente para obter mais informações ou explicitamente gerar eventos no cliente. Para obter mais informações sobre como criar um aplicativo cliente para um contrato duplex, consulte [como acessar serviços com um contrato duplex](how-to-access-services-with-a-duplex-contract.md). Para obter um exemplo funcional, consulte o exemplo de [duplex](../samples/duplex.md) .  
   
 ### <a name="to-create-a-duplex-contract"></a>Para criar um contrato duplex  
@@ -57,6 +58,7 @@ Este tópico mostra as etapas básicas para criar métodos que usam um contrato 
 3. Chame os métodos definidos pela interface de retorno de chamada.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo de código a seguir demonstra a comunicação duplex. O contrato do serviço contém operações de serviço para avançar e voltar. O contrato do cliente contém uma operação de serviço para relatar sua posição.  
   
  [!code-csharp[S_WS_DualHttp#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_ws_dualhttp/cs/service.cs#5)]
@@ -72,8 +74,8 @@ Este tópico mostra as etapas básicas para criar métodos que usam um contrato 
 
 - <xref:System.ServiceModel.ServiceContractAttribute>
 - <xref:System.ServiceModel.OperationContractAttribute>
-- [Como acessar serviços com um contrato Duplex](how-to-access-services-with-a-duplex-contract.md)
+- [Como: acessar serviços com um contrato duplex](how-to-access-services-with-a-duplex-contract.md)
 - [Duplex](../samples/duplex.md)
-- [Serviços de design e implantação](../designing-and-implementing-services.md)
+- [Serviços de implantação e projeção](../designing-and-implementing-services.md)
 - [Como definir um contrato de serviço](../how-to-define-a-wcf-service-contract.md)
 - [Sessão](../samples/session.md)

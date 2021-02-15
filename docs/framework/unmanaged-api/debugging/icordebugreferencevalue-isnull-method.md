@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugReferenceValue:: IsNull'
 title: Método ICorDebugReferenceValue::IsNull
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 99e8c8d7-a1c0-47c8-9dbd-03e0b2bcb4d5
 topic_type:
 - apiref
-ms.openlocfilehash: e8b778c0880040f5ffd639a445fd5663ce493219
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 9fffc869e20d1d3aa3a347ff2e026e6b55e6bd4f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379090"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99691010"
 ---
 # <a name="icordebugreferencevalueisnull-method"></a>Método ICorDebugReferenceValue::IsNull
+
 Obtém um valor que indica se este ICorDebugReferenceValue é um valor nulo; nesse caso, o `ICorDebugReferenceValue` não aponta para um objeto.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,10 +36,12 @@ HRESULT IsNull (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pbNull`  
  fora Um ponteiro para um valor booliano que é `true` se esse `ICorDebugReferenceValue` objeto for nulo; caso contrário, `pbNull` será `false` .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

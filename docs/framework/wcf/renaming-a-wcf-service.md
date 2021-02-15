@@ -1,17 +1,21 @@
 ---
+description: 'Saiba mais sobre: renomeando um serviço WCF'
 title: Renomeando um serviço do WCF
 ms.date: 03/30/2017
 ms.assetid: 14235a65-b1c5-409d-b6cc-a979acd54bbd
-ms.openlocfilehash: 1179e7b235130e1967c79843b7a11f55622a01fb
-ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.openlocfilehash: 8d75e43f4bda97e8ee6de34b039eb1236d6c4a6d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86052046"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779160"
 ---
 # <a name="renaming-a-wcf-service"></a>Renomeando um serviço do WCF
+
 Este tópico descreve como você pode renomear um serviço do Windows Communication Foundation (WCF).  
   
 ## <a name="renaming-a-wcf-service"></a>Renomeando um serviço do WCF  
+
  Execute as seguintes etapas para renomear um serviço em um modelo Windows Communication Foundation (WCF),  
   
 - Altere o nome da classe que implementa o serviço.  
@@ -27,7 +31,7 @@ Este tópico descreve como você pode renomear um serviço do Windows Communicat
 </system.servicemodel>  
 ```  
   
-- Se o serviço for webhostd, ele usará um arquivo * \* . svc* . Abra o arquivo svc e modifique o nome do serviço, conforme indicado no exemplo a seguir. Essa etapa não é necessária para aplicativos hospedados internamente, pois não há nenhum arquivo svc.  
+- Se o serviço for webhostd, ele usará um arquivo *\* . svc* . Abra o arquivo svc e modifique o nome do serviço, conforme indicado no exemplo a seguir. Essa etapa não é necessária para aplicativos hospedados internamente, pois não há nenhum arquivo svc.  
   
 ```aspx-csharp
 <%@ ServiceHost Service="WcfService.NewName">  

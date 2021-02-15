@@ -8,19 +8,21 @@ dev_langs:
 helpviewer_keywords:
 - WCF Data Services, customizing requests
 ms.assetid: 3d55168d-5901-4f48-8117-6c93da3ab5ae
-ms.openlocfilehash: fab1fcfdf92d275f51f433845aa0c253a00ec99d
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 47e40f416b256fbd06160a5ee2683eb8364d48b7
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85247759"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91204379"
 ---
 # <a name="how-to-set-headers-in-the-client-request-wcf-data-services"></a>Como: definir cabeçalhos na solicitação do cliente (WCF Data Services)
+
 Quando você usa a biblioteca de cliente WCF Data Services para acessar um serviço de dados que dá suporte ao Protocolo Open Data (OData), a biblioteca de cliente define automaticamente os cabeçalhos HTTP necessários em mensagens de solicitação enviadas para o serviço de dados. No entanto, a biblioteca de cliente não sabe definir cabeçalhos de mensagens que são necessários em determinados casos, como quando o serviço de dados requer autenticação baseada em declarações ou cookies. Para obter mais informações, consulte [securing WCF Data Services](securing-wcf-data-services.md#clientAuthentication). Nesses casos, você deve definir manualmente os cabeçalhos de mensagem na mensagem de solicitação antes que eles sejam enviados. O exemplo neste tópico mostra como manipular o <xref:System.Data.Services.Client.DataServiceContext.SendingRequest> evento para adicionar um novo cabeçalho à mensagem de solicitação antes que ele seja enviado ao serviço de dados.  
   
  O exemplo deste tópico usa o serviço de dados de exemplo Northwind e as classes de serviço de dados do cliente geradas automaticamente. Esse serviço e as classes de dados do cliente são criados quando você conclui o guia de [início rápido do WCF Data Services](quickstart-wcf-data-services.md). Você também pode usar o [serviço de dados de exemplo Northwind](https://services.odata.org/Northwind/Northwind.svc/) que é publicado no site do OData; Este serviço de dados de exemplo é somente leitura e a tentativa de salvar alterações retorna um erro. Os serviços de dados de exemplo no site do OData permitem a autenticação anônima.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir registra um manipulador para o <xref:System.Data.Services.Client.DataServiceContext.SendingRequest> evento e, em seguida, executa uma consulta no serviço de dados.  
   
 > [!NOTE]
@@ -30,6 +32,7 @@ Quando você usa a biblioteca de cliente WCF Data Services para acessar um servi
 [!code-vb[Astoria Northwind Client#RegisterHeadersQuery](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#registerheadersquery)]
   
 ## <a name="example"></a>Exemplo  
+
  O método a seguir trata o <xref:System.Data.Services.Client.DataServiceContext.SendingRequest> evento e adiciona um cabeçalho de autenticação à solicitação.  
   
  [!code-csharp[Astoria Northwind Client#OnSendingRequest](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#onsendingrequest)]  

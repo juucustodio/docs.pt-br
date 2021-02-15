@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorProfilerInfo3'
 title: Interface ICorProfilerInfo3
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 044a262f-0fa7-485d-b0c1-64cdc359c654
 topic_type:
 - apiref
-ms.openlocfilehash: 0a474719935ba763cbd15dc6e18fe5ba99c14ebc
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 52b4c699a122c302e47cffb11d01e7829009e219
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84496298"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99687175"
 ---
 # <a name="icorprofilerinfo3-interface"></a>Interface ICorProfilerInfo3
+
 Fornece métodos que os profileres de código usam para se comunicar com o Common Language Runtime (CLR) para controlar o monitoramento de eventos e solicitar informações. A `ICorProfilerInfo3` interface é uma extensão da interface [ICorProfilerInfo2](icorprofilerinfo2-interface.md) . Ele fornece novos métodos com suporte no .NET Framework 4 e em versões posteriores.  
   
 ## <a name="methods"></a>Métodos  
@@ -44,11 +46,13 @@ Fornece métodos que os profileres de código usam para se comunicar com o Commo
 |[Método SetFunctionIDMapper2](icorprofilerinfo3-setfunctionidmapper2-method.md)|Especifica a função implementada pelo criador de perfil que será chamada para mapear `FunctionID` valores para valores alternativos, que são passados para os ganchos de entrada/saída da função do criador de perfil. Esse método estende [ICorProfilerInfo:: SetFunctionIDMapper](icorprofilerinfo-setfunctionidmapper-method.md) com um parâmetro que os profileres podem usar para fazer a ambiguidade entre os tempos de execução.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O CLR implementa os métodos da `ICorProfilerInfo3` interface usando o modelo de thread livre. Cada método retorna um HRESULT para indicar êxito ou falha. Para obter uma lista de possíveis códigos de retorno, consulte o arquivo CorError. h.  
   
  O CLR passa uma `ICorProfilerInfo3` interface para cada criador de perfil de código durante a inicialização, usando a implementação do criador de perfil do método [ICorProfilerCallback:: Initialize](icorprofilercallback-initialize-method.md) ou [ICorProfilerCallback3:: InitializeForAttach](icorprofilercallback3-initializeforattach-method.md) . Um criador de perfil de código pode então chamar os `ICorProfilerInfo3` métodos para obter informações sobre o código gerenciado que está sendo executado sob o controle do CLR.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -57,7 +61,7 @@ Fornece métodos que os profileres de código usam para se comunicar com o Commo
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criação de perfil de interfaces](profiling-interfaces.md)
 - [Interface ICorProfilerInfo](icorprofilerinfo-interface.md)

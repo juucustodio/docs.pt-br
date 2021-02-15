@@ -1,20 +1,22 @@
 ---
 title: Tutorial Números em C# – introdução ao C#
 description: Aprenda C# explorando tipos numéricos, seus usos, propriedades e métodos.
-ms.date: 10/31/2017
+ms.date: 02/02/2021
 ms.custom: mvc
-ms.openlocfilehash: 3dc2a5afc6321da45351525a632f586cb84bf7fe
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: 253ecbc089722961013d058aff900bdde23fd366
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82794605"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585631"
 ---
 # <a name="manipulate-integral-and-floating-point-numbers-in-c"></a>Manipular números de ponto flutuante e integrais em C\#
 
 Este tutorial ensina sobre os tipos numéricos em C# de maneira interativa. Você escreverá pequenas quantidades de código, depois compilará e executará esse código. O tutorial contém uma série de lições que exploram números e operações matemáticas em C#. Estas lições ensinam os princípios básicos da linguagem C#.
 
-Este tutorial espera que você tenha um computador que possa usar para desenvolvimento. O tutorial do .NET [Olá, mundo em 10 minutos](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) tem instruções para configurar seu ambiente de desenvolvimento local no Windows, Linux ou MacOS. Uma visão geral dos comandos que você usará está em [Familiarize-se com as ferramentas de desenvolvimento](local-environment.md), com links para obter mais detalhes.
+## <a name="prerequisites"></a>Pré-requisitos
+
+O tutorial espera que você tenha uma máquina configurada para desenvolvimento local. No Windows, Linux ou macOS, você pode usar a CLI do .NET para criar, compilar e executar aplicativos. No Windows, você pode usar o Visual Studio 2019. Para obter instruções de instalação, consulte [configurar seu ambiente local](local-environment.md).
 
 ## <a name="explore-integer-math"></a>Explorar a matemática de inteiros
 
@@ -257,7 +259,7 @@ A resposta é um número negativo muito grande, pois um estouro "envolve" do mai
 
 Há outros tipos numéricos com limites e precisão diferentes que você usaria quando o tipo `int` não atendesse às suas necessidades. Vamos explorar os outros tipos a seguir.
 
-Novamente, vamos passar o código que você escreveu nesta seção para um método separado. Nomeie-o `TestLimits`.
+Novamente, vamos passar o código que você escreveu nesta seção para um método separado. Nomeie-o como `TestLimits`.
 
 ## <a name="work-with-the-double-type"></a>Trabalhar com o tipo Double
 
@@ -299,7 +301,7 @@ double third = 1.0 / 3.0;
 Console.WriteLine(third);
 ```
 
-Você sabe que `0.3` repetir não é exatamente o mesmo `1/3`que.
+Você sabe que `0.3` repetir não é exatamente o mesmo que `1/3` .
 
 ***Desafio***
 
@@ -309,7 +311,7 @@ Após algum tempo no desafio, pegue o código que você escreveu e coloque-o em 
 
 ## <a name="work-with-decimal-types"></a>Trabalhar com tipos decimais
 
-Você viu os tipos numéricos básicos em C#: inteiros e duplos.  Há um outro tipo para aprender: o `decimal` tipo. O tipo `decimal` tem um intervalo menor, mas precisão maior do que `double`. Vamos analisar:
+Você viu os tipos numéricos básicos em C#: inteiros e duplos.  Há um outro tipo para aprender: o `decimal` tipo. O tipo `decimal` tem um intervalo menor, mas precisão maior do que `double`. Vamos dar uma olhada:
 
 ```csharp
 decimal min = decimal.MinValue;
@@ -329,7 +331,7 @@ decimal d = 3.0M;
 Console.WriteLine(c / d);
 ```
 
-O sufixo `M` nos números é o modo como você indica que uma constante deve usar o tipo `decimal`. Caso contrário, o compilador assume `double` o tipo.
+O sufixo `M` nos números é o modo como você indica que uma constante deve usar o tipo `decimal`. Caso contrário, o compilador assume o `double` tipo.
 
 > [!NOTE]
 > A letra `M` foi escolhida como a letra mais visualmente distinta entre `double` as `decimal` palavras-chave e.
@@ -338,7 +340,7 @@ Observe que o cálculo usando o tipo decimal tem mais dígitos à direita da ví
 
 ***Desafio***
 
-Agora que você viu os diferentes tipos numéricos, escreva um código que calcula a área de um círculo cujo raio é de 2,50 centímetros. Lembre-se de que a área de um círculo é o quadrado do raio multiplicado por PI. Uma dica: o .NET contém uma constante para PI, <xref:System.Math.PI?displayProperty=nameWithType>, que você pode usar para esse valor. <xref:System.Math.PI?displayProperty=nameWithType>, como todas as constantes declaradas no `System.Math` namespace, `double` é um valor. Por esse motivo, você deve usar `double` valores instead of `decimal` para esse desafio.
+Agora que você viu os diferentes tipos numéricos, escreva um código que calcula a área de um círculo cujo raio é de 2,50 centímetros. Lembre-se de que a área de um círculo é o quadrado do raio multiplicado por PI. Uma dica: o .NET contém uma constante para PI, <xref:System.Math.PI?displayProperty=nameWithType>, que você pode usar para esse valor. <xref:System.Math.PI?displayProperty=nameWithType>, como todas as constantes declaradas no `System.Math` namespace, é um `double` valor. Por esse motivo, você deve usar `double` valores instead of `decimal` para esse desafio.
 
 Você deve obter uma resposta entre 19 e 20.
 Você pode verificar sua resposta [examinando o código de exemplo concluído no GitHub](https://github.com/dotnet/samples/tree/master/csharp/numbers-quickstart/Program.cs#L104-L106).

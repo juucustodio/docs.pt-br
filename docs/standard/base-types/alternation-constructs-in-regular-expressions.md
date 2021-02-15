@@ -2,7 +2,6 @@
 title: Constructos de alternância em expressões regulares do .NET
 description: Saiba como usar constructos de alternância para a correspondência condicional em expressões regulares.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -13,14 +12,14 @@ helpviewer_keywords:
 - alternation constructs
 - optional matching patterns
 - constructs, alternation
-- .NET Framework regular expressions, alternation constructs
+- .NET regular expressions, alternation constructs
 ms.assetid: 071e22e9-fbb0-4ecf-add1-8d2424f9f2d1
-ms.openlocfilehash: 506c1cdeb577452628d67ab00df20dd30881f406
-ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
+ms.openlocfilehash: 0a1b46443d5cd9f8a19f4cfb9f9b07a5e33e719e
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2020
-ms.locfileid: "89495428"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95714686"
 ---
 # <a name="alternation-constructs-in-regular-expressions"></a>Construtores de alternância em expressões regulares
 
@@ -31,6 +30,7 @@ Os constructos de alternância modificam uma expressão regular para permitir um
 - [Correspondência condicional com base em um grupo capturado válido](#Conditional_Group)
 
 <a name="Either_Or"></a>
+
 ## <a name="pattern-matching-with-124"></a>Correspondência de padrões com &#124;
 
 Você pode usar o caractere de barra vertical (`|`) para corresponder a qualquer um de uma série de padrões, no qual o caractere `|` separa cada padrão.
@@ -49,7 +49,7 @@ A expressão regular que usa o `|` caractere, `\bgr(a|e)y\b` , é interpretada c
 |<code>(a&#124;e)</code>|Corresponder a um "a" ou "e".|  
 |`y\b`|Corresponder a um “y” em um limite de palavra.|  
 
-O caractere `|` também pode ser usado para executar uma correspondência do tipo um/ou outro com vários caracteres ou subexpressões, que podem incluir qualquer combinação de literais de caracteres e elementos de linguagem de expressão regular. (A classe Character não fornece essa funcionalidade.) O exemplo a seguir usa o `|` caractere para extrair um número de previdência social (SSN) dos EUA, que é um número de 9 dígitos com o formato *DDD* - *DD* - *dddd*ou um número de identificação de empregador dos EUA (Ein), que é um número de 9 dígitos com o formato *DD* - *ddddddd*.
+O caractere `|` também pode ser usado para executar uma correspondência do tipo um/ou outro com vários caracteres ou subexpressões, que podem incluir qualquer combinação de literais de caracteres e elementos de linguagem de expressão regular. (A classe Character não fornece essa funcionalidade.) O exemplo a seguir usa o `|` caractere para extrair um número de previdência social (SSN) dos EUA, que é um número de 9 dígitos com o formato *DDD* - *DD* - *dddd* ou um número de identificação de empregador dos EUA (Ein), que é um número de 9 dígitos com o formato *DD* - *ddddddd*.
 
 [!code-csharp[RegularExpressions.Language.Alternation#2](~/samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.language.alternation/cs/alternation2.cs#2)]
 [!code-vb[RegularExpressions.Language.Alternation#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.language.alternation/vb/alternation2.vb#2)]  
@@ -63,6 +63,7 @@ A expressão regular `\b(\d{2}-\d{7}|\d{3}-\d{2}-\d{4})\b` é interpretada confo
 |`\b`|Termina a correspondência em um limite de palavra.|  
   
 <a name="Conditional_Expr"></a>
+
 ## <a name="conditional-matching-with-an-expression"></a>Correspondência condicional com uma expressão
 
 Este elemento de linguagem tenta corresponder a um dos dois padrões dependendo de se ele pode corresponder a um padrão inicial. Sua sintaxe é:  
@@ -94,6 +95,7 @@ O padrão de expressão regular `\b(?(\d{2}-)\d{2}-\d{7}|\d{3}-\d{2}-\d{4})\b` �
 |`\b`|Corresponder a um limite de palavra.|  
 
 <a name="Conditional_Group"></a>
+
 ## <a name="conditional-matching-based-on-a-valid-captured-group"></a>Correspondência condicional com base em um grupo capturado válido
 
 Este elemento de linguagem tenta corresponder a um dos dois padrões dependendo de se ele correspondeu a um grupo de captura especificado. Sua sintaxe é:
@@ -129,6 +131,6 @@ Uma variação desse exemplo que usa um grupo numerado em vez de um grupo nomead
 [!code-csharp[RegularExpressions.Language.Alternation#5](~/samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.language.alternation/cs/alternation5.cs#5)]
 [!code-vb[RegularExpressions.Language.Alternation#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.language.alternation/vb/alternation5.vb#5)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Linguagem de expressões regulares – referência rápida](regular-expression-language-quick-reference.md)

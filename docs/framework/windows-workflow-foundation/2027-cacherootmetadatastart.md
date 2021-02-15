@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 2027-CacheRootMetadataStart'
 title: 2027 - CacheRootMetadataStart
 ms.date: 03/30/2017
 ms.assetid: 1421a473-c99e-45bb-b1ab-6a9f8da6fcd2
-ms.openlocfilehash: 9ca29bc11519b2d5947a8955ed8d3d5b7d1820f2
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 233e20584eb4baba0e043acd25e851720bc4637b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61789331"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631535"
 ---
 # <a name="2027---cacherootmetadatastart"></a>2027 - CacheRootMetadataStart
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,9 +22,11 @@ ms.locfileid: "61789331"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
+
  Indica o início de CacheRootMetadata em uma atividade.  
   
 ## <a name="message"></a>Mensagem  
+
  CacheRootMetadata começou a atividade “%1 "  
   
 ## <a name="details"></a>Detalhes  

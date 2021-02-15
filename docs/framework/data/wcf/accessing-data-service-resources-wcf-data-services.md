@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: acessando recursos do serviço de dados (WCF Data Services)'
 title: Acessando recursos do serviço de dados (WCF Data Services)
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -8,17 +9,21 @@ helpviewer_keywords:
 - WCF Data Services, getting started
 - WCF Data Services, accessing data
 ms.assetid: 9665ff5b-3e3a-495d-bf83-d531d5d060ed
-ms.openlocfilehash: 6a44d61f29fad7fa7d5304deb8b1e329478bc5b4
-ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
+ms.openlocfilehash: b1b4d94b020dcbb942959dfbf3fb3fc26dcbf915
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84202011"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766641"
 ---
 # <a name="accessing-data-service-resources-wcf-data-services"></a>Acessando recursos do serviço de dados (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
 WCF Data Services dá suporte ao Protocolo Open Data (OData) para expor seus dados como um feed com recursos que podem ser endereçáveis por URIs. Esses recursos são representados de acordo com as convenções de relacionamento de entidade do [modelo de dados de entidade](../adonet/entity-data-model.md). Nesse modelo, as entidades representam unidades operacionais de dados que são tipos de dados em um domínio de aplicativo, como clientes, pedidos, itens e classes. Os dados de entidades são acessados e alterados usando-se a semântica REST (transferência de estado representativo), especificamente os verbos HTTP padrão GET, PUT, POST e DELETE.  
   
 ## <a name="addressing-resources"></a>Direcionando recursos  
+
  No OData, você aborda todos os dados expostos pelo modelo de dados usando um URI. Por exemplo, o seguinte URI retorna um feed que é o conjunto de entidades Customers, que contém entradas para todas as instâncias do tipo de entidade Customer:  
   
 <https://services.odata.org/Northwind/Northwind.svc/Customers>
@@ -50,6 +55,7 @@ WCF Data Services dá suporte ao Protocolo Open Data (OData) para expor seus dad
  Para obter mais informações, consulte [OData: convenções de URI](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
   
 ## <a name="system-query-options"></a>Opções de consulta de sistema  
+
  O OData define um conjunto de opções de consulta do sistema que você pode usar para executar operações de consulta tradicionais em recursos, como filtragem, classificação e paginação. Por exemplo, o URI a seguir retorna o conjunto de todas as `Order` entidades, juntamente com `Order_Detail` as entidades relacionadas, os CEPs que não terminam em `100` :  
   
 `https://services.odata.org/Northwind/Northwind.svc/Orders?$filter=not endswith(ShipPostalCode,'100')&$expand=Order_Details&$orderby=ShipCity`
@@ -69,6 +75,7 @@ WCF Data Services dá suporte ao Protocolo Open Data (OData) para expor seus dad
 |`$inlinecount`|Solicitações de que uma contagem do número de entidades retornadas no feed seja incluída no feed.|  
   
 ## <a name="addressing-relationships"></a>Direcionando relações  
+
  Além de tratar conjuntos de entidades e instâncias de entidade, o OData também permite que você resolva as associações que representam as relações entre entidades. Essa funcionalidade é necessária para que seja possível criar ou alterar uma relação entre duas instâncias de entidade, como o remetente que está relacionado a um determinado pedido no banco de dados de exemplo Northwind. O OData dá suporte a um `$link` operador para atender especificamente às associações entre entidades. Por exemplo, o URI a seguir é especificado em uma mensagem de solicitação PUT HTTP para alterar o remetente do pedido especificado para um novo remetente.  
   
 `https://services.odata.org/Northwind/Northwind.svc/Orders(10643)/$links/Shipper`
@@ -76,8 +83,9 @@ WCF Data Services dá suporte ao Protocolo Open Data (OData) para expor seus dad
  Para obter mais informações, consulte `3.2. Addressing Links between Entries` a seção em [OData: convenções de URI](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
   
 ## <a name="consuming-the-returned-feed"></a>Consumindo o feed retornado  
+
  O URI de um recurso OData permite que você resolva os dados de entidade expostos pelo serviço. Quando você insere um URI no campo endereço de um navegador da Web, uma representação de feed OData do recurso solicitado é retornada. Para obter mais informações, consulte o guia de [início rápido do WCF Data Services](quickstart-wcf-data-services.md). Embora um navegador da Web possa ser útil para testar se um recurso do serviço de dados retorna os dados esperados, os serviços de dados de produção que também podem criar, atualizar e excluir os dados são geralmente acessados pelo código do aplicativo ou por linguagens de script em uma página da Web. Para obter mais informações, consulte [usando um serviço de dados em um aplicativo cliente](using-a-data-service-in-a-client-application-wcf-data-services.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Site do Protocolo Open Data](https://www.odata.org/)

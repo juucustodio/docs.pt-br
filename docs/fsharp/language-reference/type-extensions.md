@@ -2,12 +2,12 @@
 title: Extensões de tipo
 description: 'Saiba como as extensões de tipo F # permitem adicionar novos membros a um tipo de objeto definido anteriormente.'
 ms.date: 02/05/2020
-ms.openlocfilehash: 8fdb2d5e527643b23d24a6118e8cef6b11f1a546
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: c9adddb3133a4af57a12be0b09c22954a8bff6a7
+ms.sourcegitcommit: c3093e9d106d8ca87cc86eef1f2ae4ecfb392118
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88559122"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97737262"
 ---
 # <a name="type-extensions"></a>Extensões de tipo
 
@@ -19,7 +19,7 @@ Extensões de tipo (também chamadas de _aumentos_) são uma família de recurso
 
 Cada um pode ser usado em diferentes cenários e tem compensações diferentes.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```fsharp
 // Intrinsic and optional extensions
@@ -34,7 +34,7 @@ open System.Runtime.CompilerServices
 [<Extension>]
 type Extensions() =
     [<Extension>]
-    static member self-identifier.extension-name (ty: typename, [args]) =
+    static member extension-name (ty: typename, [args]) =
         body
     ...
 ```
@@ -177,7 +177,7 @@ As seguintes limitações também existem para extensões de tipo:
 
 Por fim, se existirem várias extensões de tipo intrínsecos para um tipo, todos os membros deverão ser exclusivos. Para extensões de tipo opcionais, os membros em extensões de tipo diferentes para o mesmo tipo podem ter os mesmos nomes. Os erros de ambiguidade ocorrem somente se o código do cliente abrir dois escopos diferentes que definem os mesmos nomes de membro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de linguagem F #](index.md)
 - [Membros](./members/index.md)

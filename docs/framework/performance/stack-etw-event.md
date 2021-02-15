@@ -6,14 +6,15 @@ helpviewer_keywords:
 - stack event [.NET Framework]
 - ETW, stack event (CLR)
 ms.assetid: f612fa5b-4b62-4593-a19e-85c9b1018dce
-ms.openlocfilehash: cab496615c4ef17831895b72c8987917e3c06e77
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: 3b890e587abd5cb1b7315fe41897f24638fd4604
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86474131"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96236202"
 ---
 # <a name="stack-etw-event"></a>Evento ETW de pilha
+
 O evento de pilha deve ser usado em conjunto com outros eventos para gerar rastreamentos de pilha depois que um evento é acionado. Ele é registrado quando o provedor de runtime está habilitado. Esse é um evento de alta frequência porque é acionado sempre que outro evento de runtime é acionado. Por esse motivo, recomendamos ter cautela ao usar esse evento.  
   
  A tabela a seguir mostra a palavra-chave e o nível. (Para obter mais informações, consulte [Palavras-chaves e níveis CLR ETW](clr-etw-keywords-and-levels.md).)  
@@ -30,7 +31,7 @@ O evento de pilha deve ser usado em conjunto com outros eventos para gerar rastr
   
  A tabela a seguir mostra os dados do evento.  
   
-|Nome do campo|Tipo de Dados|Descrição|  
+|Nome do campo|Tipo de dados|Descrição|  
 |----------------|---------------|-----------------|  
 |ClrInstanceID|win:Uint16|Identificador exclusivo do runtime.|  
 |Reserved1|win:UInt8|Reservado.|  
@@ -38,6 +39,6 @@ O evento de pilha deve ser usado em conjunto com outros eventos para gerar rastr
 |FrameCount|win:UInt32|O número de quadros no rastreamento de pilha.|  
 |Pilha|win:Pointer|Colunas de ponteiros de instrução.|  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Eventos ETW no CLR](clr-etw-events.md)

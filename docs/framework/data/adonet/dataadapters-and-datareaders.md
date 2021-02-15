@@ -3,14 +3,15 @@ title: DataAdapters e DataReaders
 description: Saiba mais sobre o ADO.NET DataReader, que recupera dados de um banco de dados, e DataAdapter, que recupera dados de uma fonte e popula um DataSet.
 ms.date: 03/30/2017
 ms.assetid: cc952ca2-ec19-46ab-9189-15174b52cb74
-ms.openlocfilehash: 17463d65266baa53521bed9603c8abd96923277b
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 2584f8b382dd90f2f8b4554663dc545b9ccceb62
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286967"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91177599"
 ---
 # <a name="dataadapters-and-datareaders"></a>DataAdapters e DataReaders
+
 Você pode usar o **DataReader** ADO.net para recuperar um fluxo de dados somente leitura e somente encaminhamento de um banco de dado. Os resultados são retornados conforme a consulta é executada e são armazenados no buffer de rede no cliente até que você os solicite usando o método **Read** do **DataReader**. Usar o **DataReader** pode aumentar o desempenho do aplicativo recuperando dados assim que ele estiver disponível e (por padrão) armazenando apenas uma linha de cada vez na memória, reduzindo a sobrecarga do sistema.  
   
  Um <xref:System.Data.Common.DataAdapter> é usado para recuperar dados de uma fonte de dados e para popular tabelas em um <xref:System.Data.DataSet>. O `DataAdapter` também resolve as alterações feitas no `DataSet` de volta para a fonte de dados. O `DataAdapter` usa o objeto `Connection` do provedor de dados .NET Framework para se conectar a uma fonte de dados e usa objetos de `Command` para recuperar dados e para resolver alterações na fonte de dados.  
@@ -18,16 +19,17 @@ Você pode usar o **DataReader** ADO.net para recuperar um fluxo de dados soment
  Cada provedor de dados .NET Framework incluído com o .NET Framework tem um <xref:System.Data.Common.DbDataReader> e um objeto <xref:System.Data.Common.DbDataAdapter>: o Provedor de Dados .NET Framework para OLE DB inclui um <xref:System.Data.OleDb.OleDbDataReader> e um objeto <xref:System.Data.OleDb.OleDbDataAdapter>, o Provedor de Dados .NET Framework para SQL Server inclui um <xref:System.Data.SqlClient.SqlDataReader> e um objeto <xref:System.Data.SqlClient.SqlDataAdapter>, o Provedor de Dados .NET Framework para ODBC inclui um <xref:System.Data.Odbc.OdbcDataReader> e um objeto <xref:System.Data.Odbc.OdbcDataAdapter> e o Provedor de Dados .NET Framework para Oracle inclui um objeto <xref:System.Data.OracleClient.OracleDataReader> e um objeto <xref:System.Data.OracleClient.OracleDataAdapter>.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Recuperando dados usando um DataReader](retrieving-data-using-a-datareader.md)  
  Descreve o objeto ADO.NET **DataReader** e como usá-lo para retornar um fluxo de resultados de uma fonte de dados.  
   
- [Populating a DataSet from a DataAdapter](populating-a-dataset-from-a-dataadapter.md) (Preenchendo um DataSet por meio de um DataAdapter)  
+ [Populando um DataSet a partir de um DataAdapter](populating-a-dataset-from-a-dataadapter.md)  
  Descreve como preencher um `DataSet` com tabelas, colunas, e linhas usando um `DataAdapter`.  
   
  [Parâmetros DataAdapter](dataadapter-parameters.md)  
  Descreve como usar parâmetros com as propriedades de comando de um `DataAdapter` incluindo como mapear o conteúdo de uma coluna em um `DataSet` para um parâmetro de comando.  
   
- [Adding Existing Constraints to a DataSet](adding-existing-constraints-to-a-dataset.md) (Adicionando restrições existentes a um DataSet)  
+ [Adicionar restrições existentes a um DataSet](adding-existing-constraints-to-a-dataset.md)  
  Descreve como adicionar as restrições existentes a um `DataSet`.  
   
  [Mapeamentos de DataTable e de DataColumn do DataAdapter](dataadapter-datatable-and-datacolumn-mappings.md)  

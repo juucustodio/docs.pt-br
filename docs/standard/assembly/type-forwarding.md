@@ -3,30 +3,29 @@ title: Encaminhamento de tipo no Common Language Runtime
 description: O encaminhamento de tipo permite que você mova um tipo para outro assembly .NET sem precisar recompilar os aplicativos que usam o assembly original.
 ms.date: 08/20/2019
 helpviewer_keywords:
-- assemblies [.NET Framework], type forwarding
+- assemblies [.NET], type forwarding
 - type forwarding
 ms.assetid: 51f8ffa3-c253-4201-a3d3-c4fad85ae097
 dev_langs:
 - csharp
 - cpp
-ms.openlocfilehash: f0be61bd4ce88569e22a350a9ea9490d67e74ff3
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: cd166068993fb5d1a5164615de3926a06dda8098
+ms.sourcegitcommit: 279fb6e8d515df51676528a7424a1df2f0917116
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378591"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92687667"
 ---
 # <a name="type-forwarding-in-the-common-language-runtime"></a>Encaminhamento de tipo no Common Language Runtime
+
 O encaminhamento de tipo permite que você mova um tipo para outro assembly sem ter que recompilar os aplicativos que usam o assembly original.  
   
- Por exemplo, suponha que um aplicativo use a `Example` classe em um assembly chamado *Utility. dll*. Os desenvolvedores de *Utility. dll* podem decidir refatorar o assembly e, no processo, eles podem mover a `Example` classe para outro assembly. Se a versão antiga do *Utility. dll* for substituída pela nova versão do *Utility. dll* e seu assembly complementar, o aplicativo que usa a `Example` classe falhará porque ele não pode localizar a `Example` classe na nova versão do *Utility. dll*.  
+ Por exemplo, suponha que um aplicativo use a `Example` classe em um assembly chamado *Utility.dll* . Os desenvolvedores de *Utility.dll* podem decidir refatorar o assembly e, no processo, eles podem mover a `Example` classe para outro assembly. Se a versão antiga do *Utility.dll* for substituída pela nova versão do *Utility.dll* e seu assembly complementar, o aplicativo que usa a `Example` classe falhará porque não consegue localizar a `Example` classe na nova versão do *Utility.dll* .  
   
- Os desenvolvedores de *Utility. dll* podem evitar isso Encaminhando solicitações para a `Example` classe, usando o <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute> atributo. Se o atributo tiver sido aplicado à nova versão do *Utility. dll*, as solicitações para a `Example` classe serão encaminhadas para o assembly que agora contém a classe. O aplicativo existente continua a funcionar normalmente, sem recompilação.  
-  
-> [!NOTE]
-> No .NET Framework versão 2.0, você não pode encaminhar os tipos de assemblies escritos em Visual Basic. No entanto, um aplicativo escrito em Visual Basic pode consumir tipos encaminhados. Ou seja, se o aplicativo usar um assembly de código em C# ou C++, e um tipo desse assembly for encaminhado para outro assembly, o aplicativo em Visual Basic poderá usar o tipo encaminhado.  
-  
-## <a name="forward-types"></a>Tipos de encaminhamento  
+ Os desenvolvedores de *Utility.dll* podem evitar isso Encaminhando solicitações para a `Example` classe, usando o <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute> atributo. Se o atributo tiver sido aplicado à nova versão do *Utility.dll* , as solicitações para a `Example` classe serão encaminhadas para o assembly que agora contém a classe. O aplicativo existente continua a funcionar normalmente, sem recompilação.
+
+## <a name="forward-a-type"></a>Encaminhar um tipo
+
  Há quatro etapas para encaminhar um tipo:  
   
 1. Mova o código-fonte para o tipo do assembly original para o conjunto de destino.  

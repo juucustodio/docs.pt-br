@@ -4,15 +4,18 @@ description: Saiba como usar um tipo anônimo em uma expressão de consulta em C
 ms.date: 07/20/2015
 helpviewer_keywords:
 - anonymous types [C#], for subsets of element properties
+ms.topic: how-to
+ms.custom: contperf-fy21q2
 ms.assetid: fabdf349-f443-4e3f-8368-6c471be1dd7b
-ms.openlocfilehash: 882d94bc82527c14bd6c038f4bf574c2211b9089
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: 5784d6a288af374d357346e32535ebe9c1877bcc
+ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86864365"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97512789"
 ---
 # <a name="how-to-return-subsets-of-element-properties-in-a-query-c-programming-guide"></a>Como retornar subconjuntos de propriedades de elemento em uma consulta (guia de programação C#)
+
 Use um tipo anônimo em uma expressão de consulta quando essas duas condições se aplicarem:  
   
 - Você deseja retornar apenas algumas das propriedades de cada elemento de origem.  
@@ -26,6 +29,7 @@ select student.ID;
 ```  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir mostra como usar um tipo anônimo para retornar apenas um subconjunto das propriedades de cada elemento de origem que corresponda à condição especificada.  
   
  [!code-csharp[csProgGuideLINQ#31](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideLINQ/CS/csRef30LangFeatures_2.cs#31)]  
@@ -46,7 +50,7 @@ Console.WriteLine(student.First + " " + student.Last);
   
 Para executar esse código, copie e cole a classe em um aplicativo de console em C# com uma diretiva `using` para System.Linq.
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Guia de programação C#](../index.md)
 - [Tipos anônimos](./anonymous-types.md)

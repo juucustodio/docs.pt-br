@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugEval2:: NewParameterizedArray'
 title: Método ICorDebugEval2::NewParameterizedArray
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 45efb8ba-c4de-4109-945f-e734d376b43c
 topic_type:
 - apiref
-ms.openlocfilehash: 9d589bfc3093d03d87acb47ade0fc6c972bcd335
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: 0ce8582328013ad02357361f05efb55ade8780e5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976103"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99693740"
 ---
 # <a name="icordebugeval2newparameterizedarray-method"></a>Método ICorDebugEval2::NewParameterizedArray
+
 Aloca uma nova matriz do tipo e das dimensões do elemento especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,6 +39,7 @@ HRESULT NewParameterizedArray(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pElementType`  
  no Um ponteiro para um objeto ICorDebugType que representa o tipo de elemento armazenado na matriz.  
   
@@ -50,9 +53,11 @@ HRESULT NewParameterizedArray(
  [in] Opcional. O limite inferior de cada dimensão da matriz. Se esse valor for omitido, um limite inferior de zero será assumido para cada dimensão.  
   
 ## <a name="remarks"></a>Comentários  
+
  Os elementos da matriz podem ser instâncias de um tipo genérico. A matriz é sempre criada no domínio do aplicativo no qual o thread está em execução no momento. No .NET Framework 2,0, o valor de `rank` deve ser 1.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

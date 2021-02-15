@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugObjectValue:: GetContext'
 title: Método ICorDebugObjectValue::GetContext
 ms.date: 03/30/2017
 api_name:
@@ -15,17 +16,18 @@ helpviewer_keywords:
 ms.assetid: 40594774-5105-4187-a06b-4e7f50bada3c
 topic_type:
 - apiref
-ms.openlocfilehash: e855d9ec4105559bb72f48ecb594707f0a0ec4c4
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: f3536f3256fe6a4b91a0270382aebf9f5b999642
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73095910"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728997"
 ---
 # <a name="icordebugobjectvaluegetcontext-method"></a>Método ICorDebugObjectValue::GetContext
-`GetContext` não está implementado nesta versão do .NET Framework.  
+
+`GetContext` Não está implementado nesta versão do .NET Framework.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT GetContext (  
@@ -34,6 +36,7 @@ HRESULT GetContext (
 ```  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também

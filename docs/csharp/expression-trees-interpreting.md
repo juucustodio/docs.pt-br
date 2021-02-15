@@ -4,12 +4,12 @@ description: Aprenda como escrever código para examinar a estrutura de um árvo
 ms.date: 06/20/2016
 ms.technology: csharp-advanced-concepts
 ms.assetid: adf73dde-1e52-4df3-9929-2e0670e28e16
-ms.openlocfilehash: ea205d42b02ea7b38c04cb70d322329cf7c1d495
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 39baf32c9c53d57227d52b9370f8165ff92d708d
+ms.sourcegitcommit: 67ebdb695fd017d79d9f1f7f35d145042d5a37f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84004641"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92223681"
 ---
 # <a name="interpreting-expressions"></a>Interpretando Expressões
 
@@ -22,6 +22,7 @@ Esse design torna visitar todos os nós em uma árvore de expressão uma operaç
 Se o tipo de nó tiver filhos, visite os filhos recursivamente. Em cada nó filho, repita o processo usado no nó raiz: determine o tipo e, se o tipo tiver filhos, visite cada um dos filhos.
 
 ## <a name="examining-an-expression-with-no-children"></a>Examinando uma expressão sem filhos
+
 Vamos começar visitando cada nó em uma árvore de expressão simples.
 Este é o código que cria uma expressão constante e, em seguida, examina suas propriedades:
 
@@ -515,7 +516,7 @@ Primeiro, os visitantes lidam somente com constantes que são números inteiros.
 
 Até o último exemplo reconhece um subconjunto dos tipos de nó possíveis.
 Você ainda poderá alimentá-lo com muitas expressões que o fariam falhar.
-Uma implementação completa está incluída no .NET Standard com o nome <xref:System.Linq.Expressions.ExpressionVisitor> e pode lidar com todos os tipos de nó possíveis.
+Uma implementação completa é incluída em .NET Standard sob o nome <xref:System.Linq.Expressions.ExpressionVisitor> e pode lidar com todos os tipos de nó possíveis.
 
 Por fim, a biblioteca usada neste artigo foi desenvolvida para demonstração e aprendizado. Ela não está otimizada. Eu o escrevi para tornar as estruturas usadas claras e destacar as técnicas usadas para visitar os nós e analisar o que está lá. Uma implementação de produção dedicaria mais atenção ao desempenho do que eu dediquei.
 

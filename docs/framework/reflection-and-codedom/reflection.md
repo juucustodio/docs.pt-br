@@ -22,12 +22,12 @@ helpviewer_keywords:
 - discovering type information at run time
 - type system, reflection
 ms.assetid: d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775
-ms.openlocfilehash: 46c67595126af2c62b28d29983775943586a0b90
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: 371f56c3a57b8e320c9b329c539075a40cd7a19f
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86865275"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96258407"
 ---
 # <a name="reflection-in-net"></a>Reflexão no .NET
 
@@ -62,6 +62,7 @@ A reflexão também pode ser usada para criar aplicativos chamados navegadores d
 Há outros usos para reflexão. Os compiladores de linguagens como o JScript usam reflexão para criar tabelas de símbolos. As classes no namespace <xref:System.Runtime.Serialization> usam reflexão para acessar dados e para determinar quais campos persistir. As classes do namespace <xref:System.Runtime.Remoting> usa a reflexão indiretamente por meio da serialização.  
   
 ## <a name="runtime-types-in-reflection"></a>Tipos do runtime na reflexão  
+
 A reflexão fornece classes, como <xref:System.Type> e <xref:System.Reflection.MethodInfo>, para representar tipos, membros, parâmetros e outras entidades de código. No entanto, ao usar a reflexão, você não trabalha diretamente com essas classes, a maioria das quais é abstrata (`MustInherit` no Visual Basic). Em vez disso, você trabalha com tipos fornecidos pelo CLR (Common Language Runtime).  
   
 Por exemplo, quando você usa o operador `typeof` C# (`GetType` no Visual Basic) para obter um objeto <xref:System.Type>, o objeto é na verdade um `RuntimeType`. `RuntimeType` deriva de <xref:System.Type> e fornece implementações de todos os métodos abstratos.  
@@ -78,11 +79,11 @@ Essas classes de runtime são `internal` (`Friend` no Visual Basic). Elas não s
 |[Reflexão e tipos genéricos](reflection-and-generic-types.md)|Explica como a reflexão trata os parâmetros de tipo e argumentos de tipo de tipos genéricos e métodos genéricos.|  
 |[Considerações sobre segurança relacionadas à reflexão](security-considerations-for-reflection.md)|Descreve as regras que determinam até que nível a reflexão pode ser usada para descobrir informações de tipo e tipos de acesso.|  
 |[Carregando e usando tipos dinamicamente](dynamically-loading-and-using-types.md)|Descreve a interface de associação personalizada de reflexão que dá suporte à associação tardia.|  
-|[Como: Carregar assemblies no contexto somente de reflexão](how-to-load-assemblies-into-the-reflection-only-context.md)|Descreve o contexto de carregamento de somente reflexão. Mostra como carregar um assembly, como testar o contexto e como examinar os atributos aplicados a um assembly no contexto de somente reflexão.|  
+|[Como carregar assemblies no contexto de somente reflexão](how-to-load-assemblies-into-the-reflection-only-context.md)|Descreve o contexto de carregamento de somente reflexão. Mostra como carregar um assembly, como testar o contexto e como examinar os atributos aplicados a um assembly no contexto de somente reflexão.|  
 |[Acessando atributos personalizados](accessing-custom-attributes.md)|Demonstra o uso de reflexão para consultar a existência do atributo e os valores.|  
 |[Especificando nomes de tipo totalmente qualificados](specifying-fully-qualified-type-names.md)|Descreve o formato dos nomes de tipo totalmente qualificados nos termos da BNF (forma de Backus-Naur) e a sintaxe necessária para especificar os caracteres especiais, os nomes de assembly, os ponteiros, as referências e as matrizes.|  
 |[Como: Conectar um delegado usando a reflexão](how-to-hook-up-a-delegate-using-reflection.md)|Explica como criar um delegado para um método e conectar o delegado a um evento. Explica como criar um método de manipulação de eventos em tempo de execução usando <xref:System.Reflection.Emit.DynamicMethod>.|  
-|[Emissão de métodos e assemblies dinâmicos](emitting-dynamic-methods-and-assemblies.md)|Explica como gerar métodos dinâmicos e assemblies dinâmicos.|  
+|[Emitindo métodos e assemblies dinâmicos](emitting-dynamic-methods-and-assemblies.md)|Explica como gerar métodos dinâmicos e assemblies dinâmicos.|  
   
 ## <a name="reference"></a>Referência  
 

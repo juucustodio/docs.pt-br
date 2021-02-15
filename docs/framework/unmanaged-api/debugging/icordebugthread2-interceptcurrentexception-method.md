@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugThread2:: InterceptCurrentException'
 title: Método ICorDebugThread2::InterceptCurrentException
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 536d2357-1b97-49e0-a10c-c860aed74e6e
 topic_type:
 - apiref
-ms.openlocfilehash: d87f07e6cadf8c9b5a4d8bb3063333c26e2c4ff1
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 5bf8d3adf6f5e4a24d8fc5abddb72c0c8963c142
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379038"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790705"
 ---
 # <a name="icordebugthread2interceptcurrentexception-method"></a>Método ICorDebugThread2::InterceptCurrentException
+
 Permite que um depurador intercepte a exceção atual neste thread.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,13 +36,16 @@ HRESULT InterceptCurrentException (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pFrame`  
  no Um ponteiro para um ICorDebugFrame que representa o quadro de ativação ativo.  
   
 ## <a name="remarks"></a>Comentários  
+
  O `InterceptCurrentException` método pode ser chamado entre um retorno de chamada de exceção ([ICorDebugManagedCallback:: Exception](icordebugmanagedcallback-exception-method.md) ou [ICorDebugManagedCallback2:: Exception](icordebugmanagedcallback2-exception-method.md)) e a chamada associada a [ICorDebugController:: Continue](icordebugcontroller-continue-method.md).  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

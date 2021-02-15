@@ -16,14 +16,15 @@ helpviewer_keywords:
 - receiving data, Secure Sockets Layer
 - Internet, Secure Sockets Layer
 ms.assetid: 6e4289e6-d1b7-4e82-ab0d-e83e3b6063ed
-ms.openlocfilehash: 67330962382e768849cbf67d5f412ea80f65569d
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 1309e9dc594869cec7bce81ef666d9f5e06f13b9
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84501983"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96265174"
 ---
 # <a name="using-secure-sockets-layer"></a>Usando o protocolo SSL
+
 As classes <xref:System.Net> usam o protocolo SSL para criptografar a conexão para vários protocolos de rede.  
   
  Para conexões HTTP, as classes <xref:System.Net.WebRequest> e <xref:System.Net.WebResponse> usam o SSL para se comunicarem com hosts Web que dão suporte ao SSL. A decisão de usar o SSL é feita pela classe <xref:System.Net.WebRequest>, com base no URI fornecido. Se o URI começa com “https:”, o SSL é usado; se o URI começa com “http:”, uma conexão não criptografada é usada.  
@@ -59,11 +60,12 @@ FtpWebResponse response = (FtpWebResponse)request.GetResponse();
 ```  
   
 ## <a name="compiling-the-code"></a>Compilando o código  
+
  Este exemplo requer:  
   
 - Referências ao namespace **System.Net**.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Segurança na programação de rede](security-in-network-programming.md)
 - [Programação de rede no .NET Framework](index.md)

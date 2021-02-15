@@ -1,7 +1,7 @@
 ---
+description: 'Saiba mais sobre: como criar um objeto WindowsPrincipal'
 title: 'Como: criar um objeto WindowsPrincipal'
 ms.date: 07/15/2020
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -11,12 +11,12 @@ helpviewer_keywords:
 - security [.NET], principals
 - principal objects, creating
 ms.assetid: 56eb10ca-e61d-4ed2-af7a-555fc4c25a25
-ms.openlocfilehash: d99d63dc766f37e7cc30888d2e77657595f909af
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: eee33eb419e8626b8b7f627b9ab1e46ea8dceab5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87557028"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685225"
 ---
 # <a name="how-to-create-a-windowsprincipal-object"></a>Como: criar um objeto WindowsPrincipal
 
@@ -81,7 +81,7 @@ Se o código precisar executar a validação baseada em função repetidamente, 
   
 3. Quando o objeto principal tiver sido criado, você poderá usar um dos vários métodos para validá-lo.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Objetos Principal e Identity](principal-and-identity-objects.md)
-- [Segurança de ASP.NET Core](https://docs.microsoft.com/aspnet/core/security/)
+- [Segurança de ASP.NET Core](/aspnet/core/security/)

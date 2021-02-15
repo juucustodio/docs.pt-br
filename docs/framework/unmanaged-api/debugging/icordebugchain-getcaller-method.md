@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugChain:: getcalleer'
 title: Método ICorDebugChain::GetCaller
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: d0b8ab4b-d7d2-4fa0-945f-3d2b87e7e991
 topic_type:
 - apiref
-ms.openlocfilehash: a6d26924773e6ad505975402ec3ace150d02cc3a
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 5af2132b7fec9e70704db980b95221db6eb273f8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82894609"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695015"
 ---
 # <a name="icordebugchaingetcaller-method"></a>Método ICorDebugChain::GetCaller
+
 Obtém a cadeia que chamou essa cadeia.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,15 +36,18 @@ HRESULT GetCaller (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ppChain`  
  fora Um ponteiro para o endereço de um objeto ICorDebugChain que representa a cadeia de chamada.  
   
- Se essa cadeia fosse chamada espontaneamente (como seria o caso, se essa cadeia ou o depurador inicializasse a pilha de chamadas `ppChain` ), será nulo.  
+ Se essa cadeia fosse chamada espontaneamente (como seria o caso, se essa cadeia ou o depurador inicializasse a pilha de chamadas), `ppChain` será nulo.  
   
 ## <a name="remarks"></a>Comentários  
+
  A cadeia de chamada pode estar em um thread diferente, se a chamada tiver sido empacotada entre threads.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

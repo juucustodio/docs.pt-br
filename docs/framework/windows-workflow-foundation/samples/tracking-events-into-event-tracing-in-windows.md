@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: rastrear eventos no rastreamento de eventos no Windows'
 title: Eventos de rastreamento no rastreamento de evento no Windows
 ms.date: 03/30/2017
 ms.assetid: f812659b-0943-45ff-9430-4defa733182b
-ms.openlocfilehash: fa5d86e327bc9c6eca85ed2908775de5f647f410
-ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
+ms.openlocfilehash: 92ad4aaee100bb3ba7f4174bbbde1dc7eaed58de
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84144884"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99653739"
 ---
 # <a name="tracking-events-into-event-tracing-in-windows"></a>Eventos de rastreamento no rastreamento de evento no Windows
 
@@ -51,7 +52,7 @@ O participante de rastreamento assinatura para um subconjunto de registros emiss
 
 4. Usando o explorador de arquivos, abra o cliente de teste do WCF.
 
-    O cliente de teste do WCF (WcfTestClient. exe) está localizado na \<Visual Studio 2010 installation folder> pasta \Common7\IDE\
+    O cliente de teste do WCF (WcfTestClient.exe) está localizado na \<Visual Studio 2010 installation folder> pasta \Common7\IDE\
 
     A pasta de instalação padrão do Visual Studio 2010 é C:\Program Files\Microsoft Visual Studio 10,0.
 
@@ -63,7 +64,7 @@ O participante de rastreamento assinatura para um subconjunto de registros emiss
 
     Antes de invocar o serviço, inicie Visualizador de Eventos no menu **Iniciar** , selecione **executar** e digite `eventvwr.exe` . Certifique-se de que o log de eventos é escutando eventos de rastreamento emissores de serviço de fluxo de trabalho.
 
-7. No modo de exibição de árvore do Visualizador de Eventos, navegue até **Visualizador de eventos**, **aplicativos e logs de serviços**e **Microsoft**. Clique com o botão direito do mouse em **Microsoft** e selecione **Exibir** e, em seguida, **Mostrar logs analíticos e de depuração** para habilitar logs analíticos e de depuração
+7. No modo de exibição de árvore do Visualizador de Eventos, navegue até **Visualizador de eventos**, **aplicativos e logs de serviços** e **Microsoft**. Clique com o botão direito do mouse em **Microsoft** e selecione **Exibir** e, em seguida, **Mostrar logs analíticos e de depuração** para habilitar logs analíticos e de depuração
 
     Verifique se a opção **Mostrar logs analíticos e de depuração** está marcada.
 
@@ -138,7 +139,7 @@ O perfil de acompanhamento de monitoramento de integridade emite-se registros de
 > [!NOTE]
 > Há um problema conhecido em Visualizador de Eventos onde pode não decodifica eventos de ETW. Você pode ver a uma mensagem de erro semelhante ao seguinte.
 >
-> A descrição para a ID \<id> do evento da origem Microsoft-Windows-Application Server – Applications não pode ser encontrada. O componente que gera esse evento não está instalado no computador local ou a instalação está corrompida. Você pode instalar ou reparar o componente no computador local.
+> A descrição da ID do evento \<id> da origem Microsoft-Windows-Application Server-Applications não foi encontrada. O componente que gera esse evento não está instalado no computador local ou a instalação está corrompida. Você pode instalar ou reparar o componente no computador local.
 >
 > Se você encontrar esse erro, atualização de clique no painel ações. O evento agora deve decodificar corretamente.
 
@@ -153,4 +154,4 @@ O perfil de acompanhamento de monitoramento de integridade emite-se registros de
 
 ## <a name="see-also"></a>Consulte também
 
-- [AppFabric que monitora Exemplos](https://docs.microsoft.com/previous-versions/appfabric/ff383407(v=azure.10))
+- [AppFabric que monitora Exemplos](/previous-versions/appfabric/ff383407(v=azure.10))

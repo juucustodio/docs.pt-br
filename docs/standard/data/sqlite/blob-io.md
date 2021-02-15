@@ -1,15 +1,18 @@
 ---
 title: E/S de Blob
-ms.date: 12/13/2019
+ms.date: 12/08/2020
 description: Saiba como usar O recurso de e/s de BLOB do SQLite.
-ms.openlocfilehash: 0c133deacdc19684eca3a6724fb398dc01fda558
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: 8b305669f3155d2366215e9a05beb5ed51533d81
+ms.sourcegitcommit: 9b877e160c326577e8aa5ead22a937110d80fa44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75447044"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97110039"
 ---
 # <a name="blob-io"></a>E/S de Blob
+
+> [!NOTE]
+> A classe SqliteBlob foi adicionada na versão 3,0.
 
 Você pode reduzir o uso de memória durante a leitura e a gravação de objetos grandes transmitindo os dados para dentro e fora dele. Isso pode ser especialmente útil ao analisar ou transformar os dados.
 
@@ -17,7 +20,7 @@ Comece inserindo uma linha como normal. Use a `zeroblob()` função SQL para alo
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/StreamingSample/Program.cs?name=snippet_Insert)]
 
-Depois de inserir a linha, abra um fluxo para gravar o objeto grande usando <xref:Microsoft.Data.Sqlite.SqliteBlob>.
+Depois de inserir a linha, abra um fluxo para gravar o objeto grande usando <xref:Microsoft.Data.Sqlite.SqliteBlob> .
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/StreamingSample/Program.cs?name=snippet_Write)]
 

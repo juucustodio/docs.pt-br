@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como reordenar os campos de um arquivo delimitado (LINQ) (Visual Basic)'
 title: 'Como: reordenar os campos de um arquivo delimitado (LINQ)'
 ms.date: 07/20/2015
 ms.assetid: c451c7db-663b-4daf-b8ba-a2093095d672
-ms.openlocfilehash: 6f87374978425e0d51542c6eceda23697d7a3a67
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: bfb06c396dbe33628ea146622c9c4ebe9534aae4
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84397889"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434999"
 ---
 # <a name="how-to-reorder-the-fields-of-a-delimited-file-linq-visual-basic"></a>Como: reordenar os campos de um arquivo delimitado (LINQ) (Visual Basic)
 
@@ -75,8 +76,8 @@ End Class
 ' 122, Michael Tucker
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ e cadeias de caracteres (Visual Basic)](linq-and-strings.md)
 - [LINQ e diretórios de arquivos (Visual Basic)](linq-and-file-directories.md)
-- [Como gerar XML a partir de arquivos CSV](how-to-generate-xml-from-csv-files.md)
+- [Como gerar XML a partir de arquivos CSV](../../../../standard/linq/generate-xml-csv-files.md)

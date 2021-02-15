@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como: calcular valores de coluna em um arquivo de texto CSV (LINQ) (Visual Basic)'
 title: 'Como: computar valores de coluna em um arquivo de texto CSV (LINQ)'
 ms.date: 07/20/2015
 ms.assetid: 88b2b9f3-c82e-41f3-b1b4-26ede5973a02
-ms.openlocfilehash: 679d53787b1392181696c05e0327ca1b1b910015
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f2bed49cf69d812659aae0cee398a735b3b42dbe
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84357498"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100484178"
 ---
 # <a name="how-to-compute-column-values-in-a-csv-text-file-linq-visual-basic"></a>Como: calcular valores de coluna em um arquivo de texto CSV (LINQ) (Visual Basic)
 
@@ -147,7 +148,7 @@ A consulta funciona usando o método <xref:System.String.Split%2A> para converte
 
 Crie um projeto de aplicativo de console Visual Basic, com uma `Imports` instrução para o namespace System. Linq.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ e cadeias de caracteres (Visual Basic)](linq-and-strings.md)
 - [LINQ e diretórios de arquivos (Visual Basic)](linq-and-file-directories.md)

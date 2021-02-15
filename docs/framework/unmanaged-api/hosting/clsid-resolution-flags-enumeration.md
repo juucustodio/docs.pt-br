@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração de CLSID_RESOLUTION_FLAGS'
 title: Enumeração CLSID_RESOLUTION_FLAGS
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: cd8b9879-962a-4811-aa46-2e2b6bae0d84
 topic_type:
 - apiref
-ms.openlocfilehash: 5ac015f958d9504bbd14a66ead86548b8df32764
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 54d334147e13217f8ce20dae1b139cdc6d11a3b8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616769"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799870"
 ---
 # <a name="clsid_resolution_flags-enumeration"></a>Enumeração CLSID_RESOLUTION_FLAGS
+
 Contém valores que indicam como o Common Language Runtime (CLR) deve resolver um `CLSID` .  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,18 +37,19 @@ typedef enum {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`CLSID_RESOLUTION_DEFAULT`|Indica o comportamento padrão.|  
 |`CLSID_RESOLUTION_REGISTERED`|Indica que o tempo de execução pesquisa o registro e aplica a política Shim.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Hospedando enumerações](hosting-enumerations.md)

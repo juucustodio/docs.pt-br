@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como gravar informações de evento em um arquivo de texto (Visual Basic)'
 title: 'Como: gravar informações de evento em um arquivo de texto'
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - text files [Visual Basic], writing event information to a text file
 - events [Visual Basic], writing event information to a text file
 ms.assetid: 9ca7cc03-bf99-4933-9e5e-61ee28e9a6b4
-ms.openlocfilehash: 6e83f8450ca7be8a2dcd5ff43eab3dd2ec0d2f1b
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: eb6fab9976c010080c0cffa37edd4f790dc73956
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410056"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775130"
 ---
 # <a name="how-to-write-event-information-to-a-text-file-visual-basic"></a>Como gravar informações de evento em um arquivo de texto (Visual Basic)
 
@@ -66,7 +67,7 @@ Use o método `My.Application.Log.WriteEntry` ou `My.Application.Log.WriteExcept
 
 Depois de configurar o ouvinte de log de arquivos para um assembly, ele receberá todas as mensagens que `My.Application.Log` grava desse assembly.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
 - <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A>

@@ -1,5 +1,6 @@
 ---
-title: Propriedade SmiOrderProperty.Item (SQLServer)
+description: 'Saiba mais sobre a propriedade: SmiOrderProperty. Item'
+title: Propriedade SmiOrderProperty. Item (Microsoft. SqlServer. Server)
 author: stevestein
 ms.author: sstein
 ms.date: 12/20/2018
@@ -13,18 +14,18 @@ api_location:
 - System.Data.dll
 api_type:
 - Assembly
-ms.openlocfilehash: e2d8788f610d80c30baf51bff0131f0834d59fcd
-ms.sourcegitcommit: 8699383914c24a0df033393f55db3369db728a7b
+ms.openlocfilehash: fc2151d3f36a6746e80e2fd6d611a803b2c3162e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65634582"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767980"
 ---
-# <a name="smiorderpropertyitem-property"></a>Propriedade SmiOrderProperty.Item
+# <a name="smiorderpropertyitem-property"></a>Propriedade SmiOrderProperty. Item
 
-Obtém a ordem das colunas para a entidade. O assembly que contém essa propriedade tem uma relação de amigo com SQLAccess.dll. Ele é destinado a uso pelo SQL Server. Para outros bancos de dados, use o mecanismo de hospedagem fornecido pelo banco de dados.
+Obtém a ordem da coluna para a entidade. O assembly que contém essa propriedade tem uma relação Friend com SQLAccess.dll. Ele é destinado ao uso por SQL Server. Para outros bancos de dados, use o mecanismo de hospedagem fornecido por esse banco.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```csharp
 internal SmiColumnOrder Item { get; }
@@ -37,14 +38,14 @@ A ordem das colunas.
 ## <a name="remarks"></a>Comentários
 
 > [!WARNING]
-> O `SmiOrderProperty.Item` propriedade é interna e não se destina a ser usado diretamente em seu código.
+> A `SmiOrderProperty.Item` propriedade é interna e não deve ser usada diretamente no seu código.
 >
-> Microsoft não suporta o uso dessa propriedade em um aplicativo de produção sob nenhuma circunstância.
+> A Microsoft não oferece suporte ao uso dessa propriedade em um aplicativo de produção em nenhuma circunstância.
 
 ## <a name="requirements"></a>Requisitos
 
 **Namespace:** <xref:Microsoft.SqlServer.Server>
 
-**Assembly:** System. Data (em dll)
+**Assembly:** System.Data (em System.Data.dll)
 
-**Versões do .NET framework:** Disponível desde o 2.0.
+**.NET Framework versões:** Disponível desde 2,0.

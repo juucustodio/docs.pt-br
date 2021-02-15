@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: transferência'
 title: Transferência
 ms.date: 03/30/2017
 ms.assetid: dfcfa36c-d3bb-44b4-aa15-1c922c6f73e6
-ms.openlocfilehash: 52b0cf35a2f8bab17252d3711f3143738c2bc39c
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: ce88a71d87c7dd09f321ee58f603f7c4672a6df9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84587762"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99758054"
 ---
 # <a name="transfer"></a>Transferência
+
 Este tópico descreve a transferência no modelo de rastreamento de atividades do Windows Communication Foundation (WCF).  
   
 ## <a name="transfer-definition"></a>Definição de transferência  
+
  As transferências entre as atividades representam as relações causal entre os eventos nas atividades relacionadas nos pontos de extremidade. Duas atividades estão relacionadas com transferências quando os fluxos de controle entre essas atividades, por exemplo, uma chamada de método que atravessa limites de atividade. No WCF, quando bytes são recebidos no serviço, a atividade escutar na é transferida para a atividade receber bytes em que o objeto de mensagem é criado. Para obter uma lista de cenários de rastreamento de ponta a ponta e suas respectivas atividades e design de rastreamento, consulte [cenários de rastreamento de ponta a ponta](end-to-end-tracing-scenarios.md).  
   
  Para emitir rastreamentos de transferência, use a `ActivityTracing` configuração na origem do rastreamento, conforme demonstrado pelo código de configuração a seguir.  
@@ -22,6 +25,7 @@ Este tópico descreve a transferência no modelo de rastreamento de atividades d
 ```  
   
 ## <a name="using-transfer-to-correlate-activities-within-endpoints"></a>Usando a transferência para correlacionar atividades nos pontos de extremidade  
+
  Atividades e transferências permitem que o usuário Probabilistic localize a causa raiz de um erro. Por exemplo, se transferimos para frente e para trás entre as atividades M e N, respectivamente nos componentes M e N, e uma falha ocorre em N logo após a transferência de volta para M, podemos desenhar a conclusão de que é provável que a passagem de N dados volte para M.  
   
  Um rastreamento de transferência é emitido da atividade M para a atividade N quando há um fluxo de controle entre M e N. Por exemplo, N executa algum trabalho para M devido a uma chamada de método que atravessa os limites das atividades. N pode já existir ou ter sido criado. N é gerado por M quando N é uma nova atividade que executa algum trabalho para M.  
@@ -33,6 +37,7 @@ Este tópico descreve a transferência no modelo de rastreamento de atividades d
  Uma relação de aninhamento não existe necessariamente entre as atividades M e N. Isso pode ocorrer devido a dois motivos. Primeiro, quando a atividade M não monitora o processamento real executado em N, embora M iniciado N. Em segundo lugar, quando N já existir.  
   
 ## <a name="example-of-transfers"></a>Exemplo de transferências  
+
  O exemplo a seguir lista dois exemplos de transferência.  
   
 - Quando você cria um host de serviço, o Construtor Obtém o controle do código de chamada ou o código de chamada transfere para o construtor. Quando o Construtor conclui a execução, ele retorna o controle para o código de chamada ou o Construtor transfere de volta para o código de chamada. Esse é o caso de uma relação aninhada.  
@@ -40,6 +45,7 @@ Este tópico descreve a transferência no modelo de rastreamento de atividades d
 - Quando um ouvinte inicia o processamento de dados de transporte, ele cria um novo thread e passa para a atividade receber bytes o contexto apropriado para processamento, passagem de controle e dados. Quando esse thread terminar de processar a solicitação, a atividade receber bytes não passará nada de volta para o ouvinte. Nesse caso, temos uma transferência no, mas nenhuma transferência para fora da nova atividade thread. As duas atividades estão relacionadas, mas não aninhadas.  
   
 ## <a name="activity-transfer-sequence"></a>Sequência de transferência de atividade  
+
  Uma sequência de transferência de atividade bem formada inclui as etapas a seguir.  
   
 1. Inicie uma nova atividade, que consiste em selecionar um novo gAId.  
@@ -102,9 +108,9 @@ Trace.CorrelationManager.ActivityId = oldGuid;
 ts.TraceEvent(TraceEventType.Resume, 667, "Resume: Activity " + i-1);  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Configurando o rastreamento](configuring-tracing.md)
 - [Utilizando o visualizador de rastreamento de serviço para visualização de rastreamento correlacionados e soluções de problemas](using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)
 - [Cenários de rastreamento ponta a ponta](end-to-end-tracing-scenarios.md)
-- [Ferramenta Visualizador de rastreamento de serviço (SvcTraceViewer.exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md)
+- [Ferramenta Visualizador de Rastreamento de Serviço (SvcTraceViewer.exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md)

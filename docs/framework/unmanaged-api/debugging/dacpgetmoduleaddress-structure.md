@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura DacpGetModuleAddress'
 title: Estrutura DacpGetModuleAddress
 ms.date: 01/16/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: cshung
 ms.author: andrewau
-ms.openlocfilehash: e460264e2393858c028ba51aec4a4f2c01649994
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: 3de76cc4f15bffd35d7a43ae25a313eb2fe59b82
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860831"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661591"
 ---
 # <a name="dacpgetmoduleaddress-structure"></a>Estrutura DacpGetModuleAddress
 
@@ -39,7 +40,7 @@ struct DacpGetModuleAddress
 
 ## <a name="members"></a>Membros
 
-| Membro      | Descrição                |
+| Membro      | DESCRIÇÃO                |
 | ----------- | -------------------------- |
 | `ModulePtr` | O ponteiro para o módulo. |
 
@@ -51,15 +52,16 @@ struct DacpGetModuleAddress
 
 ## <a name="remarks"></a>Comentários
 
-Essa estrutura reside dentro do tempo de execução e não é exposta por nenhum cabeçalho ou arquivo de biblioteca. Para usá-lo, defina a estrutura conforme especificado acima, `CLRDATA_ADDRESS` em que é um inteiro sem sinal de 64 bits.
+Essa estrutura reside dentro do tempo de execução e não é exposta por nenhum cabeçalho ou arquivo de biblioteca. Para usá-lo, defina a estrutura conforme especificado acima, em que `CLRDATA_ADDRESS` é um inteiro sem sinal de 64 bits.
 
 ## <a name="requirements"></a>Requisitos
+
 **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
 **Cabeçalho:** None  
 **Biblioteca:** None  
 **.NET Framework versões:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depuração](index.md)
 - [Estruturas de depuração](debugging-structures.md)

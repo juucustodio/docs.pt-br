@@ -3,14 +3,15 @@ title: Implementar um Gerenciador de Recursos
 description: Implemente um Gerenciador de recursos no .NET. Um Gerenciador de recursos gerencia os recursos usados em transações. Um Gerenciador de transações coordena as ações do Gerenciador de recursos.
 ms.date: 03/30/2017
 ms.assetid: d5c153f6-4419-49e3-a5f1-a50ae4c81bf3
-ms.openlocfilehash: bf40c6eaee35a5a548c6de4a286e46c4d4a66aca
-ms.sourcegitcommit: 6219b1e1feccb16d88656444210fed3297f5611e
+ms.openlocfilehash: e6370f6b544255ebdc402f06b7977d4a3a587c32
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85141843"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91182890"
 ---
 # <a name="implementing-a-resource-manager"></a>Implementar um Gerenciador de Recursos
+
 Cada recurso usado em uma transação é gerenciado por um Gerenciador de recursos, as ações são coordenadas por um Gerenciador de transações. Gerenciadores de recursos trabalham em cooperação com o Gerenciador de transações para fornecer o aplicativo com uma garantia de atomicidade e isolamento. Microsoft SQL Server, filas de mensagens duráveis, tabelas de hash em memória são exemplos de gerenciadores de recursos.  
   
  Um Gerenciador de recursos gerencia dados duráveis ou voláteis. A durabilidade (ou o inverso a volatilidade) de um recurso Gerenciador refere-se ao Gerenciador de recursos oferece suporte a recuperação de falhas. Se um Gerenciador de recursos oferece suporte à recuperação de falha, ele persiste os dados para o armazenamento durável durante da Fase1 (preparar), de modo que, se o Gerenciador de recursos de ficar inativo, ele pode novamente se inscrever na transação após a recuperação e executar as ações apropriadas com base em notificações recebidas do Gerenciador de transações. Em geral, os gerenciadores de recursos voláteis gerenciar recursos voláteis, como uma estrutura de dados na memória (por exemplo, na memória transacionado-hashtable) e gerenciadores de recursos duráveis gerenciar recursos em um repositório de backup mais persistente (por exemplo, um banco de dados cujo armazenamento de backup em disco).  
@@ -34,6 +35,7 @@ Cada recurso usado em uma transação é gerenciado por um Gerenciador de recurs
  O <xref:System.Transactions.Transaction> classe também fornece o <xref:System.Transactions.Transaction.EnlistPromotableSinglePhase%2A> método para inscrever um podem ser promovidas única fase de inscrição (PSPE). Isso permite que um recurso durável manager (RM) para hospedar e "proprietário" de uma transação que posteriormente pode ser escalonada para ser gerenciado pelo MSDTC se necessário. Para obter mais informações sobre isso, consulte [otimização usando confirmação de fase única e notificação de fase única de promoçãotable](optimization-spc-and-promotable-spn.md).  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  As etapas que geralmente seguidas por um Gerenciador de recursos são descritas nos tópicos a seguir.  
   
  [Inscrever recursos como participantes em uma transação](enlisting-resources-as-participants-in-a-transaction.md)  

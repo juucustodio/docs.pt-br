@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 6679e38aefa7d61ce430dc5375ff3b35c641ea27
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "72394040"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96032246"
 ---
 ### <a name="identity-signinasync-throws-exception-for-unauthenticated-identity"></a>Identidade: o SignInAsync gera uma exceção para a identidade não autenticada
 
@@ -12,7 +12,7 @@ Por padrão, `SignInAsync` o gera uma exceção para entidades/identidades em qu
 
 #### <a name="version-introduced"></a>Versão introduzida
 
-3,0
+3.0
 
 #### <a name="old-behavior"></a>Comportamento antigo
 

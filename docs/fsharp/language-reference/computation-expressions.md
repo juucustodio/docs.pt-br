@@ -4,12 +4,12 @@ description: 'Saiba como criar uma sintaxe conveniente para escrever computaçõ
 ms.date: 08/15/2020
 f1_keywords:
 - let!_FS
-ms.openlocfilehash: 1649d8c57ea9e025d40ef6d39d92b96795964150
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: a0a71533ea1bc87b75f028ad0d416326f627672a
+ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88812153"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96739295"
 ---
 # <a name="computation-expressions"></a>Expressões de computação
 
@@ -111,7 +111,7 @@ let squares =
     }
 
 for sq in squares do
-    printfn "%d" sq
+    printfn $"%d{sq}"
 ```
 
 Na maioria dos casos, ele pode ser omitido por chamadores. A maneira mais comum de omitir `yield` é com o `->` operador:
@@ -123,7 +123,7 @@ let squares =
     }
 
 for sq in squares do
-    printfn "%d" sq
+    printfn $"%d{sq}"
 ```
 
 Para expressões mais complexas que podem produzir muitos valores diferentes, e talvez condicionalmente, simplesmente omitir a palavra-chave pode fazer:
@@ -167,7 +167,7 @@ let squaresAndCubes =
         yield! cubes
     }
 
-printfn "%A" squaresAndCubes // Prints - 1; 4; 9; 1; 8; 27
+printfn $"{squaresAndCubes}"  // Prints - 1; 4; 9; 1; 8; 27
 ```
 
 Quando avaliado, a expressão de computação chamada por `yield!` terá seus itens devolvidos um-por-um, mesclando o resultado.
@@ -181,7 +181,7 @@ Ao contrário `yield` de, `yield!` deve ser especificado explicitamente. Seu com
 A `return` palavra-chave encapsula um valor no tipo correspondente à expressão de computação. Além das expressões de computação usando `yield` o, ele é usado para "Concluir" uma expressão de computação:
 
 ```fsharp
-let req = // 'req' is of type is 'Async<data>'
+let req = // 'req' is of type 'Async<data>'
     async {
         let! data = fetch url
         return data
@@ -198,7 +198,7 @@ let result = Async.RunSynchronously req
 A `return!` palavra-chave percebe o valor de uma expressão de computação e encapsulamentos que resultam no tipo correspondente à expressão de computação:
 
 ```fsharp
-let req = // 'req' is of type is 'Async<data>'
+let req = // 'req' is of type 'Async<data>'
     async {
         return! fetch url
     }
@@ -390,7 +390,7 @@ let eventually = new EventuallyBuilder()
 
 let comp = eventually {
     for x in 1..2 do
-        printfn " x = %d" x
+        printfn $" x = %d{x}"
     return 3 + 4 }
 
 // Try the remaining lines in F# interactive to see how this

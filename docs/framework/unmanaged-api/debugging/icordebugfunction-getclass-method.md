@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugFunction:: GetClass'
 title: Método ICorDebugFunction::GetClass
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 27967230-144f-40d3-9e23-961d0241abd9
 topic_type:
 - apiref
-ms.openlocfilehash: 7a089831c39c36b0f8a0c7746e95a96e4ddfc5d9
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 09049962082bc51cc47a56b0de591a26c2ef93fc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83209390"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99692583"
 ---
 # <a name="icordebugfunctiongetclass-method"></a>Método ICorDebugFunction::GetClass
+
 Obtém um objeto ICorDebugClass que representa a classe da qual essa função é membro.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,10 +36,12 @@ HRESULT GetClass (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ppClass`  
  fora Um ponteiro para o endereço do `ICorDebugClass` objeto que representa a classe, ou NULL, se essa função não for um membro de uma classe.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

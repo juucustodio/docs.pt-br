@@ -1,17 +1,19 @@
 ---
+description: "Saiba mais sobre: o método ' <methodname> ' não pode ser chamado com <number> argumentos"
 title: O método '<methodname>' não pode ser chamado com argumentos <number>
 ms.date: 07/20/2015
 f1_keywords:
 - vbrNoMethodTakingXArguments2
 ms.assetid: 23260199-b6a4-469f-b75f-4a3d8d25e2cc
-ms.openlocfilehash: 1f8dedf6797f16e61eb44875f28f4ed9ea787540
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 903c71c98691ea497514d8a06c781fc1199e1dd8
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84402103"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429995"
 ---
 # <a name="method-methodname-cannot-be-called-with-number-arguments"></a>O método '\<methodname>' não pode ser chamado com argumentos \<number>
+
 Uma chamada de método contém o número errado de argumentos.  
   
 ## <a name="to-correct-this-error"></a>Para corrigir este erro  
@@ -22,6 +24,6 @@ Uma chamada de método contém o número errado de argumentos.
   
 3. Ajuste o número de argumentos se os dois números não concordarem.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Passar argumentos por valor e por referência](../programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

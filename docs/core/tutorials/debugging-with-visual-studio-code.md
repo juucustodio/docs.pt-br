@@ -1,21 +1,21 @@
 ---
-title: Depurar um aplicativo de console do .NET Core usando Visual Studio Code
-description: Saiba como depurar um aplicativo de console do .NET Core usando Visual Studio Code.
+title: Depurar um aplicativo de console .NET usando Visual Studio Code
+description: Saiba como depurar um aplicativo de console do .NET usando Visual Studio Code.
 ms.date: 05/26/2020
-ms.openlocfilehash: 8e84747256551b633a5bf74b72723ba8d2840d52
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 7215ed4a93b31ebac313c04708734667148c4e02
+ms.sourcegitcommit: 30fef5b0ed76e334377d28fa8e80159b29353e10
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89118293"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96556103"
 ---
-# <a name="tutorial-debug-a-net-core-console-application-using-visual-studio-code"></a>Tutorial: Depurar um aplicativo de console do .NET Core usando Visual Studio Code
+# <a name="tutorial-debug-a-net-console-application-using-visual-studio-code"></a>Tutorial: Depurar um aplicativo de console .NET usando o Visual Studio Code
 
-Este tutorial apresenta as ferramentas de depuração disponíveis no Visual Studio Code para trabalhar com aplicativos .NET Core.
+Este tutorial apresenta as ferramentas de depuração disponíveis no Visual Studio Code para trabalhar com aplicativos .NET.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- Este tutorial funciona com o aplicativo de console que você cria em [criar um aplicativo de console do .NET Core usando Visual Studio Code](with-visual-studio-code.md).
+- Este tutorial funciona com o aplicativo de console que você cria em [criar um aplicativo de console .NET usando Visual Studio Code](with-visual-studio-code.md).
 
 ## <a name="use-debug-build-configuration"></a>Usar configuração de compilação de depuração
 
@@ -25,9 +25,9 @@ Na configuração de depuração, um programa é compilado com informações de 
 
 Por padrão, Visual Studio Code configurações de inicialização usam a configuração de compilação de depuração, portanto, você não precisa alterá-la antes da depuração.
 
-1. Iniciar o Visual Studio Code.
+1. Inicie o Visual Studio Code.
 
-1. Abra a pasta do projeto que você criou em [criar um aplicativo de console .NET Core usando Visual Studio Code](with-visual-studio-code.md).
+1. Abra a pasta do projeto que você criou em [criar um aplicativo de console .NET usando Visual Studio Code](with-visual-studio-code.md).
 
 ## <a name="set-a-breakpoint"></a>Definir um ponto de interrupção
 
@@ -43,25 +43,17 @@ Um *ponto de interrupção* interrompe temporariamente a execução do aplicativ
 
 ## <a name="set-up-for-terminal-input"></a>Configurar para entrada de terminal
 
-O ponto de interrupção está localizado após uma `Console.ReadLine` chamada de método. O **console de depuração** não aceita a entrada de terminal para um programa em execução. Para lidar com a entrada de terminal durante a depuração, você pode usar o terminal integrado (um dos Visual Studio Code Windows) ou um terminal externo. Para este tutorial, você usa o terminal integrado.
+O ponto de interrupção está localizado após uma `Console.ReadLine` chamada de método. O **console de depuração** não aceita a entrada de terminal para um programa em execução. Para lidar com a entrada de terminal durante a depuração, você pode usar o terminal integrado (uma das janelas do Visual Studio Code) ou um terminal externo. Neste tutorial, você usa o terminal integrado.
 
-1. Abra *. vscode/launch.jsem*.
+1. Abra *.vscode/launch.json*.
 
-1. Altere a `console` configuração para `integratedTerminal` .
-
-   De:
-
-   ```json
-   "console": "internalConsole",
-   ```
-
-   Para:
+1. Altere a `console` configuração de `internalConsole` para `integratedTerminal` :
 
    ```json
    "console": "integratedTerminal",
    ```
 
-1. Salve suas alterações.
+1. Salve as alterações.
 
 ## <a name="start-debugging"></a>Iniciar a depuração
 
@@ -71,7 +63,7 @@ O ponto de interrupção está localizado após uma `Console.ReadLine` chamada d
 
 1. Selecione a seta verde na parte superior do painel, ao lado de **inicialização do .NET Core (console)**. Outras maneiras de iniciar o programa no modo de depuração são pressionar <kbd>F5</kbd> ou escolher **executar**  >  **Iniciar Depuração** no menu.
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/start-debugging.png" alt-text="Iniciar a depuração":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/start-debugging.png" alt-text="Iniciar Depuração":::
 
 1. Selecione a guia **terminal** para ver o "Qual é seu nome?" avisar que o programa é exibido antes de aguardar uma resposta.
 
@@ -173,7 +165,7 @@ Visual Studio Code também permite que você percorra linha por linha por meio d
 
 1. Selecione **executar**  >  **etapa em** ou pressione <kbd>F11</kbd>.
 
-   Visual Studio Code executa o `Console.WriteLine` para o prompt de nome e realça a próxima linha de execução. A próxima linha é o `Console.ReadLine` para o `name` . A janela **variáveis** é inalterada e a guia **terminal** mostra o "Qual é seu nome?" "Quem é o proprietário deste computador?".
+   Visual Studio Code executa o `Console.WriteLine` para o prompt de nome e realça a próxima linha de execução. A próxima linha é o `Console.ReadLine` para o `name` . A janela **variáveis** é inalterada e a guia **terminal** mostra o "Qual é seu nome?" aviso.
 
 1. Selecione **executar**  >  **etapa em** ou pressione <kbd>F11</kbd>.
 
@@ -203,7 +195,7 @@ Visual Studio Code também permite que você percorra linha por linha por meio d
 
    O terminal exibe "Pressione qualquer tecla para sair..."
 
-1. Pressione qualquer tecla para sair do programa.
+1. Pressione qualquer tecla para encerrar o programa.
 
 ## <a name="use-release-build-configuration"></a>Usar a configuração de Build de versão
 
@@ -224,4 +216,4 @@ dotnet run --configuration Release
 Neste tutorial, você usou Visual Studio Code ferramentas de depuração. No próximo tutorial, você publica uma versão implantável do aplicativo.
 
 > [!div class="nextstepaction"]
-> [Publicar um aplicativo de console do .NET Core usando Visual Studio Code](publishing-with-visual-studio-code.md)
+> [Publicar um aplicativo de console .NET usando Visual Studio Code](publishing-with-visual-studio-code.md)

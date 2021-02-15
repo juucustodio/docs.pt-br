@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <assemblyBinding> elemento para <runtime>'
 title: Elemento <assemblyBinding> para <runtime>
 ms.date: 03/30/2017
 f1_keywords:
@@ -8,21 +9,22 @@ helpviewer_keywords:
 - assemblyBinding element
 - container tags, <assemblyBinding> element
 ms.assetid: 964cbb35-ab49-4498-8471-209689e5dada
-ms.openlocfilehash: 202b063ad3f0f9696cdc12aff434d61fe5a813e6
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: a797b541f9f13852234872f1eb2fc68a2eac727d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79154316"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99719221"
 ---
 # <a name="assemblybinding-element-for-runtime"></a>Elemento \<assemblyBinding> para \<runtime>
+
 Contém informações sobre o redirecionamento de versão e os locais dos assemblies.  
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<assemblyBinding>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
       <assemblyBinding
@@ -31,6 +33,7 @@ Contém informações sobre o redirecionamento de versão e os locais dos assemb
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -57,6 +60,7 @@ Contém informações sobre o redirecionamento de versão e os locais dos assemb
 |`runtime`|Contém informações sobre associação do assembly e coleta de lixo.|  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir mostra como redirecionar uma versão do assembly para outra e fornecer uma codebase.  
   
 ```xml  
@@ -90,8 +94,8 @@ Contém informações sobre o redirecionamento de versão e os locais dos assemb
 </runtime>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações do runtime](index.md)
-- [Esquema de arquivos de configuração](../index.md)
+- [Esquema do arquivo de configuração](../index.md)
 - [Redirecionando versões de assembly](../../redirect-assembly-versions.md)

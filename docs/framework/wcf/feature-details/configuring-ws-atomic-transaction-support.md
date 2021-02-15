@@ -1,35 +1,36 @@
 ---
+description: 'Saiba mais sobre: configurar o suporte a transações WS-Atomic'
 title: Configurando suporte de transações de WS-Atomic
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WS-AT protocol [WCF], configuring WS-Atomic Transaction
 ms.assetid: cb9f1c9c-1439-4172-b9bc-b01c3e09ac48
-ms.openlocfilehash: d396ccdaca81eab74de5e20d7ba7a9a00acbf7a6
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: c9b732bd0d6b6aa8cb1cf04803ae302a00348987
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597469"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780538"
 ---
 # <a name="configure-ws-atomic-transaction-support"></a>Configurar o suporte à transação WS-Atomic
 
-Este tópico descreve como você pode configurar o suporte a WS-AtomicTransaction (WS-AT) usando o utilitário de configuração WS-AT.
+Este tópico descreve como você pode configurar o suporte do WS-AtomicTransaction (WS-AT) usando o utilitário de configuração WS-AT.
 
 ## <a name="use-the-ws-at-configuration-utility"></a>Usar o utilitário de configuração WS-AT
 
-O utilitário de configuração WS-AT (wsatConfig. exe) é usado para definir configurações WS-AT. Para habilitar o serviço de protocolo WS-AT, você deve usar o utilitário de configuração do para configurar a porta HTTPS para WS-AT, associar um certificado X. 509 à porta HTTPS e configurar certificados de parceiros autorizados especificando nomes de entidades de certificado ou impressões digitais. O utilitário de configuração também permite que você selecione o modo de rastreamento e defina o tempo limite de saída padrão e máximo de transações de entrada.
+O utilitário de configuração WS-AT (wsatConfig.exe) é usado para definir as configurações WS-AT. Para habilitar o serviço de protocolo WS-AT, você deve usar o utilitário de configuração do para configurar a porta HTTPS para WS-AT, associar um certificado X. 509 à porta HTTPS e configurar certificados de parceiros autorizados especificando nomes de entidades de certificado ou impressões digitais. O utilitário de configuração também permite que você selecione o modo de rastreamento e defina o tempo limite de saída padrão e máximo de transações de entrada.
 
 Você pode acessar a funcionalidade dessa ferramenta usando um snap-in de página de propriedades do console de gerenciamento Microsoft (MMC) no console de gerenciamento dos serviços de componentes ou em uma janela de linha de comando. Configure o suporte do WS-AT no computador local por meio da janela de linha de comando; Defina as configurações em máquinas locais e remotas usando o snap-in do MMC.
 
 A janela de linha de comando pode ser acessada no local de instalação do SDK do Windows "%WINDIR%\Microsoft.NET\Framework\v3.0\Windows Communication Foundation".
 
-Para obter mais informações sobre a ferramenta de linha de comando, consulte [Utilitário de configuração do WS-AtomicTransaction (wsatConfig. exe)](../ws-atomictransaction-configuration-utility-wsatconfig-exe.md).
+Para obter mais informações sobre a ferramenta de linha de comando, consulte [Utilitário de configuração do WS-AtomicTransaction (wsatConfig.exe)](../ws-atomictransaction-configuration-utility-wsatconfig-exe.md).
 
-Se você estiver executando o Windows XP ou o Windows Server 2003, poderá acessar o snap-in do MMC navegando até **painel de controle/ferramentas administrativas/serviços de componentes**, clicando com o botão direito do mouse em **meu computador**e selecionando **Propriedades**. Esse é o mesmo local em que você pode configurar o Microsoft Coordenador de Transações Distribuídas (MSDTC). As opções disponíveis para configuração são agrupadas na guia **WS-AT** . Se você estiver executando o Windows Vista ou o Windows Server 2008, o snap-in do MMC pode ser encontrado clicando no botão **Iniciar** e digitando `dcomcnfg.exe` na caixa de **pesquisa** . Quando o MMC for aberto, navegue até o nó **minhas Computer\Distributed Transaction COORDINATOR\LOCAL DTC** , clique com o botão direito e selecione **Propriedades**. As opções disponíveis para configuração são agrupadas na guia **WS-AT** .
+Se você estiver executando o Windows XP ou o Windows Server 2003, poderá acessar o snap-in do MMC navegando até **painel de controle/ferramentas administrativas/serviços de componentes**, clicando com o botão direito do mouse em **meu computador** e selecionando **Propriedades**. Esse é o mesmo local em que você pode configurar o Microsoft Coordenador de Transações Distribuídas (MSDTC). As opções disponíveis para configuração são agrupadas na guia **WS-AT** . Se você estiver executando o Windows Vista ou o Windows Server 2008, o snap-in do MMC pode ser encontrado clicando no botão **Iniciar** e digitando `dcomcnfg.exe` na caixa de **pesquisa** . Quando o MMC for aberto, navegue até o nó **minhas Computer\Distributed Transaction COORDINATOR\LOCAL DTC** , clique com o botão direito e selecione **Propriedades**. As opções disponíveis para configuração são agrupadas na guia **WS-AT** .
 
 Para obter mais informações sobre o snap-in, consulte o [snap-in MMC de configuração do WS-AtomicTransaction](../ws-atomictransaction-configuration-mmc-snap-in.md).
 
-Para habilitar a interface do usuário da ferramenta, você deve primeiro registrar o arquivo WsatUI. dll, localizado no seguinte caminho
+Para habilitar a interface do usuário da ferramenta, você deve primeiro registrar o arquivo de WsatUI.dll, localizado no seguinte caminho
 
 %PROGRAMFILES%\Microsoft SDKs\Windows\v6.0\Bin
 
@@ -39,19 +40,19 @@ Para registrar o produto, execute o seguinte comando em uma janela de prompt de 
 
 ## <a name="enable-ws-at"></a>Habilitar WS-AT
 
-Para habilitar o serviço de protocolo WS-AT dentro do MSDTC usando a porta 443 e um certificado X. 509 com uma chave privada que foi instalada no repositório do computador local, use a ferramenta wsatConfig. exe com o comando a seguir.
+Para habilitar o serviço de protocolo WS-AT dentro do MSDTC usando a porta 443 e um certificado X. 509 com uma chave privada que foi instalada no repositório do computador local, use a ferramenta wsatConfig.exe com o comando a seguir.
 
 `WsatConfig.exe –network:enable –port:8443 –endpointCert:<machine|"Issuer\SubjectName"> -accountsCerts:<thumbprint|"Issuer\SubjectName"> -restart`
 
 Substitua os respectivos parâmetros pelos valores relevantes para o seu ambiente.
 
-Para desabilitar o serviço de protocolo WS-AT dentro do MSDTC, use a ferramenta wsatConfig. exe com o comando a seguir.
+Para desabilitar o serviço de protocolo WS-AT dentro do MSDTC, use a ferramenta wsatConfig.exe com o comando a seguir.
 
 `WsatConfig.exe –network:disable -restart`
 
 ## <a name="configure-trust-between-two-machines"></a>Configurar a confiança entre dois computadores
 
-O serviço de protocolo WS-AT exige que o administrador autorize explicitamente contas individuais para participar de transações distribuídas. Se você for um administrador de dois computadores, poderá configurar ambos os computadores para estabelecer uma relação de confiança mútua, trocando o conjunto correto de certificados entre os computadores, instalando-os nos repositórios de certificados apropriados e usando a ferramenta wsatConfig. exe para adicionar o certificado de cada computador à lista de certificados de participante autorizados. Essa etapa é necessária para executar transações distribuídas entre dois computadores usando WS-AT.
+O serviço de protocolo WS-AT exige que o administrador autorize explicitamente contas individuais para participar de transações distribuídas. Se você for um administrador de dois computadores, poderá configurar ambos os computadores para estabelecer uma relação de confiança mútua, trocando o conjunto correto de certificados entre os computadores, instalando-os nos repositórios de certificados apropriados e usando a ferramenta de wsatConfig.exe para adicionar o certificado de cada computador à lista de certificados de participante autorizados. Essa etapa é necessária para executar transações distribuídas entre dois computadores usando WS-AT.
 
 No exemplo a seguir, descreve as etapas para estabelecer a confiança entre duas máquinas, A e B.
 
@@ -59,7 +60,7 @@ No exemplo a seguir, descreve as etapas para estabelecer a confiança entre duas
 
 Esse procedimento requer o snap-in de certificados do MMC. O snap-in pode ser acessado abrindo o menu Iniciar/Executar, digitando "MMC" na caixa de entrada e pressionando OK. Em seguida, na janela **Console1** , navegue até o snap-in **arquivo/adicionar-remover** , clique em Adicionar e escolha **certificados** na lista **snap-ins Autônomos disponíveis** . Por fim, selecione a **conta de computador** a ser gerenciada e clique em **OK**. O nó **certificados** é exibido no console do snap-in do.
 
-Você já deve ter os certificados necessários para estabelecer confiança. Para saber como criar e instalar novos certificados antes das etapas a seguir, consulte [como: criar e instalar certificados de cliente temporários no WCF durante o desenvolvimento](https://docs.microsoft.com/previous-versions/msp-n-p/ff650751(v=pandp.10)).
+Você já deve ter os certificados necessários para estabelecer confiança. Para saber como criar e instalar novos certificados antes das etapas a seguir, consulte [como: criar e instalar certificados de cliente temporários no WCF durante o desenvolvimento](/previous-versions/msp-n-p/ff650751(v=pandp.10)).
 
 1. No computador A, usando o snap-in de certificados do MMC, importe o certificado (certa) existente para o LocalMachine\MY (nó pessoal) e o repositório LocalMachine\ROOT (nó de autoridade de certificação raiz confiável). Para importar um certificado para um nó específico, clique com o botão direito do mouse no nó e escolha **todas as tarefas/importar**.
 
@@ -102,7 +103,7 @@ Ao implantar o MSDTC, o administrador deve garantir que qualquer intercâmbio de
 
 ## <a name="tracing"></a>Rastreamento
 
-O serviço de protocolo WS-AT dá suporte ao rastreamento integrado, específico da transação, que pode ser habilitado e gerenciado por meio do uso da ferramenta de [snap-in MMC de configuração do WS-AtomicTransaction](../ws-atomictransaction-configuration-mmc-snap-in.md) . Os rastreamentos podem incluir dados indicando a hora em que uma inscrição é feita para uma transação específica, a hora em que uma transação atinge seu estado de terminal, o resultado que cada inscrição de transação recebeu. Todos os rastreamentos podem ser exibidos usando a ferramenta do [Visualizador de rastreamento de serviço (SvcTraceViewer. exe)](../service-trace-viewer-tool-svctraceviewer-exe.md) .
+O serviço de protocolo WS-AT dá suporte ao rastreamento integrado, específico da transação, que pode ser habilitado e gerenciado por meio do uso da ferramenta de [snap-in MMC de configuração do WS-AtomicTransaction](../ws-atomictransaction-configuration-mmc-snap-in.md) . Os rastreamentos podem incluir dados indicando a hora em que uma inscrição é feita para uma transação específica, a hora em que uma transação atinge seu estado de terminal, o resultado que cada inscrição de transação recebeu. Todos os rastreamentos podem ser exibidos usando a ferramenta do [Visualizador de rastreamento de serviço (SvcTraceViewer.exe)](../service-trace-viewer-tool-svctraceviewer-exe.md) .
 
 O serviço de protocolo WS-AT também dá suporte ao rastreamento de ServiceModel integrado por meio da sessão de rastreamento ETW. Isso fornece rastreamentos mais detalhados e específicos de comunicação, além dos rastreamentos de transação existentes.  Para habilitar esses rastreamentos adicionais, siga estas etapas
 
@@ -128,5 +129,5 @@ O serviço de protocolo WS-AT também dá suporte ao rastreamento de ServiceMode
 
 ## <a name="see-also"></a>Consulte também
 
-- [Utilitário de configuração de WS-AtomicTransaction (wsatConfig.exe)](../ws-atomictransaction-configuration-utility-wsatconfig-exe.md)
+- [Utilitário de configuração de transações WS-Atomic (wsatConfig.exe)](../ws-atomictransaction-configuration-utility-wsatconfig-exe.md)
 - [Snap-in do MMC de configuração de WS-AtomicTransaction](../ws-atomictransaction-configuration-mmc-snap-in.md)

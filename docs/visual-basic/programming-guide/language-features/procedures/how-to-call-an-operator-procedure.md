@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como chamar um procedimento de operador (Visual Basic)'
 title: Como chamar um procedimento de operador
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,14 +12,15 @@ helpviewer_keywords:
 - overloaded operators [Visual Basic], calling
 - operator overloading
 ms.assetid: 0dce42cc-f0b0-4c14-9f62-018b21f33497
-ms.openlocfilehash: fa2bc5417b8b917ff48502a5bd0a4daa21fab67e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f58d12ac5e4c9071646073184f7824946c00b39b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84388563"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100472599"
 ---
 # <a name="how-to-call-an-operator-procedure-visual-basic"></a>Como chamar um procedimento de operador (Visual Basic)
+
 Você chama um procedimento de operador usando o símbolo de operador em uma expressão. No caso de um operador de conversão, você chama a [função CType](../../../language-reference/functions/ctype-function.md) para converter um valor de um tipo de dados para outro.  
   
  Você não chama os procedimentos de operador explicitamente. Basta usar o operador, ou a `CType` função, em uma instrução de atribuição ou em uma expressão, da mesma maneira que você usa um operador normalmente. Visual Basic faz a chamada para o procedimento de operador.  
@@ -39,9 +41,10 @@ Você chama um procedimento de operador usando o símbolo de operador em uma exp
   
 2. Verifique se os tipos de dados dos operandos são apropriados para a conversão e na ordem correta.  
   
-3. `CType`chama o procedimento de operador de conversão e retorna o valor convertido.  
+3. `CType` chama o procedimento de operador de conversão e retorna o valor convertido.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir cria duas <xref:System.TimeSpan> estruturas, adiciona-as juntas e armazena o resultado em uma terceira <xref:System.TimeSpan> estrutura. A <xref:System.TimeSpan> estrutura define os procedimentos de operador para sobrecarregar vários operadores padrão.  
   
  [!code-vb[VbVbcnProcedures#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#29)]  
@@ -51,9 +54,10 @@ Você chama um procedimento de operador usando o símbolo de operador em uma exp
  Para obter um exemplo de como chamar um procedimento de operador de conversa, consulte [como: usar uma classe que define operadores](./how-to-use-a-class-that-defines-operators.md).  
   
 ## <a name="compile-the-code"></a>Compilar o código  
+
  Certifique-se de que a classe ou estrutura que você está usando define o operador que você deseja usar.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos do operador](./operator-procedures.md)
 - [Como definir um operador](./how-to-define-an-operator.md)

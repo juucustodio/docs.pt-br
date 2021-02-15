@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: BC2004: memória insuficiente'
 title: Sem memória (erro do compilador do Visual Basic)
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,32 +8,33 @@ f1_keywords:
 helpviewer_keywords:
 - BC2004
 ms.assetid: 6bc0939c-e279-4875-a91c-f4076860b5b9
-ms.openlocfilehash: 11f5d6b034600ae4f669be86eea927a7ed5cc16f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 6cef35c1351a72ac83108d2e8422ee8a5c076022
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84413021"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795502"
 ---
-# <a name="out-of-memory-visual-basic-compiler-error"></a>Sem memória (erro do compilador do Visual Basic)
-Foi necessária mais memória do que a disponível.  
-  
- **ID do erro:** BC2004  
-  
-## <a name="to-correct-this-error"></a>Para corrigir este erro  
-  
-- Feche aplicativos desnecessários, documentos e arquivos de origem.  
-  
-- Elimine controles e formulários desnecessários para que menos sejam carregados ao mesmo tempo  
-  
-- Reduza o número de `Public` variáveis.  
-  
-- Verifique o espaço em disco disponível.  
-  
-- Aumente a RAM disponível instalando memória adicional ou realocando memória.  
-  
-- Certifique-se de que a memória seja liberada quando não for mais necessária.  
-  
-## <a name="see-also"></a>Confira também
+# <a name="bc2004-out-of-memory"></a>BC2004: memória insuficiente
+
+Foi necessária mais memória do que a disponível.
+
+ **ID do erro:** BC2004
+
+## <a name="to-correct-this-error"></a>Para corrigir este erro
+
+- Feche aplicativos desnecessários, documentos e arquivos de origem.
+
+- Elimine controles e formulários desnecessários para que menos sejam carregados ao mesmo tempo
+
+- Reduza o número de `Public` variáveis.
+
+- Verifique o espaço em disco disponível.
+
+- Aumente a RAM disponível instalando memória adicional ou realocando memória.
+
+- Certifique-se de que a memória seja liberada quando não for mais necessária.
+
+## <a name="see-also"></a>Consulte também
 
 - [Tipos de erro](../../programming-guide/language-features/error-types.md)

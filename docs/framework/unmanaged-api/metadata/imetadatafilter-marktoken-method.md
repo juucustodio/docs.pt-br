@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataFilter:: MarkToken'
 title: Método IMetaDataFilter::MarkToken
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: bd492834-6529-4d39-b93d-f8cdbd3e297f
 topic_type:
 - apiref
-ms.openlocfilehash: 28a5f79f6fa8d25fd254c4093b0f76e0308edbad
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 97191533ae7d2bdc951521f1929a4c001c521b9d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84492519"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99677768"
 ---
 # <a name="imetadatafiltermarktoken-method"></a>Método IMetaDataFilter::MarkToken
+
 Define um valor que indica que o token de metadados especificado foi processado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,18 +36,20 @@ HRESULT MarkToken (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `tk`  
  no O token a ser marcado como processado.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataFilter](imetadatafilter-interface.md)

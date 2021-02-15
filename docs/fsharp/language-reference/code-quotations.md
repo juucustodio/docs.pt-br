@@ -2,16 +2,16 @@
 title: Citações de código
 description: 'Saiba mais sobre as cotações de código F #, um recurso de linguagem que permite gerar e trabalhar com expressões de código F # programaticamente.'
 ms.date: 08/13/2020
-ms.openlocfilehash: 070e127397a5da7d70281d08ef7cafdb9b4f4fe5
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: dc37fdbd6cd29e5ee94e5c0186dfe2bfeb666f32
+ms.sourcegitcommit: f99115e12a5eb75638abe45072e023a3ce3351ac
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88558329"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94557188"
 ---
 # <a name="code-quotations"></a>Cotações de código
 
-Este artigo descreve as *Cotações de código*, um recurso de linguagem que permite gerar e trabalhar com expressões de código F # programaticamente. Esse recurso permite gerar uma árvore de sintaxe abstrata que representa o código F #. A árvore de sintaxe abstrata pode ser atravessada e processada de acordo com as necessidades do seu aplicativo. Por exemplo, você pode usar a árvore para gerar código F # ou gerar código em alguma outra linguagem.
+Este artigo descreve as *Cotações de código* , um recurso de linguagem que permite gerar e trabalhar com expressões de código F # programaticamente. Esse recurso permite gerar uma árvore de sintaxe abstrata que representa o código F #. A árvore de sintaxe abstrata pode ser atravessada e processada de acordo com as necessidades do seu aplicativo. Por exemplo, você pode usar a árvore para gerar código F # ou gerar código em alguma outra linguagem.
 
 ## <a name="quoted-expressions"></a>Expressões entre aspas
 
@@ -37,6 +37,21 @@ Mas as expressões a seguir são válidas.
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-3/snippet502.fs)]
 
 Para avaliar as cotações de F #, você deve usar o [avaliador de cotação f #](https://github.com/fsprojects/FSharp.Quotations.Evaluator). Ele fornece suporte para avaliar e executar objetos de expressão F #.
+
+As cotações de F # também mantêm informações de restrição de tipo. Considere o exemplo a seguir:
+
+```fsharp
+open FSharp.Linq.RuntimeHelpers
+
+let eval q = LeafExpressionConverter.EvaluateQuotation q
+
+let inline negate x = -x
+// val inline negate: x: ^a ->  ^a when  ^a : (static member ( ~- ) :  ^a ->  ^a)
+
+<@ negate 1.0 @>  |> eval
+```
+
+A restrição gerada pela `inline` função é mantida no código qutoation. O `negate` formulário quotated da função agora pode ser avaliado.
 
 ## <a name="expr-type"></a>Tipo de expr
 
@@ -95,6 +110,6 @@ O código em outras ramificações de padrão ativo apenas gera a mesma árvore 
 1 + Module1.mul(2,Module1.mul(3,4))
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de linguagem F #](index.md)

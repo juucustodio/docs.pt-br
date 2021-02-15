@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <discoveryEndpoint>'
 title: <discoveryEndpoint>
 ms.date: 03/30/2017
 ms.assetid: fae2f48b-a635-4e4b-859d-a1432ac37e1c
-ms.openlocfilehash: 32b14f8fb3235040a51455f2099a403c8312c699
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 32be673aac9604d8285d002640f11a29b9545afb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70855400"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802301"
 ---
 # \<discoveryEndpoint>
 
@@ -18,7 +19,7 @@ Este elemento de configuração define um ponto de extremidade padrão com um co
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<standardEndpoints>**](standardendpoints.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<discoveryEndpoint>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.serviceModel>
@@ -58,7 +59,7 @@ Nenhum.
   
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir demonstra um serviço de escuta nas mensagens de descoberta por meio de um transporte de multicast de rede par. O exemplo especifica explicitamente a versão de abril de 2005 de WS-Discovery.  
+O exemplo a seguir demonstra um serviço de escuta nas mensagens de descoberta por meio de um transporte de multicast de rede par. O exemplo especifica explicitamente WS-Discovery versão de abril de 2005.  
   
 A configuração de ponto de extremidade padrão é definida por serviço e não pode ser compartilhada entre o serviço. Se outro serviço quiser ter o mesmo ponto de extremidade de descoberta, a mesma configuração precisará ser adicionada à seção desse serviço.  
   

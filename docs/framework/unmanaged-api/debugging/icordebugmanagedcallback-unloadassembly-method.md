@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugManagedCallback:: UnloadAssembly'
 title: Método ICorDebugManagedCallback::UnloadAssembly
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 6734321c-c8a9-401f-a558-cad715ec4a77
 topic_type:
 - apiref
-ms.openlocfilehash: 07996a78d7f559de587c8a3eb2babfc06675169d
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: b1860e90ba2bab1428a0f8559d18801136bbbb39
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83212640"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99660330"
 ---
 # <a name="icordebugmanagedcallbackunloadassembly-method"></a>Método ICorDebugManagedCallback::UnloadAssembly
+
 Notifica o depurador de que um assembly Common Language Runtime foi descarregado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,6 +37,7 @@ HRESULT UnloadAssembly (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pAppDomain`  
  no Um ponteiro para um objeto ICorDebugAppDomain que representa o domínio do aplicativo que continha o assembly.  
   
@@ -42,9 +45,11 @@ HRESULT UnloadAssembly (
  no Um ponteiro para um objeto ICorDebugAssembly que representa o assembly.  
   
 ## <a name="remarks"></a>Comentários  
+
  O assembly não deve ser usado após este retorno de chamada.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -53,7 +58,7 @@ HRESULT UnloadAssembly (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método LoadAssembly](icordebugmanagedcallback-loadassembly-method.md)
 - [Interface ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)

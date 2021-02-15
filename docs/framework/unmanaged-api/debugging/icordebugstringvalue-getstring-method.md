@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugStringValue:: GetString'
 title: Método ICorDebugStringValue::GetString
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 2b94bda7-09ee-435d-91b9-c4e31af1896c
 topic_type:
 - apiref
-ms.openlocfilehash: 9c154d4ad561e0bd9d82adaca77d2e30f11a5237
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 06e8e039c8b0afb7753a398302a9b32eb3ba7213
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379660"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99717333"
 ---
 # <a name="icordebugstringvaluegetstring-method"></a>Método ICorDebugStringValue::GetString
+
 Obtém a cadeia de caracteres referenciada por este ICorDebugStringValue.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,6 +39,7 @@ HRESULT GetString (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `cchString`  
  no O tamanho da `szString` matriz.  
   
@@ -47,6 +50,7 @@ HRESULT GetString (
  fora Uma matriz que armazena a cadeia de caracteres recuperada.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

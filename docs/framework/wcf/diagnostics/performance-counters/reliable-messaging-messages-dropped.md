@@ -1,16 +1,19 @@
 ---
+description: 'Saiba mais sobre: mensagens de mensagens confiáveis eliminadas'
 title: Mensagens Confiáveis Ignoradas
 ms.date: 03/30/2017
 ms.assetid: 9933abaa-33ec-4245-b083-bf94415929b5
-ms.openlocfilehash: 889c860fe8c1f119992d516e7ecfd8cb847ec938
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: b4e835a9573139f5817dbd639d4645c502c0eba5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61916052"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752737"
 ---
 # <a name="reliable-messaging-messages-dropped"></a>Mensagens Confiáveis Ignoradas
-Nome do contador: Sessões de Reliable Messaging descartado.  
+
+Nome do contador: sessões de mensagens confiáveis eliminadas.  
   
 ## <a name="description"></a>Descrição  
- Número total de mensagens confiáveis que foram descartados nesse serviço.
+
+ Número total de mensagens de mensagens confiáveis que foram descartadas neste serviço.

@@ -1,19 +1,22 @@
 ---
+description: 'Saiba mais sobre: misturar protocolos de confiança em cenários federados'
 title: Misturando protocolos confiáveis em cenários federados
 ms.date: 03/30/2017
 ms.assetid: d7b5fee9-2246-4b09-b8d7-9e63cb817279
-ms.openlocfilehash: 18f486b9de83db48e186bb3856aff6cc6ccb56b1
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: f882b3728ed791f611a9f71f32840e68d8e17a1d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64606505"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733717"
 ---
 # <a name="mixing-trust-protocols-in-federated-scenarios"></a>Misturando protocolos confiáveis em cenários federados
-Pode haver situações em que os clientes federados se comunicar com um serviço e um serviço de Token de segurança (STS) que não têm a mesma versão de confiança. O serviço WSDL pode conter um `RequestSecurityTokenTemplate` asserção com elementos de WS-Trust que são de versões diferentes do que o STS. Nesses casos, um cliente do Windows Communication Foundation (WCF) converte os elementos de WS-Trust proveniente do `RequestSecurityTokenTemplate` para coincidir com o STS confiar versão. WCF trata versões incompatíveis confiança apenas para associações padrão. Todos os parâmetros de algoritmo padrão que são reconhecidos por WCF fazem parte da associação padrão. Este tópico descreve o comportamento do WCF com várias configurações de confiança entre o serviço e o STS.  
+
+Pode haver cenários em que os clientes federados se comunicam com um serviço e um serviço de token de segurança (STS) que não têm a mesma versão de confiança. O serviço WSDL pode conter uma `RequestSecurityTokenTemplate` asserção com WS-Trust elementos que são de versões diferentes do STS. Nesses casos, um cliente Windows Communication Foundation (WCF) converte os elementos de WS-Trust recebidos do `RequestSecurityTokenTemplate` para corresponder à versão de confiança do STS. O WCF lida com versões de confiança incompatíveis apenas para associações padrão. Todos os parâmetros de algoritmo padrão que são reconhecidos pelo WCF fazem parte da associação padrão. Este tópico descreve o comportamento do WCF com várias configurações de confiança entre o serviço e o STS.  
   
-## <a name="rp-feb-2005-and-sts-feb-2005"></a>RP de fevereiro de 2005 e fevereiro de 2005 do STS  
- O WSDL para terceiros da terceira parte confiável (RP) contém os seguintes elementos dentro de `RequestSecurityTokenTemplate` seção:  
+## <a name="rp-feb-2005-and-sts-feb-2005"></a>RP fev 2005 e STS fevereiro de 2005  
+
+ O WSDL para a parte confiável (RP) contém os seguintes elementos na `RequestSecurityTokenTemplate` seção:  
   
 - `CanonicalizationAlgorithm`  
   
@@ -29,10 +32,11 @@ Pode haver situações em que os clientes federados se comunicar com um serviço
   
  O arquivo de configuração do cliente contém uma lista de parâmetros.  
   
- O WCF não consegue diferenciar entre os parâmetros de cliente e o serviço; Adiciona todos os parâmetros e as envia no `RequestSecurityTokenTemplate` (RST).  
+ O WCF não pode diferenciar os parâmetros de cliente e de serviço; Ele adiciona todos os parâmetros e os envia no `RequestSecurityTokenTemplate` (RST).  
   
-## <a name="rp-trust-13-and-sts-trust-13"></a>Relação de confiança RP 1.3 e STS Trust 1.3  
- O WSDL para RP contém os seguintes elementos dentro de `RequestSecurityTokenTemplate` seção:  
+## <a name="rp-trust-13-and-sts-trust-13"></a>RP Trust 1,3 e o STS Trust 1,3  
+
+ O WSDL para RP contém os seguintes elementos na `RequestSecurityTokenTemplate` seção:  
   
 - `CanonicalizationAlgorithm`  
   
@@ -48,12 +52,13 @@ Pode haver situações em que os clientes federados se comunicar com um serviço
   
 - `KeyWrapAlgorithm`  
   
- O arquivo de configuração de cliente contém um `secondaryParameters` elemento que encapsula os parâmetros especificados pela RP.  
+ O arquivo de configuração do cliente contém um `secondaryParameters` elemento que encapsula os parâmetros especificados pela RP.  
   
- O WCF remove o `EncryptionAlgorithm`, `CanonicalizationAlgorithm` e `KeyWrapAlgorithm` elementos do elemento de nível superior sob o RST se elas estiverem presentes dentro a `SecondaryParameters` elemento. O WCF anexa o `SecondaryParameters` elemento RST de saída sem modificações.  
+ O WCF remove `EncryptionAlgorithm` os `CanonicalizationAlgorithm` `KeyWrapAlgorithm` elementos e do elemento de nível superior sob o RST, se eles estiverem presentes dentro do `SecondaryParameters` elemento. O WCF anexa o `SecondaryParameters` elemento ao RST de saída sem modificações.  
   
-## <a name="rp-trust-feb-2005-and-sts-trust-13"></a>Relação de confiança RP fevereiro de 2005 e o STS Trust 1.3  
- O WSDL para RP contém os seguintes elementos de `RequestSecurityTokenTemplate` seção:  
+## <a name="rp-trust-feb-2005-and-sts-trust-13"></a>RP confiável fev 2005 e confiança STS 1,3  
+
+ O WSDL para RP contém os seguintes elementos na `RequestSecurityTokenTemplate` seção:  
   
 - `CanonicalizationAlgorithm`  
   
@@ -69,18 +74,19 @@ Pode haver situações em que os clientes federados se comunicar com um serviço
   
  O arquivo de configuração do cliente contém uma lista de parâmetros.  
   
- Do arquivo de configuração de cliente, o WCF não consegue diferenciar entre os parâmetros de serviço e cliente. Portanto, o WCF converte todos os parâmetros em um namespace de versão 1.3 da relação de confiança.  
+ No arquivo de configuração do cliente, o WCF não pode diferenciar os parâmetros do serviço e do cliente. Portanto, o WCF converte todos os parâmetros em um namespace da versão de confiança 1,3.  
   
- Alças do WCF a `KeyType`, `KeySize`, e `TokenType` elementos da seguinte maneira:  
+ O WCF manipula `KeyType` os `KeySize` elementos, e da `TokenType` seguinte maneira:  
   
-- Baixar WSDL, criar uma associação e atribua `KeyType`, `KeySize`, e `TokenType` dos parâmetros de RP. O arquivo de configuração do cliente é gerado.  
+- Baixe o WSDL, crie a associação e atribua `KeyType` , `KeySize` e `TokenType` dos parâmetros de RP. O arquivo de configuração do cliente é gerado.  
   
 - O cliente agora pode alterar qualquer parâmetro no arquivo de configuração.  
   
-- Durante o tempo de execução, o WCF copia todos os parâmetros especificados para o `AdditionalTokenParameters` seção do arquivo de configuração do cliente, exceto `KeyType`, `KeySize` e `TokenType`, porque esses parâmetros sejam levados em conta durante o arquivo de configuração geração.  
+- Durante o tempo de execução, o WCF copia todos os parâmetros especificados na `AdditionalTokenParameters` seção do arquivo de configuração do cliente `KeyType` , exceto, `KeySize` e `TokenType` , porque esses parâmetros são contabilizados durante a geração do arquivo de configuração.  
   
-## <a name="rp-trust-13-and-sts-trust-feb-2005"></a>Relação de confiança RP 1.3 e STS Trust fevereiro de 2005  
- O WSDL para RP contém os seguintes elementos de `RequestSecurityTokenTemplate` seção:  
+## <a name="rp-trust-13-and-sts-trust-feb-2005"></a>RP Trust 1,3 e a confiança STS de fevereiro de 2005  
+
+ O WSDL para RP contém os seguintes elementos na `RequestSecurityTokenTemplate` seção:  
   
 - `CanonicalizationAlgorithm`  
   
@@ -96,6 +102,6 @@ Pode haver situações em que os clientes federados se comunicar com um serviço
   
 - `KeyWrapAlgorithm`  
   
- O arquivo de configuração de cliente contém um `secondaryParamters` elemento que encapsula os parâmetros especificados pela RP.  
+ O arquivo de configuração do cliente contém um `secondaryParamters` elemento que encapsula os parâmetros especificados pela RP.  
   
- WCF copia todos os parâmetros especificados dentro de `SecondaryParameters` seção ao elemento RST de nível superior, mas não convertê-los para o namespace do WS-Trust de 2005.
+ O WCF copia todos os parâmetros especificados na `SecondaryParameters` seção para o elemento RST de nível superior, mas não os converte para o namespace 2005 WS-Trust.

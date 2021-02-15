@@ -1,15 +1,17 @@
 ---
-title: <certificate>do <clientCertificate> elemento
+description: 'Saiba mais sobre: <certificate> do <clientCertificate> elemento'
+title: <certificate> do <clientCertificate> elemento
 ms.date: 03/30/2017
 ms.assetid: 00297efb-a7f2-4e03-bc2b-943d545610fc
-ms.openlocfilehash: d0c4ef9d3657d2dfa787feb3576beda09d1997a3
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: a677c04055016c77794dd99a8c237b5eb6c13f5f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70400541"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639088"
 ---
-# <a name="certificate-of-clientcertificate-element"></a>\<certificate>do \<clientCertificate> elemento
+# <a name="certificate-of-clientcertificate-element"></a>\<certificate> do \<clientCertificate> elemento
+
 Especifica um certificado X. 509 usado para assinar e criptografar mensagens.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -21,7 +23,7 @@ Especifica um certificado X. 509 usado para assinar e criptografar mensagens.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<clientCertificate>**](clientcertificate-of-servicecredentials.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<certificate>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <certificate findValue="String"
@@ -31,6 +33,7 @@ Especifica um certificado X. 509 usado para assinar e criptografar mensagens.
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai  
   
 ### <a name="attributes"></a>Atributos  
@@ -43,6 +46,7 @@ Especifica um certificado X. 509 usado para assinar e criptografar mensagens.
 |`X509FindType`|Define o tipo de pesquisa de X.509 a ser executada. Os valores válidos incluem os seguintes:<br /><br /> -FindByThumbPrint<br />-FindBySubjectName<br />- FindBySubjectDistinguishedName<br />- FindByIssuerName<br />- FindByIssuerDistinguishedName<br />- FindBySerialNumber<br />- FindByTimeValid<br />- FindByTimeNotYetValid<br />- FindByTemplateName<br />- FindByApplicationPolicy<br />- FindByCertificatePolicy<br />- FindByExtension<br />- FindByKeyUsage<br />- FindBySubjectKeyIdentifier<br /><br /> O tipo contido no `findValue` atributo deve atender aos requisitos do X509FindType especificado.<br /><br /> O valor padrão é FindBySubjectDistinguishedName.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -52,9 +56,11 @@ Especifica um certificado X. 509 usado para assinar e criptografar mensagens.
 |[\<clientCertificate>](clientcertificate-of-servicecredentials.md)||  
   
 ## <a name="remarks"></a>Comentários  
+
  O `<certificate>` elemento é usado quando o serviço deve ter o certificado do cliente com antecedência para se comunicar com segurança com o cliente. Isso ocorre ao usar o padrão de comunicação duplex. No padrão de solicitação/resposta mais comum, o cliente inclui seu certificado na solicitação, que o serviço usa para criptografar e assinar sua resposta para o cliente. No padrão de comunicação duplex, no entanto, o serviço não tem uma solicitação do cliente e, portanto, precisa do certificado do cliente com antecedência para proteger a mensagem para o cliente. Portanto, você deve obter o certificado do cliente em uma negociação fora de banda e especificar o certificado usando esse elemento. Para obter mais informações sobre os serviços duplex, consulte [como: criar um contrato duplex](../../../wcf/feature-details/how-to-create-a-duplex-contract.md).  
   
 ## <a name="example"></a>Exemplo  
+
  O código a seguir especifica como encontrar um certificado X. 509 apropriado e um tipo de validação personalizado no `<authentication>` elemento.  
   
 ```xml  
@@ -75,11 +81,11 @@ Especifica um certificado X. 509 usado para assinar e criptografar mensagens.
 </serviceBehaviors>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.Certificate%2A>
 - <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement.Certificate%2A>
 - <xref:System.ServiceModel.Configuration.X509ClientCertificateCredentialsElement>
 - [Comportamentos de segurança](../../../wcf/feature-details/security-behaviors-in-wcf.md)
-- [Como criar um serviço que utiliza um validador de certificado personalizado](../../../wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md)
+- [Como: criar um serviço que utiliza um validador de certificado personalizado](../../../wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md)
 - [Trabalhando com certificados](../../../wcf/feature-details/working-with-certificates.md)

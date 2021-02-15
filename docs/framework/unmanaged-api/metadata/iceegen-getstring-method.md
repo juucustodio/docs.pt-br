@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICeeGen:: GetString'
 title: Método ICeeGen::GetString
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 7cc22562-128c-440a-9147-55ff20f173d7
 topic_type:
 - apiref
-ms.openlocfilehash: b7b15261d825c1bd5f217c4cecd82ed36a716d0e
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 227b4badff3265fc22f1c76301ba03e58fea34c6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008255"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706884"
 ---
 # <a name="iceegengetstring-method"></a>Método ICeeGen::GetString
+
 Obtém a cadeia de caracteres armazenada no endereço virtual relativo especificado.  
   
  Este método é obsoleto e não deve ser usado.  
@@ -37,6 +39,7 @@ HRESULT GetString (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `RVA`  
  no O endereço virtual relativo da cadeia de caracteres a ser retornada.  
   
@@ -44,14 +47,15 @@ HRESULT GetString (
  fora A cadeia de caracteres retornada.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICeeGen](iceegen-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: serviços de One-Way'
 title: Serviços unidirecionais
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,14 +7,15 @@ helpviewer_keywords:
 - WCF [WCF], one-way service contracts
 - service contracts [WCF], defining one-way
 ms.assetid: 19053a36-4492-45a3-bfe6-0365ee0205a3
-ms.openlocfilehash: 0d69af40e4b9a0133e44b64b45466f9aac84ffe2
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: c614db0103506022da72e8f4659ae09e8b949a27
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84598743"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733691"
 ---
 # <a name="one-way-services"></a>Serviços unidirecionais
+
 O comportamento padrão de uma operação de serviço é o padrão de solicitação-resposta. Em um padrão de solicitação-resposta, o cliente aguarda a mensagem de resposta, mesmo que a operação de serviço seja representada no código como um `void` método. Com uma operação unidirecional, apenas uma mensagem é transmitida. O receptor não envia uma mensagem de resposta, nem o remetente espera uma.  
   
  Use o padrão de design unidirecional:  
@@ -43,7 +45,8 @@ public interface IOneWayCalculator
   
  Para obter um exemplo completo, consulte o exemplo [unidirecional](../samples/one-way.md) .  
   
-## <a name="clients-blocking-with-one-way-operations"></a>Clientes bloqueando com operações unidirecionais  
+## <a name="clients-blocking-with-one-way-operations"></a>Clientes bloqueando com operações de One-Way  
+
  É importante perceber que, enquanto alguns aplicativos unidirecionais retornam assim que os dados de saída são gravados na conexão de rede, em vários cenários a implementação de uma associação ou de um serviço pode fazer com que um cliente WCF bloqueie usando operações unidirecionais. Em aplicativos cliente WCF, o objeto cliente WCF não retorna até que os dados de saída tenham sido gravados na conexão de rede. Isso é verdadeiro para todos os padrões de troca de mensagens, incluindo operações unidirecionais; Isso significa que qualquer problema ao gravar os dados no transporte impede que o cliente retorne. Dependendo do problema, o resultado pode ser uma exceção ou um atraso no envio de mensagens para o serviço.  
   
  Por exemplo, se o transporte não puder localizar o ponto de extremidade, uma <xref:System.ServiceModel.EndpointNotFoundException?displayProperty=nameWithType> exceção será lançada sem muito atraso. No entanto, também é possível que o serviço não possa ler os dados fora do fio por algum motivo, o que impede que a operação de envio de transporte do cliente seja retornada. Nesses casos, se o <xref:System.ServiceModel.Channels.Binding.SendTimeout%2A?displayProperty=nameWithType> período na associação de transporte do cliente for excedido, um <xref:System.TimeoutException?displayProperty=nameWithType> será lançado — mas não até que o período de tempo limite seja excedido. Também é possível acionar tantas mensagens em um serviço que o serviço não pode processá-las após um determinado ponto. Nesse caso também, o cliente unidirecional é bloqueado até que o serviço possa processar as mensagens ou até que uma exceção seja gerada.  

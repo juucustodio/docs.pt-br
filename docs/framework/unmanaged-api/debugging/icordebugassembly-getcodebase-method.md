@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugAssembly:: getCodeBase'
 title: Método ICorDebugAssembly::GetCodeBase
 ms.date: 03/30/2017
 api_name:
@@ -15,15 +16,16 @@ helpviewer_keywords:
 ms.assetid: 48adc154-9058-4fef-9c43-e9aad80e4dbf
 topic_type:
 - apiref
-ms.openlocfilehash: b348f29884eb7d359c5dd6df27af49cd748477c1
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 9774ffe69089305909aab68f2164bfd9e59b3e94
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79178975"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711954"
 ---
 # <a name="icordebugassemblygetcodebase-method"></a>Método ICorDebugAssembly::GetCodeBase
-Este método não é implementado na versão atual do .NET Framework.  
+
+Este método não está implementado na versão atual do .NET Framework.  
   
 ## <a name="syntax"></a>Sintaxe  
   

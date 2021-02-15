@@ -3,18 +3,18 @@ title: Recomendações de hospedagem do Azure para aplicativos Web ASP.NET Core
 description: Projetar aplicativos Web modernos com o ASP.NET Core e o Azure | Recomendações de hospedagem do Azure para aplicativos Web ASP.NET Core
 author: ardalis
 ms.author: wiwagn
-ms.date: 06/06/2019
-ms.openlocfilehash: 547654e77812481daffc9a03ccd28d3d2f6b5f09
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.date: 12/01/2020
+ms.openlocfilehash: c209a7fa9ce89e12466424f750d5583a59f8b980
+ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87164429"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96851712"
 ---
 # <a name="azure-hosting-recommendations-for-aspnet-core-web-apps"></a>Recomendações de hospedagem do Azure para aplicativos Web ASP.NET Core
 
 > "Líderes de linha de negócios do mundo todo estão passando por cima dos departamentos de TI para obter aplicativos da nuvem (também conhecidos como SaaS) e pagando por eles como se fossem uma assinatura de revista. E quando o serviço não é mais necessário, eles podem cancelar a assinatura sem nenhum equipamento deixado inutilizado no canto."  
-> _\-Daryl Plummer, analista da Gartner_
+> _\- Daryl Plummer, analista da Gartner_
 
 Quaisquer que sejam as necessidades e a arquitetura de seu aplicativo, o Microsoft Azure pode dar suporte a elas. Suas necessidades de hospedagem podem variar de um simples site estático até aplicativos extremamente sofisticados compostos por dezenas de serviços. Para aplicativos Web ASP.NET Core monolíticos e os serviços de suporte, há várias configurações bem conhecidas que são recomendadas. As recomendações neste artigo são agrupadas com base no tipo de recurso a ser hospedado, seja para aplicativos completos, processos individuais ou dados.
 
@@ -44,7 +44,7 @@ Os Aplicativos Web do Serviço de Aplicativo oferecem uma plataforma totalmente 
 
 - Integração com o Visual Studio.
 
-O Serviço de Aplicativo do Azure é a melhor opção para a maioria dos aplicativos Web. A implantação e o gerenciamento estão integrados na plataforma, os sites podem ser dimensionados rapidamente para suportar altas cargas de tráfego e o gerenciador de balanceamento de carga e tráfego integrado oferece alta disponibilidade. Você pode mover os sites existentes para o Serviço de Aplicativo do Azure com facilidade usando uma ferramenta de migração online, usar um aplicativo de software livre por meio da Galeria de Aplicativos Web ou criar um novo site usando a estrutura e as ferramentas de sua escolha. O recurso WebJobs facilita a adição de um processamento de trabalho em segundo plano ao aplicativo Web do Serviço de Aplicativo. Se você tem um aplicativo ASP.NET hospedado no local usando um banco de dados, há um caminho claro de migração para um Aplicativo Web do Serviço de Aplicativo com um Banco de Dados SQL do Azure (ou acesso seguro ao servidor de banco de dados local, se preferir).
+O Serviço de Aplicativo do Azure é a melhor opção para a maioria dos aplicativos Web. A implantação e o gerenciamento estão integrados na plataforma, os sites podem ser dimensionados rapidamente para suportar altas cargas de tráfego e o gerenciador de balanceamento de carga e tráfego integrado oferece alta disponibilidade. Você pode mover os sites existentes para Azure App serviço facilmente com uma ferramenta de migração online. Você pode usar um aplicativo de software livre na Galeria de aplicativos Web ou criar um novo site usando a estrutura e as ferramentas de sua escolha. O recurso WebJobs facilita a adição de um processamento de trabalho em segundo plano ao aplicativo Web do Serviço de Aplicativo. Se você tiver um aplicativo ASP.NET existente hospedado localmente usando um banco de dados local, há um caminho claro para migrar. Você pode usar o aplicativo Web do serviço de aplicativo com um banco de dados SQL do Azure (ou acesso seguro ao seu servidor de banco de dados local, se for preferencial).
 
 ![Estratégia de migração recomendada para aplicativos .NET locais no Serviço de Aplicativo do Azure](./media/image1-6.png)
 
@@ -54,13 +54,13 @@ Além dos aplicativos não otimizados para a nuvem, os Aplicativos Web do Servi�
 
 ![Arquitetura básica do Azure](./media/image1-5.png)
 
-Um pequeno número de recursos de um único grupo geralmente é suficiente para gerenciar esse aplicativo. Aplicativos que normalmente são implantados como uma única unidade, em vez serem compostos de muitos processos separados, são bons candidatos para essa [abordagem arquitetural básica](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app). Embora tenha uma arquitetura simples, essa abordagem ainda permite que o aplicativo hospedado seja expandido verticalmente (mais recursos por nó) e horizontalmente (mais nós hospedados), para atender a qualquer aumento de demanda. Com dimensionamento automático, o aplicativo pode ser configurado para ajustar automaticamente o número de nós que hospedam o aplicativo com base na demanda e na carga média nos nós.
+Um pequeno número de recursos de um único grupo geralmente é suficiente para gerenciar esse aplicativo. Aplicativos que normalmente são implantados como uma única unidade, em vez serem compostos de muitos processos separados, são bons candidatos para essa [abordagem arquitetural básica](/azure/architecture/reference-architectures/app-service-web-app/basic-web-app). Embora tenha uma arquitetura simples, essa abordagem ainda permite que o aplicativo hospedado seja expandido verticalmente (mais recursos por nó) e horizontalmente (mais nós hospedados), para atender a qualquer aumento de demanda. Com dimensionamento automático, o aplicativo pode ser configurado para ajustar automaticamente o número de nós que hospedam o aplicativo com base na demanda e na carga média nos nós.
 
 ### <a name="app-service-web-apps-for-containers"></a>Aplicativos Web do Serviço de Aplicativo para Contêineres
 
-Além do suporte à hospedagem de aplicativos Web diretamente, os [Aplicativos Web do Serviço de Aplicativo para Contêineres](https://azure.microsoft.com/services/app-service/containers/) podem ser usados para fazer execuções em contêiner no Windows e no Linux. Usando esse serviço, você pode implantar e executar facilmente aplicativos em contêiner que podem ser usados em grande escala na sua empresa. Os aplicativos têm todos os recursos dos Aplicativos Web do Serviço de Aplicativo listados acima. Além disso, os Aplicativos Web para Contêineres dão suporte a CI/CD simplificado com Docker Hub, Registro de Contêiner do Azure e GitHub. É possível usar o Azure DevOps para definir pipelines de criação e implantação que publicam as alterações em um registro. Essas alterações podem ser testadas em um ambiente de preparação e implantadas automaticamente na produção usando slots de implantação, o que possibilita atualizações sem tempo de inatividade. A reversão para versões anteriores pode ser feita com a mesma facilidade.
+Além do suporte à hospedagem de aplicativos Web diretamente, os [Aplicativos Web do Serviço de Aplicativo para Contêineres](https://azure.microsoft.com/services/app-service/containers/) podem ser usados para fazer execuções em contêiner no Windows e no Linux. Usando esse serviço, você pode implantar e executar facilmente aplicativos em contêiner que podem ser usados em grande escala na sua empresa. Os aplicativos têm todos os recursos dos Aplicativos Web do Serviço de Aplicativo listados acima. Além disso, os aplicativos Web para contêineres dão suporte a CI/CD simplificado com o Hub do Docker, o registro de contêiner do Azure e o GitHub. É possível usar o Azure DevOps para definir pipelines de criação e implantação que publicam as alterações em um registro. Essas alterações podem ser testadas em um ambiente de preparação e implantadas automaticamente na produção usando slots de implantação, o que possibilita atualizações sem tempo de inatividade. A reversão para versões anteriores pode ser feita com a mesma facilidade.
 
-Há alguns cenários em que os Aplicativos Web para Contêineres fazem mais sentido. Se você tiver aplicativos que podem ser colocados em contêiner, seja em contêineres Windows ou Linux, poderá hospedá-los facilmente usando esse conjunto de ferramentas. Basta publicar o contêiner e configurar os Aplicativos Web para Contêineres para extrair a versão mais recente dessa imagem do registro de sua escolha. Essa é uma abordagem "lift and shift" para migrar de modelos clássicos de hospedagem de aplicativos para um modelo otimizado para nuvem.
+Há alguns cenários em que os aplicativos Web para contêineres fazem mais sentido. Se você tiver aplicativos que podem ser colocados em contêiner, seja em contêineres Windows ou Linux, poderá hospedá-los facilmente usando esse conjunto de ferramentas. Basta publicar o contêiner e, em seguida, configurar os aplicativos Web para contêineres para extrair a versão mais recente dessa imagem do registro de sua escolha. Essa é uma abordagem "lift and shift" para migrar de modelos clássicos de hospedagem de aplicativos para um modelo otimizado para nuvem.
 
 ![Migrar aplicativos .NET em contêiner locais para Aplicativos Web para Contêineres do Azure](./media/image1-8.png)
 
@@ -68,17 +68,17 @@ Essa abordagem também funcionará bem se sua equipe de desenvolvimento puder mi
 
 ![Fluxo de trabalho completo do ciclo de vida do DevOps no Docker](./media/image1-7.png)
 
-O desenvolvimento com contêineres oferece muitas vantagens, especialmente quando os contêineres são usados ​​na produção. A mesma configuração de contêiner é usada para hospedar o aplicativo em cada ambiente em que ele é executado, do computador de desenvolvimento local até a criação e teste de sistemas, incluindo a produção. Isso reduz muito a probabilidade de defeitos decorrentes de diferenças na configuração do computador ou nas versões do software. Os desenvolvedores também podem usar as ferramentas com as quais são mais produtivos, incluindo o sistema operacional, já que os contêineres podem ser executados em qualquer sistema. Em alguns casos, aplicativos distribuídos envolvendo muitos contêineres podem usar muitos recursos para serem executados em um único computador de desenvolvimento. Nesse cenário, pode fazer sentido atualizar para o uso do Kubernetes e do Azure Dev Spaces, abordados na próxima seção.
+O desenvolvimento com contêineres oferece muitas vantagens, especialmente quando os contêineres são usados ​​na produção. A mesma configuração de contêiner é usada para hospedar o aplicativo em cada ambiente em que ele é executado, do computador de desenvolvimento local para compilar e testar sistemas para produção. Essa abordagem reduz consideravelmente a probabilidade de defeitos resultantes de diferenças na configuração da máquina ou versões de software. Os desenvolvedores também podem usar quaisquer ferramentas com as quais estão mais produtivos, incluindo o sistema operacional, já que os contêineres podem ser executados em qualquer sistema operacional. Em alguns casos, aplicativos distribuídos envolvendo muitos contêineres podem usar muitos recursos para serem executados em um único computador de desenvolvimento. Nesse cenário, pode fazer sentido atualizar para o uso do Kubernetes e do Azure Dev Spaces, abordados na próxima seção.
 
 Como partes de aplicativos maiores são divididas em seus próprios *microsserviços* menores e independentes, padrões de design adicionais podem ser usados ​​para melhorar o comportamento do aplicativo. Em vez de trabalhar diretamente com serviços individuais, um *gateway de API* pode simplificar o acesso e separar o cliente de seu back-end. Ter back ends de serviços separados para front-ends diferentes também permite que os serviços evoluam em sintonia com seus consumidores. Os serviços comuns podem ser acessados por meio de um contêiner *sidecar* separado, que pode incluir bibliotecas comuns de conectividade do cliente usando o padrão *embaixador*.
 
 ![Exemplo de arquitetura de microsserviços com vários padrões de design comuns observados.](./media/image1-10.png)
 
-[Saiba mais sobre os padrões de design a serem considerados ao criar sistemas baseados em microsserviço.](https://docs.microsoft.com/azure/architecture/microservices/design/patterns)
+[Saiba mais sobre os padrões de design a serem considerados ao criar sistemas baseados em microsserviço.](/azure/architecture/microservices/design/patterns)
 
 ### <a name="azure-kubernetes-service"></a>Serviço de Kubernetes do Azure
 
-O Serviço de Kubernetes do Azure (AKS) gerencia seu ambiente Kubernetes hospedado, tornando rápido e fácil implantar e gerenciar os aplicativos em contêiner sem conhecimento de orquestração do contêiner. Também elimina a sobrecarga das operações em andamento e a manutenção provisionando, atualizando e dimensionamento os recursos sob demanda, sem colocar seus aplicativos offline.
+O Serviço de Kubernetes do Azure (AKS) gerencia seu ambiente Kubernetes hospedado, tornando rápido e fácil implantar e gerenciar os aplicativos em contêiner sem conhecimento de orquestração do contêiner. Ele também elimina a carga de operações e manutenção contínuas por meio do provisionamento, atualização e dimensionamento de recursos sob demanda, sem colocar seus aplicativos offline.
 
 O AKS reduz a complexidade e a sobrecarga operacional de gerenciar um cluster Kubernetes deixando grande parte dessa responsabilidade para o Azure. Como um serviço Kubernetes hospedado, o Azure lida com as tarefas críticas para você, como o monitoramento da integridade e a manutenção. Além disso, você paga apenas pelos nós do agente dentro dos clusters, não pelos mestres. Como um serviço Kubernetes gerenciado, o AKS fornece:
 
@@ -97,10 +97,10 @@ Azure Dev Spaces:
 
 - Minimizar requisitos de tempo e recursos de configuração do computador local
 - Permitir que as equipes façam a iteração com mais rapidez
-- Reduzir o número de ambientes de integração exigidos pela equipe
-- Remover a necessidade de simular determinados serviços em um sistema distribuído durante o desenvolvimento/teste
+- Reduzir o número de ambientes de integração exigidos por uma equipe
+- Remova a necessidade de simular determinados serviços em um sistema distribuído durante o desenvolvimento/teste
 
-[Saiba mais sobre o Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/about)
+[Saiba mais sobre o Azure Dev Spaces](/azure/dev-spaces/about)
 
 ### <a name="azure-virtual-machines"></a>Máquinas Virtuais do Azure
 

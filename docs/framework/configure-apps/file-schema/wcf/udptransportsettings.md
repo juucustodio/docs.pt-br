@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <udpTransportSettings>'
 title: <udpTransportSettings>
 ms.date: 03/30/2017
 ms.assetid: 842d92e9-6199-4ec5-b2d1-58533054e1f0
-ms.openlocfilehash: bb2ec84caa79f33e1e469592d0eca63d8f461dac
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: bfd862009401fef160939fb9acaa66fc9ca23ddb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70854867"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749149"
 ---
 # \<udpTransportSettings>
+
 Este elemento de configuração expõe as configurações de transporte UDP para [\<udpDiscoveryEndpoint>](udpdiscoveryendpoint.md) .  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -18,7 +20,7 @@ Este elemento de configuração expõe as configurações de transporte UDP para
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<udpDiscoveryEndpoint>**](udpdiscoveryendpoint.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<updTransportSettings>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.serviceModel>
@@ -41,6 +43,7 @@ Este elemento de configuração expõe as configurações de transporte UDP para
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -58,6 +61,7 @@ Este elemento de configuração expõe as configurações de transporte UDP para
 |timeToLive|Um inteiro que especifica o número de saltos de segmento de rede que um pacote de multicast pode atravessar.  Esse atributo expõe a funcionalidade associada às `IP_MULTICAST_TTL` Opções de `IP_TTL` soquete e.<br /><br /> O valor padrão é 1.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  

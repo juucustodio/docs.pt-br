@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport:: GetPinvokeMap'
 title: Método IMetaDataImport::GetPinvokeMap
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: b8685c1e-b80c-4198-8eb3-748d6f48a99e
 topic_type:
 - apiref
-ms.openlocfilehash: 8409e56b5ec4dbe47035a0555b6b7ce175b517ee
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: fcf45f4741709423aa48dcf895dfc4be276e19fe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84490972"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99649423"
 ---
 # <a name="imetadataimportgetpinvokemap-method"></a>Método IMetaDataImport::GetPinvokeMap
+
 Obtém um token ModuleRef para representar o assembly de destino de uma chamada PInvoke.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -39,6 +41,7 @@ HRESULT GetPinvokeMap (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `tk`  
  no Um token FieldDef ou MethodDef para obter os metadados de mapeamento do PInvoke.  
   
@@ -58,15 +61,16 @@ HRESULT GetPinvokeMap (
  fora Um ponteiro para um token de ModuleRef que representa a biblioteca de objetos de destino não gerenciado.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Incluído como um recurso em MsCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport](imetadataimport-interface.md)
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)

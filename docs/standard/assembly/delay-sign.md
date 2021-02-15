@@ -5,7 +5,7 @@ ms.date: 08/19/2019
 helpviewer_keywords:
 - deferring assembly signing
 - signing assemblies
-- assemblies [.NET Framework], signing
+- assemblies [.NET], signing
 - strong-named assemblies, delaying assembly signing
 - partial assembly signing
 ms.assetid: 9d300e17-5bf1-4360-97da-2aa55efd9070
@@ -13,12 +13,12 @@ dev_langs:
 - csharp
 - vb
 - cpp
-ms.openlocfilehash: 7b5c8c8463fdc573782fa457bf5671c72a7e25f7
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 704ddbec3ddd179622fdc7289036247763449256
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378499"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92162889"
 ---
 # <a name="delay-sign-an-assembly"></a>Assinar um assembly com atraso
 
@@ -28,7 +28,7 @@ Você pode usar a assinatura atrasada ou parcial no momento da compilação para
 
 Para assinar um assembly com atraso:
 
-1. Obtenha a parte da chave pública do par de chaves da organização que fará a assinatura eventual. Normalmente, essa chave está na forma de um arquivo *. SNK* , que pode ser criado usando a [ferramenta de nome forte (SN. exe)](../../framework/tools/sn-exe-strong-name-tool.md) fornecida pelo SDK do Windows.
+1. Obtenha a parte da chave pública do par de chaves da organização que fará a assinatura eventual. Normalmente, essa chave está na forma de um arquivo *. SNK* , que pode ser criado usando a [ferramenta de nome forte (Sn.exe)](../../framework/tools/sn-exe-strong-name-tool.md) fornecida pelo SDK do Windows.
 
 2. Anote o código-fonte para o assembly com dois atributos personalizados de <xref:System.Reflection>:
 
@@ -57,13 +57,13 @@ Para assinar um assembly com atraso:
 
 4. Como o assembly não tem uma assinatura de nome forte válida, a verificação dessa assinatura deve ser desativada. Você pode fazer isso usando a opção **– Vr** com a ferramenta Nome Forte.
 
-     O exemplo a seguir desativa a verificação para um assembly chamado *myAssembly. dll*.
+     O exemplo a seguir desativa a verificação para um assembly chamado *myAssembly.dll*.
 
    ```console
    sn –Vr myAssembly.dll
    ```
 
-   Para desligar a verificação em plataformas em que você não pode executar a ferramenta Nome Forte, como microprocessadores ARM (Advanced RISC Machine), use a opção **–Vk** para criar um arquivo de Registro. Importe o arquivo de Registro para o Registro no computador em que você deseja desligar a verificação. O exemplo a seguir cria um arquivo de Registro para `myAssembly.dll`.
+   Para desativar a verificação em plataformas em que você não pode executar a ferramenta de nome forte, como microprocessadores ARM (máquina RISC avançada), use a opção **– VK** para criar um arquivo de registro. Importe o arquivo de Registro para o Registro no computador em que você deseja desligar a verificação. O exemplo a seguir cria um arquivo de Registro para `myAssembly.dll`.
 
    ```console
    sn –Vk myRegFile.reg myAssembly.dll
@@ -75,18 +75,18 @@ Para assinar um assembly com atraso:
    > Por segurança, não confie em nomes fortes. Eles apenas fornecem uma identidade exclusiva.
 
    > [!NOTE]
-   > Se você usar o atraso de assinatura durante o desenvolvimento com o Visual Studio em um computador de 64 bits e compilar um assembly para **Qualquer CPU**, talvez seja necessário aplicar a opção **-Vr** duas vezes. (No Visual Studio, **qualquer CPU** é um valor da propriedade de compilação de **destino de plataforma** ; quando você compila a partir da linha de comando, é o padrão.) Para executar o aplicativo na linha de comando ou no explorador de arquivos, use a versão de 64 bits do [sn. exe (Strong Name Tool)](../../framework/tools/sn-exe-strong-name-tool.md) para aplicar a opção **-VR** ao assembly. Para carregar o assembly no Visual Studio no tempo de design (por exemplo, se o assembly contiver componentes que são usados por outros assemblies em seu aplicativo), use a versão de 32 bits da ferramenta de nome forte. Isso ocorre porque o compilador JIT (Just-in-time) compila o assembly para código nativo de 64 bits quando o assembly é executado da linha de comando e para código nativo de 32 bits quando o assembly é carregado no ambiente de tempo de design.
+   > Se você usar o atraso de assinatura durante o desenvolvimento com o Visual Studio em um computador de 64 bits e compilar um assembly para **Qualquer CPU**, talvez seja necessário aplicar a opção **-Vr** duas vezes. (No Visual Studio, **qualquer CPU** é um valor da propriedade de compilação de **destino de plataforma** ; quando você compila a partir da linha de comando, é o padrão.) Para executar o aplicativo na linha de comando ou no explorador de arquivos, use a versão de 64 bits do [Sn.exe (ferramenta de nome forte)](../../framework/tools/sn-exe-strong-name-tool.md) para aplicar a opção **-VR** ao assembly. Para carregar o assembly no Visual Studio no tempo de design (por exemplo, se o assembly contiver componentes que são usados por outros assemblies em seu aplicativo), use a versão de 32 bits da ferramenta de nome forte. Isso ocorre porque o compilador JIT (Just-in-time) compila o assembly para código nativo de 64 bits quando o assembly é executado da linha de comando e para código nativo de 32 bits quando o assembly é carregado no ambiente de tempo de design.
 
 5. Posteriormente, normalmente imediatamente antes do envio, você envia o assembly para a autoridade de assinatura da sua organização para a assinatura de nome forte real usando a opção **–R** com a ferramenta Nome Forte.
 
-   O exemplo a seguir assina um assembly chamado *myAssembly. dll* com um nome forte usando o par de chaves *sgKey. SNK* .
+   O exemplo a seguir assina um assembly chamado *myAssembly.dll* com um nome forte usando o par de chaves *sgKey. SNK* .
 
    ```console
    sn -R myAssembly.dll sgKey.snk
    ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Criar assemblies](create.md)
-- [Como criar um par de chaves pública/privada](create-public-private-key-pair.md)
-- [Sn. exe (ferramenta Strong Name)](../../framework/tools/sn-exe-strong-name-tool.md)
+- [Como criar um par de chaves pública-privada](create-public-private-key-pair.md)
+- [Sn.exe (ferramenta de nome forte)](../../framework/tools/sn-exe-strong-name-tool.md)

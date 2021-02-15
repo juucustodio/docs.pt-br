@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: ChannelPoolSettings'
 title: ChannelPoolSettings
 ms.date: 03/30/2017
 ms.assetid: d3f475bd-f780-4bbe-b291-339387322964
-ms.openlocfilehash: 8900af77d0d385bb68b4b85e1d15be57bb7a8d14
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: b08c5483e7a0c918393795b4608b9eef16b18341
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61963964"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757677"
 ---
 # <a name="channelpoolsettings"></a>ChannelPoolSettings
+
 ChannelPoolSettings  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class ChannelPoolSettings  
@@ -24,26 +26,31 @@ class ChannelPoolSettings
 ```  
   
 ## <a name="methods"></a>Métodos  
- A classe ChannelPoolSettings não define quaisquer métodos.  
+
+ A classe ChannelPoolSettings não define nenhum método.  
   
 ## <a name="properties"></a>Propriedades  
+
  A classe ChannelPoolSettings tem as seguintes propriedades:  
   
 ### <a name="idletimeout"></a>IdleTimeout  
- Tipo de dados: datetime  
+
+ Tipo de dados: DateTime  
   
  Tipo de acesso: Somente leitura  
   
  O tempo máximo que a conexão pode ficar ociosa antes de ser desconectada.  
   
 ### <a name="leasetimeout"></a>LeaseTimeout  
- Tipo de dados: datetime  
+
+ Tipo de dados: DateTime  
   
  Tipo de acesso: Somente leitura  
   
- O tempo máximo para uma operação seja concluída antes de atingir o tempo limite de concessão.  
+ O tempo máximo para que uma operação de concessão seja concluída antes de atingir o tempo limite.  
   
 ### <a name="maxoutboundchannelsperendpoint"></a>MaxOutboundChannelsPerEndpoint  
+
  Tipo de dados: sint32  
   
  Tipo de acesso: Somente leitura  
@@ -52,10 +59,10 @@ class ChannelPoolSettings
   
 ## <a name="requirements"></a>Requisitos  
   
-|MOF|Declarado em Servicemodel.mof.|  
+|MOF|Declarado em ServiceModel. mof.|  
 |---------|-----------------------------------|  
-|Namespace|Definido no root\ServiceModel|  
+|Namespace|Definido em root\ServiceModel|  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.ServiceModel.Channels.ChannelPoolSettings>

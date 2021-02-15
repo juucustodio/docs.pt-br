@@ -7,12 +7,12 @@ helpviewer_keywords:
 - interoperation with unmanaged code, exposing .NET Framework components
 - COM interop, exposing COM components
 ms.assetid: e42a65f7-1e61-411f-b09a-aca1bbce24c6
-ms.openlocfilehash: 918c90f6741047f7d3cdf89a9b182700ecb2ed93
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: dc808f3e8d6bd89ba979d43e5b4ec9d787bd09b1
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85617451"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90545253"
 ---
 # <a name="exposing-net-components-to-com"></a>Como expor componentes .NET ao COM
 
@@ -42,15 +42,15 @@ A escrita de um tipo .NET e o consumo desse tipo em um código não gerenciado s
 
      Os desenvolvedores do COM podem referenciar tipos em um assembly usando as mesmas ferramentas e técnicas que usam hoje.
 
-3. [Chamar um objeto .NET](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/8hw8h46b(v=vs.100)).
+3. [Chamar um objeto .NET](/previous-versions/dotnet/netframework-4.0/8hw8h46b(v=vs.100)).
 
      Os desenvolvedores do COM podem chamar métodos no objeto .NET da mesma forma que chamam métodos em qualquer tipo não gerenciado. Por exemplo, a API **CoCreateInstance** do COM ativa objetos .NET.
 
-4. [Implante um aplicativo para o acesso COM](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/c2850st8(v=vs.100)).
+4. [Implante um aplicativo para o acesso COM](/previous-versions/dotnet/netframework-4.0/c2850st8(v=vs.100)).
 
      Um assembly de nome forte pode ser instalado no cache de assembly global e exige uma assinatura de seu fornecedor. Os assemblies que não têm nome forte devem ser instalados no diretório do aplicativo do cliente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Interoperação com código não gerenciado](index.md)
 - [Amostra de interoperabilidade COM: Cliente COM e servidor .NET](com-interop-sample-com-client-and-net-server.md)

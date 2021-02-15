@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedReader:: getvariations'
 title: Método ISymUnmanagedReader::GetVariables
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 16dc49cb-2c60-4ac8-9c35-020e9afba3f8
 topic_type:
 - apiref
-ms.openlocfilehash: 637e1aed003e211654141ab397c9c0b4724753c2
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 93208e6c5c65c4c770c533b7ea72de513451d97d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615482"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763898"
 ---
 # <a name="isymunmanagedreadergetvariables-method"></a>Método ISymUnmanagedReader::GetVariables
+
 Retorna uma variável não local, dado seu pai e nome.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,6 +39,7 @@ HRESULT GetVariables (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `parent`  
  no O pai da variável.  
   
@@ -50,11 +53,13 @@ HRESULT GetVariables (
  fora Um ponteiro para a variável que recebe as variáveis.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedReader](isymunmanagedreader-interface.md)

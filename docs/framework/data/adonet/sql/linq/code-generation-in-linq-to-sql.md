@@ -1,38 +1,43 @@
 ---
+description: 'Saiba mais sobre: geração de código no LINQ to SQL'
 title: Geração de código em LINQ para SQL
 ms.date: 03/30/2017
 ms.assetid: ddcbdaa1-e7fa-4d85-a379-313b49965c07
-ms.openlocfilehash: 551322637e6e04b9be7d558c51e063fead7f84f4
-ms.sourcegitcommit: 4e2d355baba82814fa53efd6b8bbb45bfe054d11
+ms.openlocfilehash: b523a84c6ee0d165673035073b6a5c5adf716641
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70247965"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712578"
 ---
 # <a name="code-generation-in-linq-to-sql"></a>Geração de código em LINQ para SQL
+
 Você pode gerar código para representar um banco de dados usando o Object Relational Designer ou a ferramenta de linha de comando SqlMetal. Em ambos os casos, a geração de código ponta a ponta ocorre em três estágios:  
   
 1. O *extrator dbml* extrai informações de esquema do banco de dados e remonta as informações em um arquivo dbml formatado em XML.  
   
-2. O arquivo DBML é verificado pelo validador *dbml* para erros.  
+2. O arquivo DBML é verificado pelo *validador dbml* para erros.  
   
 3. Se nenhum erro de validação aparecer, o arquivo será passado para o Gerador de Código.  
   
  Para obter mais informações, consulte [SqlMetal.exe (ferramenta de geração de código)](../../../../tools/sqlmetal-exe-code-generation-tool.md). Os desenvolvedores que usam o Visual Studio também podem usar o Object Relational Designer para gerar código. Consulte [LINQ to SQL Tools no Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).  
   
 ## <a name="dbml-extractor"></a>Extrator de DBML  
- O extrator dbml é [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] um componente que usa metadados de banco de dados como entrada e produz um arquivo dbml como saída.  
+
+ O extrator DBML é um [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] componente que usa metadados de banco de dados como entrada e produz um arquivo dbml como saída.  
   
 ## <a name="code-generator"></a>Gerador de Código  
- O gerador de código é [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] um componente que traduz arquivos dbml para Visual Basic, C#ou arquivos de mapeamento XML.  
+
+ O gerador de código é um [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] componente que converte arquivos dbml em arquivos de mapeamento Visual Basic, C# ou XML.  
   
 ## <a name="xml-schema-definition-file"></a>Arquivo de Definição de Esquema XML  
+
  O arquivo DBML deve ser válido em relação à seguinte definição de esquema como um arquivo XSD.  
   
  Diferencie este arquivo de definição do esquema do arquivo de definição do esquema que é usado para validar um arquivo de mapeamento externo. Para obter mais informações, consulte [mapeamento externo](external-mapping.md)).  
   
 > [!NOTE]
-> Os usuários do Visual Studio também encontrarão esse arquivo XSD na caixa de diálogo esquemas XML como "DbmlSchema. xsd". Para usar o arquivo XSD corretamente para validar um arquivo dbml, consulte [como: Valide os arquivos](how-to-validate-dbml-and-external-mapping-files.md)dbml e de mapeamento externo.  
+> Os usuários do Visual Studio também encontrarão esse arquivo XSD na caixa de diálogo esquemas XML como "DbmlSchema. xsd". Para usar o arquivo XSD corretamente para validar um arquivo DBML, consulte [como: validar o dbml e os arquivos de mapeamento externos](how-to-validate-dbml-and-external-mapping-files.md).  
   
 ```xml  
 <?xml version="1.0" encoding="utf-16"?>  
@@ -243,6 +248,7 @@ elementFormDefault="qualified" >
 ```  
   
 ## <a name="sample-dbml-file"></a>Arquivo DBML de exemplo  
+
  O código a seguir é um trecho do arquivo DBML criado do banco de dados de exemplo Northwind. Você pode gerar o arquivo inteiro usando SqlMetal com a opção **/XML** . Para obter mais informações, consulte [SqlMetal.exe (ferramenta de geração de código)](../../../../tools/sqlmetal-exe-code-generation-tool.md).  
   
 ```xml  
@@ -272,7 +278,7 @@ elementFormDefault="qualified" >
 ## <a name="see-also"></a>Consulte também
 
 - [Informações gerais](background-information.md)
-- [Mapeamento Externo](external-mapping.md)
-- [Como: Gerar o modelo de objeto como um arquivo externo](how-to-generate-the-object-model-as-an-external-file.md)
-- [Downloading Sample Databases](downloading-sample-databases.md) (Baixando bancos de dados de amostra)
+- [Mapeamento externo](external-mapping.md)
+- [Como: gerar o modelo de objeto como um arquivo externo](how-to-generate-the-object-model-as-an-external-file.md)
+- [Baixar bancos de dados de amostra](downloading-sample-databases.md)
 - [Referência](reference.md)

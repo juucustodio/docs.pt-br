@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICorDebugTypeEnum:: Next Method'
 title: Método ICorDebugTypeEnum::Next
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: d0fdeba3-c195-4ece-8caf-79b1f40025d2
 topic_type:
 - apiref
-ms.openlocfilehash: 83adea3d659eea6d4af9ae364aad18df67e69c03
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: 9260f5f2d1a2d6943a705f7e7ef1ead3d2924cdc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396614"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99690579"
 ---
 # <a name="icordebugtypeenumnext-method"></a>Método ICorDebugTypeEnum::Next
+
 Obtém o número de instâncias "ICorDebugType" especificadas pelo `celt` da enumeração, começando na posição atual.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,6 +39,7 @@ HRESULT Next (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `celt`  
  no O número de `ICorDebugType` instâncias a serem recuperadas.  
   
@@ -47,6 +50,7 @@ HRESULT Next (
  fora Aponta para o número de `ICorDebugType` instâncias realmente retornadas. Esse valor pode ser nulo se `celt` for um.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

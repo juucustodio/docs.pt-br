@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: limitações de Visual Basic'
 title: Limitações
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,14 +9,15 @@ helpviewer_keywords:
 - limits, Visual Basic code
 - Visual Basic code, limitations
 ms.assetid: cf1646b7-5d24-48c6-9616-bda8a4849d91
-ms.openlocfilehash: 46294b68bda8a5d2d21c0e4efea6a78e6a265ffe
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 9182c5fe475e4350cb17ed3e4b734e3924bb9f7b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403181"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100432839"
 ---
 # <a name="visual-basic-limitations"></a>Limitações do Visual Basic
+
 Versões anteriores do Visual Basic limites impostos no código, como o comprimento de nomes de variáveis, o número de variáveis permitidas em módulos e o tamanho do módulo. No Visual Basic .NET, essas restrições foram reduzidas, dando a você maior liberdade de escrever e organizar seu código.  
   
  Os limites físicos são dependentes mais da memória em tempo de execução do que nas considerações de tempo de compilação. Se você usar práticas de programação prudentes e dividir aplicativos grandes em várias classes e módulos, haverá uma pequena chance de encontrar uma limitação de Visual Basic interno.  
@@ -32,7 +34,7 @@ Versões anteriores do Visual Basic limites impostos no código, como o comprime
   
 - **Comprimento da cadeia de caracteres do ambiente.** Há um máximo de 32768 caracteres para qualquer cadeia de caracteres de ambiente usada como um argumento de linha de comando. Essa é uma limitação em todas as plataformas.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Estrutura do programa e convenções de código](program-structure-and-code-conventions.md)
 - [Convenções de nomenclatura do Visual Basic](naming-conventions.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CeeSectionAttr'
 title: Enumeração CeeSectionAttr
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 0db51881-b869-4677-a715-1726a9216489
 topic_type:
 - apiref
-ms.openlocfilehash: 6da8a111f716906e403d85bc0b1a29eba7238100
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 13cfb635aaa606905745146d7c3caae3f9162e91
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84006058"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678855"
 ---
 # <a name="ceesectionattr-enumeration"></a>Enumeração CeeSectionAttr
+
 Fornece valores que especificam atributos de uma seção para uso pela interface [ICeeGen](iceegen-interface.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -39,7 +41,7 @@ typedef enum  {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`sdNone`|A seção não tem atributos.|  
 |`sdReadOnly`|A seção contém dados inicializados que só podem ser lidos, não atualizados.|  
@@ -47,14 +49,15 @@ typedef enum  {
 |`sdExecute`|A seção contém código executável que pode ser lido e executado.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Incluído como um recurso em MsCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumerações de metadados](metadata-enumerations.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugGenericValue:: GetValue'
 title: Método ICorDebugGenericValue::GetValue
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 4e95d7cb-144d-4ccf-8a69-d605f4744be2
 topic_type:
 - apiref
-ms.openlocfilehash: 646b2661148e38f3c918fc18fce5c9cd0b1134a1
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 9c8459ce6a9fb59e934b1ebd355aa091a37b2d7b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213017"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661019"
 ---
 # <a name="icordebuggenericvaluegetvalue-method"></a>Método ICorDebugGenericValue::GetValue
+
 Copia o valor desse genérico no buffer especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,10 +36,12 @@ HRESULT GetValue (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pTo`  
  fora Um ponteiro para o valor representado por esse objeto ICorDebugGenericValue. O valor pode ser um tipo simples ou um tipo de referência (ou seja, um ponteiro).  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

@@ -1,7 +1,7 @@
 ---
+description: 'Saiba mais sobre: segurança de Role-Based'
 title: Segurança baseada em função
 ms.date: 07/15/2020
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - role-based security, about role-based security
 - user authentication, principals
@@ -11,12 +11,12 @@ helpviewer_keywords:
 - authentication [.NET], principals
 - role-based security, principals
 ms.assetid: 578cc32b-5654-4d8b-9d8c-ebcbc5c75390
-ms.openlocfilehash: ed6c33be5a5da066e238c160da8bff8d25cb68fc
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: 66457248ccfaa8535ce150e7654cd5be20fb6a68
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87555663"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99629520"
 ---
 # <a name="role-based-security"></a>Segurança baseada em função
 
@@ -30,7 +30,7 @@ As funções geralmente são usadas em aplicativos financeiros ou de negócios p
   
  Antes de ler esta seção, verifique se você entendeu o material apresentado nos [principais conceitos de segurança](key-security-concepts.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
   
 - [Objetos Principal e Identity](principal-and-identity-objects.md)
 - [Conceitos principais de segurança](key-security-concepts.md)

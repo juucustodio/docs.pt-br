@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: como gravar dados de objeto em um arquivo XML (Visual Basic)'
 title: Como gravar dados de objeto em um arquivo XML
 ms.date: 07/20/2015
 ms.assetid: f7966480-5ed2-43ac-9894-33427436de2a
-ms.openlocfilehash: 9608a48cb8b3fac1c71affa7a0a17e9789f94b18
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c6935fa97ed8813528630f5794e0a8e3e7e77b4d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84413148"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100486830"
 ---
 # <a name="how-to-write-object-data-to-an-xml-file-visual-basic"></a>Como gravar dados de objeto em um arquivo XML (Visual Basic)
+
 Este exemplo grava o objeto de uma classe para um arquivo XML usando a classe <xref:System.Xml.Serialization.XmlSerializer>.  
   
 ## <a name="example"></a>Exemplo  
@@ -38,9 +40,11 @@ End Module
 ```  
   
 ## <a name="compile-the-code"></a>Compilar o código  
+
  A classe deve ter um construtor público sem parâmetros.  
   
 ## <a name="robust-programming"></a>Programação robusta  
+
  As seguintes condições podem causar uma exceção:  
   
 - A classe que está sendo serializada não tem um construtor público sem parâmetros.  
@@ -52,9 +56,10 @@ End Module
 - O disco está cheio (<xref:System.IO.IOException>).  
   
 ## <a name="net-framework-security"></a>Segurança do .NET Framework  
+
  Este exemplo cria um novo arquivo, se o arquivo ainda não existe. Se um aplicativo precisar criar um arquivo, ele precisará de acesso `Create` para a pasta. Se o arquivo já existe, o aplicativo precisa apenas de acesso `Write`, um privilégio menor. Sempre que possível, é mais seguro criar o arquivo durante a implantação e somente conceder acesso `Read` a um único arquivo, em vez de acesso `Create` a uma pasta.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.IO.StreamWriter>
 - [Como ler dados de objeto de um arquivo XML (Visual Basic)](how-to-read-object-data-from-an-xml-file.md)

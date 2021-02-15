@@ -4,15 +4,14 @@ description: Usar as expressões de valor padrão para obter o valor padrão de 
 ms.date: 03/13/2020
 f1_keywords:
 - default_CSharpKeyword
-- default
 helpviewer_keywords:
 - default keyword [C#]
-ms.openlocfilehash: f03971efa87bf03967c79512e44d22134dd80c17
-ms.sourcegitcommit: ef50c99928183a0bba75e07b9f22895cd4c480f8
+ms.openlocfilehash: 92ad8e919567e1f9f57e6875d53c4055eb960829
+ms.sourcegitcommit: e078b7540a8293ca1b604c9c0da1ff1506f0170b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87916868"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91997650"
 ---
 # <a name="default-value-expressions-c-reference"></a>expressões de valor padrão (referência C#)
 
@@ -39,13 +38,13 @@ O exemplo a seguir mostra o uso do literal `default`:
 
 [!code-csharp-interactive[default literal](snippets/shared/DefaultOperator.cs#DefaultLiteral)]
 
-## <a name="c-language-specification"></a>especificação da linguagem C#
+## <a name="c-language-specification"></a>Especificação da linguagem C#
 
 Para saber mais, confira a seção [Expressões de valor padrão](~/_csharplang/spec/expressions.md#default-value-expressions) da [Especificação da linguagem C#](~/_csharplang/spec/introduction.md).
 
 Para obter mais informações sobre o literal `default`, confira a [nota da proposta do recurso](~/_csharplang/proposals/csharp-7.1/target-typed-default.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Referência de C#](../index.md)
 - [Operadores e expressões C#](index.md)

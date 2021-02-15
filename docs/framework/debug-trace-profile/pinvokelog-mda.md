@@ -10,23 +10,27 @@ helpviewer_keywords:
 - PInvokeLog MDA
 - managed debugging assistants (MDAs), platform invoke
 ms.assetid: b830444a-5003-49fe-b89b-b8bee22f7b1a
-ms.openlocfilehash: 05af4e17a91f7c0d8f3576a86d3d784ef6666aed
-ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
+ms.openlocfilehash: b8cb4805663a2b28a133f98503730199af695c4f
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85803684"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96271454"
 ---
 # <a name="pinvokelog-mda"></a>MDA pInvokeLog
+
 O MDA (Assistente de Depuração Gerenciado) de `pInvokeLog` é ativado para cada assinatura de invocação de plataforma exclusiva usada durante a execução.  
   
 ## <a name="effect-on-the-runtime"></a>Efeito sobre o runtime  
+
  Esse MDA não tem efeito sobre o CLR.  
   
 ## <a name="output"></a>Saída  
+
  Uma mensagem que indica a assinatura de invocação de plataforma usada durante a execução.  
   
 ## <a name="configuration"></a>Configuração  
+
  Cada elemento de correspondência filtra os arquivos .dll para os quais as chamadas de invocação de plataforma são feitas.  
   
 ```xml  
@@ -42,7 +46,7 @@ O MDA (Assistente de Depuração Gerenciado) de `pInvokeLog` é ativado para cad
 </mdaConfig>  
 ```  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-- [Diagnosticando erros com assistentes para depuração gerenciada](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Diagnosticando erros com assistentes de depuração gerenciados](diagnosing-errors-with-managed-debugging-assistants.md)
 - [Consumindo funções de DLL não gerenciadas](../interop/consuming-unmanaged-dll-functions.md)

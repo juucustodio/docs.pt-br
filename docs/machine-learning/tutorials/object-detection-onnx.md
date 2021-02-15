@@ -6,12 +6,12 @@ ms.author: luquinta
 ms.date: 06/30/2020
 ms.topic: tutorial
 ms.custom: mvc
-ms.openlocfilehash: 4759a661646b08ea6a93cab030a19af2cfeaca16
-ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
+ms.openlocfilehash: 49817f9ad712e50669bab958296946c06d5c19eb
+ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85803398"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90679410"
 ---
 # <a name="tutorial-detect-objects-using-onnx-in-mlnet"></a>Tutorial: detectar objetos usando ONNX no ML.NET
 
@@ -171,7 +171,7 @@ Crie sua classe de previsão no diretório *DataStructures*.
 
     O `ImageNetPrediction` é a classe de dados de previsão e conta com os seguintes `float[]` campos:
 
-    - `PredictedLabel`contém as dimensões, a pontuação de objeções e as probabilidades de classe para cada uma das caixas delimitadas detectadas em uma imagem.
+    - `PredictedLabel` contém as dimensões, a pontuação de objeções e as probabilidades de classe para cada uma das caixas delimitadas detectadas em uma imagem.
 
 ### <a name="initialize-variables-in-main"></a>Inicializar variáveis em Main
 
@@ -215,7 +215,7 @@ A saída de dados pelo modelo contém coordenadas e dimensões das caixas delimi
 
     [!code-csharp [DimensionsBaseClass](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/DimensionsBase.cs#L3-L9)]
 
-    `DimensionsBase`tem as seguintes `float` Propriedades:
+    `DimensionsBase` tem as seguintes `float` Propriedades:
 
     - `X` contém a posição do objeto ao longo do eixo x.
     - `Y` contém a posição do objeto ao longo do eixo y.
@@ -239,7 +239,7 @@ Em seguida, crie uma classe para suas caixas delimitadoras.
 
     [!code-csharp [YoloBoundingBoxClass](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloBoundingBox.cs#L7-L21)]
 
-    `YoloBoundingBox`tem as seguintes propriedades:
+    `YoloBoundingBox` tem as seguintes propriedades:
 
     - `Dimensions` contém as dimensões da caixa delimitadora.
     - `Label` contém a classe de objeto detectada na caixa delimitadora.
@@ -304,7 +304,7 @@ Os métodos auxiliares usados pelo analisador são:
 - `Softmax`: normaliza um vetor de entrada em uma distribuição de probabilidade.
 - `GetOffset`: mapeia elementos na saída de um modelo unidimensional para a posição correspondente em um tensor `125 x 13 x 13`.
 - `ExtractBoundingBoxes`: extrai as dimensões da caixa delimitadora usando o método `GetOffset` da saída do modelo.
-- `GetConfidence`extrai o valor de confiança que indica como o modelo é que ele detectou um objeto e usa a `Sigmoid` função para transformá-lo em uma porcentagem.
+- `GetConfidence` extrai o valor de confiança que indica como o modelo é que ele detectou um objeto e usa a `Sigmoid` função para transformá-lo em uma porcentagem.
 - `MapBoundingBoxToCell`: usa as dimensões da caixa delimitadora e as mapeia para sua respectiva célula na imagem.
 - `ExtractClasses`: extrai as previsões de classe para a caixa delimitadora da saída do modelo usando o método `GetOffset` e as transforma em uma distribuição de probabilidade usando o método `Softmax`.
 - `GetTopResult`: seleciona a classe na lista de classes previstas com a maior probabilidade.
@@ -492,22 +492,22 @@ Assim como ocorre com o pós-processamento, há algumas etapas nas etapas de pon
 
     [!code-csharp [LoadModelLog](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L47-L49)]
 
-    Os pipelines do ML.NET precisam saber o esquema de dados para operar quando o [`Fit`](xref:Microsoft.ML.IEstimator%601.Fit*) método é chamado. Nesse caso, um processo semelhante ao treinamento será usado. No entanto, como nenhum treinamento real está acontecendo, é aceitável usar um vazio [`IDataView`](xref:Microsoft.ML.IDataView) . Crie um novo [`IDataView`](xref:Microsoft.ML.IDataView) para o pipeline a partir de uma lista vazia.
+    Os pipelines do ML.NET precisam saber o esquema de dados para operar quando o [`Fit`](xref:Microsoft.ML.IEstimator%601.Fit%2A) método é chamado. Nesse caso, um processo semelhante ao treinamento será usado. No entanto, como nenhum treinamento real está acontecendo, é aceitável usar um vazio [`IDataView`](xref:Microsoft.ML.IDataView) . Crie um novo [`IDataView`](xref:Microsoft.ML.IDataView) para o pipeline a partir de uma lista vazia.
 
     [!code-csharp [LoadEmptyIDV](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L52)]
 
     Abaixo disso, defina o pipeline. O pipeline consistirá em quatro transformações.
 
-    - [`LoadImages`](xref:Microsoft.ML.ImageEstimatorsCatalog.LoadImages*)carrega a imagem como um bitmap.
-    - [`ResizeImages`](xref:Microsoft.ML.ImageEstimatorsCatalog.ResizeImages*)redimensiona a imagem para o tamanho especificado (nesse caso, `416 x 416` ).
-    - [`ExtractPixels`](xref:Microsoft.ML.ImageEstimatorsCatalog.ExtractPixels*)altera a representação de pixel da imagem de um bitmap para um vetor numérico.
-    - [`ApplyOnnxModel`](xref:Microsoft.ML.OnnxCatalog.ApplyOnnxModel*)carrega o modelo ONNX e o usa para pontuar os dados fornecidos.
+    - [`LoadImages`](xref:Microsoft.ML.ImageEstimatorsCatalog.LoadImages%2A) carrega a imagem como um bitmap.
+    - [`ResizeImages`](xref:Microsoft.ML.ImageEstimatorsCatalog.ResizeImages%2A) redimensiona a imagem para o tamanho especificado (nesse caso, `416 x 416` ).
+    - [`ExtractPixels`](xref:Microsoft.ML.ImageEstimatorsCatalog.ExtractPixels%2A) altera a representação de pixel da imagem de um bitmap para um vetor numérico.
+    - [`ApplyOnnxModel`](xref:Microsoft.ML.OnnxCatalog.ApplyOnnxModel%2A) carrega o modelo ONNX e o usa para pontuar os dados fornecidos.
 
     Defina o pipeline no método `LoadModel` abaixo da variável `data`.
 
     [!code-csharp [ScoringPipeline](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L55-L58)]
 
-    Agora é hora de instanciar o modelo para pontuação. Chame o [`Fit`](xref:Microsoft.ML.IEstimator%601.Fit*) método no pipeline e retorne-o para processamento adicional.
+    Agora é hora de instanciar o modelo para pontuação. Chame o [`Fit`](xref:Microsoft.ML.IEstimator%601.Fit%2A) método no pipeline e retorne-o para processamento adicional.
 
     [!code-csharp [FitReturnModel](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L61-L63)]
 
@@ -524,7 +524,7 @@ No `PredictDataUsingModel`, adicione o código a seguir para registrar em log.
 
 [!code-csharp [PredictDataLog](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L68-L71)]
 
-Em seguida, use o [`Transform`](xref:Microsoft.ML.ITransformer.Transform*) método para pontuar os dados.
+Em seguida, use o [`Transform`](xref:Microsoft.ML.ITransformer.Transform%2A) método para pontuar os dados.
 
 [!code-csharp [ScoreImages](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/OnnxModelScorer.cs#L73)]
 
@@ -626,11 +626,11 @@ Abaixo disso, defina as opções de fonte e cor para o texto e a caixa delimitad
 
 [!code-csharp [SetColorOptions](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L106-L114)]
 
-Crie e preencha um retângulo acima da caixa delimitadora para conter o texto usando o [`FillRectangle`](xref:System.Drawing.Graphics.FillRectangle*) método. Isso ajudará a comparar o texto e a melhorar a legibilidade.
+Crie e preencha um retângulo acima da caixa delimitadora para conter o texto usando o [`FillRectangle`](xref:System.Drawing.Graphics.FillRectangle%2A) método. Isso ajudará a comparar o texto e a melhorar a legibilidade.
 
 [!code-csharp [DrawTextBackground](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L117)]
 
-Em seguida, desenhe o texto e a caixa delimitadora na imagem usando os [`DrawString`](xref:System.Drawing.Graphics.DrawString*) [`DrawRectangle`](xref:System.Drawing.Graphics.DrawRectangle*) métodos e.
+Em seguida, desenhe o texto e a caixa delimitadora na imagem usando os [`DrawString`](xref:System.Drawing.Graphics.DrawString%2A) [`DrawRectangle`](xref:System.Drawing.Graphics.DrawRectangle%2A) métodos e.
 
 [!code-csharp [DrawClassAndBBox](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L118-L121)]
 

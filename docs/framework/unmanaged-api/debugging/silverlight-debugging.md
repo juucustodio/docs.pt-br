@@ -1,21 +1,24 @@
 ---
+description: 'Saiba mais sobre: depuração do Silverlight'
 title: Depuração Silverlight
 ms.date: 03/30/2017
 helpviewer_keywords:
 - debugging API [Silverlight]
 - Silverlight, debugging
 ms.assetid: 5e903e04-17d0-4014-ac9a-a43330ec8b1c
-ms.openlocfilehash: 91f311818b615ea8f166bb3362ec52d39fcd0297
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 54a3f7f4b2de867509ff94dafa25c067a78b3ee6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76790321"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800533"
 ---
 # <a name="silverlight-debugging"></a>Depuração Silverlight
+
 Os tópicos nesta seção descrevem o ambiente e as interfaces que o Common Language Runtime (CLR) fornece para dar suporte à depuração de aplicativos baseados no Silverlight que estão em execução no sistema operacional Windows ou na plataforma Macintosh.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Função EnumerateCLRs](enumerateclrs-function.md)  
  Fornece um mecanismo para enumerar o CLRs em um processo.  
   
@@ -52,7 +55,7 @@ Os tópicos nesta seção descrevem o ambiente e as interfaces que o Common Lang
  [Função ShutdownDbgTransportManager](shutdowndbgtransportmanager-function.md)  
  Desliga o Gerenciador de transporte para uma conexão a um computador de destino remoto.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando coclasses](debugging-coclasses.md)
 - [Depurando interfaces](debugging-interfaces.md)

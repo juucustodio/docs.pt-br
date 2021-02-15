@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como definir uma classe que pode fornecer funcionalidade idêntica em diferentes tipos de dados (Visual Basic)'
 title: 'Como: Definir uma classe capaz de fornecer uma funcionalidade idêntica em tipos de dados diferentes'
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -26,14 +27,15 @@ helpviewer_keywords:
 - type arguments [Visual Basic], defining
 - arguments [Visual Basic], type
 ms.assetid: a914adf8-e68f-4819-a6b1-200d1cf1c21c
-ms.openlocfilehash: 3b1f47250453c32735d633b98da0bd0ddb1ed5b9
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 14be6c748ccb311c6a2974e8947b01a1c55a90b6
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84393851"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100469741"
 ---
 # <a name="how-to-define-a-class-that-can-provide-identical-functionality-on-different-data-types-visual-basic"></a>Como definir uma classe capaz de fornecer uma funcionalidade idêntica em tipos de dados diferentes (Visual Basic)
+
 Você pode definir uma classe na qual é possível criar objetos que fornecem funcionalidade idêntica em diferentes tipos de dados. Para fazer isso, você deve especificar um ou mais *parâmetros de tipo* na definição. A classe pode servir como um modelo para objetos que usam vários tipos de dados. Uma classe definida dessa maneira é chamada de *classe genérica*.  
   
  A vantagem de definir uma classe genérica é que você a define apenas uma vez, e seu código pode usá-la para criar vários objetos que usam uma ampla variedade de tipos de dados. Isso resulta em um melhor desempenho do que definir a classe com o `Object` tipo.  
@@ -74,11 +76,11 @@ Você pode definir uma classe na qual é possível criar objetos que fornecem fu
   
      [!code-vb[VbVbalrDataTypes#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#8)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Tipos de dados](index.md)
+- [Data Types](index.md)
 - [Tipos genéricos no Visual Basic](generic-types.md)
-- [Componentes de independência de linguagem e componentes independentes da linguagem](../../../../standard/language-independence-and-language-independent-components.md)
+- [Independência da linguagem e componentes independentes da linguagem](../../../../standard/language-independence-and-language-independent-components.md)
 - [Desse](../../../language-reference/statements/of-clause.md)
 - [Lista de Tipos](../../../language-reference/statements/type-list.md)
 - [Como: Usar uma classe genérica](how-to-use-a-generic-class.md)

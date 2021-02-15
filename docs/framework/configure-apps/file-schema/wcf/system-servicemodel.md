@@ -9,14 +9,15 @@ helpviewer_keywords:
 - <system.serviceModel> element
 - system.serviceModel element
 ms.assetid: 78519531-ad7a-40d3-b3e7-42f1103d8854
-ms.openlocfilehash: 567cbd2cc07ee82e795daa067b9034b2b8dc1974
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 44966ed9ee3abb3d1babdf09dd44f087376ada55
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85243952"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91158676"
 ---
 # \<system.serviceModel>
+
 Esta seção de configuração contém todos os elementos de configuração de ServiceModel Windows Communication Foundation (WCF).  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -56,9 +57,11 @@ Esta seção de configuração contém todos os elementos de configuração de S
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
+
  Nenhum  
   
 ### <a name="child-elements"></a>Elementos filho  
@@ -86,6 +89,7 @@ Esta seção de configuração contém todos os elementos de configuração de S
 |\<configuration>|O elemento raiz para todos os elementos de configuração em um arquivo de configuração do .NET.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O WCF não adiciona elementos às seções de configuração de outros produtos.  
   
  Os serviços WCF são definidos na `services` seção do arquivo de configuração. Um assembly pode conter qualquer número de serviços. Cada serviço tem sua própria `service` seção de configuração. A seção e seu conteúdo definem o contrato de serviço, o comportamento e os pontos de extremidade do serviço específico.  
@@ -99,6 +103,7 @@ Esta seção de configuração contém todos os elementos de configuração de S
  As associações são vinculadas a pontos de extremidade por meio da combinação dos atributos `name` e `bindingConfiguration` . O `binding` atributo define em qual seção a associação é definida. O `bindingConfiguration` atributo define qual associação configurada dentro da seção de associação é usada. Uma seção de associação pode definir várias associações configuradas.  
   
 ## <a name="example"></a>Exemplo  
+
  Este é um exemplo de um arquivo de configuração do WCF.  
   
 ```xml  

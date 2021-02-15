@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IEnumDefinitionIdentity'
 title: Interface IEnumDefinitionIdentity
 ms.date: 03/30/2017
 api_name:
@@ -14,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: 8263e75d-251b-4abc-8a1a-c62884142232
 topic_type:
 - apiref
-ms.openlocfilehash: 09c6431ec885c8b797dc9bb5f5c3ffe21890ccc7
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 1055031c064115410334bbe4b20b48deee7ec4c4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73107948"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800156"
 ---
 # <a name="ienumdefinitionidentity-interface"></a>Interface IEnumDefinitionIdentity
-Serve como o enumerador para uma coleção de objetos `IDefinitionIdentity`.  
+
+Serve como o enumerador para uma coleção de `IDefinitionIdentity` objetos.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 IEnumDefinitionIdentity : IUnknown {  
@@ -53,17 +55,18 @@ IEnumDefinitionIdentity : IUnknown {
   
 |Método|Descrição|  
 |------------|-----------------|  
-|`IEnumDefinitionIdentity::Clone`|Obtém um ponteiro de interface para um novo objeto `IEnumDefinitionIdentity` que contém os mesmos membros que este `IEnumDefinitionIdentity`.|  
-|`IEnumDefinitionIdentity::Next`|Obtém o número especificado de objetos de `IDefinitionIdentity`, começando na posição atual.|  
-|`IEnumDefinitionIdentity::Reset`|Move o ponteiro de instrução para o início deste `IEnumDefinitionIdentity`.|  
+|`IEnumDefinitionIdentity::Clone`|Obtém um ponteiro de interface para um novo `IEnumDefinitionIdentity` objeto que contém os mesmos membros que isso `IEnumDefinitionIdentity` .|  
+|`IEnumDefinitionIdentity::Next`|Obtém o número especificado de `IDefinitionIdentity` objetos, começando na posição atual.|  
+|`IEnumDefinitionIdentity::Reset`|Move o ponteiro de instrução para o início dele `IEnumDefinitionIdentity` .|  
 |`IEnumDefinitionIdentity::Skip`|Move o ponteiro de instrução para frente pelo número especificado de elementos, começando na posição atual.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Isolamento. h  
   
- **Versões do .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>Consulte também
 

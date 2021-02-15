@@ -1,18 +1,18 @@
 ---
+description: 'Saiba mais sobre: executando Culture-Insensitive operações de cadeia de caracteres em matrizes'
 title: Executando operações de cadeia de caracteres que não levam em conta a cultura em matrizes
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - culture-insensitive string operations, in arrays
-- arrays [.NET Framework], culture-insensitive string operations
+- arrays [.NET], culture-insensitive string operations
 - comparer parameter
 ms.assetid: f12922e1-6234-4165-8896-63f0653ab478
-ms.openlocfilehash: 02690f78184ca4f216df7346a84f0266c2dcec99
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 35c9ceea3c8de45cc37ff14cf14704268c848a5f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84288596"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675722"
 ---
 # <a name="performing-culture-insensitive-string-operations-in-arrays"></a>Executando operações de cadeia de caracteres que não levam em conta a cultura em matrizes
 
@@ -21,7 +21,7 @@ As sobrecargas dos métodos <xref:System.Array.Sort%2A?displayProperty=nameWithT
 > [!NOTE]
 > Passar **CultureInfo. InvariantCulture** para um método de comparação executa uma comparação que não diferencia a cultura. No entanto, não causa uma comparação não linguística, por exemplo, para caminhos de arquivos, chaves do Registro e variáveis de ambiente. Também não oferece suporte a decisões de segurança com base no resultado da comparação. Para obter uma comparação não linguística ou suporte para decisões de segurança com base no resultado, o aplicativo deve usar um método de comparação que aceite um valor <xref:System.StringComparison>. Assim, o aplicativo deve passar <xref:System.StringComparison.Ordinal>.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Array.Sort%2A?displayProperty=nameWithType>
 - <xref:System.Array.BinarySearch%2A?displayProperty=nameWithType>

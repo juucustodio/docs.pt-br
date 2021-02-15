@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método Message. WriteStartHeaders'
 title: Método Message. WriteStartHeaders (System. ServiceModel. Channels)
 ms.date: 11/01/2019
 topic_type:
@@ -9,22 +10,22 @@ api_location:
 - system.servicemodel.dll
 api_type:
 - Assembly
-ms.openlocfilehash: c826e6a3b976e5705e9815586441e8a25b64f76e
-ms.sourcegitcommit: 9c54866bcbdc49dbb981dd55be9bbd0443837aa2
+ms.openlocfilehash: 20cadf5f1eecf6d8e02c5dc4597889abaef4ec36
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77214871"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699357"
 ---
 # <a name="messagewritestartheaders-method"></a>Método Message. WriteStartHeaders
 
-Grava o cabeçalho inicial em um arquivo XML chamando o método <xref:System.ServiceModel.Channels.Message.OnWriteStartHeaders%2A?displayProperty=nameWithType>.
+Grava o cabeçalho inicial em um arquivo XML chamando o <xref:System.ServiceModel.Channels.Message.OnWriteStartHeaders%2A?displayProperty=nameWithType> método.
 
 ```csharp
 internal void WriteStartHeaders(XmlDictionaryWriter writer)
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
 - `writer` <xref:System.Xml.XmlDictionaryWriter>\
   O gravador usado para gravar o cabeçalho inicial em um arquivo XML.
@@ -32,7 +33,7 @@ internal void WriteStartHeaders(XmlDictionaryWriter writer)
 ## <a name="remarks"></a>Comentários
 
 > [!WARNING]
-> O método `Message.WriteStartHeaders` é interno e não deve ser usado diretamente no seu código.
+> O `Message.WriteStartHeaders` método é interno e não deve ser usado diretamente no seu código.
 >
 > A Microsoft não oferece suporte ao uso desse método em um aplicativo de produção em qualquer circunstância.
 
@@ -40,6 +41,6 @@ internal void WriteStartHeaders(XmlDictionaryWriter writer)
 
 **Namespace:** <xref:System.ServiceModel.Channels>
 
-**Assembly:** System. ServiceModel. dll
+**Assembly:** System.ServiceModel.dll
 
 **.NET Framework versões:** Disponível desde 3,0.

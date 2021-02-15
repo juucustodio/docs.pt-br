@@ -6,14 +6,15 @@ helpviewer_keywords:
 - strong-name bypass feature
 - strong-named assemblies, loading into trusted application domains
 ms.assetid: 234e088c-3b11-495a-8817-e0962be79d82
-ms.openlocfilehash: 1914997b322591d8deda13d00192bc5f60d81ca2
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 2846efbbd76cf677a42a7031e53661d302c6c964
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378488"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95687457"
 ---
 # <a name="how-to-disable-the-strong-name-bypass-feature"></a>Como desabilitar o recurso de bypass de nome forte
+
 Desde o .NET Framework versão 3.5 Service Pack 1 (SP1), as assinaturas de nome forte não são validadas quando um assembly é carregado em um objeto <xref:System.AppDomain> de confiança total, como o <xref:System.AppDomain> padrão para a zona `MyComputer`. Isso é conhecido como o recurso de desvio de nome forte. Em um ambiente de confiança total, as exigências de <xref:System.Security.Permissions.StrongNameIdentityPermission> sempre têm êxito para assemblies assinados de confiança total, independentemente de sua assinatura. A única restrição é que o assembly deve ser totalmente confiável porque sua zona é totalmente confiável. Como o nome forte não é um fator determinante sob essas condições, não há nenhum motivo para ser validado. Ignorar a validação de assinaturas de nome forte fornece melhorias significativas de desempenho.  
   
  O recurso de desvio se aplica a qualquer assembly de confiança total que não é assinado com atraso e que é carregado em qualquer <xref:System.AppDomain> de confiança total no diretório especificado por sua propriedade <xref:System.AppDomainSetup.ApplicationBase%2A>.  
@@ -54,6 +55,6 @@ Desde o .NET Framework versão 3.5 Service Pack 1 (SP1), as assinaturas de nome 
   
 ## <a name="see-also"></a>Confira também
 
-- [Sn. exe (ferramenta Strong Name)](../../framework/tools/sn-exe-strong-name-tool.md)
-- [\<elemento de> bypassTrustedAppStrongNames](../../framework/configure-apps/file-schema/runtime/bypasstrustedappstrongnames-element.md)
+- [Sn.exe (ferramenta de nome forte)](../../framework/tools/sn-exe-strong-name-tool.md)
+- [\<bypassTrustedAppStrongNames> elementos](../../framework/configure-apps/file-schema/runtime/bypasstrustedappstrongnames-element.md)
 - [Criar e usar assemblies com nome forte](create-use-strong-named.md)

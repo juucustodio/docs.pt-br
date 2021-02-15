@@ -1,6 +1,6 @@
 ---
 title: Função BlessIWbemServices (referência de API não gerenciada)
-description: A função BlessIWbemServices indica se as credenciais do usuário permitem acesso a uma classe IWbemServices.
+description: A função BlessIWbemServices indica se as credenciais do usuário permitem o acesso a uma classe IWbemServices.
 ms.date: 11/06/2017
 api_name:
 - BlessIWbemServices
@@ -14,15 +14,16 @@ helpviewer_keywords:
 - BlessIWbemServices function [.NET WMI and performance counters]
 topic_type:
 - Reference
-ms.openlocfilehash: 4b15af840cc00b3ec261604db4f3625c6b975d3e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 43ef617ee754c9dcd661b31abba6b17434563c22
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176858"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95708147"
 ---
 # <a name="blessiwbemservices-function"></a>Função BlessIWbemServices
-Indica se as credenciais do usuário permitem acesso à classe [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) especificada.
+
+Indica se as credenciais do usuário permitem o acesso à classe [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) especificada.
   
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   
@@ -39,45 +40,45 @@ HRESULT BlessIWbemServices (
 );
 ```  
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
 `pIWbemServices`\
-[em] Um ponteiro para o objeto [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) para o qual as permissões são necessárias.
+no Um ponteiro para o objeto [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) para o qual são necessárias permissões.
 
 `strUser`\
-[em] O nome do usuário.
+no O nome de usuário.
 
 `strPassword`\
-[em] A senha `strUser`associada a .
+no A senha associada a `strUser` .
 
 `strAuthority`\
-[em] O nome de domínio do usuário. Consulte a função [ConnectServerWmi](connectserverwmi.md) para obter mais informações.
+no O nome de domínio do usuário. Consulte a função [ConnectServerWmi](connectserverwmi.md) para obter mais informações.
 
 `impLevel`\
-[em] O nível de representação.
+no O nível de representação.
 
 `authnLevel`\
-[em] O nível de autorização.
+no O nível de autorização.
 
 ## <a name="return-value"></a>Valor retornado
 
-Os seguintes valores retornados por esta função são definidos no arquivo de cabeçalho *WinError.h,* ou você pode defini-los como constantes em seu código:
+Os valores a seguir retornados por essa função são definidos no arquivo de cabeçalho *Winerror. h* ou você pode defini-los como constantes em seu código:
 
 |Constante  |Valor  |Descrição  |
 |---------|---------|---------|
 | `E_INVALIDARG` | 0x80070057 | Um ou mais argumentos são inválidos. |
 | `E_POINTER` | 0x80004003 | `pIWbemServices` é `null`. |
 | `E_FAIL` | 0x80000008 | Ocorreu um erro não especificado. |
-| `E_OUTOFMEMORY` | 0x80000002 | A memória insuficiente está disponível para realizar a operação. |
-| `S_OK` | 0 | A chamada de função foi bem sucedida. |
+| `E_OUTOFMEMORY` | 0x80000002 | Memória insuficiente disponível para executar a operação. |
+| `S_OK` | 0 | A chamada de função foi bem-sucedida. |
 
 ## <a name="requirements"></a>Requisitos  
 
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
- **Cabeçalho:** WMINet_Utils.idl  
+ **Cabeçalho:** WMINet_Utils. idl  
   
- **.NET Framework Versions:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
+ **.NET Framework versões:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## <a name="see-also"></a>Confira também
 

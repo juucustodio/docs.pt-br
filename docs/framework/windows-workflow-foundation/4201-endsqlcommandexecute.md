@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 4201-EndSqlCommandExecute'
 title: 4201 - EndSqlCommandExecute
 ms.date: 03/30/2017
 ms.assetid: ae0dbc15-f98c-4096-a8d9-fbe4dc36f1cd
-ms.openlocfilehash: 75c1cdd10aca6b177911bd9d2f51468016eb9e15
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: e0b98e8da5a0a284bfa55e97f5dde25a2ce42b42
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61774355"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755363"
 ---
 # <a name="4201---endsqlcommandexecute"></a>4201 - EndSqlCommandExecute
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,9 +22,11 @@ ms.locfileid: "61774355"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
+
  Indica que um comando SQL terminou de executar.  
   
 ## <a name="message"></a>Mensagem  
+
  Execução do comando SQL de extremidade: %1  
   
 ## <a name="details"></a>Detalhes  

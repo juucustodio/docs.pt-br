@@ -1,5 +1,5 @@
 ---
-title: Como definir uma política de cache para uma solicitação
+title: 'Como: Definir uma política de cache para uma solicitação'
 description: Saiba como definir uma política de cache para uma solicitação no .NET Framework. Essa política de cache permite que um recurso seja usado do cache por até um dia.
 ms.date: 03/30/2017
 dev_langs:
@@ -8,17 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - request cache policies
 ms.assetid: 39c15e40-586b-4ac9-9cce-146f74b7e545
-ms.openlocfilehash: 248cbdd0921564898c5d3459cffa304793e85584
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: cbb8f2eaf618cb9faaca1375d829478a645962a7
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502425"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96253408"
 ---
-# <a name="how-to-set-cache-policy-for-a-request"></a>Como definir uma política de cache para uma solicitação
+# <a name="how-to-set-cache-policy-for-a-request"></a>Como: Definir uma política de cache para uma solicitação
+
 O exemplo a seguir demonstra como definir uma política de cache para uma solicitação. A entrada de exemplo é um URI, como `http://www.contoso.com/`.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo de código a seguir cria uma política de cache que permite que o recurso solicitado seja usado em cache se ele não esteve no cache por mais de um dia. O exemplo exibe uma mensagem que indica se o recurso foi usado do cache (por exemplo, `"The response was retrieved from the cache : False."`) e, em seguida, exibe o recurso. Uma solicitação pode ser atendida por qualquer cache entre o cliente e servidor.  
   
 ```csharp  
@@ -106,10 +108,10 @@ Namespace Examples.System.Net.Cache
 End Namespace  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Gerenciamento de cache para aplicativos de rede](cache-management-for-network-applications.md)
 - [Política de cache](cache-policy.md)
 - [Políticas de cache baseadas na localização](location-based-cache-policies.md)
 - [Políticas de cache baseadas em tempo](time-based-cache-policies.md)
-- [\<requestCaching>Elemento (configurações de rede)](../configure-apps/file-schema/network/requestcaching-element-network-settings.md)
+- [\<requestCaching> Elemento (configurações de rede)](../configure-apps/file-schema/network/requestcaching-element-network-settings.md)

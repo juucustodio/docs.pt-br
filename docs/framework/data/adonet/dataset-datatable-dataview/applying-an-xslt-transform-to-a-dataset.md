@@ -1,22 +1,23 @@
 ---
+description: 'Saiba mais sobre: aplicando uma transformação XSLT a um conjunto de informações'
 title: Aplicar uma transformação XSLT a um DataSet
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 09f2e4ee-1d08-4ba8-8936-83394fee319d
-ms.openlocfilehash: 3f066f29b99ade6e92a263110fed8079208567b5
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: c7fc25441091112f7fbb7e4c1f8dd210d8cd0c5d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79151488"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725110"
 ---
 # <a name="applying-an-xslt-transform-to-a-dataset"></a>Aplicar uma transformação XSLT a um DataSet
 
-O método **WriteXml** permite <xref:System.Data.DataSet> que você escreva o conteúdo de um **DataSet** como dados XML. Uma tarefa comum é transformar esse XML em outro formato usando transformações XSL (XSLT). No entanto, sincronizar <xref:System.Xml.XmlDataDocument> um **DataSet** com um permite que você aplique uma folha de estilos XSLT ao conteúdo de um **DataSet** sem ter que primeiro gravar o conteúdo do **DataSet** como dados XML usando **WriteXml**.  
+O método **WriteXml** do <xref:System.Data.DataSet> permite que você grave o conteúdo de um **DataSet** como dados XML. Uma tarefa comum é transformar esse XML em outro formato usando transformações XSL (XSLT). No entanto, a sincronização de um **conjunto** de dados com um <xref:System.Xml.XmlDataDocument> permite que você aplique uma folha de estilos XSLT ao conteúdo de um **conjunto** de dados sem precisar primeiro gravar o conteúdo do **DataSet** como dado XML usando **WriteXml**.  
   
- O exemplo a seguir preenche um **Conjunto de Dados** com tabelas e relacionamentos, sincroniza o **DataSet** com um **XmlDataDocument**e grava uma parte do **DataSet** como um arquivo HTML usando uma folha de estilos XSLT. A seguir estão os conteúdos da folha de estilos XSLT:
+ O exemplo a seguir popula um **conjunto** de um DataSet com tabelas e relações, sincroniza o **conjunto** de os com um **XmlDataDocument** e grava uma parte do **conjunto** de um arquivo HTML usando uma folha de estilos XSLT. Veja a seguir o conteúdo da folha de estilos XSLT:
   
 ```xml  
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
@@ -57,10 +58,10 @@ O método **WriteXml** permite <xref:System.Data.DataSet> que você escreva o co
 </xsl:stylesheet>  
 ```  
   
- O código a seguir preenche o **Conjunto de dados** e aplica a folha de estilos XSLT.  
+ O código a seguir preenche o **DataSet** e aplica a folha de estilos XSLT.  
   
 > [!NOTE]
-> Se você estiver aplicando uma folha de estilos XSLT a um **Conjunto de Dados** que contém relações, você alcançará o melhor desempenho se definir a propriedade **Aninhada** do <xref:System.Data.DataRelation> **verdadeiro** para cada relação aninhada. Isso permite que você use folhas de estilo XSLT que implementam processamento natural de cima para baixo para navegar na hierarquia e transformar os dados, em vez de usar eixos de localização XPath com uso intensivo de desempenho (por exemplo, anterior-irmão e seguinte-irmão em grande estilo expressões de teste de nó de folha) para navegá-lo. Para obter mais informações sobre relações aninhadas, consulte [Nesting DataRelations](nesting-datarelations.md).  
+> Se você estiver aplicando uma folha de estilos XSLT a um **conjunto** de um que contém relações, você obterá o melhor desempenho se definir a propriedade **aninhada** de <xref:System.Data.DataRelation> como **true** para cada relação aninhada. Isso permite que você use folhas de estilo XSLT que implementam o processamento de cima para baixo natural para navegar pela hierarquia e transformar os dados, em oposição ao uso de eixos de local XPath com uso intensivo de desempenho (por exemplo, irmão precedentes e o irmão seguinte em expressões de teste de nó de folha de estilo) para navegar por ele. Para obter mais informações sobre relações aninhadas, consulte [aninhando DataRelations](nesting-datarelations.md).  
   
 ```vb  
 ' Assumes connection is a valid SqlConnection.  
@@ -124,7 +125,7 @@ xslTran.Transform(xmlDoc, null, writer);
 writer.Close();  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Sincronização de DataSet e XmlDataDocument](dataset-and-xmldatadocument-synchronization.md)
 - [Visão geral do ADO.NET](../ado-net-overview.md)

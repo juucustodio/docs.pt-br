@@ -3,14 +3,15 @@ title: Como comparar o conteúdo de duas pastas (LINQ) (C#)
 description: Este exemplo demonstra três maneiras de comparar listagens de arquivos usando consultas LINQ em C#. Adapte essas técnicas para comparar sequências de objetos de qualquer tipo.
 ms.date: 07/20/2015
 ms.assetid: c7c4870e-c500-4de3-afa4-2c8e07f510e6
-ms.openlocfilehash: 3cdac57d3d746aa2290c51d1263a7d42dc3463e0
-ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
+ms.openlocfilehash: 840fda1548f36d9b9ad39c2e0d1346dfc727b106
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87105334"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91165254"
 ---
 # <a name="how-to-compare-the-contents-of-two-folders-linq-c"></a>Como comparar o conteúdo de duas pastas (LINQ) (C#)
+
 Este exemplo demonstra três modos de se comparar duas listagens de arquivo:  
   
 - Consultando um valor booliano que especifica se as duas listas de arquivos são idênticas.  
@@ -127,6 +128,7 @@ namespace QueryCompareTwoDirs
 ```  
   
 ## <a name="compiling-the-code"></a>Compilando o código  
+
  Criar um projeto de aplicativo de console em C# com diretivas `using` para os namespaces System.Linq e System.IO.  
   
 ## <a name="see-also"></a>Confira também

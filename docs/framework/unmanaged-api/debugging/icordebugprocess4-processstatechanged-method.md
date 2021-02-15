@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICorDebugProcess4: método rocessStateChanged de:P'
 title: 'ICorDebugProcess4: método rocessStateChanged de:P'
 ms.date: 02/07/2019
 api_name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: hoyosjs
 ms.author: juhoyosa
-ms.openlocfilehash: 910c411d2c63ce2c6cf262e28e08546657dc2a4c
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 35a76b3c6dd9b37d3f06f23bc2ffea82f125a29e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213563"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746445"
 ---
 # <a name="icordebugprocess4processstatechanged-method"></a>ICorDebugProcess4: método rocessStateChanged de:P
 
@@ -53,7 +54,7 @@ O método fornecido faz parte da `ICorDebugProcess4` interface e corresponde ao 
 
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v20plus-md.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugProcess4](icordebugprocess4-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

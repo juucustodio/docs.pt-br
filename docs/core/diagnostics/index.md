@@ -3,12 +3,12 @@ title: Visão geral das ferramentas de diagnóstico – .NET Core
 description: Uma visão geral das ferramentas e das técnicas disponíveis para diagnosticar aplicativos .NET Core.
 ms.date: 07/16/2020
 ms.topic: overview
-ms.openlocfilehash: 568f237e131cde18dad7c87ddff2fdd3d4bc5b8b
-ms.sourcegitcommit: 43d5aca3fda42bad8843f6c4e72f6bd52daa55f1
+ms.openlocfilehash: ee79057e45700e17fdd37cc36288b790d64d7a09
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89597983"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188472"
 ---
 # <a name="what-diagnostic-tools-are-available-in-net-core"></a>Quais ferramentas de diagnóstico estão disponíveis no .NET Core?
 
@@ -24,13 +24,25 @@ Os [depuradores gerenciados](managed-debuggers.md) permitem que você interaja c
 
 O [registro em log e o rastreamento](logging-tracing.md) são técnicas relacionadas. Eles se referem ao código de instrumentação para criar arquivos de log. Os arquivos registram os detalhes do que um programa faz. Esses detalhes podem ser usados para diagnosticar os problemas mais complexos. Quando aliados aos carimbos de data/hora, essas técnicas também são valiosas para as investigações de desempenho.
 
+## <a name="metrics"></a>Métricas
+
+O [EventCounters](event-counters.md) permite que você grave métricas para identificar e monitorar problemas de desempenho. As métricas incorrem em uma sobrecarga de desempenho inferior em comparação com o rastreamento, tornando-a mais adequada para um monitoramento de desempenho Always on. O tempo de execução e as bibliotecas do .NET publicam vários [EventCounters bem conhecidos](available-counters.md) que você também pode monitorar.
+
 ## <a name="unit-testing"></a>Teste de unidade
 
 O [teste de unidade](../testing/index.md) é um componente fundamental da integração e da implantação contínuas de software de alta qualidade. Os testes de unidade são projetados para fornecer um aviso antecipado quando você interrompe algo.
 
-## <a name="debug-linux-dumps"></a>Depurar despejos do Linux
+## <a name="dumps"></a>Despejos
 
-[Depurar despejos do Linux](debug-linux-dumps.md) explica como coletar e analisar despejos no Linux.
+Um [despejo](./dumps.md) é um arquivo que contém um instantâneo do processo no momento da criação. Eles podem ser úteis para examinar o estado do aplicativo para fins de depuração.
+
+## <a name="symbols"></a>Símbolos
+
+Os símbolos são um requisito fundamental para depuração e outras ferramentas de diagnóstico. O conteúdo dos arquivos de símbolo varia entre linguagens, compiladores e plataformas. Em um símbolo de nível muito alto, há um mapeamento entre o código-fonte e o binário produzido pelo compilador. Esses mapeamentos são usados para fornecer itens como informações de número de linha e nomes de suas variáveis locais em ferramentas de diagnóstico, como o [Visual Studio](/visualstudio/debugger/what-is-debugging) e o [Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging).  O link a seguir contém uma explicação detalhada dos [símbolos](/windows/win32/dxtecharts/debugging-with-symbols) para o Windows, embora muitos dos conceitos também se apliquem a outras plataformas. Os [símbolos portáteis do .net](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) têm uma extensão de arquivo "PDB" semelhante ao Windows PDB, embora não sejam compatíveis com o formato PDB do Windows.
+
+## <a name="collect-diagnostics-in-containers"></a>Coletar diagnósticos em contêineres
+
+As mesmas ferramentas de diagnóstico usadas em ambientes Linux não-contêineres também podem ser usadas para [coletar diagnósticos em contêineres](diagnostics-in-containers.md). Há apenas algumas alterações de uso necessárias para garantir que as ferramentas funcionem em um contêiner do Docker.
 
 ## <a name="net-core-diagnostic-global-tools"></a>Ferramentas globais de diagnóstico do .NET Core
 
@@ -50,13 +62,17 @@ A ferramenta [dotnet-gcdump](dotnet-gcdump.md) é uma maneira de coletar despejo
 
 O .NET Core inclui o que é chamado de `EventPipe` por meio do qual os dados de diagnóstico são expostos. A ferramenta [dotnet-Trace](dotnet-trace.md) permite que você consuma dados de criação de perfil interessantes de seu aplicativo que podem ajudar em cenários em que você precisa ter a causa raiz dos aplicativos em execução lenta.
 
-### <a name="dotnet-symbol"></a>dotnet-símbolo
+### <a name="dotnet-symbol"></a>dotnet-symbol
 
 [dotnet-Symbol](dotnet-symbol.md) baixa arquivos (símbolos, DAC/DBI, arquivos de host, etc.) necessários para abrir um dump principal ou minidespejo. Use essa ferramenta se precisar de símbolos e módulos para depurar um arquivo de despejo capturado em um computador diferente.
 
-### <a name="dotnet-sos"></a>dotnet-SOS
+### <a name="dotnet-sos"></a>dotnet-sos
 
-[dotnet-SOS](dotnet-sos.md) é usado para instalar a [extensão de depuração SOS](https://docs.microsoft.com/dotnet/framework/tools/sos-dll-sos-debugging-extension) no Linux ou MacOS (ou no Windows, se estiver usando ferramentas de depuração mais antigas).
+[dotnet-SOS](dotnet-sos.md) instala a [extensão de depuração SOS](sos-debugging-extension.md) no Linux e MacOS (e no Windows se você estiver usando o [windbg/CDB](/windows-hardware/drivers/debugger/debugger-download-tools)).
+
+### <a name="perfcollect"></a>PerfCollect
+
+[PerfCollect](trace-perfcollect-lttng.md) é um script bash que você pode usar para coletar rastreamentos com `perf` e `LTTng` para uma análise de desempenho mais detalhada de aplicativos .net em execução em distribuições do Linux.
 
 ## <a name="net-core-diagnostics-tutorials"></a>Tutoriais de diagnóstico do .NET Core
 
@@ -71,3 +87,15 @@ O .NET Core inclui o que é chamado de `EventPipe` por meio do qual os dados de 
 ### <a name="debug-deadlock"></a>Depurar deadlock
 
 [Tutorial: debug deadlock](debug-deadlock.md) mostra como usar a ferramenta [dotnet-dump](dotnet-dump.md) para investigar threads e bloqueios.
+
+### <a name="debug-a-stackoverflow"></a>Depurar um StackOverflow
+
+[Tutorial: Depurar um StackOverflow](debug-stackoverflow.md) demonstra como depurar um <xref:System.StackOverflowException> no Linux.
+
+### <a name="debug-linux-dumps"></a>Depurar despejos do Linux
+
+[Depurar despejos do Linux](debug-linux-dumps.md) explica como coletar e analisar despejos no Linux.
+
+### <a name="measure-performance-using-eventcounters"></a>Medir o desempenho usando o EventCounters
+
+[Tutorial: medir o desempenho usando o EventCounters no .net](event-counter-perf.md) mostra como usar a <xref:System.Diagnostics.Tracing.EventCounter> API para medir o desempenho em seu aplicativo .net.

@@ -5,14 +5,15 @@ ms.date: 02/25/2019
 helpviewer_keywords:
 - certificates [WCF], viewing with the MMC snap-in
 ms.assetid: 2b8782aa-ebb4-4ee7-974b-90299e356dc5
-ms.openlocfilehash: e63034e48ae836f67f89b454829f7196c94610cd
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 1f20384f16b3b5b898f926258d76a6a2773eaaa1
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85246669"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96280618"
 ---
 # <a name="how-to-view-certificates-with-the-mmc-snap-in"></a>Como exibir certificados com o snap-in do MMC
+
 Ao criar um cliente ou serviço seguro, você pode usar um [certificado](working-with-certificates.md) como a credencial. Por exemplo, um tipo comum de credencial é o certificado X. 509, que você cria com o <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A?displayProperty=nameWithType> método.
 
 Há três tipos diferentes de repositórios de certificados que você pode examinar com o MMC (console de gerenciamento Microsoft) em sistemas Windows:
@@ -35,11 +36,11 @@ O procedimento a seguir demonstra como examinar as lojas em seu dispositivo loca
 
     A janela **Adicionar ou remover snap-ins** é exibida.
   
-3. Na lista **snap-ins disponíveis** , escolha **certificados**e, em seguida, selecione **Adicionar**.  
+3. Na lista **snap-ins disponíveis** , escolha **certificados** e, em seguida, selecione **Adicionar**.  
 
     ![Adicionar Snap-in de certificado](./media/mmc-add-certificate-snap-in.png)
   
-4. Na janela **snap-in de certificados** , selecione **conta de computador**e, em seguida, selecione **Avançar**.
+4. Na janela **snap-in de certificados** , selecione **conta de computador** e, em seguida, selecione **Avançar**.
   
     Opcionalmente, você pode selecionar **minha conta de usuário** para o usuário atual ou a **conta de serviço** para um serviço específico.
 
@@ -66,7 +67,7 @@ Você também pode exibir, exportar, importar e excluir certificados usando a fe
 
 1. Selecione **executar** no menu **Iniciar** e, em seguida, digite *certlm. msc*.
 
-    A ferramenta Gerenciador de certificados para o dispositivo local é exibida.
+    A ferramenta Certificate Manager para o dispositivo local é exibida.
   
 2. Para exibir seus certificados, em **certificados – computador local** no painel esquerdo, expanda o diretório do tipo de certificado que você deseja exibir.
 

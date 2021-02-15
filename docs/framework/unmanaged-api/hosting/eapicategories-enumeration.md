@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração EApiCategories'
 title: Enumeração EApiCategories
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3c4a8a5a-8a46-4ac9-947f-4959bc9d6ac6
 topic_type:
 - apiref
-ms.openlocfilehash: d31b0190ef9a697fb27c849db080bec6c57618ae
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 58a7d4fa4d0c965bf9158ad6713185782d4ae94a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616379"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785621"
 ---
 # <a name="eapicategories-enumeration"></a>Enumeração EApiCategories
+
 Descreve as categorias de recursos que o host pode bloquear de ser executado em código parcialmente confiável.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -44,7 +46,7 @@ typedef enum {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`eAll`|Especifica que todas as classes gerenciadas e membros cobertos por outros `EApiCategories` campos sejam impedidos de serem executados em código parcialmente confiável.|  
 |`eExternalProcessMgmt`|Especifica que classes e membros gerenciados que permitem a criação, manipulação e destruição de processos externos sejam impedidos de serem executados em código parcialmente confiável.|  
@@ -59,20 +61,22 @@ typedef enum {
 |`eUI`|Especifica que classes e membros gerenciados que permitem ou exigem interação humana são impedidos de serem executados em código parcialmente confiável.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O método [ICLRHostProtectionManager:: SetProtectedCategories](iclrhostprotectionmanager-setprotectedcategories-method.md) usa um parâmetro do tipo `EApiCategories` .  
   
  A `EApiCategories` enumeração e o `SetProtectedCategories` método estão diretamente relacionados à classe gerenciada <xref:System.Security.Permissions.HostProtectionAttribute?displayProperty=nameWithType> . A classe gerenciada é usada com a <xref:System.Security.Permissions.HostProtectionResource?displayProperty=nameWithType> Enumeração cujos valores correspondem diretamente aos `EApiCategories` valores, para marcar tipos gerenciados e membros que expõem recursos correspondentes às categorias descritas por `EApiCategories` .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** MSCorEE. dll  
+ **Biblioteca:** MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRHostProtectionManager](iclrhostprotectionmanager-interface.md)
 - [Hospedando enumerações](hosting-enumerations.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerCallback:: JITCompilationFinished'
 title: Método ICorProfilerCallback::JITCompilationFinished
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 8dcd7537-d0c6-498c-8a56-2c060310ef65
 topic_type:
 - apiref
-ms.openlocfilehash: 0da67f0d4be779cc21481d03a21209620289888e
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: f0308bfb5f81d7305ab36acbb9144142232ef8c4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500047"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99705779"
 ---
 # <a name="icorprofilercallbackjitcompilationfinished-method"></a>Método ICorProfilerCallback::JITCompilationFinished
+
 Notifica o criador de perfil de que o compilador JIT (just-in-time) concluiu a compilação de uma função.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -51,6 +53,7 @@ HRESULT JITCompilationFinished(
   Embora um valor de `true` não danifique o tempo de execução, ele pode distorcer os resultados de criação de perfil.
 
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -59,7 +62,7 @@ HRESULT JITCompilationFinished(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Método JITCompilationStarted](icorprofilercallback-jitcompilationstarted-method.md)

@@ -2,22 +2,21 @@
 title: Temporizadores
 description: Saiba quais temporizadores .NET devem ser usados em um ambiente multi-threaded.
 ms.date: 07/03/2018
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 - cpp
 helpviewer_keywords:
-- threading [.NET Framework], timers
+- threading [.NET], timers
 - timers, about timers
 ms.assetid: 7091500d-be18-499b-a942-95366ce185e5
 author: pkulikov
-ms.openlocfilehash: d463eb2a8d598dc5ba9b2fb51a6fc08c563e6fe4
-ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
+ms.openlocfilehash: 1ab612bc32a84c1248d311b0603a01a32a25199f
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81739495"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94826099"
 ---
 # <a name="timers"></a>Temporizadores
 
@@ -35,7 +34,7 @@ O .NET fornece dois temporizadores a serem usados em um ambiente multi-threaded:
 
 ## <a name="the-systemthreadingtimer-class"></a>A classe System.Threading.Timer
 
-A classe <xref:System.Threading.Timer?displayProperty=nameWithType> permite chamar um delegado continuamente em intervalos de tempo especificado. Você também pode usar esta classe para agendar uma única chamada para um delegado em um intervalo de tempo especificado. O delegado é executado em um thread <xref:System.Threading.ThreadPool>.
+A classe <xref:System.Threading.Timer?displayProperty=nameWithType> permite chamar um delegado continuamente em intervalos de tempo especificado. Você também pode usar essa classe para agendar uma única chamada para um delegado em um intervalo de tempo especificado. O delegado é executado em um thread <xref:System.Threading.ThreadPool>.
 
 Ao criar um objeto <xref:System.Threading.Timer?displayProperty=nameWithType>, você especifica um delegado <xref:System.Threading.TimerCallback> que define o método de retorno de chamada, um objeto de estado opcional que é passado para o retorno de chamada, o período de atraso antes da primeira invocação do retorno de chamada e o intervalo de tempo entre as invocações do retorno de chamada. Para cancelar um temporizador pendente, chame o método <xref:System.Threading.Timer.Dispose%2A?displayProperty=nameWithType>.
 
@@ -59,4 +58,4 @@ Para obter mais informações e exemplos, consulte <xref:System.Timers.Timer?dis
 
 - <xref:System.Threading.Timer?displayProperty=nameWithType>
 - <xref:System.Timers.Timer?displayProperty=nameWithType>
-- [Objetos e recursos de rosca](threading-objects-and-features.md)
+- [Threading de objetos e recursos](threading-objects-and-features.md)

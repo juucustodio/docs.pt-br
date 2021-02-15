@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: conversão de delegado reduzida (Visual Basic)'
 title: Conversão de delegado reduzida
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,17 +7,19 @@ helpviewer_keywords:
 - delegates [Visual Basic], relaxed conversion
 - conversions [Visual Basic], relaxed delegate
 ms.assetid: 64f371d0-5416-4f65-b23b-adcbf556e81c
-ms.openlocfilehash: a581ffae77c496908d2e4e38df53491a54ae2ab8
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 36917017cd29d2c71f0c04ca9545b7d4e90c644e
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410664"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100428487"
 ---
 # <a name="relaxed-delegate-conversion-visual-basic"></a>Conversão de delegado reduzida (Visual Basic)
+
 A conversão de delegado reduzida permite que você atribua sub-rotinas e funções a delegados ou manipuladores, mesmo quando suas assinaturas não forem idênticas. Portanto, a associação a delegados se torna consistente com a associação já permitida para invocações de método.  
   
 ## <a name="parameters-and-return-type"></a>Parâmetros e tipo de retorno  
+
  Em vez de uma correspondência exata de assinatura, a conversão reduzida exige que as seguintes condições sejam atendidas quando `Option Strict` é definido como `On` :  
   
 - Uma conversão de ampliação deve existir do tipo de dados de cada parâmetro delegado para o tipo de dados do parâmetro correspondente da função atribuída ou `Sub` . No exemplo a seguir, o delegado `Del1` tem um parâmetro, um `Integer` . `m`O parâmetro nas expressões lambda atribuídas deve ter um tipo de dados para o qual há uma conversão de ampliação de `Integer` , como `Long` ou `Double` .  
@@ -38,6 +41,7 @@ A conversão de delegado reduzida permite que você atribua sub-rotinas e funç�
  [!code-vb[VbVbalrRelaxedDelegates#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrRelaxedDelegates/VB/Module2.vb#4)]  
   
 ## <a name="omitting-parameter-specifications"></a>Omitindo especificações de parâmetro  
+
  Delegados relaxados também permitem que você omita completamente as especificações de parâmetro no método atribuído:  
   
  [!code-vb[VbVbalrRelaxedDelegates#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrRelaxedDelegates/VB/Module1.vb#5)]  
@@ -61,6 +65,7 @@ End Sub
 ```  
   
 ## <a name="addressof-examples"></a>Exemplos de AddressOf  
+
  As expressões lambda são usadas nos exemplos anteriores para facilitar a visualização das relações de tipo. No entanto, as mesmas reduções são permitidas para atribuições de delegado que usam `AddressOf` , `Handles` ou `AddHandler` .  
   
  No exemplo a seguir, `f1` as funções,, `f2` `f3` e `f4` podem ser atribuídas a `Del1` .  
@@ -76,17 +81,18 @@ End Sub
  [!code-vb[VbVbalrRelaxedDelegates#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrRelaxedDelegates/VB/Module2.vb#14)]  
   
 ## <a name="dropping-function-returns"></a>Descartando retornos de função  
+
  A conversão de delegado reduzida permite que você atribua uma função a um `Sub` delegado, ignorando efetivamente o valor de retorno da função. No entanto, você não pode atribuir um `Sub` a um delegado de função. No exemplo a seguir, o endereço da função `doubler` é atribuído ao `Sub` delegado `Del3` .  
   
  [!code-vb[VbVbalrRelaxedDelegates#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrRelaxedDelegates/VB/Module1.vb#10)]  
   
  [!code-vb[VbVbalrRelaxedDelegates#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrRelaxedDelegates/VB/Module1.vb#11)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Expressões lambda](../procedures/lambda-expressions.md)
 - [Conversões de Widening e Narrowing](../data-types/widening-and-narrowing-conversions.md)
-- [Delegados](index.md)
+- [Representantes](index.md)
 - [Como passar procedimentos para outro procedimento no Visual Basic](how-to-pass-procedures-to-another-procedure.md)
 - [Inferência de Tipo de Variável Local](../variables/local-type-inference.md)
 - [Instrução Option Strict](../../../language-reference/statements/option-strict-statement.md)

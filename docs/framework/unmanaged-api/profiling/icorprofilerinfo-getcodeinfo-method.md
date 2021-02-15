@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo:: GetCodeInfo'
 title: Método ICorProfilerInfo::GetCodeInfo
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 90140b0f-a926-4a7e-b6fa-23e05f703cce
 topic_type:
 - apiref
-ms.openlocfilehash: eb6efc738b270f8f76d7130a12af4927fb6220ce
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: e965e9c21b7add0367b08f152bf509ad6b6ed4cd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84498356"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647655"
 ---
 # <a name="icorprofilerinfogetcodeinfo-method"></a>Método ICorProfilerInfo::GetCodeInfo
+
 Obtém a extensão do código nativo associado à ID da função especificada.  
   
  Esse método é obsoleto. Em vez disso, use o método [ICorProfilerInfo2:: GetCodeInfo2](icorprofilerinfo2-getcodeinfo2-method.md) .  
@@ -37,6 +39,7 @@ HRESULT GetCodeInfo(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `functionId`  
  no A ID da função à qual o código nativo está associado.  
   
@@ -47,11 +50,13 @@ HRESULT GetCodeInfo(
  fora Um ponteiro para um inteiro que especifica o tamanho, em bytes, do código nativo.  
   
 ## <a name="remarks"></a>Comentários  
+
  Para otimizar o desempenho, o tempo de execução na versão 2,0 do .NET Framework divide o código pré-compilado precompilado de uma função em várias regiões. Consequentemente, o `GetCodeInfo` método é obsoleto no .NET Framework 2,0 porque não é possível manipular a extensão do código nativo de uma função. Os profileres devem mudar para o uso do `ICorProfilerInfo2::GetCodeInfo2` método mais geral.  
   
  Essa função usa buffers alocados pelo chamador.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -60,7 +65,7 @@ HRESULT GetCodeInfo(
   
  **Versões do .NET Framework:** 1,0  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo](icorprofilerinfo-interface.md)
 - [Criação de perfil de interfaces](profiling-interfaces.md)

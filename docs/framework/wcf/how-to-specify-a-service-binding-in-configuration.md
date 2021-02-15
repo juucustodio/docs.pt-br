@@ -1,18 +1,20 @@
 ---
-title: Como especificar uma associação de serviço em configuração
+title: 'Como: especificar uma associação de serviço na configuração'
 description: Saiba como configurar um ponto de extremidade para um serviço WCF em um arquivo de configuração. Um contrato é definido para um serviço e implementado em uma classe.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 885037f7-1c2b-4d7a-90d9-06b89be172f2
-ms.openlocfilehash: 3b9dd12f2a28ae2d420e82013459613cee8140f1
-ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.openlocfilehash: 06b1cd009d28f854ec73286efa29d42f0f557314
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86051942"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96293683"
 ---
-# <a name="how-to-specify-a-service-binding-in-configuration"></a>Como especificar uma associação de serviço em configuração
+# <a name="how-to-specify-a-service-binding-in-configuration"></a>Como: especificar uma associação de serviço na configuração
+
 Neste exemplo, um `ICalculator` contrato é definido para um serviço de calculadora básica, o serviço é implementado na `CalculatorService` classe e, em seguida, seu ponto de extremidade é configurado no arquivo de Web.config, onde é especificado que o serviço usa o <xref:System.ServiceModel.BasicHttpBinding> . Para obter uma descrição de como configurar esse serviço usando o código em vez de uma configuração, consulte [como especificar uma associação de serviço no código](how-to-specify-a-service-binding-in-code.md).  
   
  Geralmente, é a prática recomendada especificar a associação e as informações de endereço de forma declarativa na configuração, em vez de imperativa no código. A definição de pontos de extremidade no código geralmente não é prática porque as associações e os endereços para um serviço implantado são normalmente diferentes daqueles usados enquanto o serviço está sendo desenvolvido. Em geral, manter as informações de vinculação e endereçamento do código permite que elas sejam alteradas sem a necessidade de recompilar ou reimplantar o aplicativo.  
@@ -93,7 +95,7 @@ Neste exemplo, um `ICalculator` contrato é definido para um serviço de calcula
     </wsHttpBinding>  
     ```  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Usando associações para configurar serviços e clientes](using-bindings-to-configure-services-and-clients.md)
-- [Especificando um endereço do ponto de extremidade](specifying-an-endpoint-address.md)
+- [Especificando um endereço de ponto de extremidade](specifying-an-endpoint-address.md)

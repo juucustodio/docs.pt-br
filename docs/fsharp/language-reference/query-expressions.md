@@ -2,12 +2,12 @@
 title: Expressões de consulta
 description: 'Saiba mais sobre o suporte à expressão de consulta para LINQ na linguagem de programação F #.'
 ms.date: 08/15/2020
-ms.openlocfilehash: afcc6e92818b1648a210ad9cfc3f1dcfa46037b5
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: b2380bbc448aca06a40896582f3d4e7f701c6184
+ms.sourcegitcommit: fe8877e564deb68d77fa4b79f55584ac8d7e8997
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88559057"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90720472"
 ---
 # <a name="query-expressions"></a>Expressões de consulta
 
@@ -45,7 +45,7 @@ query1
 
 No exemplo de código anterior, a expressão de consulta está entre chaves. O significado do código na expressão é retornar todos os clientes na tabela Customers no banco de dados nos resultados da consulta. As expressões de consulta retornam um tipo que implementa <xref:System.Linq.IQueryable%601> e e <xref:System.Collections.Generic.IEnumerable%601> , portanto, podem ser iteradas usando o [módulo Seq](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html) como mostra o exemplo.
 
-Cada tipo de expressão de computação é criado a partir de uma classe de construtor. A classe do construtor para a expressão de cálculo de consulta é `QueryBuilder` . Para obter mais informações, consulte [expressões de computação](computation-expressions.md) e [classe Construtor](hhttps://fsharp.github.io/fsharp-core-docs/reference/fsharp-linq-querybuilder.html).
+Cada tipo de expressão de computação é criado a partir de uma classe de construtor. A classe do construtor para a expressão de cálculo de consulta é `QueryBuilder` . Para obter mais informações, consulte [expressões de computação](computation-expressions.md) e [classe Construtor](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-linq-querybuilder.html).
 
 ## <a name="query-operators"></a>Operadores de Consulta
 

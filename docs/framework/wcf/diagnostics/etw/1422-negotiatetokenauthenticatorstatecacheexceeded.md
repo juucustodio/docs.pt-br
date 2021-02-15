@@ -1,28 +1,32 @@
 ---
+description: 'Saiba mais sobre: 1422-NegotiateTokenAuthenticatorStateCacheExceeded'
 title: 1422 - NegotiateTokenAuthenticatorStateCacheExceeded
 ms.date: 03/30/2017
 ms.assetid: bfabfb52-ebfb-489f-bdb4-408536c24e52
-ms.openlocfilehash: 88b85d1c05325de3786e9effbc86e2940c9c9751
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 23700cd48e7555ed05b8d5b43597e416444a373b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61782181"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99645549"
 ---
 # <a name="1422---negotiatetokenauthenticatorstatecacheexceeded"></a>1422 - NegotiateTokenAuthenticatorStateCacheExceeded
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
 |ID|1422|  
 |Palavras-chave|Quota|  
-|Nível|Erro|  
+|Level|Erro do|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando o cache de estado do autenticador de token negotiate for excedido.  
+
+ Esse evento é emitido quando o cache de estado do autenticador de token de negociação é excedido.  
   
 ## <a name="message"></a>Mensagem  
+
  1%  
   
 ## <a name="details"></a>Detalhes

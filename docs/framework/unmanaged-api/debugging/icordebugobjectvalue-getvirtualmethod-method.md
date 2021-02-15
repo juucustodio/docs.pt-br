@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugObjectValue:: GetVirtualMethod'
 title: Método ICorDebugObjectValue::GetVirtualMethod
 ms.date: 03/30/2017
 api_name:
@@ -15,17 +16,18 @@ helpviewer_keywords:
 ms.assetid: f783ebc3-e952-46e6-9325-14dd2c666f21
 topic_type:
 - apiref
-ms.openlocfilehash: 30fcf15ed5f612820fc2836995b1e0206f580763
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: b4e97cce86d10918bd0292c6b22132a735855a21
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73095762"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803582"
 ---
 # <a name="icordebugobjectvaluegetvirtualmethod-method"></a>Método ICorDebugObjectValue::GetVirtualMethod
-`GetVirtualMethod` não está implementado nesta versão do .NET Framework.  
+
+`GetVirtualMethod` Não está implementado nesta versão do .NET Framework.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT GetVirtualMethod (  
@@ -35,6 +37,7 @@ HRESULT GetVirtualMethod (
 ```  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também

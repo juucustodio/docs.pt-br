@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebug:: SetManagedHandler'
 title: Método ICorDebug::SetManagedHandler
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: d079131b-685b-4869-95be-826b88d28bd2
 topic_type:
 - apiref
-ms.openlocfilehash: a197d260c55d24f906da7d7f2768bb7ba1ad751f
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 5817bd39a2c4e7c71dc12ca8d2d9b1263d116ac8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82895340"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754349"
 ---
 # <a name="icordebugsetmanagedhandler-method"></a>Método ICorDebug::SetManagedHandler
+
 Especifica o objeto manipulador de eventos para eventos gerenciados.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,15 +36,18 @@ HRESULT SetManagedHandler (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pCallback`  
  no Um ponteiro para um objeto [ICorDebugManagedCallback](icordebugmanagedcallback-interface.md) , que é o objeto manipulador de eventos.  
   
 ## <a name="remarks"></a>Comentários  
- `SetManagedHandler`deve ser chamado no momento da criação.  
+
+ `SetManagedHandler` deve ser chamado no momento da criação.  
   
  Se a `ICorDebugManagedCallback` implementação não contiver interfaces suficientes para lidar com eventos de depuração para o aplicativo que está sendo depurado, `SetManagedHandler` o retornará um HRESULT de E_NOINTERFACE.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

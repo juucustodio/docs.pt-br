@@ -2,12 +2,12 @@
 title: Matrizes
 description: 'Saiba como criar e usar matrizes na linguagem de programação F #.'
 ms.date: 08/13/2020
-ms.openlocfilehash: 37f781ccd2c7bc2ca2c7b93bda53bbb3ea93b504
-ms.sourcegitcommit: cbb19e56d48cf88375d35d0c27554d4722761e0d
+ms.openlocfilehash: 96b0d7eaf10d5afcd9a647681d5c2ef2d2fba335
+ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88608507"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96739745"
 ---
 # <a name="arrays"></a>Matrizes
 
@@ -287,12 +287,12 @@ module test =
 
     let test1 = generateTestMatrix 2.3 1.1
     let submatrix = test1.[0..1, 0..1]
-    printfn "%A" submatrix
+    printfn $"{submatrix}"
 
     let firstRow = test1.[0,*]
     let secondRow = test1.[1,*]
     let firstCol = test1.[*,0]
-    printfn "%A" firstCol
+    printfn $"{firstCol}"
 ```
 
 ### <a name="boolean-functions-on-arrays"></a>Funções booleanas em matrizes
@@ -415,7 +415,7 @@ As funções [`Array.zip`](https://fsharp.github.io/fsharp-core-docs/reference/f
 
 O módulo [`Array.Parallel`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-arraymodule-parallel.html) contém funções para executar cálculos paralelos em matrizes. Este módulo não está disponível em aplicativos que visam versões do .NET Framework antes da versão 4.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência de linguagem F #](index.md)
 - [Tipos F#](fsharp-types.md)

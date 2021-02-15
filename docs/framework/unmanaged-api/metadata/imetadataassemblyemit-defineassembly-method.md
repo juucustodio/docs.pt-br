@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: IMetaDataAssemblyEmit: método efineAssembly de:D'
 title: Método IMetaDataAssemblyEmit::DefineAssembly
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: a0637d66-74bf-4f2d-8137-9ff838bccece
 topic_type:
 - apiref
-ms.openlocfilehash: 17c91200730431c4c6e230b8c1561ce7c4863868
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: cd53a4398f49ca96072fc5f5b6dcac35a94bdc59
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008177"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706737"
 ---
 # <a name="imetadataassemblyemitdefineassembly-method"></a>Método IMetaDataAssemblyEmit::DefineAssembly
+
 Cria uma `Assembly` estrutura que contém metadados para o assembly especificado e retorna o token de metadados associado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -40,6 +42,7 @@ HRESULT DefineAssembly (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pbPublicKey`  
  no A chave pública que identifica o editor do assembly ou NULL se o assembly não tiver um nome forte.  
   
@@ -62,17 +65,19 @@ HRESULT DefineAssembly (
  fora Um ponteiro para o token de metadados.  
   
 ## <a name="remarks"></a>Comentários  
+
  Somente uma `Assembly` estrutura de metadados pode ser definida em um manifesto.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Incluído como um recurso em MsCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataAssemblyEmit](imetadataassemblyemit-interface.md)

@@ -1,7 +1,7 @@
 ---
+description: 'Saiba mais sobre: como usar blocos finally'
 title: Como usar blocos finally
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -13,12 +13,12 @@ helpviewer_keywords:
 - finally blocks
 - ArgumentOutOfRangeException class
 ms.assetid: 4b9c0137-04af-4468-91d1-b9014df8ddd2
-ms.openlocfilehash: 44fbb53437c4c8f19a424227a167e2e268b77057
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 0c296e5cba8e3f4f50005a6178886a116f6e7bac
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75708826"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99629598"
 ---
 # <a name="how-to-use-finally-blocks"></a>Como usar blocos finally
 
@@ -30,6 +30,6 @@ O exemplo de código a seguir usa um bloco `try`/`catch` para capturar uma <xref
 [!code-csharp[CodeTryCatchFinallyExample#3](../../../samples/snippets/csharp/VS_Snippets_CLR/CodeTryCatchFinallyExample/CS/source2.cs#3)]
 [!code-vb[CodeTryCatchFinallyExample#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeTryCatchFinallyExample/VB/source2.vb#3)]  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Exceções](index.md)

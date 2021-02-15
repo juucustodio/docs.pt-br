@@ -2,7 +2,6 @@
 title: Converter cadeias de caracteres em DateTime
 description: Aprenda técnicas para analisar cadeias de caracteres que representam datas e horas a fim de criar um DateTime com base na cadeia de caracteres de data e hora.
 ms.date: 02/15/2018
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -10,16 +9,16 @@ helpviewer_keywords:
 - parsing strings, date and time strings
 - date and time strings
 - ParseExact method
-- enumerations [.NET Framework], parsing strings
+- enumerations [.NET], parsing strings
 - base types, parsing strings
 - DateTime object
 - time strings
-ms.openlocfilehash: 9fba80e4dbe1e4950ed24e7489ac48ea1b6ff20b
-ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
+ms.openlocfilehash: 557955b5c47695dea686527fd99653ef2efe19bb
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84662895"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94821912"
 ---
 # <a name="parse-date-and-time-strings-in-net"></a>Analisar cadeias de caracteres de data e hora no .NET
 
@@ -90,4 +89,4 @@ Cada sobrecarga dos métodos <xref:System.DateTime.Parse%2A> e <xref:System.Date
 - [Tipos de formatação](formatting-types.md)
 - [Conversão de tipo no .NET](type-conversion.md)
 - [Formatos de data e hora padrão](standard-date-and-time-format-strings.md)
-- [Cadeias de caracteres de formato de data e hora personalizado](custom-date-and-time-format-strings.md)
+- [Cadeias de caracteres de formato de data e hora personalizadas](custom-date-and-time-format-strings.md)

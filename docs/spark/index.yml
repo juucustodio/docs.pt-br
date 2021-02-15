@@ -11,27 +11,31 @@ metadata:
   author: mamccrea
   ms.author: mamccrea
   ms.date: 09/11/2019
-  ms.openlocfilehash: 5b477daf0f52d48a6f068fa8eafeb1b787d19c39
-  ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+  ms.openlocfilehash: 1ceb8e11d8a041db729113ec06674ade3646fd7a
+  ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 05/12/2020
-  ms.locfileid: "83212221"
+  ms.lasthandoff: 12/04/2020
+  ms.locfileid: "96599623"
 landingContent:
 - title: Noções básicas do .NET para Apache Spark
   linkLists:
   - linkListType: whats-new
     links:
     - text: Novidades nos documentos do .NET
-      url: /dotnet/whats-new/index
+      url: ../whats-new/index.yml
   - linkListType: overview
     links:
     - text: O que é o .NET para o Apache Spark?
       url: what-is-apache-spark-dotnet.md
+  - linkListType: get-started
+    links:
+    - text: .NET para Apache Spark no Q&A
+      url: /answers/topics/dotnet-apache-spark.html
   - linkListType: reference
     links:
     - text: Referência de API
-      url: /dotnet/api/?view=spark-dotnet
+      url: ../../api/index.md?view=spark-dotnet
     - text: GitHub
       url: https://github.com/dotnet/spark
 - title: Comece a usar em 10 minutos

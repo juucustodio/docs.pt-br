@@ -1,18 +1,20 @@
 ---
-title: Como fazer intercâmbio de mensagens com pontos de extremidade do WCF e aplicativos de enfileiramento de mensagens
+description: 'Saiba mais sobre: como trocar mensagens com pontos de extremidade WCF e aplicativos de enfileiramento de mensagens'
+title: 'Como: fazer intercâmbio de mensagens com pontos de extremidade do WCF e aplicativos de enfileiramento de mensagens'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 62210fd8-a372-4d55-ab9b-c99827d1885e
-ms.openlocfilehash: 0775de90903aed27a8d0006614a4b6f2d857eee3
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 0b8f315b00960ec87e68e9e2b11ac9b273dbbf93
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597092"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704609"
 ---
-# <a name="how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications"></a>Como fazer intercâmbio de mensagens com pontos de extremidade do WCF e aplicativos de enfileiramento de mensagens
+# <a name="how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications"></a>Como: fazer intercâmbio de mensagens com pontos de extremidade do WCF e aplicativos de enfileiramento de mensagens
+
 Você pode integrar aplicativos MSMQ (enfileiramento de mensagens) existentes com aplicativos Windows Communication Foundation (WCF) usando a associação de integração do MSMQ para converter mensagens MSMQ de e para mensagens do WCF. Isso permite chamar os aplicativos do receptor MSMQ de clientes WCF, bem como chamar serviços WCF de aplicativos de remetente MSMQ.  
   
  Nesta seção, explicaremos como usar para a <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> comunicação em fila entre (1) um cliente WCF e um serviço de aplicativo MSMQ escrito usando System. Messaging e (2) um cliente de aplicativo MSMQ e um serviço WCF.  
@@ -61,7 +63,7 @@ Você pode integrar aplicativos MSMQ (enfileiramento de mensagens) existentes co
 ## <a name="see-also"></a>Consulte também
 
 - [Visão geral de filas](queues-overview.md)
-- [Como fazer intercâmbio de mensagens em fila com pontos de extremidade do WCF](how-to-exchange-queued-messages-with-wcf-endpoints.md)
+- [Como: fazer intercâmbio de mensagens em fila com pontos de extremidade do WCF](how-to-exchange-queued-messages-with-wcf-endpoints.md)
 - [Windows Communication Foundation para enfileiramento de mensagens](../samples/wcf-to-message-queuing.md)
 - [Instalando o Enfileiramento de Mensagens (MSMQ)](../samples/installing-message-queuing-msmq.md)
 - [Enfileiramento de mensagens para o Windows Communication Foundation](../samples/message-queuing-to-wcf.md)

@@ -1,19 +1,20 @@
 ---
-title: 'Tarefa 2: Hospedar Designer de Fluxo de Trabalho'
+description: 'Saiba mais sobre: tarefa 2: hospedar o Designer de Fluxo de Trabalho'
+title: 'Tarefa 2: Hospedar o Designer de Fluxo de Trabalho'
 ms.date: 03/30/2017
 ms.assetid: 0a29b138-270d-4846-b78e-2b875e34e501
-ms.openlocfilehash: 8e4c17ed182cec7748b9a1f11f76ff90aa60c39e
-ms.sourcegitcommit: 5fb5b6520b06d7f5e6131ec2ad854da302a28f2e
+ms.openlocfilehash: 5a00c9db831575dfe7f6f2b6e041f18877c60118
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74715786"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755194"
 ---
-# <a name="task-2-host-the-workflow-designer"></a>Tarefa 2: Hospedar Designer de Fluxo de Trabalho
+# <a name="task-2-host-the-workflow-designer"></a>Tarefa 2: Hospedar o Designer de Fluxo de Trabalho
 
 Este tópico descreve o procedimento para hospedar uma instância do Designer de Fluxo de Trabalho do Windows em um aplicativo do Windows Presentation Foundation (WPF).
 
-O procedimento configura o controle de **grade** que contém o designer, cria programaticamente uma instância do <xref:System.Activities.Presentation.WorkflowDesigner> que contém uma atividade de <xref:System.Activities.Statements.Sequence> padrão, registra os metadados do designer para fornecer suporte ao designer para todas as atividades internas e hospeda o designer de fluxo de trabalho no aplicativo WPF.
+O procedimento configura o controle de **grade** que contém o designer, cria programaticamente uma instância do <xref:System.Activities.Presentation.WorkflowDesigner> que contém uma <xref:System.Activities.Statements.Sequence> atividade padrão, registra os metadados do designer para fornecer suporte de designer para todas as atividades internas e hospeda o designer de fluxo de trabalho no aplicativo WPF.
 
 ## <a name="to-host-the-workflow-designer"></a>Para hospedar o designer de fluxo de trabalho
 
@@ -23,11 +24,11 @@ O procedimento configura o controle de **grade** que contém o designer, cria pr
 
 3. Defina o nome da grade selecionando o painel de **grade** no designer (clique na caixa dentro de **MainWindow**) e definindo a propriedade **Name** na parte superior da janela **Properties** como "grid1".
 
-4. Na janela **Propriedades** , clique nas reticências ( **...** ) ao lado da propriedade `ColumnDefinitions` para abrir a caixa de diálogo **Editor de coleção** .
+4. Na janela **Propriedades** , clique nas reticências (**...**) ao lado da `ColumnDefinitions` propriedade para abrir a caixa de diálogo **Editor de coleção** .
 
 5. Na caixa de diálogo **Editor de coleção** , clique no botão **Adicionar** três vezes para inserir três colunas no layout. A primeira coluna conterá a **caixa de ferramentas**, a segunda coluna hospedará o designer de fluxo de trabalho e a terceira coluna será usada para o Inspetor de propriedades.
 
-6. Defina a propriedade `Width` da coluna do meio como o valor "4 *".
+6. Defina a `Width` propriedade da coluna intermediária com o valor "4 *".
 
 7. Clique em **OK** para salvar as alterações. O XAML a seguir é adicionado ao seu arquivo *MainWindow. XAML* :
 
@@ -43,7 +44,7 @@ O procedimento configura o controle de **grade** que contém o designer, cria pr
 
 8. Em **Gerenciador de soluções**, clique com o botão direito do mouse em *MainWindow. XAML* e selecione **Exibir código**. Modifique o código seguindo estas etapas:
 
-    1. Adicione as seguintes namespaces:
+    1. Adicione os seguintes namespaces:
 
         ```csharp
         using System.Activities;
@@ -55,7 +56,7 @@ O procedimento configura o controle de **grade** que contém o designer, cria pr
         using System.ComponentModel;
         ```
 
-    2. Para declarar um campo de membro privado para manter uma instância do <xref:System.Activities.Presentation.WorkflowDesigner>, adicione o seguinte código à classe `MainWindow`:
+    2. Para declarar um campo de membro privado para manter uma instância do <xref:System.Activities.Presentation.WorkflowDesigner> , adicione o seguinte código à `MainWindow` classe:
 
         ```csharp
         public partial class MainWindow : Window
@@ -69,7 +70,7 @@ O procedimento configura o controle de **grade** que contém o designer, cria pr
         }
         ```
 
-    3. Adicione o seguinte método de `AddDesigner` a classe de `MainWindow` . A implementação cria uma instância do <xref:System.Activities.Presentation.WorkflowDesigner>, adiciona uma atividade de <xref:System.Activities.Statements.Sequence> a ela e a coloca na coluna intermediária da **grade**grid1.
+    3. Adicione o seguinte método `AddDesigner` à classe `MainWindow`. A implementação cria uma instância do <xref:System.Activities.Presentation.WorkflowDesigner> , adiciona uma <xref:System.Activities.Statements.Sequence> atividade a ela e a coloca na coluna intermediária da **grade** grid1.
 
         ```csharp
         private void AddDesigner()
@@ -88,7 +89,7 @@ O procedimento configura o controle de **grade** que contém o designer, cria pr
         }
         ```
 
-    4. Registrar os metadados de designer para adicionar suporte do designer para todas as atividades internos. Isso permite que você remova atividades da caixa de ferramentas para a atividade de <xref:System.Activities.Statements.Sequence> original no Designer de Fluxo de Trabalho. Para fazer isso, adicione o método `RegisterMetadata` à classe `MainWindow`:
+    4. Registrar os metadados de designer para adicionar suporte do designer para todas as atividades internos. Isso permite que você remova atividades da caixa de ferramentas para a <xref:System.Activities.Statements.Sequence> atividade original no designer de fluxo de trabalho. Para fazer isso, adicione o `RegisterMetadata` método à `MainWindow` classe:
 
         ```csharp
         private void RegisterMetadata()
@@ -124,6 +125,6 @@ O procedimento configura o controle de **grade** que contém o designer, cria pr
 
 ## <a name="see-also"></a>Consulte também
 
-- [Hospedando novamente o Designer de Fluxo de Trabalho](rehosting-the-workflow-designer.md)
-- [Tarefa 1: Criar um novo aplicativo do Windows Presentation Foundation](task-1-create-a-new-wpf-app.md)
-- [Tarefa 3: Criar a caixa de ferramentas e os painéis de PropertyGrid](task-3-create-the-toolbox-and-propertygrid-panes.md)
+- [Hospedando novamente o designer de fluxo de trabalho](rehosting-the-workflow-designer.md)
+- [Tarefa 1: Criar um aplicativo do Windows Presentation Foundation do Windows](task-1-create-a-new-wpf-app.md)
+- [Tarefa 3: Criar os painéis de Caixa de ferramentas e PropertyGrid](task-3-create-the-toolbox-and-propertygrid-panes.md)

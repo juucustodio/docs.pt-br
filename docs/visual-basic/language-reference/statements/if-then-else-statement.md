@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: If... Então... Instrução else (Visual Basic)'
 title: Instrução If...Then...Else
 ms.date: 04/16/2018
 f1_keywords:
@@ -21,18 +22,18 @@ helpviewer_keywords:
 - If function [Visual Basic], and If...Then...Else statements
 - Else statement [Visual Basic]
 ms.assetid: 790068a2-1307-4e28-8a72-be5ebda099e9
-ms.openlocfilehash: 0884b71c24742286e695e720add9d00dd4bfe52b
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 83850771354b95f0e2d9c1bf1360a61d5264fe2e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404583"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769007"
 ---
 # <a name="ifthenelse-statement-visual-basic"></a>Instrução If...Then... (Visual Basic)
 
 Execute um grupo de instruções condicionalmente, dependendo do valor de uma expressão.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```vb
 ' Multiline syntax:
@@ -59,9 +60,9 @@ Este artigo inclui vários exemplos que ilustram o uso do `If` .. `Then` . ...`E
 ## <a name="parts"></a>Partes
 
 `condition` \
-Obrigatórios. Expressão. Deve avaliar para `True` ou `False` , ou para um tipo de dados que é implicitamente conversível para `Boolean` .
+Obrigatório. Expressão. Deve avaliar para `True` ou `False` , ou para um tipo de dados que é implicitamente conversível para `Boolean` .
 
-Se a expressão for uma [Nullable](../../programming-guide/language-features/data-types/nullable-value-types.md) `Boolean` variável anulável que é avaliada como [Nothing](../nothing.md), a condição será tratada como se fosse `False` , e os `ElseIf` blocos serão avaliados, se existirem, ou o `Else` bloco será executado se existir.
+Se a expressão for uma [](../../programming-guide/language-features/data-types/nullable-value-types.md) `Boolean` variável anulável que é avaliada como [Nothing](../nothing.md), a condição será tratada como se fosse `False` , e os `ElseIf` blocos serão avaliados, se existirem, ou o `Else` bloco será executado se existir.
 
 `Then` \
 Necessário na sintaxe de linha única; opcional na sintaxe de várias linhas.
@@ -94,7 +95,7 @@ Na sintaxe de várias linhas, a `If` instrução deve ser a única instrução n
 > [!TIP]
 > A [seleção... A instrução Case](select-case-statement.md) pode ser mais útil quando você avalia uma única expressão que tem vários valores possíveis.
 
-### <a name="single-line-syntax"></a>Sintaxe de linha única
+### <a name="single-line-syntax"></a>Sintaxe de Single-Line
 
 Você pode usar a sintaxe de linha única para uma única condição com o código a ser executado se for verdadeiro. No entanto, a sintaxe de várias linhas fornece mais estrutura e flexibilidade e é mais fácil de ler, manter e depurar.
 
@@ -118,13 +119,13 @@ O exemplo a seguir contém aninhado `If` ... `Then` ...`Else` instruções.
 
 [!code-vb[VbVbalrStatements#102](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class6.vb#102)]
 
-## <a name="single-line-syntax-example"></a>Exemplo de sintaxe de linha única
+## <a name="single-line-syntax-example"></a>Exemplo de sintaxe de Single-Line
 
-<a name="single-line"></a>O exemplo a seguir ilustra o uso da sintaxe de linha única.
+<a name="single-line"></a> O exemplo a seguir ilustra o uso da sintaxe de linha única.
 
 [!code-vb[VbVbalrStatements#103](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class6.vb#103)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.Interaction.Choose%2A>
 - <xref:Microsoft.VisualBasic.Interaction.Switch%2A>

@@ -1,25 +1,25 @@
 ---
+description: 'Saiba mais sobre: localização'
 title: Localização
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - culture, localization
-- application development [.NET Framework], localization
-- globalization [.NET Framework], localization
+- application development [.NET], localization
+- globalization [.NET], localization
 - code blocks
-- international applications [.NET Framework], localization
+- international applications [.NET], localization
 - global applications, localization
 - world-ready applications, localization
 - user interface blocks
-- localization [.NET Framework], about localization
+- localization [.NET], about localization
 - localizing resources
 ms.assetid: 49d520d7-92d7-44ee-bb24-8b615db1d41b
-ms.openlocfilehash: 68e877088c5c3d17b368561b563b4cb17d004e75
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 0f84e406e35eb75cacf6daac32bbe26b4750738b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84278019"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675787"
 ---
 # <a name="localization"></a>Localização
 
@@ -31,7 +31,7 @@ Para cada versão localizada do aplicativo, adicione um novo assembly satélite 
 
 O SDK (Software Development Kit) do Windows fornece o Editor de Recursos do Windows Forms (Winres.exe), que permite localizar rapidamente o Windows Forms para as culturas de destino. Para saber mais sobre como usar essa ferramenta, confira [Winres.exe (Windows Forms Resource Editor)](../../framework/tools/winres-exe-windows-forms-resource-editor.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Globalização e localização](index.md)
 - [Revisão de possibilidade de localização](localizability-review.md)

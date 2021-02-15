@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumerações de criação de perfil'
 title: Criando perfil de enumerações
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,17 +7,19 @@ helpviewer_keywords:
 - enumerations [.NET Framework profiling]
 - unmanaged enumerations [.NET Framework], profiling
 ms.assetid: 8d5f9570-9853-4ce8-8101-df235d5b258e
-ms.openlocfilehash: 1a9781fa1b4b608152faa7d5edc80bd4866f0c81
-ms.sourcegitcommit: b11efd71c3d5ce3d9449c8d4345481b9f21392c6
+ms.openlocfilehash: f202e70dd27654dd39740851549477d4a6bf77a3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76868129"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99736746"
 ---
 # <a name="profiling-enumerations"></a>Criando perfil de enumerações
+
 Esta seção descreve as enumerações não gerenciadas que a API de criação de perfis utiliza.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Enumeração COR_PRF_CLAUSE_TYPE](cor-prf-clause-type-enumeration.md)  
  Indica o tipo de cláusula de exceção que o código acabou de inserir ou deixar.  
   
@@ -68,10 +71,11 @@ Esta seção descreve as enumerações não gerenciadas que a API de criação d
  [Enumeração COR_PRF_TRANSITION_REASON](cor-prf-transition-reason-enumeration.md)  
  Indica o motivo para uma transição de código gerenciado para não gerenciado ou vice-versa.  
   
-## <a name="related-sections"></a>Seções Relacionadas  
+## <a name="related-sections"></a>Seções relacionadas  
+
  [Visão geral da criação de perfil](profiling-overview.md)  
   
- [Interfaces de criação de perfil](profiling-interfaces.md)  
+ [Criação de perfil de interfaces](profiling-interfaces.md)  
   
  [Criando perfil de funções estáticas globais](profiling-global-static-functions.md)  
   

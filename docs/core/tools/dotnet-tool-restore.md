@@ -1,13 +1,13 @@
 ---
 title: comando de restauração da ferramenta dotnet
-description: O comando dotnet ferramenta de restauração instala em seu computador as ferramentas locais do .NET Core que estão no escopo do diretório atual.
+description: O comando dotnet ferramenta de restauração instala em seu computador as ferramentas locais do .NET que estão no escopo para o diretório atual.
 ms.date: 02/14/2020
-ms.openlocfilehash: ceef3274ec9d337f8c51009d5a8c27e808b14035
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: 87bdfb77cda361b800f107c565cbbed6ad75ec78
+ms.sourcegitcommit: 4d5e25a46aa7cd0d29b4b9227b92987354d444c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87302666"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794855"
 ---
 # <a name="dotnet-tool-restore"></a>dotnet tool restore
 
@@ -15,14 +15,14 @@ ms.locfileid: "87302666"
 
 ## <a name="name"></a>Nome
 
-`dotnet tool restore`-Instala em seu computador as ferramentas locais do .NET Core que estão no escopo do diretório atual.
+`dotnet tool restore` -Instala as ferramentas locais do .NET que estão no escopo do diretório atual.
 
 ## <a name="synopsis"></a>Sinopse
 
 ```dotnetcli
 dotnet tool restore
     [--configfile <FILE>] [--add-source <SOURCE>]
-    [tool-manifest <PATH_TO_MANIFEST_FILE>] [--disable-parallel]
+    [--tool-manifest <PATH_TO_MANIFEST_FILE>] [--disable-parallel]
     [--ignore-failed-sources] [--no-cache] [--interactive]
     [-v|--verbosity <LEVEL>]
 
@@ -77,7 +77,7 @@ O `dotnet tool restore` comando localiza o arquivo de manifesto da ferramenta qu
 
   Restaura as ferramentas locais para o diretório atual.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Ferramentas do .NET Core](global-tools.md)
-- [Tutorial: instalar e usar uma ferramenta local do .NET Core usando o CLI do .NET Core](local-tools-how-to-use.md)
+- [Ferramentas .NET](global-tools.md)
+- [Tutorial: instalar e usar uma ferramenta local do .NET usando a CLI do .NET](local-tools-how-to-use.md)

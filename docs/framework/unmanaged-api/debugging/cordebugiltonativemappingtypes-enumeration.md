@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorDebugIlToNativeMappingTypes'
 title: Enumeração CorDebugIlToNativeMappingTypes
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: c35e2919-42c3-4ba0-ae28-443c35f66f93
 topic_type:
 - apiref
-ms.openlocfilehash: 808fc70a308eff1b05aa49ea2bb89fe53377c973
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: bcca11bf3c7574fe76684f6786d7408c80acfa43
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795840"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801625"
 ---
 # <a name="cordebugiltonativemappingtypes-enumeration"></a>Enumeração CorDebugIlToNativeMappingTypes
+
 Indica se um intervalo específico de instruções nativas, representado por uma instância da estrutura COR_DEBUG_IL_TO_NATIVE_MAP, corresponde a uma região de código especial.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,13 +38,14 @@ typedef enum CorDebugIlToNativeMappingTypes {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`NO_MAPPING`|O intervalo de instruções nativas não corresponde a nenhuma região de código especial.|  
 |`PROLOG`|O intervalo de instruções nativas corresponde ao prólogo.|  
 |`EPILOG`|O intervalo de instruções nativas corresponde ao epílogo.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

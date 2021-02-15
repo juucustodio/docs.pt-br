@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <comContract>'
 title: <comContract>
 ms.date: 03/30/2017
 ms.assetid: 3f8e1c0c-cfdf-4c79-ac65-c64e9323a51c
-ms.openlocfilehash: b499294af71ba230dcf985d4af1d013b1ca260cf
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: fde1188a087f13da6629460bcebcea16ceefc0e8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70850033"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638659"
 ---
 # \<comContract>
+
 Especifica um contrato de serviço de integração COM+.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -17,7 +19,7 @@ Especifica um contrato de serviço de integração COM+.
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<comContracts>**](comcontracts.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<comContract>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <comContracts>
@@ -45,6 +47,7 @@ Especifica um contrato de serviço de integração COM+.
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -71,6 +74,7 @@ Especifica um contrato de serviço de integração COM+.
 |comContracts|Contém uma coleção de `comContract` elementos.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Os contratos do serviço de integração COM+ estão atualmente restritos ao `http://tempuri.org` namespace e o nome do contrato é derivado da interface com de suporte. No entanto, você pode especificar alternativas usando a `comContracts` seção, bem como o `comContract` elemento no arquivo de configuração. Por exemplo, você pode usar a configuração a seguir para especificar o namespace, o nome do contrato e os tipos definidos pelo usuário a serem incluídos, bem como outras configurações para um contrato de serviço.  
   
 ```xml  
@@ -90,10 +94,10 @@ Especifica um contrato de serviço de integração COM+.
   
  Quando o serviço é inicializado, os namespaces e os nomes de contrato especificados são aplicados às descrições de serviço geradas.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.ComContractElementCollection>
 - <xref:System.ServiceModel.Configuration.ComContractElement>
 - [\<comContracts>](comcontracts.md)
 - [Integração com aplicativos COM+](../../../wcf/feature-details/integrating-with-com-plus-applications.md)
-- [Como configurar configurações de serviço de COM+](../../../wcf/feature-details/how-to-configure-com-service-settings.md)
+- [Como: definir configurações de serviço de COM+](../../../wcf/feature-details/how-to-configure-com-service-settings.md)

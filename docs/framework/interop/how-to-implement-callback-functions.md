@@ -9,14 +9,15 @@ dev_langs:
 helpviewer_keywords:
 - callback function, implementing
 ms.assetid: e55b3712-b9ea-4453-bd9a-ad5cfa2f6bfa
-ms.openlocfilehash: 31c657372e760c8d57f9714b20178967ad85fcd3
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 9fa1d3b3ece334e109584f38ba69b796dfe24491
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85619111"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96267046"
 ---
 # <a name="how-to-implement-callback-functions"></a>Como: Implementar funções de retorno de chamada
+
 O procedimento e o exemplo a seguir demonstram como um aplicativo gerenciado, usando invocação de plataforma, pode imprimir o valor do identificador para cada janela no computador local. Especificamente, o procedimento e o exemplo usam a função **EnumWindows** para percorrer a lista de janelas e uma função de retorno de chamada gerenciada (chamada CallBack) para imprimir o valor do identificador da janela.  
   
 ### <a name="to-implement-a-callback-function"></a>Para implementar uma função de retorno de chamada  
@@ -128,7 +129,7 @@ int main()
 }  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Funções de retorno de chamada](callback-functions.md)
 - [Chamando uma função de DLL](calling-a-dll-function.md)

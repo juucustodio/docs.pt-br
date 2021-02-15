@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: tipo de dados de cadeia de caracteres (Visual Basic)'
 title: Tipo de dados da cadeia de caracteres
 ms.date: 07/20/2015
 f1_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - String literals [Visual Basic]
 - identifier type characters [Visual Basic], $
 ms.assetid: 15ac03f5-cabd-42cc-a754-1df3893c25d9
-ms.openlocfilehash: cd4b64c101ae56928e84a04649e49c17b6f4023c
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 6597a5c4b8ee0eb961d3e33bee52ae493068da35
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84415499"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792109"
 ---
 # <a name="string-data-type-visual-basic"></a>Tipo de dados da cadeia de caracteres (Visual Basic)
 
@@ -43,7 +44,7 @@ Retém sequências de pontos de código não assinados de 16 bits (2 bytes) que 
   
 ## <a name="format-requirements"></a>Requisitos de formato  
 
- Você deve colocar um `String` literal entre aspas ( `" "` ). Se você precisar incluir uma aspa como um dos caracteres na cadeia de caracteres, use duas aspas contíguas ( `""` ). O exemplo a seguir ilustra isto.  
+ Você deve colocar um `String` literal entre aspas ( `" "` ). Se você precisar incluir uma aspa como um dos caracteres na cadeia de caracteres, use duas aspas contíguas ( `""` ). O exemplo a seguir ilustra essa situação.  
   
 ```vb  
 Dim j As String = "Joe said ""Hello"" to me."  
@@ -79,14 +80,14 @@ S = Microsoft.VisualBasic.Left(S, 4)
   
 - **Considerações sobre interoperabilidade.** Se você estiver fazendo a interface com componentes não escritos para o .NET Framework, por exemplo, automação ou objetos COM, lembre-se de que os caracteres da cadeia de caracteres têm uma largura de dados diferente (8 bits) em outros ambientes. Se você estiver passando um argumento de cadeia de caracteres de 8 bits para esse componente, declare-o como `Byte()` uma matriz de `Byte` elementos, em vez de `String` em seu novo código de Visual Basic.  
   
-- **Digite os caracteres.** Anexar o caractere de tipo de identificador `$` a qualquer identificador força-o para o `String` tipo de dados. `String`Não tem um caractere de tipo literal. No entanto, o compilador trata literais delimitados entre aspas ( `" "` ) como `String` .  
+- **Digite os caracteres.** Anexar o caractere de tipo de identificador `$` a qualquer identificador força-o para o `String` tipo de dados. `String` Não tem um caractere de tipo literal. No entanto, o compilador trata literais delimitados entre aspas ( `" "` ) como `String` .  
   
 - **Tipo de estrutura.** O tipo correspondente no .NET Framework é a <xref:System.String?displayProperty=nameWithType> classe.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.String?displayProperty=nameWithType>
-- [Tipos de dados](index.md)
+- [Data Types](index.md)
 - [Tipo de Dados de Caractere](char-data-type.md)
 - [Funções de conversão do tipo](../functions/type-conversion-functions.md)
 - [Resumo da Conversão](../keywords/conversion-summary.md)

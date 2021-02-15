@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <xmlElement>'
 title: <xmlElement>
 ms.date: 03/30/2017
 ms.assetid: 395205c2-d8c0-4a5e-90f3-7ce3c085fccd
-ms.openlocfilehash: 841331f233bb8c42c25c88ad8e9b4fb1a86faa76
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 891f1a95c1f6a79127d48a1572bc805574225530
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70398999"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682001"
 ---
 # \<xmlElement>
+
 Especifica um elemento XML que é enviado no corpo da mensagem para o serviço de token de segurança ao solicitar um token.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -22,7 +24,7 @@ Especifica um elemento XML que é enviado no corpo da mensagem para o serviço d
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<tokenRequestParameters>**](tokenrequestparameters.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<xmlElement>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <tokenRequestParameters>
@@ -31,6 +33,7 @@ Especifica um elemento XML que é enviado no corpo da mensagem para o serviço d
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -40,6 +43,7 @@ Especifica um elemento XML que é enviado no corpo da mensagem para o serviço d
 |xmlElement|Uma cadeia de caracteres que especifica um elemento XML que é enviado no corpo da mensagem para o serviço de token de segurança ao solicitar um token.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -48,7 +52,7 @@ Especifica um elemento XML que é enviado no corpo da mensagem para o serviço d
 |-------------|-----------------|  
 |[\<tokenRequestParameters>](tokenrequestparameters.md)|Uma coleção de parâmetros de solicitação de token. Cada parâmetro é um elemento XML.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.TokenRequestParameters%2A>
 - <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.TokenRequestParameters%2A>

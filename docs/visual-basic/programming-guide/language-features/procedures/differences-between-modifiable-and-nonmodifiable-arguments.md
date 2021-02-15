@@ -8,17 +8,19 @@ helpviewer_keywords:
 - Visual Basic code, procedures
 - arguments [Visual Basic], modifiable
 ms.assetid: 87b2df69-e1f7-4657-9caf-b3f48d693428
-ms.openlocfilehash: 733f92cc2cdaa6e923c57649774ceb64de172c18
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 662ad3039bb3fd5c44847d5b2a97a033a18ad063
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403337"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91071945"
 ---
 # <a name="differences-between-modifiable-and-nonmodifiable-arguments-visual-basic"></a>Diferenças entre argumentos modificáveis e não modificáveis (Visual Basic)
+
 Quando você chama um procedimento, normalmente passa um ou mais argumentos para ele. Cada argumento corresponde a um elemento de programação subjacente. Os elementos subjacentes e os próprios argumentos podem ser modificáveis ou não modificáveis.  
   
 ## <a name="modifiable-and-nonmodifiable-elements"></a>Elementos modificáveis e não modificáveis  
+
  Um elemento de programação pode ser um *elemento modificável*, que pode ter seu valor alterado ou um *elemento não modificável*, que tem um valor fixo depois de ter sido criado.  
   
  A tabela a seguir lista elementos de programação modificáveis e não modificáveis.  
@@ -31,6 +33,7 @@ Quando você chama um procedimento, normalmente passa um ou mais argumentos para
 |Elementos da matriz|Expressões (mesmo que seus elementos sejam modificáveis)|  
   
 ## <a name="modifiable-and-nonmodifiable-arguments"></a>Argumentos modificáveis e não modificáveis  
+
  Um *argumento modificável* é um com um elemento subjacente modificável. O código de chamada pode armazenar um novo valor a qualquer momento e, se você passar o argumento [ByRef](../../../language-reference/modifiers/byref.md), o código no procedimento também poderá modificar o elemento subjacente no código de chamada.  
   
  Um *argumento não modificável* tem um elemento subjacente não modificável ou é passado como [ByVal](../../../language-reference/modifiers/byval.md). O procedimento não pode modificar o elemento subjacente no código de chamada, mesmo que ele seja um elemento modificável. Se for um elemento não modificável, o código de chamada em si não poderá modificá-lo.  

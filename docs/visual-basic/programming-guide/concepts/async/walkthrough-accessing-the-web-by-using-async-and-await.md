@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Walkthrough: acessando a Web usando Async e Await (Visual Basic)'
 title: 'Instruções passo a passo: acessando a Web e usando Async e Await'
 ms.date: 07/20/2015
 ms.assetid: 84fd047f-fab8-4d89-8ced-104fb7310a91
-ms.openlocfilehash: 41ededd4d4335b78b8d7a33e8fe387c7d632cbee
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 08488d4909e4fbc40cc11213eb293c2693fdec71
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84400739"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100474155"
 ---
 # <a name="walkthrough-accessing-the-web-by-using-async-and-await-visual-basic"></a>Instruções passo a passo: acessando a Web usando Async e Await (Visual Basic)
 
@@ -658,7 +659,7 @@ Class MainWindow
 End Class
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Exemplo de assincronia: acessando o passo a passo da Web (C# e Visual Basic)](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f)
 - [Operador Await](../../../language-reference/operators/await-operator.md)

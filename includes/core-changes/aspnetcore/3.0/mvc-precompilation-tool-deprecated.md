@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 8395428e1729a00fc1af72cf53fe689ee95b5fdf
-ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83721005"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96032294"
 ---
 ### <a name="mvc-precompilation-tool-deprecated"></a>MVC: ferramenta de pré-compilação preterida
 
@@ -14,7 +14,7 @@ No ASP.NET Core 3,0, a ferramenta de pré-compilação MVC ASP.NET Core 1,1 de e
 
 #### <a name="version-introduced"></a>Versão introduzida
 
-3,0
+3.0
 
 #### <a name="old-behavior"></a>Comportamento antigo
 

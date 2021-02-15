@@ -1,28 +1,32 @@
 ---
+description: 'Saiba mais sobre: 712-DispatchMessageStop'
 title: 712 - DispatchMessageStop
 ms.date: 03/30/2017
 ms.assetid: 5e1894a6-9c44-4533-aaec-64063a2cbb06
-ms.openlocfilehash: 618b1775850078ca2c0c60cc8f78b878219982c0
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 4693c888068ffbd1eb35aad16ee87e6ebaaa85d8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61753251"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788196"
 ---
 # <a name="712---dispatchmessagestop"></a>712 - DispatchMessageStop
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
 |ID|712|  
 |Palavras-chave|ServiceModel|  
-|Nível|Informações|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando um despacho de mensagens é concluído.  
+
+ Esse evento é emitido quando a expedição da mensagem é concluída.  
   
 ## <a name="message"></a>Mensagem  
- Conclusão da expedição da mensagem.  
+
+ Expedição de mensagem concluída.  
   
 ## <a name="details"></a>Detalhes

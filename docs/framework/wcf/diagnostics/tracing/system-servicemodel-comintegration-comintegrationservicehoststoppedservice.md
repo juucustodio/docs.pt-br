@@ -1,22 +1,25 @@
 ---
+description: 'Saiba mais sobre: System. ServiceModel. ComIntegration. ComIntegrationServiceHostStoppedService'
 title: System.ServiceModel.ComIntegration.ComIntegrationServiceHostStoppedService
 ms.date: 03/30/2017
 ms.assetid: c388f68d-2c6d-4d68-bc2b-0d63b99fccf1
-ms.openlocfilehash: 879f5fc50d50fd8a5dfe274b6a632ff2811f96d6
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 6706ee59e0c196ddd1e88ff8f929fffaa79089ab
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599497"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99654324"
 ---
 # <a name="systemservicemodelcomintegrationcomintegrationservicehoststoppedservice"></a>System.ServiceModel.ComIntegration.ComIntegrationServiceHostStoppedService
+
 System.ServiceModel.ComIntegration.ComIntegrationServiceHostStoppedService  
   
 ## <a name="description"></a>Descrição  
+
  ComPlus: serviço interrompido.  
   
 ## <a name="see-also"></a>Consulte também
 
 - [Rastreamento](index.md)
 - [Utilizando o rastreamento para solucionar problemas em seu aplicativo](using-tracing-to-troubleshoot-your-application.md)
-- [Administração e diagnóstico](../index.md)
+- [Administração e diagnósticos](../index.md)

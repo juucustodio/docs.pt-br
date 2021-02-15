@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugSymbolProvider:: GetAssemblyImageBytes'
 title: 'Método ICorDebugSymbolProvider:: GetAssemblyImageBytes'
 ms.date: 03/30/2017
 ms.assetid: 3db215aa-e180-4f70-8d23-6d5a0ffbc8e5
-ms.openlocfilehash: a555acb9e23098b0a0f70924032771b1ae18e88e
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 2e08b23e35913e8767135d75d28ff66efc890565
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83376111"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99717271"
 ---
 # <a name="icordebugsymbolprovidergetassemblyimagebytes-method"></a>Método ICorDebugSymbolProvider:: GetAssemblyImageBytes
+
 Lê dados de um assembly mesclado, dado um endereço virtual relativo (RVA) no assembly mesclado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -23,6 +25,7 @@ HRESULT GetAssemblyImageBytes(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `rva`  
  no Um RVA (endereço virtual relativo) em um assembly mesclado.  
   
@@ -38,6 +41,7 @@ HRESULT GetAssemblyImageBytes(
 > Esse método está disponível somente com .NET Native.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -46,7 +50,7 @@ HRESULT GetAssemblyImageBytes(
   
  **.NET Framework versões:**[!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugSymbolProvider](icordebugsymbolprovider-interface.md)
 - [Depurando interfaces](debugging-interfaces.md)

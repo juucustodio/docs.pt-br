@@ -1,22 +1,25 @@
 ---
+description: 'Saiba mais sobre: System. Runtime. Serialization. ReadObjectBegin'
 title: System.Runtime.Serialization.ReadObjectBegin
 ms.date: 03/30/2017
 ms.assetid: 1b08ba6d-f201-4ace-9dce-aaf539e323b3
-ms.openlocfilehash: b7b2b1cb3f34d7e891bd879de16f0dacf0d12fac
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: cf7096fe70c9e42081082e4ee707c6ae832a86e4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84582823"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99654792"
 ---
 # <a name="systemruntimeserializationreadobjectbegin"></a>System.Runtime.Serialization.ReadObjectBegin
+
 System.Runtime.Serialization.ReadObjectBegin  
   
 ## <a name="description"></a>Descrição  
+
  Iniciando ReadObject.  
   
 ## <a name="see-also"></a>Consulte também
 
 - [Rastreamento](index.md)
 - [Utilizando o rastreamento para solucionar problemas em seu aplicativo](using-tracing-to-troubleshoot-your-application.md)
-- [Administração e diagnóstico](../index.md)
+- [Administração e diagnósticos](../index.md)

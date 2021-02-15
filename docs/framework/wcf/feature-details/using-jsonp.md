@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: usando JSONP'
 title: Usando JSONP
 ms.date: 03/30/2017
 ms.assetid: f386718c-b4ba-4931-a610-40c27a46672a
-ms.openlocfilehash: 82290319b5d8b58708f0b2ebf40522ee76127b84
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: f4d21670cf468328b8579fa8a9cf2c2e06f09337
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594953"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632185"
 ---
 # <a name="using-jsonp"></a>Usando JSONP
 
@@ -84,6 +85,6 @@ As validações a seguir são executadas quando o JSONP está habilitado:
 
 - Se o nome do retorno de chamada for `null` ou uma cadeia de caracteres vazia, a resposta não será formatada como JSONP.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Visão geral do modelo de programação HTTP Web do WCF](wcf-web-http-programming-model-overview.md)
+- [Visão geral de modelo de programação HTTP Web do WCF](wcf-web-http-programming-model-overview.md)

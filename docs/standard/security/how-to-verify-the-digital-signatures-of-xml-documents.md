@@ -1,7 +1,7 @@
 ---
+description: 'Saiba mais sobre: como verificar as assinaturas digitais de documentos XML'
 title: 'Como: verificar as assinaturas digitais de documentos XML'
 ms.date: 07/14/2020
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -14,12 +14,12 @@ helpviewer_keywords:
 - XML digital signatures
 - digital signatures, verifying
 ms.assetid: a4d5ceb1-b9f5-47e8-9e4a-a2b39110002f
-ms.openlocfilehash: b9b2dc6a558d1fd6acd2922a7c8ad82ce8776c26
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: 37ef72c6bedf73ced7c2dde4335034f603190946
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87557041"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685030"
 ---
 # <a name="how-to-verify-the-digital-signatures-of-xml-documents"></a>Como: verificar as assinaturas digitais de documentos XML
 
@@ -90,11 +90,11 @@ Nunca armazene ou transfira a chave privada de um par de chaves assimétricas em
   
 Nunca incorpore uma chave privada diretamente em seu código-fonte.  Chaves inseridas podem ser facilmente lidas de um assembly usando o [Ildasm.exe (desmontador Il)](../../framework/tools/ildasm-exe-il-disassembler.md) ou abrindo o assembly em um editor de texto como o bloco de notas.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Modelo de criptografia](cryptography-model.md)
 - [Serviços criptográficos](cryptographic-services.md)
 - [Criptografia de plataforma cruzada](cross-platform-cryptography.md)
 - <xref:System.Security.Cryptography.Xml>
-- [Como: assinar documento XML com assinaturas digitais](how-to-sign-xml-documents-with-digital-signatures.md)
+- [Como assinar documento XML com assinaturas digitais](how-to-sign-xml-documents-with-digital-signatures.md)
 - [Proteção de dados do ASP.NET Core](/aspnet/core/security/data-protection/introduction)

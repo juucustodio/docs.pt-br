@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como chamar funções de banco de dados personalizadas'
 title: 'Como: Funções de base de dados personalizados de chamada'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 4354e5eb-dd45-469d-97fb-1c495705ee59
-ms.openlocfilehash: f3177ab98382506770c4655c62573da5c1d96c69
-ms.sourcegitcommit: 515469828d0f040e01bde01df6b8e4eb43630b06
+ms.openlocfilehash: f33630f68740877ff2d0e7f0fec7202453d96bf7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78848750"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99696783"
 ---
 # <a name="how-to-call-custom-database-functions"></a>Como: Funções de base de dados personalizados de chamada
 
@@ -24,11 +25,11 @@ O procedimento a seguir fornece um contorno de alto nível para chamar uma funç
 
 1. Crie uma função personalizada em seu base de dados.
 
-     Para obter mais informações sobre a criação de funções personalizadas no SQL Server, consulte [CREATE FUNCTION (Transact-SQL)](/sql/t-sql/statements/create-function-transact-sql).
+     Para obter mais informações sobre como criar funções personalizadas no SQL Server, consulte [criar função (Transact-SQL)](/sql/t-sql/statements/create-function-transact-sql).
 
 2. Declarar uma função em linguagem de definição de esquema de armazenamento (SSDL) do arquivo. edmx. O nome da função deve ser o mesmo que o nome da função declarada no base de dados.
 
-     Para obter mais informações, consulte [Function Element (SSDL)](/ef/ef6/modeling/designer/advanced/edmx/ssdl-spec#function-element-ssdl).
+     Para obter mais informações, consulte [elemento Function (SSDL)](/ef/ef6/modeling/designer/advanced/edmx/ssdl-spec#function-element-ssdl).
 
 3. Adicione um método correspondente a uma classe em seu código do aplicativo e aplicar <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute> a nota de método que os parâmetros de <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.NamespaceName%2A> e de <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute.FunctionName%2A> de atributo é o nome do espaço do modelo conceitual e o nome da função no modelo conceitual respectivamente. A resolução de nomes de função para LINQ diferencia maiúsculas de minúsculas.
 
@@ -36,7 +37,7 @@ O procedimento a seguir fornece um contorno de alto nível para chamar uma funç
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir demonstra como chamar uma função de base de dados personalizado de uma consulta LINQ to Entities. O exemplo usa o modelo de escola. Para obter informações sobre o modelo Escola, consulte [Criando o Banco de Dados de Amostra escolar](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)) e Gerando o Arquivo Escola [.edmx](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399739(v=vs.100)).
+O exemplo a seguir demonstra como chamar uma função de base de dados personalizado de uma consulta LINQ to Entities. O exemplo usa o modelo de escola. Para obter informações sobre o modelo escolar, consulte [criando o banco de dados de exemplo da escola](/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)) e [gerando o arquivo School. edmx](/previous-versions/dotnet/netframework-4.0/bb399739(v=vs.100)).
 
 O código a seguir adiciona a função de `AvgStudentGrade` a base de dados de exemplo de escola.
 
@@ -47,7 +48,7 @@ O código a seguir adiciona a função de `AvgStudentGrade` a base de dados de e
 
 ## <a name="example"></a>Exemplo
 
-Em seguida, declare uma função no ssdl (SSDL) de definição de esquema de loja (SSDL) do seu arquivo *.edmx.* O código a `AvgStudentGrade` seguir declara a função no SSDL:
+Em seguida, declare uma função no SSDL (Store Schema Definition Language) do arquivo *. edmx* . O código a seguir declara a `AvgStudentGrade` função em SSDL:
 
 [!code-xml[DP L2E MapToDBFunction#2](~/samples/snippets/csharp/VS_Snippets_Data/dp l2e maptodbfunction/cs/school.edmx#2)]
 
@@ -65,7 +66,7 @@ Finalmente, chame o método em uma consulta LINQ to Entities. O código a seguir
 [!code-csharp[DP L2E MapToDBFunction#4](~/samples/snippets/csharp/VS_Snippets_Data/dp l2e maptodbfunction/cs/program.cs#4)]
 [!code-vb[DP L2E MapToDBFunction#4](~/samples/snippets/visualbasic/VS_Snippets_Data/dp l2e maptodbfunction/vb/module1.vb#4)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Visão geral do arquivo .edmx](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100))
+- [Visão geral do arquivo. edmx](/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100))
 - [Consultas no LINQ to Entities](queries-in-linq-to-entities.md)

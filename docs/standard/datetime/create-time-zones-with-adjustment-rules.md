@@ -1,21 +1,21 @@
 ---
+description: 'Saiba mais sobre: como criar fusos horários com regras de ajuste'
 title: 'Como: criar fusos horários com regras de ajuste'
 ms.date: 04/10/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
-- time zones [.NET Framework], creating
-- time zones [.NET Framework], and adjustment rules
-- adjustment rule [.NET Framework]
+- time zones [.NET], creating
+- time zones [.NET], and adjustment rules
+- adjustment rule [.NET]
 ms.assetid: c52ef192-13a9-435f-8015-3b12eae8c47c
-ms.openlocfilehash: b7e938581dfde3f1566aa2506302292686c2fc5c
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: d581d01d9f9386adf99079f4f8f8e09585b06848
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84278162"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702763"
 ---
 # <a name="how-to-create-time-zones-with-adjustment-rules"></a>Como: criar fusos horários com regras de ajuste
 
@@ -89,7 +89,7 @@ Este exemplo requer:
   [!code-csharp[System.TimeZone2.CreateTimeZone#6](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.CreateTimeZone/cs/System.TimeZone2.CreateTimeZone.cs#6)]
   [!code-vb[System.TimeZone2.CreateTimeZone#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.CreateTimeZone/vb/System.TimeZone2.CreateTimeZone.vb#6)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Datas, horas e fusos horários](index.md)
 - [Visão geral do fuso horário](time-zone-overview.md)

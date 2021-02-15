@@ -1,19 +1,21 @@
 ---
+description: 'Saiba mais sobre: resolvendo recursos externos'
 title: Resolvendo recursos externos
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 ms.assetid: ad3fa320-4b8f-4e5c-b549-01157591007a
-ms.openlocfilehash: 82e9231be8a3619f59313460f0d5e0b246eb9436
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 8dcd508c2bc811601c6ae8fdbef40209ae520dcd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291481"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783060"
 ---
 # <a name="resolving-external-resources"></a>Resolvendo recursos externos
+
 A propriedade **XmlResolver** do **XmlDocument** é usada pela classe **XmlDocument** para localizar os recursos que não são embutidos nos dados XML, como definições de tipo de documento (DTDs), entidades e esquemas externos. Esses itens podem ser localizados em uma rede ou em uma unidade local, e são identificáveis por Uniform Resource Identifier (URI). Isso permite que o **XmlDocument** resolva os nós de **EntityReference** presentes no documento e valide o documento de acordo com DTDs ou esquema externos.  
   
 ## <a name="fully-trusted-xmldocument"></a>XmlDocument totalmente confiável  
+
  A propriedade **XmlResolver** afeta a funcionalidade do método **XmlDocument.Load**. A tabela abaixo mostra como funciona a propriedade **XmlDocument.XmlResolver** quando o objeto **XmlDocument** é totalmente confiável. A tabela a seguir mostra os métodos **XmlDocument.Load** quando a entrada para a carga é **TextReader**, **String**, **Stream** ou **URI**. Esta tabela não se aplicará ao método **Carga** se o **XmlDocument** for carregado do **XmlReader**.  
   
 |Propriedade de XmlResolver|Função|Observações|  
@@ -29,6 +31,7 @@ A propriedade **XmlResolver** do **XmlDocument** é usada pela classe **XmlDocum
 |A classe **XmlResolver** usada pelo **XmlDocument** é a mesma que está sendo usada pelo **XmlReader**.|O **XmlDocument** usa o **XmlResolver** atribuído ao **XmlReader**.<br /><br /> A propriedade **XmlDocument.Resolver** não pode ser definida, independentemente do nível de confiança do **XmlDocument**, porque está obtendo um **XmlResolver** do **XmlReader**. Não tente substituir as configurações de **XmlResolver** do **XmlReader** definindo a propriedade do **XmlResolver** do **XmlDocument**.|O **XmlReader** pode ser o **XmlTextReader**, o **XmlValidatingReader** ou um leitor personalizado. Se o leitor usado oferece suporte a resolução de entidade, as entidades externos são resolvidas. Se o leitor passado não oferece suporte a referências a entidades, então as referências a entidades não são resolvidas.|  
   
 ## <a name="semi-trusted-xmldocument"></a>XmlDocument de confiança parcial  
+
  A tabela a seguir mostra como funciona a propriedade **XmlDocument.XmlResolver** quando o objeto é de confiança parcial. Esta tabela se aplica aos métodos **XmlDocument.Load** quando a entrada à Carga é um **TextReader**, uma **String**, um **Stream** ou **URI**. Esta tabela não se aplicará ao método **Carga** se o **XmlDocument** for carregado do **XmlReader**.  
   
 |Propriedade de XmlResolver|Função|Observações|  
@@ -50,6 +53,6 @@ A propriedade **XmlResolver** do **XmlDocument** é usada pela classe **XmlDocum
   
  Para obter mais informações, consulte a seção de Comentários da página de referência <xref:System.Xml.XmlResolver>.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

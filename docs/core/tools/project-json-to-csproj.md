@@ -3,12 +3,12 @@ title: Comparação entre project.json e csproj
 description: Veja um mapeamento entre os elementos project.json e csproj.
 author: natemcmaster
 ms.date: 03/13/2017
-ms.openlocfilehash: c8638bc30ba09d8e8d464159aded60dcde4b8dc0
-ms.sourcegitcommit: 32f0d6f4c01ddc6ca78767c3a30e3305f8cd032c
+ms.openlocfilehash: 3c9b2f266c2fcc3acdfbe40e19509edde20eec93
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87427015"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190176"
 ---
 # <a name="a-mapping-between-projectjson-and-csproj-properties"></a>Um mapeamento entre as propriedades de project.json e csproj
 
@@ -253,6 +253,9 @@ O `<RuntimeFrameworkVersion>` valor no projeto migrado é determinado pela vers�
 </ItemGroup>
 ```
 
+> [!NOTE]
+> A `PackageTargetFallback` propriedade foi preterida. Use [AssetTargetFallback](../project-sdk/msbuild-props.md#assettargetfallback) em vez disso.
+
 ### <a name="dependency-type"></a>tipo de dependência
 
 #### <a name="type-project"></a>tipo: projeto
@@ -356,7 +359,9 @@ Para obter mais informações, consulte [SCD (implantações independentes)](../
 ```
 
 > [!NOTE]
-> Não há suporte para `imports` em ferramentas em csproj. As ferramentas que precisam de importações não funcionarão com o novo `Microsoft.NET.Sdk`.
+>
+> - Não há suporte para `imports` em ferramentas em csproj. As ferramentas que precisam de importações não funcionarão com o `Microsoft.NET.Sdk` .
+> - `DotNetCliToolReference` é preterido em favor das [ferramentas locais](global-tools.md#install-a-local-tool).
 
 ## <a name="buildoptions"></a>buildOptions
 
@@ -609,7 +614,7 @@ No MSBuild, isso é feito com [itens](/visualstudio/msbuild/common-msbuild-proje
   <EmbeddedResource Include="..\Shared\*.resx" />
   <Content Include="Views\**\*" PackagePath="%(Identity)" />
   <None Include="some/path/in/project.txt" Pack="true" PackagePath="in/package.txt" />
-  
+
   <None Include="notes.txt" CopyToOutputDirectory="Always" />
   <!-- CopyToOutputDirectory = { Always, PreserveNewest, Never } -->
 
@@ -620,7 +625,7 @@ No MSBuild, isso é feito com [itens](/visualstudio/msbuild/common-msbuild-proje
 ```
 
 > [!NOTE]
-> Muitos dos [padrões de recurso de curinga](https://en.wikipedia.org/wiki/Glob_(programming)) são adicionados automaticamente pelo SDK do .NET Core. Para obter mais informações, consulte a [compilação padrão inclui](../project-sdk/overview.md#default-compilation-includes).
+> Muitos dos [padrões de recurso de curinga](https://en.wikipedia.org/wiki/Glob_(programming)) são adicionados automaticamente pelo SDK do .NET Core. Para obter mais informações, consulte a [compilação padrão inclui](../project-sdk/overview.md#default-includes-and-excludes).
 
 Todos os elementos `ItemGroup` do MSBuild dão suporte a `Include`, `Exclude` e `Remove`.
 
@@ -671,6 +676,7 @@ Para obter mais informações, consulte [Incluindo conteúdo em um pacote](/nuge
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Visão geral de alto nível das alterações na CLI](cli-msbuild-architecture.md)
+- [Referência do MSBuild para projetos do SDK do .NET](../project-sdk/msbuild-props.md)

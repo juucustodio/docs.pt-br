@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <CompatSortNLSVersion> elemento'
 title: Elemento <CompatSortNLSVersion>
 ms.date: 03/30/2017
 dev_langs:
@@ -8,21 +9,22 @@ helpviewer_keywords:
 - <CompatSortNLSVersion> element
 - CompatSortNLSVersion element
 ms.assetid: 782cc82e-83f7-404a-80b7-6d3061a8b6e3
-ms.openlocfilehash: 30afeb2ab9380db75cbeb723ea15a23e4313c9e8
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: a064c849e53167c5f7cf16b934dfb377f3d07644
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79154264"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726176"
 ---
 # <a name="compatsortnlsversion-element"></a>Elemento \<CompatSortNLSVersion>
+
 Especifica que o runtime deve usar as ordens de classificação herdadas ao executar comparações de cadeias de caracteres.  
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<CompatSortNLSVersion>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <CompatSortNLSVersion
@@ -30,6 +32,7 @@ Especifica que o runtime deve usar as ordens de classificação herdadas ao exec
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -45,6 +48,7 @@ Especifica que o runtime deve usar as ordens de classificação herdadas ao exec
 |4096|A ID de localidade que representa uma ordem de classificação alternativa. Nesse caso, 4096 representa a ordem de classificação do .NET Framework 3,5 e versões anteriores.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -55,6 +59,7 @@ Especifica que o runtime deve usar as ordens de classificação herdadas ao exec
 |`runtime`|Contém informações sobre opções de inicialização do runtime.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Como as operações de comparação de cadeia de caracteres, classificação e maiúsculas e minúsculas executadas pela <xref:System.Globalization.CompareInfo?displayProperty=nameWithType> classe no .NET Framework 4 estão em conformidade com o padrão Unicode 5,1, os resultados dos métodos de comparação de cadeia de caracteres, como <xref:System.String.Compare%28System.String%2CSystem.String%29?displayProperty=nameWithType> e <xref:System.String.LastIndexOf%28System.String%29?displayProperty=nameWithType> podem ser diferentes das versões anteriores do .NET Framework. Se seu aplicativo depender de comportamento herdado, você poderá restaurar a comparação de cadeias de caracteres e as regras de classificação usadas no .NET Framework 3,5 e versões anteriores, incluindo o `<CompatSortNLSVersion>` elemento no arquivo de configuração do aplicativo.  
   
 > [!IMPORTANT]
@@ -63,6 +68,7 @@ Especifica que o runtime deve usar as ordens de classificação herdadas ao exec
  Você também pode usar regras de classificação e comparação herdadas em um domínio de aplicativo específico ao passar a cadeia de caracteres "NetFx40_Legacy20SortingBehavior" ao método <xref:System.AppDomainSetup.SetCompatibilitySwitches%2A> quando o domínio do aplicativo é criado.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir cria uma instância de dois objetos <xref:System.String> e chama o método <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=nameWithType> para compará-los ao usar as convenções da cultura atual.  
   
  [!code-csharp[String.BreakingChanges#1](../../../../../samples/snippets/csharp/VS_Snippets_CLR/string.breakingchanges/cs/example1.cs#1)]
@@ -91,7 +97,7 @@ sta equals a in the sort order.
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações do runtime](index.md)
 - [Esquema do arquivo de configuração](../index.md)

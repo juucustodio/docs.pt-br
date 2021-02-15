@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: classe de canal'
 title: Classe de canal
 ms.date: 03/30/2017
 ms.assetid: d9fae2ca-209c-4341-a0f5-6b79d1a67776
-ms.openlocfilehash: f60a3946617b0994db1ba9e9ddf43be863be81f9
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: dcc92f78f09e9a73a24134c6c0685949f46f38dd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61964073"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757716"
 ---
 # <a name="channel-class"></a>Classe de canal
+
 Canal  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class Channel  
@@ -26,12 +28,15 @@ class Channel
 ```  
   
 ## <a name="methods"></a>Métodos  
- A classe de canal não define quaisquer métodos.  
+
+ A classe Channel não define nenhum método.  
   
 ## <a name="properties"></a>Propriedades  
- A classe de canal tem as propriedades a seguir.  
+
+ A classe Channel tem as propriedades a seguir.  
   
 ### <a name="localaddress"></a>LocalAddress  
+
  Tipo de dados: cadeia de caracteres  
   
  Tipo de acesso: Somente leitura  
@@ -39,13 +44,15 @@ class Channel
  O ponto de extremidade local para o canal.  
   
 ### <a name="ref"></a>ref  
- Tipo de dados: Ponto de extremidade  
+
+ Tipo de dados: ponto de extremidade  
   
  Tipo de acesso: Somente leitura  
   
- Uma referência para o ponto de extremidade do canal se conecta ao.  
+ Uma referência ao ponto de extremidade ao qual o canal se conecta.  
   
 ### <a name="remoteaddress"></a>RemoteAddress  
+
  Tipo de dados: cadeia de caracteres  
   
  Tipo de acesso: Somente leitura  
@@ -53,25 +60,27 @@ class Channel
  O endereço remoto associado ao canal.  
   
 ### <a name="sessionid"></a>SessionId  
+
  Tipo de dados: cadeia de caracteres  
   
  Tipo de acesso: Somente leitura  
   
- A sessão atual de Id, se houver.  
+ A ID da sessão atual, se houver.  
   
 ### <a name="type"></a>Tipo  
+
  Tipo de dados: cadeia de caracteres  
   
  Tipo de acesso: Somente leitura  
   
- O tipo de canal.  
+ O tipo do canal.  
   
 ## <a name="requirements"></a>Requisitos  
   
-|MOF|Declarado em Servicemodel.mof.|  
+|MOF|Declarado em ServiceModel. mof.|  
 |---------|-----------------------------------|  
-|Namespace|Definido no root\ServiceModel|  
+|Namespace|Definido em root\ServiceModel|  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.ServiceModel.Channels.ChannelBase>

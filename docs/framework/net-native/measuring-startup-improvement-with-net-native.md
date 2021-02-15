@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: medindo a melhoria da inicialização com o .NET Native'
 title: Medindo o aprimoramento da inicialização com o .NET Nativo
 ms.date: 03/30/2017
 ms.assetid: c4d25b24-9c1a-4b3e-9705-97ba0d6c0289
-ms.openlocfilehash: 41a693f18ffea0e5ce0ca742bc251d147e8e3784
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: ef3245811f79475fc7c267e7376f6140e8686724
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79180994"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747589"
 ---
 # <a name="measuring-startup-improvement-with-net-native"></a>Medindo o aprimoramento da inicialização com o .NET Nativo
+
 .NET Native melhora significativamente o tempo de inicialização dos aplicativos. Esse aprimoramento é particularmente perceptível em dispositivos portáteis, de baixa energia e com aplicativos complexos. Este tópico ajuda você a começar a trabalhar com a instrumentação básica necessária para medir essa melhoria de inicialização.  
   
  Para facilitar a investigações de desempenho, o .NET Framework e o Windows usam uma estrutura de evento chamada ETW (Rastreamento de Eventos para Windows) que permite que seu aplicativo notifique as ferramentas quando eventos ocorrerem. Em seguida, você pode usar uma ferramenta chamada PerfView para exibir e analisar eventos de ETW facilmente. Este tópico explica como:  
@@ -21,6 +23,7 @@ ms.locfileid: "79180994"
 - Usar o PerfView para coletar tais eventos.  
   
 ## <a name="using-eventsource-to-emit-events"></a>Usando o EventSource para emitir eventos  
+
  O <xref:System.Diagnostics.Tracing.EventSource> fornece uma classe base da qual criar um provedor de eventos personalizado. Em geral, você pode criar uma subclasse de <xref:System.Diagnostics.Tracing.EventSource> e os métodos `Write*` com seus próprios métodos de evento. Um padrão singleton geralmente é usado para cada <xref:System.Diagnostics.Tracing.EventSource>.  
   
  Por exemplo, a classe no exemplo a seguir pode ser usada para medir duas características de desempenho:  
@@ -52,10 +55,11 @@ ms.locfileid: "79180994"
  Quando o aplicativo for instrumentado, você estará pronto para coletar os eventos.  
   
 ## <a name="gathering-events-with-perfview"></a>Eventos de coleta com PerfView  
+
  O PerfView usa eventos ETW para ajudar você a executar todos os tipos de investigações de desempenho no seu aplicativo. Ele também inclui uma configuração de GUI que permite ativar ou desativar os diferentes tipos de registro. O PerfView é uma ferramenta gratuita e pode ser baixado do [Centro de Download da Microsoft](https://www.microsoft.com/download/details.aspx?id=28567). Para obter mais informações, assista aos [vídeos de tutorial do PerfView](https://channel9.msdn.com/Series/PerfView-Tutorial).  
   
 > [!NOTE]
-> O PerfView não pode ser usado para coletar os eventos nos sistemas ARM. Para coletar os eventos nos sistemas ARM, use o Windows Performance Recorder (WPR). Para obter mais informações, consulte a [postagem no blog de Vance Morrison](https://docs.microsoft.com/archive/blogs/vancem/collecting-etwperfview-data-on-an-windows-rt-winrt-arm-surface-device).  
+> O PerfView não pode ser usado para coletar os eventos nos sistemas ARM. Para coletar os eventos nos sistemas ARM, use o Windows Performance Recorder (WPR). Para obter mais informações, consulte a [postagem no blog de Vance Morrison](/archive/blogs/vancem/collecting-etwperfview-data-on-an-windows-rt-winrt-arm-surface-device).  
   
  Você também pode invocar o PerfView da linha de comando. Para registrar somente os eventos do provedor, abra a janela do Prompt de comandos e digite o comando:  
   
@@ -63,7 +67,7 @@ ms.locfileid: "79180994"
 perfview -KernelEvents:Process -OnlyProviders:*MyCompany-MyApp collect outputFile
 ```  
   
- onde:  
+ em que:  
   
  `-KernelEvents:Process`  
  Indica que você deseja saber quando o processo é iniciado e é interrompido. É necessário que o evento de início/processo para seu aplicativo para pode ser subtraído de outros tempos de eventos.  
@@ -85,6 +89,7 @@ perfview -KernelEvents:Process -OnlyProviders:*MyCompany-MyApp collect outputFil
  Ao executar o aplicativo para que o PerfView possa coletar eventos emitidos, escolha o botão **Parar Coleta**. Em geral, você deve interromper a coleta antes de fechar o aplicativo para que não ocorram eventos estranhos. No entanto, se você medir o desempenho de desligamento ou suspensão, é recomendável continuar a coleta.  
   
 ## <a name="displaying-the-events"></a>Exibir os eventos  
+
  Para exibir os eventos que já foram coletados, use o PerfView para abrir o arquivo .etl ou .etl.zip criado e escolha **Eventos**. O ETW irá coletar informações sobre um grande número de eventos, incluindo eventos de outros processos. Para restringir sua investigação, preencha as seguintes caixas de texto no modo de exibição de eventos:  
   
 - Na caixa **Filtro do Processo**, especifique o nome do aplicativo (sem ".exe").  
@@ -93,7 +98,7 @@ perfview -KernelEvents:Process -OnlyProviders:*MyCompany-MyApp collect outputFil
   
  Selecione todos os eventos listados no painel à esquerda (Ctrl-A) e pressione a tecla **Enter**. Agora, você poderá ver as marcações de tempo de cada evento. Essas marcações de tempo são relativas ao início do rastreamento, portanto você precisa subtrair o horário de cada evento da hora de início do processo para identificar o tempo decorrido desde a inicialização. Se você usar Ctrl+Clique para selecionar duas marcações de tempo, verá que a diferença entre eles é exibida na barra de status na parte inferior da página. Isso facilita ver o tempo decorrido entre dois eventos em exibição (incluindo o início do processo). Você pode abrir o menu de atalho para o modo de exibição e selecionar diversas opções úteis, como exportar para arquivos CSV ou abrir o Microsoft Excel para salvar ou processar os dados.  
   
- Ao repetir o procedimento para seu aplicativo original e a versão que você criou usando a cadeia de ferramentas .NET Native, você pode comparar a diferença no desempenho.   .NET Native aplicativos geralmente são iniciados mais rapidamente do que os aplicativos nativos do non-.NET. Se você estiver interessado em se aprofundar-se, o PerfView também pode identificar as partes do código que estão levando mais tempo. Para obter mais informações, assista aos [tutoriais do PerfView](https://channel9.msdn.com/Series/PerfView-Tutorial) ou leia a [entrada no blog de Vance Morrison](https://docs.microsoft.com/archive/blogs/vancem/publication-of-the-perfview-performance-analysis-tool).  
+ Ao repetir o procedimento para seu aplicativo original e a versão que você criou usando a cadeia de ferramentas .NET Native, você pode comparar a diferença no desempenho.   .NET Native aplicativos geralmente são iniciados mais rapidamente do que os aplicativos nativos do non-.NET. Se você estiver interessado em se aprofundar-se, o PerfView também pode identificar as partes do código que estão levando mais tempo. Para obter mais informações, assista aos [tutoriais do PerfView](https://channel9.msdn.com/Series/PerfView-Tutorial) ou leia a [entrada no blog de Vance Morrison](/archive/blogs/vancem/publication-of-the-perfview-performance-analysis-tool).  
   
 ## <a name="see-also"></a>Confira também
 

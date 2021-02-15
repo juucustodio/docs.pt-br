@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração de COR_GC_STAT_TYPES'
 title: Enumeração COR_GC_STAT_TYPES
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: fc51d6db-f7f8-408b-b93d-c166fc712c99
 topic_type:
 - apiref
-ms.openlocfilehash: d7e78dfc4beba67cc376b221d0cd49f7200f5d23
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: c4ea3175c777d49a5d6cffdf506f42e479784971
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84501684"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799793"
 ---
 # <a name="cor_gc_stat_types-enumeration"></a>Enumeração COR_GC_STAT_TYPES
+
 Especifica as estatísticas a serem registradas para uma coleta de lixo.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,23 +36,25 @@ typedef enum {
 ```  
   
 ## <a name="remarks"></a>Comentários  
+
  Essa enumeração Especifica quais estatísticas na estrutura de [COR_GC_STATS](cor-gc-stats-structure.md) devem ser definidas pelo método [ICLRGCManager:: GetStats](iclrgcmanager-getstats-method.md) .  
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`COR_GC_COUNTS`|Registra o número de coletas de lixo executadas para cada geração.|  
 |`COR_GC_MEMORYUSAGE`|Registra o uso de memória e estatísticas de tamanho da coleta de lixo.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** GCHost. idl, GCHost. h  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Estrutura COR_GC_STATS](cor-gc-stats-structure.md)
 - [Hospedando enumerações](hosting-enumerations.md)

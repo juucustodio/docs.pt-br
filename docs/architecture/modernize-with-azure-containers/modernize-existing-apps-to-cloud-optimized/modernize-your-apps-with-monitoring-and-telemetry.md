@@ -1,37 +1,37 @@
 ---
 title: Modernizar seus aplicativos com o monitoramento e telemetria
-description: Modernizar os aplicativos .NET existentes com contêineres Azure Cloud e Windows | Modernize seus aplicativos com monitoramento e telemetria
-ms.date: 04/30/2018
-ms.openlocfilehash: a5101f150d6548406db8638904fb4ab6375edf9c
-ms.sourcegitcommit: 465547886a1224a5435c3ac349c805e39ce77706
+description: Modernizar aplicativos .NET existentes com contêineres de nuvem e Windows do Azure | Modernizar seus aplicativos com monitoramento e telemetria
+ms.date: 12/21/2020
+ms.openlocfilehash: c79a16400ce9dadca50fabb6c7df2859e4519a41
+ms.sourcegitcommit: 5d9cee27d9ffe8f5670e5f663434511e81b8ac38
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81739177"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98025232"
 ---
 # <a name="modernize-your-apps-with-monitoring-and-telemetry"></a>Modernizar seus aplicativos com o monitoramento e telemetria
 
-Quando você executa um aplicativo em produção, é fundamental que você tenha insights sobre como seu aplicativo está se saindo. Está se apresentando em alto nível? Os usuários estão cometendo erros ou o aplicativo é estável e confiável? Você precisa de um monitoramento de desempenho rico, alertas poderosos e dashboards para ajudar a garantir que seu aplicativo esteja disponível e funcionando como esperado. Você também precisa ser capaz de ver rapidamente se há um problema, determinar quantos clientes são afetados e realizar uma análise de causa básica para encontrar e corrigir o problema.
+Quando você executa um aplicativo em produção, é essencial que você tenha informações sobre como seu aplicativo está sendo executado. Ele está sendo executado em um alto nível? Os usuários estão recebendo erros ou o aplicativo é estável e confiável? Você precisa de monitoramento avançado de desempenho, alertas avançados e painéis para ajudar a garantir que seu aplicativo esteja disponível e funcionando conforme o esperado. Você também precisa ser capaz de ver rapidamente se há um problema, determinar quantos clientes são afetados e executar uma análise de causa raiz para localizar e corrigir o problema.
 
-## <a name="monitor-your-application-with-application-insights"></a>Monitore seu aplicativo com insights de aplicativos
+## <a name="monitor-your-application-with-application-insights"></a>Monitore seu aplicativo com Application Insights
 
-O Application Insights é um serviço extensível de Gerenciamento de Desempenho de Aplicativos (APM) para desenvolvedores web que trabalham em várias plataformas. Use-o para monitorar seu aplicativo Web online. O Application Insights detecta automaticamente anomalias de desempenho. Ele inclui ferramentas de análise poderosas para ajudá-lo a diagnosticar problemas e ajudá-lo a entender o que os usuários realmente fazem com seu aplicativo. O Application Insights foi projetado para ajudar você a aprimorar continuamente o desempenho e a usabilidade do seu aplicativo. Ele funciona para aplicativos em uma ampla variedade de plataformas, incluindo .NET, Node.js e J2EE, seja hospedado no local ou na nuvem. O Application Insights integra-se aos seus processos de DevOps e tem pontos de conexão para uma variedade de ferramentas de desenvolvimento.
+O Application Insights é um serviço de gerenciamento de desempenho de aplicativos (APM) extensível para desenvolvedores da Web que trabalham em várias plataformas. Use-o para monitorar seu aplicativo Web online. Application Insights detecta automaticamente anomalias de desempenho. Ele inclui ferramentas de análise poderosas para ajudá-lo a diagnosticar problemas e para ajudá-lo a entender o que os usuários realmente fazem com seu aplicativo. O Application Insights foi projetado para ajudar você a aprimorar continuamente o desempenho e a usabilidade do seu aplicativo. Ele funciona para aplicativos em uma ampla variedade de plataformas, incluindo .NET, Node.js e J2EE, seja hospedado localmente ou na nuvem. O Application Insights integra-se aos seus processos do DevOps e tem pontos de conexão para várias ferramentas de desenvolvimento.
 
-A Figura 4-10 mostra um exemplo de como o Application Insights monitora seu aplicativo e como ele aparece esses insights em um painel de controle.
+A Figura 4-10 mostra um exemplo de como o Application Insights monitora o aplicativo e como ele o orienta a um painel.
 
-![Captura de tela do painel de monitoramento do Application Insights.](./media/modernize-your-apps-with-monitoring-and-telemetry/application-insights-monitoring-dashboard.png)
+![Captura de tela do painel de monitoramento de Application Insights.](./media/modernize-your-apps-with-monitoring-and-telemetry/application-insights-monitoring-dashboard.png)
 
-**Figura 4-10.** Painel de monitoramento do Application Insights
+**Figura 4-10.** Painel de monitoramento de Application Insights
 
-## <a name="monitor-your-docker-infrastructure-with-log-analytics-and-its-container-monitoring-solution"></a>Monitore sua infra-estrutura do Docker com o Log Analytics e sua solução de monitoramento de contêineres
+## <a name="monitor-your-docker-infrastructure-with-log-analytics-and-its-container-monitoring-solution"></a>Monitorar sua infraestrutura do Docker com Log Analytics e sua solução de monitoramento de contêiner
 
-[O Azure Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-overview) faz parte da solução global de monitoramento do [Microsoft Azure.](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview) É também um serviço no [Operations Management Suite (OMS)](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview). O Log Analytics monitora ambientes em nuvem e locais (OMS para locais) para ajudar a manter a disponibilidade e o desempenho. Ele coleta dados gerados pelos recursos em seus ambientes de nuvem e locais e de outras ferramentas de monitoramento para fornecer análise de várias fontes.
+O [Azure log Analytics](/azure/log-analytics/log-analytics-overview) faz parte do [Microsoft Azure solução de monitoramento geral](/azure/monitoring-and-diagnostics/monitoring-overview). Ele também é um serviço no [OMS (Operations Management Suite)](/azure/operations-management-suite/operations-management-suite-overview). O Log Analytics monitora ambientes locais e de nuvem (OMS para locais) para ajudar a manter a disponibilidade e o desempenho. Ele coleta dados gerados pelos recursos em seus ambientes de nuvem e locais e de outras ferramentas de monitoramento para fornecer análise de várias fontes.
 
-Em relação aos registros de infra-estrutura do Azure, o Log Analytics, como um serviço Do Zure, ingere dados de log e métrica de outros serviços do Azure (via [Azure Monitor),](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-azure-monitor)VMs do Azure, contêineres Docker e no local ou outras infra-estruturas em nuvem. O Log Analytics oferece pesquisa de log flexível e análises fora da caixa em cima desses dados. Ele fornece ferramentas ricas que você pode usar para analisar dados entre fontes, permite consultas complexas em todos os registros e pode alertar proativamente com base em condições especificadas. Você pode até mesmo coletar dados personalizados no repositório central do Log Analytics, onde você pode consultar e visualizá-los. Você também pode aproveitar as soluções incorporadas do Log Analytics para obter imediatamente insights sobre a segurança e funcionalidade de sua infra-estrutura.
+Em relação aos logs de infraestrutura do Azure, Log Analytics, como um serviço do Azure, ingere dados de log e de métrica de outros serviços do Azure (via [Azure monitor](/azure/monitoring-and-diagnostics/monitoring-overview-azure-monitor)), VMS do Azure, contêineres do Docker e outras infraestruturas locais ou de nuvem. O Log Analytics oferece pesquisa de logs flexível e análise integrada sobre esses dados. Ele fornece ferramentas avançadas que você pode usar para analisar dados entre fontes, ele permite consultas complexas em todos os logs e pode alertar proativamente com base nas condições especificadas. Você pode até mesmo coletar dados personalizados no repositório Log Analytics central, onde você pode consultá-los e visualizá-los. Você também pode aproveitar as Log Analytics soluções internas para obter informações sobre a segurança e a funcionalidade da sua infraestrutura imediatamente.
 
-Você pode acessar o Log Analytics através do portal OMS ou do portal Azure, que é executado em qualquer navegador, e fornecer-lhe acesso às configurações de configuração e várias ferramentas para analisar e agir sobre os dados coletados.
+Você pode acessar Log Analytics por meio do portal do OMS ou do portal do Azure, que são executados em qualquer navegador e fornecem acesso a definições de configuração e várias ferramentas para analisar e agir sobre os dados coletados.
 
-A [solução de monitoramento de contêineres](https://docs.microsoft.com/azure/log-analytics/log-analytics-containers) no Log Analytics ajuda você a visualizar e gerenciar seus hosts Docker e Windows Container em um único local. A solução mostra quais contêineres estão funcionando, qual a imagem do contêiner que eles estão executando e onde os contêineres estão sendo executados. Você pode visualizar informações detalhadas de auditoria, incluindo comandos que estão sendo usados com contêineres. Você também pode solucionar problemas de contêineres visualizando e pesquisando logs centralizados, sem precisar visualizar remotamente hosts Docker ou Windows. Você pode encontrar contêineres que podem ser barulhentos e consumir recursos excessivos em um host. Além disso, você pode visualizar informações centralizadas de CPU, memória, armazenamento e uso de rede e desempenho, para contêineres. Nos computadores que executam o Windows, você pode centralizar e comparar os logs do Windows Server, do Hyper-V e dos contêineres do Docker. A solução oferece suporte aos orquestradores de contêiner a seguir:
+A [solução de monitoramento de contêiner](/azure/log-analytics/log-analytics-containers) no log Analytics ajuda a exibir e gerenciar seus hosts de contêiner do Docker e do Windows em um único local. A solução mostra quais contêineres estão em execução, qual imagem de contêiner eles estão executando e onde os contêineres estão em execução. Você pode exibir informações de auditoria detalhadas, incluindo comandos que estão sendo usados com contêineres. Você também pode solucionar problemas de contêineres exibindo e pesquisando logs centralizados, sem a necessidade de exibir remotamente os hosts Docker ou Windows. Você pode encontrar contêineres que podem estar com ruídos e consumindo recursos em excesso em um host. Além disso, você pode exibir o uso centralizado de CPU, memória, armazenamento e rede e informações de desempenho para contêineres. Nos computadores que executam o Windows, você pode centralizar e comparar os logs do Windows Server, do Hyper-V e dos contêineres do Docker. A solução oferece suporte aos orquestradores de contêiner a seguir:
 
 - Docker Swarm
 
@@ -41,25 +41,25 @@ A [solução de monitoramento de contêineres](https://docs.microsoft.com/azure/
 
 - Red Hat OpenShift
 
-A Figura 4-11 mostra as relações entre vários hosts de contêineres e agentes e OMS.
+A Figura 4-11 mostra as relações entre vários hosts de contêiner e agentes e OMS.
 
-![Captura de tela da solução Log Analytics Container Monitoring.](./media/modernize-your-apps-with-monitoring-and-telemetry/log-analytics-container-monitoring-solution.png)
+![Captura de tela da solução de monitoramento de contêiner Log Analytics.](./media/modernize-your-apps-with-monitoring-and-telemetry/log-analytics-container-monitoring-solution.png)
 
-**Figura 4-11.** Solução de monitoramento de contêineres do Log Analytics
+**Figura 4-11.** Log Analytics solução de monitoramento de contêiner
 
-Você pode usar a solução Log Analytics Container Monitoring para:
+Você pode usar a solução de monitoramento de contêiner Log Analytics para:
 
-- Veja informações sobre todos os hosts de contêineres em um único local.
+- Veja informações sobre todos os hosts de contêiner em um único local.
 
-- Saiba quais contêineres estão funcionando, que imagem estão executando e para onde estão correndo.
+- Saiba quais contêineres estão em execução, qual imagem eles estão executando e onde estão em execução.
 
-- Consulte um rastro de auditoria para ações em contêineres.
+- Consulte uma trilha de auditoria para ações em contêineres.
 
-- Solucionar problemas visualizando e pesquisando logs centralizados sem login remoto nos hosts do Docker.
+- Solucione problemas exibindo e pesquisando logs centralizados sem fazer logon remoto nos hosts do Docker.
 
-- Encontre contêineres que possam ser "vizinhos barulhentos", e esteja consumindo recursos excessivos em um host.
+- Encontre contêineres que podem ser "vizinhos ruidosas" e consumindo recursos em excesso em um host.
 
-- Exibir informações centralizadas de CPU, memória, armazenamento e uso de rede e informações de desempenho para contêineres.
+- Exibir o uso centralizado de CPU, memória, armazenamento e rede e informações de desempenho para contêineres.
 
 ### <a name="additional-resources"></a>Recursos adicionais
 
@@ -88,5 +88,5 @@ Você pode usar a solução Log Analytics Container Monitoring para:
 <https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview>
 
 >[!div class="step-by-step"]
->[Próximo](build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md)
->[anterior](life-cycle-ci-cd-pipelines-devops-tools.md)
+>[Anterior](build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md) 
+> [Avançar](life-cycle-ci-cd-pipelines-devops-tools.md)

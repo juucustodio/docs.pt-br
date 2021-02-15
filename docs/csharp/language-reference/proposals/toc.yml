@@ -14,6 +14,8 @@
           href: ../../../../_csharplang/proposals/csharp-7.0/binary-literals.md
         - name: Separadores de dígito
           href: ../../../../_csharplang/proposals/csharp-7.0/digit-separators.md
+        - name: Tipos de tarefa assíncrona
+          href: ../../../../_csharplang/proposals/csharp-7.0/task-types.md
     - name: Propostas de especificação do C# 7.1
       items:
         - name: Método assíncrono principal
@@ -63,7 +65,7 @@
         - name: Tipos de referência que permitem valor nulo – proposta
           href: ../../../../_csharplang/proposals/csharp-8.0/nullable-reference-types.md
         - name: Tipos de referência que permitem valor nulo – especificação
-          href: ../../../../_csharplang/proposals/csharp-8.0/nullable-reference-types-specification.md
+          href: ../../../../_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md
         - name: Correspondência de padrões recursiva
           href: ../../../../_csharplang/proposals/csharp-8.0/patterns.md
         - name: Métodos de interface padrão
@@ -88,6 +90,8 @@
           href: ../../../../_csharplang/proposals/csharp-9.0/records.md
         - name: Instruções de nível superior
           href: ../../../../_csharplang/proposals/csharp-9.0/top-level-statements.md
+        - name: Tipos de referência que permitem valor nulo – especificação
+          href: ../../../../_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md
         - name: Melhorias na correspondência de padrões
           href: ../../../../_csharplang/proposals/csharp-9.0/patterns3.md
         - name: Setters somente init
@@ -104,6 +108,8 @@
           href: ../../../../_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md
         - name: Tipos de retorno covariantes
           href: ../../../../_csharplang/proposals/csharp-9.0/covariant-returns.md
+        - name: Extensão GetEnumerator em loops foreach
+          href: ../../../../_csharplang/proposals/csharp-9.0/extension-getenumerator.md
         - name: Parâmetros discard de lambda
           href: ../../../../_csharplang/proposals/csharp-9.0/lambda-discard-parameters.md
         - name: Atributos em funções locais
@@ -114,3 +120,5 @@
           href: ../../../../_csharplang/proposals/csharp-9.0/function-pointers.md
         - name: Suprimir a emissão do sinalizador localsinit
           href: ../../../../_csharplang/proposals/csharp-9.0/skip-localsinit.md
+        - name: Anotações de parâmetro de tipo sem restrição
+          href: ../../../../_csharplang/proposals/csharp-9.0/unconstrained-type-parameter-annotations.md

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: lista de parâmetros (Visual Basic)'
 title: Lista de parâmetros
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - arguments [Visual Basic], Visual Basic
 - procedures [Visual Basic], parameter lists
 ms.assetid: 5d737319-0c34-4df9-a23d-188fc840becd
-ms.openlocfilehash: 706fc2414806db5608cce410bf4156839ec2d83e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: f69063fac82887ba4da3119d8ec4fcac11b7f4c9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404311"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741400"
 ---
 # <a name="parameter-list-visual-basic"></a>Lista de parâmetros (Visual Basic)
 
 Especifica os parâmetros que um procedimento espera quando é chamado. Vários parâmetros são separados por vírgulas. Veja a seguir a sintaxe de um parâmetro.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```vb
 [ <attributelist> ] [ Optional ] [{ ByVal | ByRef }] [ ParamArray ]
@@ -46,7 +47,7 @@ Opcional. Especifica que o procedimento pode modificar o elemento variável subj
 Opcional. Especifica que o último parâmetro na lista de parâmetros é uma matriz opcional de elementos do tipo de dados especificado. Isso permite que o código de chamada passe um número arbitrário de argumentos para o procedimento.
 
 `parametername`  
-Obrigatórios. Nome da variável local que representa o parâmetro.
+Obrigatório. Nome da variável local que representa o parâmetro.
 
 `parametertype`  
 Obrigatório se `Option Strict` for `On` . Tipo de dados da variável local que representa o parâmetro.
@@ -90,7 +91,7 @@ O exemplo a seguir mostra um `Function` procedimento que define dois parâmetros
 
 [!code-vb[VbVbalrStatements#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#2)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.InteropServices.DllImportAttribute>
 - [Instrução Function](function-statement.md)

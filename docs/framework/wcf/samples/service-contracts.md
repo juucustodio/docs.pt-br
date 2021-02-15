@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: contratos de serviço'
 title: Contratos de serviço
 ms.date: 03/30/2017
 ms.assetid: 9e34b694-aa56-45b3-8dd1-2616705b4fc5
-ms.openlocfilehash: f4487ac693b93a27b11fb69b1c663285ebcdc107
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 0100a57c7884c7c710a950dbd7a4df361cbeeb46
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599887"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793110"
 ---
 # <a name="service-contracts"></a>Contratos de serviço
+
 Esta seção contém exemplos que demonstram contratos de serviço no Windows Communication Foundation (WCF).  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Duplex](duplex.md)  
  Demonstra como definir e implementar um contrato duplex.  
   

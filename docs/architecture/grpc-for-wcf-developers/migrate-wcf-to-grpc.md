@@ -1,19 +1,19 @@
 ---
 title: Migrar uma solução WCF para o gRPC-gRPC para desenvolvedores do WCF
 description: Como migrar diferentes tipos de serviços WCF para o equivalente em gRPC.
-ms.date: 09/02/2019
-ms.openlocfilehash: 12e724ab46a33547d352da7a604a5a994e617bc2
-ms.sourcegitcommit: 44a7cd8687f227fc6db3211ccf4783dc20235e51
+ms.date: 12/15/2020
+ms.openlocfilehash: 3bd35cb6119368ff3db3be9ab5fabf89f2652b29
+ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77628508"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97937955"
 ---
 # <a name="migrate-a-wcf-solution-to-grpc"></a>Migrar uma solução WCF para o gRPC
 
-Este capítulo descreverá como trabalhar com projetos ASP.NET Core 3,0 gRPC e demonstrar a migração de diferentes tipos de serviços de Windows Communication Foundation (WCF) para o equivalente gRPC:
+Este capítulo descreverá como trabalhar com projetos ASP.NET Core 5,0 gRPC e demonstrar a migração de diferentes tipos de serviços de Windows Communication Foundation (WCF) para o equivalente gRPC:
 
-- Crie um projeto ASP.NET Core gRPC 3,0.
+- Crie um projeto ASP.NET Core gRPC 5,0.
 - Operações simples de solicitação-resposta para RPC unário gRPC.
 - Operações unidirecionais para RPC de streaming de cliente gRPC.
 - Serviços Full duplex para RPC de streaming bidirecional gRPC.
@@ -25,5 +25,5 @@ O aplicativo WCF de exemplo é um stub mínimo de um conjunto de serviços de co
 Os exemplos incluem as implementações do WCF e do gRPC de cada serviço.
 
 >[!div class="step-by-step"]
->[Anterior](ws-protocols.md)
->[Próximo](create-project.md)
+>[Anterior](ws-protocols.md) 
+> [Avançar](create-project.md)

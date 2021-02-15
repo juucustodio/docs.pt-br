@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interfaces de perfil'
 title: Criação de perfil de interfaces
 ms.date: 04/10/2018
 helpviewer_keywords:
@@ -6,17 +7,19 @@ helpviewer_keywords:
 - profiling interfaces [.NET Framework]
 - interfaces [.NET Framework profiling]
 ms.assetid: d9303db8-e881-4217-91b7-8c7573c8ef9e
-ms.openlocfilehash: f073794b4fdf89f289b70fed9967ee37b5f4e133
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: d35931c0caad93116d7ea26d29020d84e48ebc29
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84494027"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798921"
 ---
 # <a name="profiling-interfaces"></a>Criação de perfil de interfaces
+
 Esta seção descreve as interfaces não gerenciadas que permitem criar o perfil de um programa que está sendo executado no CLR (Common Language Runtime).  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Interface ICLRProfiling](iclrprofiling-interface.md)  
  Fornece o método [AttachProfiler](iclrprofiling-attachprofiler-method.md) , que permite que um criador de perfil anexe a um processo em execução.  
   
@@ -81,7 +84,7 @@ Fornece um método de retorno de chamada que o Common Language Runtime usa para 
  Fornece métodos para iterar de forma sequencial por meio de uma coleção de módulos carregados pelo aplicativo ou pelo criador de perfis.  
   
  [Interface ICorProfilerObjectEnum](icorprofilerobjectenum-interface.md)  
- Fornece métodos para iterar em sequência por meio de uma coleção de objetos congelados que são gerados pelo [NGen. exe (gerador de imagem nativa)](../../tools/ngen-exe-native-image-generator.md).  
+ Fornece métodos para iterar em sequência por meio de uma coleção de objetos congelados que são gerados por [Ngen.exe (gerador de imagem nativa)](../../tools/ngen-exe-native-image-generator.md).  
   
  [Interface ICorProfilerThreadEnum](icorprofilerthreadenum-interface.md)  
  Fornece métodos para iterar de forma sequencial por meio de uma coleção de threads no CLR.  
@@ -90,6 +93,7 @@ Fornece um método de retorno de chamada que o Common Language Runtime usa para 
  Fornece o método de [alocação](imethodmalloc-alloc-method.md) para alocar memória para um novo corpo de função da MSIL (Microsoft Intermediate Language).  
   
 ## <a name="related-sections"></a>Seções relacionadas  
+
  [Visão geral da criação de perfil](profiling-overview.md)  
   
  [Criando perfil de funções estáticas globais](profiling-global-static-functions.md)  

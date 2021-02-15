@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: exemplo de XmlSerializer'
 title: Exemplo de XMLSerializer
 ms.date: 03/30/2017
 ms.assetid: 7d134453-9a35-4202-ba77-9ca3a65babc3
-ms.openlocfilehash: fd787b5caabf698e471a9ebe4604688bc422e99e
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 724eefd2b7d64b2495f1703fa62843dfbc50657b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84583941"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99676489"
 ---
 # <a name="xmlserializer-sample"></a>Exemplo de XMLSerializer
+
 Este exemplo demonstra como serializar e desserializar os tipos que são compatíveis com o <xref:System.Xml.Serialization.XmlSerializer> . O formatador de Windows Communication Foundation padrão (WCF) é a <xref:System.Runtime.Serialization.DataContractSerializer> classe. A <xref:System.Xml.Serialization.XmlSerializer> classe pode ser usada para serializar e desserializar os tipos quando a <xref:System.Runtime.Serialization.DataContractSerializer> classe não puder ser usada. Geralmente, esse é o caso em que o controle preciso sobre o XML é necessário, por exemplo, se uma parte dos dados deve ser um atributo XML e não um elemento XML. Além disso, a <xref:System.Xml.Serialization.XmlSerializer> frequência é selecionada automaticamente ao criar clientes para serviços não WCF.  
   
  Neste exemplo, o cliente é um aplicativo de console (. exe) e o serviço é hospedado pelo Serviços de Informações da Internet (IIS).  
@@ -84,7 +86,7 @@ public class XmlSerializerCalculatorService : IXmlSerializerCalculator
 }  
 ```  
   
- A implementação do cliente também usa números complexos. O contrato de serviço e os tipos de dados são definidos no arquivo de origem generatedClient.cs, que foi gerado pela [ferramenta de utilitário de metadados ServiceModel (svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) de metadados de serviço. Svcutil. exe pode detectar quando um contrato não é serializável pelo <xref:System.Runtime.Serialization.DataContractSerializer> e reverte para emitir `XmlSerializable` tipos nesse caso. Se você quiser forçar o uso do <xref:System.Xml.Serialization.XmlSerializer> , poderá passar a opção de comando/Serializer: XmlSerializer (use XmlSerializer) para a ferramenta svcutil. exe.  
+ A implementação do cliente também usa números complexos. O contrato de serviço e os tipos de dados são definidos no arquivo de origem generatedClient.cs, que foi gerado pela [ferramenta de utilitário de metadados ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) de metadados de serviço. Svcutil.exe pode detectar quando um contrato não é serializável pelo <xref:System.Runtime.Serialization.DataContractSerializer> e reverte para emitir `XmlSerializable` tipos nesse caso. Se você quiser forçar o uso do <xref:System.Xml.Serialization.XmlSerializer> , poderá passar a opção de comando/Serializer: XmlSerializer (use XmlSerializer) para a ferramenta de Svcutil.exe.  
   
 ```csharp  
 // Create a client.  

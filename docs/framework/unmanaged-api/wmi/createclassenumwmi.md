@@ -14,14 +14,15 @@ helpviewer_keywords:
 - CreateClassEnumWmi function [.NET WMI and performance counters]
 topic_type:
 - Reference
-ms.openlocfilehash: 1d637479bd140e635ee647a1e30d03343d8b0dcd
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 5b80954e288f6720c75d0af0b8af083fa4856754
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73107527"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95719730"
 ---
 # <a name="createclassenumwmi-function"></a>Função CreateClassEnumWmi
+
 Retorna um enumerador para todas as classes que satisfaçam os critérios de seleção especificados.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
@@ -46,12 +47,12 @@ HRESULT CreateClassEnumWmi (
 ## <a name="parameters"></a>Parâmetros
 
 `strSuperclass`\
-no Se não for `null` ou em branco, especifica o nome de uma classe pai; o enumerador retorna apenas subclasses dessa classe. Se for `null` ou em branco e `lFlags` for WBEM_FLAG_SHALLOW, o retornará somente classes de nível superior (classes sem classe pai). Se for `null` ou em branco e `lFlags` for `WBEM_FLAG_DEEP`, o retornará todas as classes no namespace.
+no Se não `null` estiver ou em branco, especifica o nome de uma classe pai; o enumerador retorna apenas subclasses dessa classe. Se estiver `null` ou em branco e `lFlags` for WBEM_FLAG_SHALLOW, o retornará somente classes de nível superior (classes sem classe pai). Se estiver `null` ou em branco e `lFlags` for `WBEM_FLAG_DEEP` , retorna todas as classes no namespace.
 
 `lFlags`\
 no Uma combinação de sinalizadores que afetam o comportamento dessa função. Os valores a seguir são definidos no arquivo de cabeçalho *WbemCli. h* ou você pode defini-los como constantes em seu código:
 
-|Constante  |Valor  |Descrição  |
+|Constante  |Valor  |DESCRIÇÃO  |
 |---------|---------|---------|
 | `WBEM_FLAG_USE_AMENDED_QUALIFIERS` | 0x20000 | Se definido, a função recupera os qualificadores corrigidos armazenados no namespace localizado da localidade da conexão atual. <br/> Se não for definido, a função recuperará somente os qualificadores armazenados no namespace imediato. |
 | `WBEM_FLAG_DEEP` | 0 | A enumeração inclui todas as subclasses na hierarquia, mas não essa classe. |
@@ -60,10 +61,10 @@ no Uma combinação de sinalizadores que afetam o comportamento dessa função. 
 | `WBEM_FLAG_FORWARD_ONLY` | 0x20 | A função retorna um enumerador somente encaminhamento. Normalmente, enumeradores somente de encaminhamento são mais rápidos e usam menos memória do que enumeradores convencionais, mas não permitem que as chamadas [clonem](clone.md). |
 | `WBEM_FLAG_BIDIRECTIONAL` | 0 | O WMI retém ponteiros para objetos na enumeração até que sejam liberados. |
 
-Os sinalizadores recomendados são `WBEM_FLAG_RETURN_IMMEDIATELY` e `WBEM_FLAG_FORWARD_ONLY` para melhor desempenho.
+Os sinalizadores recomendados são `WBEM_FLAG_RETURN_IMMEDIATELY` e `WBEM_FLAG_FORWARD_ONLY` para obter o melhor desempenho.
 
 `pCtx`\
-no Normalmente, esse valor é `null`. Caso contrário, é um ponteiro para uma instância de [IWbemContext](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemcontext) que pode ser usada pelo provedor que está fornecendo as classes solicitadas.
+no Normalmente, esse valor é `null` . Caso contrário, é um ponteiro para uma instância de [IWbemContext](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemcontext) que pode ser usada pelo provedor que está fornecendo as classes solicitadas.
 
 `ppEnum`\
 fora Recebe o ponteiro para o enumerador.
@@ -90,7 +91,7 @@ no O nome de domínio do usuário. Consulte a função [ConnectServerWmi](connec
 
 Os valores a seguir retornados por essa função são definidos no arquivo de cabeçalho *WbemCli. h* ou você pode defini-los como constantes em seu código:
 
-|Constante  |Valor  |Descrição  |
+|Constante  |Valor  |DESCRIÇÃO  |
 |---------|---------|---------|
 | `WBEM_E_ACCESS_DENIED` | 0x80041003 | O usuário não tem permissão para exibir uma ou mais das classes que a função pode retornar. |
 | `WBEM_E_FAILED` | 0x80041001 | Ocorreu um erro não especificado. |
@@ -113,8 +114,8 @@ Se a chamada de função falhar, você poderá obter informações adicionais so
 
 **Cabeçalho:** WMINet_Utils. idl
 
-**Versões do .NET Framework:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
+**.NET Framework versões:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-- [WMI e contadores de desempenho (referência de API não gerenciada)](index.md)
+- [WMI e Contadores de Desempenho (Referência de API Não Gerenciada)](index.md)

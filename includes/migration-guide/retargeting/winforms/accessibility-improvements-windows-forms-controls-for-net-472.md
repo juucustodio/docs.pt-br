@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: cc3c2c2be179842f87be8892d057a6c4138086cb
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: a21824862d6cad046b5d6186f9d6db9c20438304
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85614307"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90606791"
 ---
 ### <a name="accessibility-improvements-in-windows-forms-controls-for-net-472"></a>Melhorias de acessibilidade nos controles do Windows Forms para o .NET 4.7.2
 
@@ -21,7 +21,7 @@ O Windows Forms Framework está melhorando sua maneira de trabalhar com tecnolog
 **Como aceitar ou recusar essas alterações** Para que o aplicativo se beneficie dessas alterações, ele deve ser executado no .NET Framework 4.7.2 ou posterior. O aplicativo pode se beneficiar dessas alterações de uma das seguintes maneiras:
 
 - Ser recompilado para ser direcionado ao .NET Framework 4.7.2. Essas alterações de acessibilidade são habilitadas por padrão nos aplicativos do Windows Forms direcionados ao .NET Framework 4.7.2 ou posterior.
-- Ser direcionado ao .NET Framework 4.7.1 ou a uma versão anterior e recusar os comportamentos de acessibilidade herdados, adicionando a seguinte [Opção AppContext](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element) à seção `<runtime>` do arquivo de configuração de aplicativo e definindo-a como `false`, como mostra o exemplo a seguir.
+- Ser direcionado ao .NET Framework 4.7.1 ou a uma versão anterior e recusar os comportamentos de acessibilidade herdados, adicionando a seguinte [Opção AppContext](../../../../docs/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) à seção `<runtime>` do arquivo de configuração de aplicativo e definindo-a como `false`, como mostra o exemplo a seguir.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -73,12 +73,12 @@ Observação: o Windows 10 mudou os valores de algumas cores do sistema de Alto 
 
 - Os elementos filhos do controle <xref:System.Windows.Forms.PropertyGrid> agora retornam um `true` para a propriedade <xref:System.Windows.Automation.ValuePattern.IsReadOnlyProperty> somente quando um elemento PropertyGrid está habilitado.
 - Os elementos filhos do controle <xref:System.Windows.Forms.PropertyGrid> agora retornam um `false` para a propriedade <xref:System.Windows.Automation.AutomationElement.IsEnabledProperty> somente quando um elemento PropertyGrid pode ser alterado pelo usuário.
-Para obter uma visão geral de automação da interface do usuário, confira a [Visão geral de automação da interface do usuário](https://docs.microsoft.com/dotnet/framework/ui-automation/ui-automation-overview).</p>**Melhoria na navegação por teclado**
+Para obter uma visão geral de automação da interface do usuário, confira a [Visão geral de automação da interface do usuário](../../../../docs/framework/ui-automation/ui-automation-overview.md).</p>**Melhoria na navegação por teclado**
 
-- <xref:System.Windows.Forms.ToolStripButton>agora permite o foco quando contido em um <xref:System.Windows.Forms.ToolStripPanel> que tem a <xref:System.Windows.Forms.ToolStripPanel.TabStop> propriedade definida como `true` .
+- <xref:System.Windows.Forms.ToolStripButton> agora permite o foco quando contido em um <xref:System.Windows.Forms.ToolStripPanel> que tem a <xref:System.Windows.Forms.ToolStripPanel.TabStop> propriedade definida como `true` .
 
 | Name    | Valor       |
 |:--------|:------------|
 | Escopo   | Principal       |
 | Versão | 4.7.2       |
-| Type    | Redirecionando |
+| Tipo    | Redirecionando |

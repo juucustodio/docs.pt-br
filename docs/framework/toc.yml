@@ -7,10 +7,8 @@ items:
     items:
       - name: Visão geral
         href: get-started/index.md
-      - name: .NET Framework e lançamentos fora de banda
+      - name: Versões fora de banda
         href: get-started/the-net-framework-and-out-of-band-releases.md
-      - name: .NET Core e software livre
-        href: get-started/net-core-and-open-source.md
       - name: Requisitos do sistema
         href: get-started/system-requirements.md
   - name: Guia de instalação
@@ -383,8 +381,6 @@ items:
         href: interop/
       - name: Referência de API não gerenciada
         href: unmanaged-api/
-      - name: Serviços XAML
-        href: ../desktop-wpf/xaml-services/
   - name: Ferramentas
     items:
       - name: Visão geral
@@ -600,6 +596,16 @@ items:
         items:
           - name: Classe ControlBuilderInterceptor
             href: additional-apis/controlbuilderinterceptor-class.md
+      - name: System.Windows.Controls
+        items:
+          - name: Classe GridViewHeaderRowPresenter
+            items:
+              - name: Método FindHeaderByColumn
+                href: additional-apis/system.windows.controls.gridviewheaderrowpresenter.findheaderbycolumn.md
+              - name: Método MakeParentItemsControlGotFocus
+                href: additional-apis/system.windows.controls.gridviewheaderrowpresenter.makeparentitemscontrolgotfocus.md
+              - name: Método PrepareHeaderDrag
+                href: additional-apis/system.windows.controls.gridviewheaderrowpresenter.prepareheaderdrag.md
       - name: System.Windows.Diagnostics
         items:
           - name: Classe VisualDiagnostics
@@ -719,24 +725,20 @@ items:
         href: misc/using-libraries-from-partially-trusted-code.md
       - name: Usando o método Assert
         href: misc/using-the-assert-method.md
-  - name: Criar aplicativos de console
-    href: ../standard/building-console-apps.md
-  - name: Consumir eventos em um aplicativo do Web Forms
-    href: ../standard/events/how-to-consume-events-in-a-web-forms-application.md
-  - name: Analisador de código do .NET Framework
-    href: ../standard/analyzers/framework-analyzer.md
+  - name: Análise de código
+    href: code-analyzers.md
   - name: Desenvolvimento para várias plataformas
     items:
       - name: Visão geral
-        href: ../standard/cross-platform/index.md
+        href: cross-platform/index.md
         displayName: cross platform
       - name: Biblioteca de Classes Portátil
-        href: ../standard/cross-platform/cross-platform-development-with-the-portable-class-library.md
+        href: cross-platform/portable-class-library.md
       - name: Usar a Biblioteca de Classes Portátil com MVVM
-        href: ../standard/cross-platform/using-portable-class-library-with-model-view-view-model.md
+        href: cross-platform/using-portable-class-library-with-model-view-view-model.md
       - name: Recursos do aplicativo para bibliotecas direcionadas a várias plataformas
-        href: ../standard/cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md
+        href: cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md
       - name: Suporte do .NET Framework para aplicativos da Microsoft Store e Windows Runtime
-        href: ../standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md
+        href: cross-platform/support-for-windows-store-apps-and-windows-runtime.md
       - name: Passar um URI para o Windows Runtime
-        href: ../standard/cross-platform/passing-a-uri-to-the-windows-runtime.md
+        href: cross-platform/passing-a-uri-to-the-windows-runtime.md

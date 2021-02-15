@@ -1,17 +1,17 @@
 ---
+description: 'Saiba mais sobre: validação de Push-Based de XmlSchemaValidator'
 title: XmlSchemaValidator Envio- de validação
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 ms.assetid: 911d4460-dd91-4958-85b2-2ca3299f9ec6
-ms.openlocfilehash: d5b2fe4325000023acc98580a2a6d014f56fecbd
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 6492285b26659fabbc72bf56304c5f24790af170
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83419103"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782605"
 ---
 # <a name="xmlschemavalidator-push-based-validation"></a>XmlSchemaValidator Envio- de validação
 
@@ -476,7 +476,7 @@ A tabela a seguir descreve os resultados de chamar esses métodos após chamando
 |<xref:System.Xml.Schema.XmlSchemaValidator.ValidateText%2A>|Se o contentType do elemento de contexto é misturado, <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles%2A> retorna a sequência de elementos esperado na próxima posição.<br /><br /> Se o contentType do elemento de contexto é TextOnly ou Empty, <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles%2A> retorna uma matriz vazia.<br /><br /> Se o contentType do elemento de contexto é ElementOnly, <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles%2A> retorna a sequência de elementos esperado na próxima posição mas um erro de validação tem ocorreu.|<xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedAttributes%2A> retorna a lista de elemento do contexto de atributos não validados.|Mesmo que acima.|
 |<xref:System.Xml.Schema.XmlSchemaValidator.ValidateWhitespace%2A>|Se o espaço em branco de contexto é o espaço em branco de nível superior, <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles%2A> retorna uma matriz vazia.<br /><br /> Se não o comportamento de método <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles%2A> é o mesmo que em <xref:System.Xml.Schema.XmlSchemaValidator.ValidateText%2A>.|Se o espaço em branco de contexto é o espaço em branco de nível superior, <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedAttributes%2A> retorna uma matriz vazia.<br /><br /> Se não o comportamento de método <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedAttributes%2A> é o mesmo que em <xref:System.Xml.Schema.XmlSchemaValidator.ValidateText%2A>.|Mesmo que acima.|
 |<xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A>|<xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles%2A> retorna a sequência de elementos esperado após o elemento de contexto (irmãos possíveis).|<xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedAttributes%2A> retorna a lista de elemento do contexto de atributos não validados.<br /><br /> Se o elemento de contexto não tem nenhum pai em <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedAttributes%2A> retorna uma lista vazia (o elemento de contexto é o pai do elemento atual em <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A> que foi chamado.)|Mesmo que acima.|
-|<xref:System.Xml.Schema.XmlSchemaValidator.SkipToEndElement%2A>|Igual a <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A>.|Igual a <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A>.|Mesmo que acima.|
+|<xref:System.Xml.Schema.XmlSchemaValidator.SkipToEndElement%2A>|Mesmo que <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A>.|Mesmo que <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A>.|Mesmo que acima.|
 |<xref:System.Xml.Schema.XmlSchemaValidator.EndValidation%2A>|Retorna uma matriz vazia.|Retorna uma matriz vazia.|Mesmo que acima.|
 
 > [!NOTE]

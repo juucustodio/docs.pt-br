@@ -3,14 +3,15 @@ title: Como consultar frases que contêm um conjunto especificado de palavras (L
 description: Saiba como usar o LINQ em C# para localizar frases em um arquivo de texto que contenham correspondências para cada um dos conjuntos de palavras, que podem ser populadas no tempo de execução.
 ms.date: 07/20/2015
 ms.assetid: 0724b429-4b87-4d26-a7b1-409358f3fc20
-ms.openlocfilehash: daf86d6641b82fb77ca237e8a190b4f60b9dea4d
-ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
+ms.openlocfilehash: 7c5979fc42b6446948ae974e599807b5cb8db04a
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89465644"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91176273"
 ---
 # <a name="how-to-query-for-sentences-that-contain-a-specified-set-of-words-linq-c"></a>Como consultar frases que contêm um conjunto especificado de palavras (LINQ) (C#)
+
 Este exemplo mostra como localizar frases em um arquivo de texto que contenham correspondências para cada conjunto de palavras especificado. Embora a matriz de termos de pesquisa esteja embutida em código neste exemplo, ela também poderia ser populada dinamicamente em runtime. Neste exemplo, a consulta retorna as frases que contêm as palavras "Historically", "data" e "integrated".  
   
 ## <a name="example"></a>Exemplo  
@@ -68,6 +69,7 @@ Historically, the world of data and the world of objects have not been well inte
  Na chamada para <xref:System.String.Split%2A>, as marcas de pontuação são usadas como separadores para removê-las da cadeia de caracteres. Se não fizer isso, por exemplo, você poderia ter uma cadeia de caracteres "Historically" que não corresponderia a "Historically" na matriz `wordsToMatch`. Talvez você precise usar separadores adicionais, dependendo dos tipos de pontuação encontrados no texto de origem.  
   
 ## <a name="compiling-the-code"></a>Compilando o código  
+
 Criar um projeto de aplicativo de console em C# com diretivas `using` para os namespaces System.Linq e System.IO.
 
 ## <a name="see-also"></a>Veja também

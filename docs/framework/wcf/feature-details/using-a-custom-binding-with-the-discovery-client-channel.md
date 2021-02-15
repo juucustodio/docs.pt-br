@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: usando uma associação personalizada com o canal do cliente de descoberta'
 title: Utilizando uma associação personalizada com o canal cliente Discovery
 ms.date: 03/30/2017
 ms.assetid: 36f95e75-04f7-44f3-a995-a0d623624d7f
-ms.openlocfilehash: 49983c3ab303d3839350af72b1aa4821c071fe99
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: a4dd823aed01785aab4127e4323cdc0a0a6d952a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84595031"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632367"
 ---
 # <a name="using-a-custom-binding-with-the-discovery-client-channel"></a>Utilizando uma associação personalizada com o canal cliente Discovery
+
 Ao usar uma associação personalizada com o <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> , você deve definir um <xref:System.ServiceModel.Discovery.DiscoveryEndpointProvider> que cria <xref:System.ServiceModel.Discovery.DiscoveryEndpoint> instâncias.  
   
 ## <a name="creating-a-discoveryendpointprovider"></a>Criando um DiscoveryEndpointProvider  
+
  O <xref:System.ServiceModel.Discovery.DiscoveryEndpointProvider> é responsável pela criação de <xref:System.ServiceModel.Discovery.DiscoveryEndpoint> instâncias sob demanda. Para definir um provedor de ponto de extremidade de descoberta, derive uma classe de <xref:System.ServiceModel.Discovery.DiscoveryEndpointProvider> e substitua o <xref:System.ServiceModel.Discovery.DiscoveryEndpointProvider.GetDiscoveryEndpoint%2A> método e retorne um novo ponto de extremidade de descoberta. O exemplo a seguir mostra como criar um provedor de ponto de extremidade de descoberta.  
   
 ```csharp

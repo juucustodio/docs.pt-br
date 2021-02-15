@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: Hospedagem de designer'
 title: Designer ReHosting
 ms.date: 03/30/2017
 ms.assetid: b676ad31-5f64-4d84-9a36-b4d7113a2f4d
-ms.openlocfilehash: b72e3450799db40988c8b99e4db3707de330d8ad
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 84401ba7cfc2b5515a9dcfda36289893e55660e2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79182814"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792525"
 ---
 # <a name="designer-rehosting"></a>Alterar a hospedagem do designer
+
 O designer que rehosting é um cenário comum que se refere hospedar a tela de design de fluxo de trabalho em um aplicativo personalizado. O aplicativo que hospedando a maioria de pessoas estão familiarizados com é Visual Studio entanto, há um número de cenários onde mostrar o designer de fluxo de trabalho em um aplicativo pode ser útil:  
   
 - Monitorando aplicativos (que permitem que um usuário final visualizem o processo, bem como os dados em runtime sobre o processo como o estado atualmente ativa, os dados agregados de runtime, ou outras informações sobre uma instância de fluxo de trabalho).  
@@ -23,6 +25,7 @@ O designer que rehosting é um cenário comum que se refere hospedar a tela de d
 - Usando a caixa de ferramentas e a grade rehosted de propriedade também.  
   
 ## <a name="rehosting-the-designer"></a>Rehosting o designer  
+
  Este exemplo mostra como criar o layout de WPF para conter o designer, mostrado no seguinte layout de grade (código da caixa de ferramentas omitido para interesses de espaço). Observe a nomeação das bordas que contêm o designer e a grade de propriedade.  
   
 ```xaml  
@@ -40,7 +43,7 @@ O designer que rehosting é um cenário comum que se refere hospedar a tela de d
 </Grid>  
 ```  
   
- Em seguida o exemplo cria o designer, e associa os <xref:System.Activities.Presentation.WorkflowDesigner.View%2A> e <xref:System.Activities.Presentation.WorkflowDesigner.PropertyInspectorView%2A> principais com o recipiente apropriado na interface do usuário. Há algumas linhas de código adicionais no exemplo a seguir merecem que alguma explicação. A <xref:System.Activities.Core.Presentation.DesignerMetadata.Register%2A> chamada é necessária para associar os designers de atividades padrão às atividades enviadas ao .NET Framework. <xref:System.Activities.Presentation.WorkflowDesigner.Load%2A> é chamado para passar no item de WF a ser editado. Finalmente, <xref:System.Activities.Presentation.WorkflowDesigner.View%2A> (canvas primária) e <xref:System.Activities.Presentation.WorkflowDesigner.PropertyInspectorView%2A> (grade de propriedade) são colocados na superfície de interface do usuário.  
+ Em seguida o exemplo cria o designer, e associa os <xref:System.Activities.Presentation.WorkflowDesigner.View%2A> e <xref:System.Activities.Presentation.WorkflowDesigner.PropertyInspectorView%2A> principais com o recipiente apropriado na interface do usuário. Há algumas linhas de código adicionais no exemplo a seguir merecem que alguma explicação. A <xref:System.Activities.Core.Presentation.DesignerMetadata.Register%2A> chamada é necessária para associar os designers de atividade padrão para as atividades fornecidas com .NET Framework. <xref:System.Activities.Presentation.WorkflowDesigner.Load%2A> é chamado para passar no item de WF a ser editado. Finalmente, <xref:System.Activities.Presentation.WorkflowDesigner.View%2A> (canvas primária) e <xref:System.Activities.Presentation.WorkflowDesigner.PropertyInspectorView%2A> (grade de propriedade) são colocados na superfície de interface do usuário.  
   
 ```csharp  
 protected override void OnInitialized(EventArgs e)  
@@ -58,6 +61,7 @@ protected override void OnInitialized(EventArgs e)
 ```  
   
 ## <a name="using-the-rehosted-toolbox"></a>Usando a caixa de ferramentas rehosted  
+
  Este exemplo usa o controle rehosted da caixa de ferramentas declarativamente em XAML. Observe que no código, um pode passar um tipo para o construtor de <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper> .  
   
 ```xaml  
@@ -114,7 +118,7 @@ protected override void OnInitialized(EventArgs e)
   
 #### <a name="using-the-sample"></a>Usando o exemplo  
   
-1. Abra a solução DesignerRehosting.sLn no Visual Studio 2010.  
+1. Abra a solução DesignerRehosting. sln no Visual Studio 2010.  
   
 2. Pressione F5 para compilar e executar o aplicativo.  
   
@@ -125,6 +129,6 @@ protected override void OnInitialized(EventArgs e)
 >
 > `<InstallDrive>:\WF_WCF_Samples`  
 >
-> Se esse diretório não existir, vá para [a Windows Communication Foundation (WCF) e para o Windows Workflow Foundation (WF) Amostras para .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) para baixar todas as Amostras e amostras da [!INCLUDE[wf1](../../../../includes/wf1-md.md)] Windows Communication Foundation (Windows Communication Foundation). Este exemplo está localizado no seguinte diretório.  
+> Se esse diretório não existir, vá para [Windows Communication Foundation (WCF) e exemplos de Windows Workflow Foundation (WF) para .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) para baixar todos os Windows Communication Foundation (WCF) e [!INCLUDE[wf1](../../../../includes/wf1-md.md)] exemplos. Este exemplo está localizado no seguinte diretório.  
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Basic\DesignerRehosting\Basic`

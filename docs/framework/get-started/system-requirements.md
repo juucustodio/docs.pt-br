@@ -9,12 +9,12 @@ helpviewer_keywords:
 - operating systems supported
 - hardware requirements
 ms.assetid: 298275e2-da1d-4618-9f74-6a3567832350
-ms.openlocfilehash: 92cc95f80d18251314db8d953520732841b0274c
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 6c14c94c0a2f88f28ec327a3463a6b525ef80ff6
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88557328"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90557743"
 ---
 # <a name="net-framework-system-requirements"></a>Requisitos do sistema do .NET Framework
 
@@ -51,7 +51,7 @@ Para saber mais sobre o ciclo de vida de suporte de versões do .NET Framework, 
 
 ## <a name="supported-client-operating-systems"></a>Sistemas operacionais cliente compatíveis
 
-| Sistema operacional | Edições com suporte | Pré-instalado com o sistema operacional | Instalado separadamente |
+| Sistema operacional | Edições compatíveis | Pré-instalado com o sistema operacional | Instalado separadamente |
 | ---------------- | ------------------ | ------------------------ | ---------------------- |
 | Atualização de 2020 de maio do Windows 10<br/> (versão 2004) | 32 bits e 64 bits | .NET Framework 4.8 | -- |
 | Atualização de 2019 de novembro do Windows 10<br/> (versão 1909) | 32 bits e 64 bits | .NET Framework 4.8 | -- |
@@ -83,7 +83,7 @@ Para saber mais sobre o ciclo de vida de suporte de versões do .NET Framework, 
 
 ## <a name="supported-server-operating-systems"></a>Sistemas operacionais de servidor compatíveis
 
-| Sistema operacional | Edições com suporte | Pré-instalado com o sistema operacional | Instalado separadamente |
+| Sistema operacional | Edições compatíveis | Pré-instalado com o sistema operacional | Instalado separadamente |
 | ---------------- | ------------------ | ------------------------ | ---------------------- |
 | Windows Server 2019 | 64 bits | .NET Framework 4.7.2 | .NET Framework 4.8 |
 | Windows Server, versão 1809 | 64 bits | .NET Framework 4.7.2 | .NET Framework 4.8 |
@@ -99,7 +99,7 @@ Para saber mais sobre o ciclo de vida de suporte de versões do .NET Framework, 
 
 - O Windows Server 2012 inclui .NET Framework 4,5, portanto, você não precisa instalá-lo separadamente. Da mesma forma, o Windows Server 2012 R2 inclui o .NET Framework 4.5.1.
 
-- .NET Framework tem suporte limitado para a função Server Core com o Windows Server 2008 R2 SP1 ou posterior. Consulte [Server Core .NET Functionality](https://docs.microsoft.com/previous-versions//dd745015(v=vs.85)) (Funcionalidade do Server Core .NET) para obter uma lista de APIs incompatíveis.
+- .NET Framework tem suporte limitado para a função Server Core com o Windows Server 2008 R2 SP1 ou posterior. Consulte [Server Core .NET Functionality](/previous-versions//dd745015(v=vs.85)) (Funcionalidade do Server Core .NET) para obter uma lista de APIs incompatíveis.
 
 - Não há suporte para .NET Framework no Windows Server 2008 R2 for Itanium-Based Systems.
 

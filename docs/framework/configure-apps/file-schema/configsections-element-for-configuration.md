@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <configSections> elemento para <configuration>'
 title: Elemento <configSections> para <configuration>
 ms.date: 05/01/2017
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - configSections Element
 - <configSections> Element
 ms.assetid: 9f963c1b-dc3f-4220-a8b6-2dd7a5a8e039
-ms.openlocfilehash: 1e4bb7a7cfb0b140ca6d13c162708c3c30bd496d
-ms.sourcegitcommit: 2543a78be6e246aa010a01decf58889de53d1636
+ms.openlocfilehash: 543ceed8d53fd299e8a0b65594592b64d6b833a8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86441681"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698980"
 ---
 # <a name="configsections-element-for-configuration"></a>Elemento \<configSections> para \<configuration>
 
@@ -61,6 +62,6 @@ O exemplo a seguir mostra como definir uma seção de configuração e definir a
 
 Esse elemento pode ser usado no arquivo de configuração do aplicativo, no arquivo de configuração do computador (*Machine.config*) e *Web.config* arquivos que não estão no nível do diretório do aplicativo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema do arquivo de configuração para o .NET Framework](index.md)

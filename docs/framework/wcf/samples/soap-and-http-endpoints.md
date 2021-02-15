@@ -1,26 +1,30 @@
 ---
+description: 'Saiba mais sobre: pontos de extremidade SOAP e HTTP'
 title: Pontos de extremidade SOAP e HTTP
 ms.date: 03/30/2017
 ms.assetid: e3c8be75-9dda-4afa-89b6-a82cb3b73cf8
-ms.openlocfilehash: fee1df86026716941f65dccca15d437ae917770b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: e07f2d33656b6f697d25a684e49e60d748badc2c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600939"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99703530"
 ---
 # <a name="soap-and-http-endpoints"></a>Pontos de extremidade SOAP e HTTP
+
 Este exemplo demonstra como implementar um serviço baseado em RPC e expô-lo no formato SOAP e o formato de "XML antigo" (POX) usando o modelo de programação Web do WCF. Consulte o exemplo de [serviço http básico](basic-http-service.md) para obter mais detalhes sobre a Associação http para o serviço. Este exemplo se concentra nos detalhes que pertencem à exposição do mesmo serviço por SOAP e HTTP usando associações diferentes.  
   
 ## <a name="demonstrates"></a>Demonstra  
+
  Expondo um serviço RPC por SOAP e HTTP usando o WCF.  
   
 ## <a name="discussion"></a>Discussão  
+
  Este exemplo consiste em dois componentes: um projeto de aplicativo Web (serviço) que contém um serviço WCF e um aplicativo de console (cliente) que invoca operações de serviço usando associações SOAP e HTTP.  
   
  O serviço WCF expõe 2 operações – `GetData` e `PutData` – isso ecoa a cadeia de caracteres que foi passada como entrada. As operações de serviço são anotadas com <xref:System.ServiceModel.Web.WebGetAttribute> e <xref:System.ServiceModel.Web.WebInvokeAttribute> . Esses atributos controlam a projeção HTTP dessas operações. Além disso, eles são anotados <xref:System.ServiceModel.OperationContractAttribute> , o que permite que eles sejam expostos em associações SOAP. O método do serviço `PutData` lança um <xref:System.ServiceModel.Web.WebFaultException> , que é enviado de volta por http usando o código de status HTTP e é enviado de volta por SOAP como uma falha de SOAP.  
   
- O arquivo Web. config configura o serviço WCF com 3 pontos de extremidade:  
+ O arquivo Web.config configura o serviço WCF com 3 pontos de extremidade:  
   
 - O ponto de extremidade ~/Service.svc/MEX que expõe os metadados de serviço para acesso por clientes baseados em SOAP.  
   

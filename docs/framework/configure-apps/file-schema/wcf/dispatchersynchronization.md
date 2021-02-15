@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <dispatcherSynchronization>'
 title: <dispatcherSynchronization>
 ms.date: 03/30/2017
 ms.assetid: cc030f9c-4e38-4b14-94dc-9a0e41ec8e2d
-ms.openlocfilehash: b95f25217c2a3558846cc7a0ef43e21aacd2ee2a
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 93664dec3648ed58df7e3e5c0760f1694c60ba7e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70398009"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749594"
 ---
 # \<dispatcherSynchronization>
   
@@ -20,14 +21,14 @@ Especifica um comportamento de ponto de extremidade que permite que um serviço 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-endpointbehaviors.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<dispatcherSynchronization>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <dispatcherSynchronizationBehavior asynchronousSendEnabled="Boolean"
                                    maxPendingReceives="Integer" />
 ```  
   
-## <a name="type"></a>Type  
+## <a name="type"></a>Tipo  
   
 `Type`  
   

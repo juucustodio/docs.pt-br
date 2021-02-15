@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Walkthrough: chamando APIs do Windows (Visual Basic)'
 title: 'Passo a passo: Fazer chamadas de APIs do Windows'
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,14 +12,15 @@ helpviewer_keywords:
 - DllImport attribute, calling Windows API
 - Declare statement [Visual Basic], declaring DLL functions
 ms.assetid: 9280ca96-7a93-47a3-8d01-6d01be0657cb
-ms.openlocfilehash: c7b84a3bb12329ae235e5ea03dc5e86f921112c4
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 9ffe89cabade780dbe1ced189a92c37e822c59e9
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396747"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100427252"
 ---
 # <a name="walkthrough-calling-windows-apis-visual-basic"></a>Instruções passo a passo: chamando APIs do Windows (Visual Basic)
+
 As APIs do Windows são DLLs (bibliotecas de vínculo dinâmico) que fazem parte do sistema operacional Windows. Você os usa para executar tarefas quando é difícil escrever procedimentos equivalentes de sua preferência. Por exemplo, o Windows fornece uma função chamada `FlashWindowEx` que permite que você crie a barra de título para um aplicativo alternativo entre tons leves e escuros.  
   
  A vantagem de usar APIs do Windows em seu código é que elas podem economizar tempo de desenvolvimento porque contêm dezenas de funções úteis que já foram gravadas e aguardando para serem usadas. A desvantagem é que as APIs do Windows podem ser difíceis de trabalhar e Unforgiving quando as coisas dão errado.  
@@ -30,6 +32,7 @@ As APIs do Windows são DLLs (bibliotecas de vínculo dinâmico) que fazem parte
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 ## <a name="api-calls-using-declare"></a>Chamadas de API usando declare  
+
  A maneira mais comum de chamar APIs do Windows é usando a `Declare` instrução.  
   
 ### <a name="to-declare-a-dll-procedure"></a>Para declarar um procedimento de DLL  
@@ -48,25 +51,30 @@ As APIs do Windows são DLLs (bibliotecas de vínculo dinâmico) que fazem parte
      [!code-vb[VbVbalrInterop#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#9)]  
   
 ### <a name="parts-of-the-declare-statement"></a>Partes da instrução Declare  
+
  A `Declare` instrução inclui os elementos a seguir.  
   
 #### <a name="auto-modifier"></a>Modificador automático  
+
  O `Auto` modificador instrui o tempo de execução para converter a cadeia de caracteres com base no nome do método de acordo com Common Language Runtime regras (ou nome do alias, se especificado).  
   
 #### <a name="lib-and-alias-keywords"></a>Palavras-chave lib e alias  
+
  O nome após a `Function` palavra-chave é o nome que seu programa usa para acessar a função importada. Pode ser igual ao nome real da função que você está chamando, ou você pode usar qualquer nome de procedimento válido e, em seguida, empregar a `Alias` palavra-chave para especificar o nome real da função que você está chamando.  
   
  Especifique a `Lib` palavra-chave, seguida do nome e do local da dll que contém a função que você está chamando. Você não precisa especificar o caminho para os arquivos localizados nos diretórios de sistema do Windows.  
   
- Use a `Alias` palavra-chave se o nome da função que você está chamando não for um nome de procedimento de Visual Basic válido ou estiver em conflito com o nome de outros itens em seu aplicativo. `Alias`indica o nome verdadeiro da função que está sendo chamada.  
+ Use a `Alias` palavra-chave se o nome da função que você está chamando não for um nome de procedimento de Visual Basic válido ou estiver em conflito com o nome de outros itens em seu aplicativo. `Alias` indica o nome verdadeiro da função que está sendo chamada.  
   
 #### <a name="argument-and-data-type-declarations"></a>Declarações de tipo de dados e de argumento  
+
  Declare os argumentos e seus tipos de dados. Essa parte pode ser desafiadora porque os tipos de dados que o Windows usa não correspondem aos tipos de dados do Visual Studio. Visual Basic faz grande parte do trabalho para você convertendo argumentos para tipos de dados compatíveis, um processo chamado *marshaling*. Você pode controlar explicitamente como os argumentos são empacotados usando o <xref:System.Runtime.InteropServices.MarshalAsAttribute> atributo definido no <xref:System.Runtime.InteropServices> namespace.  
   
 > [!NOTE]
 > As versões anteriores do Visual Basic permitiam a você declarar parâmetros `As Any` , o que significa que os dados de qualquer tipo de dados poderiam ser usados. Visual Basic requer que você use um tipo de dados específico para todas as `Declare` instruções.  
   
 #### <a name="windows-api-constants"></a>Constantes da API do Windows  
+
  Alguns argumentos são combinações de constantes. Por exemplo, a `MessageBox` API mostrada neste passo a passos aceita um argumento inteiro chamado `Typ` que controla como a caixa de mensagem é exibida. Você pode determinar o valor numérico dessas constantes examinando as `#define` instruções no arquivo WinUser. h. Os valores numéricos geralmente são mostrados em hexadecimal, portanto, talvez você queira usar uma calculadora para adicioná-los e convertê-los em decimal. Por exemplo, se você quiser combinar as constantes para o estilo de exclamação `MB_ICONEXCLAMATION` 0x00000030 e o estilo de ' Sim/não ' `MB_YESNO` 0x00000004, poderá adicionar os números e obter um resultado de 0x00000034, ou 52 decimal. Embora você possa usar o resultado decimal diretamente, é melhor declarar esses valores como constantes em seu aplicativo e combiná-los usando o `Or` operador.  
   
 ##### <a name="to-declare-constants-for-windows-api-calls"></a>Para declarar constantes para chamadas à API do Windows  
@@ -92,6 +100,7 @@ As APIs do Windows são DLLs (bibliotecas de vínculo dinâmico) que fazem parte
 3. Execute o projeto pressionando F5. A caixa de mensagem é exibida com os botões **Sim** e **não** de resposta. Clique em um deles.  
   
 #### <a name="data-marshaling"></a>Marshaling de dados  
+
  Visual Basic converte automaticamente os tipos de dados de parâmetros e valores de retorno para chamadas à API do Windows, mas você pode usar o `MarshalAs` atributo para especificar explicitamente os tipos de dados não gerenciados esperados por uma API. Para obter mais informações sobre o marshaling de interoperabilidade, consulte [marshaling interop](../../../framework/interop/interop-marshaling.md).  
   
 ##### <a name="to-use-declare-and-marshalas-in-an-api-call"></a>Para usar declare e MarshalAs em uma chamada à API  
@@ -107,7 +116,8 @@ As APIs do Windows são DLLs (bibliotecas de vínculo dinâmico) que fazem parte
      [!code-vb[VbVbalrInterop#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#14)]  
   
 ## <a name="api-calls-using-dllimport"></a>Chamadas de API usando DllImport  
- O `DllImport` atributo fornece uma segunda maneira de chamar funções em DLLs sem bibliotecas de tipos. `DllImport`é aproximadamente equivalente a usar uma `Declare` instrução, mas fornece mais controle sobre como as funções são chamadas.  
+
+ O `DllImport` atributo fornece uma segunda maneira de chamar funções em DLLs sem bibliotecas de tipos. `DllImport` é aproximadamente equivalente a usar uma `Declare` instrução, mas fornece mais controle sobre como as funções são chamadas.  
   
  Você pode usar `DllImport` com a maioria das chamadas de API do Windows, desde que a chamada se refira a um método compartilhado (às vezes chamado de *estático*). Você não pode usar métodos que exigem uma instância de uma classe. Ao contrário das `Declare` instruções, `DllImport` as chamadas não podem usar o `MarshalAs` atributo.  
   
@@ -133,7 +143,7 @@ As APIs do Windows são DLLs (bibliotecas de vínculo dinâmico) que fazem parte
   
      Sua função pode ter qualquer nome de procedimento válido; o `DllImport` atributo especifica o nome na dll. Ele também lida com o marshaling de interoperabilidade para os parâmetros e valores de retorno, de modo que você pode escolher os tipos de dados do Visual Studio que são semelhantes aos tipos de dados usados pela API.  
   
-8. Aplique o `DllImport` atributo à função Empty. O primeiro parâmetro é o nome e o local da DLL que contém a função que você está chamando. Você não precisa especificar o caminho para os arquivos localizados nos diretórios de sistema do Windows. O segundo parâmetro é um argumento nomeado que especifica o nome da função na API do Windows. Neste exemplo, o `DllImport` atributo força chamadas a serem `MoveFile` encaminhadas para `MoveFileW` no Kernel32. DLL. O `MoveFileW` método copia um arquivo do caminho `src` para o caminho `dst` .  
+8. Aplique o `DllImport` atributo à função Empty. O primeiro parâmetro é o nome e o local da DLL que contém a função que você está chamando. Você não precisa especificar o caminho para os arquivos localizados nos diretórios de sistema do Windows. O segundo parâmetro é um argumento nomeado que especifica o nome da função na API do Windows. Neste exemplo, o `DllImport` atributo força as chamadas a serem `MoveFile` encaminhadas para `MoveFileW` no KERNEL32.DLL. O `MoveFileW` método copia um arquivo do caminho `src` para o caminho `dst` .  
   
      [!code-vb[VbVbalrInterop#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#17)]  
   
@@ -141,19 +151,19 @@ As APIs do Windows são DLLs (bibliotecas de vínculo dinâmico) que fazem parte
   
      [!code-vb[VbVbalrInterop#18](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#18)]  
   
-10. Crie um arquivo chamado Test. txt e coloque-o no diretório C:\Tmp no seu disco rígido. Crie o diretório tmp, se necessário.  
+10. Crie um arquivo chamado Test.txt e coloque-o no diretório C:\Tmp no seu disco rígido. Crie o diretório tmp, se necessário.  
   
 11. Pressione F5 para iniciar o aplicativo. O formulário principal é exibido.  
   
 12. Clique em **Button2**. A mensagem "o arquivo foi movido com êxito" será exibida se o arquivo puder ser movido.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.InteropServices.DllImportAttribute>
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
 - [Instrução Declare](../../language-reference/statements/declare-statement.md)
-- [Automático](../../language-reference/modifiers/auto.md)
-- [Receber](../../language-reference/statements/alias-clause.md)
+- [Auto](../../language-reference/modifiers/auto.md)
+- [Alias](../../language-reference/statements/alias-clause.md)
 - [Interoperabilidade COM](index.md)
 - [Criando protótipos em código gerenciado](../../../framework/interop/creating-prototypes-in-managed-code.md)
 - [Realizando marshaling de um delegado como um método de retorno de chamada](../../../framework/interop/marshaling-a-delegate-as-a-callback-method.md)

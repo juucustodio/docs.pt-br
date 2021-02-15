@@ -13,14 +13,15 @@ helpviewer_keywords:
 - trace switches
 - trace switches, creating custom
 ms.assetid: 8ab913aa-f400-4406-9436-f45bc6e54fbe
-ms.openlocfilehash: 29de46afa2a96dd7011cec40f4f76e7bfb8ee454
-ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
+ms.openlocfilehash: dfbff0a78b3c6c1318224ccc9608c1b816f9d5f1
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85803530"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96238048"
 ---
 # <a name="trace-switches"></a>Opções de rastreamento
+
 As opções de rastreamento permitem habilitar, desabilitar e filtrar a saída de rastreamento. Elas são objetos que existem no código e podem ser configuradas externamente por meio do arquivo .config. Há três tipos de opções de rastreamento fornecidas no .NET Framework: a classe <xref:System.Diagnostics.BooleanSwitch>, a classe <xref:System.Diagnostics.TraceSwitch> e a classe <xref:System.Diagnostics.SourceSwitch>. A classe <xref:System.Diagnostics.BooleanSwitch> atua como uma opção de alternância, habilitando ou desabilitando uma variedade de instruções de rastreamento. As classes <xref:System.Diagnostics.TraceSwitch> e <xref:System.Diagnostics.SourceSwitch> permitem habilitar uma opção de rastreamento para um nível de rastreamento específico, de modo que as mensagens <xref:System.Diagnostics.Trace> ou <xref:System.Diagnostics.TraceSource> especificadas para o nível e todos os níveis inferiores a ele sejam exibidas. Se você desabilitar a opção, as mensagens de rastreamento não serão exibidas. Todas essas classes são derivadas da classe **Switch** abstrata (**MustInherit**), assim como todas as opções desenvolvidas pelo usuário.  
   
  As opções de rastreamento podem ser úteis para a filtragem de informações. Por exemplo, talvez você deseje ver todas as mensagens de rastreamento em um módulo de acesso a dados, mas somente as mensagens de erro no restante do aplicativo. Nesse caso, você usará uma opção de rastreamento para o módulo de acesso a dados e uma opção para o restante do aplicativo. Usando o arquivo .config para definir as opções com as configurações apropriadas, você pode controlar quais tipos de mensagem de rastreamento foram recebidas. Para obter mais informações, consulte [Como criar, inicializar e configurar opções de rastreamento](how-to-create-initialize-and-configure-trace-switches.md).  
@@ -30,6 +31,7 @@ As opções de rastreamento permitem habilitar, desabilitar e filtrar a saída d
  Para usar uma opção, primeiro você deve criar um objeto de opção com base em uma classe **BooleanSwitch**, uma classe **TraceSwitch** ou uma classe de opção definida pelo desenvolvedor. Para obter mais informações sobre como criar opções definidas pelo desenvolvedor, consulte a classe <xref:System.Diagnostics.Switch> na referência do .NET Framework. Em seguida, defina um valor de configuração que especifica quando o objeto de opção deve ser usado. Depois, teste a configuração do objeto de opção em vários métodos de rastreamento **Trace** (ou **Debug**).  
   
 ## <a name="trace-levels"></a>Níveis de rastreamento  
+
  Ao usar **TraceSwitch**, há considerações adicionais. Um objeto **TraceSwitch** tem quatro propriedades que retornam valores **boolianos**, indicando se a opção é definida com, pelo menos, um nível específico:  
   
 - <xref:System.Diagnostics.TraceSwitch.TraceError%2A?displayProperty=nameWithType>  
@@ -80,10 +82,11 @@ MessageBox.Show(myTraceSwitch.TraceVerbose.ToString());
 ```  
   
 ## <a name="developer-defined-switches"></a>Opções definidas pelo desenvolvedor  
+
  Além de fornecer **BooleanSwitch** e **TraceSwitch**, você pode definir suas próprias opções herdando da classe **Switch** e substituindo os métodos da classe base por métodos personalizados. Para obter mais informações sobre como criar opções definidas pelo desenvolvedor, consulte a classe <xref:System.Diagnostics.Switch> na referência do .NET Framework.  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Ouvintes de rastreamento](trace-listeners.md)
-- [Como adicionar instruções de rastreamento ao código de um aplicativo](how-to-add-trace-statements-to-application-code.md)
-- [Rastreamento e instrumentação de aplicativos](tracing-and-instrumenting-applications.md)
+- [Como: adicionar instruções de rastreamento ao código de um aplicativo](how-to-add-trace-statements-to-application-code.md)
+- [Como rastrear e instrumentar aplicativos](tracing-and-instrumenting-applications.md)

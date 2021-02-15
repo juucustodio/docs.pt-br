@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICLRSyncManager: método eleteRWLockOwnerIterator de:D'
 title: Método ICLRSyncManager::DeleteRWLockOwnerIterator
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: fcfd340a-b7d6-44e4-8167-2c05b789d483
 topic_type:
 - apiref
-ms.openlocfilehash: a4094a64d27072ce257341398bb49419bef9b8bb
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: 7968f326f1ad92fe6e3a0f91749fb7e462e81c04
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83763144"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789769"
 ---
 # <a name="iclrsyncmanagerdeleterwlockowneriterator-method"></a>Método ICLRSyncManager::DeleteRWLockOwnerIterator
+
 Solicita que o Common Language Runtime (CLR) destrua um iterador criado por uma chamada para [ICLRSyncManager:: CreateRWLockOwnerIterator](iclrsyncmanager-createrwlockowneriterator-method.md).  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,14 +36,15 @@ HRESULT DeleteRWLockOwnerIterator (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `Iterator`  
  no O iterador criado usando uma chamada para `CreateRWLockOwnerIterator` .  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
-|HRESULT|Description|  
+|HRESULT|Descrição|  
 |-------------|-----------------|  
-|S_OK|`DeleteRWLockOwnerIterator`retornado com êxito.|  
+|S_OK|`DeleteRWLockOwnerIterator` retornado com êxito.|  
 |HOST_E_CLRNOTAVAILABLE|O CLR não foi carregado em um processo ou está em um estado no qual não pode executar código gerenciado ou processar a chamada com êxito.|  
 |HOST_E_TIMEOUT|A chamada atingiu o tempo limite.|  
 |HOST_E_NOT_OWNER|O chamador não possui o bloqueio.|  
@@ -49,18 +52,20 @@ HRESULT DeleteRWLockOwnerIterator (
 |E_FAIL|Ocorreu uma falha catastrófica desconhecida. Quando um método retorna E_FAIL, o CLR não é mais utilizável no processo. As chamadas subsequentes para métodos de hospedagem retornam HOST_E_CLRNOTAVAILABLE.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O host pode chamar esse método e `CreateRWLockOwnerIterator` garantir que sua implementação de Threading permaneça sincronizada.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRSyncManager](iclrsyncmanager-interface.md)
 - [Interface IHostSyncManager](ihostsyncmanager-interface.md)

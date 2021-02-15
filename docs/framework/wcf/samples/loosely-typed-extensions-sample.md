@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: exemplo de extensões de Loosely-Typed'
 title: Exemplo de extensões tipadas vagamente
 ms.date: 03/30/2017
 ms.assetid: 56ce265b-8163-4b85-98e7-7692a12c4357
-ms.openlocfilehash: 0a08ca19e5e6bff7223d45726617d2c2163ca3df
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: cd430a922a35baf0ed9ce387b7df81fa3af6b35d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84591859"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793227"
 ---
 # <a name="loosely-typed-extensions-sample"></a>Exemplo de extensões tipadas vagamente
+
 O modelo de objeto de distribuição fornece suporte avançado para trabalhar com dados de extensão — informações que estão presentes na representação XML de um feed de agregação, mas não são explicitamente expostos por classes como <xref:System.ServiceModel.Syndication.SyndicationFeed> e <xref:System.ServiceModel.Syndication.SyndicationItem> . Este exemplo ilustra as técnicas básicas para trabalhar com dados de extensão.  
   
  O exemplo usa a <xref:System.ServiceModel.Syndication.SyndicationFeed> classe para os fins do exemplo. No entanto, os padrões demonstrados neste exemplo podem ser usados com todas as classes de distribuição que dão suporte a dados de extensão:  
@@ -25,6 +27,7 @@ O modelo de objeto de distribuição fornece suporte avançado para trabalhar co
  <xref:System.ServiceModel.Syndication.SyndicationLink>  
   
 ## <a name="sample-xml"></a>XML de exemplo  
+
  Para referência, o documento XML a seguir é usado neste exemplo.  
   
 ```xml  
@@ -65,6 +68,7 @@ w.w3.org/2001/XMLSchema" xmlns="">
 - Elemento `<xElementExtension>`.  
   
 ## <a name="writing-extension-data"></a>Gravando dados de extensão  
+
  As extensões de atributo são criadas adicionando entradas à <xref:System.ServiceModel.Syndication.SyndicationFeed.AttributeExtensions%2A> coleção, conforme mostrado no código de exemplo a seguir.  
   
 ```csharp  
@@ -102,6 +106,7 @@ feed.ElementExtensions.Add(new XElement("xElementExtension",
 ```  
   
 ## <a name="reading-extension-data"></a>Lendo dados de extensão  
+
  Os valores para extensões de atributo podem ser obtidos pesquisando o atributo na <xref:System.ServiceModel.Syndication.SyndicationFeed.AttributeExtensions%2A> coleção por seu <xref:System.Xml.XmlQualifiedName> , conforme mostrado no código de exemplo a seguir.  
   
 ```csharp  

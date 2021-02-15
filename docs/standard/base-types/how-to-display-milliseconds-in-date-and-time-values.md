@@ -2,25 +2,25 @@
 title: 'Como: Exibir milissegundos em valores de data e hora'
 description: Neste artigo, saiba como incluir um componente de milissegundos de data e hora em cadeias de caracteres de data e hora formatadas no .NET.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - DateTime.ToString method
 - displaying date and time data
-- time [.NET Framework], milliseconds
-- dates [.NET Framework], milliseconds
-- milliseconds [.NET Framework]
+- time [.NET], milliseconds
+- dates [.NET], milliseconds
+- milliseconds [.NET]
 ms.assetid: ae1a0610-90b9-4877-8eb6-4e30bc5e00cf
-ms.openlocfilehash: a6dbe6a3bf4f8c08493ec925bea4316d071f4182
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 722334c324f663ba46a3c861885d4221fc566b8d
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "84447063"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95681256"
 ---
 # <a name="how-to-display-milliseconds-in-date-and-time-values"></a>Como: Exibir milissegundos em valores de data e hora
+
 Os métodos padrão de formatação de data e hora, como <xref:System.DateTime.ToString?displayProperty=nameWithType>, incluem as horas, minutos e segundos de um valor temporal, mas excluem seu componente de milissegundos. Este tópico mostra como incluir um componente de milissegundos de uma data e hora em cadeias de caracteres de data e hora formatadas.  
   
 ### <a name="to-display-the-millisecond-component-of-a-datetime-value"></a>Para exibir o componente de milissegundos de um valor DateTime  
@@ -30,6 +30,7 @@ Os métodos padrão de formatação de data e hora, como <xref:System.DateTime.T
 2. Para extrair a representação de cadeia de caracteres do componente de milissegundos de um valor de data e hora, chame o método <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> ou <xref:System.DateTimeOffset.ToString%2A> do valor de data e hora e passe o padrão de formato personalizado `fff` ou `FFF`, sozinho ou com outros especificadores de formato personalizado como o parâmetro `format`.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo exibe o componente de milissegundos de um valor de <xref:System.DateTime> e <xref:System.DateTimeOffset> para console, sozinho e incluído em uma cadeia de caracteres de data e hora mais longa.  
   
  [!code-csharp[Formatting.HowTo.Millisecond#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.Millisecond/cs/Millisecond.cs#1)]
@@ -53,4 +54,4 @@ Os métodos padrão de formatação de data e hora, como <xref:System.DateTime.T
 ## <a name="see-also"></a>Confira também
 
 - <xref:System.Globalization.DateTimeFormatInfo>
-- [Cadeias de caracteres de formato de data e hora personalizadas](custom-date-and-time-format-strings.md)
+- [Cadeias de caracteres de formato de data e hora personalizado](custom-date-and-time-format-strings.md)

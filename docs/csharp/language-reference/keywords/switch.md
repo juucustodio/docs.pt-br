@@ -7,18 +7,19 @@ f1_keywords:
 - switch
 - case
 - case_CSharpKeyword
+- defaultcase_CSharpKeyword
 helpviewer_keywords:
 - switch statement [C#]
 - switch keyword [C#]
 - case statement [C#]
 - default keyword [C#]
 ms.assetid: 44bae8b8-8841-4d85-826b-8a94277daecb
-ms.openlocfilehash: 20c1d9786eaa184088500cf1b37d33afc421b5e7
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 2d12091f3c3f10048a98f5f0ecf6a381087faf41
+ms.sourcegitcommit: e078b7540a8293ca1b604c9c0da1ff1506f0170b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89142018"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "91997682"
 ---
 # <a name="switch-c-reference"></a>switch (Referência em C#)
 
@@ -87,7 +88,7 @@ A execução da lista de instruções na seção switch com um rótulo case que 
 
 Cada rótulo case especifica um padrão a ser comparado com a expressão de correspondência (a variável `caseSwitch` nos exemplos anteriores). Se eles corresponderem, o controle será transferido para a seção switch que contém o **primeiro** rótulo case correspondente. Se nenhum padrão de rótulo de caso corresponder à expressão de correspondência, o controle será transferido para a seção com o rótulo de caso `default`, se existir algum. Se não houver nenhum case `default`, nenhuma declaração em qualquer seção switch será executada e o controle será transferido para fora da instrução `switch`.
 
-Para obter informações sobre a instrução `switch` e a correspondência de padrões, consulte a seção [Correspondência de padrões com a instrução `switch`](#pattern-matching with-the-switch-statement).
+Para obter informações sobre a instrução `switch` e a correspondência de padrões, consulte a seção [Correspondência de padrões com a instrução `switch`](#pattern-matching-with-the-switch-statement).
 
 Como o C# 6 dá suporte apenas ao padrão de constante e não permite a repetição de valores de constantes, os rótulos case definem valores mutuamente exclusivos e apenas um padrão pode corresponder à expressão de correspondência. Como resultado, a ordem na qual as instruções `case` aparecem não é importante.
 
@@ -200,10 +201,10 @@ Observe que a cláusula `when` no exemplo que tenta testar se um objeto `Shape` 
 
 Para obter mais informações, consulte [A instrução switch](~/_csharplang/spec/statements.md#the-switch-statement) na [Especificação da linguagem C#](/dotnet/csharp/language-reference/language-specification/introduction). A especificação da linguagem é a fonte definitiva para a sintaxe e o uso de C#.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência do C#](../index.md)
 - [Guia de programação C#](../../programming-guide/index.md)
 - [Palavras-chave do C#](index.md)
-- [if-else](if-else.md)
-- [Correspondência de padrões](../../pattern-matching.md)
+- [If-Else](if-else.md)
+- [Correspondência padrão](../../pattern-matching.md)

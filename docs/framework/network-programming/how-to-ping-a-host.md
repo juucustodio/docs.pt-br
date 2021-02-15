@@ -1,18 +1,19 @@
 ---
-title: Como executar ping em um host
+title: 'Como: executar ping em um host'
 description: Use este código de exemplo para aprender a executar o ping de um host remoto no .NET Framework. Este exemplo requer referências ao namespace System.Net.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Ping
 ms.assetid: bbf20f5b-eca1-4661-af04-cb8837f9af05
-ms.openlocfilehash: ac62f58eea41419de2d5651269154d9abb757aba
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 1e77f7eb4dbb8a69848bc6b20e98e0df931f22c9
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502490"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96244022"
 ---
-# <a name="how-to-ping-a-host"></a>Como executar ping em um host
+# <a name="how-to-ping-a-host"></a>Como: executar ping em um host
+
 Este exemplo mostra como executar o ping em um host remoto.  
   
 ## <a name="example"></a>Exemplo  
@@ -122,6 +123,7 @@ namespace Examples.System.Net.NetworkInformation.PingTest
 ```  
   
 ## <a name="compiling-the-code"></a>Compilando o código  
+
  Este exemplo requer:  
   
 - Referências ao namespace **System.Net**.

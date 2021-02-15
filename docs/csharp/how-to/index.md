@@ -2,12 +2,12 @@
 title: Artigos de instruções (Guia de C#)
 description: Uma coleção de dicas rápidas e exemplos de código curtos e focados
 ms.date: 12/20/2017
-ms.openlocfilehash: 9dd069ff767d65002b78c18b398b700a1f26ebfa
-ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
+ms.openlocfilehash: 26d3931ff3b4ecfcc052c3ace25a09801f84c505
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89465150"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90537399"
 ---
 # <a name="how-to-c"></a>Instruções (C#)
 
@@ -106,23 +106,23 @@ O LINQ permite que você grave códigos para consultar qualquer fonte de dados c
 - [Use expressões lambda em uma consulta](../programming-guide/statements-expressions-operators/how-to-use-lambda-expressions-in-a-query.md).
 - [Use `var` nas expressões de consulta](../programming-guide/classes-and-structs/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md).
 - [Retorne subconjuntos de propriedades de elementos em uma consulta](../programming-guide/classes-and-structs/how-to-return-subsets-of-element-properties-in-a-query.md).
-- [Grave consultas com filtragem complexa](../programming-guide/concepts/linq/how-to-write-queries-with-complex-filtering.md).
-- [Classifique os elementos de uma fonte de dados](../programming-guide/concepts/linq/how-to-sort-elements.md).
-- [Classifique os elementos em múltiplas chaves](../programming-guide/concepts/linq/how-to-sort-elements-on-multiple-keys.md).
-- [Controle o tipo de uma projeção](../programming-guide/concepts/linq/how-to-control-the-type-of-a-projection.md).
+- [Grave consultas com filtragem complexa](../../standard/linq/write-queries-complex-filtering.md).
+- [Classifique os elementos de uma fonte de dados](../../standard/linq/sort-elements.md).
+- [Classifique os elementos em múltiplas chaves](../../standard/linq/sort-elements-multiple-keys.md).
+- [Controle o tipo de uma projeção](../../standard/linq/control-type-projection.md).
 - [Conte as ocorrências de um valor em uma sequência de origem](../programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq.md).
-- [Calcule valores intermediários](../programming-guide/concepts/linq/how-to-calculate-intermediate-values.md).
+- [Calcule valores intermediários](../../standard/linq/calculate-intermediate-values.md).
 - [Mescle dados de várias fontes](../programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md).
 - [Encontre a diferença de conjunto entre duas sequências](../programming-guide/concepts/linq/how-to-find-the-set-difference-between-two-lists-linq.md).
-- [Depure resultados de consultas vazios](../programming-guide/concepts/linq/how-to-debug-empty-query-results-sets.md).
+- [Depure resultados de consultas vazios](../../standard/linq/debug-empty-query-results-sets.md).
 - [Adicione métodos personalizados a consultas LINQ](../programming-guide/concepts/linq/how-to-add-custom-methods-for-linq-queries.md).
 
 ## <a name="multiple-threads-and-async-processing"></a>Threads múltiplos e processamento assíncrono
 
 Programas modernos geralmente usam operações assíncronas. Esses artigos o ajudarão a aprender a usar essas técnicas.
 
-- [Melhore o desempenho assíncrono usando `System.Threading.Tasks.Task.WhenAll`](../programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md).
-- [Faça várias solicitações da Web paralelamente usando `async` e `await`](../programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md).
+- [Melhore o desempenho assíncrono usando `System.Threading.Tasks.Task.WhenAll`](../programming-guide/concepts/async/index.md).
+- [Faça várias solicitações da Web paralelamente usando `async` e `await`](../programming-guide/concepts/async/index.md).
 - [Use um pool de thread](../../standard/threading/the-managed-thread-pool.md#using-the-thread-pool).
 
 ## <a name="command-line-args-to-your-program"></a>Argumentos da linha de comando para o programa

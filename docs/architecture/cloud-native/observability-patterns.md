@@ -1,21 +1,21 @@
 ---
 title: Padrões de observabilidade
 description: Padrões de observação para aplicativos nativos de nuvem
-ms.date: 05/13/2020
-ms.openlocfilehash: db6a56358923025cbcca9478908474227e5da96d
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.date: 01/19/2021
+ms.openlocfilehash: acb1dc5c62787e9487c0e95c7e86a8f9a1967951
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83613805"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506013"
 ---
 # <a name="observability-patterns"></a>Padrões de observabilidade
 
-Assim como os padrões foram desenvolvidos para auxiliar no layout do código em aplicativos, há padrões para aplicativos operacionais de maneira confiável. Três padrões úteis na manutenção de aplicativos surgiram: **log**, **monitoramento**e **alertas**.
+Assim como os padrões foram desenvolvidos para auxiliar no layout do código em aplicativos, há padrões para aplicativos operacionais de maneira confiável. Três padrões úteis na manutenção de aplicativos surgiram: **log**, **monitoramento** e **alertas**.
 
 ## <a name="when-to-use-logging"></a>Quando usar o registro em log
 
-Não importa o cuidado que estamos, os aplicativos quase sempre se comportam de maneiras inesperadas na produção. Quando os usuários relatam problemas com um aplicativo, é extremamente útil conseguir ver o que estava acontecendo com o aplicativo quando o problema ocorreu. Uma das maneiras mais testadas e verdadeiras de capturar informações sobre o que um aplicativo está fazendo durante sua execução é fazer com que o aplicativo anote o que está fazendo. Esse processo é conhecido como registro em log. Sempre que ocorrerem falhas ou problemas na produção, o objetivo deve ser reproduzir as condições sob as quais as falhas ocorreram, em um ambiente de não produção. Ter um bom registro em vigor fornece um roteiro para os desenvolvedores seguirem a fim de duplicar problemas em um ambiente que pode ser testado e experimentado.
+Não importa o cuidado que estamos, os aplicativos quase sempre se comportam de maneiras inesperadas na produção. Quando os usuários relatam problemas com um aplicativo, é útil conseguir ver o que estava acontecendo com o aplicativo quando o problema ocorreu. Uma das maneiras mais testadas e verdadeiras de capturar informações sobre o que um aplicativo está fazendo durante sua execução é fazer com que o aplicativo anote o que está fazendo. Esse processo é conhecido como registro em log. Quando ocorrem falhas ou problemas em produção, a meta deve ser reproduzir as condições sob as quais as falhas ocorreram, em um ambiente de não produção. Ter um bom registro em vigor fornece um roteiro para os desenvolvedores seguirem a fim de duplicar problemas em um ambiente que pode ser testado e experimentado.
 
 ### <a name="challenges-when-logging-with-cloud-native-applications"></a>Desafios ao registrar em log com aplicativos nativos de nuvem
 
@@ -44,7 +44,7 @@ Cada linguagem de programação tem ferramentas que permitem a gravação de log
 * Depurar
 * Informações
 * Aviso
-* Erro
+* Erro do
 * Fatais
 
 Esses diferentes níveis de log fornecem granularidade no registro em log. Quando o aplicativo está funcionando corretamente na produção, ele pode ser configurado para registrar apenas mensagens importantes. Quando o aplicativo está com comportamento inadequado, o nível de log pode ser aumentado para que logs mais detalhados sejam coletados. Isso equilibra o desempenho contra a facilidade de depuração.
@@ -74,7 +74,7 @@ Implementado corretamente, o monitoramento pode informá-lo sobre condições qu
 
 Alguns sistemas de registro em log centralizados assumem uma função adicional de coleta de telemetria fora de logs puros. Eles podem coletar métricas, como tempo para executar uma consulta de banco de dados, tempo médio de resposta de um servidor Web e até mesmo médias de carga de CPU e pressão de memória, conforme relatado pelo sistema operacional. Em conjunto com os logs, esses sistemas podem fornecer uma visão holística da integridade dos nós no sistema e do aplicativo como um todo.
 
-Os recursos de coleta de métrica das ferramentas de monitoramento também podem ser alimentados manualmente de dentro do aplicativo. Os fluxos de negócios que são de interesse particular, como novos usuários se inscrevendo ou encomendando, podem ser instrumentados de forma que eles incrementam um contador no sistema de monitoramento central. Isso desbloqueia as ferramentas de monitoramento para não apenas monitorar a integridade do aplicativo, mas a integridade dos negócios.
+Os recursos de coleta de métrica das ferramentas de monitoramento também podem ser alimentados manualmente de dentro do aplicativo. Os fluxos de negócios que são de interesse particular, como novos usuários se inscrevendo ou encomendando, podem ser instrumentados de forma que eles incrementam um contador no sistema de monitoramento central. Esse aspecto desbloqueia as ferramentas de monitoramento para não apenas monitorar a integridade do aplicativo, mas a integridade dos negócios.
 
 As consultas podem ser construídas nas ferramentas de agregação de log para procurar determinadas estatísticas ou padrões, que podem ser exibidas em formato gráfico, em painéis personalizados. Frequentemente, as equipes investirão em grandes exibições com montagem de parede que giram pelas estatísticas relacionadas a um aplicativo. Dessa forma, é simples Ver os problemas conforme eles ocorrem.
 

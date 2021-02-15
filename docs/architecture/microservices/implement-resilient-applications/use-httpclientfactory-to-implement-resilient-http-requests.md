@@ -1,19 +1,19 @@
 ---
 title: Use o IHttpClientFactory para implementar solicitações HTTP resilientes
 description: Saiba como usar o IHttpClientFactory, disponível desde o .NET Core 2,1, para criar `HttpClient` instâncias, facilitando seu uso em seus aplicativos.
-ms.date: 08/31/2020
-ms.openlocfilehash: 1df5432f215371b60722212cf706c28a4a5bb5f6
-ms.sourcegitcommit: e0803b8975d3eb12e735a5d07637020dd6dac5ef
+ms.date: 01/13/2021
+ms.openlocfilehash: 056a8982fe4331e7e680b33cf1f43785b48da7d6
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89271822"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188992"
 ---
 # <a name="use-ihttpclientfactory-to-implement-resilient-http-requests"></a>Use o IHttpClientFactory para implementar solicitações HTTP resilientes
 
 <xref:System.Net.Http.IHttpClientFactory> é um contrato implementado pelo `DefaultHttpClientFactory` , uma fábrica conceituada, disponível desde o .NET Core 2,1, para <xref:System.Net.Http.HttpClient> a criação de instâncias a serem usadas em seus aplicativos.
 
-## <a name="issues-with-the-original-httpclient-class-available-in-net-core"></a>Problemas com a classe HttpClient original disponível no .NET Core
+## <a name="issues-with-the-original-httpclient-class-available-in-net"></a>Problemas com a classe HttpClient original disponível no .NET
 
 A classe original e conhecida <xref:System.Net.Http.HttpClient> pode ser facilmente usada, mas, em alguns casos, ela não está sendo usada corretamente por muitos desenvolvedores.
 
@@ -23,7 +23,7 @@ Portanto, `HttpClient` deve ser instanciado uma única vez e reutilizado durante
 
 Outro problema que os desenvolvedores executam é ao usar uma instância compartilhada do `HttpClient` em processos de execução longa. Em uma situação em que o HttpClient é instanciado como um singleton ou um objeto estático, ele não lida com as alterações de DNS, conforme descrito neste [problema](https://github.com/dotnet/runtime/issues/18348) do repositório do GitHub de dotnet/tempo de execução.
 
-No entanto, o problema não é realmente com `HttpClient` o por si, mas com o [construtor padrão para HttpClient](https://docs.microsoft.com/dotnet/api/system.net.http.httpclient.-ctor?view=netcore-3.1#System_Net_Http_HttpClient__ctor), porque ele cria uma nova instância concreta do <xref:System.Net.Http.HttpMessageHandler> , que é aquela que tem os problemas de *esgotamento de soquetes* e alterações de DNS mencionados acima.
+No entanto, o problema não é realmente com `HttpClient` o por si, mas com o [construtor padrão para HttpClient](/dotnet/api/system.net.http.httpclient.-ctor?view=netcore-3.1#System_Net_Http_HttpClient__ctor), porque ele cria uma nova instância concreta do <xref:System.Net.Http.HttpMessageHandler> , que é aquela que tem os problemas de *esgotamento de soquetes* e alterações de DNS mencionados acima.
 
 Para resolver os problemas mencionados acima e tornar as `HttpClient` instâncias gerenciáveis, o .NET Core 2,1 introduziu a <xref:System.Net.Http.IHttpClientFactory> interface que pode ser usada para configurar e criar `HttpClient` instâncias em um aplicativo por meio de injeção de dependência (di). Ele também fornece extensões para que o middleware baseado em Polly Aproveite a delegação de manipuladores no HttpClient.
 
@@ -65,9 +65,9 @@ O diagrama a seguir mostra como os clientes tipados são usados com o `IHttpClie
 
 **Figura 8-4**. Usando `IHttpClientFactory` com classes de cliente tipadas.
 
-Na imagem acima, a `ClientService` (usada por um controlador ou código de cliente) usa um `HttpClient` criado pelo registrado `IHttpClientFactory` . Essa fábrica atribui um `HttpMessageHandler` de um pool ao `HttpClient` . O `HttpClient` pode ser configurado com as políticas do Polly ao registrar o `IHttpClientFactory` no contêiner di com o método de extensão <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient*> .
+Na imagem acima, a `ClientService` (usada por um controlador ou código de cliente) usa um `HttpClient` criado pelo registrado `IHttpClientFactory` . Essa fábrica atribui um `HttpMessageHandler` de um pool ao `HttpClient` . O `HttpClient` pode ser configurado com as políticas do Polly ao registrar o `IHttpClientFactory` no contêiner di com o método de extensão <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> .
 
-Para configurar a estrutura acima, adicione <xref:System.Net.Http.IHttpClientFactory> em seu aplicativo instalando o `Microsoft.Extensions.Http` pacote NuGet que inclui o <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient*> método de extensão para <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> . Esse método de extensão registra a `DefaultHttpClientFactory` classe interna a ser usada como um singleton para a interface `IHttpClientFactory` . Ele define uma configuração transitória para o <xref:Microsoft.Extensions.Http.HttpMessageHandlerBuilder>. Esse manipulador de mensagens (objeto <xref:System.Net.Http.HttpMessageHandler>), obtido de um pool, é usado pelo `HttpClient` retornado do alocador.
+Para configurar a estrutura acima, adicione <xref:System.Net.Http.IHttpClientFactory> em seu aplicativo instalando o `Microsoft.Extensions.Http` pacote NuGet que inclui o <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> método de extensão para <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> . Esse método de extensão registra a `DefaultHttpClientFactory` classe interna a ser usada como um singleton para a interface `IHttpClientFactory` . Ele define uma configuração transitória para o <xref:Microsoft.Extensions.Http.HttpMessageHandlerBuilder>. Esse manipulador de mensagens (objeto <xref:System.Net.Http.HttpMessageHandler>), obtido de um pool, é usado pelo `HttpClient` retornado do alocador.
 
 No próximo código, veja como `AddHttpClient()` pode ser usado para registrar clientes tipados (agentes de serviço) que precisam usar `HttpClient`.
 
@@ -190,11 +190,11 @@ Até este ponto, o trecho de código acima só mostrou o exemplo de execução d
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
-- **Usando HttpClientFactory no .NET Core**  
+- **Usando o HttpClientFactory no .NET**  
   [https://docs.microsoft.com/aspnet/core/fundamentals/http-requests](/aspnet/core/fundamentals/http-requests)
 
 - **HttpClientFactory o código-fonte no `dotnet/extensions` repositório github**  
-  <https://github.com/dotnet/extensions/tree/master/src/HttpClientFactory>
+  <https://github.com/dotnet/extensions/tree/v3.1.8/src/HttpClientFactory>
 
 - **Polly (biblioteca de tratamento de falhas transitórias e resiliência do .NET)**  
   <http://www.thepollyproject.org/>

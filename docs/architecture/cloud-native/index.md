@@ -2,18 +2,21 @@
 title: Arquitetando aplicativos .NET nativos de nuvem para o Azure
 description: Um guia para a criação de aplicativos nativos de nuvem que aproveitam contêineres, microservices e recursos sem servidor do Azure.
 author: ardalis
-ms.date: 05/13/2020
-ms.openlocfilehash: 172097b4915deb2d6f0b06441d7c4ca389bbca25
-ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.date: 01/19/2021
+ms.openlocfilehash: ad641517f9dc24aed9180cf6a092f4754739bceb
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86051500"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99506117"
 ---
 # <a name="architecting-cloud-native-net-applications-for-azure"></a>Arquitetando aplicativos .NET nativos de nuvem para o Azure
 
 ![imagem da capa](./media/cover.png)
 
-**Edição v. 1.0**
+**Edição v 1.0.2**
+
+Consulte o [changelog](https://aka.ms/cn-ebook-changelog) para obter as atualizações do livro e as contribuições da Comunidade.
 
 PUBLICADO POR
 
@@ -25,7 +28,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright &copy; 2020 da Microsoft Corporation
+Copyright &copy; 2021 da Microsoft Corporation
 
 Todos os direitos reservados. Nenhuma parte do conteúdo deste guia pode ser reproduzida ou transmitida de nenhuma forma nem por nenhum meio sem a permissão por escrito do publicador.
 
@@ -56,14 +59,18 @@ Participantes e revisores:
 > **Jeremy Likness**, gerente de programas sênior, equipe do .net, Microsoft
 >
 > **Cecil Phillip**, defensora da nuvem sênior, Microsoft
+>
+> **Pedro Ghosh**, consultor principal da Neudesic
 
 Editores:
 
 > **Maira Wenzel**, gerente de programas, equipe do .net, Microsoft
 
+> **David Pinheiro**, desenvolvedor de conteúdo sênior, documentos do .net, Microsoft
+
 ## <a name="version"></a>Versão
 
-Este guia foi escrito para abranger a versão **3,1 do .NET Core** junto com muitas atualizações adicionais relacionadas à mesma "onda" de tecnologias (isto é, Azure e tecnologias de terceiros adicionais) que coincidem no tempo com a versão 3,1 do .NET Core.
+Este guia foi escrito para abranger a versão do **.NET 5** junto com muitas atualizações adicionais relacionadas à mesma "onda" de tecnologias (isto é, Azure e tecnologias de terceiros adicionais) que coincidem no tempo com a versão do .NET 5.
 
 ## <a name="who-should-use-this-guide"></a>Quem deve usar este guia
 
@@ -90,4 +97,4 @@ Este guia está disponível em formato [PDF](https://dotnet.microsoft.com/downlo
 Este livro e exemplos relacionados estão em constante evolução, para que seus comentários sejam bem-vindos! Se você tiver comentários sobre como esse livro pode ser melhorado, use a seção de comentários na parte inferior de qualquer página criada com base nos [problemas do GitHub](https://github.com/dotnet/docs/issues).
 
 >[!div class="step-by-step"]
->[Avançar](introduction.md)
+>[Próximo](introduction.md)

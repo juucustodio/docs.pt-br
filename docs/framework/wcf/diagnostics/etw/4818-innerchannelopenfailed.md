@@ -1,28 +1,32 @@
 ---
+description: 'Saiba mais sobre: 4818-InnerChannelOpenFailed'
 title: 4818 - InnerChannelOpenFailed
 ms.date: 03/30/2017
 ms.assetid: c8ac6447-4fbb-4e08-ab26-91acae48dd11
-ms.openlocfilehash: e98d76b21513d409250cd621003c583e33f980c6
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: cc34d88b27d5a9d7344e00e00b2ee0c4e9d96cc1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61957424"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783619"
 ---
 # <a name="4818---innerchannelopenfailed"></a>4818 - InnerChannelOpenFailed
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
 |ID|4818|  
 |Palavras-chave|Descoberta|  
-|Nível|Aviso|  
+|Level|Aviso|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando o DiscoveryClientChannel Falha ao abrir o canal com um ponto de extremidade de descoberta. O DiscoveryClientChannel agora tentará usar o ponto de extremidade descoberto disponível Avançar.  
+
+ Esse evento é emitido quando o DiscoveryClientChannel falha ao abrir o canal com um ponto de extremidade descoberto. Agora, o DiscoveryClientChannel tentará usar o próximo ponto de extremidade descoberto disponível.  
   
 ## <a name="message"></a>Mensagem  
- O DiscoveryClientChannel Falha ao abrir o canal com um ponto de extremidade descoberto com EndpointAddress = '%1' e por meio de = '%2'. O DiscoveryClientChannel agora tentará usar o ponto de extremidade descoberto disponível Avançar.  
+
+ Falha do DiscoveryClientChannel ao abrir o canal com um ponto de extremidade descoberto com EndpointAddress = ' %1 ' e via = ' %2 '. Agora, o DiscoveryClientChannel tentará usar o próximo ponto de extremidade descoberto disponível.  
   
 ## <a name="details"></a>Detalhes

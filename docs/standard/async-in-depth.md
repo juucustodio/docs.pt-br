@@ -4,20 +4,19 @@ description: Saiba como escrever código assíncrono associado à CPU ou à E/S 
 author: cartermp
 ms.author: wiwagn
 ms.date: 06/20/2016
-ms.technology: dotnet-standard
 ms.assetid: 1e38f9d9-8f84-46ee-a15f-199aec4f2e34
-ms.openlocfilehash: 91fd37ce329c03b43b5472e4579be7f5ef961738
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 7fcc41c4ea5037d643402fc722e8f16f28d560ee
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "70169114"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94823323"
 ---
 # <a name="async-in-depth"></a>Assincronia detalhada
 
-Escrever código assíncrono vinculado à CPU ou à E/S é simples usando o modelo assíncrono baseado em Tarefas do .NET. O modelo é exposto pelos tipos `Task` e `Task<T>` e pelas palavras-chave `async` e `await` no C# e no Visual Basic. (Recursos específicos do idioma são encontrados na seção [Ver também.)](#see-also) Este artigo explica como usar o .NET assync e fornece insights sobre a estrutura de sincronismo usada as capas.
+Escrever código assíncrono vinculado à CPU ou à E/S é simples usando o modelo assíncrono baseado em Tarefas do .NET. O modelo é exposto pelos tipos `Task` e `Task<T>` e pelas palavras-chave `async` e `await` no C# e no Visual Basic. (Os recursos específicos à linguagem são encontrados na seção [Consulte também](#see-also) .) Este artigo explica como usar o .NET Async e fornece informações sobre a estrutura assíncrona usada nos bastidores.
 
-## <a name="task-and-taskt"></a>Task e Task\<T>
+## <a name="task-and-taskt"></a>Tarefa e tarefa\<T>
 
 Tarefas são constructos usados para implementar o que é conhecido como o [modelo de promessa de simultaneidade](https://en.wikipedia.org/wiki/Futures_and_promises).  Em resumo, elas oferecem a você uma “promessa” de que o trabalho será concluído em um momento posterior, permitindo que você coordene a promessa com uma API limpa.
 

@@ -3,12 +3,12 @@ title: O modelo de programação assíncrona de tarefa (toque) com Async e Await
 description: Saiba quando e como usar a programação assíncrona baseada em tarefas, uma abordagem simplificada para programação assíncrona em C#.
 ms.date: 08/19/2020
 ms.assetid: 9bcf896a-5826-4189-8c1a-3e35fa08243a
-ms.openlocfilehash: 5e85b99025b31e205c66468d4bd886701cbaea17
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: 1014e38dcb3e2c4f56c8b3f3dade9bdbff3abd27
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88812076"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556031"
 ---
 # <a name="task-asynchronous-programming-model"></a>Modelo de programação assíncrona de tarefa
 
@@ -43,7 +43,7 @@ As palavras-chave [async](../../../language-reference/keywords/async.md) e [awai
 
 O exemplo a seguir mostra um método assíncrono. Quase tudo no código deve parecer familiar para você.
 
-Você pode encontrar um exemplo completo de Windows Presentation Foundation (WPF) disponível para download da [programação assíncrona com Async e Await em C#](https://docs.microsoft.com/samples/dotnet/samples/async-and-await-cs).
+Você pode encontrar um exemplo completo de Windows Presentation Foundation (WPF) disponível para download da [programação assíncrona com Async e Await em C#](/samples/dotnet/samples/async-and-await-cs).
 
 :::code language="csharp" source="snippets/access-web/Program.cs" id="ControlFlow":::
 
@@ -121,7 +121,7 @@ Se você não tiver experiência em programação assíncrona, considere por um 
 
 Você pode estar curioso para saber onde encontrar métodos como `GetStringAsync` que oferecem suporte à programação assíncrona. .NET Framework 4,5 ou superior e o .NET Core contêm muitos membros que funcionam com o `async` e o `await` . Você pode reconhecê-los pelo sufixo "Async" que é anexado ao nome do membro e por seu tipo de retorno de <xref:System.Threading.Tasks.Task> ou <xref:System.Threading.Tasks.Task%601> . Por exemplo, a classe `System.IO.Stream` contém métodos como <xref:System.IO.Stream.CopyToAsync%2A>, <xref:System.IO.Stream.ReadAsync%2A> e <xref:System.IO.Stream.WriteAsync%2A>, juntamente com os métodos síncronos <xref:System.IO.Stream.CopyTo%2A>, <xref:System.IO.Stream.Read%2A> e <xref:System.IO.Stream.Write%2A>.
 
-O Windows Runtime também contém vários métodos que você pode usar com `async` e `await` em aplicativos do Windows. Para obter mais informações, veja [Threading e programação assíncrona](/windows/uwp/threading-async/) para o desenvolvimento da UWP e [Programação assíncrona (aplicativos da Windows Store)](https://docs.microsoft.com/previous-versions/windows/apps/hh464924(v=win.10)) e [Início Rápido: chamando APIs assíncronas em C# ou Visual Basic](https://docs.microsoft.com/previous-versions/windows/apps/hh452713(v=win.10)) se você usa versões anteriores do Windows Runtime.
+O Windows Runtime também contém vários métodos que você pode usar com `async` e `await` em aplicativos do Windows. Para obter mais informações, veja [Threading e programação assíncrona](/windows/uwp/threading-async/) para o desenvolvimento da UWP e [Programação assíncrona (aplicativos da Windows Store)](/previous-versions/windows/apps/hh464924(v=win.10)) e [Início Rápido: chamando APIs assíncronas em C# ou Visual Basic](/previous-versions/windows/apps/hh452713(v=win.10)) se você usa versões anteriores do Windows Runtime.
 
 ## <a name="threads"></a><a name="BKMK_Threads"></a> Threads
 
@@ -214,7 +214,7 @@ Por convenção, os métodos que retornam tipos comumente awaitable (por exemplo
 
 | Título | Descrição | Amostra |
 |--|--|--|
-| [Como fazer várias solicitações da Web em paralelo usando Async e Await (C#)](how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md) | Demonstra como iniciar várias tarefas ao mesmo tempo. | [Exemplo de assincronia: fazer várias solicitações da Web paralelamente](https://code.msdn.microsoft.com/Async-Make-Multiple-Web-49adb82e) |
+| [Como fazer várias solicitações da Web em paralelo usando Async e Await (C#)](./index.md) | Demonstra como iniciar várias tarefas ao mesmo tempo. | [Exemplo de assincronia: fazer várias solicitações da Web paralelamente](https://code.msdn.microsoft.com/Async-Make-Multiple-Web-49adb82e) |
 | [Tipos de retorno assíncrono (C#)](async-return-types.md) | Ilustra os tipos que os métodos assíncronos podem retornar e explica quando cada tipo é apropriado. |  |
 | Cancelar tarefas com um token de cancelamento como um mecanismo de sinalização. | Mostra como adicionar a seguinte funcionalidade à sua solução assíncrona:<br><br> - [Cancelar uma lista de tarefas (C#)](cancel-an-async-task-or-a-list-of-tasks.md)<br>- [Cancelar tarefas após um período de tempo (C#)](cancel-async-tasks-after-a-period-of-time.md)<br>- [Processar tarefa assíncrona como concluída (C#)](start-multiple-async-tasks-and-process-them-as-they-complete.md) |  |
 | [Usando Async para acesso a arquivos (C#)](using-async-for-file-access.md) | Lista e demonstra as vantagens de usar async e await para acessar arquivos. |  |

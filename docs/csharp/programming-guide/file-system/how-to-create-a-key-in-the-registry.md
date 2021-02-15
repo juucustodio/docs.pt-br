@@ -7,14 +7,15 @@ helpviewer_keywords:
 - registry keys, creating [C#]
 - keys, creating in registry
 ms.assetid: 8fa475b0-e01f-483a-9327-fd03488fdf5d
-ms.openlocfilehash: 6db076bc22e098c285b74a8c10e8b5f456c2c55e
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: c51fa61aa4c501921d5c7ace99a8c5aaf7b29f58
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87299975"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91203911"
 ---
 # <a name="how-to-create-a-key-in-the-registry-c-programming-guide"></a>Como criar uma chave no registro (guia de programação C#)
+
 Este exemplo adiciona o par de valores, "Name" e "Isabella", ao Registro do usuário atual, sob a chave "Names".  
   
 ## <a name="example"></a>Exemplo  
@@ -35,6 +36,7 @@ key.Close();
 - Substitua o parâmetro `Name` pelo nome de um valor que existe diretamente sob o nó Names.  
   
 ## <a name="robust-programming"></a>Programação robusta  
+
  Analise a estrutura do Registro para encontrar um local adequado para a chave. Por exemplo, caso você queira abrir a chave Software do usuário atual e criar uma chave com o nome da empresa. Em seguida, adicione os valores do Registro à chave da empresa.  
   
  As seguintes condições podem causar uma exceção:  
@@ -50,6 +52,7 @@ key.Close();
 - A chave do Registro é somente leitura.  
   
 ## <a name="net-security"></a>Segurança do .NET  
+
  É mais seguro gravar dados na pasta do usuário — `Microsoft.Win32.Registry.CurrentUser` — em vez de no computador local — `Microsoft.Win32.Registry.LocalMachine`.  
   
  Ao criar um valor de Registro, é necessário decidir o que fazer se esse valor já existir. Outro processo, talvez um mal-intencionado, pode já ter criado o valor e tem acesso a ele. Ao colocar dados no valor de Registro, os dados estarão disponíveis para o outro processo. Para impedir isso, use o método `Overload:Microsoft.Win32.RegistryKey.GetValue`. método. Ele retornará null se a chave ainda não existir.  

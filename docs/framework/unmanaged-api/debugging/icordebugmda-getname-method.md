@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugMDA:: GetName'
 title: Método ICorDebugMDA::GetName
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 885bf5e8-00b7-4cd7-9d8d-e720d47918c4
 topic_type:
 - apiref
-ms.openlocfilehash: 6a6769265a2e140f1fa001bb8240bc5d4bd76018
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 4ea39f062071073684a20d8f60875fbaaab43a2f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213667"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801157"
 ---
 # <a name="icordebugmdagetname-method"></a>Método ICorDebugMDA::GetName
+
 Obtém uma cadeia de caracteres que contém o nome do MDA (Assistente de depuração gerenciada) representado por [ICorDebugMDA](icordebugmda-interface.md).  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,6 +39,7 @@ HRESULT GetName (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `cchName`  
  no O tamanho da `szName` matriz.  
   
@@ -47,9 +50,11 @@ HRESULT GetName (
  fora Uma matriz na qual armazenar o nome.  
   
 ## <a name="remarks"></a>Comentários  
+
  Os nomes de MDA são valores exclusivos. O `GetName` método é uma alternativa de desempenho conveniente para obter o fluxo XML e extrair o nome do fluxo com base no esquema.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -58,7 +63,7 @@ HRESULT GetName (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugMDA](icordebugmda-interface.md)
-- [Diagnosticando erros com assistentes para depuração gerenciada](../../debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+- [Diagnosticando erros com assistentes de depuração gerenciados](../../debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

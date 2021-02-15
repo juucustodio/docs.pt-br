@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 15ba678431b97e7c961c119d83546569bdf9bad2
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "74282517"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96032241"
 ---
 ### <a name="http-some-cookie-samesite-defaults-changed-to-none"></a>HTTP: alguns padrões de SameSite de cookie foram alterados para nenhum
 
@@ -12,7 +12,7 @@ ms.locfileid: "74282517"
 
 #### <a name="version-introduced"></a>Versão introduzida
 
-3,0
+3.0
 
 #### <a name="old-behavior"></a>Comportamento antigo
 

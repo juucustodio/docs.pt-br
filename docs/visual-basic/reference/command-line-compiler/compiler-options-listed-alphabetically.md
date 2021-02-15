@@ -4,14 +4,15 @@ ms.date: 04/12/2018
 helpviewer_keywords:
 - Visual Basic compiler, options
 ms.assetid: e67febba-bacf-4e1f-a143-c141e063f90e
-ms.openlocfilehash: 19e14953c08f90ea1ab245fa3124a462ccba162f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: d0dbe785edf7a9aa029d4be08a9b854cf1fb2b79
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84408732"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91085289"
 ---
 # <a name="visual-basic-compiler-options-listed-alphabetically"></a>Visual Basic opções de compilador listadas em ordem alfabética
+
 O compilador de linha de comando Visual Basic é fornecido como uma alternativa à compilação de programas do IDE (ambiente de desenvolvimento integrado) do Visual Studio. Veja a seguir uma lista de Visual Basic opções do compilador de linha de comando classificadas em ordem alfabética.  
 
 [!INCLUDE[compiler-options](~/includes/compiler-options.md)]
@@ -26,12 +27,12 @@ O compilador de linha de comando Visual Basic é fornecido como uma alternativa 
 |[-baseaddress](baseaddress.md)|Especifica o endereço base de uma DLL.|  
 |[-bugreport](bugreport.md)|Cria um arquivo que contém informações que tornam mais fácil relatar um bug.|  
 |`-checksumalgorithm:<alg>`|Especifique o algoritmo para calcular a soma de verificação do arquivo de origem armazenada no PDB.  Os valores com suporte são: SHA1 (padrão) ou SHA256. <br>Devido a problemas de colisão com o SHA1, a Microsoft recomenda SHA256 ou melhor.|  
-|[-codepage](codepage.md)|Especifica a página de código a ser usada para todos os arquivos de código-fonte na compilação.|  
+|[-página de código](codepage.md)|Especifica a página de código a ser usada para todos os arquivos de código-fonte na compilação.|  
 |[-Depurar](debug.md)|Produz informações de depuração.|  
-|[-define](define.md)|Define os símbolos para a compilação condicional.|  
+|[-definir](define.md)|Define os símbolos para a compilação condicional.|  
 |[-delaysign](delaysign.md)|Especifica se o assembly será assinado total ou parcialmente.|  
-|[-deterministic](deterministic.md)|Faz com que o compilador gere um assembly de conteúdo binário idêntico entre compilações se as entradas são idênticas.|
-|[-doc](doc.md)|Processa comentários de documentação para um arquivo XML.|  
+|[-determinístico](deterministic.md)|Faz com que o compilador gere um assembly de conteúdo binário idêntico entre compilações se as entradas são idênticas.|
+|[-Doc](doc.md)|Processa comentários de documentação para um arquivo XML.|  
 |[-errorreport](errorreport.md)|Especifica como o compilador de Visual Basic deve relatar erros internos do compilador.|  
 |[-filealign](filealign.md)|Especifica onde alinhar as seções do arquivo de saída.|  
 |[-ajuda](help.md)|Exibe as opções do compilador. Esse comando é o mesmo que especificar a `-?` opção. Nenhuma compilação ocorre.|  
@@ -60,7 +61,7 @@ O compilador de linha de comando Visual Basic é fornecido como uma alternativa 
 |<code>-parallel[+&#124;-]</code>|Especifica se deve o build simultâneo deve ser usado (+).|  
 |[-plataforma](platform.md)|Especifica a plataforma do processador que o compilador tem como destino para o arquivo de saída.|  
 |`-preferreduilang`|Especifique o nome de idioma de saída preferencial.|  
-|[-quiet](quiet.md)|Impede que o compilador exiba código para erros e avisos relacionados à sintaxe.|  
+|[-Quiet](quiet.md)|Impede que o compilador exiba código para erros e avisos relacionados à sintaxe.|  
 |[-recurse](recurse.md)|Pesquisa em subdiretórios arquivos de código-fonte a serem compilados.|  
 |[-referência](reference.md)|Importa metadados de um assembly.|  
 |[-refonly](refonly-compiler-option.md)|Gera apenas um assembly de referência.|
@@ -69,9 +70,9 @@ O compilador de linha de comando Visual Basic é fornecido como uma alternativa 
 |[-recurso](resource.md)|Insere um recurso gerenciado em um assembly.|  
 |[-rootnamespace](rootnamespace.md)|Especifica um namespace para todas as declarações de tipo.|  
 |`-ruleset:<file>`|Especifique um arquivo de conjunto de regras que desabilita o diagnóstico específico.|  
-|[-sdkpath](sdkpath.md)|Especifica o local de mscorlib. dll e Microsoft. VisualBasic. dll.|  
+|[-sdkpath](sdkpath.md)|Especifica o local de Mscorlib.dll e Microsoft.VisualBasic.dll.|  
 |[-subsystemversion](subsystemversion.md)|Especifica a versão mínima do subsistema que o arquivo executável gerado pode usar.|  
-|[-target](target.md)|Especifica o formato do arquivo de saída.|  
+|[-destino](target.md)|Especifica o formato do arquivo de saída.|  
 |[-utf8output](utf8output.md)|Exibe a saída do compilador usando a codificação UTF-8.|  
 |[-vbruntime](vbruntime.md)|Especifica que o compilador deve compilar sem uma referência para a biblioteca de tempo de execução Visual Basic ou com uma referência a uma biblioteca de tempo de execução específica.|  
 |[-Detalhado](verbose.md)|Gera informações extras durante a compilação.|  

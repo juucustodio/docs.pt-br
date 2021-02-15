@@ -10,12 +10,12 @@ helpviewer_keywords:
 - security-transparent code
 - security [.NET Framework], security-transparent code
 ms.assetid: 5fd8f46d-3961-46a7-84af-2eb1f48e75cf
-ms.openlocfilehash: 75cf38412f3ba21832c5e63898b10bcf681f5904
-ms.sourcegitcommit: c37e8d4642fef647ebab0e1c618ecc29ddfe2a0f
+ms.openlocfilehash: 97acccdc1dcab11e42d116f4743e1182029e2dd6
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87855693"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96288184"
 ---
 # <a name="security-transparent-code-level-1"></a>Código transparente de segurança, nível 1
 
@@ -35,7 +35,9 @@ ms.locfileid: "87855693"
 - [Exemplos de transparência de segurança](#security_transparency_examples)  
   
 <a name="the_level_1_transparency_model"></a>
+
 ## <a name="the-level-1-transparency-model"></a>O modelo de transparência nível 1  
+
  Ao usar a transparência de nível 1, você está usando um modelo de segurança que separa o código em métodos de segurança transparente, de segurança crítica e de segurança crítica.  
   
  Você pode marcar um assembly inteiro, algumas classes em um assembly ou alguns métodos em uma classe como segurança transparente. O código de segurança transparente não pode elevar privilégios. Essa restrição tem três consequências:  
@@ -58,7 +60,9 @@ ms.locfileid: "87855693"
  Para compatibilidade com versões anteriores do .NET Framework, todos os membros que não estão anotados com atributos de transparência são considerados críticos para segurança. Todos os tipos que não são anotados são considerados transparentes. Não há regras de análise estática para validar a transparência. Portanto, talvez seja necessário depurar erros de transparência em tempo de execução.  
   
 <a name="transparency_attributes"></a>
+
 ## <a name="transparency-attributes"></a>Atributos de transparência  
+
  A tabela a seguir descreve os três atributos que você usa para anotar seu código em busca de transparência.  
   
 |Atributo|Descrição|  
@@ -70,6 +74,7 @@ ms.locfileid: "87855693"
  O <xref:System.Security.SecuritySafeCriticalAttribute> atributo permite que o código de segurança transparente acesse membros de segurança crítica no mesmo assembly. Considere o código de segurança transparente e com segurança crítica em seu assembly, como separado em dois assemblies. O código de segurança transparente não seria capaz de ver os membros privados ou internos do código de segurança crítica. Além disso, o código de segurança crítica geralmente é auditado para acesso à sua interface pública. Você não esperaria que um estado privado ou interno fosse acessível fora do assembly; Você desejaria manter o estado isolado. O <xref:System.Security.SecuritySafeCriticalAttribute> atributo mantém o isolamento do estado entre o código de segurança transparente e de segurança crítica e, ao mesmo tempo, fornece a capacidade de substituir o isolamento quando necessário. O código de segurança transparente não pode acessar código crítico de segurança particular ou interno, a menos que esses membros tenham sido marcados com <xref:System.Security.SecuritySafeCriticalAttribute> . Antes de aplicar o <xref:System.Security.SecuritySafeCriticalAttribute> , audite esse membro como se ele estivesse publicamente exposto.  
   
 ### <a name="assembly-wide-annotation"></a>Anotação em todo o assembly  
+
  A tabela a seguir descreve os efeitos do uso de atributos de segurança no nível do assembly.  
   
 |Atributo de assembly|Estado do assembly|  
@@ -81,7 +86,9 @@ ms.locfileid: "87855693"
 |`SecurityCritical`|Todos os padrões de código são transparentes. No entanto, tipos individuais e membros podem ter outros atributos.|  
   
 <a name="security_transparency_examples"></a>
+
 ## <a name="security-transparency-examples"></a>Exemplos de transparência de segurança  
+
  Para usar as regras de transparência do .NET Framework 2,0 (transparência de nível 1), use a seguinte anotação de assembly:  
   
 ```csharp
@@ -133,4 +140,4 @@ public class B
 ## <a name="see-also"></a>Veja também
 
 - [Código transparente de segurança, nível 2](security-transparent-code-level-2.md)
-- [Alterações de segurança](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes)
+- [Alterações de segurança](/previous-versions/dotnet/framework/security/security-changes)

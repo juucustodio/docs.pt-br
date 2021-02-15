@@ -7,27 +7,29 @@ helpviewer_keywords:
 - programming [WF]
 - WF [WF], programming
 ms.assetid: f62354e2-6a2b-4e8c-a4bc-533fb96267a4
-ms.openlocfilehash: 33c656ed453a1a2df6916c691245e01bbf7c6f33
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: bf2aa8d755303acab168f306cead1b496c87eff1
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83421443"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96246063"
 ---
 # <a name="windows-workflow-foundation-programming"></a>Programação do Windows Workflow Foundation
+
 Esta seção contém um conjunto de tópicos primos que você deve entender para se tornar um programador de Windows Workflow Foundation de proficientes (WF).  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Criando fluxos de trabalho](designing-workflows.md)  
  Os tópicos que descrevem os paradigma de controle de fluxo usados no desenvolvimento de fluxo de trabalho.  
   
- [Usando e criando atividades](using-and-creating-activities.md)  
+ [Criando e usando atividades](using-and-creating-activities.md)  
  Tópicos que descrevem as atividades fornecidas pelo sistema disponíveis no Windows Workflow Foundation (WF).  
   
  [Modelo de dados do Windows Workflow Foundation](data-model.md)  
  Os tópicos que descrevem variáveis, argumentos e expressões no [!INCLUDE[wf1](../../../includes/wf1-md.md)].  
   
- [Esperando entrada em um fluxo de trabalho](waiting-for-input-in-a-workflow.md)  
+ [Entrada de espera em um fluxo de trabalho](waiting-for-input-in-a-workflow.md)  
  Os tópicos que descrevem como usar indicadores e atividades de mensagem.  
   
  [Exceções, transações, e compensação](exceptions-transactions-and-compensation.md)  
@@ -48,7 +50,7 @@ Esta seção contém um conjunto de tópicos primos que você deve entender para
  [Diretrizes de migração](migration-guidance.md)  
  Tópicos que descrevem como migrar fluxos de trabalho de versões anteriores do Windows Workflow Foundation (WF).  
   
- [Acompanhamento e rastreamento de fluxo de trabalho](workflow-tracking-and-tracing.md)  
+ [Rastreamento e rastreamento de fluxo de trabalho](workflow-tracking-and-tracing.md)  
  Os tópicos que descrevem o rastreamento de fluxo de trabalho e como esses recursos são usados para monitorar aplicativos de fluxo de trabalho.  
   
  [Segurança de fluxo de trabalho](workflow-security.md)  

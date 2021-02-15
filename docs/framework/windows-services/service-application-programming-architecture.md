@@ -15,15 +15,15 @@ helpviewer_keywords:
 - ServiceProcessInstaller class, service application code model
 - Windows Service applications, states
 ms.assetid: 83230026-d068-4174-97ff-e264c896eb2f
-author: ghogen
-ms.openlocfilehash: c59ccc5a8b2f11fda9c4734487092c1aabb74908
-ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
+ms.openlocfilehash: c2344dd0a7d35781aea52b24694f2cfee70a6d41
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86925573"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96270452"
 ---
 # <a name="service-application-programming-architecture"></a>Arquitetura de programação do aplicativo de serviço
+
 Os aplicativos de Serviço Windows baseiam-se em uma classe que é herdada da classe <xref:System.ServiceProcess.ServiceBase?displayProperty=nameWithType>. Você substitui os métodos dessa classe e define funcionalidades para eles para determinar o comportamento do seu serviço.  
   
  As classes principais envolvidas na criação do serviço são:  
@@ -35,6 +35,7 @@ Os aplicativos de Serviço Windows baseiam-se em uma classe que é herdada da cl
  Além disso, uma classe chamada <xref:System.ServiceProcess.ServiceController> pode ser usada para manipular o serviço sozinha. Essa classe não é envolvida na criação de um serviço, mas pode ser usada para iniciar e parar o serviço, passar comandos para ele e retornar uma série de enumerações.  
   
 ## <a name="defining-your-services-behavior"></a>Definindo o comportamento do serviço  
+
  Em sua classe de serviço, você substitui as funções de classe base que determinam o que acontece quando o estado do serviço é alterado no Gerenciador de Controle de Serviços. A classe <xref:System.ServiceProcess.ServiceBase> expõe os métodos a seguir, que você pode substituir para adicionar o comportamento personalizado.  
   
 |Método|Substituir para|  

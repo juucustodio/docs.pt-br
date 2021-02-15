@@ -5,17 +5,19 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - interfaces [C#], explicitly implementing
 ms.assetid: 514cde76-f981-474e-8b40-9493619f899c
-ms.openlocfilehash: 35b512ff6cbee1dd942f5b3476db660481808297
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: a9c019cdcf6e229199d980a2d1913df7c72a2169
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87303069"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91157389"
 ---
 # <a name="how-to-explicitly-implement-interface-members-c-programming-guide"></a>Como implementar explicitamente membros de interface (guia de programação C#)
+
 Este exemplo declara uma [interface](../../language-reference/keywords/interface.md), `IDimensions` e uma classe, `Box` , que implementa explicitamente os membros da interface `GetLength` e `GetWidth` . Os membros são acessados por meio da instância `dimensions` da interface.  
   
 ## <a name="example"></a>Exemplo  
+
  [!code-csharp[csProgGuideInheritance#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#8)]  
   
 ## <a name="robust-programming"></a>Programação robusta  
@@ -28,7 +30,7 @@ Este exemplo declara uma [interface](../../language-reference/keywords/interface
   
      [!code-csharp[csProgGuideInheritance#46](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#46)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Guia de programação C#](../index.md)
 - [Classes e structs](../classes-and-structs/index.md)

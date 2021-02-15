@@ -11,21 +11,24 @@ helpviewer_keywords:
 - UI (user interface), automation
 - UI Automation
 ms.assetid: 4380cad7-e509-448f-b9a5-6de042605fd4
-ms.openlocfilehash: 99239d7bac2e556d4da0d74f36c68916da7c688a
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: cf8069f26b85318994aeeb47d42ad28a3a33834a
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87164009"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96262522"
 ---
 # <a name="ui-automation-and-screen-scaling"></a>Automação da Interface do Usuário e Escala da Tela
+
 > [!NOTE]
 > Esta documentação destina-se a desenvolvedores do .NET Framework que querem usar as classes da [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] gerenciadas definidas no namespace <xref:System.Windows.Automation>. Para obter as informações mais recentes sobre a [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], consulte [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32) (API de Automação do Windows: Automação da Interface do Usuário).  
   
 A partir do Windows Vista, o Windows permite que os usuários alterem a configuração de pontos por polegada (DPI) para que a maioria dos elementos da interface do usuário na tela pareçam maiores. Embora esse recurso tenha sido muito disponível no Windows, em versões anteriores, o dimensionamento precisava ser implementado por aplicativos. A partir do Windows Vista, o Gerenciador de Janelas da Área de Trabalho executa o dimensionamento padrão para todos os aplicativos que não manipulam seu próprio dimensionamento. Os aplicativos cliente de automação da interface do usuário devem levar esse recurso em conta.  
   
 <a name="Scaling_in_Windows_Vista"></a>
+
 ## <a name="scaling-in-windows-vista"></a>Dimensionamento no Windows Vista  
+
  A configuração padrão de DPI é 96, o que significa que 96 pixels ocupam uma largura ou altura de uma polegada de conceito. A medida exata de uma "polegada" depende do tamanho e da resolução física do monitor. Por exemplo, em um monitor de 12 polegadas de largura, com uma resolução horizontal de 1280 pixels, uma linha horizontal de 96 pixels se estende cerca de 9/10 de uma polegada.  
   
  Alterar a configuração de DPI não é o mesmo que alterar a resolução da tela. Com o ajuste de DPI, o número de pixels físicos na tela permanece o mesmo. No entanto, o dimensionamento é aplicado ao tamanho e ao local dos [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] elementos. Esse dimensionamento pode ser executado automaticamente pelo Gerenciador de Janelas da Área de Trabalho (DWM) para a área de trabalho e para aplicativos que não pedem explicitamente que não sejam dimensionados.  
@@ -42,7 +45,9 @@ A partir do Windows Vista, o Windows permite que os usuários alterem a configur
  As coordenadas lógicas são importantes, pois tornam o comportamento do sistema operacional e dos aplicativos consistentes, independentemente da configuração de DPI. Por exemplo, <xref:System.Windows.Forms.Cursor.Position%2A?displayProperty=nameWithType> normalmente retorna as coordenadas lógicas. Se você mover o cursor sobre um elemento em uma caixa de diálogo, as mesmas coordenadas serão retornadas independentemente da configuração de DPI. Se você desenhar um controle em (100, 100), ele será desenhado para essas coordenadas lógicas e ocupará a mesma posição relativa em qualquer configuração de DPI.  
   
 <a name="Scaling_in_UI_Automation_Clients"></a>
+
 ## <a name="scaling-in-ui-automation-clients"></a>Dimensionamento em clientes de automação da interface do usuário  
+
  A [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] API não usa coordenadas lógicas. Os métodos e as propriedades a seguir retornam coordenadas físicas ou as levam como parâmetros.  
   
 - <xref:System.Windows.Automation.AutomationElement.GetClickablePoint%2A>  
@@ -76,6 +81,6 @@ A partir do Windows Vista, o Windows permite que os usuários alterem a configur
   
  Se seu aplicativo executa comunicação direta entre processos com aplicativos que não reconhecem dpi, você pode ter convertido entre coordenadas lógicas e físicas usando as funções do Win32 `PhysicalToLogicalPoint` e o `LogicalToPhysicalPoint` .  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Exemplo de realçador](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/Highlighter)

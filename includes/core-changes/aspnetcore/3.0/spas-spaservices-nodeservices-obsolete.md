@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: ac5a3c4f3aefbb59418ad92b2d795f36916f877f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "72394117"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96032313"
 ---
 ### <a name="spas-spaservices-and-nodeservices-marked-obsolete"></a>SPAs: SpaServices e Nodeservices marcados como obsoletos
 
@@ -25,11 +25,11 @@ Os pacotes anteriores e os módulos NPM serão removidos posteriormente no .NET 
 
 #### <a name="version-introduced"></a>Versão introduzida
 
-3,0
+3.0
 
 #### <a name="old-behavior"></a>Comportamento antigo
 
-Os pacotes preteridos e os módulos NPM foram destinados a integrar ASP.NET Core com várias estruturas de SPA (aplicativo de página única). Tais estruturas incluem angular, reagir e reagir com Redux.
+Os pacotes preteridos e os módulos NPM foram destinados a integrar ASP.NET Core com várias estruturas de SPA (Single-Page app). Tais estruturas incluem angular, reagir e reagir com Redux.
 
 #### <a name="new-behavior"></a>Novo comportamento
 
@@ -37,7 +37,7 @@ Existe um novo mecanismo de integração no pacote NuGet [Microsoft. AspNetCore.
 
 #### <a name="reason-for-change"></a>Motivo da alteração
 
-O ASP.NET Core dá suporte à integração com várias estruturas de SPA (aplicativo de página única), incluindo angular, reagir e reagir com Redux. Inicialmente, a integração com essas estruturas foi realizada com componentes específicos do ASP.NET Core que manipulavam cenários como o pré-processamento do lado do servidor e a integração com o webpack. À medida que o tempo passou, os padrões do setor mudaram. Cada uma das estruturas de SPA lançou suas próprias interfaces de linha de comando padrão. Por exemplo, CLI angular e Create-reajam-app.
+O ASP.NET Core dá suporte à integração com várias estruturas de SPA (Single-Page app), incluindo angular, reagir e reagir com Redux. Inicialmente, a integração com essas estruturas foi realizada com componentes específicos do ASP.NET Core que manipulavam cenários como o pré-processamento do lado do servidor e a integração com o webpack. À medida que o tempo passou, os padrões do setor mudaram. Cada uma das estruturas de SPA lançou suas próprias interfaces de linha de comando padrão. Por exemplo, CLI angular e Create-reajam-app.
 
 Quando ASP.NET Core 2,1 foi lançado em maio de 2018, a equipe respondeu à alteração nos padrões. Foi fornecida uma maneira mais nova e mais simples de integrar com o próprio cadeias das estruturas do SPA. O novo mecanismo de integração existe no pacote `Microsoft.AspNetCore.SpaServices.Extensions` e permanece a base dos modelos de projeto angulares e reajam desde o ASP.NET Core 2,1.
 

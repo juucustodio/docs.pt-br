@@ -1,23 +1,25 @@
 ---
+description: 'Saiba mais sobre: vários pontos de extremidade'
 title: Vários pontos de extremidade
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Multiple EndPoints
 ms.assetid: 8f0c2e1f-9aee-41c2-8301-c72b7f664412
-ms.openlocfilehash: 5f2915f4f0170f85c27c6c809575d1c56d40774b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: f11110cdc53c6e9a8abc876f0304b144a2d82964
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84602473"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752191"
 ---
 # <a name="multiple-endpoints"></a>Vários pontos de extremidade
+
 O exemplo de vários pontos de extremidade demonstra como configurar vários pontos de extremidade em um serviço e como comunicar-se com cada um dos clientes. Este exemplo é baseado na [introdução](getting-started-sample.md). A configuração de serviço foi modificada para definir dois pontos de extremidade que dão suporte ao `ICalculator` contrato, mas cada um em um endereço diferente usando uma associação diferente. A configuração do cliente e o código foram modificados para se comunicar com os dois pontos de extremidade de serviço.  
   
 > [!NOTE]
 > O procedimento de instalação e as instruções de Build para este exemplo estão localizados no final deste tópico.  
   
- O arquivo Web. config do serviço foi modificado para definir dois pontos de extremidade, cada um com suporte para o mesmo `ICalculator` contrato, mas em endereços diferentes usando associações diferentes. O primeiro ponto de extremidade é definido no endereço base usando uma `basicHttpBinding` associação, que não tem segurança habilitada. O segundo ponto de extremidade é definido em {BaseAddress}/Secure usando uma `wsHttpBinding` associação, que é segura por padrão, usando o WS-Security com a autenticação do Windows.  
+ O arquivo de Web.config de serviço foi modificado para definir dois pontos de extremidade, cada um com suporte para o mesmo `ICalculator` contrato, mas em endereços diferentes usando associações diferentes. O primeiro ponto de extremidade é definido no endereço base usando uma `basicHttpBinding` associação, que não tem segurança habilitada. O segundo ponto de extremidade é definido em {BaseAddress}/Secure usando uma `wsHttpBinding` associação, que é segura por padrão, usando WS-Security com a autenticação do Windows.  
   
 ```xml  
 <service

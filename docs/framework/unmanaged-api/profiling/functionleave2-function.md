@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função FunctionLeave2'
 title: Função FunctionLeave2
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 8cdac941-8b94-4497-b874-4e571785f3fe
 topic_type:
 - apiref
-ms.openlocfilehash: a2a3d58e0631fceab96c32f9d86fef25973fed84
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 475def9af448182003ef36782a84d501a9f2661d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500657"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99687539"
 ---
 # <a name="functionleave2-function"></a>Função FunctionLeave2
+
 Notifica o criador de perfil de que uma função está prestes a retornar ao chamador e fornece informações sobre o quadro de pilha e o valor de retorno da função.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -58,6 +60,7 @@ void __stdcall FunctionLeave2 (
   Para acessar informações de valor de retorno, o `COR_PRF_ENABLE_FUNCTION_RETVAL` sinalizador deve ser definido. O criador de perfil pode usar o método [ICorProfilerInfo:: SetEventMask](icorprofilerinfo-seteventmask-method.md) para definir os sinalizadores de evento.
 
 ## <a name="remarks"></a>Comentários  
+
  Os valores dos `func` parâmetros e `retvalRange` não são válidos após a `FunctionLeave2` função retornar, pois os valores podem ser alterados ou destruídos.  
   
  A `FunctionLeave2` função é um retorno de chamada; você deve implementá-la. A implementação deve usar o `__declspec` `naked` atributo de classe de armazenamento ().  
@@ -73,6 +76,7 @@ void __stdcall FunctionLeave2 (
  Além disso, a `FunctionLeave2` função não deve chamar um código gerenciado ou, de qualquer forma, causar uma alocação de memória gerenciada.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl  
@@ -81,7 +85,7 @@ void __stdcall FunctionLeave2 (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Função FunctionEnter2](functionenter2-function.md)
 - [Função FunctionTailcall2](functiontailcall2-function.md)

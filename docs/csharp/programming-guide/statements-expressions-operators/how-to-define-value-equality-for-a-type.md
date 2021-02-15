@@ -1,6 +1,6 @@
 ---
 title: Como definir a igualdade de valor para um guia de programação de tipo C#
-description: Saiba como definir a igualdade de valor para um tipo. Consulte exemplos de código e exiba recursos adicionais disponíveis.
+description: Saiba como definir a igualdade de valor para um tipo. Confira exemplos de código e exiba recursos adicionais disponíveis.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - overriding Equals method [C#]
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - value equality [C#]
 - equivalence [C#]
 ms.assetid: 4084581e-b931-498b-9534-cf7ef5b68690
-ms.openlocfilehash: cf4449618c2b57f21855354f2250d41a403b4d57
-ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
+ms.openlocfilehash: 9523ba99f877fde7207042ecb8d28548168a68cb
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87381639"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92162720"
 ---
 # <a name="how-to-define-value-equality-for-a-type-c-programming-guide"></a>Como definir a igualdade de valor para um tipo (guia de programação C#)
 
@@ -32,9 +32,9 @@ Em ambos os casos, e em classes e estruturas, sua implementação deve seguir as
   
 5. Qualquer valor não nulo não é igual a NULL. No entanto, o CLR verifica se há NULL em todas as chamadas de método e gera um `NullReferenceException` se a `this` referência fosse nula. Portanto, `x.Equals(y)` o gera uma exceção quando `x` é NULL. Isso interrompe as regras 1 ou 2, dependendo do argumento para `Equals` .
 
- Qualquer struct que você define já tem uma implementação padrão de igualdade de valor que ele herda da substituição <xref:System.ValueType?displayProperty=nameWithType> do método <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>. Essa implementação usa a reflexão para examinar todos os campos e propriedades no tipo. Embora essa implementação produza resultados corretos, ela é relativamente lenta em comparação com uma implementação personalizada escrita especificamente para o tipo.  
+Qualquer struct que você define já tem uma implementação padrão de igualdade de valor que ele herda da substituição <xref:System.ValueType?displayProperty=nameWithType> do método <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>. Essa implementação usa a reflexão para examinar todos os campos e propriedades no tipo. Embora essa implementação produza resultados corretos, ela é relativamente lenta em comparação com uma implementação personalizada escrita especificamente para o tipo.  
   
- Os detalhes de implementação para a igualdade de valor são diferentes para classes e struct. No entanto, as classes e structs exigem as mesmas etapas básicas para implementar a igualdade:  
+Os detalhes de implementação para a igualdade de valor são diferentes para classes e struct. No entanto, as classes e structs exigem as mesmas etapas básicas para implementar a igualdade:  
   
 1. Substitua o método [virtual](../../language-reference/keywords/virtual.md) <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType>. Na maioria dos casos, sua implementação de `bool Equals( object obj )` deve apenas chamar o método `Equals` específico do tipo que é a implementação da interface <xref:System.IEquatable%601?displayProperty=nameWithType>. (Consulte a etapa 2.)  
   
@@ -45,29 +45,30 @@ Em ambos os casos, e em classes e estruturas, sua implementação deve seguir as
 4. Substitua <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> para que os dois objetos que têm a igualdade de valor produzam o mesmo código hash.  
   
 5. Opcional: para dar suporte a definições para "maior que" ou "menor que", implemente a <xref:System.IComparable%601> interface para seu tipo e também sobrecarregar os [<=](../../language-reference/operators/comparison-operators.md#less-than-or-equal-operator-) [>=](../../language-reference/operators/comparison-operators.md#greater-than-or-equal-operator-) operadores e.  
-  
- O primeiro exemplo a seguir mostra uma implementação da classe. O segundo exemplo mostra uma implementação de struct.  
 
-## <a name="example"></a>Exemplo
+> [!NOTE]
+> A partir do C# 9,0, você pode usar registros para obter semântica de igualdade de valor sem qualquer código clichê desnecessário.
 
- O exemplo a seguir mostra como implementar a igualdade de valor em uma classe (tipo de referência).  
-  
- [!code-csharp[csProgGuideStatements#19](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#19)]  
-  
- Em classes (tipo de referência), a implementação padrão de ambos os métodos <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> executa uma comparação de igualdade de referência, não uma verificação de igualdade de valor. Quando um implementador substitui o método virtual, o objetivo é fornecer semântica de igualdade de valor.  
-  
- Os operadores `==` e `!=` podem ser usados com classes, mesmo se a classe não sobrecarregá-los. No entanto, o comportamento padrão é executar uma verificação de igualdade de referência. Em uma classe, se você sobrecarregar o método `Equals`, você deverá sobrecarregar os operadores `==` e `!=`, mas isso não é necessário.  
+## <a name="class-example"></a>Exemplo de classe
 
-## <a name="example"></a>Exemplo
+O exemplo a seguir mostra como implementar a igualdade de valor em uma classe (tipo de referência).
 
- O exemplo a seguir mostra como implementar a igualdade de valor em um struct (tipo de valor):  
+[!code-csharp[csProgGuideStatements#19](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#19)]
+
+Em classes (tipo de referência), a implementação padrão de ambos os métodos <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> executa uma comparação de igualdade de referência, não uma verificação de igualdade de valor. Quando um implementador substitui o método virtual, o objetivo é fornecer semântica de igualdade de valor.
+
+Os operadores `==` e `!=` podem ser usados com classes, mesmo se a classe não sobrecarregá-los. No entanto, o comportamento padrão é executar uma verificação de igualdade de referência. Em uma classe, se você sobrecarregar o método `Equals`, você deverá sobrecarregar os operadores `==` e `!=`, mas isso não é necessário.
+
+## <a name="struct-example"></a>Exemplo de struct
+
+O exemplo a seguir mostra como implementar a igualdade de valor em um struct (tipo de valor):
+
+[!code-csharp[csProgGuideStatements#20](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#20)]
   
- [!code-csharp[csProgGuideStatements#20](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#20)]  
+Para estruturas, a implementação padrão de <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> (que é a versão substituída em <xref:System.ValueType?displayProperty=nameWithType>) executa uma verificação de igualdade de valor por meio de reflexão para comparar os valores de cada campo no tipo. Quando um implementador substitui o método `Equals` virtual em uma estrutura, a finalidade é fornecer uma maneira mais eficiente de executar a verificação de igualdade de valor e, opcionalmente, basear a comparação em algum subconjunto dos campos ou propriedades do struct.
   
- Para estruturas, a implementação padrão de <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> (que é a versão substituída em <xref:System.ValueType?displayProperty=nameWithType>) executa uma verificação de igualdade de valor por meio de reflexão para comparar os valores de cada campo no tipo. Quando um implementador substitui o método `Equals` virtual em uma estrutura, a finalidade é fornecer uma maneira mais eficiente de executar a verificação de igualdade de valor e, opcionalmente, basear a comparação em algum subconjunto dos campos ou propriedades do struct.  
-  
- Os [==](../../language-reference/operators/equality-operators.md#equality-operator-) operadores e [! =](../../language-reference/operators/equality-operators.md#inequality-operator-) não podem operar em um struct, a menos que a estrutura os sobrecarregue explicitamente.  
-  
+Os [==](../../language-reference/operators/equality-operators.md#equality-operator-) operadores e [! =](../../language-reference/operators/equality-operators.md#inequality-operator-) não podem operar em um struct, a menos que a estrutura os sobrecarregue explicitamente.
+
 ## <a name="see-also"></a>Veja também
 
 - [Comparações de igualdade](equality-comparisons.md)

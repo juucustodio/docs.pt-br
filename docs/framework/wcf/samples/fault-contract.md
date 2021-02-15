@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: contrato de falha'
 title: Contrato de falha
 ms.date: 03/30/2017
 ms.assetid: b31b140e-dc3b-408b-b3c7-10b6fe769725
-ms.openlocfilehash: 5081284075ffa31c947a0e63f915a721ea5983c0
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: b7f6a30ff076eb56ebb0894c440fbc7937761410
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600497"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752347"
 ---
 # <a name="fault-contract"></a>Contrato de falha
+
 O exemplo de contrato de falha demonstra como comunicar informações de erro de um serviço para um cliente. O exemplo é baseado na [introdução](getting-started-sample.md), com algum código adicional adicionado ao serviço para converter uma exceção interna em uma falha. O cliente tenta executar a divisão por zero para forçar uma condição de erro no serviço.  
   
 > [!NOTE]
@@ -98,7 +100,7 @@ catch (FaultException<MathFault> e)
 }  
 ```  
   
- Por padrão, os detalhes de exceções inesperadas não são enviados ao cliente para evitar que os detalhes da implementação do serviço escapem o limite de segurança do serviço. `FaultContract`fornece uma maneira de descrever as falhas em um contrato e marcar determinados tipos de exceções conforme apropriado para a transmissão para o cliente. `FaultException<T>`fornece o mecanismo de tempo de execução para o envio de falhas aos consumidores.  
+ Por padrão, os detalhes de exceções inesperadas não são enviados ao cliente para evitar que os detalhes da implementação do serviço escapem o limite de segurança do serviço. `FaultContract` fornece uma maneira de descrever as falhas em um contrato e marcar determinados tipos de exceções conforme apropriado para a transmissão para o cliente. `FaultException<T>` fornece o mecanismo de tempo de execução para o envio de falhas aos consumidores.  
   
  No entanto, é útil ver os detalhes internos de uma falha de serviço durante a depuração. Para desativar o comportamento seguro descrito anteriormente, você pode indicar que os detalhes de cada exceção sem tratamento no servidor devem ser incluídos na falha que é enviada ao cliente. Isso é feito configurando <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A> para `true` . Você pode defini-lo no código ou na configuração, conforme mostrado no exemplo a seguir.  
   

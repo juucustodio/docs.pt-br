@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICLRStrongName2'
 title: Interface ICLRStrongName2
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 9f098a74-201e-4628-a468-8dee9ab99b4a
 topic_type:
 - apiref
-ms.openlocfilehash: 9715369f4cf1b2a7078be14a2fc597f735ab6fd3
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: 7442bd054af735e9f1b75b05feb8724dfa993f73
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83763157"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781786"
 ---
 # <a name="iclrstrongname2-interface"></a>Interface ICLRStrongName2
+
 Fornece a capacidade de criar nomes fortes usando o grupo SHA-2 de algoritmos de hash seguro (SHA-256, SHA-384 e SHA-512).  
   
 ## <a name="methods"></a>Métodos  
@@ -34,10 +36,11 @@ Fornece a capacidade de criar nomes fortes usando o grupo SHA-2 de algoritmos de
 ## <a name="remarks"></a>Comentários  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MetaHost. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]

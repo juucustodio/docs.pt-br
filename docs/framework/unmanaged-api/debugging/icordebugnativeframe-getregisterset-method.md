@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugNativeFrame:: getregisterset'
 title: Método ICorDebugNativeFrame::GetRegisterSet
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 6f309b5f-5556-4f1e-b1dd-4fe97fc81d01
 topic_type:
 - apiref
-ms.openlocfilehash: e2055098c85c5a2e4619b9b0ddc8d602256bd16b
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 8878c438ad76b1a87429e09b8a4a8bbffb90d00d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83209715"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722406"
 ---
 # <a name="icordebugnativeframegetregisterset-method"></a>Método ICorDebugNativeFrame::GetRegisterSet
+
 Obtém o conjunto de registros para este quadro de pilhas.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,10 +36,12 @@ HRESULT GetRegisterSet (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ppRegisters`  
  fora Um ponteiro para o endereço de um objeto [ICorDebugRegisterSet](icordebugregisterset-interface.md) que representa o conjunto de registros para esse quadro de pilhas.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

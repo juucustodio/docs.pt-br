@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interação de política de cache — idade máxima e máxima desatualização'
 title: Interação da política de cache – idade máxima e desatualização máxima
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -9,14 +10,15 @@ helpviewer_keywords:
 - staleness of cached resources
 - age of cached resources
 ms.assetid: 7f775925-89a1-4956-ba90-c869c1749a94
-ms.openlocfilehash: e21cfc28407ba67afdce8d72e5e52c12ab359059
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 909a7203d4c9813c90dc0dea9bae7f8a1f7336cf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "71048836"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791654"
 ---
 # <a name="cache-policy-interactionmaximum-age-and-maximum-staleness"></a>Interação da política de cache – idade máxima e desatualização máxima
+
 Para ajudar a garantir que o conteúdo mais atualizado é retornado para o aplicativo cliente, a interação dos requisitos de revalidação do servidor e da política de cache de cliente sempre resulta na política de cache mais conservadora. Todos os exemplos deste tópico ilustram a política de cache para um recurso que é armazenado em cache em 1º de janeiro e expira em 4 de janeiro.  
   
  Nos seguintes exemplos, o valor máximo de desatualização (`maxStale`) é usado em conjunto com uma idade máxima (`maxAge`):  
@@ -35,10 +37,10 @@ Para ajudar a garantir que o conteúdo mais atualizado é retornado para o aplic
   
 - Se a política de cache definir `maxAge` = 1 dia e `maxStale` = 1 dia, o conteúdo será revalidado em 2 de janeiro.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Gerenciamento de cache para aplicativos de rede](cache-management-for-network-applications.md)
-- [Política de Cache](cache-policy.md)
+- [Política de cache](cache-policy.md)
 - [Políticas de cache baseadas na localização](location-based-cache-policies.md)
 - [Políticas de cache baseadas em tempo](time-based-cache-policies.md)
 - [Configurando o cache em aplicativos de rede](configuring-caching-in-network-applications.md)

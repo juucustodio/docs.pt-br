@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: ServiceDebugBehavior'
 title: ServiceDebugBehavior
 ms.date: 03/30/2017
 ms.assetid: a5ec9061-1e95-43fb-b0d9-dbd0a7bc3c44
-ms.openlocfilehash: 2e38eb2c2d42ffc5436562b254a42215ccabbab2
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 3b384c209524267c72a12d96bc845b694144ba19
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61956956"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99715529"
 ---
 # <a name="servicedebugbehavior"></a>ServiceDebugBehavior
+
 ServiceDebugBehavior  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class ServiceDebugBehavior : Behavior  
@@ -26,19 +28,23 @@ class ServiceDebugBehavior : Behavior
 ```  
   
 ## <a name="methods"></a>Métodos  
- A classe ServiceDebugBehavior não define quaisquer métodos.  
+
+ A classe ServiceDebugBehavior não define nenhum método.  
   
 ## <a name="properties"></a>Propriedades  
+
  A classe ServiceDebugBehavior tem as seguintes propriedades:  
   
 ### <a name="httphelppageenabled"></a>HttpHelpPageEnabled  
- Tipo de dados: boolean  
+
+ Tipo de dados: booliano  
   
  Tipo de acesso: Somente leitura  
   
- Controla se o serviço publica seu WSDL no endereço controlado pela `HttpGetUrl` atributo.  
+ Controla se o serviço publica seu WSDL no endereço controlado pelo `HttpGetUrl` atributo.  
   
 ### <a name="httphelppageurl"></a>HttpHelpPageUrl  
+
  Tipo de dados: cadeia de caracteres  
   
  Tipo de acesso: Somente leitura  
@@ -46,13 +52,15 @@ class ServiceDebugBehavior : Behavior
  Define o local no qual o serviço WSDL é publicado para recuperação usando HTTP.  
   
 ### <a name="httpshelppageenabled"></a>HttpsHelpPageEnabled  
- Tipo de dados: boolean  
+
+ Tipo de dados: booliano  
   
  Tipo de acesso: Somente leitura  
   
- Controla se o serviço publica seu WSDL via HTTPS no endereço controlado pela `HttpsGetUrl` atributo.  
+ Controla se o serviço publica seu WSDL sobre HTTPS no endereço controlado pelo `HttpsGetUrl` atributo.  
   
 ### <a name="httpshelppageurl"></a>HttpsHelpPageUrl  
+
  Tipo de dados: cadeia de caracteres  
   
  Tipo de acesso: Somente leitura  
@@ -60,18 +68,19 @@ class ServiceDebugBehavior : Behavior
  Define o local no qual o serviço WSDL é publicado para recuperação usando HTTPS.  
   
 ### <a name="includeexceptiondetailinfaults"></a>IncludeExceptionDetailInFaults  
- Tipo de dados: boolean  
+
+ Tipo de dados: booliano  
   
  Tipo de acesso: Somente leitura  
   
- Especifica se deve incluir informações de exceção gerenciada nos detalhes das falhas SOAP retornadas aos clientes para fins de depuração.  
+ Especifica se as informações de exceção gerenciadas devem ser incluídas nos detalhes de falhas de SOAP retornadas aos clientes para fins de depuração.  
   
 ## <a name="requirements"></a>Requisitos  
   
-|MOF|Declarado em Servicemodel.mof.|  
+|MOF|Declarado em ServiceModel. mof.|  
 |---------|-----------------------------------|  
-|Namespace|Definido no root\ServiceModel|  
+|Namespace|Definido em root\ServiceModel|  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.ServiceModel.Description.ServiceDebugBehavior>

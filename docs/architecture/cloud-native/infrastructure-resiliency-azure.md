@@ -3,12 +3,12 @@ title: Resiliência da plataforma Azure
 description: Arquitetando aplicativos .NET nativos da nuvem para o Azure | Resiliência de infraestrutura de nuvem com o Azure
 author: robvet
 ms.date: 05/13/2020
-ms.openlocfilehash: 752f1320d9dfa18e52b078763d221a787da15e8e
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 88634bc60df15cc93b1769a85879795ae383757a
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83613974"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91163759"
 ---
 # <a name="azure-platform-resiliency"></a>Resiliência da plataforma Azure
 
@@ -39,7 +39,7 @@ Dissemos que a resiliência permite que seu aplicativo reaja a uma falha e ainda
 
 As falhas variam no escopo do impacto. Uma falha de hardware, como um disco com falha, pode afetar um único nó em um cluster. Um comutador de rede com falha pode afetar um rack de servidor inteiro. Falhas menos comuns, como perda de energia, podem interromper um datacenter inteiro. Raramente, uma região inteira fica indisponível.
 
-A [redundância](https://docs.microsoft.com/azure/architecture/guide/design-principles/redundancy) é uma maneira de fornecer resiliência do aplicativo. O nível exato de redundância necessário depende de seus requisitos de negócios e afetará o custo e a complexidade do seu sistema. Por exemplo, uma implantação de várias regiões é mais cara e mais complexa para ser gerenciada do que uma implantação de região única. Você precisará de procedimentos operacionais para gerenciar failover e failback. O custo adicional e a complexidade podem ser justificados para alguns cenários de negócios, mas não para outros.
+A [redundância](/azure/architecture/guide/design-principles/redundancy) é uma maneira de fornecer resiliência do aplicativo. O nível exato de redundância necessário depende de seus requisitos de negócios e afetará o custo e a complexidade do seu sistema. Por exemplo, uma implantação de várias regiões é mais cara e mais complexa para ser gerenciada do que uma implantação de região única. Você precisará de procedimentos operacionais para gerenciar failover e failback. O custo adicional e a complexidade podem ser justificados para alguns cenários de negócios, mas não para outros.
 
 Para arquitetar a redundância, você precisa identificar os caminhos críticos em seu aplicativo e, em seguida, determinar se há redundância em cada ponto do caminho? Se um subsistema falhar, o aplicativo fará failover para outra coisa? Por fim, você precisa de uma compreensão clara desses recursos incorporados à plataforma de nuvem do Azure que você pode aproveitar para atender aos seus requisitos de redundância. Aqui estão as recomendações para a arquitetura da redundância:
 
@@ -49,13 +49,13 @@ Para arquitetar a redundância, você precisa identificar os caminhos críticos 
 
 - *Planejar a implantação em multiregião.* Se você implantar seu aplicativo em uma única região e essa região ficar indisponível, seu aplicativo também ficará indisponível. Isso pode ser inaceitável nos termos dos contratos de nível de serviço de seu aplicativo. Em vez disso, considere implantar seu aplicativo e seus serviços em várias regiões. Por exemplo, um cluster AKS (serviço de kubernetes do Azure) é implantado em uma única região. Para proteger seu sistema de uma falha regional, você pode implantar seu aplicativo em vários clusters AKS em regiões diferentes e usar o recurso de [regiões emparelhadas](https://buildazure.com/2017/01/06/azure-region-pairs-explained/) para coordenar as atualizações da plataforma e priorizar os esforços de recuperação.
 
-- *Habilite [a replicação geográfica](https://docs.microsoft.com/azure/sql-database/sql-database-active-geo-replication).* A replicação geográfica para serviços, como o banco de dados SQL do Azure e o Cosmos DB criará réplicas secundárias de sua data em várias regiões. Embora os dois serviços repliquem automaticamente os dados na mesma região, a replicação geográfica protege você contra uma interrupção regional, permitindo o failover para uma região secundária. Outra prática recomendada para os centros de replicação geográfica em relação ao armazenamento de imagens de contêiner. Para implantar um serviço no AKS, você precisa armazenar e efetuar pull da imagem de um repositório. O registro de contêiner do Azure integra-se com o AKS e pode armazenar imagens de contêiner com segurança. Para melhorar o desempenho e a disponibilidade, considere a replicação geográfica de suas imagens para um registro em cada região em que você tenha um cluster AKS. Cada cluster AKS, em seguida, efetua pull das imagens de contêiner do registro de contêiner local em sua região, conforme mostrado na Figura 6-4:
+- *Habilite [a replicação geográfica](/azure/sql-database/sql-database-active-geo-replication).* A replicação geográfica para serviços, como o banco de dados SQL do Azure e o Cosmos DB criará réplicas secundárias de sua data em várias regiões. Embora os dois serviços repliquem automaticamente os dados na mesma região, a replicação geográfica protege você contra uma interrupção regional, permitindo o failover para uma região secundária. Outra prática recomendada para os centros de replicação geográfica em relação ao armazenamento de imagens de contêiner. Para implantar um serviço no AKS, você precisa armazenar e efetuar pull da imagem de um repositório. O registro de contêiner do Azure integra-se com o AKS e pode armazenar imagens de contêiner com segurança. Para melhorar o desempenho e a disponibilidade, considere a replicação geográfica de suas imagens para um registro em cada região em que você tenha um cluster AKS. Cada cluster AKS, em seguida, efetua pull das imagens de contêiner do registro de contêiner local em sua região, conforme mostrado na Figura 6-4:
 
 ![Recursos replicados entre regiões](./media/replicated-resources.png)
 
 **Figura 6-4**. Recursos replicados entre regiões
 
-- *Implemente um balanceador de carga de tráfego DNS.* O [Gerenciador de tráfego do Azure](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview) fornece alta disponibilidade para aplicativos críticos pelo balanceamento de carga no nível do DNS. Ele pode rotear o tráfego para diferentes regiões com base na geografia, no tempo de resposta do cluster e até mesmo na integridade do ponto de extremidade do aplicativo. Por exemplo, o Gerenciador de tráfego do Azure pode direcionar os clientes para a instância de aplicativo e cluster AKS mais próxima. Se você tiver vários clusters AKS em regiões diferentes, use o Gerenciador de tráfego para controlar como o tráfego flui para os aplicativos que são executados em cada cluster. A Figura 6-5 mostra esse cenário.
+- *Implemente um balanceador de carga de tráfego DNS.* O [Gerenciador de tráfego do Azure](/azure/traffic-manager/traffic-manager-overview) fornece alta disponibilidade para aplicativos críticos pelo balanceamento de carga no nível do DNS. Ele pode rotear o tráfego para diferentes regiões com base na geografia, no tempo de resposta do cluster e até mesmo na integridade do ponto de extremidade do aplicativo. Por exemplo, o Gerenciador de tráfego do Azure pode direcionar os clientes para a instância de aplicativo e cluster AKS mais próxima. Se você tiver vários clusters AKS em regiões diferentes, use o Gerenciador de tráfego para controlar como o tráfego flui para os aplicativos que são executados em cada cluster. A Figura 6-5 mostra esse cenário.
 
 ![AKS e Gerenciador de tráfego do Azure](./media/aks-traffic-manager.png)
 
@@ -79,7 +79,7 @@ A nuvem prospera no dimensionamento. A capacidade de aumentar/diminuir os recurs
 
 - *Evite a afinidade.* Uma prática recomendada é garantir que um nó não exija afinidade local, geralmente chamado de *sessão adesiva*. Uma solicitação deve ser capaz de rotear para qualquer instância. Se você precisar manter o estado, ele deve ser salvo em um cache distribuído, como o [cache Redis do Azure](https://azure.microsoft.com/services/cache/).
 
-- *Aproveite os recursos de dimensionamento automático da plataforma.* Use recursos internos de dimensionamento automático sempre que possível, em vez de mecanismos personalizados ou de terceiros. Sempre que possível, use regras de dimensionamento agendadas para garantir que os recursos estejam disponíveis sem um atraso de inicialização, mas adicione o dimensionamento automático reativo às regras conforme apropriado, para lidar com alterações inesperadas na demanda. Para obter mais informações, consulte [diretrizes de dimensionamento](https://docs.microsoft.com/azure/architecture/best-practices/auto-scaling)automático.
+- *Aproveite os recursos de dimensionamento automático da plataforma.* Use recursos internos de dimensionamento automático sempre que possível, em vez de mecanismos personalizados ou de terceiros. Sempre que possível, use regras de dimensionamento agendadas para garantir que os recursos estejam disponíveis sem um atraso de inicialização, mas adicione o dimensionamento automático reativo às regras conforme apropriado, para lidar com alterações inesperadas na demanda. Para obter mais informações, consulte [diretrizes de dimensionamento](/azure/architecture/best-practices/auto-scaling)automático.
 
 - *Expanda agressivamente.* Uma prática final seria escalar horizontalmente de forma agressiva para que você possa atender rapidamente a picos imediatos de tráfego sem perder negócios. E, em seguida, reduzir (ou seja, remover instâncias desnecessárias) de forma conservadora para manter o sistema estável. Uma maneira simples de implementar isso é definir o período de resfriamento, que é o tempo de espera entre as operações de dimensionamento, cinco minutos para adicionar recursos e até 15 minutos para remover instâncias.
 
@@ -93,7 +93,7 @@ Incentivamos a prática recomendada de implementar operações de repetição pr
 
 - *Barramento de serviço do Azure.* O cliente do barramento de serviço expõe uma [classe RetryPolicy](xref:Microsoft.ServiceBus.RetryPolicy) que pode ser configurada com um intervalo de retirada, contagem de repetição e <xref:Microsoft.ServiceBus.RetryExponential.TerminationTimeBuffer%2A> , que especifica o tempo máximo que uma operação pode tomar. A política padrão é de nove tentativas de repetição máximas com um período de retirada de 30 segundos entre as tentativas.
 
-- *Banco de dados SQL do Azure.* O suporte de repetição é fornecido ao usar a biblioteca de [Entity Framework Core](https://docs.microsoft.com/ef/core/miscellaneous/connection-resiliency) .
+- *Banco de Dados SQL do Azure.* O suporte de repetição é fornecido ao usar a biblioteca de [Entity Framework Core](/ef/core/miscellaneous/connection-resiliency) .
 
 - *Armazenamento do Azure.* A biblioteca de cliente de armazenamento dá suporte a operações de repetição. As estratégias variam em tabelas de armazenamento do Azure, BLOBs e filas. Assim, as repetições alternativas alternam entre locais de serviços de armazenamento primários e secundários quando o recurso de redundância geográfica está habilitado.
 

@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: Stream'
 title: Fluxo
 ms.date: 03/30/2017
 ms.assetid: 58a3db81-20ab-4627-bf31-39d30b70b4fe
-ms.openlocfilehash: a482c27dfd0970b319a605a480b5f54689e42d48
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: ea0759f9eca2a974f77e8a6b059160b9a45bd94e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84589832"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668832"
 ---
 # <a name="stream"></a>Fluxo
+
 O exemplo de fluxo demonstra o uso da comunicação do modo de transferência de streaming. O serviço expõe várias operações que enviam e recebem fluxos. Este exemplo é auto-hospedado. O cliente e o serviço são programas de console.  
   
 > [!NOTE]
@@ -18,6 +20,7 @@ O exemplo de fluxo demonstra o uso da comunicação do modo de transferência de
  O Windows Communication Foundation (WCF) pode se comunicar em dois modos de transferência — em buffer ou streaming. No modo de transferência em buffer padrão, uma mensagem deve ser totalmente entregue antes que um receptor possa lê-la. No modo de transferência de streaming, o receptor pode começar a processar a mensagem antes de ser totalmente entregue. O modo de streaming é útil quando as informações que são passadas são demoradas e podem ser processadas em série. O modo de streaming também é útil quando a mensagem é muito grande para ser totalmente armazenada em buffer.  
   
 ## <a name="streaming-and-service-contracts"></a>Contratos de streaming e serviço  
+
  O streaming é algo a ser considerado ao criar um contrato de serviço. Se uma operação receber ou retornar grandes quantidades de dados, considere transmitir esses dados para evitar uma alta utilização de memória devido ao buffer de mensagens de entrada ou saída. Para transmitir dados, o parâmetro que mantém esses dados deve ser o único parâmetro na mensagem. Por exemplo, se a mensagem de entrada for aquela a ser transmitida, a operação deverá ter exatamente um parâmetro de entrada. Da mesma forma, se a mensagem de saída for para ser transmitida, a operação deverá ter exatamente um parâmetro de saída ou um valor de retorno. Em ambos os casos, o parâmetro ou o tipo de valor de retorno deve ser `Stream` , `Message` ou `IXmlSerializable` . Este é o contrato de serviço usado neste exemplo de streaming.  
   
 ```csharp
@@ -36,9 +39,10 @@ public interface IStreamingSample
 }  
 ```  
   
- A `GetStream` operação recebe alguns dados de entrada como uma cadeia de caracteres, que é armazenada em buffer e retorna um `Stream` , que é transmitido. Por outro lado, `UploadStream` o leva em um `Stream` (transmitido) e retorna um `bool` (em buffer). `EchoStream`Pega e retorna `Stream` e é um exemplo de uma operação cujas mensagens de entrada e saída são transmitidas. Por fim, `GetReversedStream` o não usa entradas e retorna um `Stream` (transmitido).  
+ A `GetStream` operação recebe alguns dados de entrada como uma cadeia de caracteres, que é armazenada em buffer e retorna um `Stream` , que é transmitido. Por outro lado, `UploadStream` o leva em um `Stream` (transmitido) e retorna um `bool` (em buffer). `EchoStream` Pega e retorna `Stream` e é um exemplo de uma operação cujas mensagens de entrada e saída são transmitidas. Por fim, `GetReversedStream` o não usa entradas e retorna um `Stream` (transmitido).  
   
 ## <a name="enabling-streamed-transfers"></a>Habilitando transferências em fluxo  
+
  Definir os contratos de operação conforme descrito anteriormente fornece streaming no nível de modelo de programação. Se você parar lá, o transporte ainda armazenará em buffer todo o conteúdo da mensagem. Para habilitar o streaming de transporte, selecione um modo de transferência no elemento de associação do transporte. O elemento Binding tem uma `TransferMode` propriedade que pode ser definida como `Buffered` , `Streamed` , `StreamedRequest` ou `StreamedResponse` . Definir o modo de transferência para `Streamed` habilita a comunicação de streaming em ambas as direções. Definir o modo de transferência como `StreamedRequest` ou `StreamedResponse` habilita a comunicação de streaming somente na solicitação ou resposta, respectivamente.  
   
  O `basicHttpBinding` expõe a `TransferMode` Propriedade na associação como faz `NetTcpBinding` e `NetNamedPipeBinding` . Para outros transportes, você deve criar uma associação personalizada para definir o modo de transferência.  
@@ -64,9 +68,10 @@ public interface IStreamingSample
  Além de definir `transferMode` como `Streamed` , o código de configuração anterior define o `maxReceivedMessageSize` para 64MB. Como um mecanismo de defesa, `maxReceivedMessageSize` o coloca um limite no tamanho máximo permitido de mensagens em recebimento. O padrão `maxReceivedMessageSize` é 64 KB, que geralmente é muito baixo para cenários de streaming.  
   
 ## <a name="processing-data-as-it-is-streamed"></a>Processando dados conforme são transmitidos  
+
  As operações `GetStream` `UploadStream` e `EchoStream` todas lidam com o envio de dados diretamente de um arquivo ou o salvamento de dados recebidos diretamente em um arquivo. No entanto, em alguns casos, há um requisito para enviar ou receber grandes quantidades de dados e executar algum processamento em partes dos dados à medida que eles são enviados ou recebidos. Uma maneira de abordar esses cenários é gravar um fluxo personalizado (uma classe derivada de <xref:System.IO.Stream> ) que processa os dados conforme eles são lidos ou gravados. A `GetReversedStream` operação e a `ReverseStream` classe são um exemplo disso.  
   
- `GetReversedStream`Cria e retorna uma nova instância do `ReverseStream` . O processamento real ocorre quando o sistema lê a partir desse `ReverseStream` objeto. A `ReverseStream.Read` implementação lê um bloco de bytes do arquivo subjacente, reverte-os e retorna os bytes invertidos. Isso não reverte todo o conteúdo do arquivo; Ele reverte uma parte de bytes de cada vez. Este é um exemplo para mostrar como você pode executar o processamento de fluxo, pois o conteúdo está sendo lido ou gravado de e para o fluxo.  
+ `GetReversedStream` Cria e retorna uma nova instância do `ReverseStream` . O processamento real ocorre quando o sistema lê a partir desse `ReverseStream` objeto. A `ReverseStream.Read` implementação lê um bloco de bytes do arquivo subjacente, reverte-os e retorna os bytes invertidos. Isso não reverte todo o conteúdo do arquivo; Ele reverte uma parte de bytes de cada vez. Este é um exemplo para mostrar como você pode executar o processamento de fluxo, pois o conteúdo está sendo lido ou gravado de e para o fluxo.  
   
 ```csharp
 class ReverseStream : Stream  
@@ -113,6 +118,7 @@ class ReverseStream : Stream
 ```  
   
 ## <a name="running-the-sample"></a>Executando o exemplo  
+
  Para executar o exemplo, primeiro crie o serviço e o cliente seguindo as instruções no final deste documento. Em seguida, inicie o serviço e o cliente em duas janelas de console diferentes. Quando o cliente for iniciado, ele aguardará que você pressione ENTER quando o serviço estiver pronto. Em seguida, o cliente chama os métodos `GetStream()` `UploadStream()` e `GetReversedStream()` primeiro por http e, em seguida, sobre TCP. Aqui está um exemplo de saída do serviço seguido por exemplo de saída do cliente:  
   
  Saída do serviço:  
@@ -174,7 +180,7 @@ Press <ENTER> to terminate client.
 3. Para executar o exemplo em uma configuração de computador único ou cruzado, siga as instruções em [executando os exemplos de Windows Communication Foundation](running-the-samples.md).  
   
 > [!NOTE]
-> Se você usar svcutil. exe para regenerar a configuração para este exemplo, certifique-se de modificar o nome do ponto de extremidade na configuração do cliente para corresponder ao código do cliente.  
+> Se você usar Svcutil.exe para regenerar a configuração para este exemplo, certifique-se de modificar o nome do ponto de extremidade na configuração do cliente para corresponder ao código do cliente.  
   
 > [!IMPORTANT]
 > Os exemplos podem já estar instalados no seu computador. Verifique o seguinte diretório (padrão) antes de continuar.  

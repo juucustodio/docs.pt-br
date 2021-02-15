@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugValue:: GetAddress'
 title: Método ICorDebugValue::GetAddress
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: a247c792-45e1-4538-9e1f-b46acca4a463
 topic_type:
 - apiref
-ms.openlocfilehash: 467ba53f90081f0c3499fb22acab96b5e380a3f4
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: c922388fbab820e50edffc140be94a2c0920099d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83395839"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99690425"
 ---
 # <a name="icordebugvaluegetaddress-method"></a>Método ICorDebugValue::GetAddress
+
 Obtém o endereço desse objeto "ICorDebugValue", que está no processo de ser depurado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,13 +36,16 @@ HRESULT GetAddress (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pAddress`  
  fora Ponteiro para um `CORDB_ADDRESS` objeto que especifica o endereço desse objeto de valor.  
   
 ## <a name="remarks"></a>Comentários  
+
  Se o valor não estiver disponível, será retornado 0 (zero). Isso pode acontecer se o valor for pelo menos parcialmente em registros ou armazenado em um identificador de coletor de lixo ( `GCHandle` ).  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

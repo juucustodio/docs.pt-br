@@ -1,28 +1,32 @@
 ---
+description: 'Saiba mais sobre: 1131-InvokeMethodUseAsyncPattern'
 title: 1131 - InvokeMethodUseAsyncPattern
 ms.date: 03/30/2017
 ms.assetid: eca50fa7-5276-4759-ad1c-e490b9bd1f82
-ms.openlocfilehash: 150973935d12455aa671043a619fbd6fd7e77425
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 59d8e5e1fe7c5b038df6fce3211fd01977abc4f9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62009949"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99667311"
 ---
 # <a name="1131---invokemethoduseasyncpattern"></a>1131 - InvokeMethodUseAsyncPattern
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
 |ID|1131|  
 |Palavras-chave|WFRuntime|  
-|Nível|Informações|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
+
  Durante a etapa de CacheMetadata, a atividade de InvokeMethod indica que está usando o padrão de async ao chamar o método.  
   
 ## <a name="message"></a>Mensagem  
+
  InvokeMethod “%1 " - o método utiliza o padrão assíncrono de “%2 " e “%3 ".  
   
 ## <a name="details"></a>Detalhes  

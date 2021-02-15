@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como: usar árvores de expressão para criar consultas dinâmicas (Visual Basic)'
 title: Como usar árvores de expressão para compilar consultas dinâmicas
 ms.date: 07/20/2015
 ms.assetid: 16278787-7532-4b65-98b2-7a412406c4ee
-ms.openlocfilehash: 1f686c37b5d04263ac5ae0dd6883aa8a519ed19e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: bb8abb22749cbf7c15b72632f60a5bd08287378d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410973"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100423089"
 ---
 # <a name="how-to-use-expression-trees-to-build-dynamic-queries-visual-basic"></a>Como: usar árvores de expressão para criar consultas dinâmicas (Visual Basic)
 
@@ -109,7 +110,7 @@ Esse código usa um número fixo de expressões no predicado que é passado para
 
 - Copie o código do exemplo e cole-o no `Main` `Sub` procedimento.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Árvores de expressão (Visual Basic)](index.md)
 - [Como executar árvores de expressão (Visual Basic)](how-to-execute-expression-trees.md)

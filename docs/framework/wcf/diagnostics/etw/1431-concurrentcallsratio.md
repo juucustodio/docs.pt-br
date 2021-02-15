@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 1431-ConcurrentCallsRatio'
 title: 1431 - ConcurrentCallsRatio
 ms.date: 03/30/2017
 ms.assetid: 571dc259-78a7-4e91-9a7e-b83644d20229
-ms.openlocfilehash: fcea26fa8ab6e0c1e1790a82b6ba7ef92fa7c304
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: ee8b9ff7740af1572ec8589e6a3190a5df239533
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61782142"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99645471"
 ---
 # <a name="1431---concurrentcallsratio"></a>1431 - ConcurrentCallsRatio
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,9 +22,11 @@ ms.locfileid: "61782142"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido para fornecer informações de taxa das chamadas simultâneas.  
+
+ Esse evento é emitido para fornecer as informações de taxa de chamadas simultâneas.  
   
 ## <a name="message"></a>Mensagem  
- Taxa de sessões simultâneas: %1 / %2  
+
+ Taxa de sessões simultâneas: %1/%2  
   
 ## <a name="details"></a>Detalhes

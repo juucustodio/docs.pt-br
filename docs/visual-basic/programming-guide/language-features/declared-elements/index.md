@@ -2,14 +2,15 @@
 title: Elementos declarados
 ms.date: 07/20/2015
 ms.assetid: 0d1d1bb5-ac0b-485f-8922-cdcec5574c79
-ms.openlocfilehash: f7fedc58ec061ddb133eb94ee3b3b7a7b49083cd
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 9359c8df60d7fdc06e7c8dfa1df82f1b277d7339
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84357239"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91075155"
 ---
 # <a name="declared-elements-in-visual-basic"></a>Elementos declarados no Visual Basic
+
 Um *elemento declarado* é um elemento de programação que está definido em uma instrução de declaração. Elementos declarados incluem variáveis, constantes, enumerações, classes, estruturas, módulos, interfaces, procedimentos, parâmetros de procedimento, retornos de função, referências a procedimentos externos, operadores, propriedades, eventos e delegados.  
   
  Instruções de declaração incluem os seguintes itens:  
@@ -43,6 +44,7 @@ Um *elemento declarado* é um elemento de programação que está definido em um
 - [Instrução Delegate](../../../language-reference/statements/delegate-statement.md)  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Nomes de elementos declarados](declared-element-names.md)  
  Descreve como nomear elementos e usar letras maiúsculas.  
   
@@ -53,6 +55,7 @@ Um *elemento declarado* é um elemento de programação que está definido em um
  Descreve como o compilador combina uma referência a uma declaração e como qualificar um nome.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
+
  [Estrutura do programa e convenções de código](../../program-structure/program-structure-and-code-conventions.md)  
  Apresenta diretrizes para tornar mais fácil de ler, compreender e manter o seu código.  
   

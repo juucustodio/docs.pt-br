@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: WSAT_TraceEvent'
 title: WSAT_TraceEvent
 ms.date: 03/30/2017
 ms.assetid: 142aa03f-781c-4ca4-bc21-0e64b1ff9b6a
-ms.openlocfilehash: 03a8b7f227aee46bbc0fea272611888b4a1a8a73
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 65ed3cba37f0f012c8c9ccc301265ff57838dd41
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61915987"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756988"
 ---
-# <a name="wsattraceevent"></a>WSAT_TraceEvent
+# <a name="wsat_traceevent"></a>WSAT_TraceEvent
+
 WSAT_TraceEvent  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class WSAT_TraceEvent : WSAT_TraceProvider  
@@ -21,10 +23,11 @@ class WSAT_TraceEvent : WSAT_TraceProvider
 ```  
   
 ## <a name="methods"></a>Métodos  
- A classe WSAT_TraceEvent herda WSAT_TraceProvider, mas não define as propriedades ou métodos adicionais.  
+
+ A classe WSAT_TraceEvent herda de WSAT_TraceProvider, mas não define métodos ou propriedades adicionais.  
   
 ## <a name="requirements"></a>Requisitos  
   
-|MOF|Declarado em Servicemodel.mof.|  
+|MOF|Declarado em ServiceModel. mof.|  
 |---------|-----------------------------------|  
-|Namespace|Definido no root\ServiceModel|
+|Namespace|Definido em root\ServiceModel|

@@ -3,33 +3,39 @@ title: Classificação de operadores de consulta padrão pelo modo de execução
 description: 'Saiba mais sobre o modos de execução do operador de consulta padrão em C# para LINQ to Objects: verificação imediata, adiada e não streaming.'
 ms.date: 07/20/2015
 ms.assetid: b9435ce5-a7cf-4182-9f01-f3468a5533dc
-ms.openlocfilehash: dd496e232de2c7ed10a8aaa7cec84f8136495cce
-ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
+ms.openlocfilehash: 23f4eafac39b46072629ee4b6e8ec4ae92f6ab80
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87105499"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91159248"
 ---
 # <a name="classification-of-standard-query-operators-by-manner-of-execution-c"></a>Classificação de operadores de consulta padrão pelo modo de execução (C#)
+
 As implementações de LINQ to Objects dos métodos de operador de consulta padrão em uma das duas maneiras principais: imediata ou adiada. Os operadores de consulta que usam a execução adiada podem ser divididos em mais duas categorias: streaming e não streaming. Se você souber como os operadores de consulta diferentes são executados, isso poderá ajudá-lo a entender os resultados que serão obtidos de uma determinada consulta. Isso é especialmente verdadeiro se a fonte de dados está sendo alterada ou se você estiver criando uma consulta sobre outra consulta. Este tópico classifica os operadores de consulta padrão de acordo com o modo de execução.  
   
 ## <a name="manners-of-execution"></a>Modos de execução  
   
 ### <a name="immediate"></a>Imediata  
+
  A execução imediata significa que a fonte de dados é lida e a operação é realizada no ponto do código em que a consulta é declarada. Todos os operadores de consulta padrão que retornam um resultado único e não enumerável são executados imediatamente.  
   
 ### <a name="deferred"></a>Adiado  
+
  A execução adiada significa que a operação não será realizada no ponto do código em que a consulta estiver declarada. A operação será realizada somente quando a variável de consulta for enumerada, por exemplo, usando uma instrução `foreach`. Isso significa que os resultados da execução da consulta dependerão do conteúdo da fonte de dados quando a consulta for executada em vez de quando a consulta for definida. Se a variável de consulta for enumerada várias vezes, os resultados poderão ser diferentes a cada vez. Quase todos os operadores de consulta padrão cujo tipo de retorno é <xref:System.Collections.Generic.IEnumerable%601> ou <xref:System.Linq.IOrderedEnumerable%601> executam de maneira adiada.  
   
  Os operadores de consulta que usam a execução adiada podem ser, adicionalmente, classificados como streaming ou não streaming.  
   
 #### <a name="streaming"></a>Streaming  
+
  Operadores streaming não precisam ler todos os dados de origem antes de gerar elementos. No momento da execução, um operador streaming realiza sua operação em cada elemento de origem enquanto eles são lidos, gerando o elemento, se apropriado. Um operador streaming continua a ler os elementos de origem até que um elemento de resultado possa ser produzido. Isso significa que mais de um elemento de origem poderá ser lido para produzir um elemento de resultado.  
   
 #### <a name="non-streaming"></a>Não streaming  
+
  Os operadores não streaming devem ler todos os dados de origem antes de produzirem um elemento de resultado. Operações como classificação ou agrupamento se enquadram nesta categoria. No momento da execução, os operadores de consulta não streaming leem todos os dados de origem, colocam-nos em uma estrutura de dados, realizam a operação e geram os elementos de resultado.  
   
 ## <a name="classification-table"></a>Tabela de classificação  
+
  A tabela a seguir classifica cada método de operador de consulta padrão de acordo com o respectivo método de execução.  
   
 > [!NOTE]

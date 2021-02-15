@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugCode3'
 title: Interface ICorDebugCode3
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 70f07c9e-0614-4bee-ac34-09fe6c51c5a9
 topic_type:
 - apiref
-ms.openlocfilehash: 6f66e4a903be2e9b12a573f74638a62c58005689
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 378141395ab4d23e3e33a84c3b14ca4a75d847dc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82893462"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764834"
 ---
 # <a name="icordebugcode3-interface"></a>Interface ICorDebugCode3
+
 Fornece um método que estende "ICorDebugCode" e "ICorDebugCode2" para fornecer informações sobre um valor de retorno gerenciado.  
   
 ## <a name="methods"></a>Métodos  
@@ -36,6 +38,7 @@ Fornece um método que estende "ICorDebugCode" e "ICorDebugCode2" para fornecer 
 > Esta interface não dá suporte para chamada remota, seja entre computadores ou processos cruzados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

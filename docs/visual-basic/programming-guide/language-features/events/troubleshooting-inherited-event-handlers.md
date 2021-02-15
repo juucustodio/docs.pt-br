@@ -8,14 +8,15 @@ helpviewer_keywords:
 - event handling, troubleshooting
 - event handlers, troubleshooting
 ms.assetid: e1c8759f-5370-4308-8476-8c48b73509bf
-ms.openlocfilehash: 4e7bedd1de5197fcf8b69091f4cc878f41b01cd5
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: d228e916e45054bc088aa633afd9d591e592210d
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84405100"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91057995"
 ---
 # <a name="troubleshooting-inherited-event-handlers-in-visual-basic"></a>Solucionando problemas de manipuladores de eventos herdados no Visual Basic
+
 Este tópico lista os problemas comuns que surgem com manipuladores de eventos em componentes herdados.  
   
 ## <a name="procedures"></a>Procedimentos  

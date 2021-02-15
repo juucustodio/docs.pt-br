@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: System. ServiceModel. Channels. MsmqMoveOrDeleteAttemptFailed'
 title: System.ServiceModel.Channels.MsmqMoveOrDeleteAttemptFailed
 ms.date: 03/30/2017
 ms.assetid: d75d39da-7502-4a6a-91b9-eaa05b8e24d5
-ms.openlocfilehash: 8b81cdcaf74aca044260495867b2c4f1de517682
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 7b3c8dad9e3a3e88dff72706917f3729d55b3799
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84593744"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769735"
 ---
 # <a name="systemservicemodelchannelsmsmqmoveordeleteattemptfailed"></a>System.ServiceModel.Channels.MsmqMoveOrDeleteAttemptFailed
+
 Não é possível mover ou excluir a mensagem.  
   
 ## <a name="description"></a>Descrição  
+
  O rastreamento indica que uma falha ocorreu ao tentar mover, excluir ou rejeitar uma mensagem MSMQ.  
   
  As mensagens MSMQ são empregadas por Windows Communication Foundation (WCF) (quando usadas com NetMsmqBinding ou MsmqIntegrationBinding). Esse rastreamento está relacionado ao valor escolhido da `ReceiveErrorHandling` propriedade em NetMsmqBinding ou MsmqIntegrationBinding.  
@@ -23,4 +26,4 @@ Não é possível mover ou excluir a mensagem.
 
 - [Rastreamento](index.md)
 - [Utilizando o rastreamento para solucionar problemas em seu aplicativo](using-tracing-to-troubleshoot-your-application.md)
-- [Administração e diagnóstico](../index.md)
+- [Administração e diagnósticos](../index.md)

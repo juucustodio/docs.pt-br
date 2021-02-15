@@ -2,12 +2,12 @@
 title: Comando dotnet test
 description: O comando dotnet test é usado para executar testes de unidade em um determinado projeto.
 ms.date: 04/29/2020
-ms.openlocfilehash: d67521084330b206afca89baf59228b99ca799a1
-ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
+ms.openlocfilehash: 2671cbe6f610cfa8aa98e63e67f3240a1650cd6b
+ms.sourcegitcommit: 2b878d7011306b215dbf3d5dc9c1e78355a6dcd5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88656749"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98757870"
 ---
 # <a name="dotnet-test"></a>dotnet test
 
@@ -77,7 +77,13 @@ Onde `Microsoft.NET.Test.Sdk` é o host de teste, `xunit` é a estrutura de test
 
 - **`--blame-crash`** (Disponível desde o SDK da versão prévia do .NET 5,0)
 
-  Executa os testes no modo de culpa e coleta um despejo de memória quando o host de teste sai inesperadamente. Essa opção só tem suporte no Windows. Um diretório que contém *procdump.exe* e *procdump64.exe* deve estar no caminho ou na PROCDUMP_PATH variável de ambiente. [Baixe as ferramentas](https://docs.microsoft.com/sysinternals/downloads/procdump). Implica `--blame` .
+  Executa os testes no modo de culpa e coleta um despejo de memória quando o host de teste sai inesperadamente. Essa opção depende da versão do .NET usada, do tipo de erro e do sistema operacional.
+  
+  Para exceções em código gerenciado, um despejo será automaticamente coletado no .NET 5,0 e em versões posteriores. Ele gerará um despejo para testhost ou qualquer processo filho que também tenha sido executado no .NET 5,0 e com falha. Falhas no código nativo não gerarão um despejo. Essa opção funciona no Windows, no macOS e no Linux.
+  
+  Os despejos de memória no código nativo, ou ao usar o .NET Core 3,1 ou versões anteriores, só podem ser coletados no Windows, usando Procdump. Um diretório que contém *procdump.exe* e *procdump64.exe* deve estar no caminho ou na PROCDUMP_PATH variável de ambiente. [Baixe as ferramentas](/sysinternals/downloads/procdump). Implica `--blame` .
+  
+  Para coletar um despejo de memória de um aplicativo nativo em execução no .NET 5,0 ou posterior, o uso de Procdump pode ser forçado ao definir a `VSTEST_DUMP_FORCEPROCDUMP` variável de ambiente como `1` .
 
 - **`--blame-crash-dump-type <DUMP_TYPE>`** (Disponível desde o SDK da versão prévia do .NET 5,0)
 
@@ -97,14 +103,14 @@ Onde `Microsoft.NET.Test.Sdk` é o host de teste, `xunit` é a estrutura de test
 
 - **`--blame-hang-timeout <TIMESPAN>`** (Disponível desde o SDK da versão prévia do .NET 5,0)
 
-  Tempo limite por teste, após o qual um despejo de travamento é disparado e o processo de host de teste é encerrado. O valor de tempo limite é especificado em um dos seguintes formatos:
+  Tempo limite por teste, após o qual um despejo de travamento é disparado e o processo de host de teste e todos os seus processos filho são despejados e encerrados. O valor de tempo limite é especificado em um dos seguintes formatos:
   
-  - 1,5 h
-  - próximos
-  - 5400
-  - 5400000ms
+  - 1,5 h, 1,5 hora e 1,5 horas
+  - próximos, 90min, 90minute, 90minutes
+  - 5400s, 5400sec, 5400second, 5400seconds
+  - 5400000ms, 5400000mil, 5400000millisecond, 5400000milliseconds
 
-  Quando nenhuma unidade é usada (por exemplo, 5,4 milhões), presume-se que o valor esteja em milissegundos. Quando usado junto com testes controlados por dados, o comportamento de tempo limite depende do adaptador de teste usado. Para xUnit e NUnit, o tempo limite é renovado após cada caso de teste. Para MSTest, o tempo limite é usado para todos os casos de teste. Essa opção tem suporte no Windows com o netcoreapp 2.1 e posterior e no Linux com o netcoreapp 3.1 e posterior. Não há suporte para macOS.
+  Quando nenhuma unidade é usada (por exemplo, 5,4 milhões), presume-se que o valor esteja em milissegundos. Quando usado junto com testes controlados por dados, o comportamento de tempo limite depende do adaptador de teste usado. Para xUnit e NUnit, o tempo limite é renovado após cada caso de teste. Para MSTest, o tempo limite é usado para todos os casos de teste. Essa opção tem suporte no Windows com o netcoreapp 2.1 e posterior, no Linux com o netcoreapp 3.1 e posterior e no macOS com net 5.0 ou posterior. Implica `--blame` e `--blame-hang` .
 
 - **`-c|--configuration <CONFIGURATION>`**
 
@@ -140,7 +146,7 @@ Onde `Microsoft.NET.Test.Sdk` é o host de teste, `xunit` é a estrutura de test
 
 - **`-l|--logger <LOGGER>`**
 
-  Especifica um agente para resultados do teste. Ao contrário do MSBuild, o teste dotnet não aceita abreviações: em vez de `-l "console;v=d"` usar `-l "console;verbosity=detailed"` .
+  Especifica um agente para resultados do teste. Ao contrário do MSBuild, o teste dotnet não aceita abreviações: em vez de `-l "console;v=d"` usar `-l "console;verbosity=detailed"` . Especifique o parâmetro várias vezes para habilitar vários agentes.
 
 - **`--no-build`**
 
@@ -168,7 +174,7 @@ Onde `Microsoft.NET.Test.Sdk` é o host de teste, `xunit` é a estrutura de test
 
 - **`-s|--settings <SETTINGS_FILE>`**
 
-  O arquivo `.runsettings` a ser usado para executar os testes. O `TargetPlatform` elemento (x86 | x64) não tem nenhum efeito para `dotnet test` . Para executar testes direcionados para x86, instale a versão x86 do .NET Core. O bit de bits do *dotnet.exe* que está no caminho é o que será usado para executar testes. Para saber mais, consulte os recursos a seguir:
+  O arquivo `.runsettings` a ser usado para executar os testes. O `TargetPlatform` elemento (x86 | x64) não tem nenhum efeito para `dotnet test` . Para executar testes direcionados para x86, instale a versão x86 do .NET Core. O bit de bits do *dotnet.exe* que está no caminho é o que será usado para executar testes. Para obter mais informações, consulte os seguintes recursos:
 
   - [Configurar testes de unidade usando um arquivo `.runsettings`.](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
   - [Configurar uma execução de teste](https://github.com/Microsoft/vstest-docs/blob/master/docs/configure.md)
@@ -244,7 +250,7 @@ Onde `Microsoft.NET.Test.Sdk` é o host de teste, `xunit` é a estrutura de test
 | Estrutura de teste | Propriedades com suporte                                                                                      |
 | -------------- | --------------------------------------------------------------------------------------------------------- |
 | MSTest         | <ul><li>FullyQualifiedName</li><li>Nome</li><li>ClassName</li><li>Prioridade</li><li>TestCategory</li></ul> |
-| xUnit          | <ul><li>FullyQualifiedName</li><li>DisplayName</li><li>Características</li></ul>                                   |
+| xUnit          | <ul><li>FullyQualifiedName</li><li>DisplayName</li><li>Categoria</li></ul>                                 |
 | NUnit          | <ul><li>FullyQualifiedName</li><li>Nome</li><li>TestCategory</li><li>Prioridade</li></ul>                                   |
 
 O `<operator>` descreve a relação entre a propriedade o valor:
@@ -264,15 +270,15 @@ As expressões podem ser associadas a operadores condicionais:
 
 | Operador            | Função |
 | ------------------- | -------- |
-| <code>&#124;</code> | OU       |
+| <code>&#124;</code> | OU       |
 | `&`                 | AND      |
 
 Inclua expressões em parênteses ao usar operadores condicionais (por exemplo, `(Name~TestMethod1) | (Name~TestMethod2)`).
 
 Para obter mais informações e exemplos sobre como usar a filtragem de teste de unidade seletivo, confira [Executando testes de unidade seletivos](../testing/selective-unit-tests.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Estruturas e destinos](../../standard/frameworks.md)
-- [Catálogo de RID (identificador de tempo de execução) do .NET Core](../rid-catalog.md)
+- [Catálogo do RID (.NET Runtime Identifier)](../rid-catalog.md)
 - [Passando argumentos RunSettings por meio de linha de comando](https://github.com/Microsoft/vstest-docs/blob/master/docs/RunSettingsArguments.md)

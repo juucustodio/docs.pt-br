@@ -1,16 +1,18 @@
 ---
-title: Como configurar rastreamento com WorkflowServiceHost
+description: 'Saiba mais sobre: como configurar o acompanhamento com o WorkflowServiceHost'
+title: 'Como: configurar o acompanhamento com WorkflowServiceHost'
 ms.date: 03/30/2017
 ms.assetid: ed1485fe-7529-4351-bca3-8bb915260b17
-ms.openlocfilehash: 54594a8f464e77062c658606db6bc941e319f71d
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 11c48c3989ab9b788c1e6834d8cbfe53e2b8a53e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599094"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734822"
 ---
-# <a name="how-to-configure-tracking-with-workflowservicehost"></a>Como configurar rastreamento com WorkflowServiceHost
-Este tópico explica como configurar o acompanhamento de um [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] fluxo de trabalho hospedado no <xref:System.ServiceModel.Activities.WorkflowServiceHost> . Ele é configurado por meio de um arquivo Web. config especificando um comportamento de serviço.  
+# <a name="how-to-configure-tracking-with-workflowservicehost"></a>Como: configurar o acompanhamento com WorkflowServiceHost
+
+Este tópico explica como configurar o acompanhamento de um [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] fluxo de trabalho hospedado no <xref:System.ServiceModel.Activities.WorkflowServiceHost> . Ele é configurado por meio de um arquivo de Web.config especificando um comportamento de serviço.  
   
 ### <a name="configure-tracking-in-configuration"></a>Configurar o controle na configuração  
   
@@ -72,4 +74,4 @@ Este tópico explica como configurar o acompanhamento de um [!INCLUDE[netfx_curr
 
 - [Configuração simplificada para serviços do WCF](../samples/simplified-configuration-for-wcf-services.md)
 - [Serviços de fluxo de trabalho](workflow-services.md)
-- [Acompanhando perfis](../../windows-workflow-foundation/tracking-profiles.md)
+- [Controlando perfis](../../windows-workflow-foundation/tracking-profiles.md)

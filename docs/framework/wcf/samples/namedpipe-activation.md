@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: ativação do NamedPipe'
 title: NamedPipe Activation
 ms.date: 03/30/2017
 ms.assetid: f3c0437d-006c-442e-bfb0-6b29216e4e29
-ms.openlocfilehash: 8d9a10b94c52514db611144352653b911d109056
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 4955511f24d831f4aa9e3aa67fdb3f6a218d7af0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84602460"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752179"
 ---
 # <a name="namedpipe-activation"></a>NamedPipe Activation
 
@@ -73,7 +74,7 @@ public class CalculatorService : ICalculator
 
 O exemplo usa uma associação modificada sem `netNamedPipeBinding` segurança. A associação é especificada nos arquivos de configuração para o cliente e o serviço. O tipo de associação para o serviço é especificado no atributo do elemento do ponto de extremidade `binding` , conforme mostrado na seguinte configuração de exemplo.
 
-Se você quiser usar uma associação de pipe nomeado segura, altere o modo de segurança do servidor para a configuração de segurança desejada e execute svcutil. exe novamente no cliente para obter um arquivo de configuração de cliente atualizado.
+Se você quiser usar uma associação de pipe nomeado segura, altere o modo de segurança do servidor para a configuração de segurança desejada e execute svcutil.exe novamente no cliente para obter um arquivo de configuração de cliente atualizado.
 
 ```xml
 <system.serviceModel>
@@ -177,7 +178,7 @@ Press <ENTER> to terminate client.
 
     Como uma conveniência, as duas etapas a seguir são implementadas em um arquivo em lotes chamado AddNetPipeSiteBinding. cmd localizado no diretório de exemplo.
 
-    1. Para dar suporte à ativação do NET. pipe, o site padrão deve primeiro ser associado ao protocolo net. pipe. Isso pode ser feito usando o Appcmd. exe, que é instalado com o conjunto de ferramentas de gerenciamento do IIS 7,0. Em um prompt de comando elevado (administrador), execute o comando a seguir.
+    1. Para dar suporte à ativação do NET. pipe, o site padrão deve primeiro ser associado ao protocolo net. pipe. Isso pode ser feito usando appcmd.exe, que é instalado com o conjunto de ferramentas de gerenciamento do IIS 7,0. Em um prompt de comando elevado (administrador), execute o comando a seguir.
 
         ```console
         %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site"
@@ -226,4 +227,4 @@ Press <ENTER> to terminate client.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Hospedagem de AppFabric e persistência Exemplos](https://docs.microsoft.com/previous-versions/appfabric/ff383418(v=azure.10))
+- [Hospedagem de AppFabric e persistência Exemplos](/previous-versions/appfabric/ff383418(v=azure.10))

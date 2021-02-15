@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: transações de fluxo dentro e fora dos serviços de fluxo de trabalho'
 title: Transações de fluxo de entrada e saída de serviços de fluxo de trabalho
 ms.date: 03/30/2017
 ms.assetid: 03ced70e-b540-4dd9-86c8-87f7bd61f609
-ms.openlocfilehash: 17c05139b5977c47e20e888e436a311ba145018a
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: f39740c45dd70fbc06963b8e842f9a01a0393f7e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597456"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704960"
 ---
 # <a name="flowing-transactions-into-and-out-of-workflow-services"></a>Transações de fluxo de entrada e saída de serviços de fluxo de trabalho
+
 Os serviços de fluxo de trabalho e os clientes podem participar de transações.  Para que uma operação de serviço se torne parte de uma transação de ambiente, coloque uma <xref:System.ServiceModel.Activities.Receive> atividade em uma <xref:System.ServiceModel.Activities.TransactedReceiveScope> atividade. Todas as chamadas feitas por uma <xref:System.ServiceModel.Activities.Send> ou uma <xref:System.ServiceModel.Activities.SendReply> atividade dentro do <xref:System.ServiceModel.Activities.TransactedReceiveScope> também serão feitas dentro da transação de ambiente. Um aplicativo cliente de fluxo de trabalho pode criar uma transação de ambiente usando a <xref:System.Activities.Statements.TransactionScope> atividade e chamar operações de serviço usando a transação de ambiente. Este tópico o orienta na criação de um serviço de fluxo de trabalho e cliente de fluxo de trabalho que participam de transações.  
   
 > [!WARNING]
@@ -84,7 +86,7 @@ Os serviços de fluxo de trabalho e os clientes podem participar de transações
   
 3. Arraste e solte uma <xref:System.Activities.Statements.WriteLine> atividade na `Sequential Service` atividade. Defina a propriedade Text `"Workflow Service starting ..."` como, conforme mostrado no exemplo a seguir.  
   
-     ! [Adicionando uma atividade WriteLine à atividade de serviço sequencial (./Media/flowing-Transactions-into-and-out-of-Workflow-Services/Add-WriteLine-Sequential-Service.jpg)  
+     ! [Adicionando uma atividade WriteLine à atividade de serviço sequencial (./Media/flowing-Transactions-into-and-out-of-Workflow-Services/add-writeline-sequential-service.jpg)  
   
 4. Arraste e solte um <xref:System.ServiceModel.Activities.TransactedReceiveScope> após a <xref:System.Activities.Statements.WriteLine> atividade. A <xref:System.ServiceModel.Activities.TransactedReceiveScope> atividade pode ser encontrada na seção **mensagens** da caixa de **ferramentas**. A <xref:System.ServiceModel.Activities.TransactedReceiveScope> atividade é composta de duas seções **solicitação** e **corpo**. A seção **solicitação** contém a <xref:System.ServiceModel.Activities.Receive> atividade. A seção **corpo** contém as atividades a serem executadas em uma transação depois que uma mensagem é recebida.  
   
@@ -171,7 +173,7 @@ Os serviços de fluxo de trabalho e os clientes podem participar de transações
   
 5. Arraste e solte uma <xref:System.Activities.Statements.Sequence> atividade no corpo da <xref:System.Activities.Statements.TransactionScope> atividade.  
   
-6. Arraste e solte uma `PrintTransactionInfo` atividade dentro do<xref:System.Activities.Statements.Sequence>  
+6. Arraste e solte uma `PrintTransactionInfo` atividade dentro do <xref:System.Activities.Statements.Sequence>  
   
 7. Arraste e solte uma <xref:System.Activities.Statements.WriteLine> atividade após a `PrintTransactionInfo` atividade e defina sua <xref:System.Activities.Statements.WriteLine.Text%2A> propriedade como "cliente: Iniciando envio". O fluxo de trabalho agora deve ser assim:  
   
@@ -241,7 +243,7 @@ Os serviços de fluxo de trabalho e os clientes podem participar de transações
           }  
     ```  
   
-3. Adicione o seguinte arquivo app. config ao projeto.  
+3. Adicione o seguinte arquivo de app.config ao projeto.  
   
     ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -259,7 +261,7 @@ Os serviços de fluxo de trabalho e os clientes podem participar de transações
   
 ### <a name="create-the-client-application"></a>Criar o aplicativo cliente  
   
-1. Adicione um novo projeto de aplicativo de console chamado `Client` à solução. Adicione uma referência a System. Activities. dll.  
+1. Adicione um novo projeto de aplicativo de console chamado `Client` à solução. Adicione uma referência a System.Activities.dll.  
   
 2. Abra o arquivo program.cs e adicione o código a seguir.  
   

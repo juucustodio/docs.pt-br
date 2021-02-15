@@ -1,17 +1,19 @@
 ---
+description: 'Saiba mais sobre: fluxo de transações do WS'
 title: Fluxo de transação WS
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Transactions
 ms.assetid: f8eecbcf-990a-4dbb-b29b-c3f9e3b396bd
-ms.openlocfilehash: 1fbde53289c147d8ea273b9c86e65cbb8e262b30
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 4d0a0af77dd516bf98c5dc8318ac110a31e731e7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596404"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668364"
 ---
 # <a name="ws-transaction-flow"></a>Fluxo de transação WS
+
 Este exemplo demonstra o uso de uma transação coordenada pelo cliente e as opções de cliente e servidor para o fluxo de transações usando a transação WS-Atomic ou o protocolo OleTransactions. Este exemplo é baseado no [introdução](getting-started-sample.md) que implementa um serviço de calculadora, mas as operações são atribuídas para demonstrar o uso do `TransactionFlowAttribute` com a enumeração **TransactionFlowOption** para determinar para qual grau o fluxo de transações está habilitado. Dentro do escopo da transação fluida, um log das operações solicitadas é gravado em um banco de dados e persiste até que a transação coordenada do cliente seja concluída – se a transação do cliente não for concluída, a transação do serviço Web garantirá que as atualizações apropriadas ao banco de dados não sejam confirmadas.  
   
 > [!NOTE]
@@ -225,20 +227,20 @@ Press <ENTER> to terminate the service.
   
 1. Para criar a versão C# ou Visual Basic do .NET da solução, siga as instruções em [criando os exemplos de Windows Communication Foundation](building-the-samples.md)  
   
-2. Verifique se você instalou o SQL Server Express Edition ou o SQL Server e se a cadeia de conexão foi definida corretamente no arquivo de configuração do aplicativo do serviço. Para executar o exemplo sem usar um banco de dados, defina o `usingSql` valor no arquivo de configuração de aplicativo do serviço como`false`  
+2. Verifique se você instalou o SQL Server Express Edition ou o SQL Server e se a cadeia de conexão foi definida corretamente no arquivo de configuração do aplicativo do serviço. Para executar o exemplo sem usar um banco de dados, defina o `usingSql` valor no arquivo de configuração de aplicativo do serviço como `false`  
   
 3. Para executar o exemplo em uma configuração de computador único ou cruzado, siga as instruções em [executando os exemplos de Windows Communication Foundation](running-the-samples.md).  
   
     > [!NOTE]
-    > Para configuração entre computadores, habilite o Coordenador de Transações Distribuídas usando as instruções abaixo e use a ferramenta WsatConfig. exe da SDK do Windows para habilitar o suporte à rede de transações do WCF. Para obter informações sobre como configurar o WsatConfig. exe, consulte [Configuring WS-Atomic Transaction support](../feature-details/configuring-ws-atomic-transaction-support.md).  
+    > Para configuração entre computadores, habilite o Coordenador de Transações Distribuídas usando as instruções abaixo e use a ferramenta WsatConfig.exe da SDK do Windows para habilitar o suporte à rede de transações do WCF. Para obter informações sobre como configurar WsatConfig.exe, consulte [Configurando o suporte a transações de WS-Atomic](../feature-details/configuring-ws-atomic-transaction-support.md).  
   
- Se você executar o exemplo no mesmo computador ou em computadores diferentes, deverá configurar o Microsoft Coordenador de Transações Distribuídas (MSDTC) para habilitar o fluxo de transações de rede e usar a ferramenta WsatConfig. exe para habilitar o suporte à rede de transações do WCF.  
+ Se você executar o exemplo no mesmo computador ou em computadores diferentes, deverá configurar o Microsoft Coordenador de Transações Distribuídas (MSDTC) para habilitar o fluxo de transações de rede e usar a ferramenta WsatConfig.exe para habilitar o suporte à rede de transações do WCF.  
   
 ### <a name="to-configure-the-microsoft-distributed-transaction-coordinator-msdtc-to-support-running-the-sample"></a>Para configurar o Microsoft Coordenador de Transações Distribuídas (MSDTC) para dar suporte à execução do exemplo  
   
 1. Em um computador de serviço executando o Windows Server 2003 ou o Windows XP, configure o MSDTC para permitir transações de rede de entrada seguindo estas instruções.  
   
-    1. No menu **Iniciar** , navegue até **painel de controle**, **Ferramentas administrativas**e serviços de **componentes**.  
+    1. No menu **Iniciar** , navegue até **painel de controle**, **Ferramentas administrativas** e serviços de **componentes**.  
   
     2. Expanda **serviços de componentes**. Abra a pasta **computadores** .  
   
@@ -248,13 +250,13 @@ Press <ENTER> to terminate the service.
   
     5. Verifique o **acesso ao DTC de rede** e permita a **entrada**.  
   
-    6. Clique em **OK**e em **Sim** para reiniciar o serviço MSDTC.  
+    6. Clique em **OK** e em **Sim** para reiniciar o serviço MSDTC.  
   
     7. Clique em **OK** para fechar a caixa de diálogo.  
   
 2. Em um computador de serviço executando o Windows Server 2008 ou o Windows Vista, configure o MSDTC para permitir transações de rede de entrada seguindo estas instruções.  
   
-    1. No menu **Iniciar** , navegue até **painel de controle**, **Ferramentas administrativas**e serviços de **componentes**.  
+    1. No menu **Iniciar** , navegue até **painel de controle**, **Ferramentas administrativas** e serviços de **componentes**.  
   
     2. Expanda **serviços de componentes**. Abra a pasta **computadores** . Selecione **Coordenador de transações distribuídas**.  
   
@@ -262,13 +264,13 @@ Press <ENTER> to terminate the service.
   
     4. Na guia **segurança** , marque **acesso DTC de rede** e **permitir entrada**.  
   
-    5. Clique em **OK**e em **Sim** para reiniciar o serviço MSDTC.  
+    5. Clique em **OK** e em **Sim** para reiniciar o serviço MSDTC.  
   
     6. Clique em **OK** para fechar a caixa de diálogo.  
   
 3. No computador cliente, configure o MSDTC para permitir transações de rede de saída:  
   
-    1. No menu **Iniciar** , navegue até `Control Panel` , **Ferramentas administrativas**e **serviços de componentes**.  
+    1. No menu **Iniciar** , navegue até `Control Panel` , **Ferramentas administrativas** e **serviços de componentes**.  
   
     2. Clique com o botão direito do mouse em **meu computador** e selecione **Propriedades**.  
   
@@ -276,7 +278,7 @@ Press <ENTER> to terminate the service.
   
     4. Verifique o **acesso ao DTC de rede** e permita a **saída**.  
   
-    5. Clique em **OK**e em **Sim** para reiniciar o serviço MSDTC.  
+    5. Clique em **OK** e em **Sim** para reiniciar o serviço MSDTC.  
   
     6. Clique em **OK** para fechar a caixa de diálogo.  
   

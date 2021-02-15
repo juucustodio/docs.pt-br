@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: exemplo de Federação'
 title: Exemplo de federação
 ms.date: 03/30/2017
 ms.assetid: 7e9da0ca-e925-4644-aa96-8bfaf649d4bb
-ms.openlocfilehash: 00cb9a13a01687fb41f1d5c09f277d582f706e3b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: a85a290988b6cbb4b30a1098f3558ec34ead1d50
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594680"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704076"
 ---
 # <a name="federation-sample"></a>Exemplo de federação
+
 Este exemplo demonstra a segurança federada.  
   
 ## <a name="sample-details"></a>Detalhes de exemplo  
+
  O Windows Communication Foundation (WCF) oferece suporte para a implantação de arquiteturas de segurança federada por meio do `wsFederationHttpBinding` . O `wsFederationHttpBinding` fornece uma associação segura, confiável e interoperável que envolve o uso de http como o mecanismo de transporte subjacente para a comunicação de solicitação/resposta e text/xml como o formato de conexão para codificação. Para obter mais informações sobre Federação no WCF, consulte [Federação](../feature-details/federation.md).  
   
  O cenário é composto de quatro partes:  
@@ -86,14 +89,14 @@ Este exemplo demonstra a segurança federada.
   
 #### <a name="to-set-up-build-and-run-the-sample"></a>Para configurar, compilar, e executar o exemplo  
   
-1. Abra a janela de comando do SDK. No caminho de exemplo, execute Setup. bat. Isso cria os diretórios virtuais necessários para o exemplo e instala os certificados necessários com as permissões apropriadas.  
+1. Abra a janela de comando do SDK. No caminho de exemplo, execute Setup.bat. Isso cria os diretórios virtuais necessários para o exemplo e instala os certificados necessários com as permissões apropriadas.  
   
     > [!NOTE]
-    > O arquivo em lotes setup. bat foi projetado para ser executado em um prompt de comando SDK do Windows. Ele requer que a variável de ambiente MSSDK aponte para o diretório em que o SDK está instalado. Essa variável de ambiente é definida automaticamente em um prompt de comando SDK do Windows. No Windows Vista, você deve garantir que a compatibilidade de gerenciamento do IIS 6,0 esteja instalada porque a configuração usa scripts de administrador do IIS. A execução do script de configuração no Windows Vista exige privilégios de administrador.  
+    > O arquivo em lotes Setup.bat foi projetado para ser executado em um prompt de comando de SDK do Windows. Ele requer que a variável de ambiente MSSDK aponte para o diretório em que o SDK está instalado. Essa variável de ambiente é definida automaticamente em um prompt de comando SDK do Windows. No Windows Vista, você deve garantir que a compatibilidade de gerenciamento do IIS 6,0 esteja instalada porque a configuração usa scripts de administrador do IIS. A execução do script de configuração no Windows Vista exige privilégios de administrador.  
   
-2. Abra FederationSample. sln no Visual Studio e selecione **Compilar solução** no menu **Compilar** . Isso cria os arquivos de projeto comuns, o serviço de livraria, o STS de livraria, o STS HomeRealm e os implanta no IIS. Isso também cria o aplicativo cliente de livraria e coloca o executável BookStoreClient. exe na pasta FederationSample\BookStoreClient\bin\Debug  
+2. Abra FederationSample. sln no Visual Studio e selecione **Compilar solução** no menu **Compilar** . Isso cria os arquivos de projeto comuns, o serviço de livraria, o STS de livraria, o STS HomeRealm e os implanta no IIS. Isso também cria o aplicativo cliente de livraria e coloca o executável BookStoreClient.exe na pasta FederationSample\BookStoreClient\bin\Debug  
   
-3. Clique duas vezes em BookStoreClient. exe. A janela BookStoreClient é exibida.  
+3. Clique duas vezes em BookStoreClient.exe. A janela BookStoreClient é exibida.  
   
 4. Você pode procurar os manuais disponíveis na livraria clicando em **Procurar livros**.  
   
@@ -106,7 +109,7 @@ Este exemplo demonstra a segurança federada.
   
 #### <a name="to-clean-up"></a>Para limpar  
   
-1. Execute Cleanup. bat. Isso exclui os diretórios virtuais que foram criados durante a configuração e também remove os certificados instalados durante a instalação.  
+1. Execute Cleanup.bat. Isso exclui os diretórios virtuais que foram criados durante a configuração e também remove os certificados instalados durante a instalação.  
   
 > [!IMPORTANT]
 > Os exemplos podem já estar instalados no seu computador. Verifique o seguinte diretório (padrão) antes de continuar.  

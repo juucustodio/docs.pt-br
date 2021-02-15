@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: validador de certificado X. 509'
 title: Validador de certificado X.509
 ms.date: 03/30/2017
 ms.assetid: 3b042379-02c4-4395-b927-e57c842fd3e0
-ms.openlocfilehash: 32d99b93ef014967aa04bc70f73fbd2ebcfe2c60
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 3fead47cab4d639640f5af755717636ca2e8d01e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84594823"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726228"
 ---
 # <a name="x509-certificate-validator"></a>Validador de certificado X.509
 
@@ -23,7 +24,7 @@ Em resumo, este exemplo demonstra como:
 
 - O servidor é autenticado usando o certificado X. 509 do servidor.
 
-O serviço expõe um único ponto de extremidade para se comunicar com o serviço, definido usando o arquivo de configuração app. config. O ponto de extremidade consiste em um endereço, uma associação e um contrato. A associação é configurada com um padrão `wsHttpBinding` que usa o `WSSecurity` e a autenticação de certificado do cliente. O comportamento do serviço especifica o modo personalizado para validar certificados X. 509 do cliente junto com o tipo da classe do validador. O comportamento também especifica o certificado do servidor usando o elemento userCertificate. O certificado do servidor deve conter o mesmo valor para o as `SubjectName` `findValue` no [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) .
+O serviço expõe um único ponto de extremidade para se comunicar com o serviço, definido usando o arquivo de configuração App.config. O ponto de extremidade consiste em um endereço, uma associação e um contrato. A associação é configurada com um padrão `wsHttpBinding` que usa o `WSSecurity` e a autenticação de certificado do cliente. O comportamento do serviço especifica o modo personalizado para validar certificados X. 509 do cliente junto com o tipo da classe do validador. O comportamento também especifica o certificado do servidor usando o elemento userCertificate. O certificado do servidor deve conter o mesmo valor para o as `SubjectName` `findValue` no [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) .
 
 ```xml
   <system.serviceModel>
@@ -253,13 +254,13 @@ Quando você executa o exemplo, as solicitações de operação e as respostas s
 
 ## <a name="setup-batch-file"></a>Arquivo em lotes de instalação
 
-O arquivo em lotes setup. bat incluído com este exemplo permite que você configure o servidor com certificados relevantes para executar um aplicativo auto-hospedado que requer segurança baseada em certificado do servidor. Esse arquivo em lotes deve ser modificado para funcionar em computadores ou para funcionar em um caso não hospedado.
+O arquivo em lotes Setup.bat incluído com este exemplo permite que você configure o servidor com certificados relevantes para executar um aplicativo auto-hospedado que requer segurança baseada em certificado do servidor. Esse arquivo em lotes deve ser modificado para funcionar em computadores ou para funcionar em um caso não hospedado.
 
 Veja a seguir uma breve visão geral das diferentes seções dos arquivos em lotes para que eles possam ser modificados para serem executados na configuração apropriada:
 
 - Criando o certificado do servidor:
 
-     As linhas a seguir do arquivo em lotes setup. bat criam o certificado do servidor a ser usado. A variável% SERVER_NAME% especifica o nome do servidor. Altere essa variável para especificar seu próprio nome de servidor. O valor padrão é localhost.
+     As linhas a seguir do arquivo de Setup.bat lote criam o certificado do servidor a ser usado. A variável% SERVER_NAME% especifica o nome do servidor. Altere essa variável para especificar seu próprio nome de servidor. O valor padrão é localhost.
 
     ```bash
     echo ************
@@ -273,7 +274,7 @@ Veja a seguir uma breve visão geral das diferentes seções dos arquivos em lot
 
 - Instalando o certificado do servidor no repositório de certificados confiáveis do cliente:
 
-     As linhas a seguir no arquivo em lotes setup. bat copiam o certificado do servidor no repositório de pessoas confiáveis do cliente. Essa etapa é necessária, pois os certificados gerados pelo MakeCert. exe não são implicitamente confiáveis pelo sistema cliente. Se você já tiver um certificado com raiz em um certificado raiz confiável do cliente — por exemplo, um certificado emitido pela Microsoft — esta etapa de popular o repositório de certificados do cliente com o certificado do servidor não será necessária.
+     As linhas a seguir no arquivo de Setup.bat lote copiam o certificado do servidor no repositório de pessoas confiáveis do cliente. Essa etapa é necessária, pois os certificados gerados pelo Makecert.exe não são implicitamente confiáveis pelo sistema cliente. Se você já tiver um certificado com raiz em um certificado raiz confiável do cliente — por exemplo, um certificado emitido pela Microsoft — esta etapa de popular o repositório de certificados do cliente com o certificado do servidor não será necessária.
 
     ```bash
     certmgr.exe -add -r LocalMachine -s My -c -n %SERVER_NAME% -r CurrentUser -s TrustedPeople
@@ -281,7 +282,7 @@ Veja a seguir uma breve visão geral das diferentes seções dos arquivos em lot
 
 - Criando o certificado do cliente:
 
-     As linhas a seguir do arquivo em lotes setup. bat criam o certificado do cliente a ser usado. A variável% USER_NAME% especifica o nome do cliente. Esse valor é definido como "test1" porque esse é o nome que o código do cliente procura. Se você alterar o valor de% USER_NAME%, deverá alterar o valor correspondente no arquivo de origem Client.cs e recompilar o cliente.
+     As linhas a seguir do arquivo de Setup.bat lote criam o certificado do cliente a ser usado. A variável% USER_NAME% especifica o nome do cliente. Esse valor é definido como "test1" porque esse é o nome que o código do cliente procura. Se você alterar o valor de% USER_NAME%, deverá alterar o valor correspondente no arquivo de origem Client.cs e recompilar o cliente.
 
      O certificado é armazenado no meu repositório (pessoal) no local de armazenamento CurrentUser.
 
@@ -297,7 +298,7 @@ Veja a seguir uma breve visão geral das diferentes seções dos arquivos em lot
 
 - Instalando o certificado do cliente no repositório de certificados confiáveis do servidor:
 
-     As linhas a seguir no arquivo em lotes setup. bat copiam o certificado do cliente para o repositório de pessoas confiáveis. Essa etapa é necessária porque os certificados gerados pelo MakeCert. exe não são implicitamente confiáveis pelo sistema de servidor. Se você já tiver um certificado com raiz em um certificado raiz confiável — por exemplo, um certificado emitido pela Microsoft — esta etapa de popular o repositório de certificados do servidor com o certificado do cliente não será necessária.
+     As linhas a seguir no arquivo de Setup.bat lote copiam o certificado do cliente para o repositório de pessoas confiáveis. Essa etapa é necessária porque os certificados gerados por Makecert.exe não são implicitamente confiáveis pelo sistema de servidor. Se você já tiver um certificado com raiz em um certificado raiz confiável — por exemplo, um certificado emitido pela Microsoft — esta etapa de popular o repositório de certificados do servidor com o certificado do cliente não será necessária.
 
     ```bash
     certmgr.exe -add -r CurrentUser -s My -c -n %USER_NAME% -r LocalMachine -s TrustedPeople
@@ -311,50 +312,50 @@ Veja a seguir uma breve visão geral das diferentes seções dos arquivos em lot
 
 #### <a name="to-run-the-sample-on-the-same-computer"></a>Para executar o exemplo no mesmo computador
 
-1. Execute setup. bat da pasta de instalação de exemplo dentro de um prompt de comando do Visual Studio 2012 aberto com privilégios de administrador. Isso instala todos os certificados necessários para executar o exemplo.
+1. Execute Setup.bat na pasta de instalação de exemplo dentro de um prompt de comando do Visual Studio 2012 aberto com privilégios de administrador. Isso instala todos os certificados necessários para executar o exemplo.
 
     > [!IMPORTANT]
-    > O arquivo em lotes setup. bat foi projetado para ser executado em um prompt de comando do Visual Studio 2012. A variável de ambiente PATH definida no prompt de comando do Visual Studio 2012 aponta para o diretório que contém os executáveis exigidos pelo script setup. bat.
+    > O arquivo em lotes Setup.bat foi projetado para ser executado em um prompt de comando do Visual Studio 2012. A variável de ambiente PATH definida no prompt de comando do Visual Studio 2012 aponta para o diretório que contém os executáveis exigidos pelo script Setup.bat.
 
-2. Inicie o Service. exe em service\bin.
+2. Iniciar Service.exe de service\bin.
 
-3. Inicie o Client. exe em \client\bin. A atividade do cliente é exibida no aplicativo de console do cliente.
+3. Iniciar Client.exe de \client\bin. A atividade do cliente é exibida no aplicativo de console do cliente.
 
-4. Se o cliente e o serviço não puderem se comunicar, consulte [dicas de solução de problemas para exemplos do WCF](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
+4. Se o cliente e o serviço não puderem se comunicar, consulte [dicas de solução de problemas para exemplos do WCF](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
 
 #### <a name="to-run-the-sample-across-computers"></a>Para executar o exemplo entre computadores
 
 1. Crie um diretório no computador de serviço.
 
-2. Copie os arquivos de programa do serviço do \service\bin para o diretório virtual no computador do serviço. Copie também os arquivos Setup. bat, Cleanup. bat, GetComputerName. vbs e ImportClientCert. bat para o computador de serviço.
+2. Copie os arquivos de programa do serviço do \service\bin para o diretório virtual no computador do serviço. Copie também os arquivos Setup.bat, Cleanup.bat, GetComputerName.vbs e ImportClientCert.bat para o computador de serviço.
 
 3. Crie um diretório no computador cliente para os binários do cliente.
 
-4. Copie os arquivos de programa do cliente para o diretório cliente no computador cliente. Copie também os arquivos Setup. bat, Cleanup. bat e ImportServiceCert. bat para o cliente.
+4. Copie os arquivos de programa do cliente para o diretório cliente no computador cliente. Copie também os arquivos Setup.bat, Cleanup.bat e ImportServiceCert.bat para o cliente.
 
 5. No servidor, execute `setup.bat service` em um prompt de comando do desenvolvedor para Visual Studio aberto com privilégios de administrador. `setup.bat`A execução com o `service` argumento cria um certificado de serviço com o nome de domínio totalmente qualificado do computador e exporta o certificado de serviço para um arquivo chamado Service. cer.
 
-6. Edite Service. exe. config para refletir o novo nome de certificado (no `findValue` atributo em [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) ), que é o mesmo que o nome de domínio totalmente qualificado do computador. Além disso, altere o nome do computador no \<service> / \<baseAddresses> elemento do localhost para o nome totalmente qualificado do seu computador de serviço.
+6. Edite Service.exe.config para refletir o novo nome de certificado (no `findValue` atributo no [\<serviceCertificate>](../../configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) ), que é o mesmo que o nome de domínio totalmente qualificado do computador. Além disso, altere o nome do computador no \<service> / \<baseAddresses> elemento do localhost para o nome totalmente qualificado do seu computador de serviço.
 
 7. Copie o arquivo Service. cer do diretório de serviço para o diretório cliente no computador cliente.
 
 8. No cliente, execute `setup.bat client` em um prompt de comando do desenvolvedor para Visual Studio aberto com privilégios de administrador. `setup.bat`A execução com o `client` argumento cria um certificado de cliente chamado Client.com e exporta o certificado do cliente para um arquivo chamado Client. cer.
 
-9. No arquivo client. exe. config no computador cliente, altere o valor de endereço do ponto de extremidade para corresponder ao novo endereço do serviço. Faça isso substituindo localhost pelo nome de domínio totalmente qualificado do servidor.
+9. No arquivo de Client.exe.config no computador cliente, altere o valor de endereço do ponto de extremidade para corresponder ao novo endereço do serviço. Faça isso substituindo localhost pelo nome de domínio totalmente qualificado do servidor.
 
 10. Copie o arquivo client. cer do diretório cliente para o diretório de serviço no servidor.
 
-11. No cliente, execute ImportServiceCert. bat em um Prompt de Comando do Desenvolvedor para Visual Studio aberto com privilégios de administrador. Isso importa o certificado de serviço do arquivo Service. cer para o repositório CurrentUser-TrustedPeople.
+11. No cliente, execute ImportServiceCert.bat em um Prompt de Comando do Desenvolvedor para o Visual Studio aberto com privilégios de administrador. Isso importa o certificado de serviço do arquivo Service. cer para o repositório CurrentUser-TrustedPeople.
 
-12. No servidor, execute ImportClientCert. bat em um Prompt de Comando do Desenvolvedor para Visual Studio aberto com privilégios de administrador. Isso importa o certificado do cliente do arquivo client. cer para o repositório LocalMachine-TrustedPeople.
+12. No servidor, execute ImportClientCert.bat em um Prompt de Comando do Desenvolvedor para o Visual Studio aberto com privilégios de administrador. Isso importa o certificado do cliente do arquivo client. cer para o repositório LocalMachine-TrustedPeople.
 
-13. No computador servidor, inicie o Service. exe na janela do prompt de comando.
+13. No computador servidor, inicie o Service.exe na janela do prompt de comando.
 
-14. No computador cliente, inicie o Client. exe em uma janela de prompt de comando. Se o cliente e o serviço não puderem se comunicar, consulte [dicas de solução de problemas para exemplos do WCF](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
+14. No computador cliente, inicie o Client.exe em uma janela de prompt de comando. Se o cliente e o serviço não puderem se comunicar, consulte [dicas de solução de problemas para exemplos do WCF](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).
 
 #### <a name="to-clean-up-after-the-sample"></a>Para limpar após o exemplo
 
-1. Execute o Cleanup. bat na pasta Samples depois de concluir a execução do exemplo. Isso remove os certificados de cliente e servidor do repositório de certificados.
+1. Execute Cleanup.bat na pasta Samples depois de concluir a execução do exemplo. Isso remove os certificados de cliente e servidor do repositório de certificados.
 
 > [!NOTE]
 > Esse script não remove certificados de serviço em um cliente ao executar esse exemplo em computadores. Se você tiver executado Windows Communication Foundation (WCF) exemplos que usam certificados entre computadores, certifique-se de limpar os certificados de serviço que foram instalados no repositório CurrentUser-TrustedPeople. Para fazer isso, use o seguinte comando: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` por exemplo: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com` .

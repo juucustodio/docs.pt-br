@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: usando contadores de desempenho'
 title: Utilizando contadores de desempenho
 ms.date: 03/30/2017
 ms.assetid: 00a787af-1876-473c-a48d-f52b51e28a3f
-ms.openlocfilehash: 0b63cdc145ff8806c26b255500bcb2a132e9ef9f
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: f2305310238df9c11ebc2612248f2d7d1b6ea6f6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596494"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755727"
 ---
 # <a name="using-performance-counters"></a>Utilizando contadores de desempenho
+
 Este exemplo demonstra como acessar os contadores de desempenho do Windows Communication Foundation (WCF) e como criar contadores de desempenho definidos pelo usuário. Este exemplo é baseado na [introdução](getting-started-sample.md).  
   
 > [!NOTE]
@@ -17,7 +19,7 @@ Este exemplo demonstra como acessar os contadores de desempenho do Windows Commu
   
  Neste exemplo, o cliente chama os quatro métodos do `ICalculator` serviço. O cliente continua a fazer isso até que seja interrompido pelo usuário. O serviço permanece inalterado.  
   
- Os contadores de desempenho são habilitados na seção diagnóstico do arquivo Web. config para o serviço, conforme mostrado na seguinte configuração de exemplo.  
+ Os contadores de desempenho são habilitados na seção diagnóstico do arquivo Web.config para o serviço, conforme mostrado na seguinte configuração de exemplo.  
   
 ```xml  
 <configuration>  
@@ -27,7 +29,7 @@ Este exemplo demonstra como acessar os contadores de desempenho do Windows Commu
 </configuration>  
 ```  
   
- Essa tarefa também pode ser feita usando a [ferramenta Editor de configuração (SvcConfigEditor. exe)](../configuration-editor-tool-svcconfigeditor-exe.md).  
+ Essa tarefa também pode ser feita usando a [ferramenta do editor de configuração (SvcConfigEditor.exe)](../configuration-editor-tool-svcconfigeditor-exe.md).  
   
  Quando os contadores de desempenho estão habilitados, o conjunto inteiro de contadores de desempenho do WCF é habilitado para o serviço. O .NET Framework mantém automaticamente os dados de desempenho em três níveis: `ServiceModelService` `ServiceModelEndpoint` e `ServiceModelOperation` . Cada um desses níveis tem contadores de desempenho como "chamadas", "chamadas por segundo" e "chamadas de segurança não autorizadas".  
   
@@ -55,11 +57,11 @@ Este exemplo demonstra como acessar os contadores de desempenho do Windows Commu
   
 ### <a name="to-use-the-configuration-editor-to-enable-counters"></a>Para usar o editor de configuração para habilitar contadores  
   
-1. Abra uma instância do SvcConfigEditor. exe.  
+1. Abra uma instância do SvcConfigEditor.exe.  
   
 2. No menu arquivo, clique em **abrir** e em **arquivo de configuração...**.  
   
-3. Navegue até a pasta de serviço do aplicativo de exemplo e abra o arquivo Web. config.  
+3. Navegue até a pasta de serviço do aplicativo de exemplo e abra o arquivo Web.config.  
   
 4. Clique em **diagnóstico** na árvore de configuração.  
   
@@ -78,4 +80,4 @@ Este exemplo demonstra como acessar os contadores de desempenho do Windows Commu
   
 ## <a name="see-also"></a>Consulte também
 
-- [AppFabric que monitora Exemplos](https://docs.microsoft.com/previous-versions/appfabric/ff383407(v=azure.10))
+- [AppFabric que monitora Exemplos](/previous-versions/appfabric/ff383407(v=azure.10))

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura ASSEMBLYMETADATA'
 title: Estrutura ASSEMBLYMETADATA
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1af98e57-9145-4d35-bb78-77d1da7c91a5
 topic_type:
 - apiref
-ms.openlocfilehash: 5c7211fc2523b70313a1e4d4d9d2da0dcecd1d32
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 6fc9c03bea3b1413cd3a8421746137e37d43bd90
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84009425"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678920"
 ---
 # <a name="assemblymetadata-structure"></a>Estrutura ASSEMBLYMETADATA
+
 Contém informações sobre o assembly referenciado, incluindo sua versão e seu nível de suporte para localidades, processadores e sistemas operacionais.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -43,7 +45,7 @@ typedef struct {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`usMajorVersion`|O número de versão principal do assembly referenciado. Esse valor não pode ser zero. Se todos os bits de `usMajorVersion` estiverem definidos, a versão principal não será especificada.|  
 |`usMinorVersion`|O número de versão secundária do assembly referenciado. Esse valor não pode ser zero. Se todos os bits de `usMinorVersion` estiverem definidos, a versão secundária não será especificada.|  
@@ -57,15 +59,16 @@ typedef struct {
 |`ulOS`|O comprimento da matriz `rOS`.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Estruturas de metadados](metadata-structures.md)
 - [Interface IMetaDataAssemblyEmit](imetadataassemblyemit-interface.md)

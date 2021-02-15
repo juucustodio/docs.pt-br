@@ -1,17 +1,19 @@
 ---
+description: 'Saiba mais sobre: <wsDualHttpBinding>'
 title: <wsDualHttpBinding>
 ms.date: 03/30/2017
 helpviewer_keywords:
 - wsDualHttpBinding Element
 ms.assetid: fd8ac4e2-5641-473b-9115-73f14ab1c065
-ms.openlocfilehash: 01360ae8288b3cb7374597ad77935f634eb0a519
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 14a575d867f2fcd3754d28616e8e2b9d3903f1fe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74139277"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682105"
 ---
 # \<wsDualHttpBinding>
+
 Define uma associação segura, confiável e interoperável adequada para contratos de serviço duplex ou comunicação por meio de intermediários SOAP.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -19,7 +21,7 @@ Define uma associação segura, confiável e interoperável adequada para contra
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<wsDualHttpBinding>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <wsDualHttpBinding>
@@ -55,6 +57,7 @@ Define uma associação segura, confiável e interoperável adequada para contra
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai  
   
 ### <a name="attributes"></a>Atributos  
@@ -82,8 +85,8 @@ Define uma associação segura, confiável e interoperável adequada para contra
 |Elemento|Descrição|  
 |-------------|-----------------|  
 |[\<security>](security-of-wsdualhttpbinding.md)|Define as configurações de segurança para a associação. Esse elemento é do tipo <xref:System.ServiceModel.Configuration.WSDualHttpSecurityElement> .|  
-|[\<readerQuotas>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Define as restrições sobre a complexidade de mensagens SOAP que podem ser processadas por pontos de extremidade configurados com essa associação. Esse elemento é do tipo <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement> .|  
-|[\<reliableSession>](https://docs.microsoft.com/previous-versions/ms731375(v=vs.90))|Especifica se as sessões confiáveis são estabelecidas entre os pontos de extremidade do canal.|  
+|[\<readerQuotas>](/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Define as restrições sobre a complexidade de mensagens SOAP que podem ser processadas por pontos de extremidade configurados com essa associação. Esse elemento é do tipo <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement> .|  
+|[\<reliableSession>](/previous-versions/ms731375(v=vs.90))|Especifica se as sessões confiáveis são estabelecidas entre os pontos de extremidade do canal.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
@@ -92,7 +95,8 @@ Define uma associação segura, confiável e interoperável adequada para contra
 |[\<bindings>](bindings.md)|Esse elemento contém uma coleção de associações padrão e personalizadas.|  
   
 ## <a name="remarks"></a>Comentários  
- O `WSDualHttpBinding` fornece o mesmo suporte para protocolos de serviço Web como o `WSHttpBinding` , mas para uso com contratos duplex. `WSDualHttpBinding`dá suporte apenas à segurança SOAP e requer mensagens confiáveis. Essa associação requer que o cliente tenha um URI público que forneça um ponto de extremidade de retorno de chamada para o serviço. Isso é fornecido pelo `clientBaseAddress` atributo. Uma associação dupla expõe o endereço IP do cliente para o serviço. O cliente deve usar a segurança para garantir que ele se conecte apenas aos serviços que confia.  
+
+ O `WSDualHttpBinding` fornece o mesmo suporte para protocolos de serviço Web como o `WSHttpBinding` , mas para uso com contratos duplex. `WSDualHttpBinding` dá suporte apenas à segurança SOAP e requer mensagens confiáveis. Essa associação requer que o cliente tenha um URI público que forneça um ponto de extremidade de retorno de chamada para o serviço. Isso é fornecido pelo `clientBaseAddress` atributo. Uma associação dupla expõe o endereço IP do cliente para o serviço. O cliente deve usar a segurança para garantir que ele se conecte apenas aos serviços que confia.  
   
  Essa associação pode ser usada para se comunicar de forma confiável por meio de um ou mais intermediários SOAP.  
   
@@ -132,7 +136,7 @@ Define uma associação segura, confiável e interoperável adequada para contra
 </configuration>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.WSDualHttpBinding>
 - <xref:System.ServiceModel.Configuration.WSDualHttpBindingElement>

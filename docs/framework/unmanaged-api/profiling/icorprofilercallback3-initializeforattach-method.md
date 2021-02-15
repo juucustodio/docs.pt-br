@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerCallback3:: InitializeForAttach'
 title: Método ICorProfilerCallback3::InitializeForAttach
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: bed097b3-6d52-46c9-bee7-ac7910b6fc3f
 topic_type:
 - apiref
-ms.openlocfilehash: 9bff594d0307153fb468b28c1535977f06997748
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: b3c5b8701df9e680e4fcbd57f4e08395dfe0b8da
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84499708"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788807"
 ---
 # <a name="icorprofilercallback3initializeforattach-method"></a>Método ICorProfilerCallback3::InitializeForAttach
+
 Chamado pelo Common Language Runtime (CLR) para dar ao criador de perfil uma oportunidade de inicializar seu estado após uma operação de anexação.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,6 +37,7 @@ HRESULT InitializeForAttach(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pCorProfilerInfoUnk`  
  no Um ponteiro de interface para a `ICorProfilerInfo*` interface.  
   
@@ -45,9 +48,11 @@ HRESULT InitializeForAttach(
  no O tamanho, em bytes, dos dados que `pvClientData` aponta para.  
   
 ## <a name="remarks"></a>Comentários  
+
  O CLR chama `InitializeForAttach` para dar ao criador de perfil uma oportunidade de solicitar retornos de chamada.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -56,7 +61,7 @@ HRESULT InitializeForAttach(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Interface ICorProfilerInfo3](icorprofilerinfo3-interface.md)

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c8e1c91f4fee8aa896b6617c815fe2a4b6d22f2a
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: fa24c664e9f7cf6da78d0703c7ebb52c8ebbec20
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85614309"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90606510"
 ---
 ### <a name="accessibility-improvements-in-windows-forms-controls"></a>Melhorias de acessibilidade em controles do Windows Forms
 
@@ -40,7 +40,7 @@ O Windows Forms está melhorando a forma como funciona com tecnologias de acessi
 </configuration>
 ```
 
-Aplicativos destinados ao .NET Framework 4.7.1 ou posterior que desejam preservar o comportamento de acessibilidade herdado pode aceitar o uso das funcionalidades de acessibilidade herdadas definindo explicitamente essa opção de AppContext como `true`.<p/>Para obter uma visão geral de automação da interface do usuário, confira a [Visão geral de automação da interface do usuário](~/docs/framework/ui-automation/ui-automation-overview.md).<p/>**Adicionado o suporte para padrões e propriedades de automação de interface do usuário**<br/>Os clientes de acessibilidade podem aproveitar as novas funcionalidades de acessibilidade do WinForms usando padrões de invocação comuns, descritos publicamente. Esses padrões não são específicos do WinForms. Por exemplo, clientes de acessibilidade podem chamar o método QueryInterface na interface IAccessible (MAAS) para obter uma interface IServiceProvider. Se essa interface estiver disponível, os clientes poderão usar seu método QueryService para solicitar uma interface IAccessibleEx. Para obter mais informações, consulte [Usar IAccessibleEx de um cliente](https://docs.microsoft.com/windows/desktop/WinAuto/using-iaccessibleex-from-a-client). Começando com o .NET Framework 4.7.1, IServiceProvider e [IAccessibleEx](https://docs.microsoft.com/windows/desktop/WinAuto/iaccessibleex) (quando aplicáveis) estão disponíveis para objetos de acessibilidade do WinForms.<p/>O .NET Framework 4.7.1 adicionou o suporte para os seguintes padrões e propriedades de automação da interface do usuário:
+Aplicativos destinados ao .NET Framework 4.7.1 ou posterior que desejam preservar o comportamento de acessibilidade herdado pode aceitar o uso das funcionalidades de acessibilidade herdadas definindo explicitamente essa opção de AppContext como `true`.<p/>Para obter uma visão geral de automação da interface do usuário, confira a [Visão geral de automação da interface do usuário](~/docs/framework/ui-automation/ui-automation-overview.md).<p/>**Adicionado o suporte para padrões e propriedades de automação de interface do usuário**<br/>Os clientes de acessibilidade podem aproveitar as novas funcionalidades de acessibilidade do WinForms usando padrões de invocação comuns, descritos publicamente. Esses padrões não são específicos do WinForms. Por exemplo, clientes de acessibilidade podem chamar o método QueryInterface na interface IAccessible (MAAS) para obter uma interface IServiceProvider. Se essa interface estiver disponível, os clientes poderão usar seu método QueryService para solicitar uma interface IAccessibleEx. Para obter mais informações, consulte [Usar IAccessibleEx de um cliente](/windows/desktop/WinAuto/using-iaccessibleex-from-a-client). Começando com o .NET Framework 4.7.1, IServiceProvider e [IAccessibleEx](/windows/desktop/WinAuto/iaccessibleex) (quando aplicáveis) estão disponíveis para objetos de acessibilidade do WinForms.<p/>O .NET Framework 4.7.1 adicionou o suporte para os seguintes padrões e propriedades de automação da interface do usuário:
 
 - Os controles <xref:System.Windows.Forms.ToolStripSplitButton> e <xref:System.Windows.Forms.ComboBox> dão suporte ao [Padrão expandir/recolher](~/docs/framework/ui-automation/implementing-the-ui-automation-expandcollapse-control-pattern.md).
 - O <xref:System.Windows.Forms.ToolStripMenuItem> controle tem uma propriedade [ControlType](~/docs/framework/ui-automation/ui-automation-support-for-the-menubar-control-type.md) com valor <xref:System.Windows.Automation.ControlType.MenuItem?displayProperty=nameWithType>.
@@ -96,7 +96,7 @@ Observação: o Windows 10 mudou os valores de algumas cores do sistema de Alto 
 |:--------|:------------|
 | Escopo   | Principal       |
 | Versão | 4.8         |
-| Type    | Redirecionando |
+| Tipo    | Redirecionando |
 
 #### <a name="affected-apis"></a>APIs afetadas
 

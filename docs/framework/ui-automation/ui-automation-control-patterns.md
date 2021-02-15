@@ -8,20 +8,22 @@ helpviewer_keywords:
 - control patterns, UI Automation
 - UI Automation, control patterns
 ms.assetid: 1f8b5ab3-c193-4d0f-9e67-a0076225a1a5
-ms.openlocfilehash: eb2bf13a22af1555e68b415eec52bd259baa2df3
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 850affa26a821ddd8da62c8fe910768ff061c1c1
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87163830"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96261196"
 ---
 # <a name="ui-automation-control-patterns"></a>Padrões de controle de automação da interface do usuário
+
 > [!NOTE]
 > Esta documentação destina-se a desenvolvedores do .NET Framework que querem usar as classes da [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] gerenciadas definidas no namespace <xref:System.Windows.Automation>. Para obter as informações mais recentes sobre a [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], consulte [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32) (API de Automação do Windows: Automação da Interface do Usuário).  
   
  Esta seção fornece informações detalhadas sobre como usar [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] padrões de controle.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Implementando o padrão de controle de encaixe da automação de interface do usuário](implementing-the-ui-automation-dock-control-pattern.md)  
  [Implementando o padrão de controle ExpandCollapse de interface de usuário](implementing-the-ui-automation-expandcollapse-control-pattern.md)  
  [Implementando o Padrão de Controle Grid de Automação de Interface de Usuário](implementing-the-ui-automation-grid-control-pattern.md)  
@@ -39,4 +41,4 @@ ms.locfileid: "87163830"
  [Implementando o Padrão de Controle de Transformação de Automação de IU](implementing-the-ui-automation-transform-control-pattern.md)  
  [Implementando o Padrão Controle de Value de Automação de Interface de Usuário](implementing-the-ui-automation-value-control-pattern.md)  
  [Implementando o Padrão Controle de Window de Automação de Interface de Usuário](implementing-the-ui-automation-window-control-pattern.md)  
- [Tópicos explicativos](ui-automation-control-patterns-how-to-topics.md)
+ [Tópicos de instruções](ui-automation-control-patterns-how-to-topics.md)

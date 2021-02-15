@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: importação e exportação de esquema'
 title: Importação e exportação de esquemas
 ms.date: 03/30/2017
 dev_langs:
@@ -9,14 +10,15 @@ helpviewer_keywords:
 - XsdDataContractExporter class
 - XsdDataContractImporter class
 ms.assetid: 0da32b50-ccd9-463a-844c-7fe803d3bf44
-ms.openlocfilehash: 942ade69d92d8a213f65a3a2e463b6924e2f986e
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 3381cfee1d431b53a6f579ae50655a6f4fe80a3a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84590209"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733158"
 ---
 # <a name="schema-import-and-export"></a>Importação e exportação de esquemas
+
 Windows Communication Foundation (WCF) inclui um novo mecanismo de serialização, o <xref:System.Runtime.Serialization.DataContractSerializer> . O se `DataContractSerializer` traduz entre objetos de .NET Framework e XML (em ambas as direções). Além do próprio serializador, o WCF inclui mecanismos de importação de esquema e exportação de esquema associados. O *esquema* é uma descrição formal, precisa e legível por computador da forma do XML que o serializador produz ou que o desserializador pode acessar. O WCF usa o XSD (linguagem de definição de esquema XML) World Wide Web Consortium (W3C) como sua representação de esquema, o que é amplamente interoperável com várias plataformas de terceiros.  
   
  O componente de importação de esquema, <xref:System.Runtime.Serialization.XsdDataContractImporter> , usa um documento de esquema XSD e gera .NET Framework classes (normalmente classes de contrato de dados), de modo que os formulários serializados correspondam ao esquema fornecido.  
@@ -42,9 +44,11 @@ Windows Communication Foundation (WCF) inclui um novo mecanismo de serializaçã
  O <xref:System.Runtime.Serialization.XsdDataContractExporter> permite que você faça o inverso — pegue os tipos que são serializáveis com o `DataContractSerializer` e gere um documento de esquema XSD.  
   
 ## <a name="fidelity-is-not-guaranteed"></a>A fidelidade não é garantida  
+
  Não há garantia de que o esquema ou os tipos façam uma viagem de ida e volta com fidelidade total. (Uma *viagem* de ida e volta significa importar um esquema para criar um conjunto de classes e exportar o resultado para criar um esquema novamente.) O mesmo esquema não pode ser retornado. A reversão do processo também não é garantida para preservar a fidelidade. (Exporte um tipo para gerar seu esquema e, em seguida, importe o tipo de volta. É improvável que o mesmo tipo seja retornado.)  
   
 ## <a name="supported-types"></a>Tipos com suporte  
+
  O modelo de contrato de dados dá suporte a apenas um subconjunto limitado do esquema WC3. Qualquer esquema que não esteja em conformidade com esse subconjunto causará uma exceção durante o processo de importação. Por exemplo, não há como especificar que um membro de dados de um contrato de dados deve ser serializado como um atributo XML. Portanto, os esquemas que exigem o uso de atributos XML não têm suporte e causarão exceções durante a importação, pois é impossível gerar um contrato de dados com a projeção XML correta.  
   
  Por exemplo, o fragmento de esquema a seguir não pode ser importado usando as configurações de importação padrão.  
@@ -64,5 +68,5 @@ Windows Communication Foundation (WCF) inclui um novo mecanismo de serializaçã
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.Runtime.Serialization.XsdDataContractImporter>
 - <xref:System.Runtime.Serialization.XsdDataContractExporter>
-- [Importando o esquema para gerar classes](importing-schema-to-generate-classes.md)
-- [Exportando esquemas de Classes](exporting-schemas-from-classes.md)
+- [Importando esquema para gerar classes](importing-schema-to-generate-classes.md)
+- [Exportando esquemas de classes](exporting-schemas-from-classes.md)

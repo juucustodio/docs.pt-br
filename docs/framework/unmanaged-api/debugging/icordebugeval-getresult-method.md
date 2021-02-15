@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugEval:: GetResult'
 title: Método ICorDebugEval::GetResult
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 50dbb9af-58a1-41f4-b56d-3da20011884f
 topic_type:
 - apiref
-ms.openlocfilehash: 2d065d956319076d3b92eddafd4a2c25ffbfbac1
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: 03ab00f5c9a538e11a2046da9cbfd5ad7225231c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976259"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694208"
 ---
 # <a name="icordebugevalgetresult-method"></a>Método ICorDebugEval::GetResult
+
 Obtém os resultados dessa avaliação.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,15 +36,18 @@ HRESULT GetResult (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ppResult`  
  fora Aponta para o endereço de um objeto ICorDebugValue que representa os resultados dessa avaliação, se a avaliação for concluída normalmente.  
   
 ## <a name="remarks"></a>Comentários  
+
  O `GetResult` método é válido somente após a conclusão da avaliação.  
   
  Se a avaliação for concluída normalmente, `ppResult` especifica os resultados. Se ele terminar com uma exceção, o resultado será a exceção lançada. Se a avaliação foi para um novo objeto, o resultado é a referência ao novo objeto.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

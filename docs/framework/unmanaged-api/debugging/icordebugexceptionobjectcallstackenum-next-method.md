@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICorDebugExceptionObjectCallStackEnum:: Next Method'
 title: Método ICorDebugExceptionObjectCallStackEnum::Next
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 3328a2c0-1e48-4a54-802a-9b474cf82c21
 topic_type:
 - apiref
-ms.openlocfilehash: 6fce9f61e222d0fc1763495de162a94a7fc22689
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: df68eb6e4794d294fc39dd943065582dc52a58a1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82975973"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99693311"
 ---
 # <a name="icordebugexceptionobjectcallstackenumnext-method"></a>Método ICorDebugExceptionObjectCallStackEnum::Next
+
 Obtém o número especificado de instâncias [CorDebugExceptionObjectStackFrame](cordebugexceptionobjectstackframe-structure.md) que contêm informações de uma pilha de chamadas do objeto de exceção.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT Next(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `celt`  
  no O número de instâncias de [CorDebugExceptionObjectStackFrame](cordebugexceptionobjectstackframe-structure.md) a serem recuperadas.  
   
@@ -48,6 +51,7 @@ HRESULT Next(
 ## <a name="remarks"></a>Comentários  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

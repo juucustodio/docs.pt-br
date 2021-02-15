@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorNativeType'
 title: Enumeração CorNativeType
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: e47a72f1-9609-48ed-bb34-97170d7f6890
 topic_type:
 - apiref
-ms.openlocfilehash: dd97c479f12e7bdb015b39a802b398ca2b0bcd3f
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: d2313eef124f3308c4792b47da8b7c8bba984597
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84007631"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784321"
 ---
 # <a name="cornativetype-enumeration"></a>Enumeração CorNativeType
+
 Contém valores que descrevem os tipos nativos não gerenciados.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -87,7 +89,7 @@ typedef enum CorNativeType {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`NATIVE_TYPE_END`|Obsoleto.|  
 |`NATIVE_TYPE_VOID`|Obsoleto.|  
@@ -138,13 +140,14 @@ typedef enum CorNativeType {
 |`NATIVE_TYPE_MAX`|Um valor inválido.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorHdr. h  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.InteropServices.UnmanagedType>
 - [Enumerações de metadados](metadata-enumerations.md)

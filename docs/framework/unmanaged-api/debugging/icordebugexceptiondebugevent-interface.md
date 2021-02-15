@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugExceptionDebugEvent'
 title: Interface ICorDebugExceptionDebugEvent
 ms.date: 03/30/2017
 ms.assetid: f9ba60d8-b54d-417e-bb3e-fde4b41ca44c
-ms.openlocfilehash: dfa65aa1b63c996068e75ff1165111d5fcfe77eb
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: eacaa344763fb77faef5f66282809d741f017b37
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82975999"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99693415"
 ---
 # <a name="icordebugexceptiondebugevent-interface"></a>Interface ICorDebugExceptionDebugEvent
+
 Estende a interface [ICorDebugDebugEvent](icordebugdebugevent-interface.md) para dar suporte a eventos de exceção.  
   
 ## <a name="methods"></a>Métodos  
@@ -21,6 +23,7 @@ Estende a interface [ICorDebugDebugEvent](icordebugdebugevent-interface.md) para
 |[Método GetStackPointer](icordebugexceptiondebugevent-getstackpointer-method.md)|Obtém o ponteiro de pilha para este evento de depuração de exceção.|  
   
 ## <a name="remarks"></a>Comentários  
+
  A `ICorDebugExceptionDebugEvent` interface é implementada pelos seguintes tipos de evento:  
   
 - [MANAGED_EXCEPTION_FIRST_CHANCE](cordebugrecordformat-enumeration.md)  
@@ -32,9 +35,10 @@ Estende a interface [ICorDebugDebugEvent](icordebugdebugevent-interface.md) para
 - [MANAGED_EXCEPTION_UNHANDLED](cordebugrecordformat-enumeration.md)  
   
 > [!NOTE]
-> A interface está disponível somente com .NET Native. A tentativa de chamar `QueryInterface` para recuperar um ponteiro de interface `E_NOINTERFACE` retorna para cenários ICorDebug fora do .net Native.  
+> A interface está disponível somente com .NET Native. A tentativa de chamar `QueryInterface` para recuperar um ponteiro de interface retorna `E_NOINTERFACE` para cenários ICorDebug fora do .net Native.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

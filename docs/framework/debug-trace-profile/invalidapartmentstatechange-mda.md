@@ -12,13 +12,15 @@ helpviewer_keywords:
 - threading [.NET Framework], managed debugging assistants
 - COM apartment states
 ms.assetid: e56fb9df-5286-4be7-b313-540c4d876cd7
-ms.openlocfilehash: c6f7b6a5e450d4167946d22b2ada268ea2b0135f
-ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.openlocfilehash: db55e3ac2d6862d008013abef0f09f67213d9faa
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86051821"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96272742"
 ---
 # <a name="invalidapartmentstatechange-mda"></a>MDA invalidApartmentStateChange
+
 O MDS (Assistente de Depuração Gerenciado) de `invalidApartmentStateChange` é ativado por qualquer um de dois problemas:  
   
 - É feita uma tentativa de alterar o estado de apartment COM de um thread que já foi inicializado pelo COM para um estado de apartment diferente.  
@@ -38,14 +40,17 @@ O MDS (Assistente de Depuração Gerenciado) de `invalidApartmentStateChange` é
 - O método `CoUninitialize` (ou o método `CoInitializeEx`) com um modelo de simultaneidade diferente é chamado no thread.  
   
 ## <a name="resolution"></a>Resolução  
+
  Defina o estado de apartment do thread antes que ele comece a executar ou então aplique o atributo <xref:System.STAThreadAttribute> ou o atributo <xref:System.MTAThreadAttribute> ao método principal do aplicativo.  
   
  Para a segunda causa, idealmente, o código que chama o método `CoUninitialize` deve ser modificado para atrasar a chamada até que o thread esteja prestes a ser encerrado e que não exista nenhum RCW nem componentes COM subjacentes que ainda estejam em uso pelo thread. No entanto, se não é possível modificar o código que chama o método `CoUninitialize`, então nenhum RCWs devem ser usado de threads cuja inicialização é cancelada dessa maneira.  
   
 ## <a name="effect-on-the-runtime"></a>Efeito sobre o runtime  
+
  Esse MDA não tem efeito sobre o CLR.  
   
 ## <a name="output"></a>Saída  
+
  O estado de apartment COM do thread atual e o estado em que o código estava tentando aplicar.  
   
 ## <a name="configuration"></a>Configuração  
@@ -59,6 +64,7 @@ O MDS (Assistente de Depuração Gerenciado) de `invalidApartmentStateChange` é
 ```  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo de código a seguir demonstra uma situação que pode ativar esse MDA.  
   
 ```csharp
@@ -75,8 +81,8 @@ namespace ApartmentStateMDA
 }  
 ```  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
-- [Diagnosticando erros com assistentes para depuração gerenciada](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Diagnosticando erros com assistentes de depuração gerenciados](diagnosing-errors-with-managed-debugging-assistants.md)
 - [Realizando marshaling de interoperabilidade](../interop/interop-marshaling.md)

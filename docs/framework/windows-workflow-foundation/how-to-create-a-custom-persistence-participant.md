@@ -1,16 +1,18 @@
 ---
-title: 'Como: Crie um participante personalizado de persistência'
+description: 'Saiba mais sobre: como criar um participante de persistência personalizado'
+title: 'Como: criar um participante de persistência personalizado'
 ms.date: 03/30/2017
 ms.assetid: 1d9cc47a-8966-4286-94d5-4221403d9c06
-ms.openlocfilehash: 0e61395cb59a7d162668445d23241e3ff562d67b
-ms.sourcegitcommit: 32a575bf4adccc901f00e264f92b759ced633379
+ms.openlocfilehash: a0bdd8407bf409e7e485f4f32a0dd3f61e6f82b0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74802538"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99742089"
 ---
-# <a name="how-to-create-a-custom-persistence-participant"></a>Como: Crie um participante personalizado de persistência
-O seguinte procedimento tem as etapas para criar um participante de persistência. Consulte o tópico [participando da persistência](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd699769(v=vs.100)) e a [extensibilidade de armazenamento](store-extensibility.md) para obter exemplos de implementações de participantes de persistência.  
+# <a name="how-to-create-a-custom-persistence-participant"></a>Como: criar um participante de persistência personalizado
+
+O seguinte procedimento tem as etapas para criar um participante de persistência. Consulte o tópico [participando da persistência](/previous-versions/dotnet/netframework-4.0/dd699769(v=vs.100)) e a [extensibilidade de armazenamento](store-extensibility.md) para obter exemplos de implementações de participantes de persistência.  
   
 1. Crie uma classe que deriva de <xref:System.Activities.Persistence.PersistenceParticipant> ou classe de <xref:System.Activities.Persistence.PersistenceIOParticipant> . A classe PersistenceIOParticipant oferece os mesmos pontos de extensibilidade que a classe PersistenceParticipant, além de ser capaz de participar de operações de e/s. Execute uma ou mais das seguintes etapas.  
   

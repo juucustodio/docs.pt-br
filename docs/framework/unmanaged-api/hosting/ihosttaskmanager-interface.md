@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IHostTaskManager'
 title: Interface IHostTaskManager
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4a0b05b9-3ef1-4607-b7c8-bd4dd43647a0
 topic_type:
 - apiref
-ms.openlocfilehash: 190908c675b96b8ea2d81fb0203aa16a80d6a8b4
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 67574550ba26970189ea53b8e6bdb867fea8549b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84501389"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707443"
 ---
 # <a name="ihosttaskmanager-interface"></a>Interface IHostTaskManager
+
 Fornece métodos que permitem que o Common Language Runtime (CLR) trabalhe com tarefas por meio do host em vez de usar as funções de fibra ou de Threading do sistema operacional padrão.  
   
 ## <a name="methods"></a>Métodos  
@@ -48,18 +50,20 @@ Fornece métodos que permitem que o Common Language Runtime (CLR) trabalhe com t
 |[Método SwitchToTask](ihosttaskmanager-switchtotask-method.md)|Notifica o host de que ele deve desativar a tarefa atual.|  
   
 ## <a name="remarks"></a>Comentários  
- `IHostTaskManager`permite que o CLR crie e gerencie tarefas, para fornecer ganchos para o host tomar uma ação quando o controle transfere de um código gerenciado para não gerenciado e vice-versa, e para especificar determinadas ações que o host pode e não pode executar durante a execução do código.  
+
+ `IHostTaskManager` permite que o CLR crie e gerencie tarefas, para fornecer ganchos para o host tomar uma ação quando o controle transfere de um código gerenciado para não gerenciado e vice-versa, e para especificar determinadas ações que o host pode e não pode executar durante a execução do código.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRTask](iclrtask-interface.md)
 - [Interface ICLRTaskManager](iclrtaskmanager-interface.md)

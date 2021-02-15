@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 1028-CompleteTransactionContextWorkItem'
 title: 1028 - CompleteTransactionContextWorkItem
 ms.date: 03/30/2017
 ms.assetid: 95423f9d-d29a-460e-bcd8-096e80af5bd0
-ms.openlocfilehash: 806a437822cef8802a2bef6a54f924f84c88ef60
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: ae66072769c24ce8d44f92a88cd4232d20bde5f6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62008805"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755454"
 ---
 # <a name="1028---completetransactioncontextworkitem"></a>1028 - CompleteTransactionContextWorkItem
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,9 +22,11 @@ ms.locfileid: "62008805"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
+
  Indica que um TransactionContextWorkItem terminado.  
   
 ## <a name="message"></a>Mensagem  
+
  Um TransactionContextWorkItem concluiu para atividades “%1 ", DisplayName: “%2", InstanceId: “%3".  
   
 ## <a name="details"></a>Detalhes  

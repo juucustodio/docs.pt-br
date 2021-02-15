@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Função StrongNameSignatureSize'
 title: Função StrongNameSignatureSize
 ms.date: 03/30/2017
 api_name:
@@ -14,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: 4fde4cd0-f53e-4411-a2fe-fc5c54472f95
 topic_type:
 - apiref
-ms.openlocfilehash: a19d875b8fb81f2af3821e69452f0f0ed591cd22
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b3f22a6a4d5455af4dd17cb75edfd18befed7de3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176884"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99670509"
 ---
 # <a name="strongnamesignaturesize-function"></a>Função StrongNameSignatureSize
-Retorna o tamanho da assinatura de nome forte. `StrongNameSignatureSize`é normalmente usado por compiladores para determinar quanto espaço reservar no arquivo ao criar um conjunto assinado por atraso.  
+
+Retorna o tamanho da assinatura de nome forte. `StrongNameSignatureSize` normalmente é usado por compiladores para determinar a quantidade de espaço a ser reservada no arquivo ao criar um assembly com assinatura atrasada.  
   
- Esta função foi preterida. Use o método [ICLRStrongName::StrongNameSignatureSize](../hosting/iclrstrongname-strongnamesignaturesize-method.md) em vez disso.  
+ Esta função foi preterida. Em vez disso, use o método [ICLRStrongName:: StrongNameSignatureSize](../hosting/iclrstrongname-strongnamesignaturesize-method.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -36,32 +38,36 @@ BOOLEAN StrongNameSignatureSize (
 );
 ```  
   
-## <a name="parameters"></a>parâmetros  
+## <a name="parameters"></a>Parâmetros  
+
  `pbPublicKeyBlob`  
- [em] Uma estrutura do tipo [PublicKeyBlob](publickeyblob-structure.md) que contém a parte pública do par de chaves usada para gerar a assinatura de nome forte.  
+ no Uma estrutura do tipo [PublicKeyBlob](publickeyblob-structure.md) que contém a parte pública do par de chaves usado para gerar a assinatura de nome forte.  
   
  `cbPublicKeyBlob`  
- [em] O tamanho, em bytes, de `pbPublicKeyBlob`.  
+ no O tamanho, em bytes, de `pbPublicKeyBlob` .  
   
  `pcbSize`  
- [em] O número de bytes necessários para armazenar a assinatura de nome forte.  
+ no O número de bytes necessários para armazenar a assinatura de nome forte.  
   
 ## <a name="return-value"></a>Valor retornado  
- `true`em conclusão bem sucedida; caso contrário, `false`.  
+
+ `true` após a conclusão bem-sucedida; caso contrário, `false` .  
   
 ## <a name="remarks"></a>Comentários  
- Se `StrongNameSignatureSize` a função não for concluída com sucesso, chame a função [StrongNameErrorInfo](strongnameerrorinfo-function.md) para recuperar o último erro gerado.  
+
+ Se a `StrongNameSignatureSize` função não for concluída com êxito, chame a função [StrongNameErrorInfo](strongnameerrorinfo-function.md) para recuperar o último erro gerado.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
- **Cabeçalho:** StrongName.h  
+ **Cabeçalho:** StrongName. h  
   
- **Biblioteca:** Incluído como um recurso em MsCorEE.dll  
+ **Biblioteca:** Incluído como um recurso no MsCorEE.dll  
   
- **.NET Framework Versions:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Método StrongNameSignatureSize](../hosting/iclrstrongname-strongnamesignaturesize-method.md)
 - [Interface ICLRStrongName](../hosting/iclrstrongname-interface.md)

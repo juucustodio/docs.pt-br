@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estruturas e classes (Visual Basic)'
 title: Estruturas e classes
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,14 +10,15 @@ helpviewer_keywords:
 - structures [Visual Basic], structure variables
 - structure variables [Visual Basic]
 ms.assetid: a221e74a-ffcf-4bdc-a0f6-a088a9bf26cc
-ms.openlocfilehash: d252d9216a9b825ad0663a5779d7ce7f81fa9011
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 129948bd9a16309ffea5b1e4c690d8883c450b74
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84393566"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430619"
 ---
 # <a name="structures-and-classes-visual-basic"></a>Estruturas e classes (Visual Basic)
+
 Visual Basic unifica a sintaxe para estruturas e classes, com o resultado de que ambas as entidades dão suporte à maioria dos mesmos recursos. No entanto, também há diferenças importantes entre estruturas e classes.  
   
  Classes têm a vantagem de ser tipos de referência — passar uma referência é mais eficiente do que passar uma variável de estrutura com todos os seus dados. Por outro lado, as estruturas não exigem a alocação de memória no heap global.  
@@ -24,6 +26,7 @@ Visual Basic unifica a sintaxe para estruturas e classes, com o resultado de que
  Como não é possível herdar de uma estrutura, as estruturas devem ser usadas somente para objetos que não precisam ser estendidos. Use estruturas quando o objeto que você deseja criar tiver um tamanho de instância pequeno e leve em conta as características de desempenho de classes versus estruturas.  
   
 ## <a name="similarities"></a>Semelhanças  
+
  Estruturas e classes são semelhantes nos seguintes aspectos:  
   
 - Ambos são tipos de *contêineres* , o que significa que eles contêm outros tipos como membros.  
@@ -41,6 +44,7 @@ Visual Basic unifica a sintaxe para estruturas e classes, com o resultado de que
 - Ambos podem declarar e gerar eventos, e ambos podem declarar delegados.  
   
 ## <a name="differences"></a>Diferenças  
+
  Estruturas e classes diferem nas seguintes particularidades:  
   
 - Estruturas são *tipos de valor*; classes são *tipos de referência*. Uma variável de um tipo de estrutura contém os dados da estrutura, em vez de conter uma referência aos dados como um tipo de classe.  
@@ -53,7 +57,7 @@ Visual Basic unifica a sintaxe para estruturas e classes, com o resultado de que
   
 - Elementos de estrutura não podem ser declarados como `Protected` ; membros de classe podem.  
   
-- Um procedimento de estrutura pode manipular eventos somente se for um [Shared](../../../language-reference/modifiers/shared.md) `Sub` procedimento compartilhado e apenas por meio da [instrução AddHandler](../../../language-reference/statements/addhandler-statement.md); qualquer procedimento de classe pode manipular eventos, usando a palavra-chave [Handles](../../../language-reference/statements/handles-clause.md) ou a `AddHandler` instrução. Para obter mais informações, consulte [Eventos](../events/index.md).  
+- Um procedimento de estrutura pode manipular eventos somente se for um [](../../../language-reference/modifiers/shared.md) `Sub` procedimento compartilhado e apenas por meio da [instrução AddHandler](../../../language-reference/statements/addhandler-statement.md); qualquer procedimento de classe pode manipular eventos, usando a palavra-chave [Handles](../../../language-reference/statements/handles-clause.md) ou a `AddHandler` instrução. Para obter mais informações, consulte [Eventos](../events/index.md).  
   
 - Declarações de variável de estrutura não podem especificar inicializadores ou tamanhos iniciais para matrizes; declarações de variável de classe podem.  
   
@@ -70,9 +74,10 @@ Visual Basic unifica a sintaxe para estruturas e classes, com o resultado de que
  Cada estrutura tem um construtor público implícito sem parâmetros. Esse construtor inicializa todos os elementos de dados da estrutura para seus valores padrão. Você não pode redefinir esse comportamento.  
   
 ## <a name="instances-and-variables"></a>Instâncias e variáveis  
+
  Como estruturas são tipos de valor, cada variável de estrutura é permanentemente associada a uma instância de estrutura individual. Mas classes são tipos de referência, e uma variável de objeto pode se referir a várias instâncias de classe em momentos diferentes. Essa distinção afeta o uso de estruturas e classes das seguintes maneiras:  
   
-- **Initialization.** Uma variável de estrutura inclui implicitamente uma inicialização dos elementos usando o construtor sem parâmetros da estrutura. Portanto, `Dim s As struct1` é equivalente a `Dim s As struct1 = New struct1()` .  
+- **Inicialização.** Uma variável de estrutura inclui implicitamente uma inicialização dos elementos usando o construtor sem parâmetros da estrutura. Portanto, `Dim s As struct1` é equivalente a `Dim s As struct1 = New struct1()` .  
   
 - **Atribuindo variáveis.** Quando você atribui uma variável de estrutura a outra ou passa uma instância de estrutura para um argumento de procedimento, os valores atuais de todos os elementos variáveis são copiados para a nova estrutura. Quando você atribui uma variável de objeto a outra ou passa uma variável de objeto para um procedimento, somente o ponteiro de referência é copiado.  
   
@@ -84,13 +89,13 @@ Visual Basic unifica a sintaxe para estruturas e classes, com o resultado de que
   
      Os elementos de estrutura, no entanto, são isolados em sua própria instância. As alterações em seus valores não são refletidas em nenhuma outra variável de estrutura, mesmo em outras instâncias da mesma `Structure` declaração.  
   
-- **Igualmente.** O teste de igualdade de duas estruturas deve ser executado com um teste de elemento por elemento. Duas variáveis de objeto podem ser comparadas usando o <xref:System.Object.Equals%2A> método. <xref:System.Object.Equals%2A>indica se as duas variáveis apontam para a mesma instância.  
+- **Igualmente.** O teste de igualdade de duas estruturas deve ser executado com um teste de elemento por elemento. Duas variáveis de objeto podem ser comparadas usando o <xref:System.Object.Equals%2A> método. <xref:System.Object.Equals%2A> indica se as duas variáveis apontam para a mesma instância.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Tipos de dados](index.md)
+- [Data Types](index.md)
 - [Tipos de dados compostos](composite-data-types.md)
-- [Tipos de valor e referência](value-types-and-reference-types.md)
+- [Tipos de valor e tipos de referência](value-types-and-reference-types.md)
 - [Estruturas](structures.md)
 - [Solução de problemas de tipos de dados](troubleshooting-data-types.md)
 - [Estruturas e outros elementos de programação](structures-and-other-programming-elements.md)

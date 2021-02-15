@@ -2,21 +2,20 @@
 title: Selecionando uma classe de coleção
 description: Saiba como decidir qual classe de coleção no .NET escolher. A utilização do tipo errado pode restringir o uso da coleção.
 ms.date: 03/18/2019
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - last-in-first-out collections
 - first-in-first-out collections
-- collections [.NET Framework], selecting collection class
+- collections [.NET], selecting collection class
 - indexed collections
 - Collections classes
 - grouping data in collections, selecting collection class
 ms.assetid: ba049f9a-ce87-4cc4-b319-3f75c8ddac8a
-ms.openlocfilehash: 52a839661a09d6fa7561d67b82d1c1bf854e3cfd
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 7af08949df999ab80fce1308927d87a8935e3b5d
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600809"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94818720"
 ---
 # <a name="selecting-a-collection-class"></a>Selecionando uma classe de coleção
 
@@ -25,7 +24,7 @@ Certifique-se de escolher sua classe de coleção com cuidado. A utilização do
 > [!IMPORTANT]
 > Evite usar os tipos no namespace <xref:System.Collections>. As versões genéricas e simultâneas das coleções são as recomendadas devido à maior segurança de tipos e outras melhorias.
 
-Considere as perguntas a seguir:
+Considere as seguintes perguntas:
 
 - Você precisa de uma lista sequencial em que o elemento normalmente será descartado após seu valor ser recuperado?
 
@@ -83,9 +82,9 @@ O LINQ to Objects permite que os desenvolvedores usem consultas LINQ para acessa
 
 PLINQ fornece uma implementação paralela de LINQ to Objects que pode oferecer uma execução de consulta mais rápida em muitos cenários, por meio do uso mais eficiente dos computadores de vários núcleos. Para obter mais informações, consulte [PLINQ (Parallel LINQ)](../parallel-programming/introduction-to-plinq.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.Collections>
 - <xref:System.Collections.Specialized>
 - <xref:System.Collections.Generic>
-- [Coleções com segurança de thread](thread-safe/index.md)
+- [Coleções thread-safe](thread-safe/index.md)

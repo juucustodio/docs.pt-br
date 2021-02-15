@@ -2,21 +2,20 @@
 title: Pausando e interrompendo threads
 description: Saiba como pausar & threads de interrupção no .NET. Saiba como usar métodos como thread. Sleep & thread. Interrupt, & exceções como ThreadInterruptedException.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - interrupting threads
-- threading [.NET Framework], pausing
+- threading [.NET], pausing
 - pausing threads
 ms.assetid: 9fce4859-a19d-4506-b082-7dd0792688ca
-ms.openlocfilehash: f7f414ec716bac5f1e840c5e8a0946024e059fb6
-ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
+ms.openlocfilehash: 157109ad9e9009516b107b271a59267f982c784d
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84769113"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94826216"
 ---
 # <a name="pausing-and-interrupting-threads"></a>Pausando e interrompendo threads
 
@@ -48,7 +47,7 @@ As formas mais comuns para sincronizar as atividades de threads são segmentos d
   
 - <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> ativa um thread de qualquer espera em que ele possa estar e faz com que um <xref:System.Threading.ThreadAbortException> seja gerado no thread. Para obter detalhes, confira [Destruindo threads](destroying-threads.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.Threading.Thread>
 - <xref:System.Threading.ThreadInterruptedException>

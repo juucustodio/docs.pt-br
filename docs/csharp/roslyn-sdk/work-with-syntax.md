@@ -3,16 +3,16 @@ title: Usar o modelo de sintaxe do SDK do .NET Compiler Platform
 description: Esta visão geral fornece uma compreensão dos tipos usados para entender e manipular nós de sintaxe.
 ms.date: 10/15/2017
 ms.custom: mvc
-ms.openlocfilehash: fdb13095c2b91e54d58988a51a51b05652e57ea6
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 3666b0ec875b465954780c3c313ca87c9a4e6676
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83208389"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98899133"
 ---
 # <a name="work-with-syntax"></a>Trabalhar com sintaxe
 
-A *árvore de sintaxe* é uma estrutura de dados fundamental exposta pelas APIs do compilador. Essas árvores representam a estrutura lexical e sintática do código-fonte. Elas servem duas finalidades importantes:
+A *árvore de sintaxe* é uma estrutura de dados imutável fundamental exposta pelas APIs do compilador. Essas árvores representam a estrutura lexical e sintática do código-fonte. Elas servem duas finalidades importantes:
 
 - Para permitir ferramentas – como um IDE, suplementos, ferramentas de análise de código e refatoração – para ver e processar a estrutura sintática do código-fonte no projeto de um usuário.
 - Para habilitar ferramentas – como refatorações e um IDE, para criar, modificar e reorganizar o código-fonte de maneira natural sem precisar usar edições de texto direto. Criando e manipulando árvores, as ferramentas podem criar e reorganizar o código-fonte com facilidade.
@@ -21,11 +21,11 @@ A *árvore de sintaxe* é uma estrutura de dados fundamental exposta pelas APIs 
 
 Árvores de sintaxe são a estrutura principal usada para compilação, análise de código, associação, refatoração, recursos de IDE e geração de código. Nenhuma parte do código-fonte é entendida sem primeiro ser identificada e categorizada em um dos muitos elementos de linguagem estrutural conhecidos.
 
-As árvores de sintaxe têm três atributos-chave. O primeiro atributo é que as árvores de sintaxe mantêm todas as informações de origem em fidelidade total. Fidelidade total significa que a árvore de sintaxe contém todas as informações encontradas no texto de origem, todas as construções gramaticais, todos os tokens léxicos e todo o restante entre eles, incluindo o espaço em branco, os comentários e as diretivas de pré-processador. Por exemplo, cada literal mencionado na fonte é representado exatamente como foi digitado. As árvores de sintaxe também capturam erros no código-fonte quando o programa está incompleto ou malformado, representando tokens ignorados ou ausentes.
+Árvores de sintaxe têm três atributos de chave:
 
-O segundo atributo de árvores de sintaxe é que eles podem produzir o texto exato do qual foram analisados. De qualquer nó de sintaxe, é possível obter a representação de texto da subárvore com raiz nesse nó. Essa capacidade significa que as árvores de sintaxe podem ser usadas como uma maneira de construir e editar o texto de origem. Criando uma árvore que você tem, por implicação, criou o texto equivalente e editando uma árvore de sintaxe, fazendo uma nova árvore fora das alterações em uma árvore existente, você editou o texto com eficiência.
-
-O terceiro atributo das árvores de sintaxe é que elas são imutáveis e thread-safe. Depois que uma árvore é obtida, é um instantâneo do estado atual do código e nunca é alterado. Isso permite que vários usuários interajam com a mesma árvore de sintaxe ao mesmo tempo em threads diferentes sem bloqueio nem duplicação. Como as árvores são imutáveis e nenhuma modificação pode ser feita diretamente em uma árvore, os métodos de fábrica ajudam a criar e modificar árvores de sintaxe criando instantâneos adicionais da árvore. As árvores são eficientes no modo como reutilizam os nós subjacentes, de forma que uma nova versão possa ser recompilada rapidamente e com pouca memória extra.
+- Eles contêm todas as informações de origem com total fidelidade. Fidelidade total significa que a árvore de sintaxe contém todas as informações encontradas no texto de origem, todas as construções gramaticais, todos os tokens léxicos e todo o restante entre eles, incluindo o espaço em branco, os comentários e as diretivas de pré-processador. Por exemplo, cada literal mencionado na fonte é representado exatamente como foi digitado. As árvores de sintaxe também capturam erros no código-fonte quando o programa está incompleto ou malformado, representando tokens ignorados ou ausentes.
+- Eles podem produzir o texto exato do qual foram analisados. De qualquer nó de sintaxe, é possível obter a representação de texto da subárvore com raiz nesse nó. Essa capacidade significa que as árvores de sintaxe podem ser usadas como uma maneira de construir e editar o texto de origem. Criando uma árvore que você tem, por implicação, criou o texto equivalente e fazendo uma nova árvore fora das alterações em uma árvore existente, você editou o texto com eficiência.
+- Eles são imutáveis e thread-safe. Depois que uma árvore é obtida, é um instantâneo do estado atual do código e nunca é alterado. Isso permite que vários usuários interajam com a mesma árvore de sintaxe ao mesmo tempo em threads diferentes sem bloqueio nem duplicação. Como as árvores são imutáveis e nenhuma modificação pode ser feita diretamente em uma árvore, os métodos de fábrica ajudam a criar e modificar árvores de sintaxe criando instantâneos adicionais da árvore. As árvores são eficientes no modo como reutilizam os nós subjacentes, de forma que uma nova versão possa ser recompilada rapidamente e com pouca memória extra.
 
 Uma árvore de sintaxe é literalmente uma estrutura de dados de árvore, em que os elementos estruturais não terminais são pais de outros elementos. Cada árvore de sintaxe é composta por nós, tokens e desafios.
 
@@ -90,6 +90,9 @@ Cada nó, token ou desafio tem uma propriedade <xref:Microsoft.CodeAnalysis.Synt
 A propriedade <xref:Microsoft.CodeAnalysis.SyntaxToken.RawKind> permite a desambiguidade fácil de tipos de nó de sintaxe que compartilham a mesma classe de nó. Para tokens e desafios, essa propriedade é a única maneira de diferenciar um tipo de elemento de outro.
 
 Por exemplo, uma única classe <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax> tem <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax.Left>, <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax.OperatorToken> e <xref:Microsoft.CodeAnalysis.CSharp.Syntax.BinaryExpressionSyntax.Right> como filhos. A propriedade <xref:Microsoft.CodeAnalysis.CSharp.CSharpExtensions.Kind%2A> distingue se ela é um tipo <xref:Microsoft.CodeAnalysis.CSharp.SyntaxKind.AddExpression>, <xref:Microsoft.CodeAnalysis.CSharp.SyntaxKind.SubtractExpression> ou <xref:Microsoft.CodeAnalysis.CSharp.SyntaxKind.MultiplyExpression> de nó de sintaxe.
+
+> [!TIP]
+> É recomendável verificar os tipos usando os <xref:Microsoft.CodeAnalysis.CSharpExtensions.IsKind%2A> métodos de extensão (para C#) ou <xref:Microsoft.CodeAnalysis.VisualBasicExtensions.IsKind%2A> (para vb).
 
 ## <a name="errors"></a>Errors
 

@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: segurança de comportamento'
 title: Segurança de comportamento
 ms.date: 03/30/2017
 ms.assetid: 19710ae3-f197-4d28-ba9d-52e465006819
-ms.openlocfilehash: 5d09fcc2068133b3bb302850a647a2539ab07ee3
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: ba245a2c9558d40f22b9126ee0cf1560ed700ce8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84575583"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99778705"
 ---
 # <a name="behavior-security"></a>Segurança de comportamento
+
 Esta seção inclui exemplos que demonstram a configuração de segurança para comportamentos de serviço.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Comportamento de auditoria de serviço](service-auditing-behavior.md)  
  Este exemplo demonstra como usar o <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior> para habilitar a auditoria de eventos de segurança durante operações de serviço.  
   

@@ -1,20 +1,21 @@
 ---
+description: 'Saiba mais sobre: atributos'
 title: Atributos
 ms.date: 10/22/2008
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - attributes [.NET Framework], about
 - class library design guidelines [.NET Framework], attributes
 ms.assetid: ee0038ef-b247-4747-a650-3c5c5cd58d8b
-ms.openlocfilehash: 3c0e1b8c20042c085d4ace996a084cbd464d3b21
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 1557ba0945da0c8498c67f70ba4a01dd0bbe432e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85617555"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642416"
 ---
 # <a name="attributes"></a>Atributos
-<xref:System.Attribute?displayProperty=nameWithType>é uma classe base usada para definir atributos personalizados.
+
+<xref:System.Attribute?displayProperty=nameWithType> é uma classe base usada para definir atributos personalizados.
 
  Atributos são anotações que podem ser adicionadas a elementos de programação, como assemblies, tipos, membros e parâmetros. Eles são armazenados nos metadados do assembly e podem ser acessados em tempo de execução usando as APIs de reflexão. Por exemplo, a estrutura define o <xref:System.ObsoleteAttribute> , que pode ser aplicado a um tipo ou um membro para indicar que o tipo ou o membro foi preterido.
 
@@ -34,11 +35,11 @@ ms.locfileid: "85617555"
 
  ✔️ fornece parâmetros de construtor para inicializar propriedades correspondentes aos argumentos necessários. Cada parâmetro deve ter o mesmo nome (embora com maiúsculas e minúsculas diferentes) como a propriedade correspondente.
 
- ❌Evite fornecer parâmetros de construtor para inicializar propriedades correspondentes aos argumentos opcionais.
+ ❌ Evite fornecer parâmetros de construtor para inicializar propriedades correspondentes aos argumentos opcionais.
 
  Em outras palavras, não têm propriedades que podem ser definidas com um construtor e um setter. Essa diretriz torna muito explícito quais argumentos são opcionais e que são necessários e evita que você tenha duas maneiras de fazer a mesma coisa.
 
- ❌EVITE sobrecarregar construtores de atributos personalizados.
+ ❌ EVITE sobrecarregar construtores de atributos personalizados.
 
  Ter apenas um construtor se comunica claramente ao usuário quais argumentos são necessários e quais são opcionais.
 
@@ -48,7 +49,7 @@ ms.locfileid: "85617555"
 
  *Reimpresso com permissão da Pearson Education, Inc. das [Diretrizes de Design do Framework: convenções, linguagens e padrões para bibliotecas do .NET reutilizável, 2ª edição](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) por Krzysztof Cwalina e Brad Abrams, publicado em 22 de outubro de 2008 por Addison-Wesley Professional como parte da série de desenvolvimento do Microsoft Windows.*
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Diretrizes de design de estrutura](index.md)
 - [Diretrizes de uso](usage-guidelines.md)

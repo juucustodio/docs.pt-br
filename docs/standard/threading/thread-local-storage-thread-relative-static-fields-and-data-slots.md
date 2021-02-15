@@ -1,22 +1,23 @@
 ---
-title: 'Armazenamento local de thread: campos estáticos relativos a thread e slots de dados'
+description: 'Saiba mais sobre: armazenamento local de thread: Thread-Relative campos estáticos e slots de dados'
+title: 'Armazenamento local de thread: Campos estáticos relativos a thread e slots de dados'
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 helpviewer_keywords:
-- threading [.NET Framework], local storage
-- threading [.NET Framework], thread-relative static fields
+- threading [.NET], local storage
+- threading [.NET], thread-relative static fields
 - local thread storage
 - TLS
 ms.assetid: c633a4dc-a790-4ed1-96b5-f72bd968b284
-ms.openlocfilehash: adeeb6c95769d8e1ac120d4fb26d8aaedf7a1d4d
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: a7da615e805da6fdc54587829957cad61d17c7a3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291078"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675436"
 ---
-# <a name="thread-local-storage-thread-relative-static-fields-and-data-slots"></a>Armazenamento local de thread: campos estáticos relativos a thread e slots de dados
-Você pode usar o armazenamento local de thread (TLS) gerenciado para armazenar dados que são exclusivos de um domínio de aplicativo e thread. O .NET Framework oferece duas maneiras de usar o TLS gerenciado: campos estáticos relativos a thread e slots de dados.  
+# <a name="thread-local-storage-thread-relative-static-fields-and-data-slots"></a>Armazenamento local de thread: Campos estáticos relativos a thread e slots de dados
+
+Você pode usar o armazenamento local de threads gerenciados (TLS) para armazenar dados exclusivos para um thread e um domínio de aplicativo. O .NET fornece duas maneiras de usar o TLS gerenciado: campos estáticos relativos a thread e slots de dados.  
   
 - Use campos estáticos relativos a thread (campos `Shared` relativos a thread no Visual Basic) se você puder prever suas necessidades exatas em tempo de compilação. Campos estáticos relativos a thread fornecem o melhor desempenho. Eles também oferecem os benefícios da verificação do tipo de tempo de compilação.  
   
@@ -24,9 +25,10 @@ Você pode usar o armazenamento local de thread (TLS) gerenciado para armazenar 
   
  No C ++ não gerenciado, você usa `TlsAlloc` para alocar slots dinamicamente e `__declspec(thread)` para declarar que uma variável deve ser alocada no armazenamento relativo ao thread. Os campos estáticos relativos a thread e os slots de dados fornecem a versão gerenciada desse comportamento.  
   
- No .NET Framework 4, você pode usar a classe <xref:System.Threading.ThreadLocal%601?displayProperty=nameWithType> para criar objetos locais de thread que são inicializados lentamente quando o objeto é consumido pela primeira vez. Para obter mais informações, veja [Inicialização lenta](../../framework/performance/lazy-initialization.md).  
+Você pode usar a <xref:System.Threading.ThreadLocal%601?displayProperty=nameWithType> classe para criar objetos de thread local que são inicializados lentamente quando o objeto é consumido pela primeira vez. Para obter mais informações, veja [Inicialização lenta](../../framework/performance/lazy-initialization.md).  
   
 ## <a name="uniqueness-of-data-in-managed-tls"></a>Exclusividade de dados em TLS gerenciado  
+
  Não importa se você usa campos estáticos relativos a thread ou slots de dados, os dados em TLS gerenciado são exclusivos da combinação de thread e domínio de aplicativos.  
   
 - Dentro de um domínio de aplicativo, um thread não pode modificar dados de outro thread, mesmo quando ambos threads usam o mesmo campo ou slot.  
@@ -38,6 +40,7 @@ Você pode usar o armazenamento local de thread (TLS) gerenciado para armazenar 
  Da mesma forma, quando um segmento obtém o mesmo slot de dados nomeado em dois domínios de aplicativo diferentes, os dados no primeiro domínio do aplicativo permanecem independentes dos dados no segundo domínio do aplicativo.  
   
 ## <a name="thread-relative-static-fields"></a>Campos estáticos relativos a thread  
+
  Se você sabe que um dado é sempre exclusivo a uma combinação de thread e domínio de aplicativo, aplique o atributo <xref:System.ThreadStaticAttribute> ao campo estático. Use o campo como você usaria qualquer outro campo estático. Os dados no campo são exclusivos para cada thread que os usa.  
   
  Campos estáticos relativos a thread fornecem melhor desempenho do que os slots de dados e têm o benefício da verificação do tipo de tempo de compilação.  
@@ -45,7 +48,8 @@ Você pode usar o armazenamento local de thread (TLS) gerenciado para armazenar 
  Lembre-se de que qualquer código de construtor de classe será executado no primeiro thread no primeiro contexto que acessa o campo. Em todos os outros threads ou contextos no mesmo domínio de aplicativo, os campos serão inicializados para `null` (`Nothing` no Visual Basic) se forem tipos de referência, ou para seus valores padrão se forem tipos de valor. Portanto, você não deve confiar em construtores de classe para inicializar campos estáticos relacionados a thread. Em vez disso, evite a inicialização de campos estáticos relacionados a thread e suponha que eles sejam inicializados para `null` (`Nothing`) ou para seus valores padrão.  
   
 ## <a name="data-slots"></a>Slots de dados  
- O .NET Framework fornece slots de dados dinâmicos que são exclusivos a uma combinação de thread e domínio de aplicativo. Existem dois tipos de slots de dados: slots nomeados e slots sem nome. Ambos são implementados usando a estrutura <xref:System.LocalDataStoreSlot>.  
+
+O .NET fornece slots de dados dinâmicos que são exclusivos a uma combinação de thread e domínio de aplicativo. Existem dois tipos de slots de dados: slots nomeados e slots sem nome. Ambos são implementados usando a estrutura <xref:System.LocalDataStoreSlot>.  
   
 - Para criar um slot de dados nomeado, use o método <xref:System.Threading.Thread.AllocateNamedDataSlot%2A?displayProperty=nameWithType> ou <xref:System.Threading.Thread.GetNamedDataSlot%2A?displayProperty=nameWithType>. Para obter uma referência a um slot nomeado existente, passe seu nome para o método <xref:System.Threading.Thread.GetNamedDataSlot%2A>.  
   
@@ -55,7 +59,7 @@ Você pode usar o armazenamento local de thread (TLS) gerenciado para armazenar 
   
  Os slots nomeados podem ser convenientes, pois você pode recuperar o slot quando necessário, passando seu nome para o método <xref:System.Threading.Thread.GetNamedDataSlot%2A>, em vez de manter uma referência a um slot sem nome. No entanto, se outro componente usa o mesmo nome para seu armazenamento relativo ao thread e um thread executa o código do seu componente e do outro componente, os dois componentes podem corromper os dados uns dos outros. (Este cenário pressupõe que ambos os componentes estão sendo executados no mesmo domínio de aplicativo e que eles não foram projetados para compartilhar os mesmos dados).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ContextStaticAttribute>
 - <xref:System.Threading.Thread.GetNamedDataSlot%2A?displayProperty=nameWithType>

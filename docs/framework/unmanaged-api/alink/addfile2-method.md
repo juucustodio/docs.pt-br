@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método addfile2'
 title: Método AddFile2
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 03bc49bf-a89b-4fb6-a88d-97482e061195
 topic_type:
 - apiref
-ms.openlocfilehash: 8dadf9ec8f896b03e4918b21f5153c1b747010fd
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: d53527ecf7e8b3a99a11ea99512fbc812125de3e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446669"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638607"
 ---
 # <a name="addfile2-method"></a>Método AddFile2
+
 Adiciona arquivos ao assembly. Também pode ser usado para criar módulos desvinculados.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -38,6 +40,7 @@ HRESULT AddFile2(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `AssemblyID`  
  ID do assembly ao qual o arquivo é adicionado.  
   
@@ -45,7 +48,7 @@ HRESULT AddFile2(
  Nome do arquivo a ser adicionado.  
   
  `dwFlags`  
- Sinalizadores de `FileDef` COM+, como `ffContainsNoMetaData` e `ffWriteable`. `dwFlags` é passado para o [método definofile](../metadata/imetadataassemblyemit-definefile-method.md).  
+ `FileDef`Sinalizadores com+, como `ffContainsNoMetaData` e `ffWriteable` . `dwFlags` é passado para o [método definofile](../metadata/imetadataassemblyemit-definefile-method.md).  
   
  `pEmitter`  
  Interface para interface de [interface IMetaDataEmit2](../metadata/imetadataemit2-interface.md) .  
@@ -54,9 +57,11 @@ HRESULT AddFile2(
  Recebe a ID do arquivo que está sendo adicionado.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  Retorna S_OK se o método tiver sucesso.  
   
-## <a name="requirements"></a>{1&gt;{2&gt;Requisitos&lt;2}&lt;1}  
+## <a name="requirements"></a>Requisitos  
+
  Requer ALink. h.  
   
 ## <a name="see-also"></a>Consulte também

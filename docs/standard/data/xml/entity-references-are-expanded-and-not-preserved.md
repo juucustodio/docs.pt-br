@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: as referências de entidade são expandidas e não preservadas'
 title: Referências a entidades são expandidos e não preservadas
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 ms.assetid: ffd97806-ab43-4538-8de2-5828bfbbde57
-ms.openlocfilehash: 1d26e9a35497bb0d5293e8a5b630bf4356325401
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 85152acb8ff91fd8b42f73434a1807fd23ceb2e0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84292040"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783346"
 ---
 # <a name="entity-references-are-expanded-and-not-preserved"></a>Referências a entidades são expandidos e não preservadas
+
 Quando a referência de entidade é expandida e substituído pelo texto que representa, o nó de **XmlEntityReference** não é criado. Em vez disso, a declaração de entidade é processada e os nós criados na declaração de conteúdo são copiados no lugar de **XmlEntityReference**. Portanto, no exemplo de `&publisher;`, `&publisher;` não é salvo, mas em vez disso, um nó de **XmlText** é criado.  
   
  ![estrutura de árvore expandida](media/xmlentityref-expanded-nodes.gif "xmlentityref_expanded_nodes")  
@@ -38,6 +39,6 @@ Estrutura de árvore para as referências de entidade que são expandidas
   
  Se você usar um leitor que não possa resolver entidades, o método **Load** lançará uma exceção quando encontrar uma referência de entidade.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

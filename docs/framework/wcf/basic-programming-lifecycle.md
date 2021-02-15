@@ -5,17 +5,19 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - service creation [WCF]
 ms.assetid: 7cf21bfe-23bd-46aa-8033-609f851dbf76
-ms.openlocfilehash: c672827fff780fd263f5355520bb6ccf02bb902e
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: f958bd06f617a5648b31332ebe9e7662d45cd241
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85245525"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96294840"
 ---
 # <a name="basic-programming-lifecycle"></a>Ciclo de vida de programação básica
+
 O Windows Communication Foundation (WCF) permite que os aplicativos se comuniquem se estão no mesmo computador, na Internet ou em diferentes plataformas de aplicativos. Este tópico descreve as tarefas que são necessárias para criar um aplicativo WCF. Para um aplicativo de exemplo funcional, consulte [introdução tutorial](getting-started-tutorial.md).  
   
 ## <a name="the-basic-tasks"></a>As tarefas básicas  
+
  As tarefas básicas a serem executadas são, em ordem:  
   
 1. Defina o contrato de serviço. Um contrato de serviço especifica a assinatura de um serviço, os dados que ele troca e outros dados necessários contratuais. Para obter mais informações, consulte [Designing Service Contracts](designing-service-contracts.md).  

@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-Reference (Visual Basic)
 title: -reference
 ms.date: 03/13/2018
 helpviewer_keywords:
@@ -9,17 +10,18 @@ helpviewer_keywords:
 - reference compiler option [Visual Basic]
 - -r compiler option [Visual Basic]
 ms.assetid: 66bdfced-bbf6-43d1-a554-bc0990315737
-ms.openlocfilehash: 633b457106203e213f5d30003e576b7e8132f4d2
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e84cdf447294a299c26a775327528a94ebba03da
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84400481"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100474142"
 ---
 # <a name="-reference-visual-basic"></a>-referência (Visual Basic)
+
 Faz com que o compilador transforme informações de tipo nos assemblies especificados disponíveis para o projeto que você está compilando no momento.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```console  
 -reference:fileList  
@@ -35,9 +37,10 @@ ou
   
 |Termo|Definição|  
 |---|---|  
-|`fileList`|Obrigatórios. Lista delimitada por vírgulas de nomes de arquivo do assembly. Se o nome do arquivo contém um espaço, coloque o nome entre aspas.|  
+|`fileList`|Obrigatório. Lista delimitada por vírgulas de nomes de arquivo do assembly. Se o nome do arquivo contém um espaço, coloque o nome entre aspas.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Os arquivos que você importar devem conter metadados de assembly. Somente tipos públicos são visíveis fora do assembly. A opção [-addmodule](addmodule.md) importa os metadados de um módulo.  
   
  Se você referenciar um assembly (assembly A) que, por sua vez, faz referência a outro assembly (assembly B), você precisará referenciar o assembly B se:  
@@ -55,16 +58,17 @@ ou
  A forma abreviada de `-reference` é `-r`.  
   
 ## <a name="example"></a>Exemplo  
+
  O comando a seguir compila o arquivo `Input.vb` de origem e os assemblies de referência de `Metad1.dll` e `Metad2.dll` para produzir `Out.exe` .  
   
 ```console
 vbc -reference:metad1.dll,metad2.dll -out:out.exe input.vb  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Compilador de linha de comando do Visual Basic](index.md)
 - [-noconfig](noconfig.md)
 - [-Target (Visual Basic)](target.md)
-- [Pública](../../language-reference/modifiers/public.md)
+- [Público](../../language-reference/modifiers/public.md)
 - [Linhas de Comando de Compilação de Exemplo](sample-compilation-command-lines.md)

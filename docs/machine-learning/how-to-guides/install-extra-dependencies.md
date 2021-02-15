@@ -5,12 +5,12 @@ ms.date: 04/02/2020
 author: natke
 ms.author: nakersha
 ms.custom: how-to
-ms.openlocfilehash: c744b42b4b95681de7b0cbeaef338cc890708fd8
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 75d29c6bafdce5c9bb104229ddc8d7b847f57e29
+ms.sourcegitcommit: fcbe432482464b1639decad78cc4dc8387c6269e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008424"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97366797"
 ---
 # <a name="install-extra-mlnet-dependencies"></a>Instalar dependências de ML.NET extras
 
@@ -24,7 +24,7 @@ Em alguns casos, no entanto, há requisitos de instalação adicionais, especial
 
 ## <a name="microsoftmltimeseries-microsoftmlautoml"></a>Microsoft. ML. timeseries, Microsoft. ML. AutoML
 
-Ambos os pacotes têm uma dependência em `Microsoft.ML.MKL.Redist` , que tem uma dependência `libiomp` .
+Ambos os pacotes têm uma dependência em `Microsoft.ML.MKL.Redist` , que tem uma dependência `libomp` .
 
 ### <a name="windows"></a>Windows
 
@@ -72,7 +72,7 @@ Nenhuma etapa de instalação extra é necessária. A biblioteca é instalada qu
     sudo apt-get install intel-mkl-64bit-2020.0-088
     ```
 
-    Determinar o local de`libiomp.so`
+    Determinar o local de `libiomp.so`
 
     ```bash
     find /opt -name "libiomp5.so"
@@ -92,7 +92,7 @@ Nenhuma etapa de instalação extra é necessária. A biblioteca é instalada qu
 
 ### <a name="mac"></a>Mac
 
-1. Instalar a biblioteca com`Homebrew`
+1. Instalar a biblioteca com `Homebrew`
 
     ```bash
     brew update && brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/f5b1ac99a7fba27c19cee0bc4f036775c889b359/Formula/libomp.rb && brew link libomp --force

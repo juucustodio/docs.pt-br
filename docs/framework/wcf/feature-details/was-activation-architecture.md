@@ -1,25 +1,28 @@
 ---
+description: 'Saiba mais sobre: arquitetura de ativação WAS'
 title: Arquitetura de ativação do WAS
 ms.date: 03/30/2017
 ms.assetid: 58aeffb0-8f3f-4b40-80c8-15f3f1652fd3
-ms.openlocfilehash: cfbfd91f9e7bc2e1b4f8485d5ae22c1fb2b5228b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 616b3b404258356bcd5600c68b6f70aaf096e978
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600666"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756013"
 ---
 # <a name="was-activation-architecture"></a>Arquitetura de ativação do WAS
+
 Este tópico relaciona e discute os componentes do serviço de ativação de processos do Windows (também conhecido como WAS).  
   
 ## <a name="activation-components"></a>Componentes de ativação  
+
  O foi composto por vários componentes de arquitetura:  
   
 - Adaptadores de escuta. Os serviços do Windows que recebem mensagens em protocolos de rede específicos e se comunicam com o WAS para rotear mensagens de entrada para o processo de trabalho correto.  
   
 - Deveria. O serviço do Windows que gerencia a criação e o tempo de vida de processos de trabalho.  
   
-- O processo de trabalho genérico executável (w3wp. exe).  
+- O executável do processo de trabalho genérico (w3wp.exe).  
   
 - Gerenciador de aplicativos. Gerencia a criação e o tempo de vida de domínios de aplicativo que hospedam aplicativos dentro do processo de trabalho.  
   
@@ -30,6 +33,7 @@ Este tópico relaciona e discute os componentes do serviço de ativação de pro
  ![Captura de tela que mostra a arquitetura do WAS.](./media/was-activation-architecture/windows-process-application-service-architecture.gif)  
   
 ### <a name="listener-adapters"></a>Adaptadores de escuta  
+
  Os adaptadores de escuta são serviços individuais do Windows que implementam a lógica de comunicação de rede usada para receber mensagens usando o protocolo de rede no qual elas escutam. A tabela a seguir lista os adaptadores de ouvinte para protocolos Windows Communication Foundation (WCF).  
   
 |Nome do serviço do adaptador de ouvinte|Protocolo|Observações|  
@@ -40,7 +44,7 @@ Este tópico relaciona e discute os componentes do serviço de ativação de pro
 |NetMsmqActivator|net.msmq|Para uso com aplicativos baseados no serviço de enfileiramento de mensagens do WCF.|  
 |NetMsmqActivator|msmq.formatname|Fornece compatibilidade com versões anteriores com aplicativos de enfileiramento de mensagens existentes.|  
   
- Os adaptadores de escuta para protocolos específicos são registrados durante a instalação no arquivo applicationHost. config, conforme mostrado no exemplo de XML a seguir.  
+ Os adaptadores de escuta para protocolos específicos são registrados durante a instalação no arquivo de applicationHost.config, conforme mostrado no exemplo de XML a seguir.  
   
 ```xml  
 <system.applicationHost>  
@@ -59,7 +63,8 @@ Este tópico relaciona e discute os componentes do serviço de ativação de pro
 ```  
   
 ### <a name="protocol-handlers"></a>Manipuladores de protocolo  
- Manipuladores de protocolo de processo e AppDomain para protocolos específicos são registrados no arquivo Web. config no nível da máquina.  
+
+ Os manipuladores de protocolo de processo e AppDomain para protocolos específicos são registrados no arquivo de Web.config no nível da máquina.  
   
 ```xml  
 <system.web>  
@@ -88,4 +93,4 @@ Este tópico relaciona e discute os componentes do serviço de ativação de pro
 ## <a name="see-also"></a>Consulte também
 
 - [Configurar o WAS para uso com o WCF](configuring-the-wpa--service-for-use-with-wcf.md)
-- [Recursos de hospedagem do Windows Server AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))
+- [Recursos de hospedagem do Windows Server AppFabric](/previous-versions/appfabric/ee677189(v=azure.10))

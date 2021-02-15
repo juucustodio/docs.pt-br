@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função CorLaunchApplication'
 title: Função CorLaunchApplication
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 71f362a9-8fe2-47ce-9302-05a645cf3d7d
 topic_type:
 - apiref
-ms.openlocfilehash: 031bfc3d7fcd9f1f04e616e460cb3201813eae55
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 89f1f37ddde69fb5ecc24fd9dfd0d0c27d5fac40
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616548"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99716946"
 ---
 # <a name="corlaunchapplication-function"></a>Função CorLaunchApplication
+
 Inicia o aplicativo no caminho de rede especificado, usando os manifestos especificados e outros dados de aplicativo.  
   
  Essa função foi preterida no .NET Framework 4.  
@@ -42,6 +44,7 @@ HRESULT CorLaunchApplication (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `dwClickOnceHost`  
  no Um valor da enumeração [HOST_TYPE](host-type-enumeration.md) que especifica o tipo de host que está iniciando o aplicativo.  
   
@@ -64,14 +67,15 @@ HRESULT CorLaunchApplication (
  fora Um ponteiro para informações sobre o processo no qual o aplicativo foi carregado.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** MSCorEE. dll  
+ **Biblioteca:** MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Funções de hospedagem CLR reprovadas](deprecated-clr-hosting-functions.md)

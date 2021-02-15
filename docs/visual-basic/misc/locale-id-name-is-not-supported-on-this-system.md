@@ -1,18 +1,20 @@
 ---
-title: A ID de localidade '<name>' não tem suporte neste sistema
+description: "Saiba mais sobre: a ID de localidade ' <name> ' não tem suporte neste sistema"
+title: Não há suporte para a identificação de localidade '<name>' neste sistema
 ms.date: 07/20/2015
 f1_keywords:
 - vbrArgument_LCIDNotSupported1
 ms.assetid: 62701434-0ac2-45b8-8b40-a9adc09ae6df
-ms.openlocfilehash: 4fac5648633dd751cd47a942ae98e443a222c48d
-ms.sourcegitcommit: 5a28f8eb071fcc09b045b0c4ae4b96898673192e
+ms.openlocfilehash: 303a907cb912402f1e2c52e7f58b02439405995d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73197067"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429969"
 ---
-# <a name="locale-id-name-is-not-supported-on-this-system"></a>A ID de localidade '\<Name > ' não tem suporte neste sistema
-Você está tentando usar `VbStrConv`, mas o sistema não oferece suporte à localidade especificada.  
+# <a name="locale-id-name-is-not-supported-on-this-system"></a>Não há suporte para a identificação de localidade '\<name>' neste sistema
+
+Você está tentando usar `VbStrConv` , mas o sistema não oferece suporte à localidade especificada.  
   
 ## <a name="to-correct-this-error"></a>Para corrigir este erro  
   

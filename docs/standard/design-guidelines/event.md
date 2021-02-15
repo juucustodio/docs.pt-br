@@ -1,7 +1,7 @@
 ---
+description: 'Saiba mais sobre: design de eventos'
 title: Design de eventos
 ms.date: 10/22/2008
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - pre-events
 - events [.NET Framework], design guidelines
@@ -10,15 +10,16 @@ helpviewer_keywords:
 - post-events
 - signatures, event handling
 ms.assetid: 67b3c6e2-6a8f-480d-a78f-ebeeaca1b95a
-ms.openlocfilehash: 852c99b1a41691911f7ae82d3b8104526811757d
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: d64bfb13792aa9d646560de844acddd9b7e188c0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84289818"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642195"
 ---
 # <a name="event-design"></a>Design de eventos
-Os eventos são a forma mais comumente usada de retornos de chamada (construções que permitem que a estrutura chame no código do usuário). Outros mecanismos de retorno de chamada incluem membros que utilizam delegados, membros virtuais e plug-ins baseados em interface. os dados de estudos de usabilidade indicam que a maioria dos desenvolvedores é mais confortável usando eventos do que usar os outros mecanismos de retorno de chamada. Os eventos são perfeitamente integrados ao Visual Studio e a várias linguagens.
+
+Os eventos são a forma mais comumente usada de retornos de chamada (construções que permitem que a estrutura chame no código do usuário). Outros mecanismos de retorno de chamada incluem membros que tomam delegados, membros virtuais e plug-ins baseados em interface. Os dados de estudos de usabilidade indicam que a maioria dos desenvolvedores é mais confortável usando eventos do que usar os outros mecanismos de retorno de chamada. Os eventos são perfeitamente integrados ao Visual Studio e a várias linguagens.
 
  É importante observar que há dois grupos de eventos: eventos gerados antes que um estado do sistema seja alterado, chamado pré-eventos e eventos gerados depois de um Estado ser alterado, chamado post-events. Um exemplo de um pré-evento seria `Form.Closing` , que é gerado antes de um formulário ser fechado. Um exemplo de um post-Event seria `Form.Closed` , que é gerado depois que um formulário é fechado.
 
@@ -40,11 +41,11 @@ Os eventos são a forma mais comumente usada de retornos de chamada (construçõ
 
  O parâmetro deve ser nomeado `e` e deve ser digitado como a classe de argumento de evento.
 
- ❌Não passe NULL como o remetente ao gerar um evento não estático.
+ ❌ Não passe NULL como o remetente ao gerar um evento não estático.
 
  ✔️ passar NULL como o remetente ao gerar um evento estático.
 
- ❌Não passe nulo como o parâmetro de dados de evento ao gerar um evento.
+ ❌ Não passe nulo como o parâmetro de dados de evento ao gerar um evento.
 
  Você deve passar `EventArgs.Empty` se não quiser passar dados para o método de manipulação de eventos. Os desenvolvedores esperam que esse parâmetro não seja nulo.
 
@@ -53,6 +54,7 @@ Os eventos são a forma mais comumente usada de retornos de chamada (construçõ
  Use <xref:System.ComponentModel.CancelEventArgs?displayProperty=nameWithType> ou sua subclasse como o argumento de evento para permitir que o usuário final cancele eventos.
 
 ### <a name="custom-event-handler-design"></a>Design do manipulador de eventos personalizado
+
  Há casos em que `EventHandler<T>` não podem ser usados, como quando a estrutura precisa trabalhar com versões anteriores do CLR, que não davam suporte a genéricos. Nesses casos, talvez seja necessário criar e desenvolver um delegado de manipulador de eventos personalizado.
 
  ✔️ usar um tipo de retorno de void para manipuladores de eventos.
@@ -63,13 +65,13 @@ Os eventos são a forma mais comumente usada de retornos de chamada (construçõ
 
  ✔️ Use <xref:System.EventArgs?displayProperty=nameWithType> ou sua subclasse como o tipo do segundo parâmetro do manipulador de eventos e chame-o `e` .
 
- ❌Não têm mais de dois parâmetros em manipuladores de eventos.
+ ❌ Não têm mais de dois parâmetros em manipuladores de eventos.
 
  *Partes © 2005, 2009 Microsoft Corporation. Todos os direitos reservados.*
 
  *Reimpresso com permissão da Pearson Education, Inc. das [Diretrizes de Design do Framework: convenções, linguagens e padrões para bibliotecas do .NET reutilizável, 2ª edição](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) por Krzysztof Cwalina e Brad Abrams, publicado em 22 de outubro de 2008 por Addison-Wesley Professional como parte da série de desenvolvimento do Microsoft Windows.*
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Diretrizes de design de membro](member.md)
 - [Diretrizes de design de estrutura](index.md)

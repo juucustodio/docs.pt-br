@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IHostCrst'
 title: Interface IHostCrst
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: ac298ebd-0815-47e4-a823-30b31baab903
 topic_type:
 - apiref
-ms.openlocfilehash: e8cb1486ccea11ba6edcf7bbb781a9bf210b496d
-ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
+ms.openlocfilehash: 7945f0087667c1d610a1a2370528b055af74d579
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83804910"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708860"
 ---
 # <a name="ihostcrst-interface"></a>Interface IHostCrst
+
 Serve como a representação do host de uma seção crítica para Threading.  
   
 ## <a name="methods"></a>Métodos  
@@ -34,18 +36,20 @@ Serve como a representação do host de uma seção crítica para Threading.
 |[Método TryEnter](ihostcrst-tryenter-method.md)|Tenta inserir a seção crítica e relata êxito ou falha imediatamente.|  
   
 ## <a name="remarks"></a>Comentários  
- `IHostCrst`permite que o Common Language Runtime (CLR) se comunique diretamente com a representação do host de uma seção crítica, em vez de usar funções do Win32, como `EnterCriticalSection` ou `LeaveCriticalSection` .  
+
+ `IHostCrst` permite que o Common Language Runtime (CLR) se comunique diretamente com a representação do host de uma seção crítica, em vez de usar funções do Win32, como `EnterCriticalSection` ou `LeaveCriticalSection` .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRSyncManager](iclrsyncmanager-interface.md)
 - [Interface IHostSyncManager](ihostsyncmanager-interface.md)

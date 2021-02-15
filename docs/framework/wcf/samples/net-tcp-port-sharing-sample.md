@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: exemplo de compartilhamento de porta Net. TCP'
 title: Exemplo de compartilhamento de porta Net.TCP
 ms.date: 03/30/2017
 ms.assetid: 03da5959-0574-4e91-8a53-05854b6c55dc
-ms.openlocfilehash: 6c196380951d0da912cd937e3ebc38a03f80489c
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 30b5e8896cfdd5b4174067fa37a047029bdb4502
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84584292"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752152"
 ---
 # <a name="nettcp-port-sharing-sample"></a>Exemplo de compartilhamento de porta Net.TCP
+
 O protocolo TCP/IP usa um número de 16 bits, chamado de porta, para diferenciar as conexões a vários aplicativos de rede em execução no mesmo computador. Se um aplicativo estiver escutando em uma porta, todo o tráfego TCP dessa porta vai para esse aplicativo. Outros aplicativos não podem escutar nessa porta ao mesmo tempo.  
   
 > [!IMPORTANT]
@@ -34,6 +36,7 @@ Unhandled Exception: System.ServiceModel.CommunicationException: The TransportMa
  O compartilhamento de porta está habilitado no servidor definindo a <xref:System.ServiceModel.NetTcpBinding.PortSharingEnabled%2A> propriedade da <xref:System.ServiceModel.NetTcpBinding> associação ou o <xref:System.ServiceModel.Channels.TcpTransportBindingElement> elemento de associação. O cliente não precisa saber como o compartilhamento de porta foi configurado para usá-lo no servidor.  
   
 ## <a name="enabling-port-sharing"></a>Habilitando o compartilhamento de porta  
+
  O código a seguir demonstra como habilitar o compartilhamento de porta no servidor. Ele inicia uma instância do `ICalculator` serviço em uma porta fixa com um caminho de URI aleatório. Embora dois serviços possam compartilhar a mesma porta, seus endereços de ponto de extremidade gerais ainda devem ser exclusivos para que o serviço de compartilhamento de porta NetTcp possa rotear mensagens para o aplicativo correto.  
 
 ```csharp
@@ -56,6 +59,7 @@ Unhandled Exception: System.ServiceModel.AddressAlreadyInUseException: There is 
 ```  
   
 ## <a name="running-the-sample"></a>Executando o exemplo  
+
  Você pode usar o cliente de teste para verificar se as mensagens são roteadas corretamente para os serviços que compartilham a porta.  
 
 ```csharp
@@ -102,14 +106,14 @@ class client
 }  
 ```
 
- Cada instância do serviço imprime seu número e endereço exclusivos. Por exemplo, você pode ver o texto a seguir ao executar o Service. exe.  
+ Cada instância do serviço imprime seu número e endereço exclusivos. Por exemplo, você pode ver o texto a seguir ao executar service.exe.  
   
 ```console  
 Service #4381 listening on net.tcp://localhost:9000/calculator/4381.  
 Press <ENTER> to terminate service.  
 ```  
   
- Insira o número de serviço que você vê aqui ao executar o Client. exe.  
+ Insira o número de serviço que você vê aqui ao executar client.exe.  
   
 ```console  
 Enter the service number to test: 4381  

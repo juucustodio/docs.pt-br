@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <publisherPolicy> elemento'
 title: Elemento <publisherPolicy>
 ms.date: 03/30/2017
 f1_keywords:
@@ -10,14 +11,15 @@ helpviewer_keywords:
 - container tags, <publisherPolicy> element
 - <publisherPolicy> element
 ms.assetid: 4613407e-d0a8-4ef2-9f81-a6acb9fdc7d4
-ms.openlocfilehash: 89fa8a991cc7d0352eb0a13cdfd3a6063ea468e7
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 35d729d5b195e010a80e7272312f14ac5802001b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73115844"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802430"
 ---
 # <a name="publisherpolicy-element"></a>Elemento \<publisherPolicy>
+
 Especifica se o runtime aplica a política do editor.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -26,13 +28,14 @@ Especifica se o runtime aplica a política do editor.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<dependentAssembly>**](dependentassembly-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<publisherPolicy>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <publisherPolicy apply="yes|no"/>  
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -62,6 +65,7 @@ Nenhum.
 |`runtime`|Contém informações sobre associação do assembly e coleta de lixo.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Quando um fornecedor de componentes libera uma nova versão de um assembly, o fornecedor pode incluir uma política de editor para que os aplicativos que usam a versão antiga agora usem a nova versão. Para especificar se a política de editor deve ser aplicada a um determinado assembly, coloque o **\<publisherPolicy>** elemento no **\<dependentAssembly>** elemento.  
   
  A configuração padrão para o atributo **aplicar** é **Sim**. A definição do atributo **aplicar** como **não** substitui as configurações **Sim** anteriores para um assembly.  
@@ -69,6 +73,7 @@ Nenhum.
  A permissão é necessária para que um aplicativo ignore explicitamente a política do editor usando o [\<publisherPolicy apply="no"/>](publisherpolicy-element.md) elemento no arquivo de configuração do aplicativo. A permissão é concedida definindo o <xref:System.Security.Permissions.SecurityPermissionFlag> sinalizador no <xref:System.Security.Permissions.SecurityPermission> . Para obter mais informações, consulte [permissão de segurança de redirecionamento de associação de assembly](../../assembly-binding-redirection-security-permission.md).  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir desativa a política do Publicador para o assembly, `myAssembly` .  
   
 ```xml  
@@ -86,9 +91,9 @@ Nenhum.
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações do runtime](index.md)
-- [Esquema de arquivos de configuração](../index.md)
+- [Esquema do arquivo de configuração](../index.md)
 - [Como o runtime localiza assemblies](../../../deployment/how-the-runtime-locates-assemblies.md)
 - [Redirecionando versões de assembly](../../redirect-assembly-versions.md)

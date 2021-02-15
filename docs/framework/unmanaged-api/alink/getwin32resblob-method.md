@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método GetWin32ResBlob'
 title: Método GetWin32ResBlob
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 36997e04-f9f6-4254-a041-6767ac6c51d9
 topic_type:
 - apiref
-ms.openlocfilehash: ff3103a46390c880a56ff443bfe20744f2ba0bfd
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: e1140b14bfba56dfac03c443a537d6d2188575b8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74430694"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718259"
 ---
 # <a name="getwin32resblob-method"></a>Método GetWin32ResBlob
+
 Recupera o blob de recursos do Win32. Chame esse método depois de definir as opções de assembly.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -38,6 +40,7 @@ HRESULT GetWin32ResBlob(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `AssemblyID`  
  ID do assembly.  
   
@@ -57,9 +60,11 @@ HRESULT GetWin32ResBlob(
  Recebe o tamanho do blob.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  Retorna S_OK se o método tiver sucesso.  
   
 ## <a name="requirements"></a>Requisitos  
+
  Requer ALink. h  
   
 ## <a name="see-also"></a>Consulte também

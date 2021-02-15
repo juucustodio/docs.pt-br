@@ -1,32 +1,34 @@
 ---
+description: 'Saiba mais sobre: mapeamento entre JSON e XML'
 title: Mapeamento entre JSON e XML
 ms.date: 03/30/2017
 ms.assetid: 22ee1f52-c708-4024-bbf0-572e0dae64af
-ms.openlocfilehash: 55812ad15d1f38bb0c295e6895dfff329035206d
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: 1d9652d1683446da9946987a31a92906d5e38e55
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81464062"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793669"
 ---
 # <a name="mapping-between-json-and-xml"></a>Mapeamento entre JSON e XML
-Os leitores e <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory> escritores produzidos pelo fornecer uma API XML sobre o conteúdo de Notação de Objeto JavaScript (JSON). JSON codifica dados usando um subconjunto dos literais do objeto javaScript. Os leitores e escritores produzidos por esta fábrica também são usados quando o conteúdo JSON está sendo enviado ou recebido por aplicativos da Windows Communication Foundation (WCF) usando o <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement> ou o <xref:System.ServiceModel.WebHttpBinding>.
 
-Quando inicializado com conteúdo JSON, o leitor JSON se comporta da mesma forma que um leitor XML textual faz sobre uma instância de XML. O escritor JSON, quando dada uma seqüência de chamadas que em um leitor XML textual produz uma certa instância XML, escreve o conteúdo JSON. O mapeamento entre esta instância de XML e o conteúdo JSON é descrito neste tópico para uso em cenários avançados.
+Os leitores e gravadores produzidos pelo <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory> fornecem um conteúdo de API XML sobre JavaScript Object Notation (JSON). O JSON codifica dados usando um subconjunto dos literais de objeto do JavaScript. Os leitores e gravadores produzidos por essa fábrica também são usados quando o conteúdo JSON está sendo enviado ou recebido por aplicativos Windows Communication Foundation (WCF) usando o <xref:System.ServiceModel.Channels.WebMessageEncodingBindingElement> ou o <xref:System.ServiceModel.WebHttpBinding> .
 
-Internamente, o JSON é representado como um infoset XML quando processado pelo WCF. Normalmente você não precisa se preocupar com essa representação interna, pois o mapeamento é apenas lógico: JSON normalmente não é convertido fisicamente para XML na memória ou convertido para JSON do XML. O mapeamento significa que as APIs XML são usadas para acessar o conteúdo JSON.
+Quando inicializado com conteúdo JSON, o leitor JSON se comporta da mesma maneira que um leitor XML textual faz sobre uma instância do XML. O gravador JSON, quando dada uma sequência de chamadas que em um leitor XML textual, produz uma determinada instância XML, grava o conteúdo JSON. O mapeamento entre essa instância do XML e o conteúdo JSON é descrito neste tópico para uso em cenários avançados.
 
-Quando o WCF usa JSON, <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> o cenário usual é <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> que o é <xref:System.ServiceModel.Description.WebHttpBehavior> automaticamente conectado pelo comportamento, ou pelo comportamento quando apropriado. O <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> understands the mapping between JSON and the XML infoset e age como se estivesse lidando diretamente com JSON. (É possível usar <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> o com qualquer leitor ou escritor XML, com a compreensão de que o XML está de acordo com o seguinte mapeamento.)
+Internamente, o JSON é representado como um XML infoset quando processado pelo WCF. Normalmente, você não precisa se preocupar com essa representação interna, pois o mapeamento é apenas um lógico: JSON normalmente não é fisicamente convertido em XML na memória ou convertido em JSON de XML. O mapeamento significa que as APIs XML são usadas para acessar o conteúdo JSON.
 
-Em cenários avançados, pode se tornar necessário acessar diretamente o seguinte mapeamento. Esses cenários ocorrem quando você deseja serializar e desserializar o <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>JSON de <xref:System.ServiceModel.Channels.Message> maneiras personalizadas, sem depender do , ou ao lidar com o tipo diretamente para mensagens que contêm JSON. O mapeamento JSON-XML também é usado para registro de mensagens. Ao usar o recurso de registro de mensagens no WCF, as mensagens JSON são registradas como XML de acordo com o mapeamento descrito na próxima seção.
+Quando o WCF usa JSON, o cenário usual é que o <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> é conectado automaticamente pelo <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> comportamento ou pelo <xref:System.ServiceModel.Description.WebHttpBehavior> comportamento quando apropriado. O <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> compreende o mapeamento entre JSON e o XML infoset e atua como se ele estiver lidando diretamente com o JSON. (É possível usar o <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> com qualquer leitor ou gravador XML, sabendo que o XML está em conformidade com o mapeamento a seguir.)
 
-Para esclarecer o conceito de um mapeamento, o exemplo a seguir é de um documento JSON.
+Em cenários avançados, pode ser necessário acessar diretamente o mapeamento a seguir. Esses cenários ocorrem quando você deseja serializar e desserializar JSON de maneiras personalizadas, sem depender do <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> ou ao lidar com o <xref:System.ServiceModel.Channels.Message> tipo diretamente para mensagens que contêm JSON. O mapeamento JSON-XML também é usado para o log de mensagens. Ao usar o recurso de log de mensagens no WCF, as mensagens JSON são registradas como XML de acordo com o mapeamento descrito na próxima seção.
+
+Para esclarecer o conceito de mapeamento, o exemplo a seguir é de um documento JSON.
 
 ```json
 {"product":"pencil","price":12}
 ```
 
-Para ler este documento JSON usando um dos leitores <xref:System.Xml.XmlDictionaryReader> mencionados anteriormente, use a mesma seqüência de chamadas que você faria para ler o seguinte documento XML.
+Para ler este documento JSON usando um dos leitores mencionados anteriormente, use a mesma sequência de <xref:System.Xml.XmlDictionaryReader> chamadas que você usaria para ler o documento XML a seguir.
 
 ```xml
 <root type="object">
@@ -35,17 +37,17 @@ Para ler este documento JSON usando um dos leitores <xref:System.Xml.XmlDictiona
 </root>
 ```
 
-Além disso, se a mensagem JSON no exemplo for recebida pelo WCF e registrada, você verá o fragmento XML no registro anterior.
+Além disso, se a mensagem JSON no exemplo for recebida pelo WCF e registrada, você verá o fragmento XML no log anterior.
 
-## <a name="mapping-between-json-and-the-xml-infoset"></a>Mapeamento entre JSON e o Infoset XML
+## <a name="mapping-between-json-and-the-xml-infoset"></a>Mapeamento entre JSON e o XML infoset
 
-Formalmente, o mapeamento é entre JSON conforme descrito no [RFC 4627](https://www.ietf.org/rfc/rfc4627.txt) (exceto com certas restrições relaxadas e certas outras restrições adicionadas) e o infoset XML (e não xml textual) conforme descrito no [Conjunto de Informações XML](https://www.w3.org/TR/2004/REC-xml-infoset-20040204/). Consulte este tópico para as definições de itens de *informação* e campos em [colchetes quadrados].
+Formalmente, o mapeamento está entre JSON, conforme descrito em [RFC 4627](https://www.ietf.org/rfc/rfc4627.txt) (exceto com determinadas restrições relaxadas e determinadas outras restrições) e o XML Infoset (e não texto XML), conforme descrito em [conjunto de informações XML](https://www.w3.org/TR/2004/REC-xml-infoset-20040204/). Consulte este tópico para obter as definições de *itens de informações* e campos em [colchetes].
 
-Um documento JSON em branco mapeia um documento XML em branco e um documento XML em branco mapeia um documento JSON em branco. No mapeamento XML para JSON, não são permitidos o espaço em branco que precede o espaço em branco e o espaço em branco após o documento.
+Um documento JSON em branco é mapeado para um documento XML em branco e um documento XML em branco é mapeado para um documento JSON em branco. No mapeamento de XML para JSON, o espaço em branco precedente e o espaço em branco à direita após o documento não são permitidos.
 
-O mapeamento é definido entre um Item de Informações de Documentos (DII) ou um Item de Informações de Elemento (EII) e JSON. A propriedade EII, ou dii [elemento de documento], é referida como o Elemento JSON Raiz. Observe que fragmentos de documento (XML com múltiplos elementos de raiz) não são suportados neste mapeamento.
+O mapeamento é definido entre um item de informações de documento (DII) ou um item de informações de elemento (EII) e JSON. O EII, ou a propriedade [Document Element] do DII, é referido como o elemento JSON raiz. Observe que os fragmentos de documento (XML com vários elementos raiz) não têm suporte neste mapeamento.
 
-Exemplo: O seguinte documento:
+Exemplo: o seguinte documento:
 
 ```xml
 <?xml version="1.0"?>
@@ -58,23 +60,23 @@ E o seguinte elemento:
 <root type="number">42</root>
 ```
 
-Ambos têm um mapeamento para JSON. O `root` elemento> <é o Elemento JSON Raiz em ambos os casos.
+Ambos têm um mapeamento para JSON. O `root` elemento <> é o elemento JSON raiz em ambos os casos.
 
-Além disso, no caso de um DII, deve-se considerar o seguinte:
+Além disso, no caso de um DII, o seguinte deve ser considerado:
 
-- Alguns itens da lista [de crianças] não devem estar presentes. Não confie nesse fato ao ler XML mapeado de JSON.
+- Alguns itens na lista [filhos] não devem estar presentes. Não confie nesse fato ao ler XML mapeado do JSON.
 
-- A lista [de crianças] não contém itens de informação de comentários.
+- A lista [Children] não contém itens de informações de comentário.
 
-- A lista [crianças] não contém itens de informação DTD.
+- A lista [Children] não contém nenhum item de informações de DTD.
 
-- A lista [crianças] não contém itens de informações `<?xml…>` pessoais (PI) (a declaração não é considerada um item de informações de PI)
+- A lista [Children] não contém itens de informação de informações pessoais (PI) (a `<?xml…>` declaração não é considerada um item de informações de PI)
 
-- O conjunto [notações] está vazio.
+- O conjunto de [notações] está vazio.
 
-- O conjunto [entidades não parsed] está vazio.
+- O conjunto [entidades não analisadas] está vazio.
 
-Exemplo: O documento a seguir não tem mapeamento para JSON porque [crianças] possui um PI e um comentário.
+Exemplo: o documento a seguir não tem mapeamento para JSON porque [Children] contém um PI e um comentário.
 
 ```xml
 <?xml version="1.0"?>
@@ -82,74 +84,74 @@ Exemplo: O documento a seguir não tem mapeamento para JSON porque [crianças] p
 <root type="number">42</root>
 ```
 
-O EII para o Elemento JSON Raiz tem as seguintes características:
+O EII para o elemento JSON raiz tem as seguintes características:
 
-- [nome local] tem o valor "raiz".
+- [nome local] tem o valor "root".
 
 - [nome do namespace] não tem valor.
 
-- [prefixo] não tem valor.
+- [prefix] não tem valor.
 
-- [crianças] podem conter EIIs (que representam elementos internos como descritos posteriormente) ou CIIs (Items de Informação de Caracteres como descrito anteriormente) ou nenhum deles, mas não ambos.
+- [Children] pode conter EIIs (que representam elementos internos conforme descrito mais adiante) ou CIIs (itens de informações de caractere, conforme descrito mais adiante) ou nenhum deles, mas não ambos.
 
-- [atributos] podem conter os seguintes itens de informações de atributos opcionais (AIIs)
+- [Attributes] pode conter os seguintes itens de informação de atributo opcionais (AIIs)
 
-- O Atributo tipo JSON ("tipo") conforme descrito mais adiante. Este atributo é usado para preservar o tipo JSON (string, number, booleano, object, array ou null) no XML mapeado.
+- O atributo de tipo JSON ("Type"), conforme descrito mais adiante. Esse atributo é usado para preservar o tipo JSON (cadeia de caracteres, número, booliano, objeto, matriz ou NULL) no XML mapeado.
 
-- O Atributo nome\_\_do contrato de dados (" tipo") conforme descrito anteriormente. Este atributo só pode estar presente se o atributo do tipo JSON também estiver presente e seu valor [normalizado] for "objeto". Este atributo é `DataContractJsonSerializer` usado para preservar informações do tipo de contrato de dados - por exemplo, em casos polimórficos em que um tipo derivado é serializado e onde um tipo de base é esperado. Se você não está `DataContractJsonSerializer`trabalhando com o , na maioria dos casos, este atributo é ignorado.
+- O atributo de nome do contrato de dados (" \_ \_ tipo"), conforme descrito mais adiante. Esse atributo só poderá estar presente se o atributo de tipo JSON também estiver presente e seu [valor normalizado] for "Object". Esse atributo é usado pelo `DataContractJsonSerializer` para preservar informações de tipo de contrato de dados – por exemplo, em casos polimórficos em que um tipo derivado é serializado e onde um tipo base é esperado. Se você não estiver trabalhando com o `DataContractJsonSerializer` , na maioria dos casos, esse atributo será ignorado.
 
-- [namespaces no escopo] contém a vinculação `http://www.w3.org/XML/1998/namespace` de "xml" a, conforme manda a especificação infoset.
+- [namespaces no escopo] contém a associação de "XML" a `http://www.w3.org/XML/1998/namespace` , conforme exigido pela especificação infoset.
 
-- [crianças], [atributos] e [namespaces no escopo] não devem ter nenhum item diferente do especificado anteriormente e [atributos de namespace] não devem ter membros, mas não confiam nesses fatos ao ler XML mapeado no JSON.
+- [Children], [Attributes] e [namespaces no escopo] não devem ter nenhum item além do especificado anteriormente e [atributos de namespace] não devem ter nenhum membro, mas não dependem desses fatos ao ler XML mapeado de JSON.
 
-Exemplo: O documento a seguir não tem mapeamento para JSON porque [atributos de namespace] não está vazio.
+Exemplo: o documento a seguir não tem mapeamento para JSON porque [atributos de namespace] não está vazio.
 
 ```xml
 <?xml version="1.0"?>
 <root xmlns:a="myattributevalue">42</root>
 ```
 
-A IA para o Atributo tipo JSON tem as seguintes características:
+O todos para o atributo de tipo JSON tem as seguintes características:
 
 - [nome do namespace] não tem valor.
-- [prefixo] não tem valor.
+- [prefix] não tem valor.
 - [nome local] é "tipo".
-- [valor normalizado] é um dos possíveis valores de tipo descritos na seção a seguir.
-- [especificado] `true`é .
+- [valor normalizado] é um dos valores de tipo possíveis descritos na seção a seguir.
+- [especificado] é `true` .
 - [tipo de atributo] não tem valor.
-- [referências] não tem valor.
+- [References] não tem valor.
 
-A IA para o atributo nome do contrato de dados tem as seguintes características:
+O todos para o atributo de nome de contrato de dados tem as seguintes características:
 
 - [nome do namespace] não tem valor.
-- [prefixo] não tem valor.
-- [nome local]\_\_é " tipo" (dois sublinhados e, em seguida, "digitar").
-- [valor normalizado] é qualquer seqüência unicode válida – o mapeamento desta seqüência para JSON é descrito na seção a seguir.
-- [especificado] `true`é .
+- [prefix] não tem valor.
+- [nome local] é " \_ \_ tipo" (dois sublinhados e, em seguida, "tipo").
+- [valor normalizado] é qualquer cadeia de caracteres Unicode válida – o mapeamento dessa cadeia de caracteres para JSON é descrito na seção a seguir.
+- [especificado] é `true` .
 - [tipo de atributo] não tem valor.
-- [referências] não tem valor.
+- [References] não tem valor.
 
-Os elementos internos contidos no Elemento Root JSON ou outros elementos internos têm as seguintes características:
+Os elementos internos contidos no elemento JSON raiz ou outros elementos internos têm as seguintes características:
 
-- [nome local] pode ter qualquer valor como descrito mais adiante.
-- [namespace name], [prefixo], [crianças], [atributos], [atributos de namespace], e [namespaces no escopo] estão sujeitos às mesmas regras do Elemento Root JSON.
+- [nome local] pode ter qualquer valor, conforme descrito mais.
+- [nome do namespace], [prefixo], [filhos], [atributos], [atributos de namespace] e [namespaces no escopo] estão sujeitos às mesmas regras que o elemento JSON raiz.
 
-Tanto no Elemento JSON Raiz quanto nos elementos internos, o Atributo tipo JSON define o mapeamento para JSON e o possível [filhos] e sua interpretação. O valor [normalizado] do atributo é sensível a maiúsculas e minúsculas e não pode conter espaço em branco.
+No elemento JSON raiz e nos elementos internos, o atributo de tipo JSON define o mapeamento para JSON e o possível [Children] e sua interpretação. O [valor normalizado] do atributo diferencia maiúsculas de minúsculas e deve estar em minúsculas e não pode conter espaço em branco.
 
-|[valor normalizado] da IA Do Atributo do Tipo JSON|Permitido [crianças] do EII correspondente|Mapeamento para JSON|
+|[valor normalizado] do todos do atributo do tipo JSON|Permitido [Children] do EII correspondente|Mapeando para JSON|
 |---------------------------------------------------------|---------------------------------------------------|---------------------|
-|`string`(ou ausência do tipo JSON AII)<br /><br /> A `string` e a ausência do Tipo JSON AII são os mesmos que tornam `string` o padrão.<br /><br /> Então, `<root> string1</root>` mapeia para `string` o JSON "string1".|0 ou mais CIIs|Um JSON `string` (JSON RFC, seção 2.5). Cada `char` um é um caractere que corresponde ao [código de caractere] do CII. Se não houver CIIs, ele mapeia para um JSON `string`vazio .<br /><br /> Exemplo: O elemento a seguir mapeia um fragmento JSON:<br /><br /> `<root type="string">42</root>`<br /><br /> O fragmento json é "42".<br /><br /> No mapeamento XML para JSON, personagens que devem ser escapados mapa para personagens fugitivos, todos os outros mapeiam para personagens que não são escapados. O personagem "/" é especial – ele escapa mesmo que não\\precise ser (escrito como " /").<br /><br /> Exemplo: O elemento a seguir mapeia um fragmento JSON.<br /><br /> `<root type="string">the "da/ta"</root>`<br /><br /> O fragmento json \\é\\"o\\"da /ta".<br /><br /> No mapeamento JSON para XML, todos os caracteres e caracteres fugitivos que não são escapados mapeiam corretamente para o correspondente [código de caractere].<br /><br /> Exemplo: O fragmento JSON "\u0041BC", mapeia o seguinte elemento XML.<br /><br /> `<root type="string">ABC</root>`<br /><br /> A corda pode ser cercada por espaço branco ('ws' na seção 2 do JSON RFC) que não é mapeado para XML.<br /><br /> Exemplo: O fragmento JSON "ABC", (há espaços antes da primeira citação dupla), mapeia o seguinte elemento XML.<br /><br /> `<root type="string">ABC</root>`<br /><br /> Qualquer espaço em branco nos mapas XML para o espaço branco em JSON.<br /><br /> Exemplo: O elemento XML a seguir mapeia um fragmento JSON.<br /><br /> `<root type="string">  A BC      </root>`<br /><br /> O fragmento json é " A BC ".|
-|`number`|1 ou mais CIIs|Um JSON `number` (JSON RFC, seção 2.4), possivelmente cercado por espaço branco. Cada caractere na combinação de número/espaço branco é um caractere que corresponde ao [código de caractere] do CII.<br /><br /> Exemplo: O elemento a seguir mapeia um fragmento JSON.<br /><br /> `<root type="number">    42</root>`<br /><br /> O fragmento JSON é 42<br /><br /> (O espaço branco está preservado).|
-|`boolean`|4 ou 5 CIIs (que `false`corresponde ou `true` ), possivelmente cercado por CIIs adicionais de espaço branco.|Uma seqüência CII que corresponde à seqüência `true`"true" é mapeada para o literal , e `false`uma seqüência CII que corresponde à seqüência "falsa" é mapeada para o literal . O espaço branco ao redor está preservado.<br /><br /> Exemplo: O elemento a seguir mapeia um fragmento JSON.<br /><br /> `<root type="boolean"> false</root>`<br /><br /> O fragmento JSON é `false`.|
-|`null`|Nada permitido.|O `null`literal. No mapeamento JSON para `null` XML, o pode ser cercado por espaço branco ('ws' na seção 2) que não é mapeado para XML.<br /><br /> Exemplo: O elemento a seguir mapeia um fragmento JSON.<br /><br /> `<root type="null"/>`<br /><br /> ou<br /><br /> `<root type="null"></root>`<br /><br /> :<br /><br /> O fragmento JSON em `Null`ambos os casos é .|
-|`object`|0 ou mais EIIs.|A `begin-object` (cinta encaracolada esquerda) como na seção 2.2 do JSON RFC, seguido de um registro de membro para cada EII conforme descrito posteriormente. Se houver mais de um EII, há separadores de valor (commas) entre os registros de membros. Tudo isso é seguido por um objeto final (cinta encaracolada direita).<br /><br /> Exemplo: O elemento a seguir mapeia o fragmento JSON.<br /><br /> `<root type="object">`<br /><br /> `<type1 type="string">aaa\</type1>`<br /><br /> `<type2 type="string">bbb\</type2>`<br /><br /> `</root >`<br /><br /> O fragmento JSON é `{"type1":"aaa","type2":"bbb"}`.<br /><br /> Se o atributo tipo de contrato de dados estiver presente no mapeamento XML para JSON, então um registro adicional de membro será inserido no início. Seu nome é o [nome local] do\_\_Atributo tipo de contrato de dados (" tipo"), e seu valor é o atributo [valor normalizado]. Por outro lado, no mapeamento JSON para XML, se o nome do primeiro membro-registro for o\_\_[nome local] do Atributo tipo de contrato de dados (ou seja, " tipo"), um atributo de tipo de contrato de dados correspondente está presente no XML mapeado, mas um EII correspondente não está presente. Observe que este registro de membro deve ocorrer primeiro no objeto JSON para que este mapeamento especial seja aplicado. Isso representa uma saída do processamento json usual, onde a ordem dos registros de membros não é significativa.<br /><br /> Exemplo:<br /><br /> Os seguintes mapas de fragmento json para XML.<br /><br /> `{"__type":"Person","name":"John"}`<br /><br /> O XML é o seguinte código.<br /><br /> `<root type="object" __type="Person">   <name type="string">John</name> </root>`<br /><br /> Observe que \_ \_o tipo AII está \_ \_presente, mas não há nenhum tipo EII.<br /><br /> No entanto, se a ordem no JSON for invertida como mostrado no exemplo a seguir.<br /><br /> `{"name":"John","\_\_type":"Person"}`<br /><br /> O XML correspondente é mostrado.<br /><br /> `<root type="object">   <name type="string">John</name>   <__type type="string">Person</__type> </root>`<br /><br /> Ou seja, \__type deixa de ter um significado especial e mapeia para um EII como de costume, não para a IA.<br /><br /> As regras de fuga/descaptura para o valor normalizado da AII quando mapeadas para um valor JSON são as mesmas das strings JSON, especificadas na linha "string" desta tabela.<br /><br /> Exemplo:<br /><br /> `<root type="object" __type="\abc" />`<br /><br /> para o exemplo anterior pode ser mapeado para o JSON a seguir.<br /><br /> `{"__type":"\\abc"}`<br /><br /> Em um mapeamento XML para JSON, o primeiro EII [nome local] não deve ser "tipo".\_\_<br /><br /> O espaço`ws`branco ( ) nunca é gerado no mapeamento XML para JSON para objetos e é ignorado no mapeamento JSON para XML.<br /><br /> Exemplo: O fragmento JSON a seguir mapeia um elemento XML.<br /><br /> `{ "ccc" : "aaa", "ddd" :"bbb"}`<br /><br /> O elemento XML é mostrado no código a seguir.<br /><br /> `<root type="object">    <ccc type="string">aaa</ccc>    <ddd type="string">bbb</bar> </root >`|
-|matriz|0 ou mais EIIs|Uma matriz de início (suporte quadrado esquerdo) como na seção 2.3 do JSON RFC, seguida por um registro de matriz para cada EII conforme descrito mais adiante. Se houver mais de um EII, há separadores de valor (commas) entre os registros de matriz. Tudo isso é seguido por uma matriz final.<br /><br /> Exemplo: O elemento XML a seguir mapeia um fragmento JSON.<br /><br /> `<root type="array"/>    <item type="string">aaa</item>    <item type="string">bbb</item> </root >`<br /><br /> O fragmento JSON é`["aaa","bbb"]`<br /><br /> O espaço`ws`branco ( ) nunca é gerado no mapeamento XML para JSON para arrays e é ignorado no mapeamento JSON para XML.<br /><br /> Exemplo: um fragmento JSON.<br /><br />`["aaa", "bbb"]`<br /><br /> O elemento XML para o que ele mapeia.<br /><br /> `<root type="array"/>    <item type="string">aaa</item>    <item type="string">bbb</item> </root >`|
+|`string` (ou ausência do tipo JSON todos)<br /><br /> R `string` e a ausência do tipo JSON todos são as mesmas torna `string` o padrão.<br /><br /> Portanto, `<root> string1</root>` o mapeia para o JSON `string` "seqüência1".|0 ou mais CIIs|Um JSON `string` (JSON RFC, seção 2,5). Cada `char` um é um caractere que corresponde ao [código de caractere] da CII. Se não houver nenhum CIIs, ele será mapeado para um JSON vazio `string` .<br /><br /> Exemplo: o seguinte elemento é mapeado para um fragmento JSON:<br /><br /> `<root type="string">42</root>`<br /><br /> O fragmento JSON é "42".<br /><br /> No mapeamento de XML para JSON, os caracteres que devem ser mapeados de escape para caracteres de escape, todos os outros mapeam para caracteres que não são de escape. O caractere "/" é especial – ele é escapado mesmo que não precise ser (escrito como " \\ /").<br /><br /> Exemplo: o elemento a seguir mapeia para um fragmento JSON.<br /><br /> `<root type="string">the "da/ta"</root>`<br /><br /> O fragmento JSON é "o \\ " da \\ /ta \\ "".<br /><br /> No mapeamento de JSON para XML, qualquer caractere de escape e caracteres que não são mapeados corretamente para o [código de caractere] correspondente.<br /><br /> Exemplo: o fragmento JSON "\u0041BC", é mapeado para o elemento XML a seguir.<br /><br /> `<root type="string">ABC</root>`<br /><br /> A cadeia de caracteres pode estar entre espaços em branco (' WS ' na seção 2 da RFC JSON) que não é mapeada para XML.<br /><br /> Exemplo: o fragmento JSON "ABC", (há espaços antes da primeira aspa dupla), é mapeado para o elemento XML a seguir.<br /><br /> `<root type="string">ABC</root>`<br /><br /> Qualquer espaço em branco em mapas XML para o espaço em branco em JSON.<br /><br /> Exemplo: o elemento XML a seguir é mapeado para um fragmento JSON.<br /><br /> `<root type="string">  A BC      </root>`<br /><br /> O fragmento JSON é "A BC".|
+|`number`|1 ou mais CIIs|Um JSON `number` (JSON RFC, seção 2,4), possivelmente rodeado por um espaço em branco. Cada caractere na combinação número/espaço em branco é um caractere que corresponde ao [código de caractere] da CII.<br /><br /> Exemplo: o elemento a seguir mapeia para um fragmento JSON.<br /><br /> `<root type="number">    42</root>`<br /><br /> O fragmento JSON é 42<br /><br /> (O espaço em branco é preservado).|
+|`boolean`|4 ou 5 CIIs (que corresponde a `true` ou `false` ), possivelmente cercados por CIIs de espaço em branco adicional.|Uma sequência CII que corresponde à cadeia de caracteres "true" é mapeada para o literal `true` e uma sequência CII que corresponde à cadeia de caracteres "false" é mapeada para o literal `false` . O espaço em branco ao redor é preservado.<br /><br /> Exemplo: o elemento a seguir mapeia para um fragmento JSON.<br /><br /> `<root type="boolean"> false</root>`<br /><br /> O fragmento JSON é `false` .|
+|`null`|Nenhum permitido.|O literal `null` . No mapeamento JSON para XML, o `null` pode estar entre espaços em branco (' WS ' na seção 2) que não é mapeado para XML.<br /><br /> Exemplo: o elemento a seguir mapeia para um fragmento JSON.<br /><br /> `<root type="null"/>`<br /><br /> ou<br /><br /> `<root type="null"></root>`<br /><br /> :<br /><br /> O fragmento JSON em ambos os casos é `Null` .|
+|`object`|0 ou mais EIIs.|A `begin-object` (chave esquerda) como na seção 2,2 da RFC JSON, seguida por um registro de membro para cada EII, conforme descrito mais adiante. Se houver mais de um EII, haverá separadores de valor (vírgulas) entre os registros de membro. Tudo isso é seguido por um objeto final (chave direita).<br /><br /> Exemplo: o elemento a seguir mapeia para o fragmento JSON.<br /><br /> `<root type="object">`<br /><br /> `<type1 type="string">aaa\</type1>`<br /><br /> `<type2 type="string">bbb\</type2>`<br /><br /> `</root >`<br /><br /> O fragmento JSON é `{"type1":"aaa","type2":"bbb"}` .<br /><br /> Se o atributo de tipo de contrato de dados estiver presente no mapeamento de XML para JSON, um registro de membro adicional será inserido no início. Seu nome é o [nome local] do atributo de tipo de contrato de dados (" \_ \_ tipo") e seu valor é o [valor normalizado] do atributo. Por outro lado, no mapeamento de JSON para XML, se o nome do primeiro registro de membro for o [nome local] do atributo de tipo de contrato de dados (ou seja, " \_ \_ tipo"), um atributo de tipo de contrato de dados correspondente estará presente no XML mapeado, mas um EII correspondente não estará presente. Observe que esse registro de membro deve ocorrer primeiro no objeto JSON para que esse mapeamento especial seja aplicado. Isso representa uma partida do processamento comum de JSON, em que a ordem dos registros de membros não é significativa.<br /><br /> Exemplo:<br /><br /> O fragmento JSON a seguir mapeia para XML.<br /><br /> `{"__type":"Person","name":"John"}`<br /><br /> O XML é o código a seguir.<br /><br /> `<root type="object" __type="Person">   <name type="string">John</name> </root>`<br /><br /> Observe que o \_ \_ tipo todos está presente, mas não há nenhum \_ \_ tipo EIi.<br /><br /> No entanto, se a ordem no JSON for revertida, conforme mostrado no exemplo a seguir.<br /><br /> `{"name":"John","\_\_type":"Person"}`<br /><br /> O XML correspondente é mostrado.<br /><br /> `<root type="object">   <name type="string">John</name>   <__type type="string">Person</__type> </root>`<br /><br /> Ou seja, \_ _type deixa de ter um significado especial e é mapeado para um EII como de costume, não todos.<br /><br /> As regras de escape/saída para o [valor normalizado] do todos quando mapeadas para um valor JSON são iguais às cadeias de caracteres JSON, especificadas na linha "String" dessa tabela.<br /><br /> Exemplo:<br /><br /> `<root type="object" __type="\abc" />`<br /><br /> para o exemplo anterior, é possível mapear para o JSON a seguir.<br /><br /> `{"__type":"\\abc"}`<br /><br /> Em um mapeamento de XML para JSON, o primeiro [nome local] do EII não deve ser " \_ \_ Type".<br /><br /> O espaço em branco ( `ws` ) nunca é gerado em mapeamento de XML para JSON para objetos e é ignorado no mapeamento de JSON para XML.<br /><br /> Exemplo: o fragmento JSON a seguir mapeia para um elemento XML.<br /><br /> `{ "ccc" : "aaa", "ddd" :"bbb"}`<br /><br /> O elemento XML é mostrado no código a seguir.<br /><br /> `<root type="object">    <ccc type="string">aaa</ccc>    <ddd type="string">bbb</bar> </root >`|
+|array|0 ou mais EIIs|Um Begin-array (colchete esquerdo) como na seção 2,3 da RFC JSON, seguido por um registro de matriz para cada EII, conforme descrito mais adiante. Se houver mais de um EII, haverá separadores de valor (vírgulas) entre os registros de matriz. Tudo isso é seguido por uma matriz final.<br /><br /> Exemplo: o elemento XML a seguir é mapeado para um fragmento JSON.<br /><br /> `<root type="array"/>    <item type="string">aaa</item>    <item type="string">bbb</item> </root >`<br /><br /> O fragmento JSON é `["aaa","bbb"]`<br /><br /> O espaço em branco ( `ws` ) nunca é gerado no mapeamento de XML para JSON para matrizes e é ignorado no mapeamento de JSON para XML.<br /><br /> Exemplo: um fragmento JSON.<br /><br />`["aaa", "bbb"]`<br /><br /> O elemento XML para o qual ele é mapeado.<br /><br /> `<root type="array"/>    <item type="string">aaa</item>    <item type="string">bbb</item> </root >`|
 
-Os registros de membros funcionam da seguinte forma:
+Os registros de membro funcionam da seguinte maneira:
 
-- O elemento interno [nome local] `string` mapeia a parte do `member` como definido na seção 2.2 do JSON RFC.
+- O [nome local] do elemento interno é mapeado para a `string` parte do `member` conforme definido na seção 2,2 da RFC JSON.
 
-Exemplo: O elemento a seguir mapeia um fragmento JSON.
+Exemplo: o elemento a seguir mapeia para um fragmento JSON.
 
 ```xml
 <root type="object">
@@ -157,19 +159,19 @@ Exemplo: O elemento a seguir mapeia um fragmento JSON.
 </root>
 ```
 
-O seguinte fragmento JSON é exibido.
+O fragmento JSON a seguir é exibido.
 
 ```json
 {"myLocalName":"aaa"}
 ```
 
-- No mapeamento XML para JSON, os personagens que devem ser escapados em JSON são escapados, e os outros não escapam. O personagem "/", embora não seja um personagem que deve ser escapado, escapa no entanto (ele não precisa ser escapado no mapeamento JSON para XML). Isso é necessário para suportar o `DateTime` formato AJAX ASP.NET para dados no JSON.
+- No mapeamento de XML para JSON, os caracteres que devem ser ignorados em JSON são ignorados e os outros não são de escape. O caractere "/", embora não seja um caractere que deva ser escapado, tenha um escape de saída, no entanto (não precisa ser ignorado em mapeamento de JSON para XML). Isso é necessário para dar suporte ao formato ASP.NET AJAX para `DateTime` dados em JSON.
 
-- No mapeamento JSON para XML, todos os caracteres (incluindo os caracteres não escapados, se necessário) são levados para formar um `string` que produz um [nome local].
+- No mapeamento JSON para XML, todos os caracteres (incluindo os caracteres sem escape, se necessário) são usados para formar um `string` que produza um [nome local].
 
-- Elementos internos [crianças] mapeiam o valor `JSON Type Attribute` na seção `Root JSON Element`2.2, de acordo com o mesmo do . Vários níveis de aninhamento de EIIs (incluindo aninhamento dentro de matrizes) são permitidos.
+- Os elementos internos [filhos] são mapeados para o valor na seção 2,2, de acordo com o que é `JSON Type Attribute` assim para o `Root JSON Element` . São permitidos vários níveis de aninhamento de EIIs (incluindo aninhamento dentro de matrizes).
 
-Exemplo: O elemento a seguir mapeia um fragmento JSON.
+Exemplo: o elemento a seguir mapeia para um fragmento JSON.
 
 ```xml
 <root type="object">
@@ -182,24 +184,24 @@ Exemplo: O elemento a seguir mapeia um fragmento JSON.
 </root >
 ```
 
-O seguinte fragmento JSON é o que ele mapeia para.
+O fragmento JSON a seguir é o que ele mapeia.
 
 ```json
 {"myLocalName1":"myValue1","myLocalName2":2,"myLocalName3":{"myNestedName1":true,"myNestedName2":null}}
 ```
 
 > [!NOTE]
-> Não há etapa de codificação XML no mapeamento anterior. Portanto, o WCF só suporta documentos JSON onde todos os caracteres em nomes-chave são caracteres válidos em nomes de elementos XML. Por exemplo, o documento JSON {"<":"a"} não é suportado porque < não é um nome válido para um elemento XML.
+> Não há nenhuma etapa de codificação XML no mapeamento anterior. Portanto, o WCF dá suporte apenas a documentos JSON, onde todos os caracteres em nomes de chave são caracteres válidos em nomes de elementos XML. Por exemplo, o documento JSON {"<": "a"} não tem suporte porque < não é um nome válido para um elemento XML.
 
-A situação inversa (caracteres válidos em XML, mas não em JSON) não causa problemas porque o mapeamento anterior inclui etapas de fuga/fuga de JSON.
+A situação inversa (caracteres válidos em XML, mas não em JSON) não causa problemas porque o mapeamento anterior inclui etapas de escape/saída JSON.
 
-Os registros de array funcionam da seguinte forma:
+Os registros de matriz funcionam da seguinte maneira:
 
 - O [nome local] do elemento interno é "item".
 
-- O mapa [crianças] do elemento interno para o valor na seção 2.3, de acordo com o Atributo do Tipo JSON, como é para o Elemento JSON raiz. Vários níveis de aninhamento de EIIs (incluindo aninhamento dentro de objetos) são permitidos.
+- O mapa [Children] do elemento interno é mapeado para o valor na seção 2,3, de acordo com o atributo de tipo JSON, como se encontra para o elemento JSON raiz. São permitidos vários níveis de aninhamento de EIIs (incluindo aninhamento dentro de objetos).
 
-Exemplo: O elemento a seguir mapeia um fragmento JSON.
+Exemplo: o elemento a seguir mapeia para um fragmento JSON.
 
 ```xml
 <root type="array">
@@ -211,13 +213,13 @@ Exemplo: O elemento a seguir mapeia um fragmento JSON.
 </root>
 ```
 
-A seguir está o fragmento JSON.
+Este é o fragmento JSON.
 
 ```json
 ["myValue1",2,[true,null]]
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory>
 - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>

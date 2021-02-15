@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Função CallFunctionShim'
 title: Função CallFunctionShim
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 37118465-ddf3-41f0-bf27-335b72777e63
 topic_type:
 - apiref
-ms.openlocfilehash: e8945d40a3761ec51a73a8ae90ddc1d84ccab651
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 7ddd16a06005011adcf41190929fd62f4132f14d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616860"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799948"
 ---
 # <a name="callfunctionshim-function"></a>Função CallFunctionShim
+
 Faz uma chamada para a função que tem o nome e os parâmetros especificados na biblioteca especificada.  
   
  Essa função foi preterida no .NET Framework 4.  
@@ -40,6 +42,7 @@ HRESULT CallFunctionShim (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `szDllName`  
  no O nome da biblioteca que contém a função.  
   
@@ -59,14 +62,15 @@ HRESULT CallFunctionShim (
  no Reservado para uso futuro. Passe zero neste parâmetro.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** MSCorEE. dll  
+ **Biblioteca:** MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Funções de hospedagem CLR reprovadas](deprecated-clr-hosting-functions.md)

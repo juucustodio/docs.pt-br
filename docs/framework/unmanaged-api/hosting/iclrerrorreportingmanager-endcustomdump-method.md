@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRErrorReportingManager:: EndCustomDump'
 title: Método ICLRErrorReportingManager::EndCustomDump
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 88a5da04-8729-4108-82c4-af206a7d483e
 topic_type:
 - apiref
-ms.openlocfilehash: 704d8d0921e671e4172fa6e0ae3f14c4908f289a
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 406d7d77f4cd63c69fec56acb0819d56c6271630
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615651"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99689463"
 ---
 # <a name="iclrerrorreportingmanagerendcustomdump-method"></a>Método ICLRErrorReportingManager::EndCustomDump
+
 Remove a configuração de despejo de pilha personalizada que foi especificada em uma chamada anterior para o método [ICLRErrorReportingManager:: BeginCustomDump](iclrerrorreportingmanager-begincustomdump-method.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,7 +37,7 @@ HRESULT EndCustomDump ();
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
-|S_OK|`EndCustomDump`retornado com êxito.|  
+|S_OK|`EndCustomDump` retornado com êxito.|  
 |HOST_E_CLRNOTAVAILABLE|O Common Language Runtime (CLR) não foi carregado em um processo ou o CLR está em um estado no qual não pode executar código gerenciado ou processar a chamada com êxito.|  
 |HOST_E_TIMEOUT|A chamada atingiu o tempo limite.|  
 |HOST_E_NOT_OWNER|O chamador não possui o bloqueio.|  
@@ -43,21 +45,23 @@ HRESULT EndCustomDump ();
 |E_FAIL|Ocorreu uma falha catastrófica desconhecida. Depois que um método retorna E_FAIL, o CLR não pode mais ser usado no processo. As chamadas subsequentes para métodos de hospedagem retornam HOST_E_CLRNOTAVAILABLE.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O `EndCustomDump` método limpa a configuração de despejo de pilha personalizada definida por uma chamada anterior para o `BeginCustomDump` método e libera qualquer estado associado. Ele deve ser chamado após a conclusão do despejo de pilha personalizado.  
   
 > [!IMPORTANT]
 > Falha ao chamar `EndCustomDump` faz com que a memória seja vazada.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Estrutura CustomDumpItem](customdumpitem-structure.md)
 - [Enumeração ECustomDumpFlavor](ecustomdumpflavor-enumeration.md)

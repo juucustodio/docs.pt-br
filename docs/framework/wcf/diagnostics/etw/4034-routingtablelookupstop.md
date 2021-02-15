@@ -1,28 +1,32 @@
 ---
+description: 'Saiba mais sobre: 4034-RoutingTableLookupStop'
 title: 4034 - RoutingTableLookupStop
 ms.date: 03/30/2017
 ms.assetid: 8a7ae705-77fd-42ce-a181-814765873d73
-ms.openlocfilehash: a2f90e8f51a3a2b23eee53d83a77c27ae7798ca1
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: bcbd788e3c4c7e8e4af5d56635babc56d6322f83
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62048836"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760310"
 ---
 # <a name="4034---routingtablelookupstop"></a>4034 - RoutingTableLookupStop
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
 |ID|4034|  
-|Palavras-chave|ActivationServices|  
+|Palavras-chave|Ativaçãoservices|  
 |Nível|Detalhado|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando a pesquisa de tabela de roteamento foi interrompido.  
+
+ Esse evento é emitido quando a pesquisa da tabela de roteamento é interrompida.  
   
 ## <a name="message"></a>Mensagem  
- Pesquisa concluída da tabela de roteamento.  
+
+ Pesquisa de tabela de roteamento concluída.  
   
 ## <a name="details"></a>Detalhes

@@ -9,14 +9,15 @@ helpviewer_keywords:
 - Aximp.exe
 - Windows Forms ActiveX Control Importer
 ms.assetid: 482c0d83-7144-4497-b626-87d2351b78d0
-ms.openlocfilehash: d4fd6762195078963b43392178996a61f90feb94
-ms.sourcegitcommit: 87cfeb69226fef01acb17c56c86f978f4f4a13db
+ms.openlocfilehash: 97e5201aecc540594aa154bb5a2e93e85c925570
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87167346"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96247337"
 ---
 # <a name="aximpexe-windows-forms-activex-control-importer"></a>Aximp.exe (Importador de Controle ActiveX do Windows Forms)
+
 O Importador de Controle ActiveX converte definições de tipo em uma biblioteca de tipos COM para um controle ActiveX em um controle do Windows Forms.  
   
  O Windows Forms só pode hospedar controles do Windows Forms — ou seja, classes derivadas de <xref:System.Windows.Forms.Control>. Aximp.exe gerencia uma classe wrapper para um controle ActiveX que pode ser hospedado no Windows Form. Isso permite usar o mesmo suporte de tempo de design e a mesma metodologia de programação aplicável a outros controles do Windows Forms.  
@@ -39,7 +40,7 @@ aximp [options]{file.dll | file.ocx}
 |--------------|-----------------|  
 |*file*|O nome do arquivo de origem que contém o controle ActiveX a ser convertido. O argumento do arquivo deve ter a extensão .dll ou .ocx.|  
   
-|Opção|DESCRIÇÃO|  
+|Opção|Descrição|  
 |------------|-----------------|  
 |`/delaysign`|Especifica Aximp.exe para assinar o controle resultante usando-se a assinatura com atraso. Você deve especificar essa opção com a opção `/keycontainer:`, `/keyfile:` ou `/publickey:`. Para obter mais informações sobre o processo de assinatura com atraso, consulte [Assinatura com Atraso de um Assembly](../../standard/assembly/delay-sign.md).|  
 |`/help`|Exibe sintaxe de comando e opções para a ferramenta.|  
@@ -58,7 +59,7 @@ aximp [options]{file.dll | file.ocx}
   
  Proxy de Common Language Runtime para tipos COM: *progid*.dll  
   
- Proxy do Windows Forms para controles ActiveX (em que Ax significa ActiveX): Ax*progid*.dll  
+ Proxy do Windows Forms para controles ActiveX (em que Ax significa ActiveX): Ax *progid*.dll  
   
 > [!NOTE]
 > Se o nome de um membro do controle ActiveX corresponder a um nome definido no .NET Framework, Aximp.exe prefixará o nome do membro com "Ctl" ao criar a classe derivada AxHost. Por exemplo, se o controle ActiveX tiver um membro chamado "Layout", ele será renomeado "CtlLayout" na classe derivada AxHost porque o evento Layout é definido dentro do .NET Framework.  
@@ -72,13 +73,14 @@ aximp [options]{file.dll | file.ocx}
  O uso de Aximp.exe com shdocvw.dll para criar um assembly do .NET. a ser usado no desenvolvimento de aplicativos também pode causar problemas. Nesse caso, o aplicativo carregará a versão do sistema de shdocvw.dll e a versão gerada, além de poder atribuir a prioridade à versão do sistema. Nesse caso, quando você tentar carregar uma página da Web no controle ActiveX WebBrowser, os usuários poderão ser avisados com uma caixa de diálogo Abrir/Salvar. Quando o usuário clica em **Abrir**, a página da Web é aberta no Internet Explorer. Isso ocorre apenas com computadores que estão executando o Internet Explorer versão 6 ou anterior. Para evitar esse problema, use o controle gerenciado <xref:System.Windows.Forms.WebBrowser> ou o Visual Studio para gerar o shdocvw.dll gerenciado conforme descrito em [Como adicionar referências a bibliotecas de tipos](../interop/how-to-add-references-to-type-libraries.md).  
   
 ## <a name="example"></a>Exemplo  
+
  O comando a seguir gera MediaPlayer.dll e AxMediaPlayer.dll para o controle `msdxm.ocx` do Media Player.  
   
 ```console
 aximp c:\systemroot\system32\msdxm.ocx  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Ferramentas](index.md)
 - [Ildasm.exe (desmontador de IL)](ildasm-exe-il-disassembler.md)

@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-doc
 title: -doc
 ms.date: 03/10/2018
 helpviewer_keywords:
@@ -6,17 +7,18 @@ helpviewer_keywords:
 - -doc compiler option [Visual Basic]
 - /doc compiler option [Visual Basic]
 ms.assetid: 5fc32ec9-a149-4648-994c-a8d0cccd0a65
-ms.openlocfilehash: 57a81983278c26090c62995f4da55c5cbfd66047
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: da1ff6ad133dd2f46484b61ff73e1c6159eae557
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84408667"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100461418"
 ---
 # <a name="-doc"></a>-doc
+
 Processa comentários de documentação para um arquivo XML.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```console  
 -doc[+ | -]  
@@ -36,6 +38,7 @@ ou
 |`file`|Necessário se `-doc:` for usado. Especifica o arquivo XML de saída, que é preenchido com os comentários dos arquivos de código-fonte da compilação. Se o nome do arquivo contiver um espaço, coloque o nome entre aspas (" ").|  
   
 ## <a name="remarks"></a>Comentários  
+
  A opção `-doc` controla se o compilador gera um arquivo XML contendo os comentários de documentação. Se você usar a sintaxe `-doc:file`, o parâmetro `file` especifica o nome do arquivo XML. Se você usar `-doc` ou `-doc+`, o compilador pega o nome do arquivo XML do arquivo executável ou da biblioteca que o compilador está criando. Se você usar `-doc-` ou não especificar a opção `-doc`, o compilador não criará um arquivo XML.  
   
  Nos arquivos de código-fonte, os comentários de documentação podem preceder as seguintes definições:  
@@ -55,9 +58,10 @@ ou
 |1. ter um projeto selecionado em **Gerenciador de soluções**. No menu **Projeto** , clique em **Propriedades**. <br />2. Clique na guia **Compilar** .<br />3. defina o valor na caixa **gerar arquivo de documentação XML** .|  
   
 ## <a name="example"></a>Exemplo  
+
  Veja [Como documentar o código com XML](../../programming-guide/program-structure/documenting-your-code-with-xml.md) para obter um exemplo.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Compilador de linha de comando do Visual Basic](index.md)
 - [Documentando o código com XML](../../programming-guide/program-structure/documenting-your-code-with-xml.md)

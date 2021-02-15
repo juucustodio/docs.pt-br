@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: MsmqTransportBindingElement'
 title: MsmqTransportBindingElement
 ms.date: 03/30/2017
 ms.assetid: 1c89f073-9ed3-4025-a8c5-13535a0f526b
-ms.openlocfilehash: 706cec5c414197ebabda7939728b95be32582e0f
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 4b6f363d979972c6ff0a2a378906feeece2ff6b2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61963300"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803146"
 ---
 # <a name="msmqtransportbindingelement"></a>MsmqTransportBindingElement
+
 MsmqTransportBindingElement  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class MsmqTransportBindingElement : MsmqBindingElementBase  
@@ -24,12 +26,15 @@ class MsmqTransportBindingElement : MsmqBindingElementBase
 ```  
   
 ## <a name="methods"></a>Métodos  
- A classe MsmqTransportBindingElement não define quaisquer métodos.  
+
+ A classe MsmqTransportBindingElement não define nenhum método.  
   
 ## <a name="properties"></a>Propriedades  
+
  A classe MsmqTransportBindingElement tem as seguintes propriedades:  
   
 ### <a name="maxpoolsize"></a>MaxPoolSize  
+
  Tipo de dados: sint32  
   
  Tipo de acesso: Somente leitura  
@@ -37,14 +42,16 @@ class MsmqTransportBindingElement : MsmqBindingElementBase
  O tamanho máximo do pool que contém objetos de mensagem MSMQ internos.  
   
 ### <a name="queuetransferprotocol"></a>QueueTransferProtocol  
+
  Tipo de dados: cadeia de caracteres  
   
  Tipo de acesso: Somente leitura  
   
- Um valor de enumeração que indica o transporte de canal de comunicação em fila que esta associação usa.  
+ Um valor de enumeração que indica o transporte de canal de comunicação na fila que essa associação usa.  
   
 ### <a name="useactivedirectory"></a>UseActiveDirectory  
- Tipo de dados: boolean  
+
+ Tipo de dados: booliano  
   
  Tipo de acesso: Somente leitura  
   
@@ -52,10 +59,10 @@ class MsmqTransportBindingElement : MsmqBindingElementBase
   
 ## <a name="requirements"></a>Requisitos  
   
-|MOF|Declarado em Servicemodel.mof.|  
+|MOF|Declarado em ServiceModel. mof.|  
 |---------|-----------------------------------|  
-|Namespace|Definido no root\ServiceModel|  
+|Namespace|Definido em root\ServiceModel|  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.ServiceModel.Channels.MsmqTransportBindingElement>

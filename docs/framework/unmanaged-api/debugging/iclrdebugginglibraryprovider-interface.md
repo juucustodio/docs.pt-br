@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICLRDebuggingLibraryProvider'
 title: Interface ICLRDebuggingLibraryProvider
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 67739617-6add-41a9-9de5-a3200c3109ce
 topic_type:
 - apiref
-ms.openlocfilehash: 77c2011ce677d1bd2823d47740782f48151b408a
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: 8aaec87e97d45c8b7b6f87aee64154ea3f48b133
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860285"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723277"
 ---
 # <a name="iclrdebugginglibraryprovider-interface"></a>Interface ICLRDebuggingLibraryProvider
+
 Inclui o método de [método ProvideLibrary](iclrdebugginglibraryprovider-providelibrary-method.md) , que obtém uma interface de retorno de chamada do provedor de biblioteca que permite que Common Language Runtime bibliotecas de depuração específicas à versão sejam localizadas e carregadas sob demanda.  
   
 ## <a name="methods"></a>Métodos  
@@ -31,6 +33,7 @@ Inclui o método de [método ProvideLibrary](iclrdebugginglibraryprovider-provid
 |[Método ProvideLibrary](iclrdebugginglibraryprovider-providelibrary-method.md)|Permite que o depurador forneça um identificador para um módulo que pode ser usado para carregar uma biblioteca de depuração.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -39,7 +42,7 @@ Inclui o método de [método ProvideLibrary](iclrdebugginglibraryprovider-provid
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Depuração](index.md)

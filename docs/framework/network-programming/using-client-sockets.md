@@ -17,14 +17,15 @@ helpviewer_keywords:
 - sockets, client sockets
 - client sockets
 ms.assetid: 81de9f59-8177-4d98-b25d-43fc32a98383
-ms.openlocfilehash: 1dc02d0b3651d5766d1d30752566217d8417af0c
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 6982d09c20cd0d7e9d27fc63880b39e0982c86ef
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84501996"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96265187"
 ---
 # <a name="using-client-sockets"></a>Usando soquetes de cliente
+
 Antes de iniciar uma conversa por meio de um <xref:System.Net.Sockets.Socket>, crie um pipe de dados entre o aplicativo e o dispositivo remoto. Embora existam outros protocolos e famílias de endereços de rede, este exemplo mostra como criar uma conexão TCP/IP com um serviço remoto.  
   
  O TCP/IP usa um endereço de rede e um número da porta de serviço para identificar um serviço exclusivamente. O endereço de rede identifica um dispositivo específico na rede; o número da porta identifica o serviço específico nesse dispositivo ao qual se conectar. A combinação do endereço de rede e da porta de serviço é chamada de um ponto de extremidade, que é representado no .NET Framework pela classe <xref:System.Net.EndPoint>. Um descendente de **EndPoint** está definido para cada família de endereços com suporte; para a família de endereços IP, a classe é <xref:System.Net.IPEndPoint>.  
@@ -78,9 +79,9 @@ try {
 }  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Usando um soquete de cliente síncrono](using-a-synchronous-client-socket.md)
 - [Usando um soquete de cliente assíncrono](using-an-asynchronous-client-socket.md)
-- [Como criar um soquete](how-to-create-a-socket.md)
+- [Como: Criar um soquete](how-to-create-a-socket.md)
 - [Soquetes](sockets.md)

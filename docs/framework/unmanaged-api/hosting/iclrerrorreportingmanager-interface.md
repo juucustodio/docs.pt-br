@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICLRErrorReportingManager'
 title: Interface ICLRErrorReportingManager
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: ea8af0d5-4133-4472-8a1f-50570d7e85fa
 topic_type:
 - apiref
-ms.openlocfilehash: dbe4129cf4160a1a9b31bc6f418095ea4b392d57
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 094fe52858983fd0e1e5826e823932cb150b6087
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616990"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99689268"
 ---
 # <a name="iclrerrorreportingmanager-interface"></a>Interface ICLRErrorReportingManager
+
 Fornece métodos que permitem ao host configurar despejos de pilha personalizados para o relatório de erros.  
   
 ## <a name="methods"></a>Métodos  
@@ -33,21 +35,23 @@ Fornece métodos que permitem ao host configurar despejos de pilha personalizado
 |[Método GetBucketParametersForCurrentException](iclrerrorreportingmanager-getbucketparametersforcurrentexception-method.md)|Obtém o Bucket do Watson para a exceção atual no thread de chamada.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O `BeginCustomDump` método define a configuração de despejo de pilha personalizado. O `EndCustomDump` método limpa a configuração de despejo de pilha personalizada e libera qualquer estado associado. Ele deve ser chamado após a conclusão do despejo personalizado.  
   
 > [!IMPORTANT]
 > Falha ao chamar `EndCustomDump` faz com que a memória seja vazada.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Enumeração ECustomDumpItemKind](ecustomdumpitemkind-enumeration.md)
 - [Interfaces de hospedagem](hosting-interfaces.md)

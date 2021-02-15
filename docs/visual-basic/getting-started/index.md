@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: introdução ao Visual Basic'
 title: Introdução
 ms.date: 09/10/2018
 helpviewer_keywords:
 - get started, Visual Basic
 - Visual Basic, get started
 ms.assetid: 6685467b-28fa-4cde-9516-f0e00ad08911
-ms.openlocfilehash: a56532a33bc0ef0aae73de7f80e533038212c5ec
-ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
+ms.openlocfilehash: 0a7a2e5c859d6c72459b34a62571a2ce8b3b0c3a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2020
-ms.locfileid: "89495480"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675254"
 ---
 # <a name="get-started-with-visual-basic"></a>Introdução ao Visual Basic
 
@@ -28,7 +29,7 @@ Esta seção da documentação ajuda você a começar o desenvolvimento de aplic
 
 - [Recursos adicionais para programadores de Visual Basic](additional-resources.md) Fornece uma lista de sites da Web e grupos de notícias que podem ajudá-lo a encontrar respostas para problemas comuns.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Obter Visual Basic](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) Fornece links de download para versões do Visual Studio que acompanham o suporte do Visual Basic, incluindo versões gratuitas.
 

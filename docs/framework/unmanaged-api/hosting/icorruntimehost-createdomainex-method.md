@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorRuntimeHost:: CreateDomainEx'
 title: Método ICorRuntimeHost::CreateDomainEx
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 1bdde382-f8ba-4cc8-94b2-d1ac919c585e
 topic_type:
 - apiref
-ms.openlocfilehash: 4e5856fbcda83c1dd30559c6f59f63495faea78d
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: aec759cec4fd68fff4bdfaaf3403a0da026fb9ee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83762338"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789691"
 ---
 # <a name="icorruntimehostcreatedomainex-method"></a>Método ICorRuntimeHost::CreateDomainEx
+
 Cria um domínio de aplicativo. O chamador recebe um ponteiro de interface, do tipo <xref:System._AppDomain> , para uma instância do tipo <xref:System.AppDomain?displayProperty=nameWithType> . Esse método permite que o chamador passe uma instância de IAppDomainSetup para configurar recursos adicionais da <xref:System._AppDomain> instância retornada.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,6 +39,7 @@ HRESULT CreateDomainEx (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pwzFriendlyName`  
  no Um parâmetro opcional usado para fornecer um nome amigável ao domínio. Esse nome amigável pode ser exibido em interfaces do usuário, como depuradores, para identificar o domínio.  
   
@@ -49,9 +52,9 @@ HRESULT CreateDomainEx (
  `pAppDomain`  
  fora Um ponteiro de interface do tipo <xref:System._AppDomain> para uma instância do <xref:System.AppDomain?displayProperty=nameWithType> que pode ser usado para controlar ainda mais o domínio.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
-|HRESULT|Description|  
+|HRESULT|Descrição|  
 |-------------|-----------------|  
 |S_OK|A operação foi bem-sucedida.|  
 |S_FALSE|Falha ao concluir a operação.|  
@@ -59,18 +62,20 @@ HRESULT CreateDomainEx (
 |HOST_E_CLRNOTAVAILABLE|O CLR não foi carregado em um processo ou o CLR está em um estado no qual não pode executar código gerenciado ou processar a chamada com êxito.|  
   
 ## <a name="remarks"></a>Comentários  
- `CreateDomainEx`estende os recursos do [CreateDomain](icorruntimehost-createdomain-method.md) permitindo que o chamador passe em uma `IAppDomainSetup` instância com valores de propriedade para configurar o domínio do aplicativo.  
+
+ `CreateDomainEx` estende os recursos do [CreateDomain](icorruntimehost-createdomain-method.md) permitindo que o chamador passe em uma `IAppDomainSetup` instância com valores de propriedade para configurar o domínio do aplicativo.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **Versão do .NET Framework:** 1,0, 1,1  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System._AppDomain>
 - <xref:System.AppDomain>

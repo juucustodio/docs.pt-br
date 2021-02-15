@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: agrupando mensagens enfileiradas em uma sessão'
 title: Agrupamento de mensagens em fila em uma sessão
 ms.date: 03/30/2017
 dev_langs:
@@ -7,17 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - queues [WCF]. grouping messages
 ms.assetid: 63b23b36-261f-4c37-99a2-cc323cd72a1a
-ms.openlocfilehash: 66f51267f20f8cdad8feeedf37435ccfa733146e
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 5a23133090ebfd5db9f59bb37a69cdca83ce2bc0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597352"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793838"
 ---
 # <a name="grouping-queued-messages-in-a-session"></a>Agrupamento de mensagens em fila em uma sessão
+
 O Windows Communication Foundation (WCF) fornece uma sessão que permite agrupar um conjunto de mensagens relacionadas para processamento por um único aplicativo de recebimento. As mensagens que fazem parte de uma sessão devem fazer parte da mesma transação. Como todas as mensagens fazem parte da mesma transação, se uma mensagem não for processada, toda a sessão será revertida. As sessões têm comportamentos semelhantes em relação a filas de mensagens mortas e filas suspeitas. A propriedade time to Live (TTL) definida em uma associação enfileirada configurada para sessões é aplicada à sessão como um todo. Se apenas algumas das mensagens na sessão forem enviadas antes do tempo de vida expirar, toda a sessão será colocada na fila de mensagens mortas. Da mesma forma, quando as mensagens em uma sessão falham ao serem enviadas a um aplicativo da fila de aplicativos, toda a sessão é colocada na fila de suspeitas (se disponível).  
   
 ## <a name="message-grouping-example"></a>Exemplo de agrupamento de mensagens  
+
  Um exemplo em que o agrupamento de mensagens é útil é ao implementar um aplicativo de processamento de pedidos como um serviço WCF. Por exemplo, um cliente envia um pedido para esse aplicativo que contém vários itens. Para cada item, o cliente faz uma chamada para o serviço, o que resulta em uma mensagem separada sendo enviada. É possível que o forneça um para receber o primeiro item e o servidor B receba o segundo item. Cada vez que um item é adicionado, o servidor que processa esse item tem que localizar a ordem apropriada e adicionar o item a ele, o que é altamente ineficiente. Você ainda pode se deparar com essas ineficiências apenas com um único servidor manipulando todas as solicitações, porque o servidor deve manter o controle de todos os pedidos que estão sendo processados no momento e determinar a qual deles o novo item pertence. O agrupamento de todas as solicitações de um único pedido simplifica muito a implementação desse aplicativo. O aplicativo cliente envia todos os itens para uma única ordem em uma sessão, portanto, quando o serviço processa o pedido, ele processa toda a sessão ao mesmo tempo. \  
   
 ## <a name="procedures"></a>Procedimentos  
@@ -62,7 +65,7 @@ O Windows Communication Foundation (WCF) fornece uma sessão que permite agrupar
   
 1. Crie um escopo de transação para gravar na fila transacional.  
   
-2. Crie o cliente WCF usando a ferramenta do [Utilitário de metadados ServiceModel (svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) .  
+2. Crie o cliente WCF usando a ferramenta [ferramenta de utilitário de metadados ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) .  
   
 3. Faça o pedido.  
   
@@ -71,13 +74,16 @@ O Windows Communication Foundation (WCF) fornece uma sessão que permite agrupar
 ## <a name="example"></a>Exemplo  
   
 ### <a name="description"></a>Descrição  
+
  O exemplo a seguir fornece o código para o `IProcessOrder` serviço e para um cliente que usa esse serviço. Ele mostra como o WCF usa sessões enfileiradas para fornecer o comportamento de agrupamento.  
   
 ### <a name="code-for-the-service"></a>Código para o serviço  
+
  [!code-csharp[S_Msmq_Session#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_msmq_session/cs/service.cs#1)]
  [!code-vb[S_Msmq_Session#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmq_session/vb/service.vb#1)]  
 
 ### <a name="code-for-the-client"></a>Código para o cliente  
+
  [!code-csharp[S_Msmq_Session#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_msmq_session/cs/client.cs#3)]
  [!code-vb[S_Msmq_Session#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_msmq_session/vb/client.vb#3)]  
 

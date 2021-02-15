@@ -1,17 +1,19 @@
 ---
+description: 'Saiba mais sobre: objetos (Visual Basic)'
 title: Objetos
 ms.date: 07/20/2015
 helpviewer_keywords:
 - objects [Visual Basic]
 ms.assetid: 651c73e4-dca8-402b-9c6b-e3902b3a3f4b
-ms.openlocfilehash: e927f69b7606866a0a9e8eadd59270f51ffc5e2b
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 2f725d938e6ba715b07f88154558336d47b544fc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84414214"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99674617"
 ---
 # <a name="objects-visual-basic"></a>Objetos (Visual Basic)
+
 Este tópico fornece links para outros tópicos que documentam os objetos de tempo de execução do Visual Basic e que contêm tabelas dos procedimentos, das propriedades e dos eventos dos seus membros.  
   
 ## <a name="visual-basic-run-time-objects"></a>Objetos em tempo de execução do Visual Basic  
@@ -45,6 +47,6 @@ Este tópico fornece links para outros tópicos que documentam os objetos de tem
 |[Objeto My.WebServices](my-webservices-object.md)|Fornece propriedades para criar e acessar uma única instância de cada serviço Web referenciado pelo projeto atual.|  
 |<xref:Microsoft.VisualBasic.FileIO.TextFieldParser>|Fornece métodos e propriedades para analisar arquivos de texto estruturado.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Referência de linguagem de Visual Basic](../index.md)
+- [Referência da linguagem Visual Basic](../index.md)

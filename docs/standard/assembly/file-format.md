@@ -3,14 +3,13 @@ title: Formato de arquivo do assembly .NET
 description: Saiba mais sobre o formato de arquivo do assembly do .NET, que é usado para descrever e conter aplicativos e bibliotecas do .NET.
 author: richlander
 ms.date: 08/20/2019
-ms.technology: dotnet-standard
 ms.assetid: 6520323e-ff28-4c8a-ba80-e64a413199e6
-ms.openlocfilehash: b4aa961c3a6f2d4fa1580ff608aaf2a40d462fa0
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: b1de3f46f04f24dd4bbb2f695de8741feb29f226
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84288505"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95731534"
 ---
 # <a name="net-assembly-file-format"></a>Formato de arquivo do assembly .NET
 
@@ -18,7 +17,7 @@ O .NET define um formato de arquivo binário, *assembly*, que é usado para desc
 
 > Cada componente de CLI carrega os metadados para declarações, implementações e referências específicas para esse componente. Portanto, os metadados específicos do componente são conhecidos como metadados de componente e o componente resultante deve ser autodescritivo – do ECMA 335 I.9.1, Componentes e assemblies.
 
-O formato é totalmente especificado e padronizado como [ECMA 335](https://www.ecma-international.org/publications/standards/Ecma-335.htm). Todos os runtimes e compiladores .NET usam esse formato. A presença de um formato binário documentado e raramente atualizado foi um grande benefício (sem dúvida, um requisito) da interoperabilidade. O formato foi atualizado de forma substancial pela última vez em 2005 (.NET 2.0) para acomodar os genéricos e a arquitetura do processador.
+O formato é totalmente especificado e padronizado como [ECMA 335](https://www.ecma-international.org/publications/standards/Ecma-335.htm). Todos os runtimes e compiladores .NET usam esse formato. A presença de um formato binário documentado e raramente atualizado foi um grande benefício (sem dúvida, um requisito) da interoperabilidade. O formato foi atualizado pela última vez em 2005 (.NET Framework 2,0) para acomodar os genéricos e a arquitetura do processador.
 
 O formato é independente de CPU e sistema operacional. Ele tem sido usado como parte de implementações do .NET que se destinam a muitos chips e CPUs. Embora o formato em si tenha patrimônio do Windows, é implementável em qualquer sistema operacional. Sua escolha indiscutivelmente mais significativa para a interoperabilidade do sistema operacional é que a maioria dos valores é armazenada no formato little endian. Ele não tem uma afinidade específica para o tamanho do ponteiro de computador (por exemplo, 32 bits, 64 bits).
 

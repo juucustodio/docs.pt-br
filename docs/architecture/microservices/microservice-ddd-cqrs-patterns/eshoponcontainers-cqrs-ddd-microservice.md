@@ -1,13 +1,13 @@
 ---
 title: Aplicando abordagens CQRS e CQS em um microsserviço DDD em eShopOnContainers
 description: Arquitetura de Microsserviços .NET para aplicativos .NET em contêineres | Entenda como a CQRS é implementada no microsserviço de pedidos no eShopOnContainers.
-ms.date: 03/03/2020
-ms.openlocfilehash: 2916df596a6d0f887411f3ef0074aed395ef58ba
-ms.sourcegitcommit: 5280b2aef60a1ed99002dba44e4b9e7f6c830604
+ms.date: 01/13/2021
+ms.openlocfilehash: 0c07ecad0fb2dfdaea85d47b519b858e0519f6bd
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84306936"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188251"
 ---
 # <a name="apply-cqrs-and-cqs-approaches-in-a-ddd-microservice-in-eshoponcontainers"></a>Aplicar abordagens CQRS e CQS em um microsserviço DDD em eShopOnContainers
 
@@ -27,7 +27,7 @@ Como mostra a Figura 7-2 na seção anterior, este guia sugere o uso de padrões
 
 Para implementar o "lado das consultas", você pode escolher entre muitas abordagens, de seu ORM completo como EF Core, projeções do automapeamento, procedimentos armazenados, exibições, exibições materializadas ou um micro ORM.
 
-Neste guia e nos eShopOnContainers (principalmente o microsserviço de ordenação), escolhemos implementar consultas diretas usando um micro ORM como o [Dapper](https://github.com/StackExchange/dapper-dot-net). Isso permite que você implemente qualquer consulta baseada em instruções SQL para obter o melhor desempenho, graças a uma estrutura leve com pouca sobrecarga.
+Neste guia e nos eShopOnContainers (principalmente o microsserviço de ordenação), escolhemos implementar consultas diretas usando um micro ORM como o [Dapper](https://github.com/StackExchange/dapper-dot-net). Este guia permite que você implemente qualquer consulta baseada em instruções SQL para obter o melhor desempenho, graças a uma estrutura leve com pouca sobrecarga.
 
 Quando você usa essa abordagem, todas as atualizações para seu modelo que afetam o modo como as entidades são persistidas em um banco de dados SQL também precisam de atualizações separadas para consultas SQL usadas por Dapper ou quaisquer outras abordagens separadas (não-EF) para consulta.
 
@@ -37,7 +37,7 @@ Quando você usa essa abordagem, todas as atualizações para seu modelo que afe
 
 Diferentes BCs (Contextos limitados) empregarão diferentes padrões. Eles têm diferentes responsabilidades, e isso leva a diferentes soluções. Vale destacar que forçar o mesmo padrão em todos os lugares leva a uma falha. Não use padrões CQRS nem DDD em todos os lugares. Muitos subsistemas, BCs ou microsserviços são mais simples e podem ser implementados mais facilmente usando serviços CRUD simples ou outra abordagem.
 
-Há apenas uma arquitetura de aplicativo: a arquitetura do sistema ou o aplicativo de ponta a ponta que você está criando (por exemplo, a arquitetura de microsserviços). No entanto, o design de cada Contexto limitado ou microsserviço dentro desse aplicativo reflete suas próprias compensações e decisões de design interno em um nível de padrões de arquitetura. Não tente aplicar os mesmos padrões de arquitetura como CQRS ou DDD em todos os lugares.
+Há apenas uma arquitetura de aplicativo: a arquitetura do sistema ou o aplicativo de ponta a ponta que você está criando (por exemplo, a arquitetura de microsserviços). No entanto, o design de cada Contexto limitado ou microsserviço dentro desse aplicativo reflete suas próprias compensações e decisões de design interno em um nível de padrões de arquitetura. Não tente aplicar os mesmos padrões de arquitetura que o CQRS ou o DDD em todos os lugares.
 
 ### <a name="additional-resources"></a>Recursos adicionais
 

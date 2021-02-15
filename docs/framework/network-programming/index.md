@@ -8,14 +8,15 @@ helpviewer_keywords:
 - Internet, .NET Framework Internet services
 - Network Resources
 ms.assetid: 8d455610-67a0-4fa8-a62f-7747064a9256
-ms.openlocfilehash: 117fce887a04def7f9b3f7654a8e9e675ea462d2
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 50f23e1a343f969ad2cbb3422038921c710b2b1b
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502399"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96241675"
 ---
 # <a name="network-programming-in-the-net-framework"></a>Programação de rede no .NET Framework
+
 O Microsoft .NET Framework fornece uma implementação dos serviços de Internet em camadas, extensível e gerenciada que pode ser rápida e facilmente integrada aos aplicativos. Os aplicativos de rede podem compilar em protocolos conectáveis para usufruir automaticamente de novos protocolos da Internet ou podem usar uma implementação gerenciada da interface de soquete do Windows para trabalhar com a rede a nível de soquete.  
   
 ## <a name="in-this-section"></a>Nesta seção  
@@ -35,7 +36,7 @@ O Microsoft .NET Framework fornece uma implementação dos serviços de Internet
  [Protocolo IP versão 6](internet-protocol-version-6.md)  
  Descreve as vantagens do Protocolo de Internet versão 6 (IPv6) sob a versão atual do pacote do Protocolo de Internet (IPv4), descreve o endereçamento do IPv6, o roteamento e a configuração automática e também como habilitar e desabilitar o IPv6.  
   
- [Configuring Internet Applications](configuring-internet-applications.md) (Configurando aplicativos da Internet)  
+ [Configurando aplicativos da Internet](configuring-internet-applications.md)  
  Explica como usar os arquivos de configuração do .NET Framework para configurar aplicativos da Internet.  
   
  [Rastreamento de rede no .NET Framework](network-tracing.md)  
@@ -56,7 +57,7 @@ O Microsoft .NET Framework fornece uma implementação dos serviços de Internet
  [NetworkInformation](networkinformation.md)  
  Descreve como coletar informações sobre eventos, alterações, estatísticas e propriedades de rede e também explica como determinar se um host remoto é acessível usando a classe <xref:System.Net.NetworkInformation.Ping?displayProperty=nameWithType>.  
   
- [Alterações no namespace System. URI na versão 2,0](changes-to-the-system-uri-namespace-in-version-2-0.md)  
+ [Alterações no namespace System.Uri na versão 2.0](changes-to-the-system-uri-namespace-in-version-2-0.md)  
  Descreve várias alterações feitas na classe <xref:System.Uri?displayProperty=nameWithType> na versão 2.0 para comportamento fixo incorreto; aprimora a usabilidade e a segurança.  
   
  [Suporte ao International Resource Identifier em System.Uri](international-resource-identifier-support-in-system-uri.md)  
@@ -87,6 +88,7 @@ O Microsoft .NET Framework fornece uma implementação dos serviços de Internet
  Vincula-se a amostras para download de programação de rede que usam classes nos namespaces <xref:System.Net>, <xref:System.Net.Cache>, <xref:System.Net.Configuration>, <xref:System.Net.Mail>, <xref:System.Net.Mime>, <xref:System.Net.NetworkInformation>, <xref:System.Net.PeerToPeer>, <xref:System.Net.Security>, <xref:System.Net.Sockets>.  
   
 ## <a name="reference"></a>Referência  
+
  <xref:System.Net?displayProperty=nameWithType>  
  Fornece uma interface de programação simples para muitos dos protocolos usados nas redes de hoje. As classes <xref:System.Net.WebRequest?displayProperty=nameWithType> e <xref:System.Net.WebResponse?displayProperty=nameWithType> nesse namespace são a base para protocolos conectáveis.  
   
@@ -127,7 +129,7 @@ O Microsoft .NET Framework fornece uma implementação dos serviços de Internet
  Fornece uma implementação gerenciada da interface de WebSocket para desenvolvedores.  
   
  <xref:System.Uri?displayProperty=nameWithType>  
- Fornece uma representação de objeto de um URI (Uniform Resource Identifier) e acesso fácil às partes do URI.  
+ Fornece uma representação de objeto de um URI (Uniform Resource Identifier) e fácil acesso às partes do URI.  
   
  <xref:System.Security.Authentication.ExtendedProtection?displayProperty=nameWithType>  
  Fornece suporte à autenticação usando proteção estendida para aplicativos.  
@@ -135,7 +137,7 @@ O Microsoft .NET Framework fornece uma implementação dos serviços de Internet
  <xref:System.Security.Authentication.ExtendedProtection.Configuration?displayProperty=nameWithType>  
  Fornece suporte à configuração da autenticação usando proteção estendida para aplicativos.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Práticas recomendadas do protocolo TLS com o .NET Framework](tls.md)
 - [Tópicos explicativos de programação de rede](network-programming-how-to-topics.md)

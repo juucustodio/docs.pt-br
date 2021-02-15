@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugThread3'
 title: Interface ICorDebugThread3
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: eb2860ef-06cb-4968-a6c3-6d048ecda2a4
 topic_type:
 - apiref
-ms.openlocfilehash: dc556dfb59e999ed9b7fc5f35c603dc26c35f314
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 88c668f1e08d0843f26d231937c85d80e03bee6e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378715"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800962"
 ---
 # <a name="icordebugthread3-interface"></a>Interface ICorDebugThread3
+
 Fornece o ponto de entrada para o [ICorDebugStackWalk](icordebugstackwalk-interface.md) e as interfaces correspondentes.  
   
 ## <a name="methods"></a>Métodos  
@@ -32,12 +34,14 @@ Fornece o ponto de entrada para o [ICorDebugStackWalk](icordebugstackwalk-interf
 |[Método GetActiveInternalFrames](icordebugthread3-getactiveinternalframes-method.md)|Retorna uma matriz de quadros internos (objetos[ICorDebugInternalFrame2](icordebuginternalframe2-interface.md) ) na pilha.|  
   
 ## <a name="remarks"></a>Comentários  
- `ICorDebugThread3`é uma extensão lógica para a interface ICorDebugThread.  
+
+ `ICorDebugThread3` é uma extensão lógica para a interface ICorDebugThread.  
   
 > [!NOTE]
 > Esta interface não dá suporte para chamada remota, seja entre computadores ou processos cruzados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -46,7 +50,7 @@ Fornece o ponto de entrada para o [ICorDebugStackWalk](icordebugstackwalk-interf
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Depuração](index.md)

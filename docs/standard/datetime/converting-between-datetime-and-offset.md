@@ -2,34 +2,33 @@
 title: Convertendo entre DateTime e DateTimeOffset
 description: Converter entre valores de DateTimeOffset e valores de DateTime no .NET. A estrutura DateTimeOffset fornece mais reconhecimento de fuso horário do que a estrutura DateTime.
 ms.date: 04/10/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - DateTime structure, converting
-- time zones [.NET Framework], conversions
+- time zones [.NET], conversions
 - UTC times, converting
 - DateTimeOffset structure, converting
 - converting DateTimeOffset and DateTime values
-- dates [.NET Framework], converting
+- dates [.NET], converting
 - converting times
 - Date data type, converting
 - local time conversions
 ms.assetid: b605ff97-0c45-4c24-833f-4c6a3e8be64c
-ms.openlocfilehash: 86f2c982d7f87e83102933d1de73d6e13086dc87
-ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
+ms.openlocfilehash: af75a467c344e299037dc6c2077e4a6ef6df2df9
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86924897"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94818076"
 ---
 # <a name="converting-between-datetime-and-datetimeoffset"></a>Convertendo entre DateTime e DateTimeOffset
 
 Embora a <xref:System.DateTimeOffset> estrutura forneça um grau maior de reconhecimento de fuso horário do que a <xref:System.DateTime> estrutura, os <xref:System.DateTime> parâmetros são usados com mais frequência em chamadas de método. Por isso, a capacidade de converter <xref:System.DateTimeOffset> valores em <xref:System.DateTime> valores e vice-versa é particularmente importante. Este tópico mostra como executar essas conversões de uma maneira que preserva o máximo possível de informações de fuso horário.
 
 > [!NOTE]
-> Os <xref:System.DateTime> <xref:System.DateTimeOffset> tipos e têm algumas limitações ao representar os horários em fusos horários. Com sua <xref:System.DateTime.Kind%2A> propriedade, <xref:System.DateTime> é capaz de refletir apenas o UTC (tempo Universal Coordenado) e o fuso horário local do sistema. <xref:System.DateTimeOffset>reflete o deslocamento de um tempo do UTC, mas não reflete o fuso horário real ao qual o deslocamento pertence. Para obter detalhes sobre valores de tempo e suporte para fusos horários, consulte [escolhendo entre DateTime, DateTimeOffset, TimeSpan e TimeZoneInfo](choosing-between-datetime.md).
+> Os <xref:System.DateTime> <xref:System.DateTimeOffset> tipos e têm algumas limitações ao representar os horários em fusos horários. Com sua <xref:System.DateTime.Kind%2A> propriedade, <xref:System.DateTime> é capaz de refletir apenas o UTC (tempo Universal Coordenado) e o fuso horário local do sistema. <xref:System.DateTimeOffset> reflete o deslocamento de um tempo do UTC, mas não reflete o fuso horário real ao qual o deslocamento pertence. Para obter detalhes sobre valores de tempo e suporte para fusos horários, consulte [escolhendo entre DateTime, DateTimeOffset, TimeSpan e TimeZoneInfo](choosing-between-datetime.md).
 
 ## <a name="conversions-from-datetime-to-datetimeoffset"></a>Conversões de DateTime para DateTimeOffset
 
@@ -128,6 +127,6 @@ Observe que esse código faz duas suposições que, dependendo do aplicativo e d
 
 - Ele supõe que uma data e hora cujo deslocamento é igual ao do fuso horário local representa o fuso horário local. Como os valores de data e hora são dissociados do seu fuso horário original, este pode não ser o caso. A data e hora podem ter sido originadas em outro fuso horário com o mesmo deslocamento.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Datas, horas e fusos horários](index.md)

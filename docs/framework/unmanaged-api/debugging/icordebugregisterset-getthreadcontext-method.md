@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugRegisterSet:: GetThreadContext'
 title: Método ICorDebugRegisterSet::GetThreadContext
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 0f63400b-dc1c-48d6-b51a-75c3f7f28e03
 topic_type:
 - apiref
-ms.openlocfilehash: 04ae3c4dd663351eaf1a58646e24e8ae95aeb9ad
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: be6384562858d04b6e139eda83c172c09f2dfc0d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378276"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99690789"
 ---
 # <a name="icordebugregistersetgetthreadcontext-method"></a>Método ICorDebugRegisterSet::GetThreadContext
+
 Obtém o contexto do thread atual.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT GetThreadContext(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `contextSize`  
  no O tamanho, em bytes, da `context` matriz.  
   
@@ -43,11 +46,13 @@ HRESULT GetThreadContext(
  [entrada, saída] Uma matriz de bytes que compõe a estrutura do Win32 `CONTEXT` para a plataforma atual.  
   
 ## <a name="remarks"></a>Comentários  
+
  O depurador deve chamar essa função em vez da função do Win32 `GetThreadContext` , pois o thread pode estar em um estado "seqüestrado" em que seu contexto foi alterado temporariamente. Os dados retornados são uma `CONTEXT` estrutura Win32 para a plataforma atual.  
   
  Para quadros não folha, os clientes devem verificar quais registros são válidos usando [ICorDebugRegisterSet:: GetRegistersAvailable](icordebugregisterset-getregistersavailable-method.md).  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -56,7 +61,7 @@ HRESULT GetThreadContext(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugRegisterSet](icordebugregisterset-interface.md)
 - [Interface ICorDebugRegisterSet2](icordebugregisterset2-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como retornar um valor de um procedimento (Visual Basic)'
 title: Como retornar um valor de um procedimento
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,14 +7,15 @@ helpviewer_keywords:
 - procedures [Visual Basic], returning from
 - procedures [Visual Basic], returning a value
 ms.assetid: 4bcc4724-2b4e-4df8-9b4b-16054607f87d
-ms.openlocfilehash: 917e52b711645fbf94a132216a3fa90b0dfc15b3
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c158f15b1e6acb7334d78037d84145981822e177
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84414318"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100476170"
 ---
 # <a name="how-to-return-a-value-from-a-procedure-visual-basic"></a>Como retornar um valor de um procedimento (Visual Basic)
+
 Um `Function` procedimento retorna um valor para o código de chamada executando uma `Return` instrução ou encontrando uma `Exit Function` `End Function` instrução or.  
   
 ### <a name="to-return-a-value-using-the-return-statement"></a>Para retornar um valor usando a instrução return  
@@ -44,7 +46,7 @@ Um `Function` procedimento retorna um valor para o código de chamada executando
   
      Para obter mais informações e um exemplo, consulte "valor de retorno" na [instrução function](../../../language-reference/statements/function-statement.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos](./index.md)
 - [Subprocedimentos](./sub-procedures.md)
@@ -52,6 +54,6 @@ Um `Function` procedimento retorna um valor para o código de chamada executando
 - [Procedimentos do operador](./operator-procedures.md)
 - [Parâmetros e Argumentos de Procedimento](./procedure-parameters-and-arguments.md)
 - [Instrução Function](../../../language-reference/statements/function-statement.md)
-- [Instrução de retorno](../../../language-reference/statements/return-statement.md)
+- [Instrução Return](../../../language-reference/statements/return-statement.md)
 - [Como criar um procedimento que retorne um valor](./how-to-create-a-procedure-that-returns-a-value.md)
 - [Como chamar um procedimento que retorna um valor](./how-to-call-a-procedure-that-returns-a-value.md)

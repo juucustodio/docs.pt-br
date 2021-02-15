@@ -2,12 +2,12 @@
 title: Como implantar contêineres no Azure
 description: Implantando contêineres no Azure com o registro de contêiner do Azure, o serviço kubernetes do Azure e o Azure Dev Spaces.
 ms.date: 04/13/2020
-ms.openlocfilehash: ba2854323ee0f1394a3cff0dd3756cb3c7c32d5b
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: d848a146a2bdb5d8d02543f57f19d6a39c9699e6
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83614143"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91160769"
 ---
 # <a name="deploying-containers-in-azure"></a>Como implantar contêineres no Azure
 
@@ -23,7 +23,7 @@ Ao colocar um microserviço em contêiner, você primeiro cria um contêiner de 
 
 Depois de criadas, as imagens de contêiner são armazenadas em registros de contêiner. Eles permitem que você crie, armazene e gerencie imagens de contêiner. Há vários registros disponíveis, públicos e privados. O ACR (registro de contêiner do Azure) é um serviço de registro de contêiner totalmente gerenciado na nuvem do Azure. Ele persiste suas imagens dentro da rede do Azure, reduzindo o tempo para implantá-las nos hosts de contêiner do Azure. Você também pode protegê-los usando os mesmos procedimentos de segurança e identidade que você usa para outros recursos do Azure.
 
-Você cria um registro de contêiner do Azure usando as ferramentas [portal do Azure](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal), [CLI do Azure](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-azure-cli)ou [PowerShell](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-powershell). A criação de um registro no Azure é simples. Ele requer uma assinatura do Azure, um grupo de recursos e um nome exclusivo. A Figura 3-11 mostra as opções básicas para a criação de um registro, que será hospedado em `registryname.azurecr.io` .
+Você cria um registro de contêiner do Azure usando as ferramentas [portal do Azure](/azure/container-registry/container-registry-get-started-portal), [CLI do Azure](/azure/container-registry/container-registry-get-started-azure-cli)ou [PowerShell](/azure/container-registry/container-registry-get-started-powershell). A criação de um registro no Azure é simples. Ele requer uma assinatura do Azure, um grupo de recursos e um nome exclusivo. A Figura 3-11 mostra as opções básicas para a criação de um registro, que será hospedado em `registryname.azurecr.io` .
 
 ![Criar um registro de contêiner](./media/create-container-registry.png)
 
@@ -57,7 +57,7 @@ Como prática recomendada, os desenvolvedores não devem enviar por push as imag
 
 ## <a name="acr-tasks"></a>Tarefas do ACR
 
-[As tarefas ACR](https://docs.microsoft.com/azure/container-registry/container-registry-tasks-overview) são um conjunto de recursos disponíveis no registro de contêiner do Azure. Ele estende seu [ciclo de desenvolvimento de loop interno](https://docs.microsoft.com/dotnet/architecture/containerized-lifecycle/design-develop-containerized-apps/docker-apps-inner-loop-workflow) criando e gerenciando imagens de contêiner na nuvem do Azure. Em vez de invocar um `docker build` e `docker push` localmente em seu computador de desenvolvimento, eles são automaticamente tratados por tarefas de ACR na nuvem.
+[As tarefas ACR](/azure/container-registry/container-registry-tasks-overview) são um conjunto de recursos disponíveis no registro de contêiner do Azure. Ele estende seu [ciclo de desenvolvimento de loop interno](../containerized-lifecycle/design-develop-containerized-apps/docker-apps-inner-loop-workflow.md) criando e gerenciando imagens de contêiner na nuvem do Azure. Em vez de invocar um `docker build` e `docker push` localmente em seu computador de desenvolvimento, eles são automaticamente tratados por tarefas de ACR na nuvem.
 
 O comando AZ CLI a seguir cria uma imagem de contêiner e a envia para o ACR:
 
@@ -75,15 +75,15 @@ Como você pode ver no bloco de comando anterior, não há necessidade de instal
 
 Discutimos o AKS (serviço kubernetes do Azure) no comprimento deste capítulo. Vimos que é o orquestrador de contêineres de fato gerenciar aplicativos nativos de nuvem em contêineres.
 
-Depois de implantar uma imagem em um registro, como o ACR, você pode configurar o AKS para efetuar pull e implantá-lo automaticamente. Com um pipeline de CI/CD em vigor, você pode configurar uma estratégia de [liberação canário](https://martinfowler.com/bliki/CanaryRelease.html) para minimizar o risco envolvido ao implantar atualizações rapidamente. A nova versão do aplicativo é inicialmente configurada em produção, sem nenhum tráfego roteado para ele. Em seguida, o sistema roteará uma pequena porcentagem de usuários para a versão implantada recentemente. À medida que a equipe ganha confiança na nova versão, ela pode distribuir mais instâncias e desativar o antigo. O AKS dá suporte facilmente a esse estilo de implantação.
+Depois de implantar uma imagem em um registro, como o ACR, você pode configurar o AKS para efetuar pull e implantá-lo automaticamente. Com um pipeline de CI/CD em vigor, você pode configurar uma estratégia de  [liberação canário](https://martinfowler.com/bliki/CanaryRelease.html) para minimizar o risco envolvido ao implantar atualizações rapidamente. A nova versão do aplicativo é inicialmente configurada em produção, sem nenhum tráfego roteado para ele. Em seguida, o sistema roteará uma pequena porcentagem de usuários para a versão implantada recentemente. À medida que a equipe ganha confiança na nova versão, ela pode distribuir mais instâncias e desativar o antigo. O AKS dá suporte facilmente a esse estilo de implantação.
 
 Assim como acontece com a maioria dos recursos no Azure, você pode criar um cluster do serviço kubernetes do Azure usando o portal, a linha de comando ou as ferramentas de automação, como Helm ou Terraform. Para começar a usar um novo cluster, você precisa fornecer as seguintes informações:
 
 - Assinatura do Azure
-- Resource group
+- Grupo de recursos
 - Nome do cluster kubernetes
 - Região
-- Versão do kubernetes
+- Versão do Kubernetes
 - Prefixo do nome DNS
 - Tamanho do nó
 - Contagem de nós
@@ -96,9 +96,9 @@ Essas informações são suficientes para começar. Como parte do processo de cr
 - Monitoramento
 - Marcações
 
-Este [Guia de início rápido orienta a implantação de um cluster AKs usando o portal do Azure](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal).
+Este [Guia de início rápido orienta a implantação de um cluster AKs usando o portal do Azure](/azure/aks/kubernetes-walkthrough-portal).
 
-## <a name="azure-dev-spaces"></a>Espaços de Desenvolvimento do Azure
+## <a name="azure-dev-spaces"></a>Azure Dev Spaces
 
 Os aplicativos nativos de nuvem podem crescer de forma rápida e complexa, exigindo recursos de computação significativos para serem executados. Nesses cenários, o aplicativo inteiro não pode ser hospedado em um computador de desenvolvimento (especialmente um laptop). Azure Dev Spaces foi projetado para resolver esse problema usando AKS. Ele permite que os desenvolvedores trabalhem com uma versão local de seus serviços enquanto hospedam o restante do aplicativo em um cluster de desenvolvimento AKS.
 
@@ -116,7 +116,7 @@ O processo para trabalhar com Azure Dev Spaces envolve as seguintes etapas:
 3. Configure um espaço de desenvolvimento filho (para sua própria versão do sistema).
 4. Conecte-se ao espaço de desenvolvimento.
 
-Todas essas etapas podem ser executadas usando o CLI do Azure e novas `azds` ferramentas de linha de comando. Por exemplo, para criar um novo espaço de desenvolvimento do Azure para um determinado cluster kubernetes, você usaria um comando como este:
+Todas essas etapas podem ser executadas usando o CLI do Azure e novas  `azds` ferramentas de linha de comando. Por exemplo, para criar um novo espaço de desenvolvimento do Azure para um determinado cluster kubernetes, você usaria um comando como este:
 
 ```azurecli
 az aks use-dev-spaces -g my-aks-resource-group -n MyAKSCluster

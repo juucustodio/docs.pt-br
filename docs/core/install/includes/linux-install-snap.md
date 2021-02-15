@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 5e77b7bd73c09e061a94a29703cf5286814d1ebb
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 83808f2f3a05333ed5d9e3809cbc2fd6e230d02c
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84602911"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96031744"
 ---
 
 [O .NET Core está disponível no repositório de snap.](https://snapcraft.io/dotnet-sdk)
@@ -15,18 +15,18 @@ Somente as versões com suporte do .NET Core estão disponíveis por meio do sna
 
 ### <a name="install-the-sdk"></a>Instalar o SDK
 
-Pacotes snap para SDK do .NET Core são todos publicados sob o mesmo identificador: `dotnet-sdk` . Uma versão específica do SDK pode ser instalada especificando o canal. O SDK inclui o tempo de execução de coresponder. A tabela a seguir lista os canais:
+Pacotes snap para SDK do .NET são todos publicados sob o mesmo identificador: `dotnet-sdk` . Uma versão específica do SDK pode ser instalada especificando o canal. O SDK inclui o tempo de execução correspondente. A tabela a seguir lista os canais:
 
-| Versão do .NET Core | Ajustar pacote             |
-|-------------------|--------------------------|
-| 3,1 (LTS)         | `3.1` ou `latest/stable` |
-| 2,1 (LTS)         | `2.1`                    |
-| Versão prévia do .NET 5,0  | `5.0/beta`               |
+| Versão do .NET | Ajustar pacote             |
+|--------------|--------------------------|
+| 5.0          | `5.0` ou `latest/stable` |
+| 3,1 (LTS)    | `3.1` ou `lts/stable`    |
+| 2,1 (LTS)    | `2.1`                    |
 
-Use o `snap install` comando para instalar um pacote de snap SDK do .NET Core. Use o `--channel` parâmetro para indicar qual versão deve ser instalada. Se esse parâmetro for omitido, `latest/stable` será usado. Neste exemplo, `3.1` é especificado:
+Use o `snap install` comando para instalar um pacote de snap do SDK do .net. Use o `--channel` parâmetro para indicar qual versão deve ser instalada. Se esse parâmetro for omitido, `latest/stable` será usado. Neste exemplo, `5.0` é especificado:
 
 ```bash
-sudo snap install dotnet-sdk --classic --channel=3.1
+sudo snap install dotnet-sdk --classic --channel=5.0
 ```
 
 Em seguida, registre o `dotnet` comando para o sistema com o `snap alias` comando:
@@ -35,32 +35,33 @@ Em seguida, registre o `dotnet` comando para o sistema com o `snap alias` comand
 sudo snap alias dotnet-sdk.dotnet dotnet
 ```
 
-Este comando é formatado como: `sudo snap alias {package}.{command} {alias}` . Você pode escolher qualquer `{alias}` nome que desejar. Por exemplo, você pode nomear o comando após a versão específica instalada pelo snap: `sudo snap alias dotnet-sdk.dotnet dotnet31` . Ao usar o comando `dotnet31` , você invocará essa versão específica do .net. Mas isso é incompatível com a maioria dos tutoriais e exemplos, pois eles esperam que um `dotnet` comando esteja disponível.
+Este comando é formatado como: `sudo snap alias {package}.{command} {alias}` . Você pode escolher qualquer `{alias}` nome que desejar. Por exemplo, você pode nomear o comando após a versão específica instalada pelo snap: `sudo snap alias dotnet-sdk.dotnet dotnet50` . Ao usar o comando `dotnet50` , você invocará essa versão específica do .net. Mas isso é incompatível com a maioria dos tutoriais e exemplos, pois eles esperam que um `dotnet` comando esteja disponível.
 
 ### <a name="install-the-runtime"></a>Instalar o runtime
 
 Os pacotes snap para o tempo de execução do .NET Core são publicados em seu próprio identificador de pacote. A tabela a seguir lista os identificadores de pacote:
 
-| Versão do .NET Core | Ajustar pacote        |
+| Versão do .NET      | Ajustar pacote        |
 |-------------------|---------------------|
+| 5.0               | `dotnet-runtime-50` |
 | 3,1 (LTS)         | `dotnet-runtime-31` |
 | 3.0               | `dotnet-runtime-30` |
-| 2,2               | `dotnet-runtime-22` |
+| 2.2               | `dotnet-runtime-22` |
 | 2,1 (LTS)         | `dotnet-runtime-21` |
 
-Use o `snap install` comando para instalar um pacote de snap do tempo de execução do .NET Core. Neste exemplo, o .NET Core 3,1 está instalado:
+Use o `snap install` comando para instalar um pacote de snap do tempo de execução .net. Neste exemplo, o .NET 5,0 está instalado:
 
 ```bash
-sudo snap install dotnet-runtime-31 --classic
+sudo snap install dotnet-runtime-50 --classic
 ```
 
 Em seguida, registre o `dotnet` comando para o sistema com o `snap alias` comando:
 
 ```bash
-sudo snap alias dotnet-runtime-31.dotnet dotnet
+sudo snap alias dotnet-runtime-50.dotnet dotnet
 ```
 
-Este comando é formatado como: `sudo snap alias {package}.{command} {alias}` . Você pode escolher qualquer `{alias}` nome que desejar. Por exemplo, você pode nomear o comando após a versão específica instalada pelo snap: `sudo snap alias dotnet-runtime-31.dotnet dotnet31` . Ao usar o comando `dotnet31` , você invocará essa versão específica do .net. Mas isso é incompatível com a maioria dos tutoriais e exemplos, pois eles esperam que um `dotnet` comando esteja disponível.
+Este comando é formatado como: `sudo snap alias {package}.{command} {alias}` . Você pode escolher qualquer `{alias}` nome que desejar. Por exemplo, você pode nomear o comando após a versão específica instalada pelo snap: `sudo snap alias dotnet-runtime-50.dotnet dotnet50` . Ao usar o comando `dotnet50` , você invocará essa versão específica do .net. Mas isso é incompatível com a maioria dos tutoriais e exemplos, pois eles esperam que um `dotnet` comando esteja disponível.
 
 ### <a name="ssl-certificate-errors"></a>Erros de certificado SSL
 
@@ -75,7 +76,7 @@ Running 'dotnet restore' on /home/myhome/test/test.csproj...
 /snap/dotnet-sdk/27/sdk/2.2.103/NuGet.targets(114,5): error :   The remote certificate is invalid according to the validation procedure. [/home/myhome/test/test.csproj]
 ```
 
-Para resolver esse problema, defina algumas variáveis ambiente:
+Para resolver esse problema, defina algumas variáveis de ambiente:
 
 ```bash
 export SSL_CERT_FILE=[path-to-certificate-file]

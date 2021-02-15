@@ -8,12 +8,12 @@ helpviewer_keywords:
 - security-transparent code
 - security-critical code
 ms.assetid: 4d05610a-0da6-4f08-acea-d54c9d6143c0
-ms.openlocfilehash: 3b87a48ac3f9925fd868be9e58d5904014ca6c09
-ms.sourcegitcommit: 0fa2b7b658bf137e813a7f4d09589d64c148ebf5
+ms.openlocfilehash: bbff7b53bacd50746de56c8dba85cdc9e4b1ad9b
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86309203"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556402"
 ---
 # <a name="security-transparent-code-level-2"></a>Código transparente de segurança, nível 2
 
@@ -67,7 +67,7 @@ As regras a seguir se aplicam ao uso de atributos no nível do assembly:
 
 - `SecurityCritical`: Todo o código introduzido por tipos neste assembly é crítico; todo o outro código é transparente. Esse cenário é semelhante a não especificar nenhum atributo; no entanto, o Common Language Runtime não determina automaticamente as regras de transparência. Por exemplo, se você substituir um método virtual ou abstract ou implementar um método de interface, por padrão, esse método será transparente. Você deve anotar explicitamente o método como `SecurityCritical` ou `SecuritySafeCritical` ; caso contrário, um <xref:System.TypeLoadException> será lançado em tempo de carregamento. Essa regra também se aplica quando a classe base e a classe derivada estão no mesmo assembly.
 
-- `AllowPartiallyTrustedCallers`(somente nível 2): todos os padrões de código são transparentes. No entanto, tipos individuais e membros podem ter outros atributos.
+- `AllowPartiallyTrustedCallers` (somente nível 2): todos os padrões de código são transparentes. No entanto, tipos individuais e membros podem ter outros atributos.
 
 A tabela a seguir compara o comportamento de nível de assembly para o nível 2 com o nível 1.
 
@@ -163,7 +163,7 @@ O modelo de transparência nível 2 substitui o <xref:System.Security.Permission
 
 Invocar um método crítico ou ler um campo crítico dispara uma demanda de confiança total (assim como se você estivesse invocando um método ou um campo particular). Portanto, o código de confiança total pode invocar um método crítico, enquanto o código de confiança parcial não pode.
 
-As propriedades a seguir foram adicionadas ao <xref:System.Reflection> namespace para determinar se o tipo, o método ou o campo é `SecurityCritical` , `SecuritySafeCritical` , ou `SecurityTransparent` : <xref:System.Type.IsSecurityCritical%2A> , <xref:System.Reflection.MethodBase.IsSecuritySafeCritical%2A> e <xref:System.Reflection.MethodBase.IsSecurityTransparent%2A> . Use essas propriedades para determinar a transparência usando reflexão em vez de verificar a presença do atributo. As regras de transparência são complexas e a verificação do atributo pode não ser suficiente.
+As propriedades a seguir foram adicionadas ao <xref:System.Reflection> namespace para determinar se o tipo, o método ou o campo é `SecurityCritical` , `SecuritySafeCritical` , ou `SecurityTransparent` :  <xref:System.Type.IsSecurityCritical%2A> , <xref:System.Reflection.MethodBase.IsSecuritySafeCritical%2A> e <xref:System.Reflection.MethodBase.IsSecurityTransparent%2A> . Use essas propriedades para determinar a transparência usando reflexão em vez de verificar a presença do atributo. As regras de transparência são complexas e a verificação do atributo pode não ser suficiente.
 
 > [!NOTE]
 > Um `SafeCritical` método retorna `true` para <xref:System.Type.IsSecurityCritical%2A> and <xref:System.Reflection.MethodBase.IsSecuritySafeCritical%2A> , porque `SafeCritical` é realmente crítico (ele tem os mesmos recursos que o código crítico, mas pode ser chamado a partir do código Transparent).
@@ -180,5 +180,5 @@ A <xref:System.Security.SecurityRulesAttribute.SkipVerificationInFullTrust%2A> p
 
 ## <a name="see-also"></a>Confira também
 
-- [Segurança-código Transparent, nível 1](security-transparent-code-level-1.md)
-- [Alterações de segurança](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes)
+- [Código transparente de segurança, nível 1](security-transparent-code-level-1.md)
+- [Alterações de segurança](/previous-versions/dotnet/framework/security/security-changes)

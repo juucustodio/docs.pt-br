@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <useRequestHeadersForMetadataAddress>'
 title: <useRequestHeadersForMetadataAddress>
 ms.date: 03/30/2017
 ms.assetid: 679f0eae-f353-44d1-b42d-a9e247509774
-ms.openlocfilehash: e0b46953924a3825420b719085e1210981da643a
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 53636b5890eb54095737e2ed62a75e9b81c1c1f1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70399198"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664425"
 ---
 # \<useRequestHeadersForMetadataAddress>
+
 Habilita a recuperação de informações de endereço de metadados dos cabeçalhos de mensagem de solicitação.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -19,7 +21,7 @@ Habilita a recuperação de informações de endereço de metadados dos cabeçal
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-servicebehaviors.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<useRequestHeadersForMetadataAddress>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <useRequestHeadersForMetadataAddress>
@@ -31,9 +33,11 @@ Habilita a recuperação de informações de endereço de metadados dos cabeçal
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
+
  Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  

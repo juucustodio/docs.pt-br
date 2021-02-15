@@ -1,19 +1,21 @@
 ---
-title: Resumo de Manipulação da Cadeia de Caracteres
+description: 'Saiba mais sobre: Resumo de manipulação de cadeia de caracteres (Visual Basic)'
+title: Resumo de manipulação da cadeia de caracteres
 ms.date: 07/20/2015
 helpviewer_keywords:
 - string functions
 - manipulating strings [Visual Basic]
 - strings [Visual Basic], manipulating
 ms.assetid: 5d3197eb-fe66-417e-9e2a-20450660c9c6
-ms.openlocfilehash: 1006dd889d8cdf51070a67236378dc6223e220b2
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: d1e24c870816a10b493f0900b92b570b214663a4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84373207"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99701164"
 ---
 # <a name="string-manipulation-summary-visual-basic"></a>Resumo de manipulação da cadeia de caracteres (Visual Basic)
+
 As palavras-chave do idioma Visual Basic e os membros da biblioteca de tempo de execução são organizados por finalidade e uso.  
   
 |Ação|Elemento de linguagem|  
@@ -32,7 +34,7 @@ As palavras-chave do idioma Visual Basic e os membros da biblioteca de tempo de 
 |Retornar uma matriz de cadeia de caracteres baseada em filtro.|<xref:Microsoft.VisualBasic.Strings.Filter%2A>|  
 |Retorna um número especificado de subcadeias de caracteres.|<xref:Microsoft.VisualBasic.Strings.Split%2A>, <xref:Microsoft.VisualBasic.Strings.Join%2A>|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Palavras-chave](index.md)
 - [Membros da Biblioteca de Runtime do Visual Basic](../runtime-library-members.md)

@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <transport> de <netPeerTcpBinding>'
 title: <transport> de <netPeerTcpBinding>
 ms.date: 03/30/2017
 ms.assetid: c44d86d2-1160-44d7-9c7a-297b12eccc7f
-ms.openlocfilehash: 49b31a889d192d190125214e89ba09305114eb7f
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: e93885234577e4f3c7a99be66e4798d33ffb5893
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73735979"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99664568"
 ---
 # <a name="transport-of-netpeertcpbinding"></a>\<transport> de \<netPeerTcpBinding>
+
 Especifica as configurações de segurança de nível de transporte ao usar o [\<netPeerTcpBinding>](netpeertcpbinding.md) .  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,7 +22,7 @@ Especifica as configurações de segurança de nível de transporte ao usar o [\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<security>**](security-of-netpeerbinding.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<transport>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <netPeerTcpBinding>
@@ -33,6 +35,7 @@ Especifica as configurações de segurança de nível de transporte ao usar o [\
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai  
   
 ### <a name="attributes"></a>Atributos  
@@ -49,6 +52,7 @@ Especifica as configurações de segurança de nível de transporte ao usar o [\
 |Senha|A autenticação do transporte de canal par requer uma senha correta.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -57,7 +61,7 @@ Especifica as configurações de segurança de nível de transporte ao usar o [\
 |-------------|-----------------|  
 |[\<security>](security-of-netpeerbinding.md)|Define as configurações de segurança para o [\<netPeerTcpBinding>](netpeertcpbinding.md) .|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.PeerTransportSecurityElement>
 - <xref:System.ServiceModel.PeerSecuritySettings.Transport%2A>

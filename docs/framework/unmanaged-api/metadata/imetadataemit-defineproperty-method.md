@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: IMetaDataEmit: método efineProperty de:D'
 title: Método IMetaDataEmit::DefineProperty
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 5c4c1dc2-d40d-4173-bbe6-7058fb21c98f
 topic_type:
 - apiref
-ms.openlocfilehash: 479cb25ad8e1c263d3539a4203ac5bea781eb931
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: c0c0b6009f8674a5edebf1c982e277f4ca5b185b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84009366"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784022"
 ---
 # <a name="imetadataemitdefineproperty-method"></a>Método IMetaDataEmit::DefineProperty
+
 Cria uma definição de propriedade para o tipo especificado, com os `get` `set` acessadores de método e especificados, e Obtém um token para essa definição de propriedade.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -45,6 +47,7 @@ HRESULT DefineProperty (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `td`  
  no O token para a classe ou interface na qual a propriedade está sendo definida.  
   
@@ -82,15 +85,16 @@ HRESULT DefineProperty (
  fora O `mdProperty` token atribuído.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MSCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataEmit](imetadataemit-interface.md)
 - [Interface IMetaDataEmit2](imetadataemit2-interface.md)

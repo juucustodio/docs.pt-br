@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração ETaskType'
 title: Enumeração ETaskType
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: aa527b31-89d4-41f2-ad6f-63b76950b7df
 topic_type:
 - apiref
-ms.openlocfilehash: 0fa72568df77c4916a3c6676e1dcca7c0c616c4a
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 7cb241765b2ff3b4a3402221c6b3e2b7ff6305c1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84493312"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785395"
 ---
 # <a name="etasktype-enumeration"></a>Enumeração ETaskType
+
 Contém valores que indicam o tipo de tarefa que é representado por uma interface [ICLRTask](iclrtask-interface.md) ou [IHostTask](ihosttask-interface.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -44,7 +46,7 @@ typedef enum ETaskType {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`TT_ADUNLOAD`|A interface representa uma tarefa de descarregamento de domínio de aplicativo.|  
 |`TT_DEBUGGERHELPER`|A interface representa uma tarefa auxiliar do depurador.|  
@@ -59,14 +61,15 @@ typedef enum ETaskType {
 |`TT_USER`|A interface representa uma tarefa de usuário.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** MSCorEE. dll  
+ **Biblioteca:** MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Hospedando enumerações](hosting-enumerations.md)

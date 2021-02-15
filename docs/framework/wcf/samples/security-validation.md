@@ -1,21 +1,24 @@
 ---
+description: 'Saiba mais sobre: validação de segurança'
 title: Validação de segurança
 ms.date: 03/30/2017
 ms.assetid: 48dcd496-0c4f-48ce-8b9b-0e25b77ffa58
-ms.openlocfilehash: 70408976469b1cbcf9c4679bd91d81872ec74ae1
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: abca0dce154c82e3834b5ec577da9e53a3697338
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599965"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793147"
 ---
 # <a name="security-validation"></a>Validação de segurança
+
 Este exemplo demonstra como usar um comportamento personalizado para validar serviços em um computador para garantir que eles atendam a critérios específicos. Neste exemplo, os serviços são validados pelo comportamento personalizado examinando cada ponto de extremidade no serviço e verificando se eles contêm elementos de associação seguros. Este exemplo é baseado na [introdução](getting-started-sample.md).  
   
 > [!NOTE]
 > O procedimento de instalação e as instruções de Build para este exemplo estão localizados no final deste tópico.  
   
 ## <a name="endpoint-validation-custom-behavior"></a>Comportamento personalizado de validação do ponto de extremidade  
+
  Ao adicionar o código de usuário ao `Validate` método contido na <xref:System.ServiceModel.Description.IServiceBehavior> interface, o comportamento personalizado pode ser dado a um serviço ou ponto de extremidade para executar ações definidas pelo usuário. O código a seguir é usado para executar um loop por meio de cada ponto de extremidade contido em um serviço, que pesquisa suas coleções de associação para associações seguras.  
   
 ```csharp
@@ -47,7 +50,7 @@ public void Validate(ServiceDescription serviceDescription,
 }  
 ```  
   
- Adicionar o código a seguir ao arquivo Web. config adiciona a `serviceValidate` extensão de comportamento para o serviço reconhecer.  
+ Adicionar o código a seguir ao arquivo Web.config adiciona a `serviceValidate` extensão de comportamento para o serviço reconhecer.  
   
 ```xml  
 <system.serviceModel>  
@@ -60,7 +63,7 @@ public void Validate(ServiceDescription serviceDescription,
 </system.serviceModel>
 ```  
   
- Depois que a extensão de comportamento é adicionada ao serviço, agora é possível adicionar o `endpointValidate` comportamento à lista de comportamentos no arquivo Web. config e, portanto, ao serviço.  
+ Depois que a extensão de comportamento é adicionada ao serviço, agora é possível adicionar o `endpointValidate` comportamento à lista de comportamentos no arquivo de Web.config e, portanto, ao serviço.  
   
 ```xml  
 <behaviors>  
@@ -73,10 +76,10 @@ public void Validate(ServiceDescription serviceDescription,
 </behaviors>  
 ```  
   
- Os comportamentos e suas extensões que são adicionados ao arquivo Web. config aplicam comportamentos a serviços individuais, enquanto quando adicionados ao arquivo Machine. config aplicam o comportamento a todos os serviços ativos no computador.  
+ Os comportamentos e suas extensões que são adicionados ao arquivo de Web.config aplicam o comportamento a serviços individuais, enquanto quando adicionados ao arquivo de Machine.config aplicam o comportamento a cada serviço ativo no computador.  
   
 > [!NOTE]
-> Ao adicionar o comportamento a todos os serviços, é recomendável fazer backup do arquivo Machine. config antes de fazer qualquer alteração.  
+> Ao adicionar o comportamento a todos os serviços, é recomendável fazer backup do arquivo de Machine.config antes de fazer qualquer alteração.  
   
  Agora, execute o cliente fornecido no diretório client\bin deste exemplo. Uma exceção é lançada com a seguinte mensagem: "o serviço solicitado, ' http://localhost/servicemodelsamples/service.svc ' não pôde ser ativado." Isso é esperado porque um ponto de extremidade é considerado inseguro pelo comportamento de validação do ponto de extremidade e impede que o serviço seja iniciado. O comportamento também gera uma exceção interna que descreve qual ponto de extremidade é inseguro e grava uma mensagem no sistema Visualizador de Eventos na origem "System. ServiceModel 4.0.0.0" e na categoria "Webhost". Também é possível ativar o rastreamento no serviço neste exemplo. Isso permite que o usuário exiba as exceções geradas pelo comportamento de validação de ponto de extremidade abrindo os rastreamentos de serviço resultantes usando a ferramenta Visualizador de rastreamento de serviço.  
   
@@ -109,4 +112,4 @@ public void Validate(ServiceDescription serviceDescription,
   
 ## <a name="see-also"></a>Consulte também
 
-- [AppFabric que monitora Exemplos](https://docs.microsoft.com/previous-versions/appfabric/ff383407(v=azure.10))
+- [AppFabric que monitora Exemplos](/previous-versions/appfabric/ff383407(v=azure.10))

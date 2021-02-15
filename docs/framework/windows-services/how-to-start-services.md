@@ -6,13 +6,12 @@ helpviewer_keywords:
 - Windows Service applications, starting
 - services, starting
 ms.assetid: 9ea77955-2d96-4c3d-913c-14db7604cdad
-author: ghogen
-ms.openlocfilehash: 4a2f9b291e60b12b1465fbb6bbbd1604572359a7
-ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
+ms.openlocfilehash: 1ca597379ab2a8fdae19fcfc5351c29d716753dc
+ms.sourcegitcommit: 97405ed212f69b0a32faa66a5d5fae7e76628b68
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86925716"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91608407"
 ---
 # <a name="how-to-start-services"></a>Como: Iniciar serviços
 
@@ -37,7 +36,7 @@ Você define a propriedade <xref:System.ServiceProcess.ServiceInstaller.StartTyp
 
     |Para que o serviço seja instalado|Defina esse valor|
     |----------------------------------|--------------------|
-    |Quando o computador é reiniciado|**Automático**|
+    |Quando o computador é reiniciado|**Automática**|
     |Quando uma ação explícita do usuário inicia o serviço|**Manual**|
 
     > [!TIP]
@@ -79,7 +78,7 @@ Você define a propriedade <xref:System.ServiceProcess.ServiceInstaller.StartTyp
 
 2. Chame o método <xref:System.ServiceProcess.ServiceController.Start%2A> para iniciar o serviço.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Introdução a aplicativos do Serviço Windows](introduction-to-windows-service-applications.md)
 - [Como: Criar serviços Windows](how-to-create-windows-services.md)

@@ -1,23 +1,26 @@
 ---
+description: 'Saiba mais sobre: mapeamento externo'
 title: Mapeamento externo
 ms.date: 03/30/2017
 ms.assetid: 076606b8-d889-4ba0-b5da-ae577b146f23
-ms.openlocfilehash: ba5af75ae34b233354fec6e9074f3cc96d924c7f
-ms.sourcegitcommit: eff6adb61852369ab690f3f047818c90580e7eb1
+ms.openlocfilehash: 8c09e3bdf1798757bedfac9e568a0384a8e6bb49
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72003051"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786076"
 ---
 # <a name="external-mapping"></a>Mapeamento externo
-o [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] dá suporte ao *mapeamento externo*, um processo pelo qual você usa um arquivo XML separado para especificar o mapeamento entre o modelo de dados do banco e o modelo de objeto. As vantagens de usar um arquivo de mapeamento externo incluem o seguinte:  
+
+[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] dá suporte ao *mapeamento externo*, um processo pelo qual você usa um arquivo XML separado para especificar o mapeamento entre o modelo de dados do banco de dado e o modelo de objeto. As vantagens de usar um arquivo de mapeamento externo incluem o seguinte:  
   
 - Você pode manter seu código de mapeamento fora de seu código do aplicativo. Essa abordagem reduz a confusão no código do aplicativo.  
   
 - Você pode manipular um arquivo de mapeamento externo algo como um arquivo de configuração. Por exemplo, você pode atualizar como o aplicativo se comporta após enviar os binários apenas alternando para fora o arquivo de mapeamento externo.  
   
-## <a name="requirements"></a>{1&gt;{2&gt;Requisitos&lt;2}&lt;1}  
- O arquivo de mapeamento deve ser um arquivo XML e o arquivo deve ser validado em relação a um arquivo de definição de esquema [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] (. xsd).  
+## <a name="requirements"></a>Requisitos  
+
+ O arquivo de mapeamento deve ser um arquivo XML e o arquivo deve ser validado em relação a um [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] arquivo de definição de esquema (. xsd).  
   
  As seguintes regras se aplicam:  
   
@@ -27,9 +30,10 @@ o [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] dá suport
   
 - As substituições externos de mapeamento atributos com o mapeamento. Ou seja quando você usa uma fonte externa de mapeamento para criar <xref:System.Data.Linq.DataContext>, <xref:System.Data.Linq.DataContext> ignora todos os atributos de mapeamento que você criou em classes. Esse comportamento é verdadeiro se a classe está incluída no arquivo de mapeamento externo.  
   
-- [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] não dá suporte ao uso híbrido das duas abordagens de mapeamento (baseadas em atributo e externa).  
+- [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] não oferece suporte ao uso híbrido das duas abordagens mapeando (com base em atributos e externos).  
   
 ## <a name="xml-schema-definition-file"></a>Arquivo de Definição de Esquema XML  
+
  O mapeamento externa em [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] deve ser válido com a seguinte definição de esquema XML.  
   
  Distinguir este arquivo de definição do esquema do arquivo de definição do esquema que é usado para validar um arquivo DBML. Para obter mais informações, consulte [geração de código no LINQ to SQL](code-generation-in-linq-to-sql.md)).  
@@ -143,6 +147,6 @@ elementFormDefault="qualified" >
   
 ## <a name="see-also"></a>Consulte também
 
-- [Geração de código em LINQ to SQL](code-generation-in-linq-to-sql.md)
+- [Geração de código em LINQ para SQL](code-generation-in-linq-to-sql.md)
 - [Referência](reference.md)
-- [Como gerar o modelo de objeto como um arquivo externo](how-to-generate-the-object-model-as-an-external-file.md)
+- [Como: gerar o modelo de objeto como um arquivo externo](how-to-generate-the-object-model-as-an-external-file.md)

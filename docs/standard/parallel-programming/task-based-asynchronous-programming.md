@@ -2,19 +2,18 @@
 title: Programação assíncrona baseada em tarefas – .NET
 description: Neste artigo, saiba mais sobre a programação assíncrona baseada em tarefas por meio da TPL (biblioteca paralela de tarefas) no .NET.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - parallelism, task
 ms.assetid: 458b5e69-5210-45e5-bc44-3888f86abd6f
-ms.openlocfilehash: 968da880fc7e0e811f5e8712ccb43726426a019e
-ms.sourcegitcommit: ef86c24c418439b8bb5e3e7d64bbdbe5e11c3e9c
+ms.openlocfilehash: a1abe474628cd88e0c24f4152d83bd8ed7ad7950
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88720157"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94830019"
 ---
 # <a name="task-based-asynchronous-programming"></a>Programação assíncrona baseada em tarefas
 
@@ -28,7 +27,7 @@ A TPL (Biblioteca de Paralelismo de Tarefas) é baseada no conceito de uma *tare
 
      As tarefas e a estrutura criada em torno delas fornecem um rico conjunto de APIs que oferecem suporte a espera, cancelamentos, continuações, tratamento de exceções robusto, status detalhado, agendamento personalizado e mais.
 
-Por esses motivos, no .NET Framework, a TPL é a API preferida para escrever código multithread, assíncrono e código paralelo.
+Por esses dois motivos, a TPL é a API preferida para escrever código multithread, assíncrono e paralelo no .NET.
 
 ## <a name="creating-and-running-tasks-implicitly"></a>Criando e executando tarefas de forma implícita
 
@@ -94,39 +93,27 @@ Cada tarefa recebe um ID inteiro que a identifica exclusivamente em um domínio 
 
 ## <a name="task-creation-options"></a>Opções de criação de tarefa
 
-A maioria das APIs que criam tarefas fornecem sobrecargas que aceitam um parâmetro <xref:System.Threading.Tasks.TaskCreationOptions>. Ao especificar uma dessas opções, você informa o agendador de tarefas como agendar a tarefa no pool de threads. A tabela a seguir lista as várias opções de criação de tarefas.
+A maioria das APIs que criam tarefas fornecem sobrecargas que aceitam um parâmetro <xref:System.Threading.Tasks.TaskCreationOptions>. Ao especificar uma ou mais dessas opções, você informa ao agendador de tarefas como agendar a tarefa no pool de threads. As opções podem ser combinadas com o uso de **uma operação or** bit a bit.
 
-|Valor do parâmetro <xref:System.Threading.Tasks.TaskCreationOptions>|Descrição|
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-|<xref:System.Threading.Tasks.TaskCreationOptions.None>|O padrão quando nenhuma opção é especificada. O agendador usa sua heurística padrão para agendar a tarefa.|
-|<xref:System.Threading.Tasks.TaskCreationOptions.PreferFairness>|Especifica que a tarefa deve ser agendada de modo que as tarefas criadas antes sejam mais propensas a ser executadas mais cedo, e as tarefas criadas posteriormente sejam mais propensas a ser executadas mais tarde.|
-|<xref:System.Threading.Tasks.TaskCreationOptions.LongRunning>|Especifica que a tarefa representa uma operação de execução longa.|
-|<xref:System.Threading.Tasks.TaskCreationOptions.AttachedToParent>|Especifica que uma tarefa deve ser criada como um filho anexado da tarefa atual, se houver. Para obter mais informações, consulte [Tarefas filho anexadas e desanexadas](attached-and-detached-child-tasks.md).|
-|<xref:System.Threading.Tasks.TaskCreationOptions.DenyChildAttach>|Especifica que, se uma tarefa interna especificar a opção `AttachedToParent`, ela não se tornará uma tarefa filha anexada.|
-|<xref:System.Threading.Tasks.TaskCreationOptions.HideScheduler>|Especifica que o agendador de tarefas criadas por meio de chamadas a métodos como <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=nameWithType> ou <xref:System.Threading.Tasks.Task%601.ContinueWith%2A?displayProperty=nameWithType> de uma tarefa específica é o agendador padrão, e não o agendador no qual essa tarefa está em execução.|
-
-As opções podem ser combinadas usando uma operação **OR** bit a bit. O exemplo a seguir mostra uma tarefa que possui as opções <xref:System.Threading.Tasks.TaskCreationOptions.LongRunning> e <xref:System.Threading.Tasks.TaskContinuationOptions.PreferFairness>.
+O exemplo a seguir mostra uma tarefa que tem <xref:System.Threading.Tasks.TaskCreationOptions.LongRunning> as <xref:System.Threading.Tasks.TaskContinuationOptions.PreferFairness> Opções e.
 
 [!code-csharp[TPL_TaskIntro#03](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_taskintro/cs/taskintro.cs#03)]
 [!code-vb[TPL_TaskIntro#03](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_taskintro/vb/tpl_intro.vb#03)]
 
 ## <a name="tasks-threads-and-culture"></a>Tarefas, threads e cultura
 
-Cada thread tem uma cultura associada e uma cultura de interface do usuário, que é definida pelas propriedades <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> e <xref:System.Threading.Thread.CurrentUICulture%2A?displayProperty=nameWithType>, respectivamente. A cultura de um thread é usada em operações como formatação, análise, classificação e comparação de cadeia de caracteres. A cultura de interface do usuário de um thread é usada na pesquisa de recursos. Em geral, a menos que você especifique uma cultura padrão para todos os threads em um domínio de aplicativo usando as propriedades <xref:System.Globalization.CultureInfo.DefaultThreadCurrentCulture%2A?displayProperty=nameWithType> e <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture%2A?displayProperty=nameWithType>, a cultura padrão e a cultura de interface do usuário de um thread são definidas pela cultura do sistema. Se você definir a cultura de um thread de forma explícita e iniciar um novo thread, o novo thread não herdará a cultura do thread de chamada; em vez disso, sua cultura será a cultura padrão do sistema. O modelo de programação baseado em tarefas para aplicativos destinados a versões do .NET Framework anteriores ao .NET Framework 4.6 segue essa prática.
+Cada thread tem uma cultura associada e cultura de interface do usuário, que são definidas pelas <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> <xref:System.Threading.Thread.CurrentUICulture%2A?displayProperty=nameWithType> Propriedades e, respectivamente. A cultura de um thread é usada em operações como formatação, análise, classificação e comparação de cadeia de caracteres. A cultura de interface do usuário de um thread é usada na pesquisa de recursos.
 
-> [!IMPORTANT]
-> Observe que a cultura do thread de chamada como parte do contexto de uma tarefa se aplica aos aplicativos *destinados* ao .NET Framework 4.6, não aos aplicativos *executados* no .NET Framework 4.6. Você pode definir como destino uma versão específica do .NET Framework ao criar seu projeto no Visual Studio selecionando essa versão na lista suspensa na parte superior da caixa de diálogo **Novo Projeto**, ou fora do Visual Studio, você pode usar o atributo <xref:System.Runtime.Versioning.TargetFrameworkAttribute>. Para aplicativos destinados a versões do .NET Framework anteriores ao .NET Framework 4.6 ou que não são destinados a uma versão específica do .NET Framework, a cultura de uma tarefa continua sendo determinada pela cultura do thread no qual ela é executada.
+A menos que você especifique uma cultura padrão para todos os threads em um domínio de aplicativo usando as <xref:System.Globalization.CultureInfo.DefaultThreadCurrentCulture%2A?displayProperty=nameWithType> <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture%2A?displayProperty=nameWithType> Propriedades e, a cultura padrão e a cultura de interface do usuário de um thread são definidas pela cultura do sistema. Se você definir a cultura de um thread de forma explícita e iniciar um novo thread, o novo thread não herdará a cultura do thread de chamada; em vez disso, sua cultura será a cultura padrão do sistema. No entanto, na programação baseada em tarefas, as tarefas usam a cultura do thread de chamada, mesmo que a tarefa seja executada de forma assíncrona em um thread diferente.
 
-Começando com aplicativos destinados ao .NET Framework 4.6, a cultura do thread de chamada será herdada por cada tarefa, mesmo se a tarefa for executada de forma assíncrona em um pool de threads.
+O exemplo a seguir fornece uma ilustração simples. Ele altera a cultura atual do aplicativo para francês (França) (ou, se francês (França) já for a cultura atual, para inglês (Estados Unidos)). Depois, ele chama um delegado chamado `formatDelegate` que retorna alguns números formatados como valores de moeda na nova cultura. Se o delegado for invocado por uma tarefa de forma síncrona ou assíncrona, a tarefa usará a cultura do thread de chamada.
 
-O exemplo a seguir fornece uma ilustração simples. Ele usa o atributo <xref:System.Runtime.Versioning.TargetFrameworkAttribute> para definir o .NET Framework 4.6 como destino e altera a cultura atual do aplicativo para o francês (França) ou, caso o francês (França) já seja a cultura atual, para o inglês (Estados Unidos). Depois, ele chama um delegado chamado `formatDelegate` que retorna alguns números formatados como valores de moeda na nova cultura. Observe que, se o delegado como uma tarefa de forma síncrona ou assíncrona, ele retorna o resultado esperado, pois a cultura do thread de chamada é herdada pela tarefa assíncrona.
+:::code language="csharp" source="snippets/cs/asyncculture1.cs" id="1":::
 
-[!code-csharp[System.Globalization.CultureInfo.Class.Async#5](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.cultureinfo.class.async/cs/asyncculture1.cs#5)]
-[!code-vb[System.Globalization.CultureInfo.Class.Async#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.cultureinfo.class.async/vb/asyncculture1.vb#5)]
+:::code language="vbnet" source="snippets/vb/asyncculture1.vb" id="1":::
 
-Se você estiver usando o Visual Studio, poderá omitir o atributo <xref:System.Runtime.Versioning.TargetFrameworkAttribute> e selecionar o .NET Framework 4.6 como destino ao criar o projeto na caixa de diálogo **Novo Projeto**.
-
-Para obter um resultado que reflete o comportamento de aplicativos destinados a versões do .NET Framework anteriores ao .NET Framework 4.6, remova o atributo <xref:System.Runtime.Versioning.TargetFrameworkAttribute> do código-fonte. O resultado refletirá as convenções de formatação da cultura padrão do sistema, não da cultura do thread de chamada.
+> [!NOTE]
+> Nas versões do .NET Framework antes do .NET Framework 4,6, a cultura de uma tarefa é determinada pela cultura do thread em que ele *é executado*, não pela cultura do *thread de chamada*. Para tarefas assíncronas, isso significa que a cultura usada pela tarefa pode ser diferente para a cultura do thread de chamada.
 
 Para saber mais sobre a cultura e tarefas assíncronas, veja a seção “Cultura e operações assíncronas baseadas em tarefas assíncronas” no tópico <xref:System.Globalization.CultureInfo>.
 
@@ -288,7 +275,7 @@ Se você deve herdar de <xref:System.Threading.Tasks.Task> ou <xref:System.Threa
 |[Paralelismo de dados](data-parallelism-task-parallel-library.md)|Descreve como usar <xref:System.Threading.Tasks.Parallel.For%2A> e <xref:System.Threading.Tasks.Parallel.ForEach%2A> para criar loops paralelos sobre dados.|
 |[Programação paralela](index.md)|Nó de nível superior para a programação paralela do .NET Framework.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Programação paralela](index.md)
 - [Exemplos de programação paralela com o & do .NET Core .NET Standard](/samples/browse/?products=dotnet-core%2Cdotnet-standard&term=parallel)

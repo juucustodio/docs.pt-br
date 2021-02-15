@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função GetCORRequiredVersion'
 title: Função GetCORRequiredVersion
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1588fe7b-c378-4f4b-9c4b-48647f1119cc
 topic_type:
 - apiref
-ms.openlocfilehash: 6b9fd62102056a8d5f859ac913f4786f04c1df7e
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: ea1b928054e3ec6080b00e2a41228035f50c0f84
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83617237"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785348"
 ---
 # <a name="getcorrequiredversion-function"></a>Função GetCORRequiredVersion
+
 Obtém o número de versão do Common Language Runtime (CLR) necessário.  
   
  Essa função foi preterida no .NET Framework 4.  
@@ -37,6 +39,7 @@ HRESULT GetCORRequiredVersion (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pbuffer`  
  fora Um buffer que contém uma cadeia de caracteres que especifica o número de versão.  
   
@@ -47,14 +50,15 @@ HRESULT GetCORRequiredVersion (
  fora O número de bytes retornados no buffer.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** MSCorEE. dll  
+ **Biblioteca:** MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Funções de hospedagem CLR reprovadas](deprecated-clr-hosting-functions.md)

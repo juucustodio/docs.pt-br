@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: Criando um cabeçalho personalizado que é assinado e-ou criptografado'
 title: Criar um cabeçalho personalizado que é assinado e/ou criptografado
 ms.date: 03/30/2017
 ms.assetid: e8668b37-c79f-4714-9de5-afcb88b9ff02
-ms.openlocfilehash: 0adb4100bca1add2c23ff2c802ddb5e2cb1c368c
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: d3952eeb37cbe09f72e179fcaa50c650fe9aa90d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84579652"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99705168"
 ---
 # <a name="creating-a-custom-header-that-is-signed-and-or-encrypted"></a>Criar um cabeçalho personalizado que é assinado e/ou criptografado
+
 Ao chamar um serviço não WCF usando um cliente WCF, às vezes, é necessário usar cabeçalhos SOAP personalizados. Há um bug de canonização no WCF que impede que os cabeçalhos personalizados assinados e criptografados trabalhem com um serviço não WCF. O problema é causado pela canonização incorreta de namespaces XML padrão. Isso só é problemático ao chamar serviços não WCF com cabeçalhos personalizados assinados e/ou criptografados.  Quando o serviço recebe a mensagem que contém o cabeçalho personalizado assinado e/ou criptografado, ele não pode verificar a assinatura. Essa solução alternativa evita o bug de canonização, permite a interoperabilidade com serviços não WCF, mas não impede a interoperabilidade com os serviços WCF.  
   
 ## <a name="defining-the-custom-header"></a>Definindo o cabeçalho personalizado  
+
  Os cabeçalhos personalizados são definidos definindo um contrato de mensagem e marcando os membros que você deseja que sejam enviados como cabeçalhos com um <xref:System.ServiceModel.MessageHeaderAttribute> atributo. Para contornar o bug de canonização, você deve garantir que o serializador XML declare o namespace para o cabeçalho personalizado com um prefixo em vez de uma declaração de namespace padrão. O código a seguir mostra como definir o tipo de dados que será usado como um cabeçalho de mensagem com a declaração de namespace correta.  
   
 ```csharp

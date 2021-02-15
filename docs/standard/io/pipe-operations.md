@@ -2,21 +2,21 @@
 title: Operações básicas de pipe no .NET
 description: 'Saiba mais sobre as operações de pipe no .NET. Os pipes fornecem um meio de comunicação entre processos. Há dois tipos de Pipes: Pipes anônimos e pipes nomeados.'
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 helpviewer_keywords:
-- pipes [.NET Framework]
-- pipe operations [.NET Framework]
-- interprocess communication [.NET Framework], pipes
-- I/O [.NET Framework], pipes
+- pipes [.NET]
+- pipe operations [.NET]
+- interprocess communication [.NET], pipes
+- I/O [.NET], pipes
 ms.assetid: 7b964ebd-7a4f-4d28-8194-7841f9e4c702
-ms.openlocfilehash: 35a3910bbab1b34f085a55524be0b18b3fa81958
-ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
+ms.openlocfilehash: bb8804c32b9f2b54b05298779bddae117c10dcf5
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84768879"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95734797"
 ---
 # <a name="pipe-operations-in-net"></a>Operações básicas de pipe no .NET
+
 Os pipes fornecem um meio de comunicação entre processos. Existem dois tipos de pipes:  
   
 - Pipes anônimos.  
@@ -35,7 +35,7 @@ Os pipes fornecem um meio de comunicação entre processos. Existem dois tipos d
   
      Veja [Como usar pipes nomeados para comunicação entre processos na rede](how-to-use-named-pipes-for-network-interprocess-communication.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Arquivo e e/s de fluxo](index.md)
 - [Como: Usar pipes anônimos para comunicação entre processos locais](how-to-use-anonymous-pipes-for-local-interprocess-communication.md)

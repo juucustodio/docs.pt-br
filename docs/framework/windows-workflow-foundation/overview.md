@@ -3,17 +3,19 @@ title: Visão geral de fluxo de trabalho do Windows
 description: Este artigo descreve os fluxos de trabalho do Workflow Foundation, que são modelos que descrevem processos do mundo real.
 ms.date: 03/30/2017
 ms.assetid: fc44adbe-1412-49ae-81af-0298be44aae6
-ms.openlocfilehash: ec1a00b37abe2cb842735fb98e1c113a97943758
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: f966aa2b62a743358d4c1ad18f237f988924014d
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83421469"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96268671"
 ---
 # <a name="windows-workflow-overview"></a>Visão geral de fluxo de trabalho do Windows
+
 Um fluxo de trabalho é um conjunto de unidades elementas chamadas *atividades* que são armazenadas como um modelo que descreve um processo real. Fluxos de trabalho fornecem uma maneira de descrever a ordem de relações de execução e dependentes entre partes de trabalho ou longo tempo. Este trabalho passa pelo modelo do início ao final, e as atividades podem ser executadas por pessoas ou funções do sistema.  
   
 ## <a name="workflow-run-time-engine"></a>Mecanismo de fluxo de trabalho  
+
  Cada instância em execução de fluxo de trabalho é criado e mantido por um mecanismo em processo de tempo de execução que o processo host interage com o direto do seguinte:  
   
 - <xref:System.Activities.WorkflowInvoker>, que chama o fluxo de trabalho como um método.  
@@ -30,6 +32,7 @@ Um fluxo de trabalho é um conjunto de unidades elementas chamadas *atividades* 
 Componentes de fluxo de trabalho no processo do host  
   
 ## <a name="interaction-between-workflow-components"></a>Interação entre componentes de fluxo de trabalho  
+
  O diagrama a seguir demonstra como os componentes de fluxo de trabalho interagem um com o outro.  
   
  ![Diagrama que mostra como os componentes de fluxo de trabalho interagem.](./media/overview/workflow-component-interatction.gif)  
@@ -44,4 +47,4 @@ Componentes de fluxo de trabalho no processo do host
   
 ## <a name="see-also"></a>Veja também
 
-- [BizTalk Server 2006 ou WF? Escolhendo a ferramenta de fluxo de trabalho certa para seu projeto](https://docs.microsoft.com/previous-versions/dotnet/articles/cc303238(v=msdn.10))
+- [BizTalk Server 2006 ou WF? Escolhendo a ferramenta de fluxo de trabalho certa para seu projeto](/previous-versions/dotnet/articles/cc303238(v=msdn.10))

@@ -3,12 +3,12 @@ title: Conceitos e terminologia (transformação funcional)-LINQ to XML
 description: Aprenda os conceitos e a terminologia de transformações funcionais puras.
 ms.date: 07/20/2015
 ms.assetid: 03defb3a-7e17-4ab1-8efa-4dd66621e860
-ms.openlocfilehash: a1c9c582235ac63fe50dd585ef5f046e9be8170e
-ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
+ms.openlocfilehash: 0ecdbdf88ee9f868143f466222fa06f0ccf641d8
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89552029"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90558107"
 ---
 # <a name="concepts-and-terminology-functional-transformation-linq-to-xml"></a>Conceitos e terminologia (transformação funcional) (LINQ to XML)
 
@@ -54,7 +54,7 @@ Para obter mais informações, consulte Visão geral [dos operadores de consulta
 expressão lambda \
 Essencialmente, uma função anônimo embutido que pode ser usada em que um tipo delegate é esperada. Esta é uma definição simplificada de expressões lambda, mas é adequada para os fins deste tutorial.
 
-Para obter mais informações, consulte [expressões lambda (guia de programação C#)](../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md) e [expressões lambda (Visual Basic))](../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).
+Para obter mais informações, consulte [expressões lambda (guia de programação C#)](../../csharp/language-reference/operators/lambda-expressions.md) e [expressões lambda (Visual Basic))](../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).
 
 coleção \
 Um conjunto estruturada de dados, geralmente um tipo de uniforme. Para ser compatível com LINQ, uma coleção deve implementar a interface de <xref:System.Collections.IEnumerable> ou a interface de <xref:System.Linq.IQueryable> (ou uma de suas contrapartes genéricos, de <xref:System.Collections.Generic.IEnumerator%601> ou de <xref:System.Linq.IQueryable%601>).
@@ -72,9 +72,9 @@ Para obter mais informações, consulte [variáveis de local digitadas implicita
 execução adiada e avaliação lenta \
 O atraso de avaliação de uma expressão até que o valor resolvido é realmente necessário. A execução adiada é suportado em coleções.
 
-Para obter mais informações sobre C#, consulte [introdução às consultas LINQ (c#)](../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md) e [execução retardada e avaliação lenta em LINQ to XML (c#)](../../csharp/programming-guide/concepts/linq/deferred-execution-and-lazy-evaluation-in-linq-to-xml.md).
+Para obter mais informações sobre C#, consulte [introdução às consultas LINQ (c#)](../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md) e [execução retardada e avaliação lenta em LINQ to XML (c#)](./deferred-execution-lazy-evaluation.md).
 
-Para obter mais Visual Basic informações, consulte [operações de consulta básica (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md) e a [execução retardada e a avaliação lenta no LINQ to XML (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/deferred-execution-and-lazy-evaluation-in-linq-to-xml.md).
+Para obter mais Visual Basic informações, consulte [operações de consulta básica (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md) e a [execução retardada e a avaliação lenta no LINQ to XML (Visual Basic)](./deferred-execution-lazy-evaluation.md).
 
 Esses recursos de idioma serão usados em exemplos de código em todo esta seção.
 

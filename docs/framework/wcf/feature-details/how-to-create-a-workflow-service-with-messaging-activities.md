@@ -1,22 +1,24 @@
 ---
-title: Como criar um serviço de fluxo de trabalho com atividades de mensagens
+description: 'Saiba mais sobre: como criar um serviço de fluxo de trabalho com atividades de mensagens'
+title: 'Como: criar um serviço de fluxo de trabalho com atividades de mensagens'
 ms.date: 03/30/2017
 ms.assetid: 53d094e2-6901-4aa1-88b8-024b27ccf78b
-ms.openlocfilehash: b4991fc9f8a6c45cae3943f1506247c42ed2b30b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: c8f01574c2880e3a75a4db8edea949648d49426c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597118"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734536"
 ---
-# <a name="how-to-create-a-workflow-service-with-messaging-activities"></a>Como criar um serviço de fluxo de trabalho com atividades de mensagens
+# <a name="how-to-create-a-workflow-service-with-messaging-activities"></a>Como: criar um serviço de fluxo de trabalho com atividades de mensagens
+
 Este tópico descreve como criar um serviço de fluxo de trabalho simples usando atividades de mensagens. Este tópico se concentra na mecânica de criação de um serviço de fluxo de trabalho em que o serviço consiste exclusivamente em atividades de mensagens. Em um serviço do mundo real, o fluxo de trabalho contém muitas outras atividades. O serviço implementa uma operação chamada Echo, que usa uma cadeia de caracteres e retorna a cadeia de caracteres para o chamador. Este tópico é o primeiro de uma série de dois tópicos. O próximo tópico [como: acessar um serviço de um aplicativo de fluxo de trabalho](how-to-access-a-service-from-a-workflow-application.md) discute como criar um aplicativo de fluxo de trabalho que pode chamar o serviço criado neste tópico.  
   
 ### <a name="to-create-a-workflow-service-project"></a>Para criar um projeto de serviço de fluxo de trabalho  
   
 1. Inicie o Visual Studio 2012.  
   
-2. Clique no menu **arquivo** , selecione **novo**e, em seguida, **projeto** para exibir a **caixa de diálogo novo projeto**. Selecione **fluxo de trabalho** na lista de modelos instalados e **aplicativo de serviço de fluxo de trabalho WCF** na lista de tipos de projeto. Nomeie o projeto `MyWFService` e use o local padrão, conforme mostrado na ilustração a seguir.  
+2. Clique no menu **arquivo** , selecione **novo** e, em seguida, **projeto** para exibir a **caixa de diálogo novo projeto**. Selecione **fluxo de trabalho** na lista de modelos instalados e **aplicativo de serviço de fluxo de trabalho WCF** na lista de tipos de projeto. Nomeie o projeto `MyWFService` e use o local padrão, conforme mostrado na ilustração a seguir.  
   
      Clique no botão **OK** para ignorar a **caixa de diálogo novo projeto**.  
   
@@ -67,6 +69,7 @@ Este tópico descreve como criar um serviço de fluxo de trabalho simples usando
 8. Salve e Compile a solução clicando no menu **Compilar** e selecionando **Compilar solução**.  
   
 ## <a name="configure-the-workflow-service-project"></a>Configurar o projeto de serviço de fluxo de trabalho  
+
  O serviço de fluxo de trabalho está concluído. Esta seção explica como configurar a solução de serviço de fluxo de trabalho para facilitar o host e a execução. Essa solução usa o ASP.NET Development Server para hospedar o serviço.  
   
 #### <a name="to-set-project-start-up-options"></a>Para definir opções de inicialização do projeto  

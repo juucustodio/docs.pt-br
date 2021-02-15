@@ -5,15 +5,18 @@ ms.date: 07/20/2015
 helpviewer_keywords:
 - C# language, constants
 - constants [C#]
+ms.topic: how-to
+ms.custom: contperf-fy21q2
 ms.assetid: 43f511be-346c-4b8a-995e-aded94542ece
-ms.openlocfilehash: afa2799cf76f976e332f91b631dc90e2799a0aa0
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: 4ee1b04cf30b7602ae563cb02daed49f82c04de7
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86864638"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98898990"
 ---
 # <a name="how-to-define-constants-in-c"></a>Como definir constantes em C\#
+
 As constantes são campos cujos valores são definidos em tempo de compilação e nunca podem ser alterados. Use constantes para fornecer nomes significativos em vez de literais numéricos ("números mágicos") a valores especiais.  
   
 > [!NOTE]
@@ -24,10 +27,11 @@ As constantes são campos cujos valores são definidos em tempo de compilação 
  Para definir constantes não integrais, uma abordagem é agrupá-las em uma única classe estática de nome `Constants`. Isso exigirá que todas as referências às constantes sejam precedidas com o nome de classe, conforme mostrado no exemplo a seguir.  
   
 ## <a name="example"></a>Exemplo  
- [!code-csharp[csProgGuideObjects#89](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#89)]  
+
+ [!code-csharp[constants](snippets/how-to-define-constants/Program.cs)]  
   
  O uso do qualificador de nome de classe ajuda a garantir que você e outras pessoas que usam a constante entendam que ele é constante e não pode ser modificado.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Classes e structs](./index.md)

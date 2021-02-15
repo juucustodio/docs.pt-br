@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC30202: ' optional ' esperado"
 title: "'Optional' esperado"
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,24 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - BC30202
 ms.assetid: 6f75060c-2db4-4a79-b5d1-5780c09a74cd
-ms.openlocfilehash: 411e3248409ab0184666f4efefb4ec4becf7cab1
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 543dbf6226d4d298d46764ee506b55e770c91604
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84409342"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795541"
 ---
-# <a name="optional-expected"></a>'Optional' esperado
-Um argumento opcional em uma declaração de procedimento é seguido por um argumento necessário. Todos os argumentos após um argumento opcional também devem ser opcionais.  
-  
- **ID do erro:** BC30202  
-  
-## <a name="to-correct-this-error"></a>Para corrigir este erro  
-  
-1. Se o argumento se destinar a ser necessário, mova-o para preceder o primeiro argumento opcional na lista de argumentos.  
-  
-2. Se o argumento se destinar a ser opcional, use a `Optional` palavra-chave.  
-  
-## <a name="see-also"></a>Confira também
+# <a name="bc30202-optional-expected"></a>BC30202: ' optional ' esperado
+
+Um argumento opcional em uma declaração de procedimento é seguido por um argumento necessário. Todos os argumentos após um argumento opcional também devem ser opcionais.
+
+ **ID do erro:** BC30202
+
+## <a name="to-correct-this-error"></a>Para corrigir este erro
+
+- Se o argumento se destinar a ser necessário, mova-o para preceder o primeiro argumento opcional na lista de argumentos.
+
+- Se o argumento se destinar a ser opcional, use a `Optional` palavra-chave.
+
+## <a name="see-also"></a>Consulte também
 
 - [Parâmetros Opcionais](../../programming-guide/language-features/procedures/optional-parameters.md)

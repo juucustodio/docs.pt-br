@@ -3,14 +3,15 @@ title: Cliente de Teste do WCF (WcfTestClient.exe)
 description: Saiba mais sobre o WCF Test Client, que fornece testes de serviço contínuos quando combinados com o host de serviço WCF. Enviar valores de teste de cliente e exibir respostas de serviço.
 ms.date: 03/30/2017
 ms.assetid: d4302855-677f-4640-aa90-c5d785d72fb7
-ms.openlocfilehash: 4f636698c538809f89ee356159839a37b73adb57
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: f583d20edf7eeea87ae1dbf63a3cadef05912833
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85245655"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96264121"
 ---
 # <a name="wcf-test-client-wcftestclientexe"></a>Cliente de Teste do WCF (WcfTestClient.exe)
+
 Windows Communication Foundation (WCF) Test Client (WcfTestClient.exe) é uma ferramenta de GUI que permite aos usuários inserir parâmetros de teste, enviar essa entrada para o serviço e exibir a resposta que o serviço envia de volta. Ele fornece uma experiência de teste de serviço sem interrupção quando combinado com o host de serviço do WCF.
 
 Normalmente, você pode encontrar o cliente de teste do WCF (WcfTestClient.exe) no seguinte local: `C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE` -a Comunidade pode ser uma "empresa", "Professional" ou "Community", dependendo de qual nível do Visual Studio está instalado.
@@ -33,7 +34,7 @@ Você também pode usar o cliente de teste do WCF para ajudar a depurar um proje
 
 Você também pode invocar o cliente de teste do WCF (WcfTestClient.exe) fora do Visual Studio para testar um serviço arbitrário na Internet. Para localizar a ferramenta, vá para o seguinte local:
 
-`C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE`(onde a Comunidade pode ser uma de "Enterprise", "Professional" ou "Community", dependendo de qual nível do Visual Studio está instalado no computador)
+`C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE` (onde a Comunidade pode ser uma de "Enterprise", "Professional" ou "Community", dependendo de qual nível do Visual Studio está instalado no computador)
 
 Para usar a ferramenta, clique duas vezes no nome do arquivo para abri-lo neste local ou inicie-a em uma linha de comando.
 
@@ -41,7 +42,7 @@ O cliente de teste do WCF usa um número arbitrário de URIs como argumentos de 
 
 `wcfTestClient.exe URI1 URI2 …`
 
-Depois que a janela do cliente de teste do WCF for aberta, clique em **arquivo** -> **Adicionar serviço**e insira o endereço do ponto de extremidade do serviço que você deseja abrir.
+Depois que a janela do cliente de teste do WCF for aberta, clique em **arquivo** -> **Adicionar serviço** e insira o endereço do ponto de extremidade do serviço que você deseja abrir.
 
 ## <a name="wcf-test-client-user-interface"></a>Interface do usuário do Cliente de Teste do WCF
 
@@ -125,7 +126,7 @@ Clique em **arquivo** -> **Adicionar serviço** para adicionar um serviço ao cl
 
 Você também pode encontrar uma lista de 10 pontos de extremidade dos serviços adicionados recentemente no submenu **Serviços recentes** . Se você selecionar um deles, o serviço especificado será adicionado ao cliente de teste do WCF.
 
-Você também pode clicar com o botão direito do mouse na raiz da árvore de serviço **meus projetos de serviço**e selecionar **Adicionar serviço** para obter o mesmo resultado.
+Você também pode clicar com o botão direito do mouse na raiz da árvore de serviço **meus projetos de serviço** e selecionar **Adicionar serviço** para obter o mesmo resultado.
 
 Durante a geração do proxy, da compilação binária ou da chamada do serviço, os itens de menu que dão suporte à edição de um serviço estão desabilitados. A chamada de serviço também está desabilitada.
 
@@ -145,7 +146,7 @@ Durante a geração do proxy, da compilação binária ou da chamada do serviço
 
 Por padrão, o cliente de teste do WCF armazena os arquivos de configuração e o código do cliente gerados na pasta "projetos de cliente do%appdata%\Local\temp\Test". Essa pasta é excluída após a saída do cliente de teste do WCF. Se um arquivo de configuração for modificado no cliente de teste do WCF e a opção **sempre regenerar configuração ao iniciar serviços** estiver desabilitada, o arquivo modificado será copiado para a pasta "CachedConfig" em "meus projetos de cliente Documents\Test" com um arquivo XML de mapeamento (metadados-endereço-para-nome-do-arquivo) como um índice.
 
-Você também pode iniciar o cliente de teste do WCF em uma linha de comando, usar a `/ProjectPath` opção para especificar um novo caminho desejado para armazenar arquivos gerados ou usar a `/RestoreProjectPath` opção para restaurar o local padrão. A sintaxe é mostrada a seguir:
+Você também pode iniciar o cliente de teste do WCF em uma linha de comando, usar a `/ProjectPath` opção para especificar um novo caminho desejado para armazenar arquivos gerados ou usar a `/RestoreProjectPath` opção para restaurar o local padrão. A sintaxe dela é a seguinte:
 
 `wcfTestClient.exe /ProjectPath [desired location]`
 

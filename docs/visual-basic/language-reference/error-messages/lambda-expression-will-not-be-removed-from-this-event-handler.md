@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: BC42326: a expressão lambda não será removida deste manipulador de eventos'
 title: A expressão lambda não será removida deste manipulador de eventos
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,14 +8,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC42326
 ms.assetid: 63214dc6-0112-4245-8ebf-7c9e8f5a5782
-ms.openlocfilehash: 07ace3f1b9c5e512227dc1f718ef768b631c8303
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 6feb8733a6413caa564d2c930b4d35dc5697b4fe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84397370"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795944"
 ---
-# <a name="lambda-expression-will-not-be-removed-from-this-event-handler"></a>A expressão lambda não será removida deste manipulador de eventos
+# <a name="bc42326-lambda-expression-will-not-be-removed-from-this-event-handler"></a>BC42326: a expressão lambda não será removida deste manipulador de eventos
 
 A expressão lambda não será removida deste manipulador de eventos. Atribua a expressão lambda a uma variável e use a variável para adicionar e remover o evento.
 
@@ -85,7 +86,7 @@ Module Module1
 End Module
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Expressões lambda](../../programming-guide/language-features/procedures/lambda-expressions.md)
 - [Conversão de delegado reduzida](../../programming-guide/language-features/delegates/relaxed-delegate-conversion.md)

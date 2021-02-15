@@ -1,25 +1,28 @@
 ---
+description: 'Saiba mais sobre: selecionar dados XML usando XPathNavigator'
 title: Selecionar dados XML usando XPathNavigator
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 ms.assetid: c268c49e-32b9-4171-b782-dcb7b065fa73
-ms.openlocfilehash: d5e7074fc8c68a0a0243ea4ad237e713e0a729b3
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: d6a5e80ef751838e02e10a0bcec53749fdf7d3ce
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84289051"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782956"
 ---
 # <a name="select-xml-data-using-xpathnavigator"></a>Selecionar dados XML usando XPathNavigator
+
 A classe <xref:System.Xml.XPath.XPathNavigator> fornece um conjunto de métodos usados para selecionar um conjunto de nós em um objeto <xref:System.Xml.XPath.XPathDocument> ou <xref:System.Xml.XmlDocument> usando uma expressão XPath. Depois de selecionado, você pode iterar sobre o conjunto de nós selecionado.  
   
 ## <a name="xpathnavigator-selection-methods"></a>Métodos de seleção XPathNavigator  
+
  A classe <xref:System.Xml.XPath.XPathNavigator> fornece um conjunto de métodos usados para selecionar um conjunto de nós em um objeto <xref:System.Xml.XPath.XPathDocument> ou <xref:System.Xml.XmlDocument> usando uma expressão XPath. A classe <xref:System.Xml.XPath.XPathNavigator> também fornece um conjunto de métodos otimizados para selecionar nós ancestrais, filhos ou descendentes mais rapidamente do que usar uma expressão XPath. O conjunto de nós selecionado é retornado em um objeto <xref:System.Xml.XPath.XPathNodeIterator> ou em um objeto <xref:System.Xml.XPath.XPathNavigator> no caso de um único nó selecionado.  
   
 ### <a name="selecting-nodes-using-xpath-expressions"></a>Selecionando nós usando expressões XPath  
+
  Para selecionar um conjunto de nós usando uma expressão XPath, use um dos seguintes métodos de seleção.  
   
 - <xref:System.Xml.XPath.XPathNavigator.Select%2A>  
@@ -58,9 +61,10 @@ while(nodes.MoveNext())
  [!code-xml[XPathXMLExamples#1](../../../../samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/books.xml#1)]  
   
 ### <a name="optimized-selection-methods"></a>Métodos de seleção otimizados  
+
  Os métodos <xref:System.Xml.XPath.XPathNavigator.SelectChildren%2A>, <xref:System.Xml.XPath.XPathNavigator.SelectAncestors%2A> e <xref:System.Xml.XPath.XPathNavigator.SelectDescendants%2A> da classe <xref:System.Xml.XPath.XPathNavigator> representam as expressões XPath comumente usadas para recuperar os nós filho, descendentes e ancestrais. Esses métodos são otimizados para desempenho e são mais rápidos do que as expressões XPath correspondentes. Os métodos <xref:System.Xml.XPath.XPathNavigator.SelectChildren%2A>, <xref:System.Xml.XPath.XPathNavigator.SelectAncestors%2A> e <xref:System.Xml.XPath.XPathNavigator.SelectDescendants%2A> selecionam os nós ancestrais, filho e descendentes com base em um valor <xref:System.Xml.XPath.XPathNodeType> ou o nome local e o URI do namespace dos nós a serem selecionados. Os nós ancestrais, filho e descendentes selecionados são retornados em um objeto <xref:System.Xml.XPath.XPathNodeIterator>.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>

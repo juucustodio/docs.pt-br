@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugEval:: CallFunction'
 title: Método ICorDebugEval::CallFunction
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7f470c5c-e1c0-4d8d-aad8-830f113ae751
 topic_type:
 - apiref
-ms.openlocfilehash: 1cf0080945ad78565fae3fedb454ceba7825cb4a
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: c0978ab3bdffc83e3eb5e3a6553e7f374ab6d5da
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976233"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694182"
 ---
 # <a name="icordebugevalcallfunction-method"></a>Método ICorDebugEval::CallFunction
 

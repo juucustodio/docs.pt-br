@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <security> de <msmqIntegrationBinding>'
 title: <security> de <msmqIntegrationBinding>
 ms.date: 03/30/2017
 ms.assetid: ae5c68a8-14a2-4c6e-b9e0-3e94e3e9135e
-ms.openlocfilehash: 2268bf48a2b86c3b3b25db006e6f8f55ea33af73
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 4ad4cb89599198661d764cfeb985609be027c0eb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73738688"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99683197"
 ---
 # <a name="security-of-msmqintegrationbinding"></a>\<security> de \<msmqIntegrationBinding>
+
 Define as configurações de segurança de transporte para o canal de integração do serviço de enfileiramento de mensagens (MSMQ).  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -19,7 +21,7 @@ Define as configurações de segurança de transporte para o canal de integraç�
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<security>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <msmqIntegrationBinding>
@@ -38,6 +40,7 @@ Define as configurações de segurança de transporte para o canal de integraç�
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -58,7 +61,7 @@ Define as configurações de segurança de transporte para o canal de integraç�
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|O elemento Binding do [\<msmqIntegrationBinding>](msmqintegrationbinding.md) .|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.MsmqIntegrationSecurityElement>
 - <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding.Security%2A>

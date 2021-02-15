@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <tcpTransport>'
 title: <tcpTransport>
 ms.date: 03/30/2017
 ms.assetid: 8fcd18c1-9958-42e7-b442-7903f7bdb563
-ms.openlocfilehash: f2c1335795ffd3cb395a7006bfaeb3cf7b39636b
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: b660443ac58e8ed72d70adb5bf9e9e87b060e3af
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "77448615"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786610"
 ---
 # \<tcpTransport>
+
 Define um transporte TCP que pode ser usado por um canal para transferir mensagens para uma associação personalizada.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -19,7 +21,7 @@ Define um transporte TCP que pode ser usado por um canal para transferir mensage
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<tcpTransport>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <tcpTransport channelInitializationTimeout="TimeSpan"
@@ -44,6 +46,7 @@ Define um transporte TCP que pode ser usado por um canal para transferir mensage
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -62,11 +65,12 @@ Define um transporte TCP que pode ser usado por um canal para transferir mensage
 |maxPendingConnections|Obtém ou define o número máximo de conexões aguardando a expedição no serviço.|  
 |maxReceivedMessageSize|Obtém e define o tamanho máximo de mensagem permitido que pode ser recebido.|  
 |portSharingEnabled|Um valor booliano que especifica se o compartilhamento de porta TCP está habilitado para esta conexão. Se isso for `false` , cada associação usará sua própria porta exclusiva. O padrão é `false`.<br /><br /> Essa configuração é relevante apenas para serviços do. Os clientes não são afetados.<br /><br /> O uso dessa configuração requer a habilitação do serviço de compartilhamento de porta TCP Windows Communication Foundation (WCF) alterando seu tipo de inicialização para manual ou automático|  
-|teredoEnabled|Um valor booliano que especifica se Teredo (uma tecnologia para endereçar clientes que estão atrás de firewalls) está habilitado. O padrão é `false`.<br /><br /> Essa propriedade habilita a Teredo para o soquete TCP subjacente. Para obter mais informações, consulte [visão geral do Teredo](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-xp/bb457011(v=technet.10)).<br /><br /> Essa propriedade é aplicável somente no Windows XP SP2 e no Windows Server 2003. O Windows Vista tem uma opção de configuração de todo o computador para Teredo, portanto, ao executar o vista, essa propriedade é ignorada. O Teredo requer que o cliente e as máquinas de serviço tenham a pilha do Microsoft IPv6 instalada e configurada corretamente para uso de Teredo.|  
+|teredoEnabled|Um valor booliano que especifica se Teredo (uma tecnologia para endereçar clientes que estão atrás de firewalls) está habilitado. O padrão é `false`.<br /><br /> Essa propriedade habilita a Teredo para o soquete TCP subjacente. Para obter mais informações, consulte [visão geral do Teredo](/previous-versions/windows/it-pro/windows-xp/bb457011(v=technet.10)).<br /><br /> Essa propriedade é aplicável somente no Windows XP SP2 e no Windows Server 2003. O Windows Vista tem uma opção de configuração de todo o computador para Teredo, portanto, ao executar o vista, essa propriedade é ignorada. O Teredo requer que o cliente e as máquinas de serviço tenham a pilha do Microsoft IPv6 instalada e configurada corretamente para uso de Teredo.|  
 |transferMode|Obtém ou define um valor que indica se as mensagens são armazenadas em buffer ou transmitidas com o transporte voltado para a conexão.|  
 |connectionPoolSettings|Especifica configurações de pool de conexões adicionais para uma associação de pipe nomeado.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -76,11 +80,12 @@ Define um transporte TCP que pode ser usado por um canal para transferir mensage
 |[\<binding>](bindings.md)|Define todos os recursos de associação da associação personalizada.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Esse transporte usa URIs no formato "net. TCP://hostname: port/path". Outros componentes de URI são opcionais.  
   
  O `tcpTransport` elemento é o ponto de partida para criar uma associação personalizada que implementa o protocolo de transporte TCP. Esse transporte é otimizado para comunicação WCF para WCF.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.TcpTransportElement>
 - <xref:System.ServiceModel.Channels.TcpTransportBindingElement>

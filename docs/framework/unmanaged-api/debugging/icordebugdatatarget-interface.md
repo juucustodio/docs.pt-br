@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugDataTarget'
 title: Interface ICorDebugDataTarget
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: df5f05be-bed7-4f3c-bc89-dbb435d79a0b
 topic_type:
 - apiref
-ms.openlocfilehash: 54272dd18a12715bab58ec1b1a4c1dc00e4bf12b
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: 34121b56080a8adc17543ce5716962c17c1a156d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976519"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99764418"
 ---
 # <a name="icordebugdatatarget-interface"></a>Interface ICorDebugDataTarget
+
 Fornece uma interface de retorno de chamada que oferece acesso a um determinado processo de destino.  
   
 ## <a name="methods"></a>Métodos  
@@ -33,7 +35,8 @@ Fornece uma interface de retorno de chamada que oferece acesso a um determinado 
 |[Método GetThreadContext](icordebugdatatarget-getthreadcontext-method.md)|Solicita o contexto de thread atual para o thread especificado.|  
   
 ## <a name="remarks"></a>Comentários  
- `ICorDebugDataTarget`e seus métodos têm as seguintes características:  
+
+ `ICorDebugDataTarget` e seus métodos têm as seguintes características:  
   
 - Os serviços de depuração chamam os métodos nessa interface para acessar a memória e outros dados no processo de destino.  
   
@@ -43,12 +46,13 @@ Fornece uma interface de retorno de chamada que oferece acesso a um determinado 
   
 - A `ICorDebugDataTarget` implementação sempre deve retornar informações atualizadas sobre o destino.  
   
- O processo de destino deve ser interrompido e não alterado de nenhuma forma `ICorDebug*` enquanto as interfaces ( `ICorDebugDataTarget` e, portanto, os métodos) estão sendo chamadas. Se o destino for um processo ao vivo e seu estado for alterado, o método [ICLRDebugging:: OpenVirtualProcess](iclrdebugging-openvirtualprocess-method.md) precisará ser chamado novamente para fornecer uma instância de ICorDebugProcess substituta.  
+ O processo de destino deve ser interrompido e não alterado de nenhuma forma enquanto as `ICorDebug*` interfaces (e, portanto, os `ICorDebugDataTarget` métodos) estão sendo chamadas. Se o destino for um processo ao vivo e seu estado for alterado, o método [ICLRDebugging:: OpenVirtualProcess](iclrdebugging-openvirtualprocess-method.md) precisará ser chamado novamente para fornecer uma instância de ICorDebugProcess substituta.  
   
 > [!NOTE]
 > Esta interface não dá suporte para chamada remota, seja entre computadores ou processos cruzados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

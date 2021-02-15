@@ -2,14 +2,13 @@
 title: O .NET Portability Analyzer – .NET
 description: Saiba como usar a ferramenta .NET Portability Analyzer para avaliar a portabilidade do seu código entre as várias implementações de .NET, incluindo .NET Core, .NET Standard, UWP e Xamarin.
 ms.date: 09/13/2019
-ms.technology: dotnet-standard
 ms.assetid: 0375250f-5704-4993-a6d5-e21c499cea1e
-ms.openlocfilehash: d61dd9ebe744686885dad41ef700caaea9853f85
-ms.sourcegitcommit: b1f4756120deaecb8b554477bb040620f69a4209
+ms.openlocfilehash: 048ff916d309f4159fe78177e093a58d731c2e11
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89414793"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95734277"
 ---
 # <a name="the-net-portability-analyzer"></a>O .NET Portability Analyzer
 
@@ -48,6 +47,7 @@ Um resultado disso seria semelhante ao seguinte quando aberto no Visual Studio:
 ![Captura de tela da análise de DGML.](./media/portability-analyzer/dgml-example.png)
 
 ### <a name="analyze-portability"></a>Analisar portabilidade
+
 Para analisar todo o projeto no Visual Studio, clique com o botão direito do mouse no projeto no **Gerenciador de Soluções** e selecione **Analisar Portabilidade do Assembly**. Caso contrário, acesse o menu **Analyze** e selecione **Analisar Portabilidade do Assembly**. A partir daí, selecione o executável ou a DLL do seu projeto.
 
 ![Captura de tela do analisador de portabilidade do Gerenciador de Soluções.](./media/portability-analyzer/portability-solution-explorer.png)
@@ -75,7 +75,7 @@ A seção Resumo de Portabilidade do relatório mostra o percentual de portabili
 
 ![Captura de tela dos detalhes de portabilidade.](./media/portability-analyzer/api-catalog-portablility-details.png)
 
-A seção de **detalhes** do relatório lista as APIs ausentes em qualquer uma das **plataformas de destino**selecionadas.
+A seção de **detalhes** do relatório lista as APIs ausentes em qualquer uma das **plataformas de destino** selecionadas.
 
 - Tipo de destino: o tipo tem uma API ausente de uma Plataforma de Destino
 - Membro de destino: o método está ausente de uma Plataforma de Destino

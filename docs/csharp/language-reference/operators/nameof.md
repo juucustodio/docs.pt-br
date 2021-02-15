@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - nameof expression [C#]
 ms.assetid: 33601bf3-cc2c-4496-846d-f9679bccf2a7
-ms.openlocfilehash: 04109cde2a1f9146bf9bb44f301272808797ded0
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 568127a64efc02717b34fbd9d1e508e2e40596fd
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89118306"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100464385"
 ---
 # <a name="nameof-expression-c-reference"></a>expressão nameof (referência C#)
 
@@ -21,7 +21,7 @@ Uma `nameof` expressão produz o nome de uma variável, tipo ou membro como a co
 
 [!code-csharp-interactive[nameof expression](snippets/shared/NameOfOperator.cs#Examples)]
 
-Como mostra o exemplo anterior, no caso de um tipo e um namespace, o nome produzido geralmente não é [totalmente qualificado](~/_csharplang/spec/basic-concepts.md#fully-qualified-names).
+Como o exemplo anterior mostra, no caso de um tipo e um namespace, o nome produzido não é [totalmente qualificado](~/_csharplang/spec/basic-concepts.md#fully-qualified-names).
 
 No caso de [identificadores textuais](../tokens/verbatim.md), o `@` caractere não é a parte de um nome, como mostra o exemplo a seguir:
 
@@ -39,7 +39,7 @@ Uma `nameof` expressão está disponível no C# 6 e posterior.
 
 Para saber mais, confira a seção [Expressões nameof](~/_csharplang/spec/expressions.md#nameof-expressions) da [Especificação da linguagem C#](~/_csharplang/spec/introduction.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de C#](../index.md)
 - [Operadores e expressões C#](index.md)

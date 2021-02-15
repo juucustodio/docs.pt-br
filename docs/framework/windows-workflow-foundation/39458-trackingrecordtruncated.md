@@ -1,28 +1,32 @@
 ---
+description: 'Saiba mais sobre: 39458-TrackingRecordTruncated'
 title: 39458 - TrackingRecordTruncated
 ms.date: 03/30/2017
 ms.assetid: 5352f0eb-d571-454a-bab5-e2162888b218
-ms.openlocfilehash: 416feb4073b31178b016ae72c9cd85e15c4a68c3
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: bb9a46dc5bd9bc4f4709a740dd0e7ec47ca826e3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61774407"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631275"
 ---
 # <a name="39458---trackingrecordtruncated"></a>39458 - TrackingRecordTruncated
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
 |ID|39458|  
 |Palavras-chave|WFTracking|  
-|Nível|Aviso|  
+|Level|Aviso|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
+
  Indica que um registro de rastreamento foi truncado. Variáveis/anotações/dados do usuário serem removidos.  
   
 ## <a name="message"></a>Mensagem  
+
  Registro truncado %1 de rastreamento gravados para a sessão de ETW com provedor %2. Dados de variáveis/anotações/usuários foram removidos  
   
 ## <a name="details"></a>Detalhes  

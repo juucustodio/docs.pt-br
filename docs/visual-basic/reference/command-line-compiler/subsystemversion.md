@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-SubSystemVersion (Visual Basic)
 title: -subsystemversion
 ms.date: 03/13/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - -subsystemversion compiler option [Visual Basic]
 - subsystemversion compiler option [Visual Basic]
 ms.assetid: 08be22b2-f447-4cd3-8203-120b1b920b54
-ms.openlocfilehash: 09ddc4bb735b645e09d34198c66dff78183592bf
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 7f15d0257d65c0883d3028b20515e29caf25be9b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403077"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100456400"
 ---
 # <a name="-subsystemversion-visual-basic"></a>-SubSystemVersion (Visual Basic)
 
@@ -43,9 +44,9 @@ A seguinte tabela lista as versões de subsistema comuns do Windows.
 |Windows 2000|5.00|
 |Windows XP|5,01|
 |Windows Server 2003|5,02|
-|Windows Vista|6.00|
+|Windows Vista|6,00|
 |Windows 7|6.01|
-|Windows Server 2008|6.01|
+|Windows Server 2008|6.01|
 |Windows 8|6.02|
 
 ## <a name="default-values"></a>Valores padrão
@@ -68,7 +69,7 @@ O valor padrão da opção do compilador **-subsystemversion** depende das condi
 
 Para definir a opção de compilador **-SubSystemVersion** no Visual Studio, você deve abrir o arquivo. vbproj e especificar um valor para a `SubsystemVersion` propriedade no XML do MSBuild. Você não pode definir essa opção no IDE do Visual Studio. Para obter mais informações, consulte "Valores padrão" no início deste tópico ou [Propriedades de projeto comuns do MSBuild](/visualstudio/msbuild/common-msbuild-project-properties).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Compilador de linha de comando do Visual Basic](index.md)
 

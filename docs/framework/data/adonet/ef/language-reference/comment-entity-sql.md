@@ -1,16 +1,18 @@
 ---
+description: Saiba mais sobre:--(comentário) (Entity SQL)
 title: -- (Comentário) (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: 5d9de735-2099-47f1-b7e7-60856f494924
-ms.openlocfilehash: 43b8cdbf5dbca8822645c27711f6984b8d741ea7
-ms.sourcegitcommit: ad800f019ac976cb669e635fb0ea49db740e6890
+ms.openlocfilehash: 793649177d9e64bead7b8755f35bdb51f53f4dd8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73040280"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724967"
 ---
 # <a name="---comment-entity-sql"></a>-- (Comentário) (Entity SQL)
-[!INCLUDE[esql](../../../../../../includes/esql-md.md)] consultas podem conter comentários. Dois traços (`--`) início de uma linha de comentário.  
+
+[!INCLUDE[esql](../../../../../../includes/esql-md.md)] as consultas podem conter comentários. Dois traços (`--`) início de uma linha de comentário.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -18,11 +20,13 @@ ms.locfileid: "73040280"
 -- text_of_comment  
 ```  
   
-## <a name="arguments"></a>Arguments  
+## <a name="arguments"></a>Argumentos  
+
  `text_of_comment`  
- É a cadeia de caracteres que contém o texto de comentário.  
+ É a cadeia de caracteres que contém o texto do comentário.  
   
 ## <a name="example"></a>Exemplo  
+
  A seguinte consulta SQL Entity demonstra como usar comentários. A consulta é baseada no modelo de vendas AdventureWorks. Para compilar e executar essa consulta, siga estas etapas:  
   
 1. Siga o procedimento em [como executar uma consulta que retorna resultados de estruturaistype](../how-to-execute-a-query-that-returns-structuraltype-results.md).  
@@ -33,5 +37,5 @@ ms.locfileid: "73040280"
   
 ## <a name="see-also"></a>Consulte também
 
-- [Visão geral do Entity SQL](entity-sql-overview.md)
+- [Visão geral da Entity SQL](entity-sql-overview.md)
 - [Referência de Entity SQL](entity-sql-reference.md)

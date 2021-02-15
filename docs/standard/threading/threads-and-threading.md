@@ -2,18 +2,17 @@
 title: Threads e threading
 description: Saiba mais sobre Threading, como processos & threads, quando usar vários threads, & como usar multithread para aumentar a capacidade de resposta ou a taxa de transferência no .NET.
 ms.date: 11/08/2018
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - multiple threads
 - threading [.NET]
 - threading [.NET], multiple threads
 ms.assetid: 5baac3aa-e603-4fa6-9f89-0f2c1084e6b1
-ms.openlocfilehash: b332db80069e18d3b52cd03eef4995eaad3fda7b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 20550b597e27c75f00d16528871007988dd6b885
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84583395"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94819533"
 ---
 # <a name="threads-and-threading"></a>Threads e threading
 
@@ -24,7 +23,7 @@ O multithreading permite aumentar a capacidade de resposta do seu aplicativo e, 
 Um *processo* é um programa em execução. Um sistema operacional usa processos para separar os aplicativos que estão sendo executados. Um *thread* é a unidade básica para a qual um sistema operacional aloca tempo do processador. Cada thread tem uma [prioridade de agendamento](scheduling-threads.md) e mantém um conjunto de estruturas que o sistema usa para salvar o contexto do thread quando a execução do thread é colocada em pausa. O contexto de thread inclui todas as informações que o thread precisa para continuar a execução sem interrupções, incluindo o conjunto de registros de CPU e pilha do thread. Vários threads podem ser executados no contexto de um processo. Todos os threads de um processo compartilham seu espaço de endereço virtual. Um thread pode executar qualquer parte do código do programa, incluindo partes que estão sendo executadas no momento por outro thread.
 
 > [!NOTE]
-> O .NET Framework fornece uma maneira de isolar aplicativos em um processo com o uso de *domínios de aplicativo*. (Os domínios de aplicativo não estão disponíveis no .NET Core.) Para obter mais informações, consulte a seção [domínios e threads do aplicativo](../../framework/app-domains/application-domains.md#application-domains-and-threads) do artigo [domínios de aplicativo](../../framework/app-domains/application-domains.md) .
+> .NET Framework fornece uma maneira de isolar aplicativos em um processo com o uso de *domínios de aplicativo*. (Os domínios de aplicativo não estão disponíveis no .NET Core.) Para obter mais informações, consulte a seção [domínios e threads do aplicativo](../../framework/app-domains/application-domains.md#application-domains-and-threads) do artigo [domínios de aplicativo](../../framework/app-domains/application-domains.md) .
 
 Por padrão, um programa .NET é iniciado com um único thread, geralmente chamado de thread *primário*. No entanto, ele pode criar threads adicionais para executar código em paralelo ou simultaneamente com o thread primário. Esses threads costumam ser chamados de threads de *trabalho* .
 
@@ -38,7 +37,7 @@ Se o programa realiza operações que podem ser executadas em paralelo, o tempo 
 
 ## <a name="how-to-use-multithreading-in-net"></a>Como usar multithreading em .NET
 
-Começando com o .NET Framework 4, a maneira recomendada para utilizar o multithreading é usar [TPL (biblioteca de paralelismo de tarefas)](../parallel-programming/task-parallel-library-tpl.md) e [PLINQ (Parallel LINQ)](../parallel-programming/introduction-to-plinq.md). Para obter mais informações, veja [Programação paralela](../parallel-programming/index.md).
+A partir do .NET Framework 4, a maneira recomendada de utilizar multithreading é usar a [TPL (biblioteca paralela de tarefas)](../parallel-programming/task-parallel-library-tpl.md) e o [Parallel LINQ (PLINQ)](../parallel-programming/introduction-to-plinq.md). Para obter mais informações, veja [Programação paralela](../parallel-programming/index.md).
 
 Tanto TPL quanto PLINQ contam com os threads <xref:System.Threading.ThreadPool>. A classe <xref:System.Threading.ThreadPool?displayProperty=nameWithType> fornece um pool de threads de trabalho a um aplicativo .NET. Você também pode usar threads de pool de threads. Para obter mais informações, veja [O pool de threads gerenciados](the-managed-thread-pool.md).
 
@@ -48,9 +47,9 @@ Por fim, você pode usar a classe <xref:System.Threading.Thread?displayProperty=
 
 Não se esqueça de tratar as exceções nos threads. Exceções sem tratamento nos threads geralmente encerram o processo. Para obter mais informações, veja [Exceções em threads gerenciados](exceptions-in-managed-threads.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-- [Objetos e recursos de threading](threading-objects-and-features.md)
-- [Práticas recomendadas de threading gerenciado](managed-threading-best-practices.md)
+- [Objetos e recursos de Threading](threading-objects-and-features.md)
+- [Práticas recomendadas de Threading gerenciado](managed-threading-best-practices.md)
 - [Processamento paralelo, simultaneidade e programação assíncrona no .NET](../parallel-processing-and-concurrency.md)
 - [Sobre Processos e Threads](/windows/desktop/procthread/about-processes-and-threads)

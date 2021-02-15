@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função CorBindToCurrentRuntime'
 title: Função CorBindToCurrentRuntime
 ms.date: 03/30/2017
 api_name:
@@ -15,17 +16,18 @@ helpviewer_keywords:
 ms.assetid: 6105c13e-d9cd-44d2-a95a-924e042830c7
 topic_type:
 - apiref
-ms.openlocfilehash: 4c015d77deb4e6ed3d43074f2903e26b687de84f
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 7dd2ab7febf4b1f87265a670a1af5d54b1e1102e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84493559"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790107"
 ---
 # <a name="corbindtocurrentruntime-function"></a>Função CorBindToCurrentRuntime
+
 Carrega o Common Language Runtime (CLR) em um processo usando as informações de versão armazenadas em um arquivo XML. O formato do arquivo XML é modelado após o arquivo de configuração de aplicativo padrão. Para obter mais informações sobre arquivos de configuração, consulte [Esquema de arquivos de configuração](../../configure-apps/file-schema/index.md).  
   
- Essa função foi preterida no .NET Framework 4. Consulte [carregando o Common Language Runtime em um processo](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/01918c6x(v=vs.100)).  
+ Essa função foi preterida no .NET Framework 4. Consulte [carregando o Common Language Runtime em um processo](/previous-versions/dotnet/netframework-4.0/01918c6x(v=vs.100)).  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -39,6 +41,7 @@ HRESULT CorBindToCurrentRuntime (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pwszFileName`  
  no O nome de um arquivo de configuração de aplicativo que especifica a versão do CLR a ser carregada. Se o nome do arquivo não for totalmente qualificado, supõe-se que esteja no mesmo diretório que o executável que faz a chamada.  
   
@@ -56,15 +59,16 @@ HRESULT CorBindToCurrentRuntime (
  fora O ponteiro de interface retornado.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** MSCorEE. dll  
+ **Biblioteca:** MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Função CorBindToRuntime](corbindtoruntime-function.md)
 - [Função CorBindToRuntimeByCfg](corbindtoruntimebycfg-function.md)

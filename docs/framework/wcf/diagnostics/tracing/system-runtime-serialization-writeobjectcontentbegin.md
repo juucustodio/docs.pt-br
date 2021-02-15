@@ -1,22 +1,25 @@
 ---
+description: 'Saiba mais sobre: System. Runtime. Serialization. WriteObjectContentBegin'
 title: System.Runtime.Serialization.WriteObjectContentBegin
 ms.date: 03/30/2017
 ms.assetid: b89d8e09-f41b-44f5-8589-3aef97d6c437
-ms.openlocfilehash: eb352844a740b8640da29d31f4307080262a67d2
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 4075d64e70b851bacde748005e5029df63b534d7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84598522"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99654779"
 ---
 # <a name="systemruntimeserializationwriteobjectcontentbegin"></a>System.Runtime.Serialization.WriteObjectContentBegin
+
 System.Runtime.Serialization.WriteObjectContentBegin  
   
 ## <a name="description"></a>Descrição  
+
  Iniciando o WriteObjectContent.  
   
 ## <a name="see-also"></a>Consulte também
 
 - [Rastreamento](index.md)
 - [Utilizando o rastreamento para solucionar problemas em seu aplicativo](using-tracing-to-troubleshoot-your-application.md)
-- [Administração e diagnóstico](../index.md)
+- [Administração e diagnósticos](../index.md)

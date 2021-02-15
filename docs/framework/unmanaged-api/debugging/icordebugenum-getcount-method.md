@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugEnum:: GetCount'
 title: Método ICorDebugEnum::GetCount
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: d8a74304-1cb2-4977-a21d-e1af48c563ff
 topic_type:
 - apiref
-ms.openlocfilehash: 90ba690897abced2d4f6282eedef91712d8ceeca
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: 38fa85958ea0c6945a5575d12700701ed355891d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976337"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694546"
 ---
 # <a name="icordebugenumgetcount-method"></a>Método ICorDebugEnum::GetCount
+
 Obtém o número de itens na enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,10 +36,12 @@ HRESULT GetCount (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pcelt`  
  fora Um ponteiro para o número de itens na enumeração.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

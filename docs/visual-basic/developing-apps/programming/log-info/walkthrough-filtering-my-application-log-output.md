@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Walkthrough: filtrando minha saída. Application. log (Visual Basic)'
 title: filtrar a saída de My.Application.Log
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - My.Application.Log object, filtering output
 - application event logs, output filtering
 ms.assetid: 2c0a457a-38a4-49e1-934d-a51320b7b4ca
-ms.openlocfilehash: aa63e7d23641ad71b135f15236e29399a535784f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 0fa64bde27be17b1809e45bfe294e70c7dd33563
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84398247"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792252"
 ---
 # <a name="walkthrough-filtering-myapplicationlog-output-visual-basic"></a>Instruções passo a passo: filtrando a saída de My.Application.Log (Visual Basic)
 
@@ -138,7 +139,7 @@ Esta tabela explica a saída de log mostrada no exemplo anterior: com a configur
 9. Altere o valor do atributo `value` de volta para "Information".
 
     > [!NOTE]
-    > A configuração da opção `DefaultSwitch` controla apenas `My.Application.Log`. Ele não altera como as classes <xref:System.Diagnostics.Trace?displayProperty=nameWithType> e <xref:System.Diagnostics.Debug?displayProperty=nameWithType> do .NET Framework se comportam.
+    > A configuração da opção `DefaultSwitch` controla apenas `My.Application.Log`. Ele não altera a forma como o .NET <xref:System.Diagnostics.Trace?displayProperty=nameWithType> e as <xref:System.Diagnostics.Debug?displayProperty=nameWithType> classes se comportam.
 
 ## <a name="individual-filtering-for-myapplicationlog-listeners"></a>Filtragem individual de ouvintes de My.Application.Log
 
@@ -251,7 +252,7 @@ Este exemplo demonstra como configurar a filtragem para um novo ouvinte de depur
 
 Para obter mais informações sobre como alterar as configurações de log após a implantação, consulte [Trabalhando com logs de aplicativo](working-with-application-logs.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Passo a passo: determinar o local no qual My.Application.Log grava informações](walkthrough-determining-where-my-application-log-writes-information.md)
 - [Passo a passo: alterar o local no qual My.Application.Log grava informações](walkthrough-changing-where-my-application-log-writes-information.md)

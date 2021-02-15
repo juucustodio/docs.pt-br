@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração de COR_PRF_STATIC_TYPE'
 title: Enumeração COR_PRF_STATIC_TYPE
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 441d7809-5b65-41a5-ba64-2910a8008315
 topic_type:
 - apiref
-ms.openlocfilehash: 80d72aefc736054afcee152c55e941c0f8f3c6a8
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: b7171fe4e9c536d94109d46ae6cad9201a15bab9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500761"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789028"
 ---
 # <a name="cor_prf_static_type-enumeration"></a>Enumeração COR_PRF_STATIC_TYPE
+
 Indica se um campo é estático e, em caso positivo, a qualidade estática aplicada ao campo. Esses valores podem ser combinados usando-se a operação OR de bits para indicar que o campo tem várias qualidades estáticas diferentes.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -38,7 +40,7 @@ typedef enum {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`COR_PRF_FIELD_NOT_A_STATIC`|O campo não é estático.|  
 |`COR_PRF_FIELD_APP_DOMAIN_STATIC`|O campo é um domínio de aplicativo estático.|  
@@ -47,6 +49,7 @@ typedef enum {
 |`COR_PRF_FIELD_RVA_STATIC`|O campo é um endereço virtual relativo (RVA)-estático.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -55,6 +58,6 @@ typedef enum {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criando perfil de enumerações](profiling-enumerations.md)

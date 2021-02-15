@@ -1,15 +1,17 @@
 ---
-title: Como usar filtros
+description: 'Saiba mais sobre: como: usar filtros'
+title: 'Como: usar filtros'
 ms.date: 03/30/2017
 ms.assetid: f2c7255f-c376-460e-aa20-14071f1666e5
-ms.openlocfilehash: 434171138e75a0f4c336cd80cc2beb574b10001e
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 0218685cae6fe8dc4c1e36e51075d58b041ae7fd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84598886"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734315"
 ---
-# <a name="how-to-use-filters"></a>Como usar filtros
+# <a name="how-to-use-filters"></a>Como: usar filtros
+
 Este tópico descreve as etapas básicas necessárias para criar uma configuração de roteamento que usa vários filtros. Neste exemplo, as mensagens são roteadas para duas implementações de um serviço de calculadora, regularCalc e roundingCalc. Ambas as implementações dão suporte às mesmas operações; no entanto, um serviço arredonda todos os cálculos para o valor inteiro mais próximo antes de retornar. Um aplicativo cliente deve ser capaz de indicar se deve usar a versão de arredondamento do serviço; Se nenhuma preferência de serviço for expressa, a mensagem terá o balanceamento de carga entre os dois serviços. As operações expostas por ambos os serviços são:  
   
 - Adicionar  
@@ -226,6 +228,7 @@ Este tópico descreve as etapas básicas necessárias para criar uma configuraç
     ```  
   
 ## <a name="example"></a>Exemplo  
+
  A seguir está uma lista completa do arquivo de configuração.  
   
 ```xml  

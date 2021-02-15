@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugProcess:: GetObject'
 title: Método ICorDebugProcess::GetObject
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: df51f2bb-6d15-44a9-a48c-22db700a5766
 topic_type:
 - apiref
-ms.openlocfilehash: 63d445d6231ee579bbd635ee5b54bdbf5b339e59
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 55dcc8fe192ece8500810e3e5bb2a7a221280efe
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73128775"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746835"
 ---
 # <a name="icordebugprocessgetobject-method"></a>Método ICorDebugProcess::GetObject
+
 Esse método não foi implementado.  
   
 ## <a name="syntax"></a>Sintaxe  

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: daf09748e69e70ad982bcee14461b66579f3bb87
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: ab9431780422dfece5dcf8007d13e6d584f5118f
+ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85614305"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96477788"
 ---
 ### <a name="avoiding-endless-recursion-for-iworkflowinstancemanagementtransactedcancel-and-iworkflowinstancemanagementtransactedterminate"></a>Evitando a recursão infinita para IWorkflowInstanceManagement.TransactedCancel e IWorkflowInstanceManagement.TransactedTerminate
 
@@ -20,8 +20,8 @@ Se você estiver usando o AppFabric ou outro cliente <xref:System.ServiceModel.A
 
 Se o problema não ocorrer, não será necessário fazer isso.
 
-| Name    | Valor       |
+| Nome    | Valor       |
 |:--------|:------------|
-| Escopo   | Microsoft Edge        |
+| Escopo   | Edge        |
 | Versão | 4.7.2       |
-| Type    | Redirecionando |
+| Tipo    | Redirecionando |

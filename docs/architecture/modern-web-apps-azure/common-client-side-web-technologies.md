@@ -5,17 +5,17 @@ author: ardalis
 ms.author: wiwagn
 no-loc:
 - Blazor
-ms.date: 12/04/2019
-ms.openlocfilehash: e8ea035c491fad39d2932572255a19c7c1493418
-ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
+ms.date: 12/01/2020
+ms.openlocfilehash: 75c696d881ad0586b11cdbd264f3ff90ec3bce8d
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86174348"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98187958"
 ---
 # <a name="common-client-side-web-technologies"></a>Tecnologias da Web comuns do lado do cliente
 
-> "Os sites devem ter uma bela aparência em todo lugar."  
+> "Os sites devem ter uma bela aparência em todo lugar."
 > _- Paul Cookson_
 
 Os aplicativos ASP.NET Core são aplicativos Web e normalmente se baseiam em tecnologias da Web do lado do cliente como HTML, CSS e JavaScript. Ao separar o conteúdo da página (o HTML) de seu layout e estilo (o CSS) e seu comportamento (por meio do JavaScript), os aplicativos Web complexos podem aproveitar o princípio da Separação de Interesses. As alterações futuras na estrutura, no design ou no comportamento do aplicativo podem ser feitas com mais facilidade quando esses interesses não são entrelaçados.
@@ -23,7 +23,7 @@ Os aplicativos ASP.NET Core são aplicativos Web e normalmente se baseiam em tec
 Embora o HTML e o CSS sejam relativamente estáveis, o JavaScript, por meio das estruturas do aplicativo e dos utilitários com os quais os desenvolvedores trabalham para criar aplicativos baseados na Web, está evoluindo em uma velocidade vertiginosa. Este capítulo analisa algumas maneiras em que o JavaScript é usado por desenvolvedores da Web e fornece uma visão geral de alto nível das bibliotecas angulares e reajam do lado do cliente.
 
 > [!NOTE]
-> Blazorfornece uma alternativa para estruturas JavaScript para criar interfaces de usuário de cliente avançadas e interativas. O suporte do lado do cliente Blazor ainda está em versão prévia, portanto, por enquanto, está fora do escopo deste capítulo.
+> Blazor fornece uma alternativa para estruturas JavaScript para criar interfaces de usuário de cliente avançadas e interativas.
 
 ## <a name="html"></a>HTML
 
@@ -65,7 +65,7 @@ Você pode executar todas essas tarefas apenas com o JavaScript, mas muitas bibl
 
 Embora o antigo dos padrões de estrutura do JavaScript, o jQuery continua sendo uma biblioteca comumente usada para trabalhar com HTML/CSS e criar aplicativos que fazem chamadas AJAX para APIs da Web. No entanto, o jQuery opera no nível do DOM (Modelo de Objeto do Documento) do navegador e, por padrão, oferece apenas um modelo de imperativo, em vez de declarativo.
 
-Por exemplo, imagine que, se o valor da caixa de texto exceder 10, um elemento na página precisará ficar visível. No jQuery, isso normalmente será implementado com a escrita de um manipulador de eventos com um código que inspecionará o valor da caixa de texto e definirá a visibilidade do elemento de destino com base nesse valor. Essa é uma abordagem imperativa, baseada em código. Em vez disso, outra estrutura poderá usar a associação de dados para associar a visibilidade do elemento ao valor da caixa de texto de forma declarativa. Isso não exige nenhuma codificação, mas apenas a decoração dos elementos envolvidos com atributos de associação de dados. À medida que os comportamentos do lado do cliente crescem mais complexos, as abordagens de ligação de dados frequentemente resultam em soluções mais simples com menos código e complexidade condicional.
+Por exemplo, imagine que, se o valor da caixa de texto exceder 10, um elemento na página precisará ficar visível. No jQuery, essa funcionalidade normalmente seria implementada escrevendo um manipulador de eventos com código que inspecionaria o valor da caixa de texto e definisse a visibilidade do elemento de destino com base nesse valor. Esse processo é uma abordagem imperativa baseada em código. Em vez disso, outra estrutura poderá usar a associação de dados para associar a visibilidade do elemento ao valor da caixa de texto de forma declarativa. Essa abordagem não exigiria escrever nenhum código, mas, em vez disso, exige apenas decorar os elementos envolvidos nos atributos de vinculação de dados. À medida que os comportamentos do lado do cliente crescem mais complexos, as abordagens de ligação de dados frequentemente resultam em soluções mais simples com menos código e complexidade condicional.
 
 ### <a name="jquery-vs-a-spa-framework"></a>jQuery vs. uma estrutura de SPA
 
@@ -80,11 +80,11 @@ Por exemplo, imagine que, se o valor da caixa de texto exceder 10, um elemento n
 
 A maioria dos recursos que o jQuery não tem intrinsecamente pode ser adicionada com a adição de outras bibliotecas. No entanto, uma estrutura de SPA como o Angular fornece esses recursos de forma mais integrada, pois foi projetado com todos eles em mente, desde o início. Além disso, o jQuery é uma biblioteca imperativa, o que significa que você precisa chamar o jQuery Functions para fazer qualquer coisa com o jQuery. Grande parte do trabalho e da funcionalidade fornecida pelas estruturas de SPA pode ser feita de forma declarativa, sem a necessidade de codificação real.
 
-A associação de dados é um ótimo exemplo disso. No jQuery, normalmente só usa uma linha de código para obter o valor de um elemento DOM ou para definir um valor de elemento. No entanto, você precisa escrever esse código sempre que precisar alterar o valor do elemento e, às vezes, isso ocorrerá em várias funções em uma página. Outro exemplo comum é a visibilidade do elemento. No jQuery, pode haver muitos locais diferentes em que você escreveria código para controlar se determinados elementos estavam visíveis. Em cada um desses casos, ao usar a associação de dados, nenhuma codificação precisa ser feita. Você simplesmente associaria o valor ou a visibilidade dos elementos em questão a um *ViewModel* na página e as alterações feitas nesse ViewModel seriam refletidas automaticamente nos elementos associados.
+A vinculação de dados é um ótimo exemplo dessa funcionalidade. No jQuery, normalmente só usa uma linha de código para obter o valor de um elemento DOM ou para definir um valor de elemento. No entanto, você precisa escrever esse código sempre que precisar alterar o valor do elemento e, às vezes, isso ocorrerá em várias funções em uma página. Outro exemplo comum é a visibilidade do elemento. No jQuery, pode haver muitos locais diferentes em que você escreveria código para controlar se determinados elementos estavam visíveis. Em cada um desses casos, ao usar a associação de dados, nenhuma codificação precisa ser feita. Você simplesmente associaria o valor ou a visibilidade dos elementos em questão a um *ViewModel* na página e as alterações feitas nesse ViewModel seriam refletidas automaticamente nos elementos associados.
 
 ### <a name="angular-spas"></a>SPAs do Angular
 
-O angular permanece uma das estruturas JavaScript mais populares do mundo. Desde o angular 2, a equipe reconstruiu a estrutura do zero (usando [TypeScript](https://www.typescriptlang.org/)) e remarcava o nome do AngularJS original para simplesmente angular. Agora, há vários anos, o angular reprojetado continua a ser uma estrutura robusta para a criação de aplicativos de página única.
+O angular permanece uma das estruturas JavaScript mais populares do mundo. Desde o angular 2, a equipe reconstruiu a estrutura do zero (usando [TypeScript](https://www.typescriptlang.org/)) e remarcava o nome do AngularJS original para angular. Agora, há vários anos, o angular reprojetado continua a ser uma estrutura robusta para a criação de aplicativos de página única.
 
 Os aplicativos do Angular baseiam-se em componentes. Os componentes combinam modelos HTML com objetos especiais e controlam uma parte da página. Um componente simples da documentação do Angular é mostrado aqui:
 
@@ -105,7 +105,7 @@ Trabalhando com componentes e modelos, em vez de elementos DOM, os aplicativos d
 
 Você pode desenvolver aplicativos angulares usando uma CLI. Para começar o desenvolvimento local com o Angular (supondo que você já tenha instalado o GIT e o npm) basta clonar um repositório do GitHub e executar `npm install` e `npm start`. Além disso, o angular envia sua própria CLI, que pode criar projetos, adicionar arquivos e ajudar com tarefas de teste, agrupamento e implantação. Essa amigável de CLI torna o angular especialmente compatível com ASP.NET Core, que também oferece excelente suporte à CLI.
 
-A Microsoft desenvolveu um aplicativo de referência, o [eShopOnContainers](https://aka.ms/MicroservicesArchitecture), que inclui uma implementação SPA do Angular. Esse aplicativo inclui módulos do Angular para gerenciar a cesta de compras da loja online, carregar e exibir itens do catálogo e manipular a criação de ordens. Exiba e baixe o aplicativo de exemplo no [GitHub](https://github.com/dotnet-architecture/eShopOnContainers/tree/master/src/Web/WebSPA).
+A Microsoft desenvolveu um aplicativo de referência, o eShopOnContainers, que inclui uma implementação SPA do Angular. Esse aplicativo inclui módulos do Angular para gerenciar a cesta de compras da loja online, carregar e exibir itens do catálogo e manipular a criação de ordens. Exiba e baixe o aplicativo de exemplo no [GitHub](https://github.com/dotnet-architecture/eShopOnContainers/tree/master/src/Web/WebSPA).
 
 ### <a name="react"></a>React
 
@@ -129,7 +129,7 @@ Como o React não é uma estrutura completa, geralmente, você desejará ter out
 
 ### <a name="vue"></a>Vue
 
-Do seu guia de introdução, "Vue é uma estrutura progressiva para a criação de interfaces do usuário. Ao contrário de outras estruturas monolíticos, o Vue é projetado desde o início para ser populado incrementalmente. A biblioteca principal concentra-se apenas na camada de exibição e é fácil de pegar e integrar com outras bibliotecas ou projetos existentes. Por outro lado, o Vue é perfeitamente capaz de capacitar aplicativos de página única sofisticados quando usados em combinação com ferramentas modernas e bibliotecas de suporte. "
+Do seu guia de introdução, "Vue é uma estrutura progressiva para a criação de interfaces do usuário. Ao contrário de outras estruturas monolíticos, o Vue é projetado desde o início para ser populado incrementalmente. A biblioteca principal concentra-se apenas na camada de exibição e é fácil de pegar e integrar com outras bibliotecas ou projetos existentes. Por outro lado, o Vue é perfeitamente capaz de capacitar aplicativos de Single-Page sofisticados quando usados em combinação com ferramentas e bibliotecas de suporte modernas. "
 
 A introdução ao Vue simplesmente requer a inclusão de seu script em um arquivo HTML:
 
@@ -161,9 +161,19 @@ Isso é suficiente para renderizar "Olá Vue!" na página. No entanto, observe q
 
 É claro que isso só aborda a superfície do que o Vue é capaz de fazer. Ele ganhou uma grande popularidade nos últimos anos e tem uma ampla comunidade. Há uma [lista enorme e crescente de componentes de suporte e bibliotecas](https://github.com/vuejs/awesome-vue#redux) que funcionam com o Vue para estendê-lo também. Se você pretende adicionar o comportamento do lado do cliente ao seu aplicativo Web ou considerar a criação de um SPA completo, vale a pena investigar o Vue.
 
+### <a name="no-locblazor-webassembly"></a>Blazor Webassembly
+
+Ao contrário de outras estruturas JavaScript, `Blazor WebAssembly` o é uma estrutura de Spa (aplicativo de página única) para a criação de aplicativos Web do lado do cliente interativos com o .net. Blazor O Webassembly usa padrões abertos da Web sem plugins ou recompilando código em outras linguagens. Blazor O Webassembly funciona em todos os navegadores da Web modernos, incluindo navegadores móveis.
+
+A execução de código .NET dentro de navegadores da Web é possibilitada pelo Webassembly (abreviado `wasm` ). O WebAssembly é um formato de código de bytes compacto, otimizado para download rápido e máxima velocidade de execução. O WebAssembly é um padrão aberto da Web compatível com navegadores da Web sem plug-ins.
+
+O código Webassembly pode acessar a funcionalidade completa do navegador via JavaScript, chamada de interoperabilidade de JavaScript, geralmente reduzida para interoperabilidade de JavaScript ou de JS. O código .NET executado por meio da WebAssembly no navegador é executado na área restrita do JavaScript do navegador com as proteções que a área restrita oferece contra ações mal intencionadas no computador cliente.
+
+Para obter mais informações, consulte [introdução ao Blazor ASP.NET Core ](/aspnet/core/blazor/).
+
 ### <a name="choosing-a-spa-framework"></a>Escolhendo uma estrutura de SPA
 
-Ao considerar qual estrutura de JavaScript funcionará melhor para dar suporte ao SPA, tenha em mente as seguintes considerações:
+Ao considerar qual opção funcionará melhor para dar suporte ao seu SPA, tenha em mente as seguintes considerações:
 
 - Sua equipe está familiarizada com a estrutura e suas dependências (incluindo o TypeScript em alguns casos)?
 
@@ -177,7 +187,7 @@ Ao considerar qual estrutura de JavaScript funcionará melhor para dar suporte a
 
 - Quão ativa é sua equipe principal? Os problemas estão sendo resolvidos e novas versões são fornecidas regularmente?
 
-As estruturas de JavaScript continuam evoluindo em uma velocidade vertiginosa. Use as considerações listadas acima para ajudar a atenuar o risco de escolher uma estrutura da qual mais tarde você se arrependerá de ter uma dependência. Caso você seja particularmente avesso a riscos, considere uma estrutura que oferece suporte comercial e/ou que está sendo desenvolvida por uma empresa grande.
+As estruturas continuam a evoluir com a velocidade de batalhas. Use as considerações listadas acima para ajudar a atenuar o risco de escolher uma estrutura da qual mais tarde você se arrependerá de ter uma dependência. Caso você seja particularmente avesso a riscos, considere uma estrutura que oferece suporte comercial e/ou que está sendo desenvolvida por uma empresa grande.
 
 > ### <a name="references--client-web-technologies"></a>Referências – Tecnologias da Web do cliente
 >
@@ -201,7 +211,7 @@ As estruturas de JavaScript continuam evoluindo em uma velocidade vertiginosa. U
 > <https://vuejs.org/>
 > - **Angular versus reagir vs Vue: qual estrutura escolher em 2020**
 > <https://www.codeinwp.com/blog/angular-vs-vue-vs-react/>
-> - **As principais estruturas de JavaScript para desenvolvimento de front-end no 2020**  
+> - **As principais estruturas de JavaScript para desenvolvimento Front-End em 2020**  
 > <https://www.freecodecamp.org/news/complete-guide-for-front-end-developers-javascript-frameworks-2019/>
 
 >[!div class="step-by-step"]

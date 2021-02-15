@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: f75a652f15be6b0d184db20dc5cd8aafd80539fe
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: c64431fd651fd7d53fb46231c6acc10c5cb43fff
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85614312"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90606907"
 ---
 ### <a name="winforms-domain-upbutton-and-downbutton-actions-are-in-sync-now"></a>As ações de upbutton e downbutton de domínio do WinForm agora estão sincronizadas
 
@@ -17,7 +17,7 @@ No .NET Framework 4.7.1 e nas versões anteriores, a ação <xref:System.Windows
 Para que o aplicativo se beneficie dessas alterações, ele deverá ser executado no .NET Framework 4.7.2 ou posterior. O aplicativo pode se beneficiar dessas alterações de uma das seguintes maneiras:
 
 - Ser recompilado para ser direcionado ao .NET Framework 4.7.2. Essa alteração é habilitada por padrão nos aplicativos do Windows Forms direcionados ao .NET Framework 4.7.2 ou posterior.
-- Recusar o comportamento de rolagem herdado adicionando a seguinte [Opção de AppContext](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element) à seção `<runtime>` do arquivo de configuração de aplicativo e configurando-a como `false`, como mostra o exemplo a seguir.
+- Recusar o comportamento de rolagem herdado adicionando a seguinte [Opção de AppContext](../../../../docs/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) à seção `<runtime>` do arquivo de configuração de aplicativo e configurando-a como `false`, como mostra o exemplo a seguir.
 
 <pre><code class="lang-xml">&lt;runtime&gt;&#13;&#10;&lt;AppContextSwitchOverrides value=&quot;Switch.System.Windows.Forms.DomainUpDown.UseLegacyScrolling=false&quot;/&gt;&#13;&#10;&lt;/runtime&gt;&#13;&#10;</code></pre>
 
@@ -25,7 +25,7 @@ Para que o aplicativo se beneficie dessas alterações, ele deverá ser executad
 |:--------|:------------|
 | Escopo   | Microsoft Edge        |
 | Versão | 4.7.2       |
-| Type    | Redirecionando |
+| Tipo    | Redirecionando |
 
 #### <a name="affected-apis"></a>APIs afetadas
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - interop marshaling
 - interop marshaling, about interop marshaling
 ms.assetid: 115f7a2f-d422-4605-ab36-13a8dd28142a
-ms.openlocfilehash: ca733d59abc4ca3d9d470b054ee9e34b5084ae38
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: bd618714a9bd27bc309b7933b656de6bd139cfe7
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85618968"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90554886"
 ---
 # <a name="interop-marshaling"></a>Realizando marshaling de interoperabilidade
 
@@ -79,7 +79,7 @@ Para realizar marshaling entre apartments, você pode fazer o seguinte:
     > [!NOTE]
     > Depois que o thread de um cliente C# for definido para STA, chamadas para componentes COM MTA exigirão marshaling entre apartments.
 
-Para obter instruções sobre como selecionar explicitamente um modelo de apartment, consulte [Threading gerenciado e não gerenciado](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5s8ee185(v=vs.100)).
+Para obter instruções sobre como selecionar explicitamente um modelo de apartment, consulte [Threading gerenciado e não gerenciado](/previous-versions/dotnet/netframework-4.0/5s8ee185(v=vs.100)).
 
 ## <a name="marshaling-remote-calls"></a>Marshaling de chamadas remotas
 
@@ -116,19 +116,19 @@ O runtime também fornece comunicação remota gerenciada, que pode ser usada pa
 
 Algumas chamadas não gerenciadas podem ser canalizadas por SOAP, assim como as chamadas entre os componentes de serviço e o COM.
 
-## <a name="related-topics"></a>Tópicos Relacionados
+## <a name="related-topics"></a>Tópicos relacionados
 
-|Title|Descrição|
+|Título|Descrição|
 |-----------|-----------------|
 |[Comportamento de marshaling padrão](default-marshaling-behavior.md)|Descreve as regras que o serviço de marshaling de interoperabilidade usa para realizar marshaling de dados.|
 |[Marshaling de dados com invocação de plataforma](marshaling-data-with-platform-invoke.md)|Descreve como declarar parâmetros de método e passar argumentos para funções exportadas por bibliotecas não gerenciadas.|
 |[Realizando marshaling em dados com interoperabilidade COM](marshaling-data-with-com-interop.md)|Descreve como personalizar os wrappers COM para alterar o comportamento de marshaling.|
 |[Como: Migrar código DCOM gerenciado para o WCF](how-to-migrate-managed-code-dcom-to-wcf.md)|Descreve como migrar do DCOM para o WCF.|
 |[Como: Mapear HRESULTs e exceções](how-to-map-hresults-and-exceptions.md)|Descreve como mapear exceções personalizadas para HRESULTs e fornece o mapeamento completo de cada HRESULT para a respectiva classe de exceção comparável no .NET Framework.|
-|[Interoperação usando tipos genéricos](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms229590(v=vs.100))|Descreve quais ações têm suporte ao usar tipos genéricos para interoperabilidade COM.|
+|[Interoperação usando tipos genéricos](/previous-versions/dotnet/netframework-4.0/ms229590(v=vs.100))|Descreve quais ações têm suporte ao usar tipos genéricos para interoperabilidade COM.|
 |[Interoperação com código não gerenciado](index.md)|Descreve os serviços de interoperabilidade fornecidos pelo Common Language Runtime.|
-|[Interoperabilidade COM avançada](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx(v=vs.100))|Fornece links para obter mais informações sobre como incorporar componentes COM no aplicativo do .NET Framework.|
-|[Considerações sobre design para interoperação](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/61aax4kh(v=vs.100))|Fornece dicas para escrever componentes COM integrados.|
+|[Interoperabilidade COM avançada](/previous-versions/dotnet/netframework-4.0/bd9cdfyx(v=vs.100))|Fornece links para obter mais informações sobre como incorporar componentes COM no aplicativo do .NET Framework.|
+|[Considerações sobre design para interoperação](/previous-versions/dotnet/netframework-4.0/61aax4kh(v=vs.100))|Fornece dicas para escrever componentes COM integrados.|
 
 ## <a name="reference"></a>Referência
 

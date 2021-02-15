@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IAssemblyName:: clone'
 title: Método IAssemblyName::Clone
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 7b345e08-5e16-4e3d-a044-4e19d0892943
 topic_type:
 - apiref
-ms.openlocfilehash: 1236a574a85c01e3e1be5df9644bd04bbf0753ea
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: b1d8ba2aec73565e9f6acaa44a5ef3731baa3af9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73134414"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760778"
 ---
 # <a name="iassemblynameclone-method"></a>Método IAssemblyName::Clone
+
 Cria uma cópia superficial deste objeto [IAssemblyName](iassemblyname-interface.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,15 +36,17 @@ HRESULT Clone (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pName`  
- fora A cópia retornada deste objeto de `IAssemblyName`.  
+ fora A cópia retornada deste `IAssemblyName` objeto.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Fusion. h  
   
- **Versões do .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>Consulte também
 

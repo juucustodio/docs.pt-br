@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorDebugExceptionCallbackType'
 title: Enumeração CorDebugExceptionCallbackType
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4d946ad4-3c19-42cb-bec9-8633325ba769
 topic_type:
 - apiref
-ms.openlocfilehash: d5cdb8c6740970f6a7469be8c763961bf76d6ecc
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: 41b9cdf707de017703ee3756b3d04a38163bb03b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795931"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801677"
 ---
 # <a name="cordebugexceptioncallbacktype-enumeration"></a>Enumeração CorDebugExceptionCallbackType
+
 Indica o tipo de retorno de chamada que é feito de um evento [ICorDebugManagedCallback2:: Exception](icordebugmanagedcallback2-exception-method.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,14 +39,15 @@ typedef enum CorDebugExceptionCallbackType {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`DEBUG_EXCEPTION_FIRST_CHANCE`|Uma exceção foi lançada.|  
 |`DEBUG_EXCEPTION_USER_FIRST_CHANCE`|O processo de windup de exceção inseriu o código do usuário.|  
-|`DEBUG_EXCEPTION_CATCH_HANDLER_FOUND`|O processo windup de exceção encontrou `catch` um bloco no código do usuário.|  
+|`DEBUG_EXCEPTION_CATCH_HANDLER_FOUND`|O processo windup de exceção encontrou um `catch` bloco no código do usuário.|  
 |`DEBUG_EXCEPTION_UNHANDLED`|A exceção não foi tratada.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

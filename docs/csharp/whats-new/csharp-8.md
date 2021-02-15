@@ -2,12 +2,12 @@
 title: O que há de novo no C# 8,0 – Guia C#
 description: Obtenha uma visão geral dos novos recursos disponíveis no C# 8.0.
 ms.date: 04/07/2020
-ms.openlocfilehash: eee395c33585028cd81861045f05f7790d8db949
-ms.sourcegitcommit: b1f4756120deaecb8b554477bb040620f69a4209
+ms.openlocfilehash: 1d6d33a36092ba685247f894375888da278b7e6e
+ms.sourcegitcommit: 98d20cb038669dca4a195eb39af37d22ea9d008e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89414884"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434805"
 ---
 # <a name="whats-new-in-c-80"></a>Novidades no C# 8.0
 
@@ -271,7 +271,6 @@ Uma **declaração using** é uma declaração de variável precedida pela palav
 static int WriteLinesToFile(IEnumerable<string> lines)
 {
     using var file = new System.IO.StreamWriter("WriteLines2.txt");
-    // Notice how we declare skippedLines after the using statement.
     int skippedLines = 0;
     foreach (string line in lines)
     {
@@ -295,11 +294,9 @@ No exemplo anterior, o arquivo é descartado quando a chave de fechamento do mé
 ```csharp
 static int WriteLinesToFile(IEnumerable<string> lines)
 {
-    // We must declare the variable outside of the using block
-    // so that it is in scope to be returned.
-    int skippedLines = 0;
     using (var file = new System.IO.StreamWriter("WriteLines2.txt"))
     {
+        int skippedLines = 0;
         foreach (string line in lines)
         {
             if (!line.Contains("Second"))
@@ -322,7 +319,7 @@ Em ambos os casos, o compilador gera a chamada para `Dispose()`. O compilador ge
 
 ## <a name="static-local-functions"></a>Funções locais estáticas
 
-Agora você pode adicionar o modificador `static` para funções locais a fim de garantir que essa função local não capture (faça referência) às variáveis no escopo delimitador. Isso gera `CS8421`, "Uma função local estática não pode conter uma referência a \<variable>".
+Agora você pode adicionar o `static` modificador a [funções locais](../programming-guide/classes-and-structs/local-functions.md) para garantir que a função local não Capture (referencie) nenhuma variável do escopo delimitador. Isso gera `CS8421`, "Uma função local estática não pode conter uma referência a \<variable>".
 
 Considere o código a seguir. A função local `LocalFunction` acessa a variável `y`, declarada no escopo delimitador (o método `M`). Portanto, `LocalFunction` não pode ser declarada com o modificador `static`:
 

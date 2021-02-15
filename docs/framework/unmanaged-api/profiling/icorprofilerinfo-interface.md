@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorProfilerInfo'
 title: Interface ICorProfilerInfo
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: eb4e4ce0-06e7-4469-bbc4-edc2eb5da4b1
 topic_type:
 - apiref
-ms.openlocfilehash: cc8ab6f0c8115da4d74280023dc692b66846ed94
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: d1da0f41a7c7358b7f71c8d931fff723b3144cdd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84497745"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99737370"
 ---
 # <a name="icorprofilerinfo-interface"></a>Interface ICorProfilerInfo
+
 Fornece métodos para uso por infilers de código para se comunicar com o Common Language Runtime (CLR) para controlar o monitoramento de eventos e informações de solicitação.  
   
 > [!NOTE]
@@ -66,6 +68,7 @@ Fornece métodos para uso por infilers de código para se comunicar com o Common
 |[Método SetILInstrumentedCodeMap](icorprofilerinfo-setilinstrumentedcodemap-method.md)|Especifica como os deslocamentos de um MSIL original da função especificada são mapeados para os novos deslocamentos do MSIL do criador de perfil da função.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Um criador de perfil chama um método na `ICorProfilerInfo` interface para se comunicar com o CLR para controlar as informações de solicitação e monitoramento de eventos.  
   
  Os métodos da `ICorProfilerInfo` interface são implementados pelo CLR usando o modelo de thread livre. Cada método retorna um HRESULT para indicar êxito ou falha. Consulte CorError. h para obter uma lista de possíveis códigos de retorno.  
@@ -73,6 +76,7 @@ Fornece métodos para uso por infilers de código para se comunicar com o Common
  O CLR passa, por meio da implementação do criador de perfil de [ICorProfilerCallback:: Initialize](icorprofilercallback-initialize-method.md), uma `ICorProfilerInfo` interface para cada criador de perfil de código durante a inicialização. Um criador de perfil de código pode então chamar métodos da `ICorProfilerInfo` interface para obter informações sobre o código gerenciado que está sendo executado sob o controle do CLR.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -81,7 +85,7 @@ Fornece métodos para uso por infilers de código para se comunicar com o Common
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criação de perfil de interfaces](profiling-interfaces.md)
 - [Interface ICorProfilerInfo2](icorprofilerinfo2-interface.md)

@@ -4,12 +4,12 @@ description: Este tutorial ensina vários recursos no .NET Core e da linguagem C
 ms.date: 03/06/2017
 ms.technology: csharp-fundamentals
 ms.assetid: 883cd93d-50ce-4144-b7c9-2df28d9c11a0
-ms.openlocfilehash: dbe64fe0a01ddab9e7a3ad0a9118b3fe59fba8aa
-ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
+ms.openlocfilehash: 4c32b08c3e7eeaedce687ea5bc572e6a7bee0d3e
+ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88656977"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91804888"
 ---
 # <a name="console-app"></a>Aplicativo de console
 
@@ -187,7 +187,7 @@ ShowTeleprompter().Wait();
 Aqui, em `Main`, o código aguarda de forma síncrona. Use o operador `await` em vez de esperar de forma síncrona sempre que possível. Mas, em um método de aplicativo de console `Main` , você não pode usar o `await` operador. Isso resultaria no encerramento do aplicativo antes da conclusão de todas as tarefas.
 
 > [!NOTE]
-> Caso use o C# 7.1 ou posterior, você poderá criar aplicativos de console com o método [`async` `Main`](../whats-new/csharp-7-1.md#async-main).
+> Caso use o C# 7.1 ou posterior, você poderá criar aplicativos de console com o método [`async` `Main`](../whats-new/csharp-7.md#async-main).
 
 Em seguida, você precisa escrever o segundo método assíncrono para ler no console e observar as chaves ' < ' (menor que), ' > ' (maior que) e ' X ' ou ' x '. Este é o método que você adiciona para essa tarefa:
 

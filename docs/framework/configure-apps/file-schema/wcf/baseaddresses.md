@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <baseAddresses>'
 title: <baseAddresses>
 ms.date: 03/30/2017
 ms.assetid: 78918102-2898-46e0-9ea8-6b8afe65603e
-ms.openlocfilehash: 9b3ed6b39f1743249925d5b6d9a47845c87983bc
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: a32afc23d4332bad149765a318c3ecdc73f99be0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70850214"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749682"
 ---
 # \<baseAddresses>
+
 Representa uma coleção de `baseAddress` elementos, que são endereços base para um host de serviço em um ambiente de hospedagem interna. Se um endereço base estiver presente, os pontos de extremidade poderão ser configurados com endereços relativos ao endereço base.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -19,7 +21,7 @@ Representa uma coleção de `baseAddress` elementos, que são endereços base pa
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<host>**](host.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<baseAddresses>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <baseAddresses>
@@ -27,13 +29,16 @@ Representa uma coleção de `baseAddress` elementos, que são endereços base pa
 </baseAddresses>
 ```  
   
-## <a name="type"></a>Type  
+## <a name="type"></a>Tipo  
+
  `Type`  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
+
  Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  
@@ -48,9 +53,9 @@ Representa uma coleção de `baseAddress` elementos, que são endereços base pa
 |-------------|-----------------|  
 |[\<host>](host.md)|Um elemento de configuração que especifica as configurações para um host de serviço.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.HostElement>
 - <xref:System.ServiceModel.ServiceHost>
 - <xref:System.ServiceModel.ServiceHostBase.BaseAddresses%2A>
-- [Hosting](../../../wcf/feature-details/hosting.md)
+- [Hospedagem](../../../wcf/feature-details/hosting.md)

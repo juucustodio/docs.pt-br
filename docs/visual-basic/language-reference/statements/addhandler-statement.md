@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instrução AddHandler'
 title: Instrução AddHandler
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,23 +9,25 @@ f1_keywords:
 helpviewer_keywords:
 - AddHandler statement [Visual Basic]
 ms.assetid: cfe69799-2a0f-42c0-a99e-09fed954da01
-ms.openlocfilehash: de995a13b34678410e2af74b59f2d0c467982b75
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c0c34abd7ff225765ab36278825a555e2b84b0d1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84408478"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99674097"
 ---
 # <a name="addhandler-statement"></a>Instrução AddHandler
+
 Associa um evento a um manipulador de eventos em tempo de execução.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 AddHandler event, AddressOf eventhandler  
 ```  
   
 ## <a name="parts"></a>Partes  
+
 |||
 |---|---|
 |event|O nome do evento a ser manipulado.|  
@@ -32,6 +35,7 @@ AddHandler event, AddressOf eventhandler
 |||
   
 ## <a name="remarks"></a>Comentários  
+
  As `AddHandler` `RemoveHandler` instruções e permitem iniciar e parar a manipulação de eventos a qualquer momento durante a execução do programa.  
   
  A assinatura do `eventhandler` procedimento deve corresponder à assinatura do evento `event` .  
@@ -42,9 +46,10 @@ AddHandler event, AddressOf eventhandler
 > Para eventos personalizados, a `AddHandler` instrução invoca o `AddHandler` acessador do evento. Para obter mais informações sobre eventos personalizados, consulte [Event Statement](event-statement.md).  
   
 ## <a name="example"></a>Exemplo  
+
  [!code-vb[VbVbalrEvents#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#17)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instrução RemoveHandler](removehandler-statement.md)
 - [Alças](handles-clause.md)

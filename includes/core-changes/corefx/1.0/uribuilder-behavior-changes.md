@@ -1,20 +1,20 @@
 ---
 ms.openlocfilehash: b3cc04d5675ea63a0a6b967e293da8a1bd79830d
-ms.sourcegitcommit: d7666f6e49c57a769612602ea7857b927294ce47
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "82595670"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96031954"
 ---
 ### <a name="uribuilder-properties-no-longer-prepend-leading-characters"></a>As propriedades UriBuilder não precedem mais os caracteres à esquerda
 
-<xref:System.UriBuilder.Fragment?displayProperty=nameWithType>Não precede mais um caractere à `#` esquerda e <xref:System.UriBuilder.Query?displayProperty=nameWithType> não precede mais um caractere à `?` esquerda quando já existe um.
+<xref:System.UriBuilder.Fragment?displayProperty=nameWithType> Não precede mais um caractere à esquerda `#` e <xref:System.UriBuilder.Query?displayProperty=nameWithType> não precede mais um caractere à esquerda `?` quando já existe um.
 
-#### <a name="change-description"></a>Descrição da alteração
+#### <a name="change-description"></a>Descrição das alterações
 
-Em .NET Framework, as <xref:System.UriBuilder.Fragment?displayProperty=nameWithType> propriedades <xref:System.UriBuilder.Query?displayProperty=nameWithType> e sempre `#` precedem `?` um caractere ou, respectivamente, ao valor que está sendo armazenado. Esse comportamento pode resultar em vários `#` caracteres `?` ou no valor armazenado se a cadeia de caracteres já contiver um desses caracteres à esquerda. Por exemplo, o valor de <xref:System.UriBuilder.Fragment?displayProperty=nameWithType> pode se `##main`tornar.
+Em .NET Framework, as <xref:System.UriBuilder.Fragment?displayProperty=nameWithType> <xref:System.UriBuilder.Query?displayProperty=nameWithType> Propriedades e sempre precedem um `#` `?` caractere ou, respectivamente, ao valor que está sendo armazenado. Esse comportamento pode resultar em vários `#` `?` caracteres ou no valor armazenado se a cadeia de caracteres já contiver um desses caracteres à esquerda. Por exemplo, o valor de <xref:System.UriBuilder.Fragment?displayProperty=nameWithType> pode se tornar `##main` .
 
-A partir do .NET Core 1,0, essas propriedades não precedem mais os `#` caracteres ou `?` ao valor armazenado, se já houver um presente no início da cadeia de caracteres.
+A partir do .NET Core 1,0, essas propriedades não precedem mais os `#` `?` caracteres ou ao valor armazenado, se já houver um presente no início da cadeia de caracteres.
 
 #### <a name="version-introduced"></a>Versão introduzida
 
@@ -36,8 +36,8 @@ builder.Query += "&four=4";
 Console.WriteLine(builder.Query);
 ```
 
-- Em .NET Framework, a saída é `????one=1&two=2&three=3&four=4`.
-- No .NET Core, a saída é `?one=1&two=2&three=3&four=4`.
+- Em .NET Framework, a saída é `????one=1&two=2&three=3&four=4` .
+- No .NET Core, a saída é `?one=1&two=2&three=3&four=4` .
 
 #### <a name="category"></a>Categoria
 

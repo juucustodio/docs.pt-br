@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorDebugMDAFlags'
 title: Enumeração CorDebugMDAFlags
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7c0c92fe-8bd2-477f-b307-aca0143732ca
 topic_type:
 - apiref
-ms.openlocfilehash: e024500ea66dcb42e712e07e976a709401160a27
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: d7e9178d76286b112035729e997b1f68e2a93fb3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795762"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661929"
 ---
 # <a name="cordebugmdaflags-enumeration"></a>Enumeração CorDebugMDAFlags
+
 Especifica o status do thread no qual o assistente de depuração gerenciada (MDA) é disparado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,14 +36,16 @@ typedef enum CorDebugMDAFlags {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`MDA_FLAG_SLIP`|O thread no qual o MDA foi acionado foi adiado desde que o MDA foi acionado.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Quando a pilha de chamadas não descreve mais onde o MDA foi gerado originalmente, o thread é considerado como tendo sido *adiado*. Essa é uma circunstância incomum apresentada pela execução do thread de uma operação inválida na saída.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

@@ -1,20 +1,19 @@
 ---
 title: Introdução ao PLINQ
-description: Saiba como fazer consultas em paralelo usando PLINQ no .NET. PLINQ significa consulta integrada de linguagem paralela (LINQ).
+description: Saiba como fazer consultas em paralelo usando PLINQ no .NET. PLINQ significa consulta de Language-Integrated paralela (LINQ).
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - PLINQ queries, introduction to
 ms.assetid: eaa720d8-8999-4eb7-8df5-3c19ca61cad0
-ms.openlocfilehash: 9dbc4fde3f72d01aee91978ed5cb0baf0895de26
-ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
+ms.openlocfilehash: 9a6401e8955c51ea72db3ca203365147b00db64f
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84662453"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94830643"
 ---
 # <a name="introduction-to-plinq"></a>Introdução ao PLINQ
 
@@ -109,7 +108,7 @@ A ilustração a seguir mostra a diferença entre `foreach` e <xref:System.Linq.
 
 ## <a name="cancellation"></a>Cancelamento
 
-A PLINQ é integrada aos tipos de cancelamento no .NET Framework 4. (Para obter mais informações, consulte [cancelamento em threads gerenciados](../threading/cancellation-in-managed-threads.md).) Portanto, diferentemente das consultas de LINQ to Objects sequenciais, as consultas PLINQ podem ser canceladas. Para criar uma consulta PLINQ anulável, use o operador <xref:System.Linq.ParallelEnumerable.WithCancellation%2A> na consulta e forneça uma instância <xref:System.Threading.CancellationToken> como argumento. Quando a propriedade <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> no token é definida como true, o PLINQ a observa, para o processamento de todos os threads e lança um <xref:System.OperationCanceledException>.
+O PLINQ é integrado com os tipos de cancelamento no .NET. (Para obter mais informações, consulte [cancelamento em threads gerenciados](../threading/cancellation-in-managed-threads.md).) Portanto, diferentemente das consultas de LINQ to Objects sequenciais, as consultas PLINQ podem ser canceladas. Para criar uma consulta PLINQ anulável, use o operador <xref:System.Linq.ParallelEnumerable.WithCancellation%2A> na consulta e forneça uma instância <xref:System.Threading.CancellationToken> como argumento. Quando a propriedade <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> no token é definida como true, o PLINQ a observa, para o processamento de todos os threads e lança um <xref:System.OperationCanceledException>.
 
 É possível que uma consulta PLINQ possa continuar a processar alguns elementos depois que o token de cancelamento é definido.
 

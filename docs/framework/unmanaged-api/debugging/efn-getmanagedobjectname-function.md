@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: _EFN_GetManagedObjectName função'
 title: Função _EFN_GetManagedObjectName
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 6e7c6bee-7ced-495f-bf6c-2a5f0c716f7e
 topic_type:
 - apiref
-ms.openlocfilehash: 708ac2e407bf6f87dbe314a0e87cdd16f45b2bcf
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: 4fa47848ace973f43acbcf8ab0322db4b974b205
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860750"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637885"
 ---
-# <a name="_efn_getmanagedobjectname-function"></a>\_Função\_EFN GetManagedObjectName
+# <a name="_efn_getmanagedobjectname-function"></a>\_\_Função EFN GetManagedObjectName
+
 Obtém o nome de um tipo usando o ponteiro de objeto gerenciado fornecido.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT _EFN_GetManagedObjectName(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `Client`  
  no Um ponteiro para o cliente de depuração.  
   
@@ -49,15 +52,17 @@ HRESULT _EFN_GetManagedObjectName(
  fora O número de caracteres disponíveis no buffer de cadeia de caracteres.  
   
 ## <a name="remarks"></a>Comentários  
+
  Se não houver nenhum código gerenciado no thread atualmente no contexto, a função retornará HRESULT SOS_E_NOMANAGEDCODE com um valor de recurso de 0XA0 e um código de erro de 0x1000.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** SOS_Stacktrace. h  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando funções estáticas globais](debugging-global-static-functions.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IAssemblyEnum:: Reset'
 title: Método IAssemblyEnum::Reset
 ms.date: 03/30/2017
 api_name:
@@ -15,17 +16,18 @@ helpviewer_keywords:
 ms.assetid: e08308d2-7397-4616-b7a6-f81b7686fed6
 topic_type:
 - apiref
-ms.openlocfilehash: 528a385657721298772693809dd696531c6a4e8f
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: ae649392b1ebdf88f3d144260386a5676a86cd73
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73134397"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760791"
 ---
 # <a name="iassemblyenumreset-method"></a>Método IAssemblyEnum::Reset
+
 Redefine este objeto [IAssemblyEnum](iassemblyenum-interface.md) para sua posição inicial.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT Reset (  
@@ -34,11 +36,12 @@ HRESULT Reset (
 ```  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Fusion. h  
   
- **Versões do .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>Consulte também
 

@@ -2,19 +2,18 @@
 title: Segurança e entrada do usuário
 description: Seu código pode passar dados inseridos pelo usuário como parâmetros para outro código, o que pode afetar a segurança. Você pode fazer a verificação de intervalo para rejeitar a entrada problemática.
 ms.date: 07/15/2020
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - security [.NET], user input
 - user input, security
 - secure coding, user input
 - code security, user input
 ms.assetid: 9141076a-96c9-4b01-93de-366bb1d858bc
-ms.openlocfilehash: e46bf8e653567637b4e6236849981fdb32df447c
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: e476db90dd1fd579f4ecfe3f2088cc76c955b9c0
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87555936"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94824051"
 ---
 # <a name="security-and-user-input"></a>Segurança e entrada do usuário
 

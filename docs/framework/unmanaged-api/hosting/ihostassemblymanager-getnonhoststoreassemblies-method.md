@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostAssemblyManager:: GetNonHostStoreAssemblies'
 title: Método IHostAssemblyManager::GetNonHostStoreAssemblies
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: d2250b38-c76a-40ce-80c8-ba45149886e8
 topic_type:
 - apiref
-ms.openlocfilehash: 9a1440be7011130b16d7112ae15026eb74856190
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: ef551db45428b2381dfeae8f722257241a4deaf0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84501581"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99709042"
 ---
 # <a name="ihostassemblymanagergetnonhoststoreassemblies-method"></a>Método IHostAssemblyManager::GetNonHostStoreAssemblies
+
 Obtém um ponteiro de interface para um [ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md) que representa a lista de assemblies que o host espera que o Common Language Runtime (CLR) carregue.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,14 +36,15 @@ HRESULT GetNonHostStoreAssemblies (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ppReferenceList`  
  fora Um ponteiro para o endereço de um `ICLRAssemblyReferenceList` que contém uma lista de referências a assemblies que o host espera que o CLR carregue.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
-|S_OK|`GetNonHostStoreAssemblies`retornado com êxito.|  
+|S_OK|`GetNonHostStoreAssemblies` retornado com êxito.|  
 |HOST_E_CLRNOTAVAILABLE|O CLR não foi carregado em um processo ou o CLR está em um estado no qual não pode executar código gerenciado ou processar a chamada com êxito.|  
 |HOST_E_TIMEOUT|A chamada atingiu o tempo limite.|  
 |HOST_E_NOT_OWNER|O chamador não possui o bloqueio.|  
@@ -50,6 +53,7 @@ HRESULT GetNonHostStoreAssemblies (
 |E_OUTOFMEMORY|Não havia memória suficiente disponível para criar a lista de referências para o solicitado `ICLRAssemblyReferenceList` .|  
   
 ## <a name="remarks"></a>Comentários  
+
  O CLR resolve referências usando o seguinte conjunto de diretrizes:  
   
 - Primeiro, ele consulta a lista de referências de assembly retornada por `GetNonHostStoreAssemblies` .  
@@ -66,15 +70,16 @@ HRESULT GetNonHostStoreAssemblies (
 > Na inicialização, o CLR chama `GetNonHostStoreAssemblies` apenas uma vez. O método não é chamado novamente.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md)
 - [Interface IHostAssemblyManager](ihostassemblymanager-interface.md)

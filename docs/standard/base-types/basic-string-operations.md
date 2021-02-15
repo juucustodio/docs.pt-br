@@ -2,18 +2,18 @@
 title: Operações básicas de cadeias de caracteres no .NET
 description: Saiba mais sobre as operações básicas que você pode executar em cadeias de caracteres.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
+ms.topic: conceptual
 helpviewer_keywords:
-- strings [.NET Framework], basic string operations
+- strings [.NET], basic string operations
 - custom strings
 ms.assetid: 8133d357-90b5-4b62-9927-43323d99b6b6
 ms.custom: seadec18
-ms.openlocfilehash: 8c19f6bcbdf5e4829c91aee1e2fd631537ed2e0a
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 92cdba893bee3d4c3e14c73fbf35bdd46da998fb
+ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84277746"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98692905"
 ---
 # <a name="basic-string-operations-in-net"></a>Operações básicas de cadeia de caracteres no .NET
 
@@ -24,7 +24,7 @@ Vários métodos nas classes <xref:System.String?displayProperty=nameWithType> e
 ## <a name="related-sections"></a>Seções relacionadas
 
 [Conversão de tipo no .NET](type-conversion.md)\
-Descreve como converter de um tipo para outro.  
+Descreve como converter de um tipo para outro.
 
 [Tipos de formatação](formatting-types.md)\
 Descreve como formatar cadeias de caracteres usando especificadores de formato.

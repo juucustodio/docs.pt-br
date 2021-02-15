@@ -1,23 +1,26 @@
 ---
+description: 'Saiba mais sobre: sondagem em aplicativos de console'
 title: Sondagem em aplicativos de console
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 4ff084d5-5956-4db1-8e18-c5a66b000882
-ms.openlocfilehash: 0cefca33bde94855a2bb20a6404dfd4e75a954c2
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: be67132b80716079bb4694d1c7b8eb44b6c4d4a8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79174518"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767629"
 ---
 # <a name="polling-in-console-applications"></a>Sondagem em aplicativos de console
+
 As operações assíncronas no ADO.NET permitem que você inicie operações de banco de dados demoradas em um thread durante a execução de outras tarefas em outro thread. No entanto, na maioria dos cenários, você eventualmente chegará a um ponto em que o aplicativo não continuará até que a operação do banco de dados seja concluída. Para esses casos, é útil sondar a operação assíncrona para determinar se a operação foi concluída ou não.  
   
  Você pode usar a propriedade <xref:System.IAsyncResult.IsCompleted%2A> para descobrir se a operação foi concluída ou não.  
   
 ## <a name="example"></a>Exemplo  
+
  O aplicativo de console a seguir atualiza os dados dentro do banco de dados de exemplo da **AdventureWorks**, fazendo seu trabalho de maneira assíncrona. Para emular um processo de execução demorada, este exemplo insere uma instrução WAITFOR no texto do comando. Normalmente, você não tentaria fazer com que os comandos fossem executados mais lentamente, mas fazer isso nesse caso torna mais fácil demonstrar o comportamento assíncrono.  
   
 ```vb  
@@ -190,7 +193,7 @@ class Class1
 }  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operações assíncronas](asynchronous-operations.md)
 - [Visão geral do ADO.NET](../ado-net-overview.md)

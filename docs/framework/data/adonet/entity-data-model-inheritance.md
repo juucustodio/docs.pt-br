@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: Modelo de Dados de Entidade: herança'
 title: 'Modelo de Dados de Entidade: Herança'
 ms.date: 03/30/2017
 ms.assetid: 42c7ef24-710a-4af9-8493-cd41c399ecb0
-ms.openlocfilehash: 4c4abc371000006d40ede3d904b0437f3f85e3e7
-ms.sourcegitcommit: 22be09204266253d45ece46f51cc6f080f2b3fd6
+ms.openlocfilehash: 69d05800f397c122243fbaa497c67634fa78d4b7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73738456"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672849"
 ---
 # <a name="entity-data-model-inheritance"></a>Modelo de Dados de Entidade: Herança
+
 O Modelo de Dados de Entidade (EDM) dá suporte à herança para [tipos de entidade](entity-type.md). Herança em EDM é semelhante à herança para classes em idiomas de programação orientada a objeto. Assim como acontece com classes em linguagens orientadas a objeto, em um modelo conceitual, você pode definir um tipo de entidade (um *tipo derivado*) que herda de outro tipo de entidade (o *tipo base*). No entanto, ao contrário das classes na programação orientada a objeto, em um modelo conceitual, o tipo derivado sempre herda todas as [Propriedades](property.md) e [Propriedades de navegação](navigation-property.md) do tipo base. Você não pode substituir propriedades herdadas em um tipo derivado.  
   
  Em um modelo conceitual você pode criar hierarquias de herança em que um tipo derivado herda de outro tipo derivado. O tipo na parte superior da hierarquia (aquele tipo na hierarquia que não é um tipo derivado) é chamado de *tipo raiz*. Em uma hierarquia de herança, a [chave de entidade](entity-key.md) deve ser definida no tipo de raiz.  
@@ -18,7 +20,7 @@ O Modelo de Dados de Entidade (EDM) dá suporte à herança para [tipos de entid
   
 ## <a name="example"></a>Exemplo  
 
-O diagrama a seguir mostra um modelo conceitual com quatro tipos de entidade: `Book`, `FictionBook`, `Publisher`e `Author`. O tipo de entidade de `FictionBook` é um tipo derivado, herdando do tipo de entidade de `Book` . O tipo de `FictionBook` herda `ISBN (Key)`, `Title`, e propriedades de `Revision` , e define uma propriedade chamada adicional `Genre`.  
+O diagrama a seguir mostra um modelo conceitual com quatro tipos de entidade: `Book` ,, `FictionBook` `Publisher` e `Author` . O tipo de entidade de `FictionBook` é um tipo derivado, herdando do tipo de entidade de `Book` . O tipo de `FictionBook` herda `ISBN (Key)`, `Title`, e propriedades de `Revision` , e define uma propriedade chamada adicional `Genre`.  
   
  ![Diagrama que mostra um modelo conceitual com quatro tipos de entidade.](./media/entity-data-model-inheritance/entity-type-inheritance.gif)  
   
@@ -28,5 +30,5 @@ O diagrama a seguir mostra um modelo conceitual com quatro tipos de entidade: `B
   
 ## <a name="see-also"></a>Consulte também
 
-- [Principais conceitos do Modelo de Dados de Entidade](entity-data-model-key-concepts.md)
+- [Conceitos chave do Modelo de Dados de Entidade](entity-data-model-key-concepts.md)
 - [Modelo de Dados de Entidade](entity-data-model.md)

@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como chamar um método de extensão (Visual Basic)'
 title: Como chamar um método de extensão
 ms.date: 07/20/2015
 helpviewer_keywords:
 - calling extension methods [Visual Basic]
 - extension methods [Visual Basic]
 ms.assetid: df07750f-40f4-4c07-a79e-1113a27cfbea
-ms.openlocfilehash: 54419c99ae08c9ca2e3cfa86993dc99bc02bbb64
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: ec5217526eb0cb28d172ab917df08a8bfe87fe95
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84388654"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100471377"
 ---
 # <a name="how-to-call-an-extension-method-visual-basic"></a>Como chamar um método de extensão (Visual Basic)
 
@@ -64,6 +65,7 @@ O método deve estar no escopo quando for chamado.
      O resultado desta vez é: `or not!!!` .
 
 ## <a name="example"></a>Exemplo
+
  O código a seguir é um exemplo completo da criação e uso de um método de extensão simples.
 
 ```vb
@@ -95,7 +97,7 @@ End Module
 ' Goodbye?
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como escrever um método de extensão](./how-to-write-an-extension-method.md)
 - [Métodos de Extensão](./extension-methods.md)

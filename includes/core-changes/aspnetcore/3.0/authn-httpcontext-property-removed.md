@@ -1,16 +1,16 @@
 ---
 ms.openlocfilehash: 60ebcd9fc9ca18c33d31b82ba5020426d22a7d5a
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75901921"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96032233"
 ---
 ### <a name="authentication-httpcontextauthentication-property-removed"></a>Autenticação: Propriedade HttpContext. Authentication removida
 
 A propriedade preterida `Authentication` em `HttpContext` foi removida.
 
-#### <a name="change-description"></a>Descrição da alteração
+#### <a name="change-description"></a>Descrição das alterações
 
 Como parte do [dotnet/aspnetcore # 6504](https://github.com/dotnet/aspnetcore/pull/6504), a propriedade preterida `Authentication` em `HttpContext` foi removida. A `Authentication` propriedade foi preterida desde 2,0. Um [Guia de migração](/aspnet/core/migration/1x-to-2x/identity-2x?view=aspnetcore-2.2#use-httpcontext-authentication-extensions) foi publicado para migrar o código usando essa propriedade preterida para as novas APIs de substituição. As classes/APIs não usadas restantes relacionadas à pilha de autenticação antiga ASP.NET Core 1. x foram removidas na confirmação [dotnet/aspnetcore@d7a7c65](https://github.com/dotnet/aspnetcore/commit/d7a7c65) .
 
@@ -18,7 +18,7 @@ Para obter uma discussão, consulte [dotnet/aspnetcore # 6533](https://github.co
 
 #### <a name="version-introduced"></a>Versão introduzida
 
-3,0
+3.0
 
 #### <a name="reason-for-change"></a>Motivo da alteração
 

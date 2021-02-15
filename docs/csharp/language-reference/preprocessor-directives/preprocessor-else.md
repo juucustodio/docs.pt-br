@@ -7,17 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - '#else directive [C#]'
 ms.assetid: 6a347322-cfa2-4a86-98f8-ddfa2cb7d4db
-ms.openlocfilehash: fb1a9f30a42c78b5c4c7323ec213ab8c20b9bb76
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: f0dc8c34672c3e9e5a2207211794fbc8099640c5
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89138170"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91168667"
 ---
 # <a name="else-c-reference"></a>#else (Referência de C#)
+
 `#else` permite que você crie uma diretiva condicional composta, para que, caso nenhuma das expressões nas diretivas anteriores [#if](./preprocessor-if.md) ou [#elif](./preprocessor-elif.md) (opcional) seja avaliada como `true`, o compilador avalie todo o código entre `#else` e o próximo `#endif`.  
   
 ## <a name="remarks"></a>Comentários  
+
  [#endif](./preprocessor-endif.md) deve ser a próxima diretiva de pré-processador após `#else`. Consulte [#if](./preprocessor-if.md) para obter um exemplo de como usar `#else`.  
   
 ## <a name="see-also"></a>Confira também

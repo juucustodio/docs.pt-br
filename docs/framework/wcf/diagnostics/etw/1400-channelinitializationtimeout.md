@@ -1,28 +1,32 @@
 ---
+description: 'Saiba mais sobre: 1400-ChannelInitializationTimeout'
 title: 1400 - ChannelInitializationTimeout
 ms.date: 03/30/2017
 ms.assetid: 95de02d3-7986-4bbc-934f-c9dc4a809682
-ms.openlocfilehash: 4a24d7769489cca6b6567e01e6dfa63b314fd586
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 85e53d0a4b1cad534ab23f8b1ab7c87b458c2a34
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61782337"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99645848"
 ---
 # <a name="1400---channelinitializationtimeout"></a>1400 - ChannelInitializationTimeout
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
-|ID|1400|  
+|ID|1.400|  
 |Palavras-chave|ServiceModel|  
-|Nível|Erro|  
+|Level|Erro do|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando a inicialização do canal atinge o tempo limite.  
+
+ Esse evento é emitido quando o tempo limite da inicialização do canal é atingido.  
   
 ## <a name="message"></a>Mensagem  
+
  1%  
   
 ## <a name="details"></a>Detalhes

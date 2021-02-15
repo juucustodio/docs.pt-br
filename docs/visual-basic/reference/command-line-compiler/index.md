@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Visual Basic compilador de linha de comando'
 title: Compilador de linha de comando
 ms.date: 02/20/2018
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - compiler options, Visual Basic
 - Visual Basic compiler, options
 ms.assetid: 6b57c444-50c7-4b88-8f59-ed65cff5e05c
-ms.openlocfilehash: 67606df833eeab17e878056d372a82ef95cdd24e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: a3deb0a4ef18158bb85d357ef6e2655d28b9c732
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84408582"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100470169"
 ---
 # <a name="visual-basic-command-line-compiler"></a>Compilador de linha de comando Visual Basic
 
@@ -31,4 +32,3 @@ Lista as opções de compilador em uma tabela alfabética
 
 [Opções de compilador do Visual Basic listadas por categoria](compiler-options-listed-by-category.md)  
 Apresenta opções de compilador in grupos funcionais.
-  

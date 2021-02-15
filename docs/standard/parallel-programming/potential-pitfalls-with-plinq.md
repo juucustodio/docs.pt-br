@@ -1,19 +1,19 @@
 ---
+description: 'Saiba mais sobre: possíveis armadilhas com PLINQ'
 title: Possíveis armadilhas com PLINQ
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - PLINQ queries, pitfalls
 ms.assetid: 75a38b55-4bc4-488a-87d5-89dbdbdc76a2
-ms.openlocfilehash: b4d58734fba4b834d5f5819a6bf19da0b7b7e8db
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 83952432c2491598474441cd3aee6a354543aa47
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84285307"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641558"
 ---
 # <a name="potential-pitfalls-with-plinq"></a>Possíveis armadilhas com PLINQ
 
@@ -62,7 +62,7 @@ a.AsParallel().Where(...).OrderBy(...).Select(...).ForAll(x => fs.Write(x));
 
 ## <a name="limit-calls-to-thread-safe-methods"></a>Limitar chamadas para métodos de thread-safe
 
-A maioria dos métodos estáticos no .NET Framework é thread-safe e pode ser chamada de vários threads simultaneamente. No entanto, mesmo nesses casos, a sincronização envolvida pode levar a uma desaceleração significativa na consulta.
+A maioria dos métodos estáticos no .NET são thread-safe e podem ser chamados de vários threads simultaneamente. No entanto, mesmo nesses casos, a sincronização envolvida pode levar a uma desaceleração significativa na consulta.
 
 > [!NOTE]
 > Você pode testar isso sozinho inserindo algumas chamadas para <xref:System.Console.WriteLine%2A> nas suas consultas. Embora esse método seja usado nos exemplos de documentação para fins de demonstração, não o use em consultas PLINQ.
@@ -121,6 +121,6 @@ Neste exemplo, uma iteração define um evento e todas as outras iterações agu
 
 Em particular, uma iteração de um loop paralelo nunca deve aguardar outra iteração do loop para progredir. Se o loop paralelo decidir agendar as iterações sequencialmente, mas em ordem oposta, ocorrerá um deadlock.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ paralelo (PLINQ)](introduction-to-plinq.md)

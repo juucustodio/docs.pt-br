@@ -1,28 +1,32 @@
 ---
+description: 'Saiba mais sobre: 3308-ClientBaseUsingLocalChannelFactory'
 title: 3308 - ClientBaseUsingLocalChannelFactory
 ms.date: 03/30/2017
 ms.assetid: f1488c75-38ab-47a0-9951-852488683f2a
-ms.openlocfilehash: fdf0bf0e2cbf7686408638063d3253cd10c06752
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 3072bac9e58d79196bc18a412487d050867cd892
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61595796"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99677373"
 ---
 # <a name="3308---clientbaseusinglocalchannelfactory"></a>3308 - ClientBaseUsingLocalChannelFactory
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
 |ID|3308|  
 |Palavras-chave|ServiceModel|  
-|Nível|Informações|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando não usando a fábrica de canais do cache.  
+
+ Esse evento é emitido quando não está usando a fábrica de canais do cache.  
   
 ## <a name="message"></a>Mensagem  
- Não usando a fábrica de canais do cache, ou seja, o cache desabilitado por exemplo.  
+
+ Não usar a fábrica de canais do cache, ou seja, o Caching desabilitado por exemplo.  
   
 ## <a name="details"></a>Detalhes

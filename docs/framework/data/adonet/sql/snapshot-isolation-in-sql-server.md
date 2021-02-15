@@ -6,17 +6,19 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 43ae5dd3-50f5-43a8-8d01-e37a61664176
-ms.openlocfilehash: 7fa769448dd922925a5eccf4c85bd1840155df68
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 4934c031eb9dfb26d60c5233937cbc65ca60d4f7
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286238"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91183072"
 ---
 # <a name="snapshot-isolation-in-sql-server"></a>Isolamento de instantâneo no SQL Server
+
 O isolamento de instantâneo aprimora a simultaneidade para aplicativos OLTP.  
   
 ## <a name="understanding-snapshot-isolation-and-row-versioning"></a>Entendendo o isolamento de instantâneo e o controle de versão de linha  
+
  Depois que o isolamento de instantâneo estiver habilitado, as versões de linha atualizadas para cada transação deverão ser mantidas.  Antes do SQL Server 2019, essas versões eram armazenadas em **tempdb**. SQL Server 2019 apresenta um novo recurso, a ADR (recuperação de banco de dados acelerada) que exige seu próprio conjunto de versões de linha.  Portanto, a partir de SQL Server 2019, se ADR não estiver habilitado, as versões de linha serão mantidas em **tempdb** como sempre.  Se ADR estiver habilitado, todas as versões de linha, relacionadas ao isolamento de instantâneo e ADR, serão mantidas no repositório de versão persistente do ADR (PVS), que está localizado no banco de dados do usuário em um grupo de arquivos que o usuário especifica. Um número de sequência de transação exclusivo identifica cada transação. Esses números exclusivos são registrados para cada versão de linha. A transação funciona com as versões de linha mais recentes que têm um número de sequência anterior ao número de sequência da transação. As versões de linha mais recentes criadas depois que a transação foi iniciada são ignoradas pela transação.  
   
  O termo "instantâneo" reflete o fato de que todas as consultas na transação veem a mesma versão (ou instantâneo) do banco de dados, com base no estado do banco de dados no momento em que a transação é iniciada. Nenhum bloqueio é adquirido nas linhas de dados subjacentes ou páginas de dados em uma transação de instantâneo, o que permite que outras transações sejam executadas sem serem bloqueadas por uma transação anterior não concluída. Transações que modificam dados não bloqueiam transações que leem dados e transações que leem dados não bloqueiam transações que gravam dados, como normalmente fariam no nível de isolamento READ COMMITTED padrão no SQL Server. Esse comportamento de não bloqueio também reduz consideravelmente a probabilidade de deadlocks para transações complexas.  
@@ -36,6 +38,7 @@ SET READ_COMMITTED_SNAPSHOT ON
  Configurar a opção READ_COMMITTED_SNAPSHOT ON permite o acesso a linhas com controle de versão no nível de isolamento READ COMMITTED padrão. Se a opção READ_COMMITTED_SNAPSHOT for definida como OFF, você precisará definir explicitamente o nível de isolamento do instantâneo para cada sessão a fim de acessar linhas com controle de versão.  
   
 ## <a name="managing-concurrency-with-isolation-levels"></a>Gerenciando simultaneidade com níveis de isolamento  
+
  O nível de isolamento sob o qual uma instrução Transact-SQL é executada determina o comportamento de bloqueio e de controle de versão de linha dessa instrução. Um nível de isolamento tem escopo que abrange toda a conexão e, uma vez definido para uma conexão com a instrução SET TRANSACTION ISOLATION LEVEL, ele permanece em vigor até que a conexão seja fechada ou outro nível de isolamento seja definido. Quando uma conexão é fechada e retornada ao pool, o nível de isolamento da última instrução SET TRANSACTION ISOLATION LEVEL é mantido. As conexões subsequentes reutilizando uma conexão em pool usam o nível de isolamento que estava em vigor no momento em que a conexão em questão foi colocada em pool.  
   
  As consultas individuais emitidas em uma conexão podem conter dicas de bloqueio que modificam o isolamento para uma só instrução ou transação, mas não afetam o nível de isolamento da conexão. Os níveis de isolamento ou as dicas de bloqueio definidas em procedimentos armazenados ou funções não alteram o nível de isolamento da conexão que os chama e estão em vigor apenas pela duração do procedimento armazenado ou da chamada de função.  
@@ -53,6 +56,7 @@ SET READ_COMMITTED_SNAPSHOT ON
  Para obter mais informações, confira o [Guia de controle de versão de linha e bloqueio de transação](/sql/relational-databases/sql-server-transaction-locking-and-row-versioning-guide).  
   
 ### <a name="snapshot-isolation-level-extensions"></a>Extensões de nível de isolamento de instantâneo  
+
  O SQL Server introduziu extensões nos níveis de isolamento SQL-92 com a introdução do nível de isolamento do SNAPSHOT e uma implementação adicional de READ COMMITTED. O nível de isolamento READ_COMMITTED_SNAPSHOT pode substituir READ COMMITTED de maneira transparente para todas as transações.  
   
 - O nível de isolamento SNAPSHOT especifica que dados lidos dentro de uma transação nunca refletirão alterações feitas por outras transações simultâneas. A transação usa as versões de linhas de dados que existem quando a transação é iniciada. Nenhum bloqueio é colocado nos dados quando eles são lidos, então transações com nível de isolamento SNAPSHOT não bloqueiam a gravação de dados por outras transações. Transações que gravam dados não impedem que transações snapshot leiam dados. Para poder usar o isolamento de instantâneo, você precisa habilitá-lo, configurando a opção de banco de dados ALLOW_SNAPSHOT_ISOLATION.  
@@ -60,6 +64,7 @@ SET READ_COMMITTED_SNAPSHOT ON
 - A opção de banco de dados READ_COMMITTED_SNAPSHOT determina o comportamento do nível de isolamento READ COMMITTED padrão quando o isolamento de instantâneo está habilitado em um banco de dados. Se você não especificar READ_COMMITTED_SNAPSHOT como ON, READ COMMITTED será aplicado a todas as transações implícitas. Isso resulta no mesmo comportamento obtido ao configurar READ_COMMITTED_SNAPSHOT como OFF (o padrão). Quando READ_COMMITTED_SNAPSHOT OFF está em vigor, o Mecanismo de Banco de Dados usa bloqueios compartilhados para impor o nível de isolamento padrão. Se você definir a opção de banco de dados READ_COMMITTED_SNAPSHOT como ON, o mecanismo de banco de dados usará o controle de versão de linha e o isolamento de instantâneo como o padrão, em vez de usar bloqueios para proteger os dados.  
   
 ## <a name="how-snapshot-isolation-and-row-versioning-work"></a>Como funcionam o isolamento de instantâneo e o controle de versão de linha  
+
  Quando o nível de isolamento SNAPSHOT está habilitado, cada vez que uma linha é atualizada, o Mecanismo de Banco de Dados do SQL Server armazena uma cópia da linha original em **tempdb** e adiciona um número de sequência da transação à linha. A seguinte sequência de eventos ocorre:  
   
 - Uma nova transação é iniciada e recebe um número de sequência de transação.  
@@ -77,6 +82,7 @@ SET READ_COMMITTED_SNAPSHOT ON
  Uma transação de instantâneo sempre usa o controle de simultaneidade otimista, transacionando todos os bloqueios que impediriam que outras transações atualizassem as linhas. Se uma transação de instantâneo tentar confirmar uma atualização para uma linha que foi alterada após o início da transação, a transação será revertida e um erro será gerado.  
   
 ## <a name="working-with-snapshot-isolation-in-adonet"></a>Trabalhando com isolamento de instantâneo no ADO.NET  
+
  O isolamento de instantâneo é compatível com o ADO.NET graças ao uso da classe <xref:System.Data.SqlClient.SqlTransaction>. Se um banco de dados tiver sido habilitado para o isolamento de instantâneo, mas não estiver configurado para READ_COMMITTED_SNAPSHOT ON, você deverá iniciar um <xref:System.Data.SqlClient.SqlTransaction> usando o valor de enumeração **IsolationLevel.Snapshot** ao chamar o método <xref:System.Data.SqlClient.SqlConnection.BeginTransaction%2A>. Esse fragmento de código pressupõe que a conexão é um objeto <xref:System.Data.SqlClient.SqlConnection> aberto.  
   
 ```vb  
@@ -90,6 +96,7 @@ SqlTransaction sqlTran =
 ```  
   
 ### <a name="example"></a>Exemplo  
+
  O exemplo a seguir demonstra como os diferentes níveis de isolamento se comportam ao tentar acessar dados bloqueados e não se destina a ser usado em código de produção.  
   
  O código conecta-se ao banco de dados de exemplo **AdventureWorks** no SQL Server e cria uma tabela denominada **TestSnapshot** e insere uma linha de dados. O código usa a instrução ALTER DATABASE do Transact-SQL para ativar o isolamento de instantâneo para o banco de dados, mas não define a opção READ_COMMITTED_SNAPSHOT, deixando o comportamento padrão de nível de isolamento READ COMMITTED em vigor. Em seguida, o código executa as seguintes ações:  
@@ -111,6 +118,7 @@ SqlTransaction sqlTran =
  [!code-vb[DataWorks SnapshotIsolation.Demo#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SnapshotIsolation.Demo/VB/source.vb#1)]  
   
 ### <a name="example"></a>Exemplo  
+
  O exemplo a seguir demonstra o comportamento do isolamento de instantâneo quando os dados estão sendo modificados. O código executa as seguintes ações:  
   
 - Conecta-se a um banco de dados de exemplo **AdventureWorks** e permite o isolamento de SNAPSHOT.  
@@ -131,6 +139,7 @@ SqlTransaction sqlTran =
  [!code-vb[DataWorks SnapshotIsolation.DemoUpdate#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SnapshotIsolation.DemoUpdate/VB/source.vb#1)]  
   
 ### <a name="using-lock-hints-with-snapshot-isolation"></a>Usando dicas de bloqueio com isolamento de instantâneo  
+
  No exemplo anterior, a primeira transação seleciona dados e uma segunda transação atualiza os dados antes que a primeira transação possa ser concluída, causando um conflito de atualização quando a primeira transação tenta atualizar a mesma linha. Você pode reduzir a chance de conflitos de atualização em transações de instantâneo de execução longa pelo fornecimento de dicas de bloqueio no início da transação. A seguinte instrução SELECT usa a dica UPDLOCK para bloquear as linhas selecionadas:  
   
 ```sql  

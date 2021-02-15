@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função CLRCreateInstance'
 title: Função CLRCreateInstance
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 5de13327-96c6-4697-a89e-b8bf40717855
 topic_type:
 - apiref
-ms.openlocfilehash: 4aeacc718632c133550ed8de6649716c5d8b7423
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 3b4dd9f07444f3e7ca68af3b85a7a053fc72b772
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84504436"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799933"
 ---
 # <a name="clrcreateinstance-function"></a>Função CLRCreateInstance
+
 Fornece uma das três interfaces: [ICLRMetaHost](iclrmetahost-interface.md), [ICLRMetaHostPolicy](iclrmetahostpolicy-interface.md)ou [ICLRDebugging](../debugging/iclrdebugging-interface.md).  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT CLRCreateInstance(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `clsid`  
  no Um dos três identificadores de classe: CLSID_CLRMetaHost, CLSID_CLRMetaHostPolicy ou CLSID_CLRDebugging.  
   
@@ -45,7 +48,8 @@ HRESULT CLRCreateInstance(
  `ppInterface`  
  fora Uma das três interfaces: [ICLRMetaHost](iclrmetahost-interface.md), [ICLRMetaHostPolicy](iclrmetahostpolicy-interface.md)ou [ICLRDebugging](../debugging/iclrdebugging-interface.md).  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
+
  Esse método retorna os HRESULTs específicos a seguir, bem como os erros de HRESULT que indicam falha de método.  
   
 |HRESULT|Descrição|  
@@ -54,6 +58,7 @@ HRESULT CLRCreateInstance(
 |E_POINTER|`ppInterface` é nulo.|  
   
 ## <a name="remarks"></a>Comentários  
+
  A tabela a seguir mostra as combinações com suporte para o `clsid` e o `riid` .  
   
 |`clsid`|`riid`|  
@@ -81,14 +86,15 @@ hr = CLRCreateInstance (CLSID_CLRDebugging, IID_ICLRDebugging,
 ```  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MetaHost. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Hosting](index.md)
+- [Hospedagem](index.md)

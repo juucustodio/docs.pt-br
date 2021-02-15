@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração de NOTIFY_FILTER'
 title: Enumeração NOTIFY_FILTER
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4789d08f-8683-45d3-ac30-73d48c61e470
 topic_type:
 - apiref
-ms.openlocfilehash: b20e18d5f4314a0ab1442ac7bd5c6514e4db85d5
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 0ed09af0af302b08102b7b08fa72a2d255c5b231
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83609476"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761480"
 ---
 # <a name="notify_filter-enumeration"></a>Enumeração NOTIFY_FILTER
+
 Identifica retornos de chamada para funções do depurador. Para obter mais informações, consulte o método [INotifySource2:: SetNotifyFilter](inotifysource2-setnotifyfilter-method.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -41,7 +43,7 @@ enum tagNOTIFY_FILTER
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`NOTIFY_FILTER_ONSYNCCALLOUT`|Indica que o método [INotifySink2:: OnSyncCallOut](inotifysink2-onsynccallout-method.md) deve ser invocado.|  
 |`NOTIFY_FILTER_ONSYNCCALLENTER`|Indica que o método [INotifySink2:: OnSyncCallEnter](inotifysink2-onsynccallenter-method.md) deve ser invocado.|  
@@ -52,8 +54,9 @@ enum tagNOTIFY_FILTER
 |`NOTIFY_FILTER_NONE`|Indica que nenhum método de notificação deve ser invocado.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** ProtocolNotify2. idl  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumerações de armazenamento de símbolo de diagnóstico](diagnostics-symbol-store-enumerations.md)

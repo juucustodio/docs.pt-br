@@ -2,12 +2,12 @@
 title: Dependências e bibliotecas do .NET
 description: Melhores práticas para gerenciar as dependências do NuGet em bibliotecas do .NET.
 ms.date: 10/02/2018
-ms.openlocfilehash: 344d5dff564b64b9d70bbd61afb0b7bc057c8f21
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: d189a3364b501272e29de72b6018844877bf2128
+ms.sourcegitcommit: 7588b1f16b7608bc6833c05f91ae670c22ef56f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291364"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93189297"
 ---
 # <a name="dependencies"></a>Dependências
 
@@ -23,9 +23,9 @@ No momento da compilação, o NuGet analisa todos os pacotes de que um projeto d
 
 A maioria das dependências de losangos é facilmente resolvida. No entanto, podem criar problemas em determinadas circunstâncias:
 
-1. **Referências de pacote do NuGet conflitantes** impedem que uma versão seja resolvida durante a restauração de pacote.
-2. **As alterações significativas entre as versões** causam bugs e exceções em tempo de execução.
-3. **O assembly do pacote tem um nome forte**, a versão do assembly é alterada e o aplicativo está em execução no .NET Framework. Redirecionamentos de associação de assembly são necessários.
+- **Referências de pacote do NuGet conflitantes** impedem que uma versão seja resolvida durante a restauração de pacote.
+- **Alterações interruptivas entre as versões** causam erros e exceções em tempo de execução.
+- **O assembly do pacote tem um nome forte**, a versão do assembly foi alterada e o aplicativo está sendo executado em .NET Framework. Redirecionamentos de associação de assembly são necessários.
 
 Não é possível saber quais pacotes serão usados junto com o seu. Uma boa maneira de reduzir a probabilidade de uma dependência de losango provocar falha na sua biblioteca é minimizar o número de pacotes dos quais você depende.
 
@@ -56,11 +56,11 @@ Limites de versão superior fará com que o NuGet falhe se houver um conflito. P
 
 ![Conflito de dependência de losango](./media/dependencies/diamond-dependency-conflict.png "Conflito de dependência de losango")
 
-❌Não tem referências de pacote NuGet sem nenhuma versão mínima.
+❌ Não tem referências de pacote NuGet sem nenhuma versão mínima.
 
-❌Evite as referências de pacote NuGet que exigem uma versão exata.
+❌ Evite as referências de pacote NuGet que exigem uma versão exata.
 
-❌Evite as referências de pacote NuGet com um limite superior de versão.
+❌ Evite as referências de pacote NuGet com um limite superior de versão.
 
 ## <a name="nuget-shared-source-packages"></a>Pacotes de código-fonte compartilhado do NuGet
 
@@ -86,11 +86,11 @@ Pacotes de origem compartilhado têm algumas limitações. Eles só podem ser re
 
 > Essa configuração informa que o pacote do NuGet deve ser usado apenas no tempo de desenvolvimento e não deve ser exposto como uma dependência pública.
 
-❌Não têm tipos de pacote de origem compartilhados em sua API pública.
+❌ Não têm tipos de pacote de origem compartilhados em sua API pública.
 
 > Tipos de origem compartilhada são compilados no assembly de referência e não podem ser trocados entre os limites de assembly. Por exemplo, um tipo `IRepository` de origem compartilhada em um projeto é um tipo separado do mesmo `IRepository` de origem compartilhada em outro projeto. Tipos em pacotes de origem compartilhados devem ter uma visibilidade `internal`.
 
-❌Não publique pacotes de origem compartilhados em NuGet.org.
+❌ Não publique pacotes de origem compartilhados em NuGet.org.
 
 > Pacotes de origem compartilhados contêm código-fonte e só podem ser usados por projetos com o mesmo tipo de linguagem. Por exemplo, um pacote de origem compartilhado em C# não pode ser usado por um aplicativo em F#.
 >

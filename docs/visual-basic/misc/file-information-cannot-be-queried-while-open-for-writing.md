@@ -1,16 +1,18 @@
 ---
-title: Informações do arquivo não podem ser consultadas ao abrir para gravação
+description: 'Saiba mais sobre: as informações do arquivo não podem ser consultadas enquanto estiverem abertas para gravação'
+title: Não é possível consultar as informações do arquivo enquanto ele está aberto para gravação
 ms.date: 07/20/2015
 ms.assetid: 2198af10-f128-4b1d-baba-a251e1369146
-ms.openlocfilehash: aeb8dbbfe0928263c1c40d308584dc5d17e0f04a
-ms.sourcegitcommit: 2701302a99cafbe0d86d53d540eb0fa7e9b46b36
+ms.openlocfilehash: 68a0ee52e6a620fc0784d4bd1f850212bf3f2a14
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64624934"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100480824"
 ---
-# <a name="file-information-cannot-be-queried-while-open-for-writing"></a>Informações do arquivo não podem ser consultadas ao abrir para gravação
-Foi feita uma tentativa para obter informações sobre um arquivo que está atualmente aberto para gravação.  
+# <a name="file-information-cannot-be-queried-while-open-for-writing"></a>Não é possível consultar as informações do arquivo enquanto ele está aberto para gravação
+
+Foi feita uma tentativa de obter informações sobre um arquivo que está aberto para gravação no momento.  
   
 ## <a name="to-correct-this-error"></a>Para corrigir este erro  
   
@@ -20,4 +22,4 @@ Foi feita uma tentativa para obter informações sobre um arquivo que está atua
 
 - <xref:System.IO.FileInfo>
 - <xref:System.Security.Permissions.FileIOPermission>
-- [Como: Obter informações sobre um arquivo no Visual Basic](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/abtzf6f7(v=vs.100))
+- [Como: obter informações sobre um arquivo no Visual Basic](/previous-versions/visualstudio/visual-studio-2010/abtzf6f7(v=vs.100))

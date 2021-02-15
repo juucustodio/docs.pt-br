@@ -1,5 +1,5 @@
 ---
-title: 'Como: Examinar tipos genéricos e criar instâncias deles com a reflexão'
+title: Como examinar tipos genéricos e criar instâncias deles com a reflexão
 description: Veja como examinar e instanciar tipos genéricos com reflexão. Use as propriedades isgenéricatype, IsGenericParameter e GenericParameterPosition.
 ms.date: 03/30/2017
 dev_langs:
@@ -10,14 +10,15 @@ helpviewer_keywords:
 - reflection, generic types
 - generics [.NET Framework], reflection
 ms.assetid: f93b03b0-1778-43fc-bc6d-35983d210e74
-ms.openlocfilehash: b57a0ed0c809da442dc9fcf202ad364060971f80
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: 34efca4a26b0ab3739d19b793237532ec9f4f15e
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86865093"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96263432"
 ---
-# <a name="how-to-examine-and-instantiate-generic-types-with-reflection"></a>Como: Examinar tipos genéricos e criar instâncias deles com a reflexão
+# <a name="how-to-examine-and-instantiate-generic-types-with-reflection"></a>Como examinar tipos genéricos e criar instâncias deles com a reflexão
+
 As informações sobre tipos genéricos são obtidas da mesma forma que as informações sobre os outros tipos: examinando um objeto <xref:System.Type> que representa o tipo genérico. A diferença de princípio é que um tipo genérico tem uma lista de objetos <xref:System.Type> que representam seus parâmetros de tipo genérico. O primeiro procedimento nesta seção examina os tipos genéricos.  
   
  Você pode criar um objeto <xref:System.Type> que representa um tipo construído associando argumentos de tipo aos parâmetros de tipo de uma definição de tipo genérico. O segundo procedimento demonstra isso.  
@@ -73,6 +74,7 @@ As informações sobre tipos genéricos são obtidas da mesma forma que as infor
      [!code-vb[HowToGeneric#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToGeneric/VB/ur.vb#9)]  
   
 ## <a name="constructing-an-instance-of-a-generic-type"></a>Criando uma instância de um tipo genérico  
+
  Um tipo genérico é como um modelo. Você não pode criar instâncias dele a menos que especifique tipos reais para seus parâmetros de tipo genérico. Fazer isso em tempo de execução, usando reflexão, requer o método <xref:System.Type.MakeGenericType%2A>.  
   
 #### <a name="to-construct-an-instance-of-a-generic-type"></a>Para criar uma instância de um tipo genérico  
@@ -102,6 +104,7 @@ As informações sobre tipos genéricos são obtidas da mesma forma que as infor
      [!code-vb[HowToGeneric#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToGeneric/VB/ur.vb#13)]  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo de código a seguir define um método `DisplayGenericType` para examinar as definições de tipo genérico e tipos construídos usados no código e exibir suas informações. O método `DisplayGenericType` mostra como usar as propriedades <xref:System.Type.IsGenericType%2A>, <xref:System.Type.IsGenericParameter%2A> e <xref:System.Type.GenericParameterPosition%2A> e o método <xref:System.Type.GetGenericArguments%2A>.  
   
  O exemplo também define um método `DisplayGenericParameter` para examinar um parâmetro de tipo genérico e exibir suas restrições.  

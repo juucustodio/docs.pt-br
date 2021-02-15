@@ -1,29 +1,32 @@
 ---
+description: 'Saiba mais sobre: Oracle LOBs'
 title: Oracle LOBs
 ms.date: 03/30/2017
 ms.assetid: 272e8e1e-a31f-475a-8c2a-ae8e1286bdab
-ms.openlocfilehash: 62525fed85525e26b7c61208fe44b108de562fb0
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f59e2326852233648b15cf6aa56ebed905fcb598
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79149421"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99723680"
 ---
 # <a name="oracle-lobs"></a>Oracle LOBs
-O .NET Framework Data Provider <xref:System.Data.OracleClient.OracleLob> for Oracle inclui a classe, que é usada para trabalhar com os tipos de dados **Oracle LOB.**  
+
+O Provedor de Dados .NET Framework para Oracle inclui a <xref:System.Data.OracleClient.OracleLob> classe, que é usada para trabalhar com tipos de dados **LOB** Oracle.  
   
- Um **OracleLob** pode ser <xref:System.Data.OracleClient.OracleType> um desses tipos de dados:  
+ Um **OracleLob** pode ser um destes <xref:System.Data.OracleClient.OracleType> tipos de dados:  
   
 |Tipo de dados|Descrição|  
 |---------------|-----------------|  
-|**Blob**|Um tipo de dados **Oracle BLOB** que contém dados binários com um tamanho máximo de 4 gigabytes. Isso mapeia para **uma matriz** do tipo **Byte**.|  
-|**Clob**|Um tipo de dados Oracle **CLOB** que contém dados de caracteres, com base no caractere padrão definido no servidor, com um tamanho máximo de 4 gigabytes. Este mapeia para **String**.|  
-|**Nclob**|Um tipo de dados **Oracle NCLOB** que contém dados de caracteres, com base no caractere nacional definido no servidor com um tamanho máximo de 4 gigabytes. Este mapeia para **String**.|  
+|**Blob**|Um tipo de dados de **blob** Oracle que contém dados binários com um tamanho máximo de 4 gigabytes. Isso é mapeado para uma **matriz** do tipo **byte**.|  
+|**CLOB**|Um tipo de dados do Oracle **CLOB** que contém dados de caractere, com base no conjunto de caracteres padrão no servidor, com um tamanho máximo de 4 gigabytes. Isso é mapeado para **cadeia de caracteres**.|  
+|**NClob**|Um tipo de dados Oracle **NClob** que contém dados de caractere, com base no conjunto de caracteres nacionais no servidor com um tamanho máximo de 4 gigabytes. Isso é mapeado para **cadeia de caracteres**.|  
   
- Um **OracleLob** difere <xref:System.Data.OracleClient.OracleBFile> de um em que os dados são armazenados no servidor em vez de em um arquivo físico no sistema operacional. Ele também pode ser um objeto de leitura-gravação, ao contrário de um **OracleBFile**, que é sempre somente leitura.  
+ Um **OracleLob** difere de um <xref:System.Data.OracleClient.OracleBFile> em que os dados são armazenados no servidor em vez de em um arquivo físico no sistema operacional. Ele também pode ser um objeto de leitura/gravação, ao contrário de um **OracleBFile**, que é sempre somente leitura.  
   
 ## <a name="creating-retrieving-and-writing-to-a-lob"></a>Criar, recuperar e escrever em um LOB  
- O exemplo C# a seguir demonstra como você pode criar LOBs em uma tabela Oracle e, em seguida, recuperar e escrever para eles na forma de objetos **OracleLob.** O exemplo demonstra <xref:System.Data.OracleClient.OracleDataReader> o uso do objeto e dos métodos **OracleLob** **Read** and **Write.** O exemplo usa os tipos de dados Oracle **BLOB,** **CLOB**e **NCLOB.**  
+
+ O exemplo de C# a seguir demonstra como você pode criar LOBs em uma tabela do Oracle e, em seguida, recuperar e gravar nelas na forma de objetos **OracleLob** . O exemplo demonstra como usar o <xref:System.Data.OracleClient.OracleDataReader> objeto e os métodos de **leitura** e **gravação** de **OracleLob** . O exemplo usa os tipos de dados Oracle **blob**, **CLOB** e **NClob** .  
   
 ```csharp  
 using System;  
@@ -216,6 +219,7 @@ public class LobExample
 ```  
   
 ## <a name="creating-a-temporary-lob"></a>Criando um LOB temporário  
+
  O exemplo de C# a seguir demonstra como criar um LOB temporário.  
   
 ```csharp  
@@ -247,7 +251,7 @@ cmd.ExecuteNonQuery();
 tx.Commit();  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Oracle and ADO.NET](oracle-and-adonet.md) (Oracle e ADO.NET)
+- [Oracle e ADO.NET](oracle-and-adonet.md)
 - [Visão geral do ADO.NET](ado-net-overview.md)

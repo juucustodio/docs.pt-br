@@ -1,28 +1,32 @@
 ---
+description: 'Saiba mais sobre: 3507-ServiceEndpointAdded'
 title: 3507 - ServiceEndpointAdded
 ms.date: 03/30/2017
 ms.assetid: c068fc0e-07ee-4551-9824-ea7216e1fe37
-ms.openlocfilehash: c787a1a5af752a3d08e2049cfa0b600b7739e56c
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 7de51cb8908d3bf4b450c545c1a4c0f2bdc6a453
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62009832"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631470"
 ---
 # <a name="3507---serviceendpointadded"></a>3507 - ServiceEndpointAdded
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
 |ID|3507|  
 |Palavras-chave|WFServices|  
-|Nível|Informações|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  
+
  Indica que um ponto final de serviço foi adicionado.  
   
 ## <a name="message"></a>Mensagem  
+
  Um ponto final de serviço foi adicionado para o endereço “%1 ", associando “%2 ", e reduz “%3 ".  
   
 ## <a name="details"></a>Detalhes  

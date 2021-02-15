@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: UDTs grandes'
 title: UDTs grandes
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 420ae24e-762b-4e09-b4c3-2112c470ee49
-ms.openlocfilehash: f55f6eccf3566a2391204e1ca4349ae5dff01954
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: e1a40330bb48d6320dc96533e764f1b856e0f410
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79148550"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99663177"
 ---
 # <a name="large-udts"></a>UDTs grandes
+
 Os UDTs (tipos definidos pelo usuário) permitem que os desenvolvedores estendam o sistema de tipo escalar do servidor armazenando objetos de CLR (Common Language Runtime) em um banco de dados SQL Server. Os UDTs podem conter vários elementos e ter comportamentos, diferentemente dos tipos de dados de alias tradicionais, que consistem em um único tipo de dados do sistema no SQL Server.  
   
 > [!NOTE]
@@ -24,12 +26,14 @@ Os UDTs (tipos definidos pelo usuário) permitem que os desenvolvedores estendam
   
  **Documentação do SQL Server**  
   
-1. [Tipos definidos pelo usuário do CLR](/sql/relational-databases/clr-integration-database-objects-user-defined-types/clr-user-defined-types)  
+1. [Tipos definido pelo usuário CLR](/sql/relational-databases/clr-integration-database-objects-user-defined-types/clr-user-defined-types)  
   
 ## <a name="retrieving-udt-schemas-using-getschema"></a>Recuperando esquemas de UDT usando GetSchema  
- O método <xref:System.Data.SqlClient.SqlConnection.GetSchema%2A> de <xref:System.Data.SqlClient.SqlConnection> retorna informações de esquema de banco de dados em um <xref:System.Data.DataTable>. Para obter mais informações, consulte [SQL Server Schema Collections](../sql-server-schema-collections.md).  
+
+ O método <xref:System.Data.SqlClient.SqlConnection.GetSchema%2A> de <xref:System.Data.SqlClient.SqlConnection> retorna informações de esquema de banco de dados em um <xref:System.Data.DataTable>. Para obter mais informações, consulte [SQL Server coleções de esquema](../sql-server-schema-collections.md).  
   
 ### <a name="getschematable-column-values-for-udts"></a>Valores de coluna de GetSchemaTable para UDTs  
+
  O método <xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable%2A> de um <xref:System.Data.SqlClient.SqlDataReader> retorna um <xref:System.Data.DataTable> que descreve os metadados da coluna. A tabela a seguir descreve as diferenças nos metadados da coluna para UDTs grandes entre o SQL Server 2005 e o SQL Server 2008.  
   
 |Coluna SqlDataReader|SQL Server 2005|SQL Server 2008 e posterior|  
@@ -45,6 +49,7 @@ Os UDTs (tipos definidos pelo usuário) permitem que os desenvolvedores estendam
 |`IsLong`|Varia|Varia|  
   
 ## <a name="sqldatareader-considerations"></a>Considerações do SqlDataReader  
+
  O <xref:System.Data.SqlClient.SqlDataReader> foi estendido a partir do SQL Server 2008 para dar suporte à recuperação de UDTs de valores grandes. A forma como as UDT de valores grandes são processadas por um <xref:System.Data.SqlClient.SqlDataReader> dependem da versão do SQL Server que você está usando, bem como do `Type System Version` especificado na cadeia de conexão. Para obter mais informações, consulte <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>.  
   
  Os seguintes métodos de <xref:System.Data.SqlClient.SqlDataReader> retornarão um <xref:System.Data.SqlTypes.SqlBinary> em vez de uma UDT quando o `Type System Version` for definido como SQL Server 2005:  
@@ -68,6 +73,7 @@ Os UDTs (tipos definidos pelo usuário) permitem que os desenvolvedores estendam
  Observe que nenhuma das conversões são feitas para a versão atual do ADO.NET.  
   
 ## <a name="specifying-sqlparameters"></a>Especificar SqlParameters  
+
  As propriedades <xref:System.Data.SqlClient.SqlParameter> a seguir foram estendidas para funcionar com UDTs grandes.  
   
 |Propriedade SqlParameter|Descrição|  
@@ -77,6 +83,7 @@ Os UDTs (tipos definidos pelo usuário) permitem que os desenvolvedores estendam
 |<xref:System.Data.SqlClient.SqlParameter.Size%2A>|Obtém ou define o tamanho do valor do parâmetro a ser resolvido. O valor padrão é 0. A propriedade pode ser um inteiro que representa o tamanho do valor do parâmetro. Para UDTs grandes, pode ser o tamanho real da UDT ou -1 para desconhecido.|  
   
 ## <a name="retrieving-data-example"></a>Recuperando exemplo de dados  
+
  O fragmento de código a seguir demonstra como recuperar dados de uma UDT grande. A variável `connectionString` assume uma conexão válida com um banco de dados SQL Server, e a variável `commandString` pressupõe uma instrução SELECT válida com a coluna de chave primária listada primeiro.  
   
 ```csharp  
@@ -131,10 +138,10 @@ Using connection As New SqlConnection( _
 End Using  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Configurando parâmetros e tipos de dados de parâmetro](../configuring-parameters-and-parameter-data-types.md)
-- [Recuperando informações de esquema de banco de dados](../retrieving-database-schema-information.md)
-- [Mapeamentos de tipo de dados do SQL Server](../sql-server-data-type-mappings.md)
-- [Dados binários e de grande valor do servidor SQL](sql-server-binary-and-large-value-data.md)
+- [Configurar parâmetros e tipos de dados de parâmetro](../configuring-parameters-and-parameter-data-types.md)
+- [Como recuperar informações de esquema de banco de dados](../retrieving-database-schema-information.md)
+- [Mapeamentos de tipos de dados do SQL Server](../sql-server-data-type-mappings.md)
+- [Dados binários e de valor grande do SQL Server](sql-server-binary-and-large-value-data.md)
 - [Visão geral do ADO.NET](../ado-net-overview.md)

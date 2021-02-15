@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICorDebugFunctionBreakpoint:: método GetOffset'
 title: Método ICorDebugFunctionBreakpoint::GetOffset
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: e619eae4-3ac3-4c37-bba4-55e59989b9cb
 topic_type:
 - apiref
-ms.openlocfilehash: 0f6fe5d7eb5926d48809bb6490ba75df9d4a5033
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 94238b761e0a42a72037f7d44d5e9609f86ac03b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213142"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661155"
 ---
 # <a name="icordebugfunctionbreakpointgetoffset-method"></a>Método ICorDebugFunctionBreakpoint::GetOffset
+
 Obtém o deslocamento do ponto de interrupção dentro da função.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,10 +36,12 @@ HRESULT GetOffset (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pnOffset`  
  fora Um ponteiro para o deslocamento do ponto de interrupção.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

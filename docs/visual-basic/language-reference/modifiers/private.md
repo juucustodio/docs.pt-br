@@ -1,5 +1,6 @@
 ---
-title: Particular
+description: 'Saiba mais sobre: privado (Visual Basic)'
+title: Privados
 ms.date: 07/20/2015
 f1_keywords:
 - vb.Private
@@ -7,17 +8,19 @@ helpviewer_keywords:
 - Private keyword [Visual Basic]
 - Private keyword [Visual Basic], syntax
 ms.assetid: aba74a2e-5824-4613-bf63-b9ec7787f4e6
-ms.openlocfilehash: 524f03e77e075bef08a1b41b563985de41baacb6
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 20dcd943856e20ccb1b7cb5c0603fa5f313d2421
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404804"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99700943"
 ---
 # <a name="private-visual-basic"></a>Particular (Visual Basic)
+
 Especifica que um ou mais elementos de programação declarados são acessíveis somente de dentro de seu contexto de declaração, incluindo de dentro de qualquer tipo contido.  
   
 ## <a name="remarks"></a>Comentários  
+
  Se um elemento de programação representar a funcionalidade proprietária ou contiver dados confidenciais, você geralmente desejará limitar o acesso a ele o mais estritamente possível. Você Obtém a limitação máxima permitindo apenas o módulo, a classe ou a estrutura que a define para acessá-lo. Para limitar o acesso a um elemento dessa forma, você pode declará-lo com `Private` .  
 
 > [!NOTE]
@@ -59,11 +62,11 @@ Especifica que um ou mais elementos de programação declarados são acessíveis
   
  [Instrução Sub](../statements/sub-statement.md)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Pública](public.md)
+- [Público](public.md)
 - [Protected](protected.md)
-- [Público](friend.md)
+- [Friend](friend.md)
 - [Particular protegido](./private-protected.md)
 - [Amigo Protegido](./protected-friend.md)
 - [Níveis de acesso no Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md)

@@ -1,21 +1,21 @@
 ---
-title: dotnet nuget comando fonte de atualização
-description: O comando dotnet nuget update source atualiza uma fonte existente em seus arquivos de configuração NuGet.
+title: comando de origem de atualização do NuGet do dotnet
+description: O comando dotnet NuGet Update Source atualiza uma fonte existente nos arquivos de configuração do NuGet.
 ms.date: 03/20/2020
-ms.openlocfilehash: 42b1aec95cdd57e53f966400f6692a3d0150c16c
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: a8658c78c095ad4b9272d97200e1d6466cbe658b
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463485"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90537848"
 ---
 # <a name="dotnet-nuget-update-source"></a>dotnet nuget update source
 
-**Este artigo se aplica a:** ✔️ .NET Core 3.1.200 SDK e versões posteriores
+**Este artigo aplica-se a:** ✔️ SDK 3.1.200 do .NET Core e versões posteriores
 
-## <a name="name"></a>Nome
+## <a name="name"></a>Name
 
-`dotnet nuget update source`- Atualize uma fonte NuGet.
+`dotnet nuget update source` -Atualizar uma origem do NuGet.
 
 ## <a name="synopsis"></a>Sinopse
 
@@ -27,45 +27,45 @@ dotnet nuget update source <NAME> [--source <SOURCE>] [--username <USER>]
 dotnet nuget update source -h|--help
 ```
 
-## <a name="description"></a>Descrição
+## <a name="description"></a>Description
 
-O `dotnet nuget update source` comando atualiza uma fonte existente em seus arquivos de configuração NuGet.
+O `dotnet nuget update source` comando atualiza uma origem existente nos arquivos de configuração do NuGet.
 
 ## <a name="arguments"></a>Argumentos
 
 - **`NAME`**
 
-  Nome da fonte.
+  Nome da origem.
 
 ## <a name="options"></a>Opções
 
 - **`--configfile <FILE>`**
 
-  O arquivo de configuração NuGet. Se especificado, apenas as configurações deste arquivo serão usadas. Se não for especificado, a hierarquia dos arquivos de configuração do diretório atual será usada. Para obter mais informações, consulte [Configurações comuns de NuGet](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior).
+  O arquivo de configuração do NuGet. Se especificado, somente as configurações desse arquivo serão usadas. Se não for especificado, a hierarquia de arquivos de configuração do diretório atual será usada. Para obter mais informações, consulte [configurações comuns do NuGet](/nuget/consume-packages/configuring-nuget-behavior).
 
 - **`-p|--password <PASSWORD>`**
 
-  Senha a ser usada ao se conectar a uma fonte autenticada.
+  Senha a ser usada ao conectar-se a uma fonte autenticada.
 
 - **`-s|--source <SOURCE>`**
 
-  Caminho para a fonte do pacote.
+  Caminho para a origem do pacote.
 
 - **`--store-password-in-clear-text`**
 
-  Permite armazenar credenciais de origem de pacote portátil desabilitando a criptografia de senha.
+  Habilita o armazenamento de credenciais de origem do pacote portátil desabilitando a criptografia de senha.
 
 - **`-u|--username <USER>`**
 
-  Nome de usuário a ser usado ao se conectar a uma fonte autenticada.
+  Nome de usuário a ser usado ao conectar a uma fonte autenticada.
 
 - **`--valid-authentication-types <TYPES>`**
 
-  Lista separada por comma de tipos de autenticação válidos para esta fonte. Defina `basic` isso para se o servidor anunciar NTLM ou Negociar e suas credenciais devem ser enviadas usando o mecanismo Básico, por exemplo, ao usar um PAT com o Azure DevOps Server no local. Outros valores `negotiate` `kerberos`válidos incluem, `ntlm`e `digest`, mas esses valores são improváveis de serem úteis.
+  Lista separada por vírgulas de tipos de autenticação válidos para esta fonte. Defina isso como `basic` se o servidor anunciar NTLM ou negociar e suas credenciais devem ser enviadas usando o mecanismo básico, por exemplo, ao usar uma Pat com Azure DevOps Server locais. Outros valores válidos incluem `negotiate` , `kerberos` , `ntlm` e `digest` , mas esses valores são improvável de ser úteis.
 
 ## <a name="examples"></a>Exemplos
 
-- Atualize uma fonte `mySource`com o nome de:
+- Atualize uma fonte com o nome de `mySource` :
 
   ```dotnetcli
   dotnet nuget update source mySource --source c:\packages
@@ -75,4 +75,4 @@ O `dotnet nuget update source` comando atualiza uma fonte existente em seus arqu
 
 - [Seções de origem do pacote em arquivos NuGet.config](/nuget/reference/nuget-config-file#package-source-sections)
 
-- [comando fontes (nuget.exe)](/nuget/reference/cli-reference/cli-ref-sources)
+- [comando Sources (nuget.exe)](/nuget/reference/cli-reference/cli-ref-sources)

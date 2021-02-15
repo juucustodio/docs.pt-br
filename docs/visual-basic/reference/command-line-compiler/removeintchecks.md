@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-removeintchecks
 title: -removeintchecks
 ms.date: 03/13/2018
 f1_keywords:
@@ -9,14 +10,15 @@ helpviewer_keywords:
 - /removeintchecks compiler option [Visual Basic]
 - -removeintchecks compiler option [Visual Basic]
 ms.assetid: c1835bd5-1e38-4fba-bd2f-6984774765d4
-ms.openlocfilehash: ec4722cb7088819dae95ca1b7cbc1469d957a7aa
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 1dc484e1538718b68fe9f0cc450fa2480dc52412
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84400468"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100474090"
 ---
 # <a name="-removeintchecks"></a>-removeintchecks
+
 Ativa a verificação de erros de estouro para operações de inteiros.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,13 +38,14 @@ Ativa a verificação de erros de estouro para operações de inteiros.
 |1. ter um projeto selecionado em **Gerenciador de soluções**. No menu **Projeto** , clique em **Propriedades**. <br />2. Clique na guia **Compilar** .<br />3. Clique no botão **avançado** .<br />4. modifique o valor da caixa de **verificações remover estouro de inteiro** .|  
   
 ## <a name="example"></a>Exemplo  
+
  O código a seguir compila `Test.vb` e desativa a verificação de erro de estouro de inteiros.  
   
 ```console
 vbc -removeintchecks+ test.vb  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Compilador de linha de comando do Visual Basic](index.md)
 - [Linhas de Comando de Compilação de Exemplo](sample-compilation-command-lines.md)

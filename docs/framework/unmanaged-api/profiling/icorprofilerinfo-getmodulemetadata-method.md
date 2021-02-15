@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo:: GetModuleMetaData'
 title: Método ICorProfilerInfo::GetModuleMetaData
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 7a439d92-348a-44dd-b60f-cad7cba56379
 topic_type:
 - apiref
-ms.openlocfilehash: 62b34128be99ce7750d45e6c19e26bef7fcc98c5
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: ff0fb0563b041fcb3cf63438874724c8236d6081
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502945"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647174"
 ---
 # <a name="icorprofilerinfogetmodulemetadata-method"></a>Método ICorProfilerInfo::GetModuleMetaData
+
 Obtém uma instância de interface de metadados que mapeia para o módulo especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT GetModuleMetaData(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `moduleId`  
  no A ID do módulo para o qual a instância de interface será mapeada.  
   
@@ -49,11 +52,13 @@ HRESULT GetModuleMetaData(
  fora Um ponteiro para o endereço da instância da interface de metadados.  
   
 ## <a name="remarks"></a>Comentários  
+
  Você pode solicitar que os metadados sejam abertos no modo de leitura/gravação, mas isso resultará em uma execução de metadados mais lenta do programa, pois as alterações feitas nos metadados não podem ser otimizadas como eram do compilador.  
   
  Alguns módulos (como módulos de recurso) não têm metadados. Nesses casos, o `GetModuleMetaData` retornará um valor HRESULT de S_FALSE e um nulo em * `ppOut` .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -62,6 +67,6 @@ HRESULT GetModuleMetaData(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo](icorprofilerinfo-interface.md)

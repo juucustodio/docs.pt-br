@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugReferenceValue:: GetValue'
 title: Método ICorDebugReferenceValue::GetValue
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 5da07f99-6c70-46ec-b997-5ab6fb7106cd
 topic_type:
 - apiref
-ms.openlocfilehash: 6417be4ab7c74d885edffad41085edca27bcf1ce
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 29e0c4997d3349b642381dcf69063de21c3f9330
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378579"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99691011"
 ---
 # <a name="icordebugreferencevaluegetvalue-method"></a>Método ICorDebugReferenceValue::GetValue
+
 Obtém o endereço de memória atual do objeto referenciado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,10 +36,12 @@ HRESULT GetValue (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pValue`  
  fora Um ponteiro para um `CORDB_ADDRESS` valor que especifica o endereço do objeto ao qual esse objeto ICorDebugReferenceValue aponta.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: <Namespace> elemento (.net Native)'
 title: <Namespace> (.NET Nativo)
 ms.date: 03/30/2017
 ms.assetid: 57c614e5-18a9-4e87-bfd5-d0fe3396a192
-ms.openlocfilehash: 06d88a7b0f95c7c1dbe98818b847c92e08a57a19
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: c24f78d8d9fd59258391e9dd5e59988675163b49
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79180961"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738605"
 ---
 # <a name="namespace-element-net-native"></a>\<Namespace> (.NET Nativo)
+
 Aplica a política de reflexão de runtime a todos os tipos em um namespace especificado.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <Namespace Name="namespace_name"
@@ -29,6 +31,7 @@ Aplica a política de reflexão de runtime a todos os tipos em um namespace espe
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -77,11 +80,12 @@ Aplica a política de reflexão de runtime a todos os tipos em um namespace espe
 |`<Namespace>`|Aplica a política de reflexão de tempo de execução a todos os tipos em um namespace pai.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Os atributos `Activate`, `Browse`, `Dynamic` e `Serialize` são todos opcionais. Se nenhum estiver presente, o elemento `<Namespace>` serve somente como um contêiner para elementos filho. Se eles estiverem presentes, o elemento `<Namespace>` aplica a política de reflexão de runtime a todos os tipos no namespace especificado.  
   
- Quando é um filho do [\<Assembly>](assembly-element-net-native.md) elemento, o `<Namespace>` elemento substitui a política de reflexão de tempo de execução definida pelo [\<Assembly>](assembly-element-net-native.md) elemento.  
+ Quando é um filho do [\<Assembly>](assembly-element-net-native.md) elemento, o `<Namespace>` elemento substitui a política de reflexão de tempo de execução definida pelo  [\<Assembly>](assembly-element-net-native.md) elemento.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Configurações da política da diretiva de runtime](runtime-directive-policy-settings.md)
 - [Referência do arquivo de configuração de diretivas do runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)

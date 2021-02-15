@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: acessando dados em aplicativos Visual Basic'
 title: Acessando dados em aplicativos do Visual Basic
 ms.date: 07/20/2015
 helpviewer_keywords:
 - data [Visual Basic]
 - Visual Basic, data access
 ms.assetid: 3086ab38-3be5-4b22-9385-7d0e16b04f6a
-ms.openlocfilehash: c9094e1550ad837444b7670cf54226322583be79
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 751705a1375782fae1f7ed3aa8590c377ac93d9c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84387602"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641584"
 ---
 # <a name="accessing-data-in-visual-basic-applications"></a>Acessando dados em aplicativos do Visual Basic
 
@@ -30,10 +31,10 @@ Fornece links para tópicos que descrevem como usar LINQ com Visual Basic.
 [LINQ to SQL](../../framework/data/adonet/sql/linq/index.md)  
 Fornece informações sobre [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)]. Inclui exemplos de programação.  
 
-[Ferramentas de LINQ to SQL no Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)  
+[Ferramentas LINQ to SQL no Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)  
 Fornece links para tópicos sobre como criar um modelo de objeto [LINQ to SQL](../../framework/data/adonet/sql/linq/index.md) em aplicativos.
 
-[Trabalhando com conjuntos de dados em aplicativos de N camadas](/visualstudio/data-tools/work-with-datasets-in-n-tier-applications)  
+[Trabalhar com conjuntos de dados em aplicativos de n camadas](/visualstudio/data-tools/work-with-datasets-in-n-tier-applications)  
 Fornece links para tópicos sobre como criar aplicativos de dados multicamadas.
 
 [Adicionar novas conexões](/visualstudio/data-tools/add-new-connections)  
@@ -48,10 +49,10 @@ Fornece links para páginas que explicam como exibir dados no Windows Forms atra
 [Editar dados em DataSets](/visualstudio/data-tools/edit-data-in-datasets)  
 Fornece links para páginas que descrevem como manipular os dados nas tabelas de dados de um conjunto de dados.  
 
-[Validando dados em conjuntos de dados](/visualstudio/data-tools/validate-data-in-datasets)  
+[Validar dados em conjuntos de dados](/visualstudio/data-tools/validate-data-in-datasets)  
 Fornece links para páginas que descrevem como adicionar validação a um conjunto de dados durante alterações de coluna e linha.
 
-[Salvar dados de volta no banco de dados](/visualstudio/data-tools/save-data-back-to-the-database)  
+[Salvar dados novamente no banco de dados](/visualstudio/data-tools/save-data-back-to-the-database)  
 Fornece links para páginas que explicam como enviar dados atualizados de um aplicativo para o banco de dados.
 
 [ADO.NET](../../framework/data/adonet/index.md)  

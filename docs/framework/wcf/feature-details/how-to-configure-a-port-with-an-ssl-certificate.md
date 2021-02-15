@@ -1,5 +1,5 @@
 ---
-title: Como configurar uma porta com um certificado SSL
+title: 'Como: configurar uma porta com um certificado SSL'
 description: Saiba como configurar uma porta com um certificado X. 509, necessário para um serviço WCF auto-hospedado com a classe WSHttpBinding usando a segurança de transporte.
 ms.date: 03/30/2017
 dev_langs:
@@ -10,20 +10,20 @@ helpviewer_keywords:
 - WCF, security mode
 - WCF, security
 ms.assetid: b8abcc8e-a5f5-4317-aca5-01e3c40ab24d
-ms.openlocfilehash: 0eccdf916dae7b886cbc4e6563e6dfe17039c321
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 619a893e0973f6691e32446d75f101201a0b6799
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85247176"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556376"
 ---
-# <a name="how-to-configure-a-port-with-an-ssl-certificate"></a>Como configurar uma porta com um certificado SSL
+# <a name="how-to-configure-a-port-with-an-ssl-certificate"></a>Como: configurar uma porta com um certificado SSL
 
 Ao criar um serviço de Windows Communication Foundation (WCF) auto-hospedado com a <xref:System.ServiceModel.WSHttpBinding> classe que usa a segurança de transporte, você também deve configurar uma porta com um certificado X. 509. Se você estiver criando um serviço auto-hospedado, você poderá hospedá-lo serviço no IIS (Serviços de Informações da Internet). Para obter mais informações, consulte [segurança de transporte http](http-transport-security.md).  
   
  Para configurar uma porta, a ferramenta usada depende do sistema operacional que está sendo executado no computador.  
   
- Se você estiver executando o Windows Server 2003, use a ferramenta HttpCfg.exe. No Windows Server 2003, essa ferramenta está instalada. Para obter mais informações, consulte a [visão geral do Httpcfg](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc787508(v=ws.10)). A [documentação das ferramentas de suporte do Windows](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc781601(v=ws.10)) explica a sintaxe da ferramenta de Httpcfg.exe.  
+ Se você estiver executando o Windows Server 2003, use a ferramenta HttpCfg.exe. No Windows Server 2003, essa ferramenta está instalada. Para obter mais informações, consulte a [visão geral do Httpcfg](/previous-versions/windows/it-pro/windows-server-2003/cc787508(v=ws.10)). A [documentação das ferramentas de suporte do Windows](/previous-versions/windows/it-pro/windows-server-2003/cc781601(v=ws.10)) explica a sintaxe da ferramenta de Httpcfg.exe.  
   
  Se você estiver executando o Windows Vista, use a ferramenta Netsh.exe que já está instalada.
   
@@ -121,6 +121,6 @@ Ao criar um serviço de Windows Communication Foundation (WCF) auto-hospedado co
  [!code-csharp[c_WsHttpService#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_wshttpservice/cs/source.cs#3)]
  [!code-vb[c_WsHttpService#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_wshttpservice/vb/source.vb#3)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Segurança de transporte de HTTP](http-transport-security.md)

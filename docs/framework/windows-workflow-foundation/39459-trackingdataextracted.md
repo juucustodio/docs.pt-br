@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 39459-TrackingDataExtracted'
 title: 39459 - TrackingDataExtracted
 ms.date: 03/30/2017
 ms.assetid: fcf7be96-8a7b-4ae1-bf38-b77ea9ebfb6b
-ms.openlocfilehash: 04fefaa987e311b4a0bf7fdf6ada6100f1685b3a
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 34ff025210252992655e4f2ccce5cdb85bf17d7f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61774394"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99777886"
 ---
 # <a name="39459---trackingdataextracted"></a>39459 - TrackingDataExtracted
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,9 +22,11 @@ ms.locfileid: "61774394"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
+
  Indica que dados de rastreamento foi extraído em uma atividade.  
   
 ## <a name="message"></a>Mensagem  
+
  %1 Dados de acompanhamento extraídos na atividade %2.  
   
 ## <a name="details"></a>Detalhes  

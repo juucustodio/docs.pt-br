@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugManagedCallback'
 title: Interface ICorDebugManagedCallback
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: b47f1d61-c7dc-4196-b926-0b08c94f7041
 topic_type:
 - apiref
-ms.openlocfilehash: cb2b69c5e6dfed4e0cb4e4e324c4ec6ad664f3e7
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 0dd33e4295caa8f5ae41c65d9bd10152737156ca
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83212744"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99722809"
 ---
 # <a name="icordebugmanagedcallback-interface"></a>Interface ICorDebugManagedCallback
+
 Fornece métodos para processar retornos de chamada do depurador.  
   
 ## <a name="methods"></a>Métodos  
@@ -56,6 +58,7 @@ Fornece métodos para processar retornos de chamada do depurador.
 |[Método UpdateModuleSymbols](icordebugmanagedcallback-updatemodulesymbols-method.md)|Notifica o depurador de que os símbolos de um módulo CLR foram alterados.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Todos os retornos de chamada são serializados, chamados no mesmo thread e chamados com o processo no estado SYNCHRONIZED.  
   
  Cada implementação de retorno de chamada deve chamar [ICorDebugController:: Continue](icordebugcontroller-continue-method.md) para retomar a execução. Se `ICorDebugController::Continue` não for chamado antes que o retorno de chamada seja retornado, o processo permanecerá parado e nenhum mais retornos de chamada de evento ocorrerá até que `ICorDebugController::Continue` seja chamado.  
@@ -66,6 +69,7 @@ Fornece métodos para processar retornos de chamada do depurador.
 > Esta interface não dá suporte para chamada remota, seja entre computadores ou processos cruzados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -74,7 +78,7 @@ Fornece métodos para processar retornos de chamada do depurador.
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebug](icordebug-interface.md)
 - [Interface ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md)

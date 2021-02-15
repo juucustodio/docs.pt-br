@@ -1,22 +1,22 @@
 ---
+description: 'Saiba mais sobre: Localizando os fusos horários definidos em um sistema local'
 title: Encontrando os fusos horários definidos em um sistema local
 ms.date: 04/10/2017
-ms.technology: dotnet-standard
 helpviewer_keywords:
-- time zones [.NET Framework], local
-- time zones [.NET Framework], finding local system time zones
-- time zone identifiers [.NET Framework]
+- time zones [.NET], local
+- time zones [.NET], finding local system time zones
+- time zone identifiers [.NET]
 - local time zone access
-- time zones [.NET Framework], retrieving
+- time zones [.NET], retrieving
 - UTC times, finding local system time zones
-- time zones [.NET Framework], UTC
+- time zones [.NET], UTC
 ms.assetid: 3f63b1bc-9a4b-4bde-84ea-ab028a80d3e1
-ms.openlocfilehash: d313bbed3cc525a74b90537dd4f1742c09c62cd4
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 1b7a4d1962adac42b47cda42d4d1223c4b79852a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84277018"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702633"
 ---
 # <a name="finding-the-time-zones-defined-on-a-local-system"></a>Encontrando os fusos horários definidos em um sistema local
 
@@ -35,9 +35,9 @@ Você também pode criar uma instância de um <xref:System.TimeZoneInfo> objeto 
 
 O identificador do fuso horário é um campo de chave que identifica exclusivamente o fuso horário. Enquanto a maioria das chaves são relativamente curtas, o identificador de fuso horário é comparativamente longo. Na maioria dos casos, seu valor corresponde à <xref:System.TimeZoneInfo.StandardName%2A?displayProperty=nameWithType> propriedade, que é usada para fornecer o nome do horário padrão do fuso horário. No entanto, há exceções. A melhor maneira de certificar-se de que você forneça um identificador válido é enumerar os fusos horários disponíveis no sistema e observar os identificadores associados.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Datas, horas e fusos horários](index.md)
-- [Como acessar o UTC predefinido e os objetos de fuso horário local](access-utc-and-local.md)
-- [Como criar uma instância de um objeto TimeZoneInfo](instantiate-time-zone-info.md)
+- [Como: acessar os objetos de fuso horário predefinidos UTC e local](access-utc-and-local.md)
+- [Como: criar uma instância de um objeto TimeZoneInfo](instantiate-time-zone-info.md)
 - [Convertendo horários entre fusos horários](converting-between-time-zones.md)

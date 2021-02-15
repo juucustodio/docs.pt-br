@@ -1,6 +1,6 @@
 ---
-title: Função GetCurrentApartmentType (referência a API não gerenciada)
-description: A função GetCurrentApartmentType recupera o tipo de apartamento em que o chamador está executando.
+title: Função GetCurrentApartmentType (referência de API não gerenciada)
+description: A função GetCurrentApartmentType recupera o tipo de apartamento no qual o chamador está sendo executado.
 ms.date: 11/06/2017
 api_name:
 - GetCurrentApartmentType
@@ -14,14 +14,15 @@ helpviewer_keywords:
 - GetCurrentApartmentType function [.NET WMI and performance counters]
 topic_type:
 - Reference
-ms.openlocfilehash: 3fc88f7997ee5a6c25359243e1ee97a041050eb7
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 0832867d86b7dda80e037846d9aa66c1d37f87be
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176819"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726191"
 ---
 # <a name="getcurrentapartmenttype-function"></a>Função GetCurrentApartmentType
+
 Recupera o tipo de apartment no qual o chamador está sendo executado.
   
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
@@ -36,34 +37,35 @@ HRESULT GetCurrentApartmentType (
 );
 ```  
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
 `vFunc`  
-[em] Este parâmetro não é usado.
+no Este parâmetro não é usado.
 
 `ptr`  
-[em] Um ponteiro para uma instância [IComThreadingInfo.](/windows/desktop/api/objidlbase/nn-objidlbase-icomthreadinginfo)
+no Um ponteiro para uma instância de [IComThreadingInfo](/windows/desktop/api/objidlbase/nn-objidlbase-icomthreadinginfo) .
 
 `aptType`  
-[fora] Um ponteiro para um valor de enumeração [APTTYPE](/windows/win32/api/objidlbase/ne-objidlbase-apttype) que indica o apartamento do chamador.
+fora Um ponteiro para um valor de enumeração [APTTYPE](/windows/win32/api/objidlbase/ne-objidlbase-apttype) que indica o apartamento do chamador.
 
 ## <a name="return-value"></a>Valor retornado
 
-|Constante  |Valor  |Descrição  |
+|Constante  |Valor  |DESCRIÇÃO  |
 |---------|---------|---------|
-| `S_OK` | 0 | A função foi concluída com sucesso. |
-| `E_FAIL` | 0x80000008 | O interlocutor não está executando em um apartamento. |
+| `S_OK` | 0 | A função foi concluída com êxito. |
+| `E_FAIL` | 0x80000008 | O chamador não está sendo executado em um apartamento. |
   
 ## <a name="remarks"></a>Comentários
 
-Esta função envolve uma chamada para o método [IComThreadingInfo::GetCurrentApartmentType.](/windows/desktop/api/objidlbase/nf-objidlbase-icomthreadinginfo-getcurrentapartmenttype)
+Essa função encapsula uma chamada para o método [IComThreadingInfo:: GetCurrentApartmentType](/windows/desktop/api/objidlbase/nf-objidlbase-icomthreadinginfo-getcurrentapartmenttype) .
 
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
- **Cabeçalho:** WMINet_Utils.idl  
+ **Cabeçalho:** WMINet_Utils. idl  
   
- **.NET Framework Versions:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
+ **.NET Framework versões:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## <a name="see-also"></a>Confira também
 

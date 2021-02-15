@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: PeerSecuritySettings'
 title: PeerSecuritySettings
 ms.date: 03/30/2017
 ms.assetid: 24ae0d35-f3a3-419b-afd6-686e22aae27b
-ms.openlocfilehash: 1c33e1ce710fea3b1698a6dab47a199e40388f5a
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: a8b5b8c88e71cb46110fa35186599c0f9c366d17
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61963001"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803003"
 ---
 # <a name="peersecuritysettings"></a>PeerSecuritySettings
+
 PeerSecuritySettings  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class PeerSecuritySettings  
@@ -23,19 +25,23 @@ class PeerSecuritySettings
 ```  
   
 ## <a name="methods"></a>Métodos  
- A classe PeerSecuritySettings não define quaisquer métodos.  
+
+ A classe PeerSecuritySettings não define nenhum método.  
   
 ## <a name="properties"></a>Propriedades  
+
  A classe PeerSecuritySettings tem as seguintes propriedades:  
   
 ### <a name="mode"></a>Modo  
+
  Tipo de dados: cadeia de caracteres  
   
  Tipo de acesso: Somente leitura  
   
- Se no nível da mensagem e segurança em nível de transporte são usados por um ponto de extremidade configurado com a associação.  
+ Se a segurança em nível de transporte e nível de mensagem são usadas por um ponto de extremidade configurado com a associação.  
   
-### <a name="transport"></a>Transporte  
+### <a name="transport"></a>Transport  
+
  Tipo de dados: PeerTransportSecuritySettings  
   
  Tipo de acesso: Somente leitura  
@@ -44,10 +50,10 @@ class PeerSecuritySettings
   
 ## <a name="requirements"></a>Requisitos  
   
-|MOF|Declarado em Servicemodel.mof.|  
+|MOF|Declarado em ServiceModel. mof.|  
 |---------|-----------------------------------|  
-|Namespace|Definido no root\ServiceModel|  
+|Namespace|Definido em root\ServiceModel|  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.ServiceModel.PeerSecuritySettings>

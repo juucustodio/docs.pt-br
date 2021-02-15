@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedVariable:: GetAddressKind'
 title: Método ISymUnmanagedVariable::GetAddressKind
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: a71563c0-62f2-4eb4-970c-825d61827613
 topic_type:
 - apiref
-ms.openlocfilehash: 093c5e3e64395c8946acd9201990d132e8111fc7
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 4b090560335432ad39157fee987ce15728fece63
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83610581"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762845"
 ---
 # <a name="isymunmanagedvariablegetaddresskind-method"></a>Método ISymUnmanagedVariable::GetAddressKind
+
 Obtém o tipo de endereço dessa variável.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -33,15 +35,18 @@ HRESULT GetAddressKind(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pRetVal`  
  fora Um ponteiro para um `ULONG32` que recebe o valor. Os valores possíveis são definidos na enumeração [CorSymAddrKind](corsymaddrkind-enumeration.md) .  
   
 ## <a name="return-value"></a>Valor retornado  
+
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedVariable](isymunmanagedvariable-interface.md)

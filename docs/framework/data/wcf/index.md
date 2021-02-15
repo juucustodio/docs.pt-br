@@ -6,14 +6,18 @@ helpviewer_keywords:
 - Astoria
 - WCF Data Services, getting started
 ms.assetid: 73d2bec3-7c92-4110-b905-11bb0462357a
-ms.openlocfilehash: ca6b196e8c910f97ead6d1df5b6c0dd6c49c68a4
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 2d3da2ca9cd958fc70d3b91362dde71d68dc9d8a
+ms.sourcegitcommit: 8299abfbd5c49b596d61f1e4d09bc6b8ba055b36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85247747"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98898744"
 ---
 # <a name="wcf-data-services-45"></a>WCF Data Services 4.5
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+## <a name="overview"></a>Visão geral
 
 WCF Data Services (anteriormente conhecido como "ADO.NET Data Services") é um componente da .NET Framework que permite criar serviços que usam o Protocolo Open Data (OData) para expor e consumir dados pela Web ou intranet usando a semântica da [REST (transferência de estado de reapresentação)](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm). OData expõem dados como recursos que são endereçáveis por URIs. Os dados são acessados e alterados usando os verbos HTTP padrão GET, PUT, POST e DELETE. O OData usa as convenções de relacionamento de entidade do [modelo de dados de entidade](../adonet/entity-data-model.md) para expor recursos como conjuntos de entidades relacionadas por associações.
 
@@ -37,9 +41,9 @@ Mostrar apenas alguns códigos...
 
 - [Início rápido](quickstart-wcf-data-services.md)
 
-- [Como executar consultas de serviço de dados](how-to-execute-data-service-queries-wcf-data-services.md)
+- [Como: executar consultas de serviço de dados](how-to-execute-data-service-queries-wcf-data-services.md)
 
-- [Como associar dados aos elementos do Windows Presentation Foundation](bind-data-to-wpf-elements-wcf-data-services.md)
+- [Como: associar dados aos elementos do Windows Presentation Foundation](bind-data-to-wpf-elements-wcf-data-services.md)
 
 Quero saber mais sobre o OData...
 
@@ -54,7 +58,7 @@ Quero ver exemplos de ponta a ponta...
 
 Como ele se integra ao Visual Studio?
 
-- [Gerando a biblioteca do cliente de serviço de dados](generating-the-data-service-client-library-wcf-data-services.md)
+- [Gerar a biblioteca de clientes do serviço de dados](generating-the-data-service-client-library-wcf-data-services.md)
 
 - [Criar o serviço de dados](creating-the-data-service.md)
 
@@ -64,7 +68,7 @@ O que posso fazer com ele?
 
 - [Visão geral](wcf-data-services-overview.md)
 
-- [Cenários de aplicativos](application-scenarios-wcf-data-services.md)
+- [Cenários de aplicativo](application-scenarios-wcf-data-services.md)
 
 Quero usar LINQ...
 
@@ -72,11 +76,11 @@ Quero usar LINQ...
 
 - [Considerações sobre o LINQ](linq-considerations-wcf-data-services.md)
 
-- [Como executar consultas de serviço de dados](how-to-execute-data-service-queries-wcf-data-services.md)
+- [Como: executar consultas de serviço de dados](how-to-execute-data-service-queries-wcf-data-services.md)
 
 Ainda preciso de mais algumas informações...
 
-- [Blog da equipe do WCF Data Services](https://docs.microsoft.com/archive/blogs/astoriateam/)
+- [Blog da equipe do WCF Data Services](/archive/blogs/astoriateam/)
 
 - [Recursos](wcf-data-services-resources.md)
 
@@ -86,7 +90,7 @@ Ainda preciso de mais algumas informações...
 
 Fornece uma visão geral dos recursos e funcionalidades disponíveis no WCF Data Services.
 
-[O que há de novo no WCF Data Services 5,0](https://docs.microsoft.com/previous-versions/dotnet/wcf-data-services/ee373845(v=vs.103))
+[O que há de novo no WCF Data Services 5,0](/previous-versions/dotnet/wcf-data-services/ee373845(v=vs.103))
 
 Descreve a nova funcionalidade no WCF Data Services e suporte para novos recursos OData.
 
@@ -102,6 +106,6 @@ Descreve como criar e configurar um serviço de dados que expõe feeds OData.
 
 Descreve como usar bibliotecas de cliente para consumir feeds OData de um aplicativo cliente .NET Framework.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Representational State Transfer (REST)](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm) [REST (Transferência de Estado Representacional)]

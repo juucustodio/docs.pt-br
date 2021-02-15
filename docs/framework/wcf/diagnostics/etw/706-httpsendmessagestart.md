@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 706-HttpSendMessageStart'
 title: 706 - HttpSendMessageStart
 ms.date: 03/30/2017
 ms.assetid: 825d3697-4b6c-4156-8f3a-ce24c4e39c48
-ms.openlocfilehash: 70ea44a5a407d053bc590e41610d97447af0c4a3
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: d3183f2bdb46d50d27444fcdbef430b8e6d4972e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61952874"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99771529"
 ---
 # <a name="706---httpsendmessagestart"></a>706 - HttpSendMessageStart
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,9 +22,11 @@ ms.locfileid: "61952874"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando enviar solicitação Http é iniciado.  
+
+ Esse evento é emitido quando a solicitação de envio http é iniciada.  
   
 ## <a name="message"></a>Mensagem  
- Início de solicitação de envio HTTP.  
+
+ Início da solicitação de envio http.  
   
 ## <a name="details"></a>Detalhes

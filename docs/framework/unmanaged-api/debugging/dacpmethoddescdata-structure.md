@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura DacpMethodDescData'
 title: Estrutura DacpMethodDescData
 ms.date: 02/01/2019
 api.name:
@@ -15,12 +16,12 @@ topic_type:
 - apiref
 author: hoyosjs
 ms.author: juhoyosa
-ms.openlocfilehash: d623fe862eaf5902fd89d0e512dd07f73a03246f
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: fe5b09874b3f8e123cb2501fcb00e3351aa44757
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860809"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801456"
 ---
 # <a name="dacpmethoddescdata-structure"></a>Estrutura DacpMethodDescData
 
@@ -54,7 +55,7 @@ struct DacpMethodDescData
 
 ## <a name="members"></a>Membros
 
-| Membro                       | Descrição                                                                                     |
+| Membro                       | DESCRIÇÃO                                                                                     |
 | ---------------------------- | ----------------------------------------------------------------------------------------------- |
 | `bHasNativeCode`             | Indica se o tempo de execução tem código nativo disponível para a instanciação fornecida do método. |
 | `bIsDynamic`                 | Indica se o método é gerado dinamicamente por meio da geração de código leve.           |
@@ -78,12 +79,13 @@ struct DacpMethodDescData
 Essa estrutura reside dentro do tempo de execução e não é exposta por nenhum cabeçalho ou arquivo de biblioteca. Para usá-lo, defina a estrutura conforme especificado acima.
 
 ## <a name="requirements"></a>Requisitos
+
 **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
 **Cabeçalho:** None  
 **Biblioteca:** None  
 **.NET Framework versões:**[!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depuração](index.md)
 - [Estruturas de depuração](debugging-structures.md)

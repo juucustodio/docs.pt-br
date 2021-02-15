@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRMemoryNotificationCallback:: OnMemoryNotification'
 title: Método ICLRMemoryNotificationCallback::OnMemoryNotification
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 5612a44d-56cc-4f34-af31-8c9809ba9431
 topic_type:
 - apiref
-ms.openlocfilehash: d88abcc523eca06c8ec50cac2d2984b26099174a
-ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
+ms.openlocfilehash: 92041c433fa82bb63afda7968eb8c6e1fa72acb3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83703795"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789894"
 ---
 # <a name="iclrmemorynotificationcallbackonmemorynotification-method"></a>Método ICLRMemoryNotificationCallback::OnMemoryNotification
+
 Notifica o Common Language Runtime (CLR) da carga de memória no computador.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,6 +36,7 @@ HRESULT OnMemoryNotification (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `eMemoryAvailable`  
  no Um dos valores de [EMemoryAvailable](ememoryavailable-enumeration.md) , indicando a pressão de memória que o computador está enfrentando no momento.  
   
@@ -41,7 +44,7 @@ HRESULT OnMemoryNotification (
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
-|S_OK|`OnMemoryNotification`retornado com êxito.|  
+|S_OK|`OnMemoryNotification` retornado com êxito.|  
 |HOST_E_CLRNOTAVAILABLE|O CLR não foi carregado em um processo ou o CLR está em um estado no qual não pode executar código gerenciado ou processar a chamada com êxito.|  
 |HOST_E_TIMEOUT|A chamada atingiu o tempo limite.|  
 |HOST_E_NOT_OWNER|O chamador não possui o bloqueio.|  
@@ -49,21 +52,23 @@ HRESULT OnMemoryNotification (
 |E_FAIL|Ocorreu uma falha catastrófica desconhecida. Depois que um método retorna E_FAIL, o CLR não pode mais ser usado no processo. As chamadas subsequentes para métodos de hospedagem retornam HOST_E_CLRNOTAVAILABLE.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O CLR registra um retorno de chamada para `OnMemoryNotification` usando uma chamada para o método [IHostMemoryManager:: RegisterMemoryNotificationCallback](ihostmemorymanager-registermemorynotificationcallback-method.md) . O tempo de execução usa as informações retornadas no retorno de chamada para liberar memória adicional quando o host relata que os recursos de memória estão em execução baixa.  
   
 > [!NOTE]
 > Chamadas para `OnMemoryNotification` nunca bloquear. Eles sempre retornam imediatamente.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IHostMemoryManager](ihostmemorymanager-interface.md)
 - [Método RegisterMemoryNotificationCallback](ihostmemorymanager-registermemorynotificationcallback-method.md)

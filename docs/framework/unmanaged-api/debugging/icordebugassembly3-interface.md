@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugAssembly3'
 title: Interface ICorDebugAssembly3
 ms.date: 03/30/2017
 ms.assetid: 17fc5d76-75a9-4933-83f0-594de7f973f3
-ms.openlocfilehash: 67707092c80b0e07aa284336c426aba09ff991af
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 3a8cabf41dffa75d82c2b6fde53dff2ede4838e7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82894820"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791498"
 ---
 # <a name="icordebugassembly3-interface"></a>Interface ICorDebugAssembly3
+
 Estende logicamente a interface ICorDebugAssembly para oferecer suporte a assemblies de contêiner e seus assemblies contidos.  
   
 ## <a name="methods"></a>Métodos  
@@ -22,9 +24,10 @@ Estende logicamente a interface ICorDebugAssembly para oferecer suporte a assemb
 ## <a name="remarks"></a>Comentários  
   
 > [!NOTE]
-> A interface está disponível somente com .NET Native. A tentativa de chamar `QueryInterface` para recuperar um ponteiro de interface `E_NOINTERFACE` retorna para cenários ICorDebug fora do .net Native.  
+> A interface está disponível somente com .NET Native. A tentativa de chamar `QueryInterface` para recuperar um ponteiro de interface retorna `E_NOINTERFACE` para cenários ICorDebug fora do .net Native.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

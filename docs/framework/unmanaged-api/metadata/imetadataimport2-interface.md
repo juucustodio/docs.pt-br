@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IMetaDataImport2'
 title: Interface IMetaDataImport2
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: d39b2b87-ba53-4771-ae53-952a68452511
 topic_type:
 - apiref
-ms.openlocfilehash: fe9e87618291218a41e52f80198ce9068c9c56e2
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: de1b190ae174c6028e4f116d7f6fc0b9af0aac6d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84490385"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99688540"
 ---
 # <a name="imetadataimport2-interface"></a>Interface IMetaDataImport2
+
 Estende a interface [IMetaDataImport](imetadataimport-interface.md) para fornecer a capacidade de trabalhar com tipos genéricos.  
   
 ## <a name="methods"></a>Métodos  
@@ -38,15 +40,16 @@ Estende a interface [IMetaDataImport](imetadataimport-interface.md) para fornece
 |[Método GetVersionString](imetadataimport2-getversionstring-method.md)|Obtém o número de versão do tempo de execução que foi usado para compilar o assembly.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Reflection.PortableExecutableKinds>
 - [Interfaces de metadados](metadata-interfaces.md)

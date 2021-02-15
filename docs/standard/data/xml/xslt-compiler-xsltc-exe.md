@@ -1,21 +1,22 @@
 ---
+description: 'Saiba mais sobre: compilador XSLT (xsltc.exe)'
 title: Compilador de XSLT (xsltc.exe)
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 ms.assetid: 672a5ac8-8305-4d28-ba10-11089c2c0924
-ms.openlocfilehash: 18f351546699487316858198b705e970de4856c1
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 96236e7a7c985c4a71c2f09ffd3ad720bb3d40f1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84282604"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782540"
 ---
 # <a name="xslt-compiler-xsltcexe"></a>Compilador de XSLT (xsltc.exe)
+
 O compilador XSLT (xsltc.exe) compila folhas de estilos XSLT e gera um assembly. A folha de estilos compilada pode ser passada diretamente para o método <xref:System.Xml.Xsl.XslCompiledTransform.Load%28System.Type%29?displayProperty=nameWithType>. Você não pode gerar assemblies assinados com xsltc.exe.  
   
  A ferramenta xsltc.exe está incluída no Visual Studio. para obter mais informações, consulte os [Downloads do Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs).  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```console  
 xsltc [options] [/class:<name>] <sourceFile> [[/class:<name>] <sourceFile>...]  
@@ -29,7 +30,7 @@ xsltc [options] [/class:<name>] <sourceFile> [[/class:<name>] <sourceFile>...]
   
 ## <a name="options"></a>Opções  
   
-|Opção|Description|  
+|Opção|Descrição|  
 |------------|-----------------|  
 |`/c[lass]:` `name`|Especifica o nome da classe para a folha de estilos a seguir. O nome da classe pode ser totalmente qualificado.<br /><br /> O nome da classe utiliza como padrão o nome da folha de estilos. Por exemplo, se a folha de estilos customers.xsl for compilada, o nome da classe padrão será customers.|  
 |`/debug[`+&#124;-`]`|Especifica se informações de depuração devem ser geradas.<br /><br /> Especificar `+` ou `/debug` faz o compilador gerar informações de depuração e colocá-lo em um arquivo de banco de dados do programa (PDB). O nome do arquivo PDB gerado é `assemblyName`.pdb.<br /><br /> Especificar `-`, que é aplicado se você não especificar `/debug`, não cria nenhuma informação de depuração. Um assembly comercial é gerado. **Observação:** a compilação no modo de depuração pode afetar o desempenho do XSLT significativamente.|  
@@ -42,6 +43,7 @@ xsltc [options] [/class:<name>] <sourceFile> [[/class:<name>] <sourceFile>...]
 |`?`|Exibe sintaxe de comando e opções para a ferramenta.|  
   
 ## <a name="remarks"></a>Comentários  
+
  As soluções XSLT podem consistir em vários módulos de folha de estilos. A ferramenta xsltc.exe gera assemblies de folhas de estilos. Os assemblies podem então ser passados no método <xref:System.Xml.Xsl.XslCompiledTransform.Load%28System.Type%29?displayProperty=nameWithType>. Isso pode ajudar a reduzir os custos de desempenho em alguns cenários de implantação de XSLT.  
   
 > [!NOTE]
@@ -50,6 +52,7 @@ xsltc [options] [/class:<name>] <sourceFile> [[/class:<name>] <sourceFile>...]
  A ferramenta xsltc.exe não valida os nomes de classe (`/class:`*name*) nem de assembly (`/out:`*assemblyName*). Erros serão lançados pelo Common Language Runtime se os nomes forem inválidos.  
   
 ## <a name="examples"></a>Exemplos  
+
  O comando a seguir compila a folha de estilos e cria um assembly chamado booksort.dll.  
   
 ```console  
@@ -80,7 +83,7 @@ xsltc /settings:DTD+,script+ /out:myTest calc.xsl
 xsltc booksort.xsl output.xsl  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.Xsl.XslCompiledTransform>
 - [Como: Executar uma transformação XSLT usando um assembly](how-to-perform-an-xslt-transformation-by-using-an-assembly.md)

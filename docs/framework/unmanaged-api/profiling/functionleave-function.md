@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função FunctionLeave'
 title: Função FunctionLeave
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 18e89f45-e068-426a-be16-9f53a4346860
 topic_type:
 - apiref
-ms.openlocfilehash: 836e4843ead940bc9f76ff6bdd0433e21e400afd
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: cc0db68df8976ce86197cc9b7570b00c6f662cb5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500631"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648474"
 ---
 # <a name="functionleave-function"></a>Função FunctionLeave
+
 Notifica o criador de perfil de que uma função está prestes a retornar ao chamador.  
   
 > [!NOTE]
@@ -42,6 +44,7 @@ void __stdcall FunctionLeave (
   \[in] o identificador da função que está retornando.
 
 ## <a name="remarks"></a>Comentários  
+
  A `FunctionLeave` função é um retorno de chamada; você deve implementá-la. A implementação deve usar o `__declspec` `naked` atributo de classe de armazenamento ().  
   
  O mecanismo de execução não salva nenhum registro antes de chamar essa função.  
@@ -55,6 +58,7 @@ void __stdcall FunctionLeave (
  Além disso, a `FunctionLeave` função não deve chamar um código gerenciado ou, de qualquer forma, causar uma alocação de memória gerenciada.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl  
@@ -63,7 +67,7 @@ void __stdcall FunctionLeave (
   
  **Versões do .NET Framework:** 1,1, 1,0  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Função FunctionEnter2](functionenter2-function.md)
 - [Função FunctionLeave2](functionleave2-function.md)

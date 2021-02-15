@@ -1,34 +1,38 @@
 ---
+description: 'Saiba mais sobre: 303-UserDefinedInformationEventOccured'
 title: 303 - UserDefinedInformationEventOccured
 ms.date: 03/30/2017
 ms.assetid: 5ed5acaf-3755-4417-92c4-4ebc8e854ca1
-ms.openlocfilehash: 0b782b5ac0527b5acb3ebf0bf11c117563042495
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 51c4acd5d10a2d563dd7fbcebf90b75c64ff20ad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61595771"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794228"
 ---
 # <a name="303---userdefinedinformationeventoccured"></a>303 - UserDefinedInformationEventOccured
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
 |ID|303|  
 |Palavras-chave|Solução de problemas, HealthMonitoring, UserEvents, ServiceModel, EndToEndMonitoring|  
-|Nível|Informações|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido do código do usuário. Os desenvolvedores podem emitir esse evento quando ocorre um evento de informação personalizadas em seus serviços. Isso pode ser feito usando o <xref:System.Diagnostics.Eventing> APIs. Além disso, há um exemplo do WCF que envolve essa API e demonstra como emitir corretamente esse evento.  
+
+ Esse evento é emitido a partir do código do usuário. Os desenvolvedores podem emitir esse evento quando um evento informativo definido por personalizado ocorrer em seu serviço. Isso pode ser feito usando as <xref:System.Diagnostics.Eventing> APIs. Além disso, há um exemplo do WCF que encapsula essa API e demonstra como emitir esse evento corretamente.  
   
 ## <a name="message"></a>Mensagem  
- Nome: '%1', referência: '%2', carga: % 3  
+
+ Nome: ' %1 ', referência: ' %2 ', carga: %3  
   
 ## <a name="details"></a>Detalhes  
   
 |Nome do item de dados|Tipo de item de dados|Descrição|  
 |--------------------|--------------------|-----------------|  
-|Nome|`xs:string`|O nome do evento definido pelo usuário|  
-|HostReference|`xs:string`|Os serviços hospedados da Web, este campo identificam exclusivamente o serviço na hierarquia da Web. O formato é definido como ' caminho Virtual do aplicativo de nome de Site&#124;caminho Virtual de serviço&#124;ServiceName'. Exemplo: ' Default Web Site/CalculatorApplication&#124;/CalculatorService.svc&#124;CalculatorService'.|  
-|carga|`xs:string`|A carga do evento definido pelo usuário.|
+|Nome|`xs:string`|O nome definido pelo usuário do evento|  
+|HostReference|`xs:string`|Os serviços hospedados da Web, este campo identificam exclusivamente o serviço na hierarquia da Web. Seu formato é definido como ' nome do site aplicativo caminho virtual&#124;serviço caminho virtual&#124;ServiceName '. Exemplo: ' Default Web site/CalculatorApplication&#124;/CalculatorService.svc&#124;CalculatorService '.|  
+|Carga útil|`xs:string`|A carga definida pelo usuário do evento.|

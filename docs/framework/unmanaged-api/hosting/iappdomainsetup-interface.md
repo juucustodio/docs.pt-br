@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IAppDomainSetup'
 title: Interface IAppDomainSetup
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1844da85-c031-40bf-bea4-1a3d12a36c8c
 topic_type:
 - apiref
-ms.openlocfilehash: 1726f8929404e0dde979972d7830a6951dd71891
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 8fd224308ea68f7b56ae174c7f71fc4f89630101
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83617055"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760578"
 ---
 # <a name="iappdomainsetup-interface"></a>Interface IAppDomainSetup
+
 Fornece propriedades que permitem ao host configurar um <xref:System.AppDomain?displayProperty=nameWithType> tipo antes de chamar o método [ICorRuntimeHost:: CreateDomainEx](icorruntimehost-createdomainex-method.md) para criá-lo.  
   
 ## <a name="properties"></a>Propriedades  
@@ -40,20 +42,22 @@ Fornece propriedades que permitem ao host configurar um <xref:System.AppDomain?d
 |<xref:System.AppDomainSetup.ShadowCopyFiles%2A>|Obtém ou define uma cadeia de caracteres que indica se a cópia de sombra está ativada ou desativada. Os valores válidos são "true" ou "false".|  
   
 ## <a name="remarks"></a>Comentários  
+
  A `IAppDomainSetup` interface corresponde à interface gerenciada <xref:System.IAppDomainSetup> , que o <xref:System.AppDomainSetup> tipo implementa. Consulte <xref:System.IAppDomainSetup?displayProperty=nameWithType> para obter descrições detalhadas de suas propriedades.  
   
- `IAppDomainSetup`representa informações de associação de assembly que podem ser adicionadas a uma <xref:System.AppDomain> instância antes da sua criação. Por exemplo, um host pode definir a <xref:System.AppDomainSetup.ApplicationBase%2A> propriedade para estabelecer um diretório raiz, que o Common Language Runtime (CLR) testa para assemblies gerenciados.  
+ `IAppDomainSetup` representa informações de associação de assembly que podem ser adicionadas a uma <xref:System.AppDomain> instância antes da sua criação. Por exemplo, um host pode definir a <xref:System.AppDomainSetup.ApplicationBase%2A> propriedade para estabelecer um diretório raiz, que o Common Language Runtime (CLR) testa para assemblies gerenciados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.AppDomain>
 - <xref:System.AppDomainSetup>

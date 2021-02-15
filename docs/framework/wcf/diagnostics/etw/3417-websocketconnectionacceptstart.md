@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 3417-WebSocketConnectionAcceptStart'
 title: 3417 - WebSocketConnectionAcceptStart
 ms.date: 03/30/2017
 ms.assetid: 9d595fe3-2276-4d77-85c8-b6a966199c5b
-ms.openlocfilehash: b596efaa73690d428c03e6cba45cb078cf2421a7
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 554a8516854c9505935ec872ccf1b0ac313d78ee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61748819"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99669547"
 ---
 # <a name="3417---websocketconnectionacceptstart"></a>3417 - WebSocketConnectionAcceptStart
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,9 +22,11 @@ ms.locfileid: "61748819"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando o WebSocket para aceitar conexão foi iniciada.  
+
+ Esse evento é emitido quando a aceitação da conexão WebSocket é iniciada.  
   
 ## <a name="message"></a>Mensagem  
- Conexão de WebSocket aceitar o início.  
+
+ Início da aceitação da conexão WebSocket.  
   
 ## <a name="details"></a>Detalhes

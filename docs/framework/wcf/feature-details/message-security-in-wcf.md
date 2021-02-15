@@ -3,12 +3,12 @@ title: Segurança de mensagem no WCF
 description: Saiba mais sobre o TransportWithMessageCredential, um tipo de segurança de mensagem do WCF que usa uma combinação de modos de segurança de transporte e mensagem.
 ms.date: 03/30/2017
 ms.assetid: a80efb59-591a-4a37-bb3c-8fffa6ca0b7d
-ms.openlocfilehash: 315a12c73929bfe71340e42f122ae542d4fddc07
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: ea10a87a7c8f9e545c320af30c5cf9958317c2f7
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85245018"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90551126"
 ---
 # <a name="message-security-in-wcf"></a>Segurança de mensagem no WCF
 
@@ -64,9 +64,9 @@ A segurança da mensagem tem as seguintes desvantagens:
 
 - Requer a implementação de mecanismos de segurança em nível XML e suporte para especificação WS-Security. Isso pode afetar a interoperabilidade.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Protegendo serviços e clientes](securing-services-and-clients.md)
 - [Segurança de transporte](transport-security.md)
-- [Como utilizar credenciais de mensagem e segurança de transporte](how-to-use-transport-security-and-message-credentials.md)
-- [Práticas e padrões da Microsoft, capítulo 3: Implementando o transporte e a segurança da camada de mensagens](https://docs.microsoft.com/previous-versions/msp-n-p/ff647370(v=pandp.10))
+- [Como: usar credenciais de mensagem e segurança do transporte](how-to-use-transport-security-and-message-credentials.md)
+- [Práticas e padrões da Microsoft, capítulo 3: Implementando o transporte e a segurança da camada de mensagens](/previous-versions/msp-n-p/ff647370(v=pandp.10))

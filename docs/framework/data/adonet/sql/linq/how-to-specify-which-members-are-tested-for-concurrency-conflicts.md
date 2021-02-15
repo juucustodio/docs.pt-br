@@ -1,21 +1,23 @@
 ---
+description: 'Saiba mais sobre: como especificar quais membros são testados para conflitos de simultaneidade'
 title: 'Como: especificar quais membros são testados quanto a conflitos de simultaneidade'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: d2cda293-1e2f-4878-af0e-5aaf0d092120
-ms.openlocfilehash: de7109e0fed0eb7c1975ad7360a7588ef9b294ef
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: f2623c1e6afcf97ee2de62b94b80145ca2a5cad3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70793148"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99785843"
 ---
 # <a name="how-to-specify-which-members-are-tested-for-concurrency-conflicts"></a>Como: especificar quais membros são testados quanto a conflitos de simultaneidade
-Aplique uma das três enums à [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A> Propriedade em um <xref:System.Data.Linq.Mapping.ColumnAttribute> atributo para especificar quais membros devem ser incluídos nas verificações de atualização para a detecção de conflitos de simultaneidade otimista.  
+
+Aplique uma das três enums à [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A> propriedade em um <xref:System.Data.Linq.Mapping.ColumnAttribute> atributo para especificar quais membros devem ser incluídos nas verificações de atualização para a detecção de conflitos de simultaneidade otimista.  
   
- A propriedade de <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A> (mapeada em tempo de design) é usada junto com recursos de simultaneidade de tempo de execução em [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]. Para obter mais informações, [consulte simultaneidade otimista: Visão](optimistic-concurrency-overview.md)geral.  
+ A propriedade de <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A> (mapeada em tempo de design) é usada junto com recursos de simultaneidade de tempo de execução em [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]. Para obter mais informações, consulte [simultaneidade otimista: visão geral](optimistic-concurrency-overview.md).  
   
 > [!NOTE]
 > Os valores membro original são comparados com o estado atual de base de dados como nenhum membro é designado como `IsVersion=true`. Para obter mais informações, consulte <xref:System.Data.Linq.Mapping.ColumnAttribute.IsVersion%2A>.  
@@ -41,6 +43,7 @@ Aplique uma das três enums à [!INCLUDE[vbtecdlinq](../../../../../../includes/
 2. Definir o valor da propriedade de <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A> a `WhenChanged`.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir especifica que os objetos de `HomePage` nunca devem ser testados durante verificações de atualização. Para obter mais informações, consulte <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A>.  
   
  [!code-csharp[System.Data.Linq.Mapping.UpdateCheck#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/system.data.linq.mapping.updatecheck/cs/northwind.cs#1)]
@@ -48,5 +51,5 @@ Aplique uma das três enums à [!INCLUDE[vbtecdlinq](../../../../../../includes/
   
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Gerenciar conflitos de alterações](how-to-manage-change-conflicts.md)
-- [Realizando e enviando alterações de dados](making-and-submitting-data-changes.md)
+- [Como: gerenciar conflitos de alteração](how-to-manage-change-conflicts.md)
+- [Fazendo e enviando alterações de dados](making-and-submitting-data-changes.md)

@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <add> de <backupList>'
 title: <add> de <backupList>
 ms.date: 03/30/2017
 ms.assetid: bc5939fc-314a-4ea4-a533-c96958da7173
-ms.openlocfilehash: 80726cc22cb56013c85c7704c28579b1337666c9
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 9855d93be011b4eaa2890c4d24392fde3b65d05a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70850542"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99804069"
 ---
 # <a name="add-of-backuplist"></a>\<add> de \<backupList>
+
 Representa um elemento de configuração que define um elemento de ponto de extremidade de backup.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -19,7 +21,7 @@ Representa um elemento de configuração que define um elemento de ponto de extr
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<backupList>**](backuplist.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <routing>
@@ -32,6 +34,7 @@ Representa um elemento de configuração que define um elemento de ponto de extr
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -41,6 +44,7 @@ Representa um elemento de configuração que define um elemento de ponto de extr
 |name|Uma cadeia de caracteres que especifica o nome do ponto de extremidade de backup.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  

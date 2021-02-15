@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugVariableHome'
 title: Interface ICorDebugVariableHome
 ms.date: 03/30/2017
 dev_langs:
@@ -16,14 +17,15 @@ helpviewer_keywords:
 ms.assetid: 76f2bf3b-759f-4eed-bce7-119415b25915
 topic_type:
 - apiref
-ms.openlocfilehash: caf6a24207be98be9afb10be2bd027b51405fa3b
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: a1dcc959ba9aeffc0e511dcd2f5bb15f58445139
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396548"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99790627"
 ---
 # <a name="icordebugvariablehome-interface"></a>Interface ICorDebugVariableHome
+
 Representa uma variável local ou um argumento de uma função.  
   
 ## <a name="methods"></a>Métodos  
@@ -39,6 +41,7 @@ Representa uma variável local ou um argumento de uma função.
 |[Método GetSlotIndex](icordebugvariablehome-getslotindex-method.md)|Obtém o índice de slot gerenciado de uma variável local.|  
   
 ## <a name="example"></a>Exemplo  
+
  O fragmento de código a seguir usa o objeto [ICorDebugCode4](icordebugcode4-interface.md) chamado `pCode4` .  
   
 ```cpp  
@@ -81,6 +84,7 @@ for (int i = 0; i < celtFetched; i++)
 ```  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -89,7 +93,7 @@ for (int i = 0; i < celtFetched; i++)
   
  **.NET Framework versões:**[!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Interface ICorDebugVariableHomeEnum](icordebugvariablehomeenum-interface.md)

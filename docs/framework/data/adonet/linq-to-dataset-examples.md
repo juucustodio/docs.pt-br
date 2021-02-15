@@ -1,19 +1,22 @@
 ---
+description: 'Saiba mais sobre: exemplos de LINQ to DataSet'
 title: LINQ para exemplos de DataSet
 ms.date: 03/30/2017
 ms.assetid: dfd91658-8d8a-45a4-a356-e327e809f21d
-ms.openlocfilehash: 68d4ed74713858a643c6db40b6982ba2775dbfa5
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 65977210fb160439231ea723134c94eb56ca8930
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70783760"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99672745"
 ---
 # <a name="linq-to-dataset-examples"></a>LINQ para exemplos de DataSet
-Esta seção fornece LINQ to DataSet exemplos de programação que usam os operadores de consulta padrão. O <xref:System.Data.DataSet> usado nesses exemplos é populado usando o `FillDataSet` método, que é especificado no [carregamento de dados em um DataSet](loading-data-into-a-dataset.md). Para obter mais informações, consulte Visão geral [dos operadoresC#de consulta Standard ()](../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md) ou [Standard Query Operators Overview (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md).  
+
+Esta seção fornece LINQ to DataSet exemplos de programação que usam os operadores de consulta padrão. O <xref:System.Data.DataSet> usado nesses exemplos é populado usando o `FillDataSet` método, que é especificado no [carregamento de dados em um DataSet](loading-data-into-a-dataset.md). Para obter mais informações, consulte Visão geral [dos operadores de consulta Standard (C#)](../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md) ou [padrão de operadores de consulta (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md).  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Exemplos de expressões de consulta](query-expression-examples-linq-to-dataset.md)  
+
+ [Exemplos de expressão de consulta](query-expression-examples-linq-to-dataset.md)  
  Contém os seguintes exemplos:  
   
 - [Projeção](query-expression-syntax-examples-projection-linq-to-dataset.md)  
@@ -22,7 +25,7 @@ Esta seção fornece LINQ to DataSet exemplos de programação que usam os opera
   
 - [Particionamento](query-expression-syntax-examples-partitioning.md)  
   
-- [Ordenação](query-expression-syntax-examples-ordering-linq-to-dataset.md)  
+- [Ordenando](query-expression-syntax-examples-ordering-linq-to-dataset.md)  
   
 - [Operadores de elemento](query-expression-syntax-examples-element-operators.md)  
   
@@ -37,7 +40,7 @@ Esta seção fornece LINQ to DataSet exemplos de programação que usam os opera
   
 - [Particionamento](method-based-query-syntax-examples-partitioning-linq.md)  
   
-- [Ordenação](method-based-query-syntax-examples-ordering-linq-to-dataset.md)  
+- [Ordenando](method-based-query-syntax-examples-ordering-linq-to-dataset.md)  
   
 - [Operadores de conjunto](method-based-query-syntax-examples-set-operators.md)  
   
@@ -47,12 +50,12 @@ Esta seção fornece LINQ to DataSet exemplos de programação que usam os opera
   
 - [Operadores agregados](method-based-query-syntax-examples-aggregate-operators.md)  
   
-- [Join](method-based-query-syntax-examples-join-linq-to-dataset.md)  
+- [Unir](method-based-query-syntax-examples-join-linq-to-dataset.md)  
   
- [Exemplos de operador de conjunto de dados específicos](dataset-specific-operator-examples-linq-to-dataset.md)  
+ [Exemplos de operador de DataSet específicos](dataset-specific-operator-examples-linq-to-dataset.md)  
  Contém exemplos que demonstram como usar o método <xref:System.Data.DataTableExtensions.CopyToDataTable%2A> e a classe <xref:System.Data.DataRowComparer>.  
   
 ## <a name="see-also"></a>Consulte também
 
-- [Guia de Programação](programming-guide-linq-to-dataset.md)
-- [Carregar dados para um conjunto de dados](loading-data-into-a-dataset.md)
+- [Guia de programação](programming-guide-linq-to-dataset.md)
+- [Carregando dados em um DataSet](loading-data-into-a-dataset.md)

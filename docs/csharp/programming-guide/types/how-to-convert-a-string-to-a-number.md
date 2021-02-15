@@ -1,37 +1,39 @@
 ---
 title: Como converter uma cadeia de caracteres em um guia de programação de um número C#
 description: Saiba como converter uma cadeia de caracteres em um número em C# chamando os métodos de classe Parse, TryParse ou Convert.
-ms.date: 02/11/2019
+ms.date: 11/20/2020
 helpviewer_keywords:
 - conversions [C#]
 - conversions [C#], string to int
 - converting strings to int [C#]
 - strings [C#], converting to int
+ms.topic: how-to
+ms.custom: contperf-fy21q2
 ms.assetid: 467b9979-86ee-4afd-b734-30299cda91e3
-ms.openlocfilehash: 8c46117579a5b787e5d9f3f317296d33bdd1cce1
-ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
+ms.openlocfilehash: 430887ebb16570439a89f3625ac12a1fbb368227
+ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87381964"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97513153"
 ---
 # <a name="how-to-convert-a-string-to-a-number-c-programming-guide"></a>Como converter uma cadeia de caracteres em um número (guia de programação C#)
 
-Você pode converter uma [cadeia de caracteres](../../language-reference/builtin-types/reference-types.md) em um número chamando `Parse` o `TryParse` método ou encontrado nos vários tipos numéricos ( `int` ,, `long` `double` , etc.) ou usando métodos na <xref:System.Convert?displayProperty=nameWithType> classe.  
+Você pode converter uma [cadeia de caracteres](../../language-reference/builtin-types/reference-types.md) em um número chamando `Parse` o `TryParse` método ou encontrado nos vários tipos numéricos ( `int` ,, `long` `double` e assim por diante) ou usando métodos na <xref:System.Convert?displayProperty=nameWithType> classe.  
   
- Se você tiver uma cadeia de caracteres, será um pouco mais eficiente e simples chamar um `TryParse` método (por exemplo, [`int.TryParse("11", out number)`](xref:System.Int32.TryParse%2A) ) ou `Parse` método (por exemplo, [`var number = int.Parse("11")`](xref:System.Int32.Parse%2A) ).  Usar um método <xref:System.Convert> é mais útil para objetos gerais que implementam <xref:System.IConvertible>.  
+ É um pouco mais eficiente e direto chamar um `TryParse` método (por exemplo, [`int.TryParse("11", out number)`](xref:System.Int32.TryParse%2A) ) ou `Parse` método (por exemplo, [`var number = int.Parse("11")`](xref:System.Int32.Parse%2A) ).  Usar um método <xref:System.Convert> é mais útil para objetos gerais que implementam <xref:System.IConvertible>.  
   
- É possível usar métodos `Parse` ou `TryParse` no tipo numérico que se espera que a cadeia de caracteres contenha, como o tipo <xref:System.Int32?displayProperty=nameWithType>.  O método <xref:System.Convert.ToInt32%2A?displayProperty=nameWithType> usa <xref:System.Int32.Parse%2A> internamente.  O `Parse` método retorna o número convertido; o `TryParse` método retorna um <xref:System.Boolean> valor que indica se a conversão foi bem-sucedida e retorna o número convertido em um [ `out` parâmetro](../../language-reference/keywords/out.md). Se a cadeia de caracteres não estiver em um formato válido, o `Parse` lançará uma exceção, enquanto `TryParse` retorna `false` . Ao chamar um método `Parse`, você sempre deve usar o tratamento de exceções para capturar um <xref:System.FormatException> no caso da operação de análise falhar.  
+ Você usa `Parse` `TryParse` métodos ou no tipo numérico que espera que a cadeia de caracteres contenha, como o <xref:System.Int32?displayProperty=nameWithType> tipo.  O método <xref:System.Convert.ToInt32%2A?displayProperty=nameWithType> usa <xref:System.Int32.Parse%2A> internamente.  O `Parse` método retorna o número convertido; o `TryParse` método retorna um <xref:System.Boolean> valor que indica se a conversão foi bem-sucedida e retorna o número convertido em um [ `out` parâmetro](../../language-reference/keywords/out.md). Se a cadeia de caracteres não estiver em um formato válido, o `Parse` lançará uma exceção, mas `TryParse` retornará `false` . Ao chamar um método `Parse`, você sempre deve usar o tratamento de exceções para capturar um <xref:System.FormatException> no caso da operação de análise falhar.  
   
 ## <a name="calling-the-parse-and-tryparse-methods"></a>Como chamar os métodos Parse e TryParse
 
-Os métodos `Parse` e `TryParse` ignoram o espaço em branco no início e no final da cadeia de caracteres; porém, todos os outros caracteres devem formar o tipo numérico correto (`int`, `long`, `ulong`, `float`, `decimal` etc.).  Qualquer espaço em branco na cadeia de caracteres que forma o número causa um erro.  Por exemplo, é possível usar `decimal.TryParse` para analisar "10", "10,3" ou "  10  ", mas não é possível usar esse método para analisar 10 de "10X", "1 0" (observe o espaço inserido), "10 .3" (observe o espaço inserido), "10e1" (`float.TryParse` funcionará neste caso) e assim por diante. Além disso, uma cadeia de caracteres cujo valor seja `null` ou <xref:System.String.Empty?displayProperty=nameWithType> falhará ao ser analisada com êxito. Você pode verificar uma cadeia de caracteres nula ou vazia antes de tentar analisá-la chamando o método <xref:System.String.IsNullOrEmpty%2A?displayProperty=nameWithType>.
+Os `Parse` `TryParse` métodos e ignoram o espaço em branco no início e no final da cadeia de caracteres, mas todos os outros caracteres devem ser caracteres que formam o tipo numérico apropriado (,,,, `int` `long` `ulong` `float` `decimal` e assim por diante).  Qualquer espaço em branco na cadeia de caracteres que forma o número causa um erro.  Por exemplo, você pode usar `decimal.TryParse` para analisar "10", "10,3" ou "10", mas não pode usar esse método para analisar 10 de "10x", "1 0" (Observe o espaço incorporado), "10 3" (Observe o espaço incorporado), "10e1" ( `float.TryParse` funciona aqui) e assim por diante. Uma cadeia de caracteres cujo valor é `null` ou não é possível <xref:System.String.Empty?displayProperty=nameWithType> analisar com êxito. Você pode verificar uma cadeia de caracteres nula ou vazia antes de tentar analisá-la chamando o método <xref:System.String.IsNullOrEmpty%2A?displayProperty=nameWithType>.
 
 O exemplo a seguir demonstra chamadas com e sem êxito para `Parse` e `TryParse`.  
   
 [!code-csharp[Parse and TryParse](~/samples/snippets/csharp/programming-guide/string-to-number/parse-tryparse/program.cs)]  
 
-O exemplo a seguir ilustra uma abordagem para analisar uma cadeia de caracteres que deve incluir caracteres numéricos à esquerda (incluindo caracteres hexadecimais) e caracteres não numéricos à direita. Ele atribui caracteres válidos do início de uma cadeia de caracteres até uma nova cadeia de caracteres antes de chamar o método <xref:System.Int32.TryParse%2A>. Como as cadeias de caracteres a ser analisadas contêm um pequeno número de caracteres, o exemplo chama o método <xref:System.String.Concat%2A?displayProperty=nameWithType> para atribuir os caracteres válidos em uma nova cadeia de caracteres. Para cadeias de caracteres maiores, pode ser usada a classe <xref:System.Text.StringBuilder>.
+O exemplo a seguir ilustra uma abordagem para analisar uma cadeia de caracteres esperada para incluir caracteres numéricos à esquerda (incluindo caracteres hexadecimais) e caracteres não numéricos à direita. Ele atribui caracteres válidos do início de uma cadeia de caracteres até uma nova cadeia de caracteres antes de chamar o método <xref:System.Int32.TryParse%2A>. Como as cadeias de caracteres a ser analisadas contêm um pequeno número de caracteres, o exemplo chama o método <xref:System.String.Concat%2A?displayProperty=nameWithType> para atribuir os caracteres válidos em uma nova cadeia de caracteres. Para cadeias de caracteres maiores, pode ser usada a classe <xref:System.Text.StringBuilder>.
   
 [!code-csharp[Removing invalid characters](~/samples/snippets/csharp/programming-guide/string-to-number/parse-tryparse2/program.cs)]  
 
@@ -55,8 +57,8 @@ A tabela a seguir lista alguns dos métodos da classe <xref:System.Convert> que 
   
 [!code-csharp[Parsing with Convert methods](~/samples/snippets/csharp/programming-guide/string-to-number/convert/program.cs)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Types](./index.md)
 - [Como determinar se uma cadeia de caracteres representa um valor numérico](../strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)
-- [Amostra: Utilitário de Formatação do WinForms do .NET Core (C#)](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-cs)
+- [Amostra: Utilitário de Formatação do WinForms do .NET Core (C#)](/samples/dotnet/samples/windowsforms-formatting-utility-cs)

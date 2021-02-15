@@ -1,19 +1,19 @@
 ---
 title: Comando dotnet pack
-description: O comando dotnet pack cria pacotes NuGet para seu projeto .NET Core.
+description: O comando dotnet Pack cria pacotes NuGet para seu projeto .NET.
 ms.date: 04/28/2020
-ms.openlocfilehash: 00cda2c52a12a7a3aef5f61291120f522536131d
-ms.sourcegitcommit: 7b1497c1927cb449cefd313bc5126ae37df30746
+ms.openlocfilehash: a9a634c358f5de4f28c3de06edc9a2b4d2eb8d57
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "83442222"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190072"
 ---
 # <a name="dotnet-pack"></a>dotnet pack
 
 **Este artigo aplica-se a:** ✔️ SDK do .NET Core 2. x e versões posteriores
 
-## <a name="name"></a>Name
+## <a name="name"></a>Nome
 
 `dotnet pack` – Empacota o código em um pacote NuGet.
 
@@ -36,8 +36,8 @@ O comando `dotnet pack` compila o projeto e cria pacotes NuGet. O resultado dess
 
 Se você quiser gerar um pacote que contém os símbolos de depuração, terá duas opções disponíveis:
 
-- `--include-symbols`-Ele cria o pacote de símbolos.
-- `--include-source`-Ele cria o pacote de símbolos com uma `src` pasta dentro de contendo os arquivos de origem.
+- `--include-symbols` -Ele cria o pacote de símbolos.
+- `--include-source` -Ele cria o pacote de símbolos com uma `src` pasta dentro de contendo os arquivos de origem.
 
 As dependências do NuGet do projeto empacotado são adicionadas ao arquivo *.nuspec* para que possam ser resolvidas apropriadamente quando o pacote for instalado. As referências de projeto a projeto não são empacotadas dentro do projeto. No momento, você precisa ter um pacote por projeto se tiver dependências de projeto a projeto.
 
@@ -46,7 +46,7 @@ Por padrão, `dotnet pack` compila primeiro o projeto. Se você quiser evitar es
 > [!NOTE]
 > Em alguns casos, a compilação implícita não pode ser executada. Isso pode ocorrer quando `GeneratePackageOnBuild` é definido, para evitar uma dependência cíclica entre destinos de compilação e de pacote. A compilação também pode falhar se houver um arquivo bloqueado ou outro problema.
 
-Você pode fornecer as propriedades de MSBuild para o comando `dotnet pack` para o processo de empacotamento. Para obter mais informações, consulte [Propriedades de metadados do NuGet](csproj.md#nuget-metadata-properties) e a [Referência de linha de comando MSBuild](/visualstudio/msbuild/msbuild-command-line-reference). A seção [Exemplos](#examples) mostra como usar a opção -p do MSBuild para alguns cenários diferentes.
+Você pode fornecer as propriedades de MSBuild para o comando `dotnet pack` para o processo de empacotamento. Para obter mais informações, consulte [Propriedades de destino do NuGet Pack](/nuget/reference/msbuild-targets#pack-target) e a [referência de Command-Line do MSBuild](/visualstudio/msbuild/msbuild-command-line-reference). A seção de [exemplos](#examples) mostra como usar a `-p` opção MSBuild para alguns cenários diferentes.
 
 Projetos da Web não são empacotáveis por padrão. Para substituir o comportamento padrão, adicione a seguinte propriedade ao seu arquivo *.csproj*:
 
@@ -64,7 +64,7 @@ Projetos da Web não são empacotáveis por padrão. Para substituir o comportam
 
 `PROJECT | SOLUTION`
 
-  O projeto ou a solução a ser empacotada. É um caminho para um [arquivo csproj](csproj.md), arquivo vbproj, arquivo fsproj, um arquivo de solução ou para um diretório. Se não for especificado, o comando pesquisará o diretório atual em busca de um arquivo de projeto ou de solução.
+  O projeto ou a solução a ser empacotada. É um caminho para um arquivo csproj, vbproj ou fsproj, ou para um arquivo de solução ou diretório. Se não for especificado, o comando pesquisará o diretório atual em busca de um arquivo de projeto ou de solução.
 
 ## <a name="options"></a>Opções
 
@@ -118,7 +118,7 @@ Projetos da Web não são empacotáveis por padrão. Para substituir o comportam
 
 - **`-s|--serviceable`**
 
-  Define o sinalizador operacional no pacote. Para saber mais, veja [Blog do .NET: .NET 4.5.1 oferece suporte às Atualizações de segurança da Microsoft para Bibliotecas do .NET NuGet](https://aka.ms/nupkgservicing).
+  Define o sinalizador operacional no pacote. Para obter mais informações, consulte [o blog do .net: o .NET Framework 4.5.1 dá suporte a atualizações de segurança da Microsoft para bibliotecas NuGet do .net](https://aka.ms/nupkgservicing).
 
 - **`--version-suffix <VERSION_SUFFIX>`**
 
@@ -185,7 +185,7 @@ Projetos da Web não são empacotáveis por padrão. Para substituir o comportam
   ```
 
   Para obter informações sobre como usar `NuspecFile` `NuspecBasePath` `NuspecProperties` o, o e o, consulte os seguintes recursos:
-  
-  - [Empacotamento usando um .nuspec](https://docs.microsoft.com/nuget/reference/msbuild-targets#packing-using-a-nuspec)
-  - [Pontos de extensão avançados para criar pacote personalizado](https://docs.microsoft.com/nuget/reference/msbuild-targets#advanced-extension-points-to-create-customized-package)
-  - [Propriedades globais](https://docs.microsoft.com/visualstudio/msbuild/msbuild-properties?view=vs-2019#global-properties)
+
+  - [Empacotamento usando um .nuspec](/nuget/reference/msbuild-targets#packing-using-a-nuspec)
+  - [Pontos de extensão avançados para criar pacote personalizado](/nuget/reference/msbuild-targets#advanced-extension-points-to-create-customized-package)
+  - [Propriedades globais](/visualstudio/msbuild/msbuild-properties#global-properties)

@@ -14,12 +14,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: a6063221-43a5-4d3e-814c-288a4ec69aec
-ms.openlocfilehash: 482a973631e899b8d4bfc4640eef1ea26173605e
-ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
+ms.openlocfilehash: bdffa9417a7d52e9c825ca6455997b9bfa7408e4
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85104920"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96271519"
 ---
 # <a name="how-to-build-a-net-framework-single-file-assembly"></a>Como compilar um .NET Framework assembly de arquivo único
 
@@ -67,6 +67,7 @@ vbc -out:myAssembly.exe myCode.vb
 ```
 
 ## <a name="create-library-assemblies"></a>Criar assemblies de biblioteca
+
  Um assembly de biblioteca é semelhante a uma biblioteca de classes. Ele contém tipos que serão referenciados por outros assemblies, mas ele não tem nenhum ponto de entrada para iniciar a execução.
 
 Para criar um assembly de biblioteca, no prompt de comando, digite o seguinte comando:

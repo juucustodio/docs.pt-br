@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: definir instrução (Visual Basic)'
 title: Instrução Set
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,17 +11,18 @@ helpviewer_keywords:
 - write-only properties
 - properties [Visual Basic], write-only
 ms.assetid: 9ecc27b4-df84-420d-9075-db25455fb3cd
-ms.openlocfilehash: 49d4c36805b64d7232a94e818256723a0437b6ef
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 5ee27b35a4639bc20d5b6634de8332c6ede9bf12
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404181"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741114"
 ---
 # <a name="set-statement-visual-basic"></a>Instrução Set (Visual Basic)
+
 Declara um `Set` procedimento de propriedade usado para atribuir um valor a uma propriedade.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 [ <attributelist> ] [ accessmodifier ] Set (ByVal value [ As datatype ])  
@@ -29,6 +31,7 @@ End Set
 ```  
   
 ## <a name="parts"></a>Partes  
+
  `attributelist`  
  Opcional. Consulte a [lista de atributos](attribute-list.md).  
   
@@ -37,16 +40,16 @@ End Set
   
 - [Protected](../modifiers/protected.md)  
   
-- [Público](../modifiers/friend.md)  
+- [Friend](../modifiers/friend.md)  
   
-- [Privada](../modifiers/private.md)  
+- [Privado](../modifiers/private.md)  
   
 - `Protected Friend`  
   
  Consulte [níveis de acesso em Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).  
   
  `value`  
- Obrigatórios. Parâmetro que contém o novo valor para a propriedade.  
+ Obrigatório. Parâmetro que contém o novo valor para a propriedade.  
   
  `datatype`  
  Obrigatório se `Option Strict` for `On` . Tipo de dados do `value` parâmetro. O tipo de dados especificado deve ser o mesmo que o tipo de dados da propriedade em que essa `Set` instrução é declarada.  
@@ -55,9 +58,10 @@ End Set
  Opcional. Uma ou mais instruções que são executadas quando o `Set` procedimento de propriedade é chamado.  
   
  `End Set`  
- Obrigatórios. Encerra a definição do procedimento de `Set` propriedade.  
+ Obrigatório. Encerra a definição do procedimento de `Set` propriedade.  
   
 ## <a name="remarks"></a>Comentários  
+
  Cada propriedade deve ter um `Set` procedimento de propriedade, a menos que a propriedade esteja marcada `ReadOnly` . O `Set` procedimento é usado para definir o valor da propriedade.  
   
  Visual Basic chama automaticamente o procedimento de uma propriedade `Set` quando uma instrução de atribuição fornece um valor a ser armazenado na propriedade.  
@@ -78,16 +82,17 @@ End Set
   
 - **Retornando de um procedimento de propriedade.** Quando o `Set` procedimento retorna ao código de chamada, a execução continua seguindo a instrução que forneceu o valor a ser armazenado.  
   
-     `Set`os procedimentos de propriedade podem ser retornados usando a [instrução return](return-statement.md) ou a [instrução Exit](exit-statement.md).  
+     `Set` os procedimentos de propriedade podem ser retornados usando a [instrução return](return-statement.md) ou a [instrução Exit](exit-statement.md).  
   
      As `Exit Property` `Return` instruções e causam uma saída imediata de um procedimento de propriedade. Qualquer número de `Exit Property` `Return` instruções and pode aparecer em qualquer lugar no procedimento, e você pode misturar `Exit Property` e `Return` demonstrativos.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir usa a `Set` instrução para definir o valor de uma propriedade.  
   
  [!code-vb[VbVbalrStatements#55](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#55)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instrução Get](get-statement.md)
 - [Instrução Property](property-statement.md)

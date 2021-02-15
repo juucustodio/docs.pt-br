@@ -9,14 +9,15 @@ helpviewer_keywords:
 - specifiedPickupDirectory element
 - <specifiedPickupDirectory> element
 ms.assetid: 0121f49d-bff2-4bc6-af06-f1628dcd61f1
-ms.openlocfilehash: f0c4c1845e9542d0f3b836ff03f16bdf2979ebd8
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 5bb7fc5405b1ee2f0f054bc6e9f043a3f9fcd1ec
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84504492"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91176156"
 ---
 # <a name="specifiedpickupdirectory-element-network-settings"></a>Elemento \<specifiedPickupDirectory> (Configurações de Rede)
+
 Configura o diretório local para um servidor SMTP (Simple Mail Transport Protocol).  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -34,6 +35,7 @@ Configura o diretório local para um servidor SMTP (Simple Mail Transport Protoc
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -43,18 +45,21 @@ Configura o diretório local para um servidor SMTP (Simple Mail Transport Protoc
 |`pickupDirectoryLocation`|O diretório em que os aplicativos salvam o email para processamento posterior pelo servidor SMTP.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[\<smtp>Elemento (configurações de rede)](smtp-element-network-settings.md)|Configura as opções de envio de email do protocolo SMTP.|  
+|[\<smtp> Elemento (configurações de rede)](smtp-element-network-settings.md)|Configura as opções de envio de email do protocolo SMTP.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O `specifiedPickupDirectory` atributo define o diretório em que os aplicativos salvam mensagens de email a serem processadas pelo servidor SMTP.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir especifica c:\maildrop como o diretório de recebimento de email.  
   
 ```xml  
@@ -71,7 +76,7 @@ Configura o diretório local para um servidor SMTP (Simple Mail Transport Protoc
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>
 - <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>

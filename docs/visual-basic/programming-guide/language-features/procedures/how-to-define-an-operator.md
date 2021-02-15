@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como definir um operador (Visual Basic)'
 title: Como definir um operador
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -13,14 +14,15 @@ helpviewer_keywords:
 - return values [Visual Basic], Operator procedures
 - operator overloading
 ms.assetid: d4b0e253-092a-4e6e-9fe2-01f562140a29
-ms.openlocfilehash: 49b9c8d1a6db56a56b50c16b4a6bb5b928df6c7d
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: ead96a302426c6f5b1667bb030aab56afe3284c8
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84388031"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100462705"
 ---
 # <a name="how-to-define-an-operator-visual-basic"></a>Como definir um operador (Visual Basic)
+
 Se você tiver definido uma classe ou estrutura, poderá definir o comportamento de um operador padrão (como `*` , `<>` ou `And` ) quando um ou ambos os operandos forem do tipo de sua classe ou estrutura.  
   
  Defina o operador padrão como um procedimento de operador dentro da classe ou estrutura. Todos os procedimentos de operador devem ser `Public` `Shared` .  
@@ -28,6 +30,7 @@ Se você tiver definido uma classe ou estrutura, poderá definir o comportamento
  A definição de um operador em uma classe ou estrutura também é chamada de *sobrecarga* do operador.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir define o `+` operador para uma estrutura chamada `height` . A estrutura usa alturas medidas em pés e polegadas. Uma *polegada* é de 2,54 centímetros e um *pé* é de 12 polegadas. Para garantir valores normalizados (polegadas < 12,0), o construtor executa aritmética de *módulo* 12. O `+` operador usa o construtor para gerar valores normalizados.  
   
  [!code-vb[VbVbcnProcedures#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#25)]  
@@ -36,7 +39,7 @@ Se você tiver definido uma classe ou estrutura, poderá definir o comportamento
   
  [!code-vb[VbVbcnProcedures#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#26)]  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos do operador](./operator-procedures.md)
 - [Como definir um operador de conversão](./how-to-define-a-conversion-operator.md)

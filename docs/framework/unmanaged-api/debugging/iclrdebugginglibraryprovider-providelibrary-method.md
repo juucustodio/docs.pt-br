@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICLRDebuggingLibraryProvider: método rovideLibrary de:P'
 title: Método ICLRDebuggingLibraryProvider::ProvideLibrary
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 86f06245-9517-49be-8d8c-ca5deaf34c02
 topic_type:
 - apiref
-ms.openlocfilehash: 7bbb49dc6ee9b1d29dd61ccdcfdacb62740133ed
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: 624061fb9b23af7a69616d4565586ac0fd129860
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860270"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99772609"
 ---
 # <a name="iclrdebugginglibraryproviderprovidelibrary-method"></a>Método ICLRDebuggingLibraryProvider::ProvideLibrary
 
@@ -62,14 +63,14 @@ Esse método retorna os HRESULTs específicos a seguir, bem como os erros de HRE
 
 ## <a name="remarks"></a>Comentários
 
-`ProvideLibrary`permite que o depurador forneça módulos que são necessários para depurar arquivos CLR específicos, como MSCorDbi. dll e Mscordacwks. dll. Os identificadores de módulo precisam permanecer válidos até que uma chamada para o método [ICLRDebugging:: CanUnloadNow](iclrdebugging-canunloadnow-method.md) indique que eles podem ser liberados. nesse ponto, é responsabilidade do chamador liberar os identificadores.
+`ProvideLibrary` permite que o depurador forneça módulos que são necessários para depurar arquivos CLR específicos, como mscordbi.dll e mscordacwks.dll. Os identificadores de módulo precisam permanecer válidos até que uma chamada para o método [ICLRDebugging:: CanUnloadNow](iclrdebugging-canunloadnow-method.md) indique que eles podem ser liberados. nesse ponto, é responsabilidade do chamador liberar os identificadores.
 
 O depurador pode usar qualquer meio disponível para localizar ou adquirir o módulo de depuração.
 
 > [!IMPORTANT]
-> Esse recurso permite que o chamador da API forneça módulos que contêm um código executável e possivelmente mal-intencionado. Como uma precaução de segurança, o chamador não deve `ProvideLibrary` usar o para distribuir nenhum código que não esteja disposto a ser executado.
+> Esse recurso permite que o chamador da API forneça módulos que contêm um código executável e possivelmente mal-intencionado. Como uma precaução de segurança, o chamador não deve usar o `ProvideLibrary` para distribuir nenhum código que não esteja disposto a ser executado.
 >
-> Se um problema de segurança sério for descoberto em uma biblioteca já liberada, como MSCorDbi. dll ou Mscordacwks. dll, o Shim poderá ser corrigido para reconhecer as versões inadequadas dos arquivos. O Shim pode emitir solicitações para as versões com patches dos arquivos e rejeitar as versões inadequadas se elas forem fornecidas em resposta a qualquer solicitação. Isso só poderá ocorrer se o usuário tiver corrigido o patch para uma nova versão do Shim. As versões sem patch continuarão vulneráveis.
+> Se um problema de segurança sério for descoberto em uma biblioteca já liberada, como mscordbi.dll ou mscordacwks.dll, o Shim poderá ser corrigido para reconhecer as versões inadequadas dos arquivos. O Shim pode emitir solicitações para as versões com patches dos arquivos e rejeitar as versões inadequadas se elas forem fornecidas em resposta a qualquer solicitação. Isso só poderá ocorrer se o usuário tiver corrigido o patch para uma nova versão do Shim. As versões sem patch continuarão vulneráveis.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,7 +82,7 @@ O depurador pode usar qualquer meio disponível para localizar ou adquirir o mó
 
 **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)
 - [Depuração](index.md)

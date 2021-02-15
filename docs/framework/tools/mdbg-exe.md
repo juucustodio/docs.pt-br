@@ -6,27 +6,29 @@ helpviewer_keywords:
 - command-line debugger [.NET Framework]
 - MDbg.exe
 ms.assetid: 28a3f509-07e2-4dbe-81df-874c5e969cc4
-ms.openlocfilehash: 1c663474e5084afa1824f0f6b0740ae03a344e92
-ms.sourcegitcommit: 3824ff187947572b274b9715b60c11269335c181
+ms.openlocfilehash: 8953db973e231014284ec6585012edc7f3ea11f5
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84904215"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96279162"
 ---
 # <a name="mdbgexe-net-framework-command-line-debugger"></a>MDbg.exe (Depurador de Linha de Comando do .NET Framework)
+
 O Depurador de Linha de Comando do .NET Framework ajuda fornecedores de ferramentas e desenvolvedores de aplicativos na localização e na correção de bugs em programas com o Common Language Runtime do .NET Framework como destino. Essa ferramenta usa a API de depuração do runtime para fornecer serviços de depuração. É possível usar MDbg.exe para depurar apenas o código gerenciado; não há suporte para depurar o código não gerenciado.  
   
 Essa ferramenta está disponível por meio do NuGet. Para obter informações sobre a instalação, consulte [MDbg 0.1.0](https://www.nuget.org/packages/MDbg/0.1.0). Para executar a ferramenta, use o Console do Gerenciador de Pacotes. Para saber mais sobre como usar o Console do Gerenciador de Pacotes, confira o artigo [Console do Gerenciador de Pacotes](/nuget/tools/package-manager-console).
   
 No prompt de comando do Gerenciador de Pacotes, digite o seguinte:  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Sintaxe  
   
 ```console  
 MDbg [ProgramName[arguments]] [options]  
 ```  
   
 ## <a name="commands"></a>Comandos  
+
  Quando você estiver no depurador (como indicado pelo prompt **mdbg>**), digite um dos comandos descritos na próxima seção:  
   
  **comando** [*arguments*]  
@@ -85,6 +87,7 @@ MDbg [ProgramName[arguments]] [options]
 |**x** [ `-c` *numSymbols*] [*módulo*[ `!` *padrão*]]|Exibe funções correspondentes ao `pattern` para um módulo.<br /><br /> Se *numSymbols* for especificado, a saída será limitada ao número especificado. Se `!` (indicando uma expressão regular) não for especificado para *pattern*, todas as funções serão exibidas. Se *module* não for fornecido, todos os módulos carregados serão exibidos. Os símbolos ( *~#* ) podem ser usados para definir pontos de interrupção usando o comando **Break** .|  
   
 ## <a name="remarks"></a>Comentários  
+
  Compile o aplicativo a ser depurado usando sinalizadores específicos do compilador que fazem o compilador gerenciar símbolos de depuração. Consulte a documentação do compilador para obter mais informações sobre esses sinalizadores. É possível depurar aplicativos otimizados, mas algumas informações de depuração estarão ausentes. Por exemplo, muitas variáveis locais não serão visíveis e as linhas de origem serão imprecisas.  
   
  Depois de compilar o aplicativo, digite **mdbg** no prompt de comando para iniciar uma sessão de depuração, como mostrado no exemplo a seguir.  

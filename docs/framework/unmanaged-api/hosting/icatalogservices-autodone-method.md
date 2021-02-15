@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICatalogServices:: método autodone'
 title: Método ICatalogServices::Autodone
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 3002f051-7aaa-4669-9314-cbc65b3a1772
 topic_type:
 - apiref
-ms.openlocfilehash: 631da8936873b57040f1c60e8db6867ea2eed2c8
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: d42b2e9eb56e6fbdcc404d227441cf7db4c0e554
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83617042"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760557"
 ---
 # <a name="icatalogservicesautodone-method"></a>Método ICatalogServices::Autodone
+
 Esse método oferece suporte a infraestrutura do .NET Framework e não se destina a ser usado diretamente do seu código.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -31,6 +33,6 @@ Esse método oferece suporte a infraestrutura do .NET Framework e não se destin
 HRESULT Autodone ( );  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Interfaces de hospedagem](hosting-interfaces.md)

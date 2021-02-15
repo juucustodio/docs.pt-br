@@ -1,19 +1,21 @@
 ---
+description: 'Saiba mais sobre: opção de codificação de instância'
 title: Padrão de codificação de instância
 ms.date: 03/30/2017
 ms.assetid: 89e4b029-4f68-438c-8117-9b21fe094ef4
-ms.openlocfilehash: c4de7c45d899f45a7b5b71d563257d9accb8fdbb
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 8cca7fd536673ca99b1014173e172508e3d97b7c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61928699"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631158"
 ---
 # <a name="instance-encoding-option"></a>Padrão de codificação de instância
-O **a opção de codificação de instância** propriedade de Store de instância de fluxo de trabalho do SQL permite que você especifique se o provedor de persistência do SQL deve compactar as informações de estado da instância de fluxo de trabalho usando o algoritmo de GZip antes de salvar o informações no banco de dados de persistência. Os valores permitidos para essa propriedade são: GZip e None. O valor padrão é None. A lista a seguir descreve as opções.  
+
+A propriedade de **opção de codificação de instância** do repositório da instância do fluxo de trabalho SQL permite especificar se o provedor de persistência do SQL deve compactar as informações de estado da instância do fluxo de trabalho usando o algoritmo gzip antes de salvar as informações no banco de dados de persistência. Os valores permitidos para essa propriedade são: GZip e quaisquer. O valor padrão é Nenhum. A lista a seguir descreve as opções.  
   
-1. **GZip**. O provedor de persistência codificação informações de estado usando o algoritmo de GZip antes de manter informações de estado na base de dados de persistência.  
+1. **Gzip**. O provedor de persistência codificação informações de estado usando o algoritmo de GZip antes de manter informações de estado na base de dados de persistência.  
   
-2. **Nenhum**. O provedor de persistência não codificação informações de estado antes de salvar informações na base de dados de persistência.  
+2. **None**. O provedor de persistência não codificação informações de estado antes de salvar informações na base de dados de persistência.  
   
- Informações de estado da instância de fluxo de trabalho de codificação que usa o GZip reduz o consumo de memória na base de dados SQL e também reduz o consumo de rede se o base de dados reside em um outro computador na rede do computador no qual o host serviço de fluxo de trabalho está sendo executado. Uma orientação geral é definir a **a opção de codificação de instância** propriedade **None** se o estado da instância de fluxo de trabalho for pequeno.
+ Informações de estado da instância de fluxo de trabalho de codificação que usa o GZip reduz o consumo de memória na base de dados SQL e também reduz o consumo de rede se o base de dados reside em um outro computador na rede do computador no qual o host serviço de fluxo de trabalho está sendo executado. Uma orientação geral é definir a propriedade da **opção de codificação da instância** como **None** se o estado da instância do fluxo de trabalho for pequeno.

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <assemblyIdentity> elemento para <runtime>'
 title: Elemento <assemblyIdentity> para <runtime>
 ms.date: 03/30/2017
 f1_keywords:
@@ -9,14 +10,15 @@ helpviewer_keywords:
 - container tags, <assemblyIdentity> element
 - assemblyIdentity element
 ms.assetid: cea4d187-6398-4da4-af09-c1abc6a349c1
-ms.openlocfilehash: b026dafbde796bbd8726de56b532ed6710ba2290
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: d53c4f7f5207fbcf9ad4a8f82667eacc1f57f5e2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79154303"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99719182"
 ---
 # <a name="assemblyidentity-element-for-runtime"></a>Elemento \<assemblyIdentity> para \<runtime>
+
 Contém informações de identificação sobre o assembly.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -25,7 +27,7 @@ Contém informações de identificação sobre o assembly.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<dependentAssembly>**](dependentassembly-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<assemblyIdentity>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
    <assemblyIdentity
@@ -35,6 +37,7 @@ culture="assembly culture"/>
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -56,6 +59,7 @@ culture="assembly culture"/>
 |`x86`|Um processador x86 de 32 bits, nativo ou no ambiente Windows no Windows (WOW) em uma plataforma de 64 bits.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -68,6 +72,7 @@ culture="assembly culture"/>
 |`runtime`|Contém informações sobre associação do assembly e coleta de lixo.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Cada **\<dependentAssembly>** elemento deve ter um **\<assemblyIdentity>** elemento filho.  
   
  Se o `processorArchitecture` atributo estiver presente, o `<assemblyIdentity>` elemento se aplicará somente ao assembly com a arquitetura de processador correspondente. Se o `processorArchitecture` atributo não estiver presente, o `<assemblyIdentity>` elemento poderá ser aplicado a um assembly com qualquer arquitetura de processador.  
@@ -102,6 +107,7 @@ culture="assembly culture"/>
  Se um arquivo de configuração contiver um `<assemblyIdentity>` elemento sem `processorArchitecture` atributo e não contiver um elemento que corresponda à plataforma, o elemento sem o `processorArchitecture` atributo será usado.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir mostra como fornecer informações sobre um assembly.  
   
 ```xml  
@@ -119,8 +125,8 @@ culture="assembly culture"/>
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações do runtime](index.md)
-- [Esquema de arquivos de configuração](../index.md)
+- [Esquema do arquivo de configuração](../index.md)
 - [Redirecionando versões de assembly](../../redirect-assembly-versions.md)

@@ -1,15 +1,17 @@
 ---
-title: Como importar metadados para pontos de extremidade de serviço
+description: 'Saiba mais sobre: como importar metadados em pontos de extremidade de serviço'
+title: 'Como: importar metadados para pontos de extremidade de serviço'
 ms.date: 03/30/2017
 ms.assetid: b69dbe20-92a1-4911-89d8-ffbc3dad4663
-ms.openlocfilehash: 1de316b8e91739d5e3e24ff960e2cdfb33cc7fab
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: d6e69b64c5f70a8e49ed6ee7c9ff319f5a639a30
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84597053"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793734"
 ---
-# <a name="how-to-import-metadata-into-service-endpoints"></a>Como importar metadados para pontos de extremidade de serviço
+# <a name="how-to-import-metadata-into-service-endpoints"></a>Como: importar metadados para pontos de extremidade de serviço
+
 Este tópico explica como importar metadados para uma coleção de pontos de extremidade de serviço e usar o serviço definido no [introdução](../samples/getting-started-sample.md). Este tópico mostra como criar um aplicativo cliente que importa os metadados do serviço e, em seguida, chama o `Add` método no serviço.  
   
 ### <a name="to-import-metadata-into-service-endpoints"></a>Para importar metadados em pontos de extremidade de serviço  

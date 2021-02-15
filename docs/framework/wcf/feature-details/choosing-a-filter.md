@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: escolhendo um filtro'
 title: Escolhendo um filtro
 ms.date: 03/30/2017
 ms.assetid: 67ab5af9-b9d9-4300-b3b1-41abb5a1fd10
-ms.openlocfilehash: e951c472543239df0c01dcba3e46f120ced9e192
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 7fa484775f0a08ccef28da358cd057465c49f390
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84587489"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99705265"
 ---
 # <a name="choosing-a-filter"></a>Escolhendo um filtro
+
 Ao configurar o serviço de roteamento, é importante selecionar os filtros de mensagem corretos e configurá-los para permitir que você faça correspondências exatas com as mensagens recebidas. Se os filtros selecionados forem excessivamente amplos em suas correspondências ou estiverem configurados incorretamente, as mensagens serão roteadas incorretamente. Se os filtros forem muito restritivos, talvez você não tenha nenhuma rota válida disponível para algumas de suas mensagens.
 
 ## <a name="filter-types"></a>Tipos de filtro
@@ -142,9 +144,9 @@ Esse filtro será útil se você souber que as mensagens que você está receben
 
 Como as consultas XPath geralmente contêm namespaces exclusivos, que geralmente são valores de cadeia de caracteres longos ou complexos, o filtro XPath permite que você use a tabela de namespace para definir prefixos exclusivos para seus namespaces. Para obter mais informações sobre a tabela de namespace, consulte [filtros de mensagem](message-filters.md).
 
-Para obter mais informações sobre como criar consultas XPath, consulte [Sintaxe XPath](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256471(v=vs.100)).
+Para obter mais informações sobre como criar consultas XPath, consulte [Sintaxe XPath](/previous-versions/dotnet/netframework-4.0/ms256471(v=vs.100)).
 
 ## <a name="see-also"></a>Consulte também
 
 - [Filtros de mensagem](message-filters.md)
-- [Como usar filtros](how-to-use-filters.md)
+- [Como: usar filtros](how-to-use-filters.md)

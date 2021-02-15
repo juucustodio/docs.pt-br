@@ -1,40 +1,43 @@
 ---
+description: 'Saiba mais sobre: filtros de mensagens'
 title: Filtros de mensagem
 ms.date: 03/30/2017
 helpviewer_keywords:
 - routing [WCF], message filters
 ms.assetid: cb33ba49-8b1f-4099-8acb-240404a46d9a
-ms.openlocfilehash: a953dea9224d75907c593d87f06a0b0888f0af2d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 1b52b2b50dc94e79ba6960e834f601af18200f52
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79184670"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99727047"
 ---
 # <a name="message-filters"></a>Filtros de mensagem
-Para implementar o roteamento baseado em <xref:System.ServiceModel.Dispatcher.MessageFilter> conteúdo, o Serviço de Roteamento usa implementações que inspecionam seções específicas de uma mensagem, como endereço, nome de ponto final ou uma instrução XPath específica. Se nenhum dos filtros de [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] mensagem fornecidos atender às suas necessidades, você <xref:System.ServiceModel.Dispatcher.MessageFilter> pode criar um filtro personalizado criando uma nova implementação da classe base.  
+
+Para implementar o roteamento baseado em conteúdo, o serviço de roteamento usa <xref:System.ServiceModel.Dispatcher.MessageFilter> implementações que inspecionam seções específicas de uma mensagem, como o endereço, o nome do ponto de extremidade ou uma instrução XPath específica. Se nenhum dos filtros de mensagem fornecidos com [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] atender às suas necessidades, você poderá criar um filtro personalizado criando uma nova implementação da classe base <xref:System.ServiceModel.Dispatcher.MessageFilter> .  
   
- Ao configurar o Serviço de Roteamento,<xref:System.ServiceModel.Routing.Configuration.FilterElement> você deve definir elementos de filtro (objetos) que descrevem o tipo de **MessageFilter** e quaisquer dados de suporte necessários para criar o filtro, como valores de seqüência específicos para procurar dentro da mensagem. Observe que a criação dos elementos do filtro define apenas os filtros de mensagem individuais; para usar os filtros para avaliar e encaminhar mensagens, você também deve definir uma tabela de filtros (<xref:System.ServiceModel.Routing.Configuration.FilterTableEntryCollection>).  
+ Ao configurar o serviço de roteamento, você deve definir elementos de filtro ( <xref:System.ServiceModel.Routing.Configuration.FilterElement> objetos) que descrevem o tipo de **MessageFilter** e quaisquer dados de suporte necessários para criar o filtro, como valores de cadeia de caracteres específicos para pesquisar dentro da mensagem. Observe que a criação dos elementos de filtro define apenas os filtros de mensagem individuais; para usar os filtros para avaliar e rotear mensagens, você também deve definir uma tabela de filtro ( <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryCollection> ).  
   
- Cada entrada na tabela de filtro faz referência a um elemento de filtro e especifica o ponto final do cliente para o qual uma mensagem será encaminhada se a mensagem corresponder ao filtro. As entradas da tabela de filtro também permitem<xref:System.ServiceModel.Routing.Configuration.BackupEndpointCollection>especificar uma coleção de pontos finais de backup ( ), que define uma lista de pontos finais para os quais a mensagem será transmitida no caso de uma falha de transmissão ao enviar para o ponto final principal. Esses pontos finais serão julgados na ordem especificada até que se tenha sucesso.  
+ Cada entrada na tabela de filtro referencia um elemento de filtro e especifica o ponto de extremidade do cliente para o qual uma mensagem será roteada se a mensagem corresponder ao filtro. As entradas de tabela de filtro também permitem que você especifique uma coleção de pontos de extremidade de backup ( <xref:System.ServiceModel.Routing.Configuration.BackupEndpointCollection> ), que define uma lista de pontos de extremidade para os quais a mensagem será transmitida no caso de uma falha de transmissão ao enviar para o ponto de extremidade primário. Esses pontos de extremidade serão tentados na ordem especificada até obter um sucesso.  
   
 ## <a name="message-filters"></a>Filtros de mensagem  
- Os filtros de mensagem usados pelo Serviço de Roteamento fornecem funcionalidade de seleção de mensagens comuns, como avaliar o nome do ponto final para o que uma mensagem foi enviada, a ação SOAP ou o prefixo de endereço ou endereço para o que a mensagem foi enviada. Os filtros também podem `AND` ser unidos com uma condição, de modo que as mensagens só serão roteadas para um ponto final se a mensagem corresponder a ambos os filtros. Você também pode criar filtros personalizados <xref:System.ServiceModel.Dispatcher.MessageFilter>criando sua própria implementação de .  
+
+ Os filtros de mensagem usados pelo serviço de roteamento fornecem funcionalidade comum de seleção de mensagens, como avaliar o nome do ponto de extremidade para o qual uma mensagem foi enviada, a ação SOAP ou o endereço ou prefixo de endereço para o qual a mensagem foi enviada. Os filtros também podem ser Unidos com uma `AND` condição, de modo que as mensagens só serão roteadas para um ponto de extremidade se a mensagem corresponder a ambos os filtros. Você também pode criar filtros personalizados criando sua própria implementação do <xref:System.ServiceModel.Dispatcher.MessageFilter> .  
   
- A tabela a <xref:System.ServiceModel.Routing.Configuration.FilterType> seguir lista o usado pelo Serviço de Roteamento, <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A> a classe que implementa o filtro de mensagem específico e os parâmetros necessários.  
+ A tabela a seguir lista o <xref:System.ServiceModel.Routing.Configuration.FilterType> usado pelo serviço de roteamento, a classe que implementa o filtro de mensagem específico e os <xref:System.ServiceModel.Routing.Configuration.FilterElement.FilterData%2A> parâmetros necessários.  
   
-|Tipo de filtro|Descrição|Significado dos dados do filtro|Filtro de exemplo|  
+|Tipo de filtro|Descrição|Filtrar significado de dados|Filtro de exemplo|  
 |------------------|-----------------|-------------------------|--------------------|  
-|Ação|Usa <xref:System.ServiceModel.Dispatcher.ActionMessageFilter> a classe para corresponder mensagens que contêm uma ação específica.|A ação para filtrar.|\<nome do filtro="action1" filterType="Action"http://namespace/contract/operationfilterData=" />|  
-|EndpointAddress|Usa <xref:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter> a classe, com <xref:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter.IncludeHostNameInComparison%2A>  ==  `true` mensagens compatíveis contendo um endereço específico.|O endereço a ser filtrado (no cabeçalho Para)|\<nome do filtro="endereço1" filtroType="EndpointAddress"http://host/vdir/s.svc/bfilterData=" />|  
-|Ponto finalEndereçoPrefix|Usa <xref:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter> a classe, com <xref:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter.IncludeHostNameInComparison%2A>  ==  `true` mensagens compatíveis contendo um prefixo de endereço específico.|O endereço a ser filtrado ao usar a correspondência de prefixo mais longa.|\<nome do filtro="prefix1" filterType="EndpointAddressPrefix"http://host/filterData=" />|  
-|And|Usa <xref:System.ServiceModel.Dispatcher.StrictAndMessageFilter> a classe que sempre avalia ambas as condições antes de retornar.|filterData não é usado; em vez disso, o filtro1 e o filtro2 têm os nomes dos filtros de mensagem correspondentes (também na tabela), que devem ser **e**ed juntos.|\<nome do filtro="e1" filtroType="E" filtro1="endereço1" filtro2="action1" />|  
-|Personalizado|Um tipo definido pelo <xref:System.ServiceModel.Dispatcher.MessageFilter> usuário que estende a classe e tem um construtor pegando uma corda.|O atributo customType é o nome de tipo totalmente qualificado da classe a ser criado; filterData é a string para passar para o construtor ao criar o filtro.|\<nome do filtro=filtro "custom1"Type="Personalizado" costumeType="CustomAssembly.CustomMsgFilter, CustomAssembly" filterData="Custom Data" />|  
-|EndpointName|Usa <xref:System.ServiceModel.Dispatcher.EndpointNameMessageFilter> a classe para combinar mensagens com base no nome do ponto final do serviço em que eles chegaram.|O nome do ponto final do serviço, por exemplo: "serviceEndpoint1".  Este deve ser um dos pontos finais expostos no Serviço de Roteamento.|\<nome do filtro=filtro "stock1"Type="Endpoint" filterData="SvcEndpoint" />|  
-|MatchAll|Usa <xref:System.ServiceModel.Dispatcher.MatchAllMessageFilter> a classe. Este filtro corresponde a todas as mensagens que chegam.|filterData não é usado. Este filtro sempre corresponderá a todas as mensagens.|\<nome do filtro="matchAll1" filterType="MatchAll" />|  
-|XPath|Usa <xref:System.ServiceModel.Dispatcher.XPathMessageFilter> a classe para corresponder a consultas específicas do XPath na mensagem.|A consulta XPath para usar ao combinar mensagens.|\<nome do filtro=filtro "XPath1"Type="XPath" filterData="//ns:element" />|  
+|Ação|Usa a <xref:System.ServiceModel.Dispatcher.ActionMessageFilter> classe para corresponder as mensagens que contêm uma ação específica.|A ação a ser filtrada.|\<filter name="action1" filterType="Action" filterData="http://namespace/contract/operation" />|  
+|EndpointAddress|Usa a <xref:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter> classe, com <xref:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter.IncludeHostNameInComparison%2A>  ==  `true` para corresponder mensagens que contêm um endereço específico.|O endereço a ser filtrado (no cabeçalho para).|\<filter name="address1" filterType="EndpointAddress" filterData="http://host/vdir/s.svc/b"  />|  
+|EndpointAddressPrefix|Usa a <xref:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter> classe, com <xref:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter.IncludeHostNameInComparison%2A>  ==  `true` para corresponder mensagens que contêm um prefixo de endereço específico.|O endereço a ser filtrado com o uso de correspondência de prefixo mais longo.|\<filter name="prefix1" filterType="EndpointAddressPrefix" filterData="http://host/" />|  
+|And|Usa a <xref:System.ServiceModel.Dispatcher.StrictAndMessageFilter> classe que sempre avalia as duas condições antes de retornar.|filterData não é usado; em vez disso, filter1 e filter2 têm os nomes dos filtros de mensagem correspondentes (também na tabela), que devem ser **e** Ed juntos.|\<filter name="and1" filterType="And" filter1="address1" filter2="action1" />|  
+|Personalizado|Um tipo definido pelo usuário que estende a <xref:System.ServiceModel.Dispatcher.MessageFilter> classe e tem um construtor usando uma cadeia de caracteres.|O atributo CustomType é o nome do tipo totalmente qualificado da classe a ser criada; filterData é a cadeia de caracteres a ser passada para o construtor ao criar o filtro.|\<filter name="custom1" filterType="Custom" customType="CustomAssembly.CustomMsgFilter, CustomAssembly" filterData="Custom Data" />|  
+|EndpointName|Usa a <xref:System.ServiceModel.Dispatcher.EndpointNameMessageFilter> classe para corresponder mensagens com base no nome do ponto de extremidade de serviço em que foram recebidas.|O nome do ponto de extremidade de serviço, por exemplo: "serviceEndpoint1".  Deve ser um dos pontos de extremidade expostos no serviço de roteamento.|\<filter name="stock1" filterType="Endpoint" filterData="SvcEndpoint" />|  
+|MatchAll|Usa a <xref:System.ServiceModel.Dispatcher.MatchAllMessageFilter> classe. Esse filtro corresponde a todas as mensagens recebidas.|filterData não é usado. Esse filtro sempre corresponderá a todas as mensagens.|\<filter name="matchAll1" filterType="MatchAll" />|  
+|XPath|Usa a <xref:System.ServiceModel.Dispatcher.XPathMessageFilter> classe para corresponder consultas XPath específicas dentro da mensagem.|A consulta XPath a ser usada ao corresponder mensagens.|\<filter name="XPath1" filterType="XPath" filterData="//ns:element" />|  
   
- O exemplo a seguir define entradas de filtro que usam os filtros de mensagem XPath, EndpointName e PrefixEndpointAddress. Este exemplo também demonstra o uso de um filtro personalizado para as entradas RoundRobinFilter1 e RoundRobinFilter2.  
+ O exemplo a seguir define as entradas de filtro que usam os filtros de mensagens XPath, EndpointName e PrefixEndpointAddress. Este exemplo também demonstra o uso de um filtro personalizado para as entradas RoundRobinFilter1 e RoundRobinFilter2.  
   
 ```xml  
 <filters>  
@@ -54,24 +57,25 @@ Para implementar o roteamento baseado em <xref:System.ServiceModel.Dispatcher.Me
 ```  
   
 > [!NOTE]
-> A simples definição de um filtro não faz com que as mensagens sejam avaliadas contra o filtro. O filtro deve ser adicionado a uma tabela de filtros, que está então associada ao ponto final de serviço exposto pelo Serviço de Roteamento.  
+> Simplesmente definir um filtro não faz com que as mensagens sejam avaliadas em relação ao filtro. O filtro deve ser adicionado a uma tabela de filtro, que é então associada ao ponto de extremidade de serviço exposto pelo serviço de roteamento.  
   
 ### <a name="namespace-table"></a>Tabela de namespace  
- Ao usar um filtro XPath, os dados do filtro que contém a consulta XPath podem se tornar extremamente grandes devido ao uso de namespaces. Para aliviar esse problema, o Serviço de Roteamento oferece a capacidade de definir seus próprios prefixos de namespace usando a tabela namespace.  
+
+ Ao usar um filtro XPath, os dados de filtro que contêm a consulta XPath podem se tornar muito grandes devido ao uso de namespaces. Para aliviar esse problema, o serviço de roteamento fornece a capacidade de definir seus próprios prefixos de namespace usando a tabela de namespace.  
   
- A tabela namespace é <xref:System.ServiceModel.Routing.Configuration.NamespaceElement> uma coleção de objetos que define os prefixos namespace para espaços de nome comuns que podem ser usados em um XPath. A seguir estão os namespaces padrão e os prefixos namespace que estão contidos na tabela namespace.  
+ A tabela de namespace é uma coleção de <xref:System.ServiceModel.Routing.Configuration.NamespaceElement> objetos que define os prefixos de namespace para namespaces comuns que podem ser usados em um XPath. A seguir estão os namespaces padrão e os prefixos de namespace que estão contidos na tabela de namespace.  
   
 |Prefixo|Namespace|  
 |------------|---------------|  
-|s11|`http://schemas.xmlsoap.org/soap/envelope`|  
-|s12|`http://www.w3.org/2003/05/soap-envelope`|  
+|S11|`http://schemas.xmlsoap.org/soap/envelope`|  
+|S12|`http://www.w3.org/2003/05/soap-envelope`|  
 |wsaAugust2004|`http://schemas.xmlsoap.org/ws/2004/08/addressing`|  
 |wsa10|`http://www.w3.org/2005/08/addressing`|  
 |sm|`http://schemas.microsoft.com/serviceModel/2004/05/xpathfunctions`|  
 |tempuri|`http://tempuri.org`|  
-|Sor|`http://schemas.microsoft.com/2003/10/Serialization`|  
+|ser|`http://schemas.microsoft.com/2003/10/Serialization`|  
   
- Quando você sabe que estará usando um namespace específico em suas consultas XPath, você pode adicioná-lo à tabela namespace juntamente com um prefixo de namespace exclusivo e usar o prefixo em qualquer consulta XPath em vez do namespace completo. O exemplo a seguir define um prefixo `"http://my.custom.namespace"`de "personalizado" para o namespace , que é então usado na consulta XPath contida no filterData.  
+ Quando você souber que usará um namespace específico em suas consultas XPath, poderá adicioná-lo à tabela de namespace junto com um prefixo de namespace exclusivo e usar o prefixo em qualquer consulta XPath em vez do namespace completo. O exemplo a seguir define um prefixo de "Custom" para o namespace `"http://my.custom.namespace"` , que é usado na consulta XPath contida em FilterData.  
   
 ```xml  
 <namespaceTable>  
@@ -82,8 +86,9 @@ Para implementar o roteamento baseado em <xref:System.ServiceModel.Dispatcher.Me
 </filters>  
 ```  
   
-## <a name="filter-tables"></a>Tabelas de filtro  
- Embora cada elemento do filtro defina uma comparação lógica que pode ser aplicada a uma mensagem, a tabela de filtro fornece a associação entre o elemento filtro e o ponto final do cliente de destino. Uma tabela de filtroé <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement> uma coleção nomeada de objetos que definem a associação entre um filtro, um ponto final de destino principal e uma lista de pontos finais de backup alternativos. As entradas da tabela de filtro também permitem especificar uma prioridade opcional para cada condição do filtro. O exemplo a seguir define dois filtros e, em seguida, define uma tabela de filtros que associa cada filtro a um ponto final de destino.  
+## <a name="filter-tables"></a>Filtrar tabelas  
+
+ Enquanto cada elemento Filter define uma comparação lógica que pode ser aplicada a uma mensagem, a tabela de filtros fornece a associação entre o elemento Filter e o ponto de extremidade do cliente de destino. Uma tabela de filtro é uma coleção nomeada de <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement> objetos que definem a associação entre um filtro, um ponto de extremidade de destino primário e uma lista de pontos de extremidades de backup alternativos. As entradas da tabela de filtro também permitem que você especifique uma prioridade opcional para cada condição de filtro. O exemplo a seguir define dois filtros e, em seguida, define uma tabela de filtro que associa cada filtro a um ponto de extremidade de destino.  
   
 ```xml  
 <routing>  
@@ -102,15 +107,16 @@ Para implementar o roteamento baseado em <xref:System.ServiceModel.Dispatcher.Me
 </routing>  
 ```  
   
-### <a name="filter-evaluation-priority"></a>Prioridade de avaliação de filtros  
- Por padrão, todas as entradas na tabela de filtro saem avaliadas simultaneamente e a mensagem que está sendo avaliada é encaminhada para os pontos finais associados a cada entrada do filtro correspondente. Se vários filtros `true`avaliarem e a mensagem for unidirecional ou duplex, a mensagem será multicast para os pontos finais para todos os filtros correspondentes. As mensagens de solicitação e resposta não podem ser multicast porque apenas uma resposta pode ser devolvida ao cliente.  
+### <a name="filter-evaluation-priority"></a>Prioridade de avaliação do filtro  
+
+ Por padrão, todas as entradas na tabela de filtro são avaliadas simultaneamente e a mensagem que está sendo avaliada é roteada para os pontos de extremidade associados a cada entrada de filtro correspondente. Se vários filtros forem avaliados para `true` e a mensagem for unidirecional ou duplex, a mensagem será multicast para os pontos de extremidade de todos os filtros de correspondência. As mensagens de solicitação-resposta não podem ser multicast porque apenas uma resposta pode ser retornada ao cliente.  
   
- Uma lógica de roteamento mais complexa pode ser implementada especificando níveis de prioridade para cada filtro; o Serviço de Roteamento avalia todos os filtros no nível de prioridade mais alto primeiro. Se uma mensagem corresponder a um filtro deste nível, nenhum filtro de uma prioridade inferior será processado. Por exemplo, uma mensagem unidirecional de entrada é avaliada primeiro contra todos os filtros com prioridade de 2. A mensagem não corresponde a nenhum filtro neste nível de prioridade, então, em seguida, a mensagem é comparada com filtros com uma prioridade de 1. Dois filtros prioritários 1 correspondem à mensagem, e por ser uma mensagem unidirecional, ela é encaminhada para ambos os pontos finais do destino.  Como foi encontrada uma correspondência entre os filtros prioritários 1, não são avaliados filtros de prioridade 0.  
+ A lógica de roteamento mais complexa pode ser implementada especificando-se níveis de prioridade para cada filtro; o serviço de roteamento avalia todos os filtros no nível de prioridade mais alto primeiro. Se uma mensagem corresponder a um filtro desse nível, não serão processados filtros de prioridade mais baixa. Por exemplo, uma mensagem unidirecional de entrada é avaliada pela primeira vez em todos os filtros com uma prioridade de 2. A mensagem não corresponde a nenhum filtro nesse nível de prioridade; portanto, a mensagem a seguir é comparada com filtros com uma prioridade de 1. Dois filtros de prioridade 1 correspondem à mensagem e, por ser uma mensagem unidirecional, ele é roteado para os pontos de extremidade de destino.  Como uma correspondência foi encontrada entre os filtros de prioridade 1, nenhum filtro de prioridade 0 é avaliado.  
   
 > [!NOTE]
-> Se nenhuma prioridade for especificada, a prioridade padrão de 0 será usada.  
+> Se nenhuma prioridade for especificada, a prioridade padrão 0 será usada.  
   
- O exemplo a seguir define uma tabela de filtros que especifica prioridades de 2, 1 e 0 para os filtros referenciados na tabela.  
+ O exemplo a seguir define uma tabela de filtro que especifica as prioridades de 2, 1 e 0 para os filtros referenciados na tabela.  
   
 ```xml  
 <filterTables>  
@@ -127,13 +133,14 @@ Para implementar o roteamento baseado em <xref:System.ServiceModel.Dispatcher.Me
 </filterTables>  
 ```  
   
- No exemplo anterior, se uma mensagem corresponder ao XPathFilter, ela será encaminhada para o arredondamentoCalcEndpoint e nenhum filtro adicional na tabela será avaliado porque todos os outros filtros são de menor prioridade. No entanto, se a mensagem não corresponder ao XPathFilter, ela será avaliada em todos os filtros da próxima prioridade inferior, EndpointNameFilter e PrefixAddressFilter.  
+ No exemplo anterior, se uma mensagem corresponder a XPathFilter, ela será roteada para o roundingCalcEndpoint e nenhum outro filtro na tabela será avaliado porque todos os outros filtros são de prioridade mais baixa. No entanto, se a mensagem não corresponder ao XPathFilter, ela será avaliada em relação a todos os filtros da próxima prioridade mais baixa, EndpointNameFilter e PrefixAddressFilter.  
   
 > [!NOTE]
-> Quando possível, use filtros exclusivos em vez de especificar uma prioridade, pois a avaliação prioritária pode resultar em degradação de desempenho.  
+> Quando possível, use filtros exclusivos em vez de especificar uma prioridade, pois a avaliação de prioridade pode resultar em degradação do desempenho.  
   
 ### <a name="backup-lists"></a>Listas de backup  
- Cada filtro na tabela do filtro pode especificar opcionalmente uma lista<xref:System.ServiceModel.Routing.Configuration.BackupEndpointCollection>de backup, que é uma coleção nomeada de pontos finais (). Esta coleção contém uma lista ordenada de pontos finais aos quais a <xref:System.ServiceModel.CommunicationException> mensagem será transmitida no <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement.EndpointName%2A>caso de um ao enviar para o ponto final principal especificado em . O exemplo a seguir define uma lista de backup chamada "backupServiceEndpoints" que contém dois pontos finais.  
+
+ Cada filtro na tabela de filtros pode, opcionalmente, especificar uma lista de backup, que é uma coleção nomeada de pontos de extremidade ( <xref:System.ServiceModel.Routing.Configuration.BackupEndpointCollection> ). Essa coleção contém uma lista ordenada de pontos de extremidade para os quais a mensagem será transmitida no caso de um <xref:System.ServiceModel.CommunicationException> ao enviar para o ponto de extremidade primário especificado em <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement.EndpointName%2A> . O exemplo a seguir define uma lista de backup chamada "backupServiceEndpoints" que contém dois pontos de extremidade.  
   
 ```xml  
 <filterTables>  
@@ -149,4 +156,4 @@ Para implementar o roteamento baseado em <xref:System.ServiceModel.Dispatcher.Me
 </backupLists>  
 ```  
   
- No exemplo anterior, se um envio para o ponto final principal "Destino" falhar, o Serviço de Roteamento tentará enviar para cada ponto final na seqüência em que eles estão listados, primeiro enviando para backupServiceQueue e, posteriormente, enviando para alternateServiceQueue se o enviar para backupServiceQueue falha. Se todos os pontos finais de backup falharem, uma falha será devolvida.
+ No exemplo anterior, se um envio para o ponto de extremidade primário "destino" falhar, o serviço de roteamento tentará enviar para cada ponto de extremidade na sequência em que eles estão listados, primeiro enviando para backupServiceQueue e, subsequentemente, enviando para alternateServiceQueue se o envio para backupServiceQueue falhar. Se todos os pontos de extremidade de backup falharem, uma falha será retornada.

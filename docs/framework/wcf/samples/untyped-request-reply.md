@@ -1,15 +1,17 @@
 ---
-title: Solicitação-resposta não tipada
+description: 'Saiba mais sobre: solicitação/resposta não tipada'
+title: Request-Reply não tipado
 ms.date: 03/30/2017
 ms.assetid: 0bf0f9d9-7caf-4d3d-8c9e-2d468cca16a5
-ms.openlocfilehash: 46047d1671fadb18052991451910b9056015edd2
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: bac1c9982cf5717bec72b128c238c449324446a7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84591092"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685446"
 ---
 # <a name="untyped-requestreply"></a>Solicitações/Respostas não digitadas
+
 Este exemplo demonstra como definir contratos de operação que usam a classe Message.  
   
 > [!NOTE]
@@ -43,7 +45,7 @@ public Message ComputeSum(Message request)
 }  
 ```  
   
- O cliente usa o código gerado pela [ferramenta de utilitário de metadados ServiceModel (svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) para criar um proxy para o serviço remoto. Para enviar uma mensagem de solicitação, o cliente deve ter a versão da mensagem, que depende do canal subjacente. Portanto, ele cria um novo <xref:System.ServiceModel.OperationContextScope> escopo para o canal de proxy que ele criou, que cria um <xref:System.ServiceModel.OperationContext> com a versão de mensagem correta populada em sua `OutgoingMessageHeaders.MessageVersion` propriedade. O cliente passa uma matriz de entrada como o corpo para a mensagem de solicitação e, em seguida, invoca o `ComputeSum` no proxy. Em seguida, o cliente recupera a soma das entradas passadas acessando o `GetBody<T>` método na mensagem de resposta. O código de exemplo a seguir demonstra isso.  
+ O cliente usa o código gerado pela [ferramenta de utilitário de metadados ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) para criar um proxy para o serviço remoto. Para enviar uma mensagem de solicitação, o cliente deve ter a versão da mensagem, que depende do canal subjacente. Portanto, ele cria um novo <xref:System.ServiceModel.OperationContextScope> escopo para o canal de proxy que ele criou, que cria um <xref:System.ServiceModel.OperationContext> com a versão de mensagem correta populada em sua `OutgoingMessageHeaders.MessageVersion` propriedade. O cliente passa uma matriz de entrada como o corpo para a mensagem de solicitação e, em seguida, invoca o `ComputeSum` no proxy. Em seguida, o cliente recupera a soma das entradas passadas acessando o `GetBody<T>` método na mensagem de resposta. O código de exemplo a seguir demonstra isso.  
   
 ```csharp
 using (new OperationContextScope(client.InnerChannel))  

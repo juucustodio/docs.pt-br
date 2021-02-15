@@ -12,16 +12,15 @@
     - name: Operações de cadeia de caracteres sem detecção de cultura
       href: culture-insensitive-string-operations.md
       items:
-        - name: Executar operações de cadeia de caracteres que não levam em conta a cultura
+        - name: Visão geral
           href: performing-culture-insensitive-string-operations.md
-          items:
-            - name: Comparações de cadeias de caracteres
-              href: performing-culture-insensitive-string-comparisons.md
-            - name: Alterações de maiúsculas e minúsculas
-              href: performing-culture-insensitive-case-changes.md
-            - name: Operações de cadeia de caracteres em coleções
-              href: performing-culture-insensitive-string-operations-in-collections.md
-            - name: Operações da cadeia de caracteres em matrizes
-              href: performing-culture-insensitive-string-operations-in-arrays.md
+        - name: Comparações de cadeias de caracteres
+          href: performing-culture-insensitive-string-comparisons.md
+        - name: Alterações de maiúsculas e minúsculas
+          href: performing-culture-insensitive-case-changes.md
+        - name: Operações de cadeia de caracteres em coleções
+          href: performing-culture-insensitive-string-operations-in-collections.md
+        - name: Operações da cadeia de caracteres em matrizes
+          href: performing-culture-insensitive-string-operations-in-arrays.md
     - name: Melhores práticas para desenvolver aplicativos preparados para globalização
       href: best-practices-for-developing-world-ready-apps.md

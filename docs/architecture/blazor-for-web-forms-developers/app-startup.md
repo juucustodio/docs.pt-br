@@ -3,13 +3,13 @@ title: Inicialização do aplicativo
 description: Saiba como definir a lógica de inicialização para seu aplicativo.
 author: csharpfritz
 ms.author: jefritz
-ms.date: 02/25/2020
-ms.openlocfilehash: ea2ea458011d8351a834aa12db02e5d2bac2dc65
-ms.sourcegitcommit: 0100be20fcf23f61dab672deced70059ed71bb2e
+ms.date: 11/20/2020
+ms.openlocfilehash: d812079f84f67409334d07c4c10c5577446503be
+ms.sourcegitcommit: 2f485e721f7f34b87856a51181b5b56624b31fd5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88267692"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96509696"
 ---
 # <a name="app-startup"></a>Inicialização do aplicativo
 
@@ -28,7 +28,7 @@ Com o ASP.NET Core e o mais claro, esses métodos são simplificados e consolida
 
 ## <a name="blazor-server-startup-structure"></a>Estrutura de inicialização de servidor mais incrivelmente
 
-Os aplicativos de servidor mais recentes residem na parte superior de um aplicativo ASP.NET Core 3,0 ou posterior.  ASP.NET Core aplicativos Web são configurados por meio de um par de métodos na `Startup.cs` classe na pasta raiz do aplicativo.  O conteúdo padrão da classe de inicialização está listado abaixo
+Os aplicativos de servidor mais importantes residem sobre uma versão ASP.NET Core 3,0 ou posterior.  ASP.NET Core aplicativos Web são configurados por meio de um par de métodos na `Startup.cs` classe na pasta raiz do aplicativo.  O conteúdo padrão da classe de inicialização está listado abaixo
 
 ```csharp
 public class Startup
@@ -79,7 +79,7 @@ public class Startup
 
 Como o restante do ASP.NET Core, a classe de inicialização é criada com princípios de injeção de dependência.  O `IConfiguration` é fornecido ao construtor e Stash em uma propriedade pública para acesso posterior durante a configuração.
 
-O `ConfigureServices` método introduzido no ASP.NET Core permite que vários serviços do ASP.NET Core Framework sejam configurados para o contêiner de injeção de dependência interna da estrutura.  Os vários `services.Add*` métodos adicionam serviços que habilitam recursos como autenticação, páginas do Razor, roteamento do controlador MVC, signalr e interações de servidor mais incrivelmente entre muitos outros.  Esse método não era necessário em Web Forms, pois a análise e o manuseio dos arquivos ASPX, ASCX, ASHX e ASMX foram definidos por meio da referência a ASP.NET no arquivo de configuração web.config.  Mais informações sobre injeção de dependência no ASP.NET Core estão disponíveis na [documentação online](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection).
+O `ConfigureServices` método introduzido no ASP.NET Core permite que vários serviços do ASP.NET Core Framework sejam configurados para o contêiner de injeção de dependência interna da estrutura.  Os vários `services.Add*` métodos adicionam serviços que habilitam recursos como autenticação, páginas do Razor, roteamento do controlador MVC, signalr e interações de servidor mais incrivelmente entre muitos outros.  Esse método não era necessário em Web Forms, pois a análise e o manuseio dos arquivos ASPX, ASCX, ASHX e ASMX foram definidos por meio da referência a ASP.NET no arquivo de configuração web.config.  Mais informações sobre injeção de dependência no ASP.NET Core estão disponíveis na [documentação online](/aspnet/core/fundamentals/dependency-injection).
 
 O `Configure` método apresenta o conceito do pipeline http para ASP.NET Core.  Nesse método, declaramos de cima para baixo o [middleware](middleware.md) que tratará cada solicitação enviada ao nosso aplicativo. A maioria desses recursos na configuração padrão foi espalhada pelos arquivos de configuração do Web Forms e agora está em um único lugar para facilitar a referência.
 
@@ -89,7 +89,7 @@ Em seguida, um método de configuração inesperado é listado para `UseStaticFi
 
 A próxima linha é a primeira que replica uma das opções de configuração do Web Forms: `UseRouting` .  Esse método adiciona o ASP.NET Core roteador ao pipeline e pode ser configurado aqui ou nos arquivos individuais aos quais ele pode considerar o roteamento.  Mais informações sobre a configuração de roteamento podem ser encontradas na [seção roteamento](pages-routing-layouts.md).
 
-A instrução final nesse método define os pontos de extremidade que ASP.NET Core está escutando.  Esses são os locais acessíveis pela Web que você pode acessar no servidor Web e receber algum conteúdo manipulado pelo .NET e retornado a você.  A primeira entrada, `MapBlazorHub` configura um Hub do signalr para uso no fornecimento da conexão em tempo real e persistente ao servidor onde o estado e a renderização de componentes mais fáceis são tratados.  A `MapFallbackToPage` chamada do método indica o local acessível pela Web da página que inicia o aplicativo mais sincero e também configura o aplicativo para lidar com solicitações de vinculação profunda do lado do cliente.  Você verá esse recurso no trabalho se abrir um navegador e navegar diretamente para uma rota manipulada mais incrivelmente em seu aplicativo, como `/counter` no modelo de projeto padrão. A solicitação é manipulada pela página de fallback *_Host. cshtml* , que, em seguida, executa o roteador mais incrivelmente e renderiza a página do contador.
+A instrução final nesse método define os pontos de extremidade que ASP.NET Core está escutando.  Essas rotas são os locais acessíveis pela Web que você pode acessar no servidor Web e receber algum conteúdo manipulado pelo .NET e retornado a você.  A primeira entrada, `MapBlazorHub` configura um Hub do signalr para uso no fornecimento da conexão em tempo real e persistente ao servidor onde o estado e a renderização de componentes mais fáceis são tratados.  A `MapFallbackToPage` chamada do método indica o local acessível pela Web da página que inicia o aplicativo mais sincero e também configura o aplicativo para lidar com solicitações de vinculação profunda do lado do cliente.  Você verá esse recurso no trabalho se abrir um navegador e navegar diretamente para uma rota manipulada mais incrivelmente em seu aplicativo, como `/counter` no modelo de projeto padrão. A solicitação é manipulada pela página de fallback *_Host. cshtml* , que, em seguida, executa o roteador mais incrivelmente e renderiza a página do contador.
 
 ## <a name="upgrading-the-bundleconfig-process"></a>Atualizando o processo BundleConfig
 
@@ -103,7 +103,7 @@ As ferramentas de linha de comando Grunt, Gulp e webpack e suas configurações 
 </Target>
 ```
 
-Mais detalhes sobre as duas estratégias para gerenciar seus arquivos CSS e JavaScript estão disponíveis no [pacote e reduzir ativos estáticos na documentação ASP.NET Core](https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification) .
+Mais detalhes sobre as duas estratégias para gerenciar seus arquivos CSS e JavaScript estão disponíveis no [pacote e reduzir ativos estáticos na documentação ASP.NET Core](/aspnet/core/client-side/bundling-and-minification) .
 
 >[!div class="step-by-step"]
 >[Anterior](project-structure.md) 

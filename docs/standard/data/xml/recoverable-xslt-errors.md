@@ -1,19 +1,21 @@
 ---
+description: 'Saiba mais sobre: erros de XSLT recuperáveis'
 title: Erros recuperáveis XSLT
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 ms.assetid: 484929b0-fefb-4629-87ee-ebdde70ff1f8
-ms.openlocfilehash: ada0b352cd867417ed3ecf86291df023ca7c579e
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 5e31059554d36efd4c8738da7720e0ddf04999c5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84289090"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783151"
 ---
 # <a name="recoverable-xslt-errors"></a>Erros recuperáveis XSLT
+
 A recomendação de versão 1,0 do W3C de transformações XSL (XSLT) inclui as áreas no qual o provedor de implementação pode decidir como manipular uma situação. Essas áreas são consideradas como comportamento arbitrário. Por exemplo, em instruções de processamento criadoras da seção 7,3, XSLT 1,0 estados de recomendação que é um erro se criar uma instância do conteúdo de `xsl:processing-instruction` cria nós diferentes de nós de texto. Para alguns problemas, a recomendação XSLT 1,0 indica o que a decisão deve ser feita se o processador decidir recuperar de erro. Para o problema da seção 7,3, o W3C com a implementação pode recuperar esse erro ignorando os nós e seu conteúdo.  
   
 ## <a name="discretionary-behaviors"></a>Comportamentos arbitrários  
+
  A tabela a seguir lista cada um dos comportamentos arbitrários permitidas pela recomendação XSLT 1,0, e como esses comportamentos são tratados pela classe de <xref:System.Xml.Xsl.XslCompiledTransform> .  
   
 - Recupere indica que a classe de <xref:System.Xml.Xsl.XslCompiledTransform> recuperar esse erro. O evento de <xref:System.Xml.Xsl.XsltArgumentList.XsltMessageEncountered?displayProperty=nameWithType> pode ser usado para relatar todos os eventos do processador XSLT.  
@@ -39,7 +41,7 @@ A recomendação de versão 1,0 do W3C de transformações XSL (XSLT) inclui as 
 |O resultado de criar uma instância do conteúdo de `xsl:processing-instruction` contém a cadeia de caracteres “--” ou termina com “-”.|7.4|Recuperar|  
 |O resultado de criar uma instância do conteúdo de `xsl:comment` cria nós diferentes de nós de texto.|7.4|Erro*|  
 |O modelo dentro de um elemento de variável associação retorna um nó de atributo ou um nó de namespace.|11.2|Erro*|  
-|Há um erro que recupera o recurso URI passado na função do documento.|12.1|Erro|  
+|Há um erro que recupera o recurso URI passado na função do documento.|12.1|Erro do|  
 |A referência URI na função do documento contém um identificador de fragmento e há um erro que processa o identificador do fragmento.|12.1|Recover*|  
 |Há vários atributos com o mesmo nome, mas os valores diferentes, que não são nomeados elementos de cdata- seção em `xsl:output` com a mesma precedência de importação.|16|Recuperar|  
 |O processador não oferece suporte a codificação em `xsl:output` que codifica o atributo.|16.1|Recuperar|  
@@ -50,8 +52,8 @@ A recomendação de versão 1,0 do W3C de transformações XSL (XSLT) inclui as 
 |O atributo de `value` de `xsl:number` é NAN, infinito ou menor que 0,5|errata 24|Recuperar|  
 |O segundo argumento nó- definida como a função do documento está vazia e a referência URI é relativo.|erratas 14|Recuperar|  
   
- <sup>*</sup>Esse comportamento é diferente daquele da <xref:System.Xml.Xsl.XslTransform> classe. Para saber mais, confira [Implementação de comportamentos discricionários na classe XslTransform](implementation-of-discretionary-behaviors-in-the-xsltransform-class.md).  
+ <sup>*</sup> Esse comportamento é diferente daquele da <xref:System.Xml.Xsl.XslTransform> classe. Para saber mais, confira [Implementação de comportamentos discricionários na classe XslTransform](implementation-of-discretionary-behaviors-in-the-xsltransform-class.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Transformações XSLT](xslt-transformations.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: WriteOnly (Visual Basic)'
 title: WriteOnly
 ms.date: 07/20/2015
 f1_keywords:
@@ -11,24 +12,27 @@ helpviewer_keywords:
 - properties [Visual Basic], write-only
 - sensitive data
 ms.assetid: 488d2899-b09f-4cee-92f0-6f9f9fc4f944
-ms.openlocfilehash: a9fa0a3a23561215d6ff122bc8e609b68ca6fc30
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 514a1de3c8c2cfbde6a9cffc5c235d92454dd966
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84386628"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99674734"
 ---
 # <a name="writeonly-visual-basic"></a>WriteOnly (Visual Basic)
+
 Especifica que uma propriedade pode ser gravada, mas não lida.  
   
 ## <a name="remarks"></a>Comentários  
   
 ## <a name="rules"></a>Regras  
+
  **Contexto de declaração.** Você pode usar `WriteOnly` somente no nível do módulo. Isso significa que o contexto de declaração para uma `WriteOnly` propriedade deve ser uma classe, estrutura ou módulo e não pode ser um arquivo de origem, namespace ou procedimento.  
   
  Você pode declarar uma propriedade como `WriteOnly` , mas não uma variável.  
   
 ## <a name="when-to-use-writeonly"></a>Quando usar WriteOnly  
+
  Às vezes, você quer que o código de consumo seja capaz de definir um valor, mas não descobrir o que ele é. Por exemplo, dados confidenciais, como um número de registro social ou uma senha, precisam ser protegidos do acesso por qualquer componente que não o definiu. Nesses casos, você pode usar uma `WriteOnly` propriedade para definir o valor.  
   
 > [!IMPORTANT]
@@ -48,8 +52,8 @@ Especifica que uma propriedade pode ser gravada, mas não lida.
   
  [Instrução Property](../statements/property-statement.md)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Leitura](readonly.md)
-- [Privada](private.md)
+- [ReadOnly (somente-leitura)](readonly.md)
+- [Privado](private.md)
 - [Palavras-chave](../keywords/index.md)

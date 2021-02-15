@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: propriedades e métodos sobrecarregados (Visual Basic)'
 title: Propriedades e métodos sobrecarregados
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - method overloading
 - Overloads keyword [Visual Basic], overloaded members
 ms.assetid: b686fb97-e7d7-4001-afaa-6650cba08f0d
-ms.openlocfilehash: 1672f12773ece012c580253b6dafbf9d0ac8f07c
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: fb46876d346ad5f391241aee0b07175df290e656
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84389146"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100438769"
 ---
 # <a name="overloaded-properties-and-methods-visual-basic"></a>Propriedades e métodos sobrecarregados (Visual Basic)
 
@@ -77,9 +78,9 @@ O exemplo a seguir cria métodos sobrecarregados que aceitam `String` uma `Decim
 
 5. Execute o projeto e clique no botão no formulário para testar o `ShowTax` procedimento sobrecarregado.
 
-Em tempo de execução, o compilador escolhe a função sobrecarregada apropriada que corresponde aos parâmetros que estão sendo usados. Quando você clica no botão, o método sobrecarregado é chamado primeiro com um `Price` parâmetro que é uma cadeia de caracteres e a mensagem, "Price é uma cadeia de caracteres. O imposto é $5.12 "é exibido. `TaxAmount`é chamado com um `Decimal` valor da segunda vez e da mensagem, "Price é um decimal. O imposto é $5.12 "é exibido.
+Em tempo de execução, o compilador escolhe a função sobrecarregada apropriada que corresponde aos parâmetros que estão sendo usados. Quando você clica no botão, o método sobrecarregado é chamado primeiro com um `Price` parâmetro que é uma cadeia de caracteres e a mensagem, "Price é uma cadeia de caracteres. O imposto é $5.12 "é exibido. `TaxAmount` é chamado com um `Decimal` valor da segunda vez e da mensagem, "Price é um decimal. O imposto é $5.12 "é exibido.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Objetos e classes](index.md)
 - [Sombreamento no Visual Basic](../declared-elements/shadowing.md)

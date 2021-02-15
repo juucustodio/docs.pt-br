@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: leitura e gravação no registro usando o namespace Microsoft. Win32 (Visual Basic)'
 title: Ler e gravar no Registro usando o namespace Microsoft.Win32
 ms.date: 07/20/2015
 helpviewer_keywords:
 - registry [Visual Basic]
 ms.assetid: 4a0dcce0-c27b-4199-baa8-ee4528da6a56
-ms.openlocfilehash: 10431b1ad40ed320541a22fb46cc8db6dbb775b0
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: beb81a6385043011a37eee82f2036aca91382240
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84360066"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99701580"
 ---
 # <a name="reading-from-and-writing-to-the-registry-using-the-microsoftwin32-namespace-visual-basic"></a>Lendo e gravando no Registro usando o namespace Microsoft.Win32 (Visual Basic)
 
-Embora `My.Computer.Registry` deva suprir suas necessidades básicas ao programar no Registro, você também pode usar as classes <xref:Microsoft.Win32.Registry> e <xref:Microsoft.Win32.RegistryKey> no namespace <xref:Microsoft.Win32> do .NET Framework.  
+Embora `My.Computer.Registry` o deva abranger suas necessidades básicas ao programar em relação ao registro, você também pode usar as <xref:Microsoft.Win32.Registry> <xref:Microsoft.Win32.RegistryKey> classes e no <xref:Microsoft.Win32> namespace do .net.
   
 ## <a name="keys-in-the-registry-class"></a>Chaves na classe de Registro  
 
@@ -42,7 +43,7 @@ Embora `My.Computer.Registry` deva suprir suas necessidades básicas ao programa
   
  [!code-vb[VbResourceTasks#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbResourceTasks/VB/Class1.vb#21)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.SystemException>
 - <xref:System.ApplicationException>

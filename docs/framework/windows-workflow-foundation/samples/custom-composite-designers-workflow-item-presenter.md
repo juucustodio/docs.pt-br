@@ -1,17 +1,18 @@
 ---
+description: 'Saiba mais sobre: designers compostos personalizados-apresentador de item de fluxo de trabalho'
 title: Designer de compostos personalizados - apresentador de item de fluxo de trabalho
 ms.date: 03/30/2017
 ms.assetid: f85224cf-9e30-44a5-9a81-3bc438a34364
-ms.openlocfilehash: d1047b8be35545e83eaa8788b53751b6b0056984
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: 20a3bddf7efd69b6138d6b8a5caae250aa377999
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75338048"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787806"
 ---
 # <a name="custom-composite-designers---workflow-item-presenter"></a>Designer de compostos personalizados - apresentador de item de fluxo de trabalho
 
-O <xref:System.Activities.Presentation.WorkflowItemPresenter> é um tipo de chave no modelo de programação do WF designer que permite a criação de uma "área de destino" em que uma atividade arbitrária pode ser colocada. Este exemplo mostra como criar um designer de atividade que superfícies como uma "área de destino".
+O <xref:System.Activities.Presentation.WorkflowItemPresenter> é um tipo de chave no modelo de programação WF designer que permite a criação de uma "área de destino" em que uma atividade arbitrária pode ser colocada. Este exemplo mostra como criar um designer de atividade que superfícies como uma "área de destino".
 
 Este exemplo demonstra:
 
@@ -63,7 +64,7 @@ O código para esse exemplo mostra:
 </sap:ActivityDesigner>
 ```
 
- Observe o uso de associação de dados de WPF associar a `ModelItem.Body`. `ModelItem` é a propriedade em <xref:System.Activities.Presentation.ActivityDesigner> que se refere ao objeto subjacente para o qual o designer está sendo usado, nesse caso, **SimpleNativeActivity**.
+ Observe o uso de associação de dados de WPF associar a `ModelItem.Body`. `ModelItem` é a propriedade <xref:System.Activities.Presentation.ActivityDesigner> que se refere ao objeto subjacente para o qual o designer está sendo usado, nesse caso, **SimpleNativeActivity**.
 
 ## <a name="set-up-build-and-run-the-sample"></a>Configurar, compilar e executar o exemplo
 
@@ -76,11 +77,11 @@ O código para esse exemplo mostra:
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Se esse diretório não existir, vá para [Windows Communication Foundation (WCF) e exemplos de Windows Workflow Foundation (WF) para .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) para baixar todas as Windows Communication Foundation (WCF) e [!INCLUDE[wf1](../../../../includes/wf1-md.md)] amostras. Este exemplo está localizado no seguinte diretório.
+> Se esse diretório não existir, vá para [Windows Communication Foundation (WCF) e exemplos de Windows Workflow Foundation (WF) para .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) para baixar todos os Windows Communication Foundation (WCF) e [!INCLUDE[wf1](../../../../includes/wf1-md.md)] exemplos. Este exemplo está localizado no seguinte diretório.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Basic\CustomActivities\CustomActivityDesigners\WorkflowItemPresenter`
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Activities.Presentation.WorkflowItemPresenter>
 - [Desenvolvendo aplicativos com o Designer de Fluxo de Trabalho](/visualstudio/workflow-designer/developing-applications-with-the-workflow-designer)

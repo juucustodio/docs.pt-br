@@ -9,14 +9,15 @@ helpviewer_keywords:
 - system.Net element
 - <system.Net> element
 ms.assetid: 52de4d6c-b24d-44aa-ba7d-6b5061f1357e
-ms.openlocfilehash: 9f18c7a3586948c03391d609f437e216a91bc27f
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 80d54df40c6798e146013b4f2d867386ae35169c
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84504479"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91201714"
 ---
 # <a name="systemnet-element-network-settings"></a>Elemento \<system.Net> (Configurações de Rede)
+
 Contém configurações que especificam como o .NET Framework se conecta à rede.  
   
 [**\<configuration>**](../configuration-element.md)  
@@ -30,14 +31,16 @@ Contém configurações que especificam como o .NET Framework se conecta à rede
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
+
  Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  
   
-|**Elemento**|**Descrição**|  
+|**Element**|**Descrição**|  
 |-----------------|---------------------|  
 |[authenticationModules](authenticationmodules-element-network-settings.md)|Especifica os módulos usados para autenticar solicitações da Internet.|  
 |[connectionManagement](connectionmanagement-element-network-settings.md)|Especifica o número máximo de conexões com um host de Internet.|  
@@ -49,14 +52,16 @@ Contém configurações que especificam como o .NET Framework se conecta à rede
   
 ### <a name="parent-elements"></a>Elementos pai  
   
-|**Elemento**|**Descrição**|  
+|**Element**|**Descrição**|  
 |-----------------|---------------------|  
 |[configuração](../configuration-element.md)|Contém configurações para todos os namespaces.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O [\<system.net>](system-net-element-network-settings.md) elemento contém configurações para classes nos <xref:System.Net> namespaces filho relacionados. As configurações definem módulos de autenticação, gerenciamento de conexão, configurações de email, o servidor proxy e os módulos de solicitação da Internet para receber informações de hosts da Internet.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir mostra uma configuração típica usada por <xref:System.Net> classes.  
   
 ```xml  
@@ -93,6 +98,6 @@ Contém configurações que especificam como o .NET Framework se conecta à rede
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Esquema de configurações de rede](index.md)

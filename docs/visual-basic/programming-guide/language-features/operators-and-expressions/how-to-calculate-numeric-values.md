@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como calcular valores numéricos (Visual Basic)'
 title: Como calcular valores numéricos
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,14 +12,15 @@ helpviewer_keywords:
 - Visual Basic code, expressions
 - numeric expressions
 ms.assetid: ba6bf43d-bd96-49b8-b1de-4a7797551372
-ms.openlocfilehash: 94b02693f308dcfcfa6983f2750a26d9d419f7be
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 35acd7b9b1732514a8fe4399b6a815dce62b2468
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403453"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100435584"
 ---
 # <a name="how-to-calculate-numeric-values-visual-basic"></a>Como calcular valores numéricos (Visual Basic)
+
 Você pode calcular valores numéricos com o uso de expressões numéricas. Uma *expressão numérica* é uma expressão que contém literais, constantes e variáveis que representam valores numéricos e operadores que atuam nesses valores.  
   
 ## <a name="calculating-numeric-values"></a>Calculando valores numéricos  
@@ -50,6 +52,7 @@ Você pode calcular valores numéricos com o uso de expressões numéricas. Uma 
      Para obter mais informações, consulte [Instruções](../../../language-reference/statements/index.md).  
   
 ## <a name="multiple-operators"></a>Vários operadores  
+
  Se a expressão numérica contiver mais de um operador, a ordem na qual eles são avaliados será determinada pelas regras de precedência de operador. Para substituir as regras de precedência de operador, você deve colocar expressões entre parênteses, como no exemplo acima; as expressões embutidas são avaliadas primeiro.  
   
 #### <a name="to-override-normal-operator-precedence"></a>Para substituir a precedência de operador normal  
@@ -62,7 +65,7 @@ Você pode calcular valores numéricos com o uso de expressões numéricas. Uma 
   
      Para obter mais informações, consulte [precedência de operador em Visual Basic](../../../language-reference/operators/operator-precedence.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operadores e expressões](index.md)
 - [Comparações de valor](value-comparisons.md)

@@ -1,23 +1,25 @@
 ---
-title: Como expor um feed como Atom e RSS
+description: 'Saiba mais sobre: como: expor um feed como Atom e RSS'
+title: 'Como: expor um feed como Atom e RSS'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: fe374932-67f5-487d-9325-f868812b92e4
-ms.openlocfilehash: e4ce1fa7b494c2317a1bddc57ee6b150c84b9a96
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 5afe08b2c1d9fc687563e124061fe7fb59257180
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84593140"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793773"
 ---
-# <a name="how-to-expose-a-feed-as-both-atom-and-rss"></a>Como expor um feed como Atom e RSS
+# <a name="how-to-expose-a-feed-as-both-atom-and-rss"></a>Como: expor um feed como Atom e RSS
+
 Windows Communication Foundation (WCF) permite que você crie um serviço que expõe um feed de distribuição. Este tópico discute como criar um serviço de distribuição que expõe um feed de distribuição usando o Atom 1,0 e o RSS 2,0. Esse serviço expõe um ponto de extremidade que pode retornar um formato de distribuição. Para simplificar, o serviço usado neste exemplo é hospedado internamente. Em um ambiente de produção, um serviço desse tipo seria hospedado no IIS ou WAS. Para obter mais informações sobre as diferentes opções de hospedagem do WCF, consulte [Hosting](hosting.md).  
   
 ### <a name="to-create-a-basic-syndication-service"></a>Para criar um serviço de distribuição básico  
   
-1. Defina um contrato de serviço usando uma interface marcada com o <xref:System.ServiceModel.Web.WebGetAttribute> atributo. Cada operação exposta como um feed de agregação retorna um <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> objeto. Observe os parâmetros para o <xref:System.ServiceModel.Web.WebGetAttribute> . `UriTemplate`Especifica a URL usada para invocar esta operação de serviço. A cadeia de caracteres para esse parâmetro contém literais e uma variável entre chaves ({*Format*}). Essa variável corresponde ao parâmetro da operação de serviço `format` . Para obter mais informações, consulte <xref:System.UriTemplate>. `BodyStyle`afeta como as mensagens enviadas e recebidas por essa operação de serviço são gravadas. <xref:System.ServiceModel.Web.WebMessageBodyStyle.Bare>Especifica que os dados enviados para e dessa operação de serviço não são encapsulados por elementos XML definidos pela infraestrutura. Para obter mais informações, consulte <xref:System.ServiceModel.Web.WebMessageBodyStyle>.  
+1. Defina um contrato de serviço usando uma interface marcada com o <xref:System.ServiceModel.Web.WebGetAttribute> atributo. Cada operação exposta como um feed de agregação retorna um <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter> objeto. Observe os parâmetros para o <xref:System.ServiceModel.Web.WebGetAttribute> . `UriTemplate` Especifica a URL usada para invocar esta operação de serviço. A cadeia de caracteres para esse parâmetro contém literais e uma variável entre chaves ({*Format*}). Essa variável corresponde ao parâmetro da operação de serviço `format` . Para obter mais informações, consulte <xref:System.UriTemplate>. `BodyStyle` afeta como as mensagens enviadas e recebidas por essa operação de serviço são gravadas. <xref:System.ServiceModel.Web.WebMessageBodyStyle.Bare> Especifica que os dados enviados para e dessa operação de serviço não são encapsulados por elementos XML definidos pela infraestrutura. Para obter mais informações, consulte <xref:System.ServiceModel.Web.WebMessageBodyStyle>.  
   
      [!code-csharp[htAtomRss#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/htatomrss/cs/program.cs#0)]
      [!code-vb[htAtomRss#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/htatomrss/vb/program.vb#0)]  
@@ -88,12 +90,14 @@ Windows Communication Foundation (WCF) permite que você crie um serviço que ex
      [!code-vb[htAtomRss#11](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/htatomrss/vb/snippets.vb#11)]  
   
 ## <a name="example"></a>Exemplo  
+
  A seguir está a listagem completa de códigos deste exemplo.  
   
  [!code-csharp[htAtomRss#12](../../../../samples/snippets/csharp/VS_Snippets_CFX/htatomrss/cs/program.cs#12)]  
   
 ## <a name="compiling-the-code"></a>Compilando o código  
- Ao compilar o código anterior, referencie System. ServiceModel. dll e System. ServiceModel. Web. dll.  
+
+ Ao compilar o código anterior, referencie System.ServiceModel.dll e System.ServiceModel.Web.dll.  
   
 ## <a name="see-also"></a>Confira também
 

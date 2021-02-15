@@ -2,13 +2,13 @@
 title: Noções básicas sobre a autenticação nas bibliotecas do Azure para .NET
 description: Explica as diferentes maneiras de se autenticar com o SDK do Azure para .NET.
 ms.date: 06/19/2020
-ms.custom: azure-sdk-dotnet
-ms.openlocfilehash: bc2fce919d88a528f21df9f561cbe33e1119762a
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.custom: devx-track-dotnet
+ms.openlocfilehash: 0a508606b40905d5b09b8515910873359efbbf2e
+ms.sourcegitcommit: 3d6d6595a03915f617349781f455f838a44b0f44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88811373"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97700835"
 ---
 # <a name="authenticate-with-the-azure-sdk-for-net"></a>Autenticar com o SDK do Azure para .NET
 
@@ -25,7 +25,7 @@ Para autenticar com bibliotecas que não dão suporte ao Azure. Identity, consul
 
 ## <a name="access-azure-resources"></a>Acessar recursos do Azure
 
-Para interagir com os recursos do Azure, como recuperar um segredo de Key Vault ou armazenar um blob no armazenamento, muitas bibliotecas de serviço do Azure exigem uma cadeia de conexão ou chaves para autenticação. Por exemplo, o banco de dados SQL usa uma [cadeia de conexão SQL padrão](https://docs.microsoft.com/azure/azure-sql/database/connect-query-dotnet-core). As cadeias de conexão de serviço são usadas em outros serviços do Azure, como [CosmosDB](/azure/cosmos-db/), [cache do Azure para Redis](/azure/azure-cache-for-redis/cache-dotnet-how-to-use-azure-redis-cache)e [barramento de serviço](/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues). Você pode obter essas cadeias de caracteres usando o portal do Azure, a CLI ou o PowerShell. Você também pode usar as bibliotecas de gerenciamento do Azure para .NET a fim de consultar recursos para criar cadeias de conexão no seu código.
+Para interagir com os recursos do Azure, como recuperar um segredo de Key Vault ou armazenar um blob no armazenamento, muitas bibliotecas de serviço do Azure exigem uma cadeia de conexão ou chaves para autenticação. Por exemplo, o banco de dados SQL usa uma [cadeia de conexão SQL padrão](/azure/azure-sql/database/connect-query-dotnet-core). As cadeias de conexão de serviço são usadas em outros serviços do Azure, como [CosmosDB](/azure/cosmos-db/), [cache do Azure para Redis](/azure/azure-cache-for-redis/cache-dotnet-how-to-use-azure-redis-cache)e [barramento de serviço](/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues). Você pode obter essas cadeias de caracteres usando o portal do Azure, a CLI ou o PowerShell. Você também pode usar as bibliotecas de gerenciamento do Azure para .NET a fim de consultar recursos para criar cadeias de conexão no seu código.
 
 Os métodos para usar uma cadeia de conexão variam de acordo com o produto. [Consulte a documentação do seu produto do Azure](/azure/?product=featured).
 

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRErrorReportingManager:: BeginCustomDump'
 title: Método ICLRErrorReportingManager::BeginCustomDump
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 93424a87-ba13-4fa1-b4dc-69d44437b7ae
 topic_type:
 - apiref
-ms.openlocfilehash: 4c83ffaf920abe005ba987e0a744e13aa0d3c016
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 3f8498068d50ffc6ea00cf4f08f969c92f010d6c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615664"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99689476"
 ---
 # <a name="iclrerrorreportingmanagerbegincustomdump-method"></a>Método ICLRErrorReportingManager::BeginCustomDump
+
 Especifica a configuração de despejos de heap personalizados para o relatório de erros.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,6 +39,7 @@ HRESULT BeginCustomDump (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `dwFlavor`  
  no Um valor [ECustomDumpFlavor](ecustomdumpflavor-enumeration.md) que indica o tipo de despejo de heap no qual Compilar o despejo de heap personalizado.  
   
@@ -61,21 +64,23 @@ HRESULT BeginCustomDump (
 |E_FAIL|Ocorreu uma falha catastrófica desconhecida. Depois que um método retorna E_FAIL, o CLR não pode mais ser usado no processo. As chamadas subsequentes para métodos de hospedagem retornam HOST_E_CLRNOTAVAILABLE.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O `BeginCustomDump` método define a configuração de despejo de heap personalizado. O método [EndCustomDump](iclrerrorreportingmanager-endcustomdump-method.md) limpa a configuração de despejo de heap personalizada e libera qualquer estado associado. Ele deve ser chamado após a conclusão do despejo de heap personalizado.  
   
 > [!IMPORTANT]
 > Falha ao chamar `EndCustomDump` faz com que a memória seja vazada.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Estrutura CustomDumpItem](customdumpitem-structure.md)
 - [Enumeração ECustomDumpFlavor](ecustomdumpflavor-enumeration.md)

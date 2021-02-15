@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ISymUnmanagedReader:: Initialize'
 title: Método ISymUnmanagedReader::Initialize
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 8f0dd2fe-7df7-464e-91f4-5518c586bb5f
 topic_type:
 - apiref
-ms.openlocfilehash: 07d2de5d12fd769cb5cce243d9e721bb6fc185a7
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: cf7f5df3efed7823fc36bd6c9fc56e0c49d17443
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615469"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763872"
 ---
 # <a name="isymunmanagedreaderinitialize-method"></a>Método ISymUnmanagedReader::Initialize
+
 Inicializa o leitor de símbolos com a interface de importador de metadados à qual esse leitor será associado, juntamente com o nome de arquivo do módulo.  
   
 > [!NOTE]
@@ -39,6 +41,7 @@ HRESULT Initialize (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `importer`  
  no A interface de importador de metadados à qual este leitor será associado.  
   
@@ -52,14 +55,17 @@ HRESULT Initialize (
  no O fluxo de arquivos, usado como uma alternativa ao parâmetro filename.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
 ## <a name="remarks"></a>Comentários  
+
  Você precisa especificar apenas um dos `filename` `pIStream` parâmetros ou, não ambos. O `searchPath` é opcional.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedReader](isymunmanagedreader-interface.md)

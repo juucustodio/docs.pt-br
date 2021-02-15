@@ -6,12 +6,12 @@ helpviewer_keywords:
 - C# Language, access modifiers
 - access modifiers [C#], about
 ms.assetid: 6e81ee82-224f-4a12-9baf-a0dca2656c5b
-ms.openlocfilehash: 557f5d9f302b08d32896b462e86ce1d96710ff36
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: d800116137e088a54edb221fb4f81ecd47b0278f
+ms.sourcegitcommit: 2b878d7011306b215dbf3d5dc9c1e78355a6dcd5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86474521"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98757857"
 ---
 # <a name="access-modifiers-c-programming-guide"></a>Modificadores de acesso (Guia de Programação em C#)
 
@@ -32,7 +32,7 @@ Nem todos os modificadores de acesso são válidos para todos os tipos ou membro
 
 ## <a name="class-and-struct-accessibility"></a>Acessibilidade de classe e struct  
 
-Classes e structs declaradas diretamente dentro de um namespace (em outras palavras, que não são aninhadas em outras classes ou structs) podem ser `public` ou `internal` . `Internal`será o padrão se nenhum modificador de acesso for especificado.  
+Classes e structs declaradas diretamente dentro de um namespace (em outras palavras, que não são aninhadas em outras classes ou structs) podem ser `public` ou `internal` . `internal` será o padrão se nenhum modificador de acesso for especificado.
 
 Membros de struct, incluindo classes aninhadas e structs, podem ser declarados `public` , `internal` ou `private` . Membros de classe, incluindo classes aninhadas e structs, podem ser `public` , `protected internal` , `protected` ,, `internal` `private protected` ou `private` . Membros de classe e struct, incluindo classes aninhadas e estruturas, têm `private` acesso por padrão. Tipos aninhados privados não podem ser acessados de fora do tipo recipiente.
 
@@ -64,11 +64,11 @@ Os membros de enumeração são sempre `public` e nenhum modificador de acesso p
 
 Delegados se comportam como classes e structs. Por padrão, eles têm `internal` acesso quando declarados diretamente dentro de um namespace e são `private` acessados quando aninhados.
 
-## <a name="c-language-specification"></a>especificação da linguagem C#
+## <a name="c-language-specification"></a>Especificação da linguagem C#
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Guia de programação C#](../index.md)
 - [Classes e structs](./index.md)
@@ -76,7 +76,7 @@ Delegados se comportam como classes e structs. Por padrão, eles têm `internal`
 - [pessoal](../../language-reference/keywords/private.md)
 - [público](../../language-reference/keywords/public.md)
 - [interno](../../language-reference/keywords/internal.md)
-- [protegidos](../../language-reference/keywords/protected.md)
+- [protected](../../language-reference/keywords/protected.md)
 - [internos protegidos](../../language-reference/keywords/protected-internal.md)
 - [privado protegido](../../language-reference/keywords/private-protected.md)
 - [class](../../language-reference/keywords/class.md)

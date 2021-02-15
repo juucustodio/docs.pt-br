@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: referência de esquema de contrato de dados'
 title: Referência de esquema de contrato de dados
 ms.date: 03/30/2017
 helpviewer_keywords:
 - data contracts [WCF], schema reference
 ms.assetid: 9ebb0ebe-8166-4c93-980a-7c8f1f38f7c0
-ms.openlocfilehash: 04d1f753e5788460404942a21a29e1612f674e90
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 3449340600ea5c55ef46433031e53266a218bd6d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84593562"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756637"
 ---
 # <a name="data-contract-schema-reference"></a>Referência de esquema de contrato de dados
 
@@ -17,9 +18,9 @@ Este tópico descreve o subconjunto do esquema XML (XSD) usado pelo <xref:System
 
 ## <a name="datacontractserializer-mappings"></a>Mapeamentos do DataContractSerializer
 
-O `DataContractSerializer` mapeia os tipos CLR para xsd quando os metadados são exportados de um serviço de Windows Communication Foundation (WCF) usando um ponto de extremidade de metadados ou a [ferramenta de utilitário de metadados ServiceModel (svcutil. exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md). Para obter mais informações, consulte [serializador de contrato de dados](data-contract-serializer.md).
+O `DataContractSerializer` mapeia os tipos CLR para xsd quando os metadados são exportados de um serviço de Windows Communication Foundation (WCF) usando um ponto de extremidade de metadados ou a [ferramenta de utilitário de metadados ServiceModel (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md). Para obter mais informações, consulte [serializador de contrato de dados](data-contract-serializer.md).
 
-O `DataContractSerializer` também MAPEIA XSD para tipos CLR quando svcutil. exe é usado para acessar documentos WSDL (linguagem de descrição de serviços Web) ou xsd e gerar contratos de dados para serviços ou clientes.
+O `DataContractSerializer` também MAPEIA XSD para tipos CLR quando Svcutil.exe é usado para acessar documentos WSDL (Web Services Description Language) ou xsd e gerar contratos de dados para serviços ou clientes.
 
 Somente as instâncias de esquema XML que estão em conformidade com os requisitos declarados neste documento podem ser mapeadas para tipos CLR usando o `DataContractSerializer` .
 
@@ -31,7 +32,7 @@ O `DataContractSerializer` fornece os seguintes níveis de suporte para um deter
 
 - **Ignorado**. O recurso é permitido em esquemas importados pelo `DataContractSerializer` , mas não tem efeito sobre a geração de código.
 
-- **Proibido**. O `DataContractSerializer` não oferece suporte à importação de um esquema usando o recurso. Por exemplo, svcutil. exe, ao acessar um WSDL com um esquema que usa esse recurso, volta a usar o <xref:System.Xml.Serialization.XmlSerializer> em vez disso. Isso é por padrão.
+- **Proibido**. O `DataContractSerializer` não oferece suporte à importação de um esquema usando o recurso. Por exemplo, Svcutil.exe, ao acessar um WSDL com um esquema que usa esse recurso, volta a usar o <xref:System.Xml.Serialization.XmlSerializer> em vez disso. Isso é por padrão.
 
 ## <a name="general-information"></a>Informações gerais
 
@@ -57,18 +58,18 @@ O `DataContractSerializer` fornece os seguintes níveis de suporte para um deter
 
 |Sumário|Esquema|
 |--------------|------------|
-|`include`|Com suporte. `DataContractSerializer`dá suporte a xs: include e xs: import. No entanto, svcutil. exe restringe o seguinte `xs:include/@schemaLocation` e `xs:import/@location` faz referência quando os metadados são carregados de um arquivo local. A lista de arquivos de esquema deve ser passada por meio de um mecanismo fora de banda e não `include` nesse caso; `include` os documentos de esquema d são ignorados.|
-|`redefine`|Negado. O uso de `xs:redefine` é proibido por `DataContractSerializer` por motivos de segurança `x:redefine` : `schemaLocation` requer que seja seguido. Em determinadas circunstâncias, svcutil. exe usando DataContract restringe o uso de `schemaLocation` .|
-|`import`|Com suporte. `DataContractSerializer`dá suporte a `xs:include` e `xs:import` . No entanto, svcutil. exe restringe o seguinte `xs:include/@schemaLocation` e `xs:import/@location` faz referência quando os metadados são carregados de um arquivo local. A lista de arquivos de esquema deve ser passada por meio de um mecanismo fora de banda e não `include` nesse caso; `include` os documentos de esquema d são ignorados.|
+|`include`|Com suporte. `DataContractSerializer` dá suporte a xs: include e xs: import. No entanto, Svcutil.exe restringe o seguinte `xs:include/@schemaLocation` e `xs:import/@location` faz referência quando os metadados são carregados de um arquivo local. A lista de arquivos de esquema deve ser passada por meio de um mecanismo fora de banda e não `include` nesse caso; `include` os documentos de esquema d são ignorados.|
+|`redefine`|Negado. O uso de `xs:redefine` é proibido por `DataContractSerializer` por motivos de segurança `x:redefine` : `schemaLocation` requer que seja seguido. Em determinadas circunstâncias, Svcutil.exe usando DataContract restringe o uso de `schemaLocation` .|
+|`import`|Com suporte. `DataContractSerializer` dá suporte a `xs:include` e `xs:import` . No entanto, Svcutil.exe restringe o seguinte `xs:include/@schemaLocation` e `xs:import/@location` faz referência quando os metadados são carregados de um arquivo local. A lista de arquivos de esquema deve ser passada por meio de um mecanismo fora de banda e não `include` nesse caso; `include` os documentos de esquema d são ignorados.|
 |`simpleType`|Com suporte. Consulte a `xs:simpleType` seção.|
 |`complexType`|Com suporte, mapeia para contratos de dados. Consulte a `xs:complexType` seção.|
-|`group`|Ignorado. `DataContractSerializer`não oferece suporte ao uso de `xs:group` , `xs:attributeGroup` e `xs:attribute` . Essas declarações são ignoradas como filhos de `xs:schema` , mas não podem ser referenciadas de dentro `complexType` ou de outras construções com suporte.|
-|`attributeGroup`|Ignorado. `DataContractSerializer`não oferece suporte ao uso de `xs:group` , `xs:attributeGroup` e `xs:attribute` . Essas declarações são ignoradas como filhos de `xs:schema` , mas não podem ser referenciadas de dentro `complexType` ou de outras construções com suporte.|
+|`group`|Ignorado. `DataContractSerializer` não oferece suporte ao uso de `xs:group` , `xs:attributeGroup` e `xs:attribute` . Essas declarações são ignoradas como filhos de `xs:schema` , mas não podem ser referenciadas de dentro `complexType` ou de outras construções com suporte.|
+|`attributeGroup`|Ignorado. `DataContractSerializer` não oferece suporte ao uso de `xs:group` , `xs:attributeGroup` e `xs:attribute` . Essas declarações são ignoradas como filhos de `xs:schema` , mas não podem ser referenciadas de dentro `complexType` ou de outras construções com suporte.|
 |`element`|Com suporte. Consulte declaração de elemento global (teste).|
-|`attribute`|Ignorado. `DataContractSerializer`não oferece suporte ao uso de `xs:group` , `xs:attributeGroup` e `xs:attribute` . Essas declarações são ignoradas como filhos de `xs:schema` , mas não podem ser referenciadas de dentro `complexType` ou de outras construções com suporte.|
+|`attribute`|Ignorado. `DataContractSerializer` não oferece suporte ao uso de `xs:group` , `xs:attributeGroup` e `xs:attribute` . Essas declarações são ignoradas como filhos de `xs:schema` , mas não podem ser referenciadas de dentro `complexType` ou de outras construções com suporte.|
 |`notation`|Ignorado.|
 
-## <a name="complex-types--xscomplextype"></a>Tipos complexos –\<xs:complexType>
+## <a name="complex-types--xscomplextype"></a>Tipos complexos – \<xs:complexType>
 
 ### <a name="general-information"></a>Informações gerais
 
@@ -100,7 +101,7 @@ Cada tipo complexo é \<xs:complexType> mapeado para um contrato de dados.
 |`anyAttribute`|Negado.|
 |(vazio)|Mapeia para um contrato de dados sem membros de dados.|
 
-### <a name="xssequence-in-a-complex-type-attributes"></a>\<xs:sequence>em um tipo complexo: atributos
+### <a name="xssequence-in-a-complex-type-attributes"></a>\<xs:sequence> em um tipo complexo: atributos
 
 |Atributo|Esquema|
 |---------------|------------|
@@ -108,7 +109,7 @@ Cada tipo complexo é \<xs:complexType> mapeado para um contrato de dados.
 |`maxOccurs`|Deve ser 1 (padrão).|
 |`minOccurs`|Deve ser 1 (padrão).|
 
-### <a name="xssequence-in-a-complex-type-contents"></a>\<xs:sequence>em um tipo complexo: conteúdo
+### <a name="xssequence-in-a-complex-type-contents"></a>\<xs:sequence> em um tipo complexo: conteúdo
 
 |Sumário|Esquema|
 |--------------|------------|
@@ -119,11 +120,11 @@ Cada tipo complexo é \<xs:complexType> mapeado para um contrato de dados.
 |`any`|Negado.|
 |(vazio)|Mapeia para um contrato de dados sem membros de dados.|
 
-## <a name="elements--xselement"></a>Elementos\<xs:element>
+## <a name="elements--xselement"></a>Elementos \<xs:element>
 
 ### <a name="general-information"></a>Informações gerais
 
-`<xs:element>`pode ocorrer nos seguintes contextos:
+`<xs:element>` pode ocorrer nos seguintes contextos:
 
 - Ele pode ocorrer em um `<xs:sequence>` , que descreve um membro de dados de um contrato de dados regular (não coleção). Nesse caso, o `maxOccurs` atributo deve ser 1. (Um valor de 0 não é permitido).
 
@@ -131,7 +132,7 @@ Cada tipo complexo é \<xs:complexType> mapeado para um contrato de dados.
 
 - Ele pode ocorrer dentro de uma `<xs:schema>` como uma declaração de elemento global (teste).
 
-### <a name="xselement-with-maxoccurs1-within-an-xssequence-data-members"></a>\<xs:element>com maxOccurs = 1 em um \<xs:sequence> (membros de dados)
+### <a name="xselement-with-maxoccurs1-within-an-xssequence-data-members"></a>\<xs:element> com maxOccurs = 1 em um \<xs:sequence> (membros de dados)
 
 |Atributo|Esquema|
 |---------------|------------|
@@ -147,7 +148,7 @@ Cada tipo complexo é \<xs:complexType> mapeado para um contrato de dados.
 |`minOccurs`|Mapeia para a <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> propriedade de um membro de dados ( `IsRequired` é verdadeiro quando `minOccurs` é 1).|
 |`nillable`|Afeta o mapeamento de tipo. Consulte mapeamento de tipo/primitivo.|
 
-### <a name="xselement-with-maxoccurs1-within-an-xssequence-collections"></a>\<xs:element>com maxOccurs>1 em um \<xs:sequence> (coleções)
+### <a name="xselement-with-maxoccurs1-within-an-xssequence-collections"></a>\<xs:element> com maxOccurs>1 em um \<xs:sequence> (coleções)
 
 - Mapeia para um <xref:System.Runtime.Serialization.CollectionDataContractAttribute> .
 
@@ -171,7 +172,7 @@ As regras para os `ref` atributos,,,, `block` `default` `fixed` `form` e `id` s�
 |`minOccurs`|Ignorado.|
 |`nillable`|Afeta o mapeamento de tipo. Esse atributo é ignorado para coleções de dicionário.|
 
-### <a name="xselement-within-an-xsschema-global-element-declaration"></a>\<xs:element>dentro de uma \<xs:schema> declaração de elemento global
+### <a name="xselement-within-an-xsschema-global-element-declaration"></a>\<xs:element> dentro de uma \<xs:schema> declaração de elemento global
 
 - Uma declaração de elemento global (teste) que tem o mesmo nome e namespace como um tipo no esquema, ou que define um tipo anônimo dentro dele mesmo, é considerada associada ao tipo.
 
@@ -205,7 +206,7 @@ As regras para os `ref` atributos,,,, `block` `default` `fixed` `form` e `id` s�
 |`keyref`|Ignorado.|
 |(blank)|Com suporte.|
 
-\*Ao usar o `simpleType` `complexType,` mapeamento e para tipos anônimos é o mesmo que para tipos não anônimos, exceto pelo fato de que não há nenhum contrato de dados anônimo e, portanto, um acordo de dados nomeado é criado, com um nome gerado derivado do nome do elemento. As regras para tipos anônimos estão na lista a seguir:
+\* Ao usar o `simpleType` `complexType,` mapeamento e para tipos anônimos é o mesmo que para tipos não anônimos, exceto pelo fato de que não há nenhum contrato de dados anônimo e, portanto, um acordo de dados nomeado é criado, com um nome gerado derivado do nome do elemento. As regras para tipos anônimos estão na lista a seguir:
 
 - Detalhe da implementação do WCF: se o `xs:element` nome não contiver pontos, o tipo anônimo será mapeado para um tipo interno do tipo de contrato de dados externo. Se o nome contiver pontos, o tipo de contrato de dados resultante será independente (não um tipo interno).
 
@@ -213,7 +214,7 @@ As regras para os `ref` atributos,,,, `block` `default` `fixed` `form` e `id` s�
 
 - Se já existir um contrato de dados com esse nome, o nome será exclusivo acrescentando "1", "2", "3" e assim por diante até que um nome exclusivo seja criado.
 
-## <a name="simple-types---xssimpletype"></a>Tipos simples-\<xs:simpleType>
+## <a name="simple-types---xssimpletype"></a>Tipos simples- \<xs:simpleType>
 
 ### <a name="xssimpletype-attributes"></a>\<xs:simpleType>: atributos
 
@@ -246,7 +247,7 @@ As regras para os `ref` atributos,,,, `block` `default` `fixed` `form` e `id` s�
 |`base`|Deve ser um tipo simples com suporte ou `xs:anyType` .|
 |`id`|Ignorado.|
 
-### <a name="xsrestriction-for-all-other-cases-contents"></a>\<xs:restriction>para todos os outros casos: conteúdo
+### <a name="xsrestriction-for-all-other-cases-contents"></a>\<xs:restriction> para todos os outros casos: conteúdo
 
 |Sumário|Esquema|
 |--------------|------------|
@@ -267,14 +268,14 @@ As regras para os `ref` atributos,,,, `block` `default` `fixed` `form` e `id` s�
 
 ## <a name="enumeration"></a>Enumeração
 
-### <a name="xsrestriction-for-enumerations-attributes"></a>\<xs:restriction>para enumerações: atributos
+### <a name="xsrestriction-for-enumerations-attributes"></a>\<xs:restriction> para enumerações: atributos
 
 |Atributo|Esquema|
 |---------------|------------|
 |`base`|Se presente, deve ser `xs:string` .|
 |`id`|Ignorado.|
 
-### <a name="xsrestriction-for-enumerations-contents"></a>\<xs:restriction>para enumerações: conteúdo
+### <a name="xsrestriction-for-enumerations-contents"></a>\<xs:restriction> para enumerações: conteúdo
 
 |Sumário|Esquema|
 |--------------|------------|
@@ -333,7 +334,7 @@ Essa classe é mapeada para o esquema a seguir pelo `DataContractSerializer` . S
 
 ### \<xs:list>
 
-`DataContractSerializer`mapeia tipos de enumeração marcados com `System.FlagsAttribute` para `xs:list` derivado de `xs:string` . Não há `xs:list` suporte para nenhuma outra variação.
+`DataContractSerializer` mapeia tipos de enumeração marcados com `System.FlagsAttribute` para `xs:list` derivado de `xs:string` . Não há `xs:list` suporte para nenhuma outra variação.
 
 ### <a name="xslist-attributes"></a>\<xs:list>: atributos
 
@@ -453,14 +454,14 @@ Este contrato de dados é mapeado para a seguinte declaração de tipo de esquem
 |`restriction`|Proibido, exceto quando base = " `xs:anyType` ". O último é equivalente a colocar o conteúdo do `xs:restriction` diretamente sob o contêiner do `xs:complexContent` .|
 |`extension`|Com suporte. Mapeia para herança de contrato de dados.|
 
-### <a name="xsextension-in-xscomplexcontent-attributes"></a>\<xs:extension>em \<xs:complexContent> : atributos
+### <a name="xsextension-in-xscomplexcontent-attributes"></a>\<xs:extension> em \<xs:complexContent> : atributos
 
 |Atributo|Esquema|
 |---------------|------------|
 |`id`|Ignorado.|
 |`base`|Com suporte. Mapeia para o tipo de contrato de dados base do qual este tipo herda.|
 
-### <a name="xsextension-in-xscomplexcontent-contents"></a>\<xs:extension>em \<xs:complexContent> : conteúdo
+### <a name="xsextension-in-xscomplexcontent-contents"></a>\<xs:extension> em \<xs:complexContent> : conteúdo
 
 As regras são as mesmas para o `<xs:complexType>` conteúdo.
 
@@ -484,7 +485,7 @@ O `DataContractSerializer` usa o mapeamento a seguir para tipos primitivos de es
 |`anySimpleType`|<xref:System.String>.|
 |`duration`|<xref:System.TimeSpan>.|
 |`dateTime`|<xref:System.DateTime>.|
-|`dateTimeOffset`|<xref:System.DateTime>e <xref:System.TimeSpan> para o deslocamento. Consulte a serialização de DateTimeOffset abaixo.|
+|`dateTimeOffset`|<xref:System.DateTime> e <xref:System.TimeSpan> para o deslocamento. Consulte a serialização de DateTimeOffset abaixo.|
 |`time`|<xref:System.String>.|
 |`date`|<xref:System.String>.|
 |`gYearMonth`|<xref:System.String>.|
@@ -529,7 +530,7 @@ O `DataContractSerializer` usa o mapeamento a seguir para tipos primitivos de es
 
 ## <a name="iserializable-types-mapping"></a>Mapeamento de tipos ISerializable
 
-No .NET Framework versão 1,0, <xref:System.Runtime.Serialization.ISerializable> foi introduzido como um mecanismo geral para serializar objetos para persistência ou transferência de dados. Há muitos tipos de .NET Framework que implementam `ISerializable` e que podem ser passados entre aplicativos. <xref:System.Runtime.Serialization.DataContractSerializer>Naturalmente, o oferece suporte para `ISerializable` classes. Os `DataContractSerializer` tipos de esquema de implementação de mapas `ISerializable` que diferem somente pelo QName (nome qualificado) do tipo e são efetivamente coleções de propriedades. Por exemplo, o `DataContractSerializer` mapeia <xref:System.Exception> para o seguinte tipo xsd no `http://schemas.datacontract.org/2004/07/System` namespace.
+No .NET Framework versão 1,0, <xref:System.Runtime.Serialization.ISerializable> foi introduzido como um mecanismo geral para serializar objetos para persistência ou transferência de dados. Há muitos tipos de .NET Framework que implementam `ISerializable` e que podem ser passados entre aplicativos. <xref:System.Runtime.Serialization.DataContractSerializer> Naturalmente, o oferece suporte para `ISerializable` classes. Os `DataContractSerializer` tipos de esquema de implementação de mapas `ISerializable` que diferem somente pelo QName (nome qualificado) do tipo e são efetivamente coleções de propriedades. Por exemplo, o `DataContractSerializer` mapeia <xref:System.Exception> para o seguinte tipo xsd no `http://schemas.datacontract.org/2004/07/System` namespace.
 
 ```xml
 <xs:complexType name="Exception">
@@ -616,15 +617,15 @@ A seguir está uma declaração de esquema de serialização de contrato de dado
 
 O seguinte deve ser observado:
 
-- `ser:char`é introduzido para representar caracteres Unicode do tipo <xref:System.Char> .
+- `ser:char` é introduzido para representar caracteres Unicode do tipo <xref:System.Char> .
 
 - O `valuespace` de `xs:duration` é reduzido para um conjunto ordenado para que ele possa ser mapeado para um <xref:System.TimeSpan> .
 
-- `FactoryType`é usado em esquemas exportados de tipos derivados de <xref:System.Runtime.Serialization.ISerializable> .
+- `FactoryType` é usado em esquemas exportados de tipos derivados de <xref:System.Runtime.Serialization.ISerializable> .
 
 ## <a name="importing-non-datacontract-schemas"></a>Importando esquemas não DataContract
 
-`DataContractSerializer`tem a `ImportXmlTypes` opção de permitir a importação de esquemas que não estão de acordo com o `DataContractSerializer` perfil XSD (consulte a <xref:System.Runtime.Serialization.XsdDataContractImporter.Options%2A> Propriedade). Definir essa opção para `true` habilitar a aceitação de tipos de esquema não conformes e de mapeamento para a implementação a seguir, <xref:System.Xml.Serialization.IXmlSerializable> Encapsulando uma matriz de <xref:System.Xml.XmlNode> (somente o nome da classe difere).
+`DataContractSerializer` tem a `ImportXmlTypes` opção de permitir a importação de esquemas que não estão de acordo com o `DataContractSerializer` perfil XSD (consulte a <xref:System.Runtime.Serialization.XsdDataContractImporter.Options%2A> Propriedade). Definir essa opção para `true` habilitar a aceitação de tipos de esquema não conformes e de mapeamento para a implementação a seguir, <xref:System.Xml.Serialization.IXmlSerializable> Encapsulando uma matriz de <xref:System.Xml.XmlNode> (somente o nome da classe difere).
 
 ```csharp
 [GeneratedCodeAttribute("System.Runtime.Serialization", "3.0.0.0")]

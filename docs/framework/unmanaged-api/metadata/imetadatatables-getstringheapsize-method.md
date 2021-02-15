@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataTables:: GetStringHeapSize'
 title: Método IMetaDataTables::GetStringHeapSize
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: ed8f6335-81f5-4c09-81a9-2a909fc530c9
 topic_type:
 - apiref
-ms.openlocfilehash: 1aa7853602c1aaf484ef89d9c4fb06464e135f80
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 0ec9f4e2768cc78163db67bc9099fc9cafae8c8c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84501151"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99687773"
 ---
 # <a name="imetadatatablesgetstringheapsize-method"></a>Método IMetaDataTables::GetStringHeapSize
+
 Obtém o tamanho, em bytes, do heap de cadeia de caracteres.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,19 +36,21 @@ HRESULT GetStringHeapSize (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pcbStrings`  
  fora Um ponteiro para o tamanho, em bytes, do heap de cadeia de caracteres.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataTables](imetadatatables-interface.md)
 - [Interface IMetaDataTables2](imetadatatables2-interface.md)

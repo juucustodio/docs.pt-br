@@ -3,14 +3,15 @@ title: Instalando o Enfileiramento de Mensagens (MSMQ)
 description: Saiba como instalar o enfileiramento de mensagens 4,0 e o enfileiramento de mensagens 3,0 para usar os exemplos do WFC como parte de um procedimento de instalação única.
 ms.date: 03/30/2017
 ms.assetid: 7ddcd497-3e04-427e-bc04-3610ad98b01e
-ms.openlocfilehash: 0d0cb87b40b1cb11eb7692c2fa1e890ec815b13d
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: bf33a5cd899bf2d7ef4947c51ac1723c8eb80c29
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85244459"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96281866"
 ---
 # <a name="installing-message-queuing-msmq"></a>Instalando o Enfileiramento de Mensagens (MSMQ)
+
 Os procedimentos a seguir mostram como instalar o Enfileiramento de Mensagens 4.0 e o Enfileiramento de Mensagens 3.0.  
   
 > [!NOTE]
@@ -28,7 +29,7 @@ Os procedimentos a seguir mostram como instalar o Enfileiramento de Mensagens 4.
   
 5. Clique em **integração de serviços de diretório** (para computadores ingressados em um domínio) e clique em **suporte http**.  
   
-6. Clique em **Avançar**e em **instalar**.  
+6. Clique em **Avançar** e em **instalar**.  
   
 #### <a name="to-install-message-queuing-40-on-windows-7-or-windows-vista"></a>Para instalar o Enfileiramento de Mensagens 4.0 no Windows 7 ou no Windows Vista  
   

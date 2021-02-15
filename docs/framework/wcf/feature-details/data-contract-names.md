@@ -8,18 +8,19 @@ dev_langs:
 helpviewer_keywords:
 - data contracts [WCF], naming
 ms.assetid: 31f87e6c-247b-48f5-8e94-b9e1e33d8d09
-ms.openlocfilehash: 85c533d683558520d46f259db0bdb34dcb1214c9
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 3bb0aca2a1207a98b45fe8b6d43930e9b2acc5ec
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85247397"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96286695"
 ---
 # <a name="data-contract-names"></a>Nomes de contrato de dados
 
 Às vezes, um cliente e um serviço não compartilham os mesmos tipos. Eles ainda podem passar dados entre si, desde que os contratos de dados sejam equivalentes em ambos os lados. A [equivalência do contrato de dados](data-contract-equivalence.md) é baseada em nomes de membros de dados e de contrato de dados e, portanto, um mecanismo é fornecido para mapear tipos e membros para esses nomes. Este tópico explica as regras para nomear contratos de dados, bem como o comportamento padrão da infraestrutura de Windows Communication Foundation (WCF) ao criar nomes.
 
 ## <a name="basic-rules"></a>Regras básicas
+
 As regras básicas sobre a nomenclatura de contratos de dados incluem:
 
 - Um nome de contrato de dados totalmente qualificado consiste em um namespace e um nome.
@@ -29,6 +30,7 @@ As regras básicas sobre a nomenclatura de contratos de dados incluem:
 - Ao processar contratos de dados, a infraestrutura do WCF diferencia maiúsculas de minúsculas para os namespaces e os nomes de contratos de dados e membros de dados.
 
 ## <a name="data-contract-namespaces"></a>Namespaces de contrato de dados
+
 Um namespace de contrato de dados assume a forma de um Uniform Resource Identifier (URI). O URI pode ser absoluto ou relativo. Por padrão, os contratos de dados para um tipo específico recebem um namespace proveniente do namespace Common Language Runtime (CLR) desse tipo.
 
 Por padrão, qualquer namespace CLR específico (no formato *CLR. namespace*) é mapeado para o namespace `http://schemas.datacontract.org/2004/07/Clr.Namespace` . Para substituir esse padrão, aplique o <xref:System.Runtime.Serialization.ContractNamespaceAttribute> atributo a todo o módulo ou assembly. Como alternativa, para controlar o namespace de contrato de dados para cada tipo, defina a <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A> Propriedade do <xref:System.Runtime.Serialization.DataContractAttribute> .
@@ -40,18 +42,22 @@ Por padrão, qualquer namespace CLR específico (no formato *CLR. namespace*) é
 > Não é possível substituir o namespace padrão em tipos de contrato de dados que contenham `delegate` declarações.
 
 ## <a name="data-contract-names"></a>Nomes de contrato de dados
+
 O nome padrão de um contrato de dados para um determinado tipo é o nome desse tipo. Para substituir o padrão, defina a <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A> propriedade de <xref:System.Runtime.Serialization.DataContractAttribute> como um nome alternativo. Regras especiais para tipos genéricos são descritas em "nomes de contrato de dados para tipos genéricos", posteriormente neste tópico.
 
 ## <a name="data-member-names"></a>Nomes de membro de dados
+
 O nome padrão de um membro de dados para um determinado campo ou propriedade é o nome desse campo ou propriedade. Para substituir o padrão, defina a <xref:System.Runtime.Serialization.DataMemberAttribute.Name%2A> propriedade de <xref:System.Runtime.Serialization.DataMemberAttribute> como um valor alternativo.
 
 ### <a name="examples"></a>Exemplos
+
 O exemplo a seguir mostra como você pode substituir o comportamento de nomenclatura padrão de contratos de dados e membros de dados.
 
 [!code-csharp[C_DataContractNames#1](~/samples/snippets/csharp/VS_Snippets_CFX/c_datacontractnames/cs/source.cs#1)]
 [!code-vb[C_DataContractNames#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_datacontractnames/vb/source.vb#1)]
 
 ## <a name="data-contract-names-for-generic-types"></a>Nomes de contrato de dados para tipos genéricos
+
 Existem regras especiais para determinar nomes de contratos de dados para tipos genéricos. Essas regras ajudam a evitar colisões de nome de contrato de dados entre dois genéricos fechados do mesmo tipo genérico.
 
 Por padrão, o nome do contrato de dados para um tipo genérico é o nome do tipo, seguido pela cadeia de caracteres "of", seguido pelos nomes dos contratos de dados dos parâmetros genéricos, seguido por um *hash* calculado usando os namespaces de contrato de dados dos parâmetros genéricos. Um hash é o resultado de uma função matemática que atua como uma "impressão digital" que identifica exclusivamente uma parte dos dados. Quando todos os parâmetros genéricos são tipos primitivos, o hash é omitido.

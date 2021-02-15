@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.custom: vs-dotnet
-ms.openlocfilehash: 73eee58a3d11f2f898a6d57cb282ccf4e802cdca
-ms.sourcegitcommit: c4a15c6c4ecbb8a46ad4e67d9b3ab9b8b031d849
+ms.openlocfilehash: 1c9aba10e27609bdf8e95d844ead60fd0ec0bd2c
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88656593"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90538717"
 ---
 # <a name="deploy-net-core-apps-with-visual-studio"></a>Implantar aplicativos .NET Core com o Visual Studio
 
@@ -24,7 +24,7 @@ As seções a seguir mostram como usar o Microsoft Visual Studio para criar os s
 - Implantação autocontida
 - Implantação autocontida com dependências de terceiros
 
-Para obter informações sobre como usar o Visual Studio para desenvolver aplicativos .NET Core, consulte [dependências e requisitos do .NET Core](../install/dependencies.md?pivots=os-windows).
+Para obter informações sobre como usar o Visual Studio para desenvolver aplicativos .NET Core, consulte [dependências e requisitos do .NET Core](../install/windows.md).
 
 ## <a name="framework-dependent-deployment"></a>Implantação dependente de estrutura
 
@@ -309,7 +309,7 @@ Quando você implanta seu aplicativo, todas as dependências de terceiros usadas
 
 Você só pode implantar uma implantação independente com uma biblioteca de terceiros em plataformas com suporte nessa biblioteca. Isso é semelhante a ter dependências de terceiros com dependências nativas em sua implantação dependente de estrutura, em que as dependências nativas não existem na plataforma de destino a menos que elas tenham sido instaladas anteriormente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Implantação do .NET Core Application](index.md)
 - [Catálogo de RID (identificador de tempo de execução) do .NET Core](../rid-catalog.md)

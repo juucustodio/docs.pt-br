@@ -1,30 +1,33 @@
 ---
+description: 'Saiba mais sobre: Walkthrough: usando Dataflow em um aplicativo Windows Forms'
 title: 'Passo a passo: usar um fluxo de dados em um aplicativo do Windows Forms'
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - TPL dataflow library, in Windows Forms
 - Task Parallel Library, dataflows
 - Windows Forms, and TPL
 ms.assetid: 9c65cdf7-660c-409f-89ea-59d7ec8e127c
-ms.openlocfilehash: 7cd82ffde5fccf938027a6ab6ea15fef226fef6f
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 761f47b3250827a8d5cbee8bb444d172e9ae950f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84288427"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798037"
 ---
 # <a name="walkthrough-using-dataflow-in-a-windows-forms-application"></a>Passo a passo: usar um fluxo de dados em um aplicativo do Windows Forms
+
 Este documento demonstra como criar uma rede de blocos de fluxo de dados que executam o processamento de imagens em um Aplicativo do Windows Forms.  
   
  Este exemplo carrega arquivos de imagem da pasta especificada, cria uma imagem composta e exibe o resultado. O exemplo usa o modelo de fluxo de dados para encaminhar imagens por meio da rede. No modelo de fluxo de dados, componentes independentes de um programa se comunicam uns com os outros enviando mensagens. Quando um componente recebe uma mensagem, ele executa uma ação e, depois, passa o resultado para outro componente. Compare isso com o modelo de fluxo de controle, em que um aplicativo usa estruturas de controle, por exemplo, instruções condicionais, loops e assim por diante, para controlar a ordem das operações em um programa.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
+
  Leia sobre o [Fluxo de dados](dataflow-task-parallel-library.md) antes de iniciar essa explicação passo a passo.  
 
 [!INCLUDE [tpl-install-instructions](../../../includes/tpl-install-instructions.md)]
 
 ## <a name="sections"></a>Seções  
+
  Este passo a passo contém as seguintes seções:  
   
 - [Criar o aplicativo do Windows Forms](#winforms)  
@@ -36,7 +39,9 @@ Este documento demonstra como criar uma rede de blocos de fluxo de dados que exe
 - [O exemplo completo](#complete)  
   
 <a name="winforms"></a>
+
 ## <a name="creating-the-windows-forms-application"></a>Criar o aplicativo do Windows Forms  
+
  Esta seção descreve como criar o aplicativo básico do Windows Forms e adicionar controles ao formulário principal.  
   
 ### <a name="to-create-the-windows-forms-application"></a>Para criar o aplicativo do Windows Forms  
@@ -52,7 +57,9 @@ Este documento demonstra como criar uma rede de blocos de fluxo de dados que exe
 5. Adicione um objeto <xref:System.Windows.Forms.PictureBox> ao formulário principal. Defina a propriedade <xref:System.Windows.Forms.Control.Dock%2A> como <xref:System.Windows.Forms.DockStyle.Fill>.  
   
 <a name="network"></a>
+
 ## <a name="creating-the-dataflow-network"></a>Criar a rede de fluxo de dados  
+
  Esta seção descreve como criar a rede de fluxo de dados que executa o processamento de imagem.  
   
 ### <a name="to-create-the-dataflow-network"></a>Para criar a rede de fluxo de dados  
@@ -84,7 +91,7 @@ Este documento demonstra como criar uma rede de blocos de fluxo de dados que exe
   
  A tabela a seguir descreve os membros da rede.  
   
-|Membro|Tipo|Description|  
+|Membro|Type|Descrição|  
 |------------|----------|-----------------|  
 |`loadBitmaps`|<xref:System.Threading.Tasks.Dataflow.TransformBlock%602>|Usa um caminho de pasta como entrada e produz uma coleção de objetos <xref:System.Drawing.Bitmap> como saída.|  
 |`createCompositeBitmap`|<xref:System.Threading.Tasks.Dataflow.TransformBlock%602>|Usa uma coleção de objetos <xref:System.Drawing.Bitmap> como entrada e produz um bitmap composto como saída.|  
@@ -102,7 +109,9 @@ Este documento demonstra como criar uma rede de blocos de fluxo de dados que exe
  Este exemplo usa um token de cancelamento compartilhado em vez de configurar a propriedade <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions.CancellationToken%2A>, pois a propriedade <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions.CancellationToken%2A> cancela permanentemente a execução do bloco de fluxo de dados. Um token de cancelamento permite que esse exemplo reutilize a mesma rede de fluxo de dados várias vezes, mesmo quando o usuário cancela uma ou mais operações. Para obter um exemplo que usa <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions.CancellationToken%2A> para cancelar permanentemente a execução de um bloco de fluxo de dados, confira [Como cancelar um bloco de fluxo de dados](how-to-cancel-a-dataflow-block.md).  
   
 <a name="ui"></a>
+
 ## <a name="connecting-the-dataflow-network-to-the-user-interface"></a>Conectar a rede de fluxo de dados à interface do usuário  
+
  Esta seção descreve como conectar a rede de fluxo de dados à interface do usuário. A criação de uma imagem composta e o cancelamento da operação começa com os botões **Escolher Pasta** e **Cancelar**. Quando o usuário escolhe um desses botões, a ação apropriada é iniciada de maneira assíncrona.  
   
 ### <a name="to-connect-the-dataflow-network-to-the-user-interface"></a>Para conectar a rede de fluxo de dados à interface do usuário  
@@ -120,7 +129,9 @@ Este documento demonstra como criar uma rede de blocos de fluxo de dados que exe
      [!code-csharp[TPLDataflow_CompositeImages#7](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_compositeimages/cs/compositeimages/form1.cs#7)]  
   
 <a name="complete"></a>
+
 ## <a name="the-complete-example"></a>O Exemplo Completo  
+
  O exemplo a seguir mostra o código completo dessa explicação passo a passo.  
   
  [!code-csharp[TPLDataflow_CompositeImages#100](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_compositeimages/cs/compositeimages/form1.cs#100)]  
@@ -129,6 +140,6 @@ Este documento demonstra como criar uma rede de blocos de fluxo de dados que exe
   
  ![O aplicativo Windows Forms](media/tpldataflow-compositeimages.gif "TPLDataflow_CompositeImages")  
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Fluxo de dados](dataflow-task-parallel-library.md)

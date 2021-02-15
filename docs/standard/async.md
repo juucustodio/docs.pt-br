@@ -4,14 +4,13 @@ description: Saiba como a programação assíncrona é uma técnica chave que to
 author: cartermp
 ms.author: wiwagn
 ms.date: 06/20/2016
-ms.technology: dotnet-standard
 ms.assetid: 1e38e9d9-8284-46ee-a15f-199adc4f26f4
-ms.openlocfilehash: d649bc3a92d3bb834b3bc4f7d3c1bcb0f9417375
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 495f225a3732812666dfa2f5c8c07f6f5b849c95
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78159722"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94824799"
 ---
 # <a name="async-overview"></a>Visão geral da assincronia
 
@@ -20,7 +19,7 @@ Não muito tempo atrás, os aplicativos ficavam mais rápidos simplesmente compr
 - Os aplicativos cliente devem estar sempre ativos, sempre conectados e constantemente responsivos à interação do usuário (por exemplo, toque) com classificações altas na loja de aplicativos!
 - Os serviços devem lidar com picos de tráfego escalando e reduzindo horizontalmente sem problemas.
 
-A programação assíncrona é uma técnica chave que torna fácil de lidar com o bloqueio de E/S e operações simultâneas em vários núcleos. .NET fornece a capacidade para que aplicativos e serviços sejam responsivos e elásticos com modelos de programação assíncronos de nível de linguagem fáceis de usar em C#, Visual Basic e F#.
+A programação assíncrona é uma técnica chave que torna fácil de lidar com o bloqueio de E/S e operações simultâneas em vários núcleos. O .NET fornece a capacidade para que aplicativos e serviços sejam responsivos e elásticos com modelos de programação assíncrona de nível de linguagem fáceis de usar em C#, Visual Basic e F #.
 
 ## <a name="why-write-async-code"></a>Por que escrever código assíncrono?
 
@@ -33,7 +32,7 @@ O código assíncrono tem as seguintes características:
 - Muitas das APIs do .NET mais novas são assíncronas.
 - É fácil escrever código assíncrono no .NET!
 
-## <a name="whats-next"></a>O que vem a seguir?
+## <a name="whats-next"></a>E agora?
 
 Para obter mais informações, consulte os comentários no tópico [Assincronia detalhada](async-in-depth.md).
 

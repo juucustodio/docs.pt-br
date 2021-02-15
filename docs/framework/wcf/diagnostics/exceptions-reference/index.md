@@ -1,40 +1,42 @@
 ---
+description: 'Saiba mais sobre: referência de exceções'
 title: Referência de exceções
 ms.date: 03/30/2017
 ms.assetid: adc19950-5f79-4045-8403-bf6310118ee3
-ms.openlocfilehash: 5e61f395cb107202a7c435648f53ad40fce318b4
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 04f8ee1032b8938fea3de9655d921dc1ce088052
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70797329"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99686408"
 ---
 # <a name="exceptions-reference"></a>Referência de exceções
+
 Esta seção lista todas as exceções nas seguintes áreas geradas pelo Windows Communication Foundation (WCF):  
   
  [IdentityModel](identitymodel-exceptions.md)  
   
  [Integração de COM+](com-integration.md)  
   
- [Configuração](configuration.md)  
+ [Configuration](configuration.md)  
   
- [Comunicações de núcleo: Estrutura de canal](core-communications-channel-framework.md)  
+ [Comunicações principais: Estrutura de canal](core-communications-channel-framework.md)  
   
- [Comunicações de núcleo: Estrutura de conexão](core-communications-connection-framework.md)  
+ [Comunicações principais: Estrutura de conexão](core-communications-connection-framework.md)  
   
  Comunicações principais: Canais de transporte HTTP/HTTPS  
   
- [Comunicações de núcleo: Canais de transporte duplex internos](core-communications-internal-duplex-transport-channels.md)  
+ [Comunicações principais: Canais de transporte Duplex internos](core-communications-internal-duplex-transport-channels.md)  
   
- [Comunicações de núcleo: Canais de transporte de pipe nomeado](core-communications-named-pipe-transport-channels.md)  
+ [Comunicações principais: Canais de transporte de pipe nomeado](core-communications-named-pipe-transport-channels.md)  
   
- [Comunicações de núcleo: Canais de transporte TCP](core-communications-tcp-transport-channels.md)  
+ [Comunicações principais: Canais de transporte TCP](core-communications-tcp-transport-channels.md)  
   
- [Comunicações de núcleo: Estrutura de transporte](core-communications-transport-framework.md)  
+ [Comunicações principais: Estrutura de transporte](core-communications-transport-framework.md)  
   
- [Comunicações de núcleo: Utilitários](core-communications-utilities.md)  
+ [Comunicações principais: Utilitários](core-communications-utilities.md)  
   
- [Comunicações de núcleo: Suporte a webhosts](core-communications-webhost-support.md)  
+ [Comunicações principais: Suporte de Webhost](core-communications-webhost-support.md)  
   
  [Transação](transaction-exceptions.md)  
   
@@ -44,13 +46,13 @@ Esta seção lista todas as exceções nas seguintes áreas geradas pelo Windows
   
  [Transporte de integração do MSMQ](msmq-integration-transport.md)  
   
- [Transporte de MSMQ](msmq-transport.md)  
+ [Transporte do MSMQ](msmq-transport.md)  
   
- [Reliable Messaging](reliable-messaging.md)  
+ [Mensagens confiáveis](reliable-messaging.md)  
   
  [Exceções de segurança](security-exceptions.md)  
   
- [Estrutura do serviço](service-framework.md)  
+ [Estrutura de serviço](service-framework.md)  
   
  [Dados de estrutura de serviço](service-framework-data.md)  
   

@@ -9,28 +9,31 @@ helpviewer_keywords:
 - TextPattern class
 - classes, TextPattern
 ms.assetid: b51206f2-1281-4ad0-9820-ea39d88ae577
-ms.openlocfilehash: 8d0328f22222d2eefad4f663736c2fb675792b3f
-ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
+ms.openlocfilehash: 3a666388b2a62c9e5582eec50196d9bda75ac0f6
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86924689"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96281164"
 ---
 # <a name="ui-automation-text-pattern"></a>Padrão de texto de automação da interface do usuário
+
 > [!NOTE]
 > Esta documentação destina-se a desenvolvedores do .NET Framework que querem usar as classes da [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] gerenciadas definidas no namespace <xref:System.Windows.Automation>. Para obter as informações mais recentes sobre a [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], consulte [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32) (API de Automação do Windows: Automação da Interface do Usuário).  
   
  Este tópico contém visões gerais e tópicos de instruções para ajudá-lo a começar a programação para elementos de texto no [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] .  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Visão geral de TextPattern de automação da interface do usuário](ui-automation-textpattern-overview.md)  
  [TextPattern Visão geral de objetos inseridos](textpattern-and-embedded-objects-overview.md)  
- [Tópicos explicativos](ui-automation-text-pattern-how-to-topics.md)  
+ [Tópicos de instruções](ui-automation-text-pattern-how-to-topics.md)  
   
 ## <a name="reference"></a>Referência  
+
  <xref:System.Windows.Automation.Text>  
   
 ## <a name="see-also"></a>Veja também
 
-- [Padrões de controle de automação da interface do usuário](ui-automation-control-patterns.md)
+- [Padrões de controle da automação da interface do usuário](ui-automation-control-patterns.md)
 - [Padrões de Controle para Clientes de Automação de IU](ui-automation-control-patterns-for-clients.md)

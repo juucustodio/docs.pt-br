@@ -1,24 +1,26 @@
 ---
+description: 'Saiba mais sobre: TextFieldParser não dá suporte a delimitadores que contêm caracteres de EndLine'
 title: TextFieldParser não dá suporte a delimitadores que contenham caracteres de final de linha
 ms.date: 07/20/2015
 f1_keywords:
 - vbrTextFieldParser_EndCharsInDelimiter
 ms.assetid: 0701f3b6-635b-468e-b908-867df00dd5db
-ms.openlocfilehash: f2c88b656f6a2443f28da4b18465b08e39020e6c
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c1b18875f3003cb6b1a7252f71098faa416b80cb
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84411877"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430996"
 ---
 # <a name="textfieldparser-does-not-support-delimiters-that-contain-endline-characters"></a>TextFieldParser não dá suporte a delimitadores que contenham caracteres de final de linha
+
 Foi fornecido um delimitador que contém um caractere de fim, mas o não `TextFieldParser` oferece suporte a delimitadores que contenham caracteres de fim.  
   
 ## <a name="to-correct-this-error"></a>Para corrigir este erro  
   
 - Forneça um delimitador correto.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Propriedade TextFieldParser. Delimiters](xref:Microsoft.VisualBasic.FileIO.TextFieldParser.Delimiters%2A)
 - [Método TextFieldParser. delimitadores](xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters%2A)

@@ -6,19 +6,21 @@ helpviewer_keywords:
 - loader events [.NET Framework]
 - ETW, loader events (CLR)
 ms.assetid: cb403cc6-56f8-4609-b467-cdfa09f07909
-ms.openlocfilehash: 8220e8e773409be76bc7522d57551f1bddb90e5d
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: 7de4ad48ae275b4119f05a5269e9819c201027fd
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86474352"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96240583"
 ---
 # <a name="loader-etw-events"></a>Eventos ETW de carregador
+
  Esses eventos coletam informações relacionadas ao carregamento e descarregamento de domínios do aplicativo, assemblies e módulos.  
   
  Todos os eventos de carregador são gerados sob a palavra-chave `LoaderKeyword` (0x8). Os eventos `DCStart` e `DCEnd` são gerados sob `LoaderRundownKeyword` (0x8) com `StartRundown`/`EndRundown` habilitado. (Para obter mais informações, consulte [Palavras-chaves e níveis CLR ETW](clr-etw-keywords-and-levels.md).)  
 
 ## <a name="application-domain-events"></a>Eventos de domínio do aplicativo
+
  A tabela a seguir mostra a palavra-chave e o nível.  
   
 |Palavra-chave para acionar o evento|Evento|Nível|  
@@ -47,6 +49,7 @@ ms.locfileid: "86474352"
 |ClrInstanceID|win:UInt16|ID exclusiva da instância do CLR ou do CoreCLR.|  
 
 ## <a name="clr-loader-assembly-events"></a>Eventos de assembly do carregador CLR  
+
  A tabela a seguir mostra a palavra-chave e o nível.  
   
 |Palavra-chave para acionar o evento|Evento|Nível|  
@@ -76,6 +79,7 @@ ms.locfileid: "86474352"
 |ClrInstanceID|win:UInt16|ID exclusiva da instância do CLR ou do CoreCLR.|
 
 ## <a name="module-events"></a>Eventos de módulo
+
  A tabela a seguir mostra a palavra-chave e o nível.  
   
 |Palavra-chave para acionar o evento|Evento|Nível|  
@@ -121,6 +125,7 @@ ms.locfileid: "86474352"
 - Os nomes de campo que começam com "NativePdb" se referem ao PDB NGen gerado chamando `NGEN createPDB`. Esse PDB usa o formato de PDB nativo e descreve como os elementos do código-fonte gerenciado original, tais como arquivos, números de linha e nomes de símbolo, são mapeados para elementos nativos que são compilados no módulo NGen.  
 
 ## <a name="clr-domain-module-events"></a>Eventos de módulo de domínio CLR
+
  A tabela a seguir mostra a palavra-chave e o nível.  
   
 |Palavra-chave para acionar o evento|Evento|Nível|  
@@ -151,6 +156,7 @@ ms.locfileid: "86474352"
 |ClrInstanceID|win:UInt16|ID exclusiva da instância do CLR ou do CoreCLR.|  
 
 ## <a name="module-range-events"></a>Eventos de intervalo de módulo
+
  A tabela a seguir mostra a palavra-chave e o nível.  
   
 |Palavra-chave para acionar o evento|Evento|Nível|  
@@ -180,12 +186,13 @@ ms.locfileid: "86474352"
 |RangeBegin2|win:UnicodeString||  
   
 ### <a name="remarks"></a>Comentários  
+
  Se uma imagem NGen carregada em um processo do .NET Framework foi otimizada com IBC, o evento `ModuleRange` que contém os intervalos de acessados na imagem NGen é registrado junto com os respectivos `moduleID` e `ClrInstanceID`.  Se a imagem NGen não for otimizada com IBC, esse evento não será registrado. Para determinar o nome do módulo, esse evento deve ser agrupado com os eventos ETW da carga do módulo.  
   
  O tamanho de carga para esse evento é variável. O campo `Count` indica o número de deslocamentos de intervalo contidos no evento.  Esse evento deve ser agrupado com o evento `IStart` do Windows para determinar os intervalos reais. O evento de Carregamento de Imagem do Windows é registrado sempre que uma imagem é carregada e contém o endereço virtual da imagem carregada.  
   
  Eventos de intervalo do módulo são acionados em qualquer nível de ETW maior ou igual a 4 e são classificados como eventos informativos.  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Eventos ETW no CLR](clr-etw-events.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostIoCompletionManager:: GetMaxThreads'
 title: Método IHostIoCompletionManager::GetMaxThreads
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: e7a6cadc-2433-4472-a701-58891abcde45
 topic_type:
 - apiref
-ms.openlocfilehash: a97a7abf4f561a5aba41d8019f2ba5bd8e879acd
-ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
+ms.openlocfilehash: 10c36c058f5161330842fa9d71813c4520d4655c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83804733"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99708502"
 ---
 # <a name="ihostiocompletionmanagergetmaxthreads-method"></a>Método IHostIoCompletionManager::GetMaxThreads
+
 Obtém o número máximo de threads que o host pode alocar para solicitações de e/s de serviço.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,14 +36,15 @@ HRESULT GetMaxThreads (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pdwMaxIoCompletionThreads`  
  fora Um ponteiro para o número máximo de threads no pool de threads que o host pode alocar para solicitações de e/s de serviço.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
-|S_OK|`GetMaxThreads`retornado com êxito.|  
+|S_OK|`GetMaxThreads` retornado com êxito.|  
 |HOST_E_CLRNOTAVAILABLE|O Common Language Runtime (CLR) não foi carregado em um processo ou o CLR está em um estado no qual não pode executar código gerenciado ou processar a chamada com êxito.|  
 |HOST_E_TIMEOUT|A chamada atingiu o tempo limite.|  
 |HOST_E_NOT_OWNER|O chamador não possui o bloqueio.|  
@@ -50,18 +53,20 @@ HRESULT GetMaxThreads (
 |E_NOTIMPL|O host não fornece uma implementação de `GetMaxThreads` .|  
   
 ## <a name="remarks"></a>Comentários  
+
  Um host pode querer um controle exclusivo sobre o número de threads que podem ser alocados para processar solicitações de e/s, por motivos como implementação, desempenho ou escalabilidade. Por esse motivo, o host não precisa implementar `GetMaxThreads` . Nesse caso, o host deve retornar E_NOTIMPL desse método.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRIoCompletionManager](iclriocompletionmanager-interface.md)
 - [Interface IHostIoCompletionManager](ihostiocompletionmanager-interface.md)

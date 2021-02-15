@@ -1,21 +1,22 @@
 ---
+description: 'Saiba mais sobre: exemplo de dados do PLINQ'
 title: Exemplo de dados PLINQ
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - PLINQ queries, sample data
 ms.assetid: 4fccbb35-eaa5-44e9-a252-a5c3d4bc7604
-ms.openlocfilehash: 44d3463f23269ceec6372b007ca8ba9684da8c02
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 2461878367c81f684776f6b8ffb3a1b72c3e4256
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291702"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797998"
 ---
 # <a name="plinq-data-sample"></a>Exemplo de dados PLINQ
+
 Este exemplo contém dados de exemplo no formato .csv e os métodos que os transformam em coleções na memória de Customers, Products, Orders e Order Details. Para fazer novas experiências com PLINQ, cole os exemplos de código de outros tópicos no código deste tópico e invoque o método `Main`. Você também pode usar esses dados com suas próprias consultas PLINQ.  
   
  Os dados representam um subconjunto do banco de dados da Northwind. São incluídos cinquenta (50) registros de clientes, mas não todos os campos. É incluído um subconjunto das linhas dos dados de Orders e os dados de Order_Detail correspondentes para todos os clientes (Customers). Todos os produtos estão incluídos.  
@@ -860,6 +861,6 @@ PRODUCTS
 END PRODUCTS  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ paralelo (PLINQ)](introduction-to-plinq.md)

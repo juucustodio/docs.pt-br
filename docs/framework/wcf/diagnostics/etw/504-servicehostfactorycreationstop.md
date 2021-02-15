@@ -1,28 +1,32 @@
 ---
+description: 'Saiba mais sobre: 504-ServiceHostFactoryCreationStop'
 title: 504 - ServiceHostFactoryCreationStop
 ms.date: 03/30/2017
 ms.assetid: 284d240a-ef0c-4572-b3cd-8fbc579db05f
-ms.openlocfilehash: f32b29a7b76b7557d65603b9bf04dd60f0016a8d
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: f344aaac54448d08b429bd60ede336d6fde4db0c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61999616"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759985"
 ---
 # <a name="504---servicehostfactorycreationstop"></a>504 - ServiceHostFactoryCreationStop
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
 |ID|504|  
 |Palavras-chave|WebHost|  
-|Nível|Informações|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando a criação de ServiceHostFactory termina.  
+
+ Esse evento é emitido quando a criação de ServiceHostFactory é encerrada.  
   
 ## <a name="message"></a>Mensagem  
- Criação de end ServiceHostFactory.  
+
+ ServiceHostFactory terminar a criação.  
   
 ## <a name="details"></a>Detalhes

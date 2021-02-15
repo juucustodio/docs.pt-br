@@ -9,14 +9,15 @@ helpviewer_keywords:
 - Type Library Exporter
 - type libraries [.NET Framework], exporting
 ms.assetid: a487d61b-d166-467b-a7ca-d8b52fbff42d
-ms.openlocfilehash: 3cfaa83590fefe31c437d2ff607fb579aec1da61
-ms.sourcegitcommit: b4f8849c47c1a7145eb26ce68bc9f9976e0dbec3
+ms.openlocfilehash: 1a9e984e1b81adda572076cb118a25f5f3a045ea
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87517029"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96283751"
 ---
 # <a name="tlbexpexe-type-library-exporter"></a>Tlbexp.exe (Exportador de Biblioteca de Tipos)
+
 O Exportador da Biblioteca de Tipos gera uma biblioteca de tipos que descreve os tipos definidos em um assembly do Common Language Runtime.  
   
  Essa ferramenta é instalada automaticamente com o Visual Studio. Para executar a ferramenta, use o Prompt de Comando do Desenvolvedor para Visual Studio (ou o Prompt de Comando do Visual Studio no Windows 7). Para obter mais informações, consulte [Prompts de Comando](developer-command-prompt-for-vs.md).  
@@ -29,16 +30,16 @@ O Exportador da Biblioteca de Tipos gera uma biblioteca de tipos que descreve os
 tlbexp assemblyName [options]  
 ```  
   
-## <a name="parameters"></a>Parâmetros  
+## <a name="parameters"></a>parâmetros  
   
 |Argumento|Descrição|  
 |--------------|-----------------|  
 |*assemblyName*|O assembly para o qual uma biblioteca de tipos deve ser exportada.|  
   
-|Opção|DESCRIÇÃO|  
+|Opção|Descrição|  
 |------------|-----------------|  
 |**/asmpath:** *directory*|Especifica o local de pesquisa dos assemblies. Se usar essa opção, você deverá especificar explicitamente os locais de pesquisa dos assemblies referenciados, incluindo o diretório atual.<br /><br /> Quando você usa a opção **asmpath**, o Exportador da Biblioteca de Tipos não procurará um assembly no GAC (cache de assembly global).|  
-|**/help**|Exibe sintaxe de comando e opções para a ferramenta.|  
+|**/Help**|Exibe sintaxe de comando e opções para a ferramenta.|  
 |**/names:** *filename*|Especifica a capitalização de nomes em uma biblioteca de tipos. O argumento *filename* é um arquivo de texto. Cada linha no arquivo especifica a capitalização de um nome na biblioteca de tipos.|  
 |**/nologo**|Suprime a exibição do banner de inicialização da Microsoft.|  
 |**/oldnames**|Força Tlbexp.exe a exportar nomes de tipo decorados caso haja um conflito no nome do tipo. Esse era o comportamento padrão em versões anteriores ao .NET Framework versão 2.0.|  
@@ -56,6 +57,7 @@ tlbexp assemblyName [options]
 > As opções de linha de comando para Tlbexp.exe não diferenciam maiúsculas de minúsculas e podem ser fornecidas em qualquer ordem. Você só precisa especificar o suficiente da opção para identificá-la com exclusividade. Por exemplo, **/n** equivale a **/nologo** e **/o:** *outfile.tlb* equivale a **/out:** *outfile.tlb*.  
   
 ## <a name="remarks"></a>Comentários  
+
  Tlbexp.exe gera uma biblioteca de tipos que contém definições dos tipos definidos no assembly. Aplicativos como o Visual Basic 6.0 podem usar a biblioteca de tipos gerada na associação com os tipos do .NET definidos no assembly.  
   
 > [!IMPORTANT]
@@ -89,13 +91,14 @@ HRESULT StructDispSafe([out, retval] SAFEARRAY(IDispatch*)* pRetVal);
   
  Tlbexp.exe ignora o campo <xref:System.Runtime.InteropServices.MarshalAsAttribute.SafeArrayUserDefinedSubType>.  
   
- Como as bibliotecas de tipos não podem acomodar todas as informações encontradas em assemblies, Tlbexp.exe pode descartar alguns dados durante o processo de exportação. Para ver uma explicação do processo de transformação e a identificação da origem de cada informação emitida para uma biblioteca de tipos, consulte [Resumo da Conversão do Assembly em Biblioteca de Tipos](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/xk1120c3(v=vs.100)).  
+ Como as bibliotecas de tipos não podem acomodar todas as informações encontradas em assemblies, Tlbexp.exe pode descartar alguns dados durante o processo de exportação. Para ver uma explicação do processo de transformação e a identificação da origem de cada informação emitida para uma biblioteca de tipos, consulte [Resumo da Conversão do Assembly em Biblioteca de Tipos](/previous-versions/dotnet/netframework-4.0/xk1120c3(v=vs.100)).  
   
  O Exportador da Biblioteca de Tipos exporta métodos com parâmetros <xref:System.TypedReference> como `VARIANT`, mesmo que o objeto <xref:System.TypedReference> não tenha significado no código não gerenciado. Quando você exportar métodos com parâmetros <xref:System.TypedReference>, o Exportador da Biblioteca de Tipos não gerará um aviso ou um erro, e o código não gerenciado que usa a biblioteca de tipos resultante não será executado corretamente.  
   
  O Exportador da Biblioteca de Tipos é compatível com o Microsoft Windows 2000 e posteriores.  
   
 ## <a name="examples"></a>Exemplos  
+
  O comando a seguir gera uma biblioteca de tipos com o mesmo nome do assembly encontrado em `myTest.dll`.  
   
 ```console  
@@ -128,11 +131,11 @@ CSC Sample.cs /reference:myLib.dll /out:Sample.dll
 tlbexp Sample.dll  
 ```  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - <xref:System.Runtime.InteropServices.TypeLibExporterFlags>
 - [Ferramentas](index.md)
-- [Regasm.exe (ferramenta de registro de assembly)](regasm-exe-assembly-registration-tool.md)
-- [Resumo da conversão de assemblies em bibliotecas de tipos](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/xk1120c3(v=vs.100))
-- [Tlbimp.exe (tipo de importador de biblioteca de tipos)](tlbimp-exe-type-library-importer.md)
+- [Regasm.exe (Ferramenta de Registro de Assembly)](regasm-exe-assembly-registration-tool.md)
+- [Resumo da conversão de assemblies em bibliotecas de tipos](/previous-versions/dotnet/netframework-4.0/xk1120c3(v=vs.100))
+- [Tlbimp.exe (Importador de Biblioteca de Tipos)](tlbimp-exe-type-library-importer.md)
 - [Prompts de comando](developer-command-prompt-for-vs.md)

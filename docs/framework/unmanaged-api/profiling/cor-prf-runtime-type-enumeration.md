@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração de COR_PRF_RUNTIME_TYPE'
 title: Enumeração COR_PRF_RUNTIME_TYPE
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 35449514-333f-4918-9c60-7aa198d655d2
 topic_type:
 - apiref
-ms.openlocfilehash: cc8b7a3174502471debf1d28725ed26c847eeb69
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 8f4b4a0c51c43b1db97b511387eaee1aee79f523
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500787"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789038"
 ---
 # <a name="cor_prf_runtime_type-enumeration"></a>Enumeração COR_PRF_RUNTIME_TYPE
+
 Contém valores que indicam a versão do Common Language Runtime (CLR): área de trabalho ou CoreCLR, que é usada no Silverlight.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,7 +38,7 @@ typedef enum
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`COR_PRF_DESKTOP_CLR`|A versão da área de trabalho do CLR.|  
 |`COR_PRF_CORE_CLR`|A versão principal do CLR, usada no Silverlight.|  
@@ -44,6 +46,7 @@ typedef enum
 ## <a name="remarks"></a>Comentários  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -52,6 +55,6 @@ typedef enum
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criando perfil de enumerações](profiling-enumerations.md)

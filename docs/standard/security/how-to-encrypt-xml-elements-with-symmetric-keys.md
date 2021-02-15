@@ -1,7 +1,7 @@
 ---
+description: 'Saiba mais sobre: como criptografar elementos XML com chaves simétricas'
 title: 'Como: criptografar elementos XML com chaves simétricas'
 ms.date: 07/14/2020
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -15,12 +15,12 @@ helpviewer_keywords:
 - XML encryption
 - Advanced Encryption Standard algorithm
 ms.assetid: d8461a44-aa2c-4ef4-b3e4-ab7cbaaee1b5
-ms.openlocfilehash: dd69ec6a5317f7f6f800cd225d920a1934c77a0c
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: 137e1592a73ff9eb25fd6a5ba29b92c839f44575
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87555807"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685108"
 ---
 # <a name="how-to-encrypt-xml-elements-with-symmetric-keys"></a>Como: criptografar elementos XML com chaves simétricas
 
@@ -102,7 +102,7 @@ Nunca armazene uma chave criptográfica em texto sem formatação ou transfira u
   
 Quando você terminar de usar uma chave criptográfica, limpe-a da memória definindo cada byte como zero ou chamando o <xref:System.Security.Cryptography.SymmetricAlgorithm.Clear%2A> método da classe de criptografia gerenciada.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Modelo de criptografia](cryptography-model.md) – descreve como a criptografia é implementada na biblioteca de classes base.
 - [Serviços criptográficos](cryptographic-services.md)

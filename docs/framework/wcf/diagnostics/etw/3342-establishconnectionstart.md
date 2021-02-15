@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 3342-EstablishConnectionStart'
 title: 3342 - EstablishConnectionStart
 ms.date: 03/30/2017
 ms.assetid: 2f2e3446-1f0c-4e8a-b14c-0e500de0f075
-ms.openlocfilehash: 4f87563df3453cd25ec3768501c9e994280fdd8e
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 8ef1cc996ae079c99f6a970d7218180bb423d4bc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61796494"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99670197"
 ---
 # <a name="3342---establishconnectionstart"></a>3342 - EstablishConnectionStart
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,9 +22,11 @@ ms.locfileid: "61796494"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando o estabelecimento de conexão é iniciado.  
+
+ Esse evento é emitido quando o estabelecimento da conexão é iniciado.  
   
 ## <a name="message"></a>Mensagem  
- Estabelecimento de Conexão é iniciada para %1.  
+
+ Estabelecimento de conexão iniciado para %1.  
   
 ## <a name="details"></a>Detalhes

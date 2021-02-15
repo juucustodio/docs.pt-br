@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugManagedCallback3'
 title: Interface ICorDebugManagedCallback3
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: a95389d3-cf2e-47a4-9805-61426acc6b65
 topic_type:
 - apiref
-ms.openlocfilehash: 63e3f166c4cbf17f4892dccf770343bfbf6e0284
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 9fb3d44b1d793935ac997e8e4d8d86de4466f7b2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83209741"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801183"
 ---
 # <a name="icordebugmanagedcallback3-interface"></a>Interface ICorDebugManagedCallback3
+
 Fornece um método de retorno de chamada que indica que uma notificação personalizada ativada do depurador foi gerada.  
   
 ## <a name="methods"></a>Métodos  
@@ -31,12 +33,14 @@ Fornece um método de retorno de chamada que indica que uma notificação person
 |[Método CustomNotification](icordebugmanagedcallback3-customnotification-method.md)|Indica que uma notificação de depurador personalizada habilitada foi gerada.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Essa interface é uma extensão lógica das interfaces [ICorDebugManagedCallback](icordebugmanagedcallback-interface.md) e [ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md) .  
   
 > [!NOTE]
 > Esta interface não dá suporte para chamada remota, seja entre computadores ou processos cruzados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -45,7 +49,7 @@ Fornece um método de retorno de chamada que indica que uma notificação person
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)
 - [Interface ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md)

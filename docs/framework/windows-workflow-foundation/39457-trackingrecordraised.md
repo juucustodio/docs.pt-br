@@ -1,28 +1,32 @@
 ---
+description: 'Saiba mais sobre: 39457-TrackingRecordRaised'
 title: 39457 - TrackingRecordRaised
 ms.date: 03/30/2017
 ms.assetid: 5a2731d1-c731-4b79-bb69-016cb69ef481
-ms.openlocfilehash: 104d3fb4b544172001051be7bccc3721cf8d6d1a
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 551e13e32dbb690458877ceed0b532799f238966
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61774433"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99777899"
 ---
 # <a name="39457---trackingrecordraised"></a>39457 - TrackingRecordRaised
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
 |ID|39457|  
 |Palavras-chave|WFRuntime|  
-|Nível|Informações|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
+
  Indica que um TrackingRecord foi gerado para um TrackingParticipant.  
   
 ## <a name="message"></a>Mensagem  
+
  Controlando o registro %1 elevado a %2.  
   
 ## <a name="details"></a>Detalhes  

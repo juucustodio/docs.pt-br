@@ -3,17 +3,19 @@ title: 'Mitigação: desserialização de objetos em domínios de aplicativos'
 description: Saiba como diagnosticar e atenuar um problema em que uma tentativa de desserializar objetos no contexto de chamada lógica entre domínios de aplicativo gera uma exceção.
 ms.date: 03/30/2017
 ms.assetid: 30c2d66c-04a8-41a5-ad31-646b937f61b5
-ms.openlocfilehash: 20ea0f2f0b49000b7d1993adb583a803d9f5be6c
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: 1b8060870962ddd26d90c4152a270a65936c2af3
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86475236"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96256632"
 ---
 # <a name="mitigation-deserialization-of-objects-across-app-domains"></a>Mitigação: desserialização de objetos em domínios de aplicativos
+
 Em alguns casos, quando um aplicativo usa dois ou mais domínios de aplicativo com bases de aplicativo diferentes, a tentativa de desserializar objetos no contexto da chamada lógica nos domínios de aplicativo aciona uma exceção.  
   
 ## <a name="diagnosing-the-issue"></a>Diagnosticar o problema  
+
  O problema surge na seguinte sequência de condições:  
   
 1. Um aplicativo usa dois ou mais domínios de aplicativo com bases de aplicativo diferentes.  
@@ -37,6 +39,7 @@ Em alguns casos, quando um aplicativo usa dois ou mais domínios de aplicativo c
 6. Como os tipos que estão no contexto de chamada lógica não podem ser resolvidos no domínio de aplicativo padrão, uma exceção é acionada.  
   
 ## <a name="mitigation"></a>Atenuação  
+
  Para resolver esse problema, faça o seguinte  
   
 1. Procure a chamada para `get_Evidence` na pilha de chamadas quando a exceção for acionada. A exceção pode ser qualquer uma do grande subconjunto de exceções, incluindo <xref:System.IO.FileNotFoundException> e <xref:System.Runtime.Serialization.SerializationException>.  
@@ -47,6 +50,6 @@ Em alguns casos, quando um aplicativo usa dois ou mais domínios de aplicativo c
     System.Configuration.ConfigurationManager.GetSection("system.xml/xmlReader");  
     ```
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Compatibilidade de aplicativos](application-compatibility.md)

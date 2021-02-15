@@ -1,16 +1,18 @@
 ---
+description: 'Saiba mais sobre: <workflowInstanceManagement>'
 title: <workflowInstanceManagement>
 ms.date: 03/30/2017
 ms.topic: reference
 ms.assetid: 63ac89ba-c844-4ae2-96ae-cd752a90a109
-ms.openlocfilehash: aa2edafd9adc0317ed0023ad46688025dcecad67
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 528c0c923be93d9581b8e3bfccc382eab11c5da1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70397529"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99697914"
 ---
 # \<workflowInstanceManagement>
+
 Um comportamento de serviço que permite que você especifique as configurações que controlam como as instâncias de fluxo de trabalho são executadas, incluindo persistência, o comportamento de exceção sem tratamento e o comportamento ocioso.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,7 +22,7 @@ Um comportamento de serviço que permite que você especifique as configuraçõe
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-servicebehaviors-of-workflow.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<workflowInstanceManagement>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <behaviors>
@@ -33,6 +35,7 @@ Um comportamento de serviço que permite que você especifique as configuraçõe
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -42,13 +45,14 @@ Um comportamento de serviço que permite que você especifique as configuraçõe
 |authorizedWindowsGroup||  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[\<behavior>desse\<serviceBehaviors>](behavior-of-servicebehaviors-of-workflow.md)|Especifica um elemento de comportamento.|  
+|[\<behavior> desse \<serviceBehaviors>](behavior-of-servicebehaviors-of-workflow.md)|Especifica um elemento de comportamento.|  
   
 ## <a name="see-also"></a>Confira também
 

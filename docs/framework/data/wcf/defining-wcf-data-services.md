@@ -1,27 +1,30 @@
 ---
+description: 'Saiba mais sobre: definindo WCF Data Services'
 title: Configurando WCF Data Services
 ms.date: 03/30/2017
 helpviewer_keywords:
 - WCF Data Services, configuring
 ms.assetid: 05006ff3-02dc-410e-831e-54ec3e7e24ef
-ms.openlocfilehash: 26cfee95f7cd3b956ff263d90b713e9d70b98202
-ms.sourcegitcommit: f348c84443380a1959294cdf12babcb804cfa987
+ms.openlocfilehash: 43a4887226b03e80c4a966a118f210fe8a28000d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73975329"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99766082"
 ---
 # <a name="defining-wcf-data-services"></a>Configurando WCF Data Services
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 Esta seção descreve como criar e Configurar WCF Data Services para expor dados como um feed Protocolo Open Data (OData). Para obter mais informações sobre as etapas básicas necessárias para criar um serviço de dados, consulte [expondo seus dados como um serviço](exposing-your-data-as-a-service-wcf-data-services.md).
 
 ## <a name="in-this-section"></a>Nesta seção
 
- [Configurando o serviço de dados](configuring-the-data-service-wcf-data-services.md)
+ [Configurar o serviço de dados](configuring-the-data-service-wcf-data-services.md)
 
  Descreve as opções de configuração de serviço de dados fornecidas pelo WCF Data Services.
 
- [Provedores de Serviços de Dados](data-services-providers-wcf-data-services.md)
+ [Provedores de serviços de dados](data-services-providers-wcf-data-services.md)
 
  Descreve os modelos de provedor para expor dados como um serviço de dados.
 
@@ -37,7 +40,7 @@ Esta seção descreve como criar e Configurar WCF Data Services para expor dados
 
  Descreve como definir métodos de interceptador para executar lógica de negócios personalizado em solicitações para o serviço de dados.
 
- [Desenvolvendo e implantando o WCF Data Services](developing-and-deploying-wcf-data-services.md)
+ [Desenvolvendo e implantando WCF Data Services](developing-and-deploying-wcf-data-services.md)
 
  Descreve como desenvolver e implantar um serviço de dados usando o Visual Studio.
 
@@ -45,7 +48,7 @@ Esta seção descreve como criar e Configurar WCF Data Services para expor dados
 
  Descreve a autenticação e a autorização para o serviço de dados e outras considerações de segurança.
 
- [Hospedagem o serviço de dados](hosting-the-data-service-wcf-data-services.md)
+ [Hospedar o serviço de dados](hosting-the-data-service-wcf-data-services.md)
 
  Descreve como selecionar um host para o serviço de dados.
 
@@ -59,6 +62,6 @@ Esta seção descreve como criar e Configurar WCF Data Services para expor dados
 
 ## <a name="see-also"></a>Consulte também
 
-- [WCF Data Services Client Library](wcf-data-services-client-library.md) (Biblioteca de clientes do WCF Data Services)
-- [Acessando recursos do serviço de dados](accessing-data-service-resources-wcf-data-services.md)
+- [Biblioteca de cliente do WCF Data Services](wcf-data-services-client-library.md)
+- [Acessar recursos do serviço de dados](accessing-data-service-resources-wcf-data-services.md)
 - [Introdução](getting-started-with-wcf-data-services.md)

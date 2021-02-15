@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: tuplas (Visual Basic)'
 title: Tuplas
 ms.date: 04/23/2017
 helpviewer_keywords:
 - tuples [Visual Basic]
 ms.assetid: 3e66cd1b-3432-4e1d-8c37-5ebacae8f53f
-ms.openlocfilehash: b169a1c13b3f20d7b5e2a1386cfb28a9cc093dcd
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: f598facb446b7d50864c0cf9151195cfcde158bb
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88559083"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100454450"
 ---
 # <a name="tuples-visual-basic"></a>Tuplas (Visual Basic)
 
@@ -72,7 +73,7 @@ Quando a inferência de nome de campo falha, Visual Basic não gera um erro de c
 
 ## <a name="tuples-versus-structures"></a>Tuplas versus estruturas
 
-Uma tupla de Visual Basic é um tipo de valor que é uma instância de um dos tipos genéricos **System. ValueTuple** . Por exemplo, a `holiday` tupla definida no exemplo anterior é uma instância da <xref:System.ValueTuple%603> estrutura. Ele foi projetado para ser um contêiner leve de dados. Como a tupla visa facilitar a criação de um objeto com vários itens de dados, ele não tem alguns dos recursos que uma estrutura personalizada pode ter. Eles incluem:
+Uma tupla de Visual Basic é um tipo de valor que é uma instância de um dos tipos genéricos **System. ValueTuple** . Por exemplo, a `holiday` tupla definida no exemplo anterior é uma instância da <xref:System.ValueTuple%603> estrutura. Ele foi projetado para ser um contêiner leve de dados. Como a tupla visa facilitar a criação de um objeto com vários itens de dados, ele não tem alguns dos recursos que uma estrutura personalizada pode ter. Elas incluem:
 
 - Membros personalizados. Você não pode definir suas próprias propriedades, métodos ou eventos para uma tupla.
 
@@ -87,7 +88,7 @@ Uma tupla Visual Basic herda os membros de seu tipo **ValueTuple** . Além de se
 | Método | Descrição |
 | ---|---|
 | CompareTo | Compara a tupla atual com outra tupla com o mesmo número de elementos. |
-| É igual a | Determina se a tupla atual é igual a outra tupla ou objeto. |
+| Igual a | Determina se a tupla atual é igual a outra tupla ou objeto. |
 | GetHashCode | Calcula o código hash para a instância atual. |
 | ToString | Retorna a representação da cadeia de caracteres dessa tupla, que assume o formulário `(Item1, Item2...)` , onde `Item1` e `Item2` representa os valores dos campos da tupla. |
 
@@ -171,6 +172,6 @@ O exemplo a seguir cria uma tupla, converte-a em um objeto de **tupla** do .net 
 
 [!code-vb[Convert](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple2.vb#1)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Referência de linguagem de Visual Basic](index.md)
+- [Referência da linguagem Visual Basic](index.md)

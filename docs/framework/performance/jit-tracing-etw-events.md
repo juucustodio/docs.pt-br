@@ -6,19 +6,21 @@ helpviewer_keywords:
 - JIT tracing events [.NET Framework]
 - ETW, JIT tracing events (CLR)
 ms.assetid: 926adde2-c123-452e-bf4f-4b977bf06ffb
-ms.openlocfilehash: 568fc942cd0e2188c530d2befb6260083757ec72
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: fd1fae8731ea927ab64d0c0df83b90d29289a0a0
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86474456"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96277961"
 ---
 # <a name="jit-tracing-etw-events"></a>Eventos ETW de rastreamento JIT
+
  Esses eventos coletam informações sobre o êxito ou falha de inlining JIT (Just-In-Time) e chamadas tail JIT.
 
 ## <a name="jit-inlining-events"></a>Eventos de inlining JIT
 
 ### <a name="methodjitinliningfailed-event"></a>Evento MethodJitInliningFailed
+
  A tabela a seguir mostra a palavra-chave e o nível. (Para obter mais informações, consulte [Palavras-chaves e níveis CLR ETW](clr-etw-keywords-and-levels.md).)  
   
 |Palavra-chave para acionar o evento|Nível|  
@@ -49,6 +51,7 @@ ms.locfileid: "86474456"
 |ClrInstanceID|win:UnicodeString|ID exclusiva da instância do CLR ou do CoreCLR.|  
   
 ### <a name="methodjitinliningsucceeded-event"></a>Evento MethodJitInliningSucceeded  
+
  A tabela a seguir mostra a palavra-chave e o nível.  
   
 |Palavra-chave para acionar o evento|Nível|  
@@ -79,6 +82,7 @@ ms.locfileid: "86474456"
 ## <a name="jit-tail-call-events"></a>Eventos de chamada tail JIT  
   
 ### <a name="methodjittailcallfailed-event"></a>Evento MethodJITTailCallFailed  
+
  A tabela a seguir mostra a palavra-chave e o nível.  
   
 |Palavra-chave para acionar o evento|Nível|  
@@ -109,6 +113,7 @@ ms.locfileid: "86474456"
 |ClrInstanceID|win:UInt16|ID exclusiva da instância do CLR ou do CoreCLR.|  
   
 ### <a name="methodjittailcallsucceeded-event"></a>Evento MethodJITTailCallSucceeded  
+
  A tabela a seguir mostra a palavra-chave e o nível.  
   
 |Palavra-chave para acionar o evento|Nível|  
@@ -138,6 +143,6 @@ ms.locfileid: "86474456"
 |TailCallType|win:UnicodeString|O tipo da chamada tail.|  
 |ClrInstanceID|win:UInt16|ID exclusiva da instância do CLR ou do CoreCLR.|  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Eventos ETW no CLR](clr-etw-events.md)

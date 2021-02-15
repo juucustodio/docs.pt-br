@@ -14,14 +14,15 @@ helpviewer_keywords:
 - Next function [.NET WMI and performance counters]
 topic_type:
 - Reference
-ms.openlocfilehash: 587e085f6fe9f6c19d3605c673cd3bd6f68162f1
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: c2a7fae32e82caae40a95bfdad10fa78082988ef
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73127374"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726776"
 ---
-# <a name="next-function"></a>Próxima função
+# <a name="next-function"></a>Função Next
+
 Recupera a próxima Propriedade em uma enumeração que começa com uma chamada para [BeginEnumeration](beginenumeration.md).
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
@@ -55,13 +56,13 @@ no Um ponteiro para uma instância de [IWbemClassObject](/windows/desktop/api/wb
 fora Um novo `BSTR` que contém o nome da propriedade. Você pode definir esse parâmetro como `null` se o nome não for necessário.
 
 `pVal`\
-fora Uma `VARIANT` preenchida com o valor da propriedade. Você pode definir esse parâmetro como `null` se o valor não for necessário. Se a função retornar um código de erro, a `VARIANT` passada para `pVal` será deixada como não modificada.
+fora Um `VARIANT` preenchido com o valor da propriedade. Você pode definir esse parâmetro como `null` se o valor não for necessário. Se a função retornar um código de erro, o `VARIANT` passado para `pVal` será deixado sem modificações.
 
 `pvtType`\
-fora Um ponteiro para uma variável `CIMTYPE` (um `LONG` no qual o tipo da propriedade é colocado). O valor dessa propriedade pode ser um `VT_NULL_VARIANT`; nesse caso, é necessário determinar o tipo real da propriedade. Esse parâmetro também pode ser `null`.
+fora Um ponteiro para uma `CIMTYPE` variável (um `LONG` no qual o tipo da propriedade é colocado). O valor dessa propriedade pode ser a `VT_NULL_VARIANT` ; nesse caso, é necessário determinar o tipo real da propriedade. Esse parâmetro também pode ser `null` .
 
 `plFlavor`\
-[out] `null`ou um valor que recebe informações sobre a origem da propriedade. Consulte a seção [Comentários] para obter os valores possíveis.
+[out] `null` ou um valor que recebe informações sobre a origem da propriedade. Consulte a seção [Comentários] para obter os valores possíveis.
 
 ## <a name="return-value"></a>Valor retornado
 
@@ -71,7 +72,7 @@ Os valores a seguir retornados por essa função são definidos no arquivo de ca
 |---------|---------|---------|
 | `WBEM_E_FAILED` | 0x80041001 | Houve uma falha geral. |
 | `WBEM_E_INVALID_PARAMETER` | 0x80041008 | Um parâmetro é inválido. |
-| `WBEM_E_UNEXPECTED` | 0x8004101d | Não havia nenhuma chamada para a função [`BeginEnumeration`](beginenumeration.md) . |
+| `WBEM_E_UNEXPECTED` | 0x8004101d | Não havia nenhuma chamada para a [`BeginEnumeration`](beginenumeration.md) função. |
 | `WBEM_E_OUT_OF_MEMORY` | 0x80041006 | Não há memória suficiente disponível para iniciar uma nova enumeração. |
 | `WBEM_E_TRANSPORT_FAILURE` | 0x80041015 | A chamada de procedimento remoto entre o processo atual e o gerenciamento do Windows falhou. |
 | `WBEM_S_NO_ERROR` | 0 | A chamada de função foi bem-sucedida.  |
@@ -83,9 +84,9 @@ Essa função encapsula uma chamada para o método [IWbemClassObject:: Next](/wi
 
 Esse método também retorna propriedades do sistema.
 
-Se o tipo subjacente da propriedade for um caminho de objeto, uma data ou hora ou outro tipo especial, o tipo retornado não conterá informações suficientes. O chamador deve examinar a `CIMTYPE` da propriedade especificada para determinar se a propriedade é uma referência de objeto, uma data ou hora ou outro tipo especial.
+Se o tipo subjacente da propriedade for um caminho de objeto, uma data ou hora ou outro tipo especial, o tipo retornado não conterá informações suficientes. O chamador deve examinar a `CIMTYPE` propriedade especificada para determinar se a propriedade é uma referência de objeto, uma data ou hora ou outro tipo especial.
 
-Se `plFlavor` não for `null`, o valor `LONG` receberá informações sobre a origem da propriedade, da seguinte maneira:
+Se `plFlavor` não for `null` , o `LONG` valor receberá informações sobre a origem da propriedade, da seguinte maneira:
 
 |Constante  |Valor  |Descrição  |
 |---------|---------|---------|
@@ -99,8 +100,8 @@ Se `plFlavor` não for `null`, o valor `LONG` receberá informações sobre a or
 
 **Cabeçalho:** WMINet_Utils. idl
 
-**Versões do .NET Framework:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
+**.NET Framework versões:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-- [WMI e contadores de desempenho (referência de API não gerenciada)](index.md)
+- [WMI e Contadores de Desempenho (Referência de API Não Gerenciada)](index.md)

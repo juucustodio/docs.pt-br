@@ -1,19 +1,22 @@
 ---
+description: 'Saiba mais sobre: interoperabilidade e integração'
 title: Interoperabilidade e integração
 ms.date: 03/30/2017
 ms.assetid: 0d925119-01a1-45c2-9ea0-23061323ad33
-ms.openlocfilehash: 97244ce44a67d653b820d7e14bcb50555e5cbb60
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 9f469b3ed516c679dc3af1d2f53dce1a9251d2fd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84592652"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802717"
 ---
 # <a name="interoperability-and-integration"></a>Interoperabilidade e integração
+
 Esta seção aborda a interoperabilidade e a integração com o Windows Communication Foundation (WCF).  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Guia de interoperabilidade de protocolos de serviços Web](web-services-protocols-interoperability-guide.md)  
+
+ [Guia de interoperabilidade de protocolos de serviços](web-services-protocols-interoperability-guide.md)  
  O WCF é criado para interoperar com serviços Web que dão suporte a um conjunto de especificações conhecidas como especificações de serviços da Web. Este tópico lista as especificações com suporte e as associações que dão suporte a elas.  
   
  [Integração com aplicativos COM+](integrating-with-com-plus-applications.md)  
@@ -22,7 +25,7 @@ Esta seção aborda a interoperabilidade e a integração com o Windows Communic
  [Integração com aplicativos COM](integrating-with-com-applications.md)  
  Discute os vários métodos para aplicativos COM chamarem serviços WCF.  
   
- [Migrando aplicativos de comunicação remota do .NET para WCF](migrating-net-remoting-applications-to-wcf.md)  
+ [Migrando aplicativos remotos .NET para o WCF](migrating-net-remoting-applications-to-wcf.md)  
  Descreve como o WCF pode ser usado com .NET Framework comunicação remota.  
   
  [Interoperabilidade com Web Services Enhancements 3.0](interoperability-with-web-services-enhancements-3-0.md)  
@@ -47,7 +50,9 @@ Esta seção aborda a interoperabilidade e a integração com o Windows Communic
  Descreve como o WCF fornece serviços e clientes que usam mensagens "de POX (XML antigo").  
   
 ## <a name="reference"></a>Referência  
+
  <xref:System.ServiceModel>  
   
 ## <a name="related-sections"></a>Seções relacionadas  
+
  [Estendendo o WCF](../extending/index.md)

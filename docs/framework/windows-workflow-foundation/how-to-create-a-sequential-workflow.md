@@ -1,27 +1,24 @@
 ---
-title: Como criar um fluxo de trabalho sequencial
+title: 'Como: criar um fluxo de trabalho sequencial'
 description: Este artigo cria um fluxo de trabalho que usa atividades internas, como a atividade de sequência e atividades personalizadas.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 5280e816-ae17-48c4-8de0-a1e6895dd8f0
-ms.openlocfilehash: f80ac471fdcc425504b11b5fb17effa888aa9590
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 0c47290d11770a094fb09bcb4dc34aee1e4371a9
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83419688"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98190514"
 ---
-# <a name="how-to-create-a-sequential-workflow"></a>Como criar um fluxo de trabalho sequencial
+# <a name="how-to-create-a-sequential-workflow"></a>Como: criar um fluxo de trabalho sequencial
 
 Os fluxos de trabalho podem ser construídos a partir de atividades internas assim como as atividades personalizadas. Este tópico percorre a criação de um fluxo de trabalho que usa atividades internas, como a <xref:System.Activities.Statements.Sequence> atividade, e as atividades personalizadas do tópico [como criar uma atividade](how-to-create-an-activity.md) anterior. O fluxo de trabalho modela um jogo de palpite de número.
 
 > [!NOTE]
 > Cada tópico do tutorial de Introdução depende dos tópicos anteriores. Para concluir este tópico, você deve primeiro concluir [como: criar uma atividade](how-to-create-an-activity.md).
-
-> [!NOTE]
-> Para baixar uma versão completa do tutorial, consulte [Windows Workflow Foundation (WF45) – introdução tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).
 
 ## <a name="to-create-the-workflow"></a>Para criar o fluxo de trabalho
 
@@ -159,12 +156,12 @@ Os fluxos de trabalho podem ser construídos a partir de atividades internas ass
 
      Para obter instruções sobre como executar o fluxo de trabalho, consulte o próximo tópico [como: executar um fluxo de trabalho](how-to-run-a-workflow.md). Se você já tiver concluído a etapa [como executar um fluxo de trabalho](how-to-run-a-workflow.md) com um estilo diferente de fluxo de trabalho e desejar executá-lo usando o fluxo de trabalho Sequencial nesta etapa, pule para a seção [para compilar e executar o aplicativo](how-to-run-a-workflow.md#BKMK_ToRunTheApplication) de [como: executar um fluxo de trabalho](how-to-run-a-workflow.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.Activities.Statements.Flowchart>
 - <xref:System.Activities.Statements.FlowDecision>
 - [Programação do Windows Workflow Foundation](programming.md)
 - [Criando fluxos de trabalho](designing-workflows.md)
-- [Tutorial de Introdução](getting-started-tutorial.md)
-- [Como criar uma atividade](how-to-create-an-activity.md)
-- [Como executar um fluxo de trabalho](how-to-run-a-workflow.md)
+- [Guia de introdução ao tutorial](getting-started-tutorial.md)
+- [Como: criar uma atividade](how-to-create-an-activity.md)
+- [Como: executar um fluxo de trabalho](how-to-run-a-workflow.md)

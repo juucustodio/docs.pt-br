@@ -1,26 +1,26 @@
 ---
+description: 'Saiba mais sobre: visão geral do fuso horário'
 title: Visão geral do fuso horário
 ms.date: 04/10/2017
-ms.technology: dotnet-standard
 helpviewer_keywords:
-- time zones [.NET Framework], about time zones
-- transition time [.NET Framework]
+- time zones [.NET], about time zones
+- transition time [.NET]
 - TimeZoneInfo class, about TimeZoneInfo class
-- time zones [.NET Framework], creating
-- invalid time [.NET Framework]
-- fixed rule [.NET Framework]
-- ambiguous time [.NET Framework]
-- floating rule [.NET Framework]
-- daylight saving time [.NET Framework]
-- adjustment rule [.NET Framework]
-- time zones [.NET Framework], terminology
+- time zones [.NET], creating
+- invalid time [.NET]
+- fixed rule [.NET]
+- ambiguous time [.NET]
+- floating rule [.NET]
+- daylight saving time [.NET]
+- adjustment rule [.NET]
+- time zones [.NET], terminology
 ms.assetid: c4b7ed01-5e38-4959-a3b6-ef9765d6ccf1
-ms.openlocfilehash: 9cb50357931cb22fd2862ba7558154a4782e4557
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 4f892763cc27794155847c602c458d82780592ee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84281031"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702425"
 ---
 # <a name="time-zone-overview"></a>Visão geral do fuso horário
 
@@ -71,6 +71,6 @@ Como cada fuso horário é caracterizado por uma diferença base do UTC, bem com
 
 Para obter detalhes de como converter horários entre fusos horários, consulte [Convertendo horários entre fusos horários](converting-between-time-zones.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Datas, horas e fusos horários](index.md)

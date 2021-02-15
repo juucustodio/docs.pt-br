@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: roteamento'
 title: Roteamento
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,17 +7,19 @@ helpviewer_keywords:
 - WCF [WCF], routing
 - Windows communication Foundation [WCF], routing
 ms.assetid: bd56516c-420d-4c4e-97f9-f72d28d149a9
-ms.openlocfilehash: 801de9865495aec32114f47075397c3445a88fc9
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: ed3458bd9076866f5afbf6a4940f5f3bbdce2ebf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84590378"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99733184"
 ---
 # <a name="routing"></a>Roteamento
+
 Os tópicos nesta seção abrangem o serviço de roteamento. O serviço de roteamento é um intermediário SOAP genérico configurável que permite configurar o roteamento baseado em conteúdo, configurar a ponte de protocolo, lidar com erros de comunicação e atualizar dinamicamente a lógica de roteamento em tempo de execução.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Serviço de roteamento](routing-service.md)  
  Fornece uma visão geral dos recursos do serviço de roteamento.  
   

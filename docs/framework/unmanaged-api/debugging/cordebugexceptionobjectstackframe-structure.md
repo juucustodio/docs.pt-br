@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estrutura CorDebugExceptionObjectStackFrame'
 title: Estrutura CorDebugExceptionObjectStackFrame
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 542cdd81-5ae7-4361-b0ef-1ae4775df258
 topic_type:
 - apiref
-ms.openlocfilehash: 7eccaf984b187e463195bb3804f87bbb2c7ad47b
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: abeb5a9f6385c494745a34c6f37d6fbc1376ad7b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795918"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99662150"
 ---
 # <a name="cordebugexceptionobjectstackframe-structure"></a>Estrutura CorDebugExceptionObjectStackFrame
+
 Representa informações de quadro de pilha de um objeto de exceção.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,7 +39,7 @@ typedef struct CorDebugExceptionObjectStackFrame {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`pModule`|Um ponteiro para o objeto ICorDebugModule para o quadro atual.|  
 |`ip`|O valor do ponteiro de instrução (EIP/RIP) para o quadro atual.|  
@@ -45,9 +47,11 @@ typedef struct CorDebugExceptionObjectStackFrame {
 |`isLastForeignExceptionFrame`|Um valor que indica se o quadro é o último quadro em uma exceção estrangeira.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O chamador deve liberar o ponteiro para o objeto ICorDebugModule depois que ele não estiver mais em uso.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

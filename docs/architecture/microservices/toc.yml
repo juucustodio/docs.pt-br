@@ -10,12 +10,12 @@
           href: container-docker-introduction/docker-terminology.md
         - name: 'Registros, imagens e contêineres do Docker'
           href: container-docker-introduction/docker-containers-images-registries.md
-    - name: Escolher entre .NET Core e .NET Framework para contêineres do Docker
+    - name: Escolhendo entre o .NET 5 e o .NET Framework para contêineres do Docker
       href: net-core-net-framework-containers/index.md
       items:
-        - name: Diretrizes gerais
+        - name: Orientação geral
           href: net-core-net-framework-containers/general-guidance.md
-        - name: Quando escolher o .NET Core para os contêineres do Docker
+        - name: Quando escolher o .NET para os contêineres do Docker
           href: net-core-net-framework-containers/net-core-container-scenarios.md
         - name: Quando escolher o .NET Framework para os contêineres do Docker
           href: net-core-net-framework-containers/net-framework-container-scenarios.md
@@ -65,7 +65,7 @@
       items:
         - name: Fluxo de trabalho de desenvolvimento para aplicativos do Docker
           href: docker-application-development-process/docker-app-development-workflow.md
-    - name: Projetar e desenvolver aplicativos .NET baseados em vários contêineres e em microsserviços
+    - name: Projetando e desenvolvendo aplicativos .NET baseados em microsserviço e em vários contêineres
       href: multi-container-microservice-net-applications/index.md
       items:
         - name: Projetando um aplicativo orientado a microsserviços
@@ -101,7 +101,7 @@
           href: microservice-ddd-cqrs-patterns/ddd-oriented-microservice.md
         - name: Criando um modelo de domínio de microsserviço
           href: microservice-ddd-cqrs-patterns/microservice-domain-model.md
-        - name: Implementando um modelo de domínio de microsserviço com o .NET Core
+        - name: Como implementar um modelo de domínio de microsserviço com o .NET
           href: microservice-ddd-cqrs-patterns/net-core-microservice-domain-model.md
         - name: Seedwork (classes e interfaces base reutilizáveis para seu modelo de domínio)
           href: microservice-ddd-cqrs-patterns/seedwork-domain-model-base-classes-interfaces.md
@@ -144,7 +144,7 @@
           href: implement-resilient-applications/implement-circuit-breaker-pattern.md
         - name: Monitoramento de integridade
           href: implement-resilient-applications/monitor-app-health.md
-    - name: Proteger microsserviços NET e aplicativos Web
+    - name: Protegendo microsserviços e aplicativos Web .NET
       href: secure-net-microservices-web-applications/index.md
       items:
         - name: Sobre a autorização em aplicativos Web e em microsserviços .NET

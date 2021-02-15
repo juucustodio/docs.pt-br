@@ -153,9 +153,9 @@
         - name: Tipos genéricos
           href: programming-guide/language-features/data-types/generic-types.md
           items:
-            - name: 'Como: Definir uma classe capaz de fornecer uma funcionalidade idêntica em tipos de dados diferentes'
+            - name: Definir uma classe capaz de fornecer funcionalidades idênticas para tipos diferentes
               href: programming-guide/language-features/data-types/how-to-define-a-class-that-can-provide-identical-functionality.md
-            - name: 'Como: Usar uma classe genérica'
+            - name: Usar uma classe genérica
               href: programming-guide/language-features/data-types/how-to-use-a-generic-class.md
         - name: Procedimentos genéricos
           href: programming-guide/language-features/data-types/generic-procedures.md
@@ -338,16 +338,17 @@
         - name: Tipo de Dados UShort
           href: language-reference/data-types/ushort-data-type.md
     - name: Diretivas
-      href: language-reference/directives/index.md
       items:
-        - name: '#Diretiva Const'
+        - name: '#Const'
           href: language-reference/directives/const-directive.md
-        - name: '#Diretiva ExternalSource'
+        - name: '#ExternalSource'
           href: language-reference/directives/externalsource-directive.md
-        - name: '#Diretivas If...Then...#Else'
+        - name: '#Se... Em seguida,... #Else'
           href: language-reference/directives/if-then-else-directives.md
-        - name: '#Diretiva Region'
+        - name: '#Região'
           href: language-reference/directives/region-directive.md
+        - name: '#Desabilitar e #Enable'
+          href: language-reference/directives/disable-enable.md
     - name: Funções
       href: language-reference/functions/index.md
       items:
@@ -875,14 +876,18 @@
         - name: Literal de Instrução de Processamento XML
           href: language-reference/xml-literals/xml-processing-instruction-literal.md
     - name: Mensagens de erro
-      href: language-reference/error-messages/index.md
       items:
+        - name: Visão geral
+          displayName: 'error messages, compiler errors'
+          href: language-reference/error-messages/index.md
+        - name: BC30663
+          href: language-reference/error-messages/attribute-attributename-cannot-be-applied-multiple-times.md
+        - name: BC32500
+          href: language-reference/error-messages/attribute-cannot-be-applied-because-the-format-of-the-guid-is-not-correct.md
         - name: '''#ElseIf'' deve ser precedido por um ''#If'' ou ''#ElseIf'' correspondente'
           href: language-reference/error-messages/elseif-must-be-preceded-by-a-matching-if-or-elseif.md
         - name: As instruções '#Region' e '#End Region' não são válidas dentro dos corpos/lambdas de várias linhas do método
           href: language-reference/error-messages/region-and-end-region-are-not-valid-within-method-bodies-multiline-lambdas.md
-        - name: '''<attribute>'' não pode ser aplicado porque o formato da GUID ''<number>'' não está correto'
-          href: language-reference/error-messages/attribute-cannot-be-applied-because-the-format-of-the-guid-is-not-correct.md
         - name: '''<classname>'' não é compatível com CLS porque a interface ''<interfacename>'' implementada não é compatível com CLS'
           href: language-reference/error-messages/classname-is-not-cls-compliant-because-the-interface-is-not-cls-compliant.md
         - name: '''<elementname>'' está obsoleto (aviso do Visual Basic)'
@@ -949,8 +954,6 @@
           href: language-reference/error-messages/bc31043.md
         - name: '''As Any'' não é suportado em instruções ''Declare'''
           href: language-reference/error-messages/bc30828.md
-        - name: O atributo '<attributename>' não pode ser aplicado várias vezes
-          href: language-reference/error-messages/attribute-attributename-cannot-be-applied-multiple-times.md
         - name: Erro de automação
           href: language-reference/error-messages/automation-error.md
         - name: 'Valor de soma de verificação incorreto, dígitos não hexadecimais ou número ímpar de dígitos hexadecimais'
@@ -1409,7 +1412,7 @@
               href: reference/command-line-compiler/win32manifest.md
             - name: '-win32resource'
               href: reference/command-line-compiler/win32resource.md
-        - name: Opções de compilador listadas por categoria
+        - name: Opções do compilador por categoria
           href: reference/command-line-compiler/compiler-options-listed-by-category.md
     - name: Informações de referência do .NET Framework
       href: reference/net-framework-reference-information.md

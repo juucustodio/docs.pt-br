@@ -4,16 +4,16 @@ description: Conheça os recursos de telemetria da CLI do ML.NET que coletam inf
 ms.topic: conceptual
 ms.date: 06/03/2020
 ms.custom: mlnet-tooling
-ms.openlocfilehash: 833ee2ae54cf3a52adaf070837a33e00267d25dc
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 753361abdac5a2e979873003f419232a069b2015
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599823"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90546426"
 ---
 # <a name="telemetry-collection-by-the-mlnet-cli"></a>Coleta de telemetria pela CLI do ML.NET
 
-A [CLI do ML.NET](https://aka.ms/mlnet-cli) inclui um recurso de telemetria que coleta dados anônimos de uso que são agregados para uso pela Microsoft.
+A [CLI do ML.NET](../automate-training-with-cli.md) inclui um recurso de telemetria que coleta dados anônimos de uso que são agregados para uso pela Microsoft.
 
 ## <a name="how-microsoft-uses-the-data"></a>Como a Microsoft usa os dados
 
@@ -51,7 +51,7 @@ O recurso coleta os seguintes dados:
 - Nome do arquivo de conjunto de dados com hash
 - Bucket do tamanho do arquivo de conjunto de dados
 - Sistema operacional e versão
-- Valor dos comandos de tarefa do ML: valores categóricos, como `regression` , `classification` e`recommendation`
+- Valor dos comandos de tarefa do ML: valores categóricos, como `regression` , `classification` e `recommendation`
 - Versão da CLI do ML.NET (ou seja, 0.3.27703.4)
 
 Os dados são enviados com segurança para os servidores Microsoft usando a tecnologia [Azure Application Insights](https://azure.microsoft.com/services/application-insights/), mantidos em acesso restrito e usados sob controles de segurança rigorosos dos sistemas do [Armazenamento do Microsoft Azure](https://azure.microsoft.com/services/storage/) seguros.
@@ -74,7 +74,7 @@ A distribuição da Microsoft da CLI do ML.NET é licenciada com os [termos de l
 
 Quando você executar pela primeira vez um [comando da CLI do ML.NET](../reference/ml-net-cli-reference.md), como `mlnet classification`, a ferramenta da CLI do ML.NET exibe o texto de divulgação que informa como recusar a telemetria. O texto pode variar um pouco dependendo da versão da CLI que você está executando.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Referência da CLI do ML.NET](../reference/ml-net-cli-reference.md)
 - [Termos de licença para software Microsoft: biblioteca de Microsoft .NET](https://aka.ms/dotnet-core-eula)

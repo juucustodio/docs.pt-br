@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IValidator:: FormatEventInfo'
 title: Método IValidator::FormatEventInfo
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 4c0c7477-05ba-461b-b21b-cbfba95f1db1
 topic_type:
 - apiref
-ms.openlocfilehash: 0c60631b5e034bc46d74412440d35d526359d043
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 28ecf9ab2b14cd2fdd178a4ad9d8e218f7038a9d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008567"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99680155"
 ---
 # <a name="ivalidatorformateventinfo-method"></a>Método IValidator::FormatEventInfo
+
 Obtém a mensagem de erro correspondente ao erro de validação especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -38,6 +40,7 @@ HRESULT FormatEventInfo(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `hVECode`  
  no O valor HRESULT que foi passado para o manipulador de erro de validação.  
   
@@ -54,10 +57,11 @@ HRESULT FormatEventInfo(
  no Uma matriz segura que contém parâmetros adicionais que descrevem o erro.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** IValidator. idl, IValidator. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  

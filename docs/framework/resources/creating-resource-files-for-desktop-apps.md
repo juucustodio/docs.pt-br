@@ -11,12 +11,12 @@ helpviewer_keywords:
 - application resources, creating files
 - resource files, creating
 ms.assetid: 6c5ad891-66a0-4e7a-adcf-f41863ba6d8d
-ms.openlocfilehash: 2e71dc177a0358370c7eecde03d9388cced60b75
-ms.sourcegitcommit: 60dc0a11ebdd77f969f41891d5cca06335cda6a7
+ms.openlocfilehash: d10af40420c1ab9ab177514c0babeaf5cea96922
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88957431"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96259070"
 ---
 # <a name="create-resource-files-for-net-apps"></a>Criar arquivos de recurso para aplicativos .NET
 
@@ -33,6 +33,7 @@ Você pode incluir recursos, como cadeias de caracteres, imagens ou dados de obj
 - Use o [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) para criar um arquivo de recursos e incluí-lo em seu projeto. O Visual Studio fornece um editor de recursos que lhe permite adicionar, excluir e modificar recursos. No momento da compilação, o arquivo de recurso é automaticamente convertido em um arquivo binário .resources e inserido em um assembly de aplicativo ou em um assembly satélite. Para obter mais informações, confira a secção [Arquivos de Recurso no Visual Studio](creating-resource-files-for-desktop-apps.md#VSResFiles).
 
 <a name="TextFiles"></a>
+
 ## <a name="resources-in-text-files"></a>Recursos em arquivos de texto
 
 Você pode usar arquivos de texto (.txt ou .restext) para armazenar apenas os recursos de cadeia de caracteres. Para recursos que não são cadeia de caracteres, use arquivos .resx ou crie-os por meio de programação. Os arquivos de texto que contêm recursos de cadeia de caracteres têm o seguinte formato:
@@ -135,7 +136,9 @@ csc greeting.cs -resource:GreetingResources.resources
 ```
 
 <a name="ResxFiles"></a>
+
 ## <a name="resources-in-resx-files"></a>Recursos em arquivos .resx
+
  Ao contrário dos arquivos de texto, que só podem armazenar recursos de cadeia de caracteres, os arquivos de recurso XML (.resx) podem armazenar cadeias de caracteres, dados binários como imagens, ícones e clipes de áudio e objetos de programação. Um arquivo .resx contém um cabeçalho padrão que descrevem o formato das entradas dos recursos e especifica informações de controle de versão para o XML usado para analisar os dados. Os dados do arquivo de recursos seguem o cabeçalho XML. Cada item de dados consiste em um par nome/valor que está contido numa marca `data`. O seu atributo `name` define o nome do recurso e a marca `value` aninhada contém o valor do recurso. Para dados de cadeia de caracteres, a marca `value` contém a cadeia de caracteres.
 
  Por exemplo, a seguinte marca `data` define um recurso de cadeia de caracteres chamado `prompt`, cujo valor é "Digite seu nome:".
@@ -174,6 +177,7 @@ csc greeting.cs -resource:GreetingResources.resources
 > Como os arquivos .resx devem consistir em um XML bem formado num formato predefinido, não recomendamos que trabalhe manualmente com arquivos .resx, particularmente quando esses arquivos .resx contêm recursos além de cadeiras de caracteres. Em vez disso, o [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) fornece uma interface transparente para criar e manipular arquivos .resx. Para obter mais informações, confira a secção [Arquivos de Recurso no Visual Studio](creating-resource-files-for-desktop-apps.md#VSResFiles). Também pode criar e manipular arquivos .resx programaticamente. Para obter mais informações, confira [Trabalhando com arquivos .resx de forma programática](working-with-resx-files-programmatically.md).
 
 <a name="ResourcesFiles"></a>
+
 ## <a name="resources-in-resources-files"></a>Recursos em arquivos .resources
 
 Você pode usar a classe <xref:System.Resources.ResourceWriter?displayProperty=nameWithType> para criar um arquivo de recursos binário (.resources) com programação diretamente no código. Você também pode usar o [Gerador de Arquivos de Recurso (Resgen.exe)](../tools/resgen-exe-resource-file-generator.md) para criar um arquivo .resources de um arquivo de texto ou um arquivo. resx. O arquivo .resources pode conter dados binários (matrizes de bytes) e dados de objeto além dos dados de cadeia de caracteres. Criando um arquivo .resources programaticamente requer as seguintes etapas:
@@ -195,6 +199,7 @@ Você pode usar a classe <xref:System.Resources.ResourceWriter?displayProperty=n
  Depois de criar o arquivo .resources, você pode inseri-lo em um executável ou biblioteca de tempo de execução ao incluir o alternador do compilador de linguagem `/resource` ou incorporá-lo em um assembly satélite usando o [Assembly Linker (Al.exe)](../tools/al-exe-assembly-linker.md).
 
 <a name="VSResFiles"></a>
+
 ## <a name="resource-files-in-visual-studio"></a>Arquivos de recurso no Visual Studio
 
 Quando você adiciona um arquivo de recurso ao seu projeto do [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link), o Visual Studio cria um arquivo .resx no diretório do projeto. O Visual Studio fornece editores de recursos que permitem adicionar cadeias de caracteres, imagens e objetos binários. Porque os editores são projetados para lidar apenas com dados estáticos, não podem ser usados para armazenar objetos de programação. Você deve gravar os dados de objeto para um arquivo .resx ou para um arquivo .resources por meio de programação. Para saber mais, confira [Como trabalhar com arquivos .resx de forma programática](working-with-resx-files-programmatically.md) e a seção [Recursos em arquivos .resources](creating-resource-files-for-desktop-apps.md#ResourcesFiles).
@@ -203,7 +208,7 @@ Se você estiver adicionando recursos localizados, conceda a eles o mesmo nome d
 
 No momento da compilação, o Visual Studio converte primeiro os arquivos .resx em um projeto para os arquivos de recurso binários (.resources) e armazena-os num subdiretório do diretório *obj* do projeto. O Visual Studio incorpora quaisquer arquivos de recurso que não contenham recursos localizados no assembly principal que é gerado pelo projeto. Se os arquivos de recurso contém os recursos localizados, o Visual Studio insere-os em assemblies satélites separados para cada cultura localizada. Em seguida, ele armazena cada assembly satélite em um diretório cujo nome corresponde à cultura localizada. Por exemplo, os recursos localizados do Inglês (Estados Unidos) são armazenados em um assembly satélite no subdiretório en-US.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - <xref:System.Resources>
 - [Recursos em aplicativos .NET](index.md)

@@ -1,25 +1,25 @@
 ---
-title: 'Como: Valores de data e hora de viagem de ida e volta'
+description: 'Saiba mais sobre: como: valores de data e hora de viagem de ida e volta'
+title: Como aplicar uma viagem de ida e volta a valores de data e hora
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - round-trip date and time values
-- dates [.NET Framework], round-trip values
-- time zones [.NET Framework], round-trip date and time values
-- time [.NET Framework], round-trip values
-- formatting strings [.NET Framework], round-trip values
+- dates [.NET], round-trip values
+- time zones [.NET], round-trip date and time values
+- time [.NET], round-trip values
+- formatting strings [.NET], round-trip values
 ms.assetid: b609b277-edc6-4c74-b03e-ea73324ecbdb
-ms.openlocfilehash: 60483a6e29c65fc0c5803e8084053d53d9fc3c37
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 66f1ac2e8b51d7117f771a966a3c01cff24b78a3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84290442"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642741"
 ---
-# <a name="how-to-round-trip-date-and-time-values"></a>Como: Valores de data e hora de viagem de ida e volta
+# <a name="how-to-round-trip-date-and-time-values"></a>Como aplicar uma viagem de ida e volta a valores de data e hora
 
 Em muitos aplicativos, um valor de data e hora destina-se a identificar sem ambiguidade um único ponto no tempo. Este artigo mostra como salvar e restaurar um <xref:System.DateTime> valor, um <xref:System.DateTimeOffset> valor e um valor de data e hora com informações de fuso horário para que o valor restaurado identifique a mesma hora que o valor salvo.
 
@@ -85,7 +85,7 @@ Estes exemplos exigem que:
 
 - Os namespaces a seguir são importados com `using` diretivas C# ou `Imports` instruções Visual Basic:
 
-  - <xref:System>(Somente C#)
+  - <xref:System> (Somente C#)
 
   - <xref:System.Globalization?displayProperty=nameWithType>
 
@@ -97,7 +97,7 @@ Estes exemplos exigem que:
 
 - Cada exemplo de código, diferente da `DateInTimeZone` classe, ser incluído em uma classe ou Visual Basic módulo, encapsulado em métodos e chamado a partir do `Main` método.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Escolhendo entre DateTime, DateTimeOffset, TimeSpan e TimeZoneInfo](../datetime/choosing-between-datetime.md)
 - [Cadeias de caracteres de formato de data e hora padrão](standard-date-and-time-format-strings.md)

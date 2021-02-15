@@ -1,16 +1,18 @@
 ---
+description: 'Saiba mais sobre: <certificateValidation>'
 title: <certificateValidation>
 ms.date: 03/30/2017
 ms.assetid: 6c54c704-b55e-4631-88ff-4d4a5621554c
 author: BrucePerlerMS
-ms.openlocfilehash: c2d1a5d36cb5616ef06eedc093dd70a68a164a81
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: a12e46487b4fb2ac8071ba1cf9bc5c6057ded060
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70252130"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99740061"
 ---
 # \<certificateValidation>
+
 Controla as configurações que os manipuladores de token usam para validar certificados. Essas configurações serão substituídas se um manipulador específico estiver configurado com seu próprio validador.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -18,7 +20,7 @@ Controla as configurações que os manipuladores de token usam para validar cert
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<identityConfiguration>**](identityconfiguration.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<certificateValidation>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.identityModel>  
@@ -33,6 +35,7 @@ Controla as configurações que os manipuladores de token usam para validar cert
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -57,6 +60,7 @@ Controla as configurações que os manipuladores de token usam para validar cert
 |[\<securityTokenHandlerConfiguration>](securitytokenhandlerconfiguration.md)|Fornece a configuração para uma coleção de manipuladores de token de segurança.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Um `<certificateValidation>` elemento pode ser especificado no nível de serviço sob o `<identityConfiguration>` elemento ou no nível de coleção do manipulador de token de segurança sob o `<securityTokenHandlerConfiguration>` elemento. As configurações em uma coleção de manipulador de tokens substituem aquelas especificadas no serviço. Alguns manipuladores de token permitem que você especifique as configurações de validação de certificado na configuração. As configurações em manipuladores de token individuais substituem aquelas especificadas no nível de serviço e na coleção do manipulador de token de segurança.  
   
 ## <a name="example"></a>Exemplo  

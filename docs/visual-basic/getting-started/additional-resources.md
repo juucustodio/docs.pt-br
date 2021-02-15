@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Help, Visual Basic Web sites
 - Visual Basic, videos
 ms.assetid: 9bfb42e9-327f-439b-935e-8884f6aca80c
-ms.openlocfilehash: ea645e33c67bf1d39b477d8e4ce82b7a69a177fd
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 4b2d671e310763e6ddfa114bd63b031afba83a20
+ms.sourcegitcommit: 48466b8fb7332ececff5dc388f19f6b3ff503dd4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84398227"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400611"
 ---
 # <a name="additional-resources"></a>Recursos adicionais
 
@@ -51,7 +51,7 @@ Os sites a seguir fornecem orientações e podem ajudar a encontrar respostas pa
 |URL|Descrição|
 |----------|----------------|
 |[Suporte da Microsoft](https://support.microsoft.com)|Fornece acesso a artigos da Base de Dados de Conhecimento (KB), downloads e atualizações, webcasts de suporte e outros serviços.|
-|[Perguntas sobre o Visual Studio](https://developercommunity.visualstudio.com)|Permite arquivar bugs ou fornecer sugestões à Microsoft sobre o .NET e o Visual Studio. Você também pode relatar um bug selecionando **ajuda**  >  **enviar comentários**  >  **relatando um problema** no Visual Studio.|
+|[Perguntas sobre o Visual Studio](https://aka.ms/feedback/report?space=61)|Permite arquivar bugs ou fornecer sugestões à Microsoft sobre o .NET e o Visual Studio. Você também pode relatar um bug selecionando **ajuda**  >  **enviar comentários**  >  **relatando um problema** no Visual Studio.|
 
 ## <a name="third-party-resources"></a>Recursos de terceiros
 

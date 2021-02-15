@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: WithEvents (Visual Basic)'
 title: WithEvents
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,14 +8,15 @@ f1_keywords:
 helpviewer_keywords:
 - WithEvents keyword [Visual Basic]
 ms.assetid: 19d461f5-d72f-4de9-8c1d-0a6650316990
-ms.openlocfilehash: 48261e27de302c1809c9725e6e2fc0705a803930
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: b27f84fe54aaa10bc9b2359cd74fad3d3ace1ad5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84386770"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99674760"
 ---
 # <a name="withevents-visual-basic"></a>WithEvents (Visual Basic)
+
 Especifica que uma ou mais variáveis de membro declaradas se referem a uma instância de uma classe que pode gerar eventos.
 
 ## <a name="remarks"></a>Comentários
@@ -39,7 +41,7 @@ O `WithEvents` modificador pode ser usado neste contexto: [instrução Dim](../s
 Dim WithEvents app As Application
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Alças](../statements/handles-clause.md)
 - [Palavras-chave](../keywords/index.md)

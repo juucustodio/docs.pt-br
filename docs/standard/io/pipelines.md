@@ -2,19 +2,18 @@
 title: Pipelines de e/s-.NET
 description: Saiba como usar pipelines de e/s com eficiência no .NET e evitar problemas em seu código.
 ms.date: 08/27/2020
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - Pipelines
 - Pipelines I/O
 - I/O [.NET], Pipelines
 author: rick-anderson
 ms.author: riande
-ms.openlocfilehash: a24d7f5c22c936cd3fd3fdc51f0f3ace56386574
-ms.sourcegitcommit: e0803b8975d3eb12e735a5d07637020dd6dac5ef
+ms.openlocfilehash: 508ae0e2b854f81ee639a63063a8f6d73ae84863
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89271978"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94830630"
 ---
 # <a name="systemiopipelines-in-net"></a>System. IO. pipelines no .NET
 
@@ -239,7 +238,7 @@ O código a seguir lê todas as mensagens de um `PipeReader` e chamadas `Process
 
 #### <a name="problematic-code"></a>Código problemático
 
-❌**Perda de dados**
+❌ **Perda de dados**
 
 O `ReadResult` pode retornar o segmento final de dados quando `IsCompleted` é definido como `true` . Não ler os dados antes de sair do loop de leitura resultará em perda de dados.
 

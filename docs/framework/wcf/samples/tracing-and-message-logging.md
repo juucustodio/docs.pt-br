@@ -5,20 +5,22 @@ ms.date: 03/30/2017
 helpviewer_keywords:
 - Tracing and logging
 ms.assetid: a4f39bfc-3c5e-4d51-a312-71c5c3ce0afd
-ms.openlocfilehash: bb49334252c2415223b0f8f5559a6dc838d175e3
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: ec29ac03e8930bd30ccd7e90dce3993ca9e7443a
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85246019"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96255410"
 ---
 # <a name="tracing-and-message-logging"></a>Registro de mensagem e rastreamento
+
 Este exemplo demonstra como habilitar o rastreamento e o log de mensagens. Os rastreamentos e os logs de mensagens resultantes são exibidos usando a [ferramenta do Visualizador de rastreamento de serviço (SvcTraceViewer.exe)](../service-trace-viewer-tool-svctraceviewer-exe.md). Este exemplo é baseado na [introdução](getting-started-sample.md).  
   
 > [!NOTE]
 > O procedimento de instalação e as instruções de Build para este exemplo estão localizados no final deste tópico.  
   
 ## <a name="tracing"></a>Rastreamento  
+
  Windows Communication Foundation (WCF) usa o mecanismo de rastreamento definido no <xref:System.Diagnostics> namespace. Nesse modelo de rastreamento, os dados de rastreamento são produzidos por fontes de rastreamento que os aplicativos implementam. Cada fonte é identificada por um nome. Os consumidores de rastreamento criam ouvintes de rastreamento para as fontes de rastreamento para as quais desejam recuperar informações. Para receber dados de rastreamento, você deve criar um ouvinte para a origem do rastreamento. No WCF, isso pode ser feito adicionando o código a seguir ao arquivo de configuração do cliente ou do serviço definindo a fonte de rastreamento do modelo de serviço `switchValue` :  
   
 ```xml  
@@ -47,6 +49,7 @@ Este exemplo demonstra como habilitar o rastreamento e o log de mensagens. Os ra
  Para obter mais informações sobre fontes de rastreamento, consulte a seção origem do rastreamento no tópico [Configurando o rastreamento](../diagnostics/tracing/configuring-tracing.md) .  
   
 ## <a name="activity-tracing-and-propagation"></a>Rastreamento e propagação de atividades  
+
  Ter `ActivityTracing` habilitado e `propagateActivity` definido como `true` nas `system.ServiceModel` fontes de rastreamento para o cliente e o serviço fornecem a correlação de rastreamentos dentro de unidades lógicas de processamento (atividades), entre atividades em pontos de extremidade (por meio de transferências de atividade) e entre atividades que abrangem vários pontos de extremidade (por meio da propagação de ID de atividade).  
   
  Esses três mecanismos (atividades, transferências e propagação) podem ajudá-lo a localizar a causa raiz de um erro mais rapidamente usando a ferramenta do Visualizador de rastreamento de serviço. Para obter mais informações, consulte [usando o Visualizador de rastreamento de serviço para exibir rastreamentos correlacionados e solução de problemas](../diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md).  
@@ -62,6 +65,7 @@ Este exemplo demonstra como habilitar o rastreamento e o log de mensagens. Os ra
  Para obter mais informações sobre o rastreamento de atividade definido pelo usuário, consulte o exemplo de [rastreamento de extensão](extending-tracing.md) .  
   
 ## <a name="message-logging"></a>Registro em log de mensagens  
+
  O log de mensagens pode ser habilitado no cliente e no serviço de qualquer aplicativo WCF. Para habilitar o log de mensagens, você deve adicionar o seguinte código ao cliente ou ao serviço:  
   
 ```xml  
@@ -136,4 +140,4 @@ Este exemplo demonstra como habilitar o rastreamento e o log de mensagens. Os ra
 ## <a name="see-also"></a>Veja também
 
 - [Rastreamento](../diagnostics/tracing/index.md)
-- [AppFabric que monitora Exemplos](https://docs.microsoft.com/previous-versions/appfabric/ff383407(v=azure.10))
+- [AppFabric que monitora Exemplos](/previous-versions/appfabric/ff383407(v=azure.10))

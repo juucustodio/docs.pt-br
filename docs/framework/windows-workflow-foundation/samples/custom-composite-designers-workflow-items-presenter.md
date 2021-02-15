@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: designers compostos personalizados-apresentador de itens de fluxo de trabalho'
 title: Designer de compostos personalizados - apresentador de itens de fluxo de trabalho
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 70055c4b-1173-47a3-be80-b5bce6f59e9a
-ms.openlocfilehash: 081dce85946fab85cff474508c46770c762b9e76
-ms.sourcegitcommit: 30a558d23e3ac5a52071121a52c305c85fe15726
+ms.openlocfilehash: 07970763e12eccd981370f1241642cc28f675824
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75338720"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99792577"
 ---
 # <a name="custom-composite-designers---workflow-items-presenter"></a>Designer de compostos personalizados - apresentador de itens de fluxo de trabalho
 
@@ -26,9 +27,9 @@ Este exemplo demonstra:
 
 ## <a name="set-up-build-and-run-the-sample"></a>Configurar, compilar e executar o exemplo
 
-1. Abra a solução de exemplo **UsingWorkflowItemsPresenter. sln** para C# o ou para Visual Basic no Visual Studio 2010.
+1. Abra a solução de exemplo **UsingWorkflowItemsPresenter. sln** para C# ou para Visual Basic no Visual Studio 2010.
 
-2. Criar e executar a solução.
+2. Compile e execute a solução.
 
    Um aplicativo de designer de fluxo de trabalho rehospedado é aberto e você pode arrastar atividades para a tela.
 
@@ -157,11 +158,11 @@ O código para esse exemplo mostra o seguinte:
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Se esse diretório não existir, vá para [Windows Communication Foundation (WCF) e exemplos de Windows Workflow Foundation (WF) para .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) para baixar todas as Windows Communication Foundation (WCF) e [!INCLUDE[wf1](../../../../includes/wf1-md.md)] amostras. Este exemplo está localizado no seguinte diretório.
+> Se esse diretório não existir, vá para [Windows Communication Foundation (WCF) e exemplos de Windows Workflow Foundation (WF) para .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) para baixar todos os Windows Communication Foundation (WCF) e [!INCLUDE[wf1](../../../../includes/wf1-md.md)] exemplos. Este exemplo está localizado no seguinte diretório.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Basic\CustomActivities\CustomActivityDesigners\WorkflowItemsPresenter`
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Activities.Presentation.WorkflowItemsPresenter>
 - [Desenvolvendo aplicativos com o Designer de Fluxo de Trabalho](/visualstudio/workflow-designer/developing-applications-with-the-workflow-designer)

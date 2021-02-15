@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: palavras-chave como nomes de elemento no código (Visual Basic)'
 title: Palavras-chave como nomes de elemento no código
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,14 +8,15 @@ helpviewer_keywords:
 - name conflicts [Visual Basic]
 - element names [Visual Basic], in code
 ms.assetid: 2e4e8e02-23f7-49b9-a1c8-2b0402b6b525
-ms.openlocfilehash: a98f0b027700717b414d58e1284ddec655eb25f7
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 4782c0f3ea065e3e140d449575c187cf2254cd08
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403220"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100433206"
 ---
 # <a name="keywords-as-element-names-in-code-visual-basic"></a>Palavras-chave como nomes de elemento em código (Visual Basic)
+
 Qualquer elemento Program, como uma variável, uma classe ou um membro, pode ter o mesmo nome que uma palavra-chave restrita. Por exemplo, você pode criar uma variável chamada `Loop` . No entanto, para se referir à sua versão dele — que tem o mesmo nome que a `Loop` palavra-chave Restricted — você deve precedê-la com uma cadeia de caracteres de qualificação completa ou colocá-la entre colchetes ( `[ ]` ), como mostra o exemplo a seguir.  
   
  [!code-vb[VbVbcnConventions#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnConventions/VB/Class1.vb#8)]  
@@ -30,7 +32,7 @@ Qualquer elemento Program, como uma variável, uma classe ou um membro, pode ter
 > [!NOTE]
 > Seu programa também pode incluir nomes de elementos fornecidos por outros assemblies referenciados. Se esses nomes entrarem em conflito com palavras-chave restritas, colocar colchetes em relação a eles fará com que Visual Basic interpretá-los como seus elementos definidos.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Convenções de nomenclatura do Visual Basic](naming-conventions.md)
 - [Estrutura do programa e convenções de código](program-structure-and-code-conventions.md)

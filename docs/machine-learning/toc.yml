@@ -45,6 +45,8 @@
           href: tutorials/image-classification.md
         - name: Previsão da demanda de aluguel de bicicletas (série temporal)
           href: tutorials/time-series-demand-forecasting.md
+        - name: Picos de volume de chamada (detecção de anomalias)
+          href: tutorials/phone-calls-anomaly-detection.md
         - name: Análise de vendas do produto (detecção de anomalias)
           href: tutorials/sales-anomaly-detection.md
         - name: Detectar objetos em imagens (detecção de objetos)
@@ -111,12 +113,14 @@
               href: how-to-guides/serve-model-serverless-azure-functions-ml-net.md
             - name: Implantar um modelo em uma API Web
               href: how-to-guides/serve-model-web-api-ml-net.md
+            - name: Consumir o modelo ONNX do Azure Machine Learning
+              href: /azure/machine-learning/how-to-use-automl-onnx-model-dotnet?toc=/dotnet/machine-learning/how-to-guides/toc.json&bc=/dotnet/machine-learning/how-to-guides/toc.json
 - name: Referência
   items:
     - name: Referência de API do ML.NET
-      href: 'https://docs.microsoft.com/dotnet/api/?view=ml-dotnet'
+      href: ../../api/index.md?view=ml-dotnet
     - name: Referência de API da versão prévia do ML.NET
-      href: 'https://docs.microsoft.com/dotnet/api/?view=ml-dotnet-preview'
+      href: ../../api/index.md?view=ml-dotnet-preview
     - name: Referência da CLI
       href: reference/ml-net-cli-reference.md
 - name: Recursos

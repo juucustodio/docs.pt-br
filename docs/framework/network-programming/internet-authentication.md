@@ -16,14 +16,15 @@ helpviewer_keywords:
 - NetworkCredential class, about NetworkCredential class
 - client authentication, classes for authentication
 ms.assetid: d342e87c-f672-4660-a513-41a2f2b80c4a
-ms.openlocfilehash: a1f0829aa0e9e4bcc68168b73443578c3a34310b
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 085ca27dd0cfedc90211b21c10cc8bc5cf1ecd21
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502373"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96241584"
 ---
 # <a name="internet-authentication"></a>Autenticação da Internet
+
 As classes <xref:System.Net> dão suporte a uma variedade de mecanismos de autenticação de cliente, incluindo os métodos de autenticação padrão de Internet básico, digest, negotiate, NTLM e a autenticação Kerberos, bem como métodos personalizados criados por você.  
   
  As credenciais de autenticação são armazenadas nas classes <xref:System.Net.NetworkCredential> e <xref:System.Net.CredentialCache> que implementam a interface <xref:System.Net.ICredentials>. Quando uma dessas classes é consultada para credenciais, ela retorna uma instância da classe **NetworkCredential**. O processo de autenticação é gerenciado pela classe <xref:System.Net.AuthenticationManager> e o processo de autenticação real é executado por uma classe de módulo de autenticação que implementa a interface <xref:System.Net.IAuthenticationModule>. Você deve registrar um módulo de autenticação personalizado com o **AuthenticationManager** antes que ele possa ser usado; módulos para métodos de autenticação básica, digest, negotiate, NTLM e Kerberos são registrados por padrão.  
@@ -40,8 +41,8 @@ As classes <xref:System.Net> dão suporte a uma variedade de mecanismos de auten
   
  Alguns esquemas de autenticação podem autenticar um usuário sem primeiro fazer uma solicitação para um recurso. Um aplicativo pode economizar tempo pré-autenticando o usuário com o recurso, eliminando assim pelo menos uma viagem de ida e volta ao servidor. Ou então, pode executar a autenticação durante a inicialização de programa a fim de ser mais responsivo para o usuário mais tarde. Esquemas de autenticação que podem usar pré-autenticação definem a propriedade <xref:System.Net.IAuthenticationModule.PreAuthenticate%2A> como **true**.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-- [Autenticação básica e resumida](basic-and-digest-authentication.md)
+- [Autenticação Básica e Digest](basic-and-digest-authentication.md)
 - [Autenticação NTLM e Kerberos](ntlm-and-kerberos-authentication.md)
 - [Segurança na programação de rede](security-in-network-programming.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como consultar instâncias não persistentes'
 title: 'Como: consultar para instâncias não persistentes'
 ms.date: 03/30/2017
 ms.assetid: 294019b1-c1a7-4b81-a14f-b47c106cd723
-ms.openlocfilehash: 87b29ce6a5858872929cea4408d0d7bcc1b378d1
-ms.sourcegitcommit: 9b1ac36b6c80176fd4e20eb5bfcbd9d56c3264cf
+ms.openlocfilehash: 2cef64f97b32c5f1d31fa078200bc2fe15179485
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67425312"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99777652"
 ---
 # <a name="how-to-query-for-non-persisted-instances"></a>Como: consultar para instâncias não persistentes
 
@@ -21,11 +22,11 @@ As instâncias duráveis de serviço que não são mantidas ainda permanece em u
 
 - A instância apresentou uma exceção não tratada antes que persistiu pela primeira vez. Os seguintes cenários ocorrem
 
-  - Se o valor da **UnhandledExceptionAction** estiver definida como **abandonar**, as informações de implantação do serviço são escritas para o armazenamento de instância e a instância é descarregada da memória. A instância permanece no estado não persistente na base de dados de persistência.
+  - Se o valor da propriedade **UnhandledExceptionAction** for definido como **abandono**, as informações de implantação de serviço serão gravadas no repositório de instância e a instância será descarregada da memória. A instância permanece no estado não persistente na base de dados de persistência.
 
-  - Se o valor da **UnhandledExceptionAction** estiver definida como **AbandonAndSuspend**, as informações de implantação do serviço são gravadas no banco de dados de persistência e o estado da instância é definido como  **Suspenso**. A instância não pode ser continuada, cancelado, ou encerrado. O host serviço não pode carregar a instância porque a instância não persistiu ainda e, portanto a entrada de base de dados para a instância não concluída.
+  - Se o valor da propriedade **UnhandledExceptionAction** for definido como **AbandonAndSuspend**, as informações de implantação do serviço serão gravadas no banco de dados de persistência e o estado da instância será definido como **suspenso**. A instância não pode ser continuada, cancelado, ou encerrado. O host serviço não pode carregar a instância porque a instância não persistiu ainda e, portanto a entrada de base de dados para a instância não concluída.
 
-  - Se o valor da **UnhandledExceptionAction** estiver definida como **Cancelar** ou **Terminate**, as informações de implantação do serviço são gravadas para o armazenamento de instância e o estado da instância é definido como **concluído**.
+  - Se o valor da propriedade **UnhandledExceptionAction** for definido como **Cancelar** ou **terminar**, as informações de implantação do serviço serão gravadas no repositório de instância e o estado da instância será definido como **concluído**.
 
 As seções a seguir fornecem consultas de exemplo para localizar ocorrências são mantidas na base de dados do SQL e para excluir essas instâncias de base de dados.
 
@@ -38,6 +39,7 @@ select InstanceId, CreationTime from [System.Activities.DurableInstancing].[Inst
 ```
 
 ## <a name="to-find-all-instances-not-persisted-yet-and-also-not-loaded"></a>Para localizar todas as instâncias não persistentes ainda e também não carregadas
+
  Os seguintes tempo de identificação e de criação de retornos de consulta SQL para todas as instâncias que não são mantidas e também não são carregadas.
 
 ```sql
@@ -56,7 +58,7 @@ select InstanceId, CreationTime, SuspensionReason, SuspensionExceptionName from 
 
 Você deve periodicamente verificar o armazenamento de instância para instâncias são persistentes e remover as instâncias da instância se você tiver certeza que a instância não receberá uma mensagem correlacionada. Por exemplo, se a instância foi na base de dados por vários meses e você souber que o fluxo de trabalho normalmente tem um tempo de vida de alguns dias, seria seguro suponha que esta é uma instância não inicializado que falhasse.
 
-Geralmente, é seguro as instâncias não atributos que não são suspensas ou não são carregadas. Você não deve excluir **todos os** as instâncias são persistentes porque esse conjunto de instância inclui instâncias que acabou de criar, mas não são mantidas ainda. Você deve apenas excluir as instâncias são persistentes que são deixadas sobre como o host serviço de fluxo de trabalho que tinha a instância carregada causou uma exceção ou a própria instância causou uma exceção.
+Geralmente, é seguro as instâncias não atributos que não são suspensas ou não são carregadas. Você não deve excluir **todas** as instâncias não persistentes porque esse conjunto de instâncias inclui instâncias que acabamos de serem criadas, mas que ainda não persistiram. Você deve apenas excluir as instâncias são persistentes que são deixadas sobre como o host serviço de fluxo de trabalho que tinha a instância carregada causou uma exceção ou a própria instância causou uma exceção.
 
 > [!WARNING]
 > Excluindo instâncias são persistentes da instância diminui o tamanho de armazenamento e pode melhorar o desempenho de operações de armazenamento.

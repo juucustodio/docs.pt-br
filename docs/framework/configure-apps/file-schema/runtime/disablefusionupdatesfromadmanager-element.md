@@ -1,31 +1,34 @@
 ---
+description: 'Saiba mais sobre: <disableFusionUpdatesFromADManager> elemento'
 title: Elemento <disableFusionUpdatesFromADManager>
 ms.date: 03/30/2017
 helpviewer_keywords:
 - disableFusionUpdatesFromADManager element
 - <disableFusionUpdatesFromADManager> element
 ms.assetid: 58d2866c-37bd-4ffa-abaf-ff35926a2939
-ms.openlocfilehash: 4e7375fddaa98b45766b29d911d555f773edcafa
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: c3b5758a12fc78c67ec0a4a9631361808724e72a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73117451"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787078"
 ---
 # <a name="disablefusionupdatesfromadmanager-element"></a>Elemento \<disableFusionUpdatesFromADManager>
+
 Especifica se o comportamento padrão, que é permitir que o host de runtime substitua as definições de configuração de um domínio de aplicativo, está desabilitado.  
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<disableFusionUpdatesFromADManager>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <disableFusionUpdatesFromADManager enabled="0|1"/>  
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -42,6 +45,7 @@ Especifica se o comportamento padrão, que é permitir que o host de runtime sub
 |1|Desabilite a capacidade de substituir as configurações de fusão. Isso reverte para o comportamento de versões anteriores do .NET Framework.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -52,6 +56,7 @@ Especifica se o comportamento padrão, que é permitir que o host de runtime sub
 |`runtime`|Contém informações sobre associação do assembly e coleta de lixo.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Começando com o .NET Framework 4, o comportamento padrão é permitir que o <xref:System.AppDomainManager> objeto substitua as definições de configuração usando a <xref:System.AppDomainSetup.ConfigurationFile%2A> propriedade ou o <xref:System.AppDomainSetup.SetConfigurationBytes%2A> método do <xref:System.AppDomainSetup> objeto que é passado para sua implementação do <xref:System.AppDomainManager.InitializeNewDomain%2A?displayProperty=nameWithType> método, em sua subclasse de <xref:System.AppDomainManager> . Para o domínio de aplicativo padrão, as configurações alteradas substituem as configurações que foram especificadas pelo arquivo de configuração do aplicativo. Para outros domínios de aplicativo, eles substituem as definições de configuração que foram passadas para o <xref:System.AppDomainManager.CreateDomain%2A?displayProperty=nameWithType> <xref:System.AppDomain.CreateDomain%2A?displayProperty=nameWithType> método ou.  
   
  Você pode passar novas informações de configuração ou passar NULL ( `Nothing` em Visual Basic) para eliminar informações de configuração que foram passadas.  
@@ -63,6 +68,7 @@ Especifica se o comportamento padrão, que é permitir que o host de runtime sub
  Como alternativa ao uso do `<disableFusionUpdatesFromADManager>` elemento, você pode desabilitar o comportamento padrão criando uma configuração do registro ou definindo uma variável de ambiente. No registro, crie um valor DWORD chamado `COMPLUS_disableFusionUpdatesFromADManager` em `HKCU\Software\Microsoft\.NETFramework` ou `HKLM\Software\Microsoft\.NETFramework` e defina o valor como 1. Na linha de comando, defina a variável de ambiente `COMPLUS_disableFusionUpdatesFromADManager` como 1.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir mostra como desabilitar a capacidade de substituir as configurações de fusão usando o `<disableFusionUpdatesFromADManager>` elemento.  
   
 ```xml  
@@ -73,8 +79,8 @@ Especifica se o comportamento padrão, que é permitir que o host de runtime sub
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Esquema de configurações do runtime](index.md)
-- [Esquema de arquivos de configuração](../index.md)
+- [Esquema do arquivo de configuração](../index.md)
 - [Como o runtime localiza assemblies](../../../deployment/how-the-runtime-locates-assemblies.md)

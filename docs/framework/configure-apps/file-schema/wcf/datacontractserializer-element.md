@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <dataContractSerializer>'
 title: <dataContractSerializer>
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -7,14 +8,15 @@ helpviewer_keywords:
 - DataContractSerializer
 - KnownTypes
 ms.assetid: f41fb4d5-24e7-4059-8010-286a30bfea93
-ms.openlocfilehash: e24dae47171f741af064ca2eaa822928690acf6e
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 0705a40f55d76ef46a7debcd4ecfb5235c7c0d21
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70400446"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754427"
 ---
 # \<dataContractSerializer>
+
 Contém dados de configuração para o <xref:System.Runtime.Serialization.DataContractSerializer> . Esse elemento ocorre em duas hierarquias diferentes. Uma é listada na seção hierarquia de esquema a seguir e a outra é listada na seção comentários.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -24,7 +26,7 @@ Contém dados de configuração para o <xref:System.Runtime.Serialization.DataCo
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-servicebehaviors.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<dataContractSerializer>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <dataContractSerializer ignoreExtensionDataObject="Boolean"
@@ -32,6 +34,7 @@ Contém dados de configuração para o <xref:System.Runtime.Serialization.DataCo
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -42,6 +45,7 @@ Contém dados de configuração para o <xref:System.Runtime.Serialization.DataCo
 |maxItemsInObjectGraph|Um inteiro que especifica o número máximo de itens a serem serializados ou desserializados. Esse atributo é 65536.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -52,6 +56,7 @@ Contém dados de configuração para o <xref:System.Runtime.Serialization.DataCo
 |[\<system.runtime.serialization>](system-runtime-serialization.md)|Representa o elemento raiz da <xref:System.Runtime.Serialization> seção namespace e contém elementos para definir as opções do <xref:System.Runtime.Serialization.DataContractSerializer> .|  
   
 ## <a name="remarks"></a>Comentários  
+
  Conforme indicado na introdução deste tópico, esta é a segunda hierarquia na qual o \<X509Extension> elemento ocorre.  
   
  [\<system.runtime.serialization>](system-runtime-serialization.md)  
@@ -60,10 +65,10 @@ Contém dados de configuração para o <xref:System.Runtime.Serialization.DataCo
   
  Para obter mais informações sobre tipos conhecidos, consulte <xref:System.Runtime.Serialization.DataContractSerializer> .  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>
 - <xref:System.ServiceModel.Configuration.DataContractSerializerElement>
-- [Tipos conhecidos de contrato de dados](../../../wcf/feature-details/data-contract-known-types.md)
+- [Tipos de contratos de dados conhecidos](../../../wcf/feature-details/data-contract-known-types.md)
 - [Serialização e transferência de dados](../../../wcf/feature-details/data-transfer-and-serialization.md)

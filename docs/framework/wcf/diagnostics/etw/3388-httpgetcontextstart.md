@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 3388-HttpGetContextStart'
 title: 3388 - HttpGetContextStart
 ms.date: 03/30/2017
 ms.assetid: def9b441-9bb2-4bc0-a4b3-4db07b80b557
-ms.openlocfilehash: 9d8fbd9625e73722f03cd44bc83c34324575e861
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 33facb1843c195f39758dcd6b4d8e0e36a8b4e2c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61753394"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99727775"
 ---
 # <a name="3388---httpgetcontextstart"></a>3388 - HttpGetContextStart
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,9 +22,11 @@ ms.locfileid: "61753394"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido no início kontextu HttpGetContext.  
+
+ Esse evento é emitido no início do HttpGetContext.  
   
 ## <a name="message"></a>Mensagem  
- Zahájení kontextu HttpGetContext  
+
+ HttpGetContext iniciar.  
   
 ## <a name="details"></a>Detalhes

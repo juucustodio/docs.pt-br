@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugDataTarget2'
 title: Interface ICorDebugDataTarget2
 ms.date: 03/30/2017
 ms.assetid: 13f11388-2f91-48d8-98d6-6a4a63cb5746
-ms.openlocfilehash: 1c598d23cac77e50cf302e6936b88b5eb6e558c2
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: 13a83ee99f0158f32f466f9ae29af3d917248f95
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976428"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710459"
 ---
 # <a name="icordebugdatatarget2-interface"></a>Interface ICorDebugDataTarget2
+
 Estende logicamente a interface [ICorDebugDataTarget](icordebugdatatarget-interface.md).  
   
 ## <a name="methods"></a>Métodos  
@@ -28,6 +30,7 @@ Estende logicamente a interface [ICorDebugDataTarget](icordebugdatatarget-interf
 > Essa interface está disponível somente com .NET Native. Se você implementar essa interface para cenários ICorDebug fora do .NET Native, o Common Language Runtime ignorará essa interface.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

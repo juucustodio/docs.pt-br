@@ -1,19 +1,19 @@
 ---
-title: Como criar certificados temporários para uso durante o desenvolvimento
+title: 'Como: criar certificados temporários para uso durante o desenvolvimento'
 description: Saiba como usar um cmdlet do PowerShell para criar dois certificados X. 509 temporários para uso no desenvolvimento de um cliente ou serviço WCF seguro.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - certificates [WCF], creating temporary certificates
 - temporary certificates [WCF]
 ms.assetid: bc5f6637-5513-4d27-99bb-51aad7741e4a
-ms.openlocfilehash: 0a21548386639a9f6a8c8572e5d7928ffdb270d6
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: a249f0de00c45b1588762ffa0f826e890f961334
+ms.sourcegitcommit: 97405ed212f69b0a32faa66a5d5fae7e76628b68
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85247033"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91607766"
 ---
-# <a name="how-to-create-temporary-certificates-for-use-during-development"></a>Como criar certificados temporários para uso durante o desenvolvimento
+# <a name="how-to-create-temporary-certificates-for-use-during-development"></a>Como: criar certificados temporários para uso durante o desenvolvimento
 
 Ao desenvolver um serviço ou cliente seguro usando Windows Communication Foundation (WCF), geralmente é necessário fornecer um certificado X. 509 para ser usado como uma credencial. O certificado normalmente faz parte de uma cadeia de certificados com uma autoridade raiz encontrada no repositório de autoridades de certificação raiz confiáveis do computador. Ter uma cadeia de certificados permite que você defina o escopo de um conjunto de certificados em que normalmente a autoridade raiz é de sua organização ou unidade de negócios. Para emular isso no momento do desenvolvimento, você pode criar dois certificados para atender aos requisitos de segurança. O primeiro é um certificado autoassinado que é colocado no repositório de autoridades de certificação raiz confiáveis e o segundo certificado é criado a partir do primeiro e é colocado no repositório pessoal do local do computador local ou no repositório pessoal do local do usuário atual. Este tópico percorre as etapas para criar esses dois certificados usando o cmdlet [New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate) do PowerShell.
 
@@ -22,7 +22,7 @@ Ao desenvolver um serviço ou cliente seguro usando Windows Communication Founda
 >
 > Por padrão, o cmdlet [New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate) cria certificados que são autoassinados e esses certificados são inseguros. Colocar os certificados autoassinados no repositório de autoridades de certificação raiz confiáveis permite que você crie um ambiente de desenvolvimento que simula mais de forma mais minuciosa seu ambiente de implantação.
 
- Para obter mais informações sobre como criar e usar certificados, consulte [trabalhando com certificados](working-with-certificates.md). Para obter mais informações sobre como usar um certificado como uma credencial, consulte [protegendo serviços e clientes](securing-services-and-clients.md). Para obter um tutorial sobre como usar a tecnologia Authenticode da Microsoft, consulte [visões gerais e tutoriais do Authenticode](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537360(v=vs.85)).
+ Para obter mais informações sobre como criar e usar certificados, consulte [trabalhando com certificados](working-with-certificates.md). Para obter mais informações sobre como usar um certificado como uma credencial, consulte [protegendo serviços e clientes](securing-services-and-clients.md). Para obter um tutorial sobre como usar a tecnologia Authenticode da Microsoft, consulte [visões gerais e tutoriais do Authenticode](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537360(v=vs.85)).
 
 ## <a name="to-create-a-self-signed-root-authority-certificate-and-export-the-private-key"></a>Para criar um certificado de autoridade raiz autoassinado e exportar a chave privada
 
@@ -113,8 +113,8 @@ Para obter mais informações sobre como usar certificados no WCF, consulte [tra
 
 Certifique-se de excluir qualquer certificado de autoridade raiz temporário das **autoridades de certificação raiz confiáveis** e pastas **pessoais** clicando com o botão direito do mouse no certificado e clicando em **excluir**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Trabalhando com certificados](working-with-certificates.md)
-- [Como exibir certificados com o snap-in do MMC](how-to-view-certificates-with-the-mmc-snap-in.md)
+- [Como: exibir certificados com o snap-in do MMC](how-to-view-certificates-with-the-mmc-snap-in.md)
 - [Protegendo serviços e clientes](securing-services-and-clients.md)

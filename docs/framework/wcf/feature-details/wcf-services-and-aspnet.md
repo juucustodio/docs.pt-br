@@ -3,12 +3,12 @@ title: Serviços WCF e ASP.NET
 description: Saiba como hospedar serviços WCF lado a lado com o ASP.NET e hospedá-los no modo de compatibilidade ASP.NET.
 ms.date: 03/30/2017
 ms.assetid: b980496a-f0b0-4319-8e55-a0f0fa32da70
-ms.openlocfilehash: 1d7401f6a326bc50923123acf803e26ce8238415
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 765a509f94a0a934cdbbf0212cfc1d4053d29f9c
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85246409"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90553311"
 ---
 # <a name="wcf-services-and-aspnet"></a>Serviços WCF e ASP.NET
 
@@ -30,7 +30,7 @@ Os resultados do modelo lado a lado são os seguintes:
 
 - Dentro de um AppDomain, os recursos implementados pelo tempo de execução HTTP se aplicam ao conteúdo ASP.NET, mas não ao WCF. Muitos recursos específicos de HTTP da plataforma de aplicativo ASP.NET não se aplicam aos serviços WCF hospedados dentro de um AppDomain que contém conteúdo ASP.NET. Exemplos desses recursos incluem o seguinte:
 
-  - HttpContext: <xref:System.Web.HttpContext.Current%2A> é sempre `null` quando acessado de dentro de um serviço WCF. Use <xref:System.ServiceModel.Channels.RequestContext> em vez disso.
+  - HttpContext: <xref:System.Web.HttpContext.Current%2A> é sempre `null` quando acessado de dentro de um serviço WCF. Use <xref:System.ServiceModel.Channels.RequestContext> em seu lugar.
 
   - Autorização baseada em arquivo: o modelo de segurança do WCF não permite a ACL (lista de controle de acesso) aplicada ao arquivo. svc do serviço ao decidir se uma solicitação de serviço está autorizada.
 
@@ -44,11 +44,11 @@ Essas restrições se aplicam somente aos serviços WCF hospedados no aplicativo
 
 Os aplicativos WCF que exigem funcionalidade tradicionalmente fornecidas pelo pipeline HTTP devem considerar o uso de equivalentes do WCF, que são independentes de host e transporte:
 
-- <xref:System.ServiceModel.OperationContext>em vez de <xref:System.Web.HttpContext> .
+- <xref:System.ServiceModel.OperationContext> em vez de <xref:System.Web.HttpContext> .
 
-- <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>em vez de ASP. Autorização de arquivo/URL da rede.
+- <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior> em vez de ASP. Autorização de arquivo/URL da rede.
 
-- <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector>ou canais em camadas personalizados em vez de módulos HTTP.
+- <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector> ou canais em camadas personalizados em vez de módulos HTTP.
 
 - Representação para cada operação usando o WCF em vez da representação de System. Web.
 
@@ -66,7 +66,7 @@ Diferentemente da configuração lado a lado padrão, em que a infraestrutura de
 
 - Autorização de URL configurável: ASP. As regras de autorização de URL da rede são impostas para solicitações do WCF quando o serviço WCF está sendo executado no modo de compatibilidade do ASP.NET.
 
-- <xref:System.Web.HttpModuleCollection>extensibilidade: como os serviços WCF em execução no modo de compatibilidade ASP.NET participam totalmente do ciclo de vida da solicitação HTTP ASP.NET, qualquer módulo HTTP configurado no pipeline HTTP é capaz de operar em solicitações do WCF antes e depois da invocação de serviço.
+- <xref:System.Web.HttpModuleCollection> extensibilidade: como os serviços WCF em execução no modo de compatibilidade ASP.NET participam totalmente do ciclo de vida da solicitação HTTP ASP.NET, qualquer módulo HTTP configurado no pipeline HTTP é capaz de operar em solicitações do WCF antes e depois da invocação de serviço.
 
 - Representação ASP.NET: os serviços WCF são executados usando a identidade atual do thread ASP.NET representado, que pode ser diferente da identidade do processo do IIS se a representação do ASP.NET tiver sido habilitada para o aplicativo. Se a representação de ASP.NET e a representação do WCF estiverem ambas habilitadas para uma operação de serviço específica, a implementação do serviço será executada por fim usando a identidade obtida do WCF.
 
@@ -90,7 +90,7 @@ public class CalculatorService : ICalculatorSession
 
 A tabela a seguir ilustra como a configuração do modo de compatibilidade em todo o aplicativo interage com o nível de suporte indicado do serviço individual:
 
-|Configuração do modo de compatibilidade em todo o aplicativo|[AspNetCompatibilityRequirementsMode]<br /><br /> Configuração|Resultado observado|
+|Configuração do modo de compatibilidade em todo o aplicativo|[AspNetCompatibilityRequirementsMode]<br /><br /> Setting|Resultado observado|
 |--------------------------------------------------|---------------------------------------------------------|---------------------|
 |aspNetCompatibilityEnabled = " `true` "|<xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode.Required>|O serviço é ativado com êxito.|
 |aspNetCompatibilityEnabled = " `true` "|<xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode.Allowed>|O serviço é ativado com êxito.|
@@ -104,7 +104,7 @@ A tabela a seguir ilustra como a configuração do modo de compatibilidade em to
 
 Para obter mais informações sobre como habilitar o modo de compatibilidade ASP.NET para serviços WCF, consulte <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode> e o exemplo de [compatibilidade ASP.net](../samples/aspnet-compatibility.md) .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute>
-- [Recursos de hospedagem do Windows Server AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))
+- [Recursos de hospedagem do Windows Server AppFabric](/previous-versions/appfabric/ee677189(v=azure.10))

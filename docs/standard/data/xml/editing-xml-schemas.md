@@ -1,18 +1,18 @@
 ---
+description: 'Saiba mais sobre: editando esquemas XML'
 title: Esquemas XML de edição
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 - cpp
 ms.assetid: fa09c8e5-c2b9-49d2-bb0d-40330cd13e4d
-ms.openlocfilehash: b309c390ede3afc38122188337fa0dc3336e3ad5
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 19f757f537281b16d30dfc831e0dc8f0f4735987
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84292053"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783333"
 ---
 # <a name="editing-xml-schemas"></a>Esquemas XML de edição
 
@@ -135,7 +135,7 @@ A seguir, o esquema modificado de cliente criado no tópico [Compilar esquemas X
 </xs:schema>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral do modelo de objeto de esquema XML](xml-schema-object-model-overview.md)
 - [Lendo e gravando esquemas XML](reading-and-writing-xml-schemas.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: _CorDllMain função'
 title: Função _CorDllMain
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: bc7b51cf-39d3-48ec-a5cb-2f179fbefff8
 topic_type:
 - apiref
-ms.openlocfilehash: 3b2322f708afed08172f87e843c225aa9c60d9d3
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 442afae3a627eb684a86c02fbc6e546aa804b7a5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616598"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99717141"
 ---
 # <a name="_cordllmain-function"></a>\_Função CorDllMain
 
@@ -36,6 +37,7 @@ BOOL STDMETHODCALLTYPE _CorDllMain (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `hInst`  
  no O identificador de instância do módulo carregado.  
   
@@ -46,9 +48,11 @@ BOOL STDMETHODCALLTYPE _CorDllMain (
  no Não utilizado.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  Esse método retorna `true` para êxito e `false` se ocorre um erro.  
   
 ## <a name="remarks"></a>Comentários  
+
  Essa função é chamada pelo carregador do sistema operacional para assemblies DLL. Para assemblies executáveis, o carregador chama a função [ \_ CorExeMain](corexemain-function.md) em vez disso.  
   
  O carregador do sistema operacional chama esse método, independentemente do ponto de entrada especificado no arquivo DLL.  
@@ -63,10 +67,10 @@ A `_CorDllMain` função é chamada diretamente pelo carregador do sistema opera
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Incluído como um recurso em MsCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Funções estáticas globais de metadados](../metadata/metadata-global-static-functions.md)

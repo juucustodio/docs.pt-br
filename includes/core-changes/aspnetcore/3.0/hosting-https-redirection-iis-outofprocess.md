@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: eb3fa768a491f6c0ff4b15479beabd71b0670338
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75937289"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96032238"
 ---
 ### <a name="hosting-https-redirection-enabled-for-iis-out-of-process-apps"></a>Hospedagem: redirecionamento de HTTPS habilitado para aplicativos fora do processo do IIS
 
@@ -14,7 +14,7 @@ Para obter uma discussão, consulte [dotnet/AspNetCore # 15243](https://github.c
 
 #### <a name="version-introduced"></a>Versão introduzida
 
-3,0
+3.0
 
 #### <a name="old-behavior"></a>Comportamento antigo
 

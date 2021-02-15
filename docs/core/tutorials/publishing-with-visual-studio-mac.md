@@ -1,27 +1,27 @@
 ---
-title: Publicar um aplicativo de console do .NET Core usando Visual Studio para Mac
-description: A publicação cria o conjunto de arquivos necessários para executar um aplicativo .NET Core.
-ms.date: 06/08/2020
-ms.openlocfilehash: ec6b867f145ffdea491187de3745149f2cebd8dd
-ms.sourcegitcommit: b9122d1af21898eaba81e990c70fef46fef74a8d
+title: Publicar um aplicativo de console .NET usando Visual Studio para Mac
+description: Saiba como usar Visual Studio para Mac para criar o conjunto de arquivos que são necessários para executar um aplicativo .NET.
+ms.date: 11/30/2020
+ms.openlocfilehash: 88f143011b19ca8eda6610803c894e619d06a635
+ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88867536"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96599174"
 ---
-# <a name="tutorial-publish-a-net-core-console-application-using-visual-studio-for-mac"></a>Tutorial: publicar um aplicativo de console do .NET Core usando Visual Studio para Mac
+# <a name="tutorial-publish-a-net-console-application-using-visual-studio-for-mac"></a>Tutorial: publicar um aplicativo de console .NET usando o Visual Studio para Mac
 
 Este tutorial mostra como publicar um aplicativo de console para que outros usuários possam executá-lo. A publicação cria o conjunto de arquivos necessários para executar seu aplicativo. Para implantar os arquivos, copie-os para o computador de destino.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- Este tutorial funciona com o aplicativo de console que você cria em [criar um aplicativo de console do .NET Core usando Visual Studio para Mac](with-visual-studio-mac.md).
+- Este tutorial funciona com o aplicativo de console que você cria em [criar um aplicativo de console .NET usando Visual Studio para Mac](with-visual-studio-mac.md).
 
 ## <a name="publish-the-app"></a>Publicar o aplicativo
 
 1. Iniciar Visual Studio para Mac.
 
-1. Abra o projeto HelloWorld que você criou em [criar um aplicativo de console .NET Core usando Visual Studio para Mac](with-visual-studio-mac.md).
+1. Abra o projeto HelloWorld que você criou em [criar um aplicativo de console .NET usando Visual Studio para Mac](with-visual-studio-mac.md).
 
 1. Certifique-se de que o Visual Studio esteja compilando a versão de lançamento de seu aplicativo. Se necessário, altere a configuração de build na barra de ferramentas de **Depuração** para **Lançamento**.
 
@@ -45,17 +45,17 @@ Este tutorial mostra como publicar um aplicativo de console para que outros usu�
 
 ## <a name="inspect-the-files"></a>Inspecionar os arquivos
 
-O processo de publicação cria uma implantação dependente de estrutura, que é um tipo de implantação em que o aplicativo publicado é executado em um computador que tem o tempo de execução do .NET Core instalado. Os usuários podem executar o aplicativo publicado executando o `dotnet HelloWorld.dll` comando em um prompt de comando.
+O processo de publicação cria uma implantação dependente de estrutura, que é um tipo de implantação em que o aplicativo publicado é executado em um computador que tem o tempo de execução do .NET instalado. Os usuários podem executar o aplicativo publicado executando o `dotnet HelloWorld.dll` comando em um prompt de comando.
 
 Como mostra a imagem anterior, a saída publicada inclui os seguintes arquivos:
 
 * *HelloWorld.deps.json*
 
-  Este é o arquivo de dependências de tempo de execução do aplicativo. Ele define os componentes do .NET Core e as bibliotecas (incluindo a biblioteca de vínculo dinâmico que contém seu aplicativo) necessárias para executar o aplicativo. Para obter mais informações, consulte [arquivos de configuração de tempo de execução](https://github.com/dotnet/cli/blob/85ca206d84633d658d7363894c4ea9d59e515c1a/Documentation/specs/runtime-configuration-file.md).
+  Este é o arquivo de dependências de tempo de execução do aplicativo. Ele define os componentes .NET e as bibliotecas (incluindo a biblioteca de vínculo dinâmico que contém seu aplicativo) necessárias para executar o aplicativo. Para obter mais informações, consulte [arquivos de configuração de tempo de execução](https://github.com/dotnet/cli/blob/85ca206d84633d658d7363894c4ea9d59e515c1a/Documentation/specs/runtime-configuration-file.md).
 
 * *HelloWorld.dll*
 
-   Esta é a versão de [implantação dependente de estrutura](../deploying/deploy-with-cli.md#framework-dependent-deployment) do aplicativo. Para executar essa biblioteca de vínculo dinâmico, digite `dotnet HelloWorld.dll` em um prompt de comando. Esse método de execução do aplicativo funciona em qualquer plataforma que tenha o tempo de execução do .NET Core instalado.
+   Esta é a versão de [implantação dependente de estrutura](../deploying/deploy-with-cli.md#framework-dependent-deployment) do aplicativo. Para executar essa biblioteca de vínculo dinâmico, digite `dotnet HelloWorld.dll` em um prompt de comando. Esse método de execução do aplicativo funciona em qualquer plataforma que tenha o tempo de execução do .NET instalado.
 
 * *HelloWorld.pdb* (opcional para implantação)
 
@@ -63,14 +63,14 @@ Como mostra a imagem anterior, a saída publicada inclui os seguintes arquivos:
 
 * *HelloWorld.runtimeconfig.json*
 
-   Este é o arquivo de configuração de tempo de execução do aplicativo. Identifica a versão do .NET Core com base na qual o aplicativo foi criado para ser executado. Você também pode adicionar opções de configuração a ela. Para obter mais informações, consulte [definições de configuração de tempo de execução do .NET Core](../run-time-config/index.md#runtimeconfigjson).
+   Este é o arquivo de configuração de tempo de execução do aplicativo. Ele identifica a versão do .NET na qual seu aplicativo foi criado para ser executado. Você também pode adicionar opções de configuração a ela. Para obter mais informações, consulte [definições de configuração de tempo de execução do .net](../run-time-config/index.md#runtimeconfigjson).
 
 ## <a name="run-the-published-app"></a>Executar o aplicativo publicado
 
 1. Abra um terminal e navegue até a pasta de *publicação* . Para fazer isso, insira `cd` e cole o caminho que você copiou anteriormente. Por exemplo:
 
    ```console
-   cd ~/Projects/HelloWorld/HelloWorld/bin/Release/netcoreapp3.1/publish/
+   cd ~/Projects/HelloWorld/HelloWorld/bin/Release/net5.0/publish/
    ```
 
 1. Execute o aplicativo usando o `dotnet` comando:
@@ -81,11 +81,11 @@ Como mostra a imagem anterior, a saída publicada inclui os seguintes arquivos:
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
-- [Implantação de aplicativo .NET Core](../deploying/index.md)
+- [Implantação de aplicativos .NET](../deploying/index.md)
 
 ## <a name="next-steps"></a>Próximas etapas
 
 Neste tutorial, você publicou um aplicativo de console. No próximo tutorial, você criará uma biblioteca de classes.
 
 > [!div class="nextstepaction"]
-> [Criar uma biblioteca de .NET Standard usando Visual Studio para Mac](library-with-visual-studio-mac.md)
+> [Criar uma biblioteca .NET usando Visual Studio para Mac](library-with-visual-studio-mac.md)

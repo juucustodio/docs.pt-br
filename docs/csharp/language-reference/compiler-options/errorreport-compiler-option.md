@@ -9,14 +9,15 @@ helpviewer_keywords:
 - errorreport compiler option [C#]
 - /errorreport compiler option [C#]
 ms.assetid: bd0e7493-b79d-4369-9c3f-ba26ebdfbedf
-ms.openlocfilehash: 5b3143f4da81ac693626778263c277e3a484c45e
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 6238ac392ff99d18d9cc7ea07e23b08ff235c14f
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125716"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "91173224"
 ---
 # <a name="-errorreport-c-compiler-options"></a>-errorreport (opções do compilador C#)
+
 Esta opção fornece uma maneira conveniente de relatar um erro interno do compilador do C# à Microsoft.
 
 > [!NOTE]
@@ -29,6 +30,7 @@ Esta opção fornece uma maneira conveniente de relatar um erro interno do compi
 ```
 
 ## <a name="arguments"></a>Argumentos
+
  **nenhum**  
  Relatórios sobre erros internos do compilador não serão coletados ou enviados à Microsoft.
 
@@ -39,6 +41,7 @@ Esta opção fornece uma maneira conveniente de relatar um erro interno do compi
  **Enviar** Envia automaticamente relatórios de erros de compilador interno à Microsoft. Para habilitar essa opção, primeiro você deve concordar com a política de coleta de dados da Microsoft. Na primeira vez que você especificar **-errorreport:send** em um computador, uma mensagem de compilador indicará um site que contém a política de coleta de dados da Microsoft.
 
 ## <a name="remarks"></a>Comentários
+
  Um ICE (erro interno do compilador) ocorre quando o compilador não pode processar um arquivo de código-fonte. Quando um ICE ocorre, o compilador não produz um arquivo de saída ou qualquer diagnóstico útil que você pode usar para corrigir o código.
 
  Em versões anteriores, quando você recebia um ICE, era incentivado a entrar em contato com o Microsoft Product Support Services para relatar o problema. Usando **-errorreport**, você pode fornecer informações do ICE à equipe do Visual C#. Os relatórios de erro podem ajudar a melhorar versões futuras do compilador.
@@ -59,4 +62,4 @@ Esta opção fornece uma maneira conveniente de relatar um erro interno do compi
 
 ## <a name="see-also"></a>Confira também
 
-- [Opções do compilador C#](./index.md)
+- [Opções do compilador de C#](./index.md)

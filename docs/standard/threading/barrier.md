@@ -1,19 +1,19 @@
 ---
+description: 'Saiba mais sobre: barreira'
 title: Barreira
 ms.date: 09/14/2018
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - synchronization primitives, Barrier
 ms.assetid: 613a8bc7-6a28-4795-bd6c-1abd9050478f
-ms.openlocfilehash: 5aa34f7f39f4b9b626bea29372cf984f3cefb361
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 7fca89e12ffe4575029e62ce042875dac286c81d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73138159"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675501"
 ---
 # <a name="barrier"></a>Barreira
 
@@ -52,7 +52,7 @@ Um <xref:System.Threading.Barrier?displayProperty=nameWithType> é um primitivo 
   
  Para obter mais informações, consulte [Encadeando tarefas com tarefas de continuação](../parallel-programming/chaining-tasks-by-using-continuation-tasks.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Objetos e recursos de threading](threading-objects-and-features.md)
-- [Como sincronizar operações simultâneas com uma barreira](how-to-synchronize-concurrent-operations-with-a-barrier.md)
+- [Como: sincronizar operações simultâneas com uma barreira](how-to-synchronize-concurrent-operations-with-a-barrier.md)

@@ -6,13 +6,13 @@ ms.author: daroth
 no-loc:
 - Blazor
 - WebAssembly
-ms.date: 09/11/2019
-ms.openlocfilehash: a5aae6cf02ccec84ac8642b6ce8d9c919755e868
-ms.sourcegitcommit: 0100be20fcf23f61dab672deced70059ed71bb2e
+ms.date: 11/20/2020
+ms.openlocfilehash: f1967dac0f46ba7cfefab62c5528dd1db8029514
+ms.sourcegitcommit: 2f485e721f7f34b87856a51181b5b56624b31fd5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88267562"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96509709"
 ---
 # <a name="an-introduction-to-no-locblazor-for-aspnet-web-forms-developers"></a>Uma introdução ao Blazor para ASP.NET Web Forms desenvolvedores
 
@@ -33,11 +33,11 @@ Quando o .NET e o ASP.NET Web Forms lançados pela primeira vez, o ecossistema d
 
 A maioria das estruturas da Web modernas agora também são de código-fonte aberto, o que tem vários benefícios. Os usuários não se comparam a um único proprietário de projeto para corrigir bugs e adicionar recursos. Os projetos de código-fonte aberto fornecem transparência aprimorada sobre o progresso do desenvolvimento e alterações futuras. Projetos de software livre aproveitam as contribuições de uma comunidade inteira e estimulam um ecossistema de código-fonte aberto de apoio. Apesar dos riscos de software livre, muitos consumidores e colaboradores encontraram atenuações adequadas que permitem aproveitar os benefícios de um ecossistema de software livre de maneira segura e razoável. Exemplos dessas atenuações incluem contratos de licença de colaborador, licenças amigáveis, exames de pedigree e bases de suporte.
 
-A Comunidade do .NET adotou o suporte de plataforma cruzada e o código-fonte aberto. O .NET Core é uma implementação de software livre e de plataforma cruzada do .NET que é executada em uma infinidade de plataformas, incluindo Windows, macOS e várias distribuições do Linux. O Xamarin fornece mono, uma versão de código aberto do .NET. O mono é executado no Android, no iOS e em uma variedade de outros fatores forma, incluindo inspeções e TVs inteligentes. A Microsoft anunciou que o [.NET 5](https://devblogs.microsoft.com/dotnet/introducing-net-5/) reconciliará o .NET Core e o mono em "um único tempo de execução e estrutura do .NET que pode ser usado em qualquer lugar e que tenha comportamentos de tempo de execução uniformes e experiências de desenvolvedor."
+A Comunidade do .NET adotou o suporte de plataforma cruzada e o código-fonte aberto. O .NET Core é uma implementação de software livre e de plataforma cruzada do .NET que é executada em uma infinidade de plataformas, incluindo Windows, macOS e várias distribuições do Linux. O Xamarin fornece mono, uma versão de código aberto do .NET. O mono é executado no Android, no iOS e em uma variedade de outros fatores forma, incluindo inspeções e TVs inteligentes. A Microsoft lançou o [.NET 5](https://devblogs.microsoft.com/dotnet/announcing-net-5-0/) que Reconciliava o .NET Core e o mono em "um único tempo de execução e estrutura do .NET que pode ser usado em qualquer lugar e que tenha comportamentos de tempo de execução uniformes e experiências de desenvolvedor."
 
 O ASP.NET Web Forms se beneficiar da mudança para o suporte de software livre e entre plataformas? A resposta, infelizmente, é não, ou pelo menos não na mesma extensão do restante da plataforma. Recentemente, a equipe do .NET [tornou claro](https://devblogs.microsoft.com/dotnet/net-core-is-the-future-of-net/) que ASP.NET Web Forms não serão portados para .NET Core ou .NET 5. Por quê?
 
-Houve esforços nos primórdios do .NET Core para a porta ASP.NET Web Forms. O número de alterações significativas necessárias foi considerado muito drástico. Há também uma admissão aqui que, mesmo para a Microsoft, há um limite para o número de estruturas da Web que ele pode dar suporte simultaneamente. Talvez alguém na Comunidade demore a causa da criação de uma versão de software livre e de várias plataformas do ASP.NET Web Forms. O [código-fonte para ASP.NET Web Forms](https://github.com/microsoft/referencesource) foi disponibilizado publicamente no formulário de referência. Mas, por enquanto, parece que ASP.NET Web Forms permanecerão somente Windows e sem um modelo de contribuição de código aberto. Se o suporte entre plataformas ou o código-fonte aberto se tornar importante para seus cenários, você precisará procurar algo novo.
+Houve esforços nos primórdios do .NET Core para a porta ASP.NET Web Forms. O número de alterações interruptivas necessárias foi considerado muito drástico. Há também uma admissão aqui que, mesmo para a Microsoft, há um limite para o número de estruturas da Web que ele pode dar suporte simultaneamente. Talvez alguém na Comunidade demore a causa da criação de uma versão de software livre e de várias plataformas do ASP.NET Web Forms. O [código-fonte para ASP.NET Web Forms](https://github.com/microsoft/referencesource) foi disponibilizado publicamente no formulário de referência. Mas, por enquanto, parece que ASP.NET Web Forms permanecerão somente Windows e sem um modelo de contribuição de código aberto. Se o suporte entre plataformas ou o código-fonte aberto se tornar importante para seus cenários, você precisará procurar algo novo.
 
 Isso significa que o ASP.NET Web Forms está *inoperante* e não deve mais ser usado? Claro que não! Desde que o .NET Framework seja fornecido como parte do Windows, o ASP.NET Web Forms será uma estrutura com suporte. Para muitos desenvolvedores de Web Forms, a falta de suporte de plataforma cruzada e de software livre é um problema não. Se você não tiver um requisito para suporte de plataforma cruzada, software livre ou qualquer um dos outros novos recursos no .NET Core ou no .NET 5, então, acompanhando o ASP.NET Web Forms no Windows está bem. O ASP.NET Web Forms continuará a ser uma maneira produtiva de escrever aplicativos Web por muitos anos.
 
@@ -55,11 +55,11 @@ Mas a ponte de duas plataformas e ecossistemas diferentes (.NET e JavaScript) ve
 
 Em 2015, os principais fornecedores de navegadores ingressaram em um grupo de comunidades W3C para criar um novo Web Standard aberto chamado WebAssembly . WebAssembly é um código de byte para a Web. Se você puder compilar seu código para WebAssembly , ele poderá ser executado em qualquer navegador em qualquer plataforma em uma velocidade quase nativa. Os esforços iniciais se concentram no C/C++. O resultado foi uma demonstração drástica da execução direta de mecanismos gráficos 3D nativos no navegador, sem plug-ins. WebAssembly desde que tenha sido padronizado e implementado por todos os principais navegadores.
 
-O trabalho na execução do .NET no WebAssembly foi anunciado no final de 2017 e deve ser fornecido em 2020, incluindo suporte do .NET 5. A capacidade de executar o código .NET diretamente no navegador permite o desenvolvimento para a Web de pilha completa com o .NET.
+Trabalhar no .NET em execução no WebAssembly foi anunciado no final de 2017 e lançado em 2020, incluindo suporte do .NET 5. A capacidade de executar o código .NET diretamente no navegador permite o desenvolvimento para a Web de pilha completa com o .NET.
 
 ## <a name="no-locblazor-full-stack-web-development-with-net"></a>Blazor: desenvolvimento para a Web de pilha completa com .NET
 
-Por si só, a capacidade de executar código .NET em um navegador não fornece uma experiência de ponta a ponta para criar aplicativos Web do lado do cliente. É aí que Blazor entra em. Blazor é uma estrutura de interface do usuário da Web do lado do cliente baseada em C# em vez de JavaScript. Blazor pode ser executado diretamente no navegador via WebAssembly . Nenhum plug-in de navegador é necessário. Como alternativa, Blazor os aplicativos podem executar o lado do servidor no .NET Core e lidar com todas as interações do usuário em uma conexão em tempo real com o navegador.
+Por si só, a capacidade de executar código .NET em um navegador não fornece uma experiência de ponta a ponta para criar aplicativos Web do lado do cliente. É aí que Blazor entra em. Blazor é uma estrutura de interface do usuário da Web do lado do cliente baseada em C# em vez de JavaScript. Blazor pode ser executado diretamente no navegador via WebAssembly . Nenhum plug-in de navegador é necessário. Como alternativa, Blazor os aplicativos podem executar o lado do servidor no .net e lidar com todas as interações do usuário em uma conexão em tempo real com o navegador.
 
 Blazor tem excelente suporte a ferramentas no Visual Studio e Visual Studio Code. A estrutura também inclui um modelo de componente completo da interface do usuário e tem instalações internas para:
 
@@ -76,12 +76,12 @@ Este livro fornece uma introdução ao Blazor que é fornecido especificamente p
 
 - Como criar Blazor aplicativos.
 - Como o Blazor funciona.
-- Como o Blazor se relaciona com o .NET Core.
+- Como o é Blazor relacionado ao .net.
 - Estratégias razoáveis para migrar os aplicativos ASP.NET Web Forms existentes para Blazor onde for apropriado.
 
 ## <a name="get-started-with-no-locblazor"></a>Introdução ao Blazor
 
-A introdução ao Blazor é fácil. Vá para <https://blazor.net> e siga os links para instalar os modelos de projeto e SDK do .NET Core apropriados Blazor . Você também encontrará instruções para configurar as Blazor ferramentas no Visual Studio ou Visual Studio Code.
+A introdução ao Blazor é fácil. Vá para <https://blazor.net> e siga os links para instalar o SDK do .net e os Blazor modelos de projeto apropriados. Você também encontrará instruções para configurar as Blazor ferramentas no Visual Studio ou Visual Studio Code.
 
 >[!div class="step-by-step"]
 >[Anterior](index.md) 

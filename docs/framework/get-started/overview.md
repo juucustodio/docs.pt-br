@@ -1,38 +1,39 @@
 ---
 title: Visão geral do .NET Framework
-description: Leia uma visão geral sobre o .NET, que é uma tecnologia que dá suporte à criação e execução de aplicativos e serviços Web do Windows.
-ms.date: 03/30/2017
+description: Leia uma visão geral sobre o .NET Framework, que é uma tecnologia que dá suporte à criação e execução de aplicativos e serviços Web do Windows.
+ms.date: 10/21/2020
 helpviewer_keywords:
 - application development [.NET Framework]
 - common language runtime
 - common language runtime, about
 - common language runtime, overview
 ms.assetid: 29848c96-fc36-462d-8072-ba223a40b697
-ms.openlocfilehash: 6beedb8e3fd03049cd58ce1d2dac78d1adb820ef
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 75b2e94b93eabdbf8a6a40f38c1b12a8caddd98a
+ms.sourcegitcommit: 870bc4b4087510f6fba3c7b1c0d391f02bcc1f3e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85618747"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92471738"
 ---
 # <a name="overview-of-net-framework"></a>Visão geral do .NET Framework
 
 .NET Framework é uma tecnologia que dá suporte à criação e execução de aplicativos e serviços Web do Windows. O .NET Framework foi projetado para atender aos seguintes objetivos:
 
-- Fornecer um ambiente de programação orientado a objeto consistente, independentemente de o código de objeto ser armazenado e executado localmente, executado localmente, mas distribuído pela Web ou executado remotamente.
+- Forneça um ambiente de programação orientado a objeto consistente, independentemente de o código de objeto ser armazenado e executado localmente, executado localmente, mas distribuído pela Web ou executado remotamente.
 
-- Para fornecer um ambiente de execução de código que minimize conflitos de implantação e criação de versão do software.
+- Forneça um ambiente de execução de código que:
 
-- Para fornecer um ambiente da execução que promova a execução segura do código, incluindo o código criado por terceiros desconhecidos ou semiconfiáveis.
+  - Minimiza a implantação de software e conflitos de controle de versão.
 
-- Para fornecer um ambiente de execução de código que elimine os problemas de desempenho dos ambientes interpretados ou com scripts.
+  - Promove a execução segura de código, incluindo código criado por terceiros desconhecidos ou semiconfiáveis.
 
-- Para tornar a experiência do desenvolvedor consistente entre diversos tipos de aplicativos, como aplicativos baseados no Windows e aplicativos baseados na Web.
+  - Elimina os problemas de desempenho de ambientes de script ou interpretados.
 
-- Para criar toda a comunicação nos padrões do setor para garantir que o código baseado em .NET Framework se integre a qualquer outro código.
+- Torne a experiência do desenvolvedor consistente em vários tipos de aplicativos diferentes, como aplicativos baseados no Windows e aplicativos baseados na Web.
 
-> [!NOTE]
-> Para obter uma introdução geral ao .NET Framework para usuários e desenvolvedores [, consulte Introdução](index.md).
+- Crie toda a comunicação nos padrões do setor para garantir que o código baseado em .NET Framework se integre a qualquer outro código.
+
+[!INCLUDE [net-framework-future](../../../includes/net-framework-future.md)]
 
 .NET Framework consiste na Common Language Runtime (CLR) e na biblioteca de classes .NET Framework. A Common Language Runtime é a base de .NET Framework. Pense no runtime como um agente que gerencia o código no runtime, fornecendo serviços principais como gerenciamento de memória, gerenciamento de threads e comunicação remota, enquanto também impõe a segurança de tipos rígida e outras formas de precisão de código que promovem segurança e robustez. Na verdade, o conceito de gerenciamento de código é um princípio fundamental do runtime. O código que segmenta o runtime é conhecido como código gerenciado e o código que não segmenta o runtime é conhecido como código não gerenciado. A biblioteca de classes é uma coleção abrangente e orientada a objetos de tipos reutilizáveis que você usa para desenvolver aplicativos que variam de aplicativos tradicionais de linha de comando ou GUI (interface gráfica do usuário) a aplicativos com base nas inovações mais recentes fornecidas pelo ASP.NET, como Web Forms e Web Services XML.
 
@@ -76,9 +77,9 @@ Como você esperaria de uma biblioteca de classes orientada a objeto, os tipos d
 
 - Aplicativos de console. Confira [Compilação de aplicativos de console](../../standard/building-console-apps.md).
 
-- Aplicativos GUI do Windows (Windows Forms). Confira [Windows Forms](../winforms/index.md).
+- Aplicativos GUI do Windows (Windows Forms). Confira [Windows Forms](/dotnet/desktop/winforms/).
 
-- Aplicativos WPF (Windows Presentation Foundation). Confira [Windows Presentation Foundation](../wpf/index.md).
+- Aplicativos WPF (Windows Presentation Foundation). Confira [Windows Presentation Foundation](/dotnet/desktop/wpf/).
 
 - Aplicativos ASP.NET. Confira [Aplicativos Web com o ASP.NET](../develop-web-apps-with-aspnet.md).
 
@@ -90,7 +91,7 @@ Como você esperaria de uma biblioteca de classes orientada a objeto, os tipos d
 
 As classes Windows Forms são um conjunto abrangente de tipos reutilizáveis que simplificam muito o desenvolvimento de GUI Windows. Se criar um aplicativo Web Form do ASP.NET, você poderá usar as classes Web Forms.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Requisitos do sistema](system-requirements.md)
 - [Guia de instalação](../install/index.md)

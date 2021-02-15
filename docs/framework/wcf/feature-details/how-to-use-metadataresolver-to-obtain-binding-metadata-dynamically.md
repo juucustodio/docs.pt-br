@@ -1,15 +1,17 @@
 ---
-title: Como utilizar o MetadataResolver para obter metadados de associação dinamicamente
+description: 'Saiba mais sobre: como usar o MetadataResolver para obter metadados de associação dinamicamente'
+title: 'Como: usar MetadataResolver para obter metadados de associação dinamicamente'
 ms.date: 03/30/2017
 ms.assetid: 56ffcb99-fff0-4479-aca0-e3909009f605
-ms.openlocfilehash: 98fe4977f270b008c51039af19261ca86b8d6642
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 00f33b31504ede6868113040ba83b6f9462ee808
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84601121"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734276"
 ---
-# <a name="how-to-use-metadataresolver-to-obtain-binding-metadata-dynamically"></a>Como utilizar o MetadataResolver para obter metadados de associação dinamicamente
+# <a name="how-to-use-metadataresolver-to-obtain-binding-metadata-dynamically"></a>Como: usar MetadataResolver para obter metadados de associação dinamicamente
+
 Este tópico mostra como usar a <xref:System.ServiceModel.Description.MetadataResolver> classe para obter metadados de associação dinamicamente.  
   
 ### <a name="to-dynamically-obtain-binding-metadata"></a>Para obter metadados de associação dinamicamente  

@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <endpointDiscovery>'
 title: <endpointDiscovery>
 ms.date: 03/30/2017
 ms.assetid: 70812717-888a-4748-9640-0df6715ff029
-ms.openlocfilehash: 98b1655f42b7b43604ed4ab9d66870ec204a9590
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 01913de37ae426484d5bb1ff6a815a64302024fb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70398013"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782124"
 ---
 # \<endpointDiscovery>
+
 Especifica as várias configurações de descoberta para um ponto de extremidade, como sua descoberta, escopos e quaisquer extensões personalizadas para seus metadados.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -19,7 +21,7 @@ Especifica as várias configurações de descoberta para um ponto de extremidade
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-endpointbehaviors.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<endpointDiscovery>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <behaviors>
@@ -37,6 +39,7 @@ Especifica as várias configurações de descoberta para um ponto de extremidade
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -50,7 +53,7 @@ Especifica as várias configurações de descoberta para um ponto de extremidade
 |Elemento|Descrição|  
 |-------------|-----------------|  
 |[\<scopes>](scopes.md)|Uma coleção de URIs de escopo para o ponto de extremidade. Mais de um URI de escopo pode ser associado a um único ponto de extremidade.|  
-|[\<extensions>](extensions.md)[de \<endpointDiscovery> ]|Uma coleção de elementos XML que permite que você especifique metadados personalizados a serem publicados para um ponto de extremidade.|  
+|[\<extensions>](extensions.md) [de \<endpointDiscovery> ]|Uma coleção de elementos XML que permite que você especifique metadados personalizados a serem publicados para um ponto de extremidade.|  
 |\<types>|Uma coleção de interfaces a serem pesquisadas.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -61,11 +64,13 @@ Especifica as várias configurações de descoberta para um ponto de extremidade
 |||  
   
 ## <a name="remarks"></a>Comentários  
+
  Quando adicionado à configuração de comportamento do ponto de extremidade e com o `enabled` atributo definido como `true` , esse elemento de configuração permite sua capacidade de descoberta. Além disso, você pode usar o [\<scopes>](scopes.md) elemento filho para especificar URIs de escopo personalizados que podem ser usados para filtrar pontos de extremidade de serviço durante a consulta, bem como o [\<extensions>](extensions.md) elemento filho para especificar metadados personalizados que devem ser publicados juntamente com os metadados detectáveis padrão (EPR, ContractTypeName, BindingName, Scope e ListenURI).  
   
  Esse elemento de configuração é dependente do [\<serviceDiscovery>](servicediscovery.md) elemento que fornece o controle de nível de serviço de descoberta. Isso significa que as configurações desse elemento serão ignoradas se [\<serviceDiscovery>](servicediscovery.md) não estiver presente na configuração.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo de configuração a seguir especifica os escopos de filtragem e os metadados de extensão a serem publicados para um ponto de extremidade.  
   
 ```xml  

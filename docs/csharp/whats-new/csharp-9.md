@@ -2,21 +2,21 @@
 title: O que há de novo no C# 9,0 – Guia C#
 description: Obtenha uma visão geral dos novos recursos disponíveis no C# 9,0.
 ms.date: 09/04/2020
-ms.openlocfilehash: ddffe4aaaed6c9079999b2ab29ca61ab5753f15a
-ms.sourcegitcommit: 43d5aca3fda42bad8843f6c4e72f6bd52daa55f1
+ms.openlocfilehash: dbc104cb0bbfc965b0cc055429713538f62ed0e8
+ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89598137"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94687354"
 ---
 # <a name="whats-new-in-c-90"></a>Novidades do C# 9.0
 
 O c# 9,0 adiciona os seguintes recursos e aprimoramentos à linguagem C#:
 
-- Registros
-- Setters somente init
-- Instruções de nível superior
-- Melhorias na correspondência de padrões
+- [Registros](#record-types)
+- [Setters somente init](#init-only-setters)
+- [Instruções de nível superior](#top-level-statements)
+- [Melhorias na correspondência de padrões](#pattern-matching-enhancements)
 - Inteiros de tamanho nativo
 - Ponteiros de função
 - Suprimir emissão do sinalizador localsinit
@@ -32,9 +32,11 @@ O c# 9,0 adiciona os seguintes recursos e aprimoramentos à linguagem C#:
 
 O C# 9,0 tem suporte no **.NET 5**. Para obter mais informações, consulte [controle de versão da linguagem C#](../language-reference/configure-language-version.md).
 
+Você pode baixar o SDK do .NET mais recente na [página de downloads do .net](https://dotnet.microsoft.com/download).
+
 ## <a name="record-types"></a>Tipos de registro
 
-O C# 9,0 apresenta ***tipos de registro***, que são um tipo de referência que fornece métodos sintetizados para fornecer a semântica de valor para igualdade. Os registros são imutáveis por padrão.
+O C# 9,0 introduz **_tipos de registro_* _, que são um tipo de referência que fornece métodos sintetizados para fornecer a semântica de valor para igualdade. Os registros são imutáveis por padrão.
 
 Os tipos de registro facilitam a criação de tipos de referência imutáveis no .NET. Historicamente, os tipos .NET são classificados em grande parte como tipos de referência (incluindo classes e tipos anônimos) e tipos de valor (incluindo structs e tuplas). Embora tipos de valor imutáveis sejam recomendados, os tipos de valores mutáveis geralmente não introduzem erros. As variáveis de tipo de valor contêm os valores para que as alterações sejam feitas em uma cópia dos dados originais quando os tipos de valor são passados para métodos.
 
@@ -48,7 +50,6 @@ A definição de registro cria um `Person` tipo que contém duas propriedades Re
 - Substituir para <xref:System.Object.GetHashCode>
 - Copiar e clonar Membros
 - `PrintMembers` e <xref:System.Object.ToString>
-- Método `Deconstruct`
 
 Registra o suporte à herança. Você pode declarar um novo registro derivado do da `Person` seguinte maneira:
 
@@ -64,11 +65,10 @@ O compilador sintetiza versões diferentes dos métodos acima. As assinaturas de
 - Os registros têm uma representação de cadeia de caracteres consistente gerada para você.
 - Os registros dão suporte à construção de cópia. A construção correta da cópia deve incluir hierarquias de herança e propriedades adicionadas por desenvolvedores.
 - Os registros podem ser copiados com modificações. Essas operações de cópia e modificação oferecem suporte a mutação não destrutiva.
-- Todos os registros dão suporte à desconstrução.
 
 Além das `Equals` sobrecargas conhecidas, `operator ==` e `operator !=` , o compilador sintetiza uma nova `EqualityContract` propriedade. A propriedade retorna um `Type` objeto que corresponde ao tipo do registro. Se o tipo base for `object` , a propriedade será `virtual` . Se o tipo base for outro tipo de registro, a propriedade será um `override` . Se o tipo de registro for `sealed` , a propriedade será `sealed` . O sintetizado `GetHashCode` usa o `GetHashCode` de todas as propriedades e campos declarados no tipo base e no tipo de registro. Esses métodos sintetizados impõem a igualdade baseada em valor em uma hierarquia de herança. Isso significa que um `Student` nunca será considerado igual a um `Person` com o mesmo nome. Os tipos dos dois registros devem corresponder e todas as propriedades compartilhadas entre os tipos de registro são iguais.
 
-Os registros também têm um Construtor sintetizado e um método de "clonagem" para a criação de cópias. O Construtor sintetizado tem um argumento do tipo de registro. Ele produz um novo registro com os mesmos valores para todas as propriedades do registro. Esse construtor é privado se o registro estiver lacrado, caso contrário, será protegido. O método "clone" sintetizado dá suporte à construção de cópia para hierarquias de registro. O termo "clone" está entre aspas porque o nome real é gerado pelo compilador. Você não pode criar um método chamado `Clone` em um tipo de registro. O método "clone" sintetizado retorna o tipo de registro que está sendo copiado usando a expedição virtual. O compilador adiciona diferentes modificadores para o método "clone" dependendo dos modificadores de acesso no `record` :
+Os registros também têm um Construtor sintetizado e um método de "clonagem" para a criação de cópias. O Construtor sintetizado tem um único parâmetro do tipo de registro. Ele produz um novo registro com os mesmos valores para todas as propriedades do registro. Esse construtor é privado se o registro estiver lacrado, caso contrário, será protegido. O método "clone" sintetizado dá suporte à construção de cópia para hierarquias de registro. O termo "clone" está entre aspas porque o nome real é gerado pelo compilador. Você não pode criar um método chamado `Clone` em um tipo de registro. O método "clone" sintetizado retorna o tipo de registro que está sendo copiado usando a expedição virtual. O compilador adiciona diferentes modificadores para o método "clone" dependendo dos modificadores de acesso no `record` :
 
 - Se o tipo de registro for `abstract` , o método "clone" também será `abstract` . Se o tipo base não for `object` , o método também será `override` .
 - Para tipos de registro que não são `abstract` quando o tipo base é `object` :
@@ -88,7 +88,7 @@ O compilador sintetiza dois métodos que dão suporte à saída impressa: uma <x
 "Student { LastName = Wagner, FirstName = Bill, Level = 11 }"
 ```
 
-Os exemplos mostrados até agora usam a sintaxe tradicional para declarar Propriedades. Há uma forma mais concisa chamada ***registros posicionais***.  Aqui estão os três tipos de registro definidos anteriormente como registros posicionais:
+Os exemplos mostrados até agora usam a sintaxe tradicional para declarar Propriedades. Há uma forma mais concisa chamada _*_registros posicionais_*_.  Aqui estão os três tipos de registro definidos anteriormente como registros posicionais:
 
 :::code language="csharp" source="snippets/whats-new-csharp9/PositionalRecords.cs" ID="PositionalRecords":::
 
@@ -100,17 +100,23 @@ O compilador produz um `Deconstruct` método para registros posicionais. O `Deco
 
 :::code language="csharp" source="snippets/whats-new-csharp9/PositionalRecords.cs" ID="DeconstructRecord":::
 
-Por fim, os registros têm suporte ***com expressões-Expressions***. Uma ***expressão with*** instrui o compilador a criar uma cópia de um registro, mas *com* as propriedades especificadas modificadas:
+Por fim, o registra as [ `with` expressões](../language-reference/operators/with-expression.md)de suporte. Um _*_ `with` expression_ *_ instrui o compilador a criar uma cópia de um registro, mas _with* propriedades especificadas modificadas:
 
 :::code language="csharp" source="snippets/whats-new-csharp9/PositionalRecords.cs" ID="Wither":::
 
-A linha acima cria um novo `Person` registro no qual a `LastName` propriedade é uma cópia de `person` e o `FirstName` é "Paul". Você pode definir qualquer número de propriedades em uma expressão with.  Qualquer um dos membros sintetizados, exceto o método "clone", pode ser escrito por você. Se um tipo de registro tiver um método que corresponda à assinatura de qualquer método sintetizado, o compilador não sintetizará esse método. O `Dog` exemplo de registro anterior contém um método codificado <xref:System.String.ToString> por mão como um exemplo.
+A linha anterior cria um novo `Person` registro no qual a `LastName` propriedade é uma cópia de `person` e o `FirstName` é `"Paul"` . Você pode definir qualquer número de propriedades em uma `with` expressão. Você também pode usar `with` expressões para criar uma cópia exata. Especifique o conjunto vazio para as propriedades a serem modificadas:
+
+:::code language="csharp" source="snippets/whats-new-csharp9/PositionalRecords.cs" ID="WithCopy":::
+
+Qualquer um dos membros sintetizados, exceto o método "clone", pode ser escrito por você. Se um tipo de registro tiver um método que corresponda à assinatura de qualquer método sintetizado, o compilador não sintetizará esse método. O `Dog` exemplo de registro anterior contém um método codificado <xref:System.String.ToString> por mão como um exemplo.
+
+Saiba mais sobre os tipos de registro neste tutorial [de exploração de registros](../tutorials/exploration/records.md) .
 
 ## <a name="init-only-setters"></a>Setters somente init
 
-Os ***setters somente init*** fornecem sintaxe consistente para inicializar membros de um objeto. Os inicializadores de propriedade fornecem claro qual valor está definindo qual propriedade. A desvantagem é que essas propriedades devem ser configurável. A partir do C# 9,0, você pode criar `init` acessadores em vez de `set` acessadores para propriedades e indexadores. Os chamadores podem usar a sintaxe do inicializador de propriedade para definir esses valores em expressões de criação, mas essas propriedades são ReadOnly quando a construção é concluída. Os setters somente init fornecem uma janela para alterar o estado. Essa janela fecha quando a fase de construção termina. A fase de construção termina com eficiência após toda a inicialização, incluindo inicializadores de propriedade e with-Expressions concluídos.
+***Init somente setters** _ fornecem sintaxe consistente para inicializar membros de um objeto. Os inicializadores de propriedade tornam claro qual valor está definindo qual propriedade. A desvantagem é que essas propriedades devem ser configurável. A partir do C# 9,0, você pode criar `init` acessadores em vez de `set` acessadores para propriedades e indexadores. Os chamadores podem usar a sintaxe do inicializador de propriedade para definir esses valores em expressões de criação, mas essas propriedades são ReadOnly quando a construção é concluída. Os setters somente init fornecem uma janela para alterar o estado. Essa janela fecha quando a fase de construção termina. A fase de construção termina com eficiência após toda a inicialização, incluindo inicializadores de propriedade e with-Expressions concluídos.
 
-O exemplo anterior para registros posicionais demonstra o uso de um setter somente init para definir uma propriedade usando uma expressão with. Você pode declarar somente setters init em qualquer tipo que você escreve. Por exemplo, a seguinte estrutura define uma estrutura de observação do clima:
+Você pode declarar `init` somente setters em qualquer tipo que escrever. Por exemplo, a seguinte estrutura define uma estrutura de observação do clima:
 
 :::code language="csharp" source="snippets/whats-new-csharp9/WeatherObservation.cs" ID="DeclareWeatherObservation":::
 
@@ -122,14 +128,14 @@ Mas, a alteração de uma observação após a inicialização é um erro ao atr
 
 ```csharp
 // Error! CS8852.
-now.TempetureInCelsius = 18;
+now.TemperatureInCelsius = 18;
 ```
 
 Os setters somente init podem ser úteis para definir propriedades de classe base de classes derivadas. Eles também podem definir propriedades derivadas por meio de auxiliares em uma classe base. Registros posicionais declaram propriedades usando somente init setters. Esses setters são usados em with-Expressions. Você pode declarar setters somente init para qualquer um `class` ou `struct` definir.
 
 ## <a name="top-level-statements"></a>Instruções de nível superior
 
-As ***instruções de nível superior*** removem a cerimônia desnecessária de muitos aplicativos. Considere o canônico "Olá, Mundo!" Program
+As _*_instruções de nível superior_*_ removem a cerimônia desnecessária de muitos aplicativos. Considere o canônico "Olá, Mundo!" Program
 
 ```csharp
 using System;
@@ -158,7 +164,7 @@ System.Console.WriteLine("Hello World!");
 
 Somente um arquivo em seu aplicativo pode usar instruções de nível superior. Se o compilador encontrar instruções de nível superior em vários arquivos de origem, será um erro. Também será um erro se você combinar instruções de nível superior com um método de ponto de entrada de programa declarado, normalmente um `Main` método. De certa forma, você pode imaginar que um arquivo contém as instruções que normalmente estaria no `Main` método de uma `Program` classe.  
 
-Um dos usos mais comuns para esse recurso é a criação de materiais de ensino. Desenvolvedores de C# iniciantes podem escrever o "Olá, Mundo!" canônico em uma ou duas linhas de código. Nenhuma das cerimônias extras é necessária. No entanto, os desenvolvedores experientes também encontrarão muitos usos para esse recurso. As instruções de nível superior permitem uma experiência semelhante a um script para experimentação semelhante ao que os notebooks Jupyter fornecem. As instruções de nível superior são ótimas para pequenos programas de console e utilitários. O Azure Functions é um caso de uso ideal para instruções de nível superior.
+Um dos usos mais comuns para esse recurso é a criação de materiais de ensino. Desenvolvedores de C# iniciantes podem escrever o "Olá, Mundo!" canônico em uma ou duas linhas de código. Nenhuma das cerimônias extras é necessária. No entanto, os desenvolvedores experientes também encontrarão muitos usos para esse recurso. As instruções de nível superior permitem uma experiência semelhante a um script para experimentação semelhante ao que os notebooks Jupyter fornecem. As instruções de nível superior são ótimas para pequenos programas de console e utilitários. Azure Functions são um caso de uso ideal para instruções de nível superior.
 
 O mais importante é que as instruções de nível superior não limitam o escopo ou a complexidade do aplicativo. Essas instruções podem acessar ou usar qualquer classe .NET. Eles também não limitam o uso de argumentos de linha de comando ou valores de retorno. Instruções de nível superior podem acessar uma matriz de cadeias de caracteres denominadas args. Se as instruções de nível superior retornarem um valor inteiro, esse valor se tornará o código de retorno de inteiro de um método sintetizado `Main` . As instruções de nível superior podem conter expressões assíncronas. Nesse caso, o ponto de entrada sintetizado retorna um `Task` , ou `Task<int>` .
 
@@ -166,12 +172,12 @@ O mais importante é que as instruções de nível superior não limitam o escop
 
 O C# 9 inclui novas melhorias de correspondência de padrões:
 
-- ***Padrões de tipo*** correspondem a uma variável é um tipo
-- ***Padrões entre parênteses*** impõem ou enfatizam a precedência de combinações de padrões
-- *** `and` Padrões de conjuntiva*** exigem os dois padrões para corresponder
-- *** `or` Padrões de disjunctive*** exigem qualquer padrão para corresponder
-- *** `not` Padrões negados*** exigem que um padrão não corresponda
-- Os ***padrões relacionais*** exigem que a entrada seja menor que, maior que, menor ou igual ou maior ou igual a uma determinada constante.
+- _*_Padrões de tipo_*_ correspondem a uma variável é um tipo
+- _*_Padrões entre parênteses_*_ impõem ou enfatizam a precedência de combinações de padrões
+- _*_`and` Padrões de conjuntiva_*_ exigem os dois padrões para corresponder
+- _*_`or` Padrões de disjunctive_*_ exigem qualquer padrão para corresponder
+- _*_`not` Padrões negados_*_ exigem que um padrão não corresponda
+- Os _*_padrões relacionais_*_ exigem que a entrada seja menor que, maior que, menor ou igual ou maior ou igual a uma determinada constante.
 
 Esses padrões enriquecem a sintaxe para padrões. Considere estes exemplos:
 
@@ -196,9 +202,9 @@ Qualquer um desses padrões pode ser usado em qualquer contexto em que os padrõ
 
 Três novos recursos melhoram o suporte para a interoperabilidade nativa e bibliotecas de nível baixo que exigem alto desempenho: inteiros de tamanho nativo, ponteiros de função e omissão do `localsinit` sinalizador.
 
-Inteiros de tamanho nativo `nint` e `nuint` , são tipos inteiros. Eles são expressos pelos tipos subjacentes <xref:System.IntPtr?displayProperty=nameWithType> e <xref:System.UIntPtr?displayProperty=nameWithType> . O compilador superfícies de conversões e operações adicionais para esses tipos como ints nativas. Os ints de tamanho nativo não têm constantes para `MaxValue` ou `MinValue` , exceto para `nuint.MinValue` , que tem um `MinValue` de `0` . Outros valores não podem ser expressos como constantes porque depende do tamanho nativo de um inteiro no computador de destino. Você pode usar valores constantes para `nint` no intervalo [ `int.MinValue` .. `int.MaxValue`]. Você pode usar valores constantes para `nuint` no intervalo [ `uint.MinValue` .. `uint.MaxValue`]. O compilador executa o dobramento constante para todos os operadores unários e binários usando os <xref:System.Int32?displayProperty=nameWithType> <xref:System.UInt32?displayProperty=nameWithType> tipos e. Se o resultado não couber em 32 bits, a operação será executada em tempo de execução e não será considerada uma constante. Os inteiros de tamanho nativo podem aumentar o desempenho em cenários em que a matemática de inteiros é usada extensivamente e precisa ter o desempenho mais rápido possível.
+Inteiros de tamanho nativo `nint` e `nuint` , são tipos inteiros. Eles são expressos pelos tipos subjacentes <xref:System.IntPtr?displayProperty=nameWithType> e <xref:System.UIntPtr?displayProperty=nameWithType> . O compilador superfícies de conversões e operações adicionais para esses tipos como ints nativas. Os inteiros de tamanho nativo definem propriedades para `MaxValue` ou `MinValue` . Esses valores não podem ser expressos como constantes de tempo de compilação porque dependem do tamanho nativo de um inteiro no computador de destino. Esses valores são ReadOnly no tempo de execução. Você pode usar valores constantes para `nint` no intervalo [ `int.MinValue` .. `int.MaxValue`]. Você pode usar valores constantes para `nuint` no intervalo [ `uint.MinValue` .. `uint.MaxValue`]. O compilador executa o dobramento constante para todos os operadores unários e binários usando os <xref:System.Int32?displayProperty=nameWithType> <xref:System.UInt32?displayProperty=nameWithType> tipos e. Se o resultado não couber em 32 bits, a operação será executada em tempo de execução e não será considerada uma constante. Os inteiros de tamanho nativo podem aumentar o desempenho em cenários em que a matemática de inteiros é usada extensivamente e precisa ter o desempenho mais rápido possível.
 
-Ponteiros de função fornecem uma sintaxe fácil para acessar os opcodes de IL `ldftn` e `calli` . Você pode declarar ponteiros de função usando a nova `delegate*` sintaxe. Um `delegate*` tipo é um tipo de ponteiro. Invocar o `delegate*` tipo usa `calli` , em contraste com um delegado que usa `callvirt` no `Invoke()` método. Sintaticamente, as invocações são idênticas. Invocação de ponteiro de função usa a `managed` Convenção de chamada. Você adiciona a `unmanaged` palavra-chave após a `delegate*` sintaxe para declarar que deseja a `unmanaged` Convenção de chamada. Outras convenções de chamada podem ser especificadas usando atributos na `delegate*` declaração.
+Ponteiros de função fornecem uma sintaxe fácil para acessar os opcodes de IL `ldftn` e `calli` . Você pode declarar ponteiros de função usando a nova `delegate_` sintaxe. Um `delegate*` tipo é um tipo de ponteiro. Invocar o `delegate*` tipo usa `calli` , em contraste com um delegado que usa `callvirt` no `Invoke()` método. Sintaticamente, as invocações são idênticas. Invocação de ponteiro de função usa a `managed` Convenção de chamada. Você adiciona a `unmanaged` palavra-chave após a `delegate*` sintaxe para declarar que deseja a `unmanaged` Convenção de chamada. Outras convenções de chamada podem ser especificadas usando atributos na `delegate*` declaração.
 
 Por fim, você pode adicionar o <xref:System.Runtime.CompilerServices.SkipLocalsInitAttribute?displayProperty=nameWithType> para instruir o compilador a não emitir o `localsinit` sinalizador. Esse sinalizador instrui o CLR a inicializar zero todas as variáveis locais. O `localsinit` sinalizador tem sido o comportamento padrão para C# desde 1,0. No entanto, a inicialização zero extra pode ter um impacto mensurável no desempenho em alguns cenários. Em particular, quando você usa o `stackalloc` . Nesses casos, você pode adicionar o <xref:System.Runtime.CompilerServices.SkipLocalsInitAttribute> . Você pode adicioná-lo a um único método ou propriedade, ou a um `class` ,, `struct` `interface` ou até mesmo a um módulo. Esse atributo não afeta `abstract` os métodos; ele afeta o código gerado para a implementação.
 
@@ -206,11 +212,11 @@ Esses recursos podem melhorar o desempenho em alguns cenários. Eles devem ser u
 
 ## <a name="fit-and-finish-features"></a>Recursos de ajuste e término
 
-Muitos dos outros recursos ajudam a escrever código com mais eficiência. No C# 9,0, você pode omitir o tipo em uma nova expressão quando o tipo do objeto criado já é conhecido. O uso mais comum está em declarações de campo:
+Muitos dos outros recursos ajudam a escrever código com mais eficiência. No C# 9,0, você pode omitir o tipo em uma [ `new` expressão](../language-reference/operators/new-operator.md) quando o tipo do objeto criado já é conhecido. O uso mais comum está em declarações de campo:
 
 :::code language="csharp" source="snippets/whats-new-csharp9/FitAndFinish.cs" ID="WeatherStationField":::
 
-O tipo de destino New também pode ser usado quando você precisa criar um novo objeto para passar como um parâmetro para um método. Considere um `ForecastFor()` método com a seguinte assinatura:
+O tipo de destino `new` também pode ser usado quando você precisa criar um novo objeto para passar como um argumento para um método. Considere um `ForecastFor()` método com a seguinte assinatura:
 
 :::code language="csharp" source="snippets/whats-new-csharp9/FitAndFinish.cs" ID="ForecastSignature":::
 
@@ -222,19 +228,19 @@ Outro bom uso para esse recurso é combiná-lo com propriedades init somente par
 
 :::code language="csharp" source="snippets/whats-new-csharp9/FitAndFinish.cs" ID="InitWeatherStation":::
 
-Você pode retornar uma instância criada pelo construtor padrão usando uma `return new();` expressão.
+Você pode retornar uma instância criada pelo construtor padrão usando uma `return new();` instrução.
 
-Um recurso semelhante melhora a resolução de tipo de destino de expressões condicionais. Com essa alteração, as duas expressões não precisam ter uma conversão implícita de uma para a outra, mas podem ter conversões implícitas em um tipo comum. Você provavelmente não perceberá essa alteração. O que você observará é que algumas expressões condicionais que antes exigiam conversões ou que não compilaram agora só funcionam.
+Um recurso semelhante melhora a resolução de tipo de destino de [expressões condicionais](../language-reference/operators/conditional-operator.md). Com essa alteração, as duas expressões não precisam ter uma conversão implícita de uma para a outra, mas podem ter conversões implícitas em um tipo de destino. Você provavelmente não perceberá essa alteração. O que você observará é que algumas expressões condicionais que antes exigiam conversões ou que não compilaram agora só funcionam.
 
-A partir do C# 9,0, você pode adicionar o `static` modificador a expressões lambda ou a métodos anônimos. As expressões lambda estáticas são análogas às `static` funções locais: uma função lambda ou anônima estática não pode capturar variáveis locais ou estado de instância. O `static` modificador impede a captura acidental de outras variáveis.
+A partir do C# 9,0, você pode adicionar o `static` modificador a [expressões lambda](../language-reference/operators/lambda-expressions.md) ou a [métodos anônimos](../language-reference/operators/delegate-operator.md). As expressões lambda estáticas são análogas às `static` funções locais: um método lambda ou anônimo estático não pode capturar variáveis locais ou estado de instância. O `static` modificador impede a captura acidental de outras variáveis.
 
-Os tipos de retorno covariantes fornecem flexibilidade para os tipos de retorno de funções substituídas. Uma função virtual substituída pode retornar um tipo derivado do tipo de retorno declarado no método de classe base. Isso pode ser útil para registros e para outros tipos que dão suporte a métodos de clonagem ou de alocador virtual.
+Os tipos de retorno covariantes fornecem flexibilidade para os tipos de retorno dos métodos de [substituição](../language-reference/keywords/override.md) . Um método override pode retornar um tipo derivado do tipo de retorno do método base substituído. Isso pode ser útil para registros e outros tipos que dão suporte a métodos de clonagem ou de alocador virtual.
 
-Além disso, o `foreach` loop reconhecerá e usará um método de extensão `GetEnumerator` que, de outra forma, atende ao `foreach` padrão. Essa alteração significa `foreach` ser consistente com outras construções baseadas em padrão, como o padrão assíncrono e a desconstrução baseada em padrões. Na prática, essa alteração significa que você pode adicionar `foreach` suporte a qualquer tipo. Você deve limitar seu uso ao ao enumerar um objeto faz sentido em seu design.
+Além disso, o [ `foreach` loop](../language-reference/keywords/foreach-in.md) reconhecerá e usará um método de extensão `GetEnumerator` que, de outra forma, atende ao `foreach` padrão. Essa alteração significa `foreach` ser consistente com outras construções baseadas em padrão, como o padrão assíncrono e a desconstrução baseada em padrões. Na prática, essa alteração significa que você pode adicionar `foreach` suporte a qualquer tipo. Você deve limitar seu uso ao ao enumerar um objeto faz sentido em seu design.
 
-Em seguida, você pode usar os descartes como parâmetros para expressões lambda. Essa conveniência permite que você evite nomear o argumento, e o compilador pode evitar usá-lo. Você usa o `_` para qualquer argumento.
+Em seguida, você pode usar os descartes como parâmetros para expressões lambda. Essa conveniência permite que você evite nomear o argumento, e o compilador pode evitar usá-lo. Você usa o `_` para qualquer argumento. Para obter mais informações, consulte a seção [parâmetros de entrada de uma expressão lambda](../language-reference/operators/lambda-expressions.md#input-parameters-of-a-lambda-expression) do artigo [expressões lambda](../language-reference/operators/lambda-expressions.md) .
 
-Por fim, agora você pode aplicar atributos a funções locais. Por exemplo, você pode aplicar anotações de atributo anulável a funções locais.
+Por fim, agora você pode aplicar atributos a [funções locais](../programming-guide/classes-and-structs/local-functions.md). Por exemplo, você pode aplicar [anotações de atributo anulável](../language-reference/attributes/nullable-analysis.md) a funções locais.
 
 ## <a name="support-for-code-generators"></a>Suporte para geradores de código
 
@@ -242,9 +248,9 @@ Dois recursos finais dão suporte a geradores de código C#. Os geradores de có
 
 Um gerador de código lê atributos ou outros elementos de código usando as APIs de análise de Roslyn. A partir dessas informações, ele adiciona um novo código à compilação. Os geradores de origem só podem adicionar código; Eles não têm permissão para modificar nenhum código existente na compilação.
 
-Os dois recursos adicionados para geradores de código são extensões para ***sintaxe de método parcial***e ***inicializadores de módulo***. Primeiro, as alterações em métodos parciais. Antes do C# 9,0, os métodos parciais são `private` , mas não podem especificar um modificador de acesso, ter um `void` retorno e não podem ter `out` parâmetros. Essas restrições destinam-se que, se nenhuma implementação de método for fornecida, o compilador removerá todas as chamadas para o método parcial. O C# 9,0 remove essas restrições, mas requer que as declarações de método parciais tenham uma implementação. Os geradores de código podem fornecer essa implementação. Para evitar a introdução de uma alteração significativa, o compilador considera qualquer método parcial sem um modificador de acesso para seguir as regras antigas. Se o método parcial incluir o `private` modificador de acesso, as novas regras regem esse método parcial.
+Os dois recursos adicionados para geradores de código são extensões para ***sintaxe do método parcial** _ e _*_inicializadores de módulo_*_. Primeiro, as alterações em métodos parciais. Antes do C# 9,0, os métodos parciais são `private` , mas não podem especificar um modificador de acesso, ter um `void` retorno e não podem ter `out` parâmetros. Essas restrições destinam-se que, se nenhuma implementação de método for fornecida, o compilador removerá todas as chamadas para o método parcial. O C# 9,0 remove essas restrições, mas requer que as declarações de método parciais tenham uma implementação. Os geradores de código podem fornecer essa implementação. Para evitar a introdução de uma alteração significativa, o compilador considera qualquer método parcial sem um modificador de acesso para seguir as regras antigas. Se o método parcial incluir o `private` modificador de acesso, as novas regras regem esse método parcial.
 
-O segundo novo recurso para geradores de código é ***inicializadores de módulo***. Inicializadores de módulo são métodos que têm o <xref:System.Runtime.CompilerServices.ModuleInitializerAttribute> atributo anexado a eles. Esses métodos serão chamados pelo tempo de execução quando o assembly for carregado. Um método inicializador de módulo:
+O segundo novo recurso para geradores de código é _ *_inicializadores de módulo_* *. Inicializadores de módulo são métodos que têm o <xref:System.Runtime.CompilerServices.ModuleInitializerAttribute> atributo anexado a eles. Esses métodos serão chamados pelo tempo de execução antes de qualquer outro acesso de campo ou invocação de método dentro do módulo inteiro. Um método inicializador de módulo:
 
 - Deve ser estático
 - Não deve ter parâmetros

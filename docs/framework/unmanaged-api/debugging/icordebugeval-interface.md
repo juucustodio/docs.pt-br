@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugEval'
 title: Interface ICorDebugEval
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3a5c9815-832d-47e1-b7f7-bbba135d7cf1
 topic_type:
 - apiref
-ms.openlocfilehash: f13cd6d6cae5bae0c51674e00f275a2c4853c915
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: c6eda0f63b377399cad391346dc6bedfa860e4b7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976220"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694091"
 ---
 # <a name="icordebugeval-interface"></a>Interface ICorDebugEval
 
@@ -32,7 +33,7 @@ Fornece métodos para permitir que o depurador execute um código no contexto do
 |[Método Abort](icordebugeval-abort-method.md)|Anula a computação que esse `ICorDebugEval` objeto está executando no momento.|  
 |[Método CallFunction](icordebugeval-callfunction-method.md)|Define uma chamada para a função especificada. (Obsoleto na versão de .NET Framework 2,0; use [ICorDebugEval2:: CallParameterizedFunction](icordebugeval2-callparameterizedfunction-method.md) em vez disso.)|  
 |[Método CreateValue](icordebugeval-createvalue-method.md)|Obtém um ponteiro de interface para um objeto "ICorDebugValue" do tipo especificado, com um valor inicial de zero ou NULL. (Obsoleto no .NET Framework 2,0; use [ICorDebugEval2:: CreateValueForType](icordebugeval2-createvaluefortype-method.md) em vez disso.)|  
-|[Método GetResult](icordebugeval-getresult-method.md)|Obtém um ponteiro de interface para `ICorDebugValue` um que contém os resultados da avaliação.|  
+|[Método GetResult](icordebugeval-getresult-method.md)|Obtém um ponteiro de interface para um `ICorDebugValue` que contém os resultados da avaliação.|  
 |[Método GetThread](icordebugeval-getthread-method.md)|Obtém um ponteiro de interface para o "ICorDebugThread" no qual essa avaliação está sendo executada ou será executada.|  
 |[Método IsActive](icordebugeval-isactive-method.md)|Obtém um valor que indica se este `ICorDebugEval` objeto está sendo executado no momento.|  
 |[Método NewArray](icordebugeval-newarray-method.md)|Aloca uma nova matriz do tipo e das dimensões do elemento especificado. (Obsoleto no .NET Framework 2,0; use [ICorDebugEval2:: NewParameterizedArray](icordebugeval2-newparameterizedarray-method.md) em vez disso.)|  
@@ -41,6 +42,7 @@ Fornece métodos para permitir que o depurador execute um código no contexto do
 |[Método NewString](icordebugeval-newstring-method.md)|Aloca um novo objeto de cadeia de caracteres com o conteúdo especificado.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Um `ICorDebugEval` objeto é criado no contexto de um thread específico que é usado para executar as avaliações. Todos os objetos e tipos usados em uma determinada avaliação devem residir no mesmo domínio de aplicativo. Esse domínio de aplicativo não precisa ser o mesmo que o domínio de aplicativo atual do thread. As avaliações podem ser aninhadas.  
   
  As operações da avaliação não são concluídas até que o depurador chame [ICorDebugController:: Continue](icordebugcontroller-continue-method.md)e receba um retorno de chamada [ICorDebugManagedCallback:: EvalComplete](icordebugmanagedcallback-evalcomplete-method.md) . Se você precisar usar a funcionalidade de avaliação sem permitir que outros threads sejam executados, suspenda os threads usando [ICorDebugController:: SetAllThreadsDebugState](icordebugcontroller-setallthreadsdebugstate-method.md) ou [ICorDebugController:: Stop](icordebugcontroller-stop-method.md) antes de chamar [ICorDebugController:: Continue](icordebugcontroller-continue-method.md).  
@@ -53,6 +55,7 @@ Fornece métodos para permitir que o depurador execute um código no contexto do
 > Esta interface não dá suporte para chamada remota, seja entre computadores ou processos cruzados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

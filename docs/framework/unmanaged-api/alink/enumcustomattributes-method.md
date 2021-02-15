@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método EnumCustomAttributes'
 title: Método EnumCustomAttributes
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 08dff60c-f01b-4050-8865-ea3f95361c9f
 topic_type:
 - apiref
-ms.openlocfilehash: 6a5b3f1e9bf1444feb73949ef7133fbd9ae35134
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: d5b537462745914903f0cdb1e9f4436f2c27a68d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74446479"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99638126"
 ---
 # <a name="enumcustomattributes-method"></a>Método EnumCustomAttributes
+
 Recupera atributos personalizados no nível do assembly.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -38,6 +40,7 @@ HRESULT EnumCustomAttributes(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `hEnum`  
  Identificador do enumerador.  
   
@@ -48,15 +51,17 @@ HRESULT EnumCustomAttributes(
  Recebe tokens de atributos personalizados.  
   
  `cMax`  
- Especifica o tamanho da matriz de `rCustomValues`.  
+ Especifica o tamanho da `rCustomValues` matriz.  
   
  `pcCustomValues`  
  Opcionalmente, recebe a contagem de valores de token.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  Retorna S_OK se o método tiver sucesso.  
   
-## <a name="requirements"></a>{1&gt;{2&gt;Requisitos&lt;2}&lt;1}  
+## <a name="requirements"></a>Requisitos  
+
  Requer ALink. h  
   
 ## <a name="see-also"></a>Consulte também

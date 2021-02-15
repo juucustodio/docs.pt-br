@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: classes usadas em .NET Framework e/s de arquivo e o sistema de arquivos (Visual Basic)'
 title: Classes usadas em E/S de Arquivo do .NET Framework e o Sistema de Arquivos
 ms.date: 07/20/2015
 helpviewer_keywords:
 - file I/O classes
 ms.assetid: 4a5ca924-eea8-4a95-a5f0-6ac10de276a3
-ms.openlocfilehash: 2c696d5b8c83ae55caf61e4710630ad1e34c088d
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: a8cbe476044df92fcdbdd0421b91f3c7c098e063
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401765"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666323"
 ---
 # <a name="classes-used-in-net-framework-file-io-and-the-file-system-visual-basic"></a>Classes usadas em E/S de arquivo do .NET Framework e o sistema de arquivos (Visual Basic)
 
@@ -21,7 +22,7 @@ Para obter uma listagem mais abrangente, consulte [Visão Geral da Biblioteca de
 
  A tabela a seguir lista e descreve as principais classes usadas para E/S de arquivos.  
   
-|Classe|Descrição|  
+|Class|Descrição|  
 |-----------|-----------------|  
 |<xref:System.IO.Directory?displayProperty=nameWithType>|Fornece métodos estáticos para criar, mover e enumerar ao longo de diretórios e subdiretórios.|  
 |<xref:System.IO.DirectoryInfo?displayProperty=nameWithType>|Fornece métodos de instância para criar, mover e enumerar ao longo de diretórios e subdiretórios.|  
@@ -39,7 +40,7 @@ Para obter uma listagem mais abrangente, consulte [Visão Geral da Biblioteca de
 
  A tabela a seguir lista e descreve as principais classes usadas para criar fluxos.  
   
-|Classe|Descrição|  
+|Class|Descrição|  
 |-----------|-----------------|  
 |<xref:System.IO.BufferedStream?displayProperty=nameWithType>|Adiciona uma camada de armazenamento em buffer para ler e gravar operações em outro fluxo.|  
 |<xref:System.IO.FileStream?displayProperty=nameWithType>|Dá suporte ao acesso aleatório a arquivos por meio de seu método <xref:System.IO.FileStream.Seek%2A>. <xref:System.IO.FileStream> abre arquivos de forma síncrona por padrão, mas também dá suporte à operação assíncrona.|  
@@ -60,7 +61,7 @@ Para obter uma listagem mais abrangente, consulte [Visão Geral da Biblioteca de
 |<xref:System.IO.StringReader?displayProperty=nameWithType>|Lê caracteres de um `String`. A saída pode ser um fluxo em qualquer codificação ou um `String`.|  
 |<xref:System.IO.StringWriter?displayProperty=nameWithType>|Grava caracteres em um `String`. A saída pode ser um fluxo em qualquer codificação ou um `String`.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Compor fluxos](../../../../standard/io/composing-streams.md)
 - [Arquivo e e/s de fluxo](../../../../standard/io/index.md)

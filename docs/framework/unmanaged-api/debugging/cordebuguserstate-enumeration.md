@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorDebugUserState'
 title: Enumeração CorDebugUserState
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5f6c2bcd-8102-4e3b-abc5-86ab0bd62def
 topic_type:
 - apiref
-ms.openlocfilehash: d502b4098016fb14793bccd6feb641e92e3c2611
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: c556e7943751fb8e159e3e0d0b9a71baf1f6b5b5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795632"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661734"
 ---
 # <a name="cordebuguserstate-enumeration"></a>Enumeração CorDebugUserState
+
 Indica o estado do usuário de um thread.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -55,11 +57,13 @@ typedef enum CorDebugUserState {
 |`USER_THREADPOOL`|O thread é do pool de threads.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O estado do usuário de um thread é o estado que o thread tem quando o depurador o examina. Um thread pode ter uma combinação de Estados do usuário.  
   
  Use o método [ICorDebugThread:: GetUserState](icordebugthread-getuserstate-method.md) para recuperar o estado do usuário de um thread.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

@@ -1,21 +1,24 @@
 ---
+description: 'Saiba mais sobre: Criando funções de aplicativo no SQL Server'
 title: Criando funções de aplicativo no SQL Server
 ms.date: 03/30/2017
 ms.assetid: 27442435-dfb2-4062-8c59-e2960833a638
-ms.openlocfilehash: 212bda6f64829792e965dd6714428a05b30c995b
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 20047d12a004230aebca1cf9d42b3893d36f3844
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70794280"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786154"
 ---
 # <a name="creating-application-roles-in-sql-server"></a>Criando funções de aplicativo no SQL Server
+
 As funções de aplicativo fornecem uma maneira de atribuir permissões para um aplicativo em vez de uma função ou usuário do banco de dados. Os usuários podem se conectar ao banco de dados, ativar a função de aplicativo e presumir as permissões concedidas ao aplicativo. As permissões concedidas para a função de aplicativo são impostas para a duração da conexão.  
   
 > [!IMPORTANT]
 > As funções de aplicativo são ativadas quando um aplicativo cliente fornece um nome da função de aplicativo e uma senha na cadeia de conexão. Eles apresentam uma vulnerabilidade de segurança em um aplicativo de duas camadas porque a senha deve ser armazenada no computador cliente. Em um aplicativo de três camadas, você pode armazenar a senha para que não possa ser acessada por usuários do aplicativo.  
   
 ## <a name="application-role-features"></a>Recursos da função de aplicativo  
+
  As funções de aplicativo têm os seguintes recursos:  
   
 - Ao contrário das funções de banco de dados, as funções de aplicativo não contêm nenhum membro.  
@@ -37,12 +40,15 @@ As funções de aplicativo fornecem uma maneira de atribuir permissões para um 
 - As funções internas que retornam os nomes de logon, como SYSTEM_USER, retornam o nome do logon que chamou a função de aplicativo. As funções internas que retornam os nomes de usuário de banco de dados retornam o nome da função de aplicativo.  
   
 ### <a name="the-principle-of-least-privilege"></a>O princípio de privilégios mínimos  
+
  As funções de aplicativo devem receber somente as permissões necessárias no caso de a senha ser comprometida. As permissões para a função `public` devem ser revogadas em qualquer banco de dados usando uma função de aplicativo. Desative a conta de `guest` em qualquer banco de dados ao qual você não queira que chamadores da função de aplicativo tenham acesso.  
   
 ### <a name="application-role-enhancements"></a>Aprimoramentos da função de aplicativo  
+
  O contexto de execução pode ser alternado de volta para o chamador original após ter ativado uma função do aplicativo, eliminando a necessidade de desativar o pool de conexões. O procedimento `sp_setapprole` tem uma nova opção que cria um cookie, que contém informações de contexto sobre o chamador. Você pode reverter a sessão chamando o procedimento `sp_unsetapprole`, passando o cookie.  
   
 ## <a name="application-role-alternatives"></a>Alternativas a funções de aplicativo  
+
  As funções de aplicativo dependem da segurança de uma senha, que apresenta uma vulnerabilidade de segurança em potencial. As senhas podem ser expostas sendo inseridas no código do aplicativo ou salvas no disco.  
   
  Você pode querer considerar as seguintes alternativas.  
@@ -52,7 +58,8 @@ As funções de aplicativo fornecem uma maneira de atribuir permissões para um 
 - Assine procedimentos armazenados com certificados, concedendo permissão somente para executar os procedimentos. Para obter mais informações, consulte [assinando procedimentos armazenados em SQL Server](signing-stored-procedures-in-sql-server.md).  
   
 ## <a name="external-resources"></a>Recursos externos  
- Para obter mais informações, consulte os seguintes recursos.  
+
+ Para obter mais informações, consulte os recursos a seguir.  
   
 |Recurso|Descrição|  
 |--------------|-----------------|  
@@ -60,7 +67,7 @@ As funções de aplicativo fornecem uma maneira de atribuir permissões para um 
   
 ## <a name="see-also"></a>Consulte também
 
-- [Securing ADO.NET Applications](../securing-ado-net-applications.md) (Protegendo aplicativos ADO.NET)
+- [Protegendo aplicativos ADO.NET](../securing-ado-net-applications.md)
 - [Visão geral de segurança do SQL Server](overview-of-sql-server-security.md)
-- [Cenários de segurança do aplicativo no SQL Server](application-security-scenarios-in-sql-server.md)
-- [ADO.NET Overview](../ado-net-overview.md) (Visão geral do ADO.NET)
+- [Cenários de Segurança de Aplicativo no SQL Server](application-security-scenarios-in-sql-server.md)
+- [Visão geral do ADO.NET](../ado-net-overview.md)

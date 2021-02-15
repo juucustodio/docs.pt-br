@@ -1,28 +1,28 @@
 ---
-title: Criar um aplicativo de console do .NET Core usando Visual Studio Code
-description: Saiba como criar um aplicativo de console do .NET Core usando Visual Studio Code e o CLI do .NET Core.
-ms.date: 05/22/2020
-ms.openlocfilehash: e936c23d8525e42a9d2781cc680067c9da2ce42f
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+title: Criar um aplicativo de console .NET usando Visual Studio Code
+description: Saiba como criar um aplicativo de console .NET usando Visual Studio Code e a CLI do .NET.
+ms.date: 11/17/2020
+ms.openlocfilehash: dbbdf88b0c84089249eb7e446c25eddc11543c1a
+ms.sourcegitcommit: 5114e7847e0ff8ddb8c266802d47af78567949cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88811920"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94915863"
 ---
-# <a name="tutorial-create-a-net-core-console-application-using-visual-studio-code"></a>Tutorial: criar um aplicativo de console do .NET Core usando Visual Studio Code
+# <a name="tutorial-create-a-net-console-application-using-visual-studio-code"></a>Tutorial: criar um aplicativo de console .NET usando o Visual Studio Code
 
-Este tutorial mostra como criar e executar um aplicativo de console do .NET Core usando Visual Studio Code e o CLI do .NET Core. Tarefas de projeto, como criar, compilar e executar um projeto, são feitas usando o CLI do .NET Core. Você pode seguir este tutorial com um editor de código diferente e executar comandos em um terminal, se preferir.
+Este tutorial mostra como criar e executar um aplicativo de console .NET usando Visual Studio Code e a CLI do .NET. Tarefas de projeto, como criar, compilar e executar um projeto, são feitas usando a CLI do .NET. Você pode seguir este tutorial com um editor de código diferente e executar comandos em um terminal, se preferir.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
 1. [Visual Studio Code](https://code.visualstudio.com/) com a [extensão C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) instalada. Para obter informações sobre como instalar extensões em Visual Studio Code, consulte [vs Code Marketplace de extensão](https://code.visualstudio.com/docs/editor/extension-gallery).
-2. O [SDK do .NET Core 3,1 ou posterior](https://dotnet.microsoft.com/download)
+2. O [SDK do .net 5,0 ou posterior](https://dotnet.microsoft.com/download)
 
 ## <a name="create-the-app"></a>Criar o aplicativo
 
-Crie um projeto de aplicativo de console do .NET Core chamado "HelloWorld".
+Crie um projeto de aplicativo de console .NET chamado "HelloWorld".
 
-1. Iniciar o Visual Studio Code.
+1. Inicie o Visual Studio Code.
 
 1. Selecione **arquivo**  >  **abrir pasta** (**arquivo**  >  **aberto...** no MacOS) no menu principal.
 
@@ -110,9 +110,9 @@ Aprimore o aplicativo para solicitar ao usuário seu nome e exibi-lo junto com a
 
 1. Responda ao prompt digitando um nome e pressionando a tecla <kbd>Enter</kbd> .
 
-   :::image type="content" source="media/debugging-with-visual-studio-code/run-modified-program.png" alt-text="Janela do terminal com saída de programa modificada":::
+   :::image type="content" source="media/debugging-with-visual-studio-code/run-modified-program.png" alt-text="Janela do terminal com saída do programa modificada":::
 
-1. Pressione qualquer tecla para sair do programa.
+1. Pressione qualquer tecla para encerrar o programa.
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
@@ -120,7 +120,7 @@ Aprimore o aplicativo para solicitar ao usuário seu nome e exibi-lo junto com a
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Neste tutorial, você criou um aplicativo de console do .NET Core. No próximo tutorial, você depurará o aplicativo.
+Neste tutorial, você criou um aplicativo de console .NET. No próximo tutorial, você depurará o aplicativo.
 
 > [!div class="nextstepaction"]
-> [Depurar um aplicativo de console do .NET Core usando Visual Studio Code](debugging-with-visual-studio-code.md)
+> [Depurar um aplicativo de console .NET usando Visual Studio Code](debugging-with-visual-studio-code.md)

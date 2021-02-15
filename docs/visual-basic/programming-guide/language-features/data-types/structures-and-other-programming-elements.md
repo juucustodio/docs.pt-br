@@ -8,20 +8,22 @@ helpviewer_keywords:
 - arrays [Visual Basic], structure elements
 - nested structures [Visual Basic]
 ms.assetid: 0f849313-ccd2-4c9a-acb9-69de6751c088
-ms.openlocfilehash: dbd24065a954e5611663963371d5a9f4bbbaea68
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 26c98adda7305783b0220141db35b08285b21554
+ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84393488"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91084080"
 ---
 # <a name="structures-and-other-programming-elements-visual-basic"></a>Estruturas e outros elementos de programação (Visual Basic)
+
 Você pode usar estruturas em conjunto com matrizes, objetos e procedimentos, bem como entre si. As interações usam a mesma sintaxe que esses elementos usam individualmente.  
   
 > [!NOTE]
 > Você não pode inicializar nenhum dos elementos de estrutura na declaração de estrutura. Você pode atribuir valores somente a elementos de uma variável que foi declarada como sendo de um tipo de estrutura.  
   
 ## <a name="structures-and-arrays"></a>Estruturas e matrizes  
+
  Uma estrutura pode conter uma matriz como um ou mais de seus elementos. O exemplo a seguir ilustra isto.  
   
 ```vb  
@@ -56,6 +58,7 @@ allSystems(5).diskDrives(2) = "100M SCSI"
 ```  
   
 ## <a name="structures-and-objects"></a>Estruturas e objetos  
+
  Uma estrutura pode conter um objeto como um ou mais de seus elementos. O exemplo a seguir ilustra isto.  
   
 ```vb  
@@ -69,6 +72,7 @@ End Structure
  Você deve usar uma classe de objeto específica em tal declaração, em vez de `Object` .  
   
 ## <a name="structures-and-procedures"></a>Estruturas e procedimentos  
+
  Você pode passar uma estrutura como um argumento de procedimento. O exemplo a seguir ilustra isto.  
   
 ```vb  
@@ -97,6 +101,7 @@ End Function
 ```  
   
 ## <a name="structures-within-structures"></a>Estruturas dentro de estruturas  
+
  Estruturas podem conter outras estruturas. O exemplo a seguir ilustra isto.  
   
 ```vb  
@@ -124,7 +129,7 @@ allSystems(1).diskDrives(0).type = "Floppy"
   
 ## <a name="see-also"></a>Confira também
 
-- [Tipos de dados](index.md)
+- [Data Types](index.md)
 - [Tipos de dados elementares](elementary-data-types.md)
 - [Tipos de dados compostos](composite-data-types.md)
 - [Tipos de valor e referência](value-types-and-reference-types.md)

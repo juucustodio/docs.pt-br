@@ -2,18 +2,18 @@
 title: Marshaling de tipo – .NET
 description: Saiba como o .NET realizar marshal de seus tipos para uma representação nativa.
 ms.date: 01/18/2019
-ms.openlocfilehash: 91b8f3d6cb53fd7a0adea7ea9669e7459e81445f
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: 7fc3dfe950ecd3ed0ff5e4eb0e101c1596a831e1
+ms.sourcegitcommit: 30a686fd4377fe6472aa04e215c0de711bc1c322
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75706260"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94440992"
 ---
 # <a name="type-marshaling"></a>Marshaling de tipo
 
 **Marshaling** é o processo de transformar tipos quando precisam atravessar entre código nativo e gerenciado.
 
-O marshaling é necessário porque os tipos são diferentes, no código gerenciado e não gerenciado. No código gerenciado, por exemplo, você tem um `String`, enquanto nas cadeias de caracteres do mundo não gerenciadas pode ser Unicode ("largo"), não-Unicode, terminação nula, ASCII, etc. Por padrão, o subsistema P/Invoke tenta fazer a coisa certa com base no comportamento padrão, descrito neste artigo. Contudo, nas situações em que você precisa de controle extra, pode utilizar o atributo [MarshalAs](xref:System.Runtime.InteropServices.MarshalAsAttribute) para especificar qual é o tipo esperado no lado não gerenciado. Por exemplo, se você quiser que a cadeia de caracteres seja enviada como uma cadeia de caracteres ANSI terminada em nulo, faça o seguinte:
+O marshaling é necessário porque os tipos são diferentes, no código gerenciado e não gerenciado. No código gerenciado, por exemplo, você tem um `String` , enquanto nas cadeias de caracteres do mundo não gerenciadas pode ser Unicode ("largo"), não-Unicode, terminação nula, ASCII, etc. Por padrão, o subsistema P/Invoke tenta fazer a coisa certa com base no comportamento padrão, descrito neste artigo. Contudo, nas situações em que você precisa de controle extra, pode utilizar o atributo [MarshalAs](xref:System.Runtime.InteropServices.MarshalAsAttribute) para especificar qual é o tipo esperado no lado não gerenciado. Por exemplo, se você quiser que a cadeia de caracteres seja enviada como uma cadeia de caracteres ANSI terminada em nulo, faça o seguinte:
 
 ```csharp
 [DllImport("somenativelibrary.dll")]
@@ -65,7 +65,7 @@ A tabela a seguir inclui as regras de marshaling padrão que são somente do Win
 | `System.ArgIterator` | `va_list` | Não permitido |
 | `System.Collections.IEnumerator` | `IEnumVARIANT*` | Não permitido |
 | `System.Collections.IEnumerable` | `IDispatch*` | Não permitido |
-| `System.DateTimeOffset` | `int64_t` representando o número de tiques desde a meia-noite de 1º de janeiro de 1601 || `int64_t` representando o número de tiques desde a meia-noite de 1º de janeiro de 1601 |
+| `System.DateTimeOffset` | `int64_t` representando o número de tiques desde a meia-noite de 1º de janeiro de 1601 | `int64_t` representando o número de tiques desde a meia-noite de 1º de janeiro de 1601 |
 
 Alguns tipos só podem ter o marshaling realizado como parâmetros e não como campos. Esses tipos estão listados na tabela a seguir:
 
@@ -87,7 +87,7 @@ Quando você chama métodos em objetos COM no .NET, o runtime do .NET altera a r
 | `bool`    | `VARIANT_BOOL`                 |
 | `StringBuilder` | `LPWSTR`                 |
 | `string`  | `BSTR`                         |
-| Tipos delegados | `_Delegate*` no .NET Framework. Não permitido no .NET Core. |
+| Tipos delegados | `_Delegate*` no .NET Framework. Não permitido no .NET Core e no .NET 5 +. |
 | `System.Drawing.Color` | `OLECOLOR`        |
 | Matriz .NET | `SAFEARRAY`                   |
 | `string[]` | `SAFEARRAY` de `BSTR`s        |

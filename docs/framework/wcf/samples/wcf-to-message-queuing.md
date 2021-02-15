@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Windows Communication Foundation ao enfileiramento de mensagens'
 title: Windows Communication Foundation para enfileiramento de mensagens
 ms.date: 03/30/2017
 ms.assetid: 78d0d0c9-648e-4d4a-8f0a-14d9cafeead9
-ms.openlocfilehash: 872632dc7d0a8a94f8829ffb3fe8eea2607697c8
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: ef4fe5f23b4ce462b13e12b706a3a72225a74f8a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84602331"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798180"
 ---
 # <a name="windows-communication-foundation-to-message-queuing"></a>Windows Communication Foundation para enfileiramento de mensagens
 
@@ -97,7 +98,7 @@ Console.WriteLine("Order has been submitted:{0}", po);
 client.Close();
 ```
 
- O cliente usa um cliente personalizado em ordem para enviar a mensagem MSMQ para a fila. Como o aplicativo que recebe e processa a mensagem é um aplicativo MSMQ e não um aplicativo WCF, não há nenhum contrato de serviço implícito entre os dois aplicativos. Portanto, não podemos criar um proxy usando a ferramenta svcutil. exe neste cenário.
+ O cliente usa um cliente personalizado em ordem para enviar a mensagem MSMQ para a fila. Como o aplicativo que recebe e processa a mensagem é um aplicativo MSMQ e não um aplicativo WCF, não há nenhum contrato de serviço implícito entre os dois aplicativos. Portanto, não podemos criar um proxy usando a ferramenta Svcutil.exe neste cenário.
 
  O cliente personalizado é essencialmente o mesmo para todos os aplicativos WCF que usam a `MsmqIntegration` Associação para enviar mensagens. Ao contrário de outros clientes, ele não inclui uma variedade de operações de serviço. É apenas uma operação de envio de mensagem.
 
@@ -131,7 +132,7 @@ public partial class OrderProcessorClient : System.ServiceModel.ClientBase<IOrde
  Quando você executa o exemplo, as atividades de cliente e serviço são exibidas nas janelas do console do cliente e do serviço. Você pode ver o serviço receber mensagens do cliente. Pressione ENTER em cada janela do console para desligar o serviço e o cliente. Observe que, como o enfileiramento está em uso, o cliente e o serviço não precisam estar em funcionamento ao mesmo tempo. Por exemplo, você pode executar o cliente, desligá-lo e, em seguida, iniciar o serviço e ele ainda receberia suas mensagens.
 
 > [!NOTE]
-> Este exemplo requer a instalação do serviço de enfileiramento de mensagens. Consulte as instruções de instalação no [enfileiramento de mensagens](https://docs.microsoft.com/previous-versions/windows/desktop/legacy/ms711472(v=vs.85)).
+> Este exemplo requer a instalação do serviço de enfileiramento de mensagens. Consulte as instruções de instalação no [enfileiramento de mensagens](/previous-versions/windows/desktop/legacy/ms711472(v=vs.85)).
 
 ## <a name="set-up-build-and-run-the-sample"></a>Configurar, compilar e executar o exemplo
 
@@ -143,7 +144,7 @@ public partial class OrderProcessorClient : System.ServiceModel.ClientBase<IOrde
 
     2. Expanda a guia **recursos** .
 
-    3. Clique com o botão direito do mouse em **filas de mensagens particulares**e selecione **nova**  >  **fila particular**.
+    3. Clique com o botão direito do mouse em **filas de mensagens particulares** e selecione **nova**  >  **fila particular**.
 
     4. Marque a caixa **transacional** .
 
@@ -159,11 +160,11 @@ public partial class OrderProcessorClient : System.ServiceModel.ClientBase<IOrde
 
 2. Copie os arquivos de programas do cliente da pasta \client\bin\, na pasta específica do idioma, para o computador cliente.
 
-3. No arquivo client. exe. config, altere o endereço do ponto de extremidade do cliente para especificar o nome do computador de serviço em vez de ".".
+3. No arquivo Client.exe.config, altere o endereço do ponto de extremidade do cliente para especificar o nome do computador de serviço em vez de ".".
 
-4. No computador do serviço, inicie o Service. exe em um prompt de comando.
+4. No computador do serviço, inicie o Service.exe em um prompt de comando.
 
-5. No computador cliente, inicie o Client. exe em um prompt de comando.
+5. No computador cliente, inicie o Client.exe em um prompt de comando.
 
 > [!IMPORTANT]
 > Os exemplos podem mais ser instalados no seu computador. Verifique o seguinte diretório (padrão) antes de continuar.
@@ -176,5 +177,5 @@ public partial class OrderProcessorClient : System.ServiceModel.ClientBase<IOrde
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como trocar mensagens com pontos de extremidade do WCF e aplicativos de enfileiramento de mensagens](../feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)
-- [Enfileiramento de Mensagens](https://docs.microsoft.com/previous-versions/windows/desktop/legacy/ms711472(v=vs.85))
+- [Como: fazer intercâmbio de mensagens com pontos de extremidade do WCF e aplicativos de enfileiramento de mensagens](../feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)
+- [Enfileiramento de Mensagens](/previous-versions/windows/desktop/legacy/ms711472(v=vs.85))

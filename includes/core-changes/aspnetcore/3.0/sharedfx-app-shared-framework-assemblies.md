@@ -1,24 +1,24 @@
 ---
 ms.openlocfilehash: d598d8d3203e804e5e935c3564b0053f9fc2e9a6
-ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84144952"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96032307"
 ---
 ### <a name="shared-framework-assemblies-removed-from-microsoftaspnetcoreapp"></a>Estrutura compartilhada: assemblies removidos do Microsoft. AspNetCore. app
 
 A partir do ASP.NET Core 3,0, a estrutura compartilhada ASP.NET Core ( `Microsoft.AspNetCore.App` ) contém apenas assemblies de terceiros que são totalmente desenvolvidos, com suporte e podem ser atendidos pela Microsoft.
 
-#### <a name="change-description"></a>Descrição da alteração
+#### <a name="change-description"></a>Descrição das alterações
 
 Imagine a alteração como a redefinição de limites para a ASP.NET Core "plataforma". A estrutura compartilhada será [criada de origem por qualquer pessoa por meio do GitHub](https://github.com/dotnet/source-build) e continuará a oferecer os benefícios existentes das estruturas compartilhadas do .NET Core para seus aplicativos. Alguns benefícios incluem tamanho de implantação menor, aplicação de patch centralizada e tempo de inicialização mais rápido.
 
-Como parte da alteração, algumas alterações significativas importantes são introduzidas no `Microsoft.AspNetCore.App` .
+Como parte da alteração, algumas alterações interruptivas importantes são introduzidas em `Microsoft.AspNetCore.App`.
 
 #### <a name="version-introduced"></a>Versão introduzida
 
-3,0
+3.0
 
 #### <a name="old-behavior"></a>Comportamento antigo
 

@@ -3,13 +3,13 @@ title: Alterações da falha e bibliotecas do .NET
 description: Práticas recomendadas para navegar por alterações da falha ao criar bibliotecas .NET.
 ms.date: 10/02/2018
 ms.openlocfilehash: 2cbd9e0a818b52aede6c9b1f60fdf52dcbd7b96f
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: 67ebdb695fd017d79d9f1f7f35d145042d5a37f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "79400417"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92223325"
 ---
-# <a name="breaking-changes"></a>Alterações de quebra
+# <a name="breaking-changes"></a>Alterações da falha
 
 É importante que uma biblioteca .NET encontre um equilíbrio entre a estabilidade para usuários existentes e a inovação para o futuro. Autores de biblioteca tendem a refatorar e repensar o código até que ele fique perfeito, mas causar falhas para seus usuários existentes tem um impacto negativo, especialmente para bibliotecas de baixo nível.
 
@@ -27,7 +27,7 @@ O modo como uma biblioteca é usada pela comunidade do .NET altera o efeito das 
 
 ✔️ PENSE em como sua biblioteca será usada. Que efeito as alterações da falha terão sobre aplicativos e bibliotecas que a usam?
 
-✔️ MINIMIZE as alterações da falha ao desenvolver uma biblioteca do .NET de baixo nível.
+✔️ MINIMIZE as alterações interruptivas ao desenvolver uma biblioteca do .NET de baixo nível.
 
 ✔️ CONSIDERE a possibilidade de publicar uma nova versão significativamente diferente da biblioteca como um novo pacote do NuGet.
 
@@ -64,9 +64,9 @@ Uma alteração da falha binária acontece quando você altera a API pública de
 
 Um alteração da falha binária também pode interromper um **assembly inteiro**. Renomear um assembly com `AssemblyName` alterará a identidade do assembly, o que também ocorrerá ao adicionar, remover ou alterar a chave de nomenclatura forte do assembly. Uma alteração da identidade de um assembly interromperá todo o código compilado que o utiliza.
 
-❌NÃO mude um nome de montagem.
+❌ Não altere um nome de assembly.
 
-❌NÃO adicione, remova ou altere a chave de nomeação forte.
+❌ Não adicione, remova ou altere a chave de nomenclatura forte.
 
 ✔️ CONSIDERE a possibilidade de usar classes base abstratas em vez de interfaces.
 
@@ -100,7 +100,7 @@ public class Document
 
 - [Considerações sobre versão e atualização para os desenvolvedores de C#](../../csharp/whats-new/version-update-considerations.md)
 - [Um guia definitivo para as alterações da falha de API no .NET](https://stackoverflow.com/questions/1456785/a-definitive-guide-to-api-breaking-changes-in-net)
-- [.NET quebrando regras de mudança](https://github.com/dotnet/runtime/blob/master/docs/coding-guidelines/breaking-change-rules.md)
+- [Regras de alteração interruptiva do .NET](https://github.com/dotnet/runtime/blob/master/docs/coding-guidelines/breaking-change-rules.md)
 
 >[!div class="step-by-step"]
 >[Anterior](versioning.md)

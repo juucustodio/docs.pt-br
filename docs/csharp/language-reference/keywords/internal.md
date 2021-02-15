@@ -8,14 +8,15 @@ f1_keywords:
 helpviewer_keywords:
 - internal keyword [C#]
 ms.assetid: 6ee0785c-d7c8-49b8-bb72-0a4dfbcb6461
-ms.openlocfilehash: 14722d66a65eb5f96118acf017dc877e657b2dd9
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: c66f4ff578e9864ebaf2b89ec03ce95f3cb2ba91
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89134569"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91168732"
 ---
 # <a name="internal-c-reference"></a>internal (Referência de C#)
+
 A palavra-chave `internal` é um [modificador de acesso](./access-modifiers.md) para tipos e membros de tipo.
   
  > Esta página aborda o acesso `internal`. A `internal` palavra-chave também faz parte do [`protected internal`](./protected-internal.md) modificador de acesso.
@@ -39,6 +40,7 @@ public class BaseClass
  É um erro fazer referência a um tipo ou um membro com acesso interno fora do assembly no qual ele foi definido.  
   
 ## <a name="example"></a>Exemplo  
+
  Este exemplo contém dois arquivos, `Assembly1.cs` e `Assembly1_a.cs`. O primeiro arquivo contém uma classe base interna `BaseClass`. No segundo arquivo, uma tentativa de instanciar a `BaseClass` produzirá um erro.  
   
 ```csharp  
@@ -63,6 +65,7 @@ class TestAccess
 ```  
   
 ## <a name="example"></a>Exemplo  
+
  Neste exemplo, use os mesmos arquivos que você usou no exemplo 1 e altere o nível de acessibilidade da `BaseClass` para `public`. Também altere o nível de acessibilidade do membro `intM` para `internal`. Nesse caso, você pode instanciar a classe, mas não pode acessar o membro interno.  
   
 ```csharp  

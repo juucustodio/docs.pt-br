@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: amostra de serialização JSON de tipo fraco'
 title: Weakly-typed JSON Serialization Sample
 ms.date: 03/30/2017
 ms.assetid: 0b30e501-4ef5-474d-9fad-a9d559cf9c52
-ms.openlocfilehash: a503878f1cbb60090b648da8dfec741edbf02d1b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 82dba83b27e569c2356598b249c0b9e29ed2e847
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84602317"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798154"
 ---
 # <a name="weakly-typed-json-serialization-sample"></a>Weakly-typed JSON Serialization Sample
+
 Ao serializar um tipo definido pelo usuário para um determinado formato de conexão ou desserializar um formato de conexão de volta para um tipo definido pelo usuário, o tipo definido pelo usuário fornecido deve estar disponível no serviço e no cliente. Normalmente, para fazer isso, o <xref:System.Runtime.Serialization.DataContractAttribute> atributo é aplicado a esses tipos definidos pelo usuário e o <xref:System.Runtime.Serialization.DataMemberAttribute> atributo é aplicado aos seus membros. Esse mecanismo também se aplica ao trabalhar com objetos JavaScript Object Notation (JSON), conforme descrito no tópico [como serializar e desserializar dados JSON](../feature-details/how-to-serialize-and-deserialize-json-data.md).  
   
  Em alguns cenários, um serviço ou cliente do Windows Communication Foundation (WCF) deve acessar objetos JSON gerados por um serviço ou cliente que está fora do controle do desenvolvedor. À medida que mais serviços Web expõem publicamente APIs JSON, pode se tornar impraticável para o desenvolvedor do WCF construir tipos locais definidos pelo usuário para desserializar objetos JSON arbitrários. Este exemplo fornece um mecanismo que permite que os desenvolvedores do WCF trabalhem com objetos JSON desserializados e arbitrários, sem criar tipos definidos pelo usuário. Isso é conhecido como *serialização de tipo fraco* de objetos JSON, pois o tipo no qual um objeto JSON é desserializado não é conhecido no momento da compilação.  
@@ -58,7 +60,7 @@ Ao serializar um tipo definido pelo usuário para um determinado formato de cone
   
  Isso pode ser complicado, especialmente se o cliente tiver que lidar com mais de um tipo de objeto JSON.  
   
- O `JsonObject` tipo fornecido por este exemplo apresenta uma representação de tipo fraco do objeto JSON desserializado. `JsonObject`o depende do mapeamento natural entre objetos JSON e dicionários de .NET Framework e o mapeamento entre matrizes JSON e matrizes de .NET Framework. O código a seguir mostra o `JsonObject` tipo.  
+ O `JsonObject` tipo fornecido por este exemplo apresenta uma representação de tipo fraco do objeto JSON desserializado. `JsonObject` o depende do mapeamento natural entre objetos JSON e dicionários de .NET Framework e o mapeamento entre matrizes JSON e matrizes de .NET Framework. O código a seguir mostra o `JsonObject` tipo.  
   
 ```csharp  
 // Instantiation of JsonObject json omitted  

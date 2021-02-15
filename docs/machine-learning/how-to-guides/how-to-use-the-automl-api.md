@@ -3,12 +3,12 @@ title: Como usar a API de ML automatizado do ML.NET
 description: A API de ML automatizado do ML.NET automatiza o processo de criação de modelo e gera um modelo pronto para implantação. Saiba as opções que você pode usar para configurar tarefas de aprendizado de máquina automatizada.
 ms.date: 12/18/2019
 ms.custom: mvc,how-to
-ms.openlocfilehash: b322c484282d025033d747d2093f7b5b4d216fde
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b1ef526301e01e1e75e71e0646f4d11e68215d69
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "75636556"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90540726"
 ---
 # <a name="how-to-use-the-mlnet-automated-machine-learning-api"></a>Como usar a API de aprendizado de máquina automatizado do ML.NET
 
@@ -70,7 +70,7 @@ Criar configurações de experimento para o tipo de tarefa de ML determinado:
 
 ## <a name="configure-experiment-settings"></a>Definir as configurações de teste
 
-Os experimentos são altamente configuráveis. Veja os [documentos de API de AutoML](https://docs.microsoft.com/dotnet/api/microsoft.ml.automl?view=ml-dotnet-preview) para obter uma lista completa de definições de configuração.
+Os experimentos são altamente configuráveis. Veja os [documentos de API de AutoML](/dotnet/api/microsoft.ml.automl?view=ml-dotnet-preview) para obter uma lista completa de definições de configuração.
 
 Alguns exemplos incluem:
 
@@ -117,13 +117,13 @@ A lista de treinadores com suporte por tarefa de ML pode ser encontrada no link 
 * [Algoritmos de Classificação Binária com Suporte](xref:Microsoft.ML.AutoML.BinaryClassificationTrainer)
 * [Algoritmos de Classificação Multiclasse com Suporte](xref:Microsoft.ML.AutoML.MulticlassClassificationTrainer)
 * [Algoritmos de Regressão com Suporte](xref:Microsoft.ML.AutoML.RegressionTrainer)
-* [Algoritmos de recomendação suportados](xref:Microsoft.ML.AutoML.RecommendationTrainer)
+* [Algoritmos de recomendação com suporte](xref:Microsoft.ML.AutoML.RecommendationTrainer)
 
 ## <a name="optimizing-metric"></a>Métrica de otimização
 
 A métrica da otimiza, conforme mostrado no exemplo acima, determina a métrica a ser otimizada durante o treinamento de modelo. A métrica de otimização que você pode selecionar é determinada pelo tipo de tarefa que você escolher. Abaixo está uma lista de métricas disponíveis.
 
-|[Classificação Binária](xref:Microsoft.ML.AutoML.BinaryClassificationMetric) | [Classificação multiclasse](xref:Microsoft.ML.AutoML.MulticlassClassificationMetric) |[Recomendação de & de regressão](xref:Microsoft.ML.AutoML.RegressionMetric)
+|[Classificação binária](xref:Microsoft.ML.AutoML.BinaryClassificationMetric) | [Classificação multiclasse](xref:Microsoft.ML.AutoML.MulticlassClassificationMetric) |[Regressão & recomendação](xref:Microsoft.ML.AutoML.RegressionMetric)
 |-- |-- |--
 |Precisão| LogLoss | RSquared
 |AreaUnderPrecisionRecallCurve | LogLossReduction | MeanAbsoluteError
@@ -137,7 +137,7 @@ A métrica da otimiza, conforme mostrado no exemplo acima, determina a métrica 
 ## <a name="data-pre-processing-and-featurization"></a>Pré-processamento e personalização de dados
 
 > [!NOTE]
-> A coluna de recursos <xref:System.Boolean>só <xref:System.Single>suportava tipos de , e <xref:System.String>.
+> A coluna de recursos tem suporte apenas para tipos de <xref:System.Boolean> , <xref:System.Single> e <xref:System.String> .
 
 O pré-processamento de dados ocorre por padrão e as etapas a seguir são executadas automaticamente para você:
 
@@ -151,9 +151,9 @@ O pré-processamento de dados ocorre por padrão e as etapas a seguir são execu
 
 1. Gerar recursos adicionais
 
-    Para recursos de texto: Recursos de saco de palavras usando unigramas e três caracteres-gramas.
+    Para recursos de texto: recursos de conjunto de palavras usando unigrams e Tri-Character-grams.
 
-    Para características categóricas: Codificação de um quente para características de baixa cardinalidade, e codificação de hash de um hot-hot para características categóricas de alta cardinalidade.
+    Para recursos categóricos: codificação One-Hot para recursos de cardinalidade baixa e codificação de hash One-Hot para recursos categóricos de alta cardinalidade.
 
 1. Transformações e codificações
 
@@ -227,7 +227,7 @@ Estas são todas as métricas disponíveis por tarefa de ML:
 
 * [Métricas de classificação binária](xref:Microsoft.ML.AutoML.BinaryClassificationMetric)
 * [Métricas de classificação multiclasse](xref:Microsoft.ML.AutoML.MulticlassClassificationMetric)
-* [Métricas de recomendação de regressão &](xref:Microsoft.ML.AutoML.RegressionMetric)
+* [Regressão & métricas de recomendação](xref:Microsoft.ML.AutoML.RegressionMetric)
 
 ## <a name="see-also"></a>Confira também
 

@@ -1,15 +1,16 @@
 ---
-title: Como criar uma associação de sessão confiável personalizada com HTTPS
+description: 'Saiba mais sobre: como criar uma associação de sessão confiável personalizada com HTTPS'
+title: 'Como: criar uma associação de sessão confiável personalizada com HTTPS'
 ms.date: 03/30/2017
 ms.assetid: fa772232-da1f-4c66-8c94-e36c0584b549
-ms.openlocfilehash: 70f8f4f33626ab0d1705e03750bfd9baa324e60a
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 97e0386c3694552099a623a319f566fa4db2a39b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84598990"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756169"
 ---
-# <a name="how-to-create-a-custom-reliable-session-binding-with-https"></a>Como criar uma associação de sessão confiável personalizada com HTTPS
+# <a name="how-to-create-a-custom-reliable-session-binding-with-https"></a>Como: criar uma associação de sessão confiável personalizada com HTTPS
 
 Este tópico demonstra o uso de segurança de transporte de protocolo SSL (SSL) com sessões confiáveis. Para usar uma sessão confiável por HTTPS, você deve criar uma associação personalizada que usa uma sessão confiável e o transporte HTTPS. Você pode habilitar a sessão confiável de maneira imperativa usando código ou declarativamente no arquivo de configuração. Este procedimento usa os arquivos de configuração de cliente e serviço para habilitar a sessão confiável e o [**\<httpsTransport>**](../../configure-apps/file-schema/wcf/httpstransport.md) elemento.
 
@@ -27,7 +28,7 @@ Para a cópia de origem deste exemplo, consulte [sessão confiável de associaç
 
    [!code-csharp[c_HowTo_CreateReliableSessionHTTPS#1122](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_createreliablesessionhttps/cs/service.cs#1122)]
 
-1. Crie um arquivo *Web. config* para configurar um ponto de extremidade para o `CalculatorService` com uma associação personalizada denominada `reliableSessionOverHttps` que usa uma sessão confiável e o transporte HTTPS.
+1. Crie um arquivo de *Web.config* para configurar um ponto de extremidade para o `CalculatorService` com uma associação personalizada denominada `reliableSessionOverHttps` que usa uma sessão confiável e o transporte HTTPS.
 
    [!code-xml[c_HowTo_CreateReliableSessionHTTPS#2111](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_createreliablesessionhttps/common/web.config#2111)]
 
@@ -39,7 +40,7 @@ Para a cópia de origem deste exemplo, consulte [sessão confiável de associaç
 
 ### <a name="configure-the-client-with-a-custombinding-to-use-a-reliable-session-with-https"></a>Configurar o cliente com uma Personalizadabinding para usar uma sessão confiável com HTTPS
 
-1. Use a [ferramenta de utilitário de metadados ServiceModel (*svcutil. exe*)](../servicemodel-metadata-utility-tool-svcutil-exe.md) da linha de comando para gerar código de metadados de serviço.
+1. Use a [ferramenta de utilitário de metadados ServiceModel (*Svcutil.exe*)](../servicemodel-metadata-utility-tool-svcutil-exe.md) da linha de comando para gerar código de metadados de serviço.
 
    ```console
    Svcutil.exe <Metadata Exchange (MEX) address or HTTP GET address>
@@ -65,7 +66,7 @@ Para a cópia de origem deste exemplo, consulte [sessão confiável de associaç
 
 ## <a name="net-framework-security"></a>Segurança do .NET Framework
 
-Como o certificado usado neste exemplo é um certificado de teste criado com *MakeCert. exe*, um alerta de segurança é exibido quando você tenta acessar um endereço https, como `https://localhost/servicemodelsamples/service.svc` , no seu navegador.
+Como o certificado usado neste exemplo é um certificado de teste criado com *Makecert.exe*, um alerta de segurança é exibido quando você tenta acessar um endereço https, como `https://localhost/servicemodelsamples/service.svc` , no seu navegador.
 
 ## <a name="see-also"></a>Consulte também
 

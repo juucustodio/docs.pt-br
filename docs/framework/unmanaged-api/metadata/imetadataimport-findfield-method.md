@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport:: FindField'
 title: Método IMetaDataImport::FindField
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 38cd4e16-fbb2-471c-aa73-ac51a1931ad2
 topic_type:
 - apiref
-ms.openlocfilehash: 11ea6e468909ea42e38bdc7b76c60c460c98025e
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: b8041a37b91f22722a05aec99c92c4f17c2b0610
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503660"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799298"
 ---
 # <a name="imetadataimportfindfield-method"></a>Método IMetaDataImport::FindField
+
 Obtém um ponteiro para o token FieldDef do campo que está incluído pelo especificado <xref:System.Type> e que tem o nome e a assinatura de metadados especificados.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -38,6 +40,7 @@ HRESULT FindField (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `td`  
  no O token de TypeDef para a classe ou interface que inclui o campo a ser pesquisado. Se esse valor for `mdTokenNil` , a pesquisa será feita para uma variável global.  
   
@@ -54,22 +57,24 @@ HRESULT FindField (
  fora Um ponteiro para o token FieldDef correspondente.  
   
 ## <a name="remarks"></a>Comentários  
+
  Você especifica o campo usando sua classe ou interface delimitadora ( `td` ), seu nome ( `szName` ) e, opcionalmente, sua assinatura ( `pvSigBlob` ).  
   
  A assinatura passada para `FindField` deve ter sido gerada no escopo atual, porque as assinaturas estão associadas a um escopo específico. Uma assinatura pode inserir um token que identifica a classe de circunscrição ou o tipo de valor. (O token é um índice na tabela de TypeDef local). Você não pode criar uma assinatura de tempo de execução fora do contexto do escopo atual e usar essa assinatura como entrada para `FindField` .  
   
- `FindField`localiza somente os campos que foram definidos diretamente na classe ou interface; Ele não localiza campos herdados.  
+ `FindField` localiza somente os campos que foram definidos diretamente na classe ou interface; Ele não localiza campos herdados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Incluído como um recurso em MsCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport](imetadataimport-interface.md)
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)

@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: comportamento de transação de serviço'
 title: Comportamento de transação de serviço
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Service Transaction Behavior Sample [Windows Communication Foundation]
 ms.assetid: 1a9842a3-e84d-427c-b6ac-6999cbbc2612
-ms.openlocfilehash: 0be5bf0dbe6416febb898fb5150c5a516c8b0969
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 1f8b76de250ef87ec5ca2d4ea4353a9a28bac248
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84591521"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793058"
 ---
 # <a name="service-transaction-behavior"></a>Comportamento de transação de serviço
 
@@ -207,19 +208,19 @@ O resultado de qualquer um deles é que nenhuma das operações executadas nesse
 
 ### <a name="to-set-up-build-and-run-the-sample"></a>Para configurar, compilar, e executar o exemplo
 
-1. Verifique se você instalou o SQL Server 2005 Express Edition ou o SQL Server 2005. No arquivo app. config do serviço, o banco de dados `connectionString` pode ser definido ou as interações de banco de dados podem ser desabilitadas definindo o valor appSettings `usingSql` como `false` .
+1. Verifique se você instalou o SQL Server 2005 Express Edition ou o SQL Server 2005. No arquivo de App.config do serviço, o banco de dados `connectionString` pode ser definido ou as interações de banco de dados podem ser desabilitadas definindo o valor appSettings `usingSql` como `false` .
 
 2. Para criar a edição C# ou Visual Basic .NET da solução, siga as instruções em [criando os exemplos de Windows Communication Foundation](building-the-samples.md).
 
 3. Para executar o exemplo em uma configuração de computador único ou cruzado, siga as instruções em [executando os exemplos de Windows Communication Foundation](running-the-samples.md).
 
-Se você executar o exemplo entre computadores, deverá configurar o Microsoft Coordenador de Transações Distribuídas (MSDTC) para habilitar o fluxo de transações de rede e usar a ferramenta WsatConfig. exe para habilitar o suporte à rede de transações de Windows Communication Foundation (WCF).
+Se você executar o exemplo entre computadores, deverá configurar o Microsoft Coordenador de Transações Distribuídas (MSDTC) para habilitar o fluxo de transações de rede e usar a ferramenta de WsatConfig.exe para habilitar o suporte à rede de transações Windows Communication Foundation (WCF).
 
 ### <a name="to-configure-the-microsoft-distributed-transaction-coordinator-msdtc-to-support-running-the-sample-across-machines"></a>Para configurar o Microsoft Coordenador de Transações Distribuídas (MSDTC) para dar suporte à execução do exemplo entre computadores
 
 1. No computador de serviço, configure o MSDTC para permitir transações de rede de entrada.
 
-    1. No menu **Iniciar** , navegue até **painel de controle**, **Ferramentas administrativas**e serviços de **componentes**.
+    1. No menu **Iniciar** , navegue até **painel de controle**, **Ferramentas administrativas** e serviços de **componentes**.
 
     2. Clique com o botão direito do mouse em **meu computador** e selecione **Propriedades**.
 
@@ -239,13 +240,13 @@ Se você executar o exemplo entre computadores, deverá configurar o Microsoft C
 
     3. Navegue até a pasta C:\WINDOWS\System32.
 
-    4. Selecione MSDTC. exe e clique em **abrir**.
+    4. Selecione Msdtc.exe e clique em **abrir**.
 
     5. Clique em **OK** para fechar a caixa de diálogo **Adicionar programa** e clique em **OK** novamente para fechar o miniaplicativo Firewall do Windows.
 
 3. No computador cliente, configure o MSDTC para permitir transações de rede de saída:
 
-    1. No menu **Iniciar** , navegue até **painel de controle**, **Ferramentas administrativas**e serviços de **componentes**.
+    1. No menu **Iniciar** , navegue até **painel de controle**, **Ferramentas administrativas** e serviços de **componentes**.
 
     2. Clique com o botão direito do mouse em **meu computador** e selecione **Propriedades**.
 

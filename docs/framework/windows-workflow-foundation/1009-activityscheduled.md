@@ -1,28 +1,32 @@
 ---
+description: 'Saiba mais sobre: 1009-ActivityScheduled'
 title: 1009 - ActivityScheduled
 ms.date: 03/30/2017
 ms.assetid: 307e38b6-d47e-47a4-9708-e74d8314b1a1
-ms.openlocfilehash: 0e3ea53a7b0509fcb8b73b61193742d615ac7e91
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 80ee250955a03927fb9db2b1242d420be77a6df8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61924651"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99755545"
 ---
 # <a name="1009---activityscheduled"></a>1009 - ActivityScheduled
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
 |ID|1009|  
 |Palavras-chave|WFRuntime|  
-|Nível|Informações|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
+
  Indica que uma atividade está sendo agendada para a execução.  
   
 ## <a name="message"></a>Mensagem  
+
  Atividade pai “%1", DisplayName: “%2", InstanceId: “%3" agendaram a atividade filho “%4", DisplayName: “%5", InstanceId: “%6".  
   
 ## <a name="details"></a>Detalhes  

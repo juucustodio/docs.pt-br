@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IAssemblyCacheItem:: CreateStream'
 title: Método IAssemblyCacheItem::CreateStream
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 697ab0f4-470c-4baa-a415-4a975c42d0d5
 topic_type:
 - apiref
-ms.openlocfilehash: 0660621f465f2ba3610e06bd1df38baa1bc5c907
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 89592d8fe1a7f43a7da20dd10883881c3339f088
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73134479"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760857"
 ---
 # <a name="iassemblycacheitemcreatestream-method"></a>Método IAssemblyCacheItem::CreateStream
 
@@ -57,7 +58,7 @@ no Sinalizadores específicos de formato definidos em Fusion. idl.
 fora Um ponteiro para o endereço da instância de [IStream](/windows/desktop/api/objidl/nn-objidl-istream) retornada.
 
 `puliMaxSize`\
-[in, opcional] O tamanho máximo do fluxo referenciado por `ppIStream`.
+[in, opcional] O tamanho máximo do fluxo referenciado por `ppIStream` .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,7 +66,7 @@ fora Um ponteiro para o endereço da instância de [IStream](/windows/desktop/ap
 
 **Cabeçalho:** Fusion. h
 
-**Versões do .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+**.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
 
 ## <a name="see-also"></a>Consulte também
 

@@ -2,22 +2,21 @@
 title: Criando uma instância de um objeto DateTimeOffset
 description: Leia como instanciar (criar uma instância de) um objeto DateTimeOffset no .NET. Saiba mais sobre data & literais de tempo, construtores, conversão de tipo implícito & mais.
 ms.date: 04/10/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - instantiating time zone objects
-- time zone objects [.NET Framework], instantiation
+- time zone objects [.NET], instantiation
 - DateTimeOffset structure, converting to DateTime
 - DateTimeOffset structure, instantiating
 ms.assetid: 9648375f-d368-4373-a976-3332ece00c0a
-ms.openlocfilehash: c2b71a2a98353a4ec9ed249acf18939dd4740e99
-ms.sourcegitcommit: 5fd4696a3e5791b2a8c449ccffda87f2cc2d4894
+ms.openlocfilehash: b0eae79e9c39694bdc87622a4c442083791c6109
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84768892"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94817803"
 ---
 # <a name="instantiating-a-datetimeoffset-object"></a>Criando uma instância de um objeto DateTimeOffset
 
@@ -39,7 +38,7 @@ Para idiomas que dão suporte a ele, uma das maneiras mais comuns de instanciar 
 
 [!code-vb[System.DateTimeOffset.Conceptual.Instantiate#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.Instantiate/vb/Instantiate.vb#1)]
 
-<xref:System.DateTimeOffset>os valores também podem ser inicializados usando literais de data e hora ao usar linguagens que dão suporte a <xref:System.DateTime> literais. Por exemplo, o código de Visual Basic a seguir cria um <xref:System.DateTimeOffset> objeto.
+<xref:System.DateTimeOffset> os valores também podem ser inicializados usando literais de data e hora ao usar linguagens que dão suporte a <xref:System.DateTime> literais. Por exemplo, o código de Visual Basic a seguir cria um <xref:System.DateTimeOffset> objeto.
 
 [!code-vb[System.DateTimeOffset.Conceptual.Instantiate#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.Instantiate/vb/Instantiate.vb#2)]
 
@@ -93,6 +92,6 @@ O exemplo a seguir ilustra as chamadas para cada um desses quatro métodos de co
 [!code-csharp[System.DateTimeOffset.Conceptual.Instantiate#7](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.Instantiate/cs/Instantiate.cs#7)]
 [!code-vb[System.DateTimeOffset.Conceptual.Instantiate#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.Instantiate/vb/Instantiate.vb#7)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Datas, horas e fusos horários](index.md)

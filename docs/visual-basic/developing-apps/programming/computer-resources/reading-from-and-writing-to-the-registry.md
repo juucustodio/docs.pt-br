@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: leitura e gravação no registro (Visual Basic)'
 title: Ler e gravar no Registro
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - registry [Visual Basic], writing to
 - registry [Visual Basic], reading
 ms.assetid: a13da106-185b-41d7-b23c-416da65e21e4
-ms.openlocfilehash: bb400ef89edaa4eb743aee3a7f2cc5b9dfec4534
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 0a9e32480845e617f6e4fde2f31c58eea8da4ee7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84360053"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99701541"
 ---
 # <a name="reading-from-and-writing-to-the-registry-visual-basic"></a>Lendo e gravando a partir do Registro (Visual Basic)
 
 Este tópico descreve as tarefas e tópicos conceituais associados ao Registro.  
   
- Ao programar em Visual Basic, você pode optar por acessar o Registro por meio das funções fornecidas pelo Visual Basic ou das classes de Registro do .NET Framework. O Registro hospeda informações do sistema operacional, bem como informações de aplicativos hospedados no computador. Trabalhar com o Registro pode comprometer a segurança ao permitir o acesso inadequado aos recursos do sistema ou a informações protegidas.  
+ Ao programar em Visual Basic, você pode optar por acessar o registro por meio das funções fornecidas pelo Visual Basic ou pelas classes de registro do .NET. O Registro hospeda informações do sistema operacional, bem como informações de aplicativos hospedados no computador. Trabalhar com o Registro pode comprometer a segurança ao permitir o acesso inadequado aos recursos do sistema ou a informações protegidas.  
   
 ## <a name="in-this-section"></a>Nesta seção  
 
@@ -31,7 +32,7 @@ Este tópico descreve as tarefas e tópicos conceituais associados ao Registro.
  Descreve como usar o método `DeleteSubKey` da propriedade `My.Computer.Registry.CurrentUser` para excluir uma chave do Registro.  
   
  [Ler e gravar no Registro usando o namespace Microsoft.Win32](reading-from-and-writing-to-the-registry-using-the-microsoft-win32-namespace.md)  
- Descreve como usar as classes `Registry` e `RegistryKey` do .NET Framework para acessar o Registro.  
+ Descreve como usar as `Registry` classes e `RegistryKey` do .net para acessar o registro.  
   
  [Segurança e Registro](security-and-the-registry.md)  
  Aborda questões de segurança que envolvem o Registro.  

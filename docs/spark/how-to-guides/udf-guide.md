@@ -1,21 +1,21 @@
 ---
 title: Criar funções definidas pelo usuário (UDF) no .NET para Apache Spark
 description: Saiba como implementar o UDF (funções definidas pelo usuário) no .NET para aplicativos Apache Spark.
-ms.date: 06/25/2020
+ms.author: nidutta
+author: Niharikadutta
+ms.date: 10/09/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
-ms.openlocfilehash: 97afda8ed17d3719c534d72ad3ad026745a70922
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 50e631b0c561ebdf081d4c1b7d16bf25abb322e5
+ms.sourcegitcommit: 67ebdb695fd017d79d9f1f7f35d145042d5a37f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85620918"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92224182"
 ---
 # <a name="create-user-defined-functions-udf-in-net-for-apache-spark"></a>Criar funções definidas pelo usuário (UDF) no .NET para Apache Spark
 
 Neste artigo, você aprenderá a usar o UDF (funções definidas pelo usuário) no .NET para Apache Spark. [UDFs)](https://spark.apache.org/docs/latest/api/java/org/apache/spark/sql/expressions/UserDefinedFunction.html) o é um recurso do Spark que permite usar funções personalizadas para estender a funcionalidade interna do sistema. Os UDFs transformam valores de uma única linha dentro de uma tabela para produzir um único valor de saída correspondente por linha com base na lógica definida no UDF.
-
-[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## <a name="define-udfs"></a>Definir UDFs
 
@@ -186,6 +186,12 @@ Observe que `func` e `func2` não compartilha mais um fechamento e eles têm seu
 
 * Valores nulos em UDFs podem gerar exceções. É responsabilidade do desenvolvedor tratá-los.
 * As UDFs não aproveitam as otimizações fornecidas pelas funções internas do Spark, portanto, é recomendável usar funções internas sempre que possível.
+
+## <a name="faqs"></a>Perguntas frequentes
+
+**Por que obtenho o erro `System.NotImplementedException: The method or operation is not implemented.` ou `System.InvalidCastException: Unable to cast object of type 'System.Collections.Hashtable' to type 'System.Collections.Generic.IDictionary` ao tentar chamar um UDF com o `ArrayType` `MapType` `ArrayList` `HashTable` argumento ou o tipo de retorno?**  
+O suporte para `ArrayType` e `MapType` não é fornecido até [v 1.0](https://github.com/dotnet/spark/releases/tag/v1.0.0)e, portanto, você receberá esse erro se estiver usando um .net para Apache Spark versão anterior a ele e tentar passar esses tipos como argumentos para o UDF ou como um tipo de retorno.
+`ArrayList` os `HashTable` tipos e não podem ser suportados como tipos de retorno de um UDF, pois são coleções não genéricas e, portanto, suas definições de tipo de elemento não podem ser fornecidas para o Spark.
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -2,6 +2,7 @@
 title: Introdução à char codificação acter no .net
 description: Saiba mais sobre char codificação e decodificação de acter no .net.
 ms.date: 03/09/2020
+ms.topic: conceptual
 no-loc:
 - Rune
 - char
@@ -10,20 +11,20 @@ dev_langs:
 - csharp
 helpviewer_keywords:
 - encoding, understanding
-ms.openlocfilehash: d1f9878c7e7c07944a943c0b05e557ceaa5d1b2f
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: 92710e2d223d1d765efc7e877cb16546ef372907
+ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88812114"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "98693131"
 ---
 # <a name="character-encoding-in-net"></a>Codificação de caracteres no .NET
 
 Este artigo fornece uma introdução aos char sistemas de codificação acter que são usados pelo .net. O artigo explica como os <xref:System.String> tipos,, <xref:System.Char> <xref:System.Text.Rune> e <xref:System.Globalization.StringInfo> funcionam com Unicode, UTF-16 e UTF-8.
 
-O termo * char acter* é usado aqui no sentido geral do *que um leitor percebe como um único elemento de exibição*. Exemplos comuns são a letra "a", o símbolo "@" e o Emoji " 🐂 ". Às vezes, o que parece um char acter é, na verdade, composto por vários elementos de exibição independentes, como explica a seção sobre [clusters grafemas](#grapheme-clusters) .
+O termo *char acter* é usado aqui no sentido geral do *que um leitor percebe como um único elemento de exibição*. Exemplos comuns são a letra "a", o símbolo "@" e o Emoji " 🐂 ". Às vezes, o que parece um char acter é, na verdade, composto por vários elementos de exibição independentes, como explica a seção sobre [clusters grafemas](#grapheme-clusters) .
 
-## <a name="the-no-locstring-and-no-locchar-types"></a>Os string char tipos e
+## <a name="the-string-and-char-types"></a>Os string char tipos e
 
 Uma instância da [string](xref:System.String) classe representa algum texto. Um `string` é logicamente uma sequência de valores de 16 bits, cada um deles é uma instância da [char](xref:System.Char) estrutura. O [ string . Propriedade Length](xref:System.String.Length) retorna o número de `char` instâncias na `string` instância.
 
@@ -110,7 +111,7 @@ Aqui estão alguns exemplos de atribuições de ponto de código, com links para
 |Decimal|Hex       |Exemplo|Descrição|
 |------:|----------|-------|-----------|
 |10     | `U+000A` |N/D| [ALIMENTAÇÃO DE LINHA](https://www.unicode.org/charts/PDF/U0000.pdf) |
-|65     | `U+0061` | um | [LETRA LATINA MINÚSCULA A](https://www.unicode.org/charts/PDF/U0000.pdf) |
+|97     | `U+0061` | um | [LETRA LATINA MINÚSCULA A](https://www.unicode.org/charts/PDF/U0000.pdf) |
 |562    | `U+0232` | Ȳ | [LETRA LATINA MAIÚSCULA Y COM MACRON](https://www.unicode.org/charts/PDF/U0180.pdf) |
 |68.675 | `U+10C43`| 𐱃 | [ANTIGA LETRA TURCO ORKHON EM](https://www.unicode.org/charts/PDF/U10C00.pdf) |
 |127.801| `U+1F339`| 🌹 | [Emoji rosa](https://www.unicode.org/charts/PDF/U1F300.pdf) |
@@ -186,7 +187,7 @@ O diagrama a seguir ilustra os pontos de código de valor escalar.
 
 :::image type="content" source="media/:::no-Loc (Char)::: acter-Encoding-Introduction/Scalar-Values. svg "alt-text =" valores escalares ":::
 
-### <a name="the-no-locrune-type-as-a-scalar-value"></a>O Rune tipo como um valor escalar
+### <a name="the-rune-type-as-a-scalar-value"></a>O Rune tipo como um valor escalar
 
 A partir do .NET Core 3,0, o <xref:System.Text.Rune?displayProperty=fullName> tipo representa um valor escalar Unicode. **`Rune` Não está disponível no .NET Core 2. x ou .NET Framework 4. x.**
 
@@ -202,7 +203,7 @@ O exemplo a seguir gera uma exceção porque o ponto de código está além do i
 
 ::: código Language = "CSharp" origem = "Snippets/ char acter-Encoding-Introduction/Csharp/instancie Rune s.cs" ID = "SnippetInvalidHigh":::
 
-### <a name="no-locrune-usage-example-changing-letter-case"></a>Rune exemplo de uso: alterando o caso da letra
+### <a name="rune-usage-example-changing-letter-case"></a>Rune exemplo de uso: alterando o caso da letra
 
 Uma API que usa `char` e pressupõe que está trabalhando com um ponto de código que é um valor escalar não funciona corretamente se `char` for de um par substituto. Por exemplo, considere o seguinte método que chama <xref:System.Char.ToUpperInvariant%2A?displayProperty=nameWithType> em cada char um string :
 
@@ -217,7 +218,7 @@ Aqui estão duas opções para converter corretamente um string em maiúsculas:
 
   ::: código Language = "CSharp" origem = "Snippets/ char acter-Encoding-Introduction/Csharp/ConvertToUpper. cs" ID = "SnippetGoodExample":::
 
-### <a name="other-no-locrune-apis"></a>Outras Rune APIs
+### <a name="other-rune-apis"></a>Outras Rune APIs
 
 O `Rune` tipo expõe as analogias de muitas das `char` APIs. Por exemplo, os métodos a seguir espelham APIs estáticas no `char` tipo:
 
@@ -264,7 +265,7 @@ Em alguns dos exemplos anteriores, como o modificador de acentuação de acento 
 
 Para enumerar os clusters grafemas de um `string` , use a <xref:System.Globalization.StringInfo> classe, conforme mostrado no exemplo a seguir. Se você estiver familiarizado com o Swift, o `StringInfo` tipo .net será conceitualmente semelhante ao [ `character` tipo de Swift](https://developer.apple.com/documentation/swift/character).
 
-### <a name="example-count-no-locchar-no-locrune-and-text-element-instances"></a>Exemplo: contagem char , Rune e instâncias de elemento de texto
+### <a name="example-count-char-rune-and-text-element-instances"></a>Exemplo: contagem char , Rune e instâncias de elemento de texto
 
 Em APIs do .NET, um cluster grafemas é chamado de *elemento de texto*. O método a seguir demonstra as diferenças entre o `char` , o `Rune` e as instâncias de elemento de texto em um `string` :
 
@@ -274,7 +275,7 @@ Em APIs do .NET, um cluster grafemas é chamado de *elemento de texto*. O métod
 
 Se você executar esse código no .NET Framework ou no .NET Core 3,1 ou anterior, a contagem de elementos de texto para o emoji será mostrada `4` . Isso ocorre devido a um bug na `StringInfo` classe que é corrigido no .NET 5.
 
-### <a name="example-splitting-no-locstring-instances"></a>Exemplo: dividindo string instâncias
+### <a name="example-splitting-string-instances"></a>Exemplo: dividindo string instâncias
 
 Ao dividir `string` instâncias, evite dividir pares substitutos e clusters grafemas. Considere o seguinte exemplo de código incorreto, que pretende inserir quebras de linha a cada 10 char acters em um string :
 

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <filter> elemento para <add> para para <listeners><source>'
 title: <filter>Elemento para <add> para para <listeners><source>
 ms.date: 03/30/2017
 f1_keywords:
@@ -9,14 +10,15 @@ helpviewer_keywords:
 - <filter> element for <add> for <listeners> for <source>
 - filter element for <add> for <listeners> for <source>
 ms.assetid: 15808b80-4579-4c25-b385-178cfdf154ba
-ms.openlocfilehash: 0cb668782de263d5f784691f46cb8b74541d942b
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 65233aa2d9ea000d1d27d0241c734bee7097b7ca
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79153510"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782254"
 ---
 # <a name="filter-element-for-add-for-listeners-for-source"></a>\<filter>Elemento para \<add> para para \<listeners>\<source>
+
 Adiciona um filtro a um ouvinte na coleção `Listeners` de uma origem de rastreamento.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -27,7 +29,7 @@ Adiciona um filtro a um ouvinte na coleção `Listeners` de uma origem de rastre
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<add>**](add-element-for-listeners-for-source.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<filter>**
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <filter
@@ -36,6 +38,7 @@ Adiciona um filtro a um ouvinte na coleção `Listeners` de uma origem de rastre
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -46,6 +49,7 @@ Adiciona um filtro a um ouvinte na coleção `Listeners` de uma origem de rastre
 |`initializeData`|Atributo opcional.<br /><br /> A cadeia de caracteres passada para o construtor da classe de filtro especificada.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -60,11 +64,13 @@ Adiciona um filtro a um ouvinte na coleção `Listeners` de uma origem de rastre
 |`add`|Adiciona um ouvinte na coleção `Listeners` de uma origem de rastreamento.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O `<filter>` elemento deve estar contido em um `<add>` elemento para um ouvinte de origem de rastreamento que especifica o tipo do ouvinte, não apenas o nome de um ouvinte definido em um [\<sharedListeners>](sharedlisteners-element.md) . Se o ouvinte for definido em um [\<sharedListeners>](sharedlisteners-element.md) , o filtro para esse ouvinte deverá ser definido nesse elemento.  
   
- Esse elemento pode ser usado no arquivo de configuração da máquina (Machine. config) e no arquivo de configuração do aplicativo.  
+ Esse elemento pode ser usado no arquivo de configuração da máquina (Machine.config) e no arquivo de configuração do aplicativo.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir mostra como usar o `<filter>` elemento para adicionar um filtro ao ouvinte `console` na `Listeners` coleção para a origem de rastreamento `myTraceSource` , especificando o nível de evento de filtro como `Error` .  
   
 ```xml  
@@ -90,7 +96,7 @@ Adiciona um filtro a um ouvinte na coleção `Listeners` de uma origem de rastre
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Diagnostics.TraceSource>
 - <xref:System.Diagnostics.TraceListener>

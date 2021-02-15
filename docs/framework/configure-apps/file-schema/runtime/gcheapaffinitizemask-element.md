@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: <GCHeapAffinitizeMask> elemento'
 title: Elemento GCHeapAffinitizeMask
 ms.date: 11/08/2019
 helpviewer_keywords:
 - gcHeapCount element
 - <gcHeapCount> element
-ms.openlocfilehash: 09d6523fb10692dd3617a3827d5bccf112bc632b
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: ea6be3fa3d973f228576db69d0700b1f7ddba585
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73978378"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99786974"
 ---
 # <a name="gcheapaffinitizemask-element"></a>Elemento \<GCHeapAffinitizeMask>
 
@@ -19,7 +20,7 @@ Define a afinidade entre heaps de GC e processadores individuais.
 &nbsp;&nbsp;\<runtime>\
 &nbsp;&nbsp;&nbsp;&nbsp;\<GCHeapAffinitizeMask>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <GCHeapAffinitizeMask
@@ -85,7 +86,7 @@ O exemplo a seguir indica que um aplicativo usa GC de servidor com 10 heaps/thre
 </configuration>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=nameWithType>
 - [Elemento GCNoAffinitize](gcnoaffinitize-element.md)

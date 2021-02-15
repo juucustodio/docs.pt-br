@@ -1,14 +1,14 @@
 ---
 title: Introdução ao C# – tutoriais interativos
 description: Aprenda C# em seu navegador e comece a trabalhar com seu próprio ambiente de desenvolvimento
-ms.date: 08/22/2019
+ms.date: 02/02/2021
 ms.custom: mvc
-ms.openlocfilehash: 965fa9dba559b967d3d1ce8d661cd08235c59f70
-ms.sourcegitcommit: 71b8f5a2108a0f1a4ef1d8d75c5b3e129ec5ca1e
+ms.openlocfilehash: 62856206c30afac04346d150560c458c6795077d
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84202429"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585644"
 ---
 # <a name="introduction-to-c"></a>Introdução ao C\#
 
@@ -22,7 +22,7 @@ As primeiras lições explicam os conceitos de C# usando pequenos snippets de c�
 Você pode experimentar esses tutoriais em ambientes diferentes. Os conceitos que você aprenderá são os mesmos. A diferença é qual experiência você prefere:
 
 - [No navegador, na plataforma docs](hello-world.yml): essa experiência incorpora uma janela de código do C# executável em páginas de documentos. Você escreve e executa o código C# no navegador.
-- [Na experiência de Microsoft Learn](https://docs.microsoft.com/learn/paths/csharp-first-steps/). Este roteiro de aprendizagem contém vários módulos que ensinam as noções básicas do C#.
+- [Na experiência de Microsoft Learn](/learn/paths/csharp-first-steps/). Este roteiro de aprendizagem contém vários módulos que ensinam as noções básicas do C#.
 - [No Jupyter no fichário](https://mybinder.org/v2/gh/dotnet/try-samples/master?filepath=hello-csharp%2Fhello-world.ipynb). Você pode experimentar o código C# em um notebook Jupyter no fichário.
 - [No computador local](numbers-in-csharp-local.md). Depois de explorar online, você pode [baixar](https://dotnet.microsoft.com/download) o SDK do .NET Core e criar programas em seu computador.
 
@@ -30,7 +30,7 @@ Todos os tutoriais de introdução posteriores à lição Olá, Mundo estão dis
 
 ## <a name="hello-world"></a>[Olá, mundo](hello-world.yml)
 
-No tutorial [Olá, Mundo](hello-world.yml), você criará o programa C# mais básico. Você explorará o tipo `string` e como trabalhar com texto. Você também pode usar o caminho em [Microsoft Learn](https://docs.microsoft.com/learn/paths/csharp-first-steps/) ou [Jupyter no fichário](https://mybinder.org/v2/gh/dotnet/try-samples/master?filepath=hello-csharp%2Fhello-world.ipynb).
+No tutorial [Olá, Mundo](hello-world.yml), você criará o programa C# mais básico. Você explorará o tipo `string` e como trabalhar com texto. Você também pode usar o caminho em [Microsoft Learn](/learn/paths/csharp-first-steps/) ou [Jupyter no fichário](https://mybinder.org/v2/gh/dotnet/try-samples/master?filepath=hello-csharp%2Fhello-world.ipynb).
 
 ## <a name="numbers-in-c"></a>[Números em C#](numbers-in-csharp.yml)
 
@@ -52,7 +52,17 @@ Este tutorial pressupõe que você concluiu as lições listadas acima.
 
 ## <a name="introduction-to-classes"></a>[Introdução às classes](introduction-to-classes.md)
 
-Este tutorial final está disponível apenas para execução no seu computador usando seu próprio ambiente de desenvolvimento local e o .NET Core.
+Este tutorial só está disponível para ser executado em seu computador, usando seu próprio ambiente de desenvolvimento local e o .NET Core.
 Você compilará um aplicativo de console e verá os recursos básicos orientados para objeto que fazem parte da linguagem C#.
 
 Este tutorial pressupõe a conclusão dos tutoriais de introdução online e a instalação do [SDK do .NET Core](https://dotnet.microsoft.com/download) e do [Visual Studio Code](https://code.visualstudio.com/).
+
+## <a name="object-oriented-programming"></a>[Programação orientada a objeto](object-oriented-programming.md)
+
+Este tutorial ensina os conceitos usados na programação orientada a objeto. Você aprenderá os conceitos de *abstração*, *encapsulamento*, *herança* e *polimorfismo* usando exemplos de C#.
+
+Este tutorial pressupõe que você concluiu os tutoriais de introdução online e instalou [SDK do .NET Core](https://dotnet.microsoft.com/download) e [Visual Studio Code](https://code.visualstudio.com/) ou o [Visual Studio](https://visualstudio.com) em seu computador de desenvolvimento.
+
+## <a name="101-linq-samples"></a>[Exemplos de LINQ 101](https://github.com/dotnet/try-samples/tree/master/101-linq-samples)
+
+Este exemplo requer a ferramenta global [dotnet-try](https://github.com/dotnet/try/blob/main/README.md#setup) . Depois de instalar a ferramenta e clonar o repositório [try-Samples](https://github.com/dotnet/try-samples) , você pode aprender LINQ (consulta integrada à linguagem) por meio de um conjunto de exemplos de 101 que podem ser executados interativamente. Você pode explorar diferentes maneiras de consultar, explorar e transformar sequências de dados.

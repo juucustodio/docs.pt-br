@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICoreClrDebugTarget:: EnumProcesses'
 title: Método ICoreClrDebugTarget::EnumProcesses
 ms.date: 03/30/2017
 api_name:
@@ -17,14 +18,15 @@ helpviewer_keywords:
 ms.assetid: e00fd477-4f49-43d3-bd0e-3094824b1136
 topic_type:
 - apiref
-ms.openlocfilehash: 0c1b18f24fd30b5f6d5e85633fc0c25839aba6df
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: 73dc8a2b00f7a57879855158e6b871117d015f3c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396416"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738033"
 ---
 # <a name="icoreclrdebugtargetenumprocesses-method"></a>Método ICoreClrDebugTarget::EnumProcesses
+
 Enumera os processos que estão sendo executados em um computador remoto.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,6 +39,7 @@ HRESULT EnumProcesses (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pcProcs`  
  fora O número de processos retornados em `ppProcs` . Esse valor pode ser 0 (zero).  
   
@@ -44,8 +47,9 @@ HRESULT EnumProcesses (
  fora Uma matriz de estruturas [CoreClrDebugProcInfo](coreclrdebugprocinfo-structure.md) que representam os processos em execução no computador remoto.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  S_OK  
- Êxito.  
+ Sucesso.  
   
  E_OUTOFMEMORY  
  Não é possível alocar memória suficiente para `ppProcs` .  
@@ -54,17 +58,19 @@ HRESULT EnumProcesses (
  Outras falhas.  
   
 ## <a name="remarks"></a>Comentários  
+
  Para liberar a memória que foi alocada por esse método, chame o método [ICoreClrDebugTarget:: freememory](icoreclrdebugtarget-freememory-method.md) .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CoreClrRemoteDebuggingInterfaces. h  
   
- **Biblioteca:** mscordbi_macx86. dll  
+ **Biblioteca:** mscordbi_macx86.dll  
   
  **Versões do .NET Framework:** 3,5 SP1  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICoreClrDebugTarget](icoreclrdebugtarget-interface.md)

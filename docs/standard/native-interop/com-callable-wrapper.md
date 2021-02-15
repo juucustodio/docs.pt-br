@@ -13,12 +13,12 @@ helpviewer_keywords:
 - interoperation with unmanaged code, COM wrappers
 - COM callable wrappers
 ms.assetid: d04be3b5-27b9-4f5b-8469-a44149fabf78
-ms.openlocfilehash: c42ea0b5ba4cb01304ceae4ba2d2fc91b629a9b3
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: cc27ba47c88d424a80eb47aaa310bdfd6d18433a
+ms.sourcegitcommit: 7588b1f16b7608bc6833c05f91ae670c22ef56f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420520"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "93187912"
 ---
 # <a name="com-callable-wrapper"></a>COM Callable Wrapper
 
@@ -42,18 +42,18 @@ Ao contrário do cliente .NET encapsulado por ele, o CCW é contado por referên
 
 O CCW expõe todas as interfaces públicas visíveis para o COM, os tipos de dados e os valores retornados para clientes COM de uma maneira consistente com a exigência do COM em relação à interação baseada em interface. Para um cliente COM, a invocação de métodos em um objeto .NET é idêntica à invocação de métodos em um objeto COM.
 
-Para criar essa abordagem direta, o CCW fabrica interfaces COM tradicionais, como **IUnknown** e **IDispatch**. Como mostra a ilustração a seguir, o CCW mantém uma única referência no objeto .NET encapsulado por ele. O cliente COM e o objeto .NET interagem mutuamente por meio do proxy e da construção de stub do CCW.
+Para criar essa abordagem direta, o CCW fabrica interfaces COM tradicionais, como **IUnknown** e **IDispatch** . Como mostra a ilustração a seguir, o CCW mantém uma única referência no objeto .NET encapsulado por ele. O cliente COM e o objeto .NET interagem mutuamente por meio do proxy e da construção de stub do CCW.
 
 ![Diagrama que mostra como a CCW fabrica interfaces COM.](./media/com-callable-wrapper/com-callable-wrapper-interfaces.gif)
 
-Além de expor as interfaces que são implementadas explicitamente por uma classe no ambiente gerenciado, o runtime do .NET fornece implementações das interfaces COM listadas na tabela a seguir em nome do objeto. Uma classe .NET pode substituir o comportamento padrão fornecendo sua própria implementação dessas interfaces. No entanto, o runtime sempre fornece a implementação para as interfaces **IUnknown** e **IDispatch**.
+Além de expor as interfaces que são implementadas explicitamente por uma classe no ambiente gerenciado, o runtime do .NET fornece implementações das interfaces COM listadas na tabela a seguir em nome do objeto. Uma classe .NET pode substituir o comportamento padrão fornecendo sua própria implementação dessas interfaces. No entanto, o runtime sempre fornece a implementação para as interfaces **IUnknown** e **IDispatch** .
 
 |Interface|Descrição|
 |---------------|-----------------|
 |**IDispatch**|Fornece um mecanismo de associação tardia ao tipo.|
 |**IErrorInfo**|Fornece uma descrição textual do erro, sua origem, um arquivo de Ajuda, um contexto de Ajuda e o GUID da interface que definiu o erro (sempre **GUID_NULL** para classes do .NET).|
 |**IProvideClassInfo**|Permite aos clientes COM obter acesso à interface **ITypeInfo** implementada por uma classe gerenciada. Retorna `COR_E_NOTSUPPORTED` no .NET Core para tipos não importados do COM. |
-|**ISupportErrorInfo**|Permite a um cliente COM determinar se o objeto gerenciado dá suporte à interface **IErrorInfo**. Nesse caso, permite ao cliente obter um ponteiro para o último objeto de exceção. Todos os tipos gerenciados dão suporte à interface **IErrorInfo**.|
+|**ISupportErrorInfo**|Permite a um cliente COM determinar se o objeto gerenciado dá suporte à interface **IErrorInfo** . Nesse caso, permite ao cliente obter um ponteiro para o último objeto de exceção. Todos os tipos gerenciados dão suporte à interface **IErrorInfo** .|
 |**ITypeInfo** (somente .NET Framework)|Fornece informações de tipo de uma classe que são exatamente iguais às informações de tipo produzidas pelo Tlbexp.exe.|
 |**IUnknown**|Fornece a implementação padrão da interface **IUnknown** com a qual o cliente COM gerencia o tempo de vida do CCW e fornece a coerção de tipo.|
 
@@ -61,10 +61,10 @@ Além de expor as interfaces que são implementadas explicitamente por uma class
 
 |Interface|Descrição|
 |---------------|-----------------|
-|A interface de classe (\_*classname*)|Interface, exposta pelo runtime e não definida explicitamente, que expõe todas as interfaces públicas, métodos, propriedades e campos que são expostos explicitamente em um objeto gerenciado.|
+|A interface de classe (\_*classname* )|Interface, exposta pelo runtime e não definida explicitamente, que expõe todas as interfaces públicas, métodos, propriedades e campos que são expostos explicitamente em um objeto gerenciado.|
 |**IConnectionPoint** e **IConnectionPointContainer**|Interface para objetos que dão origem a eventos baseados em representante (uma interface para o registro de assinantes do evento).|
-|**IDispatchEx** (somente .NET Framework)|Interface fornecida pelo runtime se a classe implementa **IExpando**. A interface **IDispatchEx** é uma extensão da interface **IDispatch** que, ao contrário de **IDispatch**, permite a enumeração, adição, exclusão e chamada de membros que diferencia maiúsculas de minúsculas.|
-|**IEnumVARIANT**|Interface para classes de tipo de coleção, que enumera os objetos na coleção, se a classe implementa **IEnumerable**.|
+|**IDispatchEx** (somente .NET Framework)|Interface fornecida pelo runtime se a classe implementa **IExpando** . A interface **IDispatchEx** é uma extensão da interface **IDispatch** que, ao contrário de **IDispatch** , permite a enumeração, adição, exclusão e chamada de membros que diferencia maiúsculas de minúsculas.|
+|**IEnumVARIANT**|Interface para classes de tipo de coleção, que enumera os objetos na coleção, se a classe implementa **IEnumerable** .|
 
 ## <a name="introducing-the-class-interface"></a>Introdução à interface de classe
 
@@ -157,7 +157,7 @@ O uso da interface de classe é uma opção aceitável para os clientes com scri
 
 Para a interface de classe, a geração dos DispIds se baseia na posição do membro na interface. Se você alterar a ordem do membro e exportar a classe para uma biblioteca de tipos, você alterará os DispIds gerados na interface de classe.
 
-Para evitar a interrupção de clientes COM de associação tardia ao usar a interface de classe, aplique o **ClassInterfaceAttribute** ao valor **ClassInterfaceType.AutoDispatch**. Esse valor implementa uma interface de classe somente de expedição, mas omite a descrição da interface na biblioteca de tipos. Sem uma descrição da interface, os clientes não conseguem armazenar em cache os DispIds em tempo de compilação. Embora esse seja o tipo de interface padrão para a interface de classe, é possível aplicar o valor do atributo explicitamente.
+Para evitar a interrupção de clientes COM de associação tardia ao usar a interface de classe, aplique o **ClassInterfaceAttribute** ao valor **ClassInterfaceType.AutoDispatch** . Esse valor implementa uma interface de classe somente de expedição, mas omite a descrição da interface na biblioteca de tipos. Sem uma descrição da interface, os clientes não conseguem armazenar em cache os DispIds em tempo de compilação. Embora esse seja o tipo de interface padrão para a interface de classe, é possível aplicar o valor do atributo explicitamente.
 
 ```vb
 <ClassInterface(ClassInterfaceType.AutoDispatch)> Public Class LoanApp
@@ -175,13 +175,13 @@ public class LoanApp
 }
 ```
 
-Para obter o DispId de um membro da interface em tempo de execução, os clientes COM podem chamar **IDispatch.GetIdsOfNames**. Para invocar um método na interface, passe o DispId retornado como um argumento para **IDispatch.Invoke**.
+Para obter o DispId de um membro da interface em tempo de execução, os clientes COM podem chamar **IDispatch.GetIdsOfNames** . Para invocar um método na interface, passe o DispId retornado como um argumento para **IDispatch.Invoke** .
 
 ### <a name="restrict-using-the-dual-interface-option-for-the-class-interface"></a>Restrinja o uso da opção de interface dupla para a interface de classe.
 
 Interfaces duplas permitem a associação inicial e tardia a membros da interface por clientes COM. Em tempo de design e durante o teste, talvez seja útil definir a interface de classe como dupla. Para uma classe gerenciada (e suas classes base) que nunca serão modificadas, essa opção também é aceitável. Em todos os outros casos, evite definir a interface de classe como dupla.
 
-Uma interface dupla gerada automaticamente pode ser apropriada em casos raros. No entanto, com mais frequência, ela cria complexidade relacionada à versão. Por exemplo, os clientes COM que usam a interface de classe de uma classe derivada podem ser facilmente interrompidos com alterações na classe base. Quando um terceiro fornece a classe base, o layout da interface de classe fica fora de seu controle. Além disso, ao contrário de uma interface somente de expedição, uma interface dupla (**ClassInterfaceType.AutoDual**) fornece uma descrição da interface de classe na biblioteca de tipos exportada. Uma descrição como essa incentiva os clientes de associação tardia a armazenarem em cache os DispIds em tempo de compilação.
+Uma interface dupla gerada automaticamente pode ser apropriada em casos raros. No entanto, com mais frequência, ela cria complexidade relacionada à versão. Por exemplo, os clientes COM que usam a interface de classe de uma classe derivada podem ser facilmente interrompidos com alterações na classe base. Quando um terceiro fornece a classe base, o layout da interface de classe fica fora de seu controle. Além disso, ao contrário de uma interface somente de expedição, uma interface dupla ( **ClassInterfaceType.AutoDual** ) fornece uma descrição da interface de classe na biblioteca de tipos exportada. Uma descrição como essa incentiva os clientes de associação tardia a armazenarem em cache os DispIds em tempo de compilação.
 
 ### <a name="ensure-that-all-com-event-notifications-are-late-bound"></a>Verifique se todas as notificações de evento COM têm associação tardia.
 
@@ -193,7 +193,7 @@ Se o seu aplicativo exigir chamadas early-bound para métodos de interface de ev
 <EmbedInteropTypes>True</EmbedInteropTypes>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.Runtime.InteropServices.ClassInterfaceAttribute>
 - [Wrappers COM](com-wrappers.md)

@@ -1,7 +1,7 @@
 ---
+description: 'Saiba mais sobre: assinaturas de criptografia'
 title: Assinaturas criptográficas
 ms.date: 07/14/2020
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -20,12 +20,12 @@ helpviewer_keywords:
 - digital signatures, verifying
 - signing XML
 ms.assetid: aa87cb7f-e608-4a81-948b-c9b8a1225783
-ms.openlocfilehash: ce2be1d509da4e399bf87e1c8df7ba061fc2707c
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: 082f55af648b73b6447d69edd5912804e9332d03
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87557002"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685290"
 ---
 # <a name="cryptographic-signatures"></a>Assinaturas criptográficas
 
@@ -161,7 +161,7 @@ else
 
 Esse fragmento de código exibirá " `The signature is valid` " se a assinatura for válida e " `The signature is not valid` " se não for.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Serviços criptográficos](cryptographic-services.md)
 - [Modelo de criptografia](cryptography-model.md)

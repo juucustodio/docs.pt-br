@@ -1,16 +1,16 @@
 ---
 ms.openlocfilehash: d1ddba72ce25c5e01025d916d52f785b5a1a9e71
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "75901777"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96032237"
 ---
 ### <a name="hosting-generic-host-restricts-startup-constructor-injection"></a>Hospedagem: host genérico restringe injeção de construtor de inicialização
 
 Os únicos tipos aos quais o host genérico dá suporte para `Startup` injeção de construtor de classe são `IHostEnvironment` , `IWebHostEnvironment` e `IConfiguration` . Aplicativos que usam não `WebHost` são afetados.
 
-#### <a name="change-description"></a>Descrição da alteração
+#### <a name="change-description"></a>Descrição das alterações
 
 Antes do ASP.NET Core 3,0, a injeção de Construtor poderia ser usada para tipos arbitrários no `Startup` Construtor da classe. No ASP.NET Core 3,0, a pilha da Web foi replataforma na biblioteca de hosts genérica. Você pode ver a alteração no arquivo *Program.cs* dos modelos:
 
@@ -26,7 +26,7 @@ Antes do ASP.NET Core 3,0, a injeção de Construtor poderia ser usada para tipo
 
 #### <a name="version-introduced"></a>Versão introduzida
 
-3,0
+3.0
 
 #### <a name="reason-for-change"></a>Motivo da alteração
 

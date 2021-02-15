@@ -3,21 +3,23 @@ title: Dados grandes e streaming
 description: Saiba mais sobre as considerações sobre a comunicação baseada em XML do WCF, codificadores e dados de streaming, incluindo a transferência de dados binários.
 ms.date: 03/30/2017
 ms.assetid: ab2851f5-966b-4549-80ab-c94c5c0502d2
-ms.openlocfilehash: 2eb57e2f57bebb2e765ea798b3dff27e0187e8c7
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 09e020801486c09c027883fca3d67a6c2e2fe8d7
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85246578"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96234694"
 ---
 # <a name="large-data-and-streaming"></a>Dados grandes e streaming
 
 O Windows Communication Foundation (WCF) é uma infraestrutura de comunicação baseada em XML. Como os dados XML são comumente codificados no formato de texto padrão definido na [especificação XML 1,0](https://www.w3.org/TR/REC-xml/), os desenvolvedores e arquitetos de sistemas conectados geralmente se preocupam com a superfície de conexão (ou o tamanho) das mensagens enviadas pela rede, e a codificação baseada em texto do XML representa desafios especiais para a transferência eficiente de dados binários.  
   
 ## <a name="basic-considerations"></a>Considerações básicas  
+
  Para fornecer informações básicas sobre as informações a seguir para o WCF, esta seção destaca algumas questões gerais e considerações sobre codificações, dados binários e streaming que geralmente se aplicam a infraestruturas de sistemas conectados.  
   
 ### <a name="encoding-data-text-vs-binary"></a>Dados de codificação: Text vs. Binary  
+
  As preocupações geralmente expressas pelos desenvolvedores incluem a percepção de que o XML tem uma sobrecarga significativa quando comparado com formatos binários devido à natureza repetitiva das marcas de início e de fim, que a codificação de valores numéricos é considerada como sendo significativamente maior porque são expressos em valores de texto, e que os dados binários não podem ser expressos de modo eficiente porque devem ser especialmente codificados para inserção em um formato de texto.  
   
  Embora muitas dessas e de outras preocupações semelhantes sejam válidas, a diferença real entre as mensagens codificadas em texto XML em um ambiente de serviços Web XML e as mensagens codificadas em binário em um ambiente herdado de RPC (chamada de procedimento remoto) com frequência muito menos significativa do que a consideração inicial pode sugerir.  
@@ -33,6 +35,7 @@ O Windows Communication Foundation (WCF) é uma infraestrutura de comunicação 
  Uma vantagem clara das mensagens de texto XML é que elas são baseadas em padrões e oferecem a escolha mais abrangente de opções de interoperabilidade e de suporte da plataforma. Para obter mais informações, consulte a seção "codificações" mais adiante neste tópico.  
   
 ### <a name="binary-content"></a>Conteúdo binário  
+
  Uma área onde as codificações binárias são superiores às codificações baseadas em texto em termos de tamanho da mensagem resultante são os grandes itens de dados binários, como imagens, vídeos, clipes de som ou qualquer outro formulário de dados binários opacos que devem ser trocados entre os serviços e seus usuários. Para ajustar esses tipos de dados em texto XML, a abordagem mais comum é codificá-los usando codificação Base64.  
   
  Em uma cadeia de caracteres codificados em Base64, cada caractere representa 6 bits dos dados originais de 8 bits, o que resulta em uma taxa de sobrecarga de codificação de 4:3 para Base64, sem contar os caracteres adicionais de formatação (retorno de carro/alimentação de linha) que normalmente são adicionados por convenção. Embora a importância das diferenças entre as codificações XML e binárias normalmente dependa do cenário, um ganho em tamanho de mais de 33% ao transmitir uma carga de 500 MB normalmente não é aceitável.  
@@ -44,6 +47,7 @@ O Windows Communication Foundation (WCF) é uma infraestrutura de comunicação 
  Ainda assim, como com a Base64, o MTOM também vem com uma sobrecarga necessária para o formato MIME, de forma que as vantagens de se usar o MTOM são consideradas apenas quando o tamanho de um elemento de dados binários excede aproximadamente 1 KB. Devido à sobrecarga, as mensagens codificadas por MTOM podem ser maiores que as mensagens que usam a codificação de Base64 para dados binários, se a carga de binários permanecer abaixo desse limite. Para obter mais informações, consulte a seção "codificações" mais adiante neste tópico.  
   
 ### <a name="large-data-content"></a>Grande conteúdo de dados  
+
  Deixando a superfície eletrônica de lado, a carga de 500 MB mencionada anteriormente também representa um grande desafio local para o serviço e o cliente. Por padrão, o WCF processa mensagens no *modo de buffer*. Isso significa que todo o conteúdo de uma mensagem está presente na memória antes de ser enviado ou depois de ser recebido. Embora essa seja uma boa estratégia na maioria dos cenários e seja necessária para recursos de mensagens, como assinaturas digitais e entrega confiável, grandes mensagens podem esgotar os recursos do sistema.  
   
  A estratégia para manipular cargas grandes é o streaming. Embora as mensagens, especialmente as expressas em XML, normalmente sejam consideradas como pacotes de dados relativamente compactos, uma mensagem pode ter um tamanho de vários gigabytes e parecer mais um fluxo de dados contínuo do que um pacote de dados. Quando os dados são transferidos no modo de streaming em vez de no modo com buffer, o remetente torna o conteúdo do corpo da mensagem disponível para o destinatário na forma de um fluxo, e a infraestrutura da mensagem encaminha continuamente os dados do remetente para o destinatário conforme eles se tornam disponíveis.  
@@ -58,16 +62,17 @@ O Windows Communication Foundation (WCF) é uma infraestrutura de comunicação 
   
  Para dados que não têm essas restrições, normalmente é melhor enviar sequências de mensagens no escopo de uma sessão do que uma grande mensagem. Para obter mais informações, consulte a seção "dados de streaming" mais adiante neste tópico.  
   
- Ao enviar grandes quantidades de dados, você precisará definir a `maxAllowedContentLength` configuração do IIS (para obter mais informações, consulte [Configurando limites de solicitação do IIS](https://docs.microsoft.com/iis/configuration/system.webServer/security/requestFiltering/requestLimits/)) e a `maxReceivedMessageSize` configuração de associação (por exemplo, [System. ServiceModel. BasicHttpBinding. MaxReceivedMessageSize](xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A) ou <xref:System.ServiceModel.NetTcpBinding.MaxReceivedMessageSize%2A> ). A `maxAllowedContentLength` propriedade assume o padrão de 28,6 MB e a `maxReceivedMessageSize` propriedade assume o padrão de 64 KB.  
+ Ao enviar grandes quantidades de dados, você precisará definir a `maxAllowedContentLength` configuração do IIS (para obter mais informações, consulte [Configurando limites de solicitação do IIS](/iis/configuration/system.webServer/security/requestFiltering/requestLimits/)) e a `maxReceivedMessageSize` configuração de associação (por exemplo, [System. ServiceModel. BasicHttpBinding. MaxReceivedMessageSize](xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A) ou <xref:System.ServiceModel.NetTcpBinding.MaxReceivedMessageSize%2A> ). A `maxAllowedContentLength` propriedade assume o padrão de 28,6 MB e a `maxReceivedMessageSize` propriedade assume o padrão de 64 KB.  
   
 ## <a name="encodings"></a>Codificações  
+
  Uma *codificação* define um conjunto de regras sobre como apresentar mensagens na conexão. Um *codificador* implementa tal codificação e é responsável, no lado do remetente, para transformar uma memória em <xref:System.ServiceModel.Channels.Message> um fluxo de bytes ou um buffer de bytes que pode ser enviado pela rede. No lado do destinatário, o codificador transforma uma sequência de bytes em uma mensagem na memória.  
   
  O WCF inclui três codificadores e permite que você escreva e conecte seus próprios codificadores, se necessário.  
   
  Cada uma das associações padrão inclui um codificador pré-configurado, por meio do qual as associações com o prefixo Net* usam o codificador binário (incluindo a classe <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>) enquanto as classes <xref:System.ServiceModel.BasicHttpBinding> e <xref:System.ServiceModel.WSHttpBinding> usam o codificador de mensagem de texto (por meio da classe <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>) por padrão.  
   
-|Elemento de associação do codificador|Description|  
+|Elemento de associação do codificador|Descrição|  
 |-----------------------------|-----------------|  
 |<xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>|O codificador de mensagem de texto é o codificador padrão para todas as associações baseadas em HTTP e é a escolha apropriada para todas as associações personalizadas onde a interoperabilidade é a maior preocupação. Esse codificador lê e grava mensagens de texto SOAP 1.1/SOAP 1.2 padrão sem tratamento especial para dados binários. Se a <xref:System.ServiceModel.Channels.MessageVersion?displayProperty=nameWithType> propriedade de uma mensagem for definida como <xref:System.ServiceModel.Channels.MessageVersion.None?displayProperty=nameWithType> , o invólucro de envelope SOAP será omitido da saída e somente o conteúdo do corpo da mensagem será serializado.|  
 |<xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>|O codificador de mensagem MTOM é um codificador de texto que implementa o tratamento especial de dados binários e, por padrão, não é usado em nenhuma associação padrão porque é estritamente um utilitário de otimização caso a caso. Se a mensagem contiver dados binários que excedam um limite onde a codificação MTOM gere um benefício, os dados serão exteriorizados em uma parte MIME seguindo o envelope de mensagem. Consulte Habilitando o MTOM mais adiante nesta seção.|  
@@ -78,6 +83,7 @@ O Windows Communication Foundation (WCF) é uma infraestrutura de comunicação 
  Se sua solução não exigir interoperabilidade, mas se você ainda desejar usar transporte HTTP, poderá compor o <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement> em uma associação personalizada que use a classe <xref:System.ServiceModel.Channels.HttpTransportBindingElement> para o transporte. Se vários clientes em seu serviço exigirem interoperabilidade, será recomendável expor os pontos de extremidade paralelos para que cada um tenha as opções apropriadas de transporte e de codificação para os respectivos clientes habilitados.  
   
 ### <a name="enabling-mtom"></a>Habilitando o MTOM  
+
  Quando a interoperabilidade for um requisito e dados binários grandes precisarem ser enviados, a codificação de mensagem MTOM será a estratégia de codificação alternativa que você pode habilitar nas associações padrão <xref:System.ServiceModel.BasicHttpBinding> ou <xref:System.ServiceModel.WSHttpBinding> definindo a respectiva propriedade `MessageEncoding` como <xref:System.ServiceModel.WSMessageEncoding.Mtom> ou compondo <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement> em <xref:System.ServiceModel.Channels.CustomBinding>. O código de exemplo a seguir, extraído do exemplo de [codificação MTOM](../samples/mtom-encoding.md) , demonstra como habilitar o MTOM na configuração.  
   
 ```xml  
@@ -99,6 +105,7 @@ O Windows Communication Foundation (WCF) é uma infraestrutura de comunicação 
  O uso do codificador MTOM está em conformidade com todos os outros recursos do WCF. Observe que talvez não seja possível seguir essa regra em todos os casos, como quando o suporte à sessão for necessário.  
   
 ### <a name="programming-model"></a>Modelo de Programação  
+
  Independentemente de quais dos três codificadores internos você usar em seu aplicativo, a experiência de programação é idêntica no que diz respeito à transferência de dados binários. A diferença está em como o WCF lida com os dados com base em seus tipos de dados.  
   
 ```csharp
@@ -124,11 +131,13 @@ class MyData
 > Você não deve usar tipos derivados de <xref:System.IO.Stream?displayProperty=nameWithType> em contratos de dados. Os dados de fluxo devem ser comunicados usando o modelo de streaming, explicado na seção "Dados de streaming".  
   
 ## <a name="streaming-data"></a>Dados de streaming  
+
  Quando você tem uma grande quantidade de dados a serem transferidos, o modo de transferência de streaming no WCF é uma alternativa viável para o comportamento padrão de armazenamento em buffer e processamento de mensagens na memória em sua totalidade.  
   
  Conforme mencionado anteriormente, habilite o streaming apenas para mensagens grandes (com conteúdo de texto ou binário), se os dados não puderem ser segmentados, se a mensagem precisar ser entregue em tempo hábil ou se os dados ainda não estiverem totalmente disponíveis quando a transferência for iniciada.  
   
 ### <a name="restrictions"></a>Restrições  
+
  Você não pode usar um número significativo de recursos do WCF quando o streaming está habilitado:  
   
 - As assinaturas digitais do corpo da mensagem não podem ser executadas porque exigem a computação de um hash sobre o conteúdo da mensagem inteira. No streaming, o conteúdo não está totalmente disponível quando os cabeçalhos da mensagem são construídos e enviados e, portanto, uma assinatura digital não pode ser computada.  
@@ -154,12 +163,14 @@ class MyData
  O streaming também não está disponível ao usar o transporte de Canal de mesmo nível, portanto, não está disponível com <xref:System.ServiceModel.NetPeerTcpBinding>.  
   
 #### <a name="streaming-and-sessions"></a>Streaming e sessões  
+
  Você pode obter um comportamento inesperado durante o streaming de chamadas com uma associação baseada em sessão. Todas as chamadas de streaming são feitas por um único canal (o canal de datagrama) que não oferece suporte a sessões mesmo que a associação que está sendo usada esteja configurada para usar sessões. Se vários clientes fizerem chamadas de streaming para o mesmo objeto sobre uma associação baseada em sessão, e o modo de simultaneidade do serviço estiver definido como único, e o modo de contexto de sua instância estiver definido como PerSession, todas as chamadas deverão passar pelo canal de datagrama e, portanto, apenas uma chamada será processada de cada vez. Um ou mais clientes podem atingir o tempo limite. Você pode contornar esse problema definindo o modo de contexto da instância do objeto de serviço para executar a chamada ou a simultaneidade para várias.  
   
 > [!NOTE]
 > MaxConcurrentSessions não tem efeito nesse caso porque há apenas uma "sessão" disponível.  
   
 ### <a name="enabling-streaming"></a>Habilitando o streaming  
+
  Você pode habilitar o streaming das seguintes maneiras:  
   
 - Enviar e aceitar solicitações no modo de streaming e aceitar e retornar respostas no modo com buffer (<xref:System.ServiceModel.TransferMode.StreamedRequest>).  
@@ -187,9 +198,11 @@ class MyData
  Você pode ativar o streaming para solicitações e respostas ou para as duas direções independentemente, em qualquer lado das partes da comunicação sem afetar a funcionalidade. No entanto, você deve sempre presumir que o tamanho dos dados transferidos é tão significativo que a habilitação de streaming é justificada nos dois pontos de extremidade de um link de comunicação. Para comunicação entre plataformas em que um dos pontos de extremidade não é implementado com o WCF, a capacidade de usar o streaming depende dos recursos de streaming da plataforma. Outra rara exceção pode ser um cenário orientado pelo consumo de memória, onde um cliente ou um serviço deve minimizar o conjunto de trabalho e possa suportar apenas tamanhos de buffer pequenos.  
   
 ### <a name="enabling-asynchronous-streaming"></a>Habilitando o streaming assíncrono  
+
  Para habilitar o streaming assíncrono, adicione o comportamento do ponto de extremidade <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior> ao host de serviço e defina sua propriedade <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior.AsynchronousSendEnabled%2A> como `true`. Também adicionamos o recurso de streaming assíncrono verdadeiro no lado do envio. Isso melhora a escalabilidade do serviço em cenários onde ele está executando o streaming de mensagens para vários clientes, alguns dos quais estão lendo lentamente, possivelmente devido a congestionamento da rede, ou não estão lendo nada. Nesses cenários, agora não bloqueamos threads individuais no serviço por cliente. Isso garante que o serviço possa processar muito mais clientes, melhorando dessa forma a escalabilidade do serviço.  
   
 ### <a name="programming-model-for-streamed-transfers"></a>Modelo de programação para transferências por streaming  
+
  O modelo de programação de streaming é simples. Para receber dados por streaming, especifique um contrato de operação que tenha um único parâmetro de entrada tipada <xref:System.IO.Stream>. Para retornar dados por streaming, retorne uma referência a <xref:System.IO.Stream>.  
   
 ```csharp
@@ -229,6 +242,7 @@ public class UploadStreamMessage
  O streaming em nível de transporte também funciona com qualquer outro tipo de contrato de mensagem (listas de parâmetros, argumentos de contratos de dados e contrato de mensagem explícito), mas como a serialização e a desserialização dessas mensagens tipadas exigem buffer pelo serializador, não é aconselhável usar essas variantes de contrato.  
   
 ### <a name="special-security-considerations-for-large-data"></a>Considerações de segurança especial para grandes dados  
+
  Todas as associações permitem restringir o tamanho das mensagens de entrada para evitar ataques de negação de serviço. O <xref:System.ServiceModel.BasicHttpBinding> , por exemplo, expõe uma propriedade [System. ServiceModel. BasicHttpBinding. MaxReceivedMessageSize](xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A) que limita o tamanho da mensagem de entrada e, portanto, também limita a quantidade máxima de memória que é acessada durante o processamento da mensagem. Essa unidade é definida em bytes com um valor padrão de 65.536 bytes.  
   
  Uma ameaça de segurança que é específica para o cenário de streaming de dados grandes provoca uma negação de serviço fazendo com que os dados sejam armazenados em buffer quando o receptor espera que os dados sejam enviados por streaming. Por exemplo, o WCF sempre armazena em buffer os cabeçalhos SOAP de uma mensagem e, portanto, um invasor pode construir uma mensagem mal-intencionada grande que consiste inteiramente em cabeçalhos para forçar os dados a serem armazenados em buffer. Quando o streaming está habilitado, `MaxReceivedMessageSize` pode ser definido como um valor extremamente grande, porque o receptor nunca espera que a mensagem inteira seja imediatamente armazenada em buffer na memória. Se o WCF for forçado a armazenar a mensagem em buffer, ocorrerá um estouro de memória.  
@@ -242,4 +256,4 @@ public class UploadStreamMessage
   
 ## <a name="see-also"></a>Veja também
 
-- [Como habilitar transmissão](how-to-enable-streaming.md)
+- [Como: habilitar a transmissão](how-to-enable-streaming.md)

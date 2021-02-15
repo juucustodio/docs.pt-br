@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugEval:: GetThread'
 title: Método ICorDebugEval::GetThread
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 57163b0d-c8a7-44af-9078-e7a895d29f9a
 topic_type:
 - apiref
-ms.openlocfilehash: b985ada09e0e1914c5e60da61a45398fc6098b33
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: 3e7120f618abce31b9940a886fd6b2b2f8639d2d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976272"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694132"
 ---
 # <a name="icordebugevalgetthread-method"></a>Método ICorDebugEval::GetThread
+
 Obtém o thread no qual essa avaliação está sendo executada ou será executada.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,10 +36,12 @@ HRESULT GetThread (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ppThread`  
  fora Um ponteiro para o endereço de um objeto ICorDebugThread que representa o thread.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

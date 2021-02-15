@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como atribuir uma matriz a outra matriz (Visual Basic)'
 title: Como atribuir uma matriz a outra matriz
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - arrays [Visual Basic], assigning
 - arrays [Visual Basic], covariance
 ms.assetid: 1ae89ea5-f292-4282-bcfc-e9b06b37fbd5
-ms.openlocfilehash: c38def1ba9f3720bc760d6f6e4264510c884c930
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: dc86225c1f25c207e793e33a048d948646ac77b6
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84413073"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100434726"
 ---
 # <a name="how-to-assign-one-array-to-another-array-visual-basic"></a>Como atribuir uma matriz a outra matriz (Visual Basic)
 
@@ -43,9 +44,9 @@ Quando você atribui uma matriz a outra, as seguintes regras se aplicam:
 
 O compilador relatará um erro se as regras acima forem violadas, por exemplo, se os tipos de dados não forem compatíveis ou se as classificações forem desiguais. Você pode adicionar tratamento de erros ao seu código para certificar-se de que as matrizes são compatíveis antes de tentar uma atribuição. Você também pode usar a palavra-chave do [Operador TryCast](../../../language-reference/operators/trycast-operator.md) se quiser evitar lançar uma exceção.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Matrizes](index.md)
+- [matrizes](index.md)
 - [Solução de problemas de matrizes](troubleshooting-arrays.md)
 - [Instrução Enum](../../../language-reference/statements/enum-statement.md)
 - [Conversões de matriz](../data-types/array-conversions.md)

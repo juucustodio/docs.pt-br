@@ -1,7 +1,7 @@
 ---
+description: 'Saiba mais sobre: como acessar dispositivos de criptografia de hardware'
 title: 'Como: acessar dispositivos de criptografia de hardware'
 ms.date: 07/14/2020
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -13,12 +13,12 @@ helpviewer_keywords:
 - hardware encryption
 - CspParameters
 ms.assetid: b0e734df-6eb4-4b16-b48c-6f0fe82d5f17
-ms.openlocfilehash: 7cd3aab80a8388c1d4ce08e4ae94aae84cfff239
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: fcf12314490542848d20bd3a4977d68c386853bb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87557132"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685264"
 ---
 # <a name="how-to-access-hardware-encryption-devices"></a>Como: acessar dispositivos de criptografia de hardware
 
@@ -27,7 +27,7 @@ ms.locfileid: "87557132"
 
 Você pode usar a <xref:System.Security.Cryptography.CspParameters> classe para acessar dispositivos de criptografia de hardware. Por exemplo, você pode usar essa classe para integrar seu aplicativo a um cartão inteligente, um gerador de números aleatórios de hardware ou uma implementação de hardware de um algoritmo criptográfico específico.  
 
-A <xref:System.Security.Cryptography.CspParameters> classe cria um CSP (provedor de serviços de criptografia) que acessa um dispositivo de criptografia de hardware instalado corretamente.  Você pode verificar a disponibilidade de um CSP inspecionando a seguinte chave do registro usando o editor do registro (Regedit.exe): HKEY_LOCAL_MACHINE \Software\Microsoft\Cryptography\Defaults\Provider.  
+A <xref:System.Security.Cryptography.CspParameters> classe cria um CSP (provedor de serviços de criptografia) que acessa um dispositivo de criptografia de hardware instalado corretamente.  Você pode verificar a disponibilidade de um CSP inspecionando a seguinte chave do registro usando o editor do registro (Regedit.exe): HKEY_LOCAL_MACHINE\Software\Microsoft\Cryptography\Defaults\Provider.  
   
 ### <a name="to-sign-data-using-a-key-card"></a>Para assinar dados usando um cartão-chave  
   
@@ -65,7 +65,7 @@ Devido a problemas de colisão com SHA1, recomendamos SHA256 ou melhor.
   
 - Você deve inicializar o <xref:System.Security.Cryptography.CspParameters> objeto usando informações específicas para o leitor de cartão.  Para obter mais informações, consulte a documentação do leitor de cartão.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Modelo de criptografia](cryptography-model.md)
 - [Serviços criptográficos](cryptographic-services.md)

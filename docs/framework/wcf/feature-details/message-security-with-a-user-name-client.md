@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: segurança de mensagem com um cliente de nome de usuário'
 title: Segurança de mensagem com um nome de usuário cliente
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 36335cb9-76b8-4443-92c7-44f081eabb21
-ms.openlocfilehash: 9447487012cae370d35880e5b780465f9434051b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 4502635df3b52ba069c19fca7a73cc9395dd105d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84602616"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99756104"
 ---
 # <a name="message-security-with-a-user-name-client"></a>Segurança de mensagem com um nome de usuário cliente
+
 A ilustração a seguir mostra um serviço de Windows Communication Foundation (WCF) e o cliente protegidos usando a segurança em nível de mensagem. O serviço é autenticado com um certificado X. 509. O cliente é autenticado usando um nome de usuário e senha.  
   
  Para um aplicativo de exemplo, consulte [segurança da mensagem nome de usuário](../samples/message-security-user-name.md).  
@@ -31,6 +33,7 @@ A ilustração a seguir mostra um serviço de Windows Communication Foundation (
 |Associação|<xref:System.ServiceModel.WSHttpBinding>|  
   
 ## <a name="service"></a>Serviço  
+
  O código e a configuração a seguir devem ser executados de forma independente. Realize um dos seguintes procedimentos:  
   
 - Crie um serviço autônomo usando o código sem configuração.  
@@ -38,12 +41,14 @@ A ilustração a seguir mostra um serviço de Windows Communication Foundation (
 - Crie um serviço usando a configuração fornecida, mas não defina nenhum ponto de extremidade.  
   
 ### <a name="code"></a>Código  
+
  O código a seguir mostra como criar um ponto de extremidade de serviço que usa a segurança de mensagem.  
   
  [!code-csharp[C_SecurityScenarios#9](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#9)]
  [!code-vb[C_SecurityScenarios#9](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#9)]  
   
 ### <a name="configuration"></a>Configuração  
+
  A configuração a seguir pode ser usada em vez do código:  
   
 ```xml  
@@ -89,12 +94,14 @@ A ilustração a seguir mostra um serviço de Windows Communication Foundation (
 ## <a name="client"></a>Cliente  
   
 ### <a name="code"></a>Código  
+
  O código a seguir cria o cliente. A associação é a segurança do modo de mensagem e o tipo de credencial do cliente é definido como `UserName` . O nome de usuário e a senha só podem ser especificados usando código (não é configurável). O código para retornar o nome de usuário e a senha não é mostrado aqui porque ele deve ser feito no nível do aplicativo. Por exemplo, use uma caixa de diálogo Windows Forms para consultar o usuário para os dados.  
   
  [!code-csharp[C_SecurityScenarios#16](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#16)]
  [!code-vb[C_SecurityScenarios#16](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#16)]  
   
 ### <a name="configuration"></a>Configuração  
+
  O código a seguir configura o cliente. A associação é a segurança do modo de mensagem e o tipo de credencial do cliente é definido como `UserName` . O nome de usuário e a senha só podem ser especificados usando código (não é configurável).  
   
 ```xml  
@@ -131,4 +138,4 @@ A ilustração a seguir mostra um serviço de Windows Communication Foundation (
 - [Message Security User Name](../samples/message-security-user-name.md)
 - [Identidade e autenticação de serviço](service-identity-and-authentication.md)
 - [\<identity>](../../configure-apps/file-schema/wcf/identity.md)
-- [Modelo de segurança para o Windows Server app Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Modelo de segurança para o Windows Server app Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

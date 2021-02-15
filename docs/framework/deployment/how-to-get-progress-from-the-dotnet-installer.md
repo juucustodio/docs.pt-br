@@ -1,6 +1,6 @@
 ---
-title: Como acompanhar o progresso do Instalador do .NET Framework 4.5
-description: Saiba como obter o progresso do instalador do .NET 4,5. Se você desenvolver aplicativos para esta versão do .NET, poderá incluir a instalação do (Chain) .NET 4,5 na instalação do seu aplicativo.
+title: 'Como: Acompanhar o progresso do Instalador do .NET Framework 4.5'
+description: Saiba como obter o progresso do instalador do .NET Framework 4,5. Se você desenvolver aplicativos para esta versão do .NET, poderá incluir a instalação do (Chain) .NET Framework 4,5 na instalação do seu aplicativo.
 ms.date: 03/30/2017
 dev_langs:
 - cpp
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - progress information, .NET Framework installer
 - .NET Framework, installing
 ms.assetid: 0a1a3ba3-7e46-4df2-afd3-f3a8237e1c4f
-ms.openlocfilehash: 501fcaa7636d586ddfff8606768d4639fdc010d7
-ms.sourcegitcommit: 3824ff187947572b274b9715b60c11269335c181
+ms.openlocfilehash: 7e21a376c5a7551ecadeaa70c0a70968dc5752fd
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84904254"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95729116"
 ---
-# <a name="how-to-get-progress-from-the-net-framework-45-installer"></a>Como acompanhar o progresso do Instalador do .NET Framework 4.5
+# <a name="how-to-get-progress-from-the-net-framework-45-installer"></a>Como: Acompanhar o progresso do Instalador do .NET Framework 4.5
 
 O .NET Framework 4.5 é um runtime redistribuível. Se você desenvolver aplicativos para esta versão do .NET Framework, poderá incluir (encadear) a instalação do .NET Framework 4.5 como uma parte de pré-requisito da instalação do seu aplicativo. Para apresentar uma experiência de instalação personalizada ou unificada, talvez você queira iniciar silenciosamente a instalação do .NET Framework 4.5 e acompanhar seu progresso, mostrando simultaneamente o progresso da instalação do aplicativo. Para habilitar o acompanhamento silencioso, a instalação do .NET Framework 4.5 (que pode ser inspecionada) define um protocolo usando uma MMIO (E/S mapeada em memória) para se comunicar com a instalação (o observador ou encadeador). Esse protocolo define uma maneira para um encadeador obter informações sobre o progresso, obter resultados detalhados, responder às mensagens e cancelar a instalação do .NET Framework 4.5.
 
@@ -308,7 +308,7 @@ As seções a seguir descrevem os arquivos significativos neste exemplo: MMIOCha
 
 Um servidor típico cria um nome de arquivo MMIO aleatório, cria o arquivo (conforme mostrado no exemplo de código anterior, na `Server::CreateSection`) e inicia o redistribuível usando o método `CreateProcess` e passando o nome do pipe com a opção `-pipe someFileSectionName`. O servidor deve implementar os métodos `OnProgress`, `Send` e `Finished` com código específico da interface do usuário do aplicativo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Guia de implantação para desenvolvedores](deployment-guide-for-developers.md)
 - [Implantação](index.md)

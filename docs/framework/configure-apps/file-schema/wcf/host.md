@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <host>'
 title: <host>
 ms.date: 03/30/2017
 ms.assetid: be566d55-9d50-4b2e-985d-52a5cc26cbbb
-ms.openlocfilehash: b764bc21e9c4555b39c3d096212b6e6bcabb62ff
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: ff240c85af3aab7c1208a6a49b1943f3c6a8cd99
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70855217"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802275"
 ---
 # \<host>
+
 Especifica as configurações para um host de serviço.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -18,7 +20,7 @@ Especifica as configurações para um host de serviço.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<service>**](service.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<host>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <host>
@@ -30,13 +32,16 @@ Especifica as configurações para um host de serviço.
 </host>
 ```  
   
-## <a name="type"></a>Type  
+## <a name="type"></a>Tipo  
+
  `Type`  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
+
  Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  
@@ -52,8 +57,8 @@ Especifica as configurações para um host de serviço.
 |-------------|-----------------|  
 |[\<service>](service.md)|Especifica as configurações para um serviço de Windows Communication Foundation (WCF).|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.HostElement>
 - <xref:System.ServiceModel.ServiceHost>
-- [Hosting](../../../wcf/feature-details/hosting.md)
+- [Hospedagem](../../../wcf/feature-details/hosting.md)

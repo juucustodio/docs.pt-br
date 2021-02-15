@@ -1,18 +1,19 @@
 ---
-title: Serialização JSON autônoma usando DataContractJsonSerializer
+description: 'Saiba mais sobre: Stand-Alone a serialização JSON usando DataContractJsonSerializer'
+title: Stand-Alone a serialização JSON usando DataContractJsonSerializer
 ms.date: 03/30/2017
 ms.assetid: 312bd7b2-1300-4b12-801e-ebe742bd2287
-ms.openlocfilehash: 5561cddb22a02fdae9f792b1d1ec71d01c4fc916
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: c88a996eeac7e9e62caa7797bc0bf7cd68dfd67b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600900"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793409"
 ---
-# <a name="stand-alone-json-serialization-using-datacontractjsonserializer"></a>Serialização JSON autônoma usando DataContractJsonSerializer
+# <a name="stand-alone-json-serialization-using-datacontractjsonserializer"></a>Stand-Alone a serialização JSON usando DataContractJsonSerializer
 
 > [!NOTE]
-> Este artigo é sobre <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> . Para a maioria dos cenários que envolvem a serialização e desserialização do JSON, recomendamos as APIs no [namespace System. Text. JSON](../../../standard/serialization/system-text-json-overview.md).
+> Este artigo é sobre <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> . Para a maioria dos cenários que envolvem a serialização e desserialização do JSON, recomendamos as APIs na [System.Text.Jsno namespace](../../../standard/serialization/system-text-json-overview.md).
 
 O JSON (JavaScript Object Notation) é um formato de dados projetado especificamente para ser usado pelo código JavaScript em execução em páginas da Web dentro do navegador. É o formato de dados padrão usado pelos serviços AJAX ASP.NET criados no Windows Communication Foundation (WCF).
 
@@ -28,13 +29,13 @@ A tabela a seguir mostra a correspondência entre tipos .NET e tipos JSON/JavaSc
 
 |Tipos .NET|JSON/JavaScript|Observações|
 |----------------|----------------------|-----------|
-|Todos os tipos numéricos, por exemplo <xref:System.Int32> , <xref:System.Decimal> ou<xref:System.Double>|Número|Valores especiais, como `Double.NaN` , `Double.PositiveInfinity` e `Double.NegativeInfinity` não têm suporte e resultam em JSON inválido.|
+|Todos os tipos numéricos, por exemplo <xref:System.Int32> , <xref:System.Decimal> ou <xref:System.Double>|Número|Valores especiais, como  `Double.NaN` , `Double.PositiveInfinity` e `Double.NegativeInfinity` não têm suporte e resultam em JSON inválido.|
 |<xref:System.Enum>|Número|Consulte "enumerações e JSON", mais adiante neste tópico.|
 |<xref:System.Boolean>|Boolean|--|
 |<xref:System.String>, <xref:System.Char>|String|--|
 |<xref:System.TimeSpan>, <xref:System.Guid>, <xref:System.Uri>|String|O formato desses tipos em JSON é o mesmo que em XML (essencialmente, TimeSpan no formato de duração ISO 8601, GUID no formato "12345678-ABCD-ABCD-ABCD-1234567890AB" e URI em seu formulário de cadeia de caracteres natural, como " http://www.example.com "). Para obter informações precisas, consulte [referência de esquema de contrato de dados](data-contract-schema-reference.md).|
 |<xref:System.Xml.XmlQualifiedName>|String|O formato é "nome: namespace" (qualquer coisa antes do primeiro dois-pontos é o nome). O nome ou o namespace pode estar ausente. Se não houver nenhum namespace, os dois pontos também poderão ser omitidos.|
-|<xref:System.Array>do tipo<xref:System.Byte>|Matriz de números|Cada número representa o valor de um byte.|
+|<xref:System.Array> do tipo <xref:System.Byte>|Matriz de números|Cada número representa o valor de um byte.|
 |<xref:System.DateTime>|DateTime ou cadeia de caracteres|Confira datas/horas e JSON mais adiante neste tópico.|
 |<xref:System.DateTimeOffset>|Tipo complexo|Confira datas/horas e JSON mais adiante neste tópico.|
 |Tipos XML e ADO.NET ( <xref:System.Xml.XmlElement> ,<br /><br /> <xref:System.Xml.Linq.XElement>. Matrizes de <xref:System.Xml.XmlNode> ,<br /><br /> <xref:System.Runtime.Serialization.ISerializable>,<br /><br /> <xref:System.Data.DataSet>).|String|Consulte a seção tipos de XML e JSON deste tópico.|
@@ -42,7 +43,7 @@ A tabela a seguir mostra a correspondência entre tipos .NET e tipos JSON/JavaSc
 |Coleções, dicionários e matrizes|Array|Consulte a seção coleções, dicionários e matrizes deste tópico.|
 |Tipos complexos (com o <xref:System.Runtime.Serialization.DataContractAttribute> ou <xref:System.SerializableAttribute> aplicado)|Tipo complexo|Os membros de dados tornam-se membros do tipo complexo do JavaScript.|
 |Tipos complexos que implementam a <xref:System.Runtime.Serialization.ISerializable> interface)|Tipo complexo|O mesmo que outros tipos complexos, mas <xref:System.Runtime.Serialization.ISerializable> não há suporte para alguns tipos – consulte a parte de suporte de ISerializable da seção informações avançadas deste tópico.|
-|`Null`valor para qualquer tipo|Null|Também há suporte para tipos de valores anuláveis e mapear para JSON da mesma forma que os tipos de valor não anuláveis.|
+|`Null` valor para qualquer tipo|Nulo|Também há suporte para tipos de valores anuláveis e mapear para JSON da mesma forma que os tipos de valor não anuláveis.|
 
 ### <a name="enumerations-and-json"></a>Enumerações e JSON
 
@@ -62,10 +63,10 @@ O formato JSON não dá suporte direto a datas e horários. No entanto, eles sã
 
 - Quando não estiver usando ASP.NET, um <xref:System.DateTime> tipo será representado em JSON como uma cadeia de caracteres com um formato especial descrito na seção informações avançadas deste tópico.
 
-- <xref:System.DateTimeOffset>é representado em JSON como um tipo complexo: {"DateTime":d ateTime, "OffsetMinutes": offsetMinutes}. O `offsetMinutes` membro é o deslocamento de hora local do GMT (tempo médio de Greenwich), também conhecido como UTC (tempo Universal Coordenado), associado ao local do evento de interesse. O `dateTime` membro representa a instância no tempo em que o evento de interesse ocorreu (novamente, se torna um `DateTime` em JavaScript quando o ASP.NET AJAX está em uso e uma cadeia de caracteres quando não está). Na serialização, o `dateTime` membro é sempre serializado em GMT. Portanto, se descrever 3:00 AM New York time, `dateTime` o tem um componente de tempo de 8:00 am e `offsetMinutes` é 300 (menos de 300 minutos ou 5 horas a partir de GMT).
+- <xref:System.DateTimeOffset> é representado em JSON como um tipo complexo: {"DateTime":d ateTime, "OffsetMinutes": offsetMinutes}. O `offsetMinutes` membro é o deslocamento de hora local do GMT (tempo médio de Greenwich), também conhecido como UTC (tempo Universal Coordenado), associado ao local do evento de interesse. O `dateTime` membro representa a instância no tempo em que o evento de interesse ocorreu (novamente, se torna um `DateTime` em JavaScript quando o ASP.NET AJAX está em uso e uma cadeia de caracteres quando não está). Na serialização, o `dateTime` membro é sempre serializado em GMT. Portanto, se descrever 3:00 AM New York time, `dateTime` o tem um componente de tempo de 8:00 am e `offsetMinutes` é 300 (menos de 300 minutos ou 5 horas a partir de GMT).
 
   > [!NOTE]
-  > <xref:System.DateTime>e os <xref:System.DateTimeOffset> objetos, quando serializados para JSON, só preservam as informações para a precisão de milissegundos. Valores de submilissegundos (micro/nanossegundos) são perdidos durante a serialização.
+  > <xref:System.DateTime> e os <xref:System.DateTimeOffset> objetos, quando serializados para JSON, só preservam as informações para a precisão de milissegundos. Valores de submilissegundos (micro/nanossegundos) são perdidos durante a serialização.
 
 ### <a name="xml-types-and-json"></a>Tipos XML e JSON
 
@@ -95,7 +96,7 @@ Todas as coleções, dicionários e matrizes são representadas em JSON como mat
 
   - *Polimorfismo* no contexto de serialização refere-se à capacidade de serializar um tipo derivado em que seu tipo base é esperado. Há regras especiais específicas de JSON ao usar coleções polimorficamente, quando, por exemplo, atribuir uma coleção a um <xref:System.Object> . Esse problema é discutido mais detalhadamente na seção informações avançadas, mais adiante neste tópico.
 
-## <a name="additional-details"></a>Detalhes adicionais
+## <a name="additional-details"></a>Additional Details
 
 ### <a name="order-of-data-members"></a>Ordem dos membros de dados
 
@@ -149,7 +150,7 @@ Embora a <xref:System.Runtime.Serialization.IObjectReference> interface tenha su
 
 ### <a name="datetime-wire-format"></a>Formato de fio de DateTime
 
-<xref:System.DateTime>os valores aparecem como cadeias de caracteres JSON na forma de "/Date (700000 + 0500)/", em que o primeiro número (700000 no exemplo fornecido) é o número de milissegundos no fuso horário GMT, tempo normal (economia que não é de verão) desde a meia-noite, 1º de janeiro de 1970. O número pode ser negativo para representar os horários anteriores. A parte que consiste em "+ 0500" no exemplo é opcional e indica que a hora é do <xref:System.DateTimeKind.Local> tipo-ou seja, deve ser convertida no fuso horário local na desserialização. Se estiver ausente, o tempo será desserializado como <xref:System.DateTimeKind.Utc> . O número real ("0500" neste exemplo) e seu sinal (+ ou-) são ignorados.
+<xref:System.DateTime> os valores aparecem como cadeias de caracteres JSON na forma de "/Date (700000 + 0500)/", em que o primeiro número (700000 no exemplo fornecido) é o número de milissegundos no fuso horário GMT, tempo normal (economia que não é de verão) desde a meia-noite, 1º de janeiro de 1970. O número pode ser negativo para representar os horários anteriores. A parte que consiste em "+ 0500" no exemplo é opcional e indica que a hora é do <xref:System.DateTimeKind.Local> tipo-ou seja, deve ser convertida no fuso horário local na desserialização. Se estiver ausente, o tempo será desserializado como <xref:System.DateTimeKind.Utc> . O número real ("0500" neste exemplo) e seu sinal (+ ou-) são ignorados.
 
 Ao serializar <xref:System.DateTime> , as <xref:System.DateTimeKind.Local> <xref:System.DateTimeKind.Unspecified> horas são escritas com um deslocamento e <xref:System.DateTimeKind.Utc> são escritas sem.
 
@@ -161,7 +162,7 @@ A conversão só ocorrerá se os caracteres "/" tiverem escape (ou seja, o JSON 
 
 #### <a name="xmlelement"></a>XmlElement
 
-<xref:System.Xml.XmlElement>é serializado como está, sem quebra automática. Por exemplo, o membro de dados "x" do tipo <xref:System.Xml.XmlElement> que contém \<abc/> é representado da seguinte maneira:
+<xref:System.Xml.XmlElement> é serializado como está, sem quebra automática. Por exemplo, o membro de dados "x" do tipo <xref:System.Xml.XmlElement> que contém \<abc/> é representado da seguinte maneira:
 
 ```json
 {"x":"<abc/>"}
@@ -169,7 +170,7 @@ A conversão só ocorrerá se os caracteres "/" tiverem escape (ou seja, o JSON 
 
 #### <a name="arrays-of-xmlnode"></a>Matrizes de XmlNode
 
-<xref:System.Array>objetos do tipo <xref:System.Xml.XmlNode> são encapsulados em um elemento chamado ArrayOfXmlNode no namespace de contrato de dados padrão para o tipo. Se "x" for uma matriz que contém o nó de atributo "N" no namespace "NS" que contém "value" e um nó de elemento vazio "M", a representação será a seguinte.
+<xref:System.Array> objetos do tipo <xref:System.Xml.XmlNode> são encapsulados em um elemento chamado ArrayOfXmlNode no namespace de contrato de dados padrão para o tipo. Se "x" for uma matriz que contém o nó de atributo "N" no namespace "NS" que contém "value" e um nó de elemento vazio "M", a representação será a seguinte.
 
 ```json
 {"x":"<ArrayOfXmlNode xmlns=\"http://schemas.datacontract.org/2004/07/System.Xml\" a:N=\"value\" xmlns:a=\"ns\"><M/></ArrayOfXmlNode>"}
@@ -179,7 +180,7 @@ A conversão só ocorrerá se os caracteres "/" tiverem escape (ou seja, o JSON 
 
 #### <a name="ixmlserializable-types-including-xelement-and-dataset"></a>Tipos IXmlSerializable, incluindo XElement e DataSet
 
-<xref:System.Runtime.Serialization.ISerializable>os tipos subdividam em "tipos de conteúdo", "tipos de conjunto de conjuntos" e "tipos de elemento". Para obter definições desses tipos, consulte [tipos XML e ADO.net em contratos de dados](xml-and-ado-net-types-in-data-contracts.md).
+<xref:System.Runtime.Serialization.ISerializable> os tipos subdividam em "tipos de conteúdo", "tipos de conjunto de conjuntos" e "tipos de elemento". Para obter definições desses tipos, consulte [tipos XML e ADO.net em contratos de dados](xml-and-ado-net-types-in-data-contracts.md).
 
 Os tipos "content" e "DataSet" são serializados semelhante aos <xref:System.Array> objetos de <xref:System.Xml.XmlNode> discutidos na seção anterior. Eles são encapsulados em um elemento cujo nome e namespace correspondem ao nome do contrato de dados e ao namespace do tipo em questão.
 
@@ -253,7 +254,7 @@ Se o `Shape` tipo base também contivesse um membro de dados chamado " `radius` 
 
 #### <a name="polymorphism-and-ixmlserializable-types"></a>Tipos polimorfismo e IXmlSerializable
 
-<xref:System.Xml.Serialization.IXmlSerializable>os tipos podem ser polimorficamente atribuídos entre si como de costume, desde que os requisitos de tipos conhecidos sejam atendidos, de acordo com as regras de contrato de dados usuais. No entanto, serializar um <xref:System.Xml.Serialization.IXmlSerializable> tipo no lugar de <xref:System.Object> resultados em perda de informações de tipo como resultado é uma cadeia de caracteres JSON.
+<xref:System.Xml.Serialization.IXmlSerializable> os tipos podem ser polimorficamente atribuídos entre si como de costume, desde que os requisitos de tipos conhecidos sejam atendidos, de acordo com as regras de contrato de dados usuais. No entanto, serializar um <xref:System.Xml.Serialization.IXmlSerializable> tipo no lugar de <xref:System.Object> resultados em perda de informações de tipo como resultado é uma cadeia de caracteres JSON.
 
 #### <a name="polymorphism-and-certain-interface-types"></a>Polimorfismo e determinados tipos de interface
 
@@ -275,7 +276,7 @@ As coleções atribuídas ao objeto são serializadas como se fossem coleções 
 
 Quando desserializado de volta em <xref:System.Object> :
 
-- `Shape`deve estar na lista de tipos conhecidos. Ter <xref:System.Collections.Generic.List%601> do tipo `Shape` em tipos conhecidos não tem nenhum efeito. Observe que você não precisa adicionar `Shape` a tipos conhecidos na serialização, nesse caso, isso é feito automaticamente.
+- `Shape` deve estar na lista de tipos conhecidos. Ter <xref:System.Collections.Generic.List%601> do tipo `Shape` em tipos conhecidos não tem nenhum efeito. Observe que você não precisa adicionar `Shape` a tipos conhecidos na serialização, nesse caso, isso é feito automaticamente.
 
 - A coleção é desserializada como um <xref:System.Array> do tipo <xref:System.Object> que contém `Shape` instâncias.
 

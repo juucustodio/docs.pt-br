@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: funções matemáticas (Visual Basic)'
 title: Funções matemáticas
 ms.date: 01/27/2020
 helpviewer_keywords:
@@ -7,20 +8,20 @@ helpviewer_keywords:
 - math routines
 - Atn function
 ms.assetid: 4d2d82e7-6924-42fe-a4a7-b4dd5bebbd0c
-ms.openlocfilehash: ea30ae3b30484c1a13d6d540f121c03afb30ba26
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: d6ab82e45a17c0b1e1ee9f7df54936cd5420ef2b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76794603"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99731096"
 ---
 # <a name="math-functions-visual-basic"></a>Funções matemáticas (Visual Basic)
 
-Os métodos da classe <xref:System.Math?displayProperty=nameWithType> fornecem funções matemáticas, logarítmicas e outras comuns.
+Os métodos da <xref:System.Math?displayProperty=nameWithType> classe fornecem funções matemáticas, logarítmicas e outros tipos matemáticos comuns.
 
 ## <a name="remarks"></a>Comentários
 
-A tabela a seguir lista os métodos da classe <xref:System.Math?displayProperty=nameWithType>. Você pode usá-los em um programa Visual Basic:
+A tabela a seguir lista os métodos da <xref:System.Math?displayProperty=nameWithType> classe. Você pode usá-los em um programa Visual Basic:
   
 |Método .NET|Descrição|
 |---------------------------|-----------------|
@@ -30,28 +31,28 @@ A tabela a seguir lista os métodos da classe <xref:System.Math?displayProperty=
 |<xref:System.Math.Atan%2A>|Retorna o ângulo cuja tangente é o número especificado.|
 |<xref:System.Math.Atan2%2A>|Retorna o ângulo cuja tangente é o quociente de dois números especificados.|
 |<xref:System.Math.BigMul%2A>|Retorna o produto completo de números de 2 32 bits.|
-|<xref:System.Math.Ceiling%2A>|Retorna o menor valor integral maior ou igual ao `Decimal` ou `Double`especificado.|
+|<xref:System.Math.Ceiling%2A>|Retorna o menor valor integral maior ou igual ao especificado `Decimal` ou `Double` .|
 |<xref:System.Math.Cos%2A>|Retorna o cosseno do ângulo especificado.|
 |<xref:System.Math.Cosh%2A>|Retorna o cosseno hiperbólico do ângulo especificado.|
 |<xref:System.Math.DivRem%2A>|Retorna o quociente de números inteiros com sinal de 2 32 bits ou 64 e também retorna o resto em um parâmetro de saída.|
 |<xref:System.Math.Exp%2A>|Retorna e (a base de logaritmos naturais) é gerada para a potência especificada.|
-|<xref:System.Math.Floor%2A>|Retorna o maior inteiro que é menor ou igual ao número especificado `Decimal` ou `Double`.|
+|<xref:System.Math.Floor%2A>|Retorna o maior inteiro que é menor ou igual ao especificado ou ao `Decimal` `Double` número.|
 |<xref:System.Math.IEEERemainder%2A>|Retorna o resto que resulta da divisão de um número especificado por outro número especificado.|
 |<xref:System.Math.Log%2A>|Retorna o logaritmo natural (base e) de um número especificado ou o logaritmo de um número especificado em uma base especificada.|
 |<xref:System.Math.Log10%2A>|Retorna o logaritmo de base 10 de um número especificado.|
 |<xref:System.Math.Max%2A>|Retorna o maior de dois números.|
 |<xref:System.Math.Min%2A>|Retorna o menor de dois números.|
 |<xref:System.Math.Pow%2A>|Retorna um número especificado elevado à potência especificada.|
-|<xref:System.Math.Round%2A>|Retorna um valor `Decimal` ou `Double` arredondado para o valor integral mais próximo ou para um número especificado de dígitos fracionários.|
-|<xref:System.Math.Sign%2A>|Retorna um valor `Integer` indicando o sinal de um número.|
+|<xref:System.Math.Round%2A>|Retorna um `Decimal` `Double` valor ou arredondado para o valor integral mais próximo ou para um número especificado de dígitos fracionários.|
+|<xref:System.Math.Sign%2A>|Retorna um `Integer` valor que indica o sinal de um número.|
 |<xref:System.Math.Sin%2A>|Retorna o seno do ângulo especificado.|
 |<xref:System.Math.Sinh%2A>|Retorna o seno hiperbólico do ângulo especificado.|
 |<xref:System.Math.Sqrt%2A>|Retorna a raiz quadrada de um número especificado.|
 |<xref:System.Math.Tan%2A>|Retorna a tangente do ângulo especificado.|
 |<xref:System.Math.Tanh%2A>|Retorna a tangente hiperbólica do ângulo especificado.|
-|<xref:System.Math.Truncate%2A>|Calcula a parte integral de um `Decimal` especificado ou um número de `Double`.|
+|<xref:System.Math.Truncate%2A>|Calcula a parte integral de um `Decimal` número ou especificado `Double` .|
 
-A tabela a seguir lista os métodos da classe <xref:System.Math?displayProperty=nameWithType> que não existem em .NET Framework mas são adicionados ao .NET Standard ou ao .NET Core:
+A tabela a seguir lista os métodos da <xref:System.Math?displayProperty=nameWithType> classe que não existem no .NET Framework, mas que são adicionados no .net Standard ou no .NET Core:
 
 |Método .NET|Descrição|Disponível em|
 |---------------------------|-----------------|-----------|
@@ -68,9 +69,9 @@ A tabela a seguir lista os métodos da classe <xref:System.Math?displayProperty=
 |<xref:System.Math.Log2%2A>|Retorna o logaritmo de base 2 de um número especificado.|A partir do .NET Core 3,0|
 |<xref:System.Math.MaxMagnitude%2A>|Retorna a maior magnitude de dois números de ponto flutuante de precisão dupla.|A partir do .NET Core 3,0|
 |<xref:System.Math.MinMagnitude%2A>|Retorna a menor magnitude de dois números de ponto flutuante de precisão dupla.|A partir do .NET Core 3,0|
-|<xref:System.Math.ScaleB%2A>|Retorna x \* 2 ^ n calculado com eficiência.|A partir do .NET Core 3,0|
+|<xref:System.Math.ScaleB%2A>|Retorna x \* 2 ^ n computado com eficiência.|A partir do .NET Core 3,0|
 
-Para usar essas funções sem qualificação, importe o namespace <xref:System.Math?displayProperty=nameWithType> em seu projeto adicionando o seguinte código à parte superior do seu arquivo de origem:
+Para usar essas funções sem qualificação, importe o <xref:System.Math?displayProperty=nameWithType> namespace em seu projeto adicionando o seguinte código à parte superior do seu arquivo de origem:
 
 ```vb
 Imports System.Math
@@ -78,7 +79,7 @@ Imports System.Math
 
 ## <a name="example---abs"></a>Exemplo – ABS
 
-Este exemplo usa o método <xref:System.Math.Abs%2A> da classe <xref:System.Math> para calcular o valor absoluto de um número.
+Este exemplo usa o <xref:System.Math.Abs%2A> método da <xref:System.Math> classe para computar o valor absoluto de um número.
 
 ```vb
 Dim x As Double = Math.Abs(50.3)
@@ -92,7 +93,7 @@ Console.WriteLine(y)
 
 ## <a name="example---atan"></a>Exemplo – ATAN
 
-Este exemplo usa o método <xref:System.Math.Atan%2A> da classe <xref:System.Math> para calcular o valor de PI.
+Este exemplo usa o <xref:System.Math.Atan%2A> método da <xref:System.Math> classe para calcular o valor de PI.
 
 ```vb
 Public Function GetPi() As Double
@@ -102,11 +103,11 @@ End Function
 ```
 
 > [!NOTE]
-> A classe <xref:System.Math?displayProperty=nameWithType> contém <xref:System.Math.PI?displayProperty=nameWithType> campo constante. Você pode usá-lo em vez de calcular.
+> A <xref:System.Math?displayProperty=nameWithType> classe contém o <xref:System.Math.PI?displayProperty=nameWithType> campo constante. Você pode usá-lo em vez de calcular.
 
 ## <a name="example---cos"></a>Exemplo-cos
 
-Este exemplo usa o método <xref:System.Math.Cos%2A> da classe <xref:System.Math> para retornar o cosseno de um ângulo.
+Este exemplo usa o <xref:System.Math.Cos%2A> método da <xref:System.Math> classe para retornar o cosseno de um ângulo.
 
 ```vb
 Public Function Sec(angle As Double) As Double
@@ -117,7 +118,7 @@ End Function
 
 ## <a name="example---exp"></a>Exemplo – exp
 
-Este exemplo usa o método <xref:System.Math.Exp%2A> da classe <xref:System.Math> para retornar e elevado a uma potência.
+Este exemplo usa o <xref:System.Math.Exp%2A> método da <xref:System.Math> classe para retornar e elevado a uma potência.
 
 ```vb
 Public Function Sinh(angle As Double) As Double
@@ -128,7 +129,7 @@ End Function
 
 ## <a name="example---log"></a>Exemplo-log
 
-Este exemplo usa o método <xref:System.Math.Log%2A> da classe <xref:System.Math> para retornar o logaritmo natural de um número.
+Este exemplo usa o <xref:System.Math.Log%2A> método da <xref:System.Math> classe para retornar o logaritmo natural de um número.
 
 ```vb
 Public Function Asinh(value As Double) As Double
@@ -139,7 +140,7 @@ End Function
 
 ## <a name="example---round"></a>Exemplo – redondo
 
-Este exemplo usa o método <xref:System.Math.Round%2A> da classe <xref:System.Math> para arredondar um número para o número inteiro mais próximo.
+Este exemplo usa o <xref:System.Math.Round%2A> método da <xref:System.Math> classe para arredondar um número para o número inteiro mais próximo.
 
 ```vb
 Dim myVar2 As Double = Math.Round(2.8)
@@ -150,7 +151,7 @@ Console.WriteLine(myVar2)
 
 ## <a name="example---sign"></a>Exemplo-assinar
 
-Este exemplo usa o método <xref:System.Math.Sign%2A> da classe <xref:System.Math> para determinar o sinal de um número.
+Este exemplo usa o <xref:System.Math.Sign%2A> método da <xref:System.Math> classe para determinar o sinal de um número.
 
 ```vb
 Dim mySign1 As Integer = Math.Sign(12)
@@ -167,7 +168,7 @@ Console.WriteLine(mySign3)
 
 ## <a name="example---sin"></a>Exemplo-Sin
 
-Este exemplo usa o método <xref:System.Math.Sin%2A> da classe <xref:System.Math> para retornar o seno de um ângulo.
+Este exemplo usa o <xref:System.Math.Sin%2A> método da <xref:System.Math> classe para retornar o seno de um ângulo.
 
 ```vb
 Public Function Csc(angle As Double) As Double
@@ -178,7 +179,7 @@ End Function
 
 ## <a name="example---sqrt"></a>Exemplo – sqrt
 
-Este exemplo usa o método <xref:System.Math.Sqrt%2A> da classe <xref:System.Math> para calcular a raiz quadrada de um número.
+Este exemplo usa o <xref:System.Math.Sqrt%2A> método da <xref:System.Math> classe para calcular a raiz quadrada de um número.
 
 ```vb
 Dim mySqrt1 As Double = Math.Sqrt(4)
@@ -198,7 +199,7 @@ Console.WriteLine(mySqrt4)
 
 ## <a name="example---tan"></a>Exemplo-Tan
 
-Este exemplo usa o método <xref:System.Math.Tan%2A> da classe <xref:System.Math> para retornar a tangente de um ângulo.
+Este exemplo usa o <xref:System.Math.Tan%2A> método da <xref:System.Math> classe para retornar a tangente de um ângulo.
 
 ```vb
 Public Function Ctan(angle As Double) As Double
@@ -207,10 +208,10 @@ Public Function Ctan(angle As Double) As Double
 End Function
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.VBMath.Rnd%2A>
 - <xref:Microsoft.VisualBasic.VBMath.Randomize%2A>
 - <xref:System.Double.NaN>
 - [Funções Matemáticas Derivadas](../keywords/derived-math-functions.md)
-- [Operadores Aritméticos](../operators/arithmetic-operators.md)
+- [Operadores aritméticos](../operators/arithmetic-operators.md)

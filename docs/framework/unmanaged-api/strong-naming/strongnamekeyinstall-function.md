@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função StrongNameKeyInstall'
 title: Função StrongNameKeyInstall
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e32fd546-7757-4681-be3d-658e93281e50
 topic_type:
 - apiref
-ms.openlocfilehash: 9e441d4da64e9704fbda2368d2b07289aaea610a
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 0a5d3971ac0927dda7066405adc01a5c80b7faca
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73125204"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99670535"
 ---
 # <a name="strongnamekeyinstall-function"></a>Função StrongNameKeyInstall
 
@@ -46,17 +47,17 @@ no O nome do contêiner de chave. `wszKeyContainer` deve ser uma cadeia de carac
 no O par de chaves binárias.
 
 `cbKeyBlob`\
-no O tamanho, em bytes, de `pbKeyBlob`.
+no O tamanho, em bytes, de `pbKeyBlob` .
 
 ## <a name="return-value"></a>Valor retornado
 
-`true` após a conclusão bem-sucedida; caso contrário, `false`.
+`true` após a conclusão bem-sucedida; caso contrário, `false` .
 
 ## <a name="remarks"></a>Comentários
 
 Use a função [StrongNameKeyDelete](strongnamekeydelete-function.md) para excluir o contêiner de chave.
 
-Se a função `StrongNameKeyInstall` não for concluída com êxito, chame a função [StrongNameErrorInfo](strongnameerrorinfo-function.md) para recuperar o último erro gerado.
+Se a `StrongNameKeyInstall` função não for concluída com êxito, chame a função [StrongNameErrorInfo](strongnameerrorinfo-function.md) para recuperar o último erro gerado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,9 +65,9 @@ Se a função `StrongNameKeyInstall` não for concluída com êxito, chame a fun
 
 **Cabeçalho:** StrongName. h
 
-**Biblioteca:** Incluído como um recurso em MsCorEE. dll
+**Biblioteca:** Incluído como um recurso no MsCorEE.dll
 
-**Versões do .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+**.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
 
 ## <a name="see-also"></a>Consulte também
 

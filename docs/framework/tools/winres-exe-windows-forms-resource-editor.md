@@ -12,12 +12,12 @@ helpviewer_keywords:
 - resx files
 - .resx files
 ms.assetid: cb8bc835-9221-4888-af53-1a4f5fad6c48
-ms.openlocfilehash: 8393eb44246ed1bbc0e4e6acc84ad7bd57041ec0
-ms.sourcegitcommit: b4f8849c47c1a7145eb26ce68bc9f9976e0dbec3
+ms.openlocfilehash: 35d1324d5ea7a72ffd5ea594530d1312e717cd7c
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87516899"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90543219"
 ---
 # <a name="winresexe-windows-resource-localization-editor"></a>Winres.exe (Windows Resource Localization Editor)
 
@@ -52,7 +52,7 @@ O estado de elementos de interface do usuário de um formulário em um projeto d
 
 - Um arquivo de recurso de cultura pode ser salvo como outro arquivo de recurso da cultura. Por exemplo, um arquivo de recurso em inglês (EUA) pode ser salvo como um arquivo de recurso em polonês. O novo arquivo normalmente seria editado na sequência para ser compatível com a nova cultura.
 
-Consulte também [Organização hierárquica de recursos para localização](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/756hydy4(v=vs.110)) ou [Organização hierárquica de recursos para localização](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/756hydy4(v=vs.120)).
+Consulte também [Organização hierárquica de recursos para localização](/previous-versions/visualstudio/visual-studio-2012/756hydy4(v=vs.110)) ou [Organização hierárquica de recursos para localização](/previous-versions/visualstudio/visual-studio-2013/756hydy4(v=vs.120)).
 
 Winres.exe não pode converter um arquivo .resx em seu arquivo .resources correspondente; use a ferramenta Resgen.exe em vez disso. Para saber mais sobre o Resgen.exe, consulte [Resgen.exe (Gerador de Arquivo de Recurso)](resgen-exe-resource-file-generator.md).
 
@@ -85,7 +85,7 @@ O Winres.exe tem os seguintes recursos e funcionalidades:
 
 - As teclas de acesso podem ser verificadas em busca de duplicatas: no menu **Formato**, clique no comando **Verificar teclas de acesso**.
 
-## <a name="version-compatibility"></a>Compatibilidade de versões
+## <a name="version-compatibility"></a>Compatibilidade entre versões
 
 Você deve usar a versão de Winres.exe liberada com o .NET Framework que você está usando. A tabela a seguir lista as versões compatíveis:
 
@@ -96,7 +96,7 @@ Você deve usar a versão de Winres.exe liberada com o .NET Framework que você 
 |Visual Studio 2005|2.0|2.0|
 |Visual Studio 2008|3.0 e 3.5|3.0 e 3.5|
 |Visual Studio 2010|4,0|4,0|
-|Visual Studio 2017|4,6|4,6|
+|Visual Studio 2017|4.6|4.6|
 
 > [!NOTE]
 > Embora VSFM tenha a vantagem de ser compatível com o Visual Studio, como armazena apenas valores alterados no arquivo de recurso, Winres.exe exige que os pais do arquivo de recurso atual estejam localizados no mesmo diretório. Por exemplo, a edição de `TestApp.de-DE.resources`, um arquivo de recurso em alemão na Alemanha, exige a presença do arquivo de recurso padrão, `TestApp.resx`, e possivelmente do arquivo de recurso de cultura neutra, `TestApp.de.resources`.
@@ -109,7 +109,7 @@ Você deve usar a versão de Winres.exe liberada com o .NET Framework que você 
 
 2. Para abrir os recursos padrão que serão localizados por um formulário, clique no comando **Abrir** do menu **Arquivo** e navegue até o arquivo para abri-lo.
 
-     -ou-
+     - ou -
 
      Especifique o arquivo a ser aberto na linha de comando ao iniciar Winres.exe.
 
@@ -136,7 +136,7 @@ Você deve usar a versão de Winres.exe liberada com o .NET Framework que você 
 
    A ferramenta salva o arquivo usando a convenção de nomenclatura esperada pelo tempo de execução para arquivos de recurso localizados. Por exemplo, se você localizar `TestApp.resources` para o alemão na Alemanha, a ferramenta salvará o arquivo como `TestApp.de-DE.resources`. Se você localizar `TestApp.resx` para o alemão na Alemanha, a ferramenta salvará o arquivo como `TestApp.de-DE.resx`. Para obter mais informações sobre as convenções de nomenclatura de recurso, consulte [Empacotando e implantando recursos](../resources/packaging-and-deploying-resources-in-desktop-apps.md). Para obter uma lista dos nomes de cultura predefinidos usados pelo tempo de execução, consulte a classe <xref:System.Globalization.CultureInfo>.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.ComponentModel.LocalizableAttribute>
 - <xref:System.Globalization.CultureInfo>

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ISymUnmanagedMethod'
 title: Interface ISymUnmanagedMethod
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: f204d74c-cc79-4092-83bb-60654be95649
 topic_type:
 - apiref
-ms.openlocfilehash: 7a98a0c40f68cef9bab1ea2de0850208aaef77a0
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 18f87784a959ddc62415592e51d1971ea10f90bf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615118"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99709952"
 ---
 # <a name="isymunmanagedmethod-interface"></a>Interface ISymUnmanagedMethod
+
 Representa um método dentro do repositório de símbolos. Essa interface fornece acesso apenas aos atributos relacionados a símbolos de um método, em vez dos atributos relacionados ao tipo.  
   
 ## <a name="methods"></a>Métodos  
@@ -40,8 +42,9 @@ Representa um método dentro do repositório de símbolos. Essa interface fornec
 |[Método GetToken](isymunmanagedmethod-gettoken-method.md)|Retorna o token de metadados para esse método.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de armazenamento de símbolo de diagnóstico](diagnostics-symbol-store-interfaces.md)

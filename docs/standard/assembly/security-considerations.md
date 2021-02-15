@@ -3,34 +3,35 @@ title: Considerações sobre a segurança do assembly
 description: Ao criar um assembly .NET, você pode especificar as permissões que o assembly requer para ser executado. Este artigo aborda os assemblies de nome forte e as ferramentas de assinatura.
 ms.date: 08/20/2019
 helpviewer_keywords:
-- assemblies [.NET Framework], security
+- assemblies [.NET], security
 - signcodes
-- names [.NET Framework], assemblies
+- names [.NET], assemblies
 - strong-named assemblies, security considerations
 - signing assemblies
-- assemblies [.NET Framework], signing
+- assemblies [.NET], signing
 - granting permissions, assemblies
-- assemblies [.NET Framework], strong-named
-- names [.NET Framework], strong names
-- permissions [.NET Framework], assemblies
-- security [.NET Framework], assemblies
+- assemblies [.NET], strong-named
+- names [.NET], strong names
+- permissions [.NET], assemblies
+- security [.NET], assemblies
 - integrity with assemblies
 ms.assetid: 1b5439c1-f3d5-4529-bd69-01814703d067
-ms.openlocfilehash: d0b822f725444248d1037c21ffea9afe1cebb7e2
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 91ea206abf80da275651854b9f13aa0116b7a1c5
+ms.sourcegitcommit: 279fb6e8d515df51676528a7424a1df2f0917116
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84290013"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92687264"
 ---
 # <a name="assembly-security-considerations"></a>Considerações sobre a segurança do assembly
+
 Ao criar um assembly, você pode especificar um conjunto de permissões que o assembly exige para ser executado. Se determinadas permissões são concedidas ou não a um assembly é algo que se baseia na evidência.  
   
  Existem duas formas distintas de usar a evidência:  
   
-- A evidência de entrada é mesclada com a evidência coletada pelo carregador para criar um conjunto final de evidências usado na resolução da política. Entre os métodos que usam essa semântica estão **Assembly.Load**, **Assembly.LoadFrom** e **Activator.CreateInstance**.  
+- A evidência de entrada é mesclada com a evidência coletada pelo carregador para criar um conjunto final de evidências usado na resolução da política. Entre os métodos que usam essa semântica estão **Assembly.Load** , **Assembly.LoadFrom** e **Activator.CreateInstance** .  
   
-- A evidência de entrada é usada inalterada como o conjunto final de evidências usado na resolução da política. Entre os métodos que usam essa semântica estão **Assembly.Load(byte[])** e **AppDomain.DefineDynamicAssembly()**.  
+- A evidência de entrada é usada inalterada como o conjunto final de evidências usado na resolução da política. Entre os métodos que usam essa semântica estão **Assembly.Load(byte[])** e **AppDomain.DefineDynamicAssembly()** .  
   
   Permissões opcionais podem ser concedidas pelo conjunto de [políticas de segurança](../../framework/misc/code-access-security-basics.md) no computador em que o assembly será executado. Se quiser que o código identifique todas as exceções de segurança em potencial, você poderá seguir um destes procedimentos:  
   
@@ -65,4 +66,4 @@ Ao criar um assembly, você pode especificar um conjunto de permissões que o as
 
 - [Assemblies de nome forte](strong-named.md)
 - [Assemblies no .NET](index.md)
-- [SignTool. exe (ferramenta de assinatura)](../../framework/tools/signtool-exe.md)
+- [SignTool.exe (ferramenta de assinatura)](../../framework/tools/signtool-exe.md)

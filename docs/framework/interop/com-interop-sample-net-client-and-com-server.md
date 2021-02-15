@@ -10,19 +10,21 @@ helpviewer_keywords:
 - interoperation with unmanaged code, samples
 - COM interop, samples
 ms.assetid: a3f752bb-8945-4e1b-8163-71def6e9f137
-ms.openlocfilehash: bc95197813f5e4b0f4c7db6a8f0c24e8b27e4c3e
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: ed8568116d189573a1903678726cb348fa062376
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85620866"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96282880"
 ---
 # <a name="com-interop-sample-net-client-and-com-server"></a>Exemplo de interoperabilidade COM: cliente .NET e servidor COM
+
 Esta amostra apresenta como um [cliente .NET](#cpconcominteropsamplenetclientcomserveranchor1), criado para acessar um [servidor COM](#cpconcominteropsamplenetclientcomserveranchor2), cria uma instância de uma coclass COM e chama os membros da classe para executar cálculos de hipoteca.  
   
  Neste exemplo, o cliente cria e chama uma instância da coclass **Loan**, passa quatro argumentos (um desses quatro sendo igual a zero) para a instância e exibe os cálculos. Os fragmentos de código dessa amostra são apresentados nesta seção.  
   
 <a name="cpconcominteropsamplenetclientcomserveranchor1"></a>
+
 ## <a name="net-client"></a>Cliente .NET  
   
 ```vb  
@@ -153,6 +155,7 @@ public class LoanApp {
 ```  
   
 <a name="cpconcominteropsamplenetclientcomserveranchor2"></a>
+
 ## <a name="com-server"></a>Servidor COM  
   
 ```cpp  
@@ -298,6 +301,6 @@ static double Round(double value, short digits)
 }  
 ```  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Expondo componentes do COM para o .NET Framework](exposing-com-components.md)

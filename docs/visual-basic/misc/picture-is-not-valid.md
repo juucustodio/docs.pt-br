@@ -1,19 +1,21 @@
 ---
-title: Imagem não é válida
+description: 'Saiba mais sobre: a imagem não é válida'
+title: Figura inválida
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID481
 ms.assetid: 6ac18c39-042b-423a-9d95-25a7745c84dd
-ms.openlocfilehash: 3413aaecb332b711cb93c86156ab2c6f48110213
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: c89f801ed0758447c3c55c34568387ec6da0bf3d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61944729"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100480590"
 ---
-# <a name="picture-is-not-valid"></a>Imagem não é válida
-Você tentou atribuir um formato gráfico que não seja um bitmap, ícone ou metarquivo do Windows para o `Picture` propriedade de um formulário ou controle.  
+# <a name="picture-is-not-valid"></a>Figura inválida
+
+Você tentou atribuir um formato gráfico diferente de um bitmap, ícone ou metarquivo do Windows à `Picture` propriedade de um formulário ou controle.  
   
 ## <a name="to-correct-this-error"></a>Para corrigir este erro  
   
-1. Certifique-se de que o arquivo que você está tentando carregar o `Picture` propriedade é um arquivo de gráficos válido com suporte pelo Visual Basic.  
+1. Verifique se o arquivo que você está tentando carregar na `Picture` propriedade é um arquivo gráfico válido com suporte pelo Visual Basic.  

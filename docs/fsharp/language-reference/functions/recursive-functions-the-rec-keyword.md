@@ -2,12 +2,12 @@
 title: 'Funções recursivas: a palavra-chave rec'
 description: "Saiba como a palavra-chave ' Rec ' do F # é usada com a palavra-chave ' Let ' para definir uma função recursiva."
 ms.date: 08/12/2020
-ms.openlocfilehash: 389357bd13cef39b1d07972c1a3167320b61612b
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 27f215f7b6f09646e847898c2618cfac10175e6e
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88558706"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99215706"
 ---
 # <a name="recursive-functions-the-rec-keyword"></a>Funções recursivas: a palavra-chave rec
 
@@ -36,9 +36,9 @@ Funções recursivas – funções que chamam a si mesmas – são identificadas
 O exemplo a seguir mostra uma função recursiva que computa o número *n*<sup>th</sup> Fibonacci usando a definição matemática.
 
 ```fsharp
-let fib n =
+let rec fib n =
     match n with
-    | 0 | 1 -> 1
+    | 0 | 1 -> n
     | n -> fib (n-1) + fib (n-2)
 ```
 
@@ -51,7 +51,7 @@ Os métodos são recursivos implicitamente dentro do tipo em que são definidos,
 type MyClass() =
     member this.Fib(n) =
         match n with
-        | 0 | 1 -> 1
+        | 0 | 1 -> n
         | n -> this.Fib(n-1) + this.Fib(n-2)
 ```
 

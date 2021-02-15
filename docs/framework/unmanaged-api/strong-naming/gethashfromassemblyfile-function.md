@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Função GetHashFromAssemblyFile'
 title: Função GetHashFromAssemblyFile
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 751ed69f-b7ab-4e07-80de-e17ca9319b0c
 topic_type:
 - apiref
-ms.openlocfilehash: 866b34acae333f043d8e13f4d0ebd55f32046334
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 79cc6289ebcf33f5a9ea8b4ef139c4b2a67e55e7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73140721"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99736772"
 ---
 # <a name="gethashfromassemblyfile-function"></a>Função GetHashFromAssemblyFile
+
 Obtém um hash do arquivo do assembly especificado, usando o algoritmo de hash especificado.  
   
  Esta função foi preterida. Em vez disso, use o método [ICLRStrongName:: GetHashFromAssemblyFile](../hosting/iclrstrongname-gethashfromassemblyfile-method.md) .  
@@ -39,6 +41,7 @@ HRESULT GetHashFromAssemblyFile (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `szFilePath`  
  no O caminho para o arquivo a ser transformado em hash.  
   
@@ -49,19 +52,20 @@ HRESULT GetHashFromAssemblyFile (
  fora O buffer de hash retornado.  
   
  `cchHash`  
- no O tamanho máximo solicitado de `pbHash`.  
+ no O tamanho máximo solicitado de `pbHash` .  
   
  `pchHash`  
- fora O tamanho retornado, em bytes, de `pbHash`.  
+ fora O tamanho retornado, em bytes, de `pbHash` .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** StrongName. h  
   
- **Biblioteca:** Incluído como um recurso em MsCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MsCorEE.dll  
   
- **Versões do .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## <a name="see-also"></a>Consulte também
 

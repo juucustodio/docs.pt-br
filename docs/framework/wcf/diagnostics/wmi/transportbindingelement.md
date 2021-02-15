@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: TransportBindingElement'
 title: TransportBindingElement
 ms.date: 03/30/2017
 ms.assetid: 54ecfbee-53c0-410c-a7fa-a98f2e40c545
-ms.openlocfilehash: bdb5ca7400a41dd724c2ad7fc76695a82874ded6
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: de08feaf8abec3a0dfee97e92d68d5223cd0de44
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61641613"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757105"
 ---
 # <a name="transportbindingelement"></a>TransportBindingElement
+
 TransportBindingElement  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class TransportBindingElement : BindingElement  
@@ -25,45 +27,51 @@ class TransportBindingElement : BindingElement
 ```  
   
 ## <a name="methods"></a>Métodos  
- A classe de TransportBindingElement não define quaisquer métodos.  
+
+ A classe TransportBindingElement não define nenhum método.  
   
 ## <a name="properties"></a>Propriedades  
- A classe de TransportBindingElement tem as seguintes propriedades:  
+
+ A classe TransportBindingElement tem as seguintes propriedades:  
   
 ### <a name="manualaddressing"></a>ManualAddressing  
- Tipo de dados: boolean  
+
+ Tipo de dados: booliano  
   
  Tipo de acesso: Somente leitura  
   
- Um valor booliano que especifica se o usuário deseja assumir o controle do endereçamento de mensagem.  
+ Um valor booliano que especifica se o usuário deseja assumir o controle do endereçamento de mensagens.  
   
 ### <a name="maxbufferpoolsize"></a>MaxBufferPoolSize  
+
  Tipo de dados: sint64  
   
  Tipo de acesso: Somente leitura  
   
- O tamanho máximo do buffer do pool para a associação.  
+ O tamanho máximo do pool de buffers para a associação.  
   
 ### <a name="maxreceivedmessagesize"></a>MaxReceivedMessageSize  
+
  Tipo de dados: sint64  
   
  Tipo de acesso: Somente leitura  
   
- O tamanho máximo para uma mensagem que é processado por essa associação.  
+ O tamanho máximo de uma mensagem que é processada por essa associação.  
   
 ### <a name="scheme"></a>Esquema  
+
  Tipo de dados: cadeia de caracteres  
   
  Tipo de acesso: Somente leitura  
   
- O esquema URI para o transporte.  
+ O esquema de URI para o transporte.  
   
 ## <a name="requirements"></a>Requisitos  
   
-|MOF|Declarado em Servicemodel.mof.|  
+|MOF|Declarado em ServiceModel. mof.|  
 |---------|-----------------------------------|  
-|Namespace|Definido no root\ServiceModel|  
+|Namespace|Definido em root\ServiceModel|  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.ServiceModel.Channels.TransportBindingElement>

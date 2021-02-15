@@ -3,14 +3,15 @@ title: Habilitando uma fonte de dados para consulta LINQ
 description: Saiba como estender o LINQ em C# para permitir que qualquer fonte de dados seja consultada no padrão LINQ, o que torna mais fácil para os clientes consultar uma fonte de dados.
 ms.date: 07/20/2015
 ms.assetid: d2ef04a5-31a6-45cb-af9a-a5ce7732662c
-ms.openlocfilehash: a3a03aa3c67ef80507de4607e21eee4d247d622d
-ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
+ms.openlocfilehash: 84769e27e3f8b8d7ee30b79c219b180333337af9
+ms.sourcegitcommit: 4d5e25a46aa7cd0d29b4b9227b92987354d444c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87103946"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98794838"
 ---
 # <a name="enabling-a-data-source-for-linq-querying"></a>Habilitando uma fonte de dados para consulta LINQ
+
 Há várias maneiras de estender o LINQ para permitir que qualquer fonte de dados seja consultada no padrão LINQ. A fonte de dados pode ser uma estrutura de dados, um serviço Web, um sistema de arquivos ou um banco de dados, apenas para citar algumas opções. O padrão LINQ torna mais fácil para os clientes consultar uma fonte de dados para a qual a consulta LINQ está habilitada, porque a sintaxe e o padrão da consulta não são alterados. As maneiras pelas quais o LINQ pode ser estendido para essas fontes de dados incluem o seguinte:  
   
 - Implementar a <xref:System.Collections.Generic.IEnumerable%601> interface em um tipo para habilitar LINQ to Objects consulta desse tipo.  
@@ -26,12 +27,15 @@ Há várias maneiras de estender o LINQ para permitir que qualquer fonte de dado
 ## <a name="how-to-enable-linq-querying-of-your-data-source"></a>Como habilitar consultas de LINQ da sua fonte de dados  
   
 ### <a name="in-memory-data"></a>Dados na memória  
+
  Há duas maneiras de habilitar a consulta LINQ de dados na memória. Se os dados forem de um tipo que implementa <xref:System.Collections.Generic.IEnumerable%601> , você poderá consultar os dados usando LINQ to Objects. Se não fizer sentido habilitar a enumeração do seu tipo implementando a <xref:System.Collections.Generic.IEnumerable%601> interface, você poderá definir métodos do operador de consulta padrão LINQ nesse tipo ou criar métodos do operador de consulta padrão do LINQ que estendem o tipo. As implementações personalizadas dos operadores de consulta padrão devem usar a execução adiada para retornar os resultados.  
   
 ### <a name="remote-data"></a>Dados remotos  
- A melhor opção para habilitar consultas LINQ de uma fonte de dados remota é implementar a <xref:System.Linq.IQueryable%601> interface. No entanto, isso é diferente de estender um provedor como o [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] para uma fonte de dados. Nenhum modelo de provedor para estender as tecnologias LINQ existentes, como [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] , para outros tipos de fonte de dados, está disponível no Visual Studio 2008.
+
+ A melhor opção para habilitar consultas LINQ de uma fonte de dados remota é implementar a <xref:System.Linq.IQueryable%601> interface. No entanto, isso é diferente de estender um provedor como o [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] para uma fonte de dados.
   
 ## <a name="iqueryable-linq-providers"></a>Provedores IQueryable de LINQ  
+
  Provedores LINQ que implementam <xref:System.Linq.IQueryable%601> o podem variar muito em sua complexidade. Esta seção discute os diferentes níveis de complexidade.  
   
  Um provedor menos complexo de `IQueryable` poderia fazer a interface com um único método de um serviço Web. Esse tipo de provedor é muito específico porque ele espera informações específicas nas consultas que manipula. Ele possui um sistema de tipos fechado, talvez expondo um único tipo de resultado. A maior parte da execução da consulta ocorre localmente, por exemplo, usando as implementações de <xref:System.Linq.Enumerable> dos operadores de consulta padrão. Um provedor menos complexo poderia examinar somente uma expressão de chamada do método na árvore de expressões que representa a consulta e deixar que a lógica restante da consulta fosse manipulada em outro lugar.  

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: operações de serviço (WCF Data Services)'
 title: Operações de serviço (WCF Data Services)
 ms.date: 03/30/2017
 dev_langs:
@@ -8,16 +9,18 @@ helpviewer_keywords:
 - service operations [WCF Data Services]
 - WCF Data Services, service operations
 ms.assetid: 583a690a-e60f-4990-8991-d6efce069d76
-ms.openlocfilehash: c254a7362c7bc28f4b38fc0189ae0ea763bc90cc
-ms.sourcegitcommit: 79a2d6a07ba4ed08979819666a0ee6927bbf1b01
+ms.openlocfilehash: 3c811da86b1654f33675b46575d45884a6ba9b1f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74568843"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773089"
 ---
 # <a name="service-operations-wcf-data-services"></a>Operações de serviço (WCF Data Services)
 
-WCF Data Services permite que você defina as operações de serviço em um serviço de dados para expor métodos no servidor. Como outros recursos do serviço de dados, as operações de serviço são endereçadas por URIs. As operações de serviço permitem que você exponha a lógica de negócio em um serviço de dados, como implementar a lógica de validação, aplicar a segurança baseada em função, ou expor recursos de consulta especializada. As operações de serviço são métodos adicionados à classe de serviço de dados que deriva de <xref:System.Data.Services.DataService%601>. Assim como todos os outros recursos de serviço de dados, você pode fornecer parâmetros para o método de operação de serviço. Por exemplo, o seguinte URI de operação de serviço (com base no serviço de dados de [início rápido](quickstart-wcf-data-services.md) ) passa o valor `London` para o parâmetro `city`:
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
+
+WCF Data Services permite que você defina as operações de serviço em um serviço de dados para expor métodos no servidor. Como outros recursos do serviço de dados, as operações de serviço são endereçadas por URIs. As operações de serviço permitem que você exponha a lógica de negócio em um serviço de dados, como implementar a lógica de validação, aplicar a segurança baseada em função, ou expor recursos de consulta especializada. As operações de serviço são métodos adicionados à classe de serviço de dados derivada de <xref:System.Data.Services.DataService%601> . Assim como todos os outros recursos de serviço de dados, você pode fornecer parâmetros para o método de operação de serviço. Por exemplo, o seguinte URI de operação de serviço (com base no serviço de dados de [início rápido](quickstart-wcf-data-services.md) ) passa o valor `London` para o `city` parâmetro:
 
 ```http
 http://localhost:12345/Northwind.svc/GetOrdersByCity?city='London'
@@ -80,7 +83,7 @@ Os seguintes tipos de retorno são válidos para uma operação de serviço:
 
 |Tipos de retorno válidos|Regras de URI|
 |------------------------|---------------|
-|`void` (`Nothing` no Visual Basic)<br /><br /> \- ou -<br /><br /> Tipos de entidade<br /><br /> \- ou -<br /><br /> Tipos primitivos|O URI deve ser um único segmento de caminho que é o nome da operação de serviço. As opções de consulta não são permitidas.|
+|`void` (`Nothing` no Visual Basic)<br /><br /> -ou-<br /><br /> Tipos de entidade<br /><br /> -ou-<br /><br /> Tipos primitivos|O URI deve ser um único segmento de caminho que é o nome da operação de serviço. As opções de consulta não são permitidas.|
 |<xref:System.Collections.Generic.IEnumerable%601>|O URI deve ser um único segmento de caminho que é o nome da operação de serviço. Como o tipo do resultado não é um tipo <xref:System.Linq.IQueryable%601>, as opções de consulta não são permitidas.|
 |<xref:System.Linq.IQueryable%601>|Os segmentos do caminho de consulta além do caminho que é o nome da operação de serviço são permitidos. As opções de consulta também são permitidas.|
 

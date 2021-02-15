@@ -3,12 +3,12 @@ title: Referência de comando da CLI ML.NET
 description: Visão geral, exemplos e referência para o comando de treinamento automático na ferramenta de CLI do ML.NET.
 ms.date: 06/03/2020
 ms.custom: mlnet-tooling
-ms.openlocfilehash: 4c6cb1346c16f6162077d3414140d693de9e0d8c
-ms.sourcegitcommit: 182c7b6c079ebcc0e1898dfd9e921b9ef472ea2c
+ms.openlocfilehash: 6f07cd8b4237f8931bbc0ec97bc0bbe18c488f16
+ms.sourcegitcommit: e395fabeeea5c705d243d246fa64446839ac85b6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85946935"
+ms.lasthandoff: 01/03/2021
+ms.locfileid: "97856062"
 ---
 # <a name="the-mlnet-cli-command-reference"></a>A referência de comando da CLI ML.NET
 
@@ -99,7 +99,7 @@ mlnet classification
 `mlnet regression`A execução treinará um modelo de regressão. Escolha este comando se desejar que um modelo de ML preveja um valor numérico (por exemplo, previsão de preço).
 
 ```console
-mlnet classification
+mlnet regression
 
 --dataset <path> (REQUIRED)
 
@@ -134,7 +134,7 @@ mlnet classification
 `mlnet recommendation`A execução treinará um modelo de recomendação.  Escolha este comando se desejar que um modelo de ML recomende itens aos usuários com base em classificações (por exemplo, recomendação de produto).
 
 ```console
-mlnet classification
+mlnet recommendation
 
 --dataset <path> (REQUIRED)
 
@@ -168,7 +168,7 @@ mlnet classification
 
 As opções de entrada inválidas fazem com que a ferramenta CLI emita uma lista de entradas válidas e uma mensagem de erro.
 
-## <a name="dataset"></a>Dataset
+## <a name="dataset"></a>Conjunto de dados
 
 `--dataset | -d` (string)
 
@@ -217,7 +217,7 @@ Em qualquer caso, essas porcentagens serão decididas pelo usuário usando a CLI
 
 ## <a name="label-column"></a>Coluna de rótulo
 
-`--label-col`(int ou String)
+`--label-col` (int ou String)
 
 Com esse argumento, uma coluna de objetivo/destino específica (a variável que você deseja prever) pode ser especificada usando o nome da coluna definido no cabeçalho do conjunto de informações ou no índice numérico da coluna no arquivo do conjunto de informações (os valores de índice da coluna começam em 0).
 
@@ -225,7 +225,7 @@ Esse argumento é usado para problemas de *classificação* e *regressão* .
 
 ## <a name="item-column"></a>Coluna do item
 
-`--item-col`(int ou String)
+`--item-col` (int ou String)
 
 A coluna item tem a lista de itens que os usuários avaliam (itens são recomendados para os usuários). Essa coluna pode ser especificada usando-se o nome da coluna definido no cabeçalho do conjunto de valores ou no índice numérico da coluna no arquivo do conjunto de arquivos (o valor do índice da coluna começa em 0).
 
@@ -233,7 +233,7 @@ Esse argumento é usado somente para a tarefa de *recomendação* .
 
 ## <a name="rating-column"></a>Coluna de classificação
 
-`--rating-col`(int ou String)
+`--rating-col` (int ou String)
 
 A coluna classificação tem a lista de classificações que são dadas aos itens pelos usuários. Essa coluna pode ser especificada usando-se o nome da coluna definido no cabeçalho do conjunto de valores ou no índice numérico da coluna no arquivo do conjunto de arquivos (o valor do índice da coluna começa em 0).
 
@@ -241,7 +241,7 @@ Esse argumento é usado somente para a tarefa de *recomendação* .
 
 ## <a name="user-column"></a>Coluna do usuário
 
-`--user-col`(int ou String)
+`--user-col` (int ou String)
 
 A coluna usuário tem a lista de usuários que fornecem classificações aos itens. Essa coluna pode ser especificada usando-se o nome da coluna definido no cabeçalho do conjunto de valores ou no índice numérico da coluna no arquivo do conjunto de arquivos (o valor do índice da coluna começa em 0).
 
@@ -299,7 +299,7 @@ No entanto, para grandes conjuntos de dados, carregar todos os dados na memória
 
 Se você não especificar o parâmetro `--cache`, a configuração de cache `auto` será usada por padrão.
 
-## <a name="name"></a>Name
+## <a name="name"></a>Nome
 
 `--name` (string)
 

@@ -1,22 +1,24 @@
 ---
+description: 'Saiba mais sobre: acessando dados XML fortemente tipados usando XPathNavigator'
 title: Acessando dados fortemente tipados XML usando XPathNavigator
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 ms.assetid: 898e0f52-8a7c-4d1f-afcd-6ffb28b050b4
-ms.openlocfilehash: 61957ff88ef57703aff1861238ee10b23c2f16ff
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 16c2d83f490b41a6e5789dc59588921e21acbbae
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291598"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99714086"
 ---
 # <a name="accessing-strongly-typed-xml-data-using-xpathnavigator"></a>Acessando dados fortemente tipados XML usando XPathNavigator
+
 Como uma instância do modelo de dados XPath 2,0, a <xref:System.Xml.XPath.XPathNavigator> classe pode conter dados fortemente tipados que mapeiam para tipos Common Language Runtime (CLR). De acordo com o modelo de dados XPath 2,0, somente elementos e atributos podem conter dados fortemente tipados. A <xref:System.Xml.XPath.XPathNavigator> classe fornece mecanismos para acessar dados dentro de <xref:System.Xml.XPath.XPathDocument> um <xref:System.Xml.XmlDocument> objeto ou como dados fortemente tipados, bem como mecanismos para conversão de um tipo de dados para outro.  
   
 ## <a name="type-information-exposed-by-xpathnavigator"></a>Informações de tipo expostos por XPathNavigator  
+
  XML 1,0 dados é tecnicamente sem tipo, a menos que processado com um DTD, o esquema de linguagem de definição de esquema XML (XSD), ou outro mecanismo. Há um número de categorias das informações que podem ser associadas com um elemento XML ou um atributo.  
   
 - Tipos simples de CLR: Nenhum de suporte a Common Language Runtime (CLR) linguagens de esquema tipos XML diretamente. Porque é útil poder exibir conteúdo simples de elementos e atributos porque os a maioria exibe o tipo de CLR, todo o conteúdo simples pode ser digitado como <xref:System.String> na ausência de informações de esquema com qualquer adicionadas informações de esquema que limita potencialmente esse conteúdo a um tipo apropriado. Você pode localizar o melhor tipo correspondente de CLR de conteúdo simples de elementos e atributos usando a propriedade de <xref:System.Xml.XPath.XPathNavigator.ValueType%2A> . Para saber mais sobre o mapeamento de tipos internos de esquema para tipos de CLR, confira [Suporte a tipo nas classes System.Xml](type-support-in-the-system-xml-classes.md).  
@@ -30,6 +32,7 @@ Como uma instância do modelo de dados XPath 2,0, a <xref:System.Xml.XPath.XPath
 - Reflexão do tipo específico de linguagem Esquema-: Em outros casos, você pode desejar obter mais detalhes de tipo específico esquema- aplicado a um documento XML. Por exemplo, ao ler um arquivo XML, você pode querer extrair o atributo de `maxOccurs` para cada nó válido no documento XML para executar um cálculo personalizado. Porque essa informação é definida apenas com a validação do esquema, é acessada através da propriedade de <xref:System.Xml.XPath.XPathNavigator.SchemaInfo%2A> da classe de <xref:System.Xml.XPath.XPathNavigator> . Para obter mais informações, consulte a seção de Infoset (PSVI) de validação do esquema de postagem abaixo.  
   
 ## <a name="xpathnavigator-typed-accessors"></a>XPathNavigator digitou acessadores  
+
  A tabela a seguir mostra as várias propriedades e métodos de <xref:System.Xml.XPath.XPathNavigator> classe que pode ser usado para acessar informações de tipo sobre um nó.  
   
 |Propriedade|Descrição|  
@@ -48,6 +51,7 @@ Como uma instância do modelo de dados XPath 2,0, a <xref:System.Xml.XPath.XPath
  Para saber mais sobre o mapeamento de tipos internos de esquema para tipos de CLR, confira [Suporte a tipo nas classes System.Xml](type-support-in-the-system-xml-classes.md).  
   
 ## <a name="the-post-schema-validation-infoset-psvi"></a>A validação Infoset (PSVI) do esquema de postagem  
+
  Um processador XML de esquema XML Infoset aceita como entrada e o converte em uma validação Infoset (PSVI) do esquema de postagem. Um PSVI é o infoset original XML de entrada com novos elementos de informações adicionados e as novas propriedades adicionadas a elementos existentes de informações. Há três classes de informações de adicionadas a Infoset XML em PSVI que são expostos por <xref:System.Xml.XPath.XPathNavigator>.  
   
 1. Resultados de validação: Informações se um elemento ou atributo estiverams bem-sucedida ou não. Isso expõe a propriedade de <xref:System.Xml.Schema.IXmlSchemaInfo.Validity%2A> de propriedade de <xref:System.Xml.XPath.XPathNavigator.SchemaInfo%2A> da classe de <xref:System.Xml.XPath.XPathNavigator> .  
@@ -138,6 +142,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 ```  
   
 ## <a name="obtain-typed-values-using-valueas-properties"></a>Obtenha valores tipados usando propriedades de ValueAs  
+
  O valor tipado de um nó pode ser recuperado acessando a propriedade de <xref:System.Xml.XPath.XPathNavigator.TypedValue%2A> de <xref:System.Xml.XPath.XPathNavigator>. Em alguns casos você pode querer converter o valor tipado de um nó para um tipo diferente. Um exemplo comum é obter um valor numérico de um nó XML. Por exemplo, considere o seguinte documento XML unvalidated e sem tipo.  
   
 ```xml  
@@ -183,7 +188,7 @@ Console.WriteLine("The price of the book has been dropped 20% from {0:C} to {1:C
   
  Para saber mais sobre o mapeamento de tipos internos de esquema para tipos de CLR, confira [Suporte a tipo nas classes System.Xml](type-support-in-the-system-xml-classes.md).  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>

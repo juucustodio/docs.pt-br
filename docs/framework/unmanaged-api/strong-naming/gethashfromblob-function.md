@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: função GetHashFromBlob'
 title: Função GetHashFromBlob
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b712d862-f2d0-4b55-87d4-65bbeadef982
 topic_type:
 - apiref
-ms.openlocfilehash: d1027aea1d800bda1654b223fec992aa70efd4b7
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: dc5039e44440afa7a000bc61167faec0e5b6cc84
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73140716"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99736603"
 ---
 # <a name="gethashfromblob-function"></a>Função GetHashFromBlob
 
@@ -55,10 +56,10 @@ no O comprimento, em bytes, do bloco de memória.
 fora O buffer de hash retornado.
 
 `cchHash`\
-no O tamanho máximo solicitado de `pbHash`.
+no O tamanho máximo solicitado de `pbHash` .
 
 `pchHash`\
-fora O tamanho, em bytes, do `pbHash`retornado.
+fora O tamanho, em bytes, do retornado `pbHash` .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,9 +67,9 @@ fora O tamanho, em bytes, do `pbHash`retornado.
 
 **Cabeçalho:** StrongName. h
 
-**Biblioteca:** Incluído como um recurso em MsCorEE. dll
+**Biblioteca:** Incluído como um recurso no MsCorEE.dll
 
-**Versões do .NET Framework:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+**.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
 
 ## <a name="see-also"></a>Consulte também
 

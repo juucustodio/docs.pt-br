@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IValidator:: Validate'
 title: Método IValidator::Validate
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 7d68666a-fb73-4455-bebd-908d49a16abc
 topic_type:
 - apiref
-ms.openlocfilehash: 688abd210cca193bf03c40f000b74ecb66eb8ede
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 6df70274a788b949686fe2509b525c5a8b04089c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84008541"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99680012"
 ---
 # <a name="ivalidatorvalidate-method"></a>Método IValidator::Validate
+
 Valida o executável portátil (PE) ou o arquivo. MSIL (Microsoft Intermediate Language) especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -41,6 +43,7 @@ HRESULT Validate (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `veh`  
  no Um ponteiro para uma `IVEHandler` instância que manipula erros de validação.  
   
@@ -66,10 +69,11 @@ HRESULT Validate (
  no O tamanho, em bytes, do arquivo a ser validado.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** IValidator. idl, IValidator. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  

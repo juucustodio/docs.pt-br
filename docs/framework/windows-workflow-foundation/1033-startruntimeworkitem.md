@@ -1,29 +1,33 @@
 ---
+description: 'Saiba mais sobre: 1033-StartRuntimeWorkItem'
 title: 1033 - StartRuntimeWorkItem
 ms.date: 03/30/2017
 ms.assetid: 172b5346-9f3b-46ae-bc06-39872022376a
-ms.openlocfilehash: c7192ed7c5fb43fe6f65b47b8cebde3cf4aed32c
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 31e664070b7592d3350a2f6f84f0493cc8f11ea1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61924235"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668000"
 ---
 # <a name="1033---startruntimeworkitem"></a>1033 - StartRuntimeWorkItem
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
-|ID|1033|  
+|ID|1046|  
 |Palavras-chave|WFRuntime|  
 |Nível|Detalhado|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
+
  Indica que um RuntimeWorkItem está sendo a execução.  
   
 ## <a name="message"></a>Mensagem  
- Iniciar a execução de um item de trabalho de tempo de execução para atividades “%1 ", DisplayName: “%2", InstanceId: “%3".  
+
+ Iniciar a execução de um item de trabalho de runtime para atividades “%1 ", DisplayName: “%2", InstanceId: “%3".  
   
 ## <a name="details"></a>Detalhes  
   

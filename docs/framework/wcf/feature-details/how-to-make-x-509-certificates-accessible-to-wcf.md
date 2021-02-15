@@ -1,5 +1,5 @@
 ---
-title: Como criar certificados X.509 que podem ser acessados pelo WCF
+title: 'Como: criar certificados X.509 que podem ser acessados pelo WCF'
 description: Saiba como tornar um certificado X. 509 acessível ao WCF. O código do aplicativo deve especificar o nome e o local do repositório de certificados. Pode haver outros requisitos.
 ms.date: 03/30/2017
 dev_langs:
@@ -10,14 +10,15 @@ helpviewer_keywords:
 - certificates [WCF], making X.509 certificates accessible to WCF
 - X.509 certificates [WCF], making accessible to WCF
 ms.assetid: a54e407c-c2b5-4319-a648-60e43413664b
-ms.openlocfilehash: 5cc1118640bcf1262d88cb8cdb39939ae315cae3
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 06a6167f0ad352955eb6b764ef8bfdb1394f4ed9
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85246864"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96279734"
 ---
-# <a name="how-to-make-x509-certificates-accessible-to-wcf"></a>Como criar certificados X.509 que podem ser acessados pelo WCF
+# <a name="how-to-make-x509-certificates-accessible-to-wcf"></a>Como: criar certificados X.509 que podem ser acessados pelo WCF
+
 Para tornar um certificado X. 509 acessível a Windows Communication Foundation (WCF), o código do aplicativo deve especificar o nome e o local do repositório de certificados. Em determinadas circunstâncias, a identidade do processo deve ter acesso ao arquivo que contém a chave privada associada ao certificado X. 509. Para obter a chave privada associada a um certificado X. 509 em um repositório de certificados, o WCF deve ter permissão para fazer isso. Por padrão, somente o proprietário e a conta do sistema podem acessar a chave privada de um certificado.  
   
 ### <a name="to-make-x509-certificates-accessible-to-wcf"></a>Para tornar os certificados X. 509 acessíveis para o WCF  
@@ -30,10 +31,10 @@ Para tornar um certificado X. 509 acessível a Windows Communication Foundation 
   
         |Uso do certificado X. 509|Chave privada|  
         |---------------------------|-----------------|  
-        |Assinando digitalmente uma mensagem SOAP de saída.|Yes|  
-        |Verificando a assinatura de uma mensagem SOAP de entrada.|No|  
-        |Criptografar uma mensagem SOAP de saída.|No|  
-        |Descriptografar uma mensagem SOAP de entrada.|Yes|  
+        |Assinando digitalmente uma mensagem SOAP de saída.|Sim|  
+        |Verificando a assinatura de uma mensagem SOAP de entrada.|Não|  
+        |Criptografar uma mensagem SOAP de saída.|Não|  
+        |Descriptografar uma mensagem SOAP de entrada.|Sim|  
   
     2. Determine o local do repositório de certificados e o nome no qual o certificado está armazenado.  
   
@@ -74,5 +75,5 @@ Para tornar um certificado X. 509 acessível a Windows Communication Foundation 
 ## <a name="see-also"></a>Veja também
 
 - [FindPrivateKey](../samples/findprivatekey.md)
-- [Como recuperar a impressão digital de um certificado](how-to-retrieve-the-thumbprint-of-a-certificate.md)
+- [Como: recuperar a impressão digital de um certificado](how-to-retrieve-the-thumbprint-of-a-certificate.md)
 - [Trabalhando com certificados](working-with-certificates.md)

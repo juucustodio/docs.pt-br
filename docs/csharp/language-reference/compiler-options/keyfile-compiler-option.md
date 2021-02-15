@@ -9,14 +9,15 @@ helpviewer_keywords:
 - -keyfile compiler option [C#]
 - keyfile compiler option [C#]
 ms.assetid: 0815f9de-ace4-4e98-b4c6-13c55dea40c2
-ms.openlocfilehash: a97fc00201be1cf8043fc353b20ef447468a06bf
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 5af40da18895d47933cb809d710e31a40f14513b
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125482"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "91152423"
 ---
 # <a name="-keyfile-c-compiler-options"></a>-keyfile (opções do compilador C#)
+
 Especifica o nome de arquivo que contém a chave de criptografia.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -32,6 +33,7 @@ Especifica o nome de arquivo que contém a chave de criptografia.
 |`file`|O nome do arquivo que contém a chave de nome forte.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Quando esta opção é usada, o compilador insere a chave pública da linha especificada no manifesto do assembly e, em seguida, assina o assembly definitivo com a chave privada. Para gerar um arquivo de chave, digite sn -k `file` na linha de comando.  
   
  Se você compilar com **-target:module**, o nome do arquivo de chave será mantido no módulo e incorporado no assembly, criado quando você compila um assembly com [-addmodule](./addmodule-compiler-option.md).  
@@ -56,5 +58,5 @@ Especifica o nome de arquivo que contém a chave de criptografia.
   
 ## <a name="see-also"></a>Confira também
 
-- [Opções do compilador C#](./index.md)
+- [Opções do compilador de C#](./index.md)
 - [Gerenciando propriedades de solução e de projeto](/visualstudio/ide/managing-project-and-solution-properties)

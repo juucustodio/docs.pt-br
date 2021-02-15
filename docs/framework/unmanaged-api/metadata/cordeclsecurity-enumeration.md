@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorDeclSecurity'
 title: Enumeração CorDeclSecurity
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 864f1267-d267-4696-8df7-1f83f8444d6f
 topic_type:
 - apiref
-ms.openlocfilehash: ffbc9a10ff48b3dfd59b95c0f6b9ecab80b6a49c
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 4c4b57c09ea8b3ec1b98ff120d72a5920dc5aa4a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84007878"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784542"
 ---
 # <a name="cordeclsecurity-enumeration"></a>Enumeração CorDeclSecurity
+
 Especifica as ações de segurança que podem ser executadas usando a segurança declarativa.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -56,7 +58,7 @@ typedef enum CorDeclSecurity {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`dclActionMask`|Reservado.|  
 |`dclActionNil`|Reservado.|  
@@ -81,12 +83,13 @@ typedef enum CorDeclSecurity {
 |`dclMaximumValue`|Reservado.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorHdr. h  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumerações de metadados](metadata-enumerations.md)

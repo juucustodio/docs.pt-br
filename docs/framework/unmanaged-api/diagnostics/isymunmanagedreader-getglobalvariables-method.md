@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedReader:: GetGlobalVariables'
 title: Método ISymUnmanagedReader::GetGlobalVariables
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: a2dd5098-3e58-4be5-b7a2-e4160b3b505a
 topic_type:
 - apiref
-ms.openlocfilehash: 20bfb3e48f411524bd4d9798f17dd935595a12bb
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 2b017d2a5746942f701cf79d3d29f1eb571dceab
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615014"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99689645"
 ---
 # <a name="isymunmanagedreadergetglobalvariables-method"></a>Método ISymUnmanagedReader::GetGlobalVariables
+
 Retorna todas as variáveis globais.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT GetGlobalVariables(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `cVars`  
  no O comprimento do buffer apontado por `pcVars` .  
   
@@ -46,11 +49,13 @@ HRESULT GetGlobalVariables(
  fora Um buffer que contém as variáveis.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedReader](isymunmanagedreader-interface.md)

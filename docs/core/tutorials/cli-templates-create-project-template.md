@@ -2,19 +2,19 @@
 title: Criar um modelo de projetos para o dotnet new
 description: Saiba como criar um modelo de projetos para o comando dotnet new.
 author: adegeo
-ms.date: 06/25/2019
+ms.date: 12/11/2020
 ms.topic: tutorial
 ms.author: adegeo
-ms.openlocfilehash: 75fedb2333a4ef9e16a27126055b6cacaf37c1c5
-ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
+ms.openlocfilehash: ed40cfd303c70c7b8f198a0f5b593bf1e1ebeaf8
+ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85324328"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97513127"
 ---
 # <a name="tutorial-create-a-project-template"></a>Tutorial: criar um modelo de projeto
 
-Com o .NET Core, você pode criar e implantar modelos que geram projetos, arquivos e até recursos. Este tutorial é a parte dois de uma série que ensina como criar, instalar e desinstalar modelos para usar com o comando `dotnet new`.
+Com o .NET, você pode criar e implantar modelos que geram projetos, arquivos, até mesmo recursos. Este tutorial é a parte dois de uma série que ensina como criar, instalar e desinstalar modelos para usar com o comando `dotnet new`.
 
 Nesta parte da série, você aprenderá a:
 
@@ -33,7 +33,7 @@ Nesta parte da série, você aprenderá a:
 
 ## <a name="create-a-project-template"></a>Criar um modelo de projeto
 
-Os modelos de projeto produzem projetos prontos para execução que ajudam os usuários a começar com um conjunto de códigos de trabalho. O .NET Core inclui alguns modelos de projeto, como um aplicativo de console ou uma biblioteca de classes. Neste exemplo, você criará um novo projeto de console que habilitará o C# 8.0 e produzirá um ponto de entrada `async main`.
+Os modelos de projeto produzem projetos prontos para execução que ajudam os usuários a começar com um conjunto de códigos de trabalho. O .NET inclui alguns modelos de projeto, como um aplicativo de console ou uma biblioteca de classes. Neste exemplo, você criará um novo projeto de console que habilita o C# 9,0 e produz um `async main` ponto de entrada.
 
 No terminal, navegue até a pasta _working\templates_ e crie uma nova subpasta chamada _consoleasync_. Insira a subpasta e execute `dotnet new console` para gerar o aplicativo de console padrão. Você editará os arquivos produzidos por este modelo para criar um novo modelo.
 
@@ -59,7 +59,7 @@ namespace consoleasync
     {
         static async Task Main(string[] args)
         {
-            await Console.Out.WriteAsync("Hello World with C# 8.0!");
+            await Console.Out.WriteAsync("Hello World with C# 9.0!");
         }
     }
 }
@@ -67,16 +67,16 @@ namespace consoleasync
 
 ## <a name="modify-consoleasynccsproj"></a>Modificar consoleasync.csproj
 
-Vamos atualizar a versão em linguagem C# que o projeto usa para a versão 8.0. Edite o arquivo _consoleasync.csproj_ e adicione a configuração `<LangVersion>` a um nó `<PropertyGroup>`.
+Vamos atualizar a versão da linguagem C# que o projeto usa para a versão 9,0. Edite o arquivo _consoleasync.csproj_ e adicione a configuração `<LangVersion>` a um nó `<PropertyGroup>`.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
 
-    <LangVersion>8.0</LangVersion>
+    <LangVersion>9.0</LangVersion>
 
   </PropertyGroup>
   
@@ -96,16 +96,16 @@ dotnet run
 Você Obtém a saída a seguir.
 
 ```console
-Hello World with C# 8.0!
+Hello World with C# 9.0!
 ```
 
-Você pode excluir as pastas _obj_ e _bin_ criadas usando `dotnet run`. A exclusão desses arquivos garante que o modelo inclua apenas os arquivos relacionados ao modelo e não os arquivos resultantes de uma ação de compilação.
+Você pode excluir as pastas _obj_ e _bin_ criadas usando `dotnet run`. A exclusão desses arquivos garante que o modelo inclua apenas os arquivos relacionados ao seu modelo e não todos os arquivos resultantes de uma ação de compilação.
 
 Agora que você tem o conteúdo do modelo criado, é necessário criar a configuração do modelo na pasta raiz do modelo.
 
 ## <a name="create-the-template-config"></a>Criar a configuração do modelo
 
-Os modelos são reconhecidos no .NET Core por uma pasta especial e um arquivo de configuração que está na raiz do modelo. Neste tutorial, a pasta de modelos está localizada em _working\templates\consoleasync_.
+Os modelos são reconhecidos no .NET por uma pasta especial e um arquivo de configuração que existem na raiz do modelo. Neste tutorial, a pasta de modelos está localizada em _working\templates\consoleasync_.
 
 Quando você cria um modelo, todos os arquivos e pastas na pasta de modelos são incluídos como parte do modelo, exceto a pasta de configuração especial. Esta pasta de configuração chama-se _.template.config_.
 
@@ -125,7 +125,7 @@ Abra o _template.jsem_ com seu editor de texto favorito e cole o código JSON a 
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "Me",
-  "classifications": [ "Common", "Console", "C#8" ],
+  "classifications": [ "Common", "Console", "C#9" ],
   "identity": "ExampleTemplate.AsyncProject",
   "name": "Example templates: async project",
   "shortName": "consoleasync",
@@ -136,7 +136,7 @@ Abra o _template.jsem_ com seu editor de texto favorito e cole o código JSON a 
 }
 ```
 
-Esse arquivo de configuração contém todas as configurações do modelo. Você pode ver as configurações básicas, como `name` e `shortName`, mas também há um valor `tags/type` que é definido como `project`. Isso designa seu modelo como um modelo de projeto. Não há restrições quanto ao tipo do modelo criado. Os valores `item` e `project` são nomes comuns que o .NET Core recomenda para que os usuários possam filtrar facilmente o tipo de modelo que eles pesquisam.
+Esse arquivo de configuração contém todas as configurações do modelo. Você pode ver as configurações básicas, como `name` e `shortName`, mas também há um valor `tags/type` que é definido como `project`. Isso designa seu modelo como um modelo de projeto. Não há restrições quanto ao tipo do modelo criado. Os `item` `project` valores e são nomes comuns que o .net recomenda para que os usuários possam filtrar facilmente o tipo de modelo que estão procurando.
 
 O item `classifications` representa a coluna **marcações** que você vê quando executa `dotnet new` e obtém uma lista de modelos. Os usuários também podem pesquisar com base nas marcações de classificação. Não confunda a propriedade `tags` no arquivo json com a lista de marcações `classifications`. São duas coisas diferentes, mas, infelizmente, nomeadas da mesma forma. O esquema completo do arquivo *template.json* é encontrado no [Repositório de Esquema JSON](http://json.schemastore.org/template). Para saber mais sobre o arquivo *template.json*, veja o [wiki de modelagem dotnet](https://github.com/dotnet/templating/wiki).
 
@@ -159,19 +159,17 @@ Options:
 
 ... cut to save space ...
 
-Templates                                         Short Name            Language          Tags
--------------------------------------------------------------------------------------------------------------------------------
-Console Application                               console               [C#], F#, VB      Common/Console
-Example templates: async project                  consoleasync          [C#]              Common/Console/C#8
-Class library                                     classlib              [C#], F#, VB      Common/Library
-WPF Application                                   wpf                   [C#], VB          Common/WPF
-Windows Forms (WinForms) Application              winforms              [C#], VB          Common/WinForms
-Worker Service                                    worker                [C#]              Common/Worker/Web
+Templates                                         Short Name               Language          Tags
+--------------------------------------------      -------------------      ------------      ----------------------
+Console Application                               console                  [C#], F#, VB      Common/Console
+Example templates: async project                  consoleasync             [C#]              Common/Console/C#9
+Class library                                     classlib                 [C#], F#, VB      Common/Library
+WPF Application                                   wpf                      [C#], VB          Common/WPF
 ```
 
 ### <a name="test-the-project-template"></a>Testar o modelo do projeto
 
-Agora que você tem um modelo de item instalado, teste-o.
+Agora que você tem um modelo de projeto instalado, teste-o.
 
 1. Navegue até a pasta de _teste_
 
@@ -196,14 +194,14 @@ Agora que você tem um modelo de item instalado, teste-o.
     Você Obtém a saída a seguir.
 
     ```console
-    Hello World with C# 8.0!
+    Hello World with C# 9.0!
     ```
 
-Parabéns! Você criou e implantou um modelo de projeto com o .NET Core. Para se preparar para a próxima parte desta série de tutoriais, você deverá desinstalar o modelo criado. Lembre-se de também excluir todos os arquivos da pasta _test_. Isso levará você de volta a um estado limpo, pronto para a próxima seção principal deste tutorial.
+Parabéns! Você criou e implantou um modelo de projeto com o .NET. Para se preparar para a próxima parte desta série de tutoriais, você deverá desinstalar o modelo criado. Lembre-se de também excluir todos os arquivos da pasta _test_. Isso levará você de volta a um estado limpo, pronto para a próxima seção principal deste tutorial.
 
 ### <a name="uninstall-the-template"></a>Desinstalar o modelo
 
-Como você instalou o modelo usando um caminho de arquivo, você deve desinstalá-lo com o caminho de arquivo **absoluto**. Você pode ver uma lista de modelos instalados executando o comando `dotnet new -u`. Seu modelo deve ser listado por último. Use o caminho listado para desinstalar o modelo com o comando `dotnet new -u <ABSOLUTE PATH TO TEMPLATE DIRECTORY>`.
+Como você instalou o modelo usando um caminho de arquivo, você deve desinstalá-lo com o caminho de arquivo **absoluto**. Você pode ver uma lista de modelos instalados executando o comando `dotnet new -u`. Seu modelo deve ser listado por último. Use o `Uninstall Command` listado para desinstalar seu modelo.
 
 ```dotnetcli
 dotnet new -u
@@ -215,31 +213,31 @@ Você Obtém uma saída semelhante à seguinte.
 Template Instantiation Commands for .NET Core CLI
 
 Currently installed items:
-  Microsoft.DotNet.Common.ItemTemplates
+  Microsoft.DotNet.Common.ProjectTemplates.2.2
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Common.ProjectTemplates.2.2
+      Version: 1.0.2-beta4
+      Author: Microsoft
     Templates:
-      dotnet gitignore file (gitignore)
-      global.json file (globaljson)
-      NuGet Config (nugetconfig)
-      Solution File (sln)
-      Dotnet local tool manifest file (tool-manifest)
-      Web Config (webconfig)
+      Class library (classlib) C#
+      Class library (classlib) F#
+      Class library (classlib) VB
+      Console Application (console) C#
+      Console Application (console) F#
+      Console Application (console) VB
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Common.ProjectTemplates.2.2
 
 ... cut to save space ...
 
-  NUnit3.DotNetNew.Template
-    Templates:
-      NUnit 3 Test Project (nunit) C#
-      NUnit 3 Test Item (nunit-test) C#
-      NUnit 3 Test Project (nunit) F#
-      NUnit 3 Test Item (nunit-test) F#
-      NUnit 3 Test Project (nunit) VB
-      NUnit 3 Test Item (nunit-test) VB
-  C:\working\templates\consoleasync
+  C:\Test\templatetutorial\working\templates\consoleasync
     Templates:
       Example templates: async project (consoleasync) C#
+    Uninstall Command:
+      dotnet new -u C:\working\templates\consoleasync
 ```
 
-Para desinstalar um modelo, execute o comando a seguir.
+Para desinstalar o modelo que você criou, execute o `Uninstall Command` que é mostrado na saída.
 
 ```dotnetcli
 dotnet new -u C:\working\templates\consoleasync

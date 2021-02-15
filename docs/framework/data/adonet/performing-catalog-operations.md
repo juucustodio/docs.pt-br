@@ -1,19 +1,21 @@
 ---
+description: 'Saiba mais sobre: executando operações de catálogo'
 title: Executar operações de catálogo
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: e60f542f-6271-495b-a9e4-48553481c2a3
-ms.openlocfilehash: bedeb4e9c510a3feeedc038e9c4cef6c4721e345
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: c484e3a56d846de66c6e13b374efe58430ab86b2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79149239"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754336"
 ---
 # <a name="performing-catalog-operations"></a>Executar operações de catálogo
-Para executar um comando para modificar um banco de dados ou catálogo, como a instrução CRIAR TABELA ou CRIAR PROCEDIMENTO, crie um objeto **Command** usando as instruções SQL apropriadas e um objeto **Conexão.** Execute o comando com o método **ExecuteNonQuery** do objeto **Comando.**  
+
+Para executar um comando a fim de modificar um banco de dados ou catálogo, como a instrução CREATE TABLE ou CREATE PROCEDURE, crie um objeto **Command** usando as instruções SQL apropriadas e um objeto **Connection**. Execute o comando com o método **ExecuteNonQuery** do objeto **Command** .  
   
  O exemplo de código a seguir cria um procedimento armazenado em um banco de dados do Microsoft SQL Server.  
   
@@ -47,6 +49,6 @@ command.ExecuteNonQuery();
   
 ## <a name="see-also"></a>Confira também
 
-- [Usando os comandos para modificar dados](using-commands-to-modify-data.md)
-- [Comandos e Parâmetros](commands-and-parameters.md)
+- [Usando comandos para modificar dados](using-commands-to-modify-data.md)
+- [Comandos e parâmetros](commands-and-parameters.md)
 - [Visão geral do ADO.NET](ado-net-overview.md)

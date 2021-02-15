@@ -1,16 +1,16 @@
 ---
 ms.openlocfilehash: c5e4b5619394f99a419fe48aee190ad741ea8c0d
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "73041653"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96032250"
 ---
 ### <a name="identity-ui-uses-static-web-assets-feature"></a>Identidade: a interface do usuário usa o recurso de ativos da Web estáticos
 
 O ASP.NET Core 3,0 introduziu um recurso de ativos da Web estático e a interface do usuário da identidade o adotou.
 
-#### <a name="change-description"></a>Descrição da alteração
+#### <a name="change-description"></a>Descrição das alterações
 
 Como resultado da interface do usuário de identidade adotando o recurso de ativos da Web estáticos:
 
@@ -19,7 +19,7 @@ Como resultado da interface do usuário de identidade adotando o recurso de ativ
 
 #### <a name="version-introduced"></a>Versão introduzida
 
-3,0
+3.0
 
 #### <a name="old-behavior"></a>Comportamento antigo
 

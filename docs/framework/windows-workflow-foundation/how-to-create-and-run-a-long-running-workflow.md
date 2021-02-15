@@ -6,22 +6,19 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: c0043c89-2192-43c9-986d-3ecec4dd8c9c
-ms.openlocfilehash: 557b3512e534198d47c0c6f6b0a7c5f92bb71739
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 701788ac5575ad671afd56db3af4bd247efac8b1
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83419545"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188459"
 ---
 # <a name="how-to-create-and-run-a-long-running-workflow"></a>Como criar e executar um fluxo de trabalho de execução longa
 
 Um dos recursos centrais do Windows Workflow Foundation (WF) é a capacidade do tempo de execução de persistir e descarregar fluxos de trabalho ociosos em um banco de dados. As etapas em [como executar um fluxo de trabalho](how-to-run-a-workflow.md) demonstraram os conceitos básicos da hospedagem do fluxo de trabalho usando um aplicativo de console. Foram mostrados exemplos de iniciação de fluxos de trabalho, manipuladores do ciclo de vida de fluxo de trabalho e retomada de indicadores. Para demonstrar efetivamente a persistência do fluxo de trabalho, um host de fluxo de trabalho mais complexo é necessário que dá suporte a início e retomada de várias instâncias de fluxo de trabalho. Esta etapa no tutorial demonstra como criar um aplicativo de host do Windows Form que dê suporte ao início e à retomada de várias instâncias de fluxo de trabalho, persistência de fluxo de trabalho e fornece uma base para os recursos avançados como o rastreamento e o controle de versão que são demonstrados em etapas tutoriais subsequentes.
 
 > [!NOTE]
-> Esta etapa do tutorial e as etapas subsequentes usam todos os três tipos de fluxo de trabalho de [como: criar um fluxo de trabalho](how-to-create-a-workflow.md). Se você não tiver concluído todos os três tipos, poderá baixar uma versão completa das etapas de [Windows Workflow Foundation (WF45) – introdução tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).
-
-> [!NOTE]
-> Para fazer o download de uma versão completa ou exibir um vídeo com o tutorial, consulte [Windows Workflow Foundation (WF45) – introdução tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).
+> Esta etapa do tutorial e as etapas subsequentes usam todos os três tipos de fluxo de trabalho de [como: criar um fluxo de trabalho](how-to-create-a-workflow.md).
 
 ## <a name="to-create-the-persistence-database"></a>Para criar o banco de dados de persistência
 
@@ -55,9 +52,6 @@ Um dos recursos centrais do Windows Workflow Foundation (WF) é a capacidade do 
 
 ## <a name="to-create-the-workflow-host-form"></a>Para criar o formulário de host de fluxo de trabalho
 
-> [!NOTE]
-> As etapas neste procedimento descrevem como adicionar e configurar manualmente o formulário. Se for desejar, você poderá baixar os arquivos da solução para o tutorial e adicionar o formulário concluído ao projeto. Para baixar os arquivos do tutorial, consulte [Windows Workflow Foundation (WF45) – introdução tutorial](https://go.microsoft.com/fwlink/?LinkID=248976). Depois que os arquivos forem baixados, clique com o botão direito do mouse em **NumberGuessWorkflowHost** e escolha **Adicionar referência**. Adicione uma referência a **System. Windows. Forms** e **System. Drawing**. Essas referências são adicionadas automaticamente se você adicionar um novo formulário a partir do menu **Adicionar**, **novo item** , mas precisar ser adicionado manualmente ao importar um formulário. Depois que as referências forem adicionadas, clique com o botão direito do mouse em **NumberGuessWorkflowHost** em **Gerenciador de soluções** e escolha **Adicionar**, **Item existente**. Navegue até a `Form` pasta nos arquivos de projeto, selecione **WorkflowHostForm.cs** (ou **WorkflowHostForm. vb**) e clique em **Adicionar**. Se você optar por importar o formulário, poderá pular para a próxima seção, [para adicionar as propriedades e os métodos auxiliares do formulário](#to-add-the-properties-and-helper-methods-of-the-form).
-
 1. Clique com o botão direito do mouse em **NumberGuessWorkflowHost** em **Gerenciador de soluções** e escolha **Adicionar**, **novo item**.
 
 2. Na lista modelos **instalados** , escolha **Windows Form**, digite `WorkflowHostForm` na caixa **nome** e clique em **Adicionar**.
@@ -75,11 +69,11 @@ Um dos recursos centrais do Windows Workflow Foundation (WF) é a capacidade do 
     |Control|Propriedade: valor|
     |-------------|---------------------|
     |**Botão**|Nome: NewGame<br /><br /> Local: 13, 13<br /><br /> Tamanho: 75, 23<br /><br /> Texto: novo jogo|
-    |**Rotular**|Local: 94, 18<br /><br /> Texto: Adivinhe um número de 1 a|
+    |**Label**|Local: 94, 18<br /><br /> Texto: Adivinhe um número de 1 a|
     |**ComboBox**|Nome: NumberRange<br /><br /> DropDownstyle: DropDownList<br /><br /> Itens: 10, 100, 1000<br /><br /> Local: 228, 12<br /><br /> Tamanho: 143, 21|
-    |**Rotular**|Local: 13, 43<br /><br /> Texto: tipo de fluxo de trabalho|
+    |**Label**|Local: 13, 43<br /><br /> Texto: tipo de fluxo de trabalho|
     |**ComboBox**|Nome: fluxo de trabalho<br /><br /> DropDownstyle: DropDownList<br /><br /> Itens: StateMachineNumberGuessWorkflow, FlowchartNumberGuessWorkflow, SequentialNumberGuessWorkflow<br /><br /> Local: 94, 40<br /><br /> Tamanho: 277, 21|
-    |**Rotular**|Nome: WorkflowVersion<br /><br /> Local: 13, 362<br /><br /> Texto: versão do fluxo de trabalho|
+    |**Label**|Nome: WorkflowVersion<br /><br /> Local: 13, 362<br /><br /> Texto: versão do fluxo de trabalho|
     |**GroupBox**|Local: 13, 67<br /><br /> Tamanho: 358, 287<br /><br /> Texto: jogo|
 
     > [!NOTE]
@@ -87,9 +81,9 @@ Um dos recursos centrais do Windows Workflow Foundation (WF) é a capacidade do 
 
     |Control|Propriedade: valor|
     |-------------|---------------------|
-    |**Rotular**|Local: 7, 20<br /><br /> Texto: ID da instância do fluxo de trabalho|
+    |**Label**|Local: 7, 20<br /><br /> Texto: ID da instância do fluxo de trabalho|
     |**ComboBox**|Nome: InstanceId<br /><br /> DropDownstyle: DropDownList<br /><br /> Local: 121, 17<br /><br /> Tamanho: 227, 21|
-    |**Rotular**|Local: 7, 47<br /><br /> Texto: estimativa|
+    |**Label**|Local: 7, 47<br /><br /> Texto: estimativa|
     |**TextBox**|Nome: palpite<br /><br /> Local: 50, 44<br /><br /> Tamanho: 65, 20|
     |**Botão**|Nome: EnterGuess<br /><br /> Local: 121, 42<br /><br /> Tamanho: 75, 23<br /><br /> Texto: Insira uma estimativa|
     |**Botão**|Nome: QuitGame<br /><br /> Local: 274, 42<br /><br /> Tamanho: 75, 23<br /><br /> Texto: sair|
@@ -183,7 +177,7 @@ As etapas nesta seção adicionam propriedades e métodos auxiliares para a clas
     }
     ```
 
-6. Adicione o código a seguir ao `WorkflowHostForm_Load`.
+6. Adicione o código a seguir a `WorkflowHostForm_Load`.
 
     ```vb
     ' Initialize the store and configure it so that it can be used for
@@ -228,7 +222,7 @@ As etapas nesta seção adicionam propriedades e métodos auxiliares para a clas
     }
     ```
 
-8. Adicione o código a seguir ao `InstanceId_SelectedIndexChanged`. Sempre que o usuário seleciona um fluxo de trabalho usando a caixa de combinação, esse manipulador atualiza a janela de status.
+8. Adicione o código a seguir a `InstanceId_SelectedIndexChanged`. Sempre que o usuário seleciona um fluxo de trabalho usando a caixa de combinação, esse manipulador atualiza a janela de status.
 
     ```vb
     If InstanceId.SelectedIndex = -1 Then

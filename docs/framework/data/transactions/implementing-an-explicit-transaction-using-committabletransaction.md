@@ -6,17 +6,19 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 29efe5e5-897b-46c2-a35f-e599a273acc8
-ms.openlocfilehash: 40001422e665a7dda3fb938c8d57860909525404
-ms.sourcegitcommit: 6219b1e1feccb16d88656444210fed3297f5611e
+ms.openlocfilehash: 7e1d78b581fcb3c4b2265f1d04cf2aba83faa28a
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85141985"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91182877"
 ---
 # <a name="implementing-an-explicit-transaction-using-committabletransaction"></a>Implementar uma transação explícita usando CommittableTransaction
+
 O <xref:System.Transactions.CommittableTransaction> classe fornece um modo explícito para os aplicativos que usam uma transação, em vez de usar o <xref:System.Transactions.TransactionScope> classe implicitamente. É útil para aplicativos que deseja usar a mesma transação em várias chamadas de função ou várias chamadas de threads. Ao contrário do <xref:System.Transactions.TransactionScope> classe, o criador do aplicativo precisa chamar especificamente o <xref:System.Transactions.CommittableTransaction.Commit%2A> e <xref:System.Transactions.Transaction.Rollback%2A> métodos para confirmar ou anular a transação.  
   
 ## <a name="overview-of-the-committabletransaction-class"></a>Visão geral da classe CommittableTransaction  
+
  O <xref:System.Transactions.CommittableTransaction> classe deriva de <xref:System.Transactions.Transaction> classe, fornecendo, portanto, toda a funcionalidade do último. É especificamente útil a <xref:System.Transactions.Transaction.Rollback%2A> método o <xref:System.Transactions.Transaction> classe também pode ser usado para reverter uma <xref:System.Transactions.CommittableTransaction> objeto.  
   
  O <xref:System.Transactions.Transaction> classe é semelhante de <xref:System.Transactions.CommittableTransaction> de classe, mas não oferece uma `Commit` método. Isso permite que você passe o objeto de transação (ou clones dele) para outros métodos (potencialmente em outros threads) enquanto ainda controla quando a transação é confirmada. O código de chamada é capaz de se inscrever e votar na transação, mas somente o criador do <xref:System.Transactions.CommittableTransaction> objeto tem a capacidade de confirmar a transação.  
@@ -28,6 +30,7 @@ O <xref:System.Transactions.CommittableTransaction> classe fornece um modo expl�
 - Um <xref:System.Transactions.CommittableTransaction> objeto não pode ser reutilizado. Uma vez um <xref:System.Transactions.CommittableTransaction> objeto foi confirmado ou revertido, ele não pode ser usado novamente em uma transação. Ou seja, ele não pode ser definido como o contexto de transação de ambiente atual.  
   
 ## <a name="creating-a-committabletransaction"></a>Criando um CommittableTransaction  
+
  O exemplo a seguir cria um novo <xref:System.Transactions.CommittableTransaction> e confirma a ele.  
   
  [!code-csharp[Tx_CommittableTx#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/tx_committabletx/cs/committabletxwithsql.cs#1)]
@@ -40,6 +43,7 @@ O <xref:System.Transactions.CommittableTransaction> classe fornece um modo expl�
  Um <xref:System.Transactions.CommittableTransaction> objeto pode ser usado em chamadas de função e threads. No entanto, é o desenvolvedor de aplicativo para manipular exceções e chamar especificamente o <xref:System.Transactions.Transaction.Rollback%28System.Exception%29> método em caso de falhas.  
   
 ## <a name="asynchronous-commit"></a>Confirmação assíncrona  
+
  O <xref:System.Transactions.CommittableTransaction> classe também fornece um mecanismo para confirmar uma transação de forma assíncrona. Uma confirmação de transação pode levar algum tempo, como ele pode envolver vários acesso de banco de dados e possível latência de rede. Quando você deseja evitar deadlocks em aplicativos de alta taxa de transferência, use confirmação assíncrona para concluir o trabalho transacional assim que possível e executar a operação de confirmação como uma tarefa em segundo plano. O <xref:System.Transactions.CommittableTransaction.BeginCommit%2A> e <xref:System.Transactions.CommittableTransaction.EndCommit%2A> métodos de <xref:System.Transactions.CommittableTransaction> classe permitem que você faça isso.  
   
  Você pode chamar <xref:System.Transactions.CommittableTransaction.BeginCommit%2A> para expedir a demora de confirmação a um thread do pool de threads. Você também pode chamar <xref:System.Transactions.CommittableTransaction.EndCommit%2A> para determinar se a transação, na verdade, foi confirmada. Se a transação não foi confirmada por algum motivo, <xref:System.Transactions.CommittableTransaction.EndCommit%2A> gera uma exceção de transação. Se a transação é ainda não foram confirmada no momento <xref:System.Transactions.CommittableTransaction.EndCommit%2A> é chamado, o chamador é bloqueado até que a transação é confirmada ou anulada.  

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método webcabeçalhocollection. addinterna'
 title: Método webcabeçalhocollection. addinterna (System.Net)
 ms.date: 06/12/2020
 ms.technology: dotnet-networking
@@ -10,12 +11,12 @@ api_location:
 - System.dll
 api_type:
 - Assembly
-ms.openlocfilehash: fd7b13ccd1baad48ab99a85d80ccd6154651c608
-ms.sourcegitcommit: 45c8eed045779b70a47b23169897459d0323dc89
+ms.openlocfilehash: 7bc84f84e6656dba5230b627fe9decfc4e0b4746
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84990292"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99699474"
 ---
 # <a name="webheadercollectionaddinternal-method"></a>Método webcabeçalhocollection. addinterna
 

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostSyncManager:: CreateCrstWithSpinCount'
 title: Método IHostSyncManager::CreateCrstWithSpinCount
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 7280fa8c-3639-4abf-91cb-bc343da742d1
 topic_type:
 - apiref
-ms.openlocfilehash: 86bc320c28a5fbf122d234a4a1f15b674628c0b5
-ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
+ms.openlocfilehash: 3c43f1a3d52eb7174844ecb4079cf54413f20853
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83803394"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784815"
 ---
 # <a name="ihostsyncmanagercreatecrstwithspincount-method"></a>Método IHostSyncManager::CreateCrstWithSpinCount
+
 Cria um objeto de seção crítica com contagem de rotação para sincronização.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,17 +37,18 @@ HRESULT CreateCrstWithSpinCount (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `dwSpinCount`  
  no Especifica a contagem de rotação para o objeto de seção crítica.  
   
  `ppCrst`  
  fora Um ponteiro para o endereço de uma instância de [IHostCrst](ihostcrst-interface.md) ou NULL se a seção crítica não pôde ser criada.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
-|S_OK|`CreateCrstWithSpinCount`retornado com êxito.|  
+|S_OK|`CreateCrstWithSpinCount` retornado com êxito.|  
 |HOST_E_CLRNOTAVAILABLE|O Common Language Runtime (CLR) não foi carregado em um processo ou o CLR está em um estado no qual não pode executar código gerenciado ou processar a chamada com êxito.|  
 |HOST_E_TIMEOUT|A chamada atingiu o tempo limite.|  
 |HOST_E_NOT_OWNER|O chamador não possui o bloqueio.|  
@@ -54,18 +57,20 @@ HRESULT CreateCrstWithSpinCount (
 |E_OUTOFMEMORY|Não há memória suficiente disponível para criar a seção crítica solicitada.|  
   
 ## <a name="remarks"></a>Comentários  
- Uma contagem de rotação é usada somente em um sistema com vários processadores. A contagem de rotação especifica o número de vezes que um thread de chamada deve ser girado antes de executar uma operação de espera em um semáforo associado a uma seção crítica indisponível. Se a seção crítica for liberada durante a operação de rotação, o thread de chamada evitará a operação de espera. `CreateCrstWithSpinCount`espelha a função do Win32 `InitializeCriticalSectionAndSpinCount` .  
+
+ Uma contagem de rotação é usada somente em um sistema com vários processadores. A contagem de rotação especifica o número de vezes que um thread de chamada deve ser girado antes de executar uma operação de espera em um semáforo associado a uma seção crítica indisponível. Se a seção crítica for liberada durante a operação de rotação, o thread de chamada evitará a operação de espera. `CreateCrstWithSpinCount` espelha a função do Win32 `InitializeCriticalSectionAndSpinCount` .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRSyncManager](iclrsyncmanager-interface.md)
 - [Interface IHostSemaphore](ihostsemaphore-interface.md)

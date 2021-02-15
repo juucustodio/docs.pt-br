@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo8:: GetFunctionFromIP3'
 title: ICorProfilerInfo8::GetFunctionFromIP3
 ms.date: 08/06/2019
 dev_langs:
@@ -11,12 +12,12 @@ api_type:
 - COM
 author: davmason
 ms.author: davmason
-ms.openlocfilehash: 6822757608429ca5f4ef9520ab7574d440b67b26
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 3ce0a0964e26254ab09e515826b6bceb657e07bc
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84495250"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99783827"
 ---
 # <a name="icorprofilerinfo8getfunctionfromip3-method"></a>Método ICorProfilerInfo8:: GetFunctionFromIP3
 
@@ -58,6 +59,6 @@ Esse método funciona para métodos dinâmicos e não dinâmicos. É um supercon
 
 **.NET Framework versões:**[!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo8](icorprofilerinfo8-interface.md)

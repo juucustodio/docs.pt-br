@@ -5,14 +5,17 @@ ms.date: 04/15/2020
 f1_keywords:
 - whereconstraint
 - whereconstraint_CSharpKeyword
+- classconstraint_CSharpKeyword
+- structconstraint_CSharpKeyword
+- enumconstraint_CSharpKeyword
 helpviewer_keywords:
 - where (generic type constraint) [C#]
-ms.openlocfilehash: 78f784135c6bf01ea9724fcf92be234e6b86ff07
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: ff2d50b2148ea62e5bef5eceda547a976e4abf02
+ms.sourcegitcommit: 279fb6e8d515df51676528a7424a1df2f0917116
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89141901"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92687310"
 ---
 # <a name="where-generic-type-constraint-c-reference"></a>where (restrição de tipo genérico) (Referência de C#)
 
@@ -74,7 +77,7 @@ Para obter detalhes sobre a sintaxe e o uso de restrições, consulte [Restriç�
 
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência do C#](../index.md)
 - [Guia de programação C#](../../programming-guide/index.md)

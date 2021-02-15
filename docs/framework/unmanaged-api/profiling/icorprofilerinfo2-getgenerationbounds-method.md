@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo2:: GetGenerationBounds'
 title: Método ICorProfilerInfo2::GetGenerationBounds
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 9c37185f-d1e0-4a6e-8b99-707f7df61d88
 topic_type:
 - apiref
-ms.openlocfilehash: 2e6e3a6432d6568532a5f5b9676b5f130eb83d0b
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 2f6fb9037be2722166653cceb4081a5ddcb81327
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502880"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753218"
 ---
 # <a name="icorprofilerinfo2getgenerationbounds-method"></a>Método ICorProfilerInfo2::GetGenerationBounds
+
 Obtém as regiões de memória, que são segmentos do heap, que compõem as várias gerações de coleta de lixo.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,6 +37,7 @@ HRESULT GetGenerationBounds(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `cObjectRanges`  
  no O número de elementos alocados pelo chamador para a `ranges` matriz.  
   
@@ -45,15 +48,17 @@ HRESULT GetGenerationBounds(
  fora Uma matriz de estruturas [COR_PRF_GC_GENERATION_RANGE](cor-prf-gc-generation-range-structure.md) , cada uma delas descreve um intervalo (ou seja, bloco) de memória na geração que está passando pela coleta de lixo.  
   
 ## <a name="remarks"></a>Comentários  
+
  O `GetGenerationBounds` método pode ser chamado de qualquer retorno de chamada do criador de perfil, desde que a coleta de lixo não esteja em andamento.
 
  A maior mudança das gerações ocorre durante as coletas de lixo. As gerações podem crescer entre as coleções, mas geralmente não se movimentam. Portanto, os lugares mais interessantes a serem chamados `GetGenerationBounds` são no `ICorProfilerCallback2::GarbageCollectionStarted` e no `ICorProfilerCallback2::GarbageCollectionFinished` .  
   
- Durante a inicialização do programa, alguns objetos são alocados pelo Common Language Runtime (CLR) em si, geralmente nas gerações 3 e 0. Portanto, quando o código gerenciado de tempo começa a ser executado, essas gerações já conterão objetos. As gerações 1 e 2 normalmente estarão vazias, exceto objetos fictícios gerados pelo coletor de lixo. (O tamanho dos objetos fictícios é de 12 bytes em implementações de 32 bits do CLR; o tamanho é maior em implementações de 64 bits.) Você também pode ver intervalos de geração 2 que estão dentro de módulos produzidos pelo gerador de imagem nativa (NGen. exe). Nesse caso, os objetos na geração 2 são *objetos congelados*, que são alocados quando NGen. exe é executado em vez de pelo coletor de lixo.  
+ Durante a inicialização do programa, alguns objetos são alocados pelo Common Language Runtime (CLR) em si, geralmente nas gerações 3 e 0. Portanto, quando o código gerenciado de tempo começa a ser executado, essas gerações já conterão objetos. As gerações 1 e 2 normalmente estarão vazias, exceto objetos fictícios gerados pelo coletor de lixo. (O tamanho dos objetos fictícios é de 12 bytes em implementações de 32 bits do CLR; o tamanho é maior em implementações de 64 bits.) Você também pode ver intervalos de geração 2 que estão dentro de módulos produzidos pelo gerador de imagem nativa (NGen.exe). Nesse caso, os objetos na geração 2 são *objetos congelados*, que são alocados quando NGen.exe é executado em vez de pelo coletor de lixo.  
   
  Essa função usa buffers alocados pelo chamador.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -62,7 +67,7 @@ HRESULT GetGenerationBounds(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo](icorprofilerinfo-interface.md)
 - [Interface ICorProfilerInfo2](icorprofilerinfo2-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorGCReferenceType'
 title: Enumeração CorGCReferenceType
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: d9f16439-5a36-4474-8ffd-4f0b2c2bb686
 topic_type:
 - apiref
-ms.openlocfilehash: d156f103c3812c91da380e722a1c6c95d621df4c
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: a1f534f9fe4b9ba4ede0bef94f35cf1688fe1817
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82860921"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801508"
 ---
 # <a name="corgcreferencetype-enumeration"></a>Enumeração CorGCReferenceType
+
 Identifica a fonte de um objeto para ser coletado do lixo.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -65,6 +67,7 @@ typedef enum {
 |`CorHandleAll`|Retorna todas as referências da tabela de identificador. Esse valor é usado apenas pelo método [ICorDebugProcess5:: EnumerateHandles](icordebugprocess5-enumeratehandles-method.md) .|  
   
 ## <a name="remarks"></a>Comentários  
+
  A `CorGCReferenceType` enumeração é usada da seguinte maneira:  
   
 - Como o valor do `type` campo da estrutura de [COR_GC_REFERENCE](cor-gc-reference-structure.md) , ele indica a origem de uma referência ou um identificador.  
@@ -72,6 +75,7 @@ typedef enum {
 - Como o `types` argumento para o método [ICorDebugProcess5:: EnumerateHandles](icordebugprocess5-enumeratehandles-method.md) , ele especifica os tipos de identificadores a serem incluídos na enumeração.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -80,6 +84,6 @@ typedef enum {
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Declarando enumerações](debugging-enumerations.md)

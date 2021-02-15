@@ -3,20 +3,20 @@ title: Arquiteturas comuns de aplicativo Web
 description: Arquitetar aplicativos Web modernos com o ASP.NET Core e o Azure | Explore as arquiteturas comuns para aplicativos Web
 author: ardalis
 ms.author: wiwagn
-ms.date: 12/04/2019
-ms.openlocfilehash: de90db9061d0b7bd15141b277ae4272b5208f76b
-ms.sourcegitcommit: b78018c850590dfc0348301e1748b779c28604cc
+ms.date: 12/01/2020
+ms.openlocfilehash: c9c593788d4cdbb5a1d4c57ac91880ef965f06fa
+ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89379155"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96851732"
 ---
 # <a name="common-web-application-architectures"></a>Arquiteturas comuns de aplicativo Web
 
-> "Se você acha que uma boa arquitetura é cara, tente usar uma arquitetura ruim."  
+> "Se você acha que uma boa arquitetura é cara, tente usar uma arquitetura ruim."
 > _- Brian Foote e Joseph Yoder_
 
-A maioria dos aplicativos .NET tradicionais é implantada como unidades individuais correspondentes a um executável ou a um único aplicativo Web em execução em um único AppDomain do IIS. Esse é o modelo de implantação mais simples e atende muito bem a diversos aplicativos internos e públicos menores. No entanto, mesmo considerando essa única unidade de implantação, a maioria dos aplicativos de negócios não triviais se beneficia de uma separação lógica em várias camadas.
+A maioria dos aplicativos .NET tradicionais é implantada como unidades individuais correspondentes a um executável ou a um único aplicativo Web em execução em um único AppDomain do IIS. Essa abordagem é o modelo de implantação mais simples e fornece muitos aplicativos públicos internos e menores muito bem. No entanto, mesmo considerando essa única unidade de implantação, a maioria dos aplicativos de negócios não triviais se beneficia de uma separação lógica em várias camadas.
 
 ## <a name="what-is-a-monolithic-application"></a>O que é um aplicativo monolítico?
 
@@ -40,15 +40,15 @@ Para resolver esses problemas, os aplicativos geralmente evoluem para soluções
 
 ## <a name="what-are-layers"></a>O que são camadas?
 
-Conforme a complexidade dos aplicativos aumenta, uma maneira de gerenciar essa complexidade é dividir o aplicativo de acordo com suas responsabilidades ou interesses. Isso segue a separação do princípio de preocupações e pode ajudar a manter uma base de código crescente organizada para que os desenvolvedores possam encontrar facilmente onde determinadas funcionalidades são implementadas. Apesar disso, a arquitetura em camadas oferece inúmeras vantagens, além de apenas a organização do código.
+Conforme a complexidade dos aplicativos aumenta, uma maneira de gerenciar essa complexidade é dividir o aplicativo de acordo com suas responsabilidades ou interesses. Essa abordagem segue a separação do princípio de preocupações e pode ajudar a manter uma base de código crescente organizada para que os desenvolvedores possam encontrar facilmente onde determinadas funcionalidades são implementadas. Apesar disso, a arquitetura em camadas oferece inúmeras vantagens, além de apenas a organização do código.
 
 Com a organização do código em camadas, a funcionalidade comum de baixo nível pode ser reutilizada em todo o aplicativo. Essa reutilização é útil porque significa que menos código precisa ser escrito e ainda pode permitir que o aplicativo seja padronizado em uma única implementação, seguindo o princípio [DRY (Don't Repeat Yourself)](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself).
 
-Com uma arquitetura em camadas, os aplicativos podem impor restrições sobre quais camadas podem se comunicar com outras camadas. Isso ajuda na obtenção do encapsulamento. Quando uma camada é alterada ou substituída, somente as camadas que trabalham com ela devem ser afetadas. Ao limitar quais camadas dependem de outras camadas, o impacto das alterações pode ser reduzido, de modo que uma única alteração não afete todo o aplicativo.
+Com uma arquitetura em camadas, os aplicativos podem impor restrições sobre quais camadas podem se comunicar com outras camadas. Essa arquitetura ajuda a atingir o encapsulamento. Quando uma camada é alterada ou substituída, somente as camadas que trabalham com ela devem ser afetadas. Ao limitar quais camadas dependem de outras camadas, o impacto das alterações pode ser reduzido, de modo que uma única alteração não afete todo o aplicativo.
 
-As camadas (e o encapsulamento) facilitam grande parte da substituição da funcionalidade dentro do aplicativo. Por exemplo, um aplicativo inicialmente pode usar seu próprio banco de dados do SQL Server para persistência, mas, posteriormente, pode optar por usar uma estratégia de persistência baseada em nuvem ou uma protegida por uma API Web. Se o aplicativo encapsulou corretamente sua implementação de persistência em uma camada lógica, essa camada específica do SQL Server pode ser substituída por uma nova que implementa a mesma interface pública.
+As camadas (e o encapsulamento) facilitam grande parte da substituição da funcionalidade dentro do aplicativo. Por exemplo, um aplicativo inicialmente pode usar seu próprio banco de dados do SQL Server para persistência, mas, posteriormente, pode optar por usar uma estratégia de persistência baseada em nuvem ou uma protegida por uma API Web. Se o aplicativo encapsulasse corretamente sua implementação de persistência dentro de uma camada lógica, essa camada específica de SQL Server poderia ser substituída por uma nova implementação da mesma interface pública.
 
-Além do potencial de alternância de implementações em resposta a alterações futuras nos requisitos, as camadas de aplicativo também podem facilitar a alternância de implementações para fins de teste. Em vez da necessidade de gravar testes que operam na camada de dados reais ou na camada de interface do usuário do aplicativo, essas camadas podem ser substituídas em tempo de teste com implementações fictícias que fornecem respostas conhecidas a solicitações. Isso geralmente facilita e agiliza muito a gravação e a execução de testes quando comparado à execução de testes novamente na infraestrutura real do aplicativo.
+Além do potencial de alternância de implementações em resposta a alterações futuras nos requisitos, as camadas de aplicativo também podem facilitar a alternância de implementações para fins de teste. Em vez da necessidade de gravar testes que operam na camada de dados reais ou na camada de interface do usuário do aplicativo, essas camadas podem ser substituídas em tempo de teste com implementações fictícias que fornecem respostas conhecidas a solicitações. Essa abordagem geralmente torna os testes muito mais fáceis de escrever e muito mais rápidos para serem executados em comparação com os testes em execução na infraestrutura real do aplicativo.
 
 A disposição em camadas lógicas é uma técnica comum para melhorar a organização do código em aplicativos de software empresariais, e há várias maneiras pelas quais o código pode ser organizado em camadas.
 
@@ -101,7 +101,7 @@ Os aplicativos que seguem o Princípio da Inversão de Dependência, bem como os
 
 O aplicativo de referência eShopOnWeb usa a abordagem de arquitetura limpa para organizar seu código em projetos. Você pode encontrar um modelo de solução que pode ser usado como um ponto de partida para seu próprio ASP.NET Core no repositório GitHub [ardalis/cleanarchitecture](https://github.com/ardalis/cleanarchitecture) .
 
-A arquitetura limpa coloca a lógica de negócios e o modelo de aplicativo no centro do aplicativo. Em vez de fazer com que a lógica de negócios dependa do acesso a dados ou de outros interesses da infraestrutura, essa dependência é invertida: os detalhes de implementação e a infraestrutura dependem do Núcleo do Aplicativo. Isso é feito pela definição de abstrações, ou interfaces, no Núcleo do Aplicativo, que, em seguida, são implementadas por tipos definidos na camada de infraestrutura. Uma maneira comum de visualizar essa arquitetura é usar uma série de círculos concêntricos, semelhantes a uma cebola. A Figura 5-7 mostra um exemplo desse estilo de representação de arquitetura.
+A arquitetura limpa coloca a lógica de negócios e o modelo de aplicativo no centro do aplicativo. Em vez de fazer com que a lógica de negócios dependa do acesso a dados ou de outros interesses da infraestrutura, essa dependência é invertida: os detalhes de implementação e a infraestrutura dependem do Núcleo do Aplicativo. Essa funcionalidade é obtida definindo-se abstrações, ou interfaces, no núcleo do aplicativo, que são implementadas por tipos definidos na camada de infraestrutura. Uma maneira comum de visualizar essa arquitetura é usar uma série de círculos concêntricos, semelhantes a uma cebola. A Figura 5-7 mostra um exemplo desse estilo de representação de arquitetura.
 
 ![Arquitetura Limpa; exibição de cebola](./media/image5-7.png)
 
@@ -135,7 +135,7 @@ Como o Núcleo do Aplicativo não depende da Infraestrutura, é muito fácil esc
 
 Como a camada de interface do usuário não tem nenhuma dependência direta dos tipos definidos no projeto de Infraestrutura, da mesma forma, é muito fácil alternar entre implementações, para facilitar o teste ou em resposta a alterações nos requisitos do aplicativo. O uso interno do ASP.NET Core e o suporte à injeção de dependência torna essa arquitetura a maneira mais apropriada de estruturar aplicativos monolíticos não triviais.
 
-Em aplicativos monolíticos, os projetos de Núcleo do Aplicativo, Infraestrutura e Interface do Usuário são todos executados como um único aplicativo. A arquitetura do aplicativo em runtime pode ser semelhante à Figura 5-12.
+Para aplicativos monolíticos, o núcleo do aplicativo, a infraestrutura e os projetos de interface do usuário são executados como um único aplicativo. A arquitetura do aplicativo em runtime pode ser semelhante à Figura 5-12.
 
 ![Arquitetura do ASP.NET Core 2](./media/image5-12.png)
 
@@ -205,7 +205,7 @@ A abordagem monolítica é comum e muitas organizações estão desenvolvendo ap
 
 ![Figura 5-14](./media/image5-14.png)
 
-A implantação de aplicativos monolíticos no Microsoft Azure pode ser feita por meio de VMs dedicadas para cada instância. Usando [Conjuntos de Dimensionamento de Máquinas Virtuais do Azure](https://docs.microsoft.com/azure/virtual-machine-scale-sets/), você pode dimensionar VMs facilmente. Os [Serviços de Aplicativos do Azure](https://azure.microsoft.com/services/app-service/) podem executar aplicativos monolíticos e dimensionar instâncias com facilidade, sem a necessidade de gerenciar as VMs. Os Serviços de Aplicativos do Azure também podem executar instâncias únicas de contêineres do Docker, simplificando a implantação. Usando o Docker, você pode implantar uma única VM como um host do Docker e executar várias instâncias. Usando o balanceador do Azure, conforme mostrado na Figura 5-14, você pode gerenciar o dimensionamento.
+A implantação de aplicativos monolíticos no Microsoft Azure pode ser feita por meio de VMs dedicadas para cada instância. Usando [Conjuntos de Dimensionamento de Máquinas Virtuais do Azure](/azure/virtual-machine-scale-sets/), você pode dimensionar VMs facilmente. Os [Serviços de Aplicativos do Azure](https://azure.microsoft.com/services/app-service/) podem executar aplicativos monolíticos e dimensionar instâncias com facilidade, sem a necessidade de gerenciar as VMs. Os Serviços de Aplicativos do Azure também podem executar instâncias únicas de contêineres do Docker, simplificando a implantação. Usando o Docker, você pode implantar uma única VM como um host do Docker e executar várias instâncias. Usando o balanceador do Azure, conforme mostrado na Figura 5-14, você pode gerenciar o dimensionamento.
 
 A implantação em vários hosts pode ser gerenciada com técnicas de implantação tradicionais. Os hosts do Docker podem ser gerenciados manualmente com comandos como **docker run** executados manualmente ou por meio da automação, como os pipelines de CD (Entrega Contínua).
 
@@ -215,15 +215,15 @@ Há benefícios no uso de contêineres para gerenciar implantações de aplicati
 
 Implantar atualizações como imagens do Docker é muito mais rápido e eficiente em termos de rede. As Imagens do Docker costumam ser iniciadas em segundos, o que agiliza as distribuições. Desmontar uma instância do Docker é tão fácil quanto emitir um comando `docker stop` e geralmente leva menos de um segundo.
 
-Como os contêineres são inerentemente imutáveis por design, você nunca precisa se preocupar com VMs corrompidas, enquanto os scripts de atualização podem esquecer de levar em conta alguma configuração específica ou um arquivo deixado no disco.
+Como os contêineres são, de forma inerente, imutáveis por design, você nunca precisa se preocupar com VMs corrompidas, enquanto os scripts de atualização podem se esquecer de considerar uma configuração específica ou um arquivo deixado no disco.
 
-Você pode usar contêineres do Docker para a implantação monolítica de aplicativos Web mais simples. Isso melhora os pipelines de integração contínua e de implantação contínua e ajuda a obter êxito na implantação de produção. Não mais "ele funciona em meu computador, por que ele não funciona em produção?"
+Você pode usar contêineres do Docker para uma implantação monolítica de aplicativos Web mais simples. Essa abordagem melhora a integração contínua e os pipelines de implantação contínua e ajuda a atingir o sucesso da implantação para a produção. Não mais "ele funciona em meu computador, por que ele não funciona em produção?"
 
 Uma arquitetura baseada em microsserviços tem muitos benefícios, mas esses benefícios são fornecidos ao custo do aumento da complexidade. Em alguns casos, os custos superam os benefícios, portanto, um aplicativo de implantação monolítica em execução em um único contêiner ou em alguns contêineres é uma opção melhor.
 
 Um aplicativo monolítico não pode ser facilmente decomposto em microsserviços bem separados. Os microsserviços devem funcionar independentemente uns dos outros para fornecer um aplicativo mais resiliente. Se você não puder entregar fatias independentes de recurso do aplicativo, separá-las apenas aumentará a complexidade.
 
-Talvez o aplicativo ainda não precise dimensionar recursos de modo independente. Muitos aplicativos, quando precisam ser dimensionados para mais de uma única instância, podem passar pelo processo relativamente simples de clonagem da instância inteira. O trabalho adicional para separar o aplicativo em serviços distintos fornece poucas vantagens, enquanto o dimensionamento de instâncias completas do aplicativo é simples e econômico.
+Talvez o aplicativo ainda não precise dimensionar recursos de modo independente. Muitos aplicativos, quando precisam ser dimensionados para mais de uma única instância, podem passar pelo processo relativamente simples de clonagem da instância inteira. O trabalho adicional para separar o aplicativo em serviços discretos fornece um benefício mínimo ao dimensionar as instâncias completas do aplicativo é simples e econômico.
 
 No início do desenvolvimento de um aplicativo, você pode não ter uma ideia clara de onde estão os limites funcionais naturais. Mesmo depois de desenvolve rum produto mínimo viável, a separação natural pode ainda não ter surgido. Algumas dessas condições podem ser temporárias. Você pode começar criando um aplicativo monolítico e posteriormente separar alguns recursos para serem desenvolvidos e implantados como microsserviços. Outras condições podem ser essenciais para o espaço problemático do aplicativo, o que significa que o aplicativo pode nunca ser dividido em vários microserviços.
 
@@ -231,17 +231,17 @@ A separação de um aplicativo em vários processos distintos também apresenta 
 
 O [aplicativo de referência eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb) muito mais simples dá suporte ao uso de único contêiner monolítico. O aplicativo inclui um aplicativo Web com exibições de MVC, APIs Web e Razor Pages tradicionais. Este aplicativo pode ser iniciado na raiz da solução com os comandos `docker-compose build` e `docker-compose up`. Esse comando configura um contêiner para a instância da Web usando o `Dockerfile` encontrado na raiz do projeto Web e executa o contêiner em uma porta especificada. Você pode baixar o código-fonte desse aplicativo do GitHub e executá-lo localmente. Até mesmo esse aplicativo monolítico beneficia-se de ser implantado em um ambiente do contêiner.
 
-Por exemplo, a implantação em contêineres significa que cada instância do aplicativo é executada no mesmo ambiente. Isso inclui o ambiente de desenvolvedor no qual os testes e o desenvolvimento iniciais ocorrem. A equipe de desenvolvimento pode executar o aplicativo em um ambiente em contêineres que corresponda ao ambiente de produção.
+Por exemplo, a implantação em contêineres significa que cada instância do aplicativo é executada no mesmo ambiente. Essa abordagem inclui o ambiente de desenvolvimento no qual ocorrem testes e desenvolvimento antecipados. A equipe de desenvolvimento pode executar o aplicativo em um ambiente em contêineres que corresponda ao ambiente de produção.
 
-Além disso, os aplicativos em contêineres são aumentados com um custo menor. O uso de um ambiente de contêiner permite um compartilhamento maior de recursos do que os ambientes de VM tradicionais.
+Além disso, os aplicativos em contêineres são expandidos a um custo mais baixo. O uso de um ambiente de contêiner permite um compartilhamento maior de recursos do que os ambientes de VM tradicionais.
 
 Por fim, colocar o aplicativo em contêineres força uma separação entre a lógica de negócios e o servidor de armazenamento. À medida que o aplicativo for escalado horizontalmente, os vários contêineres dependerão de uma única mídia de armazenamento físico. A mídia de armazenamento seria normalmente um servidor de alta disponibilidade executando um banco de dados do SQL Server.
 
 ## <a name="docker-support"></a>Suporte ao Docker
 
-O projeto `eShopOnWeb` é executado no .NET Core. Portanto, ele pode ser executado em contêineres baseados em Linux ou em Windows. Observe que, para a implantação do Docker, você deseja usar o mesmo tipo de host para o SQL Server. Os contêineres baseados em Linux permitem o uso de um espaço menor e são preferenciais.
+O `eShopOnWeb` projeto é executado no .net. Portanto, ele pode ser executado em contêineres baseados em Linux ou em Windows. Observe que, para a implantação do Docker, você deseja usar o mesmo tipo de host para o SQL Server. Os contêineres baseados em Linux permitem o uso de um espaço menor e são preferenciais.
 
-Você pode usar o Visual Studio 2017 ou posterior para adicionar o suporte ao Docker a um aplicativo existente clicando com o botão direito do mouse em um projeto no **Gerenciador de Soluções** e escolhendo **Adicionar** > **Suporte ao Docker**. Isso adiciona os arquivos necessários e modifica o projeto para usá-los. O exemplo `eShopOnWeb` atual já têm esses arquivos.
+Você pode usar o Visual Studio 2017 ou posterior para adicionar o suporte ao Docker a um aplicativo existente clicando com o botão direito do mouse em um projeto no **Gerenciador de Soluções** e escolhendo **Adicionar** > **Suporte ao Docker**. Esta etapa adiciona os arquivos necessários e modifica o projeto para usá-los. O exemplo `eShopOnWeb` atual já têm esses arquivos.
 
 O arquivo `docker-compose.yml` no nível da solução contém informações sobre quais imagens devem ser criadas e quais contêineres devem ser iniciados. O arquivo permite que você use o comando `docker-compose` para iniciar vários aplicativos ao mesmo tempo. Nesse caso, ele está iniciando apenas o projeto Web. Você também pode usá-lo para configurar dependências, como um contêiner de banco de dados separado.
 
@@ -267,8 +267,8 @@ networks:
 
 O arquivo `docker-compose.yml` referencia o `Dockerfile` no projeto `Web`. O `Dockerfile` é usado para especificar qual contêiner base será usado e como o aplicativo será configurado nele. O `Dockerfile` do `Web`:
 
-```Dockerfile
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
+```dockerfile
+FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /app
 
 COPY *.sln .
@@ -278,7 +278,7 @@ RUN dotnet restore
 
 RUN dotnet publish -c Release -o out
 
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS runtime
 WORKDIR /app
 COPY --from=build /app/src/Web/out ./
 
@@ -291,7 +291,7 @@ Depois que você iniciar a execução do aplicativo em contêineres, ele continu
 
 Observe que a execução de contêineres do Docker pode ser associada a portas, que caso contrário, você tentaria usar em seu ambiente de desenvolvimento. Se você tentar executar ou depurar um aplicativo usando a mesma porta, como um contêiner do Docker em execução, ocorrerá um erro informando que o servidor não pôde ser associado a essa porta. Mais uma vez, parar o contêiner deverá resolver o problema.
 
-Para adicionar o suporte ao Docker ao aplicativo usando o Visual Studio, verifique se o Docker Desktop está em execução. Quando você iniciar o assistente, ele não será executado corretamente se o Docker Desktop não estiver em execução. Além disso, o assistente examinará sua escolha de contêiner atual para adicionar o suporte ao Docker correto. Se você desejar adicionar o suporte para os Contêineres do Windows, será necessário executar o assistente enquanto o Docker Desktop estiver em execução, com os Contêineres do Windows configurados. Se você desejar adicionar suporte para contêineres do Linux, será necessário executar o assistente enquanto o Docker estiver em execução com contêineres do Linux configurados.
+Para adicionar o suporte ao Docker ao aplicativo usando o Visual Studio, verifique se o Docker Desktop está em execução. Quando você iniciar o assistente, ele não será executado corretamente se o Docker Desktop não estiver em execução. Além disso, o assistente examinará sua escolha de contêiner atual para adicionar o suporte ao Docker correto. Se você quiser adicionar o, suporte para contêineres do Windows, será necessário executar o assistente enquanto houver área de trabalho do Docker em execução com contêineres do Windows configurados. Se você quiser adicionar o, suporte para contêineres do Linux, execute o assistente enquanto você tem o Docker em execução com contêineres do Linux configurados.
 
 ### <a name="references--common-web-architectures"></a>Referências – arquiteturas comuns da Web
 

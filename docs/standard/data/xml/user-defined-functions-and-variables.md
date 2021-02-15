@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: funções e variáveis definidas pelo usuário'
 title: Funções definidas pelo usuário e variáveis
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 ms.assetid: 4772f20e-1e7f-496e-93c2-1484473be555
-ms.openlocfilehash: 7040c2ccf6e3bfc6efcbec3505c633c6c3c6508f
-ms.sourcegitcommit: 5f236cd78cf09593c8945a7d753e0850e96a0b80
+ms.openlocfilehash: 730f99b1d8b9cefafbdff4ed74b9775b0be863c8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75710057"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782852"
 ---
 # <a name="user-defined-functions-and-variables"></a>Funções definidas pelo usuário e variáveis
+
 A classe de <xref:System.Xml.XPath.XPathNavigator> fornece um conjunto de métodos que são usados para interagir com os dados de <xref:System.Xml.XPath.XPathDocument> . Você pode complementar as funções padrão XPath implementando funções e variáveis de extensão para o uso de expressões de consulta XPath. O método de <xref:System.Xml.XPath.XPathExpression.SetContext%2A> pode aceitar um contexto definido pelo usuário derivado de <xref:System.Xml.Xsl.XsltContext>. As funções definidas pelo usuário são resolvidas pelo contexto personalizado.  
   
  Funções e variáveis de extensão podem ser úteis em prevenção de ataques de injeção XML. Na entrada do usuário desses cenários é atribuído a variáveis personalizados e processado por funções de extensão, não como entrada raw concatenada com instruções de processamento. Funções e variáveis de extensão contêm a entrada do usuário para que funciona somente em dados XML como destinada pelo designer.  

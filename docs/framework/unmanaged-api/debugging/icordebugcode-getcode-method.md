@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugCode:: GetCode'
 title: Método ICorDebugCode::GetCode
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 7137e3d1-1dad-48d8-8c37-16ac816534d3
 topic_type:
 - apiref
-ms.openlocfilehash: 59a497d203d241bbc6e0f884007d4a401c112073
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 329770fac4f2b375c01dd68e4ea7114e59c609b5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82893647"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99711278"
 ---
 # <a name="icordebugcodegetcode-method"></a>Método ICorDebugCode::GetCode
+
 Obtém todo o código para a função especificada, formatado para desmontagem. Esse método foi preterido no .NET Framework versão 2,0. Use [ICorDebugCode2:: GetCodeChunks](icordebugcode2-getcodechunks-method.md) em vez disso.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -39,6 +41,7 @@ HRESULT GetCode (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `startOffset`  
  no O deslocamento do início da função.  
   
@@ -55,9 +58,11 @@ HRESULT GetCode (
  fora O número de bytes retornados.  
   
 ## <a name="remarks"></a>Comentários  
+
  Se o código da função tiver sido dividido em várias partes, eles serão concatenados na ordem de aumento do deslocamento nativo. Os limites de instrução não são verificados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

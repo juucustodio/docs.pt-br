@@ -2,19 +2,18 @@
 title: Segurança e geração de código durante a execução
 description: Gerar código em nome de código menos confiável que é executado em uma confiança mais alta é uma preocupação de segurança, especialmente quando um chamador pode influenciar a geração de código.
 ms.date: 07/15/2020
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - code security, on-the-fly code generation
 - on-the-fly code generation
 - security [.NET], on-the-fly code generation
 - secure coding, on-the-fly code generation
 ms.assetid: 6d221724-bb21-4d76-90c3-0ee2a2e69be2
-ms.openlocfilehash: a3fc51c346feffa85537d95ccdbd23d943827edf
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: c94da31f464a5272dd3f3c9f767a40ba7ad88a47
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87555689"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94824142"
 ---
 # <a name="security-and-on-the-fly-code-generation"></a>Segurança e geração de código durante a execução
 

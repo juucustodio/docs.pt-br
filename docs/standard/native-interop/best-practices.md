@@ -2,12 +2,12 @@
 title: Práticas recomendadas de interoperabilidade nativa - .NET
 description: Saiba mais sobre as práticas recomendadas para fazer interface com componentes nativos no .NET.
 ms.date: 01/18/2019
-ms.openlocfilehash: e5d96471e796dca712d25d2d9e2609508180d83f
-ms.sourcegitcommit: a9b8945630426a575ab0a332e568edc807666d1b
+ms.openlocfilehash: e64aa0aa43a56145bd7636835f507f8433fa3db4
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80391215"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100465243"
 ---
 # <a name="native-interoperability-best-practices"></a>Práticas recomendadas de interoperabilidade nativa
 
@@ -40,18 +40,18 @@ Quando o CharSet é Unicode ou o argumento é explicitamente marcado como `[Mars
 
 Lembre-se de marcar `[DllImport]` como `Charset.Unicode`, a menos que você queira explicitamente o tratamento ANSI de suas cadeias de caracteres.
 
-❌Não use `[Out] string` parâmetros. Os parâmetros de cadeia de caracteres passados por valor com o atributo `[Out]` podem desestabilizar o runtime se a cadeia de caracteres for uma cadeia de caracteres internada. Veja mais informações sobre a centralização da cadeia de caracteres na documentação do <xref:System.String.Intern%2A?displayProperty=nameWithType>.
+❌ Não use `[Out] string` parâmetros. Os parâmetros de cadeia de caracteres passados por valor com o atributo `[Out]` podem desestabilizar o runtime se a cadeia de caracteres for uma cadeia de caracteres internada. Veja mais informações sobre a centralização da cadeia de caracteres na documentação do <xref:System.String.Intern%2A?displayProperty=nameWithType>.
 
-❌Evite `StringBuilder` parâmetros. Marshaling de `StringBuilder`*sempre* cria uma cópia do buffer nativo. Dessa forma, ele pode ser extremamente ineficiente. Veja o cenário típico da chamada de uma API do Windows que usa uma cadeia de caracteres:
+❌ Evite `StringBuilder` parâmetros. Marshaling de `StringBuilder`*sempre* cria uma cópia do buffer nativo. Dessa forma, ele pode ser extremamente ineficiente. Veja o cenário típico da chamada de uma API do Windows que usa uma cadeia de caracteres:
 
-1. Criar uma SB da capacidade desejada (aloca capacidade gerenciada)**{1}**
+1. Criar uma SB da capacidade desejada (aloca capacidade gerenciada) **{1}**
 2. Invoke
-   1. Aloca um buffer nativo**{2}**
+   1. Aloca um buffer nativo **{2}**
    2. Copia o conteúdo se `[In]` _(o padrão para um parâmetro `StringBuilder`)_
    3. Copia o buffer nativo em uma matriz gerenciada recém-alocada se `[Out]` **{3}** _(também é o padrão para `StringBuilder`)_
-3. `ToString()`aloca ainda outra matriz gerenciada**{4}**
+3. `ToString()` aloca ainda outra matriz gerenciada **{4}**
 
-São *{4}* as alocações para obter uma cadeia de caracteres de código nativo. O melhor que você pode fazer para limitar isso é reutilizar o `StringBuilder` em outra chamada, mas isso economiza apenas *1* alocação. É muito melhor usar e armazenar em cache um buffer de caractere de `ArrayPool` - você pode então reduzir para apenas a alocação para `ToString()` nas chamadas subsequentes.
+São as *{4}* alocações para obter uma cadeia de caracteres de código nativo. O melhor que você pode fazer para limitar isso é reutilizar o `StringBuilder` em outra chamada, mas isso economiza apenas *1* alocação. É muito melhor usar e armazenar em cache um buffer de caractere de `ArrayPool` - você pode então reduzir para apenas a alocação para `ToString()` nas chamadas subsequentes.
 
 O outro problema com `StringBuilder` é que esta configuração sempre copia o buffer de retorno de volta para o primeiro nulo. Se a cadeia de caracteres transmitida não estiver terminada, ou terminar por dois caracteres nulos, na melhor das hipóteses, o recurso P/Invoke estará incorreto.
 
@@ -61,7 +61,7 @@ Se você *usar* o `StringBuilder`, uma última pegadinha é que a capacidade **n
 
 Para obter mais informações sobre o marshaling de cadeia de caracteres, veja [Marshaling padrão para cadeias de caracteres](../../framework/interop/default-marshaling-for-strings.md) e [Personalizando marshaling de cadeia de caracteres](customize-parameter-marshaling.md#customizing-string-parameters).
 
-> __Específico do Windows__ Para `[Out]` cadeias de caracteres, `CoTaskMemFree` o CLR usará por padrão `SysStringFree` para cadeias de caracteres livres `UnmanagedType.BSTR`ou para cadeias de caracteres marcadas como.
+> __Específico do Windows__ Para `[Out]` cadeias de caracteres, o CLR usará `CoTaskMemFree` por padrão para cadeias de caracteres livres ou `SysStringFree` para cadeias de caracteres marcadas como `UnmanagedType.BSTR` .
 > **Para a maioria das APIs com um buffer de cadeia de caracteres de saída:** A contagem de caracteres transmitida deve incluir o nulo. Se o valor retornado for menor que a contagem de caracteres transmitidos, a chamada foi bem-sucedida e o valor consiste no número de caracteres *sem* o nulo à direita. Caso contrário, a contagem consiste no tamanho necessário do buffer *incluindo* o caractere nulo.
 >
 > - Pass em 5, Get 4: a cadeia de caracteres tem 4 caracteres de comprimento com um nulo à direita.
@@ -80,19 +80,25 @@ Os GUIDs podem ser usados diretamente em assinaturas. Muitas APIs do Windows usa
 |------|-------------|
 | `KNOWNFOLDERID` | `REFKNOWNFOLDERID` |
 
-❌Não use `[MarshalAs(UnmanagedType.LPStruct)]` para nada além dos parâmetros `ref` de GUID.
+❌ Não use `[MarshalAs(UnmanagedType.LPStruct)]` para nada além dos `ref` parâmetros de GUID.
 
 ## <a name="blittable-types"></a>Tipos blittable
 
-Os tipos blittable são tipos que têm a mesma representação em nível de bits no código gerenciado e nativo. Como tal, eles não precisam ser convertidos em outro formato para serem empacotados para e do código nativo e, uma vez que isso melhora o desempenho, eles devem ter preferência.
+Os tipos blittable são tipos que têm a mesma representação em nível de bits no código gerenciado e nativo. Como tal, eles não precisam ser convertidos em outro formato para serem empacotados para e do código nativo e, uma vez que isso melhora o desempenho, eles devem ter preferência. Alguns tipos não são blittable, mas são conhecidos por conterem conteúdo blittable. Esses tipos têm otimizações semelhantes como tipos blittable quando não estão contidas em outro tipo, mas não são consideradas blittable em campos de structs ou para fins de [`UnmanagedCallersOnlyAttribute`](xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute) .
 
 **Tipos blittable:**
 
 - `byte`, `sbyte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `single`, `double`
-- matrizes unidimensionais não aninhadas de tipos blittable (por exemplo, `int[]`)
-- estruturas e classes com layout fixo que só têm tipos de valor blittable para campos de instância
+- structs com layout fixo que só têm tipos de valor blittable para campos de instância
   - layout fixo requer `[StructLayout(LayoutKind.Sequential)]` ou `[StructLayout(LayoutKind.Explicit)]`
-  - structs são `LayoutKind.Sequential` por padrão, classes são `LayoutKind.Auto`
+  - as structs são `LayoutKind.Sequential` por padrão
+
+**Tipos com conteúdo blittable:**
+
+- matrizes unidimensionais e não aninhadas de tipos primitivos blittable (por exemplo, `int[]` )
+- classes com layout fixo que só têm tipos de valor blittable para campos de instância
+  - layout fixo requer `[StructLayout(LayoutKind.Sequential)]` ou `[StructLayout(LayoutKind.Explicit)]`
+  - as classes são `LayoutKind.Auto` por padrão
 
 **NÃO blittable:**
 
@@ -100,9 +106,13 @@ Os tipos blittable são tipos que têm a mesma representação em nível de bits
 
 **ÀS VEZES blittable:**
 
-- `char`, `string`
+- `char`
 
-Quando tipos blittable são passados por referência, eles são simplesmente fixados pelo marshaller em vez de serem copiados para um buffer intermediário. (As classes são inerentemente passadas por referência, structs são passadas por referência quando usadas com `ref` ou `out`).
+**Tipos com, às vezes, conteúdo blittable:**
+
+- `string`
+
+Quando os tipos blittable são passados por referência com `in` , `ref` ou `out` , ou quando os tipos com conteúdo blittable são passados por valor, eles são simplesmente fixados pelo Marshaller em vez de serem copiados para um buffer intermediário.
 
 `char` é blittable em uma matriz unidimensional **ou** se for parte de um tipo que é explicitamente marcado com `[StructLayout]` com `CharSet = CharSet.Unicode`.
 
@@ -114,9 +124,9 @@ public struct UnicodeCharStruct
 }
 ```
 
-`string` é blittable se não está contido em outro tipo e está sendo passado como um argumento marcado com `[MarshalAs(UnmanagedType.LPWStr)]` ou o `[DllImport]` tem `CharSet = CharSet.Unicode` definido.
+`string` contém conteúdo blittable se ele não está contido em outro tipo e está sendo passado como um argumento que está marcado com `[MarshalAs(UnmanagedType.LPWStr)]` ou o `[DllImport]` foi `CharSet = CharSet.Unicode` definido.
 
-Você pode verificar se um tipo é blittable pela tentativa de criar um `GCHandle` fixado. Se o tipo não for uma cadeia de caracteres ou considerado blittable, `GCHandle.Alloc` lançará um `ArgumentException`.
+Você pode ver se um tipo é blittable ou contém conteúdo blittable tentando criar um fixo `GCHandle` . Se o tipo não for uma cadeia de caracteres ou considerado blittable, `GCHandle.Alloc` lançará um `ArgumentException`.
 
 ✔️ TORNE suas estruturas mais blittable quando possível.
 
@@ -129,9 +139,9 @@ Para obter mais informações, consulte:
 
 `GC.KeepAlive()` garantirá que um objeto permaneça no escopo até que o método KeepAlive seja alcançado.
 
-[`HandleRef`](xref:System.Runtime.InteropServices.HandleRef)permite que o Marshaller mantenha um objeto ativo pela duração de um P/Invoke. Ele pode ser usado em vez de `IntPtr` em assinaturas de métodos. `SafeHandle` substitui efetivamente essa classe e deve ser usado em seu lugar.
+[`HandleRef`](xref:System.Runtime.InteropServices.HandleRef) permite que o Marshaller mantenha um objeto ativo pela duração de um P/Invoke. Ele pode ser usado em vez de `IntPtr` em assinaturas de métodos. `SafeHandle` substitui efetivamente essa classe e deve ser usado em seu lugar.
 
-[`GCHandle`](xref:System.Runtime.InteropServices.GCHandle)permite fixar um objeto gerenciado e obter o ponteiro nativo para ele. O padrão básico é:
+[`GCHandle`](xref:System.Runtime.InteropServices.GCHandle) permite fixar um objeto gerenciado e obter o ponteiro nativo para ele. O padrão básico é:
 
 ```csharp
 GCHandle handle = GCHandle.Alloc(obj, GCHandleType.Pinned);
@@ -203,7 +213,7 @@ Um `PVOID`Windows que é um `void*` C pode passar por marshalling como `IntPtr` 
 
 [Intervalos de tipos de dados](/cpp/cpp/data-type-ranges)
 
-## <a name="structs"></a>Structs
+## <a name="structs"></a>Estruturas
 
 As structs gerenciadas são criadas e não são removidas até o método retornar. Por definição, elas são "fixadas" (não serão movidas pelo GC). Você também pode simplesmente pegar o endereço em blocos de código não seguros se o código nativo não usar o ponteiro após o final do método atual.
 
@@ -217,9 +227,9 @@ Os ponteiros para structs nas definições devem ser transmitidos por `ref` ou u
 
 ✔️ USE`sizeof()` C# em vez de `Marshal.SizeOf<MyStruct>()` para estruturas blittable a fim de melhorar o desempenho.
 
-❌Evite usar `System.Delegate` campos `System.MulticastDelegate` ou para representar campos de ponteiro de função em estruturas.
+❌ Evite usar `System.Delegate` `System.MulticastDelegate` campos ou para representar campos de ponteiro de função em estruturas.
 
-Como <xref:System.Delegate?displayProperty=fullName> e <xref:System.MulticastDelegate?displayProperty=fullName> não têm uma assinatura necessária, elas não garantem que o delegado passado corresponda à assinatura esperada pelo código nativo. Além disso, no .NET Framework e no .NET Core, o marshaling de `System.Delegate` um `System.MulticastDelegate` struct contendo uma ou de sua representação nativa para um objeto gerenciado pode desestabilizar o tempo de execução se o valor do campo na representação nativa não for um ponteiro de função que encapsula um delegado gerenciado. No .NET 5 e versões posteriores, não há `System.Delegate` suporte `System.MulticastDelegate` para o marshaling de um campo ou de uma representação nativa para um objeto gerenciado. Use um tipo delegado específico em vez `System.Delegate` de `System.MulticastDelegate`ou.
+Como <xref:System.Delegate?displayProperty=fullName> e <xref:System.MulticastDelegate?displayProperty=fullName> não têm uma assinatura necessária, elas não garantem que o delegado passado corresponda à assinatura esperada pelo código nativo. Além disso, no .NET Framework e no .NET Core, o marshaling de um struct contendo uma `System.Delegate` ou `System.MulticastDelegate` de sua representação nativa para um objeto gerenciado pode desestabilizar o tempo de execução se o valor do campo na representação nativa não for um ponteiro de função que encapsula um delegado gerenciado. No .NET 5 e versões posteriores, não há suporte para o marshaling de um `System.Delegate` `System.MulticastDelegate` campo ou de uma representação nativa para um objeto gerenciado. Use um tipo delegado específico em vez de `System.Delegate` ou `System.MulticastDelegate` .
 
 ### <a name="fixed-buffers"></a>Buffers fixos
 

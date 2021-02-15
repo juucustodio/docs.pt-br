@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: contratos de roteamento'
 title: Contratos de roteamento
 ms.date: 03/30/2017
 ms.assetid: 9ceea7ae-ea19-4cf9-ba4f-d071e236546d
-ms.openlocfilehash: 69dff2c82f67a16d51e11a92052c59672a054e04
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 7ccdb281402bdf61d3ba27f97019fd3126bdf29b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84601069"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632783"
 ---
 # <a name="routing-contracts"></a>Contratos de roteamento
+
 Os contratos de roteamento definem os padrões de mensagem que o serviço de roteamento pode processar.  Cada contrato não tem tipo e permite que o serviço receba uma mensagem sem conhecimento do esquema ou da ação da mensagem. Isso permite que o serviço de roteamento direcione mensagens de forma genérica sem configuração adicional para as especificidades das mensagens subjacentes sendo roteadas.  
   
 ## <a name="routing-contracts"></a>Contratos de roteamento  
+
  Como o serviço de roteamento aceita um objeto de mensagem WCF genérico, a consideração mais importante ao selecionar um contrato é a forma do canal que será usado na comunicação com os clientes e serviços. Ao processar mensagens, o serviço de roteamento usa bombas de mensagens simétricas, portanto, geralmente, a forma do contrato de entrada deve corresponder à forma do contrato de saída. No entanto, há casos em que o Dispatcher do modelo de serviço pode modificar as formas, como quando o Dispatcher converte um canal duplex em um canal de solicitação-resposta, ou remove o suporte de sessão de um canal quando ele não é necessário e não está sendo usado (ou seja, quando **SessionMode. Allowed**, convertendo um **IInputSessionChannel** em um **IInputChannel**).  
   
  Para dar suporte a essas bombas de mensagem, o serviço de roteamento fornece contratos no <xref:System.ServiceModel.Routing> namespace, que devem ser usados ao definir os pontos de extremidade de serviço usados pelo serviço de roteamento. Esses contratos são sem tipo, o que permite o recebimento de qualquer tipo de mensagem ou ação e permite que o serviço de roteamento manipule mensagens sem conhecimento do esquema de mensagem específico. Para obter mais informações sobre os contratos usados pelo serviço de roteamento, consulte [contratos de roteamento](routing-contracts.md).  

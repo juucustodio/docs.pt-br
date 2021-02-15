@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IHostThreadPoolManager'
 title: Interface IHostThreadPoolManager
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: c3a2cd90-7c4e-4374-bb87-b41befb8344f
 topic_type:
 - apiref
-ms.openlocfilehash: bac29b5950f1547c5c60ac716d40d2ef4b1a2cc2
-ms.sourcegitcommit: e5772b3ddcc114c80b4c9767ffdb3f6c7fad8f05
+ms.openlocfilehash: 0361b7a08f781a8748e43959f65ce0e9f21bbac1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83842473"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99728392"
 ---
 # <a name="ihostthreadpoolmanager-interface"></a>Interface IHostThreadPoolManager
+
 Fornece métodos que permitem que o Common Language Runtime (CLR) Configure o pool de threads e enfileirar itens de trabalho para o pool de threads.  
   
 ## <a name="methods"></a>Métodos  
@@ -36,14 +38,16 @@ Fornece métodos que permitem que o Common Language Runtime (CLR) Configure o po
 |[Método SetMinThreads](ihostthreadpoolmanager-setminthreads-method.md)|Define o número mínimo de threads ociosos que o host deve manter em antecipação de solicitações.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O host não é necessário para configurar o pool de threads usando os valores especificados em chamadas para `SetMaxThreads` os `SetMinThreads` métodos e. Nesse caso, o host deve retornar um valor HRESULT de E_NOTIMPL desses métodos.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   

@@ -1,21 +1,21 @@
 ---
-title: dotnet nuget desativar comando fonte
-description: O comando dotnet nuget desabilita uma fonte existente em seus arquivos de configuração NuGet.
+title: comando dotnet desabilitar origem do NuGet
+description: O comando dotnet NuGet Disable Source desabilita uma fonte existente nos arquivos de configuração do NuGet.
 ms.date: 03/20/2020
-ms.openlocfilehash: 54acb40b1944eaff347107e8f3439578ec8e0f3c
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: af37a6589cebaf0501ee5647ebadb83125d0f56e
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463575"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90537945"
 ---
 # <a name="dotnet-nuget-disable-source"></a>dotnet nuget disable source
 
-**Este artigo se aplica a:** ✔️ .NET Core 3.1.200 SDK e versões posteriores
+**Este artigo aplica-se a:** ✔️ SDK 3.1.200 do .NET Core e versões posteriores
 
-## <a name="name"></a>Nome
+## <a name="name"></a>Name
 
-`dotnet nuget disable source`- Desabilite uma fonte NuGet.
+`dotnet nuget disable source` -Desabilitar uma origem do NuGet.
 
 ## <a name="synopsis"></a>Sinopse
 
@@ -25,25 +25,25 @@ dotnet nuget disable source <NAME> [--configfile <FILE>]
 dotnet nuget disable source -h|--help
 ```
 
-## <a name="description"></a>Descrição
+## <a name="description"></a>Description
 
-O `dotnet nuget disable source` comando desativa uma fonte existente em seus arquivos de configuração NuGet.
+O `dotnet nuget disable source` comando desabilita uma fonte existente em seus arquivos de configuração do NuGet.
 
 ## <a name="arguments"></a>Argumentos
 
 - **`NAME`**
 
-  Nome da fonte.
+  Nome da origem.
 
 ## <a name="options"></a>Opções
 
 - **`--configfile <FILE>`**
 
-  O arquivo de configuração NuGet. Se especificado, apenas as configurações deste arquivo serão usadas. Se não for especificado, a hierarquia dos arquivos de configuração do diretório atual será usada. Para obter mais informações, consulte [Configurações comuns de NuGet](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior).
+  O arquivo de configuração do NuGet. Se especificado, somente as configurações desse arquivo serão usadas. Se não for especificado, a hierarquia de arquivos de configuração do diretório atual será usada. Para obter mais informações, consulte [configurações comuns do NuGet](/nuget/consume-packages/configuring-nuget-behavior).
 
 ## <a name="examples"></a>Exemplos
 
-- Desativar uma fonte com `mySource`o nome de:
+- Desabilite uma fonte com o nome de `mySource` :
 
   ```dotnetcli
   dotnet nuget disable source mySource
@@ -53,4 +53,4 @@ O `dotnet nuget disable source` comando desativa uma fonte existente em seus arq
 
 - [Seções de origem do pacote em arquivos NuGet.config](/nuget/reference/nuget-config-file#package-source-sections)
 
-- [comando fontes (nuget.exe)](/nuget/reference/cli-reference/cli-ref-sources)
+- [comando Sources (nuget.exe)](/nuget/reference/cli-reference/cli-ref-sources)

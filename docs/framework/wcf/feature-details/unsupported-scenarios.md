@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: cenários sem suporte'
 title: Cenários sem suporte
 ms.date: 03/30/2017
 ms.assetid: 72027d0f-146d-40c5-9d72-e94392c8bb40
-ms.openlocfilehash: b643e6df8a877860ce36fc6ee34c4e4ca08ec748
-ms.sourcegitcommit: cdf5084648bf5e77970cbfeaa23f1cab3e6e234e
+ms.openlocfilehash: 7547a1acc060a6611a4750e512501cd314bed702
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76921167"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726748"
 ---
 # <a name="unsupported-scenarios"></a>Cenários sem suporte
 
@@ -16,6 +17,7 @@ Por vários motivos, Windows Communication Foundation (WCF) não oferece suporte
 ## <a name="impersonation-scenarios"></a>Cenários de representação
 
 ### <a name="impersonated-identity-might-not-flow-when-clients-make-asynchronous-calls"></a>A identidade representada pode não fluir quando os clientes fizerem chamadas assíncronas
+
  Quando um cliente WCF faz chamadas assíncronas para um serviço WCF usando a autenticação do Windows em representação, a autenticação pode ocorrer com a identidade do processo do cliente em vez da identidade representada.
 
 ### <a name="windows-xp-and-secure-context-token-cookie-enabled"></a>Windows XP e cookie de token de contexto seguro habilitado
@@ -30,23 +32,23 @@ O WCF não oferece suporte à representação e um <xref:System.InvalidOperation
 
 - Um identificador de contexto de segurança (SCT) baseado em estado é criado (por padrão, a criação é desabilitada).
 
- O SCT baseado em estado só pode ser criado usando uma associação personalizada. Para obter mais informações, consulte [como: criar um token de contexto de segurança para uma sessão segura](how-to-create-a-security-context-token-for-a-secure-session.md).) No código, o token é habilitado pela criação de um elemento de associação de segurança (<xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> ou <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement>) usando o método <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateSspiNegotiationBindingElement%28System.Boolean%29?displayProperty=nameWithType> ou <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateSecureConversationBindingElement%28System.ServiceModel.Channels.SecurityBindingElement%2CSystem.Boolean%29?displayProperty=nameWithType> e definindo o parâmetro `requireCancellation` como `false`. O parâmetro refere-se ao cache do SCT. Definir o valor como `false` habilita o recurso SCT baseado em estado.
+ O SCT baseado em estado só pode ser criado usando uma associação personalizada. Para obter mais informações, consulte [como: criar um token de contexto de segurança para uma sessão segura](how-to-create-a-security-context-token-for-a-secure-session.md).) No código, o token é habilitado pela criação de um elemento de associação de segurança ( <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement> ou <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement> ) usando o <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateSspiNegotiationBindingElement%28System.Boolean%29?displayProperty=nameWithType> <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateSecureConversationBindingElement%28System.ServiceModel.Channels.SecurityBindingElement%2CSystem.Boolean%29?displayProperty=nameWithType> método ou e definindo o `requireCancellation` parâmetro como `false` . O parâmetro refere-se ao cache do SCT. Definir o valor como `false` habilita o recurso SCT baseado em estado.
 
- Como alternativa, em configuração, o token é habilitado pela criação de um <`customBinding`>, depois pela adição de um elemento de`security`de > < e pela definição do atributo `authenticationMode` como SecureConversation e o atributo `requireSecurityContextCancellation` como `true`.
+ Como alternativa, em configuração, o token é habilitado criando um <`customBinding`>, depois adicionando um <`security` elemento> e definindo o `authenticationMode` atributo como SecureConversation e o `requireSecurityContextCancellation` atributo como `true` .
 
 > [!NOTE]
-> Os requisitos anteriores são específicos. Por exemplo, o <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateKerberosBindingElement%2A> cria um elemento de associação que resulta em uma identidade do Windows, mas não estabelece um SCT. Portanto, você pode usá-lo com a opção `Required` no Windows XP.
+> Os requisitos anteriores são específicos. Por exemplo, o <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateKerberosBindingElement%2A> cria um elemento de associação que resulta em uma identidade do Windows, mas não estabelece um SCT. Portanto, você pode usá-lo com a `Required` opção no Windows XP.
 
 ### <a name="possible-aspnet-conflict"></a>Possível conflito de ASP.NET
 
-O WCF e o ASP.NET podem habilitar ou desabilitar a representação. Quando o ASP.NET hospeda um aplicativo WCF, pode haver um conflito entre as definições de configuração do WCF e do ASP.NET. Em caso de conflito, a configuração do WCF tem precedência, a menos que a propriedade <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> seja definida como <xref:System.ServiceModel.ImpersonationOption.NotAllowed>; nesse caso, a configuração de representação ASP.NET tem precedência.
+O WCF e o ASP.NET podem habilitar ou desabilitar a representação. Quando o ASP.NET hospeda um aplicativo WCF, pode haver um conflito entre as definições de configuração do WCF e do ASP.NET. Em caso de conflito, a configuração do WCF tem precedência, a menos que a <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> propriedade seja definida como <xref:System.ServiceModel.ImpersonationOption.NotAllowed> ; nesse caso, a configuração de representação ASP.net tem precedência.
 
 ### <a name="assembly-loads-may-fail-under-impersonation"></a>Cargas de assembly podem falhar em representação
 
 Se o contexto representado não tiver direitos de acesso para carregar um assembly e se for a primeira vez que o Common Language Runtime (CLR) está tentando carregar o assembly para esse AppDomain, o <xref:System.AppDomain> armazenará em cache a falha. As tentativas subsequentes de carregar esse assembly (ou assemblies) falham, mesmo após a reversão da representação, e mesmo se o contexto revertido tiver direitos de acesso para carregar o assembly. Isso ocorre porque o CLR não tenta novamente a carga depois que o contexto do usuário é alterado. Você deve reiniciar o domínio do aplicativo para se recuperar da falha.
 
 > [!NOTE]
-> O valor padrão para a propriedade <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A> da classe <xref:System.ServiceModel.Security.WindowsClientCredential> é <xref:System.Security.Principal.TokenImpersonationLevel.Identification>. Na maioria dos casos, um contexto de representação no nível de identificação não tem direitos para carregar nenhum assembly adicional. Esse é o valor padrão, portanto, essa é uma condição muito comum a ser observada. A representação de nível de identificação também ocorre quando o processo de representação não tem o privilégio de `SeImpersonate`. Para obter mais informações, consulte [delegação e representação](delegation-and-impersonation-with-wcf.md).
+> O valor padrão para a <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A> propriedade da <xref:System.ServiceModel.Security.WindowsClientCredential> classe é <xref:System.Security.Principal.TokenImpersonationLevel.Identification> . Na maioria dos casos, um contexto de representação no nível de identificação não tem direitos para carregar nenhum assembly adicional. Esse é o valor padrão, portanto, essa é uma condição muito comum a ser observada. A representação de nível de identificação também ocorre quando o processo de representação não tem o `SeImpersonate` privilégio. Para obter mais informações, consulte [delegação e representação](delegation-and-impersonation-with-wcf.md).
 
 ### <a name="delegation-requires-credential-negotiation"></a>A delegação requer negociação de credencial
 
@@ -78,17 +80,17 @@ A criptografia AES em conformidade com FIPS não funciona em retornos de chamada
 
  Há duas maneiras possíveis de saber se um certificado usa KSP:
 
-- Faça uma `p/invoke` de `CertGetCertificateContextProperty`e inspecione `dwProvType` no `CertGetCertificateContextProperty`retornado.
+- Faça um `p/invoke` de `CertGetCertificateContextProperty` e inspecione `dwProvType` no retornado `CertGetCertificateContextProperty` .
 
-- Use o comando `certutil` da linha de comando para consultar certificados. Para obter mais informações, consulte [tarefas de certutil para solucionar problemas de certificados](https://docs.microsoft.com/previous-versions/orphan-topics/ws.10/cc772619(v=ws.10)).
+- Use o  `certutil` comando da linha de comando para consultar certificados. Para obter mais informações, consulte [tarefas de certutil para solucionar problemas de certificados](/previous-versions/orphan-topics/ws.10/cc772619(v=ws.10)).
 
 ## <a name="message-security-fails-if-using-aspnet-impersonation-and-aspnet-compatibility-is-required"></a>A segurança da mensagem falhará se estiver usando a representação de ASP.NET e a compatibilidade do ASP.NET for necessária
 
 O WCF não oferece suporte à seguinte combinação de configurações porque pode impedir que a autenticação do cliente ocorra:
 
-- A representação ASP.NET está habilitada. Isso é feito no arquivo Web. config definindo o atributo `impersonate` do elemento <`identity`> como `true`.
+- A representação ASP.NET está habilitada. Isso é feito no arquivo de Web.config definindo o `impersonate` atributo do elemento de> de <`identity` como `true` .
 
-- O modo de compatibilidade ASP.NET é habilitado definindo o atributo `aspNetCompatibilityEnabled` do [\<servicehostingenvironment >](../../configure-apps/file-schema/wcf/servicehostingenvironment.md) como `true`.
+- O modo de compatibilidade ASP.NET é habilitado definindo o `aspNetCompatibilityEnabled` atributo de [\<serviceHostingEnvironment>](../../configure-apps/file-schema/wcf/servicehostingenvironment.md) para `true` .
 
 - A segurança do modo de mensagem é usada.
 
@@ -114,19 +116,19 @@ O WCF requer exatamente um documento WSDL para cada nó na cadeia de confiança 
 
  Isso gera uma exceção.
 
- Você pode fazer com que esse cenário funcione colocando o ponto de extremidade `issue_ticket` em outro lugar.
+ Você pode fazer com que esse cenário funcione colocando o `issue_ticket` ponto de extremidade em outro lugar.
 
 ## <a name="wsdl-import-attributes-can-be-lost"></a>Atributos de importação de WSDL podem ser perdidos
 
-O WCF perde o controle dos atributos em um elemento `<wst:Claims>` em um modelo de `RST` ao fazer uma importação de WSDL. Isso acontece durante uma importação de WSDL, se você especificar `<Claims>` diretamente no `WSFederationHttpBinding.Security.Message.TokenRequestParameters` ou `IssuedSecurityTokenRequestParameters.AdditionalRequestParameters` em vez de usar as coleções de tipo de declaração diretamente.  Como a importação perde os atributos, a associação não Arredonda a viagem corretamente por meio do WSDL e, portanto, está incorreta no lado do cliente.
+O WCF perde o controle dos atributos em um `<wst:Claims>` elemento em um `RST` modelo ao fazer uma importação de WSDL. Isso acontece durante uma importação de WSDL, se você especificar `<Claims>` diretamente em `WSFederationHttpBinding.Security.Message.TokenRequestParameters` ou `IssuedSecurityTokenRequestParameters.AdditionalRequestParameters` em vez de usar as coleções de tipo de declaração diretamente.  Como a importação perde os atributos, a associação não Arredonda a viagem corretamente por meio do WSDL e, portanto, está incorreta no lado do cliente.
 
  A correção é modificar a associação diretamente no cliente depois de fazer a importação.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Considerações sobre segurança](security-considerations-in-wcf.md)
-- [Divulgação de informações](information-disclosure.md)
-- [Elevação de privilégio](elevation-of-privilege.md)
-- [Negação de serviço](denial-of-service.md)
-- [Violação](tampering.md)
-- [Ataques de reprodução](replay-attacks.md)
+- [Divulgação de Informações Confidenciais](information-disclosure.md)
+- [Elevação de Privilégio](elevation-of-privilege.md)
+- [Negação de Serviço](denial-of-service.md)
+- [Adulteração](tampering.md)
+- [Ataques por repetição](replay-attacks.md)

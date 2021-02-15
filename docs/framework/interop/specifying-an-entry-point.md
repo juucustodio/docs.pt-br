@@ -7,12 +7,12 @@ helpviewer_keywords:
 - platform invoke, attribute fields
 - attribute fields in platform invoke, EntryPoint
 ms.assetid: d1247f08-0965-416a-b978-e0b50652dfe3
-ms.openlocfilehash: 5628c54103410d127c2f9c4f56e1c6f897ada754
-ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
+ms.openlocfilehash: a8a45513469c5ee1ec24aae12b02877c9a431513
+ms.sourcegitcommit: 38999dc0ec4f7c4404de5ce0951b64c55997d9ab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86282015"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99426938"
 ---
 # <a name="specifying-an-entry-point"></a>Especificando um ponto de entrada
 
@@ -58,6 +58,7 @@ End Class
 ```
   
 ## <a name="renaming-a-function-in-c-and-c"></a>Renomeando uma função no C# e C++  
+
  É possível usar o campo <xref:System.Runtime.InteropServices.DllImportAttribute.EntryPoint?displayProperty=nameWithType> para especificar uma função de DLL por nome ou ordinal. Se o nome da função na definição de método for o mesmo do ponto de entrada na DLL, você não precisará identificar explicitamente a função com o campo **EntryPoint**. Caso contrário, use um dos seguintes formatos de atributo para indicar um nome ou um ordinal:  
   
 ```csharp
@@ -76,7 +77,7 @@ using System.Runtime.InteropServices;
 internal static class NativeMethods
 {
     [DllImport("user32.dll", EntryPoint = "MessageBoxA")]
-    internal static extern int MessageBox(
+    internal static extern int MsgBox(
         IntPtr hWnd, string lpText, string lpCaption, uint uType);
 }
 ```

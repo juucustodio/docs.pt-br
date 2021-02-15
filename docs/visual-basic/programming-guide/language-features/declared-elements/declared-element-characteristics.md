@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: características de elemento declaradas (Visual Basic)'
 title: Características do elemento declarado
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -13,14 +14,15 @@ helpviewer_keywords:
 - data types [Visual Basic], declared elements
 - declared elements [Visual Basic], visibility
 ms.assetid: 1bc40fb8-b67c-4428-90a4-76b630ae2583
-ms.openlocfilehash: 9d1e327c25689bed1405ea9a627da6232abb707b
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c441b5f55144bead5b11b1d5ddbd0119d6def86b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84392942"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468454"
 ---
 # <a name="declared-element-characteristics-visual-basic"></a>Características do elemento declarado (Visual Basic)
+
 Uma *característica* de um elemento declarado é um aspecto desse elemento que afeta como o código pode interagir com ele. Cada elemento declarado tem uma ou mais das seguintes características associadas a ele:  
   
 - *Tipo de dados* — os valores que o elemento pode conter e como ele armazena esses valores. Para obter mais informações, veja [Tipos de Dados](../../../language-reference/data-types/index.md).  
@@ -32,6 +34,7 @@ Uma *característica* de um elemento declarado é um aspecto desse elemento que 
 - *Nível de acesso* — a permissão para que o código faça uso do elemento. Para obter mais informações, consulte [como controlar a disponibilidade de uma variável](how-to-control-the-availability-of-a-variable.md).  
   
 ## <a name="characteristics-of-the-elements"></a>Características dos elementos  
+
  A tabela a seguir mostra os elementos declarados e as características que se aplicam a cada um.  
   
 |Elemento|Tipo de Dados|Tempo de vida|Escopo <sup>1</sup>|Nível de acesso|  
@@ -53,7 +56,7 @@ Uma *característica* de um elemento declarado é um aspecto desse elemento que 
   
  <sup>1</sup> o escopo é às vezes chamado de *visibilidade*.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Elementos declarados](index.md)
 - [Nomes de elementos declarados](declared-element-names.md)
@@ -61,5 +64,5 @@ Uma *característica* de um elemento declarado é um aspecto desse elemento que 
 - [Tempo de vida no Visual Basic](lifetime.md)
 - [Escopo no Visual Basic](scope.md)
 - [Níveis de acesso no Visual Basic](access-levels.md)
-- [Tipos de dados](../data-types/index.md)
+- [Data Types](../data-types/index.md)
 - [Declaração de Variável](../variables/variable-declaration.md)

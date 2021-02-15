@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: usando o rastreamento para solucionar problemas de seu aplicativo'
 title: Utilizando o rastreamento para solucionar problemas em seu aplicativo
 ms.date: 03/30/2017
 ms.assetid: 7676b9bb-cbd1-41fd-9a93-cc615af6e2d0
-ms.openlocfilehash: 78280a399c3490afb0dd2293c60b58d9d00fc228
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: bc81199450da5522caa92120f0b8c5153ccb9957
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84587632"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99758041"
 ---
 # <a name="using-tracing-to-troubleshoot-your-application"></a>Utilizando o rastreamento para solucionar problemas em seu aplicativo
+
 Esta seção contém vários tópicos que descrevem como você pode usar o rastreamento para solucionar problemas de seu aplicativo.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Configurações recomendadas para registro de rastreamento e mensagens](recommended-settings-for-tracing-and-message-logging.md)  
  Descreve as configurações sugeridas para ambientes de produção e de depuração.  
   
@@ -33,6 +36,6 @@ Esta seção contém vários tópicos que descrevem como você pode usar o rastr
   
 ## <a name="see-also"></a>Consulte também
 
-- [Ferramenta Visualizador de rastreamento de serviço (SvcTraceViewer.exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md)
+- [Ferramenta Visualizador de Rastreamento de Serviço (SvcTraceViewer.exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md)
 - [Rastreamento](index.md)
-- [Rastreamento de ponta a ponta](end-to-end-tracing.md)
+- [Rastreamento ponta a ponta](end-to-end-tracing.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorProfilerInfo2'
 title: Interface ICorProfilerInfo2
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 91bd49b6-4d12-494f-a8f1-2f251e8c65e3
 topic_type:
 - apiref
-ms.openlocfilehash: 4480fefa51eec2f2751bd71910db87b72a1c32cf
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 07828c6f55b72068e9021991600ed17eb6ffe6ad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84496705"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99647005"
 ---
 # <a name="icorprofilerinfo2-interface"></a>Interface ICorProfilerInfo2
+
 Fornece métodos que os profileres de código usam para se comunicar com o Common Language Runtime (CLR) para controlar o monitoramento de eventos e informações de solicitação. A `ICorProfilerInfo2` interface é uma extensão da interface [ICorProfilerInfo](icorprofilerinfo-interface.md) . Ou seja, ele fornece novos métodos com suporte no .NET Framework versão 2,0 e versões posteriores.  
   
 ## <a name="methods"></a>Métodos  
@@ -51,6 +53,7 @@ Fornece métodos que os profileres de código usam para se comunicar com o Commo
 |[Método SetEnterLeaveFunctionHooks2](icorprofilerinfo2-setenterleavefunctionhooks2-method.md)|Especifica funções implementadas pelo Profiler a serem chamadas em "Inserir", "deixar" e "tailcall" ganchos de funções gerenciadas.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Um criador de perfil chama um método na `ICorProfilerInfo2` interface para se comunicar com o CLR para controlar as informações de solicitação e monitoramento de eventos.  
   
  Os métodos da `ICorProfilerInfo2` interface são implementados pelo CLR usando o modelo de thread livre. Cada método retorna um HRESULT para indicar êxito ou falha. Para obter uma lista de possíveis códigos de retorno, consulte o arquivo CorError. h.  
@@ -58,6 +61,7 @@ Fornece métodos que os profileres de código usam para se comunicar com o Commo
  O CLR passa uma `ICorProfilerInfo2` interface para cada criador de perfil de código durante a inicialização, usando a implementação do profiler de [ICorProfilerCallback:: Initialize](icorprofilercallback-initialize-method.md). Um criador de perfil de código pode então chamar métodos da `ICorProfilerInfo2` interface para obter informações sobre o código gerenciado que está sendo executado sob o controle do CLR.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -66,7 +70,7 @@ Fornece métodos que os profileres de código usam para se comunicar com o Commo
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criação de perfil de interfaces](profiling-interfaces.md)
 - [Interface ICorProfilerInfo](icorprofilerinfo-interface.md)

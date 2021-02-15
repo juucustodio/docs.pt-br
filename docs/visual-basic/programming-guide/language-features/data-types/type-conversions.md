@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: conversões de tipo no Visual Basic'
 title: Conversões de tipo
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,17 +11,19 @@ helpviewer_keywords:
 - changing data types [Visual Basic]
 - data type conversion [Visual Basic]
 ms.assetid: 1cdacd21-ba31-4b62-b5be-395e41eeaa17
-ms.openlocfilehash: be388998da5e88f99c62128e6ad63d5a476153ba
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 1f40951856710eb6f2892a7f7a4e04173ee3ee44
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84393046"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100454476"
 ---
 # <a name="type-conversions-in-visual-basic"></a>Conversões de tipo no Visual Basic
+
 O processo de alterar um valor de um tipo de dados para outro tipo é chamado *conversão*. As conversões são de *alargamento* ou *estreitamento*, dependendo das capacidades dos dados dos tipos envolvidos. Eles também são *implícitos* ou *explícitos*, dependendo da sintaxe no código-fonte.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Conversões de Widening e Narrowing](widening-and-narrowing-conversions.md)  
  Explica as conversões classificadas por se o tipo de destino pode conter os dados.  
   
@@ -37,10 +40,11 @@ O processo de alterar um valor de um tipo de dados para outro tipo é chamado *c
  Percorre o processo de conversão entre matrizes de tipos de dados diferentes.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Tipos de dados](index.md)  
+
+ [Data Types](index.md)  
  Apresenta os tipos de dados Visual Basic e descreve como usá-los.  
   
- [Tipos de dados](../../../language-reference/data-types/index.md)  
+ [Data Types](../../../language-reference/data-types/index.md)  
  Lista os tipos de dados elementares fornecidos por Visual Basic.  
   
  [Solução de problemas de tipos de dados](troubleshooting-data-types.md)  

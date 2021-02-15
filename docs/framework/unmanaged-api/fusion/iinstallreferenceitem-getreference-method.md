@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IInstallReferenceItem:: getReference'
 title: Método IInstallReferenceItem::GetReference
 ms.date: 03/30/2017
 api_name:
@@ -15,15 +16,16 @@ helpviewer_keywords:
 ms.assetid: 8960332f-c98a-405a-ba92-7003de0c1187
 topic_type:
 - apiref
-ms.openlocfilehash: 014bd4f2b12c84790065f76a67765aaf35e8b2d8
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 88f5ca21b6f3494031e1cd232f71253e39d9e648
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73131675"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800096"
 ---
 # <a name="iinstallreferenceitemgetreference-method"></a>Método IInstallReferenceItem::GetReference
-Obtém um ponteiro para a estrutura [FUSION_INSTALL_REFERENCE](fusion-install-reference-structure.md) representada por este objeto [IInstallReferenceItem](iinstallreferenceitem-interface.md) .  
+
+Obtém um ponteiro para a estrutura de [FUSION_INSTALL_REFERENCE](fusion-install-reference-structure.md) representada por este objeto [IInstallReferenceItem](iinstallreferenceitem-interface.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -36,8 +38,9 @@ HRESULT GetReference (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ppRefData`  
- fora O ponteiro de `FUSION_INSTALL_REFERENCE` retornado.  
+ fora O `FUSION_INSTALL_REFERENCE` ponteiro retornado.  
   
  `dwFlags`  
  no Reservado para extensibilidade futura. `dwFlags` deve ser 0 (zero).  
@@ -46,11 +49,12 @@ HRESULT GetReference (
  no Reservado para extensibilidade futura. `pvReserved` deve ser uma referência nula.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Fusion. h  
   
- **Versões do .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>Consulte também
 

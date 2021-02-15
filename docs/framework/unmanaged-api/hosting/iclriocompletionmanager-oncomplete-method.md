@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRIoCompletionManager:: OnComplete'
 title: Método ICLRIoCompletionManager::OnComplete
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 003f6974-9727-4322-bed5-e330d1224d0b
 topic_type:
 - apiref
-ms.openlocfilehash: 39c9752912e88b04455516c0e9bed43610ba8aa0
-ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
+ms.openlocfilehash: d54b189debdfc2959676b53fd3fb51b2c10dce17
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83703819"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99789873"
 ---
 # <a name="iclriocompletionmanageroncomplete-method"></a>Método ICLRIoCompletionManager::OnComplete
+
 Notifica o Common Language Runtime (CLR) do status de uma solicitação de e/s que foi feita usando uma chamada para o método [IHostIoCompletionManager:: bind](ihostiocompletionmanager-bind-method.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT OnComplete (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `dwErrorCode`  
  no Um valor HRESULT que indica o status da operação de associação.  
   
@@ -55,7 +58,7 @@ HRESULT OnComplete (
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
-|S_OK|`OnComplete`retornado com êxito.|  
+|S_OK|`OnComplete` retornado com êxito.|  
 |HOST_E_CLRNOTAVAILABLE|O CLR não foi carregado em um processo ou o CLR está em um estado no qual não pode executar código gerenciado ou processar a chamada com êxito.|  
 |HOST_E_TIMEOUT|A chamada atingiu o tempo limite.|  
 |HOST_E_NOT_OWNER|O chamador não possui o bloqueio.|  
@@ -63,18 +66,20 @@ HRESULT OnComplete (
 |E_FAIL|Ocorreu uma falha catastrófica desconhecida. Depois que um método retorna E_FAIL, o CLR não pode mais ser usado no processo. As chamadas subsequentes para métodos de hospedagem retornam HOST_E_CLRNOTAVAILABLE.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Se o host implementar uma abstração de conclusão de e/s, o CLR fará solicitações de e/s por meio do host usando métodos de [IHostIoCompletionManager](ihostiocompletionmanager-interface.md). O host então chama o `OnComplete` método para notificar o tempo de execução do resultado de tais solicitações.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRIoCompletionManager](iclriocompletionmanager-interface.md)
 - [Interface IHostIoCompletionManager](ihostiocompletionmanager-interface.md)

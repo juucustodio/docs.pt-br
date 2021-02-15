@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: variável de objeto ou com variável de bloco não definida'
 title: Variável de objeto ou variável com bloco não definida
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID91
 ms.assetid: 2f03e611-f0ed-465c-99a2-a816e034faa3
-ms.openlocfilehash: d1778e2bb58d32e976f10b3fba1637918278d36e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: a20655c2219aa5b90015e025a38ea9dd02894a6c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84409277"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99795567"
 ---
 # <a name="object-variable-or-with-block-variable-not-set"></a>Variável de objeto ou variável com bloco não definida
-Uma variável de objeto inválida está sendo referenciada.   Esse erro pode ocorrer por várias razões:
+
+Uma variável de objeto inválida está sendo referenciada. Esse erro pode ocorrer por várias razões:
 
 - Uma variável foi declarada sem especificar um tipo. Se uma variável for declarada sem especificar um tipo, o padrão será Type `Object` .
 
@@ -50,7 +52,7 @@ Uma variável de objeto inválida está sendo referenciada.   Esse erro pode oco
 
 5. Verifique se o `With` bloco foi inicializado executando o `With` ponto de entrada da instrução.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Declaração de Variável do Objeto](../../programming-guide/language-features/variables/object-variable-declaration.md)
 - [Instrução ReDim](../statements/redim-statement.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataTables2:: GetMetaDataStreamInfo'
 title: Método IMetaDataTables2::GetMetaDataStreamInfo
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 8b280627-cc74-4789-95da-1fefc966de05
 topic_type:
 - apiref
-ms.openlocfilehash: 7d39d089c348b7320651ed21ea14ba07d7877fd4
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 323c31931cc97f18ff09df83c57153a3629d0a10
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84501089"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799233"
 ---
 # <a name="imetadatatables2getmetadatastreaminfo-method"></a>Método IMetaDataTables2::GetMetaDataStreamInfo
+
 Obtém o nome, o tamanho e o conteúdo do fluxo de metadados no índice especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,6 +39,7 @@ HRESULT GetMetaDataStreamInfo (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ix`  
  no O índice do fluxo de metadados solicitado.  
   
@@ -50,15 +53,16 @@ HRESULT GetMetaDataStreamInfo (
  fora O tamanho, em bytes, de `ppv` .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataTables2](imetadatatables2-interface.md)
 - [Interface IMetaDataTables](imetadatatables-interface.md)

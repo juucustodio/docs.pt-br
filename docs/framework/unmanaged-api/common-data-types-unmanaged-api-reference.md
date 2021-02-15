@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: tipos de dados comuns (referência de API não gerenciada)'
 title: Tipos de dados comuns (referência API não gerenciada)
 ms.date: 03/30/2017
 ms.assetid: e4ab2c4c-9433-4eba-9e9a-096de406cafb
-ms.openlocfilehash: 86f3886b96d0156ec2f0431369c7a54954cd4cad
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 037a212d9b58adbfdc24635bc651946af9f9bb7c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73132447"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99772816"
 ---
 # <a name="common-data-types-unmanaged-api-reference"></a>Tipos de dados comuns (referência API não gerenciada)
+
 Este tópico lista tipos de dados simples usados pelas APIs não gerenciadas para o .NET Framework que são definidas por instruções `typedef` do C/C++. Esses tipos de dados são geralmente aliases para tipos de dados primitivos do C/C++. Geralmente, os valores desses tipos de dados são opacos, ou seja, eles são retornados por uma função ou um método específico para que possam ser transmitidos para outras funções ou métodos sem modificação.  
   
 |Tipo de dados|Definição|Definido em|Descrição|  
@@ -18,7 +20,7 @@ Este tópico lista tipos de dados simples usados pelas APIs não gerenciadas par
 |AssemblyID|`typedef UINT_PTR AssemblyID;`|corprof.h|O identificador de um assembly.|  
 |ClassID|`typedef UINT_PTR ClassID;`|corprof.h|O identificador de uma classe gerenciada.|  
 |CLRDATA_ADDRESS|`typedef ULONG64 CLRDATA_ADDRESS;`|ClrData. h|Um endereço de memória de 64 bits.|
-|CLRDATA_ENUM|`typedef ULONG64 CLRDATA_ADDRESS;`|Indisponível|Um endereço de memória de 64 bits.|
+|CLRDATA_ENUM|`typedef ULONG64 CLRDATA_ADDRESS;`|Não disponível|Um endereço de memória de 64 bits.|
 |CONNID|`typedef DWORD CONNID;`|cordebug.h, mscoree.h|O identificador de conexão para um thread que está conectado a uma instância do Microsoft SQL Server.|  
 |ContextID|`typedef UINT_PTR ContextID;`|corprof.h|O identificador do contexto associado a um thread gerenciado específico.|  
 |COR_PRF_ELT_INFO|`typedef UINT_PTR COR_PRF_ELT_INFO;`|corprof.h|Um identificador opaco que representa informações sobre um registro de ativação específico.|  

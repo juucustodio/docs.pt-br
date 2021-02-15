@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 505b7512-bb8b-4f85-abbf-491f039c961e
-ms.openlocfilehash: 675fb7da42f874e21374a6fbc4b61ae90a78caf2
-ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
+ms.openlocfilehash: 2ac023ddc797f27f5f00eaf86ff6357096f333c8
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89551837"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90559311"
 ---
 # <a name="how-to-find-descendants-of-a-child-element-linq-to-xml"></a>Como localizar descendentes de um elemento filho (LINQ to XML)
 
@@ -124,4 +124,4 @@ This is the start of a sentence.  This is the second sentence.
 
 ## <a name="see-also"></a>Confira também
 
-- [LINQ to XML para usuários do XPath (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+- [LINQ to XML para usuários do XPath (Visual Basic)](./comparison-xpath-linq-xml.md)

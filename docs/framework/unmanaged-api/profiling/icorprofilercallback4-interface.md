@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorProfilerCallback4'
 title: Interface ICorProfilerCallback4
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 665f3cfc-cd6f-4880-906c-ea65ad384783
 topic_type:
 - apiref
-ms.openlocfilehash: 295d3d440529623f4569fd6c5f4debe7e4558990
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 882f234cb94ccd65203b42ed213aab6355250af8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84499435"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788742"
 ---
 # <a name="icorprofilercallback4-interface"></a>Interface ICorProfilerCallback4
+
 Fornece métodos de retorno de chamada que o Common Language Runtime (CLR) usa para comunicar informações ao criador de perfil.  
   
 ## <a name="methods"></a>Métodos  
@@ -38,6 +40,7 @@ Fornece métodos de retorno de chamada que o Common Language Runtime (CLR) usa p
 ## <a name="remarks"></a>Comentários  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -46,7 +49,7 @@ Fornece métodos de retorno de chamada que o Common Language Runtime (CLR) usa p
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerCallback2](icorprofilercallback2-interface.md)
 - [Criação de perfil de interfaces](profiling-interfaces.md)

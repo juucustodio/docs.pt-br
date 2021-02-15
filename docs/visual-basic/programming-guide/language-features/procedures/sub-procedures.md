@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: procedimentos sub (Visual Basic)'
 title: Subprocedimentos
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,26 +12,26 @@ helpviewer_keywords:
 - procedures [Visual Basic], Sub
 - syntax [Visual Basic], Sub procedures
 ms.assetid: 6a0a4958-ed0a-4d3d-8d31-0772c82bda58
-ms.openlocfilehash: 9ca1d302a0bc8e989e0b2dddf8cce68e89211d57
-ms.sourcegitcommit: 5d769956a04b6d68484dd717077fabc191c21da5
+ms.openlocfilehash: fe9d26fb2d18fbd29820af7aca96b826d7b45d0b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76163807"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100466504"
 ---
 # <a name="sub-procedures-visual-basic"></a>Sub procedimentos (Visual Basic)
 
-Um procedimento `Sub` é uma série de instruções Visual Basic delimitadas pelas instruções `Sub` e `End Sub`. O procedimento de `Sub` executa uma tarefa e, em seguida, retorna o controle para o código de chamada, mas não retorna um valor para o código de chamada.
+Um `Sub` procedimento é uma série de instruções Visual Basic delimitadas `Sub` pelas `End Sub` instruções e. O `Sub` procedimento executa uma tarefa e retorna o controle para o código de chamada, mas não retorna um valor para o código de chamada.
 
-Cada vez que o procedimento é chamado, suas instruções são executadas, começando com a primeira instrução executável após a instrução de `Sub` e terminando com a primeira instrução `End Sub`, `Exit Sub`ou `Return` encontrada.
+Cada vez que o procedimento é chamado, suas instruções são executadas, começando pela primeira instrução executável após a `Sub` instrução e terminando com a `End Sub` primeira `Exit Sub` instrução,, ou `Return` encontrada.
 
-Você pode definir um procedimento `Sub` em módulos, classes e estruturas. Por padrão, é `Public`, o que significa que você pode chamá-lo de qualquer lugar em seu aplicativo que tenha acesso ao módulo, à classe ou à estrutura na qual você o definiu. O *método* Term descreve um `Sub` ou `Function` procedimento que é acessado de fora de sua definição de módulo, classe ou estrutura. Para obter mais informações, consulte [Procedimentos](./index.md).
+Você pode definir um `Sub` procedimento em módulos, classes e estruturas. Por padrão, é `Public` , o que significa que você pode chamá-lo de qualquer lugar em seu aplicativo que tenha acesso ao módulo, à classe ou à estrutura na qual você o definiu. O *método* Term descreve um `Sub` `Function` procedimento ou que é acessado de fora de sua definição de módulo, classe ou estrutura. Para obter mais informações, consulte [Procedimentos](./index.md).
 
-Um procedimento `Sub` pode receber argumentos, como constantes, variáveis ou expressões, que são passados para ele pelo código de chamada.
+Um `Sub` procedimento pode receber argumentos, como constantes, variáveis ou expressões, que são passados para ele pelo código de chamada.
 
 ## <a name="declaration-syntax"></a>Sintaxe de declaração
 
-A sintaxe para declarar um procedimento `Sub` é a seguinte:
+A sintaxe para declarar um `Sub` procedimento é a seguinte:
 
 ```vb
 [modifiers] Sub SubName[(parameterList)]
@@ -38,7 +39,7 @@ A sintaxe para declarar um procedimento `Sub` é a seguinte:
 End Sub
 ```
 
-O `modifiers` pode especificar o nível de acesso e informações sobre sobrecarga, substituição, compartilhamento e sombreamento. Para obter mais informações, consulte [sub Statement](../../../language-reference/statements/sub-statement.md).
+O `modifiers` pode especificar o nível de acesso e as informações sobre sobrecarga, substituição, compartilhamento e sombreamento. Para obter mais informações, consulte [sub Statement](../../../language-reference/statements/sub-statement.md).
 
 ## <a name="parameter-declaration"></a>Declaração de parâmetro
 
@@ -62,15 +63,15 @@ Quando o controle passa para o procedimento, cada parâmetro é tratado como uma
 
 ## <a name="calling-syntax"></a>Sintaxe de chamada
 
-Você invoca um procedimento `Sub` explicitamente com uma instrução de chamada autônoma. Você não pode chamá-lo usando seu nome em uma expressão. Você deve fornecer valores para todos os argumentos que não são opcionais, e você deve colocar a lista de argumentos entre parênteses. Se nenhum argumento for fornecido, você pode opcionalmente omitir os parênteses. O uso da palavra-chave `Call` é opcional, mas não é recomendado.
+Você invoca um `Sub` procedimento explicitamente com uma instrução de chamada autônoma. Você não pode chamá-lo usando seu nome em uma expressão. Você deve fornecer valores para todos os argumentos que não são opcionais, e você deve colocar a lista de argumentos entre parênteses. Se nenhum argumento for fornecido, você pode opcionalmente omitir os parênteses. O uso da `Call` palavra-chave é opcional, mas não é recomendado.
 
-A sintaxe de uma chamada para um procedimento `Sub` é a seguinte:
+A sintaxe de uma chamada para um `Sub` procedimento é a seguinte:
 
 ```vb
 [Call] SubName[(argumentlist)]
 ```
 
-Você pode chamar um método `Sub` de fora da classe que o define. Primeiro, você precisa usar a palavra-chave `New` para criar uma instância da classe ou chamar um método que retorne uma instância da classe. Para obter mais informações, consulte [novo operador](../../../language-reference/operators/new-operator.md). Em seguida, você pode usar a seguinte sintaxe para chamar o método `Sub` no objeto de instância:
+Você pode chamar um `Sub` método de fora da classe que o define. Primeiro, você precisa usar a `New` palavra-chave para criar uma instância da classe ou chamar um método que retorne uma instância da classe. Para obter mais informações, consulte [novo operador](../../../language-reference/operators/new-operator.md). Em seguida, você pode usar a seguinte sintaxe para chamar o `Sub` método no objeto de instância:
 
 ```vb
 object.MethodName[(argumentList)]
@@ -78,21 +79,21 @@ object.MethodName[(argumentList)]
 
 ### <a name="illustration-of-declaration-and-call"></a>Ilustração de declaração e chamada
 
-O procedimento a seguir `Sub` informa ao operador do computador qual tarefa o aplicativo está prestes a executar e também exibe um carimbo de data/hora. Em vez de duplicar esse código no início de cada tarefa, o aplicativo simplesmente chama `tellOperator` de vários locais. Cada chamada passa uma cadeia de caracteres no argumento `task` que identifica a tarefa que está sendo iniciada.
+O procedimento a seguir `Sub` informa ao operador do computador qual tarefa o aplicativo está prestes a executar e também exibe um carimbo de data/hora. Em vez de duplicar esse código no início de cada tarefa, o aplicativo simplesmente chama `tellOperator` de vários locais. Cada chamada passa uma cadeia de caracteres no `task` argumento que identifica a tarefa que está sendo iniciada.
 
 [!code-vb[VbVbcnProcedures#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#2)]
 
-O exemplo a seguir mostra uma chamada típica para `tellOperator`.
+O exemplo a seguir mostra uma chamada típica para `tellOperator` .
 
 [!code-vb[VbVbcnProcedures#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#3)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos](./index.md)
-- [Procedimentos de Função](./function-procedures.md)
-- [Procedimentos de Propriedade](./property-procedures.md)
-- [Procedimentos de Operador](./operator-procedures.md)
+- [Procedimentos de função](./function-procedures.md)
+- [Procedimentos de propriedade](./property-procedures.md)
+- [Procedimentos do operador](./operator-procedures.md)
 - [Parâmetros e Argumentos de Procedimento](./procedure-parameters-and-arguments.md)
 - [Instrução Sub](../../../language-reference/statements/sub-statement.md)
 - [Como chamar um procedimento que não retorne um valor](./how-to-call-a-procedure-that-does-not-return-a-value.md)
-- [Como: chamar um manipulador de eventos no Visual Basic](./how-to-call-an-event-handler.md)
+- [Como chamar um manipulador de eventos no Visual Basic](./how-to-call-an-event-handler.md)

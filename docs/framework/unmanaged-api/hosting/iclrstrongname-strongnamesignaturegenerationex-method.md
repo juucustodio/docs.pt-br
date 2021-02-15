@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRStrongName:: StrongNameSignatureGenerationEx'
 title: Método ICLRStrongName::StrongNameSignatureGenerationEx
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: c3f34584-c6e2-41fd-bb44-e44da8546309
 topic_type:
 - apiref
-ms.openlocfilehash: 3529eceb179cc4b08d39f83d97d001a16e716918
-ms.sourcegitcommit: c76c8b2c39ed2f0eee422b61a2ab4c05ca7771fa
+ms.openlocfilehash: 911f55aa509c25eb0d95d6d2a31c9f715af2080d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83763053"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781864"
 ---
 # <a name="iclrstrongnamestrongnamesignaturegenerationex-method"></a>Método ICLRStrongName::StrongNameSignatureGenerationEx
+
 Gera uma assinatura de nome forte para o assembly especificado, de acordo com os sinalizadores especificados.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -40,6 +42,7 @@ HRESULT StrongNameSignatureGenerationEx (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `wszFilePath`  
  no O caminho para o arquivo que contém o manifesto do assembly para o qual a assinatura de nome forte será gerada.  
   
@@ -67,14 +70,16 @@ HRESULT StrongNameSignatureGenerationEx (
  `dwFlags`  
  no Um ou mais dos seguintes valores:  
   
-- `SN_SIGN_ALL_FILES`(0x00000001) – recomputar todos os hashes para módulos vinculados.  
+- `SN_SIGN_ALL_FILES` (0x00000001) – recomputar todos os hashes para módulos vinculados.  
   
-- `SN_TEST_SIGN`(0x00000002)-testar o assembly.  
+- `SN_TEST_SIGN` (0x00000002)-testar o assembly.  
   
-## <a name="return-value"></a>Valor Retornado  
- `S_OK`Se o método foi concluído com êxito; caso contrário, um valor HRESULT que indica falha (consulte [valores de HRESULT comuns](/windows/win32/seccrypto/common-hresult-values) para uma lista).  
+## <a name="return-value"></a>Valor retornado  
+
+ `S_OK` Se o método foi concluído com êxito; caso contrário, um valor HRESULT que indica falha (consulte [valores de HRESULT comuns](/windows/win32/seccrypto/common-hresult-values) para uma lista).  
   
 ## <a name="remarks"></a>Comentários  
+
  Especifique NULL para `wszFilePath` para calcular o tamanho da assinatura sem criar a assinatura.  
   
  A assinatura pode ser armazenada diretamente no arquivo ou retornada ao chamador.  
@@ -84,15 +89,16 @@ HRESULT StrongNameSignatureGenerationEx (
  Se `SN_TEST_SIGN` for especificado, o cabeçalho de Common Language Runtime não será modificado para indicar que o assembly é assinado com um nome forte.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MetaHost. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Método StrongNameSignatureGeneration](iclrstrongname-strongnamesignaturegeneration-method.md)
 - [Interface ICLRStrongName](iclrstrongname-interface.md)

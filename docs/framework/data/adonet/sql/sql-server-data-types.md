@@ -1,34 +1,37 @@
 ---
+description: 'Saiba mais sobre: tipos de dados do SQL Server e ADO.NET'
 title: Tipos de dados do SQL Server e ADO.NET
 titleSuffix: ''
 ms.date: 03/30/2017
 ms.assetid: 81b43550-23e8-43bb-b460-7eb8ac825c33
-ms.openlocfilehash: f727c69b1dd5c23c6a89911005256de70255fd4c
-ms.sourcegitcommit: 700ea803fb06c5ce98de017c7f76463ba33ff4a9
+ms.openlocfilehash: 841fa5864bf54b5e4fc4dc24dab64e6ac1435c7e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77452325"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99767291"
 ---
 # <a name="sql-server-data-types-and-adonet"></a>Tipos de dados do SQL Server e ADO.NET
-O SQL Server e o .NET Framework são baseados em diferentes tipos de sistema, o que pode resultar em potencial perda de dados. Para preservar a integridade dos dados, o provedor de dados .NET Framework para SQL Server (<xref:System.Data.SqlClient>) fornece métodos tipados acessadores para trabalhar com dados do SQL Server. É possível usar enumerações nas classes <xref:System.Data.SqlDbType> para especificar tipos de dados <xref:System.Data.SqlClient.SqlParameter>.  
+
+O SQL Server e o .NET Framework são baseados em diferentes tipos de sistema, o que pode resultar em potencial perda de dados. Para preservar a integridade dos dados, o provedor de dados .NET Framework para SQL Server (<xref:System.Data.SqlClient>) fornece métodos tipados acessadores para trabalhar com dados do SQL Server. Você pode usar as enumerações nas classes de <xref:System.Data.SqlDbType> para especificar tipos de dados <xref:System.Data.SqlClient.SqlParameter>.  
   
  Para obter mais informações e uma tabela que descreve os mapeamentos de tipo de dados entre SQL Server e .NET Framework tipos de dados, consulte [SQL Server mapeamentos de tipo de dados](../sql-server-data-type-mappings.md).  
   
- O SQL Server 2008 apresenta novos tipos de dados cujo objetivo é atender às necessidades de negócios de trabalhar com dados de data e hora, estruturados, semiestruturados e não estruturados. Esses tipos de dados estão documentados em Manuais Online do SQL Server 2008.  
+ O SQL Server 2008 apresenta novos tipos de dados criados para atender às necessidades empresariais para trabalhar usando dados de data e hora, estruturados, semiestruturados e não estruturados. Eles são documentados nos Manuais Online do SQL Server 2008.  
   
- Os tipos de dados do SQL Server disponíveis para uso em seu aplicativo dependem da versão do SQL Server em uso. Para obter mais informações, consulte a versão relevante de Manuais Online do SQL Server na tabela a seguir.  
+ Os tipos de dados do SQL Server disponíveis para uso em seu aplicativo dependem da versão do SQL Server que você está usando. Para obter mais informações, consulte a versão relevante de Manuais Online do SQL Server na tabela a seguir.  
   
  **Documentação do SQL Server**  
   
 1. [Tipos de dados (Transact-SQL)](/sql/t-sql/data-types/data-types-transact-sql)  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [SqlTypes e o DataSet](sqltypes-and-the-dataset.md)  
- Descreve o suporte a tipos para `SqlTypes` em `DataSet`.  
+
+ [SqlTypes e DataSet](sqltypes-and-the-dataset.md)  
+ Descreve o suporte de tipo para `SqlTypes` no `DataSet`.  
   
  [Manipulando valores nulos](handling-null-values.md)  
- Demonstra como trabalhar com valores nulos e a lógica com três valores.  
+ Demonstra como trabalhar com valores nulos e lógica de três valores.  
   
  [Comparando valores de GUID e uniqueidentifier](comparing-guid-and-uniqueidentifier-values.md)  
  Demonstra como trabalhar com GUID e com valores uniqueidentifier no SQL Server e no .NET Framework.  
@@ -40,25 +43,26 @@ O SQL Server e o .NET Framework são baseados em diferentes tipos de sistema, o 
  Demonstra como recuperar dados de UDTs de valor grande introduzidos no SQL Server 2008.  
   
  [Dados XML no SQL Server](xml-data-in-sql-server.md)  
- Descreve como trabalhar com dados XML recuperados do SQL Server.  
+ Descreve como trabalhar com os dados XML recuperados do SQL Server.  
   
 ## <a name="reference"></a>Referência  
+
  <xref:System.Data.DataSet>  
- Descreve a classe `DataSet` e todos os seus membros.  
+ Descreve a classe `DataSet` e todos os membros dela.  
   
  <xref:System.Data.SqlTypes>  
- Descreve o namespace `SqlTypes` e todos os seus membros.  
+ Descreve o namespace `SqlTypes` e todos os membros dele.  
   
  <xref:System.Data.SqlDbType>  
- Descreve a enumeração `SqlDbType` e todos os seus membros.  
+ Descreve a enumeração `SqlDbType` e todos os membros dela.  
   
  <xref:System.Data.DbType>  
- Descreve a enumeração `DbType` e todos os seus membros.  
+ Descreve a enumeração `DbType` e todos os membros dela.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Mapeamentos de tipo de dados do SQL Server](../sql-server-data-type-mappings.md)
-- [Configurando parâmetros e tipos de dados de parâmetro](../configuring-parameters-and-parameter-data-types.md)
+- [Mapeamentos de tipos de dados do SQL Server](../sql-server-data-type-mappings.md)
+- [Configurar parâmetros e tipos de dados de parâmetro](../configuring-parameters-and-parameter-data-types.md)
 - [Parâmetros com valor de tabela](table-valued-parameters.md)
-- [SQL Server Binary and Large-Value Data](sql-server-binary-and-large-value-data.md) (Dados binários e de valor grande do SQL Server)
-- [ADO.NET Overview](../ado-net-overview.md) (Visão geral do ADO.NET)
+- [Dados binários e de valor grande do SQL Server](sql-server-binary-and-large-value-data.md)
+- [Visão geral do ADO.NET](../ado-net-overview.md)

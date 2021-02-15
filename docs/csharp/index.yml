@@ -6,12 +6,12 @@ metadata:
   description: Aprenda sobre programação C# – para desenvolvedores iniciantes, novos em C# e experientes em C#/.NET
   ms.topic: landing-page
   ms.date: 11/19/2019
-  ms.openlocfilehash: fd9a641d588ffd410ed2a6163505a81c69dae867
-  ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
+  ms.openlocfilehash: 584db55455af54bcf7e91771e3598a7349091bee
+  ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 09/05/2020
-  ms.locfileid: "89495311"
+  ms.lasthandoff: 12/15/2020
+  ms.locfileid: "97512145"
 landingContent:
 - title: Aprender a programar em C#
   linkLists:
@@ -24,7 +24,9 @@ landingContent:
     - text: Tutoriais introdutórios
       url: tutorials/intro-to-csharp/index.md
     - text: Criar aplicativos em C# com o Visual Studio
-      url: https://docs.microsoft.com/visualstudio/get-started/csharp/tutorial-console
+      url: /visualstudio/get-started/csharp/tutorial-console
+    - text: C# no Q&A
+      url: /answers/topics/dotnet-csharp.html
   - linkListType: video
     links:
     - text: O que é C#?
@@ -33,7 +35,7 @@ landingContent:
       url: https://aka.ms/dotnet3-csharp
   - linkListType: download
     links:
-    - text: Baixar o SDK do .NET Core
+    - text: Baixar o SDK do .NET
       url: https://dotnet.microsoft.com/download
 - title: Princípios básicos do C#
   linkLists:
@@ -69,38 +71,20 @@ landingContent:
     links:
     - text: Novidades do C# 9.0
       url: whats-new/csharp-9.md
-- title: Novos recursos do C# 8.0
+- title: Novos recursos do C# 9.0
   linkLists:
   - linkListType: whats-new
     links:
-    - text: Novidades no C# 8.0
-      url: whats-new/csharp-8.md
-  - linkListType: overview
-    links:
-    - text: Correspondência de padrões
-      url: pattern-matching.md
-    - text: Tipos de referência anuláveis
-      url: nullable-references.md
-  - linkListType: concept
-    links:
-    - text: Escolher uma estratégia de migração anulável
-      url: nullable-migration-strategies.md
+    - text: Novidades do C# 9.0
+      url: whats-new/csharp-9.md
   - linkListType: tutorial
     links:
-    - text: Gerar e consumir fluxos assíncronos
-      url: tutorials/generate-consume-asynchronous-stream.md
-    - text: Desenvolver com tipos de referência anuláveis
-      url: tutorials/nullable-reference-types.md
-    - text: Atualizar o código existente para usar com tipos de referência anuláveis
-      url: tutorials/upgrade-to-nullable-references.md
-    - text: Usar a correspondência de padrões para algoritmos mais expressivos
-      url: tutorials/pattern-matching.md
-    - text: Interfaces de versão segura com membros da interface padrão
-      url: tutorials/default-interface-methods-versions.md
-    - text: Combinar funcionalidades com membros de interface padrão
-      url: tutorials/mixins-with-default-interface-methods.md
-    - text: Trabalhar com subconjuntos usando intervalos e índices
-      url: tutorials/ranges-indexes.md
+    - text: Explorar tipos de registro
+      url: tutorials/exploration/records.md
+    - text: Explorar instruções de nível superior
+      url: tutorials/exploration/top-level-statements.md
+    - text: Explorar novos padrões
+      url: tutorials/exploration/patterns-objects.md
   - linkListType: reference
     links:
     - text: Alterações de falha no compilador C#

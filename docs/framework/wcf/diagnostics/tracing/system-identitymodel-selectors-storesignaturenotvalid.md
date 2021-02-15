@@ -1,22 +1,25 @@
 ---
+description: 'Saiba mais sobre: System. IdentityModel. seletores. StoreSignatureNotValid'
 title: System.IdentityModel.Selectors.StoreSignatureNotValid
 ms.date: 03/30/2017
 ms.assetid: 9087bf09-cb15-41ec-bd7a-6338789953d0
-ms.openlocfilehash: e18cdc4d7161b853f40251147af548b7ecbf2fc8
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: d1ba20ecadbdf380d50ee28a2ba1af4527a6da73
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84582927"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99654870"
 ---
 # <a name="systemidentitymodelselectorsstoresignaturenotvalid"></a>System.IdentityModel.Selectors.StoreSignatureNotValid
+
 System.IdentityModel.Selectors.StoreSignatureNotValid  
   
 ## <a name="description"></a>Descrição  
+
  A assinatura do arquivo é inválida.  
   
 ## <a name="see-also"></a>Consulte também
 
 - [Rastreamento](index.md)
 - [Utilizando o rastreamento para solucionar problemas em seu aplicativo](using-tracing-to-troubleshoot-your-application.md)
-- [Administração e diagnóstico](../index.md)
+- [Administração e diagnósticos](../index.md)

@@ -1,19 +1,20 @@
 ---
 title: Genéricos e atributos – Guia de Programação em C#
-description: Saiba como aplicar atributos a tipos genéricos. Consulte exemplos de código e exiba recursos adicionais disponíveis.
+description: Saiba como aplicar atributos a tipos genéricos. Confira exemplos de código e exiba recursos adicionais disponíveis.
 ms.date: 07/20/2015
 helpviewer_keywords:
 - generics [C#], attributes
 - attributes [C#], with generics
 ms.assetid: da9fc326-4648-454a-8e13-3911a2edefd7
-ms.openlocfilehash: 17556af2e1bc2963de953cea242d7000509acbcd
-ms.sourcegitcommit: 6f58a5f75ceeb936f8ee5b786e9adb81a9a3bee9
+ms.openlocfilehash: 94378e44782169141314890bf90f050fdb6b5b79
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87299871"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91184203"
 ---
 # <a name="generics-and-attributes-c-programming-guide"></a>Genéricos e atributos (Guia de Programação em C#)
+
 Atributos podem ser aplicados a tipos genéricos da mesma forma que a tipos não genéricos. Para obter mais informações sobre a aplicação de atributos, consulte [Atributos](../concepts/attributes/index.md).  
   
  Atributos personalizados são permitidos somente para referenciar tipos genéricos abertos, que são tipos genéricos para os quais nenhum argumento de tipo é fornecido e tipos genéricos construídos fechados, que fornecem argumentos para todos os parâmetros de tipo.  

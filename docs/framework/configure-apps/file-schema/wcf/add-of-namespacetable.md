@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <add> de <namespaceTable>'
 title: <add> de <namespaceTable>
 ms.date: 03/30/2017
 ms.assetid: cf7b5b75-63bd-49a6-abac-4bfdab377e36
-ms.openlocfilehash: 3b3b4a1584b37601269368ee0e4e973626ddf9cf
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: b7804bdec4a1fb2199c81ba0dde031b80b451d2d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70850386"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750254"
 ---
 # <a name="add-of-namespacetable"></a>\<add> de \<namespaceTable>
+
 Representa um elemento de configuração que contém um namespace para mapeamento de prefixo que pode ser usado em filtros XPath para roteamento.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -18,7 +20,7 @@ Representa um elemento de configuração que contém um namespace para mapeament
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<namespaceTable>**](namespacetable.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <routing>
@@ -30,6 +32,7 @@ Representa um elemento de configuração que contém um namespace para mapeament
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -40,6 +43,7 @@ Representa um elemento de configuração que contém um namespace para mapeament
 |prefixo|Uma cadeia de caracteres que contém o prefixo para este namespace.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  

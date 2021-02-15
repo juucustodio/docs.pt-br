@@ -2,22 +2,21 @@
 title: Constructos de referência inversa em expressões regulares do .NET
 description: Saiba como identificar elementos de texto repetidos por meio de constructos de referência inversa em uma expressão regular.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - backreferences
 - constructs, backreference
-- .NET Framework regular expressions, backreference constructs
+- .NET regular expressions, backreference constructs
 - regular expressions, backreference constructs
 ms.assetid: 567a4b8d-0e79-49dc-8df9-f4b1aa376a2a
-ms.openlocfilehash: 87c3dbde2eb2b5a19b91f34bb2b088af5c0d1827
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 79702f266e7233c96fef6b6aa32a7e756589f49c
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84290598"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94825254"
 ---
 # <a name="backreference-constructs-in-regular-expressions"></a>Construtores de referência inversa em expressões regulares
 
@@ -32,7 +31,7 @@ O .NET define elementos de linguagem separados para se referir a grupos de captu
 
 Uma referência inversa numerada usa a seguinte sintaxe:
 
-`\` *número*
+`\`*número* de
 
 em que *number* é a posição ordinal do grupo de captura na expressão regular. Por exemplo, `\4` corresponde ao conteúdo do quarto grupo de captura. Se *number* não for definido no padrão da expressão regular, ocorrerá um erro de análise e o mecanismo de expressões regulares gerará um <xref:System.ArgumentException>. Por exemplo, a expressão regular `\b(\w+)\s\1` é válida porque `(\w+)` é o primeiro e único grupo de captura na expressão. Por outro lado, `\b(\w+)\s\2` é inválida e gera uma exceção de argumento porque não há nenhum grupo de captura com o número `\2`. Além disso, quando *number* identifica um grupo de captura em uma determinada posição ordinal, mas um nome numérico diferente da posição ordinal desse grupo de captura é atribuído a ele, o analisador de expressões regulares também gera um <xref:System.ArgumentException>.
 
@@ -50,7 +49,7 @@ Se a ambiguidade for um problema, você poderá usar a `\k<` *name* `>` notaçã
 
 O exemplo a seguir localiza caracteres de palavra duplicados em uma cadeia de caracteres. Ele define uma expressão regular, `(\w)\1`, que consiste nos elementos a seguir.
 
-|Elemento|Description|
+|Elemento|Descrição|
 |-------------|-----------------|
 |`(\w)`|Corresponde a um caractere de palavra e o atribui ao primeiro grupo de captura.|
 |`\1`|Corresponde ao próximo caractere que é o mesmo que o valor do primeiro grupo de captura.|
@@ -72,7 +71,7 @@ em que *name* é o nome de um grupo de captura definido no padrão da expressão
 
 O exemplo a seguir localiza caracteres de palavra duplicados em uma cadeia de caracteres. Ele define uma expressão regular, `(?<char>\w)\k<char>`, que consiste nos elementos a seguir.
 
-|Elemento|Description|
+|Elemento|Descrição|
 |-------------|-----------------|
 |`(?<char>\w)`|Corresponde a um caractere de palavra e o atribui a um grupo de captura chamado `char`.|
 |`\k<char>`|Corresponde ao próximo caractere que é o mesmo que o valor do grupo de captura `char`.|
@@ -136,6 +135,6 @@ Uma cadeia de caracteres de entrada pode corresponder a essa expressão regular,
 [!code-csharp[RegularExpressions.Language.Backreferences#5](../../../samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.language.backreferences/cs/backreference5.cs#5)]
 [!code-vb[RegularExpressions.Language.Backreferences#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.language.backreferences/vb/backreference5.vb#5)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Linguagem de expressões regulares – referência rápida](regular-expression-language-quick-reference.md)

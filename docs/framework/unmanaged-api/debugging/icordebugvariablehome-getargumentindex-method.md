@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugVariableHome:: GetArgumentIndex'
 title: 'Método ICorDebugVariableHome:: GetArgumentIndex'
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e86fcc72-388d-4009-ab21-8f9c3323e9a3
 topic_type:
 - apiref
-ms.openlocfilehash: 27a676fd1d2d7903943e44f8a7201b88af4fba89
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: 827ef55d3e3509cbfbfc8213ef5b53fbe2e2220e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83397002"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99690035"
 ---
 # <a name="icordebugvariablehomegetargumentindex-method"></a>Método ICorDebugVariableHome:: GetArgumentIndex
 
@@ -62,6 +63,6 @@ O índice de argumento pode ser usado para recuperar metadados para esse argumen
 
 **.NET Framework versões:**[!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugVariableHome](icordebugvariablehome-interface.md)

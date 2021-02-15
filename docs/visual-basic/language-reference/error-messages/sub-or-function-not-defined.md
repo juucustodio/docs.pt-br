@@ -1,17 +1,19 @@
 ---
+description: 'Saiba mais sobre: sub ou função não definida (Visual Basic)'
 title: Sub ou Function não definida
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID35
 ms.assetid: 661fdb90-ee7d-40ce-b30b-5e7267bd957a
-ms.openlocfilehash: 9eb13d943f9f1cffc984847f7339111e06f5aa6b
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 5726e8b23283b419577c468eee2344b234493425
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84373921"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99641376"
 ---
 # <a name="sub-or-function-not-defined-visual-basic"></a>Sub ou função não definida (Visual Basic)
+
 Um `Sub` ou `Function` deve ser definido para ser chamado. Possíveis causas do erro incluem:  
   
 - Digitação incorreta do nome do procedimento.  
@@ -30,7 +32,7 @@ Um `Sub` ou `Function` deve ser definido para ser chamado. Possíveis causas do 
   
 3. Verifique o nome da rotina.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Tipos de erro](../../programming-guide/language-features/error-types.md)
 - [Gerenciando referências em um projeto](/visualstudio/ide/managing-references-in-a-project)

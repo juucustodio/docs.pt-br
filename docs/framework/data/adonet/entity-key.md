@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: chave de entidade'
 title: chave de entidade
 ms.date: 03/30/2017
 ms.assetid: 0d447a6d-fa7a-4db0-8e7a-fd45e385fca0
-ms.openlocfilehash: 39a7500f088aa85baf0244005d6a804b3bf0b521
-ms.sourcegitcommit: 22be09204266253d45ece46f51cc6f080f2b3fd6
+ms.openlocfilehash: 588f18a2f76ca11c797b9b2aaab00b090c99e345
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73737797"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99724434"
 ---
 # <a name="entity-key"></a>chave de entidade
+
 Uma *chave de entidade* é uma [Propriedade](property.md) ou um conjunto de propriedades de um [tipo de entidade](entity-type.md) que são usadas para determinar a identidade. As propriedades que compõem uma chave de entidade são escolhidas em tempo de design. Os valores das propriedades de chave de entidade devem identificar exclusivamente uma instância de tipo de entidade dentro de uma [entidade definida](entity-set.md) em tempo de execução. As propriedades que compõem uma chave de entidade devem ser escolhidas para garantir a exclusividade de instâncias em um conjunto de entidades.  
   
  A seguir estão os requisitos para um conjunto de propriedades ser uma chave de entidade:  
@@ -23,6 +25,7 @@ Uma *chave de entidade* é uma [Propriedade](property.md) ou um conjunto de prop
 - Quando uma entidade é empacotada em uma hierarquia de herança, a entidade raiz deve conter todas as propriedades que compõem a chave de entidade, e a chave de entidade deve ser definida no tipo de entidade raiz. Para obter mais informações, consulte [modelo de dados de entidade: herança](entity-data-model-inheritance.md).  
   
 ## <a name="example"></a>Exemplo  
+
  O diagrama a seguir mostra um modelo conceitual com três tipos de entidade: `Book`, `Publisher`, e `Author`. As propriedades de cada tipo de entidade que compõem sua chave de entidade são denotadas com chave (“”). Observe que o tipo de entidade de `Author` tem uma chave de entidade que consiste em duas propriedades, `Name` e `Address`.  
   
  ![Modelo de exemplo com três tipos de entidade](./media/entity-key/example-model-three-entity-types.gif)  
@@ -41,5 +44,5 @@ Uma *chave de entidade* é uma [Propriedade](property.md) ou um conjunto de prop
   
 ## <a name="see-also"></a>Consulte também
 
-- [Principais conceitos do Modelo de Dados de Entidade](entity-data-model-key-concepts.md)
+- [Conceitos chave do Modelo de Dados de Entidade](entity-data-model-key-concepts.md)
 - [Modelo de Dados de Entidade](entity-data-model.md)

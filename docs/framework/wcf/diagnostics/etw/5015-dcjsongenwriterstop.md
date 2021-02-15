@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 5015-DCJsonGenWriterStop'
 title: 5015 - DCJsonGenWriterStop
 ms.date: 03/30/2017
 ms.assetid: c7d70416-88e3-409a-90d7-0f412fa37f2e
-ms.openlocfilehash: e818f44488cf161032aaa2c6bad8c9a6da12c993
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 839d5c21c5a83bceb367b202baa6bd5b02a6eac1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61999629"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99656222"
 ---
 # <a name="5015---dcjsongenwriterstop"></a>5015 - DCJsonGenWriterStop
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,9 +22,11 @@ ms.locfileid: "61999629"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando o Json gerado paradas do gravador.  
+
+ Esse evento é emitido quando o gravador gerado por JSON é interrompido.  
   
 ## <a name="message"></a>Mensagem  
- JSON gerar parar de gravador.  
+
+ Parada de gravador de geração JSON.  
   
 ## <a name="details"></a>Detalhes

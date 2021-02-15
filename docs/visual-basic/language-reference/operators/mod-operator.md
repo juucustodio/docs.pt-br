@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: operador Mod (Visual Basic)'
 title: Operador Mod
 ms.date: 04/24/2018
 f1_keywords:
@@ -12,18 +13,18 @@ helpviewer_keywords:
 - arithmetic operators [Visual Basic], Mod
 - math operators [Visual Basic]
 ms.assetid: 6ff7e40e-cec8-4c77-bff6-8ddd2791c25b
-ms.openlocfilehash: 32065567799b023556a018ae2f5ba338796e0b49
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: bfec39f54041714258e21f087a044dce24edcb6b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401505"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665426"
 ---
 # <a name="mod-operator-visual-basic"></a>Operador Mod (Visual Basic)
 
 Divide dois números e retorna apenas o resto.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```vb
 result = number1 Mod number2
@@ -32,7 +33,7 @@ result = number1 Mod number2
 ## <a name="parts"></a>Partes
 
 `result` \
-Obrigatórios. Qualquer variável numérica ou propriedade.
+Obrigatório. Qualquer variável numérica ou propriedade.
 
 `number1` \
 Obrigatórios. Qualquer expressão numérica.
@@ -116,7 +117,7 @@ O exemplo a seguir demonstra a possível imprecisão de operandos de ponto flutu
 
 [!code-vb[VbVbalrOperators#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#32)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.Conversion.Int%2A>
 - <xref:Microsoft.VisualBasic.Conversion.Fix%2A>

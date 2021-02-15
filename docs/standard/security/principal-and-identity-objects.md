@@ -2,7 +2,6 @@
 title: Objetos Principal e Identity
 description: Leia sobre objetos de identidade, que representam usuários no .NET. Leia também sobre objetos de entidade de segurança, que encapsulam um objeto de identidade & uma função.
 ms.date: 07/15/2020
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - WindowsIdentity objects
 - GenericIdentity objects
@@ -13,12 +12,12 @@ helpviewer_keywords:
 - security [.NET], principals
 - WindowsPrincipal objects
 ms.assetid: aa5930ad-f3d7-40aa-b6f6-c6edcd5c64f7
-ms.openlocfilehash: 79caeed6ed64a07238e398af1e12f51640b88b62
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: cfda506fc29e9a86e97b3c99faf2d4155c894f03
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87555248"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94824233"
 ---
 # <a name="principal-and-identity-objects"></a>Objetos Principal e Identity
 
@@ -41,7 +40,7 @@ O objeto principal representa o contexto de segurança no qual o código está s
   
 A <xref:System.Security.Principal.IPrincipal> interface define uma propriedade para acessar um objeto de **identidade** associado, bem como um método para determinar se o usuário identificado pelo objeto **principal** é membro de uma determinada função. Todas as classes de **entidade de segurança** implementam a interface **IPrincipal** , bem como quaisquer propriedades e métodos adicionais necessários. Por exemplo, o Common Language Runtime fornece a classe **WindowsPrincipal** , que implementa a funcionalidade adicional para mapear a associação de grupo do Windows NT ou do Windows 2000 para funções.  
   
-Um objeto **principal** está associado a um objeto de contexto de chamada ( <xref:System.Runtime.Remoting.Messaging.CallContext> ) em um domínio de aplicativo ( <xref:System.AppDomain> ). Um contexto de chamada padrão sempre é criado com cada novo **AppDomain**, portanto, sempre há um contexto de chamada disponível para aceitar o objeto **principal** . Quando um novo thread é criado, um objeto **CallContext** também é criado para o thread. A referência do objeto **principal** é copiada automaticamente do thread de criação para o novo **CallContext**do thread. Se o tempo de execução não puder determinar qual objeto **principal** pertence ao criador do thread, ele seguirá a política padrão para a criação de objeto de **identidade** e **principal** .  
+Um objeto **principal** está associado a um objeto de contexto de chamada ( <xref:System.Runtime.Remoting.Messaging.CallContext> ) em um domínio de aplicativo ( <xref:System.AppDomain> ). Um contexto de chamada padrão sempre é criado com cada novo **AppDomain**, portanto, sempre há um contexto de chamada disponível para aceitar o objeto **principal** . Quando um novo thread é criado, um objeto **CallContext** também é criado para o thread. A referência do objeto **principal** é copiada automaticamente do thread de criação para o novo **CallContext** do thread. Se o tempo de execução não puder determinar qual objeto **principal** pertence ao criador do thread, ele seguirá a política padrão para a criação de objeto de **identidade** e **principal** .  
   
 Uma política específica de domínio de aplicativo configurável define as regras para decidir que tipo de objeto **principal** associar a um novo domínio de aplicativo. Onde a política de segurança permite, o tempo de execução pode criar objetos **principal** e de **identidade** que refletem o token do sistema operacional associado ao thread atual de execução. Por padrão, o tempo de execução usa objetos **principal** e de **identidade** que representam usuários não autenticados. O tempo de execução não cria esses objetos de **identidade** e **principal** padrão até que o código tente acessá-los.  
   

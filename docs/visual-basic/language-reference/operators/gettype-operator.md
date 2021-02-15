@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o operador: GetType (Visual Basic)'
 title: Operador GetType
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,14 +8,15 @@ helpviewer_keywords:
 - GetType operator [Visual Basic]
 - GetType keyword [Visual Basic]
 ms.assetid: 4f733297-2503-4607-850c-15eba65fff90
-ms.openlocfilehash: 37644a9c37ffde084120c5f1e1ee8c87a04ffc3c
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 15fe9c28997aa01527f23c0cc8fdbb0fe6cc53f7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84371149"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99665985"
 ---
 # <a name="gettype-operator-visual-basic"></a>Operador GetType (Visual Basic)
+
 Retorna um <xref:System.Type> objeto para o tipo especificado. O <xref:System.Type> objeto fornece informações sobre o tipo, como suas propriedades, métodos e eventos.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -30,6 +32,7 @@ GetType(typename)
 |`typename`|O nome do tipo para o qual você deseja informações.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O `GetType` operador retorna o <xref:System.Type> objeto para o especificado `typename` . Você pode passar o nome de qualquer tipo definido em `typename` . Isso inclui o seguinte:  
   
 - Qualquer Visual Basic tipo de dados, como `Boolean` ou `Date` .  
@@ -53,11 +56,12 @@ GetType(typename)
 - Você deseja comparar duas referências de objeto para ver se elas se referem a instâncias do mesmo tipo. Se isso for feito, o `GetType` retornará referências ao mesmo <xref:System.Type> objeto.  
   
 ## <a name="example"></a>Exemplo  
+
  Os exemplos a seguir mostram o `GetType` operador em uso.  
   
  [!code-vb[VbVbalrOperators#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#26)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Precedência do operador no Visual Basic](operator-precedence.md)
 - [Operadores Listados por Funcionalidade](operators-listed-by-functionality.md)

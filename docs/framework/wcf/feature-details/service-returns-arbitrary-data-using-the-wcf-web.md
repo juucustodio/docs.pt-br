@@ -1,15 +1,17 @@
 ---
-title: Como criar um serviço que retorna dados arbitrários utilizando o Modelo de programação HTTP Web do Windows Communication Foundation (WCF)
+description: 'Saiba mais sobre: como criar um serviço que retorna dados arbitrários usando o modelo de programação do WCF Web HTTP'
+title: 'Como: criar um serviço que retorna dados arbitrários usando o modelo de programação HTTP Web do WCF'
 ms.date: 03/30/2017
 ms.assetid: 0283955a-b4ae-458d-ad9e-6fbb6f529e3d
-ms.openlocfilehash: 9753fbc9b333cb7e89ddc8dff030cb1f62ede23b
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: aeb03e0dad6c63c463db419027f5556922b2f160
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600355"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793526"
 ---
-# <a name="how-to-create-a-service-that-returns-arbitrary-data-using-the-wcf-web-http-programming-model"></a>Como criar um serviço que retorna dados arbitrários utilizando o Modelo de programação HTTP Web do Windows Communication Foundation (WCF)
+# <a name="how-to-create-a-service-that-returns-arbitrary-data-using-the-wcf-web-http-programming-model"></a>Como: criar um serviço que retorna dados arbitrários usando o modelo de programação HTTP Web do WCF
+
 Às vezes, os desenvolvedores devem ter controle total de como os dados são retornados de uma operação de serviço. Esse é o caso quando uma operação de serviço deve retornar dados em um formato sem suporte pelo WCF. Este tópico discute o uso do modelo de programação do WCF WEB HTTP para criar um serviço desse tipo. Esse serviço tem uma operação que retorna um fluxo.  
   
 ### <a name="to-implement-the-service-contract"></a>Para implementar o contrato de serviço  
@@ -51,7 +53,7 @@ ms.locfileid: "84600355"
     }
     ```  
   
-     Observe a segunda para a última linha de código:`WebOperationContext.Current.OutgoingResponse.ContentType = "image/jpeg";`  
+     Observe a segunda para a última linha de código: `WebOperationContext.Current.OutgoingResponse.ContentType = "image/jpeg";`  
   
      Isso define o cabeçalho de tipo de conteúdo como `"image/jpeg"` . Embora este exemplo mostre como retornar um arquivo. jpg, ele pode ser modificado para retornar qualquer tipo de dados necessário, em qualquer formato. A operação deve recuperar ou gerar os dados e, em seguida, gravá-los em um fluxo.  
   
@@ -108,6 +110,7 @@ ms.locfileid: "84600355"
 2. Abra o Internet Explorer e digite-o para `http://localhost:8000/Service/GetImage?width=50&height=40` ver um retângulo amarelo com uma linha diagonal azul no centro.  
   
 ## <a name="example"></a>Exemplo  
+
  A seguir está uma lista completa do código para este tópico.  
   
 ```csharp  
@@ -173,7 +176,7 @@ namespace RawImageService
   
 ## <a name="compiling-the-code"></a>Compilando o código  
   
-- Ao compilar a referência de código de exemplo System. ServiceModel. dll e System. ServiceModel. Web. dll.  
+- Ao compilar a referência de código de exemplo System.ServiceModel.dll e System.ServiceModel.Web.dll.  
   
 ## <a name="see-also"></a>Consulte também
 

@@ -3,18 +3,18 @@ title: Princípios de arquitetura
 description: Projetar aplicativos Web modernos com o ASP.NET Core e o Azure | Princípios de arquitetura
 author: ardalis
 ms.author: wiwagn
-ms.date: 12/04/2019
-ms.openlocfilehash: a3444071abae89780304a9687e486f3842283a33
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.date: 12/01/2020
+ms.openlocfilehash: f4079e0409c1675e8f8a3e494303683daeef29c1
+ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396238"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96851406"
 ---
 # <a name="architectural-principles"></a>Princípios de arquitetura
 
 > "Se os construtores construíssem edifícios da maneira como os programadores escrevem programas, o primeiro pica-pau que surgisse destruiria a civilização."  
-> _\-Gerald Weinberg_
+> _\- Gerald Weinberg_
 
 Você deve projetar e criar soluções de software com a facilidade de manutenção em mente. Os princípios descritos nesta seção podem ajudar a orientá-lo em direção à tomada de decisões de arquitetura que resultarão em aplicativos limpos e de fácil manutenção. Em geral, esses princípios orientarão você para a criação de aplicativos fora de componentes discretos que não têm um acoplamento rígido com outras partes do aplicativo, mas que, em vez disso, se comunicam por meio de interfaces explícitas ou sistemas de mensagens.
 
@@ -30,7 +30,7 @@ Em termos de arquitetura, os aplicativos podem ser logicamente criados para segu
 
 Diferentes partes de um aplicativo devem usar o **encapsulamento** para isolá-las de outras partes do aplicativo. As camadas e os componentes do aplicativo devem poder ajustar sua implementação interna sem dividir seus colaboradores, desde que contratos externos não sejam violados. O uso adequado do encapsulamento ajuda a obter um acoplamento flexível e uma modularidade nos designs do aplicativo, pois os objetos e os pacotes podem ser substituídos por implementações alternativas, desde que a mesma interface seja mantida.
 
-Nas classes, o encapsulamento é obtido por meio da limitação do acesso externo ao estado interno da classe. Se um ator externo desejar manipular o estado do objeto, ele deverá fazer isso por meio de uma função bem definida (ou um setter de propriedade), em vez de ter acesso direto ao estado particular do objeto. Da mesma forma, os componentes do aplicativo e os próprios aplicativos devem expor interfaces bem definidas para uso de seus colaboradores, em vez de permitir que seu estado seja modificado diretamente. Isso libera o design interno do aplicativo para evoluir ao longo do tempo, sem a preocupação de que fazendo isso dividirá os colaboradores, desde que os contratos públicos sejam mantidos.
+Nas classes, o encapsulamento é obtido por meio da limitação do acesso externo ao estado interno da classe. Se um ator externo desejar manipular o estado do objeto, ele deverá fazer isso por meio de uma função bem definida (ou um setter de propriedade), em vez de ter acesso direto ao estado particular do objeto. Da mesma forma, os componentes do aplicativo e os próprios aplicativos devem expor interfaces bem definidas para uso de seus colaboradores, em vez de permitir que seu estado seja modificado diretamente. Essa abordagem libera o design interno do aplicativo para evoluir ao longo do tempo sem se preocupar que isso fará com que os colaboradores quebrem, desde que os contratos públicos sejam mantidos.
 
 ### <a name="dependency-inversion"></a>Inversão de dependência
 

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração CorDebugIntercept'
 title: Enumeração CorDebugIntercept
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3d5b642e-7ef2-428b-a5ae-509c35ed461a
 topic_type:
 - apiref
-ms.openlocfilehash: 18a5e337b6026a20a95b1c29f3d7bda5187efc66
-ms.sourcegitcommit: de7f589de07a9979b6ac28f54c3e534a617d9425
+ms.openlocfilehash: ddd17aff309396fdcda37c731ff907224ee17db2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82795853"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661968"
 ---
 # <a name="cordebugintercept-enumeration"></a>Enumeração CorDebugIntercept
+
 Indica os tipos de código que podem ser interceptados (ou seja, percorridos).  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -40,7 +42,7 @@ typedef enum CorDebugIntercept {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`INTERCEPT_NONE`|Nenhum código pode ser interceptado.|  
 |`INTERCEPT_CLASS_INIT`|Um construtor pode ser interceptado.|  
@@ -51,9 +53,11 @@ typedef enum CorDebugIntercept {
 |`INTERCEPT_ALL`|Todo o código pode ser interceptado.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Use o método [ICorDebugStepper:: SetInterceptMask](icordebugstepper-setinterceptmask-method.md) para estabelecer os tipos de código que podem ser interceptados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

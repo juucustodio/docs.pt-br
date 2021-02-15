@@ -1,18 +1,18 @@
 ---
-title: Organizando e testando projetos com o CLI do .NET Core
-description: Este tutorial explica como organizar e testar projetos do .NET Core por meio da linha de comando.
+title: Organizando e testando projetos com a CLI do .NET
+description: Este tutorial explica como organizar e testar projetos .NET na linha de comando.
 author: cartermp
 ms.date: 09/10/2018
-ms.openlocfilehash: 58c78c0f11ab1b275e4e4d05bf1da32562333c91
-ms.sourcegitcommit: 0a798a7e9680e2d0a5a81a3eaa203870ea782883
+ms.openlocfilehash: 263eaf15beac008de8bb353a385b8f3588a7fefc
+ms.sourcegitcommit: 635a0ff775d2447a81ef7233a599b8f88b162e5d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84325939"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97633631"
 ---
-# <a name="organizing-and-testing-projects-with-the-net-core-cli"></a>Organizando e testando projetos com o CLI do .NET Core
+# <a name="organizing-and-testing-projects-with-the-net-cli"></a>Organizando e testando projetos com a CLI do .NET
 
-Este tutorial segue o [tutorial: criar um aplicativo de console com o .NET Core usando Visual Studio Code](with-visual-studio-code.md), levando você além da criação de um aplicativo de console simples para desenvolver aplicativos avançados e bem organizados. Depois de mostrar como usar pastas para organizar seu código, este tutorial mostra como estender um aplicativo de console com a estrutura de teste [xUnit](https://xunit.github.io/).
+Este tutorial segue o [tutorial: criar um aplicativo de console com o .NET usando Visual Studio Code](with-visual-studio-code.md), levando você além da criação de um aplicativo de console simples para desenvolver aplicativos avançados e bem organizados. Depois de mostrar como usar pastas para organizar seu código, este tutorial mostra como estender um aplicativo de console com a estrutura de teste [xUnit](https://xunit.net/).
 
 ## <a name="using-folders-to-organize-code"></a>Usar pastas para organizar o código
 
@@ -42,6 +42,10 @@ Para organizar o projeto, crie uma nova pasta e nomeie-a como *Modelos* para arm
 Projetos que agrupam arquivos em pastas de forma lógica são fáceis de navegar e manter. Na próxima seção, você criará um exemplo mais complexo com pastas e testes de unidade.
 
 ## <a name="organizing-and-testing-using-the-newtypes-pets-sample"></a>Organizando e testando usando o Exemplo Pets de NewTypes
+
+### <a name="prerequisites"></a>Pré-requisitos
+
+* [SDK do .net 5,0](https://dotnet.microsoft.com/download) ou uma versão posterior.
 
 ### <a name="building-the-sample"></a>Compilando o exemplo
 
@@ -83,7 +87,7 @@ Crie a seguinte estrutura de pasta com o conteúdo do arquivo indicado:
 
 [!code-xml[NewTypes csproj](../../../samples/snippets/core/tutorials/testing-with-cli/csharp/src/NewTypes/NewTypes.csproj)]
 
-Execute o comando a seguir:
+Execute o seguinte comando:
 
 ```dotnetcli
 dotnet run
@@ -100,7 +104,7 @@ Exercício opcional: você pode adicionar um novo tipo de animal de estimação,
 
 ### <a name="testing-the-sample"></a>Testando o exemplo
 
-O projeto `NewTypes` está em funcionamento e você o organizou mantendo os tipos relacionados a animais de estimação em uma pasta. Em seguida, crie seu projeto de teste e comece a escrever testes com a estrutura de teste [xUnit](https://xunit.github.io/). O teste de unidade permite que você verifique automaticamente o comportamento dos seus tipos de animal de estimação para confirmar se eles estão funcionando corretamente.
+O projeto `NewTypes` está em funcionamento e você o organizou mantendo os tipos relacionados a animais de estimação em uma pasta. Em seguida, crie seu projeto de teste e comece a escrever testes com a estrutura de teste [xUnit](https://xunit.net/). O teste de unidade permite que você verifique automaticamente o comportamento dos seus tipos de animal de estimação para confirmar se eles estão funcionando corretamente.
 
 Navegue de volta para a pasta *src* e crie uma pasta *test* com uma pasta *NewTypesTests* dentro dela. Em um prompt de comando da pasta *NewTypesTests*, execute `dotnet new xunit`. Isso gera dois arquivos: *NewTypesTests.csproj* e *UnitTest1.cs*.
 
@@ -181,38 +185,27 @@ O código a seguir mostra a estrutura do projeto completo:
       |__NewTypesTests.csproj
 ```
 
-Inicie no diretório *test/NewTypesTests*. Restaure o projeto de teste com o [`dotnet restore`](../tools/dotnet-restore.md) comando. Execute os testes com o [`dotnet test`](../tools/dotnet-test.md) comando. Esse comando inicia o executor de teste especificado no arquivo de projeto.
-
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+Inicie no diretório *test/NewTypesTests*. Execute os testes com o [`dotnet test`](../tools/dotnet-test.md) comando. Esse comando inicia o executor de teste especificado no arquivo de projeto.
 
 Conforme o esperado, o teste falha e o console exibe a seguinte saída:
 
 ```output
-Test run for c:\Users\ronpet\repos\samples\core\console-apps\NewTypesMsBuild\test\NewTypesTests\bin\Debug\netcoreapp2.1\NewTypesTests.dll(.NETCoreApp,Version=v2.1)
-Microsoft (R) Test Execution Command Line Tool Version 15.8.0
+Test run for C:\Source\dotnet\docs\samples\snippets\core\tutorials\testing-with-cli\csharp\test\NewTypesTests\bin\Debug\net5.0\NewTypesTests.dll (.NETCoreApp,Version=v5.0)
+Microsoft (R) Test Execution Command Line Tool Version 16.8.1
 Copyright (c) Microsoft Corporation.  All rights reserved.
 
 Starting test execution, please wait...
-[xUnit.net 00:00:00.77]     PetTests.DogTalkToOwnerReturnsWoof [FAIL]
-[xUnit.net 00:00:00.78]     PetTests.CatTalkToOwnerReturnsMeow [FAIL]
-Failed   PetTests.DogTalkToOwnerReturnsWoof
-Error Message:
- Assert.NotEqual() Failure
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:00:00.50]     PetTests.DogTalkToOwnerReturnsWoof [FAIL]
+  Failed PetTests.DogTalkToOwnerReturnsWoof [6 ms]
+  Error Message:
+   Assert.NotEqual() Failure
 Expected: Not "Woof!"
 Actual:   "Woof!"
-Stack Trace:
-   at PetTests.DogTalkToOwnerReturnsWoof() in c:\Users\ronpet\repos\samples\core\console-apps\NewTypesMsBuild\test\NewTypesTests\PetTests.cs:line 13
-Failed   PetTests.CatTalkToOwnerReturnsMeow
-Error Message:
- Assert.NotEqual() Failure
-Expected: Not "Meow!"
-Actual:   "Meow!"
-Stack Trace:
-   at PetTests.CatTalkToOwnerReturnsMeow() in c:\Users\ronpet\repos\samples\core\console-apps\NewTypesMsBuild\test\NewTypesTests\PetTests.cs:line 22
+  Stack Trace:
+     at PetTests.DogTalkToOwnerReturnsWoof() in C:\Source\dotnet\docs\samples\snippets\core\tutorials\testing-with-cli\csharp\test\NewTypesTests\PetTests.cs:line 13
 
-Total tests: 2. Passed: 0. Failed: 2. Skipped: 0.
-Test Run Failed.
-Test execution time: 1.7000 Seconds
+Failed!  - Failed:     1, Passed:     1, Skipped:     0, Total:     2, Duration: 8 ms - NewTypesTests.dll (net5.0)
 ```
 
 Altere as asserções de seus testes de `Assert.NotEqual` para `Assert.Equal`:
@@ -222,15 +215,14 @@ Altere as asserções de seus testes de `Assert.NotEqual` para `Assert.Equal`:
 Execute novamente os testes com o comando `dotnet test` e obtenha a seguinte saída:
 
 ```output
-Test run for c:\Users\ronpet\repos\samples\core\console-apps\NewTypesMsBuild\test\NewTypesTests\bin\Debug\netcoreapp2.1\NewTypesTests.dll(.NETCoreApp,Version=v2.1)
-Microsoft (R) Test Execution Command Line Tool Version 15.8.0
+Test run for C:\Source\dotnet\docs\samples\snippets\core\tutorials\testing-with-cli\csharp\test\NewTypesTests\bin\Debug\net5.0\NewTypesTests.dll (.NETCoreApp,Version=v5.0)
+Microsoft (R) Test Execution Command Line Tool Version 16.8.1
 Copyright (c) Microsoft Corporation.  All rights reserved.
 
 Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
 
-Total tests: 2. Passed: 2. Failed: 0. Skipped: 0.
-Test Run Successful.
-Test execution time: 1.6029 Seconds
+Passed!  - Failed:     0, Passed:     2, Skipped:     0, Total:     2, Duration: 2 ms - NewTypesTests.dll (net5.0)
 ```
 
 O teste é aprovado. Os métodos dos tipos de animais de estimação retornam os valores corretos ao conversar com o proprietário.

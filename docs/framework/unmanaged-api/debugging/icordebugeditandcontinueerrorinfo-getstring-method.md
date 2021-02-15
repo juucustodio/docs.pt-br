@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugEditAndContinueErrorInfo:: GetString'
 title: Método ICorDebugEditAndContinueErrorInfo::GetString
 ms.date: 03/30/2017
 api_name:
@@ -15,16 +16,17 @@ helpviewer_keywords:
 ms.assetid: 85e2108b-ff03-4a15-ac5c-1eb5d84f38ca
 topic_type:
 - apiref
-ms.openlocfilehash: 542b33c82834ccd30c79c78bdcc759cf0c34d36c
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: be4c97ca18adf684335a5f8a6fe131bad54d1763
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76783329"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99710368"
 ---
 # <a name="icordebugeditandcontinueerrorinfogetstring-method"></a>Método ICorDebugEditAndContinueErrorInfo::GetString
+
 `GetString` é obsoleto. Não chame esse método.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

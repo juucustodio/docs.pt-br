@@ -1,19 +1,21 @@
 ---
-title: Como configurar comportamento ocioso com WorkflowServiceHost
+description: 'Saiba mais sobre: como: configurar o comportamento ocioso com o WorkflowServiceHost'
+title: 'Como: configurar o comportamento ocioso com WorkflowServiceHost'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 1bb93652-d687-46ff-bff6-69ecdcf97437
-ms.openlocfilehash: 8b9fa36408d5f2bc5445ebeccba61f71417935e7
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 530ab1833f3f8bb91d39b19161070bc75c45f11a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599120"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780044"
 ---
-# <a name="how-to-configure-idle-behavior-with-workflowservicehost"></a>Como configurar comportamento ocioso com WorkflowServiceHost
-Os fluxos de trabalho ficam ociosos quando encontram um indicador que deve ser retomado por algum estímulo externo, por exemplo, quando a instância do fluxo de trabalho está aguardando a entrega de uma mensagem usando uma <xref:System.ServiceModel.Activities.Receive> atividade. <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior>é um comportamento que permite que você especifique o tempo entre quando uma instância de serviço fica ociosa e quando a instância é persistente ou descarregada. Ele contém duas propriedades que permitem que você defina esses intervalos de tempo. <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToPersist%2A>Especifica o período de tempo entre o momento em que uma instância do serviço de fluxo de trabalho fica ociosa e quando a instância do serviço de fluxo de trabalho é persistida. <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToUnload%2A>Especifica o período de tempo entre quando uma instância do serviço de fluxo de trabalho fica ociosa e quando a instância do serviço de fluxo de trabalho é descarregada, em que Unload significa persistir a instância para o repositório de instância e removê-la da memória. Este tópico explica como configurar o <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior> em um arquivo de configuração.  
+# <a name="how-to-configure-idle-behavior-with-workflowservicehost"></a>Como: configurar o comportamento ocioso com WorkflowServiceHost
+
+Os fluxos de trabalho ficam ociosos quando encontram um indicador que deve ser retomado por algum estímulo externo, por exemplo, quando a instância do fluxo de trabalho está aguardando a entrega de uma mensagem usando uma <xref:System.ServiceModel.Activities.Receive> atividade. <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior> é um comportamento que permite que você especifique o tempo entre quando uma instância de serviço fica ociosa e quando a instância é persistente ou descarregada. Ele contém duas propriedades que permitem que você defina esses intervalos de tempo. <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToPersist%2A> Especifica o período de tempo entre o momento em que uma instância do serviço de fluxo de trabalho fica ociosa e quando a instância do serviço de fluxo de trabalho é persistida. <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToUnload%2A> Especifica o período de tempo entre quando uma instância do serviço de fluxo de trabalho fica ociosa e quando a instância do serviço de fluxo de trabalho é descarregada, em que Unload significa persistir a instância para o repositório de instância e removê-la da memória. Este tópico explica como configurar o <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior> em um arquivo de configuração.  
   
 ### <a name="to-configure-workflowidlebehavior"></a>Para configurar o WorkflowIdleBehavior  
   
@@ -43,6 +45,6 @@ Os fluxos de trabalho ficam ociosos quando encontram um indicador que deve ser r
   
 ## <a name="see-also"></a>Consulte também
 
-- [Extensibilidade de host de serviço de fluxo de trabalho](workflow-service-host-extensibility.md)
+- [Extensibilidade de host de serviço do fluxo de trabalho](workflow-service-host-extensibility.md)
 - [Configuração simplificada](../simplified-configuration.md)
 - [Serviços de fluxo de trabalho](workflow-services.md)

@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: atividades de fluxograma no WF'
 title: Atividades do fluxograma em WF
 ms.date: 03/30/2017
 ms.assetid: e80d9734-b43a-4d21-a250-74400330a4c0
-ms.openlocfilehash: e311c97a35acd8bc973b2833f1de1bc017682d64
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 1201682f4f8df4826a56208cefc83f354a725013
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61945672"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99631301"
 ---
 # <a name="flowchart-activities-in-wf"></a>Atividades do fluxograma em WF
+
 [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] fornece vários sistema fornecidos para atividades a execução de controle e ramificar dentro de um fluxograma.  
   
 |||  
@@ -20,4 +22,4 @@ ms.locfileid: "61945672"
   
 ## <a name="see-also"></a>Consulte também
 
-- [Tutorial de Introdução](getting-started-tutorial.md)
+- [Guia de introdução ao tutorial](getting-started-tutorial.md)

@@ -2,12 +2,12 @@
 title: Informações do chamador
 description: Descreve como usar atributos de argumento de informações do chamador para obter informações do chamador de um método.
 ms.date: 11/04/2019
-ms.openlocfilehash: d995b37149277b7c7d1b6217ee484d3c90a7f8b3
-ms.sourcegitcommit: f348c84443380a1959294cdf12babcb804cfa987
+ms.openlocfilehash: 700cde26fbe4e6c48155f88bfc63af59af86cfe2
+ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73976805"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96739770"
 ---
 # <a name="caller-information"></a>Informações do chamador
 
@@ -15,7 +15,7 @@ Ao usar atributos de informações do chamador, você pode obter informações s
 
 Para obter essas informações, você deve usar os atributos que são aplicadas aos parâmetros opcionais, cada qual com um valor padrão. A tabela a seguir lista os atributos de informações do chamador que são definidos no namespace [System. Runtime. CompilerServices](/dotnet/api/system.runtime.compilerservices) :
 
-|Atributo|Descrição|Digite|
+|Atributo|Descrição|Type|
 |---------|-----------|----|
 |[CallerFilePath](/dotnet/api/system.runtime.compilerservices.callerfilepathattribute)|O caminho completo do arquivo de origem que contém o chamador. Esse é o caminho do arquivo no momento da compilação.|`String`
 |[CallerLineNumber](/dotnet/api/system.runtime.compilerservices.callerlinenumberattribute)|Número da linha no arquivo fonte no qual o método é chamado.|`Integer`|
@@ -35,10 +35,10 @@ type Tracer() =
                       [<CallerMemberName; Optional; DefaultParameterValue("")>] memberName: string,
                       [<CallerFilePath; Optional; DefaultParameterValue("")>] path: string,
                       [<CallerLineNumber; Optional; DefaultParameterValue(0)>] line: int) =
-        Trace.WriteLine(sprintf "Message: %s" message)
-        Trace.WriteLine(sprintf "Member name: %s" memberName)
-        Trace.WriteLine(sprintf "Source file path: %s" path)
-        Trace.WriteLine(sprintf "Source line number: %d" line)
+        Trace.WriteLine(sprintf $"Message: {message}")
+        Trace.WriteLine(sprintf $"Member name: {memberName}")
+        Trace.WriteLine(sprintf $"Source file path: {path}")
+        Trace.WriteLine(sprintf $"Source line number: {line}")
 ```
 
 ## <a name="remarks"></a>Comentários
@@ -51,10 +51,10 @@ Você pode fornecer explicitamente os argumentos opcionais para controlar as inf
 
 ## <a name="member-names"></a>Nomes dos membros
 
-Você pode usar o atributo [`CallerMemberName`](/dotnet/api/system.runtime.compilerservices.callermembernameattribute) para evitar especificar o nome do membro como um argumento `String` para o método chamado. Usando essa técnica, você evita o problema que a refatoração de renomeação não altera os valores de `String`. Esse benefício é especialmente útil para as seguintes tarefas:
+Você pode usar o [`CallerMemberName`](/dotnet/api/system.runtime.compilerservices.callermembernameattribute) atributo para evitar a especificação do nome do membro como um `String` argumento para o método chamado. Ao usar essa técnica, você evita o problema de que a Refatoração de Renomeação não altera os valores de `String`. Esse benefício é especialmente útil para as seguintes tarefas:
 
 - Usar rotinas de rastreamento e diagnóstico.
-- Implementando a interface [INotifyPropertyChanged](/dotnet/api/system.componentmodel.inotifypropertychanged) ao associar dados. Essa interface permite que a propriedade de um objeto notifique um controle associado sobre a alteração da propriedade de modo que o controle possa exibir as informações atualizadas. Sem o atributo [`CallerMemberName`](/dotnet/api/system.runtime.compilerservices.callermembernameattribute) , você deve especificar o nome da propriedade como um literal.
+- Implementando a interface [INotifyPropertyChanged](/dotnet/api/system.componentmodel.inotifypropertychanged) ao associar dados. Essa interface permite que a propriedade de um objeto notifique um controle associado sobre a alteração da propriedade de modo que o controle possa exibir as informações atualizadas. Sem o [`CallerMemberName`](/dotnet/api/system.runtime.compilerservices.callermembernameattribute) atributo, você deve especificar o nome da propriedade como um literal.
 
 O gráfico a seguir mostra os nomes de membro que são retornados quando você usa o atributo CallerMemberName.
 
@@ -68,7 +68,7 @@ O gráfico a seguir mostra os nomes de membro que são retornados quando você u
 |Construtor de atributos|O nome do membro ao qual o atributo se aplica. Se o atributo é qualquer elemento dentro de um membro (como um parâmetro, um valor de retorno, ou um parâmetro de tipo genérico), esse resultado é o nome do membro associado a esse elemento.|
 |Nenhum membro contentor (por exemplo, nível de assembly ou atributos que são aplicadas aos tipos)|O valor padrão do parâmetro opcional.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Atributos](attributes.md)
 - [Argumentos nomeados](parameters-and-arguments.md#named-arguments)

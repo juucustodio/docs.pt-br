@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Função CreateAssemblyEnum'
 title: Função CreateAssemblyEnum
 ms.date: 03/30/2017
 api_name:
@@ -16,14 +17,15 @@ helpviewer_keywords:
 ms.assetid: 3506df38-6cea-42f6-946e-4287863bcfb3
 topic_type:
 - apiref
-ms.openlocfilehash: 0e54027806cef07fad4740c3bf5226fd26c72570
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 47177fcf0cd9e1b492fa89b9fb80c5cdaaced689
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73108770"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761132"
 ---
 # <a name="createassemblyenum-function"></a>Função CreateAssemblyEnum
+
 Obtém um ponteiro para uma instância de [IAssemblyEnum](iassemblyenum-interface.md) que pode enumerar os objetos no assembly com o [IAssemblyName](iassemblyname-interface.md)especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -39,8 +41,9 @@ HRESULT CreateAssemblyEnum (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pEnum`  
- fora Ponteiro para um local de memória que contém o ponteiro de `IAssemblyEnum` solicitado.  
+ fora Ponteiro para um local de memória que contém o `IAssemblyEnum` ponteiro solicitado.  
   
  `pUnkReserved`  
  no Reservado para extensibilidade futura. `pUnkReserved` deve ser uma referência nula.  
@@ -55,16 +58,18 @@ HRESULT CreateAssemblyEnum (
  no Reservado para extensibilidade futura. `pvReserved` deve ser uma referência nula.  
   
 ## <a name="remarks"></a>Comentários  
- O parâmetro `dwFlags` contém exatamente um bit da enumeração `ASM_CACHE_FLAGS`.  
+
+ O `dwFlags` parâmetro contém exatamente um bit da `ASM_CACHE_FLAGS` enumeração.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Fusion. h  
   
- **Biblioteca:** Incluído como um recurso em MsCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MsCorEE.dll  
   
- **Versões do .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>Consulte também
 

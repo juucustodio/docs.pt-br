@@ -1,18 +1,21 @@
 ---
+description: 'Saiba mais sobre: associação personalizada'
 title: Associação personalizado
 ms.date: 03/30/2017
 ms.assetid: 3c9537ea-9708-4ebc-b861-219f2e2db53d
-ms.openlocfilehash: b00df1c57e1ff9dd39a14be1c61024f439536142
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: cfa4359c9c80bb1e412f94872ad175fac0316ad4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84592561"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99732599"
 ---
 # <a name="custom-binding"></a>Associação personalizado
+
 Esta seção contém exemplos que demonstram o uso de um atributo de associação personalizado de um elemento de ponto de extremidade.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Associação personalizada obrigatória](custom-binding-imperative.md)  
  Demonstra como escrever código imperativo para definir e usar associações personalizadas sem usar um arquivo de configuração ou um cliente gerado pelo WCF.  
   

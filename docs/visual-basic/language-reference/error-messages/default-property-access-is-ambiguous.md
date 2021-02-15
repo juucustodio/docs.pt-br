@@ -1,4 +1,5 @@
 ---
+description: "Saiba mais sobre: BC30686: o acesso à propriedade padrão é ambíguo entre os membros da interface herdada ' <defaultpropertyname> ' da interface ' <interfacename1> ' e ' <defaultpropertyname> ' da interface ' <interfacename2> '"
 title: O acesso à propriedade padrão é ambíguo entre os membros de interface herdada '<defaultpropertyname>' da interface '<interfacename1>' e '<defaultpropertyname>' da interface '<interfacename2>'
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,14 +8,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC30686
 ms.assetid: 784fefec-ef57-48cf-b960-957df419b439
-ms.openlocfilehash: f76163d58f3f11d3ca946525a1604abc3ebba68d
-ms.sourcegitcommit: d7c298f6c2e3aab0c7498bfafc0a0a94ea1fe23e
+ms.openlocfilehash: edf2823fb11184efb2c3101b81119ea1696234db
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72250376"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100455217"
 ---
-# <a name="default-property-access-is-ambiguous-between-the-inherited-interface-members-defaultpropertyname-of-interface-interfacename1-and-defaultpropertyname-of-interface-interfacename2"></a>O acesso à propriedade padrão é ambíguo entre os membros da interface herdada ' \<defaultpropertyname > ' da interface ' \<interfacename1 > ' e ' \<defaultpropertyname > ' da interface ' \<interfacename2 > '
+# <a name="bc30686-default-property-access-is-ambiguous-between-the-inherited-interface-members-defaultpropertyname-of-interface-interfacename1-and-defaultpropertyname-of-interface-interfacename2"></a>BC30686: o acesso à propriedade padrão é ambíguo entre os membros da interface herdada ' \<defaultpropertyname> ' da interface ' \<interfacename1> ' e ' \<defaultpropertyname> ' da interface ' \<interfacename2> '
 
 Uma interface herda de duas interfaces, cada uma delas declara uma propriedade padrão com o mesmo nome. O compilador não pode resolver um acesso a essa propriedade padrão sem qualificação. O exemplo a seguir ilustra essa situação.
 
@@ -36,13 +37,13 @@ Public Class testClass
 End Class
 ```
 
-Quando você especifica `testObj(1)`, o compilador tenta resolvê-lo para a propriedade padrão. No entanto, há duas propriedades padrão possíveis devido às interfaces herdadas, portanto, o compilador sinaliza esse erro.
+Quando você especifica `testObj(1)` , o compilador tenta resolvê-lo para a propriedade padrão. No entanto, há duas propriedades padrão possíveis devido às interfaces herdadas, portanto, o compilador sinaliza esse erro.
 
 **ID do erro:** BC30686
 
 ## <a name="to-correct-this-error"></a>Para corrigir este erro
 
-- Evite herdar todos os membros com o mesmo nome. No exemplo anterior, se `testObj` não precisar de nenhum dos membros de, digamos, `Iface2`, então declare-o da seguinte maneira:
+- Evite herdar todos os membros com o mesmo nome. No exemplo anterior, se `testObj` não precisar de nenhum dos membros de, digamos, `Iface2` e, em seguida, declare-o da seguinte maneira:
 
   ```vb
   Dim testObj As Iface1

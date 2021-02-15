@@ -2,38 +2,38 @@
 title: 'Como: Extrair o dia da semana de uma data específica'
 description: Saiba como determinar o dia ordinal da semana para uma determinada data no .NET. Saiba como exibir o nome do dia da semana localizado para uma determinada data.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
-- formatting [.NET Framework], dates
+- formatting [.NET], dates
 - DateTime.DayOfWeek property
 - DateTime.ToString method
-- dates [.NET Framework], retrieving week information
+- dates [.NET], retrieving week information
 - DateTimeOffset.DayOfWeek property
-- dates [.NET Framework], day of week
+- dates [.NET], day of week
 - Weekday function
-- day of week [.NET Framework]
+- day of week [.NET]
 - extracting day of week
 - weekday names
 - WeekdayName function
-- numbers [.NET Framework], day of week
-- formatting [.NET Framework], time
+- numbers [.NET], day of week
+- formatting [.NET], time
 - DateTimeOffset.ToString method
 - full weekday names
 ms.assetid: 1c9bef76-5634-46cf-b91c-9b9eb72091d7
-ms.openlocfilehash: fa0eb6c36b88594543d08680af104b5408c295f9
-ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
+ms.openlocfilehash: 9db11146ee9428ce22b08accacf7660137d539c7
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84662609"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95726984"
 ---
 # <a name="how-to-extract-the-day-of-the-week-from-a-specific-date"></a>Como: Extrair o dia da semana de uma data específica
-O .NET Framework facilita a verificação da posição numérica do dia da semana em uma determinada data e a exibição do nome do dia localizado em uma determinada data. O valor enumerado que indica o dia da semana correspondente a uma determinada data está disponível na propriedade <xref:System.DateTime.DayOfWeek%2A> ou <xref:System.DateTimeOffset.DayOfWeek%2A>. Em contrapartida, para recuperar o nome do dia da semana é necessário realizar uma operação de formatação que pode ser executada com a chamada de um método de formatação, como o método `ToString` ou <xref:System.String.Format%2A?displayProperty=nameWithType> de valor de data e hora. Este tópico mostra como executar essas operações de formatação.  
+
+O .NET facilita a verificação da posição numérica do dia da semana em uma determinada data e a exibição do nome do dia localizado em uma determinada data. O valor enumerado que indica o dia da semana correspondente a uma determinada data está disponível na propriedade <xref:System.DateTime.DayOfWeek%2A> ou <xref:System.DateTimeOffset.DayOfWeek%2A>. Em contrapartida, para recuperar o nome do dia da semana é necessário realizar uma operação de formatação que pode ser executada com a chamada de um método de formatação, como o método `ToString` ou <xref:System.String.Format%2A?displayProperty=nameWithType> de valor de data e hora. Este tópico mostra como executar essas operações de formatação.  
   
-### <a name="to-extract-a-number-indicating-the-day-of-the-week-from-a-specific-date"></a>Para extrair um número que indique o dia da semana em uma determinada data  
+## <a name="extract-a-number-indicating-the-day-of-the-week"></a>Extrair um número que indica o dia da semana
   
 1. Se você estiver trabalhando na representação da cadeia de caracteres de uma data, converta-a para um valor <xref:System.DateTime> ou <xref:System.DateTimeOffset> usando a estatística <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> ou o método <xref:System.DateTimeOffset.Parse%2A?displayProperty=nameWithType>.  
   
@@ -46,7 +46,7 @@ O .NET Framework facilita a verificação da posição numérica do dia da seman
  [!code-csharp[Formatting.Howto.WeekdayName#7](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.WeekdayName/cs/weekdaynumber7.cs#7)]
  [!code-vb[Formatting.Howto.WeekdayName#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.HowTo.WeekdayName/vb/weekdaynumber7.vb#7)]  
   
-### <a name="to-extract-the-abbreviated-weekday-name-from-a-specific-date"></a>Para extrair o nome do dia da semana abreviado de uma determinada data  
+## <a name="extract-the-abbreviated-weekday-name"></a>Extrair o nome abreviado do dia da semana
   
 1. Se você estiver trabalhando na representação da cadeia de caracteres de uma data, converta-a para um valor <xref:System.DateTime> ou <xref:System.DateTimeOffset> usando a estatística <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> ou o método <xref:System.DateTimeOffset.Parse%2A?displayProperty=nameWithType>.  
   
@@ -62,7 +62,7 @@ O .NET Framework facilita a verificação da posição numérica do dia da seman
          [!code-csharp[Formatting.Howto.WeekdayName#2](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.WeekdayName/cs/abbrname2.cs#2)]
          [!code-vb[Formatting.Howto.WeekdayName#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.HowTo.WeekdayName/vb/abbrname2.vb#2)]  
   
-### <a name="to-extract-the-full-weekday-name-from-a-specific-date"></a>Para extrair o nome completo do dia da semana de uma determinada data  
+## <a name="extract-the-full-weekday-name"></a>Extrair o nome completo do dia da semana
   
 1. Se você estiver trabalhando na representação da cadeia de caracteres de uma data, converta-a para um valor <xref:System.DateTime> ou <xref:System.DateTimeOffset> usando a estatística <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> ou o método <xref:System.DateTimeOffset.Parse%2A?displayProperty=nameWithType>.  
   
@@ -79,12 +79,13 @@ O .NET Framework facilita a verificação da posição numérica do dia da seman
          [!code-vb[Formatting.Howto.WeekdayName#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.HowTo.WeekdayName/vb/fullname5.vb#5)]  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo ilustra chamadas às propriedades <xref:System.DateTime.DayOfWeek%2A?displayProperty=nameWithType> e<xref:System.DateTimeOffset.DayOfWeek%2A?displayProperty=nameWithType> e aos métodos <xref:System.DateTime.ToString%2A?displayProperty=nameWithType> e <xref:System.DateTimeOffset.ToString%2A?displayProperty=nameWithType> para recuperar o número que representa o dia da semana, o nome de dia da semana abreviado e o nome completo de dia da semana para uma determinada data.  
   
  [!code-csharp[Formatting.Howto.WeekdayName#6](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.WeekdayName/cs/example6.cs#6)]
  [!code-vb[Formatting.Howto.WeekdayName#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.HowTo.WeekdayName/vb/example6.vb#6)]  
   
- Cada linguagem pode contar com funcionalidades que duplicam ou complementam a funcionalidade do .NET Framework. Por exemplo, o Visual Basic tem duas funções desse tipo:  
+ Cada linguagem pode contar com funcionalidades que duplicam ou complementam a funcionalidade oferecida pelo .NET. Por exemplo, o Visual Basic tem duas funções desse tipo:  
   
 - `Weekday`, que retorna um número que indica o dia da semana de uma determinada data. Ele leva em consideração que o primeiro dia da semana tem valor ordinal um, enquanto a propriedade <xref:System.DateTime.DayOfWeek%2A?displayProperty=nameWithType> considera o valor ordinal desse dia como zero.  
   
@@ -102,4 +103,4 @@ O .NET Framework facilita a verificação da posição numérica do dia da seman
 ## <a name="see-also"></a>Confira também
 
 - [Cadeias de caracteres de formato de data e hora padrão](standard-date-and-time-format-strings.md)
-- [Cadeias de caracteres de formato de data e hora personalizadas](custom-date-and-time-format-strings.md)
+- [Cadeias de caracteres de formato de data e hora personalizado](custom-date-and-time-format-strings.md)

@@ -2,12 +2,12 @@
 title: Parâmetros e argumentos
 description: 'Saiba mais sobre o suporte à linguagem F # para definir parâmetros e passar argumentos para funções, métodos e propriedades.'
 ms.date: 08/15/2020
-ms.openlocfilehash: 6564fd31105427683af8fc6280672e638737e9b5
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: 3c391ca37a1cf3bd150316943e5b06efa532b317
+ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88811516"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96740283"
 ---
 # <a name="parameters-and-arguments"></a>Parâmetros e argumentos
 
@@ -137,7 +137,7 @@ open System
 open System.Runtime.InteropServices
 type C =
     static member Foo([<Optional; DefaultParameterValue("Hello world")>] message) =
-        printfn "%s" message
+        printfn $"{message}"
 ```
 
 Você também pode especificar um novo objeto como um valor de parâmetro padrão. Por exemplo, o `Foo` membro poderia ter um opcional `CancellationToken` como entrada, em vez disso:
@@ -147,7 +147,7 @@ open System.Threading
 open System.Runtime.InteropServices
 type C =
     static member Foo([<Optional; DefaultParameterValue(CancellationToken())>] ct: CancellationToken) =
-        printfn "%A" ct
+        printfn $"{ct}"
 ```
 
 O valor fornecido como argumento para `DefaultParameterValue` deve corresponder ao tipo do parâmetro. Por exemplo, o seguinte não é permitido:
@@ -168,12 +168,12 @@ A passagem de um valor F # por referência envolve [byrefs](byrefs.md), que são
 - Use `byref<'T>` se você precisar ler e gravar no ponteiro.
 
 ```fsharp
-let example1 (x: inref<int>) = printfn "It's %d" x
+let example1 (x: inref<int>) = printfn $"It's %d{x}"
 
 let example2 (x: outref<int>) = x <- x + 1
 
 let example3 (x: byref<int>) =
-    printfn "It'd %d" x
+    printfn $"It's %d{x}"
     x <- x + 1
 
 let test () =

@@ -1,5 +1,5 @@
 ---
-title: Como compilar condicionalmente com Trace e Debug
+title: 'Como: compilar condicionalmente com Trace e Debug'
 description: Saiba como compilar condicionalmente com os atributos condicionais TRACE e DEBUG ao compilar um aplicativo .NET.
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -11,13 +11,15 @@ helpviewer_keywords:
 - TRACE directive
 - conditional compilation, tracing code
 ms.assetid: 56d051c3-012c-42c1-9a58-7270edc624aa
-ms.openlocfilehash: 8758b793866ec0317f91d636476d33bd001ddd78
-ms.sourcegitcommit: 0edbeb66d71b8df10fcb374cfca4d731b58ccdb2
+ms.openlocfilehash: 895e39593b5e84d708392d3d994267b25bc4eeea
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86051214"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96244165"
 ---
-# <a name="how-to-compile-conditionally-with-trace-and-debug"></a>Como compilar condicionalmente com Trace e Debug
+# <a name="how-to-compile-conditionally-with-trace-and-debug"></a>Como: compilar condicionalmente com Trace e Debug
+
 Enquanto você estiver depurando um aplicativo durante o desenvolvimento, a saída de rastreamento e de depuração é enviada para a janela de Saída no Visual Studio. No entanto, para incluir recursos de rastreamento em um aplicativo implantado, compile os aplicativos instrumentados com a diretiva do compilador **TRACE** habilitada. Isso permite que o código de rastreamento seja compilado na versão de lançamento do aplicativo. Se você não habilitar a diretiva **TRACE**, todo o código de rastreamento será ignorado durante a compilação e não será incluído no código executável que será implantado.  
   
  Os métodos de rastreamento e de depuração têm atributos condicionais associados. Por exemplo, se o atributo condicional do rastreamento for **true**, todas as instruções de rastreamento serão incluídas em um assembly (um arquivo .exe ou .dll compilado); se o atributo condicional de **Trace** for **false**, as instruções de rastreamento não serão incluídas.  
@@ -71,7 +73,7 @@ Enquanto você estiver depurando um aplicativo durante o desenvolvimento, a saí
   
 1. Digite a instrução apropriada para a linguagem de programação na parte superior do arquivo de código-fonte.  
   
-    |Linguagem|de|Result|  
+    |Idioma|Instrução|Resultado|  
     |--------------|---------------|------------|  
     |**Visual Basic**|**#CONST TRACE = true**|Habilita o rastreamento|  
     ||**#CONST TRACE = false**|Desabilita o rastreamento|  
@@ -93,12 +95,12 @@ Comente a diretiva do compilador.
 > [!NOTE]
 > Quando você estiver pronto para compilar, escolha **Compilar** no menu **Compilar** ou use o método de linha de comando, mas sem digitar o **d:** para definir símbolos de compilação condicional.  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-- [Rastreamento e instrumentação de aplicativos](tracing-and-instrumenting-applications.md)
-- [Como criar, inicializar e configurar opções de rastreamento](how-to-create-initialize-and-configure-trace-switches.md)
+- [Como rastrear e instrumentar aplicativos](tracing-and-instrumenting-applications.md)
+- [Como: criar, inicializar e configurar opções de rastreamento](how-to-create-initialize-and-configure-trace-switches.md)
 - [Opções de rastreamento](trace-switches.md)
 - [Ouvintes de rastreamento](trace-listeners.md)
-- [Como adicionar instruções de rastreamento ao código de um aplicativo](how-to-add-trace-statements-to-application-code.md)
+- [Como: adicionar instruções de rastreamento ao código de um aplicativo](how-to-add-trace-statements-to-application-code.md)
 - [Como configurar variáveis de ambiente para a linha de comando do Visual Studio](../../csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md)
 - [Como: Invocar o compilador de linha de comando](../../visual-basic/reference/command-line-compiler/how-to-invoke-the-command-line-compiler.md)

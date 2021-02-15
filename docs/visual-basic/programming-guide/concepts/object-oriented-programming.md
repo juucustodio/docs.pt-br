@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre o: programação orientada a objeto (Visual Basic)'
 title: Programação orientada a objeto
 ms.date: 07/20/2015
 ms.assetid: 49794de4-64c3-473c-b8ed-fe98835df69c
-ms.openlocfilehash: f7e222cde8ce80d4c52cc8b4b111c576eb4041b9
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: af2fbac16bfefc90876bf22bb8c67de162ee6459
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84413187"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100486791"
 ---
 # <a name="object-oriented-programming-visual-basic"></a>Programação orientada a objeto (Visual Basic)
 
@@ -37,7 +38,7 @@ Visual Basic fornece suporte completo para a programação orientada a objeto, i
   - [Substituindo membros](#overriding-members)
 - [Interfaces](#interfaces)
 - [Genéricos](#generics)
-- [Delegados](#delegates)
+- [Representantes](#delegates)
 
 ## <a name="classes-and-objects"></a>Classes e objetos
 
@@ -117,7 +118,7 @@ Para obter mais informações, consulte:
 - [Instrução Property](../../language-reference/statements/property-statement.md)
 - [Instrução Get](../../language-reference/statements/get-statement.md)
 - [Instrução SET](../../language-reference/statements/set-statement.md)
-- [Leitura](../../language-reference/modifiers/readonly.md)
+- [ReadOnly (somente-leitura)](../../language-reference/modifiers/readonly.md)
 - [WriteOnly](../../language-reference/modifiers/writeonly.md)
 
 #### <a name="methods"></a>Métodos
@@ -219,10 +220,10 @@ Os modificadores de acesso a seguir estão disponíveis:
 
 |Modificador de Visual Basic|Definição|
 |---------------------------|----------------|
-|[Pública](../../language-reference/modifiers/public.md)|O tipo ou membro pode ser acessado por qualquer outro código no mesmo assembly ou em outro assembly que faz referência a ele.|
-|[Privada](../../language-reference/modifiers/private.md)|O tipo ou membro pode ser acessado somente pelo código na mesma classe.|
+|[Público](../../language-reference/modifiers/public.md)|O tipo ou membro pode ser acessado por qualquer outro código no mesmo assembly ou em outro assembly que faz referência a ele.|
+|[Privado](../../language-reference/modifiers/private.md)|O tipo ou membro pode ser acessado somente pelo código na mesma classe.|
 |[Protected](../../language-reference/modifiers/protected.md)|O tipo ou membro pode ser acessado somente pelo código na mesma classe ou em uma classe derivada.|
-|[Público](../../language-reference/modifiers/friend.md)|O tipo ou membro pode ser acessado por qualquer código no mesmo assembly, mas não de outro assembly.|
+|[Friend](../../language-reference/modifiers/friend.md)|O tipo ou membro pode ser acessado por qualquer código no mesmo assembly, mas não de outro assembly.|
 |`Protected Friend`|O tipo ou membro pode ser acessado por qualquer código no mesmo assembly ou por qualquer classe derivada em outro assembly.|
 
 Para obter mais informações, consulte [níveis de acesso em Visual Basic](../language-features/declared-elements/access-levels.md).
@@ -253,7 +254,7 @@ Dim sampleObject = New SampleClass With
 
 Para obter mais informações, consulte:
 
-- [Novo operador](../../language-reference/operators/new-operator.md)
+- [Novo Operador](../../language-reference/operators/new-operator.md)
 - [Inicializadores de objeto: tipos nomeados e anônimos](../language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
 
 ### <a name="shared-classes-and-members"></a>Classes e membros compartilhados
@@ -430,10 +431,10 @@ End Class
 
 Para obter mais informações, consulte:
 
-- [Delegados](../language-features/delegates/index.md)
+- [Representantes](../language-features/delegates/index.md)
 - [Instrução Delegate](../../language-reference/statements/delegate-statement.md)
 - [Operador AddressOf](../../language-reference/operators/addressof-operator.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Guia de programação do Visual Basic](../index.md)

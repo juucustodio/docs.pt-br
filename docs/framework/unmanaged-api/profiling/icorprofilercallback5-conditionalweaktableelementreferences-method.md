@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerCallback5:: ConditionalWeakTableElementReferences'
 title: ICorProfilerCallback5::Método ConditionalWeakTableElementReferences
 ms.date: 03/30/2017
 api_name:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 532c7a02-a9de-4cea-bb2b-7f470da594de
 topic_type:
 - apiref
-ms.openlocfilehash: 17fbc99b30921f795c1f7ff882ec73432aade8c6
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 40114f6e1d80719eceaf2dbc398b74c1e790c76a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84499240"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788664"
 ---
 # <a name="icorprofilercallback5conditionalweaktableelementreferences-method"></a>ICorProfilerCallback5::Método ConditionalWeakTableElementReferences
 
@@ -80,7 +81,7 @@ HRESULT Callback5Impl::ConditionalWeakTableElementReferences(
 
 ## <a name="remarks"></a>Comentários
 
-Um criador de perfil para o .NET Framework 4,5 ou versões posteriores implementa a interface [ICorProfilerCallback5](icorprofilercallback5-interface.md) e registra as dependências especificadas pelo `ConditionalWeakTableElementReferences` método. `ICorProfilerCallback5`fornece o conjunto completo de dependências entre objetos dinâmicos representados por `ConditionalWeakTable` entradas. Essas dependências e as referências de campo de membro especificadas pelo método [ICorProfilerCallback:: Objectreferenciations](icorprofilercallback-objectreferences-method.md) habilitam um criador de perfil gerenciado para gerar o grafo de objeto completo de objetos dinâmicos.
+Um criador de perfil para o .NET Framework 4,5 ou versões posteriores implementa a interface [ICorProfilerCallback5](icorprofilercallback5-interface.md) e registra as dependências especificadas pelo `ConditionalWeakTableElementReferences` método. `ICorProfilerCallback5` fornece o conjunto completo de dependências entre objetos dinâmicos representados por `ConditionalWeakTable` entradas. Essas dependências e as referências de campo de membro especificadas pelo método [ICorProfilerCallback:: Objectreferenciations](icorprofilercallback-objectreferences-method.md) habilitam um criador de perfil gerenciado para gerar o grafo de objeto completo de objetos dinâmicos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -90,6 +91,6 @@ Um criador de perfil para o .NET Framework 4,5 ou versões posteriores implement
 
 **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerCallback5](icorprofilercallback5-interface.md)

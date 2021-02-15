@@ -19,12 +19,12 @@ helpviewer_keywords:
 - data marshaling, platform invoke
 - marshaling, platform invoke
 ms.assetid: 027832a2-9b43-4fd9-9b45-7f4196261a4e
-ms.openlocfilehash: 5e616b5bb513939cadd8fe5c72675ba0b6e070a3
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 25de633faabb1424bcf5e618cc5ca129e61c5fca
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85621516"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90547864"
 ---
 # <a name="marshaling-classes-structures-and-unions"></a>Marshaling de classes, estruturas e uniões
 
@@ -32,11 +32,11 @@ Estruturas e classes são semelhantes no .NET Framework. Ambas podem ter campos,
 
 A tabela a seguir lista as opções de marshaling de classes, estruturas e uniões, descreve o uso delas e fornece um link para a amostra de invocação de plataforma correspondente.
 
-|Type|Descrição|Amostra|
+|Tipo|Description|Amostra|
 |----------|-----------------|------------|
 |Classe por valor.|Passa uma classe com membros de inteiro como um parâmetro In/Out, como no caso gerenciado.|[Exemplo SysTime](#systime-sample)|
 |Estrutura por valor.|Passa estruturas como parâmetros In.|[Exemplo de estruturas](#structures-sample)|
-|Estrutura por referência.|Passa estruturas como parâmetros In/Out.|[Exemplo de OSInfo](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/795sy883(v=vs.100))|
+|Estrutura por referência.|Passa estruturas como parâmetros In/Out.|[Exemplo de OSInfo](/previous-versions/dotnet/netframework-4.0/795sy883(v=vs.100))|
 |Estrutura com estruturas aninhadas (mescladas).|Passa uma classe que representa uma estrutura com estruturas aninhadas na função não gerenciada. A estrutura é mesclada em uma estrutura grande no protótipo gerenciado.|[Exemplo FindFile](#findfile-sample)|
 |Estrutura com um ponteiro para outra estrutura.|Passa uma estrutura que contém um ponteiro para uma segunda estrutura como um membro.|[Exemplo de estruturas](#structures-sample)|
 |Matriz de estruturas com inteiros por valor.|Passa uma matriz de estruturas que contêm somente inteiros como um parâmetro In/Out. Os membros da matriz podem ser alterados.|[Exemplo de matrizes](marshaling-different-types-of-arrays.md)|
@@ -44,7 +44,7 @@ A tabela a seguir lista as opções de marshaling de classes, estruturas e uniõ
 |Uniões com tipos de valor.|Passa uniões com tipos de valor (integer e double).|[Exemplo de uniões](#unions-sample)|
 |Uniões com tipos mistos.|Passa uniões com tipos mistos (integer e string).|[Exemplo de uniões](#unions-sample)|
 |Struct com layout específico da plataforma.|Passa um tipo com definições de embalagens nativas.|[Exemplo de plataforma](#platform-sample)|
-|Valores nulos na estrutura.|Passa uma referência nula (**Nothing** no Visual Basic) em vez de uma referência a um tipo de valor.|[Exemplo HandleRef](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/hc662t8k(v=vs.85))|
+|Valores nulos na estrutura.|Passa uma referência nula (**Nothing** no Visual Basic) em vez de uma referência a um tipo de valor.|[Exemplo HandleRef](/previous-versions/dotnet/netframework-3.0/hc662t8k(v=vs.85))|
 
 ## <a name="structures-sample"></a>Amostra de estruturas
 
@@ -134,7 +134,7 @@ Estruturas como argumentos para métodos são passadas por valor, a menos que o 
 
 ## <a name="findfile-sample"></a>Exemplo FindFile
 
-Esta amostra demonstra como passar uma estrutura que contém uma segunda estrutura inserida para uma função não gerenciada. Ele também demonstra como usar o atributo <xref:System.Runtime.InteropServices.MarshalAsAttribute> para declarar uma matriz de tamanho fixo dentro da estrutura. Nesta amostra, os elementos de estrutura inserida são adicionados à estrutura pai. Para obter um exemplo de uma estrutura inserida que não é mesclada, consulte [Amostra de estruturas](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/eadtsekz(v=vs.100)).
+Esta amostra demonstra como passar uma estrutura que contém uma segunda estrutura inserida para uma função não gerenciada. Ele também demonstra como usar o atributo <xref:System.Runtime.InteropServices.MarshalAsAttribute> para declarar uma matriz de tamanho fixo dentro da estrutura. Nesta amostra, os elementos de estrutura inserida são adicionados à estrutura pai. Para obter um exemplo de uma estrutura inserida que não é mesclada, consulte [Amostra de estruturas](/previous-versions/dotnet/netframework-4.0/eadtsekz(v=vs.100)).
 
 A amostra de FindFile usa a seguinte função não gerenciada, mostrada com a respectiva declaração de função original:
 
@@ -291,7 +291,7 @@ Por padrão, os assemblies do .NET podem ser executados em uma versão de 32 bit
 
 O trecho de código a seguir mostra um exemplo de como escolher entre a definição de 32 bits e de 64 bits em tempo de execução.
 
-```CSharp
+```csharp
 if (IntPtr.Size == 8)
 {
     // Use the STRRET_64 definition
@@ -332,9 +332,9 @@ typedef struct _SYSTEMTIME {
 
 Neste exemplo, a classe `SystemTime` contém os elementos da estrutura original representados como membros de classe. O atributo <xref:System.Runtime.InteropServices.StructLayoutAttribute> é definido para garantir que os membros sejam organizados na memória em sequência, na ordem em que aparecem.
 
-A classe `NativeMethods` contém um protótipo gerenciado do método `GetSystemTime`, que passa a classe `SystemTime` como um parâmetro In/Out por padrão. O parâmetro deve ser declarado com os atributos <xref:System.Runtime.InteropServices.InAttribute> e <xref:System.Runtime.InteropServices.OutAttribute> porque as classes, que são tipos de referência, são passadas como parâmetros In por padrão. Para o chamador receber os resultados, esses [atributos direcionais](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/77e6taeh(v=vs.100)) devem ser aplicados explicitamente. A classe `App` cria uma nova instância da classe `SystemTime` e acessa seus campos de dados.
+A classe `NativeMethods` contém um protótipo gerenciado do método `GetSystemTime`, que passa a classe `SystemTime` como um parâmetro In/Out por padrão. O parâmetro deve ser declarado com os atributos <xref:System.Runtime.InteropServices.InAttribute> e <xref:System.Runtime.InteropServices.OutAttribute> porque as classes, que são tipos de referência, são passadas como parâmetros In por padrão. Para o chamador receber os resultados, esses [atributos direcionais](/previous-versions/dotnet/netframework-4.0/77e6taeh(v=vs.100)) devem ser aplicados explicitamente. A classe `App` cria uma nova instância da classe `SystemTime` e acessa seus campos de dados.
 
-### <a name="code-samples"></a>Exemplos de código
+### <a name="code-samples"></a>Exemplos de Código
 
 [!code-cpp[Conceptual.Interop.Marshaling#25](~/samples/snippets/cpp/VS_Snippets_CLR/conceptual.interop.marshaling/cpp/systime.cpp#25)]
 [!code-csharp[Conceptual.Interop.Marshaling#25](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.interop.marshaling/cs/systime.cs#25)]
@@ -382,7 +382,7 @@ Como mencionado anteriormente, o C# permite código não gerenciado e o Visual B
 [!code-csharp[Conceptual.Interop.Marshaling#21](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.interop.marshaling/cs/outarrayofstructs.cs#21)]
 [!code-vb[Conceptual.Interop.Marshaling#21](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.interop.marshaling/vb/outarrayofstructs.vb#21)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Marshaling de dados com invocação de plataforma](marshaling-data-with-platform-invoke.md)
 - [Realizando marshaling de cadeias de caracteres](marshaling-strings.md)

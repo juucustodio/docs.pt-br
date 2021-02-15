@@ -7,10 +7,10 @@ helpviewer_keywords:
 - command line [C#]
 ms.assetid: 66e70056-dd20-453c-a9b3-507e0478b015
 ms.openlocfilehash: 9ffd164602862fce7f5e4f0982d3eda7cb403e60
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
+ms.lasthandoff: 11/26/2020
 ms.locfileid: "89125924"
 ---
 # <a name="command-line-build-with-cscexe"></a>Build pela linha de comando com csc.exe
@@ -100,10 +100,10 @@ Não há arquivos (*. obj*) de objeto criados como resultado da invocação do c
 
 ## <a name="see-also"></a>Confira também
 
-- [Opções do compilador C#](./index.md)
+- [Opções do compilador de C#](./index.md)
 - [Opções do compilador de C# listadas em ordem alfabética](./listed-alphabetically.md)
 - [Opções do compilador de C# listadas por categoria](./listed-by-category.md)
-- [Argumentos Main () e de linha de comando](../../programming-guide/main-and-command-args/index.md)
+- [Argumentos Main () e Command-Line](../../programming-guide/main-and-command-args/index.md)
 - [Argumentos de linha de comando](../../programming-guide/main-and-command-args/command-line-arguments.md)
 - [Como exibir argumentos de linha de comando](../../programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)
 - [Valores de retorno de Main()](../../programming-guide/main-and-command-args/main-return-values.md)

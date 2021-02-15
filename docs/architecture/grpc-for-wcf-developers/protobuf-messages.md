@@ -1,13 +1,13 @@
 ---
 title: Mensagens Protobuf-gRPC para desenvolvedores do WCF
 description: Saiba como as mensagens Protobuf são definidas em IDL e geradas em C#.
-ms.date: 09/09/2019
-ms.openlocfilehash: 6fc7b9c34810abaa8d674af56d1517a5cf87521b
-ms.sourcegitcommit: dc2feef0794cf41dbac1451a13b8183258566c0e
+ms.date: 12/15/2020
+ms.openlocfilehash: c1f2a3071d45dcbe4b98d747f19fed508bad102f
+ms.sourcegitcommit: 655f8a16c488567dfa696fc0b293b34d3c81e3df
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85325032"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97938098"
 ---
 # <a name="protobuf-messages"></a>Mensagens de Protobuf
 
@@ -62,7 +62,7 @@ A `Stock` definição da mensagem Especifica quatro campos. Cada um tem um tipo,
 
 ## <a name="field-numbers"></a>Números de campo
 
-Os números de campo são uma parte importante do Protobuf. Eles são usados para identificar campos nos dados binários codificados, o que significa que eles não podem mudar de versão para versão do seu serviço. A vantagem é que a compatibilidade com versões anteriores e a compatibilidade com o encaminhamento são possíveis. Os clientes e serviços simplesmente ignorarão os números de campo que não conhecem, desde que a possibilidade de valores ausentes seja manipulada.
+Os números de campo são uma parte importante do Protobuf. Eles são usados para identificar campos nos dados binários codificados, o que significa que eles não podem mudar de versão para versão do seu serviço. A vantagem é que a compatibilidade com versões anteriores e a compatibilidade com o encaminhamento são possíveis. Os clientes e serviços irão ignorar números de campo que não conhecem, contanto que a possibilidade de valores ausentes seja manipulada.
 
 No formato binário, o número do campo é combinado com um identificador de tipo. Os números de campo de 1 a 15 podem ser codificados com seu tipo como um único byte. Os números de 16 a 2.047 levam 2 bytes. Você pode ficar mais alto se precisar de mais de 2.047 campos em uma mensagem por qualquer motivo. Os identificadores de byte único para os números de campo de 1 a 15 oferecem melhor desempenho, portanto, você deve usá-los para os campos mais básicos e usados com frequência.
 

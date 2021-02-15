@@ -1,7 +1,7 @@
 ---
+description: 'Saiba mais sobre: representação e reversão'
 title: Representando e revertendo
 ms.date: 07/15/2020
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - security [.NET], impersonating Windows accounts
 - impersonating Windows accounts
 ms.assetid: b93d402c-6c28-4f50-b2bc-d9607dc3e470
-ms.openlocfilehash: 7eecc7d6cb3fa4cc1c1bd971d36f9d3ca47a7144
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: f3e536f87ef5aa09cd727fe9674c7a40f3a09150
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87555664"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99685004"
 ---
 # <a name="impersonating-and-reverting"></a>Representando e revertendo
 
@@ -28,7 +28,7 @@ ms.locfileid: "87555664"
   
  Em situações em que o aplicativo deve representar uma conta do Windows que não foi anexada ao thread atual pelo IIS, você deve recuperar o token dessa conta e usá-lo para ativar a conta. Você pode fazer isso executando as seguintes tarefas:  
   
-1. Recuperar um token de conta para um usuário específico fazendo uma chamada para o método **LogonUser** não gerenciado. Esse método não está na biblioteca de classes base do .NET, mas está localizado no **advapi32.dll**não gerenciado. O acesso a métodos em código não gerenciado é uma operação avançada e está além do escopo desta discussão. Para obter mais informações, consulte [interoperação com código não gerenciado](../../framework/interop/index.md). Para obter mais informações sobre o método **LogonUser** e **advapi32.dll**, consulte a documentação do Platform SDK.  
+1. Recuperar um token de conta para um usuário específico fazendo uma chamada para o método **LogonUser** não gerenciado. Esse método não está na biblioteca de classes base do .NET, mas está localizado no **advapi32.dll** não gerenciado. O acesso a métodos em código não gerenciado é uma operação avançada e está além do escopo desta discussão. Para obter mais informações, consulte [interoperação com código não gerenciado](../../framework/interop/index.md). Para obter mais informações sobre o método **LogonUser** e **advapi32.dll**, consulte a documentação do Platform SDK.  
   
 2. Crie uma nova instância da classe **WindowsIdentity** , passando o token. O código a seguir demonstra essa chamada, onde `hToken` representa um token do Windows.  
   
@@ -64,7 +64,7 @@ ms.locfileid: "87555664"
   
  Observe que nem **Impersonate** nem **Undo** altera o objeto **principal** ( <xref:System.Security.Principal.IPrincipal> ) associado ao contexto de chamada atual. Em vez disso, a representação e a reversão alteram o token associado ao processo do sistema operacional atual.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Security.Principal.WindowsIdentity>
 - <xref:System.Security.Principal.WindowsImpersonationContext>

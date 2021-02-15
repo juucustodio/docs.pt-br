@@ -1,7 +1,7 @@
 ---
+description: 'Saiba mais sobre: substituindo um objeto principal'
 title: Substituindo um objeto Principal
 ms.date: 07/15/2020
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - security [.NET], replacing principal objects
 - security [.NET], principals
 ms.assetid: c323687e-b196-487b-beba-f38f9b3f961b
-ms.openlocfilehash: fced91aef991bc228e65128d5e8d69e6a46588e5
-ms.sourcegitcommit: b7a8b09828bab4e90f66af8d495ecd7024c45042
+ms.openlocfilehash: 3f413a3b0824cef9f28454bf109d40556f61c26b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87557093"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99684978"
 ---
 # <a name="replacing-a-principal-object"></a>Substituindo um objeto Principal
 
@@ -34,7 +34,7 @@ O exemplo a seguir mostra como criar um objeto principal genérico e usá-lo par
 [!code-csharp[SetCurrentPrincipal#1](../../../samples/snippets/csharp/VS_Snippets_CLR/SetCurrentPrincipal/CS/program.cs#1)]
 [!code-vb[SetCurrentPrincipal#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/SetCurrentPrincipal/VB/program.vb#1)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Security.Permissions.SecurityPermission?displayProperty=nameWithType>
 - [Objetos Principal e Identity](principal-and-identity-objects.md)

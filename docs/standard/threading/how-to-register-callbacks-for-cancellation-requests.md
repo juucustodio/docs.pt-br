@@ -1,19 +1,19 @@
 ---
+description: 'Saiba mais sobre: registrar retornos de chamada para solicitações de cancelamento'
 title: Registrar retornos de chamada para solicitações de cancelamento
 ms.date: 08/14/2020
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - cancellation, how to register callbacks
 ms.assetid: 8838dd75-18ed-4b8b-b322-cd4531faac64
-ms.openlocfilehash: faa8dada5779f6eaee7a60e6210ec604f5fb4680
-ms.sourcegitcommit: cbb19e56d48cf88375d35d0c27554d4722761e0d
+ms.openlocfilehash: a791338fc7c39e3d259f90bc4c4723079eac4236
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88608449"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666765"
 ---
 # <a name="register-callbacks-for-cancellation-requests"></a>Registrar retornos de chamada para solicitações de cancelamento
 
@@ -31,7 +31,7 @@ No exemplo a seguir, o método <xref:System.Net.WebClient.CancelAsync%2A> é reg
 
 Se o cancelamento já tiver sido solicitado quando o retorno de chamada for registrado, ainda haverá garantia de chamada do retorno de chamada. Nesse caso específico, o método <xref:System.Net.WebClient.CancelAsync%2A> não fará nada se nenhuma operação assíncrona estiver em andamento, portanto, é seguro sempre chamar o método.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Cancelamento em threads gerenciados](cancellation-in-managed-threads.md)
 - <xref:System.Net.WebClient.DownloadStringTaskAsync(System.String)?displayProperty=nameWithType>

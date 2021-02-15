@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: provedor de streaming (WCF Data Services)'
 title: Provedor de streaming (WCF Data Services)
 ms.date: 03/30/2017
 dev_langs:
@@ -10,22 +11,24 @@ helpviewer_keywords:
 - streaming data provider [WCF Data Services]
 - WCF Data Services, streams
 ms.assetid: f0978fe4-5f9f-42aa-a5c2-df395d7c9495
-ms.openlocfilehash: 83f28c50c53281692e1c3c6d55cc55e8d9304ad9
-ms.sourcegitcommit: ed3f926b6cdd372037bbcc214dc8f08a70366390
+ms.openlocfilehash: a87cd0764156e803bf30520160b54f6baaf4f644
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76116592"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791732"
 ---
 # <a name="streaming-provider-wcf-data-services"></a>Provedor de streaming (WCF Data Services)
+
+[!INCLUDE [wcf-deprecated](~/includes/wcf-deprecated.md)]
 
 Um serviço de dados pode expor dados de objeto binário grande. Esses dados binários podem representar fluxos de vídeo e áudio, imagens, arquivos de documento ou outros tipos de mídia binária. Quando uma entidade no modelo de dados inclui uma ou mais propriedades binárias, o serviço de dados retorna esses dados binários codificados como base 64 no feed de resposta. Como carregar e serializar dados binários grandes dessa maneira pode afetar o desempenho, o Protocolo Open Data (OData) define um mecanismo para recuperar dados binários independentemente da entidade à qual ele pertence. Isso é feito separando os dados binários da entidade em um ou mais fluxos de dados.
 
 - Recursos de mídia-dados binários que pertencem a uma entidade, como um vídeo, áudio, imagem ou outro tipo de fluxo de recursos de mídia.
 
-- Entrada de link de mídia - uma entidade que tem uma referência a um fluxo de recurso de mídia relacionado.
+- Entrada de link de mídia - uma entidade que tem uma referência ]a um fluxo de recurso de mídia relacionado.
 
-Com WCF Data Services, você define um fluxo de recursos binários implementando um provedor de dados de streaming. A implementação do provedor de streaming fornece o serviço de dados com o fluxo de recursos de mídia associado a uma entidade específica como um objeto <xref:System.IO.Stream>. Essa implementação permite que o serviço de dados aceite e retorne recursos de mídia sobre HTTP como fluxos de dados binários de um tipo MIME especificado.
+Com WCF Data Services, você define um fluxo de recursos binários implementando um provedor de dados de streaming. A implementação do provedor de streaming fornece o serviço de dados com o fluxo de recursos de mídia associado a uma entidade específica como um <xref:System.IO.Stream> objeto. Essa implementação permite que o serviço de dados aceite e retorne recursos de mídia sobre HTTP como fluxos de dados binários de um tipo MIME especificado.
 
 A configuração de um serviço de dados para oferecer suporte ao streaming de dados binários requer as seguintes etapas:
 
@@ -39,13 +42,13 @@ A configuração de um serviço de dados para oferecer suporte ao streaming de d
 
 5. Habilitar o acesso aos recursos binários no servidor ou em uma fonte de dados.
 
-Os exemplos neste tópico baseiam-se em um exemplo de serviço de foto de streaming, que é discutido em detalhes na [série do provedor de streaming do serviços de dados de postagem: Implementando um provedor de streaming (parte 1)](https://docs.microsoft.com/archive/blogs/astoriateam/data-services-streaming-provider-series-implementing-a-streaming-provider-part-1). O código-fonte do exemplo de serviço de dados de fotos de streaming está disponível no [GitHub](https://github.com/microsoftarchive/msdn-code-gallery-community-s-z/tree/master/Streaming%20Photo%20OData%20Service%20Sample).
+Os exemplos neste tópico baseiam-se em um exemplo de serviço de foto de streaming, que é discutido em detalhes na [série do provedor de streaming do serviços de dados de postagem: Implementando um provedor de streaming (parte 1)](/archive/blogs/astoriateam/data-services-streaming-provider-series-implementing-a-streaming-provider-part-1). O código-fonte do exemplo de serviço de dados de fotos de streaming está disponível no [GitHub](https://github.com/microsoftarchive/msdn-code-gallery-community-s-z/tree/master/Streaming%20Photo%20OData%20Service%20Sample).
 
 ## <a name="defining-a-media-link-entry-in-the-data-model"></a>Definindo uma entrada de link de mídia no modelo de dados
 
 O provedor de fonte de dados determina a maneira que uma entidade é definida como uma entrada de link de mídia no modelo de dados.
 
-**Entity Framework Provider** (Provedor de Entity Framework)
+**Provedor de Entity Framework**
 
 Para indicar que uma entidade é uma entrada de link de mídia, adicione o atributo `HasStream` à definição de tipo de entidade no modelo conceitual, como no exemplo a seguir:
 
@@ -53,13 +56,13 @@ Para indicar que uma entidade é uma entrada de link de mídia, adicione o atrib
 
 Você também deve adicionar o namespace `xmlns:m=http://schemas.microsoft.com/ado/2007/08/dataservices/metadata` à entidade ou à raiz do arquivo .edmx ou .csdl que define o modelo de dados.
 
-Para obter um exemplo de um serviço de dados que usa o provedor de Entity Framework e expõe um recurso de mídia, consulte a série do provedor de streaming do serviços de dados de postagem [: Implementando um provedor de streaming (parte 1)](https://docs.microsoft.com/archive/blogs/astoriateam/data-services-streaming-provider-series-implementing-a-streaming-provider-part-1).
+Para obter um exemplo de um serviço de dados que usa o provedor de Entity Framework e expõe um recurso de mídia, consulte a série do provedor de streaming do serviços de dados de postagem [: Implementando um provedor de streaming (parte 1)](/archive/blogs/astoriateam/data-services-streaming-provider-series-implementing-a-streaming-provider-part-1).
 
 **Provedor de reflexão**
 
 Para indicar que uma entidade é uma entrada de link de mídia, adicione o <xref:System.Data.Services.Common.HasStreamAttribute> à classe que define o tipo de entidade no provedor de reflexão.
 
-**Provedor de serviço de dados personalizado**
+**Provedor de serviços de dados personalizado**
 
 Ao usar provedores de serviços personalizados, você implementa a interface <xref:System.Data.Services.Providers.IDataServiceMetadataProvider> para definir os metadados do serviço de dados. Para obter mais informações, consulte [provedores de serviço de dados personalizados](custom-data-service-providers-wcf-data-services.md). Você indica que um fluxo de recurso binário pertence a um <xref:System.Data.Services.Providers.ResourceType> definindo a propriedade <xref:System.Data.Services.Providers.ResourceType.IsMediaLinkEntry%2A> para `true` no <xref:System.Data.Services.Providers.ResourceType> que representa o tipo de entidade, que é uma entrada de link de mídia.
 
@@ -79,7 +82,7 @@ Para criar um serviço de dados que oferece suporte a fluxos de dados binários,
 
 ## <a name="creating-the-streaming-data-service"></a>Criando o serviço de dados de streaming
 
-Para fornecer ao WCF Data Services tempo de execução com acesso à implementação de <xref:System.Data.Services.Providers.IDataServiceStreamProvider>, o serviço de dados que você cria também deve implementar a interface <xref:System.IServiceProvider>. O exemplo a seguir mostra como implementar o método <xref:System.IServiceProvider.GetService%2A> para retornar uma instância da classe `PhotoServiceStreamProvider` que implementa o <xref:System.Data.Services.Providers.IDataServiceStreamProvider>.
+Para fornecer ao WCF Data Services tempo de execução com acesso à <xref:System.Data.Services.Providers.IDataServiceStreamProvider> implementação, o serviço de dados que você cria também deve implementar a <xref:System.IServiceProvider> interface. O exemplo a seguir mostra como implementar o método <xref:System.IServiceProvider.GetService%2A> para retornar uma instância da classe `PhotoServiceStreamProvider` que implementa o <xref:System.Data.Services.Providers.IDataServiceStreamProvider>.
 
 [!code-csharp[Astoria Photo Streaming Service#PhotoServiceStreamingProvider](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_photo_streaming_service/cs/photodata.svc.cs#photoservicestreamingprovider)]
 [!code-vb[Astoria Photo Streaming Service#PhotoServiceStreamingProvider](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_photo_streaming_service/vb/photodata.svc.vb#photoservicestreamingprovider)]
@@ -91,11 +94,11 @@ Para obter informações gerais sobre como criar um serviço de dados, consulte 
 Quando você cria um serviço de dados em um aplicativo Web ASP.NET, o Windows Communication Foundation (WCF) é usado para fornecer a implementação do protocolo HTTP. Por padrão, o WCF limita o tamanho das mensagens HTTP a apenas 65 KB. Para transmitir dados binários grandes para e do serviço de dados, você também deve configurar o aplicativo Web para ativar arquivos binários grandes e usar fluxos de transferência. Para fazer isso, adicione o seguinte ao elemento `<configuration />` do arquivo Web.config do aplicativo:
 
 > [!NOTE]
-> Você deve usar um modo de transferência <xref:System.ServiceModel.TransferMode.Streamed?displayProperty=nameWithType> para garantir que os dados binários nas mensagens de solicitação e resposta sejam transmitidos e não armazenados em buffer pelo WCF.
+> Você deve usar um <xref:System.ServiceModel.TransferMode.Streamed?displayProperty=nameWithType> modo de transferência para garantir que os dados binários nas mensagens de solicitação e resposta sejam transmitidos e não armazenados em buffer pelo WCF.
 
 Para obter mais informações, consulte [streaming de transferência de mensagens](../../wcf/feature-details/streaming-message-transfer.md) e [cotas de transporte](../../wcf/feature-details/transport-quotas.md).
 
-Por padrão, Serviços de Informações da Internet (IIS) também limita o tamanho das solicitações para 4 MB. Para permitir que o serviço de dados receba fluxos com mais de 4 MB durante a execução no IIS, você também deve definir o atributo `maxRequestLength` do [elemento httpRuntime (esquema de configurações ASP.net)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/e1f13641(v=vs.100)) na seção de configuração `<system.web />`, conforme mostrado no exemplo a seguir:
+Por padrão, Serviços de Informações da Internet (IIS) também limita o tamanho das solicitações para 4 MB. Para permitir que o serviço de dados receba fluxos com mais de 4 MB durante a execução no IIS, você também deve definir o `maxRequestLength` atributo do [elemento httpRuntime (esquema de configurações ASP.net)](/previous-versions/dotnet/netframework-4.0/e1f13641(v=vs.100)) na `<system.web />` seção configuração, conforme mostrado no exemplo a seguir:
 
 ## <a name="using-data-streams-in-a-client-application"></a>Usando fluxos de dados em um aplicativo cliente
 
@@ -125,7 +128,7 @@ Considere o seguinte ao implementar um provedor de streaming e acessar recursos 
 
 - Ao implementar os métodos <xref:System.Data.Services.Providers.IDataServiceStreamProvider.DeleteStream%2A>, o <xref:System.Data.Services.Providers.IDataServiceStreamProvider.GetReadStream%2A> ou o <xref:System.Data.Services.Providers.IDataServiceStreamProvider.GetWriteStream%2A>, você deve usar os valores eTag e Content-Type fornecidos como parâmetros do método. Não defina cabeçalhos eTag ou Content-Type na implementação do provedor <xref:System.Data.Services.Providers.IDataServiceStreamProvider>.
 
-- Por padrão, o cliente envia fluxos binários grandes usando uma codificação de transferência HTTP em partes. Como o ASP.NET Development Server não dá suporte a esse tipo de codificação, você não pode usar esse servidor Web para hospedar um serviço de streaming de dados que deve aceitar fluxos binários grandes. Para obter mais informações sobre ASP.NET Development Server, consulte [servidores Web no Visual Studio para projetos Web do ASP.net](https://docs.microsoft.com/previous-versions/aspnet/58wxa9w5(v=vs.120)).
+- Por padrão, o cliente envia fluxos binários grandes usando uma codificação de transferência HTTP em partes. Como o ASP.NET Development Server não dá suporte a esse tipo de codificação, você não pode usar esse servidor Web para hospedar um serviço de streaming de dados que deve aceitar fluxos binários grandes. Para obter mais informações sobre ASP.NET Development Server, consulte [servidores Web no Visual Studio para projetos Web do ASP.net](/previous-versions/aspnet/58wxa9w5(v=vs.120)).
 
 <a name="versioning"></a>
 
@@ -137,8 +140,8 @@ O provedor de streaming tem os seguintes requisitos de controle de versão do pr
 
 Para obter mais informações, consulte [controle de versão do serviço de dados](data-service-versioning-wcf-data-services.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
-- [Provedores de Serviços de Dados](data-services-providers-wcf-data-services.md)
+- [Provedores de serviços de dados](data-services-providers-wcf-data-services.md)
 - [Provedores de serviços de dados personalizados](custom-data-service-providers-wcf-data-services.md)
-- [Trabalhando com os dados binários](working-with-binary-data-wcf-data-services.md)
+- [Trabalhar com os dados binários](working-with-binary-data-wcf-data-services.md)

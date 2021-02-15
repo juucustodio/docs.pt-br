@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugEval:: NewObject'
 title: Método ICorDebugEval::NewObject
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: ce3025e8-defa-4c5e-8298-f49d71fa5736
 topic_type:
 - apiref
-ms.openlocfilehash: e9570d3c916123093f69e7f26d3778f1c7184b1f
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: 0f7feb53d061e5dbc453015772b97f2a5a59bbb3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976181"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99693948"
 ---
 # <a name="icordebugevalnewobject-method"></a>Método ICorDebugEval::NewObject
+
 Aloca uma nova instância de objeto e chama o método de Construtor especificado.  
   
  Esse método é obsoleto no .NET Framework versão 2,0. Use [ICorDebugEval2:: NewParameterizedObject](icordebugeval2-newparameterizedobject-method.md) em vez disso.  
@@ -38,6 +40,7 @@ HRESULT NewObject (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pConstructor`  
  no O Construtor a ser chamado.  
   
@@ -48,6 +51,7 @@ HRESULT NewObject (
  no Uma matriz de objetos ICorDebugValue, cada um dos quais representa um argumento a ser passado para o construtor.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

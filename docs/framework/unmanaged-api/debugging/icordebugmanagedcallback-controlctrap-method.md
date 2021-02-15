@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugManagedCallback:: ControlCTrap'
 title: Método ICorDebugManagedCallback::ControlCTrap
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 0500854e-2121-43d9-a028-64312da35258
 topic_type:
 - apiref
-ms.openlocfilehash: 33a68d11a8d17e46533b4f83bbf87aafe171e612
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 9fa71dacb20ff6df21d8aabb687c2601f27643c7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83212393"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99791056"
 ---
 # <a name="icordebugmanagedcallbackcontrolctrap-method"></a>Método ICorDebugManagedCallback::ControlCTrap
+
 Notifica o depurador de que um CTRL + C foi interceptado no processo que está sendo depurado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,6 +36,7 @@ HRESULT ControlCTrap (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pProcess`  
  no Um ponteiro para um objeto ICorDebugProcess que representa o processo no qual o CTRL + C é interceptado.  
   
@@ -45,9 +48,11 @@ HRESULT ControlCTrap (
 |S_FALSE|O depurador não tratará a interceptação CTRL + C.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Todos os domínios de aplicativo no processo são interrompidos para este retorno de chamada.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -56,6 +61,6 @@ HRESULT ControlCTrap (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugManagedCallback](icordebugmanagedcallback-interface.md)

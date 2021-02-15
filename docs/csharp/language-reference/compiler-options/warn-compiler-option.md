@@ -14,14 +14,15 @@ helpviewer_keywords:
 - warn compiler option [C#]
 ms.custom: updateeachrelease
 ms.assetid: 5f80ff59-4991-4382-9f9a-77da18446e71
-ms.openlocfilehash: 55e80d0bd05e2119154210503bb277d743050e18
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: d59274423e6f9844d3ab22f3ac513ba1a05d7f07
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89139067"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "91171345"
 ---
 # <a name="-warn-c-compiler-options"></a>-warn (opções do compilador C#)
+
 A opção **-warn** especifica o nível de aviso a ser exibido pelo compilador.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -31,6 +32,7 @@ A opção **-warn** especifica o nível de aviso a ser exibido pelo compilador.
 ```  
   
 ## <a name="arguments"></a>Argumentos  
+
  `option`  
  O nível de aviso que você deseja que seja exibido para a compilação: números mais baixos mostram apenas avisos de gravidade alta; números mais altos mostram mais avisos. O valor deve ser zero ou um inteiro positivo:
 
@@ -45,6 +47,7 @@ A opção **-warn** especifica o nível de aviso a ser exibido pelo compilador.
 |Maior que 5|Qualquer valor maior que 5 será tratado como 5. Em geral, você coloca um valor grande arbitrário (por exemplo, `9999` ) para certificar-se de sempre ter todos os avisos se o compilador for atualizado com novos níveis de aviso.|
   
 ## <a name="remarks"></a>Comentários  
+
  Para obter informações sobre um erro ou aviso, você pode procurar o código de erro no Índice da Ajuda. Para outras maneiras de se obter informações sobre um erro ou aviso, consulte [Erros do compilador do C#](../compiler-messages/index.md).  
   
  Use [-warnaserror](./warnaserror-compiler-option.md) para tratar todos os avisos como erros. Use [-nowarn](./nowarn-compiler-option.md) para desabilitar determinados avisos.  
@@ -62,6 +65,7 @@ A opção **-warn** especifica o nível de aviso a ser exibido pelo compilador.
  Para obter informações sobre como definir essa opção do compilador programaticamente, consulte <xref:VSLangProj80.CSharpProjectConfigurationProperties3.WarningLevel%2A>.  
   
 ## <a name="example"></a>Exemplo  
+
  Compilar `in.cs` e fazer com que o compilador exiba somente avisos de nível 1:  
   
 ```console  
@@ -70,5 +74,5 @@ csc -warn:1 in.cs
   
 ## <a name="see-also"></a>Confira também
 
-- [Opções do compilador C#](./index.md)
+- [Opções do compilador de C#](./index.md)
 - [Gerenciando propriedades de solução e de projeto](/visualstudio/ide/managing-project-and-solution-properties)

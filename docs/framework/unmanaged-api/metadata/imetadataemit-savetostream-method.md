@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataEmit:: SaveToStream'
 title: Método IMetaDataEmit::SaveToStream
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: e0290a49-3818-4a43-ad46-3014faa34f97
 topic_type:
 - apiref
-ms.openlocfilehash: 87e00a69643b6bc403188fb0fdb6f9e3f3d82115
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 104aa0b0dfcd0f4f9e8b87b4633880f6423f92d0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84003865"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99706650"
 ---
 # <a name="imetadataemitsavetostream-method"></a>Método IMetaDataEmit::SaveToStream
+
 Salva todos os metadados no escopo atual para o especificado `IStream` .  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,6 +37,7 @@ HRESULT SaveToStream (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pIStream`  
  no O fluxo gravável no qual salvar.  
   
@@ -42,15 +45,16 @@ HRESULT SaveToStream (
  [in] Reservado. Deve ser zero.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MSCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataEmit](imetadataemit-interface.md)
 - [Interface IMetaDataEmit2](imetadataemit2-interface.md)

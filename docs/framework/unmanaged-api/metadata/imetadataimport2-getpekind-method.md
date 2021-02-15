@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataImport2:: GetPEKind'
 title: Método IMetaDataImport2::GetPEKind
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: d91c3d89-8022-4a4c-a2a2-a8af2c387507
 topic_type:
 - apiref
-ms.openlocfilehash: 3626998c456e23fb922ae45a68bedb0e45a7ccba
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 3cd003f4b1a56f59b9e8c89bf1c4f8f2f8c7fea1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84490426"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99688566"
 ---
 # <a name="imetadataimport2getpekind-method"></a>Método IMetaDataImport2::GetPEKind
+
 Obtém um valor que identifica a natureza do código no arquivo executável portátil (PE), normalmente um arquivo DLL ou EXE, que é definido no escopo de metadados atual.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,6 +37,7 @@ HRESULT GetPEKind (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pdwPEKind`  
  fora Um ponteiro para um valor da enumeração [CorPEKind](corpekind-enumeration.md) que descreve o arquivo PE.  
   
@@ -42,6 +45,7 @@ HRESULT GetPEKind (
  fora Um ponteiro para um valor que identifica a arquitetura do computador. Consulte a próxima seção para obter os valores possíveis.  
   
 ## <a name="remarks"></a>Comentários  
+
  O valor referenciado pelo `pdwMachine` parâmetro pode ser um dos seguintes.  
   
 |Valor|Arquitetura do computador|  
@@ -51,15 +55,16 @@ HRESULT GetPEKind (
 |IMAGE_FILE_MACHINE_AMD64<br /><br /> 0x8664|x64|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataImport2](imetadataimport2-interface.md)
 - [Interface IMetaDataImport](imetadataimport-interface.md)

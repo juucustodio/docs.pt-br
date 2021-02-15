@@ -3,14 +3,15 @@ description: -target:winmdobj (opções do compilador C#)
 title: -target:winmdobj (opções do compilador C#)
 ms.date: 07/20/2015
 ms.assetid: 1819a045-659d-498a-9457-c466e902986f
-ms.openlocfilehash: 66a4bddb34832705ad4779829e561afd9442be8f
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: a13e2da02698209a514e716d65c1df3508cf1508
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89139080"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "91171397"
 ---
 # <a name="-targetwinmdobj-c-compiler-options"></a>-target:winmdobj (opções do compilador C#)
+
 Se você usar a opção do compilador **-target:winmdobj**, o compilador criará um arquivo .winmdobj intermediário que pode ser convertido em um arquivo binário do Windows Runtime (.winmd). O arquivo .winmd pode, então, ser consumido por programas JavaScript e C++, bem como programas de linguagem gerenciada.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -20,6 +21,7 @@ Se você usar a opção do compilador **-target:winmdobj**, o compilador criará
 ```  
   
 ## <a name="remarks"></a>Comentários  
+
  A configuração **winmdobj** indica para o compilador que um módulo intermediário é necessário. Em resposta, o Visual Studio compila a biblioteca de classes do C# como um arquivo .winmdobj. O arquivo .winmdobj pode, então, ser alimentado por meio da ferramenta de exportação <xref:Microsoft.Build.Tasks.WinMDExp> para produzir um arquivo de metadados do Windows (.winmd). O arquivo .winmd contém o código da biblioteca original e os metadados do WinMD que são usados pelo JavaScript ou C++ e pelo Windows Runtime.  
   
  A saída de um arquivo que é compilado usando a opção do compilador **-target:winmdobj** foi criada para ser usada apenas como entrada para a ferramenta de exportação WimMDExp. O arquivo .winmdobj em si não é referenciado diretamente.  
@@ -41,6 +43,7 @@ Se você usar a opção do compilador **-target:winmdobj**, o compilador criará
  Para saber mais sobre como definir essa opção do compilador programaticamente, veja <xref:VSLangProj80.ProjectProperties3.OutputType%2A>.  
   
 ## <a name="example"></a>Exemplo  
+
  O comando a seguir compila `filename.cs` em um arquivo .winmdobj intermediário.  
   
 ```console  
@@ -50,4 +53,4 @@ csc -target:winmdobj filename.cs
 ## <a name="see-also"></a>Confira também
 
 - [-Target (opções do compilador C#)](./target-compiler-option.md)
-- [Opções do compilador C#](./index.md)
+- [Opções do compilador de C#](./index.md)

@@ -1,17 +1,17 @@
 ---
+description: 'Saiba mais sobre: modos de latência'
 title: Modos de latência
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - garbage collection, intrusiveness
 - garbage collection, latency modes
 ms.assetid: 96278bb7-6eab-4612-8594-ceebfc887d81
-ms.openlocfilehash: ee45fe5e8016c7507bc3a873e615fd8379810a8e
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: f709fa023870939dc6bfd7f2bf6145ee7f7d8e40
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286009"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99713241"
 ---
 # <a name="latency-modes"></a>Modos de latência
 
@@ -41,7 +41,7 @@ A tabela a seguir lista os cenários de aplicativo para usar os <xref:System.Run
 
 |Modo de latência|Cenários de aplicativos|
 |------------------|---------------------------|
-|<xref:System.Runtime.GCLatencyMode.Batch>|Para aplicativos que não têm nenhuma interface do usuário ou operações do lado do servidor.<br /><br />Quando a coleta de lixo em segundo plano está desabilitada, esse é o modo padrão para a coleta de lixo da estação de trabalho e do servidor. <xref:System.Runtime.GCLatencyMode.Batch>também substitui a configuração [gcConcurrent](../../framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) , ou seja, impede coleções em segundo plano ou simultâneas.|
+|<xref:System.Runtime.GCLatencyMode.Batch>|Para aplicativos que não têm nenhuma interface do usuário ou operações do lado do servidor.<br /><br />Quando a coleta de lixo em segundo plano está desabilitada, esse é o modo padrão para a coleta de lixo da estação de trabalho e do servidor. <xref:System.Runtime.GCLatencyMode.Batch> também substitui a configuração [gcConcurrent](../../framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) , ou seja, impede coleções em segundo plano ou simultâneas.|
 |<xref:System.Runtime.GCLatencyMode.Interactive>|Para a maioria dos aplicativos que têm uma interface do usuário.<br /><br />Este é o modo padrão para a coleta de lixo da estação de trabalho e do servidor. No entanto, se um aplicativo estiver hospedado, as configurações do coletor de lixo do processo de hospedagem têm precedência.|
 |<xref:System.Runtime.GCLatencyMode.LowLatency>|Para aplicativos que têm operações de curto prazo, sensíveis ao tempo, durante o qual as interrupções do coletor de lixo podem ser prejudiciais. Por exemplo, aplicativos que renderizam animações ou funções de aquisição de dados.|
 |<xref:System.Runtime.GCLatencyMode.SustainedLowLatency>|Para aplicativos que têm operações sensíveis ao tempo, por uma duração contida, mas potencialmente maior, durante a qual as interrupções do coletor de lixo poderiam ser prejudiciais. Por exemplo, aplicativos que precisam de tempos de resposta rápidos, como alterações de dados de mercado durante o horário comercial.<br /><br />Esse modo resulta em um tamanho maior do heap gerenciado do que outros modos. Como ele não compacta o heap gerenciado, é possível maior fragmentação. Verifique se há memória suficiente disponível.|
@@ -62,7 +62,7 @@ Ao usar o modo [GCLatencyMode. LowLatency](xref:System.Runtime.GCLatencyMode.Low
 
 - Você pode forçar coletas da geração 2 durante um período de baixa latência ao chamar o método <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%29?displayProperty=nameWithType>.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.GC?displayProperty=nameWithType>
 - [Coleções induzidas](induced.md)

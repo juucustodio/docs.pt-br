@@ -9,13 +9,12 @@ helpviewer_keywords:
 - Windows service applications, walkthroughs
 - Windows service applications, creating
 ms.assetid: e24d8a3d-edc6-485c-b6e0-5672d91fb607
-author: ghogen
-ms.openlocfilehash: 487a974af2280a02b83fe685324c9464df705585
-ms.sourcegitcommit: 40de8df14289e1e05b40d6e5c1daabd3c286d70c
+ms.openlocfilehash: bbf9ab7d06c952aa2e076fc36c71f37f1bb10884
+ms.sourcegitcommit: 97405ed212f69b0a32faa66a5d5fae7e76628b68
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86925625"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91608381"
 ---
 # <a name="tutorial-create-a-windows-service-app"></a>Tutorial: criar um aplicativo de serviço do Windows
 
@@ -471,11 +470,11 @@ Cada serviço Windows tem uma entrada do Registro na subchave **HKEY_LOCAL_MACHI
 
 Agora que você criou o serviço Windows, poderá instalá-lo. Para instalar um serviço Windows, é necessário ter credenciais de administrador no computador no qual ele é instalado.
 
-1. Abra o [Prompt de Comando do Desenvolvedor para Visual Studio](https://docs.microsoft.com/dotnet/framework/tools/developer-command-prompt-for-vs) com credenciais administrativas. No menu **Iniciar** do Windows, selecione **Prompt de Comando do Desenvolvedor para VS 2017** na pasta Visual Studio e, em seguida, selecione **Mais** > **Executar como Administrador** no menu de atalho.
+1. Abra o [Prompt de Comando do Desenvolvedor para Visual Studio](../tools/developer-command-prompt-for-vs.md) com credenciais administrativas. No menu **Iniciar** do Windows, selecione **Prompt de Comando do Desenvolvedor para VS 2017** na pasta Visual Studio e, em seguida, selecione **Mais** > **Executar como Administrador** no menu de atalho.
 
 2. Na janela **Prompt de Comando do Desenvolvedor para Visual Studio**, navegue para a pasta que contém a saída do projeto (por padrão, o subdiretório *\bin\Debug* do projeto).
 
-3. Insira o seguinte comando:
+3. Digite o seguinte comando:
 
     ```shell
     installutil MyNewService.exe
@@ -527,7 +526,7 @@ Caso não precise mais do aplicativo serviço Windows, remova-o.
 
 2. Na janela **Prompt de Comando do Desenvolvedor para Visual Studio**, navegue para a pasta que contém a saída do projeto.
 
-3. Insira o seguinte comando:
+3. Digite o seguinte comando:
 
     ```shell
     installutil.exe /u MyNewService.exe
@@ -545,7 +544,7 @@ Agora que você criou o serviço, você poderá:
 
 - Em vez de criar o log de eventos quando o aplicativo é executado, use um instalador para criar um log de eventos ao instalar o aplicativo. O log de eventos é excluído pelo instalador quando você desinstala o aplicativo. Para obter mais informações, consulte <xref:System.Diagnostics.EventLogInstaller>.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Aplicativos de serviço do Windows](index.md)
 - [Introdução aos aplicativos de serviço do Windows](introduction-to-windows-service-applications.md)

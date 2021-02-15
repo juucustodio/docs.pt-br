@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Função StrongNameErrorInfo'
 title: Função StrongNameErrorInfo
 ms.date: 03/30/2017
 api_name:
@@ -18,14 +19,15 @@ helpviewer_keywords:
 ms.assetid: e91bf8c3-7c26-4732-938e-2e5b04abfc99
 topic_type:
 - apiref
-ms.openlocfilehash: d5eedc34b75d3a0c02969c06454b0f7ec942ed17
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: a02e5f3d101a34c8ed13cb0f70fd2e95d945cb4e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79176936"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99646394"
 ---
 # <a name="strongnameerrorinfo-function"></a>Função StrongNameErrorInfo
+
 Obtém o último código de erro que foi gerado por uma das funções de nome forte.  
   
  Esta função foi preterida.  
@@ -37,16 +39,19 @@ HRESULT StrongNameErrorInfo ();
 ```  
   
 ## <a name="return-value"></a>Valor retornado  
+
  O último código de erro COM definido por uma das funções de nome forte.  
   
 ## <a name="remarks"></a>Comentários  
- A maioria dos métodos de `true` `false` nome forte retornam uma simples ou indicação de conclusão bem sucedida. Use `StrongNameErrorInfo` a função para recuperar um HRESULT que especifica o último erro gerado pelas funções de nome forte.  
+
+ A maioria dos métodos de nome forte retorna uma simples `true` ou uma `false` indicação de conclusão bem-sucedida. Use a `StrongNameErrorInfo` função para recuperar um HRESULT que especifica o último erro gerado pelas funções de nome forte.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
- **Cabeçalho:** StrongName.h  
+ **Cabeçalho:** StrongName. h  
   
- **Biblioteca:** Incluído como um recurso em MsCorEE.dll  
+ **Biblioteca:** Incluído como um recurso no MsCorEE.dll  
   
- **.NET Framework Versions:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+ **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  

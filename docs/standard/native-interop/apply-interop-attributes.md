@@ -4,29 +4,31 @@ description: Este artigo resume os atributos de interoperabilidade COM do namesp
 ms.date: 03/30/2017
 helpviewer_keywords:
 - design-time attributes
-- .NET Framework, exposing components to COM
-- attributes [.NET Framework], design-time functionality
+- .NET, exposing components to COM
+- attributes [.NET], design-time functionality
 - conversion-tool attributes
-- attributes [.NET Framework], interop-specific
-- attributes [.NET Framework], conversion-tool
+- attributes [.NET], interop-specific
+- attributes [.NET], conversion-tool
 - interoperation with unmanaged code, applying attributes
-- interoperation with unmanaged code, exposing .NET Framework components
+- interoperation with unmanaged code, exposing .NET components
 - COM interop, exposing COM components
 - COM interop, applying attributes
 ms.assetid: b6014613-641c-4912-9e2f-83a99210a037
-ms.openlocfilehash: f9ccf59e52c1ef27649cd70a57f7b24bb5a8e9bf
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 38632c5a1f462c3a7b537978fde81424916746da
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84291325"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95706288"
 ---
 # <a name="applying-interop-attributes"></a>Aplicando atributos de interoperabilidade
+
 O namespace <xref:System.Runtime.InteropServices> fornece três categorias de atributos específicos à interoperabilidade: aquelas aplicadas por você em tempo de design, aquelas aplicadas pelas ferramentas de interoperabilidade COM e as APIs durante o processo de conversão e aquelas aplicadas por você ou pela interoperabilidade COM.  
   
  Se você não estiver familiarizado com a tarefa de aplicação de atributos ao código gerenciado, consulte [Estendendo metadados usando atributos](../attributes/index.md). Assim como outros atributos personalizados, você pode aplicar atributos específicos à interoperabilidade a tipos, métodos, propriedades, parâmetros, campos e outros membros.  
   
 ## <a name="design-time-attributes"></a>Atributos em tempo de design  
+
  Ajuste o resultado do processo de conversão executado pelas APIs e pelas ferramentas de interoperabilidade COM usando atributos em tempo de design. A tabela a seguir descreve os atributos que podem ser aplicados ao código-fonte gerenciado. Às vezes, as ferramentas de interoperabilidade COM também podem aplicar os atributos descritos nesta tabela.  
   
 |Atributo|Descrição|  
@@ -51,10 +53,11 @@ O namespace <xref:System.Runtime.InteropServices> fornece três categorias de at
 |<xref:System.Runtime.InteropServices.OptionalAttribute>|Indica que um parâmetro é opcional.<br /><br /> Ferramentas de interoperabilidade COM podem aplicar esse atributo.|  
 |<xref:System.Runtime.InteropServices.OutAttribute>|Indica se os dados em um campo ou parâmetro devem ter o marshaling realizado de um objeto chamado novamente para seu chamador.|  
 |<xref:System.Runtime.InteropServices.PreserveSigAttribute>|Suprime a transformação de assinatura HRESULT ou retval que normalmente ocorre durante chamadas de interoperação. O atributo afeta o marshaling, bem como a exportação da biblioteca de tipos.<br /><br /> Ferramentas de interoperabilidade COM podem aplicar esse atributo.|  
-|<xref:System.Runtime.InteropServices.ProgIdAttribute>|Especifica o ProgID de uma classe do .NET Framework. Pode ser usado para classes de atributos.|  
+|<xref:System.Runtime.InteropServices.ProgIdAttribute>|Especifica o ProgID de uma classe .NET. Pode ser usado para classes de atributos.|  
 |<xref:System.Runtime.InteropServices.StructLayoutAttribute>|Controla o layout físico dos campos de uma classe.<br /><br /> Ferramentas de interoperabilidade COM podem aplicar esse atributo.|  
   
 ## <a name="conversion-tool-attributes"></a>Atributos da ferramenta de conversão  
+
  A tabela a seguir descreve os atributos que as ferramentas de interoperabilidade COM aplicam durante o processo de conversão. Esses atributos não são aplicados em tempo de design.  
   
 |Atributo|Descrição|  
@@ -67,7 +70,7 @@ O namespace <xref:System.Runtime.InteropServices> fornece três categorias de at
 |<xref:System.Runtime.InteropServices.TypeLibTypeAttribute>|Contém o **TYPEFLAGS** que foi originalmente importado para esse tipo da biblioteca de tipos COM.|  
 |<xref:System.Runtime.InteropServices.TypeLibVarAttribute>|Contém o **VARFLAGS** que foi originalmente importado para essa variável da biblioteca de tipos COM.|  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.Runtime.InteropServices>
 - [Expondo componentes do .NET Framework para COM](../../framework/interop/exposing-dotnet-components-to-com.md)

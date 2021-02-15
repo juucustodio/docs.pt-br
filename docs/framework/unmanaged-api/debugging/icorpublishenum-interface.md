@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorPublishEnum'
 title: Interface ICorPublishEnum
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 76a136b5-e444-417a-8ade-f1596d597dc7
 topic_type:
 - apiref
-ms.openlocfilehash: acbc37d0f49af21c60ff6989932c5d341673512b
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: c0d50f67bd61eecbade0b226f2f569ac26712faf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83421170"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721589"
 ---
 # <a name="icorpublishenum-interface"></a>Interface ICorPublishEnum
+
 Serve como a interface base abstrata para os enumeradores que são usados na publicação de informações sobre processos e domínios de aplicativo.  
   
 ## <a name="methods"></a>Métodos  
@@ -34,6 +36,7 @@ Serve como a interface base abstrata para os enumeradores que são usados na pub
 |[Método Skip](icorpublishenum-skip-method.md)|Move o cursor para a frente na enumeração pelo número especificado de itens.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Os seguintes enumeradores derivam de `ICorPublishEnum` :  
   
 - [ICorPublishAppDomainEnum](icorpublishappdomainenum-interface.md)  
@@ -41,6 +44,7 @@ Serve como a interface base abstrata para os enumeradores que são usados na pub
 - [ICorPublishProcessEnum](icorpublishprocessenum-interface.md)  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorPub. idl, CorPub. h  
@@ -49,7 +53,7 @@ Serve como a interface base abstrata para os enumeradores que são usados na pub
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Coclass CorpubPublish](corpubpublish-coclass.md)
 - [Depurando interfaces](debugging-interfaces.md)

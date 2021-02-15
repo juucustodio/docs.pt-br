@@ -1,25 +1,28 @@
 ---
+description: 'Saiba mais sobre: FailedToInitializeTraceSource'
 title: FailedToInitializeTraceSource
 ms.date: 03/30/2017
 ms.assetid: ce6fea55-292c-4fb9-908e-3713fcd4cf8f
-ms.openlocfilehash: bda061bb77b8bde44592c61c44bcfa6bef320dfa
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: 9f8ce4ae04efecdb35f4e0679a4253b4e9a1504e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70797944"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99635929"
 ---
 # <a name="failedtoinitializetracesource"></a>FailedToInitializeTraceSource
-Sessão 101  
+
+ID: 101  
   
- Severity Erro  
+ Gravidade: Erro  
   
- Categorias Rastreamento  
+ Categoria: rastreamento  
   
 ## <a name="description"></a>Descrição  
+
  A origem do rastreamento não foi inicializada. O rastreamento está desabilitado. O evento lista a exceção, o nome do processo e a ID do processo.  
   
 ## <a name="see-also"></a>Consulte também
 
-- [Registro de eventos em log](index.md)
+- [Log de eventos](index.md)
 - [Referência geral de eventos](events-general-reference.md)

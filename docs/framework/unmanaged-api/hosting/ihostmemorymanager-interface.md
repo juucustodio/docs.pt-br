@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IHostMemoryManager'
 title: Interface IHostMemoryManager
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: a945d439-3b34-4aa4-b575-8413dd7806ce
 topic_type:
 - apiref
-ms.openlocfilehash: 09b4a06892cdc450eed9dead503a990b6f19804e
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: c9b6f83b5c70a53388e886e1047798f660b826e0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84501502"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707859"
 ---
 # <a name="ihostmemorymanager-interface"></a>Interface IHostMemoryManager
+
 Fornece métodos que permitem que o Common Language Runtime (CLR) faça solicitações de memória virtual por meio do host, em vez de usar as funções de memória virtual Win32 padrão.  
   
 ## <a name="methods"></a>Métodos  
@@ -40,18 +42,20 @@ Fornece métodos que permitem que o Common Language Runtime (CLR) faça solicita
 |[Método VirtualQuery](ihostmemorymanager-virtualquery-method.md)|Serve como um wrapper lógico para a função Win32 correspondente, que recupera informações sobre um intervalo de páginas no espaço de endereço virtual do processo de chamada.|  
   
 ## <a name="remarks"></a>Comentários  
- `IHostMemoryManager`também fornece métodos para o CLR obter um ponteiro por meio do qual fazer solicitações de memória no heap e obter o nível de pressão de memória no processo, conforme relatado pelo host.  
+
+ `IHostMemoryManager` também fornece métodos para o CLR obter um ponteiro por meio do qual fazer solicitações de memória no heap e obter o nível de pressão de memória no processo, conforme relatado pelo host.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IHostMalloc](ihostmalloc-interface.md)
 - [Interfaces de hospedagem](hosting-interfaces.md)

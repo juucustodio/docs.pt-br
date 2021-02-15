@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebug:: CreateProcess'
 title: Método ICorDebug::CreateProcess
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: b6128694-11ed-46e7-bd4e-49ea1914c46a
 topic_type:
 - apiref
-ms.openlocfilehash: b9ae2b36bff9b4a6c048a8de99fa7d09350b1401
-ms.sourcegitcommit: d9c7ac5d06735a01c1fafe34efe9486734841a72
+ms.openlocfilehash: b504b5f7a60fd0fd4a8f8f1c5d8e3c3b8dcfd858
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82859716"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99712110"
 ---
 # <a name="icordebugcreateprocess-method"></a>Método ICorDebug::CreateProcess
+
 Inicia um processo e seu thread principal sob o controle do depurador.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -45,17 +47,18 @@ HRESULT CreateProcess (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `lpApplicationName`  
  no Ponteiro para uma cadeia de caracteres terminada em nulo que especifica o módulo a ser executado pelo processo iniciado. O módulo é executado no contexto de segurança do processo de chamada.  
   
  `lpCommandLine`  
- no Ponteiro para uma cadeia de caracteres terminada em nulo que especifica a linha de comando a ser executada pelo processo iniciado. O nome do aplicativo (por exemplo, "SomeApp. exe") deve ser o primeiro argumento.  
+ no Ponteiro para uma cadeia de caracteres terminada em nulo que especifica a linha de comando a ser executada pelo processo iniciado. O nome do aplicativo (por exemplo, "SomeApp.exe") deve ser o primeiro argumento.  
   
  `lpProcessAttributes`  
- no Ponteiro para uma estrutura `SECURITY_ATTRIBUTES` Win32 que especifica o descritor de segurança para o processo. Se `lpProcessAttributes` for NULL, o processo obterá um descritor de segurança padrão.  
+ no Ponteiro para uma `SECURITY_ATTRIBUTES` estrutura Win32 que especifica o descritor de segurança para o processo. Se `lpProcessAttributes` for NULL, o processo obterá um descritor de segurança padrão.  
   
  `lpThreadAttributes`  
- no Ponteiro para uma estrutura `SECURITY_ATTRIBUTES` Win32 que especifica o descritor de segurança para o thread principal do processo. Se `lpThreadAttributes` for NULL, o thread obterá um descritor de segurança padrão.  
+ no Ponteiro para uma `SECURITY_ATTRIBUTES` estrutura Win32 que especifica o descritor de segurança para o thread principal do processo. Se `lpThreadAttributes` for NULL, o thread obterá um descritor de segurança padrão.  
   
  `bInheritHandles`  
  no Defina como `true` para indicar que cada identificador herdável no processo de chamada é herdado pelo processo iniciado ou `false` para indicar que os identificadores não são herdados. Os identificadores herdados têm o mesmo valor e direitos de acesso que os identificadores originais.  
@@ -70,10 +73,10 @@ HRESULT CreateProcess (
  no Ponteiro para uma cadeia de caracteres terminada em nulo que especifica o caminho completo para o diretório atual para o processo. Se esse parâmetro for nulo, o novo processo terá a mesma unidade e diretório atuais que o processo de chamada.  
   
  `lpStartupInfo`  
- no Ponteiro para uma estrutura `STARTUPINFOW` Win32 que especifica a estação da janela, a área de trabalho, os identificadores padrão e a aparência da janela principal para o processo iniciado.  
+ no Ponteiro para uma `STARTUPINFOW` estrutura Win32 que especifica a estação da janela, a área de trabalho, os identificadores padrão e a aparência da janela principal para o processo iniciado.  
   
  `lpProcessInformation`  
- no Ponteiro para uma estrutura `PROCESS_INFORMATION` Win32 que especifica as informações de identificação sobre o processo a ser iniciado.  
+ no Ponteiro para uma `PROCESS_INFORMATION` estrutura Win32 que especifica as informações de identificação sobre o processo a ser iniciado.  
   
  `debuggingFlags`  
  no Um valor da Enumeração CorDebugCreateProcessFlags que especifica as opções de depuração.  
@@ -82,7 +85,8 @@ HRESULT CreateProcess (
  fora Um ponteiro para o endereço de um objeto ICorDebugProcess que representa o processo.  
   
 ## <a name="remarks"></a>Comentários  
- Os parâmetros desse método são os mesmos que os do método Win32 `CreateProcess` .  
+
+ Os parâmetros desse método são os mesmos que os do `CreateProcess` método Win32.  
   
  Para habilitar a depuração de modo misto não gerenciado, defina `dwCreationFlags` como DEBUG_PROCESS &#124; DEBUG_ONLY_THIS_PROCESS. Se você quiser usar apenas a depuração gerenciada, não defina esses sinalizadores.  
   
@@ -91,6 +95,7 @@ HRESULT CreateProcess (
  Não há suporte para depuração de interoperabilidade em plataformas Win9x e não x86, como plataformas baseadas em IA-64 e AMD64.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -99,6 +104,6 @@ HRESULT CreateProcess (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebug](icordebug-interface.md)

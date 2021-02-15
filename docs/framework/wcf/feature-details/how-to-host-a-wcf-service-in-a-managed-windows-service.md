@@ -1,19 +1,19 @@
 ---
-title: Como hospedar um serviço WCF em um serviço Windows gerenciado
+title: 'Como: hospedar um serviço WCF em um serviço Windows gerenciado'
 description: Saiba como criar um serviço WCF que é hospedado por um serviço do Windows. Essa opção de hospedagem está disponível em todas as versões do Windows.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 8e37363b-4dad-4fb6-907f-73c30fac1d9a
-ms.openlocfilehash: 4e07aa7aac82fae5cfd1bfc759ef724cf87a873a
-ms.sourcegitcommit: 358a28048f36a8dca39a9fe6e6ac1f1913acadd5
+ms.openlocfilehash: 21d3dcb05e48154eb3f9f10d8308dc14bd046ae1
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85246930"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90546335"
 ---
-# <a name="how-to-host-a-wcf-service-in-a-managed-windows-service"></a>Como hospedar um serviço WCF em um serviço Windows gerenciado
+# <a name="how-to-host-a-wcf-service-in-a-managed-windows-service"></a>Como: hospedar um serviço WCF em um serviço Windows gerenciado
 
 Este tópico descreve as etapas básicas necessárias para criar um serviço de Windows Communication Foundation (WCF) que é hospedado por um serviço do Windows. O cenário é habilitado pela opção de Hospedagem de serviço do Windows gerenciado que é um serviço WCF de longa execução hospedado fora do Serviços de Informações da Internet (IIS) em um ambiente seguro que não é ativado pela mensagem. O tempo de vida do serviço é controlado pelo sistema operacional. Essa opção de hospedagem está disponível em todas as versões do Windows.
 
@@ -134,9 +134,9 @@ A seguir está uma lista completa do código usado por este tópico:
 
 Como a opção de "auto-hospedagem", o ambiente de hospedagem de serviços Windows requer que algum código de hospedagem seja criado como parte do aplicativo. O serviço é implementado como um aplicativo de console e contém seu próprio código de hospedagem. Em outros ambientes de hospedagem, como o WAS (Serviço de Ativação de Processos do Windows), hospedado no IIS, não é necessário que os desenvolvedores criem código de hospedagem.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Configuração simplificada](../simplified-configuration.md)
 - [Hospedagem em um aplicativo gerenciado](hosting-in-a-managed-application.md)
-- [Hospedando serviços](../hosting-services.md)
-- [Recursos de hospedagem do Windows Server AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))
+- [Serviços de hospedagem](../hosting-services.md)
+- [Recursos de hospedagem do Windows Server AppFabric](/previous-versions/appfabric/ee677189(v=azure.10))

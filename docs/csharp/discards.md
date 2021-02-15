@@ -2,85 +2,88 @@
 title: Descartes – Guia do C#
 description: Descreve o suporte do C# a descartes, que são variáveis descartáveis não atribuídas, além das maneiras em que descartes podem ser usados.
 ms.technology: csharp-fundamentals
-ms.date: 07/21/2017
-ms.openlocfilehash: a76e7fc13f92ec0de87153bb35eb3924bb317616
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.date: 09/22/2020
+ms.openlocfilehash: 3c18fbb0bbb80c2c29c9f5d8334a5dd711b68cc5
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "73100634"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100432628"
 ---
 # <a name="discards---c-guide"></a>Descartes – Guia do C#
 
-Começando com o C# 7.0, o C# é compatível com descartes, que são variáveis temporárias e fictícias, não utilizadas intencionalmente no código do aplicativo. Descartes são equivalentes a variáveis não atribuídas; eles não têm um valor. Já que há apenas uma variável de descarte e essa variável pode nem mesmo ser de armazenamento alocado, descartes podem reduzir as alocações de memória. Por deixarem clara a intenção do seu código, eles melhoram a sua legibilidade e a facilidade de manutenção.
+A partir do C# 7,0, o C# dá suporte a Descartes, que são variáveis de espaço reservado que são intencionalmente não usadas no código do aplicativo. Os descartes são equivalentes a variáveis não atribuídas; Eles não têm um valor. Um descarte se comunica com a intenção do compilador e outros que lêem seu código: você pretende ignorar o resultado de uma expressão. Talvez você queira ignorar o resultado de uma expressão, um ou mais membros de uma expressão de tupla, um `out` parâmetro para um método ou o destino de uma expressão de correspondência de padrões.
 
-Você indica que uma variável é um descarte atribuindo a ela o sublinhado (`_`) como seu nome. Por exemplo, a chamada de método a seguir retorna uma tupla de 3 na qual o primeiro e o segundo valores são descartes, e *area* é uma variável declarada anteriormente para ser definida para o terceiro componente correspondente retornado por *GetCityInformation*:
+Como há apenas uma única variável de descarte, essa variável talvez nem mesmo seja um armazenamento alocado. Os descartes podem reduzir as alocações de memória. Os descartes tornam a intenção do seu código claro. Eles aprimoram sua legibilidade e facilidade de manutenção.
+
+Você indica que uma variável é um descarte atribuindo a ela o sublinhado (`_`) como seu nome. Por exemplo, a chamada de método a seguir retorna uma tupla na qual o primeiro e o segundo valores são descartados. `area` é uma variável previamente declarada definida para o terceiro componente retornado por `GetCityInformation` :
 
 ```csharp
 (_, _, area) = city.GetCityInformation(cityName);
 ```
 
-No C# 7.0, há suporte para descartes em atribuições nos seguintes contextos:
+A partir do C# 9,0, você pode usar os descartes para especificar parâmetros de entrada não utilizados de uma expressão lambda. Para obter mais informações, consulte a seção [parâmetros de entrada de uma expressão lambda](language-reference/operators/lambda-expressions.md#input-parameters-of-a-lambda-expression) do artigo [expressões lambda](language-reference/operators/lambda-expressions.md) .
 
-- Tuple e [desconstrução de objetos.](deconstruct.md)
-- Correspondência de padrões com [is](language-reference/keywords/is.md) e [switch](language-reference/keywords/switch.md).
-- Chamadas para métodos com parâmetros `out`.
-- Um `_` autônomo quando nenhum `_` está no escopo.
-
-Quando `_` é um descarte válido, tentar recuperar seu valor ou usá-lo em uma operação de atribuição gera o erro do compilador CS0301, "O nome '\_' não existe no contexto atual". Isso ocorre porque não há um valor atribuído a `_` e pode não haver nem mesmo um local de armazenamento atribuído a ela. Se ela fosse uma variável real, você não poderia descartar mais de um valor, tal como ocorreu no exemplo anterior.
+Quando `_` é um descarte válido, tentar recuperar seu valor ou usá-lo em uma operação de atribuição gera o erro de compilador CS0301, "o nome ' \_ ' não existe no contexto atual". Esse erro ocorre porque o `_` não recebe um valor e pode nem mesmo ser atribuído a um local de armazenamento. Se fosse uma variável real, você não poderia descartar mais de um valor, como fazia o exemplo anterior.
 
 ## <a name="tuple-and-object-deconstruction"></a>Desconstrução de objeto e de tupla
 
-Descartes são particularmente úteis para trabalhar com tuplas quando seu código de aplicativo usa alguns elementos de tupla, mas ignora outros. Por exemplo, o método `QueryCityDataForYears` a seguir retorna uma tupla de 6 com o nome de uma cidade, sua área, um ano, a população da cidade nesse ano, um segundo ano e população da cidade nesse segundo ano. O exemplo mostra a alteração na população entre esses dois anos. Entre os dados disponíveis da tupla, não estamos preocupados com a área da cidade e sabemos o nome da cidade e as duas datas em tempo de design. Como resultado, estamos interessados apenas nos dois valores de população armazenados na tupla e podemos lidar com seus valores restantes como descartes.  
+Os descartes são úteis para trabalhar com tuplas quando o código do aplicativo usa alguns elementos de tupla, mas ignora outros. Por exemplo, o método a seguir `QueryCityDataForYears` retorna uma tupla com o nome de uma cidade, sua área, um ano, a população da cidade para esse ano, um segundo ano e a população da cidade para esse segundo ano. O exemplo mostra a alteração na população entre esses dois anos. Entre os dados disponíveis da tupla, não estamos preocupados com a área da cidade e sabemos o nome da cidade e as duas datas em tempo de design. Como resultado, estamos interessados apenas nos dois valores de população armazenados na tupla e podemos lidar com seus valores restantes como descartes.  
 
-[!code-csharp[Tuple-discard](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/discard-tuple1.cs)]
+:::code language="csharp" source="snippets/discards/discard-tuple.cs" ID="DiscardTupleMember" :::
 
 Para obter mais informações sobre desconstruir tuplas com descartes, consulte [Desconstruindo tuplas e outros tipos](deconstruct.md#deconstructing-tuple-elements-with-discards).
 
-O método `Deconstruct` de uma classe, estrutura ou interface também permite que você recupere e decomponha um conjunto específico de dados de um objeto. Você poderá usar descartes quando estiver interessado em trabalhar com apenas um subconjunto dos valores desconstruídos. O exemplo a seguir desconstrói um objeto `Person` em quatro cadeias de caracteres (os nomes e sobrenomes, a cidade e o estado), mas descarta o sobrenome e o estado.
+O método `Deconstruct` de uma classe, estrutura ou interface também permite que você recupere e decomponha um conjunto específico de dados de um objeto. Você pode usar os descartes quando estiver interessado em trabalhar com apenas um subconjunto dos valores desconstruídos. O exemplo a seguir desconstrói um objeto `Person` em quatro cadeias de caracteres (os nomes e sobrenomes, a cidade e o estado), mas descarta o sobrenome e o estado.
 
-[!code-csharp[Class-discard](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/class-discard1.cs)]
+:::code language="csharp" source="snippets/discards/discard-class.cs" :::
 
 Para obter mais informações sobre desconstruir tipos definidos pelo usuário com descartes, consulte [Desconstruindo tuplas e outros tipos](deconstruct.md#deconstructing-a-user-defined-type-with-discards).
 
-## <a name="pattern-matching-with-switch-and-is"></a>Correspondência de padrões com `switch` e `is`
+## <a name="pattern-matching-with-switch"></a>Correspondência de padrões com `switch`
 
-O *padrão de descarte* pode ser usado na correspondência de padrões com as palavras-chave [is](language-reference/keywords/is.md) e [switch](language-reference/keywords/switch.md). Toda expressão sempre corresponde ao padrão de descarte.
+O *padrão de descarte* pode ser usado na correspondência de padrões com a palavra-chave [switch](language-reference/keywords/switch.md) . Toda expressão sempre corresponde ao padrão de descarte. (Ele pode ser usado com expressões [is](language-reference/keywords/is.md) . No entanto, esse uso é raro porque o descarte pode ser removido sem alterar seu significado).
 
 O exemplo a seguir define um método `ProvidesFormatInfo` que usa instruções [is](language-reference/keywords/is.md) para determinar se um objeto fornece uma implementação de <xref:System.IFormatProvider> e testa se o objeto é `null`. Ele também usa o padrão de descarte para manipular objetos não nulos de qualquer outro tipo.
 
-[!code-csharp[discard-pattern](../../samples/snippets/csharp/programming-guide/discards/discard-pattern2.cs)]
+:::code language="csharp" source="snippets/discards/discard-pattern2.cs" ID="DiscardSwitchExample" :::
 
-## <a name="calls-to-methods-with-out-parameters"></a>Chamadas para métodos com parâmetros out
+## <a name="calls-to-methods-with-out-parameters"></a>Chamadas para métodos com `out` parâmetros
 
-Ao chamar o método `Deconstruct` para desconstruir um tipo definido pelo usuário (uma instância de uma classe, estrutura ou interface), você pode descartar os valores de argumentos `out` individuais. Mas você também pode descartar o valor de argumentos `out` ao chamar qualquer método com um parâmetro out.
+Ao chamar o método `Deconstruct` para desconstruir um tipo definido pelo usuário (uma instância de uma classe, estrutura ou interface), você pode descartar os valores de argumentos `out` individuais. Mas você também pode descartar o valor de `out` argumentos ao chamar qualquer método com um `out` parâmetro.
 
 A exemplo a seguir chama o método [DateTime.TryParse(String, out DateTime)](<xref:System.DateTime.TryParse(System.String,System.DateTime@)>) para determinar se a representação de cadeia de caracteres de uma data é válida na cultura atual. Já que o exemplo está preocupado apenas em validar a cadeia de caracteres de data e não em analisá-lo para extrair a data, o argumento `out` para o método é um descarte.
 
-[!code-csharp[discard-with-out](../../samples/snippets/csharp/programming-guide/discards/discard-out1.cs)]
+:::code language="csharp" source="snippets/discards/discard-out1.cs" ID="DiscardOutParameter" :::
 
 ## <a name="a-standalone-discard"></a>Um descarte autônomo
 
-Você pode usar um descarte autônomo para indicar qualquer variável que você opte por ignorar. O exemplo a seguir usa um descarte autônomo para ignorar o objeto <xref:System.Threading.Tasks.Task> retornado por uma operação assíncrona. Isso tem o efeito de suprimir a exceção que a operação gera quando está prestes a ser concluída.
+Você pode usar um descarte autônomo para indicar qualquer variável que você opte por ignorar. Um uso típico é usar uma atribuição para garantir que um argumento não seja nulo. O código a seguir usa um descarte para forçar uma atribuição. O lado direito da atribuição usa o [operador de União nulo](language-reference/operators/null-coalescing-operator.md) para gerar um <xref:System.ArgumentNullException?displayProperty=nameWithType> quando o argumento é `null` . O código não precisa do resultado da atribuição e, portanto, é Descartado. A expressão força uma verificação nula. O descarte esclarece sua intenção: o resultado da atribuição não é necessário ou usado.
 
-[!code-csharp[standalone-discard](../../samples/snippets/csharp/programming-guide/discards/standalone-discard1.cs)]
+:::code language="csharp" source="snippets/discards/standalone-discard1.cs" ID="ArgNullCheck" :::
 
-Observe que `_` também é um identificador válido. Quando usado fora de um contexto com suporte, `_` não é tratado como um descarte, mas como uma variável válida. Se um identificador chamado `_` já está no escopo, o uso de `_` como um descarte autônomo pode resultar em:
+O exemplo a seguir usa um descarte autônomo para ignorar o objeto <xref:System.Threading.Tasks.Task> retornado por uma operação assíncrona. A atribuição da tarefa tem o efeito de suprimir a exceção que a operação gera, pois ela está prestes a ser concluída. Isso torna sua intenção clara: você deseja descartar o `Task` e ignorar todos os erros gerados dessa operação assíncrona.
 
-- A modificação acidental do valor da variável `_` no escopo atribuindo a ela o valor do descarte pretendido. Por exemplo: 
+:::code language="csharp" source="snippets/discards/standalone-discard1.cs" ID="SnippetDiscardTask" :::
 
-   [!code-csharp[standalone-discard](../../samples/snippets/csharp/programming-guide/discards/standalone-discard2.cs#1)]
+Sem atribuir a tarefa a um descarte, o código a seguir gera um aviso do compilador:
 
-- Um erro do compilador por violação de segurança de tipo. Por exemplo: 
+:::code language="csharp" source="snippets/discards/standalone-discard1.cs" ID="SnippetNoDiscardTask" :::
 
-   [!code-csharp[standalone-discard](../../samples/snippets/csharp/programming-guide/discards/standalone-discard2.cs#2)]
+> [!NOTE]
+> Se você executar qualquer um dos dois exemplos anteriores usando um depurador, o depurador interromperá o programa quando a exceção for lançada. Sem um depurador anexado, a exceção é silenciosamente ignorada em ambos os casos.
 
-- Erro do compilador CS0136, "Um local ou um parâmetro denominado '\_' não pode ser declarado neste escopo porque esse nome é usado em um escopo delimitador de local para definir um local ou parâmetro." Por exemplo: 
+`_` também é um identificador válido. Quando usado fora de um contexto com suporte, `_` não é tratado como um descarte, mas como uma variável válida. Se um identificador chamado `_` já está no escopo, o uso de `_` como um descarte autônomo pode resultar em:
 
-   [!code-csharp[standalone-discard](../../samples/snippets/csharp/programming-guide/discards/standalone-discard2.cs#3)]
+- A modificação acidental do valor da variável `_` no escopo atribuindo a ela o valor do descarte pretendido. Por exemplo:
+   :::code language="csharp" source="snippets/discards/standalone-discard2.cs" ID="VariableIdentifier" :::
+- Um erro do compilador por violação de segurança de tipo. Por exemplo:
+   :::code language="csharp" source="snippets/discards/standalone-discard2.cs" ID="VariableTypeInference" :::
+- Erro do compilador CS0136, "Um local ou um parâmetro denominado '\_' não pode ser declarado neste escopo porque esse nome é usado em um escopo delimitador de local para definir um local ou parâmetro." Por exemplo:
+   :::code language="csharp" source="snippets/discards/standalone-discard2.cs" ID="CannotRedeclare" :::
 
 ## <a name="see-also"></a>Confira também
 
 - [Desconstruindo tuplas e outros tipos](deconstruct.md)
-- [`is`Palavra](language-reference/keywords/is.md)
-- [`switch`Palavra](language-reference/keywords/switch.md)
+- [`is` chaves](language-reference/keywords/is.md)
+- [`switch` chaves](language-reference/keywords/switch.md)

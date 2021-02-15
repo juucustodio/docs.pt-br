@@ -38,19 +38,19 @@
                   href: xml-literals.md
                 - name: Análise XML
                   items:
-                    - name: Como analisar uma cadeia de caracteres
+                    - name: Analisar uma cadeia de caracteres
                       href: parse-string.md
-                    - name: Como carregar XML de um arquivo
+                    - name: Carregar o XML de um arquivo
                       href: load-xml-file.md
                     - name: Preservar o espaço em branco ao carregar ou analisar o XML
                       href: preserve-white-space-loading-parsing-xml.md
                     - name: Como capturar erros de análise
                       href: catch-parsing-errors.md
-                    - name: Como criar uma árvore de um XmlReader
+                    - name: Criar uma árvore com base em um XmlReader
                       href: create-tree-xmlreader.md
-                    - name: Como transmitir fragmentos XML de um XmlReader
+                    - name: Transmitir fragmentos XML de um XmlReader
                       href: stream-xml-fragments-xmlreader.md
-                - name: Como preencher uma árvore XML usando o XmlWriter
+                - name: Preencher uma árvore XML usando o XmlWriter
                   href: populate-xml-tree-xmlwriter.md
                 - name: Como validar usando o XSD
                   href: validate-xsd.md
@@ -60,9 +60,9 @@
               items:
                 - name: Visão geral dos namespaces
                   href: namespaces-overview.md
-                - name: Como criar um documento usando namespaces no C#
+                - name: Criar um documento usando namespaces no C#
                   href: create-document-namespaces-csharp.md
-                - name: Como criar um documento usando namespaces no Visual Basic
+                - name: Criar um documento usando namespaces no Visual Basic
                   href: create-document-namespaces-visual-basic.md
                 - name: Como controlar prefixos de namespace
                   href: control-namespace-prefixes.md
@@ -70,7 +70,7 @@
                   href: scope-default-namespaces.md
                 - name: Trabalhar com namespaces globais no Visual Basic
                   href: work-global-namespaces.md
-                - name: Como escrever consultas no XML nos namespaces
+                - name: Escrever consultas no XML em namespaces
                   href: write-queries-xml-namespaces.md
             - name: Serializar árvores XML
               items:
@@ -86,23 +86,23 @@
               items:
                 - name: Visão geral dos eixos do LINQ to XML
                   href: linq-xml-axes-overview.md
-                - name: Como recuperar uma coleção de elementos
+                - name: Recuperar uma coleção de elementos
                   href: retrieve-collection-elements.md
-                - name: Como recuperar o valor de um elemento
+                - name: Recuperar o valor de um elemento
                   href: retrieve-value-element.md
-                - name: Como filtrar por nomes de elementos
+                - name: Filtrar por nomes de elementos
                   href: filter-element-names.md
-                - name: Como encadear chamadas de método de eixo
+                - name: Encadear chamadas de método de eixo
                   href: chain-axis-method-calls.md
-                - name: Como recuperar um único elemento filho
+                - name: Recuperar um elemento filho individual
                   href: retrieve-single-child-element.md
-                - name: Como recuperar uma coleção de atributos
+                - name: Recuperar uma coleção de atributos
                   href: retrieve-collection-attributes.md
-                - name: Como recuperar um único atributo
+                - name: Recuperar um atributo individual
                   href: retrieve-single-attribute.md
-                - name: Como recuperar o valor de um atributo
+                - name: Recuperar o valor de um atributo
                   href: retrieve-value-attribute.md
-                - name: Como recuperar o valor raso de um elemento
+                - name: Recuperar o valor superficial de um elemento
                   href: retrieve-shallow-value-element.md
                 - name: Eixos integrados à linguagem no Visual Basic
                   href: language-integrated-axes.md
@@ -112,113 +112,116 @@
                   href: query-xml-trees-overview.md
                 - name: Consultas básicas
                   items:
-                    - name: Como localizar um elemento com um atributo específico
+                    - name: Índice para exemplos
+                      displayName: queries
+                      href: basic-queries-linq-to-xml.md
+                    - name: Localizar um elemento com um atributo específico
                       href: find-element-specific-attribute.md
-                    - name: Como localizar um elemento com um elemento filho específico
+                    - name: Localizar um elemento com um elemento filho específico
                       href: find-element-specific-child-element.md
                     - name: Consultar um XDocument versus consultar um XElement
                       href: query-xdocument-vs-query-xelement.md
-                    - name: Como localizar descendentes usando um nome de elemento específico
+                    - name: Localizar descendentes com um nome de elemento específico
                       href: find-descendants-specific-element-name.md
-                    - name: Como localizar um único descendente usando o método Descendants
+                    - name: Localizar um descendente usando o método de Descendentes
                       href: find-single-descendant-descendants-method.md
-                    - name: Como escrever consultas com filtragem complexa
+                    - name: Escrever consultas com filtragem complexa
                       href: write-queries-complex-filtering.md
-                    - name: Como filtrar em um elemento opcional
+                    - name: Filtrar por um elemento opcional
                       href: filter-optional-element.md
-                    - name: Como localizar todos os nós em um namespace
+                    - name: Localizar todos os nós em um namespace
                       href: find-all-nodes-namespace.md
-                    - name: Como classificar os elementos
+                    - name: Classificar elementos
                       href: sort-elements.md
-                    - name: Como classificar elementos em várias chaves
+                    - name: Classificar elementos em várias chaves
                       href: sort-elements-multiple-keys.md
-                    - name: Como calcular valores intermediários
+                    - name: Calcular valores intermediários
                       href: calculate-intermediate-values.md
-                    - name: Como escrever uma consulta que encontra elementos com base no contexto
+                    - name: Localizar elementos com base no contexto
                       href: write-query-finds-elements-based-context.md
-                    - name: Como depurar conjuntos de resultados de consulta vazios
+                    - name: Depurar conjuntos de resultados de consultas vazios
                       href: debug-empty-query-results-sets.md
                 - name: Projeções e transformações
                   items:
-                    - name: Como trabalhar com dicionários usando LINQ to XML
+                    - name: Trabalhar com dicionários usando o LINQ to XML
                       href: work-dictionaries-linq-xml.md
-                    - name: Como transformar a forma de uma árvore XML
+                    - name: Transformar a forma de uma árvore XML
                       href: transform-shape-xml-tree.md
-                    - name: Como controlar o tipo de uma projeção
+                    - name: Controlar o tipo de uma projeção
                       href: control-type-projection.md
-                    - name: Como projetar um novo tipo
+                    - name: Projetar um novo tipo
                       href: project-new-type.md
-                    - name: Como projetar um grafo de objetos
+                    - name: Projetar um grafo de objetos
                       href: project-object-graph.md
-                    - name: Como projetar um tipo anônimo
+                    - name: Projetar um tipo anônimo
                       href: project-anonymous-type.md
-                    - name: Como gerar arquivos de texto de XML
+                    - name: Gerar arquivos de texto com base no XML
                       href: generate-text-files-xml.md
-                    - name: Como gerar XML de arquivos CSV
+                    - name: Gerar um XML com base em arquivos CSV
                       href: generate-xml-csv-files.md
                 - name: Técnicas de consulta avançada
                   items:
-                    - name: Como unir duas coleções
+                    - name: Unir duas coleções
                       href: join-two-collections.md
-                    - name: Como criar uma hierarquia usando o agrupamento
+                    - name: Criar hierarquia usando o agrupamento
                       href: create-hierarchy-grouping.md
-                    - name: Como consultar LINQ to XML usando o XPath
+                    - name: Consultar LINQ to XML usando XPath
                       href: query-linq-xml-xpath.md
-                    - name: Como gravar um método do eixo LINQ to XML
+                    - name: Escrever um método de eixo LINQ to XML
                       href: write-linq-xml-axis-method.md
-                    - name: Como executar transformações de streaming de texto para XML no C#
+                    - name: Executar transformações de streaming de texto para XML no C#
                       href: perform-streaming-transformations-text-xml.md
-                    - name: Como listar todos os nós em uma árvore
+                    - name: Listar todos os nós em uma árvore
                       href: list-all-nodes-tree.md
-                    - name: Como recuperar parágrafos de um documento Office Open XML
+                    - name: Recuperar parágrafos de um documento Office Open XML
                       href: retrieve-paragraphs-office-open-xml-document.md
-                    - name: Como modificar um documento Office Open XML
+                    - name: Modificar um documento Office Open XML
                       href: modify-office-open-xml-document.md
-                    - name: Como popular uma árvore XML do sistema de arquivos
+                    - name: Popular uma árvore XML do sistema de arquivos
                       href: populate-xml-tree-file-system.md
                 - name: Usuários do LINQ to XML para XPath
                   items:
                     - name: Comparação XPath e de LINQ to XML
                       href: comparison-xpath-linq-xml.md
-                    - name: Como localizar um elemento filho
+                    - name: Localizar um elemento filho
                       href: find-child-element.md
-                    - name: Como localizar uma lista de elementos filho
+                    - name: Localizar uma lista de elementos filho
                       href: find-list-child-elements.md
-                    - name: Como localizar o elemento raiz
+                    - name: Localizar o elemento raiz
                       href: find-root-element.md
-                    - name: Como localizar elementos descendentes
+                    - name: Localizar elementos descendentes
                       href: find-descendant-elements.md
-                    - name: Como filtrar por atributo
+                    - name: Filtrar por atributo
                       href: filter-attribute.md
-                    - name: Como localizar elementos relacionados
+                    - name: Localizar elementos relacionados
                       href: find-related-elements.md
-                    - name: Como localizar elementos em um namespace
+                    - name: Localizar elementos em um namespace
                       href: find-elements-namespace.md
-                    - name: Como localizar irmãos precedentes
+                    - name: Localizar irmãos precedentes
                       href: find-preceding-siblings.md
-                    - name: Como localizar descendentes de um elemento filho
+                    - name: Localizar descendentes de um elemento filho
                       href: find-descendants-child-element.md
-                    - name: Como localizar a união de dois caminhos de localização
+                    - name: Localizar a união de dois caminhos de localização
                       href: find-union-two-location-paths.md
-                    - name: Como localizar nós irmãos
+                    - name: Localizar nós irmãos
                       href: find-sibling-nodes.md
-                    - name: Como localizar um atributo do pai
+                    - name: Localizar um atributo do pai
                       href: find-attribute-parent.md
-                    - name: Como localizar atributos de irmãos usando um nome específico
+                    - name: Localizar atributos de irmãos usando um nome específico
                       href: find-attributes-siblings-specific-name.md
-                    - name: Como localizar elementos usando um atributo específico
+                    - name: Localizar elementos usando um atributo específico
                       href: find-elements-specific-attribute.md
-                    - name: Como localizar elementos filho com base na posição
+                    - name: Localizar elementos filho com base na posição
                       href: find-child-elements-based-position.md
-                    - name: Como localizar o irmão imediatamente precedente
+                    - name: Localizar o irmão imediatamente precedente
                       href: find-immediate-preceding-sibling.md
                 - name: Transformações funcionais puras de XML
                   items:
-                    - name: Introdução às transformações funcionais puras
+                    - name: Introdução
                       href: introduction-pure-functional-transformations.md
-                    - name: Conceitos e terminologia (transformação funcional)
+                    - name: Conceitos e terminologia
                       href: concepts-terminology-functional-transformation.md
-                    - name: Programação funcional versus programação imperativa
+                    - name: Programação funcional versus imperativa
                       href: functional-vs-imperative-programming.md
                     - name: Refatorar em funções puras
                       href: refactor-pure-functions.md
@@ -232,11 +235,11 @@
                       href: deferred-execution-example.md
                     - name: 'Tutorial: encadear consultas de maneira conjunta (C#)'
                       items:
-                        - name: Exemplo de consultas de encadeamento (C#)
+                        - name: Exemplo de consultas de encadeamento
                           href: chain-queries-example.md
-                        - name: Materialização intermediária (C#)
+                        - name: Materialização intermediária
                           href: intermediate-materialization.md
-                        - name: Encadear operadores de consulta padrão de maneira conjunta (C#)
+                        - name: Operadores de consulta padrão de encadeamento
                           href: chain-standard-query-operators-together.md
                     - name: 'Tutorial: manipular o conteúdo em um documento WordprocessingML'
                       items:
@@ -264,21 +267,21 @@
                               href: wordprocessingml-document-styles.md
                             - name: Parte do estilo de um documento WordprocessingML
                               href: style-part-wordprocessingml-document.md
-                            - name: Exemplo que gera partes de documentos Office Open XML
+                            - name: Exemplo que gera partes do documento
                               href: example-outputs-office-open-xml-document-parts.md
             - name: Modificar árvores XML
               items:
                 - name: Modificação da árvore XML na memória versus construção funcional
                   href: in-memory-xml-tree-modification-vs-functional-construction.md
-                - name: 'Adicionar elementos, atributos e nós a uma árvore XML'
+                - name: 'Adicionar elementos, atributos e nós'
                   href: add-elements-attributes-nodes-xml-tree.md
-                - name: 'Modificar elementos, atributos e nós em uma árvore XML'
+                - name: 'Modificar elementos, atributos e nós'
                   href: modify-elements-attributes-nodes-xml-tree.md
-                - name: 'Remover elementos, atributos e nós de uma árvore XML'
+                - name: 'Remover elementos, atributos e nós'
                   href: remove-elements-attributes-nodes-xml-tree.md
                 - name: Manter pares nome-valor
                   href: maintain-name-value-pairs.md
-                - name: Como alterar o namespace para uma árvore XML inteira
+                - name: Alterar o namespace de uma árvore XML inteira
                   href: change-namespace-entire-xml-tree.md
             - name: Desempenho
               items:
@@ -300,21 +303,21 @@
                   href: program-nodes.md
                 - name: Vários bugs de código declarativo/imperativo
                   href: mixed-declarative-imperative-code-bugs.md
-                - name: Como transmitir fragmentos XML com acesso a informações de cabeçalho
+                - name: Transmitir fragmentos XML com acesso a informações de cabeçalho
                   href: stream-xml-fragments-access-header-information.md
-                - name: Como executar o streaming de transformação de grandes documentos XML
+                - name: Executar a transformação de streaming de documentos XML grandes
                   href: perform-streaming-transform-large-xml-documents.md
-                - name: Como ler e escrever um documento codificado
+                - name: Ler e escrever um documento codificado
                   href: read-write-encoded-document.md
                 - name: Usar XSLT para transformar uma árvore XML
                   href: use-xslt-transform-xml-tree.md
-                - name: Como usar anotações para transformar árvores LINQ to XML em um estilo XSLT
+                - name: Usar anotações para transformar árvores LINQ to XML em um estilo XSLT
                   href: use-annotations-transform-linq-xml-trees-xslt-style.md
                 - name: Serializar grafos de objetos que contêm objetos XElement
                   items:
-                    - name: Como serializar usando XmlSerializer
+                    - name: Serializar usando XmlSerializer
                       href: serialize-xmlserializer.md
-                    - name: Como serializar usando DataContractSerializer
+                    - name: Serializar usando DataContractSerializer
                       href: serialize-datacontractserializer.md
             - name: Segurança do LINQ to XML
               href: linq-xml-security.md

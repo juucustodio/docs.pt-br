@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <messageLogging>'
 title: <messageLogging>
 ms.date: 03/30/2017
 ms.assetid: 1d06a7e6-9633-4a12-8c5d-123adbbc19c5
-ms.openlocfilehash: 9291c38af28c18d20e23e34e8316b4a9fe523123
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: e26a616bb7974a8fbad9a7f920a28e06422e09c1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70855126"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749279"
 ---
 # \<messageLogging>
+
 Esse elemento define as configurações para os recursos de log de mensagens do Windows Communication Foundation (WCF).  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -17,7 +19,7 @@ Esse elemento define as configurações para os recursos de log de mensagens do 
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<diagnostics>**](diagnostics.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<messageLogging>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.serviceModel>
@@ -37,6 +39,7 @@ Esse elemento define as configurações para os recursos de log de mensagens do 
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -63,6 +66,7 @@ Esse elemento define as configurações para os recursos de log de mensagens do 
 |diagnóstico|Define as configurações do WCF para inspeção e controle de tempo de execução para o administrador.|  
   
 ## <a name="remarks"></a>Comentários  
+
  As mensagens são registradas em três níveis diferentes na pilha: serviço, transporte e malformados. Cada nível pode ser ativado separadamente.  
   
  Os filtros XPath podem ser adicionados para registrar mensagens específicas de log nos níveis de transporte e de serviço. Se nenhum filtro for definido, todas as mensagens serão registradas. Os filtros são aplicados somente aos cabeçalhos da mensagem. O corpo é ignorado. O WCF ignora o corpo da mensagem para melhorar o desempenho. Se você quiser filtrar com base no conteúdo do corpo, poderá criar um ouvinte personalizado com um filtro que faça isso.  
@@ -122,7 +126,7 @@ Esse elemento define as configurações para os recursos de log de mensagens do 
 </messageLogging>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.DiagnosticSection>
 - <xref:System.ServiceModel.Diagnostics>

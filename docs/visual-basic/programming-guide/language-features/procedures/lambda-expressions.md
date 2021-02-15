@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: expressões lambda (Visual Basic)'
 title: Expressões lambda
 ms.date: 07/20/2015
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - expressions [Visual Basic], lambda
 - inline functions [Visual Basic]
 ms.assetid: 137064b0-3928-4bfa-ba71-c3f9cbd951e2
-ms.openlocfilehash: 54a9c0cf275a67c77748c32771c3c5dcbdb916d7
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: adac7f0d0dbbff575837f691d70c7752eebb39f1
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406697"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100480083"
 ---
 # <a name="lambda-expressions-visual-basic"></a>Expressões lambda (Visual Basic)
 
@@ -122,15 +123,15 @@ O acesso a variáveis locais e parâmetros no escopo de contenção pode se este
 
 O exemplo a seguir demonstra a ampla variedade de direitos de acesso da expressão lambda aninhada. Quando a expressão lambda retornada é executada a partir de `Main` `aDel` , ela acessa esses elementos:
 
-- Um campo da classe na qual está definido:`aField`
+- Um campo da classe na qual está definido: `aField`
 
-- Uma propriedade da classe na qual ela está definida:`aProp`
+- Uma propriedade da classe na qual ela está definida: `aProp`
 
-- Um parâmetro do método `functionWithNestedLambda` , no qual ele é definido:`level1`
+- Um parâmetro do método `functionWithNestedLambda` , no qual ele é definido: `level1`
 
-- Uma variável local de `functionWithNestedLambda` :`localVar`
+- Uma variável local de `functionWithNestedLambda` : `localVar`
 
-- Um parâmetro da expressão lambda no qual está aninhado:`level2`
+- Um parâmetro da expressão lambda no qual está aninhado: `level2`
 
  [!code-vb[VbVbalrLambdas#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class3.vb#9)]
 
@@ -156,11 +157,11 @@ Ao atribuir expressões lambda a delegados ou passá-las como argumentos para pr
 
      [!code-vb[VbVbalrLambdas#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#5)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos](./index.md)
 - [Introdução a LINQ no Visual Basic](../linq/introduction-to-linq.md)
-- [Delegados](../delegates/index.md)
+- [Representantes](../delegates/index.md)
 - [Instrução Function](../../../language-reference/statements/function-statement.md)
 - [Instrução Sub](../../../language-reference/statements/sub-statement.md)
 - [Tipos de valor anulável](../data-types/nullable-value-types.md)

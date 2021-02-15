@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugChain'
 title: Interface ICorDebugChain
 ms.date: 03/30/2017
 api_name:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f671f519-1cb3-4ae5-b9f1-abc5e783459f
 topic_type:
 - apiref
-ms.openlocfilehash: 6ae0fec0f8de2bbe3862f9f70ed9cf3d32af34c4
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: 391c9a3e54d06d303728da5ab7f105bc8e2558ef
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82894207"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661188"
 ---
 # <a name="icordebugchain-interface"></a>Interface ICorDebugChain
 
@@ -43,12 +44,14 @@ Representa um segmento de uma pilha de chamadas física ou lógica.
 |[Método IsManaged](icordebugchain-ismanaged-method.md)|Obtém um valor que indica se esta cadeia está executando código gerenciado.|  
   
 ## <a name="remarks"></a>Comentários  
- Os quadros de pilha em uma cadeia ocupam um espaço de pilha contíguo e compartilham o mesmo thread e contexto. Uma cadeia pode representar cadeias de código gerenciados ou não-gerenciadas. Uma instância `ICorDebugChain` vazia representa uma cadeia de código não gerenciada.  
+
+ Os quadros de pilha em uma cadeia ocupam um espaço de pilha contíguo e compartilham o mesmo thread e contexto. Uma cadeia pode representar cadeias de código gerenciados ou não-gerenciadas. Uma `ICorDebugChain` instância vazia representa uma cadeia de código não gerenciada.  
   
 > [!NOTE]
 > Esta interface não dá suporte para chamada remota, seja entre computadores ou processos cruzados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

@@ -1,18 +1,20 @@
 ---
-title: Como criar um Feed Atom básico
+description: 'Saiba mais sobre: como criar um feed ATOM básico'
+title: 'Como: criar um feed Atom básico'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 6e0cacc1-9b11-4665-adb7-577a62626fd6
-ms.openlocfilehash: 0317e7b42f589b31f5c77b89d26cb46815f13054
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 4f4fa6e5b4e2b6935fb51cbc200e5ed9e03843ba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599042"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99734783"
 ---
-# <a name="how-to-create-a-basic-atom-feed"></a>Como criar um Feed Atom básico
+# <a name="how-to-create-a-basic-atom-feed"></a>Como: criar um feed Atom básico
+
 Windows Communication Foundation (WCF) permite que você crie um serviço que expõe um feed de distribuição. Este tópico discute como criar um serviço de distribuição que expõe um feed de agregação Atom.  
   
 ### <a name="to-create-a-basic-syndication-service"></a>Para criar um serviço de distribuição básico  
@@ -64,7 +66,7 @@ Windows Communication Foundation (WCF) permite que você crie um serviço que ex
   
 ### <a name="to-call-getblog-with-an-http-get"></a>Para chamar getblog () com um HTTP GET  
   
-1. Abra o Internet Explorer, digite a seguinte URL e pressione ENTER:`http://localhost:8000/BlogService/GetBlog`  
+1. Abra o Internet Explorer, digite a seguinte URL e pressione ENTER: `http://localhost:8000/BlogService/GetBlog`  
   
      A URL contém o endereço base do serviço ( `http://localhost:8000/BlogService` ), o endereço relativo do ponto de extremidade e a operação de serviço a ser chamada.  
   
@@ -88,13 +90,15 @@ Windows Communication Foundation (WCF) permite que você crie um serviço que ex
      [!code-vb[htAtomBasic#11](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/htatombasic/vb/snippets.vb#11)]  
   
 ## <a name="example"></a>Exemplo  
+
  A seguir está a listagem completa de códigos deste exemplo.  
   
  [!code-csharp[htAtomBasic#12](../../../../samples/snippets/csharp/VS_Snippets_CFX/htatombasic/cs/program.cs#12)]
  [!code-vb[htAtomBasic#12](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/htatombasic/vb/program.vb#12)]  
   
 ## <a name="compiling-the-code"></a>Compilando o código  
- Ao compilar o código anterior, referencie System. ServiceModel. dll e System. ServiceModel. Web. dll.  
+
+ Ao compilar o código anterior, referencie System.ServiceModel.dll e System.ServiceModel.Web.dll.  
   
 ## <a name="see-also"></a>Confira também
 

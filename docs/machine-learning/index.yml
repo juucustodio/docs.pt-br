@@ -10,12 +10,12 @@ metadata:
   author: natke
   ms.author: nakersha
   ms.date: 10/30/2019
-  ms.openlocfilehash: da93d48dc36123f8821be37c8c0546b84ab29712
-  ms.sourcegitcommit: 09bad6ec0cbf18be7cd7f62e77286d305a18b607
+  ms.openlocfilehash: da58d7b94ebb0d56e98d07055c6d2e9f42cc7830
+  ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 08/05/2020
-  ms.locfileid: "87795483"
+  ms.lasthandoff: 12/04/2020
+  ms.locfileid: "96599636"
 landingContent:
 - title: Noções básicas do ML.NET
   linkLists:
@@ -33,6 +33,10 @@ landingContent:
       url: resources/tasks.md
     - text: Como escolher um algoritmo
       url: how-to-choose-an-ml-net-algorithm.md
+  - linkListType: get-started
+    links:
+    - text: ML.NET no Q&A
+      url: /answers/topics/dotnet-mlnet.html
 - title: Comece a usar em 10 minutos
   linkLists:
   - linkListType: quickstart
@@ -88,6 +92,6 @@ landingContent:
   - linkListType: reference
     links:
     - text: Referência de API do ML.NET
-      url: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet
+      url: ../../api/index.md?view=ml-dotnet
     - text: Exemplos de ML.NET
       url: https://github.com/dotnet/machinelearning-samples

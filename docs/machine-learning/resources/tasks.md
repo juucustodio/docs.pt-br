@@ -2,12 +2,12 @@
 title: Tarefas de aprendizado de máquina
 description: Explore as diferentes tarefas de aprendizado de máquina e as tarefas associadas compatíveis com o ML.NET.
 ms.date: 12/23/2019
-ms.openlocfilehash: e6e36bd65dbadb8cb7b8edbf9e2e82071c208378
-ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
+ms.openlocfilehash: 56cdb5f3162614d0bf2fb1e5bd9e774b5548b238
+ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84144442"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90679476"
 ---
 # <a name="machine-learning-tasks-in-mlnet"></a>Tarefas de aprendizado de máquina no ML.NET
 
@@ -94,7 +94,7 @@ A coluna de recursos deve ser um vetor de tamanho fixo de <xref:System.Single>.
 
 Este treinador produz o seguinte:
 
-| Nome de saída | Type | Description|
+| Nome de saída | Tipo | Descrição|
 | -- | -- | -- |
 | `Score` | Vetor de <xref:System.Single> | As pontuações de todas as classes. Um valor mais alto significa maior probabilidade de se enquadrar na classe associada. Se o elemento iº elemento tiver o maior valor, o índice de rótulo previsto será i. Observe que i é o índice baseado em zero. |
 | `PredictedLabel` | tipo de [chave](xref:Microsoft.ML.Data.KeyDataViewType) | O índice do rótulo previsto. Se seu valor for i, o rótulo real será a iº categoria no tipo de rótulo de entrada com valor de chave. |
@@ -127,7 +127,7 @@ Os dados da coluna de rótulo de entrada devem ser <xref:System.Single>.
 
 Os treinadores para esta tarefa produzem a seguinte saída:
 
-| Nome de saída | Type | Description|
+| Nome de saída | Tipo | Descrição|
 | -- | -- | -- |
 | `Score` | <xref:System.Single> | A pontuação bruta prevista pelo modelo |
 
@@ -151,7 +151,7 @@ Os dados de recursos de entrada devem ser <xref:System.Single>. Nenhum rótulo �
 
 Este treinador produz o seguinte:
 
-| Nome de saída | Type | Descrição|
+| Nome de saída | Tipo | Descrição|
 | -- | -- | -- |
 | `Score` | vetor de <xref:System.Single> | As distâncias do ponto de dados fornecido para todos os centroides |
 | `PredictedLabel` | tipo de [chave](xref:Microsoft.ML.Data.KeyDataViewType) | O índice do cluster mais próximo previsto pelo modelo. |
@@ -183,7 +183,7 @@ Os recursos de entrada devem ser um vetor de tamanho fixo de <xref:System.Single
 
 Este treinador produz o seguinte:
 
-| Nome de saída | Type | Descrição|
+| Nome de saída | Tipo | Descrição|
 | -- | -- | -- |
 | `Score` | <xref:System.Single> | A pontuação não negativa não associada calculada pelo modelo de detecção de anomalias |
 | `PredictedLabel` | <xref:System.Boolean> | Um valor true/false que representa se a entrada é uma anomalia (PredictedLabel = true) ou não (PredictedLabel = false) |
@@ -207,7 +207,7 @@ Os dados do recurso devem ser um vetor de tamanho fixo de <xref:System.Single> e
 
 Este treinador produz o seguinte:
 
-| Nome de saída | Type | Descrição|
+| Nome de saída | Tipo | Descrição|
 | -- | -- | -- |
 | `Score` | <xref:System.Single> | A pontuação não associada calculada pelo modelo para determinar a previsão |
 
@@ -229,4 +229,4 @@ A tarefa de previsão usa dados de série temporal anteriores para fazer previs�
 
 Você pode treinar um modelo de previsão com o seguinte algoritmo:
 
-<xref:Microsoft.ML.TimeSeriesCatalog.ForecastBySsa*>
+<xref:Microsoft.ML.TimeSeriesCatalog.ForecastBySsa%2A>

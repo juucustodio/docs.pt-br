@@ -5,16 +5,16 @@ ms.date: 08/20/2019
 helpviewer_keywords:
 - informational versions
 - version numbers, assemblies
-- assemblies [.NET Framework], versioning
+- assemblies [.NET], versioning
 - resolving assembly binding requests
 - versioning, assemblies
 ms.assetid: 775ad4fb-914f-453c-98ef-ce1089b6f903
-ms.openlocfilehash: fdffbcc0bbafed62228cba35e8f85fbec7f7fbab
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: c94e0c74b8beed29537b53d7476715e2cacb7b80
+ms.sourcegitcommit: 279fb6e8d515df51676528a7424a1df2f0917116
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83380079"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92687643"
 ---
 # <a name="assembly-versioning"></a>Controle de versão do assembly
 
@@ -51,7 +51,7 @@ Cada assembly tem duas maneiras diferentes de expressar informações de versão
 
 Cada assembly tem um número de versão como parte de sua identidade. Dessa forma, dois assemblies que diferem pelo número de versão são considerados pelo ambiente de runtime assemblies completamente diferentes. Esse número de versão é representado fisicamente como uma cadeia de caracteres em quatro partes com o seguinte formato:  
   
-\<*versão principal*>.\<*versão secundária*>.\<*número da compilação*>.\<*revisão*>  
+\<*major version*>.\<*minor version*>.\<*build number*>.\<*revision*>  
   
 Por exemplo, a versão 1.5.1254.0 indica que 1 é a versão principal, 5 é a versão secundária, 1254 é o número da versão e 0 é o número de revisão.  
   
@@ -72,7 +72,7 @@ A versão informativa é uma cadeia de caracteres que anexa informações adicio
   
 A versão informativa é representada usando-se o atributo personalizado <xref:System.Reflection.AssemblyInformationalVersionAttribute?displayProperty=nameWithType>. Para obter mais informações sobre o atributo versão informativa, consulte [set Assembly Attributes](set-attributes.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Como o tempo de execução localiza assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md)
 - [Configurar aplicativos](../../framework/configure-apps/index.md)

@@ -1,23 +1,25 @@
 ---
+description: 'Saiba mais sobre: padrões de design: List-Based Publish-Subscribe'
 title: 'Padrões de design: publicação-assinatura baseada em lista'
 ms.date: 03/30/2017
 ms.assetid: f4257abc-12df-4736-a03b-0731becf0fd4
-ms.openlocfilehash: 5aaea5b0def544f8b3e963d71e269592b9b40784
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: b615da2afa4e6452b62eacae2cc6b61e4c4363dd
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84592340"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726735"
 ---
 # <a name="design-patterns-list-based-publish-subscribe"></a>Padrões de design: publicação-assinatura baseada em lista
-Este exemplo ilustra o padrão de publicação-assinatura baseado em lista implementado como um programa Windows Communication Foundation (WCF).  
+
+Este exemplo ilustra o padrão de Publish-Subscribe baseado em lista implementado como um programa de Windows Communication Foundation (WCF).  
   
 > [!NOTE]
 > O procedimento de instalação e as instruções de Build para este exemplo estão localizados no final deste tópico.  
   
- O padrão de design de publicação-assinatura com base em lista é descrito na publicação de práticas de & de padrões da Microsoft, [padrões de integração](https://docs.microsoft.com/previous-versions/msp-n-p/ff647309(v=pandp.10)). O padrão de publicação/assinatura passa informações para uma coleção de destinatários que assinaram um tópico de informações. Publicação com base em lista-assinatura mantém uma lista de assinantes. Quando há informações a serem compartilhadas, uma cópia é enviada para cada Assinante na lista. Este exemplo demonstra um padrão de publicação-assinatura com base em lista dinâmica, em que os clientes podem assinar ou cancelar a assinatura com a frequência necessária.  
+ O padrão de design de Publish-Subscribe baseado em lista é descrito na publicação de práticas de & de padrões da Microsoft, [padrões de integração](/previous-versions/msp-n-p/ff647309(v=pandp.10)). O padrão de Publish-Subscribe passa informações para uma coleção de destinatários que assinaram um tópico de informações. Publicação com base em lista-assinatura mantém uma lista de assinantes. Quando há informações a serem compartilhadas, uma cópia é enviada para cada Assinante na lista. Este exemplo demonstra um padrão de publicação-assinatura com base em lista dinâmica, em que os clientes podem assinar ou cancelar a assinatura com a frequência necessária.  
   
- O exemplo de publicação-assinatura com base em lista consiste em um cliente, um serviço e um programa de fonte de dados. Pode haver mais de um cliente e mais de um programa de fonte de dados em execução. Os clientes assinam o serviço, recebem notificações e cancelam a assinatura. Os programas de fonte de dados enviam informações para o serviço a serem compartilhados com todos os assinantes atuais.  
+ O exemplo de Publish-Subscribe baseado em lista consiste em um cliente, um serviço e um programa de fonte de dados. Pode haver mais de um cliente e mais de um programa de fonte de dados em execução. Os clientes assinam o serviço, recebem notificações e cancelam a assinatura. Os programas de fonte de dados enviam informações para o serviço a serem compartilhados com todos os assinantes atuais.  
   
  Neste exemplo, o cliente e a fonte de dados são programas de console (arquivos. exe) e o serviço é uma biblioteca (. dll) hospedada no Serviços de Informações da Internet (IIS). A atividade cliente e fonte de dados fica visível na área de trabalho.  
   
@@ -120,17 +122,17 @@ public class PriceChangeEventArgs : EventArgs
   
 1. Teste se você pode acessar o serviço usando um navegador digitando o seguinte endereço: `http://localhost/servicemodelsamples/service.svc` . Uma página de confirmação deve ser exibida em resposta.  
   
-2. Execute Client. exe de \client\bin \\ , de dentro da pasta específica do idioma. A atividade do cliente é exibida na janela do console do cliente. Inicie vários clientes.  
+2. Execute Client.exe de \client\bin \\ , a partir da pasta específica do idioma. A atividade do cliente é exibida na janela do console do cliente. Inicie vários clientes.  
   
-3. Execute DataSource. exe de \datasource\bin \\ , de dentro da pasta específica do idioma. A atividade de fonte de dados é exibida na janela do console. Depois que a fonte de dados envia informações para o serviço, elas devem ser passadas para cada cliente.  
+3. Execute Datasource.exe de \datasource\bin \\ , a partir da pasta específica do idioma. A atividade de fonte de dados é exibida na janela do console. Depois que a fonte de dados envia informações para o serviço, elas devem ser passadas para cada cliente.  
   
-4. Se o cliente, a fonte de dados e os programas de serviço não puderem se comunicar, consulte [dicas de solução de problemas para exemplos do WCF](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+4. Se o cliente, a fonte de dados e os programas de serviço não puderem se comunicar, consulte [dicas de solução de problemas para exemplos do WCF](/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 ### <a name="to-run-the-sample-across-machines"></a>Para executar o exemplo entre computadores  
   
 1. Configurar a máquina de serviço:  
   
-    1. Na máquina de serviço, crie um diretório virtual chamado ServiceModelSamples. O arquivo em lotes Setupvroot. bat do [procedimento de instalação única para os exemplos de Windows Communication Foundation](one-time-setup-procedure-for-the-wcf-samples.md) pode ser usado para criar o diretório de disco e o diretório virtual.  
+    1. Na máquina de serviço, crie um diretório virtual chamado ServiceModelSamples. O arquivo em lotes Setupvroot.bat do [procedimento de instalação única para os exemplos de Windows Communication Foundation](one-time-setup-procedure-for-the-wcf-samples.md) pode ser usado para criar o diretório de disco e o diretório virtual.  
   
     2. Copie os arquivos de programa do serviço de%SystemDrive%\Inetpub\wwwroot\servicemodelsamples para o diretório virtual ServiceModelSamples no computador de serviço. Certifique-se de incluir os arquivos no diretório \bin.  
   
@@ -148,9 +150,9 @@ public class PriceChangeEventArgs : EventArgs
   
     2. No arquivo de configuração da fonte de dados, altere o valor do endereço da definição do ponto de extremidade para corresponder ao novo endereço do serviço. Substitua todas as referências a "localhost" por um nome de domínio totalmente qualificado no endereço.  
   
-4. Nos computadores cliente, inicie o Client. exe em um prompt de comando.  
+4. Nos computadores cliente, inicie o Client.exe em um prompt de comando.  
   
-5. Na máquina de fonte de dados, inicie o DataSource. exe em um prompt de comando.  
+5. Na máquina de fonte de dados, inicie o Datasource.exe em um prompt de comando.  
   
 > [!IMPORTANT]
 > Os exemplos podem já estar instalados no seu computador. Verifique o seguinte diretório (padrão) antes de continuar.  
@@ -159,4 +161,4 @@ public class PriceChangeEventArgs : EventArgs
 >
 > Se esse diretório não existir, vá para [Windows Communication Foundation (WCF) e exemplos de Windows Workflow Foundation (WF) para .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) para baixar todos os Windows Communication Foundation (WCF) e [!INCLUDE[wf1](../../../../includes/wf1-md.md)] exemplos. Este exemplo está localizado no seguinte diretório.  
 >
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\DesignPatterns/ListBasedPublishSubscribe`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\DesignPatterns/ListBasedPublishSubscribe`

@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <endpoint> elemento'
 title: Elemento <endpoint>
 ms.date: 03/30/2017
 ms.assetid: 2fc8fedc-78d0-4e87-8142-fbfd26c15a4e
-ms.openlocfilehash: fb9d3bf9b5f1a742abcc70d78af026c179ec4c4d
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: d5555ae895e6655d1ce6e3dcb026ddec3ff8cf44
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70855385"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99725799"
 ---
 # <a name="endpoint-element"></a>Elemento \<endpoint>
+
 Especifica a associação, o contrato e as propriedades de endereço para um ponto de extremidade de serviço, que é usado para expor serviços.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -18,7 +20,7 @@ Especifica a associação, o contrato e as propriedades de endereço para um pon
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<service>**](service.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<endpoint>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <endpoint address="String"
@@ -37,6 +39,7 @@ Especifica a associação, o contrato e as propriedades de endereço para um pon
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -52,7 +55,7 @@ Especifica a associação, o contrato e as propriedades de endereço para um pon
 |contrato|Uma cadeia de caracteres que indica qual contrato este ponto de extremidade está expondo. O assembly deve implementar o tipo de contrato. Se uma implementação de serviço implementar um único tipo de contrato, essa propriedade poderá ser omitida. O padrão é uma cadeia de caracteres vazia.|  
 |endpointConfiguration|Uma cadeia de caracteres que especifica o nome do ponto de extremidade padrão que é definido pelo `kind` atributo, que faz referência às informações de configuração adicionais desse ponto de extremidade padrão. O mesmo nome deve ser definido na `<standardEndpoints>` seção.|  
 |isSystemEndpoint|Um valor booliano que especifica se um ponto de extremidade é um ponto de extremidade de infraestrutura.|  
-|kind|Uma cadeia de caracteres que especifica o tipo de ponto de extremidade padrão aplicado. O tipo deve ser registrado na `<extensions>` seção ou em Machine. config. Se nada for especificado, um ponto de extremidade de serviço comum será criado.|  
+|kind|Uma cadeia de caracteres que especifica o tipo de ponto de extremidade padrão aplicado. O tipo deve ser registrado na seção `<extensions>` ou no machine.config. Se nada for especificado, um ponto de extremidade de serviço comum será criado.|  
 |listenUriMode|Especifica como o transporte trata o `ListenUri` fornecido para o serviço escutar. Os valores válidos são<br /><br /> -Explícito<br />-Exclusivo<br /><br /> O valor padrão é Explicit.|  
 |listenUri|Uma cadeia de caracteres que especifica o URI no qual o ponto de extremidade de serviço escuta. O padrão é uma cadeia de caracteres vazia.|  
 |name|Atributo opcional. Uma cadeia de caracteres que especifica o nome do ponto de extremidade de serviço. O valor padrão é a concatenação do nome da associação e o nome da descrição do contrato. Os serviços podem ter vários pontos de extremidade e, portanto, o atributo do Endpoint `name` é diferente do nome do serviço.|  
@@ -71,6 +74,7 @@ Especifica a associação, o contrato e as propriedades de endereço para um pon
 |[\<service>](service.md)|Uma seção de configuração que define uma lista de pontos de extremidade aos quais um cliente pode se conectar.|  
   
 ## <a name="example"></a>Exemplo  
+
  Este é um exemplo de uma configuração de ponto de extremidade de serviço.  
   
 ```xml  
@@ -86,10 +90,10 @@ Especifica a associação, o contrato e as propriedades de endereço para um pon
 </endpoint>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.ServiceEndpointElement>
 - <xref:System.ServiceModel.EndpointAddress>
 - <xref:System.ServiceModel.Description.ServiceEndpoint>
 - [Pontos de extremidade: endereços, associações e contratos](../../../wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)
-- [Como criar um ponto de extremidade de serviço em configuração](../../../wcf/feature-details/how-to-create-a-service-endpoint-in-configuration.md)
+- [Como: criar um ponto de extremidade de serviço em configuração](../../../wcf/feature-details/how-to-create-a-service-endpoint-in-configuration.md)

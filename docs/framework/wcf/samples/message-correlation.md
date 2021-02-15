@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: correlação de mensagens'
 title: Correlação de mensagem
 ms.date: 03/30/2017
 ms.assetid: 3f62babd-c991-421f-bcd8-391655c82a1f
-ms.openlocfilehash: 84b10b507f9fdaa7c53cf937bb132c8cc0aac33f
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: e38e2e8d6936132e165fd3372ac57fef27240d1a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84591626"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704024"
 ---
 # <a name="message-correlation"></a>Correlação de mensagem
 
@@ -66,7 +67,7 @@ public class OrderProcessorService : IOrderProcessor
 }
 ```
 
- O serviço usa um cliente personalizado `OrderResponseClient` para enviar a mensagem MSMQ para a fila. Como o aplicativo que recebe e processa a mensagem é um aplicativo MSMQ e não um aplicativo WCF, não há nenhum contrato de serviço implícito entre os dois aplicativos. Portanto, não podemos criar um proxy usando a ferramenta svcutil. exe neste cenário.
+ O serviço usa um cliente personalizado `OrderResponseClient` para enviar a mensagem MSMQ para a fila. Como o aplicativo que recebe e processa a mensagem é um aplicativo MSMQ e não um aplicativo WCF, não há nenhum contrato de serviço implícito entre os dois aplicativos. Portanto, não podemos criar um proxy usando a ferramenta Svcutil.exe neste cenário.
 
  O proxy personalizado é essencialmente o mesmo para todos os aplicativos WCF que usam a `msmqIntegrationBinding` Associação para enviar mensagens. Ao contrário de outros proxies, ele não inclui uma variedade de operações de serviço. É apenas uma operação de envio de mensagem.
 
@@ -280,7 +281,7 @@ static void DisplayOrderStatus()
 
     2. Expanda a guia **recursos** .
 
-    3. Clique com o botão direito do mouse em **filas de mensagens particulares**e selecione **nova** **fila privada**.
+    3. Clique com o botão direito do mouse em **filas de mensagens particulares** e selecione **nova** **fila privada**.
 
     4. Marque a caixa **transacional** .
 
@@ -296,13 +297,13 @@ static void DisplayOrderStatus()
 
 2. Copie os arquivos de programas do cliente da pasta \client\bin\, na pasta específica do idioma, para o computador cliente.
 
-3. No arquivo client. exe. config, altere o orderQueueName para especificar o nome do computador de serviço em vez de ".".
+3. No arquivo Client.exe.config, altere o orderQueueName para especificar o nome do computador de serviço em vez de ".".
 
-4. No arquivo Service. exe. config, altere o endereço do ponto de extremidade do cliente para especificar o nome do computador cliente em vez de ".".
+4. No arquivo Service.exe.config, altere o endereço do ponto de extremidade do cliente para especificar o nome do computador cliente em vez de ".".
 
-5. No computador do serviço, inicie o Service. exe em um prompt de comando.
+5. No computador do serviço, inicie o Service.exe em um prompt de comando.
 
-6. No computador cliente, inicie o Client. exe em um prompt de comando.
+6. No computador cliente, inicie o Client.exe em um prompt de comando.
 
 > [!IMPORTANT]
 > Os exemplos podem mais ser instalados no seu computador. Verifique o seguinte diretório (padrão) antes de continuar.
@@ -316,4 +317,4 @@ static void DisplayOrderStatus()
 ## <a name="see-also"></a>Consulte também
 
 - [Enfileiramento no WCF](../feature-details/queuing-in-wcf.md)
-- [Enfileiramento de Mensagens](https://docs.microsoft.com/previous-versions/windows/desktop/legacy/ms711472(v=vs.85))
+- [Enfileiramento de Mensagens](/previous-versions/windows/desktop/legacy/ms711472(v=vs.85))

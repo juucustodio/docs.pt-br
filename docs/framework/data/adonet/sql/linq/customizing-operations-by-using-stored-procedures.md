@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: Personalizando operações usando procedimentos armazenados'
 title: Personalizando operações usando procedimentos armazenados
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a
-ms.openlocfilehash: 63f4cb3cbb90afc37629b336972b5e09d20346b3
-ms.sourcegitcommit: 4e2d355baba82814fa53efd6b8bbb45bfe054d11
+ms.openlocfilehash: aa345ef8404b7cae7d96f75bb60325793767cd50
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70247537"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99729530"
 ---
 # <a name="customizing-operations-by-using-stored-procedures"></a>Personalizando operações usando procedimentos armazenados
+
 Os procedimentos armazenados representam uma abordagem mais comum para substituir o comportamento padrão. Os exemplos neste tópico mostram como você pode usar wrappers gerados do método para procedimentos armazenados, e como você pode chamar procedimentos armazenados diretamente.  
   
  Se você estiver usando o Visual Studio, poderá usar o Object Relational Designer para atribuir procedimentos armazenados para executar inserções, atualizações e exclusões.  
@@ -23,27 +25,33 @@ Os procedimentos armazenados representam uma abordagem mais comum para substitui
 ## <a name="example"></a>Exemplo  
   
 ### <a name="description"></a>Descrição  
+
  No exemplo, presuma que a classe de `Northwind` contém dois métodos para chamar procedimentos armazenados que estão sendo usados para alternativas em uma classe derivada.  
   
 ### <a name="code"></a>Código  
+
  [!code-csharp[DLinqOverrideDefaultSproc#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqOverrideDefaultSproc/cs/northwind.cs#1)]
  [!code-vb[DLinqOverrideDefaultSproc#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqOverrideDefaultSproc/vb/northwind.vb#1)]  
   
 ## <a name="example"></a>Exemplo  
   
 ### <a name="description"></a>Descrição  
+
  A classe seguir usa esses métodos para substituição.  
   
 ### <a name="code"></a>Código  
+
  [!code-csharp[DLinqOverrideDefaultSproc#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqOverrideDefaultSproc/cs/northwind.cs#2)]
  [!code-vb[DLinqOverrideDefaultSproc#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqOverrideDefaultSproc/vb/northwind.vb#2)]  
   
 ## <a name="example"></a>Exemplo  
   
 ### <a name="description"></a>Descrição  
+
  Você pode usar `NorthwindThroughSprocs` exatamente como você usaria `Northwnd`.  
   
 ### <a name="code"></a>Código  
+
  [!code-csharp[DLinqOverrideDefaultSproc#3](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqOverrideDefaultSproc/cs/Program.cs#3)]
  [!code-vb[DLinqOverrideDefaultSproc#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqOverrideDefaultSproc/vb/Module1.vb#3)]  
   

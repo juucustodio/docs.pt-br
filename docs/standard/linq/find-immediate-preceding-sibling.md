@@ -6,12 +6,12 @@ dev_langs:
 - csharp
 - vb
 ms.assetid: 74c06201-0b1b-4b5e-b3ac-0092980614e6
-ms.openlocfilehash: ca3f7bea150ebcfab100475ceb13b1624c91094f
-ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
+ms.openlocfilehash: 9be39c20a99920482899efa934003957ffc696b7
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89551943"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90545611"
 ---
 # <a name="how-to-find-the-immediate-preceding-sibling-linq-to-xml"></a>Como localizar o irmão precedentes imediatos (LINQ to XML)
 
@@ -86,4 +86,4 @@ Results are identical
 
 ## <a name="see-also"></a>Confira também
 
-- [LINQ to XML para usuários do XPath (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+- [LINQ to XML para usuários do XPath (Visual Basic)](./comparison-xpath-linq-xml.md)

@@ -9,14 +9,15 @@ helpviewer_keywords:
 - <network> element
 - network element
 ms.assetid: 2c2c6ad4-ed11-48ab-b28e-2bc0ba9b42c7
-ms.openlocfilehash: 36857e63871b4672df349934594f0887a042609e
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: cd142febc0b3aacf1be7978178a6a05d9b9aebbf
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84504544"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91190274"
 ---
 # <a name="network-element-network-settings"></a>Elemento \<network> (Configurações de Rede)
+
 Configura as opções de rede para um servidor de protocolo SMTP externo.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -41,6 +42,7 @@ Configura as opções de rede para um servidor de protocolo SMTP externo.
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -57,15 +59,17 @@ Configura as opções de rede para um servidor de protocolo SMTP externo.
 |`userName`|Especifica o nome de usuário a ser usado para autenticação no servidor de email SMTP. Esse atributo não tem valor padrão.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[\<smtp>Elemento (configurações de rede)](smtp-element-network-settings.md)|Configura as opções de envio de email do protocolo SMTP.|  
+|[\<smtp> Elemento (configurações de rede)](smtp-element-network-settings.md)|Configura as opções de envio de email do protocolo SMTP.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Alguns servidores SMTP exigem que você se autentique no servidor antes de usar o. Se você quiser se autenticar usando as credenciais de rede padrão em seu host, defina o `defaultCredentials` atributo como `true` . A <xref:System.Net.Configuration.SmtpNetworkElement.DefaultCredentials%2A?displayProperty=nameWithType> propriedade pode ser usada para obter o valor atual do `defaultCredentials` atributo dos arquivos de configuração aplicáveis.  
   
  Você também pode usar a autenticação básica (um nome de usuário e senha) para se autenticar no servidor SMTP. Para usar essa opção, você deve especificar um nome de usuário e uma senha válidos para o servidor SMTP especificado.  
@@ -90,6 +94,7 @@ Configura as opções de rede para um servidor de protocolo SMTP externo.
  A <xref:System.Net.Configuration.SmtpNetworkElement.EnableSsl%2A?displayProperty=nameWithType> propriedade pode ser usada para obter o valor atual do `enableSsl` atributo dos arquivos de configuração aplicáveis.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir especifica os parâmetros de SMTP apropriados para enviar email usando as credenciais de rede padrão.  
   
 ```xml  
@@ -110,7 +115,7 @@ Configura as opções de rede para um servidor de protocolo SMTP externo.
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - <xref:System.Net.Configuration.SmtpNetworkElement?displayProperty=nameWithType>
 - <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>

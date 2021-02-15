@@ -3,12 +3,12 @@ title: Acesso elevado para os comandos dotnet
 description: Conheça as melhores práticas para os comandos dotnet que exigem acesso elevado.
 author: wli3
 ms.date: 06/26/2019
-ms.openlocfilehash: f99e0b257772e0a73d4945f1129997d1d3308ed2
-ms.sourcegitcommit: f87ad41b8e62622da126aa928f7640108c4eff98
+ms.openlocfilehash: b34a4d631ec0e5ef641e1ffbc91e081d25645157
+ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80805797"
+ms.lasthandoff: 11/15/2020
+ms.locfileid: "94634045"
 ---
 # <a name="elevated-access-for-dotnet-commands"></a>Acesso elevado para os comandos dotnet
 
@@ -22,22 +22,22 @@ Os seguintes comandos podem ser executados com privilégios elevados:
 
 Não recomendamos executar outros comandos com privilégios elevados. Particularmente, não recomendamos privilégios elevados com comandos que usam o MSBuild, como [dotnet restore](dotnet-restore.md), [dotnet build](dotnet-build.md) e [dotnet run](dotnet-run.md). O principal problema é o gerenciamento de permissões quando um usuário faz a transição entre a raiz e uma conta restrita várias vezes após a emissão de comandos dotnet. Você pode achar, como um usuário restrito, que não tem acesso ao arquivo criado por um usuário raiz. Existem maneiras de resolver esta situação, mas não é necessário entrar nesse assunto agora.
 
-Você pode executar comandos como raiz, desde que não faça a transição várias vezes entre raiz e uma conta restrita. Por exemplo, os contêineres do Docker são executados como raiz por padrão, então eles têm essa característica.
+Você pode executar comandos como raiz, desde que não faça a transição entre a raiz e uma conta restrita. Por exemplo, os contêineres do Docker são executados como raiz por padrão, então eles têm essa característica.
 
 ## <a name="global-tool-installation"></a>Instalação da ferramenta global
 
-As instruções a seguir mostram a maneira recomendada para instalar, executar e desinstalar as ferramentas do .NET Core que exigem permissões com privilégios elevados para executar.
+As instruções a seguir demonstram a maneira recomendada de instalar, executar e desinstalar as ferramentas .NET que exigem permissões elevadas para serem executadas.
 
 <!-- markdownlint-disable MD025 -->
 
 # <a name="windows"></a>[Windows](#tab/windows)
 
-### <a name="install-the-tool"></a>Instale a ferramenta
+### <a name="install-the-tool"></a>Instalar a ferramenta
 
 Se a pasta `%ProgramFiles%\dotnet-tools` já existir, faça o seguinte para verificar se o grupo “Usuários” tem permissão para gravar ou modificar esse diretório:
 
-- Clique com `%ProgramFiles%\dotnet-tools` o botão direito do mouse na pasta e selecione **Propriedades**. A caixa de diálogo **Propriedades Comuns** é aberta.
-- Selecione a guia **Segurança.** Em **Grupo ou nomes de usuários,** verifique se o grupo "Usuários" tem permissão para escrever ou modificar o diretório.
+- Clique com o botão direito do mouse na `%ProgramFiles%\dotnet-tools` pasta e selecione **Propriedades**. A caixa de diálogo **Propriedades Comuns** é aberta.
+- Selecione a guia **segurança** . Em **nomes de grupo ou de usuário** , verifique se o grupo "usuários" tem permissão para gravar ou modificar o diretório.
 - Se o grupo “Usuários” puder gravar ou modificar o diretório, use um nome de diretório diferente ao instalar as ferramentas em vez de *dotnet-tools*.
 
 Para instalar as ferramentas, execute o seguinte comando no prompt com privilégios elevados. Ele criará a pasta *dotnet-tools* durante a instalação.
@@ -106,6 +106,6 @@ Durante o desenvolvimento, talvez você precise de acesso com privilégios eleva
    sudo dotnet run --no-build
    ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Visão geral das Ferramentas Globais do .NET Core](global-tools.md)
+- [Visão geral das ferramentas .NET](global-tools.md)

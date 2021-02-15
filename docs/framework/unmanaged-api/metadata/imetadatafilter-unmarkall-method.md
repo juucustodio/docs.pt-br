@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataFilter:: UnmarkAll'
 title: Método IMetaDataFilter::UnmarkAll
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: a04d91dc-690f-4de8-8c97-55c69a8503b4
 topic_type:
 - apiref
-ms.openlocfilehash: 9c969f4f8f2327e6ddf45b8f0423ecaafc95d81b
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: f4923c3b2c6ff4332d4a885136d660d889f2c8d9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84492468"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99688852"
 ---
 # <a name="imetadatafilterunmarkall-method"></a>Método IMetaDataFilter::UnmarkAll
+
 Remove as marcas de processamento de todos os tokens no escopo de metadados atual.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -32,17 +34,19 @@ HRESULT UnmarkAll ();
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
- `UnmarkAll`Não usa parâmetros.  
+
+ `UnmarkAll` Não usa parâmetros.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataFilter](imetadatafilter-interface.md)

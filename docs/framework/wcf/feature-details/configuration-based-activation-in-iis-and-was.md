@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: Configuration-Based ativação no IIS e WAS'
 title: Ativação com base em configuração no ISS e WAS
 ms.date: 03/30/2017
 ms.assetid: 6a927e1f-b905-4ee5-ad0f-78265da38238
-ms.openlocfilehash: 5e1672f4dd67950178c95d3e043e16072fcd0ef4
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 7515e3f0d3035e1ab93c67980bd00eeb0a063d17
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84593575"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99743356"
 ---
 # <a name="configuration-based-activation-in-iis-and-was"></a>Ativação com base em configuração no ISS e WAS
 
@@ -15,7 +16,7 @@ Normalmente, ao hospedar um serviço de Windows Communication Foundation (WCF) e
 
 ## <a name="configuration-based-activation"></a>Ativação com base em configuração
 
-A ativação baseada em configuração usa os metadados que costumava ser colocados no arquivo. svc e os coloca no arquivo Web. config. Dentro do `serviceHostingEnvironment` elemento<> há um elemento <`serviceActivations`>. Dentro do `serviceActivations` elemento <> há um ou mais `add` elementos de> <, um para cada serviço hospedado. O `add` elemento <> contém atributos que permitem definir o endereço relativo para o serviço e o tipo de serviço ou uma fábrica de host de serviço. O código de exemplo de configuração a seguir mostra como essa seção é usada.
+A ativação baseada em configuração usa os metadados que costumava ser colocados no arquivo. svc e os coloca no arquivo de Web.config. Dentro do `serviceHostingEnvironment` elemento<> há um elemento <`serviceActivations`>. Dentro do `serviceActivations` elemento <> há um ou mais `add` elementos de> <, um para cada serviço hospedado. O `add` elemento <> contém atributos que permitem definir o endereço relativo para o serviço e o tipo de serviço ou uma fábrica de host de serviço. O código de exemplo de configuração a seguir mostra como essa seção é usada.
 
 > [!NOTE]
 > Cada `add` elemento de> de <deve especificar um atributo de serviço ou de fábrica. É permitido especificar os atributos de serviço e de fábrica.
@@ -28,7 +29,7 @@ A ativação baseada em configuração usa os metadados que costumava ser coloca
 </serviceHostingEnvironment>
 ```
 
- Com isso no arquivo Web. config, você pode posicionar o código-fonte do serviço no diretório App_Code do aplicativo ou um assembly em conformidade no diretório bin do aplicativo.
+ Com isso no arquivo Web.config, você pode posicionar o código-fonte do serviço no diretório App_Code do aplicativo ou um assembly em conformidade no diretório bin do aplicativo.
 
 > [!NOTE]
 >
@@ -43,7 +44,7 @@ A ativação baseada em configuração usa os metadados que costumava ser coloca
 ## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.ServiceActivations%2A>
-- [Hospedando serviços](../hosting-services.md)
+- [Serviços de hospedagem](../hosting-services.md)
 - [Visão geral de serviços de fluxo de trabalho de hospedagem](hosting-workflow-services-overview.md)
 - [\<serviceHostingEnvironment>](../../configure-apps/file-schema/wcf/servicehostingenvironment.md)
-- [Recursos de hospedagem do Windows Server AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))
+- [Recursos de hospedagem do Windows Server AppFabric](/previous-versions/appfabric/ee677189(v=azure.10))

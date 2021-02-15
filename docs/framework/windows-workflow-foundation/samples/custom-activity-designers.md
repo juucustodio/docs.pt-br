@@ -1,26 +1,29 @@
 ---
+description: 'Saiba mais sobre: designers de atividades personalizadas'
 title: Designers personalizados de atividades
 ms.date: 03/30/2017
 ms.assetid: dcf14dca-ce6d-4278-96ba-062f0a679075
-ms.openlocfilehash: 982aecea27de680468fe6f574f72c459ef76b142
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 40bf9d4239759e4a9cc6b4a5b83d51a155c08f1c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61913842"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99787780"
 ---
 # <a name="custom-activity-designers"></a>Designers personalizados de atividades
+
 Esta seção contém exemplos de atividade que usam designer personalizadas para exibição no designer de fluxo de trabalho.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Designer de composição personalizados – Apresentador de item de fluxo de trabalho](custom-composite-designers-workflow-item-presenter.md)  
- Este exemplo mostra como criar um designer de atividade que surija tal uma "zona de descarte."  
+
+ [Designer de compostos personalizados - apresentador de item de fluxo de trabalho](custom-composite-designers-workflow-item-presenter.md)  
+ Este exemplo mostra como criar um designer de atividade que superfícies como uma "área de destino".  
   
- [Designer de compostos personalizados – apresentador de itens de fluxo de trabalho](custom-composite-designers-workflow-items-presenter.md)  
+ [Designer de compostos personalizados - apresentador de itens de fluxo de trabalho](custom-composite-designers-workflow-items-presenter.md)  
  Este exemplo mostra como criar um designer de atividade que surija uma coleção tão editável.  
   
  [Usando o ExpressionTextBox em um designer personalizado de atividades](using-the-expressiontextbox-in-a-custom-activity-designer.md)  
  Este exemplo mostra como usar <xref:System.Activities.Presentation.View.ExpressionTextBox> em um designer personalizado de atividade.  
   
- [Usando a edição de escopo](using-editing-scope.md)  
+ [Usando o escopo de edição](using-editing-scope.md)  
  Este exemplo demonstra como em lotes um conjunto de alterações de modo que eles possam ser desfeitos em uma única unidade atômica. Por padrão, as ações executadas por um autor do designer de atividade automaticamente são integradas desfazer/refazem o sistema.

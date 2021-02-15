@@ -4,12 +4,12 @@ description: Saiba mais sobre expressões de correspondência de padrões em C#
 ms.date: 04/10/2019
 ms.technology: csharp-fundamentals
 ms.assetid: 1e575c32-2e2b-4425-9dca-7d118f3ed15b
-ms.openlocfilehash: 2dd1401e3ef22a02f327e44ff884182ee3e22278
-ms.sourcegitcommit: b1f4756120deaecb8b554477bb040620f69a4209
+ms.openlocfilehash: aabd8afe9a94022557275adb313ca3bf95da7548
+ms.sourcegitcommit: b4a46f6d7ebf44c0035627d00924164bcae2db30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89414988"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91438018"
 ---
 # <a name="pattern-matching"></a>Correspondência padrão
 
@@ -139,4 +139,4 @@ Compare o código deste exemplo com o design que viria após a criação de uma 
 
 ## <a name="see-also"></a>Confira também
 
-- [Tutorial: usando recursos de correspondência de padrões para estender tipos de dados](tutorials/pattern-matching.md)
+- [Tutorial: usar a correspondência de padrões para criar algoritmos orientados a dados e baseados em tipos](tutorials/pattern-matching.md)

@@ -1,28 +1,30 @@
 ---
-title: Como atualizar dinamicamente
+description: 'Saiba mais sobre: como fazer isso: atualização dinâmica'
+title: 'Como: Atualização dinâmica'
 ms.date: 03/30/2017
 ms.assetid: 9b8f6e0d-edab-4a7e-86e3-8c66bebc64bb
-ms.openlocfilehash: aaeb4d9d42c289cf34a6aee9212fc2d74b8f8c01
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 877cb58dd271fa70176a4197da273d923ec253f3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79184959"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704713"
 ---
-# <a name="how-to-dynamic-update"></a>Como atualizar dinamicamente
-Este tópico descreve as etapas básicas necessárias para criar e atualizar dinamicamente a configuração de roteamento. Neste exemplo, a configuração inicial de roteamento é obtida a partir do arquivo de configuração e encaminha todas as mensagens para o serviço de calculadora Calc regular; no entanto, é posteriormente atualizado programáticamente a fim de alterar o ponto final de destino do serviço arredondamentoCalc.  
+# <a name="how-to-dynamic-update"></a>Como: Atualização dinâmica
+
+Este tópico descreve as etapas básicas necessárias para criar e atualizar dinamicamente a configuração de roteamento. Neste exemplo, a configuração de roteamento inicial é obtida do arquivo de configuração e roteia todas as mensagens para o serviço de calculadora regularCalc; no entanto, ele é posteriormente atualizado programaticamente para alterar o ponto de extremidade de destino do serviço roundingCalc.  
   
 > [!NOTE]
-> Em muitas implementações, a configuração será totalmente dinâmica e não dependerá de uma configuração padrão; no entanto, existem alguns cenários, como o deste tópico, onde é desejável ter um estado de configuração padrão quando o serviço é iniciado.  
+> Em muitas implementações, a configuração será totalmente dinâmica e não dependerá de uma configuração padrão; no entanto, há alguns cenários, como aquele neste tópico, em que é desejável ter um estado de configuração padrão quando o serviço é iniciado.  
   
 > [!NOTE]
-> Atualizações dinâmicas ocorrem apenas na memória, e não resultam na modificação de arquivos de configuração.  
+> As atualizações dinâmicas ocorrem apenas na memória e não resultam na modificação dos arquivos de configuração.  
   
- Tanto o Calc regular quanto o arredondamentoCalc suportam as mesmas operações de adicionar, subtrair, multiplicar e dividir; no entanto, arredondarCalc arredonda todos os cálculos para o valor inteiro mais próximo antes de retornar. Um arquivo de configuração é usado para configurar o serviço para encaminhar todas as mensagens para o serviço regularCalc. Depois que o Serviço de <xref:System.ServiceModel.Routing.RoutingExtension.ApplyConfiguration%2A> Roteamento for iniciado, é usado para reconfigurar o serviço para encaminhar mensagens para o serviço de arredondamentoCalc.  
+ RegularCalc e roundingCalc dão suporte às mesmas operações de adicionar, subtrair, multiplicar e dividir; no entanto, roundingCalc arredonda todos os cálculos para o valor inteiro mais próximo antes de retornar. Um arquivo de configuração é usado para configurar o serviço para rotear todas as mensagens para o serviço regularCalc. Depois que o serviço de roteamento foi iniciado, <xref:System.ServiceModel.Routing.RoutingExtension.ApplyConfiguration%2A> é usado para reconfigurar o serviço para rotear mensagens para o serviço roundingCalc.  
   
 ### <a name="implement-initial-configuration"></a>Implementar configuração inicial  
   
-1. Crie a configuração básica do serviço de roteamento especificando os pontos finais de serviço expostos pelo serviço. O exemplo a seguir define um único ponto final de serviço, que será usado para receber mensagens. Ele também define um ponto final do cliente que será usado para enviar mensagens para o Calc regular.  
+1. Crie a configuração básica do serviço de roteamento especificando os pontos de extremidade de serviço expostos pelo serviço. O exemplo a seguir define um único ponto de extremidade de serviço, que será usado para receber mensagens. Ele também define um ponto de extremidade de cliente que será usado para enviar mensagens para o regularCalc.  
   
     ```xml  
     <services>  
@@ -49,7 +51,7 @@ Este tópico descreve as etapas básicas necessárias para criar e atualizar din
     </client>  
     ```  
   
-2. Defina o filtro usado para direcionar mensagens para os pontos finais de destino. Para este exemplo, o filtro MatchAll é usado para encaminhar todas as mensagens para o CalcEndpoint regular definido anteriormente. O exemplo a seguir define a tabela do filtro e do filtro.  
+2. Defina o filtro usado para rotear mensagens para os pontos de extremidade de destino. Para este exemplo, o filtro filtro matchall é usado para rotear todas as mensagens para o regularCalcEndpoint definido anteriormente. O exemplo a seguir define o filtro e a tabela de filtro.  
   
     ```xml  
     <filters>  
@@ -64,7 +66,7 @@ Este tópico descreve as etapas básicas necessárias para criar e atualizar din
     </filterTables>  
     ```  
   
-3. Para avaliar as mensagens recebidas contra os filtros contidos na tabela de filtros, você deve associar a tabela do filtro com os pontos finais de serviço usando o comportamento de roteamento. O exemplo a seguir demonstra associar "filterTable1" com o ponto final do serviço.  
+3. Para avaliar as mensagens de entrada em relação aos filtros contidos na tabela de filtros, você deve associar a tabela de filtros aos pontos de extremidade de serviço usando o comportamento de roteamento. O exemplo a seguir demonstra como associar "filterTable1" ao ponto de extremidade de serviço.  
   
     ```xml  
     <behaviors>  
@@ -78,9 +80,10 @@ Este tópico descreve as etapas básicas necessárias para criar e atualizar din
     ```  
   
 ## <a name="implement-dynamic-configuration"></a>Implementar configuração dinâmica  
- A configuração dinâmica do Serviço de Roteamento <xref:System.ServiceModel.Routing.RoutingConfiguration> só <xref:System.ServiceModel.Routing.RoutingExtension.ApplyConfiguration%2A> pode ser executada em código, criando uma nova configuração e usando para substituir a configuração atual.  Para este exemplo, o Serviço de Roteamento é auto-hospedado dentro de um aplicativo de console. Depois que o aplicativo for iniciado, você pode modificar a configuração de roteamento inserindo 'regular' ou 'arredondando' na janela do console para configurar o ponto final de destino para o qual as mensagens são roteadas; regularCalc quando 'regular' é inserido, caso contrário arredondandoCalc quando 'arredondamento' é inserido.  
+
+ A configuração dinâmica do serviço de roteamento só pode ser executada no código criando um novo <xref:System.ServiceModel.Routing.RoutingConfiguration> e usando <xref:System.ServiceModel.Routing.RoutingExtension.ApplyConfiguration%2A> para substituir a configuração atual.  Para este exemplo, o serviço de roteamento é hospedado internamente em um aplicativo de console. Depois que o aplicativo for iniciado, você poderá modificar a configuração de roteamento inserindo ' regular ' ou ' arredondando ' na janela do console para configurar o ponto de extremidade de destino para o qual as mensagens são roteadas; regularCalc quando ' regular ' for inserido, caso contrário, roundingCalc quando ' arredondando ' for inserido.  
   
-1. As seguintes instruções de uso devem ser adicionadas para dar suporte ao Serviço de Roteamento.  
+1. As instruções using a seguir devem ser adicionadas para dar suporte ao serviço de roteamento.  
   
     ```csharp  
     using System;  
@@ -92,7 +95,7 @@ Este tópico descreve as etapas básicas necessárias para criar e atualizar din
     using System.ServiceModel.Routing;  
     ```  
   
-2. O código a seguir é usado para auto-hospedar o Serviço de Roteamento como um aplicativo de console. Isso inicializa o Serviço de Roteamento usando a configuração descrita na etapa anterior, que está contida no arquivo de configuração do aplicativo. O loop while contém o código usado para alterar a configuração de roteamento.  
+2. O código a seguir é usado para hospedar por conta própria o serviço de roteamento como um aplicativo de console. Isso inicializa o serviço de roteamento usando a configuração descrita na etapa anterior, que está contida no arquivo de configuração do aplicativo. O loop while contém o código usado para alterar a configuração de roteamento.  
   
     ```csharp  
     // Host the service within this EXE console application.  
@@ -117,7 +120,7 @@ Este tópico descreve as etapas básicas necessárias para criar e atualizar din
     }  
     ```  
   
-3. Para atualizar dinamicamente a configuração de roteamento, uma nova configuração de roteamento deve ser criada. Isso deve conter todos os pontos finais, filtros e tabelas de filtro suscitados para a nova configuração de roteamento, pois substituirá completamente a configuração de roteamento existente. Para usar a nova configuração de <xref:System.ServiceModel.Routing.RoutingExtension.ApplyConfiguration%2A> roteamento, você deve invocar e passar a nova configuração.  
+3. Para atualizar dinamicamente a configuração de roteamento, é necessário criar uma nova configuração de roteamento. Isso deve conter todos os pontos de extremidade, filtros e tabelas de filtro necessários para a nova configuração de roteamento, pois ele substituirá completamente a configuração de roteamento existente. Para usar a nova configuração de roteamento, você deve invocar <xref:System.ServiceModel.Routing.RoutingExtension.ApplyConfiguration%2A> e passar a nova configuração.  
   
      Adicione o seguinte código ao loop while definido anteriormente para permitir que o serviço seja reconfigurado com base na entrada do usuário.  
   
@@ -160,11 +163,11 @@ Este tópico descreve as etapas básicas necessárias para criar e atualizar din
     ```  
   
     > [!NOTE]
-    > Uma vez que o método para fornecer uma nova configuração de roteamento está contido na extensão de serviço RoutingExtension, novos objetos de configuração de roteamento podem ser fornecidos em qualquer lugar do modelo de extensibilidade WCF que tenha ou possa obter uma referência ao ServiceHost ou Extensões de serviço (como em outra Extensão de Serviço).
+    > Como o método para fornecer um novo RoutingConfiguration está contido na extensão de serviço RoutingExtension, novos objetos RoutingConfiguration podem ser fornecidos em qualquer lugar no modelo de extensibilidade do WCF que tem ou pode obter uma referência para o ServiceHost ou extensões de serviço (como em outra imextension).
   
 ## <a name="example"></a>Exemplo  
 
-A seguir está uma listagem completa do aplicativo de console usado neste exemplo:
+A seguir está uma lista completa do aplicativo de console usado neste exemplo:
   
 ```csharp
 //-----------------------------------------------------------------  
@@ -243,7 +246,7 @@ namespace Microsoft.Samples.AdvancedFilters
   
 ## <a name="example"></a>Exemplo  
 
-A seguir está uma listagem completa do arquivo de configuração usado neste exemplo:
+A seguir está uma lista completa do arquivo de configuração usado neste exemplo:
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -298,6 +301,6 @@ A seguir está uma listagem completa do arquivo de configuração usado neste ex
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Serviços de roteamento](../samples/routing-services.md)

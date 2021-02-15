@@ -1,19 +1,19 @@
 ---
+description: 'Saiba mais sobre: práticas recomendadas para o desenvolvimento de aplicativos preparados para o mundo'
 title: Práticas recomendadas para o desenvolvimento de aplicativos prontos para internacionalização
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - global applications, best practices
 - world-ready applications, best practices
-- globalization [.NET Framework], best practices
-- international applications [.NET Framework], best practices
+- globalization [.NET], best practices
+- international applications [.NET], best practices
 ms.assetid: f08169c7-aad8-4ec3-9a21-9ebd3b89986c
-ms.openlocfilehash: f0e5ccf999b6aa96b6317b88e25f3cd9d9fbc899
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: b82b926217fd0ed5054f85201fbc877f818170d0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84279874"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99702295"
 ---
 # <a name="best-practices-for-developing-world-ready-applications"></a>Práticas recomendadas para o desenvolvimento de aplicativos preparados para globalização
 
@@ -91,7 +91,7 @@ Essa seção descreve as práticas recomendadas a serem seguidas no desenvolvime
 
 4. Especifique os valores dos atributos requestEncoding, responseEncoding, fileEncoding, culture e uiCulture nos três locais a seguir em um aplicativo ASP.NET:
 
-    - Na seção de globalização de um arquivo Web.config. Este arquivo é externo no aplicativo ASP.NET. Para obter mais informações, consulte [ \<globalization> elemento](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/hy4kkhe0(v=vs.100)).
+    - Na seção de globalização de um arquivo Web.config. Este arquivo é externo no aplicativo ASP.NET. Para obter mais informações, consulte [ \<globalization> elemento](/previous-versions/dotnet/netframework-4.0/hy4kkhe0(v=vs.100)).
 
     - Em uma diretiva de página. Observe que, quando um aplicativo está em uma página, isso significa que o arquivo já foi lido. Portanto, já não é possível especificar fileEncoding e requestEncoding. Somente uiCulture, Culture e responseEncoding podem ser especificados em uma diretiva de página.
 
@@ -99,7 +99,7 @@ Essa seção descreve as práticas recomendadas a serem seguidas no desenvolvime
 
 5. Observe que o valor de uiCulture pode ser definido para o navegador do idioma aceito.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Globalização e localização](index.md)
 - [Recursos em aplicativos da área de trabalho](../../framework/resources/index.md)

@@ -1,29 +1,29 @@
 ---
-title: Testar um .NET Standard biblioteca de classes com o .NET Core usando Visual Studio Code
-description: Crie um projeto de teste de unidade para uma biblioteca de classes do .NET Core. Verifique se uma biblioteca de classes do .NET Core funciona corretamente com testes de unidade.
-ms.date: 06/08/2020
-ms.openlocfilehash: f49974e1b918424ae5b5d7f3969f52c371e37154
-ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
+title: Testar uma biblioteca de classes .NET usando Visual Studio Code
+description: Saiba como usar Visual Studio Code e a CLI do .NET para criar e executar um projeto de teste de unidade para uma biblioteca de classes .NET.
+ms.date: 11/17/2020
+ms.openlocfilehash: 4528bd203ae03988a1d1d80a7e904e94e68c1d04
+ms.sourcegitcommit: 5114e7847e0ff8ddb8c266802d47af78567949cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89359162"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94915850"
 ---
-# <a name="tutorial-test-a-net-standard-class-library-with-net-core-using-visual-studio-code"></a>Tutorial: testar uma biblioteca de classes .NET Standard com o .NET Core usando Visual Studio Code
+# <a name="tutorial-test-a-net-class-library-using-visual-studio-code"></a>Tutorial: testar uma biblioteca de classes .NET usando Visual Studio Code
 
 Este tutorial mostra como automatizar o teste de unidade adicionando um projeto de teste a uma solução.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- Este tutorial funciona com a solução que você cria em [criar uma .net Standard biblioteca usando Visual Studio Code](library-with-visual-studio-code.md).
+- Este tutorial funciona com a solução que você cria em [criar uma biblioteca de classes .NET usando Visual Studio Code](library-with-visual-studio-code.md).
 
 ## <a name="create-a-unit-test-project"></a>Crie um projeto de teste de unidade
 
 As unidade de teste fornecem testes de software automatizados durante o desenvolvimento e a publicação. A estrutura de teste que você usa neste tutorial é MSTest. [MSTest](https://github.com/Microsoft/testfx-docs) é uma das três estruturas de teste que você pode escolher. Os outros são [xUnit](https://xunit.net/) e [NUnit](https://nunit.org/).
 
-1. Iniciar o Visual Studio Code.
+1. Inicie o Visual Studio Code.
 
-1. Abra a `ClassLibraryProjects` solução que você criou em [criar uma .net Standard biblioteca usando Visual Studio Code](library-with-visual-studio-code.md).
+1. Abra a `ClassLibraryProjects` solução que você criou em [criar uma biblioteca de classes .net usando Visual Studio Code](library-with-visual-studio-code.md).
 
 1. Crie um projeto de teste de unidade chamado "StringLibraryTest".
 
@@ -67,7 +67,7 @@ As unidade de teste fornecem testes de software automatizados durante o desenvol
 
 Para que o projeto de teste funcione com a `StringLibrary` classe, adicione uma referência no `StringLibraryTest` projeto ao `StringLibrary` projeto.
 
-1. Execute o comando a seguir:
+1. Execute o seguinte comando:
 
    ```dotnetcli
    dotnet add StringLibraryTest/StringLibraryTest.csproj reference StringLibrary/StringLibrary.csproj
@@ -114,13 +114,9 @@ Para criar os métodos de teste:
 
    ```output
    Starting test execution, please wait...
-
    A total of 1 test files matched the specified pattern.
 
-   Test Run Successful.
-   Total tests: 3
-        Passed: 3
-   Total time: 5.1116 Seconds
+   Passed!  - Failed:     0, Passed:     3, Skipped:     0, Total:     3, Duration: 3 ms - StringLibraryTest.dll (net5.0)
    ```
 
 ## <a name="handle-test-failures"></a>Lidar com falhas de teste
@@ -144,20 +140,14 @@ Se você estiver fazendo o TDD (desenvolvimento controlado por teste), você esc
 
    ```output
    Starting test execution, please wait...
-
    A total of 1 test files matched the specified pattern.
-     X TestDoesNotStartWithUpper [283ms]
+     Failed TestDoesNotStartWithUpper [28 ms]
      Error Message:
       Assert.IsFalse failed. Expected for 'Error': false; Actual: True
      Stack Trace:
-     at StringLibraryTest.UnitTest1.TestDoesNotStartWithUpper()
-       in C:\Projects\ClassLibraryProjects\StringLibraryTest\UnitTest1.cs:line 33
+        at StringLibraryTest.UnitTest1.TestDoesNotStartWithUpper() in C:\ClassLibraryProjects\StringLibraryTest\UnitTest1.cs:line 33
 
-   Test Run Failed.
-   Total tests: 3
-        Passed: 2
-        Failed: 1
-   Total time: 1.7825 Seconds
+   Failed!  - Failed:     1, Passed:     2, Skipped:     0, Total:     3, Duration: 31 ms - StringLibraryTest.dll (net5.0)
    ```
 
 1. Remova a cadeia de caracteres "Error" que você adicionou na etapa 1. Execute novamente o teste e os testes são aprovados.
@@ -174,9 +164,15 @@ Agora que todos os testes passaram durante a execução da compilação de depur
 
    Os testes são aprovados.
 
+## <a name="debug-tests"></a>Depurar testes
+
+Se você estiver usando Visual Studio Code como o IDE, poderá usar o mesmo processo mostrado em [depurar um aplicativo de console .NET usando Visual Studio Code](debugging-with-visual-studio-code.md) para depurar o código usando o projeto de teste de unidade. Em vez de iniciar o projeto de aplicativo de *demonstração* , abra *StringLibraryTest/UnitTest1. cs* e selecione **executar todos os testes** entre as linhas 7 e 8. Se você não conseguir encontrá-lo, pressione <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> para abrir a paleta de comandos e digite **recarregar janela**.
+
+Visual Studio Code inicia o projeto de teste com o depurador anexado. A execução será interrompida em qualquer ponto de interrupção que você adicionou ao projeto de teste ou ao código de biblioteca subjacente.
+
 ## <a name="additional-resources"></a>Recursos adicionais
 
-* [Teste de unidade no .NET Core e no .NET Standard](../testing/index.md)
+* [Teste de unidade no .NET](../testing/index.md)
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -193,4 +189,4 @@ Se você publicar uma biblioteca como um pacote NuGet, outras pessoas poderão i
 Uma biblioteca não precisa ser distribuída como um pacote. Ele pode ser agrupado com um aplicativo de console que o utiliza. Para saber como publicar um aplicativo de console, consulte o tutorial anterior nesta série:
 
 > [!div class="nextstepaction"]
-> [Publicar um aplicativo de console do .NET Core usando Visual Studio Code](publishing-with-visual-studio-code.md)
+> [Publicar um aplicativo de console .NET usando Visual Studio Code](publishing-with-visual-studio-code.md)

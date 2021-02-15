@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugStepper'
 title: Interface ICorDebugStepper
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: ed8364eb-f01b-46f6-b5e3-5dda9cae2dfe
 topic_type:
 - apiref
-ms.openlocfilehash: 622fdfa37c93e406950e73941775828ae4b112fa
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: a16df9d25b4d87b0638448c1fdf8fec4759261d3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379429"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803575"
 ---
 # <a name="icordebugstepper-interface"></a>Interface ICorDebugStepper
+
 Representa uma etapa na execução do código que é realizada por um depurador, serve como um identificador entre a emissão e a conclusão de um comando e fornece uma maneira de cancelar uma etapa.  
   
 ## <a name="methods"></a>Métodos  
@@ -38,6 +40,7 @@ Representa uma etapa na execução do código que é realizada por um depurador,
 |[Método StepRange](icordebugstepper-steprange-method.md)|Faz isso `ICorDebugStepper` para uma única etapa por meio de seu thread que o contém e retorna quando ele atinge o código após o último dos intervalos especificados.|  
   
 ## <a name="remarks"></a>Comentários  
+
  A `ICorDebugStepper` interface atende às seguintes finalidades:  
   
 - Ele atua como um identificador entre um comando Step que é emitido e a conclusão desse comando.  
@@ -54,6 +57,7 @@ Representa uma etapa na execução do código que é realizada por um depurador,
 > Esta interface não dá suporte para chamada remota, seja entre computadores ou processos cruzados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -62,6 +66,6 @@ Representa uma etapa na execução do código que é realizada por um depurador,
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

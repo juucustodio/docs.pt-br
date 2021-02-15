@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugFunctionBreakpoint:: GetFunction'
 title: Método ICorDebugFunctionBreakpoint::GetFunction
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 2a62dae5-dd8a-4696-b817-0e1e586c24a0
 topic_type:
 - apiref
-ms.openlocfilehash: 79a6c70399d5059d6959ac6127f22807138c00fa
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 1e407acda81e5e6397da003a9b91a48d4d171e5d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213108"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754089"
 ---
 # <a name="icordebugfunctionbreakpointgetfunction-method"></a>Método ICorDebugFunctionBreakpoint::GetFunction
+
 Obtém um ponteiro de interface para um ICorDebugFunction que faz referência à função na qual o ponto de interrupção está definido.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,10 +36,12 @@ HRESULT GetFunction (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ppFunction`  
  fora Um ponteiro para o endereço da função na qual o ponto de interrupção está definido.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

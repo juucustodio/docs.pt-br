@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorSerializationType'
 title: Enumeração CorSerializationType
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 6b1fcd11-c7fb-4be2-8910-abc862d4caf4
 topic_type:
 - apiref
-ms.openlocfilehash: 649a9159f99afa64615c40c23a98a80318ae0d7f
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 86df23bf03037d329a3138798725058f1d24a450
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84009165"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99707378"
 ---
 # <a name="corserializationtype-enumeration"></a>Enumeração CorSerializationType
+
 Especifica como um objeto é serializado pelo Common Language Runtime.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -55,7 +57,7 @@ typedef enum CorSerializationType {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`SERIALIZATION_TYPE_UNDEFINED`|A serialização do objeto está indefinida.|  
 |`SERIALIZATION_TYPE_BOOLEAN`|O objeto é serializado como um tipo booliano|  
@@ -79,12 +81,13 @@ typedef enum CorSerializationType {
 |`SERIALIZATION_TYPE_ENUM`|O objeto é serializado como uma enumeração.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorHdr. h  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumerações de metadados](metadata-enumerations.md)

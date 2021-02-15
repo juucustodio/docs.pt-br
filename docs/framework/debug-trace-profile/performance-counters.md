@@ -7,18 +7,19 @@ helpviewer_keywords:
 - performance counters
 - performance monitoring, counters
 ms.assetid: 06a4ae8c-eeb2-4d5a-817e-b1b95c0653e1
-ms.openlocfilehash: 3702e9d2e0a369f5391c16088202caf5d7ced7ea
-ms.sourcegitcommit: c23d9666ec75b91741da43ee3d91c317d68c7327
+ms.openlocfilehash: c9e073ef088595d3ee5cd9e1af70140f12022179
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85803697"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96271467"
 ---
 # <a name="performance-counters-in-the-net-framework"></a>Contadores de desempenho no .NET Framework
 
-Este tópico fornece uma lista de contadores de desempenho que você pode encontrar no [Monitor de desempenho do Windows](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749249%28v=ws.11%29).  
+Este tópico fornece uma lista de contadores de desempenho que você pode encontrar no [Monitor de desempenho do Windows](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749249(v=ws.11)).  
 
 ## <a name="exception-performance-counters"></a>Contadores de desempenho de exceção  
+
  A categoria Exceções do .NET CLR do Console de desempenho inclui contadores que fornecem informações sobre as exceções geradas por um aplicativo. A tabela a seguir descreve esses contadores de desempenho.  
   
 |Contador de desempenho|Descrição|  
@@ -30,6 +31,7 @@ Este tópico fornece uma lista de contadores de desempenho que você pode encont
 |**Extensão do início ao tratamento/s**|Exibe o número de registros ativação desviados, do quadro que gerou a exceção até o quadro que tratou a exceção, por segundo. Esse contador é reiniciado para zero quando um manipulador de exceção é inserido, de modo que as exceções aninhadas mostram a profundidade da pilha de manipulador a manipulador.<br /><br /> Esse contador não consiste numa média temporal; ele apresenta a diferença entre os valores observados nos dois últimos exemplos divididos pela duração do intervalo de amostragem.|  
 
 ## <a name="interop-performance-counters"></a>Contadores de desempenho de interoperabilidade  
+
  A categoria de interoperabilidade do .NET CLR do Console de desempenho inclui contadores que fornecem informações sobre a interação de um aplicativo com componentes COM, serviços COM+ e bibliotecas de tipos externo. A tabela a seguir descreve esses contadores de desempenho.  
   
 |Contador de desempenho|Descrição|  
@@ -41,6 +43,7 @@ Este tópico fornece uma lista de contadores de desempenho que você pode encont
 |**N. de importações de TLB/s**|Reservado para uso futuro.|  
 
 ## <a name="jit-performance-counters"></a>contadores de desempenho JIT  
+
  A categoria JIT do .NET CLR do Console de desempenho inclui contadores que fornecem informações sobre o código com compilação JIT. A tabela a seguir descreve esses contadores de desempenho.  
   
 |Contador de desempenho|Descrição|  
@@ -53,6 +56,7 @@ Este tópico fornece uma lista de contadores de desempenho que você pode encont
 |**N. de bytes de IL com compilação JIT total**|Exibe o total de bytes MSIL com compilação JIT desde que o aplicativo foi iniciado. Este contador é equivalente ao contador **N. de bytes de IL com compilação JIT**.|  
 
 ## <a name="loading-performance-counters"></a>Carregando contadores de desempenho  
+
  A categoria Carregamento do .NET CLR do Console de desempenho inclui contadores que fornecem informações sobre os assemblies, as classes e os domínios de aplicativos que são carregados. A tabela a seguir descreve esses contadores de desempenho.  
   
 |Contador de desempenho|Descrição|  
@@ -75,6 +79,7 @@ Este tópico fornece uma lista de contadores de desempenho que você pode encont
 |**Total de Classes carregadas**|Exibe o número cumulativo de classes carregadas em todos os assemblies desde que o aplicativo foi iniciado.|  
 
 ## <a name="lock-and-thread-performance-counters"></a>Contadores de desempenho de bloqueio e thread  
+
  A categoria LocksAndThreads do .NET CLR do Console de desempenho inclui contadores que fornecem informações sobre bloqueios e threads gerenciados e usos de aplicativo. A tabela a seguir descreve esses contadores de desempenho.  
   
 |Contador de desempenho|Descrição|  
@@ -91,6 +96,7 @@ Este tópico fornece uma lista de contadores de desempenho que você pode encont
 |**N. total de contenções**|Exibe o número total de vezes que os threads em runtime tentaram adquirir um bloqueio gerenciado sem êxito.|  
 
 ## <a name="memory-performance-counters"></a>Contadores de desempenho da memória  
+
  A categoria Memória do .NET CLR do Console de desempenho inclui contadores que fornecem informações sobre o coletor de lixo. A tabela a seguir descreve esses contadores de desempenho.  
   
 |Contador de desempenho|Descrição|  
@@ -131,7 +137,7 @@ A categoria Rede do .NET CLR do Console de desempenho inclui contadores que forn
 |**Datagramas recebidos**|Número total cumulativo de pacotes de datagrama recebidos por todos os objetos <xref:System.Net.Sockets.Socket> dentro do <xref:System.AppDomain> desde o início do processo.|  
 |**Datagramas enviados**|O número total cumulativo de pacotes de datagrama enviados por todos os objetos <xref:System.Net.Sockets.Socket> dentro do <xref:System.AppDomain> desde o início do processo.|  
 |**Tempo de vida médio de HttpWebRequest**|O tempo médio até a conclusão de todos os objetos <xref:System.Net.HttpWebRequest> que foram finalizados no último intervalo dentro do <xref:System.AppDomain> desde o início do processo.|  
-|**Tempo de espera médio de HttpWebRequest**|O tempo de espera médio de todos os objetos <xref:System.Net.HttpWebRequest> que deixaram a fila no último intervalo dentro do <xref:System.AppDomain> desde o início do processo.|  
+|**Tempo médio de fila de HttpWebRequests**|O tempo de espera médio de todos os objetos <xref:System.Net.HttpWebRequest> que deixaram a fila no último intervalo dentro do <xref:System.AppDomain> desde o início do processo.|  
 |**HttpWebRequests criadas/s**|O número de objetos <xref:System.Net.HttpWebRequest> criados por segundo dentro do <xref:System.AppDomain>.|  
 |**HttpWebRequests colocadas na fila/s**|O número de objetos <xref:System.Net.HttpWebRequest> que foram adicionados à fila por segundo dentro do <xref:System.AppDomain>.|  
 |**HttpWebRequests anuladas/s**|O número de objetos <xref:System.Net.HttpWebRequest> em que o aplicativo chamou o método <xref:System.Net.HttpWebRequest.Abort%2A> por segundo dentro do <xref:System.AppDomain>.|  
@@ -171,9 +177,9 @@ Os contadores de desempenho de rede para eventos incluem o seguinte:
   
 - **Tempo de vida médio de HttpWebRequest**  
   
-- **Tempo de espera médio de HttpWebRequest**  
+- **Tempo médio de fila de HttpWebRequests**  
   
- Para o contador **Tempo de vida médio de HttpWebRequest**, o tempo de vida da maioria dos objetos <xref:System.Net.HttpWebRequest> sempre começa com a hora em que o objeto é criado até o momento em que o fluxo de resposta é fechado pelo aplicativo. Há dois casos incomuns:  
+ Para o contador de **tempo de vida da média de HttpWebRequests** , o tempo de vida da maioria dos <xref:System.Net.HttpWebRequest> objetos sempre começa com a hora em que o objeto é criado até o momento em que o fluxo de resposta é fechado pelo aplicativo. Há dois casos incomuns:  
   
 - Se o aplicativo nunca chama os métodos <xref:System.Net.HttpWebRequest.GetResponse%2A> ou <xref:System.Net.HttpWebRequest.BeginGetResponse%2A>, o tempo de vida do objeto <xref:System.Net.HttpWebRequest> é ignorado.  
   
@@ -218,6 +224,7 @@ for (int i = 0; i < Array.Length; i++)
  Para obter mais informações sobre como acessar e gerenciar os contadores de desempenho em um aplicativo, consulte [Contadores de desempenho](performance-counters.md).  
 
 ## <a name="security-performance-counters"></a>Contadores de desempenho de segurança  
+
  A categoria de Segurança do .NET CLR do Console de desempenho inclui contadores que fornecem informações sobre as verificações de segurança que o Common Language Runtime executa para um aplicativo. A tabela a seguir descreve esses contadores de desempenho.  
   
 |Contador de desempenho|Descrição|  
@@ -228,7 +235,7 @@ for (int i = 0; i < Array.Length; i++)
 |**Extensão do exame da pilha**|Exibe a profundidade da pilha durante essa última verificação de segurança de acesso do código de runtime. Verificações de segurança de acesso do código de runtime são realizadas movimentando a pilha. Esse contador não é uma média, ele exibe apenas o último valor observado.|  
 |**Verificações de runtime total**|Exibe o número total de verificações de segurança de acesso do código de runtime realizadas desde que o aplicativo foi iniciado. Verificações de segurança de acesso de código de runtime são realizadas quando um chamador requer uma permissão específica. A verificação de runtime é feita em cada chamada pelo chamador e examina a pilha do thread atual do chamador. Quando usado com o contador **Extensão do exame da pilha**, esse contador indica a penalidade de desempenho que ocorre para verificações de segurança.|  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Contadores de desempenho](performance-counters.md)
-- [Criação de perfil de tempo de execução](runtime-profiling.md)
+- [Criação de perfil do runtime](runtime-profiling.md)

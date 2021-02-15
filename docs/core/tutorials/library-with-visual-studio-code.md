@@ -1,30 +1,32 @@
 ---
-title: Criar uma biblioteca de classes de .NET Standard usando Visual Studio Code
-description: Saiba como criar uma biblioteca de classes de .NET Standard usando Visual Studio Code.
-ms.date: 06/08/2020
-ms.openlocfilehash: 966b9b0b48f67809e82d9133c523995cd97b6015
-ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
+title: Criar uma biblioteca de classes .NET usando Visual Studio Code
+description: Saiba como criar uma biblioteca de classes .NET usando Visual Studio Code.
+ms.date: 11/18/2020
+ms.openlocfilehash: 4473163b76060623b364d7dabf7366c3575e3dcd
+ms.sourcegitcommit: 9d525bb8109216ca1dc9e39c149d4902f4b43da5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2020
-ms.locfileid: "89495506"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96599493"
 ---
-# <a name="tutorial-create-a-net-standard-library-using-visual-studio-code"></a>Tutorial: criar uma biblioteca de .NET Standard usando Visual Studio Code
+# <a name="tutorial-create-a-net-class-library-using-visual-studio-code"></a>Tutorial: criar uma biblioteca de classes do .NET usando Visual Studio Code
 
-Neste tutorial, você cria uma biblioteca de utilitário simples que contém um único método de manipulação de cadeia de caracteres. Implemente-o como um [método de extensão](../../csharp/programming-guide/classes-and-structs/extension-methods.md) para que você possa chamá-lo como se fosse um membro da <xref:System.String> classe.
+Neste tutorial, você cria uma biblioteca de utilitário simples que contém um único método de manipulação de cadeia de caracteres.
 
-Uma *biblioteca de classes* define tipos e métodos que são chamados por um aplicativo. Uma biblioteca de classes que tem como alvo .NET Standard 2,0 permite que sua biblioteca seja chamada por qualquer implementação do .NET que dê suporte a essa versão do .NET Standard. Ao concluir a biblioteca de classes, você pode distribuí-la como um componente de terceiros ou como um componente agrupado com um ou mais aplicativos.
+Uma *biblioteca de classes* define tipos e métodos que são chamados por um aplicativo. Se a biblioteca tiver como destino .NET Standard 2,0, ela poderá ser chamada por qualquer implementação do .NET (incluindo .NET Framework) que ofereça suporte a .NET Standard 2,0. Se a biblioteca tiver como destino o .NET 5, ela poderá ser chamada por qualquer aplicativo que tenha como destino o .NET 5. Este tutorial mostra como direcionar o .NET 5.
+
+Ao criar uma biblioteca de classes, você pode distribuí-la como um componente de terceiros ou como um componente agrupado com um ou mais aplicativos.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
 1. [Visual Studio Code](https://code.visualstudio.com/) com a [extensão C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) instalada. Para obter informações sobre como instalar extensões em Visual Studio Code, consulte [vs Code Marketplace de extensão](https://code.visualstudio.com/docs/editor/extension-gallery).
-2. O [SDK do .NET Core 3,1 ou posterior](https://dotnet.microsoft.com/download)
+2. O [SDK do .net 5,0 ou posterior](https://dotnet.microsoft.com/download)
 
 ## <a name="create-a-solution"></a>Criar uma solução
 
 Comece criando uma solução em branco para colocar o projeto de biblioteca de classes no. Uma solução serve como um contêiner para um ou mais projetos. Você adicionará mais projetos relacionados à mesma solução.
 
-1. Iniciar o Visual Studio Code.
+1. Inicie o Visual Studio Code.
 
 1. Selecione **arquivo**  >  **abrir pasta** (**abrir...** no MacOS) no menu principal
 
@@ -48,7 +50,7 @@ Comece criando uma solução em branco para colocar o projeto de biblioteca de c
 
 ## <a name="create-a-class-library-project"></a>Criar um projeto de biblioteca de classes
 
-Adicione um novo projeto de biblioteca de classe .NET Standard chamado "StringLibrary" à solução.
+Adicione um novo projeto de biblioteca de classes .NET chamado "StringLibrary" à solução.
 
 1. No terminal, execute o seguinte comando para criar o projeto de biblioteca:
 
@@ -81,15 +83,15 @@ Adicione um novo projeto de biblioteca de classe .NET Standard chamado "StringLi
    Project `StringLibrary\StringLibrary.csproj` added to the solution.
    ```
 
-1. Verifique se a biblioteca tem como destino a versão correta do .NET Standard. No **Explorer**, abra *StringLibrary/StringLibrary. csproj*.
+1. Verifique se a biblioteca tem como destino o .NET 5. No **Explorer**, abra *StringLibrary/StringLibrary. csproj*.
 
-   O `TargetFramework` elemento mostra que o projeto tem como destino .NET Standard 2,0.
+   O `TargetFramework` elemento mostra que o projeto tem como alvo o .net 5,0.
 
    ```xml
    <Project Sdk="Microsoft.NET.Sdk">
 
      <PropertyGroup>
-       <TargetFramework>netstandard2.0</TargetFramework>
+       <TargetFramework>net5.0</TargetFramework>
      </PropertyGroup>
 
    </Project>
@@ -116,7 +118,7 @@ Adicione um novo projeto de biblioteca de classe .NET Standard chamado "StringLi
    Copyright (C) Microsoft Corporation. All rights reserved.
      Determining projects to restore...
      All projects are up-to-date for restore.
-     StringLibrary -> C:\Projects\ClassLibraryProjects\StringLibrary\bin\Debug\netstandard2.0\StringLibrary.dll
+     StringLibrary -> C:\Projects\ClassLibraryProjects\StringLibrary\bin\Debug\net5.0\StringLibrary.dll
    Build succeeded.
        0 Warning(s)
        0 Error(s)
@@ -164,13 +166,13 @@ Adicione um aplicativo de console que usa a biblioteca de classes. O aplicativo 
 
    O programa solicita que o usuário insira uma cadeia de caracteres. Ele indica se a cadeia de caracteres começa com um caractere maiúsculo. Se o usuário pressionar a tecla <kbd>Enter</kbd> sem inserir uma cadeia de caracteres, o aplicativo será encerrado e a janela do console será fechada.
 
-1. Salve suas alterações.
+1. Salve as alterações.
 
 ## <a name="add-a-project-reference"></a>Adicionar uma referência ao projeto
 
 Inicialmente, o novo projeto de aplicativo de console não tem acesso à biblioteca de classes. Para permitir que ele chame métodos na biblioteca de classes, crie uma referência de projeto para o projeto de biblioteca de classes.
 
-1. Execute o seguinte comando:
+1. Execute o comando a seguir:
 
    ```dotnetcli
    dotnet add ShowCase/ShowCase.csproj reference StringLibrary/StringLibrary.csproj
@@ -182,7 +184,7 @@ Inicialmente, o novo projeto de aplicativo de console não tem acesso à bibliot
    Reference `..\StringLibrary\StringLibrary.csproj` added to the project.
    ```
 
-## <a name="run-the-app"></a>Executar o aplicativo
+## <a name="run-the-app"></a>Execute o aplicativo
 
 1. Execute o seguinte comando no terminal:
 
@@ -208,7 +210,7 @@ Inicialmente, o novo projeto de aplicativo de console não tem acesso à bibliot
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
-* [Desenvolver bibliotecas com o CLI do .NET Core](libraries.md)
+* [Desenvolver bibliotecas com a CLI do .NET](libraries.md)
 * [.Net Standard versões e plataformas às quais eles dão suporte](../../standard/net-standard.md).
 
 ## <a name="next-steps"></a>Próximas etapas
@@ -216,4 +218,4 @@ Inicialmente, o novo projeto de aplicativo de console não tem acesso à bibliot
 Neste tutorial, você criou uma solução, adicionou um projeto de biblioteca e adicionou um projeto de aplicativo de console que usa a biblioteca do. No próximo tutorial, você adicionará um projeto de teste de unidade à solução.
 
 > [!div class="nextstepaction"]
-> [Testar uma biblioteca de .NET Standard com o .NET Core usando Visual Studio Code](testing-library-with-visual-studio-code.md)
+> [Testar uma biblioteca de classes .NET com .NET usando Visual Studio Code](testing-library-with-visual-studio-code.md)

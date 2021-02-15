@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: ForEach paralelo limitado'
 title: Paralelo estrangulado ForEach
 ms.date: 03/30/2017
 ms.assetid: f2855b5f-e9a7-433d-96a4-40fc31025215
-ms.openlocfilehash: 340e4ff154b63221ec911c872a1154bdb672cf8c
-ms.sourcegitcommit: 5fb5b6520b06d7f5e6131ec2ad854da302a28f2e
+ms.openlocfilehash: 2c1d1386f0b8c5b3c68d60bc83386ccfdf5e7875
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74715914"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99741673"
 ---
 # <a name="throttled-parallel-foreach"></a>Paralelo estrangulado ForEach
 
@@ -15,7 +16,7 @@ A atividade de `ThrottleParallelForEach` é semelhante à atividade de <xref:Sys
 
 ## <a name="projects"></a>Projetos
 
-|**ProjectName**|**Descrição**|**Arquivos principais**|
+|**ProjectName**|**Descrição**|**Arquivos de chave**|
 |-|-|-|
 |ThrottledParallelForEach|Contém a atividade de `ThrottledParallelForEach` e o designer.|ThrottledParallelForEach.cs<br /><br /> A definição de atividade de `ThrottledParallelForEach` .|
 |CodeTestClient|Exemplo do aplicativo cliente que configura e executa um fluxo de trabalho com `ThrottledParallelForEach` usando o código obrigatório.|Module.vb<br /><br /> Define e executa uma instância de fluxo de trabalho de exemplo.|
@@ -33,6 +34,6 @@ A atividade de `ThrottleParallelForEach` é semelhante à atividade de <xref:Sys
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> Se esse diretório não existir, vá para [Windows Communication Foundation (WCF) e exemplos de Windows Workflow Foundation (WF) para .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) para baixar todas as Windows Communication Foundation (WCF) e [!INCLUDE[wf1](../../../../includes/wf1-md.md)] amostras. Este exemplo está localizado no seguinte diretório.
+> Se esse diretório não existir, vá para [Windows Communication Foundation (WCF) e exemplos de Windows Workflow Foundation (WF) para .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) para baixar todos os Windows Communication Foundation (WCF) e [!INCLUDE[wf1](../../../../includes/wf1-md.md)] exemplos. Este exemplo está localizado no seguinte diretório.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\ThrottledParallelForEach`

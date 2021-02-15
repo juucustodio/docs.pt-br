@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Noções básicas de cadeia de caracteres no Visual Basic'
 title: Noções básicas de cadeias de caracteres
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,17 +7,19 @@ helpviewer_keywords:
 - strings [Visual Basic], Visual Basic
 - strings [Visual Basic], regular expressions
 ms.assetid: 5674418d-f00d-4f72-9f98-d15897793350
-ms.openlocfilehash: 935926b8b83afa47c20ea68aecd6bc8c40bd0234
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 25d76ee177e5b3eaaa8aa6b2b1b1787dc29095a1
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84363683"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100424353"
 ---
 # <a name="string-basics-in-visual-basic"></a>Noções básicas de cadeias de caracteres no Visual Basic
+
 O `String` tipo de dados representa uma série de caracteres (cada um representando, por sua vez, uma instância do `Char` tipo de dados). Este tópico apresenta os conceitos básicos de cadeias de caracteres no Visual Basic.  
   
 ## <a name="string-variables"></a>Variáveis de cadeia de caracteres  
+
  Uma instância de uma cadeia de caracteres pode ser atribuída a um valor literal que representa uma série de caracteres. Por exemplo:  
   
  [!code-vb[VbVbalrStrings#63](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#63)]  
@@ -50,6 +53,7 @@ World]]></xml>.Value
 ```  
   
 ## <a name="characters-in-strings"></a>Caracteres em Strings  
+
  Uma cadeia de caracteres pode ser considerada como uma série de `Char` valores, e o `String` tipo tem funções internas que permitem executar muitas manipulações em uma cadeia de caracteres que se assemelham às manipulações permitidas por matrizes. Como todas as matrizes na .NET Framework, elas são matrizes baseadas em zero. Você pode se referir a um caractere específico em uma cadeia de caracteres por meio da `Chars` propriedade, que fornece uma maneira de acessar um caractere pela posição na qual ele aparece na cadeia de caracteres. Por exemplo:  
   
  [!code-vb[VbVbalrStrings#67](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#67)]  
@@ -61,7 +65,8 @@ World]]></xml>.Value
  A variável `myArray` agora contém uma matriz de `Char` valores, cada um representando um caractere de `myString` .  
   
 ## <a name="the-immutability-of-strings"></a>A imutabilidade das cadeias de caracteres  
- Uma cadeia de caracteres é *imutável*, o que significa que seu valor não pode ser alterado após ter sido criado. No entanto, isso não impede que você atribua mais de um valor a uma variável de cadeia de caracteres. Considere o exemplo a seguir:  
+
+ Uma cadeia de caracteres é *imutável*, o que significa que seu valor não pode ser alterado após ter sido criado. No entanto, isso não impede que você atribua mais de um valor a uma variável de cadeia de caracteres. Considere o seguinte exemplo:  
   
  [!code-vb[VbVbalrStrings#69](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#69)]  
   
@@ -71,7 +76,7 @@ World]]></xml>.Value
   
  Ao contrário de outros tipos de dados intrínsecos, `String` é um tipo de referência. Quando uma variável de tipo de referência é passada como um argumento para uma função ou sub-rotina, uma referência ao endereço de memória em que os dados são armazenados é passada em vez do valor real da cadeia de caracteres. Portanto, no exemplo anterior, o nome da variável permanece o mesmo, mas aponta para uma instância nova e diferente da `String` classe, que contém o novo valor.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Introdução a cadeias de caracteres no Visual Basic](introduction-to-strings.md)
 - [Tipo de dados da cadeia de caracteres](../../../language-reference/data-types/string-data-type.md)

@@ -1,16 +1,19 @@
 ---
-title: 'Ponto de extremidade: Sessões de Mensagens Confiáveis com Falha'
+description: 'Saiba mais sobre: ponto de extremidade: sessões de mensagens confiáveis com falha'
+title: 'Ponto de extremidade: sessões de mensagem confiável com falhas'
 ms.date: 03/30/2017
 ms.assetid: 63eb536f-cb9d-4c9a-b620-947d1828b1ce
-ms.openlocfilehash: 0a032570baf16841d49ddf5b0ab6d6c66567e1e8
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: cc0d698bda6e9c85f38d354fc7c6c6a7052d36d3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61951158"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99735758"
 ---
-# <a name="endpoint-reliable-messaging-sessions-faulted"></a>Ponto de extremidade: Sessões de Mensagens Confiáveis com Falha
-Nome do contador: Sessões de Reliable Messaging com falha por segundo.  
+# <a name="endpoint-reliable-messaging-sessions-faulted"></a>Ponto de extremidade: sessões de mensagem confiável com falhas
+
+Nome do contador: sessões de mensagens confiáveis com falha por segundo.  
   
 ## <a name="description"></a>Descrição  
- Número de sessões de reliable messaging com falha neste ponto de extremidade em um segundo.
+
+ Número de sessões de mensagens confiáveis com falha neste ponto de extremidade em um segundo.

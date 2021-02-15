@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ISymUnmanagedScope'
 title: Interface ISymUnmanagedScope
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3db7a220-cfe9-4810-8ca8-a094bb8e0f5b
 topic_type:
 - apiref
-ms.openlocfilehash: 1ee406c97fa4ccb7f87098cba2925568d8ce069f
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: f1175656fb49ee16fd1cd676d08f6ebb76f40c6d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615339"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763261"
 ---
 # <a name="isymunmanagedscope-interface"></a>Interface ISymUnmanagedScope
+
 Representa um escopo léxico dentro de um método.  
   
 ## <a name="methods"></a>Métodos  
@@ -38,9 +40,10 @@ Representa um escopo léxico dentro de um método.
 |[Método GetStartOffset](isymunmanagedscope-getstartoffset-method.md)|Obtém o deslocamento inicial para este escopo.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de armazenamento de símbolo de diagnóstico](diagnostics-symbol-store-interfaces.md)
 - [Interface ISymUnmanagedScope2](isymunmanagedscope2-interface.md)

@@ -1,19 +1,20 @@
 ---
+description: 'Saiba mais sobre: parâmetros XSLT'
 title: Parâmetros XSLT
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 ms.assetid: fe60aaa0-ae43-4b1c-9be1-426af66ba757
-ms.openlocfilehash: 7651360b375071c48ba0d23b64881ac794e51e86
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 2d6d3b239d3c442e01e71fc943dedde9292cc344
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84282526"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782514"
 ---
 # <a name="xslt-parameters"></a>Parâmetros XSLT
+
 Os parâmetros XSLT são adicionados a <xref:System.Xml.Xsl.XsltArgumentList> usando o método <xref:System.Xml.Xsl.XsltArgumentList.AddParam%2A> . Um nome qualificado e URI de namespace são associados com o objeto de parâmetro no momento.  
   
 ### <a name="to-use-an-xslt-parameter"></a>Para usar um parâmetro XSLT  
@@ -25,6 +26,7 @@ Os parâmetros XSLT são adicionados a <xref:System.Xml.Xsl.XsltArgumentList> us
 3. Passe o objeto de <xref:System.Xml.Xsl.XsltArgumentList> para o método de <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> .  
   
 ## <a name="parameter-types"></a>Tipos de parâmetro  
+
  O objeto de parâmetro deve corresponder a um tipo W3C. A tabela seguinte mostra tipos correspondentes W3C, as classes equivalentes do Microsoft.NET (tipo), e se o tipo W3C é um tipo XPath ou tipo de fonte.  
   
 |Tipo W3C|Classe. NET equivalente (tipo)|XPath ou tipo XSLT|  
@@ -43,6 +45,7 @@ Os parâmetros XSLT são adicionados a <xref:System.Xml.Xsl.XsltArgumentList> us
  Todos os outros tipos lançam um erro.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir usa o método de <xref:System.Xml.Xsl.XsltArgumentList.AddParam%2A> para criar um parâmetro para armazenar calculou a data de desconto. A data de desconto é calculada para ser a 20 dias de data pedido.  
   
  [!code-csharp[XSLT_Param#1](../../../../samples/snippets/csharp/VS_Snippets_Data/XSLT_Param/CS/xsltparam.cs#1)]
@@ -51,9 +54,11 @@ Os parâmetros XSLT são adicionados a <xref:System.Xml.Xsl.XsltArgumentList> us
 ### <a name="input"></a>Entrada  
   
 ##### <a name="orderxml"></a>order.xml  
+
  [!code-xml[XSLT_Param#2](../../../../samples/snippets/xml/VS_Snippets_Data/XSLT_Param/XML/order.xml#2)]  
   
 ##### <a name="discountxsl"></a>discount.xsl  
+
  [!code-xml[XSLT_Param#3](../../../../samples/snippets/xml/VS_Snippets_Data/XSLT_Param/XML/discount.xsl#3)]  
   
 ### <a name="output"></a>Saída  
@@ -66,6 +71,6 @@ Os parâmetros XSLT são adicionados a <xref:System.Xml.Xsl.XsltArgumentList> us
 </order>  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Transformações XSLT](xslt-transformations.md)

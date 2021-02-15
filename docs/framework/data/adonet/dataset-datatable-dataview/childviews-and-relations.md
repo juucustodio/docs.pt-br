@@ -1,19 +1,21 @@
 ---
+description: 'Saiba mais sobre: ChildViews e relações'
 title: ChildViews e relações
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: d475d356-6abb-4701-8fd1-2906fb93dfba
-ms.openlocfilehash: cf67304f564729172d1b7f3565d52abffeb90049
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f27526ef0ad5bee70b0c67542e2611ff85b156f8
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79151475"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99739710"
 ---
 # <a name="childviews-and-relations"></a>ChildViews e relações
-Se existir uma relação <xref:System.Data.DataSet>entre tabelas <xref:System.Data.DataView> em um , você pode criar <xref:System.Data.DataRowView.CreateChildView%2A> uma linha <xref:System.Data.DataRowView> contendo da tabela filho relacionada usando o método do para as linhas na tabela pai. Por exemplo, o código a seguir exibe **categorias** e seus **produtos** relacionados em ordem alfabética classificada por **CategoryName** e **ProductName**.  
+
+Se existir uma relação entre as tabelas em um <xref:System.Data.DataSet> , você poderá criar uma <xref:System.Data.DataView> linha contendo a partir da tabela filho relacionada usando o <xref:System.Data.DataRowView.CreateChildView%2A> método do <xref:System.Data.DataRowView> para as linhas na tabela pai. Por exemplo, o código a seguir exibe **categorias** e seus **produtos** relacionados em ordem alfabética classificada por **NomeDaCategoria** e **NomeDoProduto**.  
   
 ```vb  
 Dim catTable As DataTable = catDS.Tables("Categories")  
@@ -73,7 +75,7 @@ foreach (DataRowView catDRV in catView)
 }  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Data.DataSet>
 - <xref:System.Data.DataView>

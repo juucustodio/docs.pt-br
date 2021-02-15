@@ -18,17 +18,19 @@ helpviewer_keywords:
 - receiving data, about receiving data
 - Internet, requesting data
 ms.assetid: df6f1e1d-6f2a-45dd-8141-4a85c3dafe1d
-ms.openlocfilehash: 19350d685a81d56657ca0a117d61b50ae24fab6a
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 87ad0144f57bdca0e0235aea30c4ab450cc890f4
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502178"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96279292"
 ---
 # <a name="requesting-data"></a>Solicitando dados
+
 Desenvolver aplicativos que são executados no ambiente operacional distribuído da Internet de hoje requer um método eficiente e fácil de usar para recuperar dados de recursos de todos os tipos. Protocolos conectáveis permitem desenvolver aplicativos que usam uma única interface para recuperar dados de vários protocolos de Internet.  
   
 ## <a name="uploading-and-downloading-data-from-an-internet-server"></a>Carregando e baixando dados de um servidor de Internet  
+
  Para transações simples de solicitação e resposta, a classe <xref:System.Net.WebClient> fornece o método mais fácil para carregar dados para ou fazer o download de dados de um servidor de Internet. **WebClient** fornece métodos para carregar e baixar arquivos, enviar e receber fluxos e enviar um buffer de dados para o servidor e receber uma resposta. O **WebClient** usa as classes <xref:System.Net.WebRequest> e <xref:System.Net.WebResponse> para fazer as conexões reais para o recurso de Internet, de modo que qualquer protocolo conectável registrado fica disponível para uso.  
   
  Aplicativos cliente que precisam fazer transações mais complexas solicitam dados de servidores usando a classe **WebRequest** e seus descendentes. **WebRequest** encapsula os detalhes da conexão com o servidor, do envio da solicitação do recebimento da resposta. **WebRequest** é uma classe abstrata que define um conjunto de propriedades e métodos que estão disponíveis para todos os aplicativos que usam protocolos conectáveis. Descendentes de **WebRequest**, tais como <xref:System.Net.HttpWebRequest>, implementam as propriedades e métodos definidos pelo **WebRequest** de maneira consistente com o protocolo subjacente.  
@@ -53,8 +55,8 @@ Dim sr As StreamReader
 sr = New StreamReader(resp.GetResponseStream(), Encoding.ASCII)  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Programação de rede no .NET Framework](index.md)
-- [Como solicitar uma página da Web e recuperar os resultados como um fluxo](how-to-request-a-web-page-and-retrieve-the-results-as-a-stream.md)
-- [Como recuperar uma WebResponse específica de protocolo que corresponde a uma WebRequest](how-to-retrieve-a-protocol-specific-webresponse-that-matches-a-webrequest.md)
+- [Como: Solicitar uma página da Web e recuperar os resultados como um fluxo](how-to-request-a-web-page-and-retrieve-the-results-as-a-stream.md)
+- [Como: Recuperar uma WebResponse específica de protocolo que corresponde a uma WebRequest](how-to-retrieve-a-protocol-specific-webresponse-that-matches-a-webrequest.md)

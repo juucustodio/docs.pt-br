@@ -1,49 +1,41 @@
 ---
 title: Para qual sistema operacional direcionar com os contêineres do .NET
 description: Arquitetura de microsserviços do .NET para aplicativos .NET em contêineres | Para qual sistema operacional direcionar com os contêineres do .NET
-ms.date: 01/30/2020
-ms.openlocfilehash: a09e3981ece478a9795c0f27acc98d604864cdd5
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.date: 01/13/2021
+ms.openlocfilehash: b128a7b98d7f46034a56314bd8cc6b4f5731f121
+ms.sourcegitcommit: 7e42488c2f8f63f6d499b5f8fb1dec5bac9ad254
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "77501857"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98957904"
 ---
 # <a name="what-os-to-target-with-net-containers"></a>Para qual sistema operacional direcionar com os contêineres do .NET
 
-Dada a diversidade de sistemas operacionais compatíveis com o Docker e as diferenças entre o .NET Framework e o .NET Core, você deve direcionar um sistema operacional e versões específicos dependendo da estrutura que você está usando.
+Considerando a diversidade de sistemas operacionais com suporte pelo Docker e as diferenças entre .NET Framework e o .NET 5, você deve direcionar um sistema operacional específico e versões específicas, dependendo da estrutura que você está usando.
 
-Para o Windows, é possível usar o Windows Server Core ou o Windows Nano Server. Essas versões do Windows oferecem características diferentes (IIS no Windows Server Core versus um servidor Web auto-hospedado como Kestrel no Nano Server) que podem ser exigidas pelo .NET Framework ou pelo .NET Core, respectivamente.
+Para o Windows, é possível usar o Windows Server Core ou o Windows Nano Server. Essas versões do Windows fornecem características diferentes (IIS no Windows Server Core versus um servidor Web autohospedado, como o Kestrel no nano Server) que pode ser necessário para o .NET Framework ou o .NET 5, respectivamente.
 
 Para Linux, várias distribuições estão disponíveis e há compatibilidade com elas nas imagens oficiais do .NET Docker (como Debian).
 
-Na Figure 3-1, é possível ver a possível versão do sistema operacional dependendo do .NET Framework usado.
+Na Figura 3-1, você pode ver a possível versão do sistema operacional dependendo do .NET Framework usado.
 
-![Diagrama mostrando qual sistema operacional usar com os quais os contêineres .NET.](./media/net-container-os-targets/targeting-operating-systems.png)
+![Diagrama que mostra o sistema operacional a ser usado com os contêineres .NET.](./media/net-container-os-targets/targeting-operating-systems.png)
 
 **Figura 3-1.** Sistemas operacionais a serem direcionados dependendo das versões do .NET Framework
 
-Ao implantar aplicativos legados do .NET Framework, você tem que segmentar o Windows Server Core, compatível com aplicativos legados e IIS, mas ele tem uma imagem maior. Ao implantar aplicativos .NET Core, é possível definir o Windows Nano Server como destino, que é otimizado para nuvem, usa o Kestrel, é menor e inicia mais rapidamente. Também é possível definir Linux, Debian de suporte, Alpine e outros como destino. Também usa Kestrel, é menor, e começa mais rápido.
+Ao implantar aplicativos .NET Framework herdados, você precisa ter como alvo o Windows Server Core, compatível com aplicativos herdados e o IIS, mas tem uma imagem maior. Ao implantar aplicativos do .NET 5, você pode direcionar o Windows nano Server, que é otimizado para a nuvem, usa Kestrel e é menor e começa mais rapidamente. Você também pode ter como alvo o Linux, com suporte para Debian, Alpine e outros. O também usa Kestrel, é menor e é iniciado mais rapidamente.
 
 Também é possível criar sua própria imagem do Docker em casos em que você deseja usar uma distribuição diferente do Linux ou em que você quer uma imagem com versões não fornecidas pela Microsoft. Por exemplo, você pode criar uma imagem com o ASP.NET Core em execução no .NET Framework tradicional e no Windows Server Core, que é um cenário não tão comum para Docker.
-
-> [!IMPORTANT]
-> Ao usar imagens do Windows Server Core, você pode descobrir que alguns DLLs estão faltando, quando comparados com imagens completas do Windows. Você pode ser capaz de resolver esse problema criando uma imagem personalizada do Server Core, adicionando os arquivos ausentes no tempo de compilação de imagem, como mencionado neste comentário do [GitHub](https://github.com/microsoft/dotnet-framework-docker/issues/299#issuecomment-511537448).
 
 Ao adicionar o nome de imagem ao seu arquivo Dockerfile, é possível selecionar o sistema operacional e a versão dependendo da marcação usada, como nos seguintes exemplos:
 
 | Imagem | Comentários |
 |-------|----------|
-| mcr.microsoft.com/dotnet/core/runtime:3.1 | Multiarquitetura .NET Core 3.1: suporta Linux e Windows Nano Server dependendo do host Docker. |
-| mcr.microsoft.com/dotnet/core/aspnet:3.1 | ASP.NET multiarquitetura Core 3.1: suporta Linux e Windows Nano Server dependendo do host Docker. <br/> A imagem aspnetcore tem algumas otimizações para ASP.NET Core. |
-| mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim | .NET Core 3.1 somente runtime no Linux Debian distro |
-| mcr.microsoft.com/dotnet/core/aspnet:3.1-nanoserver-1809 | .NET Core 3.1 somente em tempo de execução no Windows Nano Server (versão 1809 do Windows Server) |
-
-## <a name="additional-resources"></a>Recursos adicionais
-
-- **BitmapDecoder falha devido à falta do WindowsCodecsExt.dll (problema do GitHub)**  
-  <https://github.com/microsoft/dotnet-framework-docker/issues/299>
+| mcr.microsoft.com/dotnet/runtime:5.0 | Múltiplas arquiteturas do .NET 5: oferece suporte ao Linux e ao Windows nano Server dependendo do host do Docker. |
+| mcr.microsoft.com/dotnet/aspnet:5.0 | ASP.NET Core várias arquiteturas 5,0: dá suporte ao Linux e ao Windows nano Server dependendo do host do Docker. <br/> A imagem aspnetcore tem algumas otimizações para ASP.NET Core. |
+| mcr.microsoft.com/dotnet/aspnet:5.0-buster-slim | Tempo de execução do .NET 5 somente no Linux Debian distribuição |
+| mcr.microsoft.com/dotnet/aspnet:5.0-nanoserver-1809 | Somente em tempo de execução do .NET 5 no Windows nano Server (Windows Server versão 1809) |
 
 > [!div class="step-by-step"]
-> [Próximo](container-framework-choice-factors.md)
-> [anterior](official-net-docker-images.md)
+> [Anterior](container-framework-choice-factors.md) 
+>  [Avançar](official-net-docker-images.md)

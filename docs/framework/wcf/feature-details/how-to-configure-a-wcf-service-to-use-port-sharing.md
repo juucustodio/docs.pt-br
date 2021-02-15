@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: como configurar um serviço de Windows Communication Foundation para usar o compartilhamento de porta'
 title: Como configurar um serviço do Windows Communication Foundation para utilizar o compartilhamento de porta
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 6400bc71-a858-4ac2-8d5a-caa72d3b5482
-ms.openlocfilehash: 28f2858d68de99839d7fec66b0fe4528d7e42325
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 53fe3449ece5a5e545d7add5c4e6c7feebe5a8ff
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84579521"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780096"
 ---
 # <a name="how-to-configure-a-windows-communication-foundation-service-to-use-port-sharing"></a>Como configurar um serviço do Windows Communication Foundation para utilizar o compartilhamento de porta
+
 A maneira mais fácil de usar net. TCP://compartilhamento de porta em seu aplicativo Windows Communication Foundation (WCF) é expor um serviço usando o <xref:System.ServiceModel.NetTcpBinding> .  
   
  Essa associação fornece uma <xref:System.ServiceModel.NetTcpBinding.PortSharingEnabled%2A> propriedade que controla se o compartilhamento de porta Net. TCP://está habilitado para o serviço que está sendo configurado com essa associação.  
@@ -63,4 +65,4 @@ A maneira mais fácil de usar net. TCP://compartilhamento de porta em seu aplica
 ## <a name="see-also"></a>Consulte também
 
 - [Compartilhamento de porta Net.TCP](net-tcp-port-sharing.md)
-- [Como habilitar o serviço de compartilhamento de porta Net.TCP](how-to-enable-the-net-tcp-port-sharing-service.md)
+- [Como: habilitar o serviço de compartilhamento de porta Net.TCP](how-to-enable-the-net-tcp-port-sharing-service.md)

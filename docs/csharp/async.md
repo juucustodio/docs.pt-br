@@ -5,18 +5,18 @@ author: cartermp
 ms.date: 05/20/2020
 ms.technology: csharp-async
 ms.assetid: b878c34c-a78f-419e-a594-a2b44fa521a4
-ms.openlocfilehash: 35ba90f978b1993f80451a28a4cd08129afddd85
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: 58f650e7932d4f5862d545429376b3e417bb433c
+ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86864495"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97512236"
 ---
 # <a name="asynchronous-programming"></a>Programação assíncrona
 
 Se você tiver alguma necessidade de ligação de e/s (como solicitar dados de uma rede, acessar um banco de dado ou ler e gravar em um sistema de arquivos), você desejará utilizar a programação assíncrona. Você também pode ter código vinculado à CPU, como a execução de um cálculo dispendioso, que também é um bom cenário para escrever código assíncrono.
 
-O C# tem um modelo de programação assíncrona de nível de linguagem, que permite escrever código assíncrono facilmente, sem precisar fazer malabarismos com retornos de chamada ou estar em conformidade com uma biblioteca com suporte para assincronia. Ele segue o que é conhecido como [TAP (Padrão assíncrono baseado em tarefa)](../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md).
+O C# tem um modelo de programação assíncrona de nível de linguagem, que permite escrever facilmente um código assíncrono sem precisar fazer malabarismos com retornos de chamada ou estar em conformidade com uma biblioteca com suporte para assincronia. Ele segue o que é conhecido como [TAP (Padrão assíncrono baseado em tarefa)](../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md).
 
 ## <a name="overview-of-the-asynchronous-model"></a>Visão geral do modelo assíncrono
 
@@ -71,7 +71,7 @@ calculateButton.Clicked += async (o, e) =>
 };
 ```
 
-Esse código expressa claramente a intenção do evento de clique do botão. Ele não requer o gerenciamento manual de um thread em segundo plano e ele faz isso sem bloqueios.
+Esse código claramente expressa a intenção do evento de clique do botão, ele não requer o gerenciamento manual de um thread em segundo plano e faz isso em uma forma sem bloqueio.
 
 ### <a name="what-happens-under-the-covers"></a>O que acontece nos bastidores
 
@@ -91,7 +91,7 @@ Para os que gostam da teoria, essa é uma implementação do [Modelo Promise de 
 
 ## <a name="recognize-cpu-bound-and-io-bound-work"></a>Reconhecer O trabalho associado à CPU e à e/s
 
-Os primeiros dois exemplos deste guia mostraram como você pode usar `async` e `await` para trabalho vinculado à E/S e vinculado à CPU. É fundamental que você saiba identificar quando um trabalho que você precisa fazer é vinculado à E/S ou vinculado à CPU, porque isso pode afetar significativamente o desempenho do seu código e poderia potencialmente levar ao uso indevido de determinados constructos.
+Os dois primeiros exemplos deste guia mostraram como você pode usar `async` e `await` para O trabalho vinculado de e/s e de CPU. É a chave que você pode identificar quando um trabalho que você precisa fazer é associado à e/s ou à CPU, pois ele pode afetar muito o desempenho do seu código e pode potencialmente levar ao uso indevido de determinadas construções.
 
 Aqui estão duas perguntas que devem ser feitas antes de escrever qualquer código:
 
@@ -213,7 +213,7 @@ Embora seja menos código, tome cuidado ao misturar LINQ com código assíncrono
 
 Com a programação assíncrona, há alguns detalhes a serem considerados, o que pode impedir um comportamento inesperado.
 
-* Os métodos `async` ** precisam ter uma palavra-chave** `await` ** no corpo ou eles nunca transferirão!**
+* Os métodos `async` **precisam ter uma palavra-chave** `await` **no corpo ou eles nunca transferirão!**
 
   É importante ter isso em mente. Se `await` não for usado no corpo de um `async` método, o compilador C# gerará um aviso, mas o código será compilado e executado como se fosse um método normal. Isso é incrivelmente ineficiente, pois a máquina de estado gerada pelo compilador C# para o método assíncrono não está realizando nada.
 
@@ -221,17 +221,17 @@ Com a programação assíncrona, há alguns detalhes a serem considerados, o que
 
 Essa é a convenção usada no .NET para diferenciar mais facilmente os métodos síncronos e assíncronos. Determinados métodos que não são chamados explicitamente pelo seu código (como manipuladores de eventos ou métodos de controlador da Web) não necessariamente se aplicam. Como eles não são chamados explicitamente pelo seu código, ser explícito sobre a nomenclatura não é tão importante.
 
-*  O `async void` ** só deve ser usado para manipuladores de eventos.**
+*  O `async void` **só deve ser usado para manipuladores de eventos.**
 
 O `async void` é a única maneira de permitir que os manipuladores de eventos assíncronos trabalhem, pois os eventos não têm tipos de retorno (portanto, não podem fazer uso de `Task` e `Task<T>`). Qualquer outro uso de `async void` não segue o modelo TAP e pode ser um desafio utilizá-lo, como:
 
 * Exceções geradas em um `async void` método não podem ser detectadas fora desse método.
-* `async void`os métodos são difíceis de testar.
-* `async void`os métodos podem causar efeitos colaterais ruins se o chamador não estiver esperando que eles sejam assíncronos.
+* `async void` os métodos são difíceis de testar.
+* `async void` os métodos podem causar efeitos colaterais ruins se o chamador não estiver esperando que eles sejam assíncronos.
 
 * **Vá com cuidado ao usar lambdas assíncronas em expressões LINQ**
 
-As expressões lambda no LINQ usam a execução adiada, o que significa que o código pode acabar sendo executado por vez, quando você não está esperando. A introdução de tarefas de bloqueio no meio disso poderia facilmente resultar em um deadlock, se não estivessem escritas corretamente. Além disso, o aninhamento de código assíncrono dessa maneira também pode dificultar a ponderação a respeito da execução do código. A assíncrona e a LINQ são poderosas, mas devem ser usadas de uma maneira mais cuidadosa e clara possível.
+As expressões lambda no LINQ usam a execução adiada, o que significa que o código pode acabar sendo executado por vez, quando você não está esperando. A introdução de tarefas de bloqueio no meio disso poderia facilmente resultar em um deadlock, se não estivessem escritas corretamente. Além disso, o aninhamento de código assíncrono dessa maneira também pode dificultar a ponderação a respeito da execução do código. O Async e o LINQ são poderosos, mas devem ser usados em conjunto com o cuidado e o mais claro possível.
 
 * **Escrever código que aguarda tarefas de uma maneira sem bloqueio**
 

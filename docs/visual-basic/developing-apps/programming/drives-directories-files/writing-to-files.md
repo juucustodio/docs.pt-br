@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: gravar em arquivos no Visual Basic'
 title: Gravar em arquivos
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - writing to files [Visual Basic]
 - Visual Basic, writing to files
 ms.assetid: ac6fb453-0d6c-4ce4-93b4-1bbcd06de83e
-ms.openlocfilehash: 06809ce8a846ea06ff2decdd87f304d1b26a7750
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: c56714a0f8c2679a99fd0851999d886b426e62fb
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406606"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775273"
 ---
 # <a name="writing-to-files-in-visual-basic"></a>Gravando em arquivos no Visual Basic
 

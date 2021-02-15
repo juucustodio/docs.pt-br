@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugChain:: GetContext'
 title: Método ICorDebugChain::GetContext
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 26abe7ee-e578-4228-affa-01bed0dfce1b
 topic_type:
 - apiref
-ms.openlocfilehash: cdf7f269217390d59e6731ac75cf56b44c77ae9a
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 71c52dd0c4b75e8a3862caa3b1511118dcff7d5c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73196310"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661292"
 ---
 # <a name="icordebugchaingetcontext-method"></a>Método ICorDebugChain::GetContext
+
 Este método não está implementado na versão atual do .NET Framework.  
   
 ## <a name="syntax"></a>Sintaxe  

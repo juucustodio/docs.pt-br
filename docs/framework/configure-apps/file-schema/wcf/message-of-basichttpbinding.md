@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <message> de <basicHttpBinding>'
 title: <message> de <basicHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 51cdd329-6461-471a-8747-56c2299b61e5
-ms.openlocfilehash: 748a734af8cf6767ce47cfffce9aec3ef627cb44
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 738d782aaac06366eec324b091cbda815a3ff98f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73736748"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99802145"
 ---
 # <a name="message-of-basichttpbinding"></a>\<message> de \<basicHttpBinding>
+
 Define as configurações de segurança em nível de mensagem do [\<basicHttpBinding>](basichttpbinding.md) .  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,7 +22,7 @@ Define as configurações de segurança em nível de mensagem do [\<basicHttpBin
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<security>**](security-of-basichttpbinding.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<message>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <message algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"
@@ -28,6 +30,7 @@ Define as configurações de segurança em nível de mensagem do [\<basicHttpBin
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai  
   
 ### <a name="attributes"></a>Atributos  
@@ -45,6 +48,7 @@ Define as configurações de segurança em nível de mensagem do [\<basicHttpBin
 |Certificado|Requer que o cliente seja autenticado no servidor usando um certificado. Nesse caso, a credencial do cliente precisa ser especificada usando [\<clientCredentials>](clientcredentials.md) o e o [\<clientCertificate>](clientcertificate-of-servicecredentials.md) . Além disso, ao usar o modo de segurança de mensagem, o cliente precisa ser provisionado com o certificado de serviço. Nesse caso, a credencial de serviço precisa ser especificada usando <xref:System.ServiceModel.Description.ClientCredentials> o elemento de classe ou `ClientCredentials` comportamento e especificando o certificado de serviço usando o [\<serviceCertificate>](servicecertificate-of-servicecredentials.md) .|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -54,6 +58,7 @@ Define as configurações de segurança em nível de mensagem do [\<basicHttpBin
 |[\<security>](security-of-basichttpbinding.md)|Define os recursos de segurança para o [\<basicHttpBinding>](basichttpbinding.md) .|  
   
 ## <a name="example"></a>Exemplo  
+
  Este exemplo demonstra como implementar um aplicativo que usa a basicHttpBinding e a segurança da mensagem. No exemplo de configuração a seguir para um serviço, a definição do ponto de extremidade especifica basicHttpBinding e faz referência a uma configuração de associação denominada `Binding1` . O certificado que o serviço usa para se autenticar para o cliente é definido na `behaviors` seção do arquivo de configuração sob o `serviceCredentials` elemento. O modo de validação que se aplica ao certificado que o cliente usa para se autenticar para o serviço também é definido na `behaviors` seção sob o `clientCertificate` elemento.  
   
  Os mesmos detalhes de ligação e segurança são especificados no arquivo de configuração do cliente.  
@@ -120,7 +125,7 @@ Define as configurações de segurança em nível de mensagem do [\<basicHttpBin
 </system.serviceModel>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.BasicHttpMessageSecurity>
 - <xref:System.ServiceModel.Configuration.BasicHttpSecurityElement.Message%2A>

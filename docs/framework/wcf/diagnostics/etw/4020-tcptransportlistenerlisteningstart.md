@@ -1,28 +1,32 @@
 ---
+description: 'Saiba mais sobre: 4020-TcpTransportListenerListeningStart'
 title: 4020 - TcpTransportListenerListeningStart
 ms.date: 03/30/2017
 ms.assetid: 6c10fef2-2f12-462f-b266-3127a6e60379
-ms.openlocfilehash: 7a3f5ad4121b6d70d51170e13ecde82c2312cc09
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: aa1d1cccae124ef18272ba73ba6cdf07f4c5a92d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61787875"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99656664"
 ---
 # <a name="4020---tcptransportlistenerlisteningstart"></a>4020 - TcpTransportListenerListeningStart
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
 |ID|4020|  
-|Palavras-chave|ActivationServices|  
+|Palavras-chave|Ativaçãoservices|  
 |Nível|Detalhado|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando o ouvinte de transporte Tcp começar a escutar.  
+
+ Esse evento é emitido quando o ouvinte de transporte TCP começa a escutar.  
   
 ## <a name="message"></a>Mensagem  
- Começar a escutar o uri de escuta de transporte TCP: '%1'.  
+
+ Ouvinte de transporte TCP começando a escutar no URI: ' %1 '.  
   
 ## <a name="details"></a>Detalhes

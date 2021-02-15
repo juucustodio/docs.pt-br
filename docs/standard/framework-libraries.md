@@ -3,14 +3,13 @@ title: Bibliotecas do Framework
 description: Saiba como as bibliotecas fornecem implementações para muitos algoritmos, funcionalidades do utilitário e tipos gerais e específicos do aplicativo.
 author: richlander
 ms.date: 06/20/2016
-ms.technology: dotnet-standard
 ms.assetid: 7b77b6c1-8367-4602-bff3-91e4c05ac643
-ms.openlocfilehash: d4444b6d080afa92a4e7fd9f30c5f9358f02f0ef
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4e71f81b0dd72f4569d8b6b319b9e97491533d28
+ms.sourcegitcommit: 721c3e4bdbb1ea0bb420818ec944c538fe5c513a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "78159228"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96438206"
 ---
 # <a name="framework-libraries"></a>Bibliotecas do Framework
 
@@ -32,7 +31,7 @@ O .NET inclui um conjunto de tipos primitivos, que são usados (em graus variáv
 * <xref:System.Single?displayProperty=nameWithType> ([float](../csharp/language-reference/builtin-types/floating-point-numeric-types.md)) – um tipo de ponto flutuante de 32 bits.
 * <xref:System.Decimal?displayProperty=nameWithType> ([decimal](../csharp/language-reference/builtin-types/floating-point-numeric-types.md)) – um tipo decimal de 128 bits.
 * <xref:System.Byte?displayProperty=nameWithType> ([byte](../csharp/language-reference/builtin-types/integral-numeric-types.md)) – um inteiro de 8 bits sem sinal que representa um byte de memória.
-* <xref:System.Boolean?displayProperty=nameWithType>Um[bool](../csharp/language-reference/builtin-types/bool.md)tipo booleano que representa `true` ou `false`.
+* <xref:System.Boolean?displayProperty=nameWithType> ([bool](../csharp/language-reference/builtin-types/bool.md))-um tipo booliano que representa `true` ou `false` .
 * <xref:System.Char?displayProperty=nameWithType> ([char](../csharp/language-reference/builtin-types/char.md)) – um tipo numérico de 16 bits que representa um caractere Unicode.
 * <xref:System.String?displayProperty=nameWithType> ([string](../csharp/language-reference/builtin-types/reference-types.md#the-string-type)) – representa uma série de caracteres. Diferente de um `char[]`, mas permite a indexação em cada `char` individual em `string`.
 
@@ -40,7 +39,7 @@ O .NET inclui um conjunto de tipos primitivos, que são usados (em graus variáv
 
 O .NET inclui um conjunto de estruturas de dados que são fundamentais para quase todos os aplicativos .NET.  Elas são em sua maioria coleções, mas também incluem outros tipos.
 
-* <xref:System.Array> – representa uma matriz de objetos fortemente tipados que podem ser acessados por índice. Tem um tamanho fixo, de acordo com sua construção.
+* <xref:System.Array> -Representa uma matriz de objetos fortemente tipados que podem ser acessados pelo índice. Tem um tamanho fixo, de acordo com sua construção.
 * <xref:System.Collections.Generic.List%601> – representa uma lista fortemente tipada de objetos que podem ser acessados por índice. É redimensionado automaticamente conforme necessário.
 * <xref:System.Collections.Generic.Dictionary%602> – representa uma coleção de valores que são indexados por uma chave. Os valores podem ser acessados via chave. É redimensionado automaticamente conforme necessário.
 * <xref:System.Uri> – fornece uma representação de objeto de um URI (Uniform Resource Identifier) e fácil acesso às partes do URI.

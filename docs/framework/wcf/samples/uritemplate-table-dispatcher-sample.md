@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: exemplo de Dispatcher de tabela de UriTemplate'
 title: Exemplos de distribuidor de tabela de UriTemplate
 ms.date: 03/30/2017
 ms.assetid: 3b32975d-ba90-4c5c-83bc-2fbb48f11c0c
-ms.openlocfilehash: 97e916aaf9d137eb7931470f9565797b03620d28
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 68cd7e87c9768995210f369e2d55a10ad048e338
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84591066"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99798193"
 ---
 # <a name="uritemplate-table-dispatcher-sample"></a>Exemplos de distribuidor de tabela de UriTemplate
+
 A <xref:System.UriTemplateTable> classe fornece uma estrutura de tabela associativa semelhante a um dicionário para trabalhar com um conjunto de <xref:System.UriTemplate> instâncias. Este exemplo demonstra um mecanismo de expedição básico criado usando `UriTemplateTable` o, um cenário de uso comum para a `UriTemplateTable` classe.  
   
  Este exemplo demonstra os seguintes conceitos principais para a `UriTemplateTable` classe:  
@@ -35,7 +37,7 @@ A <xref:System.UriTemplateTable> classe fornece uma estrutura de tabela associat
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Web\UriTemplateDispatcher`  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Tabela de UriTemplate](uritemplate-table-sample.md)
 - [UriTemplate](uritemplate-sample.md)

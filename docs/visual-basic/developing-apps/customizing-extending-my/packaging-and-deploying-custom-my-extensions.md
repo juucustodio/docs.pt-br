@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: empacotar e implantar minhas extensões personalizadas (Visual Basic)'
 title: Empacotando e implantando minhas extensões personalizadas
 ms.date: 08/14/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - My namespace
 - My namespace [Visual Basic], extending
 ms.assetid: fd89c54b-0290-4c50-95a3-ff17d4487a21
-ms.openlocfilehash: 6d2cc2b01b04b30bd3b1a4371352ded20ea8664b
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 7037cc72951fc5228ae47998f39dca3455bf57de
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84411747"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99775403"
 ---
 # <a name="package-and-deploy-custom-my-extensions-visual-basic"></a>Empacotar e implantar minhas extensões personalizadas (Visual Basic)
 
@@ -46,7 +47,7 @@ Você pode habilitar o modelo de item a ser gerenciado na página **minhas exten
 
 O arquivo CustomData é um arquivo de texto que tem uma extensão de nome de arquivo de. CustomData (o nome do arquivo pode ser definido como qualquer valor significativo para seu modelo) e que contém XML. O XML no arquivo CustomData instrui o Visual Basic a incluir sua `My` extensão quando os usuários usam a página **minhas extensões** do designer de projeto do Visual Basic. Opcionalmente, você pode adicionar o `AssemblyFullName>` atributo <ao seu XML de arquivo CustomData. Isso instrui Visual Basic a instalar automaticamente sua extensão personalizada `My` quando uma referência a um determinado assembly for adicionada ao projeto. Você pode usar qualquer editor de texto ou editor de XML para criar o arquivo CustomData e, em seguida, adicioná-lo à pasta compactada do modelo de item (arquivo. zip).
 
-Por exemplo, o XML a seguir mostra o conteúdo de um arquivo CustomData que adicionará o item de modelo à pasta minhas extensões de um projeto Visual Basic quando uma referência ao assembly Microsoft. VisualBasic. PowerPacks. vs. dll for adicionada ao projeto.
+Por exemplo, o XML a seguir mostra o conteúdo de um arquivo CustomData que adicionará o item de modelo à pasta minhas extensões de um projeto Visual Basic quando uma referência ao assembly Microsoft.VisualBasic.PowerPacks.Vs.dll for adicionada ao projeto.
 
 ```xml
 <VBMyExtensionTemplate
@@ -61,7 +62,7 @@ O arquivo CustomData contém um `VBMyExtensionTemplate>` elemento <que tem atrib
 |Atributo|Descrição|
 |---|---|
 |`ID`|Obrigatórios. Um identificador exclusivo para a extensão. Se a extensão que tem essa ID já tiver sido adicionada ao projeto, o usuário não será solicitado a adicioná-la novamente.|
-|`Version`|Obrigatórios. Um número de versão para o modelo de item.|
+|`Version`|Obrigatório. Um número de versão para o modelo de item.|
 |`AssemblyFullName`|Opcional. Um nome de assembly. Quando uma referência a esse assembly é adicionada ao projeto, o usuário será solicitado a adicionar a `My` extensão a partir deste modelo de item.|
 
 ### <a name="add-the-customdatasignature-element-to-the-vstemplate-file"></a>Adicione o \<CustomDataSignature> elemento ao arquivo. vstemplate
@@ -101,7 +102,7 @@ O exemplo a seguir mostra o conteúdo de um arquivo. vstemplate que tem o `<Cust
 
 Para instalar o modelo, você pode copiar a pasta compactada (arquivo *. zip* ) para a pasta Visual Basic item templates. Por padrão, os modelos de item de usuário estão localizados no *%USERPROFILE%\Documents\Visual Studio \<Version\> \Templates\ItemTemplates\Visual Basic*. Como alternativa, você pode publicar o modelo como um arquivo de Instalador do Visual Studio (*. VSI*).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Estendendo o Meu Namespace no Visual Basic](extending-the-my-namespace.md)
 - [Estendendo o modelo de aplicativo do Visual Basic](extending-the-visual-basic-application-model.md)

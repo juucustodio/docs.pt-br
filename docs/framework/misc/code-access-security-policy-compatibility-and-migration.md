@@ -1,17 +1,17 @@
 ---
 title: Compatibilidade de políticas de segurança de acesso de código e migração
-description: Leia um resumo e veja os links sobre compatibilidade e migração da política de segurança de acesso ao código no .NET 4.
+description: Leia um resumo e veja os links sobre compatibilidade e migração da política de segurança de acesso ao código no .NET Framework 4.
 ms.date: 03/30/2017
 helpviewer_keywords:
 - policy migration, compatibility
 - CLR policy migration
 ms.assetid: 19cb4d39-e38a-4262-b507-458915303115
-ms.openlocfilehash: e5affd9d16635fa28342b5b7390a083185975f2b
-ms.sourcegitcommit: 97ce5363efa88179dd76e09de0103a500ca9b659
+ms.openlocfilehash: 389976556175c0b6b300e75d01327d91f94f0db9
+ms.sourcegitcommit: d8020797a6657d0fbbdff362b80300815f682f94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86281726"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95733380"
 ---
 # <a name="code-access-security-policy-compatibility-and-migration"></a>Compatibilidade de políticas de segurança de acesso de código e migração
 
@@ -73,7 +73,7 @@ São exemplos:
 
 Várias sobrecargas de carregamento de assembly geram erros devido ao uso implícito da política de CAS. Essas sobrecargas usam um <xref:System.Security.Policy.Evidence> parâmetro que é usado para resolver a política de CAS e fornecem um conjunto de concessão de permissão para um assembly.
 
-Veja alguns exemplos. As sobrecargas obsoletas são as que usam <xref:System.Security.Policy.Evidence> como um parâmetro:
+Aqui estão alguns exemplos. As sobrecargas obsoletas são as que usam <xref:System.Security.Policy.Evidence> como um parâmetro:
 
 - <xref:System.Activator.CreateInstanceFrom%2A?displayProperty=nameWithType>
 
@@ -156,5 +156,5 @@ O [ \<NetFx40_LegacySecurityPolicy> elemento de configuração](../configure-app
 
 ## <a name="see-also"></a>Confira também
 
-- [Como executar código parcialmente confiável em uma área restrita](how-to-run-partially-trusted-code-in-a-sandbox.md)
+- [Como: executar código parcialmente confiável em uma área restrita](how-to-run-partially-trusted-code-in-a-sandbox.md)
 - [Diretrizes de codificação segura](../../standard/security/secure-coding-guidelines.md)

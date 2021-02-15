@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como modificar dados em um banco de dado usando o LINQ (Visual Basic)'
 title: Como modificar dados em um banco de dados usando LINQ
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -12,16 +13,16 @@ helpviewer_keywords:
 - queries [LINQ in Visual Basic], data changes in database
 - queries [LINQ in Visual Basic], how-to topics
 ms.assetid: cf52635f-0c1b-46c3-aff1-bdf181cf19b1
-ms.openlocfilehash: eb076d9156fa66858f2e560422eef0dc61ba22b5
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: b58ca542fbc6f4d63705e45b53edc8ded83ab88b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403479"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100422764"
 ---
 # <a name="how-to-modify-data-in-a-database-by-using-linq-visual-basic"></a>Como modificar dados em um banco de dados usando LINQ (Visual Basic)
 
-As consultas de LINQ (consulta integrada à linguagem) facilitam o acesso a informações do banco de dados e a modificação de valores no banco de dados.
+Consultas do Language-Integrated Query (LINQ) facilitam o acesso a informações do banco de dados e a modificação de valores no banco de dados.
 
 O exemplo a seguir mostra como criar um novo aplicativo que recupera e atualiza informações em um banco de dados SQL Server.
 
@@ -31,7 +32,7 @@ Os exemplos neste tópico usam o banco de dados de exemplo Northwind. Caso não 
 
 1. No Visual Studio, abra **Gerenciador de servidores** / **Gerenciador de banco de dados** clicando no menu **Exibir** e, em seguida, selecione **Gerenciador de servidores** / **Gerenciador de banco de dados**.
 
-2. Clique com o botão direito do mouse em **conexões de dados** no **Gerenciador de servidores** / **Gerenciador de banco de dados**e clique em **Adicionar conexão**.
+2. Clique com o botão direito do mouse em **conexões de dados** no **Gerenciador de servidores** / **Gerenciador de banco de dados** e clique em **Adicionar conexão**.
 
 3. Especifique uma conexão válida para o banco de dados de exemplo Northwind.
 
@@ -161,10 +162,10 @@ Os exemplos neste tópico usam o banco de dados de exemplo Northwind. Caso não 
 
 7. Pressione F5 para executar o projeto. Clique em **Adicionar** para adicionar um novo registro. Clique em **Atualizar** para modificar o novo registro. Clique em **excluir** para excluir o novo registro.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ](index.md)
 - [Consultas](../../../language-reference/queries/index.md)
 - [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
-- [Métodos DataContext (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)
+- [Métodos de DataContext (Designer de Objeto Relacional)](/visualstudio/data-tools/datacontext-methods-o-r-designer)
 - [Como atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Designer Relacional de Objetos)](/visualstudio/data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer)

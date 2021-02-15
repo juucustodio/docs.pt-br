@@ -1,29 +1,30 @@
 ---
-title: Como configurar serviços do WCF para interoperar com clientes WSE 3.0
+description: 'Saiba mais sobre: como configurar serviços WCF para interoperar com clientes WSE 3,0'
+title: 'Como: configurar serviços do WCF para interoperar com clientes WSE 3.0'
 ms.date: 03/30/2017
 ms.assetid: 0f38c4a0-49a6-437c-bdde-ad1d138d3c4a
-ms.openlocfilehash: 600b9c28d92f9e2b6e4d586b052cc5762d591521
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: d48b24ac7787a9863744ee9b6a4a984cb6b371e4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599055"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779927"
 ---
-# <a name="how-to-configure-wcf-services-to-interoperate-with-wse-30-clients"></a>Como configurar serviços do WCF para interoperar com clientes WSE 3.0
+# <a name="how-to-configure-wcf-services-to-interoperate-with-wse-30-clients"></a>Como: configurar serviços do WCF para interoperar com clientes WSE 3.0
 
-Os serviços de Windows Communication Foundation (WCF) são compatíveis com nível de conexão com os serviços Web de aprimoramentos 3,0 para Microsoft .NET (WSE) quando os serviços WCF são configurados para usar a versão de agosto de 2004 da especificação WS-Addressing.
+Os serviços de Windows Communication Foundation (WCF) são compatíveis com nível de conexão com os serviços Web de aprimoramentos 3,0 para Microsoft .NET (WSE) quando os serviços WCF são configurados para usar a versão de agosto de 2004 da especificação de WS-Addressing.
 
 ### <a name="to-enable-a-wcf-service-to-interoperate-with-wse-30-clients"></a>Para habilitar um serviço WCF para interoperar com clientes WSE 3,0
 
 1. Defina uma associação personalizada para o serviço WCF.
 
-    Para especificar que a versão de agosto de 2004 da especificação WS-Addressing seja usada para codificação de mensagens, uma associação personalizada deve ser criada.
+    Para especificar que a versão de agosto de 2004 da especificação de WS-Addressing seja usada para codificação de mensagens, uma associação personalizada deve ser criada.
 
     1. Adicione um filho [\<customBinding>](../../configure-apps/file-schema/wcf/custombinding.md) ao [\<bindings>](../../configure-apps/file-schema/wcf/bindings.md) do arquivo de configuração do serviço.
 
     2. Especifique um nome para a associação, adicionando um [\<binding>](../../configure-apps/file-schema/wcf/bindings.md) ao [\<customBinding>](../../configure-apps/file-schema/wcf/custombinding.md) e definindo o `name` atributo.
 
-    3. Especifique um modo de autenticação e a versão das especificações do WS-Security que são usadas para proteger mensagens que são compatíveis com o WSE 3,0, adicionando um filho [\<security>](../../configure-apps/file-schema/wcf/security-of-custombinding.md) ao [\<binding>](../../configure-apps/file-schema/wcf/bindings.md) .
+    3. Especifique um modo de autenticação e a versão das especificações de WS-Security que são usadas para proteger mensagens que são compatíveis com o WSE 3,0, adicionando um filho [\<security>](../../configure-apps/file-schema/wcf/security-of-custombinding.md) ao [\<binding>](../../configure-apps/file-schema/wcf/bindings.md) .
 
         Para definir o modo de autenticação, defina o `authenticationMode` atributo do [\<security>](../../configure-apps/file-schema/wcf/security-of-custombinding.md) . Um modo de autenticação é praticamente equivalente a uma declaração de segurança completa no WSE 3,0. A tabela a seguir mapeia modos de autenticação no WCF para declarações de segurança de uso imediato no WSE 3,0.
 
@@ -36,11 +37,11 @@ Os serviços de Windows Communication Foundation (WCF) são compatíveis com ní
         |<xref:System.ServiceModel.Configuration.AuthenticationMode.UserNameOverTransport>|`usernameOverTransportSecurity`|
         |<xref:System.ServiceModel.Configuration.AuthenticationMode.UserNameForCertificate>|`usernameForCertificateSecurity`|
 
-        \*Uma das principais diferenças entre a `mutualCertificate10Security` e as `mutualCertificate11Security` declarações de segurança fechadas é a versão da especificação WS-Security que o WSE usa para proteger as mensagens SOAP. Para `mutualCertificate10Security` , o WS-security 1,0 é usado, ao passo que WS-security 1,1 é usado para o `mutualCertificate11Security` . Para o WCF, a versão da especificação WS-Security é especificada no `messageSecurityVersion` atributo do [\<security>](../../configure-apps/file-schema/wcf/security-of-custombinding.md) .
+        \* Uma das principais diferenças entre a `mutualCertificate10Security` e as `mutualCertificate11Security` declarações de segurança fechadas é a versão da especificação de WS-Security que o WSE usa para proteger as mensagens SOAP. Para `mutualCertificate10Security` , WS-Security 1,0 é usado, enquanto WS-Security 1,1 é usado para o `mutualCertificate11Security` . Para o WCF, a versão da especificação de WS-Security é especificada no `messageSecurityVersion` atributo do [\<security>](../../configure-apps/file-schema/wcf/security-of-custombinding.md) .
 
-        Para definir a versão da especificação WS-Security usada para proteger mensagens SOAP, defina o `messageSecurityVersion` atributo do [\<security>](../../configure-apps/file-schema/wcf/security-of-custombinding.md) . Para interoperar com o WSE 3,0, defina o valor do `messageSecurityVersion` atributo como <xref:System.ServiceModel.MessageSecurityVersion.WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11BasicSecurityProfile10%2A> .
+        Para definir a versão da especificação de WS-Security que é usada para proteger mensagens SOAP, defina o `messageSecurityVersion` atributo do [\<security>](../../configure-apps/file-schema/wcf/security-of-custombinding.md) . Para interoperar com o WSE 3,0, defina o valor do `messageSecurityVersion` atributo como <xref:System.ServiceModel.MessageSecurityVersion.WSSecurity11WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11BasicSecurityProfile10%2A> .
 
-    4. Especifique que a versão de agosto de 2004 da especificação WS-Addressing é usada pelo WCF adicionando um [\<textMessageEncoding>](../../configure-apps/file-schema/wcf/textmessageencoding.md) e definindo o `messageVersion` como seu valor para <xref:System.ServiceModel.Channels.MessageVersion.Soap11WSAddressingAugust2004%2A> .
+    4. Especifique que a versão de agosto de 2004 da especificação de WS-Addressing seja usada pelo WCF adicionando um [\<textMessageEncoding>](../../configure-apps/file-schema/wcf/textmessageencoding.md) e defina o `messageVersion` como seu valor como <xref:System.ServiceModel.Channels.MessageVersion.Soap11WSAddressingAugust2004%2A> .
 
         > [!NOTE]
         > Quando você estiver usando SOAP 1,2, defina o `messageVersion` atributo como <xref:System.ServiceModel.Channels.MessageVersion.Soap12WSAddressingAugust2004%2A> .
@@ -53,7 +54,7 @@ Os serviços de Windows Communication Foundation (WCF) são compatíveis com ní
 
 ## <a name="example"></a>Exemplo
 
-O exemplo de código a seguir especifica que o `Service.HelloWorldService` usa uma associação personalizada para interoperar com clientes do WSE 3,0. A associação personalizada especifica que a versão de agosto de 2004 do WS-Addressing e o conjunto de especificações do WS-Security 1,1 são usados para codificar as mensagens trocadas. As mensagens são protegidas usando o <xref:System.ServiceModel.Configuration.AuthenticationMode.AnonymousForCertificate> modo de autenticação.
+O exemplo de código a seguir especifica que o `Service.HelloWorldService` usa uma associação personalizada para interoperar com clientes do WSE 3,0. A associação personalizada especifica que a versão de agosto de 2004 do WS-Addressing e o conjunto de especificações WS-Security 1,1 são usados para codificar as mensagens trocadas. As mensagens são protegidas usando o <xref:System.ServiceModel.Configuration.AuthenticationMode.AnonymousForCertificate> modo de autenticação.
 
 ```xml
 <configuration>
@@ -94,4 +95,4 @@ O exemplo de código a seguir especifica que o `Service.HelloWorldService` usa u
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como personalizar uma associação fornecida pelo sistema](../extending/how-to-customize-a-system-provided-binding.md)
+- [Como: personalizar uma associação fornecida pelo sistema](../extending/how-to-customize-a-system-provided-binding.md)

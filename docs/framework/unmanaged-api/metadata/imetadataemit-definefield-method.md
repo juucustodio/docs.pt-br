@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: IMetaDataEmit: método efineField de:D'
 title: Método IMetaDataEmit::DefineField
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 6b5be4fc-2e86-499c-8b09-833160bca767
 topic_type:
 - apiref
-ms.openlocfilehash: ccc4843864f375c167acdb12575c282dbe3a49e1
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 7636b1521de721cc183305e8a0763ff0a61f331b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84004797"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753439"
 ---
 # <a name="imetadataemitdefinefield-method"></a>Método IMetaDataEmit::DefineField
+
 Cria uma definição para um campo com a assinatura de metadados especificada e Obtém um token para essa definição de campo.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -42,6 +44,7 @@ HRESULT DefineField (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `td`  
  no O `mdTypeDef` token para a classe ou a interface de circunscrição.  
   
@@ -70,15 +73,16 @@ HRESULT DefineField (
  fora O `mdFieldDef` token atribuído.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MSCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataEmit](imetadataemit-interface.md)
 - [Interface IMetaDataEmit2](imetadataemit2-interface.md)

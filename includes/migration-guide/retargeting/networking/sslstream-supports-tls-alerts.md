@@ -1,16 +1,16 @@
 ---
-ms.openlocfilehash: 0024b2a53444319788b8cdd312d537f994070b5e
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 5b566dd89801caff7a253abc2fb62c5fd79591f7
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85614290"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90606155"
 ---
 ### <a name="sslstream-supports-tls-alerts"></a>SslStream dá suporte a Alertas de TLS
 
 #### <a name="details"></a>Detalhes
 
-Após um handshake de TLS com falha, um <xref:System.IO.IOException?displayProperty=fullName> com uma exceção <xref:System.ComponentModel.Win32Exception?displayProperty=fullName> interna será lançado pela primeira operação de Leitura/Gravação de E/S. O <xref:System.ComponentModel.Win32Exception.NativeErrorCode?displayProperty=fullName> código para o <xref:System.ComponentModel.Win32Exception?displayProperty=fullName> pode ser mapeado para o alerta TLS da parte remota usando os [códigos de erro Schannel para alertas TLS e SSL](https://docs.microsoft.com/windows/desktop/SecAuthN/schannel-error-codes-for-tls-and-ssl-alerts). Para obter mais informações, consulte [RFC 2246: seção 7.2.2 Error Alerts](https://tools.ietf.org/html/rfc2246#section-7.2.2). <br/>O comportamento no .NET Framework 4.6.2 e nas versões anteriores é que o canal de transporte (normalmente a conexão TCP) atingirá o tempo limite durante a gravação ou a leitura se a outra parte falhar no handshake e rejeitar a conexão logo depois.
+Após um handshake de TLS com falha, um <xref:System.IO.IOException?displayProperty=fullName> com uma exceção <xref:System.ComponentModel.Win32Exception?displayProperty=fullName> interna será lançado pela primeira operação de Leitura/Gravação de E/S. O <xref:System.ComponentModel.Win32Exception.NativeErrorCode?displayProperty=fullName> código para o <xref:System.ComponentModel.Win32Exception?displayProperty=fullName> pode ser mapeado para o alerta TLS da parte remota usando os [códigos de erro Schannel para alertas TLS e SSL](/windows/desktop/SecAuthN/schannel-error-codes-for-tls-and-ssl-alerts). Para obter mais informações, consulte [RFC 2246: seção 7.2.2 Error Alerts](https://tools.ietf.org/html/rfc2246#section-7.2.2). <br/>O comportamento no .NET Framework 4.6.2 e nas versões anteriores é que o canal de transporte (normalmente a conexão TCP) atingirá o tempo limite durante a gravação ou a leitura se a outra parte falhar no handshake e rejeitar a conexão logo depois.
 
 #### <a name="suggestion"></a>Sugestão
 
@@ -46,7 +46,7 @@ Os aplicativos que chamam APIs de E/S de rede, como <xref:System.IO.Stream.Read(
 |:--------|:------------|
 | Escopo   | Microsoft Edge        |
 | Versão | 4.7         |
-| Type    | Redirecionando |
+| Tipo    | Redirecionando |
 
 #### <a name="affected-apis"></a>APIs afetadas
 

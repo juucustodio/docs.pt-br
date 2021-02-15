@@ -6,13 +6,13 @@ metadata:
   description: Aprenda Visual Basic programação no .NET – para desenvolvedores iniciantes, novos desenvolvedores para Visual Basic e experientes desenvolvedores de Visual Basic
   ms.topic: landing-page
   ms.date: 08/13/2020
-  ms.custom: contperfq1
-  ms.openlocfilehash: dff262ba8646427baa0021dbe4b3f859d22459cd
-  ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+  ms.custom: contperf-fy21q1
+  ms.openlocfilehash: 559b97e9c6b3a6b48eb05643ad3221a36b5b5a23
+  ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 08/18/2020
-  ms.locfileid: "88559200"
+  ms.lasthandoff: 12/15/2020
+  ms.locfileid: "97512613"
 landingContent:
 - title: Introdução
   linkLists:
@@ -39,7 +39,7 @@ landingContent:
   - linkListType: whats-new
     links:
     - text: Novidades no Visual Basic
-      url: getting-started/whats-new.md
+      url: ./whats-new/index.md
   - linkListType: concept
     links:
     - text: Estrutura de um aplicativo Visual Basic
@@ -50,7 +50,11 @@ landingContent:
       url: developing-apps/index.md
     - text: Aplicativos do Windows Forms
       url: developing-apps/windows-forms/index.md
-- title: Referência da linguagem
+  - linkListType: get-started
+    links:
+    - text: Visual Basic em Q&A
+      url: /answers/topics/dotnet-visual-basic.html
+- title: Referência de linguagem
   linkLists:
   - linkListType: reference
     links:

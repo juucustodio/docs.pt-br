@@ -1,14 +1,14 @@
 ---
+description: 'Saiba mais sobre: mapeando tipos de dados XML para tipos CLR'
 title: Tipos de dados XML de mapeamento para tipos de CLR
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 ms.assetid: cabdfcad-f359-479b-b71c-8b2fad42ca49
-ms.openlocfilehash: f14c8d961fe0934b8e843c39a217e7c2db8237c3
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 7838eb94ff55e4f0e5ac9e0c92b0cbb64e70ab1b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84289103"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99732066"
 ---
 # <a name="mapping-xml-data-types-to-clr-types"></a>Tipos de dados XML de mapeamento para tipos de CLR
 
@@ -76,6 +76,6 @@ A tabela a seguir descreve o mapeamento padrão entre os tipos de dados XML e o 
 |Nó de comentário|<xref:System.Xml.XPath.XPathNavigator>|
 |Nó de instrução de processamento|<xref:System.Xml.XPath.XPathNavigator>|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Digite suporte nas classes de System.Xml](type-support-in-the-system-xml-classes.md)

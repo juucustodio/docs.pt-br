@@ -6,13 +6,15 @@ helpviewer_keywords:
 - named and optional arguments [C#], Office programming
 - optional arguments [C#], Office programming
 - named arguments [C#], Office programming
+ms.topic: how-to
+ms.custom: contperf-fy21q2
 ms.assetid: 65b8a222-bcd8-454c-845f-84adff5a356f
-ms.openlocfilehash: 7e24331d37e8fdbe2bc66a2d9f73a5f6a7242af9
-ms.sourcegitcommit: 3d84eac0818099c9949035feb96bbe0346358504
+ms.openlocfilehash: de0545131385c13a79fd35df74e3a04da98ad8fb
+ms.sourcegitcommit: d0990c1c1ab2f81908360f47eafa8db9aa165137
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86864339"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97512470"
 ---
 # <a name="how-to-use-named-and-optional-arguments-in-office-programming-c-programming-guide"></a>Como usar argumentos nomeados e opcionais na programação do Office (guia de programação C#)
 
@@ -28,7 +30,7 @@ Você deve ter o Microsoft Office Word instalado em seu computador para concluir
 
 1. Inicie o Visual Studio.
 
-2. No menu **Arquivo** , aponte para **Novo**e clique em **Projeto**.
+2. No menu **Arquivo** , aponte para **Novo** e clique em **Projeto**.
 
 3. No painel **Templates Categories (Categorias de Modelos)**, expanda **Visual C#** e clique em **Windows**.
 
@@ -108,6 +110,6 @@ O código a seguir inclui o exemplo completo:
 
  [!code-csharp[csProgGuideNamedAndOptional#12](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidenamedandoptional/cs/wordprogram.cs#12)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Argumentos nomeados e opcionais](./named-and-optional-arguments.md)

@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 3371-MtomMessageEncodingStart'
 title: 3371 - MtomMessageEncodingStart
 ms.date: 03/30/2017
 ms.assetid: b1ba417f-f765-4567-82e3-ea2080e0ac73
-ms.openlocfilehash: 5ac9f9a4ef84426d656e525648d3352694becf56
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 234ce0e5cad1353aa58c9ec38344bb8424fbf148
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61795909"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753010"
 ---
 # <a name="3371---mtommessageencodingstart"></a>3371 - MtomMessageEncodingStart
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,9 +22,11 @@ ms.locfileid: "61795909"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando o MtomMessageEncoder zahájil kódování zprávy.  
+
+ Esse evento é emitido quando o MtomMessageEncoder iniciou a codificação da mensagem.  
   
 ## <a name="message"></a>Mensagem  
- Kodér MtomMessageEncoder zahájil kódování zprávy.  
+
+ MtomMessageEncoder iniciou a codificação da mensagem.  
   
 ## <a name="details"></a>Detalhes

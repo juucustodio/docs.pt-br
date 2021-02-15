@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método IHostSecurityManager:: RevertToSelf'
 title: Método IHostSecurityManager::RevertToSelf
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 189f28f8-f9a1-4192-aedc-91084e4f8b99
 topic_type:
 - apiref
-ms.openlocfilehash: 456553e4cb5a6c6a557b5c3ac677fad12a5798bf
-ms.sourcegitcommit: d223616e7e6fe2139079052e6fcbe25413fb9900
+ms.openlocfilehash: f3488653bcb498c7521de0e368b33bc444967f21
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "83803824"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99671497"
 ---
 # <a name="ihostsecuritymanagerreverttoself-method"></a>Método IHostSecurityManager::RevertToSelf
+
 Encerra a representação da identidade do usuário atual e retorna o token do thread original.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,7 +37,7 @@ HRESULT RevertToSelf ();
   
 |HRESULT|Descrição|  
 |-------------|-----------------|  
-|S_OK|`RevertToSelf`retornado com êxito.|  
+|S_OK|`RevertToSelf` retornado com êxito.|  
 |HOST_E_CLRNOTAVAILABLE|O Common Language Runtime (CLR) não foi carregado em um processo ou o CLR está em um estado no qual não pode executar código gerenciado ou processar a chamada com êxito.|  
 |HOST_E_TIMEOUT|A chamada atingiu o tempo limite.|  
 |HOST_E_NOT_OWNER|O chamador não possui o bloqueio.|  
@@ -43,18 +45,20 @@ HRESULT RevertToSelf ();
 |E_FAIL|Ocorreu uma falha catastrófica desconhecida. Quando um método retorna E_FAIL, o CLR não é mais utilizável no processo. As chamadas subsequentes para métodos de hospedagem retornam HOST_E_CLRNOTAVAILABLE.|  
   
 ## <a name="remarks"></a>Comentários  
- `RevertToSelf`é chamado para retornar ao token de thread original, após uma chamada anterior para o método [ImpersonateLoggedOnUser](ihostsecuritymanager-impersonateloggedonuser-method.md) .  
+
+ `RevertToSelf` é chamado para retornar ao token de thread original, após uma chamada anterior para o método [ImpersonateLoggedOnUser](ihostsecuritymanager-impersonateloggedonuser-method.md) .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IHostSecurityContext](ihostsecuritycontext-interface.md)
 - [Interface IHostSecurityManager](ihostsecuritymanager-interface.md)

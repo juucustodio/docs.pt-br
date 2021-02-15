@@ -3,17 +3,19 @@ title: Noções básicas sobre problemas e exceções de WebRequest
 description: WebRequest e classes derivadas geram exceções para sinalizar condições anormais. Use essas soluções possíveis para resolver essas condições no .NET Framework.
 ms.date: 03/30/2017
 ms.assetid: 74a361a5-e912-42d3-8f2e-8e9a96880a2b
-ms.openlocfilehash: aa9ab989bad7940e82cc4fd8fd22ca3915f7b800
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 27fde2a3cf3e6a3469a47bdd9efe70d31620777d
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84502074"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96236319"
 ---
 # <a name="understanding-webrequest-problems-and-exceptions"></a>Noções básicas sobre problemas e exceções de WebRequest
+
 <xref:System.Net.WebRequest> e suas classes derivadas (<xref:System.Net.HttpWebRequest>, <xref:System.Net.FtpWebRequest> e <xref:System.Net.FileWebRequest>) geram exceções para sinalizar uma condição anormal. Às vezes, a resolução desses problemas não é óbvia.  
   
 ## <a name="solutions"></a>Soluções  
+
  Examine a propriedade <xref:System.Net.WebException.Status%2A> da <xref:System.Net.WebException> para determinar o problema. A tabela a seguir mostra vários valores de status e algumas possíveis resoluções.  
   
 |Status|Detalhes|Solução|  

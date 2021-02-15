@@ -3,14 +3,15 @@ title: 'Como: compartilhar um assembly com outros aplicativos'
 description: Consulte Como compartilhar um assembly com outros aplicativos no .NET. Os assemblies podem ser privados (o padrão) ou compartilhado. Para compartilhar um assembly, coloque-o no GAC.
 ms.date: 08/19/2019
 ms.assetid: c30e972b-1693-4e05-b115-c31831fdf9f2
-ms.openlocfilehash: 9cef25059968875f17ce5dc77b04c44a2f3945f6
-ms.sourcegitcommit: 1c37a894c923bea021a3cc38ce7cba946357bbe1
+ms.openlocfilehash: 1056f8b555713d5d67488537e6c06cc457c4d312
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85104645"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96242533"
 ---
 # <a name="how-to-share-an-assembly-with-other-applications"></a>Como: compartilhar um assembly com outros aplicativos
+
 Os assemblies podem ser particulares ou compartilhados: por padrão, a maioria dos programas simples consistem em um assembly particular porque eles não se destinam a serem usados por outros aplicativos.  
 
 Para compartilhar um assembly com outros aplicativos, ele deve ser colocado no [GAC (cache de assembly global)](gac.md).  

@@ -1,12 +1,12 @@
 ---
-ms.openlocfilehash: c679cb2603d39f580203d9373d76481e904e6c1d
-ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
+ms.openlocfilehash: 8b70df0fb2072fd5243d9e46a4a20c22cc7fd677
+ms.sourcegitcommit: 97405ed212f69b0a32faa66a5d5fae7e76628b68
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2020
-ms.locfileid: "89497026"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91607780"
 ---
-### <a name="profiling-aspnet-mvc4-apps-can-lead-to-fatal-execution-engine-error"></a>Aplicativos ASP.NET MVC4 de criação de perfil podem causar Erro Fatal do Mecanismo de Execução
+### <a name="profiling-aspnet-mvc4-apps-can-lead-to-fatal-execution-engine-error"></a>A criação de perfil de aplicativos ASP.NET MVC4 pode levar a um erro fatal do mecanismo de execução
 
 #### <a name="details"></a>Detalhes
 

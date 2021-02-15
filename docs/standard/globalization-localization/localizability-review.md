@@ -1,27 +1,27 @@
 ---
+description: 'Saiba mais sobre: análise de possibilidade de localização'
 title: Revisão de localização
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - world-ready applications, localizability
-- application development [.NET Framework], localization
-- localizability [.NET Framework]
-- international applications [.NET Framework], localizability
-- globalization [.NET Framework], localizability
+- application development [.NET], localization
+- localizability [.NET]
+- international applications [.NET], localizability
+- globalization [.NET], localizability
 - culture, localizability
-- localization [.NET Framework], localizability
+- localization [.NET], localizability
 - global applications, localizability
 - localizing resources
 ms.assetid: 3aee2fbb-de47-4e37-8fe4-ddebb9719247
-ms.openlocfilehash: ef23cff2416792f13fda04dbe9beb34cbacfd7ea
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 5228cf7ff2615f14439dfeffd0d9b511be274dae
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84288271"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99675761"
 ---
 # <a name="localizability-review"></a>Revisão de localização
 
@@ -36,11 +36,13 @@ A revisão de localização é composta pelas três verificações a seguir:
 - [Você testou seu aplicativo com dados internacionais?](#test)
 
 <a name="global"></a>
+
 ## <a name="implement-globalization-recommendations"></a>Implementar as recomendações de globalização
 
 Se você tiver projetado e desenvolvido seu aplicativo com a localização em mente, e se tiver seguido as recomendações discutidas no artigo [Globalização](globalization.md), a revisão de localização será essencialmente uma aprovação da garantia de qualidade. Caso contrário, durante este estágio, examine e implemente as recomendações de [globalização](globalization.md) e corrija os erros no código-fonte que impedem a localização.
 
 <a name="culture"></a>
+
 ## <a name="handle-culture-sensitive-features"></a>Lidar com recursos com detecção de cultura
 
 O .NET não dá suporte de programação em várias áreas, que podem variar amplamente com a cultura. Na maioria dos casos, você deve escrever um código personalizado para lidar com áreas de recurso como as seguintes:
@@ -59,6 +61,7 @@ O .NET não dá suporte de programação em várias áreas, que podem variar amp
    [!code-vb[Conceptual.Localizability#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.localizability/vb/ismetric1.vb#1)]
 
 <a name="test"></a>
+
 ## <a name="test-your-application"></a>Teste seu aplicativo
 
 Antes de localizar seu aplicativo, você deve testá-lo usando dados internacionais em versões internacionais do sistema operacional. Apesar de grande parte da interface do usuário não estar localizada neste ponto, você será capaz de detectar problemas, como os seguintes:
@@ -77,7 +80,7 @@ Antes de localizar seu aplicativo, você deve testá-lo usando dados internacion
 
 Se você tiver seguido as recomendações de globalização ao desenvolver seu aplicativo, sendo tratadas corretamente, tratado os recursos sensíveis à cultura e identificado e resolvido os problemas de localização que surgiram durante o teste, você poderá prosseguir para a próxima etapa, [Localização](localization.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Globalização e localização](index.md)
 - [Localização](localization.md)

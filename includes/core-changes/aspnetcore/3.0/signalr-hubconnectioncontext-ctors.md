@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 6be98e7ced6608ba0793c635adfe61c8b1a7e9d9
-ms.sourcegitcommit: 7980a91f90ae5eca859db7e6bfa03e23e76a1a50
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81275265"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96032308"
 ---
 ### <a name="signalr-hubconnectioncontext-constructors-changed"></a>Signalr: construtores HubConnectionContext alterados
 
@@ -12,7 +12,7 @@ Os construtores do signalr `HubConnectionContext` foram alterados para aceitar u
 
 #### <a name="version-introduced"></a>Versão introduzida
 
-3,0
+3.0
 
 #### <a name="old-behavior"></a>Comportamento antigo
 
@@ -33,7 +33,7 @@ public HubConnectionContext(ConnectionContext connectionContext, HubConnectionCo
 
 #### <a name="reason-for-change"></a>Motivo da alteração
 
-O novo construtor usa um novo objeto Options. Consequentemente, os recursos do `HubConnectionContext` podem ser expandidos no futuro sem fazer mais construtores e alterações significativas.
+O novo construtor usa um novo objeto Options. Consequentemente, os recursos do `HubConnectionContext` podem ser expandidos no futuro sem necessidade de mais construtores nem de alterações interruptivas.
 
 #### <a name="recommended-action"></a>Ação recomendada
 

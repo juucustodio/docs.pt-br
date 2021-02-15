@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: Propriedade'
 title: propriedade
 ms.date: 03/30/2017
 ms.assetid: a941c53f-fc97-42c2-8832-0fb9f1d55c06
-ms.openlocfilehash: d1e20a6570c458041ec5d8ececbfa291ca9e4612
-ms.sourcegitcommit: 22be09204266253d45ece46f51cc6f080f2b3fd6
+ms.openlocfilehash: 8b25c19b0673817945fa6cc786589346462f7e61
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73735397"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754319"
 ---
 # <a name="property"></a>propriedade
+
 *As propriedades* são os blocos de construção fundamentais dos tipos de [entidade](entity-type.md) e [tipos complexos](complex-type.md). As propriedades definem a forma e as características de dados que uma instância do tipo de entidade ou a instância do tipo complexo conterão. As propriedades em um modelo conceitual são análogas as propriedades definidas em uma classe. Da mesma forma que as propriedades em uma classe definem a forma da classe e transportam informações sobre objetos, as propriedades em um modelo conceitual definem a forma de um tipo de entidade e transportam informações sobre as instâncias dos tipos de entidade.  
   
 > [!NOTE]
@@ -17,9 +19,9 @@ ms.locfileid: "73735397"
   
  Uma definição de propriedade contém as informações a seguir:  
   
-- Um nome de propriedade. (Necessário)  
+- Um nome de propriedade. (Obrigatória)  
   
-- Um tipo de propriedade. (Necessário)  
+- Um tipo de propriedade. (Obrigatória)  
   
 - Um conjunto de [facetas](facet.md). (Opcional)  
   
@@ -29,6 +31,7 @@ ms.locfileid: "73735397"
 > Um tipo complexo pode, em si, para ter as propriedades que são tipos complexos.  
   
 ## <a name="example"></a>Exemplo  
+
  O diagrama a seguir mostra um modelo conceitual com três tipos de entidade: `Book`, `Publisher`, e `Author`. Cada tipo de entidade tem várias propriedades, embora as informações de tipo para cada propriedade não é transmitida no diagrama. As propriedades que são [chaves de entidade](entity-key.md) são indicadas com (chave).  
   
  ![Modelo de exemplo com três tipos de entidade](./media/property/example-model-three-entity-types.gif)  
@@ -43,5 +46,5 @@ ms.locfileid: "73735397"
   
 ## <a name="see-also"></a>Consulte também
 
-- [Principais conceitos do Modelo de Dados de Entidade](entity-data-model-key-concepts.md)
+- [Conceitos chave do Modelo de Dados de Entidade](entity-data-model-key-concepts.md)
 - [Modelo de Dados de Entidade](entity-data-model.md)

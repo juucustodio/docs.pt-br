@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRProfiling:: AttachProfiler'
 title: Método ICLRProfiling::AttachProfiler
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 535a6839-c443-405b-a6f4-e2af90725d5b
 topic_type:
 - apiref
-ms.openlocfilehash: 48ac09e1862ae58e79707235e891f72920de1251
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 11b53b39d3332d1f72304352fad525e5881e05a6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84500553"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99648448"
 ---
 # <a name="iclrprofilingattachprofiler-method"></a>Método ICLRProfiling::AttachProfiler
+
 Anexa o criador de perfil especificado ao processo especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -63,7 +65,8 @@ HRESULT AttachProfiler(
 
   \[em] o tamanho, em bytes, dos dados que `pvClientData` aponta para.
 
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
+
  Esse método retorna os HRESULTs a seguir.  
   
 |HRESULT|Descrição|  
@@ -84,9 +87,11 @@ HRESULT AttachProfiler(
 ## <a name="remarks"></a>Comentários  
   
 ## <a name="memory-management"></a>Gerenciamento de memória  
+
  Ao manter as convenções com, o chamador de `AttachProfiler` (por exemplo, o código de gatilho criado pelo desenvolvedor do criador de perfil) é responsável por alocar e desalocar a memória para os dados aos quais o `pvClientData` parâmetro aponta. Quando o CLR executa a `AttachProfiler` chamada, ele faz uma cópia da memória que `pvClientData` aponta para e a transmite para o processo de destino. Quando o CLR dentro do processo de destino recebe sua própria cópia do `pvClientData` bloco, ele passa o bloco para o criador de perfil por meio do `InitializeForAttach` método e, em seguida, desaloca sua cópia do `pvClientData` bloco do processo de destino.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -95,7 +100,7 @@ HRESULT AttachProfiler(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Interface ICorProfilerInfo3](icorprofilerinfo3-interface.md)

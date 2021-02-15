@@ -1,22 +1,24 @@
 ---
-title: Obter não tem suporte em tempo de execução
+description: 'Saiba mais sobre: não há suporte para Get em tempo de execução'
+title: Não há suporte para Get em tempo de execução
 ms.date: 07/20/2015
 f1_keywords:
 - vbrID393
 ms.assetid: b527c5a8-3f24-42e9-871f-e6305c9f514b
-ms.openlocfilehash: d4a8b6e1c9a63c48ef5ee9bf0173ccff8e37f565
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 6f4a78da9c3cfc76ebe3d671c698e6a6ca41995b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62052281"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100462934"
 ---
-# <a name="get-not-supported-at-run-time"></a>Obter não tem suporte em tempo de execução
-Você tentou ler uma propriedade em tempo de execução que só está acessível no tempo de design.  
+# <a name="get-not-supported-at-run-time"></a>Não há suporte para Get em tempo de execução
+
+Você tentou ler uma propriedade em tempo de execução que só pode ser acessada em tempo de design.  
   
 ## <a name="to-correct-this-error"></a>Para corrigir este erro  
   
-1. Verifique a propriedade e determine em quais condições pode ser definido.  
+1. Verifique a propriedade e determine em quais condições ela pode ser definida.  
   
 2. Remova a referência à propriedade.  
   

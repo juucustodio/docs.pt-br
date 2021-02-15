@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICorDebugErrorInfoEnum:: Next Method'
 title: Método ICorDebugErrorInfoEnum::Next
 ms.date: 03/30/2017
 api_name:
@@ -15,16 +16,17 @@ helpviewer_keywords:
 ms.assetid: 41c09512-e8fe-4a82-90c5-6b39c18682da
 topic_type:
 - apiref
-ms.openlocfilehash: 503ae621bd705f98dce1c9b301dcb554975ddd3d
-ms.sourcegitcommit: 13e79efdbd589cad6b1de634f5d6b1262b12ab01
+ms.openlocfilehash: 33afd7bf1fb3855467ba29ba7f308555f5ef93b4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76788748"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694286"
 ---
 # <a name="icordebugerrorinfoenumnext-method"></a>Método ICorDebugErrorInfoEnum::Next
+
 `ICorDebugErrorInfoEnum::Next` é obsoleto. Não chame esse método.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

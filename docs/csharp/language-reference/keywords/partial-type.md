@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - partial types [C#]
 ms.assetid: 27320743-a22e-4c7b-b0b3-53afe3607334
-ms.openlocfilehash: 8ae98805eea7231e3a15cb74e636313e796796a2
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 4e73b34390143a2ac9b839e1da79b7894232c4b4
+ms.sourcegitcommit: b4a46f6d7ebf44c0035627d00924164bcae2db30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89117981"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91437879"
 ---
 # <a name="partial-type-c-reference"></a>tipo parcial (Referência em C#)
 
-Definições de tipo parcial permitem que a definição de uma classe, struct ou interface seja dividida em vários arquivos.
+As definições de tipo parcial permitem que a definição de uma classe, estrutura, interface ou registro seja dividida em vários arquivos.
 
 Em *file1.cs*:
 
@@ -29,7 +29,7 @@ Em *file2.cs* a declaração:
 
 ## <a name="remarks"></a>Comentários
 
-Dividir um tipo de classe, struct ou interface em vários arquivos pode ser útil quando você está trabalhando com projetos grandes ou com o código gerado automaticamente, como o código fornecido pelo [Designer de Formulários do Windows](../../../framework/winforms/controls/developing-windows-forms-controls-at-design-time.md). Um tipo parcial pode conter um [método parcial](partial-method.md). Para obter mais informações, consulte [Classes parciais e métodos](../../programming-guide/classes-and-structs/partial-classes-and-methods.md).
+Dividir um tipo de classe, struct ou interface em vários arquivos pode ser útil quando você está trabalhando com projetos grandes ou com o código gerado automaticamente, como o código fornecido pelo [Designer de Formulários do Windows](/dotnet/desktop/winforms/controls/developing-windows-forms-controls-at-design-time). Um tipo parcial pode conter um [método parcial](partial-method.md). Para obter mais informações, consulte [Classes parciais e métodos](../../programming-guide/classes-and-structs/partial-classes-and-methods.md).
 
 ## <a name="c-language-specification"></a>Especificação da linguagem C#
 

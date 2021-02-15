@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: especificação de linguagem de Visual Basic'
 title: Especificação da linguagem
 ms.date: 08/02/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - Visual Basic code, specifications
 - specifications, Visual Basic
 ms.assetid: 42c30017-19d0-442e-87a2-850b66ddc3df
-ms.openlocfilehash: ddc4558cbf79afc968509177e5be14f5e2f17ef7
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 7f2a55a9859bd5a8811dec5dc933359f4662b7fe
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84414226"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100433441"
 ---
 # <a name="visual-basic-language-specification"></a>Especificação da linguagem Visual Basic
 
@@ -23,9 +24,9 @@ Este site contém a [especificação Visual Basic 11](../../../../_vblang/spec/i
 
 Problemas na especificação devem ser criados no repositório [dotnet/vblang](https://github.com/dotnet/vblang/issues). Ou, se você estiver interessado em corrigir quaisquer erros encontrados, poderá enviar uma solicitação de [pull](https://github.com/dotnet/vblang/pulls) para o mesmo repositório.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência de linguagem de Visual Basic](../../language-reference/index.md)
 
 >[!div class="step-by-step"]
->[Avançar](../../../../_vblang/spec/introduction.md)
+>[Próximo](../../../../_vblang/spec/introduction.md)

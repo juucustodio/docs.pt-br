@@ -1,19 +1,19 @@
 ---
 title: Implementando a camada de persistência da infraestrutura com o Entity Framework Core
 description: Arquitetura de microserviços .NET para aplicativos .NET em contêineres | Explore os detalhes de implementação da camada de persistência de infraestrutura, usando Entity Framework Core.
-ms.date: 01/30/2020
-ms.openlocfilehash: f9d97319d378b6fd3eb681fd2873e5fbeead787f
-ms.sourcegitcommit: 4ad2f8920251f3744240c3b42a443ffbe0a46577
+ms.date: 01/13/2021
+ms.openlocfilehash: 2c7b6dbe2f59a26d33a4842e74aed2b7588bd14d
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86100990"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98188888"
 ---
 # <a name="implement-the-infrastructure-persistence-layer-with-entity-framework-core"></a>Implementar a camada de persistência de infraestrutura com o Entity Framework Core
 
 Ao usar bancos de dados relacionais, como o SQL Server, o Oracle ou o PostgreSQL, uma abordagem recomendada é implementar a camada de persistência com base no EF (Entity Framework). O EF é compatível com LINQ e fornece objetos fortemente tipados para o modelo, bem como uma persistência simplificada no banco de dados.
 
-O Entity Framework tem uma longa história de participação no .NET Framework. Ao usar o .NET Core, você também deve usar o Entity Framework Core, que é executado no Windows ou no Linux da mesma maneira que o .NET Core. EF Core é uma reescrita completa de Entity Framework implementada com uma superfície muito menor e melhorias importantes no desempenho.
+O Entity Framework tem uma longa história de participação no .NET Framework. Ao usar o .NET, você também deve usar Entity Framework Core, que é executado no Windows ou no Linux da mesma maneira que o .NET. EF Core é uma reescrita completa de Entity Framework implementada com uma superfície muito menor e melhorias importantes no desempenho.
 
 ## <a name="introduction-to-entity-framework-core"></a>Introdução ao Entity Framework Core
 
@@ -367,7 +367,7 @@ Você pode fazer isso com campos únicos ou também com coleções, como um camp
 
 ### <a name="use-shadow-properties-in-ef-core-hidden-at-the-infrastructure-level"></a>Usar propriedades de sombra no EF Core, ocultas no nível da infraestrutura
 
-As propriedades de sombra no EF Core são propriedades que não existem no modelo de classe de entidade. Os valores e os estados dessas propriedades são mantidos unicamente na classe [ChangeTracker](https://docs.microsoft.com/ef/core/api/microsoft.entityframeworkcore.changetracking.changetracker) no nível da infraestrutura.
+As propriedades de sombra no EF Core são propriedades que não existem no modelo de classe de entidade. Os valores e os estados dessas propriedades são mantidos unicamente na classe [ChangeTracker](/ef/core/api/microsoft.entityframeworkcore.changetracking.changetracker) no nível da infraestrutura.
 
 ## <a name="implement-the-query-specification-pattern"></a>Implementar o padrão de especificação de consulta
 

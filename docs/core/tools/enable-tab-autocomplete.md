@@ -1,24 +1,24 @@
 ---
 title: Ativar o recurso auto-completar com TAB
-description: Este artigo ensina você a habilitar o preenchimento com TAB na CLI do .NET Core para o PowerShell, o Bash e o zsh.
+description: Este artigo ensina como habilitar o preenchimento com Tab para a CLI do .NET para PowerShell, Bash, zsh e peixes.
 author: adegeo
 ms.author: adegeo
 ms.topic: how-to
 ms.date: 11/03/2019
-ms.openlocfilehash: cd46305b8cd82825671a3a1568e8b93de1bbab26
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.openlocfilehash: b5b63166faa1762d9fa82a93aa70aebb33167630
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88062802"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585553"
 ---
-# <a name="how-to-enable-tab-completion-for-the-net-core-cli"></a>Como habilitar o preenchimento com TAB na CLI do .NET Core
+# <a name="how-to-enable-tab-completion-for-the-net-cli"></a>Como habilitar o preenchimento com TAB para a CLI do .NET
 
 **Este artigo aplica-se a:** ✔️ SDK do .net Core 2,1 e versões posteriores
 
-Este artigo descreve como configurar o preenchimento com TAB para três shells: PowerShell, Bash e zsh. Para outros shells, consulte a documentação sobre como configurar a conclusão da guia.
+Este artigo descreve como configurar o preenchimento com Tab para quatro shells, PowerShell, Bash, zsh e peixe. Para outros shells, consulte a documentação sobre como configurar a conclusão da guia.
 
-Uma vez configurado, o preenchimento com Tab para o CLI do .NET Core é disparado digitando um `dotnet` comando no Shell e, em seguida, pressionando a tecla Tab. A linha de comando atual é enviada para o comando `dotnet complete`, e os resultados são processados pelo shell. Teste os resultados sem habilitar o preenchimento com TAB enviando algo diretamente para o comando `dotnet complete`. Por exemplo:
+Uma vez configurado, o preenchimento com Tab para a CLI do .NET é disparado digitando um `dotnet` comando no Shell e, em seguida, pressionando a tecla Tab. A linha de comando atual é enviada para o comando `dotnet complete`, e os resultados são processados pelo shell. Teste os resultados sem habilitar o preenchimento com TAB enviando algo diretamente para o comando `dotnet complete`. Por exemplo: 
 
 ```console
 > dotnet complete "dotnet a"
@@ -29,7 +29,7 @@ migrate
 pack
 ```
 
-Se esse comando não funcionar, verifique se esse SDK do .NET Core 2.0 ou superior está instalado. Se ele está instalado, mas esse comando ainda não funciona, verifique se o comando `dotnet` é resolvido para uma versão do SDK do .NET Core 2.0 e superior. Use o comando `dotnet --version` para ver para qual versão do `dotnet` o caminho atual está sendo resolvido. Para obter mais informações, confira [Selecionar a versão do .NET Core a ser usada](../versions/selection.md).
+Se esse comando não funcionar, verifique se esse SDK do .NET Core 2.0 ou superior está instalado. Se ele está instalado, mas esse comando ainda não funciona, verifique se o comando `dotnet` é resolvido para uma versão do SDK do .NET Core 2.0 e superior. Use o comando `dotnet --version` para ver para qual versão do `dotnet` o caminho atual está sendo resolvido. Para obter mais informações, consulte [selecionar a versão do .net a ser usada](../versions/selection.md).
 
 ### <a name="examples"></a>Exemplos
 
@@ -45,7 +45,7 @@ Entrada                                | se torna                               
 
 ## <a name="powershell"></a>PowerShell
 
-Para adicionar o preenchimento com TAB ao **PowerShell** na CLI do .NET Core, crie ou edite o perfil armazenado na variável `$PROFILE`. Para obter mais informações, confira [Como criar seu perfil](/powershell/module/microsoft.powershell.core/about/about_profiles#how-to-create-a-profile) e [Perfis e política de execução](/powershell/module/microsoft.powershell.core/about/about_profiles#profiles-and-execution-policy).
+Para adicionar o preenchimento com Tab ao **PowerShell** para a CLI do .net, crie ou edite o perfil armazenado na variável `$PROFILE` . Para obter mais informações, confira [Como criar seu perfil](/powershell/module/microsoft.powershell.core/about/about_profiles#how-to-create-a-profile) e [Perfis e política de execução](/powershell/module/microsoft.powershell.core/about/about_profiles#profiles-and-execution-policy).
 
 Adicione o seguinte código ao seu perfil:
 
@@ -61,7 +61,7 @@ Register-ArgumentCompleter -Native -CommandName dotnet -ScriptBlock {
 
 ## <a name="bash"></a>bash
 
-Para adicionar o preenchimento com TAB ao shell do **Bash** na CLI do .NET Core, adicione o seguinte código ao arquivo `.bashrc`:
+Para adicionar o preenchimento com Tab ao seu shell **bash** para a CLI do .net, adicione o seguinte código ao seu `.bashrc` arquivo:
 
 ```bash
 # bash parameter completion for the dotnet CLI
@@ -84,7 +84,7 @@ complete -f -F _dotnet_bash_complete dotnet
 
 ## <a name="zsh"></a>zsh
 
-Para adicionar o preenchimento com TAB ao shell do **zsh** na CLI do .NET Core, adicione o seguinte código ao arquivo `.zshrc`:
+Para adicionar o preenchimento com Tab ao seu shell do **zsh** para a CLI do .net, adicione o seguinte código ao seu `.zshrc` arquivo:
 
 ```zsh
 # zsh parameter completion for the dotnet CLI
@@ -97,4 +97,12 @@ _dotnet_zsh_complete()
 }
 
 compctl -K _dotnet_zsh_complete dotnet
+```
+
+## <a name="fish"></a>pedir
+
+Para adicionar o preenchimento com Tab ao seu shell de **peixe** para a CLI do .net, adicione o seguinte código ao seu `config.fish` arquivo:
+
+```fish
+complete -f -c dotnet -a "(dotnet complete)"
 ```

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interfaces de metadados'
 title: Interfaces de metadados
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,17 +7,19 @@ helpviewer_keywords:
 - metadata interfaces [.NET Framework]
 - interfaces (.NET Framework metadata]
 ms.assetid: f5cdac93-a28c-48ef-8a19-5773376e9e7c
-ms.openlocfilehash: 4d947388afb8d7f8f935ae3b8e8aff81efaf2ee4
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 4851fbc93bfa29f1b4b5015c82f05c1b200b9092
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84489580"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99799129"
 ---
 # <a name="metadata-interfaces"></a>Interfaces de metadados
+
 Esta seção descreve as interfaces não gerenciadas que fornecem acesso aos metadados expostos pelo .NET Framework tipos, métodos, campos e assim por diante.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Interface ICeeGen](iceegen-interface.md)  
  Fornece métodos para a compilação dinâmica de código.  
   
@@ -36,7 +39,7 @@ Esta seção descreve as interfaces não gerenciadas que fornecem acesso aos met
  Fornece métodos para mapear bibliotecas de tipos para suas assinaturas de metadados e para converter de uma para a outra.  
   
  [Interface IMetaDataDispenser](imetadatadispenser-interface.md)  
- `IMetaDataDispenser` é obsoleto. Use `IMetaDataDispenserEx` em vez disso.  
+ `IMetaDataDispenser` é obsoleto. Use `IMetaDataDispenserEx` em seu lugar.  
   
  [Interface IMetaDataDispenserEx](imetadatadispenserex-interface.md)  
  Fornece métodos que mapeiam áreas de memória para criar ou modificar metadados.  
@@ -72,6 +75,7 @@ Esta seção descreve as interfaces não gerenciadas que fornecem acesso aos met
  Fornece métodos a serem usados para a validação de assinaturas de metadados.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
+
  [Funções estáticas globais de metadados](metadata-global-static-functions.md)  
   
  [Enumerações de metadados](metadata-enumerations.md)  

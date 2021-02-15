@@ -1,28 +1,32 @@
 ---
+description: 'Saiba mais sobre: 3803-RoutingServiceProcessingFailure'
 title: 3803 - RoutingServiceProcessingFailure
 ms.date: 03/30/2017
 ms.assetid: 8d01aa0d-b456-49c0-8255-1040e2e66a57
-ms.openlocfilehash: 336a823f59d3a40851adb2dbb3df92c0f94cee02
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 6621167c722fd84d7ab1a2ef694664409d66ee8e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61789357"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99760323"
 ---
 # <a name="3803---routingserviceprocessingfailure"></a>3803 - RoutingServiceProcessingFailure
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
 |ID|3803|  
-|Palavras-chave|RoutingServices|  
-|Nível|Erro|  
+|Palavras-chave|Roteamentoservices|  
+|Level|Erro do|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
+
  Esse evento é emitido quando o serviço de roteamento falhou ao processar uma mensagem no ponto de extremidade.  
   
 ## <a name="message"></a>Mensagem  
- O serviço de roteamento falhou ao processar uma mensagem no ponto de extremidade com o endereço '%1'.  
+
+ O serviço de roteamento falhou ao processar uma mensagem no ponto de extremidade com o endereço ' %1 '.  
   
 ## <a name="details"></a>Detalhes

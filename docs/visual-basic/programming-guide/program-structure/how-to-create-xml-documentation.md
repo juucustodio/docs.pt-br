@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como criar a documentação XML no Visual Basic'
 title: Como criar documentação XML
 ms.date: 07/20/2015
 helpviewer_keywords:
 - XML comments
 - XML documentation [Visual Basic], creating
 ms.assetid: 27b5b06c-09b9-496a-8245-f9542d846230
-ms.openlocfilehash: 1421cc85beba42b3cf3656c34b1d02347fbaf164
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: d54c79d820a170b246e5c85d7562487fbe66f39c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403233"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100475949"
 ---
 # <a name="how-to-create-xml-documentation-in-visual-basic"></a>Como criar documentação XML no Visual Basic
 
@@ -37,7 +38,7 @@ Este exemplo mostra como adicionar comentários de documentação XML ao seu có
 
 5. Compile o código para gerar um arquivo XML contendo os comentários da documentação. Para obter mais informações, consulte [-Doc](../../reference/command-line-compiler/doc.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Documentando o código com XML](documenting-your-code-with-xml.md)
 - [Marcações de Comentário XML](../../language-reference/xmldoc/index.md)

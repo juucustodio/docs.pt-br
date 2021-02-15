@@ -12,14 +12,15 @@ helpviewer_keywords:
 - /d compiler option [C#]
 - d compiler option [C#]
 ms.assetid: f17d7b4d-82d0-4133-8563-68cced1cac6e
-ms.openlocfilehash: 3b7a1c6e92d2c60ce289f29044774c3aa42ca84f
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 74c9a23cd1b3a691063c2976a593c9b3a63ca618
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125872"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "91173263"
 ---
 # <a name="-define-c-compiler-options"></a>-define (opções do compilador C#)
+
 A opção **-define** define `name` como um símbolo em todos os arquivos de código-fonte do seu programa.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -29,10 +30,12 @@ A opção **-define** define `name` como um símbolo em todos os arquivos de có
 ```  
   
 ## <a name="arguments"></a>Argumentos  
+
  `name`, `name2`  
  O nome de um ou mais símbolos que você deseja definir.  
   
 ## <a name="remarks"></a>Comentários  
+
  A opção **-define** tem o mesmo efeito que usar uma diretiva de pré-processador [#define](../preprocessor-directives/preprocessor-define.md), exceto que a opção do compilador está em vigor para todos os arquivos no projeto. Um símbolo permanece definido em um arquivo de origem até que uma diretiva [#undef](../preprocessor-directives/preprocessor-undef.md) remova a definição no arquivo de origem. Quando você usa a opção -define, uma diretiva `#undef` em um arquivo não terá nenhum efeito em outros arquivos de código-fonte no projeto.  
   
  Você pode usar os símbolos criados por essa opção com [#if](../preprocessor-directives/preprocessor-if.md), [#else](../preprocessor-directives/preprocessor-else.md), [#elif](../preprocessor-directives/preprocessor-elif.md) e [#endif](../preprocessor-directives/preprocessor-endif.md) para compilar os arquivos de origem condicionalmente.  
@@ -81,5 +84,5 @@ public class Test
   
 ## <a name="see-also"></a>Confira também
 
-- [Opções do compilador C#](./index.md)
+- [Opções do compilador de C#](./index.md)
 - [Gerenciando propriedades de solução e de projeto](/visualstudio/ide/managing-project-and-solution-properties)

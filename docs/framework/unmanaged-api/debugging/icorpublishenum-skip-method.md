@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorPublishEnum:: Skip'
 title: Método ICorPublishEnum::Skip
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 1680ec06-4ab0-447e-93ad-cdb8693fde5c
 topic_type:
 - apiref
-ms.openlocfilehash: b68a9ec1e8fee4fdecd2114af28c75c4a236cb3a
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: f0124681c8051a5c05c1caf3edd06c697da486e5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83421134"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794592"
 ---
 # <a name="icorpublishenumskip-method"></a>Método ICorPublishEnum::Skip
+
 Move o cursor para a frente na enumeração pelo número especificado de itens.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,10 +36,12 @@ HRESULT Skip (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `celt`  
  no O número de itens pelos quais mover o cursor para a frente.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorPub. idl, CorPub. h  
@@ -46,6 +50,6 @@ HRESULT Skip (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorPublishEnum](icorpublishenum-interface.md)

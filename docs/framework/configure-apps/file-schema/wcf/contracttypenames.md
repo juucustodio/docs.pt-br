@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <contractTypeNames>'
 title: <contractTypeNames>
 ms.date: 03/30/2017
 ms.assetid: 5ec5efc6-87f8-4160-9be0-dcd2e01df3df
-ms.openlocfilehash: c67e5b9e82b96e27ce73512680bd4236b26ef4dd
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 7521b16c097a8df75819654525c0663124a1ebd0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70855445"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754440"
 ---
 # \<contractTypeNames>
+
 Uma seção de configuração que especifica uma lista de nomes de tipo de contrato, que são os nomes de contrato dos serviços que estão sendo pesquisados e os critérios normalmente usados ao pesquisar um serviço. Se mais de um nome de contrato for especificado, somente os pontos de extremidade de serviço correspondentes a todos os contratos serão respondidos. Observe que no Windows Communication Foundation (WCF), um ponto de extremidade só pode dar suporte a um contrato.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -21,7 +23,7 @@ Uma seção de configuração que especifica uma lista de nomes de tipo de contr
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<findCriteria>**](findcriteria.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<contractTypeNames>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <system.serviceModel>
@@ -49,9 +51,11 @@ Uma seção de configuração que especifica uma lista de nomes de tipo de contr
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
+
  Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  

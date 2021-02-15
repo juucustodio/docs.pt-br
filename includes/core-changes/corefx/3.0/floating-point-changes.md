@@ -1,16 +1,16 @@
 ---
 ms.openlocfilehash: 719f336e1b38597674d6ee8f0c5429dd965054b1
-ms.sourcegitcommit: 0926684d8d34f4c6b5acce58d2193db093cb9cf2
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83721481"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96031957"
 ---
 ### <a name="floating-point-formatting-and-parsing-behavior-changed"></a>Comportamento de análise e formatação de ponto flutuante alterado
 
 A análise de ponto flutuante e o comportamento de formatação (pelos <xref:System.Double> <xref:System.Single> tipos e) agora são compatíveis com IEEE.
 
-#### <a name="change-description"></a>Descrição da alteração
+#### <a name="change-description"></a>Descrição das alterações
 
 No .NET Core 2,2 e versões anteriores, Formatar com <xref:System.Double.ToString%2A?displayProperty=nameWithType> e e <xref:System.Single.ToString%2A?displayProperty=nameWithType> analisar com <xref:System.Double.Parse%2A?displayProperty=nameWithType> ,, e <xref:System.Double.TryParse%2A?displayProperty=nameWithType> <xref:System.Single.Parse%2A?displayProperty=nameWithType> <xref:System.Single.TryParse%2A?displayProperty=nameWithType> não são compatíveis com IEEE. Como resultado, é impossível garantir que um valor seja arvoltado com qualquer cadeia de caracteres de formato padrão ou personalizada com suporte. Para algumas entradas, a tentativa de analisar um valor formatado pode falhar e, para outros, o valor analisado não é igual ao valor original.
 

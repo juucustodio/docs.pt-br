@@ -1,16 +1,17 @@
 ---
-title: Como criar um arquivo
+description: 'Saiba mais sobre: como criar um arquivo no Visual Basic'
+title: 'Como: criar um arquivo'
 ms.date: 07/20/2015
 helpviewer_keywords:
 - text files [Visual Basic], creating
 - files [Visual Basic], creating
 ms.assetid: 0253bb6d-5519-4a50-b882-b93ef5cca0d9
-ms.openlocfilehash: 20533ec01d3198d499312ed0c15ec8cca2ff70bd
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: b46786035c14021ceb27cce5b34eff5c8397fc9a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74348795"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797582"
 ---
 # <a name="how-to-create-a-file-in-visual-basic"></a>Como criar um arquivo no Visual Basic
 
@@ -50,7 +51,7 @@ Este exemplo cria um arquivo de texto vazio no caminho especificado usando o mé
   
  Uma <xref:System.UnauthorizedAccessException> será gerada se o usuário não tiver permissão para criar o arquivo.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.IO>
 - <xref:System.IO.File.Create%2A>

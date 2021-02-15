@@ -5,12 +5,12 @@ ms.date: 08/29/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc,how-to,title-hack-0625
-ms.openlocfilehash: 87eae789478752423f3e682d4db6cead0391aa6e
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 02cec3d22588d8f10d36216422bc19faafffe94b
+ms.sourcegitcommit: aa6d8a90a4f5d8fe0f6e967980b8c98433f05a44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "73976922"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90679515"
 ---
 # <a name="train-a-machine-learning-model-using-cross-validation"></a>Treinar um modelo de machine learning usando validação cruzada
 
@@ -30,7 +30,7 @@ Size (Sq. ft.), HistoricalPrice1 ($), HistoricalPrice2 ($), HistoricalPrice3 ($)
 1120.00, 47504.98, 45129.73, 43775.84, 46792.41
 ```
 
-Os dados podem ser modelados por uma classe como `HousingData` e carregados em um [`IDataView`](xref:Microsoft.ML.IDataView).
+Os dados podem ser modelados por uma classe como `HousingData` e carregados em um [`IDataView`](xref:Microsoft.ML.IDataView) .
 
 ```csharp
 public class HousingData
@@ -50,9 +50,9 @@ public class HousingData
 
 ## <a name="prepare-the-data"></a>Preparar os dados
 
-Pré-processe os dados antes de usá-lo para criar o modelo de machine learning. Nesta amostra, `Size` as `HistoricalPrices` colunas e colunas são combinadas em um único `Features` vetor de característica, que é a saída para uma nova coluna chamada usando o [`Concatenate`](xref:Microsoft.ML.TransformExtensionsCatalog.Concatenate*) método. Além de obter os dados no formato esperado por algoritmos do ML.NET, concatenar as colunas otimiza as operações subsequentes no pipeline, aplicando a operação uma vez para a coluna concatenada, em vez de a cada uma das colunas separadas.
+Pré-processe os dados antes de usá-lo para criar o modelo de machine learning. Neste exemplo, as `Size` colunas e `HistoricalPrices` são combinadas em um único vetor de recurso, que é a saída para uma nova coluna chamada `Features` usando o [`Concatenate`](xref:Microsoft.ML.TransformExtensionsCatalog.Concatenate%2A) método. Além de obter os dados no formato esperado por algoritmos do ML.NET, concatenar as colunas otimiza as operações subsequentes no pipeline, aplicando a operação uma vez para a coluna concatenada, em vez de a cada uma das colunas separadas.
 
-Uma vez que as colunas são [`NormalizeMinMax`](xref:Microsoft.ML.NormalizationCatalog.NormalizeMinMax*) combinadas em `Features` um `Size` único `HistoricalPrices` vetor, é aplicado à coluna para obter e na mesma faixa entre 0-1.
+Depois que as colunas são combinadas em um único vetor, [`NormalizeMinMax`](xref:Microsoft.ML.NormalizationCatalog.NormalizeMinMax%2A) é aplicado à `Features` coluna para obter `Size` e `HistoricalPrices` no mesmo intervalo entre 0-1.
 
 ```csharp
 // Define data prep estimator
@@ -69,7 +69,7 @@ IDataView transformedData = dataPrepTransformer.Transform(data);
 
 ## <a name="train-model-with-cross-validation"></a>Treinar modelo com validação cruzada
 
-Depois que os dados foram pré-processados, é hora de treinar o modelo. Primeiro, selecione o algoritmo que melhor se alinha com a tarefa de aprendizado de máquina a ser executada. Como o valor previsto é um valor contínuo numericamente, a tarefa é regressão. Um dos algoritmos de regressão implementados pela ML.NET é o [`StochasticDualCoordinateAscentCoordinator`](xref:Microsoft.ML.Trainers.SdcaRegressionTrainer) algoritmo. Para treinar o modelo com [`CrossValidate`](xref:Microsoft.ML.RegressionCatalog.CrossValidate*) validação cruzada use o método.
+Depois que os dados foram pré-processados, é hora de treinar o modelo. Primeiro, selecione o algoritmo que melhor se alinha com a tarefa de aprendizado de máquina a ser executada. Como o valor previsto é um valor contínuo numericamente, a tarefa é regressão. Um dos algoritmos de regressão implementados por ML.NET é o [`StochasticDualCoordinateAscentCoordinator`](xref:Microsoft.ML.Trainers.SdcaRegressionTrainer) algoritmo. Para treinar o modelo com validação cruzada, use o [`CrossValidate`](xref:Microsoft.ML.RegressionCatalog.CrossValidate%2A) método.
 
 > [!NOTE]
 > Embora este exemplo use um modelo de regressão linear, CrossValidate é aplicável a todas as outra tarefas aprendizado de máquina do ML.NET, exceto por detecção de anomalias.
@@ -82,18 +82,18 @@ IEstimator<ITransformer> sdcaEstimator = mlContext.Regression.Trainers.Sdca();
 var cvResults = mlContext.Regression.CrossValidate(transformedData, sdcaEstimator, numberOfFolds: 5);
 ```
 
-[`CrossValidate`](xref:Microsoft.ML.RegressionCatalog.CrossValidate*)realiza as seguintes operações:
+[`CrossValidate`](xref:Microsoft.ML.RegressionCatalog.CrossValidate%2A) executa as seguintes operações:
 
-1. Particiona os dados em um número de partições iguais ao valor especificado no parâmetro `numberOfFolds`. O resultado de cada [`TrainTestData`](xref:Microsoft.ML.DataOperationsCatalog.TrainTestData) partição é um objeto.
+1. Particiona os dados em um número de partições iguais ao valor especificado no parâmetro `numberOfFolds`. O resultado de cada partição é um [`TrainTestData`](xref:Microsoft.ML.DataOperationsCatalog.TrainTestData) objeto.
 1. Um modelo é treinado em cada uma das partições usando o estimador de algoritmo de aprendizado de máquina no conjunto de dados de treinamento.
-1. O desempenho de cada modelo [`Evaluate`](xref:Microsoft.ML.RegressionCatalog.Evaluate*) é avaliado usando o método no conjunto de dados do teste.
+1. O desempenho de cada modelo é avaliado usando o [`Evaluate`](xref:Microsoft.ML.RegressionCatalog.Evaluate%2A) método no conjunto de dados de teste.
 1. O modelo, juntamente com as métricas, é retornado para cada um dos modelos.
 
-O resultado `cvResults` armazenado é [`CrossValidationResult`](xref:Microsoft.ML.TrainCatalogBase.CrossValidationResult%601) uma coleção de objetos. Este objeto inclui o modelo treinado, bem como métricas que são acessíveis e [`Model`](xref:Microsoft.ML.TrainCatalogBase.CrossValidationResult%601.Model) [`Metrics`](xref:Microsoft.ML.TrainCatalogBase.CrossValidationResult%601.Metrics) propriedades, respectivamente. Nesta amostra, `Model` a propriedade [`ITransformer`](xref:Microsoft.ML.ITransformer) é `Metrics` de tipo [`RegressionMetrics`](xref:Microsoft.ML.Data.RegressionMetrics)e a propriedade é do tipo .
+O resultado armazenado em `cvResults` é uma coleção de [`CrossValidationResult`](xref:Microsoft.ML.TrainCatalogBase.CrossValidationResult%601) objetos. Esse objeto inclui o modelo treinado, bem como métricas, que são forma acessíveis às [`Model`](xref:Microsoft.ML.TrainCatalogBase.CrossValidationResult%601.Model) Propriedades e, [`Metrics`](xref:Microsoft.ML.TrainCatalogBase.CrossValidationResult%601.Metrics) respectivamente. Neste exemplo, a `Model` propriedade é do tipo [`ITransformer`](xref:Microsoft.ML.ITransformer) e a `Metrics` propriedade é do tipo [`RegressionMetrics`](xref:Microsoft.ML.Data.RegressionMetrics) .
 
-## <a name="evaluate-the-model"></a>Avalie o modelo
+## <a name="evaluate-the-model"></a>Avaliar o modelo
 
-As métricas para os diferentes modelos treinados podem ser acessadas através da `Metrics` propriedade do objeto individual. [`CrossValidationResult`](xref:Microsoft.ML.TrainCatalogBase.CrossValidationResult%601) Neste caso, a [métrica de R ao quadrado](https://en.wikipedia.org/wiki/Coefficient_of_determination) é acessada e armazenada na variável `rSquared`.
+As métricas para os diferentes modelos treinados podem ser acessadas por meio da `Metrics` Propriedade do [`CrossValidationResult`](xref:Microsoft.ML.TrainCatalogBase.CrossValidationResult%601) objeto individual. Neste caso, a [métrica de R ao quadrado](https://en.wikipedia.org/wiki/Coefficient_of_determination) é acessada e armazenada na variável `rSquared`.
 
 ```csharp
 IEnumerable<double> rSquared =

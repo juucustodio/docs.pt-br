@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: introdução ao roteamento'
 title: Introdução ao roteamento
 ms.date: 03/30/2017
 ms.assetid: bf6ceb38-6622-433b-9ee7-f79bc93497a1
-ms.openlocfilehash: 8ce98aab2ed14401fa7c2cbf43eb92a633fa96b0
-ms.sourcegitcommit: de17a7a0a37042f0d4406f5ae5393531caeb25ba
+ms.openlocfilehash: 86f5b5dcc0bea067ac3dcfc8a87331da42c642aa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76746473"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99779888"
 ---
 # <a name="routing-introduction"></a>Introdução ao roteamento
 
@@ -17,22 +18,22 @@ Este tópico destina-se a novos para o serviço de roteamento e aborda a configu
 
 ## <a name="configuration"></a>Configuração
 
-O serviço de roteamento é implementado como um serviço WCF que expõe um ou mais pontos de extremidade de serviço que recebem mensagens de aplicativos cliente e roteiam as mensagens para um ou mais pontos de extremidade de destino. O serviço fornece um <xref:System.ServiceModel.Routing.RoutingBehavior>, que é aplicado aos pontos de extremidade de serviço expostos pelo serviço. Esse comportamento é usado para configurar vários aspectos de como o serviço opera. Para facilitar a configuração ao usar um arquivo de configuração, os parâmetros são especificados no **RoutingBehavior**. Em cenários baseados em código, esses parâmetros seriam especificados como parte de um objeto <xref:System.ServiceModel.Routing.RoutingConfiguration>, que pode ser passado para um **RoutingBehavior**.
+O serviço de roteamento é implementado como um serviço WCF que expõe um ou mais pontos de extremidade de serviço que recebem mensagens de aplicativos cliente e roteiam as mensagens para um ou mais pontos de extremidade de destino. O serviço fornece um <xref:System.ServiceModel.Routing.RoutingBehavior> , que é aplicado aos pontos de extremidade de serviço expostos pelo serviço. Esse comportamento é usado para configurar vários aspectos de como o serviço opera. Para facilitar a configuração ao usar um arquivo de configuração, os parâmetros são especificados no **RoutingBehavior**. Em cenários baseados em código, esses parâmetros seriam especificados como parte de um <xref:System.ServiceModel.Routing.RoutingConfiguration> objeto, que pode ser passado para um **RoutingBehavior**.
 
-Ao iniciar, esse comportamento adiciona o <xref:System.ServiceModel.Routing.SoapProcessingBehavior>, que é usado para executar o processamento SOAP de mensagens para os pontos de extremidade do cliente. Isso permite que o serviço de roteamento transmita mensagens para pontos de extremidade que exigem uma **MessageVersion** diferente do ponto de extremidade em que a mensagem foi recebida. O **RoutingBehavior** também registra uma extensão de serviço, a <xref:System.ServiceModel.Routing.RoutingExtension>, que fornece um ponto de acessibilidade para modificar a configuração do serviço de roteamento em tempo de execução.
+Ao iniciar, esse comportamento adiciona o <xref:System.ServiceModel.Routing.SoapProcessingBehavior> , que é usado para executar o processamento SOAP de mensagens para os pontos de extremidade do cliente. Isso permite que o serviço de roteamento transmita mensagens para pontos de extremidade que exigem uma **MessageVersion** diferente do ponto de extremidade em que a mensagem foi recebida. O **RoutingBehavior** também registra uma extensão de serviço, <xref:System.ServiceModel.Routing.RoutingExtension> que fornece um ponto de acessibilidade para modificar a configuração do serviço de roteamento em tempo de execução.
 
 A classe **RoutingConfiguration** fornece um meio consistente de configurar e atualizar a configuração do serviço de roteamento.  Ele contém parâmetros que atuam como as configurações para o serviço de roteamento e são usados para configurar o **RoutingBehavior** quando o serviço é iniciado, ou é passado para o **RoutingExtension** para modificar a configuração de roteamento em tempo de execução.
 
-A lógica de roteamento usada para executar o roteamento baseado em conteúdo de mensagens é definida por meio do agrupamento de vários objetos <xref:System.ServiceModel.Dispatcher.MessageFilter> juntos em tabelas de filtro (objetos<xref:System.ServiceModel.Dispatcher.MessageFilterTable%601>). As mensagens de entrada são avaliadas em relação aos filtros de mensagem contidos na tabela de filtro e para cada **MessageFilter** que corresponde à mensagem, encaminhada para um ponto de extremidade de destino. A tabela de filtros que deve ser usada para rotear mensagens é especificada usando o **RoutingBehavior** na configuração ou por meio de código usando o objeto **RoutingConfiguration** .
+A lógica de roteamento usada para executar o roteamento baseado em conteúdo de mensagens é definida por meio do agrupamento de vários <xref:System.ServiceModel.Dispatcher.MessageFilter> objetos juntos em filtrar tabelas ( <xref:System.ServiceModel.Dispatcher.MessageFilterTable%601> objetos). As mensagens de entrada são avaliadas em relação aos filtros de mensagem contidos na tabela de filtro e para cada **MessageFilter** que corresponde à mensagem, encaminhada para um ponto de extremidade de destino. A tabela de filtros que deve ser usada para rotear mensagens é especificada usando o **RoutingBehavior** na configuração ou por meio de código usando o objeto **RoutingConfiguration** .
 
 ### <a name="defining-endpoints"></a>Definindo pontos de extremidade
 
-Embora possa parecer que você deve iniciar sua configuração definindo a lógica de roteamento que você usará, sua primeira etapa deve ser, na verdade, determinar a forma dos pontos de extremidade para os quais você irá rotear mensagens. O serviço de roteamento usa contratos que definem a forma dos canais usados para receber e enviar mensagens e, portanto, a forma do canal de entrada deve corresponder à do canal de saída.  Por exemplo, se você estiver Roteando para pontos de extremidade que usam a forma de canal de solicitação-resposta, deverá usar um contrato compatível nos pontos de extremidade de entrada, como o <xref:System.ServiceModel.Routing.IRequestReplyRouter>.
+Embora possa parecer que você deve iniciar sua configuração definindo a lógica de roteamento que você usará, sua primeira etapa deve ser, na verdade, determinar a forma dos pontos de extremidade para os quais você irá rotear mensagens. O serviço de roteamento usa contratos que definem a forma dos canais usados para receber e enviar mensagens e, portanto, a forma do canal de entrada deve corresponder à do canal de saída.  Por exemplo, se você estiver Roteando para pontos de extremidade que usam a forma de canal de solicitação-resposta, deverá usar um contrato compatível nos pontos de extremidade de entrada, como o <xref:System.ServiceModel.Routing.IRequestReplyRouter> .
 
 Isso significa que se os pontos de extremidade de destino usam contratos com vários padrões de comunicação (como a combinação de operações unidirecional e bidirecional), não é possível criar um ponto de extremidade de serviço único que possa receber e rotear mensagens para todos eles. Você deve determinar quais pontos de extremidade têm formas compatíveis e definir um ou mais pontos de extremidade de serviço que serão usados para receber mensagens a serem roteadas para os pontos de extremidade de destino.
 
 > [!NOTE]
-> Ao trabalhar com contratos que especificam vários padrões de comunicação (como uma combinação de operações unidirecionais e bidirecionais), uma solução alternativa é usar um contrato duplex no serviço de roteamento, como <xref:System.ServiceModel.Routing.IDuplexSessionRouter>. No entanto, isso significa que a associação deve ser capaz de comunicação duplex, o que pode não ser possível para todos os cenários. Em cenários em que isso não é possível, considerar a comunicação em vários pontos de extremidade ou modificar o aplicativo pode ser necessário.
+> Ao trabalhar com contratos que especificam vários padrões de comunicação (como uma combinação de operações unidirecionais e bidirecionais), uma solução alternativa é usar um contrato duplex no serviço de roteamento, como o <xref:System.ServiceModel.Routing.IDuplexSessionRouter> . No entanto, isso significa que a associação deve ser capaz de comunicação duplex, o que pode não ser possível para todos os cenários. Em cenários em que isso não é possível, considerar a comunicação em vários pontos de extremidade ou modificar o aplicativo pode ser necessário.
 
 Para obter mais informações sobre contratos de roteamento, consulte [encaminhar contratos](routing-contracts.md).
 
@@ -101,7 +102,7 @@ serviceHost.Description.Behaviors.Add(
      new RoutingBehavior(rc));
 ```
 
-Este exemplo configura o serviço de roteamento para expor um único ponto de extremidade com um endereço de `http://localhost:8000/routingservice/router`, que é usado para receber mensagens a serem roteadas. Como as mensagens são roteadas para pontos de extremidade de solicitação-resposta, o ponto de extremidade de serviço usa o contrato de <xref:System.ServiceModel.Routing.IRequestReplyRouter>. Essa configuração também define um único ponto de extremidade de cliente de `http://localhost:8000/servicemodelsample/service` para as quais as mensagens são roteadas. A tabela de filtros (não mostrada) denominada "routingTable1" contém a lógica de roteamento usada para rotear mensagens e está associada ao ponto de extremidade de serviço usando o **RoutingBehavior** (para um arquivo de configuração) ou **RoutingConfiguration** (para configuração programática).
+Este exemplo configura o serviço de roteamento para expor um único ponto de extremidade com um endereço de `http://localhost:8000/routingservice/router` , que é usado para receber mensagens a serem roteadas. Como as mensagens são roteadas para pontos de extremidade de solicitação-resposta, o ponto de extremidade de serviço usa o <xref:System.ServiceModel.Routing.IRequestReplyRouter> contrato. Essa configuração também define um único ponto de extremidade de cliente `http://localhost:8000/servicemodelsample/service` para o qual as mensagens são roteadas. A tabela de filtros (não mostrada) denominada "routingTable1" contém a lógica de roteamento usada para rotear mensagens e está associada ao ponto de extremidade de serviço usando o **RoutingBehavior** (para um arquivo de configuração) ou **RoutingConfiguration** (para configuração programática).
 
 ### <a name="routing-logic"></a>Lógica de roteamento
 
@@ -113,7 +114,7 @@ Vários filtros de mensagens são organizados em conjunto em tabelas de filtro, 
 
 Por padrão, todos os filtros de mensagem em uma tabela de filtro são avaliados simultaneamente; no entanto, você pode especificar um <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement.Priority%2A> que faz com que os filtros de mensagem sejam avaliados em uma ordem específica. Todas as entradas com a prioridade mais alta são avaliadas primeiro, e os filtros de mensagens de prioridades inferiores não serão avaliados se uma correspondência for encontrada em um nível de prioridade mais alto. Para obter mais informações sobre as tabelas de filtro, consulte [filtros de mensagem](message-filters.md).
 
-Os exemplos a seguir usam o <xref:System.ServiceModel.Dispatcher.MatchAllMessageFilter>, que é avaliado como `true` para todas as mensagens. Esse **MessageFilter** é adicionado à tabela de filtro "routingTable1", que associa o **MessageFilter** ao ponto de extremidade do cliente chamado "CalculatorService". O **RoutingBehavior** então especifica que essa tabela deve ser usada para rotear mensagens processadas pelo ponto de extremidade de serviço.
+Os exemplos a seguir usam o <xref:System.ServiceModel.Dispatcher.MatchAllMessageFilter> , que é avaliado como `true` para todas as mensagens. Esse **MessageFilter** é adicionado à tabela de filtro "routingTable1", que associa o **MessageFilter** ao ponto de extremidade do cliente chamado "CalculatorService". O **RoutingBehavior** então especifica que essa tabela deve ser usada para rotear mensagens processadas pelo ponto de extremidade de serviço.
 
 ```xml
 <behaviors>
@@ -154,9 +155,9 @@ rc.FilterTable.Add(new MatchAllMessageFilter(), endpointList);
 ```
 
 > [!NOTE]
-> Por padrão, o serviço de roteamento avalia apenas os cabeçalhos da mensagem. Para permitir que os filtros acessem o corpo da mensagem, você deve definir <xref:System.ServiceModel.Routing.RoutingConfiguration.RouteOnHeadersOnly%2A> como `false`.
+> Por padrão, o serviço de roteamento avalia apenas os cabeçalhos da mensagem. Para permitir que os filtros acessem o corpo da mensagem, você deve definir <xref:System.ServiceModel.Routing.RoutingConfiguration.RouteOnHeadersOnly%2A> como `false` .
 
-**Seletiva**
+**Multicast**
 
 Embora muitas configurações de serviço de roteamento usem lógica de filtro exclusivo que roteia mensagens para apenas um ponto de extremidade específico, talvez seja necessário rotear uma determinada mensagem para vários pontos de extremidades de destino. Para multicast de uma mensagem para vários destinos, as seguintes condições devem ser verdadeiras:
 
@@ -164,7 +165,7 @@ Embora muitas configurações de serviço de roteamento usem lógica de filtro e
 
 - Vários filtros devem retornar `true` ao avaliar a mensagem.
 
-Se essas condições forem atendidas, a mensagem será roteada para todos os pontos de extremidade de todos os filtros que são avaliados como `true`. O exemplo a seguir define uma configuração de roteamento que resulta em mensagens sendo roteadas para os dois pontos de extremidade se o endereço do ponto final na mensagem for `http://localhost:8000/routingservice/router/rounding`.
+Se essas condições forem atendidas, a mensagem será roteada para todos os pontos de extremidade de todos os filtros que forem avaliados como `true` . O exemplo a seguir define uma configuração de roteamento que resulta em mensagens sendo roteadas para ambos os pontos de extremidade se o endereço do ponto final na mensagem for `http://localhost:8000/routingservice/router/rounding` .
 
 ```xml
 <!--ROUTING SECTION -->
@@ -194,7 +195,7 @@ rc.FilterTable.Add(new EndpointAddressMessageFilter(new EndpointAddress(
 
 ### <a name="soap-processing"></a>Processamento de SOAP
 
-Para dar suporte ao roteamento de mensagens entre protocolos diferentes, o **RoutingBehavior** , por padrão, adiciona o <xref:System.ServiceModel.Routing.SoapProcessingBehavior> a todos os pontos de extremidade do cliente para os quais as mensagens são roteadas. Esse comportamento cria automaticamente uma nova **MessageVersion** antes de rotear a mensagem para o ponto de extremidade, bem como criar uma **MessageVersion** compatível para qualquer documento de resposta antes de retorná-la para o aplicativo cliente solicitante.
+Para dar suporte ao roteamento de mensagens entre protocolos diferentes, o **RoutingBehavior** , por padrão, adiciona o <xref:System.ServiceModel.Routing.SoapProcessingBehavior> ao (s) ponto de extremidade de cliente para o qual as mensagens são roteadas. Esse comportamento cria automaticamente uma nova **MessageVersion** antes de rotear a mensagem para o ponto de extremidade, bem como criar uma **MessageVersion** compatível para qualquer documento de resposta antes de retorná-la para o aplicativo cliente solicitante.
 
 As etapas tomadas para criar uma nova **MessageVersion** para a mensagem de saída são as seguintes:
 
@@ -206,7 +207,7 @@ As etapas tomadas para criar uma nova **MessageVersion** para a mensagem de saí
 
 - Crie uma nova mensagem com a mesma ação, leitor de corpo e uma nova **MessageVersion**.
 
-- Se <xref:System.ServiceModel.Channels.MessageVersion.Addressing%2A>! = **Addressing. None**, copie os cabeçalhos para, de, FaultTo e RelatesTo para a nova mensagem.
+- Se <xref:System.ServiceModel.Channels.MessageVersion.Addressing%2A> ! = **Addressing. None**, copie os cabeçalhos para, de, FaultTo e RelatesTo para a nova mensagem.
 
 - Copie todas as propriedades de mensagem para a nova mensagem.
 
@@ -222,13 +223,13 @@ As etapas tomadas para criar uma nova **MessageVersion** para a mensagem de saí
 
 - Crie uma nova mensagem de resposta com a mesma ação, leitor de corpo e **MessageVersion** da mensagem de solicitação original.
 
-- Se <xref:System.ServiceModel.Channels.MessageVersion.Addressing%2A>! = **Addressing. None**, copie os cabeçalhos para, de, FaultTo e RelatesTo para a nova mensagem.
+- Se <xref:System.ServiceModel.Channels.MessageVersion.Addressing%2A> ! = **Addressing. None**, copie os cabeçalhos para, de, FaultTo e RelatesTo para a nova mensagem.
 
 - Copie as propriedades da mensagem para a nova mensagem.
 
 - Retornar a nova mensagem de resposta.
 
-Por padrão, o **SoapProcessingBehavior** é automaticamente adicionado aos pontos de extremidade do cliente pelo <xref:System.ServiceModel.Routing.RoutingBehavior> quando o serviço é iniciado; no entanto, você pode controlar se o processamento SOAP é adicionado a todos os pontos de extremidade do cliente usando a propriedade <xref:System.ServiceModel.Routing.RoutingConfiguration.SoapProcessingEnabled%2A>. Você também pode adicionar o comportamento diretamente a um ponto de extremidade específico e habilitar ou desabilitar esse comportamento no nível do ponto de extremidade, se um controle mais granular do processamento de SOAP for necessário.
+Por padrão, o **SoapProcessingBehavior** é automaticamente adicionado aos pontos de extremidade do cliente pelo <xref:System.ServiceModel.Routing.RoutingBehavior> quando o serviço é iniciado; no entanto, você pode controlar se o processamento SOAP é adicionado a todos os pontos de extremidade do cliente usando a <xref:System.ServiceModel.Routing.RoutingConfiguration.SoapProcessingEnabled%2A> propriedade. Você também pode adicionar o comportamento diretamente a um ponto de extremidade específico e habilitar ou desabilitar esse comportamento no nível do ponto de extremidade, se um controle mais granular do processamento de SOAP for necessário.
 
 > [!NOTE]
 > Se o processamento de SOAP estiver desabilitado para um ponto de extremidade que exija uma MessageVersion diferente daquela da mensagem de solicitação original, você deverá fornecer um mecanismo personalizado para executar quaisquer modificações de SOAP necessárias antes de enviar a mensagem para o ponto de extremidade de destino.
@@ -254,9 +255,9 @@ rc.SoapProcessingEnabled = false;
 
 ### <a name="dynamic-configuration"></a>Configuração dinâmica
 
-Quando você adiciona pontos de extremidade de cliente adicionais ou precisa modificar os filtros que são usados para rotear mensagens, você deve ter uma maneira de atualizar a configuração dinamicamente em tempo de execução para impedir a interrupção do serviço para os pontos de extremidade que atualmente recebem mensagens por meio do o serviço de roteamento. Modificar um arquivo de configuração ou o código do aplicativo host nem sempre é suficiente, porque ambos os métodos exigem a reciclagem do aplicativo, o que levaria à perda potencial de todas as mensagens atualmente em trânsito e o potencial de tempo de inatividade enquanto aguardando a reinicialização do serviço.
+Quando você adiciona pontos de extremidade de cliente adicionais ou precisa modificar os filtros que são usados para rotear mensagens, você deve ter uma maneira de atualizar a configuração dinamicamente em tempo de execução para impedir a interrupção do serviço para os pontos de extremidade que estão recebendo mensagens no momento por meio do serviço de roteamento. Modificar um arquivo de configuração ou o código do aplicativo host nem sempre é suficiente, porque o método requer a reciclagem do aplicativo, o que levaria à perda potencial de todas as mensagens atualmente em trânsito e o potencial de tempo de inatividade enquanto aguardava a reinicialização do serviço.
 
-Você só pode modificar o **RoutingConfiguration** de forma programática. Embora seja possível configurar inicialmente o serviço usando um arquivo de configuração, você só pode modificar a configuração em tempo de execução, construindo um novo **RoutingConfiguration** e passando-o como um parâmetro para o método <xref:System.ServiceModel.Routing.RoutingExtension.ApplyConfiguration%2A> exposto pela extensão de serviço <xref:System.ServiceModel.Routing.RoutingExtension>. Todas as mensagens atualmente em trânsito continuam sendo roteadas usando a configuração anterior, enquanto as mensagens recebidas após a chamada para **ApplyConfiguration** usam a nova configuração. O exemplo a seguir demonstra como criar uma instância do serviço de roteamento e, em seguida, modificar a configuração posteriormente.
+Você só pode modificar o **RoutingConfiguration** de forma programática. Embora seja possível configurar inicialmente o serviço usando um arquivo de configuração, você só pode modificar a configuração em tempo de execução, construindo um novo **RoutingConfiguration** e passando-o como um parâmetro para o <xref:System.ServiceModel.Routing.RoutingExtension.ApplyConfiguration%2A> método exposto pela <xref:System.ServiceModel.Routing.RoutingExtension> extensão de serviço. Todas as mensagens atualmente em trânsito continuam sendo roteadas usando a configuração anterior, enquanto as mensagens recebidas após a chamada para **ApplyConfiguration** usam a nova configuração. O exemplo a seguir demonstra como criar uma instância do serviço de roteamento e, em seguida, modificar a configuração posteriormente.
 
 ```csharp
 RoutingConfiguration routingConfig = new RoutingConfiguration();
@@ -285,16 +286,16 @@ routerHost.routerHost.Extensions.Find<RoutingExtension>().ApplyConfiguration(rc2
 > [!NOTE]
 > Todas as sessões abertas usando a configuração anterior continuarão usando a configuração anterior. A nova configuração é usada somente por novas sessões.
 
-## <a name="error-handling"></a>Tratamento de erro
+## <a name="error-handling"></a>Tratamento de erros
 
-Se algum <xref:System.ServiceModel.CommunicationException> for encontrado durante a tentativa de enviar uma mensagem, ocorrerá o tratamento de erros. Essas exceções normalmente indicam que um problema foi encontrado durante a tentativa de comunicação com o ponto de extremidade do cliente definido, como um <xref:System.ServiceModel.EndpointNotFoundException>, <xref:System.ServiceModel.ServerTooBusyException>ou <xref:System.ServiceModel.CommunicationObjectFaultedException>. O código de tratamento de erro também detectará e tentará enviar novamente quando ocorrer uma <xref:System.TimeoutException>, que é outra exceção comum que não é derivada de **CommunicationException**.
+Se algum <xref:System.ServiceModel.CommunicationException> for encontrado durante a tentativa de enviar uma mensagem, ocorrerá o tratamento de erros. Essas exceções normalmente indicam que um problema foi encontrado durante a tentativa de comunicação com o ponto de extremidade do cliente definido, como um <xref:System.ServiceModel.EndpointNotFoundException> , <xref:System.ServiceModel.ServerTooBusyException> ou <xref:System.ServiceModel.CommunicationObjectFaultedException> . O código de tratamento de erro também detectará e tentará repetir o envio quando <xref:System.TimeoutException> ocorrer, que é outra exceção comum que não é derivada de **CommunicationException**.
 
 Quando uma das exceções anteriores ocorre, o serviço de roteamento faz failover para uma lista de pontos de extremidade de backup. Se todos os pontos de extremidade de backup falharem com uma falha de comunicação, ou se um EndPoint retornar uma exceção que indica uma falha no serviço de destino, o serviço de roteamento retornará uma falha ao aplicativo cliente.
 
 > [!NOTE]
-> A funcionalidade de tratamento de erros captura e manipula as exceções que ocorrem ao tentar enviar uma mensagem e ao tentar fechar um canal. O código de tratamento de erros não se destina a detectar ou tratar exceções criadas pelos pontos de extremidade do aplicativo com os quais ele está se comunicando; um <xref:System.ServiceModel.FaultException> gerado por um serviço é exibido no serviço de roteamento como um **FaultMessage** e flui de volta para o cliente.
+> A funcionalidade de tratamento de erros captura e manipula as exceções que ocorrem ao tentar enviar uma mensagem e ao tentar fechar um canal. O código de tratamento de erros não se destina a detectar ou tratar exceções criadas pelos pontos de extremidade do aplicativo com os quais ele está se comunicando; um <xref:System.ServiceModel.FaultException> gerado por um serviço aparece no serviço de roteamento como um **FaultMessage** e é transmitido de volta para o cliente.
 >
-> Se ocorrer um erro quando o serviço de roteamento tentar retransmitir uma mensagem, você poderá obter uma <xref:System.ServiceModel.FaultException> no lado do cliente, em vez de uma <xref:System.ServiceModel.EndpointNotFoundException> que normalmente você obteria na ausência do serviço de roteamento. Um serviço de roteamento pode, portanto, mascarar exceções e não fornecer transparência total, a menos que você examine exceções aninhadas.
+> Se ocorrer um erro quando o serviço de roteamento tentar retransmitir uma mensagem, você poderá obter um <xref:System.ServiceModel.FaultException> no lado do cliente, em vez de um <xref:System.ServiceModel.EndpointNotFoundException> que normalmente obteria na ausência do serviço de roteamento. Um serviço de roteamento pode, portanto, mascarar exceções e não fornecer transparência total, a menos que você examine exceções aninhadas.
 
 ### <a name="tracing-exceptions"></a>Exceções de rastreamento
 
@@ -364,20 +365,20 @@ rc.FilterTable.Add(new MatchAllMessageFilter(), backupList);
 
 A tabela a seguir descreve os padrões que são compatíveis com o uso de listas de pontos de extremidade de backup, juntamente com observações que descrevem os detalhes da manipulação de erros para padrões específicos.
 
-|Padrão|Session|Transação|Contexto de recebimento|Lista de backup com suporte|{1&gt;Observações&lt;1}|
+|Padrão|Sessão|Transação|Contexto de recebimento|Lista de backup com suporte|Observações|
 |-------------|-------------|-----------------|---------------------|---------------------------|-----------|
-|Uma via||||Sim|Tenta reenviar a mensagem em um ponto de extremidade de backup. Se essa mensagem estiver sendo multicast, somente a mensagem no canal com falha será movida para seu destino de backup.|
-|Uma via||✔️||Não|Uma exceção é lançada e a transação é revertida.|
-|Uma via|||✔️|Sim|Tenta reenviar a mensagem em um ponto de extremidade de backup. Depois que a mensagem for recebida com êxito, preencha todos os contextos de recebimento. Se a mensagem não for recebida com êxito por nenhum ponto de extremidade, não conclua o contexto de recebimento.<br /><br /> Quando essa mensagem estiver sendo multicast, o contexto de recebimento só será concluído se a mensagem for recebida com êxito por pelo menos um ponto de extremidade (primário ou backup). Se nenhum dos pontos de extremidade em nenhum dos caminhos de multicast receber a mensagem com êxito, não conclua o contexto de recebimento.|
-|Uma via||✔️|✔️|Sim|Anule a transação anterior, crie uma nova transação e reenvie todas as mensagens. Mensagens que encontraram um erro são transmitidas para um destino de backup.<br /><br /> Após a criação de uma transação na qual todas as transmissões forem bem sucedidos, conclua os contextos de recebimento e confirme a transação.|
-|Uma via|✔️|||Sim|Tenta reenviar a mensagem em um ponto de extremidade de backup. Em um cenário de multicast, somente as mensagens em uma sessão que encontraram um erro ou em uma sessão cujo fechamento de sessão falhou são reenviadas para os destinos de backup.|
-|Uma via|✔️|✔️||Não|Uma exceção é lançada e a transação é revertida.|
-|Uma via|✔️||✔️|Sim|Tenta reenviar a mensagem em um ponto de extremidade de backup. Depois que todos os envios de mensagem forem concluídos sem erros, a sessão indicará que não há mais mensagens e o serviço de roteamento fechará com êxito todos os canais de sessão de saída, todos os contextos de recebimento serão concluídos e o canal de sessão de entrada será fechado.|
-|Uma via|✔️|✔️|✔️|Sim|Anule a transação atual e crie uma nova. Reenvie todas as mensagens anteriores na sessão. Depois que uma transação é criada, na qual todas as mensagens foram enviadas com êxito e a sessão indica que não há mais mensagens, todos os canais de sessão de saída são fechados, os contextos de recebimento são todos concluídos com a transação, o canal de sessão de entrada é fechado e a transação é confirmada.<br /><br /> Quando as sessões estão sendo multicast, as mensagens sem erros são reenviadas para o mesmo destino que antes e as mensagens que encontraram um erro são enviadas para os destinos de backup.|
-|Bidirecional||||Sim|Enviar para um destino de backup.  Depois que um canal retorna uma mensagem de resposta, retorne a resposta para o cliente original.|
-|Bidirecional|✔️|||Sim|Envie todas as mensagens no canal para um destino de backup.  Depois que um canal retorna uma mensagem de resposta, retorne a resposta para o cliente original.|
-|Bidirecional||✔️||Não|Uma exceção é lançada e a transação é revertida.|
-|Bidirecional|✔️|✔️||Não|Uma exceção é lançada e a transação é revertida.|
+|Unidirecional||||Sim|Tenta reenviar a mensagem em um ponto de extremidade de backup. Se essa mensagem estiver sendo multicast, somente a mensagem no canal com falha será movida para seu destino de backup.|
+|Unidirecional||✔️||Não|Uma exceção é lançada e a transação é revertida.|
+|Unidirecional|||✔️|Sim|Tenta reenviar a mensagem em um ponto de extremidade de backup. Depois que a mensagem for recebida com êxito, preencha todos os contextos de recebimento. Se a mensagem não for recebida com êxito por nenhum ponto de extremidade, não conclua o contexto de recebimento.<br /><br /> Quando essa mensagem estiver sendo multicast, o contexto de recebimento só será concluído se a mensagem for recebida com êxito por pelo menos um ponto de extremidade (primário ou backup). Se nenhum dos pontos de extremidade em nenhum dos caminhos de multicast receber a mensagem com êxito, não conclua o contexto de recebimento.|
+|Unidirecional||✔️|✔️|Sim|Anule a transação anterior, crie uma nova transação e reenvie todas as mensagens. Mensagens que encontraram um erro são transmitidas para um destino de backup.<br /><br /> Após a criação de uma transação na qual todas as transmissões forem bem sucedidos, conclua os contextos de recebimento e confirme a transação.|
+|Unidirecional|✔️|||Sim|Tenta reenviar a mensagem em um ponto de extremidade de backup. Em um cenário de multicast, somente as mensagens em uma sessão que encontraram um erro ou em uma sessão cujo fechamento de sessão falhou são reenviadas para os destinos de backup.|
+|Unidirecional|✔️|✔️||Não|Uma exceção é lançada e a transação é revertida.|
+|Unidirecional|✔️||✔️|Sim|Tenta reenviar a mensagem em um ponto de extremidade de backup. Depois que todos os envios de mensagem forem concluídos sem erros, a sessão indicará que não há mais mensagens e o serviço de roteamento fechará com êxito todos os canais de sessão de saída, todos os contextos de recebimento serão concluídos e o canal de sessão de entrada será fechado.|
+|Unidirecional|✔️|✔️|✔️|Sim|Anule a transação atual e crie uma nova. Reenvie todas as mensagens anteriores na sessão. Depois que uma transação tiver sido criada na qual todas as mensagens foram enviadas com êxito e a sessão não indicar mais mensagens, todos os canais de sessão de saída serão fechados, os contextos de recebimento serão todos concluídos com a transação, o canal de sessão de entrada será fechado e a transação será confirmada.<br /><br /> Quando as sessões estão sendo multicast, as mensagens sem erros são reenviadas para o mesmo destino que antes e as mensagens que encontraram um erro são enviadas para os destinos de backup.|
+|Two-Way||||Sim|Enviar para um destino de backup.  Depois que um canal retorna uma mensagem de resposta, retorne a resposta para o cliente original.|
+|Two-Way|✔️|||Sim|Envie todas as mensagens no canal para um destino de backup.  Depois que um canal retorna uma mensagem de resposta, retorne a resposta para o cliente original.|
+|Two-Way||✔️||Não|Uma exceção é lançada e a transação é revertida.|
+|Two-Way|✔️|✔️||Não|Uma exceção é lançada e a transação é revertida.|
 |Duplex||||Não|Não há suporte para comunicação duplex de não sessão no momento.|
 |Duplex|✔️|||Sim|Enviar para um destino de backup.|
 
@@ -392,7 +393,7 @@ using (ServiceHost serviceHost =
                 new ServiceHost(typeof(RoutingService)))
 ```
 
-Para hospedar o serviço de roteamento no IIS ou WAS, você deve criar um arquivo de serviço (. svc) ou usar a ativação baseada em configuração do serviço. Ao usar um arquivo de serviço, você deve especificar o <xref:System.ServiceModel.Routing.RoutingService> usando o parâmetro de serviço. O exemplo a seguir contém um arquivo de serviço de exemplo que pode ser usado para hospedar o serviço de roteamento com o IIS ou o WAS.
+Para hospedar o serviço de roteamento no IIS ou WAS, você deve criar um arquivo de serviço (. svc) ou usar a ativação baseada em configuração do serviço. Ao usar um arquivo de serviço, você deve especificar o <xref:System.ServiceModel.Routing.RoutingService> usando o parâmetro Service. O exemplo a seguir contém um arquivo de serviço de exemplo que pode ser usado para hospedar o serviço de roteamento com o IIS ou o WAS.
 
 ```aspx-csharp
 <%@ ServiceHost Language="C#" Debug="true" Service="System.ServiceModel.Routing.RoutingService,
@@ -411,10 +412,10 @@ A representação com o serviço de roteamento requer o uso da representação A
 
 Para usar a representação ASP.NET com o serviço de roteamento, habilite o modo de compatibilidade ASP.NET no ambiente de Hospedagem de serviço. O serviço de roteamento já foi marcado como permitir o modo de compatibilidade ASP.NET e a representação será habilitada automaticamente. A representação é o único uso com suporte da integração do ASP.NET com o serviço de roteamento.
 
-Para usar a representação de credencial do Windows com o serviço de roteamento, você precisa configurar as credenciais e o serviço. O objeto de credenciais do cliente (<xref:System.ServiceModel.Security.WindowsClientCredential>, acessável da <xref:System.ServiceModel.ChannelFactory>) define uma propriedade <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A> que deve ser definida para permitir a representação. Por fim, no serviço, você precisa configurar o comportamento de <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior> para definir `ImpersonateCallerForAllOperations` como `true`. O serviço de roteamento usa esse sinalizador para decidir se os clientes devem ser criados para encaminhar mensagens com representação habilitada.
+Para usar a representação de credencial do Windows com o serviço de roteamento, você precisa configurar as credenciais e o serviço. O objeto de credenciais do cliente ( <xref:System.ServiceModel.Security.WindowsClientCredential> , acessado a partir do <xref:System.ServiceModel.ChannelFactory> ) define uma <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A> propriedade que deve ser definida para permitir a representação. Por fim, no serviço, você precisa configurar o <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior> comportamento para definir `ImpersonateCallerForAllOperations` como `true` . O serviço de roteamento usa esse sinalizador para decidir se os clientes devem ser criados para encaminhar mensagens com representação habilitada.
 
 ## <a name="see-also"></a>Consulte também
 
 - [Filtros de mensagem](message-filters.md)
-- [Roteando contratos](routing-contracts.md)
+- [Contratos de roteamento](routing-contracts.md)
 - [Escolhendo um filtro](choosing-a-filter.md)

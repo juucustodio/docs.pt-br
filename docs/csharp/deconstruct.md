@@ -4,12 +4,12 @@ description: Saiba como desconstruir tuplas e outros tipos.
 ms.technology: csharp-fundamentals
 ms.date: 11/23/2017
 ms.assetid: 0b0c4b0f-4a47-4f66-9b8e-f5c63b195960
-ms.openlocfilehash: 8defd75a7cdff3490d2b0a6097ec2a898576e113
-ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
+ms.openlocfilehash: 5aaf7157b87de4f67f6e4beba18794a6dd13b6d0
+ms.sourcegitcommit: 65af0f0ad316858882845391d60ef7e303b756e8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86174160"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99585345"
 ---
 # <a name="deconstructing-tuples-and-other-types"></a>Desconstruindo tuplas e outros tipos
 
@@ -76,16 +76,12 @@ Em seguida, você pode desconstruir uma instância da classe `Person` denominada
 O exemplo a seguir sobrecarrega o método `Deconstruct` para retornar várias combinações de propriedades de um objeto `Person`. As sobrecargas individuais retornam:
 
 - Um nome e um sobrenome.
-- Um nome, um sobrenome e um segundo nome.
+- Um nome, meio e sobrenome.
 - Um nome, um sobrenome, um nome de cidade e um nome de estado.
 
 [!code-csharp[Class-deconstruct](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-class2.cs)]
 
-Já que você pode sobrecarregar o método `Deconstruct` para refletir os grupos de dados que geralmente são extraídos de um objeto, você deve ter cuidado ao definir métodos `Deconstruct` com assinaturas que são diferentes e não ambíguas. Vários métodos `Deconstruct` que têm o mesmo número de parâmetros `out` ou com o mesmo número e tipo de parâmetros `out` em uma ordem diferente podem causar confusão.
-
-O método `Deconstruct` sobrecarregado no exemplo a seguir ilustra uma possível fonte de confusão. A primeira sobrecarga retorna o primeiro nome, o segundo nome, o sobrenome e idade de um objeto `Person`, nessa ordem. A segunda sobrecarga retorna informações de nome apenas junto com a renda anual, mas o nome, o segundo nome e o sobrenome estão em uma ordem diferente. Isso torna fácil confundir a ordem dos argumentos ao desconstruir uma instância de `Person`.
-
-[!code-csharp[Deconstruct-ambiguity](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-ambiguous.cs)]
+Vários `Deconstruct` métodos com o mesmo número de parâmetros são ambíguos. Você deve ter cuidado para definir `Deconstruct` métodos com diferentes números de parâmetros ou "aridade". `Deconstruct` métodos com o mesmo número de parâmetros não podem ser diferenciados durante a resolução de sobrecarga.
 
 ## <a name="deconstructing-a-user-defined-type-with-discards"></a>Desconstruir um tipo definido pelo usuário com descartes
 
@@ -103,7 +99,7 @@ O exemplo a seguir define dois métodos de extensão `Deconstruct` para a classe
 
 [!code-csharp[Extension-deconstruct](../../samples/snippets/csharp/programming-guide/deconstructing-tuples/deconstruct-extension1.cs)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Descartes](discards.md)
 - [Tipos de tupla](language-reference/builtin-types/value-tuples.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: emissão de rastreamentos de User-Code'
 title: Emitindo traços de código de usuário
 ms.date: 03/30/2017
 ms.assetid: fa54186a-8ffa-4332-b0e7-63867126fd49
-ms.openlocfilehash: e8b2031165a83e24ba15a2fcf847a170f47e696a
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 0abc8a4b39979942fd291ffd9cbb96047274dab0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84589286"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759504"
 ---
 # <a name="emitting-user-code-traces"></a>Emitindo traços de código de usuário
 
@@ -25,7 +26,7 @@ TraceSource ts = new TraceSource("myUserTraceSource");
 
 ## <a name="creating-activities"></a>Criando atividades
 
-As atividades são unidade lógica de processamento. Você pode criar uma atividade para cada unidade de processamento principal na qual você deseja que os rastreamentos sejam agrupados juntos. Por exemplo, você pode criar uma atividade para cada solicitação para o serviço. Para fazer isso, execute as etapas a seguir.
+As atividades são unidade lógica de processamento. Você pode criar uma atividade para cada unidade de processamento principal na qual você deseja que os rastreamentos sejam agrupados juntos. Por exemplo, você pode criar uma atividade para cada solicitação para o serviço. Para isso, execute as etapas a seguir.
 
 1. Salve a ID da atividade no escopo.
 
@@ -109,7 +110,7 @@ ts.TraceEvent(TraceEventType.Warning, 0, "Throwing exception " + "exceptionMessa
 
 ## <a name="viewing-user-traces-in-the-service-trace-viewer-tool"></a>Exibindo rastreamentos de usuário na ferramenta do Visualizador de rastreamento de serviço
 
-Esta seção contém capturas de tela de rastreamentos gerados pela execução da amostra de [rastreamento de extensão](../../samples/extending-tracing.md) , quando exibidas usando a ferramenta do Visualizador de [rastreamento de serviço (SvcTraceViewer. exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md).
+Esta seção contém capturas de tela de rastreamentos gerados pela execução da amostra de [rastreamento de extensão](../../samples/extending-tracing.md) , quando exibidas usando a ferramenta do Visualizador de [rastreamento de serviço (SvcTraceViewer.exe)](../../service-trace-viewer-tool-svctraceviewer-exe.md).
 
 No diagrama a seguir, a atividade "Adicionar solicitação" criada anteriormente está selecionada no painel esquerdo. Ela é listada com três outras atividades de operação matemática (dividir, subtrair, multiplicar) que constituem o programa cliente do aplicativo. O código do usuário definiu uma nova atividade para cada operação a fim de isolar possíveis ocorrências de erro em solicitações diferentes.
 

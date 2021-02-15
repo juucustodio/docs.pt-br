@@ -1,16 +1,18 @@
 ---
+description: 'Saiba mais sobre: atividades de coleta no WF'
 title: Atividades de coleção em WF
 ms.date: 03/30/2017
 ms.assetid: 2680c3e2-9902-4968-b98d-cab776103dbe
-ms.openlocfilehash: 5935b569bc46a6f38a7158049336f1e57fd8b0e5
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: f7b37640afa185f753f036b58367a7877f34b127
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79143142"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99720196"
 ---
 # <a name="collection-activities-in-wf"></a>Atividades de coleção em WF
-As atividades de coleção são usadas para trabalhar com objetos de coleção em um fluxo de trabalho. [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] tem sistema forneceu atividades adicionando e removendo itens de uma coleção, testando a existência de um item em uma coleção, e desmarcando uma coleção. `ExistsInCollection`e `RemoveFromCollection` ter <xref:System.Activities.OutArgument%601> um <xref:System.Boolean>tipo, o que indica o resultado.  
+
+As atividades de coleção são usadas para trabalhar com objetos de coleção em um fluxo de trabalho. [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] tem sistema forneceu atividades adicionando e removendo itens de uma coleção, testando a existência de um item em uma coleção, e desmarcando uma coleção. `ExistsInCollection` e `RemoveFromCollection` ter um <xref:System.Activities.OutArgument%601> do tipo <xref:System.Boolean> , que indica o resultado.  
   
 > [!IMPORTANT]
 > Se uma atividade de coleção é executada antes de definir o objeto subjacente da coleção, <xref:System.InvalidOperationException> é lançado e falhas de atividade.  
@@ -25,6 +27,7 @@ As atividades de coleção são usadas para trabalhar com objetos de coleção e
 |<xref:System.Activities.Statements.RemoveFromCollection%601>|Remove um item de uma coleção especificada e retorna `true` se o item for removido com êxito.|  
   
 ## <a name="using-collection-activities"></a>Usando atividades de coleção  
+
  O exemplo de código a seguir demonstra como interagir com uma coleção declarada como uma variável de fluxo de trabalho. A coleção é usada <xref:System.Collections.Generic.List%601> de objetos de <xref:System.String> nomeados `fruitList`.  
   
 ```csharp  
@@ -425,6 +428,6 @@ Activity wf = new Sequence
 </Sequence>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criando fluxos de trabalho, atividades e expressões de design usando o código obrigatório](authoring-workflows-activities-and-expressions-using-imperative-code.md)

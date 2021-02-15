@@ -1,16 +1,19 @@
 ---
-title: 'Ponto de extremidade: Fluxo de transações'
+description: 'Saiba mais sobre: ponto de extremidade: transações fluidas'
+title: 'Ponto de extremidade: fluxo de transações'
 ms.date: 03/30/2017
 ms.assetid: 66e83f05-349b-4e4f-ac4a-58345e503a30
-ms.openlocfilehash: 2e7630c2b09e67591c44b71cc5b1ce99350adf28
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: ddb72d68567255b55995c3dc050f5aa30edf4c65
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61916234"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99655364"
 ---
-# <a name="endpoint-transactions-flowed"></a>Ponto de extremidade: Fluxo de transações
-Nome do contador: Fluxo de transações.  
+# <a name="endpoint-transactions-flowed"></a>Ponto de extremidade: fluxo de transações
+
+Nome do contador: transações fluidas.  
   
 ## <a name="description"></a>Descrição  
- Número de transações de fluir para operações nesse ponto de extremidade. Esse contador é incrementado sempre que uma ID de transação está presente em uma mensagem enviada para o ponto de extremidade.
+
+ Número de transações fluidas para operações neste ponto de extremidade. Esse contador é incrementado sempre que uma ID de transação está presente em uma mensagem enviada ao ponto de extremidade.

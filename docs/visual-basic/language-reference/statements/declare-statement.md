@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instrução Declare'
 title: Instrução Declare
 ms.date: 07/20/2015
 f1_keywords:
@@ -27,18 +28,18 @@ helpviewer_keywords:
 - Visual Basic code, Sub procedures
 - Function procedures [Visual Basic], declaring
 ms.assetid: d3f21fb0-b804-4c99-97ed-583b23894cf1
-ms.openlocfilehash: 021805508a8a053ccc8fab6f1013109bece4b6f2
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 8ad8169515bbb2889c0adbed4df4e30a0215d47d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404765"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99673837"
 ---
 # <a name="declare-statement"></a>Instrução Declare
 
 Declara uma referência a um procedimento implementado em um arquivo externo.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```vb
 [ <attributelist> ] [ accessmodifier ] [ Shadows ] [ Overloads ] _
@@ -60,9 +61,9 @@ Declare [ charsetmodifier ] [ Function ] name Lib "libname" _
 |`charsetmodifier`|Opcional. Especifica o conjunto de caracteres e as informações de pesquisa de arquivo. Pode ser um dos seguintes:<br /><br /> -   [ANSI](../modifiers/ansi.md) (padrão)<br />-   [Unicode](../modifiers/unicode.md)<br />-   [Automático](../modifiers/auto.md)|
 |`Sub`|Opcional, mas `Sub` ou `Function` deve aparecer. Indica que o procedimento externo não retorna um valor.|
 |`Function`|Opcional, mas `Sub` ou `Function` deve aparecer. Indica que o procedimento externo retorna um valor.|
-|`name`|Obrigatórios. Nome desta referência externa. Para obter mais informações, consulte [nomes de elementos declarados](../../programming-guide/language-features/declared-elements/declared-element-names.md).|
-|`Lib`|Obrigatórios. Apresenta uma `Lib` cláusula, que identifica o arquivo externo (DLL ou recurso de código) que contém um procedimento externo.|
-|`libname`|Obrigatórios. Nome do arquivo que contém o procedimento declarado.|
+|`name`|Obrigatório. Nome desta referência externa. Para obter mais informações, consulte [nomes de elementos declarados](../../programming-guide/language-features/declared-elements/declared-element-names.md).|
+|`Lib`|Obrigatório. Apresenta uma `Lib` cláusula, que identifica o arquivo externo (DLL ou recurso de código) que contém um procedimento externo.|
+|`libname`|Obrigatório. Nome do arquivo que contém o procedimento declarado.|
 |`Alias`|Opcional. Indica que o procedimento que está sendo declarado não pode ser identificado em seu arquivo pelo nome especificado em `name` . Você especifica sua identificação no `aliasname` .|
 |`aliasname`|Necessário se você usar a `Alias` palavra-chave. Cadeia de caracteres que identifica o procedimento de uma das duas maneiras:<br /><br /> O nome do ponto de entrada do procedimento dentro de seu arquivo, entre aspas ( `""` )<br /><br /> -ou-<br /><br /> Um sinal numérico ( `#` ) seguido por um inteiro especificando o número ordinal do ponto de entrada do procedimento dentro de seu arquivo|
 |`parameterlist`|Obrigatório se o procedimento usa parâmetros. Consulte a [lista de parâmetros](parameter-list.md).|
@@ -120,7 +121,7 @@ Referências externas padrão para acesso [público](../modifiers/public.md) . V
 
 - **Conjuntos de caracteres.** Você pode especificar em `charsetmodifier` como Visual Basic deve realizar marshaling de cadeias de caracteres ao chamar o procedimento externo. O `Ansi` modificador direciona Visual Basic para empacotar todas as cadeias de caracteres para valores ANSI e o `Unicode` modificador o direciona para empacotar todas as cadeias de caracteres para valores Unicode. O `Auto` modificador direciona Visual Basic para empacotar cadeias de caracteres de acordo com as regras de .NET Framework com base na referência externa `name` ou, `aliasname` se especificado. O valor padrão é `Ansi`.
 
-  `charsetmodifier`também especifica como Visual Basic deve procurar o procedimento externo dentro de seu arquivo externo. `Ansi`e `Unicode` os dois Visual Basic diretos para pesquisá-lo sem modificar seu nome durante a pesquisa. `Auto`direciona Visual Basic para determinar o conjunto de caracteres base da plataforma de tempo de execução e possivelmente modificar o nome do procedimento externo, da seguinte maneira:
+  `charsetmodifier` também especifica como Visual Basic deve procurar o procedimento externo dentro de seu arquivo externo. `Ansi` e `Unicode` os dois Visual Basic diretos para pesquisá-lo sem modificar seu nome durante a pesquisa. `Auto` direciona Visual Basic para determinar o conjunto de caracteres base da plataforma de tempo de execução e possivelmente modificar o nome do procedimento externo, da seguinte maneira:
 
   - Em uma plataforma ANSI, como o Windows 95, o Windows 98 ou o Windows Millennium Edition, primeiro procure o procedimento externo sem nenhuma modificação de nome. Se isso falhar, acrescente "A" ao final do nome do procedimento externo e procure novamente.
 
@@ -129,7 +130,7 @@ Referências externas padrão para acesso [público](../modifiers/public.md) . V
 - **Mecanismo.** Visual Basic usa o mecanismo de *invocação da plataforma* .NET Framework (PInvoke) para resolver e acessar procedimentos externos. A `Declare` instrução e a <xref:System.Runtime.InteropServices.DllImportAttribute> classe usam esse mecanismo automaticamente e você não precisa de nenhum conhecimento do PInvoke. Para obter mais informações, consulte [Walkthrough: chamando APIs do Windows](../../programming-guide/com-interop/walkthrough-calling-windows-apis.md).
 
 > [!IMPORTANT]
-> Se o procedimento externo for executado fora do Common Language Runtime (CLR), ele será um *código não gerenciado*. Quando você chama esse procedimento, por exemplo, uma função de API do Windows ou um método COM, você pode expor seu aplicativo a riscos de segurança. Para obter mais informações, consulte [proteger as diretrizes de codificação para código não gerenciado](https://docs.microsoft.com/previous-versions/dotnet/framework/security/secure-coding-guidelines-for-unmanaged-code).
+> Se o procedimento externo for executado fora do Common Language Runtime (CLR), ele será um *código não gerenciado*. Quando você chama esse procedimento, por exemplo, uma função de API do Windows ou um método COM, você pode expor seu aplicativo a riscos de segurança. Para obter mais informações, consulte [proteger as diretrizes de codificação para código não gerenciado](/previous-versions/dotnet/framework/security/secure-coding-guidelines-for-unmanaged-code).
 
 ## <a name="example"></a>Exemplo
 
@@ -145,7 +146,7 @@ O <xref:System.Runtime.InteropServices.DllImportAttribute> fornece uma maneira a
 
 [!code-vb[VbVbalrStatements#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#1)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>
 - [Instrução Imports (tipo e namespace .NET)](imports-statement-net-namespace-and-type.md)

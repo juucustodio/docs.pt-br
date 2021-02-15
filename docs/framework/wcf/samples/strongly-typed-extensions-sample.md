@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: exemplo de extensões com rigidez de tipos'
 title: Exemplo de extensões com rigidez de tipos
 ms.date: 03/30/2017
 ms.assetid: 02220f11-1a83-441c-9e5a-85f9a9367572
-ms.openlocfilehash: e8c3bf202a1fb76d383f0a3fe15084d19a1d51fb
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: dd0a12b07db3f805f041742c8957cd46bb418bad
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600874"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99668751"
 ---
 # <a name="strongly-typed-extensions-sample"></a>Exemplo de extensões com rigidez de tipos
 
@@ -18,6 +19,7 @@ O exemplo usa a <xref:System.ServiceModel.Syndication.SyndicationFeed> classe pa
  Por exemplo, este exemplo mostra como implementar um elemento de extensão definido na RFC de extensões de Threading Atom propostas. Isso é apenas para fins de demonstração e este exemplo não se destina a ser uma implementação completa da especificação proposta.  
   
 ## <a name="sample-xml"></a>XML de exemplo  
+
  O exemplo de XML a seguir mostra uma entrada Atom 1,0 com um `<in-reply-to>` elemento de extensão adicional.  
   
 ```xml  
@@ -44,6 +46,7 @@ O exemplo usa a <xref:System.ServiceModel.Syndication.SyndicationFeed> classe pa
  O `<in-reply-to>` elemento especifica três atributos necessários ( `ref` `type` e `href` ), enquanto também permite a presença de atributos de extensão adicionais e elementos de extensão.  
   
 ## <a name="modeling-the-in-reply-to-element"></a>Modelando o elemento in-reply-to  
+
  Neste exemplo, o `<in-reply-to>` elemento é modelado como CLR que implementa <xref:System.Xml.Serialization.IXmlSerializable> , que permite seu uso com o <xref:System.Runtime.Serialization.DataContractSerializer> . Ele também implementa alguns métodos e propriedades para acessar os dados do elemento, conforme mostrado no código de exemplo a seguir.  
   
 ```csharp  
@@ -186,6 +189,7 @@ public void WriteXml(System.Xml.XmlWriter writer)
 ```  
   
 ## <a name="threadedfeed-and-threadeditem"></a>ThreadedFeed e ThreadedItem  
+
  No exemplo, `SyndicationItems` com `InReplyTo` extensões são modeladas pela `ThreadedItem` classe. Da mesma forma, a `ThreadedFeed` classe é uma `SyndicationFeed` cujos itens são todas as instâncias de `ThreadedItem` .  
   
  A `ThreadedFeed` classe é herdada de `SyndicationFeed` e substitui `OnCreateItem` para retornar um `ThreadedItem` . Ele também implementa um método para acessar a `Items` coleção como `ThreadedItems` , conforme mostrado no código a seguir.  

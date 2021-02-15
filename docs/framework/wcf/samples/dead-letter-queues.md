@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: filas de mensagens mortas'
 title: Filas de mensagens de inatividade
 ms.date: 03/30/2017
 ms.assetid: ff664f33-ad02-422c-9041-bab6d993f9cc
-ms.openlocfilehash: 8ea2ea530db8745c3802f9f39793ffd77ddd0008
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 5cec218f993fd99d1419aab884addfba686337c4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84575284"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99632146"
 ---
 # <a name="dead-letter-queues"></a>Filas de mensagens de inatividade
+
 Este exemplo demonstra como tratar e processar mensagens que falharam na entrega. Ele se baseia no exemplo de [associação MSMQ transacionado](transacted-msmq-binding.md) . Este exemplo usa a `netMsmqBinding` associação. O serviço é um aplicativo de console auto-hospedado para permitir que você observe o serviço que recebe mensagens enfileiradas.
 
 > [!NOTE]
@@ -24,7 +26,7 @@ Este exemplo demonstra como tratar e processar mensagens que falharam na entrega
 
  A fila de mensagens mortas na `NetMsmqBinding` associação é expressa nas seguintes propriedades:
 
-- <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue%2A>a propriedade para expressar o tipo de fila de mensagens mortas exigido pelo cliente. Essa enumeração tem os seguintes valores:
+- <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue%2A> a propriedade para expressar o tipo de fila de mensagens mortas exigido pelo cliente. Essa enumeração tem os seguintes valores:
 
 - `None`: Nenhuma fila de mensagens mortas é exigida pelo cliente.
 
@@ -32,7 +34,7 @@ Este exemplo demonstra como tratar e processar mensagens que falharam na entrega
 
 - `Custom`: Uma fila de mensagens mortas personalizada especificada usando a <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> propriedade é usada para armazenar mensagens mortas. Esse recurso só está disponível no Windows Vista. Isso é usado quando o aplicativo deve usar sua própria fila de mensagens mortas em vez de compartilhá-lo com outros aplicativos em execução no mesmo computador.
 
-- <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A>Propriedade para expressar a fila específica a ser usada como uma fila de mensagens mortas. Isso está disponível apenas no Windows Vista.
+- <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> Propriedade para expressar a fila específica a ser usada como uma fila de mensagens mortas. Isso está disponível apenas no Windows Vista.
 
  Neste exemplo, o cliente envia um lote de mensagens para o serviço de dentro do escopo de uma transação e especifica um valor arbitrariamente baixo para "vida útil" para essas mensagens (cerca de 2 segundos). O cliente também especifica uma fila de mensagens mortas personalizada a ser usada para enfileirar as mensagens que expiraram.
 
@@ -318,7 +320,7 @@ Processing Purchase Order: 97897eff-f926-4057-a32b-af8fb11b9bf9
 
     2. Expanda a guia **recursos** .
 
-    3. Clique com o botão direito do mouse em **filas de mensagens particulares**e selecione **nova** **fila privada**.
+    3. Clique com o botão direito do mouse em **filas de mensagens particulares** e selecione **nova** **fila privada**.
 
     4. Marque a caixa **transacional** .
 
@@ -350,6 +352,7 @@ Processing Purchase Order: 97897eff-f926-4057-a32b-af8fb11b9bf9
     > A configuração `security mode` como `None` é equivalente à `MsmqAuthenticationMode` configuração `MsmqProtectionLevel` e `Message` à segurança para `None` .
 
 ## <a name="comments"></a>Comentários
+
  Por padrão, com o `netMsmqBinding` transporte de associação, a segurança é habilitada. Duas propriedades `MsmqAuthenticationMode` e `MsmqProtectionLevel` , juntas, determinam o tipo de segurança de transporte. Por padrão, o modo de autenticação é definido como `Windows` e o nível de proteção é definido como `Sign` . Para que o MSMQ forneça o recurso de autenticação e assinatura, ele deve fazer parte de um domínio. Se você executar esse exemplo em um computador que não faz parte de um domínio, receberá o seguinte erro: "certificado interno do serviço de enfileiramento de mensagens não existe".
 
 > [!IMPORTANT]

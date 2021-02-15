@@ -4,12 +4,12 @@ description: Saiba mais sobre tipos de estrutura com suporte a árvores de expre
 ms.date: 06/20/2016
 ms.technology: csharp-advanced-concepts
 ms.assetid: e9c85021-0d36-48af-91b7-aaaa66f22654
-ms.openlocfilehash: 8483c46dde3ea97138e55ab84a5924a3d2578730
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 548f5ba6a2de00d9556621791515555b6f6a325c
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "79146080"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91180433"
 ---
 # <a name="framework-types-supporting-expression-trees"></a>Tipos de Framework com suporte a árvores de expressão
 
@@ -58,6 +58,7 @@ var addition = Expression.Add(one, two);
 Você pode ver neste exemplo simples que há muitos tipos envolvidos na criação e no trabalho com árvores de expressão. Essa complexidade é necessária para fornecer os recursos do vocabulário avançado fornecido pela linguagem C#.
 
 ## <a name="navigating-the-apis"></a>Navegando nas APIs
+
 Há tipos de Nó de expressão que mapeiam para quase todos os elementos de sintaxe da linguagem C#. Cada tipo tem métodos específicos para esse tipo de elemento de linguagem. É muita coisa para guardar na memória ao mesmo tempo. Em vez de tentar memorizar tudo, aqui estão as técnicas que eu uso para trabalhar com Árvores de expressão:
 
 1. Observar os membros da enumeração `ExpressionType` para determinar possíveis nós que devem ser examinados. Isso é realmente útil se você deseja percorrer e entender uma árvore de expressão.

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugStepper2'
 title: Interface ICorDebugStepper2
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7a191c2a-95ea-4d47-83b0-44de2b632d63
 topic_type:
 - apiref
-ms.openlocfilehash: ef7aa164c43751fa39e49d0ab6486a9f29e23c20
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: 31e9216535da239573a7a4ecde8cb2e670ad5418
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83379471"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99717544"
 ---
 # <a name="icordebugstepper2-interface"></a>Interface ICorDebugStepper2
+
 Fornece suporte para a depuração apenas do meu código (JMC).  
   
 ## <a name="methods"></a>Métodos  
@@ -36,6 +38,7 @@ Fornece suporte para a depuração apenas do meu código (JMC).
 > Esta interface não dá suporte para chamada remota, seja entre computadores ou processos cruzados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -44,6 +47,6 @@ Fornece suporte para a depuração apenas do meu código (JMC).
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

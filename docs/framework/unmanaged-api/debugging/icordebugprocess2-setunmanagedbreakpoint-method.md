@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugProcess2:: SetUnmanagedBreakpoint'
 title: Método ICorDebugProcess2::SetUnmanagedBreakpoint
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 93829d15-d942-4e2d-b7a4-dfc9d7fb96be
 topic_type:
 - apiref
-ms.openlocfilehash: 6b9396d03892f29e3698af90856d0c0023dc628a
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 7989f0fc9908941513b7d099fde81c79cef82c5b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213459"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99746536"
 ---
 # <a name="icordebugprocess2setunmanagedbreakpoint-method"></a>Método ICorDebugProcess2::SetUnmanagedBreakpoint
+
 Define um ponto de interrupção não gerenciado no deslocamento da imagem nativa especificada.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -38,6 +40,7 @@ HRESULT SetUnmanagedBreakpoint (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `address`  
  no Um `CORDB_ADDRESS` objeto que especifica o deslocamento da imagem nativa.  
   
@@ -51,9 +54,11 @@ HRESULT SetUnmanagedBreakpoint (
  fora Um ponteiro para o número de bytes retornados na `buffer` matriz.  
   
 ## <a name="remarks"></a>Comentários  
+
  Se o deslocamento da imagem nativa estiver dentro do Common Language Runtime (CLR), o ponto de interrupção será ignorado. Isso permite que o CLR Evite distribuir um ponto de interrupção fora de banda, quando o ponto de interrupção é definido pelo depurador.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

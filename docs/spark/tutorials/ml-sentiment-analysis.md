@@ -3,20 +3,20 @@ title: Tutorial de análise de sentimentos com .NET para Apache Spark e ML.NET
 description: Neste tutorial, você aprenderá a usar o ML.NET com .NET para Apache Spark para análise de sentimentos.
 author: mamccrea
 ms.author: mamccrea
-ms.date: 06/25/2020
+ms.date: 10/09/2020
 ms.topic: tutorial
-ms.openlocfilehash: 69deb30419b98536fa309547d94f59bb266e413c
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 1c2c966a4ff50a9d2f6951e20d909c5c20c75bfb
+ms.sourcegitcommit: 34968a61e9bac0f6be23ed6ffb837f52d2390c85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85617568"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94688235"
 ---
 # <a name="tutorial-sentiment-analysis-with-net-for-apache-spark-and-mlnet"></a>Tutorial: análise de sentimentos com .NET para Apache Spark e ML.NET
 
 Este tutorial ensina como fazer uma análise de sentimentos das revisões online usando o ML.NET e o .NET para Apache Spark. O [ml.net](http://dot.net/ml) é uma estrutura de aprendizado de máquina livre, de plataforma cruzada e gratuita. Você pode usar o ML.NET com .NET para Apache Spark para dimensionar o treinamento e a previsão de algoritmos de aprendizado de máquina.
 
-Neste tutorial, você aprenderá como:
+Neste tutorial, você aprenderá a:
 
 > [!div class="checklist"]
 >
@@ -24,8 +24,6 @@ Neste tutorial, você aprenderá como:
 > * Crie um .NET para Apache Spark aplicativo de console.
 > * Escreva e implemente uma função definida pelo usuário.
 > * Execute um .NET para Apache Spark aplicativo de console.
-
-[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -200,7 +198,7 @@ dotnet publish
 Em seguida, navegue até a pasta de publicação do aplicativo de console e execute o comando a seguir `spark-submit` . Lembre-se de atualizar o comando com o caminho real do arquivo JAR do Microsoft Spark.
 
 ```dotnetcli
-%SPARK_HOME%\bin\spark-submit --class org.apache.spark.deploy.dotnet.DotnetRunner --master local microsoft-spark-2.4.x-0.10.0.jar dotnet MLSparkModelML.ConsoleApp.dll
+%SPARK_HOME%\bin\spark-submit --class org.apache.spark.deploy.dotnet.DotnetRunner --master local microsoft-spark-2-4_2.11-1.0.0.jar dotnet MLSparkModelML.ConsoleApp.dll
 ```
 
 ## <a name="get-the-code"></a>Obter o código

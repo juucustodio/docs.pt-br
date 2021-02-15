@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: cenários de rastreamento de ponta a ponta'
 title: Cenários de rastreamento ponta a ponta
 ms.date: 03/30/2017
 ms.assetid: f83b7d53-6061-4362-a9a3-ee1daf6542be
-ms.openlocfilehash: d881a8396e21d31b2303d1bb270bed52823c8d49
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: dc551a8b2f1649d9a1ce800943dd404be1472dbf
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84589247"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99759439"
 ---
 # <a name="end-to-end-tracing-scenarios"></a>Cenários de rastreamento ponta a ponta
+
 Esta seção contém tópicos que descrevem diferentes cenários para usar o rastreamento.  
   
  O rastreamento de atividade é implementado para cenários de resposta/resposta, OneWay e duplex usando o seguinte  
@@ -41,4 +43,4 @@ Esta seção contém tópicos que descrevem diferentes cenários para usar o ras
 ## <a name="see-also"></a>Consulte também
 
 - [Utilizando o rastreamento para solucionar problemas em seu aplicativo](using-tracing-to-troubleshoot-your-application.md)
-- [Rastreamento de ponta a ponta](end-to-end-tracing.md)
+- [Rastreamento ponta a ponta](end-to-end-tracing.md)

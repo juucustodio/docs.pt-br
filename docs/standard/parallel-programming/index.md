@@ -2,28 +2,27 @@
 title: Parallel Programming in .NET (Programação paralela no .NET)
 description: Saiba mais sobre a programação paralela no .NET. Use um tempo de execução .NET, tipos de biblioteca de classes e ferramentas de diagnóstico para simplificar o desenvolvimento do .NET.
 ms.date: 09/12/2018
-ms.technology: dotnet-standard
 helpviewer_keywords:
 - parallel programming
 ms.assetid: 4d83c690-ad2d-489e-a2e0-b85b898a672d
-ms.openlocfilehash: 02087cf58720388c64d8aba5424db0b54828219a
-ms.sourcegitcommit: 7137e12f54c4e83a94ae43ec320f8cf59c1772ea
+ms.openlocfilehash: 4d141a6a8fd7b7bf1aad943f8b911c8b39267223
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84661959"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94820352"
 ---
 # <a name="parallel-programming-in-net"></a>Parallel Programming in .NET (Programação paralela no .NET)
 
 Muitos computadores pessoais e estações de trabalho têm vários núcleos de CPU, o que permite a execução simultânea de vários threads. Para tirar proveito do hardware, é possível paralelizar seu código para distribuir o trabalho entre vários processadores.
 
-No passado, a paralelização exigia a manipulação em baixo nível de threads e de bloqueios. O Visual Studio e o .NET Framework aprimoram o suporte à programação paralela ao fornecer um runtime, tipos de biblioteca de classes e ferramentas de diagnóstico. Esses recursos, que foram introduzidos com o .NET Framework 4, simplificam o desenvolvimento paralelo. É possível escrever código paralelo eficiente, refinado e dimensionável em uma linguagem natural sem precisar trabalhar diretamente com threads ou o pool de threads.
+No passado, a paralelização exigia a manipulação em baixo nível de threads e de bloqueios. O Visual Studio e o .NET aprimoram o suporte à programação paralela fornecendo um tempo de execução, tipos de biblioteca de classes e ferramentas de diagnóstico. Esses recursos, que foram introduzidos no .NET Framework 4, simplificam o desenvolvimento paralelo. É possível escrever código paralelo eficiente, refinado e dimensionável em uma linguagem natural sem precisar trabalhar diretamente com threads ou o pool de threads.
 
-A ilustração a seguir oferece uma visão geral de alto nível da arquitetura de programação paralela do .NET Framework:
+A ilustração a seguir fornece uma visão geral de alto nível da arquitetura de programação paralela no .NET.
 
 ![Arquitetura de programação paralela .NET](./media/tpl-architecture.png)
 
-## <a name="related-topics"></a>Tópicos relacionados
+## <a name="related-topics"></a>Tópicos Relacionados
 
 |Tecnologia|Descrição|
 |----------------|-----------------|

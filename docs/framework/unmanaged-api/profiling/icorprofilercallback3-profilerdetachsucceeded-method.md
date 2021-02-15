@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICorProfilerCallback3: método rofilerDetachSucceeded de:P'
 title: Método ICorProfilerCallback3::ProfilerDetachSucceeded
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 05164966-16ce-4cc9-a530-43a640c00711
 topic_type:
 - apiref
-ms.openlocfilehash: 93406dddf7babd8cf61032666737b993c2f721f4
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: bc80b5bd5301bb5b0278534cfba6ac23e5968620
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84499591"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788768"
 ---
 # <a name="icorprofilercallback3profilerdetachsucceeded-method"></a>Método ICorProfilerCallback3::ProfilerDetachSucceeded
+
 Notifica o criador de perfil de que o Common Language Runtime (CLR) está prestes a descarregar a DLL do criador de perfil.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -32,9 +34,11 @@ HRESULT ProfilerDetachSucceeded();
 ```  
   
 ## <a name="return-value"></a>Valor retornado  
+
  O valor de retorno desse retorno de chamada é ignorado.  
   
 ## <a name="remarks"></a>Comentários  
+
  O `ProfilerDetachSucceeded` retorno de chamada é emitido depois que todos os threads saíram do código do criador de perfil. Quando esse método é chamado, o criador de perfil deve executar todas as tarefas de último minuto que não são apropriadas para seu destruidor, como notificar sua interface do usuário ou componente de log. No entanto, o criador de perfil não deve chamar funções em interfaces que são fornecidas pelo CLR durante esse retorno de chamada (como [ICorProfilerInfo](icorprofilerinfo-interface.md) ou `IMetaData*` interfaces).  
   
  O CLR cria uma entrada no log de eventos de aplicativo do Windows para indicar que a operação de desanexação foi bem-sucedida.  
@@ -42,6 +46,7 @@ HRESULT ProfilerDetachSucceeded();
  Depois que o criador de perfil retorna desse retorno de chamada, o CLR libera o objeto Profiler e descarrega a DLL do criador de perfil. Portanto, o criador de perfil não deve executar nenhuma ação que faria com que a execução ocorresse dentro da DLL do criador de perfil depois de retornar desse retorno de chamada. Por exemplo, ele não deve criar threads ou registrar retornos de chamada do temporizador.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -50,7 +55,7 @@ HRESULT ProfilerDetachSucceeded();
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interfaces de metadados](../metadata/metadata-interfaces.md)
 - [Interface ICorProfilerInfo3](icorprofilerinfo3-interface.md)

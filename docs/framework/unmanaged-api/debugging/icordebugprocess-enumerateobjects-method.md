@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugProcess:: EnumerateObjects'
 title: Método ICorDebugProcess::EnumerateObjects
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 5cf8c5b0-6caa-4f5d-8afe-957573c5ee43
 topic_type:
 - apiref
-ms.openlocfilehash: b57e633d756893ef743d10b0529a5c62f1f934ea
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: ecec0f485c677881bb9984205021b80e3351bfe0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73128850"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99717908"
 ---
 # <a name="icordebugprocessenumerateobjects-method"></a>Método ICorDebugProcess::EnumerateObjects
+
 Esse método não foi implementado.  
   
 ## <a name="syntax"></a>Sintaxe  

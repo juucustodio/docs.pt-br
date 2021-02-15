@@ -1,18 +1,20 @@
 ---
+description: 'Saiba mais sobre: compilação condicional no Visual Basic'
 title: Compilação condicional
 ms.date: 07/20/2015
 helpviewer_keywords:
 - conditional compilation [Visual Basic], about conditional compilation
 - compilation [Visual Basic], conditional
 ms.assetid: 9c35e55e-7eee-44fb-a586-dad1f1884848
-ms.openlocfilehash: c3eb1eb57b3d76e762ed53edb3b168ad96abec39
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e9cb8a5af4dfbf2ffadef8edd8f6583614188391
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84403259"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100476131"
 ---
 # <a name="conditional-compilation-in-visual-basic"></a>Compilação condicional no Visual Basic
+
 Na *compilação condicional*, blocos específicos de código em um programa são compilados seletivamente enquanto outros são ignorados.  
   
  Por exemplo, você pode querer escrever instruções de depuração que comparam a velocidade de diferentes abordagens para a mesma tarefa de programação ou pode desejar localizar um aplicativo para vários idiomas. As instruções de compilação condicional são projetadas para serem executadas durante o tempo de compilação, não em tempo de execução.  
@@ -27,6 +29,7 @@ Na *compilação condicional*, blocos específicos de código em um programa sã
 > O preenchimento automático não funcionará ao editar o código e usar diretivas de compilação condicionais se o código não fizer parte do Branch atual.  
   
 ## <a name="declaring-conditional-compilation-constants"></a>Declarando constantes de compilação condicional  
+
  Você pode definir constantes de compilação condicional de uma das três maneiras:  
   
 - No **Designer de projeto**  
@@ -41,7 +44,7 @@ Na *compilação condicional*, blocos específicos de código em um programa sã
 |---|---|  
 |**Designer de Projeto**|Público para todos os arquivos no projeto|  
 |Linha de comando|Público para todos os arquivos passados para o compilador de linha de comando|  
-|`#Const`instrução no código|Privado para o arquivo no qual ele está declarado|  
+|`#Const` instrução no código|Privado para o arquivo no qual ele está declarado|  
   
 |Para definir constantes no designer de projeto|  
 |---|  
@@ -57,11 +60,12 @@ Na *compilação condicional*, blocos específicos de código em um programa sã
   
 ## <a name="related-topics"></a>Tópicos relacionados  
   
-|Title|Descrição|  
+|Título|Descrição|  
 |---|---|  
 |[Estrutura do programa e convenções de código](program-structure-and-code-conventions.md)|Fornece sugestões para tornar seu código fácil de ler e manter.|  
   
 ## <a name="reference"></a>Referência  
+
  [#Const diretiva](../../language-reference/directives/const-directive.md)  
   
  [#If... Diretivas then... #Else](../../language-reference/directives/if-then-else-directives.md)  

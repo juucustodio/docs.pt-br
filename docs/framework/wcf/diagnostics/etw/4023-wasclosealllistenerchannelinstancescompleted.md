@@ -1,28 +1,32 @@
 ---
+description: 'Saiba mais sobre: 4023-WasCloseAllListenerChannelInstancesCompleted'
 title: 4023 - WasCloseAllListenerChannelInstancesCompleted
 ms.date: 03/30/2017
 ms.assetid: 95dd5810-78a5-4183-98ef-77267dd64aac
-ms.openlocfilehash: c4b7516668c8d71a21f34a2aeeab1eb651f1cd66
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 77289a82f5b2ac950f357ee7f9f9f8b4e87385c0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61943189"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99656625"
 ---
 # <a name="4023---wasclosealllistenerchannelinstancescompleted"></a>4023 - WasCloseAllListenerChannelInstancesCompleted
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
 |ID|4023|  
-|Palavras-chave|ActivationServices|  
-|Nível|Informações|  
+|Palavras-chave|Ativaçãoservices|  
+|Level|Informações|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/analítico|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando o fechamento de todas as instâncias de canal de ouvinte é concluído.  
+
+ Esse evento é emitido quando o fechamento de todas as instâncias de canal do ouvinte é concluído.  
   
 ## <a name="message"></a>Mensagem  
- Foi fechar todas as instâncias de canal de ouvinte concluídas.  
+
+ Estava fechando todas as instâncias de canal do ouvinte concluídas.  
   
 ## <a name="details"></a>Detalhes

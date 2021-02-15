@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: <add> de <issuerChannelBehaviors>'
 title: <add> de <issuerChannelBehaviors>
 ms.date: 03/30/2017
 ms.assetid: 50710506-e28f-45dd-ab7e-bff6f44173db
-ms.openlocfilehash: cf7ac2691ad1c641352a8047373ced538b19e983
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: ccd8ba015b7a6837c74ce2c051a794d36ce8ceaa
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "70398326"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750293"
 ---
 # <a name="add-of-issuerchannelbehaviors"></a>\<add> de \<issuerChannelBehaviors>
 
@@ -26,7 +27,7 @@ Adiciona um comportamento de ponto de extremidade a ser usado ao se comunicar co
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<issuerChannelBehaviors>**](issuerchannelbehaviors-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <add issuerAddress="string"
@@ -56,9 +57,9 @@ Nenhum.
 
 ## <a name="remarks"></a>Comentários
 
-`issuerAddress`contém o URI do serviço de token de segurança com o qual o cliente deseja se comunicar. `behaviorConfiguration`aponta para um comportamento de ponto de extremidade que o aplicativo usa nos canais criados por Windows Communication Foundation (WCF) para obter os tokens emitidos dos serviços de token de segurança.
+`issuerAddress` contém o URI do serviço de token de segurança com o qual o cliente deseja se comunicar. `behaviorConfiguration` aponta para um comportamento de ponto de extremidade que o aplicativo usa nos canais criados por Windows Communication Foundation (WCF) para obter os tokens emitidos dos serviços de token de segurança.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.IssuedTokenClientElement.IssuerChannelBehaviors%2A>
 - <xref:System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElement>
@@ -69,7 +70,7 @@ Nenhum.
 - [Federação e tokens emitidos](../../../wcf/feature-details/federation-and-issued-tokens.md)
 - [Protegendo serviços e clientes](../../../wcf/feature-details/securing-services-and-clients.md)
 - [Protegendo clientes](../../../wcf/securing-clients.md)
-- [Como criar um cliente federado](../../../wcf/feature-details/how-to-create-a-federated-client.md)
-- [Como configurar um emissor local](../../../wcf/feature-details/how-to-configure-a-local-issuer.md)
+- [Como: criar um cliente federado](../../../wcf/feature-details/how-to-create-a-federated-client.md)
+- [Como: configurar um emissor local](../../../wcf/feature-details/how-to-configure-a-local-issuer.md)
 - [Federação e tokens emitidos](../../../wcf/feature-details/federation-and-issued-tokens.md)
 - [\<issuerChannelBehaviors>](issuerchannelbehaviors-element.md)

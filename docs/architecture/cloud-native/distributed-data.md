@@ -2,13 +2,13 @@
 title: Dados distribuídos
 description: Contraste o armazenamento de dados em aplicativos monolíticos e nativos de nuvem.
 author: robvet
-ms.date: 05/13/2020
-ms.openlocfilehash: 28513f8691c06cf58ed14d57bf7830bb35d94852
-ms.sourcegitcommit: ee5b798427f81237a3c23d1fd81fff7fdc21e8d3
+ms.date: 01/19/2021
+ms.openlocfilehash: c83ac5dc973ff4c7a4626746472a74cfc6bf54bb
+ms.sourcegitcommit: f2ab02d9a780819ca2e5310bbcf5cfe5b7993041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84144390"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99505863"
 ---
 # <a name="distributed-data"></a>Dados distribuídos
 
@@ -22,7 +22,7 @@ A Figura 5-1 contrasta as diferenças.
 
 Os desenvolvedores experientes reconhecerão facilmente a arquitetura no lado esquerdo da Figura 5-1. Nesse *aplicativo monolítico*, os componentes do serviço de negócios se posicionam juntos em uma camada de serviços compartilhados, compartilhando dados de um único banco de dado relacional.
 
-De várias maneiras, um banco de dados individual mantém o gerenciamento de dados simples. Consultar dados em várias tabelas é simples. Alterações na atualização de dados juntas ou todas elas são revertidas. [As transações ACID](https://docs.microsoft.com/windows/desktop/cossdk/acid-properties) garantem uma consistência forte e imediata.
+De várias maneiras, um banco de dados individual mantém o gerenciamento de dados simples. Consultar dados em várias tabelas é simples. Alterações na atualização de dados juntas ou todas elas são revertidas. [As transações ACID](/windows/desktop/cossdk/acid-properties) garantem uma consistência forte e imediata.
 
 Design para a nuvem nativa, adotamos uma abordagem diferente. No lado direito da Figura 5-1, observe como a funcionalidade de negócios é segregada em microserviços pequenos e independentes. Cada microserviço encapsula um recurso comercial específico e seus próprios dados. O banco de dados monolítico é decomposto em um modelo de dado distribuído com muitos bancos de dados menores, cada um alinhando com um microserviço. Quando a fumaça é limpa, surgemos um design que expõe um *banco de dados por microserviço*.
 
@@ -61,14 +61,14 @@ Embora os microserviço sejam independentes e se concentrem em recursos funciona
 
 **Figura 5-3**. Consultando em microserviços
 
-Na figura anterior, vemos um microserviço de cesta de compras que adiciona um item à cesta de compras de um usuário. Embora o armazenamento de dados para este microserviço contenha dados de item de linha e cesta, ele não mantém os dados de produtos ou preços. Em vez disso, esses itens de dados pertencem aos microserviços de catálogo e de preços. Isso apresenta um problema. Como o microserviço da cesta de compras pode adicionar um produto à cesta de compras do usuário quando ele não tem dados de produto nem de preço em seu banco de dado?
+Na figura anterior, vemos um microserviço de cesta de compras que adiciona um item à cesta de compras de um usuário. Embora o armazenamento de dados para este microserviço contenha dados de item de linha e cesta, ele não mantém os dados de produtos ou preços. Em vez disso, esses itens de dados pertencem aos microserviços de catálogo e de preços. Esse aspecto apresenta um problema. Como o microserviço da cesta de compras pode adicionar um produto à cesta de compras do usuário quando ele não tem dados de produto nem de preço em seu banco de dado?
 
 Uma opção discutida no capítulo 4 é uma [chamada http direta](service-to-service-communication.md#queries) da cesta de compras para os microserviços de catálogo e preço. No entanto, no capítulo 4, dissemos que *chamadas http síncronas agrupam* os microserviços, reduzindo sua autonomia e diminuindo seus benefícios arquitetônicos.
 
 Também poderíamos implementar um padrão de solicitação-resposta com filas de entrada e saída separadas para cada serviço. No entanto, esse padrão é complicado e requer a inserção para correlacionar mensagens de solicitação e resposta.
 Embora ele desassocie as chamadas de microserviço de back-end, o serviço de chamada ainda deve esperar de forma síncrona a chamada seja concluída. Congestionamento de rede, falhas transitórias ou um microserviço sobrecarregado e pode resultar em operações de execução longa e até mesmo com falha.
 
-Em vez disso, um padrão amplamente aceito para remover dependências entre serviços é o [padrão de exibição materializado](https://docs.microsoft.com/azure/architecture/patterns/materialized-view), mostrado na Figura 5-4.
+Em vez disso, um padrão amplamente aceito para remover dependências entre serviços é o [padrão de exibição materializado](/azure/architecture/patterns/materialized-view), mostrado na Figura 5-4.
 
 ![Padrão de exibição materializada](./media/materialized-view-pattern.png)
 
@@ -92,7 +92,7 @@ Na figura anterior, cinco microserviços independentes participam de uma transa�
 
 Em vez disso, você deve construir essa transação distribuída *programaticamente*.
 
-Um padrão popular para adicionar suporte transacional distribuído é o padrão saga. Ele é implementado agrupando transações locais em conjunto de forma programática e invocando sequencialmente cada uma. Se qualquer uma das transações locais falhar, o saga anulará a operação e invocará um conjunto de [Transações de compensação](https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction). As transações de compensação desfazem as alterações feitas pelas transações locais anteriores e restauram a consistência de dados. A Figura 5-6 mostra uma transação com falha com o padrão saga.
+Um padrão popular para adicionar suporte transacional distribuído é o padrão saga. Ele é implementado agrupando transações locais em conjunto de forma programática e invocando sequencialmente cada uma. Se qualquer uma das transações locais falhar, o saga anulará a operação e invocará um conjunto de [Transações de compensação](/azure/architecture/patterns/compensating-transaction). As transações de compensação desfazem as alterações feitas pelas transações locais anteriores e restauram a consistência de dados. A Figura 5-6 mostra uma transação com falha com o padrão saga.
 
 ![Reverter no padrão saga](./media/saga-rollback-operation.png)
 
@@ -108,7 +108,7 @@ Grandes aplicativos nativos de nuvem geralmente dão suporte a requisitos de dad
 
 ### <a name="cqrs"></a>CQRS
 
-O [CQRS](https://docs.microsoft.com/azure/architecture/patterns/cqrs), é um padrão de arquitetura que pode ajudar a maximizar o desempenho, a escalabilidade e a segurança. O padrão separa as operações que lêem dados dessas operações que gravam dados.
+O [CQRS](/azure/architecture/patterns/cqrs), é um padrão de arquitetura que pode ajudar a maximizar o desempenho, a escalabilidade e a segurança. O padrão separa as operações que lêem dados dessas operações que gravam dados.
 
 Para cenários normais, o mesmo modelo de entidade e objeto de repositório de dados são *usados para operações* de leitura e gravação.
 
@@ -124,11 +124,11 @@ Na figura anterior, são implementados os modelos de comando e consulta separado
 
 Essa separação permite que leituras e gravações sejam dimensionadas de forma independente. As operações de leitura usam um esquema otimizado para consultas, enquanto as gravações usam um esquema otimizado para atualizações. As consultas de leitura vão contra dados desnormalizados, enquanto a lógica de negócios complexa pode ser aplicada ao modelo de gravação. Além de isso, você pode impor uma segurança mais rígida em operações de gravação do que aquelas que expõem leituras.
 
-A implementação do CQRS pode melhorar o desempenho do aplicativo para serviços nativos de nuvem. No entanto, isso resulta em um design mais complexo. Aplique esse princípio com cuidado e estrategicamente a essas seções de seu aplicativo nativo de nuvem que se beneficiarão dela. Para saber mais sobre o CQRS, confira os [microserviços do Microsoft book .net: arquitetura para aplicativos .net em contêineres](https://docs.microsoft.com/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/apply-simplified-microservice-cqrs-ddd-patterns).
+A implementação do CQRS pode melhorar o desempenho do aplicativo para serviços nativos de nuvem. No entanto, isso resulta em um design mais complexo. Aplique esse princípio com cuidado e estrategicamente a essas seções de seu aplicativo nativo de nuvem que se beneficiarão dela. Para saber mais sobre o CQRS, confira os [microserviços do Microsoft book .net: arquitetura para aplicativos .net em contêineres](../microservices/microservice-ddd-cqrs-patterns/apply-simplified-microservice-cqrs-ddd-patterns.md).
 
 ### <a name="event-sourcing"></a>Fornecimento de eventos
 
-Outra abordagem para otimizar cenários de dados de alto volume envolve o [fornecimento de eventos](https://docs.microsoft.com/azure/architecture/patterns/event-sourcing).
+Outra abordagem para otimizar cenários de dados de alto volume envolve o [fornecimento de eventos](/azure/architecture/patterns/event-sourcing).
 
 Normalmente, um sistema armazena o estado atual de uma entidade de dados. Se um usuário alterar seu número de telefone, por exemplo, o registro do cliente será atualizado com o novo número. Sempre sabemos o estado atual de uma entidade de dados, mas cada atualização substitui o estado anterior.
 

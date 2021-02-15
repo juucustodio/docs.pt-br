@@ -3,18 +3,18 @@ title: Migrar um aplicativo Web ASP.NET para uma VM do Azure
 description: Saiba como migrar um aplicativo Web ASP.NET do local para uma Máquina Virtual do Azure.
 ms.topic: how-to
 ms.date: 06/20/2020
-ms.openlocfilehash: 5ef340d020b72bebe46fe598fe68e7d02d0c0363
-ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
+ms.openlocfilehash: 0bf591ce0bd02537414527c8f3ba22bd41cf51d6
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86174238"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189207"
 ---
 # <a name="migrate-an-aspnet-web-application-to-an-azure-virtual-machine"></a>Migrar um aplicativo Web ASP.NET para uma Máquina Virtual do Azure
 
 Este documento fornece uma visão geral de como migrar um aplicativo Web ASP.NET do local para uma Máquina Virtual do Azure.
 
-## <a name="quickstart"></a>Início Rápido
+## <a name="quickstart"></a>Guia de Início Rápido
 
 Saiba como criar uma máquina virtual e publicar o aplicativo nela: [Publicar em uma VM do Azure](https://tutorials.visualstudio.com/aspnet-vm/intro)
 
@@ -26,7 +26,7 @@ Esses tutoriais demonstram as etapas para criar (ou migrar) uma máquina virtual
   - [Criar uma nova máquina virtual para Aplicativos ASP.NET](https://go.microsoft.com/fwlink/?linkid=863237)
   - [Migrar uma máquina virtual VMWare local existente](/azure/migrate/tutorial-migrate-vmware)
   - [Migrar uma máquina virtual do Hyper-V local existente](/azure/migrate/tutorial-migrate-hyper-v)
-- [Publicar seu aplicativo usando o Visual Studio](https://go.microsoft.com/fwlink/?linkid=863240)
+- [Publicar seu aplicativo usando o Visual Studio](/azure/virtual-machines/windows/publish-web-app-from-visual-studio)
 - [Criar uma rede virtual segura para suas VMs](/azure/virtual-network/virtual-network-get-started-vnet-subnet)
 - [Criar um pipeline CI/CD para seu aplicativo](/vsts/build-release/apps/cd/deploy-webdeploy-iis-deploygroups)
 - [Mover para um conjunto de dimensionamento da VM para ter alta disponibilidade e escalabilidade](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-deploy-app)
@@ -60,6 +60,7 @@ As Redes Virtuais do Azure permitem:
 Para começar, confira a [documentação da Rede Virtual](/azure/virtual-network/)
 
 ### <a name="active-directory"></a>Active Directory
+
 Muitos aplicativos usam o Active Directory para a autenticação e o gerenciamento das identidades.
 
 - O Azure AD Connect permite integrar seus diretórios locais no Azure Active Directory. Para começar, confira [Integrar seus diretórios locais no Azure Active Directory](/azure/active-directory/connect/active-directory-aadconnect).
@@ -75,11 +76,13 @@ Se seu aplicativo estiver usando um banco de dados local, o aplicativo não cons
 ### <a name="high-availability-and-scalability"></a>Alta disponibilidade e escalabilidade
 
 #### <a name="virtual-machine-scale-sets"></a>Conjuntos de Dimensionamento de Máquinas Virtuais
+
 Se você quiser verificar se seu aplicativo tem alta disponibilidade e pode ser dimensionado, migre sua imagem da VM para um conjunto de dimensionamento da máquina virtual para melhorar a disponibilidade e a escalabilidade do aplicativo. Os conjuntos de dimensionamento de VM fornecem a capacidade de usar uma VM existente que você já configurou ou configurou um pipeline de compilação para criar uma imagem com seu aplicativo.
 
 Para começar, confira [Implantar seu aplicativo nos conjuntos de dimensionamento da máquina virtual](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-deploy-app).
 
 #### <a name="centralized-logging"></a>Log Centralizado
+
 Ao executar seu aplicativo em várias instâncias, considere armazenar os logs em um local centralizado, como o [Armazenamento do Azure](/azure/storage/).
 
 ## <a name="next-steps"></a>Próximas etapas

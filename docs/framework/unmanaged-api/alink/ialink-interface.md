@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IALink'
 title: Interface IALink
 ms.date: 03/30/2017
 f1_keywords:
@@ -6,17 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - IALink interface
 ms.assetid: 50abd02d-6488-4815-999b-4fb89af4d568
-ms.openlocfilehash: 73b6bb9eac3f706df5cb1fd63b2f67c9791c8ed2
-ms.sourcegitcommit: 9a39f2a06f110c9c7ca54ba216900d038aa14ef3
+ms.openlocfilehash: 0ee6cfe72047c69759df234d1b38ca1776f43c46
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74441824"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99718233"
 ---
 # <a name="ialink-interface"></a>Interface IALink
+
 Ajuda na construção de assemblies de .NET Framework. Entre outras coisas, a interface contém métodos que auxiliam na gravação de manifestos de assembly para assemblies de vários módulos, assinatura de assemblies com nomes fortes e criação de módulos netmodule.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Método AddFile](addfile-method.md)  
   
  [Método AddImport](addimport-method.md)  
@@ -77,4 +80,4 @@ Ajuda na construção de assemblies de .NET Framework. Entre outras coisas, a in
 
 - [API do ALink](index.md)
 - [Interface IALink2](ialink2-interface.md)
-- [Al.exe (Assembly Linker)](../../tools/al-exe-assembly-linker.md)
+- [Al.exe (vinculador de assembly)](../../tools/al-exe-assembly-linker.md)

@@ -6,16 +6,16 @@ ms.author: daroth
 no-loc:
 - Blazor
 ms.date: 10/11/2019
-ms.openlocfilehash: 639755dd78892df1b70ea5245a9584e575fbf691
-ms.sourcegitcommit: 0100be20fcf23f61dab672deced70059ed71bb2e
+ms.openlocfilehash: dbb0a94b0401d58139c024fd8ca3e00353a19efa
+ms.sourcegitcommit: 4b79862c5b41fbd86cf38f926f6a49516059f6f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88267874"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97678037"
 ---
 # <a name="modules-handlers-and-middleware"></a>Módulos, manipuladores e middleware
 
-Um aplicativo ASP.NET Core é criado com base em uma série de *middleware*. O middleware é manipuladores que são organizados em um pipeline para lidar com solicitações e respostas. Em um aplicativo Web Forms, manipuladores e módulos HTTP resolvem problemas semelhantes. Em ASP.NET Core, módulos, manipuladores, *global.asax.cs*e o ciclo de vida do aplicativo são substituídos por middleware. Neste capítulo, você aprenderá o que é o middleware no contexto de um Blazor aplicativo.
+Um aplicativo ASP.NET Core é criado com base em uma série de *middleware*. O middleware é manipuladores que são organizados em um pipeline para lidar com solicitações e respostas. Em um aplicativo Web Forms, manipuladores e módulos HTTP resolvem problemas semelhantes. Em ASP.NET Core, módulos, manipuladores, *global.asax.cs* e o ciclo de vida do aplicativo são substituídos por middleware. Neste capítulo, você aprenderá sobre o middleware no contexto de um Blazor aplicativo.
 
 ## <a name="overview"></a>Visão geral
 

@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-keyfile
 title: -keyfile
 ms.date: 03/10/2018
 helpviewer_keywords:
@@ -6,14 +7,15 @@ helpviewer_keywords:
 - keyfile compiler option [Visual Basic]
 - -keyfile compiler option [Visual Basic]
 ms.assetid: ffa82a4b-517a-4c6c-9889-5bae7b534bb8
-ms.openlocfilehash: 3f476f6b6db1a788002a938eb5ae4bbbed7a5dae
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 6d19f136d5961e8a933380164a3a77055e1da329
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84408569"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100466933"
 ---
 # <a name="-keyfile"></a>-keyfile
+
 Especifica um arquivo que contém uma chave ou um par de chaves para fornecer um nome forte ao assembly.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -23,11 +25,13 @@ Especifica um arquivo que contém uma chave ou um par de chaves para fornecer um
 ```  
   
 ## <a name="arguments"></a>Argumentos  
+
  `file`  
- Obrigatórios. Arquivo que contém a chave. Se o nome do arquivo contiver um espaço, coloque o nome entre aspas ("").  
+ Obrigatório. Arquivo que contém a chave. Se o nome do arquivo contiver um espaço, coloque o nome entre aspas ("").  
   
 ## <a name="remarks"></a>Comentários  
- O compilador insere a chave pública no manifesto do assembly e, em seguida, assina o assembly final com a chave privada. Para gerar um arquivo de chave, digite `sn -k file` na linha de comando. Para obter mais informações, consulte [sn. exe (Strong Name Tool)](../../../framework/tools/sn-exe-strong-name-tool.md)).  
+
+ O compilador insere a chave pública no manifesto do assembly e, em seguida, assina o assembly final com a chave privada. Para gerar um arquivo de chave, digite `sn -k file` na linha de comando. Para obter mais informações, consulte [Sn.exe (ferramenta de nome forte)](../../../framework/tools/sn-exe-strong-name-tool.md)).  
   
  Se você compilar with `-target:module` , o nome do arquivo de chave será mantido no módulo e incorporado ao assembly criado quando você compilar um assembly com o [módulo-](addmodule.md)Add.  
   
@@ -39,7 +43,7 @@ Especifica um arquivo que contém uma chave ou um par de chaves para fornecer um
   
  Observe que um arquivo de chave pode conter somente a chave pública.  
   
- Consulte [criando e usando assemblies de nome forte](../../../standard/assembly/create-use-strong-named.md) para obter mais informações sobre como assinar um assembly.  
+ Consulte [criando e usando assemblies de Strong-Named](../../../standard/assembly/create-use-strong-named.md) para obter mais informações sobre como assinar um assembly.  
   
 > [!NOTE]
 > A `-keyfile` opção não está disponível no ambiente de desenvolvimento do Visual Studio; ela está disponível somente durante a compilação na linha de comando.
@@ -52,7 +56,7 @@ O código a seguir compila o arquivo `Input.vb` de origem e especifica um arquiv
 vbc -keyfile:myfile.sn input.vb
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Assemblies no .NET](../../../standard/assembly/index.md)
 - [Compilador de linha de comando do Visual Basic](index.md)

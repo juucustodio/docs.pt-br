@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebug:: Terminate'
 title: Método ICorDebug::Terminate
 ms.date: 03/30/2017
 api_name:
@@ -15,18 +16,19 @@ helpviewer_keywords:
 ms.assetid: fffe5616-0896-4426-ab5e-21869b514883
 topic_type:
 - apiref
-ms.openlocfilehash: 44bb98f54debb129f951cc388fea81ca0f17b20c
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: c2de27a47bfd4c364a09180c75109679234f3cae
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82895317"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754284"
 ---
 # <a name="icordebugterminate-method"></a>Método ICorDebug::Terminate
+
 Encerra o `ICorDebug` objeto.  
   
 > [!NOTE]
-> `Terminate`Não deve ser chamado até que um retorno de chamada [ICorDebugManagedCallback:: ExitProcess](icordebugmanagedcallback-exitprocess-method.md) tenha sido recebido para todos os processos sendo depurados.  
+> `Terminate` Não deve ser chamado até que um retorno de chamada [ICorDebugManagedCallback:: ExitProcess](icordebugmanagedcallback-exitprocess-method.md) tenha sido recebido para todos os processos sendo depurados.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,9 +37,11 @@ HRESULT Terminate ();
 ```  
   
 ## <a name="remarks"></a>Comentários  
- `Terminate`deve ser chamado quando o `ICorDebug` objeto não for mais necessário.  
+
+ `Terminate` deve ser chamado quando o `ICorDebug` objeto não for mais necessário.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

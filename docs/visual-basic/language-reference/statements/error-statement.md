@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: instrução de erro'
 title: Instrução Error
 ms.date: 07/20/2015
 f1_keywords:
@@ -10,27 +11,30 @@ helpviewer_keywords:
 - run-time errors [Visual Basic], codes
 - errors [Visual Basic], simulating
 ms.assetid: 85cd5c59-5224-4f02-aaf5-fcfefab17a29
-ms.openlocfilehash: 35ba1f19654d1d23ac1ec73564bc36b0af4f6777
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 6c152e9e4fb4fa3a937042761c7d776b337f4fef
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84404739"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99769137"
 ---
 # <a name="error-statement"></a>Instrução Error
+
 Simula a ocorrência de um erro.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```vb  
 Error errornumber  
 ```  
   
 ## <a name="parts"></a>Partes  
+
  `errornumber`  
- Obrigatórios. Pode ser qualquer número de erro válido.  
+ Obrigatório. Pode ser qualquer número de erro válido.  
   
 ## <a name="remarks"></a>Comentários  
+
  A `Error` instrução tem suporte para compatibilidade com versões anteriores. No novo código, especialmente ao criar objetos, use o `Err` método do objeto `Raise` para gerar erros em tempo de execução.  
   
  Se `errornumber` for definido, a `Error` instrução chamará o manipulador de erro depois que as propriedades do `Err` objeto forem atribuídas aos seguintes valores padrão:  
@@ -50,6 +54,7 @@ Error errornumber
 > Alguns aplicativos host Visual Basic não podem criar objetos. Consulte a documentação do aplicativo host para determinar se ele pode criar classes e objetos.  
   
 ## <a name="example"></a>Exemplo  
+
  Este exemplo usa a `Error` instrução para gerar o número de erro 11.  
   
 ```vb  
@@ -58,11 +63,12 @@ Error 11   ' Simulate the "Division by zero" error.
 ```  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Namespace:** [Microsoft. VisualBasic](../runtime-library-members.md)  
   
- **Assembly:** Visual Basic a biblioteca de tempo de execução (em Microsoft. VisualBasic. dll)  
+ **Assembly:** Visual Basic a biblioteca de tempo de execução (em Microsoft.VisualBasic.dll)  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.ErrObject.Clear%2A>
 - <xref:Microsoft.VisualBasic.Information.Err%2A>

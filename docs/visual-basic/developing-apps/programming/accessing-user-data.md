@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: acessando dados do usuário (Visual Basic)'
 title: Como acessar dados do usuário
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - login names [Visual Basic]
 - examples [Visual Basic], accessing user data
 ms.assetid: 32492a15-ee59-4a63-a1f1-9b24cc13140a
-ms.openlocfilehash: 463d3bc77237482d4cd568b9558bb72cd19e7216
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 4f7f7a8cb121b74a2680f29c0aa14491f6e38434
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2020
-ms.locfileid: "74349210"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797868"
 ---
 # <a name="accessing-user-data-visual-basic"></a>Acessando dados do usuário (Visual Basic)
 

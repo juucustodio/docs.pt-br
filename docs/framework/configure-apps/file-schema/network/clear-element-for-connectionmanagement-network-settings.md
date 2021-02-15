@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <clear> elemento para ConnectionManagement (configurações de rede)'
 title: Elemento <clear> para connectionManagement (Configurações de Rede)
 ms.date: 03/30/2017
 f1_keywords:
@@ -10,14 +11,15 @@ helpviewer_keywords:
 - clear element, connectionManagement
 - <connectionManagement>, clear element
 ms.assetid: fb259282-84c4-4dc4-a226-78d904a6edc3
-ms.openlocfilehash: a76df48a9de084e1121a5e96b22edf7aa3acba23
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: e6e756e1065e48e79d59e02858963ded70d30f7e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "74088479"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99698578"
 ---
 # <a name="clear-element-for-connectionmanagement-network-settings"></a>Elemento \<clear> para connectionManagement (Configurações de Rede)
+
 Limpa a lista de gerenciamento de conexão.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -25,34 +27,40 @@ Limpa a lista de gerenciamento de conexão.
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<connectionManagement>**](connectionmanagement-element-network-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <clear/>  
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
+
  Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
-|**Elemento**|**Descrição**|  
+|**Element**|**Descrição**|  
 |-----------------|---------------------|  
 |[connectionManagement](connectionmanagement-element-network-settings.md)|Especifica o número máximo de conexões com um host de rede.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O `clear` elemento limpa todas as entradas da lista de gerenciamento de conexão.  
   
-## <a name="configuration-files"></a>Arquivos de configuração  
- Esse elemento pode ser usado no arquivo de configuração do aplicativo ou no arquivo de configuração do computador (Machine. config).  
+## <a name="configuration-files"></a>Arquivos de Configuração  
+
+ Esse elemento pode ser usado no arquivo de configuração do aplicativo ou no arquivo de configuração do computador (Machine.config).  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir limpa a lista de gerenciamento de conexão e, em seguida, adiciona novas entradas de gerenciamento de conexão para o servidor `www.contoso.com` e todos os outros hosts de rede.  
   
 ```xml  
@@ -67,7 +75,7 @@ Limpa a lista de gerenciamento de conexão.
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Net.ServicePoint>
 - <xref:System.Net.ServicePointManager>

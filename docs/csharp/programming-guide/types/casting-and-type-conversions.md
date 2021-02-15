@@ -10,12 +10,12 @@ helpviewer_keywords:
 - casting [C#]
 - converting types [C#]
 ms.assetid: 568df58a-d292-4b55-93ba-601578722878
-ms.openlocfilehash: 040b5679b1e6666a7f0308e5990781a2ef86c530
-ms.sourcegitcommit: 552b4b60c094559db9d8178fa74f5bafaece0caf
+ms.openlocfilehash: cfe5376675808559f4bf9c9cd8b21180dcd0cc49
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87381951"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90555322"
 ---
 # <a name="casting-and-type-conversions-c-programming-guide"></a>Coerções e conversões de tipo (Guia de Programação em C#)
 
@@ -89,15 +89,15 @@ Em algumas conversões de tipo de referência, o compilador não poderá determi
 
 O `Test` método tem um `Animal` parâmetro, portanto, converter explicitamente o argumento `a` para um `Reptile` faz uma suposição perigosa. É mais seguro não fazer suposições, mas sim verificar o tipo. O C# fornece o operador [is](../../language-reference/operators/type-testing-and-cast.md#is-operator) para habilitar o teste de compatibilidade antes de realmente executar uma conversão. Para obter mais informações, consulte [como converter com segurança usando correspondência de padrões e os operadores as e is](../../how-to/safely-cast-using-pattern-matching-is-and-as-operators.md).
 
-## <a name="c-language-specification"></a>especificação da linguagem C#
+## <a name="c-language-specification"></a>Especificação da linguagem C#
 
 Para saber mais, confira a seção [Conversões](~/_csharplang/spec/conversions.md) da [Especificação da linguagem C#](~/_csharplang/spec/introduction.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Guia de programação C#](../index.md)
 - [Types](./index.md)
 - [Expressão de conversão](../../language-reference/operators/type-testing-and-cast.md#cast-expression)
 - [Operadores de conversões definidas pelo usuário](../../language-reference/operators/user-defined-conversion-operators.md)
-- [Conversão de tipos generalizados](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/yy580hbd(v=vs.120))
+- [Conversão de tipos generalizados](/previous-versions/visualstudio/visual-studio-2013/yy580hbd(v=vs.120))
 - [Como converter uma cadeia de caracteres em um número](./how-to-convert-a-string-to-a-number.md)

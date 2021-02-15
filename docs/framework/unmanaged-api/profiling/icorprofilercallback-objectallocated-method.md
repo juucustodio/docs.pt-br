@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerCallback:: ObjectAllocated'
 title: Método ICorProfilerCallback::ObjectAllocated
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: eb412622-77cc-4abd-a2cd-c910fe8edd54
 topic_type:
 - apiref
-ms.openlocfilehash: 9a402b7dfc3ece9d38994ed897162fe0d81ff0b9
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 58b58aeb4bb88d0df32cebc32440317a4d23632d
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84503296"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99745158"
 ---
 # <a name="icorprofilercallbackobjectallocated-method"></a>Método ICorProfilerCallback::ObjectAllocated
+
 Notifica o criador de perfil de que a memória dentro do heap foi alocada para um objeto.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,6 +36,7 @@ HRESULT ObjectAllocated(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `objectId`  
  no A ID do objeto para o qual a memória foi alocada.  
   
@@ -41,9 +44,11 @@ HRESULT ObjectAllocated(
  no A ID da classe da qual o objeto é uma instância.  
   
 ## <a name="remarks"></a>Comentários  
+
  O `ObjectedAllocated` método não é chamado para alocações a partir da pilha ou da memória não gerenciada. O `classId` parâmetro pode se referir a uma classe no código gerenciado que ainda não foi carregado. O criador de perfil receberá um retorno de chamada de carga de classe para essa classe imediatamente após o `ObjectAllocated` retorno de chamada.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -52,7 +57,7 @@ HRESULT ObjectAllocated(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Método ClassLoadStarted](icorprofilercallback-classloadstarted-method.md)

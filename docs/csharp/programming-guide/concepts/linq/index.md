@@ -3,12 +3,12 @@ title: LINQ (Consulta Integrada à Linguagem) (C#)
 description: Saiba mais sobre as consultas integradas à linguagem (LINQs) e examine um exemplo da operação de consulta completa.
 ms.date: 02/02/2017
 ms.assetid: 19dd1782-905b-4a9d-a3e9-618453037fa2
-ms.openlocfilehash: 6c8844c387177ce858b63a52b1f5c7246b570beb
-ms.sourcegitcommit: 04022ca5d00b2074e1b1ffdbd76bec4950697c4c
+ms.openlocfilehash: 967f69e94b0424e208fb675a312ab306d5e11842
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87103419"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90556727"
 ---
 # <a name="language-integrated-query-linq"></a>LINQ (Consulta Integrada à Linguagem)
 
@@ -41,7 +41,7 @@ A seguinte ilustração do Visual Studio mostra uma consulta LINQ parcialmente c
 
 Para obter mais detalhes sobre o LINQ, comece se familiarizando com alguns conceitos básicos em [Noções básicas sobre expressões de consulta](../../../linq/query-expression-basics.md), e, em seguida, leia a documentação para a tecnologia LINQ na qual você está interessado:
 
-- Documentos XML: [LINQ to XML](linq-to-xml-overview.md)  
+- Documentos XML: [LINQ to XML](../../../../standard/linq/linq-xml-overview.md)  
 - ADO.NET Entity Framework: [LINQ to Entities](../../../../framework/data/adonet/ef/language-reference/linq-to-entities.md)
 - Coleções do .NET, arquivos, cadeias de caracteres, etc.: [LINQ to Objects](linq-to-objects.md)
 

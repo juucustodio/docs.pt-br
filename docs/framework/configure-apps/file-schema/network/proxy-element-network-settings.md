@@ -9,14 +9,15 @@ helpviewer_keywords:
 - <proxy> element
 - proxy element
 ms.assetid: 37a548d8-fade-4ac5-82ec-b49b6c6cb22a
-ms.openlocfilehash: 8ae30b8c29dcf3aaa183ff295c7ee8592322797f
-ms.sourcegitcommit: 6219b1e1feccb16d88656444210fed3297f5611e
+ms.openlocfilehash: 54b324dcd27d5827159bc2d773365e388a367d26
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85141775"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91190209"
 ---
 # <a name="proxy-element-network-settings"></a>Elemento \<proxy> (Configurações de Rede)
+
 Define um servidor proxy.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -24,7 +25,7 @@ Define um servidor proxy.
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<defaultProxy>**](defaultproxy-element-network-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<proxy>**
 
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Sintaxe  
   
 ```xml  
 <proxy
@@ -37,6 +38,7 @@ Define um servidor proxy.
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -50,17 +52,19 @@ Define um servidor proxy.
 |`usesystemdefault`|Especifica se as configurações de proxy do Internet Explorer devem ser usadas. Se definido como `True` , os atributos subsequentes substituirão as configurações de proxy do Internet Explorer. O valor padrão é `Unspecified`.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
-|**Elemento**|**Descrição**|  
+|**Element**|**Descrição**|  
 |-----------------|---------------------|  
 |[defaultProxy](defaultproxy-element-network-settings.md)|Configura o servidor proxy HTTP (Hypertext Transfer Protocol).|  
   
 ## <a name="text-value"></a>Valor de texto  
   
 ## <a name="remarks"></a>Comentários  
+
  O `proxy` elemento define um servidor proxy para um aplicativo. Se esse elemento estiver ausente no arquivo de configuração, o .NET Framework usará as configurações de proxy no Internet Explorer.  
   
  O valor do `proxyaddress` atributo deve ser um URI (Uniform Resource Indicator) bem formado.  
@@ -71,10 +75,12 @@ Define um servidor proxy.
   
  Uma exceção será gerada se o `proxyaddress` atributo especificar um proxy padrão inválido. A <xref:System.Exception.InnerException%2A> Propriedade na exceção deve ter mais informações sobre a causa raiz do erro.  
   
-## <a name="configuration-files"></a>Arquivos de configuração  
+## <a name="configuration-files"></a>Arquivos de Configuração  
+
  Esse elemento pode ser usado no arquivo de configuração do aplicativo ou no arquivo de configuração do computador (Machine.config).  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir usa os padrões do proxy do Internet Explorer, especifica o endereço de proxy e ignora o proxy para acesso local.  
   
 ```xml  

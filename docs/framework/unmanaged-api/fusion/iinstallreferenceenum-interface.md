@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IInstallReferenceEnum'
 title: Interface IInstallReferenceEnum
 ms.date: 03/30/2017
 api_name:
@@ -14,17 +15,18 @@ helpviewer_keywords:
 ms.assetid: 2863b33b-a541-462c-bbe8-702a2832898e
 topic_type:
 - apiref
-ms.openlocfilehash: d3f7c24b4bd373924c44dbc0490c890e7f1322bd
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: 496bd508b95b51cb23949f32f8390c7cb733b37e
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73131727"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800091"
 ---
 # <a name="iinstallreferenceenum-interface"></a>Interface IInstallReferenceEnum
+
 Representa um enumerador para os assemblies referenciados instalados no cache de assembly global.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 interface IInstallReferenceEnum : IUnknown {  
@@ -40,14 +42,15 @@ interface IInstallReferenceEnum : IUnknown {
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[Método GetNextInstallReferenceItem](iinstallreferenceenum-getnextinstallreferenceitem-method.md)|Obtém um ponteiro para a próxima `IInstallReferenceItem` contida neste `IInstallReferenceEnum`.|  
+|[Método GetNextInstallReferenceItem](iinstallreferenceenum-getnextinstallreferenceitem-method.md)|Obtém um ponteiro para o próximo `IInstallReferenceItem` contido neste `IInstallReferenceEnum` .|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Fusion. h  
   
- **Versões do .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>Consulte também
 

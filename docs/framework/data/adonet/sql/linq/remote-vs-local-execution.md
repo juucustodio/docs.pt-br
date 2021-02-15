@@ -1,21 +1,24 @@
 ---
+description: 'Saiba mais sobre: execução remota vs. local'
 title: Remoto vs. Execução de local
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: ee50e943-9349-4c84-ab1c-c35d3ada1a9c
-ms.openlocfilehash: a21d5bbffdb1a78d3062929a1ca384a750af59a7
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: ea4d85faedd4a299da292029e64d77132e1a65a9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70781160"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99695171"
 ---
 # <a name="remote-vs-local-execution"></a>Remoto vs. Execução de local
+
 Você pode decidir executando remotamente (isto é, o mecanismo de base de dados executa a consulta na base de dados) ou localmente suas consultas ([!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] executa a consulta em um cache local).  
   
 ## <a name="remote-execution"></a>Execução remoto  
+
  Considere a consulta a seguir:  
   
  [!code-csharp[DLinqQueryConcepts#7](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryConcepts/cs/Program.cs#7)]
@@ -27,7 +30,8 @@ Você pode decidir executando remotamente (isto é, o mecanismo de base de dados
   
 - Uma consulta executada pelo mecanismo de base de dados geralmente é mais eficiente devido aos índices de base de dados.  
   
-## <a name="local-execution"></a>Execução de local  
+## <a name="local-execution"></a>Execução local  
+
  Em outras situações, convém ter o conjunto completo de entidades relacionadas no cache local. Essa finalidade, <xref:System.Data.Linq.EntitySet%601> fornece o método de <xref:System.Data.Linq.EntitySet%601.Load%2A> para carregar explicitamente todos os membros de <xref:System.Data.Linq.EntitySet%601>.  
   
  Se <xref:System.Data.Linq.EntitySet%601> é carregado já, consultas subsequentes são executadas localmente. Essa abordagem ajuda em duas maneiras:  
@@ -42,11 +46,13 @@ Você pode decidir executando remotamente (isto é, o mecanismo de base de dados
  [!code-vb[DLinqQueryConcepts#8](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryConcepts/vb/Module1.vb#8)]  
   
 ## <a name="comparison"></a>Comparação  
- Esses dois recursos fornecem uma combinação eficiente de opções: execução remoto para grandes coleções e execução local para coleções pequenas ou onde a coleção completa é necessária. Você implementa a execução remoto com <xref:System.Linq.IQueryable>, e a execução local com uma coleção de memória de <xref:System.Collections.Generic.IEnumerable%601> . Para forçar a execução local (ou seja <xref:System.Collections.Generic.IEnumerable%601>,), consulte [converter um tipo em um IEnumerable genérico](convert-a-type-to-a-generic-ienumerable.md).  
+
+ Esses dois recursos fornecem uma combinação eficiente de opções: execução remoto para grandes coleções e execução local para coleções pequenas ou onde a coleção completa é necessária. Você implementa a execução remoto com <xref:System.Linq.IQueryable>, e a execução local com uma coleção de memória de <xref:System.Collections.Generic.IEnumerable%601> . Para forçar a execução local (ou seja, <xref:System.Collections.Generic.IEnumerable%601> ), consulte [converter um tipo em um IEnumerable genérico](convert-a-type-to-a-generic-ienumerable.md).  
   
 ### <a name="queries-against-unordered-sets"></a>Consultas em conjuntos não ordenada  
+
  Observe a diferença importante entre uma coleção local que implementa <xref:System.Collections.Generic.List%601> e uma coleção que fornece consultas remotas executadas em relação a *conjuntos não ordenados* em um banco de dados relacional. os métodos de<xref:System.Collections.Generic.List%601> como aqueles que usam valores de índice requerem a semântica da lista, que normalmente não pode ser obtida com uma consulta remoto com um conjunto não ordenada. Por esse motivo, esses métodos carregam implicitamente <xref:System.Data.Linq.EntitySet%601> para permitir a execução local.  
   
 ## <a name="see-also"></a>Consulte também
 
-- [Conceitos de consulta](query-concepts.md)
+- [Consulte conceitos](query-concepts.md)

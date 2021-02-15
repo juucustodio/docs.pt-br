@@ -3,17 +3,19 @@ title: Fluxos de trabalho procedurais
 description: No Workflow Foundation, os fluxos de trabalho de procedimento usam métodos de controle de fluxo semelhantes àqueles encontrados em linguagens de procedimentos.
 ms.date: 03/30/2017
 ms.assetid: 52401de9-9115-472d-8fd9-047af6a072b9
-ms.openlocfilehash: 97664c1352928e7d05c2ed15fc118dd21474cfc3
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 13d1b5e55b84687e2a78db1a94317b8b1e33328c
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83421430"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96246024"
 ---
 # <a name="procedural-workflows"></a>Fluxos de trabalho procedurais
+
 Fluxos de trabalho procedurais usam métodos de controle de fluxo semelhantes a esses elementos encontrados em idiomas procedurais. Essas construções incluem `While` e `If`. Esses fluxos de trabalho podem ser compostos livremente usando outras atividades de controle de fluxo como <xref:System.Activities.Statements.Flowchart> e <xref:System.Activities.Statements.Sequence>.  
   
 ## <a name="controlling-execution-flow"></a>Fluxo de controle de execução  
+
  A biblioteca de atividade de fluxo de trabalho tem atividades para modelar a maioria dos métodos de controle de fluxo usados em idiomas procedurais. Elas incluem:  
   
 - <xref:System.Activities.Statements.While>  
@@ -39,4 +41,4 @@ Fluxos de trabalho procedurais usam métodos de controle de fluxo semelhantes a 
   
 ## <a name="see-also"></a>Veja também
 
-- [Fluxos de trabalho de fluxograma](flowchart-workflows.md)
+- [Fluxos de trabalho do fluxograma](flowchart-workflows.md)

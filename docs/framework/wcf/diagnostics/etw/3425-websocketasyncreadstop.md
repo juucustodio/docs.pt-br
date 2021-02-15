@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 3425-WebSocketAsyncReadStop'
 title: 3425 - WebSocketAsyncReadStop
 ms.date: 03/30/2017
 ms.assetid: 6d86fd8f-d430-45c0-94ee-827f4fa5881a
-ms.openlocfilehash: c941d3d5b2eb2ca3f955ece6344da6bbf916003e
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 3cbc7629428ecb878f06155283339eca7a3a76e4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61934063"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99744689"
 ---
 # <a name="3425---websocketasyncreadstop"></a>3425 - WebSocketAsyncReadStop
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,9 +22,11 @@ ms.locfileid: "61934063"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando a leitura assíncrona do WebSocket foi interrompido.  
+
+ Esse evento é emitido quando a leitura assíncrona do WebSocket é interrompida.  
   
 ## <a name="message"></a>Mensagem  
- WebSocketId:% 1 ler bytes de '%2' de '%3'.  
+
+ Websocketid: %1 ler ' %2 ' bytes de ' %3 '.  
   
 ## <a name="details"></a>Detalhes

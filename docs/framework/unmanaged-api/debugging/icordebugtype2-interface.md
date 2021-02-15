@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugType2'
 title: Interface ICorDebugType2
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 376fb03f-f1ef-4107-baa4-4d9d55884862
 topic_type:
 - apiref
-ms.openlocfilehash: 0e480db953131d7771e493a8f367154a7d17dada
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: 8691cf294e835bef0f5a0ac694110f73577fb5d3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396636"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800862"
 ---
 # <a name="icordebugtype2-interface"></a>Interface ICorDebugType2
+
 Estende a interface ICorDebugType para recuperar o identificador de tipo de um tipo base ou tipo complexo (definido pelo usuário).  
   
 ## <a name="methods"></a>Métodos  
@@ -31,12 +33,14 @@ Estende a interface ICorDebugType para recuperar o identificador de tipo de um t
 |[Método GetTypeID](icordebugtype2-gettypeid-method.md)|Obtém um [COR_TYPEID](cor-typeid-structure.md) para este tipo.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Essa interface é uma extensão lógica da interface ICorDebugType.  
   
 > [!NOTE]
 > Esta interface não dá suporte para chamada remota, seja entre computadores ou processos cruzados.  
   
 ## <a name="example"></a>Exemplo  
+
  O fragmento de código a seguir ilustra o uso do método [ICorDebugType2:: GetTypeId](icordebugtype2-gettypeid-method.md) .  
   
 ```cpp  
@@ -53,6 +57,7 @@ pType2->GetTypeID(&id);
 ```  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -61,6 +66,6 @@ pType2->GetTypeID(&id);
   
  **.NET Framework versões:**[!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Depurando interfaces](debugging-interfaces.md)

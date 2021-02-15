@@ -1,11 +1,11 @@
 ---
-title: Como criar um par de chaves pública/privada
+title: Como criar um par de chaves pública-privada
 description: Saiba como criar um par de chaves criptográficas pública/privada a ser usado durante a compilação para criar um assembly de nome forte.
 ms.date: 08/20/2019
 helpviewer_keywords:
 - key pairs for strong-named assemblies
 - signing assemblies
-- assemblies [.NET Framework], signing
+- assemblies [.NET], signing
 - cryptographic key pairs
 - snk files (key pair files)
 - public-private key pairs
@@ -16,25 +16,25 @@ dev_langs:
 - csharp
 - vb
 - cpp
-ms.openlocfilehash: 675871170e7fd4171f0fe09b04d1dbb8906beda4
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: c42e98a7e27ded9a21445fae35ade843e834076a
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83378559"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92163487"
 ---
-# <a name="how-to-create-a-public-private-key-pair"></a>Como criar um par de chaves pública/privada
+# <a name="how-to-create-a-public-private-key-pair"></a>Como criar um par de chaves pública-privada
 
 Para assinar um assembly com um nome forte, você deve ter um par de chaves pública/privada. Esse par de chaves de criptografia pública/privada é usado durante a compilação para criar um assembly de nome forte. Você pode criar um par de chaves usando a [ferramenta de Nome Forte (Sn.exe)](../../framework/tools/sn-exe-strong-name-tool.md). Os arquivos do par de chaves geralmente têm uma extensão *. SNK* .
 
 > [!NOTE]
-> No Visual Studio, as páginas de propriedades do projeto do C# e do Visual Basic incluem uma guia **assinatura** que permite selecionar arquivos de chave existentes ou gerar novos arquivos de chave sem usar o *sn. exe*. No Visual C++, você pode especificar o local de um arquivo de chave existente na página de propriedades **Avançado** na seção **Vinculador** da seção **Propriedades de Configuração** da janela **Páginas de Propriedades**. O uso do <xref:System.Reflection.AssemblyKeyFileAttribute> atributo para identificar pares de arquivos de chave tornou-se obsoleto a partir do Visual Studio 2005.
+> No Visual Studio, as páginas de propriedades do projeto do C# e do Visual Basic incluem uma guia **assinatura** que permite selecionar arquivos de chave existentes ou gerar novos arquivos de chave sem usar *Sn.exe*. No Visual C++, você pode especificar o local de um arquivo de chave existente na página de propriedades **Avançado** na seção **Vinculador** da seção **Propriedades de Configuração** da janela **Páginas de Propriedades**. O uso do <xref:System.Reflection.AssemblyKeyFileAttribute> atributo para identificar pares de arquivos de chave tornou-se obsoleto a partir do Visual Studio 2005.
 
 ## <a name="create-a-key-pair"></a>Criar um par de chaves
 
 Para criar um par de chaves, em um prompt de comando, digite o seguinte comando:
 
-**sn –k** \<*nome de arquivo*>
+**SN – k**\<*file name*>
 
 Neste comando, *nome de arquivo* é o nome do arquivo de saída que contém o par de chaves.
 
@@ -74,6 +74,6 @@ Se você estiver usando uma versão anterior do Visual Studio que não tenha uma
 <Assembly:AssemblyKeyFileAttribute("keyfile.snk")>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Criar e usar assemblies com nome forte](create-use-strong-named.md)

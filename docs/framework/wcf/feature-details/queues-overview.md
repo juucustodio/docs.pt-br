@@ -1,21 +1,23 @@
 ---
+description: 'Saiba mais sobre: visão geral das filas'
 title: Visão geral de filas
 ms.date: 03/30/2017
 helpviewer_keywords:
 - queues [WCF], MSMQ integration
 ms.assetid: b8757992-ffce-40ad-9e9b-3243f6d0fce1
-ms.openlocfilehash: 3e75b6d5926b65a93204241eb7c71ca23a5694af
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 8414a8f9121c30a97f5fef5e1f26dfe57abc7956
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84596715"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99633017"
 ---
 # <a name="queues-overview"></a>Visão geral das filas
 
 Esta seção apresenta os conceitos gerais e principais por trás da comunicação em fila. As seções subsequentes entram em detalhes sobre como os conceitos de enfileiramento descritos aqui são manifestados no Windows Communication Foundation (WCF).  
   
 ## <a name="basic-queuing-concepts"></a>Conceitos básicos de enfileiramento  
+
  Ao criar um aplicativo distribuído, é importante escolher o transporte correto para comunicação entre serviços e clientes. Vários fatores afetam o tipo de transporte a ser usado. Um fator importante: o isolamento entre o serviço, o cliente e o transporte – determina o uso de um transporte em fila ou de um transporte direto, como TCP ou HTTP. Devido à natureza dos transportes diretos, como TCP e HTTP, a comunicação será totalmente interrompida se o serviço ou o cliente parar de funcionar ou se a rede falhar. O serviço, o cliente e a rede devem estar em execução ao mesmo tempo para que o aplicativo funcione. Os transportes em fila fornecem isolamento, o que significa que, se o serviço ou cliente falhar ou se os links de comunicação entre eles falharem, o cliente e o serviço poderão continuar a funcionar.  
   
  As filas do fornecem comunicação confiável, mesmo com falhas nas partes de comunicação ou na rede. As filas capturam e entregam mensagens trocadas entre as partes de comunicação. Em geral, as filas são apoiadas por algum tipo de armazenamento, que pode ser volátil ou durável. As filas armazenam mensagens de um cliente em nome de um serviço e encaminham essas mensagens posteriormente para o serviço. As filas de indireção fornecem isolamento garantido de falha por qualquer uma das partes, tornando-o o mecanismo de comunicação preferencial para sistemas de alta disponibilidade e serviços desconectados. A indireção vem com o custo de alta latência. *Latência* é o tempo de atraso entre a hora em que o cliente envia uma mensagem e a hora em que o serviço a recebe. Isso significa que depois que uma mensagem é enviada, você não sabe quando essa mensagem pode ser processada. A maioria dos aplicativos na fila lida com alta latência. A ilustração a seguir mostra um modelo conceitual de comunicação em fila.  
@@ -35,6 +37,7 @@ Esta seção apresenta os conceitos gerais e principais por trás da comunicaç�
  Portanto, o Gerenciador de filas fornece o isolamento necessário para que o remetente e o destinatário possam falhar de forma independente sem afetar a comunicação real. O benefício do indireção extra que as filas fornecem também permite que várias instâncias do aplicativo sejam lidas da mesma fila, de modo que o pecuária funcione entre os nós atinge uma taxa de transferência mais alta. Portanto, não é incomum ver as filas que estão sendo usadas para obter requisitos de escala e taxa de transferência mais altos.  
   
 ## <a name="queues-and-transactions"></a>Filas e transações  
+
  As transações permitem que você agrupe um conjunto de operações para que, se uma operação falhar, todas as operações falhem. Um exemplo de como usar transações é quando uma pessoa usa um ATM para transferir $1000 de sua conta de economia para sua conta de verificação. Isso envolve as seguintes operações:  
   
 - Retirando $1000 da conta de poupança.  
@@ -54,6 +57,7 @@ Esta seção apresenta os conceitos gerais e principais por trás da comunicaç�
  A transação do cliente processa e envia a mensagem. Quando a transação é confirmada, a mensagem está na fila de transmissão. No serviço, a transação lê a mensagem da fila de destino, processa a mensagem e, em seguida, confirma a transação. Se ocorrer um erro durante o processamento, a mensagem será revertida e colocada na fila de destino.  
   
 ## <a name="asynchronous-communication-using-queues"></a>Comunicação assíncrona usando filas  
+
  As filas do fornecem um meio assíncrono de comunicação. Os aplicativos que enviam mensagens usando filas não podem aguardar a mensagem ser recebida e processada pelo receptor devido à alta latência introduzida pelo Gerenciador de filas. As mensagens podem permanecer na fila por um tempo muito maior do que o esperado pelo aplicativo. Para evitar isso, o aplicativo pode especificar um valor de vida útil na mensagem. Esse valor especifica quanto tempo a mensagem deve permanecer na fila de transmissão. Se esse valor de tempo for excedido e a mensagem ainda não tiver sido enviada para a fila de destino, a mensagem poderá ser transferida para uma fila de mensagens mortas.  
   
  Quando o remetente envia uma mensagem, o retorno da operação de envio implica que a mensagem o fez apenas na fila de transmissão no remetente. Assim, se houver uma falha ao obter a mensagem para a fila de destino, o aplicativo de envio não poderá conhecê-la imediatamente. Para anotar essas falhas, a mensagem com falha é transferida para uma fila de mensagens mortas.  
@@ -66,12 +70,14 @@ Esta seção apresenta os conceitos gerais e principais por trás da comunicaç�
   
  As seções a seguir discutem esses conceitos.  
   
-## <a name="dead-letter-queue-programming"></a>Programação de fila de mensagens mortas  
+## <a name="dead-letter-queue-programming"></a>Programação de fila de Dead-Letter  
+
  As filas de mensagens mortas contêm mensagens que falharam ao alcançar a fila de destino por vários motivos. Os motivos podem variar de mensagens expiradas a problemas de conectividade, impedindo a transferência da mensagem para a fila de destino.  
   
  Normalmente, um aplicativo pode ler mensagens de uma fila de mensagens mortas de todo o sistema, determinar o que deu errado e tomar as devidas medidas, como corrigir os erros e reenviar a mensagem ou anotar isso.  
   
 ## <a name="poison-message-queue-programming"></a>Programação de fila de mensagens suspeitas  
+
  Depois que uma mensagem é transformada na fila de destino, o serviço pode falhar repetidamente ao processar a mensagem. Por exemplo, um aplicativo que lê uma mensagem da fila em uma transação e a atualização de um banco de dados pode encontrar o banco de dados temporariamente desconectado. Nesse caso, a transação é revertida, uma nova transação é criada e a mensagem é relida da fila. Uma segunda tentativa pode ser bem-sucedida ou falhar. Em alguns casos, dependendo da causa do erro, a mensagem pode falhar repetidamente com a entrega para o aplicativo. Nesse caso, a mensagem é considerada "suspeita". Essas mensagens são movidas para uma fila suspeita que pode ser lida por um aplicativo de tratamento de envenenamento.  
   
 ## <a name="see-also"></a>Consulte também

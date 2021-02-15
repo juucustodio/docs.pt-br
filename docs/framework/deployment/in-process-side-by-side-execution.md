@@ -6,17 +6,19 @@ helpviewer_keywords:
 - in-process side-by-side execution
 - side-by-side execution, in-process
 ms.assetid: 18019342-a810-4986-8ec2-b933a17c2267
-ms.openlocfilehash: 078f2eaada8fac57138bef22d46218ef2ccda835
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 85d0ec90a8877384517e9de3b56258d294e0c612
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85622595"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96283478"
 ---
 # <a name="in-process-side-by-side-execution"></a>Execução lado a lado em processo
+
 A partir do .NET Framework 4, você pode usar a hospedagem lado a lado em processo para executar várias versões do CLR (Common Language Runtime) em um único processo. Por padrão, os componentes COM gerenciados são executados com a versão do .NET Framework com a qual eles foram criados, independentemente da versão do .NET Framework carregada para o processo.  
   
 ## <a name="background"></a>Segundo plano  
+
  O .NET Framework sempre forneceu a hospedagem lado a lado para aplicativos de código gerenciado, mas antes do .NET Framework 4, ele não fornecia essa funcionalidade para componentes COM gerenciados. No passado, os componentes COM gerenciados que eram carregados em um processo eram executados com a versão do runtime que já estava carregada ou com a versão mais recente instalada do .NET Framework. Se essa versão não era compatível com o componente COM, ele falhava.  
   
  O .NET Framework 4 fornece uma nova abordagem para hospedagem lado a lado que garante o seguinte:  
@@ -39,14 +41,15 @@ A partir do .NET Framework 4, você pode usar a hospedagem lado a lado em proces
   
     |Versão do .NET Framework|1,1|2.0 – 3.5|4|  
     |----------------------------|---------|----------------|-------|  
-    |1,1|Não Aplicável|Não|Sim|  
+    |1,1|Não aplicável|Não|Sim|  
     |2.0 – 3.5|Não|Não aplicável|Sim|  
-    |4|Sim|Sim|Não Aplicável|  
+    |4|Sim|Sim|Não aplicável|  
   
 > [!NOTE]
 > As versões 3.0 e 3.5 do .NET Framework são criadas de forma incremental na versão 2.0 e não precisam ser executadas lado a lado. Elas são inerentemente a mesma versão.  
   
 <a name="scenarios"></a>
+
 ## <a name="common-side-by-side-hosting-scenarios"></a>Cenários comuns de hospedagem lado a lado  
   
 - **Cenário 1:** aplicativo nativo que usa componentes COM criados com versões anteriores do .NET Framework.  
@@ -85,6 +88,7 @@ A partir do .NET Framework 4, você pode usar a hospedagem lado a lado em proces
     ```  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir demonstra um host COM não gerenciado que está executando um componente COM gerenciado usando a versão do .NET Framework que o componente foi compilado para usar.  
   
  Para executar o exemplo a seguir, compile e registre o seguinte componente COM gerenciado usando o .NET Framework 3.5. Para registrar o componente, no menu **Projeto**, clique em **Propriedades**, clique na guia **Compilar** e marque a caixa de seleção **Registrar para interoperabilidade COM**.  
@@ -172,7 +176,7 @@ int _tmain(int argc, _TCHAR* argv[])
 }  
 ```  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-- [\<startup>Elementos](../configure-apps/file-schema/startup/startup-element.md)
-- [\<supportedRuntime>Elementos](../configure-apps/file-schema/startup/supportedruntime-element.md)
+- [\<startup> Elementos](../configure-apps/file-schema/startup/startup-element.md)
+- [\<supportedRuntime> Elementos](../configure-apps/file-schema/startup/supportedruntime-element.md)

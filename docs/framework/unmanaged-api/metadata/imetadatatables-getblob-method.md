@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IMetaDataTables:: getBlob'
 title: Método IMetaDataTables::GetBlob
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 94667c1c-6d58-4aa7-b74e-530b11e2a276
 topic_type:
 - apiref
-ms.openlocfilehash: ff97e419c5309fa7cb820cb7e82db96fee34f30c
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 733f94c280283e00b644fe7811d450efbc7e1e7c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84501268"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99688384"
 ---
 # <a name="imetadatatablesgetblob-method"></a>Método IMetaDataTables::GetBlob
+
 Obtém um ponteiro para o objeto binário grande (BLOB) no índice de coluna especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT GetBlob (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ixBlob`  
  no O endereço de memória do qual obter `ppData` .  
   
@@ -46,15 +49,16 @@ HRESULT GetBlob (
  fora Um ponteiro para um ponteiro para os dados binários recuperados.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataTables](imetadatatables-interface.md)
 - [Interface IMetaDataTables2](imetadatatables2-interface.md)

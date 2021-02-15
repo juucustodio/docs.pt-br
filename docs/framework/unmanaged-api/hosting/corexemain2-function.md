@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: _CorExeMain2 função'
 title: Função _CorExeMain2
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 72ea68b4-689f-4733-9416-9664b75e8892
 topic_type:
 - apiref
-ms.openlocfilehash: 8202fe4ec3ae6ef96440f203c5aea6db84744a72
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 4629ea2f6c2ba13351c409bc382077eea926b507
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83616574"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99717089"
 ---
 # <a name="_corexemain2-function"></a>Função _CorExeMain2
+
 Executa o ponto de entrada no código mapeado de memória especificado. Essa função é chamada pelo carregador do sistema operacional.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,6 +39,7 @@ __int32 STDMETHODCALLTYPE _CorExeMain2 (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pUnmappedPE`  
  no Um ponteiro para o código de memória mapeada.  
   
@@ -53,14 +56,15 @@ __int32 STDMETHODCALLTYPE _CorExeMain2 (
  no Parâmetros de linha de comando, se houver.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Incluído como um recurso em MsCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Funções estáticas globais de metadados](../metadata/metadata-global-static-functions.md)

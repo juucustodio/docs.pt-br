@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface ICorDebugExceptionObjectValue'
 title: Interface ICorDebugExceptionObjectValue
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 43416dd5-8892-4106-9f59-f9143b19ddb4
 topic_type:
 - apiref
-ms.openlocfilehash: 8e4f745440936a39e22faf60d10a05a0bb110606
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: 67672f9921bab31019a42b742480176e6d0bf3d4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82975947"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99693194"
 ---
 # <a name="icordebugexceptionobjectvalue-interface"></a>Interface ICorDebugExceptionObjectValue
+
 Estende a interface "ICorDebugObjectValue" para fornecer informações de rastreamento de pilha de um objeto de exceção gerenciado.  
   
 ## <a name="methods"></a>Métodos  
@@ -31,9 +33,11 @@ Estende a interface "ICorDebugObjectValue" para fornecer informações de rastre
 |[Método EnumerateExceptionCallStack](icordebugexceptionobjectvalue-enumerateexceptioncallstack-method.md)|Obtém um enumerador para a pilha de chamadas inserido em um objeto de exceção.|  
   
 ## <a name="remarks"></a>Comentários  
- A chamada para `QueryInterface` terá sucesso para objetos gerenciados que derivam de <xref:System.Exception?displayProperty=nameWithType>.  
+
+ A chamada para `QueryInterface` terá sucesso para objetos gerenciados que derivam de <xref:System.Exception?displayProperty=nameWithType> .  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

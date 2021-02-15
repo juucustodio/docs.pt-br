@@ -1,25 +1,27 @@
 ---
+description: 'Saiba mais sobre: mapear restrições XSD (esquema XML exclusivo) para restrições de conjunto de informações'
 title: Mapear de restrições de esquema XML (XSD) exclusivas para restrições de DataSet
 ms.date: 03/30/2017
 ms.assetid: 56da90bf-21d3-4d1a-8bb8-de908866b78d
-ms.openlocfilehash: 8bcf705ce4415929e685be79f813846bbb40bb36
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: 41a6e5424d67b092e57ac61d6e34a1f285fb8d0c
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79150838"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99651919"
 ---
 # <a name="map-unique-xml-schema-xsd-constraints-to-dataset-constraints"></a>Mapear de restrições de esquema XML (XSD) exclusivas para restrições de DataSet
-Em um esquema de definição de Esquema XML (XSD), o elemento **único** especifica a restrição de exclusividade em um elemento ou atributo. No processo de tradução de um Esquema XML em um esquema relacional, a restrição única especificada em um elemento ou atributo <xref:System.Data.DataTable> no <xref:System.Data.DataSet> Esquema XML é mapeada para uma restrição única no correspondente gerado.  
+
+Em um esquema XSD (linguagem de definição de esquema XML), o elemento **exclusivo** especifica a restrição de exclusividade em um elemento ou atributo. No processo de tradução de um esquema XML em um esquema relacional, a restrição UNIQUE especificada em um elemento ou atributo no esquema XML é mapeada para uma restrição UNIQUE no <xref:System.Data.DataTable> no correspondente <xref:System.Data.DataSet> que é gerado.  
   
- A tabela a seguir descreve os **atributos msdata** que você pode especificar no elemento **único.**  
+ A tabela a seguir descreve os atributos **MSDATA** que você pode especificar no elemento **Unique** .  
   
 |Nome do atributo|Descrição|  
 |--------------------|-----------------|  
-|**msdata:ConstraintName**|Se este atributo for especificado, seu valor será usado como nome de restrição. Caso contrário, o atributo **nome** fornece o valor do nome de restrição.|  
-|**msdata:PrimaryKey**|Se `PrimaryKey="true"` estiver presente no elemento **único,** uma restrição única será criada com a propriedade **IsPrimaryKey** definida como **true**.|  
+|**MSDATA: ConstraintName**|Se esse atributo for especificado, seu valor será usado como o nome da restrição. Caso contrário, o atributo **Name** fornecerá o valor do nome da restrição.|  
+|**MSDATA: PrimaryKey**|Se `PrimaryKey="true"` estiver presente no elemento **Unique** , uma restrição UNIQUE será criada com a propriedade **IsPrimaryKey** definida como **true**.|  
   
- O exemplo a seguir mostra um Esquema XML que usa o elemento **exclusivo** para especificar uma restrição de exclusividade.  
+ O exemplo a seguir mostra um esquema XML que usa o elemento **exclusivo** para especificar uma restrição de exclusividade.  
   
 ```xml  
 <xs:schema id="SampleDataSet"
@@ -48,13 +50,13 @@ Em um esquema de definição de Esquema XML (XSD), o elemento **único** especif
 </xs:schema>  
 ```  
   
- O elemento **único** no esquema especifica que, para todos os elementos **clientes** em uma instância de documento, o valor do elemento filho **CustomerID** deve ser único. Na construção do **DataSet,** o processo de mapeamento lê este esquema e gera a seguinte tabela:  
+ O elemento **exclusivo** no esquema especifica que para todos os elementos **Customers** em uma instância de documento, o valor do elemento filho **CustomerID** deve ser exclusivo. Ao criar o **conjunto** de um, o processo de mapeamento lê esse esquema e gera a tabela a seguir:  
   
 ```text  
 Customers (CustomerID, CompanyName, Phone)  
 ```  
   
- O processo de mapeamento também cria uma restrição única na coluna **CustomerID,** como mostrado no **Conjunto de Dados**a seguir . (Para simplificar, apenas propriedades relevantes são mostradas.)  
+ O processo de mapeamento também cria uma restrição UNIQUE na coluna **CustomerID** , conforme mostrado no **conjunto** de acordo a seguir. (Para simplificar, apenas as propriedades relevantes são mostradas.)  
   
 ```text  
       DataSetName: MyDataSet  
@@ -68,11 +70,11 @@ TableName: Customers
       IsPrimaryKey: False  
 ```  
   
- No **Conjunto de dados** gerado, a propriedade **IsPrimaryKey** é definida como **False** para a restrição única. A propriedade **única** na coluna indica que os valores da coluna **CustomerID** devem ser únicos (mas podem ser uma referência nula, conforme especificado pela propriedade **AllowDBNull** da coluna).  
+ No **conjunto** de um que é gerado, a propriedade **IsPrimaryKey** é definida como **false** para a restrição UNIQUE. A propriedade **Unique** na coluna indica que os valores de coluna **CustomerID** devem ser exclusivos (mas podem ser uma referência nula, conforme especificado pela propriedade **AllowDBNull** da coluna).  
   
- Se você modificar o esquema e definir o valor de atributo **msdata:PrimaryKey** para **True,** a restrição única será criada na tabela. A propriedade da coluna **AllowDBNull** está definida como **False**, e a propriedade **IsPrimaryKey** da restrição definida como **True,** tornando assim a coluna **CustomerID** uma coluna de chave primária.  
+ Se você modificar o esquema e definir o valor de atributo opcional **MSDATA: PrimaryKey** como **true**, a restrição UNIQUE será criada na tabela. A propriedade de coluna **AllowDBNull** é definida como **false** e a propriedade **IsPrimaryKey** da restrição definida como **true**, tornando a coluna **CustomerID** uma coluna de chave primária.  
   
- Você pode especificar uma restrição única em uma combinação de elementos ou atributos no Esquema XML. O exemplo a seguir demonstra como especificar que uma combinação de valores **De CustomerID** e **CompanyName** deve ser única para todos **os Clientes** em qualquer instância, adicionando outro elemento **xs:campo** no esquema.  
+ Você pode especificar uma restrição UNIQUE em uma combinação de elementos ou atributos no esquema XML. O exemplo a seguir demonstra como especificar que uma combinação de **CustomerID** e valores **CompanyName** deve ser exclusiva para todos os **clientes** em qualquer instância, adicionando outro elemento **xs: Field** no esquema.  
   
 ```xml  
       <xs:unique
@@ -84,7 +86,7 @@ TableName: Customers
 </xs:unique>  
 ```  
   
- Esta é a restrição criada no **Conjunto de Dados**resultante .  
+ Essa é a restrição que é criada no **conjunto** de resultados resultante.  
   
 ```text  
 ConstraintName: SomeName  
@@ -93,7 +95,7 @@ ConstraintName: SomeName
   IsPrimaryKey: False  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Mapeamento de restrições de esquema XML (XSD) para restrições de DataSet](mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)
 - [Gerar relações de DataSet do esquema XML (XSD)](generating-dataset-relations-from-xml-schema-xsd.md)

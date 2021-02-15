@@ -1,5 +1,6 @@
 ---
-title: Como configurar credenciais em um serviço de federação
+description: 'Saiba mais sobre: como configurar credenciais em um Serviço de Federação'
+title: 'Como: configurar credenciais em um serviço de federação'
 ms.date: 03/30/2017
 dev_langs:
 - csharp
@@ -8,14 +9,15 @@ helpviewer_keywords:
 - WCF, federation
 - federation
 ms.assetid: 149ab165-0ef3-490a-83a9-4322a07bd98a
-ms.openlocfilehash: 05f35bbb7dbb34cd4067c407578038cbb4eff70f
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 100012312b9b900f35753e1fa0761ba132fe0c06
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84599133"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99780070"
 ---
-# <a name="how-to-configure-credentials-on-a-federation-service"></a>Como configurar credenciais em um serviço de federação
+# <a name="how-to-configure-credentials-on-a-federation-service"></a>Como: configurar credenciais em um serviço de federação
+
 No Windows Communication Foundation (WCF), a criação de um serviço federado consiste nos seguintes procedimentos principais:  
   
 1. Configurando uma <xref:System.ServiceModel.WSFederationHttpBinding> associação personalizada ou semelhante. Para obter mais informações sobre como criar uma associação apropriada, consulte [como: criar um WSFederationHttpBinding](how-to-create-a-wsfederationhttpbinding.md).  
@@ -56,6 +58,7 @@ No Windows Communication Foundation (WCF), a criação de um serviço federado c
 5. Se necessário, defina o `samlSerializer` atributo do elemento <`issuedTokenAuthentication`> como o nome do tipo da classe personalizada <xref:System.IdentityModel.Tokens.SamlSerializer> .  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir define as propriedades de um <xref:System.ServiceModel.Security.IssuedTokenServiceCredential> no código.  
   
  [!code-csharp[C_FederatedService#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_federatedservice/cs/source.cs#2)]
@@ -76,8 +79,8 @@ No Windows Communication Foundation (WCF), a criação de um serviço federado c
 - [Federação](federation.md)
 - [Federação e confiabilidade](federation-and-trust.md)
 - [Exemplo de federação](../samples/federation-sample.md)
-- [Como desabilitar sessões seguranças em uma WSFederationHttpBinding](how-to-disable-secure-sessions-on-a-wsfederationhttpbinding.md)
-- [Como criar um WSFederationHttpBinding](how-to-create-a-wsfederationhttpbinding.md)
-- [Como criar um cliente federado](how-to-create-a-federated-client.md)
+- [Como: desabilitar sessões seguras em uma WSFederationHttpBinding](how-to-disable-secure-sessions-on-a-wsfederationhttpbinding.md)
+- [Como: criar uma WSFederationHttpBinding](how-to-create-a-wsfederationhttpbinding.md)
+- [Como: criar um cliente federado](how-to-create-a-federated-client.md)
 - [Trabalhando com certificados](working-with-certificates.md)
 - [SecurityBindingElement Authentication Modes](securitybindingelement-authentication-modes.md)

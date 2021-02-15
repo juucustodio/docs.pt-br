@@ -1,17 +1,19 @@
 ---
+description: 'Saiba mais sobre: NetNamedPipeBinding'
 title: NetNamedPipeBinding
 ms.date: 03/30/2017
 helpviewer_keywords:
 - Net Profile Named Pipe
 ms.assetid: e78e845f-c325-46e2-927d-81616f97f7d5
-ms.openlocfilehash: b8a852345572e172d7c5400dca535bb8c098ec4f
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: b405ab63fb9aa6b54ed29f45f1024a346c818bd2
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84584188"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99752139"
 ---
 # <a name="netnamedpipebinding"></a>NetNamedPipeBinding
+
 Este exemplo demonstra a `netNamedPipeBinding` associação, que fornece comunicação entre processos no mesmo computador. Pipes nomeados não funcionam entre computadores. Este exemplo é baseado no serviço de calculadora de [introdução](getting-started-sample.md) .  
   
  Neste exemplo, o serviço é auto-hospedado. O cliente e o serviço são aplicativos de console.  

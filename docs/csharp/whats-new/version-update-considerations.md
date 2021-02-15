@@ -3,12 +3,12 @@ title: Considerações sobre versão e atualização para os desenvolvedores de 
 description: A introdução de novos recursos de linguagem de programação em sua biblioteca pode afetar o código que faz uso dela.
 ms.topic: reference
 ms.date: 09/19/2018
-ms.openlocfilehash: f7db7c79792d04bcf592bc1858e1f0f05cb34402
-ms.sourcegitcommit: 0100be20fcf23f61dab672deced70059ed71bb2e
+ms.openlocfilehash: 6de0e3ba33af34edba73819dcb9268f40f8a5ea4
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88268121"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90552421"
 ---
 # <a name="version-and-update-considerations-for-c-developers"></a>Considerações sobre versão e atualização para os desenvolvedores de C#
 
@@ -63,4 +63,4 @@ Novo código:
 public double CalculateSquare(in double value) => value * value;
 ```
 
-Os artigos [Novidades](index.md) apontam que a introdução de um recurso que afeta as declarações públicas é compatível com a origem ou compatível com binário.
+Os artigos [Novidades](./csharp-9.md) apontam que a introdução de um recurso que afeta as declarações públicas é compatível com a origem ou compatível com binário.

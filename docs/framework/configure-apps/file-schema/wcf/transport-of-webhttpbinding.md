@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <transport> de <webHttpBinding>'
 title: <transport> de <webHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: f150fb19-7de1-44af-81f4-86cad881cd05
-ms.openlocfilehash: e8016eb9058f132722587368f1f8c7c03220af4a
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: a845786f4e60a44dcb157201235d28d49ab8d40b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73732795"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99773440"
 ---
 # <a name="transport-of-webhttpbinding"></a>\<transport> de \<webHttpBinding>
+
 Define as configurações de segurança no nível de transporte para um ponto de extremidade de serviço configurado para receber solicitações HTTP.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,7 +22,7 @@ Define as configurações de segurança no nível de transporte para um ponto de
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<security>**](security-of-webhttpbinding.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<transport>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <webHttpBinding>
@@ -40,10 +42,12 @@ Define as configurações de segurança no nível de transporte para um ponto de
 </webHttpBinding>
 ```  
   
-## <a name="type"></a>Type  
+## <a name="type"></a>Tipo  
+
  <xref:System.ServiceModel.HttpTransportSecurity>  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -77,6 +81,7 @@ Define as configurações de segurança no nível de transporte para um ponto de
 |`Windows`|Usa a autenticação integrada do Windows.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -85,7 +90,7 @@ Define as configurações de segurança no nível de transporte para um ponto de
 |-------------|-----------------|  
 |[\<security>](security-of-webhttpbinding.md)|Representa os recursos de segurança do [\<wsHttpBinding>](wshttpbinding.md) elemento.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.HttpTransportSecurity>
 - <xref:System.ServiceModel.Configuration.WebHttpSecurityElement.Transport%2A>

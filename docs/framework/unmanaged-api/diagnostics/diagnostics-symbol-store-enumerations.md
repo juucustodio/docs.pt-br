@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumerações de armazenamento de símbolo de diagnóstico'
 title: Enumerações de armazenamento de símbolo de diagnóstico
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -7,17 +8,19 @@ helpviewer_keywords:
 - diagnostics symbol store enumerations [.NET Framework]
 - enumerations [.NET Framework debugging]
 ms.assetid: 57d68c70-aba1-4bad-a13f-6d0c55f43746
-ms.openlocfilehash: c1715341726c0ee33bfcaecc7e02b452db6a1fd7
-ms.sourcegitcommit: 9a4488a3625866335e83a20da5e9c5286b1f034c
+ms.openlocfilehash: 220dd09f87855c1c81609d2f40e67448aa5827f3
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83420559"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99800442"
 ---
 # <a name="diagnostics-symbol-store-enumerations"></a>Enumerações de armazenamento de símbolo de diagnóstico
+
 Este tópico descreve as enumerações não gerenciadas que a API de armazenamento de símbolo de diagnóstico usa.  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Enumeração CorSymAddrKind](corsymaddrkind-enumeration.md)  
  Indica o tipo de endereço de memória.  
   
@@ -31,6 +34,7 @@ Este tópico descreve as enumerações não gerenciadas que a API de armazenamen
  Identifica retornos de chamada para funções do depurador.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
+
  [Interfaces de armazenamento de símbolo de diagnóstico](diagnostics-symbol-store-interfaces.md)  
   
  [Estruturas de armazenamento de símbolo de diagnóstico](diagnostics-symbol-store-structures.md)  

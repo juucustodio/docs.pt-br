@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: One-Way'
 title: Unidirecional
 ms.date: 03/30/2017
 ms.assetid: 74e3e03d-cd15-4191-a6a5-1efa2dcb9e73
-ms.openlocfilehash: 07fc4ecf981acbad577758c943aa22405f528a52
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: fef940f6e0787b7dc91f02442597625b8c4cca50
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84575246"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99726280"
 ---
 # <a name="one-way"></a>Unidirecional
+
 Este exemplo demonstra um contato de serviço com operações de serviço unidirecionais. O cliente não aguarda que as operações de serviço sejam concluídas como é o caso com operações de serviço bidirecionais. Este exemplo é baseado no [introdução](getting-started-sample.md) e usa a `wsHttpBinding` associação. O serviço neste exemplo é um aplicativo de console auto-hospedado para permitir que você observe o serviço que recebe e processa solicitações. O cliente também é um aplicativo de console.  
   
 > [!NOTE]
@@ -84,7 +86,7 @@ Processing Divide(22,7) - result: 3.14285714285714
 ```  
   
 > [!NOTE]
-> O HTTP é, por definição, um protocolo de solicitação/resposta; Quando uma solicitação é feita, uma resposta é retornada. Isso é verdadeiro mesmo para uma operação de serviço unidirecional que é exposta por HTTP. Quando a operação é chamada, o serviço retorna um código de status HTTP de 202 antes da execução da operação de serviço. Esse código de status significa que a solicitação foi aceita para processamento, mas o processamento ainda não foi concluído. O cliente que chamou a operação é bloqueado até receber a resposta 202 do serviço. Isso pode causar algum comportamento inesperado quando várias mensagens unidirecionais são enviadas usando uma associação configurada para usar sessões. A `wsHttpBinding` associação usada neste exemplo é configurada para usar sessões por padrão para estabelecer um contexto de segurança. Por padrão, as mensagens em uma sessão têm garantia de chegar na ordem em que são enviadas. Por isso, quando a segunda mensagem em uma sessão é enviada, ela não é processada até que a primeira mensagem seja processada. O resultado disso é que o cliente não recebe a resposta 202 para uma mensagem até que o processamento da mensagem anterior tenha sido concluído. O cliente, portanto, parece bloquear em cada chamada de operação subsequente. Para evitar esse comportamento, esta amostra configura o tempo de execução para distribuir mensagens simultaneamente para instâncias distintas para processamento. O exemplo define <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> como para `PerCall` que cada mensagem possa ser processada por uma instância diferente. <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A>é definido como `Multiple` para permitir que mais de um thread envie mensagens por vez.  
+> O HTTP é, por definição, um protocolo de solicitação/resposta; Quando uma solicitação é feita, uma resposta é retornada. Isso é verdadeiro mesmo para uma operação de serviço unidirecional que é exposta por HTTP. Quando a operação é chamada, o serviço retorna um código de status HTTP de 202 antes da execução da operação de serviço. Esse código de status significa que a solicitação foi aceita para processamento, mas o processamento ainda não foi concluído. O cliente que chamou a operação é bloqueado até receber a resposta 202 do serviço. Isso pode causar algum comportamento inesperado quando várias mensagens unidirecionais são enviadas usando uma associação configurada para usar sessões. A `wsHttpBinding` associação usada neste exemplo é configurada para usar sessões por padrão para estabelecer um contexto de segurança. Por padrão, as mensagens em uma sessão têm garantia de chegar na ordem em que são enviadas. Por isso, quando a segunda mensagem em uma sessão é enviada, ela não é processada até que a primeira mensagem seja processada. O resultado disso é que o cliente não recebe a resposta 202 para uma mensagem até que o processamento da mensagem anterior tenha sido concluído. O cliente, portanto, parece bloquear em cada chamada de operação subsequente. Para evitar esse comportamento, esta amostra configura o tempo de execução para distribuir mensagens simultaneamente para instâncias distintas para processamento. O exemplo define <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> como para `PerCall` que cada mensagem possa ser processada por uma instância diferente. <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> é definido como `Multiple` para permitir que mais de um thread envie mensagens por vez.  
   
 ### <a name="to-set-up-build-and-run-the-sample"></a>Para configurar, compilar, e executar o exemplo  
   

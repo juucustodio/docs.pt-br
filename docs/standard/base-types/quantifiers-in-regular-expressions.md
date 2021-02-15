@@ -2,7 +2,7 @@
 title: Quantificadores em expressões regulares
 description: Saiba mais sobre quantificadores de expressão regular, que especificam quantas instâncias de um caractere, grupo ou classe de caractere devem estar presentes na entrada para correspondência.
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
+ms.topic: conceptual
 dev_langs:
 - csharp
 - vb
@@ -11,18 +11,19 @@ helpviewer_keywords:
 - metacharacters, quantifiers
 - minimal matching quantifiers
 - quantifiers in regular expressions
-- .NET Framework regular expressions, quantifiers
+- .NET regular expressions, quantifiers
 - quantifiers
 - lazy quantifiers
 ms.assetid: 36b81212-6511-49ed-a8f1-ff080415312f
-ms.openlocfilehash: 3ffdd481ac001b4e1bd229c6f5fa0bf285b508b2
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.openlocfilehash: 5bee54d24726de1a904254dbd33d6d9be539ae09
+ms.sourcegitcommit: 4313614f57690f9a5119a37314f0a1fd738ebda2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88063803"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98692923"
 ---
 # <a name="quantifiers-in-regular-expressions"></a>Quantificadores em expressões regulares
+
 Os quantificadores especificam quantas instâncias de um caractere, grupo ou classe de caracteres devem estar presentes na entrada para encontrar uma correspondência.  A tabela a seguir lista os quantificadores tem suporte no .NET.  
   
 |Quantificador Greedy|Quantificador lento|Descrição|  
@@ -40,12 +41,14 @@ Os quantificadores especificam quantas instâncias de um caractere, grupo ou cla
 > O aninhamento de quantificadores (por exemplo, como o padrão de expressão regular `(a*)*` faz) pode aumentar o número de comparações que o mecanismo de expressões regulares deve executar, como uma função exponencial do número de caracteres na cadeia de caracteres de entrada. Para saber mais sobre esse comportamento e suas soluções, veja [Retrocesso](backtracking-in-regular-expressions.md).  
   
 ## <a name="regular-expression-quantifiers"></a>Quantificadores em expressões regulares  
+
  As seções a seguir listam os quantificadores com suporte nas expressões regulares no .NET.  
   
 > [!NOTE]
 > Se os caracteres *, +, ?, { e } forem encontrados em um padrão de expressão regular, o mecanismo de expressões regulares vai interpretá-los como quantificadores ou parte de constructos de quantificador, exceto se estiverem incluídos em uma [classe de caracteres](character-classes-in-regular-expressions.md). Para interpretá-los como caracteres literais fora de uma classe de caracteres, você precisa fazer o escape, antecedendo-os com uma barra invertida. Por exemplo, a cadeia de caracteres `\*` em um padrão de expressão regular é interpretada como um caractere asterisco ("\*") integral.  
   
 ### <a name="match-zero-or-more-times-"></a>Corresponder a zero ou mais vezes: *  
+
  O quantificador `*` corresponde ao elemento anterior zero ou mais vezes. É equivalente ao quantificador `{0,}`. `*` é um quantificador Greedy, cujo equivalente lento é `*?`.  
   
  O exemplo a seguir ilustra essa expressão regular. Dos nove grupos de dígitos na cadeia de caracteres de entrada, cinco correspondem ao padrão e quatro ( `95` , `929` , `9219` e `9919` ) não.  
@@ -63,6 +66,7 @@ Os quantificadores especificam quantas instâncias de um caractere, grupo ou cla
 |`\b`|Terminar em um limite de palavra.|  
   
 ### <a name="match-one-or-more-times-"></a>Corresponder a um ou mais vezes: +  
+
  O quantificador `+` corresponde ao elemento anterior uma ou mais vezes. É equivalente a `{1,}`. `+` é um quantificador Greedy, cujo equivalente lento é `+?`.  
   
  Por exemplo, a expressão regular `\ban+\w*?\b` tenta corresponder a palavras inteiras que começam com a letra `a` seguidas por uma ou mais instâncias da letra `n`. O exemplo a seguir ilustra essa expressão regular. A expressão regular corresponde às palavras `an`, `annual`, `announcement` e `antique`, e não correspondem corretamente a `autumn` e `all`.  
@@ -80,6 +84,7 @@ Os quantificadores especificam quantas instâncias de um caractere, grupo ou cla
 |`\b`|Terminar em um limite de palavra.|  
   
 ### <a name="match-zero-or-one-time-"></a>Corresponder a zero ou uma vez: ?  
+
  O quantificador `?` corresponde ao elemento anterior zero ou uma vez. É equivalente a `{0,1}`. `?` é um quantificador Greedy, cujo equivalente lento é `??`.  
   
  Por exemplo, a expressão regular `\ban?\b` tenta corresponder a palavras inteiras que começam com a letra `a` seguidas por zero ou uma instância da letra `n`. Em outras palavras, ele tenta corresponder às palavras `a` e `an`. O exemplo a seguir ilustra essa expressão regular.  
@@ -96,7 +101,8 @@ Os quantificadores especificam quantas instâncias de um caractere, grupo ou cla
 |`\b`|Terminar em um limite de palavra.|  
   
 ### <a name="match-exactly-n-times-n"></a>Corresponder exatamente a n vezes: {n}  
- O `{` *n* `}` quantificador n corresponde ao elemento anterior exatamente *n* vezes, em que *n* é qualquer inteiro. `{`*n* `}` é um quantificador de ávido cujo equivalente lento é `{` *n* `}?` .  
+
+ O `{`  `}` quantificador n corresponde ao elemento anterior exatamente *n* vezes, em que *n* é qualquer inteiro. `{`*n* `}` é um quantificador de ávido cujo equivalente lento é `{` *n* `}?` .  
   
  Por exemplo, a expressão regular `\b\d+\,\d{3}\b` tenta corresponder a um limite de palavra seguido por um ou mais dígitos decimais seguidos por três dígitos decimais seguidos por um limite de palavra. O exemplo a seguir ilustra essa expressão regular.  
   
@@ -114,7 +120,8 @@ Os quantificadores especificam quantas instâncias de um caractere, grupo ou cla
 |`\b`|Terminar em um limite de palavra.|  
   
 ### <a name="match-at-least-n-times-n"></a>Corresponder a pelo menos n vezes: {n,}  
- O `{` *n* `,}` quantificador n corresponde ao elemento anterior pelo menos *n* vezes, em que *n* é qualquer inteiro. `{`*n* `,}` é um quantificador de ávido cujo equivalente lento é `{` *n* `,}?` .  
+
+ O `{`  `,}` quantificador n corresponde ao elemento anterior pelo menos *n* vezes, em que *n* é qualquer inteiro. `{`*n* `,}` é um quantificador de ávido cujo equivalente lento é `{` *n* `,}?` .  
   
  Por exemplo, a expressão regular `\b\d{2,}\b\D+` tenta corresponder a um limite de palavra seguido por pelo menos dois dígitos seguidos por um limite de palavra e um caractere não dígito. O exemplo a seguir ilustra essa expressão regular. A expressão regular não corresponde à frase `"7 days"` porque contém apenas um dígito decimal, mas corresponde com êxito às frases `"10 weeks and 300 years"`.  
   
@@ -131,7 +138,8 @@ Os quantificadores especificam quantas instâncias de um caractere, grupo ou cla
 |`\D+`|Corresponder a pelo menos uma casa não decimal.|  
   
 ### <a name="match-between-n-and-m-times-nm"></a>Corresponder entre n e m vezes: {n,m}  
- O `{` *n* `,` *m* `}` quantificador n m corresponde ao elemento anterior pelo menos *n* vezes, mas não mais que *m* vezes, em que *n* e *m* são inteiros. `{`*n* `,` *m* `}` é um quantificador de ávido cujo equivalente lento é `{` *n* `,` *m* `}?` .  
+
+ O `{`  `,`  `}` quantificador n m corresponde ao elemento anterior pelo menos *n* vezes, mas não mais que *m* vezes, em que *n* e *m* são inteiros. `{`*n* `,` *m* `}` é um quantificador de ávido cujo equivalente lento é `{` *n* `,` *m* `}?` .  
   
  No exemplo a seguir, a expressão regular `(00\s){2,4}` tenta corresponder a entre duas e quatro ocorrências de dois dígitos zero seguidos por um espaço. Observe que a parte final da cadeia de caracteres de entrada inclui esse padrão de cinco vezes em vez de no máximo quatro. No entanto, apenas a parte inicial dessa subcadeia de caracteres (até o espaço e o quinto par de zeros) corresponde ao padrão de expressão regular.  
   
@@ -139,6 +147,7 @@ Os quantificadores especificam quantas instâncias de um caractere, grupo ou cla
  [!code-vb[RegularExpressions.Quantifiers#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/RegularExpressions.Quantifiers/vb/Quantifiers1.vb#6)]  
   
 ### <a name="match-zero-or-more-times-lazy-match-"></a>Corresponder a zero ou mais vezes (correspondência lenta): *?  
+
  O quantificador `*?` corresponde ao elemento anterior zero ou mais vezes, mas o menor número de vezes possível. É a contraparte lenta do quantificador Greedy `*`.  
   
  No exemplo a seguir, a expressão regular `\b\w*?oo\w*?\b` corresponde a todas as palavras que contêm a cadeia de caracteres `oo`.  
@@ -157,6 +166,7 @@ Os quantificadores especificam quantas instâncias de um caractere, grupo ou cla
 |`\b`|Terminar em um limite de palavra.|  
   
 ### <a name="match-one-or-more-times-lazy-match-"></a>Corresponder a uma ou mais vezes (correspondência lenta): +?  
+
  O quantificador `+?` corresponde ao elemento anterior uma ou mais vezes, mas o menor número de vezes possível. É a contraparte lenta do quantificador Greedy `+`.  
   
  Por exemplo, a expressão regular `\b\w+?\b` corresponde a um ou mais caracteres separados por limites de palavra. O exemplo a seguir ilustra essa expressão regular.  
@@ -165,6 +175,7 @@ Os quantificadores especificam quantas instâncias de um caractere, grupo ou cla
  [!code-vb[RegularExpressions.Quantifiers#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/RegularExpressions.Quantifiers/vb/Quantifiers1.vb#8)]  
   
 ### <a name="match-zero-or-one-time-lazy-match-"></a>Corresponder a zero ou uma vez (correspondência lenta): ??  
+
  O quantificador `??` corresponde ao elemento anterior zero ou uma vez, mas o menor número de vezes possível. É a contraparte lenta do quantificador Greedy `?`.  
   
  Por exemplo, a expressão regular `^\s*(System.)??Console.Write(Line)??\(??` tenta corresponder às cadeias de caracteres “Console.Write” ou “Console.WriteLine”. A cadeia de caracteres também pode incluir "System." antes de “Console” e pode ser seguida por um parêntese de abertura. A cadeia de caracteres deve estar no início de uma linha, embora possa ser antecedida por espaço em branco. O exemplo a seguir ilustra essa expressão regular.  
@@ -184,7 +195,8 @@ Os quantificadores especificam quantas instâncias de um caractere, grupo ou cla
 |`\(??`|Corresponder a zero ou uma ocorrência do parêntese de abertura.|  
   
 ### <a name="match-exactly-n-times-lazy-match-n"></a>Corresponder exatamente a n vezes (correspondência lenta): {n}?  
- O `{` *n* `}?` quantificador n corresponde ao elemento anterior exatamente `n` vezes, em que *n* é qualquer inteiro. É a contraparte lenta do quantificador de ávido `{` *n* `}` .  
+
+ O `{`  `}?` quantificador n corresponde ao elemento anterior exatamente `n` vezes, em que *n* é qualquer inteiro. É a contraparte lenta do quantificador de ávido `{` *n* `}` .  
   
  No exemplo a seguir, a expressão regular `\b(\w{3,}?\.){2}?\w{3,}?\b` é usada para identificar um endereço de site. Observe que corresponde a “www.microsoft.com” e “msdn.microsoft.com”, mas não corresponde a “mywebsite” ou “mycompany.com”.  
   
@@ -201,12 +213,14 @@ Os quantificadores especificam quantas instâncias de um caractere, grupo ou cla
 |`\b`|Termina a correspondência em um limite de palavra.|  
   
 ### <a name="match-at-least-n-times-lazy-match-n"></a>Corresponder a pelo menos n vezes (correspondência lenta): {n,}?  
- O `{` *n* `,}?` quantificador n corresponde ao elemento anterior pelo menos `n` vezes, em que *n* é qualquer inteiro, mas o mínimo de vezes possível. É a contraparte lenta do quantificador de ávido `{` *n* `,}` .  
+
+ O `{`  `,}?` quantificador n corresponde ao elemento anterior pelo menos `n` vezes, em que *n* é qualquer inteiro, mas o mínimo de vezes possível. É a contraparte lenta do quantificador de ávido `{` *n* `,}` .  
   
- Consulte o exemplo do `{` *n* `}?` quantificador n na seção anterior para obter uma ilustração. A expressão regular nesse exemplo usa o `{` *n* `,}` quantificador n para corresponder uma cadeia de caracteres que tenha pelo menos três caracteres seguidos por um ponto.  
+ Consulte o exemplo do `{`  `}?` quantificador n na seção anterior para obter uma ilustração. A expressão regular nesse exemplo usa o `{`  `,}` quantificador n para corresponder uma cadeia de caracteres que tenha pelo menos três caracteres seguidos por um ponto.  
   
 ### <a name="match-between-n-and-m-times-lazy-match-nm"></a>Corresponder entre n e m vezes (correspondência lenta): {n,m}?  
- O `{` *n* `,` *m* `}?` quantificador n m corresponde ao elemento anterior entre `n` e `m` horas, em que *n* e *m* são inteiros, mas tantas vezes quanto possível. É a contraparte lenta do quantificador de ávido `{` *n* `,` *m* `}` .  
+
+ O `{`  `,`  `}?` quantificador n m corresponde ao elemento anterior entre `n` e `m` horas, em que *n* e *m* são inteiros, mas tantas vezes quanto possível. É a contraparte lenta do quantificador de ávido `{` *n* `,` *m* `}` .  
   
  No exemplo a seguir, a expressão regular `\b[A-Z](\w*?\s*?){1,10}[.!?]` corresponde a frases que contêm entre uma e dez palavras. Corresponde a todas as frases na cadeia de caracteres de entrada, exceto por uma frase que contém 18 palavras.  
   
@@ -224,7 +238,9 @@ Os quantificadores especificam quantas instâncias de um caractere, grupo ou cla
 |`[.!?]`|Corresponder a qualquer um dos caracteres de pontuação “.”, “!” ou “?”.|  
   
 <a name="Greedy"></a>
+
 ## <a name="greedy-and-lazy-quantifiers"></a>Quantificadores Greedy e lentos  
+
  Alguns quantificadores têm duas versões:  
   
 - Uma versão Greedy.  
@@ -250,6 +266,7 @@ Os quantificadores especificam quantas instâncias de um caractere, grupo ou cla
  Na maioria dos casos, expressões regulares com quantificadores Greedy e lentos retornam as mesmas correspondências. Geralmente retornam resultados diferentes quando são usadas com o metacaractere curinga (`.`), que corresponde a qualquer caractere.  
   
 ## <a name="quantifiers-and-empty-matches"></a>Quantificadores e correspondências vazias  
+
  Os quantificadores `*` , `+` e `{` *n* `,` *m* `}` e suas contrapartes lentas nunca se repetirão após uma correspondência vazia quando o número mínimo de capturas for encontrado. Essa regra impede que quantificadores entrem em loops infinitos em correspondências vazias de subexpressão quando o número máximo de capturas de grupo possíveis é infinito ou quase infinito.  
   
  Por exemplo, o código a seguir mostra o resultado de uma chamada para o método <xref:System.Text.RegularExpressions.Regex.Match%2A?displayProperty=nameWithType> com o padrão de expressão regular `(a?)*` que corresponde a zero ou a um caractere "a" zero ou mais vezes. Observe que o grupo de captura único captura cada “a” bem como <xref:System.String.Empty?displayProperty=nameWithType>, mas que não há uma segunda correspondência vazia, porque a primeira correspondência vazia faz com que o quantificador pare de se repetir.  

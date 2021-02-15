@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedVariable:: GetName'
 title: Método ISymUnmanagedVariable::GetName
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: eedf1ef0-9d4a-4847-a201-4e99572dfe5e
 topic_type:
 - apiref
-ms.openlocfilehash: b48d131fa99b65d38856d2b635bf59145db9157e
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 88d8cf4c81200a30e2a102b63af2817fef2b50c9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615235"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99762780"
 ---
 # <a name="isymunmanagedvariablegetname-method"></a>Método ISymUnmanagedVariable::GetName
+
 Obtém o nome dessa variável.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT GetName(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `cchName`  
  no O comprimento do buffer para o qual o `pcchName` parâmetro aponta.  
   
@@ -46,11 +49,13 @@ HRESULT GetName(
  fora O buffer que armazena o nome.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedVariable](isymunmanagedvariable-interface.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedDocument:: GetCheckSumAlgorithmId'
 title: Método ISymUnmanagedDocument::GetCheckSumAlgorithmId
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: c7f941cd-e25b-4b85-b1ce-5f77c9208fa9
 topic_type:
 - apiref
-ms.openlocfilehash: a76435be591d9f73d5975c5315f6e744f8972fc7
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 835f56875a1adc3a3b6617a5a0b280f60f918236
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83614611"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99772114"
 ---
 # <a name="isymunmanageddocumentgetchecksumalgorithmid-method"></a>Método ISymUnmanagedDocument::GetCheckSumAlgorithmId
+
 Obtém o identificador de algoritmo de soma de verificação ou retorna um GUID de todos os zeros se não houver nenhuma soma de verificação.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -33,12 +35,14 @@ HRESULT GetCheckSumAlgorithmId(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pRetVal`  
  fora Um ponteiro para uma variável que recebe o identificador de algoritmo de soma de verificação.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  S_OK se o método tiver sucesso.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedDocument](isymunmanageddocument-interface.md)

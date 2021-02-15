@@ -3,12 +3,12 @@ title: Migrar seu aplicativo Web .NET ou serviço para o Serviço de Aplicativo 
 description: Saiba mais sobre como migrar um aplicativo Web ou serviço do .NET do local para o serviço Azure App.
 ms.topic: conceptual
 ms.date: 07/08/2020
-ms.openlocfilehash: d208865942b49ae2d5437b8f2fcff294933af21b
-ms.sourcegitcommit: cb27c01a8b0b4630148374638aff4e2221f90b22
+ms.openlocfilehash: 0e2aaa23aedabef007878901ec7297711f140533
+ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86174303"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98189246"
 ---
 # <a name="migrate-your-net-web-app-or-service-to-azure-app-service"></a>Migrar seu aplicativo Web .NET ou serviço para o Serviço de Aplicativo do Azure
 
@@ -24,7 +24,7 @@ Verifique o acesso aos recursos locais, conforme precisem ser migrados ou altera
 
 * Crie uma VPN que conecta o Serviço de Aplicativo aos recursos locais usando as [Redes Virtuais do Azure](/azure/app-service/web-sites-integrate-with-vnet).
 * Exponha com segurança os serviços locais na nuvem sem alterações de firewall usando a [Retransmissão do Azure](/azure/service-bus-relay/relay-what-is-it).
-* Migre dependências como [banco de dados SQL](https://go.microsoft.com/fwlink/?linkid=863217) para o Azure.
+* Migre dependências como [banco de dados SQL](./sql.md) para o Azure.
 * Use as ofertas de plataforma como serviço na nuvem para reduzir as dependências. Por exemplo, em vez de se conectar a um servidor de email local, considere o uso de [SendGrid](/azure/sendgrid-dotnet-how-to-send-email).
 
 ### <a name="port-bindings"></a>Associações de Porta
@@ -37,9 +37,9 @@ Para o WCF, há suporte para as seguintes associações:
 |--|--|
 | `BasicHttp` |  |
 | `WSHttp` |  |
-| `WSDualHttpBinding` | [O suporte de soquete da Web](https://docs.microsoft.com/azure/app-service/web-sites-configure) deve ser habilitado. | [O suporte de soquete da Web](/azure/app-service/web-sites-configure) deve ser habilitado. |
-| `NetHttpBinding` | [O suporte de soquete da Web](https://docs.microsoft.com/azure/app-service/web-sites-configure) deve estar habilitado para contratos duplex. | [O suporte de soquete da Web](/azure/app-service/web-sites-configure) deve estar habilitado para contratos duplex. |
-| `NetHttpsBinding` | [O suporte de soquete da Web](https://docs.microsoft.com/azure/app-service/web-sites-configure) deve estar habilitado para contratos duplex. | [O suporte de soquete da Web](/azure/app-service/web-sites-configure) deve estar habilitado para contratos duplex. |
+| `WSDualHttpBinding` | [O suporte de soquete da Web](/azure/app-service/web-sites-configure) deve ser habilitado. | [O suporte de soquete da Web](/azure/app-service/web-sites-configure) deve ser habilitado. |
+| `NetHttpBinding` | [O suporte de soquete da Web](/azure/app-service/web-sites-configure) deve estar habilitado para contratos duplex. | [O suporte de soquete da Web](/azure/app-service/web-sites-configure) deve estar habilitado para contratos duplex. |
+| `NetHttpsBinding` | [O suporte de soquete da Web](/azure/app-service/web-sites-configure) deve estar habilitado para contratos duplex. | [O suporte de soquete da Web](/azure/app-service/web-sites-configure) deve estar habilitado para contratos duplex. |
 | `BasicHttpContextBinding` |  |
 | `WebHttpBinding` |  |
 | `WSHttpContextBinding` |  |
@@ -62,7 +62,7 @@ Não há suporte para o Modo de Compatibilidade do IIS5. No serviço Azure App, 
 
 #### <a name="iis7-schema-compliance"></a>IIS7+ conformidade de esquema
 
-Alguns elementos e atributos não são definidos no esquema do IIS do Serviço de Aplicativo do Azure. Se você encontrar problemas, considere o uso de [transformações XDT](https://azure.microsoft.com/documentation/articles/web-sites-transform-extend/).
+Alguns elementos e atributos não são definidos no esquema do IIS do Serviço de Aplicativo do Azure. Se você encontrar problemas, considere o uso de [transformações XDT](/azure/app-service/configure-common).
 
 #### <a name="single-application-pool-per-site"></a>Pool de aplicativos único por site
 
@@ -116,7 +116,7 @@ Talvez seja necessário atualizar as configurações de DNS com base nos requisi
 
 Se seu aplicativo não pode ser migrado diretamente para o Serviço de Aplicativo, considere usar o Serviço de Aplicativo usando contêineres do Windows, que permite o uso do GAC, componentes COM, MSIs, o acesso completo a APIs do .NET FX, DirectX e muito mais.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Como determinar se seu aplicativo se qualifica para o Serviço de Aplicativo](https://appmigration.microsoft.com/)
 * [Movendo o banco de dados para a nuvem](sql.md)

@@ -2,12 +2,12 @@
 title: 'Declarações de importação: a palavra-chave open'
 description: 'Saiba mais sobre as declarações de importação de F # e como elas especificam um módulo ou namespace cujos elementos você pode referenciar sem usar um nome totalmente qualificado.'
 ms.date: 08/15/2020
-ms.openlocfilehash: 6420df071f86159c44606c2710331d5f587023cc
-ms.sourcegitcommit: 8bfeb5930ca48b2ee6053f16082dcaf24d46d221
+ms.openlocfilehash: 4d3fd159aa4b334e9db0d7f756047470ad9c0829
+ms.sourcegitcommit: ecd9e9bb2225eb76f819722ea8b24988fe46f34c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88557601"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96739679"
 ---
 # <a name="import-declarations-the-open-keyword"></a>Importar declarações: a `open` palavra-chave
 
@@ -17,6 +17,7 @@ Uma *declaração de importação* especifica um módulo ou namespace cujos elem
 
 ```fsharp
 open module-or-namespace-name
+open type type-name
 ```
 
 ## <a name="remarks"></a>Comentários
@@ -38,10 +39,35 @@ O compilador F # não emite um erro ou aviso quando as ambiguidades ocorrem quan
 ```fsharp
 open List
 open Seq
-printfn "%A" empty
+printfn %"{empty}"
 ```
 
 Portanto, tenha cuidado ao abrir módulos ou namespaces, como `List` ou `Seq` que contenham Membros com nomes idênticos; em vez disso, considere usar os nomes qualificados. Você deve evitar qualquer situação na qual o código seja dependente da ordem das declarações de importação.
+
+## <a name="open-type-declarations"></a>Abrir declarações de tipo
+
+O F # dá suporte `open` a um tipo como este:
+
+```fsharp
+open type System.Math
+PI
+```
+
+Isso vai expor todos os campos estáticos e membros acessíveis no tipo.
+
+Você também pode `open` [gravar registros](records.md) definidos e tipos de [União discriminados](discriminated-unions.md) em F # para expor membros estáticos. No caso de uniões discriminadas, você também pode expor os casos de União. Isso pode ser útil para acessar casos de União em um tipo declarado dentro de um módulo que talvez você não queira abrir, desta forma:
+
+```fsharp
+module M =
+    type DU = A | B | C
+
+    let someOtherFunction x = x + 1
+
+// Open only the type inside the module
+open type M.DU
+
+printfn "%A" A
+```
 
 ## <a name="namespaces-that-are-open-by-default"></a>Namespaces que estão abertos por padrão
 

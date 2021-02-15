@@ -1,5 +1,6 @@
 ---
-title: <add>Elemento para <listeners> para<trace>
+description: 'Saiba mais sobre: <add> elemento para <listeners> para <trace>'
+title: <add> Elemento para <listeners> para <trace>
 ms.date: 03/30/2017
 f1_keywords:
 - http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/trace/listeners/add
@@ -8,14 +9,15 @@ helpviewer_keywords:
 - <add> element for <listeners>
 - add element for <listeners>
 ms.assetid: 81e804a3-ef11-4d39-bbde-bfa012c179e2
-ms.openlocfilehash: c64673908dc9afe67d97c08f93e5b9d9533bd34d
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: ffc0823e0c0ce1dcd9d9f19853929496b3248177
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79153666"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99639777"
 ---
-# <a name="add-element-for-listeners-for-trace"></a>\<add>Elemento para \<listeners> para\<trace>
+# <a name="add-element-for-listeners-for-trace"></a>\<add> Elemento para \<listeners> para \<trace>
+
 Adiciona um ouvinte à coleção de **ouvintes** .  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -24,7 +26,7 @@ Adiciona um ouvinte à coleção de **ouvintes** .
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<listeners>**](listeners-element-for-trace.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**
 
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <add name="name"
@@ -33,6 +35,7 @@ Adiciona um ouvinte à coleção de **ouvintes** .
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -59,6 +62,7 @@ Adiciona um ouvinte à coleção de **ouvintes** .
 |`trace`|Contém os ouvintes que coletam, armazenam e roteiam mensagens de rastreamento.|  
   
 ## <a name="remarks"></a>Comentários  
+
  As <xref:System.Diagnostics.Debug> <xref:System.Diagnostics.Trace> classes e compartilham a mesma coleção de **ouvintes** . Se você adicionar um objeto de ouvinte à coleção em uma dessas classes, a outra classe usará o mesmo ouvinte. As classes de ouvinte derivam de <xref:System.Diagnostics.TraceListener> .  
   
  Se você não especificar o `name` atributo do ouvinte de rastreamento, o <xref:System.Diagnostics.TraceListener.Name%2A> do ouvinte de rastreamento assume como padrão uma cadeia de caracteres vazia (""). Se seu aplicativo tiver apenas um ouvinte, você poderá adicioná-lo sem especificar um nome e removê-lo especificando uma cadeia de caracteres vazia para o nome. No entanto, se seu aplicativo tiver mais de um ouvinte, você deverá especificar nomes exclusivos para cada ouvinte de rastreamento, o que permite identificar e gerenciar ouvintes de rastreamento individuais nas <xref:System.Diagnostics.Debug.Listeners%2A> <xref:System.Diagnostics.Trace.Listeners%2A> coleções e.  
@@ -83,7 +87,8 @@ Adiciona um ouvinte à coleção de **ouvintes** .
 |<xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=nameWithType>|O nome do arquivo no qual as <xref:System.Diagnostics.XmlWriterTraceListener> gravações são gravadas.|  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como usar **\<add>** elementos para adicionar os ouvintes `MyListener` e a `MyEventListener` coleção de **ouvintes** . `MyListener`Cria um arquivo chamado `MyListener.log` e grava a saída no arquivo. `MyEventListener`Cria uma entrada no log de eventos.  
+
+ O exemplo a seguir mostra como usar **\<add>** elementos para adicionar os ouvintes `MyListener` e a `MyEventListener` coleção de **ouvintes** . `MyListener` Cria um arquivo chamado `MyListener.log` e grava a saída no arquivo. `MyEventListener` Cria uma entrada no log de eventos.  
   
 ```xml  
 <configuration>  
@@ -101,7 +106,7 @@ Adiciona um ouvinte à coleção de **ouvintes** .
 </configuration>  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Diagnostics.Trace>
 - <xref:System.Diagnostics.Debug>

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração CorCheckDuplicatesFor'
 title: Enumeração CorCheckDuplicatesFor
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: d8ec8d3c-70f7-4cc6-9957-68068fd8f49c
 topic_type:
 - apiref
-ms.openlocfilehash: 2985c419b25b8bf76df8fee0f0f37ba9ebee3df7
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 5649fc6bc66dd282b64fb5064e302a9f77420cd6
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84007891"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99678413"
 ---
 # <a name="corcheckduplicatesfor-enumeration"></a>Enumeração CorCheckDuplicatesFor
+
 Especifica os tokens de metadados que serão verificados em busca de duplicatas.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -66,7 +68,7 @@ typedef enum CorCheckDuplicatesFor {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`MDDupAll`|Verifique se há duplicatas em todos os tokens de metadados.|  
 |`MDDupENC`|Não usado.|  
@@ -97,12 +99,13 @@ typedef enum CorCheckDuplicatesFor {
 |`MDDupDefault`|Verifique se há duplicatas `mdMemberRef` de `mdTypeRef` tokens,,, `mdSignature` `mdTypeSpec` e `mdMethodSpec` .|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorHdr. h  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumerações de metadados](metadata-enumerations.md)

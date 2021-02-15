@@ -1,19 +1,20 @@
 ---
-title: Habilitando conjuntos de resultados ativos múltiplos
+title: Habilitando vários conjuntos de resultados ativos
 description: Saiba como habilitar/desabilitar MARS em uma cadeia de conexão, que funciona com SQL Server para que você possa executar vários lotes em uma única conexão no ADO.NET.
 ms.date: 03/30/2017
 dev_langs:
 - csharp
 - vb
 ms.assetid: 576079e4-debe-4ab5-9204-fcbe2ca7a5e2
-ms.openlocfilehash: 43bdfebce291c3c1d6c90104c5fef440b295934b
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 0c5b4043b389c7dde39a477f90e82bbf654331f7
+ms.sourcegitcommit: 5b475c1855b32cf78d2d1bbb4295e4c236f39464
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84286475"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91156245"
 ---
-# <a name="enabling-multiple-active-result-sets"></a>Habilitando conjuntos de resultados ativos múltiplos
+# <a name="enabling-multiple-active-result-sets"></a>Habilitando vários conjuntos de resultados ativos
+
 MARS (Conjuntos de resultados ativos múltiplos) é um recurso que funciona com o SQL Server para permitir a execução de vários lotes em uma única conexão. Quando o MARS está habilitado para uso com o SQL Server, cada objeto de comando usado adiciona uma sessão à conexão.  
   
 > [!NOTE]
@@ -53,9 +54,11 @@ string connectionString = "Data Source=MSSQL1;" +
 ```  
   
 ## <a name="special-considerations-when-using-mars"></a>Considerações especiais ao usar MARS  
+
  Em geral, os aplicativos existentes não devem precisar de modificação para usar uma conexão habilitada para MARS. No entanto, se você quiser usar recursos de MARS em seus aplicativos, deverá entender as considerações especiais a seguir.  
   
 ### <a name="statement-interleaving"></a>Interpolação de instrução  
+
  As operações de MARS são executadas de forma síncrona no servidor. É permitida a intercalação das instruções SELECT e BULK INSERT. No entanto, as instruções em DML (linguagem de manipulação de dados) e DDL (linguagem de definição de dados) são executadas atomicamente. Todas as tentativas de instruções para serem executadas enquanto um lote atômico estiver em execução serão bloqueadas. A execução paralela no servidor não é um recurso do MARS.  
   
  Se dois lotes forem enviados em uma conexão MARS, um deles contendo uma instrução SELECT, o outro contendo uma instrução DML, o DML poderá iniciar a execução na execução da instrução SELECT. No entanto, a instrução DML deve ser executada até a conclusão para que a instrução SELECT possa progredir. Se ambas as instruções estiverem em execução em uma mesma transação, todas as alterações feitas por uma instrução DML após a instrução SELECT começar a execução não ficarão visíveis para a operação de leitura.  
@@ -63,15 +66,19 @@ string connectionString = "Data Source=MSSQL1;" +
  Uma instrução WAITFOR dentro de uma instrução SELECT não produzirá a transação enquanto estiver em espera, ou seja, até que a primeira linha seja produzida. Isso implica que nenhum outro lote pode ser executado na mesma conexão enquanto uma instrução WAITFOR está em espera.  
   
 ### <a name="mars-session-cache"></a>Cache de sessão de MARS  
+
  Quando uma conexão é aberta com o MARS habilitado, uma sessão lógica é criada, o que adiciona sobrecarga extra. Para reduzir a sobrecarga e melhorar o desempenho, o **SqlClient** armazena em cache a sessão de MARS dentro de uma conexão. O cache contém no máximo 10 sessões de MARS. Esse valor não é especificado pelo usuário. Se o limite de sessão for atingido, uma nova sessão será criada – um erro não será gerado. O cache e as sessões que ele contém são por conexão e não são compartilhados entre conexões. Quando uma sessão é liberada, ela retorna ao pool, a menos que o limite superior do pool tenha sido atingido. Se o pool de cache estiver cheio, a sessão será fechada. As sessões de MARS não expiram. Somente são limpas quando o objeto de conexão é descartado. O cache de sessão de MARS não fica pré-carregado. Ele é carregado quando o aplicativo requer mais sessões.  
   
 ### <a name="thread-safety"></a>Acesso thread-safe  
+
  As operações de MARS não são thread-safe.  
   
 ### <a name="connection-pooling"></a>Pool de conexões  
+
  Conexões habilitadas para MARS são agrupadas como qualquer outra conexão. Se um aplicativo abrir duas conexões, uma com o MARS habilitado e outra com o MARS desabilitado, as duas conexões ficarão em pools separados. Para obter mais informações, consulte [Pool de Conexões do SQL Server (ADO.NET)](../sql-server-connection-pooling.md).  
   
 ### <a name="sql-server-batch-execution-environment"></a>Ambiente de execução em lotes do SQL Server  
+
  Quando uma conexão é aberta, um ambiente padrão é definido. Esse ambiente é então copiado para uma sessão MARS lógica.  
   
  O ambiente de execução de lote inclui os seguintes componentes:  
@@ -89,6 +96,7 @@ string connectionString = "Data Source=MSSQL1;" +
  Com o MARS, um ambiente de execução padrão é associado a uma conexão. Cada lote novo que inicia a execução sob uma determinada conexão recebe uma cópia do ambiente padrão. Sempre que o código for executado em um determinado lote, todas as alterações feitas no ambiente terão o escopo definido para o lote específico. Quando a execução termina, as configurações de execução são copiadas no ambiente padrão. No caso de um único lote que envia vários comandos a serem executados consecutivamente na mesma transação, as semânticas são as mesmas que aquelas descritas pelas conexões que envolvem clientes ou servidores anteriores.  
   
 ### <a name="parallel-execution"></a>Execução paralela  
+
  O MARS não foi desenvolvido para remover todos os requisitos de várias conexões em um aplicativo. Se um aplicativo precisar de execução paralela real de comandos em um servidor, será necessário usar várias conexões.  
   
  Por exemplo, considere o cenário a seguir. Dois objetos de comando são criados, um para processamento de um conjunto de resultados e outro para a atualização de dados; eles compartilham uma conexão comum via MARS. Neste cenário, a `Transaction`.`Commit` falha na atualização até que todos os resultados tenham sido lidos no primeiro objeto de comando, gerando a seguinte exceção:  
@@ -110,9 +118,10 @@ string connectionString = "Data Source=MSSQL1;" +
 3. Não usar MARS; em vez disso, use uma conexão separada para cada objeto de comando, como seria feito antes do MARS.  
   
 ### <a name="detecting-mars-support"></a>Detectando o suporte de MARS  
+
  Um aplicativo pode verificar o suporte a MARS lendo o valor `SqlConnection.ServerVersion`. O número principal deve ser 9 para o SQL Server 2005 e 10 para o SQL Server 2008.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [MARS (Vários Conjuntos de Resultados Ativos)](multiple-active-result-sets-mars.md)
+- [MARS (conjunto de resultados ativos múltiplos)](multiple-active-result-sets-mars.md)
 - [Visão geral do ADO.NET](../ado-net-overview.md)

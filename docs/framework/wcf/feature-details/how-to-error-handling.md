@@ -1,17 +1,18 @@
 ---
+description: 'Saiba mais sobre: como: tratamento de erros'
 title: 'Como: Tratamento de erros'
 ms.date: 03/30/2017
 ms.assetid: de566e39-9358-44ff-8244-780f6b799966
-ms.openlocfilehash: 3b8e48a74ff7671b942b5499fb3a0b5d0f389d61
-ms.sourcegitcommit: 8a0fe8a2227af612f8b8941bdb8b19d6268748e7
+ms.openlocfilehash: 1d385070e4cc0d55bc3327114baf4e4ff543171f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71834707"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99704648"
 ---
 # <a name="how-to-error-handling"></a>Como: Tratamento de erros
 
-Este tópico descreve as etapas básicas necessárias para criar uma configuração de roteamento que usa o tratamento de erros. Neste exemplo, as mensagens são roteadas para um ponto de extremidade de destino. Se uma mensagem não puder ser entregue devido a uma falha relacionada à rede ou à comunicação (<xref:System.ServiceModel.CommunicationException>), a mensagem será reenviada para um ponto de extremidade alternativo.
+Este tópico descreve as etapas básicas necessárias para criar uma configuração de roteamento que usa o tratamento de erros. Neste exemplo, as mensagens são roteadas para um ponto de extremidade de destino. Se uma mensagem não puder ser entregue devido a uma falha relacionada à rede ou à comunicação ( <xref:System.ServiceModel.CommunicationException> ), a mensagem será reenviada para um ponto de extremidade alternativo.
 
 > [!NOTE]
 > Para simular uma falha de rede, o ponto de extremidade de destino usado neste exemplo contém um endereço incorreto. As mensagens roteadas para esse ponto de extremidade falham, pois nenhum serviço está escutando no endereço especificado.
@@ -69,7 +70,7 @@ Este tópico descreve as etapas básicas necessárias para criar uma configuraç
 
 3. Defina a lista de pontos de extremidade de backup, que contém os pontos de extremidades para os quais uma mensagem é enviada no caso de uma falha de comunicação ou rede ao enviar para o ponto de extremidade de destino primário. O exemplo a seguir define uma lista de backup que contém um ponto de extremidade; no entanto, vários pontos de extremidade podem ser especificados em uma lista de backup.
 
-     Se a lista de backup contiver vários pontos de extremidade, quando ocorrer uma falha de rede ou de comunicação, o serviço de roteamento tentará enviar a mensagem para o primeiro ponto de extremidade na lista. Se ocorrer uma falha de rede ou comunicação ao enviar para esse ponto de extremidade, o serviço de roteamento tentará enviar a mensagem para o próximo ponto de extremidade contido na lista. O serviço continuará enviando a mensagem para cada ponto de extremidade na lista de pontos de extremidade de backup até que a mensagem seja enviada com êxito, todos os pontos de extremidade de backup retornam uma rede ou um erro relacionado a comunicações, ou a mensagem é enviada e o Endpoint retorna uma não rede, erro relacionado a não comunicação.
+     Se a lista de backup contiver vários pontos de extremidade, quando ocorrer uma falha de rede ou de comunicação, o serviço de roteamento tentará enviar a mensagem para o primeiro ponto de extremidade na lista. Se ocorrer uma falha de rede ou comunicação ao enviar para esse ponto de extremidade, o serviço de roteamento tentará enviar a mensagem para o próximo ponto de extremidade contido na lista. O serviço continua enviando a mensagem para cada ponto de extremidade na lista de pontos de extremidade de backup até que a mensagem seja enviada com êxito, todos os pontos de extremidade de backup retornam uma rede ou um erro relacionado à comunicação, ou a mensagem é enviada e o ponto final retorna um erro não relacionado à rede e não à comunicação.
 
     ```xml
     <backupLists>

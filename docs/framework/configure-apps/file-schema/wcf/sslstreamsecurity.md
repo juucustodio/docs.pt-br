@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <sslStreamSecurity>'
 title: <sslStreamSecurity>
 ms.date: 03/30/2017
 ms.assetid: 430a378b-a742-4858-8a12-9f9b235fd627
-ms.openlocfilehash: c5c7ec2b18143ff4d71540a60e24b8225ca4db16
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 77e08deb5263e330ead5df21ed1ef2dddbba28ba
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73738597"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99682690"
 ---
 # \<sslStreamSecurity>
+
 Representa um elemento de associação personalizado que suporta segurança de canal usando um fluxo SSL.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -19,7 +21,7 @@ Representa um elemento de associação personalizado que suporta segurança de c
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<sslStreamSecurity>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <sslStreamSecurity requireClientCertificate="Boolean"
@@ -27,6 +29,7 @@ Representa um elemento de associação personalizado que suporta segurança de c
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -37,6 +40,7 @@ Representa um elemento de associação personalizado que suporta segurança de c
 |sslProtocols|Um valor de sinalizador de enumeração SslProtocols que especifica quais SslProtocols têm suporte. O padrão é Ssl3&#124;TLS&#124;Tls11&#124;Tls12.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -45,7 +49,7 @@ Representa um elemento de associação personalizado que suporta segurança de c
 |-------------|-----------------|  
 |[\<binding>](bindings.md)|Define todos os recursos de associação da associação personalizada.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.SslStreamSecurityElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>

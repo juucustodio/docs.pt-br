@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICLRMetaHost:: GetRuntime'
 title: Método ICLRMetaHost::GetRuntime
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: a10749f1-ab91-47cf-982f-d8ccd2e81bd2
 topic_type:
 - apiref
-ms.openlocfilehash: d482e25c7bf0f028e2478c8e7b7863bc54d7aeb9
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 8a2ada652dbb139337150cb8ed20986ebf8ae7f4
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84504185"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99637515"
 ---
 # <a name="iclrmetahostgetruntime-method"></a>Método ICLRMetaHost::GetRuntime
+
 Obtém a interface [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) que corresponde a uma versão específica do Common Language Runtime (CLR). Esse método substitui a função [CorBindToRuntimeEx](corbindtoruntimeex-function.md) usada com o sinalizador [STARTUP_LOADER_SAFEMODE](startup-flags-enumeration.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,8 +38,9 @@ HRESULT GetRuntime (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pwzVersion`  
- no A versão de compilação .NET Framework armazenada nos metadados, no formato "v*A*. *B*[.* X*] ". *A*, *B*e *X* são números decimais que correspondem à versão principal, à versão secundária e ao número da compilação.  
+ no A versão de compilação .NET Framework armazenada nos metadados, no formato "v *A*. *B*[.*X*] ". *A*, *B* e *X* são números decimais que correspondem à versão principal, à versão secundária e ao número da compilação.  
   
 > [!NOTE]
 > Esse parâmetro deve corresponder ao nome do diretório para a versão .NET Framework, pois ele aparece em C:\Windows\Microsoft.NET\Framework ou C:\Windows\Microsoft.NET\Framework64.  
@@ -50,7 +53,8 @@ HRESULT GetRuntime (
  `ppRuntime`  
  fora Um ponteiro para a interface [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) que corresponde ao tempo de execução solicitado.  
   
-## <a name="return-value"></a>Valor Retornado  
+## <a name="return-value"></a>Valor retornado  
+
  Esse método retorna os HRESULTs específicos a seguir, bem como os erros de HRESULT que indicam falha de método.  
   
 |HRESULT|Descrição|  
@@ -59,21 +63,23 @@ HRESULT GetRuntime (
 |E_POINTER|`pwzVersion` ou `ppRuntime` é nulo.|  
   
 ## <a name="remarks"></a>Comentários  
+
  Esse método interage consistentemente com interfaces herdadas, como a interface [ICorRuntimeHost](icorruntimehost-interface.md) e funções herdadas, como as funções preteridas `CorBindTo*` (consulte [funções de Hospedagem de CLR preteridas](deprecated-clr-hosting-functions.md) na API de hospedagem do .NET Framework 2,0). Ou seja, os tempos de execução que são carregados com a API herdada são visíveis para a nova API, e os tempos de execução que são carregados com a nova API são visíveis para a API herdada.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MetaHost. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRMetaHost](iclrmetahost-interface.md)
 - [Interfaces e coclasse de hospedagem CLR reprovadas](deprecated-clr-hosting-interfaces-and-coclasses.md)
 - [Interfaces de hospedagem CLR](clr-hosting-interfaces.md)
 - [Funções de hospedagem CLR reprovadas](deprecated-clr-hosting-functions.md)
-- [Hosting](index.md)
+- [Hospedagem](index.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: criando, excluindo e movendo arquivos e diretórios no Visual Basic'
 title: Criar, excluir e mover arquivos e diretórios
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - I/O [Visual Basic], renaming folders
 - I/O [Visual Basic], moving files
 ms.assetid: 8f814fcc-4c42-4dbb-a131-005ec445ac9e
-ms.openlocfilehash: 12f5e8d29ea92750884e45bf1d9ef05bbfe672b8
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 3f0a718a5222fc9840152b3379ce3d56af25f9c9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84401752"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99666297"
 ---
 # <a name="creating-deleting-and-moving-files-and-directories-in-visual-basic"></a>Criando, excluindo e movendo arquivos e diretórios no Visual Basic
 

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: <sharedListeners> elemento'
 title: Elemento <sharedListeners>
 ms.date: 03/30/2017
 f1_keywords:
@@ -11,21 +12,22 @@ helpviewer_keywords:
 - trace listeners, <sharedListeners> element
 - sharedListeners element
 ms.assetid: de200534-19dd-4156-86cf-c50521802c4c
-ms.openlocfilehash: 69f15cc9583b397017ac30a0c567914495867c18
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 904648754c99464e1109a04a5a19b52ec1a1cace
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79153315"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99750553"
 ---
 # <a name="sharedlisteners-element"></a>Elemento \<sharedListeners>
+
 Contém os ouvintes que podem ser referenciados por qualquer elemento de origem ou de rastreamento.  Esses ouvintes não recebem nenhum rastreamento por padrão e não é possível recuperar esses ouvintes em tempo de execução. Os ouvintes identificados como ouvintes compartilhados podem ser adicionados a fontes ou rastreamentos por nome.  
   
 [**\<configuration>**](../configuration-element.md)  
 &nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;**\<sharedListeners>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <sharedListeners>
@@ -34,9 +36,11 @@ Contém os ouvintes que podem ser referenciados por qualquer elemento de origem 
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
+
  Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  
@@ -53,11 +57,13 @@ Contém os ouvintes que podem ser referenciados por qualquer elemento de origem 
 |`system.diagnostics`|Especifica o elemento raiz para a seção de configuração ASP.NET.|  
   
 ## <a name="remarks"></a>Comentários  
+
  A adição de um ouvinte à coleção de ouvintes compartilhados não o torna um ouvinte ativo. Ele ainda deve ser adicionado a uma origem de rastreamento ou a um rastreamento adicionando-o à `Listeners` coleção para esse elemento Trace. As classes de ouvinte no .NET Framework derivam da <xref:System.Diagnostics.TraceListener> classe.  
   
- Esse elemento pode ser usado no arquivo de configuração da máquina (Machine. config) e no arquivo de configuração do aplicativo.  
+ Esse elemento pode ser usado no arquivo de configuração da máquina (Machine.config) e no arquivo de configuração do aplicativo.  
   
 ## <a name="example"></a>Exemplo  
+
  O exemplo a seguir mostra como usar o `<sharedListeners>` elemento para adicionar o ouvinte `console` à `Listeners` coleção para as <xref:System.Diagnostics.TraceSource> classes e <xref:System.Diagnostics.Trace> . O ouvinte de rastreamento do console grava informações de rastreamento no console por meio de chamadas para o <xref:System.Diagnostics.TraceSource> ou o <xref:System.Diagnostics.Trace> .  
   
 ```xml  
@@ -88,7 +94,7 @@ Contém os ouvintes que podem ser referenciados por qualquer elemento de origem 
 </configuration>
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Diagnostics.TraceListener>
 - [Esquema de configurações de rastreamento e depuração](index.md)

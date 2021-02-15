@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugRemote:: CreateProcessEx'
 title: Método ICorDebugRemote::CreateProcessEx
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 41af93c7-e448-4251-8d4d-413d38c635f2
 topic_type:
 - apiref
-ms.openlocfilehash: 4b2689f04228c9ecbbbb18531a0aefd3c40e3072
-ms.sourcegitcommit: d6bd7903d7d46698e9d89d3725f3bb4876891aa3
+ms.openlocfilehash: cd27400f5c9f348621fb66b3b7730cf15d397151
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83377986"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99794722"
 ---
 # <a name="icordebugremotecreateprocessex-method"></a>Método ICorDebugRemote::CreateProcessEx
+
 Inicia um processo em um computador remoto sob o depurador.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -46,6 +48,7 @@ HRESULT CreateProcessEx (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pRemoteTarget`  
  no Ponteiro para uma [interface ICorDebugRemoteTarget](icordebugremotetarget-interface.md). Usado para determinar o computador remoto no qual o processo será iniciado.  
   
@@ -86,6 +89,7 @@ HRESULT CreateProcessEx (
  fora Um ponteiro para o endereço de um objeto "interface ICorDebugProcess" que representa o processo.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  S_OK  
  O processo foi iniciado com êxito no computador remoto e retornou uma "interface ICorDebugProcess" para depuração.  
   
@@ -93,9 +97,11 @@ HRESULT CreateProcessEx (
  Não é possível iniciar o processo no computador remoto e retornar uma "interface ICorDebugProcess" para depuração.  
   
 ## <a name="remarks"></a>Comentários  
+
  Não há suporte para a depuração de modo misto no Silverlight.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug. idl  
@@ -104,7 +110,7 @@ HRESULT CreateProcessEx (
   
  **Versões do .NET Framework:** 4,5, 4, 3,5 SP1  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugRemote](icordebugremote-interface.md)
 - [Interface ICorDebug](icordebug-interface.md)

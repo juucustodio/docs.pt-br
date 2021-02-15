@@ -1,28 +1,30 @@
 ---
+description: 'Saiba mais sobre: <loadFromRemoteSources> elemento'
 title: Elemento <loadFromRemoteSources>
 ms.date: 05/24/2018
 helpviewer_keywords:
 - loadFromRemoteSources element
 - <loadFromRemoteSources> element
 ms.assetid: 006d1280-2ac3-4db6-a984-a3d4e275046a
-ms.openlocfilehash: a0dcffe378cdd09de0fbd8f0a6ef0635c033fd9c
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: f5dcff1fb7b0393fe5896dd9d107461a3151f79a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79154056"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99782345"
 ---
 # <a name="loadfromremotesources-element"></a>Elemento \<loadFromRemoteSources>
+
 Especifica se os assemblies carregados de fontes remotas devem receber confiança total no .NET Framework 4 e posterior.
   
 > [!NOTE]
-> Se você foi direcionado para este artigo devido a uma mensagem de erro na lista de erros do projeto do Visual Studio ou um erro de compilação, consulte [como: usar um assembly da Web no Visual Studio](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ee890038(v=vs.100)).  
+> Se você foi direcionado para este artigo devido a uma mensagem de erro na lista de erros do projeto do Visual Studio ou um erro de compilação, consulte [como: usar um assembly da Web no Visual Studio](/previous-versions/visualstudio/visual-studio-2010/ee890038(v=vs.100)).  
   
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<loadFromRemoteSources>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <loadFromRemoteSources
@@ -30,6 +32,7 @@ Especifica se os assemblies carregados de fontes remotas devem receber confianç
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
@@ -46,6 +49,7 @@ Especifica se os assemblies carregados de fontes remotas devem receber confianç
 |`true`|Conceda confiança total a aplicativos de fontes remotas.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -99,7 +103,7 @@ Definindo o `<loadFromRemoteSources>` elemento para `true` impedir que essa exce
 
 ## <a name="configuration-file"></a>Arquivo de configuração
 
-Esse elemento é normalmente usado no arquivo de configuração do aplicativo, mas pode ser usado em outros arquivos de configuração, dependendo do contexto. Para obter mais informações, consulte o artigo [usos mais implícitos da política de CAS: loadFromRemoteSources](https://docs.microsoft.com/archive/blogs/shawnfa/more-implicit-uses-of-cas-policy-loadfromremotesources) no blog de segurança do .net.  
+Esse elemento é normalmente usado no arquivo de configuração do aplicativo, mas pode ser usado em outros arquivos de configuração, dependendo do contexto. Para obter mais informações, consulte o artigo [usos mais implícitos da política de CAS: loadFromRemoteSources](/archive/blogs/shawnfa/more-implicit-uses-of-cas-policy-loadfromremotesources) no blog de segurança do .net.  
 
 ## <a name="example"></a>Exemplo
 
@@ -113,10 +117,10 @@ O exemplo a seguir mostra como conceder confiança total a assemblies carregados
 </configuration>  
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Mais usos implícitos da política de CAS: loadFromRemoteSources](https://docs.microsoft.com/archive/blogs/shawnfa/more-implicit-uses-of-cas-policy-loadfromremotesources)
-- [Como executar código parcialmente confiável em uma área restrita](../../../misc/how-to-run-partially-trusted-code-in-a-sandbox.md)
+- [Mais usos implícitos da política de CAS: loadFromRemoteSources](/archive/blogs/shawnfa/more-implicit-uses-of-cas-policy-loadfromremotesources)
+- [Como: executar código parcialmente confiável em uma área restrita](../../../misc/how-to-run-partially-trusted-code-in-a-sandbox.md)
 - [Esquema de configurações do runtime](index.md)
 - [Esquema do arquivo de configuração](../index.md)
 - <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>

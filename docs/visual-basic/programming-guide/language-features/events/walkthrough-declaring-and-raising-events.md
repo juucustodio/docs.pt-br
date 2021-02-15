@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Walkthrough: declarando e gerando eventos (Visual Basic)'
 title: declarar e gerar eventos
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,17 +10,19 @@ helpviewer_keywords:
 - events [Visual Basic], raising
 - raising events [Visual Basic], walkthroughs
 ms.assetid: 8ffb3be8-097d-4d3c-b71e-04555ebda2a2
-ms.openlocfilehash: 3da60014d7ac95189c5d56c3e339ff1b054a40dc
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 98e9d2eabd1ace06de9f8cc7931013093d864e7a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84405087"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100466374"
 ---
 # <a name="walkthrough-declaring-and-raising-events-visual-basic"></a>Instruções passo a passo: declarando e acionando eventos (Visual Basic)
+
 Este tutorial demonstra como declarar e gerar eventos para uma classe chamada `Widget` . Depois de concluir as etapas, talvez você queira ler o tópico complementar, [Walkthrough: Manipulando eventos](walkthrough-handling-events.md), que mostra como usar eventos de `Widget` objetos para fornecer informações de status em um aplicativo.  
   
 ## <a name="the-widget-class"></a>A classe Widget  
+
  Suponha que, por enquanto, você tenha uma `Widget` classe. Sua `Widget` classe tem um método que pode levar muito tempo para ser executada e você deseja que seu aplicativo seja capaz de colocar algum tipo de indicador de conclusão.  
   
  É claro que você pode fazer `Widget` com que o objeto mostre uma caixa de diálogo de porcentagem concluída, mas, em seguida, você estaria preso a essa caixa de diálogo em todos os projetos nos quais usou a `Widget` classe. Um bom princípio do design de objeto é permitir que o aplicativo que usa um objeto manipule a interface do usuário — a menos que a finalidade do objeto seja gerenciar um formulário ou caixa de diálogo.  
@@ -34,7 +37,7 @@ Este tutorial demonstra como declarar e gerar eventos para uma classe chamada `W
   
 3. Nomeie os objetos como mostrado na tabela a seguir.  
   
-    |Objeto|Propriedade|Configuração|  
+    |Objeto|Propriedade|Setting|  
     |------------|--------------|-------------|  
     |`Button1`|`Text`|Tarefa de início|  
     |`Button2`|`Text`|Cancelar|  
@@ -53,7 +56,7 @@ Este tutorial demonstra como declarar e gerar eventos para uma classe chamada `W
 > [!NOTE]
 > Você pode declarar argumentos de evento da mesma forma como faz argumentos de procedimentos, com as seguintes exceções: os eventos não podem ter `Optional` `ParamArray` argumentos ou, e os eventos não têm valores de retorno.  
   
- O `PercentDone` evento é gerado pelo `LongTask` método da `Widget` classe. `LongTask`usa dois argumentos: o período de tempo que o método pretende a fazer funcionar e o intervalo de tempo mínimo antes de `LongTask` pausar para gerar o `PercentDone` evento.  
+ O `PercentDone` evento é gerado pelo `LongTask` método da `Widget` classe. `LongTask` usa dois argumentos: o período de tempo que o método pretende a fazer funcionar e o intervalo de tempo mínimo antes de `LongTask` pausar para gerar o `PercentDone` evento.  
   
 #### <a name="to-raise-the-percentdone-event"></a>Para gerar o evento PercentDone  
   
@@ -73,7 +76,7 @@ Este tutorial demonstra como declarar e gerar eventos para uma classe chamada `W
   
  Agora que a `Widget` classe pode gerar eventos, você pode ir para o próximo passo a passos. [Walkthrough: manipular eventos](walkthrough-handling-events.md) demonstra como usar `WithEvents` o para associar um manipulador de eventos ao `PercentDone` evento.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.DateAndTime.Timer%2A>
 - <xref:Microsoft.VisualBasic.DateAndTime.Now%2A>

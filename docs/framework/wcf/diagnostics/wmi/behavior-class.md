@@ -1,16 +1,18 @@
 ---
+description: 'Saiba mais sobre: classe de comportamento'
 title: Behavior class
 ms.date: 03/30/2017
 ms.assetid: 75d117f5-87f9-40fb-84c6-9e2fef6da6af
-ms.openlocfilehash: 7c7c25e63677ca2b48a5df18892d2e8ab946ad08
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 7d5f62fa51ebee5fbd4c53506208faf579af51ae
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61964236"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99757924"
 ---
 # <a name="behavior-class"></a>Behavior class
-## <a name="syntax"></a>Sintaxe  
+
+## <a name="syntax"></a>Syntax  
   
 ```csharp
 class Behavior  
@@ -20,12 +22,15 @@ class Behavior
 ```  
   
 ## <a name="methods"></a>Métodos  
- A classe de comportamento não define quaisquer métodos.  
+
+ A classe de comportamento não define nenhum método.  
   
 ## <a name="properties"></a>Propriedades  
+
  A classe de comportamento tem a seguinte propriedade:  
   
 ### <a name="type"></a>Tipo  
+
  Tipo de dados: cadeia de caracteres  
   
  Tipo de acesso: Somente leitura  
@@ -34,10 +39,10 @@ class Behavior
   
 ## <a name="requirements"></a>Requisitos  
   
-|MOF|Declarado em Servicemodel.mof.|  
+|MOF|Declarado em ServiceModel. mof.|  
 |---------|-----------------------------------|  
-|Namespace|Definido no root\ServiceModel|  
+|Namespace|Definido em root\ServiceModel|  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A>

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugMDA:: GetDescription'
 title: Método ICorDebugMDA::GetDescription
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 01d1b481-ca67-4712-8744-d342ec0df639
 topic_type:
 - apiref
-ms.openlocfilehash: 522e992e6d7e9a64f7590bbec0e9106e0e1f8f47
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: 75ee7d0b912c9f0039acc872173f2cbad25fff38
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83212133"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99801196"
 ---
 # <a name="icordebugmdagetdescription-method"></a>Método ICorDebugMDA::GetDescription
+
 Obtém uma cadeia de caracteres que contém a descrição do MDA (Assistente de depuração gerenciada) representado por [ICorDebugMDA](icordebugmda-interface.md).  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -37,6 +39,7 @@ HRESULT GetDescription (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `cchName`  
  no O tamanho do buffer de cadeia de caracteres que armazenará a descrição.  
   
@@ -47,9 +50,11 @@ HRESULT GetDescription (
  fora Um buffer de cadeia de caracteres que contém a descrição do MDA.  
   
 ## <a name="remarks"></a>Comentários  
+
  A cadeia de caracteres pode ser de comprimento zero.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  
@@ -58,7 +63,7 @@ HRESULT GetDescription (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorDebugMDA](icordebugmda-interface.md)
-- [Diagnosticando erros com assistentes para depuração gerenciada](../../debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+- [Diagnosticando erros com assistentes de depuração gerenciados](../../debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

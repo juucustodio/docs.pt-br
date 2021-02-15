@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como: discar modems anexados a portas seriais no Visual Basic'
 title: 'Como: discar modems anexados a portas seriais'
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - serial ports [Visual Basic], dialing
 - My.Computer.Ports object
 ms.assetid: 3834db40-f431-45f1-b671-dc91787164b6
-ms.openlocfilehash: e55ce6399dae435fbd5b2f730d4d0848c98d8955
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 016a3f768020c551c4f4ca7f5a097f4f1f9d07d7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84363261"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797699"
 ---
 # <a name="how-to-dial-modems-attached-to-serial-ports-in-visual-basic"></a>Como discar modems conectados a portas seriais no Visual Basic
 
@@ -55,7 +56,7 @@ Este tópico descreve como usar o `My.Computer.Ports` para discar um modem no Vi
   
  Neste exemplo, o aplicativo desconecta a porta serial após discar o modem. Na verdade, você desejará transferir dados de/para o modem. Para obter mais informações, consulte [Como receber cadeias de caracteres de portas seriais](how-to-receive-strings-from-serial-ports.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.Devices.Ports>
 - <xref:System.IO.Ports.SerialPort?displayProperty=nameWithType>

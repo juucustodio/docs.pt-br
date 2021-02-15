@@ -1,19 +1,21 @@
 ---
+description: 'Saiba mais sobre: acessando dados XML usando XPathNavigator'
 title: Acessando dados XML usando XPathNavigator
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
 ms.assetid: c57b46e6-5c77-408f-bc4e-67a5dcc9cc05
-ms.openlocfilehash: 717937ebca9b5775619b0dde749f0566c73ca116
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: 849afd866f19df54e2715fab57ca0f81863278d7
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84290922"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99642624"
 ---
 # <a name="accessing-xml-data-using-xpathnavigator"></a>Acessando dados XML usando XPathNavigator
+
 A classe de <xref:System.Xml.XPath.XPathNavigator> fornece métodos para navegar, nós dados XML do extrair e para acessar dados fortemente tipados XML em um objeto de <xref:System.Xml.XPath.XPathDocument> ou de <xref:System.Xml.XmlDocument> .  
   
 ## <a name="in-this-section"></a>Nesta seção  
+
  [Navegação do nó usando XPathNavigator](node-set-navigation-using-xpathnavigator.md)  
  Descreve os métodos definidos de navegação do nó da classe de <xref:System.Xml.XPath.XPathNavigator> usada para navegar nós em um objeto de <xref:System.Xml.XPath.XPathDocument> ou de <xref:System.Xml.XmlDocument> .  
   
@@ -29,7 +31,7 @@ A classe de <xref:System.Xml.XPath.XPathNavigator> fornece métodos para navegar
  [Funções definidas pelo usuário e variáveis](user-defined-functions-and-variables.md)  
  Descreve implementar uma classe personalizada de <xref:System.Xml.Xsl.XsltContext> junto com as interfaces <xref:System.Xml.Xsl.IXsltContextFunction> e <xref:System.Xml.Xsl.IXsltContextVariable> que suportam funções e variáveis de extensão.  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.XmlDocument>
 - <xref:System.Xml.XPath.XPathDocument>

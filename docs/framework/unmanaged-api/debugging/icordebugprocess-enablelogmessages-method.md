@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugProcess:: EnableLogMessages'
 title: Método ICorDebugProcess::EnableLogMessages
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 14a4e5a3-3eaf-4f53-9dd1-762726963a23
 topic_type:
 - apiref
-ms.openlocfilehash: 3b850a462ce354b81f4406fce7fd9d8d9b6013d8
-ms.sourcegitcommit: 488aced39b5f374bc0a139a4993616a54d15baf0
+ms.openlocfilehash: d44f1a14611493372c7321feaa14329d5d77b01b
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83207896"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99753985"
 ---
 # <a name="icordebugprocessenablelogmessages-method"></a>Método ICorDebugProcess::EnableLogMessages
+
 Habilita e desabilita a transmissão de mensagens de log para o depurador.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -32,13 +34,16 @@ HRESULT EnableLogMessages([in]BOOL fOnOff);
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `fOnOff`  
- [in] `true` habilita a transmissão de mensagens de log; `false`desabilita a transmissão.  
+ [in] `true` habilita a transmissão de mensagens de log; `false` desabilita a transmissão.  
   
 ## <a name="remarks"></a>Comentários  
+
  Esse método é válido somente depois que o retorno de chamada [ICorDebugManagedCallback:: CreateProcess](icordebugmanagedcallback-createprocess-method.md) ocorre.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

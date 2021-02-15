@@ -6,4 +6,4 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 05/15/2019
 ms.locfileid: "65672386"
 ---
-Automação da interface do usuário
+Automação da Interface de Usuário

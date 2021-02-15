@@ -7,12 +7,12 @@ helpviewer_keywords:
 - data access [.NET Framework], about .NET Framework data access
 - data [.NET Framework], accessing
 ms.assetid: 8c37635d-e2c1-4b64-a258-61d9e87405e6
-ms.openlocfilehash: 654f6f37e40d5df76910a7de7c5de4ffa2787b58
-ms.sourcegitcommit: 6219b1e1feccb16d88656444210fed3297f5611e
+ms.openlocfilehash: 0bf02eb56c042361c973d410b1f21e2ef92dd9f9
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85141831"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90553838"
 ---
 # <a name="data-and-modeling-in-net"></a>Dados e modelagem no .NET
 
@@ -31,7 +31,7 @@ Esta seção fornece informações sobre como acessar dados no .NET Framework.
   
 ## <a name="related-sections"></a>Seções relacionadas
 
- [LINQ (consulta integrada à linguagem)](../../csharp/programming-guide/concepts/linq/index.md)  
+ [LINQ (Consulta Integrada à Linguagem)](../../csharp/programming-guide/concepts/linq/index.md)  
  Fornece links para documentação relevante para LINQ (consulta integrada à linguagem) usando C#.  
   
  [LINQ (consulta integrada à linguagem) (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/index.md)  
@@ -40,5 +40,5 @@ Esta seção fornece informações sobre como acessar dados no .NET Framework.
  [Documentos e dados XML](../../standard/data/xml/index.md)  
  Fornece uma visão geral sobre um conjunto abrangente e integrado de classes que funcionam com documentos e dados XML no .NET Framework.  
   
- [XML Standards Reference](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256177(v=vs.100)) (Referência de padrões XML)  
- Fornece informações de referência sobre os padrões XML com suporte da Microsoft.  
+ [XML Standards Reference](/previous-versions/dotnet/netframework-4.0/ms256177(v=vs.100)) (Referência de padrões XML)  
+ Fornece informações de referência sobre os padrões XML com suporte da Microsoft.

@@ -10,10 +10,10 @@ helpviewer_keywords:
 - /delaysign compiler option [C#]
 ms.assetid: bcb058eb-2933-4e7f-b356-5c941db4de75
 ms.openlocfilehash: 5512ebeca4672f5d69852ab07c3f3fa40c305327
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
+ms.lasthandoff: 11/26/2020
 ms.locfileid: "89125833"
 ---
 # <a name="-delaysign-c-compiler-options"></a>-delaysign (opções do compilador C#)
@@ -54,5 +54,5 @@ Para obter informações sobre como definir essa opção do compilador programat
 ## <a name="see-also"></a>Confira também
 
 - [Opção -publicsign do C#](publicsign-compiler-option.md)
-- [Opções do compilador C#](index.md)
+- [Opções do compilador de C#](index.md)
 - [Gerenciando propriedades de solução e de projeto](/visualstudio/ide/managing-project-and-solution-properties)

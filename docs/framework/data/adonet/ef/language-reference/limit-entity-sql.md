@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: LIMIT (Entity SQL)'
 title: LIMITAR (Entity SQL)
 ms.date: 03/30/2017
 ms.assetid: c22ffede-0a52-44d1-99b9-4a91e651e1b9
-ms.openlocfilehash: 275b22686c6c932b2a9e4b20973ac07e99d47e14
-ms.sourcegitcommit: 628e8147ca10187488e6407dab4c4e6ebe0cac47
+ms.openlocfilehash: 873f3fd5ed83d04313aff92bf1f97e07001c3f08
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72319622"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99748200"
 ---
 # <a name="limit-entity-sql"></a>LIMITAR (Entity SQL)
+
 A paginação física pode ser executada usando a subcláusula LIMIT em uma ORDER BY. LIMIT não pode ser usada separadamente da cláusula ORDER BY.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -18,7 +20,8 @@ A paginação física pode ser executada usando a subcláusula LIMIT em uma ORDE
 [ LIMIT n ]  
 ```  
   
-## <a name="arguments"></a>Arguments  
+## <a name="arguments"></a>Argumentos  
+
  `n`  
  O número de itens que serão selecionados.  
   
@@ -28,6 +31,7 @@ A paginação física pode ser executada usando a subcláusula LIMIT em uma ORDE
 > Uma consulta Entity SQL será considerada inválida se o modificador TOP e a subcláusula SKIP estiverem presentes na mesma expressão de consulta. A consulta deve ser reescrita alterando a expressão TOP para uma expressão LIMIT.  
   
 ## <a name="example"></a>Exemplo  
+
  A seguinte consulta Entity SQL usa o operador ORDER BY com LIMIT para especificar ordem de classificação usada em objetos retornados em uma instrução SELECT. A consulta é baseada no modelo de vendas AdventureWorks. Para compilar e executar essa consulta, siga estas etapas:  
   
 1. Siga o procedimento em [como executar uma consulta que retorna resultados de estruturaistype](../how-to-execute-a-query-that-returns-structuraltype-results.md).  
@@ -39,6 +43,6 @@ A paginação física pode ser executada usando a subcláusula LIMIT em uma ORDE
 ## <a name="see-also"></a>Consulte também
 
 - [ORDER BY](order-by-entity-sql.md)
-- [Como: paginar os resultados da consulta](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100))
-- [Paginação](paging-entity-sql.md)
-- [TOP](top-entity-sql.md)
+- [Como: paginar os resultados da consulta](/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100))
+- [Houver](paging-entity-sql.md)
+- [INÍCIO](top-entity-sql.md)

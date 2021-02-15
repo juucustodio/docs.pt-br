@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: <message> de <wsDualHttpBinding>'
 title: <message> de <wsDualHttpBinding>
 ms.date: 03/30/2017
 ms.assetid: 75101744-eed8-4d61-91f4-5fc4473a21f2
-ms.openlocfilehash: aef03634ed6156d3a7e052ccdbde35fdfda99cc3
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: 7924d29235b17fa9de61293d031ebb05d49a2cc1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73736730"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99749552"
 ---
 # <a name="message-of-wsdualhttpbinding"></a>\<message> de \<wsDualHttpBinding>
+
 Define a segurança em nível de mensagem para o [\<wsDualHttpBinding>](wsdualhttpbinding.md) .  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,7 +22,7 @@ Define a segurança em nível de mensagem para o [\<wsDualHttpBinding>](wsdualht
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<security>**](security-of-wsdualhttpbinding.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<message>**  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <message clientCredentialType="None/Windows/UserName/Certificate/CardSpace"
@@ -29,10 +31,12 @@ Define a segurança em nível de mensagem para o [\<wsDualHttpBinding>](wsdualht
 </message>
 ```  
   
-## <a name="type"></a>Type  
+## <a name="type"></a>Tipo  
+
  <xref:System.ServiceModel.MessageSecurityOverHttp>  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai  
   
 ### <a name="attributes"></a>Atributos  
@@ -75,6 +79,7 @@ Define a segurança em nível de mensagem para o [\<wsDualHttpBinding>](wsdualht
 |IssuedToken|Especifica um token personalizado, geralmente emitido por um serviço de token de segurança.|  
   
 ### <a name="child-elements"></a>Elementos filho  
+
  Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
@@ -83,7 +88,7 @@ Define a segurança em nível de mensagem para o [\<wsDualHttpBinding>](wsdualht
 |-------------|-----------------|  
 |[\<security>](security-of-wsdualhttpbinding.md)|Define os recursos de segurança do [\<wsDualHttpBinding>](wsdualhttpbinding.md) .|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.ServiceModel.Configuration.WSDualHttpSecurityElement.Message%2A>
 - <xref:System.ServiceModel.WSDualHttpSecurity.Message%2A>

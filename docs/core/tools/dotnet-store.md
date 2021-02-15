@@ -2,18 +2,18 @@
 title: Comando dotnet store
 description: O comando "dotnet store" armazena os assemblies especificados no repositório de pacotes de runtime.
 ms.date: 02/14/2020
-ms.openlocfilehash: 2f28a9bc287a87f600bda385c579e8070cbaa5ab
-ms.sourcegitcommit: 927b7ea6b2ea5a440c8f23e3e66503152eb85591
+ms.openlocfilehash: 8efb11c6bf648bc7787d5627e02b180abb8a0afd
+ms.sourcegitcommit: b201d177e01480a139622f3bf8facd367657a472
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81463389"
+ms.lasthandoff: 11/15/2020
+ms.locfileid: "94634331"
 ---
 # <a name="dotnet-store"></a>dotnet store
 
-**Este artigo se aplica a:** ✔️ .NET Core 2.x SDK e versões posteriores
+**Este artigo aplica-se a:** ✔️ SDK do .NET Core 2. x e versões posteriores
 
-## <a name="name"></a>Nome
+## <a name="name"></a>Name
 
 `dotnet store` – Armazena os assemblies especificados no [repositório de pacotes de runtime](../deploying/runtime-store.md).
 
@@ -29,7 +29,7 @@ dotnet store -m|--manifest <PATH_TO_MANIFEST_FILE>
 dotnet store -h|--help
 ```
 
-## <a name="description"></a>Descrição
+## <a name="description"></a>Description
 
 `dotnet store` armazena os assemblies especificados no [repositório de pacotes de runtime](../deploying/runtime-store.md). Por padrão, os assemblies são otimizados para a estrutura e o runtime de destino. Para obter mais informações, consulte o tópico [repositório de pacotes de runtime](../deploying/runtime-store.md).
 
@@ -45,13 +45,13 @@ dotnet store -h|--help
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
-  O [identificador de tempo de execução](../rid-catalog.md) para o alvo.
+  O [identificador de tempo de execução](../rid-catalog.md) para o destino.
 
 ## <a name="optional-options"></a>Opções opcionais
 
 - **`--framework-version <FRAMEWORK_VERSION>`**
 
-  Especifica a versão do SDK do .NET Core. Essa opção permite que você selecione uma versão da estrutura específica, além da estrutura especificada pela opção `-f|--framework`.
+  Especifica a versão do SDK do .NET. Essa opção permite que você selecione uma versão da estrutura específica, além da estrutura especificada pela opção `-f|--framework`.
 
 - **`-h|--help`**
 
@@ -59,7 +59,7 @@ dotnet store -h|--help
 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
-  Especifica o caminho para o repositório de pacotes de runtime. Se não for especificado, o padrão será o subdiretório *repositório* do diretório de instalação do .NET Core do perfil do usuário.
+  Especifica o caminho para o repositório de pacotes de runtime. Se não for especificado, o padrão será o subdiretório de *armazenamento* do diretório de instalação .net do perfil do usuário.
 
 - **`--skip-optimization`**
 
@@ -91,6 +91,6 @@ dotnet store -h|--help
   dotnet store --manifest packages.csproj --skip-optimization
   ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Repositório de pacotes de runtime](../deploying/runtime-store.md)

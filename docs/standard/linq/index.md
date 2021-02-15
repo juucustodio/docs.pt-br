@@ -1,23 +1,22 @@
 ---
 title: Visão geral do LINQ – .NET
-description: O LINQ (consulta integrada à linguagem) fornece recursos de consulta de nível de linguagem e uma API de função de ordem superior para C# e Visual Basic, que permite escrever código expressivo de expressiva.
+description: A consulta de Language-Integrated (LINQ) fornece recursos de consulta de nível de linguagem e uma API de função de ordem superior para C# e Visual Basic, que permitem escrever código de declaração expressivo.
 author: cartermp
 ms.author: wiwagn
 ms.date: 06/20/2016
-ms.technology: dotnet-standard
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 2e8abef547d8cc06d80b8cbf865ec984eb91d330
-ms.sourcegitcommit: 0c3ce6d2e7586d925a30f231f32046b7b3934acb
+ms.openlocfilehash: ed78082c97511a8dbcc48d413a75a46c9da906a9
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89551868"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94825826"
 ---
-# <a name="linq-overview"></a>Visão geral do LINQ
+# <a name="linq-overview"></a>Visão geral da consulta LINQ
 
-O LINQ (consulta integrada à linguagem) fornece recursos de consulta de nível de linguagem e uma API de [função de ordem superior](https://en.wikipedia.org/wiki/Higher-order_function) para C# e Visual Basic, que permite escrever código expressivo de expressiva.
+A consulta de Language-Integrated (LINQ) fornece recursos de consulta de nível de linguagem e uma API de [função de ordem superior](https://en.wikipedia.org/wiki/Higher-order_function) para C# e Visual Basic, que permitem escrever código de declaração expressivo.
 
 ## <a name="language-level-query-syntax"></a>Sintaxe de consulta de nível de linguagem
 
@@ -111,7 +110,7 @@ End Function
 
 Escrever código para atravessar manualmente o documento XML para realizar essa tarefa seria muito mais desafiador.
 
-Interagir com XML não é a única coisa que você pode fazer com provedores LINQ. O [LINQ to SQL](../../framework/data/adonet/sql/linq/index.md) é um ORM (Mapeador de Objeto Relacional) de funções bastante básicas para um banco de dados MSSQL. A biblioteca [JSON.NET](https://www.newtonsoft.com/json/help/html/LINQtoJSON.htm) fornece uma passagem do documento JSON eficiente por meio da LINQ. Além disso, se não houver uma biblioteca que faça o que você precisa, você também poderá [escrever seu próprio provedor de LINQ](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/bb546158(v=vs.110))!
+Interagir com XML não é a única coisa que você pode fazer com provedores LINQ. O [LINQ to SQL](../../framework/data/adonet/sql/linq/index.md) é um ORM (Mapeador de Objeto Relacional) de funções bastante básicas para um banco de dados MSSQL. A biblioteca [JSON.NET](https://www.newtonsoft.com/json/help/html/LINQtoJSON.htm) fornece uma passagem do documento JSON eficiente por meio da LINQ. Além disso, se não houver uma biblioteca que faça o que você precisa, você também poderá [escrever seu próprio provedor de LINQ](/previous-versions/visualstudio/visual-studio-2012/bb546158(v=vs.110))!
 
 ## <a name="reasons-to-use-the-query-syntax"></a>Motivos para usar a sintaxe de consulta
 
@@ -159,7 +158,7 @@ A resposta para essa pergunta será **não** se...
 
 ## <a name="essential-linq"></a>LINQ essencial
 
-Para obter uma lista realmente abrangente de amostras de LINQ, visite [101 LINQ Samples ](https://docs.microsoft.com/samples/dotnet/try-samples/101-linq-samples/) (101 exemplos da LINQ).
+Para obter uma lista realmente abrangente de amostras de LINQ, visite [101 LINQ Samples ](/samples/dotnet/try-samples/101-linq-samples/) (101 exemplos da LINQ).
 
 Os exemplos a seguir são uma demonstração rápida de algumas das partes essenciais do LINQ. Isso não é tão abrangente, pois o LINQ fornece mais funcionalidade do que o que é demonstrado aqui.
 
@@ -394,6 +393,6 @@ Paralelizáveis trabalhos associados à CPU que podem ser facilmente expressos v
 
 ## <a name="more-resources"></a>Mais recursos
 
-* [101 exemplos do LINQ](https://docs.microsoft.com/samples/dotnet/try-samples/101-linq-samples/)
+* [101 exemplos do LINQ](/samples/dotnet/try-samples/101-linq-samples/)
 * [LINQPad](https://www.linqpad.net/), um ambiente playground e mecanismo de consulta de banco de dados para C#/F #/Visual Basic
 * [EduLinq](https://codeblog.jonskeet.uk/2011/02/23/reimplementing-linq-to-objects-part-45-conclusion-and-list-of-posts/), um livro eletrônico para aprender como o LINQ to Objects é implementado

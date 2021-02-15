@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: Propriedades de execução do fluxo de trabalho'
 title: Propriedades de execução de fluxo de trabalho
 ms.date: 03/30/2017
 ms.assetid: a50e088e-3a45-4267-bd51-1a3e6c2d246d
-ms.openlocfilehash: 0f958e7e112bfddc2740c2605d446493f2d49010
-ms.sourcegitcommit: 7588136e355e10cbc2582f389c90c127363c02a5
+ms.openlocfilehash: d6f83109da0a14382098322858a6e0493750a748
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79182658"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754895"
 ---
 # <a name="workflow-execution-properties"></a>Propriedades de execução de fluxo de trabalho
+
 Com o armazenamento local (TLS) de segmento, CLR mantém um contexto de execução para cada segmento. Este contexto de execução determina propriedades de segmento conhecidos como a identidade da thread, a transação ambiente, e o conjunto de permissões atual além de propriedades definidos pelo usuário do segmento como slots nomeados.  
   
  Ao contrário dos programas que direcionam diretamente CLR, os programas de fluxo de trabalho são árvores hierarquicamente o escopo de atividades que executam em um ambiente com desconhecido. Isso significa que os mecanismos padrão de TLS diretamente não podem ser usados para determinar qual contexto está no escopo de um item de trabalho determinado. Por exemplo, duas ramificações paralelos de execução podem usar transações diferentes, porém o agendador pode intercalar sua execução no mesmo segmento de CLR.  
@@ -17,6 +19,7 @@ Com o armazenamento local (TLS) de segmento, CLR mantém um contexto de execuç�
  As propriedades de execução de fluxo de trabalho fornecem um mecanismo para adicionar propriedades específicas de contexto para o ambiente de uma atividade. Isso permite que uma atividade declare propriedades que estejam no escopo para sua subárvore e também fornece ganchos para configurar e rasgar para baixo TLS para interoperar corretamente com objetos CLR.  
   
 ## <a name="creating-and-using-workflow-execution-properties"></a>Criando e usando propriedades de execução de fluxo de trabalho  
+
  As propriedades de execução de fluxo de trabalho geralmente implementam a interface de <xref:System.Activities.IExecutionProperty> , embora as propriedades centradas sobre a mensagem podem implementar <xref:System.ServiceModel.Activities.ISendMessageCallback> e <xref:System.ServiceModel.Activities.IReceiveMessageCallback> em vez disso. Para criar uma propriedade de execução de fluxo de trabalho, crie uma classe que implementa a interface de <xref:System.Activities.IExecutionProperty> e implementar os membros <xref:System.Activities.IExecutionProperty.SetupWorkflowThread%2A> e <xref:System.Activities.IExecutionProperty.CleanupWorkflowThread%2A>. Esses membros fornecem a propriedade de execução com uma oportunidade para configurar e rasgar corretamente para baixo o armazenamento local de segmentos durante cada pulso de trabalho de atividade que contém a propriedade, incluindo todas as atividades filhos. Nesse exemplo, `ConsoleColorProperty` é criado que define `Console.ForegroundColor`.  
   
 ```csharp  

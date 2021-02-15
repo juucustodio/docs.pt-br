@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 3356-SecurityIdentityVerificationSuccess'
 title: 3356 - SecurityIdentityVerificationSuccess
 ms.date: 03/30/2017
 ms.assetid: 4fb4899c-bfcc-437e-b4d5-313b83b1ae29
-ms.openlocfilehash: 8afc63b006c88de55529c438759bd009daaada9a
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 134ab2ab754561f76d5d0e803072dc8337277933
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61962093"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99781018"
 ---
 # <a name="3356---securityidentityverificationsuccess"></a>3356 - SecurityIdentityVerificationSuccess
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,9 +22,11 @@ ms.locfileid: "61962093"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
+
  Esse evento é emitido quando a verificação de segurança foi bem-sucedida.  
   
 ## <a name="message"></a>Mensagem  
- Êxito na verificação de segurança.  
+
+ Verificação de segurança bem-sucedida.  
   
 ## <a name="details"></a>Detalhes

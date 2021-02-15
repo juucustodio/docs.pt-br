@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Função CreateApplicationContext'
 title: Função CreateApplicationContext
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7bf8a141-b2c0-4058-9885-1cef7dcaa811
 topic_type:
 - apiref
-ms.openlocfilehash: e188fe80e770481aac02244a2c105639e4da19e2
-ms.sourcegitcommit: 559fcfbe4871636494870a8b716bf7325df34ac5
+ms.openlocfilehash: f192e1ccc371cb6d50e4a41a286c412825ee4181
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73108886"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99761172"
 ---
 # <a name="createapplicationcontext-function"></a>Função CreateApplicationContext
+
 Essa função dá suporte à infraestrutura de .NET Framework e não se destina a ser usada diretamente do seu código.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,6 +36,7 @@ HRESULT CreateApplicationContext (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pName`  
  no Um ponteiro para um nome amigável.  
   
@@ -41,16 +44,17 @@ HRESULT CreateApplicationContext (
  fora Um ponteiro para um contexto de aplicativo.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Fusion. h  
   
- **Biblioteca:** Incluído como um recurso em Fusion. dll  
+ **Biblioteca:** Incluído como um recurso no Fusion.dll  
   
- **Versões do .NET Framework:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
+ **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## <a name="see-also"></a>Consulte também
 
 - [Interface IAssemblyCache](iassemblycache-interface.md)
 - [Funções estáticas globais de fusão](fusion-global-static-functions.md)
-- [Cache de assembly global](../../app-domains/gac.md)
+- [Cache de assemblies global](../../app-domains/gac.md)

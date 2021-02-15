@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: BC30068: Expression é um valor e, portanto, não pode ser o destino de uma atribuição'
 title: Expressão é um valor e, por isso, não pode ser o destino de uma atribuição
 ms.date: 07/20/2015
 f1_keywords:
@@ -7,14 +8,14 @@ f1_keywords:
 helpviewer_keywords:
 - BC30068
 ms.assetid: d65141e1-f31e-4ac5-a3b8-0b2e02a71ebf
-ms.openlocfilehash: 9e4dbaf2f2800454c673cd58ddec4cf0f6e5c6b9
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 424ce9cb0183153454bc068e9da940948b737c47
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84409501"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99796360"
 ---
-# <a name="expression-is-a-value-and-therefore-cannot-be-the-target-of-an-assignment"></a>Expressão é um valor e, por isso, não pode ser o destino de uma atribuição
+# <a name="bc30068-expression-is-a-value-and-therefore-cannot-be-the-target-of-an-assignment"></a>BC30068: Expression é um valor e, portanto, não pode ser o destino de uma atribuição
 
 Uma instrução tenta atribuir um valor a uma expressão. Você pode atribuir um valor somente a uma variável, propriedade ou elemento de matriz gravável em tempo de execução. O exemplo a seguir ilustra como esse erro pode ocorrer.
 
@@ -58,7 +59,7 @@ exitButton.Location = exitLocation
 
 - Use a variável para acessar a propriedade para atribuir um valor a ela.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operadores e expressões](../../programming-guide/language-features/operators-and-expressions/index.md)
 - [Instruções](../../programming-guide/language-features/statements.md)

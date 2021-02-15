@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 3408-HttpPipelineBeginProcessInboundRequestStart'
 title: 3408 - HttpPipelineBeginProcessInboundRequestStart
 ms.date: 03/30/2017
 ms.assetid: 7ca229e2-93bb-4993-807c-9ad5d4ab5092
-ms.openlocfilehash: d1f36f8af11cfac565081f816a32aa291f63dd30
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 8bd0984c651794ef4c6fa4b30c9ae4bbeb31b2c1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61959491"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99669807"
 ---
 # <a name="3408---httppipelinebeginprocessinboundrequeststart"></a>3408 - HttpPipelineBeginProcessInboundRequestStart
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,9 +22,11 @@ ms.locfileid: "61959491"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando o manipulador de mensagens Http ao processar a solicitação de entrada de forma assíncrona.  
+
+ Esse evento é emitido quando o manipulador de mensagens http inicia o processamento da solicitação de entrada de forma assíncrona.  
   
 ## <a name="message"></a>Mensagem  
- Manipulador de mensagens HTTP ao processar a solicitação de entrada de forma assíncrona.  
+
+ O manipulador de mensagens http iniciou o processamento da solicitação de entrada de forma assíncrona.  
   
 ## <a name="details"></a>Detalhes

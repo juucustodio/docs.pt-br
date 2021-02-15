@@ -3,12 +3,12 @@ title: O que é o Construtor de Modelo e como ele funciona?
 description: Como usar o Construtor de Modelo do ML.NET para treinar automaticamente um modelo de machine learning
 ms.date: 06/01/2020
 ms.custom: overview, mlnet-tooling
-ms.openlocfilehash: 2ed4a0c3c94ae9f46bb1cf6ddb1e9774baf82367
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: da6348fb5dde83827558b66b6115d681f08948db
+ms.sourcegitcommit: ff5a4eb5cffbcac9521bc44a907a118cd7e8638d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84289493"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92161134"
 ---
 # <a name="what-is-model-builder-and-how-does-it-work"></a>O que é o Construtor de Modelo e como ele funciona?
 
@@ -54,9 +54,15 @@ A regressão é usada para prever números.
 
 #### <a name="image-classification"></a>Classificação de imagens
 
-A classificação de imagem pode ser usada para identificar imagens de diferentes categorias. Por exemplo, tipos diferentes de terrenos, animais ou defeitos de fabricação.
+A classificação de imagem é usada para identificar imagens de diferentes categorias. Por exemplo, tipos diferentes de terrenos, animais ou defeitos de fabricação.
 
 Você pode usar o cenário de classificação de imagem se tiver um conjunto de imagens e desejar classificar as imagens em categorias diferentes.
+
+#### <a name="object-detection"></a>Detecção de objetos
+
+A detecção de objeto é usada para localizar e categorizar entidades dentro de imagens.  Por exemplo, localizando e identificando carros e pessoas em uma imagem.
+
+Você pode usar a detecção de objeto quando as imagens contiverem vários objetos de tipos diferentes.
 
 #### <a name="recommendation"></a>Recomendação
 
@@ -66,13 +72,15 @@ Você pode usar o cenário de recomendação quando tiver um conjunto de usuári
 
 ## <a name="environment"></a>Ambiente
 
-Você pode treinar seu modelo de aprendizado de máquina localmente no seu computador ou na nuvem no Azure.
+Você pode treinar seu modelo de aprendizado de máquina localmente no seu computador ou na nuvem no Azure, dependendo do cenário.
 
 Ao treinar localmente, você trabalha dentro das restrições dos recursos do computador (CPU, memória e disco). Ao treinar na nuvem, você pode escalar verticalmente seus recursos para atender às demandas do seu cenário, especialmente para grandes conjuntos de altos.
 
-O treinamento local tem suporte para todos os cenários.
+O treinamento de CPU local tem suporte para todos os cenários, exceto para detecção de objetos.
 
-Há suporte para o treinamento do Azure para classificação de imagem.
+Há suporte para o treinamento de GPU local para classificação de imagem.
+
+Há suporte para o treinamento do Azure para classificação de imagem e detecção de objeto.
 
 ## <a name="data"></a>Dados
 
@@ -107,11 +115,11 @@ O rótulo é o preço histórico de casas para essa linha de valores de metro qu
 
 Se você ainda não tiver seus próprios dados, experimente um desses conjuntos de dados:
 
-|Cenário|Exemplo|Dados|Rotular|Recursos|
+|Cenário|Exemplo|Dados|Label|Recursos|
 |-|-|-|-|-|
-|classificação|Prever anomalias de vendas|[dados de vendas do produto](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv)|Vendas do Produto|Month|
+|classificação|Prever anomalias de vendas|[dados de vendas do produto](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv)|Vendas do Produto|Mês|
 ||Prever sentimentos de comentários do site|[dados de comentário do site](https://raw.githubusercontent.com/dotnet/machinelearning/master/test/data/wikipedia-detox-250-line-data.tsv)|Rótulo (0 quando o sentimento é negativo, 1 quando é positivo)|Comentário, ano|
-||Prever transações de cartão de crédito fraudulentas|[dados do cartão de crédito](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_CreditCardFraudDetection/CreditCardFraudDetection.Trainer/assets/input/creditcardfraud-dataset.zip)|Classe (1 quando fraudulenta, caso contrário, 0)|Quantidade, V1-V28 (recursos anônimos)|
+||Prever transações de cartão de crédito fraudulentas|[dados do cartão de crédito](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_CreditCardFraudDetection/CCFraudDetection.Trainer/assets/input/creditcardfraud-dataset.zip)|Classe (1 quando fraudulenta, caso contrário, 0)|Quantidade, V1-V28 (recursos anônimos)|
 ||Prever o tipo de problema em um repositório GitHub|[dados de problema do GitHub](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/end-to-end-apps/MulticlassClassification-GitHubLabeler/GitHubLabeler/Data/corefx-issues-train.tsv)|Área|Título, Descrição|
 |Previsão de valor|Preço de Tarifa de táxi|[dados de tarifas de táxi](https://github.com/dotnet/machinelearning-samples/blob/master/datasets/taxi-fare-train.csv)|Tarifa|Tempo da corrida, distância|
 |Classificação de imagens|Prever a categoria de uma flor |[imagens flor](http://download.tensorflow.org/example_images/flower_photos.tgz)|O tipo de flor: Margarida, dandelion, rosas, flores, tulips|Os próprios dados da imagem|
@@ -205,7 +213,7 @@ Após a fase de avaliação, o Construtor de Modelo gera um arquivo de modelo e 
 
 Além disso, o Construtor de Modelo cria o código que gerou o modelo para que você possa entender as etapas usadas na geração do modelo. Você também pode usar o código de treinamento do modelo para treinar novamente seu modelo com novos dados.
 
-## <a name="whats-next"></a>O que vem a seguir?
+## <a name="whats-next"></a>E agora?
 
 [Instalar](how-to-guides/install-model-builder.md) a extensão do Visual Studio do Construtor de Modelos
 

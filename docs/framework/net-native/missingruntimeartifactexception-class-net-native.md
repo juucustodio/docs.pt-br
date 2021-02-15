@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: classe MissingRuntimeArtifactException (.NET Native)'
 title: Classe MissingRuntimeArtifactException (.NET Nativo)
 ms.date: 03/30/2017
 ms.assetid: d5b3d13e-689f-4584-8ba6-44f5167a8590
-ms.openlocfilehash: 7a69add45202b3ad838de592fadc82a84fa0ba5d
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: fae0ae708ab8d87347f29571ddb00e53bf7f6931
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "79180975"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99738631"
 ---
 # <a name="missingruntimeartifactexception-class-net-native"></a>Classe MissingRuntimeArtifactException (.NET Nativo)
+
 **.NET para aplicativos do Windows para Windows 10, somente .NET Native**  
   
  A exceção que é acionada quando metadados de um tipo ou um membro de tipo estão disponíveis, mas sua implementação foi removida.  
@@ -19,7 +21,8 @@ ms.locfileid: "79180975"
 > [!IMPORTANT]
 > A `MissingRuntimeArtifactException` classe é destinada exclusivamente ao uso interno da cadeia de ferramentas .net Native. Ela não é destinado para uso em código de terceiros e você também não deve tratar a exceção no seu código do aplicativo. Em vez disso, elimine a exceção adicionando entradas ao seu [arquivo de diretivas de runtime](runtime-directives-rd-xml-configuration-file-reference.md). Para obter mais informações, consulte a seção Comentários.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
+
  [!code-csharp[ProjectN#22](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn/cs/missingruntimeartifactexception_syntax1.cs#22)]  
   
  Observe que a `MissingRuntimeArtifactException` classe deriva de <xref:System.MemberAccessException>.  
@@ -66,19 +69,20 @@ ms.locfileid: "79180975"
 |`protected event EventHandler<SafeSerializationEventArgs> SerializeObjectState`|Ocorre quando uma exceção é serializada para criar um objeto de estado de exceção que contém dados serializados sobre a exceção. (Herdado de <xref:System.Exception?displayProperty=nameWithType>.)|  
   
 ## <a name="usage-details"></a>Detalhes de uso  
+
  A exceção `MissingRuntimeArtifactException` é gerada quando ocorre uma tentativa de instanciar um tipo ou invocar um membro de tipo e, embora o tipo ou metadados do membro estejam presentes, sua implementação foi removida.  
   
- Se os metadados e o código de implementação para executar dinamicamente um método estão disponíveis para um aplicativo em tempo de execução é definido pelo arquivo de diretivas de tempo de execução (configuração XML), \* . Rd. xml. Para impedir que o seu aplicativo gere esta exceção, você deve modificar o \*.rd.xml para garantir que os metadados necessários para um tipo ou membro de tipo estejam presentes no tempo de execução. Para obter informações sobre o formato do arquivo \*.rd.xml, consulte [Referência do arquivo de configuração das diretivas de runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md).  
+ Se os metadados e o código de implementação para executar dinamicamente um método estão disponíveis para um aplicativo em tempo de execução é definido pelo arquivo de diretivas de tempo de execução (configuração XML), \*.rd.xml. Para impedir que o seu aplicativo gere esta exceção, você deve modificar o \*.rd.xml para garantir que os metadados necessários para um tipo ou membro de tipo estejam presentes no tempo de execução. Para obter informações sobre o formato do arquivo \*.rd.xml, consulte [Referência do arquivo de configuração das diretivas de runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md).  
   
 > [!IMPORTANT]
-> Como essa exceção indica que o código de implementação exigido pelo seu aplicativo não está disponível no tempo de execução, você não deve tratar essa exceção em um bloco `try`/`catch`. Em vez disso, você deve diagnosticar a causa da exceção e eliminá-la usando um arquivo de diretivas de runtime. Normalmente, você elimina essa exceção especificando a política apropriada `Activate` `Dynamic` para um elemento de programa no arquivo de diretivas de tempo de execução ( \* arquivo. Rd. xml). Para obter a entrada que você pode adicionar ao seu arquivo de diretivas de runtime e que elimina a exceção, você pode usar uma das duas soluções de problemas:  
+> Como essa exceção indica que o código de implementação exigido pelo seu aplicativo não está disponível no tempo de execução, você não deve tratar essa exceção em um bloco `try`/`catch`. Em vez disso, você deve diagnosticar a causa da exceção e eliminá-la usando um arquivo de diretivas de runtime. Normalmente, você elimina essa exceção especificando a política apropriada `Activate` `Dynamic` para um elemento de programa no arquivo de diretivas de tempo de execução ( \*.rd.xml arquivo). Para obter a entrada que você pode adicionar ao seu arquivo de diretivas de runtime e que elimina a exceção, você pode usar uma das duas soluções de problemas:  
 >
 > - A [solução de problemas MissingMetadataException](https://dotnet.github.io/native/troubleshooter/type.html) para tipos.  
 > - A [solução de problemas MissingMetadataException](https://dotnet.github.io/native/troubleshooter/method.html) para métodos.  
   
  A classe `MissingRuntimeArtifactException` não contém membros exclusivos. Todos os seus membros são herdados de sua classe base, <xref:System.MemberAccessException>.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Referência do arquivo de configuração de diretivas do runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)
 - [Configurações da política da diretiva de runtime](runtime-directive-policy-settings.md)

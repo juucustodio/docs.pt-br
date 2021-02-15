@@ -1,28 +1,32 @@
 ---
+description: 'Saiba mais sobre: 3383-ReliableSessionChannelFaulted'
 title: 3383 - ReliableSessionChannelFaulted
 ms.date: 03/30/2017
 ms.assetid: f5948284-8536-4ab8-9c81-e22da5b56d62
-ms.openlocfilehash: 8d107848a80e965dc9cee42dacaedde2b20d9036
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 5237fba3929c2f578334699eab1d8dfdbc7eb8da
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61943215"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788560"
 ---
 # <a name="3383---reliablesessionchannelfaulted"></a>3383 - ReliableSessionChannelFaulted
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
 |ID|3383|  
 |Palavras-chave|Canal|  
-|Nível|Informativo|  
+|Level|Informativo|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando o ReliableSessionChannel apresentou falha.  
+
+ Esse evento é emitido quando o ReliableSessionChannel falha.  
   
 ## <a name="message"></a>Mensagem  
- SessionId:% 1 com defeito.  
+
+ SessionId: %1 falhou.  
   
 ## <a name="details"></a>Detalhes

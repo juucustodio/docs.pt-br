@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: visão geral do modelo de aplicativo Visual Basic'
 title: Visão geral do modelo de aplicativo do Visual Basic
 ms.date: 07/20/2015
 helpviewer_keywords:
 - My.Application object [Visual Basic], Visual Basic application model
 - Visual Basic application model
 ms.assetid: 17538984-84fe-43c9-82c8-724c9529fe8b
-ms.openlocfilehash: 46177d0af7e5df767eb8421caf424880baac615e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: ead4912d3796a5826453945419510088d87c6e90
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84411721"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99797946"
 ---
 # <a name="overview-of-the-visual-basic-application-model"></a>Visão geral do modelo de aplicativo do Visual Basic
 
@@ -58,7 +59,7 @@ Visual Basic fornece um modelo bem definido para controlar o comportamento de ap
 
  Por padrão, o modelo de aplicativo Visual Basic está disponível para projetos Windows Forms. Se você configurar o aplicativo para usar um objeto de inicialização diferente ou iniciar o código do aplicativo com um personalizado `Sub Main` , então esse objeto ou classe pode precisar fornecer uma implementação da <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> classe para usar o modelo de aplicativo. Para obter informações sobre como alterar o objeto de inicialização, consulte [página do aplicativo, designer de projeto (Visual Basic)](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>
 - <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup>

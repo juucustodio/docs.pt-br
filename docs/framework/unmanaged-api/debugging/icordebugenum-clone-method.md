@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorDebugEnum:: clone'
 title: Método ICorDebugEnum::Clone
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 57eefaf3-75cf-4496-bc94-88c0706861b7
 topic_type:
 - apiref
-ms.openlocfilehash: 9f0fda803ba3a1ce35017d85e84b3bf6f567eda0
-ms.sourcegitcommit: fff146ba3fd1762c8c432d95c8b877825ae536fc
+ms.openlocfilehash: 18219757980870dcf9663477d195068a76814de1
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82976363"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99694550"
 ---
 # <a name="icordebugenumclone-method"></a>Método ICorDebugEnum::Clone
+
 Cria uma cópia deste objeto ICorDebugEnum.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,10 +36,12 @@ HRESULT Clone (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ppEnum`  
  fora Um ponteiro para o endereço de um `ICorDebugEnum` objeto que é uma cópia desse `ICorDebugEnum` objeto.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

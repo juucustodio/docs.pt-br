@@ -9,14 +9,15 @@ helpviewer_keywords:
 - -lib compiler option [C#]
 - /lib compiler option [C#]
 ms.assetid: b0efcc88-e8aa-4df4-a00b-8bdef70b7673
-ms.openlocfilehash: e53c54dc446d9fea87a9b7a336a38ffaa31704e9
-ms.sourcegitcommit: d579fb5e4b46745fd0f1f8874c94c6469ce58604
+ms.openlocfilehash: 9478501ea98ec1b9d3ec2761bc4ebf3f6bef656c
+ms.sourcegitcommit: 0802ac583585110022beb6af8ea0b39188b77c43
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2020
-ms.locfileid: "89125443"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "91152436"
 ---
 # <a name="-lib-c-compiler-options"></a>-lib (opções do compilador C#)
+
 A opção **-lib** especifica o local dos assemblies referenciados por meio da opção [-Reference (opções do compilador C#)](./reference-compiler-option.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -26,6 +27,7 @@ A opção **-lib** especifica o local dos assemblies referenciados por meio da o
 ```  
   
 ## <a name="arguments"></a>Argumentos  
+
  `dir1`  
  Um diretório para o compilador examinar se um assembly referenciado não foi encontrado no diretório de trabalho atual (o diretório do qual você está invocando o compilador) ou no diretório de sistema do Common Language Runtime.  
   
@@ -33,6 +35,7 @@ A opção **-lib** especifica o local dos assemblies referenciados por meio da o
  Um ou mais diretórios adicionais a serem pesquisados para referências de assembly. Separe os nomes de diretório adicionais com uma vírgula e não inclua espaços em branco entre eles.  
   
 ## <a name="remarks"></a>Comentários  
+
  O compilador pesquisa referências de assembly que não são totalmente qualificadas na seguinte ordem:  
   
 1. Diretório de trabalho atual. Esse é o diretório do qual o compilador é invocado.  
@@ -62,6 +65,7 @@ A opção **-lib** especifica o local dos assemblies referenciados por meio da o
  Para obter informações sobre como definir essa opção do compilador programaticamente, consulte <xref:VSLangProj80.ProjectProperties3.ReferencePath%2A>.  
   
 ## <a name="example"></a>Exemplo  
+
  Compile t2.cs para criar um arquivo .exe. O compilador examinará referências de assembly no diretório de trabalho e no diretório raiz da unidade C.  
   
 ```console  
@@ -70,5 +74,5 @@ csc -lib:c:\ -reference:t2.dll t2.cs
   
 ## <a name="see-also"></a>Confira também
 
-- [Opções do compilador C#](./index.md)
+- [Opções do compilador de C#](./index.md)
 - [Gerenciando propriedades de solução e de projeto](/visualstudio/ide/managing-project-and-solution-properties)

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: e528a41748d9353c96d443f68e15e7a98ee7f4ae
-ms.sourcegitcommit: e02d17b2cf9c1258dadda4810a5e6072a0089aee
+ms.openlocfilehash: 882c4c0455b7df538079ffe1b7d1d7ca8af1904a
+ms.sourcegitcommit: 27a15a55019f6b5f2733961738babe94aec0def3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85617781"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90606660"
 ---
 ### <a name="accessibility-improvements-in-windows-forms-controls-for-net-48"></a>Melhorias de acessibilidade nos controles do Windows Forms para o .NET 4.8
 
@@ -21,7 +21,7 @@ O Windows Forms Framework está melhorando continuamente sua maneira de trabalha
 **Como aceitar ou recusar essas alterações** Para que o aplicativo se beneficie dessas alterações, ele deve ser executado no .NET Framework 4,8. O aplicativo pode aceitar essas alterações de qualquer uma das seguintes maneiras:
 
 - Ser recompilado para direcionar o .NET Framework 4.8. Essas alterações de acessibilidade são habilitadas por padrão em aplicativos do Windows Forms que direcionam o .NET Framework 4.8.
-- Ser direcionado ao .NET Framework 4.7.2 ou a uma versão anterior e recusar os comportamentos de acessibilidade herdados, adicionando o seguinte [comutador AppContext](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element) à seção `<runtime>` do arquivo de configuração de aplicativo e definindo-o como `false`, como mostra o exemplo a seguir.
+- Ser direcionado ao .NET Framework 4.7.2 ou a uma versão anterior e recusar os comportamentos de acessibilidade herdados, adicionando o seguinte [comutador AppContext](../../../../docs/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) à seção `<runtime>` do arquivo de configuração de aplicativo e definindo-o como `false`, como mostra o exemplo a seguir.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -72,7 +72,7 @@ Observe que, para habilitar esse recurso, é necessário aceitar os recursos de 
 **Melhoria ao suporte à acessibilidade de ProgressBar**
 
 - Habilitação do suporte à Automação de interface do usuário para o controle <xref:System.Windows.Forms.ProgressBar>, com a capacidade de usar notificações de Automação de interface do usuário e outros recursos de automação de interface do usuário. Agora, os desenvolvedores podem usar as notificações de automação de interface do usuário que o Narrator pode anunciar para indicar o progresso.
-Para obter uma visão geral da visão geral dos eventos de automação da interface do usuário, incluindo eventos de notificação de automação da interface do usuário, consulte a [visão geral dos eventos](https://docs.microsoft.com/windows/desktop/WinAuto/uiauto-eventsoverview)
+Para obter uma visão geral da visão geral dos eventos de automação da interface do usuário, incluindo eventos de notificação de automação da interface do usuário, consulte a [visão geral dos eventos](/windows/desktop/WinAuto/uiauto-eventsoverview)
 
 **Suporte aprimorado de acessibilidade de PropertyGrid**
 
@@ -89,7 +89,7 @@ Para obter uma visão geral da visão geral dos eventos de automação da interf
 **Melhoria das indicações visuais**
 
 - Um controle <xref:System.Windows.Forms.CheckedListBox> vazio agora exibe um indicador de foco quando recebe o foco.
-Observação: o suporte à automação da interface do usuário está habilitado para controles no tempo de execução, mas não é usado em tempo de design. Para obter uma visão geral de automação da interface do usuário, confira a [Visão geral de automação da interface do usuário](https://docs.microsoft.com/dotnet/framework/ui-automation/ui-automation-overview).
+Observação: o suporte à automação da interface do usuário está habilitado para controles no tempo de execução, mas não é usado em tempo de design. Para obter uma visão geral de automação da interface do usuário, confira a [Visão geral de automação da interface do usuário](../../../../docs/framework/ui-automation/ui-automation-overview.md).
 
 **Invocação de dicas de ferramenta de controles com um teclado**
 
@@ -99,4 +99,4 @@ Observação: o suporte à automação da interface do usuário está habilitado
 |:--------|:------------|
 | Escopo   | Principal       |
 | Versão | 4.8         |
-| Type    | Redirecionando |
+| Tipo    | Redirecionando |

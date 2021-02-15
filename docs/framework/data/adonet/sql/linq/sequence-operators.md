@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: operadores de sequência'
 title: Operadores de sequência
 ms.date: 03/30/2017
 ms.assetid: 4d332d32-3806-4451-b7af-25af269194ae
-ms.openlocfilehash: 4feca030d3c398f4286fe9d126cae884afe7945b
-ms.sourcegitcommit: d2e1dfa7ef2d4e9ffae3d431cf6a4ffd9c8d378f
+ms.openlocfilehash: cf118c7038bae922f94abcefe0d13f6af8078037
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "70792675"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99803783"
 ---
 # <a name="sequence-operators"></a>Operadores de sequência
+
 Em termos gerais, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] não suporta os operadores de sequência que têm uma ou mais das seguintes qualidades:  
   
 - Leva um método com um parâmetro de índice.  
@@ -43,8 +45,9 @@ Em termos gerais, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md
 |<xref:System.Linq.Enumerable.SequenceEqual%2A?displayProperty=nameWithType>|  
   
 ## <a name="differences-from-net"></a>Diferenças do .NET  
+
  Todos os operadores suporte a sequência funciona como esperado em Common Language Runtime (CLR) a exceção de `Average`. `Average` retorna um valor do mesmo tipo que o tipo que está sendo especificado média, enquanto em CLR `Average` sempre retorna <xref:System.Double> ou <xref:System.Decimal>. Se o argumento de origem é dobrar explicitamente convertida/decimal ou o seletor converte dobrar/decimal, o SQL resultante também terá uma conversão e o resultado será como esperado.  
   
 ## <a name="see-also"></a>Consulte também
 
-- [Funções e tipos de dados](data-types-and-functions.md)
+- [Tipos de dados e funções](data-types-and-functions.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorDebugChain:: GetNext'
 title: Método ICorDebugChain::GetNext
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 8d9744a5-e08b-4ab2-9855-5c22711cc1e6
 topic_type:
 - apiref
-ms.openlocfilehash: 47a90ed63ae217cb150f392ad9196f8d0d5764e3
-ms.sourcegitcommit: 957c49696eaf048c284ef8f9f8ffeb562357ad95
+ms.openlocfilehash: ced7032feffa4c14c07341242b854c08b8c897a5
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82894637"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99661318"
 ---
 # <a name="icordebugchaingetnext-method"></a>Método ICorDebugChain::GetNext
+
 Obtém a próxima cadeia de quadros para o thread.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -34,10 +36,12 @@ HRESULT GetNext (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `ppChain`  
  fora Um ponteiro para o endereço de um objeto ICorDebugChain que representa a próxima cadeia de quadros para o thread. Se essa cadeia for a última cadeia, `ppChain` será NULL.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorDebug.idl, CorDebug.h  

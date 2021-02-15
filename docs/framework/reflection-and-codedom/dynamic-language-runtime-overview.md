@@ -8,12 +8,12 @@ helpviewer_keywords:
 - DLR
 - IronRuby
 ms.assetid: f769a271-8aff-4bea-bfab-6160217ce23d
-ms.openlocfilehash: 2272bc60af35e3cdec3e1a71bbc6516565b4ec6e
-ms.sourcegitcommit: cf5a800a33de64d0aad6d115ffcc935f32375164
+ms.openlocfilehash: a36d6704b36b5006f19e21932797f21af849e55a
+ms.sourcegitcommit: bc293b14af795e0e999e3304dd40c0222cf2ffe4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86475145"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96266825"
 ---
 # <a name="dynamic-language-runtime-overview"></a>Visão geral do Dynamic Language Runtime
 
@@ -55,24 +55,31 @@ Exemplos de linguagens desenvolvidos usando o DLR incluem:
 - IronRuby. Disponível como software livre no site do [IronRuby](http://ironruby.net/) .
 
 ## <a name="primary-dlr-advantages"></a>Principais vantagens do DLR
+
  O DLR fornece as vantagens a seguir.
 
 ### <a name="simplifies-porting-dynamic-languages-to-the-net-framework"></a>Simplifica a portabilidade de linguagens dinâmicas para o .NET Framework
+
  O DLR permite que os implementadores de linguagem evitem criar analisadores tradicionais, lexicais ou semânticos, geradores de código e outras ferramentas que eles tradicionalmente precisavam criar eles mesmos. Para usar o DLR, uma linguagem precisa produzir *árvores de expressão*, que representam o código no nível de linguagem em uma estrutura em forma de árvore, rotinas auxiliares de runtime e objetos dinâmicos opcionais que implementam a interface <xref:System.Dynamic.IDynamicMetaObjectProvider>. O DLR e o .NET Framework automatizam muitas tarefas de geração de código e de análise de código. Isso permite que os implementadores de linguagem se concentrem em recursos de linguagem exclusivos.
 
 ### <a name="enables-dynamic-features-in-statically-typed-languages"></a>Habilitar recursos dinâmicos em linguagens de tipo estático
+
  Linguagens do .NET Framework existentes como C# e Visual Basic podem criar objetos dinâmicos e usá-los junto com objetos de tipo estático. Por exemplo, C# e Visual Basic podem usar objetos dinâmicos para reflexão de HTML, DOM (Modelo de Objeto do Documento) e .NET.
 
 ### <a name="provides-future-benefits-of-the-dlr-and-net-framework"></a>Fornece benefícios futuros do DLR e do .NET Framework
+
  Linguagens implementadas usando o DLR podem aproveitar melhorias futuras do DLR e do .NET Framework. Por exemplo, se o .NET Framework lançar uma nova versão que tenha um coletor de lixo aprimorado ou tempo de carregamento de assembly mais rápido, linguagens implementadas usando o DLR imediatamente obterão os mesmos benefícios. Se o DLR agregar otimizações como melhor compilação, o desempenho também melhorará para todas as linguagens implementadas usando o DLR.
 
 ### <a name="enables-sharing-of-libraries-and-objects"></a>Permite o compartilhamento de bibliotecas e objetos
+
  Os objetos e bibliotecas implementados em uma linguagem podem ser usadas por outras. O DLR também proporciona interoperabilidade entre linguagens dinâmicas e com tipo estático. Por exemplo, C# pode declarar um objeto dinâmico que usa uma biblioteca que é escrita em uma linguagem dinâmica. Ao mesmo tempo, linguagens dinâmicas podem usar bibliotecas do .NET Framework.
 
 ### <a name="provides-fast-dynamic-dispatch-and-invocation"></a>Fornece invocação e expedição dinâmica rápidas
+
  O DLR fornece a rápida execução das operações dinâmicas dando suporte a cache polimórfico avançado. O DLR cria regras para associar operações que usam objetos para as implementações de runtime necessárias e, em seguida, armazena essas regras para evitar o esgotamento de recursos de computações de associação durante execuções sucessivas do mesmo código nos mesmos tipos de objetos.
 
 ## <a name="dlr-architecture"></a>Arquitetura do DLR
+
  A ilustração a seguir mostra a arquitetura do dynamic language runtime.
 
  ![Visão geral da arquitetura de tempo de execução de linguagem dinâmica](./media/dlr-archoverview.png "DLR_ArchOverview") Arquitetura do DLR
@@ -88,9 +95,10 @@ Exemplos de linguagens desenvolvidos usando o DLR incluem:
 O DLR usa associadores em sites de chamada para se comunicar não apenas com o .NET Framework, mas com outras infraestruturas e serviços, incluindo Silverlight e COM. Associadores encapsulam a semântica da linguagem e especificam como executar operações em um site de chamada usando árvores de expressão. Isso permite que linguagens dinâmicas e de tipo estático que utilizam o DLR compartilhem bibliotecas e obtenham acesso a todas as tecnologias às quais o DLR dá suporte.
 
 ## <a name="dlr-documentation"></a>Documentação do DLR
+
  Para obter mais informações sobre como usar a versão de software livre do DLR para adicionar comportamento dinâmico a uma linguagem ou sobre como habilitar o uso de uma linguagem dinâmica com o .NET Framework, consulte a documentação no repositório [IronLanguages/dlr](https://github.com/IronLanguages/dlr/tree/master/Docs) no GitHub.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - <xref:System.Dynamic.ExpandoObject>
 - <xref:System.Dynamic.DynamicObject>

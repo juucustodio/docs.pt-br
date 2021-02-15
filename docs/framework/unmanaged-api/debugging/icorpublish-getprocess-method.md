@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: método ICorPublish:: GetProcess'
 title: Método ICorPublish::GetProcess
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: c5143805-2eb7-45b8-85ed-c8fb34df1084
 topic_type:
 - apiref
-ms.openlocfilehash: 2cd2238ac67713564922be440ce64a2ebc4bbf44
-ms.sourcegitcommit: 046a9c22487551360e20ec39fc21eef99820a254
+ms.openlocfilehash: d288a772274618cc99b63a68b37e84e543957b44
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83396328"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721964"
 ---
 # <a name="icorpublishgetprocess-method"></a>Método ICorPublish::GetProcess
+
 Obtém uma instância de [ICorPublishProcess](icorpublishprocess-interface.md) que representa o processo com o identificador especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -35,6 +37,7 @@ HRESULT GetProcess(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `pid`  
  no O identificador do processo.  
   
@@ -42,9 +45,11 @@ HRESULT GetProcess(
  fora Um ponteiro para o endereço de uma `ICorPublishProcess` instância que representa o processo.  
   
 ## <a name="remarks"></a>Comentários  
- `GetProcess`falhará se o processo não existir ou não for um processo gerenciado que possa ser depurado pelo usuário atual.  
+
+ `GetProcess` falhará se o processo não existir ou não for um processo gerenciado que possa ser depurado pelo usuário atual.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorPub. idl, CorPub. h  
@@ -53,6 +58,6 @@ HRESULT GetProcess(
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorPublish](icorpublish-interface.md)

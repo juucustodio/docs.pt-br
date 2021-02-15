@@ -2,24 +2,24 @@
 title: Os blocos de construção de programas em C# "
 description: Saiba mais sobre membros, expressões e instruções C#. Os tipos contêm membros que você escreve. Esses membros são criados a partir de instruções e expressões.
 ms.date: 08/06/2020
-ms.openlocfilehash: 3bdc6a4da6ae76148c7d1d5cb8ccb65d91fda61a
-ms.sourcegitcommit: ae2e8a61a93c5cf3f0035c59e6b064fa2f812d14
+ms.openlocfilehash: 0ac45eee180b60062a328fca9ab5c63a1537debe
+ms.sourcegitcommit: 68c9d9d9a97aab3b59d388914004b5474cf1dbd7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89358811"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99216610"
 ---
 # <a name="program-building-blocks"></a>Blocos de construção de programas
 
-Os tipos descritos no artigo anterior são criados usando estes blocos de construção: [***Membros***](../programming-guide/classes-and-structs/members.md), [ ***expressões***e ***instruções***](../programming-guide/statements-expressions-operators/index.md).
+Os tipos descritos no artigo anterior são criados usando estes blocos de construção: [ * **Members**](../programming-guide/classes-and-structs/members.md), [ _*_Expressions_*_ e _*_Statements_*_](../programming-guide/statements-expressions-operators/index.md).
 
 ## <a name="members"></a>Membros
 
-Os membros de a `class` são membros ***estáticos*** ou ***membros de instância***. Os membros estáticos pertencem às classes e os membros de instância pertencem aos objetos (instâncias de classes).
+Os membros de a `class` são membros _*_estáticos_*_ ou _*_membros de instância_*_. Os membros estáticos pertencem às classes e os membros de instância pertencem aos objetos (instâncias de classes).
 
 A lista a seguir fornece uma visão geral dos tipos de membros que uma classe pode conter.
 
-- **Constantes**: valores constantes associados à classe
+- _ * Constantes * *: valores constantes associados à classe
 - **Campos**: variáveis que estão associadas à classe
 - **Métodos**: ações que podem ser executadas pela classe
 - **Propriedades**: ações associadas à leitura e à gravação de propriedades nomeadas da classe
@@ -49,7 +49,7 @@ Um campo declarado com o modificador estático define um campo estático. Um cam
 
 Um campo declarado sem o modificador estático define um campo de instância. Cada instância de uma classe contém uma cópia separada de todos os campos de instância dessa classe.
 
-No exemplo a seguir, cada instância da `Color` classe tem uma cópia separada dos campos de `r` instância,, `g` e `b` , mas há apenas uma cópia dos `Black` `White` `Red` `Green` campos estáticos,,, e `Blue` :
+No exemplo a seguir, cada instância da `Color` classe tem uma cópia separada dos campos de `R` instância,, `G` e `B` , mas há apenas uma cópia dos `Black` `White` `Red` `Green` campos estáticos,,, e `Blue` :
 
 :::code language="csharp" source="./snippets/shared/ClassesObjects.cs" ID="ColorClassDefinition":::
 
@@ -68,7 +68,7 @@ A *assinatura* de um método deve ser exclusiva na classe na qual o método é d
 Quando um corpo de método é uma única expressão, o método pode ser definido usando um formato de expressão Compact, conforme mostrado no exemplo a seguir:
 
 ```csharp
-public override ToString() => "This is an object";
+public override string ToString() => "This is an object";
 ```
 
 ### <a name="parameters"></a>Parâmetros
@@ -189,7 +189,7 @@ Ao contrário de outros membros, os construtores de instância não são herdado
 
 As *propriedades* são uma extensão natural dos campos. Elas são denominadas membros com tipos associados, e a sintaxe para acessar os campos e as propriedades é a mesma. No entanto, ao contrário dos campos, as propriedades não denotam locais de armazenamento. Em vez disso, as propriedades têm *acessadores* que especificam as instruções executadas quando seus valores são lidos ou gravados.
 
-Uma propriedade é declarada como um campo, exceto que a declaração termina com um acessador get ou um acessador set gravado entre os delimitadores `{` e `}` em vez de terminar em um ponto e vírgula. Uma propriedade que tem um acessador get e um acessador set é uma *propriedade de leitura-gravação*. Uma propriedade que tem apenas um acessador get é uma *propriedade somente leitura*, e uma propriedade que tem apenas um acessador set é uma *propriedade somente gravação*.
+Uma propriedade é declarada como um campo, exceto que a declaração termina com um acessador get ou um acessador set gravado entre os delimitadores `{` e `}` em vez de terminar em um ponto e vírgula. Uma propriedade que tem um acessador get e um acessador set é uma *propriedade de leitura/gravação*. Uma propriedade que tem apenas um acessador get é uma *propriedade somente leitura*. Uma propriedade que tem apenas um acessador set é uma *propriedade somente gravação*.
 
 Um acessador get corresponde a um método sem parâmetros com um valor retornado do tipo de propriedade. Um acessador set corresponde a um método com um parâmetro único chamado valor e nenhum tipo de retorno. O acessador get computa o valor da propriedade. O acessador set fornece um novo valor para a propriedade. Quando a propriedade é o destino de uma atribuição, ou o operando de `++` ou `--` , o acessador set é invocado. Em outros casos em que a propriedade é referenciada, o acessador get é invocado.
 

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como substituir a reserva de URL do WCF por uma reserva restrita'
 title: 'Como: substituir a reserva de URL do WCF com uma reserva restrita'
 ms.date: 03/30/2017
 ms.assetid: 2754d223-79fc-4e2b-a6ce-989889f2abfa
-ms.openlocfilehash: a7025636bb1ca2ef250d7d25634bda961f2db09d
-ms.sourcegitcommit: 9c45035b781caebc63ec8ecf912dc83fb6723b1f
+ms.openlocfilehash: b3fec02e6bf041430dfb7082453b33c7f448bb28
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88811607"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99643417"
 ---
 # <a name="how-to-replace-the-wcf-url-reservation-with-a-restricted-reservation"></a>Como: substituir a reserva de URL do WCF com uma reserva restrita
 
@@ -36,6 +37,7 @@ Reserved URL : http://+:80/Temporary_Listen_Addresses/
 3. Se a reserva for excluída com êxito, a seguinte mensagem será exibida. **Reserva de URL excluída com êxito**  
   
 ## <a name="creating-a-new-security-group-and-new-restricted-url-reservation"></a>Criando um novo grupo de segurança e nova reserva de URL restrita  
+
  Para substituir a reserva de URL do WCF por uma reserva restrita, você deve primeiro criar um novo grupo de segurança. Você pode fazer isso de uma das duas maneiras: em um prompt de comando ou no console de gerenciamento do computador. Você só precisa fazer uma.  
   
 ### <a name="to-create-a-new-security-group-from-a-command-prompt"></a>Para criar um novo grupo de segurança a partir de um prompt de comando  
@@ -48,9 +50,9 @@ Reserved URL : http://+:80/Temporary_Listen_Addresses/
   
 ### <a name="to-create-a-new-security-group-from-the-computer-management-console"></a>Para criar um novo grupo de segurança no console de gerenciamento do computador  
   
-1. Clique em **Iniciar**, em **painel de controle**, em **Ferramentas administrativas**e em **Gerenciamento do computador** para abrir o console de gerenciamento do computador. Clique em **continuar** na janela controle de conta de usuário (UAC) que pode pedir permissões para continuar.  
+1. Clique em **Iniciar**, em **painel de controle**, em **Ferramentas administrativas** e em **Gerenciamento do computador** para abrir o console de gerenciamento do computador. Clique em **continuar** na janela controle de conta de usuário (UAC) que pode pedir permissões para continuar.  
   
-2. Clique **em ferramentas do sistema**, clique em **usuários e grupos locais**, clique com o botão direito do mouse na pasta **grupos** e clique em **novo grupo** no menu de contexto que aparece. Digite o nome do **grupo**desejado, a **Descrição** e outros detalhes desse novo grupo de segurança e clique no botão **criar** para criar o grupo de segurança.  
+2. Clique **em ferramentas do sistema**, clique em **usuários e grupos locais**, clique com o botão direito do mouse na pasta **grupos** e clique em **novo grupo** no menu de contexto que aparece. Digite o nome do **grupo** desejado, a **Descrição** e outros detalhes desse novo grupo de segurança e clique no botão **criar** para criar o grupo de segurança.  
   
 ### <a name="to-create-the-restricted-url-reservation"></a>Para criar a reserva de URL restrita  
   

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: ICorProfilerCallback3: método rofilerAttachComplete de:P'
 title: Método ICorProfilerCallback3::ProfilerAttachComplete
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 257d6076-06e0-4d93-bb33-651fbb2b92d7
 topic_type:
 - apiref
-ms.openlocfilehash: bcc938ff9322fca4f45366fdc695e0c3901484b5
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: dcd8ab9fed402593fc955050b0d3be6f8a46730a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84499656"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788781"
 ---
 # <a name="icorprofilercallback3profilerattachcomplete-method"></a>Método ICorProfilerCallback3::ProfilerAttachComplete
+
 Chamado pelo Common Language Runtime (CLR) para indicar que o criador de perfil agora pode chamar os métodos de atualização [ICorProfilerInfo3:: EnumJITedFunctions](icorprofilerinfo3-enumjitedfunctions-method.md) e [ICorProfilerInfo3:: EnumModules](icorprofilerinfo3-enummodules-method.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -32,6 +34,7 @@ HRESULT ProfilerAttachComplete ();
 ```  
   
 ## <a name="remarks"></a>Comentários  
+
  O `ProfilerAttachComplete` retorno de chamada é emitido depois que o método [ICorProfilerCallback3:: InitializeForAttach](icorprofilercallback3-initializeforattach-method.md) é chamado. Isso indica o seguinte:  
   
 - Os retornos de chamada que foram solicitados pelo criador de perfil no `InitializeForAttach` foram ativados.  
@@ -41,6 +44,7 @@ HRESULT ProfilerAttachComplete ();
  O CLR ignora o valor de retorno deste retorno de chamada.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -49,7 +53,7 @@ HRESULT ProfilerAttachComplete ();
   
  **.NET Framework versões:**[!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerCallback](icorprofilercallback-interface.md)
 - [Interface ICorProfilerInfo3](icorprofilerinfo3-interface.md)

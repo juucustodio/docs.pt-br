@@ -1,28 +1,32 @@
 ---
+description: 'Saiba mais sobre: 4806-DiscoveryMessageWithInvalidRelatesToOrOperationCompleted'
 title: 4806 - DiscoveryMessageWithInvalidRelatesToOrOperationCompleted
 ms.date: 03/30/2017
 ms.assetid: 19e9a660-25f3-4332-b716-a12a59f2cbbb
-ms.openlocfilehash: 3d0d8d426b0b8b7e5a1e890847ae36957e62f028
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: 51c1dd9e4478f53098a8087cb4c2e2efdceeaa2a
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61943033"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788378"
 ---
 # <a name="4806---discoverymessagewithinvalidrelatestooroperationcompleted"></a>4806 - DiscoveryMessageWithInvalidRelatesToOrOperationCompleted
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
 |-|-|  
 |ID|4806|  
 |Palavras-chave|Descoberta|  
-|Nível|Aviso|  
+|Level|Aviso|  
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando a mensagem de descoberta foi descartada pelo DiscoveryClient porque a operação correspondente foi concluída ou o valor de relatesTo é inválido.  
+
+ Esse evento é emitido quando a mensagem de descoberta foi descartada pelo DiscoveryClient porque a operação correspondente foi concluída ou o valor de RelatesTo é inválido.  
   
 ## <a name="message"></a>Mensagem  
- Uma mensagem %1 com messageId = '%2' e relatesTo = '%3' foi descartado pelo DiscoveryClient porque a operação %4 correspondente foi concluída ou o valor de relatesTo é inválido.  
+
+ Uma mensagem %1 com messageId = ' %2 ' e relatestse = ' %3 ' foi descartada pelo DiscoveryClient porque a operação %4 correspondente foi concluída ou o valor de RelatesTo é inválido.  
   
 ## <a name="details"></a>Detalhes

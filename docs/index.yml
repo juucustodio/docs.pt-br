@@ -10,13 +10,13 @@ metadata:
   ms.collection: collection
   author: BillWagner
   ms.author: wiwagn
-  ms.date: 07/10/2020
-  ms.openlocfilehash: d324cfe43f5558f255746421ebd4d143e7343e81
-  ms.sourcegitcommit: cbacb5d2cebbf044547f6af6e74a9de866800985
+  ms.date: 10/9/2020
+  ms.openlocfilehash: e13d608c8840ef6081c6d3d4ecfd975c30b6a3a6
+  ms.sourcegitcommit: a4cecb7389f02c27e412b743f9189bd2a6dea4d6
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 09/05/2020
-  ms.locfileid: "89495545"
+  ms.lasthandoff: 01/14/2021
+  ms.locfileid: "98190787"
 highlightedContent:
   items:
   - title: Baixar o .NET
@@ -31,6 +31,12 @@ highlightedContent:
   - title: Crie seu primeiro aplicativo Web.
     itemType: learn
     url: https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro
+  - title: Criar aplicativos .NET com C#
+    itemType: learn
+    url: /learn/paths/build-dotnet-applications-csharp/
+  - title: Procurar todos os módulos e roteiros de aprendizagem do .NET
+    itemType: learn
+    url: /learn/dotnet/
   - title: Novidades nos documentos do .NET
     itemType: whats-new
     url: whats-new/index.yml
@@ -50,7 +56,7 @@ conceptualContent:
     - url: core/whats-new/dotnet-core-3-1.md
       itemType: whats-new
       text: Novidades do .NET Core 3.1
-    - url: standard/tour.md
+    - url: ./core/introduction.md
       itemType: overview
       text: Tour do .NET
     - url: core/deploying/index.md
@@ -74,12 +80,15 @@ conceptualContent:
     - url: https://channel9.msdn.com/Series/NET-Core-101/What-is-NET
       itemType: video
       text: O que é o .NET?
-    - url: standard/tour.md
+    - url: /answers/products/dotnet
+      itemType: get-started
+      text: .NET no Q&A
+    - url: ./core/introduction.md
       itemType: overview
       text: Visão geral do .NET
     - url: core/dotnet-five.md
       itemType: concept
-      text: Evolução para o .NET 5
+      text: Novidades do .NET 5
     - url: standard/net-standard.md
       itemType: overview
       text: .NET Standard
@@ -110,7 +119,7 @@ conceptualContent:
     - url: core/compatibility/index.md
       itemType: concept
       text: Alterações da falha do .NET Core
-    - url: desktop-wpf/overview/index.md
+    - url: /dotnet/desktop/wpf/overview/
       itemType: overview
       text: Crie aplicativos da área de trabalho do .NET Core para Windows
     - url: standard/library-guidance/index.md
@@ -168,11 +177,11 @@ additionalContent:
         text: 'Blazor: Interface do usuário da Web do lado do cliente interativa com o .NET'
     - title: Nativo de nuvem e microsserviços
       links:
-      - url: /dotnet/azure/
+      - url: ./azure/index.yml
         text: Documentação do Azure para .NET
       - url: /azure/storage
         text: Armazenamento
-      - url: /dotnet/fsharp/using-fsharp-on-azure/
+      - url: ./fsharp/using-fsharp-on-azure/index.md
         text: Usando F# no Azure
       - url: architecture/serverless/index.md
         text: 'Aplicativos sem servidor: Arquitetura, padrões e implementação no Azure'
@@ -192,7 +201,7 @@ additionalContent:
       links:
       - url: /uwp
         text: Aplicativos Universais do Windows
-      - url: desktop-wpf/index.yml
+      - url: /dotnet/desktop/wpf/
         text: Windows Presentation Foundation (.NET Core)
       - url: /dotnet/desktop/wpf/?view=netframeworkdesktop-4.8
         text: Windows Presentation Foundation (.NET Framework)
@@ -222,32 +231,32 @@ additionalContent:
         text: .NET para Apache Spark
     - title: Internet das coisas (IoT)
       links:
-      - url: https://channel9.msdn.com/Shows/On-NET/IoT-support-for-NET-Core
-        text: 'No .NET: Saiba mais sobre o suporte a IoT no .NET Core'
-      - url: https://docs.microsoft.com/archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0
-        text: Programação de IoT Multiplataforma com o .NET Core 3.0
-      - url: https://github.com/dotnet/iot
-        text: Bibliotecas de IoT do .NET Core
-      - url: https://www.nuget.org/packages/System.Device.Gpio
-        text: Pacote NuGet System.Device.Gpio
+      - url: ./iot/index.yml
+        text: Bibliotecas de IoT do .NET
+      - url: ./iot/quickstarts/sensehat.md
+        text: Introdução em cinco minutos
+      - url: ./iot/tutorials/blink-led.md
+        text: Fazer um LED piscar
+      - url: https://aka.ms/IoTNet101
+        text: Série de vídeos básicos sobre IoT do .NET
   - title: Referência de API e de linguagem
     summary: Pesquise a documentação de referência da API do .NET e de linguagens.
     items:
     - title: Referência da API do .NET Core
       summary: Documentação de referência da API do .NET Core
-      url: https://docs.microsoft.com/dotnet/api/?view=netcore-3.1
+      url: ../api/index.md?view=netcore-3.1
     - title: Referência da API do .NET Framework
       summary: Documentação de referência da API do .NET Framework
-      url: https://docs.microsoft.com/dotnet/api/?view=netframework-4.8
+      url: ../api/index.md?view=netframework-4.8
     - title: Referência da API do ASP.NET Core
       summary: Documentação de referência da API do ASP.NET Core
-      url: https://docs.microsoft.com/dotnet/api/?view=aspnetcore-3.1
+      url: ../api/index.md?view=aspnetcore-3.1
     - title: Referência de API do ML.NET
       summary: Documentação de referência da API do ML.NET
-      url: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet
+      url: ../api/index.md?view=ml-dotnet
     - title: Referência de API do .NET para Apache Spark
       summary: Documentação de referência da API do .NET para Apache Spark
-      url: https://docs.microsoft.com/dotnet/api/?view=spark-dotnet
+      url: ../api/index.md?view=spark-dotnet
     - title: Referência da linguagem C#
       summary: Referência e especificação da linguagem C#
       url: csharp/language-reference/index.md
@@ -257,4 +266,4 @@ additionalContent:
     - title: Referência da linguagem Visual Basic
       summary: Referência e especificação da linguagem Visual Basic
       url: visual-basic/language-reference/index.md
-  footer: Contribuir para a documentação do .NET. Leia nosso [guia do colaborador](https://docs.microsoft.com/contribute/dotnet/dotnet-contribute).
+  footer: Contribuir para a documentação do .NET. Leia nosso [guia do colaborador](/contribute/dotnet/dotnet-contribute).

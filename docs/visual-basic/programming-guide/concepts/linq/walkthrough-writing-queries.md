@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Walkthrough: escrevendo consultas no Visual Basic'
 title: escrever consultas
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - LINQ [Visual Basic], writing queries
 - writing LINQ queries [Visual Basic]
 ms.assetid: f0045808-b9fe-4d31-88d1-473d9957211e
-ms.openlocfilehash: 25905d7ac3ca4bb66a22ad1df421b400eaa6b08f
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 55a1b3382d587b7982b79448334c4688895fa6e6
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84413265"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100466803"
 ---
 # <a name="walkthrough-writing-queries-in-visual-basic"></a>Instruções passo a passo: escrevendo consultas em Visual Basic
 
-Este tutorial demonstra como você pode usar Visual Basic recursos de idioma para escrever expressões de consulta LINQ (consulta integrada à linguagem). O tutorial demonstra como criar consultas em uma lista de objetos de aluno, como executar as consultas e como modificá-las. As consultas incorporam vários recursos, incluindo inicializadores de objeto, inferência de tipo local e tipos anônimos.
+Este tutorial demonstra como você pode usar Visual Basic recursos de idioma para escrever expressões de consulta de Language-Integrated consulta (LINQ). O tutorial demonstra como criar consultas em uma lista de objetos de aluno, como executar as consultas e como modificá-las. As consultas incorporam vários recursos, incluindo inicializadores de objeto, inferência de tipo local e tipos anônimos.
 
 Depois de concluir este passo a passos, você estará pronto para passar para os exemplos e a documentação do provedor LINQ específico no qual você está interessado. Os provedores de LINQ incluem [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] , LINQ to DataSet e [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] .
 
@@ -26,13 +27,13 @@ Depois de concluir este passo a passos, você estará pronto para passar para os
 
 1. Inicie o Visual Studio.
 
-2. No menu **Arquivo** , aponte para **Novo**e clique em **Projeto**.
+2. No menu **Arquivo** , aponte para **Novo** e clique em **Projeto**.
 
 3. Na lista **modelos instalados** , clique em **Visual Basic**.
 
 4. Na lista de tipos de projeto, clique em **aplicativo de console**. Na caixa **nome** , digite um nome para o projeto e clique em **OK**.
 
-    Um projeto é criado. Por padrão, ele contém uma referência a System. Core. dll. Além disso, a lista de **namespaces importados** na [página referências, designer de projeto (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic) inclui o <xref:System.Linq?displayProperty=nameWithType> namespace.
+    Um projeto é criado. Por padrão, ele contém uma referência a System.Core.dll. Além disso, a lista de **namespaces importados** na [página referências, designer de projeto (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic) inclui o <xref:System.Linq?displayProperty=nameWithType> namespace.
 
 5. Na [página compilar, designer de projeto (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic), verifique se **Option Infer** está definida como **on**.
 
@@ -145,11 +146,11 @@ Depois de se familiarizar com os conceitos básicos do trabalho com consultas, v
 
 - [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
 
-- [LINQ to XML](linq-to-xml.md)
+- [LINQ to XML](../../../../standard/linq/linq-xml-overview.md)
 
 - [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ (consulta integrada à linguagem) (Visual Basic)](index.md)
 - [Introdução a LINQ no Visual Basic](getting-started-with-linq.md)

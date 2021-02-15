@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: especificando Transferência de Dados em contratos de serviço'
 title: Especificando transferência de dados em contratos de serviço
 ms.date: 03/30/2017
 dev_langs:
@@ -7,14 +8,15 @@ dev_langs:
 helpviewer_keywords:
 - service contracts [WCF], data transfer
 ms.assetid: 7c5a26c8-89c9-4bcb-a4bc-7131e6d01f0c
-ms.openlocfilehash: ae05fb5ea0ee4962d9889e2a29399a3913a0d9d5
-ms.sourcegitcommit: cdb295dd1db589ce5169ac9ff096f01fd0c2da9d
+ms.openlocfilehash: 672d2127af95847c0a085a8ca1c358f2a8440dee
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84600290"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99793422"
 ---
 # <a name="specifying-data-transfer-in-service-contracts"></a>Especificando transferência de dados em contratos de serviço
+
 O Windows Communication Foundation (WCF) pode ser considerado uma infraestrutura de mensagens. As operações de serviço podem receber mensagens, processá-las e enviar mensagens. As mensagens são descritas usando contratos de operação. Por exemplo, considere o contrato a seguir.  
   
 ```csharp  
@@ -40,6 +42,7 @@ End Interface
  Este tópico explica as várias maneiras em que um contrato de operação pode descrever mensagens.  
   
 ## <a name="describing-messages-by-using-parameters"></a>Descrevendo mensagens usando parâmetros  
+
  A maneira mais simples de descrever uma mensagem é usar uma lista de parâmetros e o valor de retorno. No exemplo anterior, os `fromCity` parâmetros de `toCity` cadeia de caracteres e foram usados para descrever a mensagem de solicitação e o valor de retorno flutuante foi usado para descrever a mensagem de resposta. Se o valor de retorno sozinho não for suficiente para descrever uma mensagem de resposta, os parâmetros de saída poderão ser usados. Por exemplo, a operação a seguir tem `fromCity` e `toCity` em sua mensagem de solicitação e um número junto com uma moeda em sua mensagem de resposta:  
   
 ```csharp  
@@ -141,6 +144,7 @@ public float GetAirfare(
 ```  
   
 ## <a name="describing-empty-messages"></a>Descrevendo mensagens vazias  
+
  Uma mensagem de solicitação vazia pode ser descrita por não ter parâmetros de entrada ou de referência. Por exemplo, em C#:  
   
  `[OperationContract]`  
@@ -180,6 +184,7 @@ Sub SetLightbulbStatus(isOne As Boolean)
  A `SetTemperatureStatus` operação retorna uma mensagem vazia. Ele poderá retornar uma falha em vez disso, se houver um problema ao processar a mensagem de entrada. A `SetLightbulbStatus` operação não retorna nada. Não é possível comunicar uma condição de falha dessa operação.  
   
 ## <a name="describing-messages-by-using-message-contracts"></a>Descrevendo mensagens usando contratos de mensagem  
+
  Talvez você queira usar um único tipo para representar a mensagem inteira. Embora seja possível usar um contrato de dados para essa finalidade, a maneira recomendada de fazer isso é usar um contrato de mensagem — isso evita níveis desnecessários de encapsulamento no XML resultante. Além disso, os contratos de mensagem permitem que você exerça mais controle sobre as mensagens resultantes. Por exemplo, você pode decidir quais partes de informações devem estar no corpo da mensagem e quais devem estar nos cabeçalhos da mensagem. O exemplo a seguir mostra o uso de contratos de mensagem.  
   
 ```csharp  
@@ -246,6 +251,7 @@ End Class
  No exemplo anterior, a <xref:System.Runtime.Serialization.DataContractSerializer> classe ainda é usada por padrão. A <xref:System.Xml.Serialization.XmlSerializer> classe também pode ser usada com contratos de mensagem. Para fazer isso, aplique o <xref:System.ServiceModel.XmlSerializerFormatAttribute> atributo à operação ou ao contrato e use tipos compatíveis com a <xref:System.Xml.Serialization.XmlSerializer> classe nos cabeçalhos de mensagem e membros do corpo.  
   
 ## <a name="describing-messages-by-using-streams"></a>Descrevendo mensagens usando fluxos  
+
  Outra maneira de descrever as mensagens em operações é usar a <xref:System.IO.Stream> classe ou uma de suas classes derivadas em um contrato de operação ou como um membro do corpo do contrato de mensagem (ela deve ser o único membro nesse caso). Para mensagens de entrada, o tipo deve ser `Stream` — você não pode usar classes derivadas.  
   
  Em vez de invocar o serializador, o WCF recupera dados de um fluxo e os coloca diretamente em uma mensagem de saída ou recupera dados de uma mensagem de entrada e os coloca diretamente em um fluxo. O exemplo a seguir mostra o uso de fluxos.  
@@ -304,6 +310,7 @@ End Class
  Para obter mais informações, consulte [grandes dados e streaming](large-data-and-streaming.md).  
   
 ## <a name="using-the-message-class"></a>Usando a classe de mensagens  
+
  Para ter total controle programático sobre as mensagens enviadas ou recebidas, você pode usar a <xref:System.ServiceModel.Channels.Message> classe diretamente, conforme mostrado no código de exemplo a seguir.  
   
 ```csharp  
@@ -319,6 +326,7 @@ Sub LogMessage(m As Message)
  Este é um cenário avançado, que é descrito em detalhes no [uso da classe Message](using-the-message-class.md).  
   
 ## <a name="describing-fault-messages"></a>Descrevendo as mensagens de falha  
+
  Além das mensagens descritas pelo valor de retorno e parâmetros de saída ou de referência, qualquer operação que não seja unidirecional pode retornar pelo menos duas mensagens possíveis: sua mensagem de resposta normal e uma mensagem de falha. Considere o contrato de operação a seguir.  
   
 ```csharp  
@@ -373,6 +381,7 @@ End Class
  Você não pode usar a <xref:System.Xml.Serialization.XmlSerializer> classe para descrever as falhas. O <xref:System.ServiceModel.XmlSerializerFormatAttribute> não tem nenhum efeito sobre os contratos de falha.  
   
 ## <a name="using-derived-types"></a>Usando tipos derivados  
+
  Talvez você queira usar um tipo base em uma operação ou um contrato de mensagem e, em seguida, usar um tipo derivado ao invocar a operação de fato. Nesse caso, você deve usar o <xref:System.ServiceModel.ServiceKnownTypeAttribute> atributo ou algum mecanismo alternativo para permitir o uso de tipos derivados. Considere a seguinte operação.  
   
 ```csharp  
@@ -430,16 +439,19 @@ End Class
  Você pode aplicar o <xref:System.ServiceModel.ServiceKnownTypeAttribute> atributo a uma operação ou a todo o serviço. Ele aceita um tipo ou o nome do método a ser chamado para obter uma lista de tipos conhecidos, assim como o <xref:System.Runtime.Serialization.KnownTypeAttribute> atributo. Para obter mais informações, consulte [tipos conhecidos de contrato de dados](data-contract-known-types.md).  
   
 ## <a name="specifying-the-use-and-style"></a>Especificando o uso e o estilo  
+
  Ao descrever serviços usando WSDL (Web Services Description Language), os dois estilos comumente usados são documento e RPC (chamada de procedimento remoto). No estilo do documento, todo o corpo da mensagem é descrito usando o esquema, e o WSDL descreve as várias partes do corpo da mensagem referindo-se aos elementos dentro desse esquema. No estilo RPC, o WSDL refere-se a um tipo de esquema para cada parte de mensagem, em vez de um elemento. Em alguns casos, você precisa selecionar manualmente um desses estilos. Você pode fazer isso aplicando o <xref:System.ServiceModel.DataContractFormatAttribute> atributo e configurando a `Style` Propriedade (quando o <xref:System.Runtime.Serialization.DataContractSerializer> estiver em uso) ou definindo `Style` no <xref:System.ServiceModel.XmlSerializerFormatAttribute> atributo (ao usar o <xref:System.Xml.Serialization.XmlSerializer> ).  
   
- Além disso, o <xref:System.Xml.Serialization.XmlSerializer> oferece suporte a duas formas de XML serializados: `Literal` e `Encoded` . `Literal`é a forma mais aceita e é a única forma com a qual o <xref:System.Runtime.Serialization.DataContractSerializer> dá suporte. `Encoded`é um formulário herdado descrito na seção 5 da especificação SOAP e não é recomendado para novos serviços. Para alternar para `Encoded` o modo, defina a `Use` propriedade no <xref:System.ServiceModel.XmlSerializerFormatAttribute> atributo como `Encoded` .  
+ Além disso, o <xref:System.Xml.Serialization.XmlSerializer> oferece suporte a duas formas de XML serializados: `Literal` e `Encoded` . `Literal` é a forma mais aceita e é a única forma com a qual o <xref:System.Runtime.Serialization.DataContractSerializer> dá suporte. `Encoded` é um formulário herdado descrito na seção 5 da especificação SOAP e não é recomendado para novos serviços. Para alternar para `Encoded` o modo, defina a `Use` propriedade no <xref:System.ServiceModel.XmlSerializerFormatAttribute> atributo como `Encoded` .  
   
  Na maioria dos casos, você não deve alterar as configurações padrão para `Style` as `Use` Propriedades e.  
   
 ## <a name="controlling-the-serialization-process"></a>Controlando o processo de serialização  
+
  Você pode fazer várias coisas para personalizar a maneira como os dados são serializados.  
   
 ### <a name="changing-server-serialization-settings"></a>Alterando as configurações de serialização do servidor  
+
  Quando o padrão <xref:System.Runtime.Serialization.DataContractSerializer> estiver em uso, você poderá controlar alguns aspectos do processo de serialização no serviço aplicando o <xref:System.ServiceModel.ServiceBehaviorAttribute> atributo ao serviço. Especificamente, você pode usar a `MaxItemsInObjectGraph` propriedade para definir a cota que limita o número máximo de objetos que o <xref:System.Runtime.Serialization.DataContractSerializer> desserializa. Você pode usar a `IgnoreExtensionDataObject` propriedade para desativar o recurso de controle de versão de ida e volta. Para obter mais informações sobre cotas, confira [Considerações sobre segurança de dados](security-considerations-for-data.md). Para obter mais informações sobre ida e volta, consulte [contratos de dados compatíveis com o encaminhamento](forward-compatible-data-contracts.md).  
   
 ```csharp  
@@ -464,6 +476,7 @@ End Interface
 ```  
   
 ### <a name="serialization-behaviors"></a>Comportamentos de serialização  
+
  Dois comportamentos estão disponíveis no WCF, o <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> e o <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior> que são conectados automaticamente dependendo de qual serializador está em uso para uma operação específica. Como esses comportamentos são aplicados automaticamente, você normalmente não precisa estar atento a eles.  
   
  No entanto, o `DataContractSerializerOperationBehavior` tem as `MaxItemsInObjectGraph` `IgnoreExtensionDataObject` Propriedades, e `DataContractSurrogate` que você pode usar para personalizar o processo de serialização. As duas primeiras propriedades têm o mesmo significado, conforme discutido na seção anterior. Você pode usar a `DataContractSurrogate` propriedade para habilitar os substitutos de contrato de dados, que são um mecanismo poderoso para personalizar e estender o processo de serialização. Para obter mais informações, consulte [substitutos de contrato de dados](../extending/data-contract-surrogates.md).  
@@ -533,6 +546,7 @@ Dim serviceHost As ServiceHost = New ServiceHost(GetType(IDataService))
  No caso hospedado na Web, você deve criar uma nova `ServiceHost` classe derivada e usar uma fábrica de host de serviço para conectá-la.  
   
 ### <a name="controlling-serialization-settings-in-configuration"></a>Controlando as configurações de serialização na configuração  
+
  O `MaxItemsInObjectGraph` e o `IgnoreExtensionDataObject` podem ser controlados por meio da configuração usando o `dataContractSerializer` comportamento do ponto de extremidade ou serviço, conforme mostrado no exemplo a seguir.  
   
 ```xml  
@@ -558,6 +572,7 @@ Dim serviceHost As ServiceHost = New ServiceHost(GetType(IDataService))
 ```  
   
 ### <a name="shared-type-serialization-object-graph-preservation-and-custom-serializers"></a>Serialização de tipo compartilhado, preservação de grafo de objeto e serializadores personalizados  
+
  O <xref:System.Runtime.Serialization.DataContractSerializer> serializa o uso de nomes de contrato de dados e não de nomes de tipo .net. Isso é consistente com as filosofias de arquitetura orientada a serviços e permite um grande grau de flexibilidade — os tipos .NET podem mudar sem afetar o contrato de fio. Em casos raros, talvez você queira serializar nomes de tipo .NET reais, apresentando assim um forte acoplamento entre o cliente e o servidor, semelhante à tecnologia de comunicação remota .NET Framework. Essa não é uma prática recomendada, exceto em casos raros que geralmente ocorrem ao migrar para o WCF de .NET Framework comunicação remota. Nesse caso, você deve usar a <xref:System.Runtime.Serialization.NetDataContractSerializer> classe em vez da <xref:System.Runtime.Serialization.DataContractSerializer> classe.  
   
  <xref:System.Runtime.Serialization.DataContractSerializer>Normalmente, o serializa grafos de objeto como árvores de objetos. Ou seja, se o mesmo objeto for referenciado mais de uma vez, ele será serializado mais de uma vez. Por exemplo, considere uma `PurchaseOrder` instância que tenha dois campos do tipo endereço chamado `billTo` e `shipTo` . Se ambos os campos estiverem definidos para a mesma instância de endereço, haverá duas instâncias de endereço idênticas após a serialização e a desserialização. Isso é feito porque não há uma maneira interoperável padrão para representar grafos de objeto em XML (exceto para o padrão codificado em SOAP herdado disponível no <xref:System.Xml.Serialization.XmlSerializer> , conforme descrito na seção anterior em `Style` e `Use` ). A serialização de grafos de objeto como árvores tem determinadas desvantagens, por exemplo, grafos com referências circulares não podem ser serializados. Ocasionalmente, é necessário mudar para a serialização real do grafo de objetos, mesmo que ele não seja interoperável. Isso pode ser feito usando o <xref:System.Runtime.Serialization.DataContractSerializer> construído com o `preserveObjectReferences` parâmetro definido como `true` .  
@@ -577,5 +592,5 @@ Dim serviceHost As ServiceHost = New ServiceHost(GetType(IDataService))
 ## <a name="see-also"></a>Consulte também
 
 - [Usando a classe XmlSerializer](using-the-xmlserializer-class.md)
-- [Como habilitar transmissão](how-to-enable-streaming.md)
-- [Como criar um contrato de dados básicos para uma classe ou estrutura](how-to-create-a-basic-data-contract-for-a-class-or-structure.md)
+- [Como: habilitar a transmissão](how-to-enable-streaming.md)
+- [Como: criar um contrato de dados básicos para uma classe ou estrutura](how-to-create-a-basic-data-contract-for-a-class-or-structure.md)

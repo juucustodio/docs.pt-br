@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ISymUnmanagedScope:: GetLocals'
 title: Método ISymUnmanagedScope::GetLocals
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 17c45f15-8c44-44da-b070-f902077b36e4
 topic_type:
 - apiref
-ms.openlocfilehash: 0acd31d85504688427cace0222a657885035c537
-ms.sourcegitcommit: 27db07ffb26f76912feefba7b884313547410db5
+ms.openlocfilehash: 6b20d8a79e826be0bd191d46e794f8dad45c4810
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83615378"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99763404"
 ---
 # <a name="isymunmanagedscopegetlocals-method"></a>Método ISymUnmanagedScope::GetLocals
+
 Obtém as variáveis locais definidas nesse escopo.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT GetLocals(
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `cLocals`  
  no Um `ULONG32` que indica o tamanho da `locals` matriz.  
   
@@ -46,11 +49,13 @@ HRESULT GetLocals(
  fora A matriz que recebe as variáveis locais.  
   
 ## <a name="return-value"></a>Valor retornado  
+
  S_OK se o método tiver sucesso; caso contrário, E_FAIL ou algum outro código de erro.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Cabeçalho:** CorSym. idl, CorSym. h  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ISymUnmanagedScope](isymunmanagedscope-interface.md)

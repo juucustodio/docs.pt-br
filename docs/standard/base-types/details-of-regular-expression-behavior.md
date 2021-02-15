@@ -1,24 +1,25 @@
 ---
+description: 'Saiba mais sobre: detalhes do comportamento de expressão regular'
 title: Comportamento de expressão regular
 ms.date: 03/30/2017
-ms.technology: dotnet-standard
+ms.topic: conceptual
 dev_langs:
 - csharp
 - vb
 helpviewer_keywords:
 - regular expressions, behavior
-- .NET Framework regular expressions, behavior
+- .NET regular expressions, behavior
 ms.assetid: 0ee1a6b8-caac-41d2-917f-d35570021b10
-ms.openlocfilehash: 802c84bf93b3821459ab652e69a12fcc50280b9e
-ms.sourcegitcommit: 33deec3e814238fb18a49b2a7e89278e27888291
+ms.openlocfilehash: a06d66da92ae711abfbcbb477fd08e1da036f439
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84290546"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99629819"
 ---
 # <a name="details-of-regular-expression-behavior"></a>Detalhes do comportamento de expressões regulares
 
-O mecanismo de expressões regulares do .NET Framework é um correspondente de expressão regular de retrocesso que incorpora um mecanismo de NFA (Automação Finita Não Determinística) tradicional, como o usado pelo Perl, Python, Emacs e Tcl. Isso o distingue de mecanismos de DFA (Autômato finito determinístico) de expressões regulares puras mais rápidos, porém mais limitados, como os encontrados em awk, egrep ou lex. Também o distingue de NFAs POSIX padronizados, porém mais lentos. A seção a seguir descreve os três tipos de mecanismos de expressões regulares e explica por que as expressões regulares no .NET Framework são implementadas usando um mecanismo de NFA tradicional.
+O mecanismo de expressões regulares do .NET é um correspondente de expressão regular de retrocesso que incorpora um mecanismo de NFA (Automação Finita Não Determinística) tradicional, como o usado pelo Perl, Python, Emacs e Tcl. Isso o distingue de mecanismos de DFA (Autômato finito determinístico) de expressões regulares puras mais rápidos, porém mais limitados, como os encontrados em awk, egrep ou lex. Também o distingue de NFAs POSIX padronizados, porém mais lentos. A seção a seguir descreve os três tipos de mecanismos de expressões regulares e explica por que as expressões regulares no .NET são implementadas usando um mecanismo de NFA tradicional.
 
 ## <a name="benefits-of-the-nfa-engine"></a>Benefícios do mecanismo NFA
 
@@ -33,11 +34,11 @@ O mecanismo de expressões regulares do .NET Framework é um correspondente de e
 > [!NOTE]
 > Para obter informações sobre a penalidade de desempenho causada por retrocesso excessivo e maneiras de criar uma expressão regular para solucioná-lo, consulte [Retrocesso](backtracking-in-regular-expressions.md).
 
-## <a name="net-framework-engine-capabilities"></a>Recursos do mecanismo de .NET Framework
+## <a name="net-engine-capabilities"></a>Recursos do mecanismo .NET
 
- Para tirar proveito dos benefícios de um mecanismo de NFA tradicional, o mecanismo de expressões regulares do .NET Framework inclui um conjunto completo de constructos para permitir que os programadores conduzam o mecanismo de retrocesso. Tais constructos podem ser usados para encontrar correspondências mais rapidamente ou favorecer expansões específicas em detrimento de outras.
+ Para tirar proveito dos benefícios de um mecanismo de NFA tradicional, o mecanismo de expressões regulares do .NET inclui um conjunto completo de constructos para permitir que os programadores conduzam o mecanismo de retrocesso. Tais constructos podem ser usados para encontrar correspondências mais rapidamente ou favorecer expansões específicas em detrimento de outras.
 
- Outros recursos do mecanismo de expressões regulares do .NET Framework incluem o seguinte:
+ Outros recursos do mecanismo de expressões regulares do .NET incluem o seguinte:
 
 - Quantificadores lentos: `??` , `*?` , `+?` , `{` *n* `,` *m* `}?` . Esses constructos instruem o mecanismo de retrocesso a pesquisar o número mínimo de repetições primeiro. Por outro lado, quantificadores Greedy comuns tentam corresponder ao número máximo de repetições primeiro. O exemplo a seguir mostra a diferença entre os dois. Uma expressão regular corresponde a uma frase que termina em um número e um grupo de captura deve extrair esse número. A expressão regular `.+(\d+)\.` inclui o quantificador Greedy `.+`, que faz com que o mecanismo de expressões regulares capture o último dígito do número. Por outro lado, a expressão regular `.+?(\d+)\.` inclui o quantificador lento `.+?`, que faz com que o mecanismo de expressões regulares capture o número inteiro.
 
@@ -87,7 +88,7 @@ O mecanismo de expressões regulares do .NET Framework é um correspondente de e
 
      Para obter mais informações sobre as asserções de lookahead negativo, consulte [Constructos de agrupamento](grouping-constructs-in-regular-expressions.md).
 
-- Avaliação condicional: `(?(` *expressão* `)` *Sim* `|` *não* `)` e `(?(` *nome* `)` *Sim* `|` *não* `)` , em que *expressão* é uma subexpressão para corresponder, *nome* é o nome de um grupo de captura, *Sim* é a cadeia de caracteres a corresponder se *name* a *expressão* for correspondida ou se o nome for um grupo capturado válido, não vazio e *não* for a subexpressão a corresponder se a *expressão* não for correspondida ou o *nome* não for um grupo capturado válido Esse recurso permite que o mecanismo pesquise usando mais de um padrão alternativo, dependendo do resultado de uma correspondência de subexpressão anterior ou do resultado de uma asserção de largura zero. Isso possibilita uma forma mais potente de referência inversa que permite, por exemplo, corresponder a uma subexpressão com base no fato de uma subexpressão anterior ser correspondente. A expressão regular no exemplo a seguir corresponde a parágrafos que são destinados a uso público e interno. Os parágrafos destinados apenas a uso interno começam com uma marca `<PRIVATE>`. O padrão de expressão regular `^(?<Pvt>\<PRIVATE\>\s)?(?(Pvt)((\w+\p{P}?\s)+)|((\w+\p{P}?\s)+))\r?$` usa avaliação condicional para atribuir o conteúdo de parágrafos destinados a uso público e interno a grupos de captura separados. Esses parágrafos podem ser tratados de maneiras diferentes.
+- Avaliação condicional: `(?(` *expressão* `)` *Sim* `|` *não* `)` e `(?(` *nome* `)` *Sim* `|` *não* `)` , em que *expressão* é uma subexpressão para corresponder, *nome* é o nome de um grupo de captura, *Sim* é a cadeia de caracteres a corresponder se  a *expressão* for correspondida ou se o nome for um grupo capturado válido, não vazio e *não* for a subexpressão a corresponder se a *expressão* não for correspondida ou o *nome* não for um grupo capturado válido Esse recurso permite que o mecanismo pesquise usando mais de um padrão alternativo, dependendo do resultado de uma correspondência de subexpressão anterior ou do resultado de uma asserção de largura zero. Isso possibilita uma forma mais potente de referência inversa que permite, por exemplo, corresponder a uma subexpressão com base no fato de uma subexpressão anterior ser correspondente. A expressão regular no exemplo a seguir corresponde a parágrafos que são destinados a uso público e interno. Os parágrafos destinados apenas a uso interno começam com uma marca `<PRIVATE>`. O padrão de expressão regular `^(?<Pvt>\<PRIVATE\>\s)?(?(Pvt)((\w+\p{P}?\s)+)|((\w+\p{P}?\s)+))\r?$` usa avaliação condicional para atribuir o conteúdo de parágrafos destinados a uso público e interno a grupos de captura separados. Esses parágrafos podem ser tratados de maneiras diferentes.
 
      [!code-csharp[Conceptual.RegularExpressions.Design#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.design/cs/conditional1.cs#4)]
      [!code-vb[Conceptual.RegularExpressions.Design#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.design/vb/conditional1.vb#4)]
@@ -104,7 +105,7 @@ O mecanismo de expressões regulares do .NET Framework é um correspondente de e
 
      Para obter mais informações sobre a avaliação condicional, consulte [Constructos de alternância](alternation-constructs-in-regular-expressions.md).
 
-- Definições de grupo de `(?<` *balanceamento:* `-` *name2* `>` *subexpressão*nome2property `)` . Esse recurso permite que o mecanismo de expressões regulares controle constructos aninhados, como parênteses ou colchetes de abertura e fechamento. Para ver um exemplo, consulte [Constructos de agrupamento](grouping-constructs-in-regular-expressions.md).
+- Definições de grupo de `(?<` *balanceamento:* `-`  `>` *subexpressão* nome2property `)` . Esse recurso permite que o mecanismo de expressões regulares controle constructos aninhados, como parênteses ou colchetes de abertura e fechamento. Para ver um exemplo, consulte [Constructos de agrupamento](grouping-constructs-in-regular-expressions.md).
 
 - Grupos atômicos: `(?>` *subexpressão* `)` . Esse recurso permite que o mecanismo de retrocesso assegure que uma subexpressão corresponda apenas à primeira correspondência encontrada para ela, como se a expressão estivesse sendo executada independentemente da expressão que a contém. Se você não usar esse constructo, as pesquisas de retrocesso de expressões maiores poderão alterar o comportamento de uma subexpressão. Por exemplo, a expressão regular `(a+)\w` corresponde a um ou mais caracteres "a", juntamente com um caractere de palavra que segue a sequência de caracteres "a" e atribui a sequência de caracteres "a" para o primeiro grupo de captura. No entanto, se o caractere final da cadeia de caracteres de entrada também for um "a", ele será correspondido pelo `\w` elemento Language e não será incluído no grupo capturado.
 
@@ -144,12 +145,12 @@ O mecanismo de expressões regulares do .NET Framework é um correspondente de e
 
 ## <a name="related-articles"></a>Artigos relacionados
 
-|Title|Description|
+|Title|Descrição|
 |-----------|-----------------|
 |[Retrocesso](backtracking-in-regular-expressions.md)|Fornece informações sobre como o retrocesso de expressões regulares se ramifica para encontrar correspondências alternativas.|
 |[Compilação e reutilização](compilation-and-reuse-in-regular-expressions.md)|Fornece informações sobre a compilação e a reutilização de expressões regulares para aumentar o desempenho.|
 |[Acesso thread-safe](thread-safety-in-regular-expressions.md)|Fornece informações sobre a segurança de thread de expressões regulares e explica quando você deve sincronizar o acesso a objetos de expressão regular.|
-|[Expressões regulares do .NET Framework](regular-expressions.md)|Fornece uma visão geral sobre o aspecto de linguagem de programação das expressões regulares.|
+|[Expressões regulares do .NET](regular-expressions.md)|Fornece uma visão geral sobre o aspecto de linguagem de programação das expressões regulares.|
 |[O modelo de objeto de expressão regular](the-regular-expression-object-model.md)|Oferece informações e exemplos de código que mostram como usar as classes de expressão regular.|
 |[Linguagem de expressões regulares – referência rápida](regular-expression-language-quick-reference.md)|Oferece informações a respeito do conjunto de caracteres, operadores e constructos que você pode usar para definir expressões regulares.|
 

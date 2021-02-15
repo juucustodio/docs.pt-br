@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: interface IMetaDataDispenser'
 title: Interface IMetaDataDispenser
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 989840b3-9822-4ce5-a6c5-b375d3340a7a
 topic_type:
 - apiref
-ms.openlocfilehash: 2bdfe65dbf923ec61d91a259b5257d892fef53da
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 5ba37fc05a4e1897b100967d32b268f91a0e4402
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84007332"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99721002"
 ---
 # <a name="imetadatadispenser-interface"></a>Interface IMetaDataDispenser
+
 Fornece métodos para criar um novo escopo de metadados ou abrir um existente.  
   
 ## <a name="methods"></a>Métodos  
@@ -33,15 +35,16 @@ Fornece métodos para criar um novo escopo de metadados ou abrir um existente.
 |[Método OpenScopeOnMemory](imetadatadispenser-openscopeonmemory-method.md)|Abre uma área de memória que contém os metadados existentes. Ou seja, esse método abre uma área especificada de memória na qual os dados existentes são tratados como metadados.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataforma:** Consulte [requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** Cor. h  
   
- **Biblioteca:** Usado como um recurso em MsCorEE. dll  
+ **Biblioteca:** Usado como um recurso no MsCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface IMetaDataDispenserEx](imetadatadispenserex-interface.md)
 - [Interfaces de metadados](metadata-interfaces.md)

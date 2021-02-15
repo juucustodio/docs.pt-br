@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: ICorProfilerInfo4:: GetReJITIDs'
 title: Método ICorProfilerInfo4::GetReJITIDs
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 634ac28c-a5b7-4fc3-af84-256c24ca8177
 topic_type:
 - apiref
-ms.openlocfilehash: ba15440df79dded95a8afa9438657d064e167f36
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 60df4cb6023bbee68d2909e1cc0e9de5595ac0b9
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84495964"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99636393"
 ---
 # <a name="icorprofilerinfo4getrejitids-method"></a>Método ICorProfilerInfo4::GetReJITIDs
+
 Retorna uma matriz de IDs que identifica todas as versões recompiladas por JIT da função especificada que ainda estão alocadas. Isso inclui versões recompiladas do JIT de funções que foram revertidas posteriormente, mas ainda não foram liberadas (por exemplo, quando o domínio do aplicativo que contém a função revertida ainda estiver em uso).  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -36,6 +38,7 @@ HRESULT GetReJITIDs (
 ```  
   
 ## <a name="parameters"></a>Parâmetros  
+
  `functionId`  
  no O `FunctionID` da instância de função para a qual enumerar versões.  
   
@@ -49,9 +52,11 @@ HRESULT GetReJITIDs (
  fora Uma matriz alocada pelo chamador que conterá as IDs de compilação JIT recompiladas para a função especificada.  
   
 ## <a name="remarks"></a>Comentários  
- `GetReJITIDs`enumera as IDs de recompilação JIT ativas para uma determinada instância de função. Ele segue o mesmo padrão de uso que outras `ICorProfilerInfo` funções que aceitam buffers alocados pelo chamador.  
+
+ `GetReJITIDs` enumera as IDs de recompilação JIT ativas para uma determinada instância de função. Ele segue o mesmo padrão de uso que outras `ICorProfilerInfo` funções que aceitam buffers alocados pelo chamador.  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorProf. idl, CorProf. h  
@@ -60,7 +65,7 @@ HRESULT GetReJITIDs (
   
  **.NET Framework versões:**[!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICorProfilerInfo4](icorprofilerinfo4-interface.md)
 - [Criação de perfil de interfaces](profiling-interfaces.md)

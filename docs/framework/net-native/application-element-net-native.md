@@ -1,21 +1,23 @@
 ---
+description: 'Saiba mais sobre: <Application> elemento (.net Native)'
 title: <Application> (.NET Nativo)
 ms.date: 03/30/2017
 ms.assetid: b4e9b37a-059b-4076-8f56-cb3f9cef0cd9
-ms.openlocfilehash: e26826b3d8674b536ab0897182da58bc02cfd00b
-ms.sourcegitcommit: b16c00371ea06398859ecd157defc81301c9070f
+ms.openlocfilehash: ebbc6292b5936e6b7d54666070b33df2da80f57f
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "73128526"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99747940"
 ---
 # <a name="application-element-net-native"></a>\<Application> (.NET Nativo)
+
 Serve como um contêiner para tipos em todo o aplicativo e membros de tipo cujos metadados estão disponível para reflexão no runtime e aplica-se à política de reflexão no runtime a todos os elementos de programa em um aplicativo.  
   
  Elemento \<Directives>  
-\<Application>Elemento (RD. xml)  
+\<Application> Elemento (rd.xml)  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```xml  
 <Application Activate="policy_setting"  
@@ -31,6 +33,7 @@ Serve como um contêiner para tipos em todo o aplicativo e membros de tipo cujos
 ```  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
+
  As seções a seguir descrevem atributos, elementos filho e elementos pai. Na tabela Elementos Filhos, a política refere-se ao tipo de metadados que é disponibilizado para elementos de programa específicos no tempo de execução.  
   
 ### <a name="attributes"></a>Atributos  
@@ -75,6 +78,7 @@ Serve como um contêiner para tipos em todo o aplicativo e membros de tipo cujos
 |[\<Directives>](directives-element-net-native.md)|O elemento raiz de um arquivo de diretivas de runtime.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O [\<Directives>](directives-element-net-native.md) elemento pode conter zero ou um `<Application>` elemento. Vários elementos `<Application>` em um mesmo arquivo de diretivas de reflexão não são suportados.  
   
  O elemento `<Application>` pode ser usado em uma de duas formas:  
@@ -83,9 +87,9 @@ Serve como um contêiner para tipos em todo o aplicativo e membros de tipo cujos
   
 - Como um elemento que define a política de todo o aplicativo para reflexão, serialização e interoperabilidade. Os atributos do `<Application>` elemento definem a política de todo o aplicativo, que pode ser substituída pelos elementos filho definidos `<Application>` pelo [\<Library>](library-element-net-native.md) elemento ou.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [\<Library>Elementos](library-element-net-native.md)
-- [\<Directives>Elementos](directives-element-net-native.md)
+- [\<Library> Elementos](library-element-net-native.md)
+- [\<Directives> Elementos](directives-element-net-native.md)
 - [Elementos da diretiva de runtime](runtime-directive-elements.md)
 - [Referência do arquivo de configuração de diretivas do runtime (rd.xml)](runtime-directives-rd-xml-configuration-file-reference.md)

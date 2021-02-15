@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: usando a WorkflowIdentity e o controle de versão'
 title: Usando WorkflowIdentity e controle de versão
 ms.date: 03/30/2017
 ms.assetid: b8451735-8046-478f-912b-40870a6c0c3a
-ms.openlocfilehash: 1d31739c135dbb518f05c40ba802c782b6817bff
-ms.sourcegitcommit: c37e8d4642fef647ebab0e1c618ecc29ddfe2a0f
+ms.openlocfilehash: b51bce26b69d77e0be702e40a315dcd138d2fc03
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87855628"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99754960"
 ---
 # <a name="using-workflowidentity-and-versioning"></a>Usando WorkflowIdentity e controle de versão
 
@@ -23,7 +24,7 @@ O <xref:System.Activities.WorkflowIdentity> fornece uma maneira para que os dese
 
   - [Para atualizar o esquema de banco de dados](using-workflowidentity-and-versioning.md#ToUpgrade)
 
-## <a name="using-workflowidentity"></a><a name="UsingWorkflowIdentity"></a>Usando WorkflowIdentity
+## <a name="using-workflowidentity"></a><a name="UsingWorkflowIdentity"></a> Usando WorkflowIdentity
 
 Para usar <xref:System.Activities.WorkflowIdentity>, crie uma instância, configure-a e associe-a a uma instância <xref:System.Activities.WorkflowApplication>. Uma instância <xref:System.Activities.WorkflowIdentity> contém três informações de identificação. <xref:System.Activities.WorkflowIdentity.Name%2A> e <xref:System.Activities.WorkflowIdentity.Version%2A> contêm um nome e um <xref:System.Version> e são necessários, e <xref:System.Activities.WorkflowIdentity.Package%2A> é opcional e pode ser usado para especificar uma cadeia de caracteres adicional que contém informações como o nome do assembly ou outras informações desejadas. Um <xref:System.Activities.WorkflowIdentity> é exclusivo se qualquer uma de suas três propriedades for diferente da outra <xref:System.Activities.WorkflowIdentity>.
 
@@ -82,7 +83,7 @@ Quando o código anterior for executado, o <xref:System.Activities.VersionMismat
 The WorkflowIdentity ('MortgageWorkflow v1; Version=1.0.0.0') of the loaded instance does not match the WorkflowIdentity ('MortgageWorkflow v2; Version=2.0.0.0') of the provided workflow definition. The instance can be loaded using a different definition, or updated using Dynamic Update.
 ```
 
-### <a name="side-by-side-execution-using-workflowidentity"></a><a name="SxS"></a>Execução lado a lado usando WorkflowIdentity
+### <a name="side-by-side-execution-using-workflowidentity"></a><a name="SxS"></a> Execução lado a lado usando WorkflowIdentity
 
 O <xref:System.Activities.WorkflowIdentity> pode ser usado para facilitar a execução de várias versões de um fluxo de trabalho lado a lado. Um cenário comum é a mudança de requisitos comerciais em um fluxo de trabalho de execução longa. Muitas instâncias de um fluxo de trabalho podem ser executadas quando uma versão atualizada é implantada. O aplicativo de host pode ser configurado para usar a definição atualizada do fluxo de trabalho ao iniciar novas instâncias e é responsabilidade do aplicativo host fornecer a definição correta do fluxo de trabalho ao retomar instâncias. O <xref:System.Activities.WorkflowIdentity> pode ser usado para identificar e fornecer a definição de fluxo de trabalho correspondente ao retomar instâncias de fluxo de trabalho.
 
@@ -144,7 +145,7 @@ wfApp.Load(instance);
 // Resume the workflow...
 ```
 
-## <a name="upgrading-net-framework-4-persistence-databases-to-support-workflow-versioning"></a><a name="UpdatingWF4PersistenceDatabases"></a>Atualizando .NET Framework 4 bancos de dados de persistência para dar suporte ao controle de versão do fluxo de trabalho
+## <a name="upgrading-net-framework-4-persistence-databases-to-support-workflow-versioning"></a><a name="UpdatingWF4PersistenceDatabases"></a> Atualizando .NET Framework 4 bancos de dados de persistência para dar suporte ao controle de versão do fluxo de trabalho
 
 Um script de banco de dados SqlWorkflowInstanceStoreSchemaUpgrade. SQL é fornecido para atualizar bancos de dados de persistência criados usando os .NET Framework 4 scripts de banco de dados. Esse script atualiza os bancos de dados para dar suporte aos novos recursos de controle de versão introduzidos no .NET Framework 4,5. As instâncias de fluxo de trabalho persistidas nos bancos de dados recebem valores padrão do controle de versão e podem participar da execução lado a lado e da atualização dinâmica.
 
@@ -154,11 +155,11 @@ Se um aplicativo de fluxo de trabalho .NET Framework 4,5 tentar qualquer operaç
 The SqlWorkflowInstanceStore has a database version of '4.0.0.0'. InstancePersistenceCommand 'System.Activities.DurableInstancing.CreateWorkflowOwnerWithIdentityCommand' cannot be run against this database version.  Please upgrade the database to '4.5.0.0'.
 ```
 
-### <a name="to-upgrade-the-database-schema"></a><a name="ToUpgrade"></a>Para atualizar o esquema de banco de dados
+### <a name="to-upgrade-the-database-schema"></a><a name="ToUpgrade"></a> Para atualizar o esquema de banco de dados
 
 1. Abra SQL Server Management Studio e conecte-se ao servidor de banco de dados de persistência, por exemplo **.\sqlexpress**.
 
-2. Escolha **abrir**, **arquivo** no menu **arquivo** . Navegue até a seguinte pasta:`C:\Windows\Microsoft.NET\Framework\v4.0.30319\sql\en`
+2. Escolha **abrir**, **arquivo** no menu **arquivo** . Navegue até a seguinte pasta: `C:\Windows\Microsoft.NET\Framework\v4.0.30319\sql\en`
 
 3. Selecione **SqlWorkflowInstanceStoreSchemaUpgrade. SQL** e clique em **abrir**.
 
@@ -166,4 +167,4 @@ The SqlWorkflowInstanceStore has a database version of '4.0.0.0'. InstancePersis
 
 5. Escolha **executar** no menu **consulta** .
 
-Quando a consulta tiver sido concluída, o esquema de banco de dados é atualizado e, se desejar, você poderá exibir a identidade padrão de fluxo de trabalho que foi atribuída a instâncias de fluxo de trabalho persistidas. Expanda seu banco de dados de persistência no nó **databases** do pesquisador de **objetos**e expanda o nó **exibições** . Clique com o botão direito do mouse em **System. Activities. DurableInstancing. Instances** e escolha **selecionar as primeiras 1000 linhas**. Role até o fim das colunas e observe que há seis colunas adicionais adicionadas à exibição: **IdentityName**, **IdentityPackage**, **compilação**, **principal**, **secundária**e **revisão**. Todos os fluxos de trabalho persistentes terão um valor de **NULL** para esses campos, representando uma identidade de fluxo de trabalho nula.
+Quando a consulta tiver sido concluída, o esquema de banco de dados é atualizado e, se desejar, você poderá exibir a identidade padrão de fluxo de trabalho que foi atribuída a instâncias de fluxo de trabalho persistidas. Expanda seu banco de dados de persistência no nó **databases** do pesquisador de **objetos** e expanda o nó **exibições** . Clique com o botão direito do mouse em **System. Activities. DurableInstancing. Instances** e escolha **selecionar as primeiras 1000 linhas**. Role até o fim das colunas e observe que há seis colunas adicionais adicionadas à exibição: **IdentityName**, **IdentityPackage**, **compilação**, **principal**, **secundária** e **revisão**. Todos os fluxos de trabalho persistentes terão um valor de **NULL** para esses campos, representando uma identidade de fluxo de trabalho nula.

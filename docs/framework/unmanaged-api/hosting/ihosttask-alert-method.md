@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre o método: IHostTask:: Alert'
 title: Método IHostTask::Alert
 ms.date: 03/30/2017
 api_name:
@@ -15,14 +16,15 @@ helpviewer_keywords:
 ms.assetid: 5245d4b5-b6c3-48df-9cb9-8caf059f43fb
 topic_type:
 - apiref
-ms.openlocfilehash: c95b787101d4d0302ce4d2a5cd3bdc7e11f9cd63
-ms.sourcegitcommit: da21fc5a8cce1e028575acf31974681a1bc5aeed
+ms.openlocfilehash: 378552db882aada0b6d0f531a871f2deb02132d0
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84501424"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784698"
 ---
 # <a name="ihosttaskalert-method"></a>Método IHostTask::Alert
+
 Solicita que o host ative a tarefa representada pela instância [IHostTask](ihosttask-interface.md) atual, para que a tarefa possa ser anulada.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -43,21 +45,23 @@ HRESULT Alert ();
 |E_FAIL|Ocorreu uma falha catastrófica desconhecida. Quando um método retorna E_FAIL, o CLR não é mais utilizável no processo. As chamadas subsequentes para métodos de hospedagem retornam HOST_E_CLRNOTAVAILABLE.|  
   
 ## <a name="remarks"></a>Comentários  
+
  O CLR chama o `Alert` método quando <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> é chamado a partir do código do usuário ou quando o <xref:System.AppDomain> associado ao atual é <xref:System.Threading.Thread> desligado. O host deve retornar imediatamente, pois a chamada é feita de forma assíncrona. Se o host não puder alertar a tarefa imediatamente, ele deverá ser ativado na próxima vez que entrar em um estado no qual possa ser alertado.  
   
 > [!NOTE]
-> `Alert`afeta apenas as tarefas para as quais o tempo de execução passou um valor [WAIT_OPTION](wait-option-enumeration.md) de WAIT_ALERTABLE para métodos como [Join](ihosttask-join-method.md).  
+> `Alert` afeta apenas as tarefas para as quais o tempo de execução passou um valor [WAIT_OPTION](wait-option-enumeration.md) de WAIT_ALERTABLE para métodos como [Join](ihosttask-join-method.md).  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** MSCorEE. h  
   
- **Biblioteca:** Incluído como um recurso em MSCorEE. dll  
+ **Biblioteca:** Incluído como um recurso no MSCorEE.dll  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Interface ICLRTask](iclrtask-interface.md)
 - [Interface ICLRTaskManager](iclrtaskmanager-interface.md)

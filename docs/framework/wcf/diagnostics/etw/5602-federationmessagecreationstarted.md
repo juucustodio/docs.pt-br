@@ -1,15 +1,17 @@
 ---
+description: 'Saiba mais sobre: 5602-FederationMessageCreationStarted'
 title: 5602 - FederationMessageCreationStarted
 ms.date: 03/30/2017
 ms.assetid: a93a5057-86d8-4be9-a5a4-09ba935fef01
-ms.openlocfilehash: 12873b1fa96e2af4f65fa3733af0d13c74c851c8
-ms.sourcegitcommit: 9b552addadfb57fab0b9e7852ed4f1f1b8a42f8e
+ms.openlocfilehash: de53a02d7012e27bfce5769d6a0557185471b8ef
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61767384"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99788339"
 ---
 # <a name="5602---federationmessagecreationstarted"></a>5602 - FederationMessageCreationStarted
+
 ## <a name="properties"></a>Propriedades  
   
 |||  
@@ -20,9 +22,11 @@ ms.locfileid: "61767384"
 |Canal|Os aplicativos de servidor de Microsoft-Windows- aplicativo/depuração|  
   
 ## <a name="description"></a>Descrição  
- Esse evento é emitido quando a mensagem de federação de criação de postagem de formulário é iniciado.  
+
+ Esse evento é emitido quando a publicação da mensagem de Federação do formulário é iniciada.  
   
 ## <a name="message"></a>Mensagem  
- Criando a mensagem de federação de postagem de formulário iniciado.  
+
+ Criação de mensagem de Federação a partir do formulário de postagem iniciada.  
   
 ## <a name="details"></a>Detalhes

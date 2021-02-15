@@ -4,14 +4,13 @@ description: Saiba como os delegados, que definem um tipo que especifica uma ass
 author: richlander
 ms.author: wiwagn
 ms.date: 06/20/2016
-ms.technology: dotnet-standard
 ms.assetid: fe2e4b4c-6483-4106-a4b4-a33e2e306591
-ms.openlocfilehash: 1307599a3832be5f48cd62a7b8c1be7f76a3d4a5
-ms.sourcegitcommit: 7476c20d2f911a834a00b8a7f5e8926bae6804d9
+ms.openlocfilehash: 9be4fcdc29eac433dc7416578acbc664ac2e431c
+ms.sourcegitcommit: 965a5af7918acb0a3fd3baf342e15d511ef75188
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88063738"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94821678"
 ---
 # <a name="delegates-and-lambdas"></a>Delegados e lambdas
 

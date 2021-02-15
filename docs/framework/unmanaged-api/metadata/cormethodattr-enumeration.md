@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Enumeração CorMethodAttr'
 title: Enumeração CorMethodAttr
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 4e0c3521-e54d-43c1-9857-cc76b49b8ffc
 topic_type:
 - apiref
-ms.openlocfilehash: 779a8f88b7521aa4b0a75594552981b41714ee3f
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 4050235675f4b237b184d31378a614a0613ab3df
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84007670"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784373"
 ---
 # <a name="cormethodattr-enumeration"></a>Enumeração CorMethodAttr
+
 Contém valores que descrevem os recursos de um método.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -64,7 +66,7 @@ typedef enum CorMethodAttr {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`mdMemberAccessMask`|Especifica o acesso de membro.|  
 |`mdPrivateScope`|Especifica que o membro não pode ser referenciado.|  
@@ -92,12 +94,13 @@ typedef enum CorMethodAttr {
 |`mdRequireSecObject`|Especifica que o método chama outro método que contém o código de segurança.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorHdr. h  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumerações de metadados](metadata-enumerations.md)

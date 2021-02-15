@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: enumeração CorPropertyAttr'
 title: Enumeração CorPropertyAttr
 ms.date: 03/30/2017
 api_name:
@@ -14,14 +15,15 @@ helpviewer_keywords:
 ms.assetid: 58ac8202-854d-4efd-acfb-d2da8b446e12
 topic_type:
 - apiref
-ms.openlocfilehash: b6651f30e0df3a5ffc29d310b9067e76761dcf01
-ms.sourcegitcommit: 03fec33630b46e78d5e81e91b40518f32c4bd7b5
+ms.openlocfilehash: 1f3e2fccb11a067c6c46350a2c36d47007875755
+ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84007527"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99784230"
 ---
 # <a name="corpropertyattr-enumeration"></a>Enumeração CorPropertyAttr
+
 Contém valores que descrevem os metadados de uma propriedade.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -40,7 +42,7 @@ typedef enum CorPropertyAttr {
   
 ## <a name="members"></a>Membros  
   
-|Membro|Descrição|  
+|Membro|DESCRIÇÃO|  
 |------------|-----------------|  
 |`prSpecialName`|Especifica que a propriedade é especial e que seu nome descreve como.|  
 |`prReservedMask`|Reservado para uso interno pelo Common Language Runtime.|  
@@ -49,12 +51,13 @@ typedef enum CorPropertyAttr {
 |`prUnused`|Não utilizado.|  
   
 ## <a name="requirements"></a>Requisitos  
+
  **Plataformas:** confira [Requisitos do sistema](../../get-started/system-requirements.md).  
   
  **Cabeçalho:** CorHdr. h  
   
  **.NET Framework versões:**[!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumerações de metadados](metadata-enumerations.md)

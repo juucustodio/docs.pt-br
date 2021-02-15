@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: passando argumentos por valor e por referência (Visual Basic)'
 title: Passar argumentos por valor e por referência
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - arguments [Visual Basic], passing by value or by reference
 - argument passing [Visual Basic], by value or by reference
 ms.assetid: fd8a9de6-7178-44d5-a9bf-458d4ad907c2
-ms.openlocfilehash: b7430b209f53a0a924ec587a0097178baf0075e3
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: dbe020a7fffd48c14d377fff740f57e4bcc43ed2
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91059205"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100466673"
 ---
 # <a name="passing-arguments-by-value-and-by-reference-visual-basic"></a>Passando argumentos por valor e por referência (Visual Basic)
 
-No Visual Basic, você pode passar um argumento para um procedimento *por valor* ou *por referência*. Isso é conhecido como o *mecanismo de passagem*e determina se o procedimento pode modificar o elemento de programação subjacente ao argumento no código de chamada. A declaração de procedimento determina o mecanismo de passagem para cada parâmetro especificando a palavra-chave [ByVal](../../../language-reference/modifiers/byval.md) ou [ByRef](../../../language-reference/modifiers/byref.md) .  
+No Visual Basic, você pode passar um argumento para um procedimento *por valor* ou *por referência*. Isso é conhecido como o *mecanismo de passagem* e determina se o procedimento pode modificar o elemento de programação subjacente ao argumento no código de chamada. A declaração de procedimento determina o mecanismo de passagem para cada parâmetro especificando a palavra-chave [ByVal](../../../language-reference/modifiers/byval.md) ou [ByRef](../../../language-reference/modifiers/byref.md) .  
   
 ## <a name="distinctions"></a>Distinções  
 
@@ -74,7 +75,7 @@ No Visual Basic, você pode passar um argumento para um procedimento *por valor*
 
  [!code-vb[VbVbcnProcedures#74](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class2.vb#74)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos](./index.md)
 - [Parâmetros e Argumentos de Procedimento](./procedure-parameters-and-arguments.md)
@@ -83,4 +84,4 @@ No Visual Basic, você pode passar um argumento para um procedimento *por valor*
 - [Como proteger um argumento de procedimento contra alterações de valor](./how-to-protect-a-procedure-argument-against-value-changes.md)
 - [Como forçar um argumento a ser passado por Valor](./how-to-force-an-argument-to-be-passed-by-value.md)
 - [Passando argumentos por posição e nome](./passing-arguments-by-position-and-by-name.md)
-- [Tipos de valor e referência](../data-types/value-types-and-reference-types.md)
+- [Tipos de valor e tipos de referência](../data-types/value-types-and-reference-types.md)

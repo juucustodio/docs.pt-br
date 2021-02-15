@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estruturas de decisão (Visual Basic)'
 title: Estruturas de decisão
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - decision structures [Visual Basic]
 - conditional statements [Visual Basic], decision structures
 ms.assetid: 2e2e0895-4483-442a-b17c-26aead751ec2
-ms.openlocfilehash: 79c4949cd4d5b07d1b1d666b21467bf8db41ab3d
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 76b63d2cdc238ec5590d11a6a802f55866990a3a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91095610"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100480681"
 ---
 # <a name="decision-structures-visual-basic"></a>Estruturas de decisão (Visual Basic)
 
@@ -49,7 +50,7 @@ Visual Basic permite testar condições e executar operações diferentes depend
 > [!NOTE]
 > Para muitas estruturas de controle, quando você clica em uma palavra-chave, todas as palavras-chave na estrutura são realçadas. Por exemplo, quando você clica `If` em uma `If...Then...Else` construção, todas as instâncias de `If` ,, `Then` `ElseIf` , `Else` e `End If` na construção são realçadas. Para mover para a próxima palavra-chave realçada ou anterior, pressione CTRL + SHIFT + seta para baixo ou CTRL + SHIFT + seta para cima.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Fluxo de Controle](index.md)
 - [Estruturas de Loop](loop-structures.md)

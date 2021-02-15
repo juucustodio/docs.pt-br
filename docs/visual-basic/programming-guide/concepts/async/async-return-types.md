@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: tipos de retorno assíncrono (Visual Basic)'
 title: Tipos de retorno assíncronos
 ms.date: 07/20/2015
 ms.assetid: 07890291-ee72-42d3-932a-fa4d312f2c60
-ms.openlocfilehash: 5d19fc9831580412da24333be0885fce55384658
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 12a7f577a89ff8f8037de879f9e37d6fdb917aa8
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396708"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100438912"
 ---
 # <a name="async-return-types-visual-basic"></a>Tipos de retorno assíncronos (Visual Basic)
 
@@ -101,7 +102,7 @@ Async Function Task_MethodAsync() As Task
 End Function
 ```
 
-`Task_MethodAsync`é chamado e esperado usando uma instrução Await em vez de uma expressão Await, semelhante à instrução de chamada para um método síncrono `Sub` ou de retorno nulo. O aplicativo de um `Await` operador, nesse caso, não produz um valor.
+`Task_MethodAsync` é chamado e esperado usando uma instrução Await em vez de uma expressão Await, semelhante à instrução de chamada para um método síncrono `Sub` ou de retorno nulo. O aplicativo de um `Await` operador, nesse caso, não produz um valor.
 
 O código a seguir chama e aguarda o método `Task_MethodAsync`.
 
@@ -149,7 +150,7 @@ Async Sub button1_Click(sender As Object, e As RoutedEventArgs) Handles button1.
 End Sub
 ```
 
-## <a name="complete-example"></a><a name="BKMK_Example"></a>Exemplo completo
+## <a name="complete-example"></a><a name="BKMK_Example"></a> Exemplo completo
 
 O projeto WPF (Windows Presentation Foundation) a seguir contém os exemplos de código deste tópico.
 
@@ -161,7 +162,7 @@ O projeto WPF (Windows Presentation Foundation) a seguir contém os exemplos de 
 
      A caixa de diálogo **Novo Projeto** será aberta.
 
-3. Na categoria **instalado**, **modelos** , escolha **Visual Basic**e, em seguida, escolha **Windows**. Escolha **Aplicativo WPF** na lista de tipos de projeto.
+3. Na categoria **instalado**, **modelos** , escolha **Visual Basic** e, em seguida, escolha **Windows**. Escolha **Aplicativo WPF** na lista de tipos de projeto.
 
 4. Digite `AsyncReturnTypes` como o nome do projeto e, em seguida, escolha o botão **OK**.
 
@@ -297,7 +298,7 @@ O projeto WPF (Windows Presentation Foundation) a seguir contém os exemplos de 
     All done, exiting button-click event handler.
     ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Threading.Tasks.Task.FromResult%2A>
 - [Instruções passo a passo: acessando a Web usando Async e Await (Visual Basic)](walkthrough-accessing-the-web-by-using-async-and-await.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Visual Basic convenções de codificação'
 title: Convenções de codificação
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - examples [Visual Basic], coding conventions
 - Visual Basic code, conventions
 ms.assetid: c1df130b-fec6-49a5-becf-0a7e494a1d0f
-ms.openlocfilehash: eae283c757ddeb1290c15d82a41c8028a8941e63
-ms.sourcegitcommit: 4df8e005c074ceb1f978f007b222fe253be2baf3
+ms.openlocfilehash: 424871ab0e77629ded977bd0be768ed8736d1761
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "91059152"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100460027"
 ---
 # <a name="visual-basic-coding-conventions"></a>Convenções de codificação do Visual Basic
 
@@ -214,6 +215,6 @@ A Microsoft desenvolve exemplos e documentação que seguem as diretrizes neste 
   
      [!code-vb[VbVbalrGuidelines#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#34)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Diretrizes de codificação segura](../../../standard/security/secure-coding-guidelines.md)

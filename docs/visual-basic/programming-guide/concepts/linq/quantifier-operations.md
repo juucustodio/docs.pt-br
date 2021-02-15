@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: operações do quantificador (Visual Basic)'
 title: Operações de quantificador
 ms.date: 07/20/2015
 ms.assetid: ae1a2b73-503c-4f4b-a3fd-31b5adbee67c
-ms.openlocfilehash: 0c1c69cb36ac16126454dc0c24cd84fc85b0b218
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 7cbd8a9cf18a0ad8b70ada58d7fa6602dce4bd1b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075298"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430086"
 ---
 # <a name="quantifier-operations-visual-basic"></a>Operações do quantificador (Visual Basic)
 
@@ -23,7 +24,7 @@ As operações de quantificador retornam um valor <xref:System.Boolean> que indi
   
 |Nome do método|Descrição|Visual Basic sintaxe de expressão de consulta|Mais informações|  
 |-----------------|-----------------|------------------------------------------|----------------------|  
-|Tudo|Determina se todos os elementos em uma sequência satisfazem uma condição.|`Aggregate … In … Into All(…)`|<xref:System.Linq.Enumerable.All%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.All%2A?displayProperty=nameWithType>|  
+|Todos|Determina se todos os elementos em uma sequência satisfazem uma condição.|`Aggregate … In … Into All(…)`|<xref:System.Linq.Enumerable.All%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.All%2A?displayProperty=nameWithType>|  
 |Qualquer|Determina se todos os elementos em uma sequência satisfazem uma condição.|`Aggregate … In … Into Any()`|<xref:System.Linq.Enumerable.Any%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Any%2A?displayProperty=nameWithType>|  
 |Contém|Determina se uma sequência contém um elemento especificado.|Não aplicável.|<xref:System.Linq.Enumerable.Contains%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Contains%2A?displayProperty=nameWithType>|  
   
@@ -39,7 +40,7 @@ As operações de quantificador retornam um valor <xref:System.Boolean> que indi
   
  [!code-vb[CsLINQAnyAll#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQAnyAll/VB/AnyAll.vb#2)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Linq>
 - [Visão geral de operadores de consulta padrão (Visual Basic)](standard-query-operators-overview.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como controlar o escopo de uma variável (Visual Basic)'
 title: Como controlar o escopo de uma variável
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -12,16 +13,16 @@ helpviewer_keywords:
 - declared elements [Visual Basic], visibility
 - visibility [Visual Basic], variables
 ms.assetid: 44b7f62a-cb5c-4d50-bce9-60ae68f87072
-ms.openlocfilehash: 2ce7c1700eec54542719e6e0880466ca136e86f6
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c6da599f76883cba545efbdf9570aa05770602a2
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91095419"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429865"
 ---
 # <a name="how-to-control-the-scope-of-a-variable-visual-basic"></a>Como controlar o escopo de uma variável (Visual Basic)
 
-Normalmente, uma variável está no *escopo*ou visível para referência, em toda a região em que você a declara. Em alguns casos, o nível de *acesso* da variável pode influenciar seu escopo.  
+Normalmente, uma variável está no *escopo* ou visível para referência, em toda a região em que você a declara. Em alguns casos, o nível de *acesso* da variável pode influenciar seu escopo.  
   
  Para obter mais informações, consulte [escopo em Visual Basic](scope.md).  
   
@@ -91,7 +92,7 @@ Public strMsg As String
 
  Quanto mais estreita for o escopo de uma variável, menor será a probabilidade de que o código mal-intencionado possa fazer uso impróprio dela.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Escopo no Visual Basic](scope.md)
 - [Tempo de vida no Visual Basic](lifetime.md)

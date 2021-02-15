@@ -5,12 +5,12 @@ ms.date: 09/24/2020
 ms.topic: conceptual
 no-loc:
 - EditorConfig
-ms.openlocfilehash: 8f76c9c86c202ef1bad23bffe8379b0b93a53f17
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 9c09fc381a161a9deea012d98d06ab57f2f7345e
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99787715"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100480538"
 ---
 # <a name="configuration-options-for-code-analysis"></a>Opções de configuração para análise de código
 
@@ -60,14 +60,14 @@ As opções específicas de regra podem ser aplicadas a uma única regra, a um c
 
 A tabela a seguir mostra as diferentes severidades de regra que você pode configurar para todas as regras do analisador, incluindo a [qualidade de código](quality-rules/index.md) e as regras de [estilo de código](style-rules/index.md) .
 
-| Severity | Comportamento de tempo de compilação |
+| Valor de configuração de severidade | Comportamento de tempo de compilação |
 |-|-|
 | `error` | As violações aparecem como *erros* de compilação e causam a falha das compilações.|
 | `warning` | As violações aparecem como *avisos* de compilação, mas não causam a falha das compilações (a menos que você tenha uma opção definida para tratar avisos como erros). |
 | `suggestion` | As violações aparecem como *mensagens* de Build e como sugestões no IDE do Visual Studio. |
 | `silent` | As violações não são visíveis para o usuário. |
 | `none` | A regra foi completamente suprimida. |
-| `default` | A severidade padrão da regra é usada. |
+| `default` | A severidade padrão da regra é usada. As severidades padrão para cada versão do .NET são listadas no [repositório Roslyn-Analyzers](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md). Nessa tabela, "Disabled" corresponde a `none` , "Hidden" corresponde a `silent` e "info" corresponde a `suggestion` . |
 
 > [!TIP]
 > Para obter informações sobre como a superfície de severidades de regra no Visual Studio, consulte [níveis de severidade](/visualstudio/ide/editorconfig-language-conventions#severity-levels).
@@ -91,6 +91,12 @@ Para definir a severidade da regra padrão para todas as regras do analisador, u
 ```ini
 dotnet_analyzer_diagnostic.severity = <severity value>
 ```
+
+> [!IMPORTANT]
+> Quando você configura o nível de severidade para várias regras com uma única entrada, seja para uma *categoria* de regras ou para *todas* as regras, a gravidade se aplica somente às regras [habilitadas por padrão](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md). Para habilitar as regras que estão desabilitadas por padrão, você deve:
+>
+> - Adicione uma `dotnet_diagnostic.<rule ID>.severity = <severity>` entrada de configuração explícita para cada regra.
+> - Habilite *todas* as regras definindo [\<AnalysisMode>](../../core/project-sdk/msbuild-props.md#analysismode) como `AllEnabledByDefault` .
 
 #### <a name="precedence"></a>Precedência
 

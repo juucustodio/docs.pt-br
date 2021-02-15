@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: consulta de Language-Integrated (LINQ) (Visual Basic)'
 title: LINQ (Consulta Integrada à Linguagem)
 ms.date: 07/20/2015
 ms.assetid: a99371f7-097c-49a0-b62b-0e31c34aad0e
-ms.openlocfilehash: c34145a0b7ff5cf97f5efd6ff7b49381af80bd93
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 16f2617e6c7442e3b78a5fef46bf0bb20434d61b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91098249"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100437690"
 ---
 # <a name="language-integrated-query-linq-visual-basic"></a>LINQ (consulta integrada à linguagem) (Visual Basic)
 

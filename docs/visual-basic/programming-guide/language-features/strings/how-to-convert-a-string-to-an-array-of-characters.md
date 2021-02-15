@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como converter uma cadeia de caracteres em uma matriz de caracteres em Visual Basic'
 title: Como converter uma cadeia de caracteres em uma matriz de caracteres
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - strings [Visual Basic], converting to arrays
 - string conversion [Visual Basic], arrays
 ms.assetid: 1b54b686-ab29-413b-adce-6bd5422376eb
-ms.openlocfilehash: e1f634fcdb23f16e794449f8fe7b53c451c8c5b8
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: f85b0801cf013e207eacd70a256a3ed0a8dc7887
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91059165"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100476144"
 ---
 # <a name="how-to-convert-a-string-to-an-array-of-characters-in-visual-basic"></a>Como converter uma cadeia de caracteres em uma matriz de caracteres no Visual Basic
 
@@ -31,7 +32,7 @@ ms.locfileid: "91059165"
   
  [!code-vb[VbVbalrStrings#76](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class4.vb#76)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.String.Chars%2A>
 - <xref:System.Globalization.StringInfo?displayProperty=nameWithType>

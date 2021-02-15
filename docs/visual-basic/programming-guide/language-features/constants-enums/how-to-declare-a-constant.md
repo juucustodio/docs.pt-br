@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como declarar uma constante (Visual Basic)'
 title: Como declarar uma constante
 ms.date: 07/20/2015
 f1_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - module-level constants and variables
 - Object data type [Visual Basic], declaring constants
 ms.assetid: f901b4fa-481f-4621-822e-427060577ad1
-ms.openlocfilehash: 138dd58dac9d1983e35e61f8b98a77810fc6e38b
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 42b0ecce90e12a7e777b8e51bc9a23ab454f433d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91058840"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100477496"
 ---
 # <a name="how-to-declare-a-constant-visual-basic"></a>Como declarar uma constante (Visual Basic)
 
@@ -66,7 +67,7 @@ Você usa a `Const` instrução para declarar uma constante e definir seu valor.
     Public Const Four As Integer = 4, Five As Integer = 5, Six As Integer = 44  
     ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Instrução Const](../../../language-reference/statements/const-statement.md)
 - [Tipos de dados constante e literal](constant-and-literal-data-types.md)

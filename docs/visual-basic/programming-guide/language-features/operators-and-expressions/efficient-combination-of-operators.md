@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: combinação eficiente de operadores (Visual Basic)'
 title: Combinação eficiente de operadores
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -13,16 +14,16 @@ helpviewer_keywords:
 - parentheses [Visual Basic], complex expressions
 - numeric expressions
 ms.assetid: bd22340e-b5be-458b-8772-3916c02309a4
-ms.openlocfilehash: 9ba6be8e1dd03c0589f712b0e9b39258953cd223
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: a4d2d0c1caeea95dd8d34b2033a398d26bcf63ef
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077079"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100476261"
 ---
 # <a name="efficient-combination-of-operators-visual-basic"></a>Combinação eficiente de operadores (Visual Basic)
 
-Expressões complexas podem conter muitos operadores diferentes. O exemplo a seguir ilustra isto.  
+Expressões complexas podem conter muitos operadores diferentes. O exemplo a seguir ilustra essa situação.  
   
  `x = (45 * (y + z)) ^ (2 / 85) * 5 + z`  
   
@@ -42,13 +43,13 @@ Expressões complexas podem conter muitos operadores diferentes. O exemplo a seg
   
 ### <a name="nested-parenthetical-expressions"></a>Expressões de parênteses aninhadas  
 
- Você pode aninhar expressões em vários níveis de parênteses para substituir a precedência ainda mais. As expressões que mais profundamente são aninhadas em parênteses são avaliadas primeiro, seguidas pelo próximo aninhado mais profundamente e assim por diante para o menos aninhado e finalmente as expressões fora dos parênteses. O exemplo a seguir ilustra isto.  
+ Você pode aninhar expressões em vários níveis de parênteses para substituir a precedência ainda mais. As expressões que mais profundamente são aninhadas em parênteses são avaliadas primeiro, seguidas pelo próximo aninhado mais profundamente e assim por diante para o menos aninhado e finalmente as expressões fora dos parênteses. O exemplo a seguir ilustra essa situação.  
   
  `x = (z * 4) ^ (y * (z + 2))`  
   
  No exemplo anterior, `z + 2` é avaliado primeiro e, em seguida, as outras expressões entre parênteses. A exponenciação, que normalmente tem maior precedência do que adição ou multiplicação, é avaliada por último neste exemplo porque as outras expressões são colocadas entre parênteses.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Operadores aritméticos no Visual Basic](arithmetic-operators.md)
 - [Operadores de comparação no Visual Basic](comparison-operators.md)

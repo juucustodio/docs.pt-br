@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estruturas e classes (Visual Basic)'
 title: Estruturas e classes
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - structures [Visual Basic], structure variables
 - structure variables [Visual Basic]
 ms.assetid: a221e74a-ffcf-4bdc-a0f6-a088a9bf26cc
-ms.openlocfilehash: e7ca5b9d55611eafad88517e71f9807fe2aa4416
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 129948bd9a16309ffea5b1e4c690d8883c450b74
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91086212"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430619"
 ---
 # <a name="structures-and-classes-visual-basic"></a>Estruturas e classes (Visual Basic)
 
@@ -56,7 +57,7 @@ Visual Basic unifica a sintaxe para estruturas e classes, com o resultado de que
   
 - Elementos de estrutura não podem ser declarados como `Protected` ; membros de classe podem.  
   
-- Um procedimento de estrutura pode manipular eventos somente se for um [Shared](../../../language-reference/modifiers/shared.md) `Sub` procedimento compartilhado e apenas por meio da [instrução AddHandler](../../../language-reference/statements/addhandler-statement.md); qualquer procedimento de classe pode manipular eventos, usando a palavra-chave [Handles](../../../language-reference/statements/handles-clause.md) ou a `AddHandler` instrução. Para obter mais informações, consulte [Eventos](../events/index.md).  
+- Um procedimento de estrutura pode manipular eventos somente se for um [](../../../language-reference/modifiers/shared.md) `Sub` procedimento compartilhado e apenas por meio da [instrução AddHandler](../../../language-reference/statements/addhandler-statement.md); qualquer procedimento de classe pode manipular eventos, usando a palavra-chave [Handles](../../../language-reference/statements/handles-clause.md) ou a `AddHandler` instrução. Para obter mais informações, consulte [Eventos](../events/index.md).  
   
 - Declarações de variável de estrutura não podem especificar inicializadores ou tamanhos iniciais para matrizes; declarações de variável de classe podem.  
   
@@ -76,7 +77,7 @@ Visual Basic unifica a sintaxe para estruturas e classes, com o resultado de que
 
  Como estruturas são tipos de valor, cada variável de estrutura é permanentemente associada a uma instância de estrutura individual. Mas classes são tipos de referência, e uma variável de objeto pode se referir a várias instâncias de classe em momentos diferentes. Essa distinção afeta o uso de estruturas e classes das seguintes maneiras:  
   
-- **Initialization.** Uma variável de estrutura inclui implicitamente uma inicialização dos elementos usando o construtor sem parâmetros da estrutura. Portanto, `Dim s As struct1` é equivalente a `Dim s As struct1 = New struct1()` .  
+- **Inicialização.** Uma variável de estrutura inclui implicitamente uma inicialização dos elementos usando o construtor sem parâmetros da estrutura. Portanto, `Dim s As struct1` é equivalente a `Dim s As struct1 = New struct1()` .  
   
 - **Atribuindo variáveis.** Quando você atribui uma variável de estrutura a outra ou passa uma instância de estrutura para um argumento de procedimento, os valores atuais de todos os elementos variáveis são copiados para a nova estrutura. Quando você atribui uma variável de objeto a outra ou passa uma variável de objeto para um procedimento, somente o ponteiro de referência é copiado.  
   
@@ -90,11 +91,11 @@ Visual Basic unifica a sintaxe para estruturas e classes, com o resultado de que
   
 - **Igualmente.** O teste de igualdade de duas estruturas deve ser executado com um teste de elemento por elemento. Duas variáveis de objeto podem ser comparadas usando o <xref:System.Object.Equals%2A> método. <xref:System.Object.Equals%2A> indica se as duas variáveis apontam para a mesma instância.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Data Types](index.md)
 - [Tipos de dados compostos](composite-data-types.md)
-- [Tipos de valor e referência](value-types-and-reference-types.md)
+- [Tipos de valor e tipos de referência](value-types-and-reference-types.md)
 - [Estruturas](structures.md)
 - [Solução de problemas de tipos de dados](troubleshooting-data-types.md)
 - [Estruturas e outros elementos de programação](structures-and-other-programming-elements.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: escrevendo sua primeira consulta LINQ (Visual Basic)'
 title: Escrever sua primeira consulta LINQ
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - LINQ queries [Visual Basic]
 - LINQ [Visual Basic], writing queries
 ms.assetid: 4affb732-3e9b-4479-aa31-1f9bd8183cbe
-ms.openlocfilehash: c7d0595b991bdad6ef05b567f95ead8c7fccdbc2
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: cb57ae3c22b7e2ee2c3b66a8f033eda6fd72e16a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077274"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100477509"
 ---
 # <a name="writing-your-first-linq-query-visual-basic"></a>Escrevendo a primeira consulta LINQ (Visual Basic)
 
 Uma *consulta* é uma expressão que recupera dados de uma fonte de dados. As consultas são expressas em uma linguagem de consulta dedicada. Ao longo do tempo, diferentes idiomas foram desenvolvidos para diferentes tipos de fontes de dados, por exemplo, SQL para bancos de dados relacionais e XQuery for XML. Isso torna necessário que o desenvolvedor do aplicativo aprenda uma nova linguagem de consulta para cada tipo de fonte de dados ou formato de dados com suporte.  
   
- A consulta integrada à linguagem (LINQ) simplifica a situação oferecendo um modelo consistente para trabalhar com dados em vários tipos de fontes de dados e formatos. Em uma consulta LINQ, você está sempre trabalhando com objetos. Você usa os mesmos padrões básicos de codificação para consultar e transformar dados em documentos XML, bancos de dados SQL, conjuntos de ADO.NET e entidades, .NET Framework coleções e qualquer outra fonte ou formato para o qual um provedor de LINQ esteja disponível. Este documento descreve as três fases da criação e do uso de consultas básicas do LINQ.  
+ A consulta de Language-Integrated (LINQ) simplifica a situação oferecendo um modelo consistente para trabalhar com dados em vários tipos de fontes de dados e formatos. Em uma consulta LINQ, você está sempre trabalhando com objetos. Você usa os mesmos padrões básicos de codificação para consultar e transformar dados em documentos XML, bancos de dados SQL, conjuntos de ADO.NET e entidades, .NET Framework coleções e qualquer outra fonte ou formato para o qual um provedor de LINQ esteja disponível. Este documento descreve as três fases da criação e do uso de consultas básicas do LINQ.  
   
 ## <a name="three-stages-of-a-query-operation"></a>Três Estágios de uma Operação de Consulta  
 
@@ -125,7 +126,7 @@ Dim customers As Table(Of Customer) = db.GetTable(Of Customer)
   
  Você também pode fazer com que uma consulta seja executada usando um `IEnumerable` método como o <xref:Microsoft.VisualBasic.Collection.System%23Collections%23IEnumerable%23GetEnumerator%2A> método.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Introdução a LINQ no Visual Basic](getting-started-with-linq.md)
 - [Inferência de Tipo de Variável Local](../../language-features/variables/local-type-inference.md)

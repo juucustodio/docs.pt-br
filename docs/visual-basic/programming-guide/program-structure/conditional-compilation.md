@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: compilação condicional no Visual Basic'
 title: Compilação condicional
 ms.date: 07/20/2015
 helpviewer_keywords:
 - conditional compilation [Visual Basic], about conditional compilation
 - compilation [Visual Basic], conditional
 ms.assetid: 9c35e55e-7eee-44fb-a586-dad1f1884848
-ms.openlocfilehash: e59296882edc018259816c73b6ae861b3b296783
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: e9cb8a5af4dfbf2ffadef8edd8f6583614188391
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91098963"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100476131"
 ---
 # <a name="conditional-compilation-in-visual-basic"></a>Compilação condicional no Visual Basic
 

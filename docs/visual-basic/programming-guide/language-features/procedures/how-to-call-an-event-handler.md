@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como chamar um manipulador de eventos no Visual Basic'
 title: Como chamar um manipulador de eventos
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 no-loc:
 - WithEvents
 ms.assetid: 72e18ef8-144e-40df-a1f4-066a57271e28
-ms.openlocfilehash: 3762c79dd3d883ae2ccfe76b335cf98ac87d4246
-ms.sourcegitcommit: e7acba36517134238065e4d50bb4a1cfe47ebd06
+ms.openlocfilehash: 7e65b36d392211be533bb4881658b1cdb8057d5d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89464955"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100476248"
 ---
 # <a name="how-to-call-an-event-handler-in-visual-basic"></a>Como chamar um manipulador de eventos no Visual Basic
 
@@ -27,7 +28,7 @@ Quando o evento ocorre, Visual Basic chama automaticamente o procedimento do man
 
 Você pode associar mais de um manipulador de eventos com o mesmo evento. Em alguns casos, você pode dissociar um manipulador de um evento. Para obter mais informações, consulte [Eventos](../events/index.md).
 
-## <a name="call-an-event-handler-using-no-loc-texthandles-and-no-locwithevents"></a>Chamar um manipulador de eventos usando :::no-loc text="Handles"::: e WithEvents
+## <a name="call-an-event-handler-using-no-loc-texthandles-and-withevents"></a>Chamar um manipulador de eventos usando :::no-loc text="Handles"::: e WithEvents
 
 1. Verifique se o evento é declarado com uma [instrução de evento](../../../language-reference/statements/event-statement.md).
 
@@ -55,7 +56,7 @@ Você pode associar mais de um manipulador de eventos com o mesmo evento. Em alg
 
     Você pode dissociar um manipulador de eventos de um evento executando a [instrução RemoveHandler](../../../language-reference/statements/removehandler-statement.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos](index.md)
 - [Subprocedimentos](sub-procedures.md)

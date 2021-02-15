@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: a pasta de origem e a pasta de destino são as mesmas'
 title: As pastas de origem e destino são as mesmas
 ms.date: 07/20/2015
 ms.assetid: d4e6f996-8bbe-45f2-b662-f26b4474f44d
-ms.openlocfilehash: 011c24b4c0a53b2fb5507ffc7efa21900c370103
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 53aa98fc9e12874ec286ef310d4fe259187fc209
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078730"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100431087"
 ---
 # <a name="source-folder-and-target-folder-are-the-same"></a>As pastas de origem e destino são as mesmas
 
@@ -17,7 +18,7 @@ Foi feita uma tentativa de copiar ou mover um arquivo, mas o diretório de orige
   
 - Certifique-se de que você forneceu os diretórios de origem e de destino corretos.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [My. Computer. FileSystem. MoveFile](xref:Microsoft.VisualBasic.FileIO.FileSystem.MoveFile%2A)
 - [My. Computer. FileSystem. CopyFile](xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyFile%2A)

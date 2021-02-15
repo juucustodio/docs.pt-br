@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: declaração de variável de objeto (Visual Basic)'
 title: Declaração de variável do objeto
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - declaring classes [Visual Basic]
 - late binding [Visual Basic]
 ms.assetid: 2a5a41a3-1aa8-4236-b1f0-2382af7bf715
-ms.openlocfilehash: 74b1401df3dbb2d744de74734d10cbcd92e9689e
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 853f9e775976022e52121c164884fd91ef0a831c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077040"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100463709"
 ---
 # <a name="object-variable-declaration-visual-basic"></a>Declaração de variável do objeto (Visual Basic)
 
@@ -69,7 +70,7 @@ Dim objC As System.OperatingSystem
   
 ## <a name="access-to-object-variable-members"></a>Acesso a membros de variável de objeto  
 
- Quando `Option Strict` é ativado `On` , uma variável de objeto pode acessar somente os métodos e as propriedades da classe com a qual você o declara. O exemplo a seguir ilustra isto.  
+ Quando `Option Strict` é ativado `On` , uma variável de objeto pode acessar somente os métodos e as propriedades da classe com a qual você o declara. O exemplo a seguir ilustra essa situação.  
   
 ```vb  
 ' Option statements must precede all other source file lines.  
@@ -131,13 +132,13 @@ Dim anyForm As System.Windows.Forms.Form
   
  Todos os membros de uma classe base estão disponíveis para classes derivadas, mas os membros adicionais de uma classe derivada não estão disponíveis para a classe base.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Variáveis de Objeto](object-variables.md)
 - [Atribuição de variável do objeto](object-variable-assignment.md)
 - [Valores de Variável de Objeto](object-variable-values.md)
 - [Como declarar uma variável de objeto e atribuir um objeto a ela no Visual Basic](how-to-declare-an-object-variable-and-assign-an-object-to-it.md)
 - [Como acessar membros de um objeto](how-to-access-members-of-an-object.md)
-- [Novo operador](../../../language-reference/operators/new-operator.md)
+- [Novo Operador](../../../language-reference/operators/new-operator.md)
 - [Instrução Option Strict](../../../language-reference/statements/option-strict-statement.md)
 - [Inferência de Tipo de Variável Local](local-type-inference.md)

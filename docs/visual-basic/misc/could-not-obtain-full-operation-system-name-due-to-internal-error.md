@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: não foi possível obter o nome completo do sistema operacional devido a um erro interno'
 title: Não foi possível obter o nome do sistema completo de operação devido a erro interno
 ms.date: 07/20/2015
 f1_keywords:
 - vbrDiagnosticInfo_FullOSName
 ms.assetid: f69da02b-eb9a-4284-bb9e-3025517ae6c1
-ms.openlocfilehash: 744d549b9313727af2feb82e45c24b729cae7262
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: d274a08728b084b21309862de69e2fded5c164da
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91079081"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100463481"
 ---
 # <a name="could-not-obtain-full-operation-system-name-due-to-internal-error"></a>Não foi possível obter o nome do sistema completo de operação devido a erro interno
 
@@ -23,7 +24,7 @@ Não foi possível obter o nome completo do sistema operacional devido a um erro
   
 2. Para obter mais informações sobre o WMI e como instalá-lo, vá para e pesquise "Instrumentação de Gerenciamento do Windows Core".  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [My. Computer. info. OSFullName](xref:Microsoft.VisualBasic.Devices.ComputerInfo.OSFullName)
 - [Tratando e gerando exceções no .NET](../../standard/exceptions/index.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como proteger um argumento de procedimento contra alterações de valor (Visual Basic)'
 title: Como proteger um argumento de procedimento contra alterações de valor
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - arguments [Visual Basic], ByRef
 - arguments [Visual Basic], changing value
 ms.assetid: d2b7c766-ce16-4d2c-8d79-3fc0e7ba2227
-ms.openlocfilehash: 84eadf3d364b69120221d80e464b1175b1602e13
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 2e47a584632f124a001617770aeae5104ef20abe
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071476"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100476209"
 ---
 # <a name="how-to-protect-a-procedure-argument-against-value-changes-visual-basic"></a>Como proteger um argumento de procedimento contra alterações de valor (Visual Basic)
 
@@ -45,7 +46,7 @@ Se um procedimento declarar um parâmetro como [ByRef](../../../language-referen
 
  O padrão no Visual Basic é passar argumentos por valor. No entanto, é uma boa prática de programação incluir a palavra-chave [ByVal](../../../language-reference/modifiers/byval.md) ou [ByRef](../../../language-reference/modifiers/byref.md) com cada parâmetro declarado. Isso torna seu código mais fácil de ler.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos](./index.md)
 - [Parâmetros e Argumentos de Procedimento](./procedure-parameters-and-arguments.md)
@@ -56,4 +57,4 @@ Se um procedimento declarar um parâmetro como [ByRef](../../../language-referen
 - [Como alterar o valor de um argumento de procedimento](./how-to-change-the-value-of-a-procedure-argument.md)
 - [Como forçar um argumento a ser passado por Valor](./how-to-force-an-argument-to-be-passed-by-value.md)
 - [Passando argumentos por posição e nome](./passing-arguments-by-position-and-by-name.md)
-- [Tipos de valor e referência](../data-types/value-types-and-reference-types.md)
+- [Tipos de valor e tipos de referência](../data-types/value-types-and-reference-types.md)

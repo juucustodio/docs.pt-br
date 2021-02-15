@@ -2,12 +2,12 @@
 title: Criar bibliotecas de cliente do gRPC-gRPC para desenvolvedores do WCF
 description: Discussão de bibliotecas/pacotes de cliente compartilhado para serviços gRPCs.
 ms.date: 01/06/2021
-ms.openlocfilehash: c55b6d1da2377af0b687e32e7776f12b96b0a2ba
-ms.sourcegitcommit: 7ef96827b161ef3fcde75f79d839885632e26ef1
+ms.openlocfilehash: dee62bc793ab384f2556f1b3ff2fcb856c040f3a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97970122"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100427564"
 ---
 # <a name="create-grpc-client-libraries"></a>Criar bibliotecas de cliente do gRPC
 
@@ -34,9 +34,7 @@ Esse código é maior do que o `IAsyncEnumerable<T>` código, porque o C# não t
 
 ```csharp
 using System;
-using System.Diagnostics;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace Grpc.Core
 {
@@ -48,14 +46,14 @@ namespace Grpc.Core
 
         public GrpcStreamObservable(IAsyncStreamReader<T> reader, CancellationToken token = default)
         {
-            _reader = reader;
+            _reader = reader ?? throw new ArgumentNullException(nameof(reader));
             _token = token;
             _used = 0;
         }
 
         public IDisposable Subscribe(IObserver<T> observer) =>
             Interlocked.Exchange(ref _used, 1) == 0
-                ? new GrpcStreamSubscription(_reader, observer, _token)
+                ? new GrpcStreamSubscription<T>(_reader, observer, _token)
                 : throw new InvalidOperationException("Subscribe can only be called once.");
 
     }
@@ -68,28 +66,35 @@ namespace Grpc.Core
 A `GrpcStreamSubscription` classe manipula a enumeração do `IAsyncStreamReader` :
 
 ```csharp
-public class GrpcStreamSubscription : IDisposable
+public class GrpcStreamSubscription<T> : IDisposable
 {
-    private readonly Task _task;
+    private readonly IAsyncStreamReader<T> _reader;
+    private readonly IObserver<T> _observer;
+
     private readonly CancellationTokenSource _tokenSource;
+
+    private readonly Task _task;
+
     private bool _completed;
 
-    public GrpcStreamSubscription(IAsyncStreamReader<T> reader, IObserver<T> observer, CancellationToken token)
+    public GrpcStreamSubscription(IAsyncStreamReader<T> reader, IObserver<T> observer, CancellationToken token = default)
     {
-        Debug.Assert(reader != null);
-        Debug.Assert(observer != null);
+        _reader = reader ?? throw new ArgumentNullException(nameof(reader));
+        _observer = observer ?? throw new ArgumentNullException(nameof(observer));
+
         _tokenSource = new CancellationTokenSource();
         token.Register(_tokenSource.Cancel);
-        _task = Run(reader, observer, _tokenSource.Token);
+
+        _task = Run(_tokenSource.Token);
     }
 
-    private async Task Run(IAsyncStreamReader<T> reader, IObserver<T> observer, CancellationToken token)
+    private async Task Run(CancellationToken token)
     {
         while (!token.IsCancellationRequested)
         {
             try
             {
-                if (!await reader.MoveNext(token)) break;
+                if (!await _reader.MoveNext(token)) break;
             }
             catch (RpcException e) when (e.StatusCode == Grpc.Core.StatusCode.NotFound)
             {
@@ -101,16 +106,16 @@ public class GrpcStreamSubscription : IDisposable
             }
             catch (Exception e)
             {
-                observer.OnError(e);
+                _observer.OnError(e);
                 _completed = true;
                 return;
             }
 
-            observer.OnNext(reader.Current);
+            _observer.OnNext(_reader.Current);
         }
 
         _completed = true;
-        observer.OnCompleted();
+        _observer.OnCompleted();
     }
 
     public void Dispose()
@@ -131,16 +136,16 @@ Tudo o que é necessário agora é um método de extensão simples para criar o 
 
 ```csharp
 using System;
-using System.Diagnostics;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace Grpc.Core
 {
     public static class AsyncStreamReaderObservableExtensions
     {
-        public static IObservable<T> AsObservable<T>(this IAsyncStreamReader<T> reader) =>
-            new GrpcStreamObservable<T>(reader);
+        public static IObservable<T> AsObservable<T>(
+            this IAsyncStreamReader<T> reader,
+            CancellationToken cancellationToken = default) =>
+            new GrpcStreamObservable<T>(reader, cancellationToken);
     }
 }
 ```

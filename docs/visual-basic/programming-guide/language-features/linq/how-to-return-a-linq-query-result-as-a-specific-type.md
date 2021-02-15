@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como retornar um resultado de consulta LINQ como um tipo específico (Visual Basic)'
 title: Como retornar um resultado de consulta LINQ como um tipo específico
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - queries [LINQ in Visual Basic], how-to topics
 - query samples [Visual Basic]
 ms.assetid: 621bb10a-e5d7-44fb-a025-317964b19d92
-ms.openlocfilehash: 249c3eebaeec3d09a297fead07ab056caff1b618
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 8abeb3b5f174b1671415cbb55f35952e3bc77e7d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071801"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100425653"
 ---
 # <a name="how-to-return-a-linq-query-result-as-a-specific-type-visual-basic"></a>Como retornar um resultado de consulta LINQ como um tipo específico (Visual Basic)
 
-A consulta integrada à linguagem (LINQ) facilita o acesso a informações do banco de dados e a execução de consultas. Por padrão, as consultas LINQ retornam uma lista de objetos como um tipo anônimo. Você também pode especificar que uma consulta retorne uma lista de um tipo específico usando a `Select` cláusula.  
+A consulta de Language-Integrated (LINQ) facilita o acesso a informações do banco de dados e a execução de consultas. Por padrão, as consultas LINQ retornam uma lista de objetos como um tipo anônimo. Você também pode especificar que uma consulta retorne uma lista de um tipo específico usando a `Select` cláusula.  
   
  O exemplo a seguir mostra como criar um novo aplicativo que executa consultas em um banco de dados SQL Server e projeta os resultados como um tipo nomeado específico. Para obter mais informações, consulte [tipos anônimos](../objects-and-classes/anonymous-types.md) e [cláusula SELECT](../../../language-reference/queries/select-clause.md).  
   
@@ -76,7 +77,7 @@ A consulta integrada à linguagem (LINQ) facilita o acesso a informações do ba
   
 5. Pressione F5 para executar o projeto e exibir os resultados.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ](index.md)
 - [Consultas](../../../language-reference/queries/index.md)

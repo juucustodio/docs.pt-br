@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: tipos anônimos (Visual Basic)'
 title: Tipos anônimos
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - anonymous types [Visual Basic]
 - types [Visual Basic], anonymous
 ms.assetid: 7b87532c-4b3e-4398-8503-6ea9d67574a4
-ms.openlocfilehash: 5ab3cf8c3c02ff35890f71ad6c7f314b51b87133
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 447ca914726d4b426ad4ba2ec370a4bbe9589b81
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075233"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100425614"
 ---
 # <a name="anonymous-types-visual-basic"></a>Tipos anônimos (Visual Basic)
 
@@ -82,7 +83,7 @@ O Visual Basic dá suporte a tipos anônimos, que permitem criar objetos sem gra
   
  [!code-vb[VbVbalrAnonymousTypes#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrAnonymousTypes/VB/Class1.vb#7)]  
   
-### <a name="read-only-values"></a>Valores somente leitura  
+### <a name="read-only-values"></a>Read-Only valores  
 
  Os valores das propriedades de chave não podem ser alterados. Por exemplo, no `prod8` no exemplo anterior, os `Name` campos e `Price` são `read-only` , mas `OnHand` podem ser alterados.  
   
@@ -134,7 +135,7 @@ O Visual Basic dá suporte a tipos anônimos, que permitem criar objetos sem gra
   
  Para obter mais informações sobre o código criado pelo compilador e a funcionalidade dos métodos substituídos, consulte [definição de tipo anônimo](anonymous-type-definition.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Inicializadores de objeto: tipos nomeados e anônimos](object-initializers-named-and-anonymous-types.md)
 - [Inferência de Tipo de Variável Local](../variables/local-type-inference.md)

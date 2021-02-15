@@ -1,20 +1,21 @@
 ---
+description: 'Saiba mais sobre: Visual Basic recursos que dão suporte ao LINQ'
 title: Recursos que dão suporte ao LINQ
 ms.date: 07/20/2015
 helpviewer_keywords:
 - Visual Basic, LINQ features
 - LINQ [Visual Basic], features supporting LINQ
 ms.assetid: c821bb50-b6f6-4cf9-8aba-2717e465bd3a
-ms.openlocfilehash: bd63cd36c1f85fd89349293a71ecc5b281165380
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 58862ac4083bcd58ee08ef1afeebf95541c53e98
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078297"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100428630"
 ---
 # <a name="visual-basic-features-that-support-linq"></a>Recursos do Visual Basic que suportam LINQ
 
-A consulta integrada à linguagem de nome (LINQ) refere-se à tecnologia em Visual Basic que dá suporte à sintaxe de consulta e a outras construções de linguagem diretamente no idioma. Com o LINQ, você não precisa aprender uma nova linguagem para consultar uma fonte de dados externa. Você pode consultar dados em bancos de dados relacionais, repositórios XML ou objetos usando Visual Basic. Essa integração dos recursos de consulta no idioma permite a verificação do tempo de compilação para erros de sintaxe e segurança de tipo. Essa integração também garante que você já saiba a maior parte do que precisa saber para escrever consultas ricas e diversificadas em Visual Basic.  
+O nome Language-Integrated consulta (LINQ) refere-se à tecnologia em Visual Basic que dá suporte à sintaxe de consulta e a outras construções de linguagem diretamente no idioma. Com o LINQ, você não precisa aprender uma nova linguagem para consultar uma fonte de dados externa. Você pode consultar dados em bancos de dados relacionais, repositórios XML ou objetos usando Visual Basic. Essa integração dos recursos de consulta no idioma permite a verificação do tempo de compilação para erros de sintaxe e segurança de tipo. Essa integração também garante que você já saiba a maior parte do que precisa saber para escrever consultas ricas e diversificadas em Visual Basic.  
   
  As seções a seguir descrevem as construções de linguagem que dão suporte ao LINQ em detalhes suficientes para permitir que você comece a ler a documentação introdutória, exemplos de código e aplicativos de exemplo. Você também pode clicar nos links para encontrar explicações mais detalhadas sobre como os recursos de linguagem se reúnem para habilitar a consulta integrada à linguagem. Um bom lugar para começar é [passo a passos: escrevendo consultas em Visual Basic](walkthrough-writing-queries.md).  
   
@@ -100,7 +101,7 @@ A consulta integrada à linguagem de nome (LINQ) refere-se à tecnologia em Visu
   
  Para obter mais informações, consulte [Expressões Lambda](../../language-features/procedures/lambda-expressions.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ (consulta integrada à linguagem) (Visual Basic)](index.md)
 - [Introdução a LINQ no Visual Basic](getting-started-with-linq.md)

@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-delaysign
 title: -delaysign
 ms.date: 03/10/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - -delaysign compiler option [Visual Basic]
 - -delaysign compiler option [Visual Basic]
 ms.assetid: c76e61a4-1884-4252-9fb2-377f99caa690
-ms.openlocfilehash: c9bb302e2b34ebe1f51cf39bb3db1094d420d7f4
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: fc3e52f63431da870355e369e6ffeb8b7b14c5ab
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84408693"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100461496"
 ---
 # <a name="-delaysign"></a>-delaysign
 
@@ -36,7 +37,7 @@ Quando você solicita um assembly totalmente assinado, o compilador usa o hash n
 
 Por exemplo, usando `-delaysign+` o, um desenvolvedor em uma organização pode distribuir versões de teste não assinadas de um assembly que os testadores podem registrar com o cache de assembly global e usar. Quando o trabalho no assembly é concluído, a pessoa responsável pela chave privada da organização pode assinar totalmente o assembly. Essa compartimentalização protege a chave privada da organização contra a divulgação, ao mesmo tempo que permite que todos os desenvolvedores trabalhem nos assemblies.
 
-Consulte [criando e usando assemblies de nome forte](../../../standard/assembly/create-use-strong-named.md) para obter mais informações sobre como assinar um assembly.
+Consulte [criando e usando assemblies de Strong-Named](../../../standard/assembly/create-use-strong-named.md) para obter mais informações sobre como assinar um assembly.
 
 ### <a name="to-set--delaysign-in-the-visual-studio-integrated-development-environment"></a>Para Set-delaysign no ambiente de desenvolvimento integrado do Visual Studio
 
@@ -46,7 +47,7 @@ Consulte [criando e usando assemblies de nome forte](../../../standard/assembly/
 
 3. Defina o valor na caixa **somente assinatura de atraso** .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Compilador de linha de comando do Visual Basic](index.md)
 - [-keyfile](keyfile.md)

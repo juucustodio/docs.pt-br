@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: estruturas (Visual Basic)'
 title: Estruturas
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - user-defined data types [Visual Basic], about user-defined data types
 - types [Visual Basic], user-defined
 ms.assetid: 55e86462-5e99-4d33-8018-6d097ca491b2
-ms.openlocfilehash: 04ccb5d39ea7c76a1e75dbeafd9230f2cb604d7c
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c79ba7b4ea8e80aced6c2a280c4896ed9f8c9916
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090229"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100427615"
 ---
 # <a name="structures-visual-basic"></a>Estruturas (Visual Basic)
 
 Uma *estrutura* é uma generalização do tipo definido pelo usuário (UDT) compatível com as versões anteriores do Visual Basic. Além dos campos, as estruturas podem expor propriedades, métodos e eventos. Uma estrutura pode implementar uma ou mais interfaces, e você pode declarar níveis de acesso individuais para cada campo.  
   
- Você pode combinar itens de dados de tipos diferentes para criar uma estrutura. Uma estrutura associa um ou mais *elementos* entre si e com a própria estrutura. Quando você declara uma estrutura, ela se torna um *tipo de dados composto*e você pode declarar variáveis desse tipo.  
+ Você pode combinar itens de dados de tipos diferentes para criar uma estrutura. Uma estrutura associa um ou mais *elementos* entre si e com a própria estrutura. Quando você declara uma estrutura, ela se torna um *tipo de dados composto* e você pode declarar variáveis desse tipo.  
   
  As estruturas são úteis quando você deseja que uma única variável mantenha várias partes de informação relacionadas. Por exemplo, talvez você queira manter o nome, a extensão do telefone e o salário de um funcionário juntos. Você pode usar várias variáveis para essas informações ou pode definir uma estrutura e usá-la para uma única variável Employee. A vantagem da estrutura fica aparente quando você tem muitos funcionários e, portanto, muitas instâncias da variável.  
   

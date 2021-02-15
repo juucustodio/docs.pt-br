@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: tipos de dados compostos (Visual Basic)'
 title: Tipos de dados compostos
 ms.date: 04/25/2017
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - classes [Visual Basic], composite types
 - types [Visual Basic], composite
 ms.assetid: 62970f2e-52c0-4369-8963-613820f1f434
-ms.openlocfilehash: 842b74aa7cc99c8196fdfb1eb6c976d9e72a4fa4
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 981ee36c416f2524be155b1238f5b306c98aa92b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077157"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100456426"
 ---
 # <a name="composite-data-types-visual-basic"></a>Tipos de dados compostos (Visual Basic)
 
@@ -46,7 +47,7 @@ Uma tupla é uma estrutura leve que contém dois ou mais campos cujos tipos são
   
 - O tipo de elemento da matriz  
   
- Em particular, o comprimento de uma determinada dimensão não faz parte do tipo de dados da instância. O exemplo a seguir ilustra isto.  
+ Em particular, o comprimento de uma determinada dimensão não faz parte do tipo de dados da instância. O exemplo a seguir ilustra essa situação.  
   
 ```vb  
 Dim arrayA( ) As Byte = New Byte(12) {}  
@@ -66,12 +67,12 @@ Dim arrayE( , ) As Short = New Short(4, 10) {}
   
  Para obter mais informações sobre classes, consulte [objetos e classes](../objects-and-classes/index.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Data Types](index.md)
 - [Tipos de dados elementares](elementary-data-types.md)
 - [Tipos genéricos no Visual Basic](generic-types.md)
-- [Tipos de valor e referência](value-types-and-reference-types.md)
+- [Tipos de valor e tipos de referência](value-types-and-reference-types.md)
 - [Conversões de tipo no Visual Basic](type-conversions.md)
 - [Estruturas](structures.md)
 - [Solução de problemas de tipos de dados](troubleshooting-data-types.md)

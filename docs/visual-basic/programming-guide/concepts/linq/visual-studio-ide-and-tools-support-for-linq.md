@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: suporte a IDE e ferramentas do Visual Studio para LINQ (Visual Basic)'
 title: Suporte do Visual Studio IDE e ferramentas para LINQ
 ms.date: 07/20/2015
 ms.assetid: e3bfe0d9-4a79-49cf-a31c-93297c688829
-ms.openlocfilehash: 9b1fa503b3c51cf50872e82d9a60206874c8e642
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 96d1cd54e8b4cc507aa697a2228d341b29f94f8f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077287"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100428097"
 ---
 # <a name="visual-studio-ide-and-tools-support-for-linq-visual-basic"></a>Suporte do Visual Studio IDE e ferramentas para LINQ (Visual Basic)
 
@@ -29,6 +30,6 @@ O IDE (ambiente de desenvolvimento integrado) do Visual Studio fornece os seguin
 
  O depurador do Visual Studio dá suporte à depuração de expressões de consulta. Para obter mais informações, consulte [Depurando LINQ](/visualstudio/debugger/debugging-linq).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ (consulta integrada à linguagem) (Visual Basic)](index.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: operações de igualdade (Visual Basic)'
 title: Operações de igualdade
 ms.date: 07/20/2015
 ms.assetid: 1f2fcf87-6f52-4830-b9af-861f9ad999dc
-ms.openlocfilehash: d91627a8566e5c04ff3fd930543066fed5b58384
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: f9bfe826c856e8471de3894f09438c651e012d0f
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078288"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100428631"
 ---
 # <a name="equality-operations-visual-basic"></a>Operações de igualdade (Visual Basic)
 
@@ -19,7 +20,7 @@ Duas sequências cujos elementos correspondentes são iguais e que têm o mesmo 
 |-----------------|-----------------|------------------------------------------|----------------------|  
 |SequenceEqual|Determina se duas sequências são iguais comparando seus elementos por pares.|Não aplicável.|<xref:System.Linq.Enumerable.SequenceEqual%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.SequenceEqual%2A?displayProperty=nameWithType>|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Linq>
 - [Visão geral de operadores de consulta padrão (Visual Basic)](standard-query-operators-overview.md)

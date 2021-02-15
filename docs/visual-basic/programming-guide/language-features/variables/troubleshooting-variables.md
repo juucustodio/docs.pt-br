@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: Solucionando problemas de variáveis no Visual Basic'
 title: Solução de problemas de variáveis
 ms.date: 07/20/2015
 helpviewer_keywords:
 - troubleshooting [Visual Basic], variables
 - variables [Visual Basic], troubleshooting
 ms.assetid: 928a2dc8-e565-4ae4-8ba3-80cc0cb50090
-ms.openlocfilehash: e2bcf0b779d98ea4b109ea6d33b69a15110d423c
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c6348ee8eb13ccd19d83c2809d1684396b94be67
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91080160"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100481630"
 ---
 # <a name="troubleshooting-variables-in-visual-basic"></a>Solucionando problemas de variáveis no Visual Basic
 
@@ -24,7 +25,7 @@ Esta página lista alguns problemas comuns que podem ocorrer ao trabalhar com va
   
 - Um tempo de execução <xref:System.MemberAccessException> ocorre quando o objeto atribuído a uma variável de objeto não expõe o membro que seu código está tentando acessar. No caso de uma variável de [tipo de dados Object](../../../language-reference/data-types/object-data-type.md), você também poderá obter essa exceção se o membro não for `Public` . Isso ocorre porque a associação tardia permite acesso somente a `Public` Membros.  
   
- Quando a [instrução Option Strict](../../../language-reference/statements/option-strict-statement.md) define a verificação de tipo `On` , uma variável de objeto pode acessar somente os métodos e as propriedades da classe com a qual você o declara. O exemplo a seguir ilustra isto.  
+ Quando a [instrução Option Strict](../../../language-reference/statements/option-strict-statement.md) define a verificação de tipo `On` , uma variável de objeto pode acessar somente os métodos e as propriedades da classe com a qual você o declara. O exemplo a seguir ilustra essa situação.  
 
  [!code-vb[VbVbalrVariables#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrVariables/VB/Class1.vb#2)]  
   
@@ -54,7 +55,7 @@ Esta página lista alguns problemas comuns que podem ocorrer ao trabalhar com va
 
  Evite usar variáveis com o mesmo nome, mas com escopo diferente. Se você estiver usando outros assemblies ou projetos, evite usar quaisquer nomes definidos nesses componentes externos tanto quanto possível. Se você tiver mais de uma variável com o mesmo nome, certifique-se de qualificar todas as referências a ela. Para obter mais informações, consulte [referências a elementos declarados](../declared-elements/references-to-declared-elements.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Variáveis](index.md)
 - [Declaração de Variável](variable-declaration.md)

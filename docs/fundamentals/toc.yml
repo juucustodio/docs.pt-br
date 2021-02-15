@@ -187,8 +187,12 @@ items:
                 href: ../core/tools/sdk-errors/netsdk1013.md
               - name: NETSDK1022
                 href: ../core/tools/sdk-errors/netsdk1022.md
+              - name: NETSDK1045
+                href: ../core/tools/sdk-errors/netsdk1045.md
               - name: NETSDK1059
                 href: ../core/tools/sdk-errors/netsdk1059.md
+              - name: NETSDK1064
+                href: ../core/tools/sdk-errors/netsdk1064.md
               - name: NETSDK1071
                 href: ../core/tools/sdk-errors/netsdk1071.md
               - name: NETSDK1073
@@ -342,6 +346,8 @@ items:
                     href: /aspnet/core/razor-pages/web-sdk?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
                   - name: Microsoft.NET.Sdk.Razor
                     href: /aspnet/core/razor-pages/sdk?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+                  - name: Microsoft. NET. Sdk. desktop
+                    href: ../core/project-sdk/msbuild-props-desktop.md
           - name: Frameworks de destino
             href: ../standard/frameworks.md
           - name: Gerenciamento de dependência
@@ -417,6 +423,8 @@ items:
                 href: ../core/diagnostics/logging-tracing.md
               - name: Provedores de eventos bem conhecidos
                 href: ../core/diagnostics/well-known-event-providers.md
+              - name: Rastreamento distribuído
+                href: ../core/diagnostics/distributed-tracing.md
           - name: Eventos de runtime
             items:
               - name: Visão geral
@@ -1252,6 +1260,8 @@ items:
                         href: code-analysis/style-rules/ide0110.md
                   - name: Regras diversas
                     items:
+                      - name: Visão geral
+                        href: code-analysis/style-rules/miscellaneous-rules.md
                       - name: IDE0076
                         href: code-analysis/style-rules/ide0076.md
                       - name: IDE0077

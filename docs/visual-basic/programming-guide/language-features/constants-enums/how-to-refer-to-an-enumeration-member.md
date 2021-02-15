@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como fazer: referência a um membro de enumeração (Visual Basic)'
 title: Como fazer referência a um membro de enumeração
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - enumeration members
 - constants [Visual Basic], enumerated
 ms.assetid: bbb5c3cc-7cdb-4814-8d6a-a6d91546ed1e
-ms.openlocfilehash: d1b239e7d6be3ebf1e64d6589a4cc14dce8946f5
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 339ea8292eea1b39e2c6e5879b98a083800fb1fc
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91095662"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100471520"
 ---
 # <a name="how-to-refer-to-an-enumeration-member-visual-basic"></a>Como fazer referência a um membro de enumeração (Visual Basic)
 
@@ -26,7 +27,7 @@ As enumerações fornecem uma maneira conveniente de trabalhar com conjuntos de 
   
      [!code-vb[VbEnumsTask#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#19)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como declarar uma enumeração](how-to-declare-enumerations.md)
 - [Enumerações e qualificação de nome](enumerations-and-name-qualification.md)

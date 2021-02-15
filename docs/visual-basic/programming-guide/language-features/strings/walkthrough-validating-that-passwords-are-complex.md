@@ -1,15 +1,16 @@
 ---
+description: 'Saiba mais sobre: Walkthrough: a validação de senhas é complexa (Visual Basic)'
 title: Validando a complexidade de senhas
 ms.date: 07/20/2015
 helpviewer_keywords:
 - String data type [Visual Basic], validation
 ms.assetid: 5d9a918f-6c1f-41a3-a019-b5c2b8ce0381
-ms.openlocfilehash: 9597d7a9d6b68b8c91f32d97da3532f181585cf6
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 608d9c7708058ca99196f2a06fd4ddd018aa0363
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072347"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100471000"
 ---
 # <a name="walkthrough-validating-that-passwords-are-complex-visual-basic"></a>Instruções passo a passo: validando senhas complexas (Visual Basic)
 
@@ -47,7 +48,7 @@ Esse método verifica algumas características de senha forte e atualiza um par�
   
 - Não permita senhas em que todos os símbolos sejam inseridos da linha superior do teclado.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Text.RegularExpressions.Regex>
 - [Segurança de aplicativo Web ASP .NET](/previous-versions/aspnet/330a99hc(v=vs.100))

@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Validando cadeias de caracteres no Visual Basic'
 title: Validar cadeias de caracteres
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - strings [Visual Basic], validating
 - validation [Visual Basic], strings
 ms.assetid: 9a1acf9b-7e2c-40cb-bba4-656ee2bc2ed0
-ms.openlocfilehash: 026f5bd833d857ee1db1b0f10abaabee9360b37e
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 97e0d168c85bccac630a3af15ca9260fd212332c
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072412"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100471117"
 ---
 # <a name="validating-strings-in-visual-basic"></a>Validando cadeias de caracteres no Visual Basic
 
@@ -32,7 +33,7 @@ Esta seção discute como validar cadeias de caracteres no Visual Basic.
  [Instruções passo a passo: validando senhas complexas](walkthrough-validating-that-passwords-are-complex.md)  
  Como determinar se uma cadeia de caracteres tem as características de uma senha forte.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Cadeias de caracteres](index.md)
 - [Controle MaskedTextBox](/dotnet/desktop/winforms/controls/maskedtextbox-control-windows-forms)

@@ -1,15 +1,16 @@
 ---
+description: "Saiba mais sobre: unidade ' <drivename> ' não encontrada"
 title: Unidade '<drivename>' não encontrada
 ms.date: 07/20/2015
 f1_keywords:
 - vbrFileSystem_DriveNotFound1
 ms.assetid: 0250e9f2-3470-4fe4-8fda-be4fbf2e2a30
-ms.openlocfilehash: 84939a622ab78fd797d27480a3ed612be06d3451
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: e8f39269696caa543f7fea2ab789378be69492ab
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91076221"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468571"
 ---
 # <a name="drive-drivename-not-found"></a>Unidade '\<drivename>' não encontrada
 
@@ -25,6 +26,6 @@ Não é possível encontrar a unidade. Sua conexão de rede foi perdida ou a uni
   
 4. Reconecte-se à rede e tente novamente.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Tipos de erro](../programming-guide/language-features/error-types.md)

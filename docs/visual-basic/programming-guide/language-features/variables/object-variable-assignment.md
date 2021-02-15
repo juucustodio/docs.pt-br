@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: atribuição de variável de objeto (Visual Basic)'
 title: Atribuição de variável do objeto
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - assignment statements [Visual Basic], object variable assignment
 - Me keyword [Visual Basic], as object variable
 ms.assetid: 3706811d-fd40-44fe-8727-d692e8e55d6d
-ms.openlocfilehash: 9ae1a307e8c886166d516140b7f100a411cedcfa
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: ac5e534a03d651a23e651e1049477b2bd0769b82
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410368"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100481643"
 ---
 # <a name="object-variable-assignment-visual-basic"></a>Atribuição de variável do objeto (Visual Basic)
 
@@ -32,7 +33,7 @@ thisObject = Form1
 thisObject = Nothing
 ```
 
-`Nothing`significa que não há nenhum objeto atribuído atualmente à variável.
+`Nothing` significa que não há nenhum objeto atribuído atualmente à variável.
 
 ## <a name="initialization"></a>Inicialização
 
@@ -79,7 +80,7 @@ Cada objeto de documento XML poderia então chamar o procedimento e passar sua i
 addStandardText(Me)
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Variáveis de Objeto](object-variables.md)
 - [Declaração de Variável do Objeto](object-variable-declaration.md)

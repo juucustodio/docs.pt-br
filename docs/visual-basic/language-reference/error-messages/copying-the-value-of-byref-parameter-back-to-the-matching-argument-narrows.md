@@ -1,5 +1,5 @@
 ---
-description: "Saiba mais sobre: BC32053: copiar o valor do parâmetro ' ByRef ' ' <parametername> ' de volta para o argumento correspondente reduz do tipo ' <typename1> ' para o tipo '<typename2>"
+description: "Saiba mais sobre: BC32053: copiar o valor do parâmetro ' ByRef ' ' <parametername> ' de volta para o argumento correspondente reduz do tipo ' <typename1> ' para o tipo ' <typename2> '"
 title: A cópia do parâmetro '<parametername>' do valor 'ByRef' de volta para o argumento correspondente é restrita do tipo '<typename1>' para o tipo '<typename2>'
 ms.date: 07/20/2015
 f1_keywords:
@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BC32053
 ms.assetid: 281564b7-99f7-451f-b10d-f985e831bb25
-ms.openlocfilehash: a90e64cd81443831a7b8f934fea646411eb5a220
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 36df6f1c5363a9517c8f3bec4410f5c3d7e38325
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99796698"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100471039"
 ---
 # <a name="bc32053-copying-the-value-of-byref-parameter-parametername-back-to-the-matching-argument-narrows-from-type-typename1-to-type-typename2"></a>BC32053: copiar o valor do parâmetro ' ByRef ' ' \<parametername> ' de volta para o argumento correspondente reduz do tipo ' \<typename1> ' para o tipo ' \<typename2> '
 

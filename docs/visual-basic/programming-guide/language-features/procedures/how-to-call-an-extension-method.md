@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como chamar um método de extensão (Visual Basic)'
 title: Como chamar um método de extensão
 ms.date: 07/20/2015
 helpviewer_keywords:
 - calling extension methods [Visual Basic]
 - extension methods [Visual Basic]
 ms.assetid: df07750f-40f4-4c07-a79e-1113a27cfbea
-ms.openlocfilehash: 38d6e8534283f475be2409f4b7c74ef48f1f248b
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: ec5217526eb0cb28d172ab917df08a8bfe87fe95
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91074986"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100471377"
 ---
 # <a name="how-to-call-an-extension-method-visual-basic"></a>Como chamar um método de extensão (Visual Basic)
 
@@ -96,8 +97,8 @@ End Module
 ' Goodbye?
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como escrever um método de extensão](./how-to-write-an-extension-method.md)
-- [Métodos de extensão](./extension-methods.md)
+- [Métodos de Extensão](./extension-methods.md)
 - [Escopo no Visual Basic](../declared-elements/scope.md)

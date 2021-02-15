@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: usando expressões regulares com o controle MaskedTextBox no Visual Basic'
 title: Usar expressões regulares com o controle MaskedTextBox
 ms.date: 07/20/2015
 helpviewer_keywords:
 - strings [Visual Basic], regular expressions
 - strings [Visual Basic], masked edit
 ms.assetid: 2a048fb0-7053-487d-b2c5-ffa5e22ed6f9
-ms.openlocfilehash: 493da7b8583b5cc73a9832afa81b7b1d84742f2d
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 68ffca6761d8f0634634ea2755786d3c0c02a6e2
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072425"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100471130"
 ---
 # <a name="using-regular-expressions-with-the-maskedtextbox-control-in-visual-basic"></a>Usando expressões regulares com o controle MaskedTextBox no Visual Basic
 
@@ -51,14 +52,14 @@ Este exemplo demonstra como converter expressões regulares simples para trabalh
   
  A tabela a seguir compara quatro expressões regulares e a máscara equivalente para cada uma.  
   
-|Expressão regular|Mask|Observações|  
+|Expressão regular|Mask|Anotações|  
 |------------------------|----------|-----------|  
 |`\d{2}/\d{2}/\d{4}`|`00/00/0000`|O `/` caractere na máscara é um separador de data lógico e aparecerá para o usuário como o separador de data apropriado para a cultura atual do aplicativo.|  
 |`\d{2}-[A-Z][a-z]{2}-\d{4}`|`00->L<LL-0000`|Uma data (dia, mês abreviação e ano) no formato Estados Unidos no qual a abreviação de mês de três letras é exibida com uma letra maiúscula inicial seguida por duas letras minúsculas.|  
 |`(\(\d{3}\)-)?\d{3}-d{4}`|`(999)-000-0000`|Número de telefone Estados Unidos, código de área opcional. Se o usuário não quiser inserir os caracteres opcionais, eles poderão inserir espaços ou colocar o ponteiro do mouse diretamente na posição na máscara representada pelo primeiro 0.|  
 |`$\d{6}.00`|`$999,999.00`|Um valor de moeda no intervalo de 0 a 999999. A moeda, os milésimos e os caracteres decimais serão substituídos em tempo de execução por seus equivalentes específicos à cultura.|  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Windows.Forms.MaskedTextBox.Mask%2A>
 - <xref:System.Windows.Forms.MaskedTextBox>

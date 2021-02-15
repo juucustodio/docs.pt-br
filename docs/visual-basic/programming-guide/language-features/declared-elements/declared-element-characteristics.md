@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: características de elemento declaradas (Visual Basic)'
 title: Características do elemento declarado
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - data types [Visual Basic], declared elements
 - declared elements [Visual Basic], visibility
 ms.assetid: 1bc40fb8-b67c-4428-90a4-76b630ae2583
-ms.openlocfilehash: 36c55475b4930dc6c3202d52ef742072d5cee3e1
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c441b5f55144bead5b11b1d5ddbd0119d6def86b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075272"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468454"
 ---
 # <a name="declared-element-characteristics-visual-basic"></a>Características do elemento declarado (Visual Basic)
 
@@ -55,7 +56,7 @@ Uma *característica* de um elemento declarado é um aspecto desse elemento que 
   
  <sup>1</sup> o escopo é às vezes chamado de *visibilidade*.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Elementos declarados](index.md)
 - [Nomes de elementos declarados](declared-element-names.md)

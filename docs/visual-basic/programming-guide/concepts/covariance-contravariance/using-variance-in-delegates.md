@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: usando a variação em delegados (Visual Basic)'
 title: Usar variação em delegados
 ms.date: 07/20/2015
 ms.assetid: 7b5c20f1-6416-46a3-94b6-f109c31c842c
-ms.openlocfilehash: 842392a1342f7d3689d4d1f2a2adb7470eeda05e
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: d146460c515c1579a9a98d31aa48441f9584b83b
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84375778"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100481994"
 ---
 # <a name="using-variance-in-delegates-visual-basic"></a>Usando variação em delegados (Visual Basic)
 
@@ -86,7 +87,7 @@ Private Sub Form1_Load(ByVal sender As System.Object,
 End Sub
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Variação em delegados (Visual Basic)](variance-in-delegates.md)
 - [Usando variação para delegados genéricos Func e Action (Visual Basic)](using-variance-for-func-and-action-generic-delegates.md)

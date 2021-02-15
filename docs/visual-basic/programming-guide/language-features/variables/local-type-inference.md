@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: inferência de tipo local (Visual Basic)'
 title: Inferência de tipo local
 ms.date: 07/20/2015
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - inference [Visual Basic]
 - type inference [Visual Basic]
 ms.assetid: b8307f18-2e56-4ab3-a45a-826873f400f6
-ms.openlocfilehash: 3979396d32aa5d3b853aa087d43f70d5987e510b
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 50be8544229360287d2aef27f31360d7140640ac
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410393"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100481695"
 ---
 # <a name="local-type-inference-visual-basic"></a>Inferência de tipo local (Visual Basic)
 
@@ -63,7 +64,7 @@ O tipo de uma variável também pode ser deduzido dos valores retornados das fun
 
 ## <a name="option-infer"></a>Opção Inferir
 
-`Option Infer`permite que você especifique se a inferência de tipo local é permitida em um arquivo específico. Para habilitar ou bloquear a opção, digite uma das instruções a seguir no início do arquivo.
+`Option Infer` permite que você especifique se a inferência de tipo local é permitida em um arquivo específico. Para habilitar ou bloquear a opção, digite uma das instruções a seguir no início do arquivo.
 
 `Option Infer On`
 
@@ -75,7 +76,7 @@ Se o valor definido para `Option Infer` em um arquivo entrar em conflito com o v
 
 Para obter mais informações, consulte [instrução Option Infer](../../../language-reference/statements/option-infer-statement.md) e a [página de compilação, designer de projeto (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Tipos anônimos](../objects-and-classes/anonymous-types.md)
 - [Associação antecipada e tardia](../early-late-binding/index.md)

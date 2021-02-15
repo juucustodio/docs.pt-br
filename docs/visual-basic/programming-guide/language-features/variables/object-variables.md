@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: variáveis de objeto no Visual Basic'
 title: Variáveis de objeto
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - objects [Visual Basic], accessing
 - object variables [Visual Basic]
 ms.assetid: 6169a196-2b13-4ba5-a205-154bc1b87844
-ms.openlocfilehash: a5e61f9308d3484dc228a7d09cc2fd30a2f41b35
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 7c50dcbac32cdc841e513765d62f6ee711fc6049
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410329"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100478835"
 ---
 # <a name="object-variables-in-visual-basic"></a>Variáveis de objeto no Visual Basic
 
@@ -44,7 +45,7 @@ ctrlActv.Location = New Point(100, 100)
 ctrlActv.Show()
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Declaração de Variável](variable-declaration.md)
 - [Como agilizar o acesso a um objeto com um caminho de qualificação longo](how-to-speed-up-access-to-an-object-with-a-long-qualification-path.md)

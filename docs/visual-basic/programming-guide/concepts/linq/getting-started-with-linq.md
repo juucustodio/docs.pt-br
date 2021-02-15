@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Introdução com LINQ no Visual Basic'
 title: Introdução ao LINQ
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - LINQ [Visual Basic]
 - LINQ, Visual Basic
 ms.assetid: 53c66373-ff43-431f-b4bb-f98362830279
-ms.openlocfilehash: 2097eb9caccd65a7983244cd06cbc18759677be1
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 264ee4cef26cd2ee965771e50aeaafbeb71d91f9
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090307"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100469806"
 ---
 # <a name="getting-started-with-linq-in-visual-basic"></a>Introdução a LINQ no Visual Basic
 
-Esta seção contém visões gerais, exemplos e informações básicas que ajudarão você a entender e usar Visual Basic e LINQ (consulta integrada à linguagem).  
+Esta seção contém visões gerais, exemplos e informações de segundo plano que o ajudarão a entender e usar a Visual Basic e a consulta de Language-Integrated (LINQ).  
   
 ## <a name="in-this-section"></a>Nesta seção  
 

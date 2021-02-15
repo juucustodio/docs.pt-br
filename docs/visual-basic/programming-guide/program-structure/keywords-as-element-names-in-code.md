@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: palavras-chave como nomes de elemento no código (Visual Basic)'
 title: Palavras-chave como nomes de elemento no código
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - name conflicts [Visual Basic]
 - element names [Visual Basic], in code
 ms.assetid: 2e4e8e02-23f7-49b9-a1c8-2b0402b6b525
-ms.openlocfilehash: e895db180dbb44cd4cfe4053d4be429f13324fe8
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 4782c0f3ea065e3e140d449575c187cf2254cd08
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91065743"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100433206"
 ---
 # <a name="keywords-as-element-names-in-code-visual-basic"></a>Palavras-chave como nomes de elemento em código (Visual Basic)
 
@@ -31,7 +32,7 @@ Qualquer elemento Program, como uma variável, uma classe ou um membro, pode ter
 > [!NOTE]
 > Seu programa também pode incluir nomes de elementos fornecidos por outros assemblies referenciados. Se esses nomes entrarem em conflito com palavras-chave restritas, colocar colchetes em relação a eles fará com que Visual Basic interpretá-los como seus elementos definidos.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Convenções de nomenclatura do Visual Basic](naming-conventions.md)
 - [Estrutura do programa e convenções de código](program-structure-and-code-conventions.md)

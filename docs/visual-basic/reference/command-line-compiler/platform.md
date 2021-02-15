@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-Platform (Visual Basic)
 title: -platform
 ms.date: 03/13/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - /platform compiler option [Visual Basic]
 - -platform compiler option [Visual Basic]
 ms.assetid: f9bc61e6-e854-4ae1-87b9-d6244de23fd1
-ms.openlocfilehash: 488a1da6b25bcb4b42f0d355c6faee542046d0f5
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 51d7c7882c29310ef1e0c0f5790a63da3bfb91b8
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91098885"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100432735"
 ---
 # <a name="-platform-visual-basic"></a>-plataforma (Visual Basic)
 
@@ -84,7 +85,7 @@ Especifica qual versão de plataforma do common language runtime (CLR) pode exec
 vbc -platform:x86 myFile.vb  
 ```  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [-Target (Visual Basic)](target.md)
 - [Compilador de linha de comando do Visual Basic](index.md)

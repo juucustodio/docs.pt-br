@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: como executar árvores de expressão (Visual Basic)'
 title: Como executar árvores de expressão
 ms.date: 07/20/2015
 ms.assetid: 9dfb5ab3-f48f-417e-975f-f8f6f1cdc18d
-ms.openlocfilehash: 703a2dc49ba905c81948267f6eec3ca7578fc308
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: debd850f35d8239c20d9b848a43dafd76ac19bbc
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91077326"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100430697"
 ---
 # <a name="how-to-execute-expression-trees-visual-basic"></a>Como executar árvores de expressão (Visual Basic)
 
@@ -48,7 +49,7 @@ MsgBox(result)
   
 - Inclua o namespace System.Linq.Expressions.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Árvores de expressão (Visual Basic)](index.md)
 - [Como modificar árvores de expressão (Visual Basic)](how-to-modify-expression-trees.md)

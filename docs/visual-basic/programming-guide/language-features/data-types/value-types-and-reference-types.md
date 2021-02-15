@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: tipos de valor e tipos de referência'
 title: Tipos de valor e referência
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - data types [Visual Basic], value types
 - data types [Visual Basic], reference types
 ms.assetid: fc82ce15-5a40-4c5c-a1e1-a556830e7391
-ms.openlocfilehash: 72cb1455300e1ff00d9d558aa5a9df95f32aa7b0
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 22cce68260955545e810f6fefe645b5ad6a37ca5
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91090112"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100462133"
 ---
 # <a name="value-types-and-reference-types"></a>Tipos de valor e referência
 
@@ -77,7 +78,7 @@ Dim totals() As Single = New Single(8) {}
   
  Você pode descobrir se uma `Object` variável está agindo como um tipo de referência ou um tipo de valor passando-a para o <xref:Microsoft.VisualBasic.Information.IsReference%2A> método na <xref:Microsoft.VisualBasic.Information> classe do <xref:Microsoft.VisualBasic?displayProperty=nameWithType> namespace. <xref:Microsoft.VisualBasic.Information.IsReference%2A?displayProperty=nameWithType> retorna `True` se o conteúdo da `Object` variável representa um tipo de referência.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Tipos de valor anulável](nullable-value-types.md)
 - [Conversões de tipo no Visual Basic](type-conversions.md)

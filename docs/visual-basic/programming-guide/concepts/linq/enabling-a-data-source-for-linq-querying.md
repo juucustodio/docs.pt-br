@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: habilitando uma fonte de dados para consulta LINQ'
 title: Habilitando uma fonte de dados para LINQ Querying2
 ms.date: 07/20/2015
 ms.assetid: c412f0cf-ff0e-4993-ab3d-1b49e23f00f8
-ms.openlocfilehash: a60527f0594964ec9642cdd565fd06eb5d46cf85
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: b5a325b28c5ac3d3a0adc869ca77d775774fbb2a
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91078340"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100469845"
 ---
 # <a name="enabling-a-data-source-for-linq-querying"></a>Habilitando uma fonte de dados para consulta LINQ
 
@@ -43,7 +44,7 @@ Este tópico aborda essas opções.
 
  Um `IQueryable` provedor complexo, como o [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] provedor, pode traduzir consultas completas do LINQ para uma linguagem de consulta expressiva, como SQL. Um provedor complexo é mais geral do que um provedor menos complexo porque pode manipular uma variedade mais ampla de perguntas na consulta. Ele também possui um sistema de tipos abertos e, consequentemente, deve conter uma infraestrutura extensiva para mapear tipos definidos pelo usuário. Desenvolver um provedor complexo requer uma quantidade significativa de esforço.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Linq.IQueryable%601>
 - <xref:System.Collections.Generic.IEnumerable%601>

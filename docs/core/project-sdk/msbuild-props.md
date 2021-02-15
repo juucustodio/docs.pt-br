@@ -4,12 +4,12 @@ description: Referência para as propriedades e os itens do MSBuild que são com
 ms.date: 02/14/2020
 ms.topic: reference
 ms.custom: updateeachrelease
-ms.openlocfilehash: e140491c694291438fe1db7fd60d581ffed0319d
-ms.sourcegitcommit: ddf7edb67715a5b9a45e3dd44536dabc153c1de0
+ms.openlocfilehash: 9cd387a4a8ad7f5b31a797d4d019a53799d926ff
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99802665"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100432696"
 ---
 # <a name="msbuild-reference-for-net-sdk-projects"></a>Referência do MSBuild para projetos do SDK do .NET
 
@@ -344,7 +344,7 @@ A `EnableDefaultNoneItems` propriedade controla se os `None` itens (arquivos que
 
 ### <a name="analysislevel"></a>AnalysisLevel
 
-A `AnalysisLevel` propriedade permite especificar um nível de análise de código. Por exemplo, se você quiser acessar analisadores de código de visualização, defina `AnalysisLevel` como `preview` .
+A `AnalysisLevel` propriedade permite que você especifique um nível de análise de código. Por exemplo, se você quiser acessar analisadores de código de visualização, defina `AnalysisLevel` como `preview` .
 
 Valor padrão:
 
@@ -366,6 +366,9 @@ A tabela a seguir mostra as opções disponíveis.
 | `5.0` | O conjunto de regras que foi habilitado para a versão 5,0 do .NET é usado, mesmo se as regras mais recentes estiverem disponíveis. |
 | `5` | O conjunto de regras que foi habilitado para a versão 5,0 do .NET é usado, mesmo se as regras mais recentes estiverem disponíveis. |
 
+> [!NOTE]
+> Essa propriedade não tem efeito sobre a análise de código em projetos que não fazem referência a um [SDK de projeto](overview.md), por exemplo, projetos herdados .NET Framework que fazem referência ao pacote NuGet Microsoft. CodeAnalysis. netanalyzers.
+
 ### <a name="analysismode"></a>Analysismode
 
 A partir do .NET 5,0, o SDK do .NET é fornecido com todas as [regras de qualidade de código "CA"](../../fundamentals/code-analysis/quality-rules/index.md). Por padrão, somente [algumas regras são habilitadas](../../fundamentals/code-analysis/overview.md#enabled-rules) como avisos de compilação. A `AnalysisMode` propriedade permite que você personalize o conjunto de regras habilitadas por padrão. Você pode alternar para um modo de análise mais agressivo (recusar) ou um modo de análise mais conservador (opcional). Por exemplo, se você quiser habilitar todas as regras por padrão como avisos de compilação, defina o valor como `AllEnabledByDefault` .
@@ -384,6 +387,9 @@ A tabela a seguir mostra as opções disponíveis.
 | `AllEnabledByDefault` | Modo agressivo ou de aceitação, em que todas as regras são habilitadas por padrão como avisos de compilação. Você pode [recusar](../../fundamentals/code-analysis/configuration-options.md) seletivamente as regras individuais para desabilitá-las. |
 | `AllDisabledByDefault` | Modo conservador ou opt, onde todas as regras estão desabilitadas por padrão. Você pode [optar](../../fundamentals/code-analysis/configuration-options.md) seletivamente por regras individuais para habilitá-las. |
 
+> [!NOTE]
+> Essa propriedade não tem efeito sobre a análise de código em projetos que não fazem referência a um [SDK de projeto](overview.md), por exemplo, projetos herdados .NET Framework que fazem referência ao pacote NuGet Microsoft. CodeAnalysis. netanalyzers.
+
 ### <a name="codeanalysistreatwarningsaserrors"></a>CodeAnalysisTreatWarningsAsErrors
 
 A `CodeAnalysisTreatWarningsAsErrors` propriedade permite que você configure se os avisos de análise de qualidade de código (CAxxxx) devem ser tratados como avisos e interromper a compilação. Se você usar o `-warnaserror` sinalizador ao compilar seus projetos, os avisos de [análise de qualidade de código do .net](../../fundamentals/code-analysis/overview.md#code-quality-analysis) também serão tratados como erros. Se você não quiser que os avisos de análise de qualidade de código sejam tratados como erros, você poderá definir a `CodeAnalysisTreatWarningsAsErrors` Propriedade do MSBuild como `false` em seu arquivo de projeto.
@@ -396,7 +402,7 @@ A `CodeAnalysisTreatWarningsAsErrors` propriedade permite que você configure se
 
 ### <a name="enablenetanalyzers"></a>EnableNETAnalyzers
 
-A [análise de qualidade de código .net](../../fundamentals/code-analysis/overview.md#code-quality-analysis) está habilitada, por padrão, para projetos direcionados ao .NET 5,0 ou posterior. Você pode habilitar a análise de código .NET para projetos destinados a versões anteriores do .NET, definindo a `EnableNETAnalyzers` propriedade como `true` . Para desabilitar a análise de código em qualquer projeto, defina essa propriedade como `false` .
+A [análise de qualidade de código .net](../../fundamentals/code-analysis/overview.md#code-quality-analysis) está habilitada, por padrão, para projetos direcionados ao .NET 5,0 ou posterior. Você pode habilitar a análise de código do .NET para projetos em estilo SDK destinados a versões anteriores do .NET, definindo a `EnableNETAnalyzers` propriedade como `true` . Para desabilitar a análise de código em qualquer projeto, defina essa propriedade como `false` .
 
 ```xml
 <PropertyGroup>

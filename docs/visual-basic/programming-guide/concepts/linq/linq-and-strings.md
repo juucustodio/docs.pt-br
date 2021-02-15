@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: LINQ e cadeias de caracteres (Visual Basic)'
 title: LINQ e cadeias de caracteres
 ms.date: 07/20/2015
 ms.assetid: 75ddb201-d97a-4f98-8cdf-4ad51714529a
-ms.openlocfilehash: 28c11dcc3c788ea85516e8b3fbafe2677b6d9b54
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 16e1a2c3d8cee30643743400ad21dfc4ff15c14d
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91075337"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100469780"
 ---
 # <a name="linq-and-strings-visual-basic"></a>LINQ e cadeias de caracteres (Visual Basic)
 
@@ -62,7 +63,7 @@ A LINQ pode ser usada para consultar e transformar as cadeias de caracteres e co
  [Como: calcular valores de coluna em um arquivo de texto CSV (LINQ) (Visual Basic)](how-to-compute-column-values-in-a-csv-text-file-linq.md)  
  Mostra como executar cálculos matemáticos em dados de texto em arquivos .csv.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [LINQ (consulta integrada à linguagem) (Visual Basic)](index.md)
 - [Como gerar XML a partir de arquivos CSV](../../../../standard/linq/generate-xml-csv-files.md)

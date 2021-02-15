@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: referências a elementos declarados (Visual Basic)'
 title: Referências a elementos declarados
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - references [Visual Basic], declared elements
 - qualified names [Visual Basic]
 ms.assetid: d6301709-f4cc-4b7a-b8ba-80898f14ab46
-ms.openlocfilehash: af5be47335b6d48bd6c0bccc30b8db15c9912807
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 75cc05381f01af00ac75995739647810fb7ff1d7
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085874"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100471429"
 ---
 # <a name="references-to-declared-elements-visual-basic"></a>Referências a elementos declarados (Visual Basic)
 
@@ -198,14 +199,14 @@ Dim xDoc As xD.XmlDocument
   
 ## <a name="shadowing"></a>Sombreamento  
 
- Quando dois elementos de programação compartilham o mesmo nome, um deles pode ocultar ou *sombrear*o outro. Um elemento sombreado não está disponível para referência; em vez disso, quando o código usa o nome do elemento sombreado, o compilador Visual Basic o resolve para o elemento de sombreamento. Para obter uma explicação mais detalhada com exemplos, consulte [sombreamento em Visual Basic](shadowing.md).  
+ Quando dois elementos de programação compartilham o mesmo nome, um deles pode ocultar ou *sombrear* o outro. Um elemento sombreado não está disponível para referência; em vez disso, quando o código usa o nome do elemento sombreado, o compilador Visual Basic o resolve para o elemento de sombreamento. Para obter uma explicação mais detalhada com exemplos, consulte [sombreamento em Visual Basic](shadowing.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Nomes de elementos declarados](declared-element-names.md)
 - [Características do Elemento Declarado](declared-element-characteristics.md)
 - [Gerenciando propriedades de solução e de projeto](/visualstudio/ide/managing-project-and-solution-properties)
 - [Variáveis](../variables/index.md)
 - [Instrução Imports (tipo e namespace .NET)](../../../language-reference/statements/imports-statement-net-namespace-and-type.md)
-- [Novo operador](../../../language-reference/operators/new-operator.md)
-- [Pública](../../../language-reference/modifiers/public.md)
+- [Novo Operador](../../../language-reference/operators/new-operator.md)
+- [Público](../../../language-reference/modifiers/public.md)

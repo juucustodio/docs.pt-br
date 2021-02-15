@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: Walkthrough: criptografar e descriptografar cadeias de caracteres em Visual Basic'
 title: criptografar e descriptografar cadeias de caracteres
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - decryption [Visual Basic], strings
 - strings [Visual Basic], decrypting
 ms.assetid: 1f51e40a-2f88-43e2-a83e-28a0b5c0d6fd
-ms.openlocfilehash: e0e3fc332bf9430b1fa56dbb7630f849d3a29c2e
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: afc1eeaec85b2e430aead7f16401289b6e2e9e49
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91072399"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100471078"
 ---
 # <a name="walkthrough-encrypting-and-decrypting-strings-in-visual-basic"></a>Instruções passo a passo: criptografando e descriptografando cadeias de caracteres no Visual Basic
 
@@ -75,7 +76,7 @@ Este tutorial mostra como usar a <xref:System.Security.Cryptography.DESCryptoSer
   
      Ao testar o aplicativo, observe que ele não descriptografará os dados se você fornecer a senha incorreta.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Security.Cryptography>
 - <xref:System.Security.Cryptography.DESCryptoServiceProvider>

@@ -1,12 +1,13 @@
 ---
+description: 'Saiba mais sobre: cadeias de caracteres interpoladas (referência de Visual Basic)'
 title: Cadeias de caracteres interpoladas
 ms.date: 10/31/2017
-ms.openlocfilehash: c427b48ce58a59ff3878f24f1989db6ac8c8239a
-ms.sourcegitcommit: 636af37170ae75a11c4f7d1ecd770820e7dfe7bd
+ms.openlocfilehash: c054401070079bdf85181619ef43c246feea5e18
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91805272"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429647"
 ---
 # <a name="interpolated-strings-visual-basic-reference"></a>Cadeias de caracteres interpoladas (referência de Visual Basic)
 
@@ -30,7 +31,7 @@ A estrutura de uma cadeia de caracteres interpolada é:
 $"<text> {<interpolated-expression> [,<field-width>] [:<format-string>] } <text> ..."
 ```
 
-onde:
+em que:
 
 - *field-width* é um inteiro com sinal que indica o número de caracteres no campo. Se ele for positivo, o campo será alinhado à direita. Se for negativo, será alinhado à esquerda.
 
@@ -77,7 +78,7 @@ Há três conversões de tipo implícitas de uma cadeia de caracteres interpolad
 
    [!code-vb[interpolated-strings3](../../../../../samples/snippets/visualbasic/programming-guide/language-features/strings/interpolated-strings3.vb)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.IFormattable?displayProperty=nameWithType>
 - <xref:System.FormattableString?displayProperty=nameWithType>

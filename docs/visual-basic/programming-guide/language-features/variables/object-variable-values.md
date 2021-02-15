@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: valores de variáveis de objeto (Visual Basic)'
 title: Valores de variável de objeto
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - data types [Visual Basic], object variable
 - variables [Visual Basic], object
 ms.assetid: 31555704-58a3-49f1-9a0a-6421f605664f
-ms.openlocfilehash: 800b9754ce27cc6a494dd781d06f4bdca8a10e87
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 3259a0b04ed629feea89c1a3e9dba69ed7d226f6
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91080224"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100481669"
 ---
 # <a name="object-variable-values-visual-basic"></a>Valores de variável de objeto (Visual Basic)
 
@@ -70,7 +71,7 @@ If TypeOf frm Is Object Then Debug.WriteLine("frm is Object")
 
  Você pode declarar e usar uma matriz de `Object` variáveis. Isso é útil quando você precisa lidar com uma variedade de tipos de dados e classes de objeto. Todos os elementos em uma matriz devem ter o mesmo tipo de dados declarado. Declarar esse tipo de dados como `Object` permite que você armazene objetos e instâncias de classe junto com outros tipos de dados na matriz.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Variáveis de Objeto](object-variables.md)
 - [Declaração de Variável do Objeto](object-variable-declaration.md)

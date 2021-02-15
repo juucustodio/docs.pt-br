@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-addmodule
 title: -addmodule
 ms.date: 03/09/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - addmodule compiler option [Visual Basic]
 - -addmodule compiler option [Visual Basic]
 ms.assetid: fb4b89d4-4926-4f20-868d-427fa28497b2
-ms.openlocfilehash: 2db122acc03056a9cb6f355119d4c4e6da6ed175
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: ca08aa599003897e680240af21c4a0eb568e31d8
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91097781"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100468285"
 ---
 # <a name="-addmodule"></a>-addmodule
 
@@ -26,7 +27,7 @@ Faz com que o compilador verifique todos os tipos de informações de arquivos e
 ## <a name="arguments"></a>Argumentos  
 
  `fileList`  
- Necessário. Lista delimitada por vírgulas de arquivos que contêm metadados, mas não contêm manifestos de assembly. Os nomes de arquivo que contêm espaços devem estar entre aspas ("").  
+ Obrigatório. Lista delimitada por vírgulas de arquivos que contêm metadados, mas não contêm manifestos de assembly. Os nomes de arquivo que contêm espaços devem estar entre aspas ("").  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -53,7 +54,7 @@ Faz com que o compilador verifique todos os tipos de informações de arquivos e
   
  Quando você executa `t1` , ele gera `802` .  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Compilador de linha de comando do Visual Basic](index.md)
 - [-Target (Visual Basic)](target.md)

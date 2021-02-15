@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como mover dados para dentro e fora de uma variável (Visual Basic)'
 title: Como inserir e remover dados de uma variável
 ms.date: 07/20/2015
 helpviewer_keywords:
 - variables [Visual Basic], retrieving values
 - variables [Visual Basic], storing data
 ms.assetid: 93744f46-bf78-4fa0-9640-1de01bc38d9a
-ms.openlocfilehash: fe19a6160623aa9ea867becdf7a15b51319abf45
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: e75be83f82a3e1418099375eb52a2d2cc4fdbd18
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84410432"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100481812"
 ---
 # <a name="how-to-move-data-into-and-out-of-a-variable-visual-basic"></a>Como inserir e remover dados de uma variável (Visual Basic)
 
@@ -51,7 +52,7 @@ Você recupera o valor de uma variável, incluindo o nome da variável em uma ex
 
   O valor da variável participa da expressão exatamente como uma constante e, em seguida, é armazenado na variável ou propriedade no lado esquerdo da instrução de atribuição.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Variáveis](index.md)
 - [Declaração de Variável](variable-declaration.md)

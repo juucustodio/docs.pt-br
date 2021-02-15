@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: como retornar um valor de um procedimento (Visual Basic)'
 title: Como retornar um valor de um procedimento
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - procedures [Visual Basic], returning from
 - procedures [Visual Basic], returning a value
 ms.assetid: 4bcc4724-2b4e-4df8-9b4b-16054607f87d
-ms.openlocfilehash: cbc785a07aa8a7b299508a093e08d5d0510b838a
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: c158f15b1e6acb7334d78037d84145981822e177
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91071372"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100476170"
 ---
 # <a name="how-to-return-a-value-from-a-procedure-visual-basic"></a>Como retornar um valor de um procedimento (Visual Basic)
 
@@ -45,7 +46,7 @@ Um `Function` procedimento retorna um valor para o código de chamada executando
   
      Para obter mais informações e um exemplo, consulte "valor de retorno" na [instrução function](../../../language-reference/statements/function-statement.md).  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Procedimentos](./index.md)
 - [Subprocedimentos](./sub-procedures.md)

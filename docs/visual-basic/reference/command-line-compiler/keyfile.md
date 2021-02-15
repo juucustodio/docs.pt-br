@@ -1,4 +1,5 @@
 ---
+description: Saiba mais sobre:-keyfile
 title: -keyfile
 ms.date: 03/10/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - keyfile compiler option [Visual Basic]
 - -keyfile compiler option [Visual Basic]
 ms.assetid: ffa82a4b-517a-4c6c-9889-5bae7b534bb8
-ms.openlocfilehash: c81486243195f7d022bd474ef6db20d069b3a018
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: 6d19f136d5961e8a933380164a3a77055e1da329
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91085146"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100466933"
 ---
 # <a name="-keyfile"></a>-keyfile
 
@@ -26,7 +27,7 @@ Especifica um arquivo que contém uma chave ou um par de chaves para fornecer um
 ## <a name="arguments"></a>Argumentos  
 
  `file`  
- Necessário. Arquivo que contém a chave. Se o nome do arquivo contiver um espaço, coloque o nome entre aspas ("").  
+ Obrigatório. Arquivo que contém a chave. Se o nome do arquivo contiver um espaço, coloque o nome entre aspas ("").  
   
 ## <a name="remarks"></a>Comentários  
 
@@ -42,7 +43,7 @@ Especifica um arquivo que contém uma chave ou um par de chaves para fornecer um
   
  Observe que um arquivo de chave pode conter somente a chave pública.  
   
- Consulte [criando e usando assemblies de nome forte](../../../standard/assembly/create-use-strong-named.md) para obter mais informações sobre como assinar um assembly.  
+ Consulte [criando e usando assemblies de Strong-Named](../../../standard/assembly/create-use-strong-named.md) para obter mais informações sobre como assinar um assembly.  
   
 > [!NOTE]
 > A `-keyfile` opção não está disponível no ambiente de desenvolvimento do Visual Studio; ela está disponível somente durante a compilação na linha de comando.
@@ -55,7 +56,7 @@ O código a seguir compila o arquivo `Input.vb` de origem e especifica um arquiv
 vbc -keyfile:myfile.sn input.vb
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Assemblies no .NET](../../../standard/assembly/index.md)
 - [Compilador de linha de comando do Visual Basic](index.md)

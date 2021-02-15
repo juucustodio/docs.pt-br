@@ -1,15 +1,16 @@
 ---
+description: "Saiba mais sobre: o argumento ' Life ' não pode ser zero"
 title: Argumento 'Life' não pode ser zero
 ms.date: 07/20/2015
 f1_keywords:
 - vbrFinancial_LifeNEZero
 ms.assetid: c402da97-a2b2-4219-a83a-0cebbfdffef2
-ms.openlocfilehash: 280571b9f9c799305efd53359e079d25d16ffd03
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: e07c31ab73d6ad3f055adcbf7f4f67d48311c6cd
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91087200"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100474870"
 ---
 # <a name="argument-life-cannot-be-zero"></a>Argumento 'Life' não pode ser zero
 
@@ -21,6 +22,6 @@ Um argumento para `Life` , que deve ser um `Double` que especifica o comprimento
   
 - Verifique as operações anteriores em variáveis na expressão, especialmente aquelas passadas para o procedimento como argumentos de outros procedimentos.  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Passar argumentos por valor e por referência](../programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

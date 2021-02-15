@@ -1,4 +1,5 @@
 ---
+description: 'Saiba mais sobre: matrizes de parâmetros (Visual Basic)'
 title: Matrizes de parâmetros
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - procedures [Visual Basic], indefinite number of argument values
 - arrays [Visual Basic], parameter arrays
 ms.assetid: c43edfae-9114-4096-9ebc-8c5c957a1067
-ms.openlocfilehash: 2c8c60015d834ffa3f8618dd98616350e13f0e5c
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: e71524d9d62f0ece3a8310934eba15e9db16aaa1
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91100653"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100427577"
 ---
 # <a name="parameter-arrays-visual-basic"></a>Matrizes de parâmetros (Visual Basic)
 
@@ -60,14 +61,14 @@ Normalmente, você não pode chamar um procedimento com mais argumentos do que a
   
  [!code-vb[VbVbcnProcedures#49](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#49)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualBasic.Information.UBound%2A>
 - [Procedimentos](./index.md)
 - [Parâmetros e Argumentos de Procedimento](./procedure-parameters-and-arguments.md)
 - [Passar argumentos por valor e por referência](./passing-arguments-by-value-and-by-reference.md)
 - [Passando argumentos por posição e nome](./passing-arguments-by-position-and-by-name.md)
-- [Parâmetros opcionais](./optional-parameters.md)
+- [Parâmetros Opcionais](./optional-parameters.md)
 - [Sobrecarga de procedimento](./procedure-overloading.md)
 - [matrizes](../arrays/index.md)
 - [Opcional](../../../language-reference/modifiers/optional.md)

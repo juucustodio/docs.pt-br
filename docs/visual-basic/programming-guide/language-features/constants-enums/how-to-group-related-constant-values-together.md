@@ -1,16 +1,17 @@
 ---
+description: 'Saiba mais sobre: como agrupar valores constantes relacionados em conjunto (Visual Basic)'
 title: Como agrupar valores constantes relacionados
 ms.date: 07/20/2015
 helpviewer_keywords:
 - enumerations [Visual Basic], constants
 - constants [Visual Basic], grouping together
 ms.assetid: 09d61da5-c940-4126-a79f-ba93c36653dc
-ms.openlocfilehash: 0f694aee722e8ce31f663ec9fe52a09a2eb2a958
-ms.sourcegitcommit: bf5c5850654187705bc94cc40ebfb62fe346ab02
+ms.openlocfilehash: ddd60696d2c751810e49ecbcb537589bedc58abf
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91058723"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100471585"
 ---
 # <a name="how-to-group-related-constant-values-together-visual-basic"></a>Como agrupar valores constantes relacionados (Visual Basic)
 
@@ -26,7 +27,7 @@ Uma enumeração é a melhor maneira de agrupar constantes relacionadas juntas. 
   
      [!code-vb[VbEnumsTask#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#1)]  
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Enumerações e qualificação de nome](enumerations-and-name-qualification.md)
 - [Como fazer referência a um membro de enumeração](how-to-refer-to-an-enumeration-member.md)

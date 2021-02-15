@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: definir operações (Visual Basic)'
 title: Operações de conjunto
 ms.date: 07/20/2015
 ms.assetid: 2b06e822-e030-438f-9db7-ee402bd3a706
-ms.openlocfilehash: b6ff14794343ae7623ee38894cef02cfc0a2a597
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 9c75c9e029ba260917f59c7d2ea0341c157bf406
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84406814"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100471663"
 ---
 # <a name="set-operations-visual-basic"></a>Operações Set (Visual Basic)
 
@@ -56,7 +57,7 @@ O exemplo a seguir usa a `Distinct` cláusula em uma consulta LINQ para retornar
 
 [!code-vb[CsLINQSetOps#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQSetOps/VB/setops.vb#1)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Linq>
 - [Visão geral de operadores de consulta padrão (Visual Basic)](standard-query-operators-overview.md)

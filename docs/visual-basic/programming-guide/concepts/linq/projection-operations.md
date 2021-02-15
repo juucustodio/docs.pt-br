@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: operações de projeção (Visual Basic)'
 title: Operações de projeção
 ms.date: 07/20/2015
 ms.assetid: b8d38e6d-21cf-4619-8dbb-94476f4badc7
-ms.openlocfilehash: 4795bdaba53949b34fe380ea9c51025ce43c40db
-ms.sourcegitcommit: f8c270376ed905f6a8896ce0fe25b4f4b38ff498
+ms.openlocfilehash: 5531bec915f3a9ee521e0d67941b8f1d49e90524
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84396331"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100466452"
 ---
 # <a name="projection-operations-visual-basic"></a>Operações de projeção (Visual Basic)
 
@@ -175,7 +176,7 @@ Sub SelectVsSelectMany()
 End Sub
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Linq>
 - [Visão geral de operadores de consulta padrão (Visual Basic)](standard-query-operators-overview.md)

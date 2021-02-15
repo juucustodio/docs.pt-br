@@ -1,13 +1,14 @@
 ---
+description: 'Saiba mais sobre: iniciar várias tarefas assíncronas e processá-las à medida que elas forem concluídas (Visual Basic)'
 title: Iniciar várias tarefas assíncronas e processá-las na conclusão
 ms.date: 07/20/2015
 ms.assetid: 57ffb748-af40-4794-bedd-bdb7fea062de
-ms.openlocfilehash: 4eb4d15739da82cbfcc8dc5e03af4c1ae761d553
-ms.sourcegitcommit: 632818f4b527e5bf3c48fc04e0c7f3b4bdb8a248
+ms.openlocfilehash: 5053bb55acaa058c551ad5f4169ef93c773fc1ab
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98615900"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100474259"
 ---
 # <a name="start-multiple-async-tasks-and-process-them-as-they-complete-visual-basic"></a>Iniciar várias tarefas assíncronas e processá-las na conclusão (Visual Basic)
 
@@ -144,23 +145,23 @@ Class MainWindow
         ' Call SetUpURLList to make a list of web addresses.  
         Dim urlList As List(Of String) = SetUpURLList()  
   
-        ' **_Create a query that, when executed, returns a collection of tasks.  
+        ' ***Create a query that, when executed, returns a collection of tasks.  
         Dim downloadTasksQuery As IEnumerable(Of Task(Of Integer)) =  
             From url In urlList Select ProcessURLAsync(url, client, ct)  
   
-        ' _*_Use ToList to execute the query and start the download tasks.
+        ' ***Use ToList to execute the query and start the download tasks.
         Dim downloadTasks As List(Of Task(Of Integer)) = downloadTasksQuery.ToList()  
   
-        ' _*_Add a loop to process the tasks one at a time until none remain.  
+        ' ***Add a loop to process the tasks one at a time until none remain.  
         While downloadTasks.Count > 0  
-            ' _*_Identify the first task that completes.  
+            ' ***Identify the first task that completes.  
             Dim finishedTask As Task(Of Integer) = Await Task.WhenAny(downloadTasks)  
   
-            ' _*_Remove the selected task from the list so that you don't  
+            ' ***Remove the selected task from the list so that you don't  
             ' process it more than once.  
             downloadTasks.Remove(finishedTask)  
   
-            ' _**Await the first completed task and display the results.  
+            ' ***Await the first completed task and display the results.  
             Dim length = Await finishedTask  
             resultsTextBox.Text &= String.Format(vbCrLf & "Length of the downloaded website:  {0}" & vbCrLf, length)  
         End While  
@@ -209,7 +210,7 @@ End Class
 ' Downloads complete.  
 ```  
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Threading.Tasks.Task.WhenAny%2A>
 - [Ajustando seu aplicativo assíncrono (Visual Basic)](fine-tuning-your-async-application.md)

@@ -7,12 +7,12 @@ no-loc:
 - Blazor
 - WebAssembly
 ms.date: 12/01/2020
-ms.openlocfilehash: c29e58fb4c748d6025b7c2fbe62a54a85cc71fba
-ms.sourcegitcommit: 45c7148f2483db2501c1aa696ab6ed2ed8cb71b2
+ms.openlocfilehash: 309630b4b20105d0f64903c1920006dcfb945f76
+ms.sourcegitcommit: 10e719780594efc781b15295e499c66f316068b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96851647"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100429695"
 ---
 # <a name="choose-between-traditional-web-apps-and-single-page-apps-spas"></a>Escolher entre aplicativos Web tradicionais e SPAs (aplicativos de página única)
 
@@ -89,18 +89,15 @@ A configuração de SPAs exige familiaridade com o JavaScript e/ou o TypeScript 
 
 > ### <a name="references--spa-frameworks"></a>Referências – Estruturas de SPA
 >
-> - **Angular**  
->   <https://angular.io>
-> - **Reagir**
->   <https://reactjs.org/>
-> - **Comparação de Estruturas em JavaScript**  
->   <https://jsreport.io/the-ultimate-guide-to-javascript-frameworks/>
+> - **Angular**: <https://angular.io>
+> - **Reagir**: <https://reactjs.org/>
+> - **Vue.js**: <https://vuejs.org/>
 
 **Seu aplicativo já deve expor uma API para outros clientes (internos ou públicos)**
 
 Caso você já esteja dando suporte a uma API Web para uso por outros clientes, poderá ser necessário menos esforço para criar uma implementação de SPA que utiliza essas APIs em vez de reproduzir a lógica no formulário do lado do servidor. Os SPAs fazem uso extensivo de APIs Web para consultar e atualizar os dados conforme os usuários interagem com o aplicativo.
 
-## <a name="when-to-choose-no-locblazor"></a>Quando escolher Blazor
+## <a name="when-to-choose-blazor"></a>Quando escolher Blazor
 
 A seção a seguir é uma explicação mais detalhada de quando escolher Blazor para seu aplicativo Web.
 
